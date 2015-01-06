@@ -1,0 +1,8 @@
+/* elementary Web styles. Originally written by Cassidy James <c@ssidyjam.es> */
+
+html,
+body{
+	font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
+	background-color: #eee;
+	color: #333;
+}
