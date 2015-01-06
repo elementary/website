@@ -15,12 +15,12 @@ Project organization
 
 Up for discussion in Slack, but here's how Cassidy James has it in his head:
 
-* Issues for individual actionable items, or bugs i.e.:
+* **Issues** for individual actionable items, or bugs i.e.:
   * Design home page
   * Implement home page
   * Add payment form
   * Fix link to Wired article
-* Milestones for "releases" or overall steps, i.e.:
+* **Milestones** for "releases" or overall steps, i.e.:
   * Single-page site
   * User Documentation
   * Journal
