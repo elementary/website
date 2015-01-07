@@ -28,6 +28,17 @@ h3 {
     font-size: 11px;
 }
 
+/********
+* Links *
+*********/
+
+a, a:hover, a:active, a:focus, button, button:hover, button:active, button:focus{
+    color: inherit;
+    text-decoration: none;
+    outline: none;                             /* Fix for webkit browsers */
+    -webkit-tap-highlight-color: transparent;  /* Fix for Android devices */
+}
+
 /*********
 * Layout *
 **********/
@@ -40,12 +51,14 @@ h3 {
 * Button *
 *********/
 
-button {
+a.button, button {
     display: inline-block;
     margin: 24px;
     padding: 16px 32px;
     text-align: center;
-    max-width: 250px;
+    max-width: 160px;
+    font-family: helvetica;
+    font-size: 82%;
 
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -53,7 +66,7 @@ button {
                                   transparent 50%,
                                   rgba(0, 0, 0, 0.04)
                                   );
-                                  
+
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 
@@ -70,16 +83,16 @@ button {
     outline: none;
 }
 
-button:active {
+a.button:active, button:active {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
     border-color: rgba(0, 0, 0,, 0.25);
 
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
-                0 1px 0 0 rgba(255, 255, 255, 0.30);    
+                0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
-button.suggested-action {
+a.button.suggested-action, button.suggested-action {
     background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
     border-color: #4D9CD1;
     color: #fff;
