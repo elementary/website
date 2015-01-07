@@ -51,7 +51,7 @@ footer {
 button,
 a.button {
     display: inline-block;
-    margin: 24px;
+    margin: 24px 10px;
     padding: 16px 32px;
     text-align: center;
     max-width: 250px;
