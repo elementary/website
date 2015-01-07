@@ -32,6 +32,14 @@ h3 {
 * Layout *
 **********/
 
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+    font-size: 12px;
+    color: #666;
+}
+
 .grid-margin {
     margin: 24px;
 }
