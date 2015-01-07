@@ -99,10 +99,14 @@ a.button.suggested-action, button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-#download {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.downloads-links {
+    text-align: center;
+}
+
+.downloads-links .button-download {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 #logotype {
