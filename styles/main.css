@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     background-color: #fff;
     color: #333;
+    margin: 0;
 }
 
 /**************
@@ -38,6 +39,30 @@ footer {
     margin: 6px;
     font-size: 12px;
     color: #666;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 18px;
+    float: right;
+    right: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li+li {
+    margin-left: 12px;
+}
+
+footer ul li a {
+    color: inherit;
+}
+
+footer ul li i.fa {
+    font-size: 16px;
 }
 
 .grid-margin {
