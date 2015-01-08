@@ -55,6 +55,9 @@ button {
     text-align: center;
     max-width: 250px;
 
+    font-size: 14px;
+    font-family: inherit;
+
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                                   transparent,
