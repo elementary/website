@@ -103,7 +103,6 @@ button {
     transition: all 100ms ease-in;
 
     -webkit-appearance: none;
-    outline: none;
 }
 
 button:active {
