@@ -25,3 +25,10 @@ Up for discussion in Slack, but here's how Cassidy James has it in his head:
   * User Documentation
   * Journal
 * Do all work in branches, then submit pull requests for review when ready
+
+Architecture/Philosophies
+=========================
+
+* HTML, CSS, and JS
+* No/minimal frameworks (keep it simple!)
+* Graceful degradation (don't be held back by crappy browsers)
