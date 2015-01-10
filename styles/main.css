@@ -74,8 +74,11 @@ footer ul li a:focus i.fa {
     text-shadow: 0 1px 6px #08c;
 }
 
-.grid-margin {
-    margin: 24px;
+.row {
+    width: auto;
+    margin: 0 auto;
+    padding: 24px;
+    max-width: 1200px;
 }
 
 /*********
