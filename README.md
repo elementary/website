@@ -7,7 +7,7 @@ We'll attack it in various phases:
 
 1. A single-page site to download Freya
 2. FAQ/User Docs
-3. A Journal (possibly a link to Tumblr)
+3. ~~A Journal (possibly a link to Tumblr)~~
 
 
 Project organization
