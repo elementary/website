@@ -27,7 +27,7 @@
 
         function menuItemClicked(e) {
             var i = Number(e.target.getAttribute('data-slide'));
-            var newSlide = slides[e.target.getAttribute('data-slide')];
+            var newSlide = slides[i];
             if (!newSlide.classList.contains('active')) {
                 setTimeout(function() {
                     for (var j = 0, slide; slide = slides[j]; j++) {
