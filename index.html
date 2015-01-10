@@ -11,9 +11,38 @@
     </head>
     <body>
         <div class="grid-margin">
-            <img alt="elementary OS" id="logotype" src="images/logotype.svg">
+            <heading>
+                <img alt="elementary OS" id="logotype" src="images/logotype.svg">
+            </heading>
             <h2>A fast and free replacement for Windows and OS X</h2>
             <button id="download" class="suggested-action" onclick=window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso")>Download Freya Beta 64bit</button>
+        </div>
+        <div class="grid-margin">
+            <h1>Screenshots</h1>
+        </div>
+        <div id="carousel" class="carousel">
+            <ul class="menu">
+                <li><button type="button" data-slide="0">Slide 1</button></li>
+                <li><button type="button" data-slide="1">Slide 2</button></li>
+                <li><button type="button" data-slide="2">Slide 3</button></li>
+            </ul>
+            <div class="slides">
+                <div class="a">
+                    <div class="grid-margin">
+                        <h1>Fill Me</h1>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="grid-margin">
+                        <h1>With</h1>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="grid-margin">
+                        <h1>Screenshots</h1>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             Copyright &copy; 2015 elementary, LLC
@@ -24,5 +53,6 @@
                 <li><a href="https://github.com/elementary" target="_blank"><i class="fa fa-github"></i></a></li>
             </ul>
         </footer>
+        <script src="js/carousel.min.js"></script>
     </body>
 </html>
