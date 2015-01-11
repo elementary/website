@@ -199,6 +199,7 @@ input[type="text"]:focus {
 
 #downloads .button-download {
     margin-bottom: 6px;
+    margin-top: 9px;
 }
 
 #logotype {
