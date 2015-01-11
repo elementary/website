@@ -116,6 +116,7 @@ button {
 
     -webkit-appearance: none;
     outline: none;
+    cursor: pointer;
 }
 
 button:focus {
