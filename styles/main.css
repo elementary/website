@@ -141,6 +141,32 @@ button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+/********
+* Input *
+********/
+
+input[type="text"] {
+    background: linear-gradient(to bottom, #fafafa, #fdfdfd);
+    border: 1px solid rgba(0, 0, 0, 0.22) !important;
+    border-radius: 2.5px;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.04),
+                inset 0 0 0 1px rgba(0, 0, 0, 0.02),
+                0 1px 0 1px rgba(255, 255, 255, 0.30);
+    color: #323232;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    padding: 6px 8px !important;
+    transition: all 200ms ease-out;
+    background-clip: padding-box;
+}
+
+input[type="text"]:focus {
+    border-color: rgba(61, 155, 218, 0.80);
+    box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
+                0 1px 0 1px rgba(255, 255, 255, 0.30);
+
+    transition: all 200ms ease-in;
+}
+
 #download {
     display: block;
     margin-left: auto;
