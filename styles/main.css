@@ -16,7 +16,9 @@ body {
 **************/
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
 }
 
 h2 {
@@ -35,6 +37,14 @@ p.small-label {
     padding: 0;
     font-size: 12px;
     opacity: 0.8;
+}
+
+p.big-label {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0;
+    color: #b3b3b3;
 }
 
 /*********
