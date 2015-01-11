@@ -39,7 +39,7 @@ p.small-label {
     opacity: 0.8;
 }
 
-p.big-label {
+p.error-label {
     text-align: center;
     font-size: 100px;
     font-weight: 300;
