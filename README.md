@@ -7,7 +7,7 @@ We'll attack it in various phases:
 
 1. A single-page site to download Freya
 2. FAQ/User Docs
-3. A Journal (possibly a link to Tumblr)
+3. ~~A Journal (possibly a link to Tumblr)~~
 
 
 Project organization
@@ -24,4 +24,15 @@ Up for discussion in Slack, but here's how Cassidy James has it in his head:
   * Single-page site
   * User Documentation
   * Journal
-* Do all work in branches, then submit pull requests for review when ready
+* **Reviews** Do all work in branches, then submit pull requests for review when ready
+  * No dummy content in master, ever.
+  * small diff is best diff
+  * The reviewer is the gatekeeper. Be kind of a dick.
+
+Architecture/Philosophies
+=========================
+
+* HTML, CSS, and JS
+* No/minimal frameworks (keep it simple!)
+* Graceful degradation (don't be held back by crappy browsers)
+* Mobile-first

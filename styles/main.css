@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     background-color: #fff;
     color: #333;
+    margin: 0;
 }
 
 /**************
@@ -40,8 +41,44 @@ footer {
     color: #666;
 }
 
-.grid-margin {
-    margin: 24px;
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 18px;
+    float: right;
+    right: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li+li {
+    margin-left: 12px;
+}
+
+footer ul li a {
+    color: inherit;
+}
+
+footer ul li i.fa {
+    font-size: 16px;
+}
+
+footer ul li a:focus {
+    outline: none;
+}
+
+footer ul li a:focus i.fa {
+    color: #08c;
+    text-shadow: 0 1px 6px #08c;
+}
+
+.row {
+    width: auto;
+    margin: 0 auto;
+    padding: 24px;
+    max-width: 1200px;
 }
 
 /*********
@@ -56,8 +93,8 @@ a.button {
     text-align: center;
     max-width: 250px;
     text-decoration: none;
-    font-family: Helvetica;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: inherit;
 
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -79,10 +116,17 @@ a.button {
     transition: all 100ms ease-in;
 
     -webkit-appearance: none;
-    outline: none;
 }
 
-button:active,
+button:focus
+a.button.suggested-action {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 0 6px 0 #08c;
+}
+
+button:active
 a.button:active {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
