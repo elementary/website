@@ -33,7 +33,10 @@
                 });
                 $("#download").click(function(event) {
                     // Open Checkout with further options
-                    console.log('Test');
+					var amount = parseDonation();
+					if(/^0+$/.test(amount)) {
+						return;
+					}
                     handler.open({
                         name: 'elementaryOS',
                         description: 'Support elementaryOS!',
@@ -44,7 +47,6 @@
                 $(window).on('popstate', function() {
                     handler.close();
                     window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
-                    console.log("Closed");
                 });
             });
         </script>
