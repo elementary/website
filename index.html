@@ -8,9 +8,9 @@
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
-		<script src="http://elementaryos.org/js/jquery.min.js" type="text/javascript"></script>
+        <script src="http://elementaryos.org/js/jquery.min.js" type="text/javascript"></script>
         <script src="https://checkout.stripe.com/checkout.js"></script>
-		<script>
+        <script>
             function parseDonation() {
                 var amount = $('#donate').val();
                 if(-1 == amount.indexOf('.')) {
@@ -27,26 +27,26 @@
                     key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
                     image: '/square-image.png',
                     token: function(token) {
-                        // Use the token to create the charge with a server-side script.
-                        // You can access the token ID with `token.id`
+                        // this callback is executed when the checkout is COMPLETE. If the User
+                        window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
                     }
                 });
                 $("#download").click(function(event) {
-                    // Open Checkout with further options
-					var amount = parseDonation();
-					if(/^0+$/.test(amount)) {
-						return;
-					}
+                    var amount = parseDonation();
+                    if(/^0+$/.test(amount)) {
+                        //if some type of 0 is specified, do not open handler and direct user to download
+                        window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
+                        return;
+                    }
                     handler.open({
                         name: 'elementaryOS',
-                        description: 'Support elementaryOS!',
+                        description: 'Support elementaryOS',
                         amount: parseDonation()
                     });
                     event.preventDefault();
                 });
                 $(window).on('popstate', function() {
                     handler.close();
-                    window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
                 });
             });
         </script>
@@ -55,8 +55,8 @@
         <div class="row">
             <img alt="elementary OS" id="logotype" src="images/logotype.svg">
             <h2>A fast and free replacement for Windows and OS X</h2>
-			<input type="text" id="donate" value="$10.00">
-            <button id="download" class="suggested-action" onclick=window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso")>Download Freya Beta 64bit</button>
+            <input type="text" id="donate" value="$10.00">
+            <button id="download" class="suggested-action">Download Freya Beta 64bit</button>
         </div>
         <footer>
             Copyright &copy; 2015 elementary LLC.
