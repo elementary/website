@@ -22,7 +22,6 @@ h1 {
 h2 {
     font-size: 18px;
     font-weight: 300;
-    text-align: center;
 }
 
 h3 {
@@ -30,7 +29,6 @@ h3 {
 }
 
 p.small-label {
-    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -94,6 +92,7 @@ footer ul li a:focus i.fa {
     margin: 0 auto;
     padding: 24px;
     max-width: 1200px;
+    text-align: center;
 }
 
 /*********
@@ -196,19 +195,11 @@ input[type="text"]:focus {
     outline: none;
 }
 
-#download {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 button#download {
     margin-bottom: 6px;
 }
 
 #logotype {
     max-width: 100%;
-    display: block;
     width: 454px;
-    margin: 0 auto;
 }
