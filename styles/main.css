@@ -228,7 +228,7 @@ button#download {
 * Legacy Warning *
 *****************/
 
-#legacy-warning{
+#legacy-warning {
     position: fixed;
     top: 0px;
     padding: 2em;
@@ -240,25 +240,25 @@ button#download {
     box-sizing: border-box;
 }
 
-#legacy-warning p{
+#legacy-warning p {
     text-align: center;
 }
 
-#legacy-warning a{
+#legacy-warning a {
     color: white;
 }
 
-#legacy-warning #legacy-warning-buttons{
+#legacy-warning #legacy-warning-buttons {
     text-align: center;
 }
 
-#legacy-warning #legacy-warning-buttons a{
+#legacy-warning #legacy-warning-buttons a {
     display: inline-block;
     padding: 0.5em 1em;
     margin-top: 1em;
     text-decoration: none;
 }
 
-#legacy-warning #legacy-warning-buttons a.suggested-action{
+#legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
 }
