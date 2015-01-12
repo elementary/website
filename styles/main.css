@@ -223,3 +223,42 @@ button#download {
     max-width: 100%;
     width: 454px;
 }
+
+/*****************
+* Legacy Warning *
+*****************/
+
+#legacy-warning {
+    position: fixed;
+    top: 0px;
+    padding: 2em;
+    width: 100%;
+
+    background-color: #e35d4f;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+#legacy-warning p {
+    text-align: center;
+}
+
+#legacy-warning a {
+    color: white;
+}
+
+#legacy-warning #legacy-warning-buttons {
+    text-align: center;
+}
+
+#legacy-warning #legacy-warning-buttons a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+#legacy-warning #legacy-warning-buttons a.suggested-action {
+    border: 1px solid;
+}
