@@ -8,55 +8,13 @@
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
-        <script src="http://elementaryos.org/js/jquery.min.js" type="text/javascript"></script>
-        <script src="https://checkout.stripe.com/checkout.js"></script>
-        <script>
-            function parseDonation() {
-                var amount = $('#donate').val();
-                if(-1 == amount.indexOf('.')) {
-                    var isDollar = true;
-                }
-                var cleanAmount = amount.replace(/\D+/g, '');
-                if(isDollar) {
-                    cleanAmount = cleanAmount + "00";
-                }
-                return cleanAmount;
-            }
-            $(function () {
-                var handler = StripeCheckout.configure({
-                    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-                    image: '/square-image.png',
-                    token: function(token) {
-                        // this callback is executed when the checkout is COMPLETE. If the User
-                        window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
-                    }
-                });
-                $("#download").click(function(event) {
-                    var amount = parseDonation();
-                    if(/^0+$/.test(amount)) {
-                        //if some type of 0 is specified, do not open handler and direct user to download
-                        window.open("http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-amd64.20140810.iso");
-                        return;
-                    }
-                    handler.open({
-                        name: 'elementaryOS',
-                        description: 'Support elementaryOS',
-                        amount: parseDonation()
-                    });
-                    event.preventDefault();
-                });
-                $(window).on('popstate', function() {
-                    handler.close();
-                });
-            });
-        </script>
     </head>
     <body>
         <div class="row">
             <img alt="elementary OS" id="logotype" src="images/logotype.svg">
             <h2>A fast and free replacement for Windows and OS X</h2>
             <input type="text" id="donate" value="$10.00">
-            <button id="download" class="suggested-action">Download Freya Beta 64bit</button>
+            <button id="download" class="suggested-action">Download Freya Beta</button>
         </div>
         <footer>
             Copyright &copy; 2015 elementary LLC.
@@ -67,5 +25,16 @@
                 <li><a href="https://github.com/elementary" target="_blank"><i class="fa fa-github"></i></a></li>
             </ul>
         </footer>
+        <div id="overlay"></div>
+        <div id="overlay-content">
+            <label>Download elementary OS</label>
+            <form action="">
+                <input type="radio" name="bit" value="32">32Bit or
+                <input type="radio" name="bit" value="64" checked="checked">64Bit
+            </form>
+            <button id="overlay-download" class="suggested-action">Download Freya Beta</button>
+        </div>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+        <script src="js/homepage.js"></script>
     </body>
 </html>
