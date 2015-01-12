@@ -176,6 +176,11 @@ a.button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+a.button-download {
+    margin-bottom: 6px;
+    margin-top: 9px;
+}
+
 /********
 * Input *
 ********/
@@ -213,10 +218,6 @@ input[type="text"]:focus {
 
     transition: all 200ms ease-in;
     outline: none;
-}
-
-button#download {
-    margin-bottom: 6px;
 }
 
 #logotype {
