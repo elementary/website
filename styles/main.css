@@ -17,35 +17,48 @@ body {
 
 h1 {
     font-size: 24px;
+    text-align: center;
+    opacity: 0.8;
 }
 
 h2 {
     font-size: 18px;
     font-weight: 300;
-    text-align: center;
 }
 
 h3 {
     font-size: 11px;
 }
 
+p {
+    text-align: left;
+}
+
 p.small-label {
-    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 12px;
     opacity: 0.8;
+    text-align: center;
+}
+
+p.error-label {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0;
+    color: #b3b3b3;
 }
 
 /*********
 * Layout *
 **********/
 
+#content-container {
+    min-height: 90vh;
+}
+
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     text-align: center;
     font-size: 12px;
     color: #666;
@@ -81,11 +94,20 @@ footer ul li a:focus i.fa {
     text-shadow: 0 1px 6px #08c;
 }
 
+.column {
+    display: inline-block;
+}
+
+.column+.column {
+    margin-left: 24px;
+}
+
 .row {
     width: auto;
     margin: 0 auto;
     padding: 24px;
     max-width: 1200px;
+    text-align: center;
 }
 
 /*********
@@ -154,6 +176,11 @@ a.button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+a.button-download {
+    margin-bottom: 6px;
+    margin-top: 9px;
+}
+
 /********
 * Input *
 ********/
@@ -193,18 +220,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-#downloads {
-    text-align: center;
-}
-
-#downloads .button-download {
-    margin-bottom: 6px;
-    margin-top: 9px;
-}
-
 #logotype {
     max-width: 100%;
-    display: block;
     width: 454px;
-    margin: 0 auto;
 }
