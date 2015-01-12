@@ -17,6 +17,8 @@ body {
 
 h1 {
     font-size: 24px;
+    text-align: center;
+    opacity: 0.8;
 }
 
 h2 {
@@ -38,6 +40,14 @@ p.small-label {
     font-size: 12px;
     opacity: 0.8;
     text-align: center;
+}
+
+p.error-label {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0;
+    color: #b3b3b3;
 }
 
 /*********
