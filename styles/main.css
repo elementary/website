@@ -9,6 +9,7 @@ body {
     background-color: #fff;
     color: #333;
     margin: 0;
+    height: 100%;
 }
 
 /**************
@@ -40,10 +41,6 @@ p.small-label {
 **********/
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     text-align: center;
     font-size: 12px;
     color: #666;
@@ -85,6 +82,13 @@ footer ul li a:focus i.fa {
 
 .column+.column {
     margin-left: 24px;
+}
+
+#wrap {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 58px; 
+    margin-bottom: -58px;
 }
 
 .row {
