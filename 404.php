@@ -8,7 +8,7 @@
     <p class="error-label">404</p>
     <h1>The page you’re looking for can’t be found</h1>
     <h2>There isn’t anything located here. Check the web address for mispelled words and try again.</h2>
-    <button id="download" class="suggested-action" onclick="window.location.href='index.html'">Go to Home Page</button>
+    <a class="button suggested-action" href="/">Go to Home Page</a>
 </div>
 
 <?php

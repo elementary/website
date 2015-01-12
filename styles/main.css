@@ -114,7 +114,8 @@ footer ul li a:focus i.fa {
 * Button *
 *********/
 
-button {
+button,
+a.button {
     display: inline-block;
     margin: 24px;
     padding: 16px 32px;
@@ -123,6 +124,7 @@ button {
 
     font-size: 14px;
     font-family: inherit;
+    text-decoration: none;
 
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -148,14 +150,16 @@ button {
     cursor: pointer;
 }
 
-button:focus {
+button:focus,
+a.button:focus {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
                 inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
                 0 0 6px 0 #08c;
 }
 
-button:active {
+button:active,
+a.button:active {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
     border-color: rgba(0, 0, 0,, 0.25);
@@ -164,7 +168,8 @@ button:active {
                 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
-button.suggested-action {
+button.suggested-action,
+a.button.suggested-action {
     background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
     border-color: #4D9CD1;
     color: #fff;
