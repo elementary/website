@@ -114,7 +114,7 @@ i.fa.warning {
 }
 
 .column.alert {
-    max-width: 600px
+    max-width: 600px;
     vertical-align: top;
 }
 
