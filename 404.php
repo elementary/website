@@ -5,7 +5,7 @@
 ?>
 
 <div class="row">
-    <div class="column">
+    <div class="column alert">
         <i class="warning fa fa-warning"></i>
     </div>
     <div class="column alert">
