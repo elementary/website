@@ -42,14 +42,6 @@ p.small-label {
     text-align: center;
 }
 
-p.error-label {
-    text-align: center;
-    font-size: 100px;
-    font-weight: 300;
-    margin: 0;
-    color: #b3b3b3;
-}
-
 /*********
 * Layout *
 **********/
@@ -108,6 +100,28 @@ footer ul li a:focus i.fa {
     padding: 24px;
     max-width: 1200px;
     text-align: center;
+}
+
+/*********
+* Alerts *
+*********/
+
+i.fa.warning {
+    text-align: center;
+    font-size: 64px;
+    margin: 0;
+    color: #fbc02d;
+    vertical-align: top;
+}
+
+.column.alert {
+    max-width: 600px
+    text-align: left;
+}
+
+.column.alert h1 {
+    text-align: left;
+    margin: 0;
 }
 
 /*********
