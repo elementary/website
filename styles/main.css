@@ -206,29 +206,24 @@ a.button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-.button-alternative {
+.button.flat {
+    background: #fff;
     border: 1px solid #777;
     border-radius: 5px;
+    box-shadow: none;
     color: #111;
     margin: .5em;
     padding: .5em;
     text-decoration: none;
+    text-shadow: none;
     transition: 100ms all;
 }
-.button-alternative:active,
-.button-alternative:hover,
-.button-alternative:focus {
-    background: #4D9CD1;
-    background-color: #53ABE5;
+.button.flat:active,
+.button.flat:hover,
+.button.flat:focus {
+    background: #53ABE5;
     border-color: #53ABE5;
-    /*
-    background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 0 0 rgba(255, 255, 255, 0.15);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    */
+    box-shadow: none;
     color: #fff;
     outline: none;
     transition: 100ms all;

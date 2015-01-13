@@ -30,9 +30,9 @@
             <div class="row">
                 <h2>Freya Beta 1</h2>
                 <br>
-                <p class="text-center"><a href="#" class="button-alternative">32 bit Direct</a> <a href="#" class="button-alternative">64 bit Direct</a></p>
+                <p class="text-center"><a href="#" class="button flat">32 bit Direct</a> <a href="#" class="button flat">64 bit Direct</a></p>
                 <br>
-                <p class="text-center"><a href="#" class="button-alternative">32 bit Magnet</a> <a href="#" class="button-alternative">64 bit Magnet</a></p>
+                <p class="text-center"><a href="#" class="button flat">32 bit Magnet</a> <a href="#" class="button flat">64 bit Magnet</a></p>
             </div>
 <?php
     include '_templates/footer.html';
