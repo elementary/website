@@ -29,7 +29,7 @@
 ## CSS
  - Try to use classes instead of IDs unless things are absolutely unique
  - One selector per line
- - Care with fallbacks and bowsers compatibilities
+ - Care with fallbacks and browsers compatibilities
 ```css
 .class {
     color: #fefe89;
