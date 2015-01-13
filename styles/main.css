@@ -110,11 +110,6 @@ footer ul li a:focus i.fa {
     color: #fbc02d;
 }
 
-.column.alert i.fa {
-    font-size: 64px;
-    margin: 8px 0 0;
-}
-
 .column.alert {
     max-width: 600px;
     vertical-align: top;
@@ -127,6 +122,11 @@ footer ul li a:focus i.fa {
 
 .column.alert h2 {
     text-align: left;
+}
+
+.column.alert i.fa {
+    font-size: 64px;
+    margin: 8px 0 0;
 }
 
 /*********
