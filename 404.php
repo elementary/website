@@ -12,9 +12,9 @@
         <h1>The page you’re looking for can’t be found</h1>
         <h2>There isn’t anything located here. Check the web address for mispelled words and try again.</h2>
     </div>
-</div>
-<div class="row">
-    <a class="button suggested-action" href="/">Go to Home Page</a>
+    <div class="row">
+        <a class="button suggested-action" href="/">Go to Home Page</a>
+    </div>
 </div>
 
 <?php
