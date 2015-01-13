@@ -42,14 +42,6 @@ p.small-label {
     text-align: center;
 }
 
-p.error-label {
-    text-align: center;
-    font-size: 100px;
-    font-weight: 300;
-    margin: 0;
-    color: #b3b3b3;
-}
-
 .text-left {
     text-align: left;
 }
