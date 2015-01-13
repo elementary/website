@@ -121,6 +121,33 @@ footer ul li a:focus i.fa {
 }
 
 /*********
+* Alerts *
+*********/
+
+.warning {
+    color: #fbc02d;
+}
+
+.column.alert {
+    max-width: 600px;
+    vertical-align: top;
+}
+
+.column.alert h1 {
+    text-align: left;
+    margin: 0;
+}
+
+.column.alert h2 {
+    text-align: left;
+}
+
+.column.alert i.fa {
+    font-size: 64px;
+    margin: 8px 0 0;
+}
+
+/*********
 * Button *
 *********/
 
@@ -180,6 +207,7 @@ a.button:active {
 
 button.suggested-action,
 a.button.suggested-action {
+    background-color: #64B9F1;
     background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
     border-color: #4D9CD1;
     color: #fff;
@@ -260,4 +288,43 @@ button#download {
 #logotype {
     max-width: 100%;
     width: 454px;
+}
+
+/*****************
+* Legacy Warning *
+*****************/
+
+#legacy-warning {
+    position: fixed;
+    top: 0px;
+    padding: 2em;
+    width: 100%;
+
+    background-color: #e35d4f;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+#legacy-warning p {
+    text-align: center;
+}
+
+#legacy-warning a {
+    color: white;
+}
+
+#legacy-warning #legacy-warning-buttons {
+    text-align: center;
+}
+
+#legacy-warning #legacy-warning-buttons a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+#legacy-warning #legacy-warning-buttons a.suggested-action {
+    border: 1px solid;
 }
