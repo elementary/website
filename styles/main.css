@@ -170,6 +170,7 @@ a.button:active {
 
 button.suggested-action,
 a.button.suggested-action {
+    background-color: #64B9F1;
     background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
     border-color: #4D9CD1;
     color: #fff;
