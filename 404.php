@@ -4,7 +4,7 @@
     include '_templates/header.php';
 ?>
 
-<div class="row alert">
+<div class="row">
     <i class="column warning fa fa-warning"></i>
 	<div class="column alert">
         <h1>The page you’re looking for can’t be found</h1>
