@@ -5,7 +5,9 @@
 ?>
 
 <div class="row">
-    <i class="column warning fa fa-warning"></i>
+    <div class="column">
+        <i class="warning fa fa-warning"></i>
+    </div>
     <div class="column alert">
         <h1>The page you’re looking for can’t be found</h1>
         <h2>There isn’t anything located here. Check the web address for mispelled words and try again.</h2>
