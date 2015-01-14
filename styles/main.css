@@ -262,8 +262,9 @@ div#overlay-content {
     display: none;
     margin: auto;
     position: relative;
-    text-align: center;
     z-index: 101;
     background: #FFF;
     color: #000;
+    width: 400px;
+    height: 200px;
 }
