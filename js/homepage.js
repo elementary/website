@@ -57,7 +57,7 @@ function toggleOverlay(){
         content.style.display = 'none';
     } else {
         overlay.style.display = 'block';
-        content.style.display = 'inline-block';
+        content.style.display = 'block';
     }
 }
 

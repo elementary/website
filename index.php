@@ -16,8 +16,8 @@
                     <input type="radio" name="bit" value="32">32Bit or
                     <input type="radio" name="bit" value="64" checked="checked">64Bit
                 </form>
-                <button id="overlay-download" class="suggested-action">Download Freya Beta</button>
-                <p><a href="#">Download Freya using Torrent</a></p>
+                <button id="overlay-download" class="suggested-action">Download Freya Beta</button><br />
+                <a href="#">Download Freya using Torrent</a>
             </div>
 <?php
     include '_templates/footer.html';
