@@ -48,6 +48,7 @@ function doStripePayment () {
 }
 
 function toggleOverlay(){
+    console.log("toggleOverlay");
     var overlay = document.getElementById('overlay');
     var content = document.getElementById('overlay-content');
     overlay.style.opacity = 0.7;
