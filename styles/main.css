@@ -258,6 +258,7 @@ button#download {
     border-radius: 0;
     margin: 0;
     padding: 16px;
+    float: left;
 }
 
 .linked button:first-child,
