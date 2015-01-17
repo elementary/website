@@ -244,6 +244,42 @@ button#download {
     width: 454px;
 }
 
+/*********
+* Linked *
+*********/
+
+.linked button,
+.linked .button {
+    border-left-width: 0;
+    border-radius: 0;
+}
+
+.linked button:first-child,
+.linked button:active:first-child,
+.linked button:active:hover:first-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child {
+    border-width: 1px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.linked button:last-child,
+.linked button:active:last-child,
+.linked button:active:hover:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child {
+    border-left-width: 0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
 /*****************
 * Legacy Warning *
 *****************/
