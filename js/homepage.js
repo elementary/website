@@ -8,12 +8,14 @@ function download_clicked (e) {
 function parsePayment() {
     var amount = document.getElementById('pay-custom').value;
     if (-1 == amount.indexOf('.')) {
-        var isDollar = true;
-    }
-    var cleanAmount = amount.replace(/\D+/g, '');
-    if (isDollar) {
+        var cleanAmount = amount.replace(/\D+/g, '');
         cleanAmount = cleanAmount + '00';
+    } else {
+        var arr = amount.split('.');
+        var amount = arr[0] + arr[1];
+        var cleanAmount = amount.replace(/\D+/g, '');
     }
+    console.log(cleanAmount);
     return cleanAmount;
 }
 
