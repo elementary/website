@@ -110,9 +110,13 @@ footer ul li a:focus i.fa {
 
 @media (min-width: 444px) {
     .column.third {
-        width: 348px;
+        width: 328px;
         margin: 32px 32px 0;
     }
+}
+
+.column.third p {
+    text-align: center;
 }
 
 .row {
