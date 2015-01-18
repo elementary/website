@@ -100,10 +100,6 @@ footer ul li a:focus i.fa {
     display: inline-block;
 }
 
-.column+.column {
-    margin-left: 24px;
-}
-
 .column.third {
     vertical-align: top;
     margin-top: 32px;
@@ -113,6 +109,10 @@ footer ul li a:focus i.fa {
     .column.third {
         width: 328px;
         margin: 32px 32px 0;
+    }
+
+    .column+.column {
+        margin-left: 24px;
     }
 }
 
