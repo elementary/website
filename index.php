@@ -9,11 +9,12 @@
                 <h2>A fast and open replacement for Windows and OS X</h2>
                 <div class="row">
                     <div class="column">
-                        <button class="small-button payment-button js-target-amount">10</button>
-                        <button class="small-button payment-button js-target-amount">20</button>
+                        <button class="small-button payment-button target-amount">10</button>
+                        <button class="small-button payment-button target-amount checked">25</button>
+                        <button class="small-button payment-button target-amount">50</button>
                     </div>
                     <div class="column">
-                        <input type="text" id="payment" class="button small-button js-target-amount" placeholder="Custom">
+                        <input type="text" id="payment" class="button small-button target-amount" placeholder="Custom">
                         <p class="small-label focus-reveal text-center">Enter any whole dollar amount.</p>
                     </div>
                 </div>
