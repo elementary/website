@@ -105,6 +105,7 @@ footer ul li a:focus i.fa {
 }
 
 .column.third {
+    vertical-align: top;
     margin-top: 32px;
 }
 
@@ -116,7 +117,6 @@ footer ul li a:focus i.fa {
 }
 
 .column.third p {
-    vertical-align: top;
     text-align: center;
 }
 
