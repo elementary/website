@@ -100,8 +100,25 @@ footer ul li a:focus i.fa {
     display: inline-block;
 }
 
-.column+.column {
-    margin-left: 24px;
+.column.third {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 444px) {
+    .column+.column {
+        margin-left: 24px;
+    }
+
+    .column.third {
+        width: 328px;
+        margin: 32px 32px 0;
+        vertical-align: top;
+    }
+}
+
+.column.third p {
+    text-align: center;
 }
 
 .row {
