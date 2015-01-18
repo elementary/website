@@ -9,14 +9,15 @@ $amount = $_POST['amount'];
 
 // Create the charge on Stripe's servers - this will charge the user's card
 try {
-$charge = Stripe_Charge::create(array(
-  "amount" => amount,
-  "currency" => "usd",
-  "card" => $token,
-  "description" => "elementary OS download")
-);
+    $charge = Stripe_Charge::create(array(
+        "amount" => $amount,
+        "currency" => "usd",
+        "card" => $token,
+        "description" => "elementary OS download")
+    );
+    echo "OK";
 } catch(Stripe_CardError $e) {
-  // The card has been declined
+    echo "error";
 }
 
 ?>
