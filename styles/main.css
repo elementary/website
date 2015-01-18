@@ -239,11 +239,12 @@ button.suggested-action,
     vertical-align: super;
 }
 #pay-custom {
+    max-width: 170px;
     padding: 9px;
 }
 @media (min-width: 444px) {
     #pay-custom {
-        max-width: 148px;
+        max-width: 150px;
     }
 }
 
