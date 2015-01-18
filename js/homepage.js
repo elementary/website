@@ -6,7 +6,7 @@ function download_clicked (e) {
 }
 
 function parsePayment() {
-    var amount = document.getElementById('payment').value;
+    var amount = document.getElementById('pay-custom').value;
     if (-1 == amount.indexOf('.')) {
         var isDollar = true;
     }
