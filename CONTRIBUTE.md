@@ -7,6 +7,7 @@
 ## PHP
  - `include` templates, not `require` or `_once`
  - Use full PHP tags, not short ones
+ - Don't close PHP tags on PHP only files
  - Correctly format assignments for readability
 
 ```php
