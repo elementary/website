@@ -1,13 +1,27 @@
 var stripe_key = '';
 
 function download_clicked (e) {
-    payment_amount = 2000;
-    //TODO: Add input and get the value here
-    //TODO: Add checking for $0 or below transaction costs
+    var payment_amount = parsePayment();
     do_stripe_payment(payment_amount)
 }
 
+function parsePayment() {
+    var amount = document.getElementById('donate').value;
+    if (-1 == amount.indexOf('.')) {
+        var isDollar = true;
+    }
+    var cleanAmount = amount.replace(/\D+/g, '');
+    if (isDollar) {
+        cleanAmount = cleanAmount + '00';
+    }
+    return cleanAmount;
+}
+
 function do_stripe_payment (amount) {
+    if (/^0+$/.test(amount)) {
+        open_download_overlay();
+        return;
+    }
     StripeCheckout.open({
         key: stripe_key,
         image: '/logomark.svg',
