@@ -228,14 +228,19 @@ button.suggested-action,
 }
 
 .small-button {
+    margin: 3px;
     padding: 8px 16px;
-    margin: 12px;
 }
 .payment-button::before {
     content: "$";
     font-size: smaller;
     margin-left: -3px;
+    margin-right: 3px;
     vertical-align: super;
+}
+#pay-custom {
+    max-width: 142px;
+    padding: 9px;
 }
 
 /********
@@ -262,7 +267,6 @@ input[type="text"]:focus {
 
     transition: all 200ms ease-out;
     background-clip: padding-box;
-    box-sizing: border-box;
 
     outline: 0;
 }
