@@ -2,6 +2,7 @@
 *
 * This file is part of elementaryos.org
 */
+
 html,
 body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
@@ -13,6 +14,17 @@ body {
 /**************
 * Text Styles *
 **************/
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 24px;
     text-align: center;
@@ -35,14 +47,6 @@ p.small-label {
     font-size: 12px;
     opacity: 0.8;
     text-align: center;
-}
-
-p.error-label {
-    text-align: center;
-    font-size: 100px;
-    font-weight: 300;
-    margin: 0;
-    color: #b3b3b3;
 }
 
 p {
@@ -105,24 +109,30 @@ footer ul li a:focus i.fa {
 /*********
 * Alerts *
 *********/
+
 .warning {
     color: #fbc02d;
 }
+
 .column.alert {
     max-width: 600px;
     vertical-align: top;
 }
+
 .column.alert h1 {
     text-align: left;
     margin: 0;
 }
+
 .column.alert h2 {
     text-align: left;
 }
+
 .column.alert i.fa {
     font-size: 64px;
     margin: 8px 0 0;
 }
+
 /*********
 * Button *
 *********/
@@ -136,12 +146,10 @@ a.button {
     font-size: 14px;
     font-family: inherit;
     text-decoration: none;
+    color: #333;
+
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                      transparent,
-                      transparent 50%,
-                      rgba(0, 0, 0, 0.04)
-                      );
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
@@ -156,10 +164,12 @@ a.button {
 }
 button:focus,
 a.button:focus {
+    border-color: rgba(77, 156, 209, 0.8);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
                 inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 0 6px 0 #08c;
+                0 3px 6px rgba(12,128,200,0.16),
+                0 3px 6px rgba(12,128,200,0.23);
 }
 button:active,
 a.button:active {
@@ -167,7 +177,6 @@ a.button:active {
     background-image: none;
     border-color: rgba(0, 0, 0,, 0.25);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
-    0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 button.suggested-action,
 a.button.suggested-action {
@@ -183,9 +192,6 @@ a.button.suggested-action {
 input[type="text"] {
     background-color: #fff;
     background-image: linear-gradient(to bottom,
-                      #fafafa,
-                      #fdfdfd
-    );
     border: 1px solid rgba(0, 0, 0, 0.22);
     border-radius: 3px;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.04),
@@ -214,6 +220,49 @@ button#download {
     max-width: 100%;
     width: 454px;
 }
+/*********
+* Linked *
+*********/
+
+.linked {
+    margin: 24px;
+}
+
+.linked button,
+.linked .button {
+    border-left-width: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 16px;
+    float: left;
+}
+
+.linked button:first-child,
+.linked button:active:first-child,
+.linked button:active:hover:first-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child {
+    border-width: 1px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.linked button:last-child,
+.linked button:active:last-child,
+.linked button:active:hover:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child {
+    border-left-width: 0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
 /*****************
 * Legacy Warning *
 *****************/

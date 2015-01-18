@@ -8,6 +8,7 @@
                 <input type="text" id="donate" value="$10.00">
                 <button id="download" class="suggested-action">Download Freya Beta</button>
                 <p class="small-label">886.0 MB (64 bit PC or Mac)</p>
+                <p class="small-label"><a href="alternative-downloads">Alternative Downloads</a></p>
             </div>
             <div id="overlay"></div>
             <div id="overlay-content" style="display: none">
