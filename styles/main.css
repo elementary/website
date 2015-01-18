@@ -52,6 +52,10 @@ p.small-label {
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*********
 * Layout *
 **********/
@@ -98,6 +102,7 @@ footer ul li a:focus i.fa {
 
 .column {
     display: inline-block;
+    vertical-align: top;
 }
 
 .column+.column {
@@ -221,8 +226,13 @@ button.suggested-action,
     margin-bottom: 6px;
 }
 
-#payment {
-    padding: 8px;
+.small-button {
+    padding: 8px 16px;
+}
+.payment-button::before {
+    content: "$";
+    vertical-align: super;
+    font-size: smaller;
 }
 
 /********
@@ -288,6 +298,15 @@ input:focus::-moz-placeholder {
 }
 input:focus:-ms-input-placeholder {
     color:transparent;
+}
+
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+}
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
 }
 
 /*********

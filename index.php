@@ -8,7 +8,14 @@
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h2>A fast and open replacement for Windows and OS X</h2>
                 <div class="row">
-                    <input type="text" id="payment" class="button" placeholder="Custom">
+                    <div class="column">
+                        <button class="small-button payment-button js-target-amount">10</button>
+                        <button class="small-button payment-button js-target-amount">20</button>
+                    </div>
+                    <div class="column">
+                        <input type="text" id="payment" class="button small-button js-target-amount" placeholder="Custom">
+                        <p class="small-label focus-reveal text-center">Enter any whole dollar amount.</p>
+                    </div>
                 </div>
                 <button id="download" class="suggested-action" onclick="download_clicked();")>Download Freya Beta</button>
                 <p class="small-label">886.0 MB (64 bit PC or Mac)</p>
