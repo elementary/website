@@ -116,6 +116,7 @@ footer ul li a:focus i.fa {
 }
 
 .column.third p {
+    vertical-align: top;
     text-align: center;
 }
 
