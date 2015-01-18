@@ -38,8 +38,8 @@ function open_download_overlay () {
 key_http = new XMLHttpRequest();
 key_http.open("GET","./backend/payment.php",true);
 key_http.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        stripe_key = xmlhttp.responseText;
+    if (key_http.readyState == 4 && key_http.status == 200) {
+        stripe_key = key_http.responseText;
         console.log("Striep key is: " + stripe_key);
     }
 } 
