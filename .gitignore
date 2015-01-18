@@ -1,2 +1,5 @@
 # Get rid of silly temp files
 *~
+
+# Dont include the config file
+backend/config.php

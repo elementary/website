@@ -5,7 +5,7 @@ require_once('./config.php');
 Stripe::setApiKey($config['stripe_sk']);
 
 
-if (isset($_POST['somevar'])) { 
+if (isset($_POST['token'])) { 
     $token  = $_POST['token'];
     $amount = $_POST['amount'];
 
