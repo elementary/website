@@ -21,6 +21,7 @@ function do_stripe_payment (amount) {
 }
 
 function process_payment(amount, token) {
+    xmlhttp = new XMLHttpRequest();
     xmlhttp.open("POST","./backend/payment.php",true);
     xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     xmlhttp.send("amount=" + amount + "&token=" + token.id);
