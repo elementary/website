@@ -6,21 +6,24 @@ function download_clicked (e) {
 }
 
 function do_stripe_payment (amount) {
-    handler = StripeCheckout.configure({
+    StripeCheckout.open({
         key: 'pk_test_aPQFfHx96Qeznh5tFGzW3H6T',
         image: '/logomark.svg',
         token: function (token) {
             console.log(token);
-            //TODO: send payment token to server
+            process_payment(amount, token);
             open_download_overlay();
-        }
-    });
-
-    handler.open({
+        },
         name: 'elementary LLC.',
         description: 'elementary OS download',
         amount: amount
     });
+}
+
+function process_payment(amount, token) {
+    xmlhttp.open("POST","./backend/payment.php",true);
+    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.send("amount=" + amount + "&token=" + token.id);
 }
 
 function open_download_overlay () {
