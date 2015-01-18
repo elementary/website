@@ -106,13 +106,13 @@ footer ul li a:focus i.fa {
 }
 
 @media (min-width: 444px) {
+    .column+.column {
+        margin-left: 24px;
+    }
+
     .column.third {
         width: 328px;
         margin: 32px 32px 0;
-    }
-
-    .column+.column {
-        margin-left: 24px;
     }
 }
 
