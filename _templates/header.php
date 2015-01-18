@@ -34,6 +34,7 @@
             ga('send', 'pageview');
         </script>
 
+        <?php echo $header_scripts; ?>
     </head>
     <body>
         <div id="content-container">
