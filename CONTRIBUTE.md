@@ -54,14 +54,10 @@ git push -u origin feature_branch_name
 ```bash
 git pull origin master
 ```
-## Merge/Rebase from master
+## Merge from master
 ```bash
 git checkout feature_branch_name
 git merge master
 ```
-or
-```bash
-git checkout feature_branch_name
-git rebase master
-```
 ## Fix Merge Conflicts
+TODO
