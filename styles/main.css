@@ -233,8 +233,9 @@ button.suggested-action,
 }
 .payment-button::before {
     content: "$";
-    vertical-align: super;
     font-size: smaller;
+    margin-left: -3px;
+    vertical-align: super;
 }
 
 /********
