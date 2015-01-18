@@ -8,7 +8,7 @@
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h2>A fast and open replacement for Windows and OS X</h2>
                 <div class="row">
-                    <input type="text" id="payment" value="$10.00">
+                    <input type="text" id="payment" class="button" placeholder="Custom">
                 </div>
                 <button id="download" class="suggested-action" onclick="download_clicked();")>Download Freya Beta</button>
                 <p class="small-label">886.0 MB (64 bit PC or Mac)</p>

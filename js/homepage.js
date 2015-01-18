@@ -56,5 +56,5 @@ key_http.onreadystatechange = function() {
         stripe_key = key_http.responseText;
         console.log("Striep key is: " + stripe_key);
     }
-} 
+}
 key_http.send();
