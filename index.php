@@ -12,15 +12,15 @@
             <div class="row">
                 <div class="column third">
                     <h1>Wired</h1>
-                    <p>"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</p>
+                    <p>&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</p>
                 </div>
                 <div class="column third">
                     <h1>Mac Life</h1>
-                    <p>"a fast, low-maintenance platform that can be installed virtually anywhere"</p>
+                    <p>&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</p>
                 </div>
                 <div class="column third">
                     <h1>Lifehacker</h1>
-                    <p>“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</p>
+                    <p>&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</p>
                 </div>
             </div>
 <?php
