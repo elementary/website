@@ -1,23 +1,43 @@
 var stripe_key = '';
 
-var current_amount = '25';
-var amountTrack = function() {
+var previous_amount = 'twenty-five';
+var current_amount = 'twenty-five';
+var clearChecked = function() {
     var targets = document.getElementsByClassName('target-amount');
     for ( var i = 0; i < targets.length; i++ ) {
         targets[i].classList.remove('checked');
     }
+}
+var amountTrack = function() {
+    clearChecked();
     this.classList.add('checked');
+    var new_amount;
     if ( this.id == 'pay-custom' ) {
-        current_amount = 'custom';
+        new_amount = 'custom';
     } else {
-        current_amount = this.value;
+        new_amount = this.id;
     }
-};
+    if ( new_amount != current_amount ) {
+        previous_amount = current_amount;
+        current_amount = new_amount;
+    }
+}
+var amountBlur = function() {
+    if (
+        !this.validity.valid ||
+        this.value == ''
+    ) {
+        clearChecked();
+        current_amount = previous_amount;
+        document.getElementById(current_amount).classList.add('checked');
+    }
+}
 
 var click_watch = document.getElementsByClassName('target-amount');
 for ( var i = 0; i < click_watch.length; i++ ) {
     click_watch[i].addEventListener('click', amountTrack, false);
 }
+document.getElementById('pay-custom').addEventListener('blur', amountBlur);
 
 function download_clicked (e) {
     var payment_amount = parsePayment();
