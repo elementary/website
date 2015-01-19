@@ -24,7 +24,7 @@ function parsePayment() {
     //  1.2   = 120
     //  1.23  = 123
     //  1.234 = 123
-    
+
     // See also:
     ////    https://support.stripe.com/questions/what-is-the-minimum-amount-i-can-charge-with-stripe
     ////    https://support.stripe.com/questions/what-is-the-maximum-amount-i-can-charge-with-stripe
@@ -38,12 +38,8 @@ function parsePayment() {
     } else {
         amount = amount.value;
         console.log('Initial amount: ' + amount);
-        // Check for negative values.
-        if ( amount < 0 ) {
-            alert('Yeah, we\'re not gonna pay you to use it.');
-            return false;
         // Not a decimal, just pad the thing with two zeros.
-        } else if (-1 == amount.indexOf('.')) {
+        if (-1 == amount.indexOf('.')) {
             var cleanAmount = amount.replace(/\D+/g, '');
 ;
             cleanAmount = cleanAmount + '00';
