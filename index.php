@@ -13,7 +13,7 @@
                     <button class="small-button payment-button target-amount">50</button>
                     <div class="column">
                         <input type="number" step="0.01" id="pay-custom" class="button small-button target-amount" placeholder="Custom">
-                        <p class="small-label focus-reveal text-center">Enter any whole dollar amount.</p>
+                        <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                     </div>
                 </div>
                 <button id="download" class="suggested-action" onclick="download_clicked();")>Download Freya Beta</button>
