@@ -6,7 +6,10 @@ function download_clicked (e) {
 }
 
 function parsePayment() {
-    var amount = document.getElementById('pay-custom').value;
+    var amount = document.getElementById('pay-custom');
+    amount.setAttribute('type', 'text');
+    amount = amount.value;
+    console.log(amount);
     if (-1 == amount.indexOf('.')) {
         var cleanAmount = amount.replace(/\D+/g, '');
         cleanAmount = cleanAmount + '00';
