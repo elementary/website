@@ -354,3 +354,11 @@ button#download {
 #legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
 }
+
+/*******
+* Home *
+*******/
+
+.quote-logo img {
+    height: 30px;
+}
