@@ -69,7 +69,7 @@ function parsePayment() {
     ////    https://support.stripe.com/questions/what-is-the-maximum-amount-i-can-charge-with-stripe
 
     if ( current_amount != 'custom' ) {
-        return current_amount*100;
+        return document.getElementById(current_amount).value*100;
     } else {
         var amount = document.getElementById('amount-custom');
         if ( !amount.validity.valid ) {
