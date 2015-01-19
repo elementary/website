@@ -1,7 +1,7 @@
 var stripe_key = '';
 
-var previous_amount = 'twenty-five';
-var current_amount = 'twenty-five';
+var previous_amount = 'amount-twenty-five';
+var current_amount = 'amount-twenty-five';
 var clearChecked = function() {
     var targets = document.getElementsByClassName('target-amount');
     for ( var i = 0; i < targets.length; i++ ) {
@@ -12,7 +12,7 @@ var amountTrack = function() {
     clearChecked();
     this.classList.add('checked');
     var new_amount;
-    if ( this.id == 'pay-custom' ) {
+    if ( this.id == 'amount-custom' ) {
         new_amount = 'custom';
     } else {
         new_amount = this.id;
@@ -37,7 +37,7 @@ var click_watch = document.getElementsByClassName('target-amount');
 for ( var i = 0; i < click_watch.length; i++ ) {
     click_watch[i].addEventListener('click', amountTrack, false);
 }
-document.getElementById('pay-custom').addEventListener('blur', amountBlur);
+document.getElementById('amount-custom').addEventListener('blur', amountBlur);
 
 function download_clicked (e) {
     var payment_amount = parsePayment();
@@ -71,7 +71,7 @@ function parsePayment() {
     if ( current_amount != 'custom' ) {
         return current_amount*100;
     } else {
-        var amount = document.getElementById('pay-custom');
+        var amount = document.getElementById('amount-custom');
         if ( !amount.validity.valid ) {
             // TODO
             // Not valid, make wobble with a class.
