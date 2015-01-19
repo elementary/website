@@ -8,9 +8,9 @@
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h2>A fast and open replacement for Windows and OS X</h2>
                 <div class="row">
-                    <button class="small-button payment-button target-amount">10</button>
-                    <button class="small-button payment-button target-amount checked">25</button>
-                    <button class="small-button payment-button target-amount">50</button>
+                    <button value="10" class="small-button payment-button target-amount">10</button>
+                    <button value="25" class="small-button payment-button target-amount checked">25</button>
+                    <button value="50" class="small-button payment-button target-amount">50</button>
                     <div class="column">
                         <input type="number" id="pay-custom" class="button small-button target-amount" placeholder="Custom">
                         <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
