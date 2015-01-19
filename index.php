@@ -12,7 +12,7 @@
                     <button class="small-button payment-button target-amount checked">25</button>
                     <button class="small-button payment-button target-amount">50</button>
                     <div class="column">
-                        <input type="text" pattern="\d*" id="pay-custom" class="button small-button target-amount" placeholder="Custom">
+                        <input type="text" pattern="[0-9]*" id="pay-custom" class="button small-button target-amount" placeholder="Custom">
                         <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                     </div>
                 </div>
