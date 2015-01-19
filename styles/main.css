@@ -52,6 +52,10 @@ p.small-label {
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*********
 * Layout *
 **********/
@@ -98,9 +102,10 @@ footer ul li a:focus i.fa {
 
 .column {
     display: inline-block;
+    vertical-align: top;
 }
 
-.column+.column {
+.column + .column {
     margin-left: 24px;
 }
 
@@ -114,6 +119,11 @@ footer ul li a:focus i.fa {
 
 .row .row {
     padding: 0;
+}
+
+#logotype {
+    max-width: 100%;
+    width: 454px;
 }
 
 /*********
@@ -148,7 +158,7 @@ footer ul li a:focus i.fa {
 *********/
 
 button,
-a.button {
+.button {
     display: inline-block;
     margin: 24px;
     padding: 16px 32px;
@@ -185,7 +195,7 @@ a.button {
 }
 
 button:focus,
-a.button:focus {
+.button:focus {
     border-color: rgba(77, 156, 209, 0.8);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
@@ -195,16 +205,17 @@ a.button:focus {
 }
 
 button:active,
-a.button:active {
+.button:active,
+.target-amount.checked {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
-    border-color: rgba(0, 0, 0,, 0.25);
+    border-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
                 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
 button.suggested-action,
-a.button.suggested-action {
+.button.suggested-action {
     background-color: #64B9F1;
     background-image: linear-gradient(to bottom, #75C6FD, #53ABE5);
     border-color: #4D9CD1;
@@ -212,11 +223,49 @@ a.button.suggested-action {
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+#download {
+    margin-bottom: 6px;
+}
+
+.small-button {
+    margin: 3px;
+    padding: 8px 16px;
+}
+.payment-button::before {
+    content: "$";
+    font-size: smaller;
+    margin-left: -3px;
+    margin-right: 3px;
+    vertical-align: super;
+}
+#pay-custom {
+    max-width: 137px;
+    padding: 9px;
+}
+@media (min-width: 444px) {
+    #pay-custom {
+        max-width: 117px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /*
+        Previously crashed Chrome on hover
+        display: none;
+    */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /********
 * Input *
 ********/
 
-input[type="text"] {
+input[type="text"]:not(.button),
+input[type="text"]:focus,
+input[type="number"]:not(.button),
+input[type="number"]:focus {
     background-color: #fff;
     background-image: linear-gradient(to bottom,
                                   #fafafa,
@@ -235,14 +284,15 @@ input[type="text"] {
 
     transition: all 200ms ease-out;
     background-clip: padding-box;
-    box-sizing: border-box;
 
-    padding-left: 8px;
-    height: 36px;
     outline: 0;
 }
+input[type="text"]:not(.button) {
+    padding: 8px;
+}
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="number"]:focus {
     border-color: rgba(61, 155, 218, 0.80);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
@@ -251,13 +301,37 @@ input[type="text"]:focus {
     outline: none;
 }
 
-button#download {
-    margin-bottom: 6px;
+::-webkit-input-placeholder {
+    color: #333;
+}
+:-moz-placeholder {
+    color: #333;
+}
+::-moz-placeholder {
+    color: #333;
+}
+:-ms-input-placeholder {
+    color: #333;
+}
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+input:focus:-moz-placeholder {
+    color:transparent; }
+input:focus::-moz-placeholder {
+    color:transparent;
+}
+input:focus:-ms-input-placeholder {
+    color:transparent;
 }
 
-#logotype {
-    max-width: 100%;
-    width: 454px;
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+}
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
 }
 
 /*********
