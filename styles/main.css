@@ -263,9 +263,7 @@ input::-webkit-inner-spin-button {
 ********/
 
 input[type="text"]:not(.button),
-input[type="text"]:focus,
-input[type="number"]:not(.button),
-input[type="number"]:focus {
+input[type="text"]:focus {
     background-color: #fff;
     background-image: linear-gradient(to bottom,
                                   #fafafa,
@@ -291,8 +289,7 @@ input[type="text"]:not(.button) {
     padding: 8px;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
+input[type="text"]:focus {
     border-color: rgba(61, 155, 218, 0.80);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
