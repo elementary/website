@@ -15,7 +15,7 @@
                     <p>"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</p>
                 </div>
                 <div class="column third">
-                    <h1>Mac Life</h1>
+                    <h1>Mac|Life</h1>
                     <p>"a fast, low-maintenance platform that can be installed virtually anywhere"</p>
                 </div>
                 <div class="column third">
