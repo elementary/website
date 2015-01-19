@@ -255,7 +255,7 @@ button.suggested-action,
     margin-right: 3px;
     vertical-align: super;
 }
-#pay-custom {
+#amount-custom {
     width: 100%;
     max-width: 170px;
     margin: 3px 0;
@@ -272,7 +272,7 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 @media (min-width: 444px) {
-    #pay-custom {
+    #amount-custom {
         width: 117px;
         margin: 3px;
     }
