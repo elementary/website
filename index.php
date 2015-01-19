@@ -11,16 +11,16 @@
             </div>
             <div class="row">
                 <div class="column third">
-                    <h1>Wired</h1>
-                    <p>"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</p>
+                    <a href="https://wired.com" class="quote-logo"><img src="/images/thirdparty-logos/wired.png" alt="WIRED" /></a>
+                    <p>&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</p>
                 </div>
                 <div class="column third">
-                    <h1>Mac Life</h1>
-                    <p>"a fast, low-maintenance platform that can be installed virtually anywhere"</p>
+                    <a href="http://maclife.com" class="quote-logo"><img src="/images/thirdparty-logos/maclife.png" alt="MacLife" /></a>
+                    <p>&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</p>
                 </div>
                 <div class="column third">
-                    <h1>Lifehacker</h1>
-                    <p>“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</p>
+                    <a href="http://lifehacker.com" class="quote-logo"><img src="/images/thirdparty-logos/lifehacker.png" alt="LifeHacker" /></a>
+                    <p>&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</p>
                 </div>
             </div>
 <?php
