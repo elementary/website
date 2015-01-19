@@ -1,5 +1,24 @@
 var stripe_key = '';
 
+var current_amount = '25';
+var amountTrack = function() {
+    var targets = document.getElementsByClassName('target-amount');
+    for ( var i = 0; i < targets.length; i++ ) {
+        targets[i].classList.remove('checked');
+    }
+    this.classList.add('checked');
+    if ( this.id == 'pay-custom' ) {
+        current_amount = 'custom';
+    } else {
+        current_amount = this.value;
+    }
+};
+
+var click_watch = document.getElementsByClassName('target-amount');
+for ( var i = 0; i < click_watch.length; i++ ) {
+    click_watch[i].addEventListener('click', amountTrack, false);
+}
+
 function download_clicked (e) {
     var payment_amount = parsePayment();
     // Not a valid payment amount
@@ -7,7 +26,7 @@ function download_clicked (e) {
         return false;
         // open_download_overlay();
     // 0-like payment amount
-    } else if ( payment_amount < 1 ) {
+    } else if ( payment_amount < 100 ) {
         open_download_overlay();
     // Pay
     } else {
@@ -29,36 +48,41 @@ function parsePayment() {
     ////    https://support.stripe.com/questions/what-is-the-minimum-amount-i-can-charge-with-stripe
     ////    https://support.stripe.com/questions/what-is-the-maximum-amount-i-can-charge-with-stripe
 
-    var amount = document.getElementById('pay-custom');
-    if ( !amount.validity.valid ) {
-        // TODO
-        // Not valid, make wobble with a class.
-        // Also set color, for IE <= 9
-        return false;
+    if ( current_amount != 'custom' ) {
+        return current_amount*100;
     } else {
-        amount = amount.value;
-        console.log('Initial amount: ' + amount);
-        // Not a decimal, just pad the thing with two zeros.
-        if (-1 == amount.indexOf('.')) {
-            var cleanAmount = amount.replace(/\D+/g, '');
-;
-            cleanAmount = cleanAmount + '00';
-        // A decimal
+        var amount = document.getElementById('pay-custom');
+        if ( !amount.validity.valid ) {
+            // TODO
+            // Not valid, make wobble with a class.
+            // Also set color, for IE <= 9
+            return false;
         } else {
-            // Split it in half
-            var arr = amount.split('.');
-            // Convert the cents to a string and trim to two places.
-            arr[1] = arr[1].toString().substr(0, 2);
-            // If less than two places, add padding.
-            while ( arr[1].length < 2 ) {
-                arr[1] = arr[1] + '0';
+            amount = amount.value;
+            console.log('Initial amount: ' + amount);
+            // Not a decimal, just pad the thing with two zeros.
+            if (-1 == amount.indexOf('.')) {
+                var cleanAmount = amount.replace(/\D+/g, '');
+    ;
+                cleanAmount = cleanAmount*100;
+            // A decimal
+            } else {
+                // Don't use multiplication because unsigned floats are awful.
+                // Split it in half
+                var arr = amount.split('.');
+                // Convert the cents to a string and trim to two places.
+                arr[1] = arr[1].toString().substr(0, 2);
+                // If less than two places, add padding.
+                while ( arr[1].length < 2 ) {
+                    arr[1] = arr[1] + '0';
+                }
+                // Condense the two together again.
+                var amount = arr[0] + arr[1];
+                var cleanAmount = amount.replace(/\D+/g, '');
             }
-            // Condense the two together again.
-            var amount = arr[0] + arr[1];
-            var cleanAmount = amount.replace(/\D+/g, '');
+            // Remove leading zeros.
+            return parseInt(cleanAmount, 10);
         }
-        // Remove leading zeros.
-        return parseInt(cleanAmount, 10);
     }
 }
 
