@@ -239,12 +239,28 @@ button.suggested-action,
     vertical-align: super;
 }
 #pay-custom {
-    max-width: 137px;
+    width: 100%;
+    max-width: 170px;
+    margin: 3px 0;
     padding: 9px;
+}
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+    margin: 0 3px;
+    width: 190px;
+}
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
 }
 @media (min-width: 444px) {
     #pay-custom {
-        max-width: 117px;
+        width: 117px;
+        margin: 3px;
+    }
+    .focus-reveal {
+        width: auto;
     }
 }
 
@@ -301,6 +317,11 @@ input[type="number"]:focus {
     outline: none;
 }
 
+input:invalid,
+input:focus:invalid {
+    color: #c0392b !important;
+}
+
 ::-webkit-input-placeholder {
     color: #333;
 }
@@ -323,15 +344,6 @@ input:focus::-moz-placeholder {
 }
 input:focus:-ms-input-placeholder {
     color:transparent;
-}
-
-.focus-reveal {
-    opacity: 0 !important;
-    transition: 250ms all;
-}
-input:focus + .focus-reveal {
-    opacity: 0.8 !important;
-    transition: 250ms all;
 }
 
 /*********

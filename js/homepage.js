@@ -2,31 +2,71 @@ var stripe_key = '';
 
 function download_clicked (e) {
     var payment_amount = parsePayment();
-    do_stripe_payment(payment_amount)
+    // Not a valid payment amount
+    if ( payment_amount === false ) {
+        return false;
+        // open_download_overlay();
+    // 0-like payment amount
+    } else if ( payment_amount < 1 ) {
+        open_download_overlay();
+    // Pay
+    } else {
+        do_stripe_payment(payment_amount);
+    }
 }
 
 function parsePayment() {
+
+    // $1     = false
+    // -1     = false
+    //  0     = 0
+    //  1     = 100
+    //  1.2   = 120
+    //  1.23  = 123
+    //  1.234 = 123
+    
+    // See also:
+    ////    https://support.stripe.com/questions/what-is-the-minimum-amount-i-can-charge-with-stripe
+    ////    https://support.stripe.com/questions/what-is-the-maximum-amount-i-can-charge-with-stripe
+
     var amount = document.getElementById('pay-custom');
-    amount.setAttribute('type', 'text');
-    amount = amount.value;
-    console.log(amount);
-    if (-1 == amount.indexOf('.')) {
-        var cleanAmount = amount.replace(/\D+/g, '');
-        cleanAmount = cleanAmount + '00';
+    if ( !amount.validity.valid ) {
+        // TODO
+        // Not valid, make wobble with a class.
+        // Also set color, for IE <= 9
+        return false;
     } else {
-        var arr = amount.split('.');
-        var amount = arr[0] + arr[1];
-        var cleanAmount = amount.replace(/\D+/g, '');
+        amount = amount.value;
+        console.log('Initial amount: ' + amount);
+        // Check for negative values.
+        if ( amount < 0 ) {
+            alert('Yeah, we\'re not gonna pay you to use it.');
+            return false;
+        // Not a decimal, just pad the thing with two zeros.
+        } else if (-1 == amount.indexOf('.')) {
+            var cleanAmount = amount.replace(/\D+/g, '');
+;
+            cleanAmount = cleanAmount + '00';
+        // A decimal
+        } else {
+            // Split it in half
+            var arr = amount.split('.');
+            // Convert the cents to a string and trim to two places.
+            arr[1] = arr[1].toString().substr(0, 2);
+            // If less than two places, add padding.
+            while ( arr[1].length < 2 ) {
+                arr[1] = arr[1] + '0';
+            }
+            // Condense the two together again.
+            var amount = arr[0] + arr[1];
+            var cleanAmount = amount.replace(/\D+/g, '');
+        }
+        // Remove leading zeros.
+        return parseInt(cleanAmount, 10);
     }
-    console.log(cleanAmount);
-    return cleanAmount;
 }
 
 function do_stripe_payment (amount) {
-    if (/^0+$/.test(amount)) {
-        open_download_overlay();
-        return;
-    }
     StripeCheckout.open({
         key: stripe_key,
         image: '/logomark.svg',
