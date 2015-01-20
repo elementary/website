@@ -37,7 +37,7 @@
                 <h2>Back Up Your Data</h2>
                 <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like DropBox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
 
-                <h1>Creating an Install Disk</h1>
+                <h1 id="creating-an-install-disk">Creating an Install Disk</h1>
                 <p>To install elementary OS, you'll need some kind of installation media. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
 
                 <ul>
@@ -74,7 +74,7 @@
 
                         <img src="images/installation/brasero_burning.png" alt="Burning">
 
-                        <p>When the disk has finished writing, continue to TODO:Getting Started</p>
+                        <p>When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                     </div>
 
                     <div id="burning-on-windows">
@@ -84,7 +84,7 @@
 
                         <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
 
-                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                     </div>
 
                     <div id="burning-on-macos">
@@ -98,7 +98,7 @@
 
                         <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
 
-                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                     </div>
                 </div>
 
@@ -112,9 +112,36 @@
 
                     <img src="images/installation/unetbootin.png" alt="UNetbootin">
 
-                    <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish and reboot your computer.</p>
+                    <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish.</p>
 
-                    <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
+                    <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS ISO found on the download page to your flash drive.</p>
+
+                    <p>When your USB key is ready, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
+                </div>
+
+                <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
+                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases. If you encounter any issues with installation, please seek help in the <a href="http://elementaryos.org/answers">Answers</a> system or in the <a href="http://elementaryos.org/support/live">chat room</a>.</p>
+            
+                <div id="boot-choices" class="column linked">
+                    <a class="button pc" href="#booting-on-a-pc">Boot on a PC</a>
+                    <a class="button mac" href="#booting-on-a-mac">Booting on a Mac</a>
+                </div>
+
+                <div id="booting-on-a-pc">
+                    <h2>Booting on a PC</h2>
+
+                    <ul>
+                        <li>Assuming that your computer is still on, start by inserting your installation disk and restarting your computer.</li>
+                        <li>Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.</li>
+                        <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot disk. "USB-HDD" for a USB install disk, or "CDROM" for a CD/DVD install disk. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
+                        <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
+                    </ul>
+                </div>
+
+                <div id="booting-on-a-mac">
+                    <h2>Booting on a Mac</h2>
+
+                    <p>Booting elementary OS on Apple hardware is possible; however, it's not well-documented at the moment. We're working hard to document this process for you. Until then, refer to <a href="http://tech-devnet.blogspot.de/2012/05/running-ubuntu-1204-on-mac.html">one of</a> the <a href="http://lifehacker.com/5934942/how-to-dual-boot-linux-on-your-mac-and-take-back-your-powerhouse-apple-hardware">many third-party guides</a> for installing Ubuntu 12.04 on a Mac; since elementary shares its core with Ubuntu, that should at least get you started.</p>
                 </div>
             </div>
 
