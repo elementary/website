@@ -45,7 +45,7 @@
                     <li>USB sticks are a lot faster and are reusable. However, if you have an older computer (2003 or older), your computer may not support booting from a USB. If your computer doesn't have a CD drive, chances are it supports booting from USB.</li>
                 </ul>
 
-                <div id="install-choices" class="column linked">
+                <div id="installing-choices" class="column linked">
                     <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
                     <a class="button creating-a-bootable-usb" href="#creating-a-bootable-usb">Create a bootable USB</a>
                 </div>
@@ -54,9 +54,9 @@
                     <h2>Burning a CD</h2>
 
                     <div id="burning-choices" class="column linked">
-                        <a class="button linux" href="#burning-on-linux">Ubuntu</a>
-                        <a class="button windows" href="#burning-on-windows">Windows</a>
-                        <a class="button macos" href="#burning-on-macos">Mac OS X</a>
+                        <a class="button burning-on-linux" href="#burning-on-linux">Ubuntu</a>
+                        <a class="button burning-on-windows" href="#burning-on-windows">Windows</a>
+                        <a class="button burning-on-macos" href="#burning-on-macos">Mac OS X</a>
                     </div>
 
                     <div id="burning-on-linux">
@@ -122,9 +122,9 @@
                 <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
                 <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases. If you encounter any issues with installation, please seek help in the <a href="http://elementaryos.org/answers">Answers</a> system or in the <a href="http://elementaryos.org/support/live">chat room</a>.</p>
             
-                <div id="boot-choices" class="column linked">
-                    <a class="button pc" href="#booting-on-a-pc">Boot on a PC</a>
-                    <a class="button mac" href="#booting-on-a-mac">Boot on a Mac</a>
+                <div id="booting-choices" class="column linked">
+                    <a class="button booting-on-a-pc" href="#booting-on-a-pc">Boot on a PC</a>
+                    <a class="button booting-on-a-mac" href="#booting-on-a-mac">Boot on a Mac</a>
                 </div>
 
                 <div id="booting-on-a-pc">

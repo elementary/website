@@ -1,5 +1,9 @@
-// Available platforms
-var osList = ['linux', 'windows', 'macos'];
+// Install guide toggles
+var toggles = {
+	'installing-choices': ['burning-a-cd', 'creating-a-bootable-usb'],
+	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-macos'],
+	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
+};
 
 // Parse user-agent to detect current plateform
 function detectOS() {
@@ -18,47 +22,62 @@ function detectOS() {
 var burnChoices = document.getElementById('burning-choices');
 
 // Show instructions for a platform
-function showOS(chosenOs) {
-	var processOs = function (os) {
-		var osHowto = document.getElementById('burning-on-'+os);
-		var osHeading = osHowto.firstElementChild;
-		var osName = osHeading.innerHTML;
-		var osLink = burnChoices.getElementsByClassName(os)[0];
+function selectChoice(toggleId, choosenId) {
+	var choicesList = toggles[toggleId];
+	var choicesCtn = document.getElementById(toggleId);
 
-		if (chosenOs == os) {
-			osHowto.style.display = 'block';
-			osHeading.style.display = 'none';
-			osLink.classList.add('active');
+	var processChoice = function (choiceId) {
+		var link = choicesCtn.getElementsByClassName(choiceId)[0];
+		var paragraph = document.getElementById(choiceId);
+		var heading = paragraph.firstElementChild;
+
+		if (choiceId == choosenId) {
+			link.classList.add('active');
+			paragraph.style.display = 'block';
+			heading.style.display = 'none';
 		} else {
-			osHowto.style.display = 'none';
-			osLink.classList.remove('active');
+			link.classList.remove('active');
+			paragraph.style.display = 'none';
 		}
 	};
 
-	for (var i = 0; i < osList.length; i++) {
-		processOs(osList[i]);
+	for (var i = 0; i < choicesList.length; i++) {
+		processChoice(choicesList[i]);
 	}
 }
 
-function setupEvents() {
-	var processOs = function (os) {
-		var osLink = burnChoices.getElementsByClassName(os)[0];
 
-		osLink.addEventListener('click', function (e) {
+function setupToggle(toggleId) {
+	var choicesList = toggles[toggleId];
+	var choicesCtn = document.getElementById(toggleId);
+
+	var processChoice = function (choiceId) {
+		var link = choicesCtn.getElementsByClassName(choiceId)[0];
+
+		link.addEventListener('click', function (e) {
 			e.preventDefault();
-			showOS(os);
+			selectChoice(toggleId, choiceId);
 		});
 	};
 
-	for (var i = 0; i < osList.length; i++) {
-		processOs(osList[i]);
+	for (var i = 0; i < choicesList.length; i++) {
+		processChoice(choicesList[i]);
+	}
+}
+function setupEvents() {
+	for (var toggleId in toggles) {
+		setupToggle(toggleId);
 	}
 }
 
 setupEvents();
 
+selectChoice('installing-choices', 'burning-a-cd');
+
 // Show instructions for the current platform
 var currentOs = detectOS();
 if (currentOs) {
-	showOS(currentOs);
+	selectChoice('burning-choices', 'burning-on-'+currentOs);
 }
+
+selectChoice('booting-choices', 'booting-on-a-pc');
