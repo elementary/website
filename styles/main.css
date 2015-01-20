@@ -255,6 +255,12 @@ button.suggested-action,
     margin-right: 3px;
     vertical-align: super;
 }
+.pre-amount {
+    margin-left: 11px;
+    margin-right: -18px;
+    margin-top: 10px;
+    position: absolute;
+}
 #amount-custom {
     width: 100%;
     max-width: 170px;
