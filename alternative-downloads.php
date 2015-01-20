@@ -22,8 +22,8 @@
     */
 
 ?>
-            <div class="row">
-                <span class="text-left"><a href="/"><img alt="elementary OS" id="logotype" src="images/logotype.svg"></a></span>
+            <div class="nav nav-logo">
+<a href="/"><img alt="elementary OS" id="logotype" src="images/logotype.svg"></a>
             </div>
             <div class="row">
                 <h1>Alternative Downloads</h1>
