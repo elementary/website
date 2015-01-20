@@ -15,46 +15,23 @@ function detectOS() {
 	}
 }
 
-var burnHeading = document.getElementById('burning-a-cd');
-var burnPlatform = document.createElement('span');
-burnHeading.appendChild(burnPlatform);
-
-var burnOthers = document.createElement('p');
-burnOthers.className = 'small-label';
-burnHeading.parentNode.insertBefore(burnOthers, burnHeading.nextSibling);
+var burnChoices = document.getElementById('burning-choices');
 
 // Show instructions for a platform
 function showOS(chosenOs) {
-	burnOthers.innerHTML = 'Other platforms: ';
-
-	var hiddenOsIndex = 0;
-
 	var processOs = function (os) {
 		var osHowto = document.getElementById('burning-on-'+os);
 		var osHeading = osHowto.firstElementChild;
 		var osName = osHeading.innerHTML;
+		var osLink = burnChoices.getElementsByClassName(os)[0];
 
 		if (chosenOs == os) {
 			osHowto.style.display = 'block';
 			osHeading.style.display = 'none';
-			burnPlatform.innerHTML = ' on '+osName;
+			osLink.classList.add('suggested-action');
 		} else {
 			osHowto.style.display = 'none';
-
-			if (hiddenOsIndex > 0) {
-				burnOthers.appendChild(document.createTextNode(' · '));
-			}
-
-			var a = document.createElement('a');
-			a.href = '#burning-on-'+os;
-			a.innerHTML = osName;
-			a.addEventListener('click', function (e) {
-				e.preventDefault();
-				showOS(os);
-			});
-			burnOthers.appendChild(a);
-
-			hiddenOsIndex++;
+			osLink.classList.remove('suggested-action');
 		}
 	};
 
@@ -62,6 +39,23 @@ function showOS(chosenOs) {
 		processOs(osList[i]);
 	}
 }
+
+function setupEvents() {
+	var processOs = function (os) {
+		var osLink = burnChoices.getElementsByClassName(os)[0];
+
+		osLink.addEventListener('click', function (e) {
+			e.preventDefault();
+			showOS(os);
+		});
+	};
+
+	for (var i = 0; i < osList.length; i++) {
+		processOs(osList[i]);
+	}
+}
+
+setupEvents();
 
 // Show instructions for the current platform
 var currentOs = detectOS();

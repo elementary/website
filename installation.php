@@ -45,62 +45,77 @@
                     <li>USB sticks are a lot faster and are reusable. However, if you have an older computer (2003 or older), your computer may not support booting from a USB. If your computer doesn't have a CD drive, chances are it supports booting from USB.</li>
                 </ul>
 
-                <h2 id="burning-a-cd">Burning a CD</h2>
-
-                <div id="burning-on-linux">
-                    <h3>Ubuntu</h3>
-
-                    <p>Open Brasero and select: "Burn Image".</p>
-
-                    <img src="images/installation/brasero_home.png" alt="Brasero main window">
-
-                    <p>In the following window, choose the ISO you just downloaded, and make sure the right disk drive with a blank CD in it is selected.</p>
-
-                    <img src="images/installation/brasero_image.png" alt="Burn window">
-
-                    <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
-
-                    <img src="images/installation/brasero_burning.png" alt="Burning">
-
-                    <p>When the disk has finished writing, continue to TODO:Getting Started</p>
+                <div id="install-choices" class="column linked">
+                    <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
+                    <a class="button creating-a-bootable-usb" href="#creating-a-bootable-usb">Create a bootable USB</a>
                 </div>
 
-                <div id="burning-on-windows">
-                    <h3>Windows 7</h3>
+                <div id="burning-a-cd">
+                    <h2>Burning a CD</h2>
 
-                    <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary disk image and select "Burn disc image".</p>
+                    <div id="burning-choices" class="column linked">
+                        <a class="button linux" href="#burning-on-linux">Ubuntu</a>
+                        <a class="button windows" href="#burning-on-windows">Windows</a>
+                        <a class="button macos" href="#burning-on-macos">Mac OS X</a>
+                    </div>
 
-                    <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
+                    <div id="burning-on-linux">
+                        <h3>Ubuntu</h3>
 
-                    <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                        <p>Open Brasero and select: "Burn Image".</p>
+
+                        <img src="images/installation/brasero_home.png" alt="Brasero main window">
+
+                        <p>In the following window, choose the ISO you just downloaded, and make sure the right disk drive with a blank CD in it is selected.</p>
+
+                        <img src="images/installation/brasero_image.png" alt="Burn window">
+
+                        <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
+
+                        <img src="images/installation/brasero_burning.png" alt="Burning">
+
+                        <p>When the disk has finished writing, continue to TODO:Getting Started</p>
+                    </div>
+
+                    <div id="burning-on-windows">
+                        <h3>Windows 7</h3>
+
+                        <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary disk image and select "Burn disc image".</p>
+
+                        <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
+
+                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                    </div>
+
+                    <div id="burning-on-macos">
+                        <h3>Mac OS X</h3>
+
+                        <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
+
+                        <img src="images/installation/macos_dialog.png" alt="CD dialog on Mac OS X">
+
+                        <p>Right click (or control click) on elementaryOS.iso and select "Burn elementaryOS.iso to Disc...".</p>
+
+                        <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
+
+                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                    </div>
                 </div>
 
-                <div id="burning-on-macos">
-                    <h3>Mac OS X</h3>
+                <div id="creating-a-bootable-usb">
+                    <h2>Creating a Bootable USB</h2>
+                    <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
-                    <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
+                    <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
-                    <img src="images/installation/macos_dialog.png" alt="CD dialog on Mac OS X">
+                    <p>After that, open unetbootin from your application menu, or just type "unetbootin" in a terminal. It will open a window like the one below:</p>
 
-                    <p>Right click (or control click) on elementaryOS.iso and select "Burn elementaryOS.iso to Disc...".</p>
+                    <img src="images/installation/unetbootin.png" alt="UNetbootin">
 
-                    <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
+                    <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish and reboot your computer.</p>
 
-                    <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                    <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
                 </div>
-
-                <h2 id="creating-a-bootable-usb">Creating a Bootable USB</h2>
-                <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
-
-                <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
-
-                <p>After that, open unetbootin from your application menu, or just type "unetbootin" in a terminal. It will open a window like the one below:</p>
-
-                <img src="images/installation/unetbootin.png" alt="UNetbootin">
-
-                <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish and reboot your computer.</p>
-
-                <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
             </div>
 
             <script type="text/javascript" src="scripts/installation.js"></script>
