@@ -21,7 +21,6 @@
                     <li>1 GHz x86 or amd64 processor</li>
                     <li>1GB of system memory (RAM)</li>
                     <li>15 GB of disk space</li>
-                    <li>CD/DVD Drive or USB port</li>
                     <li>Internet access</li>
                 </ul>
 
