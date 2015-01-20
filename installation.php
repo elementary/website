@@ -124,7 +124,7 @@
             
                 <div id="boot-choices" class="column linked">
                     <a class="button pc" href="#booting-on-a-pc">Boot on a PC</a>
-                    <a class="button mac" href="#booting-on-a-mac">Booting on a Mac</a>
+                    <a class="button mac" href="#booting-on-a-mac">Boot on a Mac</a>
                 </div>
 
                 <div id="booting-on-a-pc">
