@@ -256,9 +256,10 @@ button.suggested-action,
     vertical-align: super;
 }
 .pre-amount {
-    margin-left: 11px;
-    margin-right: -18px;
-    margin-top: 10px;
+    color: #333;
+    Margin-left: 14px;
+    margin-right: -21px;
+    margin-top: 11px;
     position: absolute;
 }
 #amount-custom {
