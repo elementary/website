@@ -129,6 +129,10 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
+.row ul {
+    text-align: left;
+}
+
 /*********
 * Alerts *
 *********/
