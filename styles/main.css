@@ -354,3 +354,10 @@ button#download {
 #legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
 }
+/*****************
+* Nav *
+*****************/
+.nav-logo{
+    margin: 10px;
+}
+}
