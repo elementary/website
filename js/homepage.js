@@ -56,13 +56,14 @@ function download_clicked (e) {
 
 function parsePayment() {
 
-    // $1     = false
-    // -1     = false
-    //  0     = 0
+    // $1     = fallback
+    // -1     = fallback
+    //  0     = free
     //  1     = 100
     //  1.2   = 120
     //  1.23  = 123
-    //  1.234 = 123
+    //  1.234 = fallback
+    //  36.66 = 3666
 
     // See also:
     ////    https://support.stripe.com/questions/what-is-the-minimum-amount-i-can-charge-with-stripe
@@ -83,13 +84,14 @@ function parsePayment() {
             // A decimal
             if (
                 -1 != amount.indexOf('.') ||
-                -1 == amount.indexOf(',')
+                -1 != amount.indexOf(',')
             ) {
+                console.log('Decimal');
                 if ( -1 != amount.indexOf('.') ) {
                     // Split it in half
                     var arr = amount.split('.');
                 // A weird decimal
-                } else if ( -1 == amount.indexOf(',') ) {
+                } else if ( -1 != amount.indexOf(',') ) {
                     // Split it in half
                     var arr = amount.split(',');
                 }
@@ -108,6 +110,7 @@ function parsePayment() {
                 cleanAmount = cleanAmount*100;
             }
             // Remove leading zeros.
+            console.log('Initial amount: ' + cleanAmount);
             return parseInt(cleanAmount, 10);
         }
     }
