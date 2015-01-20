@@ -90,6 +90,19 @@
 
                     <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
                 </div>
+
+                <h2 id="creating-a-bootable-usb">Creating a Bootable USB</h2>
+                <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+
+                <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/">its website</a> and open the downloaded file to install it.</p>
+
+                <p>After that, open unetbootin from your application menu, or just type "unetbootin" in a terminal. It will open a window like the one below:</p>
+
+                <img src="images/installation/unetbootin.png" alt="UNetbootin">
+
+                <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish and reboot your computer.</p>
+
+                <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
             </div>
 
             <script type="text/javascript" src="scripts/installation.js"></script>
