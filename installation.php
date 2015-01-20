@@ -48,7 +48,6 @@
                 </ul>
 
                 <h2 id="burning-a-cd">Burning a CD</h2>
-                <p class="small-label"><a href="#burning-a-cd" id="burning-on-others">Other platforms</a></p>
 
                 <div id="burning-on-linux">
                     <h3>Ubuntu</h3>
