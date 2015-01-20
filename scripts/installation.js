@@ -28,10 +28,10 @@ function showOS(chosenOs) {
 		if (chosenOs == os) {
 			osHowto.style.display = 'block';
 			osHeading.style.display = 'none';
-			osLink.classList.add('suggested-action');
+			osLink.classList.add('active');
 		} else {
 			osHowto.style.display = 'none';
-			osLink.classList.remove('suggested-action');
+			osLink.classList.remove('active');
 		}
 	};
 
