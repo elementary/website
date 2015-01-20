@@ -47,23 +47,53 @@
                     <li>USB sticks are a lot faster and are reusable. However, if you have an older computer (2003 or older), your computer may not support booting from a USB. If your computer doesn't have a CD drive, chances are it supports booting from USB.</li>
                 </ul>
 
-                <h2>Burning a CD</h2>
+                <h2 id="burning-a-cd">Burning a CD</h2>
+                <p class="small-label"><a href="#burning-a-cd" id="burning-on-others">Other platforms</a></p>
 
-                <h3>Ubuntu</h3>
-                <p>Open Brasero and select: "Burn Image".</p>
+                <div id="burning-on-linux">
+                    <h3>Ubuntu</h3>
 
-                <img src="images/installation/brasero_home.png" alt="Brasero main window">
+                    <p>Open Brasero and select: "Burn Image".</p>
 
-                <p>In the following window, choose the ISO you just downloaded, and make sure the right disk drive with a blank CD in it is selected.</p>
+                    <img src="images/installation/brasero_home.png" alt="Brasero main window">
 
-                <img src="images/installation/brasero_image.png" alt="Burn window">
+                    <p>In the following window, choose the ISO you just downloaded, and make sure the right disk drive with a blank CD in it is selected.</p>
 
-                <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
+                    <img src="images/installation/brasero_image.png" alt="Burn window">
 
-                <img src="images/installation/brasero_burning.png" alt="Burning">
+                    <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
 
-                <p>When the disk has finished writing, continue to TODO:Getting Started</p>
+                    <img src="images/installation/brasero_burning.png" alt="Burning">
+
+                    <p>When the disk has finished writing, continue to TODO:Getting Started</p>
+                </div>
+
+                <div id="burning-on-windows">
+                    <h3>Windows 7</h3>
+
+                    <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary disk image and select "Burn disc image".</p>
+
+                    <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
+
+                    <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                </div>
+
+                <div id="burning-on-macos">
+                    <h3>Mac OS X</h3>
+
+                    <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
+
+                    <img src="images/installation/macos_dialog.png" alt="CD dialog on Mac OS X">
+
+                    <p>Right click (or control click) on elementaryOS.iso and select "Burn elementaryOS.iso to Disc...".</p>
+
+                    <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
+
+                    <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to TODO:Getting Started</p>
+                </div>
             </div>
+
+            <script type="text/javascript" src="scripts/installation.js"></script>
 <?php
     include '_templates/footer.html';
 ?>
