@@ -14,7 +14,6 @@
                     <li>1 GHz x86 or amd64 processor</li>
                     <li>512MB of system memory (RAM)</li>
                     <li>5GB of disk space</li>
-                    <li>CD/DVD drive</li>
                 </ul>
 
                 <p>Recommended System Requirements:</p>
@@ -27,7 +26,7 @@
                 </ul>
 
                 <h2>Downloading elementary</h2>
-                <p>If you haven't already, you will need to <a href="index.php">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
+                <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
 
                 <h2>32-bit versus 64-bit</h2>
                 <p>Elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
@@ -94,7 +93,7 @@
                 <h2 id="creating-a-bootable-usb">Creating a Bootable USB</h2>
                 <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
-                <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/">its website</a> and open the downloaded file to install it.</p>
+                <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
                 <p>After that, open unetbootin from your application menu, or just type "unetbootin" in a terminal. It will open a window like the one below:</p>
 
@@ -102,7 +101,7 @@
 
                 <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish and reboot your computer.</p>
 
-                <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
+                <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS iso, found on the download page, to your flash drive, and then boot from the flash drive.</p>
             </div>
 
             <script type="text/javascript" src="scripts/installation.js"></script>
