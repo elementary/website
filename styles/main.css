@@ -129,6 +129,10 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
+img.hero {
+    max-width: 50%;
+}
+
 /*********
 * Alerts *
 *********/
