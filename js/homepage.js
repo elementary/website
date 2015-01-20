@@ -80,16 +80,19 @@ function parsePayment() {
         } else {
             amount = amount.value;
             console.log('Initial amount: ' + amount);
-            // Not a decimal, just pad the thing with two zeros.
-            if (-1 == amount.indexOf('.')) {
-                var cleanAmount = amount.replace(/\D+/g, '');
-    ;
-                cleanAmount = cleanAmount*100;
             // A decimal
-            } else {
-                // Don't use multiplication because unsigned floats are awful.
-                // Split it in half
-                var arr = amount.split('.');
+            if (
+                -1 != amount.indexOf('.') ||
+                -1 == amount.indexOf(',')
+            ) {
+                if ( -1 != amount.indexOf('.') ) {
+                    // Split it in half
+                    var arr = amount.split('.');
+                // A weird decimal
+                } else if ( -1 == amount.indexOf(',') ) {
+                    // Split it in half
+                    var arr = amount.split(',');
+                }
                 // Convert the cents to a string and trim to two places.
                 arr[1] = arr[1].toString().substr(0, 2);
                 // If less than two places, add padding.
@@ -99,6 +102,10 @@ function parsePayment() {
                 // Condense the two together again.
                 var amount = arr[0] + arr[1];
                 var cleanAmount = amount.replace(/\D+/g, '');
+            // Not a decimal, just pad the thing with two zeros.
+            } else {
+                var cleanAmount = amount.replace(/\D+/g, '');
+                cleanAmount = cleanAmount*100;
             }
             // Remove leading zeros.
             return parseInt(cleanAmount, 10);
