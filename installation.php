@@ -38,6 +38,31 @@
 
                 <h2>Back Up Your Data</h2>
                 <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like DropBox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
+
+                <h1>Creating an Install Disk</h1>
+                <p>To install elementary OS, you'll need some kind of installation media. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
+
+                <ul>
+                    <li>CDs are cheaply available and (unless your computer doesn't have a CD drive) your computer should support booting from a CD. If you're unsure which to use, a CD is a safe bet.</li>
+                    <li>USB sticks are a lot faster and are reusable. However, if you have an older computer (2003 or older), your computer may not support booting from a USB. If your computer doesn't have a CD drive, chances are it supports booting from USB.</li>
+                </ul>
+
+                <h2>Burning a CD</h2>
+
+                <h3>Ubuntu</h3>
+                <p>Open Brasero and select: "Burn Image".</p>
+
+                <img src="images/installation/brasero_home.png" alt="Brasero main window">
+
+                <p>In the following window, choose the ISO you just downloaded, and make sure the right disk drive with a blank CD in it is selected.</p>
+
+                <img src="images/installation/brasero_image.png" alt="Burn window">
+
+                <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
+
+                <img src="images/installation/brasero_burning.png" alt="Burning">
+
+                <p>When the disk has finished writing, continue to TODO:Getting Started</p>
             </div>
 <?php
     include '_templates/footer.html';
