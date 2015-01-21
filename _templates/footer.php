@@ -6,7 +6,7 @@
                 <li><a href="https://twitter.com/elementary" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="http://reddit.com/r/elementaryos" target="_blank" title="Reddit"><i class="fa fa-reddit"></i></a></li>
                 <li><a href="https://plus.google.com/114635553671833442612" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://github.com/elementary/mvp" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/elementary/mvp" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://www.facebook.com/elementaryos" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </footer>
