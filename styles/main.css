@@ -129,12 +129,10 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
-.row .row {
-    padding: 0;
-}
-
 img.hero {
     max-width: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
 /*********
