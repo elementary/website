@@ -81,8 +81,6 @@
                         <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
 
                         <img src="images/installation/brasero_burning.png" alt="Burning">
-
-                        <p>When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                     </div>
 
                     <div id="burning-on-windows">
@@ -92,7 +90,7 @@
 
                         <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
 
-                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
+                        <p>Click "Burn". This make take a few minutes.</p>
                     </div>
 
                     <div id="burning-on-macos">
@@ -106,7 +104,7 @@
 
                         <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
 
-                        <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
+                        <p>Click "Burn". This make take a few minutes.</p>
                     </div>
                 </div>
             </div>
@@ -125,8 +123,6 @@
                     <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish.</p>
 
                     <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS ISO found on the download page to your flash drive.</p>
-
-                    <p>When your USB key is ready, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                 </div>
             </div>
 
