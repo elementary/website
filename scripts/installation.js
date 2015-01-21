@@ -19,10 +19,97 @@ function detectOS() {
 	}
 }
 
-var burnChoices = document.getElementById('burning-choices');
+function transitionsSupported() {
+	return (typeof document.body.style.transition != 'undefined');
+}
 
 // Show instructions for a platform
 function selectChoice(toggleId, choosenId) {
+	var choicesList = toggles[toggleId];
+	var choicesCtn = document.getElementById(toggleId);
+
+	var currentParagraph = null;
+	var choosenParagraph = null;
+	var animationDirection = '';
+
+	for (var i = 0; i < choicesList.length; i++) {
+		var choiceId = choicesList[i];
+
+		var link = choicesCtn.getElementsByClassName(choiceId)[0];
+		var paragraph = document.getElementById(choiceId);
+
+		if (paragraph.style.display != 'none') { // This paragraph is currently visible
+			if (choosenParagraph) {
+				animationDirection = 'right';
+			}
+			currentParagraph = paragraph;
+
+			if (choiceId == choosenId) { // Want to go to an already visible paragraph
+				return;
+			}
+		}
+
+		if (choiceId == choosenId) {
+			link.classList.add('active');
+
+			if (currentParagraph) {
+				animationDirection = 'left';
+			}
+			choosenParagraph = paragraph;
+		} else {
+			link.classList.remove('active');
+		}
+	}
+
+	// Should we make a nice transition?
+	if (animationDirection && transitionsSupported()) {
+		document.body.style.overflowX = 'hidden';
+
+		if (animationDirection == 'left') {
+			currentParagraph.style.left = '-100%';
+			currentParagraph.style.top = '0';
+
+			choosenParagraph.style.left = '100%';
+			choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
+		} else {
+			currentParagraph.style.left = '100%';
+
+			choosenParagraph.style.left = '-100%';
+			choosenParagraph.style.top = '0';
+		}
+
+		choosenParagraph.style.display = 'block';
+
+		// Delay for Firefox
+		setTimeout(function () {
+			choosenParagraph.style.left = '0';
+
+			if (animationDirection == 'right') {
+				currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
+			}
+		}, 50);
+
+		var onFinish = function () {
+			currentParagraph.removeEventListener('transitionend', onFinish);
+
+			currentParagraph.style.display = 'none';
+			currentParagraph.style.left = '0';
+			currentParagraph.style.top = '0';
+
+			choosenParagraph.style.top = '0';
+
+			document.body.style.overflowX = 'auto';
+		};
+		currentParagraph.addEventListener('transitionend', onFinish);
+	} else {
+		if (currentParagraph) {
+			currentParagraph.style.display = 'none';
+		}
+		choosenParagraph.style.display = 'block';
+	}
+}
+
+function setupToggle(toggleId) {
 	var choicesList = toggles[toggleId];
 	var choicesCtn = document.getElementById(toggleId);
 
@@ -34,28 +121,15 @@ function selectChoice(toggleId, choosenId) {
 			heading = paragraph.getElementsByTagName('h3')[0];
 		}
 
-		if (choiceId == choosenId) {
-			link.classList.add('active');
-			paragraph.style.display = 'block';
-			heading.style.display = 'none';
-		} else {
-			link.classList.remove('active');
-			paragraph.style.display = 'none';
-		}
-	};
+		// Hide heading
+		heading.style.display = 'none';
+		paragraph.style.display = 'none';
 
-	for (var i = 0; i < choicesList.length; i++) {
-		processChoice(choicesList[i]);
-	}
-}
-
-
-function setupToggle(toggleId) {
-	var choicesList = toggles[toggleId];
-	var choicesCtn = document.getElementById(toggleId);
-
-	var processChoice = function (choiceId) {
-		var link = choicesCtn.getElementsByClassName(choiceId)[0];
+		paragraph.style.position = 'relative';
+		paragraph.style.left = '0';
+		paragraph.style.transitionProperty = 'left';
+		paragraph.style.transitionDuration = '350ms';
+		paragraph.style.transitionTimingFunction = 'linear';
 
 		link.addEventListener('click', function (e) {
 			e.preventDefault();
@@ -67,14 +141,13 @@ function setupToggle(toggleId) {
 		processChoice(choicesList[i]);
 	}
 }
-function setupEvents() {
-	for (var toggleId in toggles) {
-		setupToggle(toggleId);
-	}
+
+// Setup toggles
+for (var toggleId in toggles) {
+	setupToggle(toggleId);
 }
 
-setupEvents();
-
+// Select default choices
 selectChoice('installing-choices', 'burning-a-cd');
 
 // Show instructions for the current platform
