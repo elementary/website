@@ -1,32 +1,122 @@
 var stripe_key = '';
 
+var previous_amount = 'amount-twenty-five';
+var current_amount = 'amount-twenty-five';
+var clearChecked = function() {
+    var targets = document.getElementsByClassName('target-amount');
+    for ( var i = 0; i < targets.length; i++ ) {
+        targets[i].classList.remove('checked');
+    }
+}
+var amountTrack = function() {
+    clearChecked();
+    this.classList.add('checked');
+    var new_amount;
+    if ( this.id == 'amount-custom' ) {
+        new_amount = 'custom';
+    } else {
+        new_amount = this.id;
+    }
+    if ( new_amount != current_amount ) {
+        previous_amount = current_amount;
+        current_amount = new_amount;
+    }
+}
+var amountBlur = function() {
+    if (
+        !this.validity.valid ||
+        this.value == ''
+    ) {
+        clearChecked();
+        current_amount = previous_amount;
+        document.getElementById(current_amount).classList.add('checked');
+    }
+}
+
+var click_watch = document.getElementsByClassName('target-amount');
+for ( var i = 0; i < click_watch.length; i++ ) {
+    click_watch[i].addEventListener('click', amountTrack, false);
+}
+document.getElementById('amount-custom').addEventListener('blur', amountBlur);
+
 function download_clicked (e) {
     var payment_amount = parsePayment();
-    do_stripe_payment(payment_amount)
+    // Not a valid payment amount
+    if ( payment_amount === false ) {
+        return false;
+        // open_download_overlay();
+    // 0-like payment amount
+    } else if ( payment_amount < 100 ) {
+        open_download_overlay();
+    // Pay
+    } else {
+        do_stripe_payment(payment_amount);
+    }
 }
 
 function parsePayment() {
-    var amount = document.getElementById('pay-custom');
-    amount.setAttribute('type', 'text');
-    amount = amount.value;
-    console.log(amount);
-    if (-1 == amount.indexOf('.')) {
-        var cleanAmount = amount.replace(/\D+/g, '');
-        cleanAmount = cleanAmount + '00';
+
+    // $1     = fallback
+    // -1     = fallback
+    //  0     = free
+    //  1     = 100
+    //  1.2   = 120
+    //  1.23  = 123
+    //  1.234 = fallback
+    //  36.66 = 3666
+
+    // See also:
+    ////    https://support.stripe.com/questions/what-is-the-minimum-amount-i-can-charge-with-stripe
+    ////    https://support.stripe.com/questions/what-is-the-maximum-amount-i-can-charge-with-stripe
+
+    if ( current_amount != 'custom' ) {
+        return document.getElementById(current_amount).value*100;
     } else {
-        var arr = amount.split('.');
-        var amount = arr[0] + arr[1];
-        var cleanAmount = amount.replace(/\D+/g, '');
+        var amount = document.getElementById('amount-custom');
+        if ( !amount.validity.valid ) {
+            // TODO
+            // Not valid, make wobble with a class.
+            // Also set color, for IE <= 9
+            return false;
+        } else {
+            amount = amount.value;
+            console.log('Initial amount: ' + amount);
+            // A decimal
+            if (
+                -1 != amount.indexOf('.') ||
+                -1 != amount.indexOf(',')
+            ) {
+                console.log('Decimal');
+                if ( -1 != amount.indexOf('.') ) {
+                    // Split it in half
+                    var arr = amount.split('.');
+                // A weird decimal
+                } else if ( -1 != amount.indexOf(',') ) {
+                    // Split it in half
+                    var arr = amount.split(',');
+                }
+                // Convert the cents to a string and trim to two places.
+                arr[1] = arr[1].toString().substr(0, 2);
+                // If less than two places, add padding.
+                while ( arr[1].length < 2 ) {
+                    arr[1] = arr[1] + '0';
+                }
+                // Condense the two together again.
+                var amount = arr[0] + arr[1];
+                var cleanAmount = amount.replace(/\D+/g, '');
+            // Not a decimal, just pad the thing with two zeros.
+            } else {
+                var cleanAmount = amount.replace(/\D+/g, '');
+                cleanAmount = cleanAmount*100;
+            }
+            // Remove leading zeros.
+            console.log('Initial amount: ' + cleanAmount);
+            return parseInt(cleanAmount, 10);
+        }
     }
-    console.log(cleanAmount);
-    return cleanAmount;
 }
 
 function do_stripe_payment (amount) {
-    if (/^0+$/.test(amount)) {
-        open_download_overlay();
-        return;
-    }
     StripeCheckout.open({
         key: stripe_key,
         image: '/logomark.svg',

@@ -105,8 +105,25 @@ footer ul li a:focus i.fa {
     vertical-align: top;
 }
 
-.column + .column {
-    margin-left: 24px;
+.column.third {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 444px) {
+    .column+.column {
+        margin-left: 24px;
+    }
+
+    .column.third {
+        width: 328px;
+        margin: 32px 32px 0;
+        vertical-align: top;
+    }
+}
+
+.column.third p {
+    text-align: center;
 }
 
 .row {
@@ -224,7 +241,7 @@ button.suggested-action,
 }
 
 #download {
-    margin-bottom: 6px;
+    margin: 4px auto 6px;
 }
 
 .small-button {
@@ -238,13 +255,36 @@ button.suggested-action,
     margin-right: 3px;
     vertical-align: super;
 }
-#pay-custom {
-    max-width: 137px;
+.pre-amount {
+    color: #333;
+    Margin-left: 14px;
+    margin-right: -21px;
+    margin-top: 11px;
+    position: absolute;
+}
+#amount-custom {
+    width: 100%;
+    max-width: 170px;
+    margin: 3px 0;
     padding: 9px;
 }
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+    margin: 0 3px;
+    width: 190px;
+}
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
+}
 @media (min-width: 444px) {
-    #pay-custom {
-        max-width: 117px;
+    #amount-custom {
+        width: 117px;
+        margin: 3px;
+    }
+    .focus-reveal {
+        width: auto;
     }
 }
 
@@ -301,6 +341,11 @@ input[type="number"]:focus {
     outline: none;
 }
 
+input:invalid,
+input:focus:invalid {
+    color: #c0392b !important;
+}
+
 ::-webkit-input-placeholder {
     color: #333;
 }
@@ -323,15 +368,6 @@ input:focus::-moz-placeholder {
 }
 input:focus:-ms-input-placeholder {
     color:transparent;
-}
-
-.focus-reveal {
-    opacity: 0 !important;
-    transition: 250ms all;
-}
-input:focus + .focus-reveal {
-    opacity: 0.8 !important;
-    transition: 250ms all;
 }
 
 /*********

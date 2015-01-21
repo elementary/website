@@ -1,10 +1,10 @@
-The new elementaryos.org
+The New elementaryos.org
 ================
 
 We're focusing on getting the minimum viable product for our website up and running for the release of Freya. To start, we're just getting a single-page download site ready for Freya. From there we will expand to a small number of pages as needed.
 
 
-Project organization
+Project Organization
 ====================
 
 * **Issues** for individual actionable items, or bugs i.e.:
