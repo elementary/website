@@ -52,6 +52,10 @@ p.small-label {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*********
 * Layout *
 **********/
@@ -289,6 +293,7 @@ button#download {
 
 .linked {
     margin: 24px;
+    white-space: nowrap;
 }
 
 .linked button,
