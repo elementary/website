@@ -44,21 +44,29 @@
                     <li>CDs are cheaply available and (unless your computer doesn't have a CD drive) your computer should support booting from a CD. If you're unsure which to use, a CD is a safe bet.</li>
                     <li>USB sticks are a lot faster and are reusable. However, if you have an older computer (2003 or older), your computer may not support booting from a USB. If your computer doesn't have a CD drive, chances are it supports booting from USB.</li>
                 </ul>
+            </div>
 
-                <div id="installing-choices" class="column linked">
+            <div class="text-center">
+                <div id="installing-choices" class="column linked center-block">
                     <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
                     <a class="button creating-a-bootable-usb" href="#creating-a-bootable-usb">Create a bootable USB</a>
                 </div>
-
-                <div id="burning-a-cd">
+            </div>
+            
+            <div id="burning-a-cd">
+                <div class="row">
                     <h2>Burning a CD</h2>
+                </div>
 
+                <div class="text-center">
                     <div id="burning-choices" class="column linked">
                         <a class="button burning-on-linux" href="#burning-on-linux">Ubuntu</a>
                         <a class="button burning-on-windows" href="#burning-on-windows">Windows</a>
                         <a class="button burning-on-macos" href="#burning-on-macos">Mac OS X</a>
                     </div>
+                </div>
 
+                <div class="row">
                     <div id="burning-on-linux">
                         <h3>Ubuntu</h3>
 
@@ -101,8 +109,10 @@
                         <p>Click "Burn". This make take a few minutes. When the disk has finished writing, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                     </div>
                 </div>
+            </div>
 
-                <div id="creating-a-bootable-usb">
+            <div id="creating-a-bootable-usb">
+                <div class="row">
                     <h2>Creating a Bootable USB</h2>
                     <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
@@ -118,16 +128,22 @@
 
                     <p>When your USB key is ready, continue to <a href="#booting-the-install-disk">Booting the Install Disk</a>.</p>
                 </div>
+            </div>
 
+            <div class="row">
                 <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
                 <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases. If you encounter any issues with installation, please seek help in the <a href="http://elementaryos.org/answers">Answers</a> system or in the <a href="http://elementaryos.org/support/live">chat room</a>.</p>
-            
+            </div>
+
+            <div class="text-center">
                 <div id="booting-choices" class="column linked">
                     <a class="button booting-on-a-pc" href="#booting-on-a-pc">Boot on a PC</a>
                     <a class="button booting-on-a-mac" href="#booting-on-a-mac">Boot on a Mac</a>
                 </div>
+            </div>
 
-                <div id="booting-on-a-pc">
+            <div id="booting-on-a-pc">
+                <div class="row">
                     <h2>Booting on a PC</h2>
 
                     <ul>
@@ -137,8 +153,10 @@
                         <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
                     </ul>
                 </div>
+            </div>
 
-                <div id="booting-on-a-mac">
+            <div id="booting-on-a-mac">
+                <div class="row">
                     <h2>Booting on a Mac</h2>
 
                     <p>Booting elementary OS on Apple hardware is possible; however, it's not well-documented at the moment. We're working hard to document this process for you. Until then, refer to <a href="http://tech-devnet.blogspot.de/2012/05/running-ubuntu-1204-on-mac.html">one of</a> the <a href="http://lifehacker.com/5934942/how-to-dual-boot-linux-on-your-mac-and-take-back-your-powerhouse-apple-hardware">many third-party guides</a> for installing Ubuntu 12.04 on a Mac; since elementary shares its core with Ubuntu, that should at least get you started.</p>

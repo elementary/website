@@ -29,7 +29,10 @@ function selectChoice(toggleId, choosenId) {
 	var processChoice = function (choiceId) {
 		var link = choicesCtn.getElementsByClassName(choiceId)[0];
 		var paragraph = document.getElementById(choiceId);
-		var heading = paragraph.firstElementChild;
+		var heading = paragraph.getElementsByTagName('h2')[0];
+		if (!heading) {
+			heading = paragraph.getElementsByTagName('h3')[0];
+		}
 
 		if (choiceId == choosenId) {
 			link.classList.add('active');
