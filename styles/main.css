@@ -354,3 +354,23 @@ button#download {
 #legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
 }
+
+/****************
+* Modal Dialogs *
+****************/
+
+.modal {
+    display: none;
+}
+
+#download-modal {
+    background: #fff;
+    padding: 24px;
+    border-radius: 3px;
+    top: 0px;
+}
+@media (min-width: 444px) {
+    #download-modal {
+        top: 20vh;
+    }
+}
