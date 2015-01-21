@@ -130,7 +130,8 @@ footer ul li a:focus i.fa {
 }
 
 img.hero {
-    max-width: 55%;
+    width: 55%;
+    min-width: 288px;
     display: block;
     margin: 0 auto;
 }
