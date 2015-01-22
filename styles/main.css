@@ -129,6 +129,13 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
+img.hero {
+    width: 55%;
+    min-width: 288px;
+    display: block;
+    margin: 0 auto;
+}
+
 /*********
 * Alerts *
 *********/
