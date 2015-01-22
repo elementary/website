@@ -10,6 +10,7 @@
             <div class="row">
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h2>A fast and open replacement for Windows and OS X</h2>
+                <img class="hero" src="images/notebook.png">
                 <button id="download" class="suggested-action">Download Freya Beta</button>
                 <p class="small-label">886.0 MB (for PC or Mac)</p>
                 <div id="download-modal" class="modal">
