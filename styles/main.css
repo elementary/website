@@ -368,12 +368,22 @@ button#download {
 
 .modal {
     display: none;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.20),
+                inset -1px 0 0 0 rgba(255, 255, 255, 0.20),
+                inset 0 1px 0 0 #fff,
+                0 0 0 1px rgba(0, 0, 0, 0.20),
+                0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal .row {
+    padding: 0;
 }
 
 #download-modal {
-    background: #fff;
-    padding: 24px;
-    border-radius: 3px;
     top: 0px;
 }
 @media (min-width: 444px) {

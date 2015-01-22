@@ -6,7 +6,7 @@ $('#download').click(function(){
             // Perhaps set to nonsense and style in CSS.
             top: 'NOTHANKS',
             closeButton: '.close',
-            overlayOpacity: 0.9
+            overlayOpacity: 0.70
         });
     });
     $('.open-modal').click();
