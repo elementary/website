@@ -22,6 +22,9 @@
     */
 
 ?>
+            <div class="nav nav-logo">
+<a href="/"><img alt="elementary OS" id="logotype" src="images/logotype.svg"></a>
+            </div>
             <div class="row">
                 <h1>Alternative Downloads</h1>
                 <h2>64-bit direct download not doing it for you? Grab elementary OS Freya Beta in another format.</h2>
