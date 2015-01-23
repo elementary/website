@@ -1,13 +1,49 @@
 var stripe_key = '';
 var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
+var previous_amount = 'amount-twenty-five';
+var current_amount = 'amount-twenty-five';
+var amountClick = function() {
+    // Remove existing checks.
+    $('.target-amount').removeClass('checked');
+    // Add current check.
+    $(this).addClass('checked');
+    // Declare new amount.
+    var new_amount;
+    new_amount = this.id;
+    // If different, update the previous and current.
+    if ( new_amount != current_amount ) {
+        previous_amount = current_amount;
+        current_amount = new_amount;
+    }
+}
+var amountBlur = function() {
+    // If NOT valid OR empty.
+    if (
+        !this.validity.valid ||
+        this.value == ''
+    ) {
+        // Remove existing checks.
+        $('.target-amount').removeClass('checked');
+        // Use the old amount.
+        current_amount = previous_amount;
+        // Set the old amount as checked.
+        $('#' + current_amount).addClass('checked');
+    }
+}
+// Listen for Clicking on Amounts
+$('.target-amount').click(amountClick);
+// Check Custom Amounts on Blur
+$('#amount-custom').blur(amountBlur);
+
 $('#download').click(function(){
-    payment_amount = 2000;
-    //TODO: Add input and get the value here
-    if (payment_amount > payment_minimum) {
-    	do_stripe_payment(payment_amount);
+    console.log('Pay ' + current_amount);
+    payment_amount = $('#' + current_amount).val() * 100;
+    console.log('Starting payment for ' + payment_amount);
+    if (payment_amount < payment_minimum) {
+        open_download_overlay();
     } else {
-    	open_download_overlay();
+        do_stripe_payment(payment_amount);
     }
 });
 
@@ -47,7 +83,7 @@ key_http.onreadystatechange = function() {
         stripe_key = key_http.responseText;
         console.log('Striep key is: ' + stripe_key);
     }
-} 
+}
 key_http.send();
 
 console.log('Loaded homepage.js');
