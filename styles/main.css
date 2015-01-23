@@ -139,6 +139,13 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
+img.hero {
+    width: 55%;
+    min-width: 288px;
+    display: block;
+    margin: 0 auto;
+}
+
 .row ul {
     text-align: left;
 }
@@ -374,6 +381,35 @@ button#download {
 
 #legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
+}
+
+/****************
+* Modal Dialogs *
+****************/
+
+.modal {
+    display: none;
+    background-color: #f5f5f5;
+    padding: 12px;
+    margin: 12px;
+    max-height: 100vh;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.20),
+                inset -1px 0 0 0 rgba(255, 255, 255, 0.20),
+                inset 0 1px 0 0 #fff,
+                0 0 0 1px rgba(0, 0, 0, 0.20),
+                0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal .row.actions {
+    padding: 0;
+    margin-top: 24px;
+}
+
+.modal .row.actions .linked {
+    margin: 6px;
 }
 
 /*********
