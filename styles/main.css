@@ -370,6 +370,9 @@ button#download {
     display: none;
     background-color: #f5f5f5;
     padding: 12px;
+    margin: 12px;
+    max-height: 100vh;
+    overflow: auto;
     border-radius: 4px;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.20),
                 inset -1px 0 0 0 rgba(255, 255, 255, 0.20),
@@ -379,15 +382,11 @@ button#download {
                 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.modal .row {
+.modal .row.actions {
     padding: 0;
+    margin-top: 24px;
 }
 
-#download-modal {
-    top: 0px;
-}
-@media (min-width: 444px) {
-    #download-modal {
-        top: 20vh;
-    }
+.modal .row.actions .linked {
+    margin: 6px;
 }
