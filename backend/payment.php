@@ -12,16 +12,15 @@ if (isset($_POST['token'])) {
     // Create the charge on Stripe's servers - this will charge the user's card
     try {
         $charge = Stripe_Charge::create(array(
-            "amount" => $amount,
-            "currency" => "usd",
-            "card" => $token,
-            "description" => "elementary OS download")
+            'amount' => $amount,
+            'currency' => 'usd',
+            'card' => $token,
+            'description' => 'elementary OS download')
         );
-        echo "OK";
+        echo 'OK';
     } catch(Stripe_CardError $e) {
-        echo "error";
+        echo 'error';
     }
 } else { 
     echo $config['stripe_pk'];
 }
-
