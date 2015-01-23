@@ -14,7 +14,16 @@
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">
-                <button id="download" class="suggested-action">Download Freya Beta</button>
+                <button id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
+                <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
+                <button  id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
+                <div class="column">
+                    <sup class="pre-amount">$</sup>
+                    <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
+                    <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                </div>
+                <div style="clear:both;"></div>
+                <button id="download" class="suggested-action" onclick="download_clicked();">Download Freya Beta</button>
                 <p class="small-label">886.0 MB (for PC or Mac)</p>
             </div>
             <div class="row">
