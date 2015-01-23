@@ -31,7 +31,7 @@
                 <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
 
                 <h2>32-bit versus 64-bit</h2>
-                <p>Elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
+                <p>elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
                 <ul>
                     <li>If you know you have a newer computer with a 64-bit processor, choose the 64bit version.</li>
                     <li>If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).</li>
