@@ -52,6 +52,10 @@ p.small-label {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*********
 * Layout *
 **********/
@@ -110,6 +114,12 @@ footer ul li a:focus i.fa {
         margin-left: 24px;
     }
 
+    .column.half {
+        width: 492px;
+        margin: 32px 32px 0;
+        vertical-align: top;
+    }
+
     .column.third {
         width: 328px;
         margin: 32px 32px 0;
@@ -134,6 +144,14 @@ img.hero {
     min-width: 288px;
     display: block;
     margin: 0 auto;
+}
+
+.row ul {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /*********
@@ -215,7 +233,9 @@ a.button:focus {
 }
 
 button:active,
-a.button:active {
+a.button:active,
+button.active,
+a.button.active {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
     border-color: rgba(0, 0, 0,, 0.25);
@@ -286,6 +306,8 @@ button#download {
 
 .linked {
     margin: 24px;
+    white-space: nowrap;
+    font-size: 0; /* Hide whitespace chars between buttons */
 }
 
 .linked button,
@@ -294,7 +316,6 @@ button#download {
     border-radius: 0;
     margin: 0;
     padding: 16px;
-    float: left;
 }
 
 .linked button:first-child,
@@ -389,4 +410,35 @@ button#download {
 
 .modal .row.actions .linked {
     margin: 6px;
+}
+
+/*********
+* Slider *
+*********/
+
+.slide {
+    position: relative;
+    left: 0;
+}
+.slide.sliding {
+    transition: left 200ms linear;
+}
+.slide.slide-in.slide-left {
+    left: 100%;
+}
+.slide.slide-in.slide-right {
+    left: -100%;
+}
+.slide.sliding.slide-in {
+    left: 0;
+}
+.slide.sliding.slide-out.slide-left {
+    left: -100%;
+}
+.slide.sliding.slide-out.slide-right {
+    left: 100%;
+}
+
+body.sliding {
+    overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
