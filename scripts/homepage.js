@@ -53,7 +53,7 @@ function do_stripe_payment (amount) {
         token: function (token) {
             console.log(token);
             process_payment(amount, token);
-            open_download_overlay();
+            payment_complete(amount);
         },
         name: 'elementary LLC.',
         description: 'elementary OS download',
@@ -66,6 +66,11 @@ function process_payment (amount, token) {
     payment_http.open('POST','./backend/payment.php',true);
     payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     payment_http.send('amount=' + amount + '&token=' + token.id);
+}
+
+function payment_complete (amount) {
+    $.cookie('has_paid_freya', amount, { expires: 3650, path: '/' });
+    open_download_overlay();
 }
 
 function open_download_overlay () {
