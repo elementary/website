@@ -72,7 +72,7 @@ function open_download_overlay () {
     console.log('Open the download overlay!');
     $('.open-modal').leanModal({
         // Add this class to download buttons to make them close it.
-        closeButton: '.close',
+        closeButton: '.close-modal',
         // Match Stripe
         overlayOpacity: 0.6,
         // We'll set the top, thanks.
@@ -88,7 +88,7 @@ key_http.open('GET','./backend/payment.php',true);
 key_http.onreadystatechange = function() {
     if (key_http.readyState == 4 && key_http.status == 200) {
         stripe_key = key_http.responseText;
-        console.log('Striep key is: ' + stripe_key);
+        console.log('Stripe key is: ' + stripe_key);
     }
 }
 key_http.send();
