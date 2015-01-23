@@ -365,23 +365,24 @@ input:focus:invalid {
     color: #c0392b !important;
 }
 
-::-webkit-input-placeholder {
+.button::-webkit-input-placeholder {
     color: #333;
 }
-:-moz-placeholder {
+.button:-moz-placeholder {
     color: #333;
 }
-::-moz-placeholder {
+.button::-moz-placeholder {
     color: #333;
 }
-:-ms-input-placeholder {
+.button:-ms-input-placeholder {
     color: #333;
 }
 input:focus::-webkit-input-placeholder {
     color:transparent;
 }
 input:focus:-moz-placeholder {
-    color:transparent; }
+    color:transparent;
+}
 input:focus::-moz-placeholder {
     color:transparent;
 }
