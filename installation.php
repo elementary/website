@@ -115,7 +115,7 @@
             <div id="creating-a-usb" class="slide">
                 <div class="row">
                     <h2>Creating a USB</h2>
-                    <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+                    <p>Begin with a spare USB Stick or SD Card with at least 1 GB or more of free space, and a means for your computer to read them.</p>
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
