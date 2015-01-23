@@ -12,7 +12,7 @@
                 <div class="column half">
                     <p>Minimum System Requirements:</p>
                     <ul>
-                        <li>1 GHz x86 or amd64 processor</li>
+                        <li>1 GHz 32-bit or 64-bit processor</li>
                         <li>512MB of system memory (RAM)</li>
                         <li>5GB of disk space</li>
                     </ul>
@@ -20,7 +20,7 @@
                 <div class="column half">
                     <p>Recommended System Requirements:</p>
                     <ul>
-                        <li>1 GHz x86 or amd64 processor</li>
+                        <li>1 GHz 32-bit or 64-bit processor</li>
                         <li>1GB of system memory (RAM)</li>
                         <li>15 GB of disk space</li>
                         <li>Internet access</li>
