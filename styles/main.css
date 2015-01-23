@@ -65,7 +65,7 @@ img {
     text-decoration: inherit;
     padding-left: 6px;
     position: absolute;
-    margin-top: 0.02em;
+    margin-top: 0.20em;
     -webkit-transition: padding 0.15s ease-in-out;
     -o-transition: padding 0.15s ease-in-out;
     transition: padding 0.15s ease-in-out;
@@ -512,11 +512,17 @@ input:focus:-ms-input-placeholder {
                 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 @media (min-width: 444px) {
     .modal {
         top: 20vh;
         max-height: 60vh;
     }
+}
+
+.modal p {
+    max-width: 388px;
+    margin: 0 6px;
 }
 
 .modal .row.actions {
