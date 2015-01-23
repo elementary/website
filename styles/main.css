@@ -365,15 +365,27 @@ input:focus:invalid {
     color: #c0392b !important;
 }
 
-.button::-webkit-input-placeholder,
-.button:-moz-placeholder,
-.button::-moz-placeholder,
+.button::-webkit-input-placeholder {
+    color: #333;
+}
+.button:-moz-placeholder {
+    color: #333;
+}
+.button::-moz-placeholder {
+    color: #333;
+}
 .button:-ms-input-placeholder {
     color: #333;
 }
-input:focus::-webkit-input-placeholder,
-input:focus:-moz-placeholder,
-input:focus::-moz-placeholder,
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+input:focus:-moz-placeholder {
+    color:transparent;
+}
+input:focus::-moz-placeholder {
+    color:transparent;
+}
 input:focus:-ms-input-placeholder {
     color:transparent;
 }
