@@ -1,6 +1,6 @@
 // Install guide toggles
 var toggles = {
-	'installing-choices': ['burning-a-cd', 'creating-a-bootable-usb'],
+	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
 	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-macos'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
@@ -62,19 +62,20 @@ function selectChoice(toggleId, choosenId) {
 	}
 
 	// Should we make a nice transition?
-	if (animationDirection && transitionsSupported()) {
-		document.body.style.overflowX = 'hidden';
+	if (animationDirection && transitionsSupported() &&
+		currentParagraph.classList.contains('slide') && choosenParagraph.classList.contains('slide')) {
+		document.body.classList.add('sliding');
+
+		currentParagraph.classList.add('slide-out');
+		choosenParagraph.classList.add('slide-in');
+
+		currentParagraph.classList.add('slide-'+animationDirection);
+		choosenParagraph.classList.add('slide-'+animationDirection);
 
 		if (animationDirection == 'left') {
-			currentParagraph.style.left = '-100%';
 			currentParagraph.style.top = '0';
-
-			choosenParagraph.style.left = '100%';
 			choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
 		} else {
-			currentParagraph.style.left = '100%';
-
-			choosenParagraph.style.left = '-100%';
 			choosenParagraph.style.top = '0';
 		}
 
@@ -82,25 +83,33 @@ function selectChoice(toggleId, choosenId) {
 
 		// Delay for Firefox
 		setTimeout(function () {
-			choosenParagraph.style.left = '0';
+			currentParagraph.classList.add('sliding');
+			choosenParagraph.classList.add('sliding');
 
 			if (animationDirection == 'right') {
 				currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
 			}
-		}, 50);
+		}, 20);
 
 		var onFinish = function () {
-			currentParagraph.removeEventListener('transitionend', onFinish);
+			choosenParagraph.removeEventListener('transitionend', onFinish);
 
 			currentParagraph.style.display = 'none';
-			currentParagraph.style.left = '0';
 			currentParagraph.style.top = '0';
-
 			choosenParagraph.style.top = '0';
 
-			document.body.style.overflowX = 'auto';
+			currentParagraph.classList.remove('sliding');
+			choosenParagraph.classList.remove('sliding');
+
+			currentParagraph.classList.remove('slide-out');
+			choosenParagraph.classList.remove('slide-in');
+
+			currentParagraph.classList.remove('slide-'+animationDirection);
+			choosenParagraph.classList.remove('slide-'+animationDirection);
+
+			document.body.classList.remove('sliding');
 		};
-		currentParagraph.addEventListener('transitionend', onFinish);
+		choosenParagraph.addEventListener('transitionend', onFinish);
 	} else {
 		if (currentParagraph) {
 			currentParagraph.style.display = 'none';
@@ -124,12 +133,6 @@ function setupToggle(toggleId) {
 		// Hide heading
 		heading.style.display = 'none';
 		paragraph.style.display = 'none';
-
-		paragraph.style.position = 'relative';
-		paragraph.style.left = '0';
-		paragraph.style.transitionProperty = 'left';
-		paragraph.style.transitionDuration = '350ms';
-		paragraph.style.transitionTimingFunction = 'linear';
 
 		link.addEventListener('click', function (e) {
 			e.preventDefault();

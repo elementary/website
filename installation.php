@@ -9,20 +9,23 @@
 
                 <h2>System Requirements</h2>
 
-                <p>Minimum System Requirements:</p>
-                <ul>
-                    <li>1 GHz x86 or amd64 processor</li>
-                    <li>512MB of system memory (RAM)</li>
-                    <li>5GB of disk space</li>
-                </ul>
-
-                <p>Recommended System Requirements:</p>
-                <ul>
-                    <li>1 GHz x86 or amd64 processor</li>
-                    <li>1GB of system memory (RAM)</li>
-                    <li>15 GB of disk space</li>
-                    <li>Internet access</li>
-                </ul>
+                <div class="column half">
+                    <p>Minimum System Requirements:</p>
+                    <ul>
+                        <li>1 GHz x86 or amd64 processor</li>
+                        <li>512MB of system memory (RAM)</li>
+                        <li>5GB of disk space</li>
+                    </ul>
+                </div>
+                <div class="column half">
+                    <p>Recommended System Requirements:</p>
+                    <ul>
+                        <li>1 GHz x86 or amd64 processor</li>
+                        <li>1GB of system memory (RAM)</li>
+                        <li>15 GB of disk space</li>
+                        <li>Internet access</li>
+                    </ul>
+                </div>
 
                 <h2>Downloading elementary</h2>
                 <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
@@ -49,11 +52,11 @@
             <div class="text-center">
                 <div id="installing-choices" class="column linked center-block">
                     <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
-                    <a class="button creating-a-bootable-usb" href="#creating-a-bootable-usb">Create a bootable USB</a>
+                    <a class="button creating-a-usb" href="#creating-a-usb">Create a USB</a>
                 </div>
             </div>
             
-            <div id="burning-a-cd">
+            <div id="burning-a-cd" class="slide">
                 <div class="row">
                     <h2>Burning a CD</h2>
                 </div>
@@ -67,7 +70,7 @@
                 </div>
 
                 <div class="row">
-                    <div id="burning-on-linux">
+                    <div id="burning-on-linux" class="slide">
                         <h3>Ubuntu</h3>
 
                         <p>Open Brasero and select: "Burn Image".</p>
@@ -83,7 +86,7 @@
                         <img src="images/installation/brasero_burning.png" alt="Burning">
                     </div>
 
-                    <div id="burning-on-windows">
+                    <div id="burning-on-windows" class="slide">
                         <h3>Windows 7</h3>
 
                         <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary disk image and select "Burn disc image".</p>
@@ -93,7 +96,7 @@
                         <p>Click "Burn". This make take a few minutes.</p>
                     </div>
 
-                    <div id="burning-on-macos">
+                    <div id="burning-on-macos" class="slide">
                         <h3>Mac OS X</h3>
 
                         <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
@@ -109,9 +112,9 @@
                 </div>
             </div>
 
-            <div id="creating-a-bootable-usb">
+            <div id="creating-a-usb" class="slide">
                 <div class="row">
-                    <h2>Creating a Bootable USB</h2>
+                    <h2>Creating a USB</h2>
                     <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
@@ -138,7 +141,7 @@
                 </div>
             </div>
 
-            <div id="booting-on-a-pc">
+            <div id="booting-on-a-pc" class="slide">
                 <div class="row">
                     <h2>Booting on a PC</h2>
 
@@ -151,7 +154,7 @@
                 </div>
             </div>
 
-            <div id="booting-on-a-mac">
+            <div id="booting-on-a-mac" class="slide">
                 <div class="row">
                     <h2>Booting on a Mac</h2>
 

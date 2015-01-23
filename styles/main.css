@@ -114,6 +114,12 @@ footer ul li a:focus i.fa {
         margin-left: 24px;
     }
 
+    .column.half {
+        width: 492px;
+        margin: 32px 32px 0;
+        vertical-align: top;
+    }
+
     .column.third {
         width: 328px;
         margin: 32px 32px 0;
@@ -368,4 +374,35 @@ button#download {
 
 #legacy-warning #legacy-warning-buttons a.suggested-action {
     border: 1px solid;
+}
+
+/*********
+* Slider *
+*********/
+
+.slide {
+    position: relative;
+    left: 0;
+}
+.slide.sliding {
+    transition: left 200ms linear;
+}
+.slide.slide-in.slide-left {
+    left: 100%;
+}
+.slide.slide-in.slide-right {
+    left: -100%;
+}
+.slide.sliding.slide-in {
+    left: 0;
+}
+.slide.sliding.slide-out.slide-left {
+    left: -100%;
+}
+.slide.sliding.slide-out.slide-right {
+    left: 100%;
+}
+
+body.sliding {
+    overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
