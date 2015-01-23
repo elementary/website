@@ -232,6 +232,8 @@ button:focus,
                 0 3px 6px rgba(12,128,200,0.23);
 }
 
+button:active,
+.button:active,
 button.active,
 .button.active,
 .target-amount.checked {
