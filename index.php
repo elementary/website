@@ -10,16 +10,15 @@
             <div class="row">
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h2>A fast and open replacement for Windows and OS X</h2>
-                <img class="hero" src="images/notebook.png">
+            </div>
+            <img class="hero" src="images/notebook.png">
+            <div class="row">
                 <button id="download" class="suggested-action">Download Freya Beta</button>
                 <p class="small-label">886.0 MB (for PC or Mac)</p>
                 <div id="download-modal" class="modal">
-                    <a class="close" href="#close" style="float:left;color:#333;"><i class="fa fa-times"></i></a>
-                    <div class="row">
-                        <h1>Choose a Download</h1>
-                        <h2>We recommend 64-bit for most modern computers.</h2>
-                    </div>
-                    <div class="row">
+                    <h1>Choose a Download</h1>
+                    <h2>We recommend 64-bit for most modern computers.</h2>
+                    <div class="row actions">
                         <div class="column linked">
                             <a class="button" href="http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-i386.20140810.iso">Freya Beta 32-bit</a>
                             <a class="button" href="magnet:?xt=urn:btih:3dbed253ea2f8d23d8098bc7214f53c4c1201924&dn=elementaryos-unstable-i386.20140810.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementaryos.org%2Fdownloads%2Felementaryos-unstable-i386.20140810.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20140810.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20140810.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20140810.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20140810.iso"><i class="fa fa-magnet"></i></a>
