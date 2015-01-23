@@ -157,6 +157,8 @@ selectChoice('installing-choices', 'burning-a-cd');
 var currentOs = detectOS();
 if (currentOs) {
 	selectChoice('burning-choices', 'burning-on-'+currentOs);
+} else { // Default to windows
+	selectChoice('burning-choices', 'burning-on-windows');
 }
 
 selectChoice('booting-choices', 'booting-on-a-pc');

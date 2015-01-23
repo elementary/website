@@ -131,7 +131,7 @@
 
             <div class="row">
                 <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
-                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases. If you encounter any issues with installation, please seek help in the <a href="http://elementaryos.org/answers">Answers</a> system or in the <a href="http://elementaryos.org/support/live">chat room</a>.</p>
+                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
             <div class="text-center">
