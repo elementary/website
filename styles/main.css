@@ -232,10 +232,9 @@ button:focus,
                 0 3px 6px rgba(12,128,200,0.23);
 }
 
-button:active,
-.button:active,
 button.active,
-.button.active {
+.button.active,
+.target-amount.checked {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
     border-color: rgba(0, 0, 0,, 0.25);
