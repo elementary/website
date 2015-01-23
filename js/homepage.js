@@ -14,7 +14,6 @@ $('#download').click(function(){
 function do_stripe_payment (amount) {
     StripeCheckout.open({
         key: stripe_key,
-        image: '/logomark.svg',
         token: function (token) {
             console.log(token);
             process_payment(amount, token);
