@@ -479,6 +479,7 @@ input:focus:-ms-input-placeholder {
     background-color: #f5f5f5;
     padding: 12px;
     margin: 12px;
+    top: 0px;
     max-height: 100vh;
     overflow: auto;
     border-radius: 4px;
@@ -488,6 +489,12 @@ input:focus:-ms-input-placeholder {
                 0 0 0 1px rgba(0, 0, 0, 0.20),
                 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@media (min-width: 444px) {
+    .modal {
+        top: 20vh;
+        max-height: 60vh;
+    }
 }
 
 .modal .row.actions {
@@ -528,24 +535,4 @@ input:focus:-ms-input-placeholder {
 
 body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
-}
-
-/****************
-* Modal Dialogs *
-****************/
-
-.modal {
-    display: none;
-}
-
-#download-modal {
-    background: #fff;
-    padding: 24px;
-    border-radius: 3px;
-    top: 0px;
-}
-@media (min-width: 444px) {
-    #download-modal {
-        top: 20vh;
-    }
 }

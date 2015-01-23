@@ -71,7 +71,15 @@ function process_payment (amount, token) {
 
 function open_download_overlay () {
     console.log('Open the download overlay!');
-    $('.open-modal').leanModal();
+    $('.open-modal').leanModal({
+        // Add this class to download buttons to make them close it.
+        closeButton: '.close',
+        // Match Stripe
+        overlayOpacity: 0.6,
+        // We'll set the top, thanks.
+        // Responsive forever!
+        top: 'NOTHANKS',
+    });
     $('.open-modal').click();
 }
 
