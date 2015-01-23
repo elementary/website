@@ -13,15 +13,15 @@
                     <p>Minimum System Requirements:</p>
                     <ul>
                         <li>1 GHz 32-bit or 64-bit processor</li>
-                        <li>512MB of system memory (RAM)</li>
-                        <li>5GB of disk space</li>
+                        <li>512 MB of system memory (RAM)</li>
+                        <li>5 GB of disk space</li>
                     </ul>
                 </div>
                 <div class="column half">
                     <p>Recommended System Requirements:</p>
                     <ul>
                         <li>1 GHz 32-bit or 64-bit processor</li>
-                        <li>1GB of system memory (RAM)</li>
+                        <li>1 GB of system memory (RAM)</li>
                         <li>15 GB of disk space</li>
                         <li>Internet access</li>
                     </ul>
