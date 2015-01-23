@@ -56,6 +56,25 @@ img {
     max-width: 100%;
 }
 
+.read-more:after {
+    content: "";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    padding-left: 6px;
+    position: absolute;
+    margin-top: 0.02em;
+    -webkit-transition: padding 0.15s ease-in-out;
+    -o-transition: padding 0.15s ease-in-out;
+    transition: padding 0.15s ease-in-out;
+}
+
+.read-more:hover:after {
+    padding-left: 10px;
+}
+
 /*********
 * Layout *
 **********/
