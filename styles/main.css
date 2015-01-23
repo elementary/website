@@ -58,7 +58,7 @@ kbd {
     background-image: linear-gradient(to bottom, #E9E9E9, #FFF);
     border: 1px solid #A5A5A5;
     border-radius: 3px;
-    box-shadow: 0px 1px 0px 0px #FFF inset, 0px -2px 0px 0px #D9D9D9 inset;
+    box-shadow: inset 0px 1px 0px 0px #FFF, inset 0px -2px 0px 0px #D9D9D9;
     font-family: monospace;
     padding: 2px 4px;
     -moz-user-select: none;
