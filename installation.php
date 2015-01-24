@@ -37,7 +37,7 @@
                     <li>If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).</li>
                 </ul>
 
-                <h2>Back Up Your Data</h2>
+                <h2>Backing Up Your Data</h2>
                 <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
 
                 <h1 id="creating-an-install-disk">Creating an Install Disk</h1>
