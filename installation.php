@@ -28,7 +28,7 @@
                 </div>
 
                 <h2>Downloading elementary</h2>
-                <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
+                <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable medium — which you will need to burn to a CD, DVD, or USB stick.</p>
 
                 <h2>32-bit versus 64-bit</h2>
                 <p>elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
@@ -40,8 +40,8 @@
                 <h2>Backing Up Your Data</h2>
                 <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
 
-                <h1 id="creating-an-install-disk">Creating an Install Disk</h1>
-                <p>To install elementary OS, you'll need some kind of installation media. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
+                <h1 id="creating-an-installation-medium">Creating an Installation Medium</h1>
+                <p>To install elementary OS, you'll need some kind of installation medium. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
 
                 <ul>
                     <li>CDs are cheaply available and (unless your computer doesn't have a CD drive) your computer should support booting from a CD. If you're unsure which to use, a CD is a safe bet.</li>
@@ -130,8 +130,8 @@
             </div>
 
             <div class="row">
-                <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
-                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
+                <h1 id="booting-the-installation-medium">Booting the Installation Medium</h1>
+                <p>In order to start the installation process, you must boot your computer from the installation medium. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
             <div class="text-center">
@@ -146,9 +146,9 @@
                     <h2>Booting on a PC</h2>
 
                     <ul>
-                        <li>Assuming that your computer is still on, start by inserting your installation disk and restarting your computer.</li>
+                        <li>Assuming that your computer is still on, start by inserting your installation medium and restarting your computer.</li>
                         <li>Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.</li>
-                        <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot disk. "USB-HDD" for a USB install disk, or "CDROM" for a CD/DVD install disk. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
+                        <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot medium. "USB-HDD" for a USB installation, or "CDROM" for a CD/DVD installation. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
                         <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
                     </ul>
                 </div>
