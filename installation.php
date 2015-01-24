@@ -51,8 +51,8 @@
 
             <div class="text-center">
                 <div id="installing-choices" class="column linked center-block">
-                    <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
-                    <a class="button creating-a-usb" href="#creating-a-usb">Create a USB</a>
+                    <a class="button burning-a-cd" href="#burning-a-cd">Burning a CD</a>
+                    <a class="button creating-a-usb" href="#creating-a-usb">Creating a USB</a>
                 </div>
             </div>
             
