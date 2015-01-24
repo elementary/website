@@ -40,7 +40,7 @@
                 <h2>Backing Up Your Data</h2>
                 <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
 
-                <h1 id="creating-an-install-disk">Creating an Install Disk</h1>
+                <h1 id="creating-an-install-disk">Creating an Installation Media</h1>
                 <p>To install elementary OS, you'll need some kind of installation media. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
 
                 <ul>
@@ -115,7 +115,7 @@
             <div id="creating-a-usb" class="slide">
                 <div class="row">
                     <h2>Creating a USB</h2>
-                    <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+                    <p>Begin with a spare USB Stick or SD Card with at least 1 GB or more of free space, and a means for your computer to read them.</p>
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
@@ -130,8 +130,8 @@
             </div>
 
             <div class="row">
-                <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
-                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
+                <h1 id="booting-the-install-disk">Booting the Installation Media</h1>
+                <p>In order to start the installation process, you must boot your computer from the installation media. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
             <div class="text-center">
