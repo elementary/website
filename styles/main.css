@@ -195,6 +195,10 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
+.column.third img {
+    height: 30px;
+}
+
 .row {
     width: auto;
     margin: 0 auto;
