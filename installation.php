@@ -5,7 +5,7 @@
 ?>
             <div class="row">
                 <h1>Installation</h1>
-                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other pre-requisites to installing elementary on your computer.</p>
+                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary on your computer.</p>
 
                 <h2>System Requirements</h2>
 
