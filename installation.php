@@ -73,7 +73,7 @@
                     <div id="burning-on-linux" class="slide">
                         <h3>Ubuntu</h3>
 
-                        <p>Open Brasero and select: "Burn Image".</p>
+                        <p>Open Brasero and select "Burn Image".</p>
 
                         <img src="images/installation/brasero_home.png" alt="Brasero main window">
 
