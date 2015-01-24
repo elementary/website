@@ -56,7 +56,7 @@ For quick reference:
 * Strip extra whitespace (on blank lines and ends of lines)
 
 
-Simple local development
+Simple Local Development
 ========================
 
 For a simple local development environment, you will need:
