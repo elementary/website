@@ -29,15 +29,15 @@
             <div class="row">
                 <div class="column third">
                     <h1>Wired</h1>
-                    <p>"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</p>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs” — @WIRED elementaryos.org" target="_blank">"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</a>
                 </div>
                 <div class="column third">
                     <h1>Mac|Life</h1>
-                    <p>"a fast, low-maintenance platform that can be installed virtually anywhere"</p>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“a fast, low-maintenance platform that can be installed virtually anywhere” — @MacLife elementaryos.org" target="_blank">"a fast, low-maintenance platform that can be installed virtually anywhere"</a>
                 </div>
                 <div class="column third">
                     <h1>Lifehacker</h1>
-                    <p>“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</p>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.” — @lifehacker elementaryos.org" target="_blank">“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</a>
                 </div>
             </div>
             <div id="download-modal" class="modal">
