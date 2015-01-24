@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 <div class="column third">
-                    <a href="https://wired.com" target="_blank"><img src="images/thirdparty-logos/wired.svg" alt="WIRED" /></a><br>
+                    <a href="https://www.wired.com" target="_blank"><img src="images/thirdparty-logos/wired.svg" alt="WIRED" /></a><br>
                     <a class="inline-tweet" href="http://twitter.com/home/?status=“elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs” — @WIRED elementaryos.org" target="_blank">"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</a>
                 </div>
                 <div class="column third">
