@@ -38,7 +38,7 @@
         // If NOT valid OR empty.
         if (
             !this.validity.valid ||
-            Number(this.value) <= 0 // Empty strings and less than zero
+            this.value === ''
         ) {
             uncheckAll();
             // Use the old amount.
