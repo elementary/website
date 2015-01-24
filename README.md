@@ -54,3 +54,14 @@ For quick reference:
 * 4 spaces for indentation (no tabs)
 * Comma-separated CSS rules on separate lines
 * Strip extra whitespace (on blank lines and ends of lines)
+
+
+Simple local development
+========================
+
+For a simple local development environment, you will need:
+
+* PHP5
+
+Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
+
