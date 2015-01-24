@@ -14,9 +14,9 @@
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">
-                <button type="submit" id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
-                <button type="submit" id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
-                <button type="submit" id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
+                <button type="button" id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
+                <button type="button" id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
+                <button type="button" id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
                 <div class="column">
                     <sup class="pre-amount">$</sup>
                     <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
