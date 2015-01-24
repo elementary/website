@@ -81,8 +81,8 @@ img {
     text-decoration: none;
 }
 
-.inline-tweet:focus:after,
-.inline-tweet:hover:after {
+.inline-tweet:after,
+.inline-tweet:after {
     content: "";
     font-family: "FontAwesome";
     font-style: normal;
@@ -91,9 +91,15 @@ img {
     padding-left: 6px;
     position: absolute;
     margin-top: 0.20em;
-    -webkit-transition: padding 0.15s ease-in-out;
-    -o-transition: padding 0.15s ease-in-out;
-    transition: padding 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    opacity: 0;
+}
+
+.inline-tweet:focus:after,
+.inline-tweet:hover:after {
+    opacity: 1;
 }
 
 .read-more:after {
