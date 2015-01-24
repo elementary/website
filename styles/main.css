@@ -70,6 +70,20 @@ img {
     max-width: 100%;
 }
 
+img.h1 {
+    height: 27px;
+    margin: 19px auto;
+    opacity: 0.8;
+    display: block;
+}
+
+img.hero {
+    width: 55%;
+    min-width: 288px;
+    display: block;
+    margin: 0 auto;
+}
+
 .inline-tweet {
     color: #333;
 }
@@ -195,23 +209,12 @@ footer ul li a:focus i.fa {
     text-align: center;
 }
 
-.column.third img {
-    height: 30px;
-}
-
 .row {
     width: auto;
     margin: 0 auto;
     padding: 24px;
     max-width: 1200px;
     text-align: center;
-}
-
-img.hero {
-    width: 55%;
-    min-width: 288px;
-    display: block;
-    margin: 0 auto;
 }
 
 .row ul {
