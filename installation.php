@@ -162,6 +162,7 @@
                 </div>
             </div>
 
+            <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
             <script type="text/javascript" src="scripts/installation.js"></script>
 <?php
     include '_templates/footer.html';
