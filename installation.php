@@ -5,7 +5,7 @@
 ?>
             <div class="row">
                 <h1>Installation</h1>
-                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other pre-requisites to installing elementary on your computer.</p>
+                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary on your computer.</p>
 
                 <h2>System Requirements</h2>
 
@@ -51,8 +51,8 @@
 
             <div class="text-center">
                 <div id="installing-choices" class="column linked center-block">
-                    <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
-                    <a class="button creating-a-usb" href="#creating-a-usb">Create a USB</a>
+                    <a class="button burning-a-cd" href="#burning-a-cd">Burning a CD</a>
+                    <a class="button creating-a-usb" href="#creating-a-usb">Creating a USB</a>
                 </div>
             </div>
             
@@ -73,7 +73,7 @@
                     <div id="burning-on-linux" class="slide">
                         <h3>Ubuntu</h3>
 
-                        <p>Open Brasero and select: "Burn Image".</p>
+                        <p>Open Brasero and select "Burn Image".</p>
 
                         <img src="images/installation/brasero_home.png" alt="Brasero main window">
 
@@ -81,7 +81,7 @@
 
                         <img src="images/installation/brasero_image.png" alt="Burn window">
 
-                        <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
+                        <p>Then you simply click "Create Image" and Brasero does the rest.</p>
 
                         <img src="images/installation/brasero_burning.png" alt="Burning">
                     </div>
