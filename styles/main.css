@@ -341,10 +341,11 @@ button.suggested-action,
 }
 .pre-amount {
     color: #333;
-    Margin-left: 14px;
+    margin-left: 14px;
     margin-right: -21px;
     margin-top: 11px;
     position: absolute;
+    pointer-events: none;
 }
 #amount-custom {
     width: 100%;
