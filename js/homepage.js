@@ -9,7 +9,6 @@
     var current_amount = 'amount-twenty-five';
 
     function uncheckAll() {
-        console.log('hrr')
         for (var i = 0, $elem; $elem = $targetAmounts[i]; i++) { // jshint ignore:line
             $elem.classList.remove('checked');
         }
