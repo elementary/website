@@ -572,7 +572,6 @@ input:focus:-ms-input-placeholder {
     background-color: #f5f5f5;
     padding: 12px;
     margin: 12px;
-    top: 0px;
     max-height: 100vh;
     overflow: auto;
     border-radius: 3px;
