@@ -130,7 +130,7 @@
             </div>
 
             <div class="row">
-                <h1 id="booting-the-installation-medium">Booting the Installation Medium</h1>
+                <h1 id="booting-from-the-installation-medium">Booting from the Installation Medium</h1>
                 <p>In order to start the installation process, you must boot your computer from the installation medium. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
