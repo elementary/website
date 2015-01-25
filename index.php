@@ -6,8 +6,8 @@
             <script>
                 var jQl={q:[],dq:[],gs:[],ready:function(a){'function'==typeof a&&jQl.q.push(a);return jQl},getScript:function(a,c){jQl.gs.push([a,c])},unq:function(){for(var a=0;a<jQl.q.length;a++)jQl.q[a]();jQl.q=[]},ungs:function(){for(var a=0;a<jQl.gs.length;a++)jQuery.getScript(jQl.gs[a][0],jQl.gs[a][1]);jQl.gs=[]},bId:null,boot:function(a){'undefined'==typeof window.jQuery.fn?jQl.bId||(jQl.bId=setInterval(function(){jQl.boot(a)},25)):(jQl.bId&&clearInterval(jQl.bId),jQl.bId=0,jQl.unqjQdep(),jQl.ungs(),jQuery(jQl.unq()), 'function'==typeof a&&a())},booted:function(){return 0===jQl.bId},loadjQ:function(a,c){setTimeout(function(){var b=document.createElement('script');b.src=a;document.getElementsByTagName('head')[0].appendChild(b)},1);jQl.boot(c)},loadjQdep:function(a){jQl.loadxhr(a,jQl.qdep)},qdep:function(a){a&&('undefined'!==typeof window.jQuery.fn&&!jQl.dq.length?jQl.rs(a):jQl.dq.push(a))},unqjQdep:function(){if('undefined'==typeof window.jQuery.fn)setTimeout(jQl.unqjQdep,50);else{for(var a=0;a<jQl.dq.length;a++)jQl.rs(jQl.dq[a]); jQl.dq=[]}},rs:function(a){var c=document.createElement('script');document.getElementsByTagName('head')[0].appendChild(c);c.text=a},loadxhr:function(a,c){var b;b=jQl.getxo();b.onreadystatechange=function(){4!=b.readyState||200!=b.status||c(b.responseText,a)};try{b.open('GET',a,!0),b.send('')}catch(d){}},getxo:function(){var a=!1;try{a=new XMLHttpRequest}catch(c){for(var b=['MSXML2.XMLHTTP.5.0','MSXML2.XMLHTTP.4.0','MSXML2.XMLHTTP.3.0','MSXML2.XMLHTTP','Microsoft.XMLHTTP'],d=0;d<b.length;++d){try{a= new ActiveXObject(b[d])}catch(e){continue}break}}finally{return a}}};if('undefined'==typeof window.jQuery){var $=jQl.ready,jQuery=$;$.getScript=jQl.getScript};
                 jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
-                jQl.loadjQdep('js/homepage.js');
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
+                jQl.loadjQdep('scripts/homepage.js');
             </script>
             <div class="row">
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
@@ -15,6 +15,13 @@
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">
+                <?php
+                    if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
+                        ?>
+                <input type="hidden" id="amount-twenty-five" value="0">
+                        <?php
+                    } else {
+                        ?>
                 <button id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
                 <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
                 <button  id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
@@ -24,6 +31,9 @@
                     <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                 </div>
                 <div style="clear:both;"></div>
+                        <?php
+                    }
+                ?>
                 <button id="download" class="suggested-action" onclick="download_clicked();">Download Freya Beta</button>
                 <p class="small-label">886.0 MB (for PC or Mac)</p>
             </div>
