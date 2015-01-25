@@ -17,6 +17,8 @@ if (isset($_POST['token'])) {
             'card' => $token,
             'description' => 'elementary OS download')
         );
+        // Set an insecure, HTTP only cookie for 10 years in the future.
+        setcookie('has_paid_freya', $amount, time()+315360000, '/', '.elementaryos.org', 0, 1);
         echo 'OK';
     } catch(Stripe_CardError $e) {
         echo 'error';
