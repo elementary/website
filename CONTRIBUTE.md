@@ -2,7 +2,7 @@
 
  - Four space indentation
  - Remove trailing whitespaces and add an empty line at the end of each file
- - IE 9+ Compatability
+ - IE 9+ Compatibility
  
 ## PHP
  - `include` templates, not `require` or `_once`
