@@ -584,7 +584,7 @@ input:focus:-ms-input-placeholder {
                 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.modal-center {
+.modal-position {
     position: fixed;
     top: 0;
     bottom: 0;

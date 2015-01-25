@@ -73,11 +73,6 @@ function open_download_overlay () {
     $('.open-modal').leanModal({
         // Add this class to download buttons to make them close it.
         closeButton: '.close-modal',
-        // Match Stripe
-        overlayOpacity: 0.6,
-        // We'll set the top, thanks.
-        // Responsive forever!
-        top: 'NOTHANKS',
     });
     $('.open-modal').click();
 }
