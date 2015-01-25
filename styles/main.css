@@ -9,7 +9,7 @@ body {
     background-color: #fff;
     color: #333;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /**************
@@ -30,7 +30,7 @@ h1 {
     font-size: 24px;
     text-align: center;
     opacity: 0.8;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h2 {
