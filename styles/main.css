@@ -89,7 +89,7 @@ img.hero {
 }
 
 
-.inline-tweet:focus, 
+.inline-tweet:focus,
 .inline-tweet:hover {
     color: #08C;
     text-decoration: none;
@@ -380,16 +380,6 @@ input:focus + .focus-reveal {
     }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /*
-        Previously crashed Chrome on hover
-        display: none;
-    */
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 /********
 * Input *
 ********/
@@ -421,6 +411,20 @@ input[type="number"]:focus {
 }
 input[type="text"]:not(.button) {
     padding: 8px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /*
+        // Previously crashed Chrome on hover
+        display: none;
+    */
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="text"]:focus,
