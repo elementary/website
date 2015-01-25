@@ -166,6 +166,7 @@ nav > ul > li {
     position: relative;
     display: inline;
 }
+
 nav > ul > li > a,
 nav > ul > li > a:visited {
     margin: 0;
