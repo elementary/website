@@ -41,7 +41,7 @@
             <ul class="left">
                 <li><a href="/"><img alt="Home" src="images/logomark.svg"></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
-                <li><a href="http://www.reddit.com/r/elementaryos" target="_blank">Support</a></li>
+                <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
             </ul>
             <ul class="right">
                 <li><a href="http://elementaryos.org/get-involved" target="_blank">Get Involved</a></li>
