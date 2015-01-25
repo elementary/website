@@ -5,7 +5,8 @@
 ?>
             <script>
                 var jQl={q:[],dq:[],gs:[],ready:function(a){'function'==typeof a&&jQl.q.push(a);return jQl},getScript:function(a,c){jQl.gs.push([a,c])},unq:function(){for(var a=0;a<jQl.q.length;a++)jQl.q[a]();jQl.q=[]},ungs:function(){for(var a=0;a<jQl.gs.length;a++)jQuery.getScript(jQl.gs[a][0],jQl.gs[a][1]);jQl.gs=[]},bId:null,boot:function(a){'undefined'==typeof window.jQuery.fn?jQl.bId||(jQl.bId=setInterval(function(){jQl.boot(a)},25)):(jQl.bId&&clearInterval(jQl.bId),jQl.bId=0,jQl.unqjQdep(),jQl.ungs(),jQuery(jQl.unq()), 'function'==typeof a&&a())},booted:function(){return 0===jQl.bId},loadjQ:function(a,c){setTimeout(function(){var b=document.createElement('script');b.src=a;document.getElementsByTagName('head')[0].appendChild(b)},1);jQl.boot(c)},loadjQdep:function(a){jQl.loadxhr(a,jQl.qdep)},qdep:function(a){a&&('undefined'!==typeof window.jQuery.fn&&!jQl.dq.length?jQl.rs(a):jQl.dq.push(a))},unqjQdep:function(){if('undefined'==typeof window.jQuery.fn)setTimeout(jQl.unqjQdep,50);else{for(var a=0;a<jQl.dq.length;a++)jQl.rs(jQl.dq[a]); jQl.dq=[]}},rs:function(a){var c=document.createElement('script');document.getElementsByTagName('head')[0].appendChild(c);c.text=a},loadxhr:function(a,c){var b;b=jQl.getxo();b.onreadystatechange=function(){4!=b.readyState||200!=b.status||c(b.responseText,a)};try{b.open('GET',a,!0),b.send('')}catch(d){}},getxo:function(){var a=!1;try{a=new XMLHttpRequest}catch(c){for(var b=['MSXML2.XMLHTTP.5.0','MSXML2.XMLHTTP.4.0','MSXML2.XMLHTTP.3.0','MSXML2.XMLHTTP','Microsoft.XMLHTTP'],d=0;d<b.length;++d){try{a= new ActiveXObject(b[d])}catch(e){continue}break}}finally{return a}}};if('undefined'==typeof window.jQuery){var $=jQl.ready,jQuery=$;$.getScript=jQl.getScript};
-                jQl.loadjQ('//cdn.jsdelivr.net/g/jquery,jquery.leanmodal2');
+                jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
+                jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
             </script>
             <div class="row">
@@ -38,21 +39,21 @@
             </div>
             <div class="row">
                 <div class="column third">
-                    <h1>Wired</h1>
-                    <p>"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</p>
+                    <a href="https://www.wired.com" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" alt="WIRED" /></a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs” — @WIRED elementaryos.org" target="_blank">"elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs"</a>
                 </div>
                 <div class="column third">
-                    <h1>Mac|Life</h1>
-                    <p>"a fast, low-maintenance platform that can be installed virtually anywhere"</p>
+                    <a href="http://maclife.com" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" alt="Mac|Life" /></a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“a fast, low-maintenance platform that can be installed virtually anywhere” — @MacLife elementaryos.org" target="_blank">"a fast, low-maintenance platform that can be installed virtually anywhere"</a>
                 </div>
                 <div class="column third">
-                    <h1>Lifehacker</h1>
-                    <p>“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</p>
+                    <a href="http://lifehacker.com" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" alt="Lifehacker" /></a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.” — @lifehacker elementaryos.org" target="_blank">“Lightweight and fast… Completely community-based, and has a real flair for design and appearances.”</a>
                 </div>
             </div>
             <div id="download-modal" class="modal">
                 <h1>Choose a Download</h1>
-                <h2>We recommend 64-bit for most modern computers.</h2>
+                <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
                         <a class="button close-modal" href="http://downloads.sourceforge.net/project/elementaryos/unstable/elementaryos-unstable-i386.20140810.iso">Freya Beta 32-bit</a>

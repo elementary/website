@@ -52,8 +52,86 @@ p.small-label {
     text-align: center;
 }
 
+kbd {
+    color: #4D4D4D;
+    background-color: #E9E9E9;
+    background-image: linear-gradient(to bottom, #E9E9E9, #FFF);
+    border: 1px solid #A5A5A5;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #FFF,
+                inset 0 -2px 0 0 #D9D9D9;
+    font-family: monospace;
+    padding: 2px 4px;
+    -moz-user-select: none;
+    margin: 3px;
+}
+
 img {
     max-width: 100%;
+}
+
+img.h1 {
+    height: 27px;
+    margin: 19px auto;
+    opacity: 0.8;
+    display: block;
+}
+
+img.hero {
+    width: 55%;
+    min-width: 288px;
+    display: block;
+    margin: 0 auto;
+}
+
+.inline-tweet {
+    color: #333;
+}
+
+
+.inline-tweet:focus,
+.inline-tweet:hover {
+    color: #08C;
+    text-decoration: none;
+}
+
+.inline-tweet:after,
+.inline-tweet:after {
+    content: "";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
+    padding-left: 6px;
+    position: absolute;
+    margin-top: 0.20em;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    opacity: 0;
+}
+
+.inline-tweet:focus:after,
+.inline-tweet:hover:after {
+    opacity: 1;
+}
+
+.read-more:after {
+    content: "";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
+    padding-left: 6px;
+    position: absolute;
+    margin-top: 0.20em;
+    -webkit-transition: padding 0.15s ease-in-out;
+    -o-transition: padding 0.15s ease-in-out;
+    transition: padding 0.15s ease-in-out;
+}
+
+.read-more:hover:after {
+    padding-left: 10px;
 }
 
 /*********
@@ -137,13 +215,6 @@ footer ul li a:focus i.fa {
     padding: 24px;
     max-width: 1200px;
     text-align: center;
-}
-
-img.hero {
-    width: 55%;
-    min-width: 288px;
-    display: block;
-    margin: 0 auto;
 }
 
 .row ul {
@@ -230,6 +301,7 @@ button:focus,
                 inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
                 0 3px 6px rgba(12,128,200,0.16),
                 0 3px 6px rgba(12,128,200,0.23);
+    text-decoration: none;
 }
 
 button:active,
@@ -276,10 +348,11 @@ button.suggested-action,
 }
 .pre-amount {
     color: #333;
-    Margin-left: 14px;
+    margin-left: 14px;
     margin-right: -21px;
     margin-top: 11px;
     position: absolute;
+    pointer-events: none;
 }
 #amount-custom {
     width: 100%;
@@ -305,16 +378,6 @@ input:focus + .focus-reveal {
     .focus-reveal {
         width: auto;
     }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /*
-        Previously crashed Chrome on hover
-        display: none;
-    */
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 /********
@@ -348,6 +411,20 @@ input[type="number"]:focus {
 }
 input[type="text"]:not(.button) {
     padding: 8px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /*
+        // Previously crashed Chrome on hover
+        display: none;
+    */
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="text"]:focus,
@@ -477,12 +554,24 @@ input:focus:-ms-input-placeholder {
 * Modal Dialogs *
 ****************/
 
+.js-target-jquery-leanmodal-overlay {
+    background: #000;
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
 .modal {
     display: none;
+    opacity: 0;
+    z-index: 11000;
     background-color: #f5f5f5;
     padding: 12px;
     margin: 12px;
-    top: 0px;
     max-height: 100vh;
     overflow: auto;
     border-radius: 3px;
@@ -493,11 +582,19 @@ input:focus:-ms-input-placeholder {
                 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-@media (min-width: 444px) {
-    .modal {
-        top: 20vh;
-        max-height: 60vh;
-    }
+
+.modal-position {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.modal p {
+    max-width: 388px;
+    margin: 0 6px;
 }
 
 .modal .row.actions {

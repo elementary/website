@@ -5,43 +5,43 @@
 ?>
             <div class="row">
                 <h1>Installation</h1>
-                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other pre-requisites to installing elementary on your computer.</p>
+                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary on your computer.</p>
 
                 <h2>System Requirements</h2>
 
                 <div class="column half">
                     <p>Minimum System Requirements:</p>
                     <ul>
-                        <li>1 GHz x86 or amd64 processor</li>
-                        <li>512MB of system memory (RAM)</li>
-                        <li>5GB of disk space</li>
+                        <li>1 GHz 32-bit or 64-bit processor</li>
+                        <li>512 MB of system memory (RAM)</li>
+                        <li>5 GB of disk space</li>
                     </ul>
                 </div>
                 <div class="column half">
                     <p>Recommended System Requirements:</p>
                     <ul>
-                        <li>1 GHz x86 or amd64 processor</li>
-                        <li>1GB of system memory (RAM)</li>
+                        <li>1 GHz 32-bit or 64-bit processor</li>
+                        <li>1 GB of system memory (RAM)</li>
                         <li>15 GB of disk space</li>
                         <li>Internet access</li>
                     </ul>
                 </div>
 
                 <h2>Downloading elementary</h2>
-                <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable disk — which you will need to burn to a CD, DVD, or USB stick.</p>
+                <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable medium — which you will need to burn to a CD, DVD, or USB stick.</p>
 
                 <h2>32-bit versus 64-bit</h2>
-                <p>Elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
+                <p>elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
                 <ul>
-                    <li>If you know you have a newer computer with a 64-bit processor, choose the 64bit version.</li>
+                    <li>If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.</li>
                     <li>If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).</li>
                 </ul>
 
-                <h2>Back Up Your Data</h2>
-                <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like DropBox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
+                <h2>Backing Up Your Data</h2>
+                <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
 
-                <h1 id="creating-an-install-disk">Creating an Install Disk</h1>
-                <p>To install elementary OS, you'll need some kind of installation media. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
+                <h1 id="creating-an-installation-medium">Creating an Installation Medium</h1>
+                <p>To install elementary OS, you'll need some kind of installation medium. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
 
                 <ul>
                     <li>CDs are cheaply available and (unless your computer doesn't have a CD drive) your computer should support booting from a CD. If you're unsure which to use, a CD is a safe bet.</li>
@@ -51,8 +51,8 @@
 
             <div class="text-center">
                 <div id="installing-choices" class="column linked center-block">
-                    <a class="button burning-a-cd" href="#burning-a-cd">Burn a CD</a>
-                    <a class="button creating-a-usb" href="#creating-a-usb">Create a USB</a>
+                    <a class="button burning-a-cd" href="#burning-a-cd">Burning a CD</a>
+                    <a class="button creating-a-usb" href="#creating-a-usb">Creating a USB</a>
                 </div>
             </div>
             
@@ -65,7 +65,7 @@
                     <div id="burning-choices" class="column linked">
                         <a class="button burning-on-linux" href="#burning-on-linux">Ubuntu</a>
                         <a class="button burning-on-windows" href="#burning-on-windows">Windows</a>
-                        <a class="button burning-on-macos" href="#burning-on-macos">Mac OS X</a>
+                        <a class="button burning-on-osx" href="#burning-on-osx">OS X</a>
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
                     <div id="burning-on-linux" class="slide">
                         <h3>Ubuntu</h3>
 
-                        <p>Open Brasero and select: "Burn Image".</p>
+                        <p>Open Brasero and select "Burn Image".</p>
 
                         <img src="images/installation/brasero_home.png" alt="Brasero main window">
 
@@ -81,7 +81,7 @@
 
                         <img src="images/installation/brasero_image.png" alt="Burn window">
 
-                        <p>Then you simply click: "Create Image", and Brasero does the rest.</p>
+                        <p>Then you simply click "Create Image" and Brasero does the rest.</p>
 
                         <img src="images/installation/brasero_burning.png" alt="Burning">
                     </div>
@@ -96,16 +96,16 @@
                         <p>Click "Burn". This make take a few minutes.</p>
                     </div>
 
-                    <div id="burning-on-macos" class="slide">
-                        <h3>Mac OS X</h3>
+                    <div id="burning-on-osx" class="slide">
+                        <h3>OS X</h3>
 
                         <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
 
-                        <img src="images/installation/macos_dialog.png" alt="CD dialog on Mac OS X">
+                        <img src="images/installation/osx_dialog.png" alt="CD dialog on OS X">
 
                         <p>Right click (or control click) on elementaryOS.iso and select "Burn elementaryOS.iso to Disc...".</p>
 
-                        <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
+                        <img src="images/installation/osx_menu.png" alt="CD dialog on OS X">
 
                         <p>Click "Burn". This make take a few minutes.</p>
                     </div>
@@ -115,7 +115,7 @@
             <div id="creating-a-usb" class="slide">
                 <div class="row">
                     <h2>Creating a USB</h2>
-                    <p>Begin with a spare USB Stick or SD Card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+                    <p>Begin with a spare USB stick or SD card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
@@ -130,14 +130,14 @@
             </div>
 
             <div class="row">
-                <h1 id="booting-the-install-disk">Booting the Install Disk</h1>
-                <p>In order to start the installation process, you must boot your computer from the installation disk. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
+                <h1 id="booting-from-the-installation-medium">Booting from the Installation Medium</h1>
+                <p>In order to start the installation process, you must boot your computer from the installation medium. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
             <div class="text-center">
                 <div id="booting-choices" class="column linked">
-                    <a class="button booting-on-a-pc" href="#booting-on-a-pc">Boot on a PC</a>
-                    <a class="button booting-on-a-mac" href="#booting-on-a-mac">Boot on a Mac</a>
+                    <a class="button booting-on-a-pc" href="#booting-on-a-pc">Booting on a PC</a>
+                    <a class="button booting-on-a-mac" href="#booting-on-a-mac">Booting on a Mac</a>
                 </div>
             </div>
 
@@ -146,9 +146,9 @@
                     <h2>Booting on a PC</h2>
 
                     <ul>
-                        <li>Assuming that your computer is still on, start by inserting your installation disk and restarting your computer.</li>
+                        <li>Assuming that your computer is still on, start by inserting your installation medium and restarting your computer.</li>
                         <li>Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.</li>
-                        <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot disk. "USB-HDD" for a USB install disk, or "CDROM" for a CD/DVD install disk. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
+                        <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot medium. "USB-HDD" for a USB installation, or "CDROM" for a CD/DVD installation. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
                         <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
                     </ul>
                 </div>
@@ -162,6 +162,7 @@
                 </div>
             </div>
 
+            <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
             <script type="text/javascript" src="scripts/installation.js"></script>
 <?php
     include '_templates/footer.html';
