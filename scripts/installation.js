@@ -1,7 +1,7 @@
 // Install guide toggles
 var toggles = {
 	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
-	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-macos'],
+	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-osx'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
 
@@ -12,7 +12,7 @@ function detectOS() {
 		return 'windows';
 	}
 	if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-		return 'macos';
+		return 'osx';
 	}
 	if (ua.indexOf('Linux') >= 0) {
 		return 'linux';

@@ -65,7 +65,7 @@
                     <div id="burning-choices" class="column linked">
                         <a class="button burning-on-linux" href="#burning-on-linux">Ubuntu</a>
                         <a class="button burning-on-windows" href="#burning-on-windows">Windows</a>
-                        <a class="button burning-on-macos" href="#burning-on-macos">Mac OS X</a>
+                        <a class="button burning-on-osx" href="#burning-on-osx">OS X</a>
                     </div>
                 </div>
 
@@ -96,16 +96,16 @@
                         <p>Click "Burn". This make take a few minutes.</p>
                     </div>
 
-                    <div id="burning-on-macos" class="slide">
-                        <h3>Mac OS X</h3>
+                    <div id="burning-on-osx" class="slide">
+                        <h3>OS X</h3>
 
                         <p>Insert a blank CD-R or CD-RW into your CD drive. A box will appear asking what to do; click "Ignore".</p>
 
-                        <img src="images/installation/macos_dialog.png" alt="CD dialog on Mac OS X">
+                        <img src="images/installation/osx_dialog.png" alt="CD dialog on OS X">
 
                         <p>Right click (or control click) on elementaryOS.iso and select "Burn elementaryOS.iso to Disc...".</p>
 
-                        <img src="images/installation/macos_menu.png" alt="CD dialog on Mac OS X">
+                        <img src="images/installation/osx_menu.png" alt="CD dialog on OS X">
 
                         <p>Click "Burn". This make take a few minutes.</p>
                     </div>
