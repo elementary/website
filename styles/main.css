@@ -566,11 +566,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .modal {
-    position: fixed;
-    top: 35%;
-    right: 0;
-    left: 0;
-    margin: auto;
+    margin: 12px;
     display: none;
     opacity: 0;
     z-index: 11000;
@@ -578,7 +574,6 @@ input:focus:-ms-input-placeholder {
     padding: 12px;
     top: 0px;
     max-height: 100vh;
-    max-width: 68%;
     overflow: auto;
     border-radius: 3px;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.20),
@@ -589,11 +584,13 @@ input:focus:-ms-input-placeholder {
                 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-@media (min-width: 444px) {
-    .modal {
-        top: 20vh;
-        max-height: 60vh;
-    }
+.modal-center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .modal p {
