@@ -20,7 +20,7 @@
         <title><?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?></title>
 
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
