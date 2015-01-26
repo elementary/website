@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="web-browser">
                         <h2>Web Development</h2>
-                        <p>Our website is built using HTML, CSS, PHP, MySQL, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our design team, but we love design ideas and feedback from our web team.</p>
+                        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our design team, but we love design ideas and feedback from our web team.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
