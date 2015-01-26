@@ -25,6 +25,9 @@ section .heading h1 {
 	font-size: 36px;
 	margin-bottom: 10px;
 }
+section .heading h1 a.inline-tweet:not(:hover) {
+	color: inherit;
+}
 section .heading p.small-label {
 	text-align: right;
 	font-size: 18px;
