@@ -35,8 +35,8 @@
                         <p>elementary is created and used by people from around the entire world; help us make peoples' experiences even better by translating it to more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View our translations page</a>
-                            <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get more info about Rosetta</a>
+                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View Our Translations Page</a>
+                            <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get More Info About Rosetta</a>
                         </div>
                     </div>
                     <div class="column">
@@ -80,7 +80,7 @@
 
                         <p>
                             <strong>Visual Design</strong><br>
-                            A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937">our Google+ Community</a>.
+                            A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a>
                         </p>
 
                         <p>
@@ -90,7 +90,7 @@
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="http://elementaryos.org/docs/human-interface-guidelines" target="_blank">Read the HIG</a>
-                            <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse our Blueprints</a>
+                            <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
                         </div>
                     </div>
                     <div class="column">
@@ -113,9 +113,9 @@
                         <p>Our desktop environment and all it's apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill.</p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse our desktop code</a>
-                            <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank">Browse our apps' code</a>
-                            <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See our open bug reports</a>
+                            <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
+                            <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank">Browse Our Apps' Code</a>
+                            <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See Our Open Bug Reports</a>
                         </div>
                     </div>
                     <div class="column">
