@@ -119,7 +119,7 @@
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
-                    <p>After that, open unetbootin from your application menu, or just type "unetbootin" in a terminal. It will open a window like the one below:</p>
+                    <p>After that, open UNetbootin from your application menu. It will open a window like the one below:</p>
 
                     <img src="images/installation/unetbootin.png" alt="UNetbootin">
 
