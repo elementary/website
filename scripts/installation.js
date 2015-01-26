@@ -1,6 +1,6 @@
 // Install guide toggles
 var toggles = {
-	'installing-choices': ['burning-a-cd', 'creating-a-live-usb'],
+	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
 	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-osx'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
@@ -125,6 +125,10 @@ function setupToggle(toggleId) {
 	var processChoice = function (choiceId) {
 		var link = choicesCtn.getElementsByClassName(choiceId)[0];
 		var paragraph = document.getElementById(choiceId);
+		if (!paragraph) {
+			console.log('ERR: could not find paragraph #'+choiceId);
+			return;
+		}
 		var heading = paragraph.getElementsByTagName('h2')[0];
 		if (!heading) {
 			heading = paragraph.getElementsByTagName('h3')[0];
