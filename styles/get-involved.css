@@ -34,11 +34,13 @@ section h2 {
 	font-size: 28px;
 }
 section > .row .column {
-	max-width: 50%;
+	max-width: 576px;
 	text-align: left;
 	vertical-align: middle;
 }
-section .actions .button {
+
+/* BUTTONS */
+.button.flat {
 	display: block;
 	font-weight: bold;
 	background: none;
@@ -50,30 +52,30 @@ section .actions .button {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-section.light .actions .button {
+section.light .button.flat {
 	border-color: rgba(88, 110, 117, 0.5);
 	color: #586e75;
 }
-section.dark .actions .button {
+section.dark .button.flat {
 	border-color: rgba(200, 208, 208, 0.5);
 	color: #c8d0d0;
 }
-section .actions .button.suggested-action {
+.button.flat.suggested-action {
 	color: white;
 }
-section:nth-child(2) .actions .button.suggested-action {
+section:nth-child(2) .button.flat.suggested-action {
 	background-color: #2aa198;
 	border-color: #2aa198;
 }
-section:nth-child(3) .actions .button.suggested-action {
+section:nth-child(3) .button.flat.suggested-action {
 	background-color: #d53c12;
 	border-color: #d53c12;
 }
-section:nth-child(4) .actions .button.suggested-action {
+section:nth-child(4) .button.flat.suggested-action {
 	background-color: #268bd2;
 	border-color: #268bd2;
 }
-section:nth-child(5) .actions .button.suggested-action {
+section:nth-child(5) .button.flat.suggested-action {
 	background-color: #d33682;
 	border-color: #d33682;
 }
@@ -94,26 +96,26 @@ section:nth-child(5) .actions .button.suggested-action {
 	font-size: 28px;
 }
 
-.row.hero .actions .button {
+.row.hero .actions .button.flat {
 	display: inline-block;
 	color: white;
 	border: 2px solid white;
 	border-radius: 4px;
 	min-width: 200px;
 }
-.row.hero .actions .button:nth-child(1) {
+.row.hero .actions .button.flat:nth-child(1) {
 	color: #2aa198;
 	border-color: #2aa198;
 }
-.row.hero .actions .button:nth-child(2) {
+.row.hero .actions .button.flat:nth-child(2) {
 	color: #cb4b16;
 	border-color: #cb4b16;
 }
-.row.hero .actions .button:nth-child(3) {
+.row.hero .actions .button.flat:nth-child(3) {
 	color: #268bd2;
 	border-color: #268bd2;
 }
-.row.hero .actions .button:nth-child(4) {
+.row.hero .actions .button.flat:nth-child(4) {
 	color: #d33682;
 	border-color: #d33682;
 }
