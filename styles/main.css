@@ -187,7 +187,11 @@ nav > ul > li > a:visited:hover {
     opacity: 1;
 }
 
-nav img {
+nav .logomark {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/logomark.svg");
     vertical-align: middle;
 }
 
