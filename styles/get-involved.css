@@ -52,11 +52,11 @@ section > .row .column {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-section.light .button.flat {
+.light .button.flat {
 	border-color: rgba(88, 110, 117, 0.5);
 	color: #586e75;
 }
-section.dark .button.flat {
+.dark .button.flat {
 	border-color: rgba(200, 208, 208, 0.5);
 	color: #c8d0d0;
 }
