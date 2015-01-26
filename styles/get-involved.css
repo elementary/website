@@ -124,11 +124,25 @@ section:nth-child(5) .button.flat.suggested-action {
 .web-browser {
 	background-image: url("../images/get-involved/web-development.svg");
 	background-repeat: no-repeat;
-	width: 508px;
-	height: 224px;
-	margin: auto;
+	background-position: top center;
+	width: 888px;
+	height: 444px;
+	max-width: 100%;
+	margin: 24px auto;
 	padding: 110px 190px;
 	text-align: left;
+	box-sizing: border-box;
+}
+
+@media (max-width: 888px) {
+	.web-browser {
+		background-position: -2px 0;
+		width: 100%;
+		height: auto;
+		padding: 24px;
+		padding-top: 50px;
+		margin: 24px 0;
+	}
 }
 
 /* FOOTER */
