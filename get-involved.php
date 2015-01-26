@@ -10,7 +10,7 @@
                 <!-- <h1>Get Involved</h1> -->
                 <!-- <h2>Check out our progress for Freya Beta 2</h2> -->
 
-                <!-- <img src="images/get-involved/stats.svg" alt=""> -->
+                <!-- <img src="images/get-involved/stats.svg" alt="Chart"> -->
 
                 <h3>Contribute by doing these things</h3>
 
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="column">
-                        <img src="images/get-involved/translations.svg" alt="">
+                        <img src="images/get-involved/translations.svg" alt="World map">
                     </div>
                 </div>
             </section>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="column">
-                        <img src="images/get-involved/design.svg" alt="">
+                        <img src="images/get-involved/design.svg" alt="Application wire frame">
                     </div>
                 </div>
             </section>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class="column">
-                        <img src="images/get-involved/desktop-development.svg" alt="">
+                        <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
                     </div>
                 </div>
             </section>
