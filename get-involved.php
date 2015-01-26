@@ -1,7 +1,8 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Get Involved';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     include '_templates/header.php';
 ?>
             <section class="row hero">
