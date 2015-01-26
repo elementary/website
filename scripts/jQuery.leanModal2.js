@@ -56,8 +56,8 @@
                         });
                     }
 
-                    var modal_height = $(modal_id).height();
-                    var modal_width = $(modal_id).width();
+                    var modal_height = $(modal_id).innerHeight();
+                    var modal_width = $(modal_id).innerWidth();
                     $(modal_id).height(modal_height);
                     $(modal_id).width(modal_width);
                     $(modal_id).addClass('modal-position');
