@@ -290,9 +290,24 @@ footer ul li a:focus i.fa {
     color: #fbc02d;
 }
 
+.row.alert {
+    max-width: 704px;
+    border-radius: 6px;
+    border: 2px solid #333;
+}
+
+.row.alert.warning {
+    background-color: #FFF9C4;
+    border-color:#FBC02D;
+}
+
 .column.alert {
     max-width: 600px;
     vertical-align: top;
+}
+
+.row.alert > .column.alert {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .column.alert h1 {
