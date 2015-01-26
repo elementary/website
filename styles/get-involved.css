@@ -46,6 +46,11 @@ section > .row .column {
 	text-align: left;
 	vertical-align: middle;
 }
+@media (max-width: 576px) {
+	section > .row .column {
+		max-width: 100%;
+	}
+}
 
 /* BUTTONS */
 .button.flat {
