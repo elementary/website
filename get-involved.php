@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="column">
                         <h2>Translations</h2>
-                        <p>elementary is created and used by people from around the entire world; help us make peoples' experiences even better by translating it to more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
+                        <p>elementary OS is created and used by people from around the entire world; help us make peoples' experiences even better by translating it to more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View Our Translations Page</a>
