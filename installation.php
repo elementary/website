@@ -88,9 +88,7 @@
 
                         <img src="images/installation/brasero_image.png" alt="Burn window">
 
-                        <p>Then you simply click "Create Image" and Brasero does the rest.</p>
-
-                        <img src="images/installation/brasero_burning.png" alt="Burning">
+                        <p>Then you simply click "Burn" and Brasero does the rest.</p>
                     </div>
 
                     <div id="burning-on-windows" class="slide">
