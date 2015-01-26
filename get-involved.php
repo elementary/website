@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Installation';
+    $page['title'] = 'Get Involved';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     include '_templates/header.php';
 ?>
