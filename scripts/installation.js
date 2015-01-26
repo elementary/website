@@ -1,6 +1,6 @@
 // Install guide toggles
 var toggles = {
-	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
+	'installing-choices': ['burning-a-cd', 'creating-a-live-usb'],
 	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-osx'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
