@@ -121,25 +121,21 @@ section:nth-child(5) .button.flat.suggested-action {
 
 .row.hero .actions .button.flat {
 	display: inline-block;
-	color: white;
-	border: 2px solid white;
+	color: #c8d0d0;
+	border: 2px solid #c8d0d0;
 	border-radius: 4px;
 	min-width: 200px;
 }
 .row.hero .actions .button.flat:nth-child(1) {
-	color: #2aa198;
 	border-color: #2aa198;
 }
 .row.hero .actions .button.flat:nth-child(2) {
-	color: #cb4b16;
 	border-color: #cb4b16;
 }
 .row.hero .actions .button.flat:nth-child(3) {
-	color: #268bd2;
 	border-color: #268bd2;
 }
 .row.hero .actions .button.flat:nth-child(4) {
-	color: #d33682;
 	border-color: #d33682;
 }
 
