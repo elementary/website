@@ -5,6 +5,9 @@ html, body {
 }
 
 /* SECTIONS */
+section, section.hero {
+	padding-bottom: 100px;
+}
 section.light {
 	background-color: #fdf6e3;
 	color: #586e75;
