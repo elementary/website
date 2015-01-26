@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="column">
                         <h2>Desktop Development</h2>
-                        <p>Our desktop environment and all it's apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill.</p>
+                        <p>Our desktop environment and all it's apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
