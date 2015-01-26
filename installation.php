@@ -37,8 +37,15 @@
                     <li>If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).</li>
                 </ul>
 
-                <h2>Backing Up Your Data</h2>
-                <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
+                <div class="row alert warning">
+                    <div class="column alert">
+                        <i class="warning fa fa-warning"></i>
+                    </div>
+                    <div class="column alert">
+                        <h1>Back Up Your Data</h1>
+                        <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
+                    </div>
+                </div>
 
                 <h1 id="creating-an-installation-medium">Creating an Installation Medium</h1>
                 <p>To install elementary OS, you'll need some kind of installation medium. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
