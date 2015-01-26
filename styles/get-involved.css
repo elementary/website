@@ -4,6 +4,10 @@ html, body {
 	font-family: "Open Sans";
 }
 
+nav .logomark {
+    background-image: url("../images/logomark-light.svg");
+}
+
 /* SECTIONS */
 section, section.hero {
 	padding-bottom: 100px;
