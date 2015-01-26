@@ -137,6 +137,61 @@ img.hero {
 }
 
 /*********
+* NAVBAR *
+*********/
+
+nav {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 100%;
+}
+
+nav > .left {
+    float: left;
+    margin-left: 3px;
+}
+
+nav > .right {
+    float: right;
+    margin-right: 3px;
+}
+
+nav > ul > li {
+    margin: 0 6px;
+    position: relative;
+    display: inline;
+}
+
+nav > ul > li > a,
+nav > ul > li > a:visited {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    opacity: 0.8;
+}
+
+nav > ul > li > a:focus {
+    text-decoration: none;
+    color: #08c;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:visited:hover {
+    opacity: 1;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+/*********
 * Layout *
 **********/
 
