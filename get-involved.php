@@ -35,8 +35,8 @@
                         <p>elementary is created and used by people from around the entire world; help us make peoples' experiences even better by translating it to more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary">View our translations page</a>
-                            <a class="button flat" href="https://help.launchpad.net/Translations">Get more info about Rosetta</a>
+                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View our translations page</a>
+                            <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get more info about Rosetta</a>
                         </div>
                     </div>
                     <div class="column">
@@ -59,7 +59,7 @@
                         <p>Our website is built using HTML, CSS, PHP, MySQL, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our design team, but we love design ideas and feedback from our web team.</p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://github.com/elementary/mvp">Hello</a>
+                            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -89,8 +89,8 @@
                         </p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="http://elementaryos.org/docs/human-interface-guidelines">Read the HIG</a>
-                            <a class="button flat" href="https://blueprints.launchpad.net/elementary">Browse our Blueprints</a>
+                            <a class="button flat suggested-action" href="http://elementaryos.org/docs/human-interface-guidelines" target="_blank">Read the HIG</a>
+                            <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse our Blueprints</a>
                         </div>
                     </div>
                     <div class="column">
@@ -113,9 +113,9 @@
                         <p>Our desktop environment and all it's apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill.</p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon">Browse our desktop code</a>
-                            <a class="button flat" href="https://code.launchpad.net/~elementary-apps">Browse our apps' code</a>
-                            <a class="button flat" href="https://bugs.launchpad.net/elementary">See our open bug reports</a>
+                            <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse our desktop code</a>
+                            <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank">Browse our apps' code</a>
+                            <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See our open bug reports</a>
                         </div>
                     </div>
                     <div class="column">
