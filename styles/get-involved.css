@@ -1,0 +1,128 @@
+html, body {
+	background-color: #3e4e54;
+	color: #c8d0d0;
+	font-family: "Open Sans";
+}
+
+/* SECTIONS */
+section.light {
+	background-color: #fdf6e3;
+	color: #586e75;
+}
+section .heading {
+	background-color: rgba(0,0,0,0.04);
+}
+section .heading h1 {
+	font-weight: normal;
+	font-family: "Satisfy";
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+section .heading p.small-label {
+	text-align: right;
+	font-size: 18px;
+}
+section h2 {
+	font-weight: lighter;
+	font-size: 28px;
+}
+section > .row .column {
+	max-width: 50%;
+	text-align: left;
+	vertical-align: middle;
+}
+section .actions .button {
+	display: block;
+	font-weight: bold;
+	background: none;
+	box-shadow: none;
+	text-shadow: none;
+	border-width: 2px;
+	padding: 7px;
+	margin-left: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section.light .actions .button {
+	border-color: rgba(88, 110, 117, 0.5);
+	color: #586e75;
+}
+section.dark .actions .button {
+	border-color: rgba(200, 208, 208, 0.5);
+	color: #c8d0d0;
+}
+section .actions .button.suggested-action {
+	color: white;
+}
+section:nth-child(2) .actions .button.suggested-action {
+	background-color: #2aa198;
+	border-color: #2aa198;
+}
+section:nth-child(3) .actions .button.suggested-action {
+	background-color: #d53c12;
+	border-color: #d53c12;
+}
+section:nth-child(4) .actions .button.suggested-action {
+	background-color: #268bd2;
+	border-color: #268bd2;
+}
+section:nth-child(5) .actions .button.suggested-action {
+	background-color: #d33682;
+	border-color: #d33682;
+}
+
+/* HERO */
+.row.hero h1,
+.row.hero h2,
+.row.hero h3 {
+	font-weight: lighter;
+}
+.row.hero h1 {
+	font-size: 64px;
+}
+.row.hero h2 {
+	font-size: 32px;
+}
+.row.hero h3 {
+	font-size: 28px;
+}
+
+.row.hero .actions .button {
+	display: inline-block;
+	color: white;
+	border: 2px solid white;
+	border-radius: 4px;
+	min-width: 200px;
+}
+.row.hero .actions .button:nth-child(1) {
+	color: #2aa198;
+	border-color: #2aa198;
+}
+.row.hero .actions .button:nth-child(2) {
+	color: #cb4b16;
+	border-color: #cb4b16;
+}
+.row.hero .actions .button:nth-child(3) {
+	color: #268bd2;
+	border-color: #268bd2;
+}
+.row.hero .actions .button:nth-child(4) {
+	color: #d33682;
+	border-color: #d33682;
+}
+
+/* CUSTOM SECTIONS */
+.web-browser {
+	background-image: url("../images/get-involved/web-development.svg");
+	background-repeat: no-repeat;
+	width: 508px;
+	height: 224px;
+	margin: auto;
+	padding: 110px 190px;
+	text-align: left;
+}
+
+/* FOOTER */
+footer {
+	color: inherit;
+}
