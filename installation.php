@@ -43,7 +43,7 @@
                     </div>
                     <div class="column alert">
                         <h1>Back Up Your Data</h1>
-                        <p>While you're waiting for your download to complete, make sure to back up all of your data to an external location such as a cloud service like Dropbox or an external hard drive. Installing a new operating system may overwrite your existing data; backing up ensures you won't lose anything precious.</p>
+                        <p>Make sure to back up all of your data to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.</p>
                     </div>
                 </div>
 
