@@ -17,6 +17,8 @@
         <meta property="og:title" content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
         <meta property="og:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
 
+        <meta name="apple-mobile-web-app-title" content="elementary">
+
         <title><?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?></title>
 
         <link rel="shortcut icon" href="favicon.ico">
