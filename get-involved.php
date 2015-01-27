@@ -60,6 +60,7 @@
 
                     <div class="actions">
                         <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
+                        <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">See Our Open Bug Reports</a>
                     </div>
                 </div>
             </section>
