@@ -25,7 +25,7 @@
             <section id="translations" class="light">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“A different language is a different vision of life.” — Federico Fellini elementaryos.org/get-involved" target="_blank">“A different language is a different vision of life.”</a></h1>
+                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“A different language is a different vision of life.” — Federico Fellini elementaryos.org/get-involved#translations" target="_blank">“A different language is a different vision of life.”</a></h1>
                         <p class="small-label">Federico Fellini</p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
             <section id="web-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Websites should look good from the inside and out” — Paul Cookson elementaryos.org/get-involved" target="_blank">“Websites should look good from the inside and out”</a></h1>
+                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Websites should look good from the inside and out” — Paul Cookson elementaryos.org/get-involved#web-development" target="_blank">“Websites should look good from the inside and out”</a></h1>
                         <p class="small-label">Paul Cookson</p>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
             <section id="design" class="light">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Great design is making something memorable and meaningful.” — Dieter Rams elementaryos.org/get-involved" target="_blank">“Great design is making something memorable and meaningful.”</a></h1>
+                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Great design is making something memorable and meaningful.” — Dieter Rams elementaryos.org/get-involved#design" target="_blank">“Great design is making something memorable and meaningful.”</a></h1>
                         <p class="small-label">Dieter Rams</p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
             <section id="desktop-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Before software can be reusable it first has to be usable” — Ralph Johnson elementaryos.org/get-involved" target="_blank">“Before software can be reusable it first has to be usable”</a></h1>
+                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=“Before software can be reusable it first has to be usable” — Ralph Johnson elementaryos.org/get-involved#desktop-development" target="_blank">“Before software can be reusable it first has to be usable”</a></h1>
                         <p class="small-label">Ralph Johnson</p>
                     </div>
                 </div>
