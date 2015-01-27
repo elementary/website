@@ -5,7 +5,7 @@
 ?>
             <div class="row">
                 <h1>Installation</h1>
-                <p>elementary is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary on your computer.</p>
+                <p>elementary OS is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary OS on your computer.</p>
 
                 <h2>System Requirements</h2>
 
@@ -27,11 +27,11 @@
                     </ul>
                 </div>
 
-                <h2>Downloading elementary</h2>
+                <h2>Downloading elementary OS</h2>
                 <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable medium — which you will need to burn to a CD, DVD, or USB stick.</p>
 
                 <h2>32-bit versus 64-bit</h2>
-                <p>elementary is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
+                <p>elementary OS is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
                 <ul>
                     <li>If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.</li>
                     <li>If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).</li>
@@ -94,7 +94,7 @@
                     <div id="burning-on-windows" class="slide">
                         <h3>Windows 7</h3>
 
-                        <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary disk image and select "Burn disc image".</p>
+                        <p>Insert a blank CD-R or CD-RW into your CD drive. Then right click on the elementary OS disk image and select "Burn disc image".</p>
 
                         <img src="images/installation/windows_image.jpg" alt="Burning on Windows">
 
@@ -154,7 +154,7 @@
                         <li>Assuming that your computer is still on, start by inserting your installation medium and restarting your computer.</li>
                         <li>Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.</li>
                         <li>Press <kbd>F12</kbd> (or the appropriate key) and select the appropriate boot medium. "USB-HDD" for a USB installation, or "CDROM" for a CD/DVD installation. The wording may vary depending on your hardware. If you choose the incorrect device, your computer will likely continue to boot as normal. Just restart your computer and pick a different device in that menu.</li>
-                        <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
+                        <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary OS splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
                     </ul>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                 <div class="row">
                     <h2>Booting on a Mac</h2>
 
-                    <p>Booting elementary OS on Apple hardware is possible; however, it's not well-documented at the moment. We're working hard to document this process for you. Until then, refer to <a href="http://tech-devnet.blogspot.de/2012/05/running-ubuntu-1204-on-mac.html">one of</a> the <a href="http://lifehacker.com/5934942/how-to-dual-boot-linux-on-your-mac-and-take-back-your-powerhouse-apple-hardware">many third-party guides</a> for installing Ubuntu 12.04 on a Mac; since elementary shares its core with Ubuntu, that should at least get you started.</p>
+                    <p>Booting elementary OS on Apple hardware is possible; however, it's not well-documented at the moment. We're working hard to document this process for you. Until then, refer to <a href="http://tech-devnet.blogspot.de/2012/05/running-ubuntu-1204-on-mac.html">one of</a> the <a href="http://lifehacker.com/5934942/how-to-dual-boot-linux-on-your-mac-and-take-back-your-powerhouse-apple-hardware">many third-party guides</a> for installing Ubuntu 12.04 on a Mac; since elementary OS shares its core with Ubuntu, that should at least get you started.</p>
                 </div>
             </div>
 
