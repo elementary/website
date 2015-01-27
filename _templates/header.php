@@ -44,7 +44,7 @@
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
             </ul>
             <ul class="right">
-                <li><a href="/get-involved" target="_blank">Get Involved</a></li>
+                <li><a href="/get-involved">Get Involved</a></li>
             </ul>
         </nav>
 
