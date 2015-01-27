@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="column">
                         <h2>Translations</h2>
-                        <p>elementary OS is created and used by people from around the entire world; help us make peoples' experiences even better by translating it to more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
+                        <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View Our Translations Page</a>
@@ -56,7 +56,7 @@
 
                 <div class="web-browser">
                     <h2>Web Development</h2>
-                    <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our design team, but we love design ideas and feedback from our web team.</p>
+                    <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
                     <div class="actions">
                         <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="column">
                         <h2>Design</h2>
-                        <p>Every project begins with an idea. Our Design Team takes ideas and turns them into road maps. We break up design into two components:</p>
+                        <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
 
                         <p>
                             <strong>Visual Design</strong><br>
@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="column">
                         <h2>Desktop Development</h2>
-                        <p>Our desktop environment and all it's apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
+                        <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
