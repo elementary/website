@@ -52,14 +52,23 @@ $(function () {
             //responsive: true
         };
 
+        var hideTimeout = null;
+
         var ctx = document.getElementById('roadmap-chart').getContext('2d');
         var barChart = new Chart(ctx).StackedBar(chart, $.extend({
             showScale: false,
             barShowStroke: false,
             barValueSpacing: 2,
             customTooltips: function (tooltip) {
+                if (hideTimeout !== null) {
+                    clearTimeout(hideTimeout);
+                    hideTimeout = null;
+                }
+
                 if (!tooltip) {
-                    //updateDoughnuts();
+                    hideTimeout = setTimeout(function () {
+                        updateDoughnuts();
+                    }, 500);
                     return;
                 }
 
