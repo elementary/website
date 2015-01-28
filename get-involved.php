@@ -29,7 +29,7 @@
                 <div class="heading">
                     <div class="row">
                         <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementaryos.org/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></h1>
-                        <p class="small-label">Federico Fellini</p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@
                 <div class="heading">
                     <div class="row">
                         <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementaryos.org/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></h1>
-                        <p class="small-label">Paul Cookson</p>
+                        <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                 <div class="heading">
                     <div class="row">
                         <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementaryos.org/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></h1>
-                        <p class="small-label">Dieter Rams</p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                 <div class="heading">
                     <div class="row">
                         <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementaryos.org/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></h1>
-                        <p class="small-label">Ralph Johnson</p>
+                        <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
                     </div>
                 </div>
 
