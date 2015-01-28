@@ -133,6 +133,10 @@ section:nth-child(5) .button.flat.suggested-action {
 	margin: 15px;
 	position: relative;
 }
+.charts .doughnuts-ctn .doughnut canvas {
+	position: relative;
+	z-index: 1;
+}
 .doughnut-label {
 	position: absolute;
 	top: 0;

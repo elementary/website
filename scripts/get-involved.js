@@ -3,6 +3,11 @@ $(function () {
         url: 'backend/chart.json',
         dataType: 'json'
     }).done(function (data) {
+        var labels = {
+            created: "Unfixed",
+            in_progress: "In Progress",
+            fix_committed: "Fixed"
+        };
         var colors = {
             created: "#dc322f",
             in_progress: "#2aa198",
@@ -13,17 +18,17 @@ $(function () {
             labels: [],
             datasets: [
                 {
-                    label: "Fixed",
+                    label: labels.fix_committed,
                     fillColor: colors.fix_committed,
                     data: []
                 },
                 {
-                    label: "In Progress",
+                    label: labels.fix_committed,
                     fillColor: colors.in_progress,
                     data: []
                 },
                 {
-                    label: "Unfixed",
+                    label: labels.fix_committed,
                     fillColor: colors.created,
                     data: []
                 }
@@ -33,7 +38,7 @@ $(function () {
         for (var time in data) {
             var point = data[time];
 
-            chart.labels.push(time);
+            chart.labels.push(new Date(parseInt(time, 10) * 1000).toLocaleDateString());
 
             chart.datasets[0].data.push(point.fix_committed || 0);
             chart.datasets[1].data.push(point.in_progress || 0);
@@ -43,8 +48,7 @@ $(function () {
 
         var options = {
             animation: false,
-            //responsive: true,
-            showTooltips: false
+            //responsive: true
         };
 
         var ctx = document.getElementById('roadmap-chart').getContext('2d');
@@ -67,15 +71,18 @@ $(function () {
             var fixedChart = new Chart(ctx).Doughnut([
                 {
                     value: lastPoint[doughnutName],
-                    color: colors[doughnutName]
+                    color: colors[doughnutName],
+                    label: labels[doughnutName]
                 },
                 {
                     value: total - lastPoint[doughnutName],
-                    color: "rgba(0,0,0,0.12)"
+                    color: "rgba(0,0,0,0.12)",
+                    label: "Other"
                 }
             ], $.extend({
                 segmentShowStroke: false,
-                percentageInnerCutout: 90
+                percentageInnerCutout: 90,
+                showTooltips: false
             }, options));
 
             $container.find('.'+doughnutId+' .doughnut-count').text(lastPoint[doughnutName]);
