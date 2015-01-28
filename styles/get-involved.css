@@ -123,6 +123,16 @@ section:nth-child(5) .button.flat.suggested-action {
 	font-size: 28px;
 }
 
+.charts > canvas,
+.charts .doughnuts-ctn {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+.charts .doughnuts-ctn .doughnut {
+	margin: 15px;
+}
+
 .row.hero .actions .button.flat {
 	display: inline-block;
 	color: #c8d0d0;

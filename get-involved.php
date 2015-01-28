@@ -5,6 +5,7 @@
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     $page['scripts'] .= '<script src="scripts/Chart.Core.js"></script>';
     $page['scripts'] .= '<script src="scripts/Chart.StackedBar.js"></script>';
+    $page['scripts'] .= '<script src="scripts/Chart.Doughnut.js"></script>';
     include '_templates/header.php';
 ?>
             <section class="row hero">
@@ -12,8 +13,22 @@
                 <h1>Get Involved</h1>
                 <h2>Check out our progress for Freya Beta 2</h2>
 
-                <!-- <img src="images/get-involved/stats.svg" alt="Chart"> -->
-                <canvas id="roadmap-chart" width="750" height="400"></canvas>
+                <div class="charts">
+                    <canvas id="roadmap-chart" width="750" height="400"></canvas>
+                    <div class="doughnuts-ctn">
+                        <div class="doughnut">
+                            <canvas id="fix-committed-chart" width="90" height="90"></canvas>
+                        </div>
+                        <div class="doughnut">
+                            <canvas id="in-progress-chart" width="90" height="90"></canvas>
+                        </div>
+                        <div class="doughnut">
+                            <canvas id="created-chart" width="90" height="90"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                
 
                 <h3>Contribute by doing these things</h3>
 
