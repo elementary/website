@@ -18,6 +18,7 @@
         <meta property="og:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
 
         <meta name="apple-mobile-web-app-title" content="elementary">
+        <meta name="theme-color" content="#3892e0">
         <link rel="manifest" href="/manifest.json">
 
         <title><?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?></title>
