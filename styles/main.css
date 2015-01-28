@@ -28,7 +28,6 @@ a:focus {
 
 h1 {
     font-size: 24px;
-    text-align: center;
     opacity: 0.8;
     font-weight: 600;
 }
@@ -52,6 +51,25 @@ p.small-label {
     font-size: 12px;
     opacity: 0.8;
     text-align: center;
+}
+
+q {
+    font-weight: 400;
+    font-family: "Satisfy";
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+q:before,
+q:after {
+    content: none;
+}
+
+@media (max-width: 414px) {
+    q {
+        font-size: 24px;
+    }
 }
 
 kbd {
@@ -87,9 +105,8 @@ img.hero {
 }
 
 .inline-tweet {
-    color: #333;
+    color: inherit;
 }
-
 
 .inline-tweet:focus,
 .inline-tweet:hover {
@@ -206,7 +223,8 @@ nav .logomark {
 footer {
     text-align: center;
     font-size: 12px;
-    color: #666;
+    color: inherit;
+    opacity: 0.8;
 }
 
 footer ul {
@@ -268,6 +286,12 @@ footer ul li a:focus i.fa {
 
 .column.third p {
     text-align: center;
+}
+
+.column img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .row {
