@@ -3,14 +3,40 @@
     $page['title'] = 'Get Involved';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
+    $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
     include '_templates/header.php';
 ?>
             <section class="row hero">
-                <!-- Not ready yet -->
-                <!-- <h1>Get Involved</h1> -->
-                <!-- <h2>Check out our progress for Freya Beta 2</h2> -->
+                <h2>Check out our progress for Freya Beta 2</h2>
 
-                <!-- <img src="images/get-involved/stats.svg" alt="Chart"> -->
+                <div class="charts">
+                    <div class="barchart-ctn">
+                        <canvas width="750" height="400"></canvas>
+                    </div>
+                    <div class="doughnuts-ctn">
+                        <div class="doughnut fix-committed">
+                            <canvas id="fix-committed-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">133</span><br>
+                                Fixed
+                            </div>
+                        </div>
+                        <div class="doughnut in-progress">
+                            <canvas id="in-progress-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">40</span><br>
+                                In Progress
+                            </div>
+                        </div>
+                        <div class="doughnut created">
+                            <canvas id="created-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">87</span><br>
+                                Unfixed
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <h3>Contribute by doing these things</h3>
 
@@ -124,6 +150,8 @@
                     </div>
                 </div>
             </section>
+
+            <script src="scripts/get-involved.js"></script>
 <?php
     include '_templates/footer.html';
 ?>

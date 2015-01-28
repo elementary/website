@@ -123,6 +123,69 @@ section:nth-child(5) .button.flat.suggested-action {
 	font-size: 28px;
 }
 
+.charts .barchart-ctn {
+	width: 780px;
+	max-width: 100%;
+}
+.charts .barchart-ctn,
+.charts .doughnuts-ctn {
+	display: inline-block;
+	vertical-align: middle;
+}
+.charts .doughnuts-ctn {
+	margin-left: 30px;
+}
+.charts .doughnuts-ctn .doughnut {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	margin: 15px;
+}
+.charts .doughnuts-ctn .doughnut canvas {
+	position: relative;
+	z-index: 1;
+}
+.doughnut .doughnut-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 11px 0;
+	font-size: 12px;
+	text-align: center;
+}
+.doughnut .doughnut-count {
+	color: #93a1a1;
+	font-size: 28px;
+}
+@media (max-width: 985px) {
+	.charts .doughnuts-ctn {
+		margin-left: 0;
+	}
+	.charts .doughnuts-ctn .doughnut {
+		display: inline-block;
+		margin: 4px;
+	}
+}
+@media (max-width: 360px) {
+	.charts .doughnuts-ctn .doughnut {
+		width: 70px;
+		height: 70px;
+	}
+	.charts .doughnuts-ctn .doughnut .doughnut-label {
+		padding: 4px 0;
+	}
+}
+.doughnut.fix-committed .doughnut-count {
+	color: #95A5AC;
+}
+.doughnut.in-progress .doughnut-count {
+	color: #2aa198;
+}
+.doughnut.created .doughnut-count {
+	color: #dc322f;
+}
+
 .row.hero .actions .button.flat {
 	display: inline-block;
 	color: #c8d0d0;
