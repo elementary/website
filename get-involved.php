@@ -7,7 +7,6 @@
     include '_templates/header.php';
 ?>
             <section class="row hero">
-                <!-- Not ready yet -->
                 <h1>Get Involved</h1>
                 <h2>Check out our progress for Freya Beta 2</h2>
 
@@ -37,8 +36,6 @@
                         </div>
                     </div>
                 </div>
-
-                
 
                 <h3>Contribute by doing these things</h3>
 

@@ -137,7 +137,7 @@ section:nth-child(5) .button.flat.suggested-action {
 	position: relative;
 	z-index: 1;
 }
-.doughnut-label {
+.doughnut .doughnut-label {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -146,9 +146,18 @@ section:nth-child(5) .button.flat.suggested-action {
 	font-size: 12px;
 	text-align: center;
 }
-.doughnut-label .doughnut-count {
+.doughnut .doughnut-count {
 	color: #93a1a1;
 	font-size: 28px;
+}
+.doughnut.fix-committed .doughnut-count {
+	color: #586e75;
+}
+.doughnut.in-progress .doughnut-count {
+	color: #2aa198;
+}
+.doughnut.created .doughnut-count {
+	color: #dc322f;
 }
 
 .row.hero .actions .button.flat {
