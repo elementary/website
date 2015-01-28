@@ -59,7 +59,7 @@ $(function () {
             barValueSpacing: 2,
             customTooltips: function (tooltip) {
                 if (!tooltip) {
-                    updateDoughnuts();
+                    //updateDoughnuts();
                     return;
                 }
 
