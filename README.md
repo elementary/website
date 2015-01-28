@@ -1,7 +1,7 @@
 The New elementaryos.org
 ================
 
-We're focusing on getting the minimum viable product for our website up and running for the release of Freya. To start, we're just getting a single-page download site ready for Freya. From there we will expand to a small number of pages as needed.
+We're focusing on getting the minimum viable product for our website up and running for the release of Freya. ~~To start, we're just getting a single-page download site ready for Freya. From there we will expand to a small number of pages as needed.~~ We'll want to make sure we migrate over any important information like docs before we can take the old site offline.
 
 
 Project Organization
