@@ -49,7 +49,7 @@ $(function () {
         var options = {
             animation: true,
             animationSteps: 20,
-            animationEasing: 'easeInOut',
+            animationEasing: 'easeOutQuint',
             //responsive: true
         };
 
