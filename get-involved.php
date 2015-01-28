@@ -3,9 +3,7 @@
     $page['title'] = 'Get Involved';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
-    $page['scripts'] .= '<script src="scripts/Chart.Core.js"></script>';
-    $page['scripts'] .= '<script src="scripts/Chart.StackedBar.js"></script>';
-    $page['scripts'] .= '<script src="scripts/Chart.Doughnut.js"></script>';
+    $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
     include '_templates/header.php';
 ?>
             <section class="row hero">
