@@ -47,28 +47,25 @@ $(function () {
         var lastPoint = point;
 
         var options = {
-            animation: false,
+            animation: true,
+            animationSteps: 20,
             animationEasing: 'easeInOut',
             //responsive: true
         };
 
-        var hideTimeout = null;
+        var $chart = $('#roadmap-chart');
 
-        var ctx = document.getElementById('roadmap-chart').getContext('2d');
+        $chart.mouseout(function () {
+            updateDoughnuts();
+        });
+
+        var ctx = $chart[0].getContext('2d');
         var barChart = new Chart(ctx).StackedBar(chart, $.extend({
             showScale: false,
             barShowStroke: false,
             barValueSpacing: 2,
             customTooltips: function (tooltip) {
-                if (hideTimeout !== null) {
-                    clearTimeout(hideTimeout);
-                    hideTimeout = null;
-                }
-
                 if (!tooltip) {
-                    hideTimeout = setTimeout(function () {
-                        updateDoughnuts();
-                    }, 500);
                     return;
                 }
 
