@@ -136,16 +136,10 @@ section:nth-child(5) .button.flat.suggested-action {
 	margin-left: 30px;
 }
 .charts .doughnuts-ctn .doughnut {
-	margin: 15px;
 	position: relative;
-}
-@media (max-width: 985px) {
-	.charts .doughnuts-ctn {
-		margin-left: 0;
-	}
-	.doughnut {
-		display: inline-block;
-	}
+	width: 90px;
+	height: 90px;
+	margin: 15px;
 }
 .charts .doughnuts-ctn .doughnut canvas {
 	position: relative;
@@ -163,6 +157,20 @@ section:nth-child(5) .button.flat.suggested-action {
 .doughnut .doughnut-count {
 	color: #93a1a1;
 	font-size: 28px;
+}
+@media (max-width: 985px) {
+	.charts .doughnuts-ctn {
+		margin-left: 0;
+	}
+	.charts .doughnuts-ctn .doughnut {
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		margin: 4px;
+	}
+	.charts .doughnuts-ctn .doughnut .doughnut-label {
+		padding: 4px 0;
+	}
 }
 .doughnut.fix-committed .doughnut-count {
 	color: #95A5AC;
