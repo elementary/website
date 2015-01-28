@@ -3,14 +3,17 @@
     $page['title'] = 'Get Involved';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
+    $page['scripts'] .= '<script src="scripts/Chart.Core.js"></script>';
+    $page['scripts'] .= '<script src="scripts/Chart.StackedBar.js"></script>';
     include '_templates/header.php';
 ?>
             <section class="row hero">
                 <!-- Not ready yet -->
-                <!-- <h1>Get Involved</h1> -->
-                <!-- <h2>Check out our progress for Freya Beta 2</h2> -->
+                <h1>Get Involved</h1>
+                <h2>Check out our progress for Freya Beta 2</h2>
 
                 <!-- <img src="images/get-involved/stats.svg" alt="Chart"> -->
+                <canvas id="roadmap-chart" width="750" height="400"></canvas>
 
                 <h3>Contribute by doing these things</h3>
 
@@ -124,6 +127,8 @@
                     </div>
                 </div>
             </section>
+
+            <script src="scripts/get-involved.js"></script>
 <?php
     include '_templates/footer.html';
 ?>
