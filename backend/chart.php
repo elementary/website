@@ -4,29 +4,38 @@
  * @see https://launchpad.net/+apidoc/beta.html#milestone-searchTasks
  */
 
+// CONFIG STARTS HERE
+
+// Launchpad API URL
+$apiBaseUrl = 'https://api.launchpad.net/beta/';
+
+// Project name
+$targetName = 'elementary';
+// Milestone name
+$milestoneName = 'freya-beta2';
+
+// Interval for each bar in chart
+$timeInterval = 7 * 24 * 60 * 60; // 1 week
+// Build a chart from a date
+// Set to null to get data for the whole milestone
+$timeFrom = time() - 12 * 30 * 24 * 60 * 60; // 1 year
+// Build a chart to a date
+$timeTo = time(); // Now
+
+// CONFIG ENDS HERE
+
 date_default_timezone_set('UTC');
 
 header('Content-Type: text/plain');
 
-function log_info($msg) {
+function log_info($msg) { // Basic logger
 	echo $msg."\n";
 }
 
-$apiBaseUrl = 'https://api.launchpad.net/beta/';
-
-$timeInterval = 30 * 24 * 60; // Interval between time spans in stats
-$timeFrom = null; // Set to null to get data for the whole milestone
-$timeTo = time();
-
-$targetName = 'elementary';
-$milestoneName = 'freya-beta2';
-
 $apiParams = 'ws.op=searchTasks';
-if (!empty($timeFrom)) {
-	$apiParams .= '&created_since='.date(DATE_ATOM, $timeFrom);
-}
 $apiEndpoint = $apiBaseUrl.'/'.$targetName.'/+milestone/'.$milestoneName.'?'.$apiParams;
 
+$autoDetectTimeFrom = ($timeFrom === null);
 $tasks = array();
 
 // Make HTTP requests
@@ -39,7 +48,7 @@ while (!empty($nextCollectionPoint)) {
 	foreach ($data['entries'] as $task) {
 		$dateCreated = strtotime($task['date_created']);
 
-		if ($timeFrom === null || $dateCreated < $timeFrom) {
+		if ($autoDetectTimeFrom && ($timeFrom === null || $dateCreated < $timeFrom)) {
 			$timeFrom = $dateCreated;
 		}
 
@@ -81,3 +90,5 @@ foreach ($tasks as $task) {
 ksort($chart);
 
 file_put_contents('./chart.json', json_encode($chart, JSON_PRETTY_PRINT));
+
+log_info('Done.');

@@ -48,7 +48,8 @@ $(function () {
             //responsive: true,
             showScale: false,
             showTooltips: false,
-            barShowStroke: false
+            barShowStroke: false,
+            barValueSpacing: 2
         };
 
         var ctx = document.getElementById('roadmap-chart').getContext('2d');
