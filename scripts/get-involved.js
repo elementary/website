@@ -63,7 +63,7 @@ $(function () {
         var barChart = new Chart(ctx).StackedBar(chart, $.extend({
             showScale: false,
             barShowStroke: false,
-            barValueSpacing: 0,
+            barValueSpacing: ($(window).width() > 900) ? 2 : 1,
             customTooltips: function (tooltip) {
                 if (!tooltip) {
                     return;
