@@ -131,6 +131,20 @@ section:nth-child(5) .button.flat.suggested-action {
 }
 .charts .doughnuts-ctn .doughnut {
 	margin: 15px;
+	position: relative;
+}
+.doughnut-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 11px 0;
+	font-size: 12px;
+	text-align: center;
+}
+.doughnut-label .doughnut-count {
+	color: #93a1a1;
+	font-size: 28px;
 }
 
 .row.hero .actions .button.flat {

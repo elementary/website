@@ -3,22 +3,28 @@ $(function () {
         url: 'backend/chart.json',
         dataType: 'json'
     }).done(function (data) {
+        var colors = {
+            created: "#dc322f",
+            in_progress: "#2aa198",
+            fix_committed: "#586e75"
+        };
+
         var chart = {
             labels: [],
             datasets: [
                 {
                     label: "Fixed",
-                    fillColor: "#586e75",
+                    fillColor: colors.fix_committed,
                     data: []
                 },
                 {
                     label: "In Progress",
-                    fillColor: "#2aa198",
+                    fillColor: colors.in_progress,
                     data: []
                 },
                 {
                     label: "Unfixed",
-                    fillColor: "#dc322f",
+                    fillColor: colors.created,
                     data: []
                 }
             ]
@@ -53,14 +59,11 @@ $(function () {
         lastPoint.fix_committed = lastPoint.fix_committed || 0;
         var total = lastPoint.created + lastPoint.in_progress + lastPoint.fix_committed;
 
-        var colors = {
-            created: "#dc322f",
-            in_progress: "#2aa198",
-            fix_committed: "#586e75"
-        };
+        var $container = $('.doughnuts-ctn');
+
         for (var doughnutName in lastPoint) {
-            var doughnutId = doughnutName.replace('_', '-')+'-chart';
-            var ctx = document.getElementById(doughnutId).getContext('2d');
+            var doughnutId = doughnutName.replace('_', '-');
+            var ctx = document.getElementById(doughnutId+'-chart').getContext('2d');
             var fixedChart = new Chart(ctx).Doughnut([
                 {
                     value: lastPoint[doughnutName],
@@ -74,7 +77,8 @@ $(function () {
                 segmentShowStroke: false,
                 percentageInnerCutout: 90
             }, options));
+
+            $container.find('.'+doughnutId+' .doughnut-count').text(lastPoint[doughnutName]);
         }
-        
     });
 });

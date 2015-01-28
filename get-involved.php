@@ -16,14 +16,26 @@
                 <div class="charts">
                     <canvas id="roadmap-chart" width="750" height="400"></canvas>
                     <div class="doughnuts-ctn">
-                        <div class="doughnut">
+                        <div class="doughnut fix-committed">
                             <canvas id="fix-committed-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">133</span><br>
+                                Fixed
+                            </div>
                         </div>
-                        <div class="doughnut">
+                        <div class="doughnut in-progress">
                             <canvas id="in-progress-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">40</span><br>
+                                In Progress
+                            </div>
                         </div>
-                        <div class="doughnut">
+                        <div class="doughnut created">
                             <canvas id="created-chart" width="90" height="90"></canvas>
+                            <div class="doughnut-label">
+                                <span class="doughnut-count">87</span><br>
+                                Unfixed
+                            </div>
                         </div>
                     </div>
                 </div>
