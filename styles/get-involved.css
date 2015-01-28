@@ -123,15 +123,29 @@ section:nth-child(5) .button.flat.suggested-action {
 	font-size: 28px;
 }
 
-.charts > canvas,
+.charts .barchart-ctn {
+	width: 780px;
+	max-width: 100%;
+}
+.charts .barchart-ctn,
 .charts .doughnuts-ctn {
 	display: inline-block;
 	vertical-align: middle;
+}
+.charts .doughnuts-ctn {
 	margin-left: 30px;
 }
 .charts .doughnuts-ctn .doughnut {
 	margin: 15px;
 	position: relative;
+}
+@media (max-width: 985px) {
+	.charts .doughnuts-ctn {
+		margin-left: 0;
+	}
+	.doughnut {
+		display: inline-block;
+	}
 }
 .charts .doughnuts-ctn .doughnut canvas {
 	position: relative;

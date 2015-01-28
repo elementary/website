@@ -50,10 +50,10 @@ $(function () {
             animation: true,
             animationSteps: 20,
             animationEasing: 'easeOutQuint',
-            //responsive: true
+            responsive: true
         };
 
-        var $chart = $('#roadmap-chart');
+        var $chart = $('.charts .barchart-ctn canvas');
 
         $chart.mouseout(function () {
             updateDoughnuts();

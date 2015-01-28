@@ -11,7 +11,9 @@
                 <h2>Check out our progress for Freya Beta 2</h2>
 
                 <div class="charts">
-                    <canvas id="roadmap-chart" width="750" height="400"></canvas>
+                    <div class="barchart-ctn">
+                        <canvas width="750" height="400"></canvas>
+                    </div>
                     <div class="doughnuts-ctn">
                         <div class="doughnut fix-committed">
                             <canvas id="fix-committed-chart" width="90" height="90"></canvas>
