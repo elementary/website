@@ -48,6 +48,7 @@ $(function () {
 
         var options = {
             animation: false,
+            animationEasing: 'easeInOut',
             //responsive: true
         };
 
@@ -55,27 +56,59 @@ $(function () {
         var barChart = new Chart(ctx).StackedBar(chart, $.extend({
             showScale: false,
             barShowStroke: false,
-            barValueSpacing: 2
+            barValueSpacing: 2,
+            customTooltips: function (tooltip) {
+                if (!tooltip) {
+                    updateDoughnuts();
+                    return;
+                }
+
+                var point = {
+                    fix_committed: parseInt(tooltip.labels[0], 10),
+                    in_progress: parseInt(tooltip.labels[1], 10),
+                    created: parseInt(tooltip.labels[2], 10)
+                };
+
+                updateDoughnuts(point);
+            }
         }, options));
+
+        var $container = $('.doughnuts-ctn');
+        function updateDoughnuts(point) {
+            if (!point) {
+                point = lastPoint;
+            }
+
+            var total = point.created + point.in_progress + point.fix_committed;
+
+            for (var doughnutName in doughnutCharts) {
+                var doughnutId = doughnutName.replace('_', '-');
+
+                $container.find('.'+doughnutId+' .doughnut-count').text(point[doughnutName]);
+
+                doughnutCharts[doughnutName].segments[0].value = point[doughnutName];
+                doughnutCharts[doughnutName].segments[1].value = total - point[doughnutName];
+                doughnutCharts[doughnutName].update();
+            }
+        }
 
         lastPoint.created = lastPoint.created || 0;
         lastPoint.in_progress = lastPoint.in_progress || 0;
         lastPoint.fix_committed = lastPoint.fix_committed || 0;
-        var total = lastPoint.created + lastPoint.in_progress + lastPoint.fix_committed;
 
-        var $container = $('.doughnuts-ctn');
-
+        var doughnutCharts = {};
         for (var doughnutName in lastPoint) {
             var doughnutId = doughnutName.replace('_', '-');
+
             var ctx = document.getElementById(doughnutId+'-chart').getContext('2d');
-            var fixedChart = new Chart(ctx).Doughnut([
+            doughnutCharts[doughnutName] = new Chart(ctx).Doughnut([
                 {
-                    value: lastPoint[doughnutName],
+                    value: 1,
                     color: colors[doughnutName],
                     label: labels[doughnutName]
                 },
                 {
-                    value: total - lastPoint[doughnutName],
+                    value: 1,
                     color: "rgba(0,0,0,0.12)",
                     label: "Other"
                 }
@@ -84,8 +117,8 @@ $(function () {
                 percentageInnerCutout: 90,
                 showTooltips: false
             }, options));
-
-            $container.find('.'+doughnutId+' .doughnut-count').text(lastPoint[doughnutName]);
         }
+
+        updateDoughnuts();
     });
 });
