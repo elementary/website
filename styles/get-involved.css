@@ -36,6 +36,10 @@ section .heading p.small-label {
 	text-align: right;
 	font-size: 18px;
 }
+section .heading p.small-label a,
+section .heading p.small-label a:hover {
+	color: inherit;
+}
 section h2 {
 	font-weight: lighter;
 	font-size: 28px;
