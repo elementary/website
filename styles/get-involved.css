@@ -164,9 +164,13 @@ section:nth-child(5) .button.flat.suggested-action {
 	}
 	.charts .doughnuts-ctn .doughnut {
 		display: inline-block;
+		margin: 4px;
+	}
+}
+@media (max-width: 360px) {
+	.charts .doughnuts-ctn .doughnut {
 		width: 70px;
 		height: 70px;
-		margin: 4px;
 	}
 	.charts .doughnuts-ctn .doughnut .doughnut-label {
 		padding: 4px 0;
