@@ -38,15 +38,15 @@
             </div>
             <div class="row">
                 <div class="column third">
-                    <a href="https://www.wired.com" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" alt="WIRED" /></a>
+                    <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" alt="WIRED" /></a>
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; —@WIRED elementaryos.org" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
                 </div>
                 <div class="column third">
-                    <a href="http://maclife.com" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" alt="Mac|Life" /></a>
+                    <a href="http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" alt="Mac|Life" /></a>
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife elementaryos.org" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
                 </div>
                 <div class="column third">
-                    <a href="http://lifehacker.com" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" alt="Lifehacker" /></a>
+                    <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" alt="Lifehacker" /></a>
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementaryos.org" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
