@@ -9,17 +9,22 @@ function translate_html($input) {
 
     $output = '';
 
-    $inTagContents = false;
+    $inTag = false;
     $tagContents = '';
+    $inTagName = false;
+    $tagName = '';
     for ($i = 0; $i < strlen($input); $i++) {
         $char = $input[$i];
 
-        if (!$inTagContents && $char == '>') {
-            $inTagContents = true;
+        if ($inTag && $char == '>') {
+            $inTag = false;
+            $inTagName = false;
             $tagContents = '';
         }
-        if ($inTagContents && $char == '<') {
-            $inTagContents = false;
+        if (!$inTag && $char == '<') {
+            $inTag = true;
+            $inTagName = true;
+            $tagName = '';
 
             if (isset($translations[$tagContents])) {
                 $tagContents = $translations[$tagContents];
@@ -28,13 +33,19 @@ function translate_html($input) {
 
             $tagContents = '';
         }
+        if ($inTagName && $char == ' ') {
+            $inTagName = false;
+        }
 
-        if (!$inTagContents || $char == '>') {
+        if ($inTagName && $char != '<') {
+            $tagName .= $char;
+        }
+        if ($inTag || $char == '>') {
             $output .= $char;
         } else {
             $tagContents .= $char;
         }
     }
 
-    return $output;
+    return $output.implode(', ', $tags);
 }
