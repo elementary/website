@@ -209,9 +209,24 @@ footer {
     color: #666;
 }
 
+footer p {
+    text-align: center;
+    padding: 0 12px;
+}
+
 footer ul {
     list-style: none;
-    padding: 0;
+    padding: 0 12px;
+}
+
+@media (min-width: 375px) {
+    footer p {
+        float: left;
+    }
+
+    footer ul {
+        float:right;
+    }
 }
 
 footer ul li {
