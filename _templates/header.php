@@ -35,7 +35,7 @@
             <?php include './scripts/smooth-scrolling.js'; ?>
         </script>
 
-        <?php echo $page['scripts']; ?>
+        <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
 
         <?php if ( $trackme ) { ?>
         <script>
