@@ -54,6 +54,7 @@
                 <li><a href="/"><span class="logomark"></span></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
+                <li><a href="/store" target="_blank">Store</a></li>
             </ul>
             <ul class="right">
                 <li><a href="/get-involved">Get Involved</a></li>
