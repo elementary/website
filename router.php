@@ -6,16 +6,23 @@
  * your local PHP development server. NOT intended for production whatsoever.
  */
 
+$target = null;
+
 if ($_SERVER["REQUEST_URI"] == '/') {
-	return false; // serve the homepage as-is.
+    return false; // Serve the homepage as-is
 } elseif (preg_match('/\./', $_SERVER["REQUEST_URI"])) { // has period in filename
-    return false; // serve the requested resource as-is.
+    $target = '.'.$_SERVER["REQUEST_URI"];
+    if (!file_exists($target)) {
+        include '404.php';
+    } else {
+        return false; // Serve the requested resource as-is
+    }
 } else { 
     $target = '.'.$_SERVER["REQUEST_URI"].'.php'; // Rewrite extension-less files as php files
     if (file_exists($target)) {
-    	include $target;
+        include $target;
     } else {
-    	include '404.php';
+        include '404.php';
     }
 }
 
