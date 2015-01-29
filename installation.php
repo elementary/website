@@ -191,7 +191,11 @@
                 <div class="row">
                     <h2>Booting on a Mac</h2>
 
-                    <p>Booting elementary OS on Apple hardware is possible; however, it's not well-documented at the moment. We're working hard to document this process for you. Until then, refer to <a href="http://tech-devnet.blogspot.de/2012/05/running-ubuntu-1204-on-mac.html">one of</a> the <a href="http://lifehacker.com/5934942/how-to-dual-boot-linux-on-your-mac-and-take-back-your-powerhouse-apple-hardware">many third-party guides</a> for installing Ubuntu 12.04 on a Mac; since elementary OS shares its core with Ubuntu, that should at least get you started.</p>
+                    <ul>
+                        <li>Assuming that your computer is still on, start by inserting your installation medium and restarting your computer.</li>
+                        <li>After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot medium. Note that it can be incorrectly identified as "Windows", but this is normal.</li>
+                        <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary OS splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
+                    </ul>
                 </div>
             </div>
 
