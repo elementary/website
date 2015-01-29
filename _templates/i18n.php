@@ -2,7 +2,12 @@
 $translations = array(
     'A fast and open replacement for Windows and OS X' => 'Un remplaçant rapide et ouvert pour Windows et OS X',
     'Download Freya Beta' => 'Télécharger Freya Beta',
-    'Custom' => 'Personnalisé'
+    'Custom' => 'Personnalisé',
+    'Enter any dollar amount.' => 'Entrez une somme.',
+    '886.0 MB (for PC or Mac)' => '886.0 Mio (pour PC ou Mac)',
+    'Choose a Download' => 'Choisissez un Téléchargement',
+    'We recommend 64-bit for most modern computers. For help and more info, see the ' => 'Nous recommendons 64-bits pour les ordinateurs modernes. Pour de l\'aide ou plus d\'informations, voir le ',
+    'installation guide' => 'guide d\'installation'
 );
 
 function translate($string) {
