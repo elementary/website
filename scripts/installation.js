@@ -2,6 +2,7 @@
 var toggles = {
 	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
 	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-osx'],
+	'creating-a-usb-choices': ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
 
@@ -163,6 +164,12 @@ if (currentOs) {
 	selectChoice('burning-choices', 'burning-on-'+currentOs);
 } else { // Default to windows
 	selectChoice('burning-choices', 'burning-on-windows');
+}
+
+if (currentOs == 'windows' || !currentOs) {
+	selectChoice('creating-a-usb-choices', 'creating-a-usb-on-windows');
+} else {
+	selectChoice('creating-a-usb-choices', 'creating-a-usb-on-others');
 }
 
 selectChoice('booting-choices', 'booting-on-a-pc');
