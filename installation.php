@@ -120,17 +120,45 @@
             <div id="creating-a-usb" class="slide">
                 <div class="row">
                     <h2>Creating a USB</h2>
-                    <p>Begin with a spare USB stick or SD card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+                </div>
 
-                    <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
+                <div class="text-center">
+                    <div id="creating-a-usb-choices" class="column linked">
+                        <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
+                        <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X and Ubuntu</a>
+                    </div>
+                </div>
 
-                    <p>After that, open UNetbootin from your application menu. It will open a window like the one below:</p>
+                <div class="row">
+                    <div id="creating-a-usb-on-windows" class="slide">
+                        <h3>Windows</h3>
 
-                    <img src="images/installation/unetbootin.png" alt="UNetbootin">
+                        <p>Begin with a spare USB stick or SD card with at least 1GB or more of free space, and a means for your computer to read them.</p>
 
-                    <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish.</p>
+                        <p>You'll also need a small application called Rufus. You'll have to download it from <a href="https://rufus.akeo.ie/" target="_blank">its website</a> and open the downloaded file to launch it. It will open a window like the one below:</p>
 
-                    <p>If UNetbootin fails to work, Windows users can try a small app called Universal USB Installer <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">available here</a>. To use it, follow the wizard, and at the OS selection page, select unlisted distro, new syslinux. Install the elementary OS ISO found on the download page to your flash drive.</p>
+                        <img src="images/installation/rufus.png" alt="Rufus">
+
+                        <p>You can now insert your USB key and select it in the "Device" list. After that, you'll have to select "ISO Image" in "Create a bootable disk using..." and click <img src="images/installation/rufus_disk_icon.png" alt="the disk icon"> to choose the ISO that you downloaded previously.</p>
+
+                        <img src="images/installation/rufus_select_iso.png" alt="Rufus - select ISO">
+
+                        <p>Click "Start", then just wait for the process to finish.</p>
+                    </div>
+
+                    <div id="creating-a-usb-on-others" class="slide">
+                        <h3>OS X and Ubuntu</h3>
+
+                        <p>Begin with a spare USB stick or SD card with at least 1GB or more of free space, and a means for your computer to read them.</p>
+
+                        <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
+
+                        <p>After that, open UNetbootin from your application menu. It will open a window like the one below:</p>
+
+                        <img src="images/installation/unetbootin.png" alt="UNetbootin">
+
+                        <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Then unplug all USB memory devices apart from the one you want to use, and click "OK". Then just wait for the process to finish.</p>
+                    </div>
                 </div>
             </div>
 
