@@ -73,7 +73,7 @@ nav .logomark {
     background-position: center left 30px;
 }
 
-@media (min-width: 444px) {
+@media (max-width: 1176px) {
     .dev-section {
         border-width: 0 0 1px 0;
     }
@@ -97,4 +97,8 @@ nav .logomark {
 
 #dev-section-4 {
     background-image: url('../images/developer/dev-dist.png');
+}
+
+footer {
+    color: white;
 }
