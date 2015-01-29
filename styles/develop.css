@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url('../images/developer/grid-pattern.png');
+    background-image: url('../images/develop/grid-pattern.png');
     background-color: #226BB3;
     color: white;
 }
@@ -9,14 +9,14 @@ nav .logomark {
     background-image: url("../images/logomark-light.svg");
 }
 
-.developer-sum {
+.develop-sum {
     padding-bottom: 200px;
-    background-image: url('../images/developer/developer-sketch.png');
+    background-image: url('../images/develop/develop-sketch.png');
     background-repeat: no-repeat;
     background-position: bottom center;
 }
 
-.developer-sum h1 {
+.develop-sum h1 {
     font-family: "Raleway";
     color: white;
     font-size: 48px;
@@ -27,7 +27,7 @@ nav .logomark {
     text-align: left;
 }
 
-.developer-sum h2 {
+.develop-sum h2 {
     font-size: 32px;
     color: white;
     font-weight: bold;
@@ -38,7 +38,7 @@ nav .logomark {
     text-align: left;
 }
 
-.developer-sections h3 {
+.develop-sections h3 {
     font-size: 16px;
     color: white;
     font-weight: bold;
@@ -48,22 +48,22 @@ nav .logomark {
     text-align: left;
 }
 
-.developer-sections .dev-section p {
+.develop-sections .dev-section p {
     font-size: 14px;
 }
 
-.developer-sections .dev-section a {
+.develop-sections .dev-section a {
     color: white;
     display: inline-block;
     padding: 20px 20px 20px 130px;
     transition: all .2s;
 }
 
-.developer-sections .dev-section a:hover {
+.develop-sections .dev-section a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.developer-sections .dev-section a:focus {
+.develop-sections .dev-section a:focus {
     text-decoration: none;
 }
 
@@ -85,19 +85,19 @@ nav .logomark {
 }
 
 #dev-section-1 {
-    background-image: url('../images/developer/dev-design.png');
+    background-image: url('../images/develop/dev-design.png');
 }
 
 #dev-section-2 {
-    background-image: url('../images/developer/dev-code.png');
+    background-image: url('../images/develop/dev-code.png');
 }
 
 #dev-section-3 {
-    background-image: url('../images/developer/dev-manage.png');
+    background-image: url('../images/develop/dev-manage.png');
 }
 
 #dev-section-4 {
-    background-image: url('../images/developer/dev-dist.png');
+    background-image: url('../images/develop/dev-dist.png');
 }
 
 footer {

@@ -62,7 +62,7 @@
                 <li><a href="/store" target="_blank">Store</a></li>
             </ul>
             <ul class="right">
-                <li><a href="/developer">Developer</a></li>
+                <li><a href="/develop">Develop</a></li>
                 <li><a href="/get-involved">Get Involved</a></li>
             </ul>
         </nav>

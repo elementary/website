@@ -1,16 +1,16 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Developer';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
+    $page['title'] = 'Develop for elementary OS';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/develop.css">';
     include '_templates/header.php';
 ?>
             <div class="row">
-                <div class="column half developer-sum">
+                <div class="column half develop-sum">
                     <h1>Develop</h1>
                     <h2>Your ideas into code</h2>
                     <p>Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.</p>
                 </div>
-                <div class="column half developer-sections">
+                <div class="column half develop-sections">
                     <div id="dev-section-1" class="dev-section">
                         <a href="http://elementaryos.org/docs/human-interface-guidelines" title="Design" target="_blank">
                             <h3>Design</h3>
