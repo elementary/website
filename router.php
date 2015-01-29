@@ -2,7 +2,7 @@
 
 /* router.php
  *
- * Use `php -S localhost:8000 router.php` to include simple URL rewriting for 
+ * Use `php -S localhost:8000 router.php` to include simple URL rewriting for
  * your local PHP development server. NOT intended for production whatsoever.
  */
 
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_URI"] == '/') {
     } else {
         return false; // Serve the requested resource as-is
     }
-} else { 
+} else {
     $target = '.'.$_SERVER["REQUEST_URI"].'.php'; // Rewrite extension-less files as php files
     if (file_exists($target)) {
         include $target;
@@ -25,5 +25,3 @@ if ($_SERVER["REQUEST_URI"] == '/') {
         include '404.php';
     }
 }
-
-?>
