@@ -8,7 +8,7 @@
     include '_templates/header.php';
 ?>
             <section class="row hero">
-                <h2>Check out our progress for Freya Beta 2</h2>
+                <h1>Check out our progress for Freya Beta 2</h1>
 
                 <div class="charts">
                     <div class="barchart-ctn">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <h3>Contribute by doing these things</h3>
+                <h2>Contribute by doing these things</h2>
 
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
@@ -52,14 +52,14 @@
             <section id="translations" class="light">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementaryos.org/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></h1>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementaryos.org/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
-                        <h2>Translations</h2>
+                    <div class="column half">
+                        <h1>Translations</h1>
                         <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
@@ -67,7 +67,7 @@
                             <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get More Info About Rosetta</a>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column half">
                         <img src="images/get-involved/translations.svg" alt="World map">
                     </div>
                 </div>
@@ -76,13 +76,13 @@
             <section id="web-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementaryos.org/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></h1>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementaryos.org/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
                     </div>
                 </div>
 
                 <div class="web-browser">
-                    <h2>Web Development</h2>
+                    <h1>Web Development</h1>
                     <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
                     <div class="actions">
@@ -95,14 +95,14 @@
             <section id="design" class="light">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementaryos.org/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></h1>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementaryos.org/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
-                        <h2>Design</h2>
+                    <div class="column half">
+                        <h1>Design</h1>
                         <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
 
                         <p>
@@ -121,7 +121,7 @@
                             <a class="button flat" href="http://blog.elementaryos.org/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column half">
                         <img src="images/get-involved/design.svg" alt="Application wire frame">
                     </div>
                 </div>
@@ -130,14 +130,14 @@
             <section id="desktop-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <h1><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementaryos.org/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></h1>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementaryos.org/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
-                        <h2>Desktop Development</h2>
+                    <div class="column half">
+                        <h1>Desktop Development</h1>
                         <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
                         <div class="actions">
@@ -146,7 +146,7 @@
                             <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See Our Open Bug Reports</a>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column half">
                         <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
                     </div>
                 </div>
