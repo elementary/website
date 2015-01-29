@@ -38,7 +38,9 @@ h2 {
 }
 
 h3 {
-    font-size: 11px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
 }
 
 p {
