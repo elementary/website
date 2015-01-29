@@ -11,8 +11,12 @@ if ($_SERVER["REQUEST_URI"] == '/') {
 } elseif (preg_match('/\./', $_SERVER["REQUEST_URI"])) { // has period in filename
     return false; // serve the requested resource as-is.
 } else { 
-    include '.'.$_SERVER["REQUEST_URI"].'.php'; // Rewrite extension-less files as php files
+    $target = '.'.$_SERVER["REQUEST_URI"].'.php'; // Rewrite extension-less files as php files
+    if (file_exists($target)) {
+    	include $target;
+    } else {
+    	include '404.php';
+    }
 }
 
 ?>
-
