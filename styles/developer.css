@@ -1,0 +1,90 @@
+.page-developer {
+    background-image: url('../images/developer/grid-pattern.png');
+    background-color: #226BB3;
+    color: white;
+}
+
+.page-developer nav .logomark {
+    background-image: url("../images/logomark-light.svg");
+}
+
+.developer-sum {
+    padding-bottom: 200px;
+    background-image: url('../images/developer/developer-sketch.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.developer-sum h1 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 48px;
+    margin: 0 0 18px 0;
+    font-weight: 100;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+}
+
+.developer-sum h2 {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    margin: 0 0 28px 0;
+    font-family: 'Open Sans',arial,sans-serif;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 0;
+    text-align: left;
+}
+
+.developer-sections h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.developer-sections .dev-section p {
+    font-size: 14px;
+}
+
+.developer-sections .dev-section a {
+    color: white;
+    display: inline-block;
+    padding: 20px 20px 20px 130px;
+    transition: all .2s;
+}
+
+.developer-sections .dev-section a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dev-section {
+    border: dashed rgba(255, 255, 255, 0.6);
+    border-width: 0 0 1px 1px;
+    background-repeat: no-repeat;
+    background-position: center left 30px;
+}
+
+.dev-section:last-child {
+    border-bottom-width: 0;
+}
+
+#dev-section-1 {
+    background-image: url('../images/developer/dev-design.png');
+}
+
+#dev-section-2 {
+    background-image: url('../images/developer/dev-code.png');
+}
+
+#dev-section-3 {
+    background-image: url('../images/developer/dev-manage.png');
+}
+
+#dev-section-4 {
+    background-image: url('../images/developer/dev-dist.png');
+}
