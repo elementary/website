@@ -3,7 +3,7 @@
     $page['title'] = 'Privacy Policy';
     include '_templates/header.php';
 ?>
-            <div class="row" style="max-width:1000px;">
+            <div class="row">
                 <h1>Privacy Policy</h1>
                 <h2>Do Not Track</h2>
                 <p>This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.</p>
