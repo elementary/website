@@ -26,6 +26,7 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Raleway:100">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
@@ -52,7 +53,7 @@
         <?php } ?>
 
     </head>
-    <body>
+    <body class="page-<?php echo basename($_SERVER['PHP_SELF'], ".php"); ?>">
         <nav>
             <ul class="left">
                 <li><a href="/"><span class="logomark"></span></a></li>
@@ -61,6 +62,7 @@
                 <li><a href="/store" target="_blank">Store</a></li>
             </ul>
             <ul class="right">
+                <li><a href="/developer">Developer</a></li>
                 <li><a href="/get-involved">Get Involved</a></li>
             </ul>
         </nav>
