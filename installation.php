@@ -165,7 +165,7 @@
 
                     <ul>
                         <li>Assuming that your computer is still on, start by inserting your installation medium and restarting your computer.</li>
-                        <li>Press <kbd>&#x2325;</kbd> (the <i>option key</i>) while restarting and select the appropriate boot medium.</li>
+                        <li>After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot medium. Note that it can be incorrectly identified as "Windows", but this is normal.</li>
                         <li>Shortly after selecting the appropriate boot device, you should be presented with the elementary OS splash screen. You may now continue to the Installation Wizard which will guide you through the rest of the process.</li>
                     </ul>
                 </div>
