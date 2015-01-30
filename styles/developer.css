@@ -11,6 +11,11 @@ nav > ul > li > a:focus {
     fill: #333;
 }
 
+footer ul li a:focus i.fa {
+    color: #333;
+    text-shadow: 0 1px 6px #333;
+}
+
 .row {
     text-align: left;
 }
