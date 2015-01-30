@@ -27,20 +27,45 @@ a:focus {
 }
 
 h1 {
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 966px) {
+    h1 {
+        font-size: 48px;;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 28px 0;
+    padding: 0;
+}
+
+h3 {
     font-size: 24px;
     opacity: 0.8;
     font-weight: 600;
 }
 
-h2 {
+h4 {
     font-size: 18px;
     font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-h3 {
+h5 {
     font-size: 16px;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 3px;
+    margin-top: 0;
 }
 
 p {

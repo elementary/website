@@ -20,28 +20,6 @@ nav .logomark {
     background-position: bottom center;
 }
 
-h1 {
-    font-family: "Raleway";
-    font-size: 48px;
-    font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 16px;
-    opacity: 1;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0 0 28px 0;
-    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
-    padding: 0;
-}
-
-h3 {
-    margin-bottom: 2px;
-    margin-top: 0;
-}
-
 .developer-sections .dev-section a {
     color: inherit;
     display: inline-block;

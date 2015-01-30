@@ -5,7 +5,7 @@
 ?>
             <div class="row">
                 <h1>Store</h1>
-                <h2>Our store currently only supports US orders.</h2>
+                <h4>Our store currently only supports US orders.</h4>
             </div>
             <div class="row">
                 <a href='https://mkt.com/elementary-llc' class='sq-embed-menu' data-menu-item-images='large' data-menu-accent-color='04a9dc' data-menu-template='column' data-menu-border='hide' data-menu-item-descriptions='show' >Order Online</a>

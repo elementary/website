@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <h2>Contribute by doing these things</h2>
+                <h4>Contribute by doing these things</h4>
 
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
@@ -59,7 +59,7 @@
 
                 <div class="row">
                     <div class="column half">
-                        <h1>Translations</h1>
+                        <h2>Translations</h2>
                         <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
 
                         <div class="actions">
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="web-browser">
-                    <h1>Web Development</h1>
+                    <h2>Web Development</h2>
                     <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
                     <div class="actions">
@@ -102,7 +102,7 @@
 
                 <div class="row">
                     <div class="column half">
-                        <h1>Design</h1>
+                        <h2>Design</h2>
                         <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
 
                         <p>
@@ -137,7 +137,7 @@
 
                 <div class="row">
                     <div class="column half">
-                        <h1>Desktop Development</h1>
+                        <h2>Desktop Development</h2>
                         <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
                         <div class="actions">
