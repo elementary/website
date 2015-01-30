@@ -5,10 +5,6 @@ body {
     fill: #c8d0d0;
 }
 
-nav .logomark {
-    background-image: url("../images/logomark-light.svg");
-}
-
 /* SECTIONS */
 section,
 section.hero {

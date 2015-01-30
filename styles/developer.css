@@ -6,10 +6,6 @@ body {
     fill: white;
 }
 
-nav .logomark {
-    background-image: url("../images/logomark-light.svg");
-}
-
 .row {
     text-align: left;
 }
