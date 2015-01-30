@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Page Not Found | elementary OS';
+    $page['title'] = 'Page Not Found &sdot; elementary';
     include '_templates/header.php';
 ?>
 

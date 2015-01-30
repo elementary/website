@@ -1,4 +1,5 @@
 <?php
+    $page['title'] = "Download elementary OS";
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     include '_templates/sitewide.php';
     include '_templates/header.php';

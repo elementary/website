@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Installation';
+    $page['title'] = 'Installing elementary OS';
     include '_templates/header.php';
 ?>
             <div class="row">
