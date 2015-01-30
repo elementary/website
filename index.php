@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div id="download-modal" class="modal">
-                <h1>Choose a Download</h1>
+                <h3>Choose a Download</h3>
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
