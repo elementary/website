@@ -9,6 +9,10 @@ nav .logomark {
     background-image: url("../images/logomark-light.svg");
 }
 
+.row {
+    text-align: left;
+}
+
 .developer-sum {
     padding-bottom: 200px;
     background-image: url('../images/developer/developer-sketch.png');
@@ -16,55 +20,37 @@ nav .logomark {
     background-position: bottom center;
 }
 
-.developer-sum h1 {
+h1 {
     font-family: "Raleway";
-    color: white;
     font-size: 48px;
-    margin: 0 0 18px 0;
     font-weight: 100;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
     opacity: 1;
-    text-align: left;
 }
 
-.developer-sum h2 {
+h2 {
     font-size: 32px;
-    color: white;
-    font-weight: bold;
+    font-weight: 600;
     margin: 0 0 28px 0;
-    font-family: 'Open Sans',arial,sans-serif;
-    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     padding: 0;
-    text-align: left;
 }
 
-.developer-sections h3 {
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
+h3 {
     margin-bottom: 2px;
     margin-top: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: left;
-}
-
-.developer-sections .dev-section p {
-    font-size: 14px;
 }
 
 .developer-sections .dev-section a {
-    color: white;
+    color: inherit;
     display: inline-block;
-    padding: 20px 20px 20px 130px;
-    transition: all .2s;
+    padding: 16px 16px 16px 128px;
+    transition: all 200ms;
 }
 
 .developer-sections .dev-section a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.developer-sections .dev-section a:focus {
-    text-decoration: none;
 }
 
 .dev-section {
@@ -76,7 +62,7 @@ nav .logomark {
 
 @media (max-width: 1176px) {
     .dev-section {
-        border-width: 0 0 1px 0;
+        border-left-width: 0;
     }
 }
 
@@ -98,8 +84,4 @@ nav .logomark {
 
 #dev-section-4 {
     background-image: url('../images/developer/dev-dist.png');
-}
-
-footer {
-    color: white;
 }
