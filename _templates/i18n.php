@@ -114,7 +114,10 @@ function translate_html($input, $translate = 'translate') {
             }
             $text = substr($input, $i + 1, $next - $i - 1);
             if (!in_array($tagName, $tagsBlacklist)) {
-                $text = $translate($text);
+                $text = trim($text);
+                if (!empty($text)) {
+                    $text = $translate($text);
+                }
             }
             $output .= $text;
         }
