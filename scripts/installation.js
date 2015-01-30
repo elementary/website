@@ -1,7 +1,5 @@
 // Install guide toggles
 var toggles = {
-	'installing-choices': ['burning-a-cd', 'creating-a-usb'],
-	'burning-choices': ['burning-on-linux', 'burning-on-windows', 'burning-on-osx'],
 	'creating-a-usb-choices': ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
 	'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
 };
@@ -155,17 +153,8 @@ for (var toggleId in toggles) {
 	setupToggle(toggleId);
 }
 
-// Select default choices
-selectChoice('installing-choices', 'burning-a-cd');
-
 // Show instructions for the current platform
 var currentOs = detectOS();
-if (currentOs) {
-	selectChoice('burning-choices', 'burning-on-'+currentOs);
-} else { // Default to windows
-	selectChoice('burning-choices', 'burning-on-windows');
-}
-
 if (currentOs == 'windows' || !currentOs) {
 	selectChoice('creating-a-usb-choices', 'creating-a-usb-on-windows');
 } else {
