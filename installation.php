@@ -7,7 +7,7 @@
                 <h1>Installation</h1>
                 <p>elementary OS is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary OS on your computer.</p>
 
-                <h2>System Requirements</h2>
+                <h3>System Requirements</h3>
 
                 <div class="column half">
                     <p>Minimum System Requirements:</p>
@@ -27,10 +27,10 @@
                     </ul>
                 </div>
 
-                <h2>Downloading elementary OS</h2>
+                <h3>Downloading elementary OS</h3>
                 <p>If you haven't already, you will need to <a href="index.php" target="_blank">download the elementary OS disk image from our home page</a>. This file is an ISO image — a snapshot of the contents of a bootable medium — which you will need to burn to a CD, DVD, or USB stick.</p>
 
-                <h2>32-bit versus 64-bit</h2>
+                <h3>32-bit versus 64-bit</h3>
                 <p>elementary OS is currently built for two processor architectures, 32-bit and 64-bit. If this sounds a bit technical for you, never fear:</p>
                 <ul>
                     <li>If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.</li>
@@ -42,12 +42,12 @@
                         <i class="warning fa fa-warning"></i>
                     </div>
                     <div class="column alert">
-                        <h1>Back Up Your Data</h1>
+                        <h3>Back Up Your Data</h3>
                         <p>Make sure to back up all of your data to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.</p>
                     </div>
                 </div>
 
-                <h1 id="creating-an-installation-medium">Creating an Installation Medium</h1>
+                <h3 id="creating-an-installation-medium">Creating an Installation Medium</h3>
                 <p>To install elementary OS, you'll need some kind of installation medium. Either a blank CD or USB stick will work. Each option has its benefits and its drawbacks:</p>
 
                 <ul>
@@ -163,7 +163,7 @@
             </div>
 
             <div class="row">
-                <h1 id="booting-from-the-installation-medium">Booting from the Installation Medium</h1>
+                <h3 id="booting-from-the-installation-medium">Booting from the Installation Medium</h3>
                 <p>In order to start the installation process, you must boot your computer from the installation medium. This process can be different depending on the type of hardware you are planning to install elementary OS on. This guide should cover the most common use cases.</p>
             </div>
 
