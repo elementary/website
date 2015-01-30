@@ -6,6 +6,11 @@ body {
     fill: white;
 }
 
+nav > ul > li > a:focus {
+    color: #333;
+    fill: #333;
+}
+
 .row {
     text-align: left;
 }
