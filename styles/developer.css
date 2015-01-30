@@ -3,6 +3,7 @@ body {
     background-image: url('../images/developer/grid-pattern.png');
     background-color: #226BB3;
     color: white;
+    fill: white;
 }
 
 nav .logomark {
