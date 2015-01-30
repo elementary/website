@@ -1,6 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Develop Apps for elementary OS';
+    $page['theme-color'] = '#226BB3';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include '_templates/header.php';
 ?>
