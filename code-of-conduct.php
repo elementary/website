@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Code of Conduct';
+    $page['title'] = 'elementary Code of Conduct';
     include '_templates/header.php';
 ?>
             <div class="row">

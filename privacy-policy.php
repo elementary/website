@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Privacy Policy';
+    $page['title'] = 'elementary Privacy Policy';
     include '_templates/header.php';
 ?>
             <div class="row">
