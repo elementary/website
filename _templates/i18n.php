@@ -37,89 +37,89 @@ function translate_html($input, $translate = 'translate') {
 
     // Attributes that can be translated
     $attrsWhitelist = array(
-        array('input', 'placeholder'),
-        array('a', 'title'),
-        array('img', 'alt')
+        'input' => array('placeholder'),
+        'a' => array('title'),
+        'img' => array('alt')
     );
 
-    $inTag = false; // Are we in a <tag [here]>?
-    $tagContents = ''; // The tag contents: <tag>contents[here]</tag>
-    $inTagName = false; // Are we in a <ta[here]g> ?
-    $tagName = ''; // The current tag name
-    $inAttrName = false; // Are we in a <tag attr[here]="blah">?
-    $attrName = ''; // The current attribute name
-    $inAttrValue = false; // Are we in a <tag attr="blah[here]">?
-    $attrValue = ''; // The current attribute value
-
     // Begin parsing input HTML
-    for ($i = 0; $i < strlen($input); $i++) {
+    $i = 0;
+    while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
+        $next = $i + 1;
 
-        if (!$inTag && $char == '<') { // Begins a <tag>
-            // Ouput the last tag contents, translate it if possible
-            $tagContents = trim($tagContents);
-            if (!empty($tagContents) && !in_array($tagName, $tagsBlacklist)) {
-                $output .= $translate($tagContents);
-            }
+        if ($char == '<') {
+            $next = strpos($input, '>', $i);
+            $tag = substr($input, $i + 1, $next - $i - 1);
 
-            $inTag = true;
-            $inTagName = true;
-            $tagName = '';
-            $tagContents = '';
-        }
-        if ($inTag && $char == '>') { // Ends a <tag>
-            $inTag = false;
-            $inTagName = false;
-            $inAttrName = false;
-            $attrName = '';
-            $tagContents = '';
-        }
-        if ($inTag && !$inAttrValue && $char == ' ') { // Begins an attribute name
-            $inTagName = false;
-            $inAttrName = true;
-            $attrName = '';
-        }
-        if ($inTag && $inAttrName && $char == '=') { // Begins an attribute value
-            $inAttrName = false;
-            $inAttrValue = true;
-            $attrValue = '';
-        }
-        // Ends an attribute value
-        if ($inTag && $inAttrValue && $char == '"' && $input[$i-1] != '=') {
-            $inAttrValue = false;
+            // Parse <tag>
+            $attrsStart = strpos($tag, ' ');
+            if ($attrsStart !== false) {
+                $tagName = substr($tag, 0, $attrsStart);
 
-            // Translatable attributes
-            $attrTranslated = false;
-            foreach ($attrsWhitelist as $attrData) {
-                if ($tagName == $attrData[0] && $attrName == $attrData[1]) {
-                    $output .= $translate($attrValue);
-                    $attrTranslated = true;
+                if (isset($attrsWhitelist[$tagName])) {
+                    $allowedTags = $attrsWhitelist[$tagName];
+
+                    $attrsString = substr($tag, $attrsStart + 1);
+                    $tag = substr($tag, 0, $attrsStart + 1);
+
+                    $attrs = $attrsString;
+
+                    // Parse attributes
+                    $j = 0;
+                    while ($j < strlen($attrs)) {
+                        $char = $attrs[$j];
+
+                        if ($j == 0 || $char == ' ') {
+                            if ($char == ' ') {
+                                $j++;
+                            }
+
+                            $nameEnd = strpos($attrs, '=', $j);
+                            if ($nameEnd === false) {
+                                break;
+                            }
+                            $valueEnd = strpos($attrs, '"', $nameEnd + 2);
+                            if ($valueEnd === false) {
+                                break;
+                            }
+
+                            $name = substr($attrs, $j, $nameEnd - $j);
+
+                            if (in_array($name, $allowedTags)) {
+                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+
+                                $tag .= ' '.$name.'="'.$translate($value).'"';
+                            } else {
+                                $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
+                            }
+                            $j = $valueEnd + 1;
+                        } else {
+                            break;
+                        }
+                    }
+                    if ($j < strlen($attrs)) {
+                        $tag .= substr($attrs, $j);
+                    }
                 }
+            } else {
+                $tagName = $tag;
             }
-            if (!$attrTranslated) {
-                $output .= $attrValue;
+
+            $output .= '<'.$tag.'>';
+        } else {
+            $next = strpos($input, '<', $i);
+            if ($next === false) {
+                $next = strlen($input);
             }
+            $text = substr($input, $i + 1, $next - $i - 1);
+            if (!in_array($tagName, $tagsBlacklist)) {
+                $text = $translate($text);
+            }
+            $output .= $text;
         }
 
-        // Append char
-
-        // In a tag name or in an attribute name
-        if ($inTagName && $char != '<') {
-            $tagName .= $char;
-        }
-        if ($inAttrName && $char != ' ') {
-            $attrName .= $char;
-        }
-
-        if ($inAttrValue && $char != '=' && $char != '"') {
-            // In an attribute value, buffer it
-            $attrValue .= $char;
-        } elseif (!$inTag && $char != '>') {
-            // In a tag contents, buffer it
-            $tagContents .= $char;
-        } else { // Otherwise, just append it to the output
-            $output .= $char;
-        }
+        $i = $next;
     }
 
     return $output;
