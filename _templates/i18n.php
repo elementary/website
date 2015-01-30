@@ -20,10 +20,12 @@ function translate($string) {
     }
 }
 
-function translate_html($input) {
+function translate_html($input, $translate = 'translate') {
     $output = '';
 
-    $translatableAttrs = array(
+    $tagsBlacklist = array('script', 'kbd');
+
+    $attrsWhitelist = array(
         array('input', 'placeholder'),
         array('a', 'title'),
         array('img', 'alt')
@@ -41,12 +43,14 @@ function translate_html($input) {
         $char = $input[$i];
 
         if (!$inTag && $char == '<') {
+            $tagContents = trim($tagContents);
+            if (!empty($tagContents) && !in_array($tagName, $tagsBlacklist)) {
+                $output .= $translate($tagContents);
+            }
+
             $inTag = true;
             $inTagName = true;
             $tagName = '';
-
-            $output .= translate($tagContents);
-
             $tagContents = '';
         }
         if ($inTag && $char == '>') {
@@ -71,9 +75,9 @@ function translate_html($input) {
 
             // Translatable attributes
             $attrTranslated = false;
-            foreach ($translatableAttrs as $attrData) {
+            foreach ($attrsWhitelist as $attrData) {
                 if ($tagName == $attrData[0] && $attrName == $attrData[1]) {
-                    $output .= translate($attrValue);
+                    $output .= $translate($attrValue);
                     $attrTranslated = true;
                 }
             }
@@ -98,4 +102,13 @@ function translate_html($input) {
     }
 
     return $output;
+}
+
+function begin_html_i18n() {
+    ob_start(function ($input) {
+        return translate_html($input);
+    });
+}
+function end_html_i18n() {
+    ob_end_flush();
 }

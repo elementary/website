@@ -64,5 +64,5 @@
         <div id="content-container">
 <?php
 include './_templates/i18n.php';
-ob_start('translate_html');
+begin_html_i18n();
 ?>
