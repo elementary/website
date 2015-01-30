@@ -1,6 +1,6 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'elementary Store';
+    $page['title'] = 'Store &sdot; elementary';
     include '_templates/header.php';
 ?>
             <div class="row">
