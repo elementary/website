@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     background-color: #fff;
     color: #333;
+    fill: #333;
     margin: 0;
     font-weight: 400;
 }
@@ -18,6 +19,7 @@ body {
 
 a {
     color: #08C;
+    fill: #08C;
     text-decoration: none;
 }
 
@@ -218,12 +220,14 @@ nav > ul > li > a:visited {
     margin: 0;
     padding: 0;
     color: inherit;
+    fill: inherit;
     opacity: 0.8;
 }
 
 nav > ul > li > a:focus {
     text-decoration: none;
     color: #08c;
+    fill: #08c;
 }
 
 nav > ul > li > a:hover,
@@ -235,8 +239,16 @@ nav .logomark {
     display: inline-block;
     width: 32px;
     height: 32px;
-    background-image: url("../images/logomark.svg");
     vertical-align: middle;
+    line-height: 32px;
+}
+
+nav .logomark .logomark-svg {
+    fill: inherit;
+}
+
+nav .logomark:focus .logomark-svg {
+    fill: inherit;
 }
 
 /*********

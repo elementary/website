@@ -56,7 +56,7 @@
     <body class="page-<?php echo basename($_SERVER['PHP_SELF'], ".php"); ?>">
         <nav>
             <ul class="left">
-                <li><a href="/"><span class="logomark"></span></a></li>
+                <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
                 <li><a href="/store">Store</a></li>
