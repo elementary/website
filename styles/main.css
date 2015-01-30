@@ -253,11 +253,12 @@ footer ul li {
     display: inline-block;
 }
 
-footer ul li+li {
+footer ul li+li,
+footer p a {
     margin-left: 12px;
 }
 
-footer ul li a {
+footer a {
     color: inherit;
 }
 
