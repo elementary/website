@@ -7,13 +7,13 @@ body {
 }
 
 nav > ul > li > a:focus {
-    color: #333;
-    fill: #333;
+    color: #1F1F1F;
+    fill: #1F1F1F;
 }
 
 footer ul li a:focus i.fa {
-    color: #333;
-    text-shadow: 0 1px 6px #333;
+    color: #1F1F1F;
+    text-shadow: 0 1px 6px #FFF;
 }
 
 .row {
