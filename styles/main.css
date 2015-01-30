@@ -99,11 +99,37 @@ img.h1 {
     display: block;
 }
 
-img.hero {
+.hero {
     width: 55%;
     min-width: 288px;
     display: block;
     margin: 0 auto;
+    position: relative;
+}
+.hero .notebook {
+    z-index: 2;
+    position: relative;
+}
+.hero .screen {
+    z-index: 1;
+    position: absolute;
+
+    top: 9.5%;
+    left: 13.5%;
+    right: 13.4%;
+    bottom: 16.1%;
+
+    background: #000;
+}
+.hero .screen img,
+.hero .screen video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .inline-tweet {
