@@ -11,7 +11,7 @@
 
             <div class="row">
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
-                <h2>A fast and open replacement for Windows and OS X</h2>
+                <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">

@@ -13,25 +13,25 @@
                 <div class="column half developer-sections">
                     <div id="dev-section-1" class="dev-section">
                         <a href="http://elementaryos.org/docs/human-interface-guidelines" title="Design" target="_blank">
-                            <h3>Design</h3>
+                            <h5>Design</h5>
                             <p>Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.</p>
                         </a>
                     </div>
                     <div id="dev-section-2" class="dev-section">
                         <a href="http://elementaryos.org/docs/code" title="Code" target="_blank">
-                            <h3>Code</h3>
+                            <h5>Code</h5>
                             <p>Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.</p>
                         </a>
                     </div>
                     <div id="dev-section-3" class="dev-section">
                         <a href="https://launchpad.net/elementary" title="Manage" target="_blank">
-                            <h3>Manage</h3>
+                            <h5>Manage</h5>
                             <p>Use Launchpad to manage bug reports and collaborate with other developers.</p>
                         </a>
                     </div>
                     <div id="dev-section-4" class="dev-section">
                         <a href="http://developer.ubuntu.com/publish" title="Distribute" target="_blank">
-                            <h3>Distribute</h3>
+                            <h5>Distribute</h5>
                             <p>Set up an Ubuntu My Apps account and publish your apps into the Software Center.</p>
                         </a>
                     </div>
