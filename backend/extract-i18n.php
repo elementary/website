@@ -21,12 +21,20 @@ if (!file_exists($target)) {
 }
 
 $translations = array();
+$currentTranslations = load_translations($pageName, 'en');
+if ($currentTranslations === false) {
+	$currentTranslations = array();
+}
 
 function capture_translation ($string) {
 	global $translations;
+	global $currentTranslations;
 
 	if (is_numeric($string) || ctype_punct($string)) {
-		return;
+		return; // Not supposed to be a translatable string
+	}
+	if (isset($currentTranslations[$string]) && $currentTranslations[$string] === false) {
+		return; // Disabled translation
 	}
 
 	$translations[$string] = html_entity_decode($string);
