@@ -66,9 +66,17 @@ section .heading p.small-label a:hover {
     color: white;
 }
 
+.button.flat:focus {
+    background-color: rgba(200, 208, 208, 0.5);
+}
+
 section:nth-child(2) .button.flat.suggested-action {
     background-color: #2aa198;
     border-color: #2aa198;
+}
+
+section:nth-child(2) .button.flat.suggested-action:focus {
+    background-color: #44BBB2!important;
 }
 
 section:nth-child(3) .button.flat.suggested-action {
@@ -76,14 +84,26 @@ section:nth-child(3) .button.flat.suggested-action {
     border-color: #d53c12;
 }
 
+section:nth-child(3) .button.flat.suggested-action:focus {
+    background-color: #EF562C!important;
+}
+
 section:nth-child(4) .button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
 }
 
+section:nth-child(4) .button.flat.suggested-action:focus {
+    background-color: #40A5EC!important;
+}
+
 section:nth-child(5) .button.flat.suggested-action {
     background-color: #d33682;
     border-color: #d33682;
+}
+
+section:nth-child(5) .button.flat.suggested-action:focus {
+    background-color: #ED509C!important;
 }
 
 @media (max-width: 1080px) {
