@@ -1,0 +1,16 @@
+html,
+body {
+    background-color: #fdf6e3;
+    color: #586e75;
+    fill: #586e75;
+}
+
+h1 svg {
+    position: relative;
+    top: 11px;
+    height: 45px;
+}
+
+h1 .logotype-svg {
+    fill: inherit;
+}
