@@ -11,7 +11,13 @@ body {
     fill: #333;
     margin: 0;
     font-weight: 400;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 
 /**************
 * Text Styles *

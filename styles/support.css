@@ -15,4 +15,23 @@ h1 .logotype-svg {
     fill: inherit;
 }
 
+a.column {
+    color: inherit;
+    transition: 250ms;
+}
 
+a.column:hover {
+    color: #08C;
+    fill: #08C;
+}
+
+
+/***************************
+* Larger-than-phone styles *
+***************************/
+
+@media (min-width: 1164px) {
+    a.column h2 {
+        text-align: left;
+    }
+}
