@@ -6,45 +6,53 @@ if (!isset($_GET['page'])) {
 	exit('No page specified.');
 }
 
-$pageName = $_GET['page'];
+$captureDomain = $_GET['page'];
+if ($captureDomain == 'layout') {
+	$page['name'] = 'index';
+} else {
+	$page['name'] = $captureDomain;
+}
 
-if (!preg_match('#^[a-z0-9-\.]+$#', $pageName)) {
+if (!preg_match('#^[a-z0-9-\.]+$#', $page['name'])) {
 	header('HTTP/1.0 400 Bad Request');
 	exit('Bad page name.');
 }
 
-$target = '../'.$pageName.'.php';
+$target = '../'.$page['name'].'.php';
 
 if (!file_exists($target)) {
 	header('HTTP/1.0 404 Not Found');
 	exit('Page not found.');
 }
 
-$translations = array();
-$currentTranslations = load_translations($pageName, 'en');
+$newTranslations = array();
+$currentTranslations = load_translations($captureDomain, 'en');
 if ($currentTranslations === false) {
 	$currentTranslations = array();
 }
 
-function capture_translation ($string) {
-	global $translations;
-	global $currentTranslations;
+function capture_translation ($string, $domain) {
+	global $captureDomain, $newTranslations, $currentTranslations;
 
+	if ($domain != $captureDomain) {
+		return;
+	}
 	if (is_numeric($string) || ctype_punct($string)) {
 		return; // Not supposed to be a translatable string
 	}
 	if (isset($currentTranslations[$string]) && $currentTranslations[$string] === false) {
 		if (isset($_GET['include_disabled'])) {
-			$translations[$string] = false;
+			$newTranslations[$string] = false;
 		}
 		return; // Disabled translation
 	}
 
-	$translations[$string] = html_entity_decode($string);
+	$newTranslations[$string] = html_entity_decode($string);
 }
 
 chdir('..');
 
+define('HTML_I18N', 1);
 ob_start(function ($input) {
     translate_html($input, 'capture_translation');
     return '';
@@ -55,7 +63,7 @@ include './backend/'.$target;
 ob_end_flush();
 
 // Output empty translation file
-$json = json_encode($translations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+$json = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 header('Content-Type: application/json; charset=utf-8');
 exit($json);

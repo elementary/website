@@ -36,21 +36,36 @@ function load_translations($index, $lang) {
     return json_decode($json, true);
 }
 
-$pageName = basename($_SERVER['PHP_SELF'], '.php');
 $lang = user_lang();
 if (!is_lang($lang)) {
     $lang = 'en';
 }
-$translations = load_translations($pageName, $lang);
+
+$l10nDomain = null;
+$translations = array();
+function set_l10n_domain($domain) {
+    global $lang, $l10nDomain, $translations;
+
+    if (ob_get_level()) {
+        ob_flush(); // Flush output buffer
+    }
+
+    $l10nDomain = $domain;
+
+    if (!isset($translations[$domain])) {
+        $translations[$domain] = load_translations($domain, $lang);
+    }
+}
 
 /**
  * Translate a string. Returns the original string if no translation was found.
  */
-function translate($string) {
+function translate($string, $domain) {
     global $translations;
 
-    if (isset($translations[$string]) && is_string($translations[$string])) {
-        return $translations[$string];
+    if (isset($translations[$domain][$string]) &&
+        is_string($translations[$domain][$string])) {
+        return $translations[$domain][$string];
     } else {
         return $string;
     }
@@ -62,6 +77,8 @@ function translate($string) {
  * (Useful to extract strings from a file for instance.)
  */
 function translate_html($input, $translate = 'translate') {
+    global $l10nDomain;
+
     $output = ''; // Output HTML string
 
     // Tags that doesn't contain translatable text
@@ -122,7 +139,7 @@ function translate_html($input, $translate = 'translate') {
                             if (in_array($name, $allowedTags)) {
                                 $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
 
-                                $tag .= ' '.$name.'="'.$translate($value).'"';
+                                $tag .= ' '.$name.'="'.$translate($value, $l10nDomain).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
                             }
@@ -149,7 +166,7 @@ function translate_html($input, $translate = 'translate') {
             if (!in_array($tagName, $tagsBlacklist)) {
                 $cleanedText = trim($text);
                 if (!empty($cleanedText)) {
-                    $text = $translate($cleanedText);
+                    $text = $translate($cleanedText, $l10nDomain);
                 }
             }
             $output .= $text;

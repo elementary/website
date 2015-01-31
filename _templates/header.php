@@ -1,5 +1,7 @@
 <?php
 include_once './_templates/l10n.php';
+
+set_l10n_domain('layout');
 begin_html_l10n();
 ?>
 <!doctype html>
@@ -57,7 +59,7 @@ begin_html_l10n();
         <?php } ?>
 
     </head>
-    <body class="page-<?php echo basename($_SERVER['PHP_SELF'], ".php"); ?>">
+    <body class="page-<?php echo !empty($page['name']) ? $page['name'] : basename($_SERVER['PHP_SELF'], '.php'); ?>">
         <nav>
             <ul class="left">
                 <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
@@ -72,3 +74,5 @@ begin_html_l10n();
         </nav>
 
         <div id="content-container">
+<?php
+set_l10n_domain(!empty($page['name']) ? $page['name'] : basename($_SERVER['PHP_SELF'], '.php'));
