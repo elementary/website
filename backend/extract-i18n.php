@@ -34,6 +34,9 @@ function capture_translation ($string) {
 		return; // Not supposed to be a translatable string
 	}
 	if (isset($currentTranslations[$string]) && $currentTranslations[$string] === false) {
+		if (isset($_GET['include_disabled'])) {
+			$translations[$string] = false;
+		}
 		return; // Disabled translation
 	}
 

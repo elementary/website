@@ -1,5 +1,11 @@
 <?php
-$lang = 'fr';
+function user_lang() {
+    if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        return null;
+    }
+
+    return strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
+}
 
 function lang_dir($lang) {
     return dirname(__FILE__).'/../lang/'.$lang;
@@ -27,7 +33,12 @@ function load_translations($index, $lang) {
     return json_decode($json, true);
 }
 
-$translations = load_translations('index', $lang);
+$pageName = basename($_SERVER['PHP_SELF'], '.php');
+$lang = user_lang();
+if (!is_lang($lang)) {
+    $lang = 'en';
+}
+$translations = load_translations($pageName, $lang);
 
 /**
  * Translate a string. Returns the original string if no translation was found.
@@ -133,9 +144,9 @@ function translate_html($input, $translate = 'translate') {
             }
             $text = substr($input, $i + 1, $next - $i - 1);
             if (!in_array($tagName, $tagsBlacklist)) {
-                $text = trim($text);
-                if (!empty($text)) {
-                    $text = $translate($text);
+                $cleanedText = trim($text);
+                if (!empty($cleanedText)) {
+                    $text = $translate($cleanedText);
                 }
             }
             $output .= $text;

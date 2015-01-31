@@ -1,3 +1,7 @@
+<?php
+include_once './_templates/i18n.php';
+begin_html_i18n();
+?>
 <!doctype html>
 <html>
     <head>
@@ -62,7 +66,3 @@
         </nav>
 
         <div id="content-container">
-<?php
-include_once './_templates/i18n.php';
-begin_html_i18n();
-?>
