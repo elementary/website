@@ -25,6 +25,10 @@ $translations = array();
 function capture_translation ($string) {
 	global $translations;
 
+	if (is_numeric($string) || ctype_punct($string)) {
+		return;
+	}
+
 	$translations[$string] = $string;
 }
 
