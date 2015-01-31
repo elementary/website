@@ -62,6 +62,10 @@ include './backend/'.$target;
 
 ob_end_flush();
 
+if (!empty($page['title'])) {
+	capture_translation($page['title'], $captureDomain);
+}
+
 // Output empty translation file
 $json = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
