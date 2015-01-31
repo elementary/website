@@ -3,6 +3,9 @@ function user_lang() {
     if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
         return null;
     }
+    if (isset($_GET['lang'])) {
+        return strtolower(substr($_GET['lang'], 0, 2));
+    }
 
     return strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
 }
@@ -46,7 +49,7 @@ $translations = load_translations($pageName, $lang);
 function translate($string) {
     global $translations;
 
-    if (isset($translations[$string])) {
+    if (isset($translations[$string]) && is_string($translations[$string])) {
         return $translations[$string];
     } else {
         return $string;
