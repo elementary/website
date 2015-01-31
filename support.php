@@ -12,21 +12,21 @@
                     <h2><i class="fa fa-question-circle"></i> FAQ</h2>
                     <p>Has your question been answered already? Check out answers to some of the most common questions.</p>
                 </a>
-                <a class="column half" href="#">
+                <a class="column half" href="/installation">
                     <h2><i class="fa fa-download"></i> Installation</h2>
                     <p>Get help installing elementary OS on your computer.</p>
                 </a>
-                <a class="column half" href="#">
+                <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank_">
                     <h2><i class="fa fa-google-plus"></i> Google+</h2>
                     <p>Communicate with other elementary OS users in our Google+ community.</p>
                 </a>
-                <a class="column half" href="#">
+                <a class="column half" href="http://www.reddit.com/r/elementaryos/" target="_blank">
                     <h2><i class="fa fa-reddit"></i> reddit</h2>
                     <p>Discuss elementary OS in our official subreddit.</p>
                 </a>
             </div>
             <div class="row">
-                <a href="#">
+                <a class="column" href="https://bugs.launchpad.net/elementary/+filebug" target="_blank">
                     <h2><i class="fa fa-bug"></i> Report a bug</h2>
                     <p>Unable to resolve your issue? Let our developers know.</p>
                 </a>
