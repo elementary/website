@@ -1,6 +1,6 @@
 <?php
-include_once './_templates/i18n.php';
-begin_html_i18n();
+include_once './_templates/l10n.php';
+begin_html_l10n();
 ?>
 <!doctype html>
 <html>

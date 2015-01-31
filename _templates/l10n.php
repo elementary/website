@@ -164,7 +164,7 @@ function translate_html($input, $translate = 'translate') {
 /**
  * Begin to translate outputted HTML.
  */
-function begin_html_i18n() {
+function begin_html_l10n() {
     if (defined('HTML_I18N')) { // Do not allow nested output buffering
         return;
     }
@@ -177,7 +177,7 @@ function begin_html_i18n() {
 /**
  * End outputted HTML translation.
  */
-function end_html_i18n() {
+function end_html_l10n() {
     if (!ob_get_level()) {
         return;
     }

@@ -1,5 +1,5 @@
 <?php
-include_once '../_templates/i18n.php';
+require_once '../_templates/l10n.php';
 
 if (!isset($_GET['page'])) {
 	header('HTTP/1.0 404 Not Found');
