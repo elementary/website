@@ -33,6 +33,7 @@
         <script>
             <?php include './scripts/jql.min.js'; ?>
             jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
+            jQl.boot();
             <?php include './scripts/smooth-scrolling.js'; ?>
         </script>
 
