@@ -1,4 +1,5 @@
 <?php
+    $page['title'] = "Download elementary OS";
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     include '_templates/sitewide.php';
     include '_templates/header.php';
@@ -10,7 +11,7 @@
 
             <div class="row">
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
-                <h2>A fast and open replacement for Windows and OS X</h2>
+                <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">
@@ -51,7 +52,7 @@
                 </div>
             </div>
             <div id="download-modal" class="modal">
-                <h1>Choose a Download</h1>
+                <h3>Choose a Download</h3>
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">

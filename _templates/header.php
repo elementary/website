@@ -30,6 +30,7 @@ begin_html_l10n();
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Raleway:100">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
@@ -39,28 +40,33 @@ begin_html_l10n();
             <?php include './scripts/smooth-scrolling.js'; ?>
         </script>
 
-        <?php echo $page['scripts']; ?>
+        <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
 
+        <?php if ( $trackme ) { ?>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
             ga('create', 'UA-19280770-1', 'auto');
+            ga('set', 'forceSSL', true);
+            ga('set', 'anonymizeIp', true);
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
         </script>
+        <?php } ?>
 
     </head>
-    <body>
+    <body class="page-<?php echo basename($_SERVER['PHP_SELF'], ".php"); ?>">
         <nav>
             <ul class="left">
-                <li><a href="/"><span class="logomark"></span></a></li>
+                <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
-                <li><a href="/store" target="_blank">Store</a></li>
+                <li><a href="/store">Store</a></li>
             </ul>
             <ul class="right">
+                <li><a href="/developer">Developer</a></li>
                 <li><a href="/get-involved">Get Involved</a></li>
             </ul>
         </nav>
