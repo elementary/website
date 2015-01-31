@@ -1,15 +1,33 @@
 <?php
-// Index French strings for testing purposes
-$translations = array(
-    'A fast and open replacement for Windows and OS X' => 'Un remplaçant rapide et ouvert pour Windows et OS X',
-    'Download Freya Beta' => 'Télécharger Freya Beta',
-    'Custom' => 'Personnalisé',
-    'Enter any dollar amount.' => 'Entrez une somme.',
-    '886.0 MB (for PC or Mac)' => '886.0 Mio (pour PC ou Mac)',
-    'Choose a Download' => 'Choisissez un Téléchargement',
-    'We recommend 64-bit for most modern computers. For help and more info, see the ' => 'Nous recommendons 64-bits pour les ordinateurs modernes. Pour de l\'aide ou plus d\'informations, voir le ',
-    'installation guide' => 'guide d\'installation'
-);
+$lang = 'fr';
+
+function lang_dir($lang) {
+    return dirname(__FILE__).'/../lang/'.$lang;
+}
+
+function is_lang($lang) {
+    if (!preg_match('#^[a-z]{2}$#', $lang)) {
+        return false;
+    }
+
+    return is_dir(lang_dir($lang));
+}
+
+function load_translations($index, $lang) {
+    if (!is_lang($lang)) {
+        return false;
+    }
+
+    $langFile = lang_dir($lang).'/'.$index.'.json';
+    if (!file_exists($langFile)) {
+        return false;
+    }
+
+    $json = file_get_contents($langFile);
+    return json_decode($json, true);
+}
+
+$translations = load_translations('index', $lang);
 
 /**
  * Translate a string. Returns the original string if no translation was found.
@@ -44,6 +62,7 @@ function translate_html($input, $translate = 'translate') {
 
     // Begin parsing input HTML
     $i = 0;
+    $tagName = '';
     while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
         $next = $i + 1;
@@ -132,6 +151,11 @@ function translate_html($input, $translate = 'translate') {
  * Begin to translate outputted HTML.
  */
 function begin_html_i18n() {
+    if (defined('HTML_I18N')) { // Do not allow nested output buffering
+        return;
+    }
+    define('HTML_I18N', 1);
+
     ob_start(function ($input) {
         return translate_html($input);
     });
@@ -140,5 +164,9 @@ function begin_html_i18n() {
  * End outputted HTML translation.
  */
 function end_html_i18n() {
+    if (!ob_get_level()) {
+        return;
+    }
+
     ob_end_flush();
 }

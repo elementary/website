@@ -1,5 +1,5 @@
 <?php
-include '../_templates/i18n.php';
+include_once '../_templates/i18n.php';
 
 if (!isset($_GET['page'])) {
 	header('HTTP/1.0 404 Not Found');
@@ -29,20 +29,22 @@ function capture_translation ($string) {
 		return;
 	}
 
-	$translations[$string] = $string;
+	$translations[$string] = html_entity_decode($string);
 }
+
+chdir('..');
 
 ob_start(function ($input) {
     translate_html($input, 'capture_translation');
     return '';
 });
 
-include $target;
+include './backend/'.$target;
 
 ob_end_flush();
 
 // Output empty translation file
-$json = json_encode($translations, JSON_PRETTY_PRINT);
+$json = json_encode($translations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=utf-8');
 exit($json);

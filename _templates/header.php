@@ -63,6 +63,6 @@
 
         <div id="content-container">
 <?php
-include './_templates/i18n.php';
+include_once './_templates/i18n.php';
 begin_html_i18n();
 ?>
