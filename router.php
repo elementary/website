@@ -9,20 +9,28 @@
 // Allow query parameters to be appended to the request
 $requestUri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
+if (preg_match('#^/([a-z]{2})(/.*)?$#', $requestUri, $matches)) {
+    $_GET['lang'] = $matches[1];
+    $requestUri = (!empty($matches[2])) ? $matches[2] : '/';
+}
+
 if ($requestUri == '/') {
-    return false; // Serve the homepage as-is
+    $page['name'] = 'index';
+    include 'index.php';
 } elseif (preg_match('/\./', $requestUri)) { // has period in filename
     $target = '.'.$requestUri;
     if (!file_exists($target)) {
+        header('HTTP/1.1 404 Not Found');
         include '404.php';
     } else {
-        return false; // Serve the requested resource as-is
+        return false;
     }
 } else {
     $target = '.'.$requestUri.'.php'; // Rewrite extension-less files as php files
     if (file_exists($target)) {
         include $target;
     } else {
+        header('HTTP/1.1 404 Not Found');
         include '404.php';
     }
 }
