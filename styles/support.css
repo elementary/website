@@ -19,7 +19,7 @@ h1 .logotype-svg {
 
 a.column {
     color: inherit;
-    transition: 250ms;
+    transition: color 250ms ease-in-out;
 }
 
 a.column:hover,
@@ -45,9 +45,9 @@ a[target='_blank'].column h3::after {
     padding-left: 12px;
     position: absolute;
     margin-top: 0.20em;
-    -webkit-transition: padding 0.15s ease-in-out;
-    -o-transition: padding 0.15s ease-in-out;
-    transition: padding 0.15s ease-in-out;
+    -webkit-transition: padding 150ms ease-in-out;
+    -o-transition: padding 150ms ease-in-out;
+    transition: padding 150ms ease-in-out;
 }
 
 a[target='_blank'].column:hover h2::after,
@@ -82,7 +82,7 @@ a[target='_blank'].column:focus h3::after {
 
     color: inherit;
 
-    transition: 250ms;
+    transition: border-color 150ms ease-in-out;
 }
 
 .row.apps .app:hover,
