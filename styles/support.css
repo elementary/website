@@ -6,9 +6,11 @@ body {
 }
 
 h1 svg {
+    display: inline;
     position: relative;
     top: 11px;
     height: 45px;
+    width: 310px;
 }
 
 h1 .logotype-svg {
