@@ -91,6 +91,9 @@ function translate_html($input, $translate = 'translate') {
         'img' => array('alt')
     );
 
+    // Tags included in translation strings when used in <p> or <li>
+    $ignoredTags = array('a', 'kbd');
+
     // Begin parsing input HTML
     $i = 0;
     $tagName = '';
@@ -164,17 +167,28 @@ function translate_html($input, $translate = 'translate') {
             $next = strpos($input, '<', $i);
             if ($next === false) {
                 $next = strlen($input);
-            } elseif ($tagName == 'p') { // Do not process <a> in <p>
+            } elseif ($tagName == 'p' || $tagName == 'li') {
+                // Do not process ignored tags in <p> and <li>
                 $originalNext = $next;
-                $linksNbr = 0;
-                while ($input[$next + 1] == 'a') { // Skip all <a>
-                    $linkEnd = strpos($input, '</a>', $next);
-                    $next = strpos($input, '<', $linkEnd + 1);
-                    $linksNbr++;
-                }
+                $ignoredCount = 0;
+                do {
+                    $found = false;
+                    foreach ($ignoredTags as $ignoredTag) {
+                        if (substr($input, $next + 1, strlen($ignoredTag)) == $ignoredTag) {
+                            $nextChar = $input[$next + strlen($ignoredTag) + 1];
+                            if ($nextChar == '>' || $nextChar == ' ') {
+                                $tagEnd = strpos($input, '</'.$ignoredTag.'>', $next);
+                                $next = strpos($input, '<', $tagEnd + 1);
+                                $ignoredCount++;
+                                $found = true;
+                                break;
+                            }
+                        }
+                    }
+                } while ($found);
 
-                // Just one link in the <p> ?
-                if ($linksNbr == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
+                // Just one link in the <p> ? Don't ignore it.
+                if ($ignoredCount == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
                     $next = $originalNext;
                 }
             }
