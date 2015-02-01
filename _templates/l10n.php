@@ -60,12 +60,12 @@ function set_l10n_domain($domain) {
 /**
  * Translate a string. Returns the original string if no translation was found.
  */
-function translate($string, $domain) {
+function translate($id, $domain, $string) {
     global $translations;
 
-    if (isset($translations[$domain][$string]) &&
-        is_string($translations[$domain][$string])) {
-        return $translations[$domain][$string];
+    if (isset($translations[$domain][$id]) &&
+        is_string($translations[$domain][$id])) {
+        return $translations[$domain][$id];
     } else {
         return $string;
     }
@@ -110,14 +110,16 @@ function translate_html($input, $translate = 'translate') {
             $attrsStart = strpos($tag, ' ');
             if ($attrsStart !== false) {
                 $tagName = substr($tag, 0, $attrsStart);
+                $attrs = substr($tag, $attrsStart + 1);
 
-                if (isset($attrsWhitelist[$tagName])) {
-                    $allowedTags = $attrsWhitelist[$tagName];
+                if (isset($attrsWhitelist[$tagName]) || strpos($attrs, 'data-l10n-') !== false) {
+                    if (isset($attrsWhitelist[$tagName])) {
+                        $allowedTags = $attrsWhitelist[$tagName];
+                    } else {
+                        $allowedTags = array();
+                    }
 
-                    $attrsString = substr($tag, $attrsStart + 1);
                     $tag = substr($tag, 0, $attrsStart + 1);
-
-                    $attrs = $attrsString;
 
                     // Parse attributes
                     $j = 0;
@@ -145,7 +147,7 @@ function translate_html($input, $translate = 'translate') {
                                 $l10nId = $value;
                             }
                             if (in_array($name, $allowedTags)) {
-                                $tag .= ' '.$name.'="'.$translate($value, $l10nDomain).'"';
+                                $tag .= ' '.$name.'="'.$translate($value, $l10nDomain, $value).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
                             }
@@ -193,22 +195,22 @@ function translate_html($input, $translate = 'translate') {
                 }
             }
 
-            if (!empty($l10nId)) {
-                $text = $translate($l10nId, $l10nDomain);
-                $l10nId = '';
-            } else {
-                $text = substr($input, $i + 1, $next - $i - 1);
-                if (!in_array($tagName, $tagsBlacklist)) {
-                    $cleanedText = trim($text);
-                    if (!empty($cleanedText)) {
-                        // Properly re-inject whitespaces
-                        $text = substr($text, 0, strpos($text, $cleanedText[0])) .
-                            $translate($cleanedText, $l10nDomain) .
-                            substr($text, strrpos($text, substr($cleanedText, -1)) + 1);
+            $text = substr($input, $i + 1, $next - $i - 1);
+            if (!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) {
+                $cleanedText = trim($text);
+                if (!empty($cleanedText) || !empty($l10nId)) {
+                    if (empty($l10nId)) {
+                        $l10nId = $cleanedText;
                     }
+
+                    // Properly re-inject whitespaces
+                    $text = substr($text, 0, strpos($text, $cleanedText[0])) .
+                        $translate($l10nId, $l10nDomain, $cleanedText) .
+                        substr($text, strrpos($text, substr($cleanedText, -1)) + 1);
                 }
             }
             $output .= $text;
+            $l10nId = '';
         }
 
         $i = $next;

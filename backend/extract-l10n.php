@@ -31,23 +31,23 @@ if ($currentTranslations === false) {
 	$currentTranslations = array();
 }
 
-function capture_translation ($string, $domain) {
+function capture_translation ($id, $domain, $string) {
 	global $captureDomain, $newTranslations, $currentTranslations;
 
 	if ($domain != $captureDomain) {
 		return;
 	}
-	if (is_numeric($string) || ctype_punct($string)) {
+	if (is_numeric($id) || ctype_punct($id)) {
 		return; // Not supposed to be a translatable string
 	}
-	if (isset($currentTranslations[$string]) && $currentTranslations[$string] === false) {
+	if (isset($currentTranslations[$id]) && $currentTranslations[$id] === false) {
 		if (isset($_GET['include_disabled'])) {
-			$newTranslations[$string] = false;
+			$newTranslations[$id] = false;
 		}
 		return; // Disabled translation
 	}
 
-	$newTranslations[$string] = html_entity_decode($string);
+	$newTranslations[$id] = html_entity_decode($string);
 }
 
 chdir('..');
@@ -63,7 +63,7 @@ include './backend/'.$target;
 ob_end_flush();
 
 if (!empty($page['title'])) {
-	capture_translation($page['title'], $captureDomain);
+	capture_translation($page['title'], $captureDomain, $page['title']);
 }
 
 // Output empty translation file
