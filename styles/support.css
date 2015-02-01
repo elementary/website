@@ -21,7 +21,8 @@ a.column {
 }
 
 a.column:hover,
-a.column:focus {
+a.column:focus,
+a.column:active {
     color: #08C;
     fill: #08C;
     text-decoration: none;
@@ -83,8 +84,10 @@ a[target='_blank'].column:focus h3::after {
 }
 
 .row.apps .app:hover,
-.row.apps .app:focus {
+.row.apps .app:focus,
+.row.apps .app:active {
     border: 1px solid rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 }
 
 @media (min-width: 600px) {
