@@ -20,3 +20,11 @@ source_lang = en
 [mvp-testing.developer]
 file_filter = lang/<lang>/developer.json
 source_lang = en
+
+[mvp-testing.privacy-policy]
+file_filter = lang/<lang>/privacy-policy.json
+source_lang = en
+
+[mvp-testing.store]
+file_filter = lang/<lang>/store.json
+source_lang = en
