@@ -38,57 +38,57 @@
     <h2>Get support for a specific app</h2>
 
     <a class="app" href="https://answers.launchpad.net/maya" target="_blank">
-        <img src="images/support/office-calendar.svg" />
+        <img width="64" height="64" src="images/support/office-calendar.svg" />
         <span>Calendar</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/snap-elementary" target="_blank">
-        <img src="images/support/accessories-camera.svg" />
+        <img width="64" height="64" src="images/support/accessories-camera.svg" />
         <span>Camera</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/pantheon-files" target="_blank">
-        <img src="images/support/system-file-manager.svg" />
+        <img width="64" height="64" src="images/support/system-file-manager.svg" />
         <span>Files</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/geary" target="_blank">
-        <img src="images/support/internet-mail.svg" />
+        <img width="64" height="64" src="images/support/internet-mail.svg" />
         <span>Geary</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/midori" target="_blank">
-        <img src="images/support/midori.svg" />
+        <img width="64" height="64" src="images/support/midori.svg" />
         <span>Midori</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/noise" target="_blank">
-        <img src="images/support/multimedia-audio-player.svg" />
+        <img width="64" height="64" src="images/support/multimedia-audio-player.svg" />
         <span>Music</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/pantheon-photos" target="_blank">
-        <img src="images/support/multimedia-photo-manager.svg" />
+        <img width="64" height="64" src="images/support/multimedia-photo-manager.svg" />
         <span>Photos</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/scratch" target="_blank">
-        <img src="images/support/accessories-text-editor.svg" />
+        <img width="64" height="64" src="images/support/accessories-text-editor.svg" />
         <span>Scratch</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/switchboard" target="_blank">
-        <img src="images/support/preferences-desktop.svg" />
+        <img width="64" height="64" src="images/support/preferences-desktop.svg" />
         <span>System Settings</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/pantheon-terminal" target="_blank">
-        <img src="images/support/utilities-terminal.svg" />
+        <img width="64" height="64" src="images/support/utilities-terminal.svg" />
         <span>Terminal</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/audience" target="_blank">
-        <img src="images/support/multimedia-video-player.svg" />
+        <img width="64" height="64" src="images/support/multimedia-video-player.svg" />
         <span>Videos</span>
     </a>
 </div>
