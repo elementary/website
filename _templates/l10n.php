@@ -94,6 +94,7 @@ function translate_html($input, $translate = 'translate') {
     // Begin parsing input HTML
     $i = 0;
     $tagName = '';
+    $l10nId = '';
     while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
         $next = $i + 1;
@@ -135,10 +136,12 @@ function translate_html($input, $translate = 'translate') {
                             }
 
                             $name = substr($attrs, $j, $nameEnd - $j);
+                            $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
 
+                            if ($name == 'data-l10n-id') {
+                                $l10nId = $value;
+                            }
                             if (in_array($name, $allowedTags)) {
-                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
-
                                 $tag .= ' '.$name.'="'.$translate($value, $l10nDomain).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
@@ -161,12 +164,34 @@ function translate_html($input, $translate = 'translate') {
             $next = strpos($input, '<', $i);
             if ($next === false) {
                 $next = strlen($input);
+            } elseif ($tagName == 'p') { // Do not process <a> in <p>
+                $originalNext = $next;
+                $linksNbr = 0;
+                while ($input[$next + 1] == 'a') { // Skip all <a>
+                    $linkEnd = strpos($input, '</a>', $next);
+                    $next = strpos($input, '<', $linkEnd + 1);
+                    $linksNbr++;
+                }
+
+                // Just one link in the <p> ?
+                if ($linksNbr == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
+                    $next = $originalNext;
+                }
             }
-            $text = substr($input, $i + 1, $next - $i - 1);
-            if (!in_array($tagName, $tagsBlacklist)) {
-                $cleanedText = trim($text);
-                if (!empty($cleanedText)) {
-                    $text = $translate($cleanedText, $l10nDomain);
+
+            if (!empty($l10nId)) {
+                $text = $translate($l10nId, $l10nDomain);
+                $l10nId = '';
+            } else {
+                $text = substr($input, $i + 1, $next - $i - 1);
+                if (!in_array($tagName, $tagsBlacklist)) {
+                    $cleanedText = trim($text);
+                    if (!empty($cleanedText)) {
+                        // Properly re-inject whitespaces
+                        $text = substr($text, 0, strpos($text, $cleanedText[0])) .
+                            $translate($cleanedText, $l10nDomain) .
+                            substr($text, strrpos($text, substr($cleanedText, -1)) + 1);
+                    }
                 }
             }
             $output .= $text;
