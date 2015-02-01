@@ -20,7 +20,7 @@ $sitewide['root'] = '';
 if ($serverRoot == $websiteRoot) {
 	$sitewide['root'] = '/';
 } elseif (strpos($websiteRoot, $serverRoot) === 0) {
-	$sitewide['root'] = substr($websiteRoot, strlen($serverRoot));
+	$sitewide['root'] = substr($websiteRoot, strlen($serverRoot)).'/';
 } else {
 	$websiteArray = explode('/', $websiteRoot);
 	$reqArray = array_filter(explode('/', $requestUri));
