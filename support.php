@@ -16,7 +16,7 @@
                     <h2><i class="fa fa-download"></i> Installation</h2>
                     <p>Get help installing elementary OS on your computer by following our step-by-step guide.</p>
                 </a>
-                <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank_">
+                <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank">
                     <h2><i class="fa fa-google-plus"></i> Google+</h2>
                     <p>Communicate with other elementary OS users in our Google+ community. Find crowd-sourced support, screenshots, the latest news, and more.</p>
                 </a>

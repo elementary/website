@@ -25,6 +25,28 @@ a.column:hover {
     fill: #08C;
 }
 
+a.column h2 {
+    margin-bottom: 0.5em;
+}
+
+a[target='_blank'].column h2::after {
+    content: "";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
+    padding-left: 12px;
+    position: absolute;
+    margin-top: 0.20em;
+    -webkit-transition: padding 0.15s ease-in-out;
+    -o-transition: padding 0.15s ease-in-out;
+    transition: padding 0.15s ease-in-out;
+}
+
+a[target='_blank'].column:hover h2::after {
+    padding-left: 18px;
+}
+
 
 /***************************
 * Larger-than-phone styles *
