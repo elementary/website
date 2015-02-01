@@ -40,6 +40,7 @@ $lang = user_lang();
 if (!is_lang($lang)) {
     $lang = 'en';
 }
+$page['lang'] = $lang; // Set page variable
 
 $l10nDomain = null;
 $translations = array();

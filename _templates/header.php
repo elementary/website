@@ -5,7 +5,7 @@ set_l10n_domain('layout');
 begin_html_l10n();
 ?>
 <!doctype html>
-<html>
+<html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>">
     <head>
 
         <meta charset="UTF-8">
