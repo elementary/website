@@ -1,8 +1,10 @@
+
+
 html,
 body {
-    background-color: #fdf6e3;
+    /**background-color: #fdf6e3;
     color: #586e75;
-    fill: #586e75;
+    fill: #586e75;*/
 }
 
 h1 svg {
@@ -20,16 +22,20 @@ a.column {
     transition: 250ms;
 }
 
-a.column:hover {
+a.column:hover,
+a.column:focus {
     color: #08C;
     fill: #08C;
+    text-decoration: none;
 }
 
-a.column h2 {
+a.column h2,
+a.column h3 {
     margin-bottom: 0.5em;
 }
 
-a[target='_blank'].column h2::after {
+a[target='_blank'].column h2::after,
+a[target='_blank'].column h3::after {
     content: "";
     font-family: "FontAwesome";
     font-style: normal;
@@ -43,8 +49,74 @@ a[target='_blank'].column h2::after {
     transition: padding 0.15s ease-in-out;
 }
 
-a[target='_blank'].column:hover h2::after {
+a[target='_blank'].column:hover h2::after,
+a[target='_blank'].column:hover h3::after,
+a[target='_blank'].column:focus h2::after,
+a[target='_blank'].column:focus h3::after {
     padding-left: 18px;
+}
+
+
+/***********
+* App grid *
+***********/
+
+.row.apps{
+    text-align: left;
+}
+
+.row.apps h2{
+    text-align: center;
+}
+
+.row.apps .app {
+    text-align: left;
+    display: inline-block;
+    margin: 12px 0;
+    padding: 12px;
+    width: 100%;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    color: inherit;
+
+    transition: 250ms;
+}
+
+.row.apps .app:hover,
+.row.apps .app:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 600px) {
+    .row.apps .app {
+        margin: 1%;
+        padding: 1%;
+        width: 47%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .row.apps .app {
+        margin: 1%;
+        padding: 1%;
+        width: 31%;
+    }
+}
+
+.row.apps .app img,
+.row.apps .app span {
+    display: inline-block;
+}
+
+.row.apps .app img {
+    vertical-align: middle;
+}
+
+.row.apps .app span {
+    line-height: 64px;
+    padding: 0 12px;
 }
 
 
@@ -53,7 +125,8 @@ a[target='_blank'].column:hover h2::after {
 ***************************/
 
 @media (min-width: 1164px) {
-    a.column h2 {
+    a.column h2,
+    a.column h3 {
         text-align: left;
     }
 }

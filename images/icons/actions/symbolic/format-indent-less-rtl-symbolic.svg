@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg7384"
+   style="enable-background:new">
+  <title
+     id="title8473">Moka Symbolic Icon Theme</title>
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Moka Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7386">
+    <linearGradient
+       id="linearGradient5606">
+      <stop
+         id="stop5608"
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter7554">
+      <feBlend
+         in2="BackgroundImage"
+         mode="darken"
+         id="feBlend7556" />
+    </filter>
+  </defs>
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="layer9"
+     style="display:inline" />
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="layer10"
+     style="display:inline;filter:url(#filter7554)" />
+  <g
+     transform="translate(-240.00041,-686.00002)"
+     id="layer1"
+     style="display:inline" />
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="layer14"
+     style="display:inline" />
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="layer15"
+     style="display:inline" />
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="g71291"
+     style="display:inline" />
+  <g
+     transform="translate(-240.00041,-536.00002)"
+     id="layer2"
+     style="display:inline" />
+  <g
+     transform="translate(-240.00041,-536.00002)"
+     id="g6058"
+     style="display:inline" />
+  <g
+     transform="translate(-481.00061,-69.00002)"
+     id="layer12"
+     style="display:inline">
+    <rect
+       width="5"
+       height="2.0002136"
+       x="-495.00082"
+       y="71.999809"
+       transform="scale(-1,1)"
+       id="rect42954"
+       style="color:#bbbbbb;fill:#bbbbbb;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible" />
+    <rect
+       width="6"
+       height="2.0002136"
+       x="-495.00082"
+       y="75.999809"
+       transform="scale(-1,1)"
+       id="rect42956"
+       style="color:#bbbbbb;fill:#bbbbbb;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible" />
+    <rect
+       width="6.9996033"
+       height="2.0002136"
+       x="-492.00043"
+       y="79.999809"
+       transform="scale(-1,1)"
+       id="rect42958"
+       style="color:#bbbbbb;fill:#bbbbbb;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible" />
+    <path
+       d="m 483.00021,72 0,6 4.0006,-2.99998 z"
+       inkscape:connector-curvature="0"
+       id="path42960"
+       style="fill:#bbbbbb;fill-opacity:1;stroke:none" />
+  </g>
+</svg>

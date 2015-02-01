@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg7384">
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <defs
+     id="defs11" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-281,-647)"
+     id="layer12">
+    <path
+       d="m 283,647 v 2 h 6 c 0.42816,0 1,0.61414 1,1 v 1 h -5 c -0.91927,0 -1.7356,0.38396 -2.25,0.96875 -0.5144,0.58479 -0.75639,1.3106 -0.75,2.0312 0.006,0.72062 0.26893,1.4527 0.78125,2.0312 0.51232,0.57854 1.3105,0.96875 2.2188,0.96875 h 6 1 v -1 -6 c 0,-1.6343 -1.3198,-3 -3,-3 h -6 z m 2,6 h 5 v 2 h -5 c -0.39787,0 -0.56691,-0.10979 -0.71875,-0.28125 C 284.12941,654.54729 284.00248,654.27938 284,654 c -0.002,-0.27938 0.10467,-0.55354 0.25,-0.71875 C 284.39533,653.11604 284.57764,653 285,653 z"
+       inkscape:connector-curvature="0"
+       id="path11643-3-2-2"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#bebebe" />
+    <path
+       d="m 293,662 1,-10e-6 c 0.26531,-3e-5 0.53058,-0.0931 0.71875,-0.28124 l 2,-2 0.28126,-0.28125 v -0.87499 l -0.28126,-0.28126 -2,-2 c -0.18818,-0.18821 -0.45347,-0.28121 -0.71876,-0.28121 l -1,-10e-6 v 1 c -4e-5,0.26531 0.0931,0.53059 0.28121,0.71877 l 1.2813,1.2812 -1.2812,1.2812 c -0.18815,0.18817 -0.28125,0.45345 -0.28125,0.71875 v 1 z"
+       inkscape:connector-curvature="0"
+       id="path4484-2"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#bebebe" />
+    <path
+       d="m 281.94,658 v 2 h 13.062 v -2 H 281.94 z"
+       inkscape:connector-curvature="0"
+       id="path4486-0"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#bebebe" />
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg7384">
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <defs
+     id="defs11">
+    <clipPath
+       id="clipPath6810-7-87">
+      <rect
+         width="14"
+         height="11"
+         x="21"
+         y="281"
+         id="rect6812-2-4"
+         style="color:#bebebe;fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+    </clipPath>
+    <clipPath
+       id="clipPath6810-7-87-2">
+      <rect
+         width="14"
+         height="11"
+         x="21"
+         y="281"
+         id="rect6812-2-4-4"
+         style="color:#bebebe;fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 8,4 C 5.790861,4 4,5.790861 4,8 4,8.356555 4.0687173,8.7022582 4.15625,9.03125 l 4.875,-4.875 C 8.7022582,4.0687173 8.356555,4 8,4 z m 3.84375,2.96875 -4.875,4.875 C 7.2977418,11.931283 7.643445,12 8,12 10.209139,12 12,10.209139 12,8 12,7.643445 11.93128,7.2977418 11.84375,6.96875 z"
+     inkscape:connector-curvature="0"
+     id="path3012"
+     style="color:#bebebe;fill:#ef2929;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new" />
+  <path
+     d="M 13.65625,0.9375 0.9375,13.65625 2.34375,15.0625 15.0625,2.34375 13.65625,0.9375 z M 8,2 C 4.6862915,2 2,4.6862915 2,8 2,8.9269934 2.2183793,9.8100295 2.59375,10.59375 l 1.5625,-1.5625 C 4.0687173,8.7022582 4,8.356555 4,8 4,5.790861 5.790861,4 8,4 8.356555,4 8.7022582,4.0687173 9.03125,4.15625 l 1.5625,-1.5625 C 9.8100295,2.2183793 8.9269934,2 8,2 z m 5.40625,3.40625 -1.5625,1.5625 C 11.931283,7.2977418 12,7.643445 12,8 12,10.209139 10.209139,12 8,12 7.643445,12 7.2977418,11.93128 6.96875,11.84375 l -1.5625,1.5625 C 6.1899706,13.781621 7.0730065,14 8,14 11.313708,14 14,11.313708 14,8 14,7.0730065 13.781621,6.1899706 13.40625,5.40625 z"
+     inkscape:connector-curvature="0"
+     id="path2986"
+     style="color:#000000;fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+</svg>

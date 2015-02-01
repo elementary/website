@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="24"
+   height="24"
+   id="svg4524"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="media-skip-forward-symbolic.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="826"
+     inkscape:window-height="480"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="10"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4524" />
+  <defs
+     id="defs4526" />
+  <metadata
+     id="metadata4529">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 22.250193,5.9999997 c 0.403999,0 0.75,0.3460007 0.75,0.75 l 0,11.5000003 c 0,0.403999 -0.346001,0.75 -0.75,0.75 l -2.5,0 c -0.403999,0 -0.75,-0.346001 -0.75,-0.75 l 0,-4.28125 -8.25,4.96875 a 0.49473539,0.49473539 0 0 1 -0.75,-0.4375 l 0,-4.53125 -8.25,4.96875 a 0.49473539,0.49473539 0 0 1 -0.75,-0.4375 l 0,-12.0000003 a 0.49473539,0.49473539 0 0 1 0.75,-0.4375 l 8.25,4.9687503 0,-4.5312503 a 0.49473539,0.49473539 0 0 1 0.75,-0.4375 l 8.25,4.9687503 0,-4.2812503 c 0,-0.4039993 0.346001,-0.75 0.75,-0.75 l 2.5,0 z"
+     inkscape:connector-curvature="0"
+     id="path3999"
+     style="color:#bebebe;fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1" />
+</svg>

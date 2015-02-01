@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg7384">
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <defs
+     id="defs13" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-81,-847)"
+     id="layer12">
+    <rect
+       width="9.9996004"
+       height="2.0002"
+       x="84.000999"
+       y="850"
+       id="rect38609"
+       style="color:#bebebe;fill:#bebebe" />
+    <rect
+       width="3"
+       height="2.0002"
+       x="91"
+       y="854"
+       id="rect38611"
+       style="color:#bebebe;fill:#bebebe" />
+    <rect
+       width="3"
+       height="2.0002"
+       x="91"
+       y="858"
+       id="rect38613"
+       style="color:#bebebe;fill:#bebebe" />
+    <path
+       d="m 82,853.06 v 0.5 6.9688 0.5 h 0.5 7 0.5 v -0.5 -6.9688 -0.5 h -0.5 -7 -0.5 z m 1,1 h 6 v 5.9688 H 83 V 854.06 z"
+       inkscape:connector-curvature="0"
+       id="rect38615"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#bebebe;enable-background:new" />
+    <path
+       d="m 84.031,856 v 2 h 4.0312 v -2 H 84.031 z"
+       inkscape:connector-curvature="0"
+       id="path38617"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#bebebe;enable-background:new" />
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg7384">
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <defs
+     id="defs10" />
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-100,-746)"
+     id="layer12">
+    <path
+       d="m 103.34,749.52 c -1.2021,0.2879 -1.993,1.0983 -2.1875,2.4375 -0.0536,0.5628 -0.28002,1.3448 0.25,1.7188 0.70817,0.42322 1.5742,0.35362 2.3438,0.21875 0.56137,-0.14838 0.80163,-0.2025 1.25,-0.625 0,0 -0.0518,-1.0705 0.1875,-1.6562 1.931,-0.81073 3.8101,-0.75064 5.6875,0 0.23926,0.58579 0.1875,1.6562 0.1875,1.6562 0.44837,0.4225 0.68863,0.47662 1.25,0.625 0.76957,0.13487 1.6356,0.20447 2.3438,-0.21875 0.53002,-0.37393 0.30355,-1.156 0.25,-1.7188 -0.19447,-1.3392 -0.98543,-2.1496 -2.1875,-2.4375 -3.1378,-0.59102 -6.2763,-0.72425 -9.375,0 z"
+       inkscape:connector-curvature="0"
+       id="path44097"
+       style="fill:#bebebe;enable-background:new" />
+    <path
+       d="m 111,757 h -1 c -0.25689,10e-6 -0.52845,0.12983 -0.71875,0.31251 l -1.2812,1.2812 -1.2812,-1.2812 c -0.19004,-0.18293 -0.46186,-0.3125 -0.71878,-0.31245 h -1 l -10e-6,1 c 0,0.30945 0.0903,0.55231 0.28131,0.74998 l 2.7188,2.6562 2.7187,-2.6562 c 0.19093,-0.19772 0.28126,-0.44056 0.28126,-0.75 v -1 z"
+       inkscape:connector-curvature="0"
+       id="rect3217-6-2-2-4-2"
+       style="text-indent:0;text-transform:none;block-progression:tb;color:#bebebe;fill:#bebebe" />
+  </g>
+</svg>
