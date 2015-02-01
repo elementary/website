@@ -37,57 +37,57 @@
 
     <h2>Get support for a specific app</h2>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/maya" target="_blank">
         <img src="images/icons/apps/64/office-calendar.svg" />
         <span>Calendar</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/snap-elementary" target="_blank">
         <img src="images/icons/apps/64/accessories-camera.svg" />
         <span>Camera</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/pantheon-files" target="_blank">
         <img src="images/icons/apps/64/system-file-manager.svg" />
         <span>Files</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/geary" target="_blank">
         <img src="images/icons/apps/64/internet-mail.svg" />
         <span>Geary</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/midori" target="_blank">
         <img src="images/icons/apps/64/midori.svg" />
         <span>Midori</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/noise" target="_blank">
         <img src="images/icons/apps/64/multimedia-audio-player.svg" />
         <span>Music</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/pantheon-photos" target="_blank">
         <img src="images/icons/apps/64/multimedia-photo-manager.svg" />
         <span>Photos</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/scratch" target="_blank">
         <img src="images/icons/apps/64/accessories-text-editor.svg" />
         <span>Scratch</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/switchboard" target="_blank">
         <img src="images/icons/apps/64/preferences-desktop.svg" />
         <span>System Settings</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/pantheon-terminal" target="_blank">
         <img src="images/icons/apps/64/utilities-terminal.svg" />
         <span>Terminal</span>
     </a>
 
-    <a class="app" href="#" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/audience" target="_blank">
         <img src="images/icons/apps/64/multimedia-video-player.svg" />
         <span>Videos</span>
     </a>
