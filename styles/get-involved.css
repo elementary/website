@@ -239,3 +239,8 @@ section:nth-child(5) .button.flat.suggested-action:focus {
         margin: 24px 0;
     }
 }
+@media (max-width: 600px) {
+    .svg {
+        width: 100%;
+    }
+}

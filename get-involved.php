@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="column half">
-                        <img src="images/get-involved/translations.svg" alt="World map">
+                        <img src="images/get-involved/translations.svg" class="svg" alt="World map">
                     </div>
                 </div>
             </section>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="column half">
-                        <img src="images/get-involved/design.svg" alt="Application wire frame">
+                        <img src="images/get-involved/design.svg" class="svg" alt="Application wire frame">
                     </div>
                 </div>
             </section>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                     <div class="column half">
-                        <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
+                        <img src="images/get-involved/desktop-development.svg" class="svg" alt="Scratch text editor">
                     </div>
                 </div>
             </section>
