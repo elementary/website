@@ -1,0 +1,22 @@
+[main]
+host = https://www.transifex.com
+
+[mvp-testing.layout]
+file_filter = lang/<lang>/layout.json
+source_lang = en
+
+[mvp-testing.index]
+file_filter = lang/<lang>/index.json
+source_lang = en
+
+[mvp-testing.get-involved]
+file_filter = lang/<lang>/get-involved.json
+source_lang = en
+
+[mvp-testing.installation]
+file_filter = lang/<lang>/installation.json
+source_lang = en
+
+[mvp-testing.developer]
+file_filter = lang/<lang>/developer.json
+source_lang = en

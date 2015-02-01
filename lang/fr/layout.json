@@ -7,9 +7,7 @@
     "Get Involved": "Participer",
     "Privacy Policy": "Politique de confidentialité",
     "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Le site web d'elementary OS fonctionne avec des technologies web modernes que votre navigateur ne supporte pas.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please": "Cette version d'Internet Explorer est obsolète et peut contenir des bugs et failles de sécurité. Pensez à",
-    "upgrade": "mettre à jour",
-    "to IE 11 or an alternative web browser.": "en installant IE 11 ou un autre navigateur web.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Cette version d'Internet Explorer est obsolète et peut contenir des bugs et failles de sécurité. Pensez à <a href=\"http://browsehappy.com/\">mettre à jour</a> votre navigateur vers IE 11 ou vers un autre navigateur.",
     "Dismiss": "Fermer",
     "Learn More": "En savoir plus"
 }
