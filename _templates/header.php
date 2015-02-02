@@ -5,9 +5,9 @@ if (!isset($page['name'])) {
 
 include_once './_templates/l10n.php';
 
-$page['lang-root'] = '/';
+$page['lang-root'] = $sitewide['root'];
 if (isset($page['lang']) && $page['lang'] != 'en') {
-    $page['lang-root'] = '/'.$page['lang'].'/';
+    $page['lang-root'] .= $page['lang'].'/';
 }
 
 set_l10n_domain('layout');
