@@ -42,6 +42,7 @@ begin_html_l10n();
 
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
 
         <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
@@ -55,6 +56,7 @@ begin_html_l10n();
         <script>
             <?php include './scripts/jql.min.js'; ?>
             jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
+            jQl.boot();
             <?php include './scripts/smooth-scrolling.js'; ?>
         </script>
 

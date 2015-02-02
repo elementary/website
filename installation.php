@@ -51,7 +51,7 @@
                     <h3 id="creating-an-installation-medium">Creating an Install Drive</h3>
                     <div id="creating-a-usb-choices" class="column linked">
                         <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
-                        <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X, Ubuntu, and Others</a>
+                        <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X & Ubuntu</a>
                     </div>
                 </div>
 
@@ -78,13 +78,13 @@
 
                     <p>Begin with a spare USB flash drive with at least 1GB of free space.</p>
 
-                    <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In other Linux distros, as well as any Windows or Mac computer, you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
+                    <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In OS X you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
-                    <p>After that, open UNetbootin from your application menu. It will open a window like the one below:</p>
+                    <p>Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:</p>
 
                     <img src="images/installation/unetbootin.png" alt="UNetbootin">
 
-                    <p>Make sure "Diskimage" is selected, and click the "..." to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.</p>
+                    <p>Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.</p>
                 </div>
 
 
