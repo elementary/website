@@ -1,6 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Privacy Policy &sdot; elementary';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/privacy-policy.css">';
     include '_templates/header.php';
 ?>
             <div class="row">
@@ -18,17 +19,28 @@
                 <p>Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see <a class="read-more" target="_blank" href="https://stripe.com/privacy">Stripe's Privacy Policy</a></p>
                 <h5>Manage Cookies</h5>
                 <p>As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.</p>
-                <ul>
-                    <li><a target="_blank" href="https://support.google.com/chrome/answer/95647">Google Chrome</a></li>
-                    <li>Mozilla Firefox
-                        <ul>
-                            <li><a target="_blank" href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">Disable Cookies</a></li>
-                            <li><a target="_blank" href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored">Manage Cookies</a></li>
-                        </ul>
-                    </li>
-                    <li><a target="_blank" href="http://windows.microsoft.com/en-gb/internet-explorer/delete-manage-cookies">Microsoft Internet Explorer</a></li>
-                    <li><a target="_blank" href="http://help.opera.com/Windows/12.10/en/cookies.html">Opera</a></li>
-                </ul>
+                <div class="browsers-list">
+                    <a target="_blank" href="https://support.google.com/chrome/answer/95647" class="column">
+                        <img src="images/privacy-policy/chrome_128x128.png" alt="Google Chrome" />
+                        <h4>Chrome</h4>
+                    </a>
+                    <a target="_blank" href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored" class="column">
+                        <img src="images/privacy-policy/firefox_128x128.png" alt="Firefox" />
+                        <h4>Firefox</h4>
+                    </a>
+                    <a target="_blank" href="http://windows.microsoft.com/en-gb/internet-explorer/delete-manage-cookies" class="column">
+                        <img src="images/privacy-policy/internet-explorer_128x128.png" alt="Internet Explorer" />
+                        <h4>IE</h4>
+                    </a>
+                    <a target="_blank" href="http://help.opera.com/Windows/12.10/en/cookies.html" class="column">
+                        <img src="images/privacy-policy/opera_128x128.png" alt="Opera" />
+                        <h4>Opera</h4>
+                    </a>
+                    <a target="_blank" href="http://support.apple.com/kb/PH17191" class="column">
+                        <img src="images/privacy-policy/safari_128x128.png" alt="Safari" />
+                        <h4>Safari</h4>
+                    </a>
+                </div>
             </div>
 <?php
     include '_templates/footer.html';

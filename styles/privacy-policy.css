@@ -1,0 +1,9 @@
+.browsers-list {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.browsers-list img {
+    display: block;
+    width: 50px;
+}
