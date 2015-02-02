@@ -25,6 +25,7 @@
 
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Raleway:100">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
