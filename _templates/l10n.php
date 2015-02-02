@@ -250,7 +250,7 @@ if (!is_lang($lang)) {
 $page['lang'] = $lang; // Set page variable
 
 // Autoredirection
-if ($_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
+if (isset($_GET['lang']) && $_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
     $url = $sitewide['root'];
     $url .= $page['lang'].'/';
     if ($page['name'] != 'index') {
