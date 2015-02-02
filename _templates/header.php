@@ -5,6 +5,11 @@ if (!isset($page['name'])) {
 
 include_once './_templates/l10n.php';
 
+$page['lang-root'] = '/';
+if (isset($page['lang']) && $page['lang'] != 'en') {
+    $page['lang-root'] = '/'.$page['lang'].'/';
+}
+
 set_l10n_domain('layout');
 begin_html_l10n();
 ?>
@@ -73,14 +78,14 @@ begin_html_l10n();
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <ul class="left">
-                <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
+                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
-                <li><a href="/store">Store</a></li>
+                <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
             </ul>
             <ul class="right">
-                <li><a href="/developer">Developer</a></li>
-                <li><a href="/get-involved">Get Involved</a></li>
+                <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
+                <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
             </ul>
         </nav>
 
