@@ -36,12 +36,6 @@ function load_translations($index, $lang) {
     return json_decode($json, true);
 }
 
-$lang = user_lang();
-if (!is_lang($lang)) {
-    $lang = 'en';
-}
-$page['lang'] = $lang; // Set page variable
-
 $l10nDomain = null;
 $translations = array();
 function set_l10n_domain($domain) {
@@ -242,4 +236,26 @@ function end_html_l10n() {
     }
 
     ob_end_flush();
+}
+
+// Set page language
+if (isset($_GET['lang'])) {
+    $lang = $_GET['lang'];
+} else {
+    $lang = user_lang();
+}
+if (!is_lang($lang)) {
+    $lang = 'en';
+}
+$page['lang'] = $lang; // Set page variable
+
+// Autoredirection
+if ($_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
+    $url = $sitewide['root'];
+    $url .= $page['lang'].'/';
+    if ($page['name'] != 'index') {
+        $url .= $page['name'];
+    }
+    header('Location: '.$url);
+    exit();
 }
