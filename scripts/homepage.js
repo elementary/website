@@ -54,6 +54,11 @@ function do_stripe_payment (amount) {
             console.log(token);
             process_payment(amount, token);
             open_download_overlay();
+
+            if ($('#amount-twenty-five').val() !== 0) {
+                $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
+                $('#amount-twenty-five').each(amountClick);
+            }
         },
         name: 'elementary LLC.',
         description: 'elementary OS download',
