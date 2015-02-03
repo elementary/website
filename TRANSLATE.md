@@ -4,6 +4,8 @@ You can translate the website online on Transifex: https://www.transifex.com/pro
 
 You can propose new languages if they're not listed.
 
+Please read the [branding guidelines](http://elementaryos.org/journal/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
+
 # Web developers
 
 ## Extracting translations from HTML files
