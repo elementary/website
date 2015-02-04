@@ -793,3 +793,10 @@ input:focus:-ms-input-placeholder {
 body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
+
+/*****************
+* Browsers icons *
+*****************/
+.browsers-list {
+    width: 50px;
+}
