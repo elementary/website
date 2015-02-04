@@ -314,6 +314,7 @@ footer ul li a:focus i.fa {
 
 .column {
     display: inline-block;
+    max-width: 100%;
 }
 
 .column.third {
