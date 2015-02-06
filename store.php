@@ -13,5 +13,5 @@
             </div>
 
 <?php
-    include '_templates/footer.html';
+    include '_templates/footer.php';
 ?>
