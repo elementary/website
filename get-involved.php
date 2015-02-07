@@ -8,6 +8,7 @@
     include '_templates/header.php';
 ?>
             <section class="row hero">
+                <h1>Check out our progress for Freya Beta 2</h1>
                 <div class="charts">
                     <div class="barchart-ctn">
                         <canvas width="750" height="400"></canvas>
@@ -36,9 +37,6 @@
                         </div>
                     </div>
                 </div>
-
-                <h4>Contribute by doing these things</h4>
-
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
