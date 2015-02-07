@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Installing elementary OS';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <div class="row">
                 <h1>Installation</h1>
@@ -128,5 +128,5 @@
             <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
             <script type="text/javascript" src="scripts/installation.js"></script>
 <?php
-    include '_templates/footer.php';
+    include $template['footer'];
 ?>
