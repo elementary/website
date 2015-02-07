@@ -38,7 +38,7 @@ Templating System
 * PHP-based
 * Pages go in root as .php files
 * Include `_templates/sitewide.php`, set any variables, then include `_templates/header.php` (see [code-of-conduct](https://github.com/elementary/mvp/blob/master/code-of-conduct.php) for an example) at top of page.
-* Include `_templates/footer.html` at bottom of page.
+* Include `_templates/footer.php` at bottom of page.
 * Page variables:
   * `$page['title']`
   * `$page['description']`

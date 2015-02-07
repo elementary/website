@@ -67,5 +67,5 @@
             </div>
             <a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
-    include '_templates/footer.html';
+    include '_templates/footer.php';
 ?>
