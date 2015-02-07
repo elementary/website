@@ -41,3 +41,8 @@ To pull a new language:
 ```shell
 tx pull -l <lang>
 ```
+
+To pull **all** trabslations, even new ones:
+```shell
+tx pull -a
+```
