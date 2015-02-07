@@ -78,6 +78,46 @@
         $('.open-modal').click();
     }
 
+    function detect_os() {
+        var ua = window.navigator.userAgent;
+        if (ua.indexOf('Android') >= 0) {
+            return 'Android';
+        }
+        if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
+            return 'iOS';
+        }
+        if (ua.indexOf('Windows') >= 0) {
+            return 'Windows';
+        }
+        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
+            return 'OS X';
+        }
+        if (ua.indexOf('Linux') >= 0) {
+            return 'Linux';
+        }
+        return 'Other';
+    }
+
+    if (window.ga) {
+        var download_links = $('#download-modal .actions').find('a');
+        var links_data = [
+            { arch: '32-bit', method: 'HTTP' },
+            { arch: '32-bit', method: 'Magnet' },
+            { arch: '64-bit', method: 'HTTP' },
+            { arch: '64-bit', method: 'Magnet' }
+        ];
+
+        for (var i = 0; i < links_data.length; i++) {
+            (function (data, link) {
+                $(link).click(function () {
+                    ga('send', 'event', 'Freya Beta Download (Architecture)', 'Homepage', data.arch);
+                    ga('send', 'event', 'Freya Beta Download (Method)', 'Homepage', data.method);
+                    ga('send', 'event', 'Freya Beta Download (OS)', 'Homepage', detect_os());
+                });
+            })(links_data[i], download_links[i]);
+        }
+    }
+
     // Get the stripe key from the server
     key_http = new XMLHttpRequest();
     key_http.open('GET','./backend/payment.php',true);

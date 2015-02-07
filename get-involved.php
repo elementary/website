@@ -154,5 +154,5 @@
 
             <script src="scripts/get-involved.js"></script>
 <?php
-    include '_templates/footer.html';
+    include '_templates/footer.php';
 ?>
