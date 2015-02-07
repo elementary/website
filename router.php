@@ -9,7 +9,7 @@
 // Allow query parameters to be appended to the request
 $requestUri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
-if (preg_match('#^/([a-z]{2})(/.*)?$#', $requestUri, $matches)) {
+if (preg_match('#^/([a-z]{2}(?:_[A-Z]{2})?)(/.*)?$#', $requestUri, $matches)) {
     $_GET['lang'] = $matches[1];
     $requestUri = (!empty($matches[2])) ? $matches[2] : '/';
 }

@@ -1,25 +1,47 @@
 <?php
-function user_lang() {
-    if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-        return null;
-    }
-    if (isset($_GET['lang'])) {
-        return strtolower(substr($_GET['lang'], 0, 2));
-    }
-
-    return strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
-}
-
 function lang_dir($lang) {
     return dirname(__FILE__).'/../lang/'.$lang;
 }
 
 function is_lang($lang) {
-    if (!preg_match('#^[a-z]{2}$#', $lang)) {
+    if (!is_string($lang)) {
+        return false;
+    }
+    if (!preg_match('#^[a-z]{2}(_[A-Z]{2})?$#', $lang)) {
         return false;
     }
 
     return is_dir(lang_dir($lang));
+}
+
+function user_lang() {
+    if (empty($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        return null;
+    }
+
+    $languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    foreach ($languages as $locale_str) {
+        $split = array_map('trim', explode(';', $locale_str, 2));
+        $lang_tag = $split[0];
+        $lang_tag = str_replace('-*', '', $lang_tag);
+
+        if (function_exists('locale_parse')) {
+            $locale = locale_parse($lang_tag);
+        } else {
+            $locale = array('language' => substr($lang_tag, 0, 2));
+        }
+
+        if (!empty($locale['region'])) {
+            $lang = $locale['language'].'_'.$locale['region'];
+            if (is_lang($lang)) {
+                return $lang;
+            }
+        } elseif (is_lang($locale['language'])) {
+            return $locale['language'];
+        }
+    }
+
+    return null;
 }
 
 function load_translations($index, $lang) {
