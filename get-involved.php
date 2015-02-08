@@ -5,11 +5,10 @@
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <section class="row hero">
                 <h1>Check out our progress for Freya Beta 2</h1>
-
                 <div class="charts">
                     <div class="barchart-ctn">
                         <canvas width="750" height="400"></canvas>
@@ -38,9 +37,6 @@
                         </div>
                     </div>
                 </div>
-
-                <h4>Contribute by doing these things</h4>
-
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
@@ -154,5 +150,5 @@
 
             <script src="scripts/get-involved.js"></script>
 <?php
-    include '_templates/footer.php';
+    include $template['footer'];
 ?>
