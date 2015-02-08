@@ -113,6 +113,7 @@ section:nth-child(5) .button.flat.suggested-action:focus {
     }
 
     .actions {
+        margin-top: 50px;
         margin-bottom: 50px;
     }
 }
