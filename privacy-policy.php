@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Privacy Policy &sdot; elementary';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <div class="row">
                 <h1>Privacy Policy</h1>
@@ -40,5 +40,5 @@
                 </a>
             </div>
 <?php
-    include '_templates/footer.php';
+    include $template['footer'];
 ?>

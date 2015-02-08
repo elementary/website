@@ -2,7 +2,7 @@
     $page['title'] = "Download elementary OS";
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     include '_templates/sitewide.php';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
@@ -67,5 +67,5 @@
             </div>
             <a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
-    include '_templates/footer.php';
+    include $template['footer'];
 ?>
