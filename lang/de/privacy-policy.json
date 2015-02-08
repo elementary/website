@@ -13,6 +13,10 @@
     "Stripe's Privacy Policy": "Stripes Datenschutzrichtlinie",
     "Manage Cookies": "Verwaltung von Cookies",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Da Sie unsere Seite bereits besucht haben, möchten Sie möglicherweise Cookies verwalten, welche in Ihrem Browser bereits gespeichert sind. Links zu den relevanten Anleitungen finden Sie hier:",
-    "Disable Cookies": "Cookies deaktivieren",
+    "Chrome": "Chrome",
+    "Firefox": "Firefox",
+    "Internet Explorer": "Internet Explorer",
+    "IE": "IE",
+    "Safari": "Safari",
     "Privacy Policy &sdot; elementary": "Datenschutzrichtlinie · elementary"
 }
