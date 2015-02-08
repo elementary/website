@@ -1,0 +1,22 @@
+{
+    "Privacy Policy": "Политика на поверителността",
+    "Do Not Track": "Забраняване на проследяването",
+    "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Този сайт се съобразява с настройката за забрана на следенето, налична в модерните браузъри и изключва Google Analytics, ако такава настройка е зададена. Не можем автоматично да премахнем други методи за следене, без това да се отрази сериозно на фунционалността на сайта. Ако желаете ръчно да управлявате тези методи, обърнете се към секцията за забраняване на бисквитките.",
+    "Cookies": "Бисквитки",
+    "You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.": "Можете да забраните или избирателно да изключите всички бисквити от трети лица чрез настройките на браузера си.",
+    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Този сайт използва бисквитки. Услугите в него работят и без тях, но с намаленa използваемост. Например, сайтът няма да запомни, ако вече сте платили за elementary OS; по подразбиране ще бъдете помолени да платите отново.",
+    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Използва бисквитки, за да събира данни относно поведението и да анализира относно потенциални заплахи. За повече информация, посетете",
+    "CloudFlare Privacy & Security Policy": "CloudFlare политика за поверителнст и сигурност",
+    "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "Използва бисквитки, за да събере информация – включително броя посетители на сайта, от къде са били пренасочени, кои страници от сайта посещават – на анонимен принцип. Информацията е използвана, за да подпомогне подобряването на сайта. За повече информация, вижте статията на Google относно",
+    "Safeguarding Your Data": "защитата на Вашите данни",
+    "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Използва бисквитки, за да запомни последната Ви поръчка и вашата страна, така че да предложи подходящи начини на плащане. За повече информация, посетете ",
+    "Stripe's Privacy Policy": "политиката за поверителност на Stripe",
+    "Manage Cookies": "Управление на бисквитките",
+    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "След като вече сте посетили сайта ни, може би желаете да управлявате вече записаните бисквитки в браузера Ви. Връзки към съответните инструкции можете да намерите по-долу.",
+    "Chrome": "Chrome",
+    "Firefox": "Firefox",
+    "Internet Explorer": "Internet Explorer",
+    "IE": "IE",
+    "Safari": "Safari",
+    "Privacy Policy &sdot; elementary": "Политика на поверителността ⋅ elementary"
+}

@@ -1,5 +1,20 @@
+<?php
+if (!isset($page['name'])) {
+    $page['name'] = basename($_SERVER['PHP_SELF'], '.php');
+}
+
+include_once './_templates/l10n.php';
+
+$page['lang-root'] = $sitewide['root'];
+if (isset($page['lang']) && $page['lang'] != 'en') {
+    $page['lang-root'] .= $page['lang'].'/';
+}
+
+set_l10n_domain('layout');
+begin_html_l10n();
+?>
 <!doctype html>
-<html>
+<html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>">
     <head>
 
         <meta charset="UTF-8">
@@ -23,9 +38,16 @@
 
         <title><?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?></title>
 
+        <base href="<?php echo $sitewide['root']; ?>">
+
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
+
+        <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
+        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
+        <?php } ?>
+
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
         <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Raleway:100">
         <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -55,18 +77,20 @@
         <?php } ?>
 
     </head>
-    <body class="page-<?php echo basename($_SERVER['PHP_SELF'], ".php"); ?>">
+    <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <ul class="left">
-                <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
+                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
                 <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
-                <li><a href="/store">Store</a></li>
+                <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
             </ul>
             <ul class="right">
-                <li><a href="/developer">Developer</a></li>
-                <li><a href="/get-involved">Get Involved</a></li>
+                <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
+                <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
             </ul>
         </nav>
 
         <div id="content-container">
+<?php
+set_l10n_domain($page['name']);

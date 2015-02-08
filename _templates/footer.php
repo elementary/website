@@ -1,6 +1,9 @@
+<?php
+set_l10n_domain('layout');
+?>
         </div>
         <footer>
-            <p>Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="/privacy-policy">Privacy Policy</a></p>
+            <p>Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a></p>
             <ul>
                 <li><a href="https://twitter.com/elementary" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="http://reddit.com/r/elementaryos" target="_blank" title="Reddit"><i class="fa fa-reddit"></i></a></li>
@@ -24,3 +27,6 @@
         <![endif]-->
     </body>
 </html>
+<?php
+end_html_l10n();
+?>

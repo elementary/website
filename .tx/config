@@ -1,0 +1,30 @@
+[main]
+host = https://www.transifex.com
+
+[elementary-mvp.layout]
+file_filter = lang/<lang>/layout.json
+source_lang = en
+
+[elementary-mvp.index]
+file_filter = lang/<lang>/index.json
+source_lang = en
+
+[elementary-mvp.get-involved]
+file_filter = lang/<lang>/get-involved.json
+source_lang = en
+
+[elementary-mvp.installation]
+file_filter = lang/<lang>/installation.json
+source_lang = en
+
+[elementary-mvp.developer]
+file_filter = lang/<lang>/developer.json
+source_lang = en
+
+[elementary-mvp.privacy-policy]
+file_filter = lang/<lang>/privacy-policy.json
+source_lang = en
+
+[elementary-mvp.store]
+file_filter = lang/<lang>/store.json
+source_lang = en

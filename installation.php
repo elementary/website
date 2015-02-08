@@ -91,7 +91,6 @@
                 <h3 id="booting-from-the-installation-medium">Booting from the Install Drive</h3>
                 <p>In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.</p>
 
-
                 <div class="text-center">
                     <div id="booting-choices" class="column linked">
                         <a class="button booting-on-a-pc" href="#booting-on-a-pc">Booting on a PC</a>
