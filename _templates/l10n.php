@@ -115,6 +115,7 @@ function translate_html($input, $translate = 'translate') {
     $i = 0;
     $tagName = '';
     $l10nId = '';
+    $l10nDisabled = false;
     while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
         $next = $i + 1;
@@ -152,16 +153,25 @@ function translate_html($input, $translate = 'translate') {
                             if ($nameEnd === false) {
                                 break;
                             }
-                            $valueEnd = strpos($attrs, '"', $nameEnd + 2);
-                            if ($valueEnd === false) {
-                                break;
-                            }
 
                             $name = substr($attrs, $j, $nameEnd - $j);
-                            $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+
+                            if ($attrs[$nameEnd + 1] == '"') {
+                                $valueEnd = strpos($attrs, '"', $nameEnd + 2);
+                                if ($valueEnd === false) {
+                                    break;
+                                }
+
+                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+                            } else {
+                                $value = null;
+                            }
 
                             if ($name == 'data-l10n-id') {
                                 $l10nId = $value;
+                            }
+                            if ($name == 'data-l10n-off') {
+                                $l10nDisabled = true;
                             }
                             if (in_array($name, $allowedTags)) {
                                 $tag .= ' '.$name.'="'.$translate($value, $l10nDomain, $value).'"';
@@ -213,7 +223,7 @@ function translate_html($input, $translate = 'translate') {
             }
 
             $text = substr($input, $i + 1, $next - $i - 1);
-            if (!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) {
+            if ((!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) && !$l10nDisabled) {
                 $cleanedText = trim($text);
                 if (!empty($cleanedText) || !empty($l10nId)) {
                     if (empty($l10nId)) {
@@ -228,6 +238,7 @@ function translate_html($input, $translate = 'translate') {
             }
             $output .= $text;
             $l10nId = '';
+            $l10nDisabled = false;
         }
 
         $i = $next;
