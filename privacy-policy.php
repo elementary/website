@@ -38,7 +38,7 @@
                     <img src="images/privacy-policy/safari_128x128.png" alt="Safari" class="browsers-list" />
                     <h4>Safari</h4>
                 </a>
-                <a target="_blank" href="https://wiki.xfce.org/midori/faq#blacklist_cookies" class="column">
+                <a target="_blank" href="http://midori-browser.org/faqs/#blacklist_cookies" class="column">
                     <img src="images/privacy-policy/midori_128x128.png" alt="Midori" class="browsers-list" />
                     <h4>Midori</h4>
                 </a>
