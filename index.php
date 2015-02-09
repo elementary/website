@@ -35,7 +35,7 @@
                     }
                 ?>
                 <button type="submit" id="download" class="suggested-action">Download Freya Beta</button>
-                <p class="small-label">886.0 MB (for PC or Mac)</p>
+                <p class="small-label">898.6 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <div class="column third">
