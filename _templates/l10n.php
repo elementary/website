@@ -2,19 +2,19 @@
 function list_langs() {
     return array(
         'en' => 'English',
-        'bg' => 'Bulgarian',
-        'zh_CN' => 'Chinese',
-        'nl' => 'Dutch',
-        'et' => 'Estonian',
-        'fr' => 'French',
-        'de' => 'German',
-        'it_IT' => 'Italian',
-        'no' => 'Norwegian',
-        'pt_PT' => 'Portuguese',
-        'ro_RO' => 'Romanian',
-        'ru' => 'Russian',
-        'sr' => 'Serbian',
-        'es' => 'Spanish'
+        'bg' => 'български език',
+        'zh_CN' => '國語',
+        'nl' => 'Nederlands',
+        'et' => 'Eesti',
+        'fr' => 'Français',
+        'de' => 'Deutsch',
+        'it_IT' => 'Italiano',
+        'no' => 'Norsk',
+        'pt_PT' => 'Português',
+        'ro_RO' => 'Română',
+        'ru' => 'Русский',
+        'sr' => 'Српски, Srpski',
+        'es' => 'Español'
     );
 }
 

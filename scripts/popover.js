@@ -5,8 +5,9 @@ $(function () {
 		var $popover = $(event.target).parent();
 		$popover.addClass('active');
 
-		$('body').one('click', function () {
+		$(document).one('click', function (event) {
 			$popover.removeClass('active');
+			event.stopImmediatePropagation();
 		});
 	});
 });
