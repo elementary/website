@@ -13,7 +13,15 @@
                 <img alt="elementary OS" id="logotype" src="images/logotype.svg">
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
-            <img class="hero" src="images/notebook.png">
+            <div class="hero">
+                <div class="screen">
+                    <img src="images/hero-poster.png" alt="">
+                    <video src="http://a.pomf.se/rmtawv.webm" poster="images/hero-poster.png" autoplay loop></video>
+                </div>
+                <div class="notebook">
+                    <img src="images/notebook.png" alt="">
+                </div>
+            </div>
             <div class="row">
                 <?php
                     if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
