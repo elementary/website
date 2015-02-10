@@ -846,7 +846,7 @@ body.sliding {
     bottom: -18px;
     border-top: 10px solid white;
 }
-.popover:hover .popover-content {
+.popover.active .popover-content {
     opacity: 1;
     left: -70px;
 }
