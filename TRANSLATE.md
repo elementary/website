@@ -42,7 +42,7 @@ To pull a new language:
 tx pull -l <lang>
 ```
 
-To pull **all** trabslations, even new ones:
+To pull **all** translations, even new ones:
 ```shell
 tx pull -a
 ```
