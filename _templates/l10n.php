@@ -1,4 +1,23 @@
 <?php
+function list_langs() {
+    return array(
+        'en' => 'English',
+        'bg' => 'Bulgarian',
+        'zh_CN' => 'Chinese',
+        'nl' => 'Dutch',
+        'et' => 'Estonian',
+        'fr' => 'French',
+        'de' => 'German',
+        'it_IT' => 'Italian',
+        'no' => 'Norwegian',
+        'pt_PT' => 'Portuguese',
+        'ro_RO' => 'Romanian',
+        'ru' => 'Russian',
+        'sr' => 'Serbian',
+        'es' => 'Spanish'
+    );
+}
+
 function lang_dir($lang) {
     return dirname(__FILE__).'/../lang/'.$lang;
 }
