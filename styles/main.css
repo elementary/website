@@ -870,6 +870,11 @@ body.sliding {
 .popover .popover-content ul li a:hover {
     background-color: #e0e0e0;
 }
+.popover .popover-content hr {
+    background: #e0e0e0;
+    height: 1px;
+    border: 0;
+}
 
 /*****************
 * Browsers icons *

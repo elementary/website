@@ -17,6 +17,11 @@ set_l10n_domain('layout');
                         ?>
                         <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>"><?php echo $langName; ?></a></li>
                         <?php
+                        if ($langCode == 'en') {
+                            ?>
+                            <hr>
+                            <?php
+                        }
                     }
                     ?>
                     </ul>
