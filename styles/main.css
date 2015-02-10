@@ -815,10 +815,11 @@ body.sliding {
     bottom: 30px;
     width: 200px;
     z-index: 2;
-    border: 1px solid #b2b2b2;
+    border: 1px solid rgba(0,0,0,0.2);
     border-radius: 5px;
     background: white;
     color: #333;
+    background-clip: content-box;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: left;
     opacity: 0;
@@ -839,7 +840,7 @@ body.sliding {
 }
 .popover .popover-content:before {
     bottom: -20px;
-    border-top: 10px solid #b2b2b2;
+    border-top: 10px solid rgba(0,0,0,0.2);
 }
 .popover .popover-content:after {
     bottom: -18px;
