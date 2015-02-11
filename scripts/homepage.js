@@ -57,7 +57,7 @@
         StripeCheckout.open({
             key: stripe_key,
             token: function (token) {
-                console.log(token);
+                console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
                 open_download_overlay();
             },
@@ -71,7 +71,7 @@
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id);
+        payment_http.send('amount=' + amount + '&token=' + token.id + '&receipt=' + token.email);
     }
 
     function open_download_overlay () {
