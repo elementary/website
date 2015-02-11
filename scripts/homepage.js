@@ -63,14 +63,14 @@
     }
 
     function process_payment (amount, token) {
-        payment_http = new XMLHttpRequest();
-        payment_http.open('POST','./backend/payment.php',true);
-        payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id);
         if ($('#amount-twenty-five').val() !== 0) {
             $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
             $('#amount-twenty-five').each(amountClick);
         }
+        payment_http = new XMLHttpRequest();
+        payment_http.open('POST','./backend/payment.php',true);
+        payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+        payment_http.send('amount=' + amount + '&token=' + token.id);
     }
 
     function open_download_overlay () {
