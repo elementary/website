@@ -827,8 +827,8 @@ body.sliding {
     text-align: left;
     opacity: 0;
 
-    left: -999px;
-    transition: opacity 250ms;
+    visibility: hidden;
+    transition: visibility 0s 250ms, opacity 250ms;
 }
 .popover .popover-content:before,
 .popover .popover-content:after {
@@ -850,8 +850,9 @@ body.sliding {
     border-top: 10px solid white;
 }
 .popover.active .popover-content {
+    visibility: visible;
     opacity: 1;
-    left: -70px;
+    transition: opacity 250ms;
 }
 .popover .popover-content strong {
     display: inline-block;
