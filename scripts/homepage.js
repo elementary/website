@@ -43,6 +43,11 @@
         console.log('Starting payment for ' + payment_amount);
         if (payment_amount < payment_minimum) {
             open_download_overlay();
+
+            if ($('#amount-twenty-five').val() !== 0) {
+                $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
+                $('#amount-twenty-five').each(amountClick);
+            }
         } else {
             do_stripe_payment(payment_amount);
         }
