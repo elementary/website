@@ -34,6 +34,10 @@ function is_lang($lang) {
 }
 
 function user_lang() {
+    if (isset($_COOKIE['language']) && is_lang($_COOKIE['language'])) {
+        return $_COOKIE['language'];
+    }
+
     if (empty($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
         return null;
     }
@@ -291,7 +295,7 @@ if (!is_lang($lang)) {
 $page['lang'] = $lang; // Set page variable
 
 // Autoredirection
-if (isset($_GET['lang']) && $_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
+if ((isset($_GET['lang']) || isset($_COOKIE['language'])) && $_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
     $url = $sitewide['root'];
     $url .= $page['lang'].'/';
     if ($page['name'] != 'index') {
@@ -299,4 +303,7 @@ if (isset($_GET['lang']) && $_GET['lang'] != $page['lang'] && $page['lang'] != '
     }
     header('Location: '.$url);
     exit();
+}
+if (isset($_GET['lang'])) {
+    setcookie('language', $lang,  time() + 60*60*24*30, '/'); // 30 days
 }
