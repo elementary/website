@@ -279,6 +279,10 @@ footer > ul {
     padding: 0 12px;
 }
 
+footer .popover {
+    margin: 12px 0;
+}
+
 @media (min-width: 375px) {
     footer > p {
         float: left;
@@ -286,6 +290,10 @@ footer > ul {
 
     footer > ul {
         float:right;
+    }
+
+    footer > .popover {
+        float: left;
     }
 }
 
@@ -313,11 +321,6 @@ footer a:focus i.fa {
 
 footer ul li a:focus {
     outline: none;
-}
-
-footer .popover {
-    float: left;
-    margin: 12px 0;
 }
 
 .column {
@@ -858,6 +861,13 @@ body.sliding {
 .popover .popover-content ul {
     margin: 5px 0;
     padding: 0;
+    max-height: 500px;
+    overflow: auto;
+}
+@media (max-height: 500px) {
+    .popover .popover-content ul {
+        max-height: 300px;
+    }
 }
 .popover .popover-content ul li {
     display: block;
