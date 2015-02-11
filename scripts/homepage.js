@@ -43,11 +43,6 @@
         console.log('Starting payment for ' + payment_amount);
         if (payment_amount < payment_minimum) {
             open_download_overlay();
-
-            if ($('#amount-twenty-five').val() !== 0) {
-                $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
-                $('#amount-twenty-five').each(amountClick);
-            }
         } else {
             do_stripe_payment(payment_amount);
         }
@@ -72,6 +67,10 @@
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
         payment_http.send('amount=' + amount + '&token=' + token.id);
+        if ($('#amount-twenty-five').val() !== 0) {
+            $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
+            $('#amount-twenty-five').each(amountClick);
+        }
     }
 
     function open_download_overlay () {
