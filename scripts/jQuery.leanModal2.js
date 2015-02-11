@@ -49,6 +49,9 @@
                         return false;
                     } // IFHREF
 
+                    $('.js-target-jquery-leanmodal-overlay').click(function() {
+                        leanModal_Close(modal_id);
+                    });
                     // If a close button is set, link it to the close command.
                     if ( options.closeButton ) {
                         $(options.closeButton).click(function() {

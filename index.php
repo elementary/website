@@ -54,6 +54,7 @@
                 </div>
             </div>
             <div id="download-modal" class="modal">
+                <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
