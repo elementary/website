@@ -255,7 +255,6 @@ function translate_html($input, $translate = 'translate') {
             }
 
             $text = substr($input, $i + 1, $next - $i - 1);
-            $tagNames[] = $tagName;
             if ((!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) && !$l10nDisabled) {
                 $cleanedText = trim($text);
                 if (!empty($cleanedText) || !empty($l10nId)) {
