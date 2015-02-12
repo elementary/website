@@ -236,6 +236,12 @@ function translate_html($input, $translate = 'translate') {
                 if ($ignoredCount == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
                     $next = $originalNext;
                 }
+            } elseif ($tagName == 'script') {
+                // Avoid some bugs when < and > are present in script tags
+                $closeTag = '</script>';
+                while (substr($input, $next, strlen($closeTag)) != $closeTag) {
+                    $next = strpos($input, '<', $next + 1);
+                }
             }
 
             $text = substr($input, $i + 1, $next - $i - 1);
