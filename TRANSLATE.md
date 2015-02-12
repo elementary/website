@@ -28,6 +28,11 @@ To ignore a translation string, set it to `false` in `/lang/en/<page>.json`:
 }
 ```
 
+Alternatively, you can add the `data-l10n-off` attribute to a tag:
+```html
+<p data-l10n-off="1">I'm ignored.</p>
+```
+
 ## Pull translated files from Transifex
 
 You will need first to install the Transifex client: http://docs.transifex.com/developer/client/setup
