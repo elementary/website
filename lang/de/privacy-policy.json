@@ -1,5 +1,5 @@
 {
-    "Privacy Policy": "Datenschutzrichtlinien",
+    "Privacy Policy": "Datenschutzrichtlinie",
     "Do Not Track": "Nicht-Verfolgung",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Diese Internetseite respektiert die Do-Not-Track-Option (Nicht-Verfolgung), über welche die meisten modernen Browser verfügen und deaktiviert Google Analytics, wenn dieses vorhanden ist. Andere Verfolgungsmethoden (sog. Tracking) können wir nicht automatisch entfernen, ohne den Nutzen unserer Seite zu beeinträchtigen. Wünschen Sie, diese Verfolgungsmethoden selbst zu verwalten, ziehen Sie den Abschnitt zum Verwalten von Cookies zu Rate.",
     "Cookies": "Cookies",
@@ -13,10 +13,6 @@
     "Stripe's Privacy Policy": "Stripes Datenschutzrichtlinie",
     "Manage Cookies": "Verwaltung von Cookies",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Da Sie unsere Seite bereits besucht haben, möchten Sie möglicherweise Cookies verwalten, welche in Ihrem Browser bereits gespeichert sind. Links zu den relevanten Anleitungen finden Sie hier:",
-    "Chrome": "Chrome",
-    "Firefox": "Firefox",
-    "Internet Explorer": "Internet Explorer",
-    "IE": "IE",
-    "Safari": "Safari",
+    "Midori": "Midori",
     "Privacy Policy &sdot; elementary": "Datenschutzrichtlinie · elementary"
 }

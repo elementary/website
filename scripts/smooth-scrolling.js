@@ -1,5 +1,5 @@
 $(function () {
-	$('body').on('click', 'a', function (event) {
+	$(document).on('click', 'a', function (event) {
 		// Event already handled?
 		if (event.isDefaultPrevented()) {
 			return;
