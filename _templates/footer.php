@@ -15,7 +15,7 @@ set_l10n_domain('layout');
                     foreach (list_langs() as $langCode => $langName) {
                         $path = $sitewide['root'].(($langCode == 'en') ? '' : $langCode.'/').(($page['name'] == 'index') ? '' : $page['name']);
                         ?>
-                        <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>">
+                        <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off="1">
                             <?php echo $langName; ?>
                         </a></li>
                         <?php

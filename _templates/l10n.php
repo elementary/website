@@ -243,9 +243,15 @@ function translate_html($input, $translate = 'translate') {
                 if ($ignoredCount == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
                     $next = $originalNext;
                 }
+            } elseif ($tagName == 'script') {
+                $closeTag = '</script>';
+                while (substr($input, $next, strlen($closeTag)) != $closeTag) {
+                    $next = strpos($input, '<', $next + 1);
+                }
             }
 
             $text = substr($input, $i + 1, $next - $i - 1);
+            $tagNames[] = $tagName;
             if ((!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) && !$l10nDisabled) {
                 $cleanedText = trim($text);
                 if (!empty($cleanedText) || !empty($l10nId)) {
