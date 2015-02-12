@@ -10,7 +10,7 @@
             </script>
 
             <div class="row">
-                <img alt="elementary OS" id="logotype" src="images/logotype.svg">
+                <object data="images/logotype.svg" type="image/svg+xml" id="logotype">elementary OS</object>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
@@ -54,6 +54,7 @@
                 </div>
             </div>
             <div id="download-modal" class="modal">
+                <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">

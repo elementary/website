@@ -263,26 +263,37 @@ footer {
     text-align: center;
     font-size: 12px;
     color: inherit;
+}
+
+footer > p, footer > div > a, footer > ul {
     opacity: 0.8;
 }
 
-footer p {
+footer > p {
     text-align: center;
     padding: 0 12px;
 }
 
-footer ul {
+footer > ul {
     list-style: none;
     padding: 0 12px;
 }
 
+footer .popover {
+    margin: 12px 0;
+}
+
 @media (min-width: 375px) {
-    footer p {
+    footer > p {
         float: left;
     }
 
-    footer ul {
+    footer > ul {
         float:right;
+    }
+
+    footer > .popover {
+        float: left;
     }
 }
 
@@ -299,17 +310,17 @@ footer a {
     color: inherit;
 }
 
-footer ul li i.fa {
+footer i.fa {
     font-size: 16px;
+}
+
+footer a:focus i.fa {
+    color: #08c;
+    text-shadow: 0 1px 6px #08c;
 }
 
 footer ul li a:focus {
     outline: none;
-}
-
-footer ul li a:focus i.fa {
-    color: #08c;
-    text-shadow: 0 1px 6px #08c;
 }
 
 .column {
@@ -763,6 +774,11 @@ input:focus:-ms-input-placeholder {
     margin: 6px;
 }
 
+i.fa.fa-close.close-modal {
+    float: left;
+    cursor: pointer;
+}
+
 /*********
 * Slider *
 *********/
@@ -792,6 +808,88 @@ input:focus:-ms-input-placeholder {
 
 body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
+}
+
+/**********
+* Popover *
+**********/
+
+.popover {
+    position: relative;
+}
+.popover .popover-content {
+    position: absolute;
+    left: -70px;
+    bottom: 30px;
+    width: 200px;
+    z-index: 2;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: white;
+    color: #333;
+    background-clip: content-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: left;
+    opacity: 0;
+
+    visibility: hidden;
+    transition: visibility 0s 250ms, opacity 250ms;
+}
+.popover .popover-content:before,
+.popover .popover-content:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    width: 0px;
+    height: 0px;
+    border: 10px outset transparent;
+}
+.popover .popover-content:before {
+    bottom: -20px;
+    border-top: 10px solid rgba(0,0,0,0.2);
+}
+.popover .popover-content:after {
+    bottom: -18px;
+    border-top: 10px solid white;
+}
+.popover.active .popover-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms;
+}
+.popover .popover-content strong {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+.popover .popover-content ul {
+    margin: 5px 0;
+    padding: 0;
+    max-height: 500px;
+    overflow: auto;
+}
+@media (max-height: 500px) {
+    .popover .popover-content ul {
+        max-height: 300px;
+    }
+}
+.popover .popover-content ul li {
+    display: block;
+    margin: 0;
+}
+.popover .popover-content ul li a {
+    display: block;
+    padding: 5px 15px;
+}
+.popover .popover-content ul li a:hover {
+    background-color: #e0e0e0;
+}
+.popover .popover-content hr {
+    background: #e0e0e0;
+    height: 1px;
+    border: 0;
 }
 
 /*****************
