@@ -763,6 +763,11 @@ input:focus:-ms-input-placeholder {
     margin: 6px;
 }
 
+i.fa.fa-close.close-modal {
+    float: left;
+    cursor: pointer;
+}
+
 /*********
 * Slider *
 *********/
