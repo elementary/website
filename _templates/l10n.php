@@ -179,19 +179,13 @@ function translate_html($input, $translate = 'translate') {
                             if ($nameEnd === false) {
                                 break;
                             }
+                            $valueEnd = strpos($attrs, '"', $nameEnd + 2);
+                            if ($valueEnd === false) {
+                                break;
+                            }
 
                             $name = substr($attrs, $j, $nameEnd - $j);
-
-                            if ($attrs[$nameEnd + 1] == '"') {
-                                $valueEnd = strpos($attrs, '"', $nameEnd + 2);
-                                if ($valueEnd === false) {
-                                    break;
-                                }
-
-                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
-                            } else {
-                                $value = null;
-                            }
+                            $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
 
                             if ($name == 'data-l10n-id') {
                                 $l10nId = $value;
