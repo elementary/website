@@ -1,5 +1,5 @@
 {
-    "Privacy Policy": "Privacy Policy",
+    "Privacy Policy": "私隱政策",
     "Do Not Track": "Do Not Track",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.",
     "Cookies": "Cookies",
@@ -11,12 +11,8 @@
     "Safeguarding Your Data": "Safeguarding Your Data",
     "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see",
     "Stripe's Privacy Policy": "Stripe's Privacy Policy",
-    "Manage Cookies": "Manage Cookies",
+    "Manage Cookies": "管理 Cookies",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.",
-    "Chrome": "Chrome",
-    "Firefox": "Firefox",
-    "Internet Explorer": "Internet Explorer",
-    "IE": "IE",
-    "Safari": "Safari",
+    "Midori": "Midori",
     "Privacy Policy &sdot; elementary": "Privacy Policy ⋅ elementary"
 }
