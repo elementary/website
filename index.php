@@ -10,30 +10,32 @@
             </script>
 
             <div class="row">
-                <img alt="elementary OS" id="logotype" src="images/logotype.svg">
+                <object data="images/logotype.svg" type="image/svg+xml" id="logotype">elementary OS</object>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
             <div class="row">
-                <?php
-                    if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
-                        ?>
-                <input type="hidden" id="amount-twenty-five" value="0">
-                        <?php
-                    } else {
-                        ?>
-                <button id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
-                <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
-                <button id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
-                <div class="column">
-                    <sup class="pre-amount">$</sup>
-                    <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
-                    <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                <div id="amounts">
+                    <?php
+                        if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
+                            ?>
+                    <input type="hidden" id="amount-twenty-five" value="0">
+                            <?php
+                        } else {
+                            ?>
+                    <button id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
+                    <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
+                    <button id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
+                    <div class="column">
+                        <sup class="pre-amount">$</sup>
+                        <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
+                        <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                    </div>
+                    <div style="clear:both;"></div>
+                            <?php
+                        }
+                    ?>
                 </div>
-                <div style="clear:both;"></div>
-                        <?php
-                    }
-                ?>
                 <button type="submit" id="download" class="suggested-action">Download Freya Beta</button>
                 <p class="small-label">898.6 MB (for PC or Mac)</p>
             </div>
@@ -52,6 +54,7 @@
                 </div>
             </div>
             <div id="download-modal" class="modal">
+                <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
