@@ -3,7 +3,6 @@
     "Fixed": "Résolu",
     "In Progress": "En cours",
     "Unfixed": "Non résolu",
-    "Contribute by doing these things": "Contribuez en faisant ceci",
     "Translations": "Traductions",
     "Web Development": "Développement Web",
     "Design": "Design",
@@ -13,11 +12,11 @@
     "View Our Translations Page": "Voir Notre Page de Traduction",
     "Get More Info About Rosetta": "En Savoir Plus sur Rosetta",
     "World map": "Carte du monde",
-    "&ldquo;Websites should look good from the inside and out&rdquo;": "“Les sites web devraient être bons aussi bien de l'intérieur que de l'extérieur.”",
+    "&ldquo;Websites should look good from the inside and out&rdquo;": "Un site web devrait avoir l'air aussi beau de l'intérieur que de l'extérieur.",
     "Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.": "Notre site web utilise HTML, CSS, PHP et Javascript. Nous sommes toujours à la recherche de personnes expérimentées qui pourraient contribuer et rendre le site encore meilleur. La plupart du travail de design est réalisé par notre équipe de design, mais nous aimons recevoir des idées sur le design et des commentaires pour notre équipe web.",
     "Fork Us on GitHub": "Forkez-nous sur Github",
     "See Our Open Bug Reports": "Voir Nos Rapports de Bugs",
-    "&ldquo;Great design is making something memorable and meaningful.&rdquo;": "“Le bon design rend quelque chose mémorable et pleine de sens.”",
+    "&ldquo;Great design is making something memorable and meaningful.&rdquo;": "Un bon concept rend son objet remarquable et lui donne du sens.",
     "Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:": "Chaque projet débute avec une idée. Notre équipe de design les prend et les organise en objectifs. Le design est composé de deux éléments :",
     "Visual Design": "Le Design Visuel",
     "A great place for visual designers to get started is by sharing mockups with": "Un lieu adaptée pour les designers visuels pour commencer en partageant des maquettes avec ",
@@ -33,5 +32,5 @@
     "Browse Our Desktop Code": "Parcourir le Code Source du Bureau",
     "Browse Our Apps' Code": "Parcourir le code source de nos applications",
     "Scratch text editor": "L'éditeur de texte Scratch",
-    "Get Involved with elementary OS": "Participer à elementary OS"
+    "Get Involved with elementary OS": "Contribuer à elementary OS"
 }

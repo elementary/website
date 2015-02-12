@@ -1,13 +1,15 @@
 {
-    "Download elementary OS": "Download elementary OS",
-    "Blog": "Blog",
-    "Support": "Support",
-    "Store": "Store",
-    "Developer": "Developer",
-    "Get Involved": "Get Involved",
-    "Privacy Policy": "Privacy Policy",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "The elementary OS website is built on modern web technologies your browser doesn’t support.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.",
-    "Dismiss": "Dismiss",
-    "Learn More": "Learn More"
+    "Download elementary OS": "Скачай elementary OS",
+    "Blog": "Блог",
+    "Support": "Поддержка",
+    "Store": "Магазин",
+    "Developer": "Разработка",
+    "Get Involved": "Принять участие",
+    "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>",
+    "&nbsp;Language": "Language",
+    "Change Site Language": "Change Site Language",
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Сайт Elementary OS построен на современных веб-технологиях, Ваш браузер не поддерживается.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Эта версия Internet Explorer устарел и может содержать ошибки или уязвимости в системе безопасности. Пожалуйста, <a href=\"http://browsehappy.com/\"> обновитесь </a> до IE 11 или воспользуйтесь альтернативным браузером.",
+    "Dismiss": "Отказаться",
+    "Learn More": "Подробнее"
 }
