@@ -125,7 +125,7 @@
 
     // Get the stripe key from the server
     key_http = new XMLHttpRequest();
-    key_http.open('GET','./backend/payment.php',true);
+    key_http.open('GET','/backend/payment.php',true);
     key_http.onreadystatechange = function() {
         if (key_http.readyState == 4 && key_http.status == 200) {
             stripe_key = key_http.responseText;
