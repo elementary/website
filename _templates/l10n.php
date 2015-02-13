@@ -125,7 +125,7 @@ function translate_html($input, $translate = 'translate') {
     $output = ''; // Output HTML string
 
     // Tags that doesn't contain translatable text
-    $tagsBlacklist = array('script', 'kbd');
+    $tagsBlacklist = array('script', 'style', 'kbd');
 
     // Attributes that can be translated
     $attrsWhitelist = array(
@@ -141,25 +141,29 @@ function translate_html($input, $translate = 'translate') {
     $i = 0;
     $tagName = '';
     $l10nId = '';
+    $l10nDisabled = false;
     while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
         $next = $i + 1;
 
-        if ($char == '<') {
+        if ($char == '<') { // Tag node (<HERE>)
             $next = strpos($input, '>', $i);
             $tag = substr($input, $i + 1, $next - $i - 1);
 
             // Parse <tag>
             $attrsStart = strpos($tag, ' ');
-            if ($attrsStart !== false) {
+            if ($attrsStart !== false) { // There are attributes specified
                 $tagName = substr($tag, 0, $attrsStart);
                 $attrs = substr($tag, $attrsStart + 1);
 
+                // Parse attributes only if it's interesting
+                // (translatable attributes or data-l10n-* attributes)
                 if (isset($attrsWhitelist[$tagName]) || strpos($attrs, 'data-l10n-') !== false) {
+                    // Attributes that can be translated in this tag
                     if (isset($attrsWhitelist[$tagName])) {
-                        $allowedTags = $attrsWhitelist[$tagName];
+                        $allowedAttrs = $attrsWhitelist[$tagName];
                     } else {
-                        $allowedTags = array();
+                        $allowedAttrs = array();
                     }
 
                     $tag = substr($tag, 0, $attrsStart + 1);
@@ -174,6 +178,7 @@ function translate_html($input, $translate = 'translate') {
                                 $j++;
                             }
 
+                            // Extract attribute name and value
                             $nameEnd = strpos($attrs, '=', $j);
                             if ($nameEnd === false) {
                                 break;
@@ -186,10 +191,13 @@ function translate_html($input, $translate = 'translate') {
                             $name = substr($attrs, $j, $nameEnd - $j);
                             $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
 
-                            if ($name == 'data-l10n-id') {
+                            if ($name == 'data-l10n-id') { // Set translation ID for this tag
                                 $l10nId = $value;
                             }
-                            if (in_array($name, $allowedTags)) {
+                            if ($name == 'data-l10n-off') { // Disable translation for this tag
+                                $l10nDisabled = true;
+                            }
+                            if (in_array($name, $allowedAttrs)) { // Translate attribute
                                 $tag .= ' '.$name.'="'.$translate($value, $l10nDomain, $value).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
@@ -199,18 +207,18 @@ function translate_html($input, $translate = 'translate') {
                             break;
                         }
                     }
-                    if ($j < strlen($attrs)) {
+                    if ($j < strlen($attrs)) { // Broke inside the loop, append the remaining chars
                         $tag .= substr($attrs, $j);
                     }
                 }
-            } else {
+            } else { // No attributes in this tag
                 $tagName = $tag;
             }
 
             $output .= '<'.$tag.'>';
-        } else {
+        } else { // Text node (<tag>HERE</tag>)
             $next = strpos($input, '<', $i);
-            if ($next === false) {
+            if ($next === false) { // End Of File
                 $next = strlen($input);
             } elseif ($tagName == 'p' || $tagName == 'li') {
                 // Do not process ignored tags in <p> and <li>
@@ -236,19 +244,20 @@ function translate_html($input, $translate = 'translate') {
                 if ($ignoredCount == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
                     $next = $originalNext;
                 }
-            } elseif ($tagName == 'script') {
-                // Avoid some bugs when < and > are present in script tags
-                $closeTag = '</script>';
+            } elseif (in_array($tagName, $tagsBlacklist)) {
+                // Avoid some bugs when < and > are present in script/style tags
+                $closeTag = '</'.$tagName.'>';
                 while (substr($input, $next, strlen($closeTag)) != $closeTag) {
                     $next = strpos($input, '<', $next + 1);
                 }
             }
 
+            // Extract text to translate
             $text = substr($input, $i + 1, $next - $i - 1);
-            if (!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) {
+            if ((!in_array($tagName, $tagsBlacklist) || !empty($l10nId)) && !$l10nDisabled) {
                 $cleanedText = trim($text);
                 if (!empty($cleanedText) || !empty($l10nId)) {
-                    if (empty($l10nId)) {
+                    if (empty($l10nId)) { // data-l10n-id attribute not set, use text as ID
                         $l10nId = $cleanedText;
                     }
 
@@ -258,11 +267,15 @@ function translate_html($input, $translate = 'translate') {
                         substr($text, strrpos($text, substr($cleanedText, -1)) + 1);
                 }
             }
-            $output .= $text;
+
+            $output .= $text; // Append text to output
+
+            // Reset per-tag vars
             $l10nId = '';
+            $l10nDisabled = false;
         }
 
-        $i = $next;
+        $i = $next; // Jump to next interesting char
     }
 
     return $output;
