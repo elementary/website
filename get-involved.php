@@ -14,8 +14,8 @@
                         <canvas width="750" height="400"></canvas>
                     </div>
                     <div class="doughnuts-ctn">
-                        <div class="doughnut fix-committed">
-                            <canvas id="fix-committed-chart" width="90" height="90"></canvas>
+                        <div class="doughnut fixed">
+                            <canvas id="fixed-chart" width="90" height="90"></canvas>
                             <div class="doughnut-label">
                                 <span class="doughnut-count">133</span><br>
                                 Fixed

@@ -6,29 +6,29 @@ $(function () {
         var labels = {
             created: "Unfixed",
             in_progress: "In Progress",
-            fix_committed: "Fixed"
+            fixed: "Fixed"
         };
         var colors = {
             created: "#dc322f",
             in_progress: "#2aa198",
-            fix_committed: "#586e75"
+            fixed: "#586e75"
         };
 
         var chart = {
             labels: [],
             datasets: [
                 {
-                    label: labels.fix_committed,
-                    fillColor: colors.fix_committed,
+                    label: labels.fixed,
+                    fillColor: colors.fixed,
                     data: []
                 },
                 {
-                    label: labels.fix_committed,
+                    label: labels.in_progress,
                     fillColor: colors.in_progress,
                     data: []
                 },
                 {
-                    label: labels.fix_committed,
+                    label: labels.created,
                     fillColor: colors.created,
                     data: []
                 }
@@ -40,7 +40,7 @@ $(function () {
 
             chart.labels.push(new Date(parseInt(time, 10) * 1000).toLocaleDateString());
 
-            chart.datasets[0].data.push(point.fix_committed || 0);
+            chart.datasets[0].data.push(point.fixed || 0);
             chart.datasets[1].data.push(point.in_progress || 0);
             chart.datasets[2].data.push(point.created || 0);
         }
@@ -70,7 +70,7 @@ $(function () {
                 }
 
                 var point = {
-                    fix_committed: parseInt(tooltip.labels[0], 10),
+                    fixed: parseInt(tooltip.labels[0], 10),
                     in_progress: parseInt(tooltip.labels[1], 10),
                     created: parseInt(tooltip.labels[2], 10)
                 };
@@ -85,7 +85,7 @@ $(function () {
                 point = lastPoint;
             }
 
-            var total = point.created + point.in_progress + point.fix_committed;
+            var total = point.created + point.in_progress + point.fixed;
 
             for (var doughnutName in doughnutCharts) {
                 var doughnutId = doughnutName.replace('_', '-');
@@ -100,7 +100,7 @@ $(function () {
 
         lastPoint.created = lastPoint.created || 0;
         lastPoint.in_progress = lastPoint.in_progress || 0;
-        lastPoint.fix_committed = lastPoint.fix_committed || 0;
+        lastPoint.fixed = lastPoint.fixed || 0;
 
         var doughnutCharts = {};
         for (var doughnutName in lastPoint) {

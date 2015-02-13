@@ -12,7 +12,8 @@ $apiBaseUrl = 'https://api.launchpad.net/beta/';
 // Project name
 $targetName = 'elementary';
 // Milestone name
-$milestoneName = 'freya-beta2';
+// $milestoneName = 'freya-beta2';
+$milestoneName = 'freya-rc1';
 
 // Interval for each bar in chart
 $timeInterval = 7 * 24 * 60 * 60; // 1 week
@@ -56,7 +57,7 @@ while (!empty($nextCollectionPoint)) {
 			'status' => $task['status'],
 			'date_created' => $dateCreated,
 			'date_in_progress' => strtotime($task['date_in_progress']),
-			'date_fix_committed' => !empty($task['date_fix_committed']) ? strtotime($task['date_fix_committed']) : strtotime($task['date_fix_released'])
+			'date_fixed' => !empty($task['date_fix_committed']) ? strtotime($task['date_fix_committed']) : strtotime($task['date_fix_released'])
 		);
 	}
 
@@ -69,7 +70,7 @@ while (!empty($nextCollectionPoint)) {
 log_info('Got all tasks.');
 log_info('Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo));
 
-$dateStatuses = array('fix_committed', 'in_progress', 'created');
+$dateStatuses = array('fixed', 'in_progress', 'created');
 
 $chart = array();
 foreach ($tasks as $task) {
