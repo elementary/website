@@ -52,7 +52,7 @@
         StripeCheckout.open({
             key: stripe_key,
             token: function (token) {
-                console.log(token);
+                console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
                 open_download_overlay();
             },
@@ -68,9 +68,9 @@
             $('#amount-twenty-five').each(amountClick);
         }
         payment_http = new XMLHttpRequest();
-        payment_http.open('POST','./backend/payment.php',true);
+        payment_http.open('POST','/backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id);
+        payment_http.send('amount=' + amount + '&token=' + token.id + '&receipt=' + token.email);
     }
 
     function open_download_overlay () {
@@ -124,7 +124,7 @@
 
     // Get the stripe key from the server
     key_http = new XMLHttpRequest();
-    key_http.open('GET','./backend/payment.php',true);
+    key_http.open('GET','/backend/payment.php',true);
     key_http.onreadystatechange = function() {
         if (key_http.readyState == 4 && key_http.status == 200) {
             stripe_key = key_http.responseText;
