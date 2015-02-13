@@ -56,7 +56,7 @@ while (!empty($nextCollectionPoint)) {
 			'status' => $task['status'],
 			'date_created' => $dateCreated,
 			'date_in_progress' => strtotime($task['date_in_progress']),
-			'date_fix_committed' => strtotime($task['date_fix_committed'])
+			'date_fix_committed' => !empty($task['date_fix_committed']) ? strtotime($task['date_fix_committed']) : strtotime($task['date_fix_released'])
 		);
 	}
 
@@ -80,7 +80,7 @@ foreach ($tasks as $task) {
 				continue;
 			}
 			if ($statusDate <= $time) {
-				$chart[$time][$status]++;
+				@$chart[$time][$status]++;
 				break; // Count each task only once
 			}
 		}
