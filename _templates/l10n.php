@@ -3,18 +3,21 @@ function list_langs() {
     return array(
         'en' => 'English',
         'bg' => 'български език',
-        'zh_CN' => '國語',
-        'nl' => 'Nederlands',
+        'cs_CZ' => 'čeština',
+        'de' => 'Deutsch',
+        'es' => 'Español',
         'et' => 'Eesti',
         'fr' => 'Français',
-        'de' => 'Deutsch',
+        'id_ID' => 'Bahasa Indonesia',
         'it_IT' => 'Italiano',
+        'nl' => 'Nederlands',
+        'nb' => 'Bokmål',
         'no' => 'Norsk',
         'pt_PT' => 'Português',
         'ro_RO' => 'Română',
         'ru' => 'Русский',
         'sr' => 'Српски, Srpski',
-        'es' => 'Español'
+        'zh_CN' => '國語'
     );
 }
 
@@ -232,6 +235,12 @@ function translate_html($input, $translate = 'translate') {
                 // Just one link in the <p> ? Don't ignore it.
                 if ($ignoredCount == 1 && substr($input, $originalNext, 3) == '<a ' && substr($input, $next - 4, 4) == '</a>') {
                     $next = $originalNext;
+                }
+            } elseif ($tagName == 'script') {
+                // Avoid some bugs when < and > are present in script tags
+                $closeTag = '</script>';
+                while (substr($input, $next, strlen($closeTag)) != $closeTag) {
+                    $next = strpos($input, '<', $next + 1);
                 }
             }
 
