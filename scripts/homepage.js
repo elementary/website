@@ -70,7 +70,12 @@
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','/backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id + '&receipt=' + token.email);
+        payment_http.send('amount=' + amount + '&token=' + token.id + '&receipt=' + encodeURIComponent(token.email));
+        payment_http.onreadystatechange = function() {
+            if (payment_http.readyState == 4 && payment_http.status == 200) {
+                console.log('Payment response: ' + payment_http.responseText);
+            }
+        }
     }
 
     function open_download_overlay () {
