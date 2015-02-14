@@ -13,13 +13,13 @@
                 </div>
                 <div class="column half developer-sections">
                     <div id="dev-section-1" class="dev-section">
-                        <a href="http://elementaryos.org/docs/human-interface-guidelines" title="Design" target="_blank">
+                        <a href="http://elementary.io/docs/human-interface-guidelines" title="Design" target="_blank">
                             <h5>Design</h5>
                             <p>Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.</p>
                         </a>
                     </div>
                     <div id="dev-section-2" class="dev-section">
-                        <a href="http://elementaryos.org/docs/code" title="Code" target="_blank">
+                        <a href="http://elementary.io/docs/code" title="Code" target="_blank">
                             <h5>Code</h5>
                             <p>Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.</p>
                         </a>
