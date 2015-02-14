@@ -48,7 +48,7 @@
             <section id="translations" class="light">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementaryos.org/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             <section id="web-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementaryos.org/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
             <section id="design" class="light">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementaryos.org/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
                     </div>
                 </div>
@@ -112,9 +112,9 @@
                         </p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="http://elementaryos.org/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                            <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                             <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
-                            <a class="button flat" href="http://blog.elementaryos.org/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
+                            <a class="button flat" href="http://blog.elementary.io/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
                         </div>
                     </div>
                     <div class="column half">
@@ -126,7 +126,7 @@
             <section id="desktop-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementaryos.org/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
                     </div>
                 </div>
