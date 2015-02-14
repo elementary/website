@@ -82,8 +82,8 @@ begin_html_l10n();
         <nav>
             <ul class="left">
                 <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
-                <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
-                <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
+                <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
+                <li><a href="http://elementary.io/support" target="_blank">Support</a></li>
                 <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
             </ul>
             <ul class="right">
