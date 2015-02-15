@@ -48,9 +48,9 @@ begin_html_l10n();
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
-        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Raleway:100">
-        <link rel="stylesheet" type="text/css" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100">
+        <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <script>
@@ -83,7 +83,7 @@ begin_html_l10n();
             <ul class="left">
                 <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
-                <li><a href="http://elementary.io/support" target="_blank">Support</a></li>
+                <li><a href="https://elementary.io/support" target="_blank">Support</a></li>
                 <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
             </ul>
             <ul class="right">
