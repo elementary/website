@@ -180,7 +180,7 @@ section:nth-child(5) .button.flat.suggested-action:focus {
     }
 }
 
-.doughnut.fix-committed .doughnut-count {
+.doughnut.fixed .doughnut-count {
     color: #95A5AC;
 }
 
