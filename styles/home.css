@@ -1,6 +1,6 @@
 #carousel {
     height: 100vh;
-    background-image: url("images/screenshots/background.jpg");
+    background-image: url("../images/screenshots/background.jpg");
     background-size: cover;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
@@ -12,12 +12,38 @@
     margin-right: 16px;
 }
 
-#carousel .column.alert {
+#carousel > .column:first-child {
+    margin: 0;
+}
+
+#carousel > .column:nth-child(2) {
     margin-top: 56px;
-    max-width: 256px;
+}
+
+@media (max-width: 444px) {
+    #carousel > .column:nth-child(2) {
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 4px;
+        padding: 16px;
+    }
+
+    #carousel .column.alert {
+        width: 100%;
+    }
+
+    #carousel .column.alert h3,
+    #carousel .column.alert p {
+        text-align: center;
+    }
 }
 
 #carousel .column.alert img {
     height: 64px;
     width: 64px;
+}
+
+@media (min-width: 444px) {
+    #carousel > .column .column:nth-child(2) {
+        max-width: 256px;
+    }
 }
