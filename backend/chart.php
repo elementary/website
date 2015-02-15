@@ -15,13 +15,15 @@ $targetName = 'elementary';
 // $milestoneName = 'freya-beta2';
 $milestoneName = 'freya-rc1';
 
-// Interval for each bar in chart
-$timeInterval = 7 * 24 * 60 * 60; // 1 week
 // Build a chart from a date
 // Set to null to get data for the whole milestone
-$timeFrom = time() - 12 * 30 * 24 * 60 * 60; // 1 year
+//$timeFrom = time() - 12 * 30 * 24 * 60 * 60; // 1 year
+$timeFrom = mktime(12, 0, 0, 2, 9, 2015); // Date when beta 2 was released
 // Build a chart to a date
 $timeTo = time(); // Now
+// Interval for each bar in chart
+//$timeInterval = 7 * 24 * 60 * 60; // 1 week
+$timeInterval = (int) ($timeTo - $timeFrom) / 50; // 1 week
 
 // CONFIG ENDS HERE
 
