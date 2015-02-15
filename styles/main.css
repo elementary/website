@@ -351,6 +351,11 @@ footer ul li a:focus {
     }
 }
 
+.column.half {
+    text-align: left;
+    vertical-align: middle;
+}
+
 .column.third p {
     text-align: center;
 }

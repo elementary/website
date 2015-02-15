@@ -30,11 +30,6 @@ section .heading p.small-label a:hover {
     color: inherit;
 }
 
-.column.half {
-    text-align: left;
-    vertical-align: middle;
-}
-
 /*********
 * Button *
 *********/

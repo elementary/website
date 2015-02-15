@@ -1,0 +1,23 @@
+#carousel {
+    height: 100vh;
+    background-image: url("/images/screenshots/background.jpg");
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+#carousel > .column {
+    vertical-align: top;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#carousel .column.alert {
+    margin-top: 56px;
+    max-width: 256px;
+}
+
+#carousel .column.alert img {
+    height: 64px;
+    width: 64px;
+}

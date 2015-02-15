@@ -1,6 +1,7 @@
 <?php
     $page['title'] = "Download elementary OS";
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include '_templates/sitewide.php';
     include $template['header'];
 ?>
@@ -51,6 +52,20 @@
                 <div class="column third">
                     <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" alt="Lifehacker" /></a>
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+                </div>
+            </div>
+            <div id="carousel">
+                <div class="column">
+                    <img src="/images/screenshots/photos.png" />
+                </div>
+                <div class="column">
+                    <div class="column alert">
+                        <img src="/images/launcher-icons/photos.png" />
+                    </div>
+                    <div class="column alert">
+                        <h3>Photos</h3>
+                        <p>Import, Organize, and Edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                    </div>
                 </div>
             </div>
             <div id="download-modal" class="modal">
