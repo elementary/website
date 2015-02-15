@@ -23,7 +23,7 @@ $timeFrom = mktime(12, 0, 0, 2, 9, 2015); // Date when beta 2 was released
 $timeTo = time(); // Now
 // Interval for each bar in chart
 //$timeInterval = 7 * 24 * 60 * 60; // 1 week
-$timeInterval = (int) ($timeTo - $timeFrom) / 50; // 1 week
+$timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
 
 // CONFIG ENDS HERE
 
