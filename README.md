@@ -1,4 +1,4 @@
-The New elementaryos.org
+The New elementary.io
 ================
 
 We're focusing on getting the minimum viable product for our website up and running for the release of Freya. ~~To start, we're just getting a single-page download site ready for Freya. From there we will expand to a small number of pages as needed.~~ We'll want to make sure we migrate over any important information like docs before we can take the old site offline.
@@ -64,4 +64,3 @@ For a simple local development environment, you will need:
 * PHP5
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
-
