@@ -54,17 +54,39 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel">
-                <div class="column">
-                    <img src="images/screenshots/photos.png" />
-                </div>
-                <div class="column">
-                    <div class="column alert">
-                        <img src="images/launcher-icons/photos.png" />
+            <div id="carousel" class="light">
+                <div class="text-center">
+                    <div id="carousel-choices" class="column linked">
+                        <a class="button flat photos" href="#photos">Photos</a>
+                        <a class="button flat music" href="#music">Music</a>
                     </div>
-                    <div class="column alert">
-                        <h3>Photos</h3>
-                        <p>Import, Organize, and Edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                </div>
+                <div id="photos" class="slide">
+                    <div class="column">
+                        <img src="images/screenshots/photos.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/launcher-icons/photos.png" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Photos</h3>
+                            <p>Import, Organize, and Edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="music" class="slide">
+                    <div class="column">
+                        <img src="images/screenshots/music.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/launcher-icons/music.png" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Music</h3>
+                            <p>Browse by albums, Make playlists, Rate songs, and see similiar tracks.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +106,8 @@
                 </div>
             </div>
             <a style="display:none;" class="open-modal" href="#download-modal"></a>
+            <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+            <script type="text/javascript" src="scripts/home.js"></script>
 <?php
     include $template['footer'];
 ?>
