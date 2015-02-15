@@ -10,6 +10,7 @@ function list_langs() {
         'fr' => 'Français',
         'id_ID' => 'Bahasa Indonesia',
         'it_IT' => 'Italiano',
+        'lt' => 'Lietuvių kalba',
         'nl' => 'Nederlands',
         'nb' => 'Bokmål',
         'no' => 'Norsk',
@@ -17,6 +18,7 @@ function list_langs() {
         'ro_RO' => 'Română',
         'ru' => 'Русский',
         'sr' => 'Српски, Srpski',
+        'tr_TR' => 'Türkçe',
         'zh_CN' => '國語'
     );
 }
