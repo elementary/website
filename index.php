@@ -56,11 +56,11 @@
             </div>
             <div id="carousel">
                 <div class="column">
-                    <img src="/images/screenshots/photos.png" />
+                    <img src="images/screenshots/photos.png" />
                 </div>
                 <div class="column">
                     <div class="column alert">
-                        <img src="/images/launcher-icons/photos.png" />
+                        <img src="images/launcher-icons/photos.png" />
                     </div>
                     <div class="column alert">
                         <h3>Photos</h3>
