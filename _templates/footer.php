@@ -1,6 +1,34 @@
+<?php
+set_l10n_domain('layout');
+?>
         </div>
         <footer>
-            <p>Copyright &copy; 2015 elementary LLC. <a href="/privacy-policy">Privacy Policy</a></p>
+            <p>
+                Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a>
+            </p>
+            <div class="popover">
+                <a href="#"><i class="fa fa-language"></i>&nbsp;Language</a>
+                <div class="popover-content">
+                    <strong>Change Site Language</strong>
+                    <ul>
+                    <?php
+                    foreach (list_langs() as $langCode => $langName) {
+                        $path = $sitewide['root'].$langCode.'/'.(($page['name'] == 'index') ? '' : $page['name']);
+                        ?>
+                        <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>">
+                            <?php echo $langName; ?>
+                        </a></li>
+                        <?php
+                        if ($langCode == 'en') {
+                            ?>
+                            <hr>
+                            <?php
+                        }
+                    }
+                    ?>
+                    </ul>
+                </div>
+            </div>
             <ul>
                 <li><a href="https://twitter.com/elementary" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="http://reddit.com/r/elementaryos" target="_blank" title="Reddit"><i class="fa fa-reddit"></i></a></li>
@@ -24,3 +52,6 @@
         <![endif]-->
     </body>
 </html>
+<?php
+end_html_l10n();
+?>

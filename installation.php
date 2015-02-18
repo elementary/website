@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Installing elementary OS';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <div class="row">
                 <h1>Installation</h1>
@@ -91,7 +91,6 @@
                 <h3 id="booting-from-the-installation-medium">Booting from the Install Drive</h3>
                 <p>In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.</p>
 
-
                 <div class="text-center">
                     <div id="booting-choices" class="column linked">
                         <a class="button booting-on-a-pc" href="#booting-on-a-pc">Booting on a PC</a>
@@ -128,5 +127,5 @@
             <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
             <script type="text/javascript" src="scripts/installation.js"></script>
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>

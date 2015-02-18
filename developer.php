@@ -2,8 +2,8 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Develop Apps for elementary OS';
     $page['theme-color'] = '#226BB3';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
-    include '_templates/header.php';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
+    include $template['header'];
 ?>
             <div class="row">
                 <div class="column half developer-sum">
@@ -13,13 +13,13 @@
                 </div>
                 <div class="column half developer-sections">
                     <div id="dev-section-1" class="dev-section">
-                        <a href="http://elementaryos.org/docs/human-interface-guidelines" title="Design" target="_blank">
+                        <a href="http://elementary.io/docs/human-interface-guidelines" title="Design" target="_blank">
                             <h5>Design</h5>
                             <p>Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.</p>
                         </a>
                     </div>
                     <div id="dev-section-2" class="dev-section">
-                        <a href="http://elementaryos.org/docs/code" title="Code" target="_blank">
+                        <a href="http://elementary.io/docs/code" title="Code" target="_blank">
                             <h5>Code</h5>
                             <p>Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.</p>
                         </a>
@@ -39,5 +39,5 @@
                 </div>
             </div>
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>

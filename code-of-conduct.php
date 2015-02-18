@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Code of Conduct &sdot; elementary';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <div class="row">
                 <h1>Code of Conduct</h1>
@@ -21,5 +21,5 @@
                 <p>If you choose not to follow this code of conduct, we reserve the right to do the following things: alter or remove any content you&rsquo;ve posted; deactivate your account on the website; kick you out of an IRC channel; ban you from the site, IRC channels, or related services; or otherwise prevent you from interacting with the community.</p>
             </div>
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>

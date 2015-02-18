@@ -2,21 +2,20 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Get Involved with elementary OS';
     $page['theme-color'] = '#3E4E54';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Satisfy">';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Satisfy">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <section class="row hero">
                 <h1>Check out our progress for Freya Beta 2</h1>
-
                 <div class="charts">
                     <div class="barchart-ctn">
                         <canvas width="750" height="400"></canvas>
                     </div>
                     <div class="doughnuts-ctn">
-                        <div class="doughnut fix-committed">
-                            <canvas id="fix-committed-chart" width="90" height="90"></canvas>
+                        <div class="doughnut fixed">
+                            <canvas id="fixed-chart" width="90" height="90"></canvas>
                             <div class="doughnut-label">
                                 <span class="doughnut-count">133</span><br>
                                 Fixed
@@ -38,9 +37,6 @@
                         </div>
                     </div>
                 </div>
-
-                <h4>Contribute by doing these things</h4>
-
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
@@ -52,7 +48,7 @@
             <section id="translations" class="light">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementaryos.org/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
                     </div>
                 </div>
@@ -60,11 +56,13 @@
                 <div class="row">
                     <div class="column half">
                         <h2>Translations</h2>
-                        <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
+                        <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
+                        <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="https://help.launchpad.net/Translations" class="read-more">Learn More</a></p>
+                        <p>Our website is also openly translated using an online platform called Transifex. <a href="http://docs.transifex.com/guides/translators/" class="read-more">Learn More</a></p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View Our Translations Page</a>
-                            <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get More Info About Rosetta</a>
+                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">Translate elementary OS</a>
+                            <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank">Translate This Website</a>
                         </div>
                     </div>
                     <div class="column half">
@@ -76,7 +74,7 @@
             <section id="web-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementaryos.org/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
                     </div>
                 </div>
@@ -95,7 +93,7 @@
             <section id="design" class="light">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementaryos.org/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
                     </div>
                 </div>
@@ -116,9 +114,9 @@
                         </p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="http://elementaryos.org/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                            <a class="button flat suggested-action" href="https://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                             <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
-                            <a class="button flat" href="http://blog.elementaryos.org/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
+                            <a class="button flat" href="http://blog.elementary.io/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
                         </div>
                     </div>
                     <div class="column half">
@@ -130,7 +128,7 @@
             <section id="desktop-development" class="dark">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementaryos.org/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
                     </div>
                 </div>
@@ -154,5 +152,5 @@
 
             <script src="scripts/get-involved.js"></script>
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>

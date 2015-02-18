@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Page Not Found &sdot; elementary';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
 
 <div class="row">
@@ -18,5 +18,5 @@
 </div>
 
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>

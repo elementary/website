@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Store &sdot; elementary';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
             <div class="row">
                 <h1>Store</h1>
@@ -13,5 +13,5 @@
             </div>
 
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>
