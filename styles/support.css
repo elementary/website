@@ -1,3 +1,7 @@
+h1 {
+    clear: both
+}
+
 h1 svg {
     display: inline;
     position: relative;
