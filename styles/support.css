@@ -1,0 +1,108 @@
+h1 {
+    clear: both
+}
+
+h1 svg {
+    display: inline;
+    position: relative;
+    top: 11px;
+    height: 45px;
+    width: 310px;
+    max-width: 100%;
+}
+
+h1 .logotype-svg {
+    fill: inherit;
+}
+
+a.column {
+    color: inherit;
+    transition: color 250ms ease-in-out;
+}
+
+a.column:hover,
+a.column:focus,
+a.column:active {
+    color: #08C;
+    fill: #08C;
+    text-decoration: none;
+}
+
+a.column h3 {
+    margin-bottom: 0.5em;
+}
+
+/***********
+* App grid *
+***********/
+
+.row.apps{
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 0;
+}
+
+.row.apps .app {
+    text-align: left;
+    display: inline-block;
+    margin: 12px 0;
+    padding: 12px;
+    width: 100%;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    color: inherit;
+
+    transition: border-color 150ms ease-in-out;
+}
+
+.row.apps .app:hover,
+.row.apps .app:focus,
+.row.apps .app:active {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.row.apps .app img,
+.row.apps .app span {
+    display: inline-block;
+}
+
+.row.apps .app img {
+    vertical-align: middle;
+}
+
+@media (min-width: 600px) {
+    .row.apps .app {
+        width: 192px;
+        text-align: center;
+    }
+
+    .row.apps .app img,
+    .row.apps .app span {
+        display: block;
+    }
+
+    .row.apps .app img {
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.row.apps .app span {
+    line-height: 24px;
+    padding: 16px 12px 0 12px;
+}
+
+
+/***************************
+* Larger-than-phone styles *
+***************************/
+
+@media (min-width: 1164px) {
+    a.column h3 {
+        text-align: left;
+    }
+}
