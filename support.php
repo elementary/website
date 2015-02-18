@@ -2,7 +2,7 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Support &sdot; elementary';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
-    include '_templates/header.php';
+    include $template['header'];
 ?>
 
 <div class="row">
@@ -84,5 +84,5 @@
 </div>
 
 <?php
-    include '_templates/footer.html';
+    include $template['footer'];
 ?>
