@@ -1,16 +1,10 @@
-html,
-body {
-    /**background-color: #fdf6e3;
-    color: #586e75;
-    fill: #586e75;*/
-}
-
 h1 svg {
     display: inline;
     position: relative;
     top: 11px;
     height: 45px;
     width: 310px;
+    max-width: 100%;
 }
 
 h1 .logotype-svg {
@@ -30,33 +24,9 @@ a.column:active {
     text-decoration: none;
 }
 
-a.column h2,
 a.column h3 {
     margin-bottom: 0.5em;
 }
-
-a[target='_blank'].column h2::after,
-a[target='_blank'].column h3::after {
-    content: "";
-    font-family: "FontAwesome";
-    font-style: normal;
-    font-weight: inherit;
-    color: inherit;
-    padding-left: 12px;
-    position: absolute;
-    margin-top: 0.20em;
-    -webkit-transition: padding 150ms ease-in-out;
-    -o-transition: padding 150ms ease-in-out;
-    transition: padding 150ms ease-in-out;
-}
-
-a[target='_blank'].column:hover h2::after,
-a[target='_blank'].column:hover h3::after,
-a[target='_blank'].column:focus h2::after,
-a[target='_blank'].column:focus h3::after {
-    padding-left: 18px;
-}
-
 
 /***********
 * App grid *
@@ -66,10 +36,6 @@ a[target='_blank'].column:focus h3::after {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 0;
-}
-
-.row.apps h2{
-    text-align: center;
 }
 
 .row.apps .app {
@@ -132,7 +98,6 @@ a[target='_blank'].column:focus h3::after {
 ***************************/
 
 @media (min-width: 1164px) {
-    a.column h2,
     a.column h3 {
         text-align: left;
     }

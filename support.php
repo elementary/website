@@ -63,7 +63,7 @@
 
 <div class="row">
     <a class="column half" href="https://answers.launchpad.net/elementary/+faqs" target="_blank">
-        <h3><i class="fa fa-question-circle"></i> FAQ</h3>
+        <h3 class="read-more"><i class="fa fa-question-circle"></i> FAQ</h3>
         <p>Has your question been asked already? Check out answers to some of the most common questions we get.</p>
     </a>
 
@@ -73,12 +73,12 @@
     </a>
 
     <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank">
-        <h3><i class="fa fa-google-plus-square"></i> Google+</h3>
+        <h3 class="read-more"><i class="fa fa-google-plus-square"></i> Google+</h3>
         <p>Communicate with other elementary OS users in our Google+ community. Find crowd-sourced support, screenshots, the latest news, and more.</p>
     </a>
 
     <a class="column half" href="http://www.reddit.com/r/elementaryos/" target="_blank">
-        <h3><i class="fa fa-reddit"></i> reddit</h3>
+        <h3 class="read-more"><i class="fa fa-reddit"></i> reddit</h3>
         <p>Discuss elementary OS with other fans and followers in our official subreddit. Ask the community for help or just chat about the OS.</p>
     </a>
 </div>
