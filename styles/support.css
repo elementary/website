@@ -64,6 +64,8 @@ a[target='_blank'].column:focus h3::after {
 
 .row.apps{
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 0;
 }
 
 .row.apps h2{
@@ -120,8 +122,8 @@ a[target='_blank'].column:focus h3::after {
 }
 
 .row.apps .app span {
-    line-height: 64px;
-    padding: 0 12px;
+    line-height: 24px;
+    padding: 16px 12px 0 12px;
 }
 
 
