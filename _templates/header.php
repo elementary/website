@@ -59,7 +59,7 @@
             <ul class="left">
                 <li><a href="/" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
                 <li><a href="http://blog.elementaryos.org" target="_blank">Blog</a></li>
-                <li><a href="http://elementaryos.org/support" target="_blank">Support</a></li>
+                <li><a href="/support">Support</a></li>
                 <li><a href="/store">Store</a></li>
             </ul>
             <ul class="right">

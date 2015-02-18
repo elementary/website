@@ -63,7 +63,7 @@ a[target='_blank'].column:focus h3::after {
 ***********/
 
 .row.apps{
-    text-align: left;
+    text-align: center;
 }
 
 .row.apps h2{
@@ -92,22 +92,6 @@ a[target='_blank'].column:focus h3::after {
     text-decoration: none;
 }
 
-@media (min-width: 600px) {
-    .row.apps .app {
-        margin: 1%;
-        padding: 1%;
-        width: 47%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .row.apps .app {
-        margin: 1%;
-        padding: 1%;
-        width: 31%;
-    }
-}
-
 .row.apps .app img,
 .row.apps .app span {
     display: inline-block;
@@ -115,6 +99,24 @@ a[target='_blank'].column:focus h3::after {
 
 .row.apps .app img {
     vertical-align: middle;
+}
+
+@media (min-width: 600px) {
+    .row.apps .app {
+        width: 192px;
+        text-align: center;
+    }
+
+    .row.apps .app img,
+    .row.apps .app span {
+        display: block;
+    }
+
+    .row.apps .app img {
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .row.apps .app span {
