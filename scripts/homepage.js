@@ -58,6 +58,7 @@
             },
             name: 'elementary LLC.',
             description: 'elementary OS download',
+            bitcoin: 'true',
             amount: amount
         });
     }
