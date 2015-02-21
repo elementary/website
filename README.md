@@ -64,3 +64,8 @@ For a simple local development environment, you will need:
 * PHP5
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
+
+Contributing
+============
+
+See guidelines for [coding](https://github.com/elementary/mvp/blob/master/CONTRIBUTE.md) and [translating](https://github.com/elementary/mvp/blob/master/TRANSLATE.md).
