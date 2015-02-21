@@ -33,7 +33,7 @@
     "UNetbootin": " UNetbootin",
     "Make sure \"Diskimage\" is selected, and click \"&#8230;\" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click \"OK\" and wait for the process to finish.": "Уверете се, че сте избрали „Diskimage“ и щракнете върху „…“, за да изберете ISO файла, който вече свалихте. Извадете всички USB памети, освен тази, която ще ползвате. Щракнете върху „OK“ и изчакайте записа да приключи.",
     "Booting from the Install Drive": "Стартиране от инсталационния носител",
-    "In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.": "За да стартирате процеса по инсталиране, трябва да стартирате компютъра си през инсталационния носител. Това се осъществява по различен начин, в зависимост от компютъра, който притежавате. В това упътване са покрити най-честите случаи.",
+    "In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.": "За да започнете процеса по инсталиране, трябва да стартирате компютъра си през инсталационния носител. Това се осъществява по различен начин, в зависимост от компютъра, който притежавате. В това упътване са покрити най-честите случаи.",
     "Booting on a PC": "Стартиране на PC",
     "Booting on a Mac": "Стартиране на Mac",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "При включен компютър, поставете инсталационната USB памет и рестартирайте.",

@@ -1,14 +1,14 @@
 {
-    "Develop": "Develop",
-    "Your ideas into code": "Your ideas into code",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "Design",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "Code",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "Manage",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Use Launchpad to manage bug reports and collaborate with other developers.",
-    "Distribute": "Distribute",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Set up an Ubuntu My Apps account and publish your apps into the Software Center.",
-    "Develop Apps for elementary OS": "Develop Apps for elementary OS"
+    "Develop": "विकसित गर्नुहोस्",
+    "Your ideas into code": "तपाईंका विचारहरु कोडमा",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "सबैभन्दा राम्रो खुला स्रोत प्रविधीमा निर्मित, elementary एक अत्याधिक विकासकर्ता-मैत्री परिचालन मञ्च हो। तपाईंका अनुप्रयोगरु साँचै नै चम्किउन भन्ने सुनिस्चित गर्न हामी विद्यमान र भावी विकासकर्ताहरुका लागि सबैभन्दा राम्रा उपलब्ध स्रोतहरु तथा दस्तावेज प्रदान गर्दछौं।",
+    "Design": "योजना बनाउनुहोस्",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Human Interface Guidelines (HIG) पढ्नुहोस् र तपाईंको अनुप्रयोगलाई प्रथम-श्रेणीको अनुभव कसरी बनाउन सकिन्छ भनेर सिक्नुहोस्।",
+    "Code": "कोड लेख्नुहोस्",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "हाम्रा Application Programming Interface (APIs) का बारेमा जानकारी प्राप्त गर्नुहोस्, र तपाईंका लागि उपलब्ध सबै पुर्व-निर्मित प्रविधिहरु पत्ता लगाउनुहोस्।",
+    "Manage": "व्यवस्थापन गर्नुहोस्",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Launchpad मार्फत अरु विकासकर्ताहरुसँग मिलेर bug report हरुको व्यवस्थापन तथा सहकार्य गर्नुहोस्।",
+    "Distribute": "वितरण गर्नुहोस्",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "एउटा Ubuntu My Apps खाता खोल्नुहोस् अनि तपाईंका अनुप्रयोगहरुलाई Software Center भित्र प्रकाशित गर्नुहोस्।",
+    "Develop Apps for elementary OS": "elementary OS का लागि अनुप्रयोगहरु विकसित गर्नुहोस्"
 }
