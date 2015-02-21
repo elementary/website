@@ -1,6 +1,6 @@
 # Translators
 
-You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/
+You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/. Please don't update directly files in `lang/` on Github as they'll be overriden when pulling new translations from Transifex.
 
 You can propose new languages if they're not listed.
 
