@@ -269,6 +269,7 @@ footer {
     text-align: center;
     font-size: 12px;
     color: inherit;
+    padding-top: 24px;
 }
 
 footer > p, footer > div > a, footer > ul {
