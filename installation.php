@@ -59,7 +59,7 @@
                 <div id="creating-a-usb-on-windows" class="slide">
                     <h3>Windows</h3>
 
-                    <p>Begin with a spare USB flash drive with at least 1GB of free space.</p>
+                    <p>Begin with a spare USB flash drive with at least 1 GB of free space.</p>
 
                     <p>You'll also need a small application called Rufus. You'll have to download it from <a href="https://rufus.akeo.ie/" target="_blank">its website</a> and open the downloaded file to launch it. It will open a window like the one below:</p>
 
@@ -76,7 +76,7 @@
                 <div id="creating-a-usb-on-others" class="slide">
                     <h3>OS X, Ubuntu, and others</h3>
 
-                    <p>Begin with a spare USB flash drive with at least 1GB of free space.</p>
+                    <p>Begin with a spare USB flash drive with at least 1 GB of free space.</p>
 
                     <p>You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In OS X you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.</p>
 
