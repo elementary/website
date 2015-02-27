@@ -19,6 +19,7 @@ function list_langs() {
         'ru' => 'Русский',
         'sr' => 'Српски, Srpski',
         'tr_TR' => 'Türkçe',
+        'uk' => 'Мова',
         'zh_CN' => '國語'
     );
 }
