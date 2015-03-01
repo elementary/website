@@ -427,6 +427,20 @@ footer ul li a:focus {
     margin: 8px 0 0;
 }
 
+.icon {
+    position: relative;
+    text-align: left;
+}
+
+@media (min-width: 444px) {
+    .icon {
+        position: absolute;
+    }
+    .icon-text {
+        padding-left: 88px;
+    }
+}
+
 /*********
 * Button *
 *********/
@@ -822,6 +836,15 @@ body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
 
+.float-left {
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+.clear,
+.clear-both {
+    clear: both;
+}
+
 /**********
 * Popover *
 **********/
@@ -909,13 +932,4 @@ body.sliding {
 *****************/
 .browsers-list {
     width: 50px;
-}
-
-.float-left {
-    float: left;
-    margin: 0 .5em .5em 0;
-}
-.clear,
-.clear-both {
-    clear: both;
 }

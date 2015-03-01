@@ -26,9 +26,13 @@
                         </ul>
                         <div class="row alert warning">
                             <div class="column alert">
-                                <i class="float-left warning fa fa-warning" style="margin: 0 .5em .25em 0;"></i>
-                                <h3>Back Up Your Data</h3>
-                                <p>Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.</p>
+                                <div class="icon">
+                                    <i class="warning fa fa-warning"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h3>Back Up Your Data</h3>
+                                    <p>Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
