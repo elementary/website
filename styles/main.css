@@ -350,9 +350,6 @@ footer ul li a:focus {
         margin: 32px 32px 0;
         vertical-align: top;
     }
-    .row .row .column.half {
-        width: 485px;
-    }
 
     .column.third {
         width: 316px;
@@ -379,6 +376,10 @@ footer ul li a:focus {
     text-align: center;
 }
 
+.row .row {
+    padding: 24px 0;
+}
+
 .row ul {
     text-align: left;
 }
@@ -397,6 +398,7 @@ footer ul li a:focus {
 
 .row.alert {
     max-width: 704px;
+    padding: 24px;
     border-radius: 6px;
     border: 2px solid #333;
 }
