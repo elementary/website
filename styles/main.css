@@ -345,10 +345,13 @@ footer ul li a:focus {
         margin-left: 24px;
     }
 
-    .column.half {
+    .row .column.half {
         width: 492px;
         margin: 32px 32px 0;
         vertical-align: top;
+    }
+    .row .row .column.half {
+        width: 485px;
     }
 
     .column.third {
@@ -904,4 +907,13 @@ body.sliding {
 *****************/
 .browsers-list {
     width: 50px;
+}
+
+.float-left {
+    float: left;
+    margin: 0 .5em .25em 0;
+}
+.clear,
+.clear-both {
+    clear: both;
 }

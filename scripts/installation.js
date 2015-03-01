@@ -162,5 +162,9 @@
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-others');
     }
 
-    selectChoice('booting-choices', 'booting-on-a-pc');
+    if (currentOs == 'osx') {
+        selectChoice('booting-choices', 'booting-on-a-pc');
+    } else {
+        selectChoice('booting-choices', 'booting-on-a-mac');
+    }
 })();
