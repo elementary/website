@@ -345,7 +345,7 @@ footer ul li a:focus {
         margin-left: 24px;
     }
 
-    .column.half {
+    .row .column.half {
         width: 492px;
         margin: 32px 32px 0;
         vertical-align: top;
@@ -376,6 +376,10 @@ footer ul li a:focus {
     text-align: center;
 }
 
+.row .row {
+    padding: 24px 0;
+}
+
 .row ul {
     text-align: left;
 }
@@ -394,6 +398,7 @@ footer ul li a:focus {
 
 .row.alert {
     max-width: 704px;
+    padding: 24px;
     border-radius: 6px;
     border: 2px solid #333;
 }
@@ -420,6 +425,20 @@ footer ul li a:focus {
 .column.alert i.fa {
     font-size: 64px;
     margin: 8px 0 0;
+}
+
+.icon {
+    position: relative;
+    text-align: left;
+}
+
+@media (min-width: 444px) {
+    .icon {
+        position: absolute;
+    }
+    .icon-text {
+        padding-left: 88px;
+    }
 }
 
 /*********
@@ -815,6 +834,15 @@ i.fa.fa-close.close-modal {
 
 body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
+}
+
+.float-left {
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+.clear,
+.clear-both {
+    clear: both;
 }
 
 /**********
