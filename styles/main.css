@@ -429,7 +429,7 @@ footer ul li a:focus {
 
 .icon {
     position: relative;
-    text-align: left;
+    text-align: center;
 }
 
 @media (min-width: 444px) {
