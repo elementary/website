@@ -20,7 +20,7 @@
     "Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:": "हरेक परियोजना एउटा विचारबाट शुरु हुन्छ। हाम्रो योजना टोलीले यी विचारहरुलाई लिएर रूपरेखाहरुमा परिणत गर्दछन्। हामी योजनालाई दुई भागहरुमा खण्डन गर्दछौं:",
     "Visual Design": "दृश्यात्मक योजना",
     "A great place for visual designers to get started is by sharing mockups with": "दृश्यात्मक योजनाकारहरुको लागि नमुनाहरु वितरण गरेर सुरुवात गर्ने एउटा उत्तम ठाउँँ हो",
-    "our Google+ Community": "हाम्रो Google+ समुदाय",
+    "our Google+ Community": "हाम्रो गुगल+ समुदाय",
     "Interactive Design": "कृयात्मक योजना",
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features.": "हामी नयाँँ पक्षहरुको विस्तृत स्पष्टीकरणको सिर्जना गर्न Launchpad मा Blueprints भनिने एउटा प्रणाली प्रयोग गर्दछौं।",
     "Read the Interface Guidelines": "इन्टरफेस सम्बन्धी निर्देशनहरु पढ्नुहोस् ",
@@ -31,6 +31,6 @@
     "Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.": "हाम्रो डेस्कटप पर्यावरण तथा यसका सबै अनुप्रयोगहरु Vala, GTK+, Clutter, Cairo, Granite र अरु स्वतन्त्र लाइब्रेरीहरु प्रयोग गरेर निर्माण गरिएका हुन्। हाम्रा सबै कोडहरु Launchpad.net, जुन खुल्ला स्रोत परियोजनाहरुको लागि एउटा नि:शुल्क सेवाप्रदायक हो, मा राखिएका छन्। हामी सँधै नै विभिन्न कौशल स्तर भएका योगदानकर्ताहरुको खोजीमा रहने गर्दछौं।",
     "Browse Our Desktop Code": "हाम्रो डेस्कटपको कोड हेर्नुहोस्",
     "Browse Our Apps' Code": "हाम्रा अनुप्रयोगहरुको कोड हेर्नुहोस्",
-    "Scratch text editor": "Scratch लेख सम्पादक",
+    "Scratch text editor": "स्क्र्याच लेख सम्पादक",
     "Get Involved with elementary OS": "elementary OS सँग संलग्न हुनुहोस्"
 }
