@@ -913,7 +913,7 @@ body.sliding {
 
 .float-left {
     float: left;
-    margin: 0 .5em .25em 0;
+    margin: 0 .5em .5em 0;
 }
 .clear,
 .clear-both {
