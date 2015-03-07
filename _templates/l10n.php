@@ -17,7 +17,8 @@ function list_langs() {
         'pt_PT' => 'Português',
         'ro_RO' => 'Română',
         'ru' => 'Русский',
-        'sr' => 'Српски, Srpski',
+        'sr' => 'Српски',
+        'sr@Ijekavian' => 'Српски (ијекавица)',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
         'zh_CN' => '國語'
