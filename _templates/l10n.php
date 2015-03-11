@@ -36,6 +36,9 @@ function is_lang($lang) {
     if (!preg_match('#^[a-z]{2}(_[A-Z]{2})?$#', $lang)) {
         return false;
     }
+    if ($lang == 'en') {
+        return true;
+    }
 
     return is_dir(lang_dir($lang));
 }
@@ -185,15 +188,24 @@ function translate_html($input, $translate = 'translate') {
                             // Extract attribute name and value
                             $nameEnd = strpos($attrs, '=', $j);
                             if ($nameEnd === false) {
-                                break;
-                            }
-                            $valueEnd = strpos($attrs, '"', $nameEnd + 2);
-                            if ($valueEnd === false) {
-                                break;
-                            }
+                                // In case the last attribute is a boolean one (without value, e.g. <input disabled>)
+                                $boolAttrName = substr($attrs, $j);
+                                if (preg_match('#^[a-zA-Z0-9-]+$#', $boolAttrName)) {
+                                    $valueEnd = $j + strlen($boolAttrName);
+                                    $name = $boolAttrName;
+                                    $value = true;
+                                } else {
+                                    break;
+                                }
+                            } else {
+                                $valueEnd = strpos($attrs, '"', $nameEnd + 2);
+                                if ($valueEnd === false) {
+                                    break;
+                                }
 
-                            $name = substr($attrs, $j, $nameEnd - $j);
-                            $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+                                $name = substr($attrs, $j, $nameEnd - $j);
+                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+                            }
 
                             if ($name == 'data-l10n-id') { // Set translation ID for this tag
                                 $l10nId = $value;
@@ -201,7 +213,7 @@ function translate_html($input, $translate = 'translate') {
                             if ($name == 'data-l10n-off') { // Disable translation for this tag
                                 $l10nDisabled = true;
                             }
-                            if (in_array($name, $allowedAttrs)) { // Translate attribute
+                            if (in_array($name, $allowedAttrs) && !$l10nDisabled) { // Translate attribute
                                 $tag .= ' '.$name.'="'.$translate($value, $l10nDomain, $value).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);

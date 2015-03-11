@@ -15,7 +15,7 @@ set_l10n_domain('layout');
                     foreach (list_langs() as $langCode => $langName) {
                         $path = $sitewide['root'].$langCode.'/'.(($page['name'] == 'index') ? '' : $page['name']);
                         ?>
-                        <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>">
+                        <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
                             <?php echo $langName; ?>
                         </a></li>
                         <?php
@@ -30,10 +30,10 @@ set_l10n_domain('layout');
                 </div>
             </div>
             <ul>
-                <li><a href="https://twitter.com/elementary" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://reddit.com/r/elementaryos" target="_blank" title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                <li><a href="https://plus.google.com/114635553671833442612" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://www.facebook.com/elementaryos" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                <li><a href="https://plus.google.com/114635553671833442612" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </footer>
 
