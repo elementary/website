@@ -1,5 +1,5 @@
 {
-    "Installation": "دامەزراندن",
+    "Installation": "Installation",
     "elementary OS is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary OS on your computer.": "elementary OS is designed to run on any relatively new 32-bit and 64-bit desktop or laptop. In this section, we'll cover system requirements and other prerequisites to installing elementary OS on your computer.",
     "System Requirements": "System Requirements",
     "Minimum System Requirements:": "Minimum System Requirements:",
@@ -34,12 +34,12 @@
     "Make sure \"Diskimage\" is selected, and click \"&#8230;\" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click \"OK\" and wait for the process to finish.": "Make sure \"Diskimage\" is selected, and click \"…\" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click \"OK\" and wait for the process to finish.",
     "Booting from the Install Drive": "Booting from the Install Drive",
     "In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.": "In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.",
-    "Booting on a PC": "کارپێکردنی لەسەر PC",
-    "Booting on a Mac": "کارپێکردنی لەسەر Mac",
+    "Booting on a PC": "Booting on a PC",
+    "Booting on a Mac": "Booting on a Mac",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.",
     "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive&mdash;usually \"USB-HDD\" or something containing the word \"USB\", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually \"USB-HDD\" or something containing the word \"USB\", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as \"Windows\", but this is normal.": "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as \"Windows\", but this is normal.",
-    "Installing elementary OS": "دامەزراندنی سیستەمی elementary"
+    "Installing elementary OS": "Installing elementary OS"
 }
