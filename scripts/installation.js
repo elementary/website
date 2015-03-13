@@ -159,7 +159,7 @@
     if (currentOs == 'windows' || !currentOs) {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-windows');
     }
-    if (currentOs == 'osx' || currentOs)  {
+    else if (currentOs == 'osx' || currentOs)  {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-osx');
     } else {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-ubuntu');
