@@ -89,7 +89,8 @@
                         <p>Insert a blank DVD-R or DVD-RW into your DVD drive. If your Mac does not have a DVD drive, you can use an external one, including the Apple USB SuperDrive. Please note that elementary OS is too large to fit inside a CD.<p>
                         <p>Upon inserting the blank DVD, a box might appear asking what to do; click "Ignore".
                         <img src="images/installation/osx_dialog.png" alt="OS X Dialog" class="float-left">
-                        <p>Right click (or control click) on the ISO file you've just downloaded in Finder and select 'Burn "elementaryos-unstable-amd64.XX.iso" to Disc'. The date on the file might be different than shown.
+                        <p>Right click (or control click) on the ISO file you've just downloaded in Finder and select 'Burn "elementaryos-unstable-amd64.XX.iso" to Disc'. The date on the file might be different than shown.</p>
+                        <img src="images/installation/osx_menu.png" alt="OS X Menu" class="float-left"> 
                     </div>
                     <div id="creating-a-usb-on-ubuntu" class="slide">
                         <h3>Ubuntu, and others</h3>
