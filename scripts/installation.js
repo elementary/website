@@ -1,7 +1,7 @@
 (function () {
     // Install guide toggles
     var toggles = {
-        'creating-a-usb-choices': ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
+        'creating-a-usb-choices': ['creating-a-usb-on-windows', 'creating-a-usb-on-osx', 'creating-a-usb-on-ubuntu'],
         'booting-choices': ['booting-on-a-pc', 'booting-on-a-mac']
     };
 
@@ -158,13 +158,16 @@
     var currentOs = detectOS();
     if (currentOs == 'windows' || !currentOs) {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-windows');
+    }
+    else if (currentOs == 'osx')  {
+        selectChoice('creating-a-usb-choices', 'creating-a-usb-on-osx');
     } else {
-        selectChoice('creating-a-usb-choices', 'creating-a-usb-on-others');
+        selectChoice('creating-a-usb-choices', 'creating-a-usb-on-ubuntu');
     }
 
     if (currentOs == 'osx') {
-        selectChoice('booting-choices', 'booting-on-a-pc');
-    } else {
         selectChoice('booting-choices', 'booting-on-a-mac');
+    } else {
+        selectChoice('booting-choices', 'booting-on-a-pc');
     }
 })();
