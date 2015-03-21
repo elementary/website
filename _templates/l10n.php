@@ -33,7 +33,7 @@ function is_lang($lang) {
     if (!is_string($lang)) {
         return false;
     }
-    if (!preg_match('#^[a-z]{2}(_[A-Z]{2})?$#', $lang)) {
+    if (!preg_match('#^[a-z]{2}(_([A-Z]{2}|[A-Z][a-z]+))?$#', $lang)) {
         return false;
     }
 
