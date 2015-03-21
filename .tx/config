@@ -1,5 +1,6 @@
 [main]
 host = https://www.transifex.com
+lang_map = sr@Ijekavian:sr_Ijekavian
 
 [elementary-mvp.404]
 file_filter = lang/<lang>/404.json
