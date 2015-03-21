@@ -27,12 +27,12 @@
 
     <a class="app" href="https://answers.launchpad.net/geary" target="_blank">
         <img width="64" height="64" src="images/support/internet-mail.svg" />
-        <span>Geary</span>
+        <span data-l10n-off>Geary</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/midori" target="_blank">
         <img width="64" height="64" src="images/support/midori.svg" />
-        <span>Midori</span>
+        <span data-l10n-off>Midori</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/noise" target="_blank">
@@ -47,7 +47,7 @@
 
     <a class="app" href="https://answers.launchpad.net/scratch" target="_blank">
         <img width="64" height="64" src="images/support/accessories-text-editor.svg" />
-        <span>Scratch</span>
+        <span data-l10n-off>Scratch</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/switchboard" target="_blank">
@@ -73,12 +73,12 @@
     </a>
 
     <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank">
-        <h3 class="read-more"><i class="fa fa-google-plus-square"></i> Google+</h3>
+        <h3 class="read-more" data-l10n-off><i class="fa fa-google-plus-square"></i> Google+</h3>
         <p>Communicate with other elementary OS users in our Google+ community. Find crowd-sourced support, screenshots, the latest news, and more.</p>
     </a>
 
     <a class="column half" href="http://www.reddit.com/r/elementaryos/" target="_blank">
-        <h3 class="read-more"><i class="fa fa-reddit"></i> reddit</h3>
+        <h3 class="read-more" data-l10n-off><i class="fa fa-reddit"></i> reddit</h3>
         <p>Discuss elementary OS with other fans and followers in our official subreddit. Ask the community for help or just chat about the OS.</p>
     </a>
 </div>

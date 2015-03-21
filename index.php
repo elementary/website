@@ -10,7 +10,7 @@
             </script>
 
             <div class="row">
-                <object data="images/logotype.svg" type="image/svg+xml" id="logotype">elementary OS</object>
+                <object data="images/logotype.svg" type="image/svg+xml" id="logotype" data-l10n-off>elementary OS</object>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
