@@ -43,7 +43,7 @@
                     <div class="text-center">
                         <div id="creating-a-usb-choices" class="column linked">
                             <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
-                            <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X & Ubuntu</a>
+                            <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X &amp; Ubuntu</a>
                         </div>
                     </div>
                     <div id="creating-a-usb-on-windows" class="slide">
