@@ -61,7 +61,7 @@ Simple Local Development
 
 For a simple local development environment, you will need:
 
-* PHP5
+* PHP5.4+
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
 
