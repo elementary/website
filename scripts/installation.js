@@ -163,8 +163,8 @@
     }
 
     if (currentOs == 'osx') {
-        selectChoice('booting-choices', 'booting-on-a-pc');
-    } else {
         selectChoice('booting-choices', 'booting-on-a-mac');
+    } else {
+        selectChoice('booting-choices', 'booting-on-a-pc');
     }
 })();
