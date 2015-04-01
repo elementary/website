@@ -68,7 +68,7 @@
             $('#amount-twenty-five').each(amountClick);
         }
         payment_http = new XMLHttpRequest();
-        payment_http.open('POST','/backend/payment.php',true);
+        payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
         payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
         payment_http.onreadystatechange = function() {
