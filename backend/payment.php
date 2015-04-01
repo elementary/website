@@ -13,7 +13,7 @@ if (isset($_POST['token'])) {
         'currency' => 'usd',
         'card' => $token,
         'description' => 'elementary OS download',
-        'receipt_email' => $email
+        'receipt_email' => $email,
     );
 
     // Create the charge on Stripe's servers - this will charge the user's card
