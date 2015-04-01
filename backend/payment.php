@@ -15,11 +15,11 @@ if (isset($_POST['token'])) {
         'description' => 'elementary OS download',
         'receipt_email' => $email
     );
-    var_dump($options);
 
     // Create the charge on Stripe's servers - this will charge the user's card
-   /* try {
+    try {
         $charge = Stripe_Charge::create($options);
+        var_dump($charge);
         // Set an insecure, HTTP only cookie for 10 years in the future.
         setcookie('has_paid_freya', $amount, time() + 315360000, '/', '', 0, 1);
         setcookie('has_paid_freya', $amount, time() + 315360000, '/', '.elementaryos.org', 0, 1);
@@ -27,7 +27,7 @@ if (isset($_POST['token'])) {
     }
     catch (Exception $e) {
         echo $e->getMessage();
-    }*/
+    }
 } else {
     echo $config['stripe_pk'];
 }
