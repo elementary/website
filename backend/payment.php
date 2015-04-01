@@ -1,9 +1,12 @@
 <?php
 require_once('./lib/Stripe.php');
-// for MASTER
-require_once('./config.php');
-// for Branches
-// require_once('../../../backend/config.php');
+if ( substr($_SERVER['REQUEST_URI'], 0, 8) == '/branch/' ) {
+    // for Branches
+    require_once('../../../backend/config.php');
+} else {
+    // for MASTER
+    require_once('./config.php');
+}
 
 Stripe::setApiKey($config['stripe_sk']);
 
