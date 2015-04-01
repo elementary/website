@@ -1,15 +1,15 @@
 {
     "Download elementary OS": "elementary OS डाउनलोड गर्नुहोस्",
     "Blog": "ब्लग",
-    "Support": "सहयोग",
+    "Support": "सहायता",
     "Store": "बजार",
     "Developer": "विकासकर्ता",
     "Get Involved": "संलग्न हुनुहोस्",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "सर्वाधिकार © 2015 elementary LLC. <a href=\"/privacy-policy\">गोपनीयता नीति</a>",
     "&nbsp;Language": "भाषा",
-    "Change Site Language": "वेबसाईटको भाषा परिवर्तन गर्नुहोस्",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "तपाईंको ब्राउजरले यस elementary OS को वेबसाइट निर्माण गर्न प्रयोग गरिएका आधुनिक वेब प्रविधिहरुलाई समर्थन गर्दैन।",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Internet Explorer को यो संस्करण पुरानो भइसकेको छ र यसमा समस्याहरु तथा सुरक्षा जोखिमहरु हुनसक्छन्। कृपया यसलाई IE11 वा कुनै वैकल्पिक वेब ब्राउजरमा <a href=\"http://browsehappy.com/\">अद्यावधिक</a> गर्नुहोस्।",
+    "Change Site Language": "वेबसाइटको भाषा परिवर्तन गर्नुहोस्",
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "यस elementary OS को वेबसाइट निर्माण गर्न प्रयोग गरिएका आधुनिक वेब प्रविधिहरुलाई तपाईंको ब्राउजरले समर्थन गर्दैन।",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Internet Explorer को यो संस्करण पुरानो भइसकेको छ र यसमा त्रुटिहरु र सुरक्षा जोखिमहरु हुनसक्छन्। कृपया यसलाई IE11 वा अरु कुनै वैकल्पिक वेब ब्राउजरमा <a href=\"http://browsehappy.com/\">अद्यावधिक</a> गर्नुहोस्।",
     "Dismiss": "खारेज गर्नुहोस्",
     "Learn More": "थप जानकारी"
 }
