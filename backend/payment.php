@@ -1,9 +1,9 @@
 <?php
 require_once('./lib/Stripe.php');
 // for MASTER
-// require_once('./config.php');
+require_once('./config.php');
 // for Branches
-require_once('../../../backend/config.php');
+// require_once('../../../backend/config.php');
 
 Stripe::setApiKey($config['stripe_sk']);
 
