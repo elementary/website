@@ -75,7 +75,7 @@
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + token.email);
+        payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
     }
 
     function open_download_overlay () {
