@@ -7,7 +7,7 @@ Stripe::setApiKey($config['stripe_sk']);
 if (isset($_POST['token'])) {
     $token  = $_POST['token'];
     $amount = $_POST['amount'];
-    $receipt = $_POST['receipt'];
+    $receipt = $_POST['email'];
     $options = array(
         'amount' => $amount,
         'currency' => 'usd',
