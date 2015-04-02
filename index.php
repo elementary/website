@@ -1,5 +1,5 @@
 <?php
-    $page['title'] = "Download elementary OS";
+    $page['title'] = 'Download elementary OS';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     include '_templates/sitewide.php';
     include $template['header'];
@@ -36,8 +36,8 @@
                         }
                     ?>
                 </div>
-                <button type="submit" id="download" class="suggested-action">Download Freya Beta</button>
-                <p class="small-label">898.6 MB (for PC or Mac)</p>
+                <button type="submit" id="download" class="suggested-action">Download Freya RC1</button>
+                <p class="small-label">851 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <div class="column third">
@@ -59,12 +59,12 @@
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
-                        <a class="button close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-unstable-i386.20150208.iso">Freya Beta 32-bit</a>
-                        <a class="button close-modal" href="magnet:?xt=urn:btih:22d76dd2990cae50e7c68412ea8c27c4bebe0e71&dn=elementaryos-unstable-i386.20150208.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementary.io%2Fdownloads%2Felementaryos-unstable-i386.20150208.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso"><i class="fa fa-magnet"></i></a>
+                        <a class="button close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-freya-rc1-i386.iso">Freya RC1 32-bit</a>
+                        <a class="button close-modal" href="magnet:?xt=urn:btih:958153a71c79a5fff2762da9dfb28f26bc994439&dn=elementaryos-freya-rc1-i386.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementaryos.org%2Fdownloads%2Felementaryos-freya-rc1-i386.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-i386.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-i386.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-i386.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-i386.iso"><i class="fa fa-magnet"></i></a>
                     </div>
                     <div class="column linked">
-                        <a class="button suggested-action close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-unstable-amd64.20150208.iso">Freya Beta 64-bit</a>
-                        <a class="button suggested-action close-modal" href="magnet:?xt=urn:btih:29e77fa17ab4d7f48da280facac25c8573692ba1&dn=elementaryos-unstable-amd64.20150208.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementary.io%2Fdownloads%2Felementaryos-unstable-amd64.20150208.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso"><i class="fa fa-magnet"></i></a>
+                        <a class="button suggested-action close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-freya-rc1-amd64.iso">Freya RC1 64-bit</a>
+                        <a class="button suggested-action close-modal" href="magnet:?xt=urn:btih:ac21c9257a18e8f9c285c3a79eb85071205c3484&dn=elementaryos-freya-rc1-amd64.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementaryos.org%2Fdownloads%2Felementaryos-freya-rc1-amd64.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-amd64.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-amd64.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-amd64.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-freya-rc1-amd64.iso"></i></a>
                     </div>
                 </div>
             </div>
