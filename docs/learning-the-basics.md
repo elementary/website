@@ -5,7 +5,7 @@ As with every operating system there are some things that you may not be familia
 <div class="row" markdown="1">
 
 ## The Desktop
-The elementary desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](#system-settings)** →**Desktop** → **Wallpaper**.
+The elementary desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** →**Desktop** → **Wallpaper**.
 
 <div class="clear row" markdown="1">
 <div class="column half" markdown="1">
@@ -33,7 +33,7 @@ The contents of the dock are easily customizable. To add an app to the dock, dra
 
 By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.
 
-You can customize the dock's behavior through **[System Settings](#system-settings)** → **Desktop** → **Dock**.
+You can customize the dock's behavior through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Dock**.
 
 </div>
 </div>
@@ -86,14 +86,14 @@ Apps open in app windows. They can overlap on your desktop and be moved around. 
 * press `Alt` + `Tab`
 * To see an overview of your open app windows, press `⌘` + `W`.
 
-You can customize these shortcuts through **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts** → **Windows**.
+You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Windows**.
 
 <br>
 
 ### Hot Corners
 You can also configure "hot corners" (shortcuts activated by placing your cursor in the corner of the display) to activate multi-tasking functions like the window overview, workspace overview, and more.
 
-You can customize hot corners through **[System Settings](#system-settings)** → **Desktop** → **Hot Corners**.
+You can customize hot corners through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Hot Corners**.
 
 </div>
 <div class="column half" markdown="1">
@@ -107,7 +107,7 @@ By default, all app windows open on one workspace. However, you can use multiple
 * You can jump straight to a specific workspace by pressing `⌘` + `1` through `⌘` + `9`. You can always jump to a new workspace with `⌘` + `0`.
 * You can also drag app windows between workspaces by dragging their icons in the workspace overview. To see an overview of app windows across all workspaces, press `⌘` + `A`.
 
-You can customize these shortcuts through **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
+You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
 
 </div>
 </div>
@@ -144,7 +144,7 @@ _Note: Some software may not be available from the Software Center. While we don
 
 <div class="row" markdown="1">
 
-## System Settings
+## System Settings {#system-settings}
 
 elementary comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
