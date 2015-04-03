@@ -130,7 +130,7 @@ if (
         require_once $Libraries['ParsedownExtra'];
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
-        $Content = str_replace('⌘', '&#8984;' $Content);
+        $Content = str_replace('⌘', '&#8984;', $Content);
         echo $Content;
 
         echo '</div>';
