@@ -142,6 +142,11 @@ kbd {
     -moz-user-select: none;
     margin: 3px;
 }
+code,
+pre,
+kbd {
+    font-family: 'Droid Sans Mono';
+}
 
 img {
     max-width: 100%;
