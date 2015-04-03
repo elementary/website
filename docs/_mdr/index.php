@@ -63,6 +63,9 @@ $Lang['tech']['SOURCE'] = 'Source';
 
 
 
+var_dump($Request);
+
+
 // START READABLE
 if (
     is_readable($Request['Directory']) ||
