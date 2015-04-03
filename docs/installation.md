@@ -121,4 +121,4 @@ In order to start the installation process, you must boot your computer from the
 </div>
 
 <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
-<script type="text/javascript" src="../scripts/docs/installation.js"></script>
+<script type="text/javascript" src="scripts/docs/installation.js"></script>
