@@ -129,7 +129,9 @@ if (
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];
         $Parsedown = new ParsedownExtra();
-        echo $Parsedown->text($Content);
+        $Content = $Parsedown->text($Content);
+        $Content = str_replace('⌘', '&#8984;' $Content);
+        echo $Content;
 
         echo '</div>';
         include $Templates['Footer'];
