@@ -17,6 +17,7 @@
         if (ua.indexOf('Linux') >= 0) {
             return 'linux';
         }
+        return false;
     }
 
     function transitionsSupported() {
@@ -128,6 +129,8 @@
             if (!paragraph) {
                 console.log('ERR: could not find paragraph #'+choiceId);
                 return;
+            } else {
+                console.log('Found paragraph #'+choiceId);
             }
             var heading = paragraph.getElementsByTagName('h2')[0];
             if (!heading) {
@@ -156,13 +159,13 @@
 
     // Show instructions for the current platform
     var currentOs = detectOS();
-    if (currentOs == 'windows' || !currentOs) {
+    if ( currentOs == 'windows' || !currentOs ) {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-windows');
     } else {
         selectChoice('creating-a-usb-choices', 'creating-a-usb-on-others');
     }
 
-    if (currentOs == 'osx') {
+    if ( currentOs == 'osx' ) {
         selectChoice('booting-choices', 'booting-on-a-mac');
     } else {
         selectChoice('booting-choices', 'booting-on-a-pc');

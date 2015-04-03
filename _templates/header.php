@@ -3,7 +3,7 @@ if (!isset($page['name'])) {
     $page['name'] = basename($_SERVER['PHP_SELF'], '.php');
 }
 
-include_once './_templates/l10n.php';
+include_once __DIR__.'/l10n.php';
 
 $page['lang-root'] = $sitewide['root'];
 if (isset($page['lang']) && $page['lang'] != 'en') {
@@ -54,11 +54,11 @@ begin_html_l10n();
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <script>
-            <?php include './scripts/jql.min.js'; ?>
+            <?php include __DIR__.'/../scripts/jql.min.js'; ?>
             jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
             jQl.boot();
-            <?php include './scripts/popover.js'; ?>
-            <?php include './scripts/smooth-scrolling.js'; ?>
+            <?php include __DIR__.'/../scripts/popover.js'; ?>
+            <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
         </script>
 
         <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
@@ -81,7 +81,7 @@ begin_html_l10n();
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <ul class="left">
-                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
+                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                 <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
                 <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                 <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
