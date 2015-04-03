@@ -1,5 +1,3 @@
-<div class="row" markdown="1">
-
 # Installation
 
 <div class="clear row" markdown="1">
@@ -117,8 +115,6 @@ In order to start the installation process, you must boot your computer from the
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
-
-</div>
 
 </div>
 
