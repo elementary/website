@@ -84,7 +84,7 @@ Apps open in app windows. They can overlap on your desktop and be moved around. 
 * click on the window you want to switch to
 * click on the app's icon in the dock
 * press `Alt` + `Tab`
-* To see an overview of your open app windows, press `⌘` + `W`.
+* To see an overview of your open app windows, press `&#8984;` + `W`.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Windows**.
 
@@ -101,18 +101,18 @@ You can customize hot corners through **[System Settings](/docs/learning-the-bas
 ### Workspaces {#workspaces}
 By default, all app windows open on one workspace. However, you can use multiple workspaces to organize your workflow:
 
-* To see an overview of your workspaces, press `⌘` + `S`
-* To quickly move left or right through your workspaces, press `⌘` + `←` or `⌘` + `→ `
-* To cycle through your workspaces, press `⌘` + `Tab`
-* You can jump straight to a specific workspace by pressing `⌘` + `1` through `⌘` + `9`. You can always jump to a new workspace with `⌘` + `0`.
-* You can also drag app windows between workspaces by dragging their icons in the workspace overview. To see an overview of app windows across all workspaces, press `⌘` + `A`.
+* To see an overview of your workspaces, press `&#8984;` + `S`
+* To quickly move left or right through your workspaces, press `&#8984;` + `←` or `&#8984;` + `→ `
+* To cycle through your workspaces, press `&#8984;` + `Tab`
+* You can jump straight to a specific workspace by pressing `&#8984;` + `1` through `&#8984;` + `9`. You can always jump to a new workspace with `&#8984;` + `0`.
+* You can also drag app windows between workspaces by dragging their icons in the workspace overview. To see an overview of app windows across all workspaces, press `&#8984;` + `A`.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
 
 </div>
 </div>
 
-_Note: `⌘` refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
+_Note: `&#8984;` refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
 
 </div>
 
