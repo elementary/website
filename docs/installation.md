@@ -1,9 +1,9 @@
-# Installation
+# Installation {#installation}
 
 <div class="clear row" markdown="1">
 <div class="column half" markdown="1">
 
-### Download elementary OS
+### Download elementary OS {#download-elementary-os}
 
 If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
@@ -15,7 +15,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 </div>
 <div class="column half" markdown="1">
 
-### Recommended System Specifications
+### Recommended System Specifications {#recommended-system-specifications}
 
 * 1 GHz 32-bit or 64-bit processor
 * 1 GB of system memory (RAM)
@@ -29,7 +29,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 </div>
 <div class="icon-text" markdown="1">
 
-### Back Up Your Data
+### Back Up Your Data {#back-up-your-data}
 
 Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.
 
@@ -69,7 +69,7 @@ Click "Start", then just wait for the process to finish.
 
 <div id="creating-a-usb-on-others" class="slide" markdown="1">
 
-### OS X, Ubuntu, and others
+### OS X, Ubuntu, and others}
 
 ![UNetbootin](images/docs/installation/unetbootin.png){.float-left}
 
