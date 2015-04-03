@@ -121,6 +121,7 @@ if (
         }
         $Request['Source'] = str_replace($MDR['Root'], '', $Request['Source']);
 
+        $page['title'] = url_to_title(basename($Request['Source'], '.md'));
         include $Templates['Header'];
         echo '<div class="row">';
 
