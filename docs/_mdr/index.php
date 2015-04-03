@@ -32,10 +32,10 @@ $MDR['Core']            = __DIR__;
 $MDR['Root']            = str_replace('/docs/_mdr', '', $MDR['Core']);
 $MDR['Templates']       = $MDR['Root'].'/_templates/';
 
-// PHP >= 5.2 Only
 $Request['Raw']         = filter_input(INPUT_SERVER, 'REQUEST_URI');
 $Request['Exploded']    = explode('?', $Request['Raw']);
 $Request['Trimmed']     = trim(rtrim(str_replace('.md', '', $Request['Exploded'][0]), '/'));
+// TODO Make dynamic per-branch
 $Request['Directory']   = str_replace('/branch/docs-by-mdr', '', $MDR['Root']).$Request['Trimmed'];
 $Request['Markdown']    = $Request['Directory'].'.md';
 $Request['Source']      = false;
@@ -151,7 +151,7 @@ if (
 } else {
 
     // Headers MUST be sent before any content.
-    // header($_SERVER["SERVER_PROTOCOL"].' 404 Not Found');
+    header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
 
     include $Templates['Header'];
     echo '<div class="row">';
