@@ -148,7 +148,7 @@ if (
 } else {
 
     // Headers MUST be sent before any content.
-    header($_SERVER["SERVER_PROTOCOL"].' 404 Not Found');
+    // header($_SERVER["SERVER_PROTOCOL"].' 404 Not Found');
 
     include $Templates['Header'];
     echo '<div class="row">';
