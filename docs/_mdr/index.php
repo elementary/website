@@ -29,7 +29,7 @@ $Settings['Show Source'] = true;
 // Figure out what file they're after.
 
 $MDR['Core']            = __DIR__;
-$MDR['Root']            = str_replace('/docs/_mdr', '', $MDR['Core']);
+$MDR['Root']            = str_replace('/branch/docs-by-mdr/docs/_mdr', '', $MDR['Core']);
 $MDR['Templates']       = $MDR['Root'].'/_templates/';
 
 // PHP >= 5.2 Only
