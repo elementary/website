@@ -17,7 +17,7 @@ if (preg_match('#^/([a-z]{2}(?:_[A-Z]{2})?)(/.*)?$#', $requestUri, $matches)) {
 if ($requestUri == '/') {
     $page['name'] = 'index';
     include 'index.php';
-} elseif (preg_match('/\./', $requestUri)) { // has period in filename
+} elseif (preg_match('/\./', $requestUri)) { // Has period in filename
     $target = '.'.$requestUri;
     if (!file_exists($target)) {
         header('HTTP/1.1 404 Not Found');
@@ -25,6 +25,8 @@ if ($requestUri == '/') {
     } else {
         return false;
     }
+} elseif (strpos($requestUri, '/docs/') === 0) { // For documentation (MDR)
+    include __DIR__.'/docs/_mdr/index.php';
 } else {
     $target = '.'.$requestUri.'.php'; // Rewrite extension-less files as php files
     if (file_exists($target)) {
