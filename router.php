@@ -25,7 +25,8 @@ if ($requestUri == '/') {
     } else {
         return false;
     }
-} elseif (strpos($requestUri, '/docs/') === 0) { // For documentation (MDR)
+} elseif (strpos($requestUri, '/docs/') === 0 || $requestUri == '/docs') {
+    // For documentation (MDR)
     include __DIR__.'/docs/_mdr/index.php';
 } else {
     $target = '.'.$requestUri.'.php'; // Rewrite extension-less files as php files
