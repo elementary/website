@@ -1,20 +1,11 @@
 <?php
-
 require_once __DIR__.'/settings.php';
 
-
-
-// START READABLE
 if (
     is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
 ) {
-
-
-
-    // START INDEX
-    if ( is_dir($Request['Directory']) ) {
-
+    if ( is_dir($Request['Directory']) ) { // List pages
         // Index Header
         include $Templates['Header'];
         echo '<div class="row">';
@@ -44,14 +35,7 @@ if (
         // Footer
         echo '</div>';
         include $Templates['Footer'];
-
-    // END INDEX
-
-
-
-    // START FILE
-    } else {
-
+    } else { // Render the file
         if ( is_readable($Request['Directory']) ) {
             // Apparently this isn't a directory, just a poorly named file.
             $Content = file_get_contents($Request['Directory']);
@@ -76,37 +60,7 @@ if (
 
         echo '</div>';
         include $Templates['Footer'];
-
-    } // END FILE
-
-
-
-// END READABLE
-
-
-
-
-
-
-
-// START NON-EXISTANT
-} else {
-
-    // Headers MUST be sent before any content.
-    header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
-
-    include $Templates['Header'];
-    echo '<div class="row">';
-
-    require_once $MDR['Core'].'/function.url_to_title.php';
-    $Title = url_to_title($Request['Trimmed']);
-    if ( !empty($Title) ) {
-        echo '<h2>'.$Title.'</h2>';
     }
-
-    echo '<h3>'.$Lang[$Settings['Language']]['FILE_NOT_FOUND'].'</h3>';
-
-    echo '</div>';
-    include $Templates['Footer'];
-
-} // END NON-EXISTANT
+} else { // File not found
+    include $MDR['Root'].'/404.php';
+}
