@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__.'/../../_templates/l10n.php';
 require_once __DIR__.'/settings.php';
 
 if (
@@ -51,11 +52,14 @@ if (
         include $Templates['Header'];
         echo '<div class="row">';
 
+        set_l10n_domain(trim($sitewide['path'], '/'));
+
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
         $Content = str_replace('⌘', '&#8984;', $Content);
+        $Content = translate_html($Content);
         echo $Content;
 
         echo '</div>';
