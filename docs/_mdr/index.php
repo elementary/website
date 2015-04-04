@@ -62,5 +62,6 @@ if (
         include $Templates['Footer'];
     }
 } else { // File not found
+    header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
     include $MDR['Root'].'/404.php';
 }
