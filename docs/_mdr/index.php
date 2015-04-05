@@ -56,8 +56,6 @@ if (
         include $Templates['Header'];
         echo '<div class="row">';
 
-        set_l10n_domain(trim($sitewide['path'], '/'));
-
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];
         $Parsedown = new ParsedownExtra();
