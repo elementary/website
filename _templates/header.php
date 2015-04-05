@@ -7,7 +7,8 @@ if (isset($page['lang']) && $page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
 }
 if (!isset($page['path'])) {
-    $page['path'] = str_replace($page['lang-root'], '/', $sitewide['path']);
+    $page['path'] = str_replace($sitewide['root'], '/', $sitewide['path']);
+    $page['path'] = str_replace('/'.$page['lang'].'/', '/', $page['path']);
 }
 if (!isset($page['name'])) {
     $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
