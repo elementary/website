@@ -48,7 +48,7 @@ You can customize the dock's behavior through **[System Settings](/docs/learning
 <div class="clear row" markdown="1">
 <div class="column half" markdown="1">
 
-App's exist in their own windows which can be closed, maximized, or moved around.
+Apps exist in their own windows which can be closed, maximized, or moved around.
 
 When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.
 
