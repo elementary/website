@@ -9,6 +9,7 @@ if (
     if ( is_dir($Request['Directory']) ) {
         // List pages
 
+        // Header
         include $Templates['Header'];
         echo '<div class="row">';
         require_once $MDR['Core'].'/function.url_to_title.php';

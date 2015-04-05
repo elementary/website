@@ -35,7 +35,7 @@ $Request['Exploded']    = explode('?', $Request['Raw'])[0];
 $Request['Trimmed']     = trim(rtrim(str_replace('.md', '', $Request['Exploded']), '/'));
 // Made dynamic per-branch
 // $Request['Directory']   = str_replace('/branch/docs-by-mdr', '', $MDR['Root']).$Request['Trimmed'];
-$Request['Directory']   = $MDR['Root'].'/docs/'.explode('/docs/', $Request['Trimmed'])[1];
+$Request['Directory']   = rtrim($MDR['Root'].'/docs/'.(explode('/docs/', $Request['Trimmed'])[1] ?: ''), '/');
 $Request['Markdown']    = $Request['Directory'].'.md';
 $Request['Source']      = false;
 
