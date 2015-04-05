@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../../_templates/l10n.php';
+
 require_once __DIR__.'/settings.php';
 
 if (
