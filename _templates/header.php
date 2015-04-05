@@ -11,6 +11,9 @@ if (!isset($page['path'])) {
 }
 if (!isset($page['name'])) {
     $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
+    if (empty($page['name'])) {
+        $page['name'] = 'index';
+    }
 }
 
 init_l10n();
