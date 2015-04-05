@@ -10,6 +10,7 @@ if (
         // List pages
 
         // Header
+        $page['title'] = url_to_title(basename($Request['Directory']));
         include $Templates['Header'];
         echo '<div class="row">';
         require_once $MDR['Core'].'/function.url_to_title.php';
