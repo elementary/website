@@ -1,14 +1,14 @@
 {
-    "Develop": "Develop",
-    "Your ideas into code": "Your ideas into code",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "Design",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "Code",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "Manage",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Use Launchpad to manage bug reports and collaborate with other developers.",
-    "Distribute": "Distribute",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Set up an Ubuntu My Apps account and publish your apps into the Software Center.",
-    "Develop Apps for elementary OS": "Develop Apps for elementary OS"
+    "Develop": "Zmeňte",
+    "Your ideas into code": "Svoje myšlienky na kód",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Založený na najlepšej open-sourceovej technológii, elementary je mimoriadne priateľská platforma k vývojárom. Poskytujeme existujúcim a novým vývojárom tie najlepšie dostupné materiály a dokumentáciu, aby sme sa uistili, že vaše aplikácie naozaj zažiaria.",
+    "Design": "Dizajn",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Preštudujte si Human Interface Guidelines (HIG) a naučte sa robiť z vašich aplikácií prvotriedny zážitok.",
+    "Code": "Kód",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Učte sa o našom Application Programming Interface (APIs) a objavte všetky zabudované vymoženosti dostupné pre vás.",
+    "Manage": "Správa",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Používajte Launchpad k správe hláseniu chýb a k spolupráci s ostatnými vývojármi.",
+    "Distribute": "Distribúcia",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Založte si Ubuntu My Apps účet a publikujte vaše aplikácie priamo do Centra Aplikácií.",
+    "Develop Apps for elementary OS": "Vyvíjať aplikácie pre elementary OS"
 }
