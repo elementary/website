@@ -107,7 +107,7 @@ $l10nDomain = null;
 $translations = array();
 function set_l10n_domain($domain) {
     global $lang, $l10nDomain, $translations;
-var_dump($domain);
+
     if (ob_get_level()) {
         ob_flush(); // Flush output buffer
     }
