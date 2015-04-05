@@ -67,7 +67,7 @@
         <p>Has your question been asked already? Check out answers to some of the most common questions we get.</p>
     </a>
 
-    <a class="column half" href="/installation">
+    <a class="column half" href="/docs/installation">
         <h3><i class="fa fa-download"></i> Installation</h3>
         <p>Get help installing elementary OS on your computer by following our step-by-step guide.</p>
     </a>
