@@ -50,6 +50,9 @@ function capture_translation($id, $domain, $string) {
 	if ($domain != $captureDomain) {
 		return;
 	}
+	if (empty($id)) {
+		return;
+	}
 	if (is_numeric($id) || ctype_punct($id)) {
 		return; // Not supposed to be a translatable string
 	}

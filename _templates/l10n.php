@@ -156,7 +156,7 @@ function translate_html($input, $translate = 'translate') {
     );
 
     // Tags included in translation strings when used in <p> or <li>
-    $ignoredTags = array('a', 'kbd');
+    $ignoredTags = array('a', 'kbd', 'strong');
 
     // Begin parsing input HTML
     $i = 0;
