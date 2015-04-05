@@ -7,7 +7,7 @@ set_l10n_domain('layout');
                 Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a>
             </p>
             <div class="popover">
-                <a href="#"><i class="fa fa-language"></i>&nbsp;Language</a>
+                <a href="#"><i class="fa fa-language"></i> Language</a>
                 <div class="popover-content">
                     <strong>Change Site Language</strong>
                     <ul>
