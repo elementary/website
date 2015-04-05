@@ -6,8 +6,9 @@ if (
     is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
 ) {
-    if ( is_dir($Request['Directory']) ) { // List pages
-        // Index Header
+    if ( is_dir($Request['Directory']) ) {
+        // List pages
+
         include $Templates['Header'];
         echo '<div class="row">';
         require_once $MDR['Core'].'/function.url_to_title.php';
@@ -36,7 +37,9 @@ if (
         // Footer
         echo '</div>';
         include $Templates['Footer'];
-    } else { // Render the file
+    } else {
+        // Render the file
+
         if ( is_readable($Request['Directory']) ) {
             // Apparently this isn't a directory, just a poorly named file.
             $Content = file_get_contents($Request['Directory']);
@@ -65,7 +68,8 @@ if (
         echo '</div>';
         include $Templates['Footer'];
     }
-} else { // File not found
+} else {
+    // Page not found
     header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
     include $MDR['Root'].'/404.php';
 }
