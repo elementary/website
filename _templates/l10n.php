@@ -356,10 +356,7 @@ function init_l10n() {
         && $page['lang'] != 'en') {
 
         $url = $sitewide['root'];
-        $url .= $page['lang'];
-        if ($page['name'] != 'index') {
-            $url .= $page['path'];
-        }
+        $url .= $page['lang'].$page['path'];
         $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
         header('Location: '.$url);
         exit();
