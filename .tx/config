@@ -17,10 +17,6 @@ source_lang = en
 file_filter = lang/<lang>/index.json
 source_lang = en
 
-[elementary-mvp.installation]
-file_filter = lang/<lang>/installation.json
-source_lang = en
-
 [elementary-mvp.layout]
 file_filter = lang/<lang>/layout.json
 source_lang = en
@@ -35,4 +31,12 @@ source_lang = en
 
 [elementary-mvp.support]
 file_filter = lang/<lang>/support.json
+source_lang = en
+
+[elementary-mvp.docs_installation]
+file_filter = lang/<lang>/docs/installation.json
+source_lang = en
+
+[elementary-mvp.docs_learning-the-basics]
+file_filter = lang/<lang>/docs/learning-the-basics.json
 source_lang = en

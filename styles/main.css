@@ -107,6 +107,28 @@ q:after {
     }
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background: #c9c9c9;
+}
+hr.fade-the-edges {
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE10+ */
+    background: -ms-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* FF3.6+ */
+    background: -moz-linear-gradient(left,  #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#c9c9c9), color-stop(100%,#ffffff));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* W3C */
+    background: linear-gradient(to right,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+}
+
 kbd {
     color: #4D4D4D;
     background-color: #E9E9E9;
@@ -119,6 +141,11 @@ kbd {
     padding: 2px 4px;
     -moz-user-select: none;
     margin: 3px;
+}
+code,
+pre,
+kbd {
+    font-family: 'Droid Sans Mono';
 }
 
 img {
@@ -187,6 +214,10 @@ img.hero {
 .read-more:hover:after {
     padding-left: 10px;
 }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 /*********
 * NAVBAR *
@@ -380,7 +411,8 @@ footer ul li a:focus {
     padding: 24px 0;
 }
 
-.row ul {
+.row ul,
+.row ol {
     text-align: left;
 }
 

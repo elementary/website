@@ -56,7 +56,7 @@
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
-                <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="installation" target="_blank">installation guide</a></p>
+                <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
                         <a class="button close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-unstable-i386.20150208.iso">Freya Beta 32-bit</a>
