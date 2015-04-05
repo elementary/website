@@ -335,27 +335,39 @@ function end_html_l10n() {
     ob_end_flush();
 }
 
-// Set page language
-if (isset($_GET['lang'])) {
-    $lang = $_GET['lang'];
-} else {
-    $lang = user_lang();
-}
-if (!is_lang($lang)) {
-    $lang = 'en';
-}
-$page['lang'] = $lang; // Set page variable
-
-// Autoredirection
-if ((isset($_GET['lang']) || isset($_COOKIE['language'])) && $_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
-    $url = $sitewide['root'];
-    $url .= $page['lang'].'/';
-    if ($page['name'] != 'index') {
-        $url .= $page['name'];
+function get_page_lang() {
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+    } else {
+        $lang = user_lang();
     }
-    header('Location: '.$url);
-    exit();
+    if (!is_lang($lang)) {
+        $lang = 'en';
+    }
+    return $lang;
 }
-if (isset($_GET['lang'])) {
-    setcookie('language', $lang,  time() + 60*60*24*30, '/'); // 30 days
+
+$lang = 'en';
+function init_l10n() {
+    global $page, $lang;
+
+    $lang = $page['lang'];
+
+    if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
+        && $_GET['lang'] != $page['lang'] 
+        && $page['lang'] != 'en') {
+
+        $url = $sitewide['root'];
+        $url .= $page['lang'];
+        if ($page['name'] != 'index') {
+            $url .= $page['path'];
+        }
+        $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
+        header('Location: '.$url);
+        exit();
+    }
+
+    if (isset($_GET['lang'])) {
+        setcookie('language', $lang,  time() + 60*60*24*30, '/'); // 30 days
+    }
 }

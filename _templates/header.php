@@ -1,14 +1,19 @@
 <?php
-if (!isset($page['name'])) {
-    $page['name'] = basename($_SERVER['PHP_SELF'], '.php');
-}
-
 include_once __DIR__.'/l10n.php';
 
+$page['lang'] = get_page_lang();
 $page['lang-root'] = $sitewide['root'];
 if (isset($page['lang']) && $page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
 }
+if (!isset($page['path'])) {
+    $page['path'] = str_replace($page['lang-root'], '/', $sitewide['path']);
+}
+if (!isset($page['name'])) {
+    $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
+}
+
+init_l10n();
 
 set_l10n_domain('layout');
 begin_html_l10n();
