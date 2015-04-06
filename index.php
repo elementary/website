@@ -11,6 +11,13 @@
 
             <div class="row">
                 <object data="images/logotype.svg" type="image/svg+xml" id="logotype" data-l10n-off>elementary OS</object>
+                
+                <?php
+                    // Embed the SVG to fix scaling in WebKit 1.x,
+                    // while preserving CSS options for the image.
+                    include('images/logotype.svg');
+                ?>
+                
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
             <img class="hero" src="images/notebook.png">
