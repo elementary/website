@@ -553,6 +553,7 @@ button.suggested-action,
 #logotype {
     max-width: 100%;
     width: 454px;
+    margin: 0 auto;
 }
 
 .small-button {
