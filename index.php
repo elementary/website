@@ -10,7 +10,6 @@
             </script>
 
             <div class="row">
-                <object data="images/logotype.svg" type="image/svg+xml" id="logotype" data-l10n-off>elementary OS</object>
                 
                 <?php
                     // Embed the SVG to fix scaling in WebKit 1.x,
