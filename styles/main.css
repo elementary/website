@@ -566,9 +566,11 @@ button.suggested-action,
     right: 0;
     bottom: 0;
 }
+/*
 #logotype svg path {
     fill: red;
 }
+*/
 
 .small-button {
     margin: 3px;
