@@ -10,16 +10,20 @@
             </script>
 
             <div class="row">
+                <div id="logotype">
                 
-                <?php
-                    // Embed the SVG to fix scaling in WebKit 1.x,
-                    // while preserving CSS options for the image.
-                    include('images/logotype.svg');
-                ?>
-                
+                    <?php
+                        // Embed the SVG to fix scaling in WebKit 1.x,
+                        // while preserving CSS options for the image.
+                        include('images/logotype.svg');
+                    ?>
+                    
+                </div>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
+            
             <img class="hero" src="images/notebook.png">
+            
             <div class="row">
                 <div id="amounts">
                     <?php
