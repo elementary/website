@@ -555,7 +555,7 @@ button.suggested-action,
     height: 66px;
     width: 454px;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 16px auto;
 }
 #logotype svg {
     position: absolute;
@@ -565,6 +565,7 @@ button.suggested-action,
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: visible;
 }
 /*
 #logotype svg path {
