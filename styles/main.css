@@ -551,9 +551,27 @@ button.suggested-action,
 }
 
 #logotype {
-    max-width: 100%;
+    position: relative;
+    height: 66px;
     width: 454px;
+    max-width: 80%;
+    margin: 16px auto;
 }
+#logotype svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+}
+/*
+#logotype svg path {
+    fill: red;
+}
+*/
 
 .small-button {
     margin: 3px;
