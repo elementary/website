@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Support &sdot; elementary';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
     include $template['header'];
 ?>
 
