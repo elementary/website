@@ -992,3 +992,11 @@ body.sliding {
 .browsers-list {
     width: 50px;
 }
+
+/*****************
+* Browsers icons *
+*****************/
+.docs img {
+    display: block;
+    margin: 0 auto;
+}
