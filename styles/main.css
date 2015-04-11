@@ -1,4 +1,4 @@
-/* Copyright 2015 elementary LLC.
+﻿/* Copyright 2015 elementary LLC.
 *
 * This file is part of elementaryos.org
 */
@@ -146,6 +146,22 @@ code,
 pre,
 kbd {
     font-family: 'Droid Sans Mono';
+    text-align: justify;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 1px 3px;
+    white-space: nowrap;
+}
+
+pre {
+    padding: 8px;
+    overflow: auto;
+}
+
+pre > code {
+    border: none;
+    padding: 0;
+    white-space: pre;
 }
 
 img {
@@ -982,4 +998,12 @@ body.sliding {
 *****************/
 .browsers-list {
     width: 50px;
+}
+
+/*****************
+* Browsers icons *
+*****************/
+.docs img {
+    display: block;
+    margin: 0 auto;
 }

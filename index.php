@@ -11,19 +11,19 @@
 
             <div class="row">
                 <div id="logotype">
-                
+
                     <?php
                         // Embed the SVG to fix scaling in WebKit 1.x,
                         // while preserving CSS options for the image.
                         include('images/logotype.svg');
                     ?>
-                    
+
                 </div>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
-            
+
             <img class="hero" src="images/notebook.png">
-            
+
             <div class="row">
                 <div id="amounts">
                     <?php
@@ -46,8 +46,8 @@
                         }
                     ?>
                 </div>
-                <button type="submit" id="download" class="suggested-action">Download Freya Beta</button>
-                <p class="small-label">898.6 MB (for PC or Mac)</p>
+                <button type="submit" id="download" class="suggested-action">Download Freya</button>
+                <p class="small-label">852 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <div class="column third">
@@ -69,12 +69,12 @@
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
-                        <a class="button close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-unstable-i386.20150208.iso">Freya Beta 32-bit</a>
-                        <a class="button close-modal" href="magnet:?xt=urn:btih:22d76dd2990cae50e7c68412ea8c27c4bebe0e71&dn=elementaryos-unstable-i386.20150208.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementary.io%2Fdownloads%2Felementaryos-unstable-i386.20150208.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-i386.20150208.iso"><i class="fa fa-magnet"></i></a>
+                        <a class="button close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-i386.20150411.iso/download">Freya 32-bit</a>
+                        <a class="button close-modal" href="magnet:?xt=urn:btih:0a36a61cb46fc1444c95eb62185b777d65362ca9&dn=elementaryos-freya-i386.20150411.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-i386.20150411.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-i386.20150411.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-i386.20150411.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-i386.20150411.iso"><i class="fa fa-magnet"></i></a>
                     </div>
                     <div class="column linked">
-                        <a class="button suggested-action close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/unstable/elementaryos-unstable-amd64.20150208.iso">Freya Beta 64-bit</a>
-                        <a class="button suggested-action close-modal" href="magnet:?xt=urn:btih:29e77fa17ab4d7f48da280facac25c8573692ba1&dn=elementaryos-unstable-amd64.20150208.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&xs=http%3A%2F%2Felementary.io%2Fdownloads%2Felementaryos-unstable-amd64.20150208.iso.torrent&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Funstable%2Felementaryos-unstable-amd64.20150208.iso"><i class="fa fa-magnet"></i></a>
+                        <a class="button suggested-action close-modal" target="_blank" href="http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-amd64.20150411.iso/download">Freya 64-bit</a>
+                        <a class="button suggested-action close-modal" href="magnet:?xt=urn:btih:fc85dc999730a42de3924444aadbcfa183b5f388&dn=elementaryos-freya-amd64.20150411.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http%3A%2F%2Fsuberb-sea2.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-amd64.20150411.iso&ws=http%3A%2F%2Fignum.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-amd64.20150411.iso&ws=http%3A%2F%2Fheanet.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-amd64.20150411.iso&ws=http%3A%2F%2Fcitylan.dl.sourceforge.net%2Fproject%2Felementaryos%2Fstable%2Felementaryos-freya-amd64.20150411.iso"><i class="fa fa-magnet"></i></a>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ if (
         require_once $MDR['Core'].'/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Directory']));
         include $Templates['Header'];
-        echo '<div class="row">';
+        echo '<div class="row docs-index">';
         require_once $MDR['Core'].'/function.url_to_title.php';
         $Title = url_to_title($Request['Trimmed']);
         if ( !empty($Title) ) {
@@ -56,7 +56,7 @@ if (
         require_once $MDR['Core'].'/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Source'], '.md'));
         include $Templates['Header'];
-        echo '<div class="row">';
+        echo '<div class="row docs">';
 
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];
