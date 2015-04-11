@@ -20,7 +20,7 @@ $isMarkdown = (strpos($captureDomain, 'docs/') === 0);
 
 // WARNING: keep a strict page name regex, otherwise everyone could be able to read
 // sensitive data from server (e.g. Stripe API keys)
-if (!preg_match('#^(docs/)?[a-z0-9-\.]+$#', $page['name'])) {
+if (!preg_match('#^(docs/[a-z0-9-\./]+|[a-z0-9-\.]+)$#', $page['name'])) {
 	header('HTTP/1.0 400 Bad Request');
 	exit('Bad page name.');
 }
