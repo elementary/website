@@ -1,5 +1,6 @@
 <?php
-    $page['title'] = "Download elementary OS";
+    $page['title'] = 'Download elementary OS';
+    $page['image'] = 'https://elementary.io/images/notebook.png';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     include '_templates/sitewide.php';
     include $template['header'];
