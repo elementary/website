@@ -146,6 +146,15 @@ code,
 pre,
 kbd {
     font-family: 'Droid Sans Mono';
+    text-align: justify;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+pre > code {
+    border: none;
+    padding: 0;
 }
 
 img {
