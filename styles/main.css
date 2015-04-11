@@ -155,12 +155,12 @@ kbd {
 
 pre {
     padding: 8px;
-    white-space: pre;
 }
 
 pre > code {
     border: none;
     padding: 0;
+    white-space: pre;
 }
 
 img {
