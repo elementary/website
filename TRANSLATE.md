@@ -25,6 +25,7 @@ You can add the `include_disabled=1` parameter to print disabled strings too. Th
 ## Changing a translation key
 
 If you want to change a translation key for an element, just add a `data-l10n-id` attribute:
+
 ```html
 <p data-l10n-id="mylongparagraph">Blablabla</p>
 ```
@@ -32,6 +33,7 @@ If you want to change a translation key for an element, just add a `data-l10n-id
 ## Disabling a translation
 
 To ignore a translation string, set it to `false` in `/lang/en/<page>.json`:
+
 ```js
 {
     "elementary OS": false // Can't be translated
@@ -48,18 +50,30 @@ Alternatively, you can add the `data-l10n-off` attribute to a tag:
 You will need first to install the Transifex client: http://docs.transifex.com/developer/client/setup
 
 Then, run the following command: 
-```shell
+
+```bash
 tx pull
 ```
 
 To pull a new language:
-```shell
+
+```bash
 tx pull -l <lang>
 ```
 
 To pull **all** translations, even new ones:
-```shell
+
+```bash
 tx pull -a
+```
+
+## Pushing new translation source files to Transifex
+
+When creating or updating a source file, translations needs to be updated. You can run these commands to extract translations from source files and publish them on Transifex:
+
+```bash
+.tx/prepush.sh # Update translation source files
+tx push -s # Push new translation source files to Transifex
 ```
 
 ## Adding a new language to the list on the website
