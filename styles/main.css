@@ -155,6 +155,7 @@ kbd {
 
 pre {
     padding: 8px;
+    overflow: auto;
 }
 
 pre > code {
