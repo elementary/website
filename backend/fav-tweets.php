@@ -1,0 +1,162 @@
+<?php
+/**
+ * Fetch tweets favorited by @elementary and 
+ * put them in tweets.json file
+ * access tokens should be stored in twitter-tokens.php
+ */
+
+// this file defines the keys required by twitter in the following way
+// define('TWITTER_CONSUMER_KEY', 'val');
+// constants it should define are TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN and TWITTER_ACCESS_SECRET
+include 'twitter-keys.php';
+
+function log_info($msg) { // Basic logger
+	echo $msg."\n";
+}
+
+class TwApi {
+  var $consumer_key = TWITTER_CONSUMER_KEY;
+  var $consumer_secret = TWITTER_CONSUMER_SECRET;
+  var $access_token;
+  var $access_secret;
+  var $oauth;
+
+  function TwApi($token, $secret) {
+    $this->access_token = $token;
+    $this->access_secret = $secret;
+
+    $this->oauth = array( 
+      'oauth_consumer_key' => $this->consumer_key,
+      'oauth_token' => $this->access_token,
+      'oauth_signature_method' => 'HMAC-SHA1',
+      'oauth_timestamp' => time(),
+      'oauth_nonce' => time(),
+      'oauth_version' => '1.0'
+    );
+  }
+
+  function build_url($request, $params) {
+    $url = "https://api.twitter.com/1.1/$request";
+
+    if(count($params)) {
+      $query = array();
+
+      foreach($params as $key=>$value) {
+        $query[] = "$key=" . rawurlencode($value); 
+      }
+      $url .= '?' . implode('&', $query);
+    }
+
+    return $url;
+  }
+
+  function build_base_string($request, $method, $params) {
+    $r = array(); 
+    ksort($params); 
+    foreach($params as $key=>$value) {
+
+      if($key == "oauth_signature") {
+        continue;
+      }
+
+      $r[] = "$key=" . rawurlencode($value); 
+    }            
+
+    return $method."&".rawurlencode("https://api.twitter.com/1.1/$request").'&'. 
+      rawurlencode(implode('&', $r)); //return complete base string
+  }
+
+  function build_authorization_header() {
+    $r = 'Authorization: OAuth ';
+    $values = array();
+    foreach($this->oauth as $key=>$value) {
+        $values[] = "$key=\"" . rawurlencode($value) . "\"";
+    }
+
+    $r .= implode(', ', $values); 
+    return $r; 
+  }
+
+  function build_signature($request, $params) {
+    $all_params = array_merge($params, $this->oauth);
+    $base_info = $this->build_base_string($request, 'GET', $all_params);
+
+    $composite_key = rawurlencode($this->consumer_secret) . '&' . 
+      rawurlencode($this->access_secret);
+
+    $oauth_signature = base64_encode(hash_hmac('sha1', $base_info, 
+      $composite_key, true));
+
+    $this->oauth['oauth_signature'] = $oauth_signature;
+  }
+
+  function send_request($request, $params) {
+    $url = $this->build_url($request, $params);
+    $this->build_signature($request, $params);
+
+    $header = array($this->build_authorization_header(), 'Expect:');
+    $options = array(
+      CURLOPT_HTTPHEADER => $header,
+      CURLOPT_HEADER => false,
+      CURLOPT_URL => $url,
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_SSL_VERIFYPEER => false);
+
+    $feed = curl_init();
+    curl_setopt_array($feed, $options);
+    $json = curl_exec($feed);
+    curl_close($feed);
+
+    $twitter_data = json_decode($json);
+    return $twitter_data;
+  }
+
+  function verify_credentials() {
+    $request = "account/verify_credentials.json";
+    $params = array();
+
+    $result = $this->send_request($request, $params);
+    return $result;
+  }
+
+  function user_lookup($list) {
+    $request = "users/lookup.json";
+    $params = array('user_id'=>$list);
+
+    $result = $this->send_request($request, $params);
+    return $result;
+  }
+
+  function get_favorites($user_id, $count = 10) {
+    $request = "favorites/list.json";
+    $params = array('user_id' => $user_id,
+                    'count' => $count);
+
+    $result = $this->send_request($request, $params);
+
+    return $result;
+                    
+  }
+}
+
+$api = new TwApi(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET);
+
+log_info('Fetching tweets.');
+$favs = $api->get_favorites('elementary');
+log_info('Fetched tweets');
+
+$tweets = array();
+
+foreach($favs as $fav) {
+  $tweet['name'] = $fav->user->name;
+  $tweet['handle'] = $fav->user->screen_name;
+  $tweet['text'] = $fav->text;
+  $tweet['timestamp'] = $fav->created_at;
+
+  array_push($tweets, $tweet);
+}
+
+log_info('Writing tweets to file.');
+file_put_contents('./tweets.json', json_encode($tweets, JSON_PRETTY_PRINT));
+log_info('Done.');
+?>
