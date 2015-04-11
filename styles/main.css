@@ -149,7 +149,13 @@ kbd {
     text-align: justify;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    padding: 1px 3px;
+    white-space: nowrap;
+}
+
+pre {
     padding: 8px;
+    white-space: pre;
 }
 
 pre > code {
