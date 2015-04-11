@@ -47,7 +47,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Download Freya</button>
-                <p class="small-label">852 MB (for PC or Mac)</p>
+                <p class="small-label">893 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <div class="column third">
