@@ -1,8 +1,8 @@
 {
     "Installation": "نصب",
-    "Download elementary OS": "Download elementary OS",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "در صورتی که elementary OS را دریافت نکرده‌اید، لازم است به <a href=\"/\" target=\"_blank\">صفحه‌ی خانگی</a> مراجعه کرده و سیستم‌عامل المتاری را دانلود نمایید. پس از آن باید فایل  ISO دریافت شده را بر اساس راهنمای زیر، بر روی یک حافظه‌ی فلش کپی کنید. ",
-    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "سیستم‌عامل المنتاری هم‌اکنون برای دو معماری پردازشی 32 و 64 بیت ساخته شده است.",
+    "Download elementary OS": "دانلود المنتری او اس ( سیستم عامل المنتری )",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "در صورتی که سیستم عامل المنتری را دریافت نکرده‌اید، لازم است به <a href=\"/\" target=\"_blank\">صفحه‌ی خانگی</a> مراجعه کرده و سیستم‌عامل المتاری را دانلود نمایید. پس از آن باید فایل  ISO دریافت شده را بر اساس راهنمای زیر، بر روی یک حافظه‌ی فلش کپی کنید. ",
+    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "سیستم‌عامل المنتری هم‌اکنون برای دو معماری پردازشی 32 و 64 بیت ساخته شده است.",
     "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.": "در صورتی که از معماری 64 بیتی رایانه‌ی خود اطلاع دارید یا سیستم شما نسبتا جدید است، نسخه‌ی 4 بیتی را انتخاب کنید.",
     "If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).": "اگر رایانه‌ی شما قدیمی بوده یا اطلاعی از نوع پردازنده‌ی سیستم خود ندارید، نسخه‌ی 32 بیتی را انتخاب کنید (پردازنده‌های 64 بیتی قادر به اجرای نسخه‌ی 32 بیتی نیز هستند).",
     "Recommended System Specifications": "Recommended System Specifications",
@@ -36,5 +36,5 @@
     "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive&mdash;usually \"USB-HDD\" or something containing the word \"USB\", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually \"USB-HDD\" or something containing the word \"USB\", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as \"Windows\", but this is normal.": "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as \"Windows\", but this is normal.",
-    "Installing elementary OS": "در حال نصب سیستم‌عامل المنتاری"
+    "Installing elementary OS": "در حال نصب سیستم‌عامل المنتری"
 }

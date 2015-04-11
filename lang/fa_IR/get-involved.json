@@ -1,5 +1,5 @@
 {
-    "Check out our progress for Freya RC 1": "Check out our progress for Freya RC 1",
+    "Check out our progress for Freya RC 1": "پیشرفت ما برای فریا RC1 بررسی کنید",
     "Fixed": "درست شد",
     "In Progress": "در دست انجام",
     "Unfixed": "درست نشده",
@@ -8,12 +8,12 @@
     "Design": "طراحی",
     "Desktop Development": "توسعه‌ی میزکار",
     "&ldquo;A different language is a different vision of life.&rdquo;": "\"یک زبان متفاوت، همچون نگاهی متفاوت به زندگی است.\"",
-    "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.",
-    "elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta.": "elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta.",
-    "Learn More": "Learn More",
-    "Our website is also openly translated using an online platform called Transifex.": "Our website is also openly translated using an online platform called Transifex.",
-    "Translate elementary OS": "Translate elementary OS",
-    "Translate This Website": "Translate This Website",
+    "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "سیستم عامل المنتری توسط افرادی در سراسر دنیا ساخته و مورد استفاده قرار می گیرد؛ با ترجمه کردن آن به بقیه زبان ها به ما کمک کنید تا این تجربه را بهبود ببخشیم",
+    "elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta.": "سیستم عامل المنتری از ابزار باز  و درونی به نام روزتا در لانچ پد استفاده می کند ",
+    "Learn More": "بیشتر بدانید",
+    "Our website is also openly translated using an online platform called Transifex.": "همچنین وب سایت ما از ترجمه باز ابزار برخط ( آنلاین ) Transifex استفاده می کند ",
+    "Translate elementary OS": "ترجمه سیستم عامل المنتری ",
+    "Translate This Website": "این وب سایت را ترجمه کنید ",
     "World map": "نقشه‌ی جهان",
     "&ldquo;Websites should look good from the inside and out&rdquo;": "\"وب‌سایت‌ها باید از درون تا بیرون جلوه‌ی خوبی داشته باشند\"",
     "Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.": "وب‌سایت ما با استفاده از HTML ،CSS ،PHP و JavaScript ساخته شده است. ما همواره به دنبال افرادی هستیم که در این حیطه‌ها تجربه داشته و مایل به مشارکت و بهبود این پروژه باشند. اغلب کارهای مربوط به طراحی، توسط «تیم طراحی» ما به انجام رسیده، اما از ایده‌های طراحی و بازخورد برای «تیم وب» استقبال خواهیم کرد.",
@@ -35,5 +35,5 @@
     "Browse Our Desktop Code": "مرور کدهای میزکار",
     "Browse Our Apps' Code": "مرور کدهای اپلیکیشن‌ها",
     "Scratch text editor": "ویرایشگر کد Scratch",
-    "Get Involved with elementary OS": "مشارکت در توسعه‌ی سیستم‌عامل المنتاری"
+    "Get Involved with elementary OS": "مشارکت در توسعه‌ی سیستم‌عامل المنتری"
 }
