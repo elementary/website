@@ -1,22 +1,8 @@
 (function () {
-    // Install guide toggles
+    // Homepage toggles
     var toggles = {
         'carousel-choices': ['photos', 'music']
     };
-
-    // Parse user-agent to detect current plateform
-    function detectOS() {
-        var ua = window.navigator.userAgent;
-        if (ua.indexOf('Windows') >= 0) {
-            return 'windows';
-        }
-        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'osx';
-        }
-        if (ua.indexOf('Linux') >= 0) {
-            return 'linux';
-        }
-    }
 
     function transitionsSupported() {
         return (typeof document.body.style.transition != 'undefined');
