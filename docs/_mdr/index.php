@@ -63,7 +63,7 @@ if (
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
         $Content = str_replace('⌘', '&#8984;', $Content);
-        $Content = translate_html($Content);
+        $Content = $l10n->translate_html($Content);
         echo $Content;
 
         echo '</div>';
