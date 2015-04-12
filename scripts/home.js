@@ -60,6 +60,8 @@
             }
         }
 
+        var container = choosenParagraph.parentNode;
+
         // Should we make a nice transition?
         if (animationDirection && transitionsSupported() &&
             currentParagraph.classList.contains('slide') && choosenParagraph.classList.contains('slide')) {
@@ -73,7 +75,7 @@
 
             if (animationDirection == 'left') {
                 currentParagraph.style.top = '0';
-                //choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
+                choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
             } else {
                 choosenParagraph.style.top = '0';
             }
@@ -86,7 +88,12 @@
                 choosenParagraph.classList.add('sliding');
 
                 if (animationDirection == 'right') {
-                    //currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
+                    currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
+                }
+
+                if (container.classList.contains('slide-container')) {
+                    var maxHeight = Math.max(currentParagraph.offsetHeight, currentParagraph.offsetHeight);
+                    container.style.height = maxHeight+'px';
                 }
             }, 20);
 
