@@ -235,11 +235,14 @@ function translate_html($input, $translate = 'translate') {
                             break;
                         }
                     }
-                    if ($j < strlen($attrs)) { // Broke inside the loop, append the remaining chars
+                    if ($j < strlen($attrs)) {
+                        // Broke inside the loop, append the remaining chars
                         $tag .= substr($attrs, $j);
                     }
                 }
-            } else { // No attributes in this tag
+            } elseif (rtrim($tag, '/ ') != 'br') {
+                // No attributes in this tag
+                // Set current tag, if not a line break
                 $tagName = $tag;
             }
 
