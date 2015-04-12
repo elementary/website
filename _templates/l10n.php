@@ -347,7 +347,7 @@ function get_page_lang() {
 
 $lang = 'en';
 function init_l10n() {
-    global $page, $lang;
+    global $page, $lang, $sitewide;
 
     $lang = $page['lang'];
 
