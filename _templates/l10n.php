@@ -1,4 +1,6 @@
 <?php
+echo 'l10n included<br>';
+
 function list_langs() {
     return array(
         'en' => 'English',

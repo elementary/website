@@ -1,4 +1,5 @@
 <?php
+echo 'sitewide included<br>';
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 // Honor the IE do-not-track-header,
