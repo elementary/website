@@ -42,6 +42,29 @@ class Translator {
 
     protected $domain = null;
 
+    public function __construct() {
+        global $sitewide;
+
+        $this->lang = $this->get_page_lang();
+
+        // Redirect the user if we are translating the page
+        if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
+            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
+            && $this->lang != 'en') {
+
+            $url = $sitewide['root'];
+            $url .= $this->lang.$page['path'];
+            $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
+            header('Location: '.$url);
+            exit();
+        }
+
+        // Set cookie if the user has chosen the current language
+        if (isset($_GET['lang'])) {
+            setcookie('language', $this->lang,  time() + 60*60*24*30, '/'); // 30 days
+        }
+    }
+
     public function list_langs() {
         return $this->available_langs;
     }
@@ -362,27 +385,6 @@ class Translator {
             $lang = 'en';
         }
         return $lang;
-    }
-
-    public function __construct() {
-        global $sitewide;
-
-        $this->lang = $this->get_page_lang();
-
-        if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
-            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
-            && $this->lang != 'en') {
-
-            $url = $sitewide['root'];
-            $url .= $this->lang.$page['path'];
-            $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
-            header('Location: '.$url);
-            exit();
-        }
-
-        if (isset($_GET['lang'])) {
-            setcookie('language', $this->lang,  time() + 60*60*24*30, '/'); // 30 days
-        }
     }
 
     public function lang() {
