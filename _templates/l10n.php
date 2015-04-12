@@ -38,7 +38,7 @@ function list_langs() {
 }
 
 function lang_dir($lang) {
-    return dirname(__FILE__).'/../lang/'.$lang;
+    return __DIR__.'/../lang/'.$lang;
 }
 
 function is_lang($lang) {
@@ -163,7 +163,6 @@ function translate_html($input, $translate = 'translate') {
     $l10nDisabled = false;
     while ($i < strlen($input)) {
         $char = $input[$i]; // Current char
-        $next = $i + 1;
 
         if ($char == '<') { // Tag node (<HERE>)
             $next = strpos($input, '>', $i);
@@ -347,7 +346,7 @@ function get_page_lang() {
 
 $lang = 'en';
 function init_l10n() {
-    global $page, $lang;
+    global $page, $lang, $sitewide;
 
     $lang = $page['lang'];
 
