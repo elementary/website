@@ -352,7 +352,7 @@ function init_l10n() {
     $lang = $page['lang'];
 
     if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
-        && $_GET['lang'] != $page['lang'] 
+        && ($_GET['lang'] ?: 'en') != $page['lang'] 
         && $page['lang'] != 'en') {
 
         $url = $sitewide['root'];
