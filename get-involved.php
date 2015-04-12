@@ -81,7 +81,18 @@
                     </div>
                 </div>
 
-                <div class="web-browser">
+                <div class="row web-browser">
+                    <div class="web-browser-chrome">
+                        <i class="fa fa-close"></i>
+                        <i class="fa fa-arrow-left"></i>
+                        <i class="fa fa-arrow-right"></i>
+                        <div class="web-browser-chrome-url">
+                            <i class="fa fa-globe"></i>
+                            <i class="fa fa-refresh"></i>
+                        </div>
+                        <i class="fa fa-expand"></i>
+                    </div>
+
                     <h2>Web Development</h2>
                     <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
