@@ -2,26 +2,38 @@
 function list_langs() {
     return array(
         'en' => 'English',
+        'ar' => 'العربية',
+        'ar_SD' => '(العربية (السودان',
         'bg' => 'български език',
+        'bs' => 'Bosanski',
         'cs_CZ' => 'čeština',
         'de' => 'Deutsch',
+        'el' => 'ελληνικά',
         'es' => 'Español',
         'et' => 'Eesti',
+        'fa_IR' => '(فارسی (ایران',
+        'fi' => 'Suomi',
         'fr' => 'Français',
+        'hr_HR' => 'Hrvatski (Hrvatska)',
         'id_ID' => 'Bahasa Indonesia',
-        'it_IT' => 'Italiano',
+        'it' => 'Italiano',
         'lt' => 'Lietuvių kalba',
-        'nl' => 'Nederlands',
+        'ne' => 'नेपाली',
         'nb' => 'Bokmål',
+        'nl' => 'Nederlands',
         'no' => 'Norsk',
-        'pt_PT' => 'Português',
+        'pl' => 'Polski',
+        'pt_BR' => 'Português (Brasil)',
+        'pt_PT' => 'Português (Portugal)',
         'ro_RO' => 'Română',
         'ru' => 'Русский',
         'sr' => 'Српски',
         'sr_Ijekavian' => 'Српски (ијекавица)',
+        'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
-        'zh_CN' => '國語'
+        'zh_CN' => '简体中文',
+        'zh_TW' => '繁體中文',
     );
 }
 
@@ -35,6 +47,9 @@ function is_lang($lang) {
     }
     if (!preg_match('#^[a-z]{2}(_([A-Z]{2}|[A-Z][a-z]+))?$#', $lang)) {
         return false;
+    }
+    if ($lang == 'en') {
+        return true;
     }
 
     return is_dir(lang_dir($lang));
@@ -139,7 +154,7 @@ function translate_html($input, $translate = 'translate') {
     );
 
     // Tags included in translation strings when used in <p> or <li>
-    $ignoredTags = array('a', 'kbd');
+    $ignoredTags = array('a', 'kbd', 'strong');
 
     // Begin parsing input HTML
     $i = 0;
@@ -185,15 +200,24 @@ function translate_html($input, $translate = 'translate') {
                             // Extract attribute name and value
                             $nameEnd = strpos($attrs, '=', $j);
                             if ($nameEnd === false) {
-                                break;
-                            }
-                            $valueEnd = strpos($attrs, '"', $nameEnd + 2);
-                            if ($valueEnd === false) {
-                                break;
-                            }
+                                // In case the last attribute is a boolean one (without value, e.g. <input disabled>)
+                                $boolAttrName = substr($attrs, $j);
+                                if (preg_match('#^[a-zA-Z0-9-]+$#', $boolAttrName)) {
+                                    $valueEnd = $j + strlen($boolAttrName);
+                                    $name = $boolAttrName;
+                                    $value = true;
+                                } else {
+                                    break;
+                                }
+                            } else {
+                                $valueEnd = strpos($attrs, '"', $nameEnd + 2);
+                                if ($valueEnd === false) {
+                                    break;
+                                }
 
-                            $name = substr($attrs, $j, $nameEnd - $j);
-                            $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+                                $name = substr($attrs, $j, $nameEnd - $j);
+                                $value = substr($attrs, $nameEnd + 2, $valueEnd - ($nameEnd + 2));
+                            }
 
                             if ($name == 'data-l10n-id') { // Set translation ID for this tag
                                 $l10nId = $value;
@@ -201,7 +225,7 @@ function translate_html($input, $translate = 'translate') {
                             if ($name == 'data-l10n-off') { // Disable translation for this tag
                                 $l10nDisabled = true;
                             }
-                            if (in_array($name, $allowedAttrs)) { // Translate attribute
+                            if (in_array($name, $allowedAttrs) && !$l10nDisabled) { // Translate attribute
                                 $tag .= ' '.$name.'="'.$translate($value, $l10nDomain, $value).'"';
                             } else {
                                 $tag .= ' '.substr($attrs, $j, $valueEnd - $j + 1);
@@ -309,27 +333,36 @@ function end_html_l10n() {
     ob_end_flush();
 }
 
-// Set page language
-if (isset($_GET['lang'])) {
-    $lang = $_GET['lang'];
-} else {
-    $lang = user_lang();
-}
-if (!is_lang($lang)) {
-    $lang = 'en';
-}
-$page['lang'] = $lang; // Set page variable
-
-// Autoredirection
-if ((isset($_GET['lang']) || isset($_COOKIE['language'])) && $_GET['lang'] != $page['lang'] && $page['lang'] != 'en') {
-    $url = $sitewide['root'];
-    $url .= $page['lang'].'/';
-    if ($page['name'] != 'index') {
-        $url .= $page['name'];
+function get_page_lang() {
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+    } else {
+        $lang = user_lang();
     }
-    header('Location: '.$url);
-    exit();
+    if (!is_lang($lang)) {
+        $lang = 'en';
+    }
+    return $lang;
 }
-if (isset($_GET['lang'])) {
-    setcookie('language', $lang,  time() + 60*60*24*30, '/'); // 30 days
+
+$lang = 'en';
+function init_l10n() {
+    global $page, $lang;
+
+    $lang = $page['lang'];
+
+    if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
+        && $_GET['lang'] != $page['lang'] 
+        && $page['lang'] != 'en') {
+
+        $url = $sitewide['root'];
+        $url .= $page['lang'].$page['path'];
+        $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
+        header('Location: '.$url);
+        exit();
+    }
+
+    if (isset($_GET['lang'])) {
+        setcookie('language', $lang,  time() + 60*60*24*30, '/'); // 30 days
+    }
 }

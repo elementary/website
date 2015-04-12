@@ -1,5 +1,9 @@
 $(function () {
-	$(document).on('click', '.popover > a', function (event) {
+	var $document;
+
+	$document = $(document);
+
+	$document.on('click', '.popover > a', function (event) {
 		event.preventDefault();
 
 		var $link = $(event.target)
@@ -10,7 +14,7 @@ $(function () {
 		var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
 		$content.css({ left: popoverPos });
 
-		$(document).one('click', function (event) {
+		$document.one('click', function (event) {
 			if (!$(event.target).is('.popover-content *')) {
 				event.stopImmediatePropagation();
 				event.preventDefault();

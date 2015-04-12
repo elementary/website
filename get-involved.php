@@ -8,6 +8,7 @@
     include $template['header'];
 ?>
             <section class="row hero">
+                <!--
                 <h1>Check out our progress for Freya RC 1</h1>
                 <div class="charts">
                     <div class="barchart-ctn">
@@ -37,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
@@ -49,7 +51,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
-                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank" data-l10n-off>Federico Fellini</a></p>
                     </div>
                 </div>
 
@@ -75,7 +77,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
-                        <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
+                        <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank" data-l10n-off>Paul Cookson</a></p>
                     </div>
                 </div>
 
@@ -94,7 +96,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
-                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank" data-l10n-off>Dieter Rams</a></p>
                     </div>
                 </div>
 
@@ -129,7 +131,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
-                        <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
+                        <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank" data-l10n-off>Ralph Johnson</a></p>
                     </div>
                 </div>
 

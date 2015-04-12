@@ -1,14 +1,23 @@
 <?php
-if (!isset($page['name'])) {
-    $page['name'] = basename($_SERVER['PHP_SELF'], '.php');
-}
+include_once __DIR__.'/l10n.php';
 
-include_once './_templates/l10n.php';
-
+$page['lang'] = get_page_lang();
 $page['lang-root'] = $sitewide['root'];
 if (isset($page['lang']) && $page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
 }
+if (!isset($page['path'])) {
+    $page['path'] = str_replace($sitewide['root'], '/', $sitewide['path']);
+    $page['path'] = str_replace('/'.$page['lang'].'/', '/', $page['path']);
+}
+if (!isset($page['name'])) {
+    $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
+    if (empty($page['name'])) {
+        $page['name'] = 'index';
+    }
+}
+
+init_l10n();
 
 set_l10n_domain('layout');
 begin_html_l10n();
@@ -18,20 +27,37 @@ begin_html_l10n();
     <head>
 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
-        <meta name="author" content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
+        <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
         <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
 
-        <meta name="twitter:card" value="summary">
-        <meta name="twitter:title" value="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>">
-        <meta name="twitter:description" value="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
-        <meta name="twitter:site" content="@elementary">
-        <meta name="twitter:creator" content="@elementary">
+        <?php
+        if ( !empty($page['image']) ) {
+            ?>
+        <meta name="twitter:card"        content="summary_large_image">
+            <?php
+        } else {
+            ?>
+        <meta name="twitter:card"        content="summary">
+            <?php
+        }
+        ?>
 
-        <meta property="og:title" content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
+        <meta name="twitter:title"       content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>">
+        <meta name="twitter:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
+        <meta name="twitter:image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
+        <meta name="twitter:site"        content="@elementary">
+        <meta name="twitter:creator"     content="@elementary">
+
+        <meta property="og:title"       content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
         <meta property="og:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
+        <meta property="og:image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
+
+        <meta itemprop="name"        content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
+        <meta itemprop="description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
+        <meta itemprop="image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
 
         <meta name="apple-mobile-web-app-title" content="elementary">
         <link rel="manifest" href="/manifest.json">
@@ -48,17 +74,16 @@ begin_html_l10n();
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans+Mono">
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <script>
-            <?php include './scripts/jql.min.js'; ?>
+            <?php include __DIR__.'/../scripts/jql.min.js'; ?>
             jQl.loadjQ('//cdn.jsdelivr.net/g/jquery');
             jQl.boot();
-            <?php include './scripts/popover.js'; ?>
-            <?php include './scripts/smooth-scrolling.js'; ?>
+            <?php include __DIR__.'/../scripts/popover.js'; ?>
+            <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
         </script>
 
         <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
@@ -81,7 +106,7 @@ begin_html_l10n();
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <ul class="left">
-                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include("./images/logomark.svg"); ?></a></li>
+                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                 <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
                 <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                 <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
