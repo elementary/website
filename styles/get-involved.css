@@ -233,13 +233,26 @@ section:nth-child(5) .button.flat.suggested-action:focus {
     border-radius: 4px;
 }
 
+.web-browser > .actions > a {
+    margin-left: 0;
+}
+
 @media (max-width: 888px) {
     .web-browser {
         width: 96%;
         height: auto;
-        padding: 24px;
-        padding-top: 50px;
         margin: 24px 2%;
-        border: 1px solid #808B8E;
+        padding: 110px 130px 40px 130px;
+    }
+    .web-browser > .actions {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .web-browser {
+        background-image: url("../images/get-involved/web-development-mobile.svg");
+        padding: 80px 24px 24px 24px;
     }
 }
