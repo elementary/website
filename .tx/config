@@ -1,24 +1,24 @@
 [main]
 host = https://www.transifex.com
 
-[elementary-mvp.layout]
-file_filter = lang/<lang>/layout.json
+[elementary-mvp.404]
+file_filter = lang/<lang>/404.json
 source_lang = en
 
-[elementary-mvp.index]
-file_filter = lang/<lang>/index.json
+[elementary-mvp.developer]
+file_filter = lang/<lang>/developer.json
 source_lang = en
 
 [elementary-mvp.get-involved]
 file_filter = lang/<lang>/get-involved.json
 source_lang = en
 
-[elementary-mvp.installation]
-file_filter = lang/<lang>/installation.json
+[elementary-mvp.index]
+file_filter = lang/<lang>/index.json
 source_lang = en
 
-[elementary-mvp.developer]
-file_filter = lang/<lang>/developer.json
+[elementary-mvp.layout]
+file_filter = lang/<lang>/layout.json
 source_lang = en
 
 [elementary-mvp.privacy-policy]
@@ -27,4 +27,16 @@ source_lang = en
 
 [elementary-mvp.store]
 file_filter = lang/<lang>/store.json
+source_lang = en
+
+[elementary-mvp.support]
+file_filter = lang/<lang>/support.json
+source_lang = en
+
+[elementary-mvp.docs_installation]
+file_filter = lang/<lang>/docs/installation.json
+source_lang = en
+
+[elementary-mvp.docs_learning-the-basics]
+file_filter = lang/<lang>/docs/learning-the-basics.json
 source_lang = en

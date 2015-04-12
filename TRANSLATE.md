@@ -1,10 +1,18 @@
 # Translators
 
-You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/
+You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/. Please don't update directly files in `lang/` on Github as they'll be overriden when pulling new translations from Transifex.
 
 You can propose new languages if they're not listed.
 
 Please read the [branding guidelines](http://elementaryos.org/journal/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
+
+## Reviewing
+
+It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask him to join the reviewers team (you can send a message to [emersion](https://www.transifex.com/accounts/profile/emersion/) to ask this).
+
+## Updating
+
+Languages are manually updated, so you won't see your work published just after you submitted it (see [Pull translated files from Transifex](#pull-translated-files-from-transifex)).
 
 # Web developers
 
@@ -53,3 +61,7 @@ To pull **all** translations, even new ones:
 ```shell
 tx pull -a
 ```
+
+## Adding a new language to the list on the website
+
+The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appendding it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.

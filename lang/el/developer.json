@@ -1,14 +1,14 @@
 {
-    "Develop": "Develop",
-    "Your ideas into code": "Your ideas into code",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "Design",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "Code",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "Manage",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Use Launchpad to manage bug reports and collaborate with other developers.",
-    "Distribute": "Distribute",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Set up an Ubuntu My Apps account and publish your apps into the Software Center.",
-    "Develop Apps for elementary OS": "Develop Apps for elementary OS"
+    "Develop": "Ανάπτυξη",
+    "Your ideas into code": "Η ιδέα σου σε κώδικα",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Χτισμένο πάνω στην καλύτερη τεχνολογία ανοιχτού κώδικα, το elementary είναι εξαιρετικά φιλική στον  προγραμματιστή πλατφόρμα. Παρέχουμε στους υπάρχον και πιθανούς προγραμματιστές μας τα καλύτερα διαθέσιμα βοηθήματα και τεκμήρια για να εξασφαλίσουμε ότι οι εφαρμογές σας θα λάμψουν.",
+    "Design": "Σχεδιασμός",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Διάβασε τους οδηγούς ανθρώπινης διεπαφής (HIG) και μάθε πως να κάνεις την εφαρμογή σου μια πρώτης τάξης εμπειρία.",
+    "Code": "Κώδικας",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Μάθε για τις διεπαφές προγραμματισμού εφαρμογών μας (APIs), και ανακάλυψε όλες τις ενσωματωμένες τεχνολογίες που έχεις διαθέσιμες.",
+    "Manage": "Διαχείριση",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Χρησιμοποίησε το Launchpad για να διαχειριστείς αναφορές σφαλμάτων και να συνεργαστείς με άλλους προγραμματιστές.",
+    "Distribute": "Διανομή",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Δημιούργησε έναν λογαριασμό στο Ubuntu My Apps για να δημοσιεύσεις τις εφαρμογές σου στο Κέντρο Λογισμικού.",
+    "Develop Apps for elementary OS": "Ανέπτυξε εφαρμογές για το elementary OS"
 }

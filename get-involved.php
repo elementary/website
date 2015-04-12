@@ -8,7 +8,8 @@
     include $template['header'];
 ?>
             <section class="row hero">
-                <h1>Check out our progress for Freya Beta 2</h1>
+                <!--
+                <h1>Check out our progress for Freya RC 1</h1>
                 <div class="charts">
                     <div class="barchart-ctn">
                         <canvas width="750" height="400"></canvas>
@@ -37,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
@@ -49,18 +51,20 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
-                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank">Federico Fellini</a></p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank" data-l10n-off>Federico Fellini</a></p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="column half">
                         <h2>Translations</h2>
-                        <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages. Launchpad has a built-in tool called Rosetta that enables collaborative translations online.</p>
+                        <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
+                        <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="https://help.launchpad.net/Translations" class="read-more">Learn More</a></p>
+                        <p>Our website is also openly translated using an online platform called Transifex. <a href="http://docs.transifex.com/guides/translators/" class="read-more">Learn More</a></p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">View Our Translations Page</a>
-                            <a class="button flat" href="https://help.launchpad.net/Translations" target="_blank">Get More Info About Rosetta</a>
+                            <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">Translate elementary OS</a>
+                            <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank">Translate This Website</a>
                         </div>
                     </div>
                     <div class="column half">
@@ -73,7 +77,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
-                        <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank">Paul Cookson</a></p>
+                        <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank" data-l10n-off>Paul Cookson</a></p>
                     </div>
                 </div>
 
@@ -92,7 +96,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
-                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">Dieter Rams</a></p>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank" data-l10n-off>Dieter Rams</a></p>
                     </div>
                 </div>
 
@@ -127,7 +131,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
-                        <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank">Ralph Johnson</a></p>
+                        <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank" data-l10n-off>Ralph Johnson</a></p>
                     </div>
                 </div>
 
