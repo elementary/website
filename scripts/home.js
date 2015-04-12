@@ -73,7 +73,7 @@
 
             if (animationDirection == 'left') {
                 currentParagraph.style.top = '0';
-                choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
+                //choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
             } else {
                 choosenParagraph.style.top = '0';
             }
@@ -86,7 +86,7 @@
                 choosenParagraph.classList.add('sliding');
 
                 if (animationDirection == 'right') {
-                    currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
+                    //currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
                 }
             }, 20);
 

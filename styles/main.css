@@ -849,6 +849,16 @@ body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
 
+/* Sliders with container */
+.slide-container {
+    position: relative;
+}
+.slide-container .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 /**********
 * Popover *
 **********/

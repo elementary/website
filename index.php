@@ -54,7 +54,7 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="light">
+            <div id="carousel" class="slide-container light">
                 <div class="text-center">
                     <div id="carousel-choices" class="column linked">
                         <a class="button flat photos" href="#photos">Photos</a>
