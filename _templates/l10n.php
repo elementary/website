@@ -32,8 +32,8 @@ function list_langs() {
         'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
-        'zh_CN' => '國語',
-        'zh_TW' => '台湾',
+        'zh_CN' => '简体中文',
+        'zh_TW' => '繁體中文',
     );
 }
 
