@@ -43,20 +43,26 @@ class Translator {
     protected $domain = null;
 
     public function __construct($lang = null) {
-        global $sitewide;
-
         if (empty($lang)) {
             $lang = $this->get_page_lang();
         }
         $this->lang = $lang;
+    }
+
+    public function init() {
+        global $sitewide, $page; // Global site variables
+
+        if (defined('HTML_I18N')) {
+            return;
+        }
 
         // Redirect the user if we are translating the page
         if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
-            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $lang
-            && $lang != 'en') {
+            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
+            && $this->lang != 'en') {
 
             $url = $sitewide['root'];
-            $url .= $lang.$page['path'];
+            $url .= $this->lang.$page['path'];
             $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
             header('Location: '.$url);
             exit();

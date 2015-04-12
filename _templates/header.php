@@ -1,8 +1,11 @@
 <?php
 include_once __DIR__.'/l10n.php';
 
-$l10n = new Translator();
+if (!isset($l10n)) {
+   $l10n = new Translator(); 
+}
 $page['lang'] = $l10n->lang();
+
 $page['lang-root'] = $sitewide['root'];
 if (isset($page['lang']) && $page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
@@ -21,6 +24,7 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
+$l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
