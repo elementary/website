@@ -42,18 +42,21 @@ class Translator {
 
     protected $domain = null;
 
-    public function __construct() {
+    public function __construct($lang = null) {
         global $sitewide;
 
-        $this->lang = $this->get_page_lang();
+        if (empty($lang)) {
+            $lang = $this->get_page_lang();
+        }
+        $this->lang = $lang;
 
         // Redirect the user if we are translating the page
         if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
-            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
-            && $this->lang != 'en') {
+            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $lang
+            && $lang != 'en') {
 
             $url = $sitewide['root'];
-            $url .= $this->lang.$page['path'];
+            $url .= $lang.$page['path'];
             $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
             header('Location: '.$url);
             exit();
@@ -121,7 +124,9 @@ class Translator {
         return null;
     }
 
-    protected function load_translations($index, $lang) {
+    public function load_translations($index) {
+        $lang = $this->lang;
+
         if (!$this->is_lang($lang)) {
             return false;
         }
@@ -136,7 +141,7 @@ class Translator {
     }
 
     protected function load_domain($domain) {
-        $this->translations[$domain] = $this->load_translations($domain, $this->lang);
+        $this->translations[$domain] = $this->load_translations($domain);
     }
 
     public function set_domain($domain) {
