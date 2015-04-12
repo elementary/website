@@ -76,6 +76,11 @@ When creating or updating a source file, translations needs to be updated. You c
 tx push -s # Push new translation source files to Transifex
 ```
 
+If you know that you modified only one source file, it's better to push only this one:
+```bash
+tx push -s -r <page-name>
+```
+
 ## Adding a new language to the list on the website
 
 The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appendding it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
