@@ -78,7 +78,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/launcher-icons/photos.png" />
+                            <img src="images/support/multimedia-photo-manager.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Photos</h3>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/launcher-icons/music.png" />
+                            <img src="images/support/multimedia-audio-player.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Music</h3>
