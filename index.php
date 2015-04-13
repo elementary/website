@@ -70,6 +70,7 @@
                     <div id="carousel-choices" class="column linked">
                         <a class="button flat photos" href="#photos">Photos</a>
                         <a class="button flat music" href="#music">Music</a>
+                        <a class="button flat videos" href="#videos">Videos</a>
                     </div>
                 </div>
                 <div id="photos" class="slide">
@@ -96,7 +97,21 @@
                         </div>
                         <div class="column alert">
                             <h3>Music</h3>
-                            <p>Browse by albums, Make playlists, Rate songs, and see similiar tracks.</p>
+                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="videos" class="slide">
+                    <div class="column">
+                        <img src="images/screenshots/videos.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/multimedia-video-player.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Videos</h3>
+                            <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
                         </div>
                     </div>
                 </div>

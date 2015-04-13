@@ -1,7 +1,7 @@
 (function () {
     // Homepage toggles
     var toggles = {
-        'carousel-choices': ['photos', 'music']
+        'carousel-choices': ['photos', 'music', 'videos']
     };
 
     function transitionsSupported() {
