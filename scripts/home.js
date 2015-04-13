@@ -1,7 +1,7 @@
 (function () {
     // Homepage toggles
     var toggles = {
-        'carousel-choices': ['photos', 'music', 'videos']
+        'carousel-choices': ['photos', 'music', 'videos', 'midori']
     };
 
     function transitionsSupported() {

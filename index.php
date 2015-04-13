@@ -71,6 +71,7 @@
                         <a class="button flat photos" href="#photos">Photos</a>
                         <a class="button flat music" href="#music">Music</a>
                         <a class="button flat videos" href="#videos">Videos</a>
+                        <a class="button flat midori" href="#midori">Midori</a>
                     </div>
                 </div>
                 <div id="photos" class="slide">
@@ -112,6 +113,20 @@
                         <div class="column alert">
                             <h3>Videos</h3>
                             <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="midori" class="slide">
+                    <div class="column">
+                        <img src="images/screenshots/midori.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/midori.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Midori</h3>
+                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 website and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
                 </div>
