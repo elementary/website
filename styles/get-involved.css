@@ -198,6 +198,7 @@ section:nth-child(5) .button.flat.suggested-action:focus {
     border: 2px solid #c8d0d0;
     border-radius: 4px;
     min-width: 200px;
+    vertical-align: middle;
 }
 
 .row.hero .actions .button.flat:nth-child(1) {
