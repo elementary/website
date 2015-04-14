@@ -80,7 +80,7 @@ begin_html_l10n();
         
         <script>
             (function(d,s,f){g=d.createElement(s),u=d.getElementsByTagName(s)[0],g.async=1,g.src=f,u.parentNode.insertBefore(g,u)})
-        	(document,'script','https://beta.elementary.io/branch/hsts-conditional/backend/hsts.php')
+            (document,'script','https://beta.elementary.io/branch/hsts-conditional/backend/hsts.php')
         </script>
 
         <script>
