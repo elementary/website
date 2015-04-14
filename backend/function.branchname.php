@@ -4,7 +4,7 @@ function branch_root() {
     $Request_URI = explode('/', $Request_URI);
     var_dump($Request_URI);
     if ( $Request_URI[1] == 'branch' ) {
-        $Branch = Request_URI[3];
+        $Branch = $Request_URI[3];
     } else {
         $Branch = false;
     }
