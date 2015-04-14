@@ -5,25 +5,31 @@
  * access tokens should be stored in twitter-tokens.php
  */
 
-// this file defines the keys required by twitter in the following way
-// define('TWITTER_CONSUMER_KEY', 'val');
-// constants it should define are TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN and TWITTER_ACCESS_SECRET
-include 'twitter-keys.php';
+require_once(dirname(__FILE__) . '/config.php');
+
+if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1' && php_sapi_name() != 'cli') {
+  die('This script can only be run from localhost or command line');
+}
 
 function log_info($msg) { // Basic logger
 	echo $msg."\n";
 }
 
 class TwApi {
-  var $consumer_key = TWITTER_CONSUMER_KEY;
-  var $consumer_secret = TWITTER_CONSUMER_SECRET;
+  var $consumer_key;
+  var $consumer_secret;
   var $access_token;
   var $access_secret;
   var $oauth;
 
   function TwApi($token, $secret) {
+    global $config;
+
     $this->access_token = $token;
     $this->access_secret = $secret;
+
+    $this->consumer_key = $config['twitter_consumer_key'];
+    $this->consumer_secret = $config['twitter_consumer_secret'];
 
     $this->oauth = array( 
       'oauth_consumer_key' => $this->consumer_key,
@@ -139,7 +145,8 @@ class TwApi {
   }
 }
 
-$api = new TwApi(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET);
+$api = new TwApi($config['twitter_access_token'],
+                 $config['twitter_access_secret']);
 
 log_info('Fetching tweets.');
 $favs = $api->get_favorites('elementary');
