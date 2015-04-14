@@ -1,6 +1,6 @@
 <?php
 /**
- * Fetch tweets favorited by @elementary and 
+ * Fetch tweets favorited & retweeted by @elementary and 
  * put them in tweets.json file
  * access tokens should be stored in twitter-tokens.php
  */
@@ -148,12 +148,17 @@ log_info('Fetched tweets');
 $tweets = array();
 
 foreach($favs as $fav) {
-  $tweet['name'] = $fav->user->name;
-  $tweet['handle'] = $fav->user->screen_name;
-  $tweet['text'] = $fav->text;
-  $tweet['timestamp'] = $fav->created_at;
+  $tweet = array();
 
-  array_push($tweets, $tweet);
+  // only add tweets if they were retweeted & favorited
+  if ($fav->retweeted == 1) {
+    $tweet['name'] = $fav->user->name;
+    $tweet['handle'] = $fav->user->screen_name;
+    $tweet['text'] = $fav->text;
+    $tweet['timestamp'] = $fav->created_at;
+
+    array_push($tweets, $tweet);
+  }
 }
 
 log_info('Writing tweets to file.');
