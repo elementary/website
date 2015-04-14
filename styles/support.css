@@ -49,6 +49,7 @@ a.column h3 {
     padding: 12px;
     width: 100%;
     vertical-align: top;
+    word-wrap: break-word;
 
     border: 1px solid transparent;
     border-radius: 4px;
