@@ -4,7 +4,7 @@ function branch_name() {
     $Request_URI = filter_input(INPUT_SERVER, 'REQUEST_URI');
     $Request_URI = explode('/', $Request_URI);
     if ( $Request_URI[1] == 'branch' ) {
-        $Branch .= 'branch/'.$Request_URI[2];
+        $Branch .= 'branch/'.$Request_URI[2].'/';
     }
     return $Branch;
 }
