@@ -12,6 +12,5 @@ header('strict-transport-security: max-age=31536000;');
 // Compatibility
 // http://caniuse.com/#feat=stricttransportsecurity
 
-// We're going to pretend this is JavaScript, so we can log something.
-header('Content-Type: application/javascript');
-?>console.log('HSTS Loaded');
+// No content, send only this.
+header($_SERVER['SERVER_PROTOCOL'].' 204 No Content');
