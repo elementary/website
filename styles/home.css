@@ -25,21 +25,9 @@
     margin-top: 56px;
 }
 
-@media (max-width: 444px) {
-    #carousel .slide > .column:nth-child(2) {
-        background-color: rgba(0,0,0,0.8);
-        border-radius: 4px;
-        padding: 16px;
-        margin-bottom: 16px;
-    }
-
-    #carousel .column.alert {
-        width: 100%;
-    }
-
-    #carousel .column.alert h3,
-    #carousel .column.alert p {
-        text-align: center;
+@media (max-width: 1370px) {
+    #carousel {
+        display: none;
     }
 }
 
@@ -48,8 +36,7 @@
     width: 64px;
 }
 
-@media (min-width: 444px) {
-    #carousel .slide > .column .column:nth-child(2) {
-        max-width: 256px;
-    }
+#carousel .slide > .column .column:nth-child(2) {
+    max-width: 256px;
 }
+
