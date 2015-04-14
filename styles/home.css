@@ -11,6 +11,11 @@
     padding: 8px 16px;
 }
 
+
+#carousel .slide.row {
+    max-width: initial;
+}
+
 #carousel .slide > .column {
     vertical-align: top;
     margin-left: 16px;

@@ -74,7 +74,7 @@
                         <a class="button flat midori" href="#midori">Midori</a>
                     </div>
                 </div>
-                <div id="photos" class="slide">
+                <div id="photos" class="slide row">
                     <div class="column">
                         <img src="images/screenshots/photos.png" />
                     </div>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="music" class="slide">
+                <div id="music" class="slide row">
                     <div class="column">
                         <img src="images/screenshots/music.png" />
                     </div>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="videos" class="slide">
+                <div id="videos" class="slide row">
                     <div class="column">
                         <img src="images/screenshots/videos.png" />
                     </div>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="midori" class="slide">
+                <div id="midori" class="slide row">
                     <div class="column">
                         <img src="images/screenshots/midori.png" />
                     </div>
