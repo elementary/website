@@ -143,6 +143,7 @@ kbd {
     margin: 3px;
 }
 code,
+pre,
 kbd {
     font-family: 'Droid Sans Mono';
     text-align: justify;
@@ -161,6 +162,29 @@ pre > code {
     border: none;
     padding: 0;
     white-space: pre;
+}
+
+/* Line numbers */
+pre.highlighted {
+    position: relative;
+    border: none;
+    padding: 0;
+}
+pre.highlighted code {
+    margin-left: 25px;
+    border-radius: 0 3px 3px 0;
+}
+pre.highlighted .pre-numbering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    padding: 8px 5px;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee8d5;
+    text-align: right;
+    color: #9faaa9;
 }
 
 img {

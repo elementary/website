@@ -58,8 +58,8 @@ if (
 
         // Syntax highlighting
         $page['scripts'] = '<script src="scripts/highlight.pack.js"></script>';
-        $page['scripts'] .= '<script>hljs.initHighlightingOnLoad();</script>';
-        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_dark.css">';
+        $page['scripts'] .= '<script src="scripts/docs/main.js"></script>';
+        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_light.css">';
 
         include $Templates['Header'];
         echo '<div class="row docs">';
