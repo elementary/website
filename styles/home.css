@@ -1,6 +1,5 @@
 #carousel {
-    min-height: 718px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #0d6c7f;
     background-image: url("../images/screenshots/background.jpg");
     background-size: cover;
@@ -31,7 +30,7 @@
     margin-top: 33px;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1350px) {
     #carousel {
         display: none;
     }
