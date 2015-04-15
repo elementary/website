@@ -27,7 +27,7 @@
 }
 
 #carousel .slide > .column:nth-child(2) {
-    margin-top: 56px;
+    margin-top: 33px;
 }
 
 @media (max-width: 1370px) {
