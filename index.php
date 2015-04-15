@@ -66,7 +66,8 @@
                 </div>
             </div>
             <div id="carousel" class="slide-container light">
-                <div class="text-center">
+                <div class="row">
+                    <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
                         <a class="button flat photos" href="#photos">Photos</a>
                         <a class="button flat music" href="#music">Music</a>
@@ -84,7 +85,7 @@
                         </div>
                         <div class="column alert">
                             <h3>Photos</h3>
-                            <p>Import, Organize, and Edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,7 @@
                         </div>
                         <div class="column alert">
                             <h3>Midori</h3>
-                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 website and web apps while being lighter on battery life.</p>
+                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
                 </div>
