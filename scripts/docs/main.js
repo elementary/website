@@ -4,7 +4,7 @@ $(document).ready(function() {
         hljs.highlightBlock(block);
 
         // Add line numbers
-        var lines = $(this).text().split('\n').length;
+        var lines = $(this).text().trim().split('\n').length;
         var $numbering = $('<ul/>').addClass('pre-numbering');
         $(this).parent().addClass('highlighted has-numbering').append($numbering);
 
