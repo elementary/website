@@ -55,6 +55,12 @@ if (
 
         require_once $MDR['Core'].'/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Source'], '.md'));
+
+        // Syntax highlighting
+        $page['scripts'] = '<script src="scripts/highlight.pack.js"></script>';
+        $page['scripts'] .= '<script>hljs.initHighlightingOnLoad();</script>';
+        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_dark.css">';
+
         include $Templates['Header'];
         echo '<div class="row docs">';
 

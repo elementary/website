@@ -143,7 +143,6 @@ kbd {
     margin: 3px;
 }
 code,
-pre,
 kbd {
     font-family: 'Droid Sans Mono';
     text-align: justify;
