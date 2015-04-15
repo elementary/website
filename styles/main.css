@@ -166,7 +166,6 @@ pre > code {
 
 /* Line numbers */
 pre.highlighted {
-    position: relative;
     border: none;
     padding: 0;
 }
