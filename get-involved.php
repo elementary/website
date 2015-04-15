@@ -8,8 +8,7 @@
     include $template['header'];
 ?>
             <section class="row hero">
-                <!--
-                <h1>Check out our progress for Freya RC 1</h1>
+                <h1>Check out our progress for Freya Update 1</h1>
                 <div class="charts">
                     <div class="barchart-ctn">
                         <canvas width="750" height="400"></canvas>
@@ -38,7 +37,6 @@
                         </div>
                     </div>
                 </div>
-                -->
                 <div class="actions">
                     <a class="button flat" href="#translations">Translations</a>
                     <a class="button flat" href="#web-development">Web Development</a>
