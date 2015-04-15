@@ -164,6 +164,32 @@ pre > code {
     white-space: pre;
 }
 
+/* Line numbers */
+pre.highlighted {
+    border: none;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+}
+pre.highlighted code {
+    border-radius: 0 3px 3px 0;
+}
+pre.highlighted .pre-numbering {
+    float: left;
+    list-style: none;
+    min-width: 2.5em;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee8d5;
+    text-align: right;
+    color: #9faaa9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 img {
     max-width: 100%;
 }
