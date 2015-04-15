@@ -13,7 +13,7 @@
                 </div>
                 <div class="column half developer-sections">
                     <div id="dev-section-1" class="dev-section">
-                        <a href="/docs/human-interface-guidelines" title="Design">
+                        <a href="http://old.elementary.io/docs/human-interface-guidelines" title="Design">
                             <h5>Design</h5>
                             <p>Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.</p>
                         </a>
