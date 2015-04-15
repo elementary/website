@@ -183,6 +183,10 @@ pre.highlighted .pre-numbering {
     background-color: #eee8d5;
     text-align: right;
     color: #9faaa9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 img {
