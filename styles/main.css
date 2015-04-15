@@ -171,15 +171,13 @@ pre.highlighted {
     padding: 0;
 }
 pre.highlighted code {
-    margin-left: 30px;
     border-radius: 0 3px 3px 0;
 }
 pre.highlighted .pre-numbering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    padding: 8px 5px;
+    float: left;
+    list-style: none;
+    min-width: 2.5em;
+    padding: 0.5em;
     margin: 0;
     border-radius: 3px 0 0 3px;
     background-color: #eee8d5;
