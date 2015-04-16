@@ -3,10 +3,17 @@
         return (typeof document.body.style.transition != 'undefined');
     }
 
-    var Slider = function (id, choices) {
-        this.id = id;
-        this.ctn = document.getElementById(id);
-        this.choices = choices;
+    /**
+     * A slider.
+     * @param {Object} options Slider options.
+     * @param {String} options.id The slider id. The associated element should contain the choices' switch.
+     * @param {String[]} options.choices The slider choices ids. Each id should refer to a slide.
+     * @param {Boolean} options.hideHeadings Automatically hide slides headings.
+     */
+    var Slider = function (options) {
+        this.id = options.id;
+        this.ctn = document.getElementById(this.id);
+        this.choices = options.choices;
 
         var that = this;
 
@@ -31,12 +38,12 @@
             }
 
             // Hide heading
-            var heading = paragraph.getElementsByTagName('h2')[0];
-            if (!heading) {
-                heading = paragraph.getElementsByTagName('h3')[0];
-            }
-            if (heading) {
-                heading.style.display = 'none';
+            if (options.hideHeadings) {
+                var heading = paragraph.getElementsByTagName('h2')[0]
+                    || paragraph.getElementsByTagName('h3')[0];
+                if (heading) {
+                    heading.style.display = 'none';
+                }
             }
 
             // Hide paragraph
@@ -48,8 +55,8 @@
             });
         };
 
-        for (var i = 0; i < choices.length; i++) {
-            processChoice(choices[i]);
+        for (var i = 0; i < this.choices.length; i++) {
+            processChoice(this.choices[i]);
         }
 
         // If the slider has a fixed height
@@ -62,6 +69,10 @@
         }
     };
 
+    /**
+     * Show a specific slide.
+     * @param {String} choosenId The slide id.
+     */
     Slider.prototype.slideTo = function (choosenId) {
         var choicesList = this.choices;
         var choicesCtn = this.ctn;

@@ -15,8 +15,16 @@
     }
 
     // Setup sliders
-    var createUsbSlider = new Slider('creating-a-usb-choices', ['creating-a-usb-on-windows', 'creating-a-usb-on-others']);
-    var bootSlider = new Slider('booting-choices', ['booting-on-a-pc', 'booting-on-a-mac']);
+    var createUsbSlider = new Slider({
+        id: 'creating-a-usb-choices',
+        choices: ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
+        hideHeadings: true
+    });
+    var bootSlider = new Slider({
+        id: 'booting-choices',
+        choices: ['booting-on-a-pc', 'booting-on-a-mac'],
+        hideHeadings: true
+    });
 
     // Show instructions for the current platform
     var currentOs = detectOS();
