@@ -69,7 +69,7 @@ Click "Start", then just wait for the process to finish.
 
 <div id="creating-a-usb-on-others" class="slide" markdown="1">
 
-### OS X, Ubuntu, and others}
+### OS X, Ubuntu, and others
 
 ![UNetbootin](images/docs/installation/unetbootin.png){.float-left}
 
