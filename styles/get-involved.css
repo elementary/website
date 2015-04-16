@@ -30,27 +30,9 @@ section .heading p.small-label a:hover {
     color: inherit;
 }
 
-.column.half {
-    text-align: left;
-    vertical-align: middle;
-}
-
 /*********
 * Button *
 *********/
-
-.button.flat {
-    display: block;
-    font-weight: bold;
-    background: none;
-    box-shadow: none;
-    text-shadow: none;
-    border-width: 2px;
-    padding: 7px;
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .light .button.flat {
     border-color: rgba(88, 110, 117, 0.5);

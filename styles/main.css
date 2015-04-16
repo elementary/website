@@ -431,6 +431,11 @@ footer ul li a:focus {
     }
 }
 
+.column.half {
+    text-align: left;
+    vertical-align: middle;
+}
+
 .column.third p {
     text-align: center;
 }
@@ -586,6 +591,30 @@ button.suggested-action,
     border-color: #4D9CD1;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.button.flat {
+    display: block;
+    font-weight: bold;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-width: 2px;
+    padding: 7px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light .button.flat {
+    color: #fff;
+    border-color: #fff;
+}
+
+.light .button.flat.active {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
 #download {
@@ -760,6 +789,7 @@ input:focus:-ms-input-placeholder {
 
 .linked button,
 .linked .button {
+    display: inline-block;
     border-left-width: 0;
     border-radius: 0;
     margin: 0;
@@ -777,6 +807,15 @@ input:focus:-ms-input-placeholder {
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
+}
+
+.linked button.flat:first-child,
+.linked button.flat:active:first-child,
+.linked button.flat:active:hover:first-child,
+.linked .button.flat:first-child,
+.linked .button.flat:active:first-child,
+.linked .button.flat:active:hover:first-child {
+    border-width: 2px;
 }
 
 .linked button:last-child,

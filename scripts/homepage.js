@@ -142,5 +142,9 @@
     }
     key_http.send();
 
+    // Carousel
+    var appCarousel = new Slider('carousel-choices', ['photos', 'music', 'videos', 'midori']);
+    appCarousel.slideTo('photos');
+
     console.log('Loaded homepage.js');
 })();

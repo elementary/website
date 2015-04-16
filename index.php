@@ -2,9 +2,11 @@
     $page['title'] = 'Download elementary OS';
     $page['image'] = 'https://elementary.io/images/notebook.png';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include '_templates/sitewide.php';
     include $template['header'];
 ?>
+            <script src="scripts/slider.js"></script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
@@ -64,6 +66,73 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
+            <div id="carousel" class="slide-container slide-fixed-height light">
+                <div class="row">
+                    <h1>Meet Our Apps</h1>
+                    <div id="carousel-choices" class="column linked">
+                        <a class="button flat photos" href="#photos">Photos</a>
+                        <a class="button flat music" href="#music">Music</a>
+                        <a class="button flat videos" href="#videos">Videos</a>
+                        <a class="button flat midori" href="#midori">Midori</a>
+                    </div>
+                </div>
+                <div id="photos" class="slide row">
+                    <div class="column">
+                        <img src="images/screenshots/photos.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/multimedia-photo-manager.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Photos</h3>
+                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="music" class="slide row">
+                    <div class="column">
+                        <img src="images/screenshots/music.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/multimedia-audio-player.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Music</h3>
+                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="videos" class="slide row">
+                    <div class="column">
+                        <img src="images/screenshots/videos.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/multimedia-video-player.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Videos</h3>
+                            <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="midori" class="slide row">
+                    <div class="column">
+                        <img src="images/screenshots/midori.png" />
+                    </div>
+                    <div class="column">
+                        <div class="column alert">
+                            <img src="images/support/midori.svg" />
+                        </div>
+                        <div class="column alert">
+                            <h3>Midori</h3>
+                            <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
@@ -80,6 +149,7 @@
                 </div>
             </div>
             <a style="display:none;" class="open-modal" href="#download-modal"></a>
+            <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
 <?php
     include $template['footer'];
 ?>
