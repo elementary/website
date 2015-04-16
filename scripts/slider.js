@@ -29,12 +29,17 @@
             if (container.classList.contains('slide-fixed-height')) {
                 maxHeight = Math.max(maxHeight, paragraph.offsetHeight);
             }
+
+            // Hide heading
             var heading = paragraph.getElementsByTagName('h2')[0];
             if (!heading) {
                 heading = paragraph.getElementsByTagName('h3')[0];
             }
+            if (heading) {
+                heading.style.display = 'none';
+            }
 
-            // Hide heading
+            // Hide paragraph
             paragraph.style.display = 'none';
 
             link.addEventListener('click', function (e) {
