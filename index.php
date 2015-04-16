@@ -6,12 +6,11 @@
     include '_templates/sitewide.php';
     include $template['header'];
 ?>
+            <script src="scripts/slider.js"></script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
             </script>
-            <script src="scripts/slider.js"></script>
-            <script src="scripts/home.js"></script>
 
             <div class="row">
                 <div id="logotype">
