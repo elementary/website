@@ -25,7 +25,7 @@
         <span>Files</span>
     </a>
 
-    <a class="app" href="https://answers.launchpad.net/geary" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/ubuntu/+source/geary" target="_blank">
         <img width="64" height="64" src="images/support/internet-mail.svg" />
         <span data-l10n-off>Geary</span>
     </a>
