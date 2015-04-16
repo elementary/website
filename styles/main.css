@@ -1036,9 +1036,14 @@ body.sliding {
     max-height: 500px;
     overflow: auto;
 }
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .popover .popover-content ul {
         max-height: 300px;
+    }
+}
+@media (max-height: 450px) {
+    .popover .popover-content ul {
+        max-height: 200px;
     }
 }
 .popover .popover-content ul li {
