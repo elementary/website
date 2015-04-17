@@ -19,7 +19,7 @@ if (
         require_once $MDR['Core'].'/function.url_to_title.php';
         $Crumbs = Breadcrumbs($Request['Trimmed']);
         array_shift($Crumbs); // Remove "MDR" from list
-        if (count($Crumbs) > 1) {
+        if ( count($Crumbs) > 1 ) {
             echo '<div class="row breadcrumbs"><p>';
             $First = true;
             foreach ( $Crumbs as $Crumb => $URL ) {
@@ -33,30 +33,45 @@ if (
             echo '</p></div>';
         }
 
-        // Heading
         echo '<div class="row docs-index">';
-        require_once $MDR['Core'].'/function.url_to_title.php';
-        end($Crumbs); // Set array pointer to the last element
-        $Title = url_to_title(key($Crumbs));
-        if ( !empty($Title) ) {
-            echo '<h1>'.$Title.'</h1>';
-        }
 
-        // Find Suitable Files
-        require_once $MDR['Core'].'/function.find_files.php';
-        $Files = Find_Files($Request['Directory']);
-        ksort($Files);
+        // Custom Index
+        if ( is_readable($Request['Directory'].'/index.md') ) {
+            $Request['Source'] = $Request['Directory'].'/index.md';
+            $Content = file_get_contents($Request['Source']);
 
-        require_once $MDR['Core'].'/function.title_files.php';
-        $Files = Title_Files($Files);
-
-        // List suitable files, or error accordingly.
-        if ( empty($Files) ) {
-            // Don't 404, because the directory does exist.
-            echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
+            require_once $Libraries['Parsedown'];
+            require_once $Libraries['ParsedownExtra'];
+            $Parsedown = new ParsedownExtra();
+            $Content = $Parsedown->text($Content);
+            $Content = str_replace('⌘', '&#8984;', $Content);
+            $Content = translate_html($Content);
+            echo $Content;
         } else {
-            require_once $MDR['Core'].'/function.list_files.php';
-            echo List_Files($Files);
+            // Heading
+            require_once $MDR['Core'].'/function.url_to_title.php';
+            end($Crumbs); // Set array pointer to the last element
+            $Title = url_to_title(key($Crumbs));
+            if ( !empty($Title) ) {
+                echo '<h1>'.$Title.'</h1>';
+            }
+
+            // Find Suitable Files
+            require_once $MDR['Core'].'/function.find_files.php';
+            $Files = Find_Files($Request['Directory']);
+            ksort($Files);
+
+            require_once $MDR['Core'].'/function.title_files.php';
+            $Files = Title_Files($Files);
+
+            // List suitable files, or error accordingly.
+            if ( empty($Files) ) {
+                // Don't 404, because the directory does exist.
+                echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
+            } else {
+                require_once $MDR['Core'].'/function.list_files.php';
+                echo List_Files($Files);
+            }
         }
 
         // Footer
