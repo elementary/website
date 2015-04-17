@@ -9,46 +9,38 @@ if (
     if ( is_dir($Request['Directory']) ) {
         // List pages
 
-        // Header
-        require_once $MDR['Core'].'/function.url_to_title.php';
-        $page['title'] = url_to_title(basename($Request['Directory']));
-        include $Templates['Header'];
-
-        // Breadcrumbs
-        require_once $MDR['Core'].'/function.breadcrumbs.php';
-        require_once $MDR['Core'].'/function.url_to_title.php';
-        $Crumbs = Breadcrumbs($Request['Trimmed']);
-        array_shift($Crumbs); // Remove "MDR" from list
-        if ( count($Crumbs) > 1 ) {
-            echo '<div class="row breadcrumbs"><p>';
-            $First = true;
-            foreach ( $Crumbs as $Crumb => $URL ) {
-                if ( $First ) {
-                    $First = false;
-                } else {
-                    echo ' > ';
-                }
-                echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
-            }
-            echo '</p></div>';
-        }
-
-        echo '<div class="row docs-index">';
-
         // Load `index.md` instead if available
         $Request['Index'] = $Request['Directory'].'/index.md';
         if ( is_readable($Request['Index']) ) {
-            $Content = file_get_contents($Request['Index']);
-            $Request['Source'] = $Request['Index'];
-
-            require_once $Libraries['Parsedown'];
-            require_once $Libraries['ParsedownExtra'];
-            $Parsedown = new ParsedownExtra();
-            $Content = $Parsedown->text($Content);
-            $Content = str_replace('⌘', '&#8984;', $Content);
-            $Content = translate_html($Content);
-            echo $Content;
+            require_once $MDR['Core'].'/function.render_markdown.php';
+            Render_Markdown($Request['Index']);
         } else {
+            // Header
+            require_once $MDR['Core'].'/function.url_to_title.php';
+            $page['title'] = url_to_title(basename($Request['Directory']));
+            include $Templates['Header'];
+
+            // Breadcrumbs
+            require_once $MDR['Core'].'/function.breadcrumbs.php';
+            require_once $MDR['Core'].'/function.url_to_title.php';
+            $Crumbs = Breadcrumbs($Request['Trimmed']);
+            array_shift($Crumbs); // Remove "MDR" from list
+            if ( count($Crumbs) > 1 ) {
+                echo '<div class="row breadcrumbs"><p>';
+                $First = true;
+                foreach ( $Crumbs as $Crumb => $URL ) {
+                    if ( $First ) {
+                        $First = false;
+                    } else {
+                        echo ' > ';
+                    }
+                    echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
+                }
+                echo '</p></div>';
+            }
+
+            echo '<div class="row docs-index">';
+
             // Heading
             require_once $MDR['Core'].'/function.url_to_title.php';
             end($Crumbs); // Set array pointer to the last element
@@ -73,63 +65,25 @@ if (
                 require_once $MDR['Core'].'/function.list_files.php';
                 echo List_Files($Files);
             }
+
+            // Footer
+            echo '</div>';
+            include $Templates['Footer'];
         }
 
-        // Footer
-        echo '</div>';
-        include $Templates['Footer'];
     } else {
         // Render the file
 
         if ( is_readable($Request['Directory']) ) {
             // Apparently this isn't a directory, just a poorly named file.
-            $Content = file_get_contents($Request['Directory']);
-            $Request['Source'] = $Request['Directory'];
+            $Source = $Request['Directory'];
         } else {
-            $Content = file_get_contents($Request['Markdown']);
-            $Request['Source'] = $Request['Markdown'];
+            $Source = $Request['Markdown'];
         }
-        $Request['Source'] = str_replace($MDR['Root'], '', $Request['Source']);
+        $Request['Source'] = str_replace($MDR['Root'], '', $Source);
 
-        require_once $MDR['Core'].'/function.url_to_title.php';
-        $page['title'] = url_to_title(basename($Request['Source'], '.md'));
-
-        // Syntax highlighting
-        $page['scripts'] = '<script src="scripts/highlight.pack.js"></script>';
-        $page['scripts'] .= '<script src="scripts/docs/main.js"></script>';
-        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_light.css">';
-
-        include $Templates['Header'];
-
-        // Breadcrumbs
-        require_once $MDR['Core'].'/function.breadcrumbs.php';
-        require_once $MDR['Core'].'/function.url_to_title.php';
-        $Crumbs = Breadcrumbs($Request['Trimmed']);
-        array_shift($Crumbs); // Remove "MDR" from list
-        echo '<div class="row breadcrumbs"><p>';
-        $First = true;
-        foreach ( $Crumbs as $Crumb => $URL ) {
-            if ( $First ) {
-                $First = false;
-            } else {
-                echo ' > ';
-            }
-            echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
-        }
-        echo '</p></div>';
-
-        echo '<div class="row docs">';
-
-        require_once $Libraries['Parsedown'];
-        require_once $Libraries['ParsedownExtra'];
-        $Parsedown = new ParsedownExtra();
-        $Content = $Parsedown->text($Content);
-        $Content = str_replace('⌘', '&#8984;', $Content);
-        $Content = translate_html($Content);
-        echo $Content;
-
-        echo '</div>';
-        include $Templates['Footer'];
+        require_once $MDR['Core'].'/function.render_markdown.php';
+        Render_Markdown($Source);
     }
 } else {
     // Page not found
