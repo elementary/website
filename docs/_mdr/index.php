@@ -35,10 +35,11 @@ if (
 
         echo '<div class="row docs-index">';
 
-        // Custom Index
-        if ( is_readable($Request['Directory'].'/index.md') ) {
-            $Request['Source'] = $Request['Directory'].'/index.md';
-            $Content = file_get_contents($Request['Source']);
+        // Load `index.md` instead if available
+        $Request['Index'] = $Request['Directory'].'/index.md';
+        if ( is_readable($Request['Index']) ) {
+            $Content = file_get_contents($Request['Index']);
+            $Request['Source'] = $Request['Index'];
 
             require_once $Libraries['Parsedown'];
             require_once $Libraries['ParsedownExtra'];
