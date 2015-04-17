@@ -18,18 +18,20 @@ if (
         require_once $MDR['Core'].'/function.breadcrumbs.php';
         require_once $MDR['Core'].'/function.url_to_title.php';
         $Crumbs = Breadcrumbs($Request['Trimmed']);
-        echo '<div class="row breadcrumbs"><p>';
         array_shift($Crumbs); // Remove "MDR" from list
-        $First = true;
-        foreach ( $Crumbs as $Crumb => $URL ) {
-            if ( $First ) {
-                $First = false;
-            } else {
-                echo ' > ';
+        if (count($Crumbs) > 1) {
+            echo '<div class="row breadcrumbs"><p>';
+            $First = true;
+            foreach ( $Crumbs as $Crumb => $URL ) {
+                if ( $First ) {
+                    $First = false;
+                } else {
+                    echo ' > ';
+                }
+                echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
             }
-            echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
+            echo '</p></div>';
         }
-        echo '</p></div>';
 
         // Heading
         echo '<div class="row docs-index">';
@@ -87,8 +89,8 @@ if (
         require_once $MDR['Core'].'/function.breadcrumbs.php';
         require_once $MDR['Core'].'/function.url_to_title.php';
         $Crumbs = Breadcrumbs($Request['Trimmed']);
-        echo '<div class="row breadcrumbs"><p>';
         array_shift($Crumbs); // Remove "MDR" from list
+        echo '<div class="row breadcrumbs"><p>';
         $First = true;
         foreach ( $Crumbs as $Crumb => $URL ) {
             if ( $First ) {
