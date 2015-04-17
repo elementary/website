@@ -62,6 +62,23 @@ if (
         $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_light.css">';
 
         include $Templates['Header'];
+
+        // Breadcrumbs
+        require_once $MDR['Core'].'/function.breadcrumbs.php';
+        $Crumbs = Breadcrumbs($Request['Trimmed']);
+        echo '<div class="row breadcrumbs"><p>';
+        array_shift($Crumbs); // Remove "MDR" from list
+        $First = true;
+        foreach ( $Crumbs as $Crumb => $URL ) {
+            if ( $First ) {
+                $First = false;
+            } else {
+                echo ' > ';
+            }
+            echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
+        }
+        echo '</p></div>';
+
         echo '<div class="row docs">';
 
         require_once $Libraries['Parsedown'];

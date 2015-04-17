@@ -1065,10 +1065,21 @@ body.sliding {
     width: 50px;
 }
 
-/*****************
-* Browsers icons *
-*****************/
+/*******
+* Docs *
+********/
 .docs img {
     display: block;
     margin: 0 auto;
+}
+
+.breadcrumbs {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.breadcrumbs p {
+    opacity: 0.7;
+}
+.breadcrumbs a {
+    color: inherit;
 }
