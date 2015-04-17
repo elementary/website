@@ -36,7 +36,7 @@ a.column h3 {
 * App grid *
 ***********/
 
-.row.apps{
+.row.apps {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 0;
@@ -48,6 +48,8 @@ a.column h3 {
     margin: 12px 0;
     padding: 12px;
     width: 100%;
+    vertical-align: top;
+    word-wrap: break-word;
 
     border: 1px solid transparent;
     border-radius: 4px;

@@ -291,7 +291,9 @@ class Translator {
                             $tag .= substr($attrs, $j);
                         }
                     }
-                } else { // No attributes in this tag
+                } elseif (rtrim($tag, '/ ') != 'br') {
+                    // No attributes in this tag
+                    // Set current tag, if not a line break
                     $tagName = $tag;
                 }
 
