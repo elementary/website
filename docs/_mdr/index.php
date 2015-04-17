@@ -13,11 +13,31 @@ if (
         require_once $MDR['Core'].'/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Directory']));
         include $Templates['Header'];
+
+        // Breadcrumbs
+        require_once $MDR['Core'].'/function.breadcrumbs.php';
+        require_once $MDR['Core'].'/function.url_to_title.php';
+        $Crumbs = Breadcrumbs($Request['Trimmed']);
+        echo '<div class="row breadcrumbs"><p>';
+        array_shift($Crumbs); // Remove "MDR" from list
+        $First = true;
+        foreach ( $Crumbs as $Crumb => $URL ) {
+            if ( $First ) {
+                $First = false;
+            } else {
+                echo ' > ';
+            }
+            echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
+        }
+        echo '</p></div>';
+
+        // Heading
         echo '<div class="row docs-index">';
         require_once $MDR['Core'].'/function.url_to_title.php';
-        $Title = url_to_title($Request['Trimmed']);
+        end($Crumbs); // Set array pointer to the last element
+        $Title = url_to_title(key($Crumbs));
         if ( !empty($Title) ) {
-            echo '<h2>'.$Title.'</h2>';
+            echo '<h1>'.$Title.'</h1>';
         }
 
         // Find Suitable Files
@@ -65,6 +85,7 @@ if (
 
         // Breadcrumbs
         require_once $MDR['Core'].'/function.breadcrumbs.php';
+        require_once $MDR['Core'].'/function.url_to_title.php';
         $Crumbs = Breadcrumbs($Request['Trimmed']);
         echo '<div class="row breadcrumbs"><p>';
         array_shift($Crumbs); // Remove "MDR" from list
