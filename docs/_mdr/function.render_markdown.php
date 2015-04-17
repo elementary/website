@@ -3,7 +3,7 @@
 function Render_Markdown($Source) {
 
     global $Lang, $Libraries, $MDR, $Request, $Settings, $Templates;
-    global $sitewide, $page, $lang;
+    global $sitewide, $page;
 
     require_once $MDR['Core'].'/function.url_to_title.php';
     $page['title'] = url_to_title(basename($Request['Directory']));
