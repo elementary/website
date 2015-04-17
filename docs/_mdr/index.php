@@ -21,30 +21,14 @@ if (
             include $Templates['Header'];
 
             // Breadcrumbs
-            require_once $MDR['Core'].'/function.breadcrumbs.php';
-            require_once $MDR['Core'].'/function.url_to_title.php';
-            $Crumbs = Breadcrumbs($Request['Trimmed']);
-            array_shift($Crumbs); // Remove "MDR" from list
-            if ( count($Crumbs) > 1 ) {
-                echo '<div class="row breadcrumbs"><p>';
-                $First = true;
-                foreach ( $Crumbs as $Crumb => $URL ) {
-                    if ( $First ) {
-                        $First = false;
-                    } else {
-                        echo ' > ';
-                    }
-                    echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
-                }
-                echo '</p></div>';
-            }
+            require_once $MDR['Core'].'/function.render_breadcrumbs.php';
+            Render_Breadcrumbs($Request['Trimmed']);
 
             echo '<div class="row docs-index">';
 
             // Heading
             require_once $MDR['Core'].'/function.url_to_title.php';
-            end($Crumbs); // Set array pointer to the last element
-            $Title = url_to_title(key($Crumbs));
+            $Title = $page['title'];
             if ( !empty($Title) ) {
                 echo '<h1>'.$Title.'</h1>';
             }
