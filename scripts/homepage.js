@@ -35,9 +35,9 @@
     // Listen for Clicking on Amounts
     $('.target-amount').click(amountClick);
     // Check Custom Amounts on Blur
-    $('#amount-custom').blur(amountBlur);
+    $('.amount-custom').blur(amountBlur);
 
-    $('#download').click(function(){
+    $('.download').click(function(){
         console.log('Pay ' + current_amount);
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);

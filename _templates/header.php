@@ -122,6 +122,6 @@ begin_html_l10n();
             </ul>
         </nav>
 
-        <div id="content-container">
+        <div class="content-container">
 <?php
 set_l10n_domain($page['name']);

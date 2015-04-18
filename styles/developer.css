@@ -11,7 +11,7 @@ nav > ul > li > a:focus {
     fill: #1F1F1F;
 }
 
-footer ul li a:focus i.fa {
+.footer ul li a:focus i.fa {
     color: #1F1F1F;
     text-shadow: 0 1px 6px #FFF;
 }
@@ -55,18 +55,18 @@ footer ul li a:focus i.fa {
     border-bottom-width: 0;
 }
 
-#dev-section-1 {
+.dev-section-1 {
     background-image: url('../images/developer/dev-design.png');
 }
 
-#dev-section-2 {
+.dev-section-2 {
     background-image: url('../images/developer/dev-code.png');
 }
 
-#dev-section-3 {
+.dev-section-3 {
     background-image: url('../images/developer/dev-manage.png');
 }
 
-#dev-section-4 {
+.dev-section-4 {
     background-image: url('../images/developer/dev-dist.png');
 }
