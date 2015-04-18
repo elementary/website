@@ -419,9 +419,15 @@ footer ul li a:focus {
     }
 
     .row .column.half {
-        width: 492px;
+        width: 540px;
         margin: 32px 32px 0;
         vertical-align: top;
+    }
+    .row .column.half:nth-child(odd) {
+        margin-left: 0px;
+    }
+    .row .column.half:nth-child(even) {
+        margin-right: 0px;
     }
 
     .column.third {

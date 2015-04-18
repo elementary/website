@@ -33,7 +33,7 @@
 
         // TODO Move styles to classes.
         echo '
-                    <div class="column half">
+                    <div class="column half rank-'.$Row.'">
                         <h2><img src="'.$Value['avatar_url'].'" class="float-left" style="max-width:48px;border-radius:3px;">&emsp;<a href="'.$Value['html_url'].'" target="_blank">'.$Value['login'].'</a></h2>
                         <div style="background:#ecf0f1;height:2rem;margin-bottom:-2rem;width:100%;border-radius:3px;"></div>';
         $Contributions_Percentage = ceil(($Value['contributions']/$Contributions_Max)*100);
