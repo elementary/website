@@ -34,15 +34,15 @@
         // TODO Move styles to classes.
         echo '
                     <div class="column half">
-                        <h2><img src="'.$Value['avatar_url'].'" class="float-left" style="max-width:48px;border-radius:3px;">&emsp;<a href="'.$Value['html_url'].'">'.$Value['login'].'</a></h2>
-                        <div style="background:#ecf0f1;height:2rem;margin-bottom:-2rem;width:100%;"></div>';
+                        <h2><img src="'.$Value['avatar_url'].'" class="float-left" style="max-width:48px;border-radius:3px;">&emsp;<a href="'.$Value['html_url'].'" target="_blank">'.$Value['login'].'</a></h2>
+                        <div style="background:#ecf0f1;height:2rem;margin-bottom:-2rem;width:100%;border-radius:3px;"></div>';
         $Contributions_Percentage = ceil(($Value['contributions']/$Contributions_Max)*100);
         if ( $Contributions_Percentage > 50 ) {
             echo '
-                        <div style="border-box;background:#08c;color:#fff;text-align:right;padding:0 .3rem;font-size:1.4em;height:2rem;width:'.$Contributions_Percentage.'%;">'.$Value['contributions'].'</div>';
+                        <div style="border-box;background:#08c;color:#fff;text-align:right;padding:0 .3rem;font-size:1.4em;height:2rem;border-radius:3px;width:'.$Contributions_Percentage.'%;">'.$Value['contributions'].'</div>';
         } else {
             echo '
-                        <div style="background:#08c;padding:0;height:2rem;width:'.$Contributions_Percentage.'%;"></div>
+                        <div style="background:#08c;padding:0;height:2rem;border-radius:3px;width:'.$Contributions_Percentage.'%;"></div>
                         <span class="float-left" style="color:#08c;padding:0 .3rem;font-size:1.4em;height:2rem;margin-top:-2rem;margin-left:'.$Contributions_Percentage.'%;">'.$Value['contributions'].'</span>';
         }
         echo '
