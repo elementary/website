@@ -46,10 +46,6 @@ source_lang = en
 file_filter = lang/<lang>/code-of-conduct.json
 source_lang = en
 
-[elementary-mvp.docs_human-interface-guidelines_coming-soon]
-file_filter = lang/<lang>/docs/human-interface-guidelines/coming-soon.json
-source_lang = en
-
 [elementary-mvp.docs_code_getting-started]
 file_filter = lang/<lang>/docs/code/getting-started.json
 source_lang = en
