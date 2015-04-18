@@ -39,11 +39,11 @@
         $Contributions_Percentage = ceil(($Value['contributions']/$Contributions_Max)*100);
         if ( $Contributions_Percentage > 50 ) {
             echo '
-                        <div style="border-box;background:#08c;color:#fff;text-align:right;padding:0 .3rem;font-size:1.4em;height:2rem;border-radius:3px;width:'.$Contributions_Percentage.'%;">'.$Value['contributions'].'</div>';
+                        <div style="border-box;background:#08c;color:#fff;text-align:right;padding:0 .3rem;font-size:1.4em;height:2rem;border-radius:3px;width:'.$Contributions_Percentage.'%;">'.number_format($Value['contributions']).'</div>';
         } else {
             echo '
                         <div style="background:#08c;padding:0;height:2rem;border-radius:3px;width:'.$Contributions_Percentage.'%;"></div>
-                        <span class="float-left" style="color:#08c;padding:0 .3rem;font-size:1.4em;height:2rem;margin-top:-2rem;margin-left:'.$Contributions_Percentage.'%;">'.$Value['contributions'].'</span>';
+                        <span class="float-left" style="color:#08c;padding:0 .3rem;font-size:1.4em;height:2rem;margin-top:-2rem;margin-left:'.$Contributions_Percentage.'%;">'.number_format($Value['contributions']).'</span>';
         }
         echo '
                     </div>';
