@@ -334,72 +334,72 @@ nav .logomark:focus .logomark-svg {
 * Layout *
 **********/
 
-#content-container {
+.content-container {
     min-height: 90vh;
 }
 
-footer {
+.footer {
     text-align: center;
     font-size: 12px;
     color: inherit;
     padding-top: 24px;
 }
 
-footer > p, footer > div > a, footer > ul {
+.footer > p, .footer > div > a, .footer > ul {
     opacity: 0.8;
 }
 
-footer > p {
+.footer > p {
     text-align: center;
     padding: 0 12px;
 }
 
-footer > ul {
+.footer > ul {
     list-style: none;
     padding: 0 12px;
 }
 
-footer .popover {
+.footer .popover {
     margin: 12px 0;
 }
 
 @media (min-width: 375px) {
-    footer > p {
+    .footer > p {
         float: left;
     }
 
-    footer > ul {
+    .footer > ul {
         float:right;
     }
 
-    footer > .popover {
+    .footer > .popover {
         float: left;
     }
 }
 
-footer ul li {
+.footer ul li {
     display: inline-block;
 }
 
-footer ul li+li,
-footer p a {
+.footer ul li+li,
+.footer p a {
     margin-left: 12px;
 }
 
-footer a {
+.footer a {
     color: inherit;
 }
 
-footer i.fa {
+.footer i.fa {
     font-size: 16px;
 }
 
-footer a:focus i.fa {
+.footer a:focus i.fa {
     color: #08c;
     text-shadow: 0 1px 6px #08c;
 }
 
-footer ul li a:focus {
+.footer ul li a:focus {
     outline: none;
 }
 
@@ -617,18 +617,18 @@ button.suggested-action,
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
-#download {
+.download {
     margin: 3px auto 6px;
 }
 
-#logotype {
+.logotype {
     position: relative;
     height: 66px;
     width: 454px;
     max-width: 80%;
     margin: 16px auto;
 }
-#logotype svg {
+.logotype svg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -639,7 +639,7 @@ button.suggested-action,
     overflow: visible;
 }
 /*
-#logotype svg path {
+.logotype svg path {
     fill: red;
 }
 */
@@ -664,7 +664,7 @@ button.suggested-action,
     position: absolute;
     pointer-events: none;
 }
-#amount-custom {
+.amount-custom {
     width: 100%;
     max-width: 170px;
     margin: 3px 0;
@@ -681,7 +681,7 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 @media (min-width: 444px) {
-    #amount-custom {
+    .amount-custom {
         width: 117px;
         margin: 3px;
     }

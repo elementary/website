@@ -13,7 +13,7 @@
             </script>
 
             <div class="row">
-                <div id="logotype">
+                <div class="logotype">
 
                     <?php
                         // Embed the SVG to fix scaling in WebKit 1.x,

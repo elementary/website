@@ -2,7 +2,7 @@
 set_l10n_domain('layout');
 ?>
         </div>
-        <footer>
+        <footer class="footer">
             <p>
                 Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a>
             </p>
