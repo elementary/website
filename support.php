@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Support &sdot; elementary';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
     include $template['header'];
 ?>
 
@@ -25,7 +25,7 @@
         <span>Files</span>
     </a>
 
-    <a class="app" href="https://answers.launchpad.net/geary" target="_blank">
+    <a class="app" href="https://answers.launchpad.net/ubuntu/+source/geary" target="_blank">
         <img width="64" height="64" src="images/support/internet-mail.svg" />
         <span data-l10n-off>Geary</span>
     </a>
