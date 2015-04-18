@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-### Copyright © 2015 elementary
+### Copyright © 2015 elementary & [The Web Team](http://elementary.io/teams/web)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
