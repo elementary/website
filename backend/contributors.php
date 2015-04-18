@@ -26,7 +26,26 @@ if ( $header_array['HTTP-Code'] == 'HTTP/1.1 202 Accepted' ) {
 
 } else if ( $header_array['X-RateLimit-Remaining'] > 0 ) {
     $data = substr($data, $header_size);
-    $put = file_put_contents('./contributors.json', $data);
+    $data = json_decode($data, true);
+    foreach ( $data as $Key => $Value ) {
+        unset(
+            $data[$Key]['id'],
+            $data[$Key]['gravatar_id'],
+            $data[$Key]['url'],
+            $data[$Key]['followers_url'],
+            $data[$Key]['gists_url'],
+            $data[$Key]['starred_url'],
+            $data[$Key]['subscriptions_url'],
+            $data[$Key]['organizations_url'],
+            $data[$Key]['following_url'],
+            $data[$Key]['repos_url'],
+            $data[$Key]['events_url'],
+            $data[$Key]['received_events_url'],
+            $data[$Key]['type'],
+            $data[$Key]['site_admin']
+        );
+    }
+    $put = file_put_contents('./contributors.json', json_encode($data));
     if ( $put ) {
         // All done.
         header($_SERVER['SERVER_PROTOCOL'].' 201 Created', true);
