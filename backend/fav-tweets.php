@@ -133,11 +133,14 @@ class TwApi {
         return $result;
     }
 
-    function get_favorites($user_id, $count = 10) {
+    function get_favorites($user_id = '', $count = 10) {
         $request = 'favorites/list.json';
-        $params = array('user_id' => $user_id,
-                        'count' => $count);
+        $params = array();
+        $params['count'] = $count;
 
+        if ($user_id != '') {
+          $params['user_id'] = $user_id;
+        }
         $result = $this->send_request($request, $params);
 
         return $result;
@@ -149,7 +152,7 @@ $api = new TwApi($config['twitter_access_token'],
                  $config['twitter_access_secret']);
 
 log_info('Fetching tweets.');
-$favs = $api->get_favorites('elementary');
+$favs = $api->get_favorites();
 log_info('Fetched tweets');
 
 $tweets = array();
