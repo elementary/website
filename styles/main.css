@@ -413,27 +413,33 @@ footer ul li a:focus {
     margin-bottom: 16px;
 }
 
-@media (min-width: 444px) {
+@media (min-width: 1200px) {
     .column+.column {
         margin-left: 24px;
     }
 
-    .row .column.half {
+    .column.half {
         width: 540px;
         margin: 32px 32px 0;
         vertical-align: top;
     }
-    .row .column.half:nth-child(odd) {
+    .column.half:nth-child(odd) {
         margin-left: 0px;
     }
-    .row .column.half:nth-child(even) {
+    .column.half:nth-child(even) {
         margin-right: 0px;
     }
 
     .column.third {
-        width: 316px;
+        width: 338px;
         margin: 32px 32px 0;
         vertical-align: top;
+    }
+    .column.third:nth-child(3n-2) {
+        margin-left: 0px;
+    }
+    .column.third:nth-child(3n) {
+        margin-right: 0px;
     }
 }
 
