@@ -75,7 +75,7 @@ There are other extensions for Scratch as well, like the Outline, Terminal or De
 
 ### Terminal {#terminal}
 
-![](images/docs/code/the-basic-setup/terminal.png)
+![](images/docs/code/the-basic-setup/terminal.svg)
 
 We’re going to use Terminal in order to compile our code, push revisions to Bazaar (bzr), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
 
