@@ -38,7 +38,7 @@ class TwApi {
             'oauth_timestamp' => time(),
             'oauth_nonce' => time(),
             'oauth_version' => '1.0'
-            );
+        );
     }
 
     function build_url($request, $params) {
