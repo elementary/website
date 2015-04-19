@@ -56,6 +56,13 @@
         "contributions": 2411
     },
     {
+        "login": "shnatsel",
+        "display_name": "Sergey \"Shnatsel\" Davidoff",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~shnatsel",
+        "contributions": 1912
+    },
+    {
         "login": "vikoadi",
         "display_name": "Viko Adi Rahmawan",
         "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
@@ -168,17 +175,17 @@
         "contributions": 9
     },
     {
-        "login": "ivonunes",
-        "display_name": "Ivo Nunes",
-        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~ivonunes\/logo",
-        "html_url": "https:\/\/launchpad.net\/~ivonunes",
-        "contributions": 5
-    },
-    {
         "login": "niels-avonds",
         "display_name": "Niels Avonds",
         "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
         "html_url": "https:\/\/launchpad.net\/~niels-avonds",
+        "contributions": 5
+    },
+    {
+        "login": "ivonunes",
+        "display_name": "Ivo Nunes",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~ivonunes\/logo",
+        "html_url": "https:\/\/launchpad.net\/~ivonunes",
         "contributions": 5
     },
     {
