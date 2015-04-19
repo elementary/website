@@ -17,6 +17,8 @@ $defaultLogo = 'https://launchpad.net/@@/person-logo';
 
 // CONFIG ENDS HERE
 
+$apiParams = 'ws.op=getMembersByStatus';
+
 header('Content-Type: text/plain');
 
 function log_info($msg) { // Basic logger
@@ -33,16 +35,17 @@ foreach ($teams as $websiteTeam => $launchpadTeams) {
         $launchpadTeams = array($launchpadTeams);
     }
 
+    $outputFile = $outputDir.'/'.$websiteTeam.'.json';
+
     $list = array();
+    // Retrieve each Launchpad team
     foreach ($launchpadTeams as $launchpadTeam) {
-        $apiParams = 'ws.op=getMembersByStatus';
         $apiEndpoint = $apiBaseUrl.'/~'.$launchpadTeam.'?'.$apiParams;
-        $outputFile = $outputDir.'/'.$websiteTeam.'.json';
 
         // We have to fetch each status at a time
         foreach ($statuses as $status) {
             $apiStatusEndpoint = $apiEndpoint.'&status='.$status;
-            log_info('Requesting '.$status.' members of '.$websiteTeam.' team from '.$apiStatusEndpoint);
+            log_info('Requesting '.$status.' members of '.$launchpadTeam.' team from '.$apiStatusEndpoint);
             $json = file_get_contents($apiStatusEndpoint);
             if ($json === false) {
                 throw new Exception('Could not get data from '.$apiStatusEndpoint);
