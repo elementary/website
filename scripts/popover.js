@@ -22,7 +22,7 @@ $(function () {
         var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
         $content.css({ left: popoverPos });
 
-        $document.one('click', function (event) {
+        $document.one('click scroll touchmove mousewheel', function (event) {
             if (!$(event.target).is('.popover-content *')) {
                 event.stopImmediatePropagation();
                 event.preventDefault();
@@ -31,6 +31,7 @@ $(function () {
             $body.css({ 'overflow': 'visible' });
 
             $popover.removeClass('active');
+            $body.click();
         });
     });
 });
