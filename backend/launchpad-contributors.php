@@ -10,7 +10,7 @@
 $apiBaseUrl = 'https://api.launchpad.net/beta';
 
 // Launchpad team name => website team name
-$teams = array('elementary-os' => 'desktop');
+$teams = array('elementary-apps' => 'desktop');
 $statuses = array('Administrator', 'Approved');
 
 $defaultLogo = 'https://launchpad.net/@@/person-logo';
@@ -33,6 +33,7 @@ foreach ($teams as $launchpadTeam => $websiteTeam) {
     $apiEndpoint = $apiBaseUrl.'/~'.$launchpadTeam.'?'.$apiParams;
     $outputFile = $outputDir.'/'.$websiteTeam.'.json';
 
+    // We have to fetch each status at a time
     $list = array();
     foreach ($statuses as $status) {
         $apiStatusEndpoint = $apiEndpoint.'&status='.$status;
@@ -51,14 +52,17 @@ foreach ($teams as $launchpadTeam => $websiteTeam) {
 
     $members = array();
     foreach ($list as $member) {
+        // Skip entities that are not persons
         if ($member['resource_type_link'] != $apiBaseUrl.'/#person') {
             log_info('Skipped entity: '.$member['name'].' (type: '.$member['resource_type_link'].').');
             continue;
         }
+        // Skip rabbitbot
         if ($member['name'] == 'rabbitbot-a') {
             continue;
         }
 
+        // Check if member has a logo
         // Cannot make HEAD requests (got: HTTP/1.1 405 Method Not Allowed)
         $logoHeaders = get_headers($member['logo_link'], true);
         if (strpos($logoHeaders[0], ' 404 ') !== false) {
@@ -74,6 +78,7 @@ foreach ($teams as $launchpadTeam => $websiteTeam) {
         );
     }
 
+    // Sort members by contributions
     usort($members, function ($a, $b) {
         return $b['contributions'] - $a['contributions'];
     });

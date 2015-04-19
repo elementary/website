@@ -21,6 +21,13 @@
         "contributions": 14786
     },
     {
+        "login": "jeremywootten",
+        "display_name": "Jeremy Wootten",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~jeremywootten",
+        "contributions": 4970
+    },
+    {
         "login": "tintou",
         "display_name": "Corentin No\u00ebl",
         "avatar_url": "https:\/\/api.launchpad.net\/beta\/~tintou\/logo",
@@ -28,11 +35,39 @@
         "contributions": 4171
     },
     {
-        "login": "shnatsel",
-        "display_name": "Sergey \"Shnatsel\" Davidoff",
+        "login": "artem-anufrij",
+        "display_name": "Artem Anufrij",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~artem-anufrij\/logo",
+        "html_url": "https:\/\/launchpad.net\/~artem-anufrij",
+        "contributions": 3723
+    },
+    {
+        "login": "fabiozaramella",
+        "display_name": "Fabio Zaramella",
         "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
-        "html_url": "https:\/\/launchpad.net\/~shnatsel",
-        "contributions": 1912
+        "html_url": "https:\/\/launchpad.net\/~fabiozaramella",
+        "contributions": 3413
+    },
+    {
+        "login": "embik",
+        "display_name": "Marvin Beckers",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~embik",
+        "contributions": 2411
+    },
+    {
+        "login": "vikoadi",
+        "display_name": "Viko Adi Rahmawan",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~vikoadi",
+        "contributions": 1770
+    },
+    {
+        "login": "evfool",
+        "display_name": "Robert Roth",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~evfool",
+        "contributions": 1753
     },
     {
         "login": "cassidyjames",
@@ -42,6 +77,48 @@
         "contributions": 1640
     },
     {
+        "login": "tombeckmann",
+        "display_name": "Tom Beckmann",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~tombeckmann\/logo",
+        "html_url": "https:\/\/launchpad.net\/~tombeckmann",
+        "contributions": 1379
+    },
+    {
+        "login": "voldyman",
+        "display_name": "Akshay Shekher",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~voldyman",
+        "contributions": 1083
+    },
+    {
+        "login": "victored",
+        "display_name": "Victor Martinez",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~victored",
+        "contributions": 889
+    },
+    {
+        "login": "teemperor",
+        "display_name": "Raphael Isemann",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~teemperor",
+        "contributions": 868
+    },
+    {
+        "login": "davidgomes",
+        "display_name": "David Gomes",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~davidgomes",
+        "contributions": 715
+    },
+    {
+        "login": "junrrein",
+        "display_name": "Juli\u00e1n Unrrein",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~junrrein",
+        "contributions": 560
+    },
+    {
         "login": "aroman",
         "display_name": "Avi Romanoff",
         "avatar_url": "https:\/\/api.launchpad.net\/beta\/~aroman\/logo",
@@ -49,10 +126,80 @@
         "contributions": 507
     },
     {
+        "login": "gero-bare",
+        "display_name": "Gero.bare",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~gero-bare",
+        "contributions": 441
+    },
+    {
+        "login": "xapantu",
+        "display_name": "xapantu",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~xapantu",
+        "contributions": 293
+    },
+    {
+        "login": "mefrio-g",
+        "display_name": "Mario Guerriero",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~mefrio-g",
+        "contributions": 166
+    },
+    {
+        "login": "julien-spautz",
+        "display_name": "Julien Spautz",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~julien-spautz",
+        "contributions": 31
+    },
+    {
+        "login": "lallenlowe",
+        "display_name": "Allen Lowe",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~lallenlowe\/logo",
+        "html_url": "https:\/\/launchpad.net\/~lallenlowe",
+        "contributions": 12
+    },
+    {
+        "login": "jaapz-b",
+        "display_name": "Jaap Broekhuizen",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~jaapz-b",
+        "contributions": 9
+    },
+    {
+        "login": "niels-avonds",
+        "display_name": "Niels Avonds",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~niels-avonds",
+        "contributions": 5
+    },
+    {
         "login": "ivonunes",
         "display_name": "Ivo Nunes",
         "avatar_url": "https:\/\/api.launchpad.net\/beta\/~ivonunes\/logo",
         "html_url": "https:\/\/launchpad.net\/~ivonunes",
         "contributions": 5
+    },
+    {
+        "login": "spinatelli",
+        "display_name": "Sergio Spinatelli",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~spinatelli",
+        "contributions": 4
+    },
+    {
+        "login": "voluntatefaber",
+        "display_name": "Andrea Basso",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~voluntatefaber",
+        "contributions": 0
+    },
+    {
+        "login": "daniel-m-kur",
+        "display_name": "Daniel Kur",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~daniel-m-kur",
+        "contributions": 0
     }
 ]
