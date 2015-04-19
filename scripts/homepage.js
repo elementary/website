@@ -1,5 +1,4 @@
 (function () {
-    var stripe_key = '';
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
     var previous_amount = 'amount-twenty-five';
@@ -130,17 +129,6 @@
             })(links_data[i], download_links[i]);
         }
     }
-
-    // Get the stripe key from the server
-    var key_http = new XMLHttpRequest();
-    key_http.open('GET','./backend/payment.php',true);
-    key_http.onreadystatechange = function() {
-        if (key_http.readyState == 4 && key_http.status == 200) {
-            stripe_key = key_http.responseText;
-            console.log('Stripe key is: ' + stripe_key);
-        }
-    }
-    key_http.send();
 
     // Carousel
     var appCarousel = new Slider({
