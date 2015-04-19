@@ -61,6 +61,10 @@ foreach ($teams as $launchpadTeam => $websiteTeam) {
         if ($member['name'] == 'rabbitbot-a') {
             continue;
         }
+        // Skip members without karma
+        if ($member['karma'] == 0) {
+            continue;
+        }
 
         // Check if member has a logo
         // Cannot make HEAD requests (got: HTTP/1.1 405 Method Not Allowed)
