@@ -1,0 +1,58 @@
+[
+    {
+        "login": "danrabbit",
+        "display_name": "Daniel Fore",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~danrabbit\/logo",
+        "html_url": "https:\/\/launchpad.net\/~danrabbit",
+        "contributions": 19243
+    },
+    {
+        "login": "ricotz",
+        "display_name": "Rico Tzschichholz",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~ricotz",
+        "contributions": 18640
+    },
+    {
+        "login": "codygarver",
+        "display_name": "Cody Garver",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~codygarver",
+        "contributions": 14786
+    },
+    {
+        "login": "tintou",
+        "display_name": "Corentin No\u00ebl",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~tintou\/logo",
+        "html_url": "https:\/\/launchpad.net\/~tintou",
+        "contributions": 4171
+    },
+    {
+        "login": "shnatsel",
+        "display_name": "Sergey \"Shnatsel\" Davidoff",
+        "avatar_url": "https:\/\/launchpad.net\/@@\/person-logo",
+        "html_url": "https:\/\/launchpad.net\/~shnatsel",
+        "contributions": 1912
+    },
+    {
+        "login": "cassidyjames",
+        "display_name": "Cassidy James",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~cassidyjames\/logo",
+        "html_url": "https:\/\/launchpad.net\/~cassidyjames",
+        "contributions": 1640
+    },
+    {
+        "login": "aroman",
+        "display_name": "Avi Romanoff",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~aroman\/logo",
+        "html_url": "https:\/\/launchpad.net\/~aroman",
+        "contributions": 507
+    },
+    {
+        "login": "ivonunes",
+        "display_name": "Ivo Nunes",
+        "avatar_url": "https:\/\/api.launchpad.net\/beta\/~ivonunes\/logo",
+        "html_url": "https:\/\/launchpad.net\/~ivonunes",
+        "contributions": 5
+    }
+]
