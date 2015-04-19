@@ -16,7 +16,7 @@
 
     <?php
 
-    $Contributors = file_get_contents(__DIR__.'/../backend/contributors.json');
+    $Contributors = file_get_contents(__DIR__.'/../backend/contributors/web.json');
     $Contributors = json_decode($Contributors, true);
     // The highest contributor is first.
     $Contributions_Max = $Contributors[0]['contributions'];

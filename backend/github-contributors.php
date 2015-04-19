@@ -45,7 +45,7 @@ if ( $header_array['HTTP-Code'] == 'HTTP/1.1 202 Accepted' ) {
             $data[$Key]['site_admin']
         );
     }
-    $put = file_put_contents('./contributors.json', json_encode($data));
+    $put = file_put_contents(__DIR__.'/contributors/web.json', json_encode($data));
     if ( $put ) {
         // All done.
         header($_SERVER['SERVER_PROTOCOL'].' 201 Created', true);
