@@ -405,7 +405,7 @@ footer ul li a:focus {
 
 .column {
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .column.third {
@@ -413,21 +413,33 @@ footer ul li a:focus {
     margin-bottom: 16px;
 }
 
-@media (min-width: 444px) {
+@media (min-width: 1200px) {
     .column+.column {
         margin-left: 24px;
     }
 
-    .row .column.half {
-        width: 492px;
+    .column.half {
+        width: 540px;
         margin: 32px 32px 0;
         vertical-align: top;
     }
+    .column.half:nth-child(odd) {
+        margin-left: 0px;
+    }
+    .column.half:nth-child(even) {
+        margin-right: 0px;
+    }
 
     .column.third {
-        width: 316px;
+        width: 338px;
         margin: 32px 32px 0;
         vertical-align: top;
+    }
+    .column.third:nth-child(3n-2) {
+        margin-left: 0px;
+    }
+    .column.third:nth-child(3n) {
+        margin-right: 0px;
     }
 }
 
@@ -969,7 +981,11 @@ body.sliding {
 
 .float-left {
     float: left;
-    margin: 0 .5em .5em 0;
+    margin: 0 1em 1em 0;
+}
+.float-right {
+    float: right;
+    margin: 0 0 1em 1em;
 }
 .clear,
 .clear-both {
