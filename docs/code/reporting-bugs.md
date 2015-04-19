@@ -26,7 +26,7 @@ If you've reported your issue against the wrong app, a developer may mark it as 
 If you're reporting a "Wishlist" issue, like a feature request, a developer may mark your bug as "Opinion" or "Won't Fix". Developers are often open to discussion about these kinds of issues, but please do not harass a developer for marking your report this way.
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
-If you're not sure about anything above, you are always welcome to our [development IRC channel](/developer/chat). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
+If you're not sure about anything above, you are always welcome to our development IRC channel: #elementary-dev on irc.freenode.net. We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Confirm Reports for Other People's Apps {#dont-confirm-reports-for-other-peoples-apps}
 If a report affects you, mark it using the link. Do not confrim your own reports. Even if you are 100% sure that you are right, just don't do it. It's not good bug tracker etiquette. A bug manager or developer for the app will confirm the report when they are able to review it.
