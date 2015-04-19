@@ -23,4 +23,15 @@ $(function () {
 			$popover.removeClass('active');
 		});
 	});
+
+	// Prevent scrolling behind popover
+	$('.popover').hover(
+		function() {
+			$('body').css('pointer-events', 'none');
+			$(this).css('pointer-events', 'all');
+		}, function() {
+			$('body').css('pointer-events', '');
+			$(this).css('pointer-events', '');
+		}
+	);
 });
