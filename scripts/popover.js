@@ -15,14 +15,14 @@ $(function () {
 
         $popover.addClass('active');
 
-        $content.on('scroll touchmove mousewheel', function (e) {
+        $content.on('scroll touchmove mousewheel wheel', function (e) {
             e.stopPropagation();
         });
 
         var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
         $content.css({ left: popoverPos });
 
-        $document.one('click scroll touchmove mousewheel', function (event) {
+        $document.one('click scroll touchmove mousewheel wheel', function (event) {
             if (!$(event.target).is('.popover-content *')) {
                 event.stopImmediatePropagation();
                 event.preventDefault();
