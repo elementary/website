@@ -18,7 +18,7 @@ To set up a Launchpad account:
 
 2. Select **I am a new Ubuntu One user** on the left side.
 
-3. Enter your information and click **Creat account**.
+3. Enter your information and click **Create account**.
 
 After you have verified your email your Launchpad account is ready, so let's move on to the next section. Remember, we're not going to go over all the little details in this book. We'll come back to Launchpad a few times later on to use specific features, but if you really want to learn everything there is to know about the website you should read their user guide. Onward!
 
