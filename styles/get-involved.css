@@ -5,6 +5,12 @@ body {
     fill: #c8d0d0;
 }
 
+footer {
+    background-color: #fdf6e3;
+    color: #586e75;
+    fill: #586e75;
+}
+
 /* SECTIONS */
 section,
 section.hero {
@@ -86,6 +92,15 @@ section:nth-child(5) .button.flat.suggested-action {
 
 section:nth-child(5) .button.flat.suggested-action:focus {
     background-color: #ED509C!important;
+}
+
+section:nth-child(6) .button.flat.suggested-action {
+    background-color: #edac35;
+    border-color: #edac35;
+}
+
+section:nth-child(6) .button.flat.suggested-action:focus {
+    background-color: #ffc357!important;
 }
 
 @media (max-width: 1080px) {
@@ -197,6 +212,10 @@ section:nth-child(5) .button.flat.suggested-action:focus {
 
 .row.hero .actions .button.flat:nth-child(4) {
     border-color: #d33682;
+}
+
+.row.hero .actions .button.flat:nth-child(5) {
+    border-color: #edac35;
 }
 
 /* CUSTOM SECTIONS */
