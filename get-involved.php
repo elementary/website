@@ -156,7 +156,7 @@
             <section id="funding" class="light">
                 <div class="heading">
                     <div class="row">
-                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar elementaryos.org/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar http://elementary.io/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Marsha_Sinetar" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
                     </div>
                 </div>
