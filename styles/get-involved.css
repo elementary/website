@@ -100,7 +100,7 @@ section:nth-child(6) .button.flat.suggested-action {
 }
 
 section:nth-child(6) .button.flat.suggested-action:focus {
-    background-color: #edac35;
+    background-color: #ffc357!important;
 }
 
 @media (max-width: 1080px) {
