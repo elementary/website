@@ -164,7 +164,7 @@
                 <div class="row">
                     <div class="column half">
                         <h2>One-Time Funding</h2>
-                        <p>Bacon ipsum dolor amet pork loin ham kevin pancetta jerky venison. Meatloaf cupim ball tip leberkas filet mignon ribeye. Alcatra flank ground round, pork loin andouille.</p>
+                        <p>Not everyone has access to a credit card or wants to pay before they download. But if you'd still like to help fund elementary, PayPal is a quick and easy solution that's available at any time.</p>
 
                         <div class="actions">
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -173,13 +173,12 @@
                             <input type="submit" style="width: 100%;" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat suggested-action">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                             </form>
-                            <a class="button flat" href="https://www.bountysource.com/teams/elementary" target="_blank">BountySource</a>
                         </div>
                     </div>
                     <div class="column half">
                         <h2>Subscription Funding</h2>
-                        <p>With Patreon, Lorem Ipsum Dolor Sit Amet <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
-                        <p>Bountysource blah blah potato bacon chives sour cream cheddar cheesea <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
+                        <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
+                        <p>Bountysource puts funds directly in the hands of developers by awarding them for specific fixes and features. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
