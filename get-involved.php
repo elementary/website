@@ -173,7 +173,7 @@
                             <input type="submit" style="width: 100%;" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat suggested-action">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                             </form>
-                            <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank">BountySource</a>
+                            <a class="button flat" href="https://www.bountysource.com/teams/elementary" target="_blank">BountySource</a>
                         </div>
                     </div>
                     <div class="column half">
