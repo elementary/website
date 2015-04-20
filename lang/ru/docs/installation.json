@@ -22,7 +22,7 @@
     "the disk icon": "иконку диска",
     "to choose the ISO that you downloaded previously.": "чтобы выбрать ISO, который вы загрузили ранее.",
     "Click &quot;Start&quot;, then just wait for the process to finish.": "Нажмите \"Старт\" и подождите, пока процесс закончится.",
-    "OS X, Ubuntu, and others": "OS X, Ubuntu, и другие.",
+    "OS X, Ubuntu, and others": "OS X, Ubuntu, и другие",
     "UNetbootin": "UNetbootin",
     "You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href=\"http://appnr.com/install/unetbootin\">click this link</a>. In OS X you'll have to download it from <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">its website</a> and open the downloaded file to install it.": "Вам также понадобится небольшое приложение UNetbootin. Чтобы установить его в Ubuntu, <a href=\"http://appnr.com/install/unetbootin\">перейдите по ссылке</a>. Для OS X вам необходимо загрузить его с <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">сайта приложения</a> и  установить.",
     "Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:": "Откройте UNetbootin из меню приложений в Ubuntu или Launchpad в OS X. Откроется окно, похожее на одно из приведенных ниже:",
