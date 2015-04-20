@@ -178,7 +178,7 @@
                     <div class="column half">
                         <h2>Subscription Funding</h2>
                         <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
-                        <p>Bountysource puts funds directly in the hands of developers by awarding them for specific fixes and features. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
+                        <p>Bountysource puts funds directly in the hands of developers by rewarding them for specific fixes and features. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
