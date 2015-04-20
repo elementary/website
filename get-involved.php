@@ -44,6 +44,7 @@
                     <a class="button flat" href="#web-development">Web Development</a>
                     <a class="button flat" href="#design">Design</a>
                     <a class="button flat" href="#desktop-development">Desktop Development</a>
+                    <a class="button flat" href="#bounties">Bounties</a>
                 </div>
             </section>
 
@@ -148,6 +149,38 @@
                     </div>
                     <div class="column half">
                         <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
+                    </div>
+                </div>
+            </section>
+
+            <section id="bounties" class="light">
+                <div class="heading">
+                    <div class="row">
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar elementaryos.org/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
+                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Marsha_Sinetar" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column half">
+                        <h2>Bounties</h2>
+
+                        <p>
+                            <strong>For users</strong><br/>
+                            No worries, even if you don't have the technical skills to contribute code, posting bounties on issues will speed up the development and make developers happy.
+                        </p>
+
+                        <p>
+                            <strong>For developers</strong><br/>
+                            Follow the link below and grab a few bucks by solving existing issues.
+                        </p>
+
+                        <div class="actions">
+                            <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary/bounties" target="_blank">See All Bounties</a>
+                        </div>
+                    </div>
+                    <div class="column half">
+                        <img src="images/get-involved/solve-a-bounty.png" alt="Bountysource">
                     </div>
                 </div>
             </section>
