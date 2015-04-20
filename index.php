@@ -149,6 +149,17 @@
                     <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
                 </div>
             </div>
+            <div class="row" id="advanced-features">
+                <h4>Advance features</h4>
+                <div class="column half">
+                    <h2>Stay informed</h2>
+                    <p>Apps can pop up relevant info unobtrusively while still letting you act on or dismiss it. Notifications are organized based on priority, and you can even toggle them per-app from the System Settings app. Enter do-not-disturb mode to completely hide and mute notifications when you’re working on something important or presenting.</p>
+                </div>
+                <div class="column half">
+                    <h2>Find and launch apps</h2>
+                    <p>See and launch all your installed apps. View them in an alphabetical grid or organized by category, or quickly search by name or keyword. Right-click an app for quick actions and drag your favorite apps to the dock.</p>
+                </div>
+            </div>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
