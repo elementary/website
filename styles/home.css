@@ -69,6 +69,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16),
                 0 3px 6px rgba(0,0,0,0.23);
     padding: 12px;
+    margin-right: 24px;
 }
 
 #slingshot .linked {
@@ -109,4 +110,12 @@
     margin-left: 6px;
 
     transition: all 200ms ease-out;
+}
+
+h4 svg {
+    margin-left: -22px;
+}
+
+.vertical-top {
+    vertical-align: top;
 }

@@ -136,20 +136,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="column third">
-                    <h2>Open Source</h2>
-                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved.php#desktop-development">Learn More</a></p>
-                </div>
-                <div class="column third">
-                    <h2>No Ads. No Spying.</h2>
-                    <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
-                </div>
-                <div class="column third">
-                    <h2>Safe &amp; Secure</h2>
-                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
-                </div>
-            </div>
-            <div class="row">
+                <div class="column vertical-top">
                     <div id="slingshot">
                         <div class="linked">
                             <div class="button active">
@@ -163,6 +150,30 @@
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
                     </div>
+                </div>
+                <div class="column vertical-top text-left">
+                    <h2>3 Ways to Explore</h2>
+                    <h4><?php include('images/icons/view-grid-symbolic.svg'); ?> Grid</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h4><?php include('images/icons/view-filter-symbolic.svg'); ?> Categories</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h4><?php include('images/icons/edit-find-symbolic.svg'); ?> Search</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column third">
+                    <h2>Open Source</h2>
+                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved.php#desktop-development">Learn More</a></p>
+                </div>
+                <div class="column third">
+                    <h2>No Ads. No Spying.</h2>
+                    <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
+                </div>
+                <div class="column third">
+                    <h2>Safe &amp; Secure</h2>
+                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
+                </div>
             </div>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
