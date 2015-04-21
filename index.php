@@ -155,11 +155,11 @@
                 <div class="column half vertical-top text-left">
                     <h2>3 Ways to Explore</h2>
                     <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
-                    <p>Slingshot displays all your applications in a neat grid that you can flick through and pick the one you want.</p>
+                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want</p>
                     <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
-                    <p>Know more or less what you're looking for? Find the application you want by browsing through Slingshot's categories.</p>
+                    <p>Know more or less what you're looking for? Find the app you want by browsing category view</p>
                     <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
-                    <p>If all else fails use Slingshot search to find what you're looking for or perform simple tasks.</p>
+                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view</p>
                 </div>
             </div>
             <div class="row">

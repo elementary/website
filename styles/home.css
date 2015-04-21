@@ -148,6 +148,11 @@
     transition: all 200ms ease-out;
 }
 
+.slingshot img {
+    width: 64px;
+    height: 64px;
+}
+
 .vertical-top {
     vertical-align: top;
 }
