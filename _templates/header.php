@@ -109,17 +109,19 @@ begin_html_l10n();
 
     </head>
     <body class="page-<?php echo $page['name']; ?>">
-        <nav>
-            <ul class="left">
-                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
-                <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
-                <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="nav-content">
+                <ul class="left">
+                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
+                    <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div id="content-container">
