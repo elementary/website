@@ -1,6 +1,6 @@
 <?php
-require_once(__DIR__.'/lib/Stripe.php');
-require_once(__DIR__.'/config.loader.php');
+require_once __DIR__.'/lib/Stripe.php';
+require_once __DIR__.'/config.loader.php';
 
 Stripe::setApiKey($config['stripe_sk']);
 
