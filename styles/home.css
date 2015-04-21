@@ -57,3 +57,35 @@
     max-width: 256px;
 }
 
+#slingshot {
+    height: 512px;
+    width: 678px;
+    background-color: #f5f5f5;
+    background-clip: padding-box;
+
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
+    padding: 12px;
+}
+
+#slingshot:before,
+#slingshot:after {
+    content: '';
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border: 10px outset transparent;
+}
+#slingshot:before {
+    border-bottom: 10px solid rgba(0,0,0,0.2);
+    left: -302px;
+    top: -45px;
+}
+#slingshot:after {
+    border-bottom:10px solid #f5f5f5;
+    left: -326px;
+    top: -44px;
+}

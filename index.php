@@ -149,6 +149,10 @@
                     <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
                 </div>
             </div>
+            <div class="row">
+                    <div id="slingshot">
+                    </div>
+            </div>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
