@@ -151,6 +151,17 @@
             </div>
             <div class="row">
                     <div id="slingshot">
+                        <div class="linked">
+                            <div class="button active">
+                                <?php include('images/icons/view-grid-symbolic.svg'); ?>
+                            </div>
+                            <div class="button">
+                                <?php include('images/icons/view-filter-symbolic.svg'); ?>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                        </div>
                     </div>
             </div>
             <div id="download-modal" class="modal">
