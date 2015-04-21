@@ -72,6 +72,15 @@
     margin-right: 24px;
 }
 
+.entry .symbolic {
+    opacity: 0.5;
+    fill:#444;
+}
+
+.symbolic {
+    fill:#444;
+}
+
 #slingshot .linked {
     margin: 0;
     display: inline-block;
