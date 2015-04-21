@@ -137,7 +137,7 @@
             </div>
             <div id="slingshot" class="row">
                 <div class="column vertical-top">
-                    <div class="slingshot-arrow"><img src='images/slingshot/arrow.png'></div>
+                    <div class="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
                             <div class="button active">
