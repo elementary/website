@@ -82,7 +82,7 @@
     display: inline-block;
     position: relative;
     left: 45px;
-    top: -38px;
+    top: -31px;
 }
 
 @media (max-width: 1350px) {
@@ -91,19 +91,19 @@
     }
 }
 
-.symbolic-icon {
+#slingshot .column:nth-child(2) .symbolic-icon {
     display: inline-block;
     float: left;
-    margin: 4px 6px 4px 0;
+    margin: 4px 6px 4px -24px;
 }
 
 .entry .symbolic {
-    opacity: 0.5;
-    fill:#444;
+    opacity: 0.4;
+    fill: #333;
 }
 
 .symbolic {
-    fill:#444;
+    fill: #333;
 }
 
 .slingshot .linked {
@@ -112,18 +112,20 @@
     pointer-events: none;
 }
 
+.slingshot .button,
+.slingshot .entry {
+    height: 25px;
+    padding: 3px 6px;
+}
+
 .slingshot .button {
-    height: 28px;
     width: 30px;
-    padding: 1px 6px 3px 6px;
     fill: #333;
     background-image: none;
 }
 
 .slingshot .entry {
-    height: 28px;
     width: 581px;
-    padding: 1px 6px 3px 6px;
     display: inline-block;
     background-image: linear-gradient(to bottom,
                                   #f0f0f0,
@@ -144,10 +146,6 @@
     margin-left: 6px;
 
     transition: all 200ms ease-out;
-}
-
-h4 svg {
-    margin-left: -22px;
 }
 
 .vertical-top {
