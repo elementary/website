@@ -5,7 +5,7 @@
  * access tokens should be stored in twitter-tokens.php
  */
 
-require_once(dirname(__FILE__) . '/config.php');
+require_once __DIR__.'/config.loader.php';
 
 if (php_sapi_name() != 'cli') {
     die('This script can only be run from command line');
