@@ -291,16 +291,17 @@ nav > .right {
 nav > ul > li {
     margin: 0 6px;
     position: relative;
-    display: inline;
+    float: left;
 }
 
 nav > ul > li > a,
 nav > ul > li > a:visited {
     margin: 0;
-    padding: 0;
+    padding: 0 6px;
     color: inherit;
     fill: inherit;
     opacity: 0.8;
+    display: inline-block;
 }
 
 nav > ul > li > a:focus {
@@ -315,6 +316,7 @@ nav > ul > li > a:visited:hover {
 }
 
 nav .logomark {
+    padding: 0;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -328,6 +330,14 @@ nav .logomark .logomark-svg {
 
 nav .logomark:focus .logomark-svg {
     fill: inherit;
+}
+
+@media only screen and (max-width : 500px) {
+
+    nav > ul > li {
+        margin: 0 2px;
+        font-size: 91%;
+    }
 }
 
 /*********
