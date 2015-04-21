@@ -7,6 +7,6 @@ if ( substr($_SERVER['REQUEST_URI'], 0, 8) == '/branch/' ) {
     // for Configured MASTER
     require_once __DIR__.'/config.php';
 } else {
-    // for un-configured Lobal
+    // for un-configured Local
     require_once __DIR__.'/config.example.php';
 }
