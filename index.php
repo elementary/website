@@ -135,9 +135,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div id="slingshot" class="row">
                 <div class="column vertical-top">
-                    <div id="slingshot">
+                    <div class="slingshot-arrow"><img src='images/slingshot/arrow.png'></div>
+                    <div class="slingshot">
                         <div class="linked">
                             <div class="button active">
                                 <?php include('images/icons/view-grid-symbolic.svg'); ?>
@@ -151,14 +152,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="column vertical-top text-left">
+                <div class="column half vertical-top text-left">
                     <h2>3 Ways to Explore</h2>
-                    <h4><?php include('images/icons/view-grid-symbolic.svg'); ?> Grid</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <h4><?php include('images/icons/view-filter-symbolic.svg'); ?> Categories</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <h4><?php include('images/icons/edit-find-symbolic.svg'); ?> Search</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
+                    <p>Slingshot displays all your applications in a neat grid that you can flick through and pick the one you want.</p>
+                    <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
+                    <p>Know more or less what you're looking for? Find the application you want by browsing through Slingshot's categories.</p>
+                    <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
+                    <p>If all else fails use Slingshot search to find what you're looking for or perform simple tasks.</p>
                 </div>
             </div>
             <div class="row">

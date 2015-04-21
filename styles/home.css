@@ -55,9 +55,14 @@
 
 #carousel .slide > .column .column:nth-child(2) {
     max-width: 256px;
-}
+}    
 
 #slingshot {
+    width: 100%;
+    max-width: 1800px;
+}
+
+.slingshot {
     height: 512px;
     width: 678px;
     background-color: #f5f5f5;
@@ -69,7 +74,27 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16),
                 0 3px 6px rgba(0,0,0,0.23);
     padding: 12px;
+    display: inline-block;
     margin-right: 24px;
+}
+
+.slingshot-arrow {
+    display: inline-block;
+    position: relative;
+    left: 45px;
+    top: -38px;
+}
+
+@media (max-width: 1350px) {
+    #slingshot {
+        display: none;
+    }
+}
+
+.symbolic-icon {
+    display: inline-block;
+    float: left;
+    margin: 4px 6px 4px 0;
 }
 
 .entry .symbolic {
@@ -81,24 +106,24 @@
     fill:#444;
 }
 
-#slingshot .linked {
+.slingshot .linked {
     margin: 0;
     display: inline-block;
     pointer-events: none;
 }
 
-#slingshot .button {
-    height: 25px;
+.slingshot .button {
+    height: 28px;
     width: 30px;
-    padding: 3px 6px;
+    padding: 1px 6px 3px 6px;
     fill: #333;
     background-image: none;
 }
 
-#slingshot .entry {
-    height: 25px;
+.slingshot .entry {
+    height: 28px;
     width: 581px;
-    padding: 3px 6px;
+    padding: 1px 6px 3px 6px;
     display: inline-block;
     background-image: linear-gradient(to bottom,
                                   #f0f0f0,
