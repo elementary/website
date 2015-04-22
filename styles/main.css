@@ -11,6 +11,7 @@ body {
     fill: #333;
     margin: 0;
     font-weight: 400;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -44,13 +45,13 @@ h1 {
 
 @media (min-width: 966px) {
     h1 {
-        font-size: 48px;;
+        font-size: 48px;
     }
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0 0 28px 0;
     padding: 0;
 }
@@ -164,6 +165,32 @@ pre > code {
     white-space: pre;
 }
 
+/* Line numbers */
+pre.highlighted {
+    border: none;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+}
+pre.highlighted code {
+    border-radius: 0 3px 3px 0;
+}
+pre.highlighted .pre-numbering {
+    float: left;
+    list-style: none;
+    min-width: 2.5em;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee8d5;
+    text-align: right;
+    color: #9faaa9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -245,55 +272,66 @@ nav {
     line-height: 56px;
 }
 
-nav > ul {
+nav > .nav-content {
+    margin: 0;
+    padding: 0;
+}
+
+nav > .nav-content > ul {
     margin: 0;
     padding: 0;
     list-style: none;
     max-width: 100%;
 }
 
-nav > .left {
+nav > .nav-content > .left {
     float: left;
     margin-left: 3px;
 }
 
-nav > .right {
+nav > .nav-content > .right {
     float: right;
     margin-right: 3px;
 }
 
-nav > ul > li {
-    margin: 0 6px;
+nav > .nav-content > ul > li {
+    margin: 0 10px;
     position: relative;
-    display: inline;
+    float: left;
 }
 
-nav > ul > li > a,
-nav > ul > li > a:visited {
+nav > .nav-content > ul > li > a,
+nav > .nav-content > ul > li > a:visited {
     margin: 0;
-    padding: 0;
+    padding: 0 6px;
     color: inherit;
     fill: inherit;
     opacity: 0.8;
+    display: inline-block;
 }
 
-nav > ul > li > a:focus {
+nav > .nav-content > ul > li > a:focus {
     text-decoration: none;
     color: #08c;
     fill: #08c;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:visited:hover {
+nav > .nav-content > ul > li > a:hover,
+nav > .nav-content > ul > li > a:visited:hover {
     opacity: 1;
 }
 
 nav .logomark {
-    display: inline-block;
+    margin: 0;
+    padding: 0;
     width: 32px;
     height: 32px;
     vertical-align: middle;
     line-height: 32px;
+}
+
+nav > .nav-content > ul > li > .logomark {
+    padding: 0;
 }
 
 nav .logomark .logomark-svg {
@@ -302,6 +340,24 @@ nav .logomark .logomark-svg {
 
 nav .logomark:focus .logomark-svg {
     fill: inherit;
+}
+
+@media only screen and (max-width : 520px) {
+
+    nav.nav {
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content {
+        width: 550px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content > .right {
+        float: left;
+    }
 }
 
 /*********
@@ -405,6 +461,11 @@ footer ul li a:focus {
     }
 }
 
+.column.half {
+    text-align: left;
+    vertical-align: middle;
+}
+
 .column.third p {
     text-align: center;
 }
@@ -421,6 +482,10 @@ footer ul li a:focus {
     padding: 24px;
     max-width: 1200px;
     text-align: center;
+}
+
+.row.docs {
+  max-width: 800px;
 }
 
 .row .row {
@@ -560,6 +625,30 @@ button.suggested-action,
     border-color: #4D9CD1;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.button.flat {
+    display: block;
+    font-weight: bold;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-width: 2px;
+    padding: 7px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light .button.flat {
+    color: #fff;
+    border-color: #fff;
+}
+
+.light .button.flat.active {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
 
 #download {
@@ -734,6 +823,7 @@ input:focus:-ms-input-placeholder {
 
 .linked button,
 .linked .button {
+    display: inline-block;
     border-left-width: 0;
     border-radius: 0;
     margin: 0;
@@ -751,6 +841,15 @@ input:focus:-ms-input-placeholder {
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
+}
+
+.linked button.flat:first-child,
+.linked button.flat:active:first-child,
+.linked button.flat:active:hover:first-child,
+.linked .button.flat:first-child,
+.linked .button.flat:active:first-child,
+.linked .button.flat:active:hover:first-child {
+    border-width: 2px;
 }
 
 .linked button:last-child,
@@ -971,9 +1070,14 @@ body.sliding {
     max-height: 500px;
     overflow: auto;
 }
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .popover .popover-content ul {
         max-height: 300px;
+    }
+}
+@media (max-height: 450px) {
+    .popover .popover-content ul {
+        max-height: 200px;
     }
 }
 .popover .popover-content ul li {
