@@ -26,4 +26,4 @@ See Also:
 1. [Checkboxes That Kill Your Product](http://limi.net/checkboxes-that-kill) by Alex Limi
 2. [Don't Give Your Users Shit Work](http://zachholman.com/posts/shit-work/) by Zach Holman
 
-#### Next Page: [Minimal Documentation](/docs/human-interface-guidelines/minimal-documentation) {.text-right}
+#### Next Page: [Concision](/docs/human-interface-guidelines/concision) {.text-right}
