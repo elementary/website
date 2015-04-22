@@ -18,7 +18,7 @@ If your app is easily categorized or described with a generic name, you should u
 
 You should not include articles (the, a, an) or the words "program," "app," or "application" in your app's generic name.
 
-The generic name should be in [title case](./capitalization#title-case) and may be used around the system to better describe or categorize your app. 
+The generic name should be in [title case](/docs/human-interface-guidelines/capitalization#title-case) and may be used around the system to better describe or categorize your app. 
 
 ## Comment {#comment}
 
@@ -31,7 +31,7 @@ The system utilizes an app's Comment attribute found in the .desktop file to suc
 * Scratch: **Edit text files**
 * Files: **Browse and manage your files**
 
-An app's comment should be in [sentence case](./capitalization), not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the _primary_ use case of the app.
+An app's comment should be in [sentence case](/docs/human-interface-guidelines/capitalization), not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the _primary_ use case of the app.
 
 ## Categories {#categories}
 
@@ -65,7 +65,7 @@ You may also include keywords in your launcher to help users find your app via s
 * System Settings: **Control;Panel**
 * Shotwell: **Camera;Picture**
 
-Keywords should be single words in [title case](./capitalization#title-case) and seperated with a semicolon.
+Keywords should be single words in [title case](/docs/human-interface-guidelines/capitalization#title-case) and seperated with a semicolon.
 
 --------------------------------------
 

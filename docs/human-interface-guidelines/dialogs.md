@@ -1,6 +1,6 @@
 # Dialogs {#dialogs}
 
-![A generic alert dialog](../../images/docs/human-interface-guidelines/dialogs/dialog-padding.png)
+![A generic alert dialog](/images/docs/human-interface-guidelines/dialogs/dialog-padding.png)
 
 ## Alert Text {#alert-text}
 
@@ -14,7 +14,7 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 
 ## Button Order {#button-order}
 
-![](../../images/docs/human-interface-guidelines/dialogs/button-order.png)
+![](/images/docs/human-interface-guidelines/dialogs/button-order.png)
 
 * All dialogs should contain an affirmative button that performs the action suggested in the primary text. This button goes on the far right side of the window.
 * For dialogs that are displayed in response to user action (such as "Quit"), provide a "Cancel" button directly to the left of the affirmative button.

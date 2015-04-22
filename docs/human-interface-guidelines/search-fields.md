@@ -2,7 +2,7 @@
 
 Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar (to the left of the AppMenu). This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.org/#!api=gtk+-3.0/Gtk.SearchEntry).
 
-![](../../images/docs/human-interface-guidelines/search-fields/search-field.png)
+![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
 ## Behavior {#behavior}
 

@@ -4,7 +4,7 @@ A Toolbar is useful for providing users with quick access to an app's most used 
 
 ## Ordering Toolbar Items {#ordering-toolbar-items}
 
-![](../../images/docs/human-interface-guidelines/toolbars/toolbar.png)
+![](/images/docs/human-interface-guidelines/toolbars/toolbar.png)
 
 Toolbar items should be organized with the most significant objects on the left and the least significant on the right, with the AppMenu always on the far right of the Toolbar. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
 

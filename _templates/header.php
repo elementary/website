@@ -77,7 +77,7 @@ begin_html_l10n();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans+Mono">
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
-        
+
         <script>
             (function(d,s,f){g=d.createElement(s),u=d.getElementsByTagName(s)[0],g.async=1,g.src=f,u.parentNode.insertBefore(g,u)})
             (document,'script','https:<?php echo $sitewide['branch_root']; ?>backend/hsts.php')
@@ -89,6 +89,7 @@ begin_html_l10n();
             jQl.boot();
             <?php include __DIR__.'/../scripts/popover.js'; ?>
             <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
+            <?php include __DIR__.'/../scripts/external-links.js'; ?>
         </script>
 
         <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>

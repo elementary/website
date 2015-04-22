@@ -2,7 +2,7 @@
 
 The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
 
-![](../../images/docs/human-interface-guidelines/appmenu/cogcorner.png)
+![](/images/docs/human-interface-guidelines/appmenu/cogcorner.png)
 
 ## Usage {#usage}
 

@@ -13,6 +13,6 @@ Provide non-technical explanations instead of cryptic error messages. If somethi
 
 ------------------------------------------
 
-For more information, see [Writing Style](./writing-style).
+For more information, see [Writing Style](/docs/human-interface-guidelines/writing-style).
 
 #### Next Page: [User Workflow](/docs/human-interface-guidelines/user-workflow) {.text-right}

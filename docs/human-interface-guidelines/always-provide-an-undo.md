@@ -2,7 +2,7 @@
 
 Sometimes a user will perform an action which could possibly be destructive or traditionally irreversible. Rather than present the user with a warning, apps should allow the user to undo the action for an appropriate amount of time. Some prime examples of when this behavior is useful are:
 
-* **Closing an app**. Rather than warning the user, automatically save their work and the app's state so they can return exactly where they left off. See [Closing](./closing).
+* **Closing an app**. Rather than warning the user, automatically save their work and the app's state so they can return exactly where they left off. See [Closing](/docs/human-interface-guidelines/closing).
 
 * **Deleting an item**. Instead of asking the user if they are sure, make the item "disappear" from the app, but provide an easy and intuitive way to undo the delete.
 

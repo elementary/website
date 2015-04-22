@@ -18,7 +18,7 @@ Ask yourself if the configuration option you are adding is really necessary or m
 
 Keep things contextual. Instead of tucking away preferences in a configuration dialog, think about displaying them in context with the objects they affect (much like how shuffle and repeat options appear near your music library).
 
-If your app needs to be configured before it can be used (like a mail client), present this configuration inside the main window much like a [Welcome Screen](./welcome-screen). Once again, make sure this is really necessary set-up. Adding unnecessary configuration screens stops users from doing what they wanted to do when they opened your app in the first place.
+If your app needs to be configured before it can be used (like a mail client), present this configuration inside the main window much like a [Welcome Screen](/docs/human-interface-guidelines/welcome-screen). Once again, make sure this is really necessary set-up. Adding unnecessary configuration screens stops users from doing what they wanted to do when they opened your app in the first place.
 
 ---------------------------
 See Also:
