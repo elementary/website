@@ -76,6 +76,7 @@
     padding: 12px;
     display: inline-block;
     margin-right: 24px;
+    pointer-events: none;
 }
 
 .slingshot-arrow {
@@ -109,7 +110,6 @@
 .slingshot .linked {
     margin: 0;
     display: inline-block;
-    pointer-events: none;
 }
 
 .slingshot .button,
