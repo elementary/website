@@ -32,8 +32,8 @@ function list_langs() {
         'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
-        'zh_CN' => '國語',
-        'zh_TW' => '台湾',
+        'zh_CN' => '简体中文',
+        'zh_TW' => '繁體中文',
     );
 }
 
@@ -45,7 +45,7 @@ function is_lang($lang) {
     if (!is_string($lang)) {
         return false;
     }
-    if (!preg_match('#^[a-z]{2}(_[A-Z]{2})?$#', $lang)) {
+    if (!preg_match('#^[a-z]{2}(_([A-Z]{2}|[A-Z][a-z]+))?$#', $lang)) {
         return false;
     }
     if ($lang == 'en') {
@@ -235,11 +235,14 @@ function translate_html($input, $translate = 'translate') {
                             break;
                         }
                     }
-                    if ($j < strlen($attrs)) { // Broke inside the loop, append the remaining chars
+                    if ($j < strlen($attrs)) {
+                        // Broke inside the loop, append the remaining chars
                         $tag .= substr($attrs, $j);
                     }
                 }
-            } else { // No attributes in this tag
+            } elseif (rtrim($tag, '/ ') != 'br') {
+                // No attributes in this tag
+                // Set current tag, if not a line break
                 $tagName = $tag;
             }
 
