@@ -1,4 +1,6 @@
 <?php
+echo 'l10n included<br>';
+
 function list_langs() {
     return array(
         'en' => 'English',
@@ -350,19 +352,19 @@ function get_page_lang() {
 
 $lang = 'en';
 function init_l10n() {
-    global $page, $lang;
+    global $page, $lang, $sitewide;
 
     $lang = $page['lang'];
 
     if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
-        && $_GET['lang'] != $page['lang'] 
+        && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $page['lang'] 
         && $page['lang'] != 'en') {
 
         $url = $sitewide['root'];
         $url .= $page['lang'].$page['path'];
         $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
-        header('Location: '.$url);
-        exit();
+        //header('Location: '.$url);
+        exit('Location: '.$url);
     }
 
     if (isset($_GET['lang'])) {

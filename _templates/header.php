@@ -1,4 +1,5 @@
 <?php
+echo 'header included<br>';
 include_once __DIR__.'/l10n.php';
 
 $page['lang'] = get_page_lang();

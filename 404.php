@@ -1,4 +1,5 @@
 <?php
+echo '404 included<br>';
     include '_templates/sitewide.php';
     $page['name'] = '404';
     $page['title'] = 'Page Not Found &sdot; elementary';
