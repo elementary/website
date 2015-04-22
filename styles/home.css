@@ -86,7 +86,7 @@
     top: -489px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 785px) {
     #slingshot {
         display: none;
     }
