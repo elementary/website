@@ -16,4 +16,4 @@ It's often very tempting to continue adding more and more features into your app
 
 Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through [Contractor](/docs/human-interface-guidelines/contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
-#### Next Page: [Minimal Documentation](/docs/human-interface-guidelines/minimal-documentation) {.text-right}
+#### Next Page: [Avoid Configuration](/docs/human-interface-guidelines/avoid-configuration) {.text-right}
