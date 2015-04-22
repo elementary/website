@@ -12,6 +12,6 @@ To help you achieve these goals, these guidelines will cover basic interface ele
 
 However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed. 
 
-For sections that have not yet been written, please refer to [The GNOME HIG](https://wiki.gnome.org/Design/HIG/)
+For sections that have not yet been written, please refer to [The GNOME HIG](https://wiki.gnome.org/Design/HIG/).
 
 #### Next Page: [Design Philosophy](/docs/human-interface-guidelines/design-philosophy) {.text-right}
