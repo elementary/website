@@ -484,6 +484,10 @@ footer ul li a:focus {
     text-align: center;
 }
 
+.row.docs {
+  max-width: 800px;
+}
+
 .row .row {
     padding: 24px 0;
 }
