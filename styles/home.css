@@ -82,7 +82,7 @@
     display: inline-block;
     position: relative;
     left: 45px;
-    top: -29px;
+    top: -489px;
 }
 
 @media (max-width: 1350px) {
@@ -125,7 +125,7 @@
 }
 
 .slingshot .entry {
-    width: 581px;
+    width: 579px;
     display: inline-block;
     background-image: linear-gradient(to bottom,
                                   #f0f0f0,
@@ -143,7 +143,7 @@
     fill: #a6a6a6;
     color: #333;
     text-shadow: 0 1px rgba(255,255,255,0.4);
-    margin-left: 6px;
+    margin-left: 8px;
 
     transition: all 200ms ease-out;
 }
@@ -151,6 +151,33 @@
 .slingshot img {
     width: 64px;
     height: 64px;
+}
+
+#slingshot-grid .app {
+    display: inline-block;
+    width: 127px;
+    height: 116px;
+    margin-top: 27px;
+    vertical-align: top;
+}
+
+#slingshot-grid .app p {
+    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
+    font-size: 9pt;
+    text-align: center;
+    margin-top: 6px;
+}
+
+#slingshot-pager {
+    margin-top: 9px;
+}
+
+#slingshot-pager .button {
+    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
+    font-size: 9pt;
+    margin: 0;
+    height: 23px;
+    line-height: 16px;
 }
 
 .vertical-top {
