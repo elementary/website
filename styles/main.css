@@ -11,6 +11,7 @@ body {
     fill: #333;
     margin: 0;
     font-weight: 400;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -50,7 +51,7 @@ h1 {
 
 h2 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0 0 28px 0;
     padding: 0;
 }
@@ -271,55 +272,66 @@ nav {
     line-height: 56px;
 }
 
-nav > ul {
+nav > .nav-content {
+    margin: 0;
+    padding: 0;
+}
+
+nav > .nav-content > ul {
     margin: 0;
     padding: 0;
     list-style: none;
     max-width: 100%;
 }
 
-nav > .left {
+nav > .nav-content > .left {
     float: left;
     margin-left: 3px;
 }
 
-nav > .right {
+nav > .nav-content > .right {
     float: right;
     margin-right: 3px;
 }
 
-nav > ul > li {
-    margin: 0 6px;
+nav > .nav-content > ul > li {
+    margin: 0 10px;
     position: relative;
-    display: inline;
+    float: left;
 }
 
-nav > ul > li > a,
-nav > ul > li > a:visited {
+nav > .nav-content > ul > li > a,
+nav > .nav-content > ul > li > a:visited {
     margin: 0;
-    padding: 0;
+    padding: 0 6px;
     color: inherit;
     fill: inherit;
     opacity: 0.8;
+    display: inline-block;
 }
 
-nav > ul > li > a:focus {
+nav > .nav-content > ul > li > a:focus {
     text-decoration: none;
     color: #08c;
     fill: #08c;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:visited:hover {
+nav > .nav-content > ul > li > a:hover,
+nav > .nav-content > ul > li > a:visited:hover {
     opacity: 1;
 }
 
 nav .logomark {
-    display: inline-block;
+    margin: 0;
+    padding: 0;
     width: 32px;
     height: 32px;
     vertical-align: middle;
     line-height: 32px;
+}
+
+nav > .nav-content > ul > li > .logomark {
+    padding: 0;
 }
 
 nav .logomark .logomark-svg {
@@ -328,6 +340,24 @@ nav .logomark .logomark-svg {
 
 nav .logomark:focus .logomark-svg {
     fill: inherit;
+}
+
+@media only screen and (max-width : 520px) {
+
+    nav.nav {
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content {
+        width: 550px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content > .right {
+        float: left;
+    }
 }
 
 /*********
@@ -452,6 +482,10 @@ footer ul li a:focus {
     padding: 24px;
     max-width: 1200px;
     text-align: center;
+}
+
+.row.docs {
+  max-width: 800px;
 }
 
 .row .row {
@@ -1036,9 +1070,14 @@ body.sliding {
     max-height: 500px;
     overflow: auto;
 }
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .popover .popover-content ul {
         max-height: 300px;
+    }
+}
+@media (max-height: 450px) {
+    .popover .popover-content ul {
+        max-height: 200px;
     }
 }
 .popover .popover-content ul li {
@@ -1072,6 +1111,34 @@ body.sliding {
     display: block;
     margin: 0 auto;
 }
+
+.docs-index > ul {
+    width: 214px;
+    float: left;
+    position: relative;
+    margin: 5px 0 0;
+    padding: 10px 0;
+    background: #F5F5F5;
+    border: solid 1px #C8C8C8;
+    border-radius: 5px;
+    list-style-type: none;
+    font-size: 13px;
+}
+    .docs-index ul li {
+        padding: 0 0 0 15px;
+    }
+
+    .docs-index ul ul li {
+        list-style-type: none;
+    } 
+
+    .docs-index > ul a {
+        color: #4d4d4d;
+    }
+
+    .docs-index > ul a:hover {
+        text-decoration: underline;
+    }
 
 .breadcrumbs {
     padding-top: 0;
