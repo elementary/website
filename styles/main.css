@@ -1104,10 +1104,50 @@ body.sliding {
     width: 50px;
 }
 
-/*****************
-* Browsers icons *
-*****************/
+/*******
+* Docs *
+********/
 .docs img {
     display: block;
     margin: 0 auto;
+}
+
+.docs-index > ul {
+    width: 214px;
+    float: left;
+    position: relative;
+    margin: 5px 0 0;
+    padding: 10px 0;
+    background: #F5F5F5;
+    border: solid 1px #C8C8C8;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #D6D6D6 inset;
+    list-style-type: none;
+    font-size: 13px;
+}
+    .docs-index ul li {
+        padding: 0 0 0 15px;
+    }
+
+    .docs-index ul ul li {
+        list-style-type: none;
+    } 
+
+    .docs-index > ul a {
+        color: #4d4d4d;
+    }
+
+    .docs-index > ul a:hover {
+        text-decoration: underline;
+    }
+
+.breadcrumbs {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.breadcrumbs p {
+    opacity: 0.7;
+}
+.breadcrumbs a {
+    color: inherit;
 }
