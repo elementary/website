@@ -1,0 +1,134 @@
+﻿/* Copyright 2015 elementary LLC.
+*
+* This file is part of elementary.io
+*/
+
+h2,
+h3,
+h4 {
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+img.float-left {
+    margin-right: 24px;
+}
+
+kbd {
+    color: #4D4D4D;
+    background-color: #E9E9E9;
+    background-image: linear-gradient(to bottom, #E9E9E9, #FFF);
+    border: 1px solid #A5A5A5;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #FFF,
+                inset 0 -2px 0 0 #D9D9D9;
+    font-family: monospace;
+    padding: 2px 4px;
+    -moz-user-select: none;
+    margin: 3px;
+}
+
+code,
+pre,
+kbd {
+    font-family: 'Droid Sans Mono';
+    text-align: justify;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-size: 90%;
+}
+
+kbd {
+    text-align: center;
+    min-width: 22px;
+    display: inline-block;
+}
+
+code {
+    color: #3A416F;
+    background-color: #F1F2F7;
+}
+
+pre {
+    padding: 8px;
+    overflow: auto;
+}
+
+pre > code {
+    border: none;
+    padding: 0;
+    white-space: pre;
+}
+
+/* Line numbers */
+pre.highlighted {
+    border: none;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+}
+
+pre.highlighted code {
+    border-radius: 0 3px 3px 0;
+    line-height: 1.5em;
+}
+
+pre.highlighted .pre-numbering {
+    float: left;
+    list-style: none;
+    min-width: 2.5em;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee8d5;
+    text-align: right;
+    color: #9faaa9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 90%;
+    line-height: 1.5em;
+}
+
+p+p {
+    margin-top: 2em;
+}
+
+nav {
+    background-color: #3A416F;
+    color: #fff;
+    fill: #fff;
+}
+
+.row.docs {
+    max-width: 800px;
+}
+
+.row.docs-index {
+    margin: 0;
+    padding: 0;
+}
+
+.row.docs-index ul {
+    list-style: none;
+}
+
+.row.docs-index a {
+    color: inherit;
+    font-size: 14px;
+}
+
+.row.docs-index a:hover {
+    color: #3A416F;
+    border-left: 1px solid #3A416F;
+}
+
+
