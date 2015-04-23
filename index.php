@@ -164,11 +164,11 @@
                                     <img src="images/icons/office-calendar.svg" />
                                     <p>Calendar</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-three">
                                     <img src="images/icons/accessories-camera.svg" />
                                     <p>Camera</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-four">
                                     <img src="images/icons/postscript-viewer.svg" />
                                     <p>Document Viewer</p>
                                 </div>
@@ -184,31 +184,31 @@
                                     <img src="images/icons/internet-mail.svg" />
                                     <p>Geary Mail</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-three">
                                     <img src="images/icons/midori.svg" />
                                     <p>Midori</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-four">
                                     <img src="images/icons/multitasking-view.svg" />
                                     <p>Multitasking View</p>
                                 </div>
-                                <div class="app">
+                                <div class="app row-two">
                                     <img src="images/icons/multimedia-audio-player.svg" />
                                     <p>Music</p>
                                 </div>
-                                <div class="app">
+                                <div class="app row-two">
                                     <img src="images/icons/multimedia-photo-manager.svg" />
                                     <p>Photos</p>
                                 </div>
-                                <div class="app">
+                                <div class="app row-two">
                                     <img src="images/icons/accessories-text-editor.svg" />
                                     <p>Scratch</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-three row-two">
                                     <img src="images/icons/applets-screenshooter.svg" />
                                     <p>Screenshot</p>
                                 </div>
-                                <div class="app">
+                                <div class="app column-four row-two">
                                     <img src="images/icons/scanner.svg" />
                                     <p>Simple Scan</p>
                                 </div>

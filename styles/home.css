@@ -77,6 +77,8 @@
     display: inline-block;
     margin-right: 24px;
     pointer-events: none;
+
+    transition: all 200ms ease-out;
 }
 
 .slingshot-arrow {
@@ -84,12 +86,6 @@
     position: relative;
     left: 45px;
     top: -489px;
-}
-
-@media (max-width: 785px) {
-    #slingshot {
-        display: none;
-    }
 }
 
 #slingshot .column:nth-child(2) .symbolic-icon {
@@ -178,6 +174,46 @@
     margin: 0;
     height: 23px;
     line-height: 16px;
+}
+
+@media (max-width: 1345px) {
+    .slingshot {
+        width: 551px;
+    }
+
+    .slingshot .entry {
+        width: 452px;
+    }
+
+    #slingshot-grid .column-four {
+        display: none;
+    }
+}
+
+@media (max-width: 1218px) {
+    .slingshot {
+        width: 424px;
+        height: 369px;
+    }
+
+    .slingshot .entry {
+        width: 325px;
+    }
+
+    #slingshot-grid .column-three,
+    #slingshot-grid .row-two {
+        display: none;
+    }
+
+    .slingshot-arrow {
+          top: -346px;
+    }
+}
+
+@media (max-width: 581px) {
+    #slingshot {
+        display: none;
+    }
 }
 
 .vertical-top {
