@@ -1,28 +1,28 @@
 {
     "grid": [
-		{"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
-		{"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
-		{"icon":"office-calendar","title":"Calendar","position":"first-row"},
-		{"icon":"accessories-camera","title":"Camera","position":"first-row"},
-		{"icon":"postscript-viewer","title":"Document Viewer","position":"first-row"},
-		{"icon":"system-file-manager","title":"Files","position":"first-row"},
-		{"icon":"preferences-desktop-font","title":"Font Viewer","position":"middle-row"},
-		{"icon":"internet-mail","title":"Geary Mail","position":"middle-row"},
-		{"icon":"midori","title":"Midori","position":"middle-row"},
-		{"icon":"multitasking-view","title":"Multitasking View","position":"middle-row"},
-		{"icon":"multimedia-audio-player","title":"Music","position":"middle-row"},
-		{"icon":"multimedia-photo-manager","title":"Photos","position":"last-row"},
-		{"icon":"accessories-text-editor","title":"Scratch","position":"last-row"},
-		{"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
-		{"icon":"scanner","title":"Simple Scan","position":"last-row"}
-	]
+        {"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
+        {"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
+        {"icon":"office-calendar","title":"Calendar","position":"first-row"},
+        {"icon":"accessories-camera","title":"Camera","position":"first-row"},
+        {"icon":"postscript-viewer","title":"Document Viewer","position":"first-row"},
+        {"icon":"system-file-manager","title":"Files","position":"first-row"},
+        {"icon":"preferences-desktop-font","title":"Font Viewer","position":"middle-row"},
+        {"icon":"internet-mail","title":"Geary Mail","position":"middle-row"},
+        {"icon":"midori","title":"Midori","position":"middle-row"},
+        {"icon":"multitasking-view","title":"Multitasking View","position":"middle-row"},
+        {"icon":"multimedia-audio-player","title":"Music","position":"middle-row"},
+        {"icon":"multimedia-photo-manager","title":"Photos","position":"last-row"},
+        {"icon":"accessories-text-editor","title":"Scratch","position":"last-row"},
+        {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
+        {"icon":"scanner","title":"Simple Scan","position":"last-row"}
+    ]
 ,
     "categories": [
-		{"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
-		{"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
-		{"icon":"preferences-desktop-font","title":"Font Viewer","position":"first-row"},
-		{"icon":"accessories-text-editor","title":"Scratch","position":"first-row"},
-		{"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
-		{"icon":"utilities-terminal","title":"Terminal","position":"last-row"}
-	]
+        {"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
+        {"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
+        {"icon":"preferences-desktop-font","title":"Font Viewer","position":"first-row"},
+        {"icon":"accessories-text-editor","title":"Scratch","position":"first-row"},
+        {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
+        {"icon":"utilities-terminal","title":"Terminal","position":"last-row"}
+    ]
 }
