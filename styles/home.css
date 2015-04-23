@@ -95,16 +95,6 @@
     margin: 4px 6px 4px -24px;
 }
 
-#slingshot-grid,
-#slingshot-categories {
-    display: none;
-}
-
-#slingshot-grid.active,
-#slingshot-categories.active {
-    display: block;
-}
-
 .entry .symbolic {
     opacity: 0.4;
     fill: #333;
@@ -158,6 +148,33 @@
 .slingshot img {
     width: 64px;
     height: 64px;
+}
+
+.slingshot {
+    overflow: hidden;
+}
+
+#slingshot-grid,
+#slingshot-categories {
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    display: inline-block;
+}
+
+#slingshot-grid {
+    margin-left: -658px;
+}
+
+#slingshot-grid.active {
+    margin-left: 0;
+}
+
+#slingshot-categories {
+    margin-left: 105%;
+}
+
+#slingshot-categories.active {
+    margin-left: 0;
 }
 
 #slingshot-grid .app,
