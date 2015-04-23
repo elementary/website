@@ -1121,7 +1121,6 @@ body.sliding {
     background: #F5F5F5;
     border: solid 1px #C8C8C8;
     border-radius: 5px;
-    box-shadow: 0 0 6px #D6D6D6 inset;
     list-style-type: none;
     font-size: 13px;
 }
