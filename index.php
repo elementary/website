@@ -150,7 +150,7 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <!-- <script type="text/javascript">
+                        <script type="text/javascript">
                             $(function() {
                                 $.getJSON('data/slingshot.json', function(data) {
                                     $.each(data.grid, function(i, f) {
@@ -158,18 +158,6 @@
                                         $(griditems).appendTo(".slingshot-grid");
                                     });
                                 });
-                            });
-                        </script>
-                        <div id="slingshot-grid">
-                            <div class="slingshot-grid">
-                            </div>
-                            <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
-                            </div>
-                        </div> -->
-                        <script type="text/javascript">
-                            $(function() {
                                 $.getJSON('data/slingshot.json', function(data) {
                                     $.each(data.categories, function(i, f) {
                                         var categoriesitems = '<div class="app"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
@@ -178,6 +166,14 @@
                                 });
                             });
                         </script>
+                        <!-- <div id="slingshot-grid">
+                            <div class="slingshot-grid">
+                            </div>
+                            <div id="slingshot-pager">
+                                <div class="button active">1</div>
+                                <div class="button">2</div>
+                            </div>
+                        </div> -->
                         <div id="slingshot-categories">
                             <ul class="categories-list">
                                 <li class="active">Accessories</li>

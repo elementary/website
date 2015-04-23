@@ -252,12 +252,17 @@ ul.categories-list li.active {
     .slingshot-arrow {
           top: -346px;
     }
+
+    ul.categories-list {
+        height: 313px;
+    }
 }
 
 @media (max-width: 581px) {
     #slingshot {
         display: none;
     }
+}
 
 .vertical-top {
     vertical-align: top;
