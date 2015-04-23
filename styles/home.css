@@ -95,6 +95,16 @@
     margin: 4px 6px 4px -24px;
 }
 
+#slingshot-grid,
+#slingshot-categories {
+    display: none;
+}
+
+#slingshot-grid.active,
+#slingshot-categories.active {
+    display: initial;
+}
+
 .entry .symbolic {
     opacity: 0.4;
     fill: #333;

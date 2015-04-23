@@ -140,24 +140,24 @@
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
-                            <div class="button">
+                            <div class="button active">
                                 <?php include('images/icons/view-grid-symbolic.svg'); ?>
                             </div>
-                            <div class="button active">
+                            <div class="button">
                                 <?php include('images/icons/view-filter-symbolic.svg'); ?>
                             </div>
                         </div>
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <!-- <div id="slingshot-grid">
+                        <div id="slingshot-grid" class="active">
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
                                 <div class="button active">1</div>
                                 <div class="button">2</div>
                             </div>
-                        </div> -->
+                        </div>
                         <div id="slingshot-categories">
                             <ul class="categories-list">
                                 <li class="active">Accessories</li>
