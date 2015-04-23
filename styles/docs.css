@@ -102,7 +102,8 @@ p + p {
     margin-top: 2em;
 }
 
-p + h1 {
+p + h1,
+pre + h1 {
     margin-top: 128px;
 }
 
