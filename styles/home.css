@@ -152,6 +152,7 @@
 
 #slingshot-grid .app,
 #slingshot-categories .app {
+    float: left;
     display: inline-block;
     width: 130px;
     height: 116px;
@@ -172,6 +173,9 @@
 }
 
 #slingshot-pager {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
     margin-top: 9px;
 }
 
@@ -219,6 +223,9 @@ ul.categories-list li.active {
                 inset 0 -1px 0 0 rgba(0,0,0,0.05);
 }
 
+.vertical-top {
+    vertical-align: top;
+}
 
 @media (max-width: 1345px) {
     .slingshot {
@@ -229,7 +236,7 @@ ul.categories-list li.active {
         width: 452px;
     }
 
-    #slingshot-grid .column-four {
+    #slingshot-grid .last-row {
         display: none;
     }
 }
@@ -244,8 +251,8 @@ ul.categories-list li.active {
         width: 325px;
     }
 
-    #slingshot-grid .column-three,
-    #slingshot-grid .row-two {
+    #slingshot-categories .last-row,
+    #slingshot-grid .middle-row {
         display: none;
     }
 
@@ -262,8 +269,4 @@ ul.categories-list li.active {
     #slingshot {
         display: none;
     }
-}
-
-.vertical-top {
-    vertical-align: top;
 }
