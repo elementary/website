@@ -150,20 +150,6 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <script type="text/javascript">
-                            $(function() {
-                                $.getJSON('data/slingshot.json', function(data) {
-                                    $.each(data.grid, function(i, f) {
-                                        var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
-                                        $(griditems).appendTo(".slingshot-grid");
-                                    });
-                                    $.each(data.categories, function(i, f) {
-                                        var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
-                                        $(categoriesitems).appendTo(".slingshot-categories");
-                                    });
-                                });
-                            });
-                        </script>
                         <!-- <div id="slingshot-grid">
                             <div class="slingshot-grid">
                             </div>
