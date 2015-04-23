@@ -185,7 +185,6 @@
                                 <li>Internet</li>
                                 <li>Office</li>
                                 <li>Other</li>
-                                <li>Programming</li>
                                 <li>Sound &amp; Video</li>
                                 <li>System Tools</li>
                             </ul>
