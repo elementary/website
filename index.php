@@ -7,6 +7,7 @@
     include $template['header'];
 ?>
             <script src="scripts/slider.js"></script>
+            <script>var stripe_key = "<?php include __DIR__.'/backend/payment.php'; ?>";</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
@@ -53,17 +54,18 @@
                 <p class="small-label">893 MB (for PC or Mac)</p>
             </div>
             <div class="row">
+                <h4 id="the-press">What the press is saying about elementary OS:</h4>
                 <div class="column third">
                     <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" data-l10n-off alt="WIRED" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; —@WIRED elementary.io" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; —@WIRED http://elementary.io" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
                 </div>
                 <div class="column third">
                     <a href="http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" data-l10n-off alt="Mac|Life" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife elementary.io" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
                 </div>
                 <div class="column third">
                     <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" data-l10n-off alt="Lifehacker" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
             <div id="carousel" class="slide-container slide-fixed-height light">
@@ -131,6 +133,20 @@
                             <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column third">
+                    <h2>Open Source</h2>
+                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved.php#desktop-development">Learn More</a></p>
+                </div>
+                <div class="column third">
+                    <h2>No Ads. No Spying.</h2>
+                    <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
+                </div>
+                <div class="column third">
+                    <h2>Safe &amp; Secure</h2>
+                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
                 </div>
             </div>
             <div id="download-modal" class="modal">

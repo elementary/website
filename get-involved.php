@@ -44,6 +44,7 @@
                     <a class="button flat" href="#web-development">Web Development</a>
                     <a class="button flat" href="#design">Design</a>
                     <a class="button flat" href="#desktop-development">Desktop Development</a>
+                    <a class="button flat" href="#funding">Funding</a>
                 </div>
             </section>
 
@@ -116,7 +117,7 @@
                         </p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                            <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                             <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
                             <a class="button flat" href="http://blog.elementary.io/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
                         </div>
@@ -148,6 +149,41 @@
                     </div>
                     <div class="column half">
                         <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
+                    </div>
+                </div>
+            </section>
+
+            <section id="funding" class="light">
+                <div class="heading">
+                    <div class="row">
+                        <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar http://elementary.io/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
+                        <p class="small-label"><a href="http://www.amazon.com/What-Love-Money-Will-Follow/dp/0440501601" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column half">
+                        <h2>Targeted Funding</h2>
+                        <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
+
+                        <div class="actions">
+                            <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary" target="_blank">BountySource</a>
+                        </div>
+                    </div>
+                    <div class="column half">
+                        <h2>General Funding</h2>
+                        <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
+                        <p>PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.</p>
+
+                        <div class="actions">
+                            <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
+                            <input type="submit" style="width: 100%;" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
