@@ -137,85 +137,59 @@
             </div>
             <div id="slingshot" class="row">
                 <div class="column vertical-top">
-                    <div class="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
-                            <div class="button active">
+                            <div class="button">
                                 <?php include('images/icons/view-grid-symbolic.svg'); ?>
                             </div>
-                            <div class="button">
+                            <div class="button active">
                                 <?php include('images/icons/view-filter-symbolic.svg'); ?>
                             </div>
                         </div>
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
+                        <!-- <script type="text/javascript">
+                            $(function() {
+                                $.getJSON('data/slingshot.json', function(data) {
+                                    $.each(data.grid, function(i, f) {
+                                        var griditems = '<div class="app"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                                        $(griditems).appendTo(".slingshot-grid");
+                                    });
+                                });
+                            });
+                        </script>
                         <div id="slingshot-grid">
-                            <div>
-                                <div class="app">
-                                    <img src="images/icons/archive-manager.svg" />
-                                    <p>Archive Manager</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/accessories-calculator.svg" />
-                                    <p>Calculator</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/office-calendar.svg" />
-                                    <p>Calendar</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/accessories-camera.svg" />
-                                    <p>Camera</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/postscript-viewer.svg" />
-                                    <p>Document Viewer</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/system-file-manager.svg" />
-                                    <p>Files</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/preferences-desktop-font.svg" />
-                                    <p>Font Viewer</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/internet-mail.svg" />
-                                    <p>Geary Mail</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/midori.svg" />
-                                    <p>Midori</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/multitasking-view.svg" />
-                                    <p>Multitasking View</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/multimedia-audio-player.svg" />
-                                    <p>Music</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/multimedia-photo-manager.svg" />
-                                    <p>Photos</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/accessories-text-editor.svg" />
-                                    <p>Scratch</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/applets-screenshooter.svg" />
-                                    <p>Screenshot</p>
-                                </div>
-                                <div class="app">
-                                    <img src="images/icons/scanner.svg" />
-                                    <p>Simple Scan</p>
-                                </div>
-                                <div id="slingshot-pager">
-                                    <div class="button active">1</div>
-                                    <div class="button">2</div>
-                                </div>
+                            <div class="slingshot-grid">
+                            </div>
+                            <div id="slingshot-pager">
+                                <div class="button active">1</div>
+                                <div class="button">2</div>
+                            </div>
+                        </div> -->
+                        <script type="text/javascript">
+                            $(function() {
+                                $.getJSON('data/slingshot.json', function(data) {
+                                    $.each(data.categories, function(i, f) {
+                                        var categoriesitems = '<div class="app"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                                        $(categoriesitems).appendTo(".slingshot-categories");
+                                    });
+                                });
+                            });
+                        </script>
+                        <div id="slingshot-categories">
+                            <ul class="categories-list">
+                                <li class="active">Accessories</li>
+                                <li>Graphics</li>
+                                <li>Internet</li>
+                                <li>Office</li>
+                                <li>Other</li>
+                                <li>Programming</li>
+                                <li>Sound &amp; Video</li>
+                                <li>System Tools</li>
+                            </ul>
+                            <div class="slingshot-categories">
                             </div>
                         </div>
                     </div>

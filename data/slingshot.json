@@ -1,0 +1,28 @@
+{
+    "grid": [
+		{"icon":"archive-manager","title":"Archive Manager"},
+		{"icon":"accessories-calculator","title":"Calculator"},
+		{"icon":"office-calendar","title":"Calendar"},
+		{"icon":"accessories-camera","title":"Camera"},
+		{"icon":"postscript-viewer","title":"Document Viewer"},
+		{"icon":"system-file-manager","title":"Files"},
+		{"icon":"preferences-desktop-font","title":"Font Viewer"},
+		{"icon":"internet-mail","title":"Geary Mail"},
+		{"icon":"midori","title":"Midori"},
+		{"icon":"multitasking-view","title":"Multitasking View"},
+		{"icon":"multimedia-audio-player","title":"Music"},
+		{"icon":"multimedia-photo-manager","title":"Photos"},
+		{"icon":"accessories-text-editor","title":"Scratch"},
+		{"icon":"applets-screenshooter","title":"Screenshot"},
+		{"icon":"scanner","title":"Simple Scan"}
+	]
+,
+    "categories": [
+		{"icon":"archive-manager","title":"Archive Manager"},
+		{"icon":"accessories-calculator","title":"Calculator"},
+		{"icon":"preferences-desktop-font","title":"Font Viewer"},
+		{"icon":"accessories-text-editor","title":"Scratch"},
+		{"icon":"applets-screenshooter","title":"Screenshot"},
+		{"icon":"utilities-terminal","title":"Terminal"}
+	]
+}
