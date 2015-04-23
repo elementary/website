@@ -77,6 +77,8 @@
     display: inline-block;
     margin-right: 24px;
     pointer-events: none;
+
+    transition: all 200ms ease-out;
 }
 
 #slingshot-arrow {
@@ -85,12 +87,6 @@
     top: 5px;
     width: 30px;
     height: 20px;
-}
-
-@media (max-width: 785px) {
-    #slingshot {
-        display: none;
-    }
 }
 
 #slingshot .column:nth-child(2) .symbolic-icon {
@@ -187,6 +183,7 @@
     line-height: 16px;
 }
 
+<<<<<<< HEAD
 ul.categories-list {
     display: block;
     height: 456px;
@@ -221,6 +218,46 @@ ul.categories-list li.active {
                 inset 0 1px 0 0 rgba(0,0,0,0.05),
                 inset 0 2px 0 0 rgba(0,0,0,0.05),
                 inset 0 -1px 0 0 rgba(0,0,0,0.05);
+=======
+@media (max-width: 1345px) {
+    .slingshot {
+        width: 551px;
+    }
+
+    .slingshot .entry {
+        width: 452px;
+    }
+
+    #slingshot-grid .column-four {
+        display: none;
+    }
+}
+
+@media (max-width: 1218px) {
+    .slingshot {
+        width: 424px;
+        height: 369px;
+    }
+
+    .slingshot .entry {
+        width: 325px;
+    }
+
+    #slingshot-grid .column-three,
+    #slingshot-grid .row-two {
+        display: none;
+    }
+
+    .slingshot-arrow {
+          top: -346px;
+    }
+}
+
+@media (max-width: 581px) {
+    #slingshot {
+        display: none;
+    }
+>>>>>>> 47d8000421644fb3768270ea4a9524e94f4cc4c7
 }
 
 .vertical-top {
