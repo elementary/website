@@ -37,12 +37,14 @@ code,
 pre,
 kbd {
     font-family: 'Droid Sans Mono';
-    text-align: justify;
+    text-align: center;
     border: 1px solid lightgrey;
     border-radius: 3px;
     padding: 2px 4px;
     white-space: nowrap;
     font-size: 90%;
+    min-width: 22px;
+    display: inline-block;
 }
 
 code {
