@@ -102,7 +102,7 @@
 
 #slingshot-grid.active,
 #slingshot-categories.active {
-    display: initial;
+    display: block;
 }
 
 .entry .symbolic {

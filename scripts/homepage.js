@@ -150,5 +150,21 @@
         });
     });
 
+    $(function() {
+        window.setInterval(function () {
+            var grid = $("#slingshot-grid");
+            var categories = $("#slingshot-categories");
+            if (grid.hasClass ("active")) {
+                grid.removeClass ("active");
+                categories.addClass ("active");
+                console.log("category");
+            } else {
+                grid.addClass ("active");
+                categories.removeClass ("active");
+                console.log("grid");
+            }
+        }, 3000);
+    });
+
     console.log('Loaded homepage.js');
 })();
