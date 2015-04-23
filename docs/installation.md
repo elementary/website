@@ -1,7 +1,7 @@
 # Installation {#installation}
 
 <div class="clear row" markdown="1">
-<div class="column half" markdown="1">
+<div markdown="1">
 
 ### Download elementary OS {#download-elementary-os}
 
@@ -13,7 +13,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 * If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).
 
 </div>
-<div class="column half" markdown="1">
+<div markdown="1">
 
 ### Recommended System Specifications {#recommended-system-specifications}
 
@@ -71,7 +71,7 @@ Click "Start", then just wait for the process to finish.
 
 ### OS X, Ubuntu, and others
 
-![UNetbootin](images/docs/installation/unetbootin.png){.float-left}
+![UNetbootin](images/docs/installation/unetbootin.png)
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
