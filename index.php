@@ -140,10 +140,10 @@
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
-                            <div class="button active">
+                            <div id="slingshot-grid-button" class="button active">
                                 <?php include('images/icons/view-grid-symbolic.svg'); ?>
                             </div>
-                            <div class="button">
+                            <div id="slingshot-categories-button" class="button">
                                 <?php include('images/icons/view-filter-symbolic.svg'); ?>
                             </div>
                         </div>
