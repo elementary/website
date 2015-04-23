@@ -157,8 +157,6 @@
                                         var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
                                         $(griditems).appendTo(".slingshot-grid");
                                     });
-                                });
-                                $.getJSON('data/slingshot.json', function(data) {
                                     $.each(data.categories, function(i, f) {
                                         var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
                                         $(categoriesitems).appendTo(".slingshot-categories");

@@ -195,6 +195,8 @@ ul.categories-list {
     margin-left: -12px;
     list-style: none;
     border-right: 1px solid #A7A7A7;
+    
+    transition: all 200ms ease-out;
 }
 
 .slingshot-categories {
