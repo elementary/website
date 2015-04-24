@@ -111,6 +111,8 @@ nav {
     background-color: #3A416F;
     color: #fff;
     fill: #fff;
+    position: relative;
+    z-index: 100;
 }
 
 .row.docs {
@@ -131,15 +133,26 @@ nav {
     font-size: 14px;
 }
 
-.row.docs-index a:hover {
-    color: #3A416F;
-    border-left: 1px solid #3A416F;
-}
-
 .sidebar {
     position: fixed;
     list-style-type: none;
+    padding-top: 89px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: -56px;
+    background-color: #fcfcfc;
+    height: 100%;
+    border-right: 1px solid #f0f0f0;
 }
+
+.sidebar a {
+    color: #666;
+}
+
+.sidebar a:hover {
+    color: #3A416F;
+}
+
 @media (max-width: 1300px) {
     .sidebar {
         display: none;
