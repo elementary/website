@@ -37,8 +37,8 @@ $(document).ready(function() {
         $sidebar.prependTo('#content-container');
 
         var navHeight = $('nav.nav:first').height();
-        var prevTarget = 0,
-            nextTarget = $(window).height();
+        var prevTarget = null,
+            nextTarget = null;
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
 
@@ -49,12 +49,17 @@ $(document).ready(function() {
                 $headings.each(function () {
                     var headingScrollTop = $(this).offset().top;
                     if (headingScrollTop >= scrollTop) {
-                        $current = $(this).prevAll('h1').first();
+                        $current = $(this).prevAll('h1').first() || $(this);
                         prevTarget = nextTarget;
                         nextTarget = headingScrollTop;
                         return false;
                     }
                 });
+                if (!$current) {
+                    $current = $headings.last();
+                    prevTarget = nextTarget;
+                    nextTarget = Number.POSITIVE_INFINITY;
+                }
             }
             if (scrollTop < prevTarget) {
                 $($headings.get().reverse()).each(function () {
@@ -74,6 +79,7 @@ $(document).ready(function() {
                 if ($activeItem.next().is('ul')) {
                     $activeItem.next().addClass('active');
                 }
+                console.log($current[0]);
             }
         });
         $(window).scroll(); // Trigger event
