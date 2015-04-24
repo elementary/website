@@ -36,6 +36,15 @@ h6 a:hover{
     fill: #08c;
 }
 
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active{
+    text-decoration: none;
+}
+
 h1 a:hover::before,
 h2 a:hover::before,
 h3 a:hover::before,
