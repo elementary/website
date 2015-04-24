@@ -38,8 +38,8 @@ $(document).ready(function() {
 
         var navHeight = $('nav.nav:first').height();
         var footerScrollTop = $('footer:last').offset().top;
-        var prevTarget = null,
-            nextTarget = null;
+        var prevTarget = 0,
+            nextTarget = 0;
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
 
@@ -61,6 +61,9 @@ $(document).ready(function() {
                     $current = $headings.last();
                     prevTarget = nextTarget;
                     nextTarget = Number.POSITIVE_INFINITY;
+                }
+                if (!prevTarget) {
+                    prevTarget = Math.floor($current.first().offset().top);
                 }
             }
             if (scrollTop < prevTarget) {
@@ -86,7 +89,6 @@ $(document).ready(function() {
                 if ($activeItem.next().is('ul')) {
                     $activeItem.next().addClass('active');
                 }
-                console.log($current[0]);
             }
         });
         $(window).scroll(); // Trigger event
