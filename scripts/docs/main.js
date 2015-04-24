@@ -36,6 +36,8 @@ $(document).ready(function() {
         });
         $sidebar.prependTo('#content-container');
 
+        var $sidebarItems = $sidebar.children('li');
+
         var navHeight = $('nav.nav:first').height();
         var footerScrollTop = $('footer:last').offset().top;
         var prevTarget = 0,
@@ -83,8 +85,8 @@ $(document).ready(function() {
                 }
             }
             if ($current) {
-                $sidebar.find('li.active').removeClass('active');
-                var $activeItem = $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent();
+                $sidebarItems.removeClass('active');
+                var $activeItem = $sidebarItems.find('a[href="#'+$current.attr('id')+'"]').parent();
                 $activeItem.addClass('active');
                 if ($activeItem.next().is('ul')) {
                     $activeItem.next().addClass('active');
