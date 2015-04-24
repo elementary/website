@@ -25,6 +25,14 @@ $(document).ready(function() {
         var $sidebar = $('<ul class="sidebar"></ul>');
         $headings.each(function () {
             $sidebar.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
+            var $subHeadings = $(this).nextUntil('h1', 'h2');
+            if ($subHeadings.length > 0) {
+                var $subMenu = $('<ul></ul>');
+                $subHeadings.each(function () {
+                    $subMenu.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
+                });
+                $sidebar.append($subMenu);
+            }
         });
         $sidebar.prependTo('#content-container');
     }

@@ -143,6 +143,7 @@ nav {
     background-color: #fcfcfc;
     height: 100%;
     border-right: 1px solid #f0f0f0;
+    overflow: auto;
 }
 
 .sidebar a {
@@ -151,6 +152,10 @@ nav {
 
 .sidebar a:hover {
     color: #3A416F;
+}
+
+.sidebar ul {
+    list-style-type: none;
 }
 
 @media (max-width: 1300px) {
