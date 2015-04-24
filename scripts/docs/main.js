@@ -69,7 +69,10 @@ $(document).ready(function() {
             }
             if ($current) {
                 $sidebar.children('.active').removeClass('active');
-                $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent().next().addClass('active');
+                var $activeItem = $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent();
+                if ($activeItem.next().is('ul')) {
+                    $activeItem.next().addClass('active');
+                }
             }
         });
         $(window).scroll(); // Trigger event
