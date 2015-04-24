@@ -171,12 +171,13 @@ nav {
 }
 
 .sidebar > ul {
-  padding-left: 24px;
+    padding-left: 24px;
 }
 
 .sidebar > li > a {
-  font-weight: 600;
+    font-weight: 600;
 }
+
 
 @media (max-width: 1300px) {
     .sidebar {
