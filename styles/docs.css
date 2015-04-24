@@ -144,6 +144,13 @@ nav {
     height: 100%;
     border-right: 1px solid #f0f0f0;
     overflow: auto;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidebar.nav-hidden {
+    padding-top: 32px;
 }
 
 .sidebar a {

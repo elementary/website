@@ -35,5 +35,13 @@ $(document).ready(function() {
             }
         });
         $sidebar.prependTo('#content-container');
+
+        var navHeight = $('nav.nav:first').height();
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+
+            $sidebar.toggleClass('nav-hidden', (scrollTop > navHeight));
+        });
+        $(window).scroll(); // Trigger event
     }
 });
