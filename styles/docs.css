@@ -137,7 +137,7 @@ nav {
     position: fixed;
     list-style-type: none;
     max-width: 300px;
-    padding: 80px 24px 24px;
+    padding: 72px 0 0;
     margin-top: -56px;
     background-color: #fcfcfc;
     height: 100%;
@@ -149,7 +149,7 @@ nav {
 }
 
 .sidebar.nav-hidden {
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
 .sidebar a {
@@ -168,19 +168,21 @@ nav {
 
 .sidebar ul {
     list-style-type: none;
-    display: none;
 }
 
-.sidebar ul.active {
-    display: block;
+.sidebar li.active {
+    background-color: rgba(0, 0, 0, 0.10);
 }
 
 .sidebar > ul {
-    padding-left: 24px;
+    padding-left: 32px;
 }
 
 .sidebar > li > a {
     font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 24px;
 }
 
 
