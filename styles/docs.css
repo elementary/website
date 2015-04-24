@@ -15,31 +15,33 @@ h4 {
     font-weight: 400;
 }
 
-a h1,
-a h2,
-a h3,
-a h4,
-a h5,
-a h6{
-    color: #333;
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+    color: inherit;
+    fill: inherit;
     position: relative;
 }
 
-a:hover h1,
-a:hover h2,
-a:hover h3,
-a:hover h4,
-a:hover h5,
-a:hover h6{
-    color: inherit;
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover{
+    color: #08c;
+    fill: #08c;
 }
 
-a:hover h1::before,
-a:hover h2::before,
-a:hover h3::before,
-a:hover h4::before,
-a:hover h5::before,
-a:hover h6::before{
+h1 a:hover::before,
+h2 a:hover::before,
+h3 a:hover::before,
+h4 a:hover::before,
+h5 a:hover::before,
+h6 a:hover::before{
     font-family: FontAwesome;
     content: "\f0c1";
     position: absolute;
@@ -194,10 +196,10 @@ nav {
 .sidebar a {
     color: #666;
     font-size: 90%;
-    text-decoration: none; 
-    text-overflow: ellipsis; 
-    display: block; 
-    overflow: hidden; 
+    text-decoration: none;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
     white-space: nowrap;
     padding-right: 6px;
 }
