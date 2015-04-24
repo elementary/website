@@ -4,7 +4,7 @@ set_l10n_domain('layout');
         </div>
         <footer>
             <p>
-                Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a>
+                Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a>
             </p>
             <div class="popover">
                 <a href="#"><i class="fa fa-language"></i> Language</a>
