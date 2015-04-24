@@ -19,6 +19,11 @@ $(document).ready(function() {
         hljs.highlightBlock(block);
     });
 
+    // Anchor headings
+    $('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
+    })
+
     // Sidebar
     var $headings = $('h1');
     if ($headings.length > 1) {
