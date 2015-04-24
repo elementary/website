@@ -12,10 +12,6 @@ We’re also not covering design too much in this guide; that’s what the [Huma
 
 In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
-## Imagine That You're Learning to Drive a Car {#imagine-youre-learning-to-drive-a-car}
-
-As a student driver, you wouldn't expect us to teach you about the inner workings of the car in order to get from one spot to another. Rather, you would expect to hear about the rules of the road and the technique required to make the car perform certain maneuvers. In much the same way, we won't be creating a computer engineering guidebook. We are going to cover concepts on more of a macro level than a micro level. To take the car analogy a different way, as a student mechanic we're going to teach you how to change the oil, swap out the seats, and adjust the suspension. What we're not going to do is covering every engineering aspect of internal combustion, aerodynamics, and the like.
-
 # The Basic Setup {#the-basic-setup}
 
 Before we even think about writing code, you'll need a certain basic setup. This chapter will walk you through the process of getting set up. We will cover the following topics:
