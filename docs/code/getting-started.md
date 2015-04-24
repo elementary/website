@@ -396,7 +396,7 @@ If all went well, you should now be able to open your app from the Applications 
 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
-## Review {#review}
+## Review {#the-build-system-review}
 Let's review what all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
@@ -602,7 +602,7 @@ You can also use `attach_next_to` to place a widget next to another one on [all 
 
 You’ll notice in the example code above that we’ve created a 2 x 2 grid with buttons on the left and labels on the right. The top label goes from blank to “Hello World!” and the button label is rotated 90 degrees. Notice how we gave the buttons labels that directly call out what they do to the other labels.
 
-## Review {#review}
+## Review {#the-attach-method-review}
 
 Let’s recap what we learned in this section:
 
