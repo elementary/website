@@ -83,7 +83,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans+Mono">
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
-        
+
         <script>
             (function(d,s,f){g=d.createElement(s),u=d.getElementsByTagName(s)[0],g.async=1,g.src=f,u.parentNode.insertBefore(g,u)})
             (document,'script','https:<?php echo $sitewide['branch_root']; ?>backend/hsts.php')
@@ -95,6 +95,7 @@ $l10n->begin_html_translation();
             jQl.boot();
             <?php include __DIR__.'/../scripts/popover.js'; ?>
             <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
+            <?php include __DIR__.'/../scripts/external-links.js'; ?>
         </script>
 
         <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
@@ -115,17 +116,19 @@ $l10n->begin_html_translation();
 
     </head>
     <body class="page-<?php echo $page['name']; ?>">
-        <nav>
-            <ul class="left">
-                <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
-                <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
-                <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="nav-content">
+                <ul class="left">
+                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
+                    <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div id="content-container">

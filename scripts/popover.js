@@ -1,26 +1,37 @@
 $(function () {
-	var $document;
+    var $document;
 
-	$document = $(document);
+    $document = $(document);
 
-	$document.on('click', '.popover > a', function (event) {
-		event.preventDefault();
+    $document.on('click', '.popover > a', function (event) {
+        event.preventDefault();
 
-		var $link = $(event.target)
-		var $popover = $link.parent();
-		var $content = $popover.find('.popover-content');
-		$popover.addClass('active');
+        var $body = $('body');
+        var $link = $(event.target);
+        var $popover = $link.parent();
+        var $content = $popover.find('.popover-content');
 
-		var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
-		$content.css({ left: popoverPos });
+        $body.css({ 'overflow': 'hidden' });
 
-		$document.one('click', function (event) {
-			if (!$(event.target).is('.popover-content *')) {
-				event.stopImmediatePropagation();
-				event.preventDefault();
-			}
-			
-			$popover.removeClass('active');
-		});
-	});
+        $popover.addClass('active');
+
+        $content.on('scroll touchmove mousewheel wheel', function (e) {
+            e.stopPropagation();
+        });
+
+        var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
+        $content.css({ left: popoverPos });
+
+        $document.one('click scroll touchmove mousewheel wheel', function (event) {
+            if (!$(event.target).is('.popover-content *')) {
+                event.stopImmediatePropagation();
+                event.preventDefault();
+            }
+
+            $body.css({ 'overflow': 'visible' });
+
+            $popover.removeClass('active');
+            $body.click();
+        });
+    });
 });

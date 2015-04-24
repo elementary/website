@@ -1,15 +1,8 @@
 <?php
-require_once('./lib/Stripe.php');
-if ( substr($_SERVER['REQUEST_URI'], 0, 8) == '/branch/' ) {
-    // for Branches
-    require_once('../../../backend/config.php');
-} else {
-    // for MASTER
-    require_once('./config.php');
-}
+require_once __DIR__.'/lib/Stripe.php';
+require_once __DIR__.'/config.loader.php';
 
 Stripe::setApiKey($config['stripe_sk']);
-
 
 if (isset($_POST['token'])) {
     $token  = $_POST['token'];

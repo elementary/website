@@ -7,6 +7,7 @@
     include $template['header'];
 ?>
             <script src="scripts/slider.js"></script>
+            <script>var stripe_key = "<?php include __DIR__.'/backend/payment.php'; ?>";</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
