@@ -154,6 +154,8 @@ nav {
 
 .sidebar.footer-visible {
     height: calc(100% - 42px);
+    border-bottom: 1px solid #f0f0f0;
+    border-bottom-right-radius: 3px;
 }
 
 .sidebar a {
