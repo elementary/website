@@ -8,9 +8,7 @@ $(function () {
         // Get link href
         var $anchor = $(this);
         var href = $anchor.attr('href');
-        console.log(href);
         var domain = new RegExp('/' + window.location.host + '/');
-        console.log(domain);
         if (
             href[0] !== '#' &&
             domain.test(encodeURIComponent(href))
