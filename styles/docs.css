@@ -117,6 +117,7 @@ nav {
 
 .row.docs {
     max-width: 800px;
+    margin: 0 auto 0 300px;
 }
 
 .row.docs-index {
@@ -193,8 +194,12 @@ nav {
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 990px) {
     .sidebar {
         display: none;
+    }
+    
+    .row.docs {
+        margin: 0 auto;
     }
 }
