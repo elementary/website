@@ -423,7 +423,7 @@ If you want to get really good really fast, you're going to want to practice. Re
 
 Did you commit and push to launchpad for each step? Keep up these good habits and let's get to packaging this app!
 
-## Debian Control {#packaging}
+## Debian Control {#debian-control}
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
