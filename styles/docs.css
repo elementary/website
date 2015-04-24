@@ -144,6 +144,8 @@ nav {
     background-color: #3A416F;
     color: #fff;
     fill: #fff;
+    position: relative;
+    z-index: 100;
 }
 
 .row.docs {
@@ -164,9 +166,68 @@ nav {
     font-size: 14px;
 }
 
-.row.docs-index a:hover {
+.sidebar {
+    position: fixed;
+    list-style-type: none;
+    max-width: 300px;
+    padding: 16px 0;
+    margin-top: -56px;
+    background-color: #fcfcfc;
+    height: 100%;
+    border-right: 1px solid #f0f0f0;
+    overflow: auto;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidebar.nav-visible {
+    padding-top: 72px;
+}
+
+.sidebar.footer-visible {
+    height: calc(100% - 42px);
+    border-bottom: 1px solid #f0f0f0;
+    border-bottom-right-radius: 3px;
+}
+
+.sidebar a {
+    color: #666;
+    font-size: 90%;
+    text-decoration: none; 
+    text-overflow: ellipsis; 
+    display: block; 
+    overflow: hidden; 
+    white-space: nowrap;
+    padding-right: 6px;
+}
+
+.sidebar a:hover {
     color: #3A416F;
-    border-left: 1px solid #3A416F;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li.active {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.sidebar > ul {
+    padding-left: 32px;
+}
+
+.sidebar > li > a {
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 24px;
 }
 
 
+@media (max-width: 1300px) {
+    .sidebar {
+        display: none;
+    }
+}
