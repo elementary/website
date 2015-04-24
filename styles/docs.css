@@ -136,9 +136,8 @@ nav {
 .sidebar {
     position: fixed;
     list-style-type: none;
-    padding-top: 89px;
-    padding-right: 32px;
-    padding-left: 32px;
+    max-width: 300px;
+    padding: 80px 24px 24px;
     margin-top: -56px;
     background-color: #fcfcfc;
     height: 100%;
@@ -150,11 +149,16 @@ nav {
 }
 
 .sidebar.nav-hidden {
-    padding-top: 32px;
+    padding-top: 24px;
 }
 
 .sidebar a {
     color: #666;
+    text-decoration: none; 
+    text-overflow: ellipsis; 
+    display: block; 
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
 .sidebar a:hover {
