@@ -86,7 +86,7 @@ $(document).ready(function() {
             }
             if ($current) {
                 $sidebarItems.removeClass('active');
-                var $activeItem = $sidebarItems.find('a[href="#'+$current.attr('id')+'"]').parent();
+                var $activeItem = $sidebarItems.children('a[href="#'+$current.attr('id')+'"]').parent();
                 $activeItem.addClass('active');
                 if ($activeItem.next().is('ul')) {
                     $activeItem.next().addClass('active');
