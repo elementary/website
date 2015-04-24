@@ -198,11 +198,10 @@ nav {
         display: none;
     }
 }
-@media (min-width: 990px) {
-    @media (max-width: 1400px) {
-        .row.docs {
-        margin: 0 auto 0 300px;
-        }
+
+@media (min-width: 990px) and (max-width: 1400px) {
+    .row.docs {
+    margin: 0 auto 0 300px;
     }
 }
 
