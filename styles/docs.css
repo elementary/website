@@ -98,8 +98,13 @@ pre.highlighted .pre-numbering {
     line-height: 1.5em;
 }
 
-p+p {
+p + p {
     margin-top: 2em;
+}
+
+p + h1,
+pre + h1 {
+    margin-top: 128px;
 }
 
 nav {
