@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 extract_translations () {
 	filename="$1"
