@@ -136,4 +136,12 @@ nav {
     border-left: 1px solid #3A416F;
 }
 
-
+.sidebar {
+    position: fixed;
+    list-style-type: none;
+}
+@media (max-width: 1300px) {
+    .sidebar {
+        display: none;
+    }
+}
