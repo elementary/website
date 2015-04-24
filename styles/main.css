@@ -1124,11 +1124,11 @@ body.sliding {
     list-style-type: none;
     font-size: 13px;
 }
-    .docs-index ul li {
+    .docs-index > ul li {
         padding: 0 0 0 15px;
     }
 
-    .docs-index ul ul li {
+    .docs-index > ul ul li {
         list-style-type: none;
     } 
 
