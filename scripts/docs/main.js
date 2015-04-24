@@ -45,7 +45,7 @@ $(document).ready(function() {
             $sidebar.toggleClass('nav-hidden', (scrollTop > navHeight));
 
             var $current = null;
-            if (scrollTop > nextTarget) {
+            if (scrollTop >= nextTarget) {
                 $headings.each(function () {
                     var headingScrollTop = $(this).offset().top;
                     if (headingScrollTop >= scrollTop) {
@@ -78,7 +78,7 @@ $(document).ready(function() {
                 }
             }
             if ($current) {
-                $sidebar.children('.active').removeClass('active');
+                $sidebar.find('.active').removeClass('active');
                 var $activeItem = $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent();
                 $activeItem.addClass('active');
                 if ($activeItem.next().is('ul')) {
