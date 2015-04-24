@@ -1,5 +1,5 @@
 <?php
-set_l10n_domain('layout');
+$l10n->set_domain('layout');
 ?>
         </div>
         <footer>
@@ -12,7 +12,7 @@ set_l10n_domain('layout');
                     <strong>Change Site Language</strong>
                     <ul>
                     <?php
-                    foreach (list_langs() as $langCode => $langName) {
+                    foreach ($l10n->list_langs() as $langCode => $langName) {
                         $path = $sitewide['root'].$langCode.$page['path'];
                         ?>
                         <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
@@ -54,5 +54,5 @@ set_l10n_domain('layout');
     </body>
 </html>
 <?php
-end_html_l10n();
+$l10n->end_html_translation();
 ?>
