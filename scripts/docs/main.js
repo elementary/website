@@ -71,6 +71,11 @@ $(document).ready(function() {
                         return false;
                     }
                 });
+                if (!$current) {
+                    $current = $headings.first();
+                    prevTarget = 0;
+                    nextTarget = $($headings[1]).offset().top;
+                }
             }
             if ($current) {
                 $sidebar.children('.active').removeClass('active');
