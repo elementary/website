@@ -41,3 +41,55 @@ source_lang = en
 [elementary-mvp.docs_learning-the-basics]
 file_filter = lang/<lang>/docs/learning-the-basics.json
 source_lang = en
+
+[elementary-mvp.code-of-conduct]
+file_filter = lang/<lang>/code-of-conduct.json
+source_lang = en
+
+[elementary-mvp.docs_code_getting-started]
+file_filter = lang/<lang>/docs/code/getting-started.json
+source_lang = en
+
+[elementary-mvp.docs_code_reference]
+file_filter = lang/<lang>/docs/code/reference.json
+source_lang = en
+
+[elementary-mvp.docs_code_code-style]
+file_filter = lang/<lang>/docs/code/code-style.json
+source_lang = en
+
+[elementary-mvp.docs_code_packaging]
+file_filter = lang/<lang>/docs/code/packaging.json
+source_lang = en
+
+[elementary-mvp.docs_code_the-build-system]
+file_filter = lang/<lang>/docs/code/the-build-system.json
+source_lang = en
+
+[elementary-mvp.docs_code_functionality-in-gtkgrid]
+file_filter = lang/<lang>/docs/code/functionality-in-gtkgrid.json
+source_lang = en
+
+[elementary-mvp.docs_code_hello-world]
+file_filter = lang/<lang>/docs/code/hello-world.json
+source_lang = en
+
+[elementary-mvp.docs_code_the-attach-method]
+file_filter = lang/<lang>/docs/code/the-attach-method.json
+source_lang = en
+
+[elementary-mvp.docs_code_reporting-bugs]
+file_filter = lang/<lang>/docs/code/reporting-bugs.json
+source_lang = en
+
+[elementary-mvp.docs_code_the-basic-setup]
+file_filter = lang/<lang>/docs/code/the-basic-setup.json
+source_lang = en
+
+[elementary-mvp.docs_code_our-first-app]
+file_filter = lang/<lang>/docs/code/our-first-app.json
+source_lang = en
+
+[elementary-mvp.docs_code_creating-layouts]
+file_filter = lang/<lang>/docs/code/creating-layouts.json
+source_lang = en
