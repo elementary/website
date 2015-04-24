@@ -15,42 +15,42 @@ h4 {
     font-weight: 400;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a{
+h1 a.heading-link,
+h2 a.heading-link,
+h3 a.heading-link,
+h4 a.heading-link,
+h5 a.heading-link,
+h6 a.heading-link{
     color: inherit;
     fill: inherit;
     position: relative;
 }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover{
+h1 a.heading-link:hover,
+h2 a.heading-link:hover,
+h3 a.heading-link:hover,
+h4 a.heading-link:hover,
+h5 a.heading-link:hover,
+h6 a.heading-link:hover{
     color: #08c;
     fill: #08c;
 }
 
-h1 a:active,
-h2 a:active,
-h3 a:active,
-h4 a:active,
-h5 a:active,
-h6 a:active{
+h1 a.heading-link:active,
+h2 a.heading-link:active,
+h3 a.heading-link:active,
+h4 a.heading-link:active,
+h5 a.heading-link:active,
+h6 a.heading-link:active{
     text-decoration: none;
 }
 
-h1 a:hover::before,
-h2 a:hover::before,
-h3 a:hover::before,
-h4 a:hover::before,
-h5 a:hover::before,
-h6 a:hover::before{
+h1 a.heading-link:hover::before,
+h2 a.heading-link:hover::before,
+h3 a.heading-link:hover::before,
+h4 a.heading-link:hover::before,
+h5 a.heading-link:hover::before,
+h6 a.heading-link:hover::before{
     font-family: FontAwesome;
     content: "\f0c1";
     position: absolute;
