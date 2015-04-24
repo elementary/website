@@ -169,14 +169,6 @@
     margin-left: 0;
 }
 
-#slingshot-categories {
-    margin-left: 105%;
-}
-
-#slingshot-categories.active {
-    margin-left: 0;
-}
-
 #slingshot-grid .app,
 #slingshot-categories .app {
     float: left;
