@@ -201,6 +201,6 @@ nav {
 
 @media (min-width: 990px) and (max-width: 1400px) {
     .row.docs {
-    margin: 0 auto 0 300px;
+        margin: 0 auto 0 300px;
     }
 }
