@@ -286,7 +286,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need two new files in our project's root folder: AUTHORS and COPYING.
 
-### Authors {#legal-stuff}
+### Authors {#authors}
 
 The AUTHORS file is pretty straightforward. This file contains your name and email address along with the name and email address of anyone who helped you make your app. It typically looks like this:
  <!--email_off-->
