@@ -163,6 +163,11 @@ nav {
 
 .sidebar ul {
     list-style-type: none;
+    display: none;
+}
+
+.sidebar ul.active {
+    display: block;
 }
 
 @media (max-width: 1300px) {

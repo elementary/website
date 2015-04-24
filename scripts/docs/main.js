@@ -37,10 +37,40 @@ $(document).ready(function() {
         $sidebar.prependTo('#content-container');
 
         var navHeight = $('nav.nav:first').height();
+        var prevTarget = 0,
+            nextTarget = $(window).height();
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
 
             $sidebar.toggleClass('nav-hidden', (scrollTop > navHeight));
+
+            var $current = null;
+            if (scrollTop > nextTarget) {
+                $headings.each(function () {
+                    var headingScrollTop = $(this).offset().top;
+                    if (headingScrollTop >= scrollTop) {
+                        $current = $(this).prevAll('h1').first();
+                        prevTarget = nextTarget;
+                        nextTarget = headingScrollTop;
+                        return false;
+                    }
+                });
+            }
+            if (scrollTop < prevTarget) {
+                $($headings.get().reverse()).each(function () {
+                    var headingScrollTop = $(this).offset().top;
+                    if (headingScrollTop < scrollTop) {
+                        $current = $(this);
+                        prevTarget = headingScrollTop;
+                        nextTarget = prevTarget;
+                        return false;
+                    }
+                });
+            }
+            if ($current) {
+                $sidebar.children('.active').removeClass('active');
+                $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent().next().addClass('active');
+            }
         });
         $(window).scroll(); // Trigger event
     }
