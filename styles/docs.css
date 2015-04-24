@@ -154,6 +154,7 @@ nav {
 
 .sidebar a {
     color: #666;
+    font-size: 90%;
     text-decoration: none; 
     text-overflow: ellipsis; 
     display: block; 
@@ -167,6 +168,14 @@ nav {
 
 .sidebar ul {
     list-style-type: none;
+}
+
+.sidebar > ul {
+  padding-left: 24px;
+}
+
+.sidebar > li > a {
+  font-weight: 600;
 }
 
 @media (max-width: 1300px) {
