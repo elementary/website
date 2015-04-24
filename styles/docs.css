@@ -137,7 +137,7 @@ nav {
     position: fixed;
     list-style-type: none;
     max-width: 300px;
-    padding: 72px 0 0;
+    padding: 0;
     margin-top: -56px;
     background-color: #fcfcfc;
     height: 100%;
@@ -148,8 +148,12 @@ nav {
     transition: all 0.15s ease-in-out;
 }
 
-.sidebar.nav-hidden {
-    padding-top: 16px;
+.sidebar.nav-visible {
+    padding-top: 72px;
+}
+
+.sidebar.footer-visible {
+    height: calc(100% - 42px);
 }
 
 .sidebar a {

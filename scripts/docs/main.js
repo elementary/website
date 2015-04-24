@@ -37,12 +37,14 @@ $(document).ready(function() {
         $sidebar.prependTo('#content-container');
 
         var navHeight = $('nav.nav:first').height();
+        var footerScrollTop = $('footer:last').offset().top;
         var prevTarget = null,
             nextTarget = null;
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
 
-            $sidebar.toggleClass('nav-hidden', (scrollTop > navHeight));
+            $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
+            $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
 
             var $current = null;
             if (scrollTop >= nextTarget) {
@@ -78,7 +80,7 @@ $(document).ready(function() {
                 }
             }
             if ($current) {
-                $sidebar.find('.active').removeClass('active');
+                $sidebar.find('li.active').removeClass('active');
                 var $activeItem = $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent();
                 $activeItem.addClass('active');
                 if ($activeItem.next().is('ul')) {
