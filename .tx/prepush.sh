@@ -10,6 +10,7 @@ extract_translations () {
 	if [ $pagename = "developers" ] \
 		|| [ $pagename == "develop" ] \
 		|| [ $pagename == "installation" ] \
+		|| [ $pagename == "answers" ] \
 		|| [ $pagename == "router" ] ; then
 		return
 	fi
@@ -28,10 +29,7 @@ extract_translations () {
 	escaped_pagename=`echo "$pagename" | sed 's/\//_/g'`
 	if ! grep -F -q "[elementary-mvp.$escaped_pagename]" .tx/config; then
 		echo "Adding $pagename to .tx/config"
-		echo "
-[elementary-mvp.$escaped_pagename]
-file_filter = lang/<lang>/$pagename.json
-source_lang = en" >> .tx/config
+		tx set -t KEYVALUEJSON --auto-local -r "elementary-mvp.$escaped_pagename" "lang/<lang>/$pagename.json" --source-lang en --execute
 	fi
 }
 
