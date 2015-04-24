@@ -70,6 +70,7 @@ $(document).ready(function() {
             if ($current) {
                 $sidebar.children('.active').removeClass('active');
                 var $activeItem = $sidebar.find('a[href="#'+$current.attr('id')+'"]').parent();
+                $activeItem.addClass('active');
                 if ($activeItem.next().is('ul')) {
                     $activeItem.next().addClass('active');
                 }
