@@ -1,6 +1,6 @@
 <?php
 class Translator {
-    const LANG_DIR = __DIR__.'/../lang';
+    const LANG_DIR = 'lang';
 
     protected $available_langs = array(
         'en' => 'English',
@@ -79,7 +79,7 @@ class Translator {
     }
 
     public function lang_dir($lang) {
-        return self::LANG_DIR.'/'.$lang;
+        return __DIR__.'/../'.self::LANG_DIR.'/'.$lang;
     }
 
     public function is_lang($lang) {
