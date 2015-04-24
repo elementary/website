@@ -7,6 +7,7 @@
     "Web Development": "Développement Web",
     "Design": "Design",
     "Desktop Development": "Développement du Bureau",
+    "Funding": "Funding",
     "&ldquo;A different language is a different vision of life.&rdquo;": "“Une langue différente est une vision différente de la vie.”",
     "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "elementary OS est créé et utilisé par des personnes du monde entier. Aidez-nous à en améliorer l'expérience en le traduisant dans plus de langues.",
     "elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta.": "elementary OS utilise Rosetta, l'outil de traduction ouvert et collaboratif de Launchpad.",
@@ -34,5 +35,13 @@
     "Browse Our Desktop Code": "Parcourir le Code Source du Bureau",
     "Browse Our Apps' Code": "Parcourir le code source de nos applications",
     "Scratch text editor": "L'éditeur de texte Scratch",
+    "&ldquo;Do what you love and the money will follow.&rdquo;": "“Do what you love and the money will follow.”",
+    "Targeted Funding": "Targeted Funding",
+    "BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.",
+    "BountySource": "BountySource",
+    "General Funding": "General Funding",
+    "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.",
+    "PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.": "PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.",
+    "Patreon": "Patreon",
     "Get Involved with elementary OS": "Contribuer à elementary OS"
 }
