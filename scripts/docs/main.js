@@ -49,8 +49,8 @@ $(document).ready(function() {
             var $current = null;
             if (scrollTop >= nextTarget) {
                 $headings.each(function () {
-                    var headingScrollTop = $(this).offset().top;
-                    if (headingScrollTop >= scrollTop) {
+                    var headingScrollTop = Math.floor($(this).offset().top);
+                    if (headingScrollTop > scrollTop) {
                         $current = $(this).prevAll('h1').first() || $(this);
                         prevTarget = nextTarget;
                         nextTarget = headingScrollTop;
@@ -68,7 +68,7 @@ $(document).ready(function() {
                     var headingScrollTop = $(this).offset().top;
                     if (headingScrollTop < scrollTop) {
                         $current = $(this);
-                        prevTarget = headingScrollTop;
+                        prevTarget = Math.floor(headingScrollTop);
                         nextTarget = prevTarget;
                         return false;
                     }
