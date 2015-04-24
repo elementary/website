@@ -15,6 +15,39 @@ h4 {
     font-weight: 400;
 }
 
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6{
+    color: #333;
+    position: relative;
+}
+
+a:hover h1,
+a:hover h2,
+a:hover h3,
+a:hover h4,
+a:hover h5,
+a:hover h6{
+    color: inherit;
+}
+
+a:hover h1::before,
+a:hover h2::before,
+a:hover h3::before,
+a:hover h4::before,
+a:hover h5::before,
+a:hover h6::before{
+    font-family: FontAwesome;
+    content: "\f0c1";
+    position: absolute;
+    top: 0.5em;
+    left: -1.25em;
+    font-size: 0.75em;
+}
+
 img.float-left {
     margin-right: 24px;
 }
