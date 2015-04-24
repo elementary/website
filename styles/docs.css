@@ -137,7 +137,7 @@ nav {
     position: fixed;
     list-style-type: none;
     max-width: 300px;
-    padding: 0;
+    padding: 16px 0;
     margin-top: -56px;
     background-color: #fcfcfc;
     height: 100%;
@@ -164,6 +164,7 @@ nav {
     display: block; 
     overflow: hidden; 
     white-space: nowrap;
+    padding-right: 6px;
 }
 
 .sidebar a:hover {
