@@ -46,12 +46,16 @@ If you're ready, let's get you set up to use Bazaar:
 
 2. You'll need to install bzr. Simply type the following into the Terminal:
 
-        $ sudo apt-get install bzr
+    ```bash
+    sudo apt-get install bzr
+    ```
 
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
 
-        $ sudo apt-get install openssh-client
-        $ ssh-keygen -t rsa
+    ```bash
+    sudo apt-get install openssh-client
+    ssh-keygen -t rsa
+    ```
 
 4. When prompted, press Enter to accept the default file name for your key.
 
@@ -59,13 +63,17 @@ If you're ready, let's get you set up to use Bazaar:
 
 6. Now, we're going to tell Launchpad about your SSH key. Open your SSH key with the following command, then copy the text from the file that opens in Scratch:
 
-        $ scratch-text-editor ~/.ssh/id_rsa.pub
+    ```bash
+    scratch-text-editor ~/.ssh/id_rsa.pub
+    ```
 
 7. Visit [your SSH keys page](https://launchpad.net/people/+me/+editsshkeys). Paste the text in the textbox and click **Import public key**.
 
 8. Now you can connect bzr to your Launchpad account. You'll need your launchpad id, which you can look up at [your launchpad page](https://launchpad.net/people/+me).
 
-        $ bzr launchpad-login your-launchpad-id
+    ```bash
+    bzr launchpad-login your-launchpad-id
+    ```
 
 Done! Now you can download source code hosted on Launchpad and upload your own code. We'll revisit using bzr in a minute, but for now you're logged in. For a more in-depth introduction to bzr, you can also check the complete [Bazaar User Guide](http://doc.bazaar.canonical.com/latest/en/user-guide) provided by Canonical.
 
@@ -95,7 +103,9 @@ We’re going to use Terminal in order to compile our code, push revisions to Ba
 
 Open Terminal and issue the following command:
 
-    $ mkdir Projects
+```bash
+mkdir Projects
+```
 
 ### Development Libraries {#development-libraries}
 
@@ -103,7 +113,9 @@ Open Terminal and issue the following command:
 
 In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries with the following terminal command:
 
-    $ sudo apt-get build-dep granite-demo
+```bash
+sudo apt-get build-dep granite-demo
+```
 
 The command `apt-get build-dep` installs the build dependencies of an app in the repositories. In this case, we're fetching the development libraries needed to build Granite Demo, an example app. We'll talk more about Granite later, but keep in mind that if you want to build an app from source, you can usually get its build dependencies easily by using `apt-get build-dep`.
 
@@ -162,8 +174,10 @@ Now what you've been waiting for! We're going to create a window that contains a
 ## Compiling and Running your code {#compiling-and-running-your-code}
 Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk app:
 
-    $ valac --pkg gtk+-3.0 gtk-hello.vala
-    $ ./gtk-hello
+```bash
+valac --pkg gtk+-3.0 gtk-hello.vala
+./gtk-hello
+```
 
 Did it work? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
@@ -173,10 +187,12 @@ After we do anything significant, we must remember to push our code. This is esp
 
 Open Terminal and make sure you're in your project's root directory "~Projects/gtk-hello"
 
-    $ bzr init
-    $ bzr add src/gtk-hello.vala
-    $ bzr commit -m "Create initial structure. Create window with button."
-    $ bzr push lp:~/+junk/gtk-hello
+```bash
+bzr init
+bzr add src/gtk-hello.vala
+bzr commit -m "Create initial structure. Create window with button."
+bzr push lp:~/+junk/gtk-hello
+```
 
 With these commands, we've told `bzr` to track this folder as a branch, that we'd like to track revisions on the file "gtk-hello.vala", we've committed our first revision and explained what we did in the revision, and then we've told `bzr` to push your code to Launchpad in your [junk folder](https://code.launchpad.net/people/+me/).
 
@@ -244,7 +260,9 @@ To create our first real app, we're going to need all the old stuff that we used
 
 7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, push your first revision with `bzr`:
 
-        $ bzr push lp:~/+junk/hello-again
+    ```bash
+    bzr push lp:~/+junk/hello-again
+    ```
 
 Everything working as expected? Good. Now, let's get our app ready for other people to use.
 
@@ -274,9 +292,11 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 4. Finally, let's add this file to bzr and commit a revision:
 
-        $ bzr add data/hello.desktop
-        $ bzr commit -m "Added a .desktop file"
-        $ bzr push
+    ```bash
+    bzr add data/hello.desktop
+    bzr commit -m "Added a .desktop file"
+    bzr push
+    ```
 
 ## Legal Stuff {#legal-stuff}
 
@@ -285,12 +305,13 @@ Since we're going to be putting our app out into the wild, we should include som
 ### Authors {#authors}
 
 The AUTHORS file is pretty straightforward. This file contains your name and email address along with the name and email address of anyone who helped you make your app. It typically looks like this:
- <!--email_off-->
+<!--email_off-->
 
         Your Name <you@emailaddress.com>
         Your Friend <friend@emailaddress.com>
 
 <!--/email_off-->
+
 ### Copying {#copyright}
 
 The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
@@ -307,7 +328,9 @@ The next thing we need is a build system. The build system that we're going to b
 
 1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Make sure you're in "~/Projects" (not in your hello-again folder) and then grab the latest copy of those modules with bzr. Notice that we're not in "~/Projects/hello-world". This is because our cmake modules are not a branch of our Hello World app:
 
-        $ bzr branch  lp:~elementary-apps/+junk/cmake-modules
+    ```bash
+    bzr branch  lp:~elementary-apps/+junk/cmake-modules
+    ```
 
 2. You'll see a folder called "cmake". Copy that into your "hello-again" folder. It's that easy.
 
@@ -379,14 +402,18 @@ Now that we have a build system, let's try it out:
 
 2. Change into this directory in terminal and execute the following command:
 
-        $ cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    ```bash
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    ```
 
     This command tells cmake to get ready to build our app using the prefix "/usr". The `cmake` command defaults to installing our app locally, but we want to install our app for all users on the computer.
 
 3. Build your app with `make` and if successful install it with `sudo make install`:
 
-        $ make
-        $ sudo make install
+    ```bash
+    make
+    sudo make install
+    ```
 
 If all went well, you should now be able to open your app from the Applications menu and pin it to the Dock.  If you were about to add the "build" folder to your bzr branch and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
@@ -425,7 +452,9 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 1. Like CMake, elementary maintaines a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
 
-        $ bzr branch lp:~elementary-apps/+junk/debian-template
+    ```bash
+    bzr branch lp:~elementary-apps/+junk/debian-template
+    ```
 
 2. Copy the "debian" folder from that branch into your "hello-packaging" folder.
 
