@@ -207,7 +207,7 @@ class Translator {
         );
 
         // Tags included in translation strings when used in <p> or <li>
-        $ignoredTags = array('a', 'kbd', 'strong');
+        $ignoredTags = array('a', 'kbd', 'strong', 'em', 'code', 'sup', 'sub');
 
         // Begin parsing input HTML
         $i = 0;
