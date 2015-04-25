@@ -88,6 +88,8 @@ if ($isMarkdown) {
 } else {
 	chdir('..');
 
+	$sitewide['root'] = '/';
+
 	define('HTML_I18N', 1); // Do not start output buffering twice
 	ob_start(function ($input) use($l10n) {
 	    $l10n->translate_html($input, 'capture_translation');
