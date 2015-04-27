@@ -7,13 +7,16 @@ $(document).ready(function() {
         });
 
         // Add line numbers
-        var lines = $(this).text().trim().split('\n').length;
-        var $numbering = $('<ul/>').addClass('pre-numbering');
-        $(this).parent().addClass('highlighted has-numbering').prepend($numbering);
+        if (!$(this).is('.language-bash')) {
+            var lines = $(this).text().trim().split('\n').length;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this).parent().addClass('has-numbering').prepend($numbering);
 
-        for (var i = 1; i <= lines; i++){
-            $numbering.append($('<li/>').text(i));
+            for (var i = 1; i <= lines; i++){
+                $numbering.append($('<li/>').text(i));
+            }
         }
+        $(this).parent().addClass('highlighted');
 
         // Highlight code block
         hljs.highlightBlock(block);
