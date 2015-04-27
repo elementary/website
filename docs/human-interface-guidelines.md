@@ -10,23 +10,19 @@ These guidelines are designed to help developers and designers create a beautifu
 
 To help you achieve these goals, these guidelines will cover basic interface elements, how to use them and put them together effectively, and how to make your application integrate well with the desktop. The most important thing to remember is that following these guidelines will make it easier to design a new application, not harder.
 
-However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed. 
+However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed.
 
 For sections that have not yet been written, please refer to [The GNOME HIG](https://wiki.gnome.org/Design/HIG/)
 
 # Design Philosophy {#design-philosophy}
 
-The elementary HIG isn't just about a set of concrete rules; it's meant to be flexible and extensible. As such, this very first portion of the guideline is all about the guiding philosophy we employ. The main pillars of elementary design are as follows:
+The elementary HIG isn't just about a set of concrete rules; it's meant to be flexible and extensible. As such, this very first portion of the guideline is all about the guiding philosophy we employ. For a quick crash course, we like "The User is Drunk":
 
-* **Concision**. Apps should be focused and to-the-point. As explained in this section, concise apps provide both a better experience within themselves and for the desktop as a whole.
-
-* **Avoid Configuration**. As explained in this section, what's often disguised positively as "customize-ability" is actually harmful to the experience presented in your app.
-
-* **Minimal Documentation**. elementary apps are designed with both developers and users in mind. No developer wants to spend time writing lengthy docs, and no user wants to spend time reading them.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r2CbbBLVaPk" frameborder="0" allowfullscreen></iframe>
 
 ## What Design Is Not {#what-design-is-not}
 
-Before we get into all the things that make up elementary apps, there is a clarification that needs to be made. We need to understand what exactly design is about. For a quick crash course, we recommend watching [This Video](http://youtu.be/r2CbbBLVaPk). But let's give a quick run down of what design is not and smash two major myths:
+Before we get into all the things that make up elementary apps, there is a clarification that needs to be made. We need to understand what exactly design is about, but more importantly we want to smash two major myths:
 
 1. **Design is not something you add on after you've completed a product.** Whether you realize it or not, you are constantly designing anything you build. It is an intrinsic part of creating something. Design is not just what something looks like. It's not just the colors and fonts. Design is how it works. When you decide to add a button that does a thing, that is design. You made a decision to add a button with an icon or a label and where that button went and the size and color of that button. Decisions are designs.
 
