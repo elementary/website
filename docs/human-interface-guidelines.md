@@ -58,13 +58,15 @@ If possible, completely avoid presenting any settings or configuration in your a
 
 Design with sane defaults in mind. elementary apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM" frameborder="0" allowfullscreen></iframe>
+
 ### Ask the Operating System {#ask-the-operating-system}
 
-Get as much information automatically as possible. Instead of asking a user for their name or their location, ask the system for this information. This cuts down on the amount of things a user has to do before they are able to actually do anything and makes your app look intelligent and integrated.
+Get as much information automatically as possible. Instead of asking a user for their name or their location, ask the system for this information. This cuts down on the amount of things a user has to do and makes your app look intelligent and integrated.
 
 ### Do You Really Need It? {#do-you-really-need-it}
 
-Ask yourself if the configuration option you are adding is really necessary or makes sense to a user. Don't ever ask users to make engineering or design decisions. Configuration should be strictly regulated to either set-up or personal preference.
+Ask yourself if the configuration option you are adding is really necessary or makes sense to a user. Don't ever ask users to make engineering or design decisions.
 
 ### When You Absolutely Have To {#when-you-absolutely-have-to}
 
