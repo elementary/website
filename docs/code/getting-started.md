@@ -225,7 +225,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 2. Now go into "hello-again" and create our directory structure including the "src" folder.
 
-3. Create "hello_again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
+3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
 
         /* Copyright 2013 YourName
         *
