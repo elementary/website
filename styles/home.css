@@ -200,6 +200,7 @@
     width: 200px;
     display: block;
     margin: 0 auto;
+    margin-left: 32%;
     margin-top: 9px;
     margin-bottom: 5px;
 }
@@ -288,9 +289,23 @@
           top: -346px;
     }
 
-    ul.categories-list {
+    .categories-list {
         height: 313px;
     }
+
+    #slingshot-pager {
+        margin-left: 22%;
+    }
+
+    .slingshot-container {
+        width: 880px;
+    }
+
+    #slingshot-grid,
+    #slingshot-categories {
+        max-width: 440px;
+    }
+
 }
 
 @media (max-width: 581px) {
