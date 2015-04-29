@@ -184,6 +184,20 @@
                     $(this).removeClass('next');
                     $(this).addClass('active');
                 }
+                if( $('#slingshot-grid').hasClass('active') ){
+                    $('.slingshot .clear-icon').addClass ('inactive');
+                    $('.slingshot .linked').removeClass ('inactive');
+                    $('.slingshot .entry').removeClass ('expanded');
+                    $('#slingshot-grid-button').addClass ('active');
+                    $('#slingshot-categories-button').removeClass ('active');
+                } else if( $('#slingshot-categories').hasClass('active') ){
+                    $('#slingshot-categories-button').addClass ('active');
+                    $('#slingshot-grid-button').removeClass ('active');
+                } else if( $('#slingshot-search').hasClass('active') ){
+                    $('.slingshot .clear-icon').removeClass ('inactive');
+                    $('.slingshot .linked').addClass ('inactive');
+                    $('.slingshot .entry').addClass ('expanded');
+                }
             });
         }, 3000);
     });

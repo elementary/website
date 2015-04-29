@@ -150,7 +150,7 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                             <span class="search-term">da</span>
-                            <span class="clear-icon"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                            <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">

@@ -108,6 +108,11 @@
 .slingshot .linked {
     margin: 0;
     display: inline-block;
+    transition: all 200ms ease-out;
+}
+
+.slingshot .linked.inactive {
+    margin-left: -74px;
 }
 
 .slingshot .button {
@@ -138,6 +143,10 @@
     margin-left: 8px;
 
     transition: all 200ms ease-out;
+}
+
+.slingshot .entry.expanded {
+    width: 100%;
 }
 
 .entry .symbolic {
@@ -235,11 +244,13 @@
 
 /* Search */
 
-#slingshot-search {
-
+.clear-icon {
+    float:right;
 }
 
-.clear-icon{float:right;}
+.clear-icon.inactive {
+    display: none;
+}
 
 img.result-img {
     float: left;
@@ -330,10 +341,6 @@ span.results-title {
 .slingshot .view.next {
     transform: translateX(110%);
     opacity: 0;
-}
-
-#slingshot-categories {
-    /*margin-top: -458px;*/
 }
 
 #slingshot-categories.active {
