@@ -302,7 +302,7 @@ span.results-title {
 /* Animate */
 
 .slingshot {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 #slingshot-grid,
