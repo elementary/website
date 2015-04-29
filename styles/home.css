@@ -160,6 +160,10 @@
     padding: 3px 6px;
 }
 
+#slingshot-grid .slingshot-grid {
+    margin-left: 12px;
+}
+
 .app {
     float: left;
     display: inline-block;
@@ -186,7 +190,6 @@
     width: 200px;
     display: block;
     margin: 0 auto;
-    margin-left: 32%;
     margin-top: 9px;
     margin-bottom: 5px;
 }
@@ -307,7 +310,7 @@ span.results-title {
     padding: 4px 16px;
     border-radius: 5px;
     margin-left: 12px;
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 /* Animate */
@@ -318,7 +321,7 @@ span.results-title {
 }
 
 .slingshot .view {
-    width: 120%;
+    width: 100%;
     max-width: 680px;
     float: left;
     transition: all 200ms ease-in-out;
@@ -391,10 +394,6 @@ span.results-title {
 
     .slingshot-categories-sidebar {
         height: 313px;
-    }
-
-    #slingshot-pager {
-        margin-left: 24.3%;
     }
 
     #slingshot-categories {
