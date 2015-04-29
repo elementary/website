@@ -150,7 +150,7 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <div id="slingshot-grid" class="active">
+                        <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
@@ -158,7 +158,7 @@
                                 <div class="button">2</div>
                             </div>
                         </div>
-                        <div id="slingshot-categories" class="">
+                        <div id="slingshot-categories" class="next view">
                             <div class="slingshot-categories-sidebar">
                                 <span class="slingshot-category active">Accessories</span>
                                 <span class="slingshot-category">Graphics</span>
@@ -171,7 +171,7 @@
                             <div class="slingshot-categories">
                             </div>
                         </div>
-                        <div id="slingshot-search">
+                        <div id="slingshot-search" class="previous view">
                             <div class="entry search-entry">
                                 <?php include('images/icons/edit-find-symbolic.svg'); ?>
                                 <span class="search-term">da</span>

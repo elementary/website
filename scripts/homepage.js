@@ -155,8 +155,8 @@
     });
 
     $(function() {
-        window.setInterval(function () {
-            var grid = $("#slingshot-grid");
+        window.setInterval(function() {
+            /*var grid = $("#slingshot-grid");
             var gridButton = $("#slingshot-grid-button");
             var categories = $("#slingshot-categories");
             var categoriesButton = $("#slingshot-categories-button");
@@ -170,7 +170,21 @@
                 gridButton.addClass ("active");
                 categories.removeClass ("active");
                 categoriesButton.removeClass ("active");
-            }
+            }*/
+
+            var slingshotViews = $('.slingshot .view');
+            slingshotViews.each(function() {
+                if( $(this).hasClass('previous') ){
+                    $(this).removeClass('previous');
+                    $(this).addClass('next');
+                } else if( $(this).hasClass('active') ){
+                    $(this).removeClass('active');
+                    $(this).addClass('previous');
+                } else if( $(this).hasClass('next') ){
+                    $(this).removeClass('next');
+                    $(this).addClass('active');
+                }
+            });
         }, 3000);
     });
 
