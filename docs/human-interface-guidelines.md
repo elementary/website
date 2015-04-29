@@ -472,13 +472,13 @@ It is important to determine the severity or type of infobar to use. There are f
 
 The Welcome Screen is a friendly way to help users get started with your app.
 
-### Usage {#usage}
+### Usage {#welcome-screen-usage}
 
 Typically a Welcome Screen is used for apps like Noise or Scratch where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
 
 Make sure that if your app allows its library to be cleared that the Welcome Screen is shown again instead of an empty list.
 
-### Labeling {#labeling}
+### Labeling {#welcome-screen-labeling}
 
 The Welcome Screen consists of two sets of labels:
 
@@ -517,11 +517,11 @@ Buttons are an incredibly important widget to understand since your app will und
 
 ![](/images/docs/human-interface-guidelines/buttons/open.png)
 
-#### Labeling
+#### Labeling {#tool-buttons-labeling}
 
 Tool Buttons are almost always icon-only and do not provide a button border. They should not be accompanied by a label.
 
-#### Tooltips
+#### Tooltips {#tool-buttons-tooltips}
 
 All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.
 
@@ -531,7 +531,7 @@ Like text button labels, a tooltip should clearly describe what will happen when
 
 ![](/images/docs/human-interface-guidelines/buttons/cancel.png)
 
-#### Labeling
+#### Labeling {#text-buttons-labeling}
 
 Text Button labels should be done in Title Case.
 
@@ -541,7 +541,7 @@ Like menu items, Text Button labels should consist of an Action or a Location bu
 
 "OK", "Get more storage!", and "Low Battery" are not good button labels. The "Get more storage!" label uses incorrect capitalization and unnecessary punctuation. With the other two labels, It's not very clear what will happen when these buttons are clicked.
 
-#### Tooltips
+#### Tooltips {#text-buttons-tooltips}
 
 Since Text buttons have a clear and explicit label, it's usually unnecessary to give them a tooltip.
 
@@ -549,11 +549,11 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 
 ![](/images/docs/human-interface-guidelines/buttons/radio.png)
 
-#### Usage
+#### Usage {#linked-buttons-usage}
 
 Linked Buttons are used to group actions that are either similar in nature or mutually exclusive. For example, they could group text options like Bold, Italic, and Underline. Or they can be used to group mutually exclusive states like Grid, List, or Column view.
 
-#### Labeling
+#### Labeling {#linked-buttons-labeling}
 
 Linked Buttons should never contain colored icons. Only 16px symbolic icons OR text. Do not mix icons and text.
 
@@ -567,7 +567,7 @@ The AppMenu is an optional menu which is opened using the gear-shaped icon on th
 
 ![](/images/docs/human-interface-guidelines/appmenu/cogcorner.png)
 
-### Usage {#usage}
+### Usage {#appmenu-usage}
 
 You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.
 
@@ -591,7 +591,7 @@ If it is possible to include search functionality within your app, it is best to
 * Results should be instantly shown as you type. This helps your app to appear faster and is more useful than having to hit "Enter" and wait. Exceptions may be made if the data is not stored locally.
 * In most cases, the search should be case-insensitive; users should not be expected to provide the exact capitalization. A good compromise is "smart case" where case is respected whenever the user intentionally types lower and upper case letters.
 
-### Labeling {#labeling}
+### Labeling {#search-fields-labeling}
 
 Search fields should contain hint text that describes what will be search. You can set this using the entry property ["placeholder_text"](http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Entry.placeholder_text).
 
@@ -605,12 +605,12 @@ If the search field interacts with a search service, the hint text should be the
 
 Checkboxes present a way for users to select items from a list.
 
-#### Usage
+#### Usage {#checkboxes-usage}
 
 Use checkboxes when users are making a selection of items.
 Make sure that a user can toggle the state of the checkbox by clicking on the label associated with the checkbox.
 
-#### Labeling
+#### Labeling {#checkboxes-labeling}
 
 Labels associated with Checkboxes should usually be nouns or nounal phrases.
 
@@ -620,7 +620,7 @@ Labels associated with Checkboxes should usually be nouns or nounal phrases.
 
 Switches present a way for users to toggle certain features or behaviors "on" or "off".
 
-#### Usage
+#### Usage {#switches-usage}
 
 Don't use switches to include related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
@@ -628,7 +628,7 @@ Notice that the option "Record from microphone" is a great candidate for a switc
 
 However, if there are two options "Record system sounds" and "Record from microphone" you are now dealing with a list of related items to include as part of a larger recording service (who's on and off state is independent of what services it includes). In this case, a checkbox is more appropriate to denote this inclusion.
 
-#### Labeling
+#### Labeling {#switches-labeling}
 
 When possible, directly call out the service you are acting on. Do not use words that describe the state that the widget is describing like "Enable Multitouch", "Use Multitouch", or "Disable Multitouch". This can create a confusing situation logically. Instead, simply use the noun and write "Multitouch".
 
