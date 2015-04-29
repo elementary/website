@@ -154,17 +154,17 @@
         window.setInterval(function () {
             var grid = $("#slingshot-grid");
             var gridButton = $("#slingshot-grid-button");
-            var categories = $("#slingshot-categories");
+            var container = $(".slingshot-container");
             var categoriesButton = $("#slingshot-categories-button");
             if (grid.hasClass ("active")) {
                 grid.removeClass ("active");
                 gridButton.removeClass ("active");
-                categories.addClass ("active");
+                container.addClass ("active");
                 categoriesButton.addClass ("active");
             } else {
                 grid.addClass ("active");
                 gridButton.addClass ("active");
-                categories.removeClass ("active");
+                container.removeClass ("active");
                 categoriesButton.removeClass ("active");
             }
         }, 3000);

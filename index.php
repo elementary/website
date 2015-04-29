@@ -150,25 +150,27 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <div id="slingshot-grid" class="active">
-                            <div class="slingshot-grid">
+                        <div class="slingshot-container">
+                            <div id="slingshot-grid" class="active">
+                                <div class="slingshot-grid">
+                                </div>
+                                <div id="slingshot-pager">
+                                    <div class="button active">1</div>
+                                    <div class="button">2</div>
+                                </div>
                             </div>
-                            <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
-                            </div>
-                        </div>
-                        <div id="slingshot-categories">
-                            <ul class="categories-list">
-                                <li class="active">Accessories</li>
-                                <li>Graphics</li>
-                                <li>Internet</li>
-                                <li>Office</li>
-                                <li>Other</li>
-                                <li>Sound &amp; Video</li>
-                                <li>System Tools</li>
-                            </ul>
-                            <div class="slingshot-categories">
+                            <div id="slingshot-categories">
+                                <div class="categories-list">
+                                    <span class="category-listitem active">Accessories</span>
+                                    <span class="category-listitem">Graphics</span>
+                                    <span class="category-listitem">Internet</span>
+                                    <span class="category-listitem">Office</span>
+                                    <span class="category-listitem">Other</span>
+                                    <span class="category-listitem">Sound &amp; Video</span>
+                                    <span class="category-listitem">System Tools</span>
+                                </div>
+                                <div class="slingshot-categories">
+                                </div>
                             </div>
                         </div>
                     </div>
