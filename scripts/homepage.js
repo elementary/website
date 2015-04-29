@@ -156,22 +156,6 @@
 
     $(function() {
         window.setInterval(function() {
-            /*var grid = $("#slingshot-grid");
-            var gridButton = $("#slingshot-grid-button");
-            var categories = $("#slingshot-categories");
-            var categoriesButton = $("#slingshot-categories-button");
-            if (grid.hasClass ("active")) {
-                grid.removeClass ("active");
-                gridButton.removeClass ("active");
-                categories.addClass ("active");
-                categoriesButton.addClass ("active");
-            } else {
-                grid.addClass ("active");
-                gridButton.addClass ("active");
-                categories.removeClass ("active");
-                categoriesButton.removeClass ("active");
-            }*/
-
             var slingshotViews = $('.slingshot .view');
             slingshotViews.each(function() {
                 if( $(this).hasClass('previous') ){
