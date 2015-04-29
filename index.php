@@ -150,27 +150,35 @@
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
                         </div>
-                        <div class="slingshot-container">
-                            <div id="slingshot-grid" class="active">
-                                <div class="slingshot-grid">
-                                </div>
-                                <div id="slingshot-pager">
-                                    <div class="button active">1</div>
-                                    <div class="button">2</div>
-                                </div>
+                        <div id="slingshot-grid" class="active">
+                            <div class="slingshot-grid">
                             </div>
-                            <div id="slingshot-categories">
-                                <div class="categories-list">
-                                    <span class="category-listitem active">Accessories</span>
-                                    <span class="category-listitem">Graphics</span>
-                                    <span class="category-listitem">Internet</span>
-                                    <span class="category-listitem">Office</span>
-                                    <span class="category-listitem">Other</span>
-                                    <span class="category-listitem">Sound &amp; Video</span>
-                                    <span class="category-listitem">System Tools</span>
-                                </div>
-                                <div class="slingshot-categories">
-                                </div>
+                            <div id="slingshot-pager">
+                                <div class="button active">1</div>
+                                <div class="button">2</div>
+                            </div>
+                        </div>
+                        <div id="slingshot-categories" class="">
+                            <div class="slingshot-categories-sidebar">
+                                <span class="slingshot-category active">Accessories</span>
+                                <span class="slingshot-category">Graphics</span>
+                                <span class="slingshot-category">Internet</span>
+                                <span class="slingshot-category">Office</span>
+                                <span class="slingshot-category">Other</span>
+                                <span class="slingshot-category">Sound &amp; Video</span>
+                                <span class="slingshot-category">System Tools</span>
+                            </div>
+                            <div class="slingshot-categories">
+                            </div>
+                        </div>
+                        <div id="slingshot-search">
+                            <div class="entry search-entry">
+                                <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                                <span class="search-term">da</span>
+                                <span class="clear-icon"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                            </div>
+                            <span class="results-title">Applications</span>
+                            <div class="slingshot-search-results">
                             </div>
                         </div>
                     </div>

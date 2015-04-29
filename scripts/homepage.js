@@ -147,6 +147,10 @@
                 var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
                 $(categoriesitems).appendTo(".slingshot-categories");
             });
+            $.each(data.search, function(i, f) {
+                var searchitems = '<div class="search-result '+f.state+'"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".slingshot-search-results");
+            });
         });
     });
 
@@ -154,17 +158,17 @@
         window.setInterval(function () {
             var grid = $("#slingshot-grid");
             var gridButton = $("#slingshot-grid-button");
-            var container = $(".slingshot-container");
+            var categories = $("#slingshot-categories");
             var categoriesButton = $("#slingshot-categories-button");
             if (grid.hasClass ("active")) {
                 grid.removeClass ("active");
                 gridButton.removeClass ("active");
-                container.addClass ("active");
+                categories.addClass ("active");
                 categoriesButton.addClass ("active");
             } else {
                 grid.addClass ("active");
                 gridButton.addClass ("active");
-                container.removeClass ("active");
+                categories.removeClass ("active");
                 categoriesButton.removeClass ("active");
             }
         }, 3000);

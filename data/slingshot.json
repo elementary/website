@@ -25,4 +25,11 @@
         {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
         {"icon":"utilities-terminal","title":"Terminal","position":"last-row"}
     ]
+,
+    "search": [
+        {"icon":"preferences-system-time","title":"<b>Da</b>te & Time","state":"top-result"},
+        {"icon":"office-calendar","title":"Calen<b>da</b>r","state":""},
+        {"icon":"software-properties","title":"Software & Up<b>da</b>tes","state":""},
+        {"icon":"system-software-update","title":"Software Up<b>da</b>ter","state":""}
+    ]
 }
