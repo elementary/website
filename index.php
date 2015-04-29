@@ -149,6 +149,8 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                            <span class="search-term">da</span>
+                            <span class="clear-icon"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
@@ -172,11 +174,6 @@
                             </div>
                         </div>
                         <div id="slingshot-search" class="previous view">
-                            <div class="entry search-entry">
-                                <?php include('images/icons/edit-find-symbolic.svg'); ?>
-                                <span class="search-term">da</span>
-                                <span class="clear-icon"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
-                            </div>
                             <span class="results-title">Applications</span>
                             <div class="slingshot-search-results">
                             </div>

@@ -102,6 +102,7 @@
     top: 5px;
     width: 30px;
     height: 20px;
+    z-index: 100;
 }
 
 .slingshot .linked {
@@ -196,7 +197,6 @@
     height: 456px;
     width: 124px;
     margin-top: 16px;
-    margin-left:-12px;
     float:left;
     border-right: 1px solid #A7A7A7;
 
@@ -254,7 +254,6 @@ img.result-img {
     float:left;
     width: 100%;
     margin:6px 0;
-    margin-right: 30px;
     font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
     color: #333;
     text-shadow:none;
@@ -294,9 +293,10 @@ span.results-title {
 
 .search-result {
     display: block;
-    width: 100%;
     padding: 4px 16px;
     border-radius: 5px;
+    margin-left: 12px;
+    margin-right: 16px;
 }
 
 /* Animate */
