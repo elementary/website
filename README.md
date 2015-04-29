@@ -60,7 +60,7 @@ Simple Local Development
 
 For a simple local development environment, you will need:
 
-* [A supported version of PHP](http://php.net/supported-versions.php)
+* [A supported version of PHP](http://php.net/supported-versions.php) with curl
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
 
