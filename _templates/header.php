@@ -120,7 +120,7 @@ $l10n->begin_html_translation();
             <div class="nav-content">
                 <ul class="left">
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                    <li><a href="http://blog.elementary.io" target="_blank">Blog</a></li>
+                    <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
                 </ul>
