@@ -85,15 +85,7 @@ At the time of this writing, elementary doesn't have a full SDK like Android or 
 
 ![](images/docs/code/the-basic-setup/scratch.png)
 
-The first piece of our simple "SDK" is the text editor Scratch. This comes by default with elementary OS. You may find it helpful to enable the File Manager extension by doing the following:
-
-1. Open Scratch
-2. Open the Menu in the top right corner (the gear icon)
-3. Choose **Preferences**
-4. Choose the tab **Extensions**
-5. Check the box for **Folder Manager**
-
-There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
+The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
