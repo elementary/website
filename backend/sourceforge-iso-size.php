@@ -14,8 +14,8 @@ $xml = file_get_contents('http://sourceforge.net/projects/elementaryos/rss?path=
 $doc = new DOMDocument();
 $doc->loadXML($xml);
 
-$latestItem = $doc->getElementsByTagName('item')[0];
-$media = $latestItem->getElementsByTagNameNS('http://video.search.yahoo.com/mrss/', 'content')[0];
+$latestItem = $doc->getElementsByTagName('item')->item(0);
+$media = $latestItem->getElementsByTagNameNS('http://video.search.yahoo.com/mrss/', 'content')->item(0);
 $filesize = (int) $media->getAttribute('filesize');
 
 file_put_contents(__DIR__.'/iso-size.txt', $filesize);
