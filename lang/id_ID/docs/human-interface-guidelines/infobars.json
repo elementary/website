@@ -1,0 +1,11 @@
+{
+    "Infobars": "Bilah Info",
+    "Infobars provide contextual information and actions to the user with varying levels of severity.": "Bilah info memberikan informasi dan tindakan yang sesuai konteks kepada pengguna dengan tingkat urgensitas yang berbeda-beda.",
+    "It is important to determine the severity or type of infobar to use. There are four types of infobars available:": "Penting untuk menentukan tingkat urgensitas atau tipe dari bilah info yang akan digunakan. Ada empat tipe bilah info yang tersedia:",
+    "<strong>Information</strong>: Supplemental information and an optional action the user may perform. Shows as white in the UI.": "<strong>Informasi</strong>: Informasi tambahan dan sebuah tindakan fakultatif untuk pengguna lakukan. Ditampilkan putih pada UI.",
+    "<strong>Question</strong>: A non-critical question for the user. An answer of some sort is expected, but it's not urgent or severe. Shows as blue in the UI.": "<strong>Pertanyaan</strong>: Pertanyaan tidak terlalu penting untuk pengguna. Diharapkan ada semacam jawaban, tetapi hal itu tidak terlalu mendesak. Ditampilkan biru pada UI.",
+    "<strong>Warning</strong>: Lets the user know something unexpected or bad may happen and provides an action to resolve it. Displays as yellow in the UI.": "<strong>Peringatan</strong>: Memberitahu pengguna sesuatu yang tidak terduga atau buruk telah terjadi dan memerlukan tindakan untuk mengatasinya. Ditampilkan kuning pada UI.",
+    "<strong>Error</strong>: Informs the user of an error that has occurred and requires a user action to resolve it. Reserved for critical situations. Displays as red in the UI.": "<strong>Galat</strong>: Memberitahu pengguna sebuah galat telah terjadi dan memerlukan tindakan untuk mengatasinya. Untuk situsi kritis. Ditampilkan merah pada UI.",
+    "Next Page:": "Halaman Selanjutnya:",
+    "Welcome Screen": "Layar Sambutan"
+}
