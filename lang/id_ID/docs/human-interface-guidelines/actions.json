@@ -1,0 +1,8 @@
+{
+    "Actions": "Tindakan",
+    "Action icons are graphics used to represent user actions. Action icons are most commonly found in app toolbars, but can be found throughout the OS.": "Ikon tindakan adalah gambar grafis yang digunakan untuk merepresentasikan tindakan pengguna. Ikon tindakan umumnya ditemukan di bilah alat aplikasi, tetapi bisa juga ditemukan seluruh OS.",
+    "If your app has an action that can be described by an existing system action icon, reference that icon. This ensures a consistent user experience and aids in user recognition of common functions.": "Jika aplikasi anda memiliki tindakan yang dapat di jelaskan oleh ikon tindakan sistem yang ada, rujuk ikon tersebut. Hal ini memastikan pengalaman penggunaan yang konsisten dan membantu mengenalkan pengguna pada fungsi-fungsi umum.",
+    "If your app has a unique action not easily described by an existing icon, you may need to create your own icon. Follow the look and feel of existing system icons and install the icon along with your app.": "Jika aplikasi anda memiliki tindakan yang tidak bisa dengan mudah di jelaskan oleh ikon yang ada, anda mungkin perlu membuat ikon anda sendiri. Ikuti penampilan dan rasa dari ikon sistem yang ada dan pasang ikon bersama dengan aplikasi anda.",
+    "Next Page:": "Halaman Selanjutnya:",
+    "Symbolic": "Symbolic"
+}
