@@ -6,11 +6,15 @@ $respectIE = true;
 // Set the DNT variables.
 include __DIR__.'/../backend/here-miss.php';
 
+include __DIR__.'/../backend/function.branchname.php';
+$sitewide['branch_root'] = branch_name();
+
 date_default_timezone_set('UTC');
 
 $sitewide['title'] = 'elementary';
 $sitewide['author'] = 'elementary LLC';
 $sitewide['description'] = 'A fast and open replacement for Windows and OS X. Pay what you want or download for free.';
+$sitewide['image'] = '';
 $sitewide['theme-color'] = '#3892E0';
 
 // Autodetect website root path

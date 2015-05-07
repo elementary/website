@@ -1,15 +1,15 @@
 {
-    "Download elementary OS": "Unduh elementary OS",
+    "Download elementary OS": "Unduh OS elementary",
     "Blog": "Blog",
-    "Support": "Bantuan",
+    "Support": "Dukungan",
     "Store": "Toko",
     "Developer": "Pengembang",
-    "Get Involved": "Mari Bergabung",
+    "Get Involved": "Ikut Terlibat",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Hak Cipta © 2015 elementary LLC. <a href=\"/privacy-policy\">Kebijakan Privasi</a>",
-    "&nbsp;Language": "Bahasa",
+    "Language": "Bahasa",
     "Change Site Language": "Ubah Bahasa Situs",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Situs web elementary os dibangun dengan teknologi web modern perambang anda tidak mendukung.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Versi Internet Explorer sudah kedaluwarsa dan mungkin mengandung hama atau celah keamanan. Sila <a href=\"http://browsehappy.com/\">tingkatkan</a> ke IE 11 atau gunakan peramban alternatif.",
-    "Dismiss": "Menolak",
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Situs web OS elementary dibangun dengan teknologi web modern yang tidak didukung oleh peramban anda.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Internet Explorer versi ini sudah usang dan mungkin banyak mengandung bug atau celah keamanan. Mohon <a href=\"http://browsehappy.com/\">tingkatkan</a> ke IE 11 atau peramban alternatif lainnya.",
+    "Dismiss": "Abaikan",
     "Learn More": "Pelajari Selengkapnya"
 }

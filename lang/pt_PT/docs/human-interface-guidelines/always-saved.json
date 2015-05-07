@@ -1,0 +1,8 @@
+{
+    "Always Saved": "Sempre Guardado",
+    "Users should feel confident when using elementary; they should know that everything they see is saved and up to date.": "Os utilizadores deve sentir-se confiantes quando usarem elementary; devem saber que tudo o que veem é guardado e atualizado.",
+    "Apps in elementary should operate around an always-saved state. This means that changes the user makes are instantly applied and visible and that making the user manually save things is a legacy or specialized behavior.": "As apps no elementary devem operar em volta de um estado sempre-guardado. Isto significa que alterações que o utilizador faça são instantaneamente aplicadas e visíveis e que fazer o utilizador guardar manualmente coisas é um comportamento antigo ou especializado.",
+    "For example, a Song Info dialog should update the track information instantly without a user having to press a save button, user preferences should be applied as soon as the user manipulates the relevant widget, and closing an app should mean that reopening it will return to where the user left off.": "Por exemplo, um diálogo Informação da Música deve atualizar a informação da faixa instantaneamente sem que o utilizador tenha de pressionar um botão de guardar, preferências de utilizador devem ser aplicadas logo que o utilizador manipula o widget relevante, e fechar uma app deve significar que reabri-la retornará onde o utilizador a deixou.",
+    "Next Page:": "Página Seguinte:",
+    "Desktop Integration": "Integração no Ambiente de Trabalho"
+}

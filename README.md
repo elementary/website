@@ -1,8 +1,7 @@
 The New elementary.io
 ================
 
-We're focusing on getting the minimum viable product for our website up and running for the release of Freya. ~~To start, we're just getting a single-page download site ready for Freya. From there we will expand to a small number of pages as needed.~~ We'll want to make sure we migrate over any important information like docs before we can take the old site offline.
-
+A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya. 
 
 Project Organization
 ====================
@@ -37,8 +36,8 @@ Templating System
 
 * PHP-based
 * Pages go in root as .php files
-* Include `_templates/sitewide.php`, set any variables, then include `_templates/header.php` (see [code-of-conduct](https://github.com/elementary/mvp/blob/master/code-of-conduct.php) for an example) at top of page.
-* Include `_templates/footer.php` at bottom of page.
+* Include `_templates/sitewide.php`, set any variables, then `include $template['header'];` (see [code-of-conduct](https://github.com/elementary/mvp/blob/master/code-of-conduct.php) for an example) at top of page.
+* `include $template['footer'];` at bottom of page.
 * Page variables:
   * `$page['title']`
   * `$page['description']`
@@ -61,7 +60,9 @@ Simple Local Development
 
 For a simple local development environment, you will need:
 
-* PHP5
+* [A supported version of PHP](http://php.net/supported-versions.php)
+* `php5-json`
+* `php5-curl`
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
 

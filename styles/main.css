@@ -1,16 +1,17 @@
-/* Copyright 2015 elementary LLC.
+﻿/* Copyright 2015 elementary LLC.
 *
 * This file is part of elementaryos.org
 */
 
 html,
 body {
-    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Droid Sans', Helvetica, sans-serif;
     background-color: #fff;
     color: #333;
     fill: #333;
     margin: 0;
     font-weight: 400;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -35,7 +36,7 @@ a:focus {
 }
 
 h1 {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 32px;
     font-weight: 100;
     margin-top: 0;
@@ -44,13 +45,13 @@ h1 {
 
 @media (min-width: 966px) {
     h1 {
-        font-size: 48px;;
+        font-size: 48px;
     }
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0 0 28px 0;
     padding: 0;
 }
@@ -90,7 +91,7 @@ p.small-label {
 
 q {
     font-weight: 400;
-    font-family: "Satisfy";
+    font-family: 'Satisfy';
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -107,18 +108,26 @@ q:after {
     }
 }
 
-kbd {
-    color: #4D4D4D;
-    background-color: #E9E9E9;
-    background-image: linear-gradient(to bottom, #E9E9E9, #FFF);
-    border: 1px solid #A5A5A5;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #FFF,
-                inset 0 -2px 0 0 #D9D9D9;
-    font-family: monospace;
-    padding: 2px 4px;
-    -moz-user-select: none;
-    margin: 3px;
+hr {
+    border: none;
+    height: 1px;
+    background: #c9c9c9;
+}
+hr.fade-the-edges {
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE10+ */
+    background: -ms-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* FF3.6+ */
+    background: -moz-linear-gradient(left,  #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#c9c9c9), color-stop(100%,#ffffff));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* W3C */
+    background: linear-gradient(to right,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
 }
 
 img {
@@ -151,8 +160,8 @@ img.hero {
 
 .inline-tweet:after,
 .inline-tweet:after {
-    content: "";
-    font-family: "FontAwesome";
+    content: '';
+    font-family: 'FontAwesome';
     font-style: normal;
     font-weight: inherit;
     color: inherit;
@@ -171,8 +180,8 @@ img.hero {
 }
 
 .read-more:after {
-    content: "";
-    font-family: "FontAwesome";
+    content: '';
+    font-family: 'FontAwesome';
     font-style: normal;
     font-weight: inherit;
     color: inherit;
@@ -188,65 +197,80 @@ img.hero {
     padding-left: 10px;
 }
 
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
 /*********
 * NAVBAR *
 *********/
 
 nav {
     width: 100%;
-    height: 56px;
+    min-height: 56px;
     line-height: 56px;
 }
 
-nav > ul {
+nav > .nav-content {
+    margin: 0;
+    padding: 0;
+}
+
+nav > .nav-content > ul {
     margin: 0;
     padding: 0;
     list-style: none;
     max-width: 100%;
 }
 
-nav > .left {
+nav > .nav-content > .left {
     float: left;
     margin-left: 3px;
 }
 
-nav > .right {
+nav > .nav-content > .right {
     float: right;
     margin-right: 3px;
 }
 
-nav > ul > li {
-    margin: 0 6px;
+nav > .nav-content > ul > li {
+    margin: 0 10px;
     position: relative;
-    display: inline;
+    float: left;
 }
 
-nav > ul > li > a,
-nav > ul > li > a:visited {
+nav > .nav-content > ul > li > a,
+nav > .nav-content > ul > li > a:visited {
     margin: 0;
-    padding: 0;
+    padding: 0 6px;
     color: inherit;
     fill: inherit;
     opacity: 0.8;
+    display: inline-block;
 }
 
-nav > ul > li > a:focus {
+nav > .nav-content > ul > li > a:focus {
     text-decoration: none;
     color: #08c;
     fill: #08c;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:visited:hover {
+nav > .nav-content > ul > li > a:hover,
+nav > .nav-content > ul > li > a:visited:hover {
     opacity: 1;
 }
 
 nav .logomark {
-    display: inline-block;
+    margin: 0;
+    padding: 0;
     width: 32px;
     height: 32px;
     vertical-align: middle;
     line-height: 32px;
+}
+
+nav > .nav-content > ul > li > .logomark {
+    padding: 0;
 }
 
 nav .logomark .logomark-svg {
@@ -255,6 +279,24 @@ nav .logomark .logomark-svg {
 
 nav .logomark:focus .logomark-svg {
     fill: inherit;
+}
+
+@media only screen and (max-width : 520px) {
+
+    nav.nav {
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content {
+        width: 550px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    nav > .nav-content > .right {
+        float: left;
+    }
 }
 
 /*********
@@ -269,6 +311,7 @@ footer {
     text-align: center;
     font-size: 12px;
     color: inherit;
+    padding-top: 24px;
 }
 
 footer > p, footer > div > a, footer > ul {
@@ -344,7 +387,7 @@ footer ul li a:focus {
         margin-left: 24px;
     }
 
-    .column.half {
+    .row .column.half {
         width: 492px;
         margin: 32px 32px 0;
         vertical-align: top;
@@ -355,6 +398,11 @@ footer ul li a:focus {
         margin: 32px 32px 0;
         vertical-align: top;
     }
+}
+
+.column.half {
+    text-align: left;
+    vertical-align: middle;
 }
 
 .column.third p {
@@ -385,7 +433,12 @@ footer ul li a:focus {
     text-align: center;
 }
 
-.row ul {
+.row .row {
+    padding: 24px 0;
+}
+
+.row ul,
+.row ol {
     text-align: left;
 }
 
@@ -403,6 +456,7 @@ footer ul li a:focus {
 
 .row.alert {
     max-width: 704px;
+    padding: 24px;
     border-radius: 6px;
     border: 2px solid #333;
 }
@@ -431,6 +485,20 @@ footer ul li a:focus {
     margin: 8px 0 0;
 }
 
+.icon {
+    position: relative;
+    text-align: center;
+}
+
+@media (min-width: 444px) {
+    .icon {
+        position: absolute;
+    }
+    .icon-text {
+        padding-left: 88px;
+    }
+}
+
 /*********
 * Button *
 *********/
@@ -443,7 +511,7 @@ button,
     text-align: center;
     max-width: 250px;
 
-    font-size: 14px;
+    font-size: 16px;
     font-family: inherit;
     text-decoration: none;
     color: #333;
@@ -504,14 +572,56 @@ button.suggested-action,
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+.button.flat {
+    display: block;
+    font-weight: bold;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-width: 2px;
+    padding: 7px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light .button.flat {
+    color: #fff;
+    border-color: #fff;
+}
+
+.light .button.flat.active {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
+}
+
 #download {
     margin: 3px auto 6px;
 }
 
 #logotype {
-    max-width: 100%;
+    position: relative;
+    height: 66px;
     width: 454px;
+    max-width: 80%;
+    margin: 16px auto;
 }
+#logotype svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+}
+/*
+#logotype svg path {
+    fill: red;
+}
+*/
 
 .small-button {
     margin: 3px;
@@ -519,7 +629,7 @@ button.suggested-action,
     vertical-align: top;
 }
 .payment-button::before {
-    content: "$";
+    content: '$';
     font-size: smaller;
     margin-left: -3px;
     margin-right: 3px;
@@ -563,10 +673,10 @@ input:focus + .focus-reveal {
 * Input *
 ********/
 
-input[type="text"]:not(.button),
-input[type="text"]:focus,
-input[type="number"]:not(.button),
-input[type="number"]:focus {
+input[type='text']:not(.button),
+input[type='text']:focus,
+input[type='number']:not(.button),
+input[type='number']:focus {
     background-color: #fff;
     background-image: linear-gradient(to bottom,
                                   #fafafa,
@@ -588,11 +698,11 @@ input[type="number"]:focus {
 
     outline: 0;
 }
-input[type="text"]:not(.button) {
+input[type='text']:not(.button) {
     padding: 8px;
 }
 
-input[type="number"] {
+input[type='number'] {
     -moz-appearance: textfield;
 }
 
@@ -606,8 +716,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
+input[type='text']:focus,
+input[type='number']:focus {
     border-color: rgba(61, 155, 218, 0.80);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
@@ -658,6 +768,7 @@ input:focus:-ms-input-placeholder {
 
 .linked button,
 .linked .button {
+    display: inline-block;
     border-left-width: 0;
     border-radius: 0;
     margin: 0;
@@ -675,6 +786,15 @@ input:focus:-ms-input-placeholder {
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
+}
+
+.linked button.flat:first-child,
+.linked button.flat:active:first-child,
+.linked button.flat:active:hover:first-child,
+.linked .button.flat:first-child,
+.linked .button.flat:active:first-child,
+.linked .button.flat:active:hover:first-child {
+    border-width: 2px;
 }
 
 .linked button:last-child,
@@ -826,6 +946,15 @@ body.sliding {
     overflow-x: hidden; /* Hide scrollbars when animating sliders */
 }
 
+.float-left {
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+.clear,
+.clear-both {
+    clear: both;
+}
+
 /**********
 * Popover *
 **********/
@@ -853,7 +982,7 @@ body.sliding {
 }
 .popover .popover-content:before,
 .popover .popover-content:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 50%;
@@ -886,9 +1015,14 @@ body.sliding {
     max-height: 500px;
     overflow: auto;
 }
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .popover .popover-content ul {
         max-height: 300px;
+    }
+}
+@media (max-height: 450px) {
+    .popover .popover-content ul {
+        max-height: 200px;
     }
 }
 .popover .popover-content ul li {
@@ -913,4 +1047,12 @@ body.sliding {
 *****************/
 .browsers-list {
     width: 50px;
+}
+
+/*****************
+* Browsers icons *
+*****************/
+.docs img {
+    display: block;
+    margin: 0 auto;
 }

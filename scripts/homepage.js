@@ -1,5 +1,4 @@
 (function () {
-    var stripe_key = '';
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
     var previous_amount = 'amount-twenty-five';
@@ -17,7 +16,7 @@
             previous_amount = current_amount;
             current_amount = new_amount;
         }
-    }
+    };
     var amountBlur = function() {
         // If NOT valid OR empty.
         if (
@@ -31,7 +30,7 @@
             // Set the old amount as checked.
             $('#' + current_amount).addClass('checked');
         }
-    }
+    };
     // Listen for Clicking on Amounts
     $('.target-amount').click(amountClick);
     // Check Custom Amounts on Blur
@@ -39,7 +38,7 @@
 
     $('#download').click(function(){
         console.log('Pay ' + current_amount);
-        payment_amount = $('#' + current_amount).val() * 100;
+        var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
         if (payment_amount < payment_minimum) {
             open_download_overlay();
@@ -52,7 +51,7 @@
         StripeCheckout.open({
             key: stripe_key,
             token: function (token) {
-                console.log(token);
+                console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
                 open_download_overlay();
             },
@@ -64,23 +63,31 @@
     }
 
     function process_payment (amount, token) {
-        if ($('#amount-twenty-five').val() !== 0) {
+        var payment_http, $amount_twenty_five;
+
+        $amount_twenty_five = $('#amount-twenty-five');
+
+        if ($amount_twenty_five.val() !== 0) {
             $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
-            $('#amount-twenty-five').each(amountClick);
+            $amount_twenty_five.each(amountClick);
         }
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id);
+        payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
     }
 
     function open_download_overlay () {
+        var $open_modal;
+
+        $open_modal = $('.open-modal');
+
         console.log('Open the download overlay!');
-        $('.open-modal').leanModal({
+        $open_modal.leanModal({
             // Add this class to download buttons to make them close it.
             closeButton: '.close-modal',
         });
-        $('.open-modal').click();
+        $open_modal.click();
     }
 
     function detect_os() {
@@ -104,7 +111,7 @@
     }
 
     if (window.ga) {
-        var download_links = $('#download-modal .actions').find('a');
+        var download_links = $('#download-modal').find('.actions').find('a');
         var links_data = [
             { arch: '32-bit', method: 'HTTP' },
             { arch: '32-bit', method: 'Magnet' },
@@ -123,16 +130,12 @@
         }
     }
 
-    // Get the stripe key from the server
-    key_http = new XMLHttpRequest();
-    key_http.open('GET','./backend/payment.php',true);
-    key_http.onreadystatechange = function() {
-        if (key_http.readyState == 4 && key_http.status == 200) {
-            stripe_key = key_http.responseText;
-            console.log('Stripe key is: ' + stripe_key);
-        }
-    }
-    key_http.send();
+    // Carousel
+    var appCarousel = new Slider({
+        id: 'carousel-choices',
+        choices: ['photos', 'music', 'videos', 'midori']
+    });
+    appCarousel.slideTo('photos');
 
     console.log('Loaded homepage.js');
 })();
