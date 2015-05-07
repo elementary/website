@@ -34,7 +34,7 @@ $(function () {
         $('html, body').stop().animate({
             scrollTop: scrollTop
         }, 'normal', function () {
-            window.location.hash = '#'+href;
+            window.location.hash = href;
         });
 
         event.preventDefault();
