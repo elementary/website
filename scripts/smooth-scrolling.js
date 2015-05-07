@@ -8,26 +8,24 @@ $(function () {
         // Get link href
         var $anchor = $(this);
         var href = $anchor.attr('href');
+        var domain = new RegExp('/' + window.location.host + '/');
         if (
             href[0] !== '#' &&
-            href.indexOf(window.location.host) == -1
+            domain.test(encodeURIComponent(href))
         ) {
             return;
         }
 
         // This handles /path/current-page#element
-        href = href.split('#').pop();
+        href = href.split('#');
+        href = href.pop();
 
         // Get offset
         var scrollTop;
-        if (href === '') {
+        if (href === '#') {
             scrollTop = 0;
         } else {
-            var $target = $('#'+href);
-            if (!$target.length) { // Anchor target not in this page
-                return;
-            }
-            scrollTop = $target.offset().top;
+            scrollTop = $('#'+href).offset().top;
         }
 
         // Smooth scrolling

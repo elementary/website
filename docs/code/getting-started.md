@@ -85,15 +85,7 @@ At the time of this writing, elementary doesn't have a full SDK like Android or 
 
 ![](images/docs/code/the-basic-setup/scratch.png)
 
-The first piece of our simple "SDK" is the text editor Scratch. This comes by default with elementary OS. You may find it helpful to enable the File Manager extension by doing the following:
-
-1. Open Scratch
-2. Open the Menu in the top right corner (the gear icon)
-3. Choose **Preferences**
-4. Choose the tab **Extensions**
-5. Check the box for **Folder Manager**
-
-There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
+The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
@@ -225,7 +217,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 2. Now go into "hello-again" and create our directory structure including the "src" folder.
 
-3. Create "hello_again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
+3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
 
         /* Copyright 2013 YourName
         *
