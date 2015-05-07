@@ -8,24 +8,26 @@ $(function () {
         // Get link href
         var $anchor = $(this);
         var href = $anchor.attr('href');
-        var domain = new RegExp('/' + window.location.host + '/');
         if (
             href[0] !== '#' &&
-            domain.test(encodeURIComponent(href))
+            href.indexOf(window.location.host) == -1
         ) {
             return;
         }
 
         // This handles /path/current-page#element
-        href = href.split('#');
-        href = href.pop();
+        href = href.split('#').pop();
 
         // Get offset
         var scrollTop;
-        if (href === '#') {
+        if (href === '') {
             scrollTop = 0;
         } else {
-            scrollTop = $('#'+href).offset().top;
+            var $target = $('#'+href);
+            if (!$target.length) { // Anchor target not in this page
+                return;
+            }
+            scrollTop = $target.offset().top;
         }
 
         // Smooth scrolling
@@ -37,4 +39,13 @@ $(function () {
 
         event.preventDefault();
     });
+
+    // Fix anchors
+    // Let other scripts add links to DOM before fixing them
+    setTimeout(function () {
+        $('a[href^="#"]').each(function () {
+            var href = $(this).attr('href');
+            $(this).attr('href', window.location.pathname+href);
+        });
+    }, 0);
 });
