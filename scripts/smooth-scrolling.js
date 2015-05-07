@@ -44,8 +44,10 @@ $(function () {
     // Let other scripts add links to DOM before fixing them
     setTimeout(function () {
         $('a[href^="#"]').each(function () {
-            var href = $(this).attr('href');
-            $(this).attr('href', window.location.pathname+href);
+            if ( !$(this).hasClass('open-modal') ) {
+                var href = $(this).attr('href');
+                $(this).attr('href', window.location.pathname + href);
+            }
         });
     }, 0);
 });
