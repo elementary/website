@@ -10,7 +10,6 @@ if (php_sapi_name() != 'cli') {
 }
 
 $downloadUrl = $config['sourceforge_iso_amd64'];
-//http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-i386.20150411.iso/download
 
 $regex = '#^http://sourceforge\.net/projects/([a-zA-Z0-9\._-]+)/files/([a-zA-Z0-9/\._-]+)/download$#';
 if (!preg_match($regex, $downloadUrl, $matches)) {
