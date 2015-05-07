@@ -1,0 +1,20 @@
+{
+    "Capitalization": "Besar-Kecil Huruf",
+    "All textual user interface items, including labels, buttons, and menus, should use one of two capitalization styles: sentence case or title case.": "Setiap unsur teks pada antarmuka, termasuk label, tombol, dan menu, harus mengikuti salah satu kaidah penulisan: penulisan kalimat atau penulisan judul.",
+    "Sentence Case": "Kaidah Penulisan Kalimat",
+    "Sentence case means you capitalize like in a standard sentence or phrase.": "Kaidah ini mengikuti aturan ejaan standar penulisan kalimat.",
+    "Only the first letter of the phrase and the first letter of proper nouns are capitalized.\nUsed for labels and descriptive text.": "Hanya huruf pertama kalimat dan huruf pertama kata-kata tertentu yang ditulis dengan huruf besar.\nDiterapkan pada penulisan label dan teks deskripsi.",
+    "ex. &quot;Always open MPEG files with Marlin&quot; next to a checkbox.": "cth. \"Selalu buka berkas MPEG dengan Marlin\" di samping kotak centang.",
+    "ex. &quot;Read news feeds&quot; for the description of an RSS reader.": "cth. \"Membaca feed berita\" untuk mendeskripsikan pembaca RSS.",
+    "ex. &quot;This folder is empty&quot; in a file manager.": "cth. \"Folder ini kosong\" pada pengelola berkas.",
+    "Title Case": "Kaidah Penulisan Judul",
+    "Title case means you capitalize like a book or article title.": "Kaidah ini mengikuti aturan penulisan judul buku atau artikel.",
+    "Capitalize the first and last words.\nAll nouns, pronouns, adjectives, verbs, adverbs, and subordinate conjunctions (as, because, although) are capitalized.\nUsed for titles, buttons, menus, and most other widgets.": "Tulis huruf pertama pada kata pertama dan terakhir dengan huruf besar.\nHuruf pertama pada semua kata benda, kata ganti, kata sifat, kata kerja, dan kata keterangan ditulis dengan huruf besar.\nDiterapkan pada penulisan judul, label tombol, menu, dan sebagian besar widget lain.",
+    "ex. &quot;Open File&quot; title in a dialog.": "cth. \"Buka Berkas\" pada judul jendela dialog.",
+    "ex. &quot;Delete 13 Songs&quot; on a button.": "cth. \"Hapus 13 Lagu\" pada tombol.",
+    "ex. &quot;Search Contacts...&quot; in a search bar.": "cth. \"Cari Kontak...\" pada kolom pencarian.",
+    "Notes/Exceptions": "Catatan/Pengecualian",
+    "Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as &quot;Google,&quot; elementary should always be shown as &quot;elementary,&quot; and MPEG should always be shown as &quot;MPEG.&quot; If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.": "Beberapa kata benda harus ditulis sebagaimana adanya; yang berarti, misalnya, Google harus tetap ditulis \"Google\", elementary harus tetap ditulis \"elementary\", dan MPEG harus tetap ditulis \"MPEG\". Jika anda tidak yakin dengan ejaan resmi kata-kata tertentu, rujuklah panduan penulisan kata yang dimaksud.",
+    "Next Page:": "Halaman Selanjutnya:",
+    "Punctuation": "Tanda Baca"
+}
