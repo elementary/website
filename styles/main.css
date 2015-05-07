@@ -413,16 +413,6 @@ footer ul li a:focus {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
-}
-
-.column:hover img {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-    -webkit-filter: none;
-    filter: none;
 }
 
 .row {
