@@ -8,10 +8,7 @@ $(function () {
         // Get link href
         var $anchor = $(this);
         var href = $anchor.attr('href');
-        if (
-            href[0] !== '#' &&
-            href.indexOf(window.location.host) == -1
-        ) {
+        if ( href.indexOf('#') == -1 ) {
             return;
         }
 
