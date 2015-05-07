@@ -747,7 +747,7 @@ Below are some "do and don't" examples to consider when creating icons for your 
 
 -----------------------------
 
-_Portions of this page are derived from work created and [shared by the Android Open Source Project](https://code.google.com/policies.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/)._
+_Portions of this page are derived from work created and [shared by the Android Open Source Project](http://developer.android.com/license.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/)._
 
 ## MimeTypes {#mimetypes}
 
