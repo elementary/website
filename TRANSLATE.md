@@ -49,7 +49,7 @@ Alternatively, you can add the `data-l10n-off` attribute to a tag:
 
 You will need first to install the Transifex client: http://docs.transifex.com/developer/client/setup
 
-Then, run the following command: 
+Then, run the following command:
 
 ```bash
 tx pull
@@ -83,4 +83,4 @@ tx push -s -r <page-name>
 
 ## Adding a new language to the list on the website
 
-The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appendding it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
+The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appending it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
