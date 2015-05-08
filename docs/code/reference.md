@@ -22,7 +22,7 @@ than written", so having nicely written code is crucial.
 This guide is not finished, but has been discussed and partially approved by
 the elementary contributors. It is subject to changes in the near future.
 
-## 1. Whitespace {#whitespace}
+## Whitespace {#whitespace}
 
 There is no trailing whitespace at the end of a line, whether it's empty or
 not. There is also no empty line after declaring a function:
@@ -47,7 +47,7 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
     c = n * 2 + 4;
 
-## 2. Indentation {#indentation}
+## Indentation {#indentation}
 
 Vala code is indented using 4 spaces for consistency and readability.
 
@@ -87,7 +87,7 @@ Cuddled else and else if:
         print ("Terrible!");
     }
 
-## 3. Classes and files {#classes-and-files}
+## Classes and files {#classes-and-files}
 
 Only having one class per file is recommended.
 
@@ -95,7 +95,7 @@ All files have the same name of the class in them.
 
 Separate code into classes for easier extensibility.
 
-## 4. Comments {#comments}
+## Comments {#comments}
 
 Comments are either on the same line as the code or in a special line.
 
@@ -110,7 +110,7 @@ than good.
         l = n * 2 + 4;   // Clear l variable
     }
 
-## 5. Variable names, class names, function names {#variable-names-class-names-function-names}
+## Variable names, class names, function names {#variable-names-class-names-function-names}
 
 
     my_variable = 5;     // Variable names
@@ -128,7 +128,7 @@ than good.
 Also worth referring that there should be no Hungarian notation, and no mix of
 any kinds of notations.
 
-## 6. Vala namespaces {#vala-namespaces}
+## Vala namespaces {#vala-namespaces}
 
 Referring to GLib is not necessary. If you want to print something:
 
@@ -137,14 +137,14 @@ Referring to GLib is not necessary. If you want to print something:
 
 Opt for the second one, it's much cleaner.
 
-## 7. Columns per line {#columns-per-line}
+## Columns per line {#columns-per-line}
 
 Ideally, lines should have no more than 80 characters per line, because this
 is the default terminal size. However, as an exception, more characters could
 be added, because most people have wide-enough monitors nowadays. The hard
 limit is 120 characters.
 
-## 8. GPL Header {#gpl-header}
+## GPL Header {#gpl-header}
 
     /***
       Copyright (C) 2011-2012 Application Name Developers
