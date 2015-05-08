@@ -199,7 +199,7 @@ We mentioned this earlier, but it's worth mentioning again. Do not make comments
 
 #Proposing Design Changes {#proposing-design-changes}
 
-Our community has always been known for its strong focus on great design. But if you’re a newcomer to FOSS development, you might not know how to get developers to pay attention to you, as a designer. So, I’m going to try to give you a few tips about what you can do about getting your designs implemented.
+elementary has always been known for its strong focus on great design, but if you’re an up and coming designer you might not know how to get developers to pay attention to you. This reference guide is about how to effectively propose a design change in a way that make it more likely for your design to become implemented.
 
 ##Don't Make Demands {#dont-make-demands}
 
