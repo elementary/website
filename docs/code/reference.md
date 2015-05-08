@@ -199,7 +199,7 @@ We mentioned this earlier, but it's worth mentioning again. Do not make comments
 
 #Proposing Design Changes {#proposing-design-changes}
 
-elementary has always been known for its strong focus on great design, but if you’re an up and coming designer you might not know how to get developers to pay attention to you. This reference guide is about how to effectively propose a design change in a way that make it more likely for your design to become implemented.
+elementary has always been known for its strong focus on great design, but if you’re an up and coming designer you might not know how to get developers to pay attention to you. This reference guide is about how to effectively propose a design change in a way that makes it more likely for your design to become implemented.
 
 ##Don't Make Demands {#dont-make-demands}
 
