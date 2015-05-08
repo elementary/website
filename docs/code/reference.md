@@ -197,7 +197,7 @@ If a report affects you, mark it using the link. Do not confrim your own reports
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the green link that says, "Does this bug affect you?" under the report's title.
 
-#Proposing Design Changes {#propositing-design-changes}
+#Proposing Design Changes {#proposing-design-changes}
 
 Our community has always been known for its strong focus on great design. But if you’re a newcomer to FOSS development, you might not know how to get developers to pay attention to you, as a designer. So, I’m going to try to give you a few tips about what you can do about getting your designs implemented.
 
