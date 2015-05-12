@@ -1,3 +1,3 @@
 <?php
-header('HTTP/1.1 301 Moved Permanently');
+header($_SERVER['SERVER_PROTOCOL'].' 301 Moved Permanently');
 header('Location: /developer');
