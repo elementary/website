@@ -196,3 +196,31 @@ If a report affects you, mark it using the link. Do not confrim your own reports
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the green link that says, "Does this bug affect you?" under the report's title.
+
+# Proposing Design Changes {#proposing-design-changes}
+
+elementary has always been known for its strong focus on great design, but if you’re an up and coming designer you might not know how to get developers to pay attention to you. This reference guide is about how to effectively propose a design change in a way that makes it more likely for your design to become implemented.
+
+## Don't Make Demands {#dont-make-demands}
+
+Let’s say you spent the last few hours re-designing the Search Engine Manager dialog in Midori and you want to bring this work to the attention of Midori’s developers. You could file a bug report something like “Search engine popup sucks” and paste your mockup and be done. But that approach isn’t going to win you any friends and your report will probably be marked “opinion” or “invalid”. Instead, we should consider the amount of work it will take to implement the new design and try to present it in a way that gets developers excited about the overall vision without demanding 1,000 lines of code in one shot.
+
+## Use Blueprints {#use-blueprints}
+
+Firstly, we want to present the overall vision of our grand new design. So we should file a new blueprint (in this example, we’d file it [here](http://blueprints.launchpad.net/midori)). Name it something explicit and try to avoid titles that marginalize developer’s existing work. Something like “search-engine-manager-redesign” works just fine. In this blueprint we want to describe our motivations for the redesign. What are the problems with the current design and what does our new design aim to solve? Common reasons for a redesign can include minimizing window chrome, taking advantage of new toolkit elements, making the UI more consistent with other apps, etc. This is also a good place to link to that mockup we were talking about earlier. If your design is really involved, you can even link to an external specification (Google Docs work great for getting feedback) where you have a chance to really get into the nitty gritty of your idea.
+
+## Create Concise Work Items {#create-concise-work-items}
+
+Now that you’ve laid out the motivations for your design and explained the overall vision, you should break it up into small, actionable work items (also called bug reports). To continue our example, I would have reports like “Change Search Engine Manager Dialog to Popover”, “Re-order Search Engines with Drag and Drop”, “Open Search Engine Manager by clicking Search icon in URL Bar”, “Show edit and remove buttons next to engine in Search Engine Manager”, etc etc. Each bug report should describe just one small change. We do this for several reasons:
+
+* It allows developers to deny one request without denying all of them. Face it: your design isn’t perfect and it’s very possible that a developer isn’t going to like part of it. By breaking up your design into little pieces, it allows a developer to incorporate the changes they like and ignore the ones they don’t.
+* It makes your design less intimidating. A big redesign means lots of lines of code. If your changes look like too much of a hassle, you’re going to have a hard time getting a developer to work on them. But if you present small changes that can be incorporated a bit at a time, there’s a bigger chance that your whole design will eventually be implemented.
+* It allows developers to track their progress. Once again, big designs take time to implement. Even if a developer wants to implement the whole thing right away, they might not be able to. Giving them a way to “check off” pieces as they go makes it more likely that a part of your design won’t be forgotten about when it’s translated into code.
+
+## File Compelling Reports {#file-compelling-reports}
+
+Don’t forget to make your reports compelling. It’s up to you to sell the merits of each change. Cite the HIG, prior-art, user complaints, articles by other designers, and present your changes in a logical, non-opinionated, and concise manner. It also doesn’t hurt to speak in developer terms. Brush up on the names of widgets in Gtk and Granite, get familiar with available libraries like Zeitgeist and Unity, and don’t forget about system components like PulseAudio or Contractor. Also, whatever you do, don’t be presumptuous and confirm your own bug reports. You wouldn’t ask a friend for a favor and then answer yourself for them, so don’t do it here either. See [the above section](#reporting-bugs) for a refresher on filing good bug reports.
+
+## Be Prepared to Iterate {#be-prepared-to-iterate}
+
+Don’t be upset if a developer plainly states that they don’t want to implement your idea. Remember that they have plans too. You might have to go back to the drawing board a bit. Listen to their feedback. Your design might be a little over-engineered, it might conflict with other designs being worked on, or maybe it’s just in conflict with the goals and scope of the app. Remember that you’re in the position of requesting someone to devote their time to something. You’re asking for a favor. Don’t be afraid to argue a position within polite reason, but remember to stay humble.
