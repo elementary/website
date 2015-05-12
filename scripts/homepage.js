@@ -1,8 +1,8 @@
 (function () {
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
-    var previous_amount = 'amount-ten';
-    var current_amount = 'amount-ten';
+    var previous_amount = 'amount-twenty-five';
+    var current_amount = 'amount-twenty-five';
     var amountClick = function() {
         // Remove existing checks.
         $('.target-amount').removeClass('checked');
@@ -63,13 +63,13 @@
     }
 
     function process_payment (amount, token) {
-        var payment_http, $amount_ten;
+        var payment_http, $amount_twenty_five;
 
-        $amount_ten = $('#amount-ten');
+        $amount_twenty_five = $('#amount-twenty-five');
 
-        if ($amount_ten.val() !== 0) {
-            $('#amounts').html('<input type="hidden" id="amount-ten" value="0">');
-            $amount_ten.each(amountClick);
+        if ($amount_twenty_five.val() !== 0) {
+            $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
+            $amount_twenty_five.each(amountClick);
         }
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
