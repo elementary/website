@@ -140,7 +140,7 @@
             <div class="row">
                 <div class="column third">
                     <h2>Open Source</h2>
-                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved.php#desktop-development">Learn More</a></p>
+                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved#desktop-development">Learn More</a></p>
                 </div>
                 <div class="column third">
                     <h2>No Ads. No Spying.</h2>
