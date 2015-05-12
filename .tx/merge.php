@@ -1,4 +1,13 @@
 <?php
+/**
+ * Merge translations files. Useful when merging docs pages for instance.
+ * Usage: php .tx/merge.php -o output_resource input_resources...
+ * 
+ * Example: php .tx/merge.php -o docs/code/index docs/code/getting-started docs/code/reference
+ * This will create "lang/{lang}/docs/code/index.json", which contains translations from "getting-started" and "reference".
+ */
+
+// Do not allow to run this script over HTTP
 if (php_sapi_name() !== 'cli') {
 	die('This script must be run from command line.');
 }
@@ -7,6 +16,7 @@ function log_info($msg) { // Basic logger
     echo $msg . PHP_EOL;
 }
 
+// Parse arguments
 $input = array();
 $output = null;
 for ($i = 1; $i < count($argv); $i++) {
@@ -19,6 +29,7 @@ for ($i = 1; $i < count($argv); $i++) {
 	}
 }
 
+// No input/output?
 if (count($input) == 0 or empty($output)) {
 	die('Usage: '.$argv[0].' -o output_resource [input_resources ...]');
 }
