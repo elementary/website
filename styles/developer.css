@@ -6,7 +6,8 @@ body {
     fill: white;
 }
 
-nav > ul > li > a:focus {
+nav > .nav-content > ul > li > a:focus,
+nav > .nav-content > ul > li > a.current-page {
     color: #1F1F1F;
     fill: #1F1F1F;
 }
