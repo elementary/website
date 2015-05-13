@@ -250,7 +250,7 @@ nav > .nav-content > ul > li > a:visited {
 }
 
 nav > .nav-content > ul > li > a:focus,
-nav > .nav-content > ul > li > a.current-page, {
+nav > .nav-content > ul > li > a.current-page {
     text-decoration: none;
     color: #08c;
     fill: #08c;

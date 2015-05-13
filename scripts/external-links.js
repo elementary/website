@@ -1,5 +1,5 @@
 $(function () {
-    var current_page = window.location.pathname;
+    var current_page = window.location.href;
     $('a').not('[href*="mailto:"]').each(function () {
         var href = this.href;
         if ( href.indexOf(window.location.host) == -1 ) {
