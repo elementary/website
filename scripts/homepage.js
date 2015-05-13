@@ -40,6 +40,9 @@
         console.log('Pay ' + current_amount);
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
+        if (window.ga) {
+            ga('send', 'event', 'Freya Beta Download (Payment)', 'Homepage', payment_amount);
+        }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
         } else {
