@@ -50,12 +50,9 @@ a.column h3 {
     width: 100%;
     vertical-align: top;
     word-wrap: break-word;
-
     border: 1px solid transparent;
     border-radius: 4px;
-
     color: inherit;
-
     transition: border-color 150ms ease-in-out;
 }
 
