@@ -575,15 +575,20 @@ button.suggested-action,
     margin-bottom: 10px;
 }
 
-.light .button.flat {
+.light .button.flat,
+.light .button.flat .svg {
     color: #fff;
+    fill: #fff;
     border-color: #fff;
+    box-shadow: none;
 }
 
-.light .button.flat.active {
+.light .button.flat.active,
+.light .button.flat.active .svg {
     background-color: #fff;
     color: #333;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
+    fill: #333;
+    box-shadow: none;
 }
 
 #download {
@@ -607,11 +612,6 @@ button.suggested-action,
     bottom: 0;
     overflow: visible;
 }
-/*
-#logotype svg path {
-    fill: red;
-}
-*/
 
 .small-button {
     margin: 3px;
