@@ -74,10 +74,10 @@
                 <div class="row">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos" href="#photos"><i class="fa fa-photo"></i><span class="label">Photos</span></a>
-                        <a class="button flat music" href="#music"><i class="fa fa-music"></i><span class="label">Music</span></a>
-                        <a class="button flat videos" href="#videos"><i class="fa fa-video-camera"></i><span class="label">Videos</span></a>
-                        <a class="button flat midori" href="#midori"><i class="fa fa-globe"></i><span class="label">Midori</span></a>
+                        <a class="button flat photos" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
+                        <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
+                        <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
+                        <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
                     </div>
                 </div>
                 <div id="photos" class="slide row">

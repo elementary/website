@@ -25,6 +25,11 @@
 
 #carousel-choices .button {
     padding: 8px 16px;
+    line-height: 16px;
+}
+
+#carousel-choices svg {
+    vertical-align: middle;
 }
 
 #carousel-choices .label {
@@ -52,11 +57,15 @@
 }
 
 @media (min-width: 434px) {
+    #carousel-choices .button {
+    line-height: initial;
+    }
+
     #carousel-choices .label {
         display: initial;
     }
 
-    #carousel-choices .fa {
+    #carousel-choices svg {
         display: none;
     }
 }
