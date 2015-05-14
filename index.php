@@ -70,14 +70,14 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="slide-container slide-fixed-height light">
+            <div id="carousel" class="slide-container slide-fixed-height">
                 <div class="row">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos" href="#photos">Photos</a>
-                        <a class="button flat music" href="#music">Music</a>
-                        <a class="button flat videos" href="#videos">Videos</a>
-                        <a class="button flat midori" href="#midori">Midori</a>
+                        <a class="button flat photos" href="#photos"><i class="fa fa-photo"></i><span class="label">Photos</span></a>
+                        <a class="button flat music" href="#music"><i class="fa fa-music"></i><span class="label">Music</span></a>
+                        <a class="button flat videos" href="#videos"><i class="fa fa-video-camera"></i><span class="label">Videos</span></a>
+                        <a class="button flat midori" href="#midori"><i class="fa fa-globe"></i><span class="label">Midori</span></a>
                     </div>
                 </div>
                 <div id="photos" class="slide row">

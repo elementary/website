@@ -5,11 +5,6 @@
 
 #carousel {
     min-height: 100vh;
-    background-color: #0d6c7f;
-    background-image: url("../images/screenshots/background.jpg");
-    background-size: cover;
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     overflow: hidden;
 }
 
@@ -23,6 +18,16 @@
 
 #carousel-choices .button {
     padding: 8px 16px;
+    border-color: #666;
+}
+
+#carousel-choices .button.flat.active {
+    background-color: #666;
+    color: #fff;
+}
+
+#carousel-choices .label {
+    display: none;
 }
 
 #carousel .slide.row {
@@ -39,13 +44,44 @@
     margin: 0;
 }
 
-#carousel .slide > .column:nth-child(2) {
-    margin-top: 33px;
+@media (max-width: 404px) {
+    #carousel .slide > .column:nth-child(2) {
+      margin-top: -48px;
+    }
 }
 
-@media (max-width: 1350px) {
-    #carousel {
+@media (min-width: 434px) {
+    #carousel-choices .label {
+        display: initial;
+    }
+
+    #carousel-choices .fa {
         display: none;
+    }
+}
+
+@media (min-width: 1350px) {
+    #carousel {
+        background-color: #0d6c7f;
+        background-image: url("../images/screenshots/background.jpg");
+        background-size: cover;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+
+    #carousel .slide > .column:nth-child(2) {
+        margin-top: 33px;
+    }
+
+    #carousel-choices .button.flat {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    #carousel-choices .button.flat.active {
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
     }
 }
 
