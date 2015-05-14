@@ -70,7 +70,7 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="slide-container slide-fixed-height">
+            <div id="carousel" class="slide-container slide-fixed-height light">
                 <div class="row">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">

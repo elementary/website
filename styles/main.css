@@ -578,12 +578,13 @@ button.suggested-action,
 .light .button.flat {
     color: #fff;
     border-color: #fff;
+    box-shadow: none;
 }
 
 .light .button.flat.active {
     background-color: #fff;
     color: #333;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.30);
+    box-shadow: none;
 }
 
 #download {
