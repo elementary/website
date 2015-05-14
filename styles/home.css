@@ -4,6 +4,7 @@
 }
 
 #carousel {
+    background-color: #eee;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -18,11 +19,11 @@
 
 #carousel-choices .button {
     padding: 8px 16px;
-    border-color: #666;
+    border-color: #555;
 }
 
 #carousel-choices .button.flat.active {
-    background-color: #666;
+    background-color: #555;
     color: #fff;
 }
 
