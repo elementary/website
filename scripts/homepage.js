@@ -1,4 +1,4 @@
-(function () {
+$(function () {
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
     var previous_amount = 'amount-ten';

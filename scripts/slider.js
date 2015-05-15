@@ -67,11 +67,8 @@
         if ($contSwitcher.length) {
             biggestHeight = biggestHeight + $contSwitcher.outerHeight(true);
         }
+        this.elemSlidesContainer.css('min-height', biggestHeight);
 
-        // Wait for the DOM to be rendered
-        setTimeout(function () {
-            that.elemSlidesContainer.css('min-height', biggestHeight);
-        }, 0);
     };
 
     /**
