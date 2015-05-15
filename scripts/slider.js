@@ -46,9 +46,6 @@
                 }
             }
 
-            // Hide paragraph
-            paragraph.style.display = 'none';
-
             link.addEventListener('click', function (e) {
                 e.preventDefault();
                 that.slideTo(choiceId);
@@ -71,15 +68,15 @@
 
     /**
      * Show a specific slide.
-     * @param {String} choosenId The slide id.
+     * @param {String} chosenId The slide id.
      */
-    Slider.prototype.slideTo = function (choosenId) {
+    Slider.prototype.slideTo = function (chosenId) {
         var choicesList = this.choices;
         var choicesCtn = this.ctn;
 
         var currentParagraph = null;
-        var choosenParagraph = null;
-        var animationDirection = '';
+        var chosenParagraph = null;
+        var currentPosition = null;
 
         for (var i = 0; i < choicesList.length; i++) {
             var choiceId = choicesList[i];
@@ -87,84 +84,31 @@
             var link = choicesCtn.getElementsByClassName(choiceId)[0];
             var paragraph = document.getElementById(choiceId);
 
-            if (paragraph.style.display != 'none') { // This paragraph is currently visible
-                if (choosenParagraph) {
-                    animationDirection = 'right';
-                }
-                currentParagraph = paragraph;
-
-                if (choiceId == choosenId) { // Want to go to an already visible paragraph
-                    return;
-                }
-            }
-
-            if (choiceId == choosenId) {
+            if (choiceId == chosenId) {
                 link.classList.add('active');
-
-                if (currentParagraph) {
-                    animationDirection = 'left';
-                }
-                choosenParagraph = paragraph;
+                chosenParagraph = paragraph;
+                chosenParagraph.classList.add('active');
+                chosenParagraph.classList.remove('next');
+                chosenParagraph.classList.remove('previous');
+                currentPosition = i;
             } else {
                 link.classList.remove('active');
             }
-        }
 
-        // Should we make a nice transition?
-        if (animationDirection && transitionsSupported() &&
-            currentParagraph.classList.contains('slide') && choosenParagraph.classList.contains('slide')) {
-            document.body.classList.add('sliding');
-
-            currentParagraph.classList.add('slide-out');
-            choosenParagraph.classList.add('slide-in');
-
-            currentParagraph.classList.add('slide-'+animationDirection);
-            choosenParagraph.classList.add('slide-'+animationDirection);
-
-            if (animationDirection == 'left') {
-                currentParagraph.style.top = '0';
-                choosenParagraph.style.top = '-'+currentParagraph.clientHeight+'px';
-            } else {
-                choosenParagraph.style.top = '0';
-            }
-
-            choosenParagraph.style.display = 'block';
-
-            // Wait for the DOM to be rendered
-            setTimeout(function () {
-                currentParagraph.classList.add('sliding');
-                choosenParagraph.classList.add('sliding');
-
-                if (animationDirection == 'right') {
-                    currentParagraph.style.top = '-'+choosenParagraph.clientHeight+'px';
+            if (paragraph.classList.contains('active')) { // This paragraph is currently visible
+                currentParagraph = paragraph;
+                if (chosenParagraph != currentParagraph) {
+                    currentParagraph.classList.remove('active');
+                    if (i > currentPosition ) {
+                        paragraph.classList.add('next');
+                    } else {
+                        paragraph.classList.add('previous');
+                    }
                 }
-            }, 20);
-
-            var onFinish = function () {
-                choosenParagraph.removeEventListener('transitionend', onFinish);
-
-                currentParagraph.style.display = 'none';
-                currentParagraph.style.top = '0';
-                choosenParagraph.style.top = '0';
-
-                currentParagraph.classList.remove('sliding');
-                choosenParagraph.classList.remove('sliding');
-
-                currentParagraph.classList.remove('slide-out');
-                choosenParagraph.classList.remove('slide-in');
-
-                currentParagraph.classList.remove('slide-'+animationDirection);
-                choosenParagraph.classList.remove('slide-'+animationDirection);
-
-                document.body.classList.remove('sliding');
-            };
-            choosenParagraph.addEventListener('transitionend', onFinish);
-        } else {
-            if (currentParagraph) {
-                currentParagraph.style.display = 'none';
             }
-            choosenParagraph.style.display = 'block';
+
         }
+
     };
 
     // Export API

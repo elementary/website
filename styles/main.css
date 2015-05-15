@@ -910,36 +910,31 @@ i.fa.fa-close.close-modal {
 *********/
 
 .slide {
-    position: relative;
-    left: 0;
-}
-.slide.sliding {
-    transition: left 200ms linear;
-}
-.slide.slide-in.slide-left {
-    left: 100%;
-}
-.slide.slide-in.slide-right {
-    left: -100%;
-}
-.slide.sliding.slide-in {
-    left: 0;
-}
-.slide.sliding.slide-out.slide-left {
-    left: -100%;
-}
-.slide.sliding.slide-out.slide-right {
-    left: 100%;
+    float: left;
+    transition: all 200ms ease-in-out;
+    position: absolute;
 }
 
-body.sliding {
-    overflow-x: hidden; /* Hide scrollbars when animating sliders */
+.slide.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide.next {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.slide.previous {
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
 .float-left {
     float: left;
     margin: 0 .5em .5em 0;
 }
+
 .clear,
 .clear-both {
     clear: both;
