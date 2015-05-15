@@ -44,9 +44,11 @@
 }
 
 @media (max-width: 1350px) {
+
     #carousel {
         display: none;
     }
+
 }
 
 #carousel .column.alert img {
