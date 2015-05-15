@@ -100,9 +100,9 @@
                 if (chosenParagraph != currentParagraph) {
                     currentParagraph.classList.remove('active');
                     if (i > currentPosition ) {
-                        paragraph.classList.add('next');
+                        currentParagraph.classList.add('next');
                     } else {
-                        paragraph.classList.add('previous');
+                        currentParagraph.classList.add('previous');
                     }
                 }
             }
