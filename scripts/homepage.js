@@ -135,6 +135,8 @@
 
     // Carousel
     var appCarousel = new Slider({
+        slidesContainer: 'slide-container',
+        choicesContainer: 'choices-container',
         id: 'carousel-choices',
         choices: ['photos', 'music', 'videos', 'midori']
     });

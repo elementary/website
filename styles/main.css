@@ -930,6 +930,11 @@ i.fa.fa-close.close-modal {
     opacity: 0;
 }
 
+.slide.hide-headings h2,
+.slide.hide-headings h3 {
+    display: none;
+}
+
 .float-left {
     float: left;
     margin: 0 .5em .5em 0;

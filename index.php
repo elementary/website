@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div id="carousel" class="slide-container slide-fixed-height light">
-                <div class="row">
+                <div class="row choices-container">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
                         <a class="button flat photos active" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>

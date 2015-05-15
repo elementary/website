@@ -6,64 +6,72 @@
     /**
      * A slider.
      * @param {Object} options Slider options.
+     * @param {String} options.slidesContainer The slider container id.
+     * @param {String} options.choicesContainer The choices container id.
      * @param {String} options.id The slider id. The associated element should contain the choices' switch.
      * @param {String[]} options.choices The slider choices ids. Each id should refer to a slide.
      * @param {Boolean} options.hideHeadings Automatically hide slides headings.
      */
     var Slider = function (options) {
         this.id = options.id;
-        this.ctn = document.getElementById(this.id);
+        this.slidesContainer = options.slidesContainer;
+        this.choicesContainer = options.choicesContainer;
+        this.elemSlidesContainer = $('.'+this.slidesContainer);
+        this.elemChoicesContainer = $('.'+this.choicesContainer);
+        this.elemChoicesSwitcher = $('#'+this.id);
         this.choices = options.choices;
 
         var that = this;
 
         // Init
-        var choicesCtn = this.ctn;
+        var choicesSwitcher = this.elemChoicesSwitcher;
         var container = null;
-        var firstParagraph = null;
-        var maxHeight = 0;
-        var processChoice = function (choiceId) {
-            var link = choicesCtn.getElementsByClassName(choiceId)[0];
-            var paragraph = document.getElementById(choiceId);
-            if (!paragraph) {
-                console.log('ERR: could not find paragraph #'+choiceId);
+        var biggestHeight = 0;
+        var initializeChoice = function (choiceId) {
+
+            $link = $('.' + that.choicesContainer + ' .' + choiceId);
+            $Slide = $('#' + choiceId);
+
+            if (!$Slide.length) {
+                console.log('ERR: could not find slide #'+choiceId);
                 return;
             }
-            if (!container) { // First paragraph
-                firstParagraph = paragraph;
-                container = paragraph.parentNode;
-            }
-            if (container.classList.contains('slide-fixed-height')) {
-                maxHeight = Math.max(maxHeight, paragraph.offsetHeight);
-            }
 
-            // Hide heading
+            // Hide Headings
             if (options.hideHeadings) {
-                var heading = paragraph.getElementsByTagName('h2')[0]
-                    || paragraph.getElementsByTagName('h3')[0];
-                if (heading) {
-                    heading.style.display = 'none';
-                }
+                $Slide.addClass('hide-headings');
             }
 
-            link.addEventListener('click', function (e) {
+            // Increment biggestHeight
+            var newHeight = $Slide.outerHeight(true);
+            if ( newHeight > biggestHeight ) {
+                biggestHeight = newHeight;
+            }
+
+            // Slide to on Link.Click
+            $link.click(function(e) {
                 e.preventDefault();
                 that.slideTo(choiceId);
             });
+
+            $Slide.addClass('next');
+
         };
 
         for (var i = 0; i < this.choices.length; i++) {
-            processChoice(this.choices[i]);
+            initializeChoice(this.choices[i]);
         }
 
-        // If the slider has a fixed height
-        if (maxHeight) {
-            // Wait for the DOM to be rendered
-            setTimeout(function () {
-                var diff = container.offsetHeight - firstParagraph.offsetHeight;
-                container.style.minHeight = (maxHeight + diff)+'px';
-            }, 0);
+        // Add the switcher if that's in the container.
+        $contSwitcher = $('.' + this.slidesContainer + ' .' + this.choicesContainer);
+        if ($contSwitcher.length) {
+            biggestHeight = biggestHeight + $contSwitcher.outerHeight(true);
         }
+
+        // Wait for the DOM to be rendered
+        setTimeout(function () {
+            that.elemSlidesContainer.css('min-height', biggestHeight);
+        }, 0);
     };
 
     /**
@@ -72,36 +80,34 @@
      */
     Slider.prototype.slideTo = function (chosenId) {
         var choicesList = this.choices;
-        var choicesCtn = this.ctn;
+        var choicesContainer = this.choicesContainer;
 
-        var currentParagraph = null;
-        var chosenParagraph = null;
+        var currentSlide = null;
+        var chosenSlide = null;
 
         for (var i = 0; i < choicesList.length; i++) {
             var choiceId = choicesList[i];
 
-            var link = choicesCtn.getElementsByClassName(choiceId)[0];
-            var paragraph = document.getElementById(choiceId);
+            $link = $('.' + choicesContainer + ' .' + choiceId);
+            $Slide = $('#' + choiceId);
 
             if (choiceId == chosenId) {
-                link.classList.add('active');
-                chosenParagraph = paragraph;
-                chosenParagraph.classList.add('active');
-                chosenParagraph.classList.remove('next');
-                chosenParagraph.classList.remove('previous');
+                $link.addClass('active');
+                $chosenSlide = $Slide;
+                $chosenSlide.addClass('active').removeClass('next previous');
                 currentPosition = i;
             } else {
-                link.classList.remove('active');
+                $link.removeClass('active').addClass('previous');
             }
 
-            if (paragraph.classList.contains('active')) { // This paragraph is currently visible
-                currentParagraph = paragraph;
-                if (chosenParagraph != currentParagraph) {
-                    currentParagraph.classList.remove('active');
+            if ($Slide.hasClass('active')) { // This Slide is currently visible
+                $currentSlide = $Slide;
+                if ($chosenSlide != $currentSlide) {
+                    $currentSlide.removeClass('active');
                     if (i > currentPosition ) {
-                        currentParagraph.classList.add('next');
+                        $currentSlide.addClass('next');
                     } else {
-                        currentParagraph.classList.add('previous');
+                        $currentSlide.addClass('previous');
                     }
                 }
             }
