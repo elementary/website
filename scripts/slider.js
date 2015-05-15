@@ -76,7 +76,6 @@
 
         var currentParagraph = null;
         var chosenParagraph = null;
-        var currentPosition = null;
 
         for (var i = 0; i < choicesList.length; i++) {
             var choiceId = choicesList[i];
