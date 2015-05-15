@@ -64,7 +64,7 @@
             // Wait for the DOM to be rendered
             setTimeout(function () {
                 var diff = container.offsetHeight - firstParagraph.offsetHeight;
-                container.style.minHeight = (maxHeight + diff)+'px';
+                container.style.height = (maxHeight + diff)+'px';
             }, 0);
         }
     };
