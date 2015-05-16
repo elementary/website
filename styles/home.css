@@ -11,7 +11,7 @@
                                   );
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
 }
 
