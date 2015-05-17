@@ -5,6 +5,8 @@
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include '_templates/sitewide.php';
     include $template['header'];
+
+    $filesize = (int) file_get_contents(__DIR__.'/backend/iso-size.txt');
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = "<?php include __DIR__.'/backend/payment.php'; ?>";</script>
@@ -37,9 +39,9 @@
                             <?php
                         } else {
                             ?>
-                    <button id="amount-ten" value="10" class="small-button payment-button target-amount">10</button>
-                    <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount checked">25</button>
-                    <button id="amount-fifty" value="50" class="small-button payment-button target-amount">50</button>
+                    <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
+                    <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
+                    <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
                     <div class="column">
                         <sup class="pre-amount">$</sup>
                         <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
@@ -51,7 +53,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Download Freya</button>
-                <p class="small-label">893 MB (for PC or Mac)</p>
+                <p class="small-label"><?php echo round($filesize / 1000 / 1000); ?> MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
@@ -72,10 +74,10 @@
                 <div class="row">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos" href="#photos">Photos</a>
-                        <a class="button flat music" href="#music">Music</a>
-                        <a class="button flat videos" href="#videos">Videos</a>
-                        <a class="button flat midori" href="#midori">Midori</a>
+                        <a class="button flat photos" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
+                        <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
+                        <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
+                        <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
                     </div>
                 </div>
                 <div id="photos" class="slide row">
@@ -193,7 +195,7 @@
             <div class="row">
                 <div class="column third">
                     <h2>Open Source</h2>
-                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved.php#desktop-development">Learn More</a></p>
+                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved#desktop-development">Learn More</a></p>
                 </div>
                 <div class="column third">
                     <h2>No Ads. No Spying.</h2>

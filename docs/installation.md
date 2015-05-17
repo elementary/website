@@ -1,8 +1,5 @@
 # Installation {#installation}
 
-<div class="clear row" markdown="1">
-<div class="column half" markdown="1">
-
 ### Download elementary OS {#download-elementary-os}
 
 If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
@@ -11,9 +8,6 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 
 * If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.
 * If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).
-
-</div>
-<div class="column half" markdown="1">
 
 ### Recommended System Specifications {#recommended-system-specifications}
 
@@ -36,10 +30,6 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 </div>
-</div>
-</div>
-
-<div class="clear row" markdown="1">
 
 ### Creating an Install Drive {#creating-an-installation-medium}
 
@@ -71,7 +61,7 @@ Click "Start", then just wait for the process to finish.
 
 ### OS X, Ubuntu, and others
 
-![UNetbootin](images/docs/installation/unetbootin.png){.float-left}
+![UNetbootin](images/docs/installation/unetbootin.png)
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
@@ -82,10 +72,6 @@ Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a win
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
 </div>
-
-</div>
-
-<div class="clear row" markdown="1">
 
 ### Booting from the Install Drive {#booting-from-the-installation-medium}
 
@@ -115,8 +101,6 @@ In order to start the installation process, you must boot your computer from the
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
-
-</div>
 
 </div>
 

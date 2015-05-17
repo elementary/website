@@ -117,7 +117,7 @@
                         </p>
 
                         <div class="actions">
-                            <a class="button flat suggested-action" href="https://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                            <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                             <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
                             <a class="button flat" href="http://blog.elementary.io/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
                         </div>
@@ -157,7 +157,7 @@
                 <div class="heading">
                     <div class="row">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar http://elementary.io/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
-                        <p class="small-label"><a href="https://en.wikipedia.org/wiki/Marsha_Sinetar" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
+                        <p class="small-label"><a href="http://www.amazon.com/What-Love-Money-Will-Follow/dp/0440501601" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
                     </div>
                 </div>
 

@@ -1,0 +1,10 @@
+{
+    "User Workflow": "Alur Kerja Pengguna",
+    "Visible design is a large part of the user experience, but so is the user's workflow, or how they interact with an app. In this section, we cover a few important steps of a typical workflow:": "Desain yang nampak adalah bagian besar dari pengalaman pengguna, tetapi begitu juga alur kerja pengguna, atau bagaimana mereka berinteraksi dengan sebuah aplikasi. Di bagian ini, kita ulas beberapa langkah penting alur kerja yang umum:",
+    "<strong>First-Launch Experience</strong>: What the user sees the first time they use your app.": "<strong>Pengalaman Peluncuran-Pertama</strong>: Apa yang pengguna lihat saat pertama mereka menggunakan aplikasi anda.",
+    "<strong>Normal Launch</strong>: What happens when opening your app on a day-to-day basis.": "<strong>Peluncuran Normal</strong>: Apa yang terjadi saat membuka aplikasi anda hari demi hari.",
+    "<strong>Closing</strong>: What happens when closing your app.": "<strong>Menutup</strong>: Apa yang terjadi saat menutup aplikasi anda.",
+    "<strong>Background Tasks</strong>: How your app manages to do things invisibly in the background.": "<strong>Tugas Latar</strong>: Bagaimana aplikasi anda mengelola tugas-tugas yang tersembunyi di latar.",
+    "Next Page:": "Halaman Selanjutnya:",
+    "Always Provide an Undo": "Selalu Sediakan Pembatalan"
+}

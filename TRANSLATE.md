@@ -4,7 +4,7 @@ You can translate the website online on Transifex: https://www.transifex.com/pro
 
 You can propose new languages if they're not listed. Make sure to avoid requesting languages that already exist, for instance adding _Russian (Russia)_ when _Russian_ is available.
 
-Please read the [branding guidelines](http://elementaryos.org/journal/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
+Please read the [branding guidelines](http://old.elementaryos.org/journal/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
 
 ## Reviewing
 
@@ -25,6 +25,7 @@ You can add the `include_disabled=1` parameter to print disabled strings too. Th
 ## Changing a translation key
 
 If you want to change a translation key for an element, just add a `data-l10n-id` attribute:
+
 ```html
 <p data-l10n-id="mylongparagraph">Blablabla</p>
 ```
@@ -32,6 +33,7 @@ If you want to change a translation key for an element, just add a `data-l10n-id
 ## Disabling a translation
 
 To ignore a translation string, set it to `false` in `/lang/en/<page>.json`:
+
 ```js
 {
     "elementary OS": false // Can't be translated
@@ -47,21 +49,38 @@ Alternatively, you can add the `data-l10n-off` attribute to a tag:
 
 You will need first to install the Transifex client: http://docs.transifex.com/developer/client/setup
 
-Then, run the following command: 
-```shell
+Then, run the following command:
+
+```bash
 tx pull
 ```
 
 To pull a new language:
-```shell
+
+```bash
 tx pull -l <lang>
 ```
 
 To pull **all** translations, even new ones:
-```shell
+
+```bash
 tx pull -a
+```
+
+## Pushing new translation source files to Transifex
+
+When creating or updating a source file, translations needs to be updated. You can run these commands to extract translations from source files and publish them on Transifex:
+
+```bash
+.tx/prepush.sh # Update translation source files
+tx push -s # Push new translation source files to Transifex
+```
+
+If you know that you modified only one source file, it's better to push only this one:
+```bash
+tx push -s -r <page-name>
 ```
 
 ## Adding a new language to the list on the website
 
-The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appendding it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
+The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appending it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
