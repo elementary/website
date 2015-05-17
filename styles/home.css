@@ -328,7 +328,7 @@ span.cursor {
 span.search-term {
     margin-right: -8px;
     width: 14px;
-    transition: all 1s steps(2, end);
+    transition: all 1s steps(2, start);
     overflow: hidden;
 }
 
