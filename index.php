@@ -151,7 +151,7 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
-                            <span class="search-term">da</span>
+                            <span class="search-term inactive">da</span>
                             <span class="cursor">|</span>
                             <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
                         </div>
@@ -178,7 +178,7 @@
                         </div>
                         <div id="slingshot-search" class="previous view">
                             <span class="results-title">Applications</span>
-                            <div class="slingshot-search-results">
+                            <div class="slingshot-search-results inactive">
                             </div>
                         </div>
                     </div>

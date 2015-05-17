@@ -309,26 +309,37 @@ img.result-img {
     text-align: left;
 }
 
+.slingshot-search-results.inactive {
+    display: none;
+}
+
 span.search-term,
 span.cursor {
     position: relative;
-    top: -4px;
     display: inline-block;
     font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
     color: #333;
     text-shadow:none;
     height: 16px;
     font-size: 9pt;
-    line-height: 1px;
+    line-height: 18px;
 }
 
 span.search-term {
-    display: none;
     margin-right: -8px;
+    width: 14px;
+    transition: all 1s steps(2, end);
+    overflow: hidden;
+}
+
+span.search-term.inactive {
+    width: 0;
+    transition: none;
 }
 
 span.cursor {
     font-size: 12pt;
+    top: -4px;
     animation: blink 1.2s steps(5, start) infinite;
     -webkit-animation: blink 1.2s steps(5, start) infinite;
 
