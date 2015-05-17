@@ -12,7 +12,7 @@
             <div class="row">
                 <h1>International Store</h1>
                 <h4>This store is only for non-US orders.</h4>
-                <h4>In the US? Check out our <a href="../store">US store</a>.</h4>
+                <h4>In the US? Check out our <a href="store">US store</a>.</h4>
             </div>
             <div class="row">
                 <div class="column half store-product">
