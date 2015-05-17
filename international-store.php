@@ -21,6 +21,7 @@
                     <span class="price">$1.50 USD</span>
                     <select>
                         <option disabled="disabled" selected="selected" value="0">Quantity</option>
+                        <option value="0">None</option>
                         <option value="1">1 set</option>
                         <option value="2">2 sets</option>
                         <option value="3">3 sets</option>
@@ -40,6 +41,7 @@
                     <span class="price">$3.00 USD</span>
                     <select>
                         <option disabled="disabled" selected="selected" value="0">Quantity</option>
+                        <option value="0">None</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
