@@ -175,6 +175,8 @@
                     $('.slingshot .clear-icon').addClass ('inactive');
                     $('.slingshot .search-term').addClass ('inactive');
                     $('.slingshot-search-results').addClass ('inactive');
+                    $('.initial-result').removeClass ('inactive');
+                    $('.secondary-result').removeClass ('inactive');
                     $('.slingshot .linked').removeClass ('inactive');
                     $('.slingshot .entry').removeClass ('expanded');
                     $('#slingshot-grid-button').addClass ('active');
@@ -185,9 +187,13 @@
                 } else if( $('#slingshot-search').hasClass('active') ){
                     $('.slingshot .clear-icon').removeClass ('inactive');
                     $('.slingshot .search-term').removeClass ('inactive');
+                    $('.slingshot-search-results').removeClass ('inactive');
                     setTimeout(function(){
-                        $('.slingshot-search-results').removeClass ('inactive');
-                    }, 800);
+                        $('.initial-result').addClass ('inactive');
+                    }, 750);
+                    setTimeout(function(){
+                        $('.secondary-result').addClass ('inactive');
+                    }, 500);
                     $('.slingshot .linked').addClass ('inactive');
                     $('.slingshot .entry').addClass ('expanded');
                 }

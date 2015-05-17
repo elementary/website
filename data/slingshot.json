@@ -27,9 +27,11 @@
     ]
 ,
     "search": [
-        {"icon":"preferences-system-time","title":"<b>Da</b>te & Time","state":"top-result"},
-        {"icon":"office-calendar","title":"Calen<b>da</b>r","state":""},
-        {"icon":"software-properties","title":"Software & Up<b>da</b>tes","state":""},
-        {"icon":"system-software-update","title":"Software Up<b>da</b>ter","state":""}
+        {"icon":"postscript-viewer","title":"Document Viewer","state":"initial-result"},
+        {"icon":"preferences-system-time","title":"Date & Time","state":""},
+        {"icon":"office-calendar","title":"Calendar","state":"secondary-result"},
+        {"icon":"applets-screenshooter","title":"Screenshot","state":"initial-result"},
+        {"icon":"software-properties","title":"Software & Updates","state":""},
+        {"icon":"system-software-update","title":"Software Updater","state":""}
     ]
 }

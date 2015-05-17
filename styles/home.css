@@ -327,8 +327,8 @@ span.cursor {
 
 span.search-term {
     margin-right: -8px;
-    width: 14px;
-    transition: all 1s steps(2, start);
+    width: 19px;
+    transition: all 1.5s steps(3, start);
     overflow: hidden;
 }
 
@@ -342,7 +342,6 @@ span.cursor {
     top: -4px;
     animation: blink 1.2s steps(5, start) infinite;
     -webkit-animation: blink 1.2s steps(5, start) infinite;
-
 }
 
 @keyframes blink {
@@ -355,11 +354,6 @@ span.cursor {
     to {
         visibility: hidden;
     }
-}
-
-.top-result {
-    background-color: #c4c4c4;
-    padding: 12px 0;
 }
 
 span.results-title {
@@ -380,6 +374,18 @@ span.results-title {
     border-radius: 5px;
     margin-left: 12px;
     margin-right: 12px;
+}
+
+.initial-result.inactive {
+    display: none;
+}
+
+.secondary-result.inactive {
+    display: none;
+}
+
+.search-result:first-child {
+    background-color: #c4c4c4;
 }
 
 /* Animate */

@@ -151,7 +151,7 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive">da</span>
+                            <span class="search-term inactive">dat</span>
                             <span class="cursor">|</span>
                             <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
                         </div>
