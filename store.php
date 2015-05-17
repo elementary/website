@@ -1,6 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Store &sdot; elementary';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
 ?>
             <div class="row">

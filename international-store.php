@@ -1,14 +1,10 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Store &sdot; elementary';
+    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
 ?>
-            <style>
-                .store-product img{
-                    width: 100%;
-                    margin-bottom: 2em;
-                }
-            </style>
             <div class="row">
                 <h1>International Store</h1>
                 <h4>This store is only for non-US orders.</h4>
