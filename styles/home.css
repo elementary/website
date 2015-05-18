@@ -376,12 +376,6 @@ span.results-title {
     margin-right: 12px;
 }
 
-.initial-result.inactive,
-.secondary-result.inactive,
-.tertiary-result.inactive {
-    display: none;
-}
-
 .search-result:first-child {
     background-color: #c4c4c4;
 }
