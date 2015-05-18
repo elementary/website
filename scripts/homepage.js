@@ -150,9 +150,17 @@
                 var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
                 $(categoriesitems).appendTo(".slingshot-categories");
             });
-            $.each(data.search, function(i, f) {
-                var searchitems = '<div class="search-result '+f.state+'"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
-                $(searchitems).appendTo(".slingshot-search-results");
+            $.each(data.searchone, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchone");
+            });
+            $.each(data.searchtwo, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchtwo");
+            });
+            $.each(data.searchthree, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchthree");
             });
         });
     });
@@ -175,8 +183,6 @@
                     $('.slingshot .clear-icon').addClass ('inactive');
                     $('.slingshot .search-term').addClass ('inactive');
                     $('.slingshot-search-results').addClass ('inactive');
-                    $('.initial-result').removeClass ('inactive');
-                    $('.secondary-result').removeClass ('inactive');
                     $('.slingshot .linked').removeClass ('inactive');
                     $('.slingshot .entry').removeClass ('expanded');
                     $('#slingshot-grid-button').addClass ('active');
@@ -187,13 +193,15 @@
                 } else if( $('#slingshot-search').hasClass('active') ){
                     $('.slingshot .clear-icon').removeClass ('inactive');
                     $('.slingshot .search-term').removeClass ('inactive');
-                    $('.slingshot-search-results').removeClass ('inactive');
+                    $('.searchone').removeClass ('inactive');
                     setTimeout(function(){
-                        $('.initial-result').addClass ('inactive');
-                    }, 750);
+                        $('.slingshot-search-results').addClass ('inactive');
+                        $('.searchtwo').removeClass ('inactive');
+                    }, 700);
                     setTimeout(function(){
-                        $('.secondary-result').addClass ('inactive');
-                    }, 500);
+                        $('.slingshot-search-results').addClass ('inactive');
+                        $('.searchthree').removeClass ('inactive');
+                    }, 1200);
                     $('.slingshot .linked').addClass ('inactive');
                     $('.slingshot .entry').addClass ('expanded');
                 }

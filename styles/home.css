@@ -376,11 +376,9 @@ span.results-title {
     margin-right: 12px;
 }
 
-.initial-result.inactive {
-    display: none;
-}
-
-.secondary-result.inactive {
+.initial-result.inactive,
+.secondary-result.inactive,
+.tertiary-result.inactive {
     display: none;
 }
 

@@ -178,7 +178,11 @@
                         </div>
                         <div id="slingshot-search" class="previous view">
                             <span class="results-title">Applications</span>
-                            <div class="slingshot-search-results inactive">
+                            <div class="slingshot-search-results searchone inactive">
+                            </div>
+                            <div class="slingshot-search-results searchtwo inactive">
+                            </div>
+                            <div class="slingshot-search-results searchthree inactive">
                             </div>
                         </div>
                     </div>

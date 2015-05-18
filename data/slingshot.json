@@ -26,12 +26,25 @@
         {"icon":"utilities-terminal","title":"Terminal","position":"last-row"}
     ]
 ,
-    "search": [
-        {"icon":"postscript-viewer","title":"Document Viewer","state":"initial-result"},
-        {"icon":"preferences-system-time","title":"Date & Time","state":""},
-        {"icon":"office-calendar","title":"Calendar","state":"secondary-result"},
-        {"icon":"applets-screenshooter","title":"Screenshot","state":"initial-result"},
-        {"icon":"software-properties","title":"Software & Updates","state":""},
-        {"icon":"system-software-update","title":"Software Updater","state":""}
+    "searchone": [
+        {"icon":"postscript-viewer","title":"<b>D</b>ocument Viewer"},
+        {"icon":"preferences-system-time","title":"<b>D</b>ate & Time"},
+        {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
+        {"icon":"applets-screenshooter","title":"Screenshot"},
+        {"icon":"software-properties","title":"Software & Up<b>d</b>ates"},
+        {"icon":"system-software-update","title":"Software Up<b>d</b>ater"}
+    ]
+,
+    "searchtwo": [
+        {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
+        {"icon":"office-calendar","title":"Calen<b>da</b>r"},
+        {"icon":"software-properties","title":"Software & Up<b>da</b>tes"},
+        {"icon":"system-software-update","title":"Software Up<b>da</b>ter"}
+    ]
+,
+    "searchthree": [
+        {"icon":"preferences-system-time","title":"<b>Dat</b>e & Time"},
+        {"icon":"software-properties","title":"Software & Up<b>dat</b>es"},
+        {"icon":"system-software-update","title":"Software Up<b>dat</b>er"}
     ]
 }
