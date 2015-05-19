@@ -86,7 +86,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-photo-manager.svg" />
+                            <img src="images/icons/multimedia-photo-manager.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Photos</h3>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-audio-player.svg" />
+                            <img src="images/icons/multimedia-audio-player.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Music</h3>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-video-player.svg" />
+                            <img src="images/icons/multimedia-video-player.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Videos</h3>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/midori.svg" />
+                            <img src="images/icons/midori.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Midori</h3>
@@ -190,11 +190,11 @@
                 <div class="column half vertical-top text-left">
                     <h2>3 Ways to Explore</h2>
                     <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
-                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want</p>
+                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
                     <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
-                    <p>Know more or less what you're looking for? Find the app you want by browsing category view</p>
+                    <p>View your apps automatically organized into categories. Perfect for large collections.</p>
                     <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
-                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view</p>
+                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
                 </div>
             </div>
             <div class="row">
