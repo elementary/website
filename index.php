@@ -176,7 +176,7 @@
                             <div class="slingshot-categories">
                             </div>
                         </div>
-                        <div id="slingshot-search" class="previous view">
+                        <div id="slingshot-search" class="next view">
                             <span class="results-title">Applications</span>
                             <div class="slingshot-search-results searchone inactive">
                             </div>

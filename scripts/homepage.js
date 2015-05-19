@@ -167,45 +167,44 @@
 
     $(function() {
         window.setInterval(function() {
-            var slingshotViews = $('.slingshot .view');
-            slingshotViews.each(function() {
-                if( $(this).hasClass('previous') ){
-                    $(this).removeClass('previous');
-                    $(this).addClass('next');
-                } else if( $(this).hasClass('active') ){
-                    $(this).removeClass('active');
-                    $(this).addClass('previous');
-                } else if( $(this).hasClass('next') ){
-                    $(this).removeClass('next');
-                    $(this).addClass('active');
-                }
-                if( $('#slingshot-grid').hasClass('active') ){
-                    $('.slingshot .clear-icon').addClass ('inactive');
-                    $('.slingshot .search-term').addClass ('inactive');
+            if( $('#slingshot-grid').hasClass('active') ){
+                $('#slingshot-grid').addClass('previous');
+                $('#slingshot-grid').removeClass('active');
+                $('#slingshot-categories').removeClass('next');
+                $('#slingshot-categories').addClass('active');
+                $('#slingshot-categories-button').addClass ('active');
+                $('#slingshot-grid-button').removeClass ('active');
+            } else if( $('#slingshot-categories').hasClass('active') ){
+                $('#slingshot-categories').addClass('previous');
+                $('#slingshot-categories').removeClass('active');
+                $('#slingshot-search').removeClass('next');
+                $('#slingshot-search').addClass('active');
+                $('.slingshot .clear-icon').removeClass ('inactive');
+                $('.slingshot .search-term').removeClass ('inactive');
+                $('.searchone').removeClass ('inactive');
+                setTimeout(function(){
                     $('.slingshot-search-results').addClass ('inactive');
-                    $('.slingshot .linked').removeClass ('inactive');
-                    $('.slingshot .entry').removeClass ('expanded');
-                    $('#slingshot-grid-button').addClass ('active');
-                    $('#slingshot-categories-button').removeClass ('active');
-                } else if( $('#slingshot-categories').hasClass('active') ){
-                    $('#slingshot-categories-button').addClass ('active');
-                    $('#slingshot-grid-button').removeClass ('active');
-                } else if( $('#slingshot-search').hasClass('active') ){
-                    $('.slingshot .clear-icon').removeClass ('inactive');
-                    $('.slingshot .search-term').removeClass ('inactive');
-                    $('.searchone').removeClass ('inactive');
-                    setTimeout(function(){
-                        $('.slingshot-search-results').addClass ('inactive');
-                        $('.searchtwo').removeClass ('inactive');
-                    }, 700);
-                    setTimeout(function(){
-                        $('.slingshot-search-results').addClass ('inactive');
-                        $('.searchthree').removeClass ('inactive');
-                    }, 1200);
-                    $('.slingshot .linked').addClass ('inactive');
-                    $('.slingshot .entry').addClass ('expanded');
-                }
-            });
+                    $('.searchtwo').removeClass ('inactive');
+                }, 700);
+                setTimeout(function(){
+                    $('.slingshot-search-results').addClass ('inactive');
+                    $('.searchthree').removeClass ('inactive');
+                }, 1200);
+                $('.slingshot .linked').addClass ('inactive');
+                $('.slingshot .entry').addClass ('expanded');
+            } else if( $('#slingshot-search').hasClass('active') ){
+                $('#slingshot-search').addClass('next');
+                $('#slingshot-search').removeClass('active');
+                $('#slingshot-grid').removeClass('previous');
+                $('#slingshot-grid').addClass('active');
+                $('#slingshot-categories').addClass('next');
+                $('#slingshot-categories').removeClass('previous');
+                $('.slingshot .clear-icon, .slingshot .search-term, .slingshot-search-results').addClass ('inactive');
+                $('.slingshot .linked').removeClass ('inactive');
+                $('.slingshot .entry').removeClass ('expanded');
+                $('#slingshot-grid-button').addClass ('active');
+                $('#slingshot-categories-button').removeClass ('active');
+            }
         }, 3000);
     });
 
