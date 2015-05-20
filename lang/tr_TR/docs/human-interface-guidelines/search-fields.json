@@ -9,6 +9,6 @@
     "Search fields should contain hint text that describes what will be search. You can set this using the entry property <a href=\"http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Entry.placeholder_text\">&quot;placeholder_text&quot;</a>.": "Search fields should contain hint text that describes what will be search. You can set this using the entry property <a href=\"http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Entry.placeholder_text\">\"placeholder_text\"</a>.",
     "Most search fields should use the format &quot;Search OBJECTS&quot; where OBJECTS is something to be searched, like Contacts, Accounts, etc.": "Most search fields should use the format \"Search OBJECTS\" where OBJECTS is something to be searched, like Contacts, Accounts, etc.",
     "If the search field interacts with a search service, the hint text should be the name of that service such as &quot;Google&quot; or &quot;Yahoo!&quot;": "If the search field interacts with a search service, the hint text should be the name of that service such as \"Google\" or \"Yahoo!\"",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki Sayfa",
     "Windows": "Windows"
 }

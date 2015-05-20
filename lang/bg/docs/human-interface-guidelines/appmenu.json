@@ -8,6 +8,6 @@
     "If the app includes a &quot;preferences&quot; window, it should be available from the AppMenu.": "If the app includes a \"preferences\" window, it should be available from the AppMenu.",
     "There should be an item for the &quot;About&quot; dialog which contains links to the project's bug tracker, help, etc.": "There should be an item for the \"About\" dialog which contains links to the project's bug tracker, help, etc.",
     "If an AppMenu is displayed, a menu bar should not be, and vice-versa.": "If an AppMenu is displayed, a menu bar should not be, and vice-versa.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следваща страница:",
     "Search Fields": "Search Fields"
 }

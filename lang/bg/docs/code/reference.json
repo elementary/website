@@ -25,7 +25,7 @@
     "Only having one class per file is recommended.": "Only having one class per file is recommended.",
     "All files have the same name of the class in them.": "All files have the same name of the class in them.",
     "Separate code into classes for easier extensibility.": "Separate code into classes for easier extensibility.",
-    "4. Comments": "4. Comments",
+    "4. Comments": "4. Коментари",
     "Comments are either on the same line as the code or in a special line.": "Comments are either on the same line as the code or in a special line.",
     "Comments are indented alongside the code, and obvious comments do more harm\nthan good.": "Comments are indented alongside the code, and obvious comments do more harm\nthan good.",
     "/* User chose number five */\nif (a == 5) {\n    B = 4;           // Update value of b\n    c = 0;           // No need for c to be positive\n    l = n * 2 + 4;   // Clear l variable\n}": "/* User chose number five */\nif (a == 5) {\n    B = 4;           // Update value of b\n    c = 0;           // No need for c to be positive\n    l = n * 2 + 4;   // Clear l variable\n}",
