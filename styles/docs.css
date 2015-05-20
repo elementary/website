@@ -159,7 +159,8 @@ nav {
     z-index: 100;
 }
 
-.row.docs {
+.row.docs,
+.row.docs .slide {
     max-width: 800px;
 }
 

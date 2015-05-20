@@ -71,10 +71,10 @@
                 </div>
             </div>
             <div id="carousel" class="slide-container slide-fixed-height light">
-                <div class="row">
+                <div class="row choices-container">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
+                        <a class="button flat photos active" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
                         <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
                         <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
                         <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="music" class="slide row">
+                <div id="music" class="slide row next">
                     <div class="column">
                         <img src="images/screenshots/music.png" />
                     </div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="videos" class="slide row">
+                <div id="videos" class="slide row next">
                     <div class="column">
                         <img src="images/screenshots/videos.png" />
                     </div>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="midori" class="slide row">
+                <div id="midori" class="slide row next">
                     <div class="column">
                         <img src="images/screenshots/midori.png" />
                     </div>

@@ -1,4 +1,4 @@
-(function () {
+$(function() {
     // Parse user-agent to detect current plateform
     function detectOS() {
         var ua = window.navigator.userAgent;
@@ -16,11 +16,15 @@
 
     // Setup sliders
     var createUsbSlider = new Slider({
+        slidesContainer: 'creating-a-usb-choices-slide-container',
+        choicesContainer: 'creating-a-usb-choices-container',
         id: 'creating-a-usb-choices',
         choices: ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
         hideHeadings: true
     });
     var bootSlider = new Slider({
+        slidesContainer: 'booting-choices-slide-container',
+        choicesContainer: 'booting-choices-container',
         id: 'booting-choices',
         choices: ['booting-on-a-pc', 'booting-on-a-mac'],
         hideHeadings: true
