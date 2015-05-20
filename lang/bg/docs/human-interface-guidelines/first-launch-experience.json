@@ -8,6 +8,6 @@
     "If there is no content to show the user, provide actions they can act upon by using a simple <a href=\"/docs/human-interface-guidelines/welcome-screen\">welcome screen</a>. Allow them to open a document, add an account, import a CD, or whatever makes sense in the context of the app.": "If there is no content to show the user, provide actions they can act upon by using a simple <a href=\"/docs/human-interface-guidelines/welcome-screen\">welcome screen</a>. Allow them to open a document, add an account, import a CD, or whatever makes sense in the context of the app.",
     "Resetting the App": "Resetting the App",
     "If a user explicitly &quot;resets&quot; the app (ex. by deleting all songs in a music library or removing all mail accounts in a mail client), it should return to its first-launch state.": "If a user explicitly \"resets\" the app (ex. by deleting all songs in a music library or removing all mail accounts in a mail client), it should return to its first-launch state.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следваща страница:",
     "Normal Launch": "Normal Launch"
 }

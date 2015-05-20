@@ -10,6 +10,6 @@
     "The second set of labels consists of the actions that will assist a user in getting started with your app. To use Noise as an example again, one possible action is setting your music folder to an alternate location. First we name the action, &quot;Set Music Folder&quot;. Then, we describe what the action does, &quot;Find your Music folder and import its contents.&quot;": "The second set of labels consists of the actions that will assist a user in getting started with your app. To use Noise as an example again, one possible action is setting your music folder to an alternate location. First we name the action, \"Set Music Folder\". Then, we describe what the action does, \"Find your Music folder and import its contents.\"",
     "Iconography": "Iconography",
     "Grouped with each action is an icon that helps to quickly visualize it. Most of the time these will be Action icons, but you can use Places icons when importing or setting a location and even Apps icons if you must open a configuration utility.": "Grouped with each action is an icon that helps to quickly visualize it. Most of the time these will be Action icons, but you can use Places icons when importing or setting a location and even Apps icons if you must open a configuration utility.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следващата страница:",
     "Source List": "Source List"
 }

@@ -22,7 +22,7 @@
     "the disk icon": "levykuvaketta",
     "to choose the ISO that you downloaded previously.": "valitaksesi aiemmin lataamasi ISO-tiedoston.",
     "Click &quot;Start&quot;, then just wait for the process to finish.": "Napsauta \"Aloita\", odota sitten kunnes toimenpide valmistuu.",
-    "OS X, Ubuntu, and others": "OS X, Ubuntu, and others",
+    "OS X, Ubuntu, and others": "OS X, Ubuntu ja muut",
     "UNetbootin": "UNetbootin",
     "You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href=\"http://appnr.com/install/unetbootin\">click this link</a>. In OS X you'll have to download it from <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">its website</a> and open the downloaded file to install it.": "Tarvitset ohjelman nimeltä UNetbootin. Asentaaksesi sen Ubuntussa, <a href=\"http://appnr.com/install/unetbootin\">napsauta tätä linkkiä</a>. Jos käytössäsi on OS X, lataa UNetbootin osoitteesta <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">http://unetbootin.sourceforge.net/</a> ja avaa ladattu tiedosto asentaaksesi sen.",
     "Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:": "Avaa UNetbootin Ubuntun Unity-valikosta tai OS X:n Launchpadin kautta. Oheisen kaltainen ikkuna avautuu:",

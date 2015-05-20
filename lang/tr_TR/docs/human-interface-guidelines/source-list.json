@@ -1,5 +1,5 @@
 {
-    "Source List": "Source List",
+    "Source List": "Kaynak Listesi",
     "A source list may be used as a high-level form of navigation. Source lists are useful for showing different locations, bookmarks, or categories within your app.": "A source list may be used as a high-level form of navigation. Source lists are useful for showing different locations, bookmarks, or categories within your app.",
     "Sections": "Sections",
     "A source list may be separated into different collapsible sections, each with its own heading. For example, a file manager might have a section for bookmarked locations, a section for storage devices attached to the computer, and a section for network locations. These sections help group related items in the source list and allows the user to hide away sections they might not use.": "A source list may be separated into different collapsible sections, each with its own heading. For example, a file manager might have a section for bookmarked locations, a section for storage devices attached to the computer, and a section for network locations. These sections help group related items in the source list and allows the user to hide away sections they might not use.",
