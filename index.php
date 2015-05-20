@@ -35,7 +35,7 @@
                     <?php
                         if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
                             ?>
-                    <input type="hidden" id="amount-twenty-five" value="0">
+                    <input type="hidden" id="amount-ten" value="0">
                             <?php
                         } else {
                             ?>
