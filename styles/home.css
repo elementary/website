@@ -69,7 +69,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1350px) {
     #carousel {
         background-image: url("../images/screenshots/background.jpg");
         background-size: cover;
