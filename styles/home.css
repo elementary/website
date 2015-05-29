@@ -38,11 +38,6 @@
 #carousel .slide.row {
     max-width: initial;
 }
-@media (min-width: 1400px) {
-    #carousel .slide.row {
-        margin: 0 calc(50% - 700px);
-    }
-}
 
 #carousel .slide > .column {
     vertical-align: top;
@@ -74,15 +69,17 @@
     }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1400px) {
     #carousel {
         background-image: url("../images/screenshots/background.jpg");
         background-size: cover;
         height: 100vh;
     }
-
     #carousel .slide > .column:nth-child(2) {
         margin-top: 33px;
+    }
+    #carousel .slide.row {
+        margin: 0 calc(50% - 700px);
     }
 }
 
