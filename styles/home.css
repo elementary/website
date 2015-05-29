@@ -37,7 +37,11 @@
 
 #carousel .slide.row {
     max-width: initial;
-    margin: 0 calc(50% - 700px);
+}
+@media (min-width: 700px) {
+    #carousel .slide.row {
+        margin: 0 calc(50% - 700px);
+    }
 }
 
 #carousel .slide > .column {
