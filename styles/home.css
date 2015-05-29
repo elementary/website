@@ -38,7 +38,7 @@
 #carousel .slide.row {
     max-width: initial;
 }
-@media (min-width: 700px) {
+@media (min-width: 1400px) {
     #carousel .slide.row {
         margin: 0 calc(50% - 700px);
     }
