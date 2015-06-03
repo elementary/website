@@ -30,6 +30,9 @@ $(document).ready(function() {
     // Update javascript variable currentSection for sidebar and hash events.
     // Note: currentSection is docs element currently active
     var currentSection = null;
+    if (location.hash) {
+      currentSection = location.hash;
+    };
     var docElements = $('h1[id], h2[id]', '.docs');
     $(document).on('scroll', function (event) {
         // Check to see what is on screen right now
