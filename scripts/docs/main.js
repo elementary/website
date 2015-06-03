@@ -61,8 +61,8 @@ $(document).ready(function() {
         // Saves and removes id from element
         var id = currentSection.id;
         currentSection.id = '';
-        // Changes browser hash
-        location.hash = id;
+        // Changes browser hash without adding to history
+        history.replaceState(undefined, currentSection.html, location.href.split("#")[0]+"#"+id);
         // Puts id back on element
         currentSection.id = id;
     });
