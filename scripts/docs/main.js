@@ -25,7 +25,43 @@ $(document).ready(function() {
     // Anchor headings
     $('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
         $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
-    })
+    });
+
+    // Checks if the passed element is visible on the screen after scrolling
+    // Source: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+    function isCurrent(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    };
+
+    // Update javascript variable currentSection for sidebar and hash events.
+    // Note: currentSection is docs element currently active
+    var currentSection = null;
+    var docElements = $('[id]', '.docs');
+    $(document).on('scroll', function (event) {
+        // Check to see what is on screen right now
+        for (var i = 0; i < docElements.length; i++) {
+            if (isCurrent(docElements[i])) {
+                currentSection = docElements[i];
+            }
+        };
+    });
+
+    // Url hash selector. Only in docs class to avoid nav conflicts
+    $(document).on('scroll', function (event) {
+        console.log(currentSection);
+        // Dirty hack to prevent browser from scrolling to new hash
+        // Saves and removes id from element
+        var id = currentSection.id;
+        currentSection.id = '';
+        // Changes browser hash
+        location.hash = id;
+        // Puts id back on element
+        currentSection.id = id;
+    });
 
     // Sidebar
     var $headings = $('h1');
