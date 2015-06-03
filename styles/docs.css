@@ -221,7 +221,8 @@ nav {
     list-style-type: none;
 }
 
-.sidebar li.active {
+.sidebar li.active,
+.sidebar ul.active {
     background-color: rgba(0, 0, 0, 0.10);
 }
 
