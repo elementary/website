@@ -27,32 +27,33 @@ $(document).ready(function() {
         $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
     });
 
-    // Checks if the passed element is visible on the screen after scrolling
-    // Source: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
-    function isCurrent(elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    };
-
     // Update javascript variable currentSection for sidebar and hash events.
     // Note: currentSection is docs element currently active
     var currentSection = null;
-    var docElements = $('[id]', '.docs');
+    var docElements = $('h1[id], h2[id]', '.docs');
     $(document).on('scroll', function (event) {
         // Check to see what is on screen right now
         for (var i = 0; i < docElements.length; i++) {
-            if (isCurrent(docElements[i])) {
+            // Checks if the passed element is visible on the screen after scrolling
+            // Source: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(docElements[i]).offset().top;
+            var elemBottom = elemTop + $(docElements[i]).height();
+
+            // Sets currentSection if element is top most visible element
+            if ((elemTop <= docViewTop)) {
                 currentSection = docElements[i];
-            }
+            // Sets currentSection if element is more than 1/3 from the top
+            } else if (elemTop <= (docViewTop + ($(window).height() / 3) )) {
+                currentSection = docElements[i];
+            };
         };
     });
 
     // Url hash selector. Only in docs class to avoid nav conflicts
     $(document).on('scroll', function (event) {
-        console.log(currentSection);
         // Dirty hack to prevent browser from scrolling to new hash
         // Saves and removes id from element
         var id = currentSection.id;
