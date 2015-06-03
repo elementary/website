@@ -12,7 +12,7 @@
             </div>
             <div class="row">
                 <div class="column half store-product">
-                    <img src="http://placehold.it/600&text=Logomark Stickers" />
+                    <img src="http://placehold.it/600x600&text=Logomark+Stickers" />
                     <h5>Logomark Stickers (set of 3)</h5>
                     <span class="price">$1.50 USD</span>
                     <select>
@@ -32,7 +32,7 @@
                     <p class="desc">Set of blue 2-inch (5 cm) circle stickers with the elementary "e" logomark in white. Silkscreened on premium vinyl and layered with three coats of 100% UV protection meaning your stickers will stick for several years without fading.</p>
                 </div>
                 <div class="column half store-product">
-                    <img src="http://placehold.it/600&text=Logotype Sticker" />
+                    <img src="http://placehold.it/600x600&text=Logotype+Sticker" />
                     <h5>Logotype Sticker</h5>
                     <span class="price">$3.00 USD</span>
                     <select>
@@ -53,7 +53,11 @@
                 </div>
             </div>
             <div class="row">
-                <a href="#" class="button suggested-action">Checkout</a>
+                <a href="#international-store-modal" class="button suggested-action open-modal">Checkout</a>
+            </div>
+            <div id="international-store-modal" class="modal">
+                <i class="fa fa-close close-modal"></i>
+
             </div>
 
 <?php
