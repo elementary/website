@@ -33,12 +33,14 @@ Make sure to back your important data up to an external location such as a cloud
 
 ### Creating an Install Drive {#creating-an-installation-medium}
 
-<div class="text-center">
+<div class="creating-a-usb-choices-container text-center">
 <div id="creating-a-usb-choices" class="column linked">
 <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
 <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X &amp; Ubuntu</a>
 </div>
 </div>
+
+<div class="creating-a-usb-choices-slide-container" markdown="1">
 
 <div id="creating-a-usb-on-windows" class="slide" markdown="1">
 
@@ -73,16 +75,20 @@ Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that yo
 
 </div>
 
+</div>
+
 ### Booting from the Install Drive {#booting-from-the-installation-medium}
 
 In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.
 
-<div class="text-center">
+<div class="booting-choices-container text-center">
 <div id="booting-choices" class="column linked">
 <a class="button booting-on-a-pc" href="#booting-on-a-pc">Booting on a PC</a>
 <a class="button booting-on-a-mac" href="#booting-on-a-mac">Booting on a Mac</a>
 </div>
 </div>
+
+<div class="booting-choices-slide-container" markdown="1">
 
 <div id="booting-on-a-pc" class="slide" markdown="1">
 
@@ -94,6 +100,7 @@ In order to start the installation process, you must boot your computer from the
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
 
 </div>
+
 <div id="booting-on-a-mac" class="slide" markdown="1">
 
 ## Booting on a Mac
@@ -101,6 +108,8 @@ In order to start the installation process, you must boot your computer from the
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
+
+</div>
 
 </div>
 

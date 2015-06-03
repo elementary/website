@@ -1,7 +1,7 @@
 {
     "Human Interface Guidelines": "Human Interface Guidelines",
     "These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will allow you to decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:": "These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will allow you to decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:",
-    "Users will learn to use your application faster because it shares common elements that they are already familiar with.": "Users will learn to use your application faster because it shares common elements that they are already familiar with.",
+    "Users will learn to use your application faster because it shares common elements that they are already familiar with.": "Потребителите ще се научат да използват вашето приложение по-бързо, защото то споделя общи елементи, с които те вече са запознати.",
     "Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.": "Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.",
     "Your application will appear native to the desktop and share the same elegant look as default applications.": "Your application will appear native to the desktop and share the same elegant look as default applications.",
     "Your application will be easier to document because an expected behavior does not require explanation.": "Your application will be easier to document because an expected behavior does not require explanation.",
@@ -10,6 +10,6 @@
     "However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed. ": "However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed.",
     "For sections that have not yet been written, please refer to": "For sections that have not yet been written, please refer to",
     "The GNOME HIG": "The GNOME HIG",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следваща страница:",
     "Design Philosophy": "Design Philosophy"
 }

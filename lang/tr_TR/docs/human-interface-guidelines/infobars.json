@@ -7,5 +7,5 @@
     "<strong>Warning</strong>: Lets the user know something unexpected or bad may happen and provides an action to resolve it. Displays as yellow in the UI.": "<strong>Warning</strong>: Lets the user know something unexpected or bad may happen and provides an action to resolve it. Displays as yellow in the UI.",
     "<strong>Error</strong>: Informs the user of an error that has occurred and requires a user action to resolve it. Reserved for critical situations. Displays as red in the UI.": "<strong>Error</strong>: Informs the user of an error that has occurred and requires a user action to resolve it. Reserved for critical situations. Displays as red in the UI.",
     "Next Page:": "Next Page:",
-    "Welcome Screen": "Welcome Screen"
+    "Welcome Screen": "Karşılama Ekranı"
 }

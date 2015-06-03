@@ -1,15 +1,15 @@
 {
-    "Download elementary OS": "Download elementary OS",
-    "Blog": "Blog",
-    "Support": "Support",
-    "Store": "Store",
-    "Developer": "Developer",
-    "Get Involved": "Get Involved",
-    "Copyright &copy; 2015 elementary LLC. <a href=\"privacy-policy\">Privacy Policy</a>": "Copyright © 2015 elementary LLC. <a href=\"privacy-policy\">Privacy Policy</a>",
-    "Language": "Language",
-    "Change Site Language": "Change Site Language",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "The elementary OS website is built on modern web technologies your browser doesn’t support.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.",
-    "Dismiss": "Dismiss",
-    "Learn More": "Learn More"
+    "Download elementary OS": "엘리멘터리 OS 다운로드",
+    "Blog": "블로그",
+    "Support": "지원",
+    "Store": "상점",
+    "Developer": "개발자",
+    "Get Involved": "참여하기",
+    "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2015 elementary LLC. <a href=\"/privacy-policy\">개인정보 보호 정책</a>",
+    "Language": "언어",
+    "Change Site Language": "사이트 언어 변경",
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "엘리멘터리 OS 웹사이트는 모던 웹 기술로 만들어져, 당신의 브라우저에서는 지원되지 않습니다.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "해당 버전의 인터넷 익스플로러는 오래되어 버그나 보안 취약점이 있습니다. IE 11 혹은 다른 웹 브라우저로 <a href=\"http://browsehappy.com/\">업그레이드</a> 해 주세요.",
+    "Dismiss": "해제",
+    "Learn More": "더 알아보기"
 }

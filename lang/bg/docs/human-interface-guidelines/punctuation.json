@@ -1,5 +1,5 @@
 {
-    "Punctuation": "Punctuation",
+    "Punctuation": "Пунктуация",
     "Proper typography is important throughout elementary OS. Not just for consistency within the OS, but for following proper convention and presenting ourselves as a serious, professional platform.": "Proper typography is important throughout elementary OS. Not just for consistency within the OS, but for following proper convention and presenting ourselves as a serious, professional platform.",
     "Prevent Common Mistakes": "Prevent Common Mistakes",
     "Only use <strong>one space</strong> after a period.": "Only use <strong>one space</strong> after a period.",
@@ -31,6 +31,6 @@
     "<em>New line, space to the right.</em>": "<em>New line, space to the right.</em>",
     "If in doubt, refer to <a href=\"http://practicaltypography.com/\">Butterwick's Practical Typography</a>.": "If in doubt, refer to <a href=\"http://practicaltypography.com/\">Butterwick's Practical Typography</a>.",
     "These rules apply to the English language; other languages may have their own conventions which should be followed by translators.": "These rules apply to the English language; other languages may have their own conventions which should be followed by translators.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следваща страница:",
     "Using Ellipses": "Using Ellipses"
 }

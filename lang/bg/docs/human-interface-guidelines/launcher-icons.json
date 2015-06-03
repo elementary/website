@@ -9,7 +9,7 @@
     "Function well in the OS.": "Function well in the OS.",
     "Promote the brand story": "Promote the brand story",
     "App launcher icons are an opportunity to showcase the brand and hint at the story of what your app is about. Thus, you should:": "App launcher icons are an opportunity to showcase the brand and hint at the story of what your app is about. Thus, you should:",
-    "Create an icon that is unique and memorable.": "Create an icon that is unique and memorable.",
+    "Create an icon that is unique and memorable.": "Създайте икона, която е уникална и лесна за запомняне.",
     "Use a color scheme that suits your brand.": "Use a color scheme that suits your brand.",
     "Don't try to communicate too much with the icon. A simple icon will have more impact and be more memorable.": "Don't try to communicate too much with the icon. A simple icon will have more impact and be more memorable.",
     "Avoid including the application name in the icon.": "Avoid including the application name in the icon.",
@@ -36,6 +36,6 @@
     "Launcher icons should be 32-bit PNGs or SVGs with an alpha channel for transparency. You must provide 32, 48, 64, and 128 pixel versions of your launcher icon to ensure it looks the best throughout the OS.": "Launcher icons should be 32-bit PNGs or SVGs with an alpha channel for transparency. You must provide 32, 48, 64, and 128 pixel versions of your launcher icon to ensure it looks the best throughout the OS.",
     "You should also include a few pixels of padding in launcher icons to maintain a consistent visual weight with adjacent icons. This padding can also be used to make room for a subtle drop shadow, which can help ensure that launcher icons are legible across on any background color.": "You should also include a few pixels of padding in launcher icons to maintain a consistent visual weight with adjacent icons. This padding can also be used to make room for a subtle drop shadow, which can help ensure that launcher icons are legible across on any background color.",
     "<em>Portions of this page are derived from work created and <a href=\"https://code.google.com/policies.html\">shared by the Android Open Source Project</a> and used according to terms described in the <a href=\"http://creativecommons.org/licenses/by/2.5/\">Creative Commons 2.5 Attribution License</a>.</em>": "<em>Portions of this page are derived from work created and <a href=\"https://code.google.com/policies.html\">shared by the Android Open Source Project</a> and used according to terms described in the <a href=\"http://creativecommons.org/licenses/by/2.5/\">Creative Commons 2.5 Attribution License</a>.</em>",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Следваща страница:",
     "Sizes": "Sizes"
 }

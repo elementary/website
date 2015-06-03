@@ -22,7 +22,7 @@
     "the disk icon": "Ikona dysku",
     "to choose the ISO that you downloaded previously.": "by wybrać obraz ISO, który wcześniej pobrałeś",
     "Click &quot;Start&quot;, then just wait for the process to finish.": "Kliknij \"Start\", zaczekaj chwilę, aż proces zakończy się.",
-    "OS X, Ubuntu, and others": "OS X, Ubuntu, and others",
+    "OS X, Ubuntu, and others": "OS X, Ubuntu i inne",
     "UNetbootin": "Unetbootin",
     "You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href=\"http://appnr.com/install/unetbootin\">click this link</a>. In OS X you'll have to download it from <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">its website</a> and open the downloaded file to install it.": "Będziesz także potrzebował niewielkiej aplikacji zwanej Unetbootin. By zainstalować ją w Ubuntu, <a href=\"http://appnr.com/install/unetbootin\">kliknij tutaj</a>. W systemie OS X, pobierz ją <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">z tej strony</a>\nOtwórz pobrany plik by zainstalować program.",
     "Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:": "Otwórz Unetbootin używając menu Dash w Ubuntu lub menu Launchpad w OS X. Zobaczysz okno jak poniżej:",

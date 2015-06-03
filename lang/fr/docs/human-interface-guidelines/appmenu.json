@@ -1,13 +1,13 @@
 {
-    "AppMenu": "AppMenu",
+    "AppMenu": "Menu d'Application",
     "The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional &quot;File, Edit, View...&quot; menu bar.": "The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional \"File, Edit, View...\" menu bar.",
     "Usage": "Usage",
-    "You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.": "You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.",
-    "When adding items to your AppMenu, consider the following:": "When adding items to your AppMenu, consider the following:",
-    "Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.": "Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.",
-    "If the app includes a &quot;preferences&quot; window, it should be available from the AppMenu.": "If the app includes a \"preferences\" window, it should be available from the AppMenu.",
-    "There should be an item for the &quot;About&quot; dialog which contains links to the project's bug tracker, help, etc.": "There should be an item for the \"About\" dialog which contains links to the project's bug tracker, help, etc.",
-    "If an AppMenu is displayed, a menu bar should not be, and vice-versa.": "If an AppMenu is displayed, a menu bar should not be, and vice-versa.",
-    "Next Page:": "Next Page:",
-    "Search Fields": "Search Fields"
+    "You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.": "Vous devez d'abord réfléchir si votre application a besoin de ce widget. Même si la plupart en ont une, votre application n'a pas nécessairement besoin d'un Menu d'Application.",
+    "When adding items to your AppMenu, consider the following:": "Quand vous ajoutez des éléments à votre Menu d'Application, tenez compte des point suivants :",
+    "Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.": "Les éléments doivent être cohérents et utiles. Il n'est pas convenable de dupliquer des éléments qui se trouvent dans votre interface principale ici.",
+    "If the app includes a &quot;preferences&quot; window, it should be available from the AppMenu.": "Si l'application inclut une fenêtre de préférences, elle doit être accessible depuis le Menu d'Application",
+    "There should be an item for the &quot;About&quot; dialog which contains links to the project's bug tracker, help, etc.": "Il doit y avoir un élément pour le message d'À Propos contenant des liens menant vers le traqueur de bugs du projet, l'aide, etc.",
+    "If an AppMenu is displayed, a menu bar should not be, and vice-versa.": "Si un Menu d'Application est affiché, une barre de menu ne devrait pas, et vice-versa.",
+    "Next Page:": "Page Suivante :",
+    "Search Fields": "Les Champs de Recherche"
 }
