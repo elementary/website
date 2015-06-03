@@ -27,13 +27,15 @@ $(document).ready(function() {
         $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
     });
 
-    // Update javascript variable currentSection for sidebar and hash events.
-    // Note: currentSection is docs element currently active
+    // Update javascript variable currentSection
+    var docElements = $('h1[id], h2[id]', '.docs');
+
     var currentSection = null;
     if (location.hash) {
       currentSection = location.hash;
+    } else {
+      currentSection = docElements[0];
     };
-    var docElements = $('h1[id], h2[id]', '.docs');
     $(document).on('scroll', function (event) {
         // Check to see what is on screen right now
         for (var i = 0; i < docElements.length; i++) {
@@ -57,14 +59,8 @@ $(document).ready(function() {
 
     // Url hash selector. Only in docs class to avoid nav conflicts
     $(document).on('scroll', function (event) {
-        // Dirty hack to prevent browser from scrolling to new hash
-        // Saves and removes id from element
-        var id = currentSection.id;
-        currentSection.id = '';
         // Changes browser hash without adding to history
-        history.replaceState(undefined, currentSection.html, location.href.split("#")[0]+"#"+id);
-        // Puts id back on element
-        currentSection.id = id;
+        history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
     });
 
     // Sidebar
