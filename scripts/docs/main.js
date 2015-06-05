@@ -97,7 +97,7 @@ $(document).ready(function() {
             if ($currentLink.parent().parent().is('.sidebar')) {
                 $currentLink.parent().addClass('active');
             } else {
-              ($currentLink.parent().parent().addClass('active'));
+              ($currentLink.parent().parent().prev('li').addClass('active'));
             };
         });
         $(window).scroll(); // Trigger event
