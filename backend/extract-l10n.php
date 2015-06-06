@@ -88,7 +88,7 @@ if ($isMarkdown) {
 } else {
 	chdir('..');
 
-	$sitewide['root'] = '/';
+	$_SERVER['DOCUMENT_ROOT'] = dirname(__DIR__);
 
 	define('HTML_I18N', 1); // Do not start output buffering twice
 	ob_start(function ($input) use($l10n) {
