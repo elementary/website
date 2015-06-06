@@ -104,10 +104,12 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 @media (max-width: 1080px) {
+
     .button.flat {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .actions {
@@ -157,16 +159,20 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 @media (max-width: 985px) {
+
     .charts .doughnuts-ctn {
         margin-left: 0;
     }
+
     .charts .doughnuts-ctn .doughnut {
         display: inline-block;
         margin: 4px;
     }
+
 }
 
 @media (max-width: 360px) {
+
     .charts .doughnuts-ctn .doughnut {
         width: 70px;
         height: 70px;
@@ -175,6 +181,7 @@ section:nth-child(6) .button.flat.suggested-action:focus {
     .charts .doughnuts-ctn .doughnut .doughnut-label {
         padding: 4px 0;
     }
+
 }
 
 .doughnut.fixed .doughnut-count {
@@ -240,21 +247,26 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 @media (max-width: 888px) {
+
     .web-browser {
         width: 96%;
         height: auto;
         margin: 24px 2%;
         padding: 110px 130px 40px 130px;
     }
+
     .web-browser > .actions {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
 }
 
 @media (max-width: 600px) {
+
     .web-browser {
         background-image: url("../images/get-involved/web-development-mobile.svg");
         padding: 80px 24px 24px 24px;
     }
+
 }

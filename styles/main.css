@@ -44,9 +44,11 @@ h1 {
 }
 
 @media (min-width: 966px) {
+
     h1 {
         font-size: 48px;
     }
+
 }
 
 h2 {
@@ -103,9 +105,11 @@ q:after {
 }
 
 @media (max-width: 414px) {
+
     q {
         font-size: 24px;
     }
+
 }
 
 hr {
@@ -113,6 +117,7 @@ hr {
     height: 1px;
     background: #c9c9c9;
 }
+
 hr.fade-the-edges {
     /* IE6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
@@ -197,9 +202,17 @@ img.hero {
     padding-left: 10px;
 }
 
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
 
 /*********
 * NAVBAR *
@@ -297,6 +310,7 @@ nav .logomark:focus .logomark-svg {
     nav > .nav-content > .right {
         float: left;
     }
+
 }
 
 /*********
@@ -333,6 +347,7 @@ footer .popover {
 }
 
 @media (min-width: 375px) {
+
     footer > p {
         float: left;
     }
@@ -344,6 +359,7 @@ footer .popover {
     footer > .popover {
         float: left;
     }
+
 }
 
 footer ul li {
@@ -383,6 +399,7 @@ footer ul li a:focus {
 }
 
 @media (min-width: 444px) {
+
     .column+.column {
         margin-left: 24px;
     }
@@ -398,6 +415,7 @@ footer ul li a:focus {
         margin: 32px 32px 0;
         vertical-align: top;
     }
+
 }
 
 .column.half {
@@ -481,12 +499,15 @@ footer ul li a:focus {
 }
 
 @media (min-width: 444px) {
+
     .icon {
         position: absolute;
     }
+
     .icon-text {
         padding-left: 88px;
     }
+
 }
 
 /*********
@@ -500,31 +521,24 @@ button,
     padding: 16px 32px;
     text-align: center;
     max-width: 250px;
-
     font-size: 16px;
     font-family: inherit;
     text-decoration: none;
     color: #333;
-
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                                   transparent,
                                   transparent 50%,
                                   rgba(0, 0, 0, 0.04)
                                   );
-
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
                 inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
                 0 1px 0 0 rgba(255, 255, 255, 0.15);
-
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
-
     transition: all 100ms ease-in;
-
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
@@ -618,6 +632,7 @@ button.suggested-action,
     padding: 8px 16px;
     vertical-align: top;
 }
+
 .payment-button::before {
     content: '$';
     font-size: smaller;
@@ -625,6 +640,7 @@ button.suggested-action,
     margin-right: 3px;
     vertical-align: super;
 }
+
 .pre-amount {
     color: #333;
     margin-left: 14px;
@@ -633,30 +649,37 @@ button.suggested-action,
     position: absolute;
     pointer-events: none;
 }
+
 #amount-custom {
     width: 100%;
     max-width: 170px;
     margin: 3px 0;
     padding: 9px;
 }
+
 .focus-reveal {
     opacity: 0 !important;
     transition: 250ms all;
     margin: 0 3px;
     width: 190px;
 }
+
 input:focus + .focus-reveal {
     opacity: 0.8 !important;
     transition: 250ms all;
 }
+
 @media (min-width: 444px) {
+
     #amount-custom {
         width: 117px;
         margin: 3px;
     }
+
     .focus-reveal {
         width: auto;
     }
+
 }
 
 /********
@@ -672,22 +695,18 @@ input[type='number']:focus {
                                   #fafafa,
                                   #fdfdfd
                                   );
-
     border: 1px solid rgba(0, 0, 0, 0.22);
     border-radius: 3px;
-
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.04),
                 inset 0 0 0 1px rgba(0, 0, 0, 0.02),
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
-
     color: #323232;
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
-
     transition: all 200ms ease-out;
     background-clip: padding-box;
-
     outline: 0;
 }
+
 input[type='text']:not(.button) {
     padding: 8px;
 }
@@ -711,7 +730,6 @@ input[type='number']:focus {
     border-color: rgba(61, 155, 218, 0.80);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.30);
-
     transition: all 200ms ease-in;
     outline: none;
 }
@@ -724,24 +742,31 @@ input:focus:invalid {
 .button::-webkit-input-placeholder {
     color: #333;
 }
+
 .button:-moz-placeholder {
     color: #333;
 }
+
 .button::-moz-placeholder {
     color: #333;
 }
+
 .button:-ms-input-placeholder {
     color: #333;
 }
+
 input:focus::-webkit-input-placeholder {
     color:transparent;
 }
+
 input:focus:-moz-placeholder {
     color:transparent;
 }
+
 input:focus::-moz-placeholder {
     color:transparent;
 }
+
 input:focus:-ms-input-placeholder {
     color:transparent;
 }
@@ -809,10 +834,8 @@ input:focus:-ms-input-placeholder {
     top: 0px;
     padding: 2em;
     width: 100%;
-
     background-color: #e35d4f;
     color: white;
-
     box-sizing: border-box;
 }
 
@@ -961,6 +984,7 @@ i.fa.fa-close.close-modal {
 .popover {
     position: relative;
 }
+
 .popover .popover-content {
     position: absolute;
     left: -70px;
@@ -975,10 +999,10 @@ i.fa.fa-close.close-modal {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: left;
     opacity: 0;
-
     visibility: hidden;
     transition: visibility 0s 250ms, opacity 250ms;
 }
+
 .popover .popover-content:before,
 .popover .popover-content:after {
     content: '';
@@ -990,51 +1014,66 @@ i.fa.fa-close.close-modal {
     height: 0px;
     border: 10px outset transparent;
 }
+
 .popover .popover-content:before {
     bottom: -20px;
     border-top: 10px solid rgba(0,0,0,0.2);
 }
+
 .popover .popover-content:after {
     bottom: -18px;
     border-top: 10px solid white;
 }
+
 .popover.active .popover-content {
     visibility: visible;
     opacity: 1;
     transition: opacity 250ms;
 }
+
 .popover .popover-content strong {
     display: inline-block;
     margin: 15px;
     margin-bottom: 10px;
 }
+
 .popover .popover-content ul {
     margin: 5px 0;
     padding: 0;
     max-height: 500px;
     overflow: auto;
 }
+
 @media (max-height: 700px) {
+
     .popover .popover-content ul {
         max-height: 300px;
     }
+
 }
+
 @media (max-height: 450px) {
+
     .popover .popover-content ul {
         max-height: 200px;
     }
+
 }
+
 .popover .popover-content ul li {
     display: block;
     margin: 0;
 }
+
 .popover .popover-content ul li a {
     display: block;
     padding: 5px 15px;
 }
+
 .popover .popover-content ul li a:hover {
     background-color: #e0e0e0;
 }
+
 .popover .popover-content hr {
     background: #e0e0e0;
     height: 1px;
