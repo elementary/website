@@ -75,9 +75,11 @@
         background-size: cover;
         height: 100vh;
     }
-
     #carousel .slide > .column:nth-child(2) {
         margin-top: 33px;
+    }
+    #carousel .slide.row {
+        margin: 0 calc(50% - 700px);
     }
 }
 

@@ -143,4 +143,4 @@ $(function () {
     appCarousel.slideTo('photos');
 
     console.log('Loaded homepage.js');
-})();
+});
