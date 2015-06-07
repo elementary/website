@@ -10,6 +10,6 @@
     "More features means more work on documentation, translations, etc.": "More features means more work on documentation, translations, etc.",
     "Think in Modules": "Think in Modules",
     "Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through <a href=\"/docs/human-interface-guidelines/contractor\">Contractor</a> or over <a href=\"http://www.freedesktop.org/wiki/Software/dbus\" title=\"View D-Bus docs from FreeDesktop.Org\">D-Bus</a>. This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).": "Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through <a href=\"/docs/human-interface-guidelines/contractor\">Contractor</a> or over <a href=\"http://www.freedesktop.org/wiki/Software/dbus\" title=\"View D-Bus docs from FreeDesktop.Org\">D-Bus</a>. This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki sayfa:",
     "Avoid Configuration": "Avoid Configuration"
 }

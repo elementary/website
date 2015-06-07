@@ -1,5 +1,5 @@
 {
-    "Buttons": "Buttons",
+    "Buttons": "Butonlar",
     "Buttons are an incredibly important widget to understand since your app will undoubtedly contain them. ": "Buttons are an incredibly important widget to understand since your app will undoubtedly contain them.",
     "Toolbar Buttons": "Toolbar Buttons",
     "Labeling": "Labeling",
@@ -7,7 +7,7 @@
     "Tooltips": "Tooltips",
     "All Toolbar Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.": "All Toolbar Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.",
     "Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.": "Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.",
-    "Text Buttons": "Text Buttons",
+    "Text Buttons": "Yazı Butonları",
     "Text Button labels should be done in Title Case.": "Text Button labels should be done in Title Case.",
     "Like menu items, Text Button labels should consist of an Action or a Location but not a status. Make sure that a button's label clearly describes what will happen when it is pressed.": "Like menu items, Text Button labels should consist of an Action or a Location but not a status. Make sure that a button's label clearly describes what will happen when it is pressed.",
     "&quot;Remove Account&quot;, &quot;Transfer to Jim's Laptop&quot;, and &quot;Import 20 Songs&quot; are good labels.": "\"Remove Account\", \"Transfer to Jim's Laptop\", and \"Import 20 Songs\" are good labels.",

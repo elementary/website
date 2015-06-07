@@ -1,7 +1,7 @@
 {
     "Concision": "Concisión",
     "Always work to make your app instantly understandable. The main function of your app should be immediately apparent. You can do this in a number of ways, but one of the best ways is by sticking to a principal of concision.": "Always work to make your app instantly understandable. The main function of your app should be immediately apparent. You can do this in a number of ways, but one of the best ways is by sticking to a principal of concision.",
-    "Avoid Feature Bloat": "Avoid Feature Bloat",
+    "Avoid Feature Bloat": "Evitar el Exceso de Características",
     "It's often very tempting to continue adding more and more features into your application. However, it is important to recognize that every new feature has a price. Specifically, every time you add a new feature:": "It's often very tempting to continue adding more and more features into your application. However, it is important to recognize that every new feature has a price. Specifically, every time you add a new feature:",
     "Your application gets slower, consumes more resources, and takes up more disk space.": "Su aplicación es más lenta, consume más recursos, y ocupa más espacio en disco.",
     "Your application's interface becomes more cluttered and thus harder to use.": "Your application's interface becomes more cluttered and thus harder to use.",

@@ -6,6 +6,6 @@
     "Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.": "Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.",
     "If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.": "If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.",
     "Don’t display pathnames in window titles, only the current destination. If you have two paths that are very similar it will be hard to distinguish them when displaying the full path. If you only show the destination, the distinction is clear.": "Don’t display pathnames in window titles, only the current destination. If you have two paths that are very similar it will be hard to distinguish them when displaying the full path. If you only show the destination, the distinction is clear.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki sayfa:",
     "Checkboxes &amp; Switches": "Checkboxes & Switches"
 }

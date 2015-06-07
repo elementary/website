@@ -8,6 +8,6 @@
     "If the item acted upon is one of many items visible, such as in an icon view, be sure to display results in a way that is directly related to the item such as in a context menu.": "If the item acted upon is one of many items visible, such as in an icon view, be sure to display results in a way that is directly related to the item such as in a context menu.",
     "If the item acted upon is the only item currently visible, such as a web page or a contact in Dexter, contractor can be displayed in a toolbar menu.": "If the item acted upon is the only item currently visible, such as a web page or a contact in Dexter, contractor can be displayed in a toolbar menu.",
     "Never display the target app's name. The menu string is the intended display name for that app. Doing so can lead to redundant messages such as, &quot;Set image as wallpaper (wallpaper)&quot; and it is always irrelevant to a user's needs.": "Never display the target app's name. The menu string is the intended display name for that app. Doing so can lead to redundant messages such as, \"Set image as wallpaper (wallpaper)\" and it is always irrelevant to a user's needs.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki sayfa:",
     "Dock Integration": "Dock Integration"
 }

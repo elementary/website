@@ -1,8 +1,8 @@
 {
-    "Buttons": "Buttons",
+    "Buttons": "Knoppen",
     "Buttons are an incredibly important widget to understand since your app will undoubtedly contain them. ": "Buttons are an incredibly important widget to understand since your app will undoubtedly contain them.",
-    "Toolbar Buttons": "Toolbar Buttons",
-    "Labeling": "Labeling",
+    "Toolbar Buttons": "Taakbalk knoppen",
+    "Labeling": "Labelen",
     "Toolbar Buttons are almost always icon-only and do not provide a button border. They should not be accompanied by a label.": "Toolbar Buttons are almost always icon-only and do not provide a button border. They should not be accompanied by a label.",
     "Tooltips": "Tooltips",
     "All Toolbar Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.": "All Toolbar Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.",
