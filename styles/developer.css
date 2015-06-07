@@ -46,9 +46,11 @@ footer ul li a:focus i.fa {
 }
 
 @media (max-width: 1176px) {
+  
     .dev-section {
         border-left-width: 0;
     }
+
 }
 
 .dev-section:last-child {
