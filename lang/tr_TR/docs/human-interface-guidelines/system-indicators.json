@@ -7,6 +7,6 @@
     "<strong>You want a persistent/smaller launcher.</strong> ​Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.": "<strong>You want a persistent/smaller launcher.</strong> ​Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.",
     "<strong>The application is for IM, IRC, e-mail, news-reading, or music playback.</strong> Instead, integrate the application with the existing messaging or sound menus.": "<strong>The application is for IM, IRC, e-mail, news-reading, or music playback.</strong> Instead, integrate the application with the existing messaging or sound menus.",
     "See also: <a href=\"http://design.canonical.com/2010/04/notification-area/\">Farewell To The Notification Area</a> by Matthew Paul Thomas": "See also: <a href=\"http://design.canonical.com/2010/04/notification-area/\">Farewell To The Notification Area</a> by Matthew Paul Thomas",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki sayfa:",
     "UI Toolkit Elements": "UI Toolkit Elements"
 }

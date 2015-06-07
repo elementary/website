@@ -9,6 +9,6 @@
     "A badge shows a count of actionable items which your app manages. It's purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.": "A badge shows a count of actionable items which your app manages. It's purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.",
     "<strong>Good Example</strong>: Unread messages in Geary": "<strong>Good Example</strong>: Unread messages in Geary",
     "<strong>Bad Example</strong>: Total number of Photos in Shotwell": "<strong>Bad Example</strong>: Total number of Photos in Shotwell",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Sonraki sayfa:",
     "System Indicators": "System Indicators"
 }

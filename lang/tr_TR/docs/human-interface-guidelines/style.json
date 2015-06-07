@@ -1,8 +1,8 @@
 {
-    "Style": "Style",
+    "Style": "Stil",
     "elementary Icons have a distinctive visual style that is inspired in part by the <a href=\"http://tango.freedesktop.org/Tango_Desktop_Project\">Tango Icons</a>. Icons on elementary share several common design elements.": "elementary Icons have a distinctive visual style that is inspired in part by the <a href=\"http://tango.freedesktop.org/Tango_Desktop_Project\">Tango Icons</a>. Icons on elementary share several common design elements.",
     "Design Elements": "Design Elements",
-    "Shape": "Shape",
+    "Shape": "Biçim",
     "Icons should have a distinctive shape/silhouette to improve recognition. The shape should not be too complicated, but not every icon should be a rounded rectangle.": "Icons should have a distinctive shape/silhouette to improve recognition. The shape should not be too complicated, but not every icon should be a rounded rectangle.",
     "Outline": "Outline",
     "All elementary Icons, and shapes within the icons, are stroked with a thin outline to improve contrast. At low resolutions the stroke size is 1px. The stroke should <em>not</em> scale along with the icon, it should remain 1px.": "All elementary Icons, and shapes within the icons, are stroked with a thin outline to improve contrast. At low resolutions the stroke size is 1px. The stroke should <em>not</em> scale along with the icon, it should remain 1px.",

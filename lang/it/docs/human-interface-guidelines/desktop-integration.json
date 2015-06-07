@@ -5,6 +5,6 @@
     "<strong>Contractor</strong>. elementary provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.": "<strong>Contractor</strong>. elementary provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.",
     "<strong>Using System Indicators</strong>. elementary uses indicator applets in the panel that allow your application to provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.": "<strong>Using System Indicators</strong>. elementary uses indicator applets in the panel that allow your application to provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.",
     "<strong>Integrating with the Dock</strong>. elementary ships with a great dock that supports the Unity Launcher API. This allows your application to provide notification badges, progress indicators, and more.": "<strong>Integrating with the Dock</strong>. elementary ships with a great dock that supports the Unity Launcher API. This allows your application to provide notification badges, progress indicators, and more.",
-    "Next Page:": "Next Page:",
+    "Next Page:": "Pagina Successiva:",
     "App Launchers": "App Launchers"
 }

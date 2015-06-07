@@ -4,5 +4,5 @@
     "Apps in elementary should operate around an always-saved state. This means that changes the user makes are instantly applied and visible and that making the user manually save things is a legacy or specialized behavior.": "Aplikasi di elementary harus beroperasi dalam keadaan selalu-menyimpan. Ini artinya setiap perubahan yang pengguna buat secara instan diterapkan dan nampak, dan membuat pengguna secara manual menyimpan sesuatu adalah perilaku khusus atau spesial.",
     "For example, a Song Info dialog should update the track information instantly without a user having to press a save button, user preferences should be applied as soon as the user manipulates the relevant widget, and closing an app should mean that reopening it will return to where the user left off.": "Sebagai contoh, dialog Info Lagu harus memutakhirkan informasi trek secara instan tanpa pengguna harus menekan tombol simpan, preferensi pengguna harus diterapkan sesaat pengguna memanipulasi widget terkait, dan menutup aplikasi harus berarti bahwa saat membukanya lagi akan kembali seperti saat pengguna menutupnya.",
     "Next Page:": "Halaman Selanjutnya:",
-    "Desktop Integration": "Integrasi Desktop"
+    "Desktop Integration": "Integrasi Destop"
 }

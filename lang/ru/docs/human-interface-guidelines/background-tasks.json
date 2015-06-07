@@ -1,10 +1,10 @@
 {
-    "Background Tasks": "Background Tasks",
-    "Closing the App Window": "Closing the App Window",
+    "Background Tasks": "Фоновые задачи",
+    "Closing the App Window": "Закрытие окна приложения",
     "It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be &quot;hidden&quot;. If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app backend should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.": "It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be \"hidden\". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app backend should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.",
-    "Re-Opening the App Window": "Re-Opening the App Window",
+    "Re-Opening the App Window": "открыть заново окно приложения",
     "If the user re-opens the app while the background process is still executing, the app should be exactly where it would be if the window had been open the whole time. For example, the terminal should show any terminal output, the music player should be on the same page it was when closed, and the browser should come back to the page it was on previously. For more details, see the discussion of app state on a <a href=\"/docs/read/human-interface-guidelines/normal-launch\">Normal Launch</a>.": "If the user re-opens the app while the background process is still executing, the app should be exactly where it would be if the window had been open the whole time. For example, the terminal should show any terminal output, the music player should be on the same page it was when closed, and the browser should come back to the page it was on previously. For more details, see the discussion of app state on a <a href=\"/docs/read/human-interface-guidelines/normal-launch\">Normal Launch</a>.",
-    "See also: <a href=\"http://design.canonical.com/2011/03/quit/\">That's It, We're Quitting</a> by Matthew Paul Thomas": "See also: <a href=\"http://design.canonical.com/2011/03/quit/\">That's It, We're Quitting</a> by Matthew Paul Thomas",
-    "Next Page:": "Next Page:",
-    "Always Saved": "Always Saved"
+    "See also: <a href=\"http://design.canonical.com/2011/03/quit/\">That's It, We're Quitting</a> by Matthew Paul Thomas": "Смотрите также: <a href=\"http://design.canonical.com/2011/03/quit/\">Мы закончили</a> Мэтью Пол Томас",
+    "Next Page:": "Следующая страница",
+    "Always Saved": "Всегда Сохранять"
 }
