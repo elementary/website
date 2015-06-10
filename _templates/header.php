@@ -111,6 +111,7 @@ $l10n->begin_html_translation();
             ga('set', 'anonymizeIp', true);
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
+            ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang);
         </script>
         <?php } ?>
 
