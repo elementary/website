@@ -1,5 +1,0 @@
-{
-    "Naming Menu Items": "Nomi delle Voci di Menu",
-    "Menu items should have names that are either actions or locations, never descriptions. Make sure menu items are concise, but also fully describe the action that will be performed when they are clicked.": "Le voci di menu dovrebbero avere nomi che siano azioni o posizioni, mai descrizioni. Assicurarsi che le voci di menu siano concise, ma che descrivano anche pienamente l'azione che verrà eseguita una volta cliccate.",
-    "&quot;Find in Page...&quot; is acceptable as it clearly describes the action that will be performed when the item is clicked. &quot;Software Up to Date&quot; is not acceptable. What happens if I click this item? Where will it take me? What will it do? The outcome is uncertain.": "\"Trova nella Pagina...\" è accettabile dato che descrive chiaramente quale azione verrà eseguita quando il tasto sarà cliccato. \"Il Software è Aggiornato\" non è accettabile. Cosa accade quando viene cliccato? Dove mi porterà? Cosa farà? Il risultato è incerto."
-}

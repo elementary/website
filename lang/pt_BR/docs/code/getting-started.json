@@ -141,7 +141,7 @@
     "We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out <a href=\"http://www.cmake.org/cmake/help/documentation.html\">CMake's documentation</a>.": "We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out <a href=\"http://www.cmake.org/cmake/help/documentation.html\">CMake's documentation</a>.",
     "Review": "Revisão",
     "Let's review what all we've learned to do:": "Vamos revisar o que todos nós arendemos a fazer:",
-    "Create a new Gtk app using <code>Gtk.Window</code>, <code>Gtk.Button</code>, and <code>Gtk.Label</code>": "Create a new Gtk app using <code>Gtk.Window</code>, <code>Gtk.Button</code>, and <code>Gtk.Label</code>",
+    "Create a new Gtk app using <code>Gtk.Window</code>, <code>Gtk.Button</code>, and <code>Gtk.Label</code>": "Criar novos aplicativos com Gtk usando <code>Gtk.Window</code>, <code>Gtk.Button</code> e <code>Gtk.Label</code>",
     "Keep our projects organized into branches": "Mantenha seus projetos organizados dentro de \"branches\" (ramos)",
     "License our app under the GPL and declare our app's authors in a standardized manner": "Licencie seu aplicativo sob a GPL e declare a autoria de seu aplicativo na forma padronizada",
     "Create a .desktop file that tells the computer how to display our app in the Applications menu and the Dock": "Crie um arquivo .desktop que dia ao computador como mostrar seu aplicativo no Applications menu e no Dock",
