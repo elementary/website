@@ -4,7 +4,7 @@ You can translate the website online on Transifex: https://www.transifex.com/pro
 
 You can propose new languages if they're not listed. Make sure to avoid requesting languages that already exist, for instance adding _Russian (Russia)_ when _Russian_ is available.
 
-Please read the [branding guidelines](http://old.elementaryos.org/journal/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
+Please read the [branding guidelines](http://blog.elementary.io/post/107640994166/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
 
 ## Reviewing
 
