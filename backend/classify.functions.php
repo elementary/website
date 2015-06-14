@@ -19,7 +19,7 @@ function ipCheck($hostname, $debug = false) {
 		if ( $debug ) {
 			echo $hostname."\n";
 		}
-		$reader = new Reader('GeoLite2-City.mmdb');
+		$reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
 		$record = $reader->city($hostname);
 		if ( $debug > 1 ) {
 			var_dump($record);
