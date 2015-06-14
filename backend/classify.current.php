@@ -15,4 +15,3 @@ if ( is_array($region) ) {
 	$hash = ipHash($ip);
 	$region = $region[$hash];
 }
-//echo $region;

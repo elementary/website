@@ -18,4 +18,3 @@ if ( is_array($region) ) {
 	$region = $region[$hash];
 }
 echo $region;
-
