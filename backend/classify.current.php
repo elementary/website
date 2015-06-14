@@ -12,11 +12,8 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 	$ip = $_SERVER['REMOTE_ADDR'];
 }
 
-echo '<!-- ';
-$region = ipCheck($ip, true);
+$region = ipCheck($ip);
 if ( is_array($region) ) {
-	$hash = ipHash($ip, true);
+	$hash = ipHash($ip);
 	$region = $region[$hash];
 }
-echo $region;
-echo ' -->';
