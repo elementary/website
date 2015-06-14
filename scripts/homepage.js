@@ -128,6 +128,7 @@ $(function () {
                     ga('send', 'event', 'Freya Beta Download (Architecture)', 'Homepage', data.arch);
                     ga('send', 'event', 'Freya Beta Download (Method)', 'Homepage', data.method);
                     ga('send', 'event', 'Freya Beta Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', 'Freya Beta Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }
