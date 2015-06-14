@@ -13,9 +13,9 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 }
 
 echo '<!-- ';
-$region = ipCheck($ip);
+$region = ipCheck($ip, true);
 if ( is_array($region) ) {
-	$hash = ipHash($ip);
+	$hash = ipHash($ip, true);
 	$region = $region[$hash];
 }
 echo $region;
