@@ -3,9 +3,9 @@
     $page['image'] = 'https://elementary.io/images/notebook.png';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
-    require_once 'backend/classify.current.php';
+    require_once __DIR__.'/backend/classify.current.php';
     $filesize = (int) file_get_contents(__DIR__.'/backend/iso-size.txt');
 ?>
             <script src="scripts/slider.js"></script>
