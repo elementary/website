@@ -17,3 +17,6 @@ if ( is_array($region) ) {
 	$hash = ipHash($ip);
 	$region = $region[$hash];
 }
+
+date_default_timezone_set('UTC');
+$download_link = '//'.$region.'.dl.elementary.io/download/'.base64_encode(time()).'/';
