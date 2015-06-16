@@ -1,5 +1,9 @@
 <?php
 
+////    Debug Script for Classify
+// Will echo most debug points.
+// Useful if users get a region that is not what we expect.
+
 include_once 'classify.functions.php';
 
 if (!empty($_GET['IP'])) {
