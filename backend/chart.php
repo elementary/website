@@ -13,7 +13,7 @@ $apiBaseUrl = 'https://api.launchpad.net/beta/';
 $targetName = 'elementary';
 // Milestone name
 // $milestoneName = 'freya-beta2';
-$milestoneName = 'freya-rc1';
+$milestoneName = 'freya-0.3.1';
 
 // Build a chart from a date
 // Set to null to get data for the whole milestone
