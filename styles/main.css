@@ -433,6 +433,17 @@ footer ul li a:focus {
     display: block;
 }
 
+.thirdparty {
+    -webkit-filter: contrast(0);
+    filter: contrast(0);
+    transition: -webkit-filter 0.3s linear, filter 0.3s linear;
+}
+
+.thirdparty:hover {
+    -webkit-filter: none;
+    filter: none;
+}
+
 .row {
     width: auto;
     margin: 0 auto;
