@@ -1,9 +1,8 @@
-(function () {
-    var stripe_key = '';
+$(function () {
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
-    var previous_amount = 'amount-twenty-five';
-    var current_amount = 'amount-twenty-five';
+    var previous_amount = 'amount-ten';
+    var current_amount = 'amount-ten';
     var amountClick = function() {
         // Remove existing checks.
         $('.target-amount').removeClass('checked');
@@ -41,6 +40,9 @@
         console.log('Pay ' + current_amount);
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
+        if (window.ga) {
+            ga('send', 'event', 'Freya Beta Download (Payment)', 'Homepage', payment_amount);
+        }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
         } else {
@@ -64,13 +66,13 @@
     }
 
     function process_payment (amount, token) {
-        var payment_http, $amount_twenty_five;
+        var payment_http, $amount_ten;
 
-        $amount_twenty_five = $('#amount-twenty-five');
+        $amount_ten = $('#amount-ten');
 
-        if ($amount_twenty_five.val() !== 0) {
-            $('#amounts').html('<input type="hidden" id="amount-twenty-five" value="0">');
-            $amount_twenty_five.each(amountClick);
+        if ($amount_ten.val() !== 0) {
+            $('#amounts').html('<input type="hidden" id="amount-ten" value="0">');
+            $amount_ten.each(amountClick);
         }
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
@@ -126,21 +128,20 @@
                     ga('send', 'event', 'Freya Beta Download (Architecture)', 'Homepage', data.arch);
                     ga('send', 'event', 'Freya Beta Download (Method)', 'Homepage', data.method);
                     ga('send', 'event', 'Freya Beta Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', 'Freya Beta Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }
     }
 
-    // Get the stripe key from the server
-    var key_http = new XMLHttpRequest();
-    key_http.open('GET','./backend/payment.php',true);
-    key_http.onreadystatechange = function() {
-        if (key_http.readyState == 4 && key_http.status == 200) {
-            stripe_key = key_http.responseText;
-            console.log('Stripe key is: ' + stripe_key);
-        }
-    }
-    key_http.send();
+    // Carousel
+    var appCarousel = new Slider({
+        slidesContainer: 'slide-container',
+        choicesContainer: 'choices-container',
+        id: 'carousel-choices',
+        choices: ['photos', 'music', 'videos', 'midori']
+    });
+    appCarousel.slideTo('photos');
 
     console.log('Loaded homepage.js');
-})();
+});

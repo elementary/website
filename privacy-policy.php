@@ -42,6 +42,10 @@
                     <img src="images/privacy-policy/midori_128x128.png" data-l10n-off alt="Midori" class="browsers-list" />
                     <h4 data-l10n-off>Midori</h4>
                 </a>
+                <a target="_blank" href="https://help.gnome.org/users/epiphany/stable/data-cookies.html" class="column">
+                    <img src="images/privacy-policy/epiphany_128x128.png" data-l10n-off alt="Epiphany" class="browsers-list" />
+                    <h4 data-l10n-off>Epiphany</h4>
+                </a>
             </div>
 <?php
     include $template['footer'];

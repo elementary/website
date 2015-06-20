@@ -1,0 +1,14 @@
+{
+    "Develop": "개발",
+    "Your ideas into code": "당신의 아이디어를 코드로 표현하세요.",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "elementary는 오픈소스 기술을 바탕으로 개발된 개발자 친화적인 플랫폼입니다. 여러분의 애플리케이션이 빛을 발할 수 있도록 저희 팀은 최상의 자원과 문서를 제공합니다.",
+    "Design": "디자인",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "HIG (휴먼 인터페이스 가이드라인)을 읽고 여러분의 애플리케이션을 최상급으로 완성시키는 방법을 배우세요.",
+    "Code": "코드",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "저희 팀의 API (Application Programming Interface)에 대해서 배우고 사용하실 수 있는 내장 기술을 발견해보세요.",
+    "Manage": "관리",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "런치패드를 이용해서 버그를 관리하고 다른 개발자들과 협업하세요.",
+    "Distribute": "배포",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Ubuntu My Apps (우분투 앱) 계정을 구성하고 소프트웨어 센터에 애플리케이션을 배포하세요.",
+    "Develop Apps for elementary OS": "elementary OS를 위한 애플리케이션을 개발하세요."
+}

@@ -1,10 +1,10 @@
 <?php
-set_l10n_domain('layout');
+$l10n->set_domain('layout');
 ?>
         </div>
         <footer>
             <p>
-                Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $page['lang-root'].'privacy-policy'; ?>">Privacy Policy</a>
+                Copyright &copy; <?php echo date('Y'); ?> elementary LLC. <a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a>
             </p>
             <div class="popover">
                 <a href="#"><i class="fa fa-language"></i> Language</a>
@@ -12,7 +12,7 @@ set_l10n_domain('layout');
                     <strong>Change Site Language</strong>
                     <ul>
                     <?php
-                    foreach (list_langs() as $langCode => $langName) {
+                    foreach ($l10n->list_langs() as $langCode => $langName) {
                         $path = $sitewide['root'].$langCode.$page['path'];
                         ?>
                         <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
@@ -35,6 +35,7 @@ set_l10n_domain('layout');
                 <li><a href="https://plus.google.com/114635553671833442612" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
+        <div class="clear"></div>
         </footer>
 
         <!--[if lt IE 9]>
@@ -53,5 +54,5 @@ set_l10n_domain('layout');
     </body>
 </html>
 <?php
-end_html_l10n();
+$l10n->end_html_translation();
 ?>

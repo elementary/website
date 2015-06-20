@@ -5,6 +5,10 @@
     include $template['header'];
 ?>
 
+<script>
+    ga('send', 'event', '404: Page Not Found', window.location.host);
+</script>
+
 <div class="row">
     <div class="column alert">
         <i class="warning fa fa-warning"></i>

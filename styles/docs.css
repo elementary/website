@@ -1,0 +1,255 @@
+﻿/* Copyright 2015 elementary LLC.
+*
+* This file is part of elementary.io
+*/
+
+h2,
+h3,
+h4 {
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+h1 a.heading-link,
+h2 a.heading-link,
+h3 a.heading-link,
+h4 a.heading-link,
+h5 a.heading-link,
+h6 a.heading-link{
+    color: inherit;
+    fill: inherit;
+    position: relative;
+}
+
+h1 a.heading-link:hover,
+h2 a.heading-link:hover,
+h3 a.heading-link:hover,
+h4 a.heading-link:hover,
+h5 a.heading-link:hover,
+h6 a.heading-link:hover{
+    color: #08c;
+    fill: #08c;
+}
+
+h1 a.heading-link:active,
+h2 a.heading-link:active,
+h3 a.heading-link:active,
+h4 a.heading-link:active,
+h5 a.heading-link:active,
+h6 a.heading-link:active{
+    text-decoration: none;
+}
+
+h1 a.heading-link:hover::before,
+h2 a.heading-link:hover::before,
+h3 a.heading-link:hover::before,
+h4 a.heading-link:hover::before,
+h5 a.heading-link:hover::before,
+h6 a.heading-link:hover::before{
+    font-family: FontAwesome;
+    content: "\f0c1";
+    position: absolute;
+    top: 0.5em;
+    left: -1.25em;
+    font-size: 0.75em;
+}
+
+img.float-left {
+    margin-right: 24px;
+}
+
+kbd {
+    color: #4D4D4D;
+    background-color: #E9E9E9;
+    background-image: linear-gradient(to bottom, #E9E9E9, #FFF);
+    border: 1px solid #A5A5A5;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #FFF,
+                inset 0 -2px 0 0 #D9D9D9;
+    font-family: monospace;
+    padding: 2px 4px;
+    -moz-user-select: none;
+    margin: 3px;
+}
+
+code,
+pre,
+kbd {
+    font-family: 'Droid Sans Mono';
+    text-align: justify;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-size: 90%;
+}
+
+kbd {
+    text-align: center;
+    min-width: 22px;
+    display: inline-block;
+}
+
+code {
+    color: #3A416F;
+    background-color: #F1F2F7;
+}
+
+pre {
+    padding: 8px;
+    overflow: auto;
+}
+
+pre > code {
+    border: none;
+    padding: 0;
+    white-space: pre;
+}
+
+/* Line numbers */
+pre.highlighted {
+    border: none;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+}
+
+pre.highlighted code {
+    border-radius: 0 3px 3px 0;
+    line-height: 1.5em;
+}
+
+pre.highlighted .pre-numbering {
+    float: left;
+    list-style: none;
+    min-width: 2.5em;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee8d5;
+    text-align: right;
+    color: #9faaa9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 90%;
+    line-height: 1.5em;
+}
+
+p + p {
+    margin-top: 2em;
+}
+
+p + h1,
+pre + h1 {
+    margin-top: 128px;
+}
+
+nav {
+    background-color: #3A416F;
+    color: #fff;
+    fill: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+.row.docs,
+.row.docs .slide {
+    max-width: 800px;
+}
+
+.row.docs-index {
+    margin: 0;
+    padding: 0;
+}
+
+.row.docs-index ul {
+    list-style: none;
+}
+
+.row.docs-index a {
+    color: inherit;
+    font-size: 14px;
+}
+
+.sidebar {
+    position: fixed;
+    list-style-type: none;
+    max-width: 300px;
+    padding: 16px 0;
+    margin-top: -56px;
+    background-color: #fcfcfc;
+    height: 100%;
+    border-right: 1px solid #f0f0f0;
+    overflow: auto;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidebar.nav-visible {
+    padding-top: 72px;
+}
+
+.sidebar.footer-visible {
+    height: calc(100% - 42px);
+    border-bottom: 1px solid #f0f0f0;
+    border-bottom-right-radius: 3px;
+}
+
+.sidebar a {
+    color: #666;
+    font-size: 90%;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 6px;
+}
+
+.sidebar a:hover {
+    color: #3A416F;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li.active {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.sidebar > ul {
+    padding-left: 32px;
+}
+
+.sidebar > li > a {
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 24px;
+}
+
+
+@media (max-width: 990px) {
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media (min-width: 990px) and (max-width: 1400px) {
+
+    .row.docs {
+        margin: 0 auto 0 300px;
+    }
+
+}

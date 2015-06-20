@@ -3,6 +3,11 @@ require_once __DIR__.'/../_templates/l10n.php';
 require_once __DIR__.'/../docs/_mdr/Parsedown.php';
 require_once __DIR__.'/../docs/_mdr/ParsedownExtra.php';
 
+$isCli = (php_sapi_name() == 'cli');
+if ($isCli && !empty($argv[1])) {
+	$_GET['page'] = $argv[1];
+}
+
 if (!isset($_GET['page'])) {
 	header('HTTP/1.0 404 Not Found');
 	exit('No page specified.');
@@ -37,9 +42,11 @@ if (!file_exists($target)) {
 	exit('Page not found.');
 }
 
+$l10n = new Translator('en');
+
 // Extracted translations
 $newTranslations = array();
-$currentTranslations = load_translations($captureDomain, 'en');
+$currentTranslations = $l10n->load_translations($captureDomain);
 if ($currentTranslations === false) {
 	$currentTranslations = array();
 }
@@ -76,14 +83,16 @@ if ($isMarkdown) {
 	$html = str_replace('⌘', '&#8984;', $html);
 
 	// Process html
-	set_l10n_domain($captureDomain);
-	translate_html($html, 'capture_translation');
+	$l10n->set_domain($captureDomain);
+	$l10n->translate_html($html, 'capture_translation');
 } else {
 	chdir('..');
 
+	$_SERVER['DOCUMENT_ROOT'] = dirname(__DIR__);
+
 	define('HTML_I18N', 1); // Do not start output buffering twice
-	ob_start(function ($input) {
-	    translate_html($input, 'capture_translation');
+	ob_start(function ($input) use($l10n) {
+	    $l10n->translate_html($input, 'capture_translation');
 	    return '';
 	});
 

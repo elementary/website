@@ -4,40 +4,84 @@ lang_map = sr@Ijekavian:sr_Ijekavian
 
 [elementary-mvp.404]
 file_filter = lang/<lang>/404.json
+source_file = lang/en/404.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.developer]
 file_filter = lang/<lang>/developer.json
+source_file = lang/en/developer.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.get-involved]
 file_filter = lang/<lang>/get-involved.json
+source_file = lang/en/get-involved.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.index]
 file_filter = lang/<lang>/index.json
+source_file = lang/en/index.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.layout]
 file_filter = lang/<lang>/layout.json
+source_file = lang/en/layout.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.privacy-policy]
 file_filter = lang/<lang>/privacy-policy.json
+source_file = lang/en/privacy-policy.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.store]
 file_filter = lang/<lang>/store.json
+source_file = lang/en/store.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.support]
 file_filter = lang/<lang>/support.json
+source_file = lang/en/support.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.docs_installation]
 file_filter = lang/<lang>/docs/installation.json
+source_file = lang/en/docs/installation.json
 source_lang = en
+type = KEYVALUEJSON
 
 [elementary-mvp.docs_learning-the-basics]
 file_filter = lang/<lang>/docs/learning-the-basics.json
+source_file = lang/en/docs/learning-the-basics.json
 source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.code-of-conduct]
+file_filter = lang/<lang>/code-of-conduct.json
+source_file = lang/en/code-of-conduct.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.docs_code_getting-started]
+file_filter = lang/<lang>/docs/code/getting-started.json
+source_file = lang/en/docs/code/getting-started.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.docs_code_reference]
+file_filter = lang/<lang>/docs/code/reference.json
+source_file = lang/en/docs/code/reference.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.docs_human-interface-guidelines]
+file_filter = lang/<lang>/docs/human-interface-guidelines.json
+source_file = lang/en/docs/human-interface-guidelines.json
+source_lang = en
+type = KEYVALUEJSON

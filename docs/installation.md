@@ -1,8 +1,5 @@
 # Installation {#installation}
 
-<div class="clear row" markdown="1">
-<div class="column half" markdown="1">
-
 ### Download elementary OS {#download-elementary-os}
 
 If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
@@ -11,9 +8,6 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 
 * If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.
 * If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).
-
-</div>
-<div class="column half" markdown="1">
 
 ### Recommended System Specifications {#recommended-system-specifications}
 
@@ -36,19 +30,17 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 </div>
-</div>
-</div>
-
-<div class="clear row" markdown="1">
 
 ### Creating an Install Drive {#creating-an-installation-medium}
 
-<div class="text-center">
+<div class="creating-a-usb-choices-container text-center">
 <div id="creating-a-usb-choices" class="column linked">
 <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
 <a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X &amp; Ubuntu</a>
 </div>
 </div>
+
+<div class="creating-a-usb-choices-slide-container" markdown="1">
 
 <div id="creating-a-usb-on-windows" class="slide" markdown="1">
 
@@ -69,9 +61,9 @@ Click "Start", then just wait for the process to finish.
 
 <div id="creating-a-usb-on-others" class="slide" markdown="1">
 
-### OS X, Ubuntu, and others}
+### OS X, Ubuntu, and others
 
-![UNetbootin](images/docs/installation/unetbootin.png){.float-left}
+![UNetbootin](images/docs/installation/unetbootin.png)
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
@@ -85,18 +77,18 @@ Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that yo
 
 </div>
 
-<div class="clear row" markdown="1">
-
 ### Booting from the Install Drive {#booting-from-the-installation-medium}
 
 In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.
 
-<div class="text-center">
+<div class="booting-choices-container text-center">
 <div id="booting-choices" class="column linked">
 <a class="button booting-on-a-pc" href="#booting-on-a-pc">Booting on a PC</a>
 <a class="button booting-on-a-mac" href="#booting-on-a-mac">Booting on a Mac</a>
 </div>
 </div>
+
+<div class="booting-choices-slide-container" markdown="1">
 
 <div id="booting-on-a-pc" class="slide" markdown="1">
 
@@ -108,6 +100,7 @@ In order to start the installation process, you must boot your computer from the
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
 
 </div>
+
 <div id="booting-on-a-mac" class="slide" markdown="1">
 
 ## Booting on a Mac
@@ -121,4 +114,5 @@ In order to start the installation process, you must boot your computer from the
 </div>
 
 <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+<script type="text/javascript" src="scripts/slider.js"></script>
 <script type="text/javascript" src="scripts/docs/installation.js"></script>
