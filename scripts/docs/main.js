@@ -25,7 +25,43 @@ $(document).ready(function() {
     // Anchor headings
     $('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
         $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
-    })
+    });
+
+    // Update javascript variable currentSection
+    var docElements = $('h1[id], h2[id]', '.docs');
+
+    var currentSection = null;
+    if (location.hash) {
+      currentSection = location.hash;
+    } else {
+      currentSection = docElements[0];
+    };
+    $(document).on('scroll', function (event) {
+        // Check to see what is on screen right now
+        for (var i = 0; i < docElements.length; i++) {
+            // Checks if the passed element is visible on the screen after scrolling
+            // Source: http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(docElements[i]).offset().top;
+            var elemBottom = elemTop + $(docElements[i]).height();
+
+            // Sets currentSection if element is top most visible element
+            if ((elemTop <= docViewTop)) {
+                currentSection = docElements[i];
+            // Sets currentSection if element is more than 1/3 from the top
+            } else if (elemTop <= (docViewTop + ($(window).height() / 3) )) {
+                currentSection = docElements[i];
+            };
+        };
+    });
+
+    // Url hash selector. Only in docs class to avoid nav conflicts
+    $(document).on('scroll', function (event) {
+        // Changes browser hash without adding to history
+        history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+    });
 
     // Sidebar
     var $headings = $('h1');
@@ -56,50 +92,13 @@ $(document).ready(function() {
             $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
             $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
 
-            var $current = null;
-            if (scrollTop >= nextTarget) {
-                $headings.each(function () {
-                    var headingScrollTop = Math.floor($(this).offset().top);
-                    if (headingScrollTop > scrollTop) {
-                        $current = $(this).prevAll('h1').first() || $(this);
-                        prevTarget = nextTarget;
-                        nextTarget = headingScrollTop;
-                        return false;
-                    }
-                });
-                if (!$current) {
-                    $current = $headings.last();
-                    prevTarget = nextTarget;
-                    nextTarget = Number.POSITIVE_INFINITY;
-                }
-                if (!prevTarget) {
-                    prevTarget = Math.floor($current.first().offset().top);
-                }
-            }
-            if (scrollTop < prevTarget) {
-                $($headings.get().reverse()).each(function () {
-                    var headingScrollTop = $(this).offset().top;
-                    if (headingScrollTop < scrollTop) {
-                        $current = $(this);
-                        prevTarget = Math.floor(headingScrollTop);
-                        nextTarget = prevTarget;
-                        return false;
-                    }
-                });
-                if (!$current) {
-                    $current = $headings.first();
-                    prevTarget = 0;
-                    nextTarget = $($headings[1]).offset().top;
-                }
-            }
-            if ($current) {
-                $sidebarItems.removeClass('active');
-                var $activeItem = $sidebarItems.children('a[href="#'+$current.attr('id')+'"]').parent();
-                $activeItem.addClass('active');
-                if ($activeItem.next().is('ul')) {
-                    $activeItem.next().addClass('active');
-                }
-            }
+            $('ul.sidebar .active').removeClass('active');
+            var $currentLink = $('ul.sidebar a[href$="#'+currentSection.id+'"]')
+            if ($currentLink.parent().parent().is('.sidebar')) {
+                $currentLink.parent().addClass('active');
+            } else {
+              ($currentLink.parent().parent().prev('li').addClass('active'));
+            };
         });
         $(window).scroll(); // Trigger event
     }
