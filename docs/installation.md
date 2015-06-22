@@ -1,6 +1,6 @@
 # Installation {#installation}
 
-### Download elementary OS {#download-elementary-os}
+## Download elementary OS {#download-elementary-os}
 
 If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
@@ -9,7 +9,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 * If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.
 * If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).
 
-### Recommended System Specifications {#recommended-system-specifications}
+## Recommended System Specifications {#recommended-system-specifications}
 
 * 1 GHz 32-bit or 64-bit processor
 * 1 GB of system memory (RAM)
@@ -23,7 +23,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 </div>
 <div class="icon-text" markdown="1">
 
-### Back Up Your Data {#back-up-your-data}
+## Back Up Your Data {#back-up-your-data}
 
 Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.
 
@@ -31,7 +31,7 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 
-### Creating an Install Drive {#creating-an-installation-medium}
+## Creating an Install Drive {#creating-an-installation-medium}
 
 <div class="creating-a-usb-choices-container text-center">
 <div id="creating-a-usb-choices" class="column linked">
@@ -77,7 +77,7 @@ Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that yo
 
 </div>
 
-### Booting from the Install Drive {#booting-from-the-installation-medium}
+## Booting from the Install Drive {#booting-from-the-installation-medium}
 
 In order to start the installation process, you must boot your computer from the install drive. This process may differ depending on the type of computer you have. This guide covers the most common use cases.
 
@@ -92,7 +92,7 @@ In order to start the installation process, you must boot your computer from the
 
 <div id="booting-on-a-pc" class="slide" markdown="1">
 
-## Booting on a PC
+### Booting on a PC
 
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.
@@ -103,7 +103,7 @@ In order to start the installation process, you must boot your computer from the
 
 <div id="booting-on-a-mac" class="slide" markdown="1">
 
-## Booting on a Mac
+### Booting on a Mac
 
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
