@@ -81,11 +81,8 @@ Cuddled else and else if:
         print ("Yay");
     } else if (a == 3) {
         b = 3;
-        print ("Not so good...");
-    } else {
-        b = 5;
-        print ("Terrible!");
-    }
+        print ("Not so good");
+    } 
     
 If you are checking the same variable more than twice, use switch/case instead of multiple else/if:
 
