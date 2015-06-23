@@ -66,12 +66,12 @@ indented code, and a line closing the function with a curly bracket:
         return e;
     }
 
-On conditionals and loops, if there's only one line of code, no braces are
-used:
+On conditionals and loops, always use braces even if there's only one line of code:
 
 
-    if (my_var > 2)
+    if (my_var > 2) {
         print ("hello\n");
+    }
 
 Cuddled else and else if:
 
@@ -81,10 +81,22 @@ Cuddled else and else if:
         print ("Yay");
     } else if (a == 3) {
         b = 3;
-        print ("Not so good...");
-    } else {
-        b = 5;
-        print ("Terrible!");
+        print ("Not so good");
+    } 
+    
+If you are checking the same variable more than twice, use switch/case instead of multiple else/if:
+
+    switch (week_day) {
+       case "Monday":
+           message ("Let's work!");
+           break;
+       case "Tuesday":
+       case "Wednesday":
+           message ("What about watching a movie?");
+           break;
+       default:
+           message ("You don't have any recommendation.");
+           break;
     }
 
 ## Classes and files {#classes-and-files}
@@ -146,20 +158,26 @@ limit is 120 characters.
 
 ## GPL Header {#gpl-header}
 
-    /***
-      Copyright (C) 2011-2012 Application Name Developers
-      This program is free software: you can redistribute it and/or modify it
-      under the terms of the GNU Lesser General Public License version 3, as published
-      by the Free Software Foundation.
-
-      This program is distributed in the hope that it will be useful, but
-      WITHOUT ANY WARRANTY; without even the implied warranties of
-      MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-      PURPOSE. See the GNU General Public License for more details.
-
-      You should have received a copy of the GNU General Public License along
-      with this program. If not, see
-    ***/
+    /*
+    * Copyright (c) 2011-2015 APP Developers (http://launchpad.net/APP)
+    *
+    * This program is free software; you can redistribute it and/or
+    * modify it under the terms of the GNU General Public
+    * License as published by the Free Software Foundation; either
+    * version 2 of the License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful,
+    * but WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public
+    * License along with this program; if not, write to the
+    * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+    * Boston, MA 02111-1307, USA.
+    *
+    * Authored by: Author <mail@domain.com>
+    */
 
 # Reporting Bugs {#reporting-bugs}
 
