@@ -86,15 +86,16 @@ Cuddled else and else if:
     
 If you are checking the same variable more than twice, use switch/case instead of multiple else/if:
 
-    switch (index) {
-       case 1:
-           do_things ();
+    switch (week_day) {
+       case "Monday":
+           message ("Let's work!");
            break;
-       case 2:
-           do_other_things ();
+       case "Tuesday":
+       case "Wednesday":
+           message ("What about watching a movie?");
            break;
        default:
-           do_default_things ();
+           message ("You don't have any recommendation.");
            break;
     }
 
