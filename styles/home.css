@@ -103,7 +103,12 @@
 #slingshot .column:nth-child(2) .symbolic-icon {
     display: inline-block;
     float: left;
-    margin: 4px 6px 4px -24px;
+    margin: 4px 6px 4px 0;
+}
+
+#slingshot .column:nth-child(2) h4,
+#slingshot .column:nth-child(2) p {
+    margin-left: 24px;
 }
 
 .symbolic {
