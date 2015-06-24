@@ -58,8 +58,8 @@
                     <div class="column half">
                         <h2>Translations</h2>
                         <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
-                        <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="https://help.launchpad.net/Translations" class="read-more">Learn More</a></p>
-                        <p>Our website is also openly translated using an online platform called Transifex. <a href="http://docs.transifex.com/guides/translators/" class="read-more">Learn More</a></p>
+                        <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="/docs/translation-guide#translating-applications" class="read-more">Learn More</a></p>
+                        <p>Our website is also openly translated using an online platform called Transifex. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank">Translate elementary OS</a>
