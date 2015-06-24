@@ -436,7 +436,7 @@ footer ul li a:focus {
 .row {
     width: auto;
     margin: 0 auto;
-    padding: 24px;
+    padding: 48px 24px;
     max-width: 1200px;
     text-align: center;
 }

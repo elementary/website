@@ -87,7 +87,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-photo-manager.svg" />
+                            <img src="images/icons/multimedia-photo-manager.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Photos</h3>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-audio-player.svg" />
+                            <img src="images/icons/multimedia-audio-player.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Music</h3>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/multimedia-video-player.svg" />
+                            <img src="images/icons/multimedia-video-player.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Videos</h3>
@@ -129,13 +129,73 @@
                     </div>
                     <div class="column">
                         <div class="column alert">
-                            <img src="images/support/midori.svg" />
+                            <img src="images/icons/midori.svg" />
                         </div>
                         <div class="column alert">
                             <h3>Midori</h3>
                             <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="slingshot" class="row">
+                <div class="column vertical-top">
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                    <div class="slingshot">
+                        <div class="linked">
+                            <div id="slingshot-grid-button" class="button active">
+                                <?php include('images/icons/view-grid-symbolic.svg'); ?>
+                            </div>
+                            <div id="slingshot-categories-button" class="button">
+                                <?php include('images/icons/view-filter-symbolic.svg'); ?>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                            <span class="search-term inactive">dat</span>
+                            <span class="cursor">|</span>
+                            <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                        </div>
+                        <div id="slingshot-grid" class="active view">
+                            <div class="slingshot-grid">
+                            </div>
+                            <div id="slingshot-pager">
+                                <div class="button active">1</div>
+                                <div class="button">2</div>
+                            </div>
+                        </div>
+                        <div id="slingshot-categories" class="next view">
+                            <div class="slingshot-categories-sidebar">
+                                <span class="slingshot-category active">Accessories</span>
+                                <span class="slingshot-category">Graphics</span>
+                                <span class="slingshot-category">Internet</span>
+                                <span class="slingshot-category">Office</span>
+                                <span class="slingshot-category">Other</span>
+                                <span class="slingshot-category">Sound &amp; Video</span>
+                                <span class="slingshot-category">System Tools</span>
+                            </div>
+                            <div class="slingshot-categories">
+                            </div>
+                        </div>
+                        <div id="slingshot-search" class="next view">
+                            <span class="results-title">Applications</span>
+                            <div class="slingshot-search-results searchone inactive">
+                            </div>
+                            <div class="slingshot-search-results searchtwo inactive">
+                            </div>
+                            <div class="slingshot-search-results searchthree inactive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column half vertical-top text-left">
+                    <h2>3 Ways to Explore</h2>
+                    <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
+                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
+                    <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
+                    <p>View your apps automatically organized into categories. Perfect for large collections.</p>
+                    <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
+                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
                 </div>
             </div>
             <div class="row">

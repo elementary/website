@@ -11,52 +11,52 @@
 
 <div class="row apps">
     <a class="app" href="https://answers.launchpad.net/maya" target="_blank">
-        <img width="64" height="64" src="images/support/office-calendar.svg" />
+        <img width="64" height="64" src="images/icons/office-calendar.svg" />
         <span>Calendar</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/snap-elementary" target="_blank">
-        <img width="64" height="64" src="images/support/accessories-camera.svg" />
+        <img width="64" height="64" src="images/icons/accessories-camera.svg" />
         <span>Camera</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/pantheon-files" target="_blank">
-        <img width="64" height="64" src="images/support/system-file-manager.svg" />
+        <img width="64" height="64" src="images/icons/system-file-manager.svg" />
         <span>Files</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/ubuntu/+source/geary" target="_blank">
-        <img width="64" height="64" src="images/support/internet-mail.svg" />
+        <img width="64" height="64" src="images/icons/internet-mail.svg" />
         <span data-l10n-off>Geary</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/midori" target="_blank">
-        <img width="64" height="64" src="images/support/midori.svg" />
+        <img width="64" height="64" src="images/icons/midori.svg" />
         <span data-l10n-off>Midori</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/noise" target="_blank">
-        <img width="64" height="64" src="images/support/multimedia-audio-player.svg" />
+        <img width="64" height="64" src="images/icons/multimedia-audio-player.svg" />
         <span>Music</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/pantheon-photos" target="_blank">
-        <img width="64" height="64" src="images/support/multimedia-photo-manager.svg" />
+        <img width="64" height="64" src="images/icons/multimedia-photo-manager.svg" />
         <span>Photos</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/scratch" target="_blank">
-        <img width="64" height="64" src="images/support/accessories-text-editor.svg" />
+        <img width="64" height="64" src="images/icons/accessories-text-editor.svg" />
         <span data-l10n-off>Scratch</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/switchboard" target="_blank">
-        <img width="64" height="64" src="images/support/preferences-desktop.svg" />
+        <img width="64" height="64" src="images/icons/preferences-desktop.svg" />
         <span>System Settings</span>
     </a>
 
     <a class="app" href="https://answers.launchpad.net/audience" target="_blank">
-        <img width="64" height="64" src="images/support/multimedia-video-player.svg" />
+        <img width="64" height="64" src="images/icons/multimedia-video-player.svg" />
         <span>Videos</span>
     </a>
 </div>
