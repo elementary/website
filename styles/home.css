@@ -106,9 +106,14 @@
     margin: 4px 6px 4px 0;
 }
 
-#slingshot .column:nth-child(2) h2,
 #slingshot .column:nth-child(2) p {
     margin-left: 24px;
+}
+
+@media (min-width: 330px) {
+    #slingshot .column:nth-child(2) h2 {
+        margin-left: 24px;
+    }
 }
 
 .symbolic {
