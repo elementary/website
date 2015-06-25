@@ -30,23 +30,18 @@ function globRecursive($Pattern, $Flags = 0) {
 }
 
 $translation_files = globRecursive(__DIR__.'/../lang/*/*.json');
-$valid_files = array();
-$invalid_files = array();
+$result['invalid_files'] = array();
+$result['valid_files']   = array();
 
 foreach ( $translation_files as $filename ) {
     $shortname = translationFilename($filename);
     // Validate
     if ( isJson($filename) ) {
-        $valid_files[] = $shortname;
+        $result['valid_files'][] = $shortname;
     } else {
-        $invalid_files[] = $shortname;
+        $result['invalid_files'][] = $shortname;
     }
 }
-
-$result = array(
-    'invalid_files' => $invalid_files,
-    'valid_files'   => $valid_files,
-);
 
 var_dump($result);
 // echo json_encode($result);
