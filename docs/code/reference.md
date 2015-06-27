@@ -176,7 +176,7 @@ limit is 120 characters.
     * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
     * Boston, MA 02111-1307, USA.
     *
-    * Authored by: Author <mail@domain.com>
+    * Authored by: Author <author@example.com>
     */
 
 # Reporting Bugs {#reporting-bugs}
