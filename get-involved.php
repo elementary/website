@@ -117,7 +117,7 @@
                         <div class="actions">
                             <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                             <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
-                            <a class="button flat" href="http://blog.elementary.io/post/107662321291/so-you-fancy-yourself-a-designer" target="_blank">Read About Our Workflow</a>
+                            <a class="button flat" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                         </div>
                     </div>
                     <div class="column half">
