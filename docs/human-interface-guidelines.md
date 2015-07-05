@@ -565,7 +565,7 @@ Linked Buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
 
-![](/images/docs/human-interface-guidelines/appmenu/cogcorner.png)
+![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
 
 ### Usage {#appmenu-usage}
 
@@ -642,9 +642,13 @@ Notebooks are a type of widget that allow showing one of multiple pages in an ap
 
 ### Static Notebook {#static-notebook}
 
+![](/images/docs/human-interface-guidelines/notebooks/static-notebook.png)
+
 A Static Notebook is a small set of unchanging tabs, commonly seen in preferences or settings screens. The tabs appear as linked buttons centered at the top of the content area. A Static Notebook should typically contain two to five tabs.
 
 ### Dynamic Notebook {#dynamic-notebook}
+
+![](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
 
 A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
 
@@ -934,7 +938,7 @@ Use `\u2013` in code. Used for:
 
 Use `\u2014` in code. Used for:
 
-* Interjections (e.g. the party—which was scheduled for Thursday—was delayed). 
+* Interjections (e.g. the party—which was scheduled for Thursday—was delayed).
     * _Do not put a space on either side._
 * Quote offsets.
     * _New line, space to the right._
