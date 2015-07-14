@@ -62,8 +62,8 @@
 </div>
 
 <div class="row">
-    <a class="column half" href="https://answers.launchpad.net/elementary/+faqs" target="_blank">
-        <h3 class="read-more"><i class="fa fa-question-circle"></i> FAQ</h3>
+    <a class="column half" href="https://elementaryos.stackexchange.com" target="_blank">
+        <h3 class="read-more"><i class="fa fa-stack-exchange"></i> StackExchange</h3>
         <p>Has your question been asked already? Check out answers to some of the most common questions we get.</p>
     </a>
 
