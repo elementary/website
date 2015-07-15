@@ -79,6 +79,7 @@ See Also:
 
 1. [Checkboxes That Kill Your Product](http://limi.net/checkboxes-that-kill) by Alex Limi
 2. [Don't Give Your Users Shit Work](http://zachholman.com/posts/shit-work/) by Zach Holman
+3. [The Wizard Anti-Pattern](http://stef.thewalter.net/installer-anti-pattern.html) by Stef Walter
 
 ## Minimal Documentation {#minimal-documentation}
 
