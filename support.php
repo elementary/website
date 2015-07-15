@@ -71,16 +71,6 @@
         <h3><i class="fa fa-download"></i> Installation</h3>
         <p>Get help installing elementary OS on your computer by following our step-by-step guide.</p>
     </a>
-
-    <a class="column half" href="https://plus.google.com/communities/104613975513761463450" target="_blank">
-        <h3 class="read-more" data-l10n-off><i class="fa fa-google-plus-square"></i> Google+</h3>
-        <p>Communicate with other elementary OS users in our Google+ community. Find crowd-sourced support, screenshots, the latest news, and more.</p>
-    </a>
-
-    <a class="column half" href="http://www.reddit.com/r/elementaryos/" target="_blank">
-        <h3 class="read-more" data-l10n-off><i class="fa fa-reddit"></i> reddit</h3>
-        <p>Discuss elementary OS with other fans and followers in our official subreddit. Ask the community for help or just chat about the OS.</p>
-    </a>
 </div>
 
 <?php
