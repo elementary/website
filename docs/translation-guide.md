@@ -14,7 +14,7 @@ Once you’ve made a selection, you can provide suggestions for strings that hav
 
 When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure uniform translations, while also allowing anyone to contribute.
 
-If you however don't want to use Rosetta or want to make a lot a changes at once, you can also translate offline. To do so:
+If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:
 
 * Go to a project you want to translate
 * Choose your language
@@ -24,7 +24,8 @@ You are now able to request an e-mail, which gives you the right link to downloa
 
 * Choose your favorite text- or po-editor (e.g. [Poedit] (https://apps.ubuntu.com/cat/applications/raring/poedit/))
 * Start translating
-* Use the "Upload translation" option on the same page that you downloaded it from
+
+Once you've finished, use the "Upload translation" option on the same page that you downloaded them from.
 
 ## Translating our Website {#translating-our-website}
 
