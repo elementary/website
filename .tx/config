@@ -85,3 +85,10 @@ file_filter = lang/<lang>/docs/human-interface-guidelines.json
 source_file = lang/en/docs/human-interface-guidelines.json
 source_lang = en
 type = KEYVALUEJSON
+
+[elementary-mvp.docs_translation-guide]
+file_filter = lang/<lang>/docs/translation-guide.json
+source_file = lang/en/docs/translation-guide.json
+source_lang = en
+type = KEYVALUEJSON
+
