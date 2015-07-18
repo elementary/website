@@ -36,20 +36,18 @@ To set up a Launchpad account:
 
 After you have verified your email your Launchpad account is ready, so let's move on to the next section. Remember, we're not going to go over all the little details in this book. We'll come back to Launchpad a few times later on to use specific features, but if you really want to learn everything there is to know about the website you should read their user guide. Onward!
 
-## Bazaar {#bazaar}
+## Git {#git}
 
-elementary projects are hosted on Launchpad. To interact with the code on Launchpad, we use a distributed [revision control system](http://en.wikipedia.org/wiki/Revision_control) called Bazaar. This allows multiple developers to collaboratively develop and maintain the code while keeping track of each revision along the way.
+elementary projects are hosted on Launchpad. To interact with the code on Launchpad, we use a distributed [revision control system](http://en.wikipedia.org/wiki/Revision_control) called Git. This allows multiple developers to collaboratively develop and maintain the code while keeping track of each revision along the way.
 
-If you're ready, let's get you set up to use Bazaar:
+If you're ready, let's get you set up to use Git:
 
-1. Open the Terminal. You'll be interacting with Bazaar through a simple terminal-based program called bzr.
-
-2. You'll need to install bzr. Simply type the following into the Terminal:
+1. Open the Terminal. You'll be interacting with Git through a simple terminal-cased program.
+2. You'll need to install git. Simply type the following into the Terminal:
 
     ```bash
-    sudo apt-get install bzr
+    sudo apt-get install git-core
     ```
-
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
 
     ```bash
@@ -67,15 +65,27 @@ If you're ready, let's get you set up to use Bazaar:
     scratch-text-editor ~/.ssh/id_rsa.pub
     ```
 
-7. Visit [your SSH keys page](https://launchpad.net/people/+me/+editsshkeys). Paste the text in the textbox and click **Import public key**.
+7. Visit [your SSH keys page](https://launchpad.net/people/+me/+editsshkeys). Paste the text in the textbox and click **Import public key**. 
 
-8. Now you can connect bzr to your Launchpad account. You'll need your launchpad id, which you can look up at [your launchpad page](https://launchpad.net/people/+me).
+8. Now we'll configure git to know who we are:
 
     ```bash
-    bzr launchpad-login your-launchpad-id
+    git config user.name "Your Name"
+    git config user.email your@email.com
     ```
+    
+9. Finally, we're going to create an "alias" that will make pushing and pulling code more convenient. You'll need your launchpad id, which you can look up at [your launchpad page](https://launchpad.net/people/+me). Issue the following command, and then paste the snippet below, chaging USER to your launchpad id:
 
-Done! Now you can download source code hosted on Launchpad and upload your own code. We'll revisit using bzr in a minute, but for now you're logged in. For a more in-depth introduction to bzr, you can also check the complete [Bazaar User Guide](http://doc.bazaar.canonical.com/latest/en/user-guide) provided by Canonical.
+    ```bash
+    scratch-text-editor ~/.gitconfig
+    ```
+    
+    ```
+    [url "git+ssh://USER@git.launchpad.net/"]
+        insteadof = lp:
+    ```
+    
+Done! Now you can download source code hosted on Launchpad and upload your own code. We'll revisit using git in a minute, but for now you're logged in and set up. For a more in-depth introduction to git, you can also check the complete [Git User Guide](https://help.launchpad.net/Code/Git) provided by Canonical.
 
 ## Developer "SDK" {#developer-sdk}
 
