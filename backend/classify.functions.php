@@ -9,7 +9,7 @@
 // OC   Oceania          SGP1
 // AN   Antarctica       SGP1
 
-require 'geoip2.phar';
+include 'geoip2.phar';
 use GeoIp2\Database\Reader;
 
 ////    ipCheck
