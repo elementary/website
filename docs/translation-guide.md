@@ -22,7 +22,7 @@ If you don't want to use Rosetta, or want to make a lot a changes at once, you c
 
 You are now able to request an e-mail, which gives you the right link to download the translations. Now:
 
-* Choose your favorite text- or po-editor (e.g. [Poedit] (https://apps.ubuntu.com/cat/applications/raring/poedit/))
+* Choose your favorite text- or po-editor (e.g. [Poedit](https://apps.ubuntu.com/cat/applications//poedit/))
 * Start translating
 
 Once you've finished, use the "Upload translation" option on the same page that you downloaded them from.
