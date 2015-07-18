@@ -3,13 +3,13 @@
     "Blog": "Blog",
     "Support": "Hỗ trợ",
     "Store": "Cửa hàng",
-    "Developer": "Developer",
-    "Get Involved": "Get Involved",
-    "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>",
-    "Language": "Language",
+    "Developer": "Nhà phát triển Ứng dụng",
+    "Get Involved": "Tham gia cùng chúng tôi",
+    "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Bản quyền 2015 thuộc về elementary LLC. <a href=\"/privacy-policy\">Chính sách bảo mật</a>",
+    "Language": "Ngôn ngữ",
     "Change Site Language": "Thay đổi ngôn ngữ",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "The elementary OS website is built on modern web technologies your browser doesn’t support.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.",
-    "Dismiss": "Dismiss",
-    "Learn More": "Learn More"
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Trang web của elementary OS được xây dựng bằng những công nghệ tiên tiến mà trình duyệt của bạn không hỗ trợ.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Phiên bản Internet Explorer này đã quá cũ và có thể tiềm ẩn nguy cơ bảo mật. Hãy <a href=\"http://browsehappy.com/\">nâng cấp</a> lên phiên bản IE 11 hoặc cân nhắc chuyển sang trình duyệt web khác.",
+    "Dismiss": "Bỏ qua",
+    "Learn More": "Tìm hiểu thêm"
 }
