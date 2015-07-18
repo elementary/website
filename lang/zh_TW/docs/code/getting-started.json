@@ -1,5 +1,5 @@
 {
-    "Getting Started": "開始",
+    "Getting Started": "初次使用",
     "Welcome to the elementary Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.": "歡迎查看 elementary 開發者指引！本書會教您如何創建及散布您的 elementary OS 應用程式。這段介紹將讓您確保您已經準備好所有的開發工具，並明確理解本書內容。如果您有足夠的自信心開始為程式撰寫程式代碼，那您便不必查閱此手冊。",
     "However, we strongly recommend to at least skim through this preparation step. Having the right setup is going to help you reach your goals faster, and having a solid foundation is going to help you throughout the rest of this book.": "然而，我們強烈推薦您至少瀏覽過準備階段的部分。正確地部署好作業環境，能讓您更快達成目標，而穩固的基礎能幫助您在本書的其餘部分都能游刃有餘。",
     "What We Will And Won't Cover": "What We Will And Won't Cover",
@@ -30,7 +30,7 @@
     "When prompted, press Enter to accept the default file name for your key.": "When prompted, press Enter to accept the default file name for your key.",
     "Next, enter a password to protect your SSH key. You’ll be asked to enter it again, just to make sure you didn’t make any typos. You'll need to enter this password any time you try to push code to launchpad so don't forget it! Optionally, you can just press enter and use no password, but this is obviously less secure.": "Next, enter a password to protect your SSH key. You’ll be asked to enter it again, just to make sure you didn’t make any typos. You'll need to enter this password any time you try to push code to launchpad so don't forget it! Optionally, you can just press enter and use no password, but this is obviously less secure.",
     "Now, we're going to tell Launchpad about your SSH key. Open your SSH key with the following command, then copy the text from the file that opens in Scratch:": "Now, we're going to tell Launchpad about your SSH key. Open your SSH key with the following command, then copy the text from the file that opens in Scratch:",
-    "scratch-text-editor ~/.ssh/id_rsa.pub": "scratch-text-editor ~/.ssh/id_rsa.pub",
+    "scratch-text-editor ~/.ssh/id_rsa.pub": "$ scratch-text-editor ~/.ssh/id_rsa.pub",
     "Visit <a href=\"https://launchpad.net/people/+me/+editsshkeys\">your SSH keys page</a>. Paste the text in the textbox and click <strong>Import public key</strong>.": "Visit <a href=\"https://launchpad.net/people/+me/+editsshkeys\">your SSH keys page</a>. Paste the text in the textbox and click <strong>Import public key</strong>.",
     "Now you can connect bzr to your Launchpad account. You'll need your launchpad id, which you can look up at <a href=\"https://launchpad.net/people/+me\">your launchpad page</a>.": "Now you can connect bzr to your Launchpad account. You'll need your launchpad id, which you can look up at <a href=\"https://launchpad.net/people/+me\">your launchpad page</a>.",
     "bzr launchpad-login your-launchpad-id": "bzr launchpad-login your-launchpad-id",
@@ -45,7 +45,7 @@
     "mkdir Projects": "mkdir Projects",
     "Development Libraries": "開發者庫",
     "In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries with the following terminal command:": "In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries with the following terminal command:",
-    "sudo apt-get build-dep granite-demo": "sudo apt-get build-dep granite-demo",
+    "sudo apt-get build-dep granite-demo": "$ sudo apt-get build-dep granite-demo",
     "The command <code>apt-get build-dep</code> installs the build dependencies of an app in the repositories. In this case, we're fetching the development libraries needed to build Granite Demo, an example app. We'll talk more about Granite later, but keep in mind that if you want to build an app from source, you can usually get its build dependencies easily by using <code>apt-get build-dep</code>.": "The command <code>apt-get build-dep</code> installs the build dependencies of an app in the repositories. In this case, we're fetching the development libraries needed to build Granite Demo, an example app. We'll talk more about Granite later, but keep in mind that if you want to build an app from source, you can usually get its build dependencies easily by using <code>apt-get build-dep</code>.",
     "And with that, we're ready to dive into development! Let's move on!": "And with that, we're ready to dive into development! Let's move on!",
     "Hello World": "Hello World",
@@ -224,5 +224,5 @@
     "We added multiple widgets into a single Gtk.Grid using the attach method to create complex layouts containing Buttons and Labels that did cool stuff.": "We added multiple widgets into a single Gtk.Grid using the attach method to create complex layouts containing Buttons and Labels that did cool stuff.",
     "Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of <a href=\"http://valadoc.org/#!api=gtk+-3.0/Gtk.Label\">Labels</a> like <code>width_chars</code> and <code>ellipsize</code>. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.": "Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of <a href=\"http://valadoc.org/#!api=gtk+-3.0/Gtk.Label\">Labels</a> like <code>width_chars</code> and <code>ellipsize</code>. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.",
     "Next Page:": "下一頁：",
-    "Reference": "Reference"
+    "Reference": "參考資料"
 }

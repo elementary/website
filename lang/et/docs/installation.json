@@ -22,7 +22,7 @@
     "the disk icon": "ketta ikoon",
     "to choose the ISO that you downloaded previously.": ", et valida eelnevalt allalaaditud ISO fail.",
     "Click &quot;Start&quot;, then just wait for the process to finish.": "Vajuta \"Start\" nuppu ning oota protsessi lõppemiseni.",
-    "OS X, Ubuntu, and others": "OS X, Ubuntu, and others",
+    "OS X, Ubuntu, and others": "OS X, Ubuntu ja muud",
     "UNetbootin": "UNetbootin",
     "You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href=\"http://appnr.com/install/unetbootin\">click this link</a>. In OS X you'll have to download it from <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">its website</a> and open the downloaded file to install it.": "Teiseks on sul vaja rakendust \"UNetbootin\". Kui sa kasutad Ubuntut, siis vajuta <a href=\"http://appnr.com/install/unetbootin\">siia</a>, kuid kui sa kasutad OS X-i, siis <a href=\"http://unetbootin.sourceforge.net/\" target=\"_blank\">siia</a> ning ava fail rakenduse paigaldamiseks.",
     "Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:": "Nüüd ava UNetbootin ning avanema peaks järgnev aken:",
