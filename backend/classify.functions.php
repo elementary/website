@@ -9,7 +9,7 @@
 // OC   Oceania          SGP1
 // AN   Antarctica       SGP1
 
-include 'geoip2.phar';
+require 'geoip2.phar';
 use GeoIp2\Database\Reader;
 
 ////    ipCheck
@@ -24,6 +24,9 @@ function ipCheck($hostname, $debug = false) {
     try {
         if ( $debug ) {
             echo $hostname."\n";
+        }
+        if (!class_exists('Reader')) {
+        	throw new \Exception('Class GeoIp2\Database\Reader not found');
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
