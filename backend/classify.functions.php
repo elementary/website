@@ -25,9 +25,6 @@ function ipCheck($hostname, $debug = false) {
         if ( $debug ) {
             echo $hostname."\n";
         }
-        if (!class_exists('Reader')) {
-        	throw new \Exception('Class GeoIp2\Database\Reader not found');
-        }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
         if ( $debug > 1 ) {
