@@ -89,6 +89,10 @@
     width: 64px;
 }
 
+.column img {
+    width:100%;
+}
+
 #carousel .slide > .column .column:nth-child(2) {
     max-width: 256px;
 }
