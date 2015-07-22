@@ -14,7 +14,7 @@
     </div>
     <div class="column alert">
         <h3>The download link you clicked has expired</h3>
-        <p>Please go back to our homepage and download again. Download links are valid for 3 days.</p>
+        <p>Download links are valid for 3 days.<br>Please go back to our homepage and download again.</p>
     </div>
     <div class="row">
         <a class="button suggested-action" href="/">Go to Home Page</a>
