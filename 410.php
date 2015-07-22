@@ -1,11 +1,11 @@
 <?php
     include '_templates/sitewide.php';
-    $page['title'] = 'Download Expired &sdot; elementary';
+    $page['title'] = 'Download Link Expired &sdot; elementary';
     include $template['header'];
 ?>
 
 <script>
-    ga('send', 'event', '405: Download Expired', window.location.host);
+    ga('send', 'event', '410: Download Link Expired', window.location.host);
 </script>
 
 <div class="row">
