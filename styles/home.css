@@ -84,13 +84,13 @@
     }
 }
 
+#carousel  .column img {
+    width:100%;
+}
+
 #carousel .column.alert img {
     height: 64px;
     width: 64px;
-}
-
-.column img {
-    width:100%;
 }
 
 #carousel .slide > .column .column:nth-child(2) {
