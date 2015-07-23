@@ -3,7 +3,7 @@
 As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.
 
 ## The Desktop {#the-desktop}
-The elementary desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Wallpaper**.
+The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Wallpaper**.
 
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.
@@ -87,7 +87,7 @@ _Note: Some software may not be available from the Software Center. While we don
 
 ## System Settings {#system-settings}
 
-elementary comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
+elementary OS comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
 ![](images/docs/learning-the-basics/switchboard.png)
 
@@ -95,4 +95,4 @@ elementary comes with a handy app called "System Settings" that controls all of 
 You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.
 
 ### App Settings {#app-settings}
-Keep in mind that System Settings only deals with the global preferences for elementary. Although, some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.
+Keep in mind that System Settings only deals with the global preferences for elementary OS. Although, some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.
