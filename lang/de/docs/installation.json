@@ -2,7 +2,7 @@
     "Installation": "Installation",
     "Download elementary OS": "elementary OS herunterladen",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Sofern Sie dies nicht bereits erledigt haben, <a href=\"/\" target=\"_blank\">laden Sie elementary OS von unserer Homepage herunter</a>. Sie müssen die heruntergeladene ISO-Datei nach der unten stehenden Anleitung auf ein USB-Laufwerk kopieren.",
-    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "elementary OS ist gegenwärtig auf zwei Prozessorarchitekturen ausgelegt, 32-bit und 64-bit.",
+    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "elementary OS wird gegenwärtig für zwei Prozessorarchitekturen entwickelt, 32-bit und 64-bit.",
     "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.": "Falls Sie wissen, dass Sie einen neueren Computer mit 64-bit-Prozessor haben, wählen Sie die 64-bit-Version.",
     "If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).": "Ist Ihr Computer älter, oder wissen Sie nicht, welchen Prozessortyp Ihr Computer aufweist, wählen Sie die 32-bit-Version. (64-bit-Prozessoren können diese trotzdem ausführen.)",
     "Recommended System Specifications": "Empfohlene Systemvoraussetzungen:",
