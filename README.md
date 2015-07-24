@@ -69,4 +69,4 @@ Then inside the project directory, run `php -S localhost:8000 router.php`. Next,
 Contributing
 ============
 
-See guidelines for [coding](https://github.com/elementary/mvp/blob/master/CONTRIBUTE.md) and [translating](https://github.com/elementary/mvp/blob/master/TRANSLATE.md).
+See guidelines for [coding](https://github.com/elementary/mvp/blob/master/CONTRIBUTING.md) and [translating](https://github.com/elementary/mvp/blob/master/TRANSLATE.md).
