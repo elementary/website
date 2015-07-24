@@ -1,4 +1,4 @@
-﻿/* Copyright 2015 elementary LLC.
+/* Copyright 2015 elementary LLC.
 *
 * This file is part of elementaryos.org
 */
@@ -146,11 +146,33 @@ img.h1 {
     display: block;
 }
 
-img.hero {
-    width: 55%;
-    min-width: 288px;
-    display: block;
-    margin: 0 auto;
+/******************
+* Responsive Hero *
+******************/
+.hero {
+    padding-top: 0;
+    height: 176px;
+    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
+}
+
+@media all and (min-width: 530px) {
+    .hero {
+        padding-top: 35%;
+        height: auto;
+        background-image: url(../images/responsive-images/notebook-medium.png);
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .hero {
+        background-image: url(../images/responsive-images/notebook-large.png);
+    }
+}
+
+@media all and (min-width: 1300px) {
+    .hero {
+        background-image: url(../images/notebook.png);
+    }
 }
 
 .inline-tweet {

@@ -29,7 +29,7 @@
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
 
-            <img class="hero" src="images/notebook.png">
+            <div class="hero"></div>
 
             <div class="row">
                 <div id="amounts">
