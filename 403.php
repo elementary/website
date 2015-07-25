@@ -14,7 +14,7 @@
         <i class="warning fa fa-warning"></i>
     </div>
     <div class="column alert">
-        <h3>Access Denied.</h3>
+        <h3>Sorry, access is denied.</h3>
         <p>You don't have permission to view the requested resource.</p>
     </div>
     <div class="row">
