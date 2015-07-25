@@ -33,6 +33,8 @@ Make sure to back your important data up to an external location such as a cloud
 
 ## Verify your Download
 
+### Hashes
+
 Architecture | Hash   | Value
 -------------|--------|-------
 32-bit       | MD5    | 0ad75a048a89ee0bde5d7d333e5d5baf
@@ -41,6 +43,17 @@ Architecture | Hash   | Value
 64-bit       | SHA1   | ff02eec5cba2c060fd3a5ac85b48d4075bb4f1a3
 32-bit       | SHA256 | a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 64-bit       | SHA256 | 941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+
+### MD5
+`md5sum elementaryos-freya-i386.20150411.iso`
+`md5sum elementaryos-freya-amd64.20150411.iso`
+### SHA1
+`sha1sum elementaryos-freya-i386.20150411.iso`
+`sha1sum elementaryos-freya-amd64.20150411.iso`
+### SHA256
+`sha256sum  elementaryos-freya-i386.20150411.iso`
+`sha256sum  elementaryos-freya-amd64.20150411.iso`
+
 
 ## Creating an Install Drive {#creating-an-installation-medium}
 
