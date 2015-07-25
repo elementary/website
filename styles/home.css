@@ -36,7 +36,7 @@
 }
 
 #carousel .slide.row {
-    max-width: initial;
+    max-width: 100%;
 }
 
 #carousel .slide > .column {
@@ -84,9 +84,6 @@
     }
 }
 
-#carousel .slide.row {
-    max-width: 100%;
-}
 
 #carousel .column.alert img {
     height: 64px;
