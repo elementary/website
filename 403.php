@@ -1,7 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['name'] = '403';
-    $page['title'] = 'Forbidden &sdot; elementary';
+    $page['title'] = 'Access Denied &sdot; elementary';
     include $template['header'];
 ?>
 
@@ -14,7 +14,7 @@
         <i class="warning fa fa-warning"></i>
     </div>
     <div class="column alert">
-        <h3>Access denied.</h3>
+        <h3>Access Denied.</h3>
         <p>You don't have permission to view the requested resource.</p>
     </div>
     <div class="row">
