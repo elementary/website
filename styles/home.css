@@ -84,8 +84,8 @@
     }
 }
 
-#carousel .column img {
-    width: 100%;
+#carousel .slide.row {
+    max-width: 100%;
 }
 
 #carousel .column.alert img {
