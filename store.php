@@ -12,7 +12,7 @@
                 <script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
             </div>
             <div class="row">
-                <p>All apparel is in US sizes. American Apparel sizes run a bit snug; for sizing details, see <a href="http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts"></a>this chart</a>.</p>
+                <p>All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s <a href="http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts">sizing chart</a>.</p>
             </div>
 
 <?php
