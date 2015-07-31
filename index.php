@@ -44,8 +44,8 @@
                     <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
                     <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
                     <div class="column">
-                        <sup class="pre-amount">$</sup>
                         <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
+                        <sup class="pre-amount">$</sup>
                         <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                     </div>
                     <div style="clear:both;"></div>
