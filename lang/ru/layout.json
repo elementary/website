@@ -1,15 +1,15 @@
 {
-    "Download elementary OS": "Скачай elementary OS",
+    "Download elementary OS": "Загрузить elementary OS",
     "Blog": "Блог",
     "Support": "Поддержка",
     "Store": "Магазин",
-    "Developer": "Разработка",
+    "Developer": "Разработчикам",
     "Get Involved": "Принять участие",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Все права защищены © 2015 elementary LLC. <a href=\"/privacy-policy\">Политика конфиденциальности</a>",
-    "&nbsp;Language": "Язык",
+    "Language": "Язык",
     "Change Site Language": "Изменить язык сайта",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Сайт Elementary OS построен на современных веб-технологиях, которые Ваш браузер не поддерживает.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Эта версия Internet Explorer устарела и может содержать ошибки или уязвимости в системе безопасности. Пожалуйста, <a href=\"http://browsehappy.com/\"> обновитесь </a> до IE 11 или воспользуйтесь альтернативным браузером.",
-    "Dismiss": "Отказаться",
+    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Сайт Elementary OS создан с использованием современных веб-технологиях, которые не поддерживаются вашим браузером.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Эта версия Internet Explorer устарела и может содержать ошибки или уязвимости в системе безопасности. Пожалуйста, <a href=\"http://browsehappy.com/\">обновитесь</a> до IE 11 или воспользуйтесь другим браузером.",
+    "Dismiss": "Отклонить",
     "Learn More": "Подробнее"
 }

@@ -3,7 +3,7 @@
     "Do Not Track": "لا لتتبع",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "في هذا الموقع نفتخر بخاصية لا للتتبع الموجودة في أغلب المتصفحات المتطورة وتعطيل جوجل أنالتيكس إذا وجدت. نحن لا نستطيع حذف أسليب التتبع تلقائيا الا إذا كانت تؤثر على أداء الموقع بشكل صريح. يمكنك التحكم في أساليب التتبع هذه إذا كنت ترغب، راجع قسم تعطيل الكوكيز.",
     "Cookies": "الكوكيز",
-    "You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.": "يمكنك إختيار تعطيل أو إنتقاء تعطيل أي الكوكيز أو كوكيز تطبيقات آخرى في إعدادت متصفحك.",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "هذا الموقع يستعمل الكوكيز للتحسينات التدريجية. قد يعمل الموقع بدونها ولكن سيقلل من قابلية الاستخدام. مثلا، الموقع لن يتدكر إذا ما قمت بالدفع لشراء نظام التشغيل المنتري؛ وبشكل إفتراضي سيطلب منك الموقع الدفع مرة آخرى.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "سجل الكوكيز المحفوظة للعناصر السلوكية وتحليل التهديدات المحتملة. للمزيد من المعلومات راجع",
     "CloudFlare Privacy & Security Policy": "سياسة الخصوصية والأمان لكلاودفلير",
@@ -13,6 +13,5 @@
     "Stripe's Privacy Policy": "سياسة الخصوصية سترايب",
     "Manage Cookies": "إدارة الكوكيز",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "بما أنك زرت موقعنا بالفعل، ربما ترغب بإدارة الكوكيز التى تم تحميلها على متصفحك. أسفله رابط للتعليمات.",
-    "Midori": "تطبيق ميدوري",
     "Privacy Policy &sdot; elementary": "سياسة الخصوصية - المنتري"
 }

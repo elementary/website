@@ -1,257 +1,252 @@
 {
-    "1423483200": {
-        "created": 55,
-        "fixed": 2,
-        "in_progress": 10
+    "1423722345": {
+        "created": 11,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423518172": {
-        "created": 53,
-        "fixed": 2,
-        "in_progress": 12
+    "1423961490": {
+        "created": 11,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423553144": {
-        "created": 51,
-        "fixed": 8,
-        "in_progress": 8
+    "1424200636": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423588117": {
-        "created": 51,
-        "fixed": 8,
-        "in_progress": 8
+    "1424439781": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423623089": {
-        "created": 51,
-        "fixed": 8,
-        "in_progress": 9
+    "1424678927": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423658061": {
-        "created": 52,
-        "fixed": 8,
-        "in_progress": 9
+    "1424918072": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423693034": {
-        "created": 54,
-        "fixed": 8,
-        "in_progress": 9
+    "1425157218": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423728006": {
-        "created": 54,
-        "fixed": 8,
-        "in_progress": 9
+    "1425396363": {
+        "created": 12,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423762978": {
-        "created": 54,
-        "fixed": 9,
-        "in_progress": 9
+    "1425635509": {
+        "created": 13,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423797951": {
-        "created": 54,
-        "fixed": 9,
-        "in_progress": 9
+    "1425874654": {
+        "created": 13,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423832923": {
-        "created": 54,
-        "fixed": 9,
-        "in_progress": 9
+    "1426113800": {
+        "created": 15,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423867895": {
-        "created": 51,
-        "fixed": 12,
-        "in_progress": 9
+    "1426352945": {
+        "created": 15,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423902868": {
-        "created": 51,
-        "fixed": 12,
-        "in_progress": 9
+    "1426592091": {
+        "created": 15,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423937840": {
-        "created": 50,
-        "fixed": 12,
-        "in_progress": 10
+    "1426831236": {
+        "created": 15,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1423972813": {
-        "created": 49,
-        "fixed": 13,
-        "in_progress": 10
+    "1427070382": {
+        "created": 15,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424007785": {
-        "created": 47,
-        "fixed": 13,
-        "in_progress": 12
+    "1427309527": {
+        "created": 16,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424042757": {
-        "created": 45,
-        "fixed": 13,
-        "in_progress": 14
+    "1427548673": {
+        "created": 16,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424077730": {
-        "created": 45,
-        "fixed": 13,
-        "in_progress": 14
+    "1427787818": {
+        "created": 16,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424112702": {
-        "created": 37,
-        "in_progress": 17,
-        "fixed": 18
+    "1428026964": {
+        "created": 18,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424147674": {
-        "created": 36,
-        "in_progress": 18,
-        "fixed": 18
+    "1428266109": {
+        "created": 18,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424182647": {
-        "created": 36,
-        "in_progress": 17,
-        "fixed": 19
+    "1428505255": {
+        "created": 19,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424217619": {
-        "created": 36,
-        "in_progress": 17,
-        "fixed": 19
+    "1428744400": {
+        "created": 19,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424252591": {
-        "created": 35,
-        "in_progress": 18,
-        "fixed": 19
+    "1428983546": {
+        "created": 21,
+        "in_progress": 1,
+        "fixed": 2
     },
-    "1424287564": {
-        "created": 35,
-        "in_progress": 16,
+    "1429222691": {
+        "created": 21,
+        "in_progress": 1,
+        "fixed": 3
+    },
+    "1429461836": {
+        "created": 21,
+        "in_progress": 1,
+        "fixed": 4
+    },
+    "1429700982": {
+        "created": 22,
+        "in_progress": 1,
+        "fixed": 4
+    },
+    "1429940127": {
+        "created": 21,
+        "in_progress": 2,
+        "fixed": 4
+    },
+    "1430179273": {
+        "created": 21,
+        "in_progress": 2,
+        "fixed": 4
+    },
+    "1430418418": {
+        "created": 22,
+        "in_progress": 3,
+        "fixed": 4
+    },
+    "1430657564": {
+        "created": 22,
+        "in_progress": 3,
+        "fixed": 4
+    },
+    "1430896709": {
+        "created": 22,
+        "in_progress": 3,
+        "fixed": 4
+    },
+    "1431135855": {
+        "created": 22,
+        "in_progress": 4,
+        "fixed": 4
+    },
+    "1431375000": {
+        "created": 24,
+        "in_progress": 4,
+        "fixed": 4
+    },
+    "1431614146": {
+        "created": 30,
+        "in_progress": 4,
+        "fixed": 4
+    },
+    "1431853291": {
+        "created": 27,
+        "in_progress": 6,
+        "fixed": 6
+    },
+    "1432092437": {
+        "created": 30,
+        "in_progress": 6,
+        "fixed": 7
+    },
+    "1432331582": {
+        "created": 25,
+        "in_progress": 10,
+        "fixed": 10
+    },
+    "1432570728": {
+        "created": 23,
+        "in_progress": 8,
+        "fixed": 14
+    },
+    "1432809873": {
+        "created": 22,
+        "in_progress": 3,
         "fixed": 21
     },
-    "1424322536": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424357509": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424392481": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424427453": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424462426": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424497398": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424532370": {
-        "created": 35,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424567343": {
-        "created": 37,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424602315": {
-        "created": 37,
-        "in_progress": 16,
-        "fixed": 21
-    },
-    "1424637287": {
-        "created": 35,
-        "in_progress": 15,
+    "1433049019": {
+        "created": 18,
+        "in_progress": 4,
         "fixed": 24
     },
-    "1424672260": {
-        "created": 27,
-        "in_progress": 13,
-        "fixed": 34
-    },
-    "1424707232": {
-        "created": 28,
-        "in_progress": 12,
-        "fixed": 35
-    },
-    "1424742204": {
-        "created": 27,
-        "in_progress": 13,
-        "fixed": 35
-    },
-    "1424777177": {
-        "created": 27,
-        "in_progress": 13,
-        "fixed": 35
-    },
-    "1424812149": {
-        "created": 27,
-        "in_progress": 13,
-        "fixed": 35
-    },
-    "1424847122": {
-        "created": 27,
-        "in_progress": 13,
-        "fixed": 35
-    },
-    "1424882094": {
-        "fixed": 36,
-        "created": 25,
-        "in_progress": 14
-    },
-    "1424917066": {
-        "fixed": 36,
-        "created": 25,
-        "in_progress": 14
-    },
-    "1424952039": {
-        "fixed": 36,
-        "created": 25,
-        "in_progress": 14
-    },
-    "1424987011": {
-        "fixed": 39,
-        "created": 23,
-        "in_progress": 14
-    },
-    "1425021983": {
-        "fixed": 39,
-        "created": 23,
-        "in_progress": 14
-    },
-    "1425056956": {
-        "fixed": 44,
-        "created": 20,
-        "in_progress": 12
-    },
-    "1425091928": {
-        "fixed": 44,
-        "created": 20,
-        "in_progress": 12
-    },
-    "1425126900": {
-        "fixed": 44,
+    "1433288164": {
         "created": 18,
-        "in_progress": 14
+        "in_progress": 4,
+        "fixed": 24
     },
-    "1425161873": {
-        "fixed": 46,
-        "created": 16,
-        "in_progress": 14
+    "1433527310": {
+        "created": 17,
+        "in_progress": 3,
+        "fixed": 26
     },
-    "1425196845": {
-        "fixed": 47,
+    "1433766455": {
+        "created": 19,
+        "in_progress": 4,
+        "fixed": 26
+    },
+    "1434005601": {
+        "created": 18,
+        "in_progress": 3,
+        "fixed": 28
+    },
+    "1434244746": {
+        "created": 19,
+        "in_progress": 4,
+        "fixed": 29
+    },
+    "1434483892": {
+        "created": 18,
+        "in_progress": 5,
+        "fixed": 31
+    },
+    "1434723037": {
+        "created": 18,
+        "in_progress": 5,
+        "fixed": 31
+    },
+    "1434962183": {
         "created": 15,
-        "in_progress": 14
+        "fixed": 33,
+        "in_progress": 7
     },
-    "1425231818": {
-        "fixed": 50,
+    "1435201328": {
+        "created": 15,
+        "fixed": 37,
+        "in_progress": 5
+    },
+    "1435440474": {
         "created": 14,
-        "in_progress": 12
+        "fixed": 40,
+        "in_progress": 3
     }
 }

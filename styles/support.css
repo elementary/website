@@ -36,7 +36,7 @@ a.column h3 {
 * App grid *
 ***********/
 
-.row.apps{
+.row.apps {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 0;
@@ -48,12 +48,11 @@ a.column h3 {
     margin: 12px 0;
     padding: 12px;
     width: 100%;
-
+    vertical-align: top;
+    word-wrap: break-word;
     border: 1px solid transparent;
     border-radius: 4px;
-
     color: inherit;
-
     transition: border-color 150ms ease-in-out;
 }
 
@@ -74,6 +73,7 @@ a.column h3 {
 }
 
 @media (min-width: 600px) {
+
     .row.apps .app {
         width: 192px;
         text-align: center;
@@ -89,6 +89,7 @@ a.column h3 {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .row.apps .app span {
@@ -102,7 +103,9 @@ a.column h3 {
 ***************************/
 
 @media (min-width: 1164px) {
+
     a.column h3 {
         text-align: left;
     }
+
 }
