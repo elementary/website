@@ -19,7 +19,7 @@ $(function() {
         slidesContainer: 'creating-a-usb-choices-slide-container',
         choicesContainer: 'creating-a-usb-choices-container',
         id: 'creating-a-usb-choices',
-        choices: ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
+        choices: ['creating-a-usb-on-windows', 'creating-a-usb-on-osx', 'creating-a-usb-on-linux'],
         hideHeadings: true
     });
     var bootSlider = new Slider({
@@ -34,8 +34,10 @@ $(function() {
     var currentOs = detectOS();
     if (currentOs == 'windows' || !currentOs) {
         createUsbSlider.slideTo('creating-a-usb-on-windows');
+    } else if (currentOs == 'osx') {
+        createUsbSlider.slideTo('creating-a-usb-on-osx');
     } else {
-        createUsbSlider.slideTo('creating-a-usb-on-others');
+        createUsbSlider.slideTo('creating-a-usb-on-linux');
     }
 
     if (currentOs == 'osx') {

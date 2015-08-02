@@ -2,7 +2,7 @@
 
 ## Download elementary OS {#download-elementary-os}
 
-If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
+If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to an installation drive using the instructions below.
 
 elementary OS is currently built for two processor architectures, 32-bit and 64-bit.
 
@@ -36,7 +36,8 @@ Make sure to back your important data up to an external location such as a cloud
 <div class="creating-a-usb-choices-container text-center">
 <div id="creating-a-usb-choices" class="column linked">
 <a class="button creating-a-usb-on-windows" href="#creating-a-usb-on-windows">Windows</a>
-<a class="button creating-a-usb-on-others" href="#creating-a-usb-on-others">OS X &amp; Ubuntu</a>
+<a class="button creating-a-usb-on-osx" href="#creating-a-usb-on-osx">OS X</a>
+<a class="button creating-a-usb-on-linux" href="#creating-a-usb-on-linux">Linux</a>
 </div>
 </div>
 
@@ -59,17 +60,79 @@ Click "Start", then just wait for the process to finish.
 
 </div>
 
-<div id="creating-a-usb-on-others" class="slide" markdown="1">
+<div id="creating-a-usb-on-osx" class="slide" markdown="1">
 
-### OS X, Ubuntu, and others
+### OS X
+
+Before creating an install drive, make sure you have all OS X updates installed. To check for available updates, open the Apple Menu and select either "Software Update&#8230;" or "App Store&#8230;" Make sure to install any OS updates in addition to updates labeled with "firmware" and "Boot Camp".
+
+ Next, find out what Mac model you have:
+
+For Macs running OS X Yosemite (10.10) or later, click on the Apple Menu and select "About This Mac". Take note of the year the Mac was build.
+
+![About OS X Yosemite](images/docs/installation/osx_about_yosemite.png)
+
+For Macs running OS X Mavericks (10.9) or earlier, click on the Apple Menu and select "About This Mac" followed by "More Info&#8230;" Take note of the "Model Identifier".
+
+![About OS X](images/docs/installation/osx_about_mac.png)
+
+#### Compatibility
+
+The following Macs are incompatible with elementary OS:
+
+ - PowerPC based Macs
+ - Xserve Macs
+
+It's recommended to create an install USB drive for the following Mac models:
+
+ - MacBook7,1 (Mid 2010) or newer
+ - MacBook Pro7,1 (Mid 2010) or newer
+ - MacBook Air3,2 (Late 2010) or newer
+ - Mac Mini5,1 (Mid 2011) or newer
+ - iMac 13,1 (Late 2012) or newer
+ - Mac Pro5,1 (Mid 2010) or newer
+
+For these Macs, proceed to the instructions on creating an install USB drive. If your Mac is older than the ones shown above, proceed to the instructions on creating an install DVD.
+
+#### Creating an Install USB Drive
+
+Begin with a spare USB flash drive with at least 1 GB of free space.
+
+You'll need a small application called "elementary thumbdrive creator" Download it [here](https://github.com/sdaitzman/elementary-thumbdrive-creator/archive/master.zip), uncompress it, and open the app to launch it. You'll see a window looking like the one below.
+
+![elementary thumbdrive creator](images/docs/installation/osx_thumbnail_creator.png)
+
+Insert your spare USB flash drive if you haven't done so already and proceed to follow the instructions given by the app. To see elementary Thumbdrive Creator's progress, click on the cog on the Apple Menu.
+
+![elementary thumdrive creator progress](images/docs/installation/osx_thumbnail_creator_progress.png)
+
+If your Mac fails to start the USB drive, either by not giving any option to start it in the boot selector, or by showing the "No Bootable Device --- Insert Boot Disk and Press Any Key" text, you may choose to create an elementary OS Install DVD instead.
+
+#### Creating an Install DVD
+
+Insert a blank DVD-R or DVD-RW into your DVD drive. It's not possible to use a CD since elementary OS is too large to fit inside one. If your Mac does not have a build-in DVD drive, you may use an external one, including the Apple USB Super Drive.
+
+Upon inserting the DVD a dialog might appear asking what to do; click "ignore".
+
+![OS X dialog](images/docs/installation/osx_dialog.png)
+
+Right or control click on the ISO file you've just downloaded in Finder and select "Burn elementaryos-freya-XX.XX.iso to Disc&#8230;" The date and architecture, either amd64 or x86, may be different than shown below.
+
+![OS X right click menu](images/docs/installation/osx_menu.png)
+
+</div>
+
+<div id="creating-a-usb-on-linux" class="slide" markdown="1">
+
+### Linux
 
 ![UNetbootin](images/docs/installation/unetbootin.png)
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
-You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In OS X you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.
+You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>.
 
-Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:
+If using Ubuntu, UNetBootin can be found in the dash. It will open a window like the one below:
 
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
