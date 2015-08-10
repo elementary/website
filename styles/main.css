@@ -515,6 +515,16 @@ footer ul li a:focus {
     margin: 8px 0 0;
 }
 
+.dev-alert {
+    padding: 9px;
+    background: #FFE946;
+    border: 2px dotted black;
+}
+
+.dev-alert p {
+    color: black;
+}
+
 .icon {
     position: relative;
     text-align: center;

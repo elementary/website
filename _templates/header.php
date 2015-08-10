@@ -133,5 +133,15 @@ $l10n->begin_html_translation();
         </nav>
 
         <div id="content-container">
+<?php if (!isset($_ENV['PHPENV']) || $_ENV['PHPENV'] !== "production" ): ?>
+        <div class="row">
+            <div class="dev-alert">
+                <p><strong>Be warned, you are viewing a development version of our site</strong></p>
+                <p>Some pages here may not work or act as you expect.</p>
+                <br>
+                <p>If you got here by accident please go to <a href="http://elementary.io">elementary.io</a>, our actual website address.</p>
+            </div>
+        </div>
+<?php endif; ?>
 <?php
 $l10n->set_domain($page['name']);
