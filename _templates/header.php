@@ -140,7 +140,7 @@ $l10n->begin_html_translation();
                     <i class="warning fa fa-warning"></i>
                 </div>
                 <div class="icon-text">
-                    <h3>Warning: Development Site</h3>
+                    <h3>This is a development site.</h3>
                     <p>You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href="http://elementary.io">elementary.io</a>, our actual website address.</p>
                 </div>
             </div>
