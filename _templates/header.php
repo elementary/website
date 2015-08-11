@@ -134,12 +134,15 @@ $l10n->begin_html_translation();
 
         <div id="content-container">
 <?php if (!isset($_ENV['PHPENV']) || $_ENV['PHPENV'] !== "production" ): ?>
-        <div class="row">
-            <div class="dev-alert">
-                <p><strong>Be warned, you are viewing a development version of our site</strong></p>
-                <p>Some pages here may not work or act as you expect.</p>
-                <br>
-                <p>If you got here by accident please go to <a href="http://elementary.io">elementary.io</a>, our actual website address.</p>
+        <div class="row alert warning">
+            <div class="column alert">
+                <div class="icon">
+                    <i class="warning fa fa-warning"></i>
+                </div>
+                <div class="icon-text">
+                    <h2 id="back-up-your-data">Warning: Development Site</h2>
+                    <p>You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href="http://elementary.io">elementary.io</a>, our actual website address.</p>
+                </div>
             </div>
         </div>
 <?php endif; ?>
