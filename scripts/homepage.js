@@ -60,7 +60,9 @@ $(function () {
             },
             name: 'elementary LLC.',
             description: 'elementary OS download',
-            bitcoin: 'true',
+            bitcoin: true,
+            alipay: 'auto',
+            locale: 'auto',
             amount: amount
         });
     }
