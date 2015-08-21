@@ -33,8 +33,6 @@ Make sure to back your important data up to an external location such as a cloud
 
 ## Verify your Download {#verify-your-download}
 
-### Verifying your Download
-
 <div class="verifying-your-download-choices-container text-center">
 <div id="verifying-your-download-choices" class="column linked">
 <a class="button verifying-your-download-on-windows" href="#verifying-your-download-on-windows">Windows</a>
