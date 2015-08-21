@@ -50,6 +50,18 @@ $(function () {
         }
     });
 
+    function stripe_language() {
+        var stripe_languages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+        var language_code = $('html').prop('lang');
+        // Stripe supports simplified chinese
+        if (/^zh_CN/.test(language_code)) {
+            return 'zh';
+        }
+        if (stripe_languages.indexOf(language_code) != -1) {
+            return language_code;
+        }
+    }
+
     function do_stripe_payment (amount) {
         StripeCheckout.open({
             key: stripe_key,
@@ -62,7 +74,7 @@ $(function () {
             description: 'elementary OS download',
             bitcoin: true,
             alipay: 'auto',
-            locale: 'auto',
+            locale: stripe_language() || 'auto',
             amount: amount
         });
     }
