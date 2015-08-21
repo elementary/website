@@ -655,55 +655,6 @@ button.suggested-action,
     vertical-align: top;
 }
 
-.payment-button::before {
-    content: '$';
-    font-size: smaller;
-    margin-left: -3px;
-    margin-right: 3px;
-    vertical-align: super;
-}
-
-.pre-amount {
-    color: #333;
-    margin-left: 14px;
-    margin-right: -21px;
-    margin-top: 11px;
-    position: absolute;
-    pointer-events: none;
-}
-
-#amount-custom {
-    width: 100%;
-    max-width: 170px;
-    margin: 3px 0;
-    padding: 9px;
-}
-
-.focus-reveal {
-    opacity: 0 !important;
-    transition: 250ms all;
-    margin: 0 3px;
-    width: 190px;
-}
-
-input:focus + .focus-reveal {
-    opacity: 0.8 !important;
-    transition: 250ms all;
-}
-
-@media (min-width: 444px) {
-
-    #amount-custom {
-        width: 117px;
-        margin: 3px;
-    }
-
-    .focus-reveal {
-        width: auto;
-    }
-
-}
-
 /********
 * Input *
 ********/
