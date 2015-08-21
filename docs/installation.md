@@ -46,35 +46,23 @@ Make sure to back your important data up to an external location such as a cloud
 <div id="verifying-your-download-on-windows" class="slide" markdown="1">
 
 ### Windows
-<!-- TODO These don't work natively on Windows
+
+![DivHasher - Choose File](images/docs/installation/divhasher.gif){.float-left}
+
+Unfortunately, Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
+
+All you have to do is open it up, click the `Choose…` option, select the ISO you just downloaded, and check that the SHA256 output matches one of the following hashes.
+
 #### 32-bit
-
-Running the following command in your terminal:
-
-```bash
-shasum -a 256 -c elementaryos-freya-i386.20150411.iso
-```
-
-should produce the output:
-
 ```bash
 a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
 #### 64-bit
-
-Running the following command in your terminal:
-
-```bash
-shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
-```
-
-should produce the output:
-
 ```bash
 941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
 ```
--->
+
 </div>
 
 <div id="verifying-your-download-on-os-x" class="slide" markdown="1">
