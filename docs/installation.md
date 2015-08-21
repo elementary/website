@@ -47,7 +47,13 @@ Make sure to back your important data up to an external location such as a cloud
 
 ### Windows
 
-![DivHasher - Choose File](images/docs/installation/divhasher.gif){.float-left}
+<div class="column half" markdown="1">
+
+![DivHasher - Choose File](images/docs/installation/divhasher.gif)
+
+</div>
+
+<div class="column half" markdown="1">
 
 Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
 
@@ -65,6 +71,7 @@ a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
 ```
 
+</div>
 
 </div>
 

@@ -422,18 +422,18 @@ footer ul li a:focus {
 
 @media (min-width: 444px) {
 
-    .column+.column {
+    .column + .column {
         margin-left: 24px;
     }
 
     .row .column.half {
-        width: 492px;
+        width: calc(50% - 67px);
         margin: 32px 32px 0;
         vertical-align: top;
     }
 
     .column.third {
-        width: 316px;
+        width: calc(33% - 67px);
         margin: 32px 32px 0;
         vertical-align: top;
     }
