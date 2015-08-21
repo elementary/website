@@ -6,7 +6,6 @@
     include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
-    $filesize = (int) file_get_contents(__DIR__.'/backend/iso-size.txt');
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
@@ -54,7 +53,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Download Freya</button>
-                <p class="small-label"><?php echo round($filesize / 1000 / 1000); ?> MB (for PC or Mac)</p>
+                <p class="small-label">893 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
