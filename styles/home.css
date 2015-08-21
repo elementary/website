@@ -1,3 +1,53 @@
+.payment-button::before {
+    content: '$';
+    font-size: 14px;
+    float: left;
+    margin-left: -3px;
+    margin-right: 3px;
+    vertical-align: super;
+}
+
+.pre-amount {
+    color: #333;
+    margin-left: 14px;
+    margin-right: -21px;
+    margin-top: 11px;
+    position: absolute;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+#amount-custom {
+    width: 100%;
+    max-width: 170px;
+    padding: 8px 24px;
+    text-align: center;
+}
+
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+    margin: 0 3px;
+    width: 190px;
+}
+
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
+}
+
+@media (min-width: 444px) {
+
+    #amount-custom {
+        width: 150px;
+    }
+
+    .focus-reveal {
+        width: auto;
+    }
+
+}
+
 #the-press {
     font-size: 24px;
     opacity: 0.65;
