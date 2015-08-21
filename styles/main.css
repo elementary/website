@@ -427,7 +427,7 @@ footer ul li a:focus {
     }
 
     .row .column.half {
-        width: calc(50% - 67px);
+        width: calc(50% - 88px);
         margin: 32px 32px 0;
         vertical-align: top;
     }
