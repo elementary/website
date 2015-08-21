@@ -413,6 +413,7 @@ footer ul li a:focus {
 .column {
     display: inline-block;
     max-width: 100%;
+    position: relative;
 }
 
 .column.third {
@@ -665,18 +666,23 @@ button.suggested-action,
 
 .pre-amount {
     color: #333;
-    margin-left: 14px;
-    margin-right: -21px;
-    margin-top: 11px;
+    left: 36px;
+    top: 0;
+    line-height: 42px;
     position: absolute;
     pointer-events: none;
+    display: none;
 }
 
 #amount-custom {
     width: 100%;
     max-width: 170px;
     margin: 3px 0;
-    padding: 9px;
+    padding: 9px 9px 9px 12px;
+}
+
+#amount-custom:focus + .pre-amount {
+    display: block;
 }
 
 .focus-reveal {
