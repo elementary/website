@@ -23,7 +23,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 </div>
 <div class="icon-text" markdown="1">
 
-## Back Up Your Data {#back-up-your-data}
+##### Back Up Your Data {#back-up-your-data}
 
 Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.
 
