@@ -47,30 +47,9 @@ Make sure to back your important data up to an external location such as a cloud
 
 ### Windows
 <!-- TODO These don't work natively on Windows
-
-#### 32-bit
-The command:
-`sha256sum elementaryos-freya-i386.20150411.iso`
-should produce the output:
-`a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7`
-
-#### 64-bit
-
-The command:
-`sha256sum elementaryos-freya-amd64.20150411.iso`
-should produce the output:
-`941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab`
--->
-
-</div>
-
-<div id="verifying-your-download-on-os-x" class="slide" markdown="1">
-
-### OS X
-
 #### 32-bit
 
-The command:
+Running the following command in your terminal:
 
 ```bash
 shasum -a 256 -c elementaryos-freya-i386.20150411.iso
@@ -84,7 +63,41 @@ a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 
 #### 64-bit
 
-The command:
+Running the following command in your terminal:
+
+```bash
+shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
+```
+
+should produce the output:
+
+```bash
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+```
+-->
+</div>
+
+<div id="verifying-your-download-on-os-x" class="slide" markdown="1">
+
+### OS X
+
+#### 32-bit
+
+Running the following command in your terminal:
+
+```bash
+shasum -a 256 -c elementaryos-freya-i386.20150411.iso
+```
+
+should produce the output:
+
+```bash
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+```
+
+#### 64-bit
+
+Running the following command in your terminal:
 
 ```bash
 shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
@@ -103,7 +116,7 @@ should produce the output:
 ### Linux
 
 #### 32-bit
-The command:
+Running the following command in your terminal:
 
 ```bash
 sha256sum elementaryos-freya-i386.20150411.iso
@@ -117,7 +130,7 @@ a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 
 #### 64-bit
 
-The command:
+Running the following command in your terminal:
 
 ```bash
 sha256sum elementaryos-freya-amd64.20150411.iso
