@@ -31,6 +31,119 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 
+## Verify your Download {#verify-your-download}
+
+<div class="verifying-your-download-choices-container text-center">
+<div id="verifying-your-download-choices" class="column linked">
+<a class="button verifying-your-download-on-windows" href="#verifying-your-download-on-windows">Windows</a>
+<a class="button verifying-your-download-on-os-x" href="#verifying-your-download-on-os-x">OS X</a>
+<a class="button verifying-your-download-on-linux" href="#verifying-your-download-on-linux">Linux</a>
+</div>
+</div>
+
+<div class="verifying-your-download-slide-container" markdown="1">
+
+<div id="verifying-your-download-on-windows" class="slide" markdown="1">
+
+### Windows
+
+<div class="column half" markdown="1">
+
+![DivHasher - Choose File](images/docs/installation/divhasher.gif)
+
+</div>
+
+<div class="column half" markdown="1">
+
+Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
+
+1. Open DivHasher
+2. Select `Choose…` and find the elementary OS ISO file
+3. Verify that the text box next to "SHA-256" matches one of the following hashes
+
+#### 32-bit
+```bash
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+```
+
+#### 64-bit
+```bash
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+```
+
+</div>
+
+</div>
+
+<div id="verifying-your-download-on-os-x" class="slide" markdown="1">
+
+### OS X
+
+#### 32-bit
+
+Running the following command in your terminal:
+
+```bash
+shasum -a 256 -c elementaryos-freya-i386.20150411.iso
+```
+
+should produce the output:
+
+```bash
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+```
+
+#### 64-bit
+
+Running the following command in your terminal:
+
+```bash
+shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
+```
+
+should produce the output:
+
+```bash
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+```
+
+</div>
+
+<div id="verifying-your-download-on-linux" class="slide" markdown="1">
+
+### Linux
+
+#### 32-bit
+Running the following command in your terminal:
+
+```bash
+sha256sum elementaryos-freya-i386.20150411.iso
+```
+
+should produce the output:
+
+```bash
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+```
+
+#### 64-bit
+
+Running the following command in your terminal:
+
+```bash
+sha256sum elementaryos-freya-amd64.20150411.iso
+```
+
+should produce the output:
+
+```bash
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+```
+
+</div>
+
+</div>
+
 ## Creating an Install Drive {#creating-an-installation-medium}
 
 <div class="creating-a-usb-choices-container text-center">

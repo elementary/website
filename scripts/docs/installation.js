@@ -15,6 +15,13 @@ $(function() {
     }
 
     // Setup sliders
+    var verifyDownloadSlider = new Slider({
+        slidesContainer: 'verifying-your-download-slide-container',
+        choicesContainer: 'verifying-your-download-choices-container',
+        id: 'verifying-your-download-choices',
+        choices: ['verifying-your-download-on-windows', 'verifying-your-download-on-os-x', 'verifying-your-download-on-linux'],
+        hideHeadings: true
+    });
     var createUsbSlider = new Slider({
         slidesContainer: 'creating-a-usb-choices-slide-container',
         choicesContainer: 'creating-a-usb-choices-container',
@@ -32,6 +39,15 @@ $(function() {
 
     // Show instructions for the current platform
     var currentOs = detectOS();
+
+    if (currentOs == 'windows' || !currentOs) {
+        verifyDownloadSlider.slideTo('verifying-your-download-on-windows');
+    } else if (currentOs == 'osx') {
+        verifyDownloadSlider.slideTo('verifying-your-download-on-os-x');
+    } else {
+        verifyDownloadSlider.slideTo('verifying-your-download-on-linux');
+    }
+
     if (currentOs == 'windows' || !currentOs) {
         createUsbSlider.slideTo('creating-a-usb-on-windows');
     } else {
@@ -43,4 +59,5 @@ $(function() {
     } else {
         bootSlider.slideTo('booting-on-a-pc');
     }
+
 })();
