@@ -49,9 +49,11 @@ Make sure to back your important data up to an external location such as a cloud
 
 ![DivHasher - Choose File](images/docs/installation/divhasher.gif){.float-left}
 
-Unfortunately, Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
+Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
 
-All you have to do is open it up, click the `Choose…` option, select the ISO you just downloaded, and check that the SHA256 output matches one of the following hashes.
+1. Open DivHasher
+2. Select `Choose…` and find the elementary OS ISO file
+3. Verify that the text box next to "SHA-256" matches one of the following hashes
 
 #### 32-bit
 ```bash
