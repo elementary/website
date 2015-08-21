@@ -63,12 +63,12 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 
 #### 32-bit
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
 ```
 
 #### 64-bit
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
 </div>
@@ -90,7 +90,7 @@ shasum -a 256 -c elementaryos-freya-i386.20150411.iso
 should produce the output:
 
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
 ```
 
 #### 64-bit
@@ -104,7 +104,7 @@ shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
 should produce the output:
 
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
 </div>
@@ -123,7 +123,7 @@ sha256sum elementaryos-freya-i386.20150411.iso
 should produce the output:
 
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
 ```
 
 #### 64-bit
@@ -137,7 +137,7 @@ sha256sum elementaryos-freya-amd64.20150411.iso
 should produce the output:
 
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
 </div>
