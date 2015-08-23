@@ -1,3 +1,32 @@
+/******************
+* Responsive Hero *
+******************/
+.page-index .hero {
+    padding-top: 0;
+    height: 176px;
+    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
+}
+
+@media all and (min-width: 530px) {
+    .page-index .hero {
+        padding-top: 35%;
+        height: auto;
+        background-image: url(../images/responsive-images/notebook-medium.png);
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .page-index .hero {
+        background-image: url(../images/responsive-images/notebook-large.png);
+    }
+}
+
+@media all and (min-width: 1300px) {
+    .page-index .hero {
+        background-image: url(../images/notebook.png);
+    }
+}
+
 .payment-button::before {
     content: '$';
     font-size: 14px;

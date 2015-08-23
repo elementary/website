@@ -118,23 +118,6 @@ hr {
     background: #c9c9c9;
 }
 
-hr.fade-the-edges {
-    /* IE6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
-    /* IE10+ */
-    background: -ms-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-    /* FF3.6+ */
-    background: -moz-linear-gradient(left,  #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
-    /* Chrome,Safari4+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#c9c9c9), color-stop(100%,#ffffff));
-    /* Chrome10+,Safari5.1+ */
-    background: -webkit-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-    /* W3C */
-    background: linear-gradient(to right,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-}
-
 img {
     max-width: 100%;
 }
@@ -144,35 +127,6 @@ img.h1 {
     margin: 19px auto;
     opacity: 0.8;
     display: block;
-}
-
-/******************
-* Responsive Hero *
-******************/
-.page-index .hero {
-    padding-top: 0;
-    height: 176px;
-    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
-}
-
-@media all and (min-width: 530px) {
-    .page-index .hero {
-        padding-top: 35%;
-        height: auto;
-        background-image: url(../images/responsive-images/notebook-medium.png);
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .page-index .hero {
-        background-image: url(../images/responsive-images/notebook-large.png);
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .page-index .hero {
-        background-image: url(../images/notebook.png);
-    }
 }
 
 .inline-tweet {
@@ -195,8 +149,9 @@ img.h1 {
     padding-left: 6px;
     position: absolute;
     margin-top: 0.20em;
-    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
     -o-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     opacity: 0;
 }
@@ -215,8 +170,9 @@ img.h1 {
     padding-left: 6px;
     position: absolute;
     margin-top: 0.20em;
-    -webkit-transition: padding 0.15s ease-in-out;
+    -moz-transition: padding 0.15s ease-in-out;
     -o-transition: padding 0.15s ease-in-out;
+    -webkit-transition: padding 0.15s ease-in-out;
     transition: padding 0.15s ease-in-out;
 }
 
@@ -472,10 +428,6 @@ footer ul li a:focus {
     text-align: left;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /*********
 * Alerts *
 *********/
@@ -561,6 +513,7 @@ button,
                 0 1px 0 0 rgba(255, 255, 255, 0.15);
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
     transition: all 100ms ease-in;
+    -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
@@ -584,7 +537,7 @@ button.active,
 .target-amount.checked {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
-    border-color: rgba(0, 0, 0,, 0.25);
+    border-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
                 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
@@ -804,7 +757,7 @@ input:focus:-ms-input-placeholder {
 
 #legacy-warning {
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 2em;
     width: 100%;
     background-color: #e35d4f;
