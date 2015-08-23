@@ -264,10 +264,7 @@ nav > .nav-content > ul > li > .logomark {
     padding: 0;
 }
 
-nav .logomark .logomark-svg {
-    fill: inherit;
-}
-
+nav .logomark .logomark-svg,
 nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
@@ -326,16 +323,13 @@ footer .popover {
 
 @media (min-width: 375px) {
 
-    footer > p {
+    footer > p,
+    footer > .popover {
         float: left;
     }
 
     footer > ul {
-        float:right;
-    }
-
-    footer > .popover {
-        float: left;
+        float: right;
     }
 
 }
@@ -580,10 +574,6 @@ button.suggested-action,
     box-shadow: none;
 }
 
-#download {
-    margin: 3px auto 6px;
-}
-
 #logotype {
     position: relative;
     height: 66px;
@@ -591,6 +581,7 @@ button.suggested-action,
     max-width: 80%;
     margin: 16px auto;
 }
+
 #logotype svg {
     position: absolute;
     width: 100%;

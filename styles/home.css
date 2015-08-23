@@ -49,7 +49,8 @@
 #amount-custom {
     width: 100%;
     max-width: 170px;
-    padding: 8px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     text-align: center;
 }
 
@@ -75,6 +76,10 @@ input:focus + .focus-reveal {
         width: auto;
     }
 
+}
+
+#download {
+    margin: 3px auto 6px;
 }
 
 #the-press {
