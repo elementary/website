@@ -104,15 +104,11 @@
                         <h2>Design</h2>
                         <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
 
-                        <p>
-                            <strong>Visual Design</strong><br>
-                            A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a>
-                        </p>
+                        <h5>Visual Design</h5>
+                        <p>A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
-                        <p>
-                            <strong>Interactive Design</strong><br>
-                            We use a system on Launchpad called Blueprints to create detailed explanations of new features.
-                        </p>
+                        <h5>Interactive Design</h5>
+                        <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
 
                         <div class="actions">
                             <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
