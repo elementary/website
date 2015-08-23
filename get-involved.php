@@ -7,7 +7,7 @@
     $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
     include $template['header'];
 ?>
-            <section class="row hero">
+            <section class="grid hero">
                 <h1>Check out our progress for Freya Update 1</h1>
                 <div class="charts">
                     <div class="barchart-ctn">
@@ -48,14 +48,14 @@
 
             <section id="translations" class="light">
                 <div class="heading">
-                    <div class="row">
+                    <div class="grid">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank" data-l10n-off>Federico Fellini</a></p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column half">
+                <div class="grid">
+                    <div class="half">
                         <h2>Translations</h2>
                         <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
                         <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="/docs/translation-guide#translating-applications" class="read-more">Learn More</a></p>
@@ -66,7 +66,7 @@
                             <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank">Translate This Website</a>
                         </div>
                     </div>
-                    <div class="column half">
+                    <div class="half">
                         <img src="images/get-involved/translations.svg" alt="World map">
                     </div>
                 </div>
@@ -74,7 +74,7 @@
 
             <section id="web-development" class="dark">
                 <div class="heading">
-                    <div class="row">
+                    <div class="grid">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank" data-l10n-off>Paul Cookson</a></p>
                     </div>
@@ -93,14 +93,14 @@
 
             <section id="design" class="light">
                 <div class="heading">
-                    <div class="row">
+                    <div class="grid">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
                         <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank" data-l10n-off>Dieter Rams</a></p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column half">
+                <div class="grid">
+                    <div class="half">
                         <h2>Design</h2>
                         <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
 
@@ -120,7 +120,7 @@
                             <a class="button flat" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                         </div>
                     </div>
-                    <div class="column half">
+                    <div class="half">
                         <img src="images/get-involved/design.svg" alt="Application wire frame">
                     </div>
                 </div>
@@ -128,14 +128,14 @@
 
             <section id="desktop-development" class="dark">
                 <div class="heading">
-                    <div class="row">
+                    <div class="grid">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
                         <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank" data-l10n-off>Ralph Johnson</a></p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column half">
+                <div class="grid">
+                    <div class="half">
                         <h2>Desktop Development</h2>
                         <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
@@ -145,7 +145,7 @@
                             <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See Our Open Bug Reports</a>
                         </div>
                     </div>
-                    <div class="column half">
+                    <div class="half">
                         <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
                     </div>
                 </div>
@@ -153,14 +153,14 @@
 
             <section id="funding" class="light">
                 <div class="heading">
-                    <div class="row">
+                    <div class="grid">
                         <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar http://elementary.io/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
                         <p class="small-label"><a href="http://www.amazon.com/What-Love-Money-Will-Follow/dp/0440501601" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column half">
+                <div class="grid">
+                    <div class="half">
                         <h2>Targeted Funding</h2>
                         <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
@@ -168,7 +168,7 @@
                             <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary" target="_blank">BountySource</a>
                         </div>
                     </div>
-                    <div class="column half">
+                    <div class="half">
                         <h2>General Funding</h2>
                         <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
                         <p>PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.</p>

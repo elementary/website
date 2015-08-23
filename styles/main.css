@@ -429,6 +429,62 @@ footer ul li a:focus {
 }
 
 /*********
+* Grid *
+*********/
+
+.grid {
+    width: auto;
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.grid > * {
+    margin: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+    .grid .whole {
+        width: auto;
+    }
+
+    .grid .three-quarters {
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .two-thirds {
+        width: 66.66%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .half {
+        width: calc(50% - 48px);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .half h2 {
+        text-align: left;
+    }
+
+    .grid .third {
+        width: 33.33%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .quarter {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+/*********
 * Alerts *
 *********/
 
