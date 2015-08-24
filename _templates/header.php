@@ -2,7 +2,7 @@
 include_once __DIR__.'/l10n.php';
 
 if (!isset($l10n)) {
-   $l10n = new Translator(); 
+   $l10n = new Translator();
 }
 $page['lang'] = $l10n->lang();
 
@@ -118,18 +118,16 @@ $l10n->begin_html_translation();
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav class="nav">
-            <div class="nav-content">
-                <ul class="left">
+                <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li>
                 </ul>
-                <ul class="right">
+                <ul>
                     <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                 </ul>
-            </div>
         </nav>
 
         <div id="content-container">
