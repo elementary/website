@@ -79,8 +79,7 @@
         var choicesList = this.choices;
         var choicesContainer = this.choicesContainer;
 
-        var currentSlide = null;
-        var chosenSlide = null;
+        var $chosenSlide = null;
 
         for (var i = 0; i < choicesList.length; i++) {
             var choiceId = choicesList[i];
@@ -88,25 +87,21 @@
             $link = $('.' + choicesContainer + ' .' + choiceId);
             $Slide = $('#' + choiceId);
 
-            if (choiceId == chosenId) {
-                $link.addClass('active');
-                $chosenSlide = $Slide;
-                $chosenSlide.addClass('active').removeClass('next previous');
-                currentPosition = i;
-            } else {
-                $link.removeClass('active').addClass('previous');
-            }
+            // remove it until we find the chosen one
+            $link.removeClass('active');
 
-            if ($Slide.hasClass('active')) { // This Slide is currently visible
-                $currentSlide = $Slide;
-                if ($chosenSlide != $currentSlide) {
-                    $currentSlide.removeClass('active');
-                    if (i > currentPosition ) {
-                        $currentSlide.addClass('next');
-                    } else {
-                        $currentSlide.addClass('previous');
-                    }
-                }
+            // add class 'previous' until chosenId, then add 'next' class
+            if (choiceId != chosenId && $chosenSlide == null) {
+              $Slide.removeClass('next previous active').addClass('previous');
+            } else if (choiceId == chosenId) {
+              $Slide.removeClass('next previous active').addClass('active');
+              $chosenSlide = $Slide;
+              $link.addClass('active'); // clear before add
+            } else if (choiceId != chosenId && $chosenSlide != null) {
+              $Slide.removeClass('next previous active').addClass('next');
+              $link.removeClass('')
+            } else { // invalid selection
+              $Slide.removeClass('next previous active');
             }
 
         }
