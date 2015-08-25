@@ -84,7 +84,7 @@ a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 -c elementaryos-freya-i386.20150411.iso
+shasum -a 256 elementaryos-freya-i386.20150411.iso
 ```
 
 should produce the output:
@@ -98,7 +98,7 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 -c elementaryos-freya-amd64.20150411.iso
+shasum -a 256 elementaryos-freya-amd64.20150411.iso
 ```
 
 should produce the output:
