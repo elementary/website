@@ -20,7 +20,7 @@ $(function() {
         choicesContainer: 'operating-system-choices-container',
         id: 'operating-system-choices',
         choices: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
-        hideHeadings: true
+        hideHeadings: false
     });
 
     // Show instructions for the current platform
