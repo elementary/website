@@ -36,12 +36,14 @@ Make sure to back your important data up to an external location such as a cloud
 Select the operating system you are currently using to view tailored installation instructions.
 
 <div class="operating-system-choices-container text-center">
-<div id="verifying-your-download-choices" class="column linked">
-<a class="button install-on-windows-button" href="#install-on-windows">Windows</a>
-<a class="button install-on-os-x-button" href="#install-on-os-x">OS X</a>
-<a class="button install-on-ubuntu-button" href="#install-on-ubuntu">Ubuntu</a>
+<div id="operating-system-choices" class="column linked">
+<a class="button install-on-windows" href="#install-on-windows">Windows</a>
+<a class="button install-on-os-x" href="#install-on-os-x">OS X</a>
+<a class="button install-on-ubuntu" href="#install-on-ubuntu">Ubuntu</a>
 </div>
 </div>
+
+***
 
 <div class="installation-instructions-slide-container" markdown="1">
 
