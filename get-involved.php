@@ -6,6 +6,7 @@
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
     include $template['header'];
+    include $template['alert'];
 ?>
             <section class="row hero">
                 <h1>Check out our progress for Freya Update 1</h1>

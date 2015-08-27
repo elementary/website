@@ -3,6 +3,7 @@
     $page['title'] = 'Support &sdot; elementary';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/support.css">';
     include $template['header'];
+    include $template['alert'];
 ?>
 
 <div class="row">
