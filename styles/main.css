@@ -423,6 +423,34 @@ footer ul li a:focus {
 }
 
 /*********
+* Grid *
+*********/
+
+.grid {
+    width: auto;
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.grid > * {
+    margin: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+    .grid .half {
+        width: calc(50% - 48px);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .half h2 {
+        text-align: left;
+    }
+}
+
+/*********
 * Alerts *
 *********/
 
