@@ -5,6 +5,7 @@
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
+    include $template['alert'];
     require_once __DIR__.'/backend/classify.current.php';
 ?>
             <script src="scripts/slider.js"></script>

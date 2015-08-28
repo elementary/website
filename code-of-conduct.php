@@ -2,6 +2,7 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Code of Conduct &sdot; elementary';
     include $template['header'];
+    include $template['alert'];
 ?>
             <div class="row">
                 <h1>Code of Conduct</h1>
