@@ -77,7 +77,7 @@ a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 
 </div>
 
-## Creating an Install Drive {#creating-an-installation-medium}
+## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 ![Rufus - select ISO](images/docs/installation/rufus_select_iso.png){.float-left}
 
@@ -90,7 +90,7 @@ You can now insert your USB drive and select it in the "Device" list. After that
 
 Click "Start", then just wait for the process to finish.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium}
+## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -134,7 +134,7 @@ should produce the output:
 a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
-## Creating an Install Drive {#creating-an-installation-medium}
+## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 ![UNetbootin](images/docs/installation/unetbootin.png)
 
@@ -146,7 +146,7 @@ Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a win
 
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium}
+## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -189,7 +189,7 @@ should produce the output:
 a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
 
-## Creating an Install Drive {#creating-an-installation-medium}
+## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 ![UNetbootin](images/docs/installation/unetbootin.png)
 
@@ -201,7 +201,7 @@ Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a win
 
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium}
+## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
