@@ -98,6 +98,12 @@ input:focus + .focus-reveal {
     overflow: hidden;
 }
 
+#carousel a.read-more {
+    color: rgba(0,0,0,0.65);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    font-weight: 700;
+}
+
 #carousel > .row + .row {
     padding-top: 0;
 }
