@@ -33,4 +33,4 @@ $(function() {
     } else {
         operatingSystemSlider.slideTo('install-on-ubuntu');
     }
-})();
+});
