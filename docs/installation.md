@@ -51,19 +51,14 @@ Select the operating system you are currently using to view tailored installatio
 
 ## Verify your Download {#verify-your-download}
 
-<div class="column half" markdown="1">
+Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://www.digitalvolcano.co.uk/hash.html">Hash Tool</a>.
 
-![DivHasher - Choose File](images/docs/installation/divhasher.gif)
+![Hash Tool](images/docs/installation/hashtool.png)
 
-</div>
-
-<div class="column half" markdown="1">
-
-Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://soft.mydiv.net/DivHasher.html">DivHasher</a>.
-
-1. Open DivHasher
-2. Select `Choose…` and find the elementary OS ISO file
-3. Verify that the text box next to "SHA-256" matches one of the following hashes
+1. Open Hash Tool
+2. Under "Hash Type" select `SHA-256`
+3. Under "Input File" select `Select File(s)` and find the elementary OS ISO file
+4. Verify that the text in "Results" matches one of the following hashes
 
 #### 32-bit
 ```bash
@@ -74,8 +69,6 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 ```bash
 a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
 ```
-
-</div>
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
