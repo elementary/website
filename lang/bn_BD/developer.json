@@ -1,14 +1,3 @@
 {
-    "Develop": "ডেভেলাপ",
-    "Your ideas into code": "আপনার ধারনাকে কোডে রুপান্তর",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "সেরা ওপেন সোর্স প্রযুক্তির উপর নির্মিত,ইলিমেনটার একটি অত্যন্ত ডেভেলপার বান্ধব প্ল্যাটফর্ম।আমরা আপনার অ্যাপ্লিকেশনের চকমনিশ্চিত করার জন্য আমরা বিদ্যমান এবং প্রত্যাশিত ডেভেলপারদের সেরা উপলব্ধ রিসোর্স এবং ডকুমেন্টেশন প্রদান করি।",
-    "Design": "নকশা",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "হিউম্যান ইন্টারফেস গাইডলাইন (HIG) পড়ুন এবং আপনার অ্যাপ্লিকেশনকে একটি প্রথম শ্রেণীর অভিজ্ঞতা দিতে শিখুন।",
-    "Code": "কোড",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "আমাদের অ্যাপ্লিকেশন প্রোগ্রামিং ইন্টারফেস (API গুলি) সম্পর্কে জানুন এবং আপনার জন্য উপলব্ধ সমস্ত বিল্ট ইন প্রযুক্তির আবিষ্কার করুন।",
-    "Manage": "ব্যাপস্থাপনা",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "বাগ রিপোর্ট করতে এবং অন্যান্য ডেভেলপারদের সাথে একত্রে কাজ করতে লঞ্চপ্যাড ব্যবহার করুন।",
-    "Distribute": "বিতরণ",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "উবুন্টু মাই অ্যাপস অ্যাকাউন্ট তৈরী করুন এবং সফটওয়্যার সেন্টারে আপনার অ্যাপ পাবলিশ করুন।",
     "Develop Apps for elementary OS": "ইলিমেনটারি ওএস এর জন্য অ্যাপ তৈরী করুন"
 }

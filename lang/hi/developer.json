@@ -1,14 +1,3 @@
 {
-    "Develop": "विकसित करें",
-    "Your ideas into code": "कोड में अपने विचारों को",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "डिजाईन करें",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "कोड लिखें",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "प्रबंधन करें",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Launchpad के मदद से Bug Reports का प्रबंध करे अौर अन्य Developers के साथ सहयोग करे।",
-    "Distribute": "वितरित करें",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Ubuntu My Apps पर अपना खाता बानाये अौर अपने Apps, Software Center पे प्रकाशित करे।",
     "Develop Apps for elementary OS": "elementary OS के लिए ऐप्स का विकास करें"
 }
