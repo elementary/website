@@ -62,12 +62,12 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 
 #### 32-bit
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
 ```
 
 #### 64-bit
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -104,13 +104,13 @@ In order to start the installation process, you must boot your computer from the
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 elementaryos-freya-i386.20150411.iso
+shasum -a 256 elementaryos-stable-0.3.1-i386.20150903.iso
 ```
 
 should produce the output:
 
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
 ```
 
 #### 64-bit
@@ -118,13 +118,13 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 elementaryos-freya-amd64.20150411.iso
+shasum -a 256 elementaryos-stable-0.3.1-amd64.20150903.iso
 ```
 
 should produce the output:
 
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -159,13 +159,13 @@ In order to start the installation process, you must boot your computer from the
 Running the following command in your terminal:
 
 ```bash
-sha256sum elementaryos-freya-i386.20150411.iso
+sha256sum elementaryos-stable-0.3.1-i386.20150903.iso
 ```
 
 should produce the output:
 
 ```bash
-941ae370d27fe496fd10723a2803cfa52ddbce510ea502f20ec15a7127a68cab
+75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
 ```
 
 #### 64-bit
@@ -173,13 +173,13 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash
-sha256sum elementaryos-freya-amd64.20150411.iso
+sha256sum elementaryos-stable-0.3.1-amd64.20150903.iso
 ```
 
 should produce the output:
 
 ```bash
-a7b8edfe95eb1c12745e02c63f830cad06ee756f552cba1cdca7bc30b7ca39e7
+ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
