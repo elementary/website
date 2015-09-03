@@ -5,6 +5,7 @@
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
+    include $template['alert'];
     require_once __DIR__.'/backend/classify.current.php';
 ?>
             <script src="scripts/slider.js"></script>
@@ -132,7 +133,7 @@
                         </div>
                         <div class="column alert">
                             <h3>Midori</h3>
-                            <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                            <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a class="read-more" href="http://midori-browser.org">Learn More</a></p>
                         </div>
                     </div>
                 </div>
