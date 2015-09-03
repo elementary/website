@@ -54,7 +54,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Download Freya</button>
-                <p class="small-label">893 MB (for PC or Mac)</p>
+                <p class="small-label">909 MB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
