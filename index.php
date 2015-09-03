@@ -218,12 +218,12 @@
                 <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
                 <div class="row actions">
                     <div class="column linked">
-                        <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-freya-i386.20150411.iso">Freya 32-bit</a>
-                        <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:0a36a61cb46fc1444c95eb62185b777d65362ca9&dn=elementaryos-freya-i386.20150411.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce"><i class="fa fa-magnet"></i></a>
+                        <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-stable-0.3.1-i386.20150903.iso">Freya 32-bit</a>
+                        <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:8c65701a7368f89cfa47d2369648611731e713ac&dn=elementaryos-stable-0.3.1-i386.20150903.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce"><i class="fa fa-magnet"></i></a>
                     </div>
                     <div class="column linked">
-                        <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-freya-amd64.20150411.iso">Freya 64-bit</a>
-                        <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fc85dc999730a42de3924444aadbcfa183b5f388&dn=elementaryos-freya-amd64.20150411.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce"><i class="fa fa-magnet"></i></a>
+                        <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-stable-0.3.1-amd64.20150903.iso">Freya 64-bit</a>
+                        <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:6caedf3752209f3532ff0343b9c1416c9f65f3a9&dn=elementaryos-stable-0.3.1-amd64.20150903.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce"><i class="fa fa-magnet"></i></a>
                     </div>
                 </div>
             </div>
