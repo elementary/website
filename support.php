@@ -21,7 +21,7 @@
         <span>Camera</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/files" target="_blank">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/pantheon-files" target="_blank">
         <img width="64" height="64" src="images/icons/system-file-manager.svg" />
         <span>Files</span>
     </a>
