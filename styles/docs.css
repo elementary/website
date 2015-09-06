@@ -59,11 +59,6 @@ h6 a.heading-link:hover::before{
     font-size: 0.75em;
 }
 
-.clear-float {
-    clear: both;
-    padding-top: 32px;
-}
-
 img.float-left {
     margin-right: 24px;
 }

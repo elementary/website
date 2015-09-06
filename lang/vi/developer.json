@@ -1,3 +1,14 @@
 {
+    "Develop": "Phát triển",
+    "Your ideas into code": "Biến ý tưởng của bạn thành code",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Được xây dựng trên nền tảng công nghệ mã nguồn mở tốt nhất, elementary là một nền tảng cực kỳ thân thiện với nhà phát triển ứng dụng. Chúng tôi cung cấp những tài nguyên tốt nhất cho các nhà phát triển cùng với bộ tài liệu hướng dẫn để giúp ứng dụng của bạn trở nên nổi bật nhất.",
+    "Design": "Thiết Kế",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Hãy đọc Nguyên tắc Giao diện cho Con người (Human Interface Guidelines - HIG) và học cách để làm ứng dụng của bạn có trải nghiệm tốt nhất.",
+    "Code": "Code",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Tìm hiểu về Giao diện Lập trình Ứng dụng (API) của chúng tôi và khám phá tất cả những công nghệ có sẵn dành cho bạn.",
+    "Manage": "Quản Lý",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Sử dụng Launchpad để quản lý các báo cáo về lỗi và cùng làm việc với các nhà phát triển khác.",
+    "Distribute": "Phân Phối",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Đăng ký tài khoản Ubuntu My Apps và phát hành các ứng dụng của bạn lên Trung Tâm Phần Mềm.",
     "Develop Apps for elementary OS": "Phát triển ứng dụng cho elementary OS"
 }

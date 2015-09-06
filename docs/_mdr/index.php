@@ -67,7 +67,6 @@ if (
 
         include $Templates['Header'];
         echo '<div class="row docs">';
-        include $Templates['Alert'];
 
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];

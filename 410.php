@@ -2,7 +2,6 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Download Link Expired &sdot; elementary';
     include $template['header'];
-    include $template['alert'];
 ?>
 
 <script>
