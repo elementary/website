@@ -1,3 +1,14 @@
 {
+    "Develop": "Geliştir",
+    "Your ideas into code": "Fikirlerini koda dönüştür",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "En iyi açık kaynak teknolojisi üzerinde inşa edilmiş olan elementary, muazzam derecede geliştirici dostu bir platformdur. Uygulamalarınızın gerçek anlamda parlaması için mevcut ve gelecek geliştiricilere varolan en iyi kaynak ve dokümanları sağlıyoruz.",
+    "Design": "Tasarla",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "İnsan Arayüzü Kılavuzlarını (HIG) oku ve uygulamanı bir birinci sınıf deneyim haline nasıl getireceğini öğren. ",
+    "Code": "Kodla",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Uygulama Geliştirme Arayüzü (API) hakkında bilgi al ve kullanabileceğin bütün mevcut teknolojileri keşfet.",
+    "Manage": "Yönet",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Hata bildirimlerini yönetmek ve diğer geliştiricilerle işbirliği yapmak için Launchpad'i kullan.",
+    "Distribute": "Dağıt",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Bir Ubuntu My Apps hesabı oluştur ve uygulamalarını Software Center üzerinde yayınla.",
     "Develop Apps for elementary OS": "elementary OS İçin Uygulamalar Geliştir"
 }

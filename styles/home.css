@@ -1,87 +1,3 @@
-/******************
-* Responsive Hero *
-******************/
-.page-index .hero {
-    padding-top: 0;
-    height: 176px;
-    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
-}
-
-@media all and (min-width: 530px) {
-    .page-index .hero {
-        padding-top: 35%;
-        height: auto;
-        background-image: url(../images/responsive-images/notebook-medium.png);
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .page-index .hero {
-        background-image: url(../images/responsive-images/notebook-large.png);
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .page-index .hero {
-        background-image: url(../images/notebook.png);
-    }
-}
-
-.payment-button::before {
-    content: '$';
-    font-size: 14px;
-    float: left;
-    margin-left: -3px;
-    margin-right: 3px;
-    vertical-align: super;
-}
-
-.pre-amount {
-    color: #333;
-    margin-left: 14px;
-    margin-right: -21px;
-    margin-top: 11px;
-    position: absolute;
-    pointer-events: none;
-    font-size: 14px;
-}
-
-#amount-custom {
-    width: 100%;
-    max-width: 170px;
-    padding-left: 24px;
-    padding-right: 24px;
-    text-align: center;
-}
-
-.focus-reveal {
-    opacity: 0 !important;
-    transition: 250ms all;
-    margin: 0 3px;
-    width: 190px;
-}
-
-input:focus + .focus-reveal {
-    opacity: 0.8 !important;
-    transition: 250ms all;
-}
-
-@media (min-width: 444px) {
-
-    #amount-custom {
-        width: 150px;
-    }
-
-    .focus-reveal {
-        width: auto;
-    }
-
-}
-
-#download {
-    margin: 3px auto 6px;
-}
-
 #the-press {
     font-size: 24px;
     opacity: 0.65;
@@ -96,12 +12,6 @@ input:focus + .focus-reveal {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     overflow: hidden;
-}
-
-#carousel a.read-more {
-    color: rgba(0,0,0,0.65);
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-    font-weight: 700;
 }
 
 #carousel > .row + .row {

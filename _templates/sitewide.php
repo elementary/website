@@ -53,5 +53,4 @@ if ($serverRoot == $websiteRoot) {
 }
 
 $template['header'] = __DIR__.'/header.php';
-$template['alert'] = __DIR__.'/alert.php';
 $template['footer'] = __DIR__.'/footer.php';

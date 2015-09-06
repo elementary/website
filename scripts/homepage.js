@@ -41,7 +41,7 @@ $(function () {
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
         if (window.ga) {
-            ga('send', 'event', 'Freya Update 1 Download (Payment)', 'Homepage', payment_amount);
+            ga('send', 'event', 'Freya Beta Download (Payment)', 'Homepage', payment_amount);
         }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
@@ -49,18 +49,6 @@ $(function () {
             do_stripe_payment(payment_amount);
         }
     });
-
-    function stripe_language() {
-        var stripe_languages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
-        var language_code = $('html').prop('lang');
-        // Stripe supports simplified chinese
-        if (/^zh_CN/.test(language_code)) {
-            return 'zh';
-        }
-        if (stripe_languages.indexOf(language_code) != -1) {
-            return language_code;
-        }
-    }
 
     function do_stripe_payment (amount) {
         StripeCheckout.open({
@@ -72,9 +60,7 @@ $(function () {
             },
             name: 'elementary LLC.',
             description: 'elementary OS download',
-            bitcoin: true,
-            alipay: 'auto',
-            locale: stripe_language() || 'auto',
+            bitcoin: 'true',
             amount: amount
         });
     }
@@ -139,10 +125,10 @@ $(function () {
         for (var i = 0; i < links_data.length; i++) {
             (function (data, link) {
                 $(link).click(function () {
-                    ga('send', 'event', 'Freya Update 1 Download (Architecture)', 'Homepage', data.arch);
-                    ga('send', 'event', 'Freya Update 1 Download (Method)', 'Homepage', data.method);
-                    ga('send', 'event', 'Freya Update 1 Download (OS)', 'Homepage', detect_os());
-                    ga('send', 'event', 'Freya Update 1 Download (Region)', 'Homepage', download_region);
+                    ga('send', 'event', 'Freya Beta Download (Architecture)', 'Homepage', data.arch);
+                    ga('send', 'event', 'Freya Beta Download (Method)', 'Homepage', data.method);
+                    ga('send', 'event', 'Freya Beta Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', 'Freya Beta Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }

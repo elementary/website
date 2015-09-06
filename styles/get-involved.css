@@ -11,12 +11,10 @@ footer {
     fill: #586e75;
 }
 
-/***********
-* Sections *
-***********/
-
-section {
-    padding-bottom: 64px;
+/* SECTIONS */
+section,
+section.hero {
+    padding-bottom: 96px;
 }
 
 section.light {
@@ -26,8 +24,6 @@ section.light {
 
 section .heading {
     background-color: rgba(0,0,0,0.04);
-    text-align: center;
-    padding: 16px 32px;
 }
 
 section .heading p.small-label {
@@ -62,48 +58,48 @@ section .heading p.small-label a:hover {
     background-color: rgba(200, 208, 208, 0.5);
 }
 
-#translations .button.flat.suggested-action {
+section:nth-child(2) .button.flat.suggested-action {
     background-color: #2aa198;
     border-color: #2aa198;
 }
 
-#translations .button.flat.suggested-action:focus {
+section:nth-child(2) .button.flat.suggested-action:focus {
     background-color: #44BBB2!important;
 }
 
-#web-development .button.flat.suggested-action {
+section:nth-child(3) .button.flat.suggested-action {
     background-color: #d53c12;
     border-color: #d53c12;
 }
 
-#web-development .button.flat.suggested-action:focus {
+section:nth-child(3) .button.flat.suggested-action:focus {
     background-color: #EF562C!important;
 }
 
-#design .button.flat.suggested-action {
+section:nth-child(4) .button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
 }
 
-#design .button.flat.suggested-action:focus {
+section:nth-child(4) .button.flat.suggested-action:focus {
     background-color: #40A5EC!important;
 }
 
-#desktop-development .button.flat.suggested-action {
+section:nth-child(5) .button.flat.suggested-action {
     background-color: #d33682;
     border-color: #d33682;
 }
 
-#desktop-development .button.flat.suggested-action:focus {
+section:nth-child(5) .button.flat.suggested-action:focus {
     background-color: #ED509C!important;
 }
 
-#funding .button.flat.suggested-action {
+section:nth-child(6) .button.flat.suggested-action {
     background-color: #edac35;
     border-color: #edac35;
 }
 
-#funding .button.flat.suggested-action:focus {
+section:nth-child(6) .button.flat.suggested-action:focus {
     background-color: #ffc357!important;
 }
 
@@ -200,7 +196,7 @@ section .heading p.small-label a:hover {
     color: #dc322f;
 }
 
-.hero .actions .button.flat {
+.row.hero .actions .button.flat {
     display: inline-block;
     color: #c8d0d0;
     border: 2px solid #c8d0d0;
@@ -209,32 +205,27 @@ section .heading p.small-label a:hover {
     vertical-align: middle;
 }
 
-.hero .actions .button.flat:nth-child(1) {
+.row.hero .actions .button.flat:nth-child(1) {
     border-color: #2aa198;
 }
 
-.hero .actions .button.flat:nth-child(2) {
+.row.hero .actions .button.flat:nth-child(2) {
     border-color: #cb4b16;
 }
 
-.hero .actions .button.flat:nth-child(3) {
+.row.hero .actions .button.flat:nth-child(3) {
     border-color: #268bd2;
 }
 
-.hero .actions .button.flat:nth-child(4) {
+.row.hero .actions .button.flat:nth-child(4) {
     border-color: #d33682;
 }
 
-.hero .actions .button.flat:nth-child(5) {
+.row.hero .actions .button.flat:nth-child(5) {
     border-color: #edac35;
 }
 
 /* CUSTOM SECTIONS */
-
-#translations img {
-    width: 100%;
-}
-
 .web-browser {
     background-image: url("../images/get-involved/web-development.svg");
     background-repeat: no-repeat;

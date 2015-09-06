@@ -1,3 +1,14 @@
 {
+    "Develop": "Développer",
+    "Your ideas into code": "Vos idées en code",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Construit sur les meilleures technologies libres, elementary est une plateforme extrêmement propice aux développeurs. Nous fournissons aux développeurs existants et potentiels les meilleures ressources disponibles et la documentation pour nous assurer que vos applications brilleront.",
+    "Design": "Concevoir",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Lisez les Human Interface Guidelines (HIG) et apprenez comment délivrer une expérience de premier ordre grâce à votre application.",
+    "Code": "Coder",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Apprenez comment utiliser notre API, et découvrez tous les outils intégrés disponibles.",
+    "Manage": "Gérer",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Utilisez Launchpad pour gérer les rapports de bugs et collaborer avec les autres développeurs.",
+    "Distribute": "Diffuser",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Configurez un compte Ubuntu My Apps et publiez vos applications dans la Logithèque.",
     "Develop Apps for elementary OS": "Développez des applications pour elementary OS"
 }

@@ -2,7 +2,6 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Store &sdot; elementary';
     include $template['header'];
-    include $template['alert'];
 ?>
             <div class="row">
                 <h1>Store</h1>

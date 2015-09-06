@@ -3,7 +3,6 @@
     $page['name'] = '404';
     $page['title'] = 'Page Not Found &sdot; elementary';
     include $template['header'];
-    include $template['alert'];
 ?>
 
 <script>
