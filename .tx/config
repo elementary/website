@@ -92,3 +92,15 @@ source_file = lang/en/docs/translation-guide.json
 source_lang = en
 type = KEYVALUEJSON
 
+[elementary-mvp.403]
+file_filter = lang/<lang>/403.json
+source_file = lang/en/403.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.410]
+file_filter = lang/<lang>/410.json
+source_file = lang/en/410.json
+source_lang = en
+type = KEYVALUEJSON
+

@@ -1,14 +1,3 @@
 {
-    "Develop": "บุกเบิก",
-    "Your ideas into code": "โค้ดไอเดียของคุณ",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "สร้างขึ้นบนเทคโนโลยีโอเพนซอร์สที่ดีที่สุด, elementary เป็นแพลตฟอร์มสำหรับนักพัฒนาที่เป็นมิตรอย่างมาก. เราให้บริการสิ่งที่มีอยู่และคาดหวังว่านักพัฒนาจะเป็นแหล่งทรัพยากรที่มีอยู่ที่ดีที่สุดและเตรียมเอกสารเพื่อให้มั่นใจว่าแอปของคุณนั้นโดดเด่นจริง",
-    "Design": "ออกแบบ",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "อ่าน Human Interface Guidelines (HIG) และเรียนรู้ประสบการณ์ชั้นหนึ่งวิธีการสร้างแอปของคุณ",
-    "Code": "โค้ด",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "เรียนรู้เกี่ยวกับ Application Programming Interface (APIs) ของเรา, และค้นพบเทคโนโลยีในตัวทั้งหมดที่มีให้คุณ",
-    "Manage": "จัดการ",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "ใช้ Launchpad เพื่อจัดการรายงานข้อผิดพลาดและทำงานร่วมกับนักพัฒนาอื่นๆ",
-    "Distribute": "เผยแพร่",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "ตั้งค่าบัญชี Ubuntu My Apps และประกาศแอปของคุณตรงไปยัง Software Center",
     "Develop Apps for elementary OS": "พัฒนาแอปสำหรับ elementary OS"
 }

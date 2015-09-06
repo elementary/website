@@ -1,17 +1,3 @@
 {
-    "Privacy Policy": "Політика конфіденційності",
-    "Do Not Track": "Не відстежувати",
-    "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Цей сайт підтримує налаштування заборони відстежування, які вбудовані в більшість сучасних веб-переглядачів та вимикає Google Analytics, якщо вони присутні. Ми не можемо автоматично позбутися інших методів відслідковування без внесення деяких незручностей при користуванні цим сайтом. У будь-який час ви можете звернутися до розділу щодо вимкнення cookies, якщо забажаєте керувати цими налаштуванняи самостійно.",
-    "Cookies": "Cookies",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "Ви можете вимкнути choose повністю чи вибірково вимкнути будь-які cookies, або ж cookies від третіх сторін, у налаштуваннях свого веб-переглядача",
-    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Цей веб-сайт використовує cookies для підвищення зручності. Ви все одно зможете користуватися нашими послугами без них, але це вплине на зручність обслуговування. Наприклад, наш сайт не запам’ятає, чи сплатили ви за elementary OS попередьного разу; вас перепитають сплатити знову.",
-    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Зберігає cookies для відстежування поведінки елементів та аналізу потенційних загроз. Щоб отримати більше інформації, дивіться",
-    "CloudFlare Privacy & Security Policy": "політику конфіденційності та безпеки CloudFlare",
-    "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "Зберігає cookies для збору інформації — у тому числі кількість відвідувачів цього сайту, звідки вони були направлені, та які сторінки відвідують — в анонімній формі. Ця інформація потім використовується для покращення сайту. Якщо бажаєте дізнатися більше, перегляньте сторінку Google про",
-    "Safeguarding Your Data": "захист ваших даних",
-    "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Використовує cookies щоб запам’ятати ваше останнє замовлення та місцезнаходження; таким чином ми будему знати яку картку вам запропонувати для сплати. Щоб дізнатися більше дивіться",
-    "Stripe's Privacy Policy": "політику конфіденційності Stripe",
-    "Manage Cookies": "Керування Cookies",
-    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Так як ви вже відвідували наш сайт, ви маєте змогу налаштувати cookies, які вже збережені у вашому браузері. Посилання на необхідні інструкції ви можете знайти нище.",
     "Privacy Policy &sdot; elementary": "Політика конфіденційності ⋅ elementary"
 }
