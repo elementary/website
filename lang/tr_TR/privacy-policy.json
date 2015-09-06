@@ -1,3 +1,17 @@
 {
+    "Privacy Policy": "Gizlilik Politikası",
+    "Do Not Track": "Takip Etme",
+    "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Bu site pek çok modern tarayıcıda bulunan ve etkin olduğunda Google Analytikleri devre dışı bırakan takip-etme ayarını saygı duyar. Bu sitenin kullanımını ciddi ölçüde etkilemeksizin diğer takip metodlarını otomatik olarak kaldıramıyoruz. Bu takip metodlarını manuel yönetmek istersen, çerezleri devre dışı bırakmakla ilgili bölümü incele. ",
+    "Cookies": "Çerezler",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Web tarayıcı ayarlarınızda üçüncü taraf çerezleri veya herhangi bir çerezi devre dışı bırakmayı seçebilirsiniz.</strong>",
+    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Bu site kademeli gelişim için çerezleri kullanır. Hizmetlerin çerezler olmadan da çalıştığın ancak kullanılabilirliğinin azaldığını görebilirsin. Örneğin, bu site senin daha önce elementary OS için ödeme yaptığını hatırlamayacaktır; varsayılan olarak tekrar ödeme isteyecektir.",
+    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Davranışsal elementleri kaydetmek ve potansiyel tehditleri analiz etmek için çerezler kaydeder. Daha fazla bilgi için, şuna gözat",
+    "CloudFlare Privacy & Security Policy": "CloudFlare Gizlilik & Güvenlik Politikası",
+    "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "Çerezleri — bu sitenin ziyaretçi sayısı, nereden yönlendikleri, ziyaret ettikleri sayfalar dahil olmak üzere — bilgi toplamak için anonim bir biçimde kaydeder. Bu bilgi siteyi geliştirmek için kullanılır. Daha fazla bilgi için, Google'ın şu makalesine göz at",
+    "Safeguarding Your Data": "Verilerini Korumak",
+    "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Son siparişini ve ülkeni anımsamak böylece hangi kart tiplerini sunacağını bilebilmek için çerezleri kullanır. Daha fazla bilgi için şuna göz at",
+    "Stripe's Privacy Policy": "Stripe Gizlilik Politikası",
+    "Manage Cookies": "Çerezleri Yönet",
+    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Sitemizi halihazırda ziyaret etmiş bulunduğun için, tarayıcında zaten kaydedilmiş olan çerezleri yönetmek isteyebilirsin. Aşağıda, ilgili yönergelerin bağlantılarını bulabilirsin.",
     "Privacy Policy &sdot; elementary": "Gizlilik Politikası - elementary"
 }

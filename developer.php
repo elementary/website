@@ -4,7 +4,6 @@
     $page['theme-color'] = '#226BB3';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
-    include $template['alert'];
 ?>
             <div class="row">
                 <div class="column half developer-sum">

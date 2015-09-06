@@ -1,7 +1,7 @@
 The New elementary.io
 ================
 
-A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
+A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya. 
 
 Project Organization
 ====================
@@ -58,14 +58,7 @@ For quick reference:
 Simple Local Development
 ========================
 
-For simplicity a Vagrant file is included. To start you will need:
-
-* [Vagrant](http://www.vagrantup.com/downloads.html)
-* [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
-
-Then simply run `vagrant up`.
-
-For bypassing Vagrant you will need:
+For a simple local development environment, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
 * `php5-json`

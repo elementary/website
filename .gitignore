@@ -2,3 +2,5 @@
 *~
 backend/config.php
 .vagrant/
+
+*.swp

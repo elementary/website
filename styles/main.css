@@ -118,6 +118,23 @@ hr {
     background: #c9c9c9;
 }
 
+hr.fade-the-edges {
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE10+ */
+    background: -ms-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* FF3.6+ */
+    background: -moz-linear-gradient(left,  #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#c9c9c9), color-stop(100%,#ffffff));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+    /* W3C */
+    background: linear-gradient(to right,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+}
+
 img {
     max-width: 100%;
 }
@@ -127,6 +144,35 @@ img.h1 {
     margin: 19px auto;
     opacity: 0.8;
     display: block;
+}
+
+/******************
+* Responsive Hero *
+******************/
+.page-index .hero {
+    padding-top: 0;
+    height: 176px;
+    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
+}
+
+@media all and (min-width: 530px) {
+    .page-index .hero {
+        padding-top: 35%;
+        height: auto;
+        background-image: url(../images/responsive-images/notebook-medium.png);
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .page-index .hero {
+        background-image: url(../images/responsive-images/notebook-large.png);
+    }
+}
+
+@media all and (min-width: 1300px) {
+    .page-index .hero {
+        background-image: url(../images/notebook.png);
+    }
 }
 
 .inline-tweet {
@@ -149,9 +195,8 @@ img.h1 {
     padding-left: 6px;
     position: absolute;
     margin-top: 0.20em;
-    -moz-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     opacity: 0;
 }
@@ -170,9 +215,8 @@ img.h1 {
     padding-left: 6px;
     position: absolute;
     margin-top: 0.20em;
-    -moz-transition: padding 0.15s ease-in-out;
-    -o-transition: padding 0.15s ease-in-out;
     -webkit-transition: padding 0.15s ease-in-out;
+    -o-transition: padding 0.15s ease-in-out;
     transition: padding 0.15s ease-in-out;
 }
 
@@ -264,7 +308,10 @@ nav > .nav-content > ul > li > .logomark {
     padding: 0;
 }
 
-nav .logomark .logomark-svg,
+nav .logomark .logomark-svg {
+    fill: inherit;
+}
+
 nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
@@ -323,13 +370,16 @@ footer .popover {
 
 @media (min-width: 375px) {
 
-    footer > p,
-    footer > .popover {
+    footer > p {
         float: left;
     }
 
     footer > ul {
-        float: right;
+        float:right;
+    }
+
+    footer > .popover {
+        float: left;
     }
 
 }
@@ -372,20 +422,20 @@ footer ul li a:focus {
 
 @media (min-width: 444px) {
 
+    .column+.column {
+        margin-left: 24px;
+    }
+
     .row .column.half {
-        width: calc(50% - 88px);
+        width: 492px;
         margin: 32px 32px 0;
         vertical-align: top;
     }
 
     .column.third {
-        width: calc(33% - 88px);
+        width: 316px;
         margin: 32px 32px 0;
         vertical-align: top;
-    }
-
-    .column + .column {
-        margin-left: 24px !important;
     }
 
 }
@@ -422,32 +472,8 @@ footer ul li a:focus {
     text-align: left;
 }
 
-/*********
-* Grid *
-*********/
-
-.grid {
-    width: auto;
-    margin: 0 auto;
-    padding: 32px 0;
-    max-width: 1200px;
+.text-center {
     text-align: center;
-}
-
-.grid > * {
-    margin: 16px;
-}
-
-@media only screen and (min-width: 640px) {
-    .grid .half {
-        width: calc(50% - 48px);
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .grid .half h2 {
-        text-align: left;
-    }
 }
 
 /*********
@@ -535,7 +561,6 @@ button,
                 0 1px 0 0 rgba(255, 255, 255, 0.15);
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
     transition: all 100ms ease-in;
-    -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
@@ -559,7 +584,7 @@ button.active,
 .target-amount.checked {
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
-    border-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0,, 0.25);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
                 0 1px 0 0 rgba(255, 255, 255, 0.30);
 }
@@ -602,6 +627,10 @@ button.suggested-action,
     box-shadow: none;
 }
 
+#download {
+    margin: 3px auto 6px;
+}
+
 #logotype {
     position: relative;
     height: 66px;
@@ -609,7 +638,6 @@ button.suggested-action,
     max-width: 80%;
     margin: 16px auto;
 }
-
 #logotype svg {
     position: absolute;
     width: 100%;
@@ -625,6 +653,55 @@ button.suggested-action,
     margin: 3px;
     padding: 8px 16px;
     vertical-align: top;
+}
+
+.payment-button::before {
+    content: '$';
+    font-size: smaller;
+    margin-left: -3px;
+    margin-right: 3px;
+    vertical-align: super;
+}
+
+.pre-amount {
+    color: #333;
+    margin-left: 14px;
+    margin-right: -21px;
+    margin-top: 11px;
+    position: absolute;
+    pointer-events: none;
+}
+
+#amount-custom {
+    width: 100%;
+    max-width: 170px;
+    margin: 3px 0;
+    padding: 9px;
+}
+
+.focus-reveal {
+    opacity: 0 !important;
+    transition: 250ms all;
+    margin: 0 3px;
+    width: 190px;
+}
+
+input:focus + .focus-reveal {
+    opacity: 0.8 !important;
+    transition: 250ms all;
+}
+
+@media (min-width: 444px) {
+
+    #amount-custom {
+        width: 117px;
+        margin: 3px;
+    }
+
+    .focus-reveal {
+        width: auto;
+    }
+
 }
 
 /********
@@ -776,7 +853,7 @@ input:focus:-ms-input-placeholder {
 
 #legacy-warning {
     position: fixed;
-    top: 0;
+    top: 0px;
     padding: 2em;
     width: 100%;
     background-color: #e35d4f;
@@ -892,17 +969,17 @@ i.fa.fa-close.close-modal {
 }
 
 .slide.next {
-    -webkit-transform: translateX(200%);
-        -ms-transform: translateX(200%);
-            transform: translateX(200%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
     filter: alpha(opacity=0);
 }
 
 .slide.previous {
-    -webkit-transform: translateX(-200%);
-        -ms-transform: translateX(-200%);
-            transform: translateX(-200%);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 0;
     filter: alpha(opacity=0);
 }

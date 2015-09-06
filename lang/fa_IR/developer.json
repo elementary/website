@@ -1,3 +1,14 @@
 {
+    "Develop": "توسعه",
+    "Your ideas into code": "ایده های شما به کد تبدیل می‌شود",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "المنتری که بر اساس بهترین فناوری‌های منبع باز ساخته شده، پلتفرم بسیار مناسبی برای توسعه دهندگان به شمار می‌رود. ما به توسعه‌دهندگان فعلی و نیز افرادی که در آینده قصد ورود به این پلتفرم را دارند، بهترین منابع و مستندات را ارائه می‌کنیم تا اپلیکیشن‌ها خیره‌کننده‌ باشند.",
+    "Design": "طراحی",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "برای اینکه در اپلیکیشن خود بهترین تجربه‌ی کاربری را ارائه کنید، دستورالعمل های رابط انسانی (HIG) را مطالعه نمایید.",
+    "Code": "کد",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "در مورد رابط برنامه نویسی اپلیکیشن (API) ما بیشتر بدانید و از تمامی فناوری‌های درون‌سازی شده که در دسترس‌تان قرار گرفته آگاه شوید.",
+    "Manage": "مدیریت",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "از Launchpad برای مدیریت گزارش خطا و همکاری با دیگر توسعه‌دهندگان استفاده کنید.",
+    "Distribute": "توزیع",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "ابتدا یک اکانت Ubuntu My Apps ایجاد کرده، سپس برنامه های خود را درون Software Center منتشر کنید.",
     "Develop Apps for elementary OS": "برای elementary os برنامه بسازید."
 }
