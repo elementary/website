@@ -1,3 +1,14 @@
 {
+    "Develop": "Vyvíjejte",
+    "Your ideas into code": "Převeďte Vaše nápady do kódu",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Postaven na nejlepší open source technologii, elementary je velmi vývojářsky přívětivá platforma. Poskytujeme novým i stávajícím vývojářům nejlepší dostupné prostředky a dokumentaci abychom zajistili, že jejich aplikace budou opravdu skvělé.",
+    "Design": "Design",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Přečtěte si zásady tvorby uživatelského rozhraní (Human Interface Guidelines - HIG) a naučte se, jak vytvořit prvotřídní aplikaci.",
+    "Code": "Programujte",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Seznamte se s našim programovacím rozhraním (API) a objevte všechny technologie, které jsou Vám dostupné.",
+    "Manage": "Spravujte",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Použijte Launchpad pro správu nahlášených chyb a spolupracujte s ostatními vývojáři.",
+    "Distribute": "Distribuujte",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Založte si Ubuntu My Apps účet a zveřejněte Vaše aplikace v Centru software pro Ubuntu.",
     "Develop Apps for elementary OS": "Vyvíjejte aplikace pro elementary OS"
 }

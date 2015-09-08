@@ -1,3 +1,15 @@
 {
+    "Get support for": "Támogatás kérése a következőhöz:",
+    "Calendar": "Naptár",
+    "Camera": "Kamera",
+    "Files": "Fájlok",
+    "Music": "Zene",
+    "Photos": "Fényképek",
+    "System Settings": "Rendszerbeállítások",
+    "Videos": "Videók",
+    "StackExchange": "Sugó",
+    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Lehet hogy a kérdésed már valaki megválaszolta? Nézd át a leggyakrabban feltett kérdésekre a válaszokat.",
+    "Installation": "Telepítés",
+    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Ha segítségre van szükséged az elementary OS telepítéséhez, kövesd útmutatásunkat, mely lépésről lépésre írja le mit kell tenned.",
     "Support &sdot; elementary": "Az elementary támogatása"
 }
