@@ -1,3 +1,14 @@
 {
+    "Develop": "Kembangkan",
+    "Your ideas into code": "Ide Anda ke dalam kode",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Dibangun dengan teknologi bersumber-terbuka terbaik, elementary adalah platform yang sangat ramah kepada pengembang. Kami menyediakan sumber daya terbaik yang tersedia beserta panduannya bagi para pengembang untuk memastikan bahwa aplikasi Anda benar-benar cemerlang.",
+    "Design": "Desain",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Baca Pedoman Antarmuka Manusiawi (PAM) dan pelajari bagaimana cara membuat aplikasi Anda bersinar.",
+    "Code": "Kode",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Pelajari tentang Antarmuka Pemrograman Aplikasi (API) kami dan temukan semua teknologi yang kami sediakan untuk Anda.",
+    "Manage": "Kelola",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Gunakan Launchpad untuk mengelola laporan kutu dan berkolaborasi dengan pengembang lain.",
+    "Distribute": "Distribusikan",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Buat akun Ubuntu My Apps lalu perkenalkan aplikasi Anda ke Pusat Perangkat.",
     "Develop Apps for elementary OS": "Kembangkan Aplikasi untuk elementary OS"
 }

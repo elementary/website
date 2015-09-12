@@ -1,3 +1,14 @@
 {
+    "Develop": "Kehitä",
+    "Your ideas into code": "Jalosta ideasi koodiksi",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "elementary on äärimmäisen mielekäs alusta kehittäjille, sillä se on rakennettu parhailla avoimen lähdekoodin teknologioilla. Tarjoamme nykyisille ja tuleville kehittäjille ensiluokkaiset resurssit sekä dokumentaation varmistaaksemme, että ohjelmasi ovat loistavia.",
+    "Design": "Suunnittelu",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Lue käyttöliittymäohjeistus (HIG) oppiaksesi, kuinka tehdä ohjelmistasi ensiluokkaisia käyttökokemuksen suhteen.",
+    "Code": "Koodaa",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Tutustu ohjelmointirajapintoihin, löydä kaikki sisäärakennetut teknologiat.",
+    "Manage": "Hallinnoi",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Käytä Launchpadia vikailmoitusten hallintaan ja tee yhteistyötä muiden kehittäjien kanssa.",
+    "Distribute": "Jaa",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Ota käyttöön Ubuntu My Apps -tili ja julkaise ohjelmasi ohjelmistovalikoiman kautta.",
     "Develop Apps for elementary OS": "Kehitä ohjelmia elementary OS:lle"
 }

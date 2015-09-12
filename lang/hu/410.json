@@ -1,3 +1,6 @@
 {
+    "Whoops! That link has expired.": "Hoppá! Ez a hivatkozás lejárt.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "Ha le szeretné tölteni az elementary OS-t, kérjük térjen vissza a főoldalra! Ha valami mást keres, nézzen szét a <a href=\"https://github.com/elementary/mvp/issues/new\"> GitHub </a> oldalunkon.",
+    "Go to Home Page": "Ugrás a kezdőlapra",
     "Download Link Expired &sdot; elementary": "Lejárt a letöltő hivatkozás - elementary"
 }

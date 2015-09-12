@@ -1,3 +1,17 @@
 {
+    "Privacy Policy": "Kebijakan Privasi",
+    "Do Not Track": "Jangan-Lacak",
+    "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Situs ini mematuhi pengaturan jangan-lacak yang ada di sebagian besar peramban modern dan menonaktifkan Google Analytics jika aturan tersebut tersedia. Kami tidak dapat secara otomatis membuang metode pelacakan lainnya tanpa secara berlebihan mempengaruhi kegunaan situs. Jika suatu keharusan Anda ingin secara manual mengelola metode pelacakan ini, rujuk pada bagian menonaktifkan kuki.",
+    "Cookies": "Kuki",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Anda dapat memilih untuk menonaktifkan atau mematikan sebagian setiap kuki atau kuki pihak ketiga di pengaturan peramban Anda.</strong>",
+    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Situs ini menggunakan kuki untuk perbaikan bertingkat. Anda mungkin akan menjumpai layanan bekerja tanpa kuki tetapi berdaya-guna dalam keterbatasan. Sebagai contoh, situs tidak akan mengingat apakah anda sebelumnya telah membayar untuk OS elementary; secara bawaan Anda akan ditanya untuk membayar lagi.",
+    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Menyimpan kuki untuk merekam perilaku elemen dan menganalisa potensi ancaman. Untuk informasi lebih lanjut, lihat",
+    "CloudFlare Privacy & Security Policy": "Kebijakan Privasi & Keamanan CloudFlare ",
+    "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "Menyimpan kuki untuk mengumpulkan informasi—termasuk jumlah pengunjung situs ini, dari mana asal rujukan mereka, dan halaman yang mereka kunjungi—dalam wujud yang anonim. Informasi tersebut digunakan untuk membantu memperbaiki situs ini. Untuk informasi lebih lanjut, lihat artikel Google tentang",
+    "Safeguarding Your Data": "Mengamankan Data Anda",
+    "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Menggunakan kuki untuk mengingat pesanan terakhir dan negara asal Anda sehingga diketahui jenis kartu yang digunakan untuk pembayaran. Untuk informasi lebih lanjut, baca",
+    "Stripe's Privacy Policy": "Kebijakan Privasi Stripe",
+    "Manage Cookies": "Mengelola Kuki",
+    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Karena Anda telah mengunjungi situs kami, Anda mungkin ingin mengelola kuki yang telah tersimpan di peramban Anda. Tatutan ke instruksi yang relevan dapat ditemukan dibawah.",
     "Privacy Policy &sdot; elementary": "Kebijakan Privasi ⋅ elementary"
 }

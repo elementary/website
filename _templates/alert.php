@@ -1,7 +1,7 @@
 <?php
 $l10n->set_domain('layout');
+if (!isset($_ENV['PHPENV']) || $_ENV['PHPENV'] !== "production" ):
 ?>
-<?php if (!isset($_ENV['PHPENV']) || $_ENV['PHPENV'] !== "production" ): ?>
         <div class="row alert warning">
             <div class="column alert">
                 <div class="icon">
@@ -13,4 +13,6 @@ $l10n->set_domain('layout');
                 </div>
             </div>
         </div>
-<?php endif; ?>
+<?php
+endif;
+$l10n->set_domain($page['name']);
