@@ -1,5 +1,5 @@
 {
-    "Reference": "Reference",
+    "Reference": "Referans",
     "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.": "Şimdi bir Şampiyon gibi geliştirici klavuzuna girdin. Burda senin için bazı referans materyalleri var. Bu yer imi Elemantary geliştirmeyle ilgili soruların için harika bir yer.",
     "Code Style": "Kod Şablonu",
     "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.": "Bu kılavuzun amacı, tüm Elemantary projeleri arasında iyi kod yazma ile ilgili temiz ve doğru talimatları sağlamaktır. Tutarlı ve okunabilir kod tutmak için, bu klavuzdaki her dosya takip edilmelidir.Biz ve diğer VALA yazılımlarıyla ilgili tutarlı kod tutmak için Gnome ve bazı Vala klavuzlarına göz atmak gerekir.",
