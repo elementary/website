@@ -32,7 +32,7 @@ $l10n->set_domain('layout');
             <ul>
                 <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExhange"><i class="fa fa-stack-exchange"></i></i></a></li>
+                <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
                 <li><a href="https://plus.google.com/114635553671833442612" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
