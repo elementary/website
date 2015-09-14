@@ -197,10 +197,6 @@ img.h1 {
 *********/
 
 nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     line-height: 56px;
     min-height: 56px;
     min-width: 100%;
@@ -208,20 +204,35 @@ nav {
     white-space: nowrap;
 }
 
-nav > ul {
+nav > .nav-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+nav > .nav-content > ul {
     display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav > ul > li {
+html.ie9 nav > .nav-content {
+    min-width: 550px;
+}
+
+html.ie9 nav > .nav-content > ul.right {
+    float: right;
+}
+
+nav > .nav-content > ul > li {
     display: inline-block;
     margin: 0 10px;
 }
 
-nav > ul > li > a,
-nav > ul > li > a:visited {
+nav > .nav-content > ul > li > a,
+nav > .nav-content > ul > li > a:visited {
     margin: 0;
     padding: 0 6px;
     color: inherit;
@@ -230,14 +241,14 @@ nav > ul > li > a:visited {
     display: inline-block;
 }
 
-nav > ul > li > a:focus {
+nav > .nav-content > ul > li > a:focus {
     text-decoration: none;
     color: #08c;
     fill: #08c;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:visited:hover {
+nav > .nav-content > ul > li > a:hover,
+nav > .nav-content > ul > li > a:visited:hover {
     opacity: 1;
 }
 
@@ -250,13 +261,33 @@ nav .logomark {
     line-height: 32px;
 }
 
-nav > ul > li > .logomark {
+nav > .nav-content > ul > li > .logomark {
     padding: 0;
 }
 
 nav .logomark .logomark-svg,
 nav .logomark:focus .logomark-svg {
     fill: inherit;
+}
+
+/** this media query is for ie9 support **/
+@media only screen and (max-width : 520px) {
+
+    html.ie9 nav {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    html.ie9 nav > .nav-content {
+        width: 550px;
+        white-space: nowrap;
+        overflow: visible;
+    }
+
+    html.ie9 nav > .nav-content > .right {
+        float: left;
+    }
+
 }
 
 /*********
