@@ -2,6 +2,7 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Privacy Policy &sdot; elementary';
     include $template['header'];
+    include $template['alert'];
 ?>
             <div class="row">
                 <h1>Privacy Policy</h1>

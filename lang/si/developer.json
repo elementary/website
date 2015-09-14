@@ -1,14 +1,14 @@
 {
-    "Develop": "Develop",
-    "Your ideas into code": "Your ideas into code",
+    "Develop": "වැඩි දියුණු කිරීම",
+    "Your ideas into code": "කේතය සඳහා ඔබගේ අදහස්",
     "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "Design",
+    "Design": "නිර්මාණ",
     "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "Code",
+    "Code": "කේත",
     "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "Manage",
+    "Manage": "හැසිරවීම",
     "Use Launchpad to manage bug reports and collaborate with other developers.": "Use Launchpad to manage bug reports and collaborate with other developers.",
-    "Distribute": "Distribute",
+    "Distribute": "ඛෙදා හැරීම",
     "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Set up an Ubuntu My Apps account and publish your apps into the Software Center.",
-    "Develop Apps for elementary OS": "Develop Apps for elementary OS"
+    "Develop Apps for elementary OS": "elementary OS සඳහා යෙදවුම් මෘදුකාංහ නිර්මාණය කිරීම"
 }

@@ -1,14 +1,14 @@
 {
-    "Develop": "Develop",
-    "Your ideas into code": "Your ideas into code",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.",
-    "Design": "Design",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.",
-    "Code": "Code",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.",
-    "Manage": "Manage",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Use Launchpad to manage bug reports and collaborate with other developers.",
-    "Distribute": "Distribute",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Set up an Ubuntu My Apps account and publish your apps into the Software Center.",
-    "Develop Apps for elementary OS": "Develop Apps for elementary OS"
+    "Develop": "开发",
+    "Your ideas into code": "将你的想法变成代码",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "基于最好的开源技术，elementary项目是一个开发者友好的平台。我们向已有的和潜在的开发者提供最好的、可用的资源和文档来确保你的应用能真正地发光发亮。",
+    "Design": "设计",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "阅读人机界面指南 (HIG) ，了解如何让你的应用拥有良好的用户体验",
+    "Code": "代码",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "了解我们的应用程序接口(APIs)，挖掘这里面对你有用的所有技术",
+    "Manage": "管理",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "使用Lauchpad软件进行程序错误报告管理和与其他开发者的协作",
+    "Distribute": "分发",
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "建立一个Ubuntu My Apps 账号然后在软件中心发布你的应用。",
+    "Develop Apps for elementary OS": "为elementary OS开发应用"
 }

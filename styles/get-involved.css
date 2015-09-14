@@ -11,10 +11,12 @@ footer {
     fill: #586e75;
 }
 
-/* SECTIONS */
-section,
-section.hero {
-    padding-bottom: 96px;
+/***********
+* Sections *
+***********/
+
+section {
+    padding-bottom: 64px;
 }
 
 section.light {
@@ -24,6 +26,8 @@ section.light {
 
 section .heading {
     background-color: rgba(0,0,0,0.04);
+    text-align: center;
+    padding: 16px 32px;
 }
 
 section .heading p.small-label {
@@ -58,48 +62,48 @@ section .heading p.small-label a:hover {
     background-color: rgba(200, 208, 208, 0.5);
 }
 
-section#translations .button.flat.suggested-action {
+#translations .button.flat.suggested-action {
     background-color: #2aa198;
     border-color: #2aa198;
 }
 
-section#translations .button.flat.suggested-action:focus {
+#translations .button.flat.suggested-action:focus {
     background-color: #44BBB2!important;
 }
 
-section#web-development .button.flat.suggested-action {
+#web-development .button.flat.suggested-action {
     background-color: #d53c12;
     border-color: #d53c12;
 }
 
-section#web-development .button.flat.suggested-action:focus {
+#web-development .button.flat.suggested-action:focus {
     background-color: #EF562C!important;
 }
 
-section#design .button.flat.suggested-action {
+#design .button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
 }
 
-section#design .button.flat.suggested-action:focus {
+#design .button.flat.suggested-action:focus {
     background-color: #40A5EC!important;
 }
 
-section#desktop-development .button.flat.suggested-action {
+#desktop-development .button.flat.suggested-action {
     background-color: #d33682;
     border-color: #d33682;
 }
 
-section#desktop-development .button.flat.suggested-action:focus {
+#desktop-development .button.flat.suggested-action:focus {
     background-color: #ED509C!important;
 }
 
-section#funding .button.flat.suggested-action {
+#funding .button.flat.suggested-action {
     background-color: #edac35;
     border-color: #edac35;
 }
 
-section#funding .button.flat.suggested-action:focus {
+#funding .button.flat.suggested-action:focus {
     background-color: #ffc357!important;
 }
 
@@ -196,7 +200,7 @@ section#funding .button.flat.suggested-action:focus {
     color: #dc322f;
 }
 
-.row.hero .actions .button.flat {
+.hero .actions .button.flat {
     display: inline-block;
     color: #c8d0d0;
     border: 2px solid #c8d0d0;
@@ -205,27 +209,32 @@ section#funding .button.flat.suggested-action:focus {
     vertical-align: middle;
 }
 
-.row.hero .actions .button.flat:nth-child(1) {
+.hero .actions .button.flat:nth-child(1) {
     border-color: #2aa198;
 }
 
-.row.hero .actions .button.flat:nth-child(2) {
+.hero .actions .button.flat:nth-child(2) {
     border-color: #cb4b16;
 }
 
-.row.hero .actions .button.flat:nth-child(3) {
+.hero .actions .button.flat:nth-child(3) {
     border-color: #268bd2;
 }
 
-.row.hero .actions .button.flat:nth-child(4) {
+.hero .actions .button.flat:nth-child(4) {
     border-color: #d33682;
 }
 
-.row.hero .actions .button.flat:nth-child(5) {
+.hero .actions .button.flat:nth-child(5) {
     border-color: #edac35;
 }
 
 /* CUSTOM SECTIONS */
+
+#translations img {
+    width: 100%;
+}
+
 .web-browser {
     background-image: url("../images/get-involved/web-development.svg");
     background-repeat: no-repeat;

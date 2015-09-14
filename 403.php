@@ -3,6 +3,7 @@
     $page['name'] = '403';
     $page['title'] = 'Access Denied &sdot; elementary';
     include $template['header'];
+    include $template['alert'];
 ?>
 
 <script>

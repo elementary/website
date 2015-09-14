@@ -49,7 +49,8 @@
 #amount-custom {
     width: 100%;
     max-width: 170px;
-    padding: 8px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     text-align: center;
 }
 
@@ -77,6 +78,10 @@ input:focus + .focus-reveal {
 
 }
 
+#download {
+    margin: 3px auto 6px;
+}
+
 #the-press {
     font-size: 24px;
     opacity: 0.65;
@@ -91,6 +96,13 @@ input:focus + .focus-reveal {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     overflow: hidden;
+    position: relative;
+}
+
+#carousel a.read-more {
+    color: rgba(0,0,0,0.65);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    font-weight: 700;
 }
 
 #carousel > .row + .row {

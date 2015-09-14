@@ -5,6 +5,8 @@
     "Store": "Kauppa",
     "Developer": "Kehitä",
     "Get Involved": "Osallistu",
+    "This is a development site.": "Tämä on kehityssivusto.",
+    "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Katselet sivustomme kehitysversiota. Jotkin sivut eivät välttämättä toimi odotetusti. Jos saavuit tänne vahingossa, siirry viralliselle sivustollemme osoitteeseen <a href=\"http://elementary.io\">elementary.io</a>.",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Tekijänoikeus © 2015 elementary LLC. <a href=\"/privacy-policy\">Yksityisyyden periaatteet</a>",
     "Language": "Kieli",
     "Change Site Language": "Vaihda sivuston kieli",

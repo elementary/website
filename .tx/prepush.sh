@@ -7,11 +7,7 @@ extract_translations () {
 	output_dirname=`dirname "$output_file"`
 
 	# Ignore some files
-	if [ $pagename = "developers" ] \
-		|| [ $pagename == "develop" ] \
-		|| [ $pagename == "installation" ] \
-		|| [ $pagename == "answers" ] \
-		|| [ $pagename == "router" ] ; then
+	if [ $pagename == "router" ] ; then
 		return
 	fi
 
