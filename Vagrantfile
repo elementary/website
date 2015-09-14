@@ -65,8 +65,41 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+    # install packages
     sudo apt-get update
     sudo apt-get install -y php5 php5-curl php5-json
-    cd /home/vagrant/mvp && php -S 0.0.0.0:8000 router.php &
+
+    # setup log file
+    sudo touch /var/log/mvp.log
+    sudo chmod 777 /var/log/mvp.log
+
+    # make an autorun file for reboots
+    echo '# mvp php server
+
+description "elementary mvp php server"
+
+start on mounted
+stop on shutdown
+
+respawn
+
+script
+  export HOME="/home/vagrant/mvp"
+  echo && > /var/run/mvp.pid
+  cd /home/vagrant/mvp
+  exec /usr/bin/php -S 0.0.0.0:8000 router.php 1>> /var/log/mvp.log
+end script
+
+pre-start script
+  echo "[`date`] mvp starting" >> /var/log/mvp.log
+end script
+
+pre-stop script
+  rm /var/run/mvp.pid
+  echo "[`date`] mvp stopping" >> /var/log/mvp.log
+end script' > /etc/init/mvp.conf
+
+    # start script
+    sudo service mvp start
   SHELL
 end
