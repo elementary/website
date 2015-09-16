@@ -197,37 +197,38 @@ img.h1 {
 *********/
 
 nav {
-    width: 100%;
-    min-height: 56px;
     line-height: 56px;
+    min-height: 56px;
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav > .nav-content {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 nav > .nav-content > ul {
+    display: inline-block;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-    max-width: 100%;
 }
 
-nav > .nav-content > .left {
-    float: left;
-    margin-left: 3px;
+html.ie9 nav > .nav-content {
+    min-width: 550px;
 }
 
-nav > .nav-content > .right {
+html.ie9 nav > .nav-content > ul.right {
     float: right;
-    margin-right: 3px;
 }
 
 nav > .nav-content > ul > li {
+    display: inline-block;
     margin: 0 10px;
-    position: relative;
-    float: left;
 }
 
 nav > .nav-content > ul > li > a,
@@ -269,20 +270,21 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
+/** this media query is for ie9 support **/
 @media only screen and (max-width : 520px) {
 
-    nav.nav {
+    html.ie9 nav {
         white-space: nowrap;
-        overflow: scroll;
+        overflow-x: scroll;
     }
 
-    nav > .nav-content {
+    html.ie9 nav > .nav-content {
         width: 550px;
         white-space: nowrap;
-        overflow: scroll;
+        overflow: visible;
     }
 
-    nav > .nav-content > .right {
+    html.ie9 nav > .nav-content > .right {
         float: left;
     }
 

@@ -29,7 +29,8 @@ $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
 <!doctype html>
-<html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>">
+<!--[if IE 9]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
 
         <meta charset="UTF-8">
@@ -119,7 +120,7 @@ $l10n->begin_html_translation();
     <body class="page-<?php echo $page['name']; ?>">
         <nav class="nav">
             <div class="nav-content">
-                <ul class="left">
+                <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
@@ -131,7 +132,6 @@ $l10n->begin_html_translation();
                 </ul>
             </div>
         </nav>
-
         <div id="content-container">
 <?php
 $l10n->set_domain($page['name']);
