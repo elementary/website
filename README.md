@@ -2,7 +2,7 @@ The New elementary.io
 ================
 
 
-TESTING this shit again, and again
+TESTING this shit again, and again, and one last time (hopefully)
 
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
