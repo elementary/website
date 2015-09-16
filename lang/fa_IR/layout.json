@@ -5,6 +5,8 @@
     "Store": "فروشگاه",
     "Developer": "توسعه‌دهندگان",
     "Get Involved": "مشارکت",
+    "This is a development site.": "این یک وب‌سایت در حال توسعه می‌باشد.",
+    "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "شما هم‌اکنون در حال مشاهدۀ نسخۀ درحال توسعۀ وب‌سایت ما می‌باشید، ممکن است بعضی از صفحات آن‌گونه شما انتظار دارید کار نکنند، اگر به مشکلی برخردید می‌توانید به وب‌سایت  <a href=\"http://elementary.io\">اصلی</a> بروید.",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "کلیه حقوق © 2015 برای المنتری محفوظ است. <a href=\"/privacy-policy\">سیاست حریم خصوصی</a>",
     "Language": "زبان",
     "Change Site Language": "تغییر زبان سایت",

@@ -2,7 +2,7 @@
 include_once __DIR__.'/l10n.php';
 
 if (!isset($l10n)) {
-   $l10n = new Translator(); 
+   $l10n = new Translator();
 }
 $page['lang'] = $l10n->lang();
 
@@ -133,18 +133,5 @@ $l10n->begin_html_translation();
         </nav>
 
         <div id="content-container">
-<?php if (!isset($_ENV['PHPENV']) || $_ENV['PHPENV'] !== "production" ): ?>
-        <div class="row alert warning">
-            <div class="column alert">
-                <div class="icon">
-                    <i class="warning fa fa-warning"></i>
-                </div>
-                <div class="icon-text">
-                    <h3>This is a development site.</h3>
-                    <p>You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href="http://elementary.io">elementary.io</a>, our actual website address.</p>
-                </div>
-            </div>
-        </div>
-<?php endif; ?>
 <?php
 $l10n->set_domain($page['name']);

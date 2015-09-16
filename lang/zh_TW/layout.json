@@ -5,6 +5,8 @@
     "Store": "商店",
     "Developer": "開發",
     "Get Involved": "參與",
+    "This is a development site.": "此網站是不穩定的開發版本。",
+    "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "您正在瀏覽我們的開發者版本網站。有些頁面可能不會完全如你想像般地運作。如果您是意外進入此頁面請去 <a href=\"http://elementary.io\">elementary.io</a>，這是我們真正的網址。",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "版權所有 © 2015 elementary 責任有限公司 <a href=\"/privacy-policy\">隱私權政策</a>",
     "Language": "語言",
     "Change Site Language": "切換網站語言",

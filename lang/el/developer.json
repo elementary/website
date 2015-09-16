@@ -1,14 +1,14 @@
 {
     "Develop": "Ανάπτυξη",
-    "Your ideas into code": "Η ιδέα σου σε κώδικα",
-    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Χτισμένο πάνω στην καλύτερη τεχνολογία ανοιχτού κώδικα, το elementary είναι εξαιρετικά φιλική στον  προγραμματιστή πλατφόρμα. Παρέχουμε στους υπάρχον και πιθανούς προγραμματιστές μας τα καλύτερα διαθέσιμα βοηθήματα και τεκμήρια για να εξασφαλίσουμε ότι οι εφαρμογές σας θα λάμψουν.",
+    "Your ideas into code": "Οι ιδέες σας σε κώδικα",
+    "Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.": "Βασισμένο πάνω στην καλύτερη τεχνολογία ανοιχτού κώδικα, το elementary είναι μια εξαιρετικά φιλική στον  προγραμματιστή πλατφόρμα. Παρέχουμε στους υπάρχοντες και πιθανούς προγραμματιστές μας τα καλύτερα διαθέσιμα βοηθήματα και τεκμήρια για να εξασφαλίσουμε ότι οι εφαρμογές σας θα λάμψουν.",
     "Design": "Σχεδιασμός",
-    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Διάβασε τους οδηγούς ανθρώπινης διεπαφής (HIG) και μάθε πως να κάνεις την εφαρμογή σου μια πρώτης τάξης εμπειρία.",
+    "Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.": "Διαβάστε τους οδηγούς ανθρώπινης διεπαφής (HIG) και μάθετε πώς να κάνετε την εφαρμογή σας μια πρώτης τάξης εμπειρία.",
     "Code": "Κώδικας",
-    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Μάθε για τις διεπαφές προγραμματισμού εφαρμογών μας (APIs), και ανακάλυψε όλες τις ενσωματωμένες τεχνολογίες που έχεις διαθέσιμες.",
+    "Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.": "Ενημερωθείτε για τις διεπαφές προγραμματισμού εφαρμογών μας (APIs), και ανακαλύψτε όλες τις διαθέσιμες ενσωματωμένες τεχνολογίες.",
     "Manage": "Διαχείριση",
-    "Use Launchpad to manage bug reports and collaborate with other developers.": "Χρησιμοποίησε το Launchpad για να διαχειριστείς αναφορές σφαλμάτων και να συνεργαστείς με άλλους προγραμματιστές.",
+    "Use Launchpad to manage bug reports and collaborate with other developers.": "Χρησιμοποιήστε το Launchpad για να διαχειριστείτε αναφορές σφαλμάτων και να συνεργαστείτε με άλλους προγραμματιστές.",
     "Distribute": "Διανομή",
-    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Δημιούργησε έναν λογαριασμό στο Ubuntu My Apps για να δημοσιεύσεις τις εφαρμογές σου στο Κέντρο Λογισμικού.",
-    "Develop Apps for elementary OS": "Ανέπτυξε εφαρμογές για το elementary OS"
+    "Set up an Ubuntu My Apps account and publish your apps into the Software Center.": "Δημιουργήστε έναν λογαριασμό στο Ubuntu My Apps για να δημοσιεύσετε τις εφαρμογές σας στο Κέντρο Λογισμικού.",
+    "Develop Apps for elementary OS": "Αναπτύξτε εφαρμογές για το elementary OS"
 }

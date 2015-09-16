@@ -264,10 +264,7 @@ nav > .nav-content > ul > li > .logomark {
     padding: 0;
 }
 
-nav .logomark .logomark-svg {
-    fill: inherit;
-}
-
+nav .logomark .logomark-svg,
 nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
@@ -326,16 +323,13 @@ footer .popover {
 
 @media (min-width: 375px) {
 
-    footer > p {
+    footer > p,
+    footer > .popover {
         float: left;
     }
 
     footer > ul {
-        float:right;
-    }
-
-    footer > .popover {
-        float: left;
+        float: right;
     }
 
 }
@@ -426,6 +420,34 @@ footer ul li a:focus {
 .row ul,
 .row ol {
     text-align: left;
+}
+
+/*********
+* Grid *
+*********/
+
+.grid {
+    width: auto;
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.grid > * {
+    margin: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+    .grid .half {
+        width: calc(50% - 48px);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .grid .half h2 {
+        text-align: left;
+    }
 }
 
 /*********
@@ -580,10 +602,6 @@ button.suggested-action,
     box-shadow: none;
 }
 
-#download {
-    margin: 3px auto 6px;
-}
-
 #logotype {
     position: relative;
     height: 66px;
@@ -591,6 +609,7 @@ button.suggested-action,
     max-width: 80%;
     margin: 16px auto;
 }
+
 #logotype svg {
     position: absolute;
     width: 100%;

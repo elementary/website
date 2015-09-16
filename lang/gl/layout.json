@@ -5,11 +5,13 @@
     "Store": "Tenda",
     "Developer": "Desenvolvedor",
     "Get Involved": "Get Involved",
+    "This is a development site.": "Sitio para desenvolvemento.",
+    "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Estás a ver a versión de desenvolvemento do noso sitio. Algunhas páxinas poden non funcionar como agardas. Se chegaches aquí por un erro por favor vai a <a href=\"http://elementary.io\">elementary.io</a>, o enderezo do noso sitio actual.",
     "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2015 elementary LLC. <a href=\"/privacy-policy\">Política de Privacidade</a>",
     "Language": "Idioma",
     "Change Site Language": "Mudar o idioma do sitio",
     "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "O sitio web do elementary OS está creado mediante modernas tecnoloxías web que o teu navegador non soporta.",
     "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Esta versión do Internet Explorer está desactualizada e pode conter erros e vulnerabilidades. Por favor <a href=\"http://browsehappy.com/\">actualiza</a> a IE 11 ou un navegador alternativo.",
-    "Dismiss": "Dismiss",
+    "Dismiss": "Descartar",
     "Learn More": "Saber máis"
 }
