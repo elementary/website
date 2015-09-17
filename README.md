@@ -1,6 +1,8 @@
 The New elementary.io
 ================
 
+jenkins test
+
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
 Project Organization
