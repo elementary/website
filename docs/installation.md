@@ -92,6 +92,10 @@ In order to start the installation process, you must boot your computer from the
 * Press <kbd>F12</kbd> (or the appropriate key) and select the install drive&mdash;usually "USB-HDD" or something containing the word "USB", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
 
+## After Installation {#after-installation .clear-float}
+
+Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
+
 </div>
 
 
@@ -146,6 +150,10 @@ In order to start the installation process, you must boot your computer from the
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
+
+## After Installation {#after-installation .clear-float}
+
+Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
 </div>
 
@@ -202,6 +210,10 @@ In order to start the installation process, you must boot your computer from the
 * Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.
 * Press <kbd>F12</kbd> (or the appropriate key) and select the install drive&mdash;usually "USB-HDD" or something containing the word "USB", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
+
+## After Installation {#after-installation .clear-float}
+
+Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
 </div>
 
