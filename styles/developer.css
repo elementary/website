@@ -1,19 +1,24 @@
+/****************************************
+* Copyright 2015 elementary LLC.        *
+* This file is part of elementaryos.org *
+****************************************/
+
 html,
 body {
-    background-image: url('../images/developer/grid-pattern.png');
-    background-color: #226BB3;
+    background-color: #226bb3;
+    background-image: url("../images/developer/grid-pattern.png");
     color: white;
     fill: white;
 }
 
 nav > ul > li > a:focus {
-    color: #1F1F1F;
-    fill: #1F1F1F;
+    color: #1f1f1f;
+    fill: #1f1f1f;
 }
 
 footer ul li a:focus i.fa {
-    color: #1F1F1F;
-    text-shadow: 0 1px 6px #FFF;
+    color: #1f1f1f;
+    text-shadow: 0 1px 6px #fff;
 }
 
 .row {
@@ -21,34 +26,40 @@ footer ul li a:focus i.fa {
 }
 
 .developer-sum {
-    padding-bottom: 120px;
-    background-image: url('../images/developer/developer-sketch.png');
-    background-repeat: no-repeat;
+    background-image: url("../images/developer/developer-sketch.png");
     background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
 }
 
 @media (min-width: 940px) {
+
     .developer-sum {
         padding-bottom: 200px;
     }
+
 }
 
 @media (min-width: 444px) {
+
     .row .column.half {
-        width: auto;
-        max-width: 600px;
         margin: 32px 1.5%;
+        max-width: 600px;
+        width: auto;
     }
 
     .column + .column {
         margin-left: 0;
     }
+
 }
 
 @media (min-width: 940px) {
+
     .row .column.half {
         width: 46%;
     }
+
 }
 
 .dev-section a {
@@ -63,28 +74,30 @@ footer ul li a:focus i.fa {
 }
 
 .dev-section {
+    background-position: center top;
+    background-repeat: no-repeat;
     border: dashed rgba(255, 255, 255, 0.6);
     border-width: 0 0 1px 1px;
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 4em;
     margin-top: 2em;
+    padding-top: 4em;
 }
 
 @media (min-width: 380px) {
+
     .dev-section {
         background-position: 30px center;
-        padding-top: 0;
         margin-top: 0;
+        padding-top: 0;
     }
 
     .dev-section a {
         padding-left: 128px;
     }
+
 }
 
 @media (max-width: 1176px) {
-  
+
     .dev-section {
         border-left-width: 0;
     }
@@ -96,17 +109,17 @@ footer ul li a:focus i.fa {
 }
 
 #dev-section-1 {
-    background-image: url('../images/developer/dev-design.png');
+    background-image: url("../images/developer/dev-design.png");
 }
 
 #dev-section-2 {
-    background-image: url('../images/developer/dev-code.png');
+    background-image: url("../images/developer/dev-code.png");
 }
 
 #dev-section-3 {
-    background-image: url('../images/developer/dev-manage.png');
+    background-image: url("../images/developer/dev-manage.png");
 }
 
 #dev-section-4 {
-    background-image: url('../images/developer/dev-dist.png');
+    background-image: url("../images/developer/dev-dist.png");
 }
