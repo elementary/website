@@ -1,16 +1,14 @@
-/*
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
-*/
+/*****************************************************************************************
+* Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com> *
+*****************************************************************************************/
 
 .language-bash.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #002b36;
-  color: #839496;
-  -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    background: #002b36;
+    color: #839496;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
 }
 
 .language-bash .hljs-comment,
@@ -19,10 +17,11 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-pi,
 .language-bash .lisp .hljs-string,
 .language-bash .hljs-javadoc {
-  color: #586e75;
+    color: #586e75;
 }
 
 /* Solarized Green */
+
 .language-bash .hljs-keyword,
 .language-bash .hljs-winutils,
 .language-bash .method,
@@ -31,10 +30,11 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-request,
 .language-bash .hljs-status,
 .language-bash .nginx .hljs-title {
-  color: #859900;
+    color: #859900;
 }
 
 /* Solarized Cyan */
+
 .language-bash .hljs-number,
 .language-bash .hljs-command,
 .language-bash .hljs-string,
@@ -46,10 +46,11 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-regexp,
 .language-bash .hljs-hexcolor,
 .language-bash .hljs-link_url {
-  color: #2aa198;
+    color: #2aa198;
 }
 
 /* Solarized Blue */
+
 .language-bash .hljs-title,
 .language-bash .hljs-localvars,
 .language-bash .hljs-chunk,
@@ -60,10 +61,11 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-id,
 .language-bash .css .hljs-function,
 .language-bash .hljs-name {
-  color: #268bd2;
+    color: #268bd2;
 }
 
 /* Solarized Yellow */
+
 .language-bash .hljs-attribute,
 .language-bash .hljs-variable,
 .language-bash .lisp .hljs-body,
@@ -73,10 +75,11 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-parent,
 .language-bash .hljs-type,
 .language-bash .hljs-link_reference {
-  color: #b58900;
+    color: #b58900;
 }
 
 /* Solarized Orange */
+
 .language-bash .hljs-preprocessor,
 .language-bash .hljs-preprocessor .hljs-keyword,
 .language-bash .hljs-pragma,
@@ -90,20 +93,22 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .language-bash .hljs-cdata,
 .language-bash .css .hljs-pseudo,
 .language-bash .hljs-header {
-  color: #cb4b16;
+    color: #cb4b16;
 }
 
 /* Solarized Red */
+
 .language-bash .hljs-deletion,
 .language-bash .hljs-important {
-  color: #dc322f;
+    color: #dc322f;
 }
 
 /* Solarized Violet */
+
 .language-bash .hljs-link_label {
-  color: #6c71c4;
+    color: #6c71c4;
 }
 
 .language-bash .tex .hljs-formula {
-  background: #073642;
+    background: #073642;
 }

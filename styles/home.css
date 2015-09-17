@@ -1,36 +1,48 @@
+/***************************************
+* Copyright 2015 elementary LLC.       *
+* This file is part of elementaryos.io *
+***************************************/
+
 /******************
 * Responsive Hero *
 ******************/
+
 .page-index .hero {
-    padding-top: 0;
+    background: url("../images/responsive-images/notebook-small.png") 50% / contain no-repeat;
     height: 176px;
-    background: url(../images/responsive-images/notebook-small.png) 50% /contain no-repeat;
+    padding-top: 0;
 }
 
 @media all and (min-width: 530px) {
+
     .page-index .hero {
-        padding-top: 35%;
+        background-image: url("../images/responsive-images/notebook-medium.png");
         height: auto;
-        background-image: url(../images/responsive-images/notebook-medium.png);
+        padding-top: 35%;
     }
+
 }
 
 @media all and (min-width: 1000px) {
+
     .page-index .hero {
-        background-image: url(../images/responsive-images/notebook-large.png);
+        background-image: url("../images/responsive-images/notebook-large.png");
     }
+
 }
 
 @media all and (min-width: 1300px) {
+
     .page-index .hero {
-        background-image: url(../images/notebook.png);
+        background-image: url("../images/notebook.png");
     }
+
 }
 
-.payment-button::before {
-    content: '$';
-    font-size: 14px;
+.payment-button:before {
+    content: "$";
     float: left;
+    font-size: 14px;
     margin-left: -3px;
     margin-right: 3px;
     vertical-align: super;
@@ -38,26 +50,26 @@
 
 .pre-amount {
     color: #333;
+    font-size: 14px;
     margin-left: 14px;
     margin-right: -21px;
     margin-top: 11px;
-    position: absolute;
     pointer-events: none;
-    font-size: 14px;
+    position: absolute;
 }
 
 #amount-custom {
-    width: 100%;
     max-width: 170px;
     padding-left: 24px;
     padding-right: 24px;
     text-align: center;
+    width: 100%;
 }
 
 .focus-reveal {
+    margin: 0 3px;
     opacity: 0 !important;
     transition: 250ms all;
-    margin: 0 3px;
     width: 190px;
 }
 
@@ -89,20 +101,17 @@ input:focus + .focus-reveal {
 
 #carousel {
     background-color: #0d6c7f;
-    background-image: linear-gradient(to bottom,
-                                  #015263,
-                                  #338b9f
-                                  );
+    background-image: linear-gradient(to bottom, #015263, #338b9f);
     color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     overflow: hidden;
     position: relative;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #carousel a.read-more {
-    color: rgba(0,0,0,0.65);
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    color: rgba(0, 0, 0, 0.65);
     font-weight: 700;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 #carousel > .row + .row {
@@ -114,8 +123,8 @@ input:focus + .focus-reveal {
 }
 
 #carousel-choices .button {
-    padding: 8px 16px;
     line-height: 16px;
+    padding: 8px 16px;
 }
 
 #carousel-choices svg {
@@ -131,9 +140,9 @@ input:focus + .focus-reveal {
 }
 
 #carousel .slide > .column {
-    vertical-align: top;
     margin-left: 16px;
     margin-right: 16px;
+    vertical-align: top;
 }
 
 #carousel .slide > .column:first-child {
@@ -141,12 +150,15 @@ input:focus + .focus-reveal {
 }
 
 @media (max-width: 404px) {
+
     #carousel .slide > .column:nth-child(2) {
       margin-top: -48px;
     }
+
 }
 
 @media (min-width: 434px) {
+
     #carousel-choices .button {
     line-height: initial;
     }
@@ -162,17 +174,21 @@ input:focus + .focus-reveal {
 }
 
 @media (min-width: 1350px) {
+
     #carousel {
         background-image: url("../images/screenshots/background.jpg");
         background-size: cover;
         height: 100vh;
     }
+
     #carousel .slide > .column:nth-child(2) {
         margin-top: 33px;
     }
+
     #carousel .slide.row {
         margin: 0 calc(50% - 700px);
     }
+
 }
 
 #carousel .column.alert img {
@@ -188,10 +204,13 @@ input:focus + .focus-reveal {
     vertical-align: top;
 }
 
-/* Slingshot */
+/************
+* Slingshot *
+************/
+
 #slingshot {
-    width: 100%;
     max-width: 1800px;
+    width: 100%;
 }
 
 #slingshot .column:nth-child(2) .symbolic-icon {
@@ -205,9 +224,11 @@ input:focus + .focus-reveal {
 }
 
 @media (min-width: 330px) {
+
     #slingshot .column:nth-child(2) h2 {
         margin-left: 24px;
     }
+
 }
 
 .symbolic {
@@ -215,36 +236,33 @@ input:focus + .focus-reveal {
 }
 
 .slingshot {
-    height: 512px;
-    width: 678px;
-    background-color: #f5f5f5;
     background-clip: padding-box;
-
-    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
-                0 3px 6px rgba(0,0,0,0.23);
-    padding: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(0, 0, 0, 0.23);
     display: inline-block;
+    height: 512px;
     margin-right: 24px;
+    padding: 12px;
     pointer-events: none;
-
     transition: all 200ms ease-out;
+    width: 678px;
 }
 
 #slingshot-arrow {
-    position: relative;
+    height: 20px;
     left: 12px;
+    position: relative;
     top: 5px;
     width: 30px;
-    height: 20px;
     z-index: 100;
 }
 
 .slingshot .linked {
-    margin: 0;
     display: inline-block;
+    margin: 0;
     transition: all 200ms ease-out;
 }
 
@@ -253,33 +271,25 @@ input:focus + .focus-reveal {
 }
 
 .slingshot .button {
-    width: 30px;
-    fill: #333;
     background-image: none;
+    fill: #333;
+    width: 30px;
 }
 
 .slingshot .entry {
-    width: 579px;
-    display: inline-block;
-    background-image: linear-gradient(to bottom,
-                                  #f0f0f0,
-                                  #f5f5f5
-                                  );
-
-    border: 1px solid rgba(61,155,218,0.80);
+    background-image: linear-gradient(to bottom, #f0f0f0, #f5f5f5);
+    border: 1px solid rgba(61, 155, 218, 0.8);
     border-radius: 2.5px;
-
-    box-shadow: inset 0 0 0 1px rgba(61,155,218,0.23),
-                0 1px 0 0 rgba(255,255,255,0.30);
-
-    text-align: left;
-
-    fill: #a6a6a6;
+    box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
+                0 1px 0 0 rgba(255, 255, 255, 0.3);
     color: #333;
-    text-shadow: 0 1px rgba(255,255,255,0.4);
+    display: inline-block;
+    fill: #a6a6a6;
     margin-left: 8px;
-
+    text-align: left;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
     transition: all 200ms ease-out;
+    width: 579px;
 }
 
 .slingshot .entry.expanded {
@@ -287,8 +297,8 @@ input:focus + .focus-reveal {
 }
 
 .entry .symbolic {
-    opacity: 0.4;
     fill: #333;
+    opacity: 0.4;
 }
 
 .slingshot .button,
@@ -302,79 +312,80 @@ input:focus + .focus-reveal {
 }
 
 .app {
-    float: left;
     display: inline-block;
-    width: 130px;
+    float: left;
     height: 116px;
     margin: 0;
     margin-top: 27px;
     vertical-align: top;
+    width: 130px;
 }
 
 .app img {
-    width: 64px;
     height: 64px;
+    width: 64px;
 }
 
 .app p {
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
-    text-align: center;
     margin-top: 6px;
+    text-align: center;
 }
 
 #slingshot-pager {
-    width: 200px;
     display: block;
     margin: 0 auto;
-    margin-top: 9px;
     margin-bottom: 5px;
+    margin-top: 9px;
+    width: 200px;
 }
 
 #slingshot-pager .button {
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
-    margin: 0;
     height: 23px;
     line-height: 16px;
+    margin: 0;
 }
 
-/* Categories */
+/*************
+* Categories *
+*************/
 
 .slingshot-categories-sidebar {
+    border-right: 1px solid #a7a7a7;
     display: block;
+    float: left;
     height: 456px;
-    width: 124px;
     margin-top: 16px;
-    float:left;
-    border-right: 1px solid #A7A7A7;
-
     transition: all 200ms ease-out;
+    width: 124px;
 }
 
 .slingshot-category {
+    color: #a7acab;
     display: block;
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
-    color: #A7ACAB;
-    text-shadow:0 1px rgba(255,255,255,0.4);
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
-    text-align: left;
     padding: 7px 12px 6px 16px;
+    text-align: left;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
 }
 
 .slingshot-category.active {
+    background-image: linear-gradient(to bottom, #dbdbdb, #e3e3e3);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02),
+                inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
+                inset 0 2px 0 0 rgba(0, 0, 0, 0.05),
+                inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
     color: #717171;
-    background-image: linear-gradient(to bottom,#DBDBDB,#E3E3E3);
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02),
-                inset 0 1px 0 0 rgba(0,0,0,0.05),
-                inset 0 2px 0 0 rgba(0,0,0,0.05),
-                inset 0 -1px 0 0 rgba(0,0,0,0.05);
 }
 
 .slingshot-categories {
-    padding-top: 12px;
     margin-left: 127px;
+    padding-top: 12px;
 }
 
 .slingshot .search-entry {
@@ -382,10 +393,12 @@ input:focus + .focus-reveal {
     width: 653px;
 }
 
-/* Search */
+/*********
+* Search *
+*********/
 
 .clear-icon {
-    float:right;
+    float: right;
 }
 
 .clear-icon.inactive {
@@ -393,24 +406,24 @@ input:focus + .focus-reveal {
 }
 
 img.result-img {
-    float: left;
     display: inline-block;
-    width: 32px;
+    float: left;
     height: 32px;
     margin-right: 12px;
+    width: 32px;
 }
 
 .slingshot-search-results {
-    display: block;
-    float:left;
-    width: 100%;
-    margin:6px 0;
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
     color: #333;
-    text-shadow:none;
+    display: block;
+    float: left;
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
+    margin: 6px 0;
     text-align: left;
+    text-shadow: none;
+    width: 100%;
 }
 
 .slingshot-search-results.inactive {
@@ -419,72 +432,78 @@ img.result-img {
 
 span.search-term,
 span.cursor {
-    position: relative;
-    display: inline-block;
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
     color: #333;
-    text-shadow:none;
-    height: 16px;
+    display: inline-block;
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
+    height: 16px;
     line-height: 18px;
+    position: relative;
+    text-shadow: none;
 }
 
 span.search-term {
     margin-right: -8px;
-    width: 19px;
-    transition: all 1.5s steps(3, start);
     overflow: hidden;
+    transition: all 1.5s steps(3, start);
+    width: 19px;
 }
 
 span.search-term.inactive {
-    width: 0;
     transition: none;
+    width: 0;
 }
 
 span.cursor {
+    -webkit-animation: blink 1.2s steps(5, start) infinite;
+    animation: blink 1.2s steps(5, start) infinite;
     font-size: 12pt;
     top: -4px;
-    animation: blink 1.2s steps(5, start) infinite;
-    -webkit-animation: blink 1.2s steps(5, start) infinite;
-}
-
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
 }
 
 @-webkit-keyframes blink {
+
     to {
         visibility: hidden;
     }
+
+}
+
+@keyframes blink {
+
+    to {
+        visibility: hidden;
+    }
+
 }
 
 span.results-title {
-    font-weight: bold;
-    display: block;
-    font-family: 'Droid Sans', 'Open Sans', Helvetica, sans-serif;
     color: #707070;
-    text-shadow:0 1px rgba(255,255,255,0.4);
+    display: block;
+    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
+    font-weight: bold;
     line-height: 9pt;
-    text-align: left;
     margin: 18px 8px 6px 8px;
+    text-align: left;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
 }
 
 .search-result {
-    display: block;
-    padding: 4px 16px;
     border-radius: 5px;
+    display: block;
     margin-left: 12px;
     margin-right: 12px;
+    padding: 4px 16px;
 }
 
 .search-result:first-child {
     background-color: #c4c4c4;
 }
 
-/* Animate */
+/**********
+* Animate *
+**********/
 
 .slingshot {
     overflow: hidden;
@@ -492,38 +511,38 @@ span.results-title {
 }
 
 .slingshot .view {
-    width: 100%;
-    max-width: 680px;
-    float: left;
-    transition: all 200ms ease-in-out;
-    position: absolute;
     bottom: -37px;
-    left: 0;
+    float: left;
     height: 100%;
+    left: 0;
+    max-width: 680px;
+    position: absolute;
+    transition: all 200ms ease-in-out;
+    width: 100%;
 }
 
 .slingshot .view.previous {
+    filter: alpha(opacity=0);
+    opacity: 0;
     -webkit-transform: translateX(-110%);
         -ms-transform: translateX(-110%);
             transform: translateX(-110%);
-    opacity: 0;
-    filter: alpha(opacity=0);
 }
 
 .slingshot .view.active {
+    filter: alpha(opacity=100);
+    opacity: 1;
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
             transform: translateX(0%);
-    opacity: 1;
-    filter: alpha(opacity=100);
 }
 
 .slingshot .view.next {
+    filter: alpha(opacity=0);
+    opacity: 0;
     -webkit-transform: translateX(110%);
         -ms-transform: translateX(110%);
             transform: translateX(110%);
-    opacity: 0;
-    filter: alpha(opacity=0);
 }
 
 #slingshot-categories.active {
@@ -533,6 +552,7 @@ span.results-title {
 }
 
 @media (max-width: 1345px) {
+
     .slingshot {
         width: 551px;
     }
@@ -548,9 +568,10 @@ span.results-title {
 }
 
 @media (max-width: 1218px) {
+
     .slingshot {
-        width: 424px;
         height: 369px;
+        width: 424px;
     }
 
     .slingshot .entry {
@@ -573,12 +594,14 @@ span.results-title {
     #slingshot-categories {
         margin-top: -312px;
     }
+
 }
 
 @media (max-width: 581px) {
+
     .slingshot {
-        width: 272px;
         height: 269px;
+        width: 272px;
     }
 
     .slingshot .entry {
@@ -586,14 +609,14 @@ span.results-title {
     }
 
     .app {
-        width: 82px;
         height: 70px;
         margin-top: 27px;
+        width: 82px;
     }
 
     .app img {
-        width: 32px;
         height: 32px;
+        width: 32px;
     }
 
     .slingshot-categories-sidebar {
@@ -603,4 +626,5 @@ span.results-title {
     #slingshot h2 {
         margin-top: 24px;
     }
+
 }
