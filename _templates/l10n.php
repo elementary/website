@@ -57,7 +57,7 @@ class Translator {
         }
 
         // Redirect the user if we are translating the page
-        if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
+        if ((isset($_GET['lang']) || isset($_COOKIE['language']))
             && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
             && $this->lang != 'en') {
 
@@ -197,7 +197,7 @@ class Translator {
         $output = ''; // Output HTML string
 
         // Tags that doesn't contain translatable text
-        $tagsBlacklist = array('script', 'style', 'kbd');
+        $tagsBlacklist = array('script', 'style', 'kbd', 'code');
 
         // Attributes that can be translated
         $attrsWhitelist = array(
