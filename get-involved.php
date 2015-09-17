@@ -9,7 +9,7 @@
     include $template['alert'];
 ?>
 <section class="grid hero">
-    <h1>Check out our progress for Loki beta 1</h1>
+    <h1>Check out our progress for Loki Beta 1</h1>
     <div class="charts">
         <div class="barchart-ctn">
             <canvas width="750" height="400"></canvas>
