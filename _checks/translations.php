@@ -45,3 +45,8 @@ foreach ( $translation_files as $filename ) {
 
 var_dump($result);
 // echo json_encode($result);
+
+if ( !empty($result['invalid_files']) ) {
+    // That's an error
+    exit(1);
+}
