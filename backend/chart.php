@@ -13,12 +13,12 @@ $apiBaseUrl = 'https://api.launchpad.net/beta/';
 $targetName = 'elementary';
 // Milestone name
 // $milestoneName = 'freya-beta2';
-$milestoneName = 'freya-0.3.1';
+$milestoneName = 'loki-beta1';
 
 // Build a chart from a date
 // Set to null to get data for the whole milestone
 //$timeFrom = time() - 12 * 30 * 24 * 60 * 60; // 1 year
-$timeFrom = mktime(12, 0, 0, 2, 9, 2015); // Date when beta 2 was released
+$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when freya 0.3.0 released
 // Build a chart to a date
 $timeTo = time(); // Now
 // Interval for each bar in chart
