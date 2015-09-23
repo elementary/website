@@ -71,7 +71,7 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="slide-container slide-fixed-height light">
+            <div id="carousel" class="light">
                 <div class="row choices-container">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
@@ -81,59 +81,69 @@
                         <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
                     </div>
                 </div>
-                <div id="photos" class="slide row">
-                    <div class="column">
-                        <img src="images/screenshots/photos.png" />
-                    </div>
-                    <div class="column">
-                        <div class="column alert">
-                            <img src="images/icons/multimedia-photo-manager.svg" />
-                        </div>
-                        <div class="column alert">
-                            <h3>Photos</h3>
-                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="music" class="slide row next">
-                    <div class="column">
-                        <img src="images/screenshots/music.png" />
-                    </div>
-                    <div class="column">
-                        <div class="column alert">
-                            <img src="images/icons/multimedia-audio-player.svg" />
-                        </div>
-                        <div class="column alert">
-                            <h3>Music</h3>
-                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                <div class="slide-container">
+                    <div id="photos" class="slide">
+                        <div class="row">
+                            <div class="column">
+                                <img src="images/screenshots/photos.png" />
+                            </div>
+                            <div class="column">
+                                <div class="column alert">
+                                    <img src="images/icons/multimedia-photo-manager.svg" />
+                                </div>
+                                <div class="column alert">
+                                    <h3>Photos</h3>
+                                    <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="videos" class="slide row next">
-                    <div class="column">
-                        <img src="images/screenshots/videos.png" />
-                    </div>
-                    <div class="column">
-                        <div class="column alert">
-                            <img src="images/icons/multimedia-video-player.svg" />
+                    <div id="music" class="slide">
+                        <div class="row">
+                          <div class="column">
+                              <img src="images/screenshots/music.png" />
+                          </div>
+                          <div class="column">
+                              <div class="column alert">
+                                  <img src="images/icons/multimedia-audio-player.svg" />
+                              </div>
+                              <div class="column alert">
+                                  <h3>Music</h3>
+                                  <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                              </div>
+                          </div>
                         </div>
-                        <div class="column alert">
-                            <h3>Videos</h3>
-                            <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                    </div>
+                    <div id="videos" class="slide">
+                        <div class="row">
+                            <div class="column">
+                                <img src="images/screenshots/videos.png" />
+                            </div>
+                            <div class="column">
+                                <div class="column alert">
+                                    <img src="images/icons/multimedia-video-player.svg" />
+                                </div>
+                                <div class="column alert">
+                                    <h3>Videos</h3>
+                                    <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="midori" class="slide row next">
-                    <div class="column">
-                        <img src="images/screenshots/midori.png" />
-                    </div>
-                    <div class="column">
-                        <div class="column alert">
-                            <img src="images/icons/midori.svg" />
-                        </div>
-                        <div class="column alert">
-                            <h3>Midori</h3>
-                            <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a class="read-more" href="http://midori-browser.org">Learn More</a></p>
+                    <div id="midori" class="slide">
+                        <div class="row">
+                            <div class="column">
+                                <img src="images/screenshots/midori.png" />
+                            </div>
+                            <div class="column">
+                                <div class="column alert">
+                                    <img src="images/icons/midori.svg" />
+                                </div>
+                                <div class="column alert">
+                                    <h3>Midori</h3>
+                                    <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a class="read-more" href="http://midori-browser.org">Learn More</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

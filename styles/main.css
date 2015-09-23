@@ -873,10 +873,25 @@ i.fa.fa-close.close-modal {
 * Slider *
 *********/
 
+.slide-container {
+    overflow: hidden;
+    position: relative;
+    transition: height 200ms ease-in-out;
+    width: 100%;
+}
+
 .slide {
+    transition: transform 200ms ease-in-out, opacity 100ms linear;
+}
+
+.slide.active,
+.slide.next,
+.slide.previous {
     float: left;
+    left: 0;
     position: absolute;
-    transition: all 200ms ease-in-out;
+    right: 0;
+    width: 100%;
 }
 
 .slide.active {
@@ -901,11 +916,6 @@ i.fa.fa-close.close-modal {
     -webkit-transform: translateX(-200%);
         -ms-transform: translateX(-200%);
             transform: translateX(-200%);
-}
-
-.slide.hide-headings h2,
-.slide.hide-headings h3 {
-    display: none;
 }
 
 .float-left {

@@ -150,12 +150,11 @@ $(function () {
 
     // Carousel
     var appCarousel = new Slider({
-        slidesContainer: 'slide-container',
-        choicesContainer: 'choices-container',
-        id: 'carousel-choices',
-        choices: ['photos', 'music', 'videos', 'midori']
+      slideContainer: '.slide-container',
+      choiceContainer: '#carousel-choices',
+      slides: ['photos', 'music', 'videos', 'midori'],
+      fixed: true
     });
-    appCarousel.slideTo('photos');
 
     $(function() {
         $.getJSON('data/slingshot.json', function(data) {

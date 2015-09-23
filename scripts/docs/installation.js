@@ -16,11 +16,10 @@ $(function() {
 
     // Setup sliders
     var operatingSystemSlider = new Slider({
-        slidesContainer: 'installation-instructions-slide-container',
-        choicesContainer: 'operating-system-choices-container',
-        id: 'operating-system-choices',
-        choices: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
-        hideHeadings: false
+        slideContainer: '#installation-instructions-slide-container',
+        choiceContainer: '#operating-system-choices',
+        slides: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
+        fixed: false
     });
 
     // Show instructions for the current platform

@@ -45,7 +45,7 @@ Select the operating system you are currently using to view tailored installatio
 
 ***
 
-<div class="installation-instructions-slide-container" markdown="1">
+<div class="slide-container" id="installation-instructions-slide-container" markdown="1">
 
 <div id="install-on-windows" class="slide" markdown="1">
 
