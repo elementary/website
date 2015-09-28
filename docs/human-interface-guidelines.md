@@ -48,7 +48,7 @@ It's often very tempting to continue adding more and more features into your app
 
 ### Think in Modules {#think-in-modules}
 
-Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through [Contractor](https://launchpad.net/contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
+Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
 ## Avoid Configuration {#avoid-configuration}
 
@@ -282,7 +282,7 @@ See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop
 
 ## Contractor {#contractor}
 
-Contractor is a service and a protocol for exposing services easily between apps. It allows an app to interact with various other apps/services without hardcoding support for them. You simply add contractor support, and then any service registered with contractor is now available for your app to use. Your app can integrate with contractor in two different ways:
+Contractor is a service and a protocol for exposing services easily between apps. It allows an app to interact with various other apps/services without hardcoding support for them. You simply add [contractor](https://launchpad.net/contractor) support, and then any service registered with contractor is now available for your app to use. Your app can integrate with contractor in two different ways:
 
 * Register one of it's functions as a service that can be used from other apps
 * Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages
