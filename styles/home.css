@@ -78,18 +78,6 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 
-@media (min-width: 444px) {
-
-    #amount-custom {
-        width: 150px;
-    }
-
-    .focus-reveal {
-        width: auto;
-    }
-
-}
-
 #download {
     margin: 3px auto 6px;
 }
