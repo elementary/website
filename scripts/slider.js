@@ -1,116 +1,106 @@
 (function (global) {
-    function transitionsSupported() {
-        return (typeof document.body.style.transition != 'undefined');
-    }
 
     /**
      * A slider.
      * @param {Object} options Slider options.
-     * @param {String} options.slidesContainer The slider container id.
-     * @param {String} options.choicesContainer The choices container id.
-     * @param {String} options.id The slider id. The associated element should contain the choices' switch.
-     * @param {String[]} options.choices The slider choices ids. Each id should refer to a slide.
-     * @param {Boolean} options.hideHeadings Automatically hide slides headings.
+     * @param {String} options.slideContainer The slider container selector.
+     * @param {String} options.choiceContainer The choices container selector.
+     * @param {String[]} options.slides The slider choices selectors.
+     * @param {Boolean} options.fixed Update slideContainer height based on slide.
      */
-    var Slider = function (options) {
-        this.id = options.id;
-        this.slidesContainer = options.slidesContainer;
-        this.choicesContainer = options.choicesContainer;
-        this.elemSlidesContainer = $('.'+this.slidesContainer);
-        this.elemChoicesContainer = $('.'+this.choicesContainer);
-        this.elemChoicesSwitcher = $('#'+this.id);
-        this.choices = options.choices;
+    var Slider = function(options) {
+        // slider variables
+        this.slideContainer = options.slideContainer;
+        this.choiceContainer = options.choiceContainer;
+        this.slides = options.slides;
+        this.fixed = options.fixed;
 
+        this.currentIndex = null;
+
+        // initial setup
         var that = this;
 
-        // Init
-        var choicesSwitcher = this.elemChoicesSwitcher;
-        var container = null;
-        var biggestHeight = 0;
-        var initializeChoice = function (choiceId) {
+        for (var i = 0; i < this.slides.length; i++) {
+            var n = this.slides[i];
+            var $iChoice = $("[href$='" + n + "']" , this.choiceContainer);
 
-            $link = $('.' + that.choicesContainer + ' .' + choiceId);
-            $Slide = $('#' + choiceId);
-
-            if (!$Slide.length) {
-                console.log('ERR: could not find slide #'+choiceId);
-                return;
-            }
-
-            // Hide Headings
-            if (options.hideHeadings) {
-                $Slide.addClass('hide-headings');
-            }
-
-            // Increment biggestHeight
-            var newHeight = $Slide.outerHeight(true);
-            if ( newHeight > biggestHeight ) {
-                biggestHeight = newHeight;
-            }
-
-            // Slide to on Link.Click
-            $link.click(function(e) {
+            // each choice button
+            $iChoice.on("click", function(e) {
                 e.preventDefault();
-                that.slideTo(choiceId);
+                that.slideTo($(this).attr("href").split("#").pop()); // slide on click of button
             });
-
-            $Slide.addClass('next');
-
-        };
-
-        for (var i = 0; i < this.choices.length; i++) {
-            initializeChoice(this.choices[i]);
         }
 
-        // Add the switcher if that's in the container.
-        $contSwitcher = $('.' + this.slidesContainer + ' .' + this.choicesContainer);
-        if ($contSwitcher.length) {
-            biggestHeight = biggestHeight + $contSwitcher.outerHeight(true);
-        }
-        this.elemSlidesContainer.css('min-height', biggestHeight);
+        $(window).resize(function() {
+            that.resize();
+        });
 
+        // default position, slide to first slide
+        this.slideTo(this.slides[0]);
     };
 
     /**
      * Show a specific slide.
-     * @param {String} chosenId The slide id.
+     * @param {String} rSlide The slide id.
      */
-    Slider.prototype.slideTo = function (chosenId) {
-        var choicesList = this.choices;
-        var choicesContainer = this.choicesContainer;
-
-        var currentSlide = null;
-        var chosenSlide = null;
-
-        for (var i = 0; i < choicesList.length; i++) {
-            var choiceId = choicesList[i];
-
-            $link = $('.' + choicesContainer + ' .' + choiceId);
-            $Slide = $('#' + choiceId);
-
-            if (choiceId == chosenId) {
-                $link.addClass('active');
-                $chosenSlide = $Slide;
-                $chosenSlide.addClass('active').removeClass('next previous');
-                currentPosition = i;
-            } else {
-                $link.removeClass('active').addClass('previous');
-            }
-
-            if ($Slide.hasClass('active')) { // This Slide is currently visible
-                $currentSlide = $Slide;
-                if ($chosenSlide != $currentSlide) {
-                    $currentSlide.removeClass('active');
-                    if (i > currentPosition ) {
-                        $currentSlide.addClass('next');
-                    } else {
-                        $currentSlide.addClass('previous');
-                    }
-                }
-            }
-
+    Slider.prototype.slideTo = function(rSlide) {
+        if (this.slides.indexOf(rSlide) == -1) { // could not find requested slide
+            return console.log("ERROR: could not find requested slide '" + rSlide + "'"); // log an error
         }
 
+        // iterates through slides based on this.slides
+        for (var i = 0; i < this.slides.length; i++) {
+            var n = this.slides[i];
+            var $n = $("#" + n, this.slideContainer); // current iterated slide
+
+            if (n == rSlide) { // if correct slide
+                $n.removeClass("previous next").addClass("active");
+                this.currentIndex = i;
+            } else if ($n.index() < $("#" + rSlide, this.slideContainer).index()) { // if previous slide
+                $n.removeClass("active next").addClass("previous");
+            } else { // everything else is next
+                $n.removeClass("previous active").addClass("next");
+            }
+        };
+
+        // iterate over choices
+        for (var i = 0; i < this.slides.length; i++) {
+            var n = this.slides[i];
+            var $choice = $("[href$='" + n + "']", this.choiceContainer)
+            var href = $choice.attr("href").split("#").pop();
+
+            if (href == this.slides[this.currentIndex]) { // current choice
+                $choice.addClass("active");
+            } else {
+                $choice.removeClass("active");
+            }
+        }
+
+        this.resize(); // resize the container
+    };
+
+    /**
+     * Reset height of container
+     */
+    Slider.prototype.resize = function() {
+        if (this.fixed) { // if the container should be a fixed height
+            var height = 0;
+
+            // iterates through slides
+            $.each(this.slides, function(i, n) {
+                var $iSlide = $("#" + n, this.sliderContainer); // current iterated slide
+
+                if ($iSlide.outerHeight(true) > height) { // new tallest slide
+                    height = $iSlide.outerHeight(true);
+                }
+            });
+
+            $(this.slideContainer).outerHeight(height); // set fixed height
+        } else { // resize container based on slide
+            var height = $("#" + this.slides[this.currentIndex], this.sliderContainer).outerHeight(true); // get current slide height
+
+            $(this.slideContainer).outerHeight(height); // set height
+        }
     };
 
     // Export API
