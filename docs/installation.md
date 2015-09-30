@@ -207,6 +207,10 @@ In order to start the installation process, you must boot your computer from the
 
 </div>
 
+## After Installation {#after-installation .clear-float}
+
+Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
+
 <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
 <script type="text/javascript" src="scripts/slider.js"></script>
 <script type="text/javascript" src="scripts/docs/installation.js"></script>
