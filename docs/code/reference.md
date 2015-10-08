@@ -140,6 +140,17 @@ than good.
 Also worth referring that there should be no Hungarian notation, and no mix of
 any kinds of notations.
 
+## Casting {#casting}
+
+Prevent using `as` keyword when casting as it might give `null` as result, which could be easily forgotten to check.
+
+    
+    /* OK */
+    ((Gtk.Entry) widget).max_width_chars
+    
+    /* NOT OK as this approach requires a check for null */
+    (widget as Gtk.Entry).max_width_chars
+
 ## Vala namespaces {#vala-namespaces}
 
 Referring to GLib is not necessary. If you want to print something:
