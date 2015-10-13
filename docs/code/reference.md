@@ -142,7 +142,7 @@ any kinds of notations.
 
 ## Casting {#casting}
 
-Prevent using `as` keyword when casting as it might give `null` as result, which could be easily forgotten to check.
+Avoid using `as` keyword when casting as it might give `null` as result, which could be easily forgotten to check.
 
     
     /* OK */
