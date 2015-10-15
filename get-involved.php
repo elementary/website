@@ -15,6 +15,7 @@
             <canvas width="750" height="400"></canvas>
         </div>
         <div class="doughnuts-ctn">
+            <div id="date"></div>
             <div class="doughnut fixed">
                 <canvas id="fixed-chart" width="90" height="90"></canvas>
                 <div class="doughnut-label">
