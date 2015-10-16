@@ -666,16 +666,28 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
-	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+</div>
+
+If you're creating a icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
+
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/drive-harddisk.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/input-mouse.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/package.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
 </div>
 
 ## Icon Sizes {#size}
 
 elementary OS uses **six** main icon sizes throughout the desktop. So if you're developing an application for elementary or making an icon set, it's best to include all six.
+
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
 <div class="icons-container">
 	<img src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg">
@@ -703,21 +715,17 @@ elementary OS uses **six** main icon sizes throughout the desktop. So if you're 
 	<span>128</span>
 </div>
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
-
-
 ## Color Palette {#color}
 
 Color, don't be afraid to use it! Many of the elementary icons use vibrant colors, however it's best to reserve muted tones and greys for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-news-reader.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
-	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
-	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/network-error.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
 </div>
 
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
@@ -730,8 +738,8 @@ There are three aspects to note when designing an elementary icon:
 * Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
 * The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
 
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to mean line.
 
@@ -750,8 +758,8 @@ Keeping these lines in mind while designing, means you can place elements along 
 
 However there are exceptions. Many icons (especially mimetype icons) that have ascending and descending elements -those that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
 Rounder components will always need to be slightly larger than their rectangular counterparts due to the necessary addition of overshoot to compensate for the optical illusion that makes them look smaller.
 
@@ -760,8 +768,8 @@ Rounder components will always need to be slightly larger than their rectangular
 All elementary icons have a thin outline (stroke) to improve their contrast. This stroke width is **one** pixel for each and every icon, at every size.
 The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
 
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
 To further improve contrast, strokes are also semi-transparent. This ensures icons appear sharp against a variety of backgrounds. Also, if the element is near-white this stroke acts like border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
 
@@ -772,7 +780,7 @@ If you picture an icon sitting on a shelf facing you with a light source being a
 
 To apply the edge highlight effect to your icon, you draw a subtle, <b>1 pixel</b>, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
-<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
 ### Drop Shadow
 
@@ -797,7 +805,7 @@ You are free to add gloss (extra highlights) to your icon but this is only a goo
 
 ![](/images/docs/human-interface-guidelines/icons/highlight-example2.png)
 
-## Some Do's and Don'ts {#dos-donts}
+## Dos and Don'ts {#dos-donts}
 
 Below are some "do and don't" examples to consider when creating icons for your app.
 
