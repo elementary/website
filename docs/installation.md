@@ -194,9 +194,9 @@ ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
-You'll also need a small application called UNetbootin. To install it in Ubuntu, just <a href="http://appnr.com/install/unetbootin">click this link</a>. In OS X you'll have to download it from <a href="http://unetbootin.sourceforge.net/" target="_blank">its website</a> and open the downloaded file to install it.
+You'll also need a small application called UNetbootin. To install it, just <a href="http://appnr.com/install/unetbootin">click this link</a>.
 
-Open UNetbootin from the Dash in Ubuntu or Launchpad in OS X. It will open a window like the one below:
+Open UNetbootin from the Dash. It will open a window like the one below:
 
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
