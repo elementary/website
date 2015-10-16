@@ -704,14 +704,14 @@ Action icons are used to represent common user actions, such as "delete", "play"
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
 </div>
 
-If your app makes use of a one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
+If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
 
 However if your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
 
 ## Icon Sizes {#size}
 
-elementary OS uses **six** main icon sizes throughout the desktop. So if you're developing an application for elementary or making an icon set, it's best to include all six.
+elementary OS uses **six** main icon sizes throughout the OS and it's best to include all six as part of your application.
 
 Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
@@ -825,6 +825,7 @@ If your icon has a pictogram, such as the play triangle in the icon below, you c
 ![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg)
 
 To do this, first duplicate the pictogram and fill it with solid black and set it to <b>15% opacity</b>. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to <b>7% opacity</b>
+
 ### Icon Materials
 
 You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
