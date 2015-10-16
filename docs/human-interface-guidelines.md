@@ -713,8 +713,6 @@ If your app has a unique action, you may need to create your own. When doing thi
 
 elementary OS uses **six** main icon sizes throughout the OS and it's best to include all six as part of your application.
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
-
 <div class="icons-container">
 	<img title="16 pixel icon" src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg">
 	<img title="24 pixel icon" src="/images/docs/human-interface-guidelines/icons/24/utilities-terminal.svg">
@@ -723,6 +721,8 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 	<img title="64 pixel icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
 	<img title="128 pixel icon" id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
 </div>
+
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
 <div class="icons-container">
 	<span>16</span>
@@ -770,6 +770,9 @@ There are three aspects to note when designing an elementary icon:
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to mean line.
 
 ### Common Measurements
+
+If you're designing a square-shaped icon, like the one for Terminal seen above, then these are some common measurements (in pixels) for each icon.
+
 
 | Canvas Size   | Base Line     | x-Height | Mean Line Height |
 | ------------- |:------------- | -------- | ---------------- |
