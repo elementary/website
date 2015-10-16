@@ -690,18 +690,18 @@ If you're creating a icon for a hardware device or a file type (such as those fo
 Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
-	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
 </div>
 
 If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
