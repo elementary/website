@@ -687,7 +687,7 @@ If you're creating a icon for a hardware device or a file type (such as those fo
 
 ### Action Icons
 
-Action icons are used to represent common user actions, such as "delete", "play" or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
+Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
@@ -706,7 +706,7 @@ Action icons are used to represent common user actions, such as "delete", "play"
 
 If your app makes use of a one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
 
-However if your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons and include it along with your app.
+However if your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
 
 ## Icon Sizes {#size}
