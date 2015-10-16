@@ -769,7 +769,7 @@ Keeping these lines in mind while designing, means you can place elements along 
 
 ### Common Measurements
 
-If you're designing a square-shaped icon, like the one for Terminal seen above, then these are some common measurements (in pixels) for each icon.
+If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
 
 
 | Canvas Size   | Base Line     | x-Height | Mean Line Height |
@@ -788,7 +788,7 @@ However there are exceptions. Many icons (especially mimetype icons) have ascend
 <img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
-Rounder components will always need to be slightly larger than their rectangular counterparts due to the necessary addition of overshoot to compensate for the optical illusion that makes them look smaller.
+Rounder components will generally require some overshoot, to compensate for the optical illusion that makes them look smaller than their rectangular counterparts.
 
 ## Outlines &amp; Contrast {#contrast}
 
