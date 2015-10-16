@@ -190,13 +190,13 @@ ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-![UNetbootin](images/docs/installation/unetbootin.png)
-
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
 You'll also need a small application called UNetbootin. To install it, just <a href="http://appnr.com/install/unetbootin">click this link</a>.
 
 Open UNetbootin from the Dash. It will open a window like the one below:
+
+![UNetbootin](images/docs/installation/unetbootin.png)
 
 Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
 
