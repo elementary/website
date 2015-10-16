@@ -720,8 +720,6 @@ elementary OS uses **six** main icon sizes throughout the OS and it's best to in
 	<img title="128 pixel icon" id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
 </div>
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
-
 <div class="icons-container">
 	<span>16</span>
 	<span>24</span>
@@ -730,6 +728,8 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 	<span>64</span>
 	<span id="s128">128</span>
 </div>
+
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
 <div class="icons-container small-screen">
 	<img title="128 pixel icon" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
