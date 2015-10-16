@@ -782,7 +782,7 @@ Keeping these lines in mind while designing, means you can place elements along 
 
 ### Exceptions
 
-However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements -those that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
 <img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
