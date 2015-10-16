@@ -659,151 +659,152 @@ Iconography is a key part of elementary OS. Icons make up the majority of the UI
 
 ![](/images/docs/human-interface-guidelines/icons/icons.png)
 
-## Style {#style}
+## Shape {#shape}
 
-elementary Icons have a distinctive visual style that is inspired in part by the [Tango Icons](http://tango.freedesktop.org/Tango_Desktop_Project). Icons on elementary share several common design elements.
+Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
-### Design Elements {#design-elements}
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
+</div>
 
-#### Shape {#shape}
+## Icon Sizes {#size}
 
-Icons should have a distinctive shape/silhouette to improve recognition. The shape should not be too complicated, but not every icon should be a rounded rectangle.
+elementary OS uses **six** main icon sizes throughout the desktop. So if you're developing an application for elementary or making an icon set, it's best to include all six.
 
-#### Outline {#outline}
+<div class="icons-container">
+	<img src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg">
+	<img src="/images/docs/human-interface-guidelines/icons/24/utilities-terminal.svg">
+	<img src="/images/docs/human-interface-guidelines/icons/32/utilities-terminal.svg">
+	<img src="/images/docs/human-interface-guidelines/icons/48/utilities-terminal.svg">
+	<img src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+	<img id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+</div>
 
-All elementary Icons, and shapes within the icons, are stroked with a thin outline to improve contrast. At low resolutions the stroke size is 1px. The stroke should _not_ scale along with the icon, it should remain 1px.
+<div class="icons-container">
+	<span>16</span>
+	<span>24</span>
+	<span>32</span>
+	<span>48</span>
+	<span>64</span>
+	<span id="s128">128</span>
+</div>
 
-The color of the outline is a dark variant of the key color of the icon. This is done by creating a stroke at 30% opacity of black such that the border of the background lines up at half pixels. This is what allows icons with a stroke to appear sharp on dark backgrounds as well as light ones.
+<div class="icons-container small-screen">
+	<img src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+</div>
 
-#### Highlights {#highlights}
+<div class="icons-container small-screen">
+	<span>128</span>
+</div>
 
-The edges of objects tend to reflect light more due to the fact the position of the observer relative to the light source is almost always ideal for the reflection. We produce a subtle second inner outline of the object as a highlight. This stroke is very subtle and may not be apparent on some matte objects.
-
-#### Limited glossy reflections {#limited-glossy-reflections}
-
-Use glossy reflection only on objects that have a reflective surface in real life (plastic, glass, some metal, et cetera). A sheet of paper should not be glossy.
-
-### Lighting and Perspective {#lighting-and-perspective}
-
-elementary Icons have a consistent light source and perspective to keep a similar look throughout the system. The icons have been designed with the UI theme in mind, meaning everything shares a cohesive feel and a subtle amount of realism.
-
-#### Lighting {#lighting}
-
-Icons are lit from above. Items may produce a small, fuzzy shadow toward the bottom of the icon as if the icon is sitting on a shelf facing the user.
-
-#### Perspective {#perspective}
-
-Icons should have the perspective of looking at an object on a shelf at eye level. This means the icons are front-on, not from above and not tilted to the side. This also has an effect of giving icons slightly less depth than their real-world counterparts.
-
-------------------
-
-_Portions of this page have been adapted from the_ [_Tango Icon Theme Guidelines_](http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines)_._
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
 
-## Launcher Icons {#launcher-icons}
+## Color Palette {#color}
 
-A launcher icon is a graphic that represents your app. Launcher icons appear in the app launcher and on the user's dock. Launcher icons may show up in other places in the OS, such as in a notification or when being referenced by another app.
+Color, don't be afraid to use it! Many of the elementary icons use vibrant colors, however it's best to reserve muted tones and greys for boring system icons.
 
-You should create separate icons for all possible display sizes, including 32, 48, 64, and 128 pixels. This ensures that your icons will display properly throughout the OS without being blurry or oddly weighted.
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-news-reader.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+</div>
 
-### Goals of the Launcher Icon {#goals-of-the-launcher-icon}
+Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
 
-App launcher icons have three primary goals:
+## Composition {#composition}
 
-1. Promote the brand and tell the story of the app.
-2. Help users discover the app in the software center.
-3. Function well in the OS.
+There are three aspects to note when designing an elementary icon:
 
-#### Promote the brand story {#promote-the-brand-story}
+* Its baseline (highlighted in <span style="color:blue;">blue</span>) to ensure that all icons of one size line up along the bottom when in a row (much like text).
+* Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
+* The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
 
-App launcher icons are an opportunity to showcase the brand and hint at the story of what your app is about. Thus, you should:
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
 
-* Create an icon that is unique and memorable.
-* Use a color scheme that suits your brand.
-* Don't try to communicate too much with the icon. A simple icon will have more impact and be more memorable.
-* Avoid including the application name in the icon.
+Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to mean line.
 
-#### Help users discover the app in the software center {#help-users-discover-the-app-in-the-software-center}
+### Common Measurements
 
-App launcher icons are the first look that prospective users will get of your app in the software center. A high quality app icon can influence users to find out more as they scroll through lists of apps.
+| Canvas Size   | Base Line     | x-Height | Mean Line Height |
+| ------------- |:------------- | -------- | ---------------- |
+| 16x16         | 1             | 14       | 8                |
+| 24x24         | 2             | 20       | 12               |
+| 32x32         | 2             | 26       | 16               |
+| 48x48         | 3             | 40       | 24               |
+| 64x64         | 4             | 56       | 32               |
+| 128x128       | 9             | 104      | 64               |
 
-Quality matters here; a well-designed icon can be a strong signal that your app is of similarly high quality. Consider working with an icon designer to develop the app’s launcher icon.
+### Exceptions
 
-#### Function well in the OS {#function-well-in-the-os}
+However there are exceptions. Many icons (especially mimetype icons) that have ascending and descending elements -those that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
-A successful app launcher icon will look great in all situations: on near-white when in the the app launcher, partially over any background when on the dock, and next to any other icons and app widgets. To do this, icons should:
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
 
-* Communicate well at smaller sizes.
-* Work on a wide variety of backgrounds.
-* Reflect the implied lighting model of the OS (top-lit).
-* Have a relatively shallow depth.
-* Have a unique silhouette for faster recognition; **not all app icons should be square**.
-* Not present a cropped view of a larger image.
-* Have similar weight to other icons. Icons that are too spindly or that don't use enough of the space may not successfully attract the user’s attention, or may not stand out well on all backgrounds.
+Rounder components will always need to be slightly larger than their rectangular counterparts due to the necessary addition of overshoot to compensate for the optical illusion that makes them look smaller.
 
-### Do's and Don'ts {#dos-and-donts}
+## Outlines &amp; Contrast {#contrast}
+
+All elementary icons have a thin outline (stroke) to improve their contrast. This stroke width is **one** pixel for each and every icon, at every size.
+The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
+
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+
+To further improve contrast, strokes are also semi-transparent. This ensures icons appear sharp against a variety of backgrounds. Also, if the element is near-white this stroke acts like border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
+
+## Shadows &amp; Highlights {#shadows}
+
+If you picture an icon sitting on a shelf facing you with a light source being above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect light more due to your relative position to it and the light source, they will have a highlight. Both these effects are something elementary icons emulate in their design to lend a degree of realism.
+### Edge Highlight
+
+To apply the edge highlight effect to your icon, you draw a subtle, <b>1 pixel</b>, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
+
+<img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid-4px.svg">
+
+### Drop Shadow
+
+To draw this you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpindicular to bottom of the icon and has three stops –the first and last of which have a zero opacity. Then this entire shape is set to <b>60% opacity</b>.
+
+![](/images/docs/human-interface-guidelines/icons/shadow-example1.png)
+
+Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge –see below for an example. Both these rectangles are also set to <b>60% opacity</b>.
+
+![](/images/docs/human-interface-guidelines/icons/shadow-example2.png)
+
+### Pictogram Shadow
+
+If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
+
+![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg)
+
+To do this, first duplicate the pictogram and fill it with solid black and set it to <b>15% opacity</b>. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to <b>7% opacity</b>
+### Icon Materials
+
+You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
+
+![](/images/docs/human-interface-guidelines/icons/highlight-example2.png)
+
+## Some Do's and Don'ts {#dos-donts}
+
 Below are some "do and don't" examples to consider when creating icons for your app.
 
-* Icons should not be overly complicated. Remember that launcher icons will be used at often small sizes, so they should be distinguishable at small sizes.
-* Icons should not be cropped. Use unique shapes where appropriate; remember that launcher icons should differentiate your app from others. Additionally, **do not use a glossy finish** unless the represented object has a glossy material.
-* Icons should not be thin. They should have a similar weight to other icons. Overly thin icons will not stand out well on all backgrounds.
-* Icons should make use of the alpha channel, and should not simply be full-frame images. Where appropriate, distinguish your icon with subtle yet appealing visual treatment.
-* If your icon has a tilt to it's perspective, it should tilt backward (not forward).
-
------------------------------
-
-_Portions of this page are derived from work created and [shared by the Android Open Source Project](http://developer.android.com/license.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/)._
-
-## MimeTypes {#mimetypes}
-
-MimeType icons are used to visually represent files and types of files. Users will come across them in the file browser and when saving or opening a file.
-
-## Actions {#actions}
-
-Action icons are graphics used to represent user actions. Action icons are most commonly found in app toolbars, but can be found throughout the OS.
-
-If your app has an action that can be described by an existing system action icon, reference that icon. This ensures a consistent user experience and aids in user recognition of common functions.
-
-If your app has a unique action not easily described by an existing icon, you may need to create your own icon. Follow the look and feel of existing system icons and install the icon along with your app.
-
-## Size and Alignment {#size-and-alignment}
-
-Icons come in all kinds of shapes. To keep a coherent flow, we try to adopt principals of type design when sizing and aligning our icons. For a 48px icon, we do as follows.
-
-### X-Height and Base Line {#x-height-and-base-line}
-![](/images/docs/human-interface-guidelines/size-and-alignment/x-height-and-base-line.png)
-
-A 48px icon as an x-height of 40px. The base Line starts 3px above the bottom of the canvas.
-
-### Mean Line {#mean-line}
-![](/images/docs/human-interface-guidelines/size-and-alignment/mean-line.png)
-
-The mean line goes right through the center of the canvas. Its primary use is in aligning floating elements. If an element's height is an odd number, align 1px below the mean line.
-
-### Ascent and Descent {#ascent-and-descent}
-![](/images/docs/human-interface-guidelines/size-and-alignment/ascent-and-descent.png)
-
-Some icons need to extend past the X-height. Your standard ascenders and descenders should be just 2px past the x-height. This is useful when you need to use more space to convey the same overall area (such as with circle icons) or you need to overlay a smaller icon (such as when conveying an action performed on an object).
-
-### Exceptions {#exceptions}
-![](/images/docs/human-interface-guidelines/size-and-alignment/exceptions-1.png)
-
-Not every icon follows the rules perfectly. Mimetype icons ascend to the top of the canvas.
-
-![](/images/docs/human-interface-guidelines/size-and-alignment/exceptions-2.png)
-
-If you need to break the rules, you can still use the established lines to keep with the general cadence.
-
-### Scaling {#scaling}
-
-Contrary to popular belief, you cannot supply a single high resolution version of an icon and expect it to scale properly. Your icon will appear blurry or heavy and may have illegible pieces. It is always best to begin designing an icon at it's expected display size (which will be provided for you as we talk about different kinds of icons).
-
-* **16px** for Symbolic icons, MimeTypes, Places icons, and Status Icons
-* **24px** for Action icons, MimeTypes, and Places icons
-* **32px** for App icons, MimeTypes, and Places icons
-* **48px** for App icons, Actions icons, MimeTypes, Places icons, and Status Icons
-* **64px** for App icons, Actions icons, MimeTypes, Places icons, and Status icons
-* **128px** for App Icons, Actions icons, MimeTypes, Places Icons and Status Icons
+* Your icon should not be overly complicated. Keep in mind that since there are smaller sizes, the elements that make up your icon should be distinguishable when at those sizes.
+* Your icon should make use of transparent elements, and should not simply be full-frame images. Where you can, distinguish your icon with subtle yet appealing visuals.
+* Don't make a thin icon. Your icon's weight should be comparable to that of other icons. An overly thin icon won't stand out well on many backgrounds.
+* If you would like to give your icon a tilted perspective, it should tilt backward (not forward).
 
 # Text {#text}
 
