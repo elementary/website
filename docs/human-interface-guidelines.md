@@ -729,8 +729,6 @@ elementary OS uses **six** main icon sizes throughout the OS and it's best to in
 	<span id="s128">128</span>
 </div>
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
-
 <div class="icons-container small-screen">
 	<img title="128 pixel icon" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
 </div>
@@ -738,6 +736,8 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 <div class="icons-container small-screen">
 	<span>128</span>
 </div>
+
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
 
 ## Color Palette {#color}
 
