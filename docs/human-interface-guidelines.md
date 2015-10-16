@@ -653,7 +653,7 @@ A Static Notebook is a small set of unchanging tabs, commonly seen in preference
 
 A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
 
-# Icons {#icons}
+# Iconography {#icons}
 
 Iconography is a key part of elementary OS. Icons make up the majority of the UI that your user will be actively engaging with; they're what bring the system to life and cater to the powerful recognition engine of the human brain.
 
@@ -670,7 +670,6 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
 </div>
 
-
 ### Metaphors
 
 If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
@@ -683,7 +682,6 @@ If you're creating an icon for a hardware device or a file type (such as those f
 	<img title="HTML Text icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg">
 	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
 </div>
-
 
 ### Action Icons
 
