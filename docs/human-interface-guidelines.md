@@ -657,8 +657,6 @@ A Dynamic Notebook is a way for an app to provide user-managable tabbing functio
 
 Iconography is a key part of elementary OS. Icons make up the majority of the UI that your user will be actively engaging with; they're what bring the system to life and cater to the powerful recognition engine of the human brain.
 
-![](/images/docs/human-interface-guidelines/icons/icons.png)
-
 ## Shape {#shape}
 
 Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
@@ -784,7 +782,7 @@ Keeping these lines in mind while designing, means you can place elements along 
 
 ### Exceptions
 
-However there are exceptions. Many icons (especially mimetype icons) that have ascending and descending elements -those that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements -those that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
 <img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
