@@ -812,17 +812,17 @@ To apply the edge highlight effect to your icon, you draw a subtle, <b>1 pixel</
 
 To draw this you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpindicular to bottom of the icon and has three stops –the first and last of which have a zero opacity. Then this entire shape is set to <b>60% opacity</b>.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example1.png)
+![](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
 
 Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge –see below for an example. Both these rectangles are also set to <b>60% opacity</b>.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example2.png)
+![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 1")
 
 ### Pictogram Shadow
 
 If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
 
-![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg)
+![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
 
 To do this, first duplicate the pictogram and fill it with solid black and set it to <b>15% opacity</b>. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to <b>7% opacity</b>
 
@@ -830,7 +830,7 @@ To do this, first duplicate the pictogram and fill it with solid black and set i
 
 You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
 
-![](/images/docs/human-interface-guidelines/icons/highlight-example2.png)
+![](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
 
 ## Dos and Don'ts {#dos-donts}
 
