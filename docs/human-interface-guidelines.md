@@ -700,6 +700,7 @@ Action icons are used to represent common user actions, such as "delete", "play"
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
 	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
