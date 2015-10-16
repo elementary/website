@@ -673,7 +673,7 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 
 ### Metaphors
 
-If you're creating a icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
+If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Camera icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg">
@@ -816,7 +816,7 @@ To draw this you'll start by drawing a rectangle. Then fill it with a linear gra
 
 Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge –see below for an example. Both these rectangles are also set to <b>60% opacity</b>.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 1")
+![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
 
 ### Pictogram Shadow
 
