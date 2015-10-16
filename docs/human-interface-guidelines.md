@@ -743,7 +743,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary icons use vibrant colors, however it's best to reserve muted tones and greys for boring system icons.
+Color, don't be afraid to use it! Many of the elementary icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg">
