@@ -792,7 +792,7 @@ Rounder components will generally require some overshoot, to compensate for the 
 
 ## Outlines &amp; Contrast {#contrast}
 
-All elementary icons have a thin outline (stroke) to improve their contrast. This stroke width is **one** pixel for each and every icon, at every size.
+All elementary icons have a thin outline (stroke) to improve their contrast. This width of this stroke is **one** pixel for all icons, at every size.
 The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
 
 <img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
