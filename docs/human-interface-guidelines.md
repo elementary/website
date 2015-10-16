@@ -706,7 +706,7 @@ Action icons are used to represent common user actions, such as "delete", "play"
 
 If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
 
-However if your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
+If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
 
 ## Icon Sizes {#size}
