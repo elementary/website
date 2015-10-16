@@ -36,7 +36,7 @@ $(function () {
         };
 
         for (var time in data) {
-            var dateLocalized = new Date(parseInt(time, 10) * 1000).toLocaleDateString();
+            var dateLocalized = new Date(parseInt(time, 10) * 1000).toLocaleDateString(document.documentElement.lang, { year: 'numeric', month: 'long', day: 'numeric' });
 
             var point = data[time];
             $.extend(point, { date: dateLocalized });
