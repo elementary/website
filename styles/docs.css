@@ -243,7 +243,6 @@ nav {
     padding-right: 16px;
 }
 
-
 @media (max-width: 990px) {
 
     .sidebar {
@@ -254,8 +253,143 @@ nav {
 
 @media (min-width: 990px) and (max-width: 1400px) {
 
-    .sidebar + .row.docs {
+    .row.docs {
         margin: 0 auto 0 300px;
     }
 
+}
+
+
+/**********
+ * Tables *
+ **********/
+
+table {
+    background-color:transparent;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    clear:both;
+    font-family:'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: left;
+    width:100%;
+}
+
+table th {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+th, td {
+    margin-left:1em;
+    padding-right:1em;
+}
+
+th:nth-child(1) th:nth-child(1) {
+    text-align: left;
+}
+
+table>tbody>tr>td:nth-child(1) {
+    width: 224px;
+}
+
+table>tbody>tr:nth-child(odd)>td,
+table>tbody>tr:nth-child(odd)>th {
+  background-color: rgba(0,0,0,0.01);
+}
+
+table>thead>tr>th,
+table>tbody>tr>th,
+table>tfoot>tr>th,
+table>thead>tr>td,
+table>tbody>tr>td,
+table>tfoot>tr>td {
+    padding: 8px;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+
+table>thead>tr>th {
+    border-top: none;
+}
+
+table > tr {
+    border-right: 1px solid #ddd;
+}
+
+/****************
+ * Icons Styles *
+ ****************/
+
+img.hig-icons-example {
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05);
+    display: inline-block;
+    margin: 2em auto;
+    width: 100%;
+    height: auto;
+    max-height: 512px;
+    max-width: 512px;
+    background: center no-repeat;
+    background-size: 100%;
+}
+
+img.hig-icon {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 1em;
+}
+
+div.icons-container {
+    text-align:center;
+    width: 100%;
+}
+
+div.icons-container.small-screen {
+    display: none;
+}
+
+div.icons-container > img,
+div.icons-container > span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin:0.5em 1em;
+}
+
+div.icons-container > span {
+    font-family:"Droid Sans", monospace;
+    font-size: 0.918em;
+    text-align: center;
+}
+
+div.icons-container > span:nth-child(1){width: 16px;}
+div.icons-container > span:nth-child(2){width: 24px;}
+div.icons-container > span:nth-child(3){width: 32px;}
+div.icons-container > span:nth-child(4){width: 48px;}
+div.icons-container > span:nth-child(5){width: 64px;}
+div.icons-container > span:nth-child(6){width: 128px;}
+
+
+@media only screen and (max-width:600px) {
+
+    div.icons-container > span,
+    div.icons-container > img {
+        margin: 0.5em;
+    }   
+}
+
+div.icons-container.small-screen {
+    display: none;
+}
+
+@media only screen and (max-width:450px) {
+
+    #s128 {
+        display: none;
+    }
+
+    div.icons-container.small-screen {
+        display: block;
+    }
 }
