@@ -751,7 +751,7 @@ Color, don't be afraid to use it! Many of the elementary icons use vibrant color
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/network-error.svg">
-	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
+	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg">
 </div>
 
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
