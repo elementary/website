@@ -672,6 +672,9 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
 </div>
 
+
+### Metaphors
+
 If you're creating a icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
 <div style="width:100%;display:inline-block;text-align:center;">
@@ -682,6 +685,30 @@ If you're creating a icon for a hardware device or a file type (such as those fo
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg">
 	<img class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
 </div>
+
+
+### Action Icons
+
+Action icons are used to represent common user actions, such as "delete", "play" or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
+
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
+	<img class="hig-icon small" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
+</div>
+
+If your app makes use of a one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
+
+However if your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons and include it along with your app.
+
 
 ## Icon Sizes {#size}
 
