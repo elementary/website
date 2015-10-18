@@ -765,11 +765,11 @@ There are three aspects to note when designing an elementary icon:
 <img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
-Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to mean line.
+Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
 
 ### Common Measurements
 
-If you're designing a square-shaped icon, like the one for Terminal seen above, then these are some common measurements (in pixels) for each icon.
+If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
 
 
 | Canvas Size   | Base Line     | x-Height | Mean Line Height |
@@ -788,34 +788,35 @@ However there are exceptions. Many icons (especially mimetype icons) have ascend
 <img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
-Rounder components will always need to be slightly larger than their rectangular counterparts due to the necessary addition of overshoot to compensate for the optical illusion that makes them look smaller.
+Rounder components will generally require some overshoot, to compensate for the optical illusion that makes them look smaller than their rectangular counterparts.
 
 ## Outlines &amp; Contrast {#contrast}
 
-All elementary icons have a thin outline (stroke) to improve their contrast. This stroke width is **one** pixel for each and every icon, at every size.
+All elementary icons have a thin outline (stroke) to improve their contrast. The width of this stroke is **one** pixel for all icons, at every size.
 The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
 
 <img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 <img title="Second icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
-To further improve contrast, strokes are also semi-transparent. This ensures icons appear sharp against a variety of backgrounds. Also, if the element is near-white this stroke acts like border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
+To further improve contrast, strokes are also semi-transparent. This ensures that icons appear sharp against a variety of backgrounds. Also, if the element is near-white, this stroke acts as a border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
 
 ## Shadows &amp; Highlights {#shadows}
 
-If you picture an icon sitting on a shelf facing you with a light source being above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect light more due to your relative position to it and the light source, they will have a highlight. Both these effects are something elementary icons emulate in their design to lend a degree of realism.
+If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary icons emulate in their design to lend them a degree of realism.
+
 ### Edge Highlight
 
-To apply the edge highlight effect to your icon, you draw a subtle, <b>1 pixel</b>, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
+To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
 <img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
 ### Drop Shadow
 
-To draw this you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpindicular to bottom of the icon and has three stops –the first and last of which have a zero opacity. Then this entire shape is set to <b>60% opacity</b>.
+To draw the shadow, you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpendicular to the bottom margin of the icon. The gradient has three stops, the first and last of which have zero opacity. Then this entire shape is set to **60% opacity**.
 
 ![](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
 
-Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge –see below for an example. Both these rectangles are also set to <b>60% opacity</b>.
+Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first, but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge—see below for an example. Both these rectangles are also set to **60% opacity**.
 
 ![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
 
@@ -825,7 +826,7 @@ If your icon has a pictogram, such as the play triangle in the icon below, you c
 
 ![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
 
-To do this, first duplicate the pictogram and fill it with solid black and set it to <b>15% opacity</b>. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to <b>7% opacity</b>
+To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
 
 ### Icon Materials
 
