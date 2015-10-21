@@ -35,10 +35,21 @@ $(function () {
             ]
         };
 
-        for (var time in data) {
-            var point = data[time];
+        var currentYear = new Date().getFullYear();
 
-            chart.labels.push(new Date(parseInt(time, 10) * 1000).toLocaleDateString());
+        for (var time in data) {
+            var date = new Date(parseInt(time, 10) * 1000);
+
+            var dateFormatOptions = { month: 'long', day: 'numeric' };
+            if (currentYear !== date.getFullYear())
+                dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+            var dateLocalized = date.toLocaleDateString(document.documentElement.lang, dateFormatOptions);
+
+            var point = data[time];
+            $.extend(point, { date: dateLocalized });
+
+            chart.labels.push(dateLocalized);
 
             chart.datasets[0].data.push(point.fixed || 0);
             chart.datasets[1].data.push(point.in_progress || 0);
@@ -70,6 +81,7 @@ $(function () {
                 }
 
                 var point = {
+                    date: tooltip.title,
                     fixed: parseInt(tooltip.labels[0], 10),
                     in_progress: parseInt(tooltip.labels[1], 10),
                     created: parseInt(tooltip.labels[2], 10)
@@ -84,6 +96,7 @@ $(function () {
             if (!point) {
                 point = lastPoint;
             }
+            $container.find('#date').text(point.date);
 
             var total = point.created + point.in_progress + point.fixed;
 
@@ -104,8 +117,10 @@ $(function () {
 
         var doughnutCharts = {};
         for (var doughnutName in lastPoint) {
-            var doughnutId = doughnutName.replace('_', '-');
+            if (doughnutName === 'date')
+                continue;
 
+            var doughnutId = doughnutName.replace('_', '-');
             var ctx = document.getElementById(doughnutId+'-chart').getContext('2d');
             doughnutCharts[doughnutName] = new Chart(ctx).Doughnut([
                 {
