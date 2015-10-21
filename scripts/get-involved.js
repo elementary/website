@@ -35,8 +35,16 @@ $(function () {
             ]
         };
 
+        var currentYear = new Date().getFullYear();
+
         for (var time in data) {
-            var dateLocalized = new Date(parseInt(time, 10) * 1000).toLocaleDateString(document.documentElement.lang, { year: 'numeric', month: 'long', day: 'numeric' });
+            var date = new Date(parseInt(time, 10) * 1000);
+
+            var dateFormatOptions = { month: 'long', day: 'numeric' };
+            if (currentYear !== date.getFullYear())
+                dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+            var dateLocalized = date.toLocaleDateString(document.documentElement.lang, dateFormatOptions);
 
             var point = data[time];
             $.extend(point, { date: dateLocalized });
