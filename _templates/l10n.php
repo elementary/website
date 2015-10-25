@@ -206,7 +206,7 @@ class Translator {
             'img' => array('alt')
         );
 
-        // Tags included in translation strings when used in <p> or <li>
+        // Tags included in translation strings when used in <p>, <hX> or <li>
         $ignoredTags = array('a', 'kbd', 'strong', 'em', 'code', 'sup', 'sub');
 
         // Begin parsing input HTML
@@ -302,8 +302,8 @@ class Translator {
                 $next = strpos($input, '<', $i);
                 if ($next === false) { // End Of File
                     $next = strlen($input);
-                } elseif ($tagName == 'p' || $tagName == 'li') {
-                    // Do not process ignored tags in <p> and <li>
+                } elseif ($tagName == 'p' || $tagName == 'li' || preg_match('#h[0-6]#', $tagName)) {
+                    // Do not process ignored tags in <p>, <hX> and <li>
                     $originalNext = $next;
                     $ignoredCount = 0;
                     do {
