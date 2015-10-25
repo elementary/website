@@ -302,7 +302,7 @@ class Translator {
                 $next = strpos($input, '<', $i);
                 if ($next === false) { // End Of File
                     $next = strlen($input);
-                } elseif ($tagName == 'p' || $tagName == 'li' || preg_match('#^h[0-6]$#', $tagName)) {
+                } elseif ($tagName == 'p' || $tagName == 'li' || preg_match('#^h[1-6]$#', $tagName)) {
                     // Do not process ignored tags in <p>, <hX> and <li>
                     $originalNext = $next;
                     $ignoredCount = 0;
