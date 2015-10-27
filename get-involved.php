@@ -39,6 +39,10 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id="sections-menu">
+    <div class="grid">
     <div class="actions">
         <a class="button flat" href="#translations">Translations</a>
         <a class="button flat" href="#web-development">Web Development</a>
@@ -46,8 +50,8 @@
         <a class="button flat" href="#desktop-development">Desktop Development</a>
         <a class="button flat" href="#funding">Funding</a>
     </div>
+    </div>
 </section>
-
 <section id="translations" class="light">
     <div class="heading">
         <div class="grid">

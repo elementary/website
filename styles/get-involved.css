@@ -206,7 +206,12 @@ section .heading p.small-label a:hover {
     color: #dc322f;
 }
 
-.hero .actions .button.flat {
+#sections-menu {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding-bottom: 0;
+}
+
+#sections-menu .actions .button.flat {
     border: 2px solid #c8d0d0;
     border-radius: 4px;
     color: #c8d0d0;
@@ -215,23 +220,23 @@ section .heading p.small-label a:hover {
     vertical-align: middle;
 }
 
-.hero .actions .button.flat:nth-child(1) {
+#sections-menu .actions .button.flat:nth-child(1) {
     border-color: #2aa198;
 }
 
-.hero .actions .button.flat:nth-child(2) {
+#sections-menu .actions .button.flat:nth-child(2) {
     border-color: #cb4b16;
 }
 
-.hero .actions .button.flat:nth-child(3) {
+#sections-menu .actions .button.flat:nth-child(3) {
     border-color: #268bd2;
 }
 
-.hero .actions .button.flat:nth-child(4) {
+#sections-menu .actions .button.flat:nth-child(4) {
     border-color: #d33682;
 }
 
-.hero .actions .button.flat:nth-child(5) {
+#sections-menu 124.actions .button.flat:nth-child(5) {
     border-color: #edac35;
 }
 
