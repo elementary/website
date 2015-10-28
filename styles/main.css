@@ -417,7 +417,7 @@ footer ul li a:focus {
     }
 
 	.column.third {
-		margin-bottom: 28px;
+		margin: 12px 0 28px;
 	}
 
 	.column.half {
