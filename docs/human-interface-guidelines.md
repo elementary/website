@@ -641,7 +641,7 @@ See also: _[3 Ways to Make Checkboxes, Radio Buttons Easier to Click](http://uxm
 
 Notebooks are a type of widget that allow showing one of multiple pages in an app, also colloquially referred to as "tab bars."
 
-### Stack Switcher (former Static Notebook) {#static-notebook}
+### Stack Switcher (former Static Notebook) {#stack-switcher}
 
 ![](/images/docs/human-interface-guidelines/notebooks/static-notebook.png)
 
