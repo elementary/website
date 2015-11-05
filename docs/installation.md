@@ -51,6 +51,8 @@ Select the operating system you are currently using to view tailored installatio
 
 ## Verify your Download {#verify-your-download}
 
+Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
+
 Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://www.digitalvolcano.co.uk/hash.html">Hash Tool</a>.
 
 ![Hash Tool](images/docs/installation/hashtool.png)
@@ -98,6 +100,8 @@ In order to start the installation process, you must boot your computer from the
 <div id="install-on-os-x" class="slide" markdown="1">
 
 ## Verify your Download {#verify-your-download}
+
+Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
 
 #### 32-bit
 
@@ -159,6 +163,8 @@ In order to start the installation process, you must boot your computer from the
 <div id="install-on-ubuntu" class="slide" markdown="1">
 
 ## Verify your Download {#verify-your-download}
+
+Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
 
 #### 32-bit
 
