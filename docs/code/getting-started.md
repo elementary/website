@@ -537,7 +537,7 @@ Let’s add some stuff to the Grid:
 
 Super easy stuff, right? We can add the grid to our window using the same method that we just used to add widgets to our grid:
 
-    this.add (grid);
+    window.add (grid);
 
 Now build your app and see what it looks like. Since we’ve given our grid a `Gtk.Orientation` of `VERTICAL` the labels stack up on top of each other. Try creating a `Gtk.Grid` without giving it an orientation. By default, `Gtk.Grid`’s orientation is horizontal. You really only ever have to give it an orientation if you need it to be vertical.
 
