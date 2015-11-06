@@ -541,7 +541,7 @@ Super easy stuff, right? We can add the grid to our window using the same method
 
 Now build your app and see what it looks like. Since we’ve given our grid a `Gtk.Orientation` of `VERTICAL` the labels stack up on top of each other. Try creating a `Gtk.Grid` without giving it an orientation. By default, `Gtk.Grid`’s orientation is horizontal. You really only ever have to give it an orientation if you need it to be vertical.
 
-# Functionality in Gtk.Grid {#functionality-in-gtk-grid}
+## Functionality in Gtk.Grid {#functionality-in-gtk-grid}
 
 Okay, so you know all about using a `Gtk.Grid` to pack multiple children into a Window. What about using it to lay out some functionality in our app? Let’s try building an app that shows a message when we click a button. Remember in our first “Hello World” how we changed the label of the button with `button.clicked.connect`? Let’s use that method again, but instead of just changing the label of the button, we’re going to use it to change an empty label to a message.
 
@@ -570,7 +570,7 @@ Now, let’s hook up the button to change that label. To keep our code logically
 
 Remember, we set the button as insensitive here because clicking it again has no effect. Now compile your app and marvel at your newfound skills. Play around with orientation and spacing until you feel comfortable.
 
-# The Attach Method {#the-attach-method}
+## The Attach Method {#the-attach-method}
 
 While we can use `Gtk.Grid` simply to create single row or single column layouts with the add method, we can also use it to create row-and-column-based layouts with the `attach` method. First we’re going to create a new `Gtk.Grid` and set both column and row spacing, then we’ll create all the widgets we want to attach to our grid, and finally we’ll attach them.
 
