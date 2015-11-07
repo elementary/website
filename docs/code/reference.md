@@ -17,11 +17,6 @@ applications that they don't usually work on, because the code will be
 consistent. Finally, as Guido Van Rossum said - "Code is much more often read
 than written", so having nicely written code is crucial.
 
-## Disclaimer {#disclaimer}
-
-This guide is not finished, but has been discussed and partially approved by
-the elementary contributors. It is subject to changes in the near future.
-
 ## Whitespace {#whitespace}
 
 There is no trailing whitespace at the end of a line, whether it's empty or
