@@ -1,257 +1,252 @@
 {
-    "1428753600": {
-        "created": 194,
-        "fixed": 13,
-        "in_progress": 5
+    "1429084200": {
+        "in_progress": 31,
+        "created": 258,
+        "fixed": 11
     },
-    "1429029040": {
-        "created": 198,
-        "fixed": 13,
-        "in_progress": 5
+    "1429418401": {
+        "in_progress": 31,
+        "created": 259,
+        "fixed": 21
     },
-    "1429304480": {
-        "created": 201,
-        "fixed": 21,
-        "in_progress": 6
+    "1429752602": {
+        "in_progress": 32,
+        "created": 265,
+        "fixed": 23
     },
-    "1429579920": {
-        "created": 205,
-        "fixed": 23,
-        "in_progress": 5
+    "1430086803": {
+        "in_progress": 34,
+        "created": 267,
+        "fixed": 23
     },
-    "1429855360": {
-        "created": 206,
-        "fixed": 24,
-        "in_progress": 6
-    },
-    "1430130800": {
-        "created": 207,
-        "fixed": 24,
-        "in_progress": 6
-    },
-    "1430406240": {
-        "created": 210,
-        "fixed": 27,
-        "in_progress": 5
-    },
-    "1430681680": {
-        "created": 213,
-        "fixed": 27,
-        "in_progress": 5
-    },
-    "1430957120": {
-        "created": 216,
-        "fixed": 27,
-        "in_progress": 5
-    },
-    "1431232561": {
-        "created": 217,
-        "fixed": 27,
-        "in_progress": 6
-    },
-    "1431508001": {
-        "created": 219,
-        "fixed": 28,
-        "in_progress": 6
-    },
-    "1431783441": {
-        "created": 222,
-        "fixed": 29,
-        "in_progress": 6
-    },
-    "1432058881": {
-        "created": 226,
-        "fixed": 29,
-        "in_progress": 6
-    },
-    "1432334321": {
-        "created": 230,
-        "fixed": 33,
-        "in_progress": 5
-    },
-    "1432609761": {
-        "created": 236,
-        "fixed": 44,
-        "in_progress": 5
-    },
-    "1432885201": {
-        "created": 240,
-        "fixed": 47,
-        "in_progress": 6
-    },
-    "1433160641": {
-        "created": 240,
-        "fixed": 48,
-        "in_progress": 6
-    },
-    "1433436082": {
-        "created": 247,
-        "fixed": 63,
-        "in_progress": 7
-    },
-    "1433711522": {
-        "created": 248,
-        "fixed": 86,
-        "in_progress": 10
-    },
-    "1433986962": {
-        "created": 249,
-        "fixed": 93,
-        "in_progress": 10
-    },
-    "1434262402": {
-        "created": 248,
-        "fixed": 98,
-        "in_progress": 10
-    },
-    "1434537842": {
-        "created": 248,
-        "fixed": 103,
-        "in_progress": 10
-    },
-    "1434813282": {
-        "created": 254,
-        "fixed": 111,
-        "in_progress": 10
-    },
-    "1435088722": {
-        "created": 260,
-        "fixed": 121,
-        "in_progress": 14
-    },
-    "1435364162": {
-        "created": 261,
-        "fixed": 126,
-        "in_progress": 11
-    },
-    "1435639603": {
-        "created": 268,
-        "fixed": 126,
-        "in_progress": 16
-    },
-    "1435915043": {
-        "created": 266,
-        "fixed": 130,
-        "in_progress": 15
-    },
-    "1436190483": {
-        "created": 264,
-        "fixed": 133,
-        "in_progress": 15
-    },
-    "1436465923": {
-        "created": 266,
-        "fixed": 134,
-        "in_progress": 15
-    },
-    "1436741363": {
+    "1430421004": {
+        "in_progress": 33,
         "created": 270,
-        "fixed": 135,
-        "in_progress": 14
+        "fixed": 26
     },
-    "1437016803": {
-        "created": 275,
-        "fixed": 139,
-        "in_progress": 15
-    },
-    "1437292243": {
-        "created": 271,
-        "fixed": 143,
-        "in_progress": 17
-    },
-    "1437567683": {
-        "created": 272,
-        "fixed": 146,
-        "in_progress": 17
-    },
-    "1437843123": {
-        "created": 273,
-        "fixed": 146,
-        "in_progress": 18
-    },
-    "1438118564": {
+    "1430755205": {
+        "in_progress": 33,
         "created": 274,
-        "fixed": 147,
-        "in_progress": 19
+        "fixed": 26
     },
-    "1438394004": {
-        "created": 273,
-        "fixed": 150,
-        "in_progress": 21
+    "1431089406": {
+        "in_progress": 34,
+        "created": 277,
+        "fixed": 26
     },
-    "1438669444": {
-        "created": 271,
-        "fixed": 161,
-        "in_progress": 20
+    "1431423607": {
+        "in_progress": 34,
+        "created": 279,
+        "fixed": 27
     },
-    "1438944884": {
-        "created": 271,
-        "fixed": 163,
-        "in_progress": 21
-    },
-    "1439220324": {
-        "created": 271,
-        "fixed": 163,
-        "in_progress": 21
-    },
-    "1439495764": {
-        "created": 272,
-        "fixed": 164,
-        "in_progress": 20
-    },
-    "1439771204": {
-        "created": 276,
-        "fixed": 168,
-        "in_progress": 21
-    },
-    "1440046644": {
+    "1431757808": {
+        "in_progress": 34,
         "created": 284,
-        "fixed": 168,
-        "in_progress": 23
+        "fixed": 28
     },
-    "1440322085": {
-        "created": 286,
-        "fixed": 170,
-        "in_progress": 25
+    "1432092008": {
+        "in_progress": 34,
+        "created": 289,
+        "fixed": 28
     },
-    "1440597525": {
-        "created": 285,
-        "fixed": 177,
-        "in_progress": 24
+    "1432426209": {
+        "in_progress": 34,
+        "created": 291,
+        "fixed": 32
     },
-    "1440872965": {
-        "created": 285,
-        "fixed": 179,
-        "in_progress": 24
+    "1432760410": {
+        "in_progress": 33,
+        "created": 300,
+        "fixed": 46
     },
-    "1441148405": {
-        "created": 282,
-        "fixed": 180,
-        "in_progress": 26
+    "1433094611": {
+        "in_progress": 37,
+        "created": 303,
+        "fixed": 46
     },
-    "1441423845": {
-        "created": 285,
-        "fixed": 185,
-        "in_progress": 24
+    "1433428812": {
+        "in_progress": 39,
+        "created": 310,
+        "fixed": 61
     },
-    "1441699285": {
-        "fixed": 192,
-        "created": 283,
-        "in_progress": 22
+    "1433763013": {
+        "in_progress": 42,
+        "created": 312,
+        "fixed": 85
     },
-    "1441974725": {
-        "fixed": 194,
-        "created": 286,
-        "in_progress": 21
+    "1434097214": {
+        "in_progress": 43,
+        "created": 315,
+        "fixed": 92
     },
-    "1442250165": {
-        "fixed": 196,
-        "created": 284,
-        "in_progress": 22
+    "1434431415": {
+        "in_progress": 44,
+        "created": 312,
+        "fixed": 98
     },
-    "1442525606": {
-        "fixed": 214,
-        "created": 273,
-        "in_progress": 26
+    "1434765616": {
+        "in_progress": 42,
+        "created": 318,
+        "fixed": 109
+    },
+    "1435099817": {
+        "in_progress": 46,
+        "created": 326,
+        "fixed": 120
+    },
+    "1435434017": {
+        "in_progress": 43,
+        "created": 332,
+        "fixed": 124
+    },
+    "1435768218": {
+        "in_progress": 47,
+        "created": 338,
+        "fixed": 127
+    },
+    "1436102419": {
+        "in_progress": 51,
+        "created": 331,
+        "fixed": 131
+    },
+    "1436436620": {
+        "in_progress": 51,
+        "created": 332,
+        "fixed": 132
+    },
+    "1436770821": {
+        "in_progress": 51,
+        "created": 335,
+        "fixed": 133
+    },
+    "1437105022": {
+        "in_progress": 55,
+        "created": 337,
+        "fixed": 138
+    },
+    "1437439223": {
+        "in_progress": 55,
+        "created": 339,
+        "fixed": 144
+    },
+    "1437773424": {
+        "in_progress": 56,
+        "created": 340,
+        "fixed": 144
+    },
+    "1438107625": {
+        "in_progress": 57,
+        "created": 341,
+        "fixed": 145
+    },
+    "1438441826": {
+        "in_progress": 59,
+        "created": 342,
+        "fixed": 148
+    },
+    "1438776026": {
+        "in_progress": 58,
+        "created": 337,
+        "fixed": 161
+    },
+    "1439110227": {
+        "in_progress": 61,
+        "created": 338,
+        "fixed": 161
+    },
+    "1439444428": {
+        "in_progress": 60,
+        "created": 340,
+        "fixed": 162
+    },
+    "1439778629": {
+        "in_progress": 62,
+        "created": 344,
+        "fixed": 166
+    },
+    "1440112830": {
+        "in_progress": 65,
+        "created": 353,
+        "fixed": 167
+    },
+    "1440447031": {
+        "in_progress": 65,
+        "created": 352,
+        "fixed": 178
+    },
+    "1440781232": {
+        "in_progress": 70,
+        "created": 351,
+        "fixed": 179
+    },
+    "1441115433": {
+        "in_progress": 71,
+        "created": 349,
+        "fixed": 181
+    },
+    "1441449634": {
+        "in_progress": 72,
+        "created": 351,
+        "fixed": 190
+    },
+    "1441783835": {
+        "in_progress": 69,
+        "fixed": 200,
+        "created": 349
+    },
+    "1442118035": {
+        "in_progress": 72,
+        "fixed": 203,
+        "created": 347
+    },
+    "1442452236": {
+        "in_progress": 75,
+        "fixed": 221,
+        "created": 335
+    },
+    "1442786437": {
+        "in_progress": 77,
+        "fixed": 223,
+        "created": 346
+    },
+    "1443120638": {
+        "in_progress": 78,
+        "fixed": 236,
+        "created": 337
+    },
+    "1443454839": {
+        "in_progress": 79,
+        "fixed": 239,
+        "created": 336
+    },
+    "1443789040": {
+        "in_progress": 78,
+        "fixed": 243,
+        "created": 335
+    },
+    "1444123241": {
+        "in_progress": 77,
+        "fixed": 250,
+        "created": 331
+    },
+    "1444457442": {
+        "in_progress": 78,
+        "fixed": 253,
+        "created": 335
+    },
+    "1444791643": {
+        "in_progress": 76,
+        "fixed": 258,
+        "created": 334
+    },
+    "1445125844": {
+        "in_progress": 76,
+        "fixed": 264,
+        "created": 331
+    },
+    "1445460045": {
+        "in_progress": 73,
+        "fixed": 270,
+        "created": 337
     }
 }
