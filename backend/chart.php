@@ -12,8 +12,7 @@ $apiBaseUrl = 'https://api.launchpad.net/beta/';
 // Project name
 $targetName = 'elementary';
 // Milestone name
-// $milestoneName = 'freya-beta2';
-$milestoneName = 'loki-beta1';
+$milestoneName = 'loki-alpha1';
 
 // Build a chart from a date
 // Set to null to get data for the whole milestone
