@@ -2,3 +2,4 @@
 *~
 backend/config.php
 .vagrant/
+backend/chart.json
