@@ -442,7 +442,6 @@ See the difference? We just added `_()` around the string! Well, that was easy!
         add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
         add_subdirectory (po)
 
-
 3. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
 
         include (Translations)
@@ -451,17 +450,17 @@ See the difference? We just added `_()` around the string! Well, that was easy!
             ../src/
         )
 
-4. Don't forget to add this new directory and it's contents to bzr
+4. On your build directory execute the following commands:
 
-    ```bash 
-    bzr add po/
-    ```
-
-5. On your build directory execute the following commands:
- 
     ```bash
     cmake -DCMAKE_INSTALL_PREFIX=/usr ../
     make pot
+    ```
+
+5. Don't forget to add this new directory and it's contents to bzr
+
+    ```bash 
+    bzr add po/
     ```
 
 That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
