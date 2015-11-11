@@ -377,7 +377,7 @@ The next thing we need is a build system. The build system that we're going to b
 
         # tell cmake what to call the executable we just made
         add_executable(${EXEC_NAME} ${VALA_C})
-
+        
         # install the binaries we just made
         install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
@@ -421,6 +421,26 @@ Let's review what all we've learned to do:
 * Set up a CMake build system that contains all the rules for building our app and installing it cleanly
 
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
+
+# Adding Translations {#Adding-Translations}
+Now that you've learn about cmake, the next step is to make your app able to be translated to diferent languages. The first thing you need to know is how to convert strings in your code into translatable strings.
+
+        stdout.printf ("Normal String");
+        stdout.printf (_("Translatable string!"));
+    
+See the difference? We just added  _() arround the string! Well, that was easy! Next your need to create a directory named "po" on the root folder of your proyect. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
+
+        # Traslation files
+        add_subdirectory (po)
+
+and finaly, on your build directory execute the folowing commads: 
+    
+    ```bash
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    make pot
+    ```
+    
+That's it! CMake will automatically add all the string marked with _() into a .pot template file, and a file for each avalible language where you'll place the translatable strings. 
 
 # Packaging {#packaging}
 
