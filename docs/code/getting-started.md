@@ -423,24 +423,27 @@ Let's review what all we've learned to do:
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learn about cmake, the next step is to make your app able to be translated to diferent languages. The first thing you need to know is how to convert strings in your code into translatable strings.
+Now that you've learn about cmake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings.
 
         stdout.printf ("Normal String");
         stdout.printf (_("Translatable string!"));
-    
-See the difference? We just added  _() arround the string! Well, that was easy! Next your need to create a directory named "po" on the root folder of your proyect. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
-        # Traslation files
+
+See the difference? We just added _() around the string! Well, that was easy! Next you need to create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
+
+        # Translation files
         add_subdirectory (po)
 
-and finaly, on your build directory execute the folowing commads: 
-    
+
+and finally, on your build directory execute the following commands:
+ 
     ```bash
     cmake -DCMAKE_INSTALL_PREFIX=/usr ../
     make pot
     ```
-    
-That's it! CMake will automatically add all the string marked with _() into a .pot template file, and a file for each avalible language where you'll place the translatable strings. 
+
+
+That's it! CMake will automatically add all the string marked with _() into a .pot template file, and a file for each available language where you'll place the translatable strings.
 
 # Packaging {#packaging}
 
