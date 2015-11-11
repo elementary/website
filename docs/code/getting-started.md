@@ -427,13 +427,25 @@ Now that you've learn about cmake, the next step is to make your app able to be 
 
         stdout.printf ("Normal String");
         stdout.printf (_("Translatable string!"));
-
+        
+        string normal = "Another normal string";
+        string translated = _(Another translatable string);
 
 See the difference? We just added _() around the string! Well, that was easy! Next you need to create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
         # Translation files
+        set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
+        add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
         add_subdirectory (po)
 
+
+Now, inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+
+        include (Translations)
+            add_translations_directory(${GETTEXT_PACKAGE})
+            add_translations_catalog(${GETTEXT_PACKAGE}
+            ../src/
+        )
 
 and finally, on your build directory execute the following commands:
  
@@ -441,7 +453,6 @@ and finally, on your build directory execute the following commands:
     cmake -DCMAKE_INSTALL_PREFIX=/usr ../
     make pot
     ```
-
 
 That's it! CMake will automatically add all the string marked with _() into a .pot template file, and a file for each available language where you'll place the translatable strings.
 
