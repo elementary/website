@@ -423,15 +423,19 @@ Let's review what all we've learned to do:
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings.
+Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. 
+
+1. The first thing you need to know is how to convert strings in your code into translatable strings.
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
         
         string normal = "Another non-translatable string";
-        string translated = _(Another translatable string);
+        string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy! Next you need to create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
+See the difference? We just added `_()` around the string! Well, that was easy!
+
+2. Create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
         # Translation files
         set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
@@ -439,7 +443,7 @@ See the difference? We just added `_()` around the string! Well, that was easy! 
         add_subdirectory (po)
 
 
-Now, inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+3. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
 
         include (Translations)
             add_translations_directory(${GETTEXT_PACKAGE})
@@ -447,13 +451,13 @@ Now, inside of your po directory you will need to create another CMakeLists.txt 
             ../src/
         )
 
-Don't forget to add this new directory and it's contents to bzr
+4. Don't forget to add this new directory and it's contents to bzr
 
     ```bash 
     bzr add po/
     ```
 
-and finally, on your build directory execute the following commands:
+5. On your build directory execute the following commands:
  
     ```bash
     cmake -DCMAKE_INSTALL_PREFIX=/usr ../
