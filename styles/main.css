@@ -400,9 +400,26 @@ footer ul li a:focus {
     vertical-align: middle;
 }
 
+.column.third h3,
 .column.third p {
     text-align: center;
 }
+
+.column.third a {
+    color: inherit;
+}
+
+.column.third a:hover {
+    color: #08C;
+    fill: #08C;
+}
+
+.column.third .fa {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+}
+
 
 .column img {
     display: block;
