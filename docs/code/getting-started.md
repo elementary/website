@@ -423,15 +423,15 @@ Let's review what all we've learned to do:
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learn about cmake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings.
+Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings.
 
-        stdout.printf ("Normal String");
+        stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
         
-        string normal = "Another normal string";
+        string normal = "Another non-translatable string";
         string translated = _(Another translatable string);
 
-See the difference? We just added _() around the string! Well, that was easy! Next you need to create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
+See the difference? We just added `_()` around the string! Well, that was easy! Next you need to create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
         # Translation files
         set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
@@ -447,6 +447,12 @@ Now, inside of your po directory you will need to create another CMakeLists.txt 
             ../src/
         )
 
+Don't forget to add this new directory and it's contents to bzr
+
+    ```bash 
+    bzr add po/
+    ```
+
 and finally, on your build directory execute the following commands:
  
     ```bash
@@ -454,7 +460,7 @@ and finally, on your build directory execute the following commands:
     make pot
     ```
 
-That's it! CMake will automatically add all the string marked with _() into a .pot template file, and a file for each available language where you'll place the translatable strings.
+That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
 
 # Packaging {#packaging}
 
@@ -566,8 +572,8 @@ Remember that Button and Label accepted an argument (a String) in the creation m
 
 Let’s add some stuff to the Grid:
 
-    grid.add (new Gtk.Label ("Label 1"));
-    grid.add (new Gtk.Label ("Label 2"));
+    grid.add (new Gtk.Label (_("Label 1")));
+    grid.add (new Gtk.Label (_("Label 2")));
 
 Super easy stuff, right? We can add the grid to our window using the same method that we just used to add widgets to our grid:
 
@@ -598,7 +604,7 @@ This time when we created our grid, we gave it another property: `row_spacing`. 
 Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `this.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
-        button.label = "Hello World!";
+        button.label = _("Hello World!");
         button.sensitive = false;
     });
 
@@ -612,11 +618,11 @@ While we can use `Gtk.Grid` simply to create single row or single column layouts
     layout.column_spacing = 6;
     layout.row_spacing = 6;
 
-    var hello_button = new Gtk.Button.with_label ("Say Hello");
+    var hello_button = new Gtk.Button.with_label (_("Say Hello"));
     var hello_label = new Gtk.Label (null);
 
-    var rotate_button = new Gtk.Button.with_label ("Rotate");
-    var rotate_label = new Gtk.Label ("Horizontal");
+    var rotate_button = new Gtk.Button.with_label (_("Rotate"));
+    var rotate_label = new Gtk.Label (_("Horizontal"));
 
 Make sure to give the Grid, Buttons, and Labels unique names that you’ll remember. It’s best practice to use descriptive names so that people who are unfamiliar with your code can understand what a widget is for without having to know your app inside and out.
 
@@ -641,13 +647,13 @@ Notice that the attach method takes 5 arguments:
 You can also use `attach_next_to` to place a widget next to another one on [all four sides](http://references.valadoc.org/#!api=gtk+-3.0/Gtk.PositionType). Don’t forget to add the functionality associated with our buttons:
 
     hello_button.clicked.connect (() => {
-        hello_label.label = "Hello World!";
+        hello_label.label = _("Hello World!");
         hello_button.sensitive = false;
     });
 
     rotate_button.clicked.connect (() => {
         rotate_label.angle = 90;
-        rotate_label.label = "Vertical";
+        rotate_label.label = _("Vertical");
         rotate_button.sensitive = false;
     });
 
