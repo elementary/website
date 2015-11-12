@@ -26,6 +26,11 @@ $timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
 
 // CONFIG ENDS HERE
 
+if ( !is_writable('./chart.json') ) {
+	log_info('Error: "chart.json" is not writable.');
+	exit(1);
+}
+
 date_default_timezone_set('UTC');
 
 header('Content-Type: text/plain');
