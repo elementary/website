@@ -377,7 +377,7 @@ The next thing we need is a build system. The build system that we're going to b
 
         # tell cmake what to call the executable we just made
         add_executable(${EXEC_NAME} ${VALA_C})
-        
+
         # install the binaries we just made
         install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
@@ -426,6 +426,7 @@ That's a lot! You're well on your way to becoming a bonified app developer for e
 Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. 
 
 The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
+
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
         
@@ -434,7 +435,7 @@ The first thing you need to know is how to convert strings in your code into tra
 
 See the difference? We just added `_()` around the string! Well, that was easy! 
 
-1.- Go back to your project and make all your strings translatable by adding `_()`
+1. Go back to your project and make all your strings translatable by adding `_()`
 
 2. Create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
