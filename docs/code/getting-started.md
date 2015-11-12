@@ -425,15 +425,16 @@ That's a lot! You're well on your way to becoming a bonified app developer for e
 # Adding Translations {#Adding-Translations}
 Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. 
 
-1. The first thing you need to know is how to convert strings in your code into translatable strings.
-
+The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
         
         string normal = "Another non-translatable string";
         string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy!
+See the difference? We just added `_()` around the string! Well, that was easy! 
+
+1.- Go back to your project and make all your strings translatable by adding `_()`
 
 2. Create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
@@ -461,6 +462,8 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
     ```bash 
     bzr add po/
+    bzr commit -m "Added translation files"
+    bzr push
     ```
 
 That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
