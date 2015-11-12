@@ -63,14 +63,22 @@
 </div>
 
 <div class="row">
-    <a class="column half" href="https://elementaryos.stackexchange.com" target="_blank">
-        <h3 class="read-more"><i class="fa fa-stack-exchange"></i> StackExchange</h3>
-        <p>Has your question been asked already? Check out answers to some of the most common questions we get.</p>
+    <a class="column third" href="/docs/installation">
+        <i class="fa fa-download"></i>
+        <h3>Installation</h3>
+        <p>Get help installing elementary OS with our step-by-step guide.</p>
     </a>
 
-    <a class="column half" href="/docs/installation">
-        <h3><i class="fa fa-download"></i> Installation</h3>
-        <p>Get help installing elementary OS on your computer by following our step-by-step guide.</p>
+    <a class="column third" href="/docs/learning-the-basics">
+        <i class="fa fa-book"></i>
+        <h3>Learning the Basics</h3>
+        <p>Walk through the desktop, multi-tasking, keyboard shortcuts and more.</p>
+    </a>
+
+    <a class="column third" href="https://elementaryos.stackexchange.com" target="_blank">
+        <i class="fa fa-stack-exchange"></i>
+        <h3 class="read-more">StackExchange</h3>
+        <p>Check out answers to some of the most common questions we get.</p>
     </a>
 </div>
 
