@@ -423,9 +423,7 @@ Let's review what all we've learned to do:
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. 
-
-The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
+Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
