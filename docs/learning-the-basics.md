@@ -8,7 +8,7 @@ The elementary OS desktop is very simple and easy to learn. It consists of two e
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.
 
-![The Panel](images/docs/learning-the-basics/panel.png)
+![The Panel](../images/docs/learning-the-basics/panel.png)
 
 #### Applications {#applications}
 On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view. Lastly, you can search the launcher by typing at any time.
@@ -19,7 +19,7 @@ On the right side of the panel are icons called Indicators. These tell you of th
 ### The Dock {#the-dock}
 At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.
 
-![The Dock](images/docs/learning-the-basics/dock.png)
+![The Dock](../images/docs/learning-the-basics/dock.png)
 
 The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from **Applications** on the panel or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
 
@@ -36,7 +36,7 @@ When you open an app, its window appears on the desktop. Each app typically has 
 ### Window Buttons {#window-buttons}
 An app's window buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not. You can move an app's window around the desktop by dragging empty space between the window buttons.
 
-![](images/docs/learning-the-basics/windows.png)
+![](../images/docs/learning-the-basics/windows.png)
 
 ### Toolbar {#toolbar}
 Many apps have a toolbar at the top of the app. This area contains common actions or navigation items for the app. You can move an app's window around by dragging any blank area of a toolbar.
@@ -89,7 +89,7 @@ _Note: Some software may not be available from the Software Center. While we don
 
 elementary OS comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
-![](images/docs/learning-the-basics/switchboard.png)
+![](../images/docs/learning-the-basics/switchboard.png)
 
 ### Search {#search}
 You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.
