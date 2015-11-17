@@ -34,6 +34,11 @@ function log_info($msg) { // Basic logger
 	echo $msg."\n";
 }
 
+if ( !is_writable('./chart.json') ) {
+	log_info('Error: File `/backend/chart.json` is not writable.');
+	exit(1);
+}
+
 $apiParams = 'ws.op=searchTasks';
 $apiEndpoint = $apiBaseUrl.'/'.$targetName.'/+milestone/'.$milestoneName.'?'.$apiParams;
 
