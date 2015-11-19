@@ -47,7 +47,7 @@ Templating System
 Code Style
 ==========
 
-It's important we keep the code style consistent across collaborators and editors. We are following the official [elementary code style](http://elementaryos.org/docs/code/code-style) guidelines for this project.
+It's important we keep the code style consistent across collaborators and editors. We are following the official [elementary code style](https://elementary.io/docs/code/reference#code-style) guidelines for this project.
 
 For quick reference:
 * 4 spaces for indentation (no tabs)
