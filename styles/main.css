@@ -174,10 +174,6 @@ img.h1 {
     padding-left: 10px;
 }
 
-.read-more+.read-more {
-    display: block;
-}
-
 .text-left {
     text-align: left;
 }
@@ -443,6 +439,10 @@ footer ul li a:focus {
     margin: 16px;
 }
 
+.grid .grid {
+    padding: 0;
+}
+
 @media only screen and (min-width: 640px) {
 
     .grid .half {
@@ -477,13 +477,6 @@ footer ul li a:focus {
         text-align: center;
     }
 
-}
-
-@media only screen and (min-width: 900px) {
-    .two-thirds .read-more+.read-more {
-        margin-left: 64px;
-        display: initial;
-    }
 }
 
 .third h3,
