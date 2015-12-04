@@ -42,28 +42,16 @@
 </div>
 <div class="grid">
     <div class="half">
-        <img src="images/developer/default.svg">
-        <h2>Champlain</h2>
-        <p>Maps for apps. It supports numerous free map sources such as OpenStreetMap, OpenCycleMap, OpenAerialMap and Maps-For-Free.</p>
-        <p><a class="read-more" href="https://wiki.gnome.org/Projects/libchamplain">Learn More</a></p>
-    </div>
-    <div class="half">
         <img src="images/developer/contractor.svg">
         <h2>Contractor</h2>
         <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
-        <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Learn More</a></p>
-    </div>
-    <div class="half">
-        <img src="images/developer/default.svg">
-        <h2>GeoClue</h2>
-        <p>Location services for applications, based on Wi-Fi access points, GPS, 3G modems and GeoIP.</p>
-        <p><a class="read-more" href="http://www.freedesktop.org/wiki/Software/GeoClue/">Learn More</a></p>
+        <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Documentation for Contractor</a></p>
     </div>
     <div class="half">
         <img src="images/developer/granite.svg">
         <h2>Granite</h2>
         <p>The foundation library for elementary OS apps. Among other things, it provides complex widgets like DynamicNotebook, utilities, and convenience functions.</p>
-        <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Learn More</a></p>
+        <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Documentation for Granite</a></p>
     </div>
 </div>
 <section class="grey">
