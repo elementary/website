@@ -27,7 +27,7 @@
         </a></div>
         <div class="column third"><a href="docs/code/reference">
             <i class="fa  fa-code"></i>
-            <h3>References</h3>
+            <h3>Reference</h3>
             <p>Get more info about code style, reporting issues, and proposing design changes.</p>
         </a></div>
     </div>
