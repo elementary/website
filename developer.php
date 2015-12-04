@@ -11,7 +11,7 @@
     <img src="images/developer/developer-sketch.svg">
     <h1>Develop Your Ideas Into Code</h1>
     <h4>Learn to design, develop, and publish apps for elementary OS</h4>
-    !<--<a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>-->
+    <!--<a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>-->
 </section>
 <section class="body">
     <div class="row">
