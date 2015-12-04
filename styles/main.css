@@ -174,16 +174,8 @@ img.h1 {
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 899px) {
-    .read-more+.read-more {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .read-more+.read-more {
-        margin-left: 64px;
-    }
+.read-more+.read-more {
+    display: block;
 }
 
 .text-left {
@@ -485,6 +477,13 @@ footer ul li a:focus {
         text-align: center;
     }
 
+}
+
+@media only screen and (min-width: 900px) {
+    .two-thirds .read-more+.read-more {
+        margin-left: 64px;
+        display: initial;
+    }
 }
 
 .third h3,
