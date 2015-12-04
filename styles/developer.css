@@ -5,10 +5,12 @@
 
 html,
 body {
-    background-color: #226bb3;
-    background-image: url("../images/developer/grid-pattern.png");
-    color: white;
-    fill: white;
+    background-color: #3A416F;
+}
+
+nav {
+    color: #fff;
+    fill: #fff;
 }
 
 nav > ul > li > a:focus {
@@ -16,110 +18,52 @@ nav > ul > li > a:focus {
     fill: #1f1f1f;
 }
 
+footer {
+    background-color: #fff;
+}
+
 footer ul li a:focus i.fa {
     color: #1f1f1f;
     text-shadow: 0 1px 6px #fff;
 }
 
-.row {
-    text-align: left;
+/*********
+* Button *
+*********/
+
+.dark button.suggested-action,
+.dark .button.suggested-action {
+    border: none;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 1px 0 0 rgba(0, 0, 0, 0.15);
 }
 
-.developer-sum {
-    background-image: url("../images/developer/developer-sketch.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-bottom: 120px;
+.dark button.suggested-action:active,
+.dark .button.suggested-action:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(0, 0, 0, 0.25),
+                0 2px 0 0 rgba(255, 255, 255, 0.10);
 }
 
-@media (min-width: 940px) {
+/*******
+* Hero *
+*******/
 
-    .developer-sum {
-        padding-bottom: 200px;
-    }
-
+section.hero {
+    color: #fff;
+    text-align: center;
+    padding: 10% 0;
+    max-width: 100%;
 }
 
-@media (min-width: 444px) {
-
-    .row .column.half {
-        margin: 32px 1.5%;
-        max-width: 600px;
-        width: auto;
-    }
-
-    .column + .column {
-        margin-left: 0;
-    }
-
+section.hero .button.suggested-action{
+    max-width: 100%;
 }
 
-@media (min-width: 940px) {
-
-    .row .column.half {
-        width: 46%;
-    }
-
-}
-
-.dev-section a {
-    color: inherit;
-    display: inline-block;
-    padding: 16px;
-    transition: all 200ms;
-}
-
-.dev-section a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.dev-section {
-    background-position: center top;
-    background-repeat: no-repeat;
-    border: dashed rgba(255, 255, 255, 0.6);
-    border-width: 0 0 1px 1px;
-    margin-top: 2em;
-    padding-top: 4em;
-}
-
-@media (min-width: 380px) {
-
-    .dev-section {
-        background-position: 30px center;
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    .dev-section a {
-        padding-left: 128px;
-    }
-
-}
-
-@media (max-width: 1176px) {
-
-    .dev-section {
-        border-left-width: 0;
-    }
-
-}
-
-.dev-section:last-child {
-    border-bottom-width: 0;
-}
-
-#dev-section-1 {
-    background-image: url("../images/developer/dev-design.png");
-}
-
-#dev-section-2 {
-    background-image: url("../images/developer/dev-code.png");
-}
-
-#dev-section-3 {
-    background-image: url("../images/developer/dev-manage.png");
-}
-
-#dev-section-4 {
-    background-image: url("../images/developer/dev-dist.png");
+section.body {
+    background-color: #fff;
 }
