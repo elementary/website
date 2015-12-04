@@ -58,8 +58,12 @@ section.hero .button.suggested-action{
 }
 
 /*******
-* Grey *
+* Other *
 *******/
+
+.half {
+    text-align: left;
+}
 
 footer,
 .grey {
