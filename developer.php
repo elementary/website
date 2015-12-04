@@ -6,39 +6,32 @@
     include $template['header'];
     include $template['alert'];
 ?>
-            <div class="row">
-                <div class="column half developer-sum">
-                    <h1>Develop</h1>
-                    <h2>Your ideas into code</h2>
-                    <p>Built on the best open source technology, elementary is an extremely developer-friendly platform. We provide existing and prospective developers the best available resources and documentation to ensure that your apps really shine.</p>
-                </div>
-                <div class="column half developer-sections">
-                    <div id="dev-section-1" class="dev-section">
-                        <a href="/docs/human-interface-guidelines" title="Design">
-                            <h5>Design</h5>
-                            <p>Read the Human Interface Guidelines (HIG) and learn how to make your app a first-class experience.</p>
-                        </a>
-                    </div>
-                    <div id="dev-section-2" class="dev-section">
-                        <a href="/docs/code" title="Code">
-                            <h5>Code</h5>
-                            <p>Learn about our Application Programming Interface (APIs), and discover all the built-in technologies available to you.</p>
-                        </a>
-                    </div>
-                    <div id="dev-section-3" class="dev-section">
-                        <a href="https://launchpad.net/elementary" title="Manage" target="_blank">
-                            <h5>Manage</h5>
-                            <p>Use Launchpad to manage bug reports and collaborate with other developers.</p>
-                        </a>
-                    </div>
-                    <div id="dev-section-4" class="dev-section">
-                        <a href="http://developer.ubuntu.com/publish" title="Distribute" target="_blank">
-                            <h5>Distribute</h5>
-                            <p>Set up an Ubuntu My Apps account and publish your apps into the Software Center.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+<section class="hero dark">
+    <img src="images/developer/developer-sketch.svg">
+    <h1>Develop Your Ideas Into Code</h1>
+    <h4>Set up an Ubuntu MyApps account and publish your apps into the Software Center</h4>
+    <a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>
+</section>
+<section class="body">
+    <div class="row">
+        <div class="column third"><a href="docs/code/getting-started">
+            <i class="fa fa-book"></i>
+            <h3>Documentation</h3>
+            <p>Get a basic app running, built, and ready for distribution with our Getting Started guide.</p>
+        </a></div>
+        <div class="column third"><a href="docs/human-interface-guidelines">
+            <i class="fa fa-pencil"></i>
+            <h3>Design</h3>
+            <p>Learn about the design principles that make up apps on elementary OS.</p>
+        </a></div>
+        <div class="column third"><a href="docs/code/reference">
+            <i class="fa  fa-code"></i>
+            <h3>Reference</h3>
+            <p>Get more info about code style, reporting issues, and proposing design changes.</p>
+        </a></div>
+    </div>
+</section>
 <?php
     include $template['footer'];
 ?>
