@@ -95,6 +95,7 @@ h5 {
 
 p {
     text-align: left;
+    line-height: 1.65;
 }
 
 p.small-label {
@@ -381,6 +382,7 @@ footer ul li a:focus {
 .column {
     display: inline-block;
     max-width: 100%;
+        vertical-align: top;
 }
 
 .column.third {
@@ -392,18 +394,16 @@ footer ul li a:focus {
 
     .row .column.half {
         margin: 32px 32px 0;
-        vertical-align: top;
         width: calc(50% - 88px);
     }
 
     .column.third {
         margin: 32px 32px 0;
-        vertical-align: top;
         width: calc(33% - 88px);
     }
 
     .column + .column {
-        margin-left: 24px !important;
+        margin-left: 16px !important;
     }
 
 }
@@ -533,8 +533,7 @@ footer ul li a:focus {
 }
 
 .column.alert {
-    max-width: 600px;
-    vertical-align: top;
+    max-width: 80%;
 }
 
 .row.alert > .column.alert {

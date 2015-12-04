@@ -88,16 +88,3 @@ a.column h3 {
     line-height: 24px;
     padding: 16px 12px 0 12px;
 }
-
-
-/***************************
-* Larger-than-phone styles *
-***************************/
-
-@media (min-width: 1164px) {
-
-    a.column h3 {
-        text-align: left;
-    }
-
-}

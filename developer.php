@@ -42,16 +42,24 @@
 </div>
 <div class="grid">
     <div class="half">
-        <img src="images/developer/contractor.svg">
-        <h2>Contractor</h2>
-        <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
-        <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Documentation for Contractor</a></p>
+        <div class="alert column">
+            <img src="images/developer/contractor.svg">
+        </div>
+        <div class="alert column">
+            <h2>Contractor</h2>
+            <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Documentation for Contractor</a></p>
+        </div>
     </div>
     <div class="half">
-        <img src="images/developer/granite.svg">
-        <h2>Granite</h2>
-        <p>The foundation library for elementary OS apps. Among other things, it provides complex widgets like DynamicNotebook, utilities, and convenience functions.</p>
-        <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Documentation for Granite</a></p>
+        <div class="alert column">
+            <img src="images/developer/granite.svg">
+        </div>
+        <div class="alert column">
+            <h2>Granite</h2>
+            <p>The foundation library for elementary OS apps. Among other things, it provides complex widgets like DynamicNotebook, utilities, and convenience functions.</p>
+            <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Documentation for Granite</a></p>
+        </div>
     </div>
 </div>
 <section class="grey">
