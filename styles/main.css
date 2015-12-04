@@ -400,27 +400,6 @@ footer ul li a:focus {
     vertical-align: middle;
 }
 
-.column.third h3,
-.column.third p {
-    text-align: center;
-}
-
-.column.third a {
-    color: inherit;
-}
-
-.column.third a:hover {
-    color: #08C;
-    fill: #08C;
-}
-
-.column.third .fa {
-    font-size: 32px;
-    text-align: center;
-    display: block;
-}
-
-
 .column img {
     display: block;
     margin-left: auto;
@@ -472,6 +451,49 @@ footer ul li a:focus {
         text-align: left;
     }
 
+
+    .grid .third {
+        width: calc(33.33% - 32px);
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 16px;
+    }
+
+    .grid .third:last-child {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
+    .grid .two-thirds {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(66% - 48px);
+    }
+
+    .grid *:only-child p {
+        text-align: center;
+    }
+
+}
+
+.third h3,
+.third p {
+    text-align: center;
+}
+
+.third a {
+    color: inherit;
+}
+
+.third a:hover {
+    color: #08C;
+    fill: #08C;
+}
+
+.third .fa {
+    font-size: 32px;
+    text-align: center;
+    display: block;
 }
 
 /*********

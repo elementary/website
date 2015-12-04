@@ -56,3 +56,12 @@ section.hero {
 section.hero .button.suggested-action{
     max-width: 100%;
 }
+
+/*******
+* Grey *
+*******/
+
+footer,
+.grey {
+    background-color: #fafafa;
+}
