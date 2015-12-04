@@ -545,7 +545,7 @@ footer ul li a:focus {
     text-align: left;
 }
 
-.column.alert i.fa {
+.row .column.alert i.fa {
     font-size: 64px;
     margin: 8px 0 0;
 }

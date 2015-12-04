@@ -48,6 +48,7 @@
         <div class="alert column">
             <h2>Contractor</h2>
             <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
+            <p><a class="read-more" href="docs/human-interface-guidelines#contractor">HIG for Contractor</a></p>
             <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Reference for Contractor</a></p>
         </div>
     </div>
