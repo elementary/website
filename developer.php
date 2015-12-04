@@ -8,7 +8,7 @@
 ?>
 
 <section class="hero dark">
-    <img src="../images/developer/developer-sketch.svg">
+    <img src="images/developer/developer-sketch.svg">
     <h1>Develop Your Ideas Into Code</h1>
     <h4>Set up an Ubuntu MyApps account and publish your apps into the Software Center</h4>
     <a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>
