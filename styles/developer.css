@@ -61,10 +61,6 @@ section.hero .button.suggested-action{
 * Other *
 *******/
 
-.half {
-    text-align: left;
-}
-
 @media only screen and (min-width: 640px) {
     .grid .grid .half {
         text-align: center;

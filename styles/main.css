@@ -533,7 +533,7 @@ footer ul li a:focus {
 }
 
 .column.alert {
-    max-width: 80%;
+    max-width: calc(100% - 70px);
 }
 
 .row.alert > .column.alert {
