@@ -30,6 +30,14 @@
         <p>Get more info about code style, reporting issues, and proposing design changes.</p>
     </a></div>
 </section>
+<div class="grid">
+<hr/>
+    <div class="two-thirds">
+        <image src="images/developer/logo.svg">
+        <h1>It's a Brave New World</h1>
+        <h4>elementary OS Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.26</h4>
+    </div>
+</div>
 <section class="grey">
     <div class="grid">
         <div class="two-thirds">
