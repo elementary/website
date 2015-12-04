@@ -3,12 +3,8 @@
 * This file is part of elementaryos.io *
 ***************************************/
 
-html,
-body {
-    background-color: #3A416F;
-}
-
 nav {
+    background-color: #3A416F;
     color: #fff;
     fill: #fff;
 }
@@ -16,10 +12,6 @@ nav {
 nav > ul > li > a:focus {
     color: #1f1f1f;
     fill: #1f1f1f;
-}
-
-footer {
-    background-color: #fff;
 }
 
 footer ul li a:focus i.fa {
@@ -54,6 +46,7 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
+    background-color: #3A416F;
     color: #fff;
     text-align: center;
     padding: 64px 0;
@@ -62,8 +55,4 @@ section.hero {
 
 section.hero .button.suggested-action{
     max-width: 100%;
-}
-
-section.body {
-    background-color: #fff;
 }
