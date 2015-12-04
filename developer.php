@@ -72,7 +72,7 @@
             <img src="images/developer/vala.svg">
             <h2>Vala. A Modern, Fast, Open Source Language.</h2>
             <p>Vala allows developers to write complex object-oriented code rapidly while maintaining a standard C API and ABI and keeping memory requirements low. Vala is syntactically similar to C# and includes several features such as: anonymous functions, signals, properties, generics, assisted memory management, exception handling, type inference, and foreach statements.</p>
-            <p><a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More About Vala</a></p>
+            <p><a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a><a class="read-more" href="http://valadoc.org/">Library Documentation for Vala</a></p>
         </div>
     </div>
 </section>
