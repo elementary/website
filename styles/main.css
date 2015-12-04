@@ -55,7 +55,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 300;
-    margin: 0 0 28px 0;
+    margin: 0 0 16px 0;
     padding: 0;
 }
 
@@ -450,7 +450,6 @@ footer ul li a:focus {
     .grid .half h2 {
         text-align: left;
     }
-
 
     .grid .third {
         width: calc(33.33% - 32px);

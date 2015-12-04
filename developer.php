@@ -31,11 +31,35 @@
     </a></div>
 </section>
 <div class="grid">
-<hr/>
+    <hr/>
+</div>
+<div class="grid">
     <div class="two-thirds">
         <image src="images/developer/logo.svg">
         <h1>It's a Brave New World</h1>
         <h4>elementary OS Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.26</h4>
+    </div>
+</div>
+<div class="grid">
+    <div class="half">
+        <h2>Champlain</h2>
+        <p>Maps for apps. It supports numerous free map sources such as OpenStreetMap, OpenCycleMap, OpenAerialMap and Maps for free.</p>
+        <p><a class="read-more" href="https://wiki.gnome.org/Projects/libchamplain">Learn More</a></p>
+    </div>
+    <div class="half">
+        <h2>Contractor</h2>
+        <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps</p>
+        <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Learn More</a></p>
+    </div>
+    <div class="half">
+        <h2>Folks</h2>
+        <p>Contact aggregation service, which combines contacts from multiple sources.</p>
+        <p><a class="read-more" href="https://wiki.gnome.org/Projects/Folks">Learn More</a></p>
+    </div>
+    <div class="half">
+        <h2>GeoClue</h2>
+        <p>Location services for applications, based on Wi-Fi access points, GPS, 3G modems and GeoIP.</p>
+        <p><a class="read-more" href="http://www.freedesktop.org/wiki/Software/GeoClue/">Learn More</a></p>
     </div>
 </div>
 <section class="grey">
