@@ -7,19 +7,6 @@ h1 {
     clear: both;
 }
 
-h1 svg {
-    display: inline;
-    height: 45px;
-    max-width: 100%;
-    position: relative;
-    top: 11px;
-    width: 310px;
-}
-
-h1 .logotype-svg {
-    fill: inherit;
-}
-
 a.column {
     color: inherit;
     transition: color 250ms ease-in-out;
