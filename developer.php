@@ -15,17 +15,17 @@
 </section>
 <section class="body">
     <div class="row">
-        <div class="column third"><a href="docs/code/getting-started" target="_blank">
+        <div class="column third"><a href="docs/code/getting-started">
             <i class="fa fa-book"></i>
             <h3>Documentation</h3>
             <p>Get a basic app running, built, and ready for distribution with our Getting Started guide.</p>
         </a></div>
-        <div class="column third"><a href="docs/human-interface-guidelines" target="_blank">
+        <div class="column third"><a href="docs/human-interface-guidelines">
             <i class="fa fa-pencil"></i>
             <h3>Design</h3>
             <p>Learn about the design principles that make up apps on elementary OS.</p>
         </a></div>
-        <div class="column third"><a href="https://plus.google.com/u/1/communities/104613975513761463450/stream/8b081f64-7175-4338-a052-28c56fd45d53" target="_blank">
+        <div class="column third"><a href="docs/code/reference">
             <i class="fa  fa-code"></i>
             <h3>References</h3>
             <p>Get more info about code style, reporting issues, and proposing design changes.</p>
