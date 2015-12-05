@@ -675,4 +675,41 @@ Let’s recap what we learned in this section:
 
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
+##Notifications  {#-Notifications}
+
+Notifications are simple ways to notify a user about the state of your app. First of all, make sure your application extends from either `Gtk.Application` if it's a graphical application, or from `GLib.Application`. This is because notifications may persist on the system, even after your application exists. By making your application extend from the Application class, you'll be able to re-launch it from a click of the notification.
+
+1. Create a new object from the Notification class. Just remeber: doing this won't actually send the notification just yet.
+
+``` Notification notify = new Notification ("Title of Your Notification"); ```
+
+2. Add the notification's body.
+
+``` notify.set_body ("Body of your notification"); ```
+
+3. finaly, when you actually want to send it, from your Gtk.Application subclass, use:
+
+``` send_notification (ID, notify);```
+
+Notice though that the send-notification method takes 2 arguments. The first argument is a string that will work as an ID. The ID argumment may be `null`, but sending a seccond notification with the same ID will replace the original, and having an ID gives you access to the withdraw_notification method
+
+###Example:
+
+    public class MyApp : Gtk.Application {
+    
+    	...
+    
+	    private void send_notification () {
+		    Notification notify = new Notification ("MyApp");
+		    notify.set_body (_("Done with sorting process"));
+		    this.send_notification ("Unique ID", notify);
+	    }
+
+	    private void remove_notification () {
+    		this.withdraw_notification ("Unique ID");
+	    }
+    } 
+
+
+
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
