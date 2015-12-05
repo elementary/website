@@ -37,7 +37,7 @@
     <div class="two-thirds">
         <image src="images/developer/logo.svg">
         <h1>Build for <?php include("./images/logotype.svg"); ?></h1>
-        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.26</h4>
+        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
     </div>
 </div>
 <div class="grid">
