@@ -7,19 +7,6 @@ h1 {
     clear: both;
 }
 
-h1 svg {
-    display: inline;
-    height: 45px;
-    max-width: 100%;
-    position: relative;
-    top: 11px;
-    width: 310px;
-}
-
-h1 .logotype-svg {
-    fill: inherit;
-}
-
 a.column {
     color: inherit;
     transition: color 250ms ease-in-out;
@@ -100,17 +87,4 @@ a.column h3 {
 .row.apps .app span {
     line-height: 24px;
     padding: 16px 12px 0 12px;
-}
-
-
-/***************************
-* Larger-than-phone styles *
-***************************/
-
-@media (min-width: 1164px) {
-
-    a.column h3 {
-        text-align: left;
-    }
-
 }

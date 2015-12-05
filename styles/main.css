@@ -44,6 +44,19 @@ h1 {
     margin-top: 0;
 }
 
+h1 svg {
+    display: inline;
+    height: 45px;
+    max-width: 100%;
+    position: relative;
+    top: 11px;
+    width: 310px;
+}
+
+h1 .logotype-svg {
+    fill: inherit;
+}
+
 @media (min-width: 966px) {
 
     h1 {
@@ -55,7 +68,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 300;
-    margin: 0 0 28px 0;
+    margin: 0 0 16px 0;
     padding: 0;
 }
 
@@ -82,6 +95,7 @@ h5 {
 
 p {
     text-align: left;
+    line-height: 1.65;
 }
 
 p.small-label {
@@ -368,6 +382,7 @@ footer ul li a:focus {
 .column {
     display: inline-block;
     max-width: 100%;
+        vertical-align: top;
 }
 
 .column.third {
@@ -379,18 +394,16 @@ footer ul li a:focus {
 
     .row .column.half {
         margin: 32px 32px 0;
-        vertical-align: top;
         width: calc(50% - 88px);
     }
 
     .column.third {
         margin: 32px 32px 0;
-        vertical-align: top;
         width: calc(33% - 88px);
     }
 
     .column + .column {
-        margin-left: 24px !important;
+        margin-left: 16px !important;
     }
 
 }
@@ -399,27 +412,6 @@ footer ul li a:focus {
     text-align: left;
     vertical-align: middle;
 }
-
-.column.third h3,
-.column.third p {
-    text-align: center;
-}
-
-.column.third a {
-    color: inherit;
-}
-
-.column.third a:hover {
-    color: #08C;
-    fill: #08C;
-}
-
-.column.third .fa {
-    font-size: 32px;
-    text-align: center;
-    display: block;
-}
-
 
 .column img {
     display: block;
@@ -460,6 +452,10 @@ footer ul li a:focus {
     margin: 16px;
 }
 
+.grid .grid {
+    padding: 0;
+}
+
 @media only screen and (min-width: 640px) {
 
     .grid .half {
@@ -472,6 +468,48 @@ footer ul li a:focus {
         text-align: left;
     }
 
+    .grid .third {
+        width: calc(33.33% - 32px);
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 16px;
+    }
+
+    .grid .third:last-child {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
+    .grid .two-thirds {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(66% - 48px);
+    }
+
+    .grid *:only-child p {
+        text-align: center;
+    }
+
+}
+
+.third h3,
+.third p {
+    text-align: center;
+}
+
+.third a {
+    color: inherit;
+}
+
+.third a:hover {
+    color: #08C;
+    fill: #08C;
+}
+
+.third .fa {
+    font-size: 32px;
+    text-align: center;
+    display: block;
 }
 
 /*********
@@ -495,8 +533,7 @@ footer ul li a:focus {
 }
 
 .column.alert {
-    max-width: 600px;
-    vertical-align: top;
+    max-width: calc(100% - 70px);
 }
 
 .row.alert > .column.alert {
@@ -508,7 +545,7 @@ footer ul li a:focus {
     text-align: left;
 }
 
-.column.alert i.fa {
+.row .column.alert i.fa {
     font-size: 64px;
     margin: 8px 0 0;
 }

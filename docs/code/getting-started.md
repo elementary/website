@@ -435,14 +435,14 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
 1. Go back to your project and make all your strings translatable by adding `_()`
 
-2. Create a directory named "po" on the root folder of your project. Then you have to add the following lines in the "CMakeLists.txt" file you created a moment ago:
+2. Add the following lines in the "CMakeLists.txt" file you created a moment ago:
 
         # Translation files
         set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
         add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
         add_subdirectory (po)
 
-3. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+3. Create a directory named "po" on the root folder of your project. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
 
         include (Translations)
             add_translations_directory(${GETTEXT_PACKAGE})
