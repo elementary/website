@@ -47,7 +47,7 @@
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
-            <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
+            <p>A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.</p>
             <p><a class="read-more" href="docs/human-interface-guidelines#contractor">HIG for Contractor</a></p>
             <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Reference for Contractor</a></p>
         </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="alert column">
             <h2>Granite</h2>
-            <p>The foundation library for elementary OS apps. Among other things, it provides complex widgets like DynamicNotebook, utilities, and convenience functions.</p>
+            <p>The foundation library for elementary OS apps. Provides powerful widgets like DynamicNotebook, utilities, convenience functions, and more.</p>
             <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Reference for Granite</a></p>
         </div>
     </div>
@@ -68,7 +68,7 @@
         <div class="two-thirds">
             <img src="images/developer/vala.svg">
             <h2>Vala. A Modern, Fast, Open Source Language.</h2>
-            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatability with standard C, has low memory requirements, and is purpose built for GObject. You name it, Vala's got it: anonymous functions, signals, properties, generics, assited memory management, exception handling, type inference, lambdas, and more.</p>
+            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatability with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assited memory management, exception handling, type inference, async/yield, and more.</p>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
