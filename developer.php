@@ -47,7 +47,7 @@
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
-            <p>A desktop-wide extension service that allows apps to use the exposed functionality of other apps.</p>
+            <p>A desktop-wide extension service that allows apps to use functionality exposed functionality by other apps — without prior coordination.</p>
             <p><a class="read-more" href="docs/human-interface-guidelines#contractor">HIG for Contractor</a></p>
             <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Reference for Contractor</a></p>
         </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="alert column">
             <h2>Granite</h2>
-            <p>The foundation library for elementary OS apps. Among other things, it provides complex widgets like DynamicNotebook, utilities, and convenience functions.</p>
+            <p>The foundation library for elementary OS apps. Provides powerful widgets like DynamicNotebook, utilities, convenience functions, and more.</p>
             <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Reference for Granite</a></p>
         </div>
     </div>
