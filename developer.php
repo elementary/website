@@ -101,4 +101,4 @@
 </section>
 <?php
     include $template['footer'];
-?>which allows one to connect to a database hidden behind a web server
+?>
