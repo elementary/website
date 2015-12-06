@@ -62,6 +62,26 @@
             <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Reference for Granite</a></p>
         </div>
     </div>
+    <div class="half">
+        <div class="alert column">
+            <img src="images/developer/gda.svg">
+        </div>
+        <div class="alert column">
+            <h2>GDA</h2>
+            <p>A wrapper like ODBC but with more features to access several database engines. Features a meta data extractor, comes with an SQL console application, relies on GLib, its API is easy to use. Supports SQLite (and SQLCipher), MySQL, PostgreSQL, MSAccess, Berkeley Db (and is SQL extension), Oracle and JDBC. There is also a special feature which allows one to connect to a database hidden behind a web server</p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
+        </div>
+    </div>
+    <div class="half">
+        <div class="alert column">
+            <img src="images/developer/soup.svg">
+        </div>
+        <div class="alert column">
+            <h2>Soup</h2>
+            <p>An HTTP client/server library. It uses GObjects and the glib main loop and also has a synchronous API, for use in threaded applications. Both asynchronous and synchronous APIs, Automatically caches connections, SSL Support, Proxy support (including authentication and SSL tunneling), Client support for Digest, NTLM, and Basic authentication, Server support for Digest and Basic authentication, Client and server support for XML-RPC</p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=libsoup-2.4/Soup">Reference for Soup</a></p>
+        </div>
+    </div>
 </div>
 <section class="grey">
     <div class="grid">
