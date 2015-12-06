@@ -68,7 +68,7 @@
         </div>
         <div class="alert column">
             <h2>GDA</h2>
-            <p>Simple, GLib-based database management. GDA features a metadata extractor, SQL console application, even connect to a database hidden behind a web server. Supports SQLite (and SQLCipher), MySQL, PostgreSQL, MSAccess, Berkeley Db, Oracle and JDBC.</p>
+            <p>Simple, GLib-based database management. It features a metadata extractor, SQL console application, even connect to a database hidden behind a web server. GDA supports all major database formats and can be extended to support others.</p>
             <p><a class="read-more" href="http://valadoc.org/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
         </div>
     </div>
