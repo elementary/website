@@ -78,8 +78,9 @@
         </div>
         <div class="alert column">
             <h2>Soup</h2>
-            <p>An HTTP client/server library with both asynchronous and synchronous APIs. Automatically caches connections, SSL Support, Proxy support (including authentication and SSL tunneling), Client support for Digest, NTLM, and Basic authentication, Server support for Digest and Basic authentication, and both client and server support for XML-RPC</p>
+            <p>An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib!</p>
             <p><a class="read-more" href="http://valadoc.org/#!api=libsoup-2.4/Soup">Reference for Soup</a></p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=json-glib-1.0/Json">Reference for JSON-GLib</a></p>
         </div>
     </div>
 </div>
