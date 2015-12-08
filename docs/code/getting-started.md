@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Bazaar revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Luna or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Freya or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## Launchpad {#launchpad}
 
@@ -513,7 +513,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Maintainer: Your Name <you@emailaddress.com>
         Build-Depends: cmake (>= 2.8),
                        debhelper (>= 8.0.0),
-                       valac-0.16 | valac (>= 0.16)
+                       valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
 
         Package: hello-packaging
@@ -542,7 +542,7 @@ Now that we have our "debian" folder in order, it's time to go to launchpad and 
 
 2. Read through the options available to you. You can go ahead and keep the defaults for Name, Description (it's blank), Owner, Daily builds, and PPA but you can also customize a bit if you'd like.
 
-3. When you get down to a set of checkboxes with the header "Default distribution series", make sure you select "Precise". elementary OS Luna shares it's core with Ubuntu Precise, so packages built on Precise will also work on Luna.
+3. When you get down to a set of checkboxes with the header "Default distribution series", make sure you select "Trusty". elementary OS Freya shares it's core with Ubuntu Trusty, so packages built on Trusty will also work on Freya.
 
 4. For recipe text, we're going to change it ever so slightly to conform better with the official Debian rules. Change out the first line for this one:
 
