@@ -675,40 +675,88 @@ Let’s recap what we learned in this section:
 
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
-##Notifications  {#-Notifications}
 
-Notifications are simple ways to notify a user about the state of your app. First of all, make sure your application extends from either `Gtk.Application` if it's a graphical application, or from `GLib.Application`. This is because notifications may persist on the system, even after your application exists. By making your application extend from the Application class, you'll be able to re-launch it from a click of the notification.
+#Notifications {#Notifications}
+If you have been using elementary os, by now you've probably already seen the white bubbles that appear on the top right of the screen. Those are notifications! Notifications are simple ways to notify a user about the state of your app. They can inform the user that a long process has been completed, or a new message has arrived. Either way, in this section we are going to show you just how to get them to work in your app.
 
-1. Create a new object from the Notification class. Just remeber: doing this won't actually send the notification just yet.
 
-``` Notification notify = new Notification ("Title of Your Notification"); ```
+## Gtk.Application {#Gtk-Application}
+Sadly, we can't just add a new notification right away. You are going to need your program to extend from the class Gtk.Application. Gtk.Application will allow you to give your app some new features, one of them being notifications! Let's begin by making a new project! 
 
-2. Add the notification's body.
 
-``` notify.set_body ("Body of your notification"); ```
+###Making Preparations {#Making-Preparations}
+1. Create a new folder inside of  "~/Projects" called "notifications-app"
+2. Create a file inside called ``` gtk-app.vala ```
+3. Re create the CMake folder and CMakeFiles.txt file If you don't remember how to, i recommend you go back to the previous section. But you can also use the files from your previous projects, and modify it accordingly.
+4. Remember how to make a .desktop file? Excellent! Well, make one once again for this project. But since your app will be displaying applications, add `X-GNOME-UsesNotifications=true` to the end of the file.
 
-3. finaly, when you actually want to send it, from your Gtk.Application subclass, use:
 
-``` send_notification (ID, notify);```
+###Writing your app! {#Writing your app!}
+Now that we got all that taken care off, it's time to begin coding your app! Let's start with setting up the basic layout:
 
-Notice though that the send-notification method takes 2 arguments. The first argument is a string that will work as an ID. The ID argumment may be `null`, but sending a seccond notification with the same ID will replace the original, and having an ID gives you access to the withdraw_notification method
+```
+public class MyApp : Gtk.Application {
 
-###Example:
-
-    public class MyApp : Gtk.Application {
+    public MyApp () {
+     	Object (application_id: "my.app",
+                flags: ApplicationFlags.FLAGS_NONE);
+    }
     
-    	...
-    
-	    private void send_notification () {
-		    Notification notify = new Notification ("MyApp");
-		    notify.set_body (_("Done with sorting process"));
-		    this.send_notification ("Unique ID", notify);
-	    }
+    protected override void activate () {
+    	var app_window = new Gtk.ApplicationWindow (this);
+        
+        app_window.show ();
+    }
 
-	    private void remove_notification () {
-    		this.withdraw_notification ("Unique ID");
-	    }
-    } 
+    public static int main (string[] args) {
+         MyApp app = new MyApp ();
+         return app.run (args);
+    }
+}
+```
+
+You will notice though that the way you initiate your app will look a little different from what we did a few sections back. This time, in your `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a Application-Window, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in "creating layouts" and make a grid containing two buttons, one that will show a notification, and one that will hide it! 
+
+In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
+
+
+		var grid = new Gtk.Grid ();
+		grid.orientation = Gtk.Orientation.VERTICAL;
+		grid.row_spacing = 6;
+		grid.column_spacing = 6;
+
+		var title_label = new Gtk.Label ("Notifications");
+		var show_button = new Gtk.Button.with_label ("Show");
+
+		grid.attach (title_label, 0, 0, 1, 1);
+		grid.attach (show_button, 0, 1, 1, 1);
+
+		app_window.add (grid);
+		app_window.show_all ();
+
+
+Okay, now compile your new app. It all looks good? Perfect! Now commit your changes and push to launchpad.
+
+## Sending Notifications {#Sending-Notifications}
+Now that we have a Gtk.Application we can send notifications. See that button we created?, let's connect function to it! After you created the button, add the following function to it!
+
+		show_button.clicked.connect (() => {
+			var notification = new Notification ("Hello World");
+			notification.set_body (("This is my first notification!"));
+			this.send_notification ("notification", notification);
+		});
+
+Now build your app again, and click the "send" button! You saw the notification! That's great, you rock! Don't forget to `make pot` when you add new strings. Now commit and push your changes
+
+## Notification Features
+TODO: 
+- Images
+- Icons
+- Withdraw
+- Replace
+- Priority
+
+## Review
 
 
 
