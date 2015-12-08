@@ -2,7 +2,7 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Get Involved with elementary OS';
     $page['theme-color'] = '#3E4E54';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Satisfy">';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Marck+Script">';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
     $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
     include $template['header'];
