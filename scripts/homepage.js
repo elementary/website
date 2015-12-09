@@ -41,7 +41,7 @@ $(function () {
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
         if (window.ga) {
-            ga('send', 'event', 'Freya Update 1 Download (Payment)', 'Homepage', payment_amount);
+            ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', payment_amount);
         }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
@@ -139,10 +139,10 @@ $(function () {
         for (var i = 0; i < links_data.length; i++) {
             (function (data, link) {
                 $(link).click(function () {
-                    ga('send', 'event', 'Freya Update 1 Download (Architecture)', 'Homepage', data.arch);
-                    ga('send', 'event', 'Freya Update 1 Download (Method)', 'Homepage', data.method);
-                    ga('send', 'event', 'Freya Update 1 Download (OS)', 'Homepage', detect_os());
-                    ga('send', 'event', 'Freya Update 1 Download (Region)', 'Homepage', download_region);
+                    ga('send', 'event', 'Freya Update 2 Download (Architecture)', 'Homepage', data.arch);
+                    ga('send', 'event', 'Freya Update 2 Download (Method)', 'Homepage', data.method);
+                    ga('send', 'event', 'Freya Update 2 Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', 'Freya Update 2 Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }
