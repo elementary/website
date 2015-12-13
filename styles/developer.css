@@ -67,6 +67,10 @@ section.hero .button.suggested-action{
     }
 }
 
+.third .fa {
+    color: #3A416F;
+}
+
 footer,
 .grey {
     background-color: #fafafa;

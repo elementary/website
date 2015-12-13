@@ -64,12 +64,12 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 
 #### 32-bit
 ```bash
-75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
+97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
 #### 64-bit
 ```bash
-ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
+ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -108,13 +108,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 elementaryos-stable-0.3.1-i386.20150903.iso
+shasum -a 256 elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
 ```bash
-75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
+97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
 #### 64-bit
@@ -122,13 +122,13 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash
-shasum -a 256 elementaryos-stable-0.3.1-amd64.20150903.iso
+shasum -a 256 elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
 ```bash
-ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
+ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -171,13 +171,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash
-sha256sum elementaryos-stable-0.3.1-i386.20150903.iso
+sha256sum elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
 ```bash
-75b6cf0afc8a8d46bdcd646d5f22aac0496c3dd7bf8eafb8897933bfb7048f22
+97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
 #### 64-bit
@@ -185,13 +185,13 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash
-sha256sum elementaryos-stable-0.3.1-amd64.20150903.iso
+sha256sum elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
 ```bash
-ca0f5933231fc2d75ef4e82c177c8150a3def9ddb78db8f24da1c6a0c6037390
+ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}

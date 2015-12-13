@@ -62,6 +62,27 @@
             <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Reference for Granite</a></p>
         </div>
     </div>
+    <div class="half">
+        <div class="alert column">
+            <img src="images/developer/gda.svg">
+        </div>
+        <div class="alert column">
+            <h2>GDA</h2>
+            <p>Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.</p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
+        </div>
+    </div>
+    <div class="half">
+        <div class="alert column">
+            <img src="images/developer/soup.svg">
+        </div>
+        <div class="alert column">
+            <h2>Soup</h2>
+            <p>An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.</p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=libsoup-2.4/Soup">Reference for Soup</a></p>
+            <p><a class="read-more" href="http://valadoc.org/#!api=json-glib-1.0/Json">Reference for JSON-GLib</a></p>
+        </div>
+    </div>
 </div>
 <section class="grey">
     <div class="grid">
