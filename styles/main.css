@@ -3,6 +3,13 @@
 * This file is part of elementaryos.io *
 ***************************************/
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Raleway-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Raleway-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
 html,
 body {
     background-color: #fff;
