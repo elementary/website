@@ -11,7 +11,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
-* 1 GHz 32-bit or 64-bit processor
+* Intel i3 or equivalent dual-core 32-bit or 64-bit processor
 * 1 GB of system memory (RAM)
 * 15 GB of disk space
 * Internet access
