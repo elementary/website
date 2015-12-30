@@ -388,6 +388,7 @@ input:focus + .focus-reveal {
     padding: 7px 12px 6px 16px;
     text-align: left;
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    word-break: break-word;
 }
 
 .slingshot-category.active {
