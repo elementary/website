@@ -1,8 +1,7 @@
 {
     "Store": "ストア",
-    "Our store currently only supports US orders.": "私たちのストアではアメリカドルのみご利用いただけます。",
+    "Our store currently only supports US orders.": "アメリカドルのみご利用いただけます。",
     "Order Online": "オンラインで注文",
-    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s": "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel’s",
-    "sizing chart": "sizing chart",
+    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">sizing chart</a>.": "すべてのアパレルはアメリカでのサイズです。 Tシャツはビットぴったりを実行します。サイスの詳細はアメリカンアパレルの <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">サイズチャート</a> を参照してください",
     "Store &sdot; elementary": "ストア - elementary"
 }

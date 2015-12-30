@@ -2,7 +2,6 @@
     "Store": "Магазин",
     "Our store currently only supports US orders.": "В настоящее время произвести заказ можно только из США.",
     "Order Online": "Заказать онлайн",
-    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s": "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel’s",
-    "sizing chart": "таблица размеров",
+    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">sizing chart</a>.": "Для одежды размеры указаны в соответствии с стандартами США. Для конвертации размеров одежды смотрите <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">эту  таблицу</a>.",
     "Store &sdot; elementary": "Магазин ⋅ elementary"
 }

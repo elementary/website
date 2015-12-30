@@ -2,7 +2,6 @@
     "Store": "Boutique",
     "Our store currently only supports US orders.": "Notre boutique n'est actuellement disponible qu'aux USA.",
     "Order Online": "Acheter en ligne",
-    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s": "Tous les vêtements sont en tailles US. Les T-shirts sont légèrement cintrés; pour plus d'information sur la taille, référez vous à la",
-    "sizing chart": "table de tailles d'American Apparel",
+    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">sizing chart</a>.": "Tous les vêtements sont en tailles américaines. Les T-shirts sont un peu larges : pour plus de détails sur les tailles, consultez la <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">correspondance des tailles</a> d'American Apparel.",
     "Store &sdot; elementary": "Boutique ⋅ elementary"
 }
