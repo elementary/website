@@ -737,7 +737,7 @@ elementary OS uses **six** main icon sizes throughout the OS and it's best to in
 	<span>128</span>
 </div>
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually.
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually. For more information about this practice (called "pixel-fitting") and its importance, we recommend reading [Dustin Curtis' article, Pixel-fitting](http://dcurt.is/pixel-fitting).
 
 ## Color Palette {#color}
 
