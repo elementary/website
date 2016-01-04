@@ -1,2 +1,2 @@
 <?php
-header('Location: https://answers.launchpad.net/audience', true, 302);
+header('Location: https://elementaryos.stackexchange.com/questions/tagged/audience', true, 302);
