@@ -675,4 +675,162 @@ Let’s recap what we learned in this section:
 
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
+# Integrate with Pantheon Online Accounts {#pantheon-online-accounts}
+
+Every application dealing with data will have to connect to several service providers. Let's say that you are a developer of an Address Book application and that you want to integrate with Google Contacts. (In real-life, developers should use the folks library instead to retrieve contacts).
+Most services allows you to only use “tokens” and thus not having to deal with the user password. Token are like passwords as they allow you to interact with the service (here add, modify and remove contacts) but unlike passwords, you are restricted to a specific area of the whole service (you can’t access Google Drive documents with a token made for Contacts) and in top of that, tokens are revocable. The Pantheon Online Account service is a central place to retrieve, store and refresh tokens when they are needed so you don’t have to re-implement all the Authentication procedure. All you need to know is to use the API of the provider of your choice.
+
+## Create a Provider {#poa-create-provider}
+
+There are several default providers shipped with elementary, and much more available in the AppCenter. If the provider you want is already available, [jump to the next part](#poa-create-service) as you *MUST* use it. Otherwise, here is how to create a new one.
+
+The Pantheon Online Accounts service has already the major authentication protocols built-in, it is possible to create yourself everything to support a new protocol but we won't cover this here.
+Each service has a corresponding authentication method and mechanism (if the authentication isn't standard, those are often equal), here is a non-exhaustive list of the most used ones:
+
+|   Methods  |                Mechanisms                |
+|  --------  | ---------------------------------------- |
+|  `oauth1`  | `PLAINTEXT` or `HMAC-SHA1` or `RSA-SHA1` |
+|  `oauth2`  |       `web_server` or `user_agent`       |
+| `password` |                `password`                |
+
+To create a provider, you have to create a `%provider.provider` (here it’s `google.provider` for example) file in the "data" directory of your project.
+
+The content of your .provider file should look as this:
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <provider id="google">
+            <name>Google</name>
+            <description>Access all Google services on your computer</description>
+            <icon>online-account-google</icon>
+            <translations>pantheon-online-accounts</translations>
+            <plugin>generic-oauth</plugin>
+
+            <template>
+                <group name="auth">
+                    <setting name="method">oauth</setting>
+                    <setting name="mechanism">user_agent</setting>
+                    <group name="oauth">
+                        <group name="user_agent">
+                            <setting type="boolean" name="ForceClientAuthViaRequestBody">true</setting>
+                            <setting name="AuthHost">accounts.google.com</setting>
+                            <setting name="TokenHost">accounts.google.com</setting>
+                            <setting name="AuthPath">/o/oauth2/auth</setting>
+                            <setting name="TokenPath">/o/oauth2/token</setting>
+                            <setting type="int" name="UiPolicy">0</setting>
+                            <setting name="RedirectUri">http://elementary.io</setting>
+                            <setting name="ResponseType">code</setting>
+                            <setting name="Scope">https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login</setting>
+                            <setting name="AuthQuery">access_type=offline&amp;approval_prompt=force</setting>
+                            <setting name="ClientId">your-client-id</setting>
+                            <setting name="ClientSecret">your-client-secret</setting>
+                            <setting type="as" name="AllowedSchemes">['https','http']</setting>
+                            <setting type="as" name="AllowedRealms">['google.com']</setting>
+                            <setting type="as" name="Realms">['accounts.google.com']</setting>
+                        </group>
+                    </group>
+                </group>
+            </template>
+        </provider>
+
+Let's describe this file a little bit, at first all the files we are creating should be written in XML, the first field to set it the provider id, `<provider id="google">`. You have to make sure that this id is unique. Here are more informations about the keys:
+* The `icon` should be the icon name of the provider. Make sure to ship it along with the .provider file
+* The `translations` is the domain that should be installed and provide translations for the description
+* The `plugin` is the name of the plugin POA will use to handle the account
+
+As you can see, the biggest amount of lines are contained in the `template` key. They represent everything POA will need to authenticate, the required keys can variate between each methods and mechanisms so you might want to take a look at the keys that are supported by them.
+Nevertheless, a common part of the `template` is that you always have to specify the `auth/method` and `auth/mechanisms` settings, then you have to put all the supported keys in the `auth/$method/$mechanism` group. If any key is missing, the backend will fail and return you an explicit error message in the terminal.
+
+### Into the Build system {#poa-create-provider-build}
+
+In order to install the .provider file, you have to add a line to your "CMakeLists.txt" file previously created.
+
+        # install our .provider file
+        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/google.provider DESTINATION ${DATADIR}/accounts/providers/)
+
+## Create a Service {#poa-create-service}
+
+As in the [Create a Provider section](#poa-create-provider), there are several default services shipped with elementary, and much more available in the AppCenter. If the service you want is already available, [jump to the next part](#poa-declare-application) as you *MUST* use it. Otherwise, here is how to create a new one.
+The .service file should be created in the "data" directory of your project, it is better to name the file as `%provider-%service.service` (here it’s `google-contacts.service` for example)
+
+For our example, the .service file looks as following:
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <service id="google-contacts">
+            <type>contacts</type>
+            <name>Contacts</name>
+            <description>Sync your contacts</description>
+            <icon>office-address-book</icon>
+            <provider>google</provider>
+            <translations>my-address-book</translations>
+            
+            <template>
+                <group name="auth">
+                    <setting name="method">oauth</setting>
+                    <setting name="mechanism">user_agent</setting>
+                    <group name="oauth">
+                        <group name="user_agent">
+                            <setting type="boolean" name="ForceClientAuthViaRequestBody">true</setting>
+                            <setting name="AuthHost">accounts.google.com</setting>
+                            <setting name="TokenHost">accounts.google.com</setting>
+                            <setting name="AuthPath">/o/oauth2/auth</setting>
+                            <setting name="TokenPath">/o/oauth2/token</setting>
+                            <setting type="int" name="UiPolicy">0</setting>
+                            <setting name="RedirectUri">http://elementaryos.org</setting>
+                            <setting name="ResponseType">code</setting>
+                            <setting name="Scope">https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.google.com/m8/feeds/</setting>
+                            <setting name="AuthQuery">access_type=offline&amp;approval_prompt=force</setting>
+                            <setting name="ClientId">generic-id.apps.googleusercontent.com</setting>
+                            <setting name="ClientSecret">generic-secret</setting>
+                            <setting type="as" name="AllowedSchemes">['https','http']</setting>
+                            <setting type="as" name="AllowedRealms">['google.com']</setting>
+                            <setting type="as" name="Realms">['accounts.google.com']</setting>
+                        </group>
+                    </group>
+                </group>
+            </template>
+        </service>
+
+Once you've read the [Create a Provider section](#poa-create-provider), most of this file should be pretty straightforward, but here are some precisions to .service files:
+
+* The `type` should only be generic if you’re sure that it would be handled by any application implementing generic services (e-mail is the most famous one)
+* The .service file inherit the `template` provided by the provider. If you want to override it, you only have to specify it here (this is needed in our example because the Google Contacts service is requesting a new privilege to create, remove and modify contacts).
+* The `icon` should be a generic icon described by the [freedesktop.org specification](http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html) when possible or should be provided along with the service package
+* The `translations` is the domain that should be installed and provide translations for the description
+
+### Into the Build system {#poa-create-service-build}
+
+In order to install the .service file, you have to add a line to your "CMakeLists.txt" file previously created.
+
+        # install our .service file
+        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/google-contacts.service DESTINATION ${DATADIR}/accounts/services/)
+
+## Declare your Application {#poa-declare-application}
+
+Each application need their .application file in order to be allowed to get the credentials from the Daemon. This file should be created in the "data" directory of your project, it is better to name the file as `%application.application` (here it’s `my-address-book.application` for example)
+The file should look as following:
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <application id="my-address-book">
+            <description>My Address Book</description>
+            <desktop-entry>my-address-book.desktop</desktop-entry>
+            <translations>my-address-book</translations>
+            <services>
+                <service id="google-contacts">
+                </service>
+            </services>
+            <service-types>
+                <service-type id="contacts">
+                </service-type>
+            </service-types>
+        </application>
+
+In some cases, your application will handle all kind of services (such as e-mails). If so, you can just omit the `services` and just fill the `service-types` you want.
+
+### Into the Build system {#poa-declare-application-build}
+
+In order to install the .application file, you have to add a line to your "CMakeLists.txt" file previously created.
+
+        # install our .application file
+        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/my-address-book.application DESTINATION ${DATADIR}/accounts/applications/)
+
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
