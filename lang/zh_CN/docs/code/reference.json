@@ -1,5 +1,5 @@
 {
-    "Reference": "Reference",
+    "Reference": "参考资料",
     "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.": "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.",
     "Code Style": "代码风格",
     "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.": "本指南的目的是给所有elementary项目编写好的代码提供清晰和精确的说明。这个方针是针对每个文件，以保持我们的代码是一致和可读性。 我们也继承了一些GNOME的Vala指引，以保持我们的代码与其他Vala程序保持一致。",
@@ -25,6 +25,8 @@
     "Comments are indented alongside the code, and obvious comments do more harm\nthan good.": "Comments are indented alongside the code, and obvious comments do more harm\nthan good.",
     "Variable names, class names, function names": "Variable names, class names, function names",
     "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.": "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.",
+    "Casting": "Casting",
+    "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.",
     "Vala namespaces": "Vala namespaces",
     "Referring to GLib is not necessary. If you want to print something:": "Referring to GLib is not necessary. If you want to print something:",
     "Opt for the second one, it's much cleaner.": "Opt for the second one, it's much cleaner.",
