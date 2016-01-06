@@ -85,7 +85,7 @@ $(function () {
         if ( amount ) {
             url = url + '&payment=' + amount;
         }
-        $.getJSON(, function(data) {
+        $.getJSON(url, function(data) {
             console.log(data);
         });
     }

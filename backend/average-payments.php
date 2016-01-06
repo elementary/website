@@ -39,7 +39,7 @@ if ( $Processing ) {
     $query = 'CREATE TABLE IF NOT EXISTS `AveragePayments` (`OS` TEXT PRIMARY KEY, `Total` INTEGER, `Count` INTEGER, `Average` INTEGER);';
     $db->exec($query); // Result-less
     if ( $db->lastErrorCode() ) LastError($db);
-    $Systems = array('total', 'windows', 'osx', 'other');
+    $Systems = array('total', 'android', 'ios', 'windows', 'os x', 'linux', 'other');
     $query = 'DELETE FROM `AveragePayments` WHERE `OS` NOT IN (\''.implode('\', \'', $Systems).'\')';
     $db->exec($query); // Result-less
     foreach ( $Systems as $System ) {
