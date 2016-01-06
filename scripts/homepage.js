@@ -81,7 +81,7 @@ $(function () {
     }
 
     function average_payment (amount) {
-        $.getJSON('/backend/average-payments.php?os=' + detected_os + '&payment=' + amount, function( data ) {
+        $.getJSON('backend/average-payments.php?os=' + detected_os + '&payment=' + amount, function( data ) {
             console.log(data);
         });
     }
