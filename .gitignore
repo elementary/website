@@ -3,4 +3,5 @@
 *.custom.*
 backend/config.php
 backend/chart.json
+data/average_payments.db
 .vagrant/
