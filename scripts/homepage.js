@@ -40,9 +40,6 @@ $(function () {
         console.log('Pay ' + current_amount);
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
-        if (window.ga) {
-            ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', payment_amount);
-        }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
         } else {
@@ -68,6 +65,9 @@ $(function () {
             token: function (token) {
                 console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
+                if (window.ga) {
+                    ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', payment_amount);
+                }
                 open_download_overlay();
             },
             name: 'elementary LLC.',
