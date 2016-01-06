@@ -47,6 +47,27 @@ $(function () {
         }
     });
 
+    function detect_os() {
+        var ua = window.navigator.userAgent;
+        if (ua.indexOf('Android') >= 0) {
+            return 'Android';
+        }
+        if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
+            return 'iOS';
+        }
+        if (ua.indexOf('Windows') >= 0) {
+            return 'Windows';
+        }
+        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
+            return 'OS X';
+        }
+        if (ua.indexOf('Linux') >= 0) {
+            return 'Linux';
+        }
+        return 'Other';
+    }
+    var detected_os = detect_os();
+
     function stripe_language() {
         var stripe_languages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
         var language_code = $('html').prop('lang');
@@ -59,6 +80,12 @@ $(function () {
         }
     }
 
+    function average_payment (amount) {
+        $.getJSON('/backend/average-payments.php?os=' + detected_os + '&payment=' + amount, function( data ) {
+            console.log(data);
+        });
+    }
+
     function do_stripe_payment (amount) {
         StripeCheckout.open({
             key: stripe_key,
@@ -66,7 +93,8 @@ $(function () {
                 console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
                 if (window.ga) {
-                    ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', payment_amount);
+                    ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', amount);
+                    average_payment(amount);
                 }
                 open_download_overlay();
             },
@@ -107,26 +135,6 @@ $(function () {
         $open_modal.click();
     }
 
-    function detect_os() {
-        var ua = window.navigator.userAgent;
-        if (ua.indexOf('Android') >= 0) {
-            return 'Android';
-        }
-        if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
-            return 'iOS';
-        }
-        if (ua.indexOf('Windows') >= 0) {
-            return 'Windows';
-        }
-        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'OS X';
-        }
-        if (ua.indexOf('Linux') >= 0) {
-            return 'Linux';
-        }
-        return 'Other';
-    }
-
     if (window.ga) {
         var download_links = $('#download-modal').find('.actions').find('a');
         var links_data = [
@@ -141,7 +149,7 @@ $(function () {
                 $(link).click(function () {
                     ga('send', 'event', 'Freya Update 2 Download (Architecture)', 'Homepage', data.arch);
                     ga('send', 'event', 'Freya Update 2 Download (Method)', 'Homepage', data.method);
-                    ga('send', 'event', 'Freya Update 2 Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', 'Freya Update 2 Download (OS)', 'Homepage', detected_os);
                     ga('send', 'event', 'Freya Update 2 Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
