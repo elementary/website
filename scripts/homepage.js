@@ -85,6 +85,7 @@ $(function () {
             console.log(data);
         });
     }
+    average_payment(false);
 
     function do_stripe_payment (amount) {
         StripeCheckout.open({
