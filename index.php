@@ -54,7 +54,11 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Download elementary OS</button>
-                <p class="small-label">1.15 GB (for PC or Mac)</p>
+                <p class="small-label">
+                    <span data-l10n-id="iso-label-size">1.15</span>
+                    <span data-l10n-id="iso-label-unit">GB</span>
+                    <span data-l10n-id="iso-label-for">(for PC or Mac)</span>
+                </p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
