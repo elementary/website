@@ -596,7 +596,6 @@ button,
     font-family: inherit;
     font-size: 16px;
     margin: 24px;
-    max-width: 250px;
     outline: none;
     padding: 16px 32px;
     text-align: center;
@@ -641,11 +640,11 @@ button.suggested-action,
     background: none;
     border-width: 2px;
     box-shadow: none;
-    display: block;
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 0;
     margin-top: 10px;
+    min-width: 250px;
     padding: 7px;
     text-shadow: none;
 }
