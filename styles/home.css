@@ -113,6 +113,7 @@ input:focus + .focus-reveal {
 #carousel-choices .button {
     line-height: 16px;
     padding: 8px 16px;
+    min-width: initial;
 }
 
 #carousel-choices svg {
@@ -162,6 +163,7 @@ input:focus + .focus-reveal {
 
     #carousel-choices .button {
         line-height: initial;
+        min-width: 100px;
     }
 
     #carousel-choices .label {
