@@ -227,7 +227,11 @@ $(function () {
     // Change Button text on payment click
     function updateDownloadButton () {
         var payment_amount = $('#amount-custom').val() * 100;
-        if ($('input#amount-custom').hasClass('checked') && payment_amount < payment_minimum) {
+        if (
+            $('input#amount-custom').hasClass('checked') &&
+            payment_amount < payment_minimum &&
+            $('#amount-custom').val() != ''
+        ) {
             $('#download').text('Download elementary OS');
         } else {
             $('#download').text('Purchase elementary OS');
@@ -235,7 +239,7 @@ $(function () {
     }
 
     $('#amounts').on('click', updateDownloadButton);
-    $('#amounts input').on('change', updateDownloadButton);
+    $('#amounts input').on('input', updateDownloadButton);
 
     console.log('Loaded homepage.js');
 });
