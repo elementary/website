@@ -224,5 +224,18 @@ $(function () {
         }, 3000);
     });
 
+    // Change Button text on payment click
+    function updateDownloadButton () {
+        var payment_amount = $('#amount-custom').val() * 100;
+        if ($('input#amount-custom').hasClass('checked') && payment_amount < payment_minimum) {
+            $('#download').text('Download elementary OS');
+        } else {
+            $('#download').text('Purchase elementary OS');
+        }
+    }
+
+    $('#amounts').on('click', updateDownloadButton);
+    $('#amounts input').on('change', updateDownloadButton);
+
     console.log('Loaded homepage.js');
 });

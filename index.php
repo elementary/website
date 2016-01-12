@@ -53,7 +53,7 @@
                         }
                     ?>
                 </div>
-                <button type="submit" id="download" class="suggested-action">Download elementary OS</button>
+                <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
                 <p class="small-label">1.15 GB (for PC or Mac)</p>
             </div>
             <div class="row">
