@@ -81,12 +81,15 @@ $(function () {
     }
 
     function average_payment (amount) {
-        var url = 'backend/average-payments.php?os=' + detected_os;
+        var url = 'backend/average-payments.php?authenticatron_code=' + authenticatron_code + 'os=' + detected_os;
         if ( amount ) {
             url = url + '&payment=' + amount;
         }
         $.getJSON(url, function(data) {
             console.log(data);
+            // TODO Write DATA to the popup.
+            // This is called once on load
+            // and when paid, so it is psuedo-realtime.
         });
     }
     average_payment(false);
