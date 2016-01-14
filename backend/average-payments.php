@@ -2,12 +2,21 @@
 
 ////    Settings
 $Database = __DIR__.'/../data/average_payments.db';
+$Secret   = __DIR__.'/authenticatron.secret.php';
 
 ////    Parse Variables
+$Processing = false;
 if ( !empty($_GET['os']) && !empty($_GET['payment']) ) {
-    $Processing = true;
-} else {
-    $Processing = false;
+    if ( is_readable($Secret) ) {
+        require_once $Secret;
+    } else {
+        // Use a not-so-secret as a fallback.
+        $Secret = 'BULWYTXXPJVHETRD';
+    }
+    $Acceptables = Authenticatron_Acceptable($Secret);
+    if ( in_array($_GET['authenticatron_code'], $Acceptables) ) {
+        $Processing = true;
+    }
 }
 if ( $Processing ) {
     $OS = strtolower(htmlentities($_GET['os'], ENT_QUOTES, 'UTF-8'));
