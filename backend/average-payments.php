@@ -1,13 +1,16 @@
 <?php
 
 ////    Settings
-$Database = __DIR__.'/../data/average_payments.db';
-$Secret   = __DIR__.'/authenticatron.secret.php';
+$Database       = __DIR__.'/../data/average_payments.db';
+$Authenticatron = __DIR__.'/authenticatron.php';
+$Secret         = __DIR__.'/authenticatron.secret.php';
 
 ////    Parse Variables
 $Processing = false;
 if ( !empty($_GET['os']) && !empty($_GET['payment']) ) {
+    require_once $Authenticatron;
     if ( is_readable($Secret) ) {
+        // Load the site-unique secret.
         require_once $Secret;
     } else {
         // Use a not-so-secret as a fallback.
