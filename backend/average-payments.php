@@ -7,8 +7,9 @@ $Database       = __DIR__.'/../data/average_payments.db';
 $Processing = false;
 if ( !empty($_GET['os']) && !empty($_GET['payment']) ) {
     require_once __DIR__.'/authenticatron.load.php';
-    $Acceptables = Authenticatron_Acceptable($Secret);
-    if ( in_array($_GET['authenticatron_code'], $Acceptables) ) {
+    // Accept any code +/- 10 Minutes.
+    // Ignore incorrect codes.
+    if ( Authenticatron_Check($_GET['authenticatron_code'], $Secret, 20) ) {
         $Processing = true;
     }
 }
