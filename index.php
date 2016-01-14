@@ -7,10 +7,13 @@
     include $template['header'];
     include $template['alert'];
     require_once __DIR__.'/backend/classify.current.php';
+    require_once __DIR__.'/backend/authenticatron.load.php';
+    $authenticatron_code = Authenticatron_Code($Secret);
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
             <script>var download_region = '<?php echo $region; ?>';</script>
+            <script>var authenticatron_code = '<?php echo $authenticatron_code; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
