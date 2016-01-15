@@ -40,6 +40,7 @@ $l10n->begin_html_translation();
         <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
         <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
 
+        <meta name="twitter:card"        content="summary_large_image">
         <meta name="twitter:site"        content="@elementary">
         <meta name="twitter:creator"     content="@elementary">
 
