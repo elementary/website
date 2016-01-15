@@ -1,6 +1,5 @@
 <?php
     $page['title'] = 'Download elementary OS';
-    $page['image'] = 'https://elementary.io/images/notebook.png';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include __DIR__.'/_templates/sitewide.php';

@@ -40,21 +40,6 @@ $l10n->begin_html_translation();
         <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
         <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
 
-        <?php
-        if ( !empty($page['image']) ) {
-            ?>
-        <meta name="twitter:card"        content="summary_large_image">
-            <?php
-        } else {
-            ?>
-        <meta name="twitter:card"        content="summary">
-            <?php
-        }
-        ?>
-
-        <meta name="twitter:title"       content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>">
-        <meta name="twitter:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
-        <meta name="twitter:image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
         <meta name="twitter:site"        content="@elementary">
         <meta name="twitter:creator"     content="@elementary">
 
