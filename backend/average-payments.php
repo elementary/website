@@ -26,7 +26,7 @@ function LastError($db) {
 
 ////    Open Database
 if ( $Processing ) {
-    if ( !is_writable($Database) ) {
+    if ( !is_writable(dirname($Database)) ) {
         echo 'ERROR: Database is not writable.';
         exit;
     }
