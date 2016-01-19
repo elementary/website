@@ -89,8 +89,8 @@
         <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
         <div class="actions">
-            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
-            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">See Our Open Bug Reports</a>
+            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
+            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report an Issue with Our Website</a>
         </div>
     </div>
 </section>
