@@ -138,12 +138,12 @@ section .heading p.small-label a:hover {
 }
 
 .charts .doughnuts-ctn {
-    margin-left: 30px;
+    min-width: 150px;
 }
 
 .charts .doughnuts-ctn .doughnut {
     height: 90px;
-    margin: 15px;
+    margin: 15px auto;
     position: relative;
     width: 90px;
 }
