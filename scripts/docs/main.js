@@ -66,7 +66,9 @@ $(document).ready(function() {
     // Url hash selector. Only in docs class to avoid nav conflicts
     $(document).on('scroll', function (event) {
         // Changes browser hash without adding to history
-        history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+        if (currentSection.id !== location.hash.substr(1)) {
+            history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+        }
     });
 
     // Sidebar
