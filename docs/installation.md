@@ -63,12 +63,12 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 4. Verify that the text in "Results" matches one of the following hashes
 
 #### 32-bit
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
 #### 64-bit
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
@@ -107,13 +107,13 @@ Verifying your download is an important, but optional step. We generate a checks
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 shasum -a 256 elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
@@ -121,13 +121,13 @@ should produce the output:
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 shasum -a 256 elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
@@ -170,13 +170,13 @@ Verifying your download is an important, but optional step. We generate a checks
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 sha256sum elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
@@ -184,13 +184,13 @@ should produce the output:
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 sha256sum elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 

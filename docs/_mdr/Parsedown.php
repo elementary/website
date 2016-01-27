@@ -394,7 +394,7 @@ class Parsedown
 
     protected function blockFencedCode($Line)
     {
-        if (preg_match('/^(['.$Line['text'][0].']{3,})[ ]*([\w-]+)?[ ]*$/', $Line['text'], $matches))
+        if (preg_match('/^(['.$Line['text'][0].']{3,})[ ]*([\w-]+)?[ ]*([\w-]+)?$/', $Line['text'], $matches))
         {
             $Element = array(
                 'name' => 'code',
@@ -408,6 +408,11 @@ class Parsedown
                 $Element['attributes'] = array(
                     'class' => $class,
                 );
+            }
+
+            if (isset($matches[3]))
+            {
+                $Element['attributes']['class'] .= ' '.$matches[3];
             }
 
             $Block = array(
