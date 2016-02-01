@@ -70,7 +70,6 @@ $l10n->begin_html_translation();
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100,100italic|Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono">
         <?php } ?>
-
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
@@ -114,7 +113,7 @@ $l10n->begin_html_translation();
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                    <!-- <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li> -->
+                    <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
                 </ul>
                 <ul class="right">
                     <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
