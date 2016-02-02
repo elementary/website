@@ -66,16 +66,17 @@ $(function () {
         StripeCheckout.open({
             key: stripe_key,
             token: function (token) {
-                console.log(JSON.parse(JSON.stringify(token)));
-                process_payment(amount, token);
-                open_download_overlay();
+                // console.log(JSON.parse(JSON.stringify(token)));
+                process_payment(amount, token); 
+                //this moved to after success payment              
+                // open_download_overlay();
             },
             name: 'elementary LLC.',
-            description: 'elementary OS download',
+            description: 'elementary OS - '+download_os_codename+' - download',
             bitcoin: true,
             alipay: 'auto',
             locale: stripe_language() || 'auto',
-            amount: amount
+            amount: amount,
         });
     }
 
@@ -92,6 +93,21 @@ $(function () {
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
         payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
+        payment_http.onreadystatechange = function() {
+            if (payment_http.readyState == 4) {
+               if( payment_http.responseText=="PAID" && payment_http.status == 200) {
+                  // payment sucess you can add code here changedownload button etc 
+                   console.log(payment_http.responseText);
+                   var d = new Date();
+                   // insecure cookie set for 10 years 
+                   d.setTime(d.getTime() + 315360000000 );
+                   document.cookie="paid_"+download_os_codename+"_by="+token.email+";expires="+d.toUTCString()+";domain=.elementary.io;path=/";
+                   document.cookie="has_paid_"+download_os_codename+"=1;expires="+d.toUTCString()+";domain=.elementary.io;path=/"; 
+                   $('#download').text('Download elementary OS');
+               }
+               open_download_overlay();                                                                             
+            }
+        };
     }
 
     function open_download_overlay () {
