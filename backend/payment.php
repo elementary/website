@@ -14,13 +14,17 @@ if (isset($_POST['token'])) {
         $charge = Stripe_Charge::create(array(
             'amount' => $amount,
             'currency' => 'usd',
-            'card' => $token,
+            'source' => $token,
+            // 'card' => $token,
             'description' => 'elementary OS download',
             'receipt_email' => $email,
         ));
-        // Set an insecure, HTTP only cookie for 10 years in the future.
-        setcookie('has_paid_freya', $amount, time() + 315360000, '/', '.elementary.io', 0, 1);
-        echo 'OK';
+        // var_dump($charge['paid']);
+        if($charge['paid']==true){
+            echo 'PAID';
+        }else {
+            echo 'OK';    
+        }
     } catch(Stripe_CardError $e) {
         echo 'error';
     }

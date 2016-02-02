@@ -6,10 +6,12 @@
     include $template['header'];
     include $template['alert'];
     require_once __DIR__.'/backend/classify.current.php';
+    require_once __DIR__.'/backend/config.loader.php';
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
             <script>var download_region = '<?php echo $region; ?>';</script>
+            <script>var download_os_codename = '<?php echo $config['os-codename']; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/homepage.js');
@@ -33,7 +35,11 @@
             <div class="row">
                 <div id="amounts">
                     <?php
-                        if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
+                        $download_text="Purchase elementary OS";
+                        $thankyou_text="";
+                        if ( isset($_COOKIE[('has_paid_'.$config['os-codename'])]) && $_COOKIE[('has_paid_'.$config['os-codename'])] ) {
+                              $download_text="Download elementary OS ";
+                              $thankyou_text='<h4 id="the-press"> Thank you "'.$_COOKIE[('paid_'.$config['os-codename'].'_by')].'", for Purchasing ! </h4>'
                             ?>
                     <input type="hidden" id="amount-ten" value="0">
                             <?php
@@ -52,8 +58,10 @@
                         }
                     ?>
                 </div>
-                <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
+                  <?php echo $thankyou_text;?>           
+                <button type="submit" id="download" class="suggested-action"><?php echo $download_text;?></button>
                 <p class="small-label">1.15 GB (for PC or Mac)</p>
+                    
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
