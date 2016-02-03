@@ -1,5 +1,5 @@
 /***************************************
-* Copyright 2015 elementary LLC.       *
+* Copyright 2016 elementary LLC.       *
 * This file is part of elementaryos.io *
 ***************************************/
 
@@ -376,7 +376,7 @@ div.icons-container > span:nth-child(6){width: 128px;}
     div.icons-container > span,
     div.icons-container > img {
         margin: 0.5em;
-    }   
+    }
 }
 
 div.icons-container.small-screen {
