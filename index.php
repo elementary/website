@@ -7,6 +7,7 @@
     include $template['alert'];
     require_once __DIR__.'/backend/classify.current.php';
     require_once __DIR__.'/backend/config.loader.php';
+    require_once __DIR__.'/backend/secure.functions.php';
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
@@ -39,7 +40,8 @@
                         $thankyou_text="";
                         if ( isset($_COOKIE[('has_paid_'.$config['os-codename'])]) && $_COOKIE[('has_paid_'.$config['os-codename'])] ) {
                               $download_text="Download elementary OS ";
-                              $thankyou_text='<h4 id="the-press"> Thank you "'.$_COOKIE[('paid_'.$config['os-codename'].'_by')].'", for Purchasing ! </h4>'
+                              $paidby=isset($_COOKIE[('paid_'.$config['os-codename'].'_by')]) ?  ('"'.decrypt($_COOKIE[('paid_'.$config['os-codename'].'_by')]).'",' ) : '';
+                              $thankyou_text='<h4 id="the-press"> Thank you '.$paidby.' for Purchasing ! </h4>';
                             ?>
                     <input type="hidden" id="amount-ten" value="0">
                             <?php

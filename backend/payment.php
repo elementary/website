@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__.'/lib/Stripe.php';
 require_once __DIR__.'/config.loader.php';
+require_once __DIR__.'/secure.functions.php';
 
 Stripe::setApiKey($config['stripe_sk']);
 
@@ -22,6 +23,11 @@ if (isset($_POST['token'])) {
         // var_dump($charge['paid']);
         if($charge['paid']==true){
             echo 'PAID';
+                // Set an insecure, HTTP only cookie for 10 years in the future.
+                setcookie('has_paid_'.$config['os-codename'].'', $amount, time() + 315360000, '/', '.elementary.local', 0, 1);
+
+                //securing email in cookies for privacy protection 
+                setcookie('paid_'.$config['os-codename'].'_by',encrypt($email), time() + 315360000, '/', '.elementary.local', 0, 1);
         }else {
             echo 'OK';    
         }

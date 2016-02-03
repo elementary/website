@@ -97,12 +97,7 @@ $(function () {
             if (payment_http.readyState == 4) {
                if( payment_http.responseText=="PAID" && payment_http.status == 200) {
                   // payment sucess you can add code here changedownload button etc 
-                   console.log(payment_http.responseText);
-                   var d = new Date();
-                   // insecure cookie set for 10 years 
-                   d.setTime(d.getTime() + 315360000000 );
-                   document.cookie="paid_"+download_os_codename+"_by="+token.email+";expires="+d.toUTCString()+";domain=.elementary.io;path=/";
-                   document.cookie="has_paid_"+download_os_codename+"=1;expires="+d.toUTCString()+";domain=.elementary.io;path=/"; 
+                   console.log(payment_http.responseText);                  
                    $('#download').text('Download elementary OS');
                }
                open_download_overlay();                                                                             
