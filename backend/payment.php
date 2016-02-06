@@ -53,7 +53,8 @@ if (isset($_POST['token'])) {
 
 		// $stripecusid is only set when a new cousmore is added
 		if ($stripecusid == null) {
-			//add a source for that customer adds duplicate cards in th stripe db  TODO: try to check exitsing sources if not add one
+			//add a source for that customer adds duplicate cards in th stripe db 
+            // TODO: try to check exitsing sources if not add one
 			$cardid = $customer->sources->create(array("source" => $token));
 			//set default source
 			$customer->default_source = $cardid->id;
@@ -72,14 +73,14 @@ if (isset($_POST['token'])) {
 		if ($charge['paid'] == true) {
 			echo 'PAID';
 			// Set an insecure, HTTP only cookie for 10 years in the future.
-			setcookie('has_paid_' . $config['os-codename'] . '', $amount, time() + 315360000, '/', '.elementary.local', 0, 1);
+			setcookie('has_paid_' . $config['os-codename'] . '', $amount, time() + 315360000, '/', '.elementary.io', 0, 1);
 
 			//securing email in cookies for privacy protection
-			setcookie('paid_' . $config['os-codename'] . '_by', encrypt($email), time() + 315360000, '/', '.elementary.local', 0, 1);
+			setcookie('paid_' . $config['os-codename'] . '_by', encrypt($email), time() + 315360000, '/', '.elementary.io', 0, 1);
 		} else {
 			echo 'OK';
 		}
-	} catch (Stripe_CardError $e) {
+	} catch (Exception $e) {
 		echo 'error';
 	}
 } else {

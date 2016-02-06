@@ -82,7 +82,7 @@ $(function () {
 
     function process_payment (amount, token) {
         var payment_http, $amount_ten;
-
+        openPaymentProgressModal();
         $amount_ten = $('#amount-ten');
 
         if ($amount_ten.val() !== 0) {
@@ -100,6 +100,7 @@ $(function () {
                    console.log(payment_http.responseText);                  
                    $('#download').text('Download elementary OS');
                }
+               $('.close-paymentprogress-modal').click();
                open_download_overlay();                                                                             
             }
         };
@@ -116,6 +117,15 @@ $(function () {
             closeButton: '.close-modal',
         });
         $open_modal.click();
+    }
+
+    function openPaymentProgressModal(){  
+        $('.open-paymentprogress-modal').leanModal({
+            disableCloseOnOverlayClick: true,
+            disableCloseOnEscape: true,
+            closeButton: '.close-paymentprogress-modal'
+        });
+        $('.open-paymentprogress-modal').click();
     }
 
     function detect_os() {
@@ -251,6 +261,5 @@ $(function () {
 
     $('#amounts').on('click', updateDownloadButton);
     $('#amounts input').on('input', updateDownloadButton);
-
-    console.log('Loaded homepage.js');
+   
 });
