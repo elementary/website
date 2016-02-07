@@ -43,11 +43,7 @@
 
 					// IFHREF Fetch the Modal_ID
 					if ( $(this).attr('href') ) {
-						var modal_id = $(this).attr('href');						
-						//some times browsers add '/' character in the begining of the href attr 
- 						if (modal_id.substring(0, 1) == '/') { 
-						  modal_id = modal_id.substring(1);
-						}
+						var modal_id = $(this).attr('href');			
 					// IFHREF Fall back to if no href data-open-modal.
 					} else if ( $(this).attr('data-modal-id') ) {
 						var modal_id = $(this).attr('data-modal-id');
@@ -71,11 +67,9 @@
 
 					// Close the modal on escape
 					$(document).on('keyup', function(evt) {
-						if(!options.disableCloseOnEscape) {			
-							if (evt.keyCode == 27) {
+							if (evt.keyCode == 27 && !options.disableCloseOnEscape ) {
 								leanModal_Close(modal_id);
 							}
-						}
 					});
 
 					var modal_height = $(modal_id).innerHeight();

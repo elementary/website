@@ -109,7 +109,7 @@ $(function () {
     function open_download_overlay () {
         var $open_modal;
 
-        $open_modal = $('.open-modal');
+        $open_modal = $('.open-download-modal');
 
         console.log('Open the download overlay!');
         $open_modal.leanModal({

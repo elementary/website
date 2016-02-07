@@ -27,17 +27,17 @@ if (isset($_POST['token'])) {
 			$stripecusid = $customer->id;
 		} else {
 
-			$customerdeltedatStripe = false;
+			$customerdeletedatstripe = false;
 			try
 			{
 				// our db has customer account check same with stripe account
 				$customer = Stripe_Customer::retrieve($stripecusid);
-				$customerdeltedatStripe = $customer->deleted;
+				$customerdeletedatstripe = $customer->deleted;
 				$stripecusid = null;
 			} catch (Stripe_InvalidRequestError $e) {
-				$customerdeltedatStripe = true;
+				$customerdeletedatstripe = true;
 			}
-			if ($customerdeltedatStripe) {
+			if ($customerdeletedatstripe) {
 				// our db has account but stripe dont have account reference
 				$customer = Stripe_Customer::create(array(
 					"email" => $email,

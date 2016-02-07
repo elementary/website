@@ -252,8 +252,8 @@
                 <button id="close-paymentprogress-modal" class="close-paymentprogress-modal" style="display:none;" >Close</button>                          
             </div>
 
-            <a style="display:none;" class="open-modal" href="#download-modal"></a>
-            <a style="display:none;" class="open-paymentprogress-modal" href="#paymentprogress-modal"></a>
+            <a style="display:none;" class="open-modal open-download-modal" href="#download-modal"></a>
+            <a style="display:none;" class="open-modal open-paymentprogress-modal" href="#paymentprogress-modal"></a>
             <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
 <?php
     include $template['footer'];
