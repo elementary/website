@@ -45,12 +45,12 @@
                 });
 
                 foreach ( $members as $key => $member ) {
-                    if ( $member['real_name'] != '' ) {
-                        $members[$key]['name'] = $member['real_name'];
-                    }
-
                     // Because some people just want to see the page burn
-                    $members[$key]['name'] = htmlspecialchars($member['name']);
+                    if ( !empty($member['real_name']) ) {
+                        $members[$key]['name'] = htmlspecialchars($member['real_name']);
+                    } else {
+                        $members[$key]['name'] = htmlspecialchars($member['name']);
+                    }
                     $members[$key]['profile']['title'] = htmlspecialchars($member['profile']['title']);
                 }
 
