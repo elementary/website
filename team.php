@@ -73,7 +73,7 @@
 
             <div class="member">
                 <div class="member_photo" style="background-image:url(<?=$member['profile']['image_192']?>)"></div>
-                <h5 class="member_name"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Active" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <h5 class="member_name"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
                 <span class="member_title"><?=$member['profile']['title']?></span>
                 <span class="member_time"><?=$member['tz_label']?></span>
             </div>
