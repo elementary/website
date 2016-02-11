@@ -26,7 +26,7 @@
 <section class="grid">
     <div class="two-thirds">
         <h2>We believe in the unique combination of top-notch UX and the world-changing power of Open Source.</h2>
-        <p>elementary was founded in 2007 by a small group of passionate volunteers. Over the years, we've been able to grow into a tiny company and fund the development of open source software. We're a dedicated team of developers, designers, writers, and everyday computer users crafting an incredible open computing experience. We're elementary.</p>
+        <p>elementary was founded in 2007 by a small group of passionate volunteers. Over the years, we&rsquo;ve been able to grow into a tiny company and fund the development of open source software. We&rsquo;re a dedicated team of developers, designers, writers, and everyday computer users crafting an incredible open computing experience. We are elementary.</p>
     </div>
 </section>
 <section class="grid">
