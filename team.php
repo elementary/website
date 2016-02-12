@@ -20,6 +20,7 @@
         "U0299PY5U", // David Gomes (Fix title!)
         "U0299C8QT", // teemperor (Fix title!)
         "U02RCLE6C", // Gero (Remove "Elementary" from title)
+        "U028XTDHM", // Kiran (inactive)
     );
 ?>
 
