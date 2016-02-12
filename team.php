@@ -21,6 +21,8 @@
         "U0299C8QT", // teemperor (Fix title!)
         "U02RCLE6C", // Gero (Remove "Elementary" from title)
         "U028XTDHM", // Kiran (inactive)
+        "U02AEMYH1", // Tom (inactive)
+        "U02AENUA1", // Mario (inactive)
     );
 ?>
 
