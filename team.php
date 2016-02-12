@@ -32,8 +32,6 @@
 </section>
 <section class="grid">
     <div class="whole">
-        <h2>The Team</h2>
-        <!-- Team Directory -->
         <div class="team-directory">
 
             <?php
