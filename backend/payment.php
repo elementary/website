@@ -15,7 +15,7 @@ if (isset($_POST['token'])) {
             'amount' => $amount,
             'currency' => 'usd',
             'card' => $token,
-            'description' => 'elementary OS download',
+            'description' => 'elementary OS Freya 0.3.2',
             'receipt_email' => $email,
         ));
         // Set an insecure, HTTP only cookie for 10 years in the future.
