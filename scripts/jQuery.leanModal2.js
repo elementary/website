@@ -19,7 +19,9 @@
 			var defaults = {
 				top: 100,
 				overlayOpacity: 0.5,
-				closeButton: false
+				closeButton: false,
+				disableCloseOnOverlayClick: false,
+           		disableCloseOnEscape: false,
 			};
 
 			// Merge in the passed options.
@@ -41,7 +43,7 @@
 
 					// IFHREF Fetch the Modal_ID
 					if ( $(this).attr('href') ) {
-						var modal_id = $(this).attr('href');
+						var modal_id = $(this).attr('href');			
 					// IFHREF Fall back to if no href data-open-modal.
 					} else if ( $(this).attr('data-modal-id') ) {
 						var modal_id = $(this).attr('data-modal-id');
@@ -51,7 +53,9 @@
 
 					// Set the function to close the overlay if you click it.
 					$('.js-target-jquery-leanmodal-overlay').click(function() {
-						leanModal_Close(modal_id);
+						if(!options.disableCloseOnOverlayClick) {
+							leanModal_Close(modal_id);
+						}
 					});
 
 					// If a close button is set, link it to the close command.
@@ -63,9 +67,9 @@
 
 					// Close the modal on escape
 					$(document).on('keyup', function(evt) {
-						if (evt.keyCode == 27) {
-							leanModal_Close(modal_id);
-						}
+							if (evt.keyCode == 27 && !options.disableCloseOnEscape ) {
+								leanModal_Close(modal_id);
+							}
 					});
 
 					var modal_height = $(modal_id).innerHeight();

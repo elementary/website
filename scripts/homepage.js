@@ -66,22 +66,23 @@ $(function () {
         StripeCheckout.open({
             key: stripe_key,
             token: function (token) {
-                console.log(JSON.parse(JSON.stringify(token)));
-                process_payment(amount, token);
-                open_download_overlay();
+                // console.log(JSON.parse(JSON.stringify(token)));
+                process_payment(amount, token); 
+                //this moved to after success payment              
+                // open_download_overlay();
             },
             name: 'elementary LLC.',
-            description: 'elementary OS download',
+            description: 'elementary OS - '+download_os_codename+' - download',
             bitcoin: true,
             alipay: 'auto',
             locale: stripe_language() || 'auto',
-            amount: amount
+            amount: amount,
         });
     }
 
     function process_payment (amount, token) {
         var payment_http, $amount_ten;
-
+        openPaymentProgressModal();
         $amount_ten = $('#amount-ten');
 
         if ($amount_ten.val() !== 0) {
@@ -92,12 +93,23 @@ $(function () {
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
         payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
+        payment_http.onreadystatechange = function() {
+            if (payment_http.readyState == 4) {
+               if( payment_http.responseText=="PAID" && payment_http.status == 200) {
+                  // payment sucess you can add code here changedownload button etc 
+                   console.log(payment_http.responseText);                  
+                   $('#download').text('Download elementary OS');
+               }
+               $('.close-paymentprogress-modal').click();
+               open_download_overlay();                                                                             
+            }
+        };
     }
 
     function open_download_overlay () {
         var $open_modal;
 
-        $open_modal = $('.open-modal');
+        $open_modal = $('.open-download-modal');
 
         console.log('Open the download overlay!');
         $open_modal.leanModal({
@@ -105,6 +117,15 @@ $(function () {
             closeButton: '.close-modal',
         });
         $open_modal.click();
+    }
+
+    function openPaymentProgressModal(){  
+        $('.open-paymentprogress-modal').leanModal({
+            disableCloseOnOverlayClick: true,
+            disableCloseOnEscape: true,
+            closeButton: '.close-paymentprogress-modal'
+        });
+        $('.open-paymentprogress-modal').click();
     }
 
     function detect_os() {
@@ -240,6 +261,5 @@ $(function () {
 
     $('#amounts').on('click', updateDownloadButton);
     $('#amounts input').on('input', updateDownloadButton);
-
-    console.log('Loaded homepage.js');
+   
 });
