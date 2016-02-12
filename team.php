@@ -11,7 +11,7 @@
     $apiContent = file_get_contents($apiUrl);
     $apiResponse = json_decode($apiContent, true);
 
-    $apiBlacklist = array( // Blacklist certain member IDs from showing up on the page
+    $apiFilter = array( // Filter certain member IDs from showing up on the page
         "USLACKBOT", // slackbot
         "U02CH39T2", // Nathan Dyer (3rd-party)
         "U02DCH8AF", // ikey (3rd-party)
@@ -35,8 +35,8 @@
         <div class="team-directory">
 
             <?php
-                $members = array_filter( $apiResponse['members'], function($member) use ($apiBlacklist) {
-                    if ( in_array( $member['id'], $apiBlacklist ) ) return false;
+                $members = array_filter( $apiResponse['members'], function($member) use ($apiFilter) {
+                    if ( in_array( $member['id'], $apiFilter ) ) return false;
                     if ( $member['deleted'] ) return false;
                     if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
                     if ( $member['is_bot'] ) return false;
