@@ -36,6 +36,11 @@
 </section>
 <section class="grid">
     <div class="whole">
+
+        <?php
+            if ($apiResponse['ok']) {
+        ?>
+
         <div class="team-directory">
 
             <?php
@@ -86,6 +91,11 @@
             ?>
 
         </div>
+
+        <?php
+            }
+        ?>
+
         <a class="button suggested-action" href="get-involved">Get Involved</a>
     </div>
 </section>
