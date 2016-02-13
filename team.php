@@ -6,8 +6,9 @@
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/team.css">';
     include $template['header'];
     include $template['alert'];
+    require_once __DIR__.'/backend/config.loader.php';
 
-    $apiUrl = 'https://slack.com/api/users.list?token=xoxp-2298712223-2307772529-20800596548-41da6b62be&presence=1';
+    $apiUrl = "https://slack.com/api/users.list?presence=1&token={$config['slack_token']}";
     $apiContent = file_get_contents($apiUrl);
     $apiResponse = json_decode($apiContent, true);
 
@@ -24,6 +25,7 @@
         "U02AEMYH1", // Tom (inactive)
         "U02AENUA1", // Mario (inactive)
     );
+
 ?>
 
 <section class="grid">
