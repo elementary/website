@@ -97,6 +97,7 @@
         ?>
 
         <a class="button suggested-action" href="get-involved">Get Involved</a>
+        <p class="small-label"><i class="fa fa-slack"></i> Powered by Slack</p>
     </div>
 </section>
 
