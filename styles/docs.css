@@ -1,19 +1,7 @@
-/***************************************
-* Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
-***************************************/
-
-h2,
-h3,
-h4 {
-    margin-bottom: 16px;
-    margin-top: 32px;
-    text-align: left;
-}
-
-h4 {
-    font-weight: 400;
-}
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
 
 h1 a.heading-link,
 h2 a.heading-link,
@@ -165,11 +153,6 @@ nav {
     fill: #fff;
     position: relative;
     z-index: 100;
-}
-
-.row.docs,
-.row.docs .slide {
-    max-width: 800px;
 }
 
 .row.docs-index {
