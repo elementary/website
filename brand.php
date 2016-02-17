@@ -57,7 +57,7 @@
         </dl>
         <dl class="purple">
             <dt>Grape</dt>
-            <dd class="hex">904c9b</dd>
+            <dd class="hex">8a4ebf</dd>
         </dl>
         <dl class="white">
             <dt>White</dt>
@@ -115,7 +115,7 @@
     }
 
     .purple {
-        background-color: #904c9b;
+        background-color: #8a4ebf;
         color: #fff;
     }
 
@@ -127,7 +127,7 @@
         background-color: #333;
         color: #fff;
     }
-    
+
     dt,
     dd {
         display: block;
