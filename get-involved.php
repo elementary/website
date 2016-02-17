@@ -86,7 +86,7 @@
 
     <div class="web-browser">
         <h2>Web Development</h2>
-        <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
+        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
         <div class="actions">
             <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
@@ -137,7 +137,7 @@
     <div class="grid">
         <div class="half">
             <h2>Desktop Development</h2>
-            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
+            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
