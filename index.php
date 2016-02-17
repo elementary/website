@@ -5,10 +5,12 @@
     include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
     include $template['alert'];
+    require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
+            <script>var release = '<?=$config['release']?>';</script>
             <script>var download_region = '<?php echo $region; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
@@ -33,7 +35,8 @@
             <div class="row">
                 <div id="amounts">
                     <?php
-                        if ( isset($_COOKIE['has_paid_freya']) && $_COOKIE['has_paid_freya'] ) {
+                        $encoded = urlencode(str_replace(' ', '', $config['release']));
+                        if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
                             ?>
                     <input type="hidden" id="amount-ten" value="0">
                             <?php
