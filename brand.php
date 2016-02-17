@@ -70,6 +70,27 @@
         </dl>
     </div>
 
+    <h2>Fonts</h2>
+    <p>For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.</p>
+
+    <h2>Third Parties</h2>
+    <p>We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:</p>
+    <ul>
+        <li>Color</li>
+        <li>Fonts</li>
+        <li>Voice/tone</li>
+    </ul>
+    <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
+    <ul>
+        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, or service, or in any logo you create.</li>
+        <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
+    </ul>
+
+    <h2>Merchandise</h2>
+    <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>
+
+    <h2>More Info</h2>
+    <p>For further info regarding the use of the elementary name, branding, and trademarks, please email brand@elementary.io.</p>
 </div>
 
 <?php
