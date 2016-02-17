@@ -8,7 +8,7 @@
 
 <div class="row docs">
     <h1>Brand</h1>
-    <p>The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and such. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
+    <p>The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
 
     <h2>Name</h2>
     <p>The word "elementary" refers to and is a trademark of elementary LLC. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. "elementary OS") to refer to a specific product of elementary.</p>
@@ -23,6 +23,7 @@
     </ul>
 
     <h3>Logotype</h3>
+    <img src="<?=$sitewide['root'];?>images/brand/logotype.png" alt="elementary Logotype"/>
     <p>The logotype is to be used when space allows to refer to elementary the company. It can be used before a product name to refer to a specific product of elementary.</p>
     <p>The logotype should always be used under the following guidelines:</p>
     <ul>
@@ -31,6 +32,7 @@
     </ul>
 
     <h3>Logomark</h3>
+    <img src="<?=$sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
     <p>The "e" logomark is to be used to refer to elementary the company when space is constrained or a square ratio is required.</p>
 
     <h2>Color</h2>
