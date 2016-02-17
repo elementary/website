@@ -6,6 +6,7 @@ $l10n->set_domain('layout');
             <p>
                 Copyright &copy; <?php echo date('Y'); ?> elementary LLC.
                 <a href="<?php echo $sitewide['root'].'team'; ?>">Team</a>
+                <a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a>
                 <a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a>
             </p>
             <div class="popover">
