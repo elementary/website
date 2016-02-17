@@ -146,6 +146,8 @@
 
     dd {
         transform: translate(-50%, 0%);
+        opacity: 0.8;
+            font-size: 14px;
     }
 </style>
 
