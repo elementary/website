@@ -91,8 +91,9 @@
     <h2>Merchandise</h2>
     <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>
 
-    <h2>More Info</h2>
-    <p>For further info regarding the use of the elementary name, branding, and trademarks, please email brand@elementary.io.</p>
+    <h2>Assets &amp; More Info</h2>
+    <a class="button suggested-action" href="https://github.com/elementary/brand"><i class="fa fa-github"></i> Download on GitHub</a>
+    <p>For further information regarding the use of the elementary name, branding, and trademarks, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a>.</p>
 </div>
 
 <?php
