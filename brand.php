@@ -1,6 +1,7 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Brand &sdot; elementary';
+    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/brand.css">';
     include $template['header'];
     include $template['alert'];
 ?>
@@ -70,87 +71,6 @@
     </div>
 
 </div>
-
-<style>
-    .hex {
-        font-family: mono;
-    }
-
-    .hex::before {
-        content: "#"
-    }
-
-    dl {
-        position: relative;
-        display: inline-block;
-        width: 128px;
-        height: 128px;
-        margin: 24px;
-        border-radius: 50%;
-        border: none;
-        box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.35), inset 0 0 0 2px rgba(255,255,255, 0.10), inset 0 2px 0 0 rgba(255,255,255, 0.45), inset 0 -2px 0 0 rgba(255,255,255, 0.15), 0 1px 3px 0 rgba(0,0,0,0.12), 0 1px 2px 0 rgba(0,0,0,0.24);
-    }
-
-    .blue {
-        background-color: #3892e0;
-        color: #fff;
-    }
-
-    .red {
-        background-color: #da4d45;
-        color: #fff;
-    }
-
-    .orange {
-        background-color: #f37329;
-        color: #fff;
-    }
-
-    .yellow {
-        background-color: #fbd25d;
-    }
-
-    .green {
-        background-color: #93d844;
-    }
-
-    .purple {
-        background-color: #8a4ebf;
-        color: #fff;
-    }
-
-    .white {
-        background-color: #fff;
-    }
-
-    .black {
-        background-color: #333;
-        color: #fff;
-    }
-
-    dt,
-    dd {
-        display: block;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0;
-        padding: 0;
-    }
-
-    dt {
-        transform: translate(-50%, -100%);
-    }
-
-    dd {
-        transform: translate(-50%, 0%);
-        opacity: 0.8;
-            font-size: 14px;
-    }
-</style>
-
 
 <?php
     include $template['footer'];
