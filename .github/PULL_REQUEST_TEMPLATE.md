@@ -1,7 +1,5 @@
 Fixes #
 
-Test at http://beta.elementary.io/branch/origin/BRANCH_NAME/
-
 ### Changes Summary
 
 - 
