@@ -8,3 +8,9 @@ Describe what actually happened, being specific about how this differs from your
 1. 
 2. 
 3. 
+
+### System
+- Operating System
+- Operating System Version
+- Browser
+- Browser Version
