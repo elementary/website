@@ -1,9 +1,9 @@
 .page-brand svg {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .page-brand .hex {
-    font-family: mono;
+    font-family: "Roboto Mono", monospace;
 }
 
 .page-brand .hex::before {
