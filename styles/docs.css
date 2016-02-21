@@ -90,7 +90,7 @@ kbd {
 
 code {
     background-color: #f1f2f7;
-    color: #3a416f;
+    color: #403757;
 }
 
 pre {
@@ -148,7 +148,7 @@ pre + h1 {
 }
 
 nav {
-    background-color: #3a416f;
+    background-color: #403757;
     color: #fff;
     fill: #fff;
     position: relative;
@@ -204,7 +204,7 @@ nav {
 }
 
 .sidebar a:hover {
-    color: #3a416f;
+    color: #403757;
 }
 
 .sidebar ul {
