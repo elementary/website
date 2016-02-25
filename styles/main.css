@@ -220,6 +220,7 @@ nav {
 }
 
 nav > .nav-content {
+    min-width: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -239,6 +240,10 @@ nav > .nav-content > ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav > .nav-content > ul:first-child {
+    -webkit-flex: 0 0 auto;
 }
 
 html.ie9 nav > .nav-content {
