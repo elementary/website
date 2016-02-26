@@ -241,6 +241,10 @@ nav > .nav-content > ul {
     padding: 0;
 }
 
+nav > .nav-content > ul:first-child {
+    -webkit-flex: 0 0 auto;
+}
+
 html.ie9 nav > .nav-content {
     min-width: 550px;
 }
