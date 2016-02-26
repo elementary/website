@@ -234,16 +234,18 @@ $(function () {
 
     // Change Button text on payment click
     function updateDownloadButton () {
-        var payment_amount = $('#amount-custom').val() * 100;
+        var translate_download = $('#translate-download').text();
+        var translate_purchase = $('#translate-purchase').text();
+
         if ($('#amounts').children().length <= 1) {
-            $('#download').text('Download elementary OS');
+            $('#download').text(translate_download);
+        } else if (
+            $('button.payment-button').hasClass('checked') ||
+            $('#amount-custom').val() * 100 >= payment_minimum
+        ) {
+            $('#download').text(translate_purchase);
         } else {
-            if ($('input.button#amount-custom').val() * 100  >= payment_minimum ||
-                $('button.payment-button').hasClass('checked')) {
-                $('#download').text('Purchase elementary OS');
-            } else {
-                $('#download').text('Download elementary OS');
-            }
+            $('#download').text(translate_download);
         }
     }
 

@@ -4,7 +4,7 @@
 ***************************************/
 
 nav {
-    background-color: #3A416F;
+    background-color: #403757;
     color: #fff;
     fill: #fff;
 }
@@ -46,7 +46,7 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
-    background-color: #3A416F;
+    background-color: #403757;
     color: #fff;
     text-align: center;
     padding: 64px 0;
@@ -68,7 +68,7 @@ section.hero .button.suggested-action{
 }
 
 .third .fa {
-    color: #3A416F;
+    color: #403757;
 }
 
 footer,
