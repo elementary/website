@@ -227,14 +227,17 @@ $(function () {
     // Change Button text on payment click
     function updateDownloadButton () {
         var payment_amount = $('#amount-custom').val() * 100;
+        var translate_download = $('#translate-download').text();
+        var translate_purchase = $('#translate-purchase').text();
+
         if (
             $('input#amount-custom').hasClass('checked') &&
             payment_amount < payment_minimum &&
             $('#amount-custom').val() != ''
         ) {
-            $('#download').text('Download elementary OS');
+            $('#download').text(translate_download);
         } else {
-            $('#download').text('Purchase elementary OS');
+            $('#download').text(translate_purchase);
         }
     }
 

@@ -221,6 +221,8 @@
                     <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
                 </div>
             </div>
+            <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
+            <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
                 <h3>Choose a Download</h3>
