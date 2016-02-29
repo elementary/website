@@ -86,11 +86,11 @@
 
     <div class="web-browser">
         <h2>Web Development</h2>
-        <p>Our website is built using HTML, CSS, PHP and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
+        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
 
         <div class="actions">
-            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Us on GitHub</a>
-            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">See Our Open Bug Reports</a>
+            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
+            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report an Issue with Our Website</a>
         </div>
     </div>
 </section>
@@ -137,7 +137,7 @@
     <div class="grid">
         <div class="half">
             <h2>Desktop Development</h2>
-            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
+            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
@@ -178,7 +178,7 @@
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
-                <input type="submit" style="width: 100%;" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
+                <input type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
             </div>

@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-### Copyright © 2015 elementary & [The Web Team](https://github.com/elementary/mvp/graphs/contributors)
+### Copyright © 2016 elementary & [The Web Team](https://github.com/elementary/mvp/graphs/contributors)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

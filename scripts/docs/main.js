@@ -6,8 +6,8 @@ $(document).ready(function() {
             $(this).text($(this).text().trim());
         });
 
-        // Add line numbers
-        if (!$(this).is('.language-bash')) {
+        // Add line numbers, unless it's bash or doesn't want to be highlighted
+        if (!$(this).is('.language-bash') && !$(this).hasClass('nohighlight')) {
             var lines = $(this).text().trim().split('\n').length;
             var $numbering = $('<ul/>').addClass('pre-numbering');
             $(this).parent().addClass('has-numbering').prepend($numbering);
@@ -16,10 +16,16 @@ $(document).ready(function() {
                 $numbering.append($('<li/>').text(i));
             }
         }
+
         $(this).parent().addClass('highlighted');
 
-        // Highlight code block
-        hljs.highlightBlock(block);
+        if (!$(this).hasClass('nohighlight')) {
+          // Highlight code block
+          hljs.highlightBlock(block);
+        } else {
+          // Fake highlighting for stylesheet things
+          $(this).addClass('hljs');
+        }
     });
 
     // Anchor headings
@@ -60,7 +66,9 @@ $(document).ready(function() {
     // Url hash selector. Only in docs class to avoid nav conflicts
     $(document).on('scroll', function (event) {
         // Changes browser hash without adding to history
-        history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+        if (currentSection.id !== location.hash.substr(1)) {
+            history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+        }
     });
 
     // Sidebar

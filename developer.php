@@ -1,7 +1,9 @@
 <?php
     include '_templates/sitewide.php';
+    $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
+    $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Develop Apps for elementary OS';
-    $page['theme-color'] = '#226BB3';
+    $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
     include $template['alert'];
