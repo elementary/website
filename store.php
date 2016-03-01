@@ -35,20 +35,20 @@ $cart = storeCart();
                 foreach ($categories as $category => $items) {
             ?>
 
-            <div class="row category" id="<?=$category?>">
-                <h2><?=$category?></h2>
+            <div class="row category" id="<?php echo $category ?>">
+                <h2><?php echo $category ?></h2>
                 <div>
 
                 <?php
                     foreach ($items as $key => $item) {
                 ?>
 
-                    <div class="product" id="<?=$item['name']?>">
-                        <img src="images/store/<?=urlencode(strtolower($category))?>/<?=urlencode(strtolower($item['name']))?>-small.png"/>
-                        <h2><?=$item['name']?></h2>
-                        <h3>$<?=$item['retail_price']?></h3>
-                        <p><?=$item['description']?></p>
-                        <a style="display:none;" class="open-modal" href="#<?=$item['uid']?>"></a>
+                    <div class="product" id="<?php echo $item['name'] ?>">
+                        <img src="images/store/<?php echo $item['id'] ?>-small.png"/>
+                        <h2><?php echo $item['name'] ?></h2>
+                        <h3>$<?php echo $item['retail_price'] ?></h3>
+                        <p><?php echo $item['description'] ?></p>
+                        <a style="display:none;" class="open-modal" href="#<?php echo $item['id'] ?>"></a>
                     </div>
 
                 <?php
@@ -67,23 +67,23 @@ $cart = storeCart();
             </div>
 
             <?php
-                foreach ($product as $key => $item) {
+                foreach ($product as $id => $item) {
             ?>
 
-            <div id="<?=$item['uid']?>" class="modal">
+            <div id="<?php echo $id ?>" class="modal">
                 <i class="fa fa-close close-modal"></i>
-                <h1><?=$item['name']?></h1>
+                <h1><?php echo $item['name'] ?></h1>
                 <div class="row">
                     <div class="column half">
-                        <img src="images/store/<?=urlencode(strtolower($item['category']))?>/<?=urlencode(strtolower($item['name']))?>-large.png"/>
+                        <img src="images/store/<?php echo $id ?>-large.png"/>
                     </div>
                     <div class="column half">
-                        <h2>$<?=$item['retail_price']?></h2>
-                        <p><?=$item['description']?></p>
+                        <h2>$<?php echo $item['retail_price'] ?></h2>
+                        <p><?php echo $item['description'] ?></p>
                         <div>
                             <label for="quantity">Qty:</label>
-                            <?php if (isset($cart[$item['uid']])) { ?>
-                            <input type="number" step="1" min="0" name="quantity" placeholder="1" value="<?=$cart[$item['uid']]?>">
+                            <?php if (isset($cart[$id])) { ?>
+                            <input type="number" step="1" min="0" name="quantity" placeholder="1" value="<?php echo $cart[$id] ?>">
                             <?php } else { ?>
                             <input type="number" step="1" min="0" name="quantity" placeholder="1" value="1">
                             <?php } ?>

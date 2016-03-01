@@ -23,8 +23,17 @@ $cart = storeCart();
 
             <?php
                 if ($cart != false) {
-                    foreach ($cart as $item => $quantity) {
+                    foreach ($cart as $key => $quantity) {
+                        $item = $product[$key];
             ?>
+
+            <div>
+                <img src="images/store/<?php echo urlencode(strtolower($item['name'])) ?>-small.png"/>
+                <?php if ($quantity > 1) { ?>
+                    <h3><?php echo $quantity?>x <?php echo $item['name'] ?></h3>
+                <?php } else { ?>
+                    <h3><?php echo $item['name'] ?></h3>
+                <?php } ?>
 
             <span>UID: <?=$item?> @ <?=$quantity?></span>
 
