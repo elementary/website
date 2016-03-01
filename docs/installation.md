@@ -74,11 +74,13 @@ ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-![Rufus - select ISO](images/docs/installation/rufus_select_iso.png){.float-left}
+![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
+
+<a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
 
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
-You'll also need a small application called Rufus. You'll have to download it from <a href="https://rufus.akeo.ie/" target="_blank">its website</a> and open the downloaded file to launch it. It will open a window like the one below:
+You'll also need a small application called Rufus. It will open a window like the one shown here.
 
 You can now insert your USB drive and select it in the "Device" list. After that, you'll have to select "ISO Image" in "Create a bootable disk using..." and click
 ![the disk icon](images/docs/installation/rufus_disk_icon.png) to choose the ISO that you downloaded previously.
@@ -133,11 +135,13 @@ ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
+<a href="https://github.com/linusbobcat/create-elementary-os-installer/releases/" class="button suggested-action">Download "Create elementary Installer"</a>
+
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
 Before creating an install drive, make sure you have all OS X updates installed. To check for available updates, open the Apple Menu and select either "Software Update&#8230;" or "App Store&#8230;" Make sure to install any OS updates in addition to ones labeled with "Firmware" and "Boot Camp".
 
-You'll need a small application called "Create elementary Installer". Download the latest version from [here](https://github.com/linusbobcat/create-elementary-os-installer/releases/), uncompress it, and open the app to launch it. If your Mac cannot open it because it's from an unidentifiable developer, right (or control) click the app, and click "Open".
+You'll need a small application called "Create elementary Installer". If your Mac cannot open it because it's from an unidentifiable developer, right (or control) click the app, and click "Open".
 
 Insert your spare USB drive, and in the window below, select the ISO file you've just downloaded.
 
@@ -196,9 +200,11 @@ ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
+<a href="http://appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
+
 Begin with a spare USB flash drive with at least 1 GB of free space.
 
-You'll also need a small application called UNetbootin. To install it, just <a href="http://appnr.com/install/unetbootin">click this link</a>.
+You'll also need a small application called UNetbootin.
 
 Open UNetbootin from the Dash. It will open a window like the one below:
 
