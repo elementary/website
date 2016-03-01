@@ -88,6 +88,12 @@ You may be asked for your password prior to installing an app.
 
 _Note: Some software may not be available from the Software Center. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 14.04 LTS should work just as well on elementary OS Freya._
 
+## Updating {#updating}
+
+elementary OS includes "Software Update", an easy to use utility for installing app updates and security patches. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
+
+For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/trusty/">Ubuntu security notices</a>.
+
 ## System Settings {#system-settings}
 
 elementary OS comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
