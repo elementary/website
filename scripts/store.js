@@ -3,7 +3,7 @@ $(function () {
     console.log("The shelves are empty today");
     return;
   } else {
-    console.log("Come and get your hot " + store.length + " items today!");
+    console.log("Come and get your hot " + Object.keys(store).length + " items today!");
   }
 
   $('.product img').on('click', function (event) {
@@ -13,9 +13,9 @@ $(function () {
     var $product = ($(this).hasClass('product')) ? $(this) : $(this).closest('.product');
     var product = $product.attr('id');
     var category = $(this).closest('.category').attr('id');
-    var uid = category + '-' + product;
+    var id = category + '-' + product;
 
-    var $modal = $('div.modal#' + uid);
+    var $modal = $('div.modal#' + id);
     var $modalButton = $product.find('.open-modal');
 
     $modalButton.leanModal({
@@ -29,8 +29,8 @@ $(function () {
 
     $button = $(this);
 
-    var uid = $button.closest('.modal').attr('id');
-    if (typeof uid === 'undefined') {
+    var id = $button.closest('.modal').attr('id');
+    if (typeof id === 'undefined') {
       console.log("This is not for sale sir");
       return;
     }
@@ -43,15 +43,15 @@ $(function () {
     }
 
     $.get("store/addtocart", {
-      uid: uid,
+      id: id,
       quantity: quantity
     })
     .done(function(data) {
       if (data === "OK") {
         if (quantity > 0) {
-          console.log("That's a nice " + uid + " you got there");
+          console.log("That's a nice " + id + " you got there");
         } else {
-          console.log("You will be missed " + uid);
+          console.log("You will be missed " + id);
         }
         $button.closest('.modal').find('.close-modal').click();
       } else {
