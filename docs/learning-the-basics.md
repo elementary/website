@@ -73,6 +73,9 @@ You can customize these shortcuts through **[System Settings](/docs/learning-the
 
 _Note: <kbd>⌘</kbd> refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
 
+### Multiple Displays {#multiple-displays}
+The panel, dock, and workspaces appear only on the primary display. Any other attached displays act as standalone workspaces. To manage and rearrange displays, head to **[System Settings](/docs/learning-the-basics#system-settings)** → **Displays**. Your primary display is marked with a filled-in star (<i class="fa fa-star"></i>) and each display's settings can be changed from its cog (<i class="fa fa-cog"></i>) menu.
+
 ## Installing Apps {#installing-apps}
 
 elementary OS comes bundled with **Software Center**, an app store for free and paid apps. Installing a new app from Software Center is easy:
@@ -84,6 +87,12 @@ elementary OS comes bundled with **Software Center**, an app store for free and 
 You may be asked for your password prior to installing an app.
 
 _Note: Some software may not be available from the Software Center. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 14.04 LTS should work just as well on elementary OS Freya._
+
+## Updating {#updating}
+
+elementary OS includes "Software Update", an easy to use utility for installing app updates and security patches. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
+
+For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/trusty/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 

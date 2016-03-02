@@ -321,7 +321,7 @@ The next thing we need is a build system. The build system that we're going to b
 1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Make sure you're in "~/Projects" (not in your hello-again folder) and then grab the latest copy of those modules with bzr. Notice that we're not in "~/Projects/hello-world". This is because our cmake modules are not a branch of our Hello World app:
 
     ```bash
-    bzr branch  lp:~elementary-apps/+junk/cmake-modules
+    bzr branch lp:~elementary-os/+junk/cmake-modules
     ```
 
 2. You'll see a folder called "cmake". Copy that into your "hello-again" folder. It's that easy.

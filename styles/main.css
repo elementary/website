@@ -1,7 +1,14 @@
-/***************************************
-* Copyright 2015 elementary LLC.       *
-* This file is part of elementaryos.io *
-***************************************/
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Raleway-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Raleway-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 
 html,
 body {
@@ -143,6 +150,11 @@ img.h1 {
     opacity: 0.8;
 }
 
+img.inline {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
 .inline-tweet {
     color: inherit;
 }
@@ -178,7 +190,7 @@ img.h1 {
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
-    margin-top: 0.2em;
+    margin-top: 0.05em;
     padding-left: 6px;
     position: absolute;
     transition: padding 0.15s ease-in-out;
@@ -232,6 +244,10 @@ nav > .nav-content > ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav > .nav-content > ul:first-child {
+    -webkit-flex: 0 0 auto;
 }
 
 html.ie9 nav > .nav-content {
@@ -436,6 +452,23 @@ footer ul li a:focus {
     text-align: left;
 }
 
+.row.docs,
+.row.docs .slide {
+    max-width: 800px;
+}
+
+.row.docs h2,
+.row.docs h3,
+.row.docs h4 {
+    margin-bottom: 16px;
+    margin-top: 32px;
+    text-align: left;
+}
+
+.row.docs h4 {
+    font-weight: 400;
+}
+
 /*******
 * Grid *
 *******/
@@ -589,7 +622,6 @@ button,
     font-family: inherit;
     font-size: 16px;
     margin: 24px;
-    max-width: 250px;
     outline: none;
     padding: 16px 32px;
     text-align: center;
@@ -634,11 +666,11 @@ button.suggested-action,
     background: none;
     border-width: 2px;
     box-shadow: none;
-    display: block;
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 0;
     margin-top: 10px;
+    min-width: 250px;
     padding: 7px;
     text-shadow: none;
 }

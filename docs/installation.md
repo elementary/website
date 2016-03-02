@@ -11,7 +11,7 @@ elementary OS is currently built for two processor architectures, 32-bit and 64-
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
-* 1 GHz 32-bit or 64-bit processor
+* Intel i3 or comparable dual-core 64-bit processor
 * 1 GB of system memory (RAM)
 * 15 GB of disk space
 * Internet access
@@ -63,27 +63,28 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 4. Verify that the text in "Results" matches one of the following hashes
 
 #### 32-bit
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
 #### 64-bit
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-![Rufus - select ISO](images/docs/installation/rufus_select_iso.png){.float-left}
+![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
 
-Begin with a spare USB flash drive with at least 1 GB of free space.
+You'll need a USB flash drive with at least 1 GB of free space and a program called Rufus.
 
-You'll also need a small application called Rufus. You'll have to download it from <a href="https://rufus.akeo.ie/" target="_blank">its website</a> and open the downloaded file to launch it. It will open a window like the one below:
+<a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
 
-You can now insert your USB drive and select it in the "Device" list. After that, you'll have to select "ISO Image" in "Create a bootable disk using..." and click
-![the disk icon](images/docs/installation/rufus_disk_icon.png) to choose the ISO that you downloaded previously.
-
-Click "Start", then just wait for the process to finish.
+1. Open Rufus
+2. Insert your USB drive and select it in the "Device" list
+3. Select "ISO Image" next to "Create a bootable disk using..."
+4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
+5. Click "Start" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -107,13 +108,13 @@ Verifying your download is an important, but optional step. We generate a checks
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 shasum -a 256 elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
@@ -121,31 +122,33 @@ should produce the output:
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 shasum -a 256 elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-Begin with a spare USB flash drive with at least 1 GB of free space.
-
 Before creating an install drive, make sure you have all OS X updates installed. To check for available updates, open the Apple Menu and select either "Software Update&#8230;" or "App Store&#8230;" Make sure to install any OS updates in addition to ones labeled with "Firmware" and "Boot Camp".
 
-You'll need a small application called "Create elementary Installer". Download the latest version from [here](https://github.com/linusbobcat/create-elementary-os-installer/releases/), uncompress it, and open the app to launch it. If your Mac cannot open it because it's from an unidentifiable developer, right (or control) click the app, and click "Open".
+You'll need a USB flash drive with at least 1 GB of free space and a program called "Create elementary Installer".
 
-Insert your spare USB drive, and in the window below, select the ISO file you've just downloaded.
+<a href="https://github.com/linusbobcat/create-elementary-os-installer/releases/" class="button suggested-action">Download Create elementary Installer</a>
 
-![Create elementary OS USB Installer](images/docs/installation/osx_select_iso.png)
 
-Next, select your USB drive to start the installer creation process.
+1. Open "Create elementary Installer". If your Mac cannot open it because it's from an unidentifiable developer, right click the app, and select "Open".
+2. Insert the spare USB drive, and select the ISO file you've just downloaded.
 
-![Select USB Drive](images/docs/installation/osx_select_drive.png)
+    ![Create elementary OS USB Installer](images/docs/installation/osx_select_iso.png)
+
+3. Select your USB drive to start the installer creation process.
+
+    ![Select USB Drive](images/docs/installation/osx_select_drive.png)
 
 If your Mac doesn't recognize the resulting drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-freya-xx.xx.iso to Disc".
 
@@ -170,13 +173,13 @@ Verifying your download is an important, but optional step. We generate a checks
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 sha256sum elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
 ```
 
@@ -184,27 +187,31 @@ should produce the output:
 
 Running the following command in your terminal:
 
-```bash
+```bash nohighlight
 sha256sum elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
-```bash
+```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-Begin with a spare USB flash drive with at least 1 GB of free space.
+You'll need a USB flash drive with at least 1 GB of free space and a program called UNetbootin.
 
-You'll also need a small application called UNetbootin. To install it, just <a href="http://appnr.com/install/unetbootin">click this link</a>.
+<a href="http://appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
 
-Open UNetbootin from the Dash. It will open a window like the one below:
 
-![UNetbootin](images/docs/installation/unetbootin.png)
+1. Open UNetbootin from the Dash. It will open a window like the one below:
 
-Make sure "Diskimage" is selected, and click "&#8230;" to select the ISO that you downloaded previously. Unplug all USB memory devices apart from the one you want to use. Click "OK" and wait for the process to finish.
+    ![UNetbootin](images/docs/installation/unetbootin.png)
+
+2. Select "Diskimage"
+2. Click "&#8230;" to select the ISO that you downloaded previously. 
+3. Unplug all USB memory devices apart from the one you want to use. 
+4. Click "OK" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 

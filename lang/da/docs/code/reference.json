@@ -25,6 +25,8 @@
     "Comments are indented alongside the code, and obvious comments do more harm\nthan good.": "Kommentarer er rekvireret sammen med kode, og åbenlyse kommentarer gør mere skade end godt.",
     "Variable names, class names, function names": "Variable names, class names, function names",
     "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.": "Også værd at nævne er at der ikke skal være nogen ungarsk tegnsystem, og ingen mix af nogen som helst tegnsystemer.",
+    "Casting": "Casting",
+    "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.",
     "Vala namespaces": "Vala namespaces",
     "Referring to GLib is not necessary. If you want to print something:": "Henvisning til GLib er ikke nødvendigt, hvis du gerne vil printe noget:",
     "Opt for the second one, it's much cleaner.": "Brug nummer to, den er meget simplere.",

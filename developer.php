@@ -1,7 +1,9 @@
 <?php
     include '_templates/sitewide.php';
+    $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
+    $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Develop Apps for elementary OS';
-    $page['theme-color'] = '#226BB3';
+    $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
     include $template['alert'];
@@ -36,7 +38,7 @@
 <div class="grid">
     <div class="two-thirds">
         <image src="images/developer/logo.svg">
-        <h1>Build for <?php include("./images/logotype.svg"); ?></h1>
+        <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
         <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
     </div>
 </div>
@@ -89,7 +91,7 @@
         <div class="two-thirds">
             <img src="images/developer/vala.svg">
             <h2>Vala. A Modern, Fast, Open Source Language.</h2>
-            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assited memory management, exception handling, type inference, async/yield, and more.</p>
+            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>

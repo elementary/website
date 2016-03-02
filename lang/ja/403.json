@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "Sorry, access is denied.",
-    "You don't have permission to view the requested resource.": "You don't have permission to view the requested resource.",
-    "Go to Home Page": "ホームページに移動",
-    "Access Denied &sdot; elementary": "Access Denied ⋅ elementary"
+    "Sorry, access is denied.": "申し訳ありません。アクセスは禁止されています。",
+    "You don't have permission to view the requested resource.": "要求リソースの閲覧権限がありません。",
+    "Go to Home Page": "ホームページへ移動",
+    "Access Denied &sdot; elementary": "アクセス拒否 ⋅ elementary"
 }

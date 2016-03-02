@@ -1,5 +1,6 @@
 # Get rid of silly temp files
 *~
+*.custom.*
 backend/config.php
-.vagrant/
 backend/chart.json
+.vagrant/
