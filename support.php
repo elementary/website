@@ -7,7 +7,7 @@
 ?>
 
 <div class="row">
-    <h1>Get support for <?php include("./images/logotype.svg"); ?></h1>
+    <h1>Get support for <?php include("./images/logotype-os.svg"); ?></h1>
 </div>
 
 <div class="row apps">
