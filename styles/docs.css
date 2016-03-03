@@ -104,6 +104,15 @@ pre > code {
     white-space: pre;
 }
 
+/**********
+* Buttons *
+**********/
+
+.button {
+    display: table;
+    margin: 0 auto;
+}
+
 /***************
 * Line numbers *
 ***************/
