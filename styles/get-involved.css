@@ -21,28 +21,12 @@ footer {
 ***********/
 
 section {
-    padding-bottom: 64px;
+    padding: 32px 0;
 }
 
 section.light {
     background-color: #fdf6e3;
     color: #586e75;
-}
-
-section .heading {
-    background-color: rgba(0, 0, 0, 0.04);
-    padding: 16px 32px;
-    text-align: center;
-}
-
-section .heading p.small-label {
-    font-size: 18px;
-    text-align: right;
-}
-
-section .heading p.small-label a,
-section .heading p.small-label a:hover {
-    color: inherit;
 }
 
 /*********
@@ -221,15 +205,15 @@ section .heading p.small-label a:hover {
 }
 
 #sections-menu .button.flat:nth-child(1) {
-    border-color: #2aa198;
+    border-color: #edac35;
 }
 
 #sections-menu .button.flat:nth-child(2) {
-    border-color: #cb4b16;
+    border-color: #2aa198;
 }
 
 #sections-menu .button.flat:nth-child(3) {
-    border-color: #268bd2;
+    border-color: #cb4b16;
 }
 
 #sections-menu .button.flat:nth-child(4) {
@@ -237,7 +221,7 @@ section .heading p.small-label a:hover {
 }
 
 #sections-menu .button.flat:nth-child(5) {
-    border-color: #edac35;
+    border-color: #268bd2;
 }
 
 /******************
