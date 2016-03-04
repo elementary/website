@@ -51,13 +51,6 @@
     </div>
 </section>
 <section id="translations" class="light">
-    <div class="heading">
-        <div class="grid">
-            <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A different language is a different vision of life.&rdquo; —Federico Fellini elementary.io/get-involved" target="_blank">&ldquo;A different language is a different vision of life.&rdquo;</a></q>
-            <p class="small-label"><a href="https://en.wikipedia.org/wiki/Federico_Fellini" target="_blank" data-l10n-off>Federico Fellini</a></p>
-        </div>
-    </div>
-
     <div class="grid">
         <div class="half">
             <h2>Translations</h2>
@@ -77,13 +70,6 @@
 </section>
 
 <section id="web-development" class="dark">
-    <div class="heading">
-        <div class="grid">
-            <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Websites should look good from the inside and out&rdquo; —Paul Cookson elementary.io/get-involved" target="_blank">&ldquo;Websites should look good from the inside and out&rdquo;</a></q>
-            <p class="small-label"><a href="https://twitter.com/paulcookson" target="_blank" data-l10n-off>Paul Cookson</a></p>
-        </div>
-    </div>
-
     <div class="web-browser">
         <h2>Web Development</h2>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
@@ -96,13 +82,6 @@
 </section>
 
 <section id="design" class="light">
-    <div class="heading">
-        <div class="grid">
-            <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Great design is making something memorable and meaningful.&rdquo; —Dieter Rams elementary.io/get-involved" target="_blank">&ldquo;Great design is making something memorable and meaningful.&rdquo;</a></q>
-            <p class="small-label"><a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank" data-l10n-off>Dieter Rams</a></p>
-        </div>
-    </div>
-
     <div class="grid">
         <div class="half">
             <h2>Design</h2>
@@ -127,13 +106,6 @@
 </section>
 
 <section id="desktop-development" class="dark">
-    <div class="heading">
-        <div class="grid">
-            <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Before software can be reusable it first has to be usable&rdquo; —Ralph Johnson elementary.io/get-involved" target="_blank">&ldquo;Before software can be reusable it first has to be usable&rdquo;</a></q>
-            <p class="small-label"><a href="https://twitter.com/RalphJohnson" target="_blank" data-l10n-off>Ralph Johnson</a></p>
-        </div>
-    </div>
-
     <div class="grid">
         <div class="half">
             <h2>Desktop Development</h2>
@@ -152,13 +124,6 @@
 </section>
 
 <section id="funding" class="light">
-    <div class="heading">
-        <div class="grid">
-            <q><a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Do what you love and the money will follow.&rdquo; —Marsha Sinetar http://elementary.io/get-involved" target="_blank">&ldquo;Do what you love and the money will follow.&rdquo;</a></q>
-            <p class="small-label"><a href="http://www.amazon.com/What-Love-Money-Will-Follow/dp/0440501601" target="_blank" data-l10n-off>Marsha Sinetar</a></p>
-        </div>
-    </div>
-
     <div class="grid">
         <div class="half">
             <h2>Targeted Funding</h2>

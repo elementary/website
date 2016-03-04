@@ -29,22 +29,6 @@ section.light {
     color: #586e75;
 }
 
-section .heading {
-    background-color: rgba(0, 0, 0, 0.04);
-    padding: 16px 32px;
-    text-align: center;
-}
-
-section .heading p.small-label {
-    font-size: 18px;
-    text-align: right;
-}
-
-section .heading p.small-label a,
-section .heading p.small-label a:hover {
-    color: inherit;
-}
-
 /*********
 * Button *
 *********/
