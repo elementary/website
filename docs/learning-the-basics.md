@@ -15,9 +15,9 @@ On the left side of the panel is the Applications item. Clicking **Applications*
 
 You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:
 
-* Shutdown and Restart the computer
-* Compose a new email
-* Open a Private Browsing window
+* Shutdown and Restart
+* Compose Message
+* New Private Browsing Window
 * Math operations (example: 23 * 5)
 
 To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space/kbd>.
