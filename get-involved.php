@@ -123,7 +123,7 @@
             </div>
         </div>
         <div class="half">
-            <img src="images/get-involved/desktop-development.svg" alt="Scratch text editor">
+            <img src="images/get-involved/desktop-development.png" alt="Scratch text editor">
         </div>
     </div>
 </section>
