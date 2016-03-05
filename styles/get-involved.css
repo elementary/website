@@ -237,7 +237,7 @@ section.light {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    border: 2px solid #808b8e;
+    border: 2px solid rgba(88, 110, 117, 0.5);
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
