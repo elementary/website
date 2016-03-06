@@ -675,20 +675,19 @@ Let’s recap what we learned in this section:
 
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
-
-#Notifications
+#Notifications {#notifications}
 If you have been using elementary os, by now you've probably already seen the white bubbles that appear on the top right of the screen. Those are notifications! Notifications are simple ways to notify a user about the state of your app. They can inform the user that a long process has been completed, or a new message has arrived. Either way, in this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
 
-##Making Preparations
+##Making Preparations {#making-preparations}
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
-3. Re create the CMake folder and CMakeFiles.txt file If you don't remember how to, i recommend you go back to the previous section. But you can also use the files from your previous projects, and modify it accordingly.
-4. Remember how to make a .desktop file? Excellent! Well, make one once again for this project. But since your app will be displaying applications, add `X-GNOME-UsesNotifications=true` to the end of the file.
+3. Re create the CMake folder and CMakeFiles.txt file If you don't remember how to, i recommend you go back to the [previous section](#building-and-installing-with-cmake). But you can also use the files from your previous projects, and modify it accordingly.
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Well, make one once again for this project. But since your app will be displaying applications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so your app's notification settings can automatically be handled by switchboard's notifications plug.
 
-### Gtk.Application
+### Gtk.Application {#gtk-application}
 Sadly, we can't just add a new notification right away. You are going to need your program to extend from the class Gtk.Application. Gtk.Application is a class that handles many important aspects of a Gtk app, it will also allow you to give your app some new features, one of them being notifications! If you want some more details about what else it can do, you can always check out [valadoc](http://valadoc.org/#!api=gtk+-3.0/Gtk.Application)
 
-##Writing your app!
+##Writing your app! {#writing-your-app}
 Now that you know what a Gtk.Application is, it's time to begin coding your app! Let's start with setting up the basic layout:
 
 	public class MyApp : Gtk.Application {
@@ -710,7 +709,7 @@ Now that you know what a Gtk.Application is, it's time to begin coding your app!
 		}
 	}
     
-You will notice though that the way you initiate your app will look a little different from what we did a few sections back. This time, in your `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a Application-Window, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in "creating layouts" and make a grid containing two buttons, one that will show a notification, and one that will hide it! 
+You will notice though that the way you initiate your app will look a little different from what we did a few sections back. This time, in your `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a Application-Window, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing two buttons, one that will show a notification, and one that will hide it! 
 
 In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
 
@@ -722,78 +721,78 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
     var title_label = new Gtk.Label (_("Notifications"));
     var show_button = new Gtk.Button.with_label (_("Show"));
             
-    grid.attach (title_label, 0, 0, 1, 1);
-    grid.attach (show_button, 0, 1, 1, 1);
+    grid.add (title_label);
+    grid.add (show_button);
             
     app_window.add (grid);
     app_window.show_all ();
 
 
-## Sending Notifications
+## Sending Notifications {#sending-notifications}
 Now that we have a Gtk.Application we can send notifications. See that button we created?, let's connect function to it! After you created the button, add the following function to it!
 
     show_button.clicked.connect (() => {
         var notification = new Notification (_("Hello World"));
         notification.set_body (_("This is my first notification!"));
-        this.send_notification ("notify-id", notification);
+        this.send_notification ("notify-test", notification);
     });
 
 Okay, now compile your new app. It all looks good? Perfect! Now click the "Send" button! You saw the notification? That's great! Don't forget to `make pot` when you add new strings. Now commit and push your project.
 
-## Notification Features
+## Notification Features {#notification-features}
 Notifications also have a few other fancy features you can use. 
 
-### Icons. 
+### Icons {#icons} 
 Notifications with just text look ugly, and it doesn't tell you easily wich app sent it. You probably want your notification to have an icon. Luckily for us, adding an icon is fairly easy! Right after the `var notification = New Notification` line, add:
 
 	Gtk.Image image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DIALOG);
 	notification.set_icon (image.gicon);
 
-And that's it! Compile your app again, and press that "Send" button. As you can see, the notification now has an icon! Using this method, by changing the first string you can set the icon to anyone you wish!
+And that's it! Compile your app again, and press that "Send" button. As you can see, the notification now has an icon! Using this method, by changing the first string you can set the icon to anyone you wish! You can use ```gtk3-icon-browser``` to see what system icons ara available for you to use. z
 
-### Withdraw & Replace
-We now know how to send a notification, but now the user has interacted with your app. How do we remove it? Or what about updating it with new information? Well we can easily do it thanks to the notification ID. This ID can be any string you wish used for you to be able to identify which notification is which from the code. For now we just named it `"notify-id"`. 
+### Replace {#replace}
+We now know how to send a notification, <!--but now the user has interacted with your app. How do we remove it? --> but what if you need to update it with new information? Well we can easily do it thanks to the notification ID. This ID can be any string you wish used for you to be able to identify which notification is which from the code. For now we just named it `"notify-test"`. When you start coding your own app, notifications IDs should be your app's name.
 
-First, let's do the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and let's add it to the grid:
+Let's do the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and let's add it to the grid:
 
 	var update_button = new Gtk.Button.with_label (_("Update"));
-	grid.attach (update_button, 0, 2, 1, 1);
+	grid.add (update_button);
 
 	update_button.clicked.connect (() => {
-		var notification = new Notification (("Hello Again"));
-		notification.set_body (("This is my second Notification!"));
+		var notification = new Notification (_("Hello Again"));
+		notification.set_body (_("This is my second Notification!"));
 
 		Gtk.Image image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DIALOG);
 		notification.set_icon (image.gicon);
 
-		this.send_notification ("notify-id", notification);
+		this.send_notification ("notify-test", notification);
 	});
-
+<!--
 Now, let's do the withdraw button:
 
 	var withdraw_button = new Gtk.Button.with_label (_("Withdraw"));
-	grid.attach (withdraw_button, 0, 3, 1, 1);
+	grid.add (withdraw_button);
 
 	withdraw_button.clicked.connect (() => {
-		this.withdraw_notification ("notify-id");
+		this.withdraw_notification ("notify-test");
 	});
-
+-->
 And that's it! Very easy right? Now let's compile and run your app again. Click on the buttons, first on the Show, then Update, and later on the Withdraw. 
 
-###Priority
-Notifications also have something called priority. In elementary OS, when a notification is set as "urgent" it will stay on the screen until either the user interacts with it, or you withdraw it. Let's make our notification urgent! To do so all you have to do is add the following line before the `this.send_notification ()` function:
+###Priority  {#priority}
+Notifications also have something called priority. In elementary OS, when a notification is set as "urgent" it will stay on the screen until either the user interacts with it, or you withdraw it. Let's make our notification urgent! To do so all you have to do is add the following line before the `this.send_notification ()` function
 
 	notification.set_priority (NotificationPriority.URGENT);
 
-Urgent notifications though should really only be used on the most extreme of cases. For example, here in elementary we use them for telling the user that his battery is about to run out, or when a printing job failed. 
+Urgent notifications though should really only be used on the most extreme of cases. For example, here in elementary we use them for telling the user that his battery is about to run out, or when a printing job failed. There are also [other notification priorities](http://valadoc.org/#!api=gio-2.0/GLib.NotificationPriority). In elementary OS Loki, notifications with priority set to LOW are skipped from 
 
-## Review
+## Review {#notifications-review}
 Let's review what all we've learned:
 
 - We learned what Gtk.Application is and how to make a subclass of it. 
-- We built an app that sends, updates and withdraws notifications. 
+- We built an app that sends and updates notifications. 
 - We learned about some advanced notification features such as priority and setting an icon
 
-Sounds like a lot! But as you could see, sending notifications is very easy thanks to Gtk.Application.
+Sounds like a lot! But as you could see, sending notifications is very easy thanks to Gtk.Application. If you need some further reading on all notifications have to offer, you can always check out it's [valadoc documentation](http://valadoc.org/#!api=gio-2.0/GLib.Notification).
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
