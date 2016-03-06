@@ -747,7 +747,7 @@ Notifications with just text look ugly, and it doesn't tell you easily wich app 
 	Gtk.Image image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DIALOG);
 	notification.set_icon (image.gicon);
 
-And that's it! Compile your app again, and press that "Send" button. As you can see, the notification now has an icon! Using this method, by changing the first string you can set the icon to anyone you wish! You can use ```gtk3-icon-browser``` to see what system icons ara available for you to use. z
+And that's it! Compile your app again, and press that "Send" button. As you can see, the notification now has an icon! Using this method, by changing the first string you can set the icon to anyone you wish! You can use ```gtk3-icon-browser``` to see what system icons are available for you to use.
 
 ### Replace {#replace}
 We now know how to send a notification, <!--but now the user has interacted with your app. How do we remove it? --> but what if you need to update it with new information? Well we can easily do it thanks to the notification ID. This ID can be any string you wish used for you to be able to identify which notification is which from the code. For now we just named it `"notify-test"`. When you start coding your own app, notifications IDs should be your app's name.
@@ -783,7 +783,7 @@ Notifications also have something called priority. In elementary OS, when a noti
 
 	notification.set_priority (NotificationPriority.URGENT);
 
-Urgent notifications though should really only be used on the most extreme of cases. For example, here in elementary we use them for telling the user that his battery is about to run out, or when a printing job failed. There are also [other notification priorities](http://valadoc.org/#!api=gio-2.0/GLib.NotificationPriority). In elementary OS Loki, notifications with priority set to LOW are skipped from 
+Urgent notifications though should really only be used on the most extreme of cases. For example, here in elementary we use them for telling the user that his battery is about to run out, or when a printing job failed. There are also [other notification priorities](http://valadoc.org/#!api=gio-2.0/GLib.NotificationPriority). In elementary OS Loki, notifications with priority set to LOW are skipped from the notifications indicator.
 
 ## Review {#notifications-review}
 Let's review what all we've learned:
