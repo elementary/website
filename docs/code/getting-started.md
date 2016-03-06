@@ -716,14 +716,13 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
     var grid = new Gtk.Grid ();
     grid.orientation = Gtk.Orientation.VERTICAL;
     grid.row_spacing = 6;
-    grid.column_spacing = 6;
-            
+
     var title_label = new Gtk.Label (_("Notifications"));
     var show_button = new Gtk.Button.with_label (_("Show"));
-            
+    
     grid.add (title_label);
     grid.add (show_button);
-            
+    
     app_window.add (grid);
     app_window.show_all ();
 
