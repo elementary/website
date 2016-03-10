@@ -1,21 +1,15 @@
 <?php
 
 ////    Settings
-$Database       = __DIR__.'/../data/average_payments.db';
+$database       = __DIR__.'/../data/average_payments.db';
 
 ////    Parse Variables
-$Processing = false;
-if ( !empty($_GET['os']) && !empty($_GET['payment']) ) {
-    require_once __DIR__.'/authenticatron.load.php';
-    // Accept any code +/- 10 Minutes.
-    // Ignore incorrect codes.
-    if ( Authenticatron_Check($_GET['authenticatron_code'], $Secret, 20) ) {
-        $Processing = true;
-    }
+$processing = false;
+if ( !empty($amount) ) {
+    $processing = true;
 }
-if ( $Processing ) {
-    $OS = strtolower(htmlentities($_GET['os'], ENT_QUOTES, 'UTF-8'));
-    $Payment = intval($_GET['payment']);
+if ( $processing ) {
+    $OS = strtolower(htmlentities($_POST['os'], ENT_QUOTES, 'UTF-8'));
 }
 
 ////    Error Handling
@@ -24,22 +18,22 @@ function LastError($db) {
     var_dump($Error);
 }
 
-////    Open Database
-if ( $Processing ) {
-    if ( !is_writable(dirname($Database)) ) {
-        echo 'ERROR: Database is not writable.';
+////    Open database
+if ( $processing ) {
+    if ( !is_writable(dirname($database)) ) {
+        echo 'ERROR: database is not writable.';
         exit;
     }
-    $db = new SQLite3($Database);
+    $db = new SQLite3($database);
 } else {
-    $db = new SQLite3($Database, SQLITE3_OPEN_READONLY);
+    $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
 }
 if ( $db->lastErrorCode() ) LastError($db);
 $db->busyTimeout(300);
 if ( $db->lastErrorCode() ) LastError($db);
 
-if ( $Processing ) {
-    ////    Initialize Database
+if ( $processing ) {
+    ////    Initialize database
     $query = 'CREATE TABLE IF NOT EXISTS `AveragePayments` (`OS` TEXT PRIMARY KEY, `Total` INTEGER, `Count` INTEGER, `Average` INTEGER);';
     $db->exec($query); // Result-less
     if ( $db->lastErrorCode() ) LastError($db);
@@ -51,21 +45,18 @@ if ( $Processing ) {
         $db->exec($query); // Result-less
     }
     ////    Update
-    $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$Payment.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$Payment.'\') / (`Count` + 1)) WHERE `OS`=\''.$OS.'\' OR `OS`=\'total\'; ';
-    $query .= 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$Payment.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$Payment.'\') / (`Count` + 1)) WHERE `OS`=\'total\';';
+    $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$amount.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$amount.'\') / (`Count` + 1)) WHERE `OS`=\''.$OS.'\' OR `OS`=\'total\';';
     $result = $db->exec($query); // Result-less
     if ( $db->lastErrorCode() ) LastError($db);
+} else {
+    $query = 'SELECT * FROM `AveragePayments`;';
+    $results = $db->query($query);
+    if ( $db->lastErrorCode() ) LastError($db);
+    $toJSON = array();
+    while ($row = $results->fetchArray()) {
+        $toJSON[$row['OS']] = $row;
+    }
+    $db->close();
+    if ( $db->lastErrorCode() ) LastError($db);
+    echo json_encode($toJSON, JSON_PRETTY_PRINT);
 }
-
-$query = 'SELECT * FROM `AveragePayments`;';
-$results = $db->query($query);
-if ( $db->lastErrorCode() ) LastError($db);
-$toJSON = array();
-while ($row = $results->fetchArray()) {
-    $toJSON[$row['OS']] = $row;
-}
-
-$db->close();
-if ( $db->lastErrorCode() ) LastError($db);
-
-echo json_encode($toJSON, JSON_PRETTY_PRINT);
