@@ -1,7 +1,7 @@
 <?php
 
 ////    Settings
-$database       = __DIR__.'/../data/average_payments.db';
+$database       = __DIR__.'/../data/_average_payments.db';
 
 ////    Parse Variables
 $processing = false;
@@ -49,7 +49,7 @@ if ( $processing ) {
     $result = $db->exec($query); // Result-less
     if ( $db->lastErrorCode() ) LastError($db);
 } else {
-    $query = 'SELECT * FROM `AveragePayments`;';
+    $query = 'SELECT `Count`, `Average`, `OS` FROM `AveragePayments`;';
     $results = $db->query($query);
     if ( $db->lastErrorCode() ) LastError($db);
     $toJSON = array();
