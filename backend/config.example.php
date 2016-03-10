@@ -17,7 +17,4 @@ $config = array(
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
 
-    'sourceforge_iso_i386' => 'http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-i386.20150411.iso/download',
-    'sourceforge_iso_amd64' => 'http://sourceforge.net/projects/elementaryos/files/stable/elementaryos-freya-amd64.20150411.iso/download',
-
 );
