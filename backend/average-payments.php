@@ -49,7 +49,7 @@ if ( $processing ) {
     $result = $db->exec($query); // Result-less
     if ( $db->lastErrorCode() ) LastError($db);
 } else {
-    $query = 'SELECT * FROM `AveragePayments`;';
+    $query = 'SELECT `Count`, `Average`, `OS` FROM `AveragePayments`;';
     $results = $db->query($query);
     if ( $db->lastErrorCode() ) LastError($db);
     $toJSON = array();
