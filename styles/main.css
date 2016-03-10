@@ -190,7 +190,7 @@ img.inline {
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
-    margin-top: 0.2em;
+    margin-top: 0.05em;
     padding-left: 6px;
     position: absolute;
     transition: padding 0.15s ease-in-out;
