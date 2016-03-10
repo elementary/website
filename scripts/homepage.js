@@ -93,10 +93,6 @@ $(function () {
             token: function (token) {
                 console.log(JSON.parse(JSON.stringify(token)));
                 process_payment(amount, token);
-                if (window.ga) {
-                    ga('send', 'event', 'Freya Update 2 Download (Payment)', 'Homepage', amount);
-                    average_payment(amount);
-                }
                 open_download_overlay();
             },
             name: 'elementary LLC.',
@@ -110,9 +106,7 @@ $(function () {
 
     function process_payment (amount, token) {
         var payment_http, $amount_ten;
-
         $amount_ten = $('#amount-ten');
-
         if ($amount_ten.val() !== 0) {
             $('#amounts').html('<input type="hidden" id="amount-ten" value="0">');
             $amount_ten.each(amountClick);
@@ -127,6 +121,9 @@ $(function () {
                           '&email=' + encodeURIComponent(token.email) +
                           '&os=' + detected_os
         );
+        if (window.ga) {
+            ga('send', 'event', release_title + ' ' + release_version + ' Download (Payment)', 'Homepage', amount);
+        }
     }
 
     function open_download_overlay () {
