@@ -1,7 +1,7 @@
 <?php
 
 ////    Settings
-$database       = __DIR__.'/../data/average_payments.db';
+$database       = __DIR__.'/../data/_average_payments.db';
 
 ////    Parse Variables
 $processing = false;
