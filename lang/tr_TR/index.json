@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Windows ve OS X'e hızlı ve açık bir alternatif.",
     "Custom": "Tercihen",
     "Enter any dollar amount.": "Miktarı dolar cinsinden yazın.",
-    "Download Freya": "Freya'yı İndir",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (PC veya Mac için)",
     "What the press is saying about elementary OS:": "Basında elementary OS",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS farklı… Eski bilgisayarlarda bile iyi çalışabilen güzel ve güçlü bir işletim sistemi”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“Neredeyse her yere kurulabilir, hızlı ve bakımı kolay bir platform”",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Hiç bir pazarlama anlaşması yapmıyor ve hiç bir hassas kişisel bilgi toplamıyoruz. Bütün bilgilerimiz kullanıcılarımızdan direkt olarak gelen bilgilerdir.",
     "Safe &amp; Secure": "Sağlam & Güvenli",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Amerika Birleşik Devletleri Savunma Bakanlığı, Çin Bankası ve daha fazla kuruma güç veren yazılım olan Linux üzerine kuruluyuz.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "elementary OS'u indir",
     "Choose a Download": "Bit'inizi seçin ve İndirin !",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Çoğu modern bilgisayar için 64-bit öneriyoruz. Destek ve daha fazla bilgi için buraya bakın:",
     "installation guide": "Kurulum Klavuzu",
     "Freya 32-bit": "Freya 32-bit",
     "Torrent Magnet Link": "Torrent Linki",
-    "Freya 64-bit": "Freya 64-bit",
-    "Download elementary OS": "elementary OS'u indir"
+    "Freya 64-bit": "Freya 64-bit"
 }

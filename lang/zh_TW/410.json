@@ -1,6 +1,6 @@
 {
-    "Whoops! That link has expired.": "糟糕，該連結已過期。",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "如果您正在嘗試下載 elementary OS，請返回主頁。如果您正尋找其他東西，請於 <a href=\"https://github.com/elementary/mvp/issues/new\">GitHub 上提出請求</a>。",
-    "Go to Home Page": "回到主頁面",
+    "Whoops! That link has expired.": "哎呀，該連結已過期。",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "如果您正在嘗試下載 elementary OS，請返回首頁。如果您正尋找其他東西，請在<a href=\"https://github.com/elementary/mvp/issues/new\">GitHub 上提出請求</a>。",
+    "Go to Home Page": "回到首頁",
     "Download Link Expired &sdot; elementary": "下載連結已過期 ⋅ elementary"
 }

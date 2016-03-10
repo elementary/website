@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Hitra ter odprta zamenjava za Windows in OS X",
     "Custom": "Po meri",
     "Enter any dollar amount.": "Vnesite poljuben znesek v dolarjih.",
-    "Download Freya": "Prenesite različico Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Kaj mediji pravijo o elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS je drugačen ... lep ter zmogljiv operacijski sistem, ki se lahko izvaja brez problemov celo na starih računalnikih\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"hitra platforma z majhnim vzdrževanjem, ki se lahko namesti praktično povsot\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Ne sklapamo nikakršnih oglaševalskih poslov in ne zbiramo občutljivih osebnih informacij. Naš edini dohodek je direkten, preko naših uporabnikov.",
     "Safe &amp; Secure": "Varno",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Grajeni smo na Linuxu: isti programski opremi, ki napaja U.S Department of Defense, the Bank of China, in več.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Prenos elementary OS",
     "Choose a Download": "Izberite prenos",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Za večino sodobnih računalnikov se priporoča 64-bitna različica. Za pomoč ter več podrobnosti si oglejte",
     "installation guide": "namestitveni vodnik",
     "Freya 32-bit": "Freya 32-bitni",
     "Torrent Magnet Link": "Magnetna povezava torrent",
-    "Freya 64-bit": "Freya 64-bitni",
-    "Download elementary OS": "Prenos elementary OS"
+    "Freya 64-bit": "Freya 64-bitni"
 }

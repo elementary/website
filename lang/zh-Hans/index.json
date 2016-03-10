@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "一个替换Windows和OS X的快速和开放的操作系统",
     "Custom": "自定义",
     "Enter any dollar amount.": "输入美元数量",
-    "Download Freya": "下载Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15GB(PC或Mac)",
     "What the press is saying about elementary OS:": "新闻媒体对elementary OS的评价：",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "elementary OS是一个即便是在旧电脑上也能运行得很流畅的、与众不同的、漂亮的、强大的操作系统",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "事实上是一个能安装在任何地方的、一个快速的、低维护费用的平台",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "我们不做广告、不收集敏感的个人信息。我们唯一的收入是直接来自我们的用户。",
     "Safe &amp; Secure": "安全和可靠",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "我们基于Linux：与驱动美国国防部、中国的银行和更多的用户同样的软件",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "下载elementary OS",
     "Choose a Download": "选择一个下载",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "对于大部分现代的计算机，我们推荐64位的系统。帮助文档和更多的信息请查看",
     "installation guide": "安装指南",
     "Freya 32-bit": "Freya 32位",
     "Torrent Magnet Link": "依附的种子文件链接",
-    "Freya 64-bit": "Freya 64位",
-    "Download elementary OS": "下载elementary OS"
+    "Freya 64-bit": "Freya 64位"
 }
