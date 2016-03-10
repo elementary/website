@@ -11,7 +11,16 @@ At the top of the screen you can see the Panel. On the left is the Applications 
 ![The Panel](../images/docs/learning-the-basics/panel.png)
 
 #### Applications {#applications}
-On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view. Lastly, you can search the launcher by typing at any time.
+On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
+
+You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:
+
+* Shutdown and Restart
+* Compose Message
+* New Private Browsing Window
+* Math operations (example: 23 * 5)
+
+To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space/kbd>.
 
 #### Indicators {#indicators}
 On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, time, chat and email accounts, etc. Clicking an indicator exposes more information and related actions.
@@ -87,6 +96,12 @@ elementary OS comes bundled with **Software Center**, an app store for free and 
 You may be asked for your password prior to installing an app.
 
 _Note: Some software may not be available from the Software Center. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 14.04 LTS should work just as well on elementary OS Freya._
+
+## Updating {#updating}
+
+elementary OS includes "Software Update", an easy to use utility for installing app updates and security patches. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
+
+For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/trusty/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 
