@@ -87,20 +87,6 @@ $(function () {
         }
     }
 
-    function average_payment (amount) {
-        var url = 'backend/average-payments.php?authenticatron_code=' + authenticatron_code + 'os=' + detected_os;
-        if ( amount ) {
-            url = url + '&payment=' + amount;
-        }
-        $.getJSON(url, function(data) {
-            console.log(data);
-            // TODO Write DATA to the popup.
-            // This is called once on load
-            // and when paid, so it is psuedo-realtime.
-        });
-    }
-    average_payment(false);
-
     function do_stripe_payment (amount) {
         StripeCheckout.open({
             key: stripe_key,
@@ -138,7 +124,9 @@ $(function () {
         payment_http.send('description=' + encodeURIComponent(release_title + ' ' + release_version) +
                           '&amount=' + amount +
                           '&token=' + token.id +
-                          '&email=' + encodeURIComponent(token.email));
+                          '&email=' + encodeURIComponent(token.email) +
+                          '&os=' + detected_os
+        );
     }
 
     function open_download_overlay () {
