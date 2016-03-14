@@ -1,9 +1,9 @@
 {
     "A fast and open replacement for Windows and OS X": "Et raskt og åpent alternativ til Windows og OS X",
     "Custom": "Eget valg",
-    "Enter any dollar amount.": "Skriv inn et hvilket som helst beløp i amerikanske dollar.",
-    "Download Freya": "Last ned Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Enter any dollar amount.": "Skriv inn et hvilket som helst beløp i amerikanske dollar (også 0).",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Hva pressen sier om elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS er annerledes... et vakkert og kraftig operativsystem som vil kjøre godt selv på gamle PC-er\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"en rask plattform med lite vedlikehold som kan installeres nesten hvor som helst\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Vi gjør ikke reklameavtaler og vi samler ikke inn sensitive personopplysninger. Vår eneste inntekt er direkte fra våre brukere.",
     "Safe &amp; Secure": "Trygg og sikker",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Vi er bygget på Linux: den samme programvare som driver US Department of Defense, Bank of China og mer.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Last ned elementary OS",
     "Choose a Download": "Velg en nedlasting",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Vi anbefaler 64-bit for de fleste moderne datamaskiner. For hjelp og mer info, se",
     "installation guide": "installasjonsveiledning",
     "Freya 32-bit": "Freya 32-bit",
     "Torrent Magnet Link": "Torrent Magnet-lenke",
-    "Freya 64-bit": "Freya 64-bit",
-    "Download elementary OS": "Last ned elementary OS"
+    "Freya 64-bit": "Freya 64-bit"
 }

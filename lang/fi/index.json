@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Nopea, avoin ja ilmainen vaihtoehto Windowsille sekä OS X:lle",
     "Custom": "Muu",
     "Enter any dollar amount.": "Syötä haluamasi summa.",
-    "Download Freya": "Lataa Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1,15 Gt (PC:lle ja Macille)",
     "What the press is saying about elementary OS:": "Lehdistössä lausuttua:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS on erilainen... Kaunis ja tehokas käyttöjärjestelmä, joka toimii vanhemmillakin tietokoneilla.\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"Nopea, vähän ylläpitoa vaativa alusta, jonka voi asentaa periaatteessa mihin tahansa.\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Emme tee mainostussopimuksia saati kerää henkilökohtaisia tietoja käyttäjistämme. Tulomme saamme lahjoituksina tyytyväisiltä käyttäjiltämme.",
     "Safe &amp; Secure": "Varma ja turvallinen",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Käyttöjärjestelmä pohjautuu Linuxiin; samaan ohjelmistoon, jota käyttävät muun muassa Yhdysvaltain puolustusministeriö, Bank of China ja monet muut tahot.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Lataa elementary OS",
     "Choose a Download": "Valitse versio",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Suosittelemme 64-bittistä useimmille uusille tietokoneille. Jos haluat apua ja lisätietoja, lue",
     "installation guide": "asennusohje.",
     "Freya 32-bit": "Freya 32-bit",
     "Torrent Magnet Link": "Torrent Magnet -linkki",
-    "Freya 64-bit": "Freya 64-bit",
-    "Download elementary OS": "Lataa elementary OS"
+    "Freya 64-bit": "Freya 64-bit"
 }
