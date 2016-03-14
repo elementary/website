@@ -35,8 +35,8 @@ $(document).ready(function() {
 
     // Sidebar
     var $headings = $('h1');
+    var $sidebar = $('<ul class="sidebar"></ul>');
     if ($headings.length > 1) {
-        var $sidebar = $('<ul class="sidebar"></ul>');
         $headings.each(function () {
             $sidebar.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
             var $subHeadings = $(this).nextUntil('h1', 'h2');
