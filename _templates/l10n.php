@@ -7,7 +7,7 @@ class Translator {
         'ar' => 'العربية',
         'ar_SD' => '(العربية (السودان',
         'bg' => 'български език',
-        'bs' => 'Bosanski',
+        'bs' => 'bosanski',
         'cs_CZ' => 'čeština',
         'de' => 'Deutsch',
         'el' => 'ελληνικά',
@@ -16,7 +16,7 @@ class Translator {
         'fa_IR' => '(فارسی (ایران',
         'fi' => 'Suomi',
         'fr' => 'Français',
-        'hr_HR' => 'Hrvatski (Hrvatska)',
+        'hr_HR' => 'hrvatski (Hrvatska)',
         'id_ID' => 'Bahasa Indonesia',
         'it' => 'Italiano',
         'lt' => 'Lietuvių kalba',
@@ -29,8 +29,8 @@ class Translator {
         'pt_PT' => 'Português (Portugal)',
         'ro_RO' => 'Română',
         'ru' => 'Русский',
-        'sr' => 'Српски',
-        'sr_Ijekavian' => 'Српски (ијекавица)',
+        'sr' => 'српски',
+        'sr_Ijekavian' => 'српски (ијекавица)',
         'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
@@ -57,7 +57,7 @@ class Translator {
         }
 
         // Redirect the user if we are translating the page
-        if ((isset($_GET['lang']) || isset($_COOKIE['language'])) 
+        if ((isset($_GET['lang']) || isset($_COOKIE['language']))
             && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
             && $this->lang != 'en') {
 
@@ -197,7 +197,7 @@ class Translator {
         $output = ''; // Output HTML string
 
         // Tags that doesn't contain translatable text
-        $tagsBlacklist = array('script', 'style', 'kbd');
+        $tagsBlacklist = array('script', 'style', 'kbd', 'code');
 
         // Attributes that can be translated
         $attrsWhitelist = array(
@@ -206,7 +206,7 @@ class Translator {
             'img' => array('alt')
         );
 
-        // Tags included in translation strings when used in <p> or <li>
+        // Tags included in translation strings when used in <p>, <hX> or <li>
         $ignoredTags = array('a', 'kbd', 'strong', 'em', 'code', 'sup', 'sub');
 
         // Begin parsing input HTML
@@ -302,8 +302,8 @@ class Translator {
                 $next = strpos($input, '<', $i);
                 if ($next === false) { // End Of File
                     $next = strlen($input);
-                } elseif ($tagName == 'p' || $tagName == 'li') {
-                    // Do not process ignored tags in <p> and <li>
+                } elseif ($tagName == 'p' || $tagName == 'li' || preg_match('#^h[1-6]$#', $tagName)) {
+                    // Do not process ignored tags in <p>, <hX> and <li>
                     $originalNext = $next;
                     $ignoredCount = 0;
                     do {

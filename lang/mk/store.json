@@ -1,6 +1,8 @@
 {
-    "Store": "Store",
-    "Our store currently only supports US orders.": "Our store currently only supports US orders.",
-    "Order Online": "Order Online",
-    "Store &sdot; elementary": "Store ⋅ elementary"
+    "Store": "Продавница",
+    "Our store currently only supports US orders.": "Нашата продавница моментално поддржува само купувања од US",
+    "Order Online": "Порачајте онлајн",
+    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s": "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel’s",
+    "sizing chart": "sizing chart",
+    "Store &sdot; elementary": "Продавница - elementary"
 }

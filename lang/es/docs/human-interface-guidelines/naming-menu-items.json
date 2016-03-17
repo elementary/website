@@ -1,5 +1,0 @@
-{
-    "Naming Menu Items": "Nombrar elementos de menú",
-    "Menu items should have names that are either actions or locations, never descriptions. Make sure menu items are concise, but also fully describe the action that will be performed when they are clicked.": "Los elementos de menú deben tener nombres  ya sea acciones o lugares, nunca descripciones. Asegúrese de que los elementos de menú son concisos, pero también describen plenamente la acción que se realiza cuando se hace clic.",
-    "&quot;Find in Page...&quot; is acceptable as it clearly describes the action that will be performed when the item is clicked. &quot;Software Up to Date&quot; is not acceptable. What happens if I click this item? Where will it take me? What will it do? The outcome is uncertain.": "«Buscar en la página…» es un nombre aceptable porque describe la acción que se realizará cuando se pulse en el elemento. «Programa actualizado» no es aceptable. ¿Qué sucederá cuando se pulse en el elemento? ¿Adónde llevará? ¿Qué hará? El resultado no es obvio."
-}

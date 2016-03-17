@@ -1,7 +1,7 @@
 The New elementary.io
 ================
 
-A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya. 
+A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
 Project Organization
 ====================
@@ -47,7 +47,7 @@ Templating System
 Code Style
 ==========
 
-It's important we keep the code style consistent across collaborators and editors. We are following the official [elementary code style](http://elementaryos.org/docs/code/code-style) guidelines for this project.
+It's important we keep the code style consistent across collaborators and editors. We are following the official [elementary code style](https://elementary.io/docs/code/reference#code-style) guidelines for this project.
 
 For quick reference:
 * 4 spaces for indentation (no tabs)
@@ -58,15 +58,22 @@ For quick reference:
 Simple Local Development
 ========================
 
-For a simple local development environment, you will need:
+For simplicity a Vagrant file is included. To start you will need:
+
+* [Vagrant](http://www.vagrantup.com/downloads.html)
+* [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
+
+Then simply run `vagrant up`.
+
+For bypassing Vagrant you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
-* `php5-json`
-* `php5-curl`
+* `php7.0-json`
+* `php7.0-curl`
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
 
 Contributing
 ============
 
-See guidelines for [coding](https://github.com/elementary/mvp/blob/master/CONTRIBUTE.md) and [translating](https://github.com/elementary/mvp/blob/master/TRANSLATE.md).
+See guidelines for [coding](https://github.com/elementary/mvp/blob/master/CONTRIBUTING.md) and [translating](https://github.com/elementary/mvp/blob/master/TRANSLATE.md).

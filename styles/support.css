@@ -1,18 +1,10 @@
+/***************************************
+* Copyright 2016 elementary LLC.       *
+* This file is part of elementaryos.io *
+***************************************/
+
 h1 {
-    clear: both
-}
-
-h1 svg {
-    display: inline;
-    position: relative;
-    top: 11px;
-    height: 45px;
-    width: 310px;
-    max-width: 100%;
-}
-
-h1 .logotype-svg {
-    fill: inherit;
+    clear: both;
 }
 
 a.column {
@@ -23,8 +15,8 @@ a.column {
 a.column:hover,
 a.column:focus,
 a.column:active {
-    color: #08C;
-    fill: #08C;
+    color: #08c;
+    fill: #08c;
     text-decoration: none;
 }
 
@@ -37,26 +29,23 @@ a.column h3 {
 ***********/
 
 .row.apps {
-    text-align: center;
-    padding-top: 12px;
     padding-bottom: 0;
+    padding-top: 12px;
+    text-align: center;
 }
 
 .row.apps .app {
-    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: inherit;
     display: inline-block;
     margin: 12px 0;
     padding: 12px;
-    width: 100%;
-    vertical-align: top;
-    word-wrap: break-word;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-
-    color: inherit;
-
+    text-align: left;
     transition: border-color 150ms ease-in-out;
+    vertical-align: top;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .row.apps .app:hover,
@@ -76,9 +65,10 @@ a.column h3 {
 }
 
 @media (min-width: 600px) {
+
     .row.apps .app {
-        width: 192px;
         text-align: center;
+        width: 192px;
     }
 
     .row.apps .app img,
@@ -87,24 +77,14 @@ a.column h3 {
     }
 
     .row.apps .app img {
-        vertical-align: middle;
         margin-left: auto;
         margin-right: auto;
+        vertical-align: middle;
     }
+
 }
 
 .row.apps .app span {
     line-height: 24px;
     padding: 16px 12px 0 12px;
-}
-
-
-/***************************
-* Larger-than-phone styles *
-***************************/
-
-@media (min-width: 1164px) {
-    a.column h3 {
-        text-align: left;
-    }
 }

@@ -2,16 +2,12 @@
 
 extract_translations () {
 	filename="$1"
-	pagename=`echo "$filename" | sed 's/\.php$//' | sed 's/\.md$//'`
+	pagename=$(echo "$filename" | sed 's/\.php$//' | sed 's/\.md$//')
 	output_file="lang/en/$pagename.json"
 	output_dirname=`dirname "$output_file"`
 
 	# Ignore some files
-	if [ $pagename = "developers" ] \
-		|| [ $pagename == "develop" ] \
-		|| [ $pagename == "installation" ] \
-		|| [ $pagename == "answers" ] \
-		|| [ $pagename == "router" ] ; then
+	if [[ $pagename == "router" ]] ; then
 		return
 	fi
 
@@ -26,7 +22,7 @@ extract_translations () {
 	php -f backend/extract-l10n.php "$pagename" 2>>/dev/null > "$output_file"
 
 	# Add file to .tx/config
-	escaped_pagename=`echo "$pagename" | sed 's/\//_/g'`
+	escaped_pagename=$(echo "$pagename" | sed 's/\//_/g')
 	if ! grep -F -q "[elementary-mvp.$escaped_pagename]" .tx/config; then
 		echo "Adding $pagename to .tx/config"
 		tx set -t KEYVALUEJSON --auto-local -r "elementary-mvp.$escaped_pagename" "lang/<lang>/$pagename.json" --source-lang en --execute

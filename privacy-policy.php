@@ -2,6 +2,7 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Privacy Policy &sdot; elementary';
     include $template['header'];
+    include $template['alert'];
 ?>
             <div class="row">
                 <h1>Privacy Policy</h1>
@@ -46,6 +47,8 @@
                     <img src="images/privacy-policy/epiphany_128x128.png" data-l10n-off alt="Epiphany" class="browsers-list" />
                     <h4 data-l10n-off>Epiphany</h4>
                 </a>
+                <h3>Transparency</h3>
+                <p>We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.</p>
             </div>
 <?php
     include $template['footer'];

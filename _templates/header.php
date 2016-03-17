@@ -2,7 +2,7 @@
 include_once __DIR__.'/l10n.php';
 
 if (!isset($l10n)) {
-   $l10n = new Translator(); 
+   $l10n = new Translator();
 }
 $page['lang'] = $l10n->lang();
 
@@ -29,7 +29,8 @@ $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
 <!doctype html>
-<html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>">
+<!--[if IE 9]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
 
         <meta charset="UTF-8">
@@ -39,21 +40,7 @@ $l10n->begin_html_translation();
         <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
         <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
 
-        <?php
-        if ( !empty($page['image']) ) {
-            ?>
         <meta name="twitter:card"        content="summary_large_image">
-            <?php
-        } else {
-            ?>
-        <meta name="twitter:card"        content="summary">
-            <?php
-        }
-        ?>
-
-        <meta name="twitter:title"       content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>">
-        <meta name="twitter:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
-        <meta name="twitter:image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
         <meta name="twitter:site"        content="@elementary">
         <meta name="twitter:creator"     content="@elementary">
 
@@ -78,10 +65,13 @@ $l10n->begin_html_translation();
 
         <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <?php } else { ?>
+        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Droid+Sans|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans+Mono">
-        <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <script>
@@ -111,6 +101,7 @@ $l10n->begin_html_translation();
             ga('set', 'anonymizeIp', true);
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
+            ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang);
         </script>
         <?php } ?>
 
@@ -118,7 +109,7 @@ $l10n->begin_html_translation();
     <body class="page-<?php echo $page['name']; ?>">
         <nav class="nav">
             <div class="nav-content">
-                <ul class="left">
+                <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
@@ -130,7 +121,6 @@ $l10n->begin_html_translation();
                 </ul>
             </div>
         </nav>
-
         <div id="content-container">
 <?php
 $l10n->set_domain($page['name']);

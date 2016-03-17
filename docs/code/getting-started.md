@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Bazaar revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Luna or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Freya or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## Launchpad {#launchpad}
 
@@ -321,7 +321,7 @@ The next thing we need is a build system. The build system that we're going to b
 1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Make sure you're in "~/Projects" (not in your hello-again folder) and then grab the latest copy of those modules with bzr. Notice that we're not in "~/Projects/hello-world". This is because our cmake modules are not a branch of our Hello World app:
 
     ```bash
-    bzr branch  lp:~elementary-apps/+junk/cmake-modules
+    bzr branch lp:~elementary-os/+junk/cmake-modules
     ```
 
 2. You'll see a folder called "cmake". Copy that into your "hello-again" folder. It's that easy.
@@ -422,6 +422,51 @@ Let's review what all we've learned to do:
 
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
+# Adding Translations {#Adding-Translations}
+Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
+
+        stdout.printf ("Not Translatable string");
+        stdout.printf (_("Translatable string!"));
+        
+        string normal = "Another non-translatable string";
+        string translated = _("Another translatable string");
+
+See the difference? We just added `_()` around the string! Well, that was easy! 
+
+1. Go back to your project and make all your strings translatable by adding `_()`
+
+2. Add the following lines in the "CMakeLists.txt" file you created a moment ago:
+
+        # Translation files
+        set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
+        add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
+        add_subdirectory (po)
+
+3. Create a directory named "po" on the root folder of your project. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+
+        include (Translations)
+            add_translations_directory(${GETTEXT_PACKAGE})
+            add_translations_catalog(${GETTEXT_PACKAGE}
+            ../src/
+        )
+
+4. On your build directory execute the following commands:
+
+    ```bash
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    make pot
+    ```
+
+5. Don't forget to add this new directory and it's contents to bzr
+
+    ```bash 
+    bzr add po/
+    bzr commit -m "Added translation files"
+    bzr push
+    ```
+
+That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
+
 # Packaging {#packaging}
 
 While having a build system is great, our app still isn't ready for regular users. We want to make sure our app can be built and installed without having to use Terminal. What we need to do is package our app. To do this, we use the Debian packaging format (.deb) on elementary OS. This section will teach you how to package your app as a .deb file, hosted in a Personal Package Archive (PPA) on Launchpad. This will allow normal people to install your app and even get updates for it in Update Manager.
@@ -468,7 +513,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Maintainer: Your Name <you@emailaddress.com>
         Build-Depends: cmake (>= 2.8),
                        debhelper (>= 8.0.0),
-                       valac-0.16 | valac (>= 0.16)
+                       valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
 
         Package: hello-packaging
@@ -497,7 +542,7 @@ Now that we have our "debian" folder in order, it's time to go to launchpad and 
 
 2. Read through the options available to you. You can go ahead and keep the defaults for Name, Description (it's blank), Owner, Daily builds, and PPA but you can also customize a bit if you'd like.
 
-3. When you get down to a set of checkboxes with the header "Default distribution series", make sure you select "Precise". elementary OS Luna shares it's core with Ubuntu Precise, so packages built on Precise will also work on Luna.
+3. When you get down to a set of checkboxes with the header "Default distribution series", make sure you select "Trusty". elementary OS Freya shares it's core with Ubuntu Trusty, so packages built on Trusty will also work on Freya.
 
 4. For recipe text, we're going to change it ever so slightly to conform better with the official Debian rules. Change out the first line for this one:
 
@@ -532,16 +577,16 @@ Remember that Button and Label accepted an argument (a String) in the creation m
 
 Let’s add some stuff to the Grid:
 
-    grid.add (new Gtk.Label ("Label 1"));
-    grid.add (new Gtk.Label ("Label 2"));
+    grid.add (new Gtk.Label (_("Label 1")));
+    grid.add (new Gtk.Label (_("Label 2")));
 
 Super easy stuff, right? We can add the grid to our window using the same method that we just used to add widgets to our grid:
 
-    this.add (grid);
+    window.add (grid);
 
 Now build your app and see what it looks like. Since we’ve given our grid a `Gtk.Orientation` of `VERTICAL` the labels stack up on top of each other. Try creating a `Gtk.Grid` without giving it an orientation. By default, `Gtk.Grid`’s orientation is horizontal. You really only ever have to give it an orientation if you need it to be vertical.
 
-# Functionality in Gtk.Grid {#functionality-in-gtk-grid}
+## Functionality in Gtk.Grid {#functionality-in-gtk-grid}
 
 Okay, so you know all about using a `Gtk.Grid` to pack multiple children into a Window. What about using it to lay out some functionality in our app? Let’s try building an app that shows a message when we click a button. Remember in our first “Hello World” how we changed the label of the button with `button.clicked.connect`? Let’s use that method again, but instead of just changing the label of the button, we’re going to use it to change an empty label to a message.
 
@@ -564,13 +609,13 @@ This time when we created our grid, we gave it another property: `row_spacing`. 
 Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `this.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
-        label.label = "Hello World!";
+        button.label = _("Hello World!");
         button.sensitive = false;
     });
 
 Remember, we set the button as insensitive here because clicking it again has no effect. Now compile your app and marvel at your newfound skills. Play around with orientation and spacing until you feel comfortable.
 
-# The Attach Method {#the-attach-method}
+## The Attach Method {#the-attach-method}
 
 While we can use `Gtk.Grid` simply to create single row or single column layouts with the add method, we can also use it to create row-and-column-based layouts with the `attach` method. First we’re going to create a new `Gtk.Grid` and set both column and row spacing, then we’ll create all the widgets we want to attach to our grid, and finally we’ll attach them.
 
@@ -578,11 +623,11 @@ While we can use `Gtk.Grid` simply to create single row or single column layouts
     layout.column_spacing = 6;
     layout.row_spacing = 6;
 
-    var hello_button = new Gtk.Button.with_label ("Say Hello");
+    var hello_button = new Gtk.Button.with_label (_("Say Hello"));
     var hello_label = new Gtk.Label (null);
 
-    var rotate_button = new Gtk.Button.with_label ("Rotate");
-    var rotate_label = new Gtk.Label ("Horizontal");
+    var rotate_button = new Gtk.Button.with_label (_("Rotate"));
+    var rotate_label = new Gtk.Label (_("Horizontal"));
 
 Make sure to give the Grid, Buttons, and Labels unique names that you’ll remember. It’s best practice to use descriptive names so that people who are unfamiliar with your code can understand what a widget is for without having to know your app inside and out.
 
@@ -607,13 +652,13 @@ Notice that the attach method takes 5 arguments:
 You can also use `attach_next_to` to place a widget next to another one on [all four sides](http://references.valadoc.org/#!api=gtk+-3.0/Gtk.PositionType). Don’t forget to add the functionality associated with our buttons:
 
     hello_button.clicked.connect (() => {
-        hello_label.label = "Hello World!";
+        hello_label.label = _("Hello World!");
         hello_button.sensitive = false;
     });
 
     rotate_button.clicked.connect (() => {
         rotate_label.angle = 90;
-        rotate_label.label = "Vertical";
+        rotate_label.label = _("Vertical");
         rotate_button.sensitive = false;
     });
 

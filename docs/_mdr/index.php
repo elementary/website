@@ -63,10 +63,11 @@ if (
         $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_dark_bash.css">';
         $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/docs.css">';
 
-        $page['theme-color'] = '#3A416F';
+        $page['theme-color'] = '#403757';
 
         include $Templates['Header'];
         echo '<div class="row docs">';
+        include $Templates['Alert'];
 
         require_once $Libraries['Parsedown'];
         require_once $Libraries['ParsedownExtra'];

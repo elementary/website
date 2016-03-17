@@ -41,7 +41,11 @@ $(function () {
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
         if (window.ga) {
-            ga('send', 'event', 'Freya Beta Download (Payment)', 'Homepage', payment_amount);
+            ga('send',
+               'event',
+               release_title + ' ' + release_version + ' Download (Payment)',
+               'Homepage',
+               payment_amount);
         }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
@@ -49,6 +53,18 @@ $(function () {
             do_stripe_payment(payment_amount);
         }
     });
+
+    function stripe_language() {
+        var stripe_languages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+        var language_code = $('html').prop('lang');
+        // Stripe supports simplified chinese
+        if (/^zh_CN/.test(language_code)) {
+            return 'zh';
+        }
+        if (stripe_languages.indexOf(language_code) != -1) {
+            return language_code;
+        }
+    }
 
     function do_stripe_payment (amount) {
         StripeCheckout.open({
@@ -59,8 +75,10 @@ $(function () {
                 open_download_overlay();
             },
             name: 'elementary LLC.',
-            description: 'elementary OS download',
-            bitcoin: 'true',
+            description: release_title + ' ' + release_version,
+            bitcoin: true,
+            alipay: 'auto',
+            locale: stripe_language() || 'auto',
             amount: amount
         });
     }
@@ -73,11 +91,15 @@ $(function () {
         if ($amount_ten.val() !== 0) {
             $('#amounts').html('<input type="hidden" id="amount-ten" value="0">');
             $amount_ten.each(amountClick);
+            updateDownloadButton()
         }
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
+        payment_http.send('description=' + encodeURIComponent(release_title + ' ' + release_version) +
+                          '&amount=' + amount +
+                          '&token=' + token.id +
+                          '&email=' + encodeURIComponent(token.email));
     }
 
     function open_download_overlay () {
@@ -125,9 +147,10 @@ $(function () {
         for (var i = 0; i < links_data.length; i++) {
             (function (data, link) {
                 $(link).click(function () {
-                    ga('send', 'event', 'Freya Beta Download (Architecture)', 'Homepage', data.arch);
-                    ga('send', 'event', 'Freya Beta Download (Method)', 'Homepage', data.method);
-                    ga('send', 'event', 'Freya Beta Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', data.arch);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', data.method);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }
@@ -135,12 +158,100 @@ $(function () {
 
     // Carousel
     var appCarousel = new Slider({
-        slidesContainer: 'slide-container',
-        choicesContainer: 'choices-container',
-        id: 'carousel-choices',
-        choices: ['photos', 'music', 'videos', 'midori']
+      slideContainer: '.slide-container',
+      choiceContainer: '#carousel-choices',
+      slides: ['photos', 'music', 'videos', 'midori'],
+      fixed: true
     });
-    appCarousel.slideTo('photos');
+
+    $(function() {
+        $.getJSON('data/slingshot.json', function(data) {
+            $.each(data.grid, function(i, f) {
+                var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(griditems).appendTo(".slingshot-grid");
+            });
+            $.each(data.categories, function(i, f) {
+                var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(categoriesitems).appendTo(".slingshot-categories");
+            });
+            $.each(data.searchone, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchone");
+            });
+            $.each(data.searchtwo, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchtwo");
+            });
+            $.each(data.searchthree, function(i, f) {
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                $(searchitems).appendTo(".searchthree");
+            });
+        });
+    });
+
+    $(function() {
+        window.setInterval(function() {
+            if( $('#slingshot-grid').hasClass('active') ){
+                $('#slingshot-grid').addClass('previous');
+                $('#slingshot-grid').removeClass('active');
+                $('#slingshot-categories').removeClass('next');
+                $('#slingshot-categories').addClass('active');
+                $('#slingshot-categories-button').addClass ('active');
+                $('#slingshot-grid-button').removeClass ('active');
+            } else if( $('#slingshot-categories').hasClass('active') ){
+                $('#slingshot-categories').addClass('previous');
+                $('#slingshot-categories').removeClass('active');
+                $('#slingshot-search').removeClass('next');
+                $('#slingshot-search').addClass('active');
+                $('.slingshot .clear-icon').removeClass ('inactive');
+                $('.slingshot .search-term').removeClass ('inactive');
+                $('.searchone').removeClass ('inactive');
+                setTimeout(function(){
+                    $('.slingshot-search-results').addClass ('inactive');
+                    $('.searchtwo').removeClass ('inactive');
+                }, 700);
+                setTimeout(function(){
+                    $('.slingshot-search-results').addClass ('inactive');
+                    $('.searchthree').removeClass ('inactive');
+                }, 1200);
+                $('.slingshot .linked').addClass ('inactive');
+                $('.slingshot .entry').addClass ('expanded');
+            } else if( $('#slingshot-search').hasClass('active') ){
+                $('#slingshot-search').addClass('next');
+                $('#slingshot-search').removeClass('active');
+                $('#slingshot-grid').removeClass('previous');
+                $('#slingshot-grid').addClass('active');
+                $('#slingshot-categories').addClass('next');
+                $('#slingshot-categories').removeClass('previous');
+                $('.slingshot .clear-icon, .slingshot .search-term, .slingshot-search-results').addClass ('inactive');
+                $('.slingshot .linked').removeClass ('inactive');
+                $('.slingshot .entry').removeClass ('expanded');
+                $('#slingshot-grid-button').addClass ('active');
+                $('#slingshot-categories-button').removeClass ('active');
+            }
+        }, 3000);
+    });
+
+    // Change Button text on payment click
+    function updateDownloadButton () {
+        var translate_download = $('#translate-download').text();
+        var translate_purchase = $('#translate-purchase').text();
+
+        if ($('#amounts').children().length <= 1) {
+            $('#download').text(translate_download);
+        } else if (
+            $('button.payment-button').hasClass('checked') ||
+            $('#amount-custom').val() * 100 >= payment_minimum
+        ) {
+            $('#download').text(translate_purchase);
+        } else {
+            $('#download').text(translate_download);
+        }
+    }
+
+    $('#amounts').on('click', updateDownloadButton);
+    $('#amounts input').on('input', updateDownloadButton);
+    updateDownloadButton();
 
     console.log('Loaded homepage.js');
-})();
+});

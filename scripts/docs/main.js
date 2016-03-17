@@ -6,8 +6,8 @@ $(document).ready(function() {
             $(this).text($(this).text().trim());
         });
 
-        // Add line numbers
-        if (!$(this).is('.language-bash')) {
+        // Add line numbers, unless it's bash or doesn't want to be highlighted
+        if (!$(this).is('.language-bash') && !$(this).hasClass('nohighlight')) {
             var lines = $(this).text().trim().split('\n').length;
             var $numbering = $('<ul/>').addClass('pre-numbering');
             $(this).parent().addClass('has-numbering').prepend($numbering);
@@ -16,21 +16,27 @@ $(document).ready(function() {
                 $numbering.append($('<li/>').text(i));
             }
         }
+
         $(this).parent().addClass('highlighted');
 
-        // Highlight code block
-        hljs.highlightBlock(block);
+        if (!$(this).hasClass('nohighlight')) {
+          // Highlight code block
+          hljs.highlightBlock(block);
+        } else {
+          // Fake highlighting for stylesheet things
+          $(this).addClass('hljs');
+        }
     });
 
     // Anchor headings
     $('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
         $(this).wrapInner('<a class="heading-link" href="'+window.location.pathname+'#'+$(this).attr('id')+'"></a>');
-    })
+    });
 
     // Sidebar
     var $headings = $('h1');
+    var $sidebar = $('<ul class="sidebar"></ul>');
     if ($headings.length > 1) {
-        var $sidebar = $('<ul class="sidebar"></ul>');
         $headings.each(function () {
             $sidebar.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
             var $subHeadings = $(this).nextUntil('h1', 'h2');
@@ -50,57 +56,74 @@ $(document).ready(function() {
         var footerScrollTop = $('footer:last').offset().top;
         var prevTarget = 0,
             nextTarget = 0;
-        $(window).scroll(function () {
-            var scrollTop = $(this).scrollTop();
-
-            $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
-            $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
-
-            var $current = null;
-            if (scrollTop >= nextTarget) {
-                $headings.each(function () {
-                    var headingScrollTop = Math.floor($(this).offset().top);
-                    if (headingScrollTop > scrollTop) {
-                        $current = $(this).prevAll('h1').first() || $(this);
-                        prevTarget = nextTarget;
-                        nextTarget = headingScrollTop;
-                        return false;
-                    }
-                });
-                if (!$current) {
-                    $current = $headings.last();
-                    prevTarget = nextTarget;
-                    nextTarget = Number.POSITIVE_INFINITY;
-                }
-                if (!prevTarget) {
-                    prevTarget = Math.floor($current.first().offset().top);
-                }
-            }
-            if (scrollTop < prevTarget) {
-                $($headings.get().reverse()).each(function () {
-                    var headingScrollTop = $(this).offset().top;
-                    if (headingScrollTop < scrollTop) {
-                        $current = $(this);
-                        prevTarget = Math.floor(headingScrollTop);
-                        nextTarget = prevTarget;
-                        return false;
-                    }
-                });
-                if (!$current) {
-                    $current = $headings.first();
-                    prevTarget = 0;
-                    nextTarget = $($headings[1]).offset().top;
-                }
-            }
-            if ($current) {
-                $sidebarItems.removeClass('active');
-                var $activeItem = $sidebarItems.children('a[href="#'+$current.attr('id')+'"]').parent();
-                $activeItem.addClass('active');
-                if ($activeItem.next().is('ul')) {
-                    $activeItem.next().addClass('active');
-                }
-            }
-        });
-        $(window).scroll(); // Trigger event
     }
+
+    // Update javascript variable currentSection
+    var docElements = $('h1[id], h2[id]', '.docs');
+
+    var currentSection = null;
+    if (location.hash && docElements.is("#" + location.hash.substr(1).split("#")[0])) {
+        currentSection = $("#" + location.hash.substr(1).split("#")[0], docElements);
+    } else {
+        currentSection = docElements[0];
+    };
+
+    // Scrolling function to run
+    function scrollHandle() {
+        // Check to see what is on screen right now
+        for (var i = 0; i < docElements.length; i++) {
+            var docViewTop = $(window).scrollTop();
+            var elemTop = $(docElements[i]).offset().top;
+
+            // Sets currentSection if element is top most visible element
+            if ((elemTop <= docViewTop)) {
+                currentSection = docElements[i];
+            // Sets currentSection if element is more than 1/3 from the top
+            } else if (elemTop <= (docViewTop + ($(window).height() / 6) )) {
+                currentSection = docElements[i];
+            // Catch when the it's the first element and below the 'current' area
+            } else if (docElements[i - 1] == null) {
+                currentSection = docElements[i]
+            } else {
+                break
+            };
+        };
+
+        // Changes browser hash without adding to history
+        if (currentSection.id !== location.hash.substr(1)) {
+            history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
+        }
+
+        var scrollTop = $(this).scrollTop();
+
+        $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
+        $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
+
+        $('ul.sidebar .active').removeClass('active');
+        var $currentLink = $('ul.sidebar a[href$="#'+currentSection.id+'"]')
+        if ($currentLink.parent().parent().is('.sidebar')) {
+            $currentLink.parent().addClass('active');
+        } else {
+          ($currentLink.parent().parent().prev('li').addClass('active'));
+        };
+    }
+
+    // Scroll timeout handling
+    var repositionedAt = new Date()
+    var repositionTimer = null
+
+    $(window).scroll(function () {
+        var diff = new Date().getTime() - repositionedAt;
+
+        if (repositionedAt == null || diff >= 500) {
+            repositionedAt = new Date().getTime();
+            scrollHandle();
+        } else {
+            clearTimeout(repositionTimer)
+            repositionTimer = setTimeout(scrollHandle, 100)
+        }
+    });
+
+    // Run scrolling function at first load
+    scrollHandle();
 });

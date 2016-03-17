@@ -1,8 +1,0 @@
-{
-    "Actions": "Acciones",
-    "Action icons are graphics used to represent user actions. Action icons are most commonly found in app toolbars, but can be found throughout the OS.": "Los iconos de acciones representan actividades del usuario. Los iconos de acciones pueden encontrarse por lo general en barras de herramientas, aunque también aparecen en otros sitios del sistema operativo.",
-    "If your app has an action that can be described by an existing system action icon, reference that icon. This ensures a consistent user experience and aids in user recognition of common functions.": "Si su aplicación incluye una acción que puede ilustrarse con un icono de acción ya proporcionado por el sistema, utilice ese icono. Esto garantiza una experiencia de usuario coherente y ayuda al reconocimiento de funciones comunes.",
-    "If your app has a unique action not easily described by an existing icon, you may need to create your own icon. Follow the look and feel of existing system icons and install the icon along with your app.": "Si, por el contrario, su aplicación contiene una acción que no puede describirse fácilmente con un icono existente, puede que necesite crear uno propio. Imite la apariencia de los iconos existentes e instálelo con su aplicación.",
-    "Next Page:": "Próxima página:",
-    "Symbolic": "Simbólico"
-}

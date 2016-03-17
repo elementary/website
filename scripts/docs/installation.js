@@ -1,5 +1,5 @@
 $(function() {
-    // Parse user-agent to detect current plateform
+    // Parse user-agent to detect current platform
     function detectOS() {
         var ua = window.navigator.userAgent;
         if (ua.indexOf('Windows') >= 0) {
@@ -15,32 +15,21 @@ $(function() {
     }
 
     // Setup sliders
-    var createUsbSlider = new Slider({
-        slidesContainer: 'creating-a-usb-choices-slide-container',
-        choicesContainer: 'creating-a-usb-choices-container',
-        id: 'creating-a-usb-choices',
-        choices: ['creating-a-usb-on-windows', 'creating-a-usb-on-others'],
-        hideHeadings: true
-    });
-    var bootSlider = new Slider({
-        slidesContainer: 'booting-choices-slide-container',
-        choicesContainer: 'booting-choices-container',
-        id: 'booting-choices',
-        choices: ['booting-on-a-pc', 'booting-on-a-mac'],
-        hideHeadings: true
+    var operatingSystemSlider = new Slider({
+        slideContainer: '#installation-instructions-slide-container',
+        choiceContainer: '#operating-system-choices',
+        slides: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
+        fixed: false
     });
 
     // Show instructions for the current platform
     var currentOs = detectOS();
-    if (currentOs == 'windows' || !currentOs) {
-        createUsbSlider.slideTo('creating-a-usb-on-windows');
-    } else {
-        createUsbSlider.slideTo('creating-a-usb-on-others');
-    }
 
-    if (currentOs == 'osx') {
-        bootSlider.slideTo('booting-on-a-mac');
+    if (currentOs == 'windows' || !currentOs) {
+        operatingSystemSlider.slideTo('install-on-windows');
+    } else if (currentOs == 'osx') {
+        operatingSystemSlider.slideTo('install-on-os-x');
     } else {
-        bootSlider.slideTo('booting-on-a-pc');
+        operatingSystemSlider.slideTo('install-on-ubuntu');
     }
-})();
+});

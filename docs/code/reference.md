@@ -17,11 +17,6 @@ applications that they don't usually work on, because the code will be
 consistent. Finally, as Guido Van Rossum said - "Code is much more often read
 than written", so having nicely written code is crucial.
 
-## Disclaimer {#disclaimer}
-
-This guide is not finished, but has been discussed and partially approved by
-the elementary contributors. It is subject to changes in the near future.
-
 ## Whitespace {#whitespace}
 
 There is no trailing whitespace at the end of a line, whether it's empty or
@@ -66,12 +61,12 @@ indented code, and a line closing the function with a curly bracket:
         return e;
     }
 
-On conditionals and loops, if there's only one line of code, no braces are
-used:
+On conditionals and loops, always use braces even if there's only one line of code:
 
 
-    if (my_var > 2)
+    if (my_var > 2) {
         print ("hello\n");
+    }
 
 Cuddled else and else if:
 
@@ -81,10 +76,22 @@ Cuddled else and else if:
         print ("Yay");
     } else if (a == 3) {
         b = 3;
-        print ("Not so good...");
-    } else {
-        b = 5;
-        print ("Terrible!");
+        print ("Not so good");
+    }
+
+If you are checking the same variable more than twice, use switch/case instead of multiple else/if:
+
+    switch (week_day) {
+       case "Monday":
+           message ("Let's work!");
+           break;
+       case "Tuesday":
+       case "Wednesday":
+           message ("What about watching a movie?");
+           break;
+       default:
+           message ("You don't have any recommendation.");
+           break;
     }
 
 ## Classes and files {#classes-and-files}
@@ -128,6 +135,17 @@ than good.
 Also worth referring that there should be no Hungarian notation, and no mix of
 any kinds of notations.
 
+## Casting {#casting}
+
+Avoid using `as` keyword when casting as it might give `null` as result, which could be easily forgotten to check.
+
+
+    /* OK */
+    ((Gtk.Entry) widget).max_width_chars
+
+    /* NOT OK as this approach requires a check for null */
+    (widget as Gtk.Entry).max_width_chars
+
 ## Vala namespaces {#vala-namespaces}
 
 Referring to GLib is not necessary. If you want to print something:
@@ -146,26 +164,32 @@ limit is 120 characters.
 
 ## GPL Header {#gpl-header}
 
-    /***
-      Copyright (C) 2011-2012 Application Name Developers
-      This program is free software: you can redistribute it and/or modify it
-      under the terms of the GNU Lesser General Public License version 3, as published
-      by the Free Software Foundation.
-
-      This program is distributed in the hope that it will be useful, but
-      WITHOUT ANY WARRANTY; without even the implied warranties of
-      MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-      PURPOSE. See the GNU General Public License for more details.
-
-      You should have received a copy of the GNU General Public License along
-      with this program. If not, see
-    ***/
+    /*
+    * Copyright (c) 2011-2016 APP Developers (http://launchpad.net/APP)
+    *
+    * This program is free software; you can redistribute it and/or
+    * modify it under the terms of the GNU General Public
+    * License as published by the Free Software Foundation; either
+    * version 2 of the License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful,
+    * but WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public
+    * License along with this program; if not, write to the
+    * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+    * Boston, MA 02111-1307, USA.
+    *
+    * Authored by: Author <author@example.com>
+    */
 
 # Reporting Bugs {#reporting-bugs}
 
 One of the big advantages of being an openly developed project is being able to take part in public bug tracking. However, if you're new to working with public bug tracking, it can be difficult to understand how to report bugs The Right Way™. So let's find out how:
 
-1. In order to file reports, you must be signed up as a member of Launchpad. If you've been through our [development guide](/docs/code/the-basic-setup), you already have this covered.
+1. In order to file reports, you must be signed up as a member of Launchpad. If you've been through our [development guide](/docs/code/getting-started#the-basic-setup), you already have this covered.
 2. Find the "Report a Bug" page for the app in question. Often times you can right-click the app in the dock, select "About", and then select "Report a Problem". Otherwise, you can search for the app on Launchpad, select the "Bugs" tab, and then "Report a Bug" on the right side of the page.
 3. When filing a new report, launchpad will automatically check for duplicates. However, it's still a good idea to search the bug list to make sure your report hasn't been filed already. If your report has already been filed by someone else, you can mark the report as affecting you using the link on the top left of the report's page. Only comment on the report if you can provide additional useful information that may help track down the source of the issue. Do not comment things like, "I have this problem too" or "This is a really important issue".
 5. If your report has not already been filed by someone else and you've reached the "Report a Bug" page, type in a summary and description of the issue and select "Submit". Keep in mind the following information while filing your report:

@@ -5,11 +5,13 @@
     "Store": "Mağaza",
     "Developer": "Geliştirici",
     "Get Involved": "Dahil Ol",
-    "Copyright &copy; 2015 elementary LLC. <a href=\"/privacy-policy\">Privacy Policy</a>": "Telif Hakkı © 2015 elementary LLC. <a href=\"/privacy-policy\">Gizlilik Politikası</a>",
+    "This is a development site.": "Bu bir geliştirme sitesidir.",
+    "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Sitemizin geliştirme sürümünü görüntülemektesiniz. Beklediğiniz gibi bazı sayfalar burada çalışmayabilir. Eğer bağlantılar çalışmıyorsa lütfen güncel  <a href=\"http://elementary.io\">elementary.io</a> web adresini ziyaret edin. ",
+    "Copyright &copy; 2016 elementary LLC.\n                <a href=\"/team\">Team</a>\n                <a href=\"/brand\">Brand</a>\n                <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                <a href=\"/team\">Team</a>\n                <a href=\"/brand\">Brand</a>\n                <a href=\"/privacy-policy\">Privacy Policy</a>",
     "Language": "Dil",
     "Change Site Language": "Site Dilini Değiştir",
     "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "elementary OS web sitesi kullandığın tarayıcının desteklemediği modern web teknolojileri ile geliştirildi.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Internet Explorer bu sürümü güncel değil ve hatalar ile güvenlik açıkları barındırıyor olabilir. Lütfen IE 11 veya alternatif bir internet tarayıcıya <a href=\"http://browsehappy.com/\">yükselt</a>.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Internet Explorer'ın bu sürümü güncel değil ve hatalar ile güvenlik açıklarını barındırıyor olabilir. Lütfen IE 11 veya alternatif bir internet tarayıcıya <a href=\"http://browsehappy.com/\">yükselt</a>.",
     "Dismiss": "Kapat",
     "Learn More": "Daha Fazla Bilgi"
 }

@@ -79,6 +79,7 @@ See Also:
 
 1. [Checkboxes That Kill Your Product](http://limi.net/checkboxes-that-kill) by Alex Limi
 2. [Don't Give Your Users Shit Work](http://zachholman.com/posts/shit-work/) by Zach Holman
+3. [The Wizard Anti-Pattern](http://stef.thewalter.net/installer-anti-pattern.html) by Stef Walter
 
 ## Minimal Documentation {#minimal-documentation}
 
@@ -281,7 +282,7 @@ See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop
 
 ## Contractor {#contractor}
 
-Contractor is a service and a protocol for exposing services easily between apps. It allows an app to interact with various other apps/services without hardcoding support for them. You simply add contractor support, and then any service registered with contractor is now available for your app to use. Your app can integrate with contractor in two different ways:
+Contractor is a service and a protocol for exposing services easily between apps. It allows an app to interact with various other apps/services without hardcoding support for them. You simply add [contractor](https://launchpad.net/contractor) support, and then any service registered with contractor is now available for your app to use. Your app can integrate with contractor in two different ways:
 
 * Register one of it's functions as a service that can be used from other apps
 * Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages
@@ -485,7 +486,7 @@ The Welcome Screen consists of two sets of labels:
 * The first set explains the situation and what the Welcome Screen will help you accomplish. As an example, Noise's Welcome Screen explains that your music library is empty and that in order for the library view to become useful, we must add songs to it.
 * The second set of labels consists of the actions that will assist a user in getting started with your app. To use Noise as an example again, one possible action is setting your music folder to an alternate location. First we name the action, "Set Music Folder". Then, we describe what the action does, "Find your Music folder and import its contents."
 
-### Iconography {#iconography}
+### Iconography {#welcome-screen-iconography}
 
 Grouped with each action is an icon that helps to quickly visualize it. Most of the time these will be Action icons, but you can use Places icons when importing or setting a location and even Apps icons if you must open a configuration utility.
 
@@ -565,7 +566,7 @@ Linked Buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
 
-![](/images/docs/human-interface-guidelines/appmenu/cogcorner.png)
+![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
 
 ### Usage {#appmenu-usage}
 
@@ -642,163 +643,205 @@ Notebooks are a type of widget that allow showing one of multiple pages in an ap
 
 ### Static Notebook {#static-notebook}
 
+![](/images/docs/human-interface-guidelines/notebooks/static-notebook.png)
+
 A Static Notebook is a small set of unchanging tabs, commonly seen in preferences or settings screens. The tabs appear as linked buttons centered at the top of the content area. A Static Notebook should typically contain two to five tabs.
 
 ### Dynamic Notebook {#dynamic-notebook}
 
+![](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
+
 A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
 
-# Icons {#icons}
+# Iconography {#iconography}
 
 Iconography is a key part of elementary OS. Icons make up the majority of the UI that your user will be actively engaging with; they're what bring the system to life and cater to the powerful recognition engine of the human brain.
 
-![](/images/docs/human-interface-guidelines/icons/icons.png)
+## Shape {#shape}
 
-## Style {#style}
+Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
-elementary Icons have a distinctive visual style that is inspired in part by the [Tango Icons](http://tango.freedesktop.org/Tango_Desktop_Project). Icons on elementary share several common design elements.
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg">
+	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
+	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
+	<img title="Videos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
+	<img title="Online Accounts icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg">
+	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+</div>
 
-### Design Elements {#design-elements}
+### Metaphors
 
-#### Shape {#shape}
+If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
-Icons should have a distinctive shape/silhouette to improve recognition. The shape should not be too complicated, but not every icon should be a rounded rectangle.
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img title="Camera icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg">
+	<img title="Hard Disk icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/drive-harddisk.svg">
+	<img title="Mouse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/input-mouse.svg">
+	<img title="Package icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/package.svg">
+	<img title="HTML Text icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg">
+	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
+</div>
 
-#### Outline {#outline}
+### Action Icons
 
-All elementary Icons, and shapes within the icons, are stroked with a thin outline to improve contrast. At low resolutions the stroke size is 1px. The stroke should _not_ scale along with the icon, it should remain 1px.
+Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
-The color of the outline is a dark variant of the key color of the icon. This is done by creating a stroke at 30% opacity of black such that the border of the background lines up at half pixels. This is what allows icons with a stroke to appear sharp on dark backgrounds as well as light ones.
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img title="Previous icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
+	<img title="Next icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg">
+	<img title="Document export icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg">
+	<img title="Print icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg">
+	<img title="Save icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg">
+	<img title="Delete icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
+	<img title="Cut icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
+	<img title="Undo icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
+	<img title="Inverse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg">
+	<img title="Play icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
+	<img title="New tag icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
+	<img title="Menu icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
+</div>
 
-#### Highlights {#highlights}
+If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
 
-The edges of objects tend to reflect light more due to the fact the position of the observer relative to the light source is almost always ideal for the reflection. We produce a subtle second inner outline of the object as a highlight. This stroke is very subtle and may not be apparent on some matte objects.
-
-#### Limited glossy reflections {#limited-glossy-reflections}
-
-Use glossy reflection only on objects that have a reflective surface in real life (plastic, glass, some metal, et cetera). A sheet of paper should not be glossy.
-
-### Lighting and Perspective {#lighting-and-perspective}
-
-elementary Icons have a consistent light source and perspective to keep a similar look throughout the system. The icons have been designed with the UI theme in mind, meaning everything shares a cohesive feel and a subtle amount of realism.
-
-#### Lighting {#lighting}
-
-Icons are lit from above. Items may produce a small, fuzzy shadow toward the bottom of the icon as if the icon is sitting on a shelf facing the user.
-
-#### Perspective {#perspective}
-
-Icons should have the perspective of looking at an object on a shelf at eye level. This means the icons are front-on, not from above and not tilted to the side. This also has an effect of giving icons slightly less depth than their real-world counterparts.
-
-------------------
-
-_Portions of this page have been adapted from the_ [_Tango Icon Theme Guidelines_](http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines)_._
+If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
 
-## Launcher Icons {#launcher-icons}
+## Icon Sizes {#size}
 
-A launcher icon is a graphic that represents your app. Launcher icons appear in the app launcher and on the user's dock. Launcher icons may show up in other places in the OS, such as in a notification or when being referenced by another app.
+elementary OS uses **six** main icon sizes throughout the OS and it's best to include all six as part of your application.
 
-You should create separate icons for all possible display sizes, including 32, 48, 64, and 128 pixels. This ensures that your icons will display properly throughout the OS without being blurry or oddly weighted.
+<div class="icons-container">
+	<img title="16 pixel icon" src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg">
+	<img title="24 pixel icon" src="/images/docs/human-interface-guidelines/icons/24/utilities-terminal.svg">
+	<img title="32 pixel icon" src="/images/docs/human-interface-guidelines/icons/32/utilities-terminal.svg">
+	<img title="48 pixel icon" src="/images/docs/human-interface-guidelines/icons/48/utilities-terminal.svg">
+	<img title="64 pixel icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+	<img title="128 pixel icon" id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+</div>
 
-### Goals of the Launcher Icon {#goals-of-the-launcher-icon}
+<div class="icons-container">
+	<span>16</span>
+	<span>24</span>
+	<span>32</span>
+	<span>48</span>
+	<span>64</span>
+	<span id="s128">128</span>
+</div>
 
-App launcher icons have three primary goals:
+<div class="icons-container small-screen">
+	<img title="128 pixel icon" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+</div>
 
-1. Promote the brand and tell the story of the app.
-2. Help users discover the app in the software center.
-3. Function well in the OS.
+<div class="icons-container small-screen">
+	<span>128</span>
+</div>
 
-#### Promote the brand story {#promote-the-brand-story}
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually. For more information about this practice (called "pixel-fitting") and its importance, we recommend reading [Dustin Curtis' article, Pixel-fitting](http://dcurt.is/pixel-fitting).
 
-App launcher icons are an opportunity to showcase the brand and hint at the story of what your app is about. Thus, you should:
+## Color Palette {#color}
 
-* Create an icon that is unique and memorable.
-* Use a color scheme that suits your brand.
-* Don't try to communicate too much with the icon. A simple icon will have more impact and be more memorable.
-* Avoid including the application name in the icon.
+Color, don't be afraid to use it! Many of the elementary icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
 
-#### Help users discover the app in the software center {#help-users-discover-the-app-in-the-software-center}
+<div style="width:100%;display:inline-block;text-align:center;">
+	<img title="Mail icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg">
+	<img title="RSS reader icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-news-reader.svg">
+	<img title="Web browser icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
+	<img title="Photos icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
+	<img title="Network error icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/network-error.svg">
+	<img title="Calendar icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg">
+</div>
 
-App launcher icons are the first look that prospective users will get of your app in the software center. A high quality app icon can influence users to find out more as they scroll through lists of apps.
+Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
 
-Quality matters here; a well-designed icon can be a strong signal that your app is of similarly high quality. Consider working with an icon designer to develop the app’s launcher icon.
+## Composition {#composition}
 
-#### Function well in the OS {#function-well-in-the-os}
+There are three aspects to note when designing an elementary icon:
 
-A successful app launcher icon will look great in all situations: on near-white when in the the app launcher, partially over any background when on the dock, and next to any other icons and app widgets. To do this, icons should:
+* Its baseline (highlighted in <span style="color:blue;">blue</span>) to ensure that all icons of one size line up along the bottom when in a row (much like text).
+* Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
+* The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
 
-* Communicate well at smaller sizes.
-* Work on a wide variety of backgrounds.
-* Reflect the implied lighting model of the OS (top-lit).
-* Have a relatively shallow depth.
-* Have a unique silhouette for faster recognition; **not all app icons should be square**.
-* Not present a cropped view of a larger image.
-* Have similar weight to other icons. Icons that are too spindly or that don't use enough of the space may not successfully attract the user’s attention, or may not stand out well on all backgrounds.
+<img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
 
-### Do's and Don'ts {#dos-and-donts}
+Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
+
+### Common Measurements
+
+If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
+
+
+| Canvas Size   | Base Line     | x-Height | Mean Line Height |
+| ------------- |:------------- | -------- | ---------------- |
+| 16x16         | 1             | 14       | 8                |
+| 24x24         | 2             | 20       | 12               |
+| 32x32         | 2             | 26       | 16               |
+| 48x48         | 3             | 40       | 24               |
+| 64x64         | 4             | 56       | 32               |
+| 128x128       | 9             | 104      | 64               |
+
+### Exceptions
+
+However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+
+<img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+
+Rounder components will generally require some overshoot, to compensate for the optical illusion that makes them look smaller than their rectangular counterparts.
+
+## Outlines &amp; Contrast {#contrast}
+
+All elementary icons have a thin outline (stroke) to improve their contrast. The width of this stroke is **one** pixel for all icons, at every size.
+The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
+
+<img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="Second icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+
+To further improve contrast, strokes are also semi-transparent. This ensures that icons appear sharp against a variety of backgrounds. Also, if the element is near-white, this stroke acts as a border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
+
+## Shadows &amp; Highlights {#shadows}
+
+If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary icons emulate in their design to lend them a degree of realism.
+
+### Edge Highlight
+
+To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
+
+<img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+
+### Drop Shadow
+
+To draw the shadow, you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpendicular to the bottom margin of the icon. The gradient has three stops, the first and last of which have zero opacity. Then this entire shape is set to **60% opacity**.
+
+![](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
+
+Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first, but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge—see below for an example. Both these rectangles are also set to **60% opacity**.
+
+![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
+
+### Pictogram Shadow
+
+If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
+
+![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
+
+To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
+
+### Icon Materials
+
+You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
+
+![](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
+
+## Dos and Don'ts {#dos-donts}
+
 Below are some "do and don't" examples to consider when creating icons for your app.
 
-* Icons should not be overly complicated. Remember that launcher icons will be used at often small sizes, so they should be distinguishable at small sizes.
-* Icons should not be cropped. Use unique shapes where appropriate; remember that launcher icons should differentiate your app from others. Additionally, **do not use a glossy finish** unless the represented object has a glossy material.
-* Icons should not be thin. They should have a similar weight to other icons. Overly thin icons will not stand out well on all backgrounds.
-* Icons should make use of the alpha channel, and should not simply be full-frame images. Where appropriate, distinguish your icon with subtle yet appealing visual treatment.
-* If your icon has a tilt to it's perspective, it should tilt backward (not forward).
-
------------------------------
-
-_Portions of this page are derived from work created and [shared by the Android Open Source Project](http://developer.android.com/license.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/)._
-
-## MimeTypes {#mimetypes}
-
-MimeType icons are used to visually represent files and types of files. Users will come across them in the file browser and when saving or opening a file.
-
-## Actions {#actions}
-
-Action icons are graphics used to represent user actions. Action icons are most commonly found in app toolbars, but can be found throughout the OS.
-
-If your app has an action that can be described by an existing system action icon, reference that icon. This ensures a consistent user experience and aids in user recognition of common functions.
-
-If your app has a unique action not easily described by an existing icon, you may need to create your own icon. Follow the look and feel of existing system icons and install the icon along with your app.
-
-## Size and Alignment {#size-and-alignment}
-
-Icons come in all kinds of shapes. To keep a coherent flow, we try to adopt principals of type design when sizing and aligning our icons. For a 48px icon, we do as follows.
-
-### X-Height and Base Line {#x-height-and-base-line}
-![](/images/docs/human-interface-guidelines/size-and-alignment/x-height-and-base-line.png)
-
-A 48px icon as an x-height of 40px. The base Line starts 3px above the bottom of the canvas.
-
-### Mean Line {#mean-line}
-![](/images/docs/human-interface-guidelines/size-and-alignment/mean-line.png)
-
-The mean line goes right through the center of the canvas. Its primary use is in aligning floating elements. If an element's height is an odd number, align 1px below the mean line.
-
-### Ascent and Descent {#ascent-and-descent}
-![](/images/docs/human-interface-guidelines/size-and-alignment/ascent-and-descent.png)
-
-Some icons need to extend past the X-height. Your standard ascenders and descenders should be just 2px past the x-height. This is useful when you need to use more space to convey the same overall area (such as with circle icons) or you need to overlay a smaller icon (such as when conveying an action performed on an object).
-
-### Exceptions {#exceptions}
-![](/images/docs/human-interface-guidelines/size-and-alignment/exceptions-1.png)
-
-Not every icon follows the rules perfectly. Mimetype icons ascend to the top of the canvas.
-
-![](/images/docs/human-interface-guidelines/size-and-alignment/exceptions-2.png)
-
-If you need to break the rules, you can still use the established lines to keep with the general cadence.
-
-### Scaling {#scaling}
-
-Contrary to popular belief, you cannot supply a single high resolution version of an icon and expect it to scale properly. Your icon will appear blurry or heavy and may have illegible pieces. It is always best to begin designing an icon at it's expected display size (which will be provided for you as we talk about different kinds of icons).
-
-* **16px** for Symbolic icons, MimeTypes, Places icons, and Status Icons
-* **24px** for Action icons, MimeTypes, and Places icons
-* **32px** for App icons, MimeTypes, and Places icons
-* **48px** for App icons, Actions icons, MimeTypes, Places icons, and Status Icons
-* **64px** for App icons, Actions icons, MimeTypes, Places icons, and Status icons
-* **128px** for App Icons, Actions icons, MimeTypes, Places Icons and Status Icons
+* Your icon should not be overly complicated. Keep in mind that since there are smaller sizes, the elements that make up your icon should be distinguishable when at those sizes.
+* Your icon should make use of transparent elements, and should not simply be full-frame images. Where you can, distinguish your icon with subtle yet appealing visuals.
+* Don't make a thin icon. Your icon's weight should be comparable to that of other icons. An overly thin icon won't stand out well on many backgrounds.
+* If you would like to give your icon a tilted perspective, it should tilt backward (not forward).
 
 # Text {#text}
 
@@ -902,6 +945,7 @@ Proper typography is important throughout elementary OS. Not just for consistenc
 
 * Only use **one space** after a period.
     * i.e. “This is a sentence. This is another sentence.”
+* Use a proper ellipsis character (…) rather than three dots.
     * Use `\u0133` in your code.
     * See [Using Ellipses](#using-ellipses) for usage details.
 * For quotes, use proper **left and right double quotation characters** (“ and ”).
@@ -933,7 +977,7 @@ Use `\u2013` in code. Used for:
 
 Use `\u2014` in code. Used for:
 
-* Interjections (e.g. the party—which was scheduled for Thursday—was delayed). 
+* Interjections (e.g. the party—which was scheduled for Thursday—was delayed).
     * _Do not put a space on either side._
 * Quote offsets.
     * _New line, space to the right._

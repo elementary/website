@@ -1,3 +1,8 @@
+/***************************************
+* Copyright 2016 elementary LLC.       *
+* This file is part of elementaryos.io *
+***************************************/
+
 html,
 body {
     background-color: #3e4e54;
@@ -11,29 +16,17 @@ footer {
     fill: #586e75;
 }
 
-/* SECTIONS */
-section,
-section.hero {
-    padding-bottom: 96px;
+/***********
+* Sections *
+***********/
+
+section {
+    padding: 32px 0;
 }
 
 section.light {
     background-color: #fdf6e3;
     color: #586e75;
-}
-
-section .heading {
-    background-color: rgba(0,0,0,0.04);
-}
-
-section .heading p.small-label {
-    text-align: right;
-    font-size: 18px;
-}
-
-section .heading p.small-label a,
-section .heading p.small-label a:hover {
-    color: inherit;
 }
 
 /*********
@@ -58,66 +51,68 @@ section .heading p.small-label a:hover {
     background-color: rgba(200, 208, 208, 0.5);
 }
 
-section:nth-child(2) .button.flat.suggested-action {
+#translations .button.flat.suggested-action {
     background-color: #2aa198;
     border-color: #2aa198;
 }
 
-section:nth-child(2) .button.flat.suggested-action:focus {
-    background-color: #44BBB2!important;
+#translations .button.flat.suggested-action:focus {
+    background-color: #44bbb2 !important;
 }
 
-section:nth-child(3) .button.flat.suggested-action {
+#web-development .button.flat.suggested-action {
     background-color: #d53c12;
     border-color: #d53c12;
 }
 
-section:nth-child(3) .button.flat.suggested-action:focus {
-    background-color: #EF562C!important;
+#web-development .button.flat.suggested-action:focus {
+    background-color: #ef562c !important;
 }
 
-section:nth-child(4) .button.flat.suggested-action {
+#design .button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
 }
 
-section:nth-child(4) .button.flat.suggested-action:focus {
-    background-color: #40A5EC!important;
+#design .button.flat.suggested-action:focus {
+    background-color: #40a5ec !important;
 }
 
-section:nth-child(5) .button.flat.suggested-action {
+#desktop-development .button.flat.suggested-action {
     background-color: #d33682;
     border-color: #d33682;
 }
 
-section:nth-child(5) .button.flat.suggested-action:focus {
-    background-color: #ED509C!important;
+#desktop-development .button.flat.suggested-action:focus {
+    background-color: #ed509c !important;
 }
 
-section:nth-child(6) .button.flat.suggested-action {
+#funding .button.flat.suggested-action {
     background-color: #edac35;
     border-color: #edac35;
 }
 
-section:nth-child(6) .button.flat.suggested-action:focus {
-    background-color: #ffc357!important;
+#funding .button.flat.suggested-action:focus {
+    background-color: #ffc357 !important;
 }
 
 @media (max-width: 1080px) {
+
     .button.flat {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .actions {
-    margin-top: 50px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .charts .barchart-ctn {
-    width: 780px;
     max-width: 100%;
+    width: 780px;
 }
 
 .charts .barchart-ctn,
@@ -127,13 +122,14 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 .charts .doughnuts-ctn {
-    margin-left: 30px;
+    min-width: 150px;
 }
+
 .charts .doughnuts-ctn .doughnut {
+    height: 90px;
+    margin: 15px auto;
     position: relative;
     width: 90px;
-    height: 90px;
-    margin: 15px;
 }
 
 .charts .doughnuts-ctn .doughnut canvas {
@@ -142,13 +138,13 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 .doughnut .doughnut-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 11px 0;
     font-size: 12px;
+    left: 0;
+    padding: 11px 0;
+    position: absolute;
     text-align: center;
+    top: 0;
+    width: 100%;
 }
 
 .doughnut .doughnut-count {
@@ -157,28 +153,33 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 @media (max-width: 985px) {
+
     .charts .doughnuts-ctn {
         margin-left: 0;
     }
+
     .charts .doughnuts-ctn .doughnut {
         display: inline-block;
         margin: 4px;
     }
+
 }
 
 @media (max-width: 360px) {
+
     .charts .doughnuts-ctn .doughnut {
-        width: 70px;
         height: 70px;
+        width: 70px;
     }
 
     .charts .doughnuts-ctn .doughnut .doughnut-label {
         padding: 4px 0;
     }
+
 }
 
 .doughnut.fixed .doughnut-count {
-    color: #95A5AC;
+    color: #95a5ac;
 }
 
 .doughnut.in-progress .doughnut-count {
@@ -189,50 +190,62 @@ section:nth-child(6) .button.flat.suggested-action:focus {
     color: #dc322f;
 }
 
-.row.hero .actions .button.flat {
-    display: inline-block;
-    color: #c8d0d0;
+#sections-menu {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 0;
+}
+
+#sections-menu .button.flat {
     border: 2px solid #c8d0d0;
     border-radius: 4px;
+    color: #c8d0d0;
+    display: inline-block;
     min-width: 200px;
     vertical-align: middle;
 }
 
-.row.hero .actions .button.flat:nth-child(1) {
-    border-color: #2aa198;
-}
-
-.row.hero .actions .button.flat:nth-child(2) {
-    border-color: #cb4b16;
-}
-
-.row.hero .actions .button.flat:nth-child(3) {
-    border-color: #268bd2;
-}
-
-.row.hero .actions .button.flat:nth-child(4) {
-    border-color: #d33682;
-}
-
-.row.hero .actions .button.flat:nth-child(5) {
+#sections-menu .button.flat:nth-child(1) {
     border-color: #edac35;
 }
 
-/* CUSTOM SECTIONS */
+#sections-menu .button.flat:nth-child(2) {
+    border-color: #2aa198;
+}
+
+#sections-menu .button.flat:nth-child(3) {
+    border-color: #cb4b16;
+}
+
+#sections-menu .button.flat:nth-child(4) {
+    border-color: #d33682;
+}
+
+#sections-menu .button.flat:nth-child(5) {
+    border-color: #268bd2;
+}
+
+/******************
+* CUSTOM SECTIONS *
+******************/
+
+#translations img {
+    width: 100%;
+}
+
 .web-browser {
     background-image: url("../images/get-involved/web-development.svg");
-    background-repeat: no-repeat;
     background-position: top center;
+    background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 888px;
+    border: 2px solid rgba(88, 110, 117, 0.5);
+    border-radius: 4px;
+    box-sizing: border-box;
     height: auto;
-    max-width: 100%;
     margin: 24px auto;
+    max-width: 100%;
     padding: 110px 190px 40px 190px;
     text-align: left;
-    box-sizing: border-box;
-    border: 2px solid #808B8E;
-    border-radius: 4px;
+    width: 888px;
 }
 
 .web-browser > .actions > a {
@@ -240,21 +253,26 @@ section:nth-child(6) .button.flat.suggested-action:focus {
 }
 
 @media (max-width: 888px) {
+
     .web-browser {
-        width: 96%;
         height: auto;
         margin: 24px 2%;
         padding: 110px 130px 40px 130px;
+        width: 96%;
     }
+
     .web-browser > .actions {
-        margin-top: 30px;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
+
 }
 
 @media (max-width: 600px) {
+
     .web-browser {
         background-image: url("../images/get-involved/web-development-mobile.svg");
         padding: 80px 24px 24px 24px;
     }
+
 }
