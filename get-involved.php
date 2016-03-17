@@ -8,11 +8,13 @@
     include $template['header'];
     include $template['alert'];
 ?>
-<section class="grid hero">
+<section class="hero">
+    <div class="grid">
         <div class="two-thirds">
             <h1>"Be the change you wish to see in the world"</h1>
             <p>These are words we live by. Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
+    </div>
 </section>
 
 <section id="sections-menu">
@@ -20,14 +22,15 @@
         <div class="whole">
             <a class="button flat" href="#funding">Funding</a>
             <a class="button flat" href="#translations">Translations</a>
-            <a class="button flat" href="#web-development">Web Development</a>
-            <a class="button flat" href="#desktop-development">Desktop Development</a>
+            <a class="button flat" href="#support">Support</a>
+            <a class="button flat" href="#web-development">Web</a>
+            <a class="button flat" href="#desktop-development">Desktop</a>
             <a class="button flat" href="#design">Design</a>
         </div>
     </div>
 </section>
 
-<section id="funding" class="light">
+<section id="funding">
     <div class="grid">
         <div class="two-thirds">
             <h1>Funding</h1>
@@ -60,7 +63,7 @@
     </div>
 </section>
 
-<section id="translations" class="dark">
+<section id="translations">
     <div class="grid">
         <div class="whole">
             <h1>Translations</h1>
@@ -81,7 +84,33 @@
     </div>
 </section>
 
-<section id="web-development" class="light">
+<section id="support">
+    <div class="grid">
+        <div class="two-thirds">
+            <h1>Support</h1>
+            <p></p>
+        </div>
+        <div class="half">
+            <h2>Question & Answer</h2>
+            <p>Stackexchange is a Q&A website designed.</p>
+
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
+            </div>
+        </div>
+        <div class="half">
+            <h2>Documentation</h2>
+            <p></p>
+
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://github.com/elementary/mvp/blob/master/docs/code/getting-started.md" target="_blank">Developer Docs</a>
+                <a class="button flat" href="https://github.com/elementary/mvp/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="web-development">
     <div class="web-browser">
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
@@ -92,7 +121,7 @@
     </div>
 </section>
 
-<section id="desktop-development" class="dark">
+<section id="desktop-development">
     <div class="grid">
         <div class="two-thirds">
             <h1>Desktop Development</h1>
@@ -141,7 +170,7 @@
     </div>
 </section>
 
-<section id="design" class="light">
+<section id="design">
     <div class="grid">
         <div class="two-thirds">
             <h1>Design</h1>

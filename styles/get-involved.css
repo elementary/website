@@ -1,6 +1,6 @@
 /***************************************
 * Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 html,
@@ -8,12 +8,6 @@ body {
     background-color: #3e4e54;
     color: #c8d0d0;
     fill: #c8d0d0;
-}
-
-footer {
-    background-color: #fdf6e3;
-    color: #586e75;
-    fill: #586e75;
 }
 
 /***********
@@ -24,68 +18,36 @@ section {
     padding: 32px 0;
 }
 
-section.light {
-    background-color: #fdf6e3;
-    color: #586e75;
+section:nth-child(odd),
+footer {
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 /*********
 * Button *
 *********/
 
-.light .button.flat {
-    border-color: rgba(88, 110, 117, 0.5);
-    color: #586e75;
-}
-
-.dark .button.flat {
+.button.flat {
     border-color: rgba(200, 208, 208, 0.5);
     color: #c8d0d0;
-}
-
-.button.flat.suggested-action {
-    color: white;
 }
 
 .button.flat:focus {
     background-color: rgba(200, 208, 208, 0.5);
 }
 
-#translations .button.flat.suggested-action {
-    background-color: #2aa198;
-    border-color: #2aa198;
-}
-
-#translations .button.flat.suggested-action:focus {
-    background-color: #44bbb2 !important;
-}
-
-#web-development .button.flat.suggested-action {
-    background-color: #d53c12;
-    border-color: #d53c12;
-}
-
-#web-development .button.flat.suggested-action:focus {
-    background-color: #ef562c !important;
-}
-
-#design .button.flat.suggested-action {
+.button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
+    color: #fff;
 }
 
-#design .button.flat.suggested-action:focus {
-    background-color: #40a5ec !important;
+.button.flat.suggested-action:focus {
+    background-color: #40a5ec;
+    border-color: #40a5ec;
 }
 
-#desktop-development .button.flat.suggested-action {
-    background-color: #d33682;
-    border-color: #d33682;
-}
-
-#desktop-development .button.flat.suggested-action:focus {
-    background-color: #ed509c !important;
-}
+/* Funding */
 
 #funding .button.flat.suggested-action {
     background-color: #edac35;
@@ -93,7 +55,57 @@ section.light {
 }
 
 #funding .button.flat.suggested-action:focus {
-    background-color: #ffc357 !important;
+    background-color: #ffc357;
+    border-color: #ffc357;
+}
+
+/* Translations */
+
+#translations .button.flat.suggested-action {
+    background-color: #2aa198;
+    border-color: #2aa198;
+}
+
+#translations .button.flat.suggested-action:focus {
+    background-color: #44bbb2;
+    border-color: #44bbb2;
+}
+
+/* Support */
+
+#support .button.flat.suggested-action {
+    background-color: #d53c12;
+    border-color: #d53c12;
+}
+
+#support .button.flat.suggested-action:focus {
+    background-color: #ef562c;
+    border-color: #ef562c;
+}
+
+/* Web */
+
+#web-development .button.flat.suggested-action {
+    background-color: #d33682;
+    border-color: #d33682;
+}
+
+#web-development .button.flat.suggested-action:focus {
+    background-color: #ed509c;
+    border-color: #ed509c;
+}
+
+/* Design */
+
+#design .button.flat.suggested-action {
+    color: #3e4e54;
+    background-color: rgba(200, 208, 208, 0.8);
+    border-color: transparent;
+}
+
+#design .button.flat.suggested-action:focus {
+    background-color: #fff;
+    border-color: #fff;
 }
 
 @media (max-width: 1080px) {
@@ -191,7 +203,6 @@ section.light {
 }
 
 #sections-menu {
-    background-color: rgba(0, 0, 0, 0.04);
     padding: 0;
 }
 
@@ -200,7 +211,7 @@ section.light {
     border-radius: 4px;
     color: #c8d0d0;
     display: inline-block;
-    min-width: 200px;
+    min-width: 167px;
     vertical-align: middle;
 }
 
