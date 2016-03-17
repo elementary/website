@@ -9,56 +9,37 @@
     include $template['alert'];
 ?>
 <section class="grid hero">
-    <h1>Check out our progress for Loki Alpha 1</h1>
-    <div class="charts">
-        <div class="barchart-ctn">
-            <canvas width="750" height="400"></canvas>
+        <div class="two-thirds">
+            <h1>"Be the change you wish to see in the world"</h1>
+            <p>These are words we live by. Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
-        <div class="doughnuts-ctn">
-            <div id="date"></div>
-            <div class="doughnut fixed">
-                <canvas id="fixed-chart" width="90" height="90"></canvas>
-                <div class="doughnut-label">
-                    <span class="doughnut-count">0</span><br>
-                    Fixed
-                </div>
-            </div>
-            <div class="doughnut in-progress">
-                <canvas id="in-progress-chart" width="90" height="90"></canvas>
-                <div class="doughnut-label">
-                    <span class="doughnut-count">0</span><br>
-                    In Progress
-                </div>
-            </div>
-            <div class="doughnut created">
-                <canvas id="created-chart" width="90" height="90"></canvas>
-                <div class="doughnut-label">
-                    <span class="doughnut-count">0</span><br>
-                    Unfixed
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 <section id="sections-menu">
     <div class="grid">
-        <a class="button flat" href="#funding">Funding</a>
-        <a class="button flat" href="#translations">Translations</a>
-        <a class="button flat" href="#web-development">Web Development</a>
-        <a class="button flat" href="#desktop-development">Desktop Development</a>
-        <a class="button flat" href="#design">Design</a>
+        <div class="whole">
+            <a class="button flat" href="#funding">Funding</a>
+            <a class="button flat" href="#translations">Translations</a>
+            <a class="button flat" href="#web-development">Web Development</a>
+            <a class="button flat" href="#desktop-development">Desktop Development</a>
+            <a class="button flat" href="#design">Design</a>
+        </div>
     </div>
 </section>
 
 <section id="funding" class="light">
     <div class="grid">
+        <div class="two-thirds">
+            <h1>Funding</h1>
+            <p>The biggest way to help out elementary is with funding. With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
+        </div>
         <div class="half">
-            <h2>Targeted Funding</h2>
+            <h2>Bug Bounties</h2>
             <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
             <div class="actions">
-                <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary" target="_blank">BountySource</a>
+                <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
+                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_commenter=&field.subscriber=&field.structural_subscriber=&field.tag=bounty&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&field.has_blueprints.used=&field.has_blueprints=on&field.has_no_blueprints.used=&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
             </div>
         </div>
         <div class="half">
@@ -81,8 +62,10 @@
 
 <section id="translations" class="dark">
     <div class="grid">
+        <div class="whole">
+            <h1>Translations</h1>
+        </div>
         <div class="half">
-            <h2>Translations</h2>
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
             <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="/docs/translation-guide#translating-applications" class="read-more">Learn More</a></p>
             <p>Our website is also openly translated using an online platform called Transifex. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
@@ -100,9 +83,8 @@
 
 <section id="web-development" class="light">
     <div class="web-browser">
-        <h2>Web Development</h2>
-        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better. Most of the design work is done by our Design Team, but we love design ideas and feedback for our Web Team.</p>
-
+        <h1>Web Development</h1>
+        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
         <div class="actions">
             <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
             <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report an Issue with Our Website</a>
@@ -112,38 +94,74 @@
 
 <section id="desktop-development" class="dark">
     <div class="grid">
-        <div class="half">
-            <h2>Desktop Development</h2>
+        <div class="two-thirds">
+            <h1>Desktop Development</h1>
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
-
+        </div>
+        <div class="whole">
+            <h2>Our Progress for The Loki Alpha1 Milestone:</h2>
+            <div class="charts">
+                <div class="barchart-ctn">
+                    <canvas width="750" height="400"></canvas>
+                </div>
+                <div class="doughnuts-ctn">
+                    <div id="date"></div>
+                    <div class="doughnut fixed">
+                        <canvas id="fixed-chart" width="90" height="90"></canvas>
+                        <div class="doughnut-label">
+                            <span class="doughnut-count">0</span><br>
+                            Fixed
+                        </div>
+                    </div>
+                    <div class="doughnut in-progress">
+                        <canvas id="in-progress-chart" width="90" height="90"></canvas>
+                        <div class="doughnut-label">
+                            <span class="doughnut-count">0</span><br>
+                            In Progress
+                        </div>
+                    </div>
+                    <div class="doughnut created">
+                        <canvas id="created-chart" width="90" height="90"></canvas>
+                        <div class="doughnut-label">
+                            <span class="doughnut-count">0</span><br>
+                            Unfixed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whole">
             <div class="actions">
                 <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
                 <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank">Browse Our Apps' Code</a>
-                <a class="button flat" href="https://bugs.launchpad.net/elementary" target="_blank">See Our Open Bug Reports</a>
+                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?field.tag=bitesize" target="_blank">Bitesized Bugs</a>
+                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_commenter=&field.subscriber=&field.structural_subscriber=&field.tag=bounty&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&field.has_blueprints.used=&field.has_blueprints=on&field.has_no_blueprints.used=&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
             </div>
-        </div>
-        <div class="half">
-            <img src="images/get-involved/desktop-development.png" alt="Scratch text editor">
         </div>
     </div>
 </section>
 
 <section id="design" class="light">
     <div class="grid">
+        <div class="two-thirds">
+            <h1>Design</h1>
+            <p>Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:</p>
+        </div>
         <div class="half">
-            <h2>Design</h2>
-            <p>Every project begins with an idea. Our Design Team takes these and turns them into road maps. We break up design into two components:</p>
-
-            <h5>Visual Design</h5>
+            <h2>Visual Design</h2>
             <p>A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
-
-            <h5>Interactive Design</h5>
-            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
+            </div>
+
+            <h2>Interactive Design</h2>
+            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
+
+            <div class="actions">
+                <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                 <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
-                <a class="button flat" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
             </div>
         </div>
         <div class="half">
