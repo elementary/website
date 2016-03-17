@@ -112,6 +112,11 @@
 
 <section id="web-development">
     <div class="web-browser">
+        <div id="toolbar">
+            <img src="/images/get-involved/browser-left.svg">
+            <div id="search-bar"></div>
+            <img src="/images/get-involved/browser-right.svg">
+        </div>
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
         <div class="actions">
@@ -184,7 +189,8 @@
                 <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                 <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
             </div>
-
+        </div>
+        <div class="half">
             <h2>Interactive Design</h2>
             <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
 
@@ -192,9 +198,6 @@
                 <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                 <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
             </div>
-        </div>
-        <div class="half">
-            <img src="images/get-involved/design.svg" alt="Application wire frame">
         </div>
     </div>
 </section>

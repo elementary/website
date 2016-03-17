@@ -244,11 +244,7 @@ footer {
 }
 
 .web-browser {
-    background-image: url("../images/get-involved/web-development.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    border: 2px solid rgba(88, 110, 117, 0.5);
+    border: 2px solid rgba(200, 208, 208, 0.5);
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
@@ -257,6 +253,31 @@ footer {
     padding: 110px 190px 40px 190px;
     text-align: left;
     width: 888px;
+    position: relative;
+}
+
+.web-browser #toolbar {
+    border-bottom: 1px solid rgba(200, 208, 208, 0.5);
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.web-browser #toolbar img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.web-browser #toolbar #search-bar {
+    background-color: rgba(200, 208, 208, 0.3);
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    margin: 0 12px;
+    width: calc(100% - 124px);
+    vertical-align: middle;
 }
 
 .web-browser > .actions > a {
@@ -280,10 +301,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-
     .web-browser {
-        background-image: url("../images/get-involved/web-development-mobile.svg");
         padding: 80px 24px 24px 24px;
     }
-
 }
