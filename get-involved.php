@@ -99,7 +99,7 @@
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
         </div>
         <div class="whole">
-            <h2>Our Progress for The Loki Alpha1 Milestone:</h2>
+            <h2>Our Progress for The Loki Alpha 1 Milestone:</h2>
             <div class="charts">
                 <div class="barchart-ctn">
                     <canvas width="750" height="400"></canvas>
