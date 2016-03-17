@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Una alternativa rápida y abierta a Windows y OS X",
     "Custom": "Personalizado",
     "Enter any dollar amount.": "Escriba un monto en dólares.",
-    "Download Freya": "Descargar Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1,15 GB (para PC o Mac)",
     "What the press is saying about elementary OS:": "La prensa opina sobre elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "«elementary OS es diferente… un sistema operativo hermoso y potente que funciona bien incluso en PC antiguos.»",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "«Una plataforma rápida y de bajo mantenimiento que puede instalarse prácticamente en cualquier equipo.»",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "No ponemos publicidad ni recopilamos datos personales. Nuestro único ingreso son las donaciones de los usuarios.",
     "Safe &amp; Secure": "Seguro",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Nuestra base es Linux: el mismo software que hace funcionar al Departamento de Defensa de EE. UU., el Banco de China y muchas organizaciones más.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Descargar elementary OS",
     "Choose a Download": "Elija una descarga",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Recomendamos 64 bits para la mayoría de los PC modernos. Para obtener ayuda y más información, consulte la",
     "installation guide": "guía de instalación",
     "Freya 32-bit": "Freya, 32 bits",
     "Torrent Magnet Link": "Enlace «magnet»",
-    "Freya 64-bit": "Freya, 64 bits",
-    "Download elementary OS": "Descargar elementary OS"
+    "Freya 64-bit": "Freya, 64 bits"
 }

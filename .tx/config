@@ -104,3 +104,21 @@ source_file = lang/en/410.json
 source_lang = en
 type = KEYVALUEJSON
 
+[elementary-mvp.brand]
+file_filter = lang/<lang>/brand.json
+source_file = lang/en/brand.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.capnet-assist]
+file_filter = lang/<lang>/capnet-assist.json
+source_file = lang/en/capnet-assist.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.team]
+file_filter = lang/<lang>/team.json
+source_file = lang/en/team.json
+source_lang = en
+type = KEYVALUEJSON
+

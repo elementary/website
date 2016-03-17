@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Brza i otvorena zamjena za Windows i OS X",
     "Custom": "Drugi iznos",
     "Enter any dollar amount.": "Unesite bilo koju vrijednost u dolarima",
-    "Download Freya": "Preuzmite Freya verziju",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Šta mediji govore o elementary OS-u:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS je drugačiji... lijep i moćan operativni sistem koji će dobro raditi čak i na starijim računarima\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"brza platforma koja može biti instalirana praktički svugdje bez puno potrebe za održavanjem\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Ne sklapamo marketinške dogovore i ne sakupljamo privatne podatke od naših korisnika. Naši jedini prihodi dolaze direktno od naših korisnika.",
     "Safe &amp; Secure": "Siguran i bezbijedan",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Sagrađeni smo na Linux osnovi: softveru koji koriste i druge značajne organizacije u svijetu kao što su Sekretat za odbranu SAD-a, Nacionalna banka Kine i drugi.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Preuzmi elementary OS",
     "Choose a Download": "Izaberite download",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Preporučujemo 64-bitnu verziju za većinu modernih računara. Za više informacija i pomoć, pogledajte",
     "installation guide": "Vodič za instalaciju",
     "Freya 32-bit": "32-bitna Freya verzija",
     "Torrent Magnet Link": "Link za preuzimanje preko torrenta",
-    "Freya 64-bit": "64-bitna Freya verzija",
-    "Download elementary OS": "Preuzmi elementary OS"
+    "Freya 64-bit": "64-bitna Freya verzija"
 }

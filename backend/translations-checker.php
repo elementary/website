@@ -43,5 +43,12 @@ foreach ( $translation_files as $filename ) {
     }
 }
 
-var_dump($result);
-// echo json_encode($result);
+$invalidCount = count($result['invalid_files']);
+
+echo count($result['valid_files'])." valid translation files\n";
+
+if ($invalidCount) {
+    var_dump($result['invalid_files']);
+}
+
+echo $invalidCount." invalid translation files\n";
