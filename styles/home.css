@@ -456,16 +456,17 @@ span.cursor {
     font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     height: 16px;
-    line-height: 18px;
     position: relative;
     text-shadow: none;
 }
 
 span.search-term {
+    line-height: 19px;
     margin-right: -8px;
     overflow: hidden;
     transition: all 1.5s steps(3, start);
     width: 19px;
+    vertical-align: top;
 }
 
 span.search-term.inactive {
@@ -477,6 +478,7 @@ span.cursor {
     -webkit-animation: blink 1.2s steps(5, start) infinite;
     animation: blink 1.2s steps(5, start) infinite;
     font-size: 12pt;
+    line-height: 18px;
     top: -4px;
 }
 

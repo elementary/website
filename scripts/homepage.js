@@ -41,7 +41,11 @@ $(function () {
         var payment_amount = $('#' + current_amount).val() * 100;
         console.log('Starting payment for ' + payment_amount);
         if (window.ga) {
-            ga('send', 'event', release + ' Download (Payment)', 'Homepage', payment_amount);
+            ga('send',
+               'event',
+               release_title + ' ' + release_version + ' Download (Payment)',
+               'Homepage',
+               payment_amount);
         }
         if (payment_amount < payment_minimum) {
             open_download_overlay();
@@ -71,7 +75,7 @@ $(function () {
                 open_download_overlay();
             },
             name: 'elementary LLC.',
-            description: release,
+            description: release_title + ' ' + release_version,
             bitcoin: true,
             alipay: 'auto',
             locale: stripe_language() || 'auto',
@@ -92,7 +96,10 @@ $(function () {
         payment_http = new XMLHttpRequest();
         payment_http.open('POST','./backend/payment.php',true);
         payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-        payment_http.send('description=' + encodeURIComponent(release) + '&amount=' + amount + '&token=' + token.id + '&email=' + encodeURIComponent(token.email));
+        payment_http.send('description=' + encodeURIComponent(release_title + ' ' + release_version) +
+                          '&amount=' + amount +
+                          '&token=' + token.id +
+                          '&email=' + encodeURIComponent(token.email));
     }
 
     function open_download_overlay () {
@@ -140,10 +147,10 @@ $(function () {
         for (var i = 0; i < links_data.length; i++) {
             (function (data, link) {
                 $(link).click(function () {
-                    ga('send', 'event', release + ' Download (Architecture)', 'Homepage', data.arch);
-                    ga('send', 'event', release + ' Download (Method)', 'Homepage', data.method);
-                    ga('send', 'event', release + ' Download (OS)', 'Homepage', detect_os());
-                    ga('send', 'event', release + ' Download (Region)', 'Homepage', download_region);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', data.arch);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', data.method);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region);
                 });
             })(links_data[i], download_links[i]);
         }
@@ -227,17 +234,18 @@ $(function () {
 
     // Change Button text on payment click
     function updateDownloadButton () {
-        var payment_amount = $('#amount-custom').val() * 100;
+        var translate_download = $('#translate-download').text();
+        var translate_purchase = $('#translate-purchase').text();
+
         if ($('#amounts').children().length <= 1) {
-            $('#download').text('Download elementary OS');
+            $('#download').text(translate_download);
+        } else if (
+            $('button.payment-button').hasClass('checked') ||
+            $('#amount-custom').val() * 100 >= payment_minimum
+        ) {
+            $('#download').text(translate_purchase);
         } else {
-            if (($('input.button#amount-custom').hasClass('checked') &&
-                 $('input.button#amount-custom').val() >= 1) || (
-                 $('button.payment-button').hasClass('checked'))) {
-                $('#download').text('Purchase elementary OS');
-            } else {
-                $('#download').text('Download elementary OS');
-            }
+            $('#download').text(translate_download);
         }
     }
 

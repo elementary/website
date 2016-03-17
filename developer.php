@@ -3,7 +3,7 @@
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Develop Apps for elementary OS';
-    $page['theme-color'] = '#226BB3';
+    $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
     include $template['alert'];
@@ -38,7 +38,7 @@
 <div class="grid">
     <div class="two-thirds">
         <image src="images/developer/logo.svg">
-        <h1>Build for <?php include("./images/logotype.svg"); ?></h1>
+        <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
         <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
     </div>
 </div>

@@ -20,7 +20,7 @@ if (isset($_POST['token'])) {
             'receipt_email' => $email,
         ));
         // Set an insecure, HTTP only cookie for 10 years in the future.
-        $encoded = urlencode(str_replace(' ', '', $description));
+        $encoded = urlencode(str_replace(' ', '_', 'has_paid_'.$description));
         setcookie($encoded, $amount, time() + 315360000, '/', '', 0, 1);
         echo 'OK';
     } catch(Stripe_CardError $e) {
