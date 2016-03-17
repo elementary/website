@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "name": "Logomark Stickers (set of 3)",
+      "sku": "sticker-logomark-set",
+      "price": 1.50,
+      "qty-options": [
+        {
+          "0": "None",
+          "1": "1 set",
+          "2": "2 sets",
+          "3": "3 sets",
+          "4": "4 sets",
+          "5": "5 sets",
+          "6": "6 sets",
+          "7": "7 sets",
+          "8": "8 sets",
+          "9": "9 sets",
+          "10": "10 sets"
+        }
+      ],
+      "desc": "Set of blue 2-inch (5 cm) circle stickers with the elementary &lsquo;e&rsquo; logomark in white. Silkscreened on premium vinyl and layered with three coats of 100% UV protection meaning your stickers will stick for several years without fading.",
+      "image": "http://placehold.it/600x600&text=Logomark+Stickers"
+    },
+    {
+      "name": "Logotype Sticker",
+      "sku": "sticker-logotype",
+      "price": 3.00,
+      "qty-options": [
+        {
+          "0": "None",
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          "10": "10"
+        }
+      ],
+      "desc": "elementary logotype in white on a transparent vinyl sticker; perfect for your laptop or car window. Measures approximately 8 × 2&Prime; (20 × 5 cm). Silkscreened on premium vinyl and layered with three coats of 100% UV protection meaning your stickers will stick for several years without fading.",
+      "image": "http://placehold.it/600x600&text=Logotype+Sticker"
+    }
+  ]
+}
