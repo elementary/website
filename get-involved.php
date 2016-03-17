@@ -152,7 +152,7 @@
             <p>A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
             <div class="actions">
-                <a class="button flat suggested-action" href="http://elementary.io/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
+                <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                 <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
             </div>
 
