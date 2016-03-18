@@ -14,12 +14,8 @@
             <h1>"Be the change you wish to see in the world"</h1>
             <p>These are words we live by. Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
-    </div>
-</section>
 
-<section id="sections-menu">
-    <div class="grid">
-        <div class="whole">
+        <div class="whole" id="sections-menu">
             <a class="button flat" href="#funding">Funding</a>
             <a class="button flat" href="#translations">Translations</a>
             <a class="button flat" href="#support">Support</a>
