@@ -11,8 +11,6 @@ $(function() {
         event.preventDefault()
 
         var $trigger = $(this).siblings('.open-modal')
-        var id = $trigger.attr('id')
-        var $modal = $('div.modal#' + id)
 
         $trigger.leanModal({
             closeButton: '.close-modal'
@@ -27,14 +25,15 @@ $(function() {
 
         var $modal = $(this).closest('.modal')
 
-        store.forEach(function(value) {
-            if (uid !== value.uid) return
-            if (size != null && value.size !== size) return
-            if (color != null && value.color !== color) return
+        for (var key in store) {
+            var value = store[key]
+            if (uid !== value.uid) continue
+            if (size != null && value.size !== size) continue
+            if (color != null && value.color !== color) continue
 
             $modal.find('input[name="id"]').val(value.id)
             $modal.find('.price').text('$' + value.retail_price)
-        })
+        }
     })
 
     $('.modal form').on('submit', function(event) {
@@ -53,8 +52,9 @@ $(function() {
             return
         }
 
-        $.get('store/addtocart', {
+        $.get('store/inventory', {
             id: id,
+            math: 'add',
             quantity: quantity
         })
         .done(function(data) {

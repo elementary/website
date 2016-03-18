@@ -120,9 +120,12 @@ function amplifier_raw() {
         ]
     ]];
 
+    $sorted = [];
+
     foreach ($data as $key => &$value) {
-        $value['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
+        $sorted[$value['id']] = $value;
+        $sorted[$value['id']]['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
     }
 
-    return $data;
+    return $sorted;
 }
