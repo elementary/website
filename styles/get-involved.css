@@ -263,7 +263,7 @@ section:nth-child(even) {
 .web-browser #toolbar {
     border-bottom: 2px solid rgba(200, 208, 208, 0.5);
     padding: 12px;
-    padding-top: 10px;
+    padding-top: 9px;
     position: absolute;
     top: 0;
     left: 0;
