@@ -92,7 +92,7 @@
         </div>
         <div class="half">
             <h2>Question & Answer</h2>
-            <p>Stackexchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
+            <p>StackExchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
@@ -101,7 +101,7 @@
         </div>
         <div class="half">
             <h2>Documentation</h2>
-            <p>elementary provides basic documentation for both users and developers. All of our documentation is written in markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
+            <p>elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://github.com/elementary/mvp/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
