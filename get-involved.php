@@ -92,7 +92,7 @@
         </div>
         <div class="half">
             <h2>Question & Answer</h2>
-            <p>Stackexchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account and start asking and answering.</p>
+            <p>Stackexchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
