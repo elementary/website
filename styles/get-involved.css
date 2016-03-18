@@ -18,8 +18,14 @@ section {
     padding: 32px 0;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 600px) {
+    .hero .two-thirds {
+        padding-bottom: 64px;
+    }
 }
 
 /*********
@@ -249,8 +255,7 @@ section:nth-child(odd) {
     height: auto;
     margin: 24px auto;
     max-width: 100%;
-    padding: 110px 190px 40px 190px;
-    text-align: left;
+    padding: 146px 190px 100px;
     width: 888px;
     position: relative;
 }
@@ -281,6 +286,10 @@ section:nth-child(odd) {
     margin: 0 12px;
     width: calc(100% - 124px);
     vertical-align: middle;
+}
+
+.web-browser .actions {
+    margin-bottom: 0;
 }
 
 .web-browser > .actions > a {
