@@ -92,19 +92,20 @@
         </div>
         <div class="half">
             <h2>Question & Answer</h2>
-            <p>Stackexchange is a Q&A website designed.</p>
+            <p>Stackexchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account and start asking and answering.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
+                <a class="button flat" href="https://elementaryos.stackexchange.com/questions?sort=newest">New Questions</a>
             </div>
         </div>
         <div class="half">
             <h2>Documentation</h2>
-            <p></p>
+            <p>elementary provides basic documentation for both users and developers. All of our documentation is written in markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
 
             <div class="actions">
-                <a class="button flat suggested-action" href="https://github.com/elementary/mvp/blob/master/docs/code/getting-started.md" target="_blank">Developer Docs</a>
-                <a class="button flat" href="https://github.com/elementary/mvp/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
+                <a class="button flat suggested-action" href="https://github.com/elementary/mvp/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
+                <a class="button flat" href="https://github.com/elementary/mvp/blob/master/docs/code/getting-started.md" target="_blank">Developer Docs</a>
             </div>
         </div>
     </div>
@@ -113,9 +114,9 @@
 <section id="web-development">
     <div class="web-browser">
         <div id="toolbar">
-            <img src="/images/get-involved/browser-left.svg">
+            <img src="images/get-involved/browser-left.svg">
             <div id="search-bar"></div>
-            <img src="/images/get-involved/browser-right.svg">
+            <img src="images/get-involved/browser-right.svg">
         </div>
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
