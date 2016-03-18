@@ -1,15 +1,54 @@
-/***************************************
-* Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
-***************************************/
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
 
-.category {
-    text-align: left;
+/***************************
+* Category view of product *
+***************************/
+
+.grid > .product {
+    max-width: 300px;
+    display: inline-block;
+    padding: 16px;
 }
 
-.product {
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
-    display: relative;
+.grid > .product img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+/***********************
+* List view of product *
+***********************/
+
+.row.product > * {
+    margin: 8px 8px 0 8px;
+}
+
+@media (min-width: 444px) {
+    .row.product {
+        width: 100%;
+        max-width: 704px;
+        display: table;
+    }
+
+    .row.product > * {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .row.product > img {
+        height: 150px;
+        min-width: 150px;
+    }
+
+    .row.product > .information {
+        width: 100%;
+        text-align: left;
+    }
+
+    .row.product > .totals {
+        white-space: nowrap;
+    }
 }
