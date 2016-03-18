@@ -264,6 +264,9 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }
 
 .web-browser #toolbar img {
