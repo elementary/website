@@ -11,7 +11,7 @@
 <section class="hero">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Be A Part of Something Bigger</h1>
+            <h1>Be a Part of Something Bigger</h1>
             <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
 
@@ -188,7 +188,7 @@
             </div>
         </div>
         <div class="half">
-            <h2>Interactive Design</h2>
+            <h2>Interaction Design</h2>
             <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
 
             <div class="actions">
