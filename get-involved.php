@@ -127,7 +127,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h1>Desktop Development</h1>
-            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
+            <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
         </div>
         <div class="whole">
             <h2>Our Progress for The Loki Alpha 1 Milestone:</h2>
