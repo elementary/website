@@ -180,7 +180,7 @@
         </div>
         <div class="half">
             <h2>Visual Design</h2>
-            <p>We're always open to new ideas for elementry OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
+            <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
