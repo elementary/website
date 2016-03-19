@@ -11,8 +11,8 @@
 <section class="hero">
     <div class="grid">
         <div class="two-thirds">
-            <h1>"Be the change you wish to see in the world"</h1>
-            <p>These are words we live by. Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
+            <h1>Engaging Tagline That Makes You Wanna Do Stuff</h1>
+            <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
 
         <div class="whole" id="sections-menu">
