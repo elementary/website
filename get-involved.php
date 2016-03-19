@@ -11,7 +11,7 @@
 <section class="hero">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Engaging Tagline That Makes You Wanna Do Stuff</h1>
+            <h1>Be A Part of Something Bigger</h1>
             <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
         </div>
 
@@ -117,7 +117,7 @@
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
         <div class="actions">
-            <a class="button flat suggested-action" href="https://github.com/elementary/mvp/issues" target="_blank">Report an Issue with Our Website</a>
+            <a class="button flat suggested-action" href="https://github.com/elementary/mvp/issues" target="_blank">Report a Website Issue</a>
             <a class="button flat" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
         </div>
     </div>

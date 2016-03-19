@@ -256,8 +256,9 @@ section:nth-child(even) {
     margin: 24px auto;
     max-width: 100%;
     padding: 146px 190px 100px;
-    width: 888px;
     position: relative;
+    text-align: center;
+    width: 888px;
 }
 
 .web-browser #toolbar {
