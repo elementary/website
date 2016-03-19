@@ -189,7 +189,7 @@
         </div>
         <div class="half">
             <h2>Interaction Design</h2>
-            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
+            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
