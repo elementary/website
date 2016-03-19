@@ -117,8 +117,8 @@
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
         <div class="actions">
-            <a class="button flat suggested-action" href="https://github.com/elementary/mvp/issues" target="_blank">Report a Website Issue</a>
-            <a class="button flat" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
+            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
+            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report a Website Issue</a>
         </div>
     </div>
 </section>
