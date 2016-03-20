@@ -68,6 +68,10 @@ section:nth-child(even) {
     border-color: #ffc357;
 }
 
+#paypalform {
+    margin-left: 4px;
+}
+
 /* Translations */
 
 #translations .button.flat.suggested-action {
