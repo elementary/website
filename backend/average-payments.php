@@ -24,9 +24,9 @@ if ( $processing ) {
         echo 'ERROR: database is not writable.';
         exit;
     }
-    $db = new SQLite3($database);
+    $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
 } else {
-    $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
+    $db = new SQLite3($database, SQLITE3_OPEN_READONLY | SQLITE3_OPEN_CREATE);
 }
 if ( $db->lastErrorCode() ) LastError($db);
 $db->busyTimeout(300);
