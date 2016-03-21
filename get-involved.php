@@ -8,26 +8,25 @@
     include $template['header'];
     include $template['alert'];
 ?>
-<section class="grid hero">
-        <div class="two-thirds">
-            <h1>"Be the change you wish to see in the world"</h1>
-            <p>These are words we live by. Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and help shape the course of elementary.</p>
-        </div>
-</section>
-
-<section id="sections-menu">
+<section class="hero">
     <div class="grid">
-        <div class="whole">
+        <div class="two-thirds">
+            <h1>Be a Part of Something Bigger</h1>
+            <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</p>
+        </div>
+
+        <div class="whole" id="sections-menu">
             <a class="button flat" href="#funding">Funding</a>
             <a class="button flat" href="#translations">Translations</a>
-            <a class="button flat" href="#web-development">Web Development</a>
-            <a class="button flat" href="#desktop-development">Desktop Development</a>
+            <a class="button flat" href="#support">Support</a>
+            <a class="button flat" href="#web-development">Web</a>
+            <a class="button flat" href="#desktop-development">Desktop</a>
             <a class="button flat" href="#design">Design</a>
         </div>
     </div>
 </section>
 
-<section id="funding" class="light">
+<section id="funding">
     <div class="grid">
         <div class="two-thirds">
             <h1>Funding</h1>
@@ -49,7 +48,7 @@
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
                 <input type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
@@ -60,7 +59,7 @@
     </div>
 </section>
 
-<section id="translations" class="dark">
+<section id="translations">
     <div class="grid">
         <div class="whole">
             <h1>Translations</h1>
@@ -81,22 +80,54 @@
     </div>
 </section>
 
-<section id="web-development" class="light">
-    <div class="web-browser">
-        <h1>Web Development</h1>
-        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
-        <div class="actions">
-            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
-            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report an Issue with Our Website</a>
+<section id="support">
+    <div class="grid">
+        <div class="two-thirds">
+            <h1>Support</h1>
+            <p></p>
+        </div>
+        <div class="half">
+            <h2>Question & Answer</h2>
+            <p>StackExchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
+
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
+                <a class="button flat" href="https://elementaryos.stackexchange.com/questions?sort=newest">New Questions</a>
+            </div>
+        </div>
+        <div class="half">
+            <h2>Documentation</h2>
+            <p>elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
+
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://github.com/elementary/mvp/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
+                <a class="button flat" href="https://github.com/elementary/mvp/blob/master/docs/code/getting-started.md" target="_blank">Developer Docs</a>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="desktop-development" class="dark">
+<section id="web-development">
+    <div class="web-browser">
+        <div id="toolbar">
+            <img src="images/get-involved/browser-left.svg">
+            <div id="search-bar"></div>
+            <img src="images/get-involved/browser-right.svg">
+        </div>
+        <h1>Web Development</h1>
+        <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
+        <div class="actions">
+            <a class="button flat suggested-action" href="https://github.com/elementary/mvp" target="_blank">Fork Our Website on GitHub</a>
+            <a class="button flat" href="https://github.com/elementary/mvp/issues" target="_blank">Report a Website Issue</a>
+        </div>
+    </div>
+</section>
+
+<section id="desktop-development">
     <div class="grid">
         <div class="two-thirds">
             <h1>Desktop Development</h1>
-            <p>Our desktop environment and all its apps are built using Vala, GTK+, Clutter, Cairo, Granite, and a number of other free libraries. All of our code is hosted on Launchpad.net, a free service for open source projects. We're always looking for contributors of all skill levels.</p>
+            <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
         </div>
         <div class="whole">
             <h2>Our Progress for The Loki Alpha 1 Milestone:</h2>
@@ -141,7 +172,7 @@
     </div>
 </section>
 
-<section id="design" class="light">
+<section id="design">
     <div class="grid">
         <div class="two-thirds">
             <h1>Design</h1>
@@ -149,23 +180,21 @@
         </div>
         <div class="half">
             <h2>Visual Design</h2>
-            <p>A great place for visual designers to get started is by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
+            <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                 <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
             </div>
-
-            <h2>Interactive Design</h2>
-            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features.</p>
+        </div>
+        <div class="half">
+            <h2>Interaction Design</h2>
+            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.</p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                 <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
             </div>
-        </div>
-        <div class="half">
-            <img src="images/get-involved/design.svg" alt="Application wire frame">
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 /***************************************
 * Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 html,
@@ -10,10 +10,8 @@ body {
     fill: #c8d0d0;
 }
 
-footer {
-    background-color: #fdf6e3;
-    color: #586e75;
-    fill: #586e75;
+a {
+    color: #53b2e1;
 }
 
 /***********
@@ -24,68 +22,41 @@ section {
     padding: 32px 0;
 }
 
-section.light {
-    background-color: #fdf6e3;
-    color: #586e75;
+section:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 600px) {
+    .hero .two-thirds {
+        padding-bottom: 64px;
+    }
 }
 
 /*********
 * Button *
 *********/
 
-.light .button.flat {
-    border-color: rgba(88, 110, 117, 0.5);
-    color: #586e75;
-}
-
-.dark .button.flat {
+.button.flat {
     border-color: rgba(200, 208, 208, 0.5);
     color: #c8d0d0;
-}
-
-.button.flat.suggested-action {
-    color: white;
 }
 
 .button.flat:focus {
     background-color: rgba(200, 208, 208, 0.5);
 }
 
-#translations .button.flat.suggested-action {
-    background-color: #2aa198;
-    border-color: #2aa198;
-}
-
-#translations .button.flat.suggested-action:focus {
-    background-color: #44bbb2 !important;
-}
-
-#web-development .button.flat.suggested-action {
-    background-color: #d53c12;
-    border-color: #d53c12;
-}
-
-#web-development .button.flat.suggested-action:focus {
-    background-color: #ef562c !important;
-}
-
-#design .button.flat.suggested-action {
+.button.flat.suggested-action {
     background-color: #268bd2;
     border-color: #268bd2;
+    color: #fff;
 }
 
-#design .button.flat.suggested-action:focus {
-    background-color: #40a5ec !important;
+.button.flat.suggested-action:focus {
+    background-color: #40a5ec;
+    border-color: #40a5ec;
 }
 
-#desktop-development .button.flat.suggested-action {
-    background-color: #d33682;
-    border-color: #d33682;
-}
-
-#desktop-development .button.flat.suggested-action:focus {
-    background-color: #ed509c !important;
-}
+/* Funding */
 
 #funding .button.flat.suggested-action {
     background-color: #edac35;
@@ -93,7 +64,61 @@ section.light {
 }
 
 #funding .button.flat.suggested-action:focus {
-    background-color: #ffc357 !important;
+    background-color: #ffc357;
+    border-color: #ffc357;
+}
+
+#paypalform {
+    margin-left: 4px;
+}
+
+/* Translations */
+
+#translations .button.flat.suggested-action {
+    background-color: #2aa198;
+    border-color: #2aa198;
+}
+
+#translations .button.flat.suggested-action:focus {
+    background-color: #44bbb2;
+    border-color: #44bbb2;
+}
+
+/* Support */
+
+#support .button.flat.suggested-action {
+    background-color: #d53c12;
+    border-color: #d53c12;
+}
+
+#support .button.flat.suggested-action:focus {
+    background-color: #ef562c;
+    border-color: #ef562c;
+}
+
+/* Web */
+
+#web-development .button.flat.suggested-action {
+    background-color: #d33682;
+    border-color: #d33682;
+}
+
+#web-development .button.flat.suggested-action:focus {
+    background-color: #ed509c;
+    border-color: #ed509c;
+}
+
+/* Design */
+
+#design .button.flat.suggested-action {
+    color: #3e4e54;
+    background-color: rgba(200, 208, 208, 0.8);
+    border-color: transparent;
+}
+
+#design .button.flat.suggested-action:focus {
+    background-color: #fff;
+    border-color: #fff;
 }
 
 @media (max-width: 1080px) {
@@ -191,7 +216,6 @@ section.light {
 }
 
 #sections-menu {
-    background-color: rgba(0, 0, 0, 0.04);
     padding: 0;
 }
 
@@ -200,7 +224,7 @@ section.light {
     border-radius: 4px;
     color: #c8d0d0;
     display: inline-block;
-    min-width: 200px;
+    min-width: 167px;
     vertical-align: middle;
 }
 
@@ -233,19 +257,48 @@ section.light {
 }
 
 .web-browser {
-    background-image: url("../images/get-involved/web-development.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    border: 2px solid rgba(88, 110, 117, 0.5);
+    border: 2px solid rgba(200, 208, 208, 0.5);
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
     margin: 24px auto;
     max-width: 100%;
-    padding: 110px 190px 40px 190px;
-    text-align: left;
+    padding: 146px 190px 100px;
+    position: relative;
+    text-align: center;
     width: 888px;
+}
+
+.web-browser #toolbar {
+    border-bottom: 2px solid rgba(200, 208, 208, 0.5);
+    padding: 12px;
+    padding-top: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.web-browser #toolbar img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.web-browser #toolbar #search-bar {
+    background-color: rgba(200, 208, 208, 0.3);
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    margin: 0 12px;
+    width: calc(100% - 124px);
+    vertical-align: middle;
+}
+
+.web-browser .actions {
+    margin-bottom: 0;
 }
 
 .web-browser > .actions > a {
@@ -269,10 +322,7 @@ section.light {
 }
 
 @media (max-width: 600px) {
-
     .web-browser {
-        background-image: url("../images/get-involved/web-development-mobile.svg");
         padding: 80px 24px 24px 24px;
     }
-
 }
