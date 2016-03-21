@@ -40,29 +40,15 @@ $(function() {
         event.preventDefault()
         $form = $(this)
 
-        var id = $form.find('input[name="id"]').val()
-        if (typeof id === 'undefined') {
-            console.log('This is not for sale sir')
-            return
-        }
-
-        var quantity = $form.find('input[name="quantity"]').val()
-        if (typeof quantity === 'undefined') {
-            console.log('Sir, you are pointing at a wall')
-            return
-        }
-
-        $.get('store/inventory', {
-            id: id,
-            math: 'add',
-            quantity: quantity
-        })
-        .done(function(data) {
+        $.post($form.attr('action'), $form.serialize())
+        .done(function(data, status) {
             if (data === 'OK') {
                 $form.find('input[name="quantity"]').val('1')
                 $form.closest('.modal').find('.close-modal').click()
+                console.log('Added some items to cart!')
             } else {
                 console.log('Well this is embarrassing')
+                console.log(data)
             }
         })
         .fail(function() {

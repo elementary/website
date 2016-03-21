@@ -3,7 +3,7 @@ require_once __DIR__.'/config.loader.php';
 
 // TODO: add api grabbing from amplifier
 function amplifier_raw() {
-    $data = [[
+    return [[
         'id' => 't8w4v5s6-21e5-40f9-a1be-b7z5d2e4q9g6',
         'name' => 'Logotype',
         'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
@@ -119,12 +119,42 @@ function amplifier_raw() {
             'quantity_on_order' => 8
         ]
     ]];
+}
 
+function amplifier_product() {
+    $data = amplifier_raw();
     $sorted = [];
+
+    $sizes = [
+        'S' => 'Small',
+        'M' => 'Medium',
+        'L' => 'Large',
+        'XL' => 'Extra Large',
+        'XXL' => 'Extra Extra Large'
+    ];
 
     foreach ($data as $key => &$value) {
         $sorted[$value['id']] = $value;
-        $sorted[$value['id']]['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
+
+        $product = &$sorted[$value['id']];
+
+        $product['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
+
+        $name_array = [];
+        if (isset($product['size'])) {
+            if (isset($sizes[$product['size']])) {
+                array_push($name_array, $sizes[$product['size']]);
+            } else {
+                array_push($name_array, $product['size']);
+            }
+        }
+
+        if (isset($product['color'])) {
+            array_push($name_array, $product['color']);
+        }
+
+        array_push($name_array, $product['name']);
+        $product['full_name'] = implode(' ', $name_array);
     }
 
     return $sorted;

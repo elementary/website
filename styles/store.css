@@ -23,19 +23,19 @@
 ***********************/
 
 .row.product > * {
-    margin: 8px 8px 0 8px;
+    padding: 8px;
 }
 
 @media (min-width: 444px) {
     .row.product {
         width: 100%;
-        max-width: 704px;
         display: table;
     }
 
     .row.product > * {
         display: table-cell;
         vertical-align: middle;
+        white-space: nowrap;
     }
 
     .row.product > img {
@@ -48,7 +48,15 @@
         text-align: left;
     }
 
-    .row.product > .totals {
-        white-space: nowrap;
+    .totals {
+        float: right;
     }
+}
+
+/******************
+* Per-Page styles *
+******************/
+
+[class="page-store/cart"] .row {
+    max-width: 704px;
 }

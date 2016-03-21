@@ -2,7 +2,11 @@
 require_once __DIR__.'/amplifier.php';
 
 function store_cart() {
-    $product = amplifier_raw();
+    if (!isset($_COOKIE['cart'])) {
+        return [];
+    }
+
+    $product = amplifier_product();
     $cart = json_decode($_COOKIE['cart'], true);
     $return = [];
 
