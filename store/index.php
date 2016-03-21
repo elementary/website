@@ -6,7 +6,7 @@
     include $template['alert'];
 
     require_once __DIR__.'/../backend/amplifier.php';
-    $raw = amplifier_raw();
+    $raw = amplifier_product();
 
     $categories = [];
 
@@ -55,7 +55,7 @@
 
 <script>
     jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-    jQl.loadjQdep('scripts/store.js');
+    jQl.loadjQdep('scripts/store/index.js');
 </script>
 
 <div class="row">
@@ -117,9 +117,10 @@
         <div class="column half">
             <h2 class="price">$<?php echo $item['retail_price'] ?></h2>
             <p><?php echo $item['description'] ?></p>
-            <form>
+            <form action="/store/inventory">
                 <input type="hidden" name="id" value="<?php echo $item['id'] ?>">
                 <input type="hidden" name="uid" value="<?php echo $item['uid'] ?>">
+                <input type="hidden" name="math" value="add">
                 <?php if (isset($item['color']) && is_array($item['color'])) { ?>
                     <label for="color">Color:</label>
                     <select name="color">
