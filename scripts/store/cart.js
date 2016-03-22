@@ -1,16 +1,14 @@
 var updateTotal = function() {
     var $products = $('.row.product input[name$="id"]')
 
+    if ($products.length <= 0) location.reload()
+
     var total = 0
 
-    if ($products.length <= 0) {
-        location.reload()
-    }
-
-    $products.each(function(i) {
-        i++
-        var price = $('.row.product input[name="product-' + i + '-price"]').val()
-        var quantity = $('.row.product input[name="product-' + i + '-quantity"]').val()
+    $products.each(function(i, p) {
+        var n = $(p).attr('name').split('-')[1]
+        var price = $('.row.product input[name="product-' + n + '-price"]').val()
+        var quantity = $('.row.product input[name="product-' + n + '-quantity"]').val()
 
         total += (price * quantity)
     })

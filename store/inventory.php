@@ -2,84 +2,64 @@
 require_once __DIR__.'/../backend/store.php';
 require_once __DIR__.'/../backend/amplifier.php';
 
-if (isset($_COOKIE['cart'])) {
-    $current = json_decode($_COOKIE['cart'], true);
-} else {
-    $current = [];
-}
-
-$future = $current;
 $products = amplifier_product();
 
-if (isset($_GET['uid'])) {
-    $uid = $_GET['uid'];
-    $color = $_GET['color'];
-    $size = $_GET['size'];
-} else if (isset($_POST['uid'])) {
-    $uid = $_POST['uid'];
-    $color = $_POST['color'];
-    $size = $_POST['size'];
+if (isset($_COOKIE['cart'])) {
+    $cart = json_decode($_COOKIE['cart'], true);
+} else {
+    $cart = [];
 }
 
-if (isset($uid)) {
+$uid = $_GET['uid'] ?? $_POST['uid'] ?? false;
+$size = $_GET['size'] ?? $_POST['size'] ?? false;
+$color = $_GET['color'] ?? $_POST['color'] ?? false;
+
+$id = $_GET['id'] ?? $_POST['id'] ?? false;
+$math = $_GET['math'] ?? $_POST['math'] ?? show;
+$quantity = $_GET['quantity'] ?? $_POST['quantity'] ?? 1;
+
+if ($uid) {
     foreach($products as $id => $product) {
-        if ($product['uid'] === $uid && $product['color'] == $color && $product['size'] == $size) {
+        $p_color = $product['color'] ?? false;
+        $p_size = $product['size'] ?? false;
+
+        if ($product['uid'] === $uid && $p_color === $color && $p_size === $size) {
             $id = $product['id'];
+            break;
         }
     }
 }
 
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-} else if (isset($_POST['id'])) {
-    $id = $_POST['id'];
-} else if (!isset($id)) {
+if (!$id) {
     echo 'Missing id or uid';
     return;
 }
 
-if (isset($_GET['math'])) {
-    $math = $_GET['math'];
-} else if (isset($_POST['math'])) {
-    $math = $_POST['math'];
-} else {
-    echo 'Missing math';
+if ($math === 'show') {
+    echo json_encode($_COOKIE['cart']);
     return;
 }
 
-if (isset($_GET['quantity'])) {
-    $quantity = $_GET['quantity'];
-} else if (isset($_POST['quantity'])) {
-    $quantity = $_POST['quantity'];
-} else {
-    $quantity = 1;
-}
-
-if (!isset($id)) {
-    echo $_COOKIE['cart'];
-    return;
-} else if (!isset($future[$id])) {
-    $future[$id] = 0;
-}
+$cart[$id] = $cart[$id] ?? 0;
 
 if ($math === 'add') {
-    $future[$id] = intVal($current[$id]) + intVal($quantity);
+    $cart[$id] = intVal($cart[$id]) + intVal($quantity);
 }
 
 if ($math === 'subtract') {
-    $future[$id] = intVal($current[$id]) - intVal($quantity);
+    $cart[$id] = intVal($cart[$id]) - intVal($quantity);
 }
 
 if ($math === 'set') {
-    $future[$id] = intVal($quantity);
+    $cart[$id] = intVal($quantity);
 }
 
-if ($future[$id] <= 0) {
-    unset($future[$id]);
+if ($cart[$id] <= 0) {
+    unset($cart[$id]);
 }
 
-if (count($future) > 0) {
-    setcookie('cart', json_encode($future), time() + 604800, '/', '', 0, 1);
+if (count($cart) > 0) {
+    setcookie('cart', json_encode($cart), time() + 604800, '/', '', 0, 1);
 } else {
     $math = 'clear';
 }
