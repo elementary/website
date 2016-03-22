@@ -16,7 +16,7 @@
     jQl.loadjQdep('scripts/store/cart.js');
 </script>
 
-<form>
+<form action="/store/checkout">
     <div class="row">
         <h1>Cart</h1>
 
