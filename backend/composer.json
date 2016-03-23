@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "lib"
+    },
+    "require": {
+        "stripe/stripe-php": "^3.11"
+    }
+}
