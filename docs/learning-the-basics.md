@@ -20,7 +20,7 @@ You can search for apps by name or by keyword and perform actions associated wit
 * New Private Browsing Window
 * Math operations (example: 23 * 5)
 
-To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space/kbd>.
+To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space</kbd>.
 
 #### Indicators {#indicators}
 On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, time, chat and email accounts, etc. Clicking an indicator exposes more information and related actions.
