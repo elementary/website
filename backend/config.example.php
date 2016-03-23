@@ -12,6 +12,10 @@ $config = array(
 
     'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
+    'ups_access'   => 'test_access',
+    'ups_user'     => 'test_user',
+    'ups_password' => 'test_password',
+
     'twitter_consumer_key'    => 'test_ckey',
     'twitter_consumer_secret' => 'test_csecret',
     'twitter_access_token'    => 'test_atoken',

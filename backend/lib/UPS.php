@@ -1,0 +1,161 @@
+<?php
+
+// Needs PHP 5.5+
+
+if (!function_exists('curl_init')) {
+  throw new Exception('UPS needs the CURL PHP extension.');
+}
+
+// UPS singleton
+require(dirname(__FILE__) . '/UPS/Ups.php');
+
+// Entities
+require(dirname(__FILE__) . '/Entity/AddressValidation/AVAddress.php');
+require(dirname(__FILE__) . '/Entity/AddressValidation/AddressClassification.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/FreightCharges.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/LandedCostRequest.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/Product.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/Quantity.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/QueryRequest.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/Shipment.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/TariffInfo.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/UnitOfMeasurement.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/UnitPrice.php');
+require(dirname(__FILE__) . '/Entity/Tradeability/Weight.php');
+require(dirname(__FILE__) . '/Entity/AccessPointSearch.php');
+require(dirname(__FILE__) . '/Entity/Activity.php');
+require(dirname(__FILE__) . '/Entity/ActivityLocation.php');
+require(dirname(__FILE__) . '/Entity/Address.php');
+require(dirname(__FILE__) . '/Entity/AddressArtifactFormat.php');
+require(dirname(__FILE__) . '/Entity/AddressExtendedInformation.php');
+require(dirname(__FILE__) . '/Entity/AddressKeyFormat.php');
+require(dirname(__FILE__) . '/Entity/AddressValidationResponse.php');
+require(dirname(__FILE__) . '/Entity/AlternateDeliveryAddress.php');
+require(dirname(__FILE__) . '/Entity/AutoDutyCode.php');
+require(dirname(__FILE__) . '/Entity/BillShipper.php');
+require(dirname(__FILE__) . '/Entity/BillThirdParty.php');
+require(dirname(__FILE__) . '/Entity/BillToAccount.php');
+require(dirname(__FILE__) . '/Entity/BillingWeight.php');
+require(dirname(__FILE__) . '/Entity/COD.php');
+require(dirname(__FILE__) . '/Entity/CODAmount.php');
+require(dirname(__FILE__) . '/Entity/CallTagARS.php');
+require(dirname(__FILE__) . '/Entity/Charges.php');
+require(dirname(__FILE__) . '/Entity/CreditCard.php');
+require(dirname(__FILE__) . '/Entity/CustomsValue.php');
+require(dirname(__FILE__) . '/Entity/DateRange.php');
+require(dirname(__FILE__) . '/Entity/Delivery.php');
+require(dirname(__FILE__) . '/Entity/DeliveryLocation.php');
+require(dirname(__FILE__) . '/Entity/DimensionalWeight.php');
+require(dirname(__FILE__) . '/Entity/Dimensions.php');
+require(dirname(__FILE__) . '/Entity/Discount.php');
+require(dirname(__FILE__) . '/Entity/EmailMessage.php');
+require(dirname(__FILE__) . '/Entity/EstimatedArrival.php');
+require(dirname(__FILE__) . '/Entity/Exception.php');
+require(dirname(__FILE__) . '/Entity/FailureNotification.php');
+require(dirname(__FILE__) . '/Entity/FailureNotificationCode.php');
+require(dirname(__FILE__) . '/Entity/FreightCharges.php');
+require(dirname(__FILE__) . '/Entity/FreightCollect.php');
+require(dirname(__FILE__) . '/Entity/Generic.php');
+require(dirname(__FILE__) . '/Entity/GeoCode.php');
+require(dirname(__FILE__) . '/Entity/Guaranteed.php');
+require(dirname(__FILE__) . '/Entity/Image.php');
+require(dirname(__FILE__) . '/Entity/ImageFormat.php');
+require(dirname(__FILE__) . '/Entity/InsuredValue.php');
+require(dirname(__FILE__) . '/Entity/InternationalForms.php');
+require(dirname(__FILE__) . '/Entity/InvoiceLineTotal.php');
+require(dirname(__FILE__) . '/Entity/LabelDelivery.php');
+require(dirname(__FILE__) . '/Entity/LabelImage.php');
+require(dirname(__FILE__) . '/Entity/LabelImageFormat.php');
+require(dirname(__FILE__) . '/Entity/LabelRecoveryRequest.php');
+require(dirname(__FILE__) . '/Entity/LabelRecoveryResponse.php');
+require(dirname(__FILE__) . '/Entity/LabelResults.php');
+require(dirname(__FILE__) . '/Entity/LabelSpecification.php');
+require(dirname(__FILE__) . '/Entity/Locale.php');
+require(dirname(__FILE__) . '/Entity/LocationSearchCriteria.php');
+require(dirname(__FILE__) . '/Entity/LocatorRequest.php');
+require(dirname(__FILE__) . '/Entity/Manifest.php');
+require(dirname(__FILE__) . '/Entity/NegotiatedRates.php');
+require(dirname(__FILE__) . '/Entity/NetSummaryCharges.php');
+require(dirname(__FILE__) . '/Entity/Notification.php');
+require(dirname(__FILE__) . '/Entity/Origin.php');
+require(dirname(__FILE__) . '/Entity/OriginAddress.php');
+require(dirname(__FILE__) . '/Entity/Package.php');
+require(dirname(__FILE__) . '/Entity/PackageReferenceNumber.php');
+require(dirname(__FILE__) . '/Entity/PackageServiceOptions.php');
+require(dirname(__FILE__) . '/Entity/PackageWeight.php');
+require(dirname(__FILE__) . '/Entity/PackagingType.php');
+require(dirname(__FILE__) . '/Entity/PaymentInformation.php');
+require(dirname(__FILE__) . '/Entity/PickupDateRange.php');
+require(dirname(__FILE__) . '/Entity/PickupType.php');
+require(dirname(__FILE__) . '/Entity/Prepaid.php');
+require(dirname(__FILE__) . '/Entity/Product.php');
+require(dirname(__FILE__) . '/Entity/QuantumViewEvents.php');
+require(dirname(__FILE__) . '/Entity/QuantumViewResponse.php');
+require(dirname(__FILE__) . '/Entity/RateInformation.php');
+require(dirname(__FILE__) . '/Entity/RateRequest.php');
+require(dirname(__FILE__) . '/Entity/RateResponse.php');
+require(dirname(__FILE__) . '/Entity/RatedPackage.php');
+require(dirname(__FILE__) . '/Entity/RatedShipment.php');
+require(dirname(__FILE__) . '/Entity/Receipt.php');
+require(dirname(__FILE__) . '/Entity/ReferenceNumber.php');
+require(dirname(__FILE__) . '/Entity/Resolution.php');
+require(dirname(__FILE__) . '/Entity/ReturnService.php');
+require(dirname(__FILE__) . '/Entity/Service.php');
+require(dirname(__FILE__) . '/Entity/ServiceSummary.php');
+require(dirname(__FILE__) . '/Entity/ShipFrom.php');
+require(dirname(__FILE__) . '/Entity/ShipTo.php');
+require(dirname(__FILE__) . '/Entity/Shipment.php');
+require(dirname(__FILE__) . '/Entity/ShipmentIndicationType.php');
+require(dirname(__FILE__) . '/Entity/ShipmentReferenceNumber.php');
+require(dirname(__FILE__) . '/Entity/ShipmentRequestLabelSpecification.php');
+require(dirname(__FILE__) . '/Entity/ShipmentRequestReceiptSpecification.php');
+require(dirname(__FILE__) . '/Entity/ShipmentServiceOptions.php');
+require(dirname(__FILE__) . '/Entity/ShipmentWeight.php');
+require(dirname(__FILE__) . '/Entity/Shipper.php');
+require(dirname(__FILE__) . '/Entity/SoldTo.php');
+require(dirname(__FILE__) . '/Entity/StatusType.php');
+require(dirname(__FILE__) . '/Entity/SubscriptionEvents.php');
+require(dirname(__FILE__) . '/Entity/SubscriptionFile.php');
+require(dirname(__FILE__) . '/Entity/SubscriptionStatus.php');
+require(dirname(__FILE__) . '/Entity/TimeInTransitRequest.php');
+require(dirname(__FILE__) . '/Entity/TimeInTransitResponse.php');
+require(dirname(__FILE__) . '/Entity/TrackingCandidate.php');
+require(dirname(__FILE__) . '/Entity/Translate.php');
+require(dirname(__FILE__) . '/Entity/Unit.php');
+require(dirname(__FILE__) . '/Entity/UnitOfMeasurement.php');
+require(dirname(__FILE__) . '/Entity/UpdatedAddress.php');
+
+// Exceptions
+require(dirname(__FILE__) . '/Exception/InvalidResponseException.php');
+require(dirname(__FILE__) . '/Exception/RequestException.php');
+
+// WSDLs
+require(dirname(__FILE__) . '/WSDL/AccessRequestXPCI.xsd');
+require(dirname(__FILE__) . '/WSDL/DeniedParty.wsdl');
+require(dirname(__FILE__) . '/WSDL/DeniedPartyWebServiceSchema.xsd');
+require(dirname(__FILE__) . '/WSDL/ErrorXPCI.xsd');
+require(dirname(__FILE__) . '/WSDL/ExportLicense.wsdl');
+require(dirname(__FILE__) . '/WSDL/ExportLicenseDetectorWebServiceSchema.xsd');
+require(dirname(__FILE__) . '/WSDL/ImportCompliance.wsdl');
+require(dirname(__FILE__) . '/WSDL/ImportComplianceWebServiceSchema.xsd');
+require(dirname(__FILE__) . '/WSDL/LandedCost.wsdl');
+require(dirname(__FILE__) . '/WSDL/LandedCostWebServiceSchema.xsd');
+
+// UPS API Resources
+require(dirname(__FILE__) . '/AddressValidation.php');
+require(dirname(__FILE__) . '/LabelRecovery.php');
+require(dirname(__FILE__) . '/Locator.php');
+require(dirname(__FILE__) . '/NodeInterface.php');
+require(dirname(__FILE__) . '/QuantumView.php');
+require(dirname(__FILE__) . '/Rate.php');
+require(dirname(__FILE__) . '/Request.php');
+require(dirname(__FILE__) . '/RequestInterface.php');
+require(dirname(__FILE__) . '/Response.php');
+require(dirname(__FILE__) . '/ResponseInterface.php');
+require(dirname(__FILE__) . '/Shipping.php');
+require(dirname(__FILE__) . '/SoapRequest.php');
+require(dirname(__FILE__) . '/TimeInTransit.php');
+require(dirname(__FILE__) . '/Tracking.php');
+require(dirname(__FILE__) . '/Tradeability.php');
+require(dirname(__FILE__) . '/Ups.php');
+require(dirname(__FILE__) . '/Utilities.php');
