@@ -1,0 +1,59 @@
+[
+    {
+        "name": "stripe/stripe-php",
+        "version": "v3.11.0",
+        "version_normalized": "3.11.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stripe/stripe-php.git",
+            "reference": "830879e7984f22a9ed9085d674e5f8d5c4512fc6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stripe/stripe-php/zipball/830879e7984f22a9ed9085d674e5f8d5c4512fc6",
+            "reference": "830879e7984f22a9ed9085d674e5f8d5c4512fc6",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "ext-mbstring": "*",
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "satooshi/php-coveralls": "~0.6.1",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "time": "2016-03-22 20:40:11",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Stripe\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stripe and contributors",
+                "homepage": "https://github.com/stripe/stripe-php/contributors"
+            }
+        ],
+        "description": "Stripe PHP Library",
+        "homepage": "https://stripe.com/",
+        "keywords": [
+            "api",
+            "payment processing",
+            "stripe"
+        ]
+    }
+]
