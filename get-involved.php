@@ -12,7 +12,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h1>Be a Part of Something Bigger</h1>
-            <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</p>
+            <h4>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</h4>
         </div>
     </div>
     <div class="grid">
