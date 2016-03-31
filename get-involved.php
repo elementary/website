@@ -14,7 +14,8 @@
             <h1>Be a Part of Something Bigger</h1>
             <p>Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</p>
         </div>
-
+    </div>
+    <div class="grid">
         <div class="whole" id="sections-menu">
             <a class="button flat" href="#funding">Funding</a>
             <a class="button flat" href="#translations">Translations</a>
@@ -165,7 +166,7 @@
             <div class="actions">
                 <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>
                 <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank">Browse Our Apps' Code</a>
-                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?field.tag=bitesize" target="_blank">Bitesized Bugs</a>
+                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bitesize&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search" target="_blank">Bitesized Bugs</a>
                 <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bounty&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
             </div>
         </div>
