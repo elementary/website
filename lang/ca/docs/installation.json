@@ -2,7 +2,7 @@
     "Installation": "Instal·lació",
     "Download elementary OS": "Baixeu l'elementary OS",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si encara no ho haveu fet, heu de <a href=\"/\" target=\"_blank\">baixar l'elementary OS de la pàgina d'inici</a>. Haureu de copiar el fitxer ISO baixat a una memòria USB seguint les indicacions de més endavant.",
-    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "L'elementary OS està construït per dos arquitectures de processador, 32 bits i 64 bits.",
+    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "L'elementary OS està construït per a dos arquitectures de processador, 32 bits i 64 bits.",
     "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.": "Si sabeu que teniu un equip nou amb un processador de 64 bits, trieu la versió de 64 bits.",
     "If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).": "Si el vostre equip és antic o no en sabeu ben bé quin tipus de processador té, trieu la versió de 32 bits (els processadors de 64 bits també podran executar aquesta versió).",
     "Recommended System Specifications": "Especificacions tècniques recomanades",
