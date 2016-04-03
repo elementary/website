@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "Sorry, access is denied.",
-    "You don't have permission to view the requested resource.": "You don't have permission to view the requested resource.",
+    "Sorry, access is denied.": "抱歉，访问被拒绝。",
+    "You don't have permission to view the requested resource.": "你没有访问此页面的权限。",
     "Go to Home Page": "返回首页",
-    "Access Denied &sdot; elementary": "Access Denied ⋅ elementary"
+    "Access Denied &sdot; elementary": "访问被拒绝 ⋅ elementary"
 }
