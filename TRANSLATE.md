@@ -16,6 +16,25 @@ Languages are manually updated, so you won't see your work published just after 
 
 # Web developers
 
+## Script
+
+The following script will update your local copy of master, push new strings to Transifex, then remove and re-download the translation files. Finally, it will check the translations and push the branch. You should then file a pull request against [that branch](https://github.com/elementary/mvp/compare/master...translations-update), including the check result.
+
+```
+git checkout master
+git pull
+.tx/prepush.sh
+tx push -s
+git checkout -b translations-update
+rm lang/* -Rf
+tx pull -a
+php backend/translations-checker.php
+git add -A
+git commit -am "Update all Translations, even new ones"
+git push --set-upstream origin translations-update
+git checkout master
+```
+
 ## Extracting translations from HTML files
 
 Translations strings are extracted from HTML files. A little PHP script analyzes HTML files and exports strings to a JSON file: `/backend/extract-l10n.php?page=<page>`. You can change the `page` parameter to extract translations from another page (and set it to `layout` to translate the website layout). Translations are auto-updated on Transifex using this script.

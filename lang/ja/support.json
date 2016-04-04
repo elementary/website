@@ -7,9 +7,11 @@
     "Photos": "写真",
     "System Settings": "システム設定",
     "Videos": "ビデオ",
-    "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "あなたの質問は既にされていませんか？一般的な質問に関する回答を見つけてください。",
     "Installation": "インストール",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "elementary OSのインストールに関するヘルプは私たちの手順を追ったガイドから入手してください。",
+    "Get help installing elementary OS with our step-by-step guide.": "elementary OSをインストールするためのステップバイステップのガイドはこちら。",
+    "Learning the Basics": "基本を学ぶ",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "デスクトップ画面、マルチタスキング、キーボードショートカットなどを一通り見る。",
+    "StackExchange": "StackExchange",
+    "Check out answers to some of the most common questions we get.": "よくある質問に対する回答を見る。",
     "Support &sdot; elementary": "サポート - elementary"
 }

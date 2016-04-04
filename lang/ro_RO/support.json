@@ -1,15 +1,17 @@
 {
     "Get support for": "Primește ajutor pentru",
     "Calendar": "Calendar",
-    "Camera": "Camera",
+    "Camera": "Cameră",
     "Files": "Fișiere",
-    "Music": "Muzica",
-    "Photos": "Fotografiile",
+    "Music": "Muzică",
+    "Photos": "Fotografii",
     "System Settings": "Setări Sistem",
     "Videos": "Video",
-    "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Întrebarea ta a fost pusă deja? Verifică răspunsurile la unele dintre cele mai comune întrebări pe care le primim.",
     "Installation": "Instalare",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Primește ajutorul în timpul instalării  elementary OS pe calculatorul tău urmând ghidul nostru pas-cu-pas.",
-    "Support &sdot; elementary": "Asistența ⋅ elementary"
+    "Get help installing elementary OS with our step-by-step guide.": "Get help installing elementary OS with our step-by-step guide.",
+    "Learning the Basics": "Invățarea bazelor",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Walk through the desktop, multi-tasking, keyboard shortcuts and more.",
+    "StackExchange": "StackExchange",
+    "Check out answers to some of the most common questions we get.": "Check out answers to some of the most common questions we get.",
+    "Support &sdot; elementary": "Asistență ⋅ elementary"
 }

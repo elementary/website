@@ -2,7 +2,6 @@
     "Store": "Mağaza",
     "Our store currently only supports US orders.": "Mağazamız şu anda yalnızca Amerika siparişlerini kabul edebiliyor.",
     "Order Online": "Online Sipariş",
-    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s": "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel’s",
-    "sizing chart": "sizing chart",
-    "Store &sdot; elementary": "Mağaza ⋅ elementary"
+    "All apparel is in US sizes. Tees run a bit snug; for sizing details, see American Apparel&rsquo;s <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">sizing chart</a>.": "Tüm giysiler ABD ölçüsündedir. Tişörtler biraz üzerinize oturacaktır; ölçü detayları için American Apparel’s <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\" target=\"_blank\">boyut tablosuna</a> bakın",
+    "Store &sdot; elementary": "Mağaza - Elementary OS"
 }

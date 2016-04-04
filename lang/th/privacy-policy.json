@@ -1,6 +1,6 @@
 {
     "Privacy Policy": "นโยบายความเป็นส่วนตัว",
-    "Do Not Track": "ห้ามแกะรอย （DNT）",
+    "Do Not Track": "ไม่ถูกตามรอย （Do Not Track）",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "การตั้งค่า do-not-track เว็บไซต์นี้สามารถเจอได้ในเบราว์เซอร์ที่ทันสมัยส่วนมากและเลือกปิด Google Analytics เมื่อมันทำงานอยู่. เราไม่สามารถลบวิธีแกะรอยอื่นๆ ได้อัตโนมัติ โดยไม่ส่งผลกระทบอย่างรุนแรงในการใช้งานเว็บไซต์. หากคุณต้องการที่จะจัดการกับวิธีแกะรอยเหล่านี้ด้วยตนเอง. อ้างอิงในส่วนการปิดการใช้งานคุกกี้",
     "Cookies": "Cookies",
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>คุณสามารถเลือกที่จะปิดการใช้งานหรือเลือกปิดคุกกี้ใดก็ได้หรือคุกกี้บุคคลที่สามในการตั้งค่าเบราว์เซอร์ของคุณ</strong>",
@@ -13,5 +13,7 @@
     "Stripe's Privacy Policy": "Stripe นโยบายความเป็นส่วนตัว",
     "Manage Cookies": "จัดการคุกกี้",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "ในขณะที่คุณได้เยี่ยมชมเว็บไซต์ของเราแล้ว, คุณอาจต้องการจัดการคุกกี้ที่เกิดขึ้นในเบราว์เซอร์ของคุณ. เชื่อมโยงไปยังคำแนะนำที่เกี่ยวข้องที่สามารถหาเจอได้ด้านล่าง",
+    "Transparency": "ปิดประตูหลัง",
+    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "เราไม่มีซอฟต์แวร์ประตูหลังบ้าน backdoor ใด ๆ  ติดตั้งในะระบบของรา และเราไม่รับข้อเสนอใด ๆ  ที่จะกระทำเรื่องเลวร้ายแบบนั้นเช่นกัน  และเราก็ไม่รับหมายค้นจากหน่วยงานความมั่นคงใด ๆ  ที่จะรุกรานความเป็นส่วนตัวของผู้ใช้",
     "Privacy Policy &sdot; elementary": "นโยบายความเป็นส่วนตัว ⋅ elementary"
 }
