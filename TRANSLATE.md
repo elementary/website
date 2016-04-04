@@ -18,7 +18,7 @@ Languages are manually updated, so you won't see your work published just after 
 
 ## Script
 
-The following script will update your local copy of master, push new strings to Transifex, then remove and re-download the translations files. Finally, it will check the translations and push the branch. You should then file a pull request against [that branch](https://github.com/elementary/mvp/compare/master...translations-update), including the check result.
+The following script will update your local copy of master, push new strings to Transifex, then remove and re-download the translation files. Finally, it will check the translations and push the branch. You should then file a pull request against [that branch](https://github.com/elementary/mvp/compare/master...translations-update), including the check result.
 
 ```
 git checkout master
