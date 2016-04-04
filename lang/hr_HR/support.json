@@ -7,9 +7,11 @@
     "Photos": "Slike",
     "System Settings": "Postavke sustava",
     "Videos": "Video zapisi",
-    "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Je li vaše pitanje već postavljeno? Provjeri odgovore na pitanja koja se često postavljaju.",
     "Installation": "Instalacija",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Za pomoć pri instalaciji elemetary OS-a na računalo slijedi korak-po-korak vodič. ",
+    "Get help installing elementary OS with our step-by-step guide.": "Pomoć za instalaciju elementary OS sustava, korak po korak.",
+    "Learning the Basics": "Naučite osnove",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Prikaz radne površine, multitaskina, kratica tipkovnice i ostalo.",
+    "StackExchange": "StackExchange",
+    "Check out answers to some of the most common questions we get.": "Pogledajte odgovore na neke od najčešće postavljenih pitanja",
     "Support &sdot; elementary": "Podrška ⋅ elementary"
 }
