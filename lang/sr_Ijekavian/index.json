@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Брза и отворена замена за Windows и OS X",
     "Custom": "Друго",
     "Enter any dollar amount.": "Било који износ у USD",
-    "Download Freya": "Download Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Purchase elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "What the press is saying about elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "„elementary OS је другачији… леп и моћан оперативни систем, који ће добро радити и на старијим рачунарима“",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "„брза платформа, лака за одржавање, која може да се инсталира дословно било гдје“",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.",
     "Safe &amp; Secure": "Safe & Secure",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.",
+    "Security Notices": "Security Notices",
+    "Download elementary OS": "Преузмите elementary OS",
     "Choose a Download": "Изаберите верзију",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Ми препоручујемо 64-битну верзију за новије рачунаре. За више података погледајте",
     "installation guide": "водич за инсталирање",
     "Freya 32-bit": "Freya 32-bit",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "Freya 64-bit": "Freya 64-bit",
-    "Download elementary OS": "Преузмите elementary OS"
+    "Freya 64-bit": "Freya 64-bit"
 }

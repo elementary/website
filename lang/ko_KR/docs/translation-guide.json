@@ -1,6 +1,6 @@
 {
     "Translation Guide": "번역 안내서",
-    "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "우리 웹사이트와 프로그램들을 현지화하는 것은 elementary OS를 가능한 많은 사람들이 사용할 수 있도록 하는데 매우 중요한 부분입니다. 단독으로 내부 번역팀에 의존하는 것보다, 크라우드소싱을 활용해서 기술적인 지식이 거의 없이도 아무나 참여할 수 있도록 했습니다. 우리의 마음이 모든 플랫폼에 걸쳐 일관되게 전달되고, 새로운 참여자들을 도울 수 있도록, 이 번역 길잡이를 함께 만듭니다.",
+    "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "우리 웹사이트와 프로그램들을 현지화하는 것은 elementary OS를 가능한 많은 사람들이 사용할 수 있도록 하는데 매우 중요한 부분입니다. 단독으로 내부 번역팀에 의존하는 것보다, 크라우드소싱을 활용해서 기술적인 지식이 거의 없이도 아무나 참여할 수 있도록 했습니다. 우리의 마음이 모든 플랫폼에 걸쳐 일관되게 전달되고, 새로운 참여자들을 도울 수 있도록, 이 번역 가이드를 만듭니다.",
     "Translating Applications": "프로그램 번역하기",
     "Apps are translated through Rosetta: the translation interface hosted on Launchpad. In order to submit translations, you should:": "프로그램의 번역은  로제타(Rosetta: 런치패드에서 이끄는 번역 도구)를 통해서 이루어집니다. 번역에 참여하기 위해서는, 여러분은:  ",
     "Have a": "만드셔야 합니다",
@@ -15,7 +15,7 @@
     "Go to a project you want to translate": "번역하려는 프로젝트에 가서",
     "Choose your language": "언어를 선택합니다",
     "Click on &quot;Download translation&quot;": "\"Download translation\"를 클릭합니다",
-    "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "이제 여러분은, 번역 파일을 다운받을수 있는 e-mail을 요구할 수 있습니다. 이제:",
+    "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "이제 당신은 번역 파일을 다운받을수 있는 e-mail을 요청할 수 있습니다. 지금:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https://apps.ubuntu.com/cat/applications//poedit/\">Poedit</a>)": "선호하는 text-editor나 po-editor를 선택하세요 (e.g. <a href=\"https://apps.ubuntu.com/cat/applications//poedit/\">Poedit</a>)",
     "Start translating": "번역을 시작합니다",
     "Once you've finished, use the &quot;Upload translation&quot; option on the same page that you downloaded them from.": "번역을 마치셨으면, 파일을 다운로드한 웹페이지의 \"Upload translation\" 옵션을 이용해서 업로드합니다.",

@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "Un'alternativa veloce ed aperta a Windows e OS X",
     "Custom": "Personalizzato",
     "Enter any dollar amount.": "Inserisci una qualunque quantità in dollari.",
-    "Download Freya": "Scarica Freya",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "Acquista elementary OS",
+    "1.15 GB (for PC or Mac)": "1.15 GB (per PC o Mac)",
     "What the press is saying about elementary OS:": "Quello che la stampa dice su elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS è diverso... un sistema operativo bello e potente che funzionerà bene persino su PC datati.\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"Una piattaforma veloce ed a bassa manutenzione che può essere installata praticamente ovunque.\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Non facciamo offerte pubblicitarie e non raccogliamo dati personali sensibili. Il nostro unico reddito è direttamente dai nostri utenti.",
     "Safe &amp; Secure": "Sicuro e protetto",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Siamo basati su Linux: lo stesso software che usano il Dipartimento della Difesa statunitense, la Bank of China, e altro ancora.",
+    "Security Notices": "Avviso di sicurezza",
+    "Download elementary OS": "Scarica elementary OS",
     "Choose a Download": "Scegli un Download",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "Noi consigliamo 64-bit per la maggior parte dei computer moderni. Per un aiuto e maggiori informazioni, visita la",
     "installation guide": "guida all'installazione",
     "Freya 32-bit": "Freya 32-bit",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "Freya 64-bit": "Freya 64-bit",
-    "Download elementary OS": "Scarica elementary OS"
+    "Freya 64-bit": "Freya 64-bit"
 }

@@ -1,0 +1,8 @@
+{
+    "You're connected!": "Du är ansluten!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Internetanslutningen verkar fungera. Du kan lugnt stänga detta fönstret och fortsätta använda enheten.",
+    "Why is this window appearing?": "Varför kommer det här fönstret upp?",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS kontrollerar automatiskt din Internet-anslutning när du ansluter till ett nytt trådlöst nätverk. Om det upptäcker att det inte finns någon Internet-anslutning (dvs om du ansluter till en captive portal på ett kafé eller annan offentlig plats), så kommer detta fönster upp och visar inloggningssidan.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "En del nätverk verkar först vara captive portal-typen och framkallar detta fönster, men till sist ansluter de ändå. I sådana fall ser du detta meddelande och kan lugnt stänga fönstret.",
+    "You're connected! &sdot; elementary": "Du är ansluten! ⋅ elementary"
+}

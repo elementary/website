@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "Sorry, access is denied.",
-    "You don't have permission to view the requested resource.": "You don't have permission to view the requested resource.",
-    "Go to Home Page": "Ana Səhifə ",
-    "Access Denied &sdot; elementary": "Access Denied ⋅ elementary"
+    "Sorry, access is denied.": "Bağışlayın, səhifə tapılmadı.",
+    "You don't have permission to view the requested resource.": "Sənin tələb olunan resursu görməyə iznin yoxdur.",
+    "Go to Home Page": "Ana Səhifəyə get",
+    "Access Denied &sdot; elementary": "Səhifə tapılmadı ⋅ elementary"
 }
