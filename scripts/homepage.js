@@ -125,9 +125,6 @@ $(function () {
                           '&email=' + encodeURIComponent(token.email) +
                           '&os=' + detected_os
         );
-        if (window.ga) {
-            ga('send', 'event', release_title + ' ' + release_version + ' Download (Payment)', 'Homepage', amount);
-        }
     }
 
     function open_download_overlay () {
