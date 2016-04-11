@@ -42,12 +42,12 @@ $(function () {
         console.log('Starting payment for ' + payment_amount);
         if (payment_amount < payment_minimum) {
             if (window.ga) {
-                ga('send', 'event', release_title + ' ' + release_version + ' Payment (Initiated)', 'Homepage', payment_amount);
+                ga('send', 'event', release_title + ' ' + release_version + ' Download (Free)', 'Homepage');
             }
             open_download_overlay();
         } else {
             if (window.ga) {
-                ga('send', 'event', release_title + ' ' + release_version + ' Download (Free)', 'Homepage', payment_amount);
+                ga('send', 'event', release_title + ' ' + release_version + ' Payment (Initiated)', 'Homepage', payment_amount);
             }
             do_stripe_payment(payment_amount);
         }
