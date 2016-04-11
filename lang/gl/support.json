@@ -1,5 +1,5 @@
 {
-    "Get support for": "Get support for",
+    "Get support for": "Obter soporte para",
     "Calendar": "Calendario",
     "Camera": "Cámara",
     "Files": "Ficheiros",
@@ -7,9 +7,11 @@
     "Photos": "Fotos",
     "System Settings": "Axustes do Sistema",
     "Videos": "Vídeos",
-    "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Xa foi feita a túa pregunta? Mira as respostas a algunhas das preguntas máis comúns.",
     "Installation": "Instalación",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Obtén axuda paso a paso oinstalar elementary OS no teu computador seguindo a nosa guía.",
+    "Get help installing elementary OS with our step-by-step guide.": "Obter axuda para instalar elementary OS seguindo a nosa guía de paso a paso.",
+    "Learning the Basics": "Aprender o básico",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Guía a través do escritorio, multitarefa, atallos de teclado e máis.",
+    "StackExchange": "StackExchange",
+    "Check out answers to some of the most common questions we get.": "Mira as respostas a algunhas das preguntas máis comúns.",
     "Support &sdot; elementary": "Soporte ⋅ elementary"
 }
