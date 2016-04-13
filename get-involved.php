@@ -131,7 +131,7 @@
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
         </div>
         <div class="whole">
-            <h2>Our Progress for The Loki Alpha 1 Milestone:</h2>
+            <h2>Our Progress for The Loki Beta 1 Milestone:</h2>
             <div class="charts">
                 <div class="barchart-ctn">
                     <canvas width="750" height="400"></canvas>
