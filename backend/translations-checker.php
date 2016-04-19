@@ -1,5 +1,12 @@
 <?php
 
+if (!function_exists('tidy_parse_string')) {
+  throw new Exception('translations-checker needs the tidy PHP extension.');
+}
+if (!function_exists('json_decode')) {
+  throw new Exception('translations-checker needs the JSON PHP extension.');
+}
+
 function isJson($filename) {
     $string = file_get_contents($filename);
     json_decode($string);
@@ -35,15 +42,38 @@ $result['valid_files']   = array();
 
 foreach ( $translation_files as $filename ) {
     $shortname = translationFilename($filename);
-    // Validate
-    if ( isJson($filename) ) {
-        $result['valid_files'][] = $shortname;
-    } else {
+
+    // Validate JSON
+    if ( ! isJson($filename) ) {
         $result['invalid_files'][] = $shortname;
+        continue;
+    }
+
+    // Validate HTML encoding
+    $values = array_values(json_decode(file_get_contents($filename), TRUE));
+    $error = false;
+    foreach ( $values as $value ) {
+        $tidy = tidy_parse_string("<body>".$value."</body>");
+        $tidy->diagnose();
+        $errors = tidy_error_count($tidy);
+
+        if ($errors > 0) {
+            echo $tidy->errorBuffer;
+
+            $error = true;
+        }
+    }
+
+    if ($error) {
+        $result['invalid_files'][] = $shortname;
+    } else {
+        $result['valid_files'][] = $shortname;
     }
 }
 
 $invalidCount = count($result['invalid_files']);
+
+echo count($translation_files)." translation files\n";
 
 echo count($result['valid_files'])." valid translation files\n";
 
