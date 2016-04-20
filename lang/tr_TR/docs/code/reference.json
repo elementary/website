@@ -23,7 +23,7 @@
     "Comments are indented alongside the code, and obvious comments do more harm\nthan good.": "Yorumlar kodla birlikte girintilenir, ve keskin yorumlar faydadan çok \nzarar getirir.",
     "Variable names, class names, function names": "Değişken isimler,sınıf isimleri, fonksiyon isimleri",
     "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.": "Ayrıca Macar notasyonu ve hiçbir türden notasyon karışımının kullanılmaması\ngerektiğini hatırlatmakta fayda var.",
-    "Casting": "Casting",
+    "Casting": "Döküm",
     "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.",
     "Vala namespaces": "Vala isim alanları",
     "Referring to GLib is not necessary. If you want to print something:": "GLib'e atıfta bulunmak gerekli değildir. Eğer bir şey yazdırmak isterseniz:",
