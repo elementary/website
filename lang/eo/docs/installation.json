@@ -1,6 +1,6 @@
 {
-    "Installation": "Installation",
-    "Download elementary OS": "Download elementary OS",
+    "Installation": "Instalado",
+    "Download elementary OS": "Elŝuti elementary OS",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.",
     "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.",
     "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.": "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.",
