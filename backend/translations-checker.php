@@ -1,8 +1,5 @@
 <?php
 
-if (!function_exists('tidy_parse_string')) {
-  throw new Exception('translations-checker needs the tidy PHP extension.');
-}
 if (!function_exists('json_decode')) {
   throw new Exception('translations-checker needs the JSON PHP extension.');
 }
@@ -37,48 +34,67 @@ function globRecursive($Pattern, $Flags = 0) {
 }
 
 $translation_files = globRecursive(__DIR__.'/../lang/*/*.json');
-$result['invalid_files'] = array();
-$result['valid_files']   = array();
+$result['invalid_files'] = 0;
+$result['valid_files'] = 0;
+$result['errors'] = array();
 
 foreach ( $translation_files as $filename ) {
     $shortname = translationFilename($filename);
+    $error = false;
 
     // Validate JSON
     if ( ! isJson($filename) ) {
-        $result['invalid_files'][] = $shortname;
+        $result['invalid_files']++;
+        $result['errors'][] = $shortname." => Invalid JSON";
         continue;
     }
 
-    // Validate HTML encoding
+    // Validate all HTML tags have an open tag and close tag in same string
     $values = array_values(json_decode(file_get_contents($filename), TRUE));
-    $error = false;
-    foreach ( $values as $value ) {
-        $tidy = tidy_parse_string("<body>".$value."</body>");
-        $tidy->diagnose();
-        $errors = tidy_error_count($tidy);
 
-        if ($errors > 0) {
-            echo $tidy->errorBuffer;
+    foreach ( $values as $i => $value ) {
+        $line_number = $i + 2;
 
-            $error = true;
+        preg_match_all("/<([a-z0-9]+)\s?[^\<]*?(?<!\/)>/i", $value, $open_tags);
+        preg_match_all("/\<\s*\/\s*([^\/\>\s]*)[^\/\>]*\>/i", $value, $close_tags);
+
+        foreach ( $open_tags[1] as $oi => $open_tag ) {
+          foreach( $close_tags[1] as $ci => $close_tag ) {
+            if ( $open_tag === $close_tag ) {
+              unset($close_tags[1][$ci]);
+              unset($open_tags[1][$oi]);
+              break;
+            }
+          }
+        }
+
+        foreach ( $open_tags[1] as $open_tag ) {
+          $error = true;
+          $result['errors'][] = $shortname.":$line_number => Unclosed \"".$open_tag."\" tag";
+        }
+        foreach ( $close_tags[1] as $close_tag ) {
+          $error = true;
+          $result['errors'][] = $shortname.":$line_number => Unopened \"".$close_tag."\" tag";
         }
     }
 
     if ($error) {
-        $result['invalid_files'][] = $shortname;
+        $result['invalid_files']++;
     } else {
-        $result['valid_files'][] = $shortname;
+        $result['valid_files']++;
     }
 }
 
-$invalidCount = count($result['invalid_files']);
-
-echo count($translation_files)." translation files\n";
-
-echo count($result['valid_files'])." valid translation files\n";
-
-if ($invalidCount) {
-    var_dump($result['invalid_files']);
+foreach ( $result['errors'] as $error ) {
+  echo $error."\n";
 }
 
-echo $invalidCount." invalid translation files\n";
+echo "Checked ".count($translation_files)." translation files\n";
+echo $result['valid_files']." valid translation files\n";
+echo $result['invalid_files']." invalid translation files\n";
+
+if ($result['valid_files'] === count($translation_files)) {
+  exit(0);
+} else {
+  exit(1);
+}
