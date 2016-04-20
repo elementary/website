@@ -30,7 +30,7 @@ class Translator {
         'ro_RO' => 'Română',
         'ru' => 'Русский',
         'sr' => 'српски',
-        'sr_Ijekavian' => 'српски (ијекавица)',
+        'sr_JK' => 'српски (ијекавица)',
         'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
