@@ -31,7 +31,7 @@
                     <img src="images/privacy-policy/internet-explorer_128x128.png" data-l10n-off alt="Internet Explorer" class="browsers-list" />
                     <h4 data-l10n-off>IE</h4>
                 </a>
-                <a target="_blank" href="http://help.opera.com/Windows/12.10/en/cookies.html" class="column">
+                <a target="_blank" href="https://www.opera.com/blogs/news/2015/08/how-to-manage-cookies-in-opera/" class="column">
                     <img src="images/privacy-policy/opera_128x128.png" data-l10n-off alt="Opera" class="browsers-list" />
                     <h4 data-l10n-off>Opera</h4>
                 </a>
