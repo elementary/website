@@ -797,7 +797,7 @@ input:focus:-ms-input-placeholder {
 
 .linked {
     font-size: 0;
-    margin: 24px;
+    margin: 24px 0;
     white-space: nowrap;
 }
 

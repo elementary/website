@@ -37,9 +37,9 @@ Select the operating system you are currently using to view tailored installatio
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
-<a class="button install-on-windows" href="#install-on-windows">Windows</a>
-<a class="button install-on-os-x" href="#install-on-os-x">OS X</a>
-<a class="button install-on-ubuntu" href="#install-on-ubuntu">Ubuntu</a>
+<a class="button install-on-windows" href="#install-on-windows"><i class="fa fa-windows"></i> Windows</a>
+<a class="button install-on-os-x" href="#install-on-os-x"><i class="fa fa-apple"></i> OS X</a>
+<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fa fa-linux"></i> Ubuntu</a>
 </div>
 </div>
 
