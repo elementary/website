@@ -24,7 +24,7 @@
     "Variable names, class names, function names": "Nomes de variáveis, classes e funções",
     "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.": "Vale ressaltar que não devem haver Notações húngaras, nem misturas de\nnotações de qualquer tipo.",
     "Casting": "Casting",
-    "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Evite usar <code>como</ code> palavra-chave quando se pergunta como poderia dar <code>nulo</ code> como resultado, que poderia ser facilmente esquecido de verificar.",
+    "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Evite usar <code>como</code> palavra-chave quando se pergunta como poderia dar <code>nulo</code> como resultado, que poderia ser facilmente esquecido de verificar.",
     "Vala namespaces": "Namespaces Vala",
     "Referring to GLib is not necessary. If you want to print something:": "Referênciar a GLib não é necessário. Se você quer imprimir algo:",
     "Opt for the second one, it's much cleaner.": "Escolha o segundo, é muito mais limpo.",
