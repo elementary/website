@@ -122,7 +122,7 @@
     "Geary: <strong>Send and receive mail</strong>": "Geary: <strong>Kirim dan terima surel</strong>",
     "Scratch: <strong>Edit text files</strong>": "Scratch: <strong>Sunting berkas teks</strong>",
     "Files: <strong>Browse and manage your files</strong>": "Files: <strong>Ramban dan kelola berkas Anda</strong>",
-    "An app's comment should be in <a href=\"#sentence-case\">sentence case</a>, not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the <em>primary</em> use case of the app.": "Komentar aplikasi harus dalam format <a href=\"#sentence-case\">Huruf Kalimat</a>, tidak menyertakan tanda baca akhir (titik, tanda seru, atau tanda tanya), dan harus sesingkat mungkin menggambarkan kegunaan <em>utama</ em> dari aplikasi.",
+    "An app's comment should be in <a href=\"#sentence-case\">sentence case</a>, not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the <em>primary</em> use case of the app.": "Komentar aplikasi harus dalam format <a href=\"#sentence-case\">Huruf Kalimat</a>, tidak menyertakan tanda baca akhir (titik, tanda seru, atau tanda tanya), dan harus sesingkat mungkin menggambarkan kegunaan <em>utama</em> dari aplikasi.",
     "Categories": "Categories",
     "The following categories may be used to aid with searching or browsing for your app:": "Kategori berikut bisa digunakan untuk membantu mencari atau meramban aplikasi Anda:",
     "AudioVideo  ": "AudioVideo",
