@@ -74,14 +74,10 @@ function ipCheck($hostname, $debug = false) {
         // These lists are based on who is connected to which international exchange directly.
         // They are by no means exclusive.
         $isles = array('GB', 'IM', 'IE', 'FO', 'IS', 'GG', 'JE', 'GI');
-        $germanic = array('DE', 'PT', 'ES', 'FR', 'AD', 'BE', 'LU', 'IT', 'AT', 'CZ', 'PL');
         $vikings = array('NL', 'SX', 'DK', 'NO', 'SE', 'FI', 'SJ');
         // Great Britain
         if ( in_array($country, $isles) ) {
             return 'lon1';
-        // Germanics
-        } else if ( in_array($country, $germanic) ) {
-            return 'fra1';
         // Vikings
         } else if ( in_array($country, $vikings) ) {
             return 'ams3';
@@ -94,7 +90,7 @@ function ipCheck($hostname, $debug = false) {
     } else if ( $continent == 'SA' ) {
         return array('nyc3', 'sfo1');
 
-    // Africe
+    // Africa
     } else if ( $continent == 'AF' ) {
         return array('fra1', 'ams3');
 
