@@ -68,8 +68,9 @@ Then simply run `vagrant up`.
 For bypassing Vagrant you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
-* `php7.0-json`
 * `php7.0-curl`
+* `php7.0-json`
+* `php7.0-xml`
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
 
