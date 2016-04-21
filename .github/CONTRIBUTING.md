@@ -96,6 +96,17 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 }
 ```
 
+# Composer
+
+We use composer to manage our backend scripts. Because all of these files are
+in the repository, it's not required to have `composer` installed unless you want
+to update the dependencies.
+
+## Updating
+
+Navigate to `backend/` and run `composer update`.
+Make sure to test for any breakage when updating.
+
 # Contributing
 
 ## Make a new branch and push it to GitHub.

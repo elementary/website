@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__.'/lib/Stripe.php';
+require_once __DIR__.'/lib/autoload.php';
 require_once __DIR__.'/config.loader.php';
 
-Stripe::setApiKey($config['stripe_sk']);
+\Stripe\Stripe::setApiKey($config['stripe_sk']);
 
 if (isset($_POST['token'])) {
     $token       = $_POST['token'];
@@ -12,7 +12,7 @@ if (isset($_POST['token'])) {
 
     // Create the charge on Stripe's servers - this will charge the user's card
     try {
-        $charge = Stripe_Charge::create(array(
+        $charge = \Stripe\Charge::create(array(
             'amount' => $amount,
             'currency' => 'usd',
             'card' => $token,
@@ -23,7 +23,7 @@ if (isset($_POST['token'])) {
         $encoded = urlencode(str_replace(' ', '_', 'has_paid_'.$description));
         setcookie($encoded, $amount, time() + 315360000, '/', '', 0, 1);
         echo 'OK';
-    } catch(Stripe_CardError $e) {
+    } catch(\Stripe\Error\Card $e) {
         echo 'error';
     }
 } else {
