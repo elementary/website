@@ -109,7 +109,7 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-shasum -a 256 elementaryos-0.3.2-stable-i386.20151209.iso
+shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
 should produce the output:
@@ -123,13 +123,20 @@ should produce the output:
 Running the following command in your terminal:
 
 ```bash nohighlight
-shasum -a 256 elementaryos-0.3.2-stable-amd64.20151209.iso
+shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
+```
+
+Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
+In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
+
+```bash nohighlight
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
