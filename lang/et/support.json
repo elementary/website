@@ -7,9 +7,11 @@
     "Photos": "Fotod",
     "System Settings": "Süsteemi seaded",
     "Videos": "Videod",
-    "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Võibolla on sinu küsimustele juba vastused olemas? Kõigepealt tutvu meile enim esitatud küsimustega.",
     "Installation": "Paigaldamine",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Juhend elementary OS-i paigaldamiseks samm-sammult.",
+    "Get help installing elementary OS with our step-by-step guide.": "Täpsed juhised elementary OS samm-sammult paigaldamiseks.",
+    "Learning the Basics": "Põhitõed",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Töölaua, multitegumitöö, klaviatuuri otseteede ja muu vajaliku tutvustus.",
+    "StackExchange": "StackExchange",
+    "Check out answers to some of the most common questions we get.": "Vastused mõnedele enamlevinud küsimustele.",
     "Support &sdot; elementary": "Tugi ⋅ elementary"
 }

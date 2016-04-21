@@ -18,3 +18,4 @@ Describe what actually happened, being specific about how this differs from your
 - **Operating system version**: 
 - **Browser**: 
 - **Browser version**: 
+- **Enabled Browser Extensions**:

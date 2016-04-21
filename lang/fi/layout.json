@@ -7,11 +7,11 @@
     "Get Involved": "Osallistu",
     "This is a development site.": "Tämä on kehityssivusto.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Katselet sivustomme kehitysversiota. Jotkin sivut eivät välttämättä toimi odotetusti. Jos saavuit tänne vahingossa, siirry viralliselle sivustollemme osoitteeseen <a href=\"http://elementary.io\">elementary.io</a>.",
-    "Copyright &copy; 2016 elementary LLC.\n                <a href=\"/team\">Team</a>\n                <a href=\"/brand\">Brand</a>\n                <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                <a href=\"/team\">Team</a>\n                <a href=\"/brand\">Brand</a>\n                <a href=\"/privacy-policy\">Privacy Policy</a>",
+    "Copyright &copy; 2016 elementary LLC.\n                <a href=\"/team\">Team</a>\n                <a href=\"/brand\">Brand</a>\n                <a href=\"/privacy-policy\">Privacy Policy</a>": "Tekijänoikeus © 2016 elementary LLC.\n                <a href=\"/team\">Tiimi</a>\n                <a href=\"/brand\">Brändi</a>\n                <a href=\"/privacy-policy\">Yksityisyyden periaatteet</a>",
     "Language": "Kieli",
     "Change Site Language": "Vaihda sivuston kieli",
     "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Elementary OS -sivusto on rakennettu nykyaikaisilla verkkoteknologioilla, joita selaimesi ei tue.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Tämä versio Internet Explorerista on vanhentunut ja saattaa sisältää bugeja tai tietoturva-aukkoja. <a href=\"http://browsehappy.com/\">Päivitä</> IE11:een tai johonkin muuhun selaimeen.",
+    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Tämä versio Internet Explorerista on vanhentunut ja saattaa sisältää bugeja tai tietoturva-aukkoja. <a href=\"http://browsehappy.com/\">Päivitä</a> IE11:een tai johonkin muuhun selaimeen.",
     "Dismiss": "Hylkää",
     "Learn More": "Lue lisää"
 }
