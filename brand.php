@@ -84,7 +84,7 @@
     </ul>
     <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
     <ul>
-        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, or service, or in any logo you create.</li>
+        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
         <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
     </ul>
 
