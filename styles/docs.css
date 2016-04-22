@@ -189,9 +189,10 @@ nav {
     background-color: #fcfcfc;
     border-right: 1px solid #f0f0f0;
     height: 100%;
+	max-height: calc(100% - 65px);
     list-style-type: none;
     margin-top: -56px;
-    max-width: 300px;
+	width: 300px;
     overflow: auto;
     padding: 16px 0;
     position: fixed;
@@ -219,8 +220,20 @@ nav {
     white-space: nowrap;
 }
 
+.edit-doc {
+    background: rgba(0,0,0,0.1);
+	bottom: 0;
+    font-size: 24px;
+    padding: 16px 0;
+	position: fixed;
+	text-align: center;
+	width: 300px;
+}
+
+.edit-doc a,
+.edit-doc a:hover,
 .sidebar a:hover {
-    color: #403757;
+	color: #403757;
 }
 
 .sidebar ul {
