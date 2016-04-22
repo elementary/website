@@ -129,9 +129,9 @@
         <div class="two-thirds">
             <h1>Desktop Development</h1>
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
+            <p>This burndown chart shows our progress for the <a href="https://bugs.launchpad.net/elementary/+milestone/loki-beta1">Loki Beta 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, public beta testing for Loki will begin and this chart will be updated to reflect the next milestone. <a href="https://launchpad.net/elementaryos/+series" class="read-more">Learn More</a></p>
         </div>
         <div class="whole">
-            <h2>Our Progress for The Loki Beta 1 Milestone:</h2>
             <div class="charts">
                 <div class="barchart-ctn">
                     <canvas width="750" height="400"></canvas>
