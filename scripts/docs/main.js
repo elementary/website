@@ -48,6 +48,7 @@ $(document).ready(function() {
                 $sidebar.append($subMenu);
             }
         });
+        $('<div class="edit-doc"><a href="https://github.com/elementary/mvp/blob/master' + window.location.pathname + '.md"><i class="fa fa-pencil"></i> Edit</a></div>').prependTo('#content-container');
         $sidebar.prependTo('#content-container');
 
         var $sidebarItems = $sidebar.children('li');
