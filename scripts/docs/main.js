@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     // Sidebar
     var $headings = $('h1');
-    var $sidebar = $('<div class="sidebar"></ul>');
+    var $sidebar = $('<div class="sidebar"></div>');
     if ($headings.length > 1) {
         var $index = $('<ul class="index"></ul>');
         $headings.each(function () {
