@@ -171,36 +171,31 @@ nav {
     z-index: 100;
 }
 
-.row.docs-index {
-    margin: 0;
-    padding: 0;
-}
-
-.row.docs-index ul {
-    list-style: none;
-}
-
-.row.docs-index a {
-    color: inherit;
-    font-size: 14px;
-}
+/**********
+* Sidebar *
+**********/
 
 .sidebar {
     background-color: #fcfcfc;
     border-right: 1px solid #f0f0f0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     height: 100%;
-	max-height: calc(100% - 65px);
     list-style-type: none;
     margin-top: -56px;
-    width: 300px;
     overflow: auto;
-    padding: 16px 0;
     position: fixed;
     transition: all 0.15s ease-in-out;
+    width: 300px;
 }
 
 .sidebar.nav-visible {
-    padding-top: 72px;
+    margin-top: 0;
+    padding-bottom: 56px;
 }
 
 .sidebar.footer-visible {
@@ -220,39 +215,51 @@ nav {
     white-space: nowrap;
 }
 
-.edit-doc {
-    background: rgba(0,0,0,0.1);
-    bottom: 0;
-    font-size: 24px;
-    padding: 16px 0;
-    position: fixed;
-    text-align: center;
-    width: 300px;
-}
-
-.edit-doc a,
-.edit-doc a:hover,
 .sidebar a:hover {
     color: #403757;
 }
 
-.sidebar ul {
+.sidebar > ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .sidebar li.active {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.sidebar > ul {
-    padding-left: 32px;
-}
-
-.sidebar > li > a {
+.sidebar > ul.index > li > a {
     font-weight: 600;
     line-height: 24px;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.sidebar > ul.index {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0;
+    overflow: auto;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.sidebar > ul.actions {
+    display: block;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.sidebar > ul.actions > li {
+    background: rgba(0,0,0,0.1);
+    font-size: 24px;
+    margin: 0;
+    padding: 16px 0;
+    text-align: center;
 }
 
 @media (max-width: 990px) {

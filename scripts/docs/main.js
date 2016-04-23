@@ -35,28 +35,41 @@ $(document).ready(function() {
 
     // Sidebar
     var $headings = $('h1');
-    var $sidebar = $('<ul class="sidebar"></ul>');
+    var $sidebar = $('<div class="sidebar"></ul>');
     if ($headings.length > 1) {
+        var $index = $('<ul class="index"></ul>');
         $headings.each(function () {
-            $sidebar.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
+            $index.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
             var $subHeadings = $(this).nextUntil('h1', 'h2');
             if ($subHeadings.length > 0) {
                 var $subMenu = $('<ul></ul>');
                 $subHeadings.each(function () {
                     $subMenu.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
                 });
-                $sidebar.append($subMenu);
+                $index.append($subMenu);
             }
         });
-        $('<div class="edit-doc"><a href="https://github.com/elementary/mvp/blob/master' + window.location.pathname + '.md"><i class="fa fa-pencil"></i> Edit</a></div>').prependTo('#content-container');
-        $sidebar.prependTo('#content-container');
+        $index.prependTo($sidebar);
 
-        var $sidebarItems = $sidebar.children('li');
+        var $sidebarItems = $index.children('li');
 
         var navHeight = $('nav.nav:first').height();
         var footerScrollTop = $('footer:last').offset().top;
         var prevTarget = 0,
             nextTarget = 0;
+
+        var $actions = $('<ul class="actions"></ul>');
+        $('<li><a href="https://github.com/elementary/mvp/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions);
+        $actions.appendTo($sidebar);
+
+        var secondUp = window.location.pathname.split('/')[1];
+        var transifexTitle = window.location.pathname.split('/docs/')[1].split('#')[0].replace('/', '_')
+        if (secondUp !== 'docs' && secondUp !== 'en') {
+            $('<li><a href="https://www.transifex.com/elementary/elementary-mvp/translate/#' + secondUp + '/docs_' + transifexTitle + '" id="translate"><i class="fa fa-globe"></i> Translate</a></li>').appendTo($actions);
+          $actions.appendTo($sidebar);
+        }
+
+        $sidebar.prependTo('#content-container');
     }
 
     // Update javascript variable currentSection
@@ -100,9 +113,9 @@ $(document).ready(function() {
         $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
         $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
 
-        $('ul.sidebar .active').removeClass('active');
-        var $currentLink = $('ul.sidebar a[href$="#'+currentSection.id+'"]')
-        if ($currentLink.parent().parent().is('.sidebar')) {
+        $('.sidebar .index .active').removeClass('active');
+        var $currentLink = $('.sidebar .index a[href$="#'+currentSection.id+'"]')
+        if ($currentLink.parent().parent().is('.index')) {
             $currentLink.parent().addClass('active');
         } else {
           ($currentLink.parent().parent().prev('li').addClass('active'));
