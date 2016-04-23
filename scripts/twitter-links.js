@@ -1,10 +1,14 @@
 $(function () {
     $('.inline-tweet').each(function () {
-        var tweet = encodeURIComponent($(this).text() + $(this).data('tweet-suffix'));
-        if ( tweet.length > 140 ) {
-            var trim_length = 140 - $(this).data('tweet-suffix').length - 5;
-            tweet = encodeURIComponent($(this).text().substring(0, trim_length) + '…' + $(this).data('tweet-suffix'));
+        var tweetBody = $(this).text();
+        var tweetSuffix = $(this).data('tweet-suffix');
+        var tweet = tweetBody + tweetSuffix;
+
+        if ( tweet.length >= 135 ) {
+            var quote = tweetBody.slice(-1);
+            tweet = tweetBody.substring(0, tweetBody.length - (tweet.length - 135)) + '…' + quote + tweetSuffix;
         }
-        $(this).prop('href', 'http://twitter.com/home/?status=' + tweet);
+
+        $(this).prop('href', 'http://twitter.com/home/?status=' + encodeURIComponent(tweet));
     });
 });
