@@ -255,6 +255,7 @@ nav {
 }
 
 .sidebar > ul.actions > li {
+    border-top: 1px solid rgba(0,0,0,0.1);
     background: rgba(0,0,0,0.1);
     font-size: 24px;
     margin: 0;
