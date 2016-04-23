@@ -85,6 +85,7 @@ $l10n->begin_html_translation();
             jQl.boot();
             <?php include __DIR__.'/../scripts/popover.js'; ?>
             <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
+            <?php include __DIR__.'/../scripts/twitter-links.js'; ?>
             <?php include __DIR__.'/../scripts/external-links.js'; ?>
         </script>
 
