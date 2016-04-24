@@ -29,8 +29,8 @@ $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
 <!doctype html>
-<!--[if IE 9]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
+<!--[if IE]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie-legacy"><![endif]-->
+<!--[if !IE]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
 
         <meta charset="UTF-8">
