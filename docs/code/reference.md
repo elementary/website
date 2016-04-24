@@ -117,6 +117,8 @@ than good.
         l = n * 2 + 4;   // Clear l variable
     }
 
+For translators' comments, use triple forward slash `///`.
+
 ## Variable names, class names, function names {#variable-names-class-names-function-names}
 
 
