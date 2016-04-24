@@ -42,19 +42,17 @@ $l10n->set_domain('layout');
         <div class="clear"></div>
         </footer>
 
-        <!--[if lt IE 9]>
+        <!--[if IE]>
             <div id="legacy-warning">
                 <h1>The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.</h1>
-
                 <p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
-
                 <div id="legacy-warning-buttons">
                     <a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
-
                     <a class="suggested-action" href="http://browsehappy.com/" target="_blank">Learn More</a>
                 </div>
             </div>
         <![endif]-->
+
     </body>
 </html>
 <?php
