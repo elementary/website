@@ -247,6 +247,12 @@ nav {
 }
 
 .sidebar > ul.actions {
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: linear-gradient(to bottom,
+                                  rgba(0, 0, 0, 0.12),
+                                  rgba(0, 0, 0, 0.00) 2px
+                                  );
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
     display: block;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -255,12 +261,18 @@ nav {
 }
 
 .sidebar > ul.actions > li {
-    border-top: 1px solid rgba(0,0,0,0.1);
-    background: rgba(0,0,0,0.1);
-    font-size: 24px;
+    display: inline-block;
     margin: 0;
-    padding: 16px 0;
+    padding: 12px 12px;
     text-align: center;
+}
+
+.sidebar > ul.actions > li .fa {
+    margin-right: 6px;
+}
+
+.sidebar > ul.actions > li:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 990px) {
