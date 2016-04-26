@@ -29,8 +29,8 @@ $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
 <!doctype html>
-<!--[if IE 9]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
+<!--[if IE]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie-legacy"><![endif]-->
+<!--[if !IE]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
 
         <meta charset="UTF-8">
@@ -65,10 +65,10 @@ $l10n->begin_html_translation();
 
         <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100,100italic|Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300,400,600|Droid+Sans|Roboto+Mono">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:100,100italic|Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">

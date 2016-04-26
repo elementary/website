@@ -243,11 +243,11 @@ nav > .nav-content > ul:first-child {
     -webkit-flex: 0 0 auto;
 }
 
-html.ie9 nav > .nav-content {
+html.ie-legacy nav > .nav-content {
     min-width: 550px;
 }
 
-html.ie9 nav > .nav-content > ul.right {
+html.ie-legacy nav > .nav-content > ul.right {
     float: right;
 }
 
@@ -295,20 +295,20 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
-@media only screen and (max-width: 520px) { /* this media query is for ie9 support */
+@media only screen and (max-width: 520px) { /* this media query is for ie-legacy support */
 
-    html.ie9 nav {
+    html.ie-legacy nav {
         overflow-x: scroll;
         white-space: nowrap;
     }
 
-    html.ie9 nav > .nav-content {
+    html.ie-legacy nav > .nav-content {
         overflow: visible;
         white-space: nowrap;
         width: 550px;
     }
 
-    html.ie9 nav > .nav-content > .right {
+    html.ie-legacy nav > .nav-content > .right {
         float: left;
     }
 
