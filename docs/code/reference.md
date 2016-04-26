@@ -118,6 +118,11 @@ than good.
     }
 
 For translators' comments, use triple forward slash `///`.
+```
+{
+    "elementary OS": false /// Can't be translated
+}
+```
 
 ## Variable names, class names, function names {#variable-names-class-names-function-names}
 
