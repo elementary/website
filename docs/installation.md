@@ -55,7 +55,7 @@ Verifying your download is an important, but optional step. We generate a checks
 
 Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://www.digitalvolcano.co.uk/hash.html">Hash Tool</a>.
 
-![Hash Tool](images/docs/installation/hashtool.png)
+![Hash Tool](images/docs/installation/hash-tool.png)
 
 1. Open Hash Tool
 2. Under "Hash Type" select `SHA-256`
