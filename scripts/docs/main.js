@@ -129,7 +129,7 @@ $(document).ready(function() {
     $(window).scroll(function () {
         var diff = new Date().getTime() - repositionedAt;
 
-        if (repositionedAt == null || diff >= 500) {
+        if (repositionedAt == null || diff >= 100) {
             repositionedAt = new Date().getTime();
             scrollHandle();
         } else {
