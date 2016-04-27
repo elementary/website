@@ -108,11 +108,7 @@ $(document).ready(function() {
             history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
         }
 
-        var scrollTop = $(this).scrollTop();
-
-        $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
-        $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
-
+        // Changes sidebar link classes based on what's currently active
         $('.sidebar .index .active').removeClass('active');
         var $currentLink = $('.sidebar .index a[href$="#'+currentSection.id+'"]')
         if ($currentLink.parent().parent().is('.index')) {
@@ -120,6 +116,25 @@ $(document).ready(function() {
         } else {
           ($currentLink.parent().parent().prev('li').addClass('active'));
         };
+
+        // Makes sidebar sticky with footer and header
+        var scrollTop = $(this).scrollTop();
+        var $header = $('nav:first-of-type')
+        var $footer = $('footer')
+        var $sidebar = $('.sidebar')
+
+        var headerFromTop = $header.height() - scrollTop
+        var headerPeak = (headerFromTop > 0) ? headerFromTop : 0
+        $sidebar.css('margin-top', headerPeak - $header.height())
+        $sidebar.css('padding-bottom', headerPeak)
+
+
+        var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
+        var footerPeak = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
+
+        console.log(footerFromBottom, footerPeak)
+
+        $sidebar.css('height', "calc(100% - " + footerPeak + "px)")
     }
 
     // Scroll timeout handling
@@ -129,11 +144,22 @@ $(document).ready(function() {
     $(window).scroll(function () {
         var diff = new Date().getTime() - repositionedAt;
 
-        if ( repositionedAt == null || diff >= 10 ) {
-            clearTimeout(repositionTimer);
+        var scrollTop = $(this).scrollTop();
+        var scrollBottom = ($(document).height() - (scrollTop + $(window).height()));
+
+        var diffTime = 300
+
+        if (scrollTop < 1000 || scrollBottom < 1000) {
+          diffTime = 100
+        }
+
+        if ( repositionedAt == null || diff >= diffTime ) {
             console.log('Called bc Diff');
             repositionedAt = new Date().getTime();
-            repositionTimer = setTimeout(scrollHandle, 0);
+            scrollHandle();
+        } else { // Wait until scroll spam stops
+            clearTimeout(repositionTimer);
+            repositionTimer = setTimeout(scrollHandle, diffTime);
         }
     });
 
