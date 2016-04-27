@@ -129,12 +129,11 @@ $(document).ready(function() {
     $(window).scroll(function () {
         var diff = new Date().getTime() - repositionedAt;
 
-        if (repositionedAt == null || diff >= 100) {
+        if ( repositionedAt == null || diff >= 10 ) {
+            clearTimeout(repositionTimer);
+            console.log('Called bc Diff');
             repositionedAt = new Date().getTime();
-            scrollHandle();
-        } else {
-            clearTimeout(repositionTimer)
-            repositionTimer = setTimeout(scrollHandle, 100)
+            repositionTimer = setTimeout(scrollHandle, 0);
         }
     });
 
