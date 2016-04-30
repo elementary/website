@@ -86,7 +86,7 @@ $(function () {
         var payment_http, $amount_ten;
 
         $amount_ten = $('#amount-ten');
-        
+
         if (window.ga) {
             ga('send', 'event', release_title + ' ' + release_version + ' Payment (Actual)', 'Homepage', amount);
         }
@@ -170,23 +170,23 @@ $(function () {
     $(function() {
         $.getJSON('data/slingshot.json', function(data) {
             $.each(data.grid, function(i, f) {
-                var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg alt='+f.title+'"/><p>'+f.title+'</p>'
                 $(griditems).appendTo(".slingshot-grid");
             });
             $.each(data.categories, function(i, f) {
-                var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg alt='+f.title+'"/><p>'+f.title+'</p>'
                 $(categoriesitems).appendTo(".slingshot-categories");
             });
             $.each(data.searchone, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg alt='+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchone");
             });
             $.each(data.searchtwo, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg alt='+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchtwo");
             });
             $.each(data.searchthree, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg alt='+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchthree");
             });
         });
