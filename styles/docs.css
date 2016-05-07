@@ -184,11 +184,17 @@ nav {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 56px);
     list-style-type: none;
     overflow: auto;
-    position: fixed;
+    position: absolute;
     width: 300px;
+}
+
+.sidebar.sticky {
+  left: 0;
+  position: fixed;
+  top: 0;
 }
 
 .sidebar a {

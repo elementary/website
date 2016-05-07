@@ -82,6 +82,29 @@ $(document).ready(function() {
         currentSection = docElements[0];
     };
 
+    // Makes sidebar sticky with footer and header
+    function sidebarHandle() {
+        if ($(window).width() <= 990) return
+
+        var scrollTop = $(this).scrollTop();
+        var $header = $('nav:first-of-type')
+        var $footer = $('footer')
+        var $sidebar = $('.sidebar')
+
+        var headerFromTop = $header.height() - scrollTop
+        var headerSquish = (headerFromTop > 0) ? headerFromTop : 0
+        if (headerSquish === 0) {
+          $sidebar.addClass('sticky')
+        } else {
+          $sidebar.removeClass('sticky')
+        }
+
+        var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
+        var footerSquish = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
+
+        $sidebar.css('height', "calc(100% - " + footerSquish + "px - " + headerSquish + "px)")
+    }
+
     // Scrolling function to run
     function scrollHandle() {
         // Check to see what is on screen right now
@@ -116,25 +139,6 @@ $(document).ready(function() {
         } else {
           ($currentLink.parent().parent().prev('li').addClass('active'));
         };
-
-        // Makes sidebar sticky with footer and header
-        var scrollTop = $(this).scrollTop();
-        var $header = $('nav:first-of-type')
-        var $footer = $('footer')
-        var $sidebar = $('.sidebar')
-
-        var headerFromTop = $header.height() - scrollTop
-        var headerPeak = (headerFromTop > 0) ? headerFromTop : 0
-        $sidebar.css('margin-top', headerPeak - $header.height())
-        $sidebar.css('padding-bottom', headerPeak)
-
-
-        var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
-        var footerPeak = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
-
-        console.log(footerFromBottom, footerPeak)
-
-        $sidebar.css('height', "calc(100% - " + footerPeak + "px)")
     }
 
     // Scroll timeout handling
@@ -142,27 +146,25 @@ $(document).ready(function() {
     var repositionTimer = null
 
     $(window).scroll(function () {
+        if ($(window).width() <= 990) return
+
         var diff = new Date().getTime() - repositionedAt;
 
         var scrollTop = $(this).scrollTop();
         var scrollBottom = ($(document).height() - (scrollTop + $(window).height()));
 
-        var diffTime = 300
+        sidebarHandle();
 
-        if (scrollTop < 1000 || scrollBottom < 1000) {
-          diffTime = 100
-        }
-
-        if ( repositionedAt == null || diff >= diffTime ) {
-            console.log('Called bc Diff');
+        if ( repositionedAt == null || diff >= 500 ) {
             repositionedAt = new Date().getTime();
             scrollHandle();
         } else { // Wait until scroll spam stops
             clearTimeout(repositionTimer);
-            repositionTimer = setTimeout(scrollHandle, diffTime);
+            repositionTimer = setTimeout(scrollHandle, 500);
         }
     });
 
     // Run scrolling function at first load
+    sidebarHandle();
     scrollHandle();
 });
