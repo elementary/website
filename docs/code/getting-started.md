@@ -321,7 +321,7 @@ The next thing we need is a build system. The build system that we're going to b
 1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Type the following into the Terminal.
 
     ```bash
-    bzr branch lp:~elementary-os/+junk/cmake-modules
+    sudo apt install cmake-elementary
     ```
 
 2. Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
