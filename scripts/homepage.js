@@ -86,7 +86,7 @@ $(function () {
         var payment_http, $amount_ten;
 
         $amount_ten = $('#amount-ten');
-        
+
         if (window.ga) {
             ga('send', 'event', release_title + ' ' + release_version + ' Payment (Actual)', 'Homepage', amount);
         }
