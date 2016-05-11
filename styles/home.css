@@ -223,6 +223,49 @@ input:focus + .focus-reveal {
 }
 
 /************
+* appcenter *
+************/
+
+#appcenter {
+    max-width: none;
+    overflow: hidden;
+}
+
+#appcenter > .column {
+    display: block;
+}
+
+#appcenter > .column:nth-of-type(2) {
+    display: inline-block;
+    margin: auto;
+    max-width: 400px;
+}
+
+@media (min-width: 1000px) {
+    #appcenter > .column {
+        display: inline-block;
+    }
+
+    #appcenter > .column:first-of-type {
+        float: right;
+        overflow: visible;
+        width: 55%;
+    }
+
+    #appcenter > .column:first-of-type > img {
+        height: 100%;
+        max-width: none;
+        position: relative;
+        width: auto;
+    }
+
+    #appcenter > .column:nth-of-type(2) {
+        float: right;
+        margin-top: 10%;
+    }
+}
+
+/************
 * Slingshot *
 ************/
 

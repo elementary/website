@@ -153,6 +153,15 @@
                     </div>
                 </div>
             </div>
+            <div id="appcenter" class="row">
+                <div class="column">
+                    <img src="images/screenshots/appcenter.png" alt="elementary appcenter categories"/>
+                </div>
+                <div class="column text-left">
+                    <h2>Closer to the Apps</h2>
+                    <p>App Center brings handcrafted applications, designed specifically for elementary, directly to your computer. With faster updates, you will always be closer to bug fixes, and new features, without compromising security or stability.</p>
+                </div>
+            </div>
             <div id="slingshot" class="row">
                 <div class="column vertical-top">
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
