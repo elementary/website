@@ -35,27 +35,41 @@ $(document).ready(function() {
 
     // Sidebar
     var $headings = $('h1');
-    var $sidebar = $('<ul class="sidebar"></ul>');
+    var $sidebar = $('<div class="sidebar"></div>');
     if ($headings.length > 1) {
+        var $index = $('<ul class="index"></ul>');
         $headings.each(function () {
-            $sidebar.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
+            $index.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
             var $subHeadings = $(this).nextUntil('h1', 'h2');
             if ($subHeadings.length > 0) {
                 var $subMenu = $('<ul></ul>');
                 $subHeadings.each(function () {
                     $subMenu.append('<li><a href="#'+$(this).attr('id')+'">'+$(this).text()+'</a></li>');
                 });
-                $sidebar.append($subMenu);
+                $index.append($subMenu);
             }
         });
-        $sidebar.prependTo('#content-container');
+        $index.prependTo($sidebar);
 
-        var $sidebarItems = $sidebar.children('li');
+        var $sidebarItems = $index.children('li');
 
         var navHeight = $('nav.nav:first').height();
         var footerScrollTop = $('footer:last').offset().top;
         var prevTarget = 0,
             nextTarget = 0;
+
+        var $actions = $('<ul class="actions"></ul>');
+        $('<li><a href="https://github.com/elementary/mvp/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions);
+        $actions.appendTo($sidebar);
+
+        var secondUp = window.location.pathname.split('/')[1];
+        var transifexTitle = window.location.pathname.split('/docs/')[1].split('#')[0].replace('/', '_')
+        if (secondUp !== 'docs' && secondUp !== 'en') {
+            $('<li><a href="https://www.transifex.com/elementary/elementary-mvp/translate/#' + secondUp + '/docs_' + transifexTitle + '" id="translate"><i class="fa fa-globe"></i> Translate</a></li>').appendTo($actions);
+          $actions.appendTo($sidebar);
+        }
+
+        $sidebar.prependTo('#content-container');
     }
 
     // Update javascript variable currentSection
@@ -67,6 +81,29 @@ $(document).ready(function() {
     } else {
         currentSection = docElements[0];
     };
+
+    // Makes sidebar sticky with footer and header
+    function sidebarHandle() {
+        if ($(window).width() <= 990) return
+
+        var scrollTop = $(this).scrollTop();
+        var $header = $('nav:first-of-type')
+        var $footer = $('footer')
+        var $sidebar = $('.sidebar')
+
+        var headerFromTop = $header.height() - scrollTop
+        var headerSquish = (headerFromTop > 0) ? headerFromTop : 0
+        if (headerSquish === 0) {
+          $sidebar.addClass('sticky')
+        } else {
+          $sidebar.removeClass('sticky')
+        }
+
+        var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
+        var footerSquish = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
+
+        $sidebar.css('height', "calc(100% - " + footerSquish + "px - " + headerSquish + "px)")
+    }
 
     // Scrolling function to run
     function scrollHandle() {
@@ -94,14 +131,10 @@ $(document).ready(function() {
             history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
         }
 
-        var scrollTop = $(this).scrollTop();
-
-        $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
-        $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
-
-        $('ul.sidebar .active').removeClass('active');
-        var $currentLink = $('ul.sidebar a[href$="#'+currentSection.id+'"]')
-        if ($currentLink.parent().parent().is('.sidebar')) {
+        // Changes sidebar link classes based on what's currently active
+        $('.sidebar .index .active').removeClass('active');
+        var $currentLink = $('.sidebar .index a[href$="#'+currentSection.id+'"]')
+        if ($currentLink.parent().parent().is('.index')) {
             $currentLink.parent().addClass('active');
         } else {
           ($currentLink.parent().parent().prev('li').addClass('active'));
@@ -113,17 +146,25 @@ $(document).ready(function() {
     var repositionTimer = null
 
     $(window).scroll(function () {
+        if ($(window).width() <= 990) return
+
         var diff = new Date().getTime() - repositionedAt;
 
-        if (repositionedAt == null || diff >= 500) {
+        var scrollTop = $(this).scrollTop();
+        var scrollBottom = ($(document).height() - (scrollTop + $(window).height()));
+
+        sidebarHandle();
+
+        if ( repositionedAt == null || diff >= 500 ) {
             repositionedAt = new Date().getTime();
             scrollHandle();
-        } else {
-            clearTimeout(repositionTimer)
-            repositionTimer = setTimeout(scrollHandle, 100)
+        } else { // Wait until scroll spam stops
+            clearTimeout(repositionTimer);
+            repositionTimer = setTimeout(scrollHandle, 500);
         }
     });
 
     // Run scrolling function at first load
+    sidebarHandle();
     scrollHandle();
 });
