@@ -171,41 +171,30 @@ nav {
     z-index: 100;
 }
 
-.row.docs-index {
-    margin: 0;
-    padding: 0;
-}
-
-.row.docs-index ul {
-    list-style: none;
-}
-
-.row.docs-index a {
-    color: inherit;
-    font-size: 14px;
-}
+/**********
+* Sidebar *
+**********/
 
 .sidebar {
     background-color: #fcfcfc;
     border-right: 1px solid #f0f0f0;
-    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: calc(100% - 56px);
     list-style-type: none;
-    margin-top: -56px;
-    max-width: 300px;
     overflow: auto;
-    padding: 16px 0;
-    position: fixed;
-    transition: all 0.15s ease-in-out;
+    position: absolute;
+    width: 300px;
 }
 
-.sidebar.nav-visible {
-    padding-top: 72px;
-}
-
-.sidebar.footer-visible {
-    border-bottom: 1px solid #f0f0f0;
-    border-bottom-right-radius: 3px;
-    height: calc(100% - 42px);
+.sidebar.sticky {
+  left: 0;
+  position: fixed;
+  top: 0;
 }
 
 .sidebar a {
@@ -223,23 +212,60 @@ nav {
     color: #403757;
 }
 
-.sidebar ul {
+.sidebar > ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .sidebar li.active {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.sidebar > ul {
-    padding-left: 32px;
-}
-
-.sidebar > li > a {
+.sidebar > ul.index > li > a {
     font-weight: 600;
     line-height: 24px;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.sidebar > ul.index {
+    display: block;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0;
+    overflow: auto;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.sidebar > ul.actions {
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: linear-gradient(to bottom,
+                                  rgba(0, 0, 0, 0.12),
+                                  rgba(0, 0, 0, 0.00) 2px
+                                  );
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    display: block;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.sidebar > ul.actions > li {
+    display: inline-block;
+    margin: 0;
+    padding: 12px 12px;
+    text-align: center;
+}
+
+.sidebar > ul.actions > li .fa {
+    margin-right: 6px;
+}
+
+.sidebar > ul.actions > li:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 990px) {
