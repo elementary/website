@@ -184,24 +184,17 @@ nav {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 56px);
     list-style-type: none;
-    margin-top: -56px;
     overflow: auto;
-    position: fixed;
-    transition: all 0.15s ease-in-out;
+    position: absolute;
     width: 300px;
 }
 
-.sidebar.nav-visible {
-    margin-top: 0;
-    padding-bottom: 56px;
-}
-
-.sidebar.footer-visible {
-    border-bottom: 1px solid #f0f0f0;
-    border-bottom-right-radius: 3px;
-    height: calc(100% - 42px);
+.sidebar.sticky {
+  left: 0;
+  position: fixed;
+  top: 0;
 }
 
 .sidebar a {
