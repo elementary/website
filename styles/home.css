@@ -124,27 +124,25 @@ input:focus + .focus-reveal {
     display: none;
 }
 
-#carousel .slide .row {
+#carousel .slide > .row {
     max-width: 100%;
+    padding-top: 0;
 }
 
 #carousel .slide > .row > .column {
     margin-left: 16px;
     margin-right: 16px;
     vertical-align: top;
+    display: block;
 }
 
-#carousel .column.alert img {
+#carousel .slide> .row .column.alert img {
     height: 64px;
     width: 64px;
 }
 
 #carousel .slide > .row > .column:first-child {
     margin: 0;
-}
-
-#carousel .slide > .row > .column:nth-child(2) {
-    display: block;
 }
 
 #carousel .slide > .row > .column .column:nth-child(2) {
@@ -176,7 +174,7 @@ input:focus + .focus-reveal {
 
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1400px) {
 
     #carousel {
         background-image: url("../images/screenshots/background.jpg");
@@ -185,15 +183,16 @@ input:focus + .focus-reveal {
     }
 
     #carousel .slide > .row {
-        margin: 0 calc(50% - 700px);
         padding-top: 28px;
-        padding-bottom: 68px;
+    }
+
+    #carousel .slide > .row > .column {
+        display: inline-block;
     }
 
     #carousel .slide > .row > .column:nth-child(2) {
-        margin-top: 33px;
+        margin-top: 60px;
         margin-right: 0;
-        display: inline-block;
     }
 
     #carousel .slide > .row > .column .column:nth-child(2) {
