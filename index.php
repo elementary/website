@@ -158,6 +158,7 @@
                     <img src="images/screenshots/appcenter.png" alt="elementary appcenter categories"/>
                 </div>
                 <div class="column text-left">
+                    <img src="images/icons/system-software-install.svg" />
                     <h2>Closer to the Apps</h2>
                     <p>App Center brings handcrafted applications, designed specifically for elementary, directly to your computer. With faster updates, you will always be closer to bug fixes, and new features, without compromising security or stability.</p>
                 </div>
