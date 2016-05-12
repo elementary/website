@@ -227,7 +227,6 @@ input:focus + .focus-reveal {
 
 #appcenter {
     background-color: #fafafa;
-    border-bottom: 1px solid #dbdbdb;
     max-width: none;
     overflow: hidden;
 }
