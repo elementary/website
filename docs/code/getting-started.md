@@ -318,15 +318,13 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is get a copy of some additional modules for Cmake (support for Vala, translations, etc), and create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
 
-1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Make sure you're in "~/Projects" (not in your hello-again folder) and then grab the latest copy of those modules with bzr. Notice that we're not in "~/Projects/hello-world". This is because our cmake modules are not a branch of our Hello World app:
+1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Type the following into the Terminal.
 
     ```bash
-    bzr branch lp:~elementary-os/+junk/cmake-modules
+    sudo apt install cmake-elementary
     ```
 
-2. You'll see a folder called "cmake". Copy that into your "hello-again" folder. It's that easy.
-
-3. Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
+2. Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
 
         # project name
         project (hello-again)
