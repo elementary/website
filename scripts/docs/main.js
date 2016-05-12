@@ -82,6 +82,29 @@ $(document).ready(function() {
         currentSection = docElements[0];
     };
 
+    // Makes sidebar sticky with footer and header
+    function sidebarHandle() {
+        if ($(window).width() <= 990) return
+
+        var scrollTop = $(this).scrollTop();
+        var $header = $('nav:first-of-type')
+        var $footer = $('footer')
+        var $sidebar = $('.sidebar')
+
+        var headerFromTop = $header.height() - scrollTop
+        var headerSquish = (headerFromTop > 0) ? headerFromTop : 0
+        if (headerSquish === 0) {
+          $sidebar.addClass('sticky')
+        } else {
+          $sidebar.removeClass('sticky')
+        }
+
+        var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
+        var footerSquish = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
+
+        $sidebar.css('height', "calc(100% - " + footerSquish + "px - " + headerSquish + "px)")
+    }
+
     // Scrolling function to run
     function scrollHandle() {
         // Check to see what is on screen right now
@@ -108,11 +131,7 @@ $(document).ready(function() {
             history.replaceState(undefined, undefined, location.href.split("#")[0]+"#"+currentSection.id);
         }
 
-        var scrollTop = $(this).scrollTop();
-
-        $sidebar.toggleClass('nav-visible', (scrollTop < navHeight));
-        $sidebar.toggleClass('footer-visible', (scrollTop + $(window).height() > footerScrollTop));
-
+        // Changes sidebar link classes based on what's currently active
         $('.sidebar .index .active').removeClass('active');
         var $currentLink = $('.sidebar .index a[href$="#'+currentSection.id+'"]')
         if ($currentLink.parent().parent().is('.index')) {
@@ -127,16 +146,25 @@ $(document).ready(function() {
     var repositionTimer = null
 
     $(window).scroll(function () {
+        if ($(window).width() <= 990) return
+
         var diff = new Date().getTime() - repositionedAt;
 
-        if ( repositionedAt == null || diff >= 10 ) {
-            clearTimeout(repositionTimer);
-            console.log('Called bc Diff');
+        var scrollTop = $(this).scrollTop();
+        var scrollBottom = ($(document).height() - (scrollTop + $(window).height()));
+
+        sidebarHandle();
+
+        if ( repositionedAt == null || diff >= 500 ) {
             repositionedAt = new Date().getTime();
-            repositionTimer = setTimeout(scrollHandle, 0);
+            scrollHandle();
+        } else { // Wait until scroll spam stops
+            clearTimeout(repositionTimer);
+            repositionTimer = setTimeout(scrollHandle, 500);
         }
     });
 
     // Run scrolling function at first load
+    sidebarHandle();
     scrollHandle();
 });
