@@ -88,8 +88,8 @@ input:focus + .focus-reveal {
 }
 
 #carousel {
-    background-color: #0d6c7f;
-    background-image: linear-gradient(to bottom, #015263, #338b9f);
+    background-color: #000d1d;
+    background-image: linear-gradient(to bottom, #000d1d, #103049);
     color: #fff;
     overflow: hidden;
     position: relative;
@@ -97,7 +97,7 @@ input:focus + .focus-reveal {
 }
 
 #carousel a.read-more {
-    color: rgba(0, 0, 0, 0.65);
+    color: inherit;
     font-weight: 700;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
