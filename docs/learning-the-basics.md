@@ -14,7 +14,7 @@ At the top of the screen you can see the Panel. On the left is the Applications 
 
 On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
 
-![The Panel](../images/docs/learning-the-basics/slingshots.png)
+![Slingshot](../images/docs/learning-the-basics/slingshot.png)
 
 You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:
 
