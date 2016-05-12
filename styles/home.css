@@ -226,6 +226,7 @@ input:focus + .focus-reveal {
 ************/
 
 #appcenter {
+    background-color: #fafafa;
     max-width: none;
     overflow: hidden;
 }
@@ -238,6 +239,18 @@ input:focus + .focus-reveal {
     display: inline-block;
     margin: auto;
     max-width: 400px;
+}
+
+#appcenter > .column:nth-of-type(2) img {
+    width: 64px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 500px) {
+    #appcenter > .column:nth-of-type(2) img {
+        width: 128px;
+        margin-bottom: 32px;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -260,7 +273,7 @@ input:focus + .focus-reveal {
 
     #appcenter > .column:nth-of-type(2) {
         float: right;
-        margin-top: 10%;
+        margin-top: 8%;
     }
 }
 
