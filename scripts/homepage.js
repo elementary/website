@@ -170,6 +170,7 @@ $(function () {
         'showcase-photos',
         'showcase-videos',
         'showcase-calendar',
+        'showcase-files',
         'showcase-terminal',
         'showcase-scratch',
         'showcase-camera'

@@ -76,10 +76,10 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="showcase" class="row">
+            <div id="showcase" class="row grey">
                 <div id="showcase-index">
                     <h2>Full Of Style And Content.</h2>
-                    <p>This paragraph is mine. There are many like it, but this one is mine. Without my paragraph, I am nothing. Without me, my paragraph is nothing. Together we are one. Apart we are nothing. Also, this header is bogus.</p>
+                    <p>elementary ships -a handfull of- apps designed to be easy to use, without missing features. Something something something, super awesome!</p>
                     <ul id="showcase-grid">
                         <a href="#showcase-music">
                             <li class="read-more">
@@ -113,7 +113,7 @@
                         </a>
                         <a href="#showcase-calendar">
                             <li class="read-more">
-                                <img src="images/icons/launcher-icons/4x.png" />
+                                <img src="images/icons/office-calendar.svg" />
                                 Calendar
                             </li>
                         </a>
@@ -154,6 +154,118 @@
                         <div class="column">
                             <h2>Music</h2>
                             <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-midori">
+                    <div>
+                        <img src="images/screenshots/midori.png" alt="midori screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/midori.svg" alt="midori icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Midori</h2>
+                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a href="https://midori-browser.org" class="read-more">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-mail">
+                    <div>
+                        <img src="images/screenshots/mail.png" alt="mail screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/internet-mail.svg" alt="mail icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Mail</h2>
+                            <p>Who says email has to be boring? Mail puts everything you need front and center, without all the clutter, so you can get back to doing what you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-photos">
+                    <div>
+                        <img src="images/screenshots/photos.png" alt="photos screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-photo-manager.svg" alt="photos icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Photos</h2>
+                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-videos">
+                    <div>
+                        <img src="images/screenshots/videos.png" alt="videos screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Videos</h2>
+                            <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-calendar">
+                    <div>
+                        <img src="images/screenshots/calendar.png" alt="calendar screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/office-calendar.svg" alt="calendar icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Calendar</h2>
+                            <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-files">
+                    <div>
+                        <img src="images/screenshots/files.png" alt="files screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/system-file-manager.svg" alt="files icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Files</h2>
+                            <p>With support for ftp, samba, and WebDAV, files will never be out of reach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-terminal">
+                    <div>
+                        <img src="images/screenshots/terminal.png" alt="terminal screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Terminal</h2>
+                            <p>It's transparent. And it's cool. And you should check it out!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-scratch">
+                    <div>
+                        <img src="images/screenshots/scratch.png" alt="scratch screenshot" />
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Scratch</h2>
+                            <p>With it's great looks, and extensive plugin support, Scratch will be the last text editor you will ever need.</p>
                         </div>
                     </div>
                 </div>

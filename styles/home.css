@@ -92,7 +92,6 @@ input:focus + .focus-reveal {
 ***********/
 
 #showcase {
-    background-color: #fafafa;
     max-width: none;
     padding: 48px 0;
     position: relative;
