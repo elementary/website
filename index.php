@@ -8,7 +8,7 @@
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
-            <script src="scripts/slider.js"></script>
+            <script src="scripts/showcase.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
             <script>var release_title = '<?php echo $config['release_title']; ?>';</script>
             <script>var release_version = '<?php echo $config['release_version']; ?>';</script>
@@ -76,79 +76,84 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="light">
-                <div class="row choices-container">
-                    <h1>Meet Our Apps</h1>
-                    <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos active" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
-                        <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
-                        <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
-                        <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
-                    </div>
+            <div id="showcase" class="row">
+                <div id="showcase-index">
+                    <h2>Full Of Style And Content.</h2>
+                    <p>This paragraph is mine. There are many like it, but this one is mine. Without my paragraph, I am nothing. Without me, my paragraph is nothing. Together we are one. Apart we are nothing. Also, this header is bogus.</p>
+                    <ul id="showcase-grid">
+                        <a href="#showcase-music">
+                            <li class="read-more">
+                              <img src="images/icons/multimedia-audio-player.svg" />
+                              Music
+                            </li>
+                        </a>
+                        <a href="#showcase-midori">
+                            <li class="read-more">
+                                <img src="images/icons/midori.svg" />
+                                Midori
+                            </li>
+                        </a>
+                        <a href="#showcase-mail">
+                            <li class="read-more">
+                                <img src="images/icons/internet-mail.svg" />
+                                Mail
+                            </li>
+                        </a>
+                        <a href="#showcase-photos">
+                            <li class="read-more">
+                                <img src="images/icons/multimedia-photo-manager.svg" />
+                                Photos
+                            </li>
+                        </a>
+                        <a href="#showcase-videos">
+                            <li class="read-more">
+                                <img src="images/icons/multimedia-video-player.svg" />
+                                Videos
+                            </li>
+                        </a>
+                        <a href="#showcase-calendar">
+                            <li class="read-more">
+                                <img src="images/icons/launcher-icons/4x.png" />
+                                Calendar
+                            </li>
+                        </a>
+                        <a href="#showcase-files">
+                            <li class="read-more">
+                                <img src="images/icons/system-file-manager.svg" />
+                                Files
+                            </li>
+                        </a>
+                        <a href="#showcase-terminal">
+                            <li class="read-more">
+                                <img src="images/icons/utilities-terminal.svg" />
+                                Terminal
+                            </li>
+                        </a>
+                        <a href="#showcase-scratch">
+                            <li class="read-more">
+                                <img src="images/icons/accessories-text-editor.svg" />
+                                Scratch
+                            </li>
+                        </a>
+                        <a href="#showcase-camera">
+                            <li class="read-more">
+                                <img src="images/icons/accessories-camera.svg" />
+                                Camera
+                            </li>
+                        </a>
+                    </ul>
                 </div>
-                <div class="slide-container">
-                    <div id="photos" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/photos.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/multimedia-photo-manager.svg" />
-                                </div>
-                                <div class="column alert">
-                                    <h3>Photos</h3>
-                                    <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="showcase-tab" id="showcase-music">
+                    <div>
+                        <img src="images/screenshots/music.png" alt="music screenshot" />
                     </div>
-                    <div id="music" class="slide">
-                        <div class="row">
-                          <div class="column">
-                              <img src="images/screenshots/music.png" />
-                          </div>
-                          <div class="column">
-                              <div class="column alert">
-                                  <img src="images/icons/multimedia-audio-player.svg" />
-                              </div>
-                              <div class="column alert">
-                                  <h3>Music</h3>
-                                  <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
-                              </div>
-                          </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-audio-player.svg" alt="music icon" />
                         </div>
-                    </div>
-                    <div id="videos" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/videos.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/multimedia-video-player.svg" />
-                                </div>
-                                <div class="column alert">
-                                    <h3>Videos</h3>
-                                    <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="midori" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/midori.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/midori.svg" />
-                                </div>
-                                <div class="column alert">
-                                    <h3>Midori</h3>
-                                    <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a class="read-more" href="http://midori-browser.org">Learn More</a></p>
-                                </div>
-                            </div>
+                        <div class="column">
+                            <h2>Music</h2>
+                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
                         </div>
                     </div>
                 </div>

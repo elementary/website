@@ -87,138 +87,104 @@ input:focus + .focus-reveal {
     opacity: 0.65;
 }
 
-#carousel {
-    background-color: #000d1d;
-    background-image: linear-gradient(to bottom, #000d1d, #103049);
-    color: #fff;
-    overflow: hidden;
+/***********
+* showcase *
+***********/
+
+#showcase {
+    background-color: #fafafa;
+    max-width: none;
+    padding: 48px 0;
     position: relative;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-#carousel a.read-more {
-    color: inherit;
-    font-weight: 700;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-#carousel > .row + .row {
-    padding-top: 0;
-}
-
-#carousel-choices {
-    margin-bottom: 0;
-}
-
-#carousel-choices .button {
-    line-height: 16px;
-    padding: 8px 16px;
-    min-width: initial;
-}
-
-#carousel-choices svg {
-    vertical-align: middle;
-}
-
-#carousel-choices .label {
-    display: none;
-}
-
-#carousel .slide > .row {
-    max-width: 100%;
-    padding-top: 0;
-}
-
-#carousel .slide > .row > .column {
-    margin-left: 16px;
-    margin-right: 16px;
-    vertical-align: top;
+#showcase > div {
     display: block;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 24px;
 }
 
-#carousel .slide> .row .column.alert img {
-    height: 64px;
+#showcase #showcase-grid {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#showcase #showcase-grid li {
+    display: inline-block;
+    padding: 0;
+    margin: 32px;
+}
+
+#showcase #showcase-grid img {
+    display: block;
+    width: 64px;
+    margin: 12px;
+}
+
+#showcase #showcase-grid a {
+    color: inherit;
+}
+
+#showcase.initialized > div.showcase-tab {
+    padding-left: 64px;
+}
+
+#showcase > div.showcase-tab > div:last-child {
+    display: block;
+    margin: auto;
+}
+
+#showcase > div.showcase-tab > div:last-child > div {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+#showcase > div.showcase-tab > div:last-child > div:first-child {
+    margin-bottom: 16px;
     width: 64px;
 }
 
-#carousel .slide > .row > .column:first-child {
-    margin: 0;
+#showcase > div.showcase-tab > div:last-child > div:last-child {
+    max-width: 450px;
 }
 
-#carousel .slide > .row > .column .column:nth-child(2) {
-    max-width: 256px;
+#showcase.initialized > div.showcase-tab > .showcase-back {
+    background-image: url("../images/back-arrow.png");
+    cursor: pointer;
+    height: 42px;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
 }
 
-@media (max-width: 404px) {
-
-    #carousel .slide > .row > .column:nth-child(2) {
-      margin-top: -48px;
-    }
-
+#showcase.initialized {
+    transition: height 0.15s ease-in-out;
 }
 
-@media (min-width: 434px) {
-
-    #carousel-choices .button {
-        line-height: initial;
-        min-width: 100px;
-    }
-
-    #carousel-choices .label {
-        display: initial;
-    }
-
-    #carousel-choices svg {
-        display: none;
-    }
-
+#showcase.initialized > div {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 0.15s ease-in-out;
+    width: 100%;
 }
 
-@media (min-width: 1400px) {
-
-    #carousel {
-        background-image: url("../images/screenshots/background.jpg");
-        background-size: cover;
-        min-height: 100vh;
-    }
-
-    #carousel .slide > .row {
-        padding-top: 28px;
-    }
-
-    #carousel .slide > .row > .column {
-        display: inline-block;
-    }
-
-    #carousel .slide > .row > .column:nth-child(2) {
-        margin-top: 60px;
-        margin-right: 0;
-    }
-
-    #carousel .slide > .row > .column .column:nth-child(2) {
-        max-width: 236px;
-    }
-
+#showcase.initialized > div#showcase-index {
+    left: -50%;
 }
 
-@media (min-width: 1400px) {
-
-    #carousel .slide > .row {
-        padding: 48px 24px;
-    }
-
-    #carousel .slide > .row > .column:nth-child(2) {
-        margin-right: 16px;
-    }
-
-    #carousel .slide > .row > .column .column:nth-child(2) {
-        max-width: 256px;
-    }
-
+#showcase.initialized > div.showcase-tab {
+    left: 150%;
 }
 
-.vertical-top {
-    vertical-align: top;
+#showcase.initialized > div#showcase-index.active,
+#showcase.initialized > div.active {
+    left: 50%;
 }
 
 /************
@@ -226,7 +192,6 @@ input:focus + .focus-reveal {
 ************/
 
 #appcenter {
-    background-color: #fafafa;
     max-width: none;
     overflow: hidden;
 }

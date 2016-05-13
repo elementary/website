@@ -159,12 +159,27 @@ $(function () {
         }
     }
 
-    // Carousel
-    var appCarousel = new Slider({
-      slideContainer: '.slide-container',
-      choiceContainer: '#carousel-choices',
-      slides: ['photos', 'music', 'videos', 'midori'],
-      fixed: true
+    // Showcase
+    var showcase = new Showcase({
+      container: '#showcase',
+      index: '#showcase-index',
+      slides: [
+        'showcase-music',
+        'showcase-midori',
+        'showcase-mail',
+        'showcase-photos',
+        'showcase-videos',
+        'showcase-calendar',
+        'showcase-terminal',
+        'showcase-scratch',
+        'showcase-camera'
+      ],
+      fixed: false
+    });
+
+    $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
+      e.preventDefault()
+      showcase.slideTo('index');
     });
 
     $(function() {
