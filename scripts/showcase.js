@@ -37,18 +37,21 @@
         });
 
         $(window).on("hashchange", function(e) {
-            if (that.current !== 'index') {
+            var hash = window.location.hash.split('#')[1]
+            if (that.slides.indexOf(hash) !== -1) {
+              that.slideTo(hash)
+            } else if (that.current !== 'index') {
                 that.slideTo('index');
             }
         });
 
-        $(this.container).addClass('initialized');
+        $(that.container).addClass('initialized');
 
         var hash = window.location.hash.split('#')[1]
-        if (this.slides.indexOf(hash) !== -1) {
-            this.slideTo(hash);
+        if (that.slides.indexOf(hash) !== -1) {
+            that.slideTo(hash);
         } else {
-            this.slideTo('index');
+            that.slideTo('index');
         }
     };
 
@@ -80,16 +83,18 @@
         };
 
         if (rSlide === 'index') {
-            var location = window.location.href.split("#")[0]
+            window.history.replaceState(undefined, undefined, '.')
         } else {
-            var location = window.location.href.split("#")[0] + "#" + rSlide
-        }
-
-        if (rSlide !== 'index') {
-            window.history.pushState(undefined, undefined, location);
+            window.history.pushState(undefined, undefined, '#' + rSlide);
         }
 
         this.current = rSlide;
+
+        if (this.current !== 'index') {
+            $("body").animate({
+                scrollTop: $(this.container).offset().top
+            }, 100);
+        }
 
         this.resize(); // resize the container
     };

@@ -95,19 +95,27 @@ input:focus + .focus-reveal {
     max-width: none;
     padding: 48px 0;
     position: relative;
+    overflow: hidden;
 }
 
 #showcase > div {
     display: block;
     margin: auto;
-    max-width: 1200px;
+    width: 100%;
     padding: 0 24px;
+}
+
+#showcase p {
+    margin: auto;
+    max-width: 600px;
 }
 
 #showcase #showcase-grid {
     list-style: none;
-    text-align: center;
+    margin: auto;
+    max-width: 800px;
     padding: 0;
+    text-align: center;
 }
 
 #showcase #showcase-grid li {
@@ -126,8 +134,8 @@ input:focus + .focus-reveal {
     color: inherit;
 }
 
-#showcase.initialized > div.showcase-tab {
-    padding-left: 64px;
+#showcase > div.showcase-tab {
+    padding-bottom: 64px;
 }
 
 #showcase > div.showcase-tab > div:last-child {
@@ -141,13 +149,10 @@ input:focus + .focus-reveal {
     vertical-align: top;
 }
 
-#showcase > div.showcase-tab > div:last-child > div:first-child {
+#showcase > div.showcase-tab > div:last-child img {
+    height: 64px;
     margin-bottom: 16px;
-    width: 64px;
-}
-
-#showcase > div.showcase-tab > div:last-child > div:last-child {
-    max-width: 450px;
+    width: auto;
 }
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
@@ -156,8 +161,7 @@ input:focus + .focus-reveal {
     height: 42px;
     left: 20px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: calc(50% - 21px);
     width: 20px;
 }
 
@@ -167,23 +171,22 @@ input:focus + .focus-reveal {
 
 #showcase.initialized > div {
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     transition: left 0.15s ease-in-out;
     width: 100%;
 }
 
 #showcase.initialized > div#showcase-index {
-    left: -50%;
+    left: -100%;
 }
 
 #showcase.initialized > div.showcase-tab {
-    left: 150%;
+    left: 100%;
+    padding: 0 24px 32px 64px;
 }
 
 #showcase.initialized > div#showcase-index.active,
 #showcase.initialized > div.active {
-    left: 50%;
+    left: 0%;
 }
 
 /************

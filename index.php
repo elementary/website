@@ -79,74 +79,22 @@
             <div id="showcase" class="row grey">
                 <div id="showcase-index">
                     <h2>Full Of Style And Content.</h2>
-                    <p>elementary ships -a handfull of- apps designed to be easy to use, without missing features. Something something something, super awesome!</p>
+                    <p>We have apps. We have the best apps. Our apps have won awards. Take a look at our binder of awards.</p>
                     <ul id="showcase-grid">
-                        <a href="#showcase-music">
-                            <li class="read-more">
-                              <img src="images/icons/multimedia-audio-player.svg" />
-                              Music
-                            </li>
-                        </a>
-                        <a href="#showcase-midori">
-                            <li class="read-more">
-                                <img src="images/icons/midori.svg" />
-                                Midori
-                            </li>
-                        </a>
-                        <a href="#showcase-mail">
-                            <li class="read-more">
-                                <img src="images/icons/internet-mail.svg" />
-                                Mail
-                            </li>
-                        </a>
-                        <a href="#showcase-photos">
-                            <li class="read-more">
-                                <img src="images/icons/multimedia-photo-manager.svg" />
-                                Photos
-                            </li>
-                        </a>
-                        <a href="#showcase-videos">
-                            <li class="read-more">
-                                <img src="images/icons/multimedia-video-player.svg" />
-                                Videos
-                            </li>
-                        </a>
-                        <a href="#showcase-calendar">
-                            <li class="read-more">
-                                <img src="images/icons/office-calendar.svg" />
-                                Calendar
-                            </li>
-                        </a>
-                        <a href="#showcase-files">
-                            <li class="read-more">
-                                <img src="images/icons/system-file-manager.svg" />
-                                Files
-                            </li>
-                        </a>
-                        <a href="#showcase-terminal">
-                            <li class="read-more">
-                                <img src="images/icons/utilities-terminal.svg" />
-                                Terminal
-                            </li>
-                        </a>
-                        <a href="#showcase-scratch">
-                            <li class="read-more">
-                                <img src="images/icons/accessories-text-editor.svg" />
-                                Scratch
-                            </li>
-                        </a>
-                        <a href="#showcase-camera">
-                            <li class="read-more">
-                                <img src="images/icons/accessories-camera.svg" />
-                                Camera
-                            </li>
-                        </a>
+                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
+                        <a href="#showcase-midori"><li class="read-more"><img src="images/icons/midori.svg" />Midori</li></a>
+                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/internet-mail.svg" />Mail</li></a>
+                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/multimedia-photo-manager.svg" />Photos</li></a>
+                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/multimedia-video-player.svg" />Videos</li></a>
+                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/office-calendar.svg" />Calendar</li></a>
+                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/system-file-manager.svg" />Files</li></a>
+                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/utilities-terminal.svg" />Terminal</li></a>
+                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/accessories-text-editor.svg" />Scratch</li></a>
+                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/accessories-camera.svg" />Camera</li></a>
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
-                    <div>
-                        <img src="images/screenshots/music.png" alt="music screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/music.png" alt="music screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/multimedia-audio-player.svg" alt="music icon" />
@@ -158,9 +106,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-midori">
-                    <div>
-                        <img src="images/screenshots/midori.png" alt="midori screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/midori.png" alt="midori screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/midori.svg" alt="midori icon" />
@@ -172,9 +118,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
-                    <div>
-                        <img src="images/screenshots/mail.png" alt="mail screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/mail.png" alt="mail screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/internet-mail.svg" alt="mail icon" />
@@ -186,9 +130,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
-                    <div>
-                        <img src="images/screenshots/photos.png" alt="photos screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/photos.png" alt="photos screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/multimedia-photo-manager.svg" alt="photos icon" />
@@ -200,9 +142,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
-                    <div>
-                        <img src="images/screenshots/videos.png" alt="videos screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/videos.png" alt="videos screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
@@ -214,9 +154,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
-                    <div>
-                        <img src="images/screenshots/calendar.png" alt="calendar screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/calendar.png" alt="calendar screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/office-calendar.svg" alt="calendar icon" />
@@ -228,9 +166,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-files">
-                    <div>
-                        <img src="images/screenshots/files.png" alt="files screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/files.png" alt="files screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/system-file-manager.svg" alt="files icon" />
@@ -242,9 +178,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
-                    <div>
-                        <img src="images/screenshots/terminal.png" alt="terminal screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/terminal.png" alt="terminal screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
@@ -256,9 +190,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
-                    <div>
-                        <img src="images/screenshots/scratch.png" alt="scratch screenshot" />
-                    </div>
+                    <div><img src="images/screenshots/scratch.png" alt="scratch screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
@@ -266,6 +198,18 @@
                         <div class="column">
                             <h2>Scratch</h2>
                             <p>With it's great looks, and extensive plugin support, Scratch will be the last text editor you will ever need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-camera">
+                    <div><img src="images/screenshots/camera.png" alt="camera screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/accessories-camera.svg" alt="camera icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Camera</h2>
+                            <p>Something about you being beautiful and something.</p>
                         </div>
                     </div>
                 </div>
