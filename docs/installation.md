@@ -106,13 +106,13 @@ Verifying your download is an important, but optional step. We generate a checks
 
 #### 32-bit
 
-Running the following command in your terminal:
+Running the following command in your Terminal:
 
 ```bash nohighlight
 shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-i386.20151209.iso
 ```
 
-should produce the output:
+Should produce the output:
 
 ```bash nohighlight
 97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
@@ -120,13 +120,13 @@ should produce the output:
 
 #### 64-bit
 
-Running the following command in your terminal:
+Running the following command in your Terminal:
 
 ```bash nohighlight
 shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-amd64.20151209.iso
 ```
 
-should produce the output:
+Should produce the output:
 
 ```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
@@ -141,23 +141,28 @@ shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.3.2-stable-amd64.20
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-Before creating an install drive, make sure you have all OS X updates installed. To check for available updates, open the Apple Menu and select either "Software Update&#8230;" or "App Store&#8230;" Make sure to install any OS updates in addition to ones labeled with "Firmware" and "Boot Camp".
+To create an elementary OS install drive on OS X you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
 
-You'll need a USB flash drive with at least 1 GB of free space and a program called "Create elementary Installer".
+<a href="http://www.etcher.io/" class="button suggested-action">Download Etcher</a>
 
-<a href="https://github.com/linusbobcat/create-elementary-os-installer/releases/" class="button suggested-action">Download Create elementary Installer</a>
+1. Insert the spare USB drive, and select the ISO file you've just downloaded.
+2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
 
+    ![Select image in Etcher](images/docs/installation/etcher_osx_select.png)
 
-1. Open "Create elementary Installer". If your Mac cannot open it because it's from an unidentifiable developer, right click the app, and select "Open".
-2. Insert the spare USB drive, and select the ISO file you've just downloaded.
+3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
+4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
 
-    ![Create elementary OS USB Installer](images/docs/installation/osx_select_iso.png)
+    ![Flash image in Etcher](images/docs/installation/etcher_osx_flash.png)
 
-3. Select your USB drive to start the installer creation process.
+5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
 
-    ![Select USB Drive](images/docs/installation/osx_select_drive.png)
+    ![Flash image in Etcher](images/docs/installation/etcher_osx_complete.png)
 
-If your Mac doesn't recognize the resulting drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-freya-xx.xx.iso to Disc".
+The following dialog may appear during the flashing process, it is safe to ignore.
+
+![Not readable warning](images/docs/installation/osx_warning.png) 
+
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -166,6 +171,10 @@ In order to start the installation process, you must boot your computer from the
 * Assuming that your computer is still on, start by inserting your install drive and restarting your computer.
 * After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as "Windows", but this is normal.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
+
+#### Boot Errors
+
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-freya-xx.xx.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
