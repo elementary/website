@@ -133,6 +133,12 @@ function amplifier_product() {
         'XXL' => 'Extra Extra Large'
     ];
 
+    // averate weight of category in kilgograms
+    $weights = [
+        'apparel' => 0.15,
+        'stickers' => 0.01
+    ];
+
     foreach ($data as $key => &$value) {
         $sorted[$value['id']] = $value;
 
@@ -151,6 +157,10 @@ function amplifier_product() {
 
         if (isset($product['color'])) {
             array_push($name_array, $product['color']);
+        }
+
+        if (!isset($product['weight']) && isset($weights[$product['category']])) {
+            $product['weight'] = $weights[$product['category']];
         }
 
         array_push($name_array, $product['name']);

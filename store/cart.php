@@ -83,6 +83,7 @@
 
             <label for="country">Country</label>
             <select name="country" autocomplete="country">
+                <!--
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
                 <option value="AL">Albania</option>
@@ -316,7 +317,9 @@
                 <option value="UI">Union Island</option>
                 <option value="AE">United Arab Emirates</option>
                 <option value="GB">United Kingdom</option>
+                -->
                 <option value="US">United States</option>
+                <!--
                 <option value="UY">Uruguay</option>
                 <option value="VI">US Virgin Islands</option>
                 <option value="UZ">Uzbekistan</option>
@@ -331,6 +334,7 @@
                 <option value="YE">Yemen</option>
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabwe</option>
+                -->
             </select>
         </div>
 

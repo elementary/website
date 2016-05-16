@@ -14,18 +14,34 @@
     $address->setAddressLine1($_POST['address-line1']);
     $address->setAddressLine2($_POST['address-line2']);
     $address->setCity($_POST['address-level2']);
+    $address->setStateProvinceCode($_POST['address-level1']);
     $address->setCountryCode($_POST['country']);
     $address->setPostalCode($_POST['postal-code']);
 
-    $xav = new \Ups\AddressValidation($config['ups_access'], $config['ups_user'], $config['ups_password']);
-
     try {
-        $response = $xav->validate($address);
-    } catch (Exception $e) {
-        var_dump($e);
-    }
+        $xav = new \Ups\AddressValidation($config['ups_access'], $config['ups_user'], $config['ups_password']);
+        $xav->activateReturnObjectOnValidate();
+        $response = $xav->validate($address, $requestOption = \Ups\AddressValidation::REQUEST_OPTION_ADDRESS_VALIDATION, $maxSuggestion = 1);
 
-    print_r($response);
+        if ($response->isValid()) {
+            $valid = $response->getValidatedAddress();
+            $address->setAddressLine1($valid->getAddressLine(1));
+            $address->setAddressLine2($valid->getAddressLine(2));
+            $address->setAddressLine3($valid->getAddressLine(3));
+            $address->setCity($valid->getCity());
+            $address->setStateProvinceCode($valid->getStateProvince());
+            $address->setPostalCode($valid->getPostalCode());
+        } else if ($response->isAmbiguous()) {
+            $possibles = $response->getCandidateAddressList();
+            print_r("==== POSS ====");
+            print_r($possibles[0]);
+            $address = $possibles[0];
+        } else if ($response->noCandidates()) {
+            // Notify user the address might be wrong
+        }
+    } catch (Exception $e) {
+        // Notify user unable to verify address (similar to above)
+    }
 ?>
 
 <hr>
@@ -43,11 +59,24 @@
     $to->setAddress($address);
     $shipment->setShipTo($to);
 
-    // TODO: what are polybags under for UPS API?
+    $cart = json_decode($_COOKIE['cart'], true);
+    $weight = 0;
+    print_r($cart);
+    foreach($cart as $id => $product) {
+        if (isset($product['weight'])) {
+            $weight = bcadd($weight, $product['weight']);
+        } else {
+            // oh god, an unknown weight. how to rate shipping?
+        }
+    }
+
+    $kg = new \Ups\Entity\UnitOfMeasurement;
+    $kg->setCode(\Ups\Entity\UnitOfMeasurement::UOM_KGS);
 
     $package = new \Ups\Entity\Package();
     $package->getPackagingType()->setCode(\Ups\Entity\PackagingType::PT_UNKNOWN);
-    $package->getPackageWeight()->setWeight(10);
+    $package->getPackageWeight()->setUnitOfMeasurement($kg);
+    $package->getPackageWeight()->setWeight($weight);
     $shipment->addPackage($package);
 
     $rate = new \Ups\Rate($config['ups_access'], $config['ups_user'], $config['ups_password']);
@@ -60,7 +89,6 @@
 
     print_r($response);
 ?>
-
 
 <?php
     include $template['footer'];
