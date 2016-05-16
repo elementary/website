@@ -22,7 +22,7 @@ $serverRoot = $_SERVER['DOCUMENT_ROOT'];
 $websiteRoot = dirname(__DIR__);
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$sitewide['root'] = '';
+$sitewide['root'] = '/';
 $sitewide['path'] = $requestUri;
 if ($serverRoot == $websiteRoot) {
 	$sitewide['root'] = '/';
