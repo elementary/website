@@ -93,9 +93,9 @@ input:focus + .focus-reveal {
 
 #showcase {
     max-width: none;
-    padding: 48px 0;
-    position: relative;
     overflow: hidden;
+    padding: 0;
+    position: relative;
 }
 
 #showcase > div {
@@ -108,6 +108,10 @@ input:focus + .focus-reveal {
 #showcase p {
     margin: auto;
     max-width: 600px;
+}
+
+#showcase #showcase-index {
+    padding: 48px 0;
 }
 
 #showcase #showcase-grid {
@@ -136,15 +140,30 @@ input:focus + .focus-reveal {
 
 #showcase > div.showcase-tab {
     padding-bottom: 64px;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 #showcase > div.showcase-tab > div:last-child {
-    display: block;
-    margin: auto;
+    order: -1;
+    padding: 64px 0 0 0;
+}
+
+@media (max-width: 1000px) {
+    #showcase > div.showcase-tab > div:last-child {
+        order: 2;
+        padding: 0 0 32px 0;
+    }
 }
 
 #showcase > div.showcase-tab > div:last-child > div {
-    display: inline-block;
     text-align: left;
     vertical-align: top;
 }
@@ -157,12 +176,14 @@ input:focus + .focus-reveal {
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
     background-image: url("../images/back-arrow.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
     cursor: pointer;
-    height: 42px;
-    left: 20px;
+    height: 100%;
+    left: 0;
     position: absolute;
-    top: calc(50% - 21px);
-    width: 20px;
+    top: 0;
+    width: 64px;
 }
 
 #showcase.initialized {
@@ -187,6 +208,347 @@ input:focus + .focus-reveal {
 #showcase.initialized > div#showcase-index.active,
 #showcase.initialized > div.active {
     left: 0%;
+}
+
+/***********************
+* CSS Pantheon Windows *
+***********************/
+
+#showcase .window {
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    background-color: #f5f5f5;
+    border: 1px solid #333;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+    color: #333;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-family: "Open Sans";
+    font-size: 9pt;
+    height: 50vh;
+    margin: 80px auto;
+    max-height: 700px;
+    max-width: 970px;
+    width: 65vw;
+}
+
+#showcase .window button {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    transition: none;
+}
+
+#showcase .window h1,
+#showcase .window h2,
+#showcase .window h3,
+#showcase .window h4,
+#showcase .window h5,
+#showcase .window h6,
+#showcase .window p {
+    padding: 0;
+    margin: 0;
+}
+
+#showcase .window .icon {
+    position: relative;
+}
+
+#showcase .titlebar {
+    box-sizing: padding-box;
+    border-radius: 4.5px 4.5px 0 0;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 0 rgba(255,255,255,0.05);
+    cursor: default;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-weight: 700;
+    padding: 6px 4px 5px 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#showcase .titlebar,
+#showcase .titlebar * {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#showcase .titlebar button {
+    background: transparent;
+    border-radius: 50%;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 3px;
+    text-shadow: 0 1px rgba(255,255,255,0.4);
+    width: auto;
+}
+
+#showcase .titlebar button:active {
+    background-color: rgba(51,51,51,0.15);
+}
+
+#showcase .titlebar button.control:active {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #272b2d inset, 0 1px rgba(76,88,94,0.4);
+}
+
+#showcase .titlebar span.title {
+    display: block;
+    margin: 0 12px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#showcase .tabbar {
+    cursor: default;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 30px;
+    padding: 0 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#showcase .tabbar,
+#showcase .tabbar * {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#showcase .tabbar button {
+    background: transparent;
+    border-radius: 4px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 2px 2px 1px 2px;
+}
+
+#showcase .tabbar .tabs {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    height: 100%;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    padding: 0 4px;
+}
+
+#showcase .tabbar .tabs .tab {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    border-width: 0 1px 0 1px;
+    height: 100%;
+    padding: 0 4px;
+    text-align: center;
+    width: 175px;
+}
+
+#showcase .tabbar .tabs .tab button {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+#showcase .tabbar .tabs .tab span:not(.icon) {
+    display: block;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 12px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/****************************
+* CSS Dark Pantheon Windows *
+****************************/
+
+#showcase .dark.window {
+    background-color: #363b3e;
+    border-color: #141414;
+    color: #c0c6c4;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+}
+
+#showcase .dark.window .titlebar {
+    background: linear-gradient(to bottom, #3a4144, #323739);
+    border-bottom: 1px solid #222426;
+    color: #89908f;
+    fill: #89908f;
+}
+
+#showcase .dark.window .titlebar .icon {
+    -webkit-filter: drop-shadow(0px 1px 0 rgba(0,0,0,0.3));
+    filter: drop-shadow(0px 1px 0 rgba(0,0,0,0.3));
+}
+
+#showcase .dark.window .titlebar button:not(.control):active {
+    background-color: #4c585e;
+}
+
+#showcase .dark.window.active .titlebar {
+    color: #acb3b1;
+    fill: #acb3b1;
+}
+
+#showcase .dark.window .tabbar {
+    background: linear-gradient(to bottom, #2f3436, #323639);
+    border-bottom: 1px solid #222426;
+    box-shadow: 0 2px 2px rgba(51,51,51,0.3) inset;
+    fill: #595959;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+}
+
+#showcase .dark.window .tabbar button:active:not(:disabled) {
+    background-color: rgba(200,200,200,0.15);
+}
+
+#showcase .dark.window .tabbar .tab.active {
+    background: linear-gradient(to bottom, #323639, #303436);
+    border-color: #1f2122;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02), inset 0 1px 0 0 rgba(255,255,255,0.02);
+}
+
+#showcase .dark.window .tabbar .tab:not(.active):not(:hover) .icon[icon='actions/close'] {
+    fill: transparent;
+}
+
+#showcase .dark.window .tabbar .icon {
+    -webkit-filter: drop-shadow(0px 1px 0 rgba(0,0,0,0.3));
+    filter: drop-shadow(0px 1px 0 rgba(0,0,0,0.3));
+}
+
+#showcase .dark.window .tabbar .icon:not([icon="actions/document-open-recent"]) {
+    fill: #808885;
+}
+
+/********************************
+* CSS Pantheon Terminal Windows *
+********************************/
+
+#showcase .window[type="terminal"] {
+    background-color: rgba(37,46,50,0.95);
+}
+
+#showcase .window[type="terminal"] button.search {
+    margin-right: 16px;
+}
+
+#showcase .window[type="terminal"] .input {
+    color: #94a3a5;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-family: "Roboto Mono";
+    font-size: 10pt;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 2px;
+    text-align: left;
+    text-shadow: none;
+    width: 100%;
+}
+
+#showcase .window[type="terminal"] .input > span {
+    display: block;
+}
+
+#showcase .window[type="terminal"] .input > span > span {
+    word-wrap: break-word;
+}
+
+#showcase .window[type="terminal"] .input > span:last-child .input:after {
+    background-color: #94a3a5;
+    content: "\0019";
+    display: inline-block;
+    width: 8px;
+    -webkit-animation: cursor 1.2s infinite;
+    animation: cursor 1.2s infinite;
+}
+
+@-webkit-keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cursor {
+  0% {
+      opacity: 1;
+  }
+  49% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
 }
 
 /************

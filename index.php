@@ -15,6 +15,8 @@
             <script>var download_region = '<?php echo $region; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
+                jQl.loadjQdep('scripts/bluebird.min.js');
+                jQl.loadjQdep('scripts/terminal.js');
                 jQl.loadjQdep('scripts/homepage.js');
             </script>
 
@@ -178,7 +180,41 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
-                    <div><img src="images/screenshots/terminal.png" alt="terminal screenshot" /></div>
+                    <div>
+                        <div class="window dark" type="terminal">
+                            <div class="titlebar">
+                                <button class="control">
+                                    <span class="icon" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
+                                </button>
+                                <span class="title">Home</span>
+                                <div>
+                                    <button class="search">
+                                        <span class="icon" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
+                                    </button>
+                                    <button class="control">
+                                        <span class="icon" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabbar">
+                                <button>
+                                    <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
+                                </button>
+                                <div class="tabs">
+                                    <div class="tab active">
+                                        <button>
+                                            <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
+                                        </button>
+                                        <span class="title">Home</span>
+                                    </div>
+                                </div>
+                                <button disabled>
+                                    <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                                </button>
+                            </div>
+                            <div class="input"></div>
+                        </div>
+                    </div>
                     <div>
                         <div class="column">
                             <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />

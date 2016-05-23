@@ -12,6 +12,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -108,7 +109,7 @@ p.small-label {
 
 q {
     font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -118,10 +119,10 @@ q:after {
     content: none;
 }
 
-@media (max-width: 414px) {
+@media (min-width: 414px) {
 
     q {
-        font-size: 24px;
+        font-size: 36px;
     }
 
 }
@@ -217,18 +218,11 @@ nav {
 }
 
 nav > .nav-content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 3px;
 }
 
 nav > .nav-content > ul {
@@ -294,74 +288,62 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
-@media only screen and (max-width: 520px) { /* this media query is for ie-legacy support */
+/**************
+* Body Layout *
+**************/
 
-    html.ie-legacy nav {
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
-
-    html.ie-legacy nav > .nav-content {
-        overflow: visible;
-        white-space: nowrap;
-        width: 550px;
-    }
-
-    html.ie-legacy nav > .nav-content > .right {
-        float: left;
-    }
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-/*********
-* Layout *
-**********/
-
 #content-container {
-    min-height: 90vh;
+    flex-grow: 1;
 }
 
 footer {
     color: inherit;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
+    justify-content: center;
     padding-top: 24px;
     text-align: center;
+    align-items: center;
 }
 
-footer > p,
-footer > div > a,
+footer > * {
+    padding: 6px 12px;
+    margin: 0;
+}
+
+@media (min-width: 650px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    footer > * {
+        padding: 0 12px;
+    }
+}
+
+footer > div > * {
+    display: inline-block;
+}
+
+footer > div > p,
+footer > div > div > a,
 footer > ul {
     opacity: 0.8;
-}
-
-footer > p {
-    padding: 0 12px;
     text-align: center;
-}
-
-footer > ul {
     list-style: none;
-    padding: 0 12px;
 }
 
 footer .popover {
-    margin: 12px 0;
+    margin-left: 12px;
 }
 
-@media (min-width: 375px) {
-
-    footer > p,
-    footer > .popover {
-        float: left;
-    }
-
-    footer > ul {
-        float: right;
-    }
-
-}
-
-footer ul li {
+footer > ul li {
     display: inline-block;
 }
 
@@ -386,6 +368,10 @@ footer a:focus i.fa {
 footer ul li a:focus {
     outline: none;
 }
+
+/*********
+* Layout *
+*********/
 
 .column {
     display: inline-block;
@@ -1015,10 +1001,10 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content {
-    background: white;
     background-clip: content-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #333;
@@ -1067,26 +1053,11 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content ul {
+    height: 50vh;
     margin: 5px 0;
     max-height: 500px;
     overflow: auto;
     padding: 0;
-}
-
-@media (max-height: 700px) {
-
-    .popover .popover-content ul {
-        max-height: 300px;
-    }
-
-}
-
-@media (max-height: 450px) {
-
-    .popover .popover-content ul {
-        max-height: 200px;
-    }
-
 }
 
 .popover .popover-content ul li {

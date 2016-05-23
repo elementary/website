@@ -160,27 +160,35 @@ $(function () {
     }
 
     // Showcase
-    var showcase = new Showcase({
-      container: '#showcase',
-      index: '#showcase-index',
-      slides: [
-        'showcase-music',
-        'showcase-midori',
-        'showcase-mail',
-        'showcase-photos',
-        'showcase-videos',
-        'showcase-calendar',
-        'showcase-files',
-        'showcase-terminal',
-        'showcase-scratch',
-        'showcase-camera'
-      ],
-      fixed: false
-    });
+    $(function() {
+      var showcase = new Showcase({
+        container: '#showcase',
+        index: '#showcase-index',
+        slides: [
+          'showcase-music',
+          'showcase-midori',
+          'showcase-mail',
+          'showcase-photos',
+          'showcase-videos',
+          'showcase-calendar',
+          'showcase-files',
+          'showcase-terminal',
+          'showcase-scratch',
+          'showcase-camera'
+        ],
+        fixed: false
+      });
 
-    $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
-      e.preventDefault()
-      showcase.slideTo('index');
+      var terminal = new Terminal();
+
+      $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
+        e.preventDefault()
+        showcase.slideTo('index');
+      });
+
+      $('#showcase #showcase-terminal').on('change', function(e) {
+        console.log('testing')
+      })
     });
 
     $(function() {
