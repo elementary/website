@@ -89,6 +89,9 @@
         }
 
         this.current = rSlide;
+        $(this.container).trigger('change', {
+          active: rSlide
+        });
 
         if (this.current !== 'index') {
             $("body").animate({

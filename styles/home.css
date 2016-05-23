@@ -551,6 +551,123 @@ input:focus + .focus-reveal {
   }
 }
 
+/************************************
+* CSS Pantheon Notification Windows *
+************************************/
+
+#showcase #notification-container {
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    max-width: 340px;
+}
+
+#showcase .window[type="notification"] {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), inset 0 1px 0 0 rgba(255,255,255,0.9), inset 0 -1px 0 0 rgba(255,255,255,0.3), 0 0 0 1px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.16), 0 5px 5px -3px rgba(0,0,0,0.4);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+    min-height: 56px;
+    opacity: 0;
+    padding: 4px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    position: relative;
+    right: 0;
+    -webkit-transform: rotateX(-180deg) skew(40deg, 0deg);
+    transform: rotateX(-180deg) skew(40deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 300px;
+    height: auto;
+    border: none;
+}
+
+#showcase .window.active[type="notification"] {
+    -webkit-animation: notification 3.5s ease;
+    animation: notification 3.5s ease;
+}
+
+#showcase .window[type="notification"]:hover:before {
+    display: block;
+    opacity: 1;
+}
+
+#showcase .window[type="notification"] span.icon svg {
+    width: 48px;
+}
+
+#showcase .window[type="notification"] h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    opacity: 1;
+    padding: 4px 6px 3px 6px;
+    text-align: left;
+}
+
+#showcase .window[type="notification"] p {
+    color: #333;
+    font-size: 12px;
+    margin: 0;
+    padding: 0px 6px 6px 6px;
+    word-break: break-all;
+}
+
+@-webkit-keyframes notification {
+    10% {
+        -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
+        transform: rotateX(0deg) skew(0deg, 0deg);
+        opacity: 1;
+    }
+
+    95% {
+        right: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: -150%;
+        -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
+        transform: rotateX(0deg) skew(0deg, 0deg);
+    }
+}
+
+@keyframes notification {
+    10% {
+        -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
+        transform: rotateX(0deg) skew(0deg, 0deg);
+        opacity: 1;
+    }
+
+    95% {
+        right: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: -150%;
+        -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
+        transform: rotateX(0deg) skew(0deg, 0deg);
+    }
+}
+
+
 /************
 * appcenter *
 ************/

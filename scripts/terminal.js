@@ -185,7 +185,7 @@ var Terminal = function () {
 
     this.w = w;
     this.title = 'Home';
-    this.user = 'user';
+    this.user = 'ellie';
     this.host = 'elementary';
     this.folder = '/home/' + this.user;
 
@@ -199,6 +199,9 @@ var Terminal = function () {
 
     this.$w = $(w);
     this.$i = $('.input', this.$w);
+
+    this.activeChecked = new Date();
+    this.activeTimer = null;
 
     this.handle();
     this.prompt();
@@ -216,16 +219,13 @@ var Terminal = function () {
     value: function handle() {
       var _this = this;
 
-      this.$w.on('click', function (e) {
-        if (_this.$w.has(e.target).length > 0) {
-          _this.$w.addClass('active');
-        } else {
-          _this.$w.removeClass('active');
-        }
+      $(window).on('scroll', function (e) {
+        _this.activeCheck();
       });
 
       $(window).on('resize', function (e) {
-        _this.$i.trigger('scroll');
+        _this.activeCheck();
+        _this.$i.trigger('move');
       });
 
       $(window).on('keydown', function (e) {
@@ -246,12 +246,42 @@ var Terminal = function () {
         if (!_this.$w.hasClass('active')) return;
 
         _this.keyper(e.which);
-        _this.$i.trigger('scroll');
+        _this.$i.trigger('move');
       });
 
-      this.$i.on('scroll', function () {
+      this.$i.on('move', function () {
         _this.$i.scrollTop(_this.$i[0].scrollHeight);
       });
+    }
+  }, {
+    key: 'activeCheck',
+    value: function activeCheck() {
+      var _this = this;
+
+      var scrollHandle = function() {
+        var cH = _this.$w.outerHeight();
+        var pT = _this.$w.offset().top;
+        var pL = _this.$w.offset().left;
+        var scroll = $(window).scrollTop();
+        var wH = $(window).height();
+        var wW = $(window).width();
+
+        if (scroll + wH > pT && scroll < pT + wH && pL < wW) {
+          _this.$w.addClass('active');
+        } else {
+          _this.$w.removeClass('active');
+        }
+      }
+
+      var diff = new Date().getTime() - this.activeChecked;
+
+      if (this.activeChecked == null || diff >= 500) {
+        this.activeChecked = new Date().getTime();
+        scrollHandle();
+      } else {
+        clearTimeout(this.activeTimer);
+        this.activeTimer = setTimeout(scrollHandle, 500);
+      }
     }
 
     /**
@@ -279,7 +309,7 @@ var Terminal = function () {
         $sec.text($sec.text() + letter);
       }
 
-      this.$i.trigger('scroll');
+      this.$i.trigger('move');
     }
 
     /**
@@ -304,7 +334,7 @@ var Terminal = function () {
       return new Promise(function (resolve, reject) {
         setTimeout(function () {
           _this2.$i.append(data);
-          _this2.$i.trigger('scroll');
+          _this2.$i.trigger('move');
           return resolve($('> span:last-child', _this2.$i));
         }, time);
       });
@@ -360,7 +390,8 @@ var Terminal = function () {
   }, {
     key: 'prompt',
     value: function prompt() {
-      var prompt = this.format(this.user + '@' + this.host, 2, 'b') + this.format(':') + this.format(this.folder, 4, 'b') + this.format('$');
+      var folder = this.folder.replace('/home/' + this.user, '~')
+      var prompt = this.format(this.user + '@' + this.host, 2, 'b') + this.format(':') + this.format(folder, 4, 'b') + this.format('$');
 
       var title = this.folder;
       if (this.folder === '/home/' + this.user) {
@@ -370,16 +401,16 @@ var Terminal = function () {
         var last = this.history[this.history.length - 1];
 
         if (last.length > 30) {
-          title += ':' + last.split(' ')[0];
+          title += ': ' + last.split(' ')[0];
         } else {
-          title += ':' + last;
+          title += ': ' + last;
         }
       }
 
       $('.titlebar .title', this.$w).text(title);
       $('.tabbar .tab.active .title', this.$w).text(title);
       this.append('<span class="prompt">' + prompt + ' </span><span class="input"></span>');
-      this.$i.trigger('scroll');
+      this.$i.trigger('move');
     }
 
     /**
@@ -437,10 +468,12 @@ var Terminal = function () {
   }, {
     key: 'notify',
     value: function notify(cmd) {
-      var $note = $('[type="notification"]');
+      if (!this.$w.hasClass('active')) return;
+
+      var $note = $('[type="notification"]')
 
       $('p', $note).text(cmd);
-      $note.parent().append($note);
+      $note.parent().append($note.addClass('active'));
     }
 
     /**

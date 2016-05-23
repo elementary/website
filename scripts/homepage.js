@@ -182,12 +182,16 @@ $(function () {
       var terminal = new Terminal();
 
       $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
-        e.preventDefault()
+        e.preventDefault();
         showcase.slideTo('index');
       });
 
-      $('#showcase #showcase-terminal').on('change', function(e) {
-        console.log('testing')
+      $('#showcase').on('change', function(e, d) {
+        if (d != null && d.active === 'showcase-terminal') {
+          terminal.$w.addClass('active');
+        } else {
+          terminal.$w.removeClass('active');
+        }
       })
     });
 
