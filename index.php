@@ -192,34 +192,22 @@
                     <div>
                         <div class="window dark" type="terminal">
                             <div class="titlebar">
-                                <button class="control">
-                                    <span class="icon" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
-                                </button>
+                                <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
                                 <span class="title">Home</span>
                                 <div>
-                                    <button class="search">
-                                        <span class="icon" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
-                                    </button>
-                                    <button class="control">
-                                        <span class="icon" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
-                                    </button>
+                                    <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
+                                    <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
                                 </div>
                             </div>
                             <div class="tabbar">
-                                <button>
-                                    <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
-                                </button>
+                                <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
                                 <div class="tabs">
                                     <div class="tab active">
-                                        <button>
-                                            <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
-                                        </button>
+                                        <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
                                         <span class="title">Home</span>
                                     </div>
                                 </div>
-                                <button disabled>
-                                    <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
-                                </button>
+                                <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
                             </div>
                             <div class="input"></div>
                         </div>
