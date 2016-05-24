@@ -180,7 +180,7 @@ $(function () {
       });
 
       var terminal = new Terminal();
-      terminal.onHold = ($(window).width() <= 640);
+      terminal.onHold = ($(window).width() <= 1050);
 
       $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
         e.preventDefault();
@@ -196,7 +196,7 @@ $(function () {
       });
 
       $(window).on('resize', function() {
-        if ($(window).width() <= 640) {
+        if ($(window).width() <= 1050) {
           if (!terminal.onHold) {
             terminal.onHold = true
           }
