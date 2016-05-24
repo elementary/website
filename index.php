@@ -124,7 +124,7 @@
                         </div>
                         <div class="column">
                             <h2>Midori</h2>
-                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a href="https://midori-browser.org" class="read-more">Learn More</a></p>
+                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a href="http://midori-browser.org" class="read-more">Learn More</a></p>
                         </div>
                     </div>
                 </div>
