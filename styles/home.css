@@ -542,7 +542,7 @@ input:focus + .focus-reveal {
     backface-visibility: hidden;
     background: linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
     border-radius: 4px;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), inset 0 1px 0 0 rgba(255,255,255,0.9), inset 0 -1px 0 0 rgba(255,255,255,0.3), 0 0 0 1px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.16), 0 5px 5px -3px rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), inset 0 1px 0 0 rgba(255,255,255,0.9), inset 0 -1px 0 0 rgba(255,255,255,0.3), 0 0 0 1px rgba(0,0,0,0.2), 0 3px 12px rgba(0,0,0,0.16), 0 5px 10px -3px rgba(0,0,0,0.4);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -553,6 +553,7 @@ input:focus + .focus-reveal {
     min-height: 56px;
     opacity: 0;
     padding: 4px;
+    padding-right: 6px;
     -webkit-perspective: 1000;
     perspective: 1000;
     position: relative;
@@ -567,8 +568,8 @@ input:focus + .focus-reveal {
 }
 
 #showcase .window.active[type="notification"] {
-    -webkit-animation: notification 3.5s ease;
-    animation: notification 3.5s ease;
+    -webkit-animation: notification 4s ease;
+    animation: notification 4s ease;
 }
 
 #showcase .window[type="notification"]:hover:before {
@@ -578,15 +579,15 @@ input:focus + .focus-reveal {
 
 #showcase .window[type="notification"] span.icon svg {
     width: 48px;
+    margin-right: 6px;
 }
 
 #showcase .window[type="notification"] h3 {
     color: #333;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
     margin: 0;
     opacity: 1;
-    padding: 4px 6px 3px 6px;
     text-align: left;
 }
 
@@ -594,18 +595,17 @@ input:focus + .focus-reveal {
     color: #333;
     font-size: 12px;
     margin: 0;
-    padding: 0px 6px 6px 6px;
     word-break: break-all;
 }
 
 @-webkit-keyframes notification {
-    10% {
+    15% {
         -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
         transform: rotateX(0deg) skew(0deg, 0deg);
         opacity: 1;
     }
 
-    95% {
+    93% {
         right: 0;
     }
 
@@ -618,13 +618,13 @@ input:focus + .focus-reveal {
 }
 
 @keyframes notification {
-    10% {
+    15% {
         -webkit-transform: rotateX(0deg) skew(0deg, 0deg);
         transform: rotateX(0deg) skew(0deg, 0deg);
         opacity: 1;
     }
 
-    95% {
+    93% {
         right: 0;
     }
 
