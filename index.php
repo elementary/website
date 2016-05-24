@@ -81,7 +81,7 @@
             <div id="showcase" class="row grey">
                 <div id="notification-container">
                     <div class="window" type="notification">
-                        <div><span class="icon" icon="apps/utilities-terminal"><?php include('images/icons/utilities-terminal.svg'); ?></span></div>
+                        <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/utilities-terminal.svg'); ?></span></div>
                         <div>
                             <h3>Task finished</h3>
                             <p>git clone https://github.com/elementary/mvp</p>
@@ -218,7 +218,7 @@
                         </div>
                         <div class="column">
                             <h2>Terminal</h2>
-                            <p>A good Terminal is a developer's best friend. With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                            <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
                         </div>
                     </div>
                 </div>
