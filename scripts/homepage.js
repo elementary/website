@@ -180,6 +180,7 @@ $(function () {
       });
 
       var terminal = new Terminal();
+      terminal.onHold = ($(window).width() <= 640);
 
       $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
         e.preventDefault();
@@ -191,6 +192,18 @@ $(function () {
           terminal.$w.addClass('active');
         } else {
           terminal.$w.removeClass('active');
+        }
+      });
+
+      $(window).on('resize', function() {
+        if ($(window).width() <= 640) {
+          if (!terminal.onHold) {
+            terminal.onHold = true
+          }
+        } else {
+          if (terminal.onHold) {
+            terminal.onHold = false
+          }
         }
       })
     });

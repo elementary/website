@@ -156,7 +156,7 @@ input:focus + .focus-reveal {
     padding: 64px 0 0 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1194px) {
     #showcase > div.showcase-tab > div:last-child {
         order: 2;
         padding: 0 0 32px 0;
@@ -198,6 +198,7 @@ input:focus + .focus-reveal {
 
 #showcase.initialized > div#showcase-index {
     left: -100%;
+    padding: 48px 24px;
 }
 
 #showcase.initialized > div.showcase-tab {
@@ -652,7 +653,7 @@ input:focus + .focus-reveal {
 #appcenter > .column:nth-of-type(2) {
     display: inline-block;
     margin: auto;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #appcenter > .column:nth-of-type(2) img {
@@ -667,7 +668,7 @@ input:focus + .focus-reveal {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1195px) {
     #appcenter > .column {
         display: inline-block;
     }

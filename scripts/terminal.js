@@ -197,6 +197,8 @@ var Terminal = function () {
     // avalible commands to this terminal
     this.commands = commands;
 
+    this.onHold = false;
+
     this.$w = $(w);
     this.$i = $('.input', this.$w);
 
@@ -428,6 +430,18 @@ var Terminal = function () {
 
       var cmd = arguments.length <= 0 || arguments[0] === undefined ? $('> span:last-child > span.input:last-of-type', this.$i).text() : arguments[0];
 
+      if (!_this3.$w.hasClass('active') || _this3.onHold) {
+        return new Promise(function (resolve, reject) {
+          setTimeout(function () {
+            _this3.process(cmd).then(function (d) {
+              return resolve(d);
+            }).catch(function (e) {
+              return reject(e);
+            });
+          });
+        });
+      }
+
       var time = new Date();
 
       return new Promise(function (resolve, reject) {
@@ -459,6 +473,33 @@ var Terminal = function () {
     }
 
     /**
+    * Terminal.run
+    * Runs a terminal command
+    *
+    * @param {String} cmd - command to process
+    * @returns {Number} exit code of the ran command
+    */
+
+   }, {
+     key: 'run',
+     value: function run(cmd) {
+       var _this4 = this;
+
+       return new Promise(function (resolve, reject) {
+         if (cmd == null || cmd === '') return reject(-1);
+
+         var cmds = Object.keys(_this4.commands).filter(function (reg) {
+           var regex = new RegExp(reg.substr(1, reg.lastIndexOf('/') - 1), reg.substr(reg.lastIndexOf('/') + 1));
+           return regex.test(cmd);
+         });
+
+         if (cmds.length < 1) return reject(-1);
+
+         return resolve(_this4.commands[cmds[0]](cmd, _this4));
+       });
+     }
+
+   /**
      * Terminal.notify
      * Creates a notification
      *
