@@ -136,7 +136,7 @@
                         </div>
                         <div class="column">
                             <h2>Mail</h2>
-                            <p>Who says email has to be boring? Mail puts everything you need front and center, without all the clutter, so you can get back to doing what you want.</p>
+                            <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="column">
                             <h2>Videos</h2>
-                            <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
+                            <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                         </div>
                         <div class="column">
                             <h2>Files</h2>
-                            <p>With support for ftp, samba, and WebDAV, files will never be out of reach.</p>
+                            <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                         </div>
                         <div class="column">
                             <h2>Scratch</h2>
-                            <p>With it's great looks, and extensive plugin support, Scratch will be the last text editor you will ever need.</p>
+                            <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                         </div>
                         <div class="column">
                             <h2>Camera</h2>
-                            <p>Something about you being beautiful and something.</p>
+                            <p>Easily snap picures or video from a built-in webcam.</p>
                         </div>
                     </div>
                 </div>
