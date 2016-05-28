@@ -76,7 +76,7 @@ ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 
 ![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
 
-You'll need a USB flash drive with at least 1 GB of free space and a program called Rufus.
+You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.
 
 <a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
 
@@ -215,7 +215,7 @@ ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-You'll need a USB flash drive with at least 1 GB of free space and a program called UNetbootin.
+You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.
 
 <a href="http://appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
 
