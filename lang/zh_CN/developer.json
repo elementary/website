@@ -24,6 +24,7 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "一个HTTP客户端/服务器同步和异步API库。自带的SSL/TLS，cookies，caching，WebSockets，代理和隧道的支持，和更多。配合JSON-GLib。",
     "Reference for Soup": "参考 Soup",
     "Reference for JSON-GLib": "参考 JSON-GLib",
+    "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala。一个现代的，快速，开源的语言。",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "写得快，自然，与vala的面向对象的代码。这是任何人都像看到C#一样熟悉，但维护API / ABI与标准C的兼容性，具有较低的内存需求，是专为GObject。你的名字，VALa有：信号、性能、泛型、Lambda函数，辅助内存管理、异常处理、类型推断，异步/产量，和更多。",
     "Learn More about Vala": "了解更多关于Vala",

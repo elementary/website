@@ -3,8 +3,11 @@
     "Calendar": "Ημερολόγιο",
     "Camera": "Κάμερα",
     "Files": "Αρχεία",
+    "Geary": "Geary",
+    "Midori": "Midori",
     "Music": "Μουσική",
     "Photos": "Φωτογραφίες",
+    "Text Editor": "Text Editor",
     "System Settings": "Ρυθμίσεις Συστήματος",
     "Videos": "Βίντεο",
     "Installation": "Εγκατάσταση",
@@ -12,6 +15,6 @@
     "Learning the Basics": "Μαθαίνοντας τα Βασικά",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Walk through the desktop, multi-tasking, keyboard shortcuts and more.",
     "StackExchange": "StackExchange",
-    "Check out answers to some of the most common questions we get.": "Check out answers to some of the most common questions we get.",
+    "Check out answers to some of the most common questions we get.": "Βρήτε απαντήσεις στις ερωτήσεις που λαμβάνουμε πιο συχνά.",
     "Support &sdot; elementary": "Υποστήριξη ⋅ elementary"
 }

@@ -1,10 +1,13 @@
 {
-    "Get support for": "Obteniu ajuda per a",
+    "Get support for": "Obteniu ajuda per a l'",
     "Calendar": "Calendari",
     "Camera": "Càmera",
     "Files": "Fitxers",
+    "Geary": "Geary",
+    "Midori": "Midori",
     "Music": "Música ",
     "Photos": "Fotografies ",
+    "Text Editor": "Text Editor",
     "System Settings": "Preferències del sistema",
     "Videos": "Vídeos",
     "Installation": "Instal·lació",
@@ -13,5 +16,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Investigueu l'escriptori, la multitasca, les dreceres de teclat i més.",
     "StackExchange": "StackExchange",
     "Check out answers to some of the most common questions we get.": "Mireu les respostes a algunes de les preguntes més freqüents que tenim.",
-    "Support &sdot; elementary": "Ajuda i suport · elementary"
+    "Support &sdot; elementary": "Assistència · elementary"
 }
