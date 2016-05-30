@@ -675,14 +675,16 @@ Let’s recap what we learned in this section:
 
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
-#Notifications {#notifications}
+# Notifications {#notifications}
 If you have been using elementary os, by now you've probably already seen the white bubbles that appear on the top right of the screen. Those are notifications! Notifications are simple ways to notify a user about the state of your app. They can inform the user that a long process has been completed, or a new message has arrived. Either way, in this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
 
-##Making Preparations {#making-preparations}
+## Making Preparations {#making-preparations}
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
 3. Re create the CMake folder and CMakeFiles.txt file If you don't remember how to, i recommend you go back to the [previous section](#building-and-installing-with-cmake). But you can also use the files from your previous projects, and modify it accordingly.
-4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one once again for this project. But since your app will be displaying applications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so your app's notification settings can automatically be handled by switchboard's notifications plug.
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one once again for this project. This time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying applications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so your app's notification settings can automatically be handled by switchboard's notifications plug. 
+
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not show up and could misbehave.
 
 ## Gtk.Application {#gtk-application}
 We can't just add a new notification right away. You are going to need your program to extend from the class Gtk.Application. Gtk.Application is a class that handles many important aspects of a Gtk app, it will also allow you to give your app some new features, one of them being notifications! If you want some more details about what else it can do, you can always check out [valadoc](http://valadoc.org/#!api=gtk+-3.0/Gtk.Application)
