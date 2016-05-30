@@ -10,7 +10,7 @@
 ?>
 
 <section class="hero dark">
-    <img src="images/developer/developer-sketch.svg">
+    <img src="images/developer/developer-sketch.svg"  alt="Developer Sketch">
     <h1>Develop Your Ideas Into Code</h1>
     <h4>Learn to design, develop, and publish apps for elementary OS</h4>
     <!--<a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>-->
@@ -37,7 +37,7 @@
 </div>
 <div class="grid">
     <div class="two-thirds">
-        <image src="images/developer/logo.svg">
+        <image src="images/developer/logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
         <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
     </div>
@@ -45,7 +45,7 @@
 <div class="grid">
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/contractor.svg">
+            <img src="images/developer/contractor.svg" alt="Contractor">
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
@@ -56,7 +56,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/granite.svg">
+            <img src="images/developer/granite.svg" alt="Granite">
         </div>
         <div class="alert column">
             <h2>Granite</h2>
@@ -66,7 +66,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/gda.svg">
+            <img src="images/developer/gda.svg" alt="GDA">
         </div>
         <div class="alert column">
             <h2>GDA</h2>
@@ -76,7 +76,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/soup.svg">
+            <img src="images/developer/soup.svg" alt="Soup">
         </div>
         <div class="alert column">
             <h2>Soup</h2>
@@ -89,7 +89,7 @@
 <section class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <img src="images/developer/vala.svg">
+            <img src="images/developer/vala.svg" alt="vala">
             <h2>Vala. A Modern, Fast, Open Source Language.</h2>
             <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
             <div class="grid">

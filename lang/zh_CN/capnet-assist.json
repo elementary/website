@@ -1,0 +1,8 @@
+{
+    "You're connected!": "你连接到了！",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "你的网络工作正常。你可以安全的关闭窗口，继续使用你的设备。",
+    "Why is this window appearing?": "为什么会显示窗口呢？",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS 会自动检测你的 WIFI 网络。如果它探测到不可用的网络连接时(例如你在咖啡厅或者其他地方连接到了需要登录的 WIFI 网络时)，这个窗口就会弹出并显示登录页面。",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "开始时相同的网络会定向到特定的位置，触发这个窗口，然后关闭连接。在这些情况下，你可以看到这个信息然后安全的关闭窗口。",
+    "You're connected! &sdot; elementary": "你连接到了！ ⋅ elementary"
+}

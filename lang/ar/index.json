@@ -2,8 +2,8 @@
     "A fast and open replacement for Windows and OS X": "بديل سريع ومفتوح للويندوز والماك",
     "Custom": "مخصص",
     "Enter any dollar amount.": "أدخل أي قيمة بالدولار.",
-    "Download Freya": "حمل فريا",
-    "909 MB (for PC or Mac)": "909 MB (for PC or Mac)",
+    "Purchase elementary OS": "شِراء إلمنتري او إس",
+    "1.15 GB (for PC or Mac)": "1,15 جب (للحاسوب والماك)",
     "What the press is saying about elementary OS:": "ماذا تقول الصحافة عن نظام إلمنتري",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"نظام المنتري نظام مختلف... نظام جميل وقوي بحيث أنه يشتغل بسلاسة حتى على حاسوب قديم\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\" منصة سريعة وقليلة الحاجة للإصلاح يمكن أن تثبت وهميا في أي مكان\"",
@@ -40,11 +40,12 @@
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "نحن لا نعقد الصفقات الدعائية ولا نجمع البيانات الشخصية الحساسة. مدخولنا الوحيد يأتينا مباشرة من المستخدمين.",
     "Safe &amp; Secure": "الأمن والسلامة.",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحني نبني على لينكس: نفس النظام المحرك لوزارة الدفاع الأمريكية وبنك الصين وأكثر من ذلك.",
+    "Security Notices": "تنبيهات الحماية",
+    "Download elementary OS": "تحميل نظام التشغيل المنتري",
     "Choose a Download": "إختر تحميلا",
     "We recommend 64-bit for most modern computers. For help and more info, see the": "ننصح ب 64 بِت لأغلب الحواسيب الجديدة. للمساعدة وللمزيد من المعلومات، تابع",
     "installation guide": "دليل التثبيت",
     "Freya 32-bit": "فريا 32-بِت",
     "Torrent Magnet Link": "رابط التورنت",
-    "Freya 64-bit": "فريا 64-بِت.",
-    "Download elementary OS": "تحميل نظام التشغيل المنتري"
+    "Freya 64-bit": "فريا 64-بِت."
 }

@@ -7,9 +7,11 @@
     "Photos": "照片",
     "System Settings": "系统设置",
     "Videos": "视频",
-    "StackExchange": "Stack Exchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "你的问题已经被询问了吗？查看你的问题是否包含在已有的常见问答。",
     "Installation": "安装程序",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "需要帮助就按照我们的分步指导在计算机上安装 elementary OS。",
+    "Get help installing elementary OS with our step-by-step guide.": "通过我们一步步的教学来掌握如何安装 elementary OS。",
+    "Learning the Basics": "基础学习",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "体验桌面、多任务视图、键盘快捷键和更多功能。",
+    "StackExchange": "Stack Exchange",
+    "Check out answers to some of the most common questions we get.": "查看你的问题是否能在已有的常见解答中找到答案。",
     "Support &sdot; elementary": "支持 ⋅ elementary"
 }

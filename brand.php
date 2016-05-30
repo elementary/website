@@ -40,35 +40,35 @@
     <div class="palette">
         <dl class="blue">
             <dt>Blueberry</dt>
-            <dd class="hex">3892e0</dd>
+            <dd class="hex" data-l10n-off="1">3892e0</dd>
         </dl>
         <dl class="red">
             <dt>Strawberry</dt>
-            <dd class="hex">da4d45</dd>
+            <dd class="hex" data-l10n-off="1">da4d45</dd>
         </dl>
         <dl class="orange">
             <dt >Orange</dt>
-            <dd class="hex">f37329</dd>
+            <dd class="hex" data-l10n-off="1">f37329</dd>
         </dl>
         <dl class="yellow">
             <dt>Banana</dt>
-            <dd class="hex">fbd25d</dd>
+            <dd class="hex" data-l10n-off="1">fbd25d</dd>
         </dl>
         <dl class="green">
             <dt>Lime</dt>
-            <dd class="hex">93d844</dd>
+            <dd class="hex" data-l10n-off="1">93d844</dd>
         </dl>
         <dl class="purple">
             <dt>Grape</dt>
-            <dd class="hex">8a4ebf</dd>
+            <dd class="hex" data-l10n-off="1">8a4ebf</dd>
         </dl>
         <dl class="white">
             <dt>White</dt>
-            <dd class="hex">ffffff</dd>
+            <dd class="hex" data-l10n-off="1">ffffff</dd>
         </dl>
         <dl class="black">
             <dt>Black</dt>
-            <dd class="hex">333333</dd>
+            <dd class="hex" data-l10n-off="1">333333</dd>
         </dl>
     </div>
 
@@ -84,7 +84,7 @@
     </ul>
     <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
     <ul>
-        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, or service, or in any logo you create.</li>
+        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
         <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
     </ul>
 

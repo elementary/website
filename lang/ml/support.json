@@ -1,5 +1,5 @@
 {
-    "Get support for": "Get support for",
+    "Get support for": "പിന്തുണ നേടുക",
     "Calendar": "Calendar",
     "Camera": "Camera",
     "Files": "Files",
@@ -7,9 +7,11 @@
     "Photos": "Photos",
     "System Settings": "System Settings",
     "Videos": "Videos",
+    "Installation": "ഇൻസ്റ്റോളേഷനുള്ള  മാർഗരേഖ",
+    "Get help installing elementary OS with our step-by-step guide.": "Get help installing elementary OS with our step-by-step guide.",
+    "Learning the Basics": "അടിസ്ഥാനങ്ങൾ പഠിക്കുക",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Walk through the desktop, multi-tasking, keyboard shortcuts and more.",
     "StackExchange": "StackExchange",
-    "Has your question been asked already? Check out answers to some of the most common questions we get.": "Has your question been asked already? Check out answers to some of the most common questions we get.",
-    "Installation": "Installation",
-    "Get help installing elementary OS on your computer by following our step-by-step guide.": "Get help installing elementary OS on your computer by following our step-by-step guide.",
+    "Check out answers to some of the most common questions we get.": "Check out answers to some of the most common questions we get.",
     "Support &sdot; elementary": "Support ⋅ elementary"
 }

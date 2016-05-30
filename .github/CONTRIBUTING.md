@@ -5,8 +5,9 @@
 For a simple local development environment, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
-* `php5-json`
-* `php5-curl`
+* `php7.0-curl`
+* `php7.0-json`
+* `php7.0-xml`
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
@@ -15,8 +16,9 @@ Then inside the project directory, run `php -S localhost:8000 router.php`. Next,
 For a full web-server environment, which includes more redirect and permissions you may find useful, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
-* `php5-json`
-* `php5-curl`
+* `php7.0-curl`
+* `php7.0-json`
+* `php7.0-xml`
 * The latest stable version of [Nginx](http://nginx.org)
 
 Then, we need to configure Nginx. To start, open up a configuration file in Nano.
@@ -55,7 +57,7 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
  - Four space indentation
  - Remove trailing whitespaces and add an empty line at the end of each file
- - IE 9+ Compatibility
+ - Compatibility with the latest versions of popular browsers (chrome, firefox, safari, edge, midori)
 
 ## PHP
  - `include` templates, not `require` or `_once`
@@ -95,6 +97,17 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
     backgound-color: white;
 }
 ```
+
+# Composer
+
+We use composer to manage our backend scripts. Because all of these files are
+in the repository, it's not required to have `composer` installed unless you want
+to update the dependencies.
+
+## Updating
+
+Navigate to `backend/` and run `composer update`.
+Make sure to test for any breakage when updating.
 
 # Contributing
 

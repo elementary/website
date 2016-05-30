@@ -34,27 +34,25 @@ $l10n->set_domain('layout');
             </div>
             <ul>
                 <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
                 <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
-                <li><a href="https://plus.google.com/114635553671833442612" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://plus.google.com/+elementary" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
         <div class="clear"></div>
         </footer>
 
-        <!--[if lt IE 9]>
+        <!--[if IE]>
             <div id="legacy-warning">
                 <h1>The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.</h1>
-
                 <p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
-
                 <div id="legacy-warning-buttons">
                     <a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
-
                     <a class="suggested-action" href="http://browsehappy.com/" target="_blank">Learn More</a>
                 </div>
             </div>
         <![endif]-->
+
     </body>
 </html>
 <?php
