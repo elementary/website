@@ -24,6 +24,7 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "HTTP-asiakas-/palvelinkirjasto synkronisin ja asynkronisin ohjelmointirajapinnoin. Sisältää tuen SSL/TLS:lle, evästeille, välimuistille, WebSocketeille, välityspalvelimille, tunneloinnille ja paljon muuta. Sopii hyvin yhteen JSON-Glibin kanssa.",
     "Reference for Soup": "Viitteet Soupille",
     "Reference for JSON-GLib": "Viitteet JSON-GLibille",
+    "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala. Nykyaikainen, nopea ja avoin kieli.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Kirjoita nopeaa ja natiivia olio-ohjelmointipohjaista koodia Valalla. Se voi tuntua tutulta kaikille C#:ia tunteville, mutta ylläpitää API- ja ABI-yhteensopivuuden standardin C:n kanssa, ei vaadi paljoa muistia ja on tehty GObjectia silmällä pitäen. Sano mitä tarvitset, Vala tarjoaa sen sinulle: signaalit, ominaisuudet, lambdafunktiot, avustetun muistinhallinnan, poikkeushallinnan ja paljon, paljon muuta.",
     "Learn More about Vala": "Lisätietoja Valasta",
