@@ -113,8 +113,8 @@
 
             <?php
                 $community_members = array_filter( $apiResponse['members'], function($community_member) use ($apiCommunity) {
+                    if ( !isset($community_member['profile']['title']) || $community_member['profile']['title'] == '' ) return false;
                     if ( in_array( $community_member['id'], $apiCommunity ) ) return true;
-                    if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
                     return false;
                 });
 
