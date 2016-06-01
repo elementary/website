@@ -106,8 +106,6 @@
         <h2>Community &amp; Collaborators</h2>
         <p>elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.</p>
     </div>
-</section>
-<section class="grid">
     <div class="whole">
         <div class="team-directory">
 
