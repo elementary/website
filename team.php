@@ -26,6 +26,13 @@
         "U02AENUA1", // Mario (inactive)
     );
 
+    $apiCommunity = array( // Filter certain member IDs from showing up on the page
+        "U02CH39T2", // Nathan Dyer (3rd-party)
+        "U02DCH8AF", // ikey (3rd-party)
+        "U043P7SCH", // debarshi.ray (GNOME)
+        "U02RZBX56", // sri (GNOME)
+    );
+
 ?>
 
 <section class="grid">
@@ -84,6 +91,48 @@
                 <h5 class="member_name"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
                 <span class="member_title"><?=$member['profile']['title']?></span>
                 <span class="member_time"><?=$member['tz_label']?></span>
+            </div>
+
+            <?php
+                }
+            ?>
+
+        </div>
+
+        <h3>Community</h3>
+        <div class="team-directory">
+
+            <?php
+                $community_members = array_filter( $apiResponse['members'], function($community_member) use ($apiCommunity) {
+                    if ( in_array( $community_member['id'], $apiCommunity ) ) return true;
+                    return false;
+                });
+
+                foreach ( $community_members as $key => $community_member ) {
+                    // Because some people just want to see the page burn
+                    if ( !empty($community_member['real_name']) ) {
+                        $community_members[$key]['name'] = htmlspecialchars($community_member['real_name']);
+                    } else {
+                        $community_members[$key]['name'] = htmlspecialchars($community_member['name']);
+                    }
+                    $community_members[$key]['profile']['title'] = htmlspecialchars($community_member['profile']['title']);
+                }
+
+                usort( $community_members, function($a, $b) {
+                    if ( $a['presence'] == 'active' && $b['presence'] != 'active') return -1; // Online people first
+                    if ( $b['presence'] == 'active' && $a['presence'] != 'active') return 1;
+
+                    return strcasecmp( $a['name'], $b['name'] ); // Sort alphabetically
+                });
+
+                foreach( $community_members as $community_member ) {
+            ?>
+
+            <div class="member">
+                <div class="member_photo" style="background-image:url(<?=$community_member['profile']['image_192']?>)"></div>
+                <h5 class="member_name"><?=$community_member['name']?><?php if ($community_member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <span class="member_title"><?=$community_member['profile']['title']?></span>
+                <span class="member_time"><?=$community_member['tz_label']?></span>
             </div>
 
             <?php
