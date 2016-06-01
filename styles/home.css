@@ -153,6 +153,11 @@ input:focus + .focus-reveal {
 
 @media (max-width: 404px) {
 
+    #carousel {
+        background-image: url("../images/screenshots/background_mobile_small.jpg");
+        background-size: cover;
+    }
+
     #carousel .slide > .row > .column:nth-child(2) {
       margin-top: -48px;
     }
@@ -160,6 +165,11 @@ input:focus + .focus-reveal {
 }
 
 @media (min-width: 434px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/background_mobile_large.jpg");
+        background-size: cover;
+    }
 
     #carousel-choices .button {
         line-height: initial;
@@ -176,10 +186,19 @@ input:focus + .focus-reveal {
 
 }
 
+@media (min-width: 1024px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/background_wide_small.jpg");
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
 @media (min-width: 1350px) {
 
     #carousel {
-        background-image: url("../images/screenshots/background.jpg");
+        background-image: url("../images/screenshots/background_wide_large.jpg");
         background-size: cover;
         min-height: 100vh;
     }
