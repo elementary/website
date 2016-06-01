@@ -59,7 +59,7 @@
     "The following dialog may appear during the flashing process, it is safe to ignore.": "The following dialog may appear during the flashing process, it is safe to ignore.",
     "Not readable warning": "Not readable warning",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Kun kuulet merkkiäänen, pidä pohjassa <kbd>Optio</kbd>-näppäintä. Valitse sitten oikea käynnistyslevy. Huomioi, että se saattaa olla virheellisesti tunnistettu \"Windows\"-nimellä, mutta sillä ei ole käytännön merkitystä.",
-    "Boot Errors": "Boot Errors",
+    "Boot Errors": "Käynnistysvirheet",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-freya-xx.xx.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select \"Burn elementaryos-freya-xx.xx.iso to Disc\". When complete, attempt to boot again from the Install DVD.",
     "Running the following command in your terminal:": "Seuraavan komennon suorittaminen päätteessä:",
     "should produce the output:": "tulisi tuottaa tulosteen:",

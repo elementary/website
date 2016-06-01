@@ -1,5 +1,5 @@
 {
-    "Develop Your Ideas Into Code": "Develop Your Ideas Into Code",
+    "Develop Your Ideas Into Code": "Plėtokite savo idėjas į kodą",
     "Learn to design, develop, and publish apps for elementary OS": "Learn to design, develop, and publish apps for elementary OS",
     "Sign In or Register for MyApps": "Sign In or Register for MyApps",
     "Documentation": "Dokumentacija",
@@ -25,9 +25,9 @@
     "Reference for Soup": "Reference for Soup",
     "Reference for JSON-GLib": "Reference for JSON-GLib",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala. A Modern, Fast, Open Source Language.",
+    "Vala. A Modern, Fast, Open Source Language.": "Vala. Šiuolaikinė, greita, atviro kodo kalba.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
-    "Learn More about Vala": "Learn More about Vala",
+    "Learn More about Vala": "Sužinoti daugiau apie Vala",
     "Library Documentation for Vala": "Library Documentation for Vala",
-    "Develop Apps for elementary OS": "Kurkite Programas elementary OS"
+    "Develop Apps for elementary OS": "Kurkite programas elementary OS"
 }
