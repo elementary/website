@@ -105,6 +105,7 @@
             <?php
                 $community_members = array_filter( $apiResponse['members'], function($community_member) use ($apiCommunity) {
                     if ( in_array( $community_member['id'], $apiCommunity ) ) return true;
+                    if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
                     return false;
                 });
 
