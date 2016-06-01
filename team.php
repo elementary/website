@@ -14,10 +14,6 @@
 
     $apiFilter = array( // Filter certain member IDs from showing up on the page
         "USLACKBOT", // slackbot
-        "U02CH39T2", // Nathan Dyer (3rd-party)
-        "U02DCH8AF", // ikey (3rd-party)
-        "U043P7SCH", // debarshi.ray (GNOME)
-        "U02RZBX56", // sri (GNOME)
         "U0299PY5U", // David Gomes (Fix title!)
         "U0299C8QT", // teemperor (Fix title!)
         "U02RCLE6C", // Gero (Remove "Elementary" from title)
@@ -26,11 +22,15 @@
         "U02AENUA1", // Mario (inactive)
     );
 
-    $apiCommunity = array( // Filter certain member IDs from showing up on the page
-        "U02CH39T2", // Nathan Dyer (3rd-party)
-        "U02DCH8AF", // ikey (3rd-party)
-        "U043P7SCH", // debarshi.ray (GNOME)
-        "U02RZBX56", // sri (GNOME)
+    $apiCommunity = array( // List of community members and collaborators
+        "U02CH39T2", // nathandyer
+        "U0J4L6LLB", // bflo
+        "U02DCH8AF", // ikey
+        "U043P7SCH", // debarshi.ray
+        "U02RZBX56", // sri
+        "U0R3F5GUC", // linusbobcat
+        "U098RCR0U", // gandalfn
+        "U15815M6C", // decathorpe
     );
 
 ?>
@@ -51,8 +51,9 @@
         <div class="team-directory">
 
             <?php
-                $members = array_filter( $apiResponse['members'], function($member) use ($apiFilter) {
+                $members = array_filter( $apiResponse['members'], function($member) use ($apiFilter, $apiCommunity) {
                     if ( in_array( $member['id'], $apiFilter ) ) return false;
+                    if ( in_array( $member['id'], $apiCommunity ) ) return false;
                     if ( $member['deleted'] ) return false;
                     if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
                     if ( $member['is_bot'] ) return false;
@@ -98,8 +99,16 @@
             ?>
 
         </div>
-
-        <h3>Community</h3>
+    </div>
+</section>
+<section class="grid">
+    <div class="two-thirds">
+        <h2>Community &amp; Collaborators</h2>
+        <p>elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.</p>
+    </div>
+</section>
+<section class="grid">
+    <div class="whole">
         <div class="team-directory">
 
             <?php
