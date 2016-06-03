@@ -32,6 +32,8 @@
         "U098RCR0U", // gandalfn
         "U15815M6C", // decathorpe
         "U02C59PF7", // ochosi
+        "U1DTKMUK1", // jancborchardt
+        "U1E0QSPB2", // mhall119
     );
 
 ?>
