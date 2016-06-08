@@ -687,7 +687,7 @@ By now you've probably already seen the white notification bubbles that appear o
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
 
 ## Gtk.Application {#gtk-application}
-In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [Check out Valadoc](http://valadoc.org/#!api=gtk+-3.0/Gtk.Application).
+In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](http://valadoc.org/#!api=gtk+-3.0/Gtk.Application).
 
 Now that you know what a `Gtk.Application` is, let's create one:
 
@@ -782,7 +782,7 @@ Now, let's do the withdraw button:
 
 Very easy right? Let's compile and run your app again. Click on the buttons, first on "Show", then "Replace". See how the text on your notification changes without making a new one appear?
 
-###Priority  {#priority}
+### Priority  {#priority}
 Notifications also have priority. When a notification is set as `URGENT` it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the `this.send_notification ()` function
 
 	notification.set_priority (NotificationPriority.URGENT);
