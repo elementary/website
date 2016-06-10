@@ -4,7 +4,7 @@
 ***************************************/
 
 nav {
-    background-color: #4D4267;
+    background-color: #2b63a0;
     color: #fff;
     fill: #fff;
 }
@@ -46,7 +46,7 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
-    background-color: #4D4267;
+    background-color: #2b63a0;
     color: #fff;
     text-align: center;
     padding: 64px 0;
@@ -68,10 +68,36 @@ section.hero .button.suggested-action{
 }
 
 .third .fa {
-    color: #403757;
+    color: #2b63a0;
 }
 
 footer,
 .grey {
     background-color: #fafafa;
+}
+
+/******************
+* Loki Beta Popup *
+******************/
+
+.modal p {
+    margin: 0 auto;
+}
+
+#entrycheck {
+    margin: 24px 0 0 0;
+}
+
+#entrycheck * {
+    display: block;
+    margin: 6px 0;
+    white-space: pre;
+    width: 100%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

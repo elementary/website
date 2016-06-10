@@ -3,17 +3,22 @@
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Develop Apps for elementary OS';
-    $page['theme-color'] = '#403757';
+    $page['theme-color'] = '#2b63a0';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
-    include $template['alert'];
+    // include $template['alert'];
 ?>
 
+<script>
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
+    jQl.loadjQdep('scripts/developer.js');
+</script>
+
 <section class="hero dark">
-    <img src="images/developer/developer-sketch.svg"  alt="Developer Sketch">
-    <h1>Develop Your Ideas Into Code</h1>
-    <h4>Learn to design, develop, and publish apps for elementary OS</h4>
-    <!--<a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>-->
+    <img src="images/developer/iso.svg"  alt="Iso mime">
+    <h1>Loki Beta</h1>
+    <h4>The next generation of elementary OS</h4>
+    <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
 </section>
 <section class="grid">
     <div class="third"><a href="docs/code/getting-started">
@@ -102,6 +107,22 @@
         </div>
     </div>
 </section>
+<div id="download-modal" class="modal">
+    <i class="fa fa-close close-modal"></i>
+    <h3>Download Loki Beta</h3>
+    <p>Please write the below text to download</p>
+    <div id="entrycheck">
+        <label>This is an unstable beta and I don't expect it to work properly.</label>
+        <input type="text" autocomplete="off">
+    </div>
+    <div class="row actions" style="display:none;">
+        <div class="column linked">
+            <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso">Loki Beta 64-bit</a>
+            <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.4.0-beta-1-amd64.20201005.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso"><i class="fa fa-magnet"></i></a>
+        </div>
+    </div>
+</div>
+<a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
     include $template['footer'];
 ?>
