@@ -79,6 +79,9 @@ section.hero .button.suggested-action{
 section.hero .small-label a {
     color: inherit;
     font-weight: bold;
+}
+
+section.hero .small-label a:hover {
     text-decoration: underline;
 }
 
