@@ -18,7 +18,7 @@
     <div>
         <img src="images/developer/iso.svg"  alt="Iso mime">
         <h1>Loki Beta is here.</h1>
-        <h4>Try out the next generation of elementary OS.</h4>
+        <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
     </div>
 </section>
