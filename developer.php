@@ -16,7 +16,7 @@
 <section class="hero dark">
     <div>
         <img src="images/developer/save.svg" alt="Save">
-        <h1>Loki Beta is here</h1>
+        <h1>Loki Beta Is Here</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
         <p class="small-label"><a href="#">Read the Release Notes</a></p>
