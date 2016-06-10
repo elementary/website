@@ -20,6 +20,7 @@
         <h1>Loki Beta is here.</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
+        <p class="small-label">Read the <a href="#">Release Notes</a></p>
     </div>
 </section>
 <section class="grid">
