@@ -6,7 +6,6 @@
     $page['theme-color'] = '#2b63a0';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
-    include $template['alert'];
 ?>
 
 <script>
@@ -23,6 +22,9 @@
         <p class="small-label"><a href="#">Read the Release Notes</a></p>
     </div>
 </section>
+
+<?php include $template['alert']; ?>
+
 <section class="grid">
     <div class="third"><a href="docs/code/getting-started">
         <i class="fa fa-book"></i>
