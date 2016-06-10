@@ -112,14 +112,12 @@
 </section>
 <div id="download-modal" class="modal">
     <div class="modal-container">
-        <i class="fa fa-close close-modal"></i>
         <h3>Download Loki Beta</h3>
-        <p>Please write the below text to download</p>
-        <div id="entrycheck">
-            <label>This is an unstable beta and I don't expect it to work properly.</label>
-            <input type="text" autocomplete="off">
-        </div>
-        <div class="row actions" style="display:none;">
+        <p>By downloading this beta you accept this is a beta release, and will be unstable.</p>
+        <div class="row actions">
+            <div class="column">
+                <a class="button close-modal" href="#">Cancel</a>
+            </div>
             <div class="column linked">
                 <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso">Loki Beta 64-bit</a>
                 <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.4.0-beta-1-amd64.20201005.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso"><i class="fa fa-magnet"></i></a>
