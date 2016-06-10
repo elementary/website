@@ -76,7 +76,7 @@ section.hero .button.suggested-action{
     max-width: 100%;
 }
 
-section.hero .button.suggested-action + .small-label a {
+section.hero .small-label a {
     color: inherit;
     font-weight: bold;
 }
