@@ -1,6 +1,6 @@
 /***************************************
 * Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 nav {
@@ -49,7 +49,7 @@ footer ul li a:focus i.fa {
 
 section.hero {
     background-color: #4D4267;
-    background-image: radial-gradient(#4D4267 0%, #2a2438 100%);
+    background-image: radial-gradient(#635d82 0%, #4D4267 100%);
     color: #fff;
     text-align: center;
     padding: 120px 0 64px 0;
