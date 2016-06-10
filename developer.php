@@ -115,7 +115,7 @@
 <div id="download-modal" class="modal">
     <div class="modal-container">
         <h3>Download Loki Beta</h3>
-        <p>By downloading this beta you accept that it is not a final product and will be unstable .</p>
+        <p>By downloading this beta you accept that it is not a final product and will be unstable.</p>
         <div class="row actions">
             <div class="column">
                 <a class="button close-modal" href="#">Cancel</a>
