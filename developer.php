@@ -16,11 +16,11 @@
 
 <section class="hero dark">
     <div>
-        <img src="https://files.slack.com/files-pri/T028SLY6K-F1FSMHZ4H/square_save.svg?pub_secret=b883760dfe"  alt="Iso mime">
-        <h1>Loki Beta is here.</h1>
+        <img src="images/developer/save.svg" alt="Save">
+        <h1>Loki Beta is here</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
-        <p class="small-label">Read the <a href="#">Release Notes</a></p>
+        <p class="small-label"><a href="#">Read the Release Notes</a></p>
     </div>
 </section>
 <section class="grid">
@@ -47,7 +47,7 @@
     <div class="two-thirds">
         <image src="images/developer/logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
-        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
+        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 &amp; Vala 0.30</h4>
     </div>
 </div>
 <div class="grid">
