@@ -6,7 +6,7 @@
     $page['theme-color'] = '#2b63a0';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
-    // include $template['alert'];
+    include $template['alert'];
 ?>
 
 <script>
