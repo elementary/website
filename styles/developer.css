@@ -4,9 +4,12 @@
 ***************************************/
 
 nav {
-    background-color: #2b63a0;
+    background-color: #0949a3;
+    background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     fill: #fff;
+    position: absolute;
+    width: 100%;
 }
 
 nav > ul > li > a:focus {
@@ -46,10 +49,12 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
-    background-color: #2b63a0;
+    background-color: #0949a3;
+    background-image: url("/images/developer/blueprint.jpg");
+    background-position: 50%;
     color: #fff;
     text-align: center;
-    padding: 64px 0;
+    padding: 120px 0 64px 0;
     max-width: 100%;
 }
 
@@ -68,7 +73,7 @@ section.hero .button.suggested-action{
 }
 
 .third .fa {
-    color: #2b63a0;
+    color: #0949a3;
 }
 
 footer,
