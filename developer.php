@@ -15,10 +15,12 @@
 </script>
 
 <section class="hero dark">
-    <img src="images/developer/iso.svg"  alt="Iso mime">
-    <h1>Loki Beta</h1>
-    <h4>The next generation of elementary OS</h4>
-    <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
+    <div>
+        <img src="images/developer/iso.svg"  alt="Iso mime">
+        <h1>Loki Beta</h1>
+        <h4>The next generation of elementary OS</h4>
+        <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
+    </div>
 </section>
 <section class="grid">
     <div class="third"><a href="docs/code/getting-started">
