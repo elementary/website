@@ -16,7 +16,7 @@
 
 <section class="hero dark">
     <div>
-        <img src="https://cdn.rawgit.com/elementary/icons/b407df03a57a3dfd8c7c8f2205a9c1d4175e7f8c/mimes/128/text-x-install.svg"  alt="Iso mime">
+        <img src="https://files.slack.com/files-pri/T028SLY6K-F1FSMHZ4H/square_save.svg?pub_secret=b883760dfe"  alt="Iso mime">
         <h1>Loki Beta is here.</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
