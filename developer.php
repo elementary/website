@@ -47,7 +47,7 @@
     <div class="two-thirds">
         <image src="images/developer/logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
-        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 &amp; Vala 0.30</h4>
+        <h4>Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4</h4>
     </div>
 </div>
 <div class="grid">
