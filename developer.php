@@ -2,7 +2,7 @@
     include '_templates/sitewide.php';
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
-    $page['title'] = 'Develop Apps for elementary OS';
+    $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#2b63a0';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
@@ -17,8 +17,8 @@
 <section class="hero dark">
     <div>
         <img src="images/developer/iso.svg"  alt="Iso mime">
-        <h1>Loki Beta</h1>
-        <h4>The next generation of elementary OS</h4>
+        <h1>Loki Beta is here.</h1>
+        <h4>Try out the next generation of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
     </div>
 </section>
