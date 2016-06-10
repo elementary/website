@@ -4,8 +4,6 @@
 ***************************************/
 
 nav {
-    background-color: #0949a3;
-    background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     fill: #fff;
     position: absolute;
@@ -50,7 +48,7 @@ footer ul li a:focus i.fa {
 
 section.hero {
     background-color: #0949a3;
-    background-image: url("/images/developer/blueprint.jpg");
+    background-image: url("../images/developer/blueprint.jpg");
     background-position: 50%;
     color: #fff;
     text-align: center;
