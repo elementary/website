@@ -119,9 +119,10 @@ footer,
 #entrycheck * {
     display: block;
     margin: 6px 0;
-    white-space: pre;
     width: 100%;
+}
 
+#entrycheck label {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
