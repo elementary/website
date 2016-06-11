@@ -19,7 +19,7 @@
         <h1>Loki Beta Is Here</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
         <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
-        <p class="small-label"><a href="#">Read the Release Notes</a></p>
+        <p class="small-label"><a href="http://blog.elementary.io/post/145688211396/loki-beta">Read the Release Notes</a></p>
     </div>
 </section>
 
