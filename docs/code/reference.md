@@ -145,6 +145,7 @@ Avoid using `as` keyword when casting as it might give `null` as result, which c
 
     /* NOT OK as this approach requires a check for null */
     (widget as Gtk.Entry).max_width_chars
+
 ## Use of '=' in place of 'set'
 
 In places or operations where you would otherwise use 'set' , you should make use of '=' instead.
