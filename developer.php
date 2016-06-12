@@ -51,7 +51,7 @@
             <h2>Contractor</h2>
             <p>A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.</p>
             <p><a class="read-more" href="docs/human-interface-guidelines#contractor">HIG for Contractor</a></p>
-            <p><a class="read-more" href="http://valadoc.org/#!api=granite/Granite.Services.ContractorProxy">Reference for Contractor</a></p>
+            <p><a class="read-more" href="http://valadoc.elementary.io/#!api=granite/Granite.Services.ContractorProxy">Reference for Contractor</a></p>
         </div>
     </div>
     <div class="half">
@@ -61,7 +61,7 @@
         <div class="alert column">
             <h2>Granite</h2>
             <p>The foundation library for elementary OS apps. Provides powerful widgets like DynamicNotebook, utilities, convenience functions, and more.</p>
-            <p><a class="read-more" href="http://valadoc.org/#!wiki=granite/index">Reference for Granite</a></p>
+            <p><a class="read-more" href="http://valadoc.elementary.io/#!wiki=granite/index">Reference for Granite</a></p>
         </div>
     </div>
     <div class="half">
@@ -71,7 +71,7 @@
         <div class="alert column">
             <h2>GDA</h2>
             <p>Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.</p>
-            <p><a class="read-more" href="http://valadoc.org/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
+            <p><a class="read-more" href="http://valadoc.elementary.io/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
         </div>
     </div>
     <div class="half">
@@ -81,8 +81,8 @@
         <div class="alert column">
             <h2>Soup</h2>
             <p>An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.</p>
-            <p><a class="read-more" href="http://valadoc.org/#!api=libsoup-2.4/Soup">Reference for Soup</a></p>
-            <p><a class="read-more" href="http://valadoc.org/#!api=json-glib-1.0/Json">Reference for JSON-GLib</a></p>
+            <p><a class="read-more" href="http://valadoc.elementary.io/#!api=libsoup-2.4/Soup">Reference for Soup</a></p>
+            <p><a class="read-more" href="http://valadoc.elementary.io/#!api=json-glib-1.0/Json">Reference for JSON-GLib</a></p>
         </div>
     </div>
 </div>
@@ -97,7 +97,7 @@
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
                 </div>
                 <div class="half">
-                    <a class="read-more" href="http://valadoc.org/">Library Documentation for Vala</a>
+                    <a class="read-more" href="http://valadoc.elementary.io/">Library Documentation for Vala</a>
                 </div>
         </div>
     </div>
