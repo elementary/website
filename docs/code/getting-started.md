@@ -705,7 +705,7 @@ Now that you know what a `Gtk.Application` is, let's create one:
 		}
     
 		public static int main (string[] args) {
-			MyApp app = new MyApp ();
+			var app = new MyApp ();
 			return app.run (args);
 		}
 	}
