@@ -3,7 +3,7 @@
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
-    $page['theme-color'] = '#2b63a0';
+    $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
