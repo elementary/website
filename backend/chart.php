@@ -12,7 +12,7 @@ $apiBaseUrl = 'https://api.launchpad.net/beta/';
 // Project name
 $targetName = 'elementary';
 // Milestone name
-$milestoneName = 'loki-beta1';
+$milestoneName = 'loki-rc1';
 
 // Build a chart to now.
 $timeTo = time(); // Now

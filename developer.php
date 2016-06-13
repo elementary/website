@@ -3,7 +3,7 @@
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
-    $page['theme-color'] = '#2b63a0';
+    $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
     // include $template['alert'];
@@ -119,8 +119,8 @@
                 <a class="button close-modal" href="#">Cancel</a>
             </div>
             <div class="column linked">
-                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso">Loki Beta 64-bit</a>
-                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.4.0-beta-1-amd64.20201005.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4.0-beta-1-amd64.20201005.iso"><i class="fa fa-magnet"></i></a>
+                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso">Loki Beta 64-bit</a>
+                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.4-beta-amd64.20160613.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso"><i class="fa fa-magnet"></i></a>
             </div>
         </div>
     </div>
