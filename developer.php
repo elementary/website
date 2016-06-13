@@ -2,19 +2,33 @@
     include '_templates/sitewide.php';
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
-    $page['title'] = 'Develop Apps for elementary OS';
+    $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
     include $template['header'];
-    include $template['alert'];
+    require_once __DIR__.'/backend/classify.current.php';
 ?>
 
+<script>var release_title = 'Loki';</script>
+<script>var release_version = '0.4-beta';</script>
+<script>var download_region = '<?php echo $region; ?>';</script>
+<script>
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
+    jQl.loadjQdep('scripts/developer.js');
+</script>
+
 <section class="hero dark">
-    <img src="images/developer/developer-sketch.svg"  alt="Developer Sketch">
-    <h1>Develop Your Ideas Into Code</h1>
-    <h4>Learn to design, develop, and publish apps for elementary OS</h4>
-    <!--<a class="button suggested-action" href="https://myapps.developer.ubuntu.com/dev/click-apps/">Sign In or Register for MyApps</a>-->
+    <div>
+        <img src="images/developer/save.svg" alt="Save">
+        <h1>Loki Beta Is Here</h1>
+        <h4>Try out the upcoming version of elementary OS.</h4>
+        <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
+        <p class="small-label"><a href="http://blog.elementary.io/post/145688211396/loki-beta">Read the Release Notes</a></p>
+    </div>
 </section>
+
+<?php include $template['alert']; ?>
+
 <section class="grid">
     <div class="third"><a href="docs/code/getting-started">
         <i class="fa fa-book"></i>
@@ -39,7 +53,7 @@
     <div class="two-thirds">
         <image src="images/developer/logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
-        <h4>Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30</h4>
+        <h4>Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4</h4>
     </div>
 </div>
 <div class="grid">
@@ -102,6 +116,22 @@
         </div>
     </div>
 </section>
+<div id="download-modal" class="modal">
+    <div class="modal-container">
+        <h3>Download Loki Beta</h3>
+        <p>By downloading this beta you accept that it is not a final product and will be unstable.</p>
+        <div class="row actions">
+            <div class="column">
+                <a class="button close-modal" href="#">Cancel</a>
+            </div>
+            <div class="column linked">
+                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso">Loki Beta 64-bit</a>
+                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:3f6ee22812f02f862b5f93f6d0e871e4dd8bf598&dn=elementaryos-0.4-beta-amd64.20160613.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso"><i class="fa fa-magnet"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
     include $template['footer'];
 ?>

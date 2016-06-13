@@ -886,18 +886,35 @@ input:focus:-ms-input-placeholder {
 * Modal Dialogs *
 ****************/
 
-.js-target-jquery-leanmodal-overlay {
-    background: #000;
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
     display: none;
-    height: 100%;
     left: 0;
+    opacity: 0;
+    opacity: 0;
+    padding-top: 100px;
+    padding-top: 15vmin;
     position: fixed;
+    right: 0;
     top: 0;
-    width: 100%;
-    z-index: 100;
+    z-index: 11000;
 }
 
-.modal {
+.modal.active {
+    -webkit-align-items: flex-start;
+         -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+              -ms-flex-pack: center;
+            justify-content: center;
+
+}
+
+.modal-container {
     background-color: #f5f5f5;
     border-radius: 3px;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
@@ -906,40 +923,28 @@ input:focus:-ms-input-placeholder {
                 0 0 0 1px rgba(0, 0, 0, 0.2),
                 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
-    display: none;
     margin: 12px;
     max-height: 100vh;
-    opacity: 0;
-    overflow: auto;
+    max-width: 100vw;
     padding: 12px;
-    z-index: 11000;
 }
 
-.modal,
-.modal p {
+.modal-container,
+.modal-container p {
     text-align: center;
 }
 
-.modal-position {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-
-.modal p {
+.modal-container p {
     margin: 0 6px;
     max-width: 388px;
 }
 
-.modal .row.actions {
+.modal-container .row.actions {
     margin-top: 24px;
     padding: 0;
 }
 
-.modal .row.actions .linked {
+.modal-container .row.actions .linked {
     margin: 6px;
 }
 
