@@ -1,6 +1,6 @@
 /***************************************
 * Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 nav {
@@ -49,16 +49,17 @@ footer ul li a:focus i.fa {
 
 section.hero {
     background-color: #4D4267;
-    background-image: radial-gradient(#4D4267 0%, #2a2438 100%);
+    background-image: radial-gradient(#5d4e75 0%, #4D4267 100%);
     color: #fff;
     text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     padding: 120px 0 64px 0;
     max-width: 100%;
     position: relative;
 }
 
 section.hero::before {
-    background-image: linear-gradient(0deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.06) 18px, rgba(255, 255, 255, 0.06) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.03) 38px, rgba(255, 255, 255, 0.03) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.03) 58px, rgba(255, 255, 255, 0.03) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.03) 78px, rgba(255, 255, 255, 0.03) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.03) 98px, rgba(255, 255, 255, 0.03) 100px), linear-gradient(-90deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.06) 18px, rgba(255, 255, 255, 0.06) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.03) 38px, rgba(255, 255, 255, 0.03) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.03) 58px, rgba(255, 255, 255, 0.03) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.03) 78px, rgba(255, 255, 255, 0.03) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.03) 98px, rgba(255, 255, 255, 0.03) 100px);
+    background-image: linear-gradient(0deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.04) 18px, rgba(255, 255, 255, 0.04) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.02) 38px, rgba(255, 255, 255, 0.02) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.02) 58px, rgba(255, 255, 255, 0.02) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.02) 78px, rgba(255, 255, 255, 0.02) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.02) 98px, rgba(255, 255, 255, 0.02) 100px), linear-gradient(-90deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.04) 18px, rgba(255, 255, 255, 0.04) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.02) 38px, rgba(255, 255, 255, 0.02) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.02) 58px, rgba(255, 255, 255, 0.02) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.02) 78px, rgba(255, 255, 255, 0.02) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.02) 98px, rgba(255, 255, 255, 0.02) 100px);
     background-size: 100px 100px;
     bottom: 0;
     content: "";
