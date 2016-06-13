@@ -148,9 +148,9 @@ Avoid using `as` keyword when casting as it might give `null` as result, which c
 
 ## Use of '=' in place of 'set'
 
-In places or operations where you would otherwise use 'set' , you should make use of '=' instead.
+In places or operations where you would otherwise use `set` , you should make use of `=` instead.
 
-For example , instead of using 
+For example, instead of using 
     
          set_can_focus(false);
    
