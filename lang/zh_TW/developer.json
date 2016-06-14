@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "將你的想法寫成代碼",
-    "Learn to design, develop, and publish apps for elementary OS": "學習如何爲 elementary OS 設計、開發並發佈軟體",
-    "Sign In or Register for MyApps": "登入或申請一個 MyApps 帳號",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "文件",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "我們的入門指南可以幫助你建構與發行簡單的程式",
     "Design": "設計",
@@ -9,7 +11,7 @@
     "Reference": "參考文件",
     "Get more info about code style, reporting issues, and proposing design changes.": "深入了解程式碼規範、如何回報問題和提議變更設計",
     "Build for": "構建",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya 在 Switchboard 中使用新的應用程式介面，在 Slingshot 中加入了動作條目搜索，還新增了 HeaderBar 等小工具、工具包的動畫效果、更好的 CSS 佈景等等。使用 Gtk 3.14 和Vala 0.30，建構功能齊全的程式變得比以前更方便。",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Contractor是一個方便程式在不需要特別適配的情況下使用其他程式的功能的桌面擴展服務。",
     "HIG for Contractor": "Contractor 的人機介面指南",
@@ -29,5 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "用 Vala 編寫快速、物件導向的原生原始碼。Vala 讓用過 C# 的人感到親近，卻和標準 C 語言的應用程式介面和二進位介面兼容；Vala 的記憶體需求不高，而且是專為 GObject 而設計的。您需要的這些功能，Vala 都有：信號、屬性、泛型、Lamda函數、記憶體輔助管理、特殊情況管理、種類推測、異步或合併等等。",
     "Learn More about Vala": "進一步瞭解 Vala",
     "Library Documentation for Vala": "Vala 的函式庫文件",
-    "Develop Apps for elementary OS": "為 elementary OS 開發程式"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }
