@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "ทำให้ความคิดของคุณเป็นจริงด้วยโค้ดของคุณ",
-    "Learn to design, develop, and publish apps for elementary OS": "เรียนรู้ที่จะออกแบบ  พัฒนา  และนำแอพเข้าสู่ elementary OS",
-    "Sign In or Register for MyApps": "เข้าสู่ระบบ หรือสมัครเป็นสมาชิก MyApps",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "เอกสารทางเทคนิค",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "สร้างแอพอย่างง่าย  เรียนรู้ที่จะพัฒนาแอพด้วยบทเรียนเริ่มต้นของเรา",
     "Design": "การออกแบบ",
@@ -9,7 +11,7 @@
     "Reference": "การอ้างอิง",
     "Get more info about code style, reporting issues, and proposing design changes.": "รับข้อมูลเพิ่มเติมเกี่ยวกับรูปแบบโค้ดต่าง ๆ  รายงานปัญหา  และปรับปรุงการออกแบบ",
     "Build for": "Build for",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "ระบบ Freya นำ API ใหม่เข้าสู่ตัวจัดการการตั้งค่า  Switchboard,  การเข้าถึงใหม่ ๆ  สำหรับตัวเรียกแอพ  Slingshot, วิดเจตใหม่ ๆ  เช่น HeaderBar,  ปรับปรุงรูปแบบการเคลื่อนไหวในชุด,  ปรับปรุงชุดคำสั่ง CSS  และอีกมากมาย  สร้างแอพที่มีประสิทธิภาพง่ายกว่าเดิมด้วย GTK 3.14 และ Vala 0.30",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "ส่วนติดต่อ Contractor ที่จะทำให้แอพของคุณใช้งานฟังก์ชันจากแอพอื่น ๆ  อย่างไร้ขอบเขต",
     "HIG for Contractor": "HIG สำหรับ Contractor",
@@ -29,5 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "เขียนโค้ดที่รันได้อย่างรวดเร็ว, เข้ากันได้ดี  และเป็น OOP ด้วย Vala มันเป็นภาษาที่คล้ายคลึงกับ C# ที่เรารู้จักกันดี แต่ส่วนโครงสร้างหลัก API/ABI เข้ากันได้กับ C มาตรฐาน  ใช้ทรัพยากรน้อย และถูกสร้างสำหรับ GObject  เพียงคุณเขียนมัน  Vala  ก็เข้าใจได้ทันที: สัญญาณระบุ,  คุณสมบัติ,  คำสั่งทั่วไป,  ฟังก์ชันแลมป์ดา,  ตัวจัดการความจำร่วม,  การจัดการข้อผิดพลาด,  การอนุมาน,  async/yield และอีกมากมาย",
     "Learn More about Vala": "เรียนรู้เพิ่มเติมเกี่ยวกับภาษา Vala",
     "Library Documentation for Vala": "เอกสารทางเทคนิคสำหรับภาษา Vala",
-    "Develop Apps for elementary OS": "พัฒนาแอปสำหรับ elementary OS"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }

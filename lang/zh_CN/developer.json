@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "用代码实现你的设计",
-    "Learn to design, develop, and publish apps for elementary OS": "如何为 elementary OS 设计、开发和发布应用程序",
-    "Sign In or Register for MyApps": "登陆或注册 MyApps",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "开发文档",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "通过我们的入门指南运行、构建和发布一个基本的应用程序。",
     "Design": "设计",
@@ -9,7 +11,7 @@
     "Reference": "相关参考",
     "Get more info about code style, reporting issues, and proposing design changes.": "关于代码风格、提交 issues 和请求设计更改的一些建议。",
     "Build for": "开发",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya 为 Switchboard 提供了新的 API，搜索框，还有新的 HeaderBar 组件，工具栏动画，并且提升了 CSS 效果，等等。通过 Gtk 3.14 和 Vala 0.30 ，开发者将比以前更加方便的开发全功能的应用。",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "一种桌面端扩展服务，允许应用程序使用其他应用程序的功能，无需事先协调。",
     "HIG for Contractor": "HIG for Contractor",
@@ -24,10 +26,14 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "一个HTTP客户端/服务器同步和异步API库。自带的SSL/TLS，cookies，caching，WebSockets，代理和隧道的支持，和更多。配合JSON-GLib。",
     "Reference for Soup": "参考 Soup",
     "Reference for JSON-GLib": "参考 JSON-GLib",
-    "vala": "vala",
+    "vala": "vala程序设计语言",
     "Vala. A Modern, Fast, Open Source Language.": "Vala。一个现代的，快速，开源的语言。",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "写得快，自然，与vala的面向对象的代码。这是任何人都像看到C#一样熟悉，但维护API / ABI与标准C的兼容性，具有较低的内存需求，是专为GObject。你的名字，VALa有：信号、性能、泛型、Lambda函数，辅助内存管理、异常处理、类型推断，异步/产量，和更多。",
     "Learn More about Vala": "了解更多关于Vala",
     "Library Documentation for Vala": "Vala库文档",
-    "Develop Apps for elementary OS": "为 elementary OS 开发应用程序"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }

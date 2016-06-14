@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "Plasma tus ideas a código",
-    "Learn to design, develop, and publish apps for elementary OS": "Aprende a diseñar, desarrollar y publicar aplicaciones para elementary OS",
-    "Sign In or Register for MyApps": "Iniciar sesión o registrarse en MyApps",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "Documentación",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Consigue correr una aplicación básica y lista para distribuir con nuestra guía de primeros pasos.",
     "Design": "Diseño",
@@ -9,7 +11,7 @@
     "Reference": "Referencia",
     "Get more info about code style, reporting issues, and proposing design changes.": "Obtener más información acerca del código, reporte de errores y propuestas para cambio de diseño.",
     "Build for": "Desarrollar para",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya presenta una nueva API para Switchboard, acciones buscables en Slingshot, nuevos Widgets como HeaderBar, animaciones en la caja de herramientas, temas CSS mejorados y más. Desarrolla aplicaciones con funcionalidad más fácil que nunca con Gtk 3.14 y Vala 0.30",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Un servicio a lo largo del escritorio que permite a las aplicaciones utilizar funcionalidades expuestas por otras — sin previa coordinación.",
     "HIG for Contractor": "HIG para Contractor",
@@ -29,5 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Escribe código orientado a objetos nativo y rápido con Vala. Es familiar para cualquiera que haya visto C#, pero mantiene compatibilidad API/ABI con C, tiene pocos requerimientos de memoria, y es compilado con el propósito GObject. Nombralo, y Vala lo tiene: señales, propiedades, genéricos, lambda, funciones, administración de memoria asistida, manipulación de exceptiones, referencia de tipos, async/yield, y más.",
     "Learn More about Vala": "Aprender más sobre Vala",
     "Library Documentation for Vala": "Documentación de Vala",
-    "Develop Apps for elementary OS": "Desarrollo de Aplicaciones para elementary OS"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }
