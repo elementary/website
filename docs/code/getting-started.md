@@ -787,7 +787,7 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 
 	notification.set_priority (NotificationPriority.URGENT);
 
-`URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority); Notifications with `LOW` priority, for example, are skipped from the notifications indicator.
+`URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority).
 
 ## Review {#notifications-review}
 Let's review what all we've learned:
