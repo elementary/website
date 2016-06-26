@@ -116,7 +116,7 @@ footer,
 .modal .row.actions .column {
     margin: 6px;
     width: 200px;
-    margin: 6px;
+    margin: 6px !important;
 }
 
 .modal .row.actions .column:first-of-type a {
