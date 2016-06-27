@@ -15,7 +15,9 @@
             <script>var download_region = '<?php echo $region; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-                jQl.loadjQdep('scripts/homepage.js');
+                jQl.loadjQdep('scripts/webtorrent.min.js');
+                jQl.loadjQdep('scripts/download.js');
+                jQl.loadjQdep('scripts/carousel.js');
             </script>
 
             <div class="row">
@@ -241,18 +243,19 @@
             <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
             <div id="download-modal" class="modal">
                 <i class="fa fa-close close-modal"></i>
-                <h3>Choose a Download</h3>
-                <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
-                <div class="row actions">
-                    <div class="column linked">
-                        <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso">Freya 32-bit</a>
-                        <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
+                <div id="download-webtorrent" style="display:none;">
+                    <h3>Downloading</h3>
+                    <a class="button suggested-action download-magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=<?php echo urlencode('https:'.$download_link.'elementaryos-0.3.2-stable-amd64.20151209.iso'); ?>"><i class="fa fa-magnet"></i></a>
+                    <div id="download-alternative" style="display:none;">
+                        <p>Problems downloading? <a class="download-http webtorrent-stop" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Try direct</a>.</p>
                     </div>
-                    <div class="column linked">
-                        <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Freya 64-bit</a>
-                        <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
-                    </div>
+                    <div class="log"></div>
                 </div>
+                <div id="download-direct">
+                    <h3>Download</h3>
+                    <a class="download-http button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"> Download</a>
+                </div>
+                <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             </div>
             <a style="display:none;" class="open-modal" href="#download-modal"></a>
             <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
