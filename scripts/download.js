@@ -140,15 +140,6 @@ $(function () {
         });
     }
 
-    //// ONLOAD: WebTorrent: Switch to WebTorrent if it is supported.
-    if (WebTorrent.WEBRTC_SUPPORT) {
-        // WebRTC is supported
-        $('#download-webtorrent').show();
-        $('#download-direct').hide();
-    } else {
-        // Use a fallback
-    }
-
     //// RETURN: open_download_overlay: Open the Download modal.
     function open_download_overlay() {
         var $open_modal;
@@ -166,6 +157,8 @@ $(function () {
     //// UTILITY: do_webtorrent_download: Start the WebTorrent download.
     function do_webtorrent_download() {
         if (WebTorrent.WEBRTC_SUPPORT) {
+            $('#download-webtorrent').show();
+            $('#download-direct').hide();
             var magnet = $('.download-magnet').attr('href');
             console.log('Starting download from ' + magnet);
             // Initialize WebTorrent
