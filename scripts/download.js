@@ -178,14 +178,18 @@ $(function () {
                 });
                 console.log('Download started.');
                 var file = torrent.files[0]; // There should only ever be one file.
-                file.appendTo('#download-webtorrent'); // append the file to the DOM
+                file.appendTo('.log'); // append the file to the DOM
                 // Print out progress every second
                 var interval = setInterval(function () {
-                    console.log('Progress: ' + (torrent.progress * 100).toFixed(1) + '% - ' + torrent.timeRemaining);
+                    var progress = (torrent.progress * 100).toFixed(1);
+                    console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining);
+                    $('.progress.sintel').width(progress + '%');
+                    $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining');
                 }, 1000);
                 // Stop printing out progress.
                 torrent.on('done', function () {
                     console.log('Progress: 100%');
+                    $('.counter').text('Complete');
                     clearInterval(interval);
                 });
             }
