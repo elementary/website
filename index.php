@@ -256,6 +256,10 @@
                     <div id="download-alternative" style="display:none;">
                         <p>Problems downloading? <a class="webtorrent-stop download-link http-link" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
                     </div>
+                    <div class="column">
+                        <a class="button webtorrent-stop close-modal" href="#">Cancel</a>
+                        <a class="button suggested-action disabled download-link http-magnet" title="Save Downloadk" href=#">Save the Download</a>
+                    </div>
                 </div>
                 <div id="download-direct">
                     <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
