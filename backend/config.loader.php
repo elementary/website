@@ -13,3 +13,7 @@ if (
     // for un-configured Local
     require_once __DIR__.'/config.example.php';
 }
+
+if ( empty($config['release_filename']) ) {
+    $config['release_filename'] = 'elementaryos-0.3.2-stable-amd64.20151209.iso';
+}
