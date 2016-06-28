@@ -253,11 +253,14 @@
                     </div>
                     <p class="counter">Starting your download&hellip;</p>
                     <div id="download-alternative" style="display:none;">
-                        <p>Problems downloading? <a class="download-http webtorrent-stop" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
+                        <p>Problems downloading? <a class="download-link http-link webtorrent-stop" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
                     </div>
                 </div>
                 <div id="download-direct">
-                    <a class="download-http button suggested-action" href="<?php echo $download_link.$config['release_filename']; ?>"> Download</a>
+                    <div class="column linked">
+                        <a class="download-link http-link button suggested-action" href="<?php echo $download_link.$config['release_filename']; ?>">Download Freya 64-bit</a>
+                        <a class="download-link http-magnet button suggested-action" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&amp;dn=elementaryos-0.3.2-stable-amd64.20151209.iso&amp;tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&amp;ws=<?php echo $download_link.$config['release_filename']; ?>"><i class="fa fa-magnet"></i></a>
+                    </div>
                 </div>
                 <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             </div>

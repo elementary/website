@@ -151,11 +151,16 @@ $(function () {
 
     //// ACTION: .download-http.click: Track download over HTTP
     if (window.ga) {
-        $('.download-http').click(function () {
+        $('.download-link').click(function () {
             ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', '64-bit');
-            ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'HTTP');
             ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os());
             ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region);
+        });
+        $('.http-link').click(function () {
+            ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'HTTP');
+        });
+        $('.magnet-link').click(function () {
+            ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'magnet');
         });
     }
 
@@ -209,6 +214,12 @@ $(function () {
                 console.log('Download started.');
                 torrent.addWebSeed('https:' + download_link + release_filename);
                 var file = torrent.files[0]; // There should only ever be one file.
+                if (window.ga) {
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', '64-bit');
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os());
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region);
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'magnet');
+                }
                 // Print out progress every second
                 c = 0;
                 var interval = setInterval(function () {
