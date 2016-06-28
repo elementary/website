@@ -187,7 +187,7 @@ $(function () {
             console.log('Starting Download');
             client.add(
                 // OPTION: Torrent file name.
-                '/elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
+                window.location.href + 'elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
                 {
                     announce: [
                         'https://ashrise.com:443/phoenix/announce',
