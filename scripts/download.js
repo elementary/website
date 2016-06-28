@@ -186,7 +186,8 @@ $(function () {
             // Add Torrent
             console.log('Starting Download');
             client.add(
-                'http://mvp.localtest.me/elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
+                // OPTION: Torrent file name.
+                '/elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
                 {
                     announce: [
                         'https://ashrise.com:443/phoenix/announce',
@@ -206,6 +207,7 @@ $(function () {
                     console.error('TERROR: ' + err.message);
                 });
                 console.log('Download started.');
+                torrent.addWebSeed('https://' + download_region + '.dl.elementary.io/download/' + window.btoa(Math.round(new Date().getTime()/1000)) + '/elementaryos-0.3.2-stable-amd64.20151209.iso');
                 var file = torrent.files[0]; // There should only ever be one file.
                 // Print out progress every second
                 c = 0;
