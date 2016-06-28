@@ -41,6 +41,25 @@ $(function () {
     // Check Custom Amounts on Blur
     $('#amount-custom').blur(amountBlur);
 
+    //// ONLOAD & ACTION: updateDownloadButton: Change Button text based on resulting action
+    function updateDownloadButton () {
+        var translate_download = $('#translate-download').text();
+        var translate_purchase = $('#translate-purchase').text();
+        if ($('#amounts').children().length <= 1) {
+            $('#download').text(translate_download);
+        } else if (
+            $('button.payment-button').hasClass('checked') ||
+            $('#amount-custom').val() * 100 >= payment_minimum
+        ) {
+            $('#download').text(translate_purchase);
+        } else {
+            $('#download').text(translate_download);
+        }
+    }
+    $('#amounts').on('click', updateDownloadButton);
+    $('#amounts input').on('input', updateDownloadButton);
+    updateDownloadButton();
+
     //// ACTION: #download.click: Either initiate a payment or open the download modal.
     $('#download').click(function(){
         console.log('Pay ' + current_amount);
@@ -159,32 +178,46 @@ $(function () {
         if (WebTorrent.WEBRTC_SUPPORT) {
             $('#download-webtorrent').show();
             $('#download-direct').hide();
-            var magnet = $('.download-magnet').attr('href');
-            console.log('Starting download from ' + magnet);
             // Initialize WebTorrent
             var client = new WebTorrent();
             client.on('error', function (err) {
                 console.error('WTERROR: ' + err.message);
             });
             // Add Torrent
-            var torrentId = 'magnet:?xt=urn:btih:6a9759bffd5c0af65319979fb7832189f4f3c35d&dn=sintel.mp4&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel-1024-surround.mp4';
-            console.log(magnet);
-            console.log(torrentId);
-            client.add(torrentId, onTorrent);
-            client.add(magnet, onTorrent);
+            console.log('Starting Download');
+            client.add(
+                'http://mvp.localtest.me/elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
+                {
+                    announce: [
+                        'https://ashrise.com:443/phoenix/announce',
+                        'udp://open.demonii.com:1337/announce',
+                        'udp://tracker.ccc.de:80/announce',
+                        'udp://tracker.openbittorrent.com:80/announce',
+                        'udp://tracker.publicbt.com:80/announce',
+                        'wss://tracker.openwebtorrent.com',
+                        'wss://tracker.webtorrent.io',
+                        'wss://tracker.btorrent.xyz',
+                    ],
+                },
+                onTorrent
+            );
             function onTorrent (torrent) {
                 torrent.on('error', function (err) {
                     console.error('TERROR: ' + err.message);
                 });
                 console.log('Download started.');
                 var file = torrent.files[0]; // There should only ever be one file.
-                file.appendTo('.log'); // append the file to the DOM
                 // Print out progress every second
+                c = 0;
                 var interval = setInterval(function () {
                     var progress = (torrent.progress * 100).toFixed(1);
                     console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining);
-                    $('.progress.sintel').width(progress + '%');
+                    $('.progress').width(progress + '%');
                     $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining');
+                    c++;
+                    if ( c > 10 && progress < 1 ) {
+                        $('#download-alternative').show();
+                    }
                 }, 1000);
                 // Stop printing out progress.
                 torrent.on('done', function () {

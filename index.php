@@ -245,10 +245,9 @@
                 <i class="fa fa-close close-modal"></i>
                 <div id="download-webtorrent" style="display:none;">
                     <h3>Downloading</h3>
-                    <a class="button suggested-action download-magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=<?php echo urlencode('https:'.$download_link.'elementaryos-0.3.2-stable-amd64.20151209.iso'); ?>"><i class="fa fa-magnet"></i></a>
-                    <div class="log"></div>
+                    <a style="display:none;" class="button suggested-action download-magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=<?php echo urlencode('https:'.$download_link.'elementaryos-0.3.2-stable-amd64.20151209.iso'); ?>"><i class="fa fa-magnet"></i></a>
                     <div class="bar-container" style="height:1rem;background:black">
-                        <div class="bar progress sintel" style="height:1rem;background:green;width:0%"></div>
+                        <div class="bar progress" style="height:1rem;background:green;width:0%"></div>
                     </div>
                     <p class="counter"></p>
                     <div id="download-alternative" style="display:none;">
