@@ -7,12 +7,15 @@
     include $template['alert'];
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
+
 ?>
             <script src="scripts/slider.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
             <script>var release_title = '<?php echo $config['release_title']; ?>';</script>
             <script>var release_version = '<?php echo $config['release_version']; ?>';</script>
+            <script>var release_filename = '<?php echo $config['release_filename']; ?>';</script>
             <script>var download_region = '<?php echo $region; ?>';</script>
+            <script>var download_link = '<?php echo $download_link; ?>';</script>
             <script>
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/webtorrent.min.js');
@@ -245,18 +248,16 @@
                 <i class="fa fa-close close-modal"></i>
                 <div id="download-webtorrent" style="display:none;">
                     <h3>Downloading</h3>
-                    <a style="display:none;" class="button suggested-action download-magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=<?php echo urlencode('https:'.$download_link.'elementaryos-0.3.2-stable-amd64.20151209.iso'); ?>"><i class="fa fa-magnet"></i></a>
                     <div class="bar-container" style="height:1rem;background:black">
                         <div class="bar progress" style="height:1rem;background:green;width:0%"></div>
                     </div>
-                    <p class="counter"></p>
+                    <p class="counter">Starting your download&hellip;</p>
                     <div id="download-alternative" style="display:none;">
-                        <p>Problems downloading? <a class="download-http webtorrent-stop" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Try direct</a>.</p>
+                        <p>Problems downloading? <a class="download-http webtorrent-stop" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
                     </div>
                 </div>
                 <div id="download-direct">
-                    <h3>Download</h3>
-                    <a class="download-http button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"> Download</a>
+                    <a class="download-http button suggested-action" href="<?php echo $download_link.$config['release_filename']; ?>"> Download</a>
                 </div>
                 <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             </div>

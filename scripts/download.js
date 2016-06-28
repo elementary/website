@@ -187,7 +187,7 @@ $(function () {
             console.log('Starting Download');
             client.add(
                 // OPTION: Torrent file name.
-                window.location.href + 'elementaryos-0.3.2-stable-amd64.20151209.iso.torrent',
+                window.location.href + release_filename + '.torrent',
                 {
                     announce: [
                         'https://ashrise.com:443/phoenix/announce',
@@ -207,7 +207,7 @@ $(function () {
                     console.error('TERROR: ' + err.message);
                 });
                 console.log('Download started.');
-                torrent.addWebSeed('https://' + download_region + '.dl.elementary.io/download/' + window.btoa(Math.round(new Date().getTime()/1000)) + '/elementaryos-0.3.2-stable-amd64.20151209.iso');
+                torrent.addWebSeed('https:' + download_link + release_filename);
                 var file = torrent.files[0]; // There should only ever be one file.
                 // Print out progress every second
                 c = 0;
@@ -216,14 +216,15 @@ $(function () {
                     console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining);
                     $('.progress').width(progress + '%');
                     $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining');
-                    c++;
-                    if ( c > 10 && progress < 1 ) {
+                    // If after 10 seconds there is less than 1% progress, display an alternative.
+                    if ( c++ > 10 && progress < 1 ) {
                         $('#download-alternative').show();
                     }
                 }, 1000);
                 // Stop printing out progress.
                 torrent.on('done', function () {
                     console.log('Progress: 100%');
+                    // TODO Offer to save file.
                     $('.counter').text('Complete');
                     clearInterval(interval);
                 });

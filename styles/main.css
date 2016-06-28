@@ -930,7 +930,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .modal p {
-    margin: 0 6px;
+    margin: 6px;
     max-width: 388px;
 }
 
