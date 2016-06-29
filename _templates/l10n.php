@@ -93,7 +93,7 @@ class Translator {
             return true;
         }
 
-        return is_dir($this->lang_dir($lang));
+        return array_key_exists($lang, $this->available_langs);
     }
 
     public function user_lang() {
@@ -122,7 +122,9 @@ class Translator {
                 if ($this->is_lang($lang)) {
                     return $lang;
                 }
-            } elseif ($this->is_lang($locale['language'])) {
+            }
+
+            if (!empty($locale['language']) && $this->is_lang($locale['language'])) {
                 return $locale['language'];
             }
         }
