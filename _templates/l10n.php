@@ -17,14 +17,17 @@ class Translator {
         'fi' => 'Suomi',
         'fr' => 'Français',
         'hr_HR' => 'hrvatski (Hrvatska)',
+        'id' => 'Bahasa',
         'id_ID' => 'Bahasa Indonesia',
         'it' => 'Italiano',
+        'ja' => '日本語',
         'lt' => 'Lietuvių kalba',
         'ne' => 'नेपाली',
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
         'no' => 'Norsk',
         'pl' => 'Polski',
+        'pt' => 'Português',
         'pt_BR' => 'Português (Brasil)',
         'pt_PT' => 'Português (Portugal)',
         'ro_RO' => 'Română',
@@ -32,6 +35,7 @@ class Translator {
         'sr' => 'српски',
         'sr_JK' => 'српски (ијекавица)',
         'sv' => 'Svenska',
+        'tr' => 'Türkçe', ///////////////////////////////////////////////////
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
         'zh_CN' => '简体中文',
@@ -93,7 +97,7 @@ class Translator {
             return true;
         }
 
-        return array_key_exists($lang, $this->available_langs);
+        return is_dir($this->lang_dir($lang));
     }
 
     public function user_lang() {
