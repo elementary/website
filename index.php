@@ -258,7 +258,7 @@
                     </div>
                     <div class="column">
                         <a class="button webtorrent-stop close-modal" href="#">Cancel</a>
-                        <a class="button suggested-action disabled download-link http-magnet" title="Save Downloadk" href=#">Save the Download</a>
+                        <a class="button disabled download-link http-magnet" title="Save the Download" href=#">Save the Download</a>
                     </div>
                 </div>
                 <div id="download-direct">
