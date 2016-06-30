@@ -37,7 +37,7 @@
     "Report a Website Issue": "รายงานปัญาเว็บไซต์",
     "Desktop Development": "พัฒนาระบบเดสก์ท็อปของเรา",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "ระบบเดสก์ทอปและแอพทั้งหมดในระบบปฏิบัติการของเราถูกสร้างโดยใช้ Vala, GTK+, Granite และไลบรารี่เสริมโอเพนซอร์สอื่น ๆ เราได้ฝากซอร์สเหล่านี้ไว้ที่เว็บ Launchpad.net ซึ่งเป็นเว็บไซต์ที่สามารถฝากซอร์สได้ฟรีสำหรับซอฟต์แวร์โอเพนซอร์ส หากคุณยังไม่เคยพัฒนาแอพให้กับ elementaryOS เลย เราขอแนะนำให้ลองอ่านในบทเรียนเริ่มต้นต่อไปนี้",
-    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, public beta testing for Loki will begin and this chart will be updated to reflect the next milestone. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, public beta testing for Loki will begin and this chart will be updated to reflect the next milestone. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>",
+    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>",
     "Fixed": "แก้ไขแล้ว",
     "In Progress": "อยู่ระหว่างการแก้ไข",
     "Unfixed": "ยังไม่ได้รับการแก้ไข",
@@ -51,7 +51,7 @@
     "Read the Interface Guidelines": "อ่าน Interface Guidelines",
     "See Our Mockups": "ดูตัวอย่างแปลน",
     "Interaction Design": "ลักษณะอินเทอร์เฟซสั่งงาน",
-    "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.",
+    "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "เราใช้ ระบบบน Launchpad ที่ชื่อว่า Blueprints เพื่อสร้าง คำอธิบายรายละเอียดของ feature ใหม่ และ user interface ที่เปลี่ยนไป",
     "Read About Our Workflow": "อ่านเพิ่มเติมเกี่ยวกับเวิร์กโฟลว์ของเรา",
     "Browse Our Blueprints": "เรียกดูโครงการของเรา",
     "Get Involved with elementary OS": "ร่วมงานกับ elementary OS"

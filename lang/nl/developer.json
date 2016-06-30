@@ -1,7 +1,7 @@
 {
     "Save": "Save",
     "Loki Beta Is Here": "Loki Beta Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Try out the upcoming version of elementary OS.": "Probeer de toekomstige versie van elementary OS.",
     "Download Loki Beta": "Download Loki Beta",
     "Read the Release Notes": "Read the Release Notes",
     "Documentation": "Documentatie",
@@ -21,19 +21,19 @@
     "Reference for Granite": "Naslag voor Granite.",
     "GDA": "GDA",
     "Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.": "Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.",
-    "Reference for GDA": "Reference for GDA",
+    "Reference for GDA": "Naslag voor GDA",
     "Soup": "Soup",
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.",
     "Reference for Soup": "Naslag voor Soup.",
-    "Reference for JSON-GLib": "Reference for JSON-GLib",
+    "Reference for JSON-GLib": "Naslag voor JSON-GLib",
     "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala. Een moderne, snelle open source taal.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Schrijf snelle, systeemeigen objectgeorienteerde programma's met Vala. Het is bekend voor iedereen die in C# kan programmeren met behoud van compatibiliteit voor standaard C, heeft lage geheugen eisen en is speciaal ontwikkeld voor GObject. Wat je maar wilt, Vala heeft het: signals, properties, generics, lambda expressies, assisted geheugen beheer, foutafhandeling,  type-inferentie, async/yield en meer.",
     "Learn More about Vala": "Leer meer over Vala.",
     "Library Documentation for Vala": "Bibliotheekdocumentatie voor Vala.",
     "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
+    "Cancel": "Annuleren",
     "Loki Beta 64-bit": "Loki Beta 64-bit",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "Developer &sdot; elementary": "Developer ⋅ elementary"
+    "Developer &sdot; elementary": "Ontwikkelaar ⋅ elementary"
 }
