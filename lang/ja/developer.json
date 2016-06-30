@@ -1,9 +1,9 @@
 {
     "Save": "Save",
-    "Loki Beta Is Here": "Loki Beta Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
-    "Download Loki Beta": "Download Loki Beta",
-    "Read the Release Notes": "Read the Release Notes",
+    "Loki Beta Is Here": "Loki Beta版はここに",
+    "Try out the upcoming version of elementary OS.": "elementary OSの次期バージョンを試してください。",
+    "Download Loki Beta": "Loki Beta版をダウンロード",
+    "Read the Release Notes": "リリースノートを読む",
     "Documentation": "ドキュメント",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Get a basic app running, built, and ready for distribution with our Getting Started guide.",
     "Design": "デザイン",
@@ -31,9 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
     "Learn More about Vala": "Learn More about Vala",
     "Library Documentation for Vala": "Library Documentation for Vala",
-    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
-    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "このベータ版をダウンロードすることにより、あなたはこれが最終製品でなく安定していないことを認めたとみなされます。",
+    "Cancel": "キャンセル",
+    "Loki Beta 64-bit": "Loki Beta版 64ビット",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "Developer &sdot; elementary": "Developer ⋅ elementary"
 }

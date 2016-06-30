@@ -1,9 +1,9 @@
 {
-    "Save": "Save",
-    "Loki Beta Is Here": "Loki Beta Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
-    "Download Loki Beta": "Download Loki Beta",
-    "Read the Release Notes": "Read the Release Notes",
+    "Save": "حفظ",
+    "Loki Beta Is Here": "Loki Beta هنا",
+    "Try out the upcoming version of elementary OS.": "جرب الإصدار القادم من نظام إلمنتري",
+    "Download Loki Beta": "تحميل Loki Beta",
+    "Read the Release Notes": "اقرأ ملاحظات الإصدار",
     "Documentation": "وثائق",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "احصل على تطبيق اساسي يعمل ,مبني , و استعد للتوزيع مع دليل المبتدئين",
     "Design": "تصميم",
@@ -32,8 +32,8 @@
     "Learn More about Vala": "اعرف المزيد حول Vala",
     "Library Documentation for Vala": "مكتبة الوثائق ل Vala",
     "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
-    "Loki Beta 64-bit": "Loki Beta 64-bit",
-    "Torrent Magnet Link": "Torrent Magnet Link",
-    "Developer &sdot; elementary": "Developer ⋅ elementary"
+    "Cancel": "إلغاء",
+    "Loki Beta 64-bit": "Loki Beta معمارية 64بت",
+    "Torrent Magnet Link": "رابط التورنت",
+    "Developer &sdot; elementary": "المطور ⋅ إلمنتري"
 }
