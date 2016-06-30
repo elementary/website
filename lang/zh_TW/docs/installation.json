@@ -60,7 +60,7 @@
     "Not readable warning": "無法讀取的警告",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "當您聽到啟動提示音後，按住<kbd>選項</kbd>，然後選擇相應的引導驅動器。要記住它有可能被錯誤地識別為 “Windows”，此屬正常現象。",
     "Boot Errors": "開機錯誤",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-freya-xx.xx.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "如果您的 Mac 不能在開機選單中識別你的隨身碟，你可能需要製作一張 elementary OS 的安裝光碟。如果你想用光碟安裝，你需要先插入一張空白 DVD 光碟，然後在 Finder 中用滑鼠右鍵點選 ISO 文件，最後選擇 “燒録 elementaryos-freya-xx.xx.iso 至光碟設備\"。完成後，嘗試用剛燒録的DVD 光碟再次開機。",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-freya-xx.xx.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "如果您的 Mac 不能在開機選單中識別你的隨身碟，你可能需要製作一張 elementary OS 的安裝光碟。如果你想用光碟安裝，你需要先插入一張空白 DVD 光碟，然後在 Finder 中用滑鼠右鍵點選 ISO 文件，最後選擇 \"燒録 elementaryos-freya-xx.xx.iso 至光碟設備\"。完成後，嘗試用剛燒録的DVD 光碟再次開機。",
     "Running the following command in your terminal:": "在您的終端機執行以下的指令：",
     "should produce the output:": "應該產生的輸出：",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "您需要準備一個隨身碟，至少要有 2GB 的可用空間。除之此外，您還需要一個叫做 UNetbootin 的程式。",
