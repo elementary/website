@@ -760,7 +760,7 @@ Symbolic icons are common system icons, that symbolize files, devices, or direct
 
 Each symbolic icon is a reduced form of its full-color counter part. This minimal design ensures readability and clarity even at small sizes.
 
-<img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.png" alt="Symbolic vs. colored icon">
+<img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.svg" alt="Symbolic vs. colored icon">
 
 ### Colored vs. Symbolic Icons
 
