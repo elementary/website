@@ -754,7 +754,7 @@ Color, don't be afraid to use it! Many of the elementary icons use vibrant color
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
 
 
-### Symbolic Icons {#symbolic-icons}
+## Symbolic Icons {#symbolic-icons}
 
 Symbolic icons are common system icons, that symbolize files, devices, or directories and are also used to represent common actions like cut, copy, and save.
 
