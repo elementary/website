@@ -706,7 +706,6 @@ If your app makes use one of these common actions, reference its corresponding i
 
 If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
-
 ## Icon Sizes {#size}
 
 elementary OS uses **six** main icon sizes throughout the OS and it's best to include all six as part of your application.
@@ -753,6 +752,31 @@ Color, don't be afraid to use it! Many of the elementary icons use vibrant color
 </div>
 
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
+
+
+### Symbolic Icons {#symbolic-icons}
+
+Symbolic icons are common system icons, that symbolize files, devices, or directories and are also used to represent common actions like cut, copy, and save.
+
+Each symbolic icon is a reduced form of its full-color counter part. This minimal design ensures readability and clarity even at small sizes.
+
+<img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.png" alt="Symbolic vs. colored icon">
+
+### Colored vs. Symbolic Icons
+
+The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
+
+Full color icons are best used for:
+* application icons
+* files and mimetypes
+* device icons
+* places
+
+Symbolic icons are best used:
+* on buttons
+* in lists or text fields
+* for status indicators
+* when the background is dynamic or semi-transparent, for example: media overlays
 
 ## Composition {#composition}
 
