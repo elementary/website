@@ -1012,7 +1012,7 @@ If in doubt, refer to [Butterwick's Practical Typography](http://practicaltypogr
 
 These rules apply to the English language; other languages may have their own conventions which should be followed by translators.
 
-## Using Ellipsis {#using-ellipses}
+## Using Ellipses {#using-ellipses}
 
 The ellipsis character (…) is used in the interface for two primary reasons: informing the user of an additional required information and letting the user know text has been shortened.
 
