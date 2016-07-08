@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "Realisiere deine Ideen in Code",
-    "Learn to design, develop, and publish apps for elementary OS": "Lerne, wie man Anwendungen für elementary OS gestaltet, entwickelt und veröffentlicht.",
-    "Sign In or Register for MyApps": "Einloggen oder für MyApps registrieren",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "Dokumentation",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Bring eine einfache Anwendung zum Laufen, kompiliert und bereit für die Veröffentlichung mit unserem Einstiegsguide",
     "Design": "Design",
@@ -9,7 +11,7 @@
     "Reference": "Verweise",
     "Get more info about code style, reporting issues, and proposing design changes.": "Erhalte mehr Informationen über Formatierung von Code, mitteilen von Problemen und vorschlagen von Designänderungen.",
     "Build for": "Entwickelt für",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya bringt eine neue API für Switchboard, durchsuchbare Einträge für Aktionen in Slingshot, neue Widgets wie z.B. HeaderBar, Animationen im Toolkit, verbesserte Gestaltung mit CSS und vieles mehr. Entwickle umfangreiche Anwendungen einfacher als je zuvor mit Gtk 3.14 & Vala 0.30",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Ein desktopübergreifender Erweiterungsdienst, der es erlaubt Funktionen zu nutzen, die von anderen Anwendungen bereitgestellt werden - ohne vorherige Abstimmung.",
     "HIG for Contractor": "HIG für Contractor",
@@ -24,9 +26,14 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "Eine HTTP Client/Server-Bibliothek mit synchronen und asynchronen APIs. Enthält SSL/TLS, Cookies, Caching, WebSockets, Proxy, Tunneling und vieles mehr. Funkioniert wunderbar mit JSON-GLib.",
     "Reference for Soup": "Soup Referenz",
     "Reference for JSON-GLib": "JSON-GLib Referenz",
+    "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala. Eine moderne, schnelle und quelloffene Sprache. ",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Schreibe schnellen, nativen, objektorientierten Code mit Vala. Es ist jedem bekannt, der C# gesehen hat, aber es enthält API/ABI-Kompatibilität mit Standard-C, hat geringe Speicheranforderungen und ist speziell angefertigt für GObject. Du willst es, Vala hat es: Signale, Eigenschaften, Generics, Lambda-Funktionen, Unterstützung bei der Speicherverwaltung, Ausnahmebehandlung, Typinferenz, async/yield und mehr.",
     "Learn More about Vala": "Erfahre mehr über Vala",
     "Library Documentation for Vala": "Vala Dokumentation",
-    "Develop Apps for elementary OS": "Entwickle Anwendungen für elementary OS"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet-Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }

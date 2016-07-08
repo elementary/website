@@ -1,17 +1,20 @@
 {
-    "Get support for": "获取支持",
+    "Get support for": "助您使用",
     "Calendar": "日历",
     "Camera": "相机",
     "Files": "文件",
+    "Geary": "geary 邮件阅读器",
+    "Midori": "Midori 浏览器",
     "Music": "音乐",
     "Photos": "照片",
+    "Text Editor": "文本编辑器",
     "System Settings": "系统设置",
     "Videos": "视频",
     "Installation": "安装程序",
     "Get help installing elementary OS with our step-by-step guide.": "通过我们一步步的教学来掌握如何安装 elementary OS。",
     "Learning the Basics": "基础学习",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "体验桌面、多任务视图、键盘快捷键和更多功能。",
-    "StackExchange": "Stack Exchange",
+    "StackExchange": "堆栈交换",
     "Check out answers to some of the most common questions we get.": "查看你的问题是否能在已有的常见解答中找到答案。",
     "Support &sdot; elementary": "支持 ⋅ elementary"
 }

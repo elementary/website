@@ -57,7 +57,7 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
  - Four space indentation
  - Remove trailing whitespaces and add an empty line at the end of each file
- - IE 9+ Compatibility
+ - Compatibility with the latest versions of popular browsers (chrome, firefox, safari, edge, midori)
 
 ## PHP
  - `include` templates, not `require` or `_once`

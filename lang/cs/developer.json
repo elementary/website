@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "Přeměňte vaše nápady v kód",
-    "Learn to design, develop, and publish apps for elementary OS": "Naučte se navrhovat, vyvýjet a publikovat aplikace pro elementary OS",
-    "Sign In or Register for MyApps": "Přihlašte se nebo se zaregistrujte pro přístup do MyApps",
+    "Save": "Uložit",
+    "Loki Beta Is Here": "Loki Beta je zde",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Stáhnout Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "Dokumentace",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Vytvořte jednoduchou aplikaci, která poběží a bude připravena pro distribuci s naší příručkou Začínáme",
     "Design": "Designujte",
@@ -9,7 +11,7 @@
     "Reference": "Reference",
     "Get more info about code style, reporting issues, and proposing design changes.": "Získejte více informací o preferovaném stylu kódu, hlášení chyb a navrhování změn.",
     "Build for": "Vytvořeno pro",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya přináší nové API pro Switchboard, vyhledávatelné záznamy ve Slingshotu, nové widgety jako HeaderBar, animace, vylepšené možnosti přizpusobení pomocí CSS a mnohem víte. Vytvářejte aplikace bohaté na funkce jednodušeji než kdykoliv předtím s Gtk 3.14 a Vala 0.30.",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Celodesktopová služba, která umožňuje aplikacím využít funkcionalitu ostatních aplikací —bez nutnosti koordinace.",
     "HIG for Contractor": "HIG pro Contractor",
@@ -24,9 +26,14 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "HTTP klient/serverová knihovna se synchronním a asynchronním API. Obsahuje SSL/TSL, cookies, cachování, WebSockety, proxy, podporu tunelování a mnohé další. Výborně se hodí k JSON-GLib.",
     "Reference for Soup": "Reference pro Soup",
     "Reference for JSON-GLib": "Reference pro JSON-GLib",
+    "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala. Moderní, Rychlý, Open Source Jazyk.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
     "Learn More about Vala": "Přečtěte si víc o Vala",
     "Library Documentation for Vala": "Dokumentace ke knihovnám Vala",
-    "Develop Apps for elementary OS": "Vyvíjejte aplikace pro elementary OS"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }

@@ -153,6 +153,11 @@ input:focus + .focus-reveal {
 
 @media (max-width: 404px) {
 
+    #carousel {
+        background-image: url("../images/screenshots/background_mobile_small.jpg");
+        background-size: cover;
+    }
+
     #carousel .slide > .row > .column:nth-child(2) {
       margin-top: -48px;
     }
@@ -160,6 +165,11 @@ input:focus + .focus-reveal {
 }
 
 @media (min-width: 434px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/background_mobile_large.jpg");
+        background-size: cover;
+    }
 
     #carousel-choices .button {
         line-height: initial;
@@ -176,10 +186,19 @@ input:focus + .focus-reveal {
 
 }
 
+@media (min-width: 1024px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/background_wide_small.jpg");
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
 @media (min-width: 1350px) {
 
     #carousel {
-        background-image: url("../images/screenshots/background.jpg");
+        background-image: url("../images/screenshots/background_wide_large.jpg");
         background-size: cover;
         min-height: 100vh;
     }
@@ -572,23 +591,8 @@ span.results-title {
             transform: translateX(0%);
 }
 
-@media (max-width: 1345px) {
 
-    .slingshot {
-        width: 551px;
-    }
-
-    .slingshot .entry {
-        width: 452px;
-    }
-
-    #slingshot-grid .last-row {
-        display: none;
-    }
-
-}
-
-@media (max-width: 1218px) {
+@media (max-width: 1400px) {
 
     .slingshot {
         height: 369px;
@@ -599,8 +603,8 @@ span.results-title {
         width: 325px;
     }
 
-    #slingshot-categories .last-row,
-    #slingshot-grid .middle-row {
+    .app.last-row,
+    .app.middle-row {
         display: none;
     }
 

@@ -1,8 +1,8 @@
 {
-    "You're connected!": "You're connected!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Your Internet connection appears to be working. You can safely close this window and continue using your device.",
-    "Why is this window appearing?": "Why is this window appearing?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.",
-    "You're connected! &sdot; elementary": "You're connected! ⋅ elementary"
+    "You're connected!": "您已连接！",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "您的网络连接正常。现在您可以关掉当前窗口继续使用您的设备。",
+    "Why is this window appearing?": "为何会出现这个窗口？",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS 在您接入新WIFI环境时会自动检测您的网络连接是否正常。如果系统检测不到可用的网络连接(例如：您连接到了咖啡厅或者其他公共场合的需要登录的网络环境)，这个窗口就会出现并且显示登录界面。",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "一些网络环境起初需要用户登录，所以触发了这个窗口但实际上网络连接已经成功了。如果时这种情形下出现这个提示，您可以放心的关闭这个窗口。",
+    "You're connected! &sdot; elementary": "您已连接！ ⋅ elementary"
 }

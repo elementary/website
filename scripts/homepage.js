@@ -29,6 +29,8 @@ $(function () {
             current_amount = previous_amount;
             // Set the old amount as checked.
             $('#' + current_amount).addClass('checked');
+
+            updateDownloadButton();
         }
     };
     // Listen for Clicking on Amounts
@@ -134,7 +136,8 @@ $(function () {
 
         console.log('Open the download overlay!');
         $open_modal.leanModal({
-            // Add this class to download buttons to make them close it.
+            top: '15vmin',
+            overlayOpacity: 0.5,
             closeButton: '.close-modal',
         });
         $open_modal.click();
