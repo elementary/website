@@ -27,8 +27,8 @@
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank">
-        <img width="64" height="64" src="images/icons/internet-mail.svg" alt="Geary"/>
-        <span data-l10n-off>Geary</span>
+        <img width="64" height="64" src="images/icons/internet-mail.svg" alt="Mail"/>
+        <span data-l10n-off>Mail</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank">

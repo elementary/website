@@ -7,7 +7,7 @@
         {"icon":"postscript-viewer","title":"Document Viewer","position":"first-row"},
         {"icon":"system-file-manager","title":"Files","position":"first-row"},
         {"icon":"preferences-desktop-font","title":"Font Viewer","position":"middle-row"},
-        {"icon":"internet-mail","title":"Geary Mail","position":"middle-row"},
+        {"icon":"internet-mail","title":"Mail","position":"middle-row"},
         {"icon":"internet-web-browser","title":"Epiphany","position":"middle-row"},
         {"icon":"multitasking-view","title":"Multitasking View","position":"middle-row"},
         {"icon":"multimedia-audio-player","title":"Music","position":"middle-row"},
