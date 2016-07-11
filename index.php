@@ -254,7 +254,7 @@
                 <div class="column text-left">
                     <img src="images/icons/system-software-install.svg" />
                     <h2>Closer to the Apps</h2>
-                    <p>App Center brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
+                    <p>AppCenter brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
                 </div>
             </div>
             <div id="slingshot" class="row">
