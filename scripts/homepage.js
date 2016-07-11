@@ -166,7 +166,7 @@ $(function () {
         index: '#showcase-index',
         slides: [
           'showcase-music',
-          'showcase-midori',
+          'showcase-epiphany',
           'showcase-mail',
           'showcase-photos',
           'showcase-videos',

@@ -93,7 +93,7 @@
                     <p>We have apps. We have the best apps. Our apps have won awards. Take a look at our binder of awards.</p>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
-                        <a href="#showcase-midori"><li class="read-more"><img src="images/icons/midori.svg" />Midori</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
                         <a href="#showcase-mail"><li class="read-more"><img src="images/icons/internet-mail.svg" />Mail</li></a>
                         <a href="#showcase-photos"><li class="read-more"><img src="images/icons/multimedia-photo-manager.svg" />Photos</li></a>
                         <a href="#showcase-videos"><li class="read-more"><img src="images/icons/multimedia-video-player.svg" />Videos</li></a>
@@ -116,15 +116,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="showcase-tab" id="showcase-midori">
-                    <div><img src="images/screenshots/midori.png" alt="midori screenshot" /></div>
+                <div class="showcase-tab" id="showcase-epiphany">
+                    <div><img src="images/screenshots/epiphany.png" alt="epiphany screenshot" /></div>
                     <div>
                         <div class="column">
-                            <img src="images/icons/midori.svg" alt="midori icon" />
+                            <img src="images/icons/internet-web-browser.svg" alt="epiphany icon" />
                         </div>
                         <div class="column">
-                            <h2>Midori</h2>
-                            <p>Surf the web with a fast & lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a href="http://midori-browser.org" class="read-more">Learn More</a></p>
+                            <h2>Epiphany</h2>
+                           <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
-                    <div><img src="images/screenshots/videos.png" alt="videos screenshot" /></div>
+                    <div><img src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-files">
-                    <div><img src="images/screenshots/files.png" alt="files screenshot" /></div>
+                    <div><img src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/system-file-manager.svg" alt="files icon" />
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
-                    <div><img src="images/screenshots/camera.png" alt="camera screenshot" /></div>
+                    <div><img src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/accessories-camera.svg" alt="camera icon" />
