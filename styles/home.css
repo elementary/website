@@ -748,6 +748,14 @@ input:focus + .focus-reveal {
     z-index: 100;
 }
 
+#slingshot-label {
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: left;
+    margin-left: 3px;
+}
+
 .slingshot .linked {
     display: inline-block;
     margin: 0;

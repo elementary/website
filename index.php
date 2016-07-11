@@ -257,8 +257,9 @@
                     <p>AppCenter brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
                 </div>
             </div>
-            <div id="slingshot" class="row">
+            <div id="slingshot" class="row grey">
                 <div class="column vertical-top">
+                    <div id="slingshot-label">Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
