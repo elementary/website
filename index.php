@@ -89,8 +89,8 @@
                     </div>
                 </div>
                 <div id="showcase-index">
-                    <h2>Full Of Style And Content.</h2>
-                    <p>We have apps. We have the best apps. Our apps have won awards. Take a look at our binder of awards.</p>
+                    <h2>Apps You Need, Without Ones You Don't.</h2>
+                    <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs. Spend more time using your computer and less time cleaning it up.</p>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
                         <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
