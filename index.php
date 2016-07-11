@@ -223,7 +223,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
-                    <div><img src="images/screenshots/scratch.png" alt="scratch screenshot" /></div>
+                    <div><img src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
