@@ -240,13 +240,16 @@ $(function () {
 
         if ($('#amounts').children().length <= 1) {
             $('#download').text(translate_download);
+            document.title = translate_download;
         } else if (
             $('button.payment-button').hasClass('checked') ||
             $('#amount-custom').val() * 100 >= payment_minimum
         ) {
             $('#download').text(translate_purchase);
+            document.title = translate_purchase;
         } else {
             $('#download').text(translate_download);
+            document.title = translate_download;
         }
     }
 
