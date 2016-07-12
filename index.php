@@ -252,7 +252,7 @@
                     <img src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
                 </div>
                 <div class="column text-left">
-                    <img src="images/icons/system-software-install.svg" />
+                    <img src="images/icons/128/system-software-install.svg" />
                     <h2>Closer to the Apps</h2>
                     <p>AppCenter brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
                 </div>
