@@ -29,6 +29,8 @@ $(function () {
             current_amount = previous_amount;
             // Set the old amount as checked.
             $('#' + current_amount).addClass('checked');
+
+            updateDownloadButton();
         }
     };
     // Listen for Clicking on Amounts

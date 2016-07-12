@@ -14,15 +14,24 @@ $targetName = 'elementary';
 // Milestone name
 $milestoneName = 'loki-beta1';
 
-// Build a chart from a date
-// Set to null to get data for the whole milestone
-//$timeFrom = time() - 12 * 30 * 24 * 60 * 60; // 1 year
-$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when freya 0.3.0 released
-// Build a chart to a date
+// Build a chart to now.
 $timeTo = time(); // Now
+
+// Build a chart from a date
+// (Set to null to get data for the whole milestone)
 // Interval for each bar in chart
-//$timeInterval = 7 * 24 * 60 * 60; // 1 week
-$timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
+
+// 1 year displayed as 52 weeks
+//$timeFrom = time() - 365 * 24 * 60 * 60;
+//$timeInterval = 7 * 24 * 60 * 60;
+
+// 8 weeks displayed as 56 days
+$timeFrom = time() - 8 * 7 * 24 * 60 * 60;
+$timeInterval = 24 * 60 * 60;
+
+// Arbitrary time period displayed as 50 points
+//$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when freya 0.3.0 released
+//$timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
 
 // CONFIG ENDS HERE
 
@@ -35,7 +44,7 @@ function log_info($msg) { // Basic logger
 }
 
 if ( !is_writable('./chart.json') ) {
-	log_info('Error: File `/backend/chart.json` is not writable.');
+	log_info('Error: File `backend/chart.json` is not writable.');
 	exit(1);
 }
 

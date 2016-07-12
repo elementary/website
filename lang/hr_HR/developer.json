@@ -24,6 +24,7 @@
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "HTTP bliblioteka za servere/klijente sa sinkronizirajućim i asinkronizirajućim APIem. Dolazi s SSL/TSL kolačićima, cachingom, WebSocketima, proxy i tunnel podrškom i mnogo više. Odlično radi s JSON-GLib.",
     "Reference for Soup": "Reference za Soup",
     "Reference for JSON-GLib": "Reference za JSON-GLib",
+    "vala": "vala",
     "Vala. A Modern, Fast, Open Source Language.": "Vala. Brz, moderan jezik otvorenog koda.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Kodirajte brze, nativne, aplikacije s Valom. Poznata je bilo kome tko je radio u C#u ali održava API/ABI kompatibilnost s standardnim jezikom C. Zahtjeva malo memorije i napravljen je s naznakom za GObject. Samo recite, Vala to ima: singale, svojstva, generičnost, lambda funkcije, upravljanje memorijom i više.",
     "Learn More about Vala": "Saznajte više o Vala",

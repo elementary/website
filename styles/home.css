@@ -1,5 +1,5 @@
 /***************************************
-* Copyright 2016 elementary LLC.       *
+* Copyright 2016 elementary LLC.      *
 * This file is part of elementaryos.io *
 ***************************************/
 
@@ -1050,23 +1050,8 @@ span.results-title {
             transform: translateX(0%);
 }
 
-@media (max-width: 1345px) {
 
-    .slingshot {
-        width: 551px;
-    }
-
-    .slingshot .entry {
-        width: 452px;
-    }
-
-    #slingshot-grid .last-row {
-        display: none;
-    }
-
-}
-
-@media (max-width: 1218px) {
+@media (max-width: 1400px) {
 
     .slingshot {
         height: 369px;
@@ -1077,8 +1062,8 @@ span.results-title {
         width: 325px;
     }
 
-    #slingshot-categories .last-row,
-    #slingshot-grid .middle-row {
+    .app.last-row,
+    .app.middle-row {
         display: none;
     }
 
