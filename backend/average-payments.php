@@ -26,7 +26,7 @@ if ( $processing ) {
     }
     $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
 } else {
-    $db = new SQLite3($database, SQLITE3_OPEN_READONLY | SQLITE3_OPEN_CREATE);
+    $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
 }
 if ( $db->lastErrorCode() ) LastError($db);
 $db->busyTimeout(300);
