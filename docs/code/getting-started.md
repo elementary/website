@@ -47,13 +47,13 @@ If you're ready, let's get you set up to use Bazaar:
 2. You'll need to install bzr. Simply type the following into the Terminal:
 
     ```bash
-    sudo apt-get install bzr
+    sudo apt install bzr
     ```
 
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
 
     ```bash
-    sudo apt-get install openssh-client
+    sudo apt install openssh-client
     ssh-keygen -t rsa
     ```
 
@@ -83,13 +83,13 @@ At the time of this writing, elementary doesn't have a full SDK like Android or 
 
 ### Scratch {#scrath}
 
-![](images/docs/code/the-basic-setup/scratch.png)
+![](images/icons/128/accessories-text-editor.svg)
 
 The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
-![](images/docs/code/the-basic-setup/terminal.svg)
+![](images/icons/128/utilities-terminal.svg)
 
 We’re going to use Terminal in order to compile our code, push revisions to Bazaar (bzr), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
 
@@ -101,15 +101,13 @@ mkdir Projects
 
 ### Development Libraries {#development-libraries}
 
-![](images/docs/code/the-basic-setup/development.png)
+![](images/icons/128/application-default-icon.svg)
 
-In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries with the following terminal command:
+In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries and other development tools with the following terminal command:
 
 ```bash
-sudo apt-get build-dep granite-demo
+sudo apt install elementary-sdk
 ```
-
-The command `apt-get build-dep` installs the build dependencies of an app in the repositories. In this case, we're fetching the development libraries needed to build Granite Demo, an example app. We'll talk more about Granite later, but keep in mind that if you want to build an app from source, you can usually get its build dependencies easily by using `apt-get build-dep`.
 
 And with that, we're ready to dive into development! Let's move on!
 
