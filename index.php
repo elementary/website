@@ -249,7 +249,7 @@
             </div>
             <div id="appcenter" class="row">
                 <div class="column">
-                    <img src="images/screenshots/appcenter.png" alt="elementary appcenter categories"/>
+                    <img src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
                 </div>
                 <div class="column text-left">
                     <img src="images/icons/system-software-install.svg" />
