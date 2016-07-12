@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
-                    <div><img src="images/screenshots/epiphany.png" alt="epiphany screenshot" /></div>
+                    <div><img src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" /></div>
                     <div>
                         <div class="column">
                             <img src="images/icons/internet-web-browser.svg" alt="epiphany icon" />
