@@ -4,11 +4,6 @@
 
 If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
-elementary OS is currently built for two processor architectures, 32-bit and 64-bit.
-
-* If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.
-* If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).
-
 ## Recommended System Specifications {#recommended-system-specifications}
 
 * Intel i3 or comparable dual-core 64-bit processor
@@ -60,14 +55,8 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 1. Open Hash Tool
 2. Under "Hash Type" select `SHA-256`
 3. Under "Input File" select `Select File(s)` and find the elementary OS ISO file
-4. Verify that the text in "Results" matches one of the following hashes
+4. Verify that the text in "Results" matches the following hash:
 
-#### 32-bit
-```bash nohighlight
-97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
-```
-
-#### 64-bit
 ```bash nohighlight
 ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
 ```
@@ -104,21 +93,6 @@ In order to start the installation process, you must boot your computer from the
 
 Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
 
-#### 32-bit
-
-Running the following command in your Terminal:
-
-```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-i386.20151209.iso
-```
-
-Should produce the output:
-
-```bash nohighlight
-97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
-```
-
-#### 64-bit
 
 Running the following command in your Terminal:
 
@@ -185,21 +159,6 @@ If your Mac doesn't recognize your elementary OS USB Install Drive in the boot m
 
 Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
 
-#### 32-bit
-
-Running the following command in your terminal:
-
-```bash nohighlight
-sha256sum elementaryos-0.3.2-stable-i386.20151209.iso
-```
-
-should produce the output:
-
-```bash nohighlight
-97e143e762a1d1e3abac9eba33a59a7a6b9f319a7063cd47e406678c379fc683
-```
-
-#### 64-bit
 
 Running the following command in your terminal:
 
