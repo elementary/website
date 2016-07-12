@@ -581,7 +581,7 @@ When adding items to your AppMenu, consider the following:
 
 ## Search Fields {#search-fields}
 
-Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar (to the left of the AppMenu). This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.org/#!api=gtk+-3.0/Gtk.SearchEntry).
+Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar (to the left of the AppMenu). This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
 
 ![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
@@ -662,12 +662,12 @@ Iconography is a key part of elementary OS. Icons make up the majority of the UI
 Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg">
-	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg">
-	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
-	<img title="Videos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg">
-	<img title="Online Accounts icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg">
-	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
+	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg" alt="Warning dialog icon">
+	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg" alt="Chat icon">
+	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg" alt="Photos icon">
+	<img title="Videos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg" alt="Videos icon">
+	<img title="Online Accounts icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg" alt="Online accounts icon">
+	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="Terminal icon">
 </div>
 
 ### Metaphors
@@ -675,12 +675,12 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img title="Camera icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg">
-	<img title="Hard Disk icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/drive-harddisk.svg">
-	<img title="Mouse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/input-mouse.svg">
-	<img title="Package icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/package.svg">
-	<img title="HTML Text icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg">
-	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg">
+	<img title="Camera icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg" alt="Camera icon">
+	<img title="Hard Disk icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/drive-harddisk.svg" alt="Hard disk icon">
+	<img title="Mouse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/input-mouse.svg" alt="Mouse icon">
+	<img title="Package icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/package.svg" alt="Package icon">
+	<img title="HTML Text icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/text-html.svg" alt="HTML Text icon">
+	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg" alt="Computer icon">
 </div>
 
 ### Action Icons
@@ -688,36 +688,35 @@ If you're creating an icon for a hardware device or a file type (such as those f
 Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img title="Previous icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg">
-	<img title="Next icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg">
-	<img title="Document export icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg">
-	<img title="Print icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg">
-	<img title="Save icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg">
-	<img title="Delete icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg">
-	<img title="Cut icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg">
-	<img title="Undo icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg">
-	<img title="Inverse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg">
-	<img title="Play icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg">
-	<img title="New tag icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg">
-	<img title="Menu icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg">
+	<img title="Previous icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-previous.svg" alt="Previous icon">
+	<img title="Next icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/go-next.svg" alt="Next icon">
+	<img title="Document export icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-export.svg" alt="Document export icon">
+	<img title="Print icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-print.svg" alt="Print icon">
+	<img title="Save icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/document-save-as.svg" alt="Save icon">
+	<img title="Delete icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-delete.svg" alt="Delete icon">
+	<img title="Cut icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-cut.svg" alt="Cut icon">
+	<img title="Undo icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/edit-undo.svg" alt="Undo icon">
+	<img title="Inverse icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/object-inverse.svg" alt="Inverse icon">
+	<img title="Play icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/media-playback-start.svg" alt="Play icon">
+	<img title="New tag icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/tag-new.svg" alt="New tag icon">
+	<img title="Menu icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/24/open-menu.svg" alt="Menu icon">
 </div>
 
 If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.
 
 If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.
 
-
 ## Icon Sizes {#size}
 
 elementary OS uses **six** main icon sizes throughout the OS and it's best to include all six as part of your application.
 
 <div class="icons-container">
-	<img title="16 pixel icon" src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg">
-	<img title="24 pixel icon" src="/images/docs/human-interface-guidelines/icons/24/utilities-terminal.svg">
-	<img title="32 pixel icon" src="/images/docs/human-interface-guidelines/icons/32/utilities-terminal.svg">
-	<img title="48 pixel icon" src="/images/docs/human-interface-guidelines/icons/48/utilities-terminal.svg">
-	<img title="64 pixel icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg">
-	<img title="128 pixel icon" id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+	<img title="16 pixel icon" src="/images/docs/human-interface-guidelines/icons/16/utilities-terminal.svg" alt="16 pixel Terminal icon">
+	<img title="24 pixel icon" src="/images/docs/human-interface-guidelines/icons/24/utilities-terminal.svg" alt="24 pixel Terminal icon">
+	<img title="32 pixel icon" src="/images/docs/human-interface-guidelines/icons/32/utilities-terminal.svg" alt="32 pixel Terminal icon">
+	<img title="48 pixel icon" src="/images/docs/human-interface-guidelines/icons/48/utilities-terminal.svg" alt="48 pixel Terminal icon">
+	<img title="64 pixel icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="64 pixel Terminal icon">
+	<img title="128 pixel icon" id="s128" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg" alt="128 pixel Terminal icon">
 </div>
 
 <div class="icons-container">
@@ -730,7 +729,7 @@ elementary OS uses **six** main icon sizes throughout the OS and it's best to in
 </div>
 
 <div class="icons-container small-screen">
-	<img title="128 pixel icon" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg">
+	<img title="128 pixel icon" src="/images/docs/human-interface-guidelines/icons/128/utilities-terminal.svg" alt="128 pixel Terminal icon">
 </div>
 
 <div class="icons-container small-screen">
@@ -744,15 +743,40 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 Color, don't be afraid to use it! Many of the elementary icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
-	<img title="Mail icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg">
-	<img title="RSS reader icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-news-reader.svg">
-	<img title="Web browser icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg">
-	<img title="Photos icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg">
-	<img title="Network error icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/network-error.svg">
-	<img title="Calendar icon"class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg">
+	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
+	<img title="RSS reader icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-news-reader.svg" alt="RSS Reader icon">
+	<img title="Web browser icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-web-browser.svg" alt="Web browser icon">
+	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg" alt="Photos icon">
+	<img title="Network error icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/network-error.svg" alt="Network icon">
+	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
+
+
+## Symbolic Icons {#symbolic-icons}
+
+Symbolic icons are common system icons, that symbolize files, devices, or directories and are also used to represent common actions like cut, copy, and save.
+
+Each symbolic icon is a reduced form of its full-color counter part. This minimal design ensures readability and clarity even at small sizes.
+
+<img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.svg" alt="Symbolic vs. colored icon">
+
+### Colored vs. Symbolic Icons
+
+The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
+
+Full color icons are best used for:
+* application icons
+* files and mimetypes
+* device icons
+* places
+
+Symbolic icons are best used:
+* on buttons
+* in lists or text fields
+* for status indicators
+* when the background is dynamic or semi-transparent, for example: media overlays
 
 ## Composition {#composition}
 
@@ -762,8 +786,8 @@ There are three aspects to note when designing an elementary icon:
 * Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
 * The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
 
-<img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
-<img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary Videos icon">
+<img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary Terminal icon">
 
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
 
@@ -785,8 +809,8 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 
 However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
-<img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
-<img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary Video icon">
+<img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary Terminal icon">
 
 Rounder components will generally require some overshoot, to compensate for the optical illusion that makes them look smaller than their rectangular counterparts.
 
@@ -795,8 +819,8 @@ Rounder components will generally require some overshoot, to compensate for the 
 All elementary icons have a thin outline (stroke) to improve their contrast. The width of this stroke is **one** pixel for all icons, at every size.
 The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
 
-<img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
-<img title="Second icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Example of contrast in elementary Calendar icon">
+<img title="Second icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Example of contrast in elementary Settings icon">
 
 To further improve contrast, strokes are also semi-transparent. This ensures that icons appear sharp against a variety of backgrounds. Also, if the element is near-white, this stroke acts as a border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
 
@@ -808,7 +832,7 @@ If you picture an icon sitting on a shelf, facing you, with a light source above
 
 To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
-<img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg">
+<img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary Music icon">
 
 ### Drop Shadow
 
@@ -988,7 +1012,7 @@ If in doubt, refer to [Butterwick's Practical Typography](http://practicaltypogr
 
 These rules apply to the English language; other languages may have their own conventions which should be followed by translators.
 
-## Using Ellipsis {#using-ellipses}
+## Using Ellipses {#using-ellipses}
 
 The ellipsis character (…) is used in the interface for two primary reasons: informing the user of an additional required information and letting the user know text has been shortened.
 

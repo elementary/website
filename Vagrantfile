@@ -66,8 +66,9 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     # install packages
+    sudo add-apt-repository ppa:ondrej/php
     sudo apt-get update
-    sudo apt-get install -y php5 php5-curl php5-json
+    sudo apt-get install -y php php-curl php-intl php-json php-mbstring php-xml
 
     # setup log file
     sudo touch /var/log/mvp.log

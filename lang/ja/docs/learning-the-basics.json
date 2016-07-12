@@ -7,7 +7,7 @@
     "At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.": "画面の上部にはパネルがあります。パネルの左側にはアプリケーションメニュー、中央には日付と時間、右側にはインジケーターが表示されます。",
     "Applications": "アプリケーション",
     "On the left side of the panel is the Applications item. Clicking <strong>Applications</strong> brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "パネルの左端にはアプリケーションメニューがあります。<strong>アプリケーション</strong>をクリックすると、インストールされているすべてのアプリケーションを含むランチャーが表示されます。複数のページがある場合は、ランチャー下部の切り替えボタンか、スクロールで切り替えられます。また、上部のビュースイッチャーではグリッドビューとカテゴリービューを選択できます。",
-    "Slingshot": "Slingshot",
+    "Slingshot": "検索窓",
     "You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:": "アプリケーションの名前やキーワードを入力することで、該当するアプリケーションやアクション、システム設定の項目を検索できます。ここで検索できるアクションには、以下のようなものがあります。",
     "Shutdown and Restart": "シャットダウンと再起動",
     "Compose Message": "メッセージの作成",

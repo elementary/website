@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "طور فكرتك الى كود",
-    "Learn to design, develop, and publish apps for elementary OS": "تعلم تصميم,تطوير , ونشر تطبيقاتك ل elementary OS",
-    "Sign In or Register for MyApps": "تسجيل دخول او تسجيل حساب ل تطبيقاتي",
+    "Save": "حفظ",
+    "Loki Beta Is Here": "Loki Beta هنا",
+    "Try out the upcoming version of elementary OS.": "جرب الإصدار القادم من نظام إلمنتري",
+    "Download Loki Beta": "تحميل Loki Beta",
+    "Read the Release Notes": "اقرأ ملاحظات الإصدار",
     "Documentation": "وثائق",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "احصل على تطبيق اساسي يعمل ,مبني , و استعد للتوزيع مع دليل المبتدئين",
     "Design": "تصميم",
@@ -9,7 +11,7 @@
     "Reference": "مرجع",
     "Get more info about code style, reporting issues, and proposing design changes.": "احصل على معلومات حول اكواد التصميم ,قضايا المحاسبة , واقتراحات تغير في التصميم",
     "Build for": "مبني ل",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "فريا يجلب API جديدة لوحة التبديل، ومداخل عمل للبحث في المقلاع، والحاجيات الجديدة مثل رأس بار، والرسوم المتحركة في مجموعة الأدوات، وتحسين سمات CSS وأكثر من ذلك. بناء التطبيقات ميزة كاملة أسهل من أي وقت مضى مع جتك 3.14 و 0.30 فاكرها",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "مقاول",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.",
     "HIG for Contractor": "HIG ل Contractor",
@@ -29,5 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
     "Learn More about Vala": "اعرف المزيد حول Vala",
     "Library Documentation for Vala": "مكتبة الوثائق ل Vala",
-    "Develop Apps for elementary OS": "طور تطبيقات لنظام التشغيل المنتري"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "إلغاء",
+    "Loki Beta 64-bit": "Loki Beta معمارية 64بت",
+    "Torrent Magnet Link": "رابط التورنت",
+    "Developer &sdot; elementary": "المطور ⋅ إلمنتري"
 }

@@ -1,7 +1,9 @@
 {
-    "Develop Your Ideas Into Code": "Wujudkan Ide Anda ke dalam Kode",
-    "Learn to design, develop, and publish apps for elementary OS": "Pelajari proses desain, pengembangan, dan publikasi aplikasi untuk elementary OS",
-    "Sign In or Register for MyApps": "Masuk atau Daftar MyApps",
+    "Save": "Save",
+    "Loki Beta Is Here": "Loki Beta Is Here",
+    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
+    "Download Loki Beta": "Download Loki Beta",
+    "Read the Release Notes": "Read the Release Notes",
     "Documentation": "Dokumentasi",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Jadikan app sederhana anda berjalan dan siap untuk didistribusikan dengan Getting Started guide kami.",
     "Design": "Desain",
@@ -9,7 +11,7 @@
     "Reference": "Referensi",
     "Get more info about code style, reporting issues, and proposing design changes.": "Dapatkan info lebih tentang gaya kode, laporan masalah dan usulan perubahan desain.",
     "Build for": "Bangun untuk",
-    "Freya brings a new API for Switchboard, searchable action entries in Slingshot, new widgets like HeaderBar, animations in the toolkit, improved CSS theming and more. Build feature-full apps easier than ever with Gtk 3.14 & Vala 0.30": "Freya berisi API baru untuk Switchboard, entri perintah yang mudah dicari di Slingshot, widget baru seperti Headerbar, animasi dalam toolkit, perbaikan CSS dan banyak lagi. Bangun aplikasi berfitur lengkap lebih mudah dengan Gtk 3.14 & Vala 0.30",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
     "Contractor": "Pembangun",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Layanan ekstensi desktop untuk membuat fungsionalitas aplikasi terekspos ke aplikasi lain - tanpa perlu koordinasi sebelumnya.",
     "HIG for Contractor": "HIG untuk Kontraktor",
@@ -29,5 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Tulislah kode yang cepat, native dan object-oriented dengan Vala. Sangat familiar bagi anda yang telah belajar C#, tapi juga menjaga kompatibilitas API/ABI dengan C standar, memerlukan memori yang rendah and dibuat dengan perhatian khusus untuk GObject. Sebutkan apa saja, Vala punya : signals. properties, generics, fungsi lambda, assisted memory management, exception handling, type inference, async/yield, and lainnya.",
     "Learn More about Vala": "Pelajari Vala Lebih Dalam",
     "Library Documentation for Vala": "Dokumentasi pustaka untuk Vala",
-    "Develop Apps for elementary OS": "Kembangkan Aplikasi untuk elementary OS"
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
+    "Cancel": "Cancel",
+    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Torrent Magnet Link": "Tautan Magnet Torrent",
+    "Developer &sdot; elementary": "Developer ⋅ elementary"
 }
