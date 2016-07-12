@@ -329,7 +329,7 @@
                 </div>
                 <div class="column third">
                     <h2>Safe &amp; Secure</h2>
-                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/trusty/">Security Notices</a></p>
+                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
                 </div>
             </div>
             <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
