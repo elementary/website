@@ -1,42 +1,37 @@
 $(function () {
     var payment_minimum = 100; // Let's make the minimum $1.00 for now
 
-    var previous_amount = 'amount-ten';
+    var previous_button = 'amount-ten';
     var current_amount = 'amount-ten';
-    var amountClick = function() {
-        // Remove existing checks.
-        $('.target-amount').removeClass('checked');
-        // Add current check.
-        $(this).addClass('checked');
-        // Declare new amount.
-        var new_amount;
-        new_amount = this.id;
-        // If different, update the previous and current.
-        if ( new_amount != current_amount ) {
-            previous_amount = current_amount;
-            current_amount = new_amount;
+
+    var amountHandler = function(e) {
+        var targetId = $(e.target).attr('id'); // avoids null values vs native js
+        var targetType = e.type;
+
+        // on amount-custom becoming unfocused and not changing to another amount
+        if (!$(e.target).hasClass('target-amount') && current_amount === 'amount-custom') {
+            var i = document.getElementById('amount-custom');
+
+            // all the things for a 'bad input'
+            if (!i.validity.valid || i.value == '' || i.value * 100 < payment_minimum) {
+                targetId = previous_button;
+                targetType = 'click';
+            }
         }
-    };
-    var amountBlur = function() {
-        // If NOT valid OR empty.
-        if (
-            !this.validity.valid ||
-            this.value == ''
-        ) {
-            // Remove existing checks.
+
+        // on button / input becoming active. Focus of custom amount with valid input considered becoming active
+        if ((targetId === 'amount-custom' || targetType !== 'focusin') && $('#' + targetId).hasClass('target-amount')) {
+            if (targetId !== 'amount-custom') previous_button = targetId;
+
             $('.target-amount').removeClass('checked');
-            // Use the old amount.
-            current_amount = previous_amount;
-            // Set the old amount as checked.
-            $('#' + current_amount).addClass('checked');
+            $('#' + targetId).addClass('checked');
+            current_amount = targetId;
 
             updateDownloadButton();
         }
     };
-    // Listen for Clicking on Amounts
-    $('.target-amount').click(amountClick);
-    // Check Custom Amounts on Blur
-    $('#amount-custom').blur(amountBlur);
+
+    $(document).on('click focusin', amountHandler);
 
     $('#download').click(function(){
         console.log('Pay ' + current_amount);
