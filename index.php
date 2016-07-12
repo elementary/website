@@ -90,7 +90,7 @@
                 </div>
                 <div id="showcase-index">
                     <h2>Apps You Need, Without Ones You Don't.</h2>
-                    <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs. Spend more time using your computer and less time cleaning it up.</p>
+                    <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
                         <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
@@ -253,8 +253,9 @@
                 </div>
                 <div class="column text-left">
                     <img src="images/icons/128/system-software-install.svg" />
-                    <h2>Closer to the Apps</h2>
-                    <p>AppCenter brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
+                    <h2>The Indie, Open Source App Store</h2>
+                    <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
+                    <a href="developer"><p class="read-more">Become a Developer</p></a>
                 </div>
             </div>
             <div id="slingshot" class="row grey">
