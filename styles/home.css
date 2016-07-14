@@ -260,6 +260,13 @@ input:focus + .focus-reveal {
     width: 48vw;
 }
 
+@media (max-width: 425px) {
+    #showcase .window {
+        width: auto;
+        height: 40vh;
+    }
+}
+
 #showcase .window h1,
 #showcase .window h2,
 #showcase .window h3,
