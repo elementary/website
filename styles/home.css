@@ -1,6 +1,6 @@
 /***************************************
 * Copyright 2016 elementary LLC.      *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 /******************
@@ -128,6 +128,18 @@ input:focus + .focus-reveal {
     margin: 32px;
 }
 
+@media (max-width: 320px) {
+    #showcase #showcase-grid li {
+        margin: 22px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 512px) {
+    #showcase #showcase-grid li {
+        margin: 16px;
+    }
+}
+
 #showcase #showcase-grid img {
     display: block;
     width: 64px;
@@ -172,6 +184,12 @@ input:focus + .focus-reveal {
     height: 64px;
     margin-bottom: 16px;
     width: auto;
+}
+
+@media (min-width: 500px) and (max-width: 772px) {
+    #showcase > div.showcase-tab > div:last-child img {
+        margin-top: -96px;
+    }
 }
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
