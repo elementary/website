@@ -1,6 +1,6 @@
 <?php
 $l10n->set_domain('layout');
-if (getenv('PHPENV') && getenv('PHPENV') !== 'production'):
+if ( getenv('PHPENV') !== 'production' ):
 ?>
         <div class="row alert warning">
             <div class="column alert">
