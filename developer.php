@@ -10,7 +10,7 @@
 ?>
 
 <script>var release_title = 'Loki';</script>
-<script>var release_version = '0.4-beta';</script>
+<script>var release_version = '0.4-beta2';</script>
 <script>var download_region = '<?php echo $region; ?>';</script>
 <script>
     jQl.loadjQdep('scripts/jQuery.leanModal2.js');
@@ -20,9 +20,9 @@
 <section class="hero dark">
     <div>
         <img src="images/developer/save.svg" alt="Save">
-        <h1>Loki Beta Is Here</h1>
+        <h1>Loki Beta 2 Is Here</h1>
         <h4>Try out the upcoming version of elementary OS.</h4>
-        <button type="submit" id="download" class="suggested-action">Download Loki Beta</button>
+        <button type="submit" id="download" class="suggested-action">Download Loki Beta 2</button>
         <p class="small-label"><a href="http://blog.elementary.io/post/145881464631/loki-beta">Read the Release Notes</a></p>
     </div>
 </section>
@@ -118,15 +118,15 @@
 </section>
 <div id="download-modal" class="modal">
     <div class="modal-container">
-        <h3>Download Loki Beta</h3>
+        <h3>Download Loki Beta 2</h3>
         <p>By downloading this beta you accept that it is not a final product and will be unstable.</p>
         <div class="row actions">
             <div class="column">
                 <a class="button close-modal" href="#">Cancel</a>
             </div>
             <div class="column linked">
-                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso">Loki Beta 64-bit</a>
-                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:3f6ee22812f02f862b5f93f6d0e871e4dd8bf598&dn=elementaryos-0.4-beta-amd64.20160613.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta-amd64.20160613.iso"><i class="fa fa-magnet"></i></a>
+                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
+                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
             </div>
         </div>
     </div>
