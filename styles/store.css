@@ -22,34 +22,34 @@
 * List view of product *
 ***********************/
 
-.row.product > * {
+.row--list > * {
     padding: 8px;
 }
 
 @media (min-width: 444px) {
-    .row.product {
+    .row--list {
         width: 100%;
         display: table;
     }
 
-    .row.product > * {
+    .row--list > * {
         display: table-cell;
         vertical-align: middle;
         white-space: nowrap;
     }
 
-    .row.product > img {
+    .row--list > img {
         height: 150px;
         min-width: 150px;
     }
 
-    .row.product > .information {
+    .row--list > .information {
         width: 100%;
         text-align: left;
     }
 
-    .totals {
-        float: right;
+    .store-totals {
+        text-align: right;
     }
 }
 
@@ -57,6 +57,6 @@
 * Per-Page styles *
 ******************/
 
-[class="page-store/cart"] .row {
+.row--small {
     max-width: 704px;
 }

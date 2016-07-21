@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__.'/../backend/store.php';
 require_once __DIR__.'/../backend/amplifier.php';
 

@@ -7,89 +7,159 @@
     include $template['header'];
     include $template['alert'];
 
-    // TODO: check variables for bad eggs
+    require_once __DIR__.'/../backend/store.php';
+    $cart = store_cart();
 
-    $address = new \Ups\Entity\Address();
-    $address->setAttentionName($_POST['name']);
-    $address->setAddressLine1($_POST['address-line1']);
-    $address->setAddressLine2($_POST['address-line2']);
-    $address->setCity($_POST['address-level2']);
-    $address->setStateProvinceCode($_POST['address-level1']);
-    $address->setCountryCode($_POST['country']);
-    $address->setPostalCode($_POST['postal-code']);
+    require_once __DIR__.'/../backend/shipment.php';
+    $shipment = new Shipment();
 
-    try {
-        $xav = new \Ups\AddressValidation($config['ups_access'], $config['ups_user'], $config['ups_password']);
-        $xav->activateReturnObjectOnValidate();
-        $response = $xav->validate($address, $requestOption = \Ups\AddressValidation::REQUEST_OPTION_ADDRESS_VALIDATION, $maxSuggestion = 1);
-
-        if ($response->isValid()) {
-            $valid = $response->getValidatedAddress();
-            $address->setAddressLine1($valid->getAddressLine(1));
-            $address->setAddressLine2($valid->getAddressLine(2));
-            $address->setAddressLine3($valid->getAddressLine(3));
-            $address->setCity($valid->getCity());
-            $address->setStateProvinceCode($valid->getStateProvince());
-            $address->setPostalCode($valid->getPostalCode());
-        } else if ($response->isAmbiguous()) {
-            $possibles = $response->getCandidateAddressList();
-            print_r("==== POSS ====");
-            print_r($possibles[0]);
-            $address = $possibles[0];
-        } else if ($response->noCandidates()) {
-            // Notify user the address might be wrong
-        }
-    } catch (Exception $e) {
-        // Notify user unable to verify address (similar to above)
+    if (count($cart) === 0) {
+        $error = new Exception('Trying to checkout with an empty cart');
+    } else {
+        $error = false;
     }
-?>
 
-<hr>
+    if (!$error) {
+        if (!isset($_POST['name'])) {
+            $error = new Exception('Checkout requires a shipment name');
+        }
 
-<?php
-    $shipment = new \Ups\Entity\Shipment();
+        if (!isset($_POST['address-line1'])) {
+            $error = new Exception('Checkout requires a shipment address line');
+        }
 
-    $fromAddress = new \Ups\Entity\Address();
-    $fromAddress->setPostalCode('78721');
-    $from = new \Ups\Entity\ShipFrom();
-    $from->setAddress($fromAddress);
-    $shipment->setShipFrom($from);
+        if (!isset($_POST['address-level2'])) {
+            $error = new Exception('Checkout requires a shipment address city');
+        }
 
-    $to = new \Ups\Entity\ShipTo();
-    $to->setAddress($address);
-    $shipment->setShipTo($to);
+        if (!isset($_POST['address-level1'])) {
+            $error = new Exception('Checkout requires a shipment address state');
+        }
 
-    $cart = json_decode($_COOKIE['cart'], true);
-    $weight = 0;
-    print_r($cart);
-    foreach($cart as $id => $product) {
-        if (isset($product['weight'])) {
-            $weight = bcadd($weight, $product['weight']);
-        } else {
-            // oh god, an unknown weight. how to rate shipping?
+        if (!isset($_POST['country'])) {
+            $error = new Exception('Checkout requires a shipment address country');
+        }
+
+        if (!isset($_POST['postal-code'])) {
+            $error = new Exception('Checkout requires a shipment address postal code');
         }
     }
 
-    $kg = new \Ups\Entity\UnitOfMeasurement;
-    $kg->setCode(\Ups\Entity\UnitOfMeasurement::UOM_KGS);
-
-    $package = new \Ups\Entity\Package();
-    $package->getPackagingType()->setCode(\Ups\Entity\PackagingType::PT_UNKNOWN);
-    $package->getPackageWeight()->setUnitOfMeasurement($kg);
-    $package->getPackageWeight()->setWeight($weight);
-    $shipment->addPackage($package);
-
-    $rate = new \Ups\Rate($config['ups_access'], $config['ups_user'], $config['ups_password']);
-
-    try {
-        $response = $rate->getRate($shipment);
-    } catch (Exception $e) {
-        var_dump($e);
+    if (!$error) {
+        try {
+            $shipment->set_name($_POST['name']);
+            $shipment->set_line1($_POST['address-line1']);
+            $shipment->set_line2($_POST['address-line2']);
+            $shipment->set_level2($_POST['address-level2']);
+            $shipment->set_level1($_POST['address-level1']);
+            $shipment->set_country($_POST['country']);
+            $shipment->set_postal($_POST['postal-code']);
+        } catch (Exception $e) {
+            $error = new Exception('Unable to parse shipment form');
+        }
     }
 
-    print_r($response);
+    if (!$error) {
+        try {
+            $shipment->do_validation();
+        } catch (Exception $e) {
+            $error = new Exception('Unable to verify shipping address');
+        }
+    }
+
+    // Time to grab all the weight
+    if (!$error) {
+        try {
+            $weight = 0;
+
+            foreach($cart as $id => $product) {
+                if (isset($product['weight'])) {
+                    $weight = $weight + $product['weight'];
+                } else {
+                    throw new Exception();
+                }
+            }
+
+            $shipment->set_weight($weight);
+        } catch (Exception $e) {
+            $error = new Exception('Unable to calculate weights for shopping cart');
+        }
+    }
+
+    if (!$error) {
+        try {
+            $rate = $shipment->get_rate();
+        } catch (Exception $e) {
+            $error = new Exception('Unable to get rates for shipment');
+        }
+    }
+
+    if (!$error) {
+        $shippingPrice = $rate->RatedShipment[0]->TotalCharges->MonetaryValue;
 ?>
 
+<div class="row">
+    <h1>Checkout</h1>
+
+    <?php
+        $sub_total = 0;
+        $index = 0;
+        foreach ($cart as $id => $product) {
+            $sub_total += ($product['quantity'] * $product['retail_price']);
+            $index++;
+    ?>
+
+    <div class="row row--list row--small">
+        <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
+        <div class="information">
+            <h3><?php echo $product['full_name'] ?></h3>
+            <h3>$<?php echo $product['retail_price'] ?></h3>
+        </div>
+        <div>
+            <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
+            <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
+            <label for="product-<?php echo $index ?>-quantity">Qty:</label>
+            <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
+        </div>
+        <a href="/store/inventory?id=<?php echo $product['id'] ?>&math=subtract&quantity=<?php echo $product['quantity'] ?>">remove</a>
+    </div>
+
+    <?php
+        }
+    ?>
+
+    <div class="row row--small store-totals">
+        <hr>
+        <h4>Sub-Total: $<?php echo $sub_total; ?></h4>
+        <h4>Shipping: $<?php echo $shippingPrice; ?></h4>
+        <hr>
+        <h4>Total: $<?php echo $sub_total + $shippingPrice; ?></h4>
+    </div>
+
+    <div class="row">
+        <h2>Shipping information</h2>
+
+        <div>
+            <?php echo $shipment->get_name(); ?>
+            <?php echo $shipment->get_line1(); ?>
+            <?php echo $shipment->get_line2(); ?>
+            <?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?>
+            <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?>
+        </div>
+    </div>
+
+    <a href="#" class="button suggested-action">Place order</a>
+</div>
+
+<?php } else { ?>
+
+<div class="row">
+    <h3><?php echo $error->getMessage(); ?></h3>
+    <a href="/store/">Return to store</a>
+</div>
+
 <?php
+    }
+
     include $template['footer'];
 ?>
