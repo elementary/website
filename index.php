@@ -1,5 +1,5 @@
 <?php
-    $page['title'] = 'Download elementary OS';
+    $page['title'] = 'Purchase elementary OS';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include __DIR__.'/_templates/sitewide.php';
@@ -59,7 +59,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label">1.15 GB (for PC or Mac)</p>
+                <p class="small-label">0.3 Freya | 1.15 GB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>

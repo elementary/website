@@ -76,6 +76,12 @@ foreach ( $translation_files as $filename ) {
           $error = true;
           $result['errors'][] = $shortname.":$line_number => Unopened \"".$close_tag."\" tag";
         }
+
+        // Check for an even amount of quotes, but ignore sr language do to weird scheme
+        if (substr($shortname, 1, 2) != 'sr' && substr_count($value, '"') % 2 != 0) {
+            $error = true;
+            $result['errors'][] = $shortname.":$line_number => Uneven amount of \" quotes";
+        }
     }
 
     if ($error) {

@@ -29,6 +29,8 @@ $(function () {
             current_amount = previous_amount;
             // Set the old amount as checked.
             $('#' + current_amount).addClass('checked');
+
+            updateDownloadButton();
         }
     };
     // Listen for Clicking on Amounts
@@ -112,7 +114,8 @@ $(function () {
 
         console.log('Open the download overlay!');
         $open_modal.leanModal({
-            // Add this class to download buttons to make them close it.
+            top: '15vmin',
+            overlayOpacity: 0.5,
             closeButton: '.close-modal',
         });
         $open_modal.click();
@@ -170,23 +173,23 @@ $(function () {
     $(function() {
         $.getJSON('data/slingshot.json', function(data) {
             $.each(data.grid, function(i, f) {
-                var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var griditems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg" alt="'+f.title+'"/><p>'+f.title+'</p>'
                 $(griditems).appendTo(".slingshot-grid");
             });
             $.each(data.categories, function(i, f) {
-                var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var categoriesitems = '<div class="app '+f.position+'"><img src="images/icons/'+f.icon+'.svg" alt="'+f.title+'"/><p>'+f.title+'</p>'
                 $(categoriesitems).appendTo(".slingshot-categories");
             });
             $.each(data.searchone, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg" alt="'+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchone");
             });
             $.each(data.searchtwo, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg" alt="'+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchtwo");
             });
             $.each(data.searchthree, function(i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg"/><p>'+f.title+'</p>'
+                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/'+f.icon+'.svg" alt="'+f.title+'"/><p>'+f.title+'</p>'
                 $(searchitems).appendTo(".searchthree");
             });
         });
@@ -242,13 +245,16 @@ $(function () {
 
         if ($('#amounts').children().length <= 1) {
             $('#download').text(translate_download);
+            document.title = translate_download;
         } else if (
             $('button.payment-button').hasClass('checked') ||
             $('#amount-custom').val() * 100 >= payment_minimum
         ) {
             $('#download').text(translate_purchase);
+            document.title = translate_purchase;
         } else {
             $('#download').text(translate_download);
+            document.title = translate_download;
         }
     }
 

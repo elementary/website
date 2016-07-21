@@ -17,11 +17,14 @@ class Translator {
         'fi' => 'Suomi',
         'fr' => 'Français',
         'hr_HR' => 'hrvatski (Hrvatska)',
+        'hu' => 'Magyar',
         'id_ID' => 'Bahasa Indonesia',
         'it' => 'Italiano',
+        'ja' => '日本語',
+        'ko' => '한국어',
         'lt' => 'Lietuvių kalba',
-        'ne' => 'नेपाली',
         'nb' => 'Bokmål',
+        'ne' => 'नेपाली',
         'nl' => 'Nederlands',
         'no' => 'Norsk',
         'pl' => 'Polski',
@@ -34,6 +37,7 @@ class Translator {
         'sv' => 'Svenska',
         'tr_TR' => 'Türkçe',
         'uk' => 'Мова',
+        'vi' => 'Tiếng Việt',
         'zh_CN' => '简体中文',
         'zh_TW' => '繁體中文',
     );
@@ -122,7 +126,9 @@ class Translator {
                 if ($this->is_lang($lang)) {
                     return $lang;
                 }
-            } elseif ($this->is_lang($locale['language'])) {
+            }
+
+            if (!empty($locale['language']) && $this->is_lang($locale['language'])) {
                 return $locale['language'];
             }
         }

@@ -69,6 +69,7 @@ For bypassing Vagrant you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
 * `php7.0-curl`
+* `php7.0-intl`
 * `php7.0-json`
 * `php7.0-mbstring`
 * `php7.0-soap`
