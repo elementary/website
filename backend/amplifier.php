@@ -1,6 +1,10 @@
 <?php
+
 require_once __DIR__.'/config.loader.php';
 
+////    Amplifier related api calls and cleaning
+
+// Grabs raw amplifier data from server. Currently hard coded for testing
 // TODO: add api grabbing from amplifier
 function amplifier_raw() {
     return [[
@@ -121,10 +125,12 @@ function amplifier_raw() {
     ]];
 }
 
+// Cleans up the raw information into useful PHP arrays
 function amplifier_product() {
     $data = amplifier_raw();
     $sorted = [];
 
+    // These are used when creating the products full name (small logotype)
     $sizes = [
         'S' => 'Small',
         'M' => 'Medium',
@@ -133,20 +139,30 @@ function amplifier_product() {
         'XXL' => 'Extra Extra Large'
     ];
 
-    // averate weight of category in kilgograms
+    // Averate weight of category in kilgograms (used for shipping calculations)
     $weights = [
         'apparel' => 0.15,
         'stickers' => 0.01
     ];
 
     foreach ($data as $key => &$value) {
-        $sorted[$value['id']] = $value;
-
         $product = &$sorted[$value['id']];
 
+        // Set the new array value to raw data
+        $product = $value;
+
+        // Add a uid paramiter for easier identifying
         $product['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
 
+        // If the weight is not set, add the average category weight from $weights
+        if (!isset($product['weight']) && isset($weights[$product['category']])) {
+            $product['weight'] = $weights[$product['category']];
+        }
+
+        // Array of words that will make up the full product name (small blue logotype)
         $name_array = [];
+
+        // If we have a size, add it to the name
         if (isset($product['size'])) {
             if (isset($sizes[$product['size']])) {
                 array_push($name_array, $sizes[$product['size']]);
@@ -155,15 +171,15 @@ function amplifier_product() {
             }
         }
 
+        // Add color to the name
         if (isset($product['color'])) {
             array_push($name_array, $product['color']);
         }
 
-        if (!isset($product['weight']) && isset($weights[$product['category']])) {
-            $product['weight'] = $weights[$product['category']];
-        }
-
+        // Add the actual product name to the full name
         array_push($name_array, $product['name']);
+
+        // And we explode the array for a nice descriptive name
         $product['full_name'] = implode(' ', $name_array);
     }
 
