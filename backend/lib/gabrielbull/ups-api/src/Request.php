@@ -35,6 +35,11 @@ class Request implements RequestInterface, LoggerAwareInterface
     protected $logger;
 
     /**
+     * @var Guzzle
+     */
+    protected $client;
+
+    /**
      * @param LoggerInterface $logger
      */
     public function __construct(LoggerInterface $logger = null)
@@ -44,6 +49,8 @@ class Request implements RequestInterface, LoggerAwareInterface
         } else {
             $this->setLogger(new NullLogger);
         }
+
+        $this->setClient();
     }
 
     /**
@@ -56,6 +63,16 @@ class Request implements RequestInterface, LoggerAwareInterface
     public function setLogger(LoggerInterface $logger)
     {
         $this->logger = $logger;
+    }
+
+    /**
+     * Creates a single instance of the Guzzle client
+     *
+     * @return null
+     */
+    public function setClient()
+    {
+        $this->client = new Guzzle();
     }
 
     /**
@@ -90,9 +107,7 @@ class Request implements RequestInterface, LoggerAwareInterface
         ]);
 
         try {
-            $client = new Guzzle();
-
-            $response = $client->post(
+            $response = $this->client->post(
                 $this->getEndpointUrl(),
                 [
                     'body' => $this->getAccess() . $this->getRequest(),
@@ -117,9 +132,7 @@ class Request implements RequestInterface, LoggerAwareInterface
             ]);
 
             if ($response->getStatusCode() === 200) {
-                if (function_exists('mb_convert_encoding')) {
-                    $body = mb_convert_encoding($body, 'UTF-8', mb_detect_encoding($body));
-                }
+                $body = $this->convertEncoding($body);
 
                 $xml = new SimpleXMLElement($body);
                 if (isset($xml->Response) && isset($xml->Response->ResponseStatusCode)) {
@@ -202,5 +215,23 @@ class Request implements RequestInterface, LoggerAwareInterface
     public function getEndpointUrl()
     {
         return $this->endpointUrl;
+    }
+
+    /**
+     * @param $body
+     * @return string
+     */
+    protected function convertEncoding($body)
+    {
+        if (!function_exists('mb_convert_encoding')) {
+            return $body;
+        }
+
+        $encoding = mb_detect_encoding($body);
+        if ($encoding) {
+            return mb_convert_encoding($body, 'UTF-8', $encoding);
+        }
+
+        return utf8_encode($body);
     }
 }

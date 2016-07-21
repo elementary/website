@@ -4,12 +4,10 @@ namespace Ups\Entity\Tradeability;
 
 use DomDocument;
 use DomElement;
-use Ups\Entity\FreightCharges;
 use Ups\NodeInterface;
 
 class Shipment implements NodeInterface
 {
-
     const TRANSPORT_MODE_AIR = 1;
     const TRANSPORT_MODE_GROUND = 2;
     const TRANSPORT_MODE_RAIL = 3;

@@ -135,6 +135,16 @@ class InternationalForms implements NodeInterface
     private $freightCharges;
 
     /**
+     * @var bool
+     */
+    private $additionalDocumentIndicator;
+
+    /**
+     * @var EEIFilingOption
+     */
+    private $eeiFilingOption;
+
+    /**
      * @return array
      */
     public static function getTypes()
@@ -176,6 +186,9 @@ class InternationalForms implements NodeInterface
             }
             if (isset($attributes->CurrencyCode)) {
                 $this->setCurrencyCode($attributes->CurrencyCode);
+            }
+            if (isset($attributes->EEIFilingOption)) {
+                $this->setEEIFilingOption(new EEIFilingOption($attributes->EEIFilingOption));
             }
         }
     }
@@ -302,6 +315,12 @@ class InternationalForms implements NodeInterface
         }
         if ($this->getFreightCharges() !== null) {
             $node->appendChild($this->getFreightCharges()->toNode($document));
+        }
+        if ($this->getAdditionalDocumentIndicator() !== null) {
+            $node->appendChild($document->createElement('AdditionalDocumentIndicator'));
+        }
+        if ($this->getEEIFilingOption() !== null) {
+            $node->appendChild($this->getEEIFilingOption()->toNode($document));
         }
         foreach ($this->products as $product) {
             $node->appendChild($product->toNode($document));
@@ -456,5 +475,43 @@ class InternationalForms implements NodeInterface
     public function getCurrencyCode()
     {
         return $this->currencyCode;
+    }
+
+    /**
+     * @param $additionalDocumentIndicator
+     *
+     * @return $this
+     */
+    public function setAdditionalDocumentIndicator($additionalDocumentIndicator)
+    {
+        $this->additionalDocumentIndicator = $additionalDocumentIndicator;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getAdditionalDocumentIndicator()
+    {
+        return $this->additionalDocumentIndicator;
+    }
+
+    /**
+     * @param EEIFilingOption $eeiFilingOption
+     *
+     * @return $this
+     */
+    public function setEEIFilingOption(EEIFilingOption $eeiFilingOption)
+    {
+        $this->eeiFilingOption = $eeiFilingOption;
+
+        return $this;
+    }
+
+    /**
+     * @return EEIFilingOption
+     */
+    public function getEEIFilingOption()
+    {
+        return $this->eeiFilingOption;
     }
 }

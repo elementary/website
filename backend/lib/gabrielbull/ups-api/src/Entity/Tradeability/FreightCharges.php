@@ -7,7 +7,6 @@ use DOMElement;
 
 class FreightCharges extends \Ups\Entity\FreightCharges
 {
-
     private $currencyCode;
 
     public function __construct($response = null)

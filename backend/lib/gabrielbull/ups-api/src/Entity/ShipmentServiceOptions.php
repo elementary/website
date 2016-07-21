@@ -59,6 +59,11 @@ class ShipmentServiceOptions implements NodeInterface
     private $notifications = [];
 
     /**
+     * @var AccessPointCOD
+     */
+    private $accessPointCOD;
+
+    /**
      * @param null $response
      */
     public function __construct($response = null)
@@ -74,6 +79,9 @@ class ShipmentServiceOptions implements NodeInterface
             }
             if (isset($response->COD)) {
                 $this->COD = $response->COD;
+            }
+            if (isset($response->AccessPointCOD)) {
+                $this->setAccessPointCOD(new AccessPointCOD($response->AccessPointCOD));
             }
             if (isset($response->CallTagARS)) {
                 $this->CallTagARS = new CallTagARS($response->CallTagARS);
@@ -126,6 +134,10 @@ class ShipmentServiceOptions implements NodeInterface
             $node->appendChild($this->getCOD()->toNode($document));
         }
 
+        if ($this->getAccessPointCOD()) {
+            $node->appendChild($this->getAccessPointCOD()->toNode($document));
+        }
+
         if (isset($this->internationalForms)) {
             $node->appendChild($this->internationalForms->toNode($document));
         }
@@ -140,11 +152,31 @@ class ShipmentServiceOptions implements NodeInterface
     }
 
     /**
+     * @return AccessPointCOD
+     */
+    public function getAccessPointCOD()
+    {
+        return $this->accessPointCOD;
+    }
+
+    /**
+     * @param $accessPointCOD
+     * @return $this
+     */
+    public function setAccessPointCOD($accessPointCOD)
+    {
+        $this->accessPointCOD = $accessPointCOD;
+        return $this;
+    }
+
+    /**
      * @param InternationalForms $data
+     * @return $this
      */
     public function setInternationalForms(InternationalForms $data)
     {
         $this->internationalForms = $data;
+        return $this;
     }
 
     /**

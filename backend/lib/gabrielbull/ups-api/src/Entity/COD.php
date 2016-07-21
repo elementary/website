@@ -8,7 +8,6 @@ use Ups\NodeInterface;
 
 class COD implements NodeInterface
 {
-
     public $CODCode;
     public $CODFundsCode;
     public $CODAmount;

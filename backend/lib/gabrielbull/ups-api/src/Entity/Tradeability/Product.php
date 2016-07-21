@@ -66,9 +66,15 @@ class Product implements NodeInterface
         $node = $document->createElement('Product');
 
         // Required
-        $node->appendChild($this->getTariffInfo()->toNode($document));
-        $node->appendChild($this->getUnitPrice()->toNode($document));
-        $node->appendChild($this->getQuantity()->toNode($document));
+        if ($this->getTariffInfo() !== null) {
+            $node->appendChild($this->getTariffInfo()->toNode($document));
+        }
+        if ($this->getUnitPrice() !== null) {
+            $node->appendChild($this->getUnitPrice()->toNode($document));
+        }
+        if ($this->getQuantity() !== null) {
+            $node->appendChild($this->getQuantity()->toNode($document));
+        }
 
         // Optional
         if ($this->getProductName() !== null) {

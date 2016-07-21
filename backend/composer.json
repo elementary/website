@@ -3,7 +3,7 @@
         "vendor-dir": "lib"
     },
     "require": {
-        "stripe/stripe-php": "^3.11",
+        "stripe/stripe-php": "3.17.0",
         "gabrielbull/ups-api": "^0.7.6"
     }
 }

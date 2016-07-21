@@ -27,12 +27,12 @@
     }
   ],
   "require": {
-    "php": ">=5.5",
-    "guzzlehttp/guzzle": "~6.0@dev|>=6",
-    "psr/log": "~1|~1.0|1.0.0|dev-master"
+    "php": "^5.5 || ^7.0",
+    "guzzlehttp/guzzle": "^6.0",
+    "psr/log": "^1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4"
+    "phpunit/phpunit": "^4.8 || ^5.0"
   },
   "autoload": {
     "psr-4": {

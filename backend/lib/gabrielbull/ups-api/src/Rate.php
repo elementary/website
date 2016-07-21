@@ -136,6 +136,11 @@ class Rate extends Ups
 
         $trackRequest->appendChild($rateRequest->getPickupType()->toNode($document));
 
+        $customerClassification = $rateRequest->getCustomerClassification();
+        if (isset($customerClassification)) {
+            $trackRequest->appendChild($customerClassification->toNode($document));
+        }
+
         $shipmentNode = $trackRequest->appendChild($xml->createElement('Shipment'));
 
         // Support specifying an individual service

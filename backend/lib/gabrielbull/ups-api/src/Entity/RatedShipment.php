@@ -39,6 +39,12 @@ class RatedShipment
             if (isset($response->BillingWeight)) {
                 $this->BillingWeight = new BillingWeight($response->BillingWeight);
             }
+            if (isset($response->GuaranteedDaysToDelivery)) {
+                $this->GuaranteedDaysToDelivery = $response->GuaranteedDaysToDelivery;
+            }
+            if (isset($response->ScheduledDeliveryTime)) {
+                $this->ScheduledDeliveryTime = $response->ScheduledDeliveryTime;
+            }
             if (isset($response->TransportationCharges)) {
                 $this->TransportationCharges = new Charges($response->TransportationCharges);
             }

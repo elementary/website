@@ -32,7 +32,9 @@ class QueryRequest implements NodeInterface
 
         $node = $document->createElement('QueryRequest');
 
-        $node->appendChild($this->getShipment()->toNode($document));
+        if ($this->getShipment() !== null) {
+            $node->appendChild($this->getShipment()->toNode($document));
+        }
         $node->appendChild(
             $document->createElement(
                 'SuppressQuestionIndicator',

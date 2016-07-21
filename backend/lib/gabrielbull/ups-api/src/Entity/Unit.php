@@ -58,7 +58,9 @@ class Unit implements NodeInterface
         $node = $document->createElement('Unit');
         $node->appendChild($document->createElement('Number', $this->getNumber()));
         $node->appendChild($document->createElement('Value', $this->getValue()));
-        $node->appendChild($this->getUnitOfMeasurement()->toNode($document));
+        if ($this->getUnitOfMeasurement() !== null) {
+            $node->appendChild($this->getUnitOfMeasurement()->toNode($document));
+        }
 
         return $node;
     }
@@ -92,7 +94,7 @@ class Unit implements NodeInterface
      */
     public function setValue($value)
     {
-        $this->value = number_format($value, 6);
+        $this->value = number_format($value, 6, '.', '');
 
         if (strlen((string)$this->value) > 19) {
             throw new \Exception('Value too long');
