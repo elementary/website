@@ -66,17 +66,15 @@
     foreach ($categories as $category => $items) {
 ?>
 
-    <div class="grid">
+    <div class="grid grid--product">
 
-        <div>
-            <h2><?php echo $category ?></h2>
-        </div>
+        <h2 class="grid__title"><?php echo $category ?></h2>
 
         <?php
             foreach ($items as $key => $item) {
         ?>
 
-            <div class="third product" id="<?php echo $item['name'] ?>">
+            <div class="grid__item" id="<?php echo $item['name'] ?>">
                 <img src="images/store/<?php echo $item['uid'] ?>-small.png"/>
                 <h2><?php echo $item['name'] ?></h2>
                 <?php if ($item['retail_min'] !== $item['retail_max']) { ?>

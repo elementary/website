@@ -7,56 +7,99 @@
 * Category view of product *
 ***************************/
 
-.grid > .product {
-    max-width: 300px;
-    display: inline-block;
-    padding: 16px;
+.grid--product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
-.grid > .product img {
-    max-width: 100%;
-    max-height: 200px;
+.grid--product .grid__title {
+    flex: 0 0 100%;
+    text-transform: capitalize;
+}
+
+.grid--product .grid__item {
+    margin: 20px;
+    max-width: 260px;
 }
 
 /***********************
 * List view of product *
 ***********************/
 
-.row--list > * {
-    padding: 8px;
+.list--product {
+    display: block;
+    margin: 32px auto;
+    max-width: 640px;
 }
 
-@media (min-width: 444px) {
-    .row--list {
-        width: 100%;
-        display: table;
-    }
+.list--product .list__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0;
+    text-align: center;
+    width: 100%;
+}
 
-    .row--list > * {
-        display: table-cell;
-        vertical-align: middle;
-        white-space: nowrap;
-    }
+.list--product .list__item a {
+    color: inherit;
+}
 
-    .row--list > img {
-        height: 150px;
-        min-width: 150px;
-    }
+.list--product .list__item img {
+    height: 180px;
+    width: 180px;
+}
 
-    .row--list > .information {
-        width: 100%;
+.list--product .list__item > *:not(:last-child):not(:first-child) {
+    flex: 1 1 auto;
+    margin: 0 10px;
+}
+
+.list--product .list__footer {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .list--product .list__item {
+        flex-direction: row;
         text-align: left;
     }
 
-    .store-totals {
+    .list--product .list__footer {
         text-align: right;
     }
 }
 
-/******************
-* Per-Page styles *
-******************/
+/****************
+* Shipping Grid *
+****************/
 
-.row--small {
-    max-width: 704px;
+.grid--address {
+    margin: 0 auto;
+    max-width: 672px;
+}
+
+.grid--address > *:not(:last-of-type) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.grid--address > *:not(:last-of-type) > * {
+    flex: 1 1 auto;
+    margin: 6px;
+    min-width: 100px;
+    padding: 8px;
+}
+
+.grid--address input[autocomplete="address-level1"] {
+    flex: 1 1 2ch;
+}
+
+.grid--address input[autocomplete="postal-code"] {
+    flex: 1 1 5ch;
 }

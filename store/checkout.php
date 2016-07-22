@@ -20,7 +20,7 @@
     }
 
     if (!$error) {
-        if (!isset($_POST['name'])) {
+        if (!isset($_POST['first-name']) || !isset($_POST['last-name'])) {
             $error = new Exception('Checkout requires a shipment name');
         }
 
@@ -36,10 +36,6 @@
             $error = new Exception('Checkout requires a shipment address state');
         }
 
-        if (!isset($_POST['country'])) {
-            $error = new Exception('Checkout requires a shipment address country');
-        }
-
         if (!isset($_POST['postal-code'])) {
             $error = new Exception('Checkout requires a shipment address postal code');
         }
@@ -47,12 +43,12 @@
 
     if (!$error) {
         try {
-            $shipment->set_name($_POST['name']);
+            $shipment->set_name($_POST['first-name'].' '.$_POST['last-name']);
             $shipment->set_line1($_POST['address-line1']);
             $shipment->set_line2($_POST['address-line2']);
             $shipment->set_level2($_POST['address-level2']);
             $shipment->set_level1($_POST['address-level1']);
-            $shipment->set_country($_POST['country']);
+            $shipment->set_country('US');
             $shipment->set_postal($_POST['postal-code']);
         } catch (Exception $e) {
             $error = new Exception('Unable to parse shipment form');
@@ -100,7 +96,9 @@
 
 <div class="row">
     <h1>Checkout</h1>
+</div>
 
+<div class="list list--product">
     <?php
         $sub_total = 0;
         $index = 0;
@@ -109,7 +107,7 @@
             $index++;
     ?>
 
-    <div class="row row--list row--small">
+    <div class="list__item">
         <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
         <div class="information">
             <h3><?php echo $product['full_name'] ?></h3>
@@ -120,35 +118,36 @@
             <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
             <label for="product-<?php echo $index ?>-quantity">Qty:</label>
             <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
+            <a href="/store/inventory?id=<?php echo $product['id'] ?>&math=subtract&quantity=<?php echo $product['quantity'] ?>"><i class="fa fa-times"></i></a>
         </div>
-        <a href="/store/inventory?id=<?php echo $product['id'] ?>&math=subtract&quantity=<?php echo $product['quantity'] ?>">remove</a>
     </div>
 
     <?php
         }
     ?>
 
-    <div class="row row--small store-totals">
+    <div class="list__footer">
         <hr>
         <h4>Sub-Total: $<?php echo $sub_total; ?></h4>
         <h4>Shipping: $<?php echo $shippingPrice; ?></h4>
         <hr>
         <h4>Total: $<?php echo $sub_total + $shippingPrice; ?></h4>
     </div>
+</div>
 
-    <div class="row">
-        <h2>Shipping information</h2>
+<div class="row">
+    <h1>Shipping information</h1>
+</div>
 
-        <div>
-            <?php echo $shipment->get_name(); ?>
-            <?php echo $shipment->get_line1(); ?>
-            <?php echo $shipment->get_line2(); ?>
-            <?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?>
-            <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?>
-        </div>
+<div class="grid grid--address">
+    <div><?php echo $shipment->get_name(); ?></div>
+    <div><?php echo $shipment->get_line1(); ?></div>
+    <div><?php echo $shipment->get_line2(); ?></div>
+    <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
+
+    <div>
+        <a href="#" class="button suggested-action">Place order</a>
     </div>
-
-    <a href="#" class="button suggested-action">Place order</a>
 </div>
 
 <?php } else { ?>
