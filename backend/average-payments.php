@@ -12,13 +12,6 @@ if ( $processing ) {
     $OS = strtolower(htmlentities($_POST['os'], ENT_QUOTES, 'UTF-8'));
 }
 
-////    TEMP
-if ( !empty($_GET['amount']) ) {
-    $amount = $_GET['amount'];
-    $OS = 'linux';
-    $processing = true;
-}
-
 ////    Error Handling
 function LastError($db) {
     $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
