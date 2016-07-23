@@ -7,13 +7,14 @@
     include $template['header'];
     include $template['alert'];
 
-    require_once __DIR__.'/../backend/store.php';
-    $cart = store_cart();
+    require_once __DIR__.'/../backend/cart.php';
+
+    $cart = new Cart('post');
 
     require_once __DIR__.'/../backend/shipment.php';
     $shipment = new Shipment();
 
-    if (count($cart) === 0) {
+    if ($cart->get_count() <= 0) {
         $error = new Exception('Trying to checkout with an empty cart');
     } else {
         $error = false;
@@ -66,17 +67,7 @@
     // Time to grab all the weight
     if (!$error) {
         try {
-            $weight = 0;
-
-            foreach($cart as $id => $product) {
-                if (isset($product['weight'])) {
-                    $weight = $weight + $product['weight'];
-                } else {
-                    throw new Exception();
-                }
-            }
-
-            $shipment->set_weight($weight);
+            $shipment->set_weight($cart->get_weights());
         } catch (Exception $e) {
             $error = new Exception('Unable to calculate weights for shopping cart');
         }
@@ -100,10 +91,8 @@
 
 <div class="list list--product">
     <?php
-        $sub_total = 0;
         $index = 0;
-        foreach ($cart as $id => $product) {
-            $sub_total += ($product['quantity'] * $product['retail_price']);
+        foreach ($cart->get_products() as $id => $product) {
             $index++;
     ?>
 
@@ -117,8 +106,7 @@
             <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
             <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
             <label for="product-<?php echo $index ?>-quantity">Qty:</label>
-            <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
-            <a href="/store/inventory?id=<?php echo $product['id'] ?>&math=subtract&quantity=<?php echo $product['quantity'] ?>"><i class="fa fa-times"></i></a>
+            <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" disabled>
         </div>
     </div>
 
@@ -128,10 +116,10 @@
 
     <div class="list__footer">
         <hr>
-        <h4>Sub-Total: $<?php echo $sub_total; ?></h4>
+        <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
         <h4>Shipping: $<?php echo $shippingPrice; ?></h4>
         <hr>
-        <h4>Total: $<?php echo $sub_total + $shippingPrice; ?></h4>
+        <h4>Total: $<?php echo $cart->get_totals() + $shippingPrice; ?></h4>
     </div>
 </div>
 

@@ -1,72 +1,53 @@
 <?php
 
-require_once __DIR__.'/../backend/store.php';
-require_once __DIR__.'/../backend/amplifier.php';
+require_once __DIR__.'/../_templates/sitewide.php';
+require_once __DIR__.'/../backend/cart.php';
 
-$products = amplifier_product();
-
-if (isset($_COOKIE['cart'])) {
-    $cart = json_decode($_COOKIE['cart'], true);
-} else {
-    $cart = [];
+if (!isset($cart)) {
+    $cart = new Cart('cookie');
 }
-
-$uid = $_GET['uid'] ?? $_POST['uid'] ?? false;
-$size = $_GET['size'] ?? $_POST['size'] ?? false;
-$color = $_GET['color'] ?? $_POST['color'] ?? false;
 
 $id = $_GET['id'] ?? $_POST['id'] ?? false;
 $math = $_GET['math'] ?? $_POST['math'] ?? show;
 $quantity = $_GET['quantity'] ?? $_POST['quantity'] ?? 1;
+$simple = $_GET['simple'] ?? $_POST['simple'] ?? false;
 
-if ($uid) {
-    foreach($products as $id => $product) {
-        $p_color = $product['color'] ?? false;
-        $p_size = $product['size'] ?? false;
+if (!$id) {
+    echo 'Missing id';
+    return;
+}
 
-        if ($product['uid'] === $uid && $p_color === $color && $p_size === $size) {
-            $id = $product['id'];
-            break;
-        }
+if ($math !== 'add' && $math !== 'remove' && $math !== 'set') {
+    echo 'Missing add or remove math';
+    return;
+}
+
+if ($math === 'add') {
+    if ($cart->set_add($id, $quantity)) {
+        echo 'Failed to add item';
+        return;
     }
 }
 
-if (!$id) {
-    echo 'Missing id or uid';
-    return;
-}
-
-if ($math === 'show') {
-    echo json_encode($_COOKIE['cart']);
-    return;
-}
-
-$cart[$id] = $cart[$id] ?? 0;
-
-if ($math === 'add') {
-    $cart[$id] = intVal($cart[$id]) + intVal($quantity);
-}
-
-if ($math === 'subtract') {
-    $cart[$id] = intVal($cart[$id]) - intVal($quantity);
+if ($math === 'remove') {
+    if ($cart->set_remove($id, $quantity)) {
+        echo 'Failed to remove item';
+        return;
+    }
 }
 
 if ($math === 'set') {
-    $cart[$id] = intVal($quantity);
+    if ($cart->set_set($id, $quantity)) {
+        echo 'Failed to set item';
+        return;
+    }
 }
 
-if ($cart[$id] <= 0) {
-    unset($cart[$id]);
+$cart->set_cookie();
+
+if ($simple) {
+    echo 'OK';
+    return;
 }
 
-if (count($cart) > 0) {
-    setcookie('cart', json_encode($cart), time() + 604800, '/', '', 0, 1);
-} else {
-    $math = 'clear';
-}
-
-if ($math === 'clear') {
-    setcookie('cart', '', time() - 1, '/', '', 0, 1);
-}
-
-echo 'OK';
+header("Location: https://$_SERVER[HTTP_HOST]/store/");

@@ -24,6 +24,19 @@
     max-width: 260px;
 }
 
+/*****************
+* Product modals *
+*****************/
+
+.modal--product {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal--product img {
+    max-width: 200px;
+}
+
 /***********************
 * List view of product *
 ***********************/
