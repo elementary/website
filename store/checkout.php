@@ -82,62 +82,66 @@
     }
 
     if (!$error) {
-        $shippingPrice = $rate->RatedShipment[0]->TotalCharges->MonetaryValue;
+        try {
+            $transit = $shipment->get_transit($cart->get_totals());
+        } catch (Exception $e) {
+            var_dump("<pre>".$e."</pre>");
+            $error = new Exception('Unable to get shipping estimate');
+        }
+    }
+
+    if (!$error) {
 ?>
 
-<pre>
-    <?php var_dump($rate); ?>
-</pre>
-
-<div class="row">
+<div class="grid">
     <h1>Checkout</h1>
-</div>
 
-<div class="list list--product">
-    <?php
-        $index = 0;
-        foreach ($cart->get_products() as $id => $product) {
-            $index++;
-    ?>
+    <div class="list list--product">
+        <?php
+            $index = 0;
+            foreach ($cart->get_products() as $id => $product) {
+                $index++;
+        ?>
 
-    <div class="list__item">
-        <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
-        <div class="information">
-            <h3><?php echo $product['full_name'] ?></h3>
-            <h3>$<?php echo $product['retail_price'] ?></h3>
+        <div class="list__item">
+            <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
+            <div class="information">
+                <h3><?php echo $product['full_name'] ?></h3>
+                <h3>$<?php echo $product['retail_price'] ?></h3>
+            </div>
+            <div>
+                <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
+                <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
+                <label for="product-<?php echo $index ?>-quantity">Qty:</label>
+                <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" disabled>
+            </div>
         </div>
-        <div>
-            <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
-            <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
-            <label for="product-<?php echo $index ?>-quantity">Qty:</label>
-            <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" disabled>
+
+        <?php
+            }
+        ?>
+
+        <div class="list__footer">
+            <hr>
+            <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
+            <h4>Shipping: $<?php echo $rate; ?></h4>
+            <hr>
+            <h4>Total: $<?php echo $cart->get_totals() + $shippingPrice; ?></h4>
         </div>
     </div>
 
-    <?php
-        }
-    ?>
-
-    <div class="list__footer">
-        <hr>
-        <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
-        <h4>Shipping: $<?php echo $shippingPrice; ?></h4>
-        <hr>
-        <h4>Total: $<?php echo $cart->get_totals() + $shippingPrice; ?></h4>
-    </div>
-</div>
-
-<div class="row">
     <h1>Shipping information</h1>
-</div>
 
-<div class="grid grid--address">
-    <div><?php echo $shipment->get_name(); ?></div>
-    <div><?php echo $shipment->get_line1(); ?></div>
-    <div><?php echo $shipment->get_line2(); ?></div>
-    <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
+    <div class="whole text-center">
+        <div>Items will be shipped by UPS ground. Estimated to arive on <?php echo $transit["date"] ?>.</div>
 
-    <div>
+        <div>
+            <div><?php echo $shipment->get_name(); ?></div>
+            <div><?php echo $shipment->get_line1(); ?></div>
+            <div><?php echo $shipment->get_line2(); ?></div>
+            <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
+        </div>
+
         <a href="#" class="button suggested-action">Place order</a>
     </div>
 </div>

@@ -44,6 +44,15 @@ class Shipment {
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
+    // THIS NEEDS TO BE IN POUNDS!!!
+    public function set_weight ($in) {
+        try {
+            $this->weight = floatval($in);
+        } catch (Exception $e) {
+            throw new Exception('Shipping weight needs to be a float value');
+        }
+    }
+
     // Getter functions
     public function get_name () {
         return $this->name;
@@ -73,12 +82,15 @@ class Shipment {
         return $this->postal;
     }
 
-    // THIS NEEDS TO BE IN POUNDS!!!
-    public function set_weight ($in) {
-        try {
-            $this->weight = floatval($in);
-        } catch (Exception $e) {
-            throw new Exception('Shipping weight needs to be a float value');
+    public function get_weight ($u = "LBS") {
+        if ($u !== "LBS" && $u !== "KGS") {
+            throw new Exception('Weight needs LBS or KGS unit of measurement');
+        }
+
+        if ($u === "LBS") {
+            return $this->weight;
+        } else {
+            return $this->weight * 0.453592;
         }
     }
 
@@ -125,6 +137,28 @@ class Shipment {
         }
     }
 
+    public function get_package () {
+        $package = new \Ups\Entity\Package();
+        $package->getPackagingType()->setCode(\Ups\Entity\PackagingType::PT_UNKNOWN);
+
+        // FFS "This measurement system is not valid for the selected country"
+        if ($this->country === 'US') {
+            $weight_UOM = new \Ups\Entity\UnitOfMeasurement;
+            $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_LBS); // The inferior UOM
+
+            $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
+            $package->getPackageWeight()->setWeight($this->get_weight("LBS"));
+        } else {
+            $weight_UOM = new \Ups\Entity\UnitOfMeasurement;
+            $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_KGS); // The Queen's UOM
+
+            $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
+            $package->getPackageWeight()->setWeight($this->get_weight("KGS"));
+        }
+
+        return $package;
+    }
+
     public function get_rate () {
         global $config;
 
@@ -154,30 +188,83 @@ class Shipment {
         $ship_from = new \Ups\Entity\ShipFrom();
         $ship_from->setAddress($address_from);
 
-        $package = new \Ups\Entity\Package();
-        $package->getPackagingType()->setCode(\Ups\Entity\PackagingType::PT_UNKNOWN);
+        $shipment = new \Ups\Entity\Shipment();
+        $shipment->setShipTo($ship_to);
+        $shipment->setShipFrom($ship_from);
+        $shipment->addPackage($this->get_package());
+
+        // By default this will get the rate of GROUND SHIPPING
+        $rate = new \Ups\Rate($config['ups_access'], $config['ups_user'], $config['ups_password']);
+        return $rate->getRate($shipment)->RatedShipment[0]->TotalCharges->MonetaryValue;
+    }
+
+    public function get_transit ($value = 100.00) {
+        global $config;
+
+        if (!isset($this->weight) || $this->weight <= 0) {
+            throw new Exception('Shipment requires a valid weight for getting rate');
+        }
+
+        $address_to = new \Ups\Entity\AddressArtifactFormat();
+        $address_to->setPoliticalDivision3($this->level1);
+        $address_to->setCountryCode($this->country);
+        $address_to->setPostcodePrimaryLow($this->postal);
+
+        $address_from = new \Ups\Entity\AddressArtifactFormat(); // amplifier warehouse
+        $address_from->setPoliticalDivision3('TX');
+        $address_from->setCountryCode('US');
+        $address_from->setPostcodePrimaryLow(78721);
 
         // FFS "This measurement system is not valid for the selected country"
         if ($this->country === 'US') {
             $weight_UOM = new \Ups\Entity\UnitOfMeasurement;
             $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_LBS); // The inferior UOM
 
-            $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
-            $package->getPackageWeight()->setWeight($this->weight);
+            $weight = new \Ups\Entity\ShipmentWeight;
+            $weight->setUnitOfMeasurement($weight_UOM);
+            $weight->setWeight($this->get_weight("LBS"));
         } else {
             $weight_UOM = new \Ups\Entity\UnitOfMeasurement;
             $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_KGS); // The Queen's UOM
 
-            $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
-            $package->getPackageWeight()->setWeight($this->weight * 0.453592);
+            $weight = new \Ups\Entity\ShipmentWeight;
+            $weight->setUnitOfMeasurement($weight_UOM);
+            $weight->setWeight($this->get_weight("KGS"));
         }
 
-        $shipment = new \Ups\Entity\Shipment();
-        $shipment->setShipFrom($ship_from);
-        $shipment->setShipTo($ship_to);
-        $shipment->addPackage($package);
+        $invoice = new \Ups\Entity\InvoiceLineTotal;
+        $invoice->setMonetaryValue($value);
+        $invoice->setCurrencyCode('USD');
 
-        $rate = new \Ups\Rate($config['ups_access'], $config['ups_user'], $config['ups_password']);
-        return $rate->getRate($shipment);
+        $date = new DateTime();
+        $date->modify('+2 day'); // Amplifier processing time (TODO: narrow down as accurate as possible)
+
+        $request = new \Ups\Entity\TimeInTransitRequest;
+        $request->setTransitTo($address_to);
+        $request->setTransitFrom($address_from);
+        $request->setTotalPackagesInShipment(1);
+        $request->setShipmentWeight($weight);
+        $request->setInvoiceLineTotal($invoice);
+        $request->setPickupDate($date);
+
+        $tim = new \Ups\TimeInTransit($config['ups_access'], $config['ups_user'], $config['ups_password']);
+        $res = $tim->getTimeInTransit($request);
+
+        foreach ($res->ServiceSummary as $summary) {
+            if ($summary->Service->getCode() !== 'GND') continue; // Only Ground
+
+            $returned = array(
+                "Description" => "UPS Ground",
+                "days" => $summary->EstimatedArrival->BusinessTransitDays,
+                "date" => $summary->EstimatedArrival->Date,
+                "time" => $summary->EstimatedArrival->Time
+            );
+        }
+
+        if (isset($returned)) {
+            return $returned;
+        } else {
+            throw new Exception("Unable to get shipping time of UPS Ground");
+        }
     }
 }
