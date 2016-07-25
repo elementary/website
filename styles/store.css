@@ -38,10 +38,6 @@
     text-align: left;
 }
 
-.modal--product img {
-    max-width: 200px;
-}
-
 .modal--product p {
     font-size: 14px;
     margin: 0;

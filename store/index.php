@@ -101,7 +101,7 @@
                     </select>
                 <?php } ?>
 
-                <h4 class="label">Qty</h4>
+                <h4 class="label">Quantity</h4>
                 <input type="number" step="1" min="1" max="<?php echo $front['inventory']['quantity_available'] ?>" value="1" name="quantity">
             </div>
 
