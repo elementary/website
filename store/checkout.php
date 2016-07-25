@@ -85,6 +85,10 @@
         $shippingPrice = $rate->RatedShipment[0]->TotalCharges->MonetaryValue;
 ?>
 
+<pre>
+    <?php var_dump($rate); ?>
+</pre>
+
 <div class="row">
     <h1>Checkout</h1>
 </div>

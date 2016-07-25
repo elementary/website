@@ -73,7 +73,7 @@ class Shipment {
         return $this->postal;
     }
 
-    // THIS NEEDS TO BE IN KGS!!!
+    // THIS NEEDS TO BE IN POUNDS!!!
     public function set_weight ($in) {
         try {
             $this->weight = floatval($in);
@@ -141,8 +141,12 @@ class Shipment {
         $address_to->setCountryCode($this->country);
         $address_to->setPostalCode($this->postal);
 
-        $address_from = new \Ups\Entity\Address();
-        $address_from->setPostalCode('78721'); // ZIP code of amplifier warehouse
+        $address_from = new \Ups\Entity\Address(); // amplifier warehouse
+        $address_from->setAddressLine1('800 Interchange Blvd');
+        $address_from->setCity('Austin');
+        $address_from->setStateProvinceCode('TX');
+        $address_from->setCountryCode('US');
+        $address_from->setPostalCode(78721);
 
         $ship_to = new \Ups\Entity\ShipTo();
         $ship_to->setAddress($address_to);
@@ -159,13 +163,13 @@ class Shipment {
             $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_LBS); // The inferior UOM
 
             $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
-            $package->getPackageWeight()->setWeight($this->weight * 2.2046);
+            $package->getPackageWeight()->setWeight($this->weight);
         } else {
             $weight_UOM = new \Ups\Entity\UnitOfMeasurement;
             $weight_UOM->setCode(\Ups\Entity\UnitOfMeasurement::UOM_KGS); // The Queen's UOM
 
             $package->getPackageWeight()->setUnitOfMeasurement($weight_UOM);
-            $package->getPackageWeight()->setWeight($this->weight);
+            $package->getPackageWeight()->setWeight($this->weight * 0.453592);
         }
 
         $shipment = new \Ups\Entity\Shipment();
