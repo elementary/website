@@ -354,21 +354,31 @@ When dealing with window titles, consider that their main use is in distinguishi
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
 * Don’t display pathnames in window titles, only the current destination. If you have two paths that are very similar it will be hard to distinguish them when displaying the full path. If you only show the destination, the distinction is clear.
 
-### Dialogs {#dialogs}
+## Dialogs {#dialogs}
 
-![A generic alert dialog](/images/docs/human-interface-guidelines/dialogs/dialog-padding.png)
+<div class="dialog">
+    <img alt="Dialog warning icon" src="images/icons/48/dialog-warning.svg">
+    <div class="content-area">
+        <p class="primary">Primary text providing basic information and a suggestion</p>
+        <p>Secondary text providing further details. Also includes information that explains any unobvious consequences of actions.</p>
+    </div>
+    <div class="action-area">
+        <div class="button">Cancel</div>
+        <div class="button suggested-action">Suggested Action</div>
+    </div>
+</div>
 
-#### Alert Text {#alert-text}
+### Alert Text {#alert-text}
 
 An alert contains both primary and secondary text.
 
-The primary text contains a brief summary of the situation and offer a suggested action. This text should be displayed in a bold font that is slightly larger than the default.
+The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`.
 
 The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight.
 
 Make both the primary and secondary text selectable. This makes it easy for the user to copy and paste the text to another window, such as an email message.
 
-#### Button Order {#button-order}
+### Button Order {#button-order}
 
 ![](/images/docs/human-interface-guidelines/dialogs/button-order.png)
 
@@ -377,11 +387,11 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 * If your dialog has alternative actions, list them to the left of the "Cancel" button.
 * If you wish your dialog to contain a "Help" button, this should be placed to the far left of the window.
 
-#### "OK" is not Okay {#ok-is-not-okay}
+### "OK" is not Okay {#ok-is-not-okay}
 
 When presenting a dialog to a user, always use explicit action names like "Save...", "Shut Down", etc. Consider that using "OK" enables users to proceed without understand the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the information presented before making a selection.
 
-#### Preference Dialogs {#preference-dialogs}
+### Preference Dialogs {#preference-dialogs}
 
 Preference dialogs should be made Transient, but not Modal. When a user makes a change in a preference dialog, the change should be immediately visible in the UI. If the dialog is modal, the user may be blocked from seeing (and especially from interacting with) the change. This means they will have to close the dialog, evaluate the change, then possibly re-open the dialog. By making the dialog transient, we keep the dialog on top for easy access, but we also allow the user to evaluate and possibly revert the change without having to close and re-open the preference dialog.
 
