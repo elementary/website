@@ -126,7 +126,7 @@
             <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
             <h4>Shipping: $<?php echo $rate; ?></h4>
             <hr>
-            <h4>Total: $<?php echo $cart->get_totals() + $shippingPrice; ?></h4>
+            <h4>Total: $<?php echo $cart->get_totals() + $rate; ?></h4>
         </div>
     </div>
 
