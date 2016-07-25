@@ -42,11 +42,10 @@
                 <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['retail_price_min'] !== $product['retail_price_max']) { ?>
-                    <h3>$<?php echo $product['retail_price_min'] ?> - $<?php echo $product['retail_price_max']?></h3>
+                    <h4>$<?php echo $product['retail_price_min'] ?> - $<?php echo $product['retail_price_max']?></h4>
                 <?php } else { ?>
-                    <h3>$<?php echo $product['retail_price'] ?></h3>
+                    <h4>$<?php echo $product['retail_price'] ?></h4>
                 <?php } ?>
-                <p><?php echo $product['description'] ?></p>
                 <a style="display:none;" class="open-modal" href="#<?php echo $product['uid'] ?>-overview"></a>
             </div>
 
@@ -70,13 +69,13 @@
 
 <div id="<?php echo $front['uid'] ?>-overview" class="modal modal--product">
     <i class="fa fa-close close-modal"></i>
-    <h2><?php echo $front['name'] ?></h2>
-    <div class="row">
-        <div class="column">
+    <div class="grid">
+        <div class="half">
             <img src="images/store/<?php echo $front['uid'] ?>-large.png"/>
         </div>
-        <form action="/store/inventory" class="column">
-            <h3 class="modal__price">$<?php echo $front['retail_price'] ?></h3>
+        <form action="/store/inventory" class="half">
+            <h2><?php echo $front['name'] ?></h2>
+            <h4 class="modal__price">$<?php echo $front['retail_price'] ?></h4>
             <p><?php echo $front['description'] ?></p>
 
             <input type="hidden" name="id" value="<?php echo $front['id'] ?>">
@@ -93,6 +92,7 @@
                 <?php } ?>
 
                 <?php if (isset($front['size']) && is_array($front['size'])) { ?>
+                    <h4 class="label">Size</h4>
                     <select name="size">
                     <?php foreach ($front['size'] as $value) { ?>
                         <option value="<?php echo $value ?>"><?php echo $value ?></option>
@@ -100,6 +100,7 @@
                     </select>
                 <?php } ?>
 
+                <h4 class="label">Quantity</h4>
                 <input type="number" step="1" min="1" max="<?php echo $front['inventory']['quantity_available'] ?>" value="1" name="quantity">
             </div>
 
