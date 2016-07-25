@@ -355,13 +355,14 @@ When dealing with window titles, consider that their main use is in distinguishi
 * Don’t display pathnames in window titles, only the current destination. If you have two paths that are very similar it will be hard to distinguish them when displaying the full path. If you only show the destination, the distinction is clear.
 
 ## Dialogs {#dialogs}
-
 <div class="dialog">
+    <div class="guide horizontal">24</div>
     <img alt="Dialog warning icon" src="images/icons/48/dialog-warning.svg">
     <div class="content-area">
         <p class="primary">Primary text providing basic information and a suggestion</p>
         <p>Secondary text providing further details. Also includes information that explains any unobvious consequences of actions.</p>
     </div>
+    <div class="guide horizontal" id="dialog-guide-action">24</div>
     <div class="action-area">
         <div class="button">Cancel</div>
         <div class="button suggested-action">Suggested Action</div>

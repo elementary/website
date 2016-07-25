@@ -434,7 +434,7 @@ div.icons-container.small-screen {
                 0 5px 10px -3px rgba(0, 0, 0, 0.4);
     margin: 0 auto;
     padding: 12px;
-    padding-top: 24px;
+    padding-top: 0;
     width: 380px;
 }
 
@@ -461,7 +461,6 @@ div.icons-container.small-screen {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    margin-top: 12px;
 }
 
 .dialog .button {
@@ -481,4 +480,28 @@ div.icons-container.small-screen {
 .dialog .content-area {
     display: inline-block;
     width: calc(100% - 48px - 12px); /*Subtract icon width and right margin*/
+}
+
+.guide {
+    border: 0 #c6262e solid;
+    color: #c6262e;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.dialog:hover .guide {
+    opacity: 1;
+}
+
+.guide.horizontal {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    height: 24px;
+    width: 420px;
+    margin-left: -24px;
+    text-align: right;
+}
+
+#dialog-guide-action {
+    margin-top: -16px;
 }
