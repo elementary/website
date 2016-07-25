@@ -42,11 +42,10 @@
                 <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['retail_price_min'] !== $product['retail_price_max']) { ?>
-                    <h3>$<?php echo $product['retail_price_min'] ?> - $<?php echo $product['retail_price_max']?></h3>
+                    <h4>$<?php echo $product['retail_price_min'] ?> - $<?php echo $product['retail_price_max']?></h4>
                 <?php } else { ?>
-                    <h3>$<?php echo $product['retail_price'] ?></h3>
+                    <h4>$<?php echo $product['retail_price'] ?></h4>
                 <?php } ?>
-                <p><?php echo $product['description'] ?></p>
                 <a style="display:none;" class="open-modal" href="#<?php echo $product['uid'] ?>-overview"></a>
             </div>
 
