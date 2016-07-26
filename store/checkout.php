@@ -3,6 +3,7 @@
     include __DIR__.'/../backend/lib/autoload.php';
     require_once __DIR__.'/../backend/config.loader.php';
     $page['title'] = 'Checkout &sdot; elementary';
+    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
     include $template['alert'];
@@ -93,7 +94,7 @@
     if (!$error) {
 ?>
 
-<div class="grid">
+<form action="/store/order" method="post" class="grid">
     <h1>Checkout</h1>
 
     <div class="list list--product">
@@ -123,6 +124,10 @@
 
         <div class="list__footer">
             <hr>
+
+            <input type="hidden" name="cart-sub_total" value="<?php echo $cart->get_totals() ?>">
+            <input type="hidden" name="cart-total" value="<?php echo $cart->get_totals() + $rate ?>">
+
             <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
             <h4>Shipping: $<?php echo $rate; ?></h4>
             <hr>
@@ -136,15 +141,26 @@
         <div>Items will be shipped by UPS ground. Estimated to arive on <?php echo $transit["date"] ?>.</div>
 
         <div>
+            <input type="hidden" name="address-name" value="<?php echo $shipment->get_name() ?>">
+            <input type="hidden" name="address-line1" value="<?php echo $shipment->get_line1() ?>">
+            <input type="hidden" name="address-line2" value="<?php echo $shipment->get_line2() ?>">
+            <input type="hidden" name="address-level2" value="<?php echo $shipment->get_level2() ?>">
+            <input type="hidden" name="address-level1" value="<?php echo $shipment->get_level1() ?>">
+            <input type="hidden" name="address-country" value="<?php echo $shipment->get_country() ?>">
+            <input type="hidden" name="address-postal" value="<?php echo $shipment->get_postal() ?>">
+            <input type="hidden" name="address-weight" value="<?php echo $shipment->get_weight() ?>">
+
             <div><?php echo $shipment->get_name(); ?></div>
             <div><?php echo $shipment->get_line1(); ?></div>
             <div><?php echo $shipment->get_line2(); ?></div>
             <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
         </div>
 
-        <a href="#" class="button suggested-action">Place order</a>
+        <button type="submit" id="order" class="suggested-action">Place order</button>
     </div>
-</div>
+</form>
+
+<script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
 
 <?php } else { ?>
 
@@ -153,8 +169,6 @@
     <a href="/store/">Return to store</a>
 </div>
 
-<?php
-    }
-
+<?php }
     include $template['footer'];
 ?>
