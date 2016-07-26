@@ -36,7 +36,7 @@ $(function () {
 
     var amountValidate = function(event) {
       var currentVal = $('#amount-custom').val();
-      var code = event.which | event.keyCode | event.charCode;
+      var code = event.which || event.keyCode || event.charCode;
 
       if ((code !== 46 || currentVal.indexOf('.') !== -1) &&
           [8, 37, 39].indexOf(code) === -1 &&
