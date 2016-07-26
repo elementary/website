@@ -33,21 +33,19 @@ $(function () {
             updateDownloadButton();
         }
     };
+
     var amountValidate = function(event) {
-      
       var currentVal = $('#amount-custom').val();
-      
       var code = event.which | event.keyCode | event.charCode;
-      var specialKeys = [8, 37, 39];
-      
-      if ((code != 46 || currentVal.indexOf('.') != -1) && 
-          specialKeys.indexOf(code) == -1 && 
+
+      if ((code !== 46 || currentVal.indexOf('.') !== -1) &&
+          [8, 37, 39].indexOf(code) === -1 &&
           (code < 48 || code > 57)) {
           event.preventDefault();
       }
     }
-      
-    
+
+
     // Listen for Clicking on Amounts
     $('.target-amount').click(amountClick);
     // Check Custom Amounts on Blur
