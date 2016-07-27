@@ -3,7 +3,7 @@
     "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "ウェブサイトやアプリを翻訳することは、できるだけ多くの人々に elementary OS を利用可能にする非常に重要な部分です。誰もが技術的な知識に少しでも翻訳文を提出することができるようにする代わりに内部翻訳チームのみに頼るので、私たちはクラウドソーシングを使用しています。オーダープラットフォーム全体にわたって一貫性の声を保つために。新しい翻訳者が始めるのに役立つよう、私たちはこの翻訳ガイドを入れています。",
     "Translating Applications": "アプリケーションの翻訳",
     "Apps are translated through Rosetta: the translation interface hosted on Launchpad. In order to submit translations, you should:": "アプリケーションは Launchpad でホスティングされている翻訳インターフェース Rosetta を通して翻訳されます。翻訳を送信するには:",
-    "Have a": "Have a",
+    "Have a": "作成する",
     "Launchpad account": "Launchpadアカウント",
     "Set your": "設定する",
     "language preferences": "言語設定",

@@ -1,8 +1,8 @@
 {
-    "Save": "Salvar",
-    "Loki Beta Is Here": "Loki Beta está aquí",
+    "Save": "Guardar",
+    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
     "Try out the upcoming version of elementary OS.": "Pruebe la próxima versión de elementary OS.",
-    "Download Loki Beta": "Descargar Loki Beta",
+    "Download Loki Beta 2": "Download Loki Beta 2",
     "Read the Release Notes": "Lea las notas de la versión",
     "Documentation": "Documentación",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Prepare una aplicación básica para su ejecución y distribución con nuestra guía de primeros pasos.",
@@ -33,7 +33,7 @@
     "Library Documentation for Vala": "Documentación de biblioteca de Vala",
     "By downloading this beta you accept that it is not a final product and will be unstable.": "Al descargar esta beta se acepta que no es un producto final y será inestable.",
     "Cancel": "Cancelar",
-    "Loki Beta 64-bit": "Loki beta, 64 bits",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "Enlace «magnet»",
     "Developer &sdot; elementary": "Desarrollo ⋅ elementary"
 }
