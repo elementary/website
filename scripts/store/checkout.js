@@ -1,3 +1,5 @@
+var $form = $('form[action$="order"]')
+
 function stripe_language() {
     var stripe_languages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
     var language_code = $('html').prop('lang');
@@ -10,7 +12,7 @@ function stripe_language() {
     }
 }
 
-function do_stripe_payment (amount) {
+function do_stripe_payment (amount, email) {
     StripeCheckout.open({
         key: stripe_key,
         token: function (token) {
@@ -22,24 +24,26 @@ function do_stripe_payment (amount) {
         bitcoin: true,
         alipay: 'auto',
         locale: stripe_language() || 'auto',
-        amount: amount
+        amount: amount,
+        email: email
     })
 }
 
 function process_payment (amount, token) {
     if (window.ga) {
-        ga('send', 'event', 'elementary store' + 'order', 'store', amount);
+        ga('send', 'event', 'elementary store' + 'payment process', 'store', amount);
     }
 
-    var payment_http = new XMLHttpRequest();
-    payment_http.open('POST','./backend/payment.php',true);
-    payment_http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-    payment_http.send('description=' + encodeURIComponent(release_title + ' ' + release_version) +
-                      '&amount=' + amount +
-                      '&token=' + token.id +
-                      '&email=' + encodeURIComponent(token.email));
+    $('input[name="stripe-token"]', $form).val(token.id)
+    $form.submit()
 }
 
-(function() {
+$form.on('submit', function (event) {
+    if ($('input[name="stripe-token"]', $form).val() === '') {
+        event.preventDefault()
 
+        var value = $('input[name="cart-total"]', $form).val() * 100
+        var email = $('input[name="email"]', $form).val()
+        do_stripe_payment(value, email)
+    }
 })

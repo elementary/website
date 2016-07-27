@@ -3,8 +3,8 @@
     include __DIR__.'/../backend/lib/autoload.php';
     require_once __DIR__.'/../backend/config.loader.php';
     $page['title'] = 'Checkout &sdot; elementary';
-    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+    $page['scripts'] .= '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
     include $template['alert'];
 
@@ -41,6 +41,10 @@
         if (!isset($_POST['postal-code'])) {
             $error = new Exception('Checkout requires a shipment address postal code');
         }
+
+        if (!isset($_POST['email'])) {
+            $error = new Exception('Checkout requires an email');
+        }
     }
 
     if (!$error) {
@@ -52,6 +56,11 @@
             $shipment->set_level1($_POST['address-level1']);
             $shipment->set_country('US');
             $shipment->set_postal($_POST['postal-code']);
+            $shipment->set_email($_POST['email']);
+
+            if (isset($_POST['phone'])) {
+                $shipment->set_phone($_POST['phone']);
+            }
         } catch (Exception $e) {
             $error = new Exception('Unable to parse shipment form');
         }
@@ -93,6 +102,11 @@
 
     if (!$error) {
 ?>
+
+<script>
+    var stripe_key = '<?php include __DIR__.'/../backend/payment.php'; ?>';
+    jQl.loadjQdep('scripts/store/checkout.js');
+</script>
 
 <form action="/store/order" method="post" class="grid">
     <h1>Checkout</h1>
@@ -150,17 +164,19 @@
             <input type="hidden" name="address-postal" value="<?php echo $shipment->get_postal() ?>">
             <input type="hidden" name="address-weight" value="<?php echo $shipment->get_weight() ?>">
 
+            <input type="hidden" name="email" value="<?php echo $shipment->get_email() ?>">
+            <input type="hidden" name="phone" value="<?php echo $shipment->get_phone() ?>">
+
             <div><?php echo $shipment->get_name(); ?></div>
             <div><?php echo $shipment->get_line1(); ?></div>
             <div><?php echo $shipment->get_line2(); ?></div>
             <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
         </div>
 
+        <input type="hidden" name="stripe-token">
         <button type="submit" id="order" class="suggested-action">Place order</button>
     </div>
 </form>
-
-<script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
 
 <?php } else { ?>
 

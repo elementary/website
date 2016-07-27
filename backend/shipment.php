@@ -15,6 +15,9 @@ class Shipment {
     private $postal;
     private $weight;
 
+    private $email;
+    private $phone;
+
     // Setter functions
     public function set_name ($in) {
         $this->name = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -42,6 +45,15 @@ class Shipment {
 
     public function set_postal ($in) {
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+    }
+
+    public function set_email ($in) {
+        $this->email = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+
+    }
+
+    public function set_phone ($in) {
+        $this->phone = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
     // THIS NEEDS TO BE IN POUNDS!!!
@@ -94,6 +106,15 @@ class Shipment {
         }
     }
 
+    public function get_email () {
+        return $this->email;
+    }
+
+    public function get_phone () {
+        return $this->phone;
+    }
+
+    // Action functions
     public function do_validation () {
         global $config;
 
