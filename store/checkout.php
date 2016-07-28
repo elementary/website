@@ -127,16 +127,24 @@
                 $index++;
         ?>
 
-        <div class="list__item">
+        <div class="list__item" id="product-<?php echo $index ?>">
             <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
-            <div class="information">
+            <div class="list__info">
                 <h3><?php echo $product['full_name'] ?></h3>
-                <h3>$<?php echo number_format($product['retail_price'], 2) ?></h3>
             </div>
-            <div>
+            <div class="list__detail">
                 <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
-                <label for="product-<?php echo $index ?>-quantity">Qty:</label>
-                <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" readonly="readonly">
+                <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
+                <input type="hidden" name="product-<?php echo $index ?>-quantity" value="<?php echo $product['quantity'] ?>">
+
+                <div>
+                    $
+                    <?php echo number_format($product['retail_price'], 2) ?>
+                    *
+                    <?php echo $product['quantity'] ?>
+                    =
+                    <h4>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></h4>
+                </div>
             </div>
         </div>
 
