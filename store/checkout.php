@@ -8,6 +8,7 @@
     include $template['header'];
     include $template['alert'];
 
+    require_once __DIR__.'/../backend/validation.php';
     require_once __DIR__.'/../backend/shipment.php';
     require_once __DIR__.'/../backend/cart.php';
 
@@ -24,38 +25,17 @@
             }
         }
     } catch (Exception $e) {
-        $error = new Exception('Unable to grab cart contents');
+        $error = 'Unable to grab cart contents';
     }
 
-    if (!$error && $cart->get_count() <= 0) {
-        $error = new Exception('Trying to checkout with an empty cart');
-    }
-
-    if (!$error) {
-        if (!isset($_POST['first-name']) || !isset($_POST['last-name'])) {
-            $error = new Exception('Checkout requires a shipment name');
-        }
-
-        if (!isset($_POST['address-line1'])) {
-            $error = new Exception('Checkout requires a shipment address line');
-        }
-
-        if (!isset($_POST['address-level2'])) {
-            $error = new Exception('Checkout requires a shipment address city');
-        }
-
-        if (!isset($_POST['address-level1'])) {
-            $error = new Exception('Checkout requires a shipment address state');
-        }
-
-        if (!isset($_POST['postal-code'])) {
-            $error = new Exception('Checkout requires a shipment address postal code');
-        }
-
-        if (!isset($_POST['email'])) {
-            $error = new Exception('Checkout requires an email');
-        }
-    }
+    validation_assert($error, $cart->get_count(), 'number', 'Trying to checkout with an empty cart');
+    validation_assert($error, $_POST['first-name'], 'name', 'Checkout requires a first name');
+    validation_assert($error, $_POST['last-name'], 'name', 'Checkout requires a last name');
+    validation_assert($error, $_POST['address-line1'], 'address-line', 'Checkout requires an address line 1');
+    validation_assert($error, $_POST['address-level2'], null, 'Checkout requires an address city');
+    validation_assert($error, $_POST['address-level1'], null, 'Checkout requires an address state');
+    validation_assert($error, $_POST['postal-code'], 'address-postal', 'Checkout requires an address postal code');
+    validation_assert($error, $_POST['email'], 'email', 'Checkout requires an email address');
 
     if (!$error) {
         try {
@@ -71,7 +51,7 @@
                 "phone" => $_POST['phone']
             ));
         } catch (Exception $e) {
-            $error = new Exception('Unable to parse shipment form');
+            $error = 'Unable to parse shipment form';
         }
     }
 
@@ -79,7 +59,7 @@
         try {
             $shipment->do_validation();
         } catch (Exception $e) {
-            $error = new Exception('Unable to verify shipping address');
+            $error = 'Unable to verify shipping address';
         }
     }
 
@@ -88,7 +68,7 @@
         try {
             $shipment->set_weight($cart->get_weights());
         } catch (Exception $e) {
-            $error = new Exception('Unable to calculate weights for shopping cart');
+            $error = 'Unable to calculate weights for shopping cart';
         }
     }
 
@@ -96,7 +76,7 @@
         try {
             $rate = $shipment->get_rate();
         } catch (Exception $e) {
-            $error = new Exception('Unable to get rates for shipment');
+            $error = 'Unable to get rates for shipment';
         }
     }
 
@@ -104,8 +84,7 @@
         try {
             $transit = $shipment->get_transit($cart->get_totals());
         } catch (Exception $e) {
-            var_dump("<pre>".$e."</pre>");
-            $error = new Exception('Unable to get shipping estimate');
+            $error = 'Unable to get shipping estimate';
         }
     }
 
@@ -199,7 +178,7 @@
 <?php } else { ?>
 
 <div class="row">
-    <h3><?php echo $error->getMessage(); ?></h3>
+    <h3><?php echo $error ?></h3>
     <a href="/store/cart">Return to cart</a>
 </div>
 

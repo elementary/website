@@ -8,6 +8,7 @@ $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="sty
 include $template['header'];
 include $template['alert'];
 
+require_once __DIR__.'/../backend/validation.php';
 require_once __DIR__.'/../backend/cart.php';
 require_once __DIR__.'/../backend/shipment.php';
 require_once __DIR__.'/../backend/store.php';
@@ -16,21 +17,13 @@ require_once __DIR__.'/../backend/store.php';
 
 $error = false;
 
-if (!$error && !isset($_POST['stripe-token'])) {
-    $error = new Exception('Missing a stripe token');
-}
-
-if (!$error && (
-    !isset($_POST['address-name']) ||
-    !isset($_POST['address-line1']) ||
-    !isset($_POST['address-line2']) ||
-    !isset($_POST['address-level2']) ||
-    !isset($_POST['address-level1']) ||
-    !isset($_POST['address-postal']) ||
-    !isset($_POST['email'])
-)) {
-    $error = new Exception('Missing a shipping data');
-}
+validation_assert($error, $_POST['stripe-token'], null, 'Missing stripe token');
+validation_assert($error, $_POST['address-name'], 'name', 'Missing a shipping address name');
+validation_assert($error, $_POST['address-line1'], 'address-line', 'Missing shipping address line 1');
+validation_assert($error, $_POST['address-level2'], null, 'Missing a shipping address city');
+validation_assert($error, $_POST['address-level1'], null, 'Missing a shipping address state');
+validation_assert($error, $_POST['address-postal'], 'address-postal', 'Missing an address postal code');
+validation_assert($error, $_POST['email'], 'email', 'Missing an email address');
 
 if (!$error) {
     try {
@@ -44,9 +37,11 @@ if (!$error) {
             }
         }
     } catch (Exception $e) {
-        $error = new Exception('Unable to grab cart contents');
+        $error = 'Unable to grab cart contents';
     }
 }
+
+validation_assert($error, $cart->get_count(), 'number', 'Trying to buy an empty cart');
 
 if (!$error) {
     try {
@@ -62,7 +57,7 @@ if (!$error) {
             "phone" => $_POST['phone'] || false
         ));
     } catch (Exception $e) {
-        $error = new Exception('Unable to grab shipment data');
+        $error = 'Unable to grab shipment data';
     }
 }
 
@@ -70,7 +65,7 @@ if (!$error) {
     try {
         $shipment->do_validation();
     } catch (Exception $e) {
-        $error = new Exception('Unable to verify shipping address');
+        $error = 'Unable to verify shipping address';
     }
 }
 
@@ -78,17 +73,13 @@ if (!$error) {
     try {
         $shipment->set_weight($cart->get_weights());
     } catch (Exception $e) {
-        $error = new Exception('Unable to calculate weights for shopping cart');
+        $error = 'Unable to calculate weights for shopping cart';
     }
-}
-
-if (!$error && $cart->get_count() <= 0) {
-    $error = new Exception('Trying to order an empty cart');
 }
 
 // ffs php and your numbers
 if (!$error && abs($shipment->get_weight() - floatval($_POST['cart-weight'])) > 0.001) {
-    $error = new Exception('Cart weight is different than given weight');
+    $error = 'Cart weight is different than given weight';
 }
 
 if (!$error &&
@@ -99,14 +90,14 @@ if (!$error &&
     $shipment->get_country() !== "US" &&
     $shipment->get_postal() !== $_POST['postal-code']
 ) {
-    $error = new Exception('Verified address is different than address given');
+    $error = 'Verified address is different than address given';
 }
 
 if (!$error) {
     try {
         $rate = $shipment->get_rate();
     } catch (Exception $e) {
-        $error = new Exception('Unable to get shipping rate');
+        $error = 'Unable to get shipping rate';
     }
 
     $total = $rate + $cart->get_totals();
@@ -114,18 +105,18 @@ if (!$error) {
 }
 
 if (!$error && $rate !== floatval($_POST['cart-shipping'])) {
-    $error = new Exception('Shipping rate is different than given rate');
+    $error = 'Shipping rate is different than given rate';
 }
 
 if (!$error && $total !== floatval($_POST['cart-total'])) {
-    $error = new Exception('Cart total is different than given total');
+    $error = 'Cart total is different than given total';
 }
 
 // Check all inventory levels before we commit to anything
 if (!$error) {
     foreach ($cart->get_products() as $id => $prod) {
         if ($prod['quantity'] > $prod['inventory']['quantity_available']) {
-            $error = new Exception("We don't have enough items on hand");
+            $error = "We don't have enough items on hand";
             return;
         }
     }
@@ -161,9 +152,9 @@ if (!$error) {
             )
         ));
     } catch (\Stripe\Error\Card $e) {
-        $error = new Exception('Unable to processing your payment');
+        $error = 'Unable to processing your payment';
     } catch (Exception $e) {
-        $error = new Exception('Error while processing your payment');
+        $error = 'Error while processing your payment';
     }
 }
 
@@ -221,7 +212,7 @@ if (!$error) {
     curl_close($ch);
 
     if (!isset($res->id)) {
-        $error = new Exception('Unable to complete shipment order');
+        $error = 'Unable to complete shipment order';
     } else {
         $amplifier_id = $res->id;
     }
@@ -266,8 +257,8 @@ if (!$error) {
 <?php } else { ?>
 
 <div class="row">
-    <h3><?php echo $error->getMessage(); ?></h3>
-    <a href="/store/">Return to store</a>
+    <h3><?php echo $error ?></h3>
+    <a href="/store/cart">Return to cart</a>
 </div>
 
 <?php
