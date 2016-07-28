@@ -109,20 +109,18 @@
         <div class="list__item" id="product-<?php echo $index ?>">
             <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
             <div class="list__info">
-                <h3><?php echo $product['full_name'] ?></h3>
+                <b><?php echo $product['full_name'] ?></b>
             </div>
             <div class="list__detail">
                 <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
                 <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
-                <input type="hidden" name="product-<?php echo $index ?>-quantity" value="<?php echo $product['quantity'] ?>">
 
-                <div>
-                    $
-                    <?php echo number_format($product['retail_price'], 2) ?>
-                    *
-                    <?php echo $product['quantity'] ?>
-                    =
-                    <h4>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></h4>
+                <div class="subtotal">
+                    <span>$<?php echo number_format($product['retail_price'], 2) ?></span>
+                    <span>×</span>
+                    <span><?php echo $product['quantity'] ?></span>
+                    <span>=</span>
+                    <b>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></b>
                 </div>
             </div>
         </div>
@@ -132,8 +130,6 @@
         ?>
 
         <div class="list__footer">
-            <hr>
-
             <input type="hidden" name="cart-weight" value="<?php echo $shipment->get_weight() ?>">
             <input type="hidden" name="cart-sub_total" value="<?php echo $cart->get_totals() ?>">
             <input type="hidden" name="cart-shipping" value="<?php echo $rate ?>">

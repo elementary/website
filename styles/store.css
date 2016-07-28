@@ -93,10 +93,13 @@
 }
 
 .list--product .list__item {
+    align-items: center;
     border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 12px 0;
     padding: 24px 0;
-    position: relative;
     width: 100%;
 }
 
@@ -107,7 +110,11 @@
 .list--product .list__item img {
     height: 80px;
     width: 80px;
-    vertical-align: middle;
+}
+
+.list--product .list__info {
+    flex: 1 1 auto;
+    padding: 16px 0;
 }
 
 .list--product .list__detail > div > * {
@@ -121,29 +128,19 @@
     }
 
     .list--product .list__info {
-        display: inline-block;
         margin: 0 24px;
     }
 
     .list--product .list__detail {
-        bottom: 54px;
-        position: absolute;
-        right: 0;
-        display: inline-block;
+        text-align: right;
     }
 
     .list--product .list__footer {
         text-align: right;
     }
 
-    .list__detail .subtotal {
-        display: flex;
-        flex-direction: row;
-        width: 256px;
-    }
-
     .list__detail .subtotal > * {
-        flex: 1 0 48px;
+        min-width: 48px;
         text-align: center
     }
 }

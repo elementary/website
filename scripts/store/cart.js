@@ -13,7 +13,7 @@ var updateTotal = function() {
         var quantity = $('input[name$="quantity"]', $i).val()
 
         var t = (price * quantity)
-        $('h4', $i).text('$' + parseFloat(t).toFixed(2))
+        $('.subtotal b', $i).text('$' + parseFloat(t).toFixed(2))
 
         total += t
     })
