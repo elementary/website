@@ -192,7 +192,7 @@
 
 <div class="row">
     <h3><?php echo $error->getMessage(); ?></h3>
-    <a href="/store/">Return to store</a>
+    <a href="/store/cart">Return to cart</a>
 </div>
 
 <?php }

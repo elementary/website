@@ -89,7 +89,7 @@
         </div>
 
         <div>
-            <input type="submit" value="Checkout" class="button suggested-action">
+            <input type="submit" value="Check Out" class="button suggested-action">
         </div>
     </div>
 </form>
