@@ -42,9 +42,9 @@
                 <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['retail_price_min'] !== $product['retail_price_max']) { ?>
-                    <h4>$<?php echo $product['retail_price_min'] ?> - $<?php echo $product['retail_price_max']?></h4>
+                    <h4>$<?php echo number_format($product['retail_price_min'], 2) ?> - $<?php echo number_format($product['retail_price_max'], 2) ?></h4>
                 <?php } else { ?>
-                    <h4>$<?php echo $product['retail_price'] ?></h4>
+                    <h4>$<?php echo number_format($product['retail_price'], 2) ?></h4>
                 <?php } ?>
                 <a style="display:none;" class="open-modal" href="#<?php echo $product['uid'] ?>-overview"></a>
             </div>
@@ -75,7 +75,7 @@
         </div>
         <form action="/store/inventory" class="half">
             <h2><?php echo $front['name'] ?></h2>
-            <h4 class="modal__price">$<?php echo $front['retail_price'] ?></h4>
+            <h4 class="modal__price">$<?php echo number_format($front['retail_price'], 2) ?></h4>
             <p><?php echo $front['description'] ?></p>
 
             <input type="hidden" name="id" value="<?php echo $front['id'] ?>">

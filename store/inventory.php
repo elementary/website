@@ -3,12 +3,19 @@
 require_once __DIR__.'/../_templates/sitewide.php';
 require_once __DIR__.'/../backend/cart.php';
 
-if (!isset($cart)) {
-    $cart = new Cart('cookie');
+if (isset($_COOKIE['cart'])) {
+    $items = json_decode($_COOKIE["cart"], true);
+}
+
+if (isset($items) && is_array($items) && count($items) > 0) {
+    $cart = new Cart($items);
+    $count = $cart->get_count();
+} else {
+    $cart = new Cart();
 }
 
 $id = $_GET['id'] ?? $_POST['id'] ?? false;
-$math = $_GET['math'] ?? $_POST['math'] ?? show;
+$math = $_GET['math'] ?? $_POST['math'] ?? 'add';
 $quantity = $_GET['quantity'] ?? $_POST['quantity'] ?? 1;
 $simple = $_GET['simple'] ?? $_POST['simple'] ?? false;
 

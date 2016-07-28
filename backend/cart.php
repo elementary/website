@@ -8,40 +8,11 @@ if (!isset($store)) {
 
 ////    Cart: A general class for cart variable management
 class Cart {
-    private $resource = null;
     private $items = [];
 
-    // Constructor will convert an already existing structure for use
-    // Cookie is quite easy and done all automaticlly
-    // Post will require fields named like 'cart-1-id' and 'cart-1-quantity'
-    function __construct ($resource) {
-        global $_COOKIE, $_POST;
-
-        if ($resource === 'cookie') {
-            $this->resource = 'cookie';
-            if (!isset($_COOKIE['cart'])) return;
-
-            $items = json_decode($_COOKIE['cart'], true);
-
-            foreach ($items as $id => $quantity) {
-                $this->set_add($id, $quantity);
-            }
-        } else if ($resource === 'post') {
-            $this->resource = 'post';
-            if (!isset($_POST)) return;
-
-            foreach ($_POST as $name => $value) {
-                preg_match("/product-([0-9]+)-.*/", $name, $matches);
-
-                if (!$matches) return;
-
-                $number = $matches[1];
-                if (!isset($_POST['product-'.$number.'-id']) || !isset($_POST['product-'.$number.'-quantity'])) return;
-
-                $this->set_set($_POST['product-'.$number.'-id'], $_POST['product-'.$number.'-quantity']);
-            }
-        } else {
-            throw new Exception('Incorrect resource given to cart class');
+    function __construct ($data = array()) {
+        foreach ($data as $id => $quantity) {
+            $this->set_set($id, $quantity);
         }
     }
 
@@ -79,6 +50,12 @@ class Cart {
     }
 
     public function set_remove ($id, $quantity) {
+        if (isset($this->items[$id])) {
+            $current = $this->items[$id];
+        } else {
+            $current = 0;
+        }
+
         $set_quantity = $current - $quantity;
 
         if ($set_quantity <= 0) {
@@ -100,6 +77,10 @@ class Cart {
     }
 
     // Getter functions
+    public function get_quantity () {
+        return $this->items;
+    }
+
     public function get_count () {
         return count($this->items);
     }
@@ -120,7 +101,7 @@ class Cart {
             $weight += $product['weight'] * $quantity;
         }
 
-        return $weight;
+        return floatval($weight);
     }
 
     public function get_totals() {
@@ -139,7 +120,7 @@ class Cart {
             $total += $product['retail_price'] * $quantity;
         }
 
-        return $total;
+        return floatval($total);
     }
 
     public function get_products() {

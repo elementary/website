@@ -13,7 +13,7 @@ var updateTotal = function() {
         total += (price * quantity)
     })
 
-    $('.list--product .list__footer h4:first-of-type').text('Sub-Total: $' + total)
+    $('.list--product .list__footer h4:first-of-type').text('Sub-Total: $' + parseFloat(total).toFixed(2))
 }
 
 $('.list--product .list__item input[name$="quantity"]').on('change', function(event) {

@@ -42,7 +42,7 @@ $form.on('submit', function (event) {
     if ($('input[name="stripe-token"]', $form).val() === '') {
         event.preventDefault()
 
-        var value = $('input[name="cart-total"]', $form).val() * 100
+        var value = parseInt($('input[name="cart-total"]', $form).val() * 100)
         var email = $('input[name="email"]', $form).val()
         do_stripe_payment(value, email)
     }

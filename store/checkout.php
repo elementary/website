@@ -3,22 +3,32 @@
     include __DIR__.'/../backend/lib/autoload.php';
     require_once __DIR__.'/../backend/config.loader.php';
     $page['title'] = 'Checkout &sdot; elementary';
-    $page['scripts'] .= '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
+    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
     include $template['alert'];
 
+    require_once __DIR__.'/../backend/shipment.php';
     require_once __DIR__.'/../backend/cart.php';
 
-    $cart = new Cart('post');
+    $error = false;
 
-    require_once __DIR__.'/../backend/shipment.php';
-    $shipment = new Shipment();
+    try {
+        $cart = new Cart();
 
-    if ($cart->get_count() <= 0) {
+        foreach($_POST as $key => $id) {
+            preg_match("/product-([0-9]+)-id/", $key, $matches);
+
+            if ($matches && isset($_POST["product-$matches[1]-quantity"])) {
+                $cart->set_set($id, $_POST["product-$matches[1]-quantity"]);
+            }
+        }
+    } catch (Exception $e) {
+        $error = new Exception('Unable to grab cart contents');
+    }
+
+    if (!$error && $cart->get_count() <= 0) {
         $error = new Exception('Trying to checkout with an empty cart');
-    } else {
-        $error = false;
     }
 
     if (!$error) {
@@ -49,18 +59,17 @@
 
     if (!$error) {
         try {
-            $shipment->set_name($_POST['first-name'].' '.$_POST['last-name']);
-            $shipment->set_line1($_POST['address-line1']);
-            $shipment->set_line2($_POST['address-line2']);
-            $shipment->set_level2($_POST['address-level2']);
-            $shipment->set_level1($_POST['address-level1']);
-            $shipment->set_country('US');
-            $shipment->set_postal($_POST['postal-code']);
-            $shipment->set_email($_POST['email']);
-
-            if (isset($_POST['phone'])) {
-                $shipment->set_phone($_POST['phone']);
-            }
+            $shipment = new Shipment(array(
+                "name" => $_POST['first-name'].' '.$_POST['last-name'],
+                "line1" => $_POST['address-line1'],
+                "line2" => $_POST['address-line2'],
+                "level2" => $_POST['address-level2'],
+                "level1" => $_POST['address-level1'],
+                "country" => "US",
+                "postal" => $_POST['postal-code'],
+                "email" => $_POST['email'],
+                "phone" => $_POST['phone']
+            ));
         } catch (Exception $e) {
             $error = new Exception('Unable to parse shipment form');
         }
@@ -122,13 +131,12 @@
             <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
             <div class="information">
                 <h3><?php echo $product['full_name'] ?></h3>
-                <h3>$<?php echo $product['retail_price'] ?></h3>
+                <h3>$<?php echo number_format($product['retail_price'], 2) ?></h3>
             </div>
             <div>
                 <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
-                <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
                 <label for="product-<?php echo $index ?>-quantity">Qty:</label>
-                <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" disabled>
+                <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity" readonly="readonly">
             </div>
         </div>
 
@@ -139,13 +147,15 @@
         <div class="list__footer">
             <hr>
 
+            <input type="hidden" name="cart-weight" value="<?php echo $shipment->get_weight() ?>">
             <input type="hidden" name="cart-sub_total" value="<?php echo $cart->get_totals() ?>">
+            <input type="hidden" name="cart-shipping" value="<?php echo $rate ?>">
             <input type="hidden" name="cart-total" value="<?php echo $cart->get_totals() + $rate ?>">
 
-            <h4>Sub-Total: $<?php echo $cart->get_totals(); ?></h4>
-            <h4>Shipping: $<?php echo $rate; ?></h4>
+            <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
+            <h4>Shipping: $<?php echo number_format($rate, 2); ?></h4>
             <hr>
-            <h4>Total: $<?php echo $cart->get_totals() + $rate; ?></h4>
+            <h4>Total: $<?php echo number_format($cart->get_totals() + $rate, 2) ?></h4>
         </div>
     </div>
 

@@ -36,7 +36,7 @@ $(function() {
             if (color != null && value.color !== color) continue
 
             $form.find('input[name="id"]').val(value.id)
-            $modal.find('.modal__price').text('$' + value.price)
+            $modal.find('.modal__price').text('$' + parseFloat(value.price).toFixed(2))
             return
         }
     })

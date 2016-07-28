@@ -17,7 +17,7 @@ class Store {
 
     // Averate weight of category in pounds (pff) (used for shipping calculations)
     private $weights = [
-        'Shirt' => 0.5,
+        'Shirt' => 0.3,
         'Decal' => 0.1
     ];
 
@@ -130,6 +130,7 @@ class Store {
         // TODO: we need to grab this from amplifier itself with API call
         $product = [[
             'id' => 't8w4v5s6-21e5-40f9-a1be-b7z5d2e4q9g6',
+            'sku' => 'SKU123',
             'name' => 'Logotype',
             'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
             'category' => 'Shirt',
@@ -147,6 +148,7 @@ class Store {
             ]
         ], [
              'id' => 'v9s4e2z4-21e5-40f9-a1be-q9g4o5m4v12w',
+             'sku' => 'SKU123456',
              'name' => 'Logotype',
              'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
              'category' => 'Shirt',
@@ -164,6 +166,7 @@ class Store {
              ]
         ], [
              'id' => '8vb4e1s5-21e5-40f9-a1be-385b6xc49erg',
+             'sku' => 'SKU123789',
              'name' => 'Logotype',
              'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
              'category' => 'Shirt',
@@ -181,6 +184,7 @@ class Store {
              ]
         ], [
              'id' => '9q5j4cv8-21e5-40f9-a1be-145y48f634s1',
+             'sku' => 'SKU147',
              'name' => 'Logotype',
              'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
              'category' => 'Shirt',
@@ -198,6 +202,7 @@ class Store {
              ]
         ],[
              'id' => 'v8s4e124-21e5-40f9-a1be-8v4as864ae4f',
+             'sku' => 'SKU258',
              'name' => 'Logotype',
              'description' => 'The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
              'category' => 'Shirt',
@@ -215,6 +220,7 @@ class Store {
              ]
         ], [
              'id' => '8c4w1gd4-21e5-40f9-a1be-v48eaq4x645s',
+             'sku' => 'SKU147369',
              'name' => 'Terminal',
              'description' => 'The elementary Terminal app logo screen printed on a comfy asphalt jersey cotton tee by American Apparel. Features the elementary "e" logomark on the sleeve and our website in small type on the back.',
              'category' => 'Shirt',
@@ -230,6 +236,7 @@ class Store {
             ]
         ], [
             'id' => 'e515f421-21e5-40f9-a1be-4dc8c07f061c',
+            'sku' => 'SKU159',
             'name' => 'Logomark',
             'description' => 'Set of blue 2-inch (5 cm) circle stickers with the elementary "e" logomark in white. Silkscreened on premium vinyl and layered with three coats of 100% UV protection meaning your stickers will stick for several years without fading.',
             'category' => 'Decal',
@@ -251,6 +258,14 @@ class Store {
 
             // Add a uid paramiter for easier identifying
             $product['uid'] = urlencode(str_replace(' ', '-', strtolower($value['category'].'-'.$value['name'])));
+
+            // Format all the numbers
+            $product['cost'] = floatval($product['cost']);
+            $product['retail_price'] = floatval($product['retail_price']);
+
+            if (isset($product['weight'])) {
+                $product['weight'] = floatval($product['weight']);
+            }
 
             // If the weight is not set, add the average category weight from $weights
             if (!isset($product['weight']) && isset($this->weights[$product['category']])) {
@@ -280,7 +295,7 @@ class Store {
             // Add the actual product name to the full name
             array_push($name_array, $product['name']);
 
-            // And we explode the array for a nice descriptive name
+            // And we explode the array for a nice descriptive name like "Large Blue Logomark"
             $product['full_name'] = implode(' ', $name_array);
         }
     }

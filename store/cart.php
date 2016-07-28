@@ -7,11 +7,18 @@
 
     require_once __DIR__.'/../backend/cart.php';
 
-    if (!isset($cart)) {
-        $cart = new Cart('cookie');
+    if (isset($_COOKIE['cart'])) {
+        $items = json_decode($_COOKIE["cart"], true);
     }
 
-    if ($cart->get_count() > 0) {
+    if (isset($items) && is_array($items) && count($items) > 0) {
+        $cart = new Cart($items);
+        $count = $cart->get_count();
+    } else {
+        $count = 0;
+    }
+
+    if ($count > 0) {
 
 ?>
 
@@ -35,7 +42,7 @@
             <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
             <div class="information">
                 <h3><?php echo $product['full_name'] ?></h3>
-                <h3>$<?php echo $product['retail_price'] ?></h3>
+                <h3>$<?php echo number_format($product['retail_price'], 2) ?></h3>
             </div>
             <div>
                 <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
@@ -52,7 +59,7 @@
 
         <div class="list__footer">
             <hr>
-            <h4>Sub-Total: $<?php echo $cart->get_totals() ?></h4>
+            <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
         </div>
     </div>
 

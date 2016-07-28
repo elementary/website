@@ -18,6 +18,40 @@ class Shipment {
     private $email;
     private $phone;
 
+    function __construct ($data = array()) {
+        if (isset($data['name'])) {
+            $this->set_name($data['name']);
+        }
+        if (isset($data['line1'])) {
+            $this->set_line1($data['line1']);
+        }
+        if (isset($data['line2'])) {
+            $this->set_line2($data['line2']);
+        }
+        if (isset($data['level2'])) {
+            $this->set_level2($data['level2']);
+        }
+        if (isset($data['level1'])) {
+            $this->set_level1($data['level1']);
+        }
+        if (isset($data['country'])) {
+            $this->set_country($data['country']);
+        }
+        if (isset($data['postal'])) {
+            $this->set_postal($data['postal']);
+        }
+        if (isset($data['weight'])) {
+            $this->set_postal($data['weight']);
+        }
+
+        if (isset($data['email'])) {
+            $this->set_email($data['email']);
+        }
+        if (isset($data['phone'])) {
+            $this->set_phone($data['phone']);
+        }
+    }
+
     // Setter functions
     public function set_name ($in) {
         $this->name = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -100,9 +134,10 @@ class Shipment {
         }
 
         if ($u === "LBS") {
-            return $this->weight;
+            return floatval($this->weight);
         } else {
-            return $this->weight * 0.453592;
+            $converted = $this->weight * 0.453592;
+            return floatval($converted);
         }
     }
 
@@ -216,7 +251,8 @@ class Shipment {
 
         // By default this will get the rate of GROUND SHIPPING
         $rate = new \Ups\Rate($config['ups_access'], $config['ups_user'], $config['ups_password']);
-        return $rate->getRate($shipment)->RatedShipment[0]->TotalCharges->MonetaryValue;
+        $value = $rate->getRate($shipment)->RatedShipment[0]->TotalCharges->MonetaryValue;
+        return floatval($value);
     }
 
     public function get_transit ($value = 100.00) {
@@ -254,7 +290,7 @@ class Shipment {
         }
 
         $invoice = new \Ups\Entity\InvoiceLineTotal;
-        $invoice->setMonetaryValue($value);
+        $invoice->setMonetaryValue(number_format(floatval($value), 2));
         $invoice->setCurrencyCode('USD');
 
         $date = new DateTime();

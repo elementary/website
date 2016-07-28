@@ -16,6 +16,8 @@ $config = array(
     'ups_user'     => 'test_user',
     'ups_password' => 'test_password',
 
+    'amplifier_key' => 'test_key',
+
     'twitter_consumer_key'    => 'test_ckey',
     'twitter_consumer_secret' => 'test_csecret',
     'twitter_access_token'    => 'test_atoken',
