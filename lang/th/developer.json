@@ -1,8 +1,8 @@
 {
     "Save": "บันทึก",
-    "Loki Beta Is Here": "Loki พร้อมให้ลองแล้ววันนี้",
+    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
     "Try out the upcoming version of elementary OS.": "ลองใช้ elementaryOS เบต้าใหม่ล่าสุดวันนี้",
-    "Download Loki Beta": "ดาวน์โหลด Loki Beta",
+    "Download Loki Beta 2": "Download Loki Beta 2",
     "Read the Release Notes": "อ่านโน้ตการปรับรุ่น",
     "Documentation": "เอกสารทางเทคนิค",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "สร้างแอพอย่างง่าย  เรียนรู้ที่จะพัฒนาแอพด้วยบทเรียนเริ่มต้นของเรา",
@@ -33,7 +33,7 @@
     "Library Documentation for Vala": "เอกสารทางเทคนิคสำหรับภาษา Vala",
     "By downloading this beta you accept that it is not a final product and will be unstable.": "ซอฟต์แวร์ตัวนี้อยู่ในขั้นทดลอง คุณต้องยอมรับความเสี่ยงว่าซอฟต์แวร์นี้ยังไม่สมบูรณ์และไม่เสถียร",
     "Cancel": "ยกเลิก",
-    "Loki Beta 64-bit": "Loki 64-Bit เบต้า",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "ลิงก์แบบ Torrent",
     "Developer &sdot; elementary": "Developer ⋅ elementary"
 }
