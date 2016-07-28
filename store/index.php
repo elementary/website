@@ -104,6 +104,8 @@
                 <input type="number" step="1" min="1" max="<?php echo $front['inventory']['quantity_available'] ?>" value="1" name="quantity">
             </div>
 
+            <span class="alert--error"></span>
+
             <input type="submit" class="button suggested-action" value="Add to Cart">
         </form>
     </div>

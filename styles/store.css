@@ -3,6 +3,11 @@
 * This file is part of elementary.io *
 *************************************/
 
+.alert--error {
+    color: #da4d45;
+    font-size: 88%;
+}
+
 /***************************
 * Category view of product *
 ***************************/
@@ -100,11 +105,6 @@
 .list--product .list__item img {
     height: 180px;
     width: 180px;
-}
-
-.list--product .alert--error {
-    color: #da4d45;
-    font-size: 88%;
 }
 
 .list--product .list__detail > div > * {

@@ -37,27 +37,33 @@ $(function() {
 
             $form.find('input[name="id"]').val(value.id)
             $modal.find('.modal__price').text('$' + parseFloat(value.price).toFixed(2))
+            $('.alert--error', $form).text('')
             return
         }
+
+        $('.alert--error', $form).text('Unable to find item')
     })
 
     $('.modal form[action="/store/inventory"]').on('submit', function(event) {
         event.preventDefault()
         $form = $(this)
+        $err = $('.alert--error', $form)
 
         $.post($form.attr('action'), $form.serialize() + '&simple=true')
         .done(function(data, status) {
             if (data !== 'OK') {
+                $err.text('Unable to add to cart')
                 console.log('Well this is embarrassing')
                 console.log(data)
                 return
             }
 
+            $err.text('')
             $form.find('input[name="quantity"]').val('1')
             $form.closest('.modal').find('.close-modal').click()
-            console.log('Added some items to cart!')
         })
         .fail(function(err) {
+            $err.text('An error occured')
             console.log("Oh god, Not again.")
             console.log(err.statusText);
         })
