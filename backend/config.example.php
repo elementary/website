@@ -18,6 +18,8 @@ $config = array(
 
     'amplifier_key' => 'test_key',
 
+    'google_map_key' => 'test_key',
+
     'twitter_consumer_key'    => 'test_ckey',
     'twitter_consumer_secret' => 'test_csecret',
     'twitter_access_token'    => 'test_atoken',

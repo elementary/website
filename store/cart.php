@@ -26,53 +26,55 @@
     jQl.loadjQdep('scripts/store/cart.js');
 </script>
 
-<form action="/store/checkout" method="post">
-    <div class="row">
+<form action="/store/checkout" method="post" class="grid grid--narrow">
+    <div class="whole">
         <h1>Cart</h1>
     </div>
 
-    <div class="list list--product">
-        <?php
-            $index = 0;
-            foreach ($cart->get_products() as $id => $product) {
-                $index++;
-        ?>
+    <div class="whole">
+        <div class="list list--product">
+            <?php
+                $index = 0;
+                foreach ($cart->get_products() as $id => $product) {
+                    $index++;
+            ?>
 
-        <div class="list__item" id="product-<?php echo $index ?>">
-            <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
-            <div class="list__info">
-                <b><?php echo $product['full_name'] ?></b>
-            </div>
-            <div class="list__detail">
-                <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
-                <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
+            <div class="list__item" id="product-<?php echo $index ?>">
+                <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
+                <div class="list__info">
+                    <b><?php echo $product['full_name'] ?></b>
+                </div>
+                <div class="list__detail">
+                    <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
+                    <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
 
-                <span class="alert--error"></span>
+                    <span class="alert--error"></span>
 
-                <div class="subtotal">
-                    <span>$<?php echo number_format($product['retail_price'], 2) ?></span>
-                    <span>×</span>
-                    <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
-                    <span>=</span>
-                    <b>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></b>
+                    <div class="subtotal">
+                        <span>$<?php echo number_format($product['retail_price'], 2) ?></span>
+                        <span>×</span>
+                        <input type="number" min="0" max="<?php echo $product['inventory']['quantity_available'] ?>" step="1" value="<?php echo $product['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
+                        <span>=</span>
+                        <b>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></b>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <?php
-            }
-        ?>
+            <?php
+                }
+            ?>
 
-        <div class="list__footer">
-            <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
+            <div class="list__footer">
+                <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
+            </div>
         </div>
     </div>
 
-    <div class="row">
+    <div class="whole">
         <h2>Shipping Information</h2>
     </div>
 
-    <div class="grid grid--address">
+    <div class="whole grid grid--address">
         <div>
             <input type="text" name="first-name" placeholder="First Name" autocomplete="given-name" required>
             <input type="text" name="last-name" placeholder="Last Name" autocomplete="family-name" required>
@@ -103,7 +105,7 @@
         } else {
     ?>
 
-<div class="row">
+<div class="grid">
     <h3>You have no items in your cart</h3>
     <a href="/store/">Pick up some swag</a>
 </div>

@@ -3,11 +3,6 @@
 * This file is part of elementary.io *
 *************************************/
 
-.alert--error {
-    color: #da4d45;
-    font-size: 88%;
-}
-
 /***************************
 * Category view of product *
 ***************************/
@@ -87,8 +82,6 @@
 
 .list--product {
     display: block;
-    margin: 32px auto;
-    max-width: 644px;
     text-align: center;
 }
 
@@ -149,11 +142,6 @@
 * Shipping Grid *
 ****************/
 
-.grid--address {
-    margin: 0 auto;
-    max-width: 672px;
-}
-
 .grid--address > *:not(:last-of-type) {
     display: flex;
     flex-wrap: wrap;
@@ -173,4 +161,55 @@
 
 .grid--address input[autocomplete="postal-code"] {
     flex: 1 1 5ch;
+}
+
+/*****************************
+* Shipping photo on checkout *
+*****************************/
+
+#shipping-photo {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: none;
+    margin: 32px 0;
+}
+
+@media (min-width: 500px) {
+    #shipping-photo {
+        display: inline-block;
+    }
+}
+
+/********************************
+* Checkout Shipping Information *
+********************************/
+
+.grid--narrow .half {
+    text-align: left;
+}
+
+.grid--narrow .half span {
+    display: block;
+}
+
+.grid--narrow .half h5 {
+    padding: 12px 0;
+    opacity: 0.75;
+}
+
+/*************************
+* Store related elements *
+*************************/
+
+.grid--narrow {
+    max-width: 644px;
+}
+
+.alert--error {
+    color: #da4d45;
+    font-size: 88%;
+}
+
+.text--success {
+    color: #49800b;
 }

@@ -54,27 +54,27 @@ class Shipment {
 
     // Setter functions
     public function set_name ($in) {
-        $this->name = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->name = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_line1 ($in) {
-        $this->line1 = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->line1 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_line2 ($in) {
-        $this->line2 = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->line2 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_level2 ($in) {
-        $this->level2 = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->level2 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_level1 ($in) {
-        $this->level1 = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->level1 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_country ($in) {
-        $this->country = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+        $this->country = htmlspecialchars(strtoupper($in), ENT_XML1, 'UTF-8');
     }
 
     public function set_postal ($in) {
@@ -105,23 +105,23 @@ class Shipment {
     }
 
     public function get_line1 () {
-        return $this->line1;
+        return ucwords(strtolower($this->line1));
     }
 
     public function get_line2 () {
-        return $this->line2;
+        return ucwords(strtolower($this->line2));
     }
 
     public function get_level2 () {
-        return $this->level2;
+        return ucwords(strtolower($this->level2));
     }
 
     public function get_level1 () {
-        return $this->level1;
+        return strtoupper($this->level1);
     }
 
     public function get_country () {
-        return $this->country;
+        return strtoupper($this->country);
     }
 
     public function get_postal () {
@@ -316,6 +316,8 @@ class Shipment {
                 "date" => $summary->EstimatedArrival->Date,
                 "time" => $summary->EstimatedArrival->Time
             );
+
+            $returned["readable"] = date("F jS", strtotime($returned['date'].' '.$returned['time']));
         }
 
         if (isset($returned)) {

@@ -96,76 +96,116 @@
     jQl.loadjQdep('scripts/store/checkout.js');
 </script>
 
-<form action="/store/order" method="post" class="grid">
-    <h1>Checkout</h1>
+<form action="/store/order" method="post" class="grid grid--narrow">
+    <div class="whole">
+        <h1>Checkout</h1>
+    </div>
 
-    <div class="list list--product">
-        <?php
-            $index = 0;
-            foreach ($cart->get_products() as $id => $product) {
-                $index++;
-        ?>
+    <div class="whole">
+        <div class="list list--product">
+            <?php
+                $index = 0;
+                foreach ($cart->get_products() as $id => $product) {
+                    $index++;
+            ?>
 
-        <div class="list__item" id="product-<?php echo $index ?>">
-            <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
-            <div class="list__info">
-                <b><?php echo $product['full_name'] ?></b>
-            </div>
-            <div class="list__detail">
-                <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
-                <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
+            <div class="list__item" id="product-<?php echo $index ?>">
+                <img src="images/store/<?php echo $product['uid'] ?>-small.png"/>
+                <div class="list__info">
+                    <b><?php echo $product['full_name'] ?></b>
+                </div>
+                <div class="list__detail">
+                    <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $id ?>">
+                    <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $product['retail_price'] ?>">
 
-                <div class="subtotal">
-                    <span>$<?php echo number_format($product['retail_price'], 2) ?></span>
-                    <span>×</span>
-                    <span><?php echo $product['quantity'] ?></span>
-                    <span>=</span>
-                    <b>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></b>
+                    <div class="subtotal">
+                        <span>$<?php echo number_format($product['retail_price'], 2) ?></span>
+                        <span>×</span>
+                        <span><?php echo $product['quantity'] ?></span>
+                        <span>=</span>
+                        <b>$<?php echo number_format($product['retail_price'] * $product['quantity'], 2) ?></b>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <?php
-            }
-        ?>
+            <?php
+                }
+            ?>
 
-        <div class="list__footer">
-            <input type="hidden" name="cart-weight" value="<?php echo $shipment->get_weight() ?>">
-            <input type="hidden" name="cart-sub_total" value="<?php echo $cart->get_totals() ?>">
-            <input type="hidden" name="cart-shipping" value="<?php echo $rate ?>">
-            <input type="hidden" name="cart-total" value="<?php echo $cart->get_totals() + $rate ?>">
+            <div class="list__footer">
+                <input type="hidden" name="cart-weight" value="<?php echo $shipment->get_weight() ?>">
+                <input type="hidden" name="cart-sub_total" value="<?php echo $cart->get_totals() ?>">
+                <input type="hidden" name="cart-shipping" value="<?php echo $rate ?>">
+                <input type="hidden" name="cart-total" value="<?php echo $cart->get_totals() + $rate ?>">
 
-            <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
-            <h4>Shipping: $<?php echo number_format($rate, 2); ?></h4>
-            <hr>
-            <h4>Total: $<?php echo number_format($cart->get_totals() + $rate, 2) ?></h4>
+                <h4>Sub-Total: $<?php echo number_format($cart->get_totals(), 2) ?></h4>
+                <h4>Shipping: $<?php echo number_format($rate, 2); ?></h4>
+                <hr>
+                <h4>Total: $<?php echo number_format($cart->get_totals() + $rate, 2) ?></h4>
+            </div>
         </div>
     </div>
 
-    <h1>Shipping information</h1>
+    <div class="whole">
+        <h2>Shipping Information</h2>
+    </div>
 
-    <div class="whole text-center">
-        <div>Items will be shipped by UPS ground. Estimated to arive on <?php echo $transit["date"] ?>.</div>
+    <div class="whole">
+        <?php
+            $a = [];
+            $a[] = urlencode($shipment->get_line1());
+            $a[] = urlencode($shipment->get_line2());
+            $a[] = urlencode($shipment->get_level2());
+            $a[] = urlencode($shipment->get_level1());
+            $a[] = urlencode($shipment->get_postal());
+            $a[] = urlencode($shipment->get_country());
+            $a = implode(',', $a);
 
-        <div>
-            <input type="hidden" name="address-name" value="<?php echo $shipment->get_name() ?>">
-            <input type="hidden" name="address-line1" value="<?php echo $shipment->get_line1() ?>">
-            <input type="hidden" name="address-line2" value="<?php echo $shipment->get_line2() ?>">
-            <input type="hidden" name="address-level2" value="<?php echo $shipment->get_level2() ?>">
-            <input type="hidden" name="address-level1" value="<?php echo $shipment->get_level1() ?>">
-            <input type="hidden" name="address-country" value="<?php echo $shipment->get_country() ?>">
-            <input type="hidden" name="address-postal" value="<?php echo $shipment->get_postal() ?>">
-            <input type="hidden" name="address-weight" value="<?php echo $shipment->get_weight() ?>">
+            $q = [];
+            $q['key'] = $config['google_map_key'];
+            $q['center'] = $a;
+            $q['markers'] = $a;
+            $q['size'] = '640x320';
+            $q['scale'] = 2;
+            $q['zoom'] = 17;
+            $q = http_build_query($q);
 
-            <input type="hidden" name="email" value="<?php echo $shipment->get_email() ?>">
-            <input type="hidden" name="phone" value="<?php echo $shipment->get_phone() ?>">
+            $url = "https://maps.googleapis.com/maps/api/staticmap?$q";
 
-            <div><?php echo $shipment->get_name(); ?></div>
-            <div><?php echo $shipment->get_line1(); ?></div>
-            <div><?php echo $shipment->get_line2(); ?></div>
-            <div><?php echo $shipment->get_level2(); ?> <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></div>
-        </div>
+            $headers = @get_headers($url);
+            if ($headers[0] === 'HTTP/1.0 200 OK') {
+        ?>
+        <img id="shipping-photo" src="<?php echo $url ?>" alt="shipping address">
+        <?php } ?>
+    </div>
 
+    <div class="half list--address">
+        <input type="hidden" name="address-name" value="<?php echo $shipment->get_name() ?>">
+        <input type="hidden" name="address-line1" value="<?php echo $shipment->get_line1() ?>">
+        <input type="hidden" name="address-line2" value="<?php echo $shipment->get_line2() ?>">
+        <input type="hidden" name="address-level2" value="<?php echo $shipment->get_level2() ?>">
+        <input type="hidden" name="address-level1" value="<?php echo $shipment->get_level1() ?>">
+        <input type="hidden" name="address-country" value="<?php echo $shipment->get_country() ?>">
+        <input type="hidden" name="address-postal" value="<?php echo $shipment->get_postal() ?>">
+        <input type="hidden" name="address-weight" value="<?php echo $shipment->get_weight() ?>">
+
+        <input type="hidden" name="email" value="<?php echo $shipment->get_email() ?>">
+        <input type="hidden" name="phone" value="<?php echo $shipment->get_phone() ?>">
+
+        <h5>Ship to:</h5>
+        <span><?php echo $shipment->get_name(); ?></span>
+        <span><?php echo $shipment->get_line1(); ?></span>
+        <span><?php echo $shipment->get_line2(); ?></span>
+        <span><?php echo $shipment->get_level2(); ?>, <?php echo $shipment->get_level1(); ?> <?php echo $shipment->get_postal(); ?> <?php echo $shipment->get_country(); ?></span>
+    </div>
+
+    <div class="half">
+        <h5>Estimated delivery:</h5>
+        <span class="text--success"><?php echo $transit["readable"] ?></span>
+        <span>Items will be shipped by UPS ground</span>
+    </div>
+
+    <div class="whole">
         <input type="hidden" name="stripe-token">
         <button type="submit" id="order" class="suggested-action">Place order</button>
     </div>
@@ -173,7 +213,7 @@
 
 <?php } else { ?>
 
-<div class="row">
+<div class="grid">
     <h3><?php echo $error ?></h3>
     <a href="/store/cart">Return to cart</a>
 </div>
