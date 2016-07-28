@@ -418,3 +418,90 @@ div.icons-container.small-screen {
         display: block;
     }
 }
+
+/*********
+* Dialog *
+**********/
+
+.dialog {
+    border-radius: 3px;
+    box-shadow: inset 1px 0 0 0 rgba(255,255, 255, 0.20),
+                inset -1px 0 0 0 rgba(255,255, 255, 0.20),
+                inset 0 1px 0 0 #fff,
+                0 0 0 1px rgba(0, 0, 0, 0.20),
+                0 8px 20px 1px rgba(0, 0, 0, 0.14),
+                0 3px 28px 2px rgba(0, 0, 0, 0.12),
+                0 5px 10px -3px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    padding: 12px;
+    padding-top: 0;
+    width: 380px;
+}
+
+.dialog img {
+    display: inline-block;
+    margin-right: 12px;
+    -webkit-user-select: none;
+    vertical-align: top;
+}
+
+.dialog p {
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.dialog p.primary {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dialog .action-area {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+.dialog .button {
+    display: inline-block;
+    font-size: 12px;
+    flex: 0 35%; /*FIXME: These values are bullshit*/
+    margin: 0;
+    padding: 3px 12px;
+    -webkit-user-select: none;
+    white-space: nowrap;
+}
+
+.dialog .button + .button {
+    margin-left: 6px;
+}
+
+.dialog .content-area {
+    display: inline-block;
+    width: calc(100% - 48px - 12px); /*Subtract icon width and right margin*/
+}
+
+.guide {
+    border: 0 #c6262e solid;
+    color: #c6262e;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.dialog:hover .guide {
+    opacity: 1;
+}
+
+.guide.horizontal {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    height: 24px;
+    width: 420px;
+    margin-left: -24px;
+    text-align: right;
+}
+
+#dialog-guide-action {
+    margin-top: -16px;
+}

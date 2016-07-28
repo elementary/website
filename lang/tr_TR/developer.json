@@ -1,8 +1,8 @@
 {
     "Save": "Kaydet",
-    "Loki Beta Is Here": "Loki Beta Duyruldu",
+    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
     "Try out the upcoming version of elementary OS.": "elementary OS'un yeni sürümünü deneyin.",
-    "Download Loki Beta": "Loki Beta'yı İndir",
+    "Download Loki Beta 2": "Download Loki Beta 2",
     "Read the Release Notes": "Sürüm Notlarını Okuyun",
     "Documentation": "Belgeleme",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Başlangıç kılavuzu ile dağıtım için temel bir uygulama yapın, hazırlayın ve çalıştırın.",
@@ -22,7 +22,7 @@
     "GDA": "GDA",
     "Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.": "Basit, esnek veritabanı yönetimi. SQLite dahil olmak üzere SQL veritabanını diskte kontrol etmeyi destekler. Grafik arayüzünde ve konsol arayüzünde SQL veri tarayıcılarıyla, otomatik veri keşfini aktifleştiren bir metadata çıkartıcıyla ve daha fazlasıyla geliyor.",
     "Reference for GDA": "GDA için referans",
-    "Soup": "Çorba",
+    "Soup": "Soup",
     "An HTTP client/server library with synchronous and async APIs. Comes with SSL/TLS, cookies, caching, WebSockets, proxy and tunneling support, and more. Goes great with JSON-GLib.": "APIler ile eşzamanlı ve eşzamansız bir HTTP alıcı/sunucu kütüphanesi. SSL/TLS, çerezler, önbellek, WebSocketler, vekil ve tünel desteği ve daha fazlasıyla geliyor. JSON-GLib ile iyi çalışır.",
     "Reference for Soup": "Soup için referans",
     "Reference for JSON-GLib": "JSON-GLib için referans",
@@ -33,7 +33,7 @@
     "Library Documentation for Vala": "Vala için kütüphaneleri belgeleyin.",
     "By downloading this beta you accept that it is not a final product and will be unstable.": "Bu beta sürümü indirerek bunun kararlı sürüm olmadığını ve kararsız olabileceğini kabul ediyorsunuz.",
     "Cancel": "İptal",
-    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "Torrent Linki",
     "Developer &sdot; elementary": "Geliştirici ⋅ elementary"
 }
