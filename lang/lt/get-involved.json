@@ -1,5 +1,5 @@
 {
-    "Be a Part of Something Bigger": "Būkite dalimi kažko didesnio",
+    "Be a Part of Something Bigger": "Būkite kažko didesnio dalimi",
     "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Viskas, ką mes kuriame yra 100% atviro kodo ir sukurta, bendradarbiaujant su žmonėmis iš viso pasaulio. Netgi, jei nesate programuotojas, galite įsitraukti ir daryti pokyčius.",
     "Funding": "Rėmimas",
     "Translations": "Vertimai",
@@ -37,14 +37,14 @@
     "Report a Website Issue": "Pranešti apie klaidą svetainėje",
     "Desktop Development": "Darbalaukio kūrimas",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Mūsų darbalaukio aplinka ir visos jos programos yra sukurtos, naudojant Vala, GTK+, Granite ir daugelį kitų atvirų bibliotekų. Mes talpiname savo darbalaukio kodą Launchpad.net svetainėje, atviroje paslaugoje, skirtoje atviros programinės įrangos projektams. Jeigu jums prieš tai niekada neteko kurti elementary OS, rekomenduojame jums peržiūrėti mūsų Darbo pradžios vadovą.",
-    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>",
+    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "Ši mažėjanti diagrama rodo mūsų <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 kontrolinio taško</a>, kuris šiuo metu yra mūsų kūrimo dėmesyje, eigą. Greitu metu, po to kai pasieksime kontrolinį tašką, Loki bus viešai išleista ir prasidės darbas su kita elementary OS versija. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Sužinokite daugiau</a>",
     "Fixed": "Ištaisyta",
     "In Progress": "Eigoje",
     "Unfixed": "Neištaisyta",
     "Browse Our Desktop Code": "Naršyti darbalaukio kodą",
     "Browse Our Apps' Code": "Naršyti programų kodą",
-    "Bitesized Bugs": "Bitesized Bugs",
-    "Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:": "Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:",
+    "Bitesized Bugs": "Baito dydžio klaidos",
+    "Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:": "Kiekvienas projektas prasideda nuo idėjos. Mūsų dizaino komanda paima šias idėjas ir paverčia jas aiškiais projektais ir klaidų ataskaitomis. Mes suskaidome dizainą į du pagrindinius komponentus:",
     "Visual Design": "Vaizdinis dizainas",
     "We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with": "Mes visuomet atviri naujoms elementary OS vaizdinio dizaino idėjoms. Pradėkite, pasidalindami savo maketais su",
     "our Google+ Community": "mūsų Google+ bendruomene",
@@ -54,5 +54,5 @@
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "Išsamių paaiškinimų, apie naujas ypatybes ir pakeitimus naudotojo sąsajoje, kūrimui, mes naudojame Launchpad esančią sistemą, vadinamą \"Blueprints\".",
     "Read About Our Workflow": "Skaityti apie mūsų darbo eigą",
     "Browse Our Blueprints": "Naršyti mūsų projektus",
-    "Get Involved with elementary OS": "Įsitraukti į elementary OS"
+    "Get Involved with elementary OS": "Įsitraukite į elementary OS"
 }

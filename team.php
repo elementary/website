@@ -34,6 +34,7 @@
         "U02C59PF7", // ochosi
         "U1DTKMUK1", // jancborchardt
         "U1E0QSPB2", // mhall119
+        "U0886H1TM", // robert.ancell
     );
 
 ?>
@@ -92,8 +93,8 @@
 
             <div class="member">
                 <div class="member_photo" style="background-image:url(<?=$member['profile']['image_192']?>)"></div>
-                <h5 class="member_name"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
-                <span class="member_title"><?=$member['profile']['title']?></span>
+                <h5 class="member_name" data-l10n-off="1"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <span class="member_title" data-l10n-off="1"><?=$member['profile']['title']?></span>
                 <span class="member_time"><?=$member['tz_label']?></span>
             </div>
 
@@ -141,8 +142,8 @@
 
             <div class="member">
                 <div class="member_photo" style="background-image:url(<?=$community_member['profile']['image_192']?>)"></div>
-                <h5 class="member_name"><?=$community_member['name']?><?php if ($community_member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
-                <span class="member_title"><?=$community_member['profile']['title']?></span>
+                <h5 class="member_name" data-l10n-off="1"><?=$community_member['name']?><?php if ($community_member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <span class="member_title" data-l10n-off="1"><?=$community_member['profile']['title']?></span>
                 <span class="member_time"><?=$community_member['tz_label']?></span>
             </div>
 

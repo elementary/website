@@ -1,6 +1,6 @@
 {
     "Be a Part of Something Bigger": "成為做大事的一份子",
-    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "我們開發的產品都是集眾所成，絶對開源。因此即使你不是一個程序員，你也可以參與開發，為程式開發獻一己之力。",
+    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "我們開發的產品都是集眾所成，絶對開源。即使你不是程式設計師，你還是可以加入我們，貢獻一己之力。",
     "Funding": "集資",
     "Translations": "翻譯",
     "Support": "支援",
@@ -37,7 +37,7 @@
     "Report a Website Issue": "網站問題反應",
     "Desktop Development": "桌面開發",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "我們的桌面環境及其包含程式都是基於Vala，GTK+，Granite和其他一系列開源程式庫開發而成。我們把桌面程式碼託管於Launchpad.net，該網站是一個用來託管開源項目的服務網站。如果你沒有為本系統開發軟體的經驗，我們建議你先翻看《新手手冊》。",
-    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>",
+    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "<a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 里程碑</a>這個表列出了 Loki 的進度跟我們程式開發的焦點。當里程碑達到後，我們將釋出正式版的 elementary OS，然後開發者們將進行下一個版本的開發，您可以在<a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">這裡</a>瞭解更多詳情",
     "Fixed": "已修正",
     "In Progress": "處理中",
     "Unfixed": "尚未修正",
