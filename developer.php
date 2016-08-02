@@ -19,11 +19,10 @@
 
 <section class="hero dark">
     <div>
-        <img src="images/developer/save.svg" alt="Save">
-        <h1>Loki Beta 2 Is Here</h1>
-        <h4>Try out the upcoming version of elementary OS.</h4>
-        <button type="submit" id="download" class="suggested-action">Download Loki Beta 2</button>
-        <p class="small-label"><a href="http://blog.elementary.io/post/147507276666/loki-beta-2-is-here">Read the Release Notes</a></p>
+        <img src="images/developer/developer-sketch.svg" alt="Developer hero image">
+        <h1>Develop Your Ideas Into Code</h1>
+        <h4>Learn to design, develop, and publish apps for elementary OS</h4>
+        <a href="docs/code/getting-started" class="button suggested-action">Get Started</a>
     </div>
 </section>
 

@@ -48,13 +48,17 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
+    align-items: center;
     background-color: #4D4267;
     background-image: radial-gradient(#5d4e75 0%, #4D4267 100%);
     color: #fff;
+    display: flex;
+    justify-content: center;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     padding: 120px 0 64px 0;
     max-width: 100%;
+    min-height: 70vh;
     position: relative;
 }
 
