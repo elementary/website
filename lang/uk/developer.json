@@ -1,9 +1,9 @@
 {
-    "Save": "Save",
-    "Loki Beta Is Here": "Loki Beta Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
-    "Download Loki Beta": "Download Loki Beta",
-    "Read the Release Notes": "Read the Release Notes",
+    "Save": "Зберегти",
+    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
+    "Try out the upcoming version of elementary OS.": "Спробуйте майбутню версію elementary OS.",
+    "Download Loki Beta 2": "Download Loki Beta 2",
+    "Read the Release Notes": "Прочитайте примітки до випуску",
     "Documentation": "Документація",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Напишіть, запустіть і підготуйте до розповсюдження просту програму, користуючись нашим посібником для початківців.",
     "Design": "Дизайн",
@@ -11,7 +11,7 @@
     "Reference": "Reference",
     "Get more info about code style, reporting issues, and proposing design changes.": "Отримайте більше інформації щодо стилю написання коду, повідомлення про помилки та пропонування змін у дизайні.",
     "Build for": "Створюйте для",
-    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 & Vala 0.32, running atop Linux 4.4",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki приносить новий API для Wingpanel, підтримку Launcher API в Slingshot, нові віджети, такі як AlertView, нові класи й іконки CSS стилів, і багато іншого. Створюйте повнофункціональні додатки простіше, ніж коли-небудь з Gtk 3.18 і Vala 0.32, запущеними поверх Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Служба, що широко використовується для того, щоб одні додатки могли користуватися функціоналом інших, без попередніх домовленостей.",
     "HIG for Contractor": "Рекомендації для користування Contractor",
@@ -31,9 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "З Vala ви можете писати швидкий об'єктно-орієнтований native код. Вона дуже схожа на С#, але залишається API/ABI сумісною з C, має низькі потреби у пам’яті та створена спеціально для GObject. Vala багата функціоналом: сигнали, властивості, узагальнення, lambda-функції, допомога в управлінні пам’яттю, обробка виключень, вивід типів, async/yield тощо.",
     "Learn More about Vala": "Дізнайтеся більше про Vala",
     "Library Documentation for Vala": "Бібліотека документації для Vala",
-    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
-    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "Завантажуючи цю бета-версію, ви погоджуєтеся, що це не завершений продукт і він нестабільний.",
+    "Cancel": "Скасувати",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "Magnet-посилання для торрента.",
-    "Developer &sdot; elementary": "Developer ⋅ elementary"
+    "Developer &sdot; elementary": "Розробник ⋅ elementary"
 }
