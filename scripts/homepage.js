@@ -33,10 +33,25 @@ $(function () {
             updateDownloadButton();
         }
     };
+
+    var amountValidate = function(event) {
+      var currentVal = $('#amount-custom').val();
+      var code = event.which || event.keyCode || event.charCode;
+
+      if ((code !== 46 || currentVal.indexOf('.') !== -1) &&
+          [8, 37, 39].indexOf(code) === -1 &&
+          (code < 48 || code > 57)) {
+          event.preventDefault();
+      }
+    }
+
+
     // Listen for Clicking on Amounts
     $('.target-amount').click(amountClick);
     // Check Custom Amounts on Blur
     $('#amount-custom').blur(amountBlur);
+    // Don't allow non-digit input
+    $('#amount-custom').keypress(amountValidate);
 
     $('#download').click(function(){
         console.log('Pay ' + current_amount);

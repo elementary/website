@@ -37,6 +37,56 @@
         "U0886H1TM", // robert.ancell
     );
 
+    function getMembers ($raw, $list) {
+        global $apiFilter;
+        global $apiCommunity;
+
+        $members = array_filter($raw, function($member) use ($list, $apiFilter, $apiCommunity) {
+            if ( in_array( $member['id'], $apiFilter ) ) return false;
+            if ( $member['deleted'] ) return false;
+            if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
+            if ( $member['is_bot'] ) return false;
+
+            if ($list === 'team') {
+                if ( in_array( $member['id'], $apiCommunity ) ) return false;
+            } else if ($list === 'community') {
+                if (! in_array( $member['id'], $apiCommunity ) ) return false;
+            }
+
+            return true;
+        });
+
+        foreach ( $members as $key => $member ) {
+            // Because some people just want to see the page burn
+            if ( !empty($member['real_name']) ) {
+                $members[$key]['name'] = htmlspecialchars($member['real_name']);
+            } else {
+                $members[$key]['name'] = htmlspecialchars($member['name']);
+            }
+
+            $members[$key]['profile']['title'] = htmlspecialchars($members[$key]['profile']['title']);
+
+            // The magical transformation of dirty http links to clean hrefs
+            $members[$key]['profile']['title'] = preg_replace("/(https?):\/\/(.*)\.([^\.\s]*)/mi",
+                                                              '<a href="$1://$2.$3">$2</a>',
+                                                              $members[$key]['profile']['title']);
+        }
+
+        usort( $members, function($a, $b) {
+            if ( $a['id'] == 'U029601AF' ) return -1; // "I'm #1!" ~ Dan
+            if ( $b['id'] == 'U029601AF' ) return 1;
+
+            if ( $a['is_admin'] && !$b['is_admin'] ) return -1; // Admin's first
+            if ( $b['is_admin'] && !$a['is_admin'] ) return 1;
+
+            if ( $a['presence'] == 'active' && $b['presence'] != 'active') return -1; // Online people first
+            if ( $b['presence'] == 'active' && $a['presence'] != 'active') return 1;
+
+            return strcasecmp( $a['name'], $b['name'] ); // Sort alphabetically
+        });
+
+        return $members;
+    }
 ?>
 
 <section class="grid">
@@ -55,46 +105,14 @@
         <div class="team-directory">
 
             <?php
-                $members = array_filter( $apiResponse['members'], function($member) use ($apiFilter, $apiCommunity) {
-                    if ( in_array( $member['id'], $apiFilter ) ) return false;
-                    if ( in_array( $member['id'], $apiCommunity ) ) return false;
-                    if ( $member['deleted'] ) return false;
-                    if ( !isset($member['profile']['title']) || $member['profile']['title'] == '' ) return false;
-                    if ( $member['is_bot'] ) return false;
-
-                    return true;
-                });
-
-                foreach ( $members as $key => $member ) {
-                    // Because some people just want to see the page burn
-                    if ( !empty($member['real_name']) ) {
-                        $members[$key]['name'] = htmlspecialchars($member['real_name']);
-                    } else {
-                        $members[$key]['name'] = htmlspecialchars($member['name']);
-                    }
-                    $members[$key]['profile']['title'] = htmlspecialchars($member['profile']['title']);
-                }
-
-                usort( $members, function($a, $b) {
-                    if ( $a['id'] == 'U029601AF' ) return -1; // "I'm #1!" ~ Dan
-                    if ( $b['id'] == 'U029601AF' ) return 1;
-
-                    if ( $a['is_admin'] && !$b['is_admin'] ) return -1; // Admin's first
-                    if ( $b['is_admin'] && !$a['is_admin'] ) return 1;
-
-                    if ( $a['presence'] == 'active' && $b['presence'] != 'active') return -1; // Online people first
-                    if ( $b['presence'] == 'active' && $a['presence'] != 'active') return 1;
-
-                    return strcasecmp( $a['name'], $b['name'] ); // Sort alphabetically
-                });
-
+                $members = getMembers($apiResponse['members'], 'team');
                 foreach( $members as $member ) {
             ?>
 
             <div class="member">
                 <div class="member_photo" style="background-image:url(<?=$member['profile']['image_192']?>)"></div>
-                <h5 class="member_name"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
-                <span class="member_title"><?=$member['profile']['title']?></span>
+                <h5 class="member_name" data-l10n-off="1"><?=$member['name']?><?php if ($member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <span class="member_title" data-l10n-off="1"><?=$member['profile']['title']?></span>
                 <span class="member_time"><?=$member['tz_label']?></span>
             </div>
 
@@ -114,36 +132,14 @@
         <div class="team-directory">
 
             <?php
-                $community_members = array_filter( $apiResponse['members'], function($community_member) use ($apiCommunity) {
-                    if ( !isset($community_member['profile']['title']) || $community_member['profile']['title'] == '' ) return false;
-                    if ( in_array( $community_member['id'], $apiCommunity ) ) return true;
-                    return false;
-                });
-
-                foreach ( $community_members as $key => $community_member ) {
-                    // Because some people just want to see the page burn
-                    if ( !empty($community_member['real_name']) ) {
-                        $community_members[$key]['name'] = htmlspecialchars($community_member['real_name']);
-                    } else {
-                        $community_members[$key]['name'] = htmlspecialchars($community_member['name']);
-                    }
-                    $community_members[$key]['profile']['title'] = htmlspecialchars($community_member['profile']['title']);
-                }
-
-                usort( $community_members, function($a, $b) {
-                    if ( $a['presence'] == 'active' && $b['presence'] != 'active') return -1; // Online people first
-                    if ( $b['presence'] == 'active' && $a['presence'] != 'active') return 1;
-
-                    return strcasecmp( $a['name'], $b['name'] ); // Sort alphabetically
-                });
-
+                $community_members = getMembers($apiResponse['members'], 'community');
                 foreach( $community_members as $community_member ) {
             ?>
 
             <div class="member">
                 <div class="member_photo" style="background-image:url(<?=$community_member['profile']['image_192']?>)"></div>
-                <h5 class="member_name"><?=$community_member['name']?><?php if ($community_member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
-                <span class="member_title"><?=$community_member['profile']['title']?></span>
+                <h5 class="member_name" data-l10n-off="1"><?=$community_member['name']?><?php if ($community_member['presence'] == 'active') { ?><img class="member_status" title="Online" src="<?=$sitewide['root'];?>images/team/user-available.svg"><?php } ?></h5>
+                <span class="member_title" data-l10n-off="1"><?=$community_member['profile']['title']?></span>
                 <span class="member_time"><?=$community_member['tz_label']?></span>
             </div>
 

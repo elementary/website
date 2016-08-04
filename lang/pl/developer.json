@@ -1,9 +1,9 @@
 {
-    "Save": "Save",
-    "Loki Beta Is Here": "Loki Beta Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
-    "Download Loki Beta": "Download Loki Beta",
-    "Read the Release Notes": "Read the Release Notes",
+    "Save": "Zapisz",
+    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
+    "Try out the upcoming version of elementary OS.": "Wypróbuj nadchodzącą wersje elementary OS.",
+    "Download Loki Beta 2": "Download Loki Beta 2",
+    "Read the Release Notes": "Przeczytaj informacje o wydaniu",
     "Documentation": "Dokumentacja",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Zacznij tworzyć proste aplikacje gotowe do dystrybucji z naszym poradnikiem dla początkujących.",
     "Design": "Projektuj",
@@ -31,9 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
     "Learn More about Vala": "Dowiedz się więcej o Vala",
     "Library Documentation for Vala": "Biblioteka dokumentacji dla języka Vala",
-    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
-    "Loki Beta 64-bit": "Loki Beta 64-bit",
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "Pobierając tą bete akceptujesz fakt, że nie jest to produkt ostateczny i jest niestabilny",
+    "Cancel": "Anuluj",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "Torrent - Link Magnet",
     "Developer &sdot; elementary": "Developer ⋅ elementary"
 }
