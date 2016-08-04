@@ -8,6 +8,17 @@ $(function () {
         var targetId = $(e.target).attr('id'); // avoids null values vs native js
         var targetType = e.type;
 
+        // Verify the number
+        if (!$(e.target).hasClass('target-amount') && current_amount === 'amount-custom') {
+            var i = document.getElementById('amount-custom');
+
+            // all the things for a 'bad input'
+            if (!i.validity.valid || i.value == '') {
+                targetId = previous_button;
+                targetType = 'click';
+            }
+        }
+
         // on button / input becoming active. Focus of custom amount with valid input considered becoming active
         if ((targetId === 'amount-custom' || targetType !== 'focusin') && $('#' + targetId).hasClass('target-amount')) {
             if (targetId !== 'amount-custom') previous_button = targetId;
