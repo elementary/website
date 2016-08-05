@@ -1,0 +1,12 @@
+language: php
+php:
+    - "7.0"
+
+before_script:
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm install 6'"
+
+script:
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/css.sh'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/javascript.sh'"
+    - "sh ./_tests/php.sh"
+    - "php ./_tests/translations.php"
