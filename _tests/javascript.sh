@@ -8,7 +8,11 @@ echo "###########################"
 echo "Starting Javascript linting"
 echo "###########################"
 
-npm install eslint-config-standard eslint
+npm install \
+    eslint-config-standard \
+    eslint-plugin-standard \
+    eslint-plugin-promise \
+    eslint
 
 ./node_modules/.bin/eslint \
     --ignore-pattern "*.min.js" \
