@@ -26,6 +26,15 @@
     background-color: #f7f7f7;
 }
 
+hr.dotted {
+    background: transparent;
+    margin:16px 24px;
+    margin-bottom: 4px;
+    border-top: 1px dashed #c9c9c9;
+    height: 1px;
+    width: calc(100% - 44px);
+}
+
 
 .platform-item > img {
     display: inline-block;
