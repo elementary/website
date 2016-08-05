@@ -17,7 +17,7 @@
 </div>
 <div class="row">
     <div class="platform-item full">
-        <img class="oss-logo" src="images/open-source/apps.svg" alt="Applications">
+        <img class="oss-logo" src="images/icons/distributor-logo.svg" alt="Applications">
         <p class="oss-subtitle">elementary OS Applications</p>
         <div>
             <a href="https://launchpad.net/maya" target="_blank"><span class="sub-item">Calendar</span></a>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="platform-item full">
-        <img class="oss-logo" src="images/open-source/desktop.svg" alt="Desktop">
+        <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop">
         <p class="oss-subtitle">Pantheon Desktop Environment</p>
         <div>
             <a href="https://launchpad.net/contractor" target="_blank"><span class="sub-item">Contractor</span></a>
