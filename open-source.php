@@ -69,9 +69,9 @@
         </div>
     </div>
     <div class="platform-item two-thirds" id="fdo">
-        <a href="https://freedesktop.org/" target="_blank"><img class="oss-logo" src="images/open-source/freedesktop.svg" alt="FreeDesktop">
-        <h3 class="oss-title">FreeDesktop.org</h3>
-        <p class="oss-subtitle">Base Technology</p></a>
+        <a href="https://freedesktop.org/" target="_blank"><img class="oss-logo" src="images/open-source/freedesktop.svg" alt="freedesktop">
+        <h3 class="oss-title">freedesktop.org</h3>
+        <p class="oss-subtitle">Core Desktop Technology</p></a>
         <div>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank"><span>D-Bus</span></a>
             <a class="button sub-item" href="https://gstreamer.freedesktop.org/" target="_blank"><span>GStreamer</span></a>
@@ -83,7 +83,7 @@
     </div>
     <div class="platform-item third" id="xorg">
         <a href="http://x.org/" target="_blank"><img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org">
-        <h3 class="oss-title">X.org</h3>
+        <h3 class="oss-title">X.Org</h3>
         <p class="oss-subtitle">Display Server &amp; Windowing System</p></a>
         <div>
             <a class="button sub-item" href="http://x.org/" target="_blank"><span>X11</span></a>
@@ -96,14 +96,15 @@
         <p class="oss-subtitle">Complier &amp; Core Utilities</p></a>
         <div>
             <a class="button sub-item" href="https://www.gnu.org/software/bash/" target="_blank"><span>bash</span></a>
-            <a class="button sub-item" href="https://www.gnu.org/software/gcc/" target="_blank"><span>GCC</span></a>
             <a class="button sub-item" href="https://www.gnu.org/software/coreutils/" target="_blank"><span>Coreutils</span></a>
+            <a class="button sub-item" href="https://www.gnu.org/software/gcc/" target="_blank"><span>GCC</span></a>
+            <a class="button sub-item" href="https://www.gnu.org/software/libc/" target="_blank"><span>GNU C Library</span></a>
         </div>
     </div>
     <div class="platform-item half" id="linux">
         <a href="https://kernel.org/" target="_blank"><img class="oss-logo" src="images/open-source/linux.svg" alt="Linux">
         <h3 class="oss-title">Linux</h3>
-        <p class="oss-subtitle">Hardware Support &amp; drivers</p></a>
+        <p class="oss-subtitle">Filesystem, Hardware, Networking &amp; Drivers</p></a>
         <div>
             <a class="button sub-item" href="https://kernel.org/" target="_blank"><span>Kernel</span></a>
         </div>
