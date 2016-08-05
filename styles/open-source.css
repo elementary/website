@@ -37,7 +37,7 @@ hr.dotted {
 .sub-item {
     display: inline-block;
     margin: 4px;
-    padding: 8px 12px;
+    padding: 6px 12px;
     vertical-align: middle;
     font-weight: 600;
     background-color: #fff;
@@ -97,7 +97,7 @@ hr.dotted {
 
     .platform-item > img {
         display: inline-block;
-        margin:8px auto;
+        margin: 8px auto;
     }
 
     .sub-item {
