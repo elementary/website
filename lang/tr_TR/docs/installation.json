@@ -2,7 +2,7 @@
     "Installation": "Kurulum",
     "Download elementary OS": "Elementary OS'i indir",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Henüz yapmadıysan <a href=\"/\" target=\"_blank\">ana sayfamızdan elementary OS indirmelisin</a>. İndirdiğin ISO dosyasını, aşağıdaki yönergeleri takip ederek bir USB flash belleğe kopyalaman gerekecek.",
-    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "elementary OS şu an da iki işlemci mimarisi için geliştirildi, 32-bit ve 64-bit.",
+    "elementary OS is currently built for two processor architectures, 32-bit and 64-bit.": "elementary OS şu anda iki işlemci mimarisi için geliştirildi, 32-bit ve 64-bit.",
     "If you know you have a newer computer with a 64-bit processor, choose the 64-bit version.": "Eğer 64-bit destekleyen bir bilgisayara sahipseniz , 64-bit sürümünü seçiniz.",
     "If your computer is older or you do not know which type of processor your computer has, choose the 32-bit version. (64-bit processors will still be able to run this version).": "Eğer bilgisayarın 64-bit sürümünü desteklemiyorsa 32-bit sürümünü seçiniz . (64-bit destekleyen cihazlar da bu sürümü çalıştırabileceklerdir.)",
     "Recommended System Specifications": "Önerilen Sistem Özellikleri",
