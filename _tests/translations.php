@@ -1,5 +1,9 @@
 <?php
 
+echo "#####################################\n";
+echo "Starting Translation Checking linting\n";
+echo "#####################################\n";
+
 if (!function_exists('json_decode')) {
   throw new Exception('translations-checker needs the JSON PHP extension.');
 }
@@ -98,6 +102,10 @@ foreach ( $result['errors'] as $error ) {
 echo "Checked ".count($translation_files)." translation files\n";
 echo $result['valid_files']." valid translation files\n";
 echo $result['invalid_files']." invalid translation files\n";
+
+echo "##############################\n";
+echo "Translation Checking complete!\n";
+echo "##############################\n";
 
 if ($result['valid_files'] === count($translation_files)) {
   exit(0);
