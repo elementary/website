@@ -76,7 +76,7 @@
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank"><span>D-Bus</span></a>
             <a class="button sub-item" href="https://gstreamer.freedesktop.org/" target="_blank"><span>GStreamer</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank"><span>libinput</span></a>
-            <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/lightdm/" target="_blank"><span>LightDM</span></a>
+            <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/LightDM/" target="_blank"><span>LightDM</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/PulseAudio/" target="_blank"><span>PulseAudio</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/systemd/" target="_blank"><span>systemd</span></a>
         </div>
