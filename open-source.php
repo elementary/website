@@ -39,7 +39,7 @@
         </div>
     </div>
     <hr class="dotted full">
-    <div class="platform-item third">
+    <div class="platform-item half">
         <a href="http://gtk.org/" target="_blank"><img class="oss-logo" src="images/open-source/gtk.svg" alt="GTK+"></a>
         <h3 class="oss-title">GTK+</h3>
         <p class="oss-subtitle">User Interface Toolkit</p>
@@ -48,7 +48,7 @@
             <span class="sub-item"><a href="https://cairographics.org/" target="_blank">Cairo</a></span>
         </div>
     </div>
-    <div class="platform-item two-thirds">
+    <div class="platform-item half">
         <a href="https://gnome.org/" target="_blank"><img class="oss-logo" src="images/open-source/gnome.svg" alt="GNOME"></a>
         <h3 class="oss-title">GNOME</h3>
         <p class="oss-subtitle">Desktop Libraries</p>
@@ -58,7 +58,7 @@
             <span class="sub-item"><a href="https://wiki.gnome.org/Projects/Clutter" target="_blank">Clutter</a></span>
         </div>
     </div>
-    <div class="platform-item half">
+    <div class="platform-item third">
         <a href="http://x.org/" target="_blank"><img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org"></a>
         <h3 class="oss-title">X.org</h3>
         <p class="oss-subtitle">Display Server &amp; Windowing System</p>
@@ -67,7 +67,7 @@
             <span class="sub-item">XWayland</span>
         </div>
     </div>
-    <div class="platform-item half">
+    <div class="platform-item two-thirds">
         <a href="https://freedesktop.org/" target="_blank"><img class="oss-logo" src="images/open-source/freedesktop.svg" alt="FreeDesktop"></a>
         <h3 class="oss-title">FreeDesktop.org</h3>
         <p class="oss-subtitle">Base Technology</p>
@@ -76,6 +76,7 @@
             <span class="sub-item"><a href="https://gstreamer.freedesktop.org/" target="_blank">GStreamer</a></span>
             <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/PulseAudio/" target="_blank">PulseAudio</a></span>
             <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank">D-Bus</a></span>
+            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank">libinput</a></span>
         </div>
     </div>
     <div class="platform-item two-thirds">
