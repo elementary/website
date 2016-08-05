@@ -53,6 +53,7 @@
         <h3 class="oss-title">GNOME</h3>
         <p class="oss-subtitle">Desktop Libraries</p>
         <div>
+            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/Vala" target="_blank">Vala</a></span>
             <span class="sub-item"><a href="https://wiki.gnome.org/Projects/GLib" target="_blank">GLib</a></span>
             <span class="sub-item"><a href="https://wiki.gnome.org/Accessibility" target="_blank">ATK</a></span>
             <span class="sub-item"><a href="https://wiki.gnome.org/Projects/Clutter" target="_blank">Clutter</a></span>
@@ -63,8 +64,8 @@
         <h3 class="oss-title">X.org</h3>
         <p class="oss-subtitle">Display Server &amp; Windowing System</p>
         <div>
-            <span class="sub-item">xserver</span>
-            <span class="sub-item">XWayland</span>
+            <span class="sub-item"><a href="https://www.x.org/wiki/XServer/" target="_blank">XServer</a></span>
+            <span class="sub-item"><a href="https://wayland.freedesktop.org/xserver.html" target="_blank">XWayland</a></span>
         </div>
     </div>
     <div class="platform-item two-thirds">
