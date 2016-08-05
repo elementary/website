@@ -36,10 +36,6 @@ hr.dotted {
 }
 
 
-.platform-item > img {
-    display: inline-block;
-    margin:8px;
-}
 
 .sub-item {
     display: inline-block;
@@ -48,6 +44,11 @@ hr.dotted {
     vertical-align: middle;
     font-weight: 600;
     background-color: #fff;
+}
+
+.oss-logo {
+    display: inline-block;
+    margin:12px;
 }
 
 .oss-title,
