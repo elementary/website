@@ -34,7 +34,7 @@
         <p class="oss-title">Pantheon Desktop Environment</p></a>
         <div>
             <a class="button sub-item" href="https://launchpad.net/contractor" target="_blank"><span>Contractor</span></a>
-            <a class="button sub-item" href="https://launchpad.net/egtk" target="_blank"><span>eGTK</span></a>
+            <a class="button sub-item" href="https://launchpad.net/egtk" target="_blank"><span>Gtk Stylesheet</span></a>
             <a class="button sub-item" href="https://launchpad.net/gala" target="_blank"><span>Gala</span></a>
             <a class="button sub-item" href="https://launchpad.net/granite" target="_blank"><span>Granite</span></a>
             <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank"><span>Icons</span></a>
