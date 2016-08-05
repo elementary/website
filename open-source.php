@@ -20,28 +20,28 @@
         <img class="oss-logo" src="images/open-source/apps.svg" alt="Applications">
         <p class="oss-subtitle">elementary OS Applications</p>
         <div>
-            <span class="sub-item"><a href="https://launchpad.net/maya" target="_blank">Calendar</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/snap-elementary" target="_blank">Camera</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/pantheon-files" target="_blank">Files</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/pantheon-mail" target="_blank">Mail</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/noise" target="_blank">Music</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/pantheon-photos" target="_blank">Photos</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/scratch" target="_blank">Scratch</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/pantheon-terminal" target="_blank">Terminal</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/audience" target="_blank">Videos</a></span>
+            <a href="https://launchpad.net/maya" target="_blank"><span class="sub-item">Calendar</span></a>
+            <a href="https://launchpad.net/snap-elementary" target="_blank"><span class="sub-item">Camera</span></a>
+            <a href="https://launchpad.net/pantheon-files" target="_blank"><span class="sub-item">Files</span></a>
+            <a href="https://launchpad.net/pantheon-mail" target="_blank"><span class="sub-item">Mail</span></a>
+            <a href="https://launchpad.net/noise" target="_blank"><span class="sub-item">Music</span></a>
+            <a href="https://launchpad.net/pantheon-photos" target="_blank"><span class="sub-item">Photos</span></a>
+            <a href="https://launchpad.net/scratch" target="_blank"><span class="sub-item">Scratch</span></a>
+            <a href="https://launchpad.net/pantheon-terminal" target="_blank"><span class="sub-item">Terminal</span></a>
+            <a href="https://launchpad.net/audience" target="_blank"><span class="sub-item">Videos</span></a>
         </div>
     </div>
     <div class="platform-item full">
         <img class="oss-logo" src="images/open-source/desktop.svg" alt="Desktop">
         <p class="oss-subtitle">Pantheon Desktop Environment</p>
         <div>
-            <span class="sub-item"><a href="https://launchpad.net/contractor" target="_blank">Contractor</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/gala" target="_blank">Gala</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/granite" target="_blank">Granite</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/plank" target="_blank">Plank</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/slingshot" target="_blank">Slingshot</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/switchboard" target="_blank">Switchboard</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/wingpanel" target="_blank">Wingpanel</a></span>
+            <a href="https://launchpad.net/contractor" target="_blank"><span class="sub-item">Contractor</span></a>
+            <a href="https://launchpad.net/gala" target="_blank"><span class="sub-item">Gala</span></a>
+            <a href="https://launchpad.net/granite" target="_blank"><span class="sub-item">Granite</span></a>
+            <a href="https://launchpad.net/plank" target="_blank"><span class="sub-item">Plank</span></a>
+            <a href="https://launchpad.net/slingshot" target="_blank"><span class="sub-item">Slingshot</span></a>
+            <a href="https://launchpad.net/switchboard" target="_blank"><span class="sub-item">Switchboard</span></a>
+            <a href="https://launchpad.net/wingpanel" target="_blank"><span class="sub-item">Wingpanel</span></a>
         </div>
     </div>
     <hr class="dotted full">
@@ -50,9 +50,9 @@
         <h3 class="oss-title">GTK+</h3>
         <p class="oss-subtitle">User Interface Toolkit</p>
         <div>
-            <span class="sub-item"><a href="http://www.gtk.org/" target="_blank">GTK+</a></span>
-            <span class="sub-item"><a href="http://www.pango.org/" target="_blank">Pango</a></span>
-            <span class="sub-item"><a href="https://cairographics.org/" target="_blank">Cairo</a></span>
+            <a href="http://www.gtk.org/" target="_blank"><span class="sub-item">GTK+</span></a>
+            <a href="http://www.pango.org/" target="_blank"><span class="sub-item">Pango</span></a>
+            <a href="https://cairographics.org/" target="_blank"><span class="sub-item">Cairo</span></a>
         </div>
     </div>
     <div class="platform-item two-thirds">
@@ -60,12 +60,12 @@
         <h3 class="oss-title">GNOME</h3>
         <p class="oss-subtitle">Desktop Libraries</p>
         <div>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Accessibility" target="_blank">ATK</a></span>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/dconf" target="_blank">D-Conf</a></span>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/Clutter" target="_blank">Clutter</a></span>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/GLib" target="_blank">GLib</a></span>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/PolicyKit" target="_blank">PolicyKit</a></span>
-            <span class="sub-item"><a href="https://wiki.gnome.org/Projects/Vala" target="_blank">Vala</a></span>
+            <a href="https://wiki.gnome.org/Accessibility" target="_blank"><span class="sub-item">ATK</span></a>
+            <a href="https://wiki.gnome.org/Projects/dconf" target="_blank"><span class="sub-item">D-Conf</span></a>
+            <a href="https://wiki.gnome.org/Projects/Clutter" target="_blank"><span class="sub-item">Clutter</span></a>
+            <a href="https://wiki.gnome.org/Projects/GLib" target="_blank"><span class="sub-item">GLib</span></a>
+            <a href="https://wiki.gnome.org/Projects/PolicyKit" target="_blank"><span class="sub-item">PolicyKit</span></a>
+            <a href="https://wiki.gnome.org/Projects/Vala" target="_blank"><span class="sub-item">Vala</span></a>
         </div>
     </div>
     <div class="platform-item two-thirds">
@@ -73,12 +73,12 @@
         <h3 class="oss-title">FreeDesktop.org</h3>
         <p class="oss-subtitle">Base Technology</p>
         <div>
-            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank">D-Bus</a></span>
-            <span class="sub-item"><a href="https://gstreamer.freedesktop.org/" target="_blank">GStreamer</a></span>
-            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank">libinput</a></span>
-            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/lightdm/" target="_blank">LightDM</a></span>
-            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/PulseAudio/" target="_blank">PulseAudio</a></span>
-            <span class="sub-item"><a href="https://www.freedesktop.org/wiki/Software/systemd/" target="_blank">systemd</a></span>
+            <a href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank"><span class="sub-item">D-Bus</span></a>
+            <a href="https://gstreamer.freedesktop.org/" target="_blank"><span class="sub-item">GStreamer</span></a>
+            <a href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank"><span class="sub-item">libinput</span></a>
+            <a href="https://www.freedesktop.org/wiki/Software/lightdm/" target="_blank"><span class="sub-item">LightDM</span></a>
+            <a href="https://www.freedesktop.org/wiki/Software/PulseAudio/" target="_blank"><span class="sub-item">PulseAudio</span></a>
+            <a href="https://www.freedesktop.org/wiki/Software/systemd/" target="_blank"><span class="sub-item">systemd</span></a>
         </div>
     </div>
     <div class="platform-item third">
@@ -86,8 +86,8 @@
         <h3 class="oss-title">X.org</h3>
         <p class="oss-subtitle">Display Server &amp; Windowing System</p>
         <div>
-            <span class="sub-item"><a href="https://www.x.org/wiki/XServer/" target="_blank">XServer</a></span>
-            <span class="sub-item"><a href="https://wayland.freedesktop.org/xserver.html" target="_blank">XWayland</a></span>
+            <a href="https://www.x.org/wiki/XServer/" target="_blank"><span class="sub-item">XServer</span></a>
+            <a href="https://wayland.freedesktop.org/xserver.html" target="_blank"><span class="sub-item">XWayland</span></a>
         </div>
     </div>
     <div class="platform-item half">
@@ -95,9 +95,9 @@
         <h3 class="oss-title">GNU</h3>
         <p class="oss-subtitle">Complier &amp; Core Utilities</p>
         <div>
-            <span class="sub-item"><a href="https://www.gnu.org/software/bash/" target="_blank">bash</a></span>
-            <span class="sub-item"><a href="https://www.gnu.org/software/gcc/" target="_blank">GCC</a></span>
-            <span class="sub-item"><a href="https://www.gnu.org/software/coreutils/" target="_blank">Coreutils</a></span>
+            <a href="https://www.gnu.org/software/bash/" target="_blank"><span class="sub-item">bash</span></a>
+            <a href="https://www.gnu.org/software/gcc/" target="_blank"><span class="sub-item">GCC</span></a>
+            <a href="https://www.gnu.org/software/coreutils/" target="_blank"><span class="sub-item">Coreutils</span></a>
         </div>
     </div>
     <div class="platform-item half">
@@ -105,7 +105,7 @@
         <h3 class="oss-title">Linux</h3>
         <p class="oss-subtitle">Hardware Support &amp; drivers</p>
         <div>
-            <span class="sub-item"><a href="https://kernel.org/" target="_blank">Kernel</a></span>
+            <a href="https://kernel.org/" target="_blank"><span class="sub-item">Kernel</span></a>
         </div>
     </div>
 </div>
