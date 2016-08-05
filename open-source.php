@@ -78,10 +78,6 @@
         <h3 class="oss-title">Linux Kernel</h3>
         <p class="oss-subtitle">Device drivers, modules</p>
     </div>
-    <div class="platform-item full">
-        <img class="oss-logo" src="images/open-source/hardware.svg" alt="Linux">
-        <h3 class="oss-title">Hardware</h3>
-    </div>
 </div>
 
 <p class="small-label">All logos featured here are trademarks of their respective projects.</p>
