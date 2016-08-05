@@ -16,7 +16,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="platform-item half">
+    <div class="platform-item two-thirds">
         <img class="oss-logo" src="images/open-source/apps.svg" alt="Applications">
         <h3 class="oss-title">Applications</h3>
         <p class="oss-subtitle">elementary OS Apps</p>
@@ -25,10 +25,12 @@
             <span class="sub-item"><a href="https://launchpad.net/pantheon-mail" target="_blank">Mail</a></span>
             <span class="sub-item"><a href="https://launchpad.net/noise" target="_blank">Music</a></span>
             <span class="sub-item"><a href="https://launchpad.net/pantheon-photos" target="_blank">Photos</a></span>
+            <span class="sub-item"><a href="https://launchpad.net/scratch" target="_blank">Scratch</a></span>
+            <span class="sub-item"><a href="https://launchpad.net/pantheon-terminal" target="_blank">Terminal</a></span>
             <span class="sub-item"><a href="https://launchpad.net/audience" target="_blank">Videos</a></span>
         </div>
     </div>
-    <div class="platform-item half">
+    <div class="platform-item third">
         <img class="oss-logo" src="images/open-source/desktop.svg" alt="Desktop">
         <h3 class="oss-title">Desktop</h3>
         <p class="oss-subtitle">Pantheon Desktop Environment</p>
