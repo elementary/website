@@ -9,7 +9,6 @@
 
 .sub-item,
 .platform-item {
-    background-color: #f7f7f7;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -18,9 +17,13 @@
                 inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
                 0 1px 0 0 rgba(255, 255, 255, 0.15),
                 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.platform-item {
+    background-color: #f7f7f7;
     display: inline-block;
-    margin-top: 12px;
     margin: 0 auto;
+    margin-top: 12px;
     padding: 12px;
     vertical-align: top;
 }
@@ -29,8 +32,8 @@ hr.dotted {
     background: transparent;
     border-top: 1px dashed #c9c9c9;
     height: 1px;
-    margin-bottom: 4px;
     margin: 16px 24px;
+    margin-bottom: 4px;
     width: calc(100% - 44px);
 }
 
@@ -41,6 +44,13 @@ hr.dotted {
     margin: 4px;
     padding: 6px 12px;
     vertical-align: middle;
+}
+
+.sub-item:focus {
+    background-color: #64b9f1;
+    background-image: linear-gradient(to bottom, #75c6fd, #53abe5);
+    color: #fff;
+    text-shadow: none;
 }
 
 .oss-logo {
