@@ -9,18 +9,13 @@
 
 .sub-item,
 .platform-item {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    text-shadow: none;
 }
 
 .platform-item {
     background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
     display: inline-block;
     margin: 0 auto;
     margin-top: 12px;
@@ -39,21 +34,46 @@ hr.dotted {
 
 .sub-item {
     background-color: #fff;
-    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    font-size: 14px;
     font-weight: 600;
-    margin: 4px;
+    margin: 3px;
     padding: 6px 12px;
     vertical-align: middle;
 }
 
-.sub-item:focus {
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 0 0 rgba(255, 255, 255, 0.15),
-                0 2px 4px 0 rgba(0, 0, 0, 0.15);
+#fdo .sub-item {
+    background-color: #3689e6;
+    color: #fff;
+}
+
+#gnome .sub-item {
+    background-color: #7a36b1;
+    color: #fff;
+}
+
+#gnu .sub-item {
+    background-color: #485a6c;
+    color: #fff;
+}
+
+#gtk .sub-item {
+    background-color: #c6262e;
+    color: #fff;
+}
+
+#linux .sub-item {
+    background-color: #f9c440;
     color: #333;
-    text-shadow: none;
+}
+
+#xorg .sub-item {
+    background-color: #f37329;
+    color: #fff;
 }
 
 .oss-logo {
@@ -69,7 +89,6 @@ hr.dotted {
 
 .oss-subtitle {
     opacity: 0.8;
-    text-align: center;
 }
 
 .platform-item.full {
@@ -95,6 +114,10 @@ hr.dotted {
 }
 
 @media only screen and (max-width: 640px) {
+    hr.dotted {
+        margin-bottom: 16px;
+    }
+
     .platform-item {
         height: 100%;
     }
@@ -124,7 +147,8 @@ hr.dotted {
     .platform-item.half,
     .platform-item.two-thirds,
     .platform-item.third {
-        margin: 8px;
-        width: calc(100% - 16px);
+        margin: 6px 12px;
+        width: calc(100% - 24px);
+    }
     }
 }
