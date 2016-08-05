@@ -7,11 +7,6 @@
 * Open Source Page *
 ********************/
 
-.sub-item,
-.platform-item {
-    text-shadow: none;
-}
-
 .platform-item {
     background-color: #f7f7f7;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -46,34 +41,37 @@ hr.dotted {
     vertical-align: middle;
 }
 
+#fdo .sub-item,
+#gnome .sub-item,
+#gnu .sub-item,
+#gtk .sub-item,
+#xorg .sub-item {
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+}
+
 #fdo .sub-item {
     background-color: #3689e6;
-    color: #fff;
 }
 
 #gnome .sub-item {
     background-color: #7a36b1;
-    color: #fff;
 }
 
 #gnu .sub-item {
     background-color: #485a6c;
-    color: #fff;
 }
 
 #gtk .sub-item {
     background-color: #68b723;
-    color: #fff;
 }
 
 #linux .sub-item {
     background-color: #f9c440;
-    color: #333;
 }
 
 #xorg .sub-item {
     background-color: #f37329;
-    color: #fff;
 }
 
 .oss-logo {
