@@ -1,0 +1,197 @@
+/***************************************
+* Copyright 2016 elementary LLC.       *
+* This file is part of elementary.io *
+***************************************/
+
+/*******************
+* Open Source Page *
+********************/
+
+.platform-item {
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 12px;
+    vertical-align: top;
+}
+
+hr.dotted {
+    background: transparent;
+    border-top: 1px dashed #c9c9c9;
+    height: 1px;
+    margin: 16px 24px;
+    margin-bottom: 4px;
+    width: calc(100% - 44px);
+}
+
+.sub-item {
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3px;
+    padding: 6px 12px;
+    vertical-align: middle;
+}
+
+#fdo .sub-item,
+#gnome .sub-item,
+#gnu .sub-item,
+#gtk .sub-item,
+#xorg .sub-item {
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#fdo .sub-item {
+    background-color: #3689e6;
+}
+
+#gnome .sub-item {
+    background-color: #7a36b1;
+}
+
+#gnome .sub-item:focus {
+    border-color: #7a36b1;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 3px 6px rgba(122, 54, 177, 0.16),
+                0 3px 6px rgba(122, 54, 177, 0.23);
+}
+
+#gnu .sub-item {
+    background-color: #485a6c;
+}
+
+#gnu .sub-item:focus {
+    border-color: #485a6c;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 3px 6px rgba(72, 90, 108, 0.16),
+                0 3px 6px rgba(72, 90, 108, 0.23);
+}
+
+#gtk .sub-item {
+    background-color: #68b723;
+}
+
+#gtk .sub-item:focus {
+    border-color: #68b723;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 3px 6px rgba(29, 126, 13, 0.16),
+                0 3px 6px rgba(29, 126, 13, 0.23);
+}
+
+#linux .sub-item {
+    background-color: #f9c440;
+}
+
+#linux .sub-item:focus {
+    border-color: #e4c01f;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 3px 6px rgba(228, 139, 32, 0.16),
+                0 3px 6px rgba(228, 139, 32, 0.23);
+}
+
+#xorg .sub-item {
+    background-color: #f37329;
+}
+
+#xorg .sub-item:focus {
+    border-color: #f37329;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+                0 3px 6px rgba(243, 115, 41, 0.16),
+                0 3px 6px rgba(243, 115, 41, 0.23);
+}
+
+.oss-logo {
+    display: inline-block;
+    margin: 12px;
+}
+
+.oss-title,
+.oss-subtitle {
+    margin: 12px;
+    text-align: center;
+}
+
+.oss-subtitle {
+    opacity: 0.8;
+}
+
+.platform-item.full {
+    width: calc(100% - 36px);
+}
+
+.platform-item.half {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(50% - 24px);
+}
+
+.platform-item.third {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(33.33% - 20px);
+}
+
+.platform-item.two-thirds {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(66.66% - 28px);
+}
+
+@media only screen and (max-width: 640px) {
+    hr.dotted {
+        margin-bottom: 16px;
+    }
+
+    .platform-item {
+        height: 100%;
+    }
+
+    .oss-title {
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+
+    .oss-subtitle {
+        display: none;
+    }
+
+    .platform-item > img {
+        display: inline-block;
+        margin: 8px auto;
+    }
+
+    .sub-item {
+        display: block;
+        font-size: 80%;
+        margin: 4px auto;
+        width: 100%;
+    }
+
+    .platform-item.full,
+    .platform-item.half,
+    .platform-item.two-thirds,
+    .platform-item.third {
+        margin: 6px 12px;
+        width: calc(100% - 24px);
+    }
+    }
+}
