@@ -2,6 +2,11 @@
 
 namespace Stripe;
 
+/**
+ * Class ApplicationFee
+ *
+ * @package Stripe
+ */
 class ApplicationFee extends ApiResource
 {
     /**
@@ -24,6 +29,18 @@ class ApplicationFee extends ApiResource
     public static function retrieve($id, $opts = null)
     {
         return self::_retrieve($id, $opts);
+    }
+
+    /**
+     * @param string $id The ID of the application fee to update.
+     * @param array|null $params
+     * @param array|string|null $options
+     *
+     * @return ApplicationFee The updated application fee.
+     */
+    public static function update($id, $params = null, $options = null)
+    {
+        return self::_update($id, $params, $options);
     }
 
     /**

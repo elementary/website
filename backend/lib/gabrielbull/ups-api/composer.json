@@ -1,0 +1,57 @@
+{
+  "name": "gabrielbull/ups-api",
+  "type": "library",
+  "description": "PHP UPS API",
+  "keywords": ["ups", "api", "wrapper", "quantum view", "tracking", "shipping", "rate", "rating", "time in transit", "tradeability"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel Bull",
+      "email": "me@gabrielbull.com"
+    },
+    {
+      "name": "Sebastien Vergnes",
+      "email": "sebastien@vergnes.eu"
+    },
+    {
+      "name": "Michael Williams",
+      "email": "michael.williams@limelyte.com"
+    },
+    {
+      "name": "Stefan Doorn",
+      "email": "stefan@efectos.nl"
+    },
+    {
+      "name": "Eduard Sukharev",
+      "email": "sukharev.eh@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.5 || ^7.0",
+    "guzzlehttp/guzzle": "^6.0",
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ups\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ups\\Tests\\": ["tests/Ups/Tests", "tests/Ups/Tests/_includes"]
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.5.1-dev"
+    }
+  },
+  "suggest": {
+    "ext-soap": "Required if you need the Tradeability API of UPS"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
