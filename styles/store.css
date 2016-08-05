@@ -1,0 +1,215 @@
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
+
+/***************************
+* Category view of product *
+***************************/
+
+.grid--product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid--product .grid__title {
+    flex: 0 0 100%;
+    text-transform: capitalize;
+}
+
+.grid--product .grid__item {
+    margin: 20px;
+    max-width: 260px;
+}
+
+/*****************
+* Product modals *
+*****************/
+
+.modal--product {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal--product h2,
+.modal--product h4 {
+    text-align: left;
+}
+
+.modal--product p {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.modal--product input[type="number"],
+.modal--product select {
+    width: 100%;
+    padding: 6px;
+}
+
+.modal--product select {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    color: #323232;
+    outline: 0;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    transition: all 200ms ease-out;
+}
+
+.modal--product .button {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.modal--product .grid {
+    padding: 0;
+    padding-bottom: 12px;
+}
+
+.modal--product .label {
+    margin-top: 24px;
+}
+
+/***********************
+* List view of product *
+***********************/
+
+.list--product {
+    display: block;
+    text-align: center;
+}
+
+.list--product .list__item {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.list--product .list__item a {
+    color: inherit;
+}
+
+.list--product .list__item img {
+    height: 80px;
+    width: 80px;
+}
+
+.list--product .list__info {
+    flex: 1 1 auto;
+    padding: 16px 0;
+}
+
+.list--product .list__detail > div > * {
+    display: inline-block;
+}
+
+@media (min-width: 620px) {
+    .list--product .list__item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .list--product .list__info {
+        margin: 0 24px;
+    }
+
+    .list--product .list__detail {
+        text-align: right;
+    }
+
+    .list--product .list__footer {
+        text-align: right;
+    }
+
+    .list__detail .subtotal > * {
+        min-width: 48px;
+        text-align: center
+    }
+}
+
+/****************
+* Shipping Grid *
+****************/
+
+.grid--address > *:not(:last-of-type) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.grid--address > *:not(:last-of-type) > * {
+    flex: 1 1 auto;
+    margin: 6px;
+    min-width: 100px;
+    padding: 8px;
+}
+
+.grid--address input[autocomplete="address-level1"] {
+    flex: 1 1 2ch;
+}
+
+.grid--address input[autocomplete="postal-code"] {
+    flex: 1 1 5ch;
+}
+
+/*****************************
+* Shipping photo on checkout *
+*****************************/
+
+#shipping-photo {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: none;
+    margin: 32px 0;
+}
+
+@media (min-width: 500px) {
+    #shipping-photo {
+        display: inline-block;
+    }
+}
+
+/********************************
+* Checkout Shipping Information *
+********************************/
+
+.grid--narrow .half {
+    text-align: left;
+}
+
+.grid--narrow .half span {
+    display: block;
+}
+
+.grid--narrow .half h5 {
+    padding: 12px 0;
+    opacity: 0.75;
+}
+
+/*************************
+* Store related elements *
+*************************/
+
+.grid--narrow {
+    max-width: 644px;
+}
+
+.alert--error {
+    color: #da4d45;
+    font-size: 88%;
+}
+
+.text--success {
+    color: #49800b;
+}

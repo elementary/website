@@ -72,6 +72,7 @@ For bypassing Vagrant you will need:
 * `php7.0-intl`
 * `php7.0-json`
 * `php7.0-mbstring`
+* `php7.0-soap`
 * `php7.0-xml`
 
 Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
