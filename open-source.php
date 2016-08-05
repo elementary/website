@@ -6,10 +6,15 @@
     include $template['alert'];
 ?>
 
-<div class="row">
-    <div id="logotype">
-        <?php include('images/logotype-os.svg'); ?>
+<div class="grid">
+    <div class="two-thirds">
+        <div id="logotype">
+            <?php include('images/logotype-os.svg'); ?>
+        </div>
+        <h4>The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects like these, elementary OS would not exist.</h4>
     </div>
+</div>
+<div class="row">
     <div class="platform-item full">
         <img class="oss-logo" src="images/open-source/apps.svg" alt="Linux">
         <h3 class="oss-title">elementary Applications</h3>
