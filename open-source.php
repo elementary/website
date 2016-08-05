@@ -86,6 +86,7 @@
         <h3 class="oss-title">X.org</h3>
         <p class="oss-subtitle">Display Server &amp; Windowing System</p></a>
         <div>
+            <a class="button sub-item" href="http://x.org/" target="_blank"><span>X11</span></a>
             <a class="button sub-item" href="https://www.x.org/wiki/XServer/" target="_blank"><span>XServer</span></a>
         </div>
     </div>
