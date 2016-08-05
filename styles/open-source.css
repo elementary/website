@@ -28,7 +28,7 @@
 
 hr.dotted {
     background: transparent;
-    margin:16px 24px;
+    margin: 16px 24px;
     margin-bottom: 4px;
     border-top: 1px dashed #c9c9c9;
     height: 1px;
@@ -37,7 +37,7 @@ hr.dotted {
 
 .sub-item {
     display: inline-block;
-    margin:4px;
+    margin: 4px;
     padding: 8px 12px;
     vertical-align: middle;
     font-weight: 600;
@@ -46,12 +46,13 @@ hr.dotted {
 
 .oss-logo {
     display: inline-block;
-    margin:12px;
+    margin: 12px;
 }
 
 .oss-title,
 .oss-subtitle {
-    margin:12px;
+    text-align: center;
+    margin: 12px;
 }
 
 .oss-subtitle {

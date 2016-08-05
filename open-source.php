@@ -18,7 +18,7 @@
 <div class="row">
     <div class="platform-item full">
         <img class="oss-logo" src="images/icons/distributor-logo.svg" alt="Applications">
-        <p class="oss-subtitle">elementary OS Applications</p>
+        <p class="oss-title">elementary OS Applications</p>
         <div>
             <a href="https://launchpad.net/maya" target="_blank"><span class="sub-item">Calendar</span></a>
             <a href="https://launchpad.net/snap-elementary" target="_blank"><span class="sub-item">Camera</span></a>
@@ -33,11 +33,13 @@
     </div>
     <div class="platform-item full">
         <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop">
-        <p class="oss-subtitle">Pantheon Desktop Environment</p>
+        <p class="oss-title">Pantheon Desktop Environment</p>
         <div>
             <a href="https://launchpad.net/contractor" target="_blank"><span class="sub-item">Contractor</span></a>
+            <a href="https://launchpad.net/egtk" target="_blank"><span class="sub-item">eGTK</span></a>
             <a href="https://launchpad.net/gala" target="_blank"><span class="sub-item">Gala</span></a>
             <a href="https://launchpad.net/granite" target="_blank"><span class="sub-item">Granite</span></a>
+            <a href="https://github.com/elementary/icons" target="_blank"><span class="sub-item">Icons</span></a>
             <a href="https://launchpad.net/plank" target="_blank"><span class="sub-item">Plank</span></a>
             <a href="https://launchpad.net/slingshot" target="_blank"><span class="sub-item">Slingshot</span></a>
             <a href="https://launchpad.net/switchboard" target="_blank"><span class="sub-item">Switchboard</span></a>
