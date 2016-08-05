@@ -16,10 +16,9 @@
     </div>
 </div>
 <div class="row">
-    <div class="platform-item two-thirds">
+    <div class="platform-item full">
         <img class="oss-logo" src="images/open-source/apps.svg" alt="Applications">
-        <h3 class="oss-title">Applications</h3>
-        <p class="oss-subtitle">elementary OS Apps</p>
+        <p class="oss-subtitle">elementary OS Applications</p>
         <div>
             <span class="sub-item"><a href="https://launchpad.net/pantheon-files" target="_blank">Files</a></span>
             <span class="sub-item"><a href="https://launchpad.net/pantheon-mail" target="_blank">Mail</a></span>
@@ -30,14 +29,16 @@
             <span class="sub-item"><a href="https://launchpad.net/audience" target="_blank">Videos</a></span>
         </div>
     </div>
-    <div class="platform-item third">
+    <div class="platform-item full">
         <img class="oss-logo" src="images/open-source/desktop.svg" alt="Desktop">
-        <h3 class="oss-title">Desktop</h3>
         <p class="oss-subtitle">Pantheon Desktop Environment</p>
         <div>
+            <span class="sub-item"><a href="https://launchpad.net/contractor" target="_blank">Contractor</a></span>
             <span class="sub-item"><a href="https://launchpad.net/gala" target="_blank">Gala</a></span>
-            <span class="sub-item"><a href="https://launchpad.net/wingpanel" target="_blank">Wingpanel</a></span>
+            <span class="sub-item"><a href="https://launchpad.net/granite" target="_blank">Granite</a></span>
             <span class="sub-item"><a href="https://launchpad.net/plank" target="_blank">Plank</a></span>
+            <span class="sub-item"><a href="https://launchpad.net/switchboard" target="_blank">Switchboard</a></span>
+            <span class="sub-item"><a href="https://launchpad.net/wingpanel" target="_blank">Wingpanel</a></span>
         </div>
     </div>
     <hr class="dotted full">
@@ -46,6 +47,7 @@
         <h3 class="oss-title">GTK+</h3>
         <p class="oss-subtitle">User Interface Toolkit</p>
         <div>
+            <span class="sub-item"><a href="http://www.gtk.org/" target="_blank">GTK+</a></span>
             <span class="sub-item"><a href="http://www.pango.org/" target="_blank">Pango</a></span>
             <span class="sub-item"><a href="https://cairographics.org/" target="_blank">Cairo</a></span>
         </div>
