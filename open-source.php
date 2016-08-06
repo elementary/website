@@ -15,8 +15,10 @@
 </div>
 <div class="grid">
     <div class="platform-item full">
-        <a href="get-involved#desktop-development"><img class="oss-logo" src="images/icons/distributor-logo.svg" alt="Applications">
-        <p class="oss-title">elementary OS Applications</p></a>
+        <a href="get-involved#desktop-development">
+            <img class="oss-logo" src="images/icons/distributor-logo.svg" alt="Applications">
+            <p class="oss-title">elementary OS Applications</p>
+        </a>
         <div>
             <a class="button sub-item" href="https://launchpad.net/maya" target="_blank"><span>Calendar</span></a>
             <a class="button sub-item" href="https://launchpad.net/snap-elementary" target="_blank"><span>Camera</span></a>
@@ -30,8 +32,10 @@
         </div>
     </div>
     <div class="platform-item full">
-        <a href="get-involved#desktop-development"><img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop">
-        <p class="oss-title">Pantheon Desktop Environment</p></a>
+        <a href="get-involved#desktop-development">
+            <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop">
+            <p class="oss-title">Pantheon Desktop Environment</p>
+        </a>
         <div>
             <a class="button sub-item" href="https://launchpad.net/contractor" target="_blank"><span>Contractor</span></a>
             <a class="button sub-item" href="https://launchpad.net/gala" target="_blank"><span>Gala</span></a>
@@ -45,33 +49,51 @@
         </div>
     </div>
     <hr class="dotted full">
-    <div class="platform-item third" id="gtk">
-        <a href="http://gtk.org/" target="_blank"><img class="oss-logo" src="images/open-source/gtk.svg" alt="GTK+">
-        <h3 class="oss-title">GTK+</h3>
-        <p class="oss-subtitle">User Interface Toolkit</p></a>
+    <div class="platform-item third" id="ubuntu">
+        <a href="https://ubuntu.com/" target="_blank">
+            <img class="oss-logo" src="images/open-source/ubuntu.svg" alt="Ubuntu">
+            <h3 class="oss-title">Ubuntu</h3>
+            <p class="oss-subtitle">Desktop Libraries &amp; Repositories</p>
+        </a>
         <div>
+            <a class="button sub-item" href="https://launchpad.net/ayatana" target="_blank"><span>Ayatana</span></a>
+            <a class="button sub-item" href="https://launchpad.net/bamf" target="_blank"><span>BAMF</span></a>
+            <a class="button sub-item" href="https://launchpad.net/libunity" target="_blank"><span>libunity</span></a>
+            <a class="button sub-item" href="https://launchpad.net/ubiquity" target="_blank"><span>Ubiquity</span></a>
+        </div>
+    </div>
+    <div class="platform-item third" id="gtk">
+        <a href="http://gtk.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/gtk.svg" alt="GTK+">
+            <h3 class="oss-title">GTK+</h3>
+            <p class="oss-subtitle">User Interface Toolkit</p>
+        </a>
+        <div>
+            <a class="button sub-item" href="https://wiki.gnome.org/Accessibility" target="_blank"><span>ATK</span></a>
             <a class="button sub-item" href="http://www.gtk.org/" target="_blank"><span>GTK+</span></a>
             <a class="button sub-item" href="http://www.pango.org/" target="_blank"><span>Pango</span></a>
             <a class="button sub-item" href="https://cairographics.org/" target="_blank"><span>Cairo</span></a>
         </div>
     </div>
-    <div class="platform-item two-thirds" id="gnome">
-        <a href="https://gnome.org/" target="_blank"><img class="oss-logo" src="images/open-source/gnome.svg" alt="GNOME">
-        <h3 class="oss-title">GNOME</h3>
-        <p class="oss-subtitle">Desktop Libraries</p></a>
+    <div class="platform-item third" id="gnome">
+        <a href="https://gnome.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/gnome.svg" alt="GNOME">
+            <h3 class="oss-title">GNOME</h3>
+            <p class="oss-subtitle">Desktop Libraries</p>
+        </a>
         <div>
-            <a class="button sub-item" href="https://wiki.gnome.org/Accessibility" target="_blank"><span>ATK</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/dconf" target="_blank"><span>D-Conf</span></a>
-            <a class="button sub-item" href="https://wiki.gnome.org/Projects/Clutter" target="_blank"><span>Clutter</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/GLib" target="_blank"><span>GLib</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/PolicyKit" target="_blank"><span>PolicyKit</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/Vala" target="_blank"><span>Vala</span></a>
         </div>
     </div>
     <div class="platform-item two-thirds" id="fdo">
-        <a href="https://freedesktop.org/" target="_blank"><img class="oss-logo" src="images/open-source/freedesktop.svg" alt="FreeDesktop">
-        <h3 class="oss-title">FreeDesktop.org</h3>
-        <p class="oss-subtitle">Base Technology</p></a>
+        <a href="https://freedesktop.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/freedesktop.svg" alt="FreeDesktop">
+            <h3 class="oss-title">FreeDesktop.org</h3>
+            <p class="oss-subtitle">Base Technology</p>
+        </a>
         <div>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank"><span>D-Bus</span></a>
             <a class="button sub-item" href="https://gstreamer.freedesktop.org/" target="_blank"><span>GStreamer</span></a>
@@ -82,28 +104,34 @@
         </div>
     </div>
     <div class="platform-item third" id="xorg">
-        <a href="http://x.org/" target="_blank"><img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org">
-        <h3 class="oss-title">X.org</h3>
-        <p class="oss-subtitle">Display Server &amp; Windowing System</p></a>
+        <a href="http://x.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org">
+            <h3 class="oss-title">X.org</h3>
+            <p class="oss-subtitle">Display Server &amp; Windowing System</p>
+        </a>
         <div>
-            <a class="button sub-item" href="http://x.org/" target="_blank"><span>X11</span></a>
+            <a class="button sub-item" href="https://www.x.org/" target="_blank"><span>X11</span></a>
             <a class="button sub-item" href="https://www.x.org/wiki/XServer/" target="_blank"><span>XServer</span></a>
         </div>
     </div>
     <div class="platform-item half" id="gnu">
-        <a href="http://gnu.org/" target="_blank"><img class="oss-logo" src="images/open-source/gnu.svg" alt="GNU">
-        <h3 class="oss-title">GNU</h3>
-        <p class="oss-subtitle">Complier &amp; Core Utilities</p></a>
+        <a href="http://gnu.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/gnu.svg" alt="GNU">
+            <h3 class="oss-title">GNU</h3>
+            <p class="oss-subtitle">Complier &amp; Core Utilities</p>
+        </a>
         <div>
-            <a class="button sub-item" href="https://www.gnu.org/software/bash/" target="_blank"><span>bash</span></a>
+            <a class="button sub-item" href="https://www.gnu.org/software/bash/" target="_blank"><span>Bash</span></a>
             <a class="button sub-item" href="https://www.gnu.org/software/gcc/" target="_blank"><span>GCC</span></a>
             <a class="button sub-item" href="https://www.gnu.org/software/coreutils/" target="_blank"><span>Coreutils</span></a>
         </div>
     </div>
     <div class="platform-item half" id="linux">
-        <a href="https://kernel.org/" target="_blank"><img class="oss-logo" src="images/open-source/linux.svg" alt="Linux">
-        <h3 class="oss-title">Linux</h3>
-        <p class="oss-subtitle">Hardware Support &amp; drivers</p></a>
+        <a href="https://kernel.org/" target="_blank">
+            <img class="oss-logo" src="images/open-source/linux.svg" alt="Linux">
+            <h3 class="oss-title">Linux</h3>
+            <p class="oss-subtitle">Hardware Support &amp; drivers</p>
+        </a>
         <div>
             <a class="button sub-item" href="https://kernel.org/" target="_blank"><span>Kernel</span></a>
         </div>
