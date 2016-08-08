@@ -123,6 +123,7 @@
         <div>
             <a class="button sub-item" href="https://www.gnu.org/software/bash/" target="_blank"><span>Bash</span></a>
             <a class="button sub-item" href="https://www.gnu.org/software/gcc/" target="_blank"><span>GCC</span></a>
+            <a class="button sub-item" href="https://www.gnu.org/software/libc/" target="_blank"><span>GNU C Library</span></a>
             <a class="button sub-item" href="https://www.gnu.org/software/coreutils/" target="_blank"><span>Coreutils</span></a>
         </div>
     </div>
@@ -130,7 +131,7 @@
         <a href="https://kernel.org/" target="_blank">
             <img class="oss-logo" src="images/open-source/linux.svg" alt="Linux">
             <h3 class="oss-title">Linux</h3>
-            <p class="oss-subtitle">Hardware Support &amp; drivers</p>
+            <p class="oss-subtitle">Filesystem, Hardware, Networking &amp; Drivers</p>
         </a>
         <div>
             <a class="button sub-item" href="https://kernel.org/" target="_blank"><span>Kernel</span></a>
