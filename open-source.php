@@ -118,7 +118,7 @@
         <a href="http://gnu.org/" target="_blank">
             <img class="oss-logo" src="images/open-source/gnu.svg" alt="GNU">
             <h3 class="oss-title">GNU</h3>
-            <p class="oss-subtitle">Complier &amp; Core Utilities</p>
+            <p class="oss-subtitle">Compiler &amp; Core Utilities</p>
         </a>
         <div>
             <a class="button sub-item" href="https://www.gnu.org/software/bash/" target="_blank"><span>Bash</span></a>
