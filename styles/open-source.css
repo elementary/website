@@ -183,10 +183,9 @@ hr.dotted {
     }
 
     .sub-item {
-        display: block;
         font-size: 80%;
         margin: 4px auto;
-        width: 100%;
+        padding: 8px 16px;
     }
 
     .platform-item.full,
