@@ -10,7 +10,7 @@ const STORE_FILE = __DIR__ . '/../../data/store.json';
  *
  * @param Array $i list of products
  */
-function do_save ($i = array()) {
+function do_save (array $i) {
     file_put_contents(STORE_FILE, json_encode($i, JSON_PRETTY_PRINT));
 }
 
@@ -26,7 +26,7 @@ function do_open () {
 
 /**
  * get_products
- * Returns a list of product with min and max price attributes
+ * Returns a list of detailed product information includeing price range and color array
  *
  * @return Array list of products
  */

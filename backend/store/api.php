@@ -16,6 +16,8 @@ require_once __DIR__ . '/../config.loader.php';
  * @param Array  $p      parameters to send on request
  *
  * @return Array parsed request data
+ *
+ * @throws Exception on missing extension or request returning an error
  */
 function do_request ($r, $u, array $a = array(), array $p = array()) {
     global $config;

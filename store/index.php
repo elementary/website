@@ -62,7 +62,7 @@
                     <p><?php echo $product['description'] ?></p>
 
                     <input type="hidden" name="id" value="<?php echo $index ?>">
-                    <input type="hidden" name="variant" value="0">
+                    <input type="hidden" name="variant" value="<?php echo $product['variants'][0]['id'] ?>">
                     <input type="hidden" name="math" value="add">
 
                     <div>
