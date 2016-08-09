@@ -9,12 +9,12 @@
     require_once __DIR__.'/backend/classify.current.php';
 ?>
 
-<script>var releaseTitle = 'Loki';</script>
-<script>var releaseVersion = '0.4-beta2';</script>
-<script>var downloadRegion = '<?php echo $region; ?>';</script>
+<script>var releaseTitle = 'Loki'</script>
+<script>var releaseVersion = '0.4-beta2'</script>
+<script>var downloadRegion = '<?php echo $region; ?>'</script>
 <script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-    jQl.loadjQdep('scripts/developer.js');
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
+    jQl.loadjQdep('scripts/developer.js')
 </script>
 
 <section class="hero dark">

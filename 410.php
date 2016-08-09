@@ -6,7 +6,7 @@
 ?>
 
 <script>
-    ga('send', 'event', '410: Download Link Expired', window.location.host);
+    ga('send', 'event', '410: Download Link Expired', window.location.host)
 </script>
 
 <div class="row">

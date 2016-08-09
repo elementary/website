@@ -7,7 +7,7 @@
 ?>
 
 <script>
-    ga('send', 'event', '404: Page Not Found', window.location.host);
+    ga('send', 'event', '404: Page Not Found', window.location.host)
 </script>
 
 <div class="row">
