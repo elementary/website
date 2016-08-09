@@ -28,9 +28,9 @@ function get_cart () {
  */
 function set_cart (array $c) {
     if (count($c) > 0) {
-        return setcookie('cart', json_encode($c), strtotime('+1 days'));
+        return setcookie('cart', json_encode($c), strtotime('+1 days'), '/', '', 0, 1);
     } else {
-        return setcookie('cart', false, 1);
+        return setcookie('cart', false, 1, '/', '', 0, 1);
     }
 }
 
