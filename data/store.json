@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Logotee",
+        "image": "\/images\/store\/apparel\/logotee.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 318,
+                "size": "2XL",
+                "color": "Aqua",
+                "cost": 16.35,
+                "price": 17
+            }
+        ],
+        "files": [
+            {
+                "id": 123456
+            }
+        ]
+    }
+]
