@@ -9,13 +9,13 @@
     require_once __DIR__.'/backend/classify.current.php';
 ?>
             <script src="scripts/slider.js"></script>
-            <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
-            <script>var release_title = '<?php echo $config['release_title']; ?>';</script>
-            <script>var release_version = '<?php echo $config['release_version']; ?>';</script>
-            <script>var download_region = '<?php echo $region; ?>';</script>
+            <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
+            <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
+            <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
+            <script>var downloadRegion = '<?php echo $region; ?>'</script>
             <script>
-                jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-                jQl.loadjQdep('scripts/homepage.js');
+                jQl.loadjQdep('scripts/jQuery.leanModal2.js')
+                jQl.loadjQdep('scripts/homepage.js')
             </script>
 
             <div class="row">

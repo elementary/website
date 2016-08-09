@@ -7,7 +7,7 @@
 ?>
 
 <script>
-    ga('send', 'event', '403: Forbidden', window.location.host);
+    ga('send', 'event', '403: Forbidden', window.location.host)
 </script>
 
 <div class="row">
