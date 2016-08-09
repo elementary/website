@@ -52,6 +52,7 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
+$template['countdown'] = __DIR__.'/countdown.php';
 $template['header'] = __DIR__.'/header.php';
 $template['alert'] = __DIR__.'/alert.php';
 $template['footer'] = __DIR__.'/footer.php';

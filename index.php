@@ -2,9 +2,11 @@
     $page['title'] = 'Purchase elementary OS';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/countdown.css">';
     include __DIR__.'/_templates/sitewide.php';
     include $template['header'];
     include $template['alert'];
+    include $template['countdown'];
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
