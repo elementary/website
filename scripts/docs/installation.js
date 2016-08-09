@@ -1,17 +1,19 @@
-$(function() {
+/* global Slider */
+
+$(function () {
     // Parse user-agent to detect current platform
-    function detectOS() {
-        var ua = window.navigator.userAgent;
+    function detectOS () {
+        var ua = window.navigator.userAgent
         if (ua.indexOf('Windows') >= 0) {
-            return 'windows';
+            return 'windows'
         }
         if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'osx';
+            return 'osx'
         }
         if (ua.indexOf('Linux') >= 0) {
-            return 'linux';
+            return 'linux'
         }
-        return false;
+        return false
     }
 
     // Setup sliders
@@ -20,16 +22,16 @@ $(function() {
         choiceContainer: '#operating-system-choices',
         slides: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
         fixed: false
-    });
+    })
 
     // Show instructions for the current platform
-    var currentOs = detectOS();
+    var currentOs = detectOS()
 
-    if (currentOs == 'windows' || !currentOs) {
-        operatingSystemSlider.slideTo('install-on-windows');
-    } else if (currentOs == 'osx') {
-        operatingSystemSlider.slideTo('install-on-os-x');
+    if (currentOs === 'windows' || !currentOs) {
+        operatingSystemSlider.slideTo('install-on-windows')
+    } else if (currentOs === 'osx') {
+        operatingSystemSlider.slideTo('install-on-os-x')
     } else {
-        operatingSystemSlider.slideTo('install-on-ubuntu');
+        operatingSystemSlider.slideTo('install-on-ubuntu')
     }
-});
+})

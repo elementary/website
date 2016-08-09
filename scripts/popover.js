@@ -1,37 +1,37 @@
 $(function () {
-    var $document;
+    var $document
 
-    $document = $(document);
+    $document = $(document)
 
     $document.on('click', '.popover > a', function (event) {
-        event.preventDefault();
+        event.preventDefault()
 
-        var $body = $('body');
-        var $link = $(event.target);
-        var $popover = $link.parent();
-        var $content = $popover.find('.popover-content');
+        var $body = $('body')
+        var $link = $(event.target)
+        var $popover = $link.parent()
+        var $content = $popover.find('.popover-content')
 
-        $body.css({ 'overflow': 'hidden' });
+        $body.css({ 'overflow': 'hidden' })
 
-        $popover.addClass('active');
+        $popover.addClass('active')
 
         $content.on('scroll touchmove mousewheel wheel', function (e) {
-            e.stopPropagation();
-        });
+            e.stopPropagation()
+        })
 
-        var popoverPos = ( $popover.outerWidth() / 2 ) - ( $content.outerWidth() / 2 );
-        $content.css({ left: popoverPos });
+        var popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
+        $content.css({ left: popoverPos })
 
         $document.one('click scroll touchmove mousewheel wheel', function (event) {
             if (!$(event.target).is('.popover-content *')) {
-                event.stopImmediatePropagation();
-                event.preventDefault();
+                event.stopImmediatePropagation()
+                event.preventDefault()
             }
 
-            $body.css({ 'overflow': 'visible' });
+            $body.css({ 'overflow': 'visible' })
 
-            $popover.removeClass('active');
-            $body.click();
-        });
-    });
-});
+            $popover.removeClass('active')
+            $body.click()
+        })
+    })
+})
