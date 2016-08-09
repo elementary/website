@@ -1,15 +1,22 @@
 [
     {
         "name": "Logotype Tee",
+        "description": "A super awesome store tee that you should buy.",
         "image": "\/images\/store\/apparel\/logotype.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 318,
                 "size": "2XL",
-                "color": "Aqua",
+                "color": "Blue",
                 "cost": 16.35,
                 "price": 17
+            }, {
+                "id": 319,
+                "size": "M",
+                "color": "Blue",
+                "cost": 17.45,
+                "price": 18
             }
         ],
         "files": [

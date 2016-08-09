@@ -37,6 +37,9 @@ function get_products () {
         $product['price_min'] = null;
         $product['price_max'] = null;
 
+        $product['size'] = [];
+        $product['color'] = [];
+
         foreach ($product['variants'] as $variant) {
             if ($product['price_max'] == null || $variant['price'] > $product['price_max']) {
                 $product['price_max'] = $variant['price'];
@@ -45,6 +48,9 @@ function get_products () {
             if ($product['price_min'] == null || $variant['price'] < $product['price_min']) {
                 $product['price_min'] = $variant['price'];
             }
+
+            if (!in_array($variant['size'], $product['size'])) $product['size'][] = $variant['size'];
+            if (!in_array($variant['color'], $product['color'])) $product['color'][] = $variant['color'];
         }
     }
 

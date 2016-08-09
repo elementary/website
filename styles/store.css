@@ -23,3 +23,72 @@
     margin: 20px;
     max-width: 260px;
 }
+
+/*****************
+* Product modals *
+*****************/
+
+.modal--product {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal--product h2,
+.modal--product h4 {
+    text-align: left;
+}
+
+.modal--product p {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.modal--product input[type="number"],
+.modal--product select {
+    width: 100%;
+    padding: 6px;
+}
+
+.modal--product select {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    color: #323232;
+    outline: 0;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    transition: all 200ms ease-out;
+}
+
+.modal--product .button {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.modal--product .grid {
+    padding: 0;
+    padding-bottom: 12px;
+}
+
+.modal--product .label {
+    margin-top: 24px;
+}
+
+/*************************
+* Store related elements *
+*************************/
+
+.grid--narrow {
+    max-width: 644px;
+}
+
+.alert--error {
+    color: #da4d45;
+    font-size: 88%;
+}
+
+.text--success {
+    color: #49800b;
+}
