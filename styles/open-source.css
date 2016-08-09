@@ -45,6 +45,7 @@ hr.dotted {
 #gnome .sub-item,
 #gnu .sub-item,
 #gtk .sub-item,
+#ubuntu .sub-item,
 #xorg .sub-item {
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.15);
@@ -106,10 +107,12 @@ hr.dotted {
                 0 3px 6px rgba(228, 139, 32, 0.23);
 }
 
+#ubuntu .sub-item,
 #xorg .sub-item {
     background-color: #f37329;
 }
 
+#ubuntu .sub-item:focus,
 #xorg .sub-item:focus {
     border-color: #f37329;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
@@ -180,10 +183,9 @@ hr.dotted {
     }
 
     .sub-item {
-        display: block;
         font-size: 80%;
         margin: 4px auto;
-        width: 100%;
+        padding: 8px 16px;
     }
 
     .platform-item.full,
@@ -192,5 +194,6 @@ hr.dotted {
     .platform-item.third {
         margin: 6px 12px;
         width: calc(100% - 24px);
+    }
     }
 }
