@@ -18,6 +18,14 @@
     vertical-align: top;
 }
 
+.platform-item a {
+    color: inherit;
+}
+
+.platform-item a:hover {
+    color: #08c;
+}
+
 hr.dotted {
     background: transparent;
     border-top: 1px dashed #c9c9c9;
