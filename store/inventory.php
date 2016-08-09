@@ -1,6 +1,6 @@
 <?php
 
-namespace Store;
+namespace Store\Cart;
 
 require_once __DIR__ . '/../backend/store/cart.php';
 

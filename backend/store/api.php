@@ -1,6 +1,6 @@
 <?php
 
-namespace Store;
+namespace Store\Api;
 
 require_once __DIR__ . '/../config.loader.php';
 

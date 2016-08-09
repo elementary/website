@@ -1,6 +1,6 @@
 <?php
 
-namespace Store;
+namespace Store\Cart;
 
 require_once __DIR__ . '/product.php';
 
@@ -22,7 +22,7 @@ require_once __DIR__ . '/product.php';
  * @return Array list of products
  */
 function get_cart () {
-    $products = do_open();
+    $products = \Store\Product\do_open();
 
     if (!isset($_COOKIE['cart'])) {
         $cart = array();
@@ -104,7 +104,7 @@ function set_cart (array $c) {
  */
 function set_quantity (int $i, int $v, int $q = 1) {
     $cart = get_cart();
-    $products = do_open();
+    $products = \Store\Product\do_open();
 
     if (!isset($products[$i])) {
         throw new \Exception('Product id does not exist');

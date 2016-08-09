@@ -12,12 +12,13 @@
                 "color": "Blue",
                 "cost": 16.35,
                 "price": 17
-            }, {
+            },
+            {
                 "id": 319,
                 "name": "M Logotype Tee",
                 "size": "M",
                 "color": "Blue",
-                "cost": 17.45,
+                "cost": 16.35,
                 "price": 18
             }
         ],

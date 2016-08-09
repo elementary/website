@@ -3,6 +3,17 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
+if (typeof country === 'undefined' || country.length === 0) {
+    console.error('Unable to find country data')
+
+    var country = null
+    $.getJSON('data/country.json', function (data) {
+        console.log('Was able to fetch country data manually')
+
+        country = data
+    })
+}
+
 /**
  * updateTotal
  * Adds prices for everything in cart and puts sub total in footer
@@ -50,8 +61,6 @@ $('.list--product .list__item input[name$="quantity"]').on('change', function (e
     var quantity = $input.val()
     var $error = $item.find('.alert--error')
 
-    console.log(id)
-
     $.get('/store/inventory', {
         id: productId,
         variant: variantId,
@@ -72,4 +81,28 @@ $('.list--product .list__item input[name$="quantity"]').on('change', function (e
             $error.text('Unable to update quantity')
         }
     })
+})
+
+/**
+ * Hide the inputs we don't need depending on the country
+ * NOTE: JQuery in a loop does not work as intended :sad_face:
+ */
+$('form[action$="checkout"] select[name="country"]').on('change', function (e) {
+    var value = $(this).val()
+    var $state = $(this).siblings('select[name="state"]')
+
+    if (country[value] != null && typeof country[value]['states'] === 'object') {
+        $state.empty()
+        var options = []
+
+        Object.keys(country[value]['states']).forEach(function (code) {
+            var state = country[value]['states'][code]
+            options.push('<option value="' + code + '">' + state + '</option>')
+        })
+
+        $state.append(options.join(''))
+        $state.attr('hidden', false).attr('required', true)
+    } else {
+        $state.attr('hidden', true).attr('required', false)
+    }
 })

@@ -7,7 +7,7 @@
 
     require_once __DIR__.'/../backend/store/product.php';
 
-    $products = \Store\get_products();
+    $products = \Store\Product\get_products();
 
     $categories = [];
     foreach ($products as $product) {

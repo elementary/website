@@ -1,15 +1,14 @@
 <?php
 
-namespace Store;
-
+require_once __DIR__ . '/address.php';
 require_once __DIR__ . '/api.php';
 require_once __DIR__ . '/product.php';
 
 /**
- * This is a php script to sync the product list in /data with up to date info
- * from Printful
+ * This part of the script is to sync the product list in /data with up to
+ * date info from Printful
  */
-$products = do_open();
+$products = \Store\Product\do_open();
 
 if ($products == null) {
     throw new \Exception('Unable to open store data');
@@ -29,7 +28,7 @@ foreach($products as $index => &$product) {
     }
 
     foreach($product['variants'] as &$variant) {
-        $res = get_varients($variant['id']);
+        $res = \Store\Api\get_varients($variant['id']);
         $pro = $res['product'];
         $var = $res['variant'];
 
@@ -46,4 +45,31 @@ foreach($products as $index => &$product) {
     }
 }
 
-do_save($products);
+\Store\Product\do_save($products);
+
+/**
+ * And this part grabs all the country information from Printful and puts it
+ * in the country list
+ */
+$countries = \Store\Api\do_request('GET', 'countries');
+$list = \Store\Address\do_open();
+
+foreach($countries as $country) {
+    if (!isset($list[$country['code']])) {
+        $list[$country['code']] = $country['name'];
+    }
+
+    if ($country['states'] !== null) {
+        $states = [];
+        foreach($country['states'] as $state) {
+            $states[$state['code']] = $state['name'];
+        }
+
+        $list[$country['code']] = array(
+            'name' => $country['name'],
+            'states' => $states
+        );
+    }
+}
+
+\Store\Address\do_save($list);

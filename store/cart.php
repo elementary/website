@@ -5,9 +5,10 @@
     include $template['header'];
     include $template['alert'];
 
-    require_once __DIR__.'/../backend/store/cart.php';
+    require_once __DIR__ . '/../backend/store/cart.php';
+    require_once __DIR__ . '/../backend/store/address.php';
 
-    $cart = \Store\get_cart();
+    $cart = \Store\Cart\get_cart();
 
     if (count($cart) > 0) {
 ?>
@@ -52,7 +53,7 @@
         <?php } ?>
 
         <div class="list__footer">
-            <h4>Sub-Total: $<?php echo \Store\get_subtotal() ?></h4>
+            <h4>Sub-Total: $<?php echo \Store\Cart\get_subtotal() ?></h4>
         </div>
     </div>
 
@@ -62,30 +63,45 @@
 
     <div class="whole grid grid--address">
         <div>
-            <input type="text" name="first-name" placeholder="First Name" autocomplete="given-name" required>
-            <input type="text" name="last-name" placeholder="Last Name" autocomplete="family-name" required>
+            <input type="text" name="name" placeholder="Name" autocomplete="name" required>
         </div>
         <div>
-            <input type="text" name="address-line1" placeholder="Street Address, P.O. Box, Company Name" autocomplete="address-line1" required>
+            <input type="text" name="address1" placeholder="Street Address, P.O. Box, Company Name" autocomplete="shipping address-line1" required>
         </div>
         <div>
-            <input type="text" name="address-line2" placeholder="Apartment, Suite, Unit, Building, Floor" autocomplete="address-line2">
+            <input type="text" name="address2" placeholder="Apartment, Suite, Unit, Building, Floor" autocomplete="shipping address-line2">
         </div>
         <div>
-            <input type="text" name="address-level2" placeholder="City" autocomplete="address-level2" required>
-            <input type="text" name="address-level1" placeholder="State" autocomplete="address-level1" maxlength="2" required>
-            <input type="number" name="postal-code" placeholder="ZIP" autocomplete="postal-code" required>
+            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
+            <select name="state" autocomplete="address-level1" required>
+                <?php foreach (\Store\Address\get_states('US') as $code => $item) { ?>
+                    <option value="<?php echo $code ?>"><?php echo $item ?></option>
+                <?php } ?>
+            </select>
+            <select name="country" autocomplete="country" required>
+                <?php
+                    foreach (\Store\Address\get_countries() as $code => $item) {
+                        $d = ($code === 'US') ? 'selected' : '';
+                ?>
+                    <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
+                <?php } ?>
+            </select>
+            <input type="number" name="zip" placeholder="Postal Code" autocomplete="postal-code" required>
         </div>
         <div>
             <input type="email" name="email" placeholder="Email" autocomplete="email" required>
             <input type="tel" name="phone" placeholder="Phone" autocomplete="tel">
         </div>
 
+        <span class="alert--error"></span>
+
         <div>
             <input type="submit" value="Check Out" class="button suggested-action">
         </div>
     </div>
 </form>
+
+<script>var country = <?php echo json_encode(\Store\Address\do_open()) ?></script>
 
 <?php } else { ?>
 
