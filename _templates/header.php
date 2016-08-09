@@ -114,7 +114,10 @@ $l10n->begin_html_translation();
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                    <!-- <li><a href="<?php echo $page['lang-root'].'store'; ?>">Store</a></li> -->
+                    <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
+                    <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
+                    <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                    <?php } ?>
                 </ul>
                 <ul class="right">
                     <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
