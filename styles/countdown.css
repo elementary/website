@@ -3,6 +3,27 @@
 * This file is part of elementary.io *
 ***************************************/
 
+.countdown-wrapper {
+    align-items: center;
+    background-color: rgba(255,255,255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-user-select: none;
+}
+
+.flip-clock-wrapper {
+    margin: 128px 16px;
+}
+
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -49,22 +70,6 @@
   background: none !important;
   box-shadow: 0 0 0 !important;
   font-size: 36px !important;
-}
-
-.flip-clock-wrapper {
-    align-items: center;
-    background-color: rgba(255,255,255, 0.95);
-    backdrop-filter: blur(10px);
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    left: 0;
-    padding: 32px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    -webkit-user-select: none;
 }
 
 .flip-clock-wrapper:before,
