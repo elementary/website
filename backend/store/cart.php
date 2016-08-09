@@ -5,17 +5,66 @@ namespace Store;
 require_once __DIR__ . '/product.php';
 
 /**
+ * NOTE: items stored in cart cookie are in the JSON string form of:
+ * { <product id>-<variant id>: <quantity> }
+ * but any all PHP arrays of the cart object will be in the form of:
+ * { <product id>-<variant id> => {
+ *     quantity: <quantity>
+ *     product: <product array>
+ *     variant: <variant array>
+ * }}
+ */
+
+/**
  * get_cart
  * Returns current parsed cart cookie
  *
  * @return Array list of products
  */
 function get_cart () {
+    $products = do_open();
+
     if (!isset($_COOKIE['cart'])) {
-        return array();
+        $cart = array();
     } else {
-        return json_decode($_COOKIE['cart'], true);
+        $cart = json_decode($_COOKIE['cart'], true);
     }
+
+    $f = [];
+    foreach ($cart as $id => $quantity) {
+        list($i, $v) = explode('-', $id, 2);
+
+        if (!isset($products[$i])) continue;
+
+        $key = array_search($v, array_column($products[$i]['variants'], 'id'));
+
+        if ($key === null) continue;
+
+        $f[$id] = array(
+            'product' => $products[$i],
+            'variant' => $products[$i]['variants'][$key],
+            'quantity' => $quantity
+        );
+    }
+
+    return $f;
+}
+
+/**
+ * get_subtotal
+ * Returns the current price of the cart without shipping or extras
+ *
+ * @return Float price of cart
+ */
+function get_subtotal () {
+    $cart = get_cart();
+    $price = 0;
+
+    foreach ($cart as $item) {
+        $price = $price + ($item['quantity'] * $item['variant']['price']);
+    }
+
+    return number_format((float) $price, 2);
 }
 
 /**
@@ -27,8 +76,15 @@ function get_cart () {
  * @return Boolean true if cookie was set
  */
 function set_cart (array $c) {
-    if (count($c) > 0) {
-        return setcookie('cart', json_encode($c), strtotime('+1 days'), '/', '', 0, 1);
+    $f = [];
+    foreach ($c as $id => $item) {
+        if (isset($item['quantity']) && (int) $item['quantity'] > 0) {
+            $f[$id] = $item['quantity'];
+        }
+    }
+
+    if (count($f) > 0) {
+        return setcookie('cart', json_encode($f), time() + 315360000, '/', '', 0, 1);
     } else {
         return setcookie('cart', false, 1, '/', '', 0, 1);
     }
@@ -38,9 +94,9 @@ function set_cart (array $c) {
  * set_quantity
  * sets the quantity on product in cart
  *
- * @param Number $i product id
- * @param Number $v product variant id
- * @param Number $q quantity of product to set
+ * @param Int $i product id
+ * @param Int $v product variant id
+ * @param Int $q quantity of product to set
  *
  * @return Boolean true if cookie was set
  *
@@ -48,7 +104,7 @@ function set_cart (array $c) {
  */
 function set_quantity (int $i, int $v, int $q = 1) {
     $cart = get_cart();
-    $products = \Store\do_open();
+    $products = do_open();
 
     if (!isset($products[$i])) {
         throw new \Exception('Product id does not exist');
@@ -61,7 +117,15 @@ function set_quantity (int $i, int $v, int $q = 1) {
     }
 
     $id = $i . '-' . $v;
-    $cart[$id] = $q;
+
+    if (!isset($cart[$id])) {
+        $cart[$id] = array(
+            'product' => $products[$i],
+            'variant' => $products[$i]['variants'][$key]
+        );
+    }
+
+    $cart[$id]['quantity'] = $q;
 
     return set_cart($cart);
 }
@@ -70,9 +134,9 @@ function set_quantity (int $i, int $v, int $q = 1) {
  * set_add
  * adds to quantity in cart
  *
- * @param Number $i product id
- * @param Number $v product variant id
- * @param Number $q quantity of product to add
+ * @param Int $i product id
+ * @param Int $v product variant id
+ * @param Int $q quantity of product to add
  *
  * @return Boolean true if cookie was set
  *
@@ -83,7 +147,7 @@ function set_add (int $i, int $v, int $q = 1) {
     $id = $i . '-' . $v;
 
     if (isset($cart[$id])) {
-        $q += $cart[$id];
+        $q += $cart[$id]['quantity'];
     }
 
     return set_quantity($i, $v, $q);

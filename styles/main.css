@@ -728,10 +728,7 @@ button.suggested-action,
 * Input *
 ********/
 
-input[type="text"]:not(.button),
-input[type="text"]:focus,
-input[type="number"]:not(.button),
-input[type="number"]:focus {
+input:not([type="submit"]):not(.button) {
     background-clip: padding-box;
     background-color: #fff;
     background-image: linear-gradient(to bottom, #fafafa, #fdfdfd);
@@ -760,8 +757,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
+input:focus:not([type="submit"]):not(.button) {
     border-color: rgba(61, 155, 218, 0.8);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.3);

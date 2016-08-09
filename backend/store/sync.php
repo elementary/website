@@ -37,6 +37,7 @@ foreach($products as $index => &$product) {
         if (!isset($product['type'])) $product['type'] = $pro['type'];
         if (!isset($product['image'])) $product['image'] = $pro['image'];
 
+        if (!isset($variant['name'])) $variant['name'] = $product['name'];
         if (!isset($variant['size'])) $variant['size'] = $var['size'];
         if (!isset($variant['color'])) $variant['color'] = $var['color'];
 

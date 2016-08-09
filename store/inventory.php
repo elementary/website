@@ -29,14 +29,23 @@ if ($v === false) {
 
 if ($m === 'add') {
     try {
-        set_add($i, $v, $q);
+        $res = set_add($i, $v, $q);
     } catch (Exception $e) {
         echo 'Unable to add to cart';
         return;
     }
+} else if ($m === 'set') {
+    try {
+        $res = set_quantity($i, $v, $q);
+    } catch (Exception $e) {
+        echo 'Unable to set quantity';
+        return;
+    }
 }
 
-if ($s) {
+if ($res === false) {
+    echo 'Unable to send cookie';
+} else if ($s) {
     echo 'OK';
 } else {
     header("Location: https://$_SERVER[HTTP_HOST]/store/");

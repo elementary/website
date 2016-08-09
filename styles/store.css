@@ -76,6 +76,132 @@
     margin-top: 24px;
 }
 
+/***********************
+* List view of product *
+***********************/
+
+.list--product {
+    display: block;
+    text-align: center;
+}
+
+.list--product .list__item {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.list--product .list__item a {
+    color: inherit;
+}
+
+.list--product .list__item img {
+    height: 80px;
+    width: 80px;
+}
+
+.list--product .list__info {
+    flex: 1 1 auto;
+    padding: 16px 0;
+}
+
+.list--product .list__detail input {
+    max-width: 64px;
+    text-align: center;
+}
+
+.list--product .list__detail > div > * {
+    display: inline-block;
+}
+
+@media (min-width: 620px) {
+    .list--product .list__item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .list--product .list__info {
+        margin: 0 24px;
+    }
+
+    .list--product .list__detail {
+        text-align: right;
+    }
+
+    .list--product .list__footer {
+        text-align: right;
+    }
+
+    .list__detail .subtotal > * {
+        min-width: 48px;
+        text-align: center
+    }
+}
+
+/****************
+* Shipping Grid *
+****************/
+
+.grid--address > *:not(:last-of-type) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.grid--address > *:not(:last-of-type) > * {
+    flex: 1 1 auto;
+    margin: 6px;
+    min-width: 100px;
+    padding: 8px;
+}
+
+.grid--address input[autocomplete="address-level1"] {
+    flex: 1 1 2ch;
+}
+
+.grid--address input[autocomplete="postal-code"] {
+    flex: 1 1 5ch;
+}
+
+/*****************************
+* Shipping photo on checkout *
+*****************************/
+
+#shipping-photo {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: none;
+    margin: 32px 0;
+}
+
+@media (min-width: 500px) {
+    #shipping-photo {
+        display: inline-block;
+    }
+}
+
+/********************************
+* Checkout Shipping Information *
+********************************/
+
+.grid--narrow .half {
+    text-align: left;
+}
+
+.grid--narrow .half span {
+    display: block;
+}
+
+.grid--narrow .half h5 {
+    padding: 12px 0;
+    opacity: 0.75;
+}
+
 /*************************
 * Store related elements *
 *************************/
