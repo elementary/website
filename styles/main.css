@@ -538,11 +538,11 @@ footer ul li a:focus {
     text-align: center;
 }
 
-.third a {
+a.third {
     color: inherit;
 }
 
-.third a:hover {
+a.third:hover {
     color: #08C;
     fill: #08C;
 }
