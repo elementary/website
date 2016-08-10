@@ -87,7 +87,7 @@
                     <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
                 <?php } ?>
             </select>
-            <input type="number" name="postal" placeholder="Postal Code" autocomplete="postal-code" required>
+            <input type="number" name="postal" placeholder="Postal Code" autocomplete="postal-code">
         </div>
         <div>
             <input type="email" name="email" placeholder="Email" autocomplete="email" required>

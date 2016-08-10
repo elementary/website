@@ -3,6 +3,7 @@
 namespace Store\Api;
 
 require_once __DIR__ . '/../config.loader.php';
+require_once __DIR__ . '/address.php';
 
 /**
  * do_request
@@ -92,4 +93,36 @@ function get_varients ($i) {
     }
 
     return do_request('GET', "products/variant/$i");
+}
+
+/**
+ * get_shipping
+ * Returns a list of shipping rates from Printful api
+ *
+ * @param \Store\Address\Address $s shipping address
+ * @param Arrray                 $i list of items to buy
+ *
+ * @return Array list of shipping rates
+ */
+function get_shipping (\Store\Address\Address $s, array $i) {
+    $res = do_request('POST', 'shipping/rates', array(
+        'recipient' => $s->get_shipping(),
+        'items' => $i
+    ));
+
+    $choices = [];
+    foreach ($res as $option) {
+        preg_match('#\(.*?\)#', $option['name'], $matches);
+        $name = trim(str_replace($matches[0], '', $option['name']));
+        $expected = trim($matches[0], '\)\(');
+
+        $choices[] = array(
+            'id' => $option['id'],
+            'name' => $name,
+            'expected' => $expected,
+            'cost' => number_format((float) $option['rate'], 2)
+        );
+    }
+
+    return $choices;
 }

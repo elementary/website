@@ -162,6 +162,8 @@ class Address {
         $states = get_states($this->country);
         $in = strtoupper($in);
 
+        if (count($states) === 0) return;
+
         if (!isset($states[$in])) {
             throw new \ValidationException('State code does not exist');
         }
@@ -307,4 +309,23 @@ class Address {
 
         return $a;
     }
+
+    /**
+     * get_shipping
+     * Returns an array of shipping informatino to be consumed by Printful api
+     *
+     * @return Array list of address information
+     */
+     public function get_shipping () {
+         $res = array(
+            'address1' => $this->get_line1(),
+            'city' => $this->get_city(),
+            'country_code' => $this->get_country()
+         );
+
+         if (isset($this->state)) $res['state'] = $this->get_state();
+         if (isset($this->postal)) $res['zip'] = $this->get_postal();
+
+         return $res;
+     }
 }

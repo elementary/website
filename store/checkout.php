@@ -20,12 +20,14 @@
 
     try {
         $cart = \Store\Cart\do_parse($_POST);
+
+        $subtotal = \Store\Cart\get_subtotal();
     } catch (Exception $e) {
-        err('Unable to retrieve cart');
+        return err('Unable to retrieve cart');
     }
 
     if (count($cart) < 1) {
-        err('Cannot checkout with an empty cart');
+        return err('Cannot checkout with an empty cart');
     }
 
     try {
@@ -35,27 +37,39 @@
         $address->set_line1($_POST['address1']);
         $address->set_city($_POST['city']);
         $address->set_country($_POST['country']);
-        $address->set_postal($_POST['postal']);
         $address->set_email($_POST['email']);
 
         if (isset($_POST['address2']) && $_POST['address2'] !== '') $address->set_line2($_POST['address2']);
         if (isset($_POST['state']) && $_POST['state'] !== '') $address->set_state($_POST['state']);
+        if (isset($_POST['postal']) && $_POST['postal'] !== '') $address->set_postal($_POST['postal']);
         if (isset($_POST['phone']) && $_POST['phone'] !== '') $address->set_phone($_POST['phone']);
     } catch (ValidationException $e) {
-        err($e->getMessage());
+        return err($e->getMessage());
     } catch (Exception $e) {
         error_log($e);
-        err('Unable to validate shipping information');
+        return err('Unable to validate shipping information');
     }
 
+    try {
+        $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
+
+        $shipping_default = $shipping[0];
+    } catch (Exception $e) {
+        error_log($e);
+        return err('Unable to get shipping rates');
+    }
+
+    $total = number_format($subtotal + $shipping_default['cost'], 2);
+
     $page['title'] = 'Checkout &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
+    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
     include $template['header'];
     include $template['alert'];
 ?>
 
 <script>
-    var stripe_key = '<?php include __DIR__.'/../backend/payment.php'; ?>'
+    var stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'
     jQl.loadjQdep('scripts/store/checkout.js')
 </script>
 
@@ -96,12 +110,14 @@
             <?php } ?>
 
             <div class="list__footer">
-                <input type="hidden" name="cart-subtotal" value="<?php echo \Store\Cart\get_subtotal() ?>">
+                <input type="hidden" name="cart-subtotal" value="<?php echo $subtotal ?>">
+                <input type="hidden" name="cart-shipping" value="<?php echo $shipping_default['cost'] ?>">
+                <input type="hidden" name="cart-total" value="<?php echo $total ?>">
 
-                <h4>Sub-Total: $<?php echo \Store\Cart\get_subtotal() ?></h4>
-                <h4>Shipping: $0</h4>
+                <h4 id='cart-subtotal'>Sub-Total: $<?php echo $subtotal ?></h4>
+                <h4 id='cart-shipping'>Shipping: $<?php echo $shipping_default['cost'] ?></h4>
                 <hr>
-                <h4>Total: $0</h4>
+                <h4 id='cart-total'>Total: $<?php echo $total ?></h4>
             </div>
         </div>
     </div>
@@ -148,14 +164,36 @@
         <?php foreach ($address->get_formatted() as $line) { ?>
         <span><?php echo $line ?></span>
         <?php } ?>
-
-        <h5>Estimated delivery:</h5>
-        <span class="text--success">3 days</span>
-        <span>Items will be shipped by UPS ground</span>
     </div>
 
     <div class="half">
+        <h5>Estimated delivery:</h5>
+        <span class="text--success shipping-expected"><?php echo $shipping_default['expected'] ?></span>
+        <span>Items will be shipped by <span class="shipping-name"><?php echo $shipping_default['name'] ?></span></span>
+    </div>
 
+    <div class="whole">
+        <table class="list--shipping">
+            <?php
+                foreach ($shipping as $index => $option) {
+                    $sel = ($index === 0) ? 'checked' : '';
+            ?>
+                <tr class="list__item">
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-name' value='<?php echo $option['name'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-expected' value='<?php echo $option['expected'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-cost' value='<?php echo $option['cost'] ?>'>
+
+                    <td class="list__row"><input type='radio' name='shipping' value='<?php echo $option['id'] ?>' <?php echo $sel ?>></td>
+                    <td class="list__row"><?php echo $option['name'] ?></td>
+                    <td class="list__row"><?php echo $option['expected'] ?></td>
+                    <td class="list__row">$<?php echo $option['cost'] ?></td>
+                </tr>
+            <?php } ?>
+        </table>
+    </div>
+
+    <div class="whole">
+        <span class="alert--error"></span>
     </div>
 
     <div class="whole">

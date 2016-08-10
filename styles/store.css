@@ -174,7 +174,7 @@
 
 #shipping-photo {
     border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #b1b1b1;
     display: none;
     margin: 32px 0;
 }
@@ -183,6 +183,24 @@
     #shipping-photo {
         display: inline-block;
     }
+}
+
+/************************
+* Shipping option table *
+************************/
+
+.list--shipping {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list--shipping .list__item .list__row {
+    padding: 8px;
+}
+
+.list--shipping .list__item:not(:last-of-type) .list__row {
+    border-bottom: 1px solid #dddddd;
 }
 
 /********************************

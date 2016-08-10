@@ -68,6 +68,26 @@ function get_subtotal () {
 }
 
 /**
+ * get_shipping
+ * Returns a list of cart items ready to be used in Printful api
+ *
+ * @return Array list of cart products
+ */
+function get_shipping () {
+    $cart = get_cart();
+    $items = [];
+
+    foreach ($cart as $pro) {
+        $items[] = array(
+            'quantity' => $pro['quantity'],
+            'variant_id' => $pro['variant']['id']
+        );
+    }
+
+    return $items;
+}
+
+/**
  * set_cart
  * Sets the cart cookie
  *
