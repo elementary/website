@@ -51,15 +51,20 @@
     }
 
     try {
-        $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
+        $tax = \Store\Api\get_tax($address, $subtotal);
+    } catch (Exception $e) {
+        return err('Unable to get tax rates');
+    }
 
+    try {
+        $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
         $shipping_default = $shipping[0];
     } catch (Exception $e) {
         error_log($e);
         return err('Unable to get shipping rates');
     }
 
-    $total = number_format($subtotal + $shipping_default['cost'], 2);
+    $total = number_format($subtotal + $tax + $shipping_default['cost'], 2);
 
     $page['title'] = 'Checkout &sdot; elementary';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
@@ -111,10 +116,14 @@
 
             <div class="list__footer">
                 <input type="hidden" name="cart-subtotal" value="<?php echo $subtotal ?>">
+                <input type="hidden" name="cart-tax" value="<?php echo $tax ?>">
                 <input type="hidden" name="cart-shipping" value="<?php echo $shipping_default['cost'] ?>">
                 <input type="hidden" name="cart-total" value="<?php echo $total ?>">
 
                 <h4 id='cart-subtotal'>Sub-Total: $<?php echo $subtotal ?></h4>
+                <?php if ($tax !== 0) { ?>
+                <h4>Tax: $<?php echo $tax ?></h4>
+                <?php } ?>
                 <h4 id='cart-shipping'>Shipping: $<?php echo $shipping_default['cost'] ?></h4>
                 <hr>
                 <h4 id='cart-total'>Total: $<?php echo $total ?></h4>

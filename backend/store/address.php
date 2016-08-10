@@ -328,4 +328,19 @@ class Address {
 
          return $res;
      }
+
+     /**
+      * get_taxable
+      * Returns a boolean on if this address has a tax with it
+      * TODO: tax rates _shouldn't_ change often, but this is hardcoded which is bad
+      *
+      * @return Boolean true if address has tax
+      */
+      public function get_taxable () {
+          if (!isset($this->state) || $this->state !== 'CA') {
+              return false;
+          }
+
+          return true;
+      }
 }
