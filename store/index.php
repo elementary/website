@@ -20,8 +20,8 @@
 ?>
 
 <script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-    jQl.loadjQdep('scripts/store/index.js');
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
+    jQl.loadjQdep('scripts/store/index.js')
 </script>
 
 <div class="row">

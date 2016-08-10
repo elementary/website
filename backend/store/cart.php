@@ -91,6 +91,32 @@ function set_cart (array $c) {
 }
 
 /**
+ * do_parse
+ * Parses (usually a POST) array of data for cart information
+ * Used instead of cookies to avoid weird missmatches during checkout process
+ *
+ * @param Array $c list of inputs to parse
+ *
+ * @return Array list of cart items
+ */
+function do_parse (array $c) {
+    $items = [];
+
+    foreach($c as $name => $value) {
+        preg_match('/product-([0-9]+\-[0-9]+)-id/', $name, $matches);
+
+        if ($matches && isset($c["product-$matches[1]-quantity"])) {
+            $items[$matches[1]] = array(
+                'quantity' => $c["product-$matches[1]-quantity"]
+            );
+        }
+    }
+
+    set_cart($items);
+    return get_cart();
+}
+
+/**
  * set_quantity
  * sets the quantity on product in cart
  *

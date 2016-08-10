@@ -48,5 +48,5 @@ if ($res === false) {
 } else if ($s) {
     echo 'OK';
 } else {
-    header("Location: https://$_SERVER[HTTP_HOST]/store/");
+    header("Location: /store/");
 }

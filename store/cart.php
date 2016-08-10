@@ -14,7 +14,7 @@
 ?>
 
 <script>
-    jQl.loadjQdep('scripts/store/cart.js');
+    jQl.loadjQdep('scripts/store/cart.js')
 </script>
 
 <form action="/store/checkout" method="post" class="grid grid--narrow">
@@ -36,6 +36,7 @@
                     <b><?php echo $variant['name'] ?></b>
                 </div>
                 <div class="list__detail">
+                    <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $index ?>">
                     <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $variant['price'] ?>">
 
                     <span class="alert--error"></span>
@@ -86,14 +87,18 @@
                     <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
                 <?php } ?>
             </select>
-            <input type="number" name="zip" placeholder="Postal Code" autocomplete="postal-code" required>
+            <input type="number" name="postal" placeholder="Postal Code" autocomplete="postal-code" required>
         </div>
         <div>
             <input type="email" name="email" placeholder="Email" autocomplete="email" required>
             <input type="tel" name="phone" placeholder="Phone" autocomplete="tel">
         </div>
 
+        <?php if (isset($_GET['error'])) { ?>
+        <span class="alert--error"><?php echo urldecode($_GET['error']) ?></span>
+        <?php } else { ?>
         <span class="alert--error"></span>
+        <?php } ?>
 
         <div>
             <input type="submit" value="Check Out" class="button suggested-action">
