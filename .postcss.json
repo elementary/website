@@ -10,6 +10,7 @@
         "casecade": false
     },
     "postcss-reporter": {
-        "clearMessages": true
+        "clearMessages": true,
+        "throwError": true
     }
 }
