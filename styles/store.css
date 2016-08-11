@@ -58,10 +58,11 @@
 
 .size-select {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .size-select button {
-    flex: 1 1 100%;
+    flex: 1 1 0;
 }
 
 .modal--product .grid {
