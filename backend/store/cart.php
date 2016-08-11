@@ -43,7 +43,7 @@ function get_cart () {
         $f[$id] = array(
             'product' => $products[$i],
             'variant' => $products[$i]['variants'][$key],
-            'quantity' => $quantity
+            'quantity' => intval($quantity)
         );
     }
 

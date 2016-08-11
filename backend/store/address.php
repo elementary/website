@@ -318,13 +318,17 @@ class Address {
      */
      public function get_shipping () {
          $res = array(
+            'name' => $this->get_name(),
             'address1' => $this->get_line1(),
             'city' => $this->get_city(),
-            'country_code' => $this->get_country()
+            'country_code' => $this->get_country(),
+            'email' => $this->get_email()
          );
 
+         if (isset($this->line2)) $res['address2'] = $this->get_line2();
          if (isset($this->state)) $res['state'] = $this->get_state();
          if (isset($this->postal)) $res['zip'] = $this->get_postal();
+         if (isset($this->phone)) $res['phone'] = $this->get_phone();
 
          return $res;
      }

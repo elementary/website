@@ -87,11 +87,7 @@ function do_request ($r, $u, array $a = array(), array $p = array()) {
  *
  * @return Array list of variends
  */
-function get_varients ($i) {
-    if (!isset($i)) {
-        throw new \Exception('get_varients: Missing required product id');
-    }
-
+function get_varients (string $i) {
     return do_request('GET', "products/variant/$i");
 }
 

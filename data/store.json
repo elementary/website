@@ -1,30 +1,113 @@
 [
     {
-        "name": "Logotype Tee",
+        "name": "Logotype T-Shirt Mens",
         "description": "A super awesome store tee that you should buy.",
         "image": "\/images\/store\/apparel\/logotype.png",
         "type": "Apparel",
         "variants": [
             {
-                "id": 318,
-                "name": "2XL Logotype Tee",
-                "size": "2XL",
-                "color": "Blue",
-                "cost": 16.35,
-                "price": 17
-            },
-            {
-                "id": 319,
-                "name": "M Logotype Tee",
+                "id": 64,
+                "name": "XS Logotype Mens",
+                "size": "XS",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 126,
+                "name": "S Logotype Mens",
+                "size": "S",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 188,
+                "name": "M Logotype Mens",
                 "size": "M",
-                "color": "Blue",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 250,
+                "name": "L Logotype Mens",
+                "size": "L",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 312,
+                "name": "XL Logotype Mens",
+                "size": "XL",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 374,
+                "name": "2XL Logotype Mens",
+                "size": "2XL",
+                "color": "Teal",
                 "cost": 16.35,
-                "price": 18
+                "price": 16.35
+            }, {
+                "id": 436,
+                "name": "3XL Logotype Mens",
+                "size": "3XL",
+                "color": "Teal",
+                "cost": 17.85,
+                "price": 17.85
             }
         ],
         "files": [
             {
-                "id": 123456
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    },
+    {
+        "name": "Logotype T-Shirt Womans",
+        "description": "A super awesome store tee that you should buy.",
+        "image": "\/images\/store\/apparel\/logotype.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 127,
+                "name": "S Logotype Womans",
+                "size": "S",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 189,
+                "name": "M Logotype Womans",
+                "size": "M",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 251,
+                "name": "L Logotype Womans",
+                "size": "L",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 313,
+                "name": "XL Logotype Womans",
+                "size": "XL",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 14.85
+            }, {
+                "id": 375,
+                "name": "2XL Logotype Womans",
+                "size": "2XL",
+                "color": "Teal",
+                "cost": 16.35,
+                "price": 16.35
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
             }
         ]
     }
