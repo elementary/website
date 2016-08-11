@@ -11,49 +11,49 @@
                 "size": "XS",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 126,
                 "name": "S Logotype Mens",
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 188,
                 "name": "M Logotype Mens",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 250,
                 "name": "L Logotype Mens",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 312,
                 "name": "XL Logotype Mens",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 374,
                 "name": "2XL Logotype Mens",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
-                "price": 16.35
+                "price": 26.00
             }, {
                 "id": 436,
                 "name": "3XL Logotype Mens",
                 "size": "3XL",
                 "color": "Teal",
                 "cost": 17.85,
-                "price": 17.85
+                "price": 27.00
             }
         ],
         "files": [
@@ -74,35 +74,35 @@
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 189,
                 "name": "M Logotype Womans",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 251,
                 "name": "L Logotype Womans",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 313,
                 "name": "XL Logotype Womans",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
-                "price": 14.85
+                "price": 25.00
             }, {
                 "id": 375,
                 "name": "2XL Logotype Womans",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
-                "price": 16.35
+                "price": 26.00
             }
         ],
         "files": [
