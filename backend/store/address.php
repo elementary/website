@@ -217,10 +217,6 @@ class Address {
             throw new \ValidationException('Phone number is not set');
         }
 
-        if (!is_string($in) || !is_int($in)) {
-            throw new \ValidationException('Phone number is not valid');
-        }
-
         if (!preg_match("/^[\+0-9\-\# ]{7,}$/i", $in)) {
             throw new \ValidationException('Phone number is not valid');
         }
