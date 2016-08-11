@@ -33,12 +33,12 @@ h6 a.heading-link:active {
     text-decoration: none;
 }
 
-h1 a.heading-link:hover:before,
-h2 a.heading-link:hover:before,
-h3 a.heading-link:hover:before,
-h4 a.heading-link:hover:before,
-h5 a.heading-link:hover:before,
-h6 a.heading-link:hover:before {
+h1 a.heading-link:hover::before,
+h2 a.heading-link:hover::before,
+h3 a.heading-link:hover::before,
+h4 a.heading-link:hover::before,
+h5 a.heading-link:hover::before,
+h6 a.heading-link:hover::before {
     content: "\f0c1";
     font-family: FontAwesome;
     font-size: 0.75em;
@@ -317,7 +317,7 @@ table > tbody > tr > td:nth-child(1) {
 
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
-    background-color: rgba(0,0,0,0.01);
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 table > thead > tr > th,
@@ -330,7 +330,6 @@ table > tfoot > tr > td {
     vertical-align: top;
     border-top: 1px solid #ddd;
 }
-
 
 table > thead > tr > th {
     border-top: none;
@@ -345,7 +344,7 @@ table > tr {
  ****************/
 
 img.hig-icons-example {
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
     display: inline-block;
     margin: 2em auto;
     width: 100%;
