@@ -728,7 +728,8 @@ button.suggested-action,
 * Input *
 ********/
 
-input:not([type="submit"]):not(.button) {
+input:not([type="submit"]):not(.button),
+select {
     background-clip: padding-box;
     background-color: #fff;
     background-image: linear-gradient(to bottom, #fafafa, #fdfdfd);
@@ -743,8 +744,13 @@ input:not([type="submit"]):not(.button) {
     transition: all 200ms ease-out;
 }
 
-input[type="text"]:not(.button) {
+input[type="text"]:not(.button),
+select {
     padding: 8px;
+}
+
+option {
+    padding: 42px;
 }
 
 input[type="number"] {
@@ -757,7 +763,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input:focus:not([type="submit"]):not(.button) {
+input:focus:not([type="submit"]):not(.button),
+select:focus {
     border-color: rgba(61, 155, 218, 0.8);
     box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
                 0 1px 0 1px rgba(255, 255, 255, 0.3);
@@ -765,39 +772,31 @@ input:focus:not([type="submit"]):not(.button) {
     transition: all 200ms ease-in;
 }
 
+select:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: none;
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
 input:invalid,
-input:focus:invalid {
+input:focus:invalid,
+select:invalid,
+select:focus:invalid {
     color: #c0392b !important;
 }
 
-.button::-webkit-input-placeholder {
-    color: #333;
-}
-
-.button:-moz-placeholder {
-    color: #333;
-}
-
-.button::-moz-placeholder {
-    color: #333;
-}
-
+.button::-webkit-input-placeholder,
+.button:-moz-placeholder,
+.button::-moz-placeholder,
 .button:-ms-input-placeholder {
     color: #333;
 }
 
-input:focus::-webkit-input-placeholder {
-    color: transparent;
-}
-
-input:focus:-moz-placeholder {
-    color: transparent;
-}
-
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-
+input:focus::-webkit-input-placeholder,
+input:focus:-moz-placeholder,
+input:focus::-moz-placeholder,
 input:focus:-ms-input-placeholder {
     color: transparent;
 }
