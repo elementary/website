@@ -121,7 +121,7 @@
     display: inline-block;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 660px) {
     .list--product .list__item {
         flex-direction: row;
         text-align: left;
@@ -227,7 +227,7 @@
 *************************/
 
 .grid--narrow {
-    max-width: 644px;
+    max-width: 740px;
 }
 
 .alert--error {
