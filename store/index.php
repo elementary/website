@@ -103,7 +103,7 @@
 
                     <?php if (count($product['size']) > 1) { ?>
                         <h4 class="label">Size</h4>
-                        <div>
+                        <div class="size-select">
                             <input type="hidden" name="size" value="<?php echo $product['size'][0] ?>">
                             <?php
                                 foreach ($product['size'] as $i => $value) {

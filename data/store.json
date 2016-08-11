@@ -6,13 +6,6 @@
         "type": "Apparel",
         "variants": [
             {
-                "id": 64,
-                "name": "XS Logotype Men's",
-                "size": "XS",
-                "color": "Teal",
-                "cost": 14.85,
-                "price": 25.00
-            }, {
                 "id": 126,
                 "name": "S Logotype Men's",
                 "size": "S",
@@ -47,13 +40,6 @@
                 "color": "Teal",
                 "cost": 16.35,
                 "price": 26.00
-            }, {
-                "id": 436,
-                "name": "3XL Logotype Men's",
-                "size": "3XL",
-                "color": "Teal",
-                "cost": 17.85,
-                "price": 27.00
             }
         ],
         "files": [

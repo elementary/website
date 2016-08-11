@@ -56,6 +56,14 @@
     margin-top: 24px;
 }
 
+.size-select {
+    display: flex;
+}
+
+.size-select button {
+    flex: 1 1 100%;
+}
+
 .modal--product .grid {
     padding: 0;
     padding-bottom: 12px;
