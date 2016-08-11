@@ -1,55 +1,55 @@
 [
     {
-        "name": "Logotype T-Shirt Mens",
-        "description": "A super awesome store tee that you should buy.",
+        "name": "Logotype T-Shirt Men's",
+        "description": "A super awesome store tee that you should buy. <a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
         "image": "\/images\/store\/apparel\/logotype.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 64,
-                "name": "XS Logotype Mens",
+                "name": "XS Logotype Men's",
                 "size": "XS",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 126,
-                "name": "S Logotype Mens",
+                "name": "S Logotype Men's",
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 188,
-                "name": "M Logotype Mens",
+                "name": "M Logotype Men's",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 250,
-                "name": "L Logotype Mens",
+                "name": "L Logotype Men's",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 312,
-                "name": "XL Logotype Mens",
+                "name": "XL Logotype Men's",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 374,
-                "name": "2XL Logotype Mens",
+                "name": "2XL Logotype Men's",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
                 "price": 26.00
             }, {
                 "id": 436,
-                "name": "3XL Logotype Mens",
+                "name": "3XL Logotype Men's",
                 "size": "3XL",
                 "color": "Teal",
                 "cost": 17.85,
@@ -63,42 +63,42 @@
         ]
     },
     {
-        "name": "Logotype T-Shirt Womens",
-        "description": "A super awesome store tee that you should buy.",
+        "name": "Logotype T-Shirt Women's",
+        "description": "A super awesome store tee that you should buy. <a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
         "image": "\/images\/store\/apparel\/logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 127,
-                "name": "S Logotype Womans",
+                "name": "S Logotype Women's",
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 189,
-                "name": "M Logotype Womans",
+                "name": "M Logotype Women's",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 251,
-                "name": "L Logotype Womans",
+                "name": "L Logotype Women's",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 313,
-                "name": "XL Logotype Womans",
+                "name": "XL Logotype Women's",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 375,
-                "name": "2XL Logotype Womans",
+                "name": "2XL Logotype Women's",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
