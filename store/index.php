@@ -103,11 +103,15 @@
 
                     <?php if (count($product['size']) > 1) { ?>
                         <h4 class="label">Size</h4>
-                        <select name="size">
-                            <?php foreach ($product['size'] as $value) { ?>
-                                <option value="<?php echo $value ?>"><?php echo $value ?></option>
+                        <div>
+                            <input type="hidden" name="size" value="<?php echo $product['size'][0] ?>">
+                            <?php
+                                foreach ($product['size'] as $i => $value) {
+                                    $o = ($i === 0) ? 'checked' : '';
+                            ?>
+                                <button type="button" value="<?php echo $value ?>"  class="small-button target-amount <?php echo $o ?>"><?php echo $value ?></button>
                             <?php } ?>
-                        </select>
+                        </div>
                     <?php } ?>
 
                     <h4 class="label">Quantity</h4>

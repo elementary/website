@@ -61,6 +61,10 @@
     padding-bottom: 12px;
 }
 
+.modal--product > .grid > .half {
+    min-width: 220px;
+}
+
 .modal--product .label {
     margin-top: 24px;
 }
