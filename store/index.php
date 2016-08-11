@@ -1,11 +1,14 @@
 <?php
     include __DIR__.'/../_templates/sitewide.php';
+
+    require_once __DIR__.'/../backend/config.loader.php';
+    require_once __DIR__.'/../backend/store/product.php';
+
     $page['title'] = 'Store &sdot; elementary';
     $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+
     include $template['header'];
     include $template['alert'];
-
-    require_once __DIR__.'/../backend/store/product.php';
 
     $products = \Store\Product\get_products();
 
@@ -17,7 +20,26 @@
             $categories[$product['type']][] = $product;
         }
     }
+
+    if (getenv('PHPENV') !== 'production' && (
+        !isset($config['printful_key']) ||
+        !isset($config['google_map_key']) ||
+        $config['printful_key'] === 'printful_key' ||
+        $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    )) {
 ?>
+    <div class="row alert warning">
+        <div class="column alert">
+            <div class="icon">
+                <i class="warning fa fa-warning"></i>
+            </div>
+            <div class="icon-text">
+                <h3>You are missing API keys</h3>
+                <p>You are viewing a developmental version of the store without configuring api keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
+            </div>
+        </div>
+    </div>
+<?php } ?>
 
 <script>
     jQl.loadjQdep('scripts/jQuery.leanModal2.js')
