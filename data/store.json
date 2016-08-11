@@ -63,9 +63,9 @@
         ]
     },
     {
-        "name": "Logotype T-Shirt Womans",
+        "name": "Logotype T-Shirt Womens",
         "description": "A super awesome store tee that you should buy.",
-        "image": "\/images\/store\/apparel\/logotype.png",
+        "image": "\/images\/store\/apparel\/logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
