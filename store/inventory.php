@@ -48,5 +48,5 @@ if ($res === false) {
 } else if ($s) {
     echo 'OK';
 } else {
-    header("Location: /store/");
+    header("Location: /store/cart");
 }

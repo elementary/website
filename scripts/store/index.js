@@ -74,36 +74,3 @@ $('.modal--product form[action$="inventory"] select').on('change', function (e) 
     $('.alert--error', $f).text('Unable to find variant')
     $('input[type="submit"]', $f).prop('disabled', true)
 })
-
-/**
- * Intercepts product form so we don't refresh the page every addition to cart
- */
-
-$('.modal--product form[action$="inventory"]').on('submit', function (e) {
-    e.preventDefault()
-
-    var $f = $(this)
-    var $m = $f.closest('.modal')
-
-    $.post($f.attr('action'), $f.serialize() + '&simple=true')
-    .done(function (data, status) {
-        if (data !== 'OK') {
-            $('.alert--error', $f).text('Unable to add to cart')
-            console.error('Error while adding item to cart')
-            console.error(data)
-            return
-        }
-
-        $('.alert--error', $f).text('')
-        console.log('Added item to cart')
-
-        $f.find('input[name="quantity"]').val('1')
-        $m.find('.close-modal').click()
-    })
-    .fail(function (err) {
-        $('.alert--error', $f).text('Error adding cart')
-        console.error('Error adding an item to cart')
-        console.error(err.responseText)
-        return
-    })
-})
