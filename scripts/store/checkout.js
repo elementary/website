@@ -24,18 +24,21 @@ if (typeof stripeKey !== 'string') {
  */
 var updateTotal = function (s) {
     var $subtotal = $('input[name="cart-subtotal"]')
+    var $rat = $('input[name="cart-tax-rate"]')
     var $tax = $('input[name="cart-tax"]')
     var $shipping = $('input[name="cart-shipping"]')
     var $total = $('input[name="cart-total"]')
 
     var sub = parseFloat($subtotal.val())
-    var tax = parseFloat($tax.val())
     var shi = parseFloat(s)
+    var tax = parseFloat($rat.val() * (sub + shi))
     var tot = (sub + tax + shi)
 
+    $tax.val(tax)
     $shipping.val(shi)
     $total.val(tot)
 
+    $('#cart-tax').html('Tax: $' + tax.toFixed(2))
     $('#cart-shipping').html('Shipping: $' + shi.toFixed(2))
     $('#cart-total').html('Total: $' + tot.toFixed(2))
 }

@@ -124,26 +124,32 @@ function get_shipping (\Store\Address\Address $s, array $i) {
 }
 
 /**
- * get_tax
- * Returns the tax price for a given address and subtotal
+ * get_tax_rate
+ * Returns the tax rate for a given address
  *
- * @param |Store\Address\Address $s shipping address
- * @param Number                 $t the cart sub total
+ * @param \Store\Address\Address $s shipping address
  *
- * @return Number the amount of tax
+ * @return Number the tax rate
  */
-function get_tax (\Store\Address\Address $s, float $i) {
-    if ($i <= 0 || !$s->get_taxable()) {
-        return 0;
-    }
-
+function get_tax_rate (\Store\Address\Address $s) {
     $res = do_request('POST', 'tax/rates', array(
         'recipient' => $s->get_shipping()
     ));
 
-    if (!isset($res['rate'])) {
-        return 0;
-    }
+    return (float) $res['rate'];
+}
 
-    return number_format(((float) $res['rate']) * $i, 2);
+/**
+ * get_tax
+ * Returns the tax price for a given address and subtotal
+ *
+ * @param |Store\Address\Address $s shipping address
+ * @param Number                 $t the cart sub total and shipping
+ *
+ * @return Number the amount of tax
+ */
+function get_tax (\Store\Address\Address $s, float $i) {
+    $rate = get_tax_rate($s);
+
+    return number_format($rate * $i, 2);
 }

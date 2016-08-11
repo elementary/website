@@ -51,17 +51,18 @@
     }
 
     try {
-        $tax = \Store\Api\get_tax($address, $subtotal);
-    } catch (Exception $e) {
-        return err('Unable to get tax rates');
-    }
-
-    try {
         $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
         $shipping_default = $shipping[0];
     } catch (Exception $e) {
         error_log($e);
         return err('Unable to get shipping rates');
+    }
+
+    try {
+        $tax_rate = \Store\Api\get_tax_rate($address);
+        $tax = \Store\Api\get_tax($address, $subtotal + $shipping_default['cost']);
+    } catch (Exception $e) {
+        return err('Unable to get tax rates');
     }
 
     $total = number_format($subtotal + $tax + $shipping_default['cost'], 2);
@@ -116,13 +117,14 @@
 
             <div class="list__footer">
                 <input type="hidden" name="cart-subtotal" value="<?php echo $subtotal ?>">
+                <input type="hidden" name="cart-tax-rate" value="<?php echo $tax_rate ?>">
                 <input type="hidden" name="cart-tax" value="<?php echo $tax ?>">
                 <input type="hidden" name="cart-shipping" value="<?php echo $shipping_default['cost'] ?>">
                 <input type="hidden" name="cart-total" value="<?php echo $total ?>">
 
                 <h4 id='cart-subtotal'>Sub-Total: $<?php echo $subtotal ?></h4>
                 <?php if ($tax !== 0) { ?>
-                <h4>Tax: $<?php echo $tax ?></h4>
+                <h4 id='cart-tax'>Tax: $<?php echo $tax ?></h4>
                 <?php } ?>
                 <h4 id='cart-shipping'>Shipping: $<?php echo $shipping_default['cost'] ?></h4>
                 <hr>

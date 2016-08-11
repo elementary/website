@@ -77,12 +77,6 @@
     }
 
     try {
-        $tax = \Store\Api\get_tax($address, $subtotal);
-    } catch (Exception $e) {
-        return res('Unable to get tax rates');
-    }
-
-    try {
         $shipping_res = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
 
         $shipping = null;
@@ -100,7 +94,13 @@
         return res('Unable to get shipping rate');
     }
 
-    $total = number_format($subtotal + $shipping['cost'], 2);
+    try {
+        $tax = \Store\Api\get_tax($address, $subtotal + $shipping['cost']);
+    } catch (Exception $e) {
+        return err('Unable to get tax rates');
+    }
+
+    $total = number_format($subtotal + $tax + $shipping['cost'], 2);
 
     try {
         if (
@@ -189,9 +189,8 @@
             );
         }
 
-        // NOTE: remove the 4th argument for production
-        $order = \Store\Api\do_request('POST', 'orders', $res, $p = array(
-            'confirm' => false
+        $order = \Store\Api\do_request('POST', 'orders', $req, array(
+            'confirm' => true
         ));
     } catch (Exception $e) {
         try {
