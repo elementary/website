@@ -8,7 +8,7 @@ const COUNTRY_FILE = __DIR__ . '/../../data/country.json';
 
 /**
  * do_save
- * Saves array to store list
+ * Grabs all country information from COUNTRY_FILE
  *
  * @param Array $i list of products
  */
@@ -18,7 +18,7 @@ function do_save (array $i) {
 
 /**
  * do_open
- * Returns the saved list of products
+ * Saves array to COUNTRY_FILE json
  *
  * @return Array list of products
  */
@@ -283,6 +283,7 @@ class Address {
     /**
      * get_formatted
      * Returns an array of human readable address label
+     * TODO: this can be localized
      *
      * @return Array each value as a line in a human readable label
      */
