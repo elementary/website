@@ -28,12 +28,14 @@
             foreach ($cart as $index => $item) {
                 $product = $item['product'];
                 $variant = $item['variant'];
+                $id = explode('-', $index)
         ?>
 
             <div class="list__item" id="product-<?php echo $index ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <div class="list__info">
                     <b><?php echo $variant['name'] ?></b>
+                    <span><a href="/store/inventory?math=set&quantity=0&id=<?php echo $id[0] ?>&variant=<?php echo $id[1] ?>">Remove</a></span>
                 </div>
                 <div class="list__detail">
                     <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $index ?>">

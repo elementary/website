@@ -30,7 +30,7 @@
 
 .modal--product {
     max-height: 90vh;
-        padding: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -139,6 +139,11 @@ i.fa.fa-close.close-modal {
 .list--product .list__info {
     flex: 1 1 auto;
     padding: 16px 0;
+}
+
+.list--product .list__info > * {
+    display: block;
+    padding: 4px 0;
 }
 
 .list--product .list__detail input {
