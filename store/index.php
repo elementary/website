@@ -120,7 +120,7 @@
 
                 <span class="alert--error"></span>
 
-                <input type="submit" class="button suggested-action" value="Add to Cart">
+                <input type="submit" class="button small-button suggested-action" value="Add to Cart">
             </form>
         </div>
     </div>

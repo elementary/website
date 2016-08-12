@@ -30,11 +30,11 @@
 
 .modal--product {
     max-height: 90vh;
+        padding: 0;
 }
 
 @media (max-width: 768px) {
     .modal--product {
-        padding: 0;
         width: calc(100vw - 32px);
     }
 }
@@ -80,7 +80,7 @@
 
 @media (min-width: 768px) {
     .modal--product .grid {
-        padding-bottom: 12px;
+        padding-bottom: 16px;
     }
 }
 
