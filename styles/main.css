@@ -898,13 +898,13 @@ input:focus:-ms-input-placeholder {
 
 .modal {
     background-color: #f5f5f5;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
                 inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
                 inset 0 1px 0 0 #fff,
-                0 0 0 1px rgba(0, 0, 0, 0.2),
-                0 10px 20px rgba(0, 0, 0, 0.19),
-                0 6px 6px rgba(0, 0, 0, 0.23);
+                0 0 0 1px rgba(0, 0, 0, 0.20),
+                0 10px 20px rgba(0,0,0,0.19),
+                0 6px 6px rgba(0,0,0,0.23);
     max-height: 100vh;
     max-width: 100vw;
     padding: 12px;
