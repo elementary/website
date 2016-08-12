@@ -30,11 +30,11 @@
 
 .modal--product {
     max-height: 90vh;
-    overflow: auto;
 }
 
 @media (max-width: 768px) {
     .modal--product {
+        padding: 0;
         width: calc(100vw - 32px);
     }
 }
@@ -72,8 +72,16 @@
 }
 
 .modal--product .grid {
+    max-height: 90vh;
+    overflow: auto;
     padding: 0;
-    padding-bottom: 12px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .modal--product .grid {
+        padding-bottom: 12px;
+    }
 }
 
 .modal--product > .grid > .half {
@@ -82,6 +90,21 @@
 
 .modal--product .label {
     margin-top: 24px;
+}
+
+i.fa.fa-close.close-modal {
+    background-color: rgba(30,30,30,0.9);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #fff;
+    height: 32px;
+    left: -10px;
+    padding: 8px;
+    position: fixed;
+    text-align: center;
+    top: -10px;
+    width: 32px;
+    z-index: 999;
 }
 
 /***********************
