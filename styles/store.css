@@ -33,6 +33,12 @@
     overflow: auto;
 }
 
+@media (max-width: 768px) {
+    .modal--product {
+        width: calc(100vw - 32px);
+    }
+}
+
 .modal--product h2,
 .modal--product h4 {
     text-align: left;
