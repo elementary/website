@@ -217,11 +217,12 @@ class Address {
             throw new \ValidationException('Phone number is not set');
         }
 
-        if (!preg_match("/^[\+0-9\-\# ]{7,}$/i", $in)) {
+        if (!preg_match("/^[\+0-9\-\#\(\) ]{7,}$/i", $in)) {
             throw new \ValidationException('Phone number is not valid');
         }
 
-        $this->phone = htmlspecialchars($in, ENT_XML1, 'UTF-8');
+
+        $this->phone = preg_replace('!\D+!', '', $in);
     }
 
     // Getter functions
