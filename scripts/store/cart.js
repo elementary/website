@@ -90,6 +90,7 @@ $('.list--product .list__item input[name$="quantity"]').on('change', function (e
 $('form[action$="checkout"] select[name="country"]').on('change', function (e) {
     var value = $(this).val()
     var $state = $(this).siblings('select[name="state"]')
+    var $statelabel = $(this).siblings('label[for="state"]')
 
     if (country[value] != null && typeof country[value]['states'] === 'object') {
         $state.empty()
@@ -102,7 +103,9 @@ $('form[action$="checkout"] select[name="country"]').on('change', function (e) {
 
         $state.append(options.join(''))
         $state.attr('hidden', false).attr('required', true)
+        $statelabel.attr('hidden', false).attr('required', true)
     } else {
         $state.attr('hidden', true).attr('required', false)
+        $statelabel.attr('hidden', true).attr('required', false)
     }
 })

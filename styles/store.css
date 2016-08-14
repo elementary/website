@@ -185,6 +185,7 @@ i.fa.fa-close.close-modal {
 
 .grid--address > *:not(:last-of-type) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
 }
@@ -194,6 +195,17 @@ i.fa.fa-close.close-modal {
     margin: 6px;
     min-width: 100px;
     padding: 8px;
+}
+
+.grid--address > *:not(:last-of-type) > label {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 6px;
+    opacity: 0.65;
+    padding: 0 6px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .grid--address input[autocomplete="address-level1"] {

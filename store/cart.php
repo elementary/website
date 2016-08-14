@@ -66,21 +66,21 @@
 
     <div class="whole grid grid--address">
         <div>
-            <input type="text" name="name" placeholder="Name" autocomplete="name" required>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Ellie Mendez" autocomplete="name" required>
         </div>
         <div>
+            <label>Address</label>
             <input type="text" name="address1" placeholder="Street Address, P.O. Box, Company Name" autocomplete="shipping address-line1" required>
         </div>
         <div>
+            <label>Address 2</label>
             <input type="text" name="address2" placeholder="Apartment, Suite, Unit, Building, Floor" autocomplete="shipping address-line2">
         </div>
         <div>
-            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
-            <select name="state" autocomplete="address-level1" required>
-                <?php foreach (\Store\Address\get_states('US') as $code => $item) { ?>
-                    <option value="<?php echo $code ?>"><?php echo $item ?></option>
-                <?php } ?>
-            </select>
+            <label>City</label>
+            <input type="text" name="city" placeholder="Anytown" autocomplete="address-level2" required>
+            <label>Country</label>
             <select name="country" autocomplete="country" required>
                 <?php
                     foreach (\Store\Address\get_countries() as $code => $item) {
@@ -89,11 +89,20 @@
                     <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
                 <?php } ?>
             </select>
-            <input type="number" name="postal" placeholder="Postal Code" autocomplete="postal-code">
+            <label for="state">State</label>
+            <select name="state" autocomplete="address-level1" required>
+                <?php foreach (\Store\Address\get_states('US') as $code => $item) { ?>
+                    <option value="<?php echo $code ?>"><?php echo $item ?></option>
+                <?php } ?>
+            </select>
+            <label>Postal Code</label>
+            <input type="number" name="postal" placeholder="12345" autocomplete="postal-code">
         </div>
         <div>
-            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
-            <input type="tel" name="phone" placeholder="Phone" autocomplete="tel">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="elliemendez@example.com" autocomplete="email" required>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="1 867 5309" autocomplete="tel">
         </div>
 
         <?php if (isset($_GET['error'])) { ?>
