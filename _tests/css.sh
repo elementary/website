@@ -8,8 +8,6 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-npm install csscomb
-
 ./node_modules/.bin/csscomb styles/*.css
 
 if ! git diff --quiet styles/; then

@@ -1,0 +1,22 @@
+{
+  "name": "mvp",
+  "version": "0.4.0",
+  "description": "The elementary.io Website http://elementary.io",
+  "devDependencies": {
+    "csscomb": "^3.1.7",
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementary/mvp.git"
+  },
+  "author": "elementary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elementary/mvp/issues"
+  },
+  "homepage": "https://github.com/elementary/mvp#readme"
+}
