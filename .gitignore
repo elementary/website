@@ -2,5 +2,6 @@
 *.custom.*
 *~
 backend/chart.json
+data/_average_payments.db
 backend/config.php
 node_modules/
