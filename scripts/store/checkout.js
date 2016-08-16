@@ -34,9 +34,9 @@ var updateTotal = function (s) {
     var tax = parseFloat($rat.val() * (sub + shi))
     var tot = (sub + tax + shi)
 
-    $tax.val(tax)
-    $shipping.val(shi)
-    $total.val(tot)
+    $tax.val(tax.toFixed(2))
+    $shipping.val(shi.toFixed(2))
+    $total.val(tot.toFixed(2))
 
     $('#cart-tax').html('Tax: $' + tax.toFixed(2))
     $('#cart-shipping').html('Shipping: $' + shi.toFixed(2))
