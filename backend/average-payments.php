@@ -22,6 +22,8 @@ function LastError($db) {
     } else {
         echo 'ERROR: a database error occured';
     }
+
+    exit;
 }
 
 ////    Open database
@@ -31,9 +33,19 @@ if ( $processing ) {
         exit;
     }
 
-    $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
+    try {
+        $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
+    } catch (Exception $e) {
+        echo 'ERROR: unable to create database';
+        exit;
+    }
 } else {
-    $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
+    try {
+        $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
+    } catch (Exception $e) {
+        echo 'ERROR: unable to open database';
+        exit;
+    }
 }
 
 if ( $db->lastErrorCode() ) LastError($db);
