@@ -1,7 +1,7 @@
-/***************************************
-* Copyright 2016 elementary LLC.       *
+/*************************************
+* Copyright 2016 elementary LLC.     *
 * This file is part of elementary.io *
-***************************************/
+*************************************/
 
 html,
 body {
@@ -122,12 +122,10 @@ section:nth-child(even) {
 }
 
 @media (max-width: 1080px) {
-
     .button.flat {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 .actions {
@@ -178,7 +176,6 @@ section:nth-child(even) {
 }
 
 @media (max-width: 985px) {
-
     .charts .doughnuts-ctn {
         margin-left: 0;
     }
@@ -187,11 +184,9 @@ section:nth-child(even) {
         display: inline-block;
         margin: 4px;
     }
-
 }
 
 @media (max-width: 360px) {
-
     .charts .doughnuts-ctn .doughnut {
         height: 70px;
         width: 70px;
@@ -200,7 +195,6 @@ section:nth-child(even) {
     .charts .doughnuts-ctn .doughnut .doughnut-label {
         padding: 4px 0;
     }
-
 }
 
 .doughnut.fixed .doughnut-count {
@@ -306,11 +300,10 @@ section:nth-child(even) {
 }
 
 @media (max-width: 888px) {
-
     .web-browser {
         height: auto;
         margin: 24px 2%;
-        padding: 110px 130px 40px 130px;
+        padding: 110px 130px 40px;
         width: 96%;
     }
 
@@ -318,11 +311,10 @@ section:nth-child(even) {
         margin-bottom: 30px;
         margin-top: 30px;
     }
-
 }
 
 @media (max-width: 600px) {
     .web-browser {
-        padding: 80px 24px 24px 24px;
+        padding: 80px 24px 24px;
     }
 }

@@ -1,7 +1,7 @@
-# Get rid of silly temp files
-*~
+.vagrant/
 *.custom.*
-backend/config.php
+*~
 backend/chart.json
 data/_average_payments.db
-.vagrant/
+backend/config.php
+node_modules/

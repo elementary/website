@@ -5,17 +5,19 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('../fonts/Raleway-thin.woff2') format('woff2'),    /* Super Modern Browsers */
-         url('../fonts/Raleway-thin.woff')  format('woff'),     /* Pretty Modern Browsers */
-         url('../fonts/Raleway-thin.ttf')   format('truetype'); /* Safari, Android, iOS */
+    src:
+        url('../fonts/Raleway-thin.woff2') format('woff2'),
+        url('../fonts/Raleway-thin.woff')  format('woff'),
+        url('../fonts/Raleway-thin.ttf')   format('truetype');
 }
 
 @font-face {
     font-family: 'Raleway';
     font-style: italic;
-    src: url('../fonts/Raleway-thin-italic.woff2') format('woff2'),    /* Super Modern Browsers */
-         url('../fonts/Raleway-thin-italic.woff')  format('woff'),     /* Pretty Modern Browsers */
-         url('../fonts/Raleway-thin-italic.ttf')   format('truetype'); /* Safari, Android, iOS */
+    src:
+        url('../fonts/Raleway-thin-italic.woff2') format('woff2'),
+        url('../fonts/Raleway-thin-italic.woff')  format('woff'),
+        url('../fonts/Raleway-thin-italic.ttf')   format('truetype');
 }
 
 html,
@@ -31,8 +33,8 @@ body {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -60,7 +62,6 @@ h1 {
 }
 
 h1 svg {
-    display: inline;
     height: 45px;
     max-width: 100%;
     position: relative;
@@ -73,17 +74,15 @@ h1 .logotype-svg {
 }
 
 @media (min-width: 966px) {
-
     h1 {
         font-size: 48px;
     }
-
 }
 
 h2 {
     font-size: 32px;
     font-weight: 300;
-    margin: 0 0 16px 0;
+    margin: 0 0 16px;
     padding: 0;
 }
 
@@ -128,17 +127,15 @@ q {
     margin-bottom: 10px;
 }
 
-q:before,
-q:after {
+q::before,
+q::after {
     content: none;
 }
 
 @media (max-width: 414px) {
-
     q {
         font-size: 24px;
     }
-
 }
 
 hr {
@@ -173,8 +170,8 @@ img.inline {
     text-decoration: none;
 }
 
-.inline-tweet:after,
-.inline-tweet:after {
+.inline-tweet::after,
+.inline-tweet::after {
     color: inherit;
     content: "";
     font-family: "FontAwesome";
@@ -187,12 +184,12 @@ img.inline {
     transition: all 0.15s ease-in-out;
 }
 
-.inline-tweet:focus:after,
-.inline-tweet:hover:after {
+.inline-tweet:focus::after,
+.inline-tweet:hover::after {
     opacity: 1;
 }
 
-.read-more:after {
+.read-more::after {
     color: inherit;
     content: "";
     font-family: "FontAwesome";
@@ -204,7 +201,7 @@ img.inline {
     transition: padding 0.15s ease-in-out;
 }
 
-.read-more:hover:after {
+.read-more:hover::after {
     padding-left: 10px;
 }
 
@@ -233,18 +230,14 @@ nav {
 }
 
 nav > .nav-content {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 nav > .nav-content > ul {
@@ -310,8 +303,8 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
-@media only screen and (max-width: 520px) { /* this media query is for ie-legacy support */
-
+/* this media query is for ie-legacy support */
+@media only screen and (max-width: 520px) {
     html.ie-legacy nav {
         overflow-x: scroll;
         white-space: nowrap;
@@ -326,7 +319,6 @@ nav .logomark:focus .logomark-svg {
     html.ie-legacy nav > .nav-content > .right {
         float: left;
     }
-
 }
 
 /*********
@@ -365,7 +357,6 @@ footer .popover {
 }
 
 @media (min-width: 375px) {
-
     footer > p,
     footer > .popover {
         float: left;
@@ -374,7 +365,6 @@ footer .popover {
     footer > ul {
         float: right;
     }
-
 }
 
 footer ul li {
@@ -406,7 +396,7 @@ footer ul li a:focus {
 .column {
     display: inline-block;
     max-width: 100%;
-        vertical-align: top;
+    vertical-align: top;
 }
 
 .column.third {
@@ -415,7 +405,6 @@ footer ul li a:focus {
 }
 
 @media (min-width: 444px) {
-
     .row .column.half {
         margin: 32px 32px 0;
         width: calc(50% - 88px);
@@ -429,7 +418,6 @@ footer ul li a:focus {
     .column + .column {
         margin-left: 16px !important;
     }
-
 }
 
 .column.half {
@@ -498,7 +486,6 @@ footer ul li a:focus {
 }
 
 @media only screen and (min-width: 640px) {
-
     .grid .half {
         display: inline-block;
         vertical-align: top;
@@ -530,7 +517,6 @@ footer ul li a:focus {
     .grid *:only-child p {
         text-align: center;
     }
-
 }
 
 .third h3,
@@ -538,13 +524,13 @@ footer ul li a:focus {
     text-align: center;
 }
 
-.third a {
+a.third {
     color: inherit;
 }
 
-.third a:hover {
-    color: #08C;
-    fill: #08C;
+a.third:hover {
+    color: #08c;
+    fill: #08c;
 }
 
 .third .fa {
@@ -597,7 +583,6 @@ footer ul li a:focus {
 }
 
 @media (min-width: 444px) {
-
     .icon {
         position: absolute;
     }
@@ -605,7 +590,6 @@ footer ul li a:focus {
     .icon-text {
         padding-left: 88px;
     }
-
 }
 
 /*********
@@ -620,10 +604,11 @@ button,
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 0 0 rgba(255, 255, 255, 0.15);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 0 0 rgba(255, 255, 255, 0.15);
     color: #333;
     cursor: pointer;
     display: inline-block;
@@ -641,11 +626,12 @@ button,
 button:focus,
 .button:focus {
     border-color: rgba(77, 156, 209, 0.8);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(12, 128, 200, 0.16),
-                0 3px 6px rgba(12, 128, 200, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(12, 128, 200, 0.16),
+        0 3px 6px rgba(12, 128, 200, 0.23);
     text-decoration: none;
 }
 
@@ -657,8 +643,9 @@ button.active,
     background-color: rgba(0, 0, 0, 0.05);
     background-image: none;
     border-color: rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
-                0 1px 0 0 rgba(255, 255, 255, 0.3);
+    box-shadow:
+        inset 0 0 0 1px rgba(0, 0, 0, 0.05),
+        0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
 
 button.suggested-action,
@@ -737,9 +724,10 @@ input[type="number"]:focus {
     background-image: linear-gradient(to bottom, #fafafa, #fdfdfd);
     border: 1px solid rgba(0, 0, 0, 0.22);
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.04),
-                inset 0 0 0 1px rgba(0, 0, 0, 0.02),
-                0 1px 0 1px rgba(255, 255, 255, 0.3);
+    box-shadow:
+        inset 0 1px 0 0 rgba(0, 0, 0, 0.04),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.02),
+        0 1px 0 1px rgba(255, 255, 255, 0.3);
     color: #323232;
     outline: 0;
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
@@ -763,8 +751,9 @@ input::-webkit-inner-spin-button {
 input[type="text"]:focus,
 input[type="number"]:focus {
     border-color: rgba(61, 155, 218, 0.8);
-    box-shadow: inset 0 0 0 1px rgba(61, 155, 218, 0.23),
-                0 1px 0 1px rgba(255, 255, 255, 0.3);
+    box-shadow:
+        inset 0 0 0 1px rgba(61, 155, 218, 0.23),
+        0 1px 0 1px rgba(255, 255, 255, 0.3);
     outline: none;
     transition: all 200ms ease-in;
 }
@@ -904,12 +893,13 @@ input:focus:-ms-input-placeholder {
 .modal {
     background-color: #f5f5f5;
     border-radius: 3px;
-    box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
-                inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
-                inset 0 1px 0 0 #fff,
-                0 0 0 1px rgba(0, 0, 0, 0.2),
-                0 10px 20px rgba(0, 0, 0, 0.19),
-                0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow:
+        inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
+        inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 0 #fff,
+        0 0 0 1px rgba(0, 0, 0, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
     max-height: 100vh;
     max-width: 100vw;
     padding: 12px;
@@ -959,7 +949,6 @@ i.fa.fa-close.close-modal {
 .slide.active,
 .slide.next,
 .slide.previous {
-    float: left;
     left: 0;
     position: absolute;
     right: 0;
@@ -969,25 +958,19 @@ i.fa.fa-close.close-modal {
 .slide.active {
     filter: alpha(opacity=100);
     opacity: 1;
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 .slide.next {
     filter: alpha(opacity=0);
     opacity: 0;
-    -webkit-transform: translateX(200%);
-        -ms-transform: translateX(200%);
-            transform: translateX(200%);
+    transform: translateX(200%);
 }
 
 .slide.previous {
     filter: alpha(opacity=0);
     opacity: 0;
-    -webkit-transform: translateX(-200%);
-        -ms-transform: translateX(-200%);
-            transform: translateX(-200%);
+    transform: translateX(-200%);
 }
 
 .float-left {
@@ -1026,8 +1009,8 @@ i.fa.fa-close.close-modal {
     z-index: 2;
 }
 
-.popover .popover-content:before,
-.popover .popover-content:after {
+.popover .popover-content::before,
+.popover .popover-content::after {
     border: 10px outset transparent;
     content: "";
     display: block;
@@ -1038,12 +1021,12 @@ i.fa.fa-close.close-modal {
     width: 0;
 }
 
-.popover .popover-content:before {
+.popover .popover-content::before {
     border-top: 10px solid rgba(0, 0, 0, 0.2);
     bottom: -20px;
 }
 
-.popover .popover-content:after {
+.popover .popover-content::after {
     border-top: 10px solid white;
     bottom: -18px;
 }
@@ -1068,19 +1051,15 @@ i.fa.fa-close.close-modal {
 }
 
 @media (max-height: 700px) {
-
     .popover .popover-content ul {
         max-height: 300px;
     }
-
 }
 
 @media (max-height: 450px) {
-
     .popover .popover-content ul {
         max-height: 200px;
     }
-
 }
 
 .popover .popover-content ul li {

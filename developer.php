@@ -9,12 +9,12 @@
     require_once __DIR__.'/backend/classify.current.php';
 ?>
 
-<script>var release_title = 'Loki';</script>
-<script>var release_version = '0.4-beta2';</script>
-<script>var download_region = '<?php echo $region; ?>';</script>
+<script>var releaseTitle = 'Loki'</script>
+<script>var releaseVersion = '0.4-beta2'</script>
+<script>var downloadRegion = '<?php echo $region; ?>'</script>
 <script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-    jQl.loadjQdep('scripts/developer.js');
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
+    jQl.loadjQdep('scripts/developer.js')
 </script>
 
 <section class="hero dark">
@@ -30,21 +30,21 @@
 <?php include $template['alert']; ?>
 
 <section class="grid">
-    <div class="third"><a href="docs/code/getting-started">
+    <a class="third" href="docs/code/getting-started">
         <i class="fa fa-book"></i>
         <h3>Documentation</h3>
         <p>Get a basic app running, built, and ready for distribution with our Getting Started guide.</p>
-    </a></div>
-    <div class="third"><a href="docs/human-interface-guidelines">
+    </a>
+    <a class="third" href="docs/human-interface-guidelines">
         <i class="fa fa-pencil"></i>
         <h3>Design</h3>
         <p>Learn about the design principles that make up apps on elementary OS.</p>
-    </a></div>
-    <div class="third"><a href="docs/code/reference">
+    </a>
+    <a class="third" href="docs/code/reference">
         <i class="fa  fa-code"></i>
         <h3>Reference</h3>
         <p>Get more info about code style, reporting issues, and proposing design changes.</p>
-    </a></div>
+    </a>
 </section>
 <div class="grid">
     <hr/>
