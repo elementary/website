@@ -8,7 +8,7 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-./node_modules/.bin/csscomb _styles/*.css
+./node_modules/.bin/postcss --config .postcss.json
 
 if ! git diff --quiet styles/; then
     git --no-pager diff _styles/
