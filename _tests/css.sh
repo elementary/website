@@ -8,10 +8,10 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-./node_modules/.bin/csscomb styles/*.css
+./node_modules/.bin/csscomb _styles/*.css
 
 if ! git diff --quiet styles/; then
-    git --no-pager diff styles/
+    git --no-pager diff _styles/
 
     echo "##############################################################"
     echo "CSS linting detected an error. Please use csscomb and resubmit"

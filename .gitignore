@@ -1,6 +1,8 @@
-.vagrant/
 *.custom.*
 *~
-backend/chart.json
-backend/config.php
-node_modules/
+*.log
+/.vagrant/
+/backend/chart.json
+/backend/config.php
+/node_modules
+/styles
