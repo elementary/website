@@ -85,6 +85,33 @@ $(function () {
         }
     }
 
+    function detectOS () {
+        var ua = window.navigator.userAgent
+
+        if (ua.indexOf('Android') >= 0) {
+            return 'Android'
+        }
+
+        if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
+            return 'iOS'
+        }
+
+        if (ua.indexOf('Windows') >= 0) {
+            return 'Windows'
+        }
+
+        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
+            return 'OS X'
+        }
+
+        if (ua.indexOf('Linux') >= 0) {
+            return 'Linux'
+        }
+
+        return 'Other'
+    }
+    var detectedOS = detectOS()
+
     function doStripePayment (amount) {
         StripeCheckout.open({
             key: stripeKey,
@@ -121,7 +148,9 @@ $(function () {
         paymentHttp.send('description=' + encodeURIComponent(releaseTitle + ' ' + releaseVersion) +
                      '&amount=' + amount +
                      '&token=' + token.id +
-                     '&email=' + encodeURIComponent(token.email))
+                     '&email=' + encodeURIComponent(token.email) +
+                     '&os=' + detectedOS
+        )
     }
 
     function openDownloadOverlay () {
@@ -136,32 +165,6 @@ $(function () {
         })
 
         $openModal.click()
-    }
-
-    function detectOS () {
-        var ua = window.navigator.userAgent
-
-        if (ua.indexOf('Android') >= 0) {
-            return 'Android'
-        }
-
-        if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
-            return 'iOS'
-        }
-
-        if (ua.indexOf('Windows') >= 0) {
-            return 'Windows'
-        }
-
-        if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'OS X'
-        }
-
-        if (ua.indexOf('Linux') >= 0) {
-            return 'Linux'
-        }
-
-        return 'Other'
     }
 
     if (window.ga) {
@@ -179,7 +182,7 @@ $(function () {
                 $(link).click(function () {
                     ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', data.arch)
                     ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', data.method)
-                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectOS())
+                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
                     ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
                 })
             })(linksData[i], downloadLinks[i])
