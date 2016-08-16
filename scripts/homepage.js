@@ -148,8 +148,9 @@ $(function () {
         paymentHttp.send('description=' + encodeURIComponent(releaseTitle + ' ' + releaseVersion) +
                      '&amount=' + amount +
                      '&token=' + token.id +
-                     '&email=' + encodeURIComponent(token.email)) +
+                     '&email=' + encodeURIComponent(token.email) +
                      '&os=' + detectedOS
+        )
     }
 
     function openDownloadOverlay () {
