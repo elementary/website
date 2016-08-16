@@ -1,5 +1,5 @@
 #!/bin/sh
-# Runs csscomb on all css files
+# Runs postcss on all css files
 # Requires nvm installed and project as git directory
 
 set -e
