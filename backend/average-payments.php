@@ -81,7 +81,7 @@ if ( $processing ) {
 
     $toJSON = array();
     while ($row = $results->fetchArray()) {
-        $toJSON[$row['OS']] = $row;
+        $toJSON[$row['OS']] = $row['Average'];
     }
     $db->close();
 
