@@ -74,7 +74,16 @@ $(function () {
     function stripeLanguage () {
         var stripeLanguages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
         var languageCode = $('html').prop('lang')
-	}
+
+        // Stripe supports simplified chinese
+        if (/^zh_CN/.test(languageCode)) {
+            return 'zh'
+        }
+
+        if (stripeLanguages.indexOf(languageCode) !== -1) {
+            return languageCode
+        }
+    }
 
     function detectOS () {
         var ua = window.navigator.userAgent
@@ -101,7 +110,7 @@ $(function () {
 
         return 'Other'
     }
-    var detectedOS = detectOS();
+    var detectedOS = detectOS()
 
     function doStripePayment (amount) {
         StripeCheckout.open({
@@ -132,7 +141,7 @@ $(function () {
             $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
             updateDownloadButton()
         }
-		
+
         var paymentHttp = new XMLHttpRequest()
         paymentHttp.open('POST', './backend/payment.php', true)
         paymentHttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
@@ -141,7 +150,6 @@ $(function () {
                      '&token=' + token.id +
                      '&email=' + encodeURIComponent(token.email)) +
                      '&os=' + detectedOS
-					 
     }
 
     function openDownloadOverlay () {
