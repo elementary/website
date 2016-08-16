@@ -183,37 +183,23 @@ i.fa.fa-close.close-modal {
 * Shipping Grid *
 ****************/
 
-.grid--address > *:not(:last-of-type) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-.grid--address > *:not(:last-of-type) > * {
-    flex: 1 1 auto;
+.grid--address input,
+.grid--address select {
     margin: 6px;
     min-width: 100px;
     padding: 8px;
+    width: 100%;
 }
 
-.grid--address > *:not(:last-of-type) > label {
+.grid--address label {
+    display: block;
     font-size: 12px;
     font-weight: 600;
-    margin: 0;
-    margin-top: 6px;
+    margin: 6px 0 0;
     opacity: 0.65;
     padding: 0 6px;
     text-align: left;
     text-transform: uppercase;
-}
-
-.grid--address input[autocomplete="address-level1"] {
-    flex: 1 1 2ch;
-}
-
-.grid--address input[autocomplete="postal-code"] {
-    flex: 1 1 5ch;
 }
 
 /*****************************

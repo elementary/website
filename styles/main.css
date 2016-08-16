@@ -765,6 +765,11 @@ input:focus:not([type="submit"]):not(.button) {
     transition: all 200ms ease-in;
 }
 
+select:focus {
+    border-color: rgba(61, 155, 218, 0.8);
+    transition: all 200ms ease-in;
+}
+
 input:invalid,
 input:focus:invalid,
 select:invalid,
