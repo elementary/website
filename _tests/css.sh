@@ -10,7 +10,7 @@ echo "####################"
 
 ./node_modules/.bin/postcss --config .postcss.json
 
-if ! git diff --quiet styles/; then
+if ! git diff --quiet _styles/; then
     git --no-pager diff _styles/
 
     echo "##############################################################"

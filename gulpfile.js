@@ -4,9 +4,16 @@
  */
 
 const gulp = require('gulp')
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
+
+const postcssConfig = require('./.postcss.json')
 
 gulp.task('styles', () => {
     gulp.src('_styles/*.css')
+        .pipe(postcss([
+            autoprefixer(postcssConfig['autoprefixer'])
+        ]))
         .pipe(gulp.dest('styles'))
 })
 
