@@ -1,7 +1,7 @@
-/***************************************
-* Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
-***************************************/
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
 
 h1 {
     clear: both;
@@ -65,7 +65,6 @@ a.column h3 {
 }
 
 @media (min-width: 600px) {
-
     .row.apps .app {
         text-align: center;
         width: 192px;
@@ -81,10 +80,9 @@ a.column h3 {
         margin-right: auto;
         vertical-align: middle;
     }
-
 }
 
 .row.apps .app span {
     line-height: 24px;
-    padding: 16px 12px 0 12px;
+    padding: 16px 12px 0;
 }

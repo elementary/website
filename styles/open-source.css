@@ -1,7 +1,7 @@
-/***************************************
-* Copyright 2016 elementary LLC.       *
+/*************************************
+* Copyright 2016 elementary LLC.     *
 * This file is part of elementary.io *
-***************************************/
+*************************************/
 
 /*******************
 * Open Source Page *
@@ -38,10 +38,11 @@ hr.dotted {
 .sub-item {
     background-color: #fff;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05));
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 2px 0 rgba(0, 0, 0, 0.15);
     font-size: 14px;
     font-weight: 600;
     margin: 3px;
@@ -69,11 +70,12 @@ hr.dotted {
 
 #gnome .sub-item:focus {
     border-color: #7a36b1;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(122, 54, 177, 0.16),
-                0 3px 6px rgba(122, 54, 177, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(122, 54, 177, 0.16),
+        0 3px 6px rgba(122, 54, 177, 0.23);
 }
 
 #gnu .sub-item {
@@ -82,11 +84,12 @@ hr.dotted {
 
 #gnu .sub-item:focus {
     border-color: #485a6c;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(72, 90, 108, 0.16),
-                0 3px 6px rgba(72, 90, 108, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(72, 90, 108, 0.16),
+        0 3px 6px rgba(72, 90, 108, 0.23);
 }
 
 #gtk .sub-item {
@@ -95,11 +98,12 @@ hr.dotted {
 
 #gtk .sub-item:focus {
     border-color: #68b723;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(29, 126, 13, 0.16),
-                0 3px 6px rgba(29, 126, 13, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(29, 126, 13, 0.16),
+        0 3px 6px rgba(29, 126, 13, 0.23);
 }
 
 #linux .sub-item {
@@ -108,11 +112,12 @@ hr.dotted {
 
 #linux .sub-item:focus {
     border-color: #e4c01f;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(228, 139, 32, 0.16),
-                0 3px 6px rgba(228, 139, 32, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(228, 139, 32, 0.16),
+        0 3px 6px rgba(228, 139, 32, 0.23);
 }
 
 #ubuntu .sub-item,
@@ -123,11 +128,12 @@ hr.dotted {
 #ubuntu .sub-item:focus,
 #xorg .sub-item:focus {
     border-color: #f37329;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-                inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-                0 3px 6px rgba(243, 115, 41, 0.16),
-                0 3px 6px rgba(243, 115, 41, 0.23);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(243, 115, 41, 0.16),
+        0 3px 6px rgba(243, 115, 41, 0.23);
 }
 
 .oss-logo {
@@ -202,6 +208,5 @@ hr.dotted {
     .platform-item.third {
         margin: 6px 12px;
         width: calc(100% - 24px);
-    }
     }
 }
