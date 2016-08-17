@@ -3,6 +3,21 @@
 * This file is part of elementary.io *
 *************************************/
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-thin.woff2') format('woff2'),    /* Super Modern Browsers */
+         url('../fonts/Raleway-thin.woff')  format('woff'),     /* Pretty Modern Browsers */
+         url('../fonts/Raleway-thin.ttf')   format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    src: url('../fonts/Raleway-thin-italic.woff2') format('woff2'),    /* Super Modern Browsers */
+         url('../fonts/Raleway-thin-italic.woff')  format('woff'),     /* Pretty Modern Browsers */
+         url('../fonts/Raleway-thin-italic.ttf')   format('truetype'); /* Safari, Android, iOS */
+}
+
 html,
 body {
     background-color: #fff;
@@ -508,11 +523,11 @@ footer ul li a:focus {
     text-align: center;
 }
 
-.third a {
+a.third {
     color: inherit;
 }
 
-.third a:hover {
+a.third:hover {
     color: #08C;
     fill: #08C;
 }
