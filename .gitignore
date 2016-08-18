@@ -4,5 +4,6 @@
 /.vagrant/
 /backend/chart.json
 /backend/config.php
-/node_modules
-/styles
+/data/_average_payments.db
+/node_modules/
+/styles/
