@@ -101,14 +101,14 @@
 
         <div style="width:auto;">
             
-<h2 style="font-weight:300;font-size:30px;line-height:40px;">Your Order #PF1098494 has been sent out!</h2>
+<h2 style="font-weight:300;font-size:30px;line-height:40px;">Your Order #{{order.id}} has been sent out!</h2>
 
 <p style="font-weight:300;font-size:15px;color:#222222;line-height:20px;">
     <strong>Hey there,</strong>
 </p>
 
 <p style="font-weight:300;font-size:15px;color:#222222;line-height:20px;">
-    Just letting you know that your order #PF1098494 has been sent out!
+    Just letting you know that your order #{{order.id}} has been sent out!
 </p>
 
 <p style="font-weight:300;font-size:15px;color:#222222;line-height:20px;margin-bottom:5px;">
@@ -116,8 +116,8 @@
 </p>
 
 <p style="background-color:#f8f8f8;margin-top:0;margin-bottom:0;padding:20px;font-weight:100;font-size:30px;color:#222222;line-height:30px;">
-    9400110897700072490282<br>
-    <a href="https://tools.usps.com/go/TrackConfirmAction!input.action?tLabels=9400110897700072490282" style="outline:0;font-weight:300;font-size:18px;color: #08c;line-height:30px;text-decoration:none;">(USPS First Class Mail)</a>
+    {{data.shipment.tracking_number}}<br>
+    <a href="{{data.shipment.tracking_url}}" style="outline:0;font-weight:300;font-size:18px;color: #08c;line-height:30px;text-decoration:none;">({{data.shipment.carrier}} {{data.shipment.service}})</a>
 </p>
 
 <p style="margin-top:10px;font-weight:300;font-style:italic;font-size:15px;color:#222222;line-height:20px;">
@@ -126,7 +126,7 @@
 
 
 <p style="font-weight:300;font-size:15px;color:#222222;line-height:20px;">
-    Estimated delivery Aug 22nd, 2016 to Aug 24th, 2016</p>
+    Estimated delivery {{data.shipment.ship_date}}</p>
 
 <p style="font-weight:300;font-size:15px;color:#222222;line-height:20px;">
     Here's what we shipped in this order:
@@ -136,28 +136,28 @@
     <tbody>
         <tr>
             <td width="25%" valign="top" style="padding-top:10px;padding-bottom:10px;">
-                <img src="https://d1yg28hrivmbqm.cloudfront.net/files/6aa/6aa7c59b099906c64a9983a3b5377080_thumb.png" width="100%" alt="" style="background-color:#f0f0f0;">
+                <img src="{{data.order.items.name}}" width="100%" alt="" style="background-color:#f0f0f0;">
             </td>
 
             <td width="75%" valign="top" colspan="3" style="padding-bottom:10px;">
                 <p style="padding-left:20px;font-weight:300;font-size:13px;color:#222222;line-height:20px;">
-                    M Logotype Men's<br />American Apparel<br />2001 Fine Jersey Short Sleeve Men T-Shirt
+                    {{data.order.items.name}}<br />
                 </p>
             </td>
         </tr>
 
         <tr>
             <td width="25%" style="border-bottom:1px solid #e1e1e1;">
-                <strong>Size</strong>
+                <strong>{{data.order.items.options.id}}</strong>
                 <p style="margin:5px 0 10px 0;font-weight:300;font-size:13px;color:#222222;line-height:20px;">
-                    M
+                    {{data.order.items.options.value}}
                 </p>
             </td>
 
             <td width="25%" style="border-bottom:1px solid #e1e1e1;">
                 <strong>Qty</strong>
                 <p style="margin:5px 0 10px 0;font-weight:300;font-size:13px;color:#222222;line-height:20px;">
-                    1
+                    {{data.order.items.quantity}}
                 </p>
             </td>
 
@@ -171,7 +171,7 @@
             <td width="25%" style="border-bottom:1px solid #e1e1e1;">
                 <strong>Price</strong>
                 <p style="margin:5px 0 10px 0;font-weight:300;font-size:13px;color:#222222;line-height:20px;">
-                    $14.85
+                    {{data.order.items.retail_price}}
                 </p>
             </td>
         </tr>
@@ -183,7 +183,12 @@
         <td valign="top">
             <p style="margin-left:10px;font-weight:300;font-size:15px;color:#222222;line-height:20px;">
                 <strong>Shipping Address:</strong><br />
-                Blake Kostner<br />218 Natoma Ave<br />Apt D<br />Santa Barbra CA 93101<br />United States            </p>
+                {{data.order.recipient.name}}<br />
+                {{data.order.recipient.address1}}<br />
+                {{data.order.recipient.address2}}<br />
+                {{data.order.recipient.city}} {{data.order.recipient.state_code}} {{data.order.recipient.zip}}<br />
+                United States
+            </p>
         </td>
     </tr>
 </table>
