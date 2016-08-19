@@ -7,12 +7,13 @@
 
     $page['scripts'] = array(
         'https://checkout.stripe.com/checkout.js' => array(
-            'async' => false,
             'data-alipay' => 'auto',
             'data-locale' => 'auto'
         ),
         'scripts/slider.js',
-        'scripts/homepage.js'
+        'scripts/homepage.js' => array(
+            'async' => false
+        )
     );
 
     $page['styles'] = array(
