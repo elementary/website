@@ -55,9 +55,9 @@
     <div class="grid grid--product">
         <h2 class="grid__title"><?php echo $category ?></h2>
 
-        <?php foreach ($products as $index => $product) { ?>
+        <?php foreach ($products as $product) { ?>
 
-            <div class="grid__item" id="product-<?php echo $index ?>">
+            <div class="grid__item" id="product-<?php echo $product['id'] ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
@@ -65,7 +65,7 @@
                 <?php } else { ?>
                     <h4>$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <?php } ?>
-                <a style="display:none;" class="open-modal" href="#product-<?php echo $index ?>-overview"></a>
+                <a style="display:none;" class="open-modal" href="#product-<?php echo $product['id'] ?>-overview"></a>
             </div>
 
         <?php } ?>
@@ -74,9 +74,9 @@
 
 <?php } ?>
 
-<?php foreach ($products as $index => $product) { ?>
+<?php foreach ($products as $product) { ?>
 
-    <div id="product-<?php echo $index ?>-overview" class="modal modal--product">
+    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product">
         <i class="fa fa-close close-modal"></i>
         <div class="grid">
             <div class="half">
@@ -87,7 +87,7 @@
                 <h4 class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <p><?php echo $product['description'] ?></p>
 
-                <input type="hidden" name="id" value="<?php echo $index ?>">
+                <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
                 <input type="hidden" name="variant" value="<?php echo $product['variants'][0]['id'] ?>">
                 <input type="hidden" name="math" value="add">
 

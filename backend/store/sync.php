@@ -19,6 +19,10 @@ if (count($products) < 1) {
 }
 
 foreach($products as $index => &$product) {
+    if (!isset($product['id'])) {
+        throw new \Exception('Product does not have an id');
+    }
+
     if (!isset($product['variants']) || count($product['variants']) < 1) {
         throw new \Exception('Product does not contain any variants');
     }

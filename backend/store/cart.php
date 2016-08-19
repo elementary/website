@@ -34,15 +34,17 @@ function get_cart () {
     foreach ($cart as $id => $quantity) {
         list($i, $v) = explode('-', $id, 2);
 
-        if (!isset($products[$i])) continue;
-
-        $key = array_search($v, array_column($products[$i]['variants'], 'id'));
-
+        $key = array_search($i, array_column($products, 'id'));
         if ($key === null) continue;
+        $product = $products[$key];
+
+        $key = array_search($v, array_column($product['variants'], 'id'));
+        if ($key === null) continue;
+        $variant = $product['variants'][$key];
 
         $f[$id] = array(
-            'product' => $products[$i],
-            'variant' => $products[$i]['variants'][$key],
+            'product' => $product,
+            'variant' => $variant,
             'quantity' => intval($quantity)
         );
     }
@@ -97,9 +99,9 @@ function get_shipping () {
  */
 function set_cart (array $c) {
     $f = [];
-    foreach ($c as $id => $item) {
+    foreach ($c as $item) {
         if (isset($item['quantity']) && (int) $item['quantity'] > 0) {
-            $f[$id] = $item['quantity'];
+            $f[$item['product']['id'] . '-' . $item['variant']['id']] = $item['quantity'];
         }
     }
 
@@ -152,22 +154,23 @@ function set_quantity (int $i, int $v, int $q = 1) {
     $cart = get_cart();
     $products = \Store\Product\do_open();
 
-    if (!isset($products[$i])) {
+    $product_key = array_search($i, array_column($products, 'id'));
+    if ($product_key === null) {
         throw new \Exception('Product id does not exist');
     }
+    $product = $products[$product_key];
 
-    $key = array_search($v, array_column($products[$i]['variants'], 'id'));
-
-    if ($key === null) {
+    $variant_key = array_search($v, array_column($product['variants'], 'id'));
+    if ($variant_key === null) {
         throw new \Exception('Variant id does not exist');
-    }
+    };
+    $variant = $product['variants'][$variant_key];
 
-    $id = $i . '-' . $v;
-
+    $id = $product['id'] . '-' . $variant['id'];
     if (!isset($cart[$id])) {
         $cart[$id] = array(
-            'product' => $products[$i],
-            'variant' => $products[$i]['variants'][$key]
+            'product' => $product,
+            'variant' => $variant,
         );
     }
 

@@ -117,7 +117,7 @@ var setValue = function ($f, n, v) {
 var updateInfo = function ($f, t, v) {
     var $id = $f.find('input[name="id"]')
 
-    var id = $id.val()
+    var id = Number($id.val())
     var size = getValue($f, 'size')
     var color = getValue($f, 'color')
 
@@ -129,7 +129,11 @@ var updateInfo = function ($f, t, v) {
         throw new Error('Unable to use updateInfo on anything besides size or color')
     }
 
-    var p = products[id]
+    var p = null
+    for (var pi in products) {
+        if (products[pi]['id'] !== id) continue
+        p = products[pi]
+    }
 
     if (p == null) {
         $('.alert--error', $f).text('Unable to find product')

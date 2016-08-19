@@ -16,6 +16,8 @@ $config = array(
 
     'google_map_key' => 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
 
+    'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
+
     'twitter_consumer_key'    => 'test_ckey',
     'twitter_consumer_secret' => 'test_csecret',
     'twitter_access_token'    => 'test_atoken',
