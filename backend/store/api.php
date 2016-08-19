@@ -23,8 +23,6 @@ require_once __DIR__ . '/address.php';
 function do_request ($r, $u, array $a = array(), array $p = array()) {
     global $config;
 
-    if (!isset($f)) $f = false;
-
     if (!function_exists('json_decode') || !function_exists('json_encode')) {
         throw new \Exception('PHP JSON extension required for the store');
     }
