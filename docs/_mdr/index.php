@@ -57,8 +57,10 @@ if (
         $page['title'] = url_to_title(basename($Request['Source'], '.md'));
 
         // Syntax highlighting
-        $page['scripts'] = '<script src="scripts/highlight.pack.js"></script>';
-        $page['scripts'] .= '<script src="scripts/docs/main.js"></script>';
+        $page['scripts'] = array(
+            'scripts/highlight.pack.js',
+            'scripts/docs/main.js'
+        );
 
         $page['styles'] = array(
             'styles/solarized_light.css',

@@ -6,7 +6,14 @@
         'https://fonts.googleapis.com/css?family=Marck+Script',
         'styles/get-involved.css'
     );
-    $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
+    $page['scripts'] = array(
+        'scripts/Chart.custom.min.js' => array(
+            'async' => false
+        ),
+        'scripts/get-involved.js' => array(
+            'async' => false
+        )
+    );
     include $template['header'];
     include $template['alert'];
 ?>
@@ -202,7 +209,6 @@
     </div>
 </section>
 
-<script src="scripts/get-involved.js"></script>
 <?php
     include $template['footer'];
 ?>

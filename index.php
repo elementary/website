@@ -1,7 +1,19 @@
 <?php
     $page['title'] = 'Purchase elementary OS';
 
-    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
+    $page['script-plugins'] = array(
+        'scripts/jQuery.leanModal2.js'
+    );
+
+    $page['scripts'] = array(
+        'https://checkout.stripe.com/checkout.js' => array(
+            'async' => false,
+            'data-alipay' => 'auto',
+            'data-locale' => 'auto'
+        ),
+        'scripts/slider.js',
+        'scripts/homepage.js'
+    );
 
     $page['styles'] = array(
         'styles/home.css'
@@ -15,15 +27,10 @@
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
-            <script src="scripts/slider.js"></script>
             <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
             <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
             <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
             <script>var downloadRegion = '<?php echo $region; ?>'</script>
-            <script>
-                jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-                jQl.loadjQdep('scripts/homepage.js')
-            </script>
 
             <div class="row">
                 <div id="logotype">
