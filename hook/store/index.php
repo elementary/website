@@ -4,6 +4,12 @@
  * Verifies hook variables and passes data to individual hook files
  */
 
+include __DIR__ . '/../../backend/lib/autoload.php';
+
+require_once __DIR__ . '/../../backend/config.loader.php';
+
+\Stripe\Stripe::setApiKey($config['stripe_sk']);
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST)) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Only POST is supported';
@@ -31,8 +37,14 @@ if (
     die();
 }
 
-// TODO: Check the stripe checkout to make sure we have a _real_ call
-
+// Check the stripe checkout to make sure we have a _real_ call
+try {
+    $ch = \Stripe\Charge::retrieve($res['data']['order']['external_id']);
+} catch (Exception $e) {
+    header('HTTP/1.0 400 Bad Request');
+    echo 'Inaccurate data';
+    die();
+}
 
 // And we finally fire off the hook file we need
 if ($res['type'] === 'package_shipped') {

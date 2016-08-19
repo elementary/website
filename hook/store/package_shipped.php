@@ -115,8 +115,6 @@ $message = array(
     )
 );
 
-var_dump($req);
-
 try {
     $res = $mandrill->messages->sendTemplate('package_shipped', $req, $message);
 
