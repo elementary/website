@@ -1,4 +1,5 @@
 <?php
+
 include_once __DIR__.'/l10n.php';
 
 if (!isset($l10n)) {
@@ -24,15 +25,19 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
+if (!isset($page['styles'])) {
+    $page['styles'] = array();
+}
+
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
+
 <!doctype html>
 <!--[if IE]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie-legacy"><![endif]-->
 <!--[if !IE]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -73,6 +78,10 @@ $l10n->begin_html_translation();
 
         <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
+
+        <?php foreach ($page['styles'] as $style) { ?>
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
+        <?php } ?>
 
         <script>
             (function(d,s,f){g=d.createElement(s),u=d.getElementsByTagName(s)[0],g.async=1,g.src=f,u.parentNode.insertBefore(g,u)})
@@ -123,5 +132,7 @@ $l10n->begin_html_translation();
             </div>
         </nav>
         <div id="content-container">
+
 <?php
+
 $l10n->set_domain($page['name']);

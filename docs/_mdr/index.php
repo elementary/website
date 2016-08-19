@@ -59,9 +59,12 @@ if (
         // Syntax highlighting
         $page['scripts'] = '<script src="scripts/highlight.pack.js"></script>';
         $page['scripts'] .= '<script src="scripts/docs/main.js"></script>';
-        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_light.css">';
-        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/solarized_dark_bash.css">';
-        $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/docs.css">';
+
+        $page['styles'] = array(
+            'styles/solarized_light.css',
+            'styles/solarized_dark_bash.css',
+            'styles/docs.css'
+        );
 
         $page['theme-color'] = '#403757';
 

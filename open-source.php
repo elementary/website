@@ -1,7 +1,9 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Open Source &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/open-source.css">';
+    $page['styles'] = array(
+        'styles/open-source.css'
+    );
     include $template['header'];
     include $template['alert'];
 ?>
