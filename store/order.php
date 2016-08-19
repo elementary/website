@@ -160,6 +160,7 @@
 
     try {
         $req = array(
+            'external_id' => $charge->id,
             'shipping' => $shipping['id'],
             'recipient' => array(
                 'name' => $address->get_name(),
