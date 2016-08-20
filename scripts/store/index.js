@@ -4,10 +4,13 @@
  */
 
 $('document').ready(function () {
-    if (typeof products === 'undefined' || products.length === 0) {
+    var products = []
+
+    if (typeof window.products !== 'undefined') {
+        products = window.products
+    } else if (products.length === 0) {
         console.error('Unable to find store data')
 
-        var products = null
         $.getJSON('data/store.json', function (data) {
             console.log('Was able to fetch store data manually')
 

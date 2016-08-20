@@ -5,10 +5,13 @@
  */
 
 $(document).ready(function () {
-    if (typeof stripeKey !== 'string') {
+    var stripeKey = null
+
+    if (typeof window.stripeKey !== 'undefined') {
+        stripeKey = window.stripeKey
+    } else if (stripeKey == null) {
         console.error('Unable to find stripe key on page')
 
-        var stripeKey = null
         $.getJSON('backend/payment.php', function (data) {
             console.log('Was able to fetch stripe key manually')
 

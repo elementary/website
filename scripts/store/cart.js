@@ -4,10 +4,13 @@
  */
 
 $(document).ready(function () {
-    if (typeof country === 'undefined' || country.length === 0) {
+    var country = {}
+
+    if (typeof window.country !== 'undefined') {
+        country = window.country
+    } else if (Object.keys(country).length === 0) {
         console.error('Unable to find country data')
 
-        var country = null
         $.getJSON('data/country.json', function (data) {
             console.log('Was able to fetch country data manually')
 

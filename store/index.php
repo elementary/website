@@ -15,7 +15,9 @@
     );
 
     $page['scripts'] = array(
-        'scripts/store/index.js',
+        'scripts/store/index.js' => array(
+            'async' => false
+        ),
     );
 
     include $template['header'];
@@ -133,7 +135,7 @@
 
 <?php } ?>
 
-<script>var products = <?php echo json_encode($products) ?></script>
+<script>window.products = <?php echo json_encode($products) ?></script>
 
 <?php
     include $template['footer'];

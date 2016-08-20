@@ -114,7 +114,7 @@
     </div>
 </form>
 
-<script>var country = <?php echo json_encode(\Store\Address\do_open()) ?></script>
+<script>window.country = <?php echo json_encode(\Store\Address\do_open()) ?></script>
 
 <?php } else { ?>
 
