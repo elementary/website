@@ -21,11 +21,15 @@ $('document').ready(function () {
     /**
      * Opens product modal on image click
      */
-    $('.grid--product .grid__item img').on('click', function (e) {
+    $('.grid--product .grid__item *').on('click', function (e) {
         if (e.target !== this) return
+
+        var $item = $(this).closest('.grid__item')
+        if ($item.attr('id').indexOf('product') === -1) return
+
         e.preventDefault()
 
-        var $trigger = $(this).closest('.grid__item').find('.open-modal')
+        var $trigger = $item.find('.open-modal')
 
         $trigger.leanModal({
             top: '5vh',
