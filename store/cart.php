@@ -94,7 +94,7 @@
             <?php } ?>
         </select>
         <label>Postal Code</label>
-        <input type="number" name="postal" placeholder="12345" autocomplete="postal-code">
+        <input type="text" name="postal" placeholder="12345" autocomplete="postal-code">
         <label>Email</label>
         <input type="email" name="email" placeholder="elliemendez@example.com" autocomplete="email" required>
         <label>Phone</label>

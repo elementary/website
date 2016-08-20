@@ -191,12 +191,8 @@ class Address {
             throw new \ValidationException('Postal code is not set');
         }
 
-        if (!is_string($in) && !is_int($in)) {
-            throw new \ValidationException($m);
-        }
-
-        if (!preg_match("/^[0-9\- ]{4,}$/i", $in)) {
-            throw new \ValidationException($m);
+        if (!is_string($in) || !is_int($in)) {
+            throw new \ValidationException('Postal code is not valid');
         }
 
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
