@@ -13,7 +13,7 @@ if (
 
 <div class="countdown-wrapper">
     <div class="countdown"></div>
-    <a class="read-more" href="#">Click to Continue</a>
+    <a class="read-more" href="#">Continue</a>
 </div>
 
 <link rel="stylesheet" type="text/css" media="all" href="styles/countdown.css">
@@ -27,7 +27,9 @@ if (
 
         $('.read-more').click(function () {
             $('.countdown-wrapper').hide()
-            document.cookie = 'countdown=false; expires=' + releaseDate.toUTCString()
+            var expireDate = new Date()
+            expireDate.setDate(expireDate.getDate() + 1)
+            document.cookie = 'countdown=false; expires=' + expireDate.toUTCString()
         })
     })
 </script>
