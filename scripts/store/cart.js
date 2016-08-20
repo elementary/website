@@ -106,11 +106,11 @@ $(document).ready(function () {
             })
 
             $state.append(options.join(''))
-            $state.attr('hidden', false).attr('required', true)
-            $statelabel.attr('hidden', false).attr('required', true)
+            $state.show().attr('required', true)
+            $statelabel.show().attr('required', true)
         } else {
-            $state.attr('hidden', true).attr('required', false)
-            $statelabel.attr('hidden', true).attr('required', false)
+            $state.hide().attr('required', false)
+            $statelabel.hide().attr('required', false)
         }
     })
 })
