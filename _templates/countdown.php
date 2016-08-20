@@ -2,8 +2,10 @@
 
 $l10n->set_domain('layout');
 
+$releaseDate = new DateTime('2017-01-01 22:00:00');
+
 if (
-    (isset($sitewide['releaseDate']) && new DateTime() < $sitewide['releaseDate']) &&
+    (new DateTime() < $releaseDate) &&
     (!isset($_COOKIE['countdown']) || $_COOKIE['countdown'] === true)
 ) {
 
@@ -17,7 +19,7 @@ if (
 <link rel="stylesheet" type="text/css" media="all" href="styles/countdown.css">
 <script>
     $('document').ready(function () {
-        var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($sitewide['releaseDate'])) ?>')
+        var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($releaseDate)) ?>')
 
         var clock = $('.countdown').FlipClock(releaseDate, {
             countdown: true
