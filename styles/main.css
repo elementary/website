@@ -286,7 +286,7 @@ nav a:focus {
 
 nav a:hover,
 nav a:visited:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 nav .logomark {
