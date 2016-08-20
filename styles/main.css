@@ -222,14 +222,20 @@ img.inline {
 *********/
 
 nav {
-    line-height: 56px;
-    min-height: 56px;
+    line-height: 48px;
+    min-height: 48px;
     min-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
 }
 
-nav > .nav-content {
+@media (max-width: 768px) {
+    nav {
+        font-size: 14px;
+    }
+}
+
+.nav-content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -240,62 +246,52 @@ nav > .nav-content {
     justify-content: space-between;
 }
 
-nav > .nav-content > ul {
+html.ie-legacy .nav-content {
+    min-width: 430px;
+}
+
+html.ie-legacy .nav-content > ul.right {
+    float: right;
+}
+
+nav ul {
     display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav > .nav-content > ul:first-child {
+nav ul:first-child {
     -webkit-flex: 0 0 auto;
 }
 
-html.ie-legacy nav > .nav-content {
-    min-width: 550px;
-}
-
-html.ie-legacy nav > .nav-content > ul.right {
-    float: right;
-}
-
-nav > .nav-content > ul > li {
+nav li {
     display: inline-block;
-    margin: 0 10px;
 }
 
-nav > .nav-content > ul > li > a,
-nav > .nav-content > ul > li > a:visited {
+nav a,
+nav a:visited {
     color: inherit;
     display: inline-block;
     fill: inherit;
     margin: 0;
-    opacity: 0.8;
-    padding: 0 6px;
+    padding: 0 16px;
 }
 
-nav > .nav-content > ul > li > a:focus {
+nav a:focus {
     color: #08c;
     fill: #08c;
     text-decoration: none;
 }
 
-nav > .nav-content > ul > li > a:hover,
-nav > .nav-content > ul > li > a:visited:hover {
-    opacity: 1;
+nav a:hover,
+nav a:visited:hover {
+    opacity: 0.7;
 }
 
 nav .logomark {
-    height: 32px;
-    line-height: 32px;
-    margin: 0;
-    padding: 0;
+    line-height: 14px;
     vertical-align: middle;
-    width: 32px;
-}
-
-nav > .nav-content > ul > li > .logomark {
-    padding: 0;
 }
 
 nav .logomark .logomark-svg,
@@ -304,19 +300,19 @@ nav .logomark:focus .logomark-svg {
 }
 
 /* this media query is for ie-legacy support */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 430px) {
     html.ie-legacy nav {
         overflow-x: scroll;
         white-space: nowrap;
     }
 
-    html.ie-legacy nav > .nav-content {
+    html.ie-legacy .nav-content {
         overflow: visible;
         white-space: nowrap;
-        width: 550px;
+        width: 430px;
     }
 
-    html.ie-legacy nav > .nav-content > .right {
+    html.ie-legacy .nav-content > .right {
         float: left;
     }
 }
