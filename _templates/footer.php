@@ -53,6 +53,8 @@ $l10n->set_domain('layout');
             </div>
         <![endif]-->
 
+        <?php include __DIR__ . '/countdown.php'; ?>
+
     </body>
 </html>
 <?php

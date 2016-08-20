@@ -82,6 +82,7 @@ $l10n->begin_html_translation();
         <script>
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
             jQl.loadjQ('//cdn.jsdelivr.net/g/jquery')
+            jQl.loadjQdep("https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js")
             jQl.boot()
             <?php include __DIR__.'/../scripts/popover.js'; ?>
             <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>

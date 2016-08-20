@@ -52,7 +52,9 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
-$template['countdown'] = __DIR__.'/countdown.php';
 $template['header'] = __DIR__.'/header.php';
 $template['alert'] = __DIR__.'/alert.php';
 $template['footer'] = __DIR__.'/footer.php';
+
+// Variables related to releasing new awesomesause
+$sitewide['releaseDate'] = new DateTime('2017-01-01 22:00:00');
