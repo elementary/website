@@ -685,7 +685,7 @@ button.suggested-action,
 #logotype {
     height: 66px;
     margin: 16px auto;
-    max-width: 80%;
+    max-width: 100%;
     position: relative;
     width: 454px;
 }
