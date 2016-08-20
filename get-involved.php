@@ -2,9 +2,18 @@
     include '_templates/sitewide.php';
     $page['title'] = 'Get Involved with elementary OS';
     $page['theme-color'] = '#3E4E54';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Marck+Script">';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/get-involved.css">';
-    $page['scripts'] .= '<script src="scripts/Chart.custom.min.js"></script>';
+    $page['styles'] = array(
+        'https://fonts.googleapis.com/css?family=Marck+Script',
+        'styles/get-involved.css'
+    );
+    $page['scripts'] = array(
+        'scripts/Chart.custom.min.js' => array(
+            'async' => false
+        ),
+        'scripts/get-involved.js' => array(
+            'async' => false
+        )
+    );
     include $template['header'];
     include $template['alert'];
 ?>
@@ -200,7 +209,6 @@
     </div>
 </section>
 
-<script src="scripts/get-involved.js"></script>
 <?php
     include $template['footer'];
 ?>

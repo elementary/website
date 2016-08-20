@@ -1,22 +1,37 @@
 <?php
     $page['title'] = 'Purchase elementary OS';
-    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
+
+    $page['script-plugins'] = array(
+        'scripts/jQuery.leanModal2.js'
+    );
+
+    $page['scripts'] = array(
+        'https://checkout.stripe.com/checkout.js' => array(
+            'data-alipay' => 'auto',
+            'data-locale' => 'auto'
+        ),
+        'scripts/slider.js',
+        'scripts/homepage.js' => array(
+            'async' => false
+        )
+    );
+
+    $page['styles'] = array(
+        'styles/home.css'
+    );
+
     include __DIR__.'/_templates/sitewide.php';
+
     include $template['header'];
     include $template['alert'];
+
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
-            <script src="scripts/slider.js"></script>
             <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
             <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
             <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
             <script>var downloadRegion = '<?php echo $region; ?>'</script>
-            <script>
-                jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-                jQl.loadjQdep('scripts/homepage.js')
-            </script>
 
         <section class="grid">
             <div class="whole">
