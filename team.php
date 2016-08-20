@@ -2,8 +2,9 @@
     include '_templates/sitewide.php';
     $page['description'] = 'Meet the people behind elementary.';
     $page['title'] = 'Team &sdot; elementary';
-    // $page['theme-color'] = '#226BB3';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/team.css">';
+    $page['styles'] = array(
+        'styles/team.css'
+    );
     include $template['header'];
     include $template['alert'];
     require_once __DIR__.'/backend/config.loader.php';

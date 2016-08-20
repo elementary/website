@@ -1,7 +1,9 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Brand &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/brand.css">';
+    $page['styles'] = array(
+        'styles/brand.css'
+    );
     include $template['header'];
     include $template['alert'];
 ?>

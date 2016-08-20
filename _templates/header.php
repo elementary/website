@@ -1,4 +1,5 @@
 <?php
+
 include_once __DIR__.'/l10n.php';
 
 if (!isset($l10n)) {
@@ -24,15 +25,19 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
+if (!isset($page['styles'])) $page['styles'] = array();
+if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
+if (!isset($page['scripts'])) $page['scripts'] = array();
+
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
 ?>
+
 <!doctype html>
 <!--[if IE]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie-legacy"><![endif]-->
 <!--[if !IE]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -71,32 +76,18 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
-        <script>
-            (function(d,s,f){g=d.createElement(s),u=d.getElementsByTagName(s)[0],g.async=1,g.src=f,u.parentNode.insertBefore(g,u)})
-            (document,'script','https:<?php echo $sitewide['branch_root']; ?>backend/hsts.php')
-        </script>
+        <?php foreach ($page['styles'] as $style) { ?>
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
+        <?php } ?>
 
-        <script>
-            <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('//cdn.jsdelivr.net/g/jquery')
-            jQl.boot()
-            <?php include __DIR__.'/../scripts/popover.js'; ?>
-            <?php include __DIR__.'/../scripts/smooth-scrolling.js'; ?>
-            <?php include __DIR__.'/../scripts/twitter-links.js'; ?>
-            <?php include __DIR__.'/../scripts/external-links.js'; ?>
-        </script>
-
-        <?php echo !empty($page['scripts']) ? $page['scripts'] : false; ?>
-
+        <script async src="https:<?php echo $sitewide['branch_root'] ?>backend/hsts.php"></script>
         <?php if ( $trackme ) { ?>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-19280770-1', 'auto')
             ga('set', 'forceSSL', true)
             ga('set', 'anonymizeIp', true)
@@ -106,9 +97,43 @@ $l10n->begin_html_translation();
         </script>
         <?php } ?>
 
+        <script>
+            <?php include __DIR__.'/../scripts/jql.min.js'; ?>
+            jQl.loadjQ('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+            <?php foreach ($page['script-plugins'] as $script) { ?>
+            jQl.loadjQdep("<?php echo $script ?>")
+            <?php } ?>
+            jQl.boot()
+        </script>
+
+        <script src="scripts/popover.js" async></script>
+        <script src="scripts/smooth-scrolling.js" async></script>
+        <script src="scripts/twitter-links.js" async></script>
+        <script src="scripts/external-links.js" async></script>
+        <?php
+            // loads all async javascript tags here
+            foreach ($page['scripts'] as $one => $two) {
+                $src = (!is_string($one)) ? $two : $one;
+                $atr = (is_array($two)) ? $two : array();
+
+                if (!isset($atr['async'])) $atr['async'] = true;
+                if (!$atr['async']) continue;
+
+                $atr_string = "";
+                foreach ($atr as $name => $setting) {
+                    if (is_bool($setting) && $setting === true) {
+                        $atr_string .= ' ' . $name;
+                    } else if (!is_bool($setting)) {
+                        $atr_string .= ' ' . $name . '="' . $setting . '"';
+                    }
+                }
+        ?>
+        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+        <?php } ?>
+
     </head>
     <body class="page-<?php echo $page['name']; ?>">
-        <nav class="nav">
+        <nav>
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
@@ -126,5 +151,7 @@ $l10n->begin_html_translation();
             </div>
         </nav>
         <div id="content-container">
+
 <?php
+
 $l10n->set_domain($page['name']);
