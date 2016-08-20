@@ -20,7 +20,10 @@
         include __DIR__ . '/../_templates/sitewide.php';
 
         $page['title'] = 'Checkout &sdot; elementary';
-        $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+
+        $page['styles'] = array(
+            'styles/store.css'
+        );
 
         include $template['header'];
         include $template['alert'];

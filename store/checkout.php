@@ -68,15 +68,27 @@
     $total = number_format($subtotal + $tax + $shipping_default['cost'], 2);
 
     $page['title'] = 'Checkout &sdot; elementary';
-    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+
+    $page['styles'] = array(
+        'styles/store.css'
+    );
+
+    $page['scripts'] = array(
+        'https://checkout.stripe.com/checkout.js' => array(
+            'data-alipay' => 'auto',
+            'data-locale' => 'auto'
+        ),
+        'scripts/store/checkout.js' => array(
+            'async' => false
+        )
+    );
+
     include $template['header'];
     include $template['alert'];
 ?>
 
 <script>
     var stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'
-    jQl.loadjQdep('scripts/store/checkout.js')
 </script>
 
 <form action="/store/order" method="post" class="grid grid--narrow">

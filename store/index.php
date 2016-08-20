@@ -5,7 +5,18 @@
     require_once __DIR__.'/../backend/store/product.php';
 
     $page['title'] = 'Store &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+
+    $page['styles'] = array(
+        'styles/store.css'
+    );
+
+    $page['script-plugins'] = array(
+        'scripts/jQuery.leanModal2.js'
+    );
+
+    $page['scripts'] = array(
+        'scripts/store/index.js',
+    );
 
     include $template['header'];
     include $template['alert'];
@@ -40,11 +51,6 @@
         </div>
     </div>
 <?php } ?>
-
-<script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-    jQl.loadjQdep('scripts/store/index.js')
-</script>
 
 <div class="row">
     <h1>Store</h1>

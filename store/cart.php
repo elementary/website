@@ -1,7 +1,16 @@
 <?php
     include __DIR__.'/../_templates/sitewide.php';
+
     $page['title'] = 'Cart &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/store.css">';
+
+    $page['styles'] = array(
+        'styles/store.css'
+    );
+
+    $page['scripts'] = array(
+        'scripts/store/cart.js'
+    );
+
     include $template['header'];
     include $template['alert'];
 
@@ -12,10 +21,6 @@
 
     if (count($cart) > 0) {
 ?>
-
-<script>
-    jQl.loadjQdep('scripts/store/cart.js')
-</script>
 
 <form action="/store/checkout" method="post" class="grid grid--narrow">
     <div class="whole">
