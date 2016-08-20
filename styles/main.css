@@ -247,7 +247,7 @@ nav {
 }
 
 html.ie-legacy .nav-content {
-    min-width: 550px;
+    min-width: 430px;
 }
 
 html.ie-legacy .nav-content > ul.right {
@@ -300,7 +300,7 @@ nav .logomark:focus .logomark-svg {
 }
 
 /* this media query is for ie-legacy support */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 430px) {
     html.ie-legacy nav {
         overflow-x: scroll;
         white-space: nowrap;
@@ -309,7 +309,7 @@ nav .logomark:focus .logomark-svg {
     html.ie-legacy .nav-content {
         overflow: visible;
         white-space: nowrap;
-        width: 550px;
+        width: 430px;
     }
 
     html.ie-legacy .nav-content > .right {
