@@ -191,7 +191,7 @@ class Address {
             throw new \ValidationException('Postal code is not set');
         }
 
-        if (!is_string($in) || !is_int($in)) {
+        if (!is_string($in) && !is_int($in)) {
             throw new \ValidationException('Postal code is not valid');
         }
 
