@@ -2,7 +2,8 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'scripts/jQuery.leanModal2.js'
+        'scripts/jQuery.leanModal2.js',
+        'scripts/slider.js'
     );
 
     $page['scripts'] = array(
@@ -10,7 +11,6 @@
             'data-alipay' => 'auto',
             'data-locale' => 'auto'
         ),
-        'scripts/slider.js',
         'scripts/homepage.js' => array(
             'async' => false
         )
