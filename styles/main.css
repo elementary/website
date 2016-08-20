@@ -222,12 +222,17 @@ img.inline {
 *********/
 
 nav {
-    font-size: 14px;
     line-height: 48px;
     min-height: 48px;
     min-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 14px;
+    }
 }
 
 .nav-content {
