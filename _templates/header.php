@@ -133,7 +133,7 @@ $l10n->begin_html_translation();
 
     </head>
     <body class="page-<?php echo $page['name']; ?>">
-        <nav class="nav">
+        <nav>
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
