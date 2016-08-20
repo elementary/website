@@ -60,8 +60,9 @@ try {
         }
 
         $cart[] = array(
-            'product' => $product,
-            'variant' => $variant,
+            'image' => $product['image'],
+            'name' => $variant['name'],
+            'price' => $variant['price'],
             'quantity' => intval($item['quantity'])
         );
     }
@@ -77,22 +78,37 @@ try {
 
 $req = array(
     array(
-        'name' => 'shipment',
-        'content' => $res['data']['shipment']
-    ),
-    array(
-        'name' => 'order',
-        'content' => $res['data']['order']
-    ),
-    array(
         'name' => 'address',
         'content' => $address->get_formatted()
     ),
     array(
-        'name' => 'items',
+        'name' => 'cart',
         'content' => $cart
+    ),
+    array(
+        'name' => 'ship_date',
+        'content' => $res['data']['shipment']['ship_date']
     )
 );
+
+if (isset($res['data']['shipment']['tracking_number'])) {
+    $req[] = array(
+        'name' => 'tracking_number',
+        'content' => $res['data']['shipment']['tracking_number']
+    );
+    $req[] = array(
+        'name' => 'tracking_url',
+        'content' => $res['data']['shipment']['tracking_url']
+    );
+    $req[] = array(
+        'name' => 'carrier',
+        'content' => $res['data']['shipment']['carrier']
+    );
+    $req[] = array(
+        'name' => 'service',
+        'content' => $res['data']['shipment']['service']
+    );
+}
 
 $message = array(
     'subject' => 'Package Shipped',
@@ -112,7 +128,9 @@ $message = array(
     'tags' => array(
         'store',
         'package'
-    )
+    ),
+    'global_merge_vars' => $req, // the regular template data is not working
+    'merge_language' => 'handlebars'
 );
 
 try {
