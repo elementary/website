@@ -143,8 +143,8 @@ class Address {
     public function set_city ($in) {
         \validate_string($in);
 
-        if (!preg_match("/^[a-z0-9 ]{3,}$/i", $in)) {
-            throw new \ValidationException('City is not valid');
+        if (strlen($in) < 3) {
+            throw new \ValidationException('City needs to be greater than 2 charactors');
         }
 
         $this->city = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
@@ -191,10 +191,6 @@ class Address {
             throw new \ValidationException('Postal code is not set');
         }
 
-        if (!is_string($in) && !is_int($in)) {
-            throw new \ValidationException('Postal code is not valid');
-        }
-
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
@@ -216,7 +212,6 @@ class Address {
         if (!preg_match("/^[\+0-9\-\#\(\) ]{7,}$/i", $in)) {
             throw new \ValidationException('Phone number is not valid');
         }
-
 
         $this->phone = preg_replace('!\D+!', '', $in);
     }
