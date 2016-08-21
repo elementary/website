@@ -2,6 +2,8 @@
 
 namespace Store\Cart;
 
+require_once __DIR__ . '/../_templates/sitewide.php';
+
 require_once __DIR__ . '/../backend/store/cart.php';
 
 $cart = get_cart();
@@ -48,5 +50,5 @@ if ($res === false) {
 } else if ($s) {
     echo 'OK';
 } else {
-    header("Location: /store/cart");
+    header("Location: /" . $page['lang-root'] . "store/cart");
 }

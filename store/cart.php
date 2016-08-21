@@ -120,7 +120,7 @@
 
 <div class="grid">
     <h3>You have no items in your cart</h3>
-    <a href="store/">Pick up some swag</a>
+    <a href="<?php echo $page['lang-root']; ?>store/">Pick up some swag</a>
 </div>
 
 <?php

@@ -1,6 +1,8 @@
 <?php
     include __DIR__ . '/../backend/lib/autoload.php';
 
+    require_once __DIR__ . '/../_templates/sitewide.php';
+
     require_once __DIR__ . '/../backend/config.loader.php';
     require_once __DIR__ . '/../backend/store/api.php';
     require_once __DIR__ . '/../backend/store/cart.php';
@@ -31,7 +33,7 @@
         echo "
             <div class=\"row\">
                 <h3>" . $m . "</h3>
-                <a href=\"" . $a . "\">" . $b . "</a>
+                <a href=\"/" . $page['lang-root'] . $a . "\">" . $b . "</a>
             </div>
         ";
 
@@ -43,7 +45,7 @@
      * Start checking all incoming variables
      */
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        header("Location: /store/");
+        header("Location: /" . $page['lang-root'] . "store/");
         return;
     }
 
