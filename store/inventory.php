@@ -50,5 +50,5 @@ if ($res === false) {
 } else if ($s) {
     echo 'OK';
 } else {
-    header("Location: " . $sitewide['root'] . $page['lang-root'] . "store/cart");
+    header("Location: " . $sitewide['root'] . "store/cart");
 }

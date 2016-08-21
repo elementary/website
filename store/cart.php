@@ -22,7 +22,7 @@
     if (count($cart) > 0) {
 ?>
 
-<form action="<?php echo $page['lang-root']; ?>store/checkout" method="post" class="grid grid--narrow">
+<form action="<?php echo $sitewide['root'] ?>store/checkout" method="post" class="grid grid--narrow">
     <div class="whole">
         <h1>Cart</h1>
     </div>

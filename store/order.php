@@ -45,7 +45,7 @@
      * Start checking all incoming variables
      */
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        header("Location: " . $sitewide['root'] . $page['lang-root'] . "store/");
+        header("Location: " . $sitewide['root'] . "store/");
         return;
     }
 
