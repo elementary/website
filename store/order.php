@@ -19,8 +19,6 @@
      * @param String $b the button text
      */
     function res ($m = 'Error while checking out', $a = 'store/', $b = 'Return to store') {
-        include __DIR__ . '/../_templates/sitewide.php';
-
         $page['title'] = 'Checkout &sdot; elementary';
 
         $page['styles'] = array(

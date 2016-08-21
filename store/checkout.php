@@ -12,7 +12,7 @@
      * @param String $m a message to show on cart
      */
     function err ($m = 'Error while checking out') {
-        header("Location: " . $sitewide['root'] . "store/cart?error=" . urlencode($m));
+        header("Location: /" . $sitewide['root'] . "store/cart?error=" . urlencode($m));
         return;
     }
 
