@@ -33,7 +33,7 @@
         echo "
             <div class=\"row\">
                 <h3>" . $m . "</h3>
-                <a href=\"/" . $page['lang-root'] . $a . "\">" . $b . "</a>
+                <a href=\"" . $a . "\">" . $b . "</a>
             </div>
         ";
 
@@ -45,7 +45,7 @@
      * Start checking all incoming variables
      */
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        header("Location: /" . $page['lang-root'] . "store/");
+        header("Location: " . $sitewide['root'] . $page['lang-root'] . "store/");
         return;
     }
 

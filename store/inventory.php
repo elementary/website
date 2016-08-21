@@ -46,9 +46,9 @@ if ($m === 'add') {
 }
 
 if ($res === false) {
-    echo 'Unable to send cookie';
+    echo 'Unable to set cookie';
 } else if ($s) {
     echo 'OK';
 } else {
-    header("Location: /" . $page['lang-root'] . "store/cart");
+    header("Location: " . $sitewide['root'] . $page['lang-root'] . "store/cart");
 }
