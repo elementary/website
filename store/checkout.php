@@ -89,7 +89,7 @@
 
 <script>window.stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'</script>
 
-<form action="/store/order" method="post" class="grid grid--narrow">
+<form action="store/order" method="post" class="grid grid--narrow">
     <div class="whole">
         <h1>Checkout</h1>
     </div>

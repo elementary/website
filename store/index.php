@@ -90,7 +90,7 @@
             <div class="half">
                 <img src="<?php echo $product['image'] ?>"/>
             </div>
-            <form action="/store/inventory" class="half">
+            <form action="store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
                 <h4 class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <p><?php echo $product['description'] ?></p>

@@ -65,7 +65,7 @@ $(document).ready(function () {
         var quantity = $input.val()
         var $error = $item.find('.alert--error')
 
-        $.get('/store/inventory', {
+        $.get('store/inventory', {
             id: productId,
             variant: variantId,
             quantity: quantity,

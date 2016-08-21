@@ -22,7 +22,7 @@
     if (count($cart) > 0) {
 ?>
 
-<form action="/store/checkout" method="post" class="grid grid--narrow">
+<form action="store/checkout" method="post" class="grid grid--narrow">
     <div class="whole">
         <h1>Cart</h1>
     </div>
@@ -40,7 +40,7 @@
                 <img src="<?php echo $product['image'] ?>"/>
                 <div class="list__info">
                     <b><?php echo $variant['name'] ?></b>
-                    <span><a href="/store/inventory?math=set&quantity=0&id=<?php echo $id[0] ?>&variant=<?php echo $id[1] ?>">Remove</a></span>
+                    <span><a href="store/inventory?math=set&quantity=0&id=<?php echo $id[0] ?>&variant=<?php echo $id[1] ?>">Remove</a></span>
                 </div>
                 <div class="list__detail">
                     <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $index ?>">
@@ -120,7 +120,7 @@
 
 <div class="grid">
     <h3>You have no items in your cart</h3>
-    <a href="/store/">Pick up some swag</a>
+    <a href="store/">Pick up some swag</a>
 </div>
 
 <?php
