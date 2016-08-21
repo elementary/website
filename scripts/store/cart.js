@@ -4,6 +4,7 @@
  */
 
 $(document).ready(function () {
+    var baseUrl = $('base').attr('href')
     var country = {}
 
     if (typeof window.country !== 'undefined') {
@@ -11,7 +12,7 @@ $(document).ready(function () {
     } else if (Object.keys(country).length === 0) {
         console.error('Unable to find country data')
 
-        $.getJSON('data/country.json', function (data) {
+        $.getJSON(baseUrl + 'data/country.json', function (data) {
             console.log('Was able to fetch country data manually')
 
             country = data
@@ -65,7 +66,7 @@ $(document).ready(function () {
         var quantity = $input.val()
         var $error = $item.find('.alert--error')
 
-        $.get('store/inventory', {
+        $.get(baseUrl + 'store/inventory', {
             id: productId,
             variant: variantId,
             quantity: quantity,

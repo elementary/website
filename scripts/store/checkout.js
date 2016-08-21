@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function () {
+    var baseUrl = $('base').attr('href')
     var stripeKey = null
 
     if (typeof window.stripeKey !== 'undefined') {
@@ -12,7 +13,7 @@ $(document).ready(function () {
     } else if (stripeKey == null) {
         console.error('Unable to find stripe key on page')
 
-        $.getJSON('backend/payment.php', function (data) {
+        $.getJSON(baseUrl + 'backend/payment.php', function (data) {
             console.log('Was able to fetch stripe key manually')
 
             stripeKey = data

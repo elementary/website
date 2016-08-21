@@ -4,6 +4,7 @@
  */
 
 $('document').ready(function () {
+    var baseUrl = $('base').attr('href')
     var products = []
 
     if (typeof window.products !== 'undefined') {
@@ -11,7 +12,7 @@ $('document').ready(function () {
     } else if (products.length === 0) {
         console.error('Unable to find store data')
 
-        $.getJSON('data/store.json', function (data) {
+        $.getJSON(baseUrl + 'data/store.json', function (data) {
             console.log('Was able to fetch store data manually')
 
             products = data
