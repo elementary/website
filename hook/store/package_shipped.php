@@ -6,6 +6,8 @@
 
 require_once __DIR__ . '/index.php';
 
+require_once __DIR__ . '/../../_templates/sitewide.php';
+
 require_once __DIR__ . '/../../backend/config.loader.php';
 require_once __DIR__ . '/../../backend/lib/autoload.php';
 require_once __DIR__ . '/../../backend/store/address.php';
@@ -51,12 +53,12 @@ try {
         $variant = $product['variants'][$key];
 
         // add full url to any absolute image paths
-        if (isset($product['image']) && $product['image'][0] === '/') {
-            $product['image'] = 'https://elementary.io' . $product['image'];
+        if (isset($product['image']) && strpos($product['image'][0], 'http') === false) {
+            $product['image'] = 'https:' . $sitewide['branch_root'] . $product['image'];
         }
 
-        if (isset($variant['image']) && $variant['image'][0] === '/') {
-            $variant['image'] = 'https://elementary.io' . $variant['image'];
+        if (isset($variant['image']) && strpos($variant['image'][0], 'http') === false) {
+            $variant['image'] = 'https:' . $sitewide['branch_root'] . $variant['image'];
         }
 
         $cart[] = array(

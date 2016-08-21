@@ -3,7 +3,7 @@
         "id": 5,
         "name": "Logotype T-Shirt Men's",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "\/images\/store\/apparel\/logotype.png",
+        "image": "images\/store\/apparel\/logotype.png",
         "type": "Apparel",
         "variants": [
             {
@@ -53,7 +53,7 @@
         "id": 6,
         "name": "Logotype T-Shirt Women's",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
-        "image": "\/images\/store\/apparel\/logotype_womens.png",
+        "image": "images\/store\/apparel\/logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
