@@ -90,8 +90,51 @@
 <script>window.stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'</script>
 
 <form action="<?php echo $sitewide['root'] ?>store/order" method="post" class="grid grid--narrow">
+
     <div class="whole">
-        <h1>Checkout</h1>
+        <h2>Shipping Options</h2>
+    </div>
+
+    <div class="whole">
+        <table class="list--shipping">
+            <?php
+                foreach ($shipping as $index => $option) {
+                    $sel = ($index === 0) ? 'checked' : '';
+            ?>
+                <tr class="list__item">
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-name' value='<?php echo $option['name'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-expected' value='<?php echo $option['expected'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-cost' value='<?php echo $option['cost'] ?>'>
+
+                    <td class="list__row"><input type='radio' name='shipping' value='<?php echo $option['id'] ?>' <?php echo $sel ?>></td>
+                    <td class="list__row"><?php echo $option['name'] ?></td>
+                    <td class="list__row"><?php echo $option['expected'] ?></td>
+                    <td class="list__row">$<?php echo $option['cost'] ?></td>
+                </tr>
+            <?php } ?>
+        </table>
+    </div>
+
+    <div class="whole">
+        <?php
+            $a = $address->get_string();
+
+            $q = [];
+            $q['key'] = $config['google_map_key'];
+            $q['center'] = $a;
+            $q['markers'] = $a;
+            $q['size'] = '640x320';
+            $q['scale'] = 2;
+            $q['zoom'] = 17;
+            $q = http_build_query($q);
+
+            $url = "https://maps.googleapis.com/maps/api/staticmap?$q";
+
+            $headers = @get_headers($url);
+            if ($headers[0] === 'HTTP/1.0 200 OK') {
+        ?>
+        <img id="shipping-photo" src="<?php echo $url ?>" alt="shipping address">
+        <?php } ?>
     </div>
 
     <div class="whole">
@@ -143,32 +186,6 @@
         </div>
     </div>
 
-    <div class="whole">
-        <h2>Shipping Information</h2>
-    </div>
-
-    <div class="whole">
-        <?php
-            $a = $address->get_string();
-
-            $q = [];
-            $q['key'] = $config['google_map_key'];
-            $q['center'] = $a;
-            $q['markers'] = $a;
-            $q['size'] = '640x320';
-            $q['scale'] = 2;
-            $q['zoom'] = 17;
-            $q = http_build_query($q);
-
-            $url = "https://maps.googleapis.com/maps/api/staticmap?$q";
-
-            $headers = @get_headers($url);
-            if ($headers[0] === 'HTTP/1.0 200 OK') {
-        ?>
-        <img id="shipping-photo" src="<?php echo $url ?>" alt="shipping address">
-        <?php } ?>
-    </div>
-
     <div class="half list--address">
         <input type="hidden" name="address-name" value="<?php echo $address->get_name() ?>">
         <input type="hidden" name="address-line1" value="<?php echo $address->get_line1() ?>">
@@ -191,26 +208,6 @@
         <h5>Estimated delivery:</h5>
         <span class="text--success shipping-expected"><?php echo $shipping_default['expected'] ?></span>
         <span>Items will be shipped by <span class="shipping-name"><?php echo $shipping_default['name'] ?></span></span>
-    </div>
-
-    <div class="whole">
-        <table class="list--shipping">
-            <?php
-                foreach ($shipping as $index => $option) {
-                    $sel = ($index === 0) ? 'checked' : '';
-            ?>
-                <tr class="list__item">
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-name' value='<?php echo $option['name'] ?>'>
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-expected' value='<?php echo $option['expected'] ?>'>
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-cost' value='<?php echo $option['cost'] ?>'>
-
-                    <td class="list__row"><input type='radio' name='shipping' value='<?php echo $option['id'] ?>' <?php echo $sel ?>></td>
-                    <td class="list__row"><?php echo $option['name'] ?></td>
-                    <td class="list__row"><?php echo $option['expected'] ?></td>
-                    <td class="list__row">$<?php echo $option['cost'] ?></td>
-                </tr>
-            <?php } ?>
-        </table>
     </div>
 
     <div class="whole">
