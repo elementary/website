@@ -31,7 +31,7 @@
         echo "
             <div class=\"row\">
                 <h3>" . $m . "</h3>
-                <a href=\"" . $a . "\">" . $b . "</a>
+                <a href=\"" . $sitewide['root'] . $a . "\">" . $b . "</a>
             </div>
         ";
 
