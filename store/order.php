@@ -19,6 +19,9 @@
      * @param String $b the button text
      */
     function res ($m = 'Error while checking out', $a = 'store/', $b = 'Return to store') {
+        global $template;
+        global $sitewide;
+
         $page['title'] = 'Checkout &sdot; elementary';
 
         $page['styles'] = array(
