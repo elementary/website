@@ -3,6 +3,7 @@
         "vendor-dir": "lib"
     },
     "require": {
-        "stripe/stripe-php": "3.17.0"
+        "stripe/stripe-php": "3.17.0",
+        "mandrill/mandrill": "^1.0"
     }
 }
