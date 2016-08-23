@@ -1,24 +1,40 @@
 <?php
     $page['title'] = 'Purchase elementary OS';
-    $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
-    $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
+
+    $page['script-plugins'] = array(
+        'scripts/jQuery.leanModal2.js',
+        'scripts/slider.js'
+    );
+
+    $page['scripts'] = array(
+        'https://checkout.stripe.com/checkout.js' => array(
+            'data-alipay' => 'auto',
+            'data-locale' => 'auto'
+        ),
+        'scripts/homepage.js' => array(
+            'async' => false
+        )
+    );
+
+    $page['styles'] = array(
+        'styles/home.css'
+    );
+
     include __DIR__.'/_templates/sitewide.php';
+
     include $template['header'];
     include $template['alert'];
+
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
-            <script src="scripts/slider.js"></script>
             <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
             <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
             <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
             <script>var downloadRegion = '<?php echo $region; ?>'</script>
-            <script>
-                jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-                jQl.loadjQdep('scripts/homepage.js')
-            </script>
 
-            <div class="row">
+        <section class="grid">
+            <div class="whole">
                 <div id="logotype">
 
                     <?php
@@ -30,10 +46,10 @@
                 </div>
                 <h4>A fast and open replacement for Windows and OS X</h4>
             </div>
-
-            <div class="hero"></div>
-
-            <div class="row">
+        </section>
+        <div class="hero"></div>
+        <section class="grid">
+            <div class="whole">
                 <div id="amounts">
                     <?php
                         $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
@@ -61,21 +77,22 @@
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
                 <p class="small-label">0.3 Freya | 1.15 GB (for PC or Mac)</p>
             </div>
-            <div class="row">
-                <h4 id="the-press">What the press is saying about elementary OS:</h4>
-                <div class="column third">
-                    <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" data-l10n-off alt="WIRED" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
-                </div>
-                <div class="column third">
-                    <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" data-l10n-off alt="Mac|Life" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" data-tweet-suffix=" — @MacLife http://elementary.io" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
-                </div>
-                <div class="column third">
-                    <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" data-l10n-off alt="Lifehacker" /></a>
-                    <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
-                </div>
+        </section>
+        <section class="grid">
+            <h4 id="the-press">What the press is saying about elementary OS:</h4>
+            <div class="third">
+                <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" data-l10n-off alt="WIRED" /></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
             </div>
+            <div class="third">
+                <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" data-l10n-off alt="Mac|Life" /></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" data-tweet-suffix=" — @MacLife http://elementary.io" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
+            </div>
+            <div class="third">
+                <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" data-l10n-off alt="Lifehacker" /></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+            </div>
+        </section>
             <div id="carousel" class="light">
                 <div class="row choices-container">
                     <h1>Meet Our Apps</h1>

@@ -28,6 +28,14 @@ if ($requestUri == '/') {
 } elseif (strpos($requestUri, '/docs/') === 0 || $requestUri == '/docs') {
     // For documentation (MDR)
     include __DIR__.'/docs/_mdr/index.php';
+} elseif (substr($requestUri, -1) === '/') { // Ends with a slash
+    $target = '.'.$requestUri.'index.php';
+    if (file_exists($target)) {
+        include $target;
+    } else {
+        header('HTTP/1.1 404 Not Found');
+        include '404.php';
+    }
 } else {
     $target = '.'.$requestUri.'.php'; // Rewrite extension-less files as php files
     if (file_exists($target)) {
