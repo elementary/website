@@ -27,7 +27,7 @@ try {
 }
 
 if (
-    ($res['store'] !== '148324') ||
+    ($res['store'] !== 148324) ||
     !isset($res['type']) ||
     !isset($res['data']['shipment']['service']) ||
     !isset($res['data']['order']['external_id'])
