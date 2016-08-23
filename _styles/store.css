@@ -8,18 +8,14 @@
 ***************************/
 
 .grid--product {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 .grid--product .grid__title {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     text-transform: capitalize;
 }
 
@@ -68,15 +64,12 @@
 }
 
 .size-select {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .size-select button {
-    -ms-flex: 1 1 0;
-        flex: 1 1 0;
+    flex: 1 1 0;
 }
 
 .modal--product .grid {
@@ -125,15 +118,11 @@ i.fa.fa-close.close-modal {
 }
 
 .list--product .list__item {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     border-bottom: 1px solid #ccc;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 12px 0;
     padding: 24px 0;
     width: 100%;
@@ -149,8 +138,7 @@ i.fa.fa-close.close-modal {
 }
 
 .list--product .list__info {
-    -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+    flex: 1 1 auto;
     padding: 16px 0;
 }
 
@@ -170,8 +158,7 @@ i.fa.fa-close.close-modal {
 
 @media (min-width: 660px) {
     .list--product .list__item {
-        -ms-flex-direction: row;
-            flex-direction: row;
+        flex-direction: row;
         text-align: left;
     }
 

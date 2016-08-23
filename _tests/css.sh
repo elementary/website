@@ -8,12 +8,10 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-npm install postcss postcss-cli postcss-reporter stylelint autoprefixer
-
 ./node_modules/.bin/postcss --config .postcss.json
 
-if ! git diff --quiet styles/; then
-    git --no-pager diff styles/
+if ! git diff --quiet _styles/; then
+    git --no-pager diff _styles/
 
     echo "##############################################################"
     echo "CSS linting detected an error. Please use csscomb and resubmit"
