@@ -5,29 +5,41 @@
 For a simple local development environment, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
+* [Node.js](https://nodejs.org/)
 * `php7.0-curl`
+* `php7.0-intl`
 * `php7.0-json`
+* `php7.0-mbstring`
 * `php7.0-xml`
+* packages installed with `npm install`
 
-Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+Then inside the project directory, run `npm run build && npm run start`. Next,
+just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
 ## Nginx Web Server
 
-For a full web-server environment, which includes more redirect and permissions you may find useful, you will need:
+For a full web-server environment, which includes more redirect and permissions
+you may find useful, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
-* `php7.0-curl`
-* `php7.0-json`
-* `php7.0-xml`
+* [Node.js](https://nodejs.org/)
 * The latest stable version of [Nginx](http://nginx.org)
+* `php7.0-curl`
+* `php7.0-intl`
+* `php7.0-json`
+* `php7.0-mbstring`
+* `php7.0-xml`
+* packages installed with `npm install`
 
-Then, we need to configure Nginx. To start, open up a configuration file in Nano.
+Then, we need to configure Nginx. To start, open up a configuration file in
+Nano.
 
 ```bash
 sudo nano /etc/nginx/sites-enabled/mvp.conf
 ```
 
-Then, paste in required configuration in, modifying the root, include and error_log paths.
+Then, paste in required configuration in, modifying the root, include and
+error_log paths.
 
 ```
 server {
@@ -51,13 +63,20 @@ Now we just need to restart the service.
 sudo service nginx restart
 ```
 
+Then we need to build the static assets.
+
+```bash
+npm run install && npm run build
+```
+
 Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
 # Code Style
 
  - Four space indentation
  - Remove trailing whitespaces and add an empty line at the end of each file
- - Compatibility with the latest versions of popular browsers (chrome, firefox, safari, edge, midori)
+ - Compatibility with the latest versions of popular browsers (chrome, firefox,
+     safari, edge, midori)
 
 ## PHP
  - `include` templates, not `require` or `_once`
@@ -85,7 +104,9 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 ## CSS
  - Try to use classes instead of IDs unless things are absolutely unique
  - One selector per line
- - Care with fallbacks and browsers compatibilities
+ - Care with fallbacks and browsers compatibilities. Using only official syntax
+     and let the build process add prefixes as needed.
+
 ```css
 .class {
     color: #fefe89;
@@ -101,8 +122,8 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 # Composer
 
 We use composer to manage our backend scripts. Because all of these files are
-in the repository, it's not required to have `composer` installed unless you want
-to update the dependencies.
+in the repository, it's not required to have `composer` installed unless you
+want to update the dependencies.
 
 ## Updating
 
