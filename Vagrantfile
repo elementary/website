@@ -65,10 +65,21 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    # install packages
+    # install php packages
     sudo add-apt-repository ppa:ondrej/php
     sudo apt-get update
     sudo apt-get install -y php php-curl php-intl php-json php-mbstring php-xml
+
+    # install node packages
+    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+
+    # Install node modules
+    mkdir /home/vagrant/node_modules
+    cd /home/vagrant/mvp
+    ln -s /home/vagrant/node_modules node_modules
+    npm install
+    npm run build
 
     # setup log file
     sudo touch /var/log/mvp.log

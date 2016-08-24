@@ -1,7 +1,7 @@
 {
     "use": ["stylelint", "autoprefixer", "postcss-reporter"],
-    "input": "styles/*.css",
-    "replace": true,
+    "input": "_styles/*.css",
+    "dir": "styles",
     "autoprefixer": {
         "browsers": [
             "last 2 version",

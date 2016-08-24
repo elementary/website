@@ -68,13 +68,17 @@ Then simply run `vagrant up`.
 For bypassing Vagrant you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php)
+* [Node.js](https://nodejs.org/)
 * `php7.0-curl`
 * `php7.0-intl`
 * `php7.0-json`
 * `php7.0-mbstring`
 * `php7.0-xml`
+* packages installed with `npm install`
 
-Then inside the project directory, run `php -S localhost:8000 router.php`. Next, just navigate to http://localhost:8000/ to view the site.
+Then inside the project directory, run `npm run build` to build the assets, and
+`php -S localhost:8000 router.php` to run the server. Next, just navigate to
+http://localhost:8000/ to view the site.
 
 Contributing
 ============

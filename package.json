@@ -1,0 +1,37 @@
+{
+  "name": "mvp",
+  "version": "0.4.0",
+  "description": "The elementary.io Website http://elementary.io",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "postcss": "^5.1.2"
+  },
+  "devDependencies": {
+    "csscomb": "^3.1.7",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "eslint": "^3.3.1",
+    "postcss-cli": "^2.5.2",
+    "postcss-reporter": "^1.4.1",
+    "stylelint": "^7.1.0"
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:8000 router.php",
+    "build": "gulp",
+    "build:watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementary/mvp.git"
+  },
+  "author": "elementary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elementary/mvp/issues"
+  },
+  "homepage": "https://github.com/elementary/mvp#readme"
+}

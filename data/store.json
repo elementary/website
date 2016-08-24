@@ -1,0 +1,102 @@
+[
+    {
+        "id": 5,
+        "name": "Logotype T-Shirt Men's",
+        "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/logotype.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 126,
+                "name": "S Logotype Men's",
+                "size": "S",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 188,
+                "name": "M Logotype Men's",
+                "size": "M",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 250,
+                "name": "L Logotype Men's",
+                "size": "L",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 312,
+                "name": "XL Logotype Men's",
+                "size": "XL",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 374,
+                "name": "2XL Logotype Men's",
+                "size": "2XL",
+                "color": "Teal",
+                "cost": 16.35,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Logotype T-Shirt Women's",
+        "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/logotype_womens.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 127,
+                "name": "S Logotype Women's",
+                "size": "S",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 189,
+                "name": "M Logotype Women's",
+                "size": "M",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 251,
+                "name": "L Logotype Women's",
+                "size": "L",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 313,
+                "name": "XL Logotype Women's",
+                "size": "XL",
+                "color": "Teal",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 375,
+                "name": "2XL Logotype Women's",
+                "size": "2XL",
+                "color": "Teal",
+                "cost": 16.35,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    }
+]

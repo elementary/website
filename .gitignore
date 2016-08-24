@@ -1,7 +1,9 @@
-.vagrant/
 *.custom.*
 *~
-backend/chart.json
-data/_average_payments.db
-backend/config.php
-node_modules/
+*.log
+/.vagrant/
+/backend/chart.json
+/backend/config.php
+/data/_average_payments.db
+/node_modules/
+/styles/
