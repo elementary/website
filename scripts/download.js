@@ -200,5 +200,71 @@ $(function () {
         // doWebtorrentDownload()
     }
 
+    //// UTILITY: do_webtorrent_download: Start the WebTorrent download.
+    function do_webtorrent_download() {
+        if (WebTorrent.WEBRTC_SUPPORT) {
+            $('#download-webtorrent').show()
+            $('#download-direct').hide()
+            // Initialize WebTorrent
+            var client = new WebTorrent()
+            client.on('error', function (err) {
+                console.error('WTERROR: ' + err.message)
+            })
+            // Add Torrent
+            console.log('Starting Download')
+            client.add(
+                // OPTION: Torrent file name.
+                window.location.href + release_filename + '.torrent',
+                {
+                    announce: [
+                        'https://ashrise.com:443/phoenix/announce',
+                        'udp://open.demonii.com:1337/announce',
+                        'udp://tracker.ccc.de:80/announce',
+                        'udp://tracker.openbittorrent.com:80/announce',
+                        'udp://tracker.publicbt.com:80/announce',
+                        'wss://tracker.openwebtorrent.com',
+                        'wss://tracker.webtorrent.io',
+                        'wss://tracker.btorrent.xyz',
+                    ],
+                },
+                onTorrent
+            )
+            function onTorrent (torrent) {
+                torrent.on('error', function (err) {
+                    console.error('TERROR: ' + err.message)
+                })
+                console.log('Download started.')
+                torrent.addWebSeed('https:' + download_link + release_filename)
+                var file = torrent.files[0] // There should only ever be one file.
+                if (window.ga) {
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', '64-bit')
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os())
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region)
+                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'magnet')
+                }
+                // Print out progress every second
+                c = 0
+                var interval = setInterval(function () {
+                    var progress = (torrent.progress * 100).toFixed(1)
+                    console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining)
+                    $('.progress').width(progress + '%')
+                    $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining')
+                    // If after 10 seconds there is less than 1% progress, display an alternative.
+                    if ( c++ > 10 && progress < 1 ) {
+                        $('#download-alternative').show()
+                    }
+                }, 1000)
+                // Stop printing out progress.
+                torrent.on('done', function () {
+                    console.log('Progress: 100%')
+                    // TODO Offer to save file.
+                    $('.counter').text('Complete')
+                    clearInterval(interval)
+                })
+            }
+            console.log('Download started?')
+        }
+    }
+
     console.log('Loaded download.js')
 })
