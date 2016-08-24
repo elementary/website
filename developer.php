@@ -4,17 +4,19 @@
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/developer.css">';
+    $page['styles'] = array(
+        'styles/developer.css'
+    );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
 ?>
 
-<script>var release_title = 'Loki';</script>
-<script>var release_version = '0.4-beta2';</script>
-<script>var download_region = '<?php echo $region; ?>';</script>
+<script>var releaseTitle = 'Loki'</script>
+<script>var releaseVersion = '0.4-beta2'</script>
+<script>var downloadRegion = '<?php echo $region; ?>'</script>
 <script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js');
-    jQl.loadjQdep('scripts/developer.js');
+    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
+    jQl.loadjQdep('scripts/developer.js')
 </script>
 
 <section class="hero dark">

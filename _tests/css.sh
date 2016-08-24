@@ -1,5 +1,5 @@
 #!/bin/sh
-# Runs csscomb on all css files
+# Runs postcss on all css files
 # Requires nvm installed and project as git directory
 
 set -e
@@ -8,12 +8,10 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-npm install csscomb
+./node_modules/.bin/postcss --config .postcss.json
 
-./node_modules/.bin/csscomb styles/*.css
-
-if ! git diff --quiet styles/; then
-    git --no-pager diff styles/
+if ! git diff --quiet _styles/; then
+    git --no-pager diff _styles/
 
     echo "##############################################################"
     echo "CSS linting detected an error. Please use csscomb and resubmit"

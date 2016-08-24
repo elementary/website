@@ -1,7 +1,9 @@
 <?php
     include '_templates/sitewide.php';
     $page['title'] = 'Open Source &sdot; elementary';
-    $page['scripts'] = '<link rel="stylesheet" type="text/css" media="all" href="styles/open-source.css">';
+    $page['styles'] = array(
+        'styles/open-source.css'
+    );
     include $template['header'];
     include $template['alert'];
 ?>
@@ -31,21 +33,32 @@
             <a class="button sub-item" href="https://launchpad.net/audience" target="_blank"><span>Videos</span></a>
         </div>
     </div>
-    <div class="platform-item full">
+    <div class="platform-item half">
         <a href="get-involved#desktop-development">
-            <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop">
-            <p class="oss-title">Pantheon Desktop Environment</p>
+            <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop Shell">
+            <p class="oss-title">Pantheon Desktop Shell</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/contractor" target="_blank"><span>Contractor</span></a>
+            <a class="button sub-item" href="https://launchpad.net/egtk" target="_blank"><span>GTK+ Stylesheet</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank"><span>Icon Theme</span></a>
             <a class="button sub-item" href="https://launchpad.net/gala" target="_blank"><span>Gala</span></a>
-            <a class="button sub-item" href="https://launchpad.net/granite" target="_blank"><span>Granite</span></a>
-            <a class="button sub-item" href="https://launchpad.net/egtk" target="_blank"><span>Gtk Stylesheet</span></a>
-            <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank"><span>Icons</span></a>
             <a class="button sub-item" href="https://launchpad.net/plank" target="_blank"><span>Plank</span></a>
             <a class="button sub-item" href="https://launchpad.net/slingshot" target="_blank"><span>Slingshot</span></a>
             <a class="button sub-item" href="https://launchpad.net/switchboard" target="_blank"><span>Switchboard</span></a>
             <a class="button sub-item" href="https://launchpad.net/wingpanel" target="_blank"><span>Wingpanel</span></a>
+        </div>
+    </div>
+    <div class="platform-item half">
+        <a href="get-involved#desktop-development">
+            <img class="oss-logo" src="images/open-source/platform.svg" alt="Platform">
+            <p class="oss-title">Pantheon Platform</p>
+        </a>
+        <div>
+            <a class="button sub-item" href="https://launchpad.net/contractor" target="_blank"><span>Contractor</span></a>
+            <a class="button sub-item" href="https://launchpad.net/granite" target="_blank"><span>Granite</span></a>
+            <a class="button sub-item" href="https://launchpad.net/capnet-assist" target="_blank"><span>Captive Portal Assistant</span></a>
+            <a class="button sub-item" href="https://launchpad.net/pantheon-online-accounts" target="_blank"><span>Pantheon Online Accounts</span></a>
+            <a class="button sub-item" href="https://launchpad.net/pantheon-agent-polkit" target="_blank"><span>Polkit Agent</span></a>
         </div>
     </div>
     <hr class="dotted full">

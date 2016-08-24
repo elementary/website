@@ -54,6 +54,27 @@ $l10n->set_domain('layout');
             </div>
         <![endif]-->
 
+        <?php
+            // Load all non async javascript tags at the end of page
+            foreach ($page['scripts'] as $one => $two) {
+                $src = (!is_string($one)) ? $two : $one;
+                $atr = (is_array($two)) ? $two : array();
+
+                if (!isset($atr['async'])) $atr['async'] = true;
+                if ($atr['async'] === true) continue;
+
+                $atr_string = "";
+                foreach ($atr as $name => $setting) {
+                    if (is_bool($setting) && $setting === true) {
+                        $atr_string .= ' ' . $name;
+                    } else if (!is_bool($setting)) {
+                        $atr_string .= ' ' . $name . '="' . $setting . '"';
+                    }
+                }
+        ?>
+        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+        <?php } ?>
+
     </body>
 </html>
 <?php

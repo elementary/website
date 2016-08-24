@@ -1,0 +1,273 @@
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
+
+/***************************
+* Category view of product *
+***************************/
+
+.grid--product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid--product .grid__title {
+    flex: 0 0 100%;
+    text-transform: capitalize;
+}
+
+.grid--product .grid__item {
+    cursor: pointer;
+    margin: 20px;
+    max-width: 260px;
+}
+
+/*****************
+* Product modals *
+*****************/
+
+.modal--product {
+    max-height: 90vh;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .modal--product {
+        width: calc(100vw - 32px);
+    }
+}
+
+.modal--product h2,
+.modal--product h4 {
+    text-align: left;
+}
+
+.modal--product p {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.modal--product input[type="number"],
+.modal--product select {
+    width: 100%;
+    padding: 6px;
+}
+
+.modal--product .button {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.size-select {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.size-select button {
+    flex: 1 1 0;
+}
+
+.modal--product .grid {
+    max-height: 90vh;
+    overflow: auto;
+    padding: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .modal--product .grid {
+        padding-bottom: 16px;
+    }
+}
+
+.modal--product > .grid > .half {
+    min-width: 220px;
+}
+
+.modal--product .label {
+    margin-top: 24px;
+}
+
+i.fa.fa-close.close-modal {
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    height: 32px;
+    left: -10px;
+    padding: 8px;
+    position: fixed;
+    text-align: center;
+    top: -10px;
+    width: 32px;
+    z-index: 999;
+}
+
+/***********************
+* List view of product *
+***********************/
+
+.list--product {
+    display: block;
+    text-align: center;
+}
+
+.list--product .list__item {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.list--product .list__item a {
+    color: inherit;
+}
+
+.list--product .list__item img {
+    height: 80px;
+    width: 80px;
+}
+
+.list--product .list__info {
+    flex: 1 1 auto;
+    padding: 16px 0;
+}
+
+.list--product .list__info > * {
+    display: block;
+    padding: 4px 0;
+}
+
+.list--product .list__detail input {
+    max-width: 64px;
+    text-align: center;
+}
+
+.list--product .list__detail > div > * {
+    display: inline-block;
+}
+
+@media (min-width: 660px) {
+    .list--product .list__item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .list--product .list__info {
+        margin: 0 24px;
+    }
+
+    .list--product .list__detail {
+        text-align: right;
+    }
+
+    .list--product .list__footer {
+        text-align: right;
+    }
+
+    .list__detail .subtotal > * {
+        min-width: 48px;
+        text-align: center;
+    }
+}
+
+/****************
+* Shipping Grid *
+****************/
+
+.grid--address input,
+.grid--address select {
+    margin: 6px;
+    min-width: 100px;
+    padding: 8px;
+    width: 100%;
+}
+
+.grid--address label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 6px 0 0;
+    opacity: 0.65;
+    padding: 0 6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/*****************************
+* Shipping photo on checkout *
+*****************************/
+
+#shipping-photo {
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    display: none;
+    margin: 32px 0;
+}
+
+@media (min-width: 500px) {
+    #shipping-photo {
+        display: inline-block;
+    }
+}
+
+/************************
+* Shipping option table *
+************************/
+
+.list--shipping {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list--shipping .list__item .list__row {
+    padding: 8px;
+}
+
+.list--shipping .list__item:not(:last-of-type) .list__row {
+    border-bottom: 1px solid #ddd;
+}
+
+/********************************
+* Checkout Shipping Information *
+********************************/
+
+.grid--narrow .half {
+    text-align: left;
+}
+
+.grid--narrow .half span {
+    display: block;
+}
+
+.grid--narrow .half h5 {
+    padding: 12px 0;
+    opacity: 0.75;
+}
+
+/*************************
+* Store related elements *
+*************************/
+
+.grid--narrow {
+    max-width: 740px;
+}
+
+.alert--error {
+    color: #da4d45;
+    font-size: 88%;
+}
+
+.text--success {
+    color: #49800b;
+}

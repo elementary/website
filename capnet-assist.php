@@ -2,7 +2,9 @@
     include '_templates/sitewide.php';
     $page['name'] = 'capnet-assist';
     $page['title'] = 'You\'re connected! &sdot; elementary';
-		$page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/capnet-assist.css">';
+    $page['styles'] = array(
+        'styles/capnet-assist.css'
+    );
     include $template['header'];
     include $template['alert'];
 ?>
