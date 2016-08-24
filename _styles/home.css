@@ -80,9 +80,52 @@ input:focus + .focus-reveal {
     opacity: 0.65;
 }
 
-/***********
-* showcase *
-***********/
+/***********************
+* app display sections *
+***********************/
+
+.app-display {
+    align-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-display__image {
+    min-width: 300px;
+}
+
+.app-display__description {
+    min-width: 300px;
+    max-width: 564px;
+    padding: 0 32px;
+}
+
+@media (min-width: 1000px) {
+    .app-display__image {
+        order: 2;
+    }
+
+    .app-display.app-display--horizontal {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .app-display--horizontal .app-display__image {
+        flex: 0 0 auto;
+        order: 2;
+        overflow: visible;
+    }
+
+    .app-display--horizontal .app-display__description {
+        flex: 0 0 auto;
+    }
+}
+
+/*********************************
+* showcase layout and index grid *
+*********************************/
 
 #showcase {
     max-width: none;
@@ -143,47 +186,41 @@ input:focus + .focus-reveal {
     color: inherit;
 }
 
-#showcase > div.showcase-tab {
-    padding-bottom: 64px;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
+/********************
+* showcase programs *
+********************/
+
+#showcase .showcase-tab .app-display {
     flex-direction: column;
 }
 
-#showcase > div.showcase-tab > div:last-child {
-    order: -1;
-    padding: 64px 0 0 0;
+#showcase .showcase-tab .app-display__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 16px;
 }
 
-@media (max-width: 1194px) {
-    #showcase > div.showcase-tab > div:last-child {
-        order: 2;
-        padding: 0 0 32px 0;
-    }
-}
-
-#showcase > div.showcase-tab > div:last-child > div {
+#showcase .showcase-tab .app-display__description > * {
+    padding: 8px;
     text-align: left;
-    vertical-align: top;
 }
 
-#showcase > div.showcase-tab > div:last-child img {
-    height: 64px;
-    margin-bottom: 16px;
-    width: auto;
+#showcase .showcase-tab .app-display__description > img {
+    height: 80px;
+    width: 80px;
 }
 
-@media (min-width: 500px) and (max-width: 772px) {
-    #showcase > div.showcase-tab > div:last-child img {
-        margin-top: -96px;
+@media (min-width: 1000px) {
+    #showcase .showcase-tab .app-display__description {
+        flex-wrap: nowrap;
+        padding-bottom: 0;
     }
 }
+
+/***********************
+* initialized showcase *
+***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
     background-image: url("../images/back-arrow.png");
@@ -198,7 +235,7 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
-    transition: height 0.15s ease-in-out;
+    transition: height 0.1s ease-in-out;
 }
 
 #showcase.initialized > div {
@@ -214,7 +251,7 @@ input:focus + .focus-reveal {
 
 #showcase.initialized > div.showcase-tab {
     left: 100%;
-    padding: 0 24px 32px 64px;
+    padding: 32px 24px 32px 64px;
 }
 
 #showcase.initialized > div#showcase-index.active,
@@ -246,11 +283,11 @@ input:focus + .focus-reveal {
     flex-wrap: nowrap;
     font-family: "Open Sans";
     font-size: 9pt;
-    height: 30vw;
+    height: 40vw;
     margin: 64px auto;
     max-height: 556px;
     max-width: 900px;
-    width: 48vw;
+    width: 64vw;
 }
 
 @media (max-width: 425px) {
@@ -603,59 +640,28 @@ input:focus + .focus-reveal {
     }
 }
 
-
 /************
-* appcenter *
+* AppCenter *
 ************/
 
 #appcenter {
-    max-width: none;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
 }
 
-#appcenter > .column {
+#appcenter .app-display__description img {
     display: block;
-}
-
-#appcenter > .column:nth-of-type(2) {
-    display: inline-block;
-    margin: auto;
-    max-width: 500px;
-}
-
-#appcenter > .column:nth-of-type(2) img {
+    height: 64px;
+    margin: 0 auto 16px;
     width: 64px;
-    margin-bottom: 32px;
 }
 
-@media (min-width: 500px) {
-    #appcenter > .column:nth-of-type(2) img {
+@media (min-width: 400px) {
+    #appcenter .app-display__description img {
+        height: 128px;
+        margin: 0 auto 32px;
         width: 128px;
-        margin-bottom: 32px;
-    }
-}
-
-@media (min-width: 1195px) {
-    #appcenter > .column {
-        display: inline-block;
-    }
-
-    #appcenter > .column:first-of-type {
-        float: right;
-        overflow: visible;
-        width: 55%;
-    }
-
-    #appcenter > .column:first-of-type > img {
-        height: 100%;
-        max-width: none;
-        position: relative;
-        width: auto;
-    }
-
-    #appcenter > .column:nth-of-type(2) {
-        float: right;
-        margin-top: 8%;
     }
 }
 
@@ -665,6 +671,7 @@ input:focus + .focus-reveal {
 
 #slingshot {
     max-width: 1800px;
+    padding: 64px 0;
     width: 100%;
 }
 

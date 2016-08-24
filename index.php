@@ -123,92 +123,92 @@
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
-                    <div><img src="images/screenshots/music.png" alt="music screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/music.png" alt="music screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/multimedia-audio-player.svg" alt="music icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Music</h2>
-                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                            <div>
+                                <h2>Music</h2>
+                                <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
-                    <div><img src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/internet-web-browser.svg" alt="epiphany icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Epiphany</h2>
-                           <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                            <div>
+                                <h2>Epiphany</h2>
+                                <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
-                    <div><img src="images/screenshots/mail.png" alt="mail screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/internet-mail.svg" alt="mail icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Mail</h2>
-                            <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
+                            <div>
+                                <h2>Mail</h2>
+                                <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
-                    <div><img src="images/screenshots/photos.png" alt="photos screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/photos.png" alt="photos screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/multimedia-photo-manager.svg" alt="photos icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Photos</h2>
-                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                            <div>
+                                <h2>Photos</h2>
+                                <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
-                    <div><img src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Videos</h2>
-                            <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
+                            <div>
+                                <h2>Videos</h2>
+                                <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
-                    <div><img src="images/screenshots/calendar.png" alt="calendar screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/office-calendar.svg" alt="calendar icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Calendar</h2>
-                            <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
+                            <div>
+                                <h2>Calendar</h2>
+                                <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-files">
-                    <div><img src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/system-file-manager.svg" alt="files icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Files</h2>
-                            <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
+                            <div>
+                                <h2>Files</h2>
+                                <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
-                    <div>
-                        <div class="window dark" type="terminal">
+                    <div class="app-display">
+                        <div class="app-display__image window dark" type="terminal">
                             <div class="titlebar">
                                 <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
                                 <span class="title">Home</span>
@@ -229,115 +229,113 @@
                             </div>
                             <div class="input"></div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="column">
+                        <div class="app-display__description">
                             <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Terminal</h2>
-                            <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                            <div>
+                                <h2>Terminal</h2>
+                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
-                    <div><img src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Scratch</h2>
-                            <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                            <div>
+                                <h2>Scratch</h2>
+                                <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
-                    <div><img src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" /></div>
-                    <div>
-                        <div class="column">
+                    <div class="app-display">
+                        <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
+                        <div class="app-display__description">
                             <img src="images/icons/accessories-camera.svg" alt="camera icon" />
-                        </div>
-                        <div class="column">
-                            <h2>Camera</h2>
-                            <p>Easily snap picures or video from a built-in webcam.</p>
+                            <div>
+                                <h2>Camera</h2>
+                                <p>Easily snap picures or video from a built-in webcam.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div id="appcenter" class="row">
-                <div class="column">
-                    <img src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
-                </div>
-                <div class="column text-left">
+        <section id="appcenter">
+            <div class="app-display app-display--horizontal">
+                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
+                <div class="app-display__description">
                     <img src="images/icons/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
                     <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
-                    <a href="developer"><p class="read-more">Become a Developer</p></a>
+                    <a href="developer" class="read-more">Become a Developer</a>
                 </div>
             </div>
         </section>
-        <section id="slingshot" class="grey row">
-            <div class="column vertical-top">
-                <div id="slingshot-label">Applications</div>
-                <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
-                <div class="slingshot">
-                    <div class="linked">
-                        <div id="slingshot-grid-button" class="button active">
-                            <?php include('images/icons/view-grid-symbolic.svg'); ?>
+        <section class="grey">
+            <div id="slingshot" class="row">
+                <div class="column vertical-top">
+                    <div id="slingshot-label">Applications</div>
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                    <div class="slingshot">
+                        <div class="linked">
+                            <div id="slingshot-grid-button" class="button active">
+                                <?php include('images/icons/view-grid-symbolic.svg'); ?>
+                            </div>
+                            <div id="slingshot-categories-button" class="button">
+                                <?php include('images/icons/view-filter-symbolic.svg'); ?>
+                            </div>
                         </div>
-                        <div id="slingshot-categories-button" class="button">
-                            <?php include('images/icons/view-filter-symbolic.svg'); ?>
+                        <div class="entry">
+                            <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                            <span class="search-term inactive">dat</span>
+                            <span class="cursor">|</span>
+                            <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
                         </div>
-                    </div>
-                    <div class="entry">
-                        <?php include('images/icons/edit-find-symbolic.svg'); ?>
-                        <span class="search-term inactive">dat</span>
-                        <span class="cursor">|</span>
-                        <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
-                    </div>
-                    <div id="slingshot-grid" class="active view">
-                        <div class="slingshot-grid">
+                        <div id="slingshot-grid" class="active view">
+                            <div class="slingshot-grid">
+                            </div>
+                            <div id="slingshot-pager">
+                                <div class="button active">1</div>
+                                <div class="button">2</div>
+                            </div>
                         </div>
-                        <div id="slingshot-pager">
-                            <div class="button active">1</div>
-                            <div class="button">2</div>
+                        <div id="slingshot-categories" class="next view">
+                            <div class="slingshot-categories-sidebar">
+                                <span class="slingshot-category active">Accessories</span>
+                                <span class="slingshot-category">Graphics</span>
+                                <span class="slingshot-category">Internet</span>
+                                <span class="slingshot-category">Office</span>
+                                <span class="slingshot-category">Other</span>
+                                <span class="slingshot-category">Sound &amp; Video</span>
+                                <span class="slingshot-category">System Tools</span>
+                            </div>
+                            <div class="slingshot-categories">
+                            </div>
                         </div>
-                    </div>
-                    <div id="slingshot-categories" class="next view">
-                        <div class="slingshot-categories-sidebar">
-                            <span class="slingshot-category active">Accessories</span>
-                            <span class="slingshot-category">Graphics</span>
-                            <span class="slingshot-category">Internet</span>
-                            <span class="slingshot-category">Office</span>
-                            <span class="slingshot-category">Other</span>
-                            <span class="slingshot-category">Sound &amp; Video</span>
-                            <span class="slingshot-category">System Tools</span>
-                        </div>
-                        <div class="slingshot-categories">
-                        </div>
-                    </div>
-                    <div id="slingshot-search" class="next view">
-                        <span class="results-title">Applications</span>
-                        <div class="slingshot-search-results searchone inactive">
-                        </div>
-                        <div class="slingshot-search-results searchtwo inactive">
-                        </div>
-                        <div class="slingshot-search-results searchthree inactive">
+                        <div id="slingshot-search" class="next view">
+                            <span class="results-title">Applications</span>
+                            <div class="slingshot-search-results searchone inactive">
+                            </div>
+                            <div class="slingshot-search-results searchtwo inactive">
+                            </div>
+                            <div class="slingshot-search-results searchthree inactive">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column half vertical-top text-left">
-                <h2>3 Ways to Explore</h2>
-                <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
-                <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
-                <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
-                <p>View your apps automatically organized into categories. Perfect for large collections.</p>
-                <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
-                <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
+                <div class="column half vertical-top text-left">
+                    <h2>3 Ways to Explore</h2>
+                    <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
+                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
+                    <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
+                    <p>View your apps automatically organized into categories. Perfect for large collections.</p>
+                    <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
+                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
+                </div>
             </div>
         </section>
         <section class="grid">
