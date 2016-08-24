@@ -18,7 +18,7 @@ $(function () {
     // Capture all .target-amount focuses
     $('.target-amount').on('click focusin', amountSelect)
 
-    //// ACTION: amountValidate: Check the vality of custom amount inputs.
+    // ACTION: amountValidate: Check the vality of custom amount inputs.
     var amountValidate = function (event) {
         var currentVal = $('#amount-custom').val()
         var code = event.which || event.keyCode || event.charCode
@@ -36,13 +36,13 @@ $(function () {
     }
     $('#amount-custom').keypress(amountValidate)
 
-    //// ACTION: amountBlur: Check the vality of custom amount inputs.
-    var amountBlur = function() {
+    // ACTION: amountBlur: Check the vality of custom amount inputs.
+    var amountBlur = function () {
         // If NOT valid OR empty.
         var i = document.getElementById('amount-custom')
         if (
             !i.validity.valid ||
-            i.value == ''
+            i.value === ''
         ) {
             // Remove existing checks.
             $('.target-amount').removeClass('checked')
@@ -136,7 +136,7 @@ $(function () {
         if (window.ga) ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Payment (Actual)', 'Homepage', amount)
         if ($amountTen.val() !== 0) {
             $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
-            $amountTen.each(amountClick)
+            $amountTen.each(amountSelect)
             updateDownloadButton()
         }
         paymentHTTP = new XMLHttpRequest()
@@ -187,13 +187,13 @@ $(function () {
     }
 
     // RETURN: openDownloadOverlay: Open the Download modal.
-    function openDownloadOverlay() {
+    function openDownloadOverlay () {
         var $openModal
         $openModal = $('.open-modal')
         console.log('Open the download overlay!')
         $openModal.leanModal({
             // Add this class to download buttons to make them close it.
-            closeButton: '.close-modal',
+            closeButton: '.close-modal'
         })
         // This is what actually opens the modal overlay.
         $openModal.click()
