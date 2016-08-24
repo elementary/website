@@ -658,6 +658,17 @@ button.suggested-action,
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
+button.disabled
+.button.disabled {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
 .button.flat {
     background: none;
     border-width: 2px;

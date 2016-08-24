@@ -3,6 +3,7 @@
 
     $page['script-plugins'] = array(
         'scripts/jQuery.leanModal2.js',
+        'scripts/webtorrent.min.js',
         'scripts/slider.js'
     );
 
@@ -11,7 +12,10 @@
             'data-alipay' => 'auto',
             'data-locale' => 'auto'
         ),
-        'scripts/homepage.js' => array(
+        'scripts/webtorrent.run.js' => array(
+            'async' => false
+        ),
+        'scripts/slider.run.js' => array(
             'async' => false
         )
     );
@@ -31,6 +35,7 @@
             <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
             <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
             <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
+            <script>var releaseFilename = '<?php echo $config['release_filename']; ?>';</script>
             <script>var downloadRegion = '<?php echo $region; ?>'</script>
 
         <section class="grid">
@@ -75,7 +80,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label">0.3 Freya | 1.15 GB (for PC or Mac)</p>
+                <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.15 GB (for PC or Mac)</p>
             </div>
         </section>
         <section class="grid">

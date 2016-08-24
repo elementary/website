@@ -6,6 +6,7 @@ $config = array(
 
     'release_title'   => 'Freya',
     'release_version' => '0.3.2',
+    'release_filename' => 'elementaryos-0.3.2-stable-amd64.20151209.iso',
 
     'stripe_sk'        => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
     'stripe_pk'        => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
