@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16.004" width="16.004" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
- <defs id="defs7386"></defs>
- <g id="layer13" transform="translate(-772.99828,584)">
-  <path class="svg" id="rect6430" style="enable-background:accumulate;color:#000000;" d="m782.94-584c-0.0645,0.008-0.12753,0.0279-0.1875,0.0625l-5.0625,2.9375h3.9688l0.8125-0.46875,0.28125,0.46875h2.2812l-1.5938-2.75c-0.10388-0.17992-0.30663-0.27423-0.5-0.25zm-6.9375,3.9688-2.75,1.5938c-0.23989,0.1385-0.326,0.44761-0.1875,0.6875l2.9375,5.0625v-3.9688l-0.46875-0.8125,0.46875-0.28125v-2.2812zm1.5,0.0312c-0.277,0-0.5,0.223-0.5,0.5v11c0,0.277,0.223,0.5,0.5,0.5h11c0.277,0,0.5-0.223,0.5-0.5v-11c0-0.277-0.223-0.5-0.5-0.5h-11zm1.5,2,8,0,0,7-8,0,0-7z" fill-rule="nonzero" fill="#bebebe"/>
- </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16.004" height="16.004"><path fill="#bebebe" d="M9.942 0a.493.493 0 0 0-.188.063L4.692 3H8.66l.812-.469.281.469h2.281L10.442.25a.51.51 0 0 0-.5-.25zM3.004 3.969L.254 5.563a.506.506 0 0 0-.187.687l2.937 5.063v-3.97l-.469-.812.47-.28V3.968zm1.5.031c-.277 0-.5.223-.5.5v11c0 .277.223.5.5.5h11c.277 0 .5-.223.5-.5v-11c0-.277-.223-.5-.5-.5h-11zm1.5 2h8v7h-8V6z" class="svg" color="#000"/></svg>
