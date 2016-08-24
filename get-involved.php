@@ -7,12 +7,8 @@
         'styles/get-involved.css'
     );
     $page['scripts'] = array(
-        'scripts/Chart.custom.min.js' => array(
-            'async' => false
-        ),
-        'scripts/get-involved.js' => array(
-            'async' => false
-        )
+        'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js',
+        'scripts/get-involved.js'
     );
     include $template['header'];
     include $template['alert'];

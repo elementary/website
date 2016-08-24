@@ -20,23 +20,19 @@ $(function () {
 
         var chart = {
             labels: [],
-            datasets: [
-                {
-                    label: labels.fixed,
-                    fillColor: colors.fixed,
-                    data: []
-                },
-                {
-                    label: labels.in_progress,
-                    fillColor: colors.in_progress,
-                    data: []
-                },
-                {
-                    label: labels.created,
-                    fillColor: colors.created,
-                    data: []
-                }
-            ]
+            datasets: [{
+                label: labels.fixed,
+                backgroundColor: colors.fixed,
+                data: []
+            }, {
+                label: labels.in_progress,
+                backgroundColor: colors.in_progress,
+                data: []
+            }, {
+                label: labels.created,
+                backgroundColor: colors.created,
+                data: []
+            }]
         }
 
         var currentYear = new Date().getFullYear()
@@ -63,9 +59,10 @@ $(function () {
         var lastPoint = point
 
         var options = {
-            animation: true,
-            animationSteps: 20,
-            animationEasing: 'easeOutQuint',
+            animation: {
+                duration: 20,
+                easing: 'easeOutQuint'
+            },
             responsive: true
         }
 
@@ -77,25 +74,40 @@ $(function () {
 
         var ctx = $chart[0].getContext('2d')
         // eslint-disable-next-line no-new
-        new Chart(ctx).StackedBar(chart, $.extend({
-            showScale: false,
-            barShowStroke: false,
-            barValueSpacing: ($(window).width() > 900) ? 2 : 0,
-            customTooltips: function (tooltip) {
-                if (!tooltip) {
-                    return
-                }
+        new Chart(ctx, {
+            type: 'bar',
+            data: chart,
+            options: $.extend({
+                title: { display: false },
+                legend: { display: false },
+                scales: {
+                    xAxes: [{
+                        display: false,
+                        stacked: true
+                    }],
+                    yAxes: [{
+                        display: false,
+                        stacked: true
+                    }]
+                },
+                tooltips: {
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                    callbacks: {
+                        title: () => null,
+                        label: function (data) {
+                            var point = {
+                                date: data.xLabel,
+                                fixed: parseInt(this._data.datasets[0].data[data.index], 10),
+                                in_progress: parseInt(this._data.datasets[1].data[data.index], 10),
+                                created: parseInt(this._data.datasets[2].data[data.index], 10)
+                            }
 
-                var point = {
-                    date: tooltip.title,
-                    fixed: parseInt(tooltip.labels[0], 10),
-                    in_progress: parseInt(tooltip.labels[1], 10),
-                    created: parseInt(tooltip.labels[2], 10)
+                            updateDoughnuts(point)
+                        }
+                    }
                 }
-
-                updateDoughnuts(point)
-            }
-        }, options))
+            }, options)
+        })
 
         var $container = $('.doughnuts-ctn')
         function updateDoughnuts (point) {
@@ -111,8 +123,8 @@ $(function () {
 
                 $container.find('.' + doughnutId + ' .doughnut-count').text(point[doughnutName])
 
-                doughnutCharts[doughnutName].segments[0].value = point[doughnutName]
-                doughnutCharts[doughnutName].segments[1].value = total - point[doughnutName]
+                doughnutCharts[doughnutName].data.datasets[0].data = [point[doughnutName], total - point[doughnutName]]
+
                 doughnutCharts[doughnutName].update()
             }
         }
@@ -129,22 +141,32 @@ $(function () {
 
             var doughnutId = doughnutName.replace('_', '-')
             var ctxt = document.getElementById(doughnutId + '-chart').getContext('2d')
-            doughnutCharts[doughnutName] = new Chart(ctxt).Doughnut([
-                {
-                    value: 1,
-                    color: colors[doughnutName],
-                    label: labels[doughnutName]
+            doughnutCharts[doughnutName] = new Chart(ctxt, {
+                type: 'doughnut',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        backgroundColor: [
+                            colors[doughnutName],
+                            'rgba(0,0,0,0.12)'
+                        ],
+                        borderWidth: [0, 0],
+                        data: [0, 1],
+                        hoverBackgroundColor: [
+                            colors[doughnutName],
+                            'rgba(0,0,0,0.12)'
+                        ],
+                        label: labels[doughnutName]
+                    }]
                 },
-                {
-                    value: 1,
-                    color: 'rgba(0,0,0,0.12)',
-                    label: 'Other'
-                }
-            ], $.extend({
-                segmentShowStroke: false,
-                percentageInnerCutout: 90,
-                showTooltips: false
-            }, options))
+                options: $.extend({
+                    segmentShowStroke: false,
+                    cutoutPercentage: 90,
+                    tooltips: {
+                        enabled: false
+                    }
+                }, options)
+            })
         }
 
         updateDoughnuts()
