@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   version="1.1"
-   width="16"
-   height="16"
-   class="symbolic-icon">
-  <metadata
-     id="metadata10">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs8" />
-  <path
-     id="path4"
-     transform="translate(-373 12)"
-     color="#bebebe"
-     fill="#bebebe"
-     d="m379.25-11c-2.899 0-5.25 2.351-5.25 5.25s2.351 5.25 5.25 5.25c1.128 0 2.175-.363 3.03-.969l4.219 4.219c.343.343.907.343 1.25 0s.343-.907 0-1.25l-4.219-4.219c.605-.856.969-1.903.969-3.03 0-2.899-2.351-5.25-5.25-5.25m0 1.375c2.14 0 3.875 1.735 3.875 3.875s-1.735 3.875-3.875 3.875-3.875-1.735-3.875-3.875 1.735-3.875 3.875-3.875"
-     class="symbolic" />
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="symbolic-icon">
+    <path color="#bebebe" fill="#bebebe" d="M6.25 1a5.25 5.25 0 0 0 0 10.5 5.23 5.23 0 0 0 3.03-.969l4.219 4.219c.343.343.907.343 1.25 0s.343-.907 0-1.25L10.53 9.281a5.242 5.242 0 0 0 .969-3.03 5.25 5.25 0 0 0-5.25-5.25m0 1.375a3.875 3.875 0 1 1 0 7.75 3.875 3.875 0 0 1 0-7.75" class="symbolic"/>
 </svg>
