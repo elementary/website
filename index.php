@@ -12,6 +12,9 @@
             'data-alipay' => 'auto',
             'data-locale' => 'auto'
         ),
+        'scripts/slingshot.js' => array(
+            'async' => true
+        ),
         'scripts/webtorrent.run.js' => array(
             'async' => false
         ),
