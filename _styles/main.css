@@ -658,8 +658,8 @@ button.suggested-action,
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-button.disabled,
-.button.disabled {
+button.loading,
+.button.loading {
     background-color: transparent;
     background-image: none;
     box-shadow: none;
