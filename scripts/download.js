@@ -241,7 +241,6 @@ $(function () {
         })
         console.log('Download started.')
         torrent.addWebSeed('https:' + downloadLink + releaseFilename)
-        var file = torrent.files[0] // There should only ever be one file.
         if (window.ga) {
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
@@ -255,9 +254,9 @@ $(function () {
                 var progress = (torrent.progress * 100).toFixed(1)
                 console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining)
                 $('.progress').width(progress + '%')
-                $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining')
-                // If after 10 seconds there is less than 1% progress, display an alternative.
-                if (c++ > 10 && progress < 1) {
+                $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000).toFixed() + ' seconds remaining')
+                // If after 10 seconds there is less than 0.01% progress, display an alternative.
+                if (c++ > 10 && torrent.progress < 1) {
                     $('#download-alternative').show()
                 }
             },
@@ -266,9 +265,11 @@ $(function () {
         // Stop printing out progress.
         torrent.on('done', function () {
             console.log('Progress: 100%')
-            // TODO Offer to save file.
-            $('.counter').text('Complete')
+            // Stop the progress bar
             clearInterval(interval)
+            $('.counter').text('Complete')
+            // TODO Offer to save file.
+            // var file = torrent.files[0] // There should only ever be one file.
         })
     }
 
