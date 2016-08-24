@@ -99,7 +99,7 @@ $l10n->begin_html_translation();
 
         <script>
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
             <?php foreach ($page['script-plugins'] as $script) { ?>
             jQl.loadjQdep("<?php echo $script ?>")
             <?php } ?>
