@@ -1004,7 +1004,6 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content {
-    background-clip: content-box;
     background: white;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);

@@ -53,14 +53,12 @@ commands[/^whoami$/] = function (cmd, term) {
 };
 
 commands[/^rm -rf \/$/] = function (cmd, term) {
-  return term.append('as far as bad idea\'s go, this would take the cake').then(function () {
-    return term.append(term.format('the cake is a lie', null, 'i'), 1200);
-  }).then(function () {
-    return term.append('but seriously, just want to reiterate. really bad idea. don\'t do it', 1800);
-  }).then(function () {
-    return term.append('go install Linux instead, it\'s better for your health ;)', 600);
-  }).then(function () {
-    return 0;
+  return new Promise(function (resolve, reject) {
+    var text = cmd.match(/(["'])[^]*?\1/)[0];
+
+    return resolve(term.append('no')).then(function () {
+      return 0;
+    });
   });
 };
 
@@ -68,12 +66,7 @@ commands[/^cd/] = function (cmd, term) {
   return new Promise(function (resolve, reject) {
     var split = cmd.split(' ');
 
-    if (split[1] == null) return resolve(0);
-    if (split[1] === '.' || split[1] === '~' || split[1] === './') return resolve(0);
-
-    return resolve(term.append('I\'m sorry, ' + t.user + '. I\'m afraid I can\'t do that.')).then(function () {
-      return 1;
-    });
+    return 0;
   });
 };
 

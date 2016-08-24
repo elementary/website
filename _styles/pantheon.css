@@ -1,0 +1,366 @@
+/***************************************************************
+* Written by Blake Kostner <btkostner@gmail.com>               *
+* Source avalible at https://github.com/btkostner/pantheon-web *
+***************************************************************/
+
+/**************************
+* Reset some MVP wide CSS *
+**************************/
+
+.pantheon * {
+    font-size: 12px;
+    position: static;
+    text-align: left;
+}
+
+/*******************
+* Basic CSS resets *
+*******************/
+
+.pantheon button {
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.pantheon textarea {
+    background: none;
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    color: inherit;
+}
+
+.pantheon h1,
+.pantheon h2,
+.pantheon h3,
+.pantheon h4,
+.pantheon h5,
+.pantheon h6,
+.pantheon p {
+    padding: 0;
+    margin: 0;
+}
+
+/*****************************************
+* Application layouts and default colors *
+*****************************************/
+
+.pantheon .window {
+    align-content: stretch;
+    background-color: #f5f5f5;
+    border: 1px solid #333;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: "Open Sans";
+    font-size: 9pt;
+}
+
+.pantheon .titlebar {
+    box-sizing: padding-box;
+    border-radius: 4.5px 4.5px 0 0;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    cursor: default;
+    flex: 0 0 auto;
+    font-weight: 700;
+    padding: 6px 4px 5px;
+    user-select: none;
+}
+
+.pantheon .titlebar,
+.pantheon .titlebar * {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.pantheon .titlebar button {
+    background: transparent;
+    border-radius: 50%;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 3px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    width: auto;
+}
+
+.pantheon .titlebar button:active {
+    background-color: rgba(51, 51, 51, 0.15);
+}
+
+.pantheon .titlebar button.control:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #272b2d inset, 0 1px rgba(76, 88, 94, 0.4);
+}
+
+.pantheon .titlebar span.title {
+    display: block;
+    margin: 0 12px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pantheon .tabbar {
+    cursor: default;
+    flex: 0 0 auto;
+    height: 30px;
+    padding: 0 4px;
+    user-select: none;
+}
+
+.pantheon .tabbar,
+.pantheon .tabbar * {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.pantheon .tabbar button {
+    background: transparent;
+    border-radius: 4px;
+    flex: 0 0 auto;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 2px 2px 1px;
+}
+
+.pantheon .tabbar .tabs {
+    flex: 1 1 auto;
+    height: 100%;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    padding: 0 4px;
+}
+
+.pantheon .tabbar .tabs .tab {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    border-width: 0 1px;
+    height: 100%;
+    padding: 0 4px;
+    text-align: center;
+    width: 175px;
+}
+
+.pantheon .tabbar .tabs .tab button {
+    flex-shrink: 0;
+}
+
+.pantheon .tabbar .tabs .tab span:not(.icon) {
+    display: block;
+    flex-grow: 1;
+    margin: 0 12px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*********************
+* Dark color windows *
+*********************/
+
+.pantheon .dark.window {
+    background-color: #363b3e;
+    border-color: #141414;
+    color: #c0c6c4;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.pantheon .dark.window .titlebar {
+    background: linear-gradient(to bottom, #3a4144, #323739);
+    border-bottom: 1px solid #222426;
+    color: #89908f;
+    fill: #89908f;
+}
+
+.pantheon .dark.window .titlebar .icon {
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
+}
+
+.pantheon .dark.window .titlebar button:not(.control):active {
+    background-color: #4c585e;
+}
+
+.pantheon .dark.window.active .titlebar {
+    color: #acb3b1;
+    fill: #acb3b1;
+}
+
+.pantheon .dark.window .tabbar {
+    background: linear-gradient(to bottom, #2f3436, #323639);
+    border-bottom: 1px solid #222426;
+    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.3) inset;
+    fill: #595959;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.pantheon .dark.window .tabbar button:active:not(:disabled) {
+    background-color: rgba(200, 200, 200, 0.15);
+}
+
+.pantheon .dark.window .tabbar .tab.active {
+    background: linear-gradient(to bottom, #323639, #303436);
+    border-color: #1f2122;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02), inset 0 1px 0 0 rgba(255, 255, 255, 0.02);
+}
+
+.pantheon .dark.window .tabbar .tab:not(.active):not(:hover) .icon[icon='actions/close'] {
+    fill: transparent;
+}
+
+.pantheon .dark.window .tabbar .icon {
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
+}
+
+.pantheon .dark.window .tabbar .icon:not([icon="actions/document-open-recent"]) {
+    fill: #808885;
+}
+
+/*******************************
+* Pantheon notification bubble *
+*******************************/
+
+.pantheon #notification-container {
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.pantheon .window[type="notification"] {
+    align-items: flex-start;
+    backface-visibility: hidden;
+    background: linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+    border-radius: 4px;
+    border: rgba(61, 61, 61, 0.6);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.3),
+        0 0 0 1px rgba(0, 0, 0, 0.2),
+        0 3px 12px rgba(0, 0, 0, 0.16),
+        0 5px 10px -3px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    min-height: 56px;
+    opacity: 0;
+    padding: 4px;
+    perspective: 1000;
+    position: relative;
+    right: 0;
+    transform: rotateX(-180deg) skew(40deg, 0deg);
+    transform-style: preserve-3d;
+    width: 300px;
+}
+
+.pantheon .window[type="notification"]:not([disabled]) {
+    animation: notification 3.5s ease;
+}
+
+.pantheon .window[type="notification"] h3 {
+    color: #000;
+    padding: 4px 6px 3px;
+}
+
+.pantheon .window[type="notification"] p {
+    padding: 0 6px 6px;
+    word-break: break-all;
+}
+
+@keyframes notification {
+    10% {
+        transform: rotateX(0deg) skew(0deg, 0deg);
+        opacity: 1;
+    }
+
+    95% {
+        right: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: -150%;
+        transform: rotateX(0deg) skew(0deg, 0deg);
+    }
+}
+
+/********************************
+* Pantheon terminal window      *
+* Changes exist for button tags *
+********************************/
+
+.pantheon .window[type="terminal"] {
+    background-color: rgba(37, 46, 50, 0.95);
+    height: 65vh;
+    max-height: 90vw;
+    max-width: 90vw;
+    width: 65vw;
+}
+
+.pantheon .window[type="terminal"] .search {
+    margin-right: 16px;
+}
+
+.pantheon .window[type="terminal"] .input {
+    color: #94a3a5;
+    flex: 1 1 auto;
+    font-family: "Roboto Mono";
+    font-size: 10pt;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 2px;
+    width: 100%;
+    text-shadow: none;
+}
+
+.pantheon .window[type="terminal"] .input > span {
+    display: block;
+}
+
+.pantheon .window[type="terminal"] .input > span > span {
+    word-wrap: break-word;
+}
+
+.pantheon .window[type="terminal"] .input > span:last-child .input::after {
+    background-color: #94a3a5;
+    content: "\0019";
+    display: inline-block;
+    width: 8px;
+    animation: cursor 1.2s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

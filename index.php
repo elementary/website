@@ -19,7 +19,8 @@
     );
 
     $page['styles'] = array(
-        'styles/home.css'
+        'styles/home.css',
+        'styles/pantheon.css'
     );
 
     include __DIR__.'/_templates/sitewide.php';
@@ -97,12 +98,14 @@
         </section>
         <section>
             <div id="showcase" class="row grey">
-                <div id="notification-container">
-                    <div class="window" type="notification">
-                        <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/utilities-terminal.svg'); ?></span></div>
-                        <div>
-                            <h3>Task finished</h3>
-                            <p>git clone https://github.com/elementary/mvp</p>
+                <div class="pantheon">
+                    <div id="notification-container">
+                        <div class="window" type="notification">
+                            <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/48/utilities-terminal.svg'); ?></span></div>
+                            <div>
+                                <h3>Task finished</h3>
+                                <p>git clone https://github.com/elementary/mvp</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,26 +211,28 @@
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
-                        <div class="app-display__image window dark" type="terminal">
-                            <div class="titlebar">
-                                <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
-                                <span class="title">Home</span>
-                                <div>
-                                    <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
-                                    <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
-                                </div>
-                            </div>
-                            <div class="tabbar">
-                                <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
-                                <div class="tabs">
-                                    <div class="tab active">
-                                        <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
-                                        <span class="title">Home</span>
+                        <div class="pantheon">
+                            <div class="app-display__image window dark" type="terminal">
+                                <div class="titlebar">
+                                    <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
+                                    <span class="title">Home</span>
+                                    <div>
+                                        <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
+                                        <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
                                     </div>
                                 </div>
-                                <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                                <div class="tabbar">
+                                    <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
+                                    <div class="tabs">
+                                        <div class="tab active">
+                                            <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
+                                            <span class="title">Home</span>
+                                        </div>
+                                    </div>
+                                    <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                                </div>
+                                <div class="input"></div>
                             </div>
-                            <div class="input"></div>
                         </div>
                         <div class="app-display__description">
                             <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
