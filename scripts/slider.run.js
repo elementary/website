@@ -1,7 +1,6 @@
-/* global ga Slider releaseTitle releaseVersion stripeKey StripeCheckout downloadRegion */
+/* global Slider */
 
 $(function () {
-
     // Carousel
     // TODO: fix slider actions on load
     // eslint-disable-next-line no-new
