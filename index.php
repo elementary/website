@@ -2,8 +2,7 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'scripts/jQuery.leanModal2.js',
-        'scripts/webtorrent.min.js',
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4',
         'scripts/slider.js'
     );
 
@@ -15,7 +14,7 @@
         'scripts/slingshot.js' => array(
             'async' => true
         ),
-        'scripts/webtorrent.run.js' => array(
+        'scripts/webtorrent.js' => array(
             'async' => false
         ),
         'scripts/slider.run.js' => array(
@@ -267,7 +266,7 @@
                     </div>
                     <div class="column">
                         <a class="button webtorrent-stop close-modal" href="#">Cancel</a>
-                        <a class="button disabled download-link http-magnet" title="Save the Download" href="#">Save the Download</a>
+                        <a class="button disabled download-link magnet-link" title="Save the Download" href="#">Save the Download</a>
                     </div>
                 </div>
                 <div id="download-direct">
@@ -275,12 +274,12 @@
                     <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
                     <div class="row actions">
                         <div class="column linked">
-                            <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><?php echo $config['release_title']; ?> 32-bit</a>
-                            <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
+                            <a class="button webtorrent-stop download-link http-link" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><?php echo $config['release_title']; ?> 32-bit</a>
+                            <a class="button webtorrent-stop download-link magnet-link" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
                         </div>
                         <div class="column linked">
                             <a class="button suggested-action webtorrent-stop download-link http-link" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><?php echo $config['release_title']; ?> 64-bit</a>
-                            <a class="button suggested-action webtorrent-stop download-link http-magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
+                            <a class="button suggested-action webtorrent-stop download-link magnet-link" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
                         </div>
                     </div>
                 </div>
