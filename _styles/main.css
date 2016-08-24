@@ -133,12 +133,7 @@ q::after {
     content: none;
 }
 
-<<<<<<< HEAD:styles/main.css
 @media (min-width: 414px) {
-
-=======
-@media (max-width: 414px) {
->>>>>>> 2a5e972015e9a2f012713264eee73ee823e815c8:_styles/main.css
     q {
         font-size: 36px;
     }

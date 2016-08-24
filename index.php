@@ -94,6 +94,8 @@
                 <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" data-l10n-off alt="Lifehacker" /></a>
                 <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
+        </section>
+        <section>
             <div id="showcase" class="row grey">
                 <div id="notification-container">
                     <div class="window" type="notification">
@@ -263,6 +265,8 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
             <div id="appcenter" class="row">
                 <div class="column">
                     <img src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
@@ -274,100 +278,101 @@
                     <a href="developer"><p class="read-more">Become a Developer</p></a>
                 </div>
             </div>
-            <div id="slingshot" class="row grey">
-                <div class="column vertical-top">
-                    <div id="slingshot-label">Applications</div>
-                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
-                    <div class="slingshot">
-                        <div class="linked">
-                            <div id="slingshot-grid-button" class="button active">
-                                <?php include('images/icons/view-grid-symbolic.svg'); ?>
-                            </div>
-                            <div id="slingshot-categories-button" class="button">
-                                <?php include('images/icons/view-filter-symbolic.svg'); ?>
-                            </div>
+        </section>
+        <section id="slingshot" class="grey row">
+            <div class="column vertical-top">
+                <div id="slingshot-label">Applications</div>
+                <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                <div class="slingshot">
+                    <div class="linked">
+                        <div id="slingshot-grid-button" class="button active">
+                            <?php include('images/icons/view-grid-symbolic.svg'); ?>
                         </div>
-                        <div class="entry">
-                            <?php include('images/icons/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive">dat</span>
-                            <span class="cursor">|</span>
-                            <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                        <div id="slingshot-categories-button" class="button">
+                            <?php include('images/icons/view-filter-symbolic.svg'); ?>
                         </div>
-                        <div id="slingshot-grid" class="active view">
-                            <div class="slingshot-grid">
-                            </div>
-                            <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
-                            </div>
+                    </div>
+                    <div class="entry">
+                        <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                        <span class="search-term inactive">dat</span>
+                        <span class="cursor">|</span>
+                        <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                    </div>
+                    <div id="slingshot-grid" class="active view">
+                        <div class="slingshot-grid">
                         </div>
-                        <div id="slingshot-categories" class="next view">
-                            <div class="slingshot-categories-sidebar">
-                                <span class="slingshot-category active">Accessories</span>
-                                <span class="slingshot-category">Graphics</span>
-                                <span class="slingshot-category">Internet</span>
-                                <span class="slingshot-category">Office</span>
-                                <span class="slingshot-category">Other</span>
-                                <span class="slingshot-category">Sound &amp; Video</span>
-                                <span class="slingshot-category">System Tools</span>
-                            </div>
-                            <div class="slingshot-categories">
-                            </div>
+                        <div id="slingshot-pager">
+                            <div class="button active">1</div>
+                            <div class="button">2</div>
                         </div>
-                        <div id="slingshot-search" class="next view">
-                            <span class="results-title">Applications</span>
-                            <div class="slingshot-search-results searchone inactive">
-                            </div>
-                            <div class="slingshot-search-results searchtwo inactive">
-                            </div>
-                            <div class="slingshot-search-results searchthree inactive">
-                            </div>
+                    </div>
+                    <div id="slingshot-categories" class="next view">
+                        <div class="slingshot-categories-sidebar">
+                            <span class="slingshot-category active">Accessories</span>
+                            <span class="slingshot-category">Graphics</span>
+                            <span class="slingshot-category">Internet</span>
+                            <span class="slingshot-category">Office</span>
+                            <span class="slingshot-category">Other</span>
+                            <span class="slingshot-category">Sound &amp; Video</span>
+                            <span class="slingshot-category">System Tools</span>
+                        </div>
+                        <div class="slingshot-categories">
+                        </div>
+                    </div>
+                    <div id="slingshot-search" class="next view">
+                        <span class="results-title">Applications</span>
+                        <div class="slingshot-search-results searchone inactive">
+                        </div>
+                        <div class="slingshot-search-results searchtwo inactive">
+                        </div>
+                        <div class="slingshot-search-results searchthree inactive">
                         </div>
                     </div>
                 </div>
-                <div class="column half vertical-top text-left">
-                    <h2>3 Ways to Explore</h2>
-                    <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
-                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
-                    <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
-                    <p>View your apps automatically organized into categories. Perfect for large collections.</p>
-                    <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
-                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
+            </div>
+            <div class="column half vertical-top text-left">
+                <h2>3 Ways to Explore</h2>
+                <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
+                <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
+                <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
+                <p>View your apps automatically organized into categories. Perfect for large collections.</p>
+                <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
+                <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="third">
+                <h2>Open Source</h2>
+                <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
+            </div>
+            <div class="third">
+                <h2>No Ads. No Spying.</h2>
+                <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
+            </div>
+            <div class="third">
+                <h2>Safe &amp; Secure</h2>
+                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
+            </div>
+        </section>
+        <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
+        <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
+        <div id="download-modal" class="modal">
+            <i class="fa fa-close close-modal"></i>
+            <h3>Choose a Download</h3>
+            <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
+            <div class="row actions">
+                <div class="column linked">
+                    <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso">Freya 32-bit</a>
+                    <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
+                </div>
+                <div class="column linked">
+                    <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Freya 64-bit</a>
+                    <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="column third">
-                    <h2>Open Source</h2>
-                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
-                </div>
-                <div class="column third">
-                    <h2>No Ads. No Spying.</h2>
-                    <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
-                </div>
-                <div class="column third">
-                    <h2>Safe &amp; Secure</h2>
-                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
-                </div>
-            </div>
-            <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
-            <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-            <div id="download-modal" class="modal">
-                <i class="fa fa-close close-modal"></i>
-                <h3>Choose a Download</h3>
-                <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
-                <div class="row actions">
-                    <div class="column linked">
-                        <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso">Freya 32-bit</a>
-                        <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
-                    </div>
-                    <div class="column linked">
-                        <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Freya 64-bit</a>
-                        <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a style="display:none;" class="open-modal" href="#download-modal"></a>
-            <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+        </div>
+        <a style="display:none;" class="open-modal" href="#download-modal"></a>
+        <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
 <?php
     include $template['footer'];
 ?>
