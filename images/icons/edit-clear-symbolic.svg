@@ -1,1 +1,33 @@
-<svg class="symbolic-icon" height="16" width="16" version="1.1" xmlns="http://www.w3.org/2000/svg" ><path class="symbolic" d="m459.59393-10.00014a.519319 .526419 0 0 0 -.25 .156249l-5.188 5.313a.519319 .526419 0 0 0 .0312 .75l5.03 4.625a.519319 .526419 0 0 0 .3438 .15625h7.906a.519319 .526419 0 0 0 .53125 -.53125v-9.938a.519319 .526419 0 0 0 -.53125 -.531249h-7.75a.519319 .526419 0 0 0 -.0625 0 .519319 .526419 0 0 0 -.0625 0m1.344 2.25l1.813 1.75 1.781-1.75 1.469 1.469-1.75 1.781 1.75 1.844-1.469 1.406-1.781-1.75-1.813 1.75-1.438-1.438 1.75-1.813-1.75-1.781 1.438-1.469" fill="#bebebe" color="#bebebe" transform="translate(-453 12)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   version="1.1"
+   width="16"
+   height="16"
+   class="symbolic-icon">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <path
+     id="path4"
+     transform="translate(-453 12)"
+     color="#bebebe"
+     fill="#bebebe"
+     d="m459.59393-10.00014a.519319 .526419 0 0 0 -.25 .156249l-5.188 5.313a.519319 .526419 0 0 0 .0312 .75l5.03 4.625a.519319 .526419 0 0 0 .3438 .15625h7.906a.519319 .526419 0 0 0 .53125 -.53125v-9.938a.519319 .526419 0 0 0 -.53125 -.531249h-7.75a.519319 .526419 0 0 0 -.0625 0 .519319 .526419 0 0 0 -.0625 0m1.344 2.25l1.813 1.75 1.781-1.75 1.469 1.469-1.75 1.781 1.75 1.844-1.469 1.406-1.781-1.75-1.813 1.75-1.438-1.438 1.75-1.813-1.75-1.781 1.438-1.469"
+     class="symbolic" />
+</svg>
