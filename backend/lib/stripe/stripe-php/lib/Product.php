@@ -2,6 +2,11 @@
 
 namespace Stripe;
 
+/**
+ * Class Product
+ *
+ * @package Stripe
+ */
 class Product extends ApiResource
 {
     /**
@@ -24,6 +29,18 @@ class Product extends ApiResource
     public static function create($params = null, $opts = null)
     {
         return self::_create($params, $opts);
+    }
+
+    /**
+     * @param string $id The ID of the product to update.
+     * @param array|null $params
+     * @param array|string|null $options
+     *
+     * @return Product The updated product.
+     */
+    public static function update($id, $params = null, $options = null)
+    {
+        return self::_update($id, $params, $options);
     }
 
     /**

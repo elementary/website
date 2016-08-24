@@ -1,12 +1,14 @@
 /***************************************
 * Copyright 2016 elementary LLC.       *
-* This file is part of elementaryos.io *
+* This file is part of elementary.io *
 ***************************************/
 
 nav {
-    background-color: #4D4267;
     color: #fff;
     fill: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
 }
 
 nav > ul > li > a:focus {
@@ -46,15 +48,46 @@ footer ul li a:focus i.fa {
 *******/
 
 section.hero {
+    align-items: center;
     background-color: #4D4267;
+    background-image: radial-gradient(#5d4e75 0%, #4D4267 100%);
     color: #fff;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 64px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 120px 0 64px 0;
     max-width: 100%;
+    min-height: 70vh;
+    position: relative;
+}
+
+section.hero::before {
+    background-image: linear-gradient(0deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.04) 18px, rgba(255, 255, 255, 0.04) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.02) 38px, rgba(255, 255, 255, 0.02) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.02) 58px, rgba(255, 255, 255, 0.02) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.02) 78px, rgba(255, 255, 255, 0.02) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.02) 98px, rgba(255, 255, 255, 0.02) 100px), linear-gradient(-90deg, transparent 0%, transparent 18px, rgba(255, 255, 255, 0.04) 18px, rgba(255, 255, 255, 0.04) 20px, transparent 20px, transparent 38px, rgba(255, 255, 255, 0.02) 38px, rgba(255, 255, 255, 0.02) 40px, transparent 40px, transparent 58px, rgba(255, 255, 255, 0.02) 58px, rgba(255, 255, 255, 0.02) 60px, transparent 60px, transparent 78px, rgba(255, 255, 255, 0.02) 78px, rgba(255, 255, 255, 0.02) 80px, transparent 80px, transparent 98px, rgba(255, 255, 255, 0.02) 98px, rgba(255, 255, 255, 0.02) 100px);
+    background-size: 100px 100px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+section.hero > div {
+    position: relative;
 }
 
 section.hero .button.suggested-action{
     max-width: 100%;
+}
+
+section.hero .small-label a {
+    color: inherit;
+    font-weight: bold;
+}
+
+section.hero .small-label a:hover {
+    text-decoration: underline;
 }
 
 /*******
@@ -68,10 +101,26 @@ section.hero .button.suggested-action{
 }
 
 .third .fa {
-    color: #403757;
+    color: #4D4267;
 }
 
-footer,
-.grey {
+footer {
     background-color: #fafafa;
+}
+
+/******************
+* Loki Beta Popup *
+******************/
+
+.modal p {
+    margin: auto;
+}
+
+.modal .row.actions .column {
+    width: 200px;
+}
+
+.modal .row.actions .column:first-of-type a {
+    width: 100%;
+    margin: 0;
 }

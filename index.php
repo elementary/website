@@ -1,5 +1,5 @@
 <?php
-    $page['title'] = 'Download elementary OS';
+    $page['title'] = 'Purchase elementary OS';
     $page['scripts'] = '<script src="https://checkout.stripe.com/checkout.js" data-alipay="auto" data-locale="auto"></script>';
     $page['scripts'] .= '<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">';
     include __DIR__.'/_templates/sitewide.php';
@@ -9,7 +9,7 @@
     require_once __DIR__.'/backend/classify.current.php';
 
 ?>
-            <script src="scripts/slider.js"></script>
+            <script src="scripts/showcase.js"></script>
             <script>var stripe_key = '<?php include __DIR__.'/backend/payment.php'; ?>';</script>
             <script>var release_title = '<?php echo $config['release_title']; ?>';</script>
             <script>var release_version = '<?php echo $config['release_version']; ?>';</script>
@@ -20,6 +20,8 @@
                 jQl.loadjQdep('scripts/jQuery.leanModal2.js');
                 jQl.loadjQdep('scripts/webtorrent.min.js');
                 jQl.loadjQdep('scripts/download.js');
+                jQl.loadjQdep('scripts/bluebird.min.js');
+                jQl.loadjQdep('scripts/terminal.js');
                 jQl.loadjQdep('scripts/carousel.js');
             </script>
 
@@ -64,7 +66,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label">1.15 GB (for PC or Mac)</p>
+                <p class="small-label">0.4 Loki | 1.15 GB (for PC or Mac)</p>
             </div>
             <div class="row">
                 <h4 id="the-press">What the press is saying about elementary OS:</h4>
@@ -81,95 +83,189 @@
                     <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
                 </div>
             </div>
-            <div id="carousel" class="light">
-                <div class="row choices-container">
-                    <h1>Meet Our Apps</h1>
-                    <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos active" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
-                        <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
-                        <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
-                        <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
+            <div id="showcase" class="row grey">
+                <div id="notification-container">
+                    <div class="window" type="notification">
+                        <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/utilities-terminal.svg'); ?></span></div>
+                        <div>
+                            <h3>Task finished</h3>
+                            <p>git clone https://github.com/elementary/mvp</p>
+                        </div>
                     </div>
                 </div>
-                <div class="slide-container">
-                    <div id="photos" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/photos.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/multimedia-photo-manager.svg" />
-                                </div>
-                                <div class="column alert">
-                                    <h3>Photos</h3>
-                                    <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
-                                </div>
-                            </div>
+                <div id="showcase-index">
+                    <h2>Apps You Need, Without Ones You Don't.</h2>
+                    <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                    <ul id="showcase-grid">
+                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
+                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/internet-mail.svg" />Mail</li></a>
+                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/multimedia-photo-manager.svg" />Photos</li></a>
+                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/multimedia-video-player.svg" />Videos</li></a>
+                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/office-calendar.svg" />Calendar</li></a>
+                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/system-file-manager.svg" />Files</li></a>
+                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/utilities-terminal.svg" />Terminal</li></a>
+                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/accessories-text-editor.svg" />Scratch</li></a>
+                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/accessories-camera.svg" />Camera</li></a>
+                    </ul>
+                </div>
+                <div class="showcase-tab" id="showcase-music">
+                    <div><img src="images/screenshots/music.png" alt="music screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-audio-player.svg" alt="music icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Music</h2>
+                            <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
                         </div>
                     </div>
-                    <div id="music" class="slide">
-                        <div class="row">
-                          <div class="column">
-                              <img src="images/screenshots/music.png" />
-                          </div>
-                          <div class="column">
-                              <div class="column alert">
-                                  <img src="images/icons/multimedia-audio-player.svg" />
-                              </div>
-                              <div class="column alert">
-                                  <h3>Music</h3>
-                                  <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
-                              </div>
-                          </div>
+                </div>
+                <div class="showcase-tab" id="showcase-epiphany">
+                    <div><img src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/internet-web-browser.svg" alt="epiphany icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Epiphany</h2>
+                           <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                         </div>
                     </div>
-                    <div id="videos" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/videos.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/multimedia-video-player.svg" />
-                                </div>
-                                <div class="column alert">
-                                    <h3>Videos</h3>
-                                    <p>Watch movies and videos with a minimal interface. The slim, dark frame fades away so you can see more of your movie.</p>
-                                </div>
-                            </div>
+                </div>
+                <div class="showcase-tab" id="showcase-mail">
+                    <div><img src="images/screenshots/mail.png" alt="mail screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/internet-mail.svg" alt="mail icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Mail</h2>
+                            <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
                         </div>
                     </div>
-                    <div id="midori" class="slide">
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/screenshots/midori.png" />
-                            </div>
-                            <div class="column">
-                                <div class="column alert">
-                                    <img src="images/icons/midori.svg" />
+                </div>
+                <div class="showcase-tab" id="showcase-photos">
+                    <div><img src="images/screenshots/photos.png" alt="photos screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-photo-manager.svg" alt="photos icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Photos</h2>
+                            <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-videos">
+                    <div><img src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Videos</h2>
+                            <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-calendar">
+                    <div><img src="images/screenshots/calendar.png" alt="calendar screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/office-calendar.svg" alt="calendar icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Calendar</h2>
+                            <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-files">
+                    <div><img src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/system-file-manager.svg" alt="files icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Files</h2>
+                            <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-terminal">
+                    <div>
+                        <div class="window dark" type="terminal">
+                            <div class="titlebar">
+                                <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
+                                <span class="title">Home</span>
+                                <div>
+                                    <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
+                                    <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
                                 </div>
-                                <div class="column alert">
-                                    <h3>Midori</h3>
-                                    <p>Surf the web with a fast &amp; lightweight web browser. Midori lets you use HTML5 websites and web apps while being lighter on battery life. <a class="read-more" href="http://midori-browser.org">Learn More</a></p>
-                                </div>
                             </div>
+                            <div class="tabbar">
+                                <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
+                                <div class="tabs">
+                                    <div class="tab active">
+                                        <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
+                                        <span class="title">Home</span>
+                                    </div>
+                                </div>
+                                <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                            </div>
+                            <div class="input"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Terminal</h2>
+                            <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-scratch">
+                    <div><img src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Scratch</h2>
+                            <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-tab" id="showcase-camera">
+                    <div><img src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" /></div>
+                    <div>
+                        <div class="column">
+                            <img src="images/icons/accessories-camera.svg" alt="camera icon" />
+                        </div>
+                        <div class="column">
+                            <h2>Camera</h2>
+                            <p>Easily snap picures or video from a built-in webcam.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="appcenter" class="row">
                 <div class="column">
-                    <img src="images/screenshots/appcenter.png" alt="elementary appcenter categories"/>
+                    <img src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
                 </div>
                 <div class="column text-left">
-                    <img src="images/icons/system-software-install.svg" />
-                    <h2>Closer to the Apps</h2>
-                    <p>App Center brings handcrafted applications directly to your desktop, and with faster updates, you will always be closer to new features, without compromising security or stability.</p>
+                    <img src="images/icons/128/system-software-install.svg" />
+                    <h2>The Indie, Open Source App Store</h2>
+                    <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
+                    <a href="developer"><p class="read-more">Become a Developer</p></a>
                 </div>
             </div>
-            <div id="slingshot" class="row">
+            <div id="slingshot" class="row grey">
                 <div class="column vertical-top">
+                    <div id="slingshot-label">Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
@@ -231,7 +327,7 @@
             <div class="row">
                 <div class="column third">
                     <h2>Open Source</h2>
-                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/get-involved#desktop-development">Learn More</a></p>
+                    <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
                 </div>
                 <div class="column third">
                     <h2>No Ads. No Spying.</h2>
@@ -239,7 +335,7 @@
                 </div>
                 <div class="column third">
                     <h2>Safe &amp; Secure</h2>
-                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/trusty/">Security Notices</a></p>
+                    <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
                 </div>
             </div>
             <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>

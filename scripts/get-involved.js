@@ -1,6 +1,8 @@
 $(function () {
+    var dateYearMonthDay = new Date().toISOString().substring(0, 10);
+    var preventingCacheSuffix = '?' + dateYearMonthDay;
     $.ajax({
-        url: 'backend/chart.json',
+        url: 'backend/chart.json' + preventingCacheSuffix,
         dataType: 'json'
     }).done(function (data) {
         var labels = {

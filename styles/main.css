@@ -3,6 +3,21 @@
 * This file is part of elementary.io *
 *************************************/
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-thin.woff2') format('woff2'),    /* Super Modern Browsers */
+         url('../fonts/Raleway-thin.woff')  format('woff'),     /* Pretty Modern Browsers */
+         url('../fonts/Raleway-thin.ttf')   format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    src: url('../fonts/Raleway-thin-italic.woff2') format('woff2'),    /* Super Modern Browsers */
+         url('../fonts/Raleway-thin-italic.woff')  format('woff'),     /* Pretty Modern Browsers */
+         url('../fonts/Raleway-thin-italic.ttf')   format('truetype'); /* Safari, Android, iOS */
+}
+
 html,
 body {
     background-color: #fff;
@@ -12,6 +27,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -108,7 +124,7 @@ p.small-label {
 
 q {
     font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -118,10 +134,10 @@ q:after {
     content: none;
 }
 
-@media (max-width: 414px) {
+@media (min-width: 414px) {
 
     q {
-        font-size: 24px;
+        font-size: 36px;
     }
 
 }
@@ -183,14 +199,13 @@ img.inline {
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
-    margin-top: 0.05em;
-    padding-left: 6px;
-    position: absolute;
-    transition: padding 0.15s ease-in-out;
+    left: 6px;
+    position: relative;
+    transition: left 0.15s ease-in-out;
 }
 
 .read-more:hover:after {
-    padding-left: 10px;
+    left: 10px;
 }
 
 .text-left {
@@ -218,18 +233,11 @@ nav {
 }
 
 nav > .nav-content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 3px;
 }
 
 nav > .nav-content > ul {
@@ -295,74 +303,62 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
-@media only screen and (max-width: 520px) { /* this media query is for ie-legacy support */
+/**************
+* Body Layout *
+**************/
 
-    html.ie-legacy nav {
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
-
-    html.ie-legacy nav > .nav-content {
-        overflow: visible;
-        white-space: nowrap;
-        width: 550px;
-    }
-
-    html.ie-legacy nav > .nav-content > .right {
-        float: left;
-    }
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-/*********
-* Layout *
-**********/
-
 #content-container {
-    min-height: 90vh;
+    flex-grow: 1;
 }
 
 footer {
     color: inherit;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
+    justify-content: center;
     padding-top: 24px;
     text-align: center;
+    align-items: center;
 }
 
-footer > p,
-footer > div > a,
+footer > * {
+    padding: 6px 12px;
+    margin: 0;
+}
+
+@media (min-width: 650px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    footer > * {
+        padding: 0 12px;
+    }
+}
+
+footer > div > * {
+    display: inline-block;
+}
+
+footer > div > p,
+footer > div > div > a,
 footer > ul {
     opacity: 0.8;
-}
-
-footer > p {
-    padding: 0 12px;
     text-align: center;
-}
-
-footer > ul {
     list-style: none;
-    padding: 0 12px;
 }
 
 footer .popover {
-    margin: 12px 0;
+    margin-left: 12px;
 }
 
-@media (min-width: 375px) {
-
-    footer > p,
-    footer > .popover {
-        float: left;
-    }
-
-    footer > ul {
-        float: right;
-    }
-
-}
-
-footer ul li {
+footer > ul li {
     display: inline-block;
 }
 
@@ -387,6 +383,10 @@ footer a:focus i.fa {
 footer ul li a:focus {
     outline: none;
 }
+
+/*********
+* Layout *
+*********/
 
 .column {
     display: inline-block;
@@ -523,11 +523,11 @@ footer ul li a:focus {
     text-align: center;
 }
 
-.third a {
+a.third {
     color: inherit;
 }
 
-.third a:hover {
+a.third:hover {
     color: #08C;
     fill: #08C;
 }
@@ -896,17 +896,6 @@ input:focus:-ms-input-placeholder {
 * Modal Dialogs *
 ****************/
 
-.js-target-jquery-leanmodal-overlay {
-    background: #000;
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
 .modal {
     background-color: #f5f5f5;
     border-radius: 3px;
@@ -916,31 +905,20 @@ input:focus:-ms-input-placeholder {
                 0 0 0 1px rgba(0, 0, 0, 0.2),
                 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
-    display: none;
-    margin: 12px;
     max-height: 100vh;
-    opacity: 0;
-    overflow: auto;
+    max-width: 100vw;
     padding: 12px;
     z-index: 11000;
+    display: none;
 }
 
-.modal,
-.modal p {
+.modal {
     text-align: center;
 }
 
-.modal-position {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-
 .modal p {
-    margin: 6px;
+    text-align: center;
+    margin: 0 6px;
     max-width: 388px;
 }
 
@@ -949,8 +927,8 @@ input:focus:-ms-input-placeholder {
     padding: 0;
 }
 
-.modal .row.actions .linked {
-    margin: 6px;
+.modal .row.actions .column {
+    margin: 6px !important;
 }
 
 i.fa.fa-close.close-modal {
@@ -1026,10 +1004,10 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content {
-    background: white;
     background-clip: content-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #333;
@@ -1078,26 +1056,11 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content ul {
+    height: 50vh;
     margin: 5px 0;
     max-height: 500px;
     overflow: auto;
     padding: 0;
-}
-
-@media (max-height: 700px) {
-
-    .popover .popover-content ul {
-        max-height: 300px;
-    }
-
-}
-
-@media (max-height: 450px) {
-
-    .popover .popover-content ul {
-        max-height: 200px;
-    }
-
 }
 
 .popover .popover-content ul li {
@@ -1118,6 +1081,14 @@ i.fa.fa-close.close-modal {
     background: #e0e0e0;
     border: 0;
     height: 1px;
+}
+
+/*****************
+* Special Colors *
+*****************/
+
+.grey {
+    background-color: #fafafa;
 }
 
 /*****************

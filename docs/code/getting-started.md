@@ -47,13 +47,13 @@ If you're ready, let's get you set up to use Bazaar:
 2. You'll need to install bzr. Simply type the following into the Terminal:
 
     ```bash
-    sudo apt-get install bzr
+    sudo apt install bzr
     ```
 
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
 
     ```bash
-    sudo apt-get install openssh-client
+    sudo apt install openssh-client
     ssh-keygen -t rsa
     ```
 
@@ -83,13 +83,13 @@ At the time of this writing, elementary doesn't have a full SDK like Android or 
 
 ### Scratch {#scrath}
 
-![](images/docs/code/the-basic-setup/scratch.png)
+![](images/icons/128/accessories-text-editor.svg)
 
 The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
-![](images/docs/code/the-basic-setup/terminal.svg)
+![](images/icons/128/utilities-terminal.svg)
 
 We’re going to use Terminal in order to compile our code, push revisions to Bazaar (bzr), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
 
@@ -101,15 +101,13 @@ mkdir Projects
 
 ### Development Libraries {#development-libraries}
 
-![](images/docs/code/the-basic-setup/development.png)
+![](images/icons/128/application-default-icon.svg)
 
-In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries with the following terminal command:
+In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries and other development tools with the following terminal command:
 
 ```bash
-sudo apt-get build-dep granite-demo
+sudo apt install elementary-sdk
 ```
-
-The command `apt-get build-dep` installs the build dependencies of an app in the repositories. In this case, we're fetching the development libraries needed to build Granite Demo, an example app. We'll talk more about Granite later, but keep in mind that if you want to build an app from source, you can usually get its build dependencies easily by using `apt-get build-dep`.
 
 And with that, we're ready to dive into development! Let's move on!
 
@@ -278,7 +276,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         Terminal=false
         Type=Application
         X-GNOME-Gettext-Domain=hello-again
-        X-GNOME-Keywords=Hello;World;Example;
+        Keywords=Hello;World;Example;
 
     The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
 
@@ -316,15 +314,9 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 # The Build System {#the-build-system}
 
-The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is get a copy of some additional modules for Cmake (support for Vala, translations, etc), and create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
+The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
 
-1. The elementary apps team maintains a copy of the CMake modules that we're going to need. Type the following into the Terminal.
-
-    ```bash
-    sudo apt install cmake-elementary
-    ```
-
-2. Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
+Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
 
         # project name
         project (hello-again)
@@ -558,9 +550,9 @@ Now that you know how to code, build, and distribute an app using Vala, Gtk, CMa
 
 ## Widgets as Subclasses of Other Widgets {#widgets-as-subclasses-of-other-widgets}
 
-Before we get into `Gtk.Grid`, let’s stop for a second and take some time to understand Gtk a little better. At the lower level, Gtk has classes that define some pretty abstract traits of widgets such as [`Gtk.Container`](http://valadoc.org/#!api=gtk+-3.0/Gtk.Container) and [`Gtk.Orientable`](http://valadoc.org/#!api=gtk+-3.0/Gtk.Orientable). These aren’t widgets that we’re going to use directly in our code, but they’re used as building blocks to create the widgets that we do use. It’s important that we understand this, because it means that when we understand how to add children to a `Gtk.Container` like `Gtk.Grid`, we also understand how to add children to a `Gtk.Container` like `Gtk.Toolbar`. Both Grid and Toolbar are widgets that are subclasses of the more abstract class `Gtk.Container`.
+Before we get into `Gtk.Grid`, let’s stop for a second and take some time to understand Gtk a little better. At the lower level, Gtk has classes that define some pretty abstract traits of widgets such as [`Gtk.Container`](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Container) and [`Gtk.Orientable`](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Orientable). These aren’t widgets that we’re going to use directly in our code, but they’re used as building blocks to create the widgets that we do use. It’s important that we understand this, because it means that when we understand how to add children to a `Gtk.Container` like `Gtk.Grid`, we also understand how to add children to a `Gtk.Container` like `Gtk.Toolbar`. Both Grid and Toolbar are widgets that are subclasses of the more abstract class `Gtk.Container`.
 
-If you want to understand more about these widgets and the parts of Gtk that they subclass, jump over to [Valadoc](http://valadoc.org/) and search for a widget like `Gtk.Grid`. See that big tree at the top of the page? It shows you every component of Gtk that `Gtk.Grid` subclasses and even what those components subclass. Having a lower level knowledge of Gtk will help you to implement widgets you haven’t worked with before since you will understand how their parent classes work.
+If you want to understand more about these widgets and the parts of Gtk that they subclass, jump over to [Valadoc](http://valadoc.elementary.io/) and search for a widget like `Gtk.Grid`. See that big tree at the top of the page? It shows you every component of Gtk that `Gtk.Grid` subclasses and even what those components subclass. Having a lower level knowledge of Gtk will help you to implement widgets you haven’t worked with before since you will understand how their parent classes work.
 
 ## Gtk.Grid {#gtk-grid}
 
@@ -571,7 +563,7 @@ Just like when we add a Button or Label, we need to create our `Gtk.Grid`. As al
     var grid = new Gtk.Grid ();
     grid.orientation = Gtk.Orientation.VERTICAL;
 
-Remember that Button and Label accepted an argument (a String) in the creation method (that’s the stuff in parentheses and quotes). As shown above, `Gtk.Grid` doesn’t accept any arguments in the creation method. However, you can still change the grid’s properties (like [orientation](http://valadoc.org/#!api=gtk+-3.0/Gtk.Orientation)) as we did on the second line. Here, we’ve declared that when we add widgets to our grid, they should stack vertically.
+Remember that Button and Label accepted an argument (a String) in the creation method (that’s the stuff in parentheses and quotes). As shown above, `Gtk.Grid` doesn’t accept any arguments in the creation method. However, you can still change the grid’s properties (like [orientation](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Orientation)) as we did on the second line. Here, we’ve declared that when we add widgets to our grid, they should stack vertically.
 
 Let’s add some stuff to the Grid:
 
@@ -671,6 +663,129 @@ Let’s recap what we learned in this section:
 * We set the properties of `Gtk.Grid` including its orientation and spacing
 *  We added multiple widgets into a single Gtk.Grid using the attach method to create complex layouts containing Buttons and Labels that did cool stuff.
 
-Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.org/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
+Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
+
+# Notifications {#notifications}
+By now you've probably already seen the white notification bubbles that appear on the top right of the screen. Notifications are a simple way to notify a user about the state of your app. For example, they can inform the user that a long process has been completed or a new message has arrived. In this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
+
+## Making Preparations {#making-preparations}
+1. Create a new folder inside of  "~/Projects" called "notifications-app"
+2. Create a file inside called ```notify-app.vala ```
+3. Re-create the `CMake` folder and `CMakeFiles.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings. 
+
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
+
+## Gtk.Application {#gtk-application}
+In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Application).
+
+Now that you know what a `Gtk.Application` is, let's create one:
+
+	public class MyApp : Gtk.Application {
+
+		public MyApp () {
+			Object (application_id: "notify.app",
+			flags: ApplicationFlags.FLAGS_NONE);
+		}
+    
+		protected override void activate () {
+			var app_window = new Gtk.ApplicationWindow (this);
+    
+			app_window.show ();
+		}
+    
+		public static int main (string[] args) {
+			var app = new MyApp ();
+			return app.run (args);
+		}
+	}
+    
+Initiating your app with Gtk.Application is a little different from what we did a few sections back. This time, in `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a `Gtk.ApplicationWindow`, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
+
+In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
+
+    var grid = new Gtk.Grid ();
+    grid.orientation = Gtk.Orientation.VERTICAL;
+    grid.row_spacing = 6;
+
+    var title_label = new Gtk.Label (_("Notifications"));
+    var show_button = new Gtk.Button.with_label (_("Show"));
+    
+    grid.add (title_label);
+    grid.add (show_button);
+    
+    app_window.add (grid);
+    app_window.show_all ();
+
+Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
+
+
+## Sending Notifications {#sending-notifications}
+Now that we have a Gtk.Application we can send notifications. Let's connect a function to the button we created and use it to send a notification:
+
+    show_button.clicked.connect (() => {
+        var notification = new Notification (_("Hello World"));
+        notification.set_body (_("This is my first notification!"));
+        this.send_notification ("notify.app", notification);
+    });
+
+Okay, now compile your new app. if everythink works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
+
+## Additional Features {#Additional-features}
+Now that you know how to send basic notifications, lets talk about a couple ways to make your notifications better. Notifications are most useful when users can indentify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
+
+### Icons {#icons} 
+In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
+
+	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
+	notification.set_icon (image.gicon);
+
+That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
+
+### Replace {#replace}
+We now know how to send a notification, but what if you need to update it with new information? Thanks to the notification ID, we can easily replace a notification. The notification ID should be the same as the app ID that we set in `Gtk.Application`.
+
+Let's make the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and add it to the grid:
+
+	var replace_button = new Gtk.Button.with_label (_("Replace"));
+	grid.add (update_button);
+
+	replace_button.clicked.connect (() => {
+		var notification = new Notification (_("Hello Again"));
+		notification.set_body (_("This is my second Notification!"));
+
+		var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
+		notification.set_icon (image.gicon);
+
+		this.send_notification ("notify.app", notification);
+	});
+<!--
+Now, let's do the withdraw button:
+
+	var withdraw_button = new Gtk.Button.with_label (_("Withdraw"));
+	grid.add (withdraw_button);
+
+	withdraw_button.clicked.connect (() => {
+		this.withdraw_notification ("notify-test");
+	});
+-->
+
+Very easy right? Let's compile and run your app again. Click on the buttons, first on "Show", then "Replace". See how the text on your notification changes without making a new one appear?
+
+### Priority  {#priority}
+Notifications also have priority. When a notification is set as `URGENT` it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the `this.send_notification ()` function
+
+	notification.set_priority (NotificationPriority.URGENT);
+
+`URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority).
+
+## Review {#notifications-review}
+Let's review what all we've learned:
+
+- We learned what `Gtk.Application` is and how to make a subclass of it. 
+- We built an app that sends and updates notifications. 
+- We also learned about other notification features like setting an icon and a notification's priority.
+
+As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](http://valadoc.elementary.io/#!api=gio-2.0/GLib.Notification).
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}

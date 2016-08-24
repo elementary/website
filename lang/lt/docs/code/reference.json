@@ -1,5 +1,5 @@
 {
-    "Reference": "Reference",
+    "Reference": "Rodyklė",
     "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.": "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.",
     "Code Style": "Code Style",
     "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.": "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.",
@@ -25,6 +25,10 @@
     "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.": "Also worth referring that there should be no Hungarian notation, and no mix of\nany kinds of notations.",
     "Casting": "Casting",
     "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.",
+    "Use of '=' in place of 'set'": "Use of '=' in place of 'set'",
+    "In places or operations where you would otherwise use <code>set</code> , you should make use of <code>=</code> instead.": "In places or operations where you would otherwise use <code>set</code> , you should make use of <code>=</code> instead.",
+    "For example, instead of using": "For example, instead of using",
+    "you should use": "you should use",
     "Vala namespaces": "Vala namespaces",
     "Referring to GLib is not necessary. If you want to print something:": "Referring to GLib is not necessary. If you want to print something:",
     "Opt for the second one, it's much cleaner.": "Opt for the second one, it's much cleaner.",

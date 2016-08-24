@@ -1,10 +1,13 @@
 {
     "Get support for": "다음에 대한 지원받기",
-    "Calendar": "일정",
+    "Calendar": "마야",
     "Camera": "카메라",
-    "Files": "파일",
-    "Music": "음악",
-    "Photos": "사진",
+    "Files": "파일스",
+    "Geary": "기어리",
+    "Midori": "미도리 웹 브라우저",
+    "Music": "뮤직",
+    "Photos": "포토스",
+    "Text Editor": "텍스트 편집",
     "System Settings": "시스템 설정",
     "Videos": "비디오",
     "Installation": "설치",
@@ -12,6 +15,6 @@
     "Learning the Basics": "기초부터 배우기",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "데스크톱, 멀티태스킹, 단축키 등에 대해서 알아보기.",
     "StackExchange": "주식거래",
-    "Check out answers to some of the most common questions we get.": "언젠가 저희가 다른 사람에게 답변한 내용을 확인해 보시는건 어떨까요?",
+    "Check out answers to some of the most common questions we get.": "가장 많이 받은 질문들에 대한 답변들 한 번 살펴보세요.",
     "Support &sdot; elementary": "지원 ⋅ elementary"
 }

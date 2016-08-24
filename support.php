@@ -27,13 +27,13 @@
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank">
-        <img width="64" height="64" src="images/icons/internet-mail.svg" alt="Geary"/>
-        <span data-l10n-off>Geary</span>
+        <img width="64" height="64" src="images/icons/internet-mail.svg" alt="Mail"/>
+        <span data-l10n-off>Mail</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/midori" target="_blank">
-        <img width="64" height="64" src="images/icons/midori.svg" alt="Midori"/>
-        <span data-l10n-off>Midori</span>
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank">
+        <img width="64" height="64" src="images/icons/internet-web-browser.svg" alt="Epiphany"/>
+        <span data-l10n-off>Epiphany</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/noise" target="_blank">
