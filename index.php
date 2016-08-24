@@ -38,6 +38,7 @@
             <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
             <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
             <script>var releaseFilename = '<?php echo $config['release_filename']; ?>';</script>
+            <script>var downloadLink = '<?php echo $download_link; ?>'</script>
             <script>var downloadRegion = '<?php echo $region; ?>'</script>
 
         <section class="grid">

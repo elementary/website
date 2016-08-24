@@ -1,4 +1,4 @@
-/* global ga releaseTitle releaseVersion stripeKey StripeCheckout downloadRegion */
+/* global ga releaseTitle releaseVersion releaseFilename downloadLink stripeKey StripeCheckout downloadRegion */
 
 $(function () {
     // Set defaults
@@ -197,11 +197,11 @@ $(function () {
         })
         // This is what actually opens the modal overlay.
         $openModal.click()
-        // doWebtorrentDownload()
+        doWebtorrentDownload()
     }
 
-    //// UTILITY: do_webtorrent_download: Start the WebTorrent download.
-    function do_webtorrent_download() {
+    //// UTILITY: doWebtorrentDownload: Start the WebTorrent download.
+    function doWebtorrentDownload() {
         if (WebTorrent.WEBRTC_SUPPORT) {
             $('#download-webtorrent').show()
             $('#download-direct').hide()
@@ -212,9 +212,10 @@ $(function () {
             })
             // Add Torrent
             console.log('Starting Download')
+            console.log('https:' + downloadLink + releaseFilename + '.torrent')
             client.add(
-                // OPTION: Torrent file name.
-                window.location.href + release_filename + '.torrent',
+                // OPTION: Torrent file name to get instant metadata.
+                'https:' + downloadLink + releaseFilename + '.torrent',
                 {
                     announce: [
                         'https://ashrise.com:443/phoenix/announce',
@@ -234,13 +235,13 @@ $(function () {
                     console.error('TERROR: ' + err.message)
                 })
                 console.log('Download started.')
-                torrent.addWebSeed('https:' + download_link + release_filename)
+                torrent.addWebSeed('https:' + downloadLink + releaseFilename)
                 var file = torrent.files[0] // There should only ever be one file.
                 if (window.ga) {
-                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Architecture)', 'Homepage', '64-bit')
-                    ga('send', 'event', release_title + ' ' + release_version + ' Download (OS)', 'Homepage', detect_os())
-                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Region)', 'Homepage', download_region)
-                    ga('send', 'event', release_title + ' ' + release_version + ' Download (Method)', 'Homepage', 'magnet')
+                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
+                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
+                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
+                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
                 }
                 // Print out progress every second
                 c = 0
