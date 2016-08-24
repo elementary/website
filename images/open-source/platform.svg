@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64">
+    <defs>
+        <linearGradient id="j">
+            <stop offset="0" stop-color="#d2d2d2"/>
+            <stop offset="1" stop-color="#c2c2c2"/>
+        </linearGradient>
+        <linearGradient id="d">
+            <stop offset="0" stop-color="#55c1ec"/>
+            <stop offset="1" stop-color="#3689e6"/>
+        </linearGradient>
+        <linearGradient id="e">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset=".063" stop-color="#fff" stop-opacity=".235"/>
+            <stop offset=".951" stop-color="#fff" stop-opacity=".157"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".392"/>
+        </linearGradient>
+        <radialGradient cx="4.993" cy="43.5" r="2.5" fx="4.993" fy="43.5" id="k" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.00378 0 0 1.4 27.988 -17.4)"/>
+        <linearGradient id="a">
+            <stop offset="0" stop-color="#181818"/>
+            <stop offset="1" stop-color="#181818" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient cx="4.993" cy="43.5" r="2.5" fx="4.993" fy="43.5" id="l" xlink:href="#b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.00378 0 0 1.4 -20.012 -104.4)"/>
+        <linearGradient id="b">
+            <stop offset="0" stop-color="#181818"/>
+            <stop offset="1" stop-color="#181818" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="c">
+            <stop offset="0" stop-color="#181818" stop-opacity="0"/>
+            <stop offset=".5" stop-color="#181818"/>
+            <stop offset="1" stop-color="#181818" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient x1="25.058" y1="47.028" x2="25.058" y2="39.999" id="m" xlink:href="#c" gradientUnits="userSpaceOnUse"/>
+        <linearGradient id="f">
+            <stop offset="0" stop-color="#fafafa"/>
+            <stop offset="1" stop-color="#e1e1e1"/>
+        </linearGradient>
+        <linearGradient id="h">
+            <stop offset="0" stop-color="#e9e9e9"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="g">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset=".508" stop-color="#fff" stop-opacity=".235"/>
+            <stop offset=".835" stop-color="#fff" stop-opacity=".157"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".392"/>
+        </linearGradient>
+        <linearGradient xlink:href="#e" id="o" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.43243 0 0 1.43628 -2.378 -2.47)" x1="24" y1="5" x2="24" y2="43"/>
+        <radialGradient xlink:href="#f" id="n" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 2.31034 -2.31034 0 42.031 -69.086)" cx="32" cy="4.342" fx="32" fy="4.342" r="27.5"/>
+        <linearGradient id="i">
+            <stop offset="0"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient xlink:href="#j" id="p" x1="15" y1="32" x2="49" y2="32" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 32 32)"/>
+    </defs>
+    <g opacity=".4">
+        <path fill="url(#k)" d="M38 40h5v7h-5z" transform="matrix(1.57895 0 0 .71429 -5.895 27.929)"/>
+        <path transform="matrix(-1.57895 0 0 -.71429 -5.895 27.929)" fill="url(#l)" d="M-10-47h5v7h-5z"/>
+        <path fill="url(#m)" d="M10 40h28v7H10z" transform="matrix(1.57895 0 0 .71429 -5.895 27.929)"/>
+    </g>
+    <rect style="marker:none" y="5" x="5" ry="2.5" rx="2.5" height="54" width="54" color="#000" fill="url(#n)" overflow="visible"/>
+    <rect y="5.429" x="5.5" ry="2" rx="2" height="53.142" width="53" fill="none" stroke="url(#o)" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect style="marker:none" y="4.5" x="4.5" ry="3" rx="3" height="55" width="55" opacity=".3" color="#000" fill="none" stroke="#000" overflow="visible"/>
+    <path style="marker:none" d="M10 10a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" color="#000" fill="#fff" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M10 9a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" opacity=".3" color="#000" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M56 10a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" color="#000" fill="#fff" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M56 9a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" opacity=".3" color="#000" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M10 56a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" color="#000" fill="#fff" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M10 55a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" opacity=".3" color="#000" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M56 56a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" color="#000" fill="#fff" fill-rule="evenodd" overflow="visible"/>
+    <path style="marker:none" d="M56 55a1 1 0 0 1-2 0 1 1 0 1 1 2 0z" opacity=".3" color="#000" fill-rule="evenodd" overflow="visible"/>
+    <text x="1023.457" y="11.54" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1047.418" y="-29.202" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-423.141" y="-59.28" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2246.827" y="686.274" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-308.65" y="-444.601" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="498.953" y="-858.071" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="522.914" y="-898.813" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-968.55" y="-906.022" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="491.993" y="-1179.257" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1978.117" y="-552.565" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="2002.077" y="-593.307" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="510.614" y="-600.517" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1971.157" y="-873.751" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-427.202" y="-648.608" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2250.888" y="96.945" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-536.132" y="189.817" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="572.892" y="10.635" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="596.853" y="-30.106" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-894.61" y="-37.316" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="565.933" y="-310.55" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-461.802" y="-40.031" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2285.488" y="705.523" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-310.709" y="-901.561" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="496.893" y="-1315.031" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="520.854" y="-1355.773" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-970.609" y="-1362.983" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="489.934" y="-1636.217" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1976.057" y="-1009.526" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="2000.018" y="-1050.267" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="508.555" y="-1057.477" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1969.098" y="-1330.711" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-429.261" y="-1105.569" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2252.947" y="-360.015" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-538.192" y="-267.143" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="301.823" y="-26.229" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="325.784" y="-66.971" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-944.033" y="-260.999" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-136.431" y="-674.469" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-112.47" y="-715.211" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-1603.933" y="-722.421" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-143.39" y="-995.655" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1342.733" y="-368.964" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1366.694" y="-409.705" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-124.769" y="-416.915" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1335.774" y="-690.149" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-1062.586" y="-465.007" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2886.271" y="280.547" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-664.274" y="1159.415" font-size="14" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans" transform="matrix(.90475 0 0 .90475 -570.515 -675.56)"/>
+    <text x="1023.457" y="18.778" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1047.418" y="-21.964" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-423.141" y="-52.042" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2246.827" y="693.512" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-308.65" y="-437.363" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="498.953" y="-850.833" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="522.914" y="-891.575" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-968.55" y="-898.784" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="491.993" y="-1172.019" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1978.117" y="-545.327" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="2002.077" y="-586.069" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="510.614" y="-593.279" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1971.157" y="-866.513" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-427.202" y="-641.37" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2250.888" y="104.183" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-536.132" y="197.055" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="572.892" y="17.873" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="596.853" y="-22.868" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-894.61" y="-30.078" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="565.933" y="-303.312" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-461.802" y="-32.793" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2285.488" y="712.761" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-310.709" y="-894.323" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="496.893" y="-1307.793" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="520.854" y="-1348.535" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-970.609" y="-1355.745" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="489.934" y="-1628.979" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1976.057" y="-1002.288" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="2000.018" y="-1043.03" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="508.555" y="-1050.239" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1969.098" y="-1323.474" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-429.261" y="-1098.331" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2252.947" y="-352.777" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-538.192" y="-259.905" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="301.823" y="-18.991" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="325.784" y="-59.733" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-944.033" y="-253.761" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-136.431" y="-667.231" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-112.47" y="-707.973" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-1603.933" y="-715.183" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-143.39" y="-988.417" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1342.733" y="-361.726" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1366.694" y="-402.467" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-124.769" y="-409.677" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1335.774" y="-682.911" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-1062.586" y="-457.769" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-2886.271" y="287.785" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-664.274" y="1159.415" font-size="14" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans" transform="matrix(.90475 0 0 .90475 -570.515 -668.322)"/>
+    <text x="582.135" y="-360.498" style="-inkscape-font-specification:Droid Sans" font-size="12.666" font-weight="400" font-family="Droid Sans"/>
+    <text x="1047.319" y="-842.543" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="-776.367" y="-96.989" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1774.398" y="-1127.539" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1798.359" y="-1168.28" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="306.896" y="-1175.49" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <text x="1767.439" y="-1448.724" font-size="12.666" font-weight="400" opacity=".8" font-family="Bitstream Vera Sans"/>
+    <path d="M34 50c.554 0 1-.446 1-1v-3.344a12.901 12.901 0 0 0 3.813-1.593l2.374 2.374a.988.988 0 0 0 1.407 0l2.843-2.843a.988.988 0 0 0 0-1.407l-2.374-2.374A12.901 12.901 0 0 0 44.656 36H48c.554 0 1-.446 1-1v-4c0-.554-.446-1-1-1h-3.344a12.929 12.929 0 0 0-1.593-3.813l2.374-2.375a.988.988 0 0 0 0-1.406l-2.843-2.843a.988.988 0 0 0-1.407 0l-2.374 2.375A12.929 12.929 0 0 0 35 20.343V17c0-.554-.446-1-1-1h-4c-.554 0-1 .446-1 1v3.344c-1.37.323-2.648.875-3.813 1.593l-2.375-2.375a.988.988 0 0 0-1.406 0l-2.843 2.844a.988.988 0 0 0 0 1.407l2.375 2.375A12.901 12.901 0 0 0 19.343 30H16c-.554 0-1 .446-1 1v4c0 .554.446 1 1 1h3.344c.323 1.368.876 2.65 1.593 3.813l-2.375 2.374a.988.988 0 0 0 0 1.407l2.844 2.843a.988.988 0 0 0 1.407 0l2.375-2.374A12.929 12.929 0 0 0 29 45.656V49c0 .554.446 1 1 1h4zm-2-11c-3.312 0-6-2.688-6-6s2.688-6 6-6 6 2.688 6 6-2.688 6-6 6z" style="marker:none" color="#000" overflow="visible" opacity=".8" fill="#fff"/>
+    <path d="M15 34c0 .554.446 1 1 1h3.344c.323 1.37.875 2.648 1.593 3.812l-2.375 2.375a.988.988 0 0 0 0 1.407l2.844 2.843a.988.988 0 0 0 1.407 0l2.375-2.375A12.901 12.901 0 0 0 29 44.656V48c0 .554.446 1 1 1h4c.554 0 1-.446 1-1v-3.344a12.929 12.929 0 0 0 3.813-1.594l2.374 2.375a.988.988 0 0 0 1.407 0l2.843-2.843a.988.988 0 0 0 0-1.407l-2.374-2.375A12.929 12.929 0 0 0 44.656 35H48c.554 0 1-.446 1-1v-4c0-.554-.446-1-1-1h-3.344a12.901 12.901 0 0 0-1.593-3.813l2.374-2.375a.988.988 0 0 0 0-1.406l-2.843-2.844a.988.988 0 0 0-1.407 0l-2.374 2.375A12.901 12.901 0 0 0 35 19.344V16c0-.554-.446-1-1-1h-4c-.554 0-1 .446-1 1v3.344c-1.368.323-2.65.876-3.813 1.593l-2.375-2.375a.988.988 0 0 0-1.406 0l-2.843 2.844a.988.988 0 0 0 0 1.406l2.375 2.375A12.929 12.929 0 0 0 19.343 29H16c-.554 0-1 .446-1 1v4zm11-2c0-3.312 2.688-6 6-6s6 2.688 6 6-2.688 6-6 6-6-2.688-6-6z" style="marker:none" color="#000" overflow="visible" fill="url(#p)"/>
+    <g fill="none" stroke="#000">
+        <path d="M30 15.531c-.805.223-.349 1.282-.469 1.909-.08.74.162 1.56-.121 2.253-.947.522-2.146.609-3.082 1.226-.474.256-1.2.92-1.651.258-.805-.774-1.553-1.617-2.395-2.346-.705-.04-1.06.809-1.587 1.192-.614.645-1.295 1.233-1.864 1.914-.04.705.809 1.06 1.192 1.586.45.56 1.178.953 1.452 1.622-.292 1.034-1.094 1.926-1.327 3.014-.17.515-.197 1.522-.996 1.372-1.111.023-2.231-.046-3.337.036-.534.47-.182 1.323-.284 1.969.023.882-.046 1.773.036 2.649.47.534 1.323.182 1.969.284.708.08 1.497-.16 2.157.121.522.947.61 2.146 1.226 3.082.256.474.92 1.2.258 1.651-.774.805-1.617 1.553-2.346 2.395-.04.705.809 1.06 1.193 1.587.644.614 1.232 1.295 1.913 1.864.705.04 1.06-.809 1.586-1.193.56-.448.953-1.177 1.622-1.45 1.034.29 1.927 1.093 3.014 1.326.515.17 1.522.197 1.372.996.023 1.111-.046 2.231.036 3.337.47.534 1.323.182 1.969.284.882-.023 1.773.046 2.649-.036.534-.47.182-1.323.284-1.969.08-.708-.16-1.497.121-2.157.947-.522 2.146-.609 3.082-1.226.474-.256 1.2-.92 1.651-.258.805.774 1.553 1.617 2.395 2.346.705.04 1.06-.809 1.587-1.193.614-.644 1.295-1.232 1.864-1.913.04-.705-.809-1.06-1.192-1.587-.45-.56-1.178-.952-1.452-1.621.292-1.034 1.094-1.926 1.327-3.014.17-.515.197-1.522.996-1.372 1.111-.023 2.231.046 3.337-.036.534-.47.182-1.323.284-1.969-.023-.882.046-1.773-.036-2.649-.47-.534-1.323-.182-1.969-.284-.708-.08-1.497.16-2.157-.121-.522-.947-.61-2.146-1.226-3.082-.256-.474-.92-1.2-.258-1.651.774-.805 1.617-1.553 2.346-2.395.04-.705-.809-1.06-1.193-1.587-.644-.614-1.232-1.295-1.913-1.864-.705-.04-1.06.809-1.587 1.192-.56.45-.952 1.178-1.621 1.452-1.034-.292-1.927-1.094-3.014-1.328-.515-.17-1.522-.196-1.372-.995-.023-1.111.046-2.231-.036-3.337-.47-.534-1.323-.182-1.969-.284H30z" style="marker:none" overflow="visible" opacity=".1"/>
+        <path d="M32.002 38.54c3.735.112 6.99-3.492 6.497-7.198-.272-3.723-4.178-6.592-7.813-5.731-3.672.646-6.137 4.81-4.922 8.34.8 2.677 3.44 4.63 6.238 4.59z" style="marker:none" overflow="visible" opacity=".1"/>
+    </g>
+</svg>
