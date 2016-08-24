@@ -1,4 +1,4 @@
-/* global ga releaseTitle releaseVersion releaseFilename downloadLink stripeKey StripeCheckout downloadRegion */
+/* global ga releaseTitle releaseVersion releaseFilename downloadLink downloadRegion stripeKey StripeCheckout WebTorrent */
 
 $(function () {
     // Set defaults
@@ -200,8 +200,8 @@ $(function () {
         doWebtorrentDownload()
     }
 
-    //// UTILITY: doWebtorrentDownload: Start the WebTorrent download.
-    function doWebtorrentDownload() {
+    // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
+    function doWebtorrentDownload () {
         if (WebTorrent.WEBRTC_SUPPORT) {
             $('#download-webtorrent').show()
             $('#download-direct').hide()
@@ -225,46 +225,51 @@ $(function () {
                         'udp://tracker.publicbt.com:80/announce',
                         'wss://tracker.openwebtorrent.com',
                         'wss://tracker.webtorrent.io',
-                        'wss://tracker.btorrent.xyz',
-                    ],
+                        'wss://tracker.btorrent.xyz'
+                    ]
                 },
                 onTorrent
             )
-            function onTorrent (torrent) {
-                torrent.on('error', function (err) {
-                    console.error('TERROR: ' + err.message)
-                })
-                console.log('Download started.')
-                torrent.addWebSeed('https:' + downloadLink + releaseFilename)
-                var file = torrent.files[0] // There should only ever be one file.
-                if (window.ga) {
-                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
-                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
-                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
-                    ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
-                }
-                // Print out progress every second
-                c = 0
-                var interval = setInterval(function () {
-                    var progress = (torrent.progress * 100).toFixed(1)
-                    console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining)
-                    $('.progress').width(progress + '%')
-                    $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining')
-                    // If after 10 seconds there is less than 1% progress, display an alternative.
-                    if ( c++ > 10 && progress < 1 ) {
-                        $('#download-alternative').show()
-                    }
-                }, 1000)
-                // Stop printing out progress.
-                torrent.on('done', function () {
-                    console.log('Progress: 100%')
-                    // TODO Offer to save file.
-                    $('.counter').text('Complete')
-                    clearInterval(interval)
-                })
-            }
             console.log('Download started?')
         }
+    }
+
+    // onTorrent: Handles WebSeed addition and tracking, as well as progress bars and the save button.
+    function onTorrent (torrent) {
+        torrent.on('error', function (err) {
+            console.error('TERROR: ' + err.message)
+        })
+        console.log('Download started.')
+        torrent.addWebSeed('https:' + downloadLink + releaseFilename)
+        var file = torrent.files[0] // There should only ever be one file.
+        if (window.ga) {
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
+        }
+        // Print out progress every second
+        var c = 0
+        var interval = setInterval(
+            function () {
+                var progress = (torrent.progress * 100).toFixed(1)
+                console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining)
+                $('.progress').width(progress + '%')
+                $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000 ).toFixed() + ' seconds remaining')
+                // If after 10 seconds there is less than 1% progress, display an alternative.
+                if (c++ > 10 && progress < 1) {
+                    $('#download-alternative').show()
+                }
+            },
+            1000
+        )
+        // Stop printing out progress.
+        torrent.on('done', function () {
+            console.log('Progress: 100%')
+            // TODO Offer to save file.
+            $('.counter').text('Complete')
+            clearInterval(interval)
+        })
     }
 
     console.log('Loaded download.js')
