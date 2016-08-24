@@ -14,7 +14,7 @@
         'scripts/slingshot.js' => array(
             'async' => true
         ),
-        'scripts/webtorrent.js' => array(
+        'scripts/download.js' => array(
             'async' => false
         ),
         'scripts/slider.run.js' => array(
