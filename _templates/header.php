@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Droid+Sans|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
@@ -99,7 +99,7 @@ $l10n->begin_html_translation();
 
         <script>
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
             <?php foreach ($page['script-plugins'] as $script) { ?>
             jQl.loadjQdep("<?php echo $script ?>")
             <?php } ?>
