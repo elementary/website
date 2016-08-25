@@ -211,8 +211,8 @@
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
-                        <div class="pantheon">
-                            <div class="app-display__image window dark" type="terminal">
+                        <div class="app-display__image pantheon">
+                            <div class="window dark active" type="terminal">
                                 <div class="titlebar">
                                     <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
                                     <span class="title">Home</span>
@@ -226,6 +226,9 @@
                                     <div class="tabs">
                                         <div class="tab active">
                                             <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
+                                            <span class="title">Home</span>
+                                        </div>
+                                        <div class="tab">
                                             <span class="title">Home</span>
                                         </div>
                                     </div>
