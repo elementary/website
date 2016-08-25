@@ -158,18 +158,18 @@ input:focus + .focus-reveal {
 #showcase #showcase-grid li {
     display: inline-block;
     padding: 0;
-    margin: 32px;
+    margin: 22px;
 }
 
 @media (max-width: 320px) {
     #showcase #showcase-grid li {
-        margin: 22px;
+        margin: 26px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 512px) {
+@media (min-width: 425px) {
     #showcase #showcase-grid li {
-        margin: 16px;
+        margin: 32px;
     }
 }
 
