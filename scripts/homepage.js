@@ -291,15 +291,16 @@ $(function () {
                 $('#slingshot-search').addClass('active')
                 $('.slingshot .clear-icon').removeClass('inactive')
                 $('.slingshot .search-term').removeClass('inactive')
-                $('.searchone').removeClass('inactive')
+                $('.searchone').addClass('active')
                 setTimeout(function () {
-                    $('.searchone').addClass('inactive')
-                    $('.searchtwo').removeClass('inactive')
+                    $('.searchone').removeClass('active')
+                    $('.searchtwo').addClass('active')
                 }, 700)
                 setTimeout(function () {
-                    $('.searchtwo').addClass('inactive')
-                    $('.searchthree').removeClass('inactive')
+                    $('.searchtwo').removeClass('active')
+                    $('.searchthree').addClass('active')
                 }, 1200)
+                $('.searchthree').removeClass('active')
                 $('.slingshot .linked').addClass('inactive')
                 $('.slingshot .entry').addClass('expanded')
             } else if ($('#slingshot-search').hasClass('active')) {

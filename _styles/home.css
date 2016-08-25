@@ -521,13 +521,13 @@ img.result-img {
 .searchone,
 .searchtwo,
 .searchthree {
-    display: block;
+    display: none;
 }
 
-.searchone.inactive,
-.searchtwo.inactive,
-.searchthree.inactive {
-    display: none;
+.searchone.active,
+.searchtwo.active,
+.searchthree.active {
+    display: block;
 }
 
 .slingshot-search-results {
