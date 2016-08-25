@@ -97,11 +97,6 @@ input:focus + .focus-reveal {
     padding: 0 32px;
 }
 
-@media (min-width: 600px) {
-    max-width: 664px;
-    padding: 0 64px;
-}
-
 @media (min-width: 1000px) {
     .app-display__image {
         order: 2;
@@ -120,6 +115,7 @@ input:focus + .focus-reveal {
 
     .app-display--horizontal .app-display__description {
         flex: 1 0 auto;
+        padding: 0 0 0 64px;
     }
 }
 
