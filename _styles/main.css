@@ -472,8 +472,10 @@ footer ul li a:focus {
     width: auto;
 }
 
-.grid > * {
-    margin: 16px;
+.grid .half,
+.grid .third,
+.grid .two-thirds {
+    padding: 16px;
 }
 
 .grid .grid {
@@ -484,7 +486,7 @@ footer ul li a:focus {
     .grid .half {
         display: inline-block;
         vertical-align: top;
-        width: calc(50% - 48px);
+        width: 49%;
     }
 
     .grid .half h2 {
@@ -492,21 +494,15 @@ footer ul li a:focus {
     }
 
     .grid .third {
-        width: calc(33.33% - 32px);
+        width: 33%;
         display: inline-block;
         vertical-align: top;
-        margin-right: 16px;
-    }
-
-    .grid .third:last-child {
-        margin-left: 16px;
-        margin-right: 0;
     }
 
     .grid .two-thirds {
         display: inline-block;
         vertical-align: top;
-        width: calc(66% - 48px);
+        width: 66%;
     }
 
     .grid *:only-child p {
