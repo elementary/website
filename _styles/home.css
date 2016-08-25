@@ -119,7 +119,7 @@ input:focus + .focus-reveal {
     }
 
     .app-display--horizontal .app-display__description {
-        flex: 0 0 auto;
+        flex: 1 0 auto;
     }
 }
 
@@ -283,6 +283,18 @@ input:focus + .focus-reveal {
     display: flex;
     justify-content: center;
     padding: 48px 0;
+}
+
+#appcenter .app-display {
+    max-width: 1300px;
+    overflow: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 2000px) {
+    #appcenter .app-display {
+        max-width: 100%;
+    }
 }
 
 #appcenter .app-display__description img {
