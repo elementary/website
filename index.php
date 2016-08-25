@@ -3,15 +3,19 @@
 
     $page['script-plugins'] = array(
         'https://cdn.jsdelivr.net/bluebird/3.4.1/bluebird.min.js',
-        'scripts/jQuery.leanModal2.js',
-        'scripts/showcase.js',
-        'scripts/terminal.js'
+        'scripts/jQuery.leanModal2.js'
     );
 
     $page['scripts'] = array(
         'https://checkout.stripe.com/checkout.js' => array(
             'data-alipay' => 'auto',
             'data-locale' => 'auto',
+            'async' => false
+        ),
+        'scripts/showcase.js' => array(
+            'async' => false
+        ),
+        'scripts/terminal.js' => array(
             'async' => false
         ),
         'scripts/homepage.js' => array(
