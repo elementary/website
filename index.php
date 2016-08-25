@@ -273,7 +273,7 @@
             </div>
         </section>
         <section id="appcenter">
-            <div class="app-display app-display--horizontal">
+            <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/128/system-software-install.svg" />
@@ -283,9 +283,9 @@
                 </div>
             </div>
         </section>
-        <section class="grey">
-            <div id="slingshot" class="row">
-                <div class="column vertical-top">
+        <section id="slingshot" class="grey">
+            <div class="app-display app-display--horizontal">
+                <div class="app-display__image">
                     <div id="slingshot-label">Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column half vertical-top text-left">
+                <div class="app-display__description">
                     <h2>3 Ways to Explore</h2>
                     <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
                     <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
