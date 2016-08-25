@@ -2,8 +2,7 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/bluebird/3.4.1/bluebird.min.js',
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5',
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,bluebird@3.4.1',
         'scripts/showcase.js',
         'scripts/terminal.js'
     );

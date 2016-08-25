@@ -47,5 +47,5 @@ $(function () {
         }
     })
 
-    console.log('Loaded slider.run.js')
+    console.log('Loaded showcase.run.js')
 })
