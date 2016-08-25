@@ -325,13 +325,9 @@
                             </div>
                         </div>
                         <div id="slingshot-search" class="next view">
-                            <span class="results-title">Applications</span>
-                            <div class="slingshot-search-results searchone inactive">
-                            </div>
-                            <div class="slingshot-search-results searchtwo inactive">
-                            </div>
-                            <div class="slingshot-search-results searchthree inactive">
-                            </div>
+                            <div class="searchone inactive"></div>
+                            <div class="searchtwo inactive"></div>
+                            <div class="searchthree inactive"></div>
                         </div>
                     </div>
                 </div>

@@ -249,16 +249,28 @@ $(function () {
                 $(categoriesitems).appendTo('.slingshot-categories')
             })
             $.each(data.searchone, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchone')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchone')
             })
             $.each(data.searchtwo, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchtwo')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchtwo')
             })
             $.each(data.searchthree, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchthree')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchthree')
             })
         })
     })
@@ -281,11 +293,11 @@ $(function () {
                 $('.slingshot .search-term').removeClass('inactive')
                 $('.searchone').removeClass('inactive')
                 setTimeout(function () {
-                    $('.slingshot-search-results').addClass('inactive')
+                    $('.searchone').addClass('inactive')
                     $('.searchtwo').removeClass('inactive')
                 }, 700)
                 setTimeout(function () {
-                    $('.slingshot-search-results').addClass('inactive')
+                    $('.searchtwo').addClass('inactive')
                     $('.searchthree').removeClass('inactive')
                 }, 1200)
                 $('.slingshot .linked').addClass('inactive')

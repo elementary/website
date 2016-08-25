@@ -513,10 +513,21 @@ input:focus + .focus-reveal {
 
 img.result-img {
     display: inline-block;
-    float: left;
     height: 32px;
     margin-right: 12px;
     width: 32px;
+}
+
+.searchone,
+.searchtwo,
+.searchthree {
+    display: block;
+}
+
+.searchone.inactive,
+.searchtwo.inactive,
+.searchthree.inactive {
+    display: none;
 }
 
 .slingshot-search-results {
@@ -530,10 +541,6 @@ img.result-img {
     text-align: left;
     text-shadow: none;
     width: 100%;
-}
-
-.slingshot-search-results.inactive {
-    display: none;
 }
 
 span.search-term,
@@ -587,15 +594,17 @@ span.results-title {
 }
 
 .search-result {
-    border-radius: 5px;
     display: block;
-    margin-left: 12px;
-    margin-right: 12px;
     padding: 4px 16px;
 }
 
-.search-result:first-child {
+.slingshot-search-results:first-of-type .search-result:first-child {
     background-color: #c4c4c4;
+}
+
+.search-result * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /**********

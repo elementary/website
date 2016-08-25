@@ -24,24 +24,41 @@
     ]
 ,
     "searchone": [
-        {"icon":"postscript-viewer","title":"<b>D</b>ocument Viewer"},
-        {"icon":"preferences-system-time","title":"<b>D</b>ate & Time"},
-        {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
-        {"icon":"applets-screenshooter","title":"Screenshot"},
-        {"icon":"software-properties","title":"Software & Up<b>d</b>ates"},
-        {"icon":"system-software-update","title":"Software Up<b>d</b>ater"}
+        {"title": "Applications", "items": [
+            {"icon":"archive","title":"Archive Manager"},
+            {"icon":"multi","title":"Multitasking View"},
+            {"icon":"onboard","title":"Onboar<b>d</b>"},
+            {"icon":"onboard","title":"Onboar<b>d</b> Settings"},
+            {"icon":"switchboard","title":"System Settings"},
+            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
+            {"icon":"camera","title":"Camera"},
+            {"icon":"document","title":"<b>D</b>ocument Viewer"},
+            {"icon":"file","title":"Files"}
+        ]}
     ]
 ,
     "searchtwo": [
-        {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
-        {"icon":"office-calendar","title":"Calen<b>da</b>r"},
-        {"icon":"software-properties","title":"Software & Up<b>da</b>tes"},
-        {"icon":"system-software-update","title":"Software Up<b>da</b>ter"}
+        {"title": "Applications", "items": [
+            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>da</b>r"}
+        ]},
+        {"title": "Settings", "items": [
+            {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
+            {"icon":"preferences-displays","title":"<b>D</b>ispl<b>a</b>ys"}
+        ]},
+        {"title": "Application Actions", "items": [
+            {"icon":"office-calendar","title":"About Calendar"}
+        ]}
     ]
 ,
     "searchthree": [
-        {"icon":"preferences-system-time","title":"<b>Dat</b>e & Time"},
-        {"icon":"software-properties","title":"Software & Up<b>dat</b>es"},
-        {"icon":"system-software-update","title":"Software Up<b>dat</b>er"}
+        {"title": "Applications", "items": [
+            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>da</b>r"}
+        ]},
+        {"title": "Settings", "items": [
+            {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"}
+        ]}
     ]
 }
