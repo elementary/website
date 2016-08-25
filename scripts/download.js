@@ -255,10 +255,10 @@ $(function () {
                 var progress = (torrent.progress * 100).toFixed(1)
                 console.log('Progress: ' + progress + '% - ' + torrent.timeRemaining)
                 $('.progress').width(progress + '%')
-                $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000).toFixed() + ' seconds remaining')
+                $('.counter').html('<span class="float-left">' + progress + '% downloaded</span> <span class="float-right">' + (torrent.timeRemaining / 1000).toFixed() + ' seconds remaining</span>')
                 // If after 10 seconds there is less than 0.01% progress, display an alternative.
                 console.log('c=' + c + ' & progress=' + torrent.progress)
-                if (c++ > 10 && torrent.progress < 1) {
+                if (c++ > 10 && progress < 1) {
                     $('#download-alternative').show()
                 }
             },
@@ -274,7 +274,7 @@ $(function () {
             // Offer to save file.
             file.getBlobURL(function (err, url) {
                 if (err) throw err
-                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('href', url)
+                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
             })
         })
     }

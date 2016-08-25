@@ -258,10 +258,11 @@
                 <div id="download-webtorrent" style="display:none;">
                     <h3>Downloading</h3>
                     <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
+                    <br>
                     <div class="bar-container" style="border:1px solid #08c;border-radius:3px">
                         <div class="bar progress" style="height:1rem;background:#08c;width:0%"></div>
                     </div>
-                    <p class="counter">Starting your download&hellip;</p>
+                    <div class="counter"><p>Starting your download&hellip;</p></div>
                     <div id="download-alternative" style="display:none;">
                         <p>Problems downloading? <a class="webtorrent-stop download-link http-link" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
                     </div>

@@ -973,6 +973,10 @@ i.fa.fa-close.close-modal {
     float: left;
     margin: 0 0.5em 0.5em 0;
 }
+.float-right {
+    float: right;
+    margin: 0 0 0.5em 0.5em;
+}
 
 .clear,
 .clear-both {
