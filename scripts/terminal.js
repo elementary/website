@@ -13,8 +13,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  *   term.js (https://github.com/chjj/term.js)
  */
 
-$ = $ || window.jQuery;
-
 /**
  * Here lies some basic commands that are included by default
  *
