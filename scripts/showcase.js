@@ -134,3 +134,5 @@
     // Export API
     global.Showcase = Showcase
 })(window)
+
+console.log('Loaded showcase.js')

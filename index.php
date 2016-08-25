@@ -3,7 +3,9 @@
 
     $page['script-plugins'] = array(
         'https://cdn.jsdelivr.net/bluebird/3.4.1/bluebird.min.js',
-        'scripts/jQuery.leanModal2.js'
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5',
+        'scripts/showcase.js',
+        'scripts/terminal.js'
     );
 
     $page['scripts'] = array(
@@ -12,14 +14,14 @@
             'data-locale' => 'auto',
             'async' => false
         ),
-        'scripts/showcase.js' => array(
-            'async' => false
+        'scripts/slingshot.js' => array(
+            'async' => true
         ),
-        'scripts/terminal.js' => array(
-            'async' => false
+        'scripts/download.js' => array(
+            'async' => true
         ),
-        'scripts/homepage.js' => array(
-            'async' => false
+        'scripts/showcase.run.js' => array(
+            'async' => true
         )
     );
 
@@ -83,7 +85,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label">0.4 Loki | 1.15 GB (for PC or Mac)</p>
+                <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.15 GB (for PC or Mac)</p>
             </div>
         </section>
         <section class="grid">
@@ -369,12 +371,12 @@
             <p>We recommend 64-bit for most modern computers. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             <div class="row actions">
                 <div class="column linked">
-                    <a class="button close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso">Freya 32-bit</a>
-                    <a class="button close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
+                    <a class="button close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso">Freya 32-bit</a>
+                    <a class="button close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:001b104e49d517cf7a41593a73c3861b7c8e34f8&dn=elementaryos-0.3.2-stable-i386.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-i386.20151209.iso"><i class="fa fa-magnet"></i></a>
                 </div>
                 <div class="column linked">
-                    <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Freya 64-bit</a>
-                    <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
+                    <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso">Freya 64-bit</a>
+                    <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:fce720af722a813a184c5550a924aaa60a8d9af1&dn=elementaryos-0.3.2-stable-amd64.20151209.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.3.2-stable-amd64.20151209.iso"><i class="fa fa-magnet"></i></a>
                 </div>
             </div>
         </div>

@@ -4,6 +4,14 @@
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
+    $page['script-plugins'] = array(
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
+    );
+    $page['scripts'] = array(
+        'scripts/developer.js' => array(
+            'async' => true
+        )
+    );
     $page['styles'] = array(
         'styles/developer.css'
     );
@@ -14,10 +22,6 @@
 <script>var releaseTitle = 'Loki'</script>
 <script>var releaseVersion = '0.4-beta2'</script>
 <script>var downloadRegion = '<?php echo $region; ?>'</script>
-<script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-    jQl.loadjQdep('scripts/developer.js')
-</script>
 
 <section class="hero dark">
     <div>
@@ -126,8 +130,8 @@
                 <a class="button close-modal" href="#">Cancel</a>
             </div>
             <div class="column linked">
-                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
-                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
+                <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
+                <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
             </div>
         </div>
     </div>
