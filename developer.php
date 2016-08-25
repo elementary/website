@@ -9,7 +9,7 @@
     );
     $page['scripts'] = array(
         'scripts/developer.js' => array(
-            'async' => false
+            'async' => true
         )
     );
     $page['styles'] = array(

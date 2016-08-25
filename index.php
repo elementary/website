@@ -15,10 +15,10 @@
             'async' => true
         ),
         'scripts/download.js' => array(
-            'async' => false
+            'async' => true
         ),
         'scripts/slider.run.js' => array(
-            'async' => false
+            'async' => true
         )
     );
 
