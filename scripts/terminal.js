@@ -56,9 +56,7 @@ commands[/^rm -rf \/$/] = function (cmd, term) {
   return new Promise(function (resolve, reject) {
     var text = cmd.match(/(["'])[^]*?\1/)[0];
 
-    return resolve(term.append('no')).then(function () {
-      return 0;
-    });
+    return resolve(0);
   });
 };
 
@@ -66,7 +64,7 @@ commands[/^cd/] = function (cmd, term) {
   return new Promise(function (resolve, reject) {
     var split = cmd.split(' ');
 
-    return 0;
+    return resolve(0);
   });
 };
 
@@ -228,9 +226,11 @@ var Terminal = function () {
 
         var key = e.which;
 
-        if (key === 8) {
+        console.log(key)
+
+        if (key === 8 || key === 32) {
           e.preventDefault();
-          _this.keyper(8);
+          _this.keyper(key);
         } else if (key === 13) {
           e.preventDefault();
           _this.process();
