@@ -192,17 +192,16 @@ img.inline {
 .read-more::after {
     color: inherit;
     content: "";
+    display: inline-block;
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
-    margin-top: 0.05em;
     padding-left: 6px;
-    position: absolute;
-    transition: padding 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
 }
 
 .read-more:hover::after {
-    padding-left: 10px;
+    transform: translateX(10px);
 }
 
 .text-left {
