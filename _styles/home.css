@@ -92,14 +92,14 @@ input:focus + .focus-reveal {
     justify-content: center;
 }
 
-.app-display__image {
-    min-width: 300px;
+.app-display__description {
+    max-width: 600px;
+    padding: 0 32px;
 }
 
-.app-display__description {
-    min-width: 300px;
-    max-width: 564px;
-    padding: 0 32px;
+@media (min-width: 600px) {
+    max-width: 664px;
+    padding: 0 64px;
 }
 
 @media (min-width: 1000px) {
