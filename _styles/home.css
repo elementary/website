@@ -360,7 +360,6 @@ input:focus + .focus-reveal {
         0 3px 6px rgba(0, 0, 0, 0.23);
     display: inline-block;
     height: 512px;
-    margin-right: 24px;
     padding: 12px;
     pointer-events: none;
     transition: all 200ms ease-out;
