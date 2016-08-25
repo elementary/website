@@ -274,7 +274,7 @@ $(function () {
             // Offer to save file.
             file.getBlobURL(function (err, url) {
                 if (err) throw err
-                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('href', url);
+                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('href', url)
             })
         })
     }
