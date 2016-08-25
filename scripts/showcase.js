@@ -1,135 +1,136 @@
 (function (global) {
-
     /**
-     * A showcase slider for elementary homepage.
-     * @param {Object} options - Slider options.
-     * @param {String} options.container - The slider container.
-     * @param {String} options.index - The container holding all the choices.
-     * @param {String[]} options.slides - The slider choices selectors.
-     * @param {Boolean} options.fixed - Update container height based on slide.
-     */
-    var Showcase = function(options) {
-        this.container = options.container || '#showcase';
-        this.index = options.index || '#showcase-index';
-        this.slides = options.slides;
-        this.fixed = options.fixed;
+    * A showcase slider for elementary homepage.
+    * @param {Object} options - Slider options.
+    * @param {String} options.container - The slider container.
+    * @param {String} options.index - The container holding all the choices.
+    * @param {String[]} options.slides - The slider choices selectors.
+    * @param {Boolean} options.fixed - Update container height based on slide.
+    */
+    var Showcase = function (options) {
+        this.container = options.container || '#showcase'
+        this.index = options.index || '#showcase-index'
+        this.slides = options.slides
+        this.fixed = options.fixed
 
-        this.current = null;
+        this.current = null
 
         // initial setup
-        var that = this;
+        var that = this
 
         for (var i = 0; i < this.slides.length; i++) {
-            var n = this.slides[i];
-            var $iChoice = $("[href$='" + n + "']" , this.container);
+            var n = this.slides[i]
+            var $iChoice = $("[href$='" + n + "']", this.container)
 
-            $("#" + n, this.container).prepend('<div class="showcase-back"></div>');
+            $('#' + n, this.container).prepend('<div class="showcase-back"></div>')
 
             // each choice button
-            $iChoice.on("click", function(e) {
-                e.preventDefault();
-                that.slideTo($(this).attr("href").split("#").pop()); // slide on click of button
-            });
+            $iChoice.on('click', function (e) {
+                e.preventDefault()
+                that.slideTo($(this).attr('href').split('#').pop()) // slide on click of button
+            })
         }
 
-        $(window).resize(function() {
-            that.resize();
-        });
+        $(window).resize(function () {
+            that.resize()
+        })
 
-        $(window).on("hashchange", function(e) {
+        $(window).on('hashchang', function (e) {
             var hash = window.location.hash.split('#')[1]
             if (that.slides.indexOf(hash) !== -1) {
-              that.slideTo(hash)
+                that.slideTo(hash)
             } else if (that.current !== 'index') {
-                that.slideTo('index');
+                that.slideTo('index')
             }
-        });
+        })
 
-        $(that.container).addClass('initialized');
+        $(that.container).addClass('initialized')
 
         var hash = window.location.hash.split('#')[1]
         if (that.slides.indexOf(hash) !== -1) {
-            that.slideTo(hash);
+            that.slideTo(hash)
         } else {
-            that.slideTo('index');
+            that.slideTo('index')
         }
-    };
+    }
 
     /**
-     * Show a specific slide.
-     * @param {String} rSlide The slide id.
-     */
-    Showcase.prototype.slideTo = function(rSlide) {
+    * Show a specific slide.
+    * @param {String} rSlide The slide id.
+    */
+    Showcase.prototype.slideTo = function (rSlide) {
         if (rSlide !== 'index' && this.slides.indexOf(rSlide) === -1) { // could not find requested slide
-            return console.log("ERROR: could not find requested slide '" + rSlide + "'"); // log an error
+            return console.log("ERROR: could not find requested slide '" + rSlide + "'") // log an error
         }
 
         if (rSlide === 'index') {
-            $(this.index, this.container).addClass("active");
+            $(this.index, this.container).addClass('active')
         } else {
-            $(this.index, this.container).removeClass("active");
+            $(this.index, this.container).removeClass('active')
         }
 
         // iterates through slides based on this.slides
         for (var i = 0; i < this.slides.length; i++) {
-            var n = this.slides[i];
-            var $n = $("#" + n, this.container); // current iterated slide
+            var n = this.slides[i]
+            var $n = $('#' + n, this.container) // current iterated slide
 
-            if (n == rSlide) { // if correct slide
-                $n.addClass("active");
+            if (n === rSlide) { // if correct slide
+                $n.addClass('active')
             } else {
-                $n.removeClass("active");
+                $n.removeClass('active')
             }
-        };
+        }
 
         if (rSlide === 'index') {
             window.history.replaceState(undefined, undefined, '.')
         } else {
-            window.history.pushState(undefined, undefined, '#' + rSlide);
+            window.history.pushState(undefined, undefined, '#' + rSlide)
         }
 
-        this.current = rSlide;
+        this.current = rSlide
         $(this.container).trigger('change', {
-          active: rSlide
-        });
+            active: rSlide
+        })
 
         if (this.current !== 'index') {
-            $("body").animate({
+            $('body').animate({
                 scrollTop: $(this.container).offset().top
-            }, 100);
+            }, 100)
         }
 
-        this.resize(); // resize the container
-    };
+        this.resize() // resize the container
+    }
 
     /**
-     * Reset height of container
-     */
-    Showcase.prototype.resize = function() {
+    * Reset height of container
+    */
+    Showcase.prototype.resize = function () {
+        var height = 0
+
         if (this.fixed) { // if the container should be a fixed height
-            var height = $(this.index, this.container).outerHeight(true);
+            height = $(this.index, this.container).outerHeight(true)
 
             // iterates through slides
-            $.each(this.slides, function(i, n) {
-                var $iSlide = $("#" + n, this.container); // current iterated slide
+            $.each(this.slides, function (i, n) {
+                var $iSlide = $('#' + n, this.container) // current iterated slide
 
                 if ($iSlide.outerHeight(true) > height) { // new tallest slide
-                    height = $iSlide.outerHeight(true);
+                    height = $iSlide.outerHeight(true)
                 }
-            });
+            })
 
-            $(this.container).height(height); // set fixed height
+            $(this.container).height(height) // set fixed height
         } else { // resize container based on slide
             if (this.current === 'index') {
-                var height = $(this.index, this.container).outerHeight(true);
+                height = $(this.index, this.container).outerHeight(true)
             } else {
-                var height = $("#" + this.current, this.container).outerHeight(true);
+                height = $('#' + this.current, this.container).outerHeight(true)
             }
 
-            $(this.container).height(height); // set height
+            $(this.container).height(height) // set height
         }
-    };
+    }
 
     // Export API
-    global.Showcase = Showcase;
-})(window);
+    global.Showcase = Showcase
+})(window)

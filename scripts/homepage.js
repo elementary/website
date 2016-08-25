@@ -212,7 +212,7 @@ $(function () {
         var terminal = new Terminal()
         terminal.onHold = ($(window).width() <= 1050)
 
-        $('#showcase .showcase-tab .showcase-back').on('click', function(e) {
+        $('#showcase .showcase-tab .showcase-back').on('click', function (e) {
             e.preventDefault()
             showcase.slideTo('index')
         })
