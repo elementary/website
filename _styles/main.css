@@ -193,16 +193,16 @@ img.inline {
 .read-more::after {
     color: inherit;
     content: "";
+    display: inline-block;
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
-    left: 6px;
-    position: relative;
-    transition: left 0.15s ease-in-out;
+    padding-left: 6px;
+    transition: transform 0.15s ease-in-out;
 }
 
 .read-more:hover::after {
-    padding-left: 10px;
+    transform: translateX(10px);
 }
 
 .text-left {
@@ -365,7 +365,7 @@ footer > ul {
 }
 
 footer .popover {
-    margin: 12px 0;
+    margin: 12px;
 }
 
 @media (min-width: 375px) {
