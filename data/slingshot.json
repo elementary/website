@@ -25,27 +25,27 @@
 ,
     "searchone": [
         {"title": "Applications", "items": [
-            {"icon":"archive","title":"Archive Manager"},
-            {"icon":"multi","title":"Multitasking View"},
+            {"icon":"archive-manager","title":"Archive Manager"},
+            {"icon":"multitasking-view","title":"Multitasking View"},
             {"icon":"onboard","title":"Onboar<b>d</b>"},
             {"icon":"onboard","title":"Onboar<b>d</b> Settings"},
-            {"icon":"switchboard","title":"System Settings"},
-            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"preferences-desktop","title":"System Settings"},
+            {"icon":"system-software-install","title":"AppCenter"},
             {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
-            {"icon":"camera","title":"Camera"},
-            {"icon":"document","title":"<b>D</b>ocument Viewer"},
-            {"icon":"file","title":"Files"}
+            {"icon":"accessories-camera","title":"Camera"},
+            {"icon":"postscript-viewer","title":"<b>D</b>ocument Viewer"},
+            {"icon":"system-file-manager","title":"Files"}
         ]}
     ]
 ,
     "searchtwo": [
         {"title": "Applications", "items": [
-            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"system-software-install","title":"AppCenter"},
             {"icon":"office-calendar","title":"Calen<b>da</b>r"}
         ]},
         {"title": "Settings", "items": [
             {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
-            {"icon":"preferences-displays","title":"<b>D</b>ispl<b>a</b>ys"}
+            {"icon":"preferences-desktop-display","title":"<b>D</b>ispl<b>a</b>ys"}
         ]},
         {"title": "Application Actions", "items": [
             {"icon":"office-calendar","title":"About Calendar"}
@@ -54,7 +54,7 @@
 ,
     "searchthree": [
         {"title": "Applications", "items": [
-            {"icon":"AppCenter","title":"AppCenter"},
+            {"icon":"system-software-install","title":"AppCenter"},
             {"icon":"office-calendar","title":"Calen<b>da</b>r"}
         ]},
         {"title": "Settings", "items": [
