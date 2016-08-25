@@ -4,6 +4,14 @@
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
+    $page['script-plugins'] = array(
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
+    );
+    $page['scripts'] = array(
+        'scripts/developer.js' => array(
+            'async' => false
+        )
+    );
     $page['styles'] = array(
         'styles/developer.css'
     );
@@ -14,10 +22,6 @@
 <script>var releaseTitle = 'Loki'</script>
 <script>var releaseVersion = '0.4-beta2'</script>
 <script>var downloadRegion = '<?php echo $region; ?>'</script>
-<script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-    jQl.loadjQdep('scripts/developer.js')
-</script>
 
 <section class="hero dark">
     <div>

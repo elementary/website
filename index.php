@@ -2,7 +2,7 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'scripts/jQuery.leanModal2.js',
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5',
         'scripts/slider.js'
     );
 
