@@ -226,8 +226,6 @@ var Terminal = function () {
 
         var key = e.which;
 
-        console.log(key)
-
         if (key === 8 || key === 32) {
           e.preventDefault();
           _this.keyper(key);

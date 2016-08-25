@@ -11,7 +11,8 @@
     $page['scripts'] = array(
         'https://checkout.stripe.com/checkout.js' => array(
             'data-alipay' => 'auto',
-            'data-locale' => 'auto'
+            'data-locale' => 'auto',
+            'async' => false
         ),
         'scripts/homepage.js' => array(
             'async' => false

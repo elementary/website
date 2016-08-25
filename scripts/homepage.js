@@ -209,13 +209,13 @@ $(function () {
             fixed: false
         })
 
-        var terminal = new Terminal()
-        terminal.onHold = ($(window).width() <= 1050)
-
         $('#showcase .showcase-tab .showcase-back').on('click', function (e) {
             e.preventDefault()
             showcase.slideTo('index')
         })
+
+        var terminal = new Terminal()
+        terminal.onHold = ($(window).width() <= 1050)
 
         $('#showcase').on('change', function (e, d) {
             if (d != null && d.active === 'showcase-terminal') {
