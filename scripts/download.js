@@ -213,6 +213,7 @@ $(function () {
             // Add Torrent
             console.log('Starting Download')
             console.log('https:' + downloadLink + releaseFilename + '.torrent')
+            // TODO Wrap in a try
             client.add(
                 // OPTION: Torrent file name to get instant metadata.
                 'https:' + downloadLink + releaseFilename + '.torrent',
@@ -256,6 +257,7 @@ $(function () {
                 $('.progress').width(progress + '%')
                 $('.counter').text('' + progress + '% downloaded - ' + (torrent.timeRemaining / 1000).toFixed() + ' seconds remaining')
                 // If after 10 seconds there is less than 0.01% progress, display an alternative.
+                console.log('c=' + c + ' & progress=' + torrent.progress)
                 if (c++ > 10 && torrent.progress < 1) {
                     $('#download-alternative').show()
                 }
@@ -268,8 +270,12 @@ $(function () {
             // Stop the progress bar
             clearInterval(interval)
             $('.counter').text('Complete')
-            // TODO Offer to save file.
-            // var file = torrent.files[0] // There should only ever be one file.
+            var file = torrent.files[0] // There should only ever be one file.
+            // Offer to save file.
+            file.getBlobURL(function (err, url) {
+                if (err) throw err
+                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('href', url);
+            })
         })
     }
 
