@@ -5,6 +5,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
+ * INCLUDES MVP SPECIFIC CHANGES. RE: DON'T BLINDLY UPDATE FROM UPSTREAM.
+ * YOU WILL BREAK NOTIFICATIONS AND DEMO COMMANDS!
+ */
+
+/**
  * terminal.js
  * Written by Blake Kostner (btkostner.io)
  * Heavily inspired from these amazing projects
@@ -500,10 +505,18 @@ var Terminal = function () {
     value: function notify(cmd) {
       if (!this.$w.hasClass('active')) return;
 
-      var $note = $('[type="notification"]')
+      var $c = $('#notification-container');
+      var $p = $c.parent('.pantheon');
 
-      $('p', $note).text(cmd);
-      $note.parent().append($note.addClass('active'));
+      var $n = $('[type="notification"]', $c);
+      $('p', $n).text(cmd);
+      $n.addClass('active');
+
+      $p.show();
+      $c.append($n);
+      $n.one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) {
+        $p.hide();
+      });
     }
 
     /**

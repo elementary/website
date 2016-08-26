@@ -104,7 +104,7 @@
         </section>
         <section>
             <div id="showcase" class="row grey">
-                <div class="pantheon">
+                <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
                             <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/48/utilities-terminal.svg'); ?></span></div>
