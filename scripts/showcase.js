@@ -70,8 +70,6 @@
             var movementX = touchEndX - touchStartX
             var movementY = touchEndY - touchStartY
 
-            console.log(movementX, movementY)
-
             if (Math.abs(movementY) < (movementX / 3) && movementX > 100) {
                 that.slideTo('index')
             }

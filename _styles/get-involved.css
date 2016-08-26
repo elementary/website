@@ -145,14 +145,15 @@ section:nth-child(even) {
 }
 
 .charts .doughnuts-ctn {
+    margin: 16px 8px;
     min-width: 150px;
 }
 
 .charts .doughnuts-ctn .doughnut {
-    height: 90px;
+    height: 120px;
     margin: 15px auto;
     position: relative;
-    width: 90px;
+    width: 120px;
 }
 
 .charts .doughnuts-ctn .doughnut canvas {
@@ -166,7 +167,7 @@ section:nth-child(even) {
     padding: 11px 0;
     position: absolute;
     text-align: center;
-    top: 0;
+    top: 22px;
     width: 100%;
 }
 
