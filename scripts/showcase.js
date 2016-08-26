@@ -1,7 +1,7 @@
 (function (global) {
     /**
     * A showcase slider for elementary homepage.
-    * @param {Object} options - Slider options.
+    * @param {Object} options - Showcase options.
     * @param {String} options.container - The slider container.
     * @param {String} options.index - The container holding all the choices.
     * @param {String[]} options.slides - The slider choices selectors.
@@ -10,8 +10,8 @@
     var Showcase = function (options) {
         this.container = options.container || '#showcase'
         this.index = options.index || '#showcase-index'
-        this.slides = options.slides
-        this.fixed = options.fixed
+        this.slides = options.slides || []
+        this.fixed = options.fixed || false
 
         this.current = null
 
@@ -35,7 +35,7 @@
             that.resize()
         })
 
-        $(window).on('hashchang', function (e) {
+        $(window).on('hashchange', function (e) {
             var hash = window.location.hash.split('#')[1]
             if (that.slides.indexOf(hash) !== -1) {
                 that.slideTo(hash)
