@@ -268,10 +268,6 @@ input:focus + .focus-reveal {
     margin: 32px 32px 64px;
 }
 
-#showcase #notification-container {
-    position: absolute;
-}
-
 /************
 * AppCenter *
 ************/
