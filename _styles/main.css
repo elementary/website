@@ -501,6 +501,10 @@ footer ul li a:focus {
     padding: 0;
 }
 
+.grid .whole {
+    display: block;
+}
+
 @media only screen and (min-width: 640px) {
     .grid .half {
         display: inline-block;
