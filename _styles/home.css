@@ -147,6 +147,10 @@ input:focus + .focus-reveal {
     padding: 48px 0;
 }
 
+#showcase #showcase-index > div {
+    padding: 0 28px;
+}
+
 #showcase #showcase-grid {
     list-style: none;
     margin: auto;
@@ -157,11 +161,11 @@ input:focus + .focus-reveal {
 
 #showcase #showcase-grid li {
     display: inline-block;
-    margin: 22px;
+    margin: 16px;
     padding: 0;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
     #showcase #showcase-grid li {
         margin: 26px;
     }
@@ -195,7 +199,7 @@ input:focus + .focus-reveal {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 16px;
+    padding: 0 0 16px;
 }
 
 #showcase .showcase-tab .app-display__description > * {
@@ -244,7 +248,7 @@ input:focus + .focus-reveal {
 
 #showcase.initialized > div#showcase-index {
     transform: translate(-100%, 0);
-    padding: 48px 24px;
+    padding: 48px 0;
 }
 
 #showcase.initialized > div.showcase-tab {

@@ -116,8 +116,10 @@
                     </div>
                 </div>
                 <div id="showcase-index">
-                    <h2>Apps You Need, Without Ones You Don't.</h2>
-                    <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                    <div>
+                        <h2>Apps You Need, Without Ones You Don't.</h2>
+                        <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                    </div>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
                         <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
