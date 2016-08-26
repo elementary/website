@@ -122,19 +122,32 @@ function set_cart (array $c) {
  * @return Array list of cart items
  */
 function do_parse (array $c) {
-    $items = [];
+    $products = \Store\Product\do_open();
+    $f = [];
 
-    foreach($c as $name => $value) {
+    foreach ($c as $name => $value) {
         preg_match('/product-([0-9]+\-[0-9]+)-id/', $name, $matches);
 
         if ($matches && isset($c["product-$matches[1]-quantity"])) {
-            $items[$matches[1]] = array(
-                'quantity' => $c["product-$matches[1]-quantity"]
+            list($i, $v) = explode('-', $matches[1], 2);
+
+            $key = array_search($i, array_column($products, 'id'));
+            if ($key === null) continue;
+            $product = $products[$key];
+
+            $key = array_search($v, array_column($product['variants'], 'id'));
+            if ($key === null) continue;
+            $variant = $product['variants'][$key];
+
+            $f[$i . '-' . $v] = array(
+                'product' => $product,
+                'variant' => $variant,
+                'quantity' => intval($c["product-$matches[1]-quantity"])
             );
         }
     }
 
-    set_cart($items);
+    set_cart($f);
     return get_cart();
 }
 
