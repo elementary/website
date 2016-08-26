@@ -21,16 +21,16 @@ $(function () {
         var chart = {
             labels: [],
             datasets: [{
-                label: labels.fixed,
-                backgroundColor: colors.fixed,
+                label: labels.created,
+                backgroundColor: colors.created,
                 data: []
             }, {
                 label: labels.in_progress,
                 backgroundColor: colors.in_progress,
                 data: []
             }, {
-                label: labels.created,
-                backgroundColor: colors.created,
+                label: labels.fixed,
+                backgroundColor: colors.fixed,
                 data: []
             }]
         }
@@ -52,9 +52,9 @@ $(function () {
 
             chart.labels.push(dateLocalized)
 
-            chart.datasets[0].data.push(point.fixed || 0)
+            chart.datasets[0].data.push(point.created || 0)
             chart.datasets[1].data.push(point.in_progress || 0)
-            chart.datasets[2].data.push(point.created || 0)
+            chart.datasets[2].data.push(point.fixed || 0)
         }
         var lastPoint = point
 
@@ -97,9 +97,9 @@ $(function () {
                         label: function (data) {
                             var point = {
                                 date: data.xLabel,
-                                fixed: parseInt(this._data.datasets[0].data[data.index], 10),
+                                created: parseInt(this._data.datasets[0].data[data.index], 10),
                                 in_progress: parseInt(this._data.datasets[1].data[data.index], 10),
-                                created: parseInt(this._data.datasets[2].data[data.index], 10)
+                                fixed: parseInt(this._data.datasets[2].data[data.index], 10)
                             }
 
                             updateDoughnuts(point)
