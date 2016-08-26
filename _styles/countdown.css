@@ -4,17 +4,13 @@
 *************************************/
 
 .countdown-wrapper {
-    -ms-flex-align: center;
+    -webkit-user-select: none;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.95);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    display: -ms-flexbox;
+    background-color: rgba(255, 255, 255, 0.95);
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 100vh;
-    -ms-flex-pack: center;
     justify-content: center;
     left: 0;
     padding: 16px;
@@ -22,18 +18,16 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    -webkit-user-select: none;
 }
 
 .flip-clock-wrapper {
+    animation: show 2s ease-in forwards;
     margin: 128px 16px;
+    opacity: 0;
 }
 
 .flip-clock-wrapper * {
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
