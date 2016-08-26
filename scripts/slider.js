@@ -105,3 +105,5 @@
     // Export API
     global.Slider = Slider
 })(window)
+
+console.log('Loaded slider.js')

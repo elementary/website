@@ -2,7 +2,7 @@
 
 $l10n->set_domain('layout');
 
-$releaseDate = new DateTime('2017-01-01 22:00:00');
+$releaseDate = new DateTime('2016-09-05 22:00:00');
 
 if (
     (new DateTime() < $releaseDate) &&
@@ -22,6 +22,7 @@ if (
         var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($releaseDate)) ?>')
 
         var clock = $('.countdown').FlipClock(releaseDate, {
+            clockFace: 'DailyCounter',
             countdown: true
         })
 
