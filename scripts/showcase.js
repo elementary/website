@@ -21,8 +21,9 @@
         for (var i = 0; i < this.slides.length; i++) {
             var n = this.slides[i]
             var $iChoice = $("[href$='" + n + "']", this.container)
+            var $iContainer = $('#' + n, this.container)
 
-            $('#' + n, this.container).prepend('<div class="showcase-back"></div>')
+            $iContainer.prepend('<div class="showcase-back"></div>')
 
             // each choice button
             $iChoice.on('click', function (e) {
@@ -52,6 +53,32 @@
         } else {
             that.slideTo('index')
         }
+
+        // Listen for some cool mobile touch gestures
+        var touchStartX = null
+        var touchStartY = null
+
+        $(document).on('touchstart', this.container, function (e) {
+            touchStartX = e.touches[0].pageX
+            touchStartY = e.touches[0].pageY
+        })
+
+        $(document).on('touchend', function (e) {
+            var touchEndX = e.changedTouches[e.changedTouches.length - 1].pageX
+            var touchEndY = e.changedTouches[e.changedTouches.length - 1].pageY
+
+            var movementX = touchEndX - touchStartX
+            var movementY = touchEndY - touchStartY
+
+            console.log(movementX, movementY)
+
+            if (Math.abs(movementY) < (movementX / 3) && movementX > 100) {
+                that.slideTo('index')
+            }
+
+            touchStartX = null
+            touchStartY = null
+        })
     }
 
     /**
