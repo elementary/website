@@ -217,30 +217,33 @@
                 </div>
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
-                        <div class="app-display__image pantheon">
-                            <div class="window dark active" type="terminal">
-                                <div class="titlebar">
-                                    <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
-                                    <span class="title">Home</span>
-                                    <div>
-                                        <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
-                                        <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
-                                    </div>
-                                </div>
-                                <div class="tabbar">
-                                    <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
-                                    <div class="tabs">
-                                        <div class="tab active">
-                                            <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
-                                            <span class="title">Home</span>
-                                        </div>
-                                        <div class="tab">
-                                            <span class="title">Home</span>
+                        <div class="app-display__image">
+                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="terminal screenshot" />
+                            <div class="pantheon" style="display:none;">
+                                <div class="window dark active" type="terminal">
+                                    <div class="titlebar">
+                                        <span class="icon control" icon="actions/window-close"><?php include('images/pantheon/actions/window-close.svg'); ?></span>
+                                        <span class="title">Home</span>
+                                        <div>
+                                            <span class="icon search" icon="actions/system-search"><?php include('images/pantheon/actions/system-search.svg'); ?></span>
+                                            <span class="icon control" icon="actions/window-maximize"><?php include('images/pantheon/actions/window-maximize.svg'); ?></span>
                                         </div>
                                     </div>
-                                    <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                                    <div class="tabbar">
+                                        <span class="icon" icon="actions/tab-new"><?php include('images/pantheon/actions/tab-new.svg'); ?></span>
+                                        <div class="tabs">
+                                            <div class="tab active">
+                                                <span class="icon" icon="actions/close"><?php include('images/pantheon/actions/close.svg'); ?></span>
+                                                <span class="title">Home</span>
+                                            </div>
+                                            <div class="tab">
+                                                <span class="title">Home</span>
+                                            </div>
+                                        </div>
+                                        <span class="icon" icon="actions/document-open-recent"><?php include('images/pantheon/actions/document-open-recent.svg'); ?></span>
+                                    </div>
+                                    <div class="input"></div>
                                 </div>
-                                <div class="input"></div>
                             </div>
                         </div>
                         <div class="app-display__description">

@@ -261,10 +261,10 @@ input:focus + .focus-reveal {
 *******************/
 
 #showcase .pantheon .window[type="terminal"] {
-    height: 28vw;
-    max-height: 400px;
+    height: 36vw;
+    max-height: 600px;
     max-width: 800px;
-    width: 48vw;
+    width: 58vw;
     margin: 32px 32px 64px;
 }
 

@@ -1,5 +1,39 @@
 /* global Showcase Terminal */
 
+/*
+ * termSwitch
+ * Switches terminal with image and vise versa
+ *
+ * @param {Object} $c - terminal app-display__image jQuery object
+ * @param {Boolean} i - true if image should be visible
+ * @return {Void}
+ */
+var termSwitch = function ($c, i) {
+    if (i) {
+        $('.pantheon', $c).hide()
+        $('.pantheon--fallback', $c).show()
+    } else {
+        $('.pantheon--fallback', $c).hide()
+        $('.pantheon', $c).show()
+    }
+}
+
+/**
+ * termLock
+ * Determins if the terminal will be locked and switches if needed
+ *
+ * @param {Terminal} t - terminal class
+ * @return {Boolean} - true if terminal image is shown, false if interactive
+ */
+var termLock = function (t) {
+    var $c = t.$w.parents('.app-display__image')
+    var w = ($(window).innerWidth() <= 1000)
+
+    termSwitch($c, w)
+    t.onHold = w
+    return w
+}
+
 $(function () {
     var showcase = new Showcase({
         container: '#showcase',
@@ -25,26 +59,18 @@ $(function () {
     })
 
     var terminal = new Terminal()
-    terminal.onHold = ($(window).width() <= 1050)
+    termLock(terminal)
 
     $('#showcase').on('change', function (e, d) {
         if (d != null && d.active === 'showcase-terminal') {
-            terminal.$w.addClass('active')
+            termLock(terminal)
         } else {
-            terminal.$w.removeClass('active')
+            terminal.onHold = true
         }
     })
 
     $(window).on('resize', function () {
-        if ($(window).width() <= 1050) {
-            if (!terminal.onHold) {
-                terminal.onHold = true
-            }
-        } else {
-            if (terminal.onHold) {
-                terminal.onHold = false
-            }
-        }
+        termLock(terminal)
     })
 
     console.log('Loaded showcase.run.js')
