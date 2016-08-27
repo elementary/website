@@ -35,7 +35,6 @@ const scriptFiles = {
     'docs/main': 'docs/main.js',
     'download': 'download.js',
     'get-involved': 'get-involved.js',
-    'highlight.pack': 'highlight.pack.js',
     'main': 'main.js',
     'slider.run': 'slider.run.js',
     'slingshot': 'slingshot.js',

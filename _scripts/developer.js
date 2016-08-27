@@ -1,21 +1,26 @@
-/* global ga releaseTitle releaseVersion */
-
 /**
+ * _scripts/developer.js
  * Loki beta download hero
  */
 
-$(function () {
-    $('#download').bind('click', function (e) {
-        e.preventDefault()
-        $('.open-modal').leanModal({
-            closeButton: '.close-modal'
-        })
-        $('.open-modal').click()
-    })
+/* global ga releaseTitle releaseVersion */
 
-    $('#download-modal a.suggested-action').click(function () {
-        if (window.ga) {
-            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Beta)', 'Developer')
-        }
+import jQuery from 'lib/jquery'
+
+jQuery.then(($) => {
+    $(function () {
+        $('#download').bind('click', function (e) {
+            e.preventDefault()
+            $('.open-modal').leanModal({
+                closeButton: '.close-modal'
+            })
+            $('.open-modal').click()
+        })
+
+        $('#download-modal a.suggested-action').click(function () {
+            if (window.ga) {
+                ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Beta)', 'Developer')
+            }
+        })
     })
 })

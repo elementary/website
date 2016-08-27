@@ -1,37 +1,47 @@
-$(function () {
-    var $document
+/**
+ * _scripts/popover.js
+ * Creates a popover to show more information
+ */
 
-    $document = $(document)
+import jQuery from 'lib/jquery'
 
-    $document.on('click', '.popover > a', function (event) {
-        event.preventDefault()
 
-        var $body = $('body')
-        var $link = $(event.target)
-        var $popover = $link.parent()
-        var $content = $popover.find('.popover-content')
+jQuery.then(($) => {
+    $(function () {
+        var $document
 
-        $body.css({ 'overflow': 'hidden' })
+        $document = $(document)
 
-        $popover.addClass('active')
+        $document.on('click', '.popover > a', function (event) {
+            event.preventDefault()
 
-        $content.on('scroll touchmove mousewheel wheel', function (e) {
-            e.stopPropagation()
-        })
+            var $body = $('body')
+            var $link = $(event.target)
+            var $popover = $link.parent()
+            var $content = $popover.find('.popover-content')
 
-        var popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
-        $content.css({ left: popoverPos })
+            $body.css({ 'overflow': 'hidden' })
 
-        $document.one('click scroll touchmove mousewheel wheel', function (event) {
-            if (!$(event.target).is('.popover-content *')) {
-                event.stopImmediatePropagation()
-                event.preventDefault()
-            }
+            $popover.addClass('active')
 
-            $body.css({ 'overflow': 'visible' })
+            $content.on('scroll touchmove mousewheel wheel', function (e) {
+                e.stopPropagation()
+            })
 
-            $popover.removeClass('active')
-            $body.click()
+            var popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
+            $content.css({ left: popoverPos })
+
+            $document.one('click scroll touchmove mousewheel wheel', function (event) {
+                if (!$(event.target).is('.popover-content *')) {
+                    event.stopImmediatePropagation()
+                    event.preventDefault()
+                }
+
+                $body.css({ 'overflow': 'visible' })
+
+                $popover.removeClass('active')
+                $body.click()
+            })
         })
     })
 })
