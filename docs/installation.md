@@ -161,7 +161,7 @@ To create an elementary OS install drive on OS X you'll need a USB flash drive t
 
 The following dialog may appear during the flashing process, it is safe to ignore.
 
-![Not readable warning](images/docs/installation/osx_warning.png) 
+![Not readable warning](images/docs/installation/osx_warning.png)
 
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
@@ -225,8 +225,8 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
     ![UNetbootin](images/docs/installation/unetbootin.png)
 
 2. Select "Diskimage"
-2. Click "&#8230;" to select the ISO that you downloaded previously. 
-3. Unplug all USB memory devices apart from the one you want to use. 
+2. Click "&#8230;" to select the ISO that you downloaded previously.
+3. Unplug all USB memory devices apart from the one you want to use.
 4. Click "OK" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
@@ -247,5 +247,4 @@ In order to start the installation process, you must boot your computer from the
 Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
 <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
-<script type="text/javascript" src="scripts/slider.js"></script>
-<script type="text/javascript" src="scripts/docs/installation.js"></script>
+<script type="text/javascript" src="scripts/docs/installation.js" async></script>

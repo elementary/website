@@ -58,7 +58,6 @@ if (
 
         // Syntax highlighting
         $page['scripts'] = array(
-            'scripts/highlight.pack.js',
             'scripts/docs/main.js'
         );
 

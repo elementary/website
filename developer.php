@@ -4,13 +4,8 @@
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
-    $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
-    );
     $page['scripts'] = array(
-        'scripts/developer.js' => array(
-            'async' => true
-        )
+        'scripts/developer.js'
     );
     $page['styles'] = array(
         'styles/developer.css'
