@@ -3,7 +3,7 @@
 ////    Continents
 // NA   North america    Split by locale between NYC3 and SFO1
 // SA   South america    Split by IP hash between NYC3 and SFO1
-// EU   Europe           Split by IP hash between AMS3 and FRA1
+// EU   Europe           Split by locale between AMS3 and FRA1
 // AF   Africa           Split by IP hash between AMS3 and FRA1
 // AS   Asia             SGP1
 // OC   Oceania          SGP1
