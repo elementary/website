@@ -101,7 +101,7 @@ $l10n->begin_html_translation();
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
             jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
             // TODO Move to JSDelivr and File-combine
-            // https://cdn.jsdelivr.net/g/jquery@3,flipclock@0.7.8
+            // https://cdn.jsdelivr.net/g/jquery@3,flipclock@0.7.7
             jQl.loadjQdep('https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js')
             <?php foreach ($page['script-plugins'] as $script) { ?>
             jQl.loadjQdep("<?php echo $script ?>")
