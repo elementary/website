@@ -125,10 +125,10 @@ input:focus + .focus-reveal {
 *********************************/
 
 #showcase {
+    display: block;
     max-width: none;
     overflow: hidden;
     padding: 0;
-    position: relative;
 }
 
 #showcase > div {
@@ -236,19 +236,25 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
-    transition: height 0.1s ease-in-out;
+    position: relative;
+    transition: height 0.15s ease-in-out;
 }
 
 #showcase.initialized > div {
     position: absolute;
+    top: 0;
     transition: transform 0.15s ease-in-out;
     width: 100%;
     will-change: transform;
 }
 
 #showcase.initialized > div#showcase-index {
-    transform: translate(-100%, 0);
+    left: -100%;
     padding: 48px 0;
+}
+
+#showcase.initialized > div#showcase-index.active {
+    transform: translate(100%, 0);
 }
 
 #showcase.initialized > div.showcase-tab {
@@ -256,11 +262,7 @@ input:focus + .focus-reveal {
     padding: 32px 24px 32px 64px;
 }
 
-#showcase.initialized > div#showcase-index.active {
-    transform: translate(0, 0);
-}
-
-#showcase.initialized > div.active {
+#showcase.initialized > div.showcase-tab.active {
     transform: translate(-100%, 0);
 }
 

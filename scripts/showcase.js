@@ -36,23 +36,9 @@
             that.resize()
         })
 
-        $(window).on('hashchange', function (e) {
-            var hash = window.location.hash.split('#')[1]
-            if (that.slides.indexOf(hash) !== -1) {
-                that.slideTo(hash)
-            } else if (that.current !== 'index') {
-                that.slideTo('index')
-            }
-        })
+        that.slideTo('index')
 
         $(that.container).addClass('initialized')
-
-        var hash = window.location.hash.split('#')[1]
-        if (that.slides.indexOf(hash) !== -1) {
-            that.slideTo(hash)
-        } else {
-            that.slideTo('index')
-        }
 
         // Listen for some cool mobile touch gestures
         var touchStartX = null
@@ -85,7 +71,7 @@
     */
     Showcase.prototype.slideTo = function (rSlide) {
         if (rSlide !== 'index' && this.slides.indexOf(rSlide) === -1) { // could not find requested slide
-            return console.log("ERROR: could not find requested slide '" + rSlide + "'") // log an error
+            return console.error("could not find requested slide '" + rSlide + "'") // log an error
         }
 
         if (rSlide === 'index') {
@@ -104,12 +90,6 @@
             } else {
                 $n.removeClass('active')
             }
-        }
-
-        if (rSlide === 'index') {
-            window.history.replaceState(undefined, undefined, '.')
-        } else {
-            window.history.pushState(undefined, undefined, '#' + rSlide)
         }
 
         this.current = rSlide
