@@ -488,7 +488,7 @@ Did you commit and push to launchpad for each step? Keep up these good habits an
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintaines a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
+1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
 
     ```bash
     bzr branch lp:~elementary-apps/+junk/debian-template
