@@ -462,7 +462,7 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
     ```bash 
     bzr add po/
-    bzr commit -m "Added translation files"
+    bzr commit -m "Add translation files"
     bzr push
     ```
 
