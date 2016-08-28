@@ -8,7 +8,7 @@ However, we strongly recommend to at least skim through this preparation step. H
 
 We're going to assume that you have absolutely no experience in writing apps for elementary. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
 
-We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
+We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines.md) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
 
 In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
@@ -50,11 +50,11 @@ If you're ready, let's get you set up to use Bazaar:
     sudo apt-get install bzr
     ```
 
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish; this is a requirement for Launchpad):
 
     ```bash
     sudo apt-get install openssh-client
-    ssh-keygen -t rsa
+    ssh-keygen -C rsa-key-bzr -t rsa
     ```
 
 4. When prompted, press Enter to accept the default file name for your key.
@@ -148,7 +148,7 @@ Now what you've been waiting for! We're going to create a window that contains a
         Gtk.main ();
         return 0;
 
-    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
+    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. Next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
 
 4. Now that we've defined a nice window, let's put a button inside of it. After our window stuff (but before `Gtk.main` line), leave a new line and then type the following:
 
@@ -286,7 +286,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
     ```bash
     bzr add data/hello.desktop
-    bzr commit -m "Added a .desktop file"
+    bzr commit -m "Add a .desktop file"
     bzr push
     ```
 
@@ -335,7 +335,8 @@ The next thing we need is a build system. The build system that we're going to b
         cmake_minimum_required (VERSION 2.6)
 
         # tell cmake where its modules can be found in our project directory
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules/src)
 
         # where we install data directory (if we have any)
         set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
@@ -412,7 +413,7 @@ If all went well, you should now be able to open your app from the Applications 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
 ## Review {#the-build-system-review}
-Let's review what all we've learned to do:
+Let's review all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
@@ -461,7 +462,7 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
     ```bash 
     bzr add po/
-    bzr commit -m "Added translation files"
+    bzr commit -m "Add translation files"
     bzr push
     ```
 
@@ -487,7 +488,7 @@ Did you commit and push to launchpad for each step? Keep up these good habits an
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintaines a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
+1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
 
     ```bash
     bzr branch lp:~elementary-apps/+junk/debian-template
