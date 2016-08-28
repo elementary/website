@@ -50,11 +50,11 @@ If you're ready, let's get you set up to use Bazaar:
     sudo apt-get install bzr
     ```
 
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish; this is a requirement for Launchpad):
 
     ```bash
     sudo apt-get install openssh-client
-    ssh-keygen -t rsa
+    ssh-keygen -C rsa-key-bzr -t rsa
     ```
 
 4. When prompted, press Enter to accept the default file name for your key.
