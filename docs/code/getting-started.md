@@ -413,7 +413,7 @@ If all went well, you should now be able to open your app from the Applications 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
 ## Review {#the-build-system-review}
-Let's review what all we've learned to do:
+Let's review all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
