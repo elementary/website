@@ -148,7 +148,7 @@ Now what you've been waiting for! We're going to create a window that contains a
         Gtk.main ();
         return 0;
 
-    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
+    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. Next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
 
 4. Now that we've defined a nice window, let's put a button inside of it. After our window stuff (but before `Gtk.main` line), leave a new line and then type the following:
 
@@ -286,7 +286,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
     ```bash
     bzr add data/hello.desktop
-    bzr commit -m "Added a .desktop file"
+    bzr commit -m "Add a .desktop file"
     bzr push
     ```
 
@@ -335,7 +335,8 @@ The next thing we need is a build system. The build system that we're going to b
         cmake_minimum_required (VERSION 2.6)
 
         # tell cmake where its modules can be found in our project directory
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules/src)
 
         # where we install data directory (if we have any)
         set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
