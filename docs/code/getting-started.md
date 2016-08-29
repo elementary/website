@@ -50,11 +50,11 @@ If you're ready, let's get you set up to use Bazaar:
     sudo apt install bzr
     ```
 
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish, but it's a requirement for Launchpad):
 
     ```bash
     sudo apt install openssh-client
-    ssh-keygen -t rsa
+    ssh-keygen -C rsa-key-bzr -t rsa
     ```
 
 4. When prompted, press Enter to accept the default file name for your key.
@@ -146,7 +146,7 @@ Now what you've been waiting for! We're going to create a window that contains a
         Gtk.main ();
         return 0;
 
-    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
+    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. Next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
 
 4. Now that we've defined a nice window, let's put a button inside of it. After our window stuff (but before `Gtk.main` line), leave a new line and then type the following:
 
@@ -284,7 +284,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
     ```bash
     bzr add data/hello.desktop
-    bzr commit -m "Added a .desktop file"
+    bzr commit -m "Add a .desktop file"
     bzr push
     ```
 
@@ -326,6 +326,7 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
 
         # tell cmake where its modules can be found in our project directory
         list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
 
         # where we install data directory (if we have any)
         set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
@@ -402,7 +403,7 @@ If all went well, you should now be able to open your app from the Applications 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
 ## Review {#the-build-system-review}
-Let's review what all we've learned to do:
+Let's review all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
@@ -417,11 +418,11 @@ Now that you've learned about CMake, the next step is to make your app able to b
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
-        
+
         string normal = "Another non-translatable string";
         string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy! 
+See the difference? We just added `_()` around the string! Well, that was easy!
 
 1. Go back to your project and make all your strings translatable by adding `_()`
 
@@ -449,9 +450,9 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
 5. Don't forget to add this new directory and it's contents to bzr
 
-    ```bash 
+    ```bash
     bzr add po/
-    bzr commit -m "Added translation files"
+    bzr commit -m "Add translation files"
     bzr push
     ```
 
@@ -477,7 +478,7 @@ Did you commit and push to launchpad for each step? Keep up these good habits an
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintaines a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
+1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
 
     ```bash
     bzr branch lp:~elementary-apps/+junk/debian-template
@@ -672,7 +673,7 @@ By now you've probably already seen the white notification bubbles that appear o
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
 3. Re-create the `CMake` folder and `CMakeFiles.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
-4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings. 
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
 
@@ -687,19 +688,19 @@ Now that you know what a `Gtk.Application` is, let's create one:
 			Object (application_id: "notify.app",
 			flags: ApplicationFlags.FLAGS_NONE);
 		}
-    
+
 		protected override void activate () {
 			var app_window = new Gtk.ApplicationWindow (this);
-    
+
 			app_window.show ();
 		}
-    
+
 		public static int main (string[] args) {
 			var app = new MyApp ();
 			return app.run (args);
 		}
 	}
-    
+
 Initiating your app with Gtk.Application is a little different from what we did a few sections back. This time, in `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a `Gtk.ApplicationWindow`, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
 
 In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
@@ -710,10 +711,10 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
 
     var title_label = new Gtk.Label (_("Notifications"));
     var show_button = new Gtk.Button.with_label (_("Show"));
-    
+
     grid.add (title_label);
     grid.add (show_button);
-    
+
     app_window.add (grid);
     app_window.show_all ();
 
@@ -734,7 +735,7 @@ Okay, now compile your new app. if everythink works, you should see your new app
 ## Additional Features {#Additional-features}
 Now that you know how to send basic notifications, lets talk about a couple ways to make your notifications better. Notifications are most useful when users can indentify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
 
-### Icons {#icons} 
+### Icons {#icons}
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
 	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
@@ -782,8 +783,8 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 ## Review {#notifications-review}
 Let's review what all we've learned:
 
-- We learned what `Gtk.Application` is and how to make a subclass of it. 
-- We built an app that sends and updates notifications. 
+- We learned what `Gtk.Application` is and how to make a subclass of it.
+- We built an app that sends and updates notifications.
 - We also learned about other notification features like setting an icon and a notification's priority.
 
 As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](http://valadoc.elementary.io/#!api=gio-2.0/GLib.Notification).

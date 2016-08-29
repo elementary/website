@@ -1122,3 +1122,12 @@ i.fa.fa-close.close-modal {
     display: block;
     margin: 0 auto;
 }
+
+@media print {
+    header,
+    nav,
+    footer,
+    .dont-print {
+        display: none;
+    }
+}
