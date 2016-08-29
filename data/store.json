@@ -103,7 +103,7 @@
         "id": 141,
         "name": "Men's Track Shirt",
         "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/logotype_black.png",
+        "image": "images\/store\/apparel\/track_mens.png",
         "type": "Apparel",
         "variants": [
             {
@@ -141,6 +141,49 @@
                 "color": "Tri-Black",
                 "cost": 20.25,
                 "price": 30.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Women's Track Shirt",
+        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_womens.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 5897,
+                "name": "S Track Women's",
+                "size": "S",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5898,
+                "name": "M Track Women's",
+                "size": "M",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5899,
+                "name": "L Track Women's",
+                "size": "L",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5900,
+                "name": "XL Track Women's",
+                "size": "XL",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
             }
         ],
         "files": [
