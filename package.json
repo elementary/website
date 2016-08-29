@@ -20,7 +20,7 @@
     "stylelint": "^7.1.0"
   },
   "scripts": {
-    "install:submodule": "git submodule update --force --rebase",
+    "install:submodule": "git submodule init && git submodule update --force --rebase",
     "postinstall": "npm run install:submodule",
     "build": "gulp",
     "build:watch": "gulp watch",
