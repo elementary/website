@@ -103,10 +103,10 @@
                 <div class="row choices-container">
                     <h1>Meet Our Apps</h1>
                     <div id="carousel-choices" class="column linked">
-                        <a class="button flat photos active" href="#photos"><?php include('images/icons/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
-                        <a class="button flat music" href="#music"><?php include('images/icons/folder-music-symbolic.svg');?><span class="label">Music</span></a>
-                        <a class="button flat videos" href="#videos"><?php include('images/icons/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
-                        <a class="button flat midori" href="#midori"><?php include('images/icons/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
+                        <a class="button flat photos active" href="#photos"><?php include('images/icons/places/symbolic/folder-pictures-symbolic.svg');?><span class="label">Photos</span></a>
+                        <a class="button flat music" href="#music"><?php include('images/icons/places/symbolic/folder-music-symbolic.svg');?><span class="label">Music</span></a>
+                        <a class="button flat videos" href="#videos"><?php include('images/icons/places/symbolic/folder-videos-symbolic.svg');?></i><span class="label">Videos</span></a>
+                        <a class="button flat midori" href="#midori"><?php include('images/icons/apps/symbolic/web-browser-symbolic.svg');?></i><span class="label">Midori</span></a>
                     </div>
                 </div>
                 <div class="slide-container">
@@ -117,7 +117,7 @@
                             </div>
                             <div class="column">
                                 <div class="column alert">
-                                    <img src="images/icons/multimedia-photo-manager.svg" />
+                                    <img src="images/icons/apps/64/multimedia-photo-manager.svg" />
                                 </div>
                                 <div class="column alert">
                                     <h3>Photos</h3>
@@ -133,7 +133,7 @@
                           </div>
                           <div class="column">
                               <div class="column alert">
-                                  <img src="images/icons/multimedia-audio-player.svg" />
+                                  <img src="images/icons/apps/64/multimedia-audio-player.svg" />
                               </div>
                               <div class="column alert">
                                   <h3>Music</h3>
@@ -149,7 +149,7 @@
                             </div>
                             <div class="column">
                                 <div class="column alert">
-                                    <img src="images/icons/multimedia-video-player.svg" />
+                                    <img src="images/icons/apps/64/multimedia-video-player.svg" />
                                 </div>
                                 <div class="column alert">
                                     <h3>Videos</h3>
@@ -165,7 +165,7 @@
                             </div>
                             <div class="column">
                                 <div class="column alert">
-                                    <img src="images/icons/midori.svg" />
+                                    <img src="images/icons/apps/64/web-browser.svg" />
                                 </div>
                                 <div class="column alert">
                                     <h3>Midori</h3>
@@ -182,17 +182,17 @@
                     <div class="slingshot">
                         <div class="linked">
                             <div id="slingshot-grid-button" class="button active">
-                                <?php include('images/icons/view-grid-symbolic.svg'); ?>
+                                <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?>
                             </div>
                             <div id="slingshot-categories-button" class="button">
-                                <?php include('images/icons/view-filter-symbolic.svg'); ?>
+                                <?php include('images/icons/actions/symbolic/view-filter-symbolic.svg'); ?>
                             </div>
                         </div>
                         <div class="entry">
-                            <?php include('images/icons/edit-find-symbolic.svg'); ?>
+                            <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?>
                             <span class="search-term inactive">dat</span>
                             <span class="cursor">|</span>
-                            <span class="clear-icon inactive"><?php include('images/icons/edit-clear-symbolic.svg'); ?></span>
+                            <span class="clear-icon inactive"><?php include('images/icons/actions/symbolic/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
@@ -228,11 +228,11 @@
                 </div>
                 <div class="column half vertical-top text-left">
                     <h2>3 Ways to Explore</h2>
-                    <?php include('images/icons/view-grid-symbolic.svg'); ?><h4>Grid</h4>
+                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Grid</h4>
                     <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
-                    <?php include('images/icons/view-filter-symbolic.svg'); ?><h4>Categories</h4>
+                    <?php include('images/icons/actions/symbolic/view-filter-symbolic.svg'); ?><h4>Categories</h4>
                     <p>View your apps automatically organized into categories. Perfect for large collections.</p>
-                    <?php include('images/icons/edit-find-symbolic.svg'); ?><h4>Search</h4>
+                    <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?><h4>Search</h4>
                     <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
                 </div>
             </div>

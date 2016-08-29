@@ -96,7 +96,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/icons/48/preferences-system-network.svg" alt="Soup">
+            <img src="images/icons/categories/48/preferences-system-network.svg" alt="Soup">
         </div>
         <div class="alert column">
             <h2>Soup</h2>
