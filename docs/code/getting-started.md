@@ -8,7 +8,7 @@ However, we strongly recommend to at least skim through this preparation step. H
 
 We're going to assume that you have absolutely no experience in writing apps for elementary. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
 
-We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines.md) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
+We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
 
 In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
@@ -50,7 +50,7 @@ If you're ready, let's get you set up to use Bazaar:
     sudo apt-get install bzr
     ```
 
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish; this is a requirement for Launchpad):
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish, but it's a requirement for Launchpad):
 
     ```bash
     sudo apt-get install openssh-client
@@ -335,8 +335,8 @@ The next thing we need is a build system. The build system that we're going to b
         cmake_minimum_required (VERSION 2.6)
 
         # tell cmake where its modules can be found in our project directory
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules)
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake-modules/src)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
 
         # where we install data directory (if we have any)
         set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
@@ -428,11 +428,11 @@ Now that you've learned about CMake, the next step is to make your app able to b
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
-        
+
         string normal = "Another non-translatable string";
         string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy! 
+See the difference? We just added `_()` around the string! Well, that was easy!
 
 1. Go back to your project and make all your strings translatable by adding `_()`
 
@@ -460,7 +460,7 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
 5. Don't forget to add this new directory and it's contents to bzr
 
-    ```bash 
+    ```bash
     bzr add po/
     bzr commit -m "Add translation files"
     bzr push
@@ -683,7 +683,7 @@ By now you've probably already seen the white notification bubbles that appear o
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
 3. Re-create the `CMake` folder and `CMakeFiles.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
-4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings. 
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
 
@@ -698,19 +698,19 @@ Now that you know what a `Gtk.Application` is, let's create one:
 			Object (application_id: "notify.app",
 			flags: ApplicationFlags.FLAGS_NONE);
 		}
-    
+
 		protected override void activate () {
 			var app_window = new Gtk.ApplicationWindow (this);
-    
+
 			app_window.show ();
 		}
-    
+
 		public static int main (string[] args) {
 			var app = new MyApp ();
 			return app.run (args);
 		}
 	}
-    
+
 Initiating your app with Gtk.Application is a little different from what we did a few sections back. This time, in `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a `Gtk.ApplicationWindow`, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
 
 In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
@@ -721,10 +721,10 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
 
     var title_label = new Gtk.Label (_("Notifications"));
     var show_button = new Gtk.Button.with_label (_("Show"));
-    
+
     grid.add (title_label);
     grid.add (show_button);
-    
+
     app_window.add (grid);
     app_window.show_all ();
 
@@ -745,7 +745,7 @@ Okay, now compile your new app. if everythink works, you should see your new app
 ## Additional Features {#Additional-features}
 Now that you know how to send basic notifications, lets talk about a couple ways to make your notifications better. Notifications are most useful when users can indentify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
 
-### Icons {#icons} 
+### Icons {#icons}
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
 	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
@@ -793,8 +793,8 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 ## Review {#notifications-review}
 Let's review what all we've learned:
 
-- We learned what `Gtk.Application` is and how to make a subclass of it. 
-- We built an app that sends and updates notifications. 
+- We learned what `Gtk.Application` is and how to make a subclass of it.
+- We built an app that sends and updates notifications.
 - We also learned about other notification features like setting an icon and a notification's priority.
 
 As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](http://valadoc.elementary.io/#!api=gio-2.0/GLib.Notification).
