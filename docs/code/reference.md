@@ -150,14 +150,14 @@ Avoid using `as` keyword when casting as it might give `null` as result, which c
 
 In places or operations where you would otherwise use `set` , you should make use of `=` instead.
 
-For example, instead of using 
-    
+For example, instead of using
+
          set_can_focus(false);
-   
-you should use 
-   
+
+you should use
+
          can_focus = false;    
-    
+
 ## Vala namespaces {#vala-namespaces}
 
 Referring to GLib is not necessary. If you want to print something:
