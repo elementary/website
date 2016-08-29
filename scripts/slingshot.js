@@ -13,7 +13,7 @@ $(function () {
         $.each(data.searchone, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/apps/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchone')
@@ -21,7 +21,7 @@ $(function () {
         $.each(data.searchtwo, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/apps/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchtwo')
@@ -29,7 +29,7 @@ $(function () {
         $.each(data.searchthree, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/apps/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchthree')

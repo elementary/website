@@ -121,23 +121,23 @@
                         <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     </div>
                     <ul id="showcase-grid">
-                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/multimedia-audio-player.svg" />Music</li></a>
-                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/internet-web-browser.svg" />Epiphany</li></a>
-                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/internet-mail.svg" />Mail</li></a>
-                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/multimedia-photo-manager.svg" />Photos</li></a>
-                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/multimedia-video-player.svg" />Videos</li></a>
-                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/office-calendar.svg" />Calendar</li></a>
-                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/system-file-manager.svg" />Files</li></a>
-                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/accessories-text-editor.svg" />Scratch</li></a>
-                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/accessories-camera.svg" />Camera</li></a>
+                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" />Epiphany</li></a>
+                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" />Mail</li></a>
+                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" />Photos</li></a>
+                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" />Videos</li></a>
+                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
+                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
+                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
+                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/apps/64/accessories-text-editor.svg" />Scratch</li></a>
+                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/music.png" alt="music screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/multimedia-audio-player.svg" alt="music icon" />
+                            <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
                                 <h2>Music</h2>
                                 <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
@@ -149,7 +149,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/internet-web-browser.svg" alt="epiphany icon" />
+                            <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
                                 <h2>Epiphany</h2>
                                 <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
@@ -161,7 +161,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/internet-mail.svg" alt="mail icon" />
+                            <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
                                 <h2>Mail</h2>
                                 <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
@@ -173,7 +173,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/photos.png" alt="photos screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/multimedia-photo-manager.svg" alt="photos icon" />
+                            <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
                                 <h2>Photos</h2>
                                 <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
@@ -185,7 +185,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/multimedia-video-player.svg" alt="videos icon" />
+                            <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
                                 <h2>Videos</h2>
                                 <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
@@ -197,7 +197,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/office-calendar.svg" alt="calendar icon" />
+                            <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
                                 <h2>Calendar</h2>
                                 <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
@@ -209,7 +209,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/system-file-manager.svg" alt="files icon" />
+                            <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
                                 <h2>Files</h2>
                                 <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="app-display__description">
-                            <img src="images/icons/utilities-terminal.svg" alt="terminal icon" />
+                            <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
                                 <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
@@ -261,7 +261,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/accessories-text-editor.svg" alt="scratch icon" />
+                            <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
                             <div>
                                 <h2>Scratch</h2>
                                 <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
@@ -273,7 +273,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/accessories-camera.svg" alt="camera icon" />
+                            <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
                                 <h2>Camera</h2>
                                 <p>Easily snap picures or video from a built-in webcam.</p>
@@ -287,7 +287,7 @@
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
                 <div class="app-display__description">
-                    <img src="images/icons/128/system-software-install.svg" />
+                    <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
                     <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
                     <a href="developer" class="read-more">Become a Developer</a>
