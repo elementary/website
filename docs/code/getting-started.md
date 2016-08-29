@@ -89,7 +89,7 @@ The first piece of our simple "SDK" is the code editor Scratch. This comes by de
 
 ### Terminal {#terminal}
 
-![](images/icons/128/utilities-terminal.svg)
+![](images/icons/apps/128/utilities-terminal.svg)
 
 We’re going to use Terminal in order to compile our code, push revisions to Bazaar (bzr), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
 
@@ -101,7 +101,7 @@ mkdir Projects
 
 ### Development Libraries {#development-libraries}
 
-![](images/icons/128/application-default-icon.svg)
+![](images/icons/apps/128/application-default-icon.svg)
 
 In order to build apps you're going to need their development libraries. We can fetch a basic set of libraries and other development tools with the following terminal command:
 

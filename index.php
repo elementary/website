@@ -107,7 +107,7 @@
                 <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
-                            <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/48/utilities-terminal.svg'); ?></span></div>
+                            <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/apps/48/utilities-terminal.svg'); ?></span></div>
                             <div>
                                 <h3>Task finished</h3>
                                 <p>git clone https://github.com/elementary/mvp</p>
