@@ -17,7 +17,7 @@
     .page-index .hero {
         background-image: url("../images/responsive-images/notebook-medium.png");
         height: auto;
-        padding-top: 35%;
+        padding-top: 40%;
     }
 }
 
@@ -80,149 +80,239 @@ input:focus + .focus-reveal {
     opacity: 0.65;
 }
 
-#carousel {
-    background-color: #0d6c7f;
-    background-image: linear-gradient(to bottom, #015263, #338b9f);
-    color: #fff;
+/***********************
+* app display sections *
+***********************/
+
+.app-display {
+    align-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-display__description {
+    max-width: 600px;
+    padding: 0 32px;
+}
+
+@media (min-width: 1000px) {
+    .app-display__image {
+        order: 2;
+    }
+
+    .app-display.app-display--horizontal,
+    .app-display.app-display--overflow {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .app-display--overflow .app-display__image {
+        flex: 0 0 auto;
+        order: 2;
+        overflow: visible;
+    }
+
+    .app-display--overflow .app-display__description {
+        flex: 1 0 auto;
+        padding: 0 0 0 64px;
+    }
+}
+
+/*********************************
+* showcase layout and index grid *
+*********************************/
+
+#showcase {
+    display: block;
+    max-width: none;
     overflow: hidden;
-    position: relative;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 0;
 }
 
-#carousel a.read-more {
-    color: rgba(0, 0, 0, 0.65);
-    font-weight: 700;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+#showcase > div {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 0 24px;
 }
 
-#carousel > .row + .row {
-    padding-top: 0;
+#showcase p {
+    margin: auto;
+    max-width: 600px;
 }
 
-#carousel-choices {
-    margin-bottom: 0;
+#showcase #showcase-index {
+    padding: 48px 0;
 }
 
-#carousel-choices .button {
-    line-height: 16px;
-    padding: 8px 16px;
-    min-width: initial;
+#showcase #showcase-index > div {
+    padding: 0 28px;
 }
 
-#carousel-choices svg {
-    vertical-align: middle;
+#showcase #showcase-grid {
+    list-style: none;
+    margin: auto;
+    max-width: 800px;
+    padding: 0;
+    text-align: center;
 }
 
-#carousel-choices .label {
-    display: none;
+#showcase #showcase-grid li {
+    display: inline-block;
+    margin: 16px;
+    padding: 0;
 }
 
-#carousel .slide .row {
-    max-width: 100%;
+@media (min-width: 320px) {
+    #showcase #showcase-grid li {
+        margin: 26px;
+    }
 }
 
-#carousel .slide > .row > .column {
-    margin-left: 16px;
-    margin-right: 16px;
-    vertical-align: top;
+@media (min-width: 425px) {
+    #showcase #showcase-grid li {
+        margin: 32px;
+    }
 }
 
-#carousel .column.alert img {
-    height: 64px;
+#showcase #showcase-grid img {
+    display: block;
+    width: 64px;
+    margin: 12px;
+}
+
+#showcase #showcase-grid a {
+    color: inherit;
+}
+
+/********************
+* showcase programs *
+********************/
+
+#showcase .showcase-tab .app-display {
+    flex-direction: column;
+}
+
+#showcase .showcase-tab .app-display__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 16px;
+}
+
+#showcase .showcase-tab .app-display__description > * {
+    padding: 8px;
+    text-align: left;
+}
+
+#showcase .showcase-tab .app-display__description > img {
+    height: 80px;
+    width: 80px;
+}
+
+@media (min-width: 1000px) {
+    #showcase .showcase-tab .app-display__description {
+        flex-wrap: nowrap;
+        padding-bottom: 0;
+    }
+}
+
+/***********************
+* initialized showcase *
+***********************/
+
+#showcase.initialized > div.showcase-tab > .showcase-back {
+    background-image: url("../images/back-arrow.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 64px;
 }
 
-#carousel .slide > .row > .column:first-child {
-    margin: 0;
+#showcase.initialized {
+    position: relative;
+    transition: height 0.15s ease-in-out;
 }
 
-#carousel .slide > .row > .column:nth-child(2) {
+#showcase.initialized > div {
+    position: absolute;
+    top: 0;
+    transition: transform 0.15s ease-in-out;
+    width: 100%;
+    will-change: transform;
+}
+
+#showcase.initialized > div#showcase-index {
+    left: -100%;
+    padding: 48px 0;
+}
+
+#showcase.initialized > div#showcase-index.active {
+    transform: translate(100%, 0);
+}
+
+#showcase.initialized > div.showcase-tab {
+    left: 100%;
+    padding: 32px 24px 32px 64px;
+}
+
+#showcase.initialized > div.showcase-tab.active {
+    transform: translate(-100%, 0);
+}
+
+/*******************
+* Pantheon windows *
+*******************/
+
+#showcase .pantheon .window[type="terminal"] {
+    height: 36vw;
+    max-height: 600px;
+    max-width: 800px;
+    width: 58vw;
+    margin: 32px 32px 64px;
+}
+
+/************
+* AppCenter *
+************/
+
+#appcenter {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+}
+
+#appcenter .app-display {
+    max-width: 1300px;
+    overflow: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 2000px) {
+    #appcenter .app-display {
+        max-width: 100%;
+    }
+}
+
+#appcenter .app-display__description img {
     display: block;
+    height: 64px;
+    margin: 0 auto 16px;
+    width: 64px;
 }
 
-#carousel .slide > .row > .column .column:nth-child(2) {
-    max-width: 256px;
-}
-
-@media (max-width: 404px) {
-    #carousel {
-        background-image: url("../images/screenshots/background_mobile_small.jpg");
-        background-size: cover;
+@media (min-width: 400px) {
+    #appcenter .app-display__description img {
+        height: 128px;
+        margin: 0 auto 32px;
+        width: 128px;
     }
-
-    #carousel .slide > .row > .column:nth-child(2) {
-        margin-top: -48px;
-    }
-}
-
-@media (min-width: 434px) {
-    #carousel {
-        background-image: url("../images/screenshots/background_mobile_large.jpg");
-        background-size: cover;
-    }
-
-    #carousel-choices .button {
-        line-height: initial;
-        min-width: 100px;
-    }
-
-    #carousel-choices .label {
-        display: initial;
-    }
-
-    #carousel-choices svg {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    #carousel {
-        background-image: url("../images/screenshots/background_wide_small.jpg");
-        background-size: cover;
-        min-height: 100vh;
-    }
-}
-
-@media (min-width: 1350px) {
-    #carousel {
-        background-image: url("../images/screenshots/background_wide_large.jpg");
-        background-size: cover;
-        min-height: 100vh;
-    }
-
-    #carousel .slide > .row {
-        margin: 0 calc(50% - 700px);
-        padding-top: 28px;
-        padding-bottom: 68px;
-    }
-
-    #carousel .slide > .row > .column:nth-child(2) {
-        margin-top: 33px;
-        margin-right: 0;
-        display: inline-block;
-    }
-
-    #carousel .slide > .row > .column .column:nth-child(2) {
-        max-width: 236px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #carousel .slide > .row {
-        padding: 48px 24px;
-    }
-
-    #carousel .slide > .row > .column:nth-child(2) {
-        margin-right: 16px;
-    }
-
-    #carousel .slide > .row > .column .column:nth-child(2) {
-        max-width: 256px;
-    }
-}
-
-.vertical-top {
-    vertical-align: top;
 }
 
 /************
@@ -230,22 +320,34 @@ input:focus + .focus-reveal {
 ************/
 
 #slingshot {
-    max-width: 1800px;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
     width: 100%;
 }
 
-#slingshot .column:nth-child(2) .symbolic-icon {
+#slingshot .app-display__image {
+    padding: 0 32px 32px;
+}
+
+@media (min-width: 1000px) {
+    #slingshot .app-display__image {
+        order: 0;
+    }
+}
+
+#slingshot .app-display__description .symbolic-icon {
     display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
 
-#slingshot .column:nth-child(2) p {
+#slingshot .app-display__description p {
     margin-left: 24px;
 }
 
 @media (min-width: 330px) {
-    #slingshot .column:nth-child(2) h2 {
+    #slingshot .app-display__description h2 {
         margin-left: 24px;
     }
 }
@@ -260,11 +362,10 @@ input:focus + .focus-reveal {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+        0 3px 8px rgba(0, 0, 0, 0.15),
+        0 3px 6px -3px rgba(0, 0, 0, 0.25);
     display: inline-block;
     height: 512px;
-    margin-right: 24px;
     padding: 12px;
     pointer-events: none;
     transition: all 200ms ease-out;
@@ -278,6 +379,14 @@ input:focus + .focus-reveal {
     top: 5px;
     width: 30px;
     z-index: 100;
+}
+
+#slingshot-label {
+    font-weight: 700;
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: left;
+    margin-left: 3px;
 }
 
 .slingshot .linked {
@@ -342,7 +451,9 @@ input:focus + .focus-reveal {
 }
 
 .app img {
+    display: block;
     height: 64px;
+    margin: auto;
     width: 64px;
 }
 
@@ -354,11 +465,11 @@ input:focus + .focus-reveal {
 }
 
 #slingshot-pager {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     margin-bottom: 5px;
     margin-top: 9px;
-    width: 200px;
+    width: 100%;
 }
 
 #slingshot-pager .button {
@@ -366,7 +477,7 @@ input:focus + .focus-reveal {
     font-size: 9pt;
     height: 23px;
     line-height: 16px;
-    margin: 0;
+    margin: 2px;
 }
 
 /*************
@@ -374,7 +485,7 @@ input:focus + .focus-reveal {
 *************/
 
 .slingshot-categories-sidebar {
-    border-right: 1px solid #a7a7a7;
+    border-right: 1px solid #d0d0d0;
     display: block;
     float: left;
     height: 456px;
@@ -384,7 +495,7 @@ input:focus + .focus-reveal {
 }
 
 .slingshot-category {
-    color: #a7acab;
+    color: #717171;
     display: block;
     font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
@@ -429,10 +540,21 @@ input:focus + .focus-reveal {
 
 img.result-img {
     display: inline-block;
-    float: left;
     height: 32px;
     margin-right: 12px;
     width: 32px;
+}
+
+.searchone,
+.searchtwo,
+.searchthree {
+    display: none;
+}
+
+.searchone.active,
+.searchtwo.active,
+.searchthree.active {
+    display: block;
 }
 
 .slingshot-search-results {
@@ -446,10 +568,6 @@ img.result-img {
     text-align: left;
     text-shadow: none;
     width: 100%;
-}
-
-.slingshot-search-results.inactive {
-    display: none;
 }
 
 span.search-term,
@@ -503,15 +621,17 @@ span.results-title {
 }
 
 .search-result {
-    border-radius: 5px;
     display: block;
-    margin-left: 12px;
-    margin-right: 12px;
     padding: 4px 16px;
 }
 
-.search-result:first-child {
+.slingshot-search-results:first-of-type .search-result:first-child {
     background-color: #c4c4c4;
+}
+
+.search-result * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /**********

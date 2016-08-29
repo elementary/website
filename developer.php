@@ -25,11 +25,10 @@
 
 <section class="hero dark">
     <div>
-        <img src="images/developer/save.svg" alt="Save">
-        <h1>Loki Beta 2 Is Here</h1>
-        <h4>Try out the upcoming version of elementary OS.</h4>
-        <button type="submit" id="download" class="suggested-action">Download Loki Beta 2</button>
-        <p class="small-label"><a href="http://blog.elementary.io/post/147507276666/loki-beta-2-is-here">Read the Release Notes</a></p>
+        <img src="images/developer/developer-sketch.svg" alt="Developer hero image">
+        <h1>Develop Your Ideas Into Code</h1>
+        <h4>Learn to design, develop, and publish apps for elementary OS</h4>
+        <a href="docs/code/getting-started" class="button suggested-action">Get Started</a>
     </div>
 </section>
 
@@ -122,22 +121,6 @@
         </div>
     </div>
 </section>
-<div id="download-modal" class="modal">
-    <div class="modal-container">
-        <h3>Download Loki Beta 2</h3>
-        <p>By downloading this beta you accept that it is not a final product and will be unstable.</p>
-        <div class="row actions">
-            <div class="column">
-                <a class="button close-modal" href="#">Cancel</a>
-            </div>
-            <div class="column linked">
-                <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
-                <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
     include $template['footer'];
 ?>

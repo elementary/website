@@ -1,50 +1,64 @@
 {
     "grid": [
-        {"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
+        {"icon":"system-software-install","title":"AppCenter","position":"first-row"},
         {"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
         {"icon":"office-calendar","title":"Calendar","position":"first-row"},
         {"icon":"accessories-camera","title":"Camera","position":"first-row"},
-        {"icon":"postscript-viewer","title":"Document Viewer","position":"first-row"},
+        {"icon":"internet-web-browser","title":"Epiphany","position":"first-row"},
         {"icon":"system-file-manager","title":"Files","position":"first-row"},
-        {"icon":"preferences-desktop-font","title":"Font Viewer","position":"middle-row"},
-        {"icon":"internet-mail","title":"Geary Mail","position":"middle-row"},
-        {"icon":"midori","title":"Midori","position":"middle-row"},
+        {"icon":"internet-mail","title":"Mail","position":"middle-row"},
         {"icon":"multitasking-view","title":"Multitasking View","position":"middle-row"},
         {"icon":"multimedia-audio-player","title":"Music","position":"middle-row"},
-        {"icon":"multimedia-photo-manager","title":"Photos","position":"last-row"},
+        {"icon":"multimedia-photo-manager","title":"Photos","position":"middle-row"},
         {"icon":"accessories-text-editor","title":"Scratch","position":"last-row"},
         {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
-        {"icon":"scanner","title":"Simple Scan","position":"last-row"}
-    ]
-,
-    "categories": [
-        {"icon":"archive-manager","title":"Archive Manager","position":"first-row"},
-        {"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
-        {"icon":"preferences-desktop-font","title":"Font Viewer","position":"first-row"},
-        {"icon":"accessories-text-editor","title":"Scratch","position":"first-row"},
-        {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"},
+        {"icon":"scanner","title":"Simple Scan","position":"last-row"},
+        {"icon":"preferences-desktop","title":"System Settings","position":"last-row"},
         {"icon":"utilities-terminal","title":"Terminal","position":"last-row"}
     ]
 ,
+    "categories": [
+        {"icon":"accessories-calculator","title":"Calculator","position":"first-row"},
+        {"icon":"accessories-text-editor","title":"Scratch","position":"first-row"},
+        {"icon":"applets-screenshooter","title":"Screenshot","position":"last-row"}
+    ]
+,
     "searchone": [
-        {"icon":"postscript-viewer","title":"<b>D</b>ocument Viewer"},
-        {"icon":"preferences-system-time","title":"<b>D</b>ate & Time"},
-        {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
-        {"icon":"applets-screenshooter","title":"Screenshot"},
-        {"icon":"software-properties","title":"Software & Up<b>d</b>ates"},
-        {"icon":"system-software-update","title":"Software Up<b>d</b>ater"}
+        {"title": "Applications", "items": [
+            {"icon":"archive-manager","title":"Archive Manager"},
+            {"icon":"multitasking-view","title":"Multitasking View"},
+            {"icon":"onboard","title":"Onboar<b>d</b>"},
+            {"icon":"onboard","title":"Onboar<b>d</b> Settings"},
+            {"icon":"preferences-desktop","title":"System Settings"},
+            {"icon":"system-software-install","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>d</b>ar"},
+            {"icon":"accessories-camera","title":"Camera"},
+            {"icon":"postscript-viewer","title":"<b>D</b>ocument Viewer"},
+            {"icon":"system-file-manager","title":"Files"}
+        ]}
     ]
 ,
     "searchtwo": [
-        {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
-        {"icon":"office-calendar","title":"Calen<b>da</b>r"},
-        {"icon":"software-properties","title":"Software & Up<b>da</b>tes"},
-        {"icon":"system-software-update","title":"Software Up<b>da</b>ter"}
+        {"title": "Applications", "items": [
+            {"icon":"system-software-install","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>da</b>r"}
+        ]},
+        {"title": "Settings", "items": [
+            {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"},
+            {"icon":"preferences-desktop-display","title":"<b>D</b>ispl<b>a</b>ys"}
+        ]},
+        {"title": "Application Actions", "items": [
+            {"icon":"office-calendar","title":"About Calendar"}
+        ]}
     ]
 ,
     "searchthree": [
-        {"icon":"preferences-system-time","title":"<b>Dat</b>e & Time"},
-        {"icon":"software-properties","title":"Software & Up<b>dat</b>es"},
-        {"icon":"system-software-update","title":"Software Up<b>dat</b>er"}
+        {"title": "Applications", "items": [
+            {"icon":"system-software-install","title":"AppCenter"},
+            {"icon":"office-calendar","title":"Calen<b>da</b>r"}
+        ]},
+        {"title": "Settings", "items": [
+            {"icon":"preferences-system-time","title":"<b>Da</b>te & Time"}
+        ]}
     ]
 }
