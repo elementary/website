@@ -3,26 +3,32 @@
 * This file is part of elementary.io *
 *************************************/
 
-.countdown-wrapper {
-    -webkit-user-select: none;
+.countdown-background {
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     left: 0;
-    padding: 16px;
     position: fixed;
+    right: 0;
     top: 0;
-    width: 100%;
     z-index: 999;
+}
+
+.countdown-wrapper {
+    overflow: auto;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    user-select: none;
 }
 
 .flip-clock-wrapper {
     animation: show 2s ease-in forwards;
-    margin: 128px 16px;
+    margin: 10px 16px;
     opacity: 0;
 }
 
@@ -58,6 +64,14 @@
     *zoom: 1;
 }
 
+/* Flip Pair Wrapper (EDITED FROM FLIPCLOCK.JS) */
+
+.flip-wrapper {
+    position: relative;
+    margin: 20px 0;
+    padding-top: 30px;
+}
+
 /* Main */
 
 .flip-clock-meridium {
@@ -78,15 +92,15 @@
 
 /* Skeleton */
 .flip-clock-wrapper ul {
-    position: relative;
-    float: left;
-    margin: 5px;
-    width: 60px;
-    height: 90px;
-    font-weight: bold;
-    line-height: 87px;
-    border-radius: 6px;
     background: #3689e6;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    height: 90px;
+    line-height: 87px;
+    margin: 5px;
+    position: relative;
+    width: 60px;
 }
 
 .flip-clock-wrapper ul li {
@@ -191,47 +205,19 @@
 }
 
 .flip-clock-divider {
-    float: left;
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    height: 100px;
-}
-
-.flip-clock-divider:first-child {
-    width: 0;
-}
-
-.flip-clock-dot {
-    display: block;
-    background: #2b63a0;
-    width: 6px;
-    height: 6px;
+    bottom: 0;
+    left: 0;
     position: absolute;
-    border-radius: 50%;
-    left: 8px;
+    right: 0;
+    top: 0;
 }
 
 .flip-clock-divider .flip-clock-label {
+    left: 0;
     position: absolute;
-    top: -24px;
-    right: -86px;
-}
-
-.flip-clock-divider.minutes .flip-clock-label {
-    right: -88px;
-}
-
-.flip-clock-divider.seconds .flip-clock-label {
-    right: -91px;
-}
-
-.flip-clock-dot.top {
-    top: 30px;
-}
-
-.flip-clock-dot.bottom {
-    bottom: 30px;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
 
 @keyframes asd {
@@ -325,5 +311,41 @@
 
     100% {
         opacity: 0;
+    }
+}
+
+.countdown-wrapper .read-more {
+    padding: 30px;
+}
+
+@media (min-width: 800px) {
+    .flip-wrapper {
+        display: inline-block;
+    }
+
+    .flip-wrapper:not(:first-of-type) {
+        padding-left: 26px;
+    }
+
+    .flip-wrapper:not(:first-of-type) .flip-clock-divider .flip-clock-label {
+        padding-left: 26px;
+    }
+
+    .flip-clock-dot {
+        background: #2b63a0;
+        border-radius: 50%;
+        display: block;
+        height: 6px;
+        left: 10px;
+        position: absolute;
+        width: 6px;
+    }
+
+    .flip-clock-dot.top {
+        top: 60px;
+    }
+
+    .flip-clock-dot.bottom {
+        bottom: 30px;
     }
 }
