@@ -1097,7 +1097,8 @@ i.fa.fa-close.close-modal {
 @media print {
     header,
     nav,
-    footer {
+    footer,
+    .dont-print {
         display: none;
     }
 }
