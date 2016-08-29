@@ -21,6 +21,7 @@
 .countdown-wrapper {
     overflow: auto;
     padding: 16px;
+    width: 100%;
     text-align: center;
     user-select: none;
 }
@@ -311,6 +312,10 @@
     100% {
         opacity: 0;
     }
+}
+
+.countdown-wrapper .read-more {
+    padding: 30px;
 }
 
 @media (min-width: 800px) {
