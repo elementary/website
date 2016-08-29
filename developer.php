@@ -65,7 +65,7 @@
 <div class="grid">
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/contractor.svg" alt="Contractor">
+            <img src="images/icons/actions/48/document-export.svg" alt="Contractor">
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
@@ -86,7 +86,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/gda.svg" alt="GDA">
+            <img src="images/icons/mimes/48/office-database.svg" alt="GDA">
         </div>
         <div class="alert column">
             <h2>GDA</h2>
