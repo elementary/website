@@ -3,7 +3,7 @@
         "id": 5,
         "name": "Men's Cotton T-Shirt",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/logotype.png",
+        "image": "images\/store\/apparel\/cotton_logotype_mens.png",
         "type": "Apparel",
         "variants": [
             {
@@ -53,7 +53,7 @@
         "id": 6,
         "name": "Women's Cotton T-Shirt",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/logotype_womens.png",
+        "image": "images\/store\/apparel\/cotton_logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
@@ -103,40 +103,40 @@
         "id": 141,
         "name": "Men's Track Shirt",
         "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/track_mens.png",
+        "image": "images\/store\/apparel\/track_logotype_mens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 5875,
-                "name": "S TriBlend Men's",
+                "name": "S Track Men's",
                 "size": "S",
                 "color": "Tri-Black",
                 "cost": 18.50,
                 "price": 28.00
             }, {
                 "id": 5874,
-                "name": "M TriBlend Men's",
+                "name": "M Track Men's",
                 "size": "M",
                 "color": "Tri-Black",
                 "cost": 18.50,
                 "price": 28.00
             }, {
                 "id": 5873,
-                "name": "L TriBlend Men's",
+                "name": "L Track Men's",
                 "size": "L",
                 "color": "Tri-Black",
                 "cost": 18.50,
                 "price": 28.00
             }, {
                 "id": 5872,
-                "name": "XL TriBlend Men's",
+                "name": "XL Track Men's",
                 "size": "XL",
                 "color": "Tri-Black",
                 "cost": 18.50,
                 "price": 28.00
             }, {
                 "id": 5871,
-                "name": "2XL TriBlend Men's",
+                "name": "2XL Track Men's",
                 "size": "2XL",
                 "color": "Tri-Black",
                 "cost": 20.25,
@@ -153,7 +153,7 @@
         "id": 150,
         "name": "Women's Track Shirt",
         "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/track_womens.png",
+        "image": "images\/store\/apparel\/track_logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
