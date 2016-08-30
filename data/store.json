@@ -1,42 +1,42 @@
 [
     {
         "id": 5,
-        "name": "Logotype T-Shirt Men's",
+        "name": "Men's Cotton T-Shirt",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/logotype.png",
+        "image": "images\/store\/apparel\/cotton_logotype_mens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 126,
-                "name": "S Logotype Men's",
+                "name": "S Cotton Men's",
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 188,
-                "name": "M Logotype Men's",
+                "name": "M Cotton Men's",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 250,
-                "name": "L Logotype Men's",
+                "name": "L Cotton Men's",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 312,
-                "name": "XL Logotype Men's",
+                "name": "XL Cotton Men's",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 374,
-                "name": "2XL Logotype Men's",
+                "name": "2XL Cotton Men's",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
@@ -51,46 +51,139 @@
     },
     {
         "id": 6,
-        "name": "Logotype T-Shirt Women's",
+        "name": "Women's Cotton T-Shirt",
         "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/logotype_womens.png",
+        "image": "images\/store\/apparel\/cotton_logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 127,
-                "name": "S Logotype Women's",
+                "name": "S Cotton Women's",
                 "size": "S",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 189,
-                "name": "M Logotype Women's",
+                "name": "M Cotton Women's",
                 "size": "M",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 251,
-                "name": "L Logotype Women's",
+                "name": "L Cotton Women's",
                 "size": "L",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 313,
-                "name": "XL Logotype Women's",
+                "name": "XL Cotton Women's",
                 "size": "XL",
                 "color": "Teal",
                 "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 375,
-                "name": "2XL Logotype Women's",
+                "name": "2XL Cotton Women's",
                 "size": "2XL",
                 "color": "Teal",
                 "cost": 16.35,
                 "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "name": "Men's Track Shirt",
+        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_logotype_mens.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 5875,
+                "name": "S Track Men's",
+                "size": "S",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 28.00
+            }, {
+                "id": 5874,
+                "name": "M Track Men's",
+                "size": "M",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 28.00
+            }, {
+                "id": 5873,
+                "name": "L Track Men's",
+                "size": "L",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 28.00
+            }, {
+                "id": 5872,
+                "name": "XL Track Men's",
+                "size": "XL",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 28.00
+            }, {
+                "id": 5871,
+                "name": "2XL Track Men's",
+                "size": "2XL",
+                "color": "Tri-Black",
+                "cost": 20.25,
+                "price": 30.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 150,
+        "name": "Women's Track Shirt",
+        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_logotype_womens.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 5897,
+                "name": "S Track Women's",
+                "size": "S",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5898,
+                "name": "M Track Women's",
+                "size": "M",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5899,
+                "name": "L Track Women's",
+                "size": "L",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
+            }, {
+                "id": 5900,
+                "name": "XL Track Women's",
+                "size": "XL",
+                "color": "Tri-Black",
+                "cost": 18.00,
+                "price": 28.00
             }
         ],
         "files": [
