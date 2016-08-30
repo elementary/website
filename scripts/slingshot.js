@@ -3,17 +3,17 @@
 $(function () {
     $.getJSON('data/slingshot.json', function (data) {
         $.each(data.grid, function (i, f) {
-            var griditems = '<div class="app ' + f.position + '"><img src="images/icons/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
+            var griditems = '<div class="app ' + f.position + '"><img src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
             $(griditems).appendTo('.slingshot-grid')
         })
         $.each(data.categories, function (i, f) {
-            var categoriesitems = '<div class="app ' + f.position + '"><img src="images/icons/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
+            var categoriesitems = '<div class="app ' + f.position + '"><img src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
             $(categoriesitems).appendTo('.slingshot-categories')
         })
         $.each(data.searchone, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchone')
@@ -21,7 +21,7 @@ $(function () {
         $.each(data.searchtwo, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchtwo')
@@ -29,7 +29,7 @@ $(function () {
         $.each(data.searchthree, function (i, f) {
             var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
             $.each(f.items, function (i, f) {
-                searchItems += '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
             })
             searchItems += '</div>'
             $(searchItems).appendTo('.searchthree')

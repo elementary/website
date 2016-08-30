@@ -56,7 +56,7 @@
 </div>
 <div class="grid">
     <div class="two-thirds">
-        <image src="images/developer/logo.svg" alt="logo">
+        <image src="images/icons/places/128/distributor-logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
         <h4>Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4</h4>
     </div>
@@ -64,7 +64,7 @@
 <div class="grid">
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/contractor.svg" alt="Contractor">
+            <img src="images/icons/actions/48/document-export.svg" alt="Contractor">
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
@@ -85,7 +85,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/gda.svg" alt="GDA">
+            <img src="images/icons/mimes/48/office-database.svg" alt="GDA">
         </div>
         <div class="alert column">
             <h2>GDA</h2>
@@ -95,7 +95,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/icons/48/preferences-system-network.svg" alt="Soup">
+            <img src="images/icons/categories/48/preferences-system-network.svg" alt="Soup">
         </div>
         <div class="alert column">
             <h2>Soup</h2>

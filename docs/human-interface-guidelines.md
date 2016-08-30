@@ -357,7 +357,7 @@ When dealing with window titles, consider that their main use is in distinguishi
 ## Dialogs {#dialogs}
 <div class="dialog">
     <div class="guide horizontal">24</div>
-    <img alt="Dialog warning icon" src="images/icons/48/dialog-warning.svg">
+    <img alt="Dialog warning icon" src="images/icons/status/48/dialog-warning.svg">
     <div class="content-area">
         <p class="primary">Primary text providing basic information and a suggestion</p>
         <p>Secondary text providing further details. Also includes information that explains any unobvious consequences of actions.</p>
