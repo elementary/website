@@ -336,10 +336,16 @@ input:focus + .focus-reveal {
     }
 }
 
-#slingshot .app-display__description .symbolic-icon {
+#slingshot .app-display__description svg {
     display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
+}
+
+#slingshot .app-display__description svg,
+#slingshot .app-display__description svg * {
+    color: #000 !important;
+    fill: #000 !important;
 }
 
 #slingshot .app-display__description p {
@@ -393,6 +399,12 @@ input:focus + .focus-reveal {
     display: inline-block;
     margin: 0;
     transition: all 200ms ease-out;
+}
+
+.slingshot .linked,
+.slingshot .linked * {
+    color: #000 !important;
+    fill: #000 !important;
 }
 
 .slingshot .linked.inactive {
