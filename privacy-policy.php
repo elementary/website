@@ -40,7 +40,7 @@
                     <h4 data-l10n-off>Safari</h4>
                 </a>
                 <a target="_blank" href="http://midori-browser.org/faqs/#blacklist_cookies" class="column">
-                    <img src="images/icons/TODO/midori.svg" data-l10n-off alt="Midori" class="browsers-list" />
+                    <img src="images/privacy-policy/midori_256x256.png" data-l10n-off alt="Midori" class="browsers-list" />
                     <h4 data-l10n-off>Midori</h4>
                 </a>
                 <a target="_blank" href="https://help.gnome.org/users/epiphany/stable/data-cookies.html" class="column">
