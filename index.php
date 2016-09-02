@@ -200,7 +200,7 @@
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
                                 <h2>Calendar</h2>
-                                <p>Calendar can create events on the fly, and sync them with services like Google, so you can stay punctual.</p>
+                                <p>Easily view and create events. Sync with Online Accounts like Google.</p>
                             </div>
                         </div>
                     </div>
