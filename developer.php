@@ -5,15 +5,14 @@
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,highlight.js@9'
     );
     $page['scripts'] = array(
-        'scripts/highlight.pack.js',
         'scripts/developer.js'
     );
     $page['styles'] = array(
         'styles/developer.css',
-        'styles/solarized_light.css'
+        'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-light.min.css'
     );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';

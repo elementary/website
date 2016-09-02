@@ -58,13 +58,13 @@ if (
 
         // Syntax highlighting
         $page['scripts'] = array(
-            'scripts/highlight.pack.js',
+            'https://cdn.jsdelivr.net/g/highlight.js@9',
             'scripts/docs/main.js'
         );
 
         $page['styles'] = array(
-            'styles/solarized_light.css',
-            'styles/solarized_dark_bash.css',
+            'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-light.min.css',
+            'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-dark.min.css',
             'styles/docs.css'
         );
 
