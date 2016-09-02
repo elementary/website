@@ -3,7 +3,7 @@
 
     $page['script-plugins'] = array(
         'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4',
-        'scripts/StreamSaver.js',
+        'scripts/streamSaver.min.js',
         'https://cdn.rawgit.com/creatorrr/web-streams-polyfill/master/dist/polyfill.min.js',
         'scripts/slider.js'
     );
