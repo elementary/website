@@ -16,6 +16,10 @@
 
     require_once __DIR__ . '/../backend/store/cart.php';
     require_once __DIR__ . '/../backend/store/address.php';
+    require_once __DIR__ . '/../backend/classify.current.php';
+    // TODO Remove this Over-ride for testing.
+    $ip = '2a01:cb00:2f8:7200:b963:8c78:6faa:6512';
+    $country = getCurrentCountry($ip);
 
     $cart = \Store\Cart\get_cart();
 
@@ -82,7 +86,7 @@
         <select name="country" autocomplete="country" required>
             <?php
                 foreach (\Store\Address\get_countries() as $code => $item) {
-                    $d = ($code === 'US') ? 'selected' : '';
+                    $d = ($code === $country) ? 'selected' : '';
             ?>
                 <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
             <?php } ?>
