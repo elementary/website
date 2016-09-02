@@ -279,10 +279,10 @@ $(function () {
             clearInterval(interval)
             $('.counter').text('Complete')
             // Offer to save file.
-            //file.getBlobURL(function (err, url) {
-            //    if (err) throw err
-            //    $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
-            //})
+            // file.getBlobURL(function (err, url) {
+            //     if (err) throw err
+            //     $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
+            // })
         })
     }
 
