@@ -113,6 +113,6 @@ $(document).ready(function () {
             $state.hide().attr('required', false)
             $statelabel.hide().attr('required', false)
         }
-   })
+    })
     $('form[action$="checkout"] select[name="country"]').change()
 })
