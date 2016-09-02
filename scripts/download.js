@@ -202,7 +202,10 @@ $(function () {
 
     // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
     function doWebtorrentDownload () {
-        if (WebTorrent.WEBRTC_SUPPORT) {
+        // WebTorrent will only work if streamSaver is supported or if Firefox
+        // is used (Firefox allows large blobs).
+        var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') >= 0
+        if (WebTorrent.WEBRTC_SUPPORT && (streamSaver.supported || isFirefox)) {
             $('#download-webtorrent').show()
             $('#download-direct').hide()
             // Initialize WebTorrent
@@ -265,24 +268,29 @@ $(function () {
             1000
         )
         var file = torrent.files[0] // There should only ever be one file.
-        var fileStream = streamSaver.createWriteStream(file.name, file.size)
-        var writer = fileStream.getWriter()
-        file.createReadStream().on('data', function (data) {
-            writer.write(data)
-        }).on('end', function () {
-            writer.close()
-        })
+        // Use streamSaver when possible to directly save file to disk.
+        if (streamSaver.supported) {
+            var fileStream = streamSaver.createWriteStream(file.name, file.size)
+            var writer = fileStream.getWriter()
+            file.createReadStream().on('data', function (data) {
+                writer.write(data)
+            }).on('end', function () {
+                writer.close()
+            })
+        }
         // Stop printing out progress.
         torrent.on('done', function () {
             console.log('Progress: 100%')
             // Stop the progress bar
             clearInterval(interval)
             $('.counter').text('Complete')
-            // Offer to save file.
-            // file.getBlobURL(function (err, url) {
-            //     if (err) throw err
-            //     $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
-            // })
+            // Offer to save file if streamSaver isn't supported.
+            if (!streamSaver.supported) {
+                file.getBlobURL(function (err, url) {
+                    if (err) throw err
+                    $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
+                })
+            }
         })
     }
 
