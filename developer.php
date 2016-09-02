@@ -110,8 +110,21 @@
     <div class="grid">
         <div class="two-thirds">
             <img src="images/developer/vala.svg" alt="vala">
-            <h2>Vala. A Modern, Fast, Open Source Language.</h2>
-            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
+            <h2>Vala. Write Fast, Native, Object-Oriented Code.</h2>
+        </div>
+        <div class="grid">
+            <div class="third">
+                <i class="fa fa-cube"></i>
+                <p>Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C</p>
+            </div>
+            <div class="third">
+                <i class="fa fa-rocket"></i>
+                <p>Low memory requirements, native execution, and purpose-built for GObject</p>
+            </div>
+            <div class="third">
+                <i class="fa  fa-cogs"></i>
+                <p>Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more</p>
+            </div>
         </div>
         <div class="two-thirds">
 <pre><code>public class MyApp : Gtk.Application {
