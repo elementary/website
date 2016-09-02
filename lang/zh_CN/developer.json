@@ -1,8 +1,8 @@
 {
     "Save": "保存",
-    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
+    "Loki Beta 2 Is Here": "Loki Beta 2 现已面世",
     "Try out the upcoming version of elementary OS.": "试试即将推出的新版 elementary OS。",
-    "Download Loki Beta 2": "Download Loki Beta 2",
+    "Download Loki Beta 2": "下载 Loki Beta 2",
     "Read the Release Notes": "查看更新日志",
     "Documentation": "开发文档",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "通过入门指南，运行、构建和发布基本的应用程序。",
@@ -11,7 +11,7 @@
     "Reference": "参考",
     "Get more info about code style, reporting issues, and proposing design changes.": "关于代码风格、提交问题和请求设计更改的一些建议。",
     "Build for": "开发",
-    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki 为 Wingpanel 提供了新的 API 、为 Slingshot 带来了 Launcher API 支持 、增加了如 AlertView 之类的组件、新的 CSS 样式库和图标等。在 Linux 4.4 , Gtk 3.18 和 Vala 0.32 的支持下，使用 Loki 构建全功能应用将比以往更加容易。",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki 为 Wingpanel 提供了新的 API 、为 Slingshot 带来了 Launcher API 支持 、增加了 AlertView 之类的组件、新的 CSS 样式库和图标等。在 Linux 4.4 , Gtk 3.18 和 Vala 0.32 的支持下，使用 Loki 构建全功能应用将比以往更加容易。",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "桌面端扩展服务，允许应用程序调用其他应用程序的功能，无需事先协调。",
     "HIG for Contractor": "Contractor 指南",
@@ -31,9 +31,9 @@
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "使用 Vala 快速书写流畅自然的面向对象代码。只要您熟悉 C# 语言，便能轻松上手。Vala 专为 GObject 打造，在保持标准 C# 语言 API / ABI 兼容性的同时，带来更低的内存需求。无论是 signals、properties、泛型、Lambda 函数，还是辅助内存管理、异常处理、类型推断、async/yield，你能想到的，Vala 应有尽有。",
     "Learn More about Vala": "了解 Vala",
     "Library Documentation for Vala": "Vala 库文档",
-    "By downloading this beta you accept that it is not a final product and will be unstable.": "Beta 版不是最终发行版本，具有不稳定性，点击下载即代表您已知晓风险。",
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "Beta 版不是最终发行版，具有不稳定性，点击下载即代表您已知晓风险。",
     "Cancel": "取消",
-    "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
+    "Loki Beta 2 64-bit": "Loki Beta 2 64 位",
     "Torrent Magnet Link": "磁力链接",
     "Developer &sdot; elementary": "开发者 ⋅ elementary"
 }
