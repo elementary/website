@@ -17,8 +17,6 @@
     require_once __DIR__ . '/../backend/store/cart.php';
     require_once __DIR__ . '/../backend/store/address.php';
     require_once __DIR__ . '/../backend/classify.current.php';
-    // TODO Remove this Over-ride for testing.
-    $ip = '2a01:cb00:2f8:7200:b963:8c78:6faa:6512';
     $country = getCurrentCountry($ip);
 
     $cart = \Store\Cart\get_cart();
