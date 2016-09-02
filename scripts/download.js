@@ -264,18 +264,25 @@ $(function () {
             },
             1000
         )
+        var file = torrent.files[0] // There should only ever be one file.
+        var fileStream = streamSaver.createWriteStream(file.name, file.size)
+        var writer = fileStream.getWriter()
+        file.on('data', function (data) {
+            writer.write(data)
+        }).on('end', function () {
+            writer.close()
+        })
         // Stop printing out progress.
         torrent.on('done', function () {
             console.log('Progress: 100%')
             // Stop the progress bar
             clearInterval(interval)
             $('.counter').text('Complete')
-            var file = torrent.files[0] // There should only ever be one file.
             // Offer to save file.
-            file.getBlobURL(function (err, url) {
+            /*file.getBlobURL(function (err, url) {
                 if (err) throw err
                 $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
-            })
+            })*/
         })
     }
 
