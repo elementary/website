@@ -315,6 +315,7 @@
 }
 
 .countdown-wrapper .read-more {
+    display: block;
     margin: 30px;
 }
 
