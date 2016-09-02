@@ -10,6 +10,9 @@
     $page['scripts'] = array(
         'scripts/developer.js' => array(
             'async' => true
+        ),
+        'scripts/docs/main.js' => array(
+            'async' => true
         )
     );
     $page['styles'] = array(
@@ -112,6 +115,29 @@
             <img src="images/developer/vala.svg" alt="vala">
             <h2>Vala. A Modern, Fast, Open Source Language.</h2>
             <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
+        </div>
+        <div class="two-thirds">
+            <pre class="has-numbering highlighted">
+                public class MyApp : Gtk.Application {
+
+                    public MyApp () {
+                        Object (application_id: "com.github.myteam.myapp",
+                        flags: ApplicationFlags.FLAGS_NONE);
+                    }
+
+                    protected override void activate () {
+                        var window = new Gtk.ApplicationWindow (this);
+                        window.title = "MyApp";
+                        window.set_default_size (1024, 768);
+                        window.show_all ();
+                    }
+
+                    public static int main (string[] args) {
+                        var app = new MyApp ();
+                        return app.run (args);
+                    }
+                }
+            </pre>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
@@ -119,6 +145,7 @@
                 <div class="half">
                     <a class="read-more" href="http://valadoc.elementary.io/">Library Documentation for Vala</a>
                 </div>
+            </div>
         </div>
     </div>
 </section>
