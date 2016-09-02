@@ -48,7 +48,7 @@ if (
 
         var currentDate = new Date()
         var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($releaseDate)) ?>')
-        var secondDiff = releaseDate.getTime() / 1000 - currentDate.getTime() / 1000
+        var secondDiff = (releaseDate.getTime() - currentDate.getTime()) / 1000
 
         console.log(secondDiff)
 
