@@ -2,7 +2,7 @@
 
 $l10n->set_domain('layout');
 
-$releaseDate = new DateTime('2016-09-05 22:00:00');
+$releaseDate = new DateTime('2016-09-09 17:00:00');
 
 if (
     (new DateTime() < $releaseDate) &&
