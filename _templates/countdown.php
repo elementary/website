@@ -46,9 +46,13 @@ if (
             }
         })
 
+        var currentDate = new Date()
         var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($releaseDate)) ?>')
+        var secondDiff = releaseDate.getTime() / 1000 - currentDate.getTime() / 1000
 
-        var clock = $('.countdown').FlipClock(releaseDate, {
+        console.log(secondDiff)
+
+        var clock = $('.countdown').FlipClock(secondDiff, {
             clockFace: 'MvpClock',
             countdown: true
         })
