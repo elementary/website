@@ -8,15 +8,12 @@
         'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
     );
     $page['scripts'] = array(
-        'scripts/developer.js' => array(
-            'async' => true
-        ),
-        'scripts/docs/main.js' => array(
-            'async' => true
-        )
+        'scripts/highlight.pack.js',
+        'scripts/developer.js'
     );
     $page['styles'] = array(
-        'styles/developer.css'
+        'styles/developer.css',
+        'styles/solarized_light.css'
     );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
@@ -117,27 +114,25 @@
             <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
         </div>
         <div class="two-thirds">
-            <pre class="has-numbering highlighted">
-                public class MyApp : Gtk.Application {
+<pre><code>public class MyApp : Gtk.Application {
 
-                    public MyApp () {
-                        Object (application_id: "com.github.myteam.myapp",
-                        flags: ApplicationFlags.FLAGS_NONE);
-                    }
+    public MyApp () {
+        Object (application_id: "com.github.myteam.myapp",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
 
-                    protected override void activate () {
-                        var window = new Gtk.ApplicationWindow (this);
-                        window.title = "MyApp";
-                        window.set_default_size (1024, 768);
-                        window.show_all ();
-                    }
+    protected override void activate () {
+        var window = new Gtk.ApplicationWindow (this);
+        window.title = "MyApp";
+        window.set_default_size (1024, 768);
+        window.show_all ();
+    }
 
-                    public static int main (string[] args) {
-                        var app = new MyApp ();
-                        return app.run (args);
-                    }
-                }
-            </pre>
+    public static int main (string[] args) {
+        var app = new MyApp ();
+        return app.run (args);
+    }
+}</code></pre>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
