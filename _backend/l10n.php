@@ -22,7 +22,7 @@ class Translator {
         'id_ID' => 'Bahasa Indonesia',
         'it' => 'Italiano',
         'ja' => '日本語',
-        'ko' => '한국어',
+        'ko_KR' => '한국어',
         'lt' => 'Lietuvių kalba',
         'nb' => 'Bokmål',
         'ne' => 'नेपाली',
