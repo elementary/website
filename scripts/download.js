@@ -267,7 +267,7 @@ $(function () {
         var file = torrent.files[0] // There should only ever be one file.
         var fileStream = streamSaver.createWriteStream(file.name, file.size)
         var writer = fileStream.getWriter()
-        file.on('data', function (data) {
+        file.createReadStream().on('data', function (data) {
             writer.write(data)
         }).on('end', function () {
             writer.close()
