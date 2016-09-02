@@ -54,6 +54,8 @@ $l10n->set_domain('layout');
             </div>
         <![endif]-->
 
+        <?php include __DIR__ . '/countdown.php'; ?>
+
         <?php
             // Load all non async javascript tags at the end of page
             foreach ($page['scripts'] as $one => $two) {

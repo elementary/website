@@ -100,7 +100,7 @@ $l10n->begin_html_translation();
 
         <script>
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
+            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3,flipclock@0.7.7(flipclock.min.js)')
             <?php foreach ($page['script-plugins'] as $script) { ?>
             jQl.loadjQdep("<?php echo $script ?>")
             <?php } ?>
