@@ -12,7 +12,7 @@
     );
     $page['styles'] = array(
         'styles/developer.css',
-        'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-light.min.css'
+        'styles/solarized_light.css'
     );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';

@@ -63,8 +63,8 @@ if (
         );
 
         $page['styles'] = array(
-            'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-light.min.css',
-            'https://cdn.jsdelivr.net/highlight.js/9.*/styles/solarized-dark.min.css',
+            'styles/solarized_light.css',
+            'styles/solarized_dark_bash.css',
             'styles/docs.css'
         );
 
