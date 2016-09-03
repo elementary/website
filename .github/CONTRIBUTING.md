@@ -1,35 +1,42 @@
-# Web Server
+# Contributing
 
-## PHP Web Server
+## Web Server
 
-For a simple local development environment, you will need:
+### Vagrant
 
-* [A supported version of PHP](http://php.net/supported-versions.php)
-* [Node.js](https://nodejs.org/)
-* `php7.0-curl`
-* `php7.0-intl`
-* `php7.0-json`
-* `php7.0-mbstring`
-* `php7.0-xml`
-* packages installed with `npm install`
+For simplicity a Vagrant file is included. To start you will need:
+
+* [Vagrant](http://www.vagrantup.com/downloads.html)
+* [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
+
+Then simply run `vagrant up`.
+
+### Simple PHP Server
+
+Alternatively, for a simple local development environment running on PHP, you will need:
+
+* [A supported version of PHP](http://php.net/supported-versions.php) with:
+  * `php7.0-cli`
+  * `php7.0-fpm`
+  * `php7.0-curl`
+  * `php7.0-intl`
+  * `php7.0-json`
+  * `php7.0-mbstring`
+  * `php7.0-sqlite`
+  * `php7.0-xml`
+* [Node.js](https://nodejs.org/) and
+  * packages installed with `npm install`
 
 Then inside the project directory, run `npm run build && npm run start`. Next,
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
-## Nginx Web Server
+### Nginx Web Server
 
 For a full web-server environment, which includes more redirect and permissions
 you may find useful, you will need:
 
-* [A supported version of PHP](http://php.net/supported-versions.php)
-* [Node.js](https://nodejs.org/)
+* Everything required for "Simple PHP Server" (above)
 * The latest stable version of [Nginx](http://nginx.org)
-* `php7.0-curl`
-* `php7.0-intl`
-* `php7.0-json`
-* `php7.0-mbstring`
-* `php7.0-xml`
-* packages installed with `npm install`
 
 Then, we need to configure Nginx. To start, open up a configuration file in
 Nano.
@@ -66,19 +73,19 @@ sudo service nginx restart
 Then we need to build the static assets.
 
 ```bash
-npm run install && npm run build
+npm install && npm run build
 ```
 
 Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
-# Code Style
+## Code Style
 
  - Four space indentation
  - Remove trailing whitespaces and add an empty line at the end of each file
  - Compatibility with the latest versions of popular browsers (chrome, firefox,
      safari, edge, midori)
 
-## PHP
+### PHP
  - `include` templates, not `require` or `_once`
  - Use full PHP tags, not short ones
  - Don't close PHP tags on PHP only files
@@ -96,12 +103,12 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 ?>
 ```
 
-## HTML
+### HTML
  - Include `alt` attribute for all images
  - Include `title` attribute for all links
  - Close all your tags properly
 
-## CSS
+### CSS
  - Try to use classes instead of IDs unless things are absolutely unique
  - One selector per line
  - Care with fallbacks and browsers compatibilities. Using only official syntax
@@ -119,32 +126,21 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 }
 ```
 
-# Composer
+## Proposing Changes
 
-We use composer to manage our backend scripts. Because all of these files are
-in the repository, it's not required to have `composer` installed unless you
-want to update the dependencies.
-
-## Updating
-
-Navigate to `backend/` and run `composer update`.
-Make sure to test for any breakage when updating.
-
-# Contributing
-
-## Make a new branch and push it to GitHub.
+### Make a new branch and push it to GitHub.
 ```bash
 git checkout -b feature_branch_name
 git push -u origin feature_branch_name
 ```
-## Updating from Master
+
+### Updating from Master
 ```bash
 git pull origin master
 ```
-## Merge from master
+
+### Merge from master
 ```bash
 git checkout feature_branch_name
 git merge master
 ```
-## Fix Merge Conflicts
-TODO
