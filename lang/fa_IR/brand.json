@@ -26,9 +26,9 @@
     "Banana": "Banana",
     "Lime": "Lime",
     "Grape": "Grape",
-    "White": "White",
-    "Black": "Black",
-    "Fonts": "Fonts",
+    "White": "سفید",
+    "Black": "سیاه",
+    "Fonts": "فونت ها",
     "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.",
     "Third Parties": "Third Parties",
     "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:": "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:",
@@ -39,7 +39,7 @@
     "Merchandise": "Merchandise",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.",
     "Assets &amp; More Info": "Assets & More Info",
-    "Download on GitHub": "Download on GitHub",
+    "Download on GitHub": "دانلود در GitHub",
     "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a>.": "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a>.",
-    "Brand &sdot; elementary": "Brand ⋅ elementary"
+    "Brand &sdot; elementary": "برند ⋅ elementary"
 }

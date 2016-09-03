@@ -1,9 +1,9 @@
 {
-    "Save": "Save",
-    "Loki Beta 2 Is Here": "Loki Beta 2 Is Here",
-    "Try out the upcoming version of elementary OS.": "Try out the upcoming version of elementary OS.",
-    "Download Loki Beta 2": "Download Loki Beta 2",
-    "Read the Release Notes": "Read the Release Notes",
+    "Save": "Gem",
+    "Loki Beta 2 Is Here": "Loki Beta 2 er her",
+    "Try out the upcoming version of elementary OS.": "Prøv en kommende version af elementary OS.",
+    "Download Loki Beta 2": "Hent Loki Beta 2",
+    "Read the Release Notes": "Læs udgivelses noterne",
     "Documentation": "Dokumentation",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Få et simpelt program kørende og klar til distribution med vores begyndervejledning.",
     "Design": "Design",
@@ -27,13 +27,13 @@
     "Reference for Soup": "Reference for Soup",
     "Reference for JSON-GLib": "Reference for JSON-GLib",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala. A Modern, Fast, Open Source Language.",
+    "Vala. A Modern, Fast, Open Source Language.": "Vala. Et moderne, hurtigt, open source sprog.",
     "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
-    "Learn More about Vala": "Learn More about Vala",
+    "Learn More about Vala": "Lær mere om Vala",
     "Library Documentation for Vala": "Library Documentation for Vala",
-    "By downloading this beta you accept that it is not a final product and will be unstable.": "By downloading this beta you accept that it is not a final product and will be unstable.",
-    "Cancel": "Cancel",
+    "By downloading this beta you accept that it is not a final product and will be unstable.": "Når du henter denne beta, accepterer du, at det ikke er et færdigt produkt, og vil være ustabil.",
+    "Cancel": "Annuller",
     "Loki Beta 2 64-bit": "Loki Beta 2 64-bit",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "Developer &sdot; elementary": "Developer ⋅ elementary"
+    "Developer &sdot; elementary": "Udvikler ⋅ elementary"
 }
