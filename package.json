@@ -21,10 +21,9 @@
     "stylelint": "^7.1.0"
   },
   "scripts": {
-    "install:php-deps": "sudo apt update && sudo apt install php7.0-fpm php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-mbstring php7.0-xml",
     "install:submodule": "git submodule init && git submodule update --force --rebase",
     "install:composer": "cd backend && composer install",
-    "postinstall": "npm run install:php-deps && npm run install:submodule && npm run install:composer",
+    "postinstall": "npm run install:submodule && npm run install:composer",
     "build": "gulp",
     "build:watch": "gulp watch",
     "start": "php -S 0.0.0.0:8000 router.php"
