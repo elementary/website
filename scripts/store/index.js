@@ -1,4 +1,4 @@
-/* ga */
+/* global ga */
 
 /**
  * scripts/store/index.js
