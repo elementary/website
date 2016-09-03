@@ -27,6 +27,14 @@ Alternatively, for a simple local development environment running on PHP, you wi
 * [Node.js](https://nodejs.org/) and
   * packages installed with `npm install`
 
+These can be most easily installed with this script:
+
+```
+sudo apt install php7.0-fpm php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml &&
+sudo apt install nodejs &&
+npm install
+```
+
 Then inside the project directory, run `npm run build && npm run start`. Next,
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
