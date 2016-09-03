@@ -5,10 +5,9 @@
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,highlight.js@9(highlight.min.js+languages/vala.min.js)'
     );
     $page['scripts'] = array(
-        'scripts/highlight.pack.js',
         'scripts/developer.js'
     );
     $page['styles'] = array(

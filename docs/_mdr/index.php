@@ -58,7 +58,7 @@ if (
 
         // Syntax highlighting
         $page['scripts'] = array(
-            'scripts/highlight.pack.js',
+            'https://cdn.jsdelivr.net/g/highlight.js@9(highlight.min.js+languages/vala.min.js)',
             'scripts/docs/main.js'
         );
 
