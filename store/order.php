@@ -238,7 +238,7 @@
 
     ?>
 
-        <script>ga('send', 'event', 'Store', 'Order Visit')</script>
+        <script>ga('send', 'event', 'Store', 'Order Completion')</script>
 
         <div class="grid text-center">
             <h3>It's on its way!</h3>
