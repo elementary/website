@@ -67,7 +67,8 @@ $(function () {
         // Catch case where a button is checked or the custom input is above the minimum.
         } else if (
             $('button.payment-button').hasClass('checked') ||
-            $('#amount-custom').val() * 100 >= paymentMinimum
+            $('#amount-custom').val() * 100 >= paymentMinimum ||
+            $('#amount-custom').val() === ''
         ) {
             $('#download').text(translatePurchase)
             document.title = translatePurchase
