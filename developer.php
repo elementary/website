@@ -25,11 +25,10 @@
 
 <section class="hero dark">
     <div>
-        <img src="images/developer/save.svg" alt="Save">
-        <h1>Loki Beta 2 Is Here</h1>
-        <h4>Try out the upcoming version of elementary OS.</h4>
-        <button type="submit" id="download" class="suggested-action">Download Loki Beta 2</button>
-        <p class="small-label"><a href="http://blog.elementary.io/post/147507276666/loki-beta-2-is-here">Read the Release Notes</a></p>
+        <img src="images/developer/developer-sketch.svg" alt="Developer hero image">
+        <h1>Develop Your Ideas Into Code</h1>
+        <h4>Learn to design, develop, and publish apps for elementary OS</h4>
+        <a href="docs/code/getting-started" class="button suggested-action">Get Started</a>
     </div>
 </section>
 
@@ -57,7 +56,7 @@
 </div>
 <div class="grid">
     <div class="two-thirds">
-        <image src="images/developer/logo.svg" alt="logo">
+        <image src="images/icons/places/128/distributor-logo.svg" alt="logo">
         <h1>Build for <?php include("./images/logotype-os.svg"); ?></h1>
         <h4>Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4</h4>
     </div>
@@ -65,7 +64,7 @@
 <div class="grid">
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/contractor.svg" alt="Contractor">
+            <img src="images/icons/actions/48/document-export.svg" alt="Contractor">
         </div>
         <div class="alert column">
             <h2>Contractor</h2>
@@ -86,7 +85,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/developer/gda.svg" alt="GDA">
+            <img src="images/icons/mimes/48/office-database.svg" alt="GDA">
         </div>
         <div class="alert column">
             <h2>GDA</h2>
@@ -96,7 +95,7 @@
     </div>
     <div class="half">
         <div class="alert column">
-            <img src="images/icons/48/preferences-system-network.svg" alt="Soup">
+            <img src="images/icons/categories/48/preferences-system-network.svg" alt="Soup">
         </div>
         <div class="alert column">
             <h2>Soup</h2>
@@ -157,22 +156,6 @@
         </div>
     </div>
 </section>
-<div id="download-modal" class="modal">
-    <div class="modal-container">
-        <h3>Download Loki Beta 2</h3>
-        <p>By downloading this beta you accept that it is not a final product and will be unstable.</p>
-        <div class="row actions">
-            <div class="column">
-                <a class="button close-modal" href="#">Cancel</a>
-            </div>
-            <div class="column linked">
-                <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
-                <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<a style="display:none;" class="open-modal" href="#download-modal"></a>
 <?php
     include $template['footer'];
 ?>
