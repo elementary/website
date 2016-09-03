@@ -124,7 +124,8 @@
 
 <div class="grid">
     <h3>You have no items in your cart</h3>
-    <a href="store/">Pick up some swag</a>
+    <p class="text-center">Go get yourself something nice!</p>
+    <a href="store/" class="button suggested-action">Pick up some swag</a>
 </div>
 
 <?php
