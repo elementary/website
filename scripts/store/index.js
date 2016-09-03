@@ -1,3 +1,5 @@
+/* global ga */
+
 /**
  * scripts/store/index.js
  * Does logic for picking product variants and adding to cart
@@ -38,6 +40,8 @@ $('document').ready(function () {
             closeButton: '.close-modal'
         })
         $trigger.click()
+
+        ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
     })
 
     /**
