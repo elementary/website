@@ -23,14 +23,15 @@ Alternatively, for a simple local development environment running on PHP, you wi
   * `php7.0-mbstring`
   * `php7.0-sqlite`
   * `php7.0-xml`
-* [Node.js](https://nodejs.org/) and
+  * `composer`
+* [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm install`
 
 These can be most easily installed with this script:
 
 ```
-sudo apt install php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml &&
-sudo apt install nodejs &&
+sudo apt install php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml composer &&
+sudo apt install nodejs npm &&
 npm install
 ```
 
