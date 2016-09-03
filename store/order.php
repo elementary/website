@@ -237,13 +237,15 @@
     include $template['alert'];
 
     ?>
-    
+
+        <script>ga('send', 'event', 'Store', 'Order Visit')</script>
+
         <div class="grid text-center">
             <h3>It's on its way!</h3>
             <p class="half">Your order is being fulfilled. We emailed you a payment receipt and will send an email once it's been shipped. If you have any issues with your order, please email <a href="mailto:payment@elementary.io">payment@elementary.io</a>. Thanks!</p>
             <a class="whole" href="<?php echo $sitewide['root']; ?>store">Back to store</a>
         </div>
-        
+
     <?php
 
     include $template['footer'];

@@ -38,6 +38,9 @@ $('document').ready(function () {
             closeButton: '.close-modal'
         })
         $trigger.click()
+
+        ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
+
     })
 
     /**
