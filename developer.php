@@ -8,12 +8,12 @@
         'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
     );
     $page['scripts'] = array(
-        'scripts/developer.js' => array(
-            'async' => true
-        )
+        'scripts/highlight.pack.js',
+        'scripts/developer.js'
     );
     $page['styles'] = array(
-        'styles/developer.css'
+        'styles/developer.css',
+        'styles/solarized_light.css'
     );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
@@ -109,8 +109,42 @@
     <div class="grid">
         <div class="two-thirds">
             <img src="images/developer/vala.svg" alt="vala">
-            <h2>Vala. A Modern, Fast, Open Source Language.</h2>
-            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
+            <h2>Vala. Write Fast, Native, Object-Oriented Code.</h2>
+        </div>
+        <div class="grid">
+            <div class="third">
+                <i class="fa fa-cube"></i>
+                <p>Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C</p>
+            </div>
+            <div class="third">
+                <i class="fa fa-rocket"></i>
+                <p>Low memory requirements, native execution, and purpose-built for GObject</p>
+            </div>
+            <div class="third">
+                <i class="fa  fa-cogs"></i>
+                <p>Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more</p>
+            </div>
+        </div>
+        <div class="two-thirds">
+<pre><code>public class MyApp : Gtk.Application {
+
+    public MyApp () {
+        Object (application_id: "com.github.myteam.myapp",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    protected override void activate () {
+        var window = new Gtk.ApplicationWindow (this);
+        window.title = "MyApp";
+        window.set_default_size (1024, 768);
+        window.show_all ();
+    }
+
+    public static int main (string[] args) {
+        var app = new MyApp ();
+        return app.run (args);
+    }
+}</code></pre>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
@@ -118,6 +152,7 @@
                 <div class="half">
                     <a class="read-more" href="http://valadoc.elementary.io/">Library Documentation for Vala</a>
                 </div>
+            </div>
         </div>
     </div>
 </section>

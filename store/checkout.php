@@ -87,6 +87,8 @@
     include $template['alert'];
 ?>
 
+<script>ga('send', 'event', 'Store', 'Checkout Visit')</script>
+
 <script>window.stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'</script>
 
 <form action="<?php echo $sitewide['root'] ?>store/order" method="post" class="grid grid--narrow">
