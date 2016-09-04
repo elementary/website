@@ -276,7 +276,7 @@
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
                                 <h2>Camera</h2>
-                                <p>Easily snap picures or video from a built-in webcam.</p>
+                                <p>Easily snap pictures or video from a built-in webcam.</p>
                             </div>
                         </div>
                     </div>
