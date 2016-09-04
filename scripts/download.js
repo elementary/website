@@ -1,4 +1,4 @@
-/* global ga releaseTitle releaseVersion releaseFilename downloadLink downloadRegion stripeKey StripeCheckout WebTorrent */
+/* global ga releaseTitle releaseVersion releaseFilename downloadLink downloadRegion stripeKey StripeCheckout WebTorrent streamSaver */
 
 $(function () {
     // Set defaults
@@ -200,9 +200,16 @@ $(function () {
         doWebtorrentDownload()
     }
 
+    // WebTorrent will only work if (streamSaver is supported and HTTPS is
+    // used) or if Firefox is used (Firefox allows large blobs).
+    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') >= 0
+    var isHttps = window.location.protocol === 'https:'
+    var useStreamSaver = streamSaver.supported && isHttps
+    var useWebTorrent = WebTorrent.WEBRTC_SUPPORT && (useStreamSaver || isFirefox)
+
     // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
     function doWebtorrentDownload () {
-        if (WebTorrent.WEBRTC_SUPPORT) {
+        if (useWebTorrent) {
             $('#download-webtorrent').show()
             $('#download-direct').hide()
             // Initialize WebTorrent
@@ -264,18 +271,31 @@ $(function () {
             },
             1000
         )
+        var file = torrent.files[0] // There should only ever be one file.
+        // Use streamSaver when possible to directly save file to disk.
+        if (useStreamSaver) {
+            $('#js-save-webtorrent').hide()
+            var fileStream = streamSaver.createWriteStream(file.name, file.size)
+            var writer = fileStream.getWriter()
+            file.createReadStream().on('data', function (data) {
+                writer.write(data)
+            }).on('end', function () {
+                writer.close()
+            })
+        }
         // Stop printing out progress.
         torrent.on('done', function () {
             console.log('Progress: 100%')
             // Stop the progress bar
             clearInterval(interval)
             $('.counter').text('Complete')
-            var file = torrent.files[0] // There should only ever be one file.
-            // Offer to save file.
-            file.getBlobURL(function (err, url) {
-                if (err) throw err
-                $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
-            })
+            // Offer to save file if streamSaver isn't supported.
+            if (!useStreamSaver) {
+                file.getBlobURL(function (err, url) {
+                    if (err) throw err
+                    $('#js-save-webtorrent').removeClass('loading').addClass('suggested-action').attr('download', file.name).attr('href', url)
+                })
+            }
         })
     }
 
