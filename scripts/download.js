@@ -203,7 +203,7 @@ $(function () {
     // WebTorrent will only work if (streamSaver is supported and HTTPS is
     // used) or if Firefox is used (Firefox allows large blobs).
     var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') >= 0
-    var isHttps = window.location.protocol == 'https:'
+    var isHttps = window.location.protocol === 'https:'
     var useStreamSaver = streamSaver.supported && isHttps
     var useWebTorrent = WebTorrent.WEBRTC_SUPPORT && (useStreamSaver || isFirefox)
 
