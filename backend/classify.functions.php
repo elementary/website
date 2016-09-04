@@ -3,7 +3,7 @@
 ////    Continents
 // NA   North america    Split by locale between NYC3 and SFO1
 // SA   South america    Split by IP hash between NYC3 and SFO1
-// EU   Europe           Split by locale between AMS3, FRA1, and LON1
+// EU   Europe           Split by locale between AMS3 and FRA1
 // AF   Africa           Split by IP hash between AMS3 and FRA1
 // AS   Asia             SGP1
 // OC   Oceania          SGP1
@@ -77,7 +77,7 @@ function ipCheck($hostname, $debug = false) {
         $vikings = array('NL', 'SX', 'DK', 'NO', 'SE', 'FI', 'SJ');
         // Great Britain
         if ( in_array($country, $isles) ) {
-            return 'lon1';
+            return 'ams3';
         // Vikings
         } else if ( in_array($country, $vikings) ) {
             return 'ams3';
@@ -130,3 +130,30 @@ function ipHash($hostname, $debug = false) {
     }
 }
 
+function getCurrentCountry($hostname, $debug = false) {
+
+    try {
+        if ( $debug ) {
+            echo $hostname."\n";
+        }
+        if (!class_exists('GeoIp2\Database\Reader')) {
+            throw new \Exception('Class GeoIp2\Database\Reader not found');
+        }
+        $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
+        $record = $reader->city($hostname);
+        if ( $debug > 1 ) {
+            var_dump($record);
+        }
+        $country   = $record->country->isoCode;
+
+    } catch (\Exception $e) {
+        echo '<!-- '.$e->getMessage().' -->'."\n";
+        $country   = false;
+    }
+
+    if ( $debug ) {
+        echo 'Country: "'.$country.'"'."\n";
+    }
+
+    return $country;
+}

@@ -1,8 +1,8 @@
 {
-    "You're connected!": "You're connected!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Your Internet connection appears to be working. You can safely close this window and continue using your device.",
-    "Why is this window appearing?": "Why is this window appearing?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.",
-    "You're connected! &sdot; elementary": "You're connected! ⋅ elementary"
+    "You're connected!": "접속되었습니다!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "인터넷이 작동됩니다, 이창을 닫고 사용할수 있습니다.",
+    "Why is this window appearing?": "왜 이창이 뜨나요?",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS는 와이파이 접속시 자동적으로 인터넷을 검사합니다. 만약 인터넷접속을 감지하지 못한다면(예: 커피숍 또는 공공장소에서 접속), 이창이 나타나고 로그인페이지가 표시됩니다.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "어떤 네트워크에서는 처음에 종속포털로 보일수 있고 이창이 뜬후 실제로 접속이 종료됩니다.이때에는 이메시지가 보일것이고 안전에게 창을 닫을수 있습니다.",
+    "You're connected! &sdot; elementary": "접속되었습니다. elementary"
 }

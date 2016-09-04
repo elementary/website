@@ -4,8 +4,15 @@
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
     $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
+    $page['script-plugins'] = array(
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,highlight.js@9(highlight.min.js+languages/vala.min.js)'
+    );
+    $page['scripts'] = array(
+        'scripts/developer.js'
+    );
     $page['styles'] = array(
-        'styles/developer.css'
+        'styles/developer.css',
+        'styles/solarized_light.css'
     );
     include $template['header'];
     require_once __DIR__.'/backend/classify.current.php';
@@ -14,10 +21,6 @@
 <script>var releaseTitle = 'Loki'</script>
 <script>var releaseVersion = '0.4-beta2'</script>
 <script>var downloadRegion = '<?php echo $region; ?>'</script>
-<script>
-    jQl.loadjQdep('scripts/jQuery.leanModal2.js')
-    jQl.loadjQdep('scripts/developer.js')
-</script>
 
 <section class="hero dark">
     <div>
@@ -106,8 +109,42 @@
     <div class="grid">
         <div class="two-thirds">
             <img src="images/developer/vala.svg" alt="vala">
-            <h2>Vala. A Modern, Fast, Open Source Language.</h2>
-            <p>Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.</p>
+            <h2>Vala. Write Fast, Native, Object-Oriented Code.</h2>
+        </div>
+        <div class="grid">
+            <div class="third">
+                <i class="fa fa-cube"></i>
+                <p>Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C</p>
+            </div>
+            <div class="third">
+                <i class="fa fa-rocket"></i>
+                <p>Low memory requirements, native execution, and purpose-built for GObject</p>
+            </div>
+            <div class="third">
+                <i class="fa  fa-cogs"></i>
+                <p>Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more</p>
+            </div>
+        </div>
+        <div class="two-thirds">
+<pre><code>public class MyApp : Gtk.Application {
+
+    public MyApp () {
+        Object (application_id: "com.github.myteam.myapp",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    protected override void activate () {
+        var window = new Gtk.ApplicationWindow (this);
+        window.title = "MyApp";
+        window.set_default_size (1024, 768);
+        window.show_all ();
+    }
+
+    public static int main (string[] args) {
+        var app = new MyApp ();
+        return app.run (args);
+    }
+}</code></pre>
             <div class="grid">
                 <div class="half">
                     <a class="read-more" href="https://wiki.gnome.org/Projects/Vala">Learn More about Vala</a>
@@ -115,6 +152,7 @@
                 <div class="half">
                     <a class="read-more" href="http://valadoc.elementary.io/">Library Documentation for Vala</a>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -127,8 +165,8 @@
                 <a class="button close-modal" href="#">Cancel</a>
             </div>
             <div class="column linked">
-                <a class="button suggested-action close-modal" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
-                <a class="button suggested-action close-modal" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
+                <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso">Loki Beta 2 64-bit</a>
+                <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:ddfb046f2f881b6ec845f8ee4ecbfe0758bedd67&dn=elementaryos-0.4-beta2-amd64.20160716.iso&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link; ?>elementaryos-0.4-beta2-amd64.20160716.iso"><i class="fa fa-magnet"></i></a>
             </div>
         </div>
     </div>

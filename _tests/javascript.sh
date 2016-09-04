@@ -11,7 +11,6 @@ echo "###########################"
 ./node_modules/.bin/eslint \
     --ignore-pattern "*.min.js" \
     --ignore-pattern "*.pack.js" \
-    --ignore-pattern "jQuery.leanModal2.js" \
     "scripts/**/*.js"
 
 echo "############################"

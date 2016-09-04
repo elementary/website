@@ -6,9 +6,10 @@ if (!isset($l10n)) {
    $l10n = new Translator();
 }
 $page['lang'] = $l10n->lang();
+if (!isset($page['lang'])) $page['lang'] = 'en';
 
 $page['lang-root'] = $sitewide['root'];
-if (isset($page['lang']) && $page['lang'] != 'en') {
+if ($page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
 }
 if (!isset($page['path'])) {
@@ -35,8 +36,8 @@ $l10n->begin_html_translation();
 ?>
 
 <!doctype html>
-<!--[if IE]><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>" class="ie-legacy"><![endif]-->
-<!--[if !IE]><!--><html lang="<?php echo !empty($page['lang']) ? $page['lang'] : 'en'; ?>"><!--<![endif]-->
+<!--[if IE]><html lang="<?php echo $page['lang']; ?>" class="ie-legacy"><![endif]-->
+<!--[if !IE]><!--><html lang="<?php echo $page['lang']; ?>"><!--<![endif]-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +69,7 @@ $l10n->begin_html_translation();
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
 
-        <?php if (!empty($page['lang']) && $page['lang'] != 'en') { ?>
+        <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
@@ -99,7 +100,7 @@ $l10n->begin_html_translation();
 
         <script>
             <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
+            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3,flipclock@0.7.7(flipclock.min.js)')
             <?php foreach ($page['script-plugins'] as $script) { ?>
             jQl.loadjQdep("<?php echo $script ?>")
             <?php } ?>

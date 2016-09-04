@@ -3,8 +3,8 @@
 
     $page['script-plugins'] = array(
         'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4',
-        'scripts/streamSaver.min.js',
         'https://cdn.rawgit.com/creatorrr/web-streams-polyfill/master/dist/polyfill.min.js',
+        'scripts/streamSaver.min.js',
         'scripts/slider.js'
     );
 
@@ -17,7 +17,7 @@
             'async' => true
         ),
         'scripts/download.js' => array(
-            'async' => false
+            'async' => true
         ),
         'scripts/slider.run.js' => array(
             'async' => false
@@ -256,7 +256,8 @@
             </div>
             <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
             <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-            <div id="download-modal" class="modal"><i class="fa fa-close close-modal"></i>
+            <div id="download-modal" class="modal">
+                <i class="fa fa-close close-modal"></i>
                 <div id="download-webtorrent" style="display:none;">
                     <h3>Downloading</h3>
                     <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>

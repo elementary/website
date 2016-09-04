@@ -67,7 +67,8 @@ $(function () {
         // Catch case where a button is checked or the custom input is above the minimum.
         } else if (
             $('button.payment-button').hasClass('checked') ||
-            $('#amount-custom').val() * 100 >= paymentMinimum
+            $('#amount-custom').val() * 100 >= paymentMinimum ||
+            $('#amount-custom').val() === ''
         ) {
             $('#download').text(translatePurchase)
             document.title = translatePurchase
@@ -178,10 +179,10 @@ $(function () {
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
         })
-        $('.http-link').click(function () {
+        $('.download-link.http').click(function () {
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'HTTP')
         })
-        $('.magnet-link').click(function () {
+        $('.download-link.magnet').click(function () {
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
         })
     }
