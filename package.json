@@ -21,7 +21,8 @@
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
-    "postinstall": "npm run install:submodule",
+    "install:composer": "cd backend && composer install",
+    "postinstall": "npm run install:submodule && npm run install:composer",
     "build": "gulp",
     "build:watch": "gulp watch",
     "start": "php -S 0.0.0.0:8000 router.php"

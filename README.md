@@ -43,43 +43,6 @@ Templating System
   * `$page['description']`
   * `$page['author']`
 
-
-Code Style
-==========
-
-It's important we keep the code style consistent across collaborators and editors. We are following the official [elementary code style](https://elementary.io/docs/code/reference#code-style) guidelines for this project.
-
-For quick reference:
-* 4 spaces for indentation (no tabs)
-* Comma-separated CSS rules on separate lines
-* Strip extra whitespace (on blank lines and ends of lines)
-
-
-Simple Local Development
-========================
-
-For simplicity a Vagrant file is included. To start you will need:
-
-* [Vagrant](http://www.vagrantup.com/downloads.html)
-* [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
-
-Then simply run `vagrant up`.
-
-For bypassing Vagrant you will need:
-
-* [A supported version of PHP](http://php.net/supported-versions.php)
-* [Node.js](https://nodejs.org/)
-* `php7.0-curl`
-* `php7.0-intl`
-* `php7.0-json`
-* `php7.0-mbstring`
-* `php7.0-xml`
-* packages installed with `npm install`
-
-Then inside the project directory, run `npm run build` to build the assets, and
-`php -S localhost:8000 router.php` to run the server. Next, just navigate to
-http://localhost:8000/ to view the site.
-
 Contributing
 ============
 
