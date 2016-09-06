@@ -81,16 +81,16 @@ commands[/^echo/] = function (cmd, term) {
   });
 };
 
-commands[/^mkdir .\/mvp$/] = function (cmd, term) {
+commands[/^mkdir .\/website$/] = function (cmd, term) {
   return 0;
 };
 
-commands[/^rm -rf .\/mvp$/] = function (cmd, term) {
+commands[/^rm -rf .\/website$/] = function (cmd, term) {
   return 0;
 };
 
-commands[/^git clone https:\/\/github.com\/elementary\/mvp$/] = function (cmd, term) {
-  return term.append('Cloning into \'/home/' + term.user + '/mvp\'...', 300).then(function () {
+commands[/^git clone https:\/\/github.com\/elementary\/website.git$/] = function (cmd, term) {
+  return term.append('Cloning into \'/home/' + term.user + '/website\'...', 300).then(function () {
     return term.append('remote: Counting objects: 20257, done.', 100);
   }).then(function () {
     return term.append('remote: Compressing objects: 0% (0/29)').then(function ($l) {
@@ -150,7 +150,7 @@ commands[/^git clone https:\/\/github.com\/elementary\/mvp$/] = function (cmd, t
 
 // A rather special command that runs other commands
 commands[/^\.\/demo$/] = function (cmd, term) {
-  var cmds = ['rm -rf ./mvp', 'git clone https://github.com/elementary/mvp', './demo'];
+  var cmds = ['rm -rf ./website', 'git clone https://github.com/elementary/website.git', './demo'];
 
   term.prompt();
   return Promise.each(cmds, function (c) {
