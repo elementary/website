@@ -146,12 +146,6 @@ $l10n->begin_html_translation();
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <?php
-                        $releaseDate = new DateTime('2016-09-09 17:00:00');
-                        if (new DateTime() < $releaseDate) {
-                    ?>
-                    <li><a href="<?php echo $page['lang-root'].'countdown'; ?>"><i class="fa fa-clock-o"></i></a></li>
-                    <?php } ?>
                     <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                 </ul>
