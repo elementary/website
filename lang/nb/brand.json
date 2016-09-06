@@ -28,9 +28,9 @@
     "Grape": "Grape",
     "White": "White",
     "Black": "Black",
-    "Fonts": "Fonts",
+    "Fonts": "Skrifter",
     "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.",
-    "Third Parties": "Third Parties",
+    "Third Parties": "Tredjeparter",
     "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:": "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:",
     "Voice/tone": "Voice/tone",
     "However, to avoid user confusion, we do restrict the usage of the elementary name and marks:": "However, to avoid user confusion, we do restrict the usage of the elementary name and marks:",
@@ -39,7 +39,7 @@
     "Merchandise": "Merchandise",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.",
     "Assets &amp; More Info": "Assets & More Info",
-    "Download on GitHub": "Download on GitHub",
+    "Download on GitHub": "Last ned på GitHub",
     "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a>.": "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a>.",
     "Brand &sdot; elementary": "Brand ⋅ elementary"
 }

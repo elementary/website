@@ -114,4 +114,5 @@ $(document).ready(function () {
             $statelabel.hide().attr('required', false)
         }
     })
+    $('form[action$="checkout"] select[name="country"]').change()
 })

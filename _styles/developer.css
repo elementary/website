@@ -134,6 +134,62 @@ section.hero .small-label a:hover {
     text-decoration: underline;
 }
 
+/*************
+* Code Block *
+**************/
+
+code,
+pre {
+    background: #fdf6e3;
+    border-radius: 3px;
+    color: #657b83;
+    font-family: "Roboto Mono", monospace;
+    font-size: 90%;
+    text-align: justify;
+}
+
+pre {
+    overflow: auto;
+    padding: 8px;
+}
+
+pre > code {
+    border: none;
+    padding: 0;
+    white-space: pre;
+}
+
+pre.highlighted {
+    border: none;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 0;
+}
+
+pre.highlighted code {
+    border-radius: 0 3px 3px 0;
+    line-height: 1.5em;
+}
+
+pre.highlighted .pre-numbering {
+    background-color: #eee8d5;
+    border-radius: 3px 0 0 3px;
+    color: #9faaa9;
+    float: left;
+    font-size: 90%;
+    line-height: 1.5em;
+    list-style: none;
+    margin: 0;
+    min-width: 2.5em;
+    padding: 0.5em;
+    text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /*******
 * Other *
 *******/
