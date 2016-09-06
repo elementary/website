@@ -2,25 +2,24 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,bluebird@3.4.1',
-        'scripts/showcase.js',
-        'scripts/terminal.js'
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,bluebird@3.4.1'
     );
 
     $page['scripts'] = array(
         'https://checkout.stripe.com/checkout.js' => array(
             'data-alipay' => 'auto',
-            'data-locale' => 'auto',
+            'data-locale' => 'auto'
+        ),
+        'scripts/slingshot.js',
+        'scripts/download.js',
+        'scripts/showcase.js' => array(
             'async' => false
         ),
-        'scripts/slingshot.js' => array(
-            'async' => true
-        ),
-        'scripts/download.js' => array(
-            'async' => true
+        'scripts/terminal.js' => array(
+            'async' => false
         ),
         'scripts/showcase.run.js' => array(
-            'async' => true
+            'async' => false
         )
     );
 
