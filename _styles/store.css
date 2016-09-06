@@ -3,6 +3,12 @@
 * This file is part of elementary.io *
 *************************************/
 
+.fa-128.fa-shopping-cart {
+    color: #e0e0e0;
+    font-size: 128px;
+    margin: 24px;
+}
+
 /***************************
 * Category view of product *
 ***************************/
