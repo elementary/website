@@ -237,13 +237,13 @@ input:focus + .focus-reveal {
 
 #showcase.initialized {
     position: relative;
-    transition: height 0.15s ease-in-out;
+    transition: height 0.25s ease-in-out;
 }
 
 #showcase.initialized > div {
     position: absolute;
     top: 0;
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     width: 100%;
     will-change: transform;
 }
@@ -254,7 +254,7 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized > div#showcase-index.active {
-    transform: translate(100%, 0);
+    transform: translate3d(100%, 0, 0);
 }
 
 #showcase.initialized > div.showcase-tab {
@@ -263,7 +263,7 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized > div.showcase-tab.active {
-    transform: translate(-100%, 0);
+    transform: translate3d(-100%, 0, 0);
 }
 
 /*******************
