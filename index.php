@@ -2,8 +2,7 @@
     $page['title'] = 'Purchase elementary OS';
 
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4',
-        'https://cdn.rawgit.com/creatorrr/web-streams-polyfill/master/dist/polyfill.min.js',
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4,web-streams-polyfill@1.10',
         'scripts/streamSaver.min.js',
         'scripts/slider.js'
     );
