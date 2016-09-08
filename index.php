@@ -50,7 +50,7 @@
                     ?>
 
                 </div>
-                <h4>A fast and open replacement for Windows and OS X</h4>
+                <h4>A fast and open replacement for Windows and macOS</h4>
             </div>
         </section>
         <div class="hero"></div>
