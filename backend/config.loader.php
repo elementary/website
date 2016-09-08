@@ -1,15 +1,12 @@
 <?php
 
-if (
-    !empty($_SERVER['REQUEST_URI']) &&
-    substr($_SERVER['REQUEST_URI'], 0, 8) == '/branch/'
-) {
-    // for Branches
-    require_once __DIR__.'/../../../backend/config.php';
-} else if ( is_readable(__DIR__.'/config.php') ) {
-    // for Configured MASTER
+if ( is_readable(__DIR__.'/config.php') ) {
+    // for configured local
     require_once __DIR__.'/config.php';
+} else if ( is_readable(__DIR__.'/../../master/backend/config.php') ) {
+    // for configured hosted
+    require_once __DIR__.'/../../master/backend/config.php';
 } else {
-    // for un-configured Local
+    // for un-configured local
     require_once __DIR__.'/config.example.php';
 }
