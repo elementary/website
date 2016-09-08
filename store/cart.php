@@ -125,8 +125,12 @@
 <?php } else { ?>
 
 <div class="grid">
-    <h3>You have no items in your cart</h3>
-    <a href="store/">Pick up some swag</a>
+    <div class="two-thirds">
+        <i class="fa fa-128 fa-shopping-cart"></i>
+        <h2>Your Cart Is Empty</h2>
+        <p>Go get yourself something nice!</p>
+        <a href="store/" class="button suggested-action">Pick Up Some Swag</a>
+    </div>
 </div>
 
 <?php
