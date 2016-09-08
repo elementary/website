@@ -270,6 +270,10 @@ input:focus + .focus-reveal {
 * Pantheon windows *
 *******************/
 
+#showcase > .pantheon:first-of-type {
+    z-index: 99;
+}
+
 #showcase .pantheon .window[type="terminal"] {
     height: 36vw;
     max-height: 600px;
