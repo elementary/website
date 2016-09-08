@@ -1,5 +1,5 @@
 <?php
-    $page['title'] = 'Purchase elementary OS';
+    $page['title'] = 'A fast and open replacement for Windows and OS X &sdot; elementary OS';
 
     $page['script-plugins'] = array(
         'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,bluebird@3.4.1'

@@ -303,7 +303,7 @@ By integration with Pantheon's dock, apps are able to communicate their status t
 
 ### Progressbars {#progressbars}
 
-A progressbar must be unambiguous in it's use, referring to a single specific task. For example, a progressbar can be used to indicate the status of a file transfer or of a lengthy process like encoding. A progressbar should not be used to compound the progress of multiple types of actions.
+A progressbar must be unambiguous in its use, referring to a single specific task. For example, a progressbar can be used to indicate the status of a file transfer or of a lengthy process like encoding. A progressbar should not be used to compound the progress of multiple types of actions.
 
 * **Good Example**: Installation progress in Software Center
 * **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise

@@ -63,7 +63,6 @@ $(function () {
         // Catch case where no buttons are available because the user has already paid.
         if ($('#amounts').children().length <= 1) {
             $('#download').text(translateDownload)
-            document.title = translateDownload
         // Catch case where a button is checked or the custom input is above the minimum.
         } else if (
             $('button.payment-button').hasClass('checked') ||
@@ -71,10 +70,8 @@ $(function () {
             $('#amount-custom').val() === ''
         ) {
             $('#download').text(translatePurchase)
-            document.title = translatePurchase
         } else {
             $('#download').text(translateDownload)
-            document.title = translateDownload
         }
     }
     $('#amounts').on('click', updateDownloadButton)
