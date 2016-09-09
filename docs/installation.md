@@ -58,7 +58,7 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 4. Verify that the text in "Results" matches the following hash:
 
 ```bash nohighlight
-ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
+8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -97,20 +97,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.3.2-stable-amd64.20151209.iso
+shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160909.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
+8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.3.2-stable-amd64.20151209.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4-stable-amd64.20160909.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -163,13 +163,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.3.2-stable-amd64.20151209.iso
+sha256sum elementaryos-0.4-stable-amd64.20160909.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-ee737ffa6bf33b742c5a7cee17aa26dec5ee3b573cbbc4b53cbe2a2513c9197a
+8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
