@@ -54,7 +54,12 @@ if (
 
         var clock = $('.countdown').FlipClock(secondDiff, {
             clockFace: 'MvpClock',
-            countdown: true
+            countdown: true,
+            callbacks: {
+                stop: function () {
+                    window.location.reload()
+                }
+            }
         })
 
         $('.read-more').click(function () {
