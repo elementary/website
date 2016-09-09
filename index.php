@@ -58,7 +58,7 @@
         <div class="hero"></div>
         <section class="grid">
             <div class="whole">
-                <h4 id="pay-what-you-want">Pay What You Want!</h4>
+                <h4 id="pay-what-you-want">Pay What You Want.</h4>
                 <div id="amounts">
                     <?php
                         $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
