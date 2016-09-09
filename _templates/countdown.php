@@ -11,7 +11,7 @@ if (
 <div class="countdown-background">
     <div class="countdown-wrapper">
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6E7Ed8GxsUM" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6E7Ed8GxsUM?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
         </div>
         <a class="read-more" href="#">Continue</a>
     </div>
