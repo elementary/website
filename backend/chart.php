@@ -30,7 +30,8 @@ $timeFrom = time() - 8 * 7 * 24 * 60 * 60;
 $timeInterval = 24 * 60 * 60;
 
 // Arbitrary time period displayed as 50 points
-//$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when freya 0.3.0 released
+//$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when Freya 0.3.0 released
+//$timeFrom = mktime(12, 0, 0, 9, 9, 2016); // Date when Loki 0.4.0 released
 //$timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
 
 // CONFIG ENDS HERE
