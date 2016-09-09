@@ -74,13 +74,7 @@
     );
 
     $page['scripts'] = array(
-        'https://checkout.stripe.com/checkout.js' => array(
-            'data-alipay' => 'auto',
-            'data-locale' => 'auto'
-        ),
-        'scripts/store/checkout.js' => array(
-            'async' => false
-        )
+        'scripts/store/checkout.js'
     );
 
     include $template['header'];

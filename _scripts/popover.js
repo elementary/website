@@ -3,7 +3,7 @@
  * Creates a popover to show more information
  */
 
-import jQuery from 'lib/jquery'
+import jQuery from '~/lib/jquery'
 
 
 jQuery.then(($) => {

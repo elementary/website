@@ -3,10 +3,14 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-import jQuery from 'lib/jquery'
+import Promise from 'core-js/fn/promise'
 
+import analytics from '~/lib/analytics'
+import jQuery from '~/lib/jquery'
 
-jQuery.then(($) => {
+Promise.all([jQuery, analytics]).then(([$, ga]) => {
+    ga('send', 'event', 'Store', 'Cart Visit')
+
     $(document).ready(function () {
         var baseUrl = $('base').attr('href')
         var country = {}
@@ -100,6 +104,8 @@ jQuery.then(($) => {
             var value = $(this).val()
             var $state = $(this).siblings('select[name="state"]')
             var $statelabel = $(this).siblings('label[for="state"]')
+
+            ga('send', 'event', 'Cart', 'Country Change', value)
 
             if (country[value] != null && typeof country[value]['states'] === 'object') {
                 $state.empty()

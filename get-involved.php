@@ -133,8 +133,9 @@
         <div class="two-thirds">
             <h1>Desktop Development</h1>
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
-            <p>This burndown chart shows our progress for the <a href="https://bugs.launchpad.net/elementary/+milestone/loki-rc1">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href="https://launchpad.net/elementaryos/+series" class="read-more">Learn More</a></p>
+            <!--<p>This burndown chart shows our progress for the <a href="https://bugs.launchpad.net/elementary/+milestone/loki-rc1">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href="https://launchpad.net/elementaryos/+series" class="read-more">Learn More</a></p>-->
         </div>
+        <!-- Here lay our chart of awesomesause. Till next time, cheers
         <div class="whole">
             <div class="charts">
                 <div class="barchart-ctn">
@@ -166,6 +167,7 @@
                 </div>
             </div>
         </div>
+        -->
         <div class="whole">
             <div class="actions">
                 <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank">Browse Our Desktop Code</a>

@@ -3,14 +3,15 @@
  * Changes prices depending on shipping and gets stripe information
  */
 
-/* global ga */
-
 import Promise from 'core-js/fn/promise'
 
-import jQuery from 'lib/jquery'
-import Stripe from 'lib/stripe'
+import analytics from '~/lib/analytics'
+import jQuery from '~/lib/jquery'
+import Stripe from '~/lib/stripe'
 
-Promise.all([jQuery, Stripe]).then(([$, StripeCheckout]) => {
+Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
+    ga('send', 'event', 'Store', 'Checkout Visit')
+
     $(document).ready(function () {
         var baseUrl = $('base').attr('href')
         var stripeKey = null
@@ -109,9 +110,7 @@ Promise.all([jQuery, Stripe]).then(([$, StripeCheckout]) => {
         }
 
         function processPayment (amount, token) {
-            if (window.ga) {
-                ga('send', 'event', 'elementary store' + 'payment process', 'store', amount)
-            }
+            ga('send', 'event', 'elementary store' + 'payment process', 'store', amount)
 
             $('input[name="stripe-token"]', $form).val(token.id)
             $form.submit()

@@ -3,7 +3,7 @@
  * Populates twitter links with url data
  */
 
-import jQuery from 'lib/jquery'
+import jQuery from '~/lib/jquery'
 
 jQuery.then(($) => {
     $(function () {

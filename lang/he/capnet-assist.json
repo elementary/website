@@ -1,8 +1,8 @@
 {
-    "You're connected!": "You're connected!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Your Internet connection appears to be working. You can safely close this window and continue using your device.",
-    "Why is this window appearing?": "Why is this window appearing?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.",
-    "You're connected! &sdot; elementary": "You're connected! ⋅ elementary"
+    "You're connected!": "את\\ה מחובר\\ת!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "נראה שחיבור האינטרנט שלכם עובד. אתם יכולים לסגור את החלון הזה ולהמשיך להשתמש במכשירכם בבטחה.",
+    "Why is this window appearing?": "מדוע החלון הזה מופיע?",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Elementary OS בודקת את חיבור האינטרנט שלכם ברגע שאתם מתחברים לרשת אלחוטית חדשה. במידה וחיבור אינטרנט לא נמצא (לדוגמה: אם אתם מתחברים לרשת בתשלום בבית קפה או במלון בלי לשלם), החלון הזה יופיע ויציג את דף ההתחברות.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "כמה רשתות עלולות תחילה להיראות כרשתות קפסטיביות ובכך לגרום לחלון זה להופיע, אבל בסופו של דבר הן מתחברות. במקרים האלו, החלון הזה יוצג אבל ניתן לסגור אותו בבטחה.",
+    "You're connected! &sdot; elementary": "את\\ה מחובר\\ת! - אלמנטרי"
 }

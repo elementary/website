@@ -3,7 +3,7 @@
  * Adds '_blank' to all external links
  */
 
-import jQuery from 'lib/jquery'
+import jQuery from '~/lib/jquery'
 
 jQuery.then(($) => {
     $(function () {

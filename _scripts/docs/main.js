@@ -5,8 +5,8 @@
 
 import Promise from 'core-js/fn/promise'
 
-import highlight from 'lib/highlight'
-import jQuery from 'lib/jquery'
+import highlight from '~/lib/highlight'
+import jQuery from '~/lib/jquery'
 
 Promise.all([highlight, jQuery]).then(([hljs, $]) => {
     $(document).ready(function () {

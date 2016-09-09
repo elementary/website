@@ -16,6 +16,10 @@
 
     require_once __DIR__ . '/../backend/store/cart.php';
     require_once __DIR__ . '/../backend/store/address.php';
+    require_once __DIR__ . '/../backend/classify.current.php';
+    $country = getCurrentCountry($ip);
+    // Set a deafult country.
+    if ( !$country ) $country = 'US';
 
     $cart = \Store\Cart\get_cart();
 
@@ -82,7 +86,7 @@
         <select name="country" autocomplete="country" required>
             <?php
                 foreach (\Store\Address\get_countries() as $code => $item) {
-                    $d = ($code === 'US') ? 'selected' : '';
+                    $d = ($code === $country) ? 'selected' : '';
             ?>
                 <option value="<?php echo $code ?>" <?php echo $d ?>><?php echo $item ?></option>
             <?php } ?>
@@ -119,8 +123,12 @@
 <?php } else { ?>
 
 <div class="grid">
-    <h3>You have no items in your cart</h3>
-    <a href="store/">Pick up some swag</a>
+    <div class="two-thirds">
+        <i class="fa fa-128 fa-shopping-cart"></i>
+        <h2>Your Cart Is Empty</h2>
+        <p>Go get yourself something nice!</p>
+        <a href="store/" class="button suggested-action">Pick Up Some Swag</a>
+    </div>
 </div>
 
 <?php

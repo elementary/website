@@ -41,6 +41,7 @@
         $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
     )) {
 ?>
+
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
@@ -65,7 +66,7 @@
 
         <?php foreach ($products as $product) { ?>
 
-            <div class="grid__item" id="product-<?php echo $product['id'] ?>">
+            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
@@ -84,7 +85,7 @@
 
 <?php foreach ($products as $product) { ?>
 
-    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product">
+    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"  data-product-name="<?php echo $product['name']; ?>">
         <i class="fa fa-close close-modal"></i>
         <div class="grid">
             <div class="half">

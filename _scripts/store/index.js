@@ -5,10 +5,13 @@
 
 import Promise from 'core-js/fn/promise'
 
-import jQuery from 'lib/jquery'
-import modal from 'lib/modal'
+import analytics from '~/lib/analytics'
+import jQuery from '~/lib/jquery'
+import modal from '~/lib/modal'
 
-Promise.all([jQuery, modal]).then(([$]) => {
+Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
+    ga('send', 'event', 'Store', 'Store Visit')
+
     $('document').ready(function () {
         var baseUrl = $('base').attr('href')
         var products = []
@@ -44,6 +47,8 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 closeButton: '.close-modal'
             })
             $trigger.click()
+
+            ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
         })
 
         /**

@@ -9,7 +9,7 @@ import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
 export default new Promise((resolve, reject) => {
-    Script('https://cdn.jsdelivr.net/g/highlight.js@9.5.0', () => {
+    Script('https://cdn.jsdelivr.net/g/highlight.js@9(highlight.min.js+languages/vala.min.js)', () => {
         console.log('highlight.js loaded')
         return resolve(window.hljs)
     })

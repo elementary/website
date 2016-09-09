@@ -25,11 +25,14 @@
     "stylelint": "^7.1.0"
   },
   "scripts": {
-    "start": "php -S 0.0.0.0:8000 router.php",
-    "dev": "npm start & npm run build:watch",
+    "install:submodule": "git submodule init && git submodule update --force --rebase",
+    "install:composer": "cd backend && composer install",
+    "postinstall": "npm run install:submodule && npm run install:composer",
+    "lint": "sh _tests/css.sh && sh _tests/javascript.sh && sh _tests/php.sh",
     "build": "NODE_ENV=production webpack --config webpack.config.babel.js",
     "build:watch": "NODE_ENV=development webpack --config webpack.config.babel.js --watch",
-    "lint": "sh _tests/css.sh && sh _tests/javascript.sh && sh _tests/php.sh"
+    "start": "php -S 0.0.0.0:8000 router.php",
+    "start:watch": "npm start & npm run build:watch"
   },
   "repository": {
     "type": "git",

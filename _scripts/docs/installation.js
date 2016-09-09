@@ -3,9 +3,9 @@
  * Sets up the OS dependent slider for installation guide
  */
 
-import jQuery from 'lib/jquery'
+import jQuery from '~/lib/jquery'
 
-import Slider from '../slider'
+import Slider from '~/slider'
 
 jQuery.then(($) => {
     $(function () {

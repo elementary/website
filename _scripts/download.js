@@ -3,16 +3,17 @@
  * Handles homepage payment and OS image downloading
  */
 
-/* global ga releaseTitle releaseVersion downloadRegion stripeKey */
+/* global releaseTitle releaseVersion downloadRegion stripeKey */
 
 import Promise from 'core-js/fn/promise'
 
-import jQuery from 'lib/jquery'
-import modal from 'lib/modal'
-import Stripe from 'lib/stripe'
+import analytics from '~/lib/analytics'
+import jQuery from '~/lib/jquery'
+import modal from '~/lib/modal'
+import Stripe from '~/lib/stripe'
 
-Promise.all([jQuery, Stripe, modal]).then(([$, StripeCheckout]) => {
-    $(function () {
+Promise.all([analytics, jQuery, Stripe, modal]).then(([ga, $, StripeCheckout]) => {
+    $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
         var currentButton = 'amount-ten' // Default to $10 when the page loads.
@@ -23,8 +24,10 @@ Promise.all([jQuery, Stripe, modal]).then(([$, StripeCheckout]) => {
             var targetID = $(e.target).attr('id') // avoids null values vs native js
             if (currentButton !== targetID) previousButton = currentButton
             currentButton = targetID
+
             $('.target-amount').removeClass('checked')
             $('#' + currentButton).addClass('checked')
+
             updateDownloadButton()
         }
         // Capture all .target-amount focuses
@@ -75,22 +78,20 @@ Promise.all([jQuery, Stripe, modal]).then(([$, StripeCheckout]) => {
             // Catch case where no buttons are available because the user has already paid.
             if ($('#amounts').children().length <= 1) {
                 $('#download').text(translateDownload)
-                document.title = translateDownload
             // Catch case where a button is checked or the custom input is above the minimum.
             } else if (
                 $('button.payment-button').hasClass('checked') ||
-                $('#amount-custom').val() * 100 >= paymentMinimum
+                $('#amount-custom').val() * 100 >= paymentMinimum ||
+                $('#amount-custom').val() === ''
             ) {
                 $('#download').text(translatePurchase)
-                document.title = translatePurchase
             } else {
                 $('#download').text(translateDownload)
-                document.title = translateDownload
             }
         }
         $('#amounts').on('click', updateDownloadButton)
         $('#amounts input').on('input', updateDownloadButton)
-        updateDownloadButton()
+        $(document).on('ready', updateDownloadButton)
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
         $('#download').click(function () {

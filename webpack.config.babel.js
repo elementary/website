@@ -36,7 +36,7 @@ const scriptFiles = {
     'download': 'download.js',
     'get-involved': 'get-involved.js',
     'main': 'main.js',
-    'slider.run': 'slider.run.js',
+    'showcase.run': 'showcase.run.js',
     'slingshot': 'slingshot.js',
     'store/cart': 'store/cart.js',
     'store/checkout': 'store/checkout.js',
@@ -44,7 +44,7 @@ const scriptFiles = {
 }
 
 const browsers = [
-    'last 2 version',
+    'last 4 version',
     'not ie <= 11'
 ]
 
@@ -116,7 +116,7 @@ export const scripts = {
     },
     resolve: {
         alias: {
-            'lib': path.resolve(__dirname, '_scripts', 'lib'),
+            '~': path.resolve(__dirname, '_scripts'),
             'styles': path.resolve(__dirname, '_styles')
         }
     },

@@ -3,30 +3,42 @@
  * Populates the homepage slingshot with data, and animates it for demo
  */
 
-import jQuery from 'lib/jquery'
+import jQuery from '~/lib/jquery'
 
 jQuery.then(($) => {
     $(function () {
         $.getJSON('data/slingshot.json', function (data) {
             $.each(data.grid, function (i, f) {
-                var griditems = '<div class="app ' + f.position + '"><img src="images/icons/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
+                var griditems = '<div class="app ' + f.position + '"><img src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
                 $(griditems).appendTo('.slingshot-grid')
             })
             $.each(data.categories, function (i, f) {
-                var categoriesitems = '<div class="app ' + f.position + '"><img src="images/icons/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
+                var categoriesitems = '<div class="app ' + f.position + '"><img src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
                 $(categoriesitems).appendTo('.slingshot-categories')
             })
             $.each(data.searchone, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchone')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchone')
             })
             $.each(data.searchtwo, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchtwo')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchtwo')
             })
             $.each(data.searchthree, function (i, f) {
-                var searchitems = '<div class="search-result"><img class="result-img" src="images/icons/32/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p>'
-                $(searchitems).appendTo('.searchthree')
+                var searchItems = '<span class="results-title">' + f.title + '</span><div class="slingshot-search-results">'
+                $.each(f.items, function (i, f) {
+                    searchItems += '<div class="search-result"><img class="result-img" src="images/' + f.icon + '.svg" alt="' + f.title + '"/><p>' + f.title + '</p></div>'
+                })
+                searchItems += '</div>'
+                $(searchItems).appendTo('.searchthree')
             })
         })
 
@@ -45,15 +57,16 @@ jQuery.then(($) => {
                 $('#slingshot-search').addClass('active')
                 $('.slingshot .clear-icon').removeClass('inactive')
                 $('.slingshot .search-term').removeClass('inactive')
-                $('.searchone').removeClass('inactive')
+                $('.searchone').addClass('active')
                 setTimeout(function () {
-                    $('.slingshot-search-results').addClass('inactive')
-                    $('.searchtwo').removeClass('inactive')
+                    $('.searchone').removeClass('active')
+                    $('.searchtwo').addClass('active')
                 }, 700)
                 setTimeout(function () {
-                    $('.slingshot-search-results').addClass('inactive')
-                    $('.searchthree').removeClass('inactive')
+                    $('.searchtwo').removeClass('active')
+                    $('.searchthree').addClass('active')
                 }, 1200)
+                $('.searchthree').removeClass('active')
                 $('.slingshot .linked').addClass('inactive')
                 $('.slingshot .entry').addClass('expanded')
             } else if ($('#slingshot-search').hasClass('active')) {

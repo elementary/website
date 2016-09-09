@@ -71,10 +71,10 @@ $l10n->begin_html_translation();
 
         <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic,400italic|Droid+Sans|Roboto+Mono">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Droid+Sans|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
@@ -85,18 +85,6 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <script async src="https:<?php echo $sitewide['branch_root'] ?>backend/hsts.php"></script>
-        <?php if ( $trackme ) { ?>
-        <script async src="https://www.google-analytics.com/analytics.js"></script>
-        <script>
-            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-            ga('create', 'UA-19280770-1', 'auto')
-            ga('set', 'forceSSL', true)
-            ga('set', 'anonymizeIp', true)
-            ga('require', 'displayfeatures')
-            ga('send', 'pageview')
-            ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
-        </script>
-        <?php } ?>
 
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>

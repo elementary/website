@@ -5,8 +5,8 @@
 
 import Promise from 'core-js/fn/promise'
 
-import ChartPromise from 'lib/chart'
-import jQuery from 'lib/jquery'
+import ChartPromise from '~/lib/chart'
+import jQuery from '~/lib/jquery'
 
 Promise.all([ChartPromise, jQuery]).then(([Chart, $]) => {
     $(function () {

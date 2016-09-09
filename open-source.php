@@ -18,7 +18,7 @@
 <div class="grid">
     <div class="platform-item full">
         <a href="get-involved#desktop-development">
-            <img class="oss-logo" src="images/icons/distributor-logo.svg" alt="Applications">
+            <img class="oss-logo" src="images/icons/places/64/distributor-logo.svg" alt="Applications">
             <p class="oss-title">elementary OS Applications</p>
         </a>
         <div>
@@ -35,7 +35,7 @@
     </div>
     <div class="platform-item half">
         <a href="get-involved#desktop-development">
-            <img class="oss-logo" src="images/icons/preferences-desktop-wallpaper.svg" alt="Desktop Shell">
+            <img class="oss-logo" src="images/icons/categories/64/preferences-desktop-wallpaper.svg" alt="Desktop Shell">
             <p class="oss-title">Pantheon Desktop Shell</p>
         </a>
         <div>
