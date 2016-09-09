@@ -1,13 +1,14 @@
 <?php
     include '_templates/sitewide.php';
+
     $page['title'] = 'Download Link Expired &sdot; elementary';
+
     include $template['header'];
     include $template['alert'];
 ?>
 
-<script>
-    ga('send', 'event', '410: Download Link Expired', window.location.host)
-</script>
+<script>window.statusCode = '410: Download Link Expired'</script>
+<script src="scripts/pages/error.js" async></script>
 
 <div class="row">
     <div class="column alert">

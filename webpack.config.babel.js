@@ -36,6 +36,7 @@ const scriptFiles = {
     'download': 'download.js',
     'get-involved': 'get-involved.js',
     'main': 'main.js',
+    'pages/error': 'pages/error.js',
     'showcase.run': 'showcase.run.js',
     'slingshot': 'slingshot.js',
     'store/cart': 'store/cart.js',

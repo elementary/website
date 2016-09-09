@@ -1,14 +1,15 @@
 <?php
     include '_templates/sitewide.php';
+
     $page['name'] = '403';
     $page['title'] = 'Access Denied &sdot; elementary';
+
     include $template['header'];
     include $template['alert'];
 ?>
 
-<script>
-    ga('send', 'event', '403: Forbidden', window.location.host)
-</script>
+<script>window.statusCode = '403: Forbidden'</script>
+<script src="scripts/pages/error.js" async></script>
 
 <div class="row">
     <div class="column alert">
