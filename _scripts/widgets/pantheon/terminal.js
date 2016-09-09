@@ -359,7 +359,7 @@ export default class Terminal {
      * Prints a prompt
      */
     prompt () {
-        const folder = this.folder.replace(`/home${this.user}`, '~')
+        const folder = this.folder.replace(`/home/${this.user}`, '~')
         const prompt = this.format(`${this.user}@${this.host}`, 2, 'b') + this.format(':') + this.format(folder, 4, 'b') + this.format('$')
 
         let title = this.folder
@@ -411,6 +411,10 @@ export default class Terminal {
             if (cmds.length < 1) return reject(-1)
 
             this.history.push(cmd)
+
+            $('.titlebar .title', this.$w).text(cmd)
+            $('.tabbar .tab.active .title', this.$w).text(cmd)
+
             return resolve(this.commands[cmds[0]](cmd, this))
         })
         .catch((code) => {
