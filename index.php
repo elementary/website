@@ -42,6 +42,7 @@
         <div class="hero"></div>
         <section class="grid">
             <div class="whole">
+                <h4 id="pay-what-you-want">Pay What You Want</h4>
                 <div id="amounts">
                     <?php
                         $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
@@ -353,7 +354,6 @@
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="modal">
-            <i class="fa fa-close close-modal"></i>
             <h3>Choose a Download</h3>
             <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             <div class="row actions">
@@ -361,7 +361,7 @@
                     <a class="button close-modal" style="margin:0;" href="#">Cancel</a>
                 </div>
                 <div class="column linked">
-                    <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link.$config['release_filename']; ?>"><?php echo $config['release_title']; ?></a>
+                    <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download <?php echo $config['release_title']; ?></a>
                     <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="magnet:?xt=urn:btih:535c241c5b14fdfe47bec6cbaac4a39cd41c719e&dn=<?php echo $config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link.$config['release_filename']; ?>"><i class="fa fa-magnet"></i></a>
                 </div>
             </div>
