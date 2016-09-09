@@ -90,13 +90,14 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         function sidebarHandle () {
             if ($(window).width() <= 990) return
 
-            var scrollTop = $(this).scrollTop()
+            var scrollTop = $('body').scrollTop()
             var $header = $('nav:first-of-type')
             var $footer = $('footer')
             var $sidebar = $('.sidebar')
 
             var headerFromTop = $header.height() - scrollTop
             var headerSquish = (headerFromTop > 0) ? headerFromTop : 0
+
             if (headerSquish === 0) {
                 $sidebar.addClass('sticky')
             } else {
