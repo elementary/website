@@ -11,12 +11,16 @@ import Script from 'scriptjs'
 import config from '~/config'
 
 export default config.then((config) => {
-    if (!config.trackme) {
-        console.log('Google analitics not loaded due to trackme config')
-        return () => {}
-    }
-
     return new Promise((resolve, reject) => {
+        if (!config.trackme) {
+            console.log('Google analitics not loaded due to trackme config')
+
+            return resolve((...args) => {
+                console.log('Google analytics disabled. Logging to console instead')
+                console.log(args)
+            })
+        }
+
         Script('https://www.google-analytics.com/analytics.js', () => {
             console.log('Google analitics loaded')
 
