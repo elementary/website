@@ -29,6 +29,7 @@ body {
     font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -122,7 +123,7 @@ p.small-label {
 
 q {
     font-family: 'Marck Script', cursive;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -132,9 +133,9 @@ q::after {
     content: none;
 }
 
-@media (max-width: 414px) {
+@media (min-width: 414px) {
     q {
-        font-size: 24px;
+        font-size: 36px;
     }
 }
 
@@ -235,13 +236,9 @@ nav {
 }
 
 .nav-content {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -261,7 +258,7 @@ nav ul {
 }
 
 nav ul:first-child {
-    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 nav li {
@@ -316,39 +313,59 @@ nav .logomark:focus .logomark-svg {
     }
 }
 
-/*********
-* Layout *
-**********/
+/**************
+* Body Layout *
+**************/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 #content-container {
-    min-height: 90vh;
+    flex-grow: 1;
 }
 
 footer {
     color: inherit;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
+    justify-content: center;
     padding-top: 24px;
     text-align: center;
+    align-items: center;
 }
 
-footer > p,
-footer > div > a,
+footer > * {
+    padding: 6px 12px;
+    margin: 0;
+}
+
+@media (min-width: 650px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    footer > * {
+        padding: 0 12px;
+    }
+}
+
+footer > div > * {
+    display: inline-block;
+}
+
+footer > div > p,
+footer > div > div > a,
 footer > ul {
     opacity: 0.8;
-}
-
-footer > p {
-    padding: 0 12px;
     text-align: center;
-}
-
-footer > ul {
     list-style: none;
-    padding: 0 12px;
 }
 
 footer .popover {
-    margin: 12px 0;
+    margin: 12px;
 }
 
 @media (min-width: 375px) {
@@ -362,7 +379,7 @@ footer .popover {
     }
 }
 
-footer ul li {
+footer > ul li {
     display: inline-block;
 }
 
@@ -387,6 +404,10 @@ footer a:focus i.fa {
 footer ul li a:focus {
     outline: none;
 }
+
+/*********
+* Layout *
+*********/
 
 .column {
     display: inline-block;
@@ -988,9 +1009,8 @@ i.fa.fa-close.close-modal {
 
 .popover .popover-content {
     background: white;
-    background-clip: content-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #333;
@@ -1039,6 +1059,7 @@ i.fa.fa-close.close-modal {
 }
 
 .popover .popover-content ul {
+    height: 50vh;
     margin: 5px 0;
     max-height: 500px;
     overflow: auto;
@@ -1075,6 +1096,14 @@ i.fa.fa-close.close-modal {
     background: #e0e0e0;
     border: 0;
     height: 1px;
+}
+
+/*****************
+* Special Colors *
+*****************/
+
+.grey {
+    background-color: #fafafa;
 }
 
 /*****************

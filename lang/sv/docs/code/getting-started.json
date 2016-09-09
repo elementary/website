@@ -44,7 +44,7 @@
     "And with that, we're ready to dive into development! Let's move on!": "And with that, we're ready to dive into development! Let's move on!",
     "Hello World": "Hej världen",
     "The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a bzr branch. Let’s begin.": "The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a bzr branch. Let’s begin.",
-    "Setting Up": "Setting Up",
+    "Setting Up": "Ställa in",
     "Apps on elementary OS are organized into standardized directories contained in your project's &quot;root&quot; folder. Let's create a couple of these to get started:": "Apps on elementary OS are organized into standardized directories contained in your project's \"root\" folder. Let's create a couple of these to get started:",
     "Create your root folder called &quot;gtk-hello&quot;": "Skapa din rot-mapp kallad \"gtk-hello\"",
     "Create a folder inside that one called &quot;src&quot;. This folder will contain all of our source code.": "Skapa en mapp inuti den mappen kallad \"src\". Den här mappen kommer att innehålla all vår källkod.",

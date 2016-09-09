@@ -76,7 +76,7 @@ $(function () {
     }
     $('#amounts').on('click', updateDownloadButton)
     $('#amounts input').on('input', updateDownloadButton)
-    updateDownloadButton()
+    $(document).on('ready', updateDownloadButton)
 
     // ACTION: #download.click: Either initiate a payment or open the download modal.
     $('#download').click(function () {
