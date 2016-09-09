@@ -22,6 +22,7 @@ if (
     $('document').ready(function () {
         $('.read-more').click(function () {
             $('.countdown-background').hide()
+            $('.countdown-background').html('')
             var expireDate = new Date()
             expireDate.setDate(expireDate.getDate() + 1)
             document.cookie = 'countdown_video=false; expires=' + expireDate.toUTCString()
