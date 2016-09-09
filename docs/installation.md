@@ -33,7 +33,7 @@ Select the operating system you are currently using to view tailored installatio
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
 <a class="button install-on-windows" href="#install-on-windows"><i class="fa fa-windows"></i> Windows</a>
-<a class="button install-on-os-x" href="#install-on-os-x"><i class="fa fa-apple"></i> OS X</a>
+<a class="button install-on-macos" href="#install-on-macos><i class="fa fa-apple"></i> macOS</a>
 <a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fa fa-linux"></i> Ubuntu</a>
 </div>
 </div>
@@ -87,7 +87,7 @@ In order to start the installation process, you must boot your computer from the
 </div>
 
 
-<div id="install-on-os-x" class="slide" markdown="1">
+<div id="install-on-macos" class="slide" markdown="1">
 
 ## Verify your Download {#verify-your-download}
 
@@ -115,7 +115,7 @@ shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4-stable-amd64.2016
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-To create an elementary OS install drive on OS X you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
+To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
 
 <a href="http://www.etcher.io/" class="button suggested-action">Download Etcher</a>
 
@@ -148,7 +148,7 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-freya-xx.xx.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4-stable-amd64.20160909.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
