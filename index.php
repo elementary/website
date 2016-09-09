@@ -374,7 +374,7 @@
             <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
             <div class="row actions">
                 <div class="column">
-                    <a class="button close-modal" href="#">Cancel</a>
+                    <a class="button close-modal" style="margin:0;" href="#">Cancel</a>
                 </div>
                 <div class="column linked">
                     <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link.$config['release_filename']; ?>"><?php echo $config['release_title']; ?></a>
