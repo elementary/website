@@ -7,12 +7,7 @@
 // CONFIG STARTS HERE
 
 // Launchpad API URL
-$apiBaseUrl = 'https://api.launchpad.net/beta/';
-
-// Project name
-$targetName = 'elementary';
-// Milestone name
-$milestoneName = 'loki-rc1';
+$apiBaseUrl = 'https://api.launchpad.net/beta';
 
 // Build a chart to now.
 $timeTo = time(); // Now
@@ -36,6 +31,8 @@ $timeInterval = 24 * 60 * 60;
 
 // CONFIG ENDS HERE
 
+require_once __DIR__ . '/config.loader.php';
+
 date_default_timezone_set('UTC');
 
 header('Content-Type: text/plain');
@@ -50,7 +47,7 @@ if ( !is_writable('./chart.json') ) {
 }
 
 $apiParams = 'ws.op=searchTasks';
-$apiEndpoint = $apiBaseUrl.'/'.$targetName.'/+milestone/'.$milestoneName.'?'.$apiParams;
+$apiEndpoint = $apiBaseUrl.'/'.$config['chart_link_project'].'/+milestone/'.$config['chart_link_milestone'].'?'.$apiParams;
 
 $autoDetectTimeFrom = ($timeFrom === null);
 $tasks = array();
