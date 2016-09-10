@@ -146,7 +146,6 @@ $l10n->begin_html_translation();
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="<?php echo $page['lang-root'].'countdown'; ?>"><i class="fa fa-video-camera"></i></a></li>
                     <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                 </ul>
