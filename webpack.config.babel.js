@@ -9,40 +9,13 @@
 
 import cssnext from 'postcss-cssnext'
 import Extract from 'extract-text-webpack-plugin'
+import glob from 'glob'
 import path from 'path'
 import webpack from 'webpack'
 
-const styleFiles = {
-    'brand': 'brand.css',
-    'capnet-assist': 'capnet-assist.css',
-    'developer': 'developer.css',
-    'docs': 'docs.css',
-    'get-involved': 'get-involved.css',
-    'home': 'home.css',
-    'main': 'main.css',
-    'open-source': 'open-source.css',
-    'solarized_dark_bash': 'solarized_dark_bash.css',
-    'solarized_dark': 'solarized_dark.css',
-    'solarized_light': 'solarized_light.css',
-    'store': 'store.css',
-    'support': 'support.css',
-    'team': 'team.css'
-}
+const stylePattern = path.resolve('_styles', '**', '*.css')
 
-const scriptFiles = {
-    'developer': 'developer.js',
-    'docs/installation': 'docs/installation.js',
-    'docs/main': 'docs/main.js',
-    'download': 'download.js',
-    'get-involved': 'get-involved.js',
-    'main': 'main.js',
-    'pages/error': 'pages/error.js',
-    'showcase.run': 'showcase.run.js',
-    'slingshot': 'slingshot.js',
-    'store/cart': 'store/cart.js',
-    'store/checkout': 'store/checkout.js',
-    'store/index': 'store/index.js'
-}
+const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
 
 const browsers = [
     'last 4 version',
@@ -70,18 +43,23 @@ const stats = {
  * know what you are doing.
  */
 
-Object.keys(styleFiles).forEach((key) => {
-    styleFiles[key] = `./_styles/${styleFiles[key]}`
+const styleFiles = {}
+const scriptFiles = {}
+
+glob.sync(stylePattern).forEach((p) => {
+    const name = p.replace(path.resolve(__dirname, '_styles') + path.sep, '')
+    styleFiles[name] = p
 })
 
-Object.keys(scriptFiles).forEach((key) => {
-    scriptFiles[key] = `./_scripts/${scriptFiles[key]}`
+glob.sync(scriptPattern).forEach((p) => {
+    const name = p.replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
+    scriptFiles[name] = p
 })
 
 export const styles = {
     entry: styleFiles,
     output: {
-        filename: '[name].css',
+        filename: '[name]',
         path: './styles'
     },
     module: {
@@ -93,7 +71,7 @@ export const styles = {
         cssnext({ browsers })
     ],
     plugins: [
-        new Extract('[name].css')
+        new Extract('[name]')
     ],
     stats
 }
@@ -102,7 +80,7 @@ export const scripts = {
     devtool: 'eval',
     entry: scriptFiles,
     output: {
-        filename: '[name].js',
+        filename: '[name]',
         path: './scripts',
         publicPath: '/scripts'
     },

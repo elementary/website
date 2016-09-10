@@ -10,6 +10,7 @@
     "core-js": "^2.4.1",
     "css-loader": "^0.24.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "glob": "^7.0.6",
     "postcss-cssnext": "^2.7.0",
     "postcss-loader": "^0.11.0",
     "raw-loader": "^0.5.1",
