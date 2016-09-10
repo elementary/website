@@ -7,7 +7,7 @@ extract_translations () {
 	output_dirname=`dirname "$output_file"`
 
 	# Ignore some files
-	if [[ $pagename == "router" ]] ; then
+	if [[ $pagename == "router" ]] || [[ $pagename == "countdown" ]]; then
 		return
 	fi
 
