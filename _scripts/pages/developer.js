@@ -1,5 +1,5 @@
 /**
- * _scripts/developer.js
+ * _scripts/pages/developer.js
  * Page handling for all JS things on the developer page
  */
 

@@ -1,5 +1,5 @@
 /**
- * _scripts/get-involved.js
+ * _scripts/pages/get-involved.js
  * Creates the desktop bugs burn down chart
  */
 

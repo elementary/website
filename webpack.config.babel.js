@@ -102,7 +102,7 @@ export const scripts = {
     postcss: styles.postcss,
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
+            name: 'common.js',
             minChunks: 4
         }),
         new webpack.optimize.DedupePlugin(),

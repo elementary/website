@@ -1,5 +1,5 @@
 /**
- * _scripts/slingshot.js
+ * _scripts/pages/slingshot.js
  * Populates the homepage slingshot with data, and animates it for demo
  */
 

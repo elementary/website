@@ -1,5 +1,5 @@
 /**
- * _scripts/docs/installation.js
+ * _scripts/pages/docs/installation.js
  * Sets up the OS dependent slider for installation guide
  */
 

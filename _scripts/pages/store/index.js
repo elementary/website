@@ -1,5 +1,5 @@
 /**
- * scripts/store/index.js
+ * scripts/pages/store/index.js
  * Does logic for picking product variants and adding to cart
  */
 

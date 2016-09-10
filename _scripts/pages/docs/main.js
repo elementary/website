@@ -1,5 +1,5 @@
 /**
- * _scripts/docs/main.js
+ * _scripts/pages/docs/main.js
  * Does code highlighting, sidebar generation, and hash updating for doc pages
  */
 

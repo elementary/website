@@ -1,5 +1,5 @@
 /**
- * scripts/store/cart.js
+ * scripts/pages/store/cart.js
  * Does update logic for cart quantities and some basic address validation
  */
 

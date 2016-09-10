@@ -1,5 +1,5 @@
 /**
- * scripts/store/checkout.js
+ * scripts/pages/store/checkout.js
  * Changes prices depending on shipping and gets stripe information
  */
 

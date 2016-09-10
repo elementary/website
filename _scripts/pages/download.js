@@ -1,5 +1,5 @@
 /**
- * _scripts/download.js
+ * _scripts/pages/download.js
  * Handles homepage payment and OS image downloading
  */
 

@@ -1,5 +1,5 @@
 /**
- * _scripts/showcase.run.js
+ * _scripts/pages/showcase.run.js
  * Loads the homepage showcase and other related widgets
  */
 
