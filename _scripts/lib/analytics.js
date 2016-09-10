@@ -12,7 +12,7 @@ import config from '~/config'
 
 export default config.then((config) => {
     return new Promise((resolve, reject) => {
-        if (!config.trackme) {
+        if (!config.user.trackme) {
             console.log('Google analitics not loaded due to trackme config')
 
             return resolve((...args) => {
@@ -28,8 +28,6 @@ export default config.then((config) => {
             window.ga('set', 'forceSSL', true)
             window.ga('set', 'anonymizeIp', true)
             window.ga('require', 'displayfeatures')
-            window.ga('send', 'pageview')
-            window.ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
 
             return resolve(window.ga)
         })

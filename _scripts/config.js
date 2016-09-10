@@ -16,9 +16,12 @@ export default jQuery.then(($) => {
             dataType: 'json'
         })
         .done((config) => {
+            console.log('Sitewide configuration loaded')
             return resolve(config)
         })
         .fail((err) => {
+            console.error('Failed to grab sitewide configuration')
+            console.error(err.responseText)
             return reject(err)
         })
     })
