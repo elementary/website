@@ -1,5 +1,5 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
 
     $page['name'] = '404';
     $page['title'] = 'Page Not Found &sdot; elementary';

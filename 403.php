@@ -1,5 +1,5 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
 
     $page['name'] = '403';
     $page['title'] = 'Access Denied &sdot; elementary';

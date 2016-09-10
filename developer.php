@@ -1,23 +1,22 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
+    $page['title'] = 'Developer &sdot; elementary';
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';
     $page['image'] = 'https://elementary.io/images/developer/preview.png';
-    $page['title'] = 'Developer &sdot; elementary';
     $page['theme-color'] = '#403757';
+
     $page['scripts'] = array(
         'scripts/developer.js'
     );
+
     $page['styles'] = array(
         'styles/developer.css',
         'styles/solarized_light.css'
     );
-    include $template['header'];
-    require_once __DIR__.'/backend/classify.current.php';
-?>
 
-<script>var releaseTitle = 'Loki'</script>
-<script>var releaseVersion = '0.4-beta2'</script>
-<script>var downloadRegion = '<?php echo $region; ?>'</script>
+    include $template['header'];
+?>
 
 <section class="hero dark">
     <div>

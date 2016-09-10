@@ -1,12 +1,16 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['description'] = 'Meet the people behind elementary.';
     $page['title'] = 'Team &sdot; elementary';
+
     $page['styles'] = array(
         'styles/team.css'
     );
+
     include $template['header'];
     include $template['alert'];
+
     require_once __DIR__.'/backend/config.loader.php';
 
     $apiUrl = "https://slack.com/api/users.list?presence=1&token={$config['slack_token']}";

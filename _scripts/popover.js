@@ -5,7 +5,6 @@
 
 import jQuery from '~/lib/jquery'
 
-
 jQuery.then(($) => {
     $(function () {
         var $document

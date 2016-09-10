@@ -1,4 +1,6 @@
 <?php
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['title'] = 'A fast and open replacement for Windows and OS X &sdot; elementary OS';
 
     $page['scripts'] = array(
@@ -12,18 +14,11 @@
         'styles/pantheon.css'
     );
 
-    include __DIR__.'/_templates/sitewide.php';
-
     include $template['header'];
     include $template['alert'];
 
     require_once __DIR__.'/backend/config.loader.php';
-    require_once __DIR__.'/backend/classify.current.php';
 ?>
-        <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
-        <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
-        <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
-        <script>var downloadRegion = '<?php echo $region; ?>'</script>
 
         <section class="grid">
             <div class="whole">

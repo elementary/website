@@ -1,5 +1,5 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
 
     $page['title'] = 'Download Link Expired &sdot; elementary';
 
