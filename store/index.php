@@ -40,10 +40,9 @@
         $config['printful_key'] === 'printful_key' ||
         $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
     )) {
+
+        $l10n->set_domain('layout');
 ?>
-
-    <script>ga('send', 'event', 'Store', 'Store Visit')</script>
-
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
@@ -55,7 +54,12 @@
             </div>
         </div>
     </div>
-<?php } ?>
+<?php
+        $l10n->set_domain($page['name']);
+    }
+?>
+
+<script>ga('send', 'event', 'Store', 'Store Visit')</script>
 
 <div class="row">
     <h1>Store</h1>
@@ -72,9 +76,9 @@
                 <img src="<?php echo $product['image'] ?>"/>
                 <h2><?php echo $product['name'] ?></h2>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
-                    <h4>$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></h4>
+                    <h4 data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></h4>
                 <?php } else { ?>
-                    <h4>$<?php echo number_format($product['price_min'], 2) ?></h4>
+                    <h4 data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <?php } ?>
                 <a style="display:none;" class="open-modal" href="#product-<?php echo $product['id'] ?>-overview"></a>
             </div>
@@ -95,7 +99,7 @@
             </div>
             <form action="<?php echo $sitewide['root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
-                <h4 class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></h4>
+                <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <p><?php echo $product['description'] ?></p>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">

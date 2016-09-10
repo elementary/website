@@ -121,3 +121,15 @@ file_filter = lang/<lang>/open-source.json
 source_file = lang/en/open-source.json
 source_lang = en
 type = KEYVALUEJSON
+
+[elementary-mvp.store_index]
+file_filter = lang/<lang>/store/index.json
+source_file = lang/en/store/index.json
+source_lang = en
+type = KEYVALUEJSON
+
+[elementary-mvp.store_cart]
+file_filter = lang/<lang>/store/cart.json
+source_file = lang/en/store/cart.json
+source_lang = en
+type = KEYVALUEJSON

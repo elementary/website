@@ -48,5 +48,9 @@ for file in $(find docs -name '*.md'); do
 	extract_translations "$file"
 done
 
+# Extract select store pages
+extract_translations "store/cart.php"
+extract_translations "store/index.php"
+
 echo "Done! You can now push source files on Transifex by running:"
 echo "tx push -s"
