@@ -1,5 +1,5 @@
 {
-    "Developer hero image": "Developer hero image",
+    "Developer hero image": "Kūrėjo didvyrio atvaizdis",
     "Develop Your Ideas Into Code": "Plėtokite savo idėjas į kodą",
     "Learn to design, develop, and publish apps for elementary OS": "Išmokite projektuoti, kurti ir skelbti programas, skirtas elementary OS",
     "Get Started": "Pradėkite",
@@ -26,8 +26,10 @@
     "Reference for Soup": "Soup rodyklė",
     "Reference for JSON-GLib": "JSON-GLib rodyklė",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala. Šiuolaikinė, greita, atviro kodo kalba.",
-    "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Rašykite greitą, savą, objektinį kodą, naudodami Vala. Ji yra pažįstama kiekvienam, susidūrusiam su C#, tačiau palaiko API/ABI suderinamumą su standartine C kalba, turi žemus atminties reikalavimus yra specialiai sukurta GObject. Vala kalboje yra: signalai, savybės, bendrinės, lambda funkcijos, pagalbinės atminties valdymas, išimčių apdorojimas, tipų išvados, async/yield ir daug daugiau.",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
+    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "Sužinoti daugiau apie Vala",
     "Library Documentation for Vala": "Vala bibliotekos dokumentacija",
     "Developer &sdot; elementary": "Plėtojimas ⋅ elementary"

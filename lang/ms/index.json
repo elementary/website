@@ -1,9 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "A fast and open replacement for Windows and OS X",
+    "Pay What You Want": "Pay What You Want",
     "Custom": "Custom",
     "Enter any dollar amount.": "Enter any dollar amount.",
     "Purchase elementary OS": "Beli elementary OS",
-    "0.3.2 Freya | 1.15 GB (for PC or Mac)": "0.3.2 Freya | 1.15 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "What the press is saying about elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“a fast, low-maintenance platform that can be installed virtually anywhere”",
@@ -54,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.",
     "camera screenshot": "camera screenshot",
     "camera icon": "camera icon",
-    "Easily snap picures or video from a built-in webcam.": "Easily snap picures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
     "elementary appcenter categories": "elementary appcenter categories",
     "The Indie, Open Source App Store": "The Indie, Open Source App Store",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.",
@@ -85,9 +86,10 @@
     "Security Notices": "Security Notices",
     "Download elementary OS": "Download elementary OS",
     "Choose a Download": "Choose a Download",
-    "We recommend 64-bit for most modern computers. For help and more info, see the": "We recommend 64-bit for most modern computers. For help and more info, see the",
+    "For help and more info, see the": "For help and more info, see the",
     "installation guide": "installation guide",
-    "Freya 32-bit": "Freya 32-bit",
+    "Cancel": "Cancel",
+    "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "Freya 64-bit": "Freya 64-bit"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
 }

@@ -1,9 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "Greita ir atvira Windows ir OS X pakaita",
+    "Pay What You Want": "Pay What You Want",
     "Custom": "Pasirinkti",
     "Enter any dollar amount.": "Įrašykite bet kokią sumą doleriais.",
     "Purchase elementary OS": "Įsigyti elementary OS",
-    "0.3.2 Freya | 1.15 GB (for PC or Mac)": "0.3.2 Freya | 1.15 GB (PC arba Mac)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Ką apie elementary OS rašo spauda:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS yra kitokia... graži ir galinga operacinė sistema, kuri puikiai veiks net ir senesniuose kompiuteriuose”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“greita, daug priežiūros nereikalaujanti platforma, kuri gali būti įdiegta, iš esmės, bet kur”",
@@ -20,7 +21,7 @@
     "Videos": "Vaizdo įrašai",
     "Calendar": "Kalendorius",
     "Files": "Failai",
-    "Terminal": "Terminal",
+    "Terminal": "Terminalas",
     "Scratch": "Scratch",
     "Camera": "Kamera",
     "music screenshot": "muzikos ekrano kopija",
@@ -54,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "Su aplankų šonine juosta, keliais polangiais ir tokiais plėtiniais, kaip Terminalas, Saityno peržiūra, Įtraukos aptikimas ir Vim emuliavimas, programa Scratch suteiks jums viską, ko reikia tekstų redagavimui.",
     "camera screenshot": "kameros ekrano kopija",
     "camera icon": "kameros piktograma",
-    "Easily snap picures or video from a built-in webcam.": "Lengvai įamžinkite nuotraukas ar vaizdo įrašus iš savo įtaisytos kameros.",
+    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
     "elementary appcenter categories": "elementary programų centras kategorijos",
     "The Indie, Open Source App Store": "\"Indie\", atvirosios programinės įrangos programų parduotuvė ",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "Programų centras pristato ištobulintas programas ir plėtinius tiesiai į jūsų darbalaukį. Greitai atraskite naujas programas ir lengvai atnaujinkite tas, kurias jus esate įdiegę. Jokių licencinių raktų, jokių prenumeratų, jokių bandomųjų laikotarpių.",
@@ -85,9 +86,10 @@
     "Security Notices": "Saugumo pastebėjimai",
     "Download elementary OS": "Atsisiųskite elementary OS",
     "Choose a Download": "Pasirinkite atsiuntimą",
-    "We recommend 64-bit for most modern computers. For help and more info, see the": "Šiuolaikiniams kompiuteriams mes rekomenduojame 64-bitų sistemą. Išsamesnei informacijai, žiūrėkite",
+    "For help and more info, see the": "For help and more info, see the",
     "installation guide": "diegimo vadovą",
-    "Freya 32-bit": "32-bitų Freya",
+    "Cancel": "Atsisakyti",
+    "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Torrent Magnet nuoroda",
-    "Freya 64-bit": "64-bitų Freya"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
 }
