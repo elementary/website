@@ -57,10 +57,6 @@
     </div>
 <?php } ?>
 
-<div class="row">
-    <h1>Store</h1>
-</div>
-
 <?php foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">
@@ -70,11 +66,11 @@
 
             <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
                 <img src="<?php echo $product['image'] ?>"/>
-                <h2><?php echo $product['name'] ?></h2>
+                <h4><?php echo $product['name'] ?></h4>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
-                    <h4>$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></h4>
+                    <p class="text-center">$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></p>
                 <?php } else { ?>
-                    <h4>$<?php echo number_format($product['price_min'], 2) ?></h4>
+                    <p class="text-center">$<?php echo number_format($product['price_min'], 2) ?></p>
                 <?php } ?>
                 <a style="display:none;" class="open-modal" href="#product-<?php echo $product['id'] ?>-overview"></a>
             </div>
