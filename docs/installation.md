@@ -33,7 +33,7 @@ Select the operating system you are currently using to view tailored installatio
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
 <a class="button install-on-windows" href="#install-on-windows"><i class="fa fa-windows"></i> Windows</a>
-<a class="button install-on-macos" href="#install-on-macos><i class="fa fa-apple"></i> macOS</a>
+<a class="button install-on-macos" href="#install-on-macos"><i class="fa fa-apple"></i> macOS</a>
 <a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fa fa-linux"></i> Ubuntu</a>
 </div>
 </div>
