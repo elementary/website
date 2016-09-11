@@ -76,7 +76,7 @@
                     <div class="column">
                         <span class="pre-amount">$</span>
                         <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
-                        <p class="small-label focus-reveal text-center">Enter any amount, including 0.</p>
+                        <p class="small-label text-center">Enter any amount, including 0.</p>
                     </div>
                     <div style="clear:both;"></div>
                             <?php
