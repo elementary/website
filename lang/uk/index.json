@@ -1,10 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "Швидка та безкоштовна заміна для Windows і OS X",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want": "Сплачуйте стільки, скільки хочете",
     "Custom": "Інше",
     "Enter any dollar amount.": "Введіть будь-яку суму в доларах",
     "Purchase elementary OS": "Отримати elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 ГБ (для PC або Mac)",
     "What the press is saying about elementary OS:": "Що про elementary OS говорить преса:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS - особлива… чудова та потужна операційна система, що запрацює навіть на старих PC”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“швидка, не вимоглива платформа, яка може бути встановлена практично куди завгодно”",
@@ -55,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "Завдяки боковій панелі, багатьом вкладкам та плагінам для терміналу, попереднього перегляду у браузері, автоматичним відступам та емулятору Vim, ви можете зупинити пошук вашого ідеального текстового редактора на Scratch.",
     "camera screenshot": "camera screenshot",
     "camera icon": "camera icon",
-    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Легко робіть фото чи знімайте відео вбудованою веб-камерою.",
     "elementary appcenter categories": "elementary appcenter categories",
     "The Indie, Open Source App Store": "Інді-магазин відкритого ПЗ.",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.",
@@ -89,7 +89,7 @@
     "For help and more info, see the": "For help and more info, see the",
     "installation guide": "довідки з встановлення",
     "Cancel": "Скасувати",
-    "Download Loki": "Download Loki",
+    "Download Loki": "Завантажити Loki",
     "Torrent Magnet Link": "Magnet-посилання для торрента.",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Швидка та безкоштовна заміна для Windows і OS X ⋅ elementary OS"
 }

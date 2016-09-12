@@ -1,10 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "Nopea, avoin ja ilmainen vaihtoehto Windowsille sekä OS X:lle",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want": "Maksa mitä haluat",
     "Custom": "Muu",
     "Enter any dollar amount.": "Syötä haluamasi summa.",
     "Purchase elementary OS": "Osta elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 Gt (PC:lle tai Macille)",
     "What the press is saying about elementary OS:": "Lehdistössä lausuttua:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS on erilainen... Kaunis ja tehokas käyttöjärjestelmä, joka toimii vanhemmillakin tietokoneilla.\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"Nopea, vähän ylläpitoa vaativa alusta, jonka voi asentaa periaatteessa mihin tahansa.\"",
@@ -55,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "Kansiosivupalkin, useiden näkymien ja lukuisien laajennusten avulla Scratch täyttää tekstinkäsitellyn tarpeet.",
     "camera screenshot": "kameran kuvakaappaus",
     "camera icon": "kameran kuvake",
-    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Ota kuvia tai videota sisäänrakennetulla web-kameralla.",
     "elementary appcenter categories": "elementaryn sovellusvalikoiman luokat",
     "The Indie, Open Source App Store": "Indie-pohjainen avoimen lähdenkoodin sovelluskauppa",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "Sovellusvalikoima tuo sovellukset ja laajennukset suoraan työpöydällesi. Löydä uusia sovelluksia ja päivitä asennettuja. Ei lisenssiavaimia, tilauksia tai kokeilujaksoja.",
@@ -86,10 +86,10 @@
     "Security Notices": "Tietoturvailmoitukset",
     "Download elementary OS": "Lataa elementary OS",
     "Choose a Download": "Valitse versio",
-    "For help and more info, see the": "For help and more info, see the",
+    "For help and more info, see the": "Ohjeita ja lisätietoja saatavilla ",
     "installation guide": "asennusohje.",
     "Cancel": "Peru",
-    "Download Loki": "Download Loki",
+    "Download Loki": "Lataa Loki",
     "Torrent Magnet Link": "Torrent Magnet -linkki",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Nopea ja avoin korvike Windowsille ja OS X:lle ⋅ elementary OS"
 }

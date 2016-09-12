@@ -21,7 +21,7 @@
     "Open Hash Tool": "فتح أداة الهاش",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "تحت \"نوع الهاش\" إختر <code>SHA-256</code>",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "أسفل \"إدخال ملف\" قم باختيار <code>إختر ملف(ات)</code> وابحث عن ملف ISO الخاص بنظام تشغيل إلمنتري.",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "تحقق من تطابق النص في \"نتائج\" مع إحدى الهاشات التالية:",
     "Creating an Install Drive": "إنشاء قرص تثبيت",
     "Rufus - select ISO": "Rufus - إختر ISO",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "ستحتاج لمفتاح فلاش USB بمساحة حرة 2 جيجا على الأقل وبرنامج يدعى Rufus.",

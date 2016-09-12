@@ -21,7 +21,7 @@
     "Open Hash Tool": "Abra o Hash Tool",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "Em \"Hash Type\" escolha <code>SHA-256</code>",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "Em \"Input File\" clique em <code>Select File(s)</code> e encontre o arquivo ISO do elementary OS",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verifique se o texto em \"Results\" corresponde a uma das seguintes chaves:",
     "Creating an Install Drive": "Criando Uma Mídia de Instalação",
     "Rufus - select ISO": "Rufus - selecionar ISO",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Você vai precisar de um pendrive USB com no mínimo 2 GB de espaço livre, e de um programa chamado Rufus.",

@@ -21,7 +21,7 @@
     "Open Hash Tool": "Avaa Hash Tool",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "Valitse \"Hash Type\"-pudotusvalikosta <code>SHA-256</code>",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "Valitse \"Input File\"-kohdasta <code>Select File(s)</code> ja etsi elementary OS:n ISO-tiedosto",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "Varmista, että \"Results\"-kentän sisältö vastaa seuraavaa tarkistetta:",
     "Creating an Install Drive": "Asennusmedian luominen",
     "Rufus - select ISO": "Rufus - valitse ISO",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Tarvitset USB-muistitikun, jossa on vähintään 2 gigatavua vapaata tilaa ja ohjelman nimeltä Rufus.",

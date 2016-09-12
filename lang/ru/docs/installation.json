@@ -21,7 +21,7 @@
     "Open Hash Tool": "Откройте Hash Tool",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "В поле «Hash Type» выберите <code>SHA-256</code>",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "В поле «Input File» нажмите <code>Select File(s)</code> и найдите ISO-образ elementary OS",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "Убедитесь, что текст в поле «Results» совпадает со следующим хешем:",
     "Creating an Install Drive": "Создание установочного диска",
     "Rufus - select ISO": "Rufus - выбрать ISO",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Вам понадобится USB-носитель как минимум с 2 ГБ свободного места, а также программа Rufus.",

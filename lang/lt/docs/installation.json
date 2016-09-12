@@ -21,7 +21,7 @@
     "Open Hash Tool": "Atverkite maišos įrankį",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "Po užrašu \"Hash Type\" pasirinkite <code>SHA-256</code>",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "Po užrašu \"Input File\" pasirinkite <code>Select File(s)</code> ir raskite elementary OS ISO failą",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "Patikrinkite, ar tekstas po užrašu \"Results\" atitinka šią maišą:",
     "Creating an Install Drive": "Diegimo disko kūrimas",
     "Rufus - select ISO": "Rufus - pasirinkti ISO",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Jums reikės USB atmintinės, kurios laisva vieta siektų bent 2 GB ir programos, pavadinimu Rufus.",
