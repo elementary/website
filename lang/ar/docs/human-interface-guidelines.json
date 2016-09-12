@@ -357,7 +357,7 @@
     "Menu icon": "أيقونة القائمة",
     "If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.": "If your app makes use one of these common actions, reference its corresponding icon instead of creating your own. This ensures a consistent user experience and aids in user recognition of common functions.",
     "If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.": "If your app has a unique action, you may need to create your own. When doing this, try to follow the look and feel of existing action icons, and include it along with your app.",
-    "Icon Sizes": "Icon Sizes",
+    "Icon Sizes": "حجم الأيقونات",
     "elementary OS uses <strong>six</strong> main icon sizes throughout the OS and it's best to include all six as part of your application.": "elementary OS uses <strong>six</strong> main icon sizes throughout the OS and it's best to include all six as part of your application.",
     "16 pixel Terminal icon": "16 pixel Terminal icon",
     "24 pixel Terminal icon": "24 pixel Terminal icon",

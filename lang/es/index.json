@@ -1,10 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "Una alternativa rápida y abierta a Windows y OS X",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want": "Paga lo que quieras",
     "Custom": "Personalizado",
     "Enter any dollar amount.": "Escriba un monto en dólares.",
     "Purchase elementary OS": "Comprar elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (para PC o Mac)",
     "What the press is saying about elementary OS:": "La prensa opina sobre elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "«elementary OS es diferente… un sistema operativo hermoso y potente que funciona bien incluso en PC antiguos.»",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "«Una plataforma rápida y de bajo mantenimiento que puede instalarse prácticamente en cualquier equipo.»",
@@ -55,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "Con una barra lateral de carpetas, múltiples paneles y extensiones como Terminal, Web Preview, detección de indentación y emulación de VIM; Scratch será el último editor de texto que necesitarás.",
     "camera screenshot": "captura de pantalla de la cámara",
     "camera icon": "icono de la cámara",
-    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Haga fotos o vídeos fácilmente desde una cámara web integrada.",
     "elementary appcenter categories": "categorías del centro de Apps de elementary",
     "The Indie, Open Source App Store": "La App Store Indie, de código abierto",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter te trae aplicaciones hechas a mano y extensiones directamente a tu escritorio. Descubre rápidamente nuevas aplicaciones y actualiza fácilmente las que ya tienes. Sin licencias, sin suscripciones y sin periodos de prueba.",
@@ -86,10 +86,10 @@
     "Security Notices": "Avisos de seguridad",
     "Download elementary OS": "Descargar elementary OS",
     "Choose a Download": "Elija una descarga",
-    "For help and more info, see the": "For help and more info, see the",
+    "For help and more info, see the": "Para ayuda y más información, vea la",
     "installation guide": "guía de instalación",
     "Cancel": "Cancelar",
-    "Download Loki": "Download Loki",
+    "Download Loki": "Descarga Loki",
     "Torrent Magnet Link": "Enlace «magnet»",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Una alternativa rápida y abierta a Windows y OS X ⋅ elementary OS"
 }

@@ -3,7 +3,7 @@
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
     "Get Involved": "Įsitraukti",
     "Applications": "Programos",
-    "elementary OS Applications": "elementary OS Applications",
+    "elementary OS Applications": "elementary OS programos",
     "Calendar": "Kalendorius",
     "Camera": "Kamera",
     "Files": "Failai",
@@ -67,7 +67,7 @@
     "Coreutils": "Coreutils",
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Filesystem, Hardware, Networking & Drivers",
-    "Kernel": "Kernel",
+    "Kernel": "Branduolys",
     "All logos featured here are trademarks of their respective projects.": "All logos featured here are trademarks of their respective projects.",
     "Open Source &sdot; elementary": "Open Source ⋅ elementary"
 }
