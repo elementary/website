@@ -369,7 +369,7 @@
         </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-        <div id="download-modal" class="dialog">
+        <div id="download-modal" class="dialog modal">
             <img alt="Download elementary OS icon" src="images/icons/apps/48/ubiquity.svg">
             <div class="content-area">
                 <p class="primary">Choose a Download</p>
