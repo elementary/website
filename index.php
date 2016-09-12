@@ -369,7 +369,6 @@
         </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-
         <div id="download-modal" class="dialog">
             <img alt="Download elementary OS icon" src="images/icons/apps/48/ubiquity.svg">
             <div class="content-area">
@@ -384,7 +383,6 @@
                 </div>
             </div>
         </div>
-
         <a style="display:none;" class="open-modal" href="#download-modal"></a>
         <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
 <?php
