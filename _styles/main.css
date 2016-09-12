@@ -978,7 +978,7 @@ input:focus:-ms-input-placeholder {
 
 .dialog p {
     line-height: 24px;
-    margin: 6px 0 0 0;
+    margin: 6px 0 0;
     max-width: 380px;
     text-align: left;
 }
