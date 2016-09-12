@@ -31,6 +31,10 @@
     max-width: 260px;
 }
 
+.grid__item img {
+    border-radius: 6px;
+}
+
 /*****************
 * Product modals *
 *****************/
