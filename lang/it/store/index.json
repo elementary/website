@@ -1,10 +1,10 @@
 {
     "Store": "Negozio",
-    "Apparel": "Apparel",
-    "Men's Cotton T-Shirt": "Men's Cotton T-Shirt",
-    "Women's Cotton T-Shirt": "Women's Cotton T-Shirt",
-    "Men's Track Shirt": "Men's Track Shirt",
-    "Women's Track Shirt": "Women's Track Shirt",
+    "Apparel": "Vestiti",
+    "Men's Cotton T-Shirt": "Camicia de Cottone da Uomo",
+    "Women's Cotton T-Shirt": "Camicia de Cottone delle Donne",
+    "Men's Track Shirt": "Camicia Sport da Uomo",
+    "Women's Track Shirt": "Camicia Sport delle Donne",
     "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.",
     "Size Chart": "Size Chart",
     "Size": "Size",
@@ -13,7 +13,7 @@
     "L": "L",
     "XL": "XL",
     "2XL": "2XL",
-    "Quantity": "Quantity",
+    "Quantity": "Quantità",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.",
     "Store &sdot; elementary": "Negozio ⋅ elementary"
 }

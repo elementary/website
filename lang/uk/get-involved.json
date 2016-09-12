@@ -37,7 +37,7 @@
     "Report a Website Issue": "Повідомте про проблему з сайтом",
     "Desktop Development": "Десктоп-розробка",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Наше середовище та всі додатки створені за допомогою Vala, GTK+, Granite та багатьох інших відкритих бібліотек. Увесь наш програмний код знаходиться на Launchpad.net, безкоштовному сервісі для відкритих проектів. Якщо ви досі не розробляли нічого для elementary OS, ми рекомендуємо вам прочитати \"Довідку з основ\".",
-    "This burndown chart shows our progress for the": "This burndown chart shows our progress for the",
+    "This burndown chart shows our progress for the": "Ця діаграма згорання задач показує прогрес над",
     "Loki RC 1 milestone": "Loki RC 1 milestone",
     ", which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin.": ", which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin.",
     "Fixed": "Виправлено",

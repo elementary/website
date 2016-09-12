@@ -21,7 +21,7 @@
     "Open Hash Tool": "Hash Tool を開きます",
     "Under &quot;Hash Type&quot; select <code>SHA-256</code>": "\"Hash Type\" から <code>SHA-256</code> を選択します",
     "Under &quot;Input File&quot; select <code>Select File(s)</code> and find the elementary OS ISO file": "\"Input File\" から <code>Select Files(s)</code> を選択して、elementary OS の ISO ファイルを選択します",
-    "Verify that the text in &quot;Results&quot; matches the following hash:": "Verify that the text in \"Results\" matches the following hash:",
+    "Verify that the text in &quot;Results&quot; matches the following hash:": "\"Results\" 内の文字列が以下のハッシュ値と一致することを確認してください。",
     "Creating an Install Drive": "インストールドライブの作成",
     "Rufus - select ISO": "Rufus - ISO の選択",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "少なくとも 2GB 以上の空き領域がある USB メモリーと、Rufus (ルーファス) と呼ばれるプログラムが必要です。",
