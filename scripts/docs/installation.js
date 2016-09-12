@@ -8,7 +8,7 @@ $(function () {
             return 'windows'
         }
         if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'osx'
+            return 'macos'
         }
         if (ua.indexOf('Linux') >= 0) {
             return 'linux'
@@ -20,7 +20,7 @@ $(function () {
     var operatingSystemSlider = new Slider({
         slideContainer: '#installation-instructions-slide-container',
         choiceContainer: '#operating-system-choices',
-        slides: ['install-on-windows', 'install-on-os-x', 'install-on-ubuntu'],
+        slides: ['install-on-windows', 'install-on-macos', 'install-on-ubuntu'],
         fixed: false
     })
 
@@ -29,8 +29,8 @@ $(function () {
 
     if (currentOs === 'windows' || !currentOs) {
         operatingSystemSlider.slideTo('install-on-windows')
-    } else if (currentOs === 'osx') {
-        operatingSystemSlider.slideTo('install-on-os-x')
+    } else if (currentOs === 'macos') {
+        operatingSystemSlider.slideTo('install-on-macos')
     } else {
         operatingSystemSlider.slideTo('install-on-ubuntu')
     }

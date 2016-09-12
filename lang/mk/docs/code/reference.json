@@ -1,5 +1,5 @@
 {
-    "Reference": "Reference",
+    "Reference": "Референца",
     "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.": "Now that you've stepped through the developer guide like a champ, we have some reference materials for you. This would be a great place to bookmark and refer back to when you have questions about elementary development.",
     "Code Style": "Code Style",
     "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.": "The purpose of this guide is to provide clean and accurate instructions on\nwriting good code across all elementary projects. This guideline is to be\nfollowed on every file, in order to keep our code consistent and readable. We\nare also inheriting some of the GNOME's Vala guidelines to keep our code\nconsistent with other Vala programs.",

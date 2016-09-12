@@ -160,7 +160,7 @@ $(function () {
             return 'Windows'
         }
         if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'OS X'
+            return 'macOS'
         }
         if (ua.indexOf('Linux') >= 0) {
             return 'Linux'
