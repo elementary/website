@@ -39,6 +39,7 @@
         that.slideTo('index')
 
         $(that.container).addClass('initialized')
+        $(that.container).scrollLeft(0)
 
         // Listen for some cool mobile touch gestures
         var touchStartX = null
