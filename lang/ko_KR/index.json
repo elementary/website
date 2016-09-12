@@ -1,9 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "빠르고 미려한, Windows와 OS X의 대안.",
+    "Pay What You Want": "Pay What You Want",
     "Custom": "마음대로 값 매기기",
     "Enter any dollar amount.": "원하시는 액수를 달러로 입력하세요.",
     "Purchase elementary OS": "Elementary OS 구입",
-    "0.3.2 Freya | 1.15 GB (for PC or Mac)": "0.3.2 Freya | 1.15 GB (PC 또는 Mac에서)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "사람들은 elementary OS를 어떻게 생각할까요?:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS는 다릅니다... 오래된 PC에서도 문제 없는, 예쁘고 강력한 운영체제입니다\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"빠르고 유지 비용이 적게들며, 모든 곳에 설치할 수 있는 플랫폼\"",
@@ -54,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.",
     "camera screenshot": "카메라 스크린샷",
     "camera icon": "카메라 아이콘",
-    "Easily snap picures or video from a built-in webcam.": "Easily snap picures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
     "elementary appcenter categories": "elementary 앱 센터 카테고리",
     "The Indie, Open Source App Store": "The Indie, Open Source App Store",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.",
@@ -85,9 +86,10 @@
     "Security Notices": "보안 공지",
     "Download elementary OS": "elementary OS 다운로드",
     "Choose a Download": "선택하고 다운로드하기",
-    "We recommend 64-bit for most modern computers. For help and more info, see the": "최신 컴퓨터에는 64비트 파일을 권장합니다. 더 많은 정보를 보려면",
+    "For help and more info, see the": "For help and more info, see the",
     "installation guide": "설치 가이드를 보세요.",
-    "Freya 32-bit": "Freya 32비트",
+    "Cancel": "Cancel",
+    "Download Loki": "Download Loki",
     "Torrent Magnet Link": "토렌트 마그넷 링크",
-    "Freya 64-bit": "Freya 64비트"
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
 }

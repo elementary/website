@@ -7,7 +7,7 @@ extract_translations () {
 	output_dirname=`dirname "$output_file"`
 
 	# Ignore some files
-	if [[ $pagename == "router" ]] ; then
+	if [[ $pagename == "router" ]] || [[ $pagename == "countdown" ]]; then
 		return
 	fi
 
@@ -47,6 +47,10 @@ done
 for file in $(find docs -name '*.md'); do
 	extract_translations "$file"
 done
+
+# Extract select store pages
+extract_translations "store/cart.php"
+extract_translations "store/index.php"
 
 echo "Done! You can now push source files on Transifex by running:"
 echo "tx push -s"
