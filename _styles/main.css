@@ -988,11 +988,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .dialog .action-area {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row;
     flex-flow: row;
-    -ms-flex-pack: end;
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 12px;
