@@ -79,7 +79,7 @@ By default, all app windows open on one workspace. However, you can use multiple
 * To quickly move left or right through your workspaces, press <kbd>⌘</kbd> + <kbd>←</kbd> or <kbd>⌘</kbd> + <kbd>→</kbd>
 * To cycle through your workspaces, press <kbd>⌘</kbd> + <kbd>Tab</kbd>
 * You can jump straight to a specific workspace by pressing <kbd>⌘</kbd> + <kbd>1</kbd> through <kbd>⌘</kbd> + <kbd>9</kbd>. You can always jump to a new workspace with <kbd>⌘</kbd> + <kbd>0</kbd>.
-* You can also drag app windows between workspaces by dragging their icons in the workspace overview. To see an overview of app windows across all workspaces, press <kbd>⌘</kbd> + <kbd>A</kbd>.
+* You can also drag app windows between workspaces by dragging their icons in the workspace overview, or move them left and right between workspaces using <kbd>⌘</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>→</kbd> respectively. To see an overview of app windows across all workspaces, press <kbd>⌘</kbd> + <kbd>A</kbd>.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
 
