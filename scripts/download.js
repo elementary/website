@@ -191,7 +191,8 @@ $(function () {
         console.log('Open the download overlay!')
         $openModal.leanModal({
             // Add this class to download buttons to make them close it.
-            closeButton: '.close-modal'
+            closeButton: '.close-modal',
+            disableCloseOnOverlayClick: true
         })
         // This is what actually opens the modal overlay.
         $openModal.click()
