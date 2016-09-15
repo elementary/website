@@ -90,7 +90,7 @@ The panel, dock, and workspaces appear only on the primary display. Any other at
 
 ## Installing Apps {#installing-apps}
 
-elementary OS comes bundled with **AppCenter**, an app store for free. Installing a new app from AppCenter is easy:
+elementary OS comes bundled with **AppCenter**, an app store for free apps. Installing a new app from AppCenter is easy:
 
 1. Open the **AppCenter** app.
 2. Search in the top-right, or browse.
