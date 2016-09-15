@@ -175,7 +175,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 return 'Windows'
             }
             if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-                return 'OS X'
+                return 'macOS'
             }
             if (ua.indexOf('Linux') >= 0) {
                 return 'Linux'
@@ -206,7 +206,8 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             console.log('Open the download overlay!')
             $openModal.leanModal({
                 // Add this class to download buttons to make them close it.
-                closeButton: '.close-modal'
+                closeButton: '.close-modal',
+                disableCloseOnOverlayClick: true
             })
             // This is what actually opens the modal overlay.
             $openModal.click()

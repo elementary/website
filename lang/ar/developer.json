@@ -1,6 +1,6 @@
 {
-    "Developer hero image": "صورة البطل المطور",
-    "Develop Your Ideas Into Code": "طور فكرتك الى كود",
+    "Developer hero image": "صورة المطور البطل",
+    "Develop Your Ideas Into Code": "طوّر فكرتك بداخل الكود !",
     "Learn to design, develop, and publish apps for elementary OS": "تعلم تصميم، تطوير، ونشر تطبيقات نظام تشغيل إلمنتري",
     "Get Started": "إبدأ الآن",
     "Documentation": "وثائق",
@@ -26,8 +26,10 @@
     "Reference for Soup": "مرجع ل Soup",
     "Reference for JSON-GLib": "مرجع ل JSON-GLib",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala لغة حديثة ,سريعة, مفتوحة المصدر",
-    "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "أكتب الكود بسرعة، بصفة محلية، كائنية التوجه من خلال Vala. مألوفة لأي شخص سبق وأن رأى #C، مع المحافظة على API/ABI متوافقة مع C المعيارية، مع متطلبات ذاكرة منخفضة، تم بناؤها لغرض GObject. تسميها، Vala's هل فهمتها: إشارات، خصائص، generics، دوال lambada، إدارة ذاكرة مدعمة، معالجة الإستثناءت، إستدلال النوع، مزامنة/إخضاع، والمزيد.",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
+    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "اعرف المزيد حول Vala",
     "Library Documentation for Vala": "مكتبة الوثائق ل Vala",
     "Developer &sdot; elementary": "المطور ⋅ إلمنتري"

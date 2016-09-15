@@ -1,8 +1,8 @@
 {
-    "Purchase elementary OS": "شِراء إلمنتري او إس",
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "بديل سريع ومفتوح للويندوز والماك",
     "Blog": "المدونة",
     "Support": "الدعم",
-    "Store": "التخزين",
+    "Store": "المتجر",
     "Developer": "المطور",
     "Get Involved": "المشاركة",
     "This is a development site.": "هذا موقع تطوير",
@@ -12,6 +12,6 @@
     "Change Site Language": "تغيير لغة الموقع",
     "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "موقع نظام التشغيل إلمنتري العنكبوتي مبني على تقنيات شبكة حديثة لا يدعمها متصفحك.",
     "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "نسخة إنترنت إكسبلورر غير محدثة وقد تحتوي على ثغرات أو تهديدات أمنية. الرجاء <a href=\"http://browsehappy.com/\">التحديث</a> الى إنترنت إكسبلورر 11 أو الإعتماد على متصفح آخر.",
-    "Dismiss": "صرف",
+    "Dismiss": "تجاهل",
     "Learn More": "تعلم المزيد"
 }

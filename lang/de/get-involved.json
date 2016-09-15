@@ -1,5 +1,5 @@
 {
-    "Be a Part of Something Bigger": "Sei ein Teil von etwas großem",
+    "Be a Part of Something Bigger": "Sei ein Teil von etwas Großem",
     "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Alles was wir machen ist zu 100% Open Source und wird gemeinschaftlich mit Leuten aus aller Welt entwickelt. Selbst wenn du kein Programmierer bist, kannst du dich beteiligen und den Unterschied machen.",
     "Funding": "Finanzierung",
     "Translations": "Übersetzungen",
@@ -37,7 +37,9 @@
     "Report a Website Issue": "Melde einen Fehler auf unserer Website",
     "Desktop Development": "Desktopentwicklung",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Unsere Desktop-Umgebung und alle Anwendungen wurden mithilfe von Vala, GTK+, Granite und vielen anderen offenen Bibliotheken erstellt. Unser gesamter Code ist auf Launchpad.net gehostet, einem freien Dienst für Open-Source Projekte. Wenn du noch nie für elementary OS entwickelt hast, empfehlen wir unsere \"Erste Schritte\" Anleitung anzuschauen.",
-    "This burndown chart shows our progress for the <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Learn More</a>": "Dieses Burndown Chart zeigt unseren Fortschritt für den <a href=\"https://bugs.launchpad.net/elementary/+milestone/loki-rc1\">Loki RC 1 milestone</a>, welcher unser aktueller Entwicklungsfokus ist. Sobald der Milestone erreicht ist, wird Loki veröffentlicht und die Arbeit an der nächsten Version von elementary OS beginnt. <a href=\"https://launchpad.net/elementaryos/+series\" class=\"read-more\">Mehr erfahren</a>",
+    "This burndown chart shows our progress for the": "This burndown chart shows our progress for the",
+    "Loki RC 1 milestone": "Loki RC 1 milestone",
+    ", which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin.": ", which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin.",
     "Fixed": "Behoben",
     "In Progress": "In Arbeit",
     "Unfixed": "Ausstehend",

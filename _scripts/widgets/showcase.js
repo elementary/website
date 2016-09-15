@@ -59,8 +59,9 @@ export default class Showcase {
 
         $(window).resize(() => this.resize())
 
-        $(this.container).addClass('initialized')
         this.slideTo('index')
+        $(this.container).addClass('initialized')
+        $(this.container).scrollLeft(0)
 
         // Listen for some cool mobile touch gestures
         var touchStartX = null

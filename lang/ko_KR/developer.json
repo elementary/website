@@ -1,6 +1,6 @@
 {
     "Developer hero image": "최다 공헌 개발자 사진",
-    "Develop Your Ideas Into Code": "당신의 아이디어를 코드로 발전시키세요",
+    "Develop Your Ideas Into Code": "당신의 아이디어를 코드로 만드세요",
     "Learn to design, develop, and publish apps for elementary OS": "elementary OS의 앱을 디자인, 개발, 배포하는 방법을 배우세요",
     "Get Started": "시작하기",
     "Documentation": "문서",
@@ -26,8 +26,10 @@
     "Reference for Soup": "Reference for Soup",
     "Reference for JSON-GLib": "Reference for JSON-GLib",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala. 현대적이며, 빠른, 오픈소스 언어입니다.",
-    "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
+    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "Vala에 대해 더 알아보기",
     "Library Documentation for Vala": "Vala 라이브러리 문서",
     "Developer &sdot; elementary": "Developer ⋅ elementary"

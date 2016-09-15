@@ -26,8 +26,10 @@
     "Reference for Soup": "Referencie pre Soup",
     "Reference for JSON-GLib": "Referencie pre JSON-Glib",
     "vala": "vala",
-    "Vala. A Modern, Fast, Open Source Language.": "Vala. Moderný, rýchly a voľne dostupný zdrojový jazyk",
-    "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.": "Write fast, native, object-oriented code with Vala. It's familiar to anyone who's seen C#, but maintains API/ABI compatibility with standard C, has low memory requirements, and is purpose-built for GObject. You name it, Vala's got it: signals, properties, generics, lambda functions, assisted memory management, exception handling, type inference, async/yield, and more.",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
+    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "Zistite viac o vala",
     "Library Documentation for Vala": "Dokumentácia knižnice pre Vala",
     "Developer &sdot; elementary": "Vývojár ⋅ elementary"

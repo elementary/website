@@ -7,12 +7,7 @@
 // CONFIG STARTS HERE
 
 // Launchpad API URL
-$apiBaseUrl = 'https://api.launchpad.net/beta/';
-
-// Project name
-$targetName = 'elementary';
-// Milestone name
-$milestoneName = 'loki-rc1';
+$apiBaseUrl = 'https://api.launchpad.net/beta';
 
 // Build a chart to now.
 $timeTo = time(); // Now
@@ -30,10 +25,13 @@ $timeFrom = time() - 8 * 7 * 24 * 60 * 60;
 $timeInterval = 24 * 60 * 60;
 
 // Arbitrary time period displayed as 50 points
-//$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when freya 0.3.0 released
+//$timeFrom = mktime(12, 0, 0, 4, 11, 2015); // Date when Freya 0.3.0 released
+//$timeFrom = mktime(12, 0, 0, 9, 9, 2016); // Date when Loki 0.4.0 released
 //$timeInterval = (int) ($timeTo - $timeFrom) / 50; // We want 50 points
 
 // CONFIG ENDS HERE
+
+require_once __DIR__ . '/config.loader.php';
 
 date_default_timezone_set('UTC');
 
@@ -49,7 +47,7 @@ if ( !is_writable('./chart.json') ) {
 }
 
 $apiParams = 'ws.op=searchTasks';
-$apiEndpoint = $apiBaseUrl.'/'.$targetName.'/+milestone/'.$milestoneName.'?'.$apiParams;
+$apiEndpoint = $apiBaseUrl.'/'.$config['chart_link_project'].'/+milestone/'.$config['chart_link_milestone'].'?'.$apiParams;
 
 $autoDetectTimeFrom = ($timeFrom === null);
 $tasks = array();

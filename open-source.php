@@ -42,7 +42,7 @@
             <p class="oss-title">Pantheon Desktop Shell</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/egtk" target="_blank"><span>GTK+ Stylesheet</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/stylesheet" target="_blank"><span>GTK+ Stylesheet</span></a>
             <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank"><span>Icon Theme</span></a>
             <a class="button sub-item" href="https://launchpad.net/gala" target="_blank"><span>Gala</span></a>
             <a class="button sub-item" href="https://launchpad.net/plank" target="_blank"><span>Plank</span></a>

@@ -1,9 +1,10 @@
 {
     "A fast and open replacement for Windows and OS X": "بديل سريع ومفتوح للويندوز والماك",
+    "Pay What You Want": "أدفع ما تريد",
     "Custom": "مخصص",
     "Enter any dollar amount.": "أدخل أي قيمة بالدولار.",
     "Purchase elementary OS": "شِراء إلمنتري او إس",
-    "0.3.2 Freya | 1.15 GB (for PC or Mac)": "0.3.2 فريا | 1.15 جيجا (للكمبيوتر و الماك)",
+    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 لوكي | 1.31 جيجا (للكمبيوتر و الماك)",
     "What the press is saying about elementary OS:": "ماذا تقول الصحافة عن نظام إلمنتري",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"نظام المنتري نظام مختلف... نظام جميل وقوي بحيث أنه يشتغل بسلاسة حتى على حاسوب قديم\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\" منصة سريعة وقليلة الحاجة للإصلاح يمكن أن تثبت وهميا في أي مكان\"",
@@ -54,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "مع ملفات الشريط الجانبي، الألواح المتعددة، والملحقات مثل الطرفية، معاينة الويب، كشف التسنين، و محاكي Vim، سكراش سيكون محرر الملفات الذي لا غنى عنه.",
     "camera screenshot": "لقطة شاشة الكامير",
     "camera icon": "أيقونة كاميرا",
-    "Easily snap picures or video from a built-in webcam.": "إلتقط الصور والفيديوهات بسهولة مع الويب كام المدمجة.",
+    "Easily snap pictures or video from a built-in webcam.": "إلتقط الصور والفيديوهات بسهولة مع الويب كام المدمجة.",
     "elementary appcenter categories": "تصنيفات مركز تطبيقات إيليمنتري",
     "The Indie, Open Source App Store": "متجر التطبيقات المستقل، مفتوح المصدر",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "مركز التطبيقات يجلب التطبيقات والإضافات المعدة يدويا مباشرة إلى سطح مكتبك. قم باستكشاف التطبيقات الجديدة بسرعة وتحديث تلك التي تملكها مسبقا بسهولة. بدون تفعيل، ولا إشتراك، ولا فترة تجريبية.",
@@ -85,9 +86,10 @@
     "Security Notices": "تنبيهات الحماية",
     "Download elementary OS": "تحميل نظام التشغيل المنتري",
     "Choose a Download": "إختر تحميلا",
-    "We recommend 64-bit for most modern computers. For help and more info, see the": "ننصح ب 64 بِت لأغلب الحواسيب الجديدة. للمساعدة وللمزيد من المعلومات، تابع",
+    "For help and more info, see the": "للمساعدة والمزيد من المعلومات أنظر إلى",
     "installation guide": "دليل التثبيت",
-    "Freya 32-bit": "فريا 32-بِت",
+    "Cancel": "إلغاء",
+    "Download Loki": "تحميل Loki",
     "Torrent Magnet Link": "رابط التورنت",
-    "Freya 64-bit": "فريا 64-بِت."
+    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "بديل سريع ومفتوح للويندوز والماك"
 }
