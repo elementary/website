@@ -90,21 +90,21 @@ The panel, dock, and workspaces appear only on the primary display. Any other at
 
 ## Installing Apps {#installing-apps}
 
-elementary OS comes bundled with **Software Center**, an app store for free and paid apps. Installing a new app from Software Center is easy:
+elementary OS comes bundled with **AppCenter**, an app store for free apps. Installing a new app from AppCenter is easy:
 
-1. Open the **Software Center** app.
+1. Open the **AppCenter** app.
 2. Search in the top-right, or browse.
 3. Click **Install** next to the app you want to install.
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from the Software Center. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 14.04 LTS should work just as well on elementary OS Freya._
+_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki._
 
 ## Updating {#updating}
 
-elementary OS includes "Software Update", an easy to use utility for installing app updates and security patches. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
+elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
 
-For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/trusty/">Ubuntu security notices</a>.
+For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/xenial/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 
