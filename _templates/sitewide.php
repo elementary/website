@@ -6,7 +6,7 @@ $respectIE = true;
 // Set the DNT variables.
 include __DIR__.'/../backend/here-miss.php';
 
-include __DIR__.'/../backend/function.branchname.php';
+include_once __DIR__.'/../backend/function.branchname.php';
 $sitewide['branch_root'] = branch_name();
 
 date_default_timezone_set('UTC');
