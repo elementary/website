@@ -59,7 +59,7 @@ if ( $processing ) {
 
     if ( $db->lastErrorCode() ) LastError($db);
 
-    $Systems = array('total', 'android', 'ios', 'windows', 'os x', 'linux', 'other');
+    $Systems = array('total', 'android', 'ios', 'windows', 'macos', 'linux', 'other');
     $query = 'DELETE FROM `AveragePayments` WHERE `OS` NOT IN (\''.implode('\', \'', $Systems).'\')';
     $db->exec($query); // Result-less
 

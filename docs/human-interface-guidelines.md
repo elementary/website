@@ -303,7 +303,7 @@ By integration with Pantheon's dock, apps are able to communicate their status t
 
 ### Progressbars {#progressbars}
 
-A progressbar must be unambiguous in it's use, referring to a single specific task. For example, a progressbar can be used to indicate the status of a file transfer or of a lengthy process like encoding. A progressbar should not be used to compound the progress of multiple types of actions.
+A progressbar must be unambiguous in its use, referring to a single specific task. For example, a progressbar can be used to indicate the status of a file transfer or of a lengthy process like encoding. A progressbar should not be used to compound the progress of multiple types of actions.
 
 * **Good Example**: Installation progress in Software Center
 * **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise
@@ -357,7 +357,7 @@ When dealing with window titles, consider that their main use is in distinguishi
 ## Dialogs {#dialogs}
 <div class="dialog">
     <div class="guide horizontal">24</div>
-    <img alt="Dialog warning icon" src="images/icons/48/dialog-warning.svg">
+    <img alt="Dialog warning icon" src="images/icons/status/48/dialog-warning.svg">
     <div class="content-area">
         <p class="primary">Primary text providing basic information and a suggestion</p>
         <p>Secondary text providing further details. Also includes information that explains any unobvious consequences of actions.</p>

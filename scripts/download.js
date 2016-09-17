@@ -63,7 +63,6 @@ $(function () {
         // Catch case where no buttons are available because the user has already paid.
         if ($('#amounts').children().length <= 1) {
             $('#download').text(translateDownload)
-            document.title = translateDownload
         // Catch case where a button is checked or the custom input is above the minimum.
         } else if (
             $('button.payment-button').hasClass('checked') ||
@@ -71,15 +70,13 @@ $(function () {
             $('#amount-custom').val() === ''
         ) {
             $('#download').text(translatePurchase)
-            document.title = translatePurchase
         } else {
             $('#download').text(translateDownload)
-            document.title = translateDownload
         }
     }
     $('#amounts').on('click', updateDownloadButton)
     $('#amounts input').on('input', updateDownloadButton)
-    updateDownloadButton()
+    $(document).on('ready', updateDownloadButton)
 
     // ACTION: #download.click: Either initiate a payment or open the download modal.
     $('#download').click(function () {
@@ -163,7 +160,7 @@ $(function () {
             return 'Windows'
         }
         if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-            return 'OS X'
+            return 'macOS'
         }
         if (ua.indexOf('Linux') >= 0) {
             return 'Linux'
@@ -194,7 +191,8 @@ $(function () {
         console.log('Open the download overlay!')
         $openModal.leanModal({
             // Add this class to download buttons to make them close it.
-            closeButton: '.close-modal'
+            closeButton: '.close-modal',
+            disableCloseOnOverlayClick: true
         })
         // This is what actually opens the modal overlay.
         $openModal.click()
