@@ -13,7 +13,7 @@ date_default_timezone_set('UTC');
 
 $sitewide['title'] = 'elementary';
 $sitewide['author'] = 'elementary LLC';
-$sitewide['description'] = 'A fast and open replacement for Windows and OS X. Pay what you want or download for free.';
+$sitewide['description'] = 'A fast and open replacement for Windows and macOS. Pay what you want or download for free.';
 $sitewide['image'] = 'https://elementary.io/images/preview.png';
 $sitewide['theme-color'] = '#3892E0';
 
