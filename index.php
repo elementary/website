@@ -2,7 +2,7 @@
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4,web-streams-polyfill@1.1.0,streamsaver.js@1'
+        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4,streamsaver.js@1,web-streams-polyfill@1.1.0'
     );
 
     $page['scripts'] = array(

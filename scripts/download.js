@@ -172,7 +172,6 @@ $(function () {
     // ACTION: .download-http.click: Track download over HTTP
     if (window.ga) {
         $('.download-link').click(function () {
-            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
         })
@@ -180,7 +179,7 @@ $(function () {
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'HTTP')
         })
         $('.download-link.magnet').click(function () {
-            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'Magnet')
         })
     }
 
@@ -205,10 +204,11 @@ $(function () {
     var isHttps = window.location.protocol === 'https:'
     var useStreamSaver = streamSaver.supported && isHttps
     var useWebTorrent = WebTorrent.WEBRTC_SUPPORT && (useStreamSaver || isFirefox)
+    var runningWebTorrent = false
 
     // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
     function doWebtorrentDownload () {
-        if (useWebTorrent) {
+        if (useWebTorrent && !runningWebTorrent) {
             $('#download-webtorrent').show()
             $('#download-direct').hide()
             // Initialize WebTorrent
@@ -217,8 +217,7 @@ $(function () {
                 console.error('WTERROR: ' + err.message)
             })
             // Add Torrent
-            console.log('Starting Download')
-            console.log('https:' + downloadLink + releaseFilename + '.torrent')
+            console.log('Starting Download from https:' + downloadLink + releaseFilename + '.torrent')
             // TODO Wrap in a try
             client.add(
                 // OPTION: Torrent file name to get instant metadata.
@@ -249,10 +248,9 @@ $(function () {
         console.log('Download started.')
         torrent.addWebSeed('https:' + downloadLink + releaseFilename)
         if (window.ga) {
-            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Architecture)', 'Homepage', '64-bit')
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
-            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'magnet')
+            ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'Webtorrent')
         }
         // Print out progress every second
         var c = 0
