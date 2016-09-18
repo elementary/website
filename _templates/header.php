@@ -85,32 +85,10 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <script async src="https:<?php echo $sitewide['branch_root'] ?>backend/hsts.php"></script>
-        <?php if ( $trackme ) { ?>
-        <script async src="https://www.google-analytics.com/analytics.js"></script>
-        <script>
-            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-            ga('create', 'UA-19280770-1', 'auto')
-            ga('set', 'forceSSL', true)
-            ga('set', 'anonymizeIp', true)
-            ga('require', 'displayfeatures')
-            ga('send', 'pageview')
-            ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
-        </script>
-        <?php } ?>
 
-        <script>
-            <?php include __DIR__.'/../scripts/jql.min.js'; ?>
-            jQl.loadjQ('https://cdn.jsdelivr.net/g/jquery@3')
-            <?php foreach ($page['script-plugins'] as $script) { ?>
-            jQl.loadjQdep("<?php echo $script ?>")
-            <?php } ?>
-            jQl.boot()
-        </script>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/main.js" async></script>
 
-        <script src="scripts/popover.js" async></script>
-        <script src="scripts/smooth-scrolling.js" async></script>
-        <script src="scripts/twitter-links.js" async></script>
-        <script src="scripts/external-links.js" async></script>
         <?php
             // loads all async javascript tags here
             foreach ($page['scripts'] as $one => $two) {
@@ -118,7 +96,6 @@ $l10n->begin_html_translation();
                 $atr = (is_array($two)) ? $two : array();
 
                 if (!isset($atr['async'])) $atr['async'] = true;
-                if (!$atr['async']) continue;
 
                 $atr_string = "";
                 foreach ($atr as $name => $setting) {
@@ -131,7 +108,6 @@ $l10n->begin_html_translation();
         ?>
         <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
         <?php } ?>
-
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav>

@@ -1,9 +1,12 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['title'] = 'Support &sdot; elementary';
+
     $page['styles'] = array(
         'styles/support.css'
     );
+
     include $template['header'];
     include $template['alert'];
 ?>

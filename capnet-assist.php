@@ -1,10 +1,13 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['name'] = 'capnet-assist';
     $page['title'] = 'You\'re connected! &sdot; elementary';
+
     $page['styles'] = array(
         'styles/capnet-assist.css'
     );
+
     include $template['header'];
     include $template['alert'];
 ?>

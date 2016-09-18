@@ -1,6 +1,8 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['title'] = 'Privacy Policy &sdot; elementary';
+
     include $template['header'];
     include $template['alert'];
 ?>

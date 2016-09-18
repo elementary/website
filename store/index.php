@@ -59,8 +59,6 @@
     }
 ?>
 
-<script>ga('send', 'event', 'Store', 'Store Visit')</script>
-
 <?php foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">

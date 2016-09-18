@@ -1,14 +1,15 @@
 <?php
-    include '_templates/sitewide.php';
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['name'] = '404';
     $page['title'] = 'Page Not Found &sdot; elementary';
+
     include $template['header'];
     include $template['alert'];
 ?>
 
-<script>
-    ga('send', 'event', '404: Page Not Found', window.location.host)
-</script>
+<script>window.statusCode = '404: Page Not Found'</script>
+<script src="scripts/error.js" async></script>
 
 <div class="row">
     <div class="column alert">
