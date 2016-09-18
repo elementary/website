@@ -1,18 +1,19 @@
 <?php
+    include __DIR__.'/_templates/sitewide.php';
     include __DIR__.'/backend/config.loader.php';
-    include '_templates/sitewide.php';
+
     $page['title'] = 'Get Involved with elementary OS';
     $page['theme-color'] = '#3E4E54';
-    $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/chart.js@2.2.1'
-    );
+
     $page['styles'] = array(
         'https://fonts.googleapis.com/css?family=Marck+Script',
         'styles/get-involved.css'
     );
+
     $page['scripts'] = array(
         'scripts/get-involved.js'
     );
+
     include $template['header'];
     include $template['alert'];
 ?>

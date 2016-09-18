@@ -1,26 +1,12 @@
 <?php
+    include __DIR__.'/_templates/sitewide.php';
+
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 
-    $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4,streamsaver.js@1,web-streams-polyfill@1.1.0'
-    );
-
     $page['scripts'] = array(
-        'https://checkout.stripe.com/checkout.js' => array(
-            'data-alipay' => 'auto',
-            'data-locale' => 'auto'
-        ),
         'scripts/slingshot.js',
         'scripts/download.js',
-        'scripts/showcase.js' => array(
-            'async' => false
-        ),
-        'scripts/terminal.js' => array(
-            'async' => false
-        ),
-        'scripts/showcase.run.js' => array(
-            'async' => false
-        )
+        'scripts/showcase.run.js'
     );
 
     $page['styles'] = array(
@@ -28,20 +14,12 @@
         'styles/pantheon.css'
     );
 
-    include __DIR__.'/_templates/sitewide.php';
-
     include $template['header'];
     include $template['alert'];
 
     require_once __DIR__.'/backend/config.loader.php';
     require_once __DIR__.'/backend/classify.current.php';
 ?>
-        <script>var stripeKey = '<?php include __DIR__.'/backend/payment.php'; ?>'</script>
-        <script>var releaseTitle = '<?php echo $config['release_title']; ?>'</script>
-        <script>var releaseVersion = '<?php echo $config['release_version']; ?>'</script>
-        <script>var releaseFilename = '<?php echo $config['release_filename']; ?>';</script>
-        <script>var downloadLink = '<?php echo $download_link; ?>'</script>
-        <script>var downloadRegion = '<?php echo $region; ?>'</script>
 
         <section class="grid">
             <div class="whole">

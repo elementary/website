@@ -8,20 +8,10 @@ echo "####################"
 echo "Starting CSS linting"
 echo "####################"
 
-./node_modules/.bin/postcss --config .postcss.json
+./node_modules/.bin/stylelint --config .stylelintrc.json "_styles/**/*.css"
 
-if ! git diff --quiet _styles/; then
-    git --no-pager diff _styles/
+echo "#####################"
+echo "CSS linting complete!"
+echo "#####################"
 
-    echo "##############################################################"
-    echo "CSS linting detected an error. Please use csscomb and resubmit"
-    echo "##############################################################"
-
-    exit 1;
-else
-    echo "#####################"
-    echo "CSS linting complete!"
-    echo "#####################"
-
-    exit 0;
-fi
+exit 0;

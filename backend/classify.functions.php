@@ -38,7 +38,10 @@ function ipCheck($hostname, $debug = false) {
         $longitude  = $record->location->longitude;
 
     } catch (\Exception $e) {
-        echo '<!-- '.$e->getMessage().' -->'."\n";
+        if ( $debug ) {
+            echo '<!-- '.$e->getMessage().' -->'."\n";        
+        }
+
         $continent = false;
         $country   = false;
         $longitude  = false;

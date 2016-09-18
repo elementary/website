@@ -26,8 +26,6 @@
     if (count($cart) > 0) {
 ?>
 
-<script>ga('send', 'event', 'Store', 'Cart Visit')</script>
-
 <form action="<?php echo $sitewide['root'] ?>store/checkout" method="post" class="grid grid--narrow">
     <div class="whole">
         <h1>Cart</h1>

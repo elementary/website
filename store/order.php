@@ -238,7 +238,7 @@
 
     ?>
 
-        <script>ga('send', 'event', 'Store', 'Order Completion')</script>
+        <script src="scripts/store/order.js" async></script>
 
         <div class="grid text-center">
             <h3>It's on its way!</h3>
