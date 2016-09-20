@@ -218,11 +218,13 @@ export default class Terminal {
 
             var key = e.which
 
+            // TODO: we need to detect if active better before
+            // preventing critical key defaults
             if (key === 8 || key === 32) {
-                e.preventDefault()
+                // e.preventDefault()
                 this.keyper(key)
             } else if (key === 13) {
-                e.preventDefault()
+                // e.preventDefault()
                 this.process()
             }
         })
