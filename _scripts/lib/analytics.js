@@ -13,7 +13,7 @@ import config from '~/config'
 export default config.then((config) => {
     return new Promise((resolve, reject) => {
         if (!config.user.trackme) {
-            console.log('Google analitics not loaded due to trackme config')
+            console.log('Google analytics not loaded due to trackme config')
 
             return resolve((...args) => {
                 console.log('Google analytics disabled. Logging to console instead')
@@ -22,7 +22,7 @@ export default config.then((config) => {
         }
 
         Script('https://www.google-analytics.com/analytics.js', () => {
-            console.log('Google analitics loaded')
+            console.log('Google analytics loaded')
 
             window.ga('create', 'UA-19280770-1', 'auto')
             window.ga('set', 'forceSSL', true)
