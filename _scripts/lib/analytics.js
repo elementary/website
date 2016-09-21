@@ -32,10 +32,12 @@ export default config.then((config) => {
         }
         window['ga'].l = 1 * new Date()
 
-        window.ga('create', 'UA-19280770-1', 'auto')
-        window.ga('set', 'forceSSL', true)
-        window.ga('set', 'anonymizeIp', true)
-        window.ga('require', 'displayfeatures')
+        if (window.ga) {
+            window.ga('create', 'UA-19280770-1', 'auto')
+            window.ga('set', 'forceSSL', true)
+            window.ga('set', 'anonymizeIp', true)
+            window.ga('require', 'displayfeatures')
+        }
 
         return resolve(window.ga)
     })
