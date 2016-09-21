@@ -25,17 +25,27 @@ export default config.then((config) => {
             console.log('Google analytics loaded')
         })
 
-        window['GoogleAnalyticsObject'] = 'ga'
-        window['ga'] = window['ga'] || function (...args) {
-            window['ga'].q = window['ga'].q || []
-            window['ga'].q.push(args)
-        }
-        window['ga'].l = 1 * new Date()
+        try {
+            window['GoogleAnalyticsObject'] = 'ga'
+            window['ga'] = window['ga'] || function (...args) {
+                window['ga'].q = window['ga'].q || []
+                window['ga'].q.push(args)
+            }
+            window['ga'].l = 1 * new Date()
 
-        window.ga('create', 'UA-19280770-1', 'auto')
-        window.ga('set', 'forceSSL', true)
-        window.ga('set', 'anonymizeIp', true)
-        window.ga('require', 'displayfeatures')
+            window.ga('create', 'UA-19280770-1', 'auto')
+            window.ga('set', 'forceSSL', true)
+            window.ga('set', 'anonymizeIp', true)
+            window.ga('require', 'displayfeatures')
+        } catch (err) {
+            console.error('Unable to setup Google analytics. Probably getting blocked.')
+            console.error(err)
+
+            return resolve((...args) => {
+                console.log('Google analytics errored during setup. Logging to console instead')
+                console.log(args)
+            })
+        }
 
         return resolve(window.ga)
     })
