@@ -31,7 +31,7 @@ These can be most easily installed with this script:
 
 ```
 sudo apt install php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml composer &&
-sudo apt install nodejs npm &&
+sudo apt install nodejs-legacy npm &&
 npm install
 ```
 
