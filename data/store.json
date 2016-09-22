@@ -191,5 +191,27 @@
                 "url": "https:\/\/elementary.io\/images\/store\/designs\/logotype_white.psd"
             }
         ]
+    },
+    {
+        "id": 1320,
+        "name": "Coffee Mug",
+        "description": "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.",
+        "image": "images\/store\/apparel\/track_logotype_womens.png",
+        "type": "Accessories",
+        "variants": [
+            {
+                "id": 5897,
+                "name": "11oz Coffee Mug",
+                "size": "11oz",
+                "color": "Black",
+                "cost": 8.95,
+                "price": 18.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_11oz.psd"
+            }
+        ]
     }
 ]
