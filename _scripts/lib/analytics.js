@@ -23,6 +23,15 @@ export default config.then((config) => {
 
         Script('https://www.google-analytics.com/analytics.js', () => {
             console.log('Google analytics loaded')
+
+            // Add the error listener only after the one true analytics is loaded
+            // There is no need to track errors if we are not sending them back
+            window.onerror = (msg) => {
+                if (msg === 'Script error.') return // cross domain sadness
+
+                console.error('Javascript Error', msg)
+                window.ga('send', 'event', 'Javascript Error', msg)
+            }
         })
 
         try {
