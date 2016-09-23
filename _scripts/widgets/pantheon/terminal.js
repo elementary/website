@@ -89,7 +89,7 @@ commands[/^rm -rf .\/website$/] = function (cmd, term) {
 }
 
 commands[/^git clone https:\/\/github.com\/elementary\/website.git$/] = function (cmd, term) {
-    return term.append(`Cloning into '/home/${term.user}/mvp'...`, 300)
+    return term.append(`Cloning into '/home/${term.user}/website'...`, 300)
     .then(() => term.append('remote: Counting objects: 20257, done.', 100))
     .then(() => {
         return term.append('remote: Compressing objects: 0% (0/29)')
