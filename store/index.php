@@ -83,7 +83,7 @@
 
 <?php } ?>
 
-<?php foreach ($products as $product) { ?>
+<?php foreach (\Store\Product\get_products() as $product) { ?>
 
     <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"  data-product-name="<?php echo $product['name']; ?>">
         <i class="fa fa-close close-modal"></i>
@@ -136,7 +136,7 @@
 
 <?php } ?>
 
-<script>window.products = <?php echo json_encode($products) ?></script>
+<script>window.products = <?php echo json_encode(\Store\Product\get_products()) ?></script>
 
 <?php
     include $template['footer'];

@@ -58,7 +58,7 @@ Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're go
 4. Verify that the text in "Results" matches the following hash:
 
 ```bash nohighlight
-8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
+8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -97,20 +97,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160909.iso
+shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160921.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
+8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4-stable-amd64.20160909.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4-stable-amd64.20160921.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -148,7 +148,7 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4-stable-amd64.20160909.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4-stable-amd64.20160921.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
@@ -163,13 +163,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.4-stable-amd64.20160909.iso
+sha256sum elementaryos-0.4-stable-amd64.20160921.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-8195c2515f5f8cad147a3418a2be9481ce7e5c7d404c057c7ff5663dc11f6455
+8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
