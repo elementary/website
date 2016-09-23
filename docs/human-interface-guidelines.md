@@ -437,7 +437,7 @@ Before we get into all the widgets available in elementary OS, we need to cover 
 
 A very common mistake for developers to make is creating controls that seemingly do nothing. Keep in mind that we want to present an environment where users feel comfortable exploring. A curious user will interact with a control expecting there to be some immediate reaction. When a control seemingly does nothing, this creates confusion and can be scary (Think,  "uh-oh I don't know what happened!"). In some cases, controls that do nothing are simply clutter and add unnecessary complexity to your UI.
 
-Consider the "clear" button present in search fields. This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing. 
+Consider the "clear" button present in [search fields](#search-fields). This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing. 
 
 ### Sensitivity {#sensitivity}
 
@@ -592,7 +592,13 @@ When adding items to your AppMenu, consider the following:
 
 ## Search Fields {#search-fields}
 
-Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar (to the left of the AppMenu). This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
+Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
+
+### Distinguish Between Search and Find
+
+Search is for filtering the contents of a library, i.e. Music or Videos, to the matching items. Search is typically initiated when typing anywhere in a library view.
+
+Find is for highlighting matching instances of a string, i.e. in a text editor, web page, or Terminal. It is triggered by a keyboard shortcut (Ctrl+F) or with a search icon. The find bar appears in a revealer below the headerbar with relevant actions such as find next, find previous, highlight all, etc. The revealer may also contain other relevant actions such as replace or go to line.
 
 ![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
