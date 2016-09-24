@@ -12,6 +12,9 @@ import '~/twitter-links'
 
 // Send some analytic information on every page load
 analytics.then((ga) => {
-    ga('send', 'pageview')
-    ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
+    if (window.ga) {
+        ga('send', 'pageview')
+        ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
+        ga('send', 'event', 'Protocol', 'Pageload', document.location.protocol)
+    }
 })
