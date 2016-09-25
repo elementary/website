@@ -4,6 +4,7 @@
     },
     "require": {
         "stripe/stripe-php": "3.17.0",
-        "mandrill/mandrill": "^1.0"
+        "mandrill/mandrill": "^1.0",
+        "sentry/sentry": "^1.4"
     }
 }
