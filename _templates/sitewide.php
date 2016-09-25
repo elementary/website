@@ -1,5 +1,14 @@
 <?php
 
+require_once __DIR__.'/../backend/lib/autoload.php';
+require_once __DIR__.'/../backend/config.loader.php';
+
+// Setup sentry error logging
+if (isset($config['sentry_key']) && $config['sentry_key'] !== false) {
+    $sentry = new Raven_Client($config['sentry_key']);
+    $sentry->install();
+}
+
 // Honor the IE do-not-track-header,
 // even though it's set automatically.
 $respectIE = true;
