@@ -16,6 +16,8 @@ $output = array(
     ),
 
     'keys' => array(
+        'sentry' => $config['sentry_pub'],
+
         'stripe' => $config['stripe_pk']
     ),
 
