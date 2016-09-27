@@ -86,6 +86,28 @@ $l10n->begin_html_translation();
 
         <script async src="https:<?php echo $sitewide['branch_root'] ?>backend/hsts.php"></script>
 
+        <?php if ($trackme === true && $config['sentry_pub']) {
+            # Curiously enough, the only thing that went through the mind of the developer
+            # as he wrote inline javascript was "Oh no, not again." Many people have speculated
+            # that if we knew exactly why the developer had thought that, we would know a
+            # lot more about the nature of the code than we do now. ~ Douglas Adams
+        ?>
+        <script src="https://cdn.jsdelivr.net/g/raven@3.7.0"></script>
+        <script>
+            console.log('Sentry loaded')
+
+            window.Raven.setRelease('<?php echo $config['release_version'] ?>')
+            window.Raven.config('<?php echo $config['sentry_pub'] ?>').install()
+
+            window.onunhandledrejection = function (e) {
+                console.error('Unhandled promise rejection')
+                console.error(e.reason)
+
+                window.Raven.captureException(e.reason)
+            }
+        </script>
+        <?php } ?>
+
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
 

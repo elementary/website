@@ -26,6 +26,7 @@ $config = array(
     'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
     'sentry_key' => false,
+    'sentry_pub' => false,
 
     'twitter_consumer_key'    => 'test_ckey',
     'twitter_consumer_secret' => 'test_csecret',
