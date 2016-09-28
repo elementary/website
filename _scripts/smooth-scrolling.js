@@ -9,19 +9,16 @@ jQuery.then(($) => {
     $(function () {
         $(document).on('click', 'a', function (event) {
             // Event already handled?
-            if (event.isDefaultPrevented()) {
-                return
-            }
+            if (event.isDefaultPrevented()) return
 
             // Get link href
             var $anchor = $(this)
             var href = $anchor.attr('href')
-            if (href.indexOf('#') === -1) {
-                return
-            }
+            if (href.indexOf('#') === -1) return
 
             // This handles /path/current-page#element
             href = href.split('#').pop()
+            if (href[0] === '!') return
 
             // Get offset
             var scrollTop
