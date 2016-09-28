@@ -14,7 +14,7 @@ jQuery.then(($) => {
             // Get link href
             var $anchor = $(this)
             var href = $anchor.attr('href')
-            if (href.indexOf('#') === -1) return
+            if (href == null || href === false || href.indexOf('#') === -1) return
 
             // This handles /path/current-page#element
             href = href.split('#').pop()
