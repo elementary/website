@@ -1,8 +1,8 @@
 /**
  * _scripts/lib/analytics.js
- * Loads Google analitics from cdn address
+ * Loads Google analytics from cdn address
  *
- * @exports {Promise} default - a promise of the Google analitics library
+ * @exports {Promise} default - a promise of the Google analytics library
  */
 
 import Promise from 'core-js/fn/promise'
