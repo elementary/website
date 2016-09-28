@@ -22,16 +22,19 @@ jQuery.then(($) => {
 
             // This handles /path/current-page#element
             href = href.split('#').pop()
+            if (href[0] === '!') {
+                return
+            }
 
             // Get offset
             var scrollTop
             if (href === '') {
                 scrollTop = 0
             } else {
-                if (!$('#' + href).length) { // Anchor target not in this page
+                var $target = $('#' + href)
+                if (!$target.length) { // Anchor target not in this page
                     return
                 }
-                var $target = $('#' + href)
 
                 scrollTop = $target.offset().top
             }
