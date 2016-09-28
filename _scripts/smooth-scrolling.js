@@ -13,8 +13,13 @@ jQuery.then(($) => {
                 return
             }
 
-            // Get link href
+            // If no href set
             var $anchor = $(this)
+            if (!$anchor.attr('href')) {
+                return
+            }
+
+            // Get link href
             var href = $anchor.attr('href')
             if (href.indexOf('#') === -1) {
                 return
