@@ -22,7 +22,6 @@ jQuery.then(($) => {
 
             // This handles /path/current-page#element
             href = href.split('#').pop()
-            console.log(href[0])
             if (href[0] === '!') {
                 return
             }
