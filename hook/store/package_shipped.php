@@ -54,11 +54,11 @@ try {
 
         // add full url to any absolute image paths
         if (isset($product['image']) && strpos($product['image'][0], 'http') === false) {
-            $product['image'] = 'https:' . $sitewide['branch_root'] . $product['image'];
+            $product['image'] = 'https://elementary.io/' . $product['image'];
         }
 
         if (isset($variant['image']) && strpos($variant['image'][0], 'http') === false) {
-            $variant['image'] = 'https:' . $sitewide['branch_root'] . $variant['image'];
+            $variant['image'] = 'https://elementary.io/' . $variant['image'];
         }
 
         $cart[] = array(
