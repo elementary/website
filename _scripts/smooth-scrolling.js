@@ -28,10 +28,10 @@ jQuery.then(($) => {
             if (href === '') {
                 scrollTop = 0
             } else {
-                var $target = $('#' + href)
-                if (!$target.length) { // Anchor target not in this page
+                if (!$('#' + href).length) { // Anchor target not in this page
                     return
                 }
+                var $target = $('#' + href)
 
                 scrollTop = $target.offset().top
             }
