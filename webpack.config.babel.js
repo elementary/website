@@ -52,7 +52,9 @@ glob.sync(stylePattern).forEach((p) => {
 })
 
 glob.sync(scriptPattern).forEach((p) => {
-    const name = p.replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
+    const name = p
+    .replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
+    .replace('.js', '')
     scriptFiles[name] = p
 })
 
@@ -77,12 +79,13 @@ export const styles = {
 }
 
 export const scripts = {
-    devtool: 'eval',
+    devtool: 'source-map',
     entry: scriptFiles,
     output: {
-        filename: '[name]',
+        filename: '[name].js',
         path: './scripts',
-        publicPath: '/scripts'
+        publicPath: '/scripts',
+        sourceMapFilename: '[name].map.js'
     },
     exclude: [
         path.resolve(__dirname, 'node_modules')
@@ -102,7 +105,7 @@ export const scripts = {
     postcss: styles.postcss,
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'common.js',
+            name: 'common',
             minChunks: 4
         }),
         new webpack.optimize.DedupePlugin(),

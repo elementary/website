@@ -64,7 +64,7 @@
                     ?>
                 </div>
                 <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.31 GB (for PC or Mac)</p>
+                <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
             </div>
         </section>
         <section class="grid">
