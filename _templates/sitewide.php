@@ -29,8 +29,11 @@ $sitewide['theme-color'] = '#3892E0';
 // Autodetect website root path
 $serverRoot = $_SERVER['DOCUMENT_ROOT'];
 $websiteRoot = dirname(__DIR__);
-$requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
+if (!empty($_SERVER['REQUEST_URI'])) {
+    $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+} else {
+    $requestUri = '';
+}
 $sitewide['root'] = '';
 $sitewide['path'] = $requestUri;
 if ($serverRoot == $websiteRoot) {
