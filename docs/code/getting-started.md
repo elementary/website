@@ -304,7 +304,7 @@ The AUTHORS file is pretty straightforward. This file contains your name and ema
 
 ### Copying {#copyright}
 
-The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
+The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Mark Your Progress {#mark-your-progress}
 
