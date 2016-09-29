@@ -28,7 +28,7 @@
                     <?php
                         // Embed the SVG to fix scaling in WebKit 1.x,
                         // while preserving CSS options for the image.
-                        include('images/logotype-os.svg');
+                        include __DIR__.'/images/logotype-os.svg';
                     ?>
 
                 </div>
