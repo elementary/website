@@ -165,6 +165,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // UTILITY: detectOS: Detect the OS
         function detectOS () {
             var ua = window.navigator.userAgent
+            if (ua == null || ua == false) return 'Other'
             if (ua.indexOf('Android') >= 0) {
                 return 'Android'
             }
