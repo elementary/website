@@ -4,7 +4,7 @@
   "description": "The elementary.io Website http://elementary.io",
   "main": "webpack.config.babel.js",
   "dependencies": {
-    "babel": "^6.5.2",
+    "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "core-js": "^2.4.1",
