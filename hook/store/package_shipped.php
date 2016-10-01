@@ -44,21 +44,21 @@ try {
 
     $cart = [];
     foreach ($res['data']['order']['items'] as $item) {
-        $key = array_search($item['id'], array_column($products, 'id'));
-        if ($key === null) continue;
+        $key = array_search($item['product']['product_id'], array_column($products, 'id'));
+        if ($key === null || $key === false) continue;
         $product = $products[$key];
 
-        $key = array_search($item['variant_id'], array_column($product['variants'], 'id'));
-        if ($key === null) continue;
+        $key = array_search($item['product']['variant_id'], array_column($product['variants'], 'id'));
+        if ($key === null || $key === false) continue;
         $variant = $product['variants'][$key];
 
         // add full url to any absolute image paths
         if (isset($product['image']) && strpos($product['image'][0], 'http') === false) {
-            $product['image'] = 'https:' . $sitewide['branch_root'] . $product['image'];
+            $product['image'] = 'https://elementary.io/' . $product['image'];
         }
 
         if (isset($variant['image']) && strpos($variant['image'][0], 'http') === false) {
-            $variant['image'] = 'https:' . $sitewide['branch_root'] . $variant['image'];
+            $variant['image'] = 'https://elementary.io/' . $variant['image'];
         }
 
         $cart[] = array(

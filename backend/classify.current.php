@@ -8,8 +8,10 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
 } else if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
-} else {
+} else if (!empty($_SERVER['REMOTE_ADDR'])) {
     $ip = $_SERVER['REMOTE_ADDR'];
+} else {
+    $ip = false;
 }
 
 $region = ipCheck($ip);

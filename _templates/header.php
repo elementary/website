@@ -84,7 +84,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
         <?php } ?>
 
-        <script async src="https:<?php echo $sitewide['branch_root'] ?>backend/hsts.php"></script>
+        <script async src="https://elementary.io<?php echo $sitewide['root']; ?>backend/hsts.php"></script>
 
         <?php if ($trackme === true && $config['sentry_pub']) {
             # Curiously enough, the only thing that went through the mind of the developer
@@ -92,7 +92,7 @@ $l10n->begin_html_translation();
             # that if we knew exactly why the developer had thought that, we would know a
             # lot more about the nature of the code than we do now. ~ Douglas Adams
         ?>
-        <script src="https://cdn.jsdelivr.net/g/raven@3.7.0"></script>
+        <script src="https://cdn.jsdelivr.net/raven/3.7.0/raven.min.js"></script>
         <script>
             console.log('Sentry loaded')
 
