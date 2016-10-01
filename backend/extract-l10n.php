@@ -99,7 +99,9 @@ if ($isMarkdown) {
 	// Include target file
 	include $target;
 
-	ob_end_flush();
+	if (ob_get_level()) {
+        ob_end_flush();
+    }
 
 	// Add page title to translations
 	if (!empty($page['title'])) {
