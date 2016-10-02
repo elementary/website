@@ -84,8 +84,6 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
         <?php } ?>
 
-        <script async src="https://elementary.io<?php echo $sitewide['root']; ?>backend/hsts.php"></script>
-
         <?php if ($trackme === true && $config['sentry_pub']) {
             # Curiously enough, the only thing that went through the mind of the developer
             # as he wrote inline javascript was "Oh no, not again." Many people have speculated
