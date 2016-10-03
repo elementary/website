@@ -33,7 +33,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // Capture all .target-amount focuses
         $('.target-amount').on('click focusin', amountSelect)
 
-        // ACTION: amountValidate: Check the vality of custom amount inputs.
+        // ACTION: amountValidate: Check the validity of custom amount inputs.
         var amountValidate = function (event) {
             var currentVal = $('#amount-custom').val()
             var code = event.which || event.keyCode || event.charCode
@@ -51,7 +51,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
         $('#amount-custom').keypress(amountValidate)
 
-        // ACTION: amountBlur: Check the vality of custom amount inputs.
+        // ACTION: amountBlur: Check the validity of custom amount inputs.
         var amountBlur = function () {
             // If NOT valid OR empty.
             var i = document.getElementById('amount-custom')
