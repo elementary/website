@@ -33,7 +33,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // Capture all .target-amount focuses
         $('.target-amount').on('click focusin', amountSelect)
 
-        // ACTION: amountValidate: Check the vality of custom amount inputs.
+        // ACTION: amountValidate: Check the validity of custom amount inputs.
         var amountValidate = function (event) {
             var currentVal = $('#amount-custom').val()
             var code = event.which || event.keyCode || event.charCode
@@ -51,7 +51,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
         $('#amount-custom').keypress(amountValidate)
 
-        // ACTION: amountBlur: Check the vality of custom amount inputs.
+        // ACTION: amountBlur: Check the validity of custom amount inputs.
         var amountBlur = function () {
             // If NOT valid OR empty.
             var i = document.getElementById('amount-custom')
@@ -100,7 +100,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             console.log('Starting payment for ' + paymentAmount)
             // Free download
             if (paymentAmount < paymentMinimum) {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Free)', 'Homepage', paymentAmount)
+                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
@@ -146,7 +146,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         function doStripePayment (amount, token) {
             var paymentHTTP, $amountTen
             $amountTen = $('#amount-ten')
-            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Actual)', 'Homepage', amount)
+            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
                 $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)
@@ -188,7 +188,6 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // ACTION: .download-http.click: Track download over HTTP
         if (window.ga) {
             $('.download-link').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Architecture)', 'Homepage', '64-bit')
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
             })
@@ -196,7 +195,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
             })
             $('.download-link.magnet').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'magnet')
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
             })
         }
 
