@@ -90,7 +90,7 @@ Most users don't want to read through help docs before they can use your app. In
 
 ### Use Understandable Copy {#use-understandable-copy}
 
-Avoid technical jargon and assume little-to-no technical knowledge. Thus, your app becomes "self-documenting."
+Avoid technical jargon and assume little-to-no technical knowledge. This lets your app be "self-documenting."
 
 Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented. 
 
@@ -282,7 +282,7 @@ See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop
 
 ## Contractor {#contractor}
 
-Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services in lieu of hardcoded support. You simply add [Contractor](https://launchpad.net/contractor) support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:
+Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add [Contractor](https://launchpad.net/contractor) support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:
 
 * Register one of its functions as a service that can be used from other apps
 * Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages
@@ -323,7 +323,7 @@ Indicators are small icons that live in the menu bar (wingpanel). They give user
 
 ### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
-The indicator area is notorious for clutter and inconsistent behavior. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that not every application needs an indicator. Only a very small set of apps will benefit from one. You do not need an indicator if:
+The indicator area is prone to clutter and inconsistent paradigms. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. Avoid adding an indicator if:
 
 * **The indicator will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
 
@@ -340,8 +340,8 @@ See also: [Farewell to the Notification Area](http://design.canonical.com/2010/0
 
 Windows form the foundation of your app. They provide a canvas with basic, built-in actions such as "closing" and "resizing". Although users may see windows as being all the same, elementary OS has several distinct window types. It's important to understand the types of windows available to you, window behavior in general, and behavior that is specific to a certain window type. This section will cover the different types of windows available in elementary OS. Although each type of window is a bit different, think of them all as a subclass of a window. Unless otherwise stated, they all behave as an average window.
 
-* **View Windows** are the most literal kind of "Window" available. They show content such as presentations, web pages, documents, etc. These Windows act as a sort of frame around their specific, displayed content. They typically afford the option of opening multiple instances of an application, and may use tabs to structure an overabundance of windows.
-* **App Windows** are the main windows of apps that are not document-based. These windows typically let applications show only a single instance.
+* **View Windows** are the most literal kind of "Window" available. They show content such as presentations, web pages, documents, etc., and act as a sort of frame around them. Accordingly, applications typically use multiple view windows to display different instances of content. A "tabbed" view can organize applications that produce many windows.
+* **App Windows** are the main windows of apps that are not document-based. Applications rarely use more than a single instance of these windows.
 * **Dialogs and Alerts** are temporary windows that require a response from a user. Dialogs and Alerts are especially unique types of windows with much stricter guidelines for their use and visual style. They typically belong to App or View windows and are often modal. We'll discuss what modality means in a bit.
 
 ### Window Titles {#window-tiles}
@@ -390,7 +390,7 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 
 ### "OK" is not Okay {#ok-is-not-okay}
 
-When presenting a dialog to a user, always use explicit action names like "Save" or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
+When presenting a dialog to a user, always use explicit action names like "Save..." or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
 
 ### Preference Dialogs {#preference-dialogs}
 
