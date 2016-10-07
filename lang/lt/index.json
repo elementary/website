@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Greita ir atvira Windows ir OS X pakaita",
+    "A fast and open replacement for Windows and macOS": "Greita ir atvira Windows ir macOS pakaita",
     "Pay What You Want": "Mokėkite tiek, kiek norite",
     "Custom": "Pasirinkti",
     "Enter any dollar amount.": "Įrašykite bet kokią sumą doleriais.",
     "Purchase elementary OS": "Įsigyti elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (PC arba Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (PC arba Mac)",
     "What the press is saying about elementary OS:": "Ką apie elementary OS rašo spauda:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS yra kitokia... graži ir galinga operacinė sistema, kuri puikiai veiks net ir senesniuose kompiuteriuose”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“greita, daug priežiūros nereikalaujanti platforma, kuri gali būti įdiegta, iš esmės, bet kur”",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Mes sukurti Linux pagrindu: tos pačios programinės įrangos, kurią naudoja JAV Gynybos Departamentas, Kinijos Bankas ir kiti.",
     "Security Notices": "Saugumo pastebėjimai",
     "Download elementary OS": "Atsisiųskite elementary OS",
+    "Download elementary OS icon": "Atsisiųsti elementary OS piktogramą",
     "Choose a Download": "Pasirinkite atsiuntimą",
-    "For help and more info, see the": "Pagalbai ir išsamesnei informacijai, žiūrėkite",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Atsisiųskite iš lokalizuoto serverio arba per magnet nuorodą. Išsamesnei informacijai, žiūrėkite",
     "installation guide": "diegimo vadovą",
     "Cancel": "Atsisakyti",
-    "Download Loki": "Download Loki",
+    "Download Loki": "Atsisiųsti Loki",
     "Torrent Magnet Link": "Torrent Magnet nuoroda",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Greita ir atvira Windows ir OS X pakaita ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Greita ir atvira Windows ir macOS pakaita ⋅ elementary OS"
 }

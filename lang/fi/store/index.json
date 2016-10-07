@@ -1,10 +1,11 @@
 {
-    "Store": "Kauppa",
     "Apparel": "Vaatetus",
     "Men's Cotton T-Shirt": "Miesten t-paita, puuvilla",
     "Women's Cotton T-Shirt": "Naisten t-paita, puuvilla",
-    "Men's Track Shirt": "Men's Track Shirt",
-    "Women's Track Shirt": "Women's Track Shirt",
+    "Men's Track Shirt": "Miesten Track-paita",
+    "Women's Track Shirt": "Naisten Track-paita",
+    "Accessories": "Apuohjelmat",
+    "Coffee Mug": "Kahvimuki",
     "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.",
     "Size Chart": "Kokotaulukko",
     "Size": "Koko",
@@ -15,5 +16,6 @@
     "2XL": "2XL",
     "Quantity": "Määrä",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.",
+    "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.": "elementaryn \"e\"-logo reilun kolmen desin, tiskikoneen ja mikroaaltouunin kestävässä kahvimuissa.",
     "Store &sdot; elementary": "Kauppa ⋅ elementary"
 }

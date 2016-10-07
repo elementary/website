@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Um substituto do Windows e do OSX, rápido e aberto.",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Paga Quanto Quiseres",
     "Custom": "Outro",
     "Enter any dollar amount.": "Introduz um valor em dólares.",
     "Purchase elementary OS": "Comprar o elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (para PC ou Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "O que se diz na imprensa sobre o elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS é diferente... um sistema operativo lindo e poderoso que correrá bem até em PCs antigos\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"uma plataforma rápida, de baixa manutenção que pode ser instalada, virtualmente, em qualquer lado\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Assente em Linux: A mesma plataforma que suporta o Departamento de Defesa dos EUA, o Banco da China e muito mais.",
     "Security Notices": "Notificação de segurança",
     "Download elementary OS": "Transferir elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Escolhe a Transferência",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "Guia de instalação",
     "Cancel": "Cancelar",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Link para Download via Torrent",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

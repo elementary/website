@@ -1,5 +1,5 @@
 {
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS",
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
     "Blog": "Блог",
     "Support": "Поддръжка",
     "Store": "Магазин",
@@ -9,9 +9,5 @@
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Вие виждате версия на нашият сайт, която е в процес на разработка. Някои страници може да не работят както очаквате. Ако сте тук по случайност, мосля отидете на <a href=\"http://elementary.io\">elementary.io</a>, нашият актуален уебсайт.",
     "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>",
     "Language": "Език",
-    "Change Site Language": "Промяна на езика на сайта",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Сайтът на elementary OS е създаден с модерни уеб технологии, които Вашият браузър не поддържа.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Тази версия на Internet Explorer не е актуална и може да съдържа бъгове или пробиви в сигурността. Моля, <a href=\"http://browsehappy.com/\">обновете</a> до IE 11 или друг съвременен браузър.",
-    "Dismiss": "Отхвърли",
-    "Learn More": "Научете повече"
+    "Change Site Language": "Промяна на езика на сайта"
 }

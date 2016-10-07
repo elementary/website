@@ -1,10 +1,11 @@
 {
-    "Store": "Магазин",
     "Apparel": "Одежда",
     "Men's Cotton T-Shirt": "Мужская футболка из хлопка",
     "Women's Cotton T-Shirt": "Женская футболка из хлопка",
     "Men's Track Shirt": "Мужская футболка",
     "Women's Track Shirt": "Женская футболка",
+    "Accessories": "Аксессуары",
+    "Coffee Mug": "Кофейная кружка",
     "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "Логотип elementary, напечатанный на комфортной синей футболке из хлопка от American Apparel.",
     "Size Chart": "Таблица размеров",
     "Size": "Размер",
@@ -15,5 +16,6 @@
     "2XL": "2XL",
     "Quantity": "Количество",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "Логотип elementary, напечатанный на легкой черной футболке из трехкомпонентной ткани от American Apparel.",
+    "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.": "Логотип elementary, нанесенный на кружку объемом в 325 мл методом сублимационной печати. Печать устойчива к воздействию окружающей среды, в том числе посудомоечных машин и микроволновых печей.",
     "Store &sdot; elementary": "Магазин ⋅ elementary"
 }

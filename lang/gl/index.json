@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Un substituto de Windows e OS X, rápido e de código aberto.",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Pay What You Want",
     "Custom": "Personalizado",
     "Enter any dollar amount.": "Escribe unha cantidade en dólares.",
     "Purchase elementary OS": "Mercar elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Que di a prensa sobre elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS é diferente… un sistema operativo fermoso e potente que funciona ben incluso nos PCs antigos.\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"Unha plataforma rápida e baixo mantemento que pode instalarse practicamente en calquera equipo.\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Baseado en Linux: o mesmo software que emprega o Departamento de Defensa dos USA, o Banco da China, e outras organizacións.",
     "Security Notices": "Avisos de seguridade",
     "Download elementary OS": "Descargar elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Escolle unha descarga",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "guía de instalación",
     "Cancel": "Cancelar",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Ligazón Magnet",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }
