@@ -1,5 +1,5 @@
 {
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "جایگزینی سریع و کاملا منبع‌ باز برای ویندوز و مک",
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
     "Blog": "وبلاگ",
     "Support": "پشتیبانی",
     "Store": "فروشگاه",
@@ -9,9 +9,5 @@
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "شما هم‌اکنون در حال مشاهدۀ نسخۀ درحال توسعۀ وب‌سایت ما می‌باشید، ممکن است بعضی از صفحات آن‌گونه شما انتظار دارید کار نکنند، اگر به مشکلی برخردید می‌توانید به وب‌سایت  <a href=\"http://elementary.io\">اصلی</a> بروید.",
     "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n<a href=\"/team\">تیم ما</a>\n<a href=\"/brand\">نشان ما</a>\n<a href=\"/privacy-policy\">یاست حریم خصوصی ما</a>",
     "Language": "زبان",
-    "Change Site Language": "تغییر زبان سایت",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "وب‌سایت elementary OS بر پایه‌ی فناوری‌های مدرن وب ساخته شده که مرورگر شما قادر به پشتیبانی از آن‌ها نیست.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "این نسخه از مرورگر اینترنت اکسپلورر بسیار قدیمی بوده و ممکن است دارای حغره‌ی امنیتی یا نفوذپذیری باشد. لطفا آن را <a href=\"http://browsehappy.com/\">به نسخه‌ی 11 بروزرسانی کرده</a> یا از مرورگر دیگری استفاده کنید.",
-    "Dismiss": "بستن",
-    "Learn More": "بیشتر بدانید"
+    "Change Site Language": "تغییر زبان سایت"
 }

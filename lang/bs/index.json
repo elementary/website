@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Brza i otvorena zamjena za Windows i OS X",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Pay What You Want",
     "Custom": "Drugi iznos",
     "Enter any dollar amount.": "Unesite bilo koju vrijednost u dolarima",
     "Purchase elementary OS": "Purchase elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Šta mediji govore o elementary OS-u:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS je drugačiji... lijep i moćan operativni sistem koji će dobro raditi čak i na starijim računarima\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"brza platforma koja može biti instalirana praktički svugdje bez puno potrebe za održavanjem\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Sagrađeni smo na Linux osnovi: softveru koji koriste i druge značajne organizacije u svijetu kao što su Sekretat za odbranu SAD-a, Nacionalna banka Kine i drugi.",
     "Security Notices": "Security Notices",
     "Download elementary OS": "Preuzmi elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Izaberite download",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "Vodič za instalaciju",
     "Cancel": "Cancel",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Link za preuzimanje preko torrenta",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

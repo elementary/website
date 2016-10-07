@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "빠르고 미려한, Windows와 OS X의 대안.",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "자유로이 값을 정하세요",
     "Custom": "사용자 지정",
     "Enter any dollar amount.": "원하시는 액수를 달러로 입력하세요.",
     "Purchase elementary OS": "Elementary OS 구입",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (PC 또는 Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "사람들은 elementary OS를 어떻게 생각할까요?:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS는 다릅니다... 오래된 PC에서도 문제 없는 예쁘고 강력한 운영체제입니다\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"빠르고 유지 비용도 적은, 어느 곳에나 설치할 수 있는 플랫폼\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "이 OS는 미국 국방부, 중국 중앙은행을 비롯한 여러 기관에서 사용되는 리눅스를 기반으로 만들어졌습니다.",
     "Security Notices": "보안 공지",
     "Download elementary OS": "elementary OS 다운로드",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "다운로드",
-    "For help and more info, see the": "도움을 받으려면,",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "설치 가이드를 보세요.",
     "Cancel": "취소",
     "Download Loki": "Loki 다운로드",
     "Torrent Magnet Link": "토렌트 마그넷 링크",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "빠르고 미려한, Windows와 OS X의 대안 ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

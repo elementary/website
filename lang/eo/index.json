@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Anstataŭo rapida kaj malfermitkoda por Vindozo kaj OS X",
-    "Pay What You Want": "Pay What You Want",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
+    "Pay What You Want": "Pagu laŭplaĉe",
     "Custom": "Alia",
     "Enter any dollar amount.": "Entajpu sumon da mono.",
     "Purchase elementary OS": "Aĉeti elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Kion diras la gazetaro pri elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS diferencas… belega kaj fortega operaciumo, kiu funkcias bone eĉ per malnovaj PK-oj”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“rapida platformo, kiu bezonas malmulte da funkciteno kaj instaleblas preskaŭ ĉie”",
@@ -12,7 +12,7 @@
     "image/svg+xml": "image/svg+xml",
     "Task finished": "Task finished",
     "git clone https://github.com/elementary/mvp": "git clone https://github.com/elementary/mvp",
-    "Apps You Need, Without Ones You Don't.": "Apps You Need, Without Ones You Don't.",
+    "Apps You Need, Without Ones You Don't.": "Ĉion necesan, nenion malan",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.",
     "Music": "Muziko",
     "Epiphany": "Epiphany",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.",
     "Security Notices": "Sekurecaj rimarkoj",
     "Download elementary OS": "Elŝuti elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Elektu elŝutaĵon",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "installation guide",
     "Cancel": "Cancel",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

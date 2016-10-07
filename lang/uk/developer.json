@@ -1,5 +1,5 @@
 {
-    "Developer hero image": "Developer hero image",
+    "Developer hero image": "Зображення розробника",
     "Develop Your Ideas Into Code": "Перетворіть ваші ідеї у код",
     "Learn to design, develop, and publish apps for elementary OS": "Навчіться проектувати, створювати та поширювати додатки для elementary OS",
     "Get Started": "Розпочніть",
@@ -7,7 +7,7 @@
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Напишіть, запустіть і підготуйте до розповсюдження просту програму, користуючись нашим посібником для початківців.",
     "Design": "Дизайн",
     "Learn about the design principles that make up apps on elementary OS.": "Дізнайтеся про принципи дизайну, що об’єднують додатки на elementary OS.",
-    "Reference": "Reference",
+    "Reference": "Посилання",
     "Get more info about code style, reporting issues, and proposing design changes.": "Отримайте більше інформації щодо стилю написання коду, повідомлення про помилки та пропонування змін у дизайні.",
     "Build for": "Створюйте для",
     "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki приносить новий API для Wingpanel, підтримку Launcher API в Slingshot, нові віджети, такі як AlertView, нові класи й іконки CSS стилів, і багато іншого. Створюйте повнофункціональні додатки простіше, ніж коли-небудь з Gtk 3.18 і Vala 0.32, запущеними поверх Linux 4.4",

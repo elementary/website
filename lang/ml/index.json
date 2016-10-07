@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "വിന്റോസിനും ഓ.എസ്.എക്സിനും വേഗതയേറിയ പകരക്കാരൻ .",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Pay What You Want",
     "Custom": "വൈവിദ്ധ്യമാര്‍ന്നത്",
     "Enter any dollar amount.": "സംഖ്യ ഡോളറില്‍ നല്‍കുക",
     "Purchase elementary OS": "Purchase elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "What the press is saying about elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "എലമെന്ററി ഒ.എസ് വ്യത്യസ്തമാണ്... സുന്ദരവും ശക്തമായതും, പഴയ പിസിയില്‍ പോലും മികവേറിയ രീതിയില്‍ പ്രവര്‍ത്തിക്കുന്നതും",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "എവിടെയും ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ കഴിവുന്ന വേഗതയേറിയ സംവിധാനം",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.",
     "Security Notices": "Security Notices",
     "Download elementary OS": "എലെമെന്ററി ഒ.എസ് ‍ഡൊണ്‍ലോ‍ഡ് ചെയ്യുക",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "ഒരു ‍ഡൌണ്‍ലോ‍ഡ് തെരെഞ്ഞെടുക്കുക",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "ഇന്‍സ്റ്റോളേഷന്‍ മാര്‍ഗരേഖ",
     "Cancel": "Cancel",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }
