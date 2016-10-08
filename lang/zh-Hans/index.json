@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "一个替换Windows和OS X的快速和开放的操作系统",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Pay What You Want",
     "Custom": "自定义",
     "Enter any dollar amount.": "输入美元数量",
     "Purchase elementary OS": "购买elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "新闻媒体对elementary OS的评价：",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "elementary OS是一个即便是在旧电脑上也能运行得很流畅的、与众不同的、漂亮的、强大的操作系统",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "事实上是一个能安装在任何地方的、一个快速的、低维护费用的平台",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "我们基于Linux：与驱动美国国防部、中国的银行和更多的用户同样的软件",
     "Security Notices": "Security Notices",
     "Download elementary OS": "下载elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "选择一个下载",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "安装指南",
     "Cancel": "Cancel",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "依附的种子文件链接",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

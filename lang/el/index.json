@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Ενα γρήγορο και ανοικτού λογισμικού λειτουργικό, εναλλακτικό των Windows και OS X",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Πληρώστε το πόσό που εσείς θέλετε",
     "Custom": "Συγκεκριμένο ποσό",
     "Enter any dollar amount.": "Εισάγετε οποιοδήποτε ποσό σε δολλάρια.",
     "Purchase elementary OS": "Αγοράστε το elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (για PC ή Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Τι λέει ο τύπος για το elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"Το elementary OS είναι διαφορετικό... ένα όμορφο και ισχυρό λειτουργικό σύστημα που θα τρέξει καλά ακόμα και σε παλιούς υπολογιστές.\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"Μια γρήγορη πλατφόρμα που χρειάζεται ελάχιστη συντήρηση και μπορεί να εγκατασταθεί θεωρητικά παντού.\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Το λογισμικό μας είναι χτισμένο στο Linux: το ίδιο λογισμικό που τροφοδοτεί το Υπουργείο Άμυνας των ΗΠΑ, την Τράπεζα της Κίνας, και πολλά άλλα.",
     "Security Notices": "Σημειώσεις Ασφαλείας",
     "Download elementary OS": "Λήψη του elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Επιλέξτε ένα στοιχείο λήψης",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "οδηγό εγκατάστασης",
     "Cancel": "Ακύρωση",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Σύνδεσμος Torrent Magnet",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Ενα γρήγορο και ανοικτού λογισμικού λειτουργικό, εναλλακτικό των Windows και OS X ⋅ ementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }
