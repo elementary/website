@@ -1,13 +1,13 @@
 {
     "Open Source": "Açık Kaynak",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
-    "Get Involved": "Dâhil olun",
+    "Get Involved": "Dahil Olun",
     "Applications": "Uygulamalar",
     "elementary OS Applications": "elementary OS Uygulamaları",
     "Calendar": "Takvim",
     "Camera": "Kamera",
     "Files": "Dosyalar",
-    "Mail": "E-posta",
+    "Mail": "E-Posta",
     "Music": "Müzik",
     "Photos": "Fotoğraflar",
     "Scratch": "Scratch",
@@ -23,8 +23,8 @@
     "Switchboard": "Switchboard",
     "Wingpanel": "Wingpanel",
     "Platform": "Platform",
-    "Pantheon Platform": "Pantheon Platform",
-    "Contractor": "Anlaşmalı taraf",
+    "Pantheon Platform": "Pantheon Platformu",
+    "Contractor": "Anlaşmalı Taraf",
     "Granite": "Granit",
     "Captive Portal Assistant": "Captive Portal Assistant",
     "Pantheon Online Accounts": "Pantheon Online Accounts",
@@ -66,8 +66,8 @@
     "GNU C Library": "GNU C Kütüphanesi",
     "Coreutils": "Coreutils",
     "Linux": "Linux",
-    "Filesystem, Hardware, Networking &amp; Drivers": "Dosya Sistemi, Donanım, Ağ ve Sürücüler",
+    "Filesystem, Hardware, Networking &amp; Drivers": "Dosya Sistemi, Donanım, Ağ &amp; Sürücüler",
     "Kernel": "Çekirdek",
     "All logos featured here are trademarks of their respective projects.": "Burada yer alan tüm logolar, proje sahiplerinin tescilli markalarıdır.",
-    "Open Source &sdot; elementary": "Açık Kaynak ⋅ elementary"
+    "Open Source &sdot; elementary": "Açık Kaynak &sdot; elementary"
 }
