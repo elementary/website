@@ -8,7 +8,7 @@
     "Design": "設計",
     "Learn about the design principles that make up apps on elementary OS.": "學習適合 elementary OS 的外觀設計綱要。",
     "Reference": "參考文件",
-    "Get more info about code style, reporting issues, and proposing design changes.": "深入了解程式碼規範、如何回報問題和提議變更設計",
+    "Get more info about code style, reporting issues, and proposing design changes.": "深入了解程式碼規範、如何回報問題以及提出設計異動",
     "Build for": "構建",
     "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki 為 Wingpanel 提供新的 API，Launcher API 加入了 Slingshot 的支援，新的小工具如 AlertView，新的 CSS style 類別，新的小圖示跟非常多新的功能。使用 Gtk 3.18 和 Vala 0.32 跑在 Linux 4.4 上，建構功能齊全的程式變得比以前更方便。",
     "Contractor": "Contractor",
@@ -26,11 +26,11 @@
     "Reference for Soup": "Soup 的參考文件",
     "Reference for JSON-GLib": "JSON-Glib 的參考文件",
     "vala": "vala",
-    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
-    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala，給你原生、快速、物件導向的程式碼",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "和 C# 相似的熟悉感，同時與 C 保持 API/ABI 相容",
     "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
     "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "進一步瞭解 Vala",
     "Library Documentation for Vala": "Vala 的函式庫文件",
-    "Developer &sdot; elementary": "開發者 - elementary"
+    "Developer &sdot; elementary": "開發者 ⋅ elementary"
 }

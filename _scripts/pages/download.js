@@ -35,7 +35,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // Capture all .target-amount focuses
         $('.target-amount').on('click focusin', amountSelect)
 
-        // ACTION: amountValidate: Check the vality of custom amount inputs.
+        // ACTION: amountValidate: Check the validity of custom amount inputs.
         var amountValidate = function (event) {
             var currentVal = $('#amount-custom').val()
             var code = event.which || event.keyCode || event.charCode
@@ -53,7 +53,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
         $('#amount-custom').keypress(amountValidate)
 
-        // ACTION: amountBlur: Check the vality of custom amount inputs.
+        // ACTION: amountBlur: Check the validity of custom amount inputs.
         var amountBlur = function () {
             // If NOT valid OR empty.
             var i = document.getElementById('amount-custom')
@@ -102,7 +102,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             console.log('Starting payment for ' + paymentAmount)
             // Free download
             if (paymentAmount < paymentMinimum) {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Free)', 'Homepage', paymentAmount)
+                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
@@ -148,7 +148,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         function doStripePayment (amount, token) {
             var paymentHTTP, $amountTen
             $amountTen = $('#amount-ten')
-            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Actual)', 'Homepage', amount)
+            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
                 $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)

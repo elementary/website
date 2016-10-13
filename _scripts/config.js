@@ -11,17 +11,14 @@ import jQuery from '~/lib/jquery'
 
 export default jQuery.then(($) => {
     return new Promise((resolve, reject) => {
-        $.ajax({
-            url: 'api/config',
-            dataType: 'json'
-        })
+        $.getJSON('/api/config')
         .done((config) => {
             console.log('Sitewide configuration loaded')
             return resolve(config)
         })
-        .fail((err) => {
-            console.error('Failed to grab sitewide configuration')
-            console.error(err.responseText)
+        .fail((jqxhr, status, err) => {
+            console.error(`Failed to grab sitewide configuration with ${status}`)
+            console.error(err)
             return reject(err)
         })
     })
