@@ -101,6 +101,7 @@ section:nth-child(even) {
 #web-development .button.flat.suggested-action {
     background-color: #d33682;
     border-color: #d33682;
+    margin-left: 6px;
 }
 
 #web-development .button.flat.suggested-action:focus {
