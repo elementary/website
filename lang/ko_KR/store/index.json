@@ -1,12 +1,13 @@
 {
-    "Store": "스토어",
-    "Apparel": "옷",
+    "Apparel": "의류",
     "Men's Cotton T-Shirt": "남성용 코튼 티셔츠",
     "Women's Cotton T-Shirt": "여성용 코튼 티셔츠",
     "Men's Track Shirt": "남성용 트랙 셔츠",
     "Women's Track Shirt": "여성용 트랙 셔츠",
-    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.",
-    "Size Chart": "Size Chart",
+    "Accessories": "액세서리",
+    "Coffee Mug": "Coffee Mug",
+    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "아메리칸 어페럴이 제작한, elementary 로고가 새겨진 파랑색의 코튼 티셔츠",
+    "Size Chart": "크기표",
     "Size": "크기",
     "S": "S",
     "M": "M",
@@ -14,6 +15,7 @@
     "XL": "XL",
     "2XL": "2XL",
     "Quantity": "수량",
-    "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.",
+    "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "아메리칸 어페럴이 제작한, elementary 로고가 새겨진 검정색의 가벼운 트라이블랜드 티셔츠",
+    "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.": "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.",
     "Store &sdot; elementary": "스토어 ⋅ elementary"
 }

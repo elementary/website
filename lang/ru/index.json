@@ -1,14 +1,14 @@
 {
-    "A fast and open replacement for Windows and OS X": "Быстрая и открытая замена Windows и OS X",
+    "A fast and open replacement for Windows and macOS": "Быстрая и открытая замена Windows и macOS",
     "Pay What You Want": "Заплатите, сколько хотите",
     "Custom": "Другая сумма",
     "Enter any dollar amount.": "Любая сумма в долларах.",
     "Purchase elementary OS": "Купить elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 ГБ (для PC или Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 ГБ (для PC или Mac)",
     "What the press is saying about elementary OS:": "Что говорит пресса об elementary OS:",
-    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"elementary OS отличается от других… прекрасная и мощная операционная система, которая работает даже на старых ПК\"",
+    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "«elementary OS отличается от других… прекрасная и мощная операционная система, которая работает даже на старых ПК»",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "«быстрая, нетребовательная платформа, которая может быть установлена практически везде»",
-    "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "«Лёгкая и быстрая... Полностью создана сообществом, с особым вниманием к дизайну и интерфейсу.»",
+    "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "«Лёгкая и быстрая... Полностью создана сообществом, с особым вниманием к дизайну и интерфейсу».",
     "image/svg+xml": "image/svg+xml",
     "Task finished": "Задание завершено",
     "git clone https://github.com/elementary/mvp": "git clone https://github.com/elementary/mvp",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Система основана на Linux — с таким же ПО работает Министерство обороны США, Национальный банк Китая и многие другие организации.",
     "Security Notices": "Уведомления о безопасности",
     "Download elementary OS": "Загрузить elementary OS",
+    "Download elementary OS icon": "Значок загрузки elementary OS",
     "Choose a Download": "Выберите версию",
-    "For help and more info, see the": "Для помощи и большей информации смотрите",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Загрузите напрямую с сервера или с помощью magnet-ссылки. Для получения дополнительной информации просмотрите",
     "installation guide": "руководство по установке",
     "Cancel": "Отменить",
     "Download Loki": "Загрузить Loki",
     "Torrent Magnet Link": "magnet-ссылка",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Быстрая и открытая замена Windows и OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Быстрая и открытая замена Windows и macOS ⋅ elementary OS"
 }

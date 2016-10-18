@@ -1,10 +1,11 @@
 {
-    "Store": "സ്റ്റോർ ",
     "Apparel": "Apparel",
     "Men's Cotton T-Shirt": "Men's Cotton T-Shirt",
     "Women's Cotton T-Shirt": "Women's Cotton T-Shirt",
     "Men's Track Shirt": "Men's Track Shirt",
     "Women's Track Shirt": "Women's Track Shirt",
+    "Accessories": "Accessories",
+    "Coffee Mug": "Coffee Mug",
     "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.",
     "Size Chart": "Size Chart",
     "Size": "Size",
@@ -15,5 +16,6 @@
     "2XL": "2XL",
     "Quantity": "Quantity",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel.",
+    "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.": "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.",
     "Store &sdot; elementary": "Store ⋅ elementary"
 }

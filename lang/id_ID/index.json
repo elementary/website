@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Sistem operasi yang cepat dan terbuka sebagai pengganti Windows dan OS X",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
     "Pay What You Want": "Pay What You Want",
     "Custom": "Sesuaikan",
     "Enter any dollar amount.": "Masukkan nominal dalam dolar.",
     "Purchase elementary OS": "Beli elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Apa yang pers katakan tentang OS elementary:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "\"OS elementary itu berbeda... sistem operasi yang indah dan kuat yang akan berjalan baik bahkan pada PC lama\"",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "\"platform yang cepat, mudah dalam pemeliharaan yang dapat dipasang hampir di mana saja\"",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Kami dibangun di atas Linux: perangkat lunak yang sama yang menggerakkan Departemen Pertahanan U.S, Bank of China, dan masih banyak lagi.",
     "Security Notices": "Himbauan Keamanan",
     "Download elementary OS": "Unduh OS elementary",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Pilih Unduhan",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "panduan pemasangan",
     "Cancel": "Batal",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "Tautan Magnet Torrent",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

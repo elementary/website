@@ -2,8 +2,8 @@
     "Open Source": "오픈소스",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
     "Get Involved": "참여하기",
-    "Applications": "응용프로그램",
-    "elementary OS Applications": "elementary OS Applications",
+    "Applications": "앱",
+    "elementary OS Applications": "elementary OS 앱",
     "Calendar": "캘린더",
     "Camera": "카메라",
     "Files": "파일",
@@ -16,10 +16,10 @@
     "Desktop Shell": "Desktop Shell",
     "Pantheon Desktop Shell": "Pantheon Desktop Shell",
     "GTK+ Stylesheet": "GTK+ Stylesheet",
-    "Icon Theme": "Icon Theme",
+    "Icon Theme": "아이콘 테마",
     "Gala": "Gala",
     "Plank": "Plank",
-    "Slingshot": "Slingshot",
+    "Slingshot": "슬링샷",
     "Switchboard": "Switchboard",
     "Wingpanel": "Wingpanel",
     "Platform": "Platform",
@@ -67,7 +67,7 @@
     "Coreutils": "Coreutils",
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Filesystem, Hardware, Networking & Drivers",
-    "Kernel": "Kernel",
+    "Kernel": "커널",
     "All logos featured here are trademarks of their respective projects.": "All logos featured here are trademarks of their respective projects.",
-    "Open Source &sdot; elementary": "Open Source ⋅ elementary"
+    "Open Source &sdot; elementary": "오픈소스 ⋅ elementary"
 }

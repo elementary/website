@@ -1,6 +1,6 @@
 {
     "Developer hero image": "Developer hero image",
-    "Develop Your Ideas Into Code": "Přenes Své Nápady Do Kódu",
+    "Develop Your Ideas Into Code": "Přenes své nápady do kódu",
     "Learn to design, develop, and publish apps for elementary OS": "Naučte se navrhovat, vyvíjet a publikovat aplikace pro Elementary OS",
     "Get Started": "Pojďme začít",
     "Documentation": "Dokumentace",
@@ -26,8 +26,8 @@
     "Reference for Soup": "Odkazy pro Soup",
     "Reference for JSON-GLib": "Odkazy pro JSON-GLib",
     "vala": "vala",
-    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
-    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Pište rychle, nativně a objektově orientovaný kód.",
+    "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Jednoduchý pro vývojaře v C#, i když si zachovává API/ABI kompatibilitu s C",
     "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
     "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
     "Learn More about Vala": "Zjistit více",

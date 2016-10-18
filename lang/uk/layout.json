@@ -1,5 +1,5 @@
 {
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Швидка та безкоштовна заміна для Windows і OS X ⋅ elementary OS",
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Швидка та відкрита заміна для Windows та macOS - elementary OS",
     "Blog": "Блог",
     "Support": "Довідка",
     "Store": "Крамниця",
@@ -9,9 +9,5 @@
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Ви переглядаете версію сайту, яка наразі в розробці. Деякі сторінки можуть працювати не так, як ви того очікуєте. Якщо ви потрапили сюди випадково, то, будь ласка, перейдіть на <a href=\"http://elementary.io\">elementary.io</a>, нашу справжню веб-адресу.",
     "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Всі права захищені © 2016 elementary LLC.\n                    <a href=\"/team\">Команда</a>\n                    <a href=\"/brand\">Марка</a>\n                    <a href=\"/privacy-policy\">Політика конфіденційності</a>",
     "Language": "Українська",
-    "Change Site Language": "Змінити мову",
-    "The elementary OS website is built on modern web technologies your browser doesn&rsquo;t support.": "Веб-сайт elementary OS побудований за допомогою новітніх веб-технологій, які ваш браузер не підтримує.",
-    "This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href=\"http://browsehappy.com/\">upgrade</a> to IE 11 or an alternative web browser.": "Ця версія Internet Explorer застаріла та може містити помилки чи вразливості. Будь ласка <a href=\"http://browsehappy.com/\">оновіть</a> ваш переглядач до IE 11 чи скористайтеся альтернативним браузером.",
-    "Dismiss": "Відмовитися",
-    "Learn More": "Дізнатися більше"
+    "Change Site Language": "Змінити мову"
 }

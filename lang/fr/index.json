@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Une alternative libre et rapide à Windows et Mac OS X",
-    "Pay What You Want": "Pay What You Want",
+    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
+    "Pay What You Want": "Payez Ce Que Vous Voulez",
     "Custom": "Autre",
     "Enter any dollar amount.": "Entrez une somme.",
     "Purchase elementary OS": "Acheter elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
     "What the press is saying about elementary OS:": "Ce que dit la presse à propos d'elementary OS :",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS est différent… un système d'exploitation beau et puissant qui tournera bien même sur de vieux PCs”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“Une plateforme rapide, nécessitant peu de maintenance, qui peut être installée virtuellement partout”",
@@ -55,7 +55,7 @@
     "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "Avec son accès simplifié à vos dossiers, ses fenêtres multiples et ses extensions comme \"Terminal\", \"Web Preview\", \"Indentation Detection\" et \"Vim Emulator\", Scratch sera le seul éditeur de texte dont vous ayez besoin.",
     "camera screenshot": "Capture d'écran \"Caméra\"",
     "camera icon": "Icône \"Caméra\"",
-    "Easily snap pictures or video from a built-in webcam.": "Easily snap pictures or video from a built-in webcam.",
+    "Easily snap pictures or video from a built-in webcam.": "Prenez facilement des photos ou des vidéos depuis une webcam intégrée.",
     "elementary appcenter categories": "Catégories de l'elementary appcenter",
     "The Indie, Open Source App Store": "L'App Store libre et indépendant",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "L'AppCenter vous offre la possiblité de télécharger des applications et des extensions conçues par la communauté directement depuis votre bureau. Découvrez simplement de nouvelles applications et mettez à jour celles dont vous disposez déjà. Pas de période d'essai, pas besoin de licence ni souscription.",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Notre système repose sur Linux : le même logiciel qu'utilise le Département américain de la Défense, la Banque de Chine et d'autres.",
     "Security Notices": "Avertissements de sécurité",
     "Download elementary OS": "Télécharger elementary OS",
+    "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Choisissez un téléchargement",
-    "For help and more info, see the": "For help and more info, see the",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "guide d'installation",
     "Cancel": "Retour",
-    "Download Loki": "Download Loki",
+    "Download Loki": "Téléchargez Loki",
     "Torrent Magnet Link": "Lien Magnet",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "A fast and open replacement for Windows and OS X ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

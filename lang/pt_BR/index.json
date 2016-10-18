@@ -1,10 +1,10 @@
 {
-    "A fast and open replacement for Windows and OS X": "Uma alternativa rápida e aberta ao Windows e ao macOS",
+    "A fast and open replacement for Windows and macOS": "Uma alternativa rápida e aberta ao Windows e ao macOS",
     "Pay What You Want": "Pague o que quiser",
     "Custom": "Personalizar",
     "Enter any dollar amount.": "Digite qualquer valor em dólar.",
     "Purchase elementary OS": "Adquira o elementary OS",
-    "0.4.0 Loki | 1.31 GB (for PC or Mac)": "0.4.0 Loki | 1.31 GB (para PC ou Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (para PC e Mac)",
     "What the press is saying about elementary OS:": "O que a imprensa está dizendo sobre o elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“O elementary OS é diferente… É um sistema operacional bonito e poderoso, que funcionará bem até mesmo em computadores antigos”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“uma plataforma rápida e de baixa manutenção, que pode ser instalada praticamente em qualquer lugar”",
@@ -85,11 +85,12 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Construído com Linux: o mesmo software usado pelo Departamento de Defesa Americano, o Banco da China e muitos outros.",
     "Security Notices": "Notas de segurança",
     "Download elementary OS": "Baixar o elementary OS",
+    "Download elementary OS icon": "Ícone de download do elementary OS",
     "Choose a Download": "Escolha uma opção de download",
-    "For help and more info, see the": "Para ajuda e mais informações, veja o",
+    "Download from a localized server or by magnet link. For help and more info, see the": "Baixe a partir de um servidor ou por torrent (link magnético). Para saber mais, veja o",
     "installation guide": "Guia de Instalação",
     "Cancel": "Cancelar",
     "Download Loki": "Baixe o Loki",
     "Torrent Magnet Link": "Link Magnético de Torrent",
-    "A fast and open replacement for Windows and OS X &sdot; elementary OS": "Uma alternativa rápida e aberta ao Windows e ao macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Uma alternativa rápida e aberta ao Windows e ao macOS ⋅ elementary OS"
 }
