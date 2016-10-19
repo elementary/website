@@ -297,7 +297,7 @@ Contractor results are typically presented to users in menu form. Keep the follo
 
 ## Dock Integration {#dock-integration}
 
-Apps integrated with Pantheon's dock communicate their status to the user at a glance.
+Integrate your app with Pantheon's dock communicate to communicate its status to the user at a glance.
 
 ![](/images/docs/human-interface-guidelines/dock-integration/dock.png)
 
@@ -317,7 +317,7 @@ A badge shows a count of actionable items managed by your app. Its purpose is to
 
 ## System Indicators {#system-indicators}
 
-Indicators are small icons that live in the menu bar (wingpanel). They give users a place to glance for a quick indication of various settings or events. Clicking the icon shows a small menu with related actions available to the user.
+Indicators are small icons that live on the top panel. They give users a place to glance for a quick indication of various settings or events. Clicking the icon shows a small menu with related actions available to the user.
 
 ![](/images/docs/human-interface-guidelines/system-indicators/systray.png)
 
