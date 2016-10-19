@@ -9,6 +9,7 @@ if (isset($_POST['token'])) {
     $amount      = $_POST['amount'];
     $description = $_POST['description'];
     $email       = $_POST['email'];
+    $os          = $_POST['os'];
 
     // Create the charge on Stripe's servers - this will charge the user's card
     try {
