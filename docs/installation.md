@@ -44,11 +44,11 @@ Select the operating system you are currently using to view tailored installatio
 
 <div id="install-on-windows" class="slide" markdown="1">
 
+## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+
 You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.
 
 <a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
-
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 ![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
 
