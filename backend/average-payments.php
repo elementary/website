@@ -65,6 +65,8 @@ if ( $processing ) {
     }
 
     ////    Update
+    $amount = htmlentities($amount, ENT_QUOTES);
+    $os = htmlentities($os, ENT_QUOTES);
     $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$amount.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$amount.'\') / (`Count` + 1)) WHERE `OS`=\''.$os.'\' OR `OS`=\'total\';';
     $result = $db->exec($query); // Result-less
 
