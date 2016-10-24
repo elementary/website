@@ -44,36 +44,24 @@ Select the operating system you are currently using to view tailored installatio
 
 <div id="install-on-windows" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
-
-Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
-
-Windows doesn't include a built-in tool to verify SHA256 Checksums, so you're going to need to download <a href="http://www.digitalvolcano.co.uk/hash.html">Hash Tool</a>.
-
-![Hash Tool](images/docs/installation/hash-tool.png)
-
-1. Open Hash Tool
-2. Under "Hash Type" select `SHA-256`
-3. Under "Input File" select `Select File(s)` and find the elementary OS ISO file
-4. Verify that the text in "Results" matches the following hash:
-
-```bash nohighlight
-8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
-```
-
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
-
-![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
 
 You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.
 
 <a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
 
+![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
+
 1. Open Rufus
 2. Insert your USB drive and select it in the "Device" list
 3. Select "ISO Image" next to "Create a bootable disk using..."
 4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
-5. Click "Start" and wait for the process to finish.
+5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the `#` button in the status bar and verify that the text next to "SHA256" matches the following hash:
+```bash nohighlight
+8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
+```
+
+6. If the hashes match, click "Start" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 

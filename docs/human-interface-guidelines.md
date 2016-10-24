@@ -1,6 +1,6 @@
 # Human Interface Guidelines {#human-interface-guidelines}
 
-These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will allow you to decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
+These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
 
 * Users will learn to use your application faster because it shares common elements that they are already familiar with.
 * Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.
@@ -90,7 +90,7 @@ Most users don't want to read through help docs before they can use your app. In
 
 ### Use Understandable Copy {#use-understandable-copy}
 
-Avoid technical jargon and assume little-to-no technical knowledge. This allows your app to be "self-documenting."
+Avoid technical jargon and assume little-to-no technical knowledge. This lets your app be "self-documenting."
 
 Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented. 
 
@@ -122,7 +122,7 @@ Your app's first launch is the user's first impression of your app; it's a chanc
 
 ### Welcoming the User {#welcoming-the-user}
 
-If there is no content to show the user, provide actions they can act upon by using a simple [welcome screen](#welcome-screen). Allow them to open a document, add an account, import a CD, or whatever makes sense in the context of the app.
+If there is no content to show the user, provide actions they can act upon by using a simple [welcome screen](#welcome-screen). Let them open a document, add an account, import a CD, or whatever makes sense in the context of the app.
 
 ### Resetting the App {#resetting-the-app}
 
@@ -144,17 +144,17 @@ When a user launches your app, they should know exactly what to do next. This is
 
 If the user has previously used your app, it's typically best to restore the state of the app when opening it again. This means the app comes up to right where the user left off so they can pick up their work again. For a music player, this means opening up with the view where the user left it and the song paused where the user closed the app. For a document editor, this would mean opening up with the same document scrolled to the same spot with the cursor in the same spot on the page.
 
-## Always Provide An Undo {#always-provide-an-undo}
+## Always Provide an Undo {#always-provide-an-undo}
 
-Sometimes a user will perform an action which could possibly be destructive or traditionally irreversible. Rather than present the user with a warning, apps should allow the user to undo the action for an appropriate amount of time. Some prime examples of when this behavior is useful are:
+Sometimes a user will perform an action which could possibly be destructive or traditionally irreversible. Rather than present the user with a warning, apps should let the user undo the action for an appropriate amount of time. Some prime examples of when this behavior is useful are:
 
 * **Closing an app**. Rather than warning the user, automatically save their work and the app's state so they can return exactly where they left off. See [Closing](#closing).
 
 * **Deleting an item**. Instead of asking the user if they are sure, make the item "disappear" from the app, but provide an easy and intuitive way to undo the delete.
 
-* **Sending an email**. Rather than asking the user if they want to send an email, allow them to undo or edit the message a short time after "sending."
+* **Sending an email**. Rather than asking the user if they want to send an email, let them undo or edit the message a short time after "sending."
 
-* **Editing a photo**. Instead of asking the user if they want to destructively apply an edit, allow them to undo the edit and always keep the original backed up.
+* **Editing a photo**. Instead of asking the user if they want to destructively apply an edit, let them undo the edit and always keep the original backed up.
 
 This behavior should only as a last resort be implemented by providing a buffer time between when the app shows the user what happened and actually performing the action. To keep the experience responsive, the app should always look as if it performed the action as soon as the user initiates it. 
 
@@ -199,13 +199,13 @@ See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/)
 An important advantage that developers have when choosing the elementary platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary. This section will cover things like:
 
 * **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. This section details how to create these launchers.
-MIME handling. If your application can open and save files, place entries for those file types in the application database and the document type (MIME) database. This allows the file manager and other applications to automatically launch your application when they encounter files your application can handle.
+MIME handling. If your application can open and save files, place entries for those file types in the application database and the document type (MIME) database. This lets the file manager and other applications automatically launch your application when they encounter files your application can handle.
 
 * **Contractor**. elementary provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
 
-* **Using System Indicators**. elementary uses indicator applets in the panel that allow your application to provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
+* **Using System Indicators**. elementary uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
 
-* **Integrating with the Dock**. elementary ships with a great dock that supports the Unity Launcher API. This allows your application to provide notification badges, progress indicators, and more.
+* **Integrating with the Dock**. elementary ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
 
 ## App Launchers {#app-launchers}
 
@@ -219,7 +219,7 @@ _**Title** is a(n) **GenericName** that lets you **Comment**._
 
 ### Title {#title}
 
-You should not include descriptive words in your title. For example, Dexter is called "Dexter," not "Dexter Address Book." Midori is just "Midori," not "Midori Web Browser." Instead, utilize the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
+You should not include descriptive words in your title. For example, Dexter is called "Dexter," not "Dexter Address Book." Midori is just "Midori," not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
 
 ### GenericName {#genericname}
 
@@ -231,12 +231,12 @@ The generic name should be in [title case](#title-case) and may be used around t
 
 ### Comment {#comment}
 
-The system utilizes an app's Comment attribute found in the .desktop file to succinctly inform a user what can be done with the app. It should be a short sentence or phrase beginning with a verb and containing the primary nouns that your app deals with. For example, the following are appropriate comments:
+The system uses an app's Comment attribute (found in the .desktop file) to succinctly inform a user what can be done with the app. It should be a short sentence or phrase beginning with a verb and containing the primary nouns that your app deals with. For example, the following are appropriate comments:
 
 * Maya: **Browse and schedule events**
 * Noise: **Listen to music**
 * Lingo: **Look up definitions**
-* Geary: **Send and receive mail**
+* Mail: **Send and receive mail**
 * Scratch: **Edit text files**
 * Files: **Browse and manage your files**
 
@@ -266,7 +266,7 @@ For more info, see the FreeDesktop.Org [menu entry](http://standards.freedesktop
 
 You may also include keywords in your launcher to help users find your app via search. These follow the convention of "X-GNOME-Keywords" (for in the app launcher) and "X-AppInstall-Keywords" (for in the app installer). For example, web browser might include "Internet" as a keyword even though it's not in the app's name, generic name, or description. As a result, a user searching for "Internet" will find the app. Here are some more examples:
 
-* Geary: **Email;Gmail**
+* Mail: **Email;Gmail**
 * Midori: **Internet;WWW;Explorer**
 * Files: **Folders;Browser;Explorer;Finder;Manager**
 * Terminal: **Command;Prompt;cmd;Emulator**
@@ -274,7 +274,7 @@ You may also include keywords in your launcher to help users find your app via s
 * System Settings: **Control;Panel**
 * Shotwell: **Camera;Picture**
 
-Keywords should be single words in [title case](#title-case) and seperated with a semicolon.
+Keywords should be single words (in [title case](#title-case)) separated by semicolons.
 
 --------------------------------------
 
@@ -282,14 +282,14 @@ See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop
 
 ## Contractor {#contractor}
 
-Contractor is a service and a protocol for exposing services easily between apps. It allows an app to interact with various other apps/services without hardcoding support for them. You simply add [contractor](https://launchpad.net/contractor) support, and then any service registered with contractor is now available for your app to use. Your app can integrate with contractor in two different ways:
+Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add [Contractor](https://launchpad.net/contractor) support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:
 
-* Register one of it's functions as a service that can be used from other apps
+* Register one of its functions as a service that can be used from other apps
 * Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages
 
 ### Displaying Results from Contractor {#displaying-results-from-contractor}
 
-The most typical way to present Contractor results to users is in menu form. Keep in mind the following things when presenting contractor results:
+Contractor results are typically presented to users in menu form. Keep the following in mind when presenting Contractor results:
 
 * If the item acted upon is one of many items visible, such as in an icon view, be sure to display results in a way that is directly related to the item such as in a context menu.
 * If the item acted upon is the only item currently visible, such as a web page or a contact in Dexter, contractor can be displayed in a toolbar menu.
@@ -297,22 +297,22 @@ The most typical way to present Contractor results to users is in menu form. Kee
 
 ## Dock Integration {#dock-integration}
 
-By integration with Pantheon's dock, apps are able to communicate their status to the user at a glance.
+Integrate your app with Pantheon's dock communicate to communicate its status to the user at a glance.
 
 ![](/images/docs/human-interface-guidelines/dock-integration/dock.png)
 
 ### Progressbars {#progressbars}
 
-A progressbar must be unambiguous in its use, referring to a single specific task. For example, a progressbar can be used to indicate the status of a file transfer or of a lengthy process like encoding. A progressbar should not be used to compound the progress of multiple types of actions.
+Make progress bars unambiguous by referring to a single, specific task. For example, use progress bars to indicate the status of lengthy processes like file transfers and encoding. Do not use progress bars to compound the progress of different types of action.
 
-* **Good Example**: Installation progress in Software Center
+* **Good Example**: Installation progress in AppCenter
 * **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise
 
 ### Badges {#badges}
 
-A badge shows a count of actionable items which your app manages. It's purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.
+A badge shows a count of actionable items managed by your app. Its purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.
 
-* **Good Example**: Unread messages in Geary
+* **Good Example**: Unread messages in Mail
 * **Bad Example**: Total number of Photos in Shotwell
 
 ## System Indicators {#system-indicators}
@@ -321,9 +321,9 @@ Indicators are small icons that live on the top panel. They give users a place t
 
 ![](/images/docs/human-interface-guidelines/system-indicators/systray.png)
 
-### Does Your App Need An Indicator? {#does-your-app-need-an-indicator}
+### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
-The indicator area is notorious for becoming cluttered and having inconsistent behavior. Given that users will probably install many third party apps, we need to be careful about how many indicators we're showing and how they behave. Keep in mind that not every application needs an indicator. Only a very small set of apps will benefit from one. You do not need an indicator if:
+The indicator area is prone to clutter and inconsistent paradigms. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. Avoid adding an indicator if:
 
 * **The indicator will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
 
@@ -332,27 +332,27 @@ The indicator area is notorious for becoming cluttered and having inconsistent b
 * **The application is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the existing messaging or sound menus.
 
 ---
-See also: [Farewell To The Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+See also: [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
 
 # Container Widgets {#container-widgets}
 
 ## Windows {#windows}
 
-Windows are the foundation that your app is built on. They provide a sort of canvas with basic actions built in such as closing an app, resizing it, etc. Although users may see all windows as being the same, there are several distinct types of windows in elementary OS. It's important to understand the types of windows available to you, window behavior in general, and behavior that is specific to a certain window type. This section will cover the different types of windows available in elementary OS. Although each type of window is a bit different, think of them all as a subclass of a window. Unless otherwise stated, they all behave as an average window.
+Windows form the foundation of your app. They provide a canvas with basic, built-in actions such as "closing" and "resizing". Although users may see windows as being all the same, elementary OS has several distinct window types. It's important to understand the types of windows available to you, window behavior in general, and behavior that is specific to a certain window type. This section will cover the different types of windows available in elementary OS. Although each type of window is a bit different, think of them all as a subclass of a window. Unless otherwise stated, they all behave as an average window.
 
-* **View Windows** are the most literal kind of "Window" available. They show content such as presentations, web pages, documents, etc. These Windows act as a sort of frame around the specific content they display. They typically allow multiple instances of an application to be shown and may utilize tabs to help keep content organized without displaying too many windows.
-* **App Windows** are the main windows of apps that are not document-based. These windows typically only allow one instance of an application to be shown.
+* **View Windows** are the most literal kind of "Window" available. They show content such as presentations, web pages, documents, etc., and act as a sort of frame around them. Accordingly, applications typically use multiple view windows to display different instances of content. A "tabbed" view can organize applications that produce many windows.
+* **App Windows** are the main windows of apps that are not document-based. Applications rarely use more than a single instance of these windows.
 * **Dialogs and Alerts** are temporary windows that require a response from a user. Dialogs and Alerts are especially unique types of windows with much stricter guidelines for their use and visual style. They typically belong to App or View windows and are often modal. We'll discuss what modality means in a bit.
 
 ### Window Titles {#window-tiles}
 
 When dealing with window titles, consider that their main use is in distinguishing one window from another. A good window title will provide a description that helps a user make a selection. Keep that in mind as you consider the following:
 
-* A view window should display the name of the content being viewed.  For example, in Midori the window title reflects the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
-* A window's title should not show the vendor name or version number of the app.  Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
+* A view window should display the name of the content being viewed. For example, Midori's window title reflects the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
+* A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
 * Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
-* Don’t display pathnames in window titles, only the current destination. If you have two paths that are very similar it will be hard to distinguish them when displaying the full path. If you only show the destination, the distinction is clear.
+* Don’t display pathnames in window titles—only the current destination. For instance, it is hard to distinguish between two similar paths when they are displayed in full. If you only show the destination, the distinction is clear.
 
 ## Dialogs {#dialogs}
 <div class="dialog">
@@ -390,11 +390,11 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 
 ### "OK" is not Okay {#ok-is-not-okay}
 
-When presenting a dialog to a user, always use explicit action names like "Save...", "Shut Down", etc. Consider that using "OK" enables users to proceed without understand the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the information presented before making a selection.
+When presenting a dialog to a user, always use explicit action names like "Save..." or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
 
 ### Preference Dialogs {#preference-dialogs}
 
-Preference dialogs should be made Transient, but not Modal. When a user makes a change in a preference dialog, the change should be immediately visible in the UI. If the dialog is modal, the user may be blocked from seeing (and especially from interacting with) the change. This means they will have to close the dialog, evaluate the change, then possibly re-open the dialog. By making the dialog transient, we keep the dialog on top for easy access, but we also allow the user to evaluate and possibly revert the change without having to close and re-open the preference dialog.
+Preference dialogs should be made Transient, but not Modal. When a user makes a change in a preference dialog, the change should be immediately visible in the UI. If the dialog is modal, the user may be blocked from seeing (and especially from interacting with) the change. This means they will have to close the dialog, evaluate the change, then possibly re-open the dialog. By making the dialog transient, we keep the dialog on top for easy access, but we also let the user evaluate and possibly revert the change without having to close and re-open the preference dialog.
 
 -------------------------------------------
 
@@ -417,7 +417,7 @@ Popovers should not be used when displaying only a simple list of items; instead
 
 ## Toolbars {#toolbars}
 
-A Toolbar is useful for providing users with quick access to an app's most used features. Besides Buttons, a Toolbar is one of the most frequently used UI elements. It may seem like a simple container, but it is important to remain consistent in it's use and organization.
+A Toolbar is useful for providing users with quick access to an app's most used features. Besides Buttons, a Toolbar is one of the most frequently used UI elements. It may seem like a simple container, but it is important to remain consistent in its use and organization.
 
 ### Ordering Toolbar Items {#ordering-toolbar-items}
 
@@ -441,7 +441,7 @@ Consider the "clear" button present in [search fields](#search-fields). This but
 
 ### Sensitivity {#sensitivity}
 
-Sometimes it doesn't make sense for a user to interact with a widget until some pre-requisite is fulfilled. For example, It doesn't make sense to allow a user to click the "Forward" button in a browser unless there is forward history available. In this case, you should make the "Forward" button insensitive or a user may click it, expecting a result, and be confused when nothing happens.
+Sometimes it doesn't make sense for a user to interact with a widget until some pre-requisite is fulfilled. For example, It doesn't make sense to let a user click a browser's "Forward" button unless there is forward history available. In this case, you should make the "Forward" button insensitive or a user may click it, expecting a result, and be confused when nothing happens.
 
 It's usually better to make a widget insensitive than to hide it altogether. Making a widget insensitive informs the user that the functionality is available, but only after a certain condition is met. Hiding the widget gives the impression that the functionality is not available at all or can leave a user wondering why a feature has suddenly "disappeared".
 
@@ -488,7 +488,7 @@ The Welcome Screen is a friendly way to help users get started with your app.
 
 Typically a Welcome Screen is used for apps like Noise or Scratch where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
 
-Make sure that if your app allows its library to be cleared that the Welcome Screen is shown again instead of an empty list.
+If your app lets users clear its library, make sure that it returns to the Welcome Screen instead of an empty list.
 
 ### Labeling {#welcome-screen-labeling}
 
@@ -509,7 +509,7 @@ A source list may be used as a high-level form of navigation. Source lists are u
 
 ### Sections {#sections}
 
-A source list may be separated into different collapsible sections, each with its own heading. For example, a file manager might have a section for bookmarked locations, a section for storage devices attached to the computer, and a section for network locations. These sections help group related items in the source list and allows the user to hide away sections they might not use.
+A source list may be separated into different collapsible sections, each with its own heading. For example, a file manager might have a section for bookmarked locations, a section for storage devices attached to the computer, and a section for network locations. These sections help group related items in the source list and lets the user hide away sections they might not use.
 
 Avoid nesting expandable sections within a source list if possible; if you find yourself wanting to do this, you may need to rethink the sections.
 
@@ -551,7 +551,7 @@ Like menu items, Text Button labels should consist of an Action or a Location bu
 
 "Remove Account", "Transfer to Jim's Laptop", and "Import 20 Songs" are good labels.
 
-"OK", "Get more storage!", and "Low Battery" are not good button labels. The "Get more storage!" label uses incorrect capitalization and unnecessary punctuation. With the other two labels, It's not very clear what will happen when these buttons are clicked.
+"OK", "Get more storage!", and "Low Battery" are not good button labels. The "Get more storage!" label has incorrect capitalization and unnecessary punctuation. The other two labels do not indicate what will happen as a result of clicking the button.
 
 #### Tooltips {#text-buttons-tooltips}
 
@@ -656,7 +656,7 @@ See also: _[3 Ways to Make Checkboxes, Radio Buttons Easier to Click](http://uxm
 
 ## Notebooks {#notebooks}
 
-Notebooks are a type of widget that allow showing one of multiple pages in an app, also colloquially referred to as "tab bars."
+Notebooks are a type of widget that lets apps show one of multiple pages (also colloquially referenced as "tab bars").
 
 ### Static Notebook {#static-notebook}
 
@@ -1043,7 +1043,7 @@ An ellipsis should be used to let a user know that more information or a further
 
 ### Shortened Text {#shortened-text}
 
-Ellipses should be used when shortening text that cannot fit in any specific place. For example, if a playlist's name is longer than the space available in the sidebar, truncate it and use an ellipsis to signify that it's been truncated. There are two ways to use an ellipsis when shortening text:
+Ellipses should be used when shortening text that cannot fit in any specific place. For example, if a playlist's name is longer than the space available in the sidebar, truncate it and use an ellipsis to signify its truncation. There are two ways to use an ellipsis when shortening text:
 
 * End truncation. If the important or distinctive text is at the beginning of the string, truncate it at the end and append an ellipsis.
 * Middle truncation. When the end of the text is more important or distinctive, truncate the text in the middle and replace the truncated text with an ellipsis.
