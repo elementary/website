@@ -12,7 +12,7 @@ echo "###########################"
     --ignore-pattern "*.min.js" \
     --ignore-pattern "*.pack.js" \
     --ignore-pattern "terminal.js" \
-    "scripts/**/*.js"
+    "_scripts/**/*.js"
 
 echo "############################"
 echo "Javascript linting complete!"
