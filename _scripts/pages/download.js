@@ -145,7 +145,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         // UTILITY: detectOS: Detect the OS
         function detectOS () {
             var ua = window.navigator.userAgent
-            if (ua == null || ua == false) return 'Other'
+            if (ua == null || ua === false) return 'Other'
             if (ua.indexOf('Android') >= 0) {
                 return 'Android'
             }
@@ -181,8 +181,9 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             paymentHTTP.send('description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
                               '&amount=' + amount +
                               '&token=' + token.id +
-                              '&email=' + encodeURIComponent(token.email)) +
+                              '&email=' + encodeURIComponent(token.email) +
                               '&os=' + detectedOS
+            )
         }
 
         // ACTION: .download-http.click: Track download over HTTP
