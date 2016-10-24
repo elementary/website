@@ -142,30 +142,10 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             })
         }
 
-        // ACTION: doStripePayment: Actually process the payment via Stripe
-        function doStripePayment (amount, token) {
-            var paymentHTTP, $amountTen
-            $amountTen = $('#amount-ten')
-            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
-            if ($amountTen.val() !== 0) {
-                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
-                $amountTen.each(amountSelect)
-                updateDownloadButton()
-            }
-            paymentHTTP = new XMLHttpRequest()
-            paymentHTTP.open('POST', './backend/payment.php', true)
-            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-            paymentHTTP.send('description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
-                              '&amount=' + amount +
-                              '&token=' + token.id +
-                              '&email=' + encodeURIComponent(token.email)) +
-                              '&os=' + detectedOS
-        }
-
         // UTILITY: detectOS: Detect the OS
         function detectOS () {
             var ua = window.navigator.userAgent
-            if (ua == null || ua == false) return 'Other'
+            if (ua == null || ua === false) return 'Other'
             if (ua.indexOf('Android') >= 0) {
                 return 'Android'
             }
@@ -184,6 +164,27 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             return 'Other'
         }
         var detectedOS = detectOS()
+
+        // ACTION: doStripePayment: Actually process the payment via Stripe
+        function doStripePayment (amount, token) {
+            var paymentHTTP, $amountTen
+            $amountTen = $('#amount-ten')
+            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
+            if ($amountTen.val() !== 0) {
+                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
+                $amountTen.each(amountSelect)
+                updateDownloadButton()
+            }
+            paymentHTTP = new XMLHttpRequest()
+            paymentHTTP.open('POST', './backend/payment.php', true)
+            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+            paymentHTTP.send('description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
+                              '&amount=' + amount +
+                              '&token=' + token.id +
+                              '&email=' + encodeURIComponent(token.email) +
+                              '&os=' + detectedOS
+            )
+        }
 
         // ACTION: .download-http.click: Track download over HTTP
         if (window.ga) {
