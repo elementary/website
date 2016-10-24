@@ -10,10 +10,6 @@ if ( !empty($amount) ) {
     $processing = true;
 }
 
-if ( $processing ) {
-    $OS = strtolower(htmlentities($_POST['os'], ENT_QUOTES, 'UTF-8'));
-}
-
 ////    Error Handling
 function LastError($db) {
     if (getenv('PHPENV') !== 'production') {
@@ -69,7 +65,9 @@ if ( $processing ) {
     }
 
     ////    Update
-    $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$amount.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$amount.'\') / (`Count` + 1)) WHERE `OS`=\''.$OS.'\' OR `OS`=\'total\';';
+    $amount = htmlentities($amount, ENT_QUOTES);
+    $os = htmlentities($os, ENT_QUOTES);
+    $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$amount.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$amount.'\') / (`Count` + 1)) WHERE `OS`=\''.$os.'\' OR `OS`=\'total\';';
     $result = $db->exec($query); // Result-less
 
     if ( $db->lastErrorCode() ) LastError($db);
