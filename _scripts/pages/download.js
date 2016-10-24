@@ -178,11 +178,12 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             paymentHTTP = new XMLHttpRequest()
             paymentHTTP.open('POST', './backend/payment.php', true)
             paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-            paymentHTTP.send('description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
-                              '&amount=' + amount +
-                              '&token=' + token.id +
-                              '&email=' + encodeURIComponent(token.email) +
-                              '&os=' + detectedOS
+            paymentHTTP.send(
+                'description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
+                '&amount=' + amount +
+                '&token=' + token.id +
+                '&email=' + encodeURIComponent(token.email) +
+                '&os=' + detectedOS
             )
         }
 
