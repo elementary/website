@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elementary/mvp.git"
+    "url": "git+https://github.com/elementary/website.git"
   },
   "author": "elementary",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elementary/mvp/issues"
+    "url": "https://github.com/elementary/website/issues"
   },
-  "homepage": "https://github.com/elementary/mvp#readme"
+  "homepage": "https://github.com/elementary/website#readme"
 }
