@@ -57,7 +57,7 @@ if ( $processing ) {
 
     $Systems = array('total', 'android', 'ios', 'windows', 'macos', 'linux', 'other');
     $query = 'DELETE FROM `AveragePayments` WHERE `OS` NOT IN (\''.implode('\', \'', $Systems).'\')';
-    //$db->exec($query); // Result-less
+    $db->exec($query); // Result-less
 
     foreach ( $Systems as $System ) {
         $query = 'INSERT OR IGNORE INTO `AveragePayments` VALUES (\''.$System.'\', 0, 0, 0);';
@@ -68,7 +68,6 @@ if ( $processing ) {
     $amount = intval(htmlentities($amount, ENT_QUOTES));
     $os = strtolower(htmlentities($os, ENT_QUOTES));
     $query  = 'UPDATE `AveragePayments` SET `Total` = `Total` + \''.$amount.'\', `Count` = `Count` + 1, `Average` = ((`Total` + \''.$amount.'\') / (`Count` + 1)) WHERE `OS`=\''.$os.'\' OR `OS`=\'total\';';
-    var_dump($query);
     $result = $db->exec($query); // Result-less
 
     if ( $db->lastErrorCode() ) LastError($db);
