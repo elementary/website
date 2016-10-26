@@ -57,7 +57,7 @@ if ( $processing ) {
 
     $Systems = array('total', 'android', 'ios', 'windows', 'macos', 'linux', 'other');
     $query = 'DELETE FROM `AveragePayments` WHERE `OS` NOT IN (\''.implode('\', \'', $Systems).'\')';
-    $db->exec($query); // Result-less
+    //$db->exec($query); // Result-less
 
     foreach ( $Systems as $System ) {
         $query = 'INSERT OR IGNORE INTO `AveragePayments` VALUES (\''.$System.'\', 0, 0, 0);';
