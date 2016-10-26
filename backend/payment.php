@@ -22,7 +22,7 @@ if (isset($_POST['token'])) {
         ));
         // Set an insecure, HTTP only cookie for 10 years in the future.
         $encoded = urlencode(str_replace(' ', '_', 'has_paid_'.$description));
-        //setcookie($encoded, $amount, time() + 315360000, '/', '', 0, 1);
+        setcookie($encoded, $amount, time() + 315360000, '/', '', 0, 1);
         require_once __DIR__.'/average-payments.php';
         echo 'OK';
     } catch(\Stripe\Error\Card $e) {
