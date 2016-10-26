@@ -42,8 +42,7 @@
                 <div id="amounts">
                     <?php
                         $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
-                        $disallowed = [' ', '.'];
-                        $encoded = urlencode(str_replace($disallowed, '_', $paidString));
+                        $encoded = urlencode($disallowed, '_', $paidString);
                         if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
                             ?>
                     <input type="hidden" id="amount-ten" value="0">
