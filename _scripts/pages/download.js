@@ -92,6 +92,10 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         $('#amounts').on('click', updateDownloadButton)
         $('#amounts input').on('input', updateDownloadButton)
         $(document).on('ready', updateDownloadButton)
+        
+        // DEBUG
+        if (window.ga) console.log('window.ga is fine')
+        if (ga) console.log('ga is fine')
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
         $('#download').click(function () {
