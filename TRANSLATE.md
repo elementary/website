@@ -18,7 +18,7 @@ Languages are manually updated, so you won't see your work published just after 
 
 ## Script
 
-The following script will update your local copy of master, push new strings to Transifex, then remove and re-download the translation files. Finally, it will check the translations and push the branch. You should then file a pull request against [that branch](https://github.com/elementary/mvp/compare/master...translations-update), including the check result.
+The following script will update your local copy of master, push new strings to Transifex, then remove and re-download the translation files. Finally, it will check the translations and push the branch. You should then file a pull request against [that branch](https://github.com/elementary/website/compare/master...translations-update), including the check result.
 
 ```
 git checkout master
@@ -102,4 +102,4 @@ tx push -s -r <page-name>
 
 ## Adding a new language to the list on the website
 
-The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/mvp/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appending it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
+The list of available languages is hard-coded in [`_templates/l10n.php`](https://github.com/elementary/website/blob/master/_templates/l10n.php#L2). If a new language is complete, you can add it by appending it to the list. Languages are sorted by index (see [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) and are localized.
