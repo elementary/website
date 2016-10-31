@@ -2,6 +2,7 @@
 
 ////    Settings
 $database       = __DIR__.'/../data/_average_payments.db';
+require_once __DIR__.'/log-echo.php';
 
 ////    Parse Variables
 $processing = false;
@@ -12,11 +13,13 @@ if ( !empty($amount) ) {
 
 ////    Error Handling
 function LastError($db) {
+    global $sentry;
+    $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
     if (getenv('PHPENV') !== 'production') {
-        $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
-        var_dump($Error);
+        echo $Error;
     } else {
-        echo 'ERROR: a database error occured';
+        error_log($Error);
+        $sentry->captureMessage($msg);
     }
 
     exit;
@@ -25,22 +28,22 @@ function LastError($db) {
 ////    Open database
 if ( $processing ) {
     if ( !is_writable(dirname($database)) ) {
-        echo 'ERROR: database is not writable.';
-        exit;
+        log_echo('ERROR: database is not writable.');
+        exit(1);
     }
 
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
     } catch (Exception $e) {
-        echo 'ERROR: unable to create database';
-        exit;
+        log_echo('ERROR: unable to create database');
+        exit(2);
     }
 } else {
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
     } catch (Exception $e) {
-        echo 'ERROR: unable to open database';
-        exit;
+        log_echo('ERROR: unable to open database');
+        exit(3);
     }
 }
 

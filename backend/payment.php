@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__.'/lib/autoload.php';
 require_once __DIR__.'/config.loader.php';
+require_once __DIR__.'/log-echo.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -26,7 +27,9 @@ if (isset($_POST['token'])) {
         require_once __DIR__.'/average-payments.php';
         echo 'OK';
     } catch(\Stripe\Error\Card $e) {
-        echo 'error';
+        error_log($e);
+        $sentry->captureMessage($e);
+        echo 'An error occurred.';
     }
 } else {
     echo $config['stripe_pk'];
