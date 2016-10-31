@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__.'/../backend/lib/autoload.php';
+require_once __DIR__.'/../backend/log-echo.php';
 require_once __DIR__.'/../backend/config.loader.php';
 
 // Setup sentry error logging

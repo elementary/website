@@ -30,8 +30,9 @@ function ipCheck($hostname, $debug = false) {
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug > 1 ) {
+        if ( $debug ) {
             var_dump($record);
+            echo "\n";
         }
         $continent = $record->continent->code;
         $country   = $record->country->isoCode;
@@ -39,7 +40,7 @@ function ipCheck($hostname, $debug = false) {
 
     } catch (\Exception $e) {
         if ( $debug ) {
-            echo '<!-- '.$e->getMessage().' -->'."\n";        
+            echo '<!-- '.$e->getMessage().' -->'."\n";
         }
 
         $continent = false;
@@ -144,14 +145,14 @@ function getCurrentCountry($hostname, $debug = false) {
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug > 1 ) {
+        if ( $debug ) {
             var_dump($record);
         }
         $country   = $record->country->isoCode;
 
     } catch (\Exception $e) {
         echo '<!-- '.$e->getMessage().' -->'."\n";
-        $country   = false;
+        $country = false;
     }
 
     if ( $debug ) {

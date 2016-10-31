@@ -32,17 +32,14 @@ $timeInterval = 24 * 60 * 60;
 // CONFIG ENDS HERE
 
 require_once __DIR__ . '/config.loader.php';
+require_once __DIR__ . '/log-echo.php';
 
 date_default_timezone_set('UTC');
 
 header('Content-Type: text/plain');
 
-function log_info($msg) { // Basic logger
-	echo $msg."\n";
-}
-
 if ( !is_writable('./chart.json') ) {
-	log_info('Error: File `backend/chart.json` is not writable.');
+	log_echo('ERROR: File `backend/chart.json` is not writable.');
 	exit(1);
 }
 
@@ -55,7 +52,7 @@ $tasks = array();
 // Make HTTP requests
 $nextCollectionPoint = $apiEndpoint;
 while (!empty($nextCollectionPoint)) {
-	log_info('Requesting tasks from '.$nextCollectionPoint);
+	log_echo('Chart Update - Requesting tasks from '.$nextCollectionPoint);
 	$json = file_get_contents($nextCollectionPoint);
 	$data = json_decode($json, true);
 
@@ -80,8 +77,8 @@ while (!empty($nextCollectionPoint)) {
 	}
 }
 
-log_info('Got all tasks.');
-log_info('Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo));
+log_echo('Chart Update - Got all tasks.');
+log_echo('Chart Update - Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo));
 
 $dateStatuses = array('fixed', 'in_progress', 'created');
 
@@ -105,4 +102,4 @@ ksort($chart);
 
 file_put_contents('./chart.json', json_encode($chart, JSON_PRETTY_PRINT));
 
-log_info('Done.');
+log_echo('Chart Update - Done.');
