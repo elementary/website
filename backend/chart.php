@@ -52,7 +52,7 @@ $tasks = array();
 // Make HTTP requests
 $nextCollectionPoint = $apiEndpoint;
 while (!empty($nextCollectionPoint)) {
-	log_echo('Chart Update - Requesting tasks from '.$nextCollectionPoint);
+	echo 'Requesting tasks from '.$nextCollectionPoint;
 	$json = file_get_contents($nextCollectionPoint);
 	$data = json_decode($json, true);
 
@@ -77,8 +77,8 @@ while (!empty($nextCollectionPoint)) {
 	}
 }
 
-log_echo('Chart Update - Got all tasks.');
-log_echo('Chart Update - Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo));
+echo 'Got all tasks.';
+echo 'Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo);
 
 $dateStatuses = array('fixed', 'in_progress', 'created');
 
@@ -102,4 +102,4 @@ ksort($chart);
 
 file_put_contents('./chart.json', json_encode($chart, JSON_PRETTY_PRINT));
 
-log_echo('Chart Update - Done.');
+echo 'Done.';

@@ -41,9 +41,9 @@ function ipCheck($hostname, $debug = false) {
 
     } catch (\Exception $e) {
         if ( $debug ) {
-            log_echo('<!-- '.$e->getMessage().' -->'."\n");
+            echo $e->getMessage();
         } else {
-            error_log($e->getMessage());
+            log_echo('<!-- '.$e->getMessage().' -->'."\n");
         }
 
         $continent = false;
@@ -155,9 +155,9 @@ function getCurrentCountry($hostname, $debug = false) {
 
     } catch (\Exception $e) {
         if ( $debug ) {
-            log_echo('<!-- '.$e->getMessage().' -->'."\n");
+            echo $e->getMessage();
         } else {
-            error_log($e->getMessage());
+            log_echo('<!-- '.$e->getMessage().' -->'."\n");
         }
         $country = false;
     }
