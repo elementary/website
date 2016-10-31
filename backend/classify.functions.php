@@ -9,7 +9,8 @@
 // OC   Oceania          SGP1
 // AN   Antarctica       SGP1
 
-include 'geoip2.phar';
+require_once __DIR__.'/log-echo.php';
+require_once __DIR__.'/geoip2.phar';
 use GeoIp2\Database\Reader;
 
 ////    ipCheck

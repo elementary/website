@@ -2,6 +2,7 @@
 
 ////    Settings
 $database       = __DIR__.'/../data/_average_payments.db';
+require_once __DIR__.'/log-echo.php';
 
 ////    Parse Variables
 $processing = false;
