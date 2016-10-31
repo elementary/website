@@ -16,11 +16,11 @@ if ( $processing ) {
 
 ////    Error Handling
 function LastError($db) {
+    $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
     if (getenv('PHPENV') !== 'production') {
-        $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
-        var_dump($Error);
+        log_echo($Error);
     } else {
-        echo 'ERROR: a database error occured';
+        error_log $Error;
     }
 
     exit;
@@ -30,21 +30,21 @@ function LastError($db) {
 if ( $processing ) {
     if ( !is_writable(dirname($database)) ) {
         echo 'ERROR: database is not writable.';
-        exit;
+        exit(1);
     }
 
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
     } catch (Exception $e) {
         echo 'ERROR: unable to create database';
-        exit;
+        exit(2);
     }
 } else {
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
     } catch (Exception $e) {
         echo 'ERROR: unable to open database';
-        exit;
+        exit(3);
     }
 }
 

@@ -40,7 +40,9 @@ function ipCheck($hostname, $debug = false) {
 
     } catch (\Exception $e) {
         if ( $debug ) {
-            echo '<!-- '.$e->getMessage().' -->'."\n";
+            log_echo '<!-- '.$e->getMessage().' -->'."\n";
+        } else {
+            error_log($e->getMessage());
         }
 
         $continent = false;
@@ -151,7 +153,11 @@ function getCurrentCountry($hostname, $debug = false) {
         $country   = $record->country->isoCode;
 
     } catch (\Exception $e) {
-        echo '<!-- '.$e->getMessage().' -->'."\n";
+        if ( $debug ) {
+            log_echo '<!-- '.$e->getMessage().' -->'."\n";
+        } else {
+            error_log($e->getMessage());
+        }
         $country = false;
     }
 
