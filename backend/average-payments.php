@@ -17,7 +17,7 @@ function LastError($db) {
     if (getenv('PHPENV') !== 'production') {
         log_echo($Error);
     } else {
-        error_log $Error;
+        error_log($Error);
     }
 
     exit;
@@ -26,21 +26,21 @@ function LastError($db) {
 ////    Open database
 if ( $processing ) {
     if ( !is_writable(dirname($database)) ) {
-        echo 'ERROR: database is not writable.';
+        log_echo('ERROR: database is not writable.');
         exit(1);
     }
 
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
     } catch (Exception $e) {
-        echo 'ERROR: unable to create database';
+        log_echo('ERROR: unable to create database');
         exit(2);
     }
 } else {
     try {
         $db = new SQLite3($database, SQLITE3_OPEN_READONLY);
     } catch (Exception $e) {
-        echo 'ERROR: unable to open database';
+        log_echo('ERROR: unable to open database');
         exit(3);
     }
 }
