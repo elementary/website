@@ -27,7 +27,8 @@ if (isset($_POST['token'])) {
         require_once __DIR__.'/average-payments.php';
         echo 'OK';
     } catch(\Stripe\Error\Card $e) {
-        error_log($e);
+        error_log($e););
+        $sentry->captureMessage($e);
         echo 'An error occurred.';
     }
 } else {
