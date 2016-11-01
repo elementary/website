@@ -1,7 +1,7 @@
 <?php
 
 ////    Settings
-$database       = __DIR__.'/../data/_average_payments.db';
+$database       = __DIR__.'/../_data/average_payments.db';
 require_once __DIR__.'/log-echo.php';
 
 ////    Parse Variables

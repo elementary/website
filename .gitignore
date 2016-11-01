@@ -5,7 +5,7 @@
 /backend/libs/
 /backend/chart.json
 /backend/config.php
-/data/_average_payments.db
+/_data/average_payments.db
 /node_modules/
 /scripts/
 /styles/
