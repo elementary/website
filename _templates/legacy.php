@@ -38,6 +38,3 @@ if (getenv('PHPENV') === 'production' && $is_HTTP) {
 
 <?php
 }
-
-$l10n->end_html_translation();
-?>
