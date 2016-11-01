@@ -3,7 +3,7 @@
 extract_translations () {
 	filename="$1"
 	pagename=$(echo "$filename" | sed 's/\.php$//' | sed 's/\.md$//')
-	output_file="lang/en/$pagename.json"
+	output_file="_lang/en/$pagename.json"
 	output_dirname=`dirname "$output_file"`
 
 	# Ignore some files
@@ -25,13 +25,13 @@ extract_translations () {
 	escaped_pagename=$(echo "$pagename" | sed 's/\//_/g')
 	if ! grep -F -q "[elementary-mvp.$escaped_pagename]" .tx/config; then
 		echo "Adding $pagename to .tx/config"
-		tx set -t KEYVALUEJSON --auto-local -r "elementary-mvp.$escaped_pagename" "lang/<lang>/$pagename.json" --source-lang en --execute
+		tx set -t KEYVALUEJSON --auto-local -r "elementary-mvp.$escaped_pagename" "_lang/<lang>/$pagename.json" --source-lang en --execute
 	fi
 }
 
 # Cleanup
-mkdir -p lang/en
-rm -rf lang/en/*
+mkdir -p _lang/en
+rm -rf _lang/en/*
 
 echo "Extracting translations..."
 

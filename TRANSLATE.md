@@ -1,6 +1,6 @@
 # Translators
 
-You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/. Please don't update directly files in `lang/` on Github as they'll be overriden when pulling new translations from Transifex.
+You can translate the website online on Transifex: https://www.transifex.com/projects/p/elementary-mvp/. Please don't update directly files in `_lang/` on Github as they'll be overridden when pulling new translations from Transifex.
 
 You can propose new languages if they're not listed. Make sure to avoid requesting languages that already exist, for instance adding _Russian (Russia)_ when _Russian_ is available.
 
@@ -26,7 +26,7 @@ git pull
 .tx/prepush.sh
 tx push -s
 git checkout -b translations-update
-rm lang/* -Rf
+rm _lang/* -Rf
 tx pull -a
 php backend/translations-checker.php
 git add -A
@@ -51,7 +51,7 @@ If you want to change a translation key for an element, just add a `data-l10n-id
 
 ## Disabling a translation
 
-To ignore a translation string, set it to `false` in `/lang/en/<page>.json`:
+To ignore a translation string, set it to `false` in `/_lang/en/<page>.json`:
 
 ```js
 {

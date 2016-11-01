@@ -15,7 +15,7 @@ function isJson($filename) {
 }
 
 function translationFilename($filename) {
-    $filearr = explode('lang', $filename);
+    $filearr = explode('_lang', $filename);
     end($filearr);
     return current($filearr);
 }
@@ -37,7 +37,7 @@ function globRecursive($Pattern, $Flags = 0) {
     return $Return;
 }
 
-$translation_files = globRecursive(__DIR__.'/../lang/*/*.json');
+$translation_files = globRecursive(__DIR__.'/../_lang/*/*.json');
 $result['invalid_files'] = 0;
 $result['valid_files'] = 0;
 $result['errors'] = array();

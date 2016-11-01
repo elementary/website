@@ -1,6 +1,6 @@
 <?php
 class Translator {
-    const LANG_DIR = 'lang';
+    const LANG_DIR = '_lang';
 
     protected $available_langs = array(
         'en' => 'English',
