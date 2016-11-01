@@ -19,7 +19,7 @@ extract_translations () {
 	fi
 
 	# Run l10n-extract.php
-	php -f backend/extract-l10n.php "$pagename" 2>>/dev/null > "$output_file"
+	php -f _backend/extract-l10n.php "$pagename" 2>>/dev/null > "$output_file"
 
 	# Add file to .tx/config
 	escaped_pagename=$(echo "$pagename" | sed 's/\//_/g')
