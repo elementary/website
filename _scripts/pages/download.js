@@ -100,12 +100,12 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             console.log('Starting payment for ' + paymentAmount)
             // Free download
             if (paymentAmount < paymentMinimum) {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
             } else {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
                 doStripeCheckout(paymentAmount)
             }
@@ -142,30 +142,10 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             })
         }
 
-        // ACTION: doStripePayment: Actually process the payment via Stripe
-        function doStripePayment (amount, token) {
-            var paymentHTTP, $amountTen
-            $amountTen = $('#amount-ten')
-            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
-            if ($amountTen.val() !== 0) {
-                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
-                $amountTen.each(amountSelect)
-                updateDownloadButton()
-            }
-            paymentHTTP = new XMLHttpRequest()
-            paymentHTTP.open('POST', './backend/payment.php', true)
-            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-            paymentHTTP.send('description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
-                              '&amount=' + amount +
-                              '&token=' + token.id +
-                              '&email=' + encodeURIComponent(token.email)) +
-                              '&os=' + detectedOS
-        }
-
         // UTILITY: detectOS: Detect the OS
         function detectOS () {
             var ua = window.navigator.userAgent
-            if (ua == null || ua == false) return 'Other'
+            if (ua == null || ua === false) return 'Other'
             if (ua.indexOf('Android') >= 0) {
                 return 'Android'
             }
@@ -185,19 +165,39 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
         var detectedOS = detectOS()
 
-        // ACTION: .download-http.click: Track download over HTTP
-        if (window.ga) {
-            $('.download-link').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
-            })
-            $('.download-link.http').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
-            })
-            $('.download-link.magnet').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
-            })
+        // ACTION: doStripePayment: Actually process the payment via Stripe
+        function doStripePayment (amount, token) {
+            var paymentHTTP, $amountTen
+            $amountTen = $('#amount-ten')
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
+            if ($amountTen.val() !== 0) {
+                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
+                $amountTen.each(amountSelect)
+                updateDownloadButton()
+            }
+            paymentHTTP = new XMLHttpRequest()
+            paymentHTTP.open('POST', './backend/payment.php', true)
+            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+            paymentHTTP.send(
+                'description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
+                '&amount=' + amount +
+                '&token=' + token.id +
+                '&email=' + encodeURIComponent(token.email) +
+                '&os=' + detectedOS
+            )
         }
+
+        // ACTION: .download-http.click: Track download over HTTP
+        $('.download-link').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
+        })
+        $('.download-link.http').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
+        })
+        $('.download-link.magnet').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
+        })
 
         // RETURN: openDownloadOverlay: Open the Download modal.
         function openDownloadOverlay () {
