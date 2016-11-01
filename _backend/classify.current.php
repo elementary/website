@@ -1,6 +1,6 @@
 <?php
 
-include_once 'classify.functions.php';
+require_once 'classify.functions.php';
 
 if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
     $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];

@@ -43,9 +43,8 @@ $l10n->set_domain('layout');
             </ul>
         </footer>
 
-        <?php include __DIR__."/legacy.php" ?>
+        <?php include __DIR__.'/legacy.php'; ?>
     </body>
 </html>
 <?php
 $l10n->end_html_translation();
-?>

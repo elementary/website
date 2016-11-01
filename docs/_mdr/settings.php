@@ -47,7 +47,7 @@ $Templates['Alert']     = $MDR['Templates'].'alert.php';
 $Templates['Footer']    = $MDR['Templates'].'footer.php';
 
 ////    Special
-include $MDR['Root'].'/_backend/preload.php';
+require_once $MDR['Root'].'/_backend/preload.php';
 
 
 

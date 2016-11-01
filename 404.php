@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_backend/preload.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['name'] = '404';
     $page['title'] = 'Page Not Found &sdot; elementary';

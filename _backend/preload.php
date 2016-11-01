@@ -8,7 +8,7 @@ require_once __DIR__.'/config.loader.php';
 // even though it's set automatically.
 $respectIE = true;
 // Set the DNT variables.
-include __DIR__.'/here-miss.php';
+require_once __DIR__.'/here-miss.php';
 
 date_default_timezone_set('UTC');
 
@@ -56,7 +56,7 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
-include_once __DIR__.'/../_backend/l10n.php';
+require_once __DIR__.'/../_backend/l10n.php';
 $template['header'] = __DIR__.'/header.php';
 $template['alert'] = __DIR__.'/alert.php';
 $template['footer'] = __DIR__.'/footer.php';

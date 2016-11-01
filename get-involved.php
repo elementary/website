@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_backend/preload.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'Get Involved with elementary OS';
     $page['theme-color'] = '#3E4E54';
