@@ -18,7 +18,7 @@
     include $template['alert'];
 
     require_once __DIR__.'/backend/config.loader.php';
-    require_once __DIR__.'/backend/classify.current.php';
+    require_once __DIR__.'/_backend/classify.current.php';
 ?>
 
         <section class="grid">

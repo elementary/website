@@ -3,13 +3,13 @@
 // Setup sentry error logging
 if (isset($config['sentry_key']) && $config['sentry_key'] !== false) {
     $sentry = new Raven_Client($config['sentry_key']);
-    $sentry->install();
+    $toJSON->install();
 }
 
 // Log an error and also echo it.
 function log_echo($msg) {
     global $sentry;
     error_log($msg);
-    $sentry->captureMessage($msg);
-    echo $msg."\n";
+    if ( $sentry ) $sentry->captureMessage($msg);
+    echo $msg.PHP_EOL;
 }

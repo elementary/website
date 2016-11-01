@@ -2,10 +2,11 @@
 *~
 *.log
 /.vagrant/
-/backend/libs/
-/backend/chart.json
-/backend/config.php
-/_data/average_payments.db
+/_backend/libs/
+/_backend/config.php
+/_data/*
+/data/average-payments.json
+/data/chart.json
 /node_modules/
 /scripts/
 /styles/

@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__.'/lib/autoload.php';
-require_once __DIR__.'/config.loader.php';
-require_once __DIR__.'/log-echo.php';
+require_once __DIR__.'/../_backend/lib/autoload.php';
+require_once __DIR__.'/../_backend/config.loader.php';
+require_once __DIR__.'/../_backend/log-echo.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
