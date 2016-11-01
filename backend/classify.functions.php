@@ -9,7 +9,8 @@
 // OC   Oceania          SGP1
 // AN   Antarctica       SGP1
 
-include 'geoip2.phar';
+require_once __DIR__.'/log-echo.php';
+require_once __DIR__.'/geoip2.phar';
 use GeoIp2\Database\Reader;
 
 ////    ipCheck
@@ -30,8 +31,9 @@ function ipCheck($hostname, $debug = false) {
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug > 1 ) {
+        if ( $debug ) {
             var_dump($record);
+            echo "\n";
         }
         $continent = $record->continent->code;
         $country   = $record->country->isoCode;
@@ -39,7 +41,9 @@ function ipCheck($hostname, $debug = false) {
 
     } catch (\Exception $e) {
         if ( $debug ) {
-            echo '<!-- '.$e->getMessage().' -->'."\n";        
+            echo $e->getMessage();
+        } else {
+            log_echo('<!-- '.$e->getMessage().' -->'."\n");
         }
 
         $continent = false;
@@ -144,14 +148,18 @@ function getCurrentCountry($hostname, $debug = false) {
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug > 1 ) {
+        if ( $debug ) {
             var_dump($record);
         }
         $country   = $record->country->isoCode;
 
     } catch (\Exception $e) {
-        echo '<!-- '.$e->getMessage().' -->'."\n";
-        $country   = false;
+        if ( $debug ) {
+            echo $e->getMessage();
+        } else {
+            log_echo('<!-- '.$e->getMessage().' -->'."\n");
+        }
+        $country = false;
     }
 
     if ( $debug ) {
