@@ -81,7 +81,7 @@
     include $template['alert'];
 ?>
 
-<script>window.stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'</script>
+<script>window.stripeKey = '<?php include __DIR__.'/../api/payment.php'; ?>'</script>
 
 <form action="<?php echo $sitewide['root'] ?>store/order" method="post" class="grid grid--narrow">
 
