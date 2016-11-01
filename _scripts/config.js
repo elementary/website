@@ -10,7 +10,7 @@ import Promise from 'core-js/fn/promise'
 import jQuery from '~/lib/jquery'
 
 export default jQuery.then(($) => {
-    let configPath = '/api/config.json'
+    let configPath = '/api/config'
 
     if (window.location.host === 'beta.elementary.io') {
         const branch = window.location.pathname.split('/')[1]
@@ -18,7 +18,7 @@ export default jQuery.then(($) => {
         if (branch == null || branch === '') {
             console.error('Unable to determine branch name')
         } else {
-            configPath = `/${branch}/api/config.json`
+            configPath = `/${branch}/api/config`
         }
     }
 
