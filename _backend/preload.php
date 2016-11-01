@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/lib/autoload.php';
+include_once __DIR__.'/lib/autoload.php';
 require_once __DIR__.'/log-echo.php';
 require_once __DIR__.'/config.loader.php';
 
@@ -56,7 +56,8 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
-require_once __DIR__.'/../_backend/l10n.php';
-$template['header'] = __DIR__.'/header.php';
-$template['alert'] = __DIR__.'/alert.php';
-$template['footer'] = __DIR__.'/footer.php';
+require_once __DIR__.'/l10n.php';
+$template['header'] = __DIR__.'/../_templates/header.php';
+$template['alert']  = __DIR__.'/../_templates/alert.php';
+$template['legacy'] = __DIR__.'/../_templates/legacy.php';
+$template['footer'] = __DIR__.'/../_templates/footer.php';

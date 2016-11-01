@@ -43,7 +43,7 @@ $l10n->set_domain('layout');
             </ul>
         </footer>
 
-        <?php include __DIR__.'/legacy.php'; ?>
+        <?php include $template['legacy']; ?>
     </body>
 </html>
 <?php
