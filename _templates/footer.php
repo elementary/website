@@ -1,6 +1,4 @@
-<?php
-$l10n->set_domain('layout');
-?>
+<?php $l10n->set_domain('layout'); ?>
         </div>
         <footer>
             <div>
@@ -42,9 +40,10 @@ $l10n->set_domain('layout');
                 <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </footer>
-
-        <?php include $template['legacy']; ?>
+        <?php
+            include $template['legacy'];
+            $l10n->set_domain('layout');
+        ?>
     </body>
 </html>
-<?php
-$l10n->end_html_translation();
+<?php $l10n->end_html_translation();
