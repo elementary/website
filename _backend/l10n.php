@@ -1,4 +1,5 @@
 <?php
+
 class Translator {
     const LANG_DIR = '_lang';
 

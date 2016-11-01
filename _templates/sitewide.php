@@ -56,6 +56,7 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
+include_once __DIR__.'/../_backend/l10n.php';
 $template['header'] = __DIR__.'/header.php';
 $template['alert'] = __DIR__.'/alert.php';
 $template['footer'] = __DIR__.'/footer.php';
