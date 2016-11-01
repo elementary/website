@@ -102,12 +102,12 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             console.log('Starting payment for ' + paymentAmount)
             // Free download
             if (paymentAmount < paymentMinimum) {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
             } else {
-                if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
                 doStripeCheckout(paymentAmount)
             }
@@ -171,7 +171,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         function doStripePayment (amount, token) {
             var paymentHTTP, $amountTen
             $amountTen = $('#amount-ten')
-            if (window.ga) ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
                 $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)
@@ -190,18 +190,16 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
 
         // ACTION: .download-http.click: Track download over HTTP
-        if (window.ga) {
-            $('.download-link').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
-            })
-            $('.download-link.http').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
-            })
-            $('.download-link.magnet').click(function () {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
-            })
-        }
+        $('.download-link').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
+        })
+        $('.download-link.http').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
+        })
+        $('.download-link.magnet').click(function () {
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
+        })
 
         // RETURN: openDownloadOverlay: Open the Download modal.
         function openDownloadOverlay () {

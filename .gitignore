@@ -2,6 +2,7 @@
 *~
 *.log
 /.vagrant/
+/backend/libs/
 /backend/chart.json
 /backend/config.php
 /data/_average_payments.db
