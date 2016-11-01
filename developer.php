@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    include __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'Developer &sdot; elementary';
     $page['description'] = 'Resources for designing, developing, and publishing apps for elementary OS.';

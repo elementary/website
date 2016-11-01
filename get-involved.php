@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    include __DIR__.'/_backend/preload.php';
     include __DIR__.'/backend/config.loader.php';
 
     $page['title'] = 'Get Involved with elementary OS';

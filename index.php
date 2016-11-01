@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    include __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 

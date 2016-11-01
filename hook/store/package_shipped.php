@@ -6,7 +6,7 @@
 
 require_once __DIR__ . '/index.php';
 
-require_once __DIR__ . '/../../_templates/sitewide.php';
+require_once __DIR__ . '/../../_backend/preload.php';
 
 require_once __DIR__ . '/../../backend/config.loader.php';
 require_once __DIR__ . '/../../backend/lib/autoload.php';

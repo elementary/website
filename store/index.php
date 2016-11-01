@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/../_templates/sitewide.php';
+    include __DIR__.'/../_backend/preload.php';
 
     require_once __DIR__.'/../backend/config.loader.php';
     require_once __DIR__.'/../backend/store/product.php';

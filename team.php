@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    include __DIR__.'/_backend/preload.php';
 
     $page['description'] = 'Meet the people behind elementary.';
     $page['title'] = 'Team &sdot; elementary';
