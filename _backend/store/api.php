@@ -2,8 +2,8 @@
 
 namespace Store\Api;
 
-require_once __DIR__ . '/../config.loader.php';
-require_once __DIR__ . '/address.php';
+require_once __DIR__.'/../config.loader.php';
+require_once __DIR__.'/address.php';
 
 /**
  * do_request

@@ -1,9 +1,8 @@
 <?php
-    include __DIR__.'/../_backend/preload.php';
-
-    require_once __DIR__ . '/../backend/store/api.php';
-    require_once __DIR__ . '/../backend/store/cart.php';
-    require_once __DIR__ . '/../backend/validation.php';
+    require_once __DIR__.'/../_backend/preload.php';
+    require_once __DIR__.'/../_backend/store/api.php';
+    require_once __DIR__.'/../_backend/store/cart.php';
+    require_once __DIR__.'/../_backend/validation.php';
 
     /**
      * err

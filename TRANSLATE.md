@@ -37,7 +37,7 @@ git checkout master
 
 ## Extracting translations from HTML files
 
-Translations strings are extracted from HTML files. A little PHP script analyzes HTML files and exports strings to a JSON file: `/backend/extract-l10n.php?page=<page>`. You can change the `page` parameter to extract translations from another page (and set it to `layout` to translate the website layout). Translations are auto-updated on Transifex using this script.
+Translations strings are extracted from HTML files. A little PHP script analyzes HTML files and exports strings to a JSON file: `/_backend/extract-l10n.php?page=<page>`. You can change the `page` parameter to extract translations from another page (and set it to `layout` to translate the website layout). Translations are auto-updated on Transifex using this script.
 
 You can add the `include_disabled=1` parameter to print disabled strings too. This behaviour is disabled by default because Transifex doesn't accept `false` values. See _Disabling a translation_ for more information.
 

@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/address.php';
-require_once __DIR__ . '/api.php';
-require_once __DIR__ . '/product.php';
+require_once __DIR__.'/address.php';
+require_once __DIR__.'/api.php';
+require_once __DIR__.'/product.php';
 
 /**
  * This part of the script is to sync the product list in /data with up to
