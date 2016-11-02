@@ -2,7 +2,7 @@
 
 namespace Store\Address;
 
-require_once __DIR__.'/../validation.php';
+require_once __DIR__.'/validation.php';
 
 const COUNTRY_FILE = __DIR__.'/../../data/country.json';
 
