@@ -2,7 +2,7 @@
 
 ////    Settings
 $database       = __DIR__.'/../_data/average_payments.db';
-require_once __DIR__.'/../_backend/log-echo.php';
+require_once __DIR__.'/log-echo.php';
 
 if ( empty($amount) ) {
     exit;
