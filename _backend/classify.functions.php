@@ -43,7 +43,7 @@ function ipCheck($hostname, $debug = false) {
         if ( $debug ) {
             echo $e->getMessage();
         } else {
-            log_echo('<!-- '.$e->getMessage().' -->'."\n");
+            error_log($e->getMessage());
         }
 
         $continent = false;
@@ -157,7 +157,7 @@ function getCurrentCountry($hostname, $debug = false) {
         if ( $debug ) {
             echo $e->getMessage();
         } else {
-            log_echo('<!-- '.$e->getMessage().' -->'."\n");
+            error_log($e->getMessage());
         }
         $country = false;
     }

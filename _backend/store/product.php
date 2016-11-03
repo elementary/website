@@ -2,7 +2,7 @@
 
 namespace Store\Product;
 
-const STORE_FILE = __DIR__ . '/../../data/store.json';
+const STORE_FILE = __DIR__.'/../../data/store.json';
 
 /**
  * do_save

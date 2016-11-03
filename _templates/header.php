@@ -1,7 +1,5 @@
 <?php
 
-include_once __DIR__.'/l10n.php';
-
 if (!isset($l10n)) {
    $l10n = new Translator();
 }

@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['name'] = 'capnet-assist';
     $page['title'] = 'You\'re connected! &sdot; elementary';

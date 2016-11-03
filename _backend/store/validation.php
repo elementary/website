@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/store/address.php';
+require_once __DIR__.'/address.php';
 
 /**
  * ValidationException

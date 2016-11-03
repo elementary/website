@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 
@@ -17,8 +17,7 @@
     include $template['header'];
     include $template['alert'];
 
-    require_once __DIR__.'/backend/config.loader.php';
-    require_once __DIR__.'/backend/classify.current.php';
+    require_once __DIR__.'/_backend/classify.current.php';
 ?>
 
         <section class="grid">

@@ -3,133 +3,133 @@ host = https://www.transifex.com
 lang_map = sr@Ijekavian:sr_JK
 
 [elementary-mvp.404]
-file_filter = lang/<lang>/404.json
-source_file = lang/en/404.json
+file_filter = _lang/<lang>/404.json
+source_file = _lang/en/404.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.developer]
-file_filter = lang/<lang>/developer.json
-source_file = lang/en/developer.json
+file_filter = _lang/<lang>/developer.json
+source_file = _lang/en/developer.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.get-involved]
-file_filter = lang/<lang>/get-involved.json
-source_file = lang/en/get-involved.json
+file_filter = _lang/<lang>/get-involved.json
+source_file = _lang/en/get-involved.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.index]
-file_filter = lang/<lang>/index.json
-source_file = lang/en/index.json
+file_filter = _lang/<lang>/index.json
+source_file = _lang/en/index.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.layout]
-file_filter = lang/<lang>/layout.json
-source_file = lang/en/layout.json
+file_filter = _lang/<lang>/layout.json
+source_file = _lang/en/layout.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.privacy-policy]
-file_filter = lang/<lang>/privacy-policy.json
-source_file = lang/en/privacy-policy.json
+file_filter = _lang/<lang>/privacy-policy.json
+source_file = _lang/en/privacy-policy.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.support]
-file_filter = lang/<lang>/support.json
-source_file = lang/en/support.json
+file_filter = _lang/<lang>/support.json
+source_file = _lang/en/support.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_installation]
-file_filter = lang/<lang>/docs/installation.json
-source_file = lang/en/docs/installation.json
+file_filter = _lang/<lang>/docs/installation.json
+source_file = _lang/en/docs/installation.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_learning-the-basics]
-file_filter = lang/<lang>/docs/learning-the-basics.json
-source_file = lang/en/docs/learning-the-basics.json
+file_filter = _lang/<lang>/docs/learning-the-basics.json
+source_file = _lang/en/docs/learning-the-basics.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.code-of-conduct]
-file_filter = lang/<lang>/code-of-conduct.json
-source_file = lang/en/code-of-conduct.json
+file_filter = _lang/<lang>/code-of-conduct.json
+source_file = _lang/en/code-of-conduct.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_code_getting-started]
-file_filter = lang/<lang>/docs/code/getting-started.json
-source_file = lang/en/docs/code/getting-started.json
+file_filter = _lang/<lang>/docs/code/getting-started.json
+source_file = _lang/en/docs/code/getting-started.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_code_reference]
-file_filter = lang/<lang>/docs/code/reference.json
-source_file = lang/en/docs/code/reference.json
+file_filter = _lang/<lang>/docs/code/reference.json
+source_file = _lang/en/docs/code/reference.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_human-interface-guidelines]
-file_filter = lang/<lang>/docs/human-interface-guidelines.json
-source_file = lang/en/docs/human-interface-guidelines.json
+file_filter = _lang/<lang>/docs/human-interface-guidelines.json
+source_file = _lang/en/docs/human-interface-guidelines.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.docs_translation-guide]
-file_filter = lang/<lang>/docs/translation-guide.json
-source_file = lang/en/docs/translation-guide.json
+file_filter = _lang/<lang>/docs/translation-guide.json
+source_file = _lang/en/docs/translation-guide.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.403]
-file_filter = lang/<lang>/403.json
-source_file = lang/en/403.json
+file_filter = _lang/<lang>/403.json
+source_file = _lang/en/403.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.410]
-file_filter = lang/<lang>/410.json
-source_file = lang/en/410.json
+file_filter = _lang/<lang>/410.json
+source_file = _lang/en/410.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.brand]
-file_filter = lang/<lang>/brand.json
-source_file = lang/en/brand.json
+file_filter = _lang/<lang>/brand.json
+source_file = _lang/en/brand.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.capnet-assist]
-file_filter = lang/<lang>/capnet-assist.json
-source_file = lang/en/capnet-assist.json
+file_filter = _lang/<lang>/capnet-assist.json
+source_file = _lang/en/capnet-assist.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.team]
-file_filter = lang/<lang>/team.json
-source_file = lang/en/team.json
+file_filter = _lang/<lang>/team.json
+source_file = _lang/en/team.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.open-source]
-file_filter = lang/<lang>/open-source.json
-source_file = lang/en/open-source.json
+file_filter = _lang/<lang>/open-source.json
+source_file = _lang/en/open-source.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.store_index]
-file_filter = lang/<lang>/store/index.json
-source_file = lang/en/store/index.json
+file_filter = _lang/<lang>/store/index.json
+source_file = _lang/en/store/index.json
 source_lang = en
 type = KEYVALUEJSON
 
 [elementary-mvp.store_cart]
-file_filter = lang/<lang>/store/cart.json
-source_file = lang/en/store/cart.json
+file_filter = _lang/<lang>/store/cart.json
+source_file = _lang/en/store/cart.json
 source_lang = en
 type = KEYVALUEJSON

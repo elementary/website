@@ -6,6 +6,8 @@
 
 // CONFIG STARTS HERE
 
+$target  = __DIR__.'/../../data/chart.json';
+
 // Launchpad API URL
 $apiBaseUrl = 'https://api.launchpad.net/beta';
 
@@ -31,17 +33,16 @@ $timeInterval = 24 * 60 * 60;
 
 // CONFIG ENDS HERE
 
-require_once __DIR__ . '/config.loader.php';
-require_once __DIR__ . '/log-echo.php';
-
-date_default_timezone_set('UTC');
-
-header('Content-Type: text/plain');
-
-if ( !is_writable('./chart.json') ) {
-	log_echo('ERROR: File `backend/chart.json` is not writable.');
+// Writable check
+if ( !is_writable($target) ) {
+	echo 'ERROR: File `'.$target.'` is not writable.'.PHP_EOL;
 	exit(1);
 }
+
+require_once __DIR__.'/../config.loader.php';
+require_once __DIR__.'/../log-echo.php';
+
+date_default_timezone_set('UTC');
 
 $apiParams = 'ws.op=searchTasks';
 $apiEndpoint = $apiBaseUrl.'/'.$config['chart_link_project'].'/+milestone/'.$config['chart_link_milestone'].'?'.$apiParams;
@@ -52,7 +53,7 @@ $tasks = array();
 // Make HTTP requests
 $nextCollectionPoint = $apiEndpoint;
 while (!empty($nextCollectionPoint)) {
-	echo 'Requesting tasks from '.$nextCollectionPoint;
+	echo 'Requesting tasks from '.$nextCollectionPoint.PHP_EOL;
 	$json = file_get_contents($nextCollectionPoint);
 	$data = json_decode($json, true);
 
@@ -77,8 +78,8 @@ while (!empty($nextCollectionPoint)) {
 	}
 }
 
-echo 'Got all tasks.';
-echo 'Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo);
+echo 'Got all tasks.'.PHP_EOL;
+echo 'Time span: '.date(DATE_RFC2822, $timeFrom).' -- '.date(DATE_RFC2822, $timeTo).PHP_EOL;
 
 $dateStatuses = array('fixed', 'in_progress', 'created');
 
@@ -99,7 +100,5 @@ foreach ($tasks as $task) {
 }
 
 ksort($chart);
-
-file_put_contents('./chart.json', json_encode($chart, JSON_PRETTY_PRINT));
-
-echo 'Done.';
+file_put_contents($target, json_encode($chart, JSON_PRETTY_PRINT));
+echo 'Done.'.PHP_EOL;

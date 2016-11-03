@@ -21,7 +21,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
         } else if (stripeKey == null) {
             console.error('Unable to find stripe key on page')
 
-            $.getJSON(baseUrl + 'backend/payment.php', function (data) {
+            $.getJSON(baseUrl + 'api/payment.php', function (data) {
                 console.log('Was able to fetch stripe key manually')
 
                 stripeKey = data

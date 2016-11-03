@@ -1,9 +1,8 @@
 <?php
-    include __DIR__.'/../_templates/sitewide.php';
-
-    require_once __DIR__ . '/../backend/store/api.php';
-    require_once __DIR__ . '/../backend/store/cart.php';
-    require_once __DIR__ . '/../backend/validation.php';
+    require_once __DIR__.'/../_backend/preload.php';
+    require_once __DIR__.'/../_backend/store/api.php';
+    require_once __DIR__.'/../_backend/store/cart.php';
+    require_once __DIR__.'/../_backend/store/validation.php';
 
     /**
      * err
@@ -81,7 +80,7 @@
     include $template['alert'];
 ?>
 
-<script>window.stripeKey = '<?php include __DIR__.'/../backend/payment.php'; ?>'</script>
+<script>window.stripeKey = '<?php include __DIR__.'/../api/payment.php'; ?>'</script>
 
 <form action="<?php echo $sitewide['root'] ?>store/order" method="post" class="grid grid--narrow">
 

@@ -2,7 +2,7 @@
 
 namespace Store\Cart;
 
-require_once __DIR__ . '/product.php';
+require_once __DIR__.'/product.php';
 
 /**
  * NOTE: items stored in cart cookie are in the JSON string form of:

@@ -1,14 +1,14 @@
 <?php
 
-require_once __DIR__.'/../backend/lib/autoload.php';
-require_once __DIR__.'/../backend/log-echo.php';
-require_once __DIR__.'/../backend/config.loader.php';
+include_once __DIR__.'/lib/autoload.php';
+require_once __DIR__.'/log-echo.php';
+require_once __DIR__.'/config.loader.php';
 
 // Honor the IE do-not-track-header,
 // even though it's set automatically.
 $respectIE = true;
 // Set the DNT variables.
-include __DIR__.'/../backend/here-miss.php';
+require_once __DIR__.'/here-miss.php';
 
 date_default_timezone_set('UTC');
 
@@ -56,6 +56,8 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
-$template['header'] = __DIR__.'/header.php';
-$template['alert'] = __DIR__.'/alert.php';
-$template['footer'] = __DIR__.'/footer.php';
+require_once __DIR__.'/l10n.php';
+$template['header'] = __DIR__.'/../_templates/header.php';
+$template['alert']  = __DIR__.'/../_templates/alert.php';
+$template['legacy'] = __DIR__.'/../_templates/legacy.php';
+$template['footer'] = __DIR__.'/../_templates/footer.php';

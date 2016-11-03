@@ -4,9 +4,8 @@
  * Verifies hook variables and passes data to individual hook files
  */
 
-include __DIR__ . '/../../backend/lib/autoload.php';
-
-require_once __DIR__ . '/../../backend/config.loader.php';
+require_once __DIR__.'/../../_backend/lib/autoload.php';
+require_once __DIR__.'/../../_backend/config.loader.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -48,7 +47,7 @@ try {
 
 // And we finally fire off the hook file we need
 if ($res['type'] === 'package_shipped') {
-    require_once __DIR__ . '/package_shipped.php';
+    require_once __DIR__.'/package_shipped.php';
 } else {
     header('HTTP/1.0 415 Unsupported Media Type');
     echo 'Hook type not supported';
