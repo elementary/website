@@ -56,7 +56,7 @@
             <h2>General Funding</h2>
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
             <p>PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.</p>
-
+            <p>Buying merchandise directly supports the development of Elementary, making it better for everyone.</p>
             <div class="actions">
                 <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
                 <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
@@ -64,6 +64,7 @@
                 <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
                 <input type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                <a class="button flat" href="https://elementary.io/store/" target="_blank">Merchandise</a>
                 </form>
             </div>
         </div>
