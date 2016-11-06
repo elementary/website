@@ -64,7 +64,7 @@
                 <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
                 <input type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank">Merchandise</a>
+                <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank">Store</a>
                 </form>
             </div>
         </div>
