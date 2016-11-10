@@ -85,7 +85,7 @@
         <div class="alert column">
             <h2>GDA</h2>
             <p>Simple, flexible database management. Supports remote and on-disk SQL databases, including SQLite. Comes with graphical and in-console SQL data browsers, a metadata extractor enabling object auto-discovery, and more.</p>
-            <p><a class="read-more" href="http://valadoc.elementary.io/#!api=libgda-4.0/Gda">Reference for GDA</a></p>
+            <p><a class="read-more" href="http://valadoc.org/libgda-5.0/Gda">Reference for GDA</a></p>
         </div>
     </div>
     <div class="half">
