@@ -39,6 +39,7 @@ section:nth-child(even) {
 .button.flat {
     border-color: rgba(200, 208, 208, 0.5);
     color: #c8d0d0;
+    min-width: 400px;
 }
 
 .button.flat:focus {
@@ -54,6 +55,10 @@ section:nth-child(even) {
 .button.flat.suggested-action:focus {
     background-color: #40a5ec;
     border-color: #40a5ec;
+}
+
+button, select, .button {
+  font-size: 20px;
 }
 
 /* Funding */
