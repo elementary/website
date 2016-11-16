@@ -32,11 +32,19 @@
             $categories[$product['type']][] = $product;
         }
     }
+?>
 
-    foreach ($categories as $category => $products) { ?>
+<section class="grid">
+    <div class="two-thirds">
+        <h2>Support Development. Get Swag. Win Win.</h2>
+        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.</p>
+    </div>
+</section>
+
+<?php foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">
-        <h2 class="grid__title"><?php echo $category ?></h2>
+        <h3 class="grid__title"><?php echo $category ?></h3>
 
         <?php foreach ($products as $product) { ?>
 

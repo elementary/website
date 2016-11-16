@@ -367,12 +367,12 @@
         "printful_variant": 1320,
         "long_name": "Coffee Mug",
         "short_name": "11oz Coffee Mug",
-        "description": "The elementary 'e' logo sublimated onto an 11oz, dishwasher and microwave safe coffee mug.",
+        "description": "The elementary 'e' logo sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
         "image": "images\/store\/accessories\/mug_11oz.png",
         "type": "Accessories",
         "size": "11oz",
         "color": "Black",
-        "price": 18,
+        "price": 15,
         "files": [
             {
                 "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_11oz.psd"
