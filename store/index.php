@@ -33,32 +33,7 @@
         }
     }
 
-    if (getenv('PHPENV') !== 'production' && (
-        !isset($config['printful_key']) ||
-        !isset($config['google_map_key']) ||
-        $config['printful_key'] === 'printful_key' ||
-        $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
-    )) {
-
-        $l10n->set_domain('layout');
-?>
-    <div class="row alert warning">
-        <div class="column alert">
-            <div class="icon">
-                <i class="warning fa fa-warning"></i>
-            </div>
-            <div class="icon-text">
-                <h3>You are missing API keys</h3>
-                <p>You are viewing a developmental version of the store without configuring api keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
-            </div>
-        </div>
-    </div>
-<?php
-        $l10n->set_domain($page['name']);
-    }
-?>
-
-<?php foreach ($categories as $category => $products) { ?>
+    foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">
         <h2 class="grid__title"><?php echo $category ?></h2>
