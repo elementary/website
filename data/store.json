@@ -193,6 +193,106 @@
         ]
     },
     {
+        "id": 141,
+        "name": "Men's Black Hero Shirt",
+        "description": "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_hero_mens_black.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 5875,
+                "name": "S Track Men's",
+                "size": "S",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5874,
+                "name": "M Track Men's",
+                "size": "M",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5873,
+                "name": "L Track Men's",
+                "size": "L",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5872,
+                "name": "XL Track Men's",
+                "size": "XL",
+                "color": "Tri-Black",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5871,
+                "name": "2XL Track Men's",
+                "size": "2XL",
+                "color": "Tri-Black",
+                "cost": 20.25,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/hero_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "name": "Men's Oatmeal Hero Shirt",
+        "description": "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_hero_mens_oatmeal.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 5370,
+                "name": "S Track Men's",
+                "size": "S",
+                "color": "Tri-Oatmeal",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5371,
+                "name": "M Track Men's",
+                "size": "M",
+                "color": "Tri-Oatmeal",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5372,
+                "name": "L Track Men's",
+                "size": "L",
+                "color": "Tri-Oatmeal",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5373,
+                "name": "XL Track Men's",
+                "size": "XL",
+                "color": "Tri-Oatmeal",
+                "cost": 18.50,
+                "price": 25.00
+            }, {
+                "id": 5374,
+                "name": "2XL Track Men's",
+                "size": "2XL",
+                "color": "Tri-Oatmeal",
+                "cost": 20.25,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/hero_black.psd"
+            }
+        ]
+    },
+    {
         "id": 19,
         "name": "Coffee Mug",
         "description": "The elementary 'e' logo sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
