@@ -33,7 +33,7 @@
 <?php foreach (\Store\Product\get_types() as $type => $groups) { ?>
 
 <div class="grid grid--product">
-    <h2 class="grid__title"><?php echo $type ?></h2>
+    <h3 class="grid__title"><?php echo $type ?></h3>
 
     <?php foreach ($groups as $group) { ?>
 
