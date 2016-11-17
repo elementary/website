@@ -1,5 +1,8 @@
 <?php
     require_once __DIR__.'/../_backend/preload.php';
+    require_once __DIR__.'/../_backend/classify.current.php';
+    require_once __DIR__.'/../_backend/store/address.php';
+    require_once __DIR__.'/../_backend/store/cart.php';
 
     $page['title'] = 'Cart &sdot; elementary';
 
@@ -14,11 +17,8 @@
     include $template['header'];
     include $template['alert'];
 
-    require_once __DIR__.'/../_backend/store/cart.php';
-    require_once __DIR__.'/../_backend/store/address.php';
-    require_once __DIR__.'/../_backend/classify.current.php';
-    $country = getCurrentCountry($ip);
     // Set a deafult country.
+    $country = getCurrentCountry($ip);
     if ( !$country ) $country = 'US';
 
     $cart = \Store\Cart\get_cart();
@@ -34,30 +34,29 @@
     <div class="whole list list--product">
 
         <?php
-            foreach ($cart as $index => $item) {
+            foreach ($cart as $id => $item) {
+                $quantity = $item['quantity'];
                 $product = $item['product'];
-                $variant = $item['variant'];
-                $id = explode('-', $index)
         ?>
 
-            <div class="list__item" id="product-<?php echo $index ?>">
+            <div class="list__item" id="product-<?php echo $id ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <div class="list__info">
-                    <b><?php echo $variant['name'] ?></b>
-                    <span><a href="store/inventory?math=set&quantity=0&id=<?php echo $id[0] ?>&variant=<?php echo $id[1] ?>">Remove</a></span>
+                    <b><?php echo $product['short_name'] ?></b>
+                    <span><a href="<?php echo $sitewide['root'] ?>api/cart?id=<?php echo $id ?>&math=set&quantity=0">Remove</a></span>
                 </div>
                 <div class="list__detail">
-                    <input type="hidden" name="product-<?php echo $index ?>-id" value="<?php echo $index ?>">
-                    <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $variant['price'] ?>">
+                    <input type="hidden" name="product-<?php echo $id ?>-id" value="<?php echo $id ?>">
+                    <input type="hidden" name="product-<?php echo $id ?>-price" value="<?php echo $product['price'] ?>">
 
                     <span class="alert--error"></span>
 
                     <div class="subtotal">
-                        <span>$<?php echo number_format($variant['price'], 2) ?></span>
+                        <span>$<?php echo number_format($product['price'], 2) ?></span>
                         <span>×</span>
-                        <input type="number" min="0" max="9999" step="1" value="<?php echo $item['quantity'] ?>" name="product-<?php echo $index ?>-quantity">
+                        <input type="number" min="0" max="9999" step="1" value="<?php echo $quantity ?>" name="product-<?php echo $id ?>-quantity">
                         <span>=</span>
-                        <b>$<?php echo number_format($variant['price'] * $item['quantity'], 2) ?></b>
+                        <b>$<?php echo number_format($product['price'] * $quantity, 2) ?></b>
                     </div>
                 </div>
             </div>

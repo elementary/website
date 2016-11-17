@@ -6,7 +6,7 @@
  * NOTE: partially implements [JSON api spec](http://jsonapi.org/)
  *
  * Currently impliments:
- *   GET to show cart data
+ *   GET to show cart data and sadly manipulate cart data
  *   POST to manipulate cart data
  */
 
@@ -48,10 +48,68 @@ function res_error ($status, $title, $detail, $input) {
 }
 
 /**
+ * cart_manipulate
+ * helper function for manipulating the cart
+ *
+ * @param Number $id the product ID to manipulate
+ * @param String $math the type of manipulation
+ * @param Number $quantity the amount to manipulate by
+ *
+ * @return Boolean true if successful
+ */
+function cart_manipulate ($id, $math = 'add', $quantity = 1) {
+    if ($math === 'add') {
+        try {
+            $success = set_add($id, $quantity);
+        } catch (Exception $e) {
+            return false;
+        }
+
+        return true;
+    }
+
+    if ($math === 'set') {
+        try {
+            $success = set_quantity($id, $quantity);
+        } catch (Exception $e) {
+            return false;
+        }
+
+        return true;
+    }
+
+    return false;
+}
+
+/**
  * GET /api/cart
- * Shows the current cart
+ * Shows the current cart and sadly does manipulation for links
+ * TODO: phase out the need for the redirect param
+ *
+ * @param Number id the product id to manipulate
+ * @param String math the manipulation to occur. Currently `add` and `set`
+ * @param Number quantity the quantity to use in manipulation
+ * @param Boolean redirect true if we should respond with JSON. false to redirect
  */
 if ($req === 'GET') {
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+        $math = $_GET['math'] ?? 'add';
+        $quantity = $_GET['quantity'] ?? 1;
+        $redirect = $_GET['redirect'] ?? false;
+
+        $success = cart_manipulate($id, $math, $quantity);
+
+        if ($success === false) {
+            return res_error(500, 'Internal Error', 'Unsuccessful while trying to change cart');
+        }
+
+        if ($redirect === false) {
+            header("Location: " . $sitewide['root'] . "store/cart");
+            return;
+        }
+    }
+
     $output = array(
         "data" => $cart
     );
@@ -64,12 +122,12 @@ if ($req === 'GET') {
 /**
  * POST /api/cart
  * Manipulates the cart
- * TODO: phase out the need for the simple param
+ * TODO: phase out the need for the redirect param
  *
  * @param Number id the product id to manipulate
  * @param String math the manipulation to occur. Currently `add` and `set`
  * @param Number quantity the quantity to use in manipulation
- * @param Boolean simple true if we should respond with JSON. false to redirect
+ * @param Boolean redirect true if we should respond with JSON. false to redirect
  */
 if ($req === 'POST') {
     if (!isset($_POST['id'])) {
@@ -79,35 +137,18 @@ if ($req === 'POST') {
     $id = $_POST['id'];
     $math = $_POST['math'] ?? 'add';
     $quantity = $_POST['quantity'] ?? 1;
-    $simple = $_POST['simple'] ?? false;
+    $redirect = $_POST['redirect'] ?? false;
 
-    $success = false;
-
-    if ($math === 'add') {
-        try {
-            $success = set_add($id, $quantity);
-        } catch (Exception $e) {
-            return res_error(500, 'Internal Error');
-        }
-    }
-
-    if ($math === 'set') {
-        try {
-            $success = set_quantity($id, $quantity);
-        } catch (Exception $e) {
-            return res_error(500, 'Internal Error');
-        }
-    }
+    $success = cart_manipulate($id, $math, $quantity);
 
     if ($success === false) {
         return res_error(500, 'Internal Error', 'Unsuccessful while trying to change cart');
     }
 
-    if ($simple === false) {
+    if ($redirect === false) {
         header("Location: " . $sitewide['root'] . "store/cart");
         return;
     }
-
 
     $output = array(
         "data" => get_cart()

@@ -67,32 +67,38 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
             var $input = $(this)
             var $item = $input.closest('.list__item')
 
-            var id = $item.attr('id').replace('product-', '').split('-')
-            var productId = id[0]
-            var variantId = id[1]
+            var id = parseInt($item.attr('id').replace('product-', ''))
 
             var quantity = $input.val()
             var $error = $item.find('.alert--error')
 
-            $.get(baseUrl + 'store/inventory', {
-                id: productId,
-                variant: variantId,
+            $.post(baseUrl + 'api/cart', {
+                id: id,
                 quantity: quantity,
                 math: 'set',
-                simple: true
+                redirect: false
             })
-            .done(function (data) {
-                if (data === 'OK') {
-                    $error.text('')
+            .done((data) => {
+                $error.text('')
 
-                    if (quantity <= 0) $item.remove()
+                if (quantity <= 0) $item.remove()
 
-                    updateTotal()
-                } else {
-                    console.error('Unable to update cart quantity')
-                    console.error(data)
-                    $error.text('Unable to update quantity')
+                updateTotal()
+            })
+            .fail((error) => {
+                var msg = error.statusText
+
+                if (error.responseText != null) {
+                    try {
+                        var data = JSON.parse(error.responseText)
+                        msg = data['errors'][0]['title']
+                    } catch (err) {
+                        console.error('Received an indirect server error')
+                        console.error(error)
+                    }
                 }
+
+                $error.text(msg)
             })
         })
 
