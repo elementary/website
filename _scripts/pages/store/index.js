@@ -143,8 +143,6 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
                 throw new Error('Unable to use updateInfo on anything besides size or color')
             }
 
-            console.log(group, size, color)
-
             var p = null
             for (var pi in products) {
                 if (products[pi]['group'] !== group) continue
