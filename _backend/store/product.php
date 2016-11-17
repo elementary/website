@@ -49,10 +49,18 @@ function get_products () {
  *
  * @param Integer $i ID of product to return
  *
- * @return Array a single product or false if it does not exist
+ * @return Array a single product
+ * @throws Exception when product does not exist
  */
 function get_product ($i) {
-    return array_search($i, array_column(get_products(), 'id'));
+    $products = get_products();
+
+    $key = array_search($i, array_column(get_products(), 'id'));
+    if ($key === false || $key === null) {
+        throw new \Exception("Product does not exist");
+    }
+
+    return $products[$key];
 }
 
 /**

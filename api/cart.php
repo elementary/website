@@ -30,7 +30,7 @@ $req = $_SERVER['REQUEST_METHOD'];
  *
  * @return Void
  */
-function res_error (integer $status, string $title, $detail, $input) {
+function res_error ($status, $title, $detail, $input) {
     $error = array(
         "title" => $title
     );
@@ -64,6 +64,7 @@ if ($req === 'GET') {
 /**
  * POST /api/cart
  * Manipulates the cart
+ * TODO: phase out the need for the simple param
  *
  * @param Number id the product id to manipulate
  * @param String math the manipulation to occur. Currently `add` and `set`
@@ -71,14 +72,14 @@ if ($req === 'GET') {
  * @param Boolean simple true if we should respond with JSON. false to redirect
  */
 if ($req === 'POST') {
+    if (!isset($_POST['id'])) {
+        return res_error(400, 'Invalid Attribute', 'Missing ID POST value');
+    }
+
     $id = $_POST['id'];
     $math = $_POST['math'] ?? 'add';
     $quantity = $_POST['quantity'] ?? 1;
     $simple = $_POST['simple'] ?? false;
-
-    if ($id == null) {
-        return res_error(400, 'Invalid Attribute', 'Missing ID POST value');
-    }
 
     $success = false;
 
