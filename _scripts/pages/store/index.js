@@ -170,7 +170,7 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
         /**
          * Handles button selection input and switching
          */
-        $('.modal--product form[action$="inventory"] button.target-amount').on('click', function (e) {
+        $('.modal--product form[action$="cart"] button.target-amount').on('click', function (e) {
             e.preventDefault()
 
             var $input = $(this).siblings('input')
@@ -185,7 +185,7 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
         /**
          * Updates product variance based on user input (size, color, etc)
          */
-        $('.modal--product form[action$="inventory"] select').on('change', function (e) {
+        $('.modal--product form[action$="cart"] select').on('change', function (e) {
             e.preventDefault()
 
             var $form = $(this).closest('form')
