@@ -21,17 +21,6 @@
 
     include $template['header'];
     include $template['alert'];
-
-    $products = \Store\Product\get_products();
-
-    $categories = [];
-    foreach ($products as $product) {
-        if (!isset($categories[$product['type']])) {
-            $categories[$product['type']] = [$product];
-        } else {
-            $categories[$product['type']][] = $product;
-        }
-    }
 ?>
 
 <section class="grid">
@@ -41,80 +30,83 @@
     </div>
 </section>
 
-<?php foreach ($categories as $category => $products) { ?>
+<?php foreach (\Store\Product\get_types() as $type => $groups) { ?>
 
-    <div class="grid grid--product">
-        <h3 class="grid__title"><?php echo $category ?></h3>
+<div class="grid grid--product">
+    <h2 class="grid__title"><?php echo $type ?></h2>
 
-        <?php foreach ($products as $product) { ?>
+    <?php foreach ($groups as $group) { ?>
 
-            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
-                <img src="<?php echo $product['image'] ?>"/>
-                <h4><?php echo $product['name'] ?></h4>
-                <?php if ($product['price_min'] !== $product['price_max']) { ?>
-                    <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></p>
-                <?php } else { ?>
-                    <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?></p>
-                <?php } ?>
-                <a style="display:none;" class="open-modal" href="#product-<?php echo $product['id'] ?>-overview"></a>
-            </div>
-
-        <?php } ?>
-
-    </div>
-
-<?php } ?>
-
-<?php foreach (\Store\Product\get_products() as $product) { ?>
-
-    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"  data-product-name="<?php echo $product['name']; ?>">
-        <i class="fa fa-close close-modal"></i>
-        <div class="grid">
-            <div class="half">
-                <img src="<?php echo $product['image'] ?>"/>
-            </div>
-            <form action="<?php echo $sitewide['root'] ?>store/inventory" class="half">
-                <h2><?php echo $product['name'] ?></h2>
-                <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
-                <p><?php echo $product['description'] ?></p>
-
-                <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
-                <input type="hidden" name="variant" value="<?php echo $product['variants'][0]['id'] ?>">
-                <input type="hidden" name="math" value="add">
-
-                <div>
-                    <?php if (count($product['color']) > 1) { ?>
-                        <h4 class="label">Color</h4>
-                        <select name="color">
-                            <?php foreach ($product['color'] as $value) { ?>
-                                <option value="<?php echo $value ?>"><?php echo $value ?></option>
-                            <?php } ?>
-                        </select>
-                    <?php } ?>
-
-                    <?php if (count($product['size']) > 1) { ?>
-                        <h4 class="label">Size</h4>
-                        <div class="size-select">
-                            <input type="hidden" name="size" value="<?php echo $product['size'][0] ?>">
-                            <?php
-                                foreach ($product['size'] as $i => $value) {
-                                    $o = ($i === 0) ? 'checked' : '';
-                            ?>
-                                <button type="button" value="<?php echo $value ?>"  class="small-button target-amount <?php echo $o ?>"><?php echo $value ?></button>
-                            <?php } ?>
-                        </div>
-                    <?php } ?>
-
-                    <h4 class="label">Quantity</h4>
-                    <input type="number" step="1" min="1" value="1" name="quantity">
-                </div>
-
-                <span class="alert--error"></span>
-
-                <input type="submit" class="button small-button suggested-action" value="Add to Cart">
-            </form>
+        <div class="grid__item" id="group-<?php echo $group['name'] ?>-item" data-product-name="<?php echo $group['name']; ?>">
+            <img src="<?php echo $group['image'] ?>"/>
+            <h4><?php echo $group['name'] ?></h4>
+            <?php if ($group['min_price'] !== $group['max_price']) { ?>
+                <p data-l10n-off="1" class="text-center">$<?php echo number_format($group['min_price'], 2) ?> - $<?php echo number_format($group['max_price'], 2) ?></p>
+            <?php } else { ?>
+                <p data-l10n-off="1" class="text-center">$<?php echo number_format($group['min_price'], 2) ?></p>
+            <?php } ?>
+            <a style="display:none;" class="open-modal" href="#group-<?php echo $group['group'] ?>-overview"></a>
         </div>
+
+    <?php } ?>
+
+</div>
+
+<?php
+}
+
+foreach (\Store\Product\get_groups() as $group) {
+    $first = $group['products'][0];
+?>
+
+<div class="modal modal--product" id="group-<?php echo $group['group'] ?>-overview" data-product-name="<?php echo $group['name']; ?>">
+    <i class="fa fa-close close-modal"></i>
+    <div class="grid">
+        <div class="half">
+            <img src="<?php echo $first['image'] ?>"/>
+        </div>
+        <form action="<?php echo $sitewide['root'] ?>api/cart" method="POST" class="half">
+            <h2><?php echo $first['long_name'] ?></h2>
+            <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($first['price'], 2) ?></h4>
+            <p><?php echo $first['description'] ?></p>
+
+            <input type="hidden" name="id" value="<?php echo $first['id'] ?>">
+            <input type="hidden" name="group" value="<?php echo $first['group'] ?>">
+            <input type="hidden" name="math" value="add">
+
+            <div>
+                <?php if (count($group['colors']) > 1) { ?>
+                    <h4 class="label">Color</h4>
+                    <select name="color" required>
+                        <?php foreach ($group['colors'] as $value) { ?>
+                            <option value="<?php echo $value ?>"><?php echo $value ?></option>
+                        <?php } ?>
+                    </select>
+                <?php } ?>
+
+                <?php if (count($group['sizes']) > 1) { ?>
+                    <h4 class="label">Size</h4>
+                    <div class="size-select">
+                        <input type="hidden" name="size" value="<?php echo $first['size'] ?>">
+                        <?php
+                            foreach ($group['sizes'] as $value) {
+                                $o = ($value === $first['size']) ? 'checked' : '';
+                        ?>
+                            <button type="button" value="<?php echo $value ?>"  class="small-button target-amount <?php echo $o ?>"><?php echo $value ?></button>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+
+                <h4 class="label">Quantity</h4>
+                <input type="number" step="1" min="1" value="1" name="quantity">
+            </div>
+
+            <span class="alert--error"></span>
+
+            <input type="submit" class="button small-button suggested-action" value="Add to Cart">
+        </form>
     </div>
+</div>
 
 <?php } ?>
 
