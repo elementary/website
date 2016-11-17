@@ -125,6 +125,7 @@ function get_group ($i) {
 
     // Step 2: Calculate the group values like min and max price
     foreach ($output['products'] as $product) {
+        if ($output['group'] == null) $output['group'] = $product['group'];
         if ($output['name'] == null) $output['name'] = $product['long_name'];
         if ($output['description'] == null) $output['description'] = $product['description'];
         if ($output['type'] == null) $output['type'] = $product['type'];

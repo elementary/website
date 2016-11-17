@@ -37,7 +37,7 @@
 
     <?php foreach ($groups as $group) { ?>
 
-        <div class="grid__item" id="group-<?php echo $group['name'] ?>-item" data-product-name="<?php echo $group['name']; ?>">
+        <div class="grid__item" id="group-<?php echo $group['group'] ?>-item" data-product-name="<?php echo $group['name']; ?>">
             <img src="<?php echo $group['image'] ?>"/>
             <h4><?php echo $group['name'] ?></h4>
             <?php if ($group['min_price'] !== $group['max_price']) { ?>
