@@ -686,7 +686,7 @@ button.suggested-action,
     background: none;
     border-width: 2px;
     box-shadow: none;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-left: 0;
     margin-top: 10px;

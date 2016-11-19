@@ -27,21 +27,21 @@
     </div>
     <div class="grid">
         <div class="whole" id="sections-menu">
-            <a class="button flat" href="#funding">Funding</a>
-            <a class="button flat" href="#translations">Translations</a>
-            <a class="button flat" href="#support">Support</a>
-            <a class="button flat" href="#web-development">Web</a>
-            <a class="button flat" href="#desktop-development">Desktop</a>
-            <a class="button flat" href="#design">Design</a>
+            <a class="button flat suggested-action" href="#funding">Funding</a>
+            <a class="button flat suggested-action" href="#translations">Translations</a>
+            <a class="button flat suggested-action" href="#support">Support</a>
+            <a class="button flat suggested-action" href="#web-development">Web</a>
+            <a class="button flat suggested-action" href="#desktop-development">Desktop</a>
+            <a class="button flat suggested-action" href="#design">Design</a>
         </div>
     </div>
 </section>
 
-<section id="funding">
+<section id="funding" class="grey">
     <div class="grid">
         <div class="two-thirds">
             <h1>Funding</h1>
-            <p>The biggest way to help out elementary is with funding. With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
+            <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
         </div>
         <div class="half">
             <h2>Bug Bounties</h2>
@@ -91,7 +91,7 @@
     </div>
 </section>
 
-<section id="support">
+<section id="support" class="grey">
     <div class="grid">
         <div class="two-thirds">
             <h1>Support</h1>
@@ -123,7 +123,7 @@
         <div id="toolbar">
             <img src="images/get-involved/browser-left.svg">
             <div id="search-bar"></div>
-            <img src="images/get-involved/browser-right.svg">
+            <img src="images/icons/actions/symbolic/window-maximize-symbolic.svg">
         </div>
         <h1>Web Development</h1>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
@@ -134,7 +134,7 @@
     </div>
 </section>
 
-<section id="desktop-development">
+<section id="desktop-development" class="grey">
     <div class="grid">
         <div class="two-thirds">
             <h1>Desktop Development</h1>
@@ -197,7 +197,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h1>Design</h1>
-            <p>Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:</p>
+            <p class="text-center">Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:</p>
         </div>
         <div class="half">
             <h2>Visual Design</h2>
