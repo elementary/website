@@ -102,7 +102,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
                 name: 'elementary LLC.',
                 description: 'Store',
                 bitcoin: true,
-                alipay: 'auto',
+                alipay: false,
                 locale: stripeLanguage() || 'auto',
                 amount: amount,
                 email: email
