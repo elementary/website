@@ -175,11 +175,11 @@
         <a href="https://inkscape.org/en/support-us/donate/" target="_blank">
             <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape">
         </a>
-        <a href="http://www.rodsbooks.com/refind/" target="_blank">
-            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd">
-        </a>
         <a href="http://wiki.osmfoundation.org/wiki/Donate" target="_blank">
             <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map">
+        </a>
+        <a href="http://www.rodsbooks.com/refind/" target="_blank">
+            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd">
         </a>
         <a href="https://sfconservancy.org/donate/" target="_blank">
             <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy">
