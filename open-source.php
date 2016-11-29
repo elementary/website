@@ -159,10 +159,13 @@
     <div class="whole">
         <div class="two-thirds">
             <h2>Projects We've Supported</h2>
-            <p>elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting these great projects.</p>
+            <p>elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.</p>
         </div>
     </div>
     <div class="donation-grid">
+        <a href="https://salt.bountysource.com/teams/bountysource" target="_blank">
+            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource">
+        </a>
         <a href="https://www.debian.org/donations" target="_blank">
             <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian">
         </a>
@@ -177,6 +180,9 @@
         </a>
         <a href="http://wiki.osmfoundation.org/wiki/Donate" target="_blank">
             <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map">
+        </a>
+        <a href="https://sfconservancy.org/donate/" target="_blank">
+            <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy">
         </a>
     </div>
 </div>
