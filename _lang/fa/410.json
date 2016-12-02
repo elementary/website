@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "اوپس! لینک منقضی شده است.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "اگر درحال تلاش برای دانلود سیستم عامل المنتری هستید، لطفا به صفحه اصلی بروید. اگر شما به دنبال چیز دیگری بودید، روی <a href=\"https://github.com/elementary/mvp/issues/new\"> گیت هاب ما </a> موضوع را بیان کنید.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.",
     "Go to Home Page": "رفتن به صفحه اصلی",
     "Download Link Expired &sdot; elementary": "لینک دانلود منقضی شد. المنتری"
 }

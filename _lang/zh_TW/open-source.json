@@ -1,6 +1,6 @@
 {
     "Open Source": "開源軟體",
-    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
+    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS 平台是建立在自由與開放原始碼軟體的強大基石上。沒有這些專案，elementary OS 將不會存在。",
     "Get Involved": "參與",
     "Applications": "應用程式",
     "elementary OS Applications": "elementary OS 應用程式",
@@ -22,8 +22,8 @@
     "Slingshot": "Slingshot",
     "Switchboard": "Switchboard",
     "Wingpanel": "Wingpanel",
-    "Platform": "Platform",
-    "Pantheon Platform": "Pantheon Platform",
+    "Platform": "平台",
+    "Pantheon Platform": "Pantheon 平台",
     "Contractor": "Contractor",
     "Granite": "Granite",
     "Captive Portal Assistant": "Captive Portal Assistant",
@@ -60,7 +60,7 @@
     "X11": "X11",
     "XServer": "XServer",
     "GNU": "GNU",
-    "Compiler &amp; Core Utilities": "Compiler & Core Utilities",
+    "Compiler &amp; Core Utilities": "編譯器與核心公用程式",
     "Bash": "Bash",
     "GCC": "GCC",
     "GNU C Library": "GNU C Library",
@@ -68,6 +68,6 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "檔案系統，硬體，網路及驅動程式",
     "Kernel": "核心",
-    "All logos featured here are trademarks of their respective projects.": "All logos featured here are trademarks of their respective projects.",
+    "All logos featured here are trademarks of their respective projects.": "本處提及之 logo 均為各專案的註冊商標。",
     "Open Source &sdot; elementary": "開源軟體 ⋅ elementary"
 }

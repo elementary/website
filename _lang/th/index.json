@@ -11,7 +11,7 @@
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "\"เบาและรวดเร็ว... สวยงามและโดดเด่น เกิดขึ้นได้ด้วยกลุ่มผู้คนมากมายที่ทุ่มเทให้กับ elementary OS\"",
     "image/svg+xml": "image/svg+xml",
     "Task finished": "คำขอร้องเสร็จสิ้น",
-    "git clone https://github.com/elementary/mvp": "git clone https://github.com/elementary/mvp",
+    "git clone https://github.com/elementary/website": "git clone https://github.com/elementary/website",
     "Apps You Need, Without Ones You Don't.": "แอพที่คุณต้องการ ครบครัน ครบเครื่อง",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementaryOS ใส่ใจในทุกแอพที่เราได้นำเข้าไป เรามุ่งหวังให้คุณได้ใช้คอมพิวเตอร์พร้อมทำงานทันที ไม่ต้องมานั่งเสียเวลาเคลียร์แอพขยะที่คุณไม่ต้องการ",
     "Music": "เพลง",
@@ -92,5 +92,5 @@
     "Cancel": "ยกเลิก",
     "Download Loki": "Download Loki",
     "Torrent Magnet Link": "ลิงก์แบบ Torrent",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "ระบบปฏิบัติการแบบเปิด และเปี่ยมด้วยความเร็ว สำหรับทดแทน Windows และ macOS"
 }
