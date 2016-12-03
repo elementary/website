@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "Ups! Ten link stał się nieważny.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "Jeżeli próbujesz pobrać elementary OS, wróć na stronę główną. Jeżeli szukałeś czegoś innego możesz <a href=\"https://github.com/elementary/mvp/issues/new\">zgłosić błąd na naszym GitHubie</a>.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.",
     "Go to Home Page": "Przejdź do strony głównej. ",
     "Download Link Expired &sdot; elementary": "Link jest nieważny - elementary"
 }

@@ -140,7 +140,7 @@ $l10n->begin_html_translation();
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
+                    <li><a href="https://developer.elementary.io">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                 </ul>
             </div>
