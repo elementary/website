@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "Đường link này đã hết hạn.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/mvp/issues/new\">file an issue on our GitHub</a>.": "Nếu bạn đang thử download elementary OS, hãy quay trở lại trang chủ. Nếu bạn tìm kiếm một cái gì đó khác, đừng ngại tạo 1 <a href=\"https://github.com/elementary/mvp/issues/new\">issue mới trên GitHub của dự án</a>.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.",
     "Go to Home Page": "Trở về trang chủ",
     "Download Link Expired &sdot; elementary": "Link download đã hết hạn ⋅ elementary"
 }

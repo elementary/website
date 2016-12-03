@@ -1,17 +1,17 @@
 {
-    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
+    "A fast and open replacement for Windows and macOS": "Ein schneller und freier Ersatz für Windows und OS X",
     "Pay What You Want": "Zahle, was du willst",
     "Custom": " Benutzerdefiniert",
     "Enter any dollar amount.": "Beliebigen Dollarbetrag eingeben.",
     "Purchase elementary OS": "elementary OS kaufen",
-    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (for PC or Mac)",
+    "0.4.0 Loki | 1.32 GB (for PC or Mac)": "0.4.0 Loki | 1.32 GB (für PC oder Mac)",
     "What the press is saying about elementary OS:": "Was die Presse über elementary OS sagt:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "“elementary OS ist anders … ein schönes und leistungsfähiges Betriebssystem, das selbst auf älteren PCs gut läuft”",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "“eine schnelle, wartungsfreundliche Plattform, die nahezu überall installiert werden kann”",
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "“Leicht und schnell… Vollständig gemeinschaftlich entwickelt und mit einem echten Gespür für Design und Erscheinung.”",
     "image/svg+xml": "image/svg+xml",
     "Task finished": "Aufgabe erledigt",
-    "git clone https://github.com/elementary/mvp": "git clone https://github.com/elementary/mvp",
+    "git clone https://github.com/elementary/website": "git clone https://github.com/elementary/website",
     "Apps You Need, Without Ones You Don't.": "Apps, die Du brauchst, ohne die, die Du nicht brauchst.",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS kommt mit einer sorgsam ausgewählten Sammlung von Apps einher, die sich um die alltäglichen Dinge kümmern, damit Du mehr Zeit dafür hast, Deinen Computer zu nutzen, und weniger Zeit dafür verschwendest, Deinen Computer von Bloatware zu reinigen.",
     "Music": "Musik",
@@ -92,5 +92,5 @@
     "Cancel": "Abbrechen",
     "Download Loki": "Loki herunterladen",
     "Torrent Magnet Link": "Torrent Magnet-Link",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Ein schneller und offener Ersatz für Windows und OS X ⋅ elementary OS"
 }
