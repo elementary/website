@@ -1,5 +1,5 @@
 {
-    "A fast and open replacement for Windows and macOS": "Un veloce e open sostituto di Windows e macOS",
+    "A fast and open replacement for Windows and macOS": "Un'alternativa veloce ed aperta a Windows e macOS",
     "Pay What You Want": "Paghi solo quello che vuoi",
     "Custom": "Personalizzato",
     "Enter any dollar amount.": "Inserisci una qualsiasi quantità in dollari.",
@@ -11,12 +11,12 @@
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "\"Leggero e veloce... Completamente supportato dalla comunità, con una vera attitudine per il design e l'aspetto.\"",
     "image/svg+xml": "image/svg+xml",
     "Task finished": "Operazione conclusa",
-    "git clone https://github.com/elementary/mvp": "git clone https://github.com/elementary/mvp",
+    "git clone https://github.com/elementary/website": "git clone https://github.com/elementary/website",
     "Apps You Need, Without Ones You Don't.": "Tutte le Applicazioni di cui hai bisogno, senza cose inutili.",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS si basa su una selezione accurata di applicazioni che si rivolgono a chi, tutti i giorni, ha bisogno di più tempo da dedicare all'utilizzo del proprio computer e meno tempo alla pulizia di file e risorse inutili.",
     "Music": "Musica",
     "Epiphany": "Epiphany",
-    "Mail": "Mail",
+    "Mail": "Posta",
     "Photos": "Foto",
     "Videos": "Video",
     "Calendar": "Calendario",
@@ -80,7 +80,7 @@
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "Il nostro codice è disponibile per la revisione, il controllo, la modifica e la ridistribuzione da parte di chiunque.",
     "Learn More": "Scopri di più",
     "No Ads. No Spying.": "Niente pubblicità. Niente spionaggio.",
-    "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Non facciamo offerte pubblicitarie e non raccogliamo dati personali sensibili. Il nostro unico reddito è direttamente dai nostri utenti.",
+    "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "Non facciamo offerte pubblicitarie e non raccogliamo dati personali sensibili. Il nostro unico reddito viene direttamente dai nostri utenti.",
     "Safe &amp; Secure": "Sicuro e protetto",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Siamo basati su Linux: lo stesso software che usano il Dipartimento della Difesa statunitense, la Bank of China, e altro ancora.",
     "Security Notices": "Avviso di sicurezza",
@@ -92,5 +92,5 @@
     "Cancel": "Cancella",
     "Download Loki": "Scarica Loki",
     "Torrent Magnet Link": "Torrent Magnet Link",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un veloce e open sostituto di Windows e macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un'alternativa veloce e aperta a Windows e macOS ⋅ elementary OS"
 }

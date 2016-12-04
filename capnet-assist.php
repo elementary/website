@@ -9,7 +9,6 @@
     );
 
     include $template['header'];
-    include $template['alert'];
 ?>
 
 <div class="row">
