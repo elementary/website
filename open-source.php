@@ -172,7 +172,7 @@
         <a href="http://fontawesome.io/community/">
             <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome">
         </a>
-        <a href="https://inkscape.org/en/support-us/donate/">
+        <a href="https://inkscape.org/support-us/donate/">
             <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape">
         </a>
         <a href="http://wiki.osmfoundation.org/wiki/Donate">
