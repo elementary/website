@@ -13,7 +13,7 @@
 
 <div class="grid">
     <div class="two-thirds">
-        <h1>Open Source</h1>
+        <h1>We're Built on Open Source</h1>
         <h4>The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.</h4>
         <a class="button suggested-action" href="get-involved#desktop-development">Get Involved</a>
     </div>
@@ -152,6 +152,38 @@
         <div>
             <a class="button sub-item" href="https://kernel.org/" target="_blank"><span>Kernel</span></a>
         </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="whole">
+        <div class="two-thirds">
+            <h2>We Support Open Source Projects</h2>
+            <p>elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.</p>
+        </div>
+    </div>
+    <div class="donation-grid">
+        <a href="https://salt.bountysource.com/teams/bountysource">
+            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource">
+        </a>
+        <a href="https://www.debian.org/donations">
+            <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian">
+        </a>
+        <a href="http://fontawesome.io/community/">
+            <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome">
+        </a>
+        <a href="https://inkscape.org/support-us/donate/">
+            <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape">
+        </a>
+        <a href="http://wiki.osmfoundation.org/wiki/Donate">
+            <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map">
+        </a>
+        <a href="http://www.rodsbooks.com/refind/">
+            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd">
+        </a>
+        <a href="https://sfconservancy.org/donate/">
+            <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy">
+        </a>
     </div>
 </div>
 
