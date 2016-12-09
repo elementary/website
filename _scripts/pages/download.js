@@ -136,7 +136,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 name: 'elementary LLC.',
                 description: config.release.title + ' ' + config.release.version,
                 bitcoin: true,
-                alipay: 'auto',
+                alipay: false,
                 locale: detectStripeLanguage() || 'auto',
                 amount: amount
             })
