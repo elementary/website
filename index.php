@@ -49,6 +49,7 @@
                             <?php
                         } else {
                             ?>
+                    <button id="amount-zero"        value="0"  class="small-button payment-button target-amount">0</button>
                     <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
                     <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
                     <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
