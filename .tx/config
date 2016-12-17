@@ -8,12 +8,6 @@ source_file = _lang/en/404.json
 source_lang = en
 type = KEYVALUEJSON
 
-[elementary-mvp.developer]
-file_filter = _lang/<lang>/developer.json
-source_file = _lang/en/developer.json
-source_lang = en
-type = KEYVALUEJSON
-
 [elementary-mvp.get-involved]
 file_filter = _lang/<lang>/get-involved.json
 source_file = _lang/en/get-involved.json

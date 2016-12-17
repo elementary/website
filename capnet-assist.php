@@ -8,6 +8,7 @@
         'styles/capnet-assist.css'
     );
 
+    $scriptless = true;
     include $template['header'];
 ?>
 
