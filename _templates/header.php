@@ -82,6 +82,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
         <?php } ?>
 
+        <?php if (!isset($scriptless) || $scriptless === false) { ?>
         <?php if ($trackme === true && $config['sentry_pub']) {
             # Curiously enough, the only thing that went through the mind of the developer
             # as he wrote inline javascript was "Oh no, not again." Many people have speculated
@@ -125,6 +126,7 @@ $l10n->begin_html_translation();
                 }
         ?>
         <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+        <?php } ?>
         <?php } ?>
     </head>
     <body class="page-<?php echo $page['name']; ?>">
