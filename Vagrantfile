@@ -74,10 +74,11 @@ Vagrant.configure(2) do |config|
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
+    # Update npm to the latest version
+    npm install -g npm
+
     # Install node modules
-    mkdir /home/vagrant/node_modules
     cd /home/vagrant/mvp
-    ln -s /home/vagrant/node_modules node_modules
     npm install
     npm run build
 
