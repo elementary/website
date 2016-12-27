@@ -89,7 +89,7 @@ $l10n->begin_html_translation();
             # that if we knew exactly why the developer had thought that, we would know a
             # lot more about the nature of the code than we do now. ~ Douglas Adams
         ?>
-        <script src="https://cdn.jsdelivr.net/raven/3.7.0/raven.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/raven/3.9.1/raven.min.js"></script>
         <script>
             console.log('Sentry loaded')
 
