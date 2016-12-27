@@ -21,15 +21,24 @@ export default config.then((config) => {
             })
         }
 
-        Script('https://www.google-analytics.com/analytics.js', () => {
-            console.log('Google analytics loaded')
+        try {
+            Script('https://www.google-analytics.com/analytics.js', () => {
+                console.log('Google analytics loaded')
 
-            window.ga('create', 'UA-19280770-1', 'auto')
-            window.ga('set', 'forceSSL', true)
-            window.ga('set', 'anonymizeIp', true)
-            window.ga('require', 'displayfeatures')
+                window.ga('create', 'UA-19280770-1', 'auto')
+                window.ga('set', 'forceSSL', true)
+                window.ga('set', 'anonymizeIp', true)
+                window.ga('require', 'displayfeatures')
 
-            return resolve(window.ga)
-        })
+                return resolve(window.ga)
+            })
+        } catch (e) {
+            console.log('Unable to load Google analytics. It\'s probably being blocked.')
+
+            return resolve((...args) => {
+                console.log('Google analytics disabled. Logging to console instead')
+                console.log(args)
+            })
+        }
     })
 })
