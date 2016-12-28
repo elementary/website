@@ -29,12 +29,12 @@ export default config.then((config) => {
             }
             window['ga'].l = 1 * new Date()
             console.log('Google analytics pre-load catch set')
-            
+
             window.ga('create', 'UA-19280770-1', 'auto')
             window.ga('set', 'forceSSL', true)
             window.ga('set', 'anonymizeIp', true)
             window.ga('require', 'displayfeatures')
-            
+
             Script('https://www.google-analytics.com/analytics.js', () => {
                 console.log('Google analytics loaded')
                 return resolve(window.ga)
