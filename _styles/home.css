@@ -645,7 +645,7 @@ span.results-title {
     background-color: #c4c4c4;
 }
 
-.search-result * {
+.search-result > * {
     display: inline-block;
     vertical-align: middle;
 }
