@@ -7,6 +7,16 @@
 * Responsive Hero *
 ******************/
 
+#amounts h4 {
+    display: inline-block;
+    margin: 11px 3px;
+    padding: 8px 16px;
+}
+
+#amounts .small-button {
+    margin: 11px 3px;
+}
+
 .payment-button::before {
     content: "$";
     float: left;
