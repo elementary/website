@@ -410,6 +410,41 @@ footer ul li a:focus {
     outline: none;
 }
 
+/***********
+* Sections *
+***********/
+
+.section--hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.section--hero .section__detail {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.section--hero .section__showcase {
+    flex: 1 1 auto;
+}
+
+.section--hero .section__showcase > img {
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (min-aspect-ratio: 1/1) and (min-height: 600px) {
+    .section--stretched {
+        height: calc(100vh - 56px);
+    }
+
+    .section--stretched > .section__showcase {
+        display: flex;
+    }
+}
+
 /*********
 * Layout *
 *********/
