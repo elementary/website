@@ -365,7 +365,7 @@
                 </div>
             </div>
             <div class="third">
-                <a class="button suggested-action" href="#pay-what-you-want">Pay What You Want</a>
+                <a class="button suggested-action" href="#">Pay What You Want</a>
             </div>
         </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
