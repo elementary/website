@@ -156,9 +156,14 @@ img.h1 {
     opacity: 0.8;
 }
 
+div.inline,
 img.inline {
     display: inline-block !important;
     vertical-align: middle;
+}
+
+img.inline + div.inline {
+    margin-left: 12px;
 }
 
 .inline-tweet {

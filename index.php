@@ -346,6 +346,18 @@
                 <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
             </div>
         </section>
+        <section class="grid">
+            <div class="two-thirds">
+                <img class="inline" src="https://elementary.io/images/icons/places/128/distributor-logo.svg">
+                <div class="inline">
+                    <h2 class="text-left">Download elementary OS</h2>
+                    <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+                </div>
+            </div>
+            <div class="third">
+                <a class="button suggested-action" href="#pay-what-you-want">Pay What You Want</a>
+            </div>
+        </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="dialog modal">
