@@ -472,7 +472,7 @@ footer ul li a:focus {
         width: calc(33% - 88px);
     }
 
-    .column + .column {
+    .column + .column + .column {
         margin-left: 16px !important;
     }
 }
