@@ -37,7 +37,7 @@
             </div>
 
             <div class="section__showcase">
-                <img src="/images/notebook.png" alt="elementary OS desktop"/>
+                <img src="images/notebook.png" alt="elementary OS desktop"/>
             </div>
 
             <div class="section__detail grid">
