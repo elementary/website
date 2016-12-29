@@ -474,7 +474,7 @@ input:focus + .focus-reveal {
 }
 
 .app p {
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     margin-top: 6px;
     text-align: center;
@@ -489,7 +489,7 @@ input:focus + .focus-reveal {
 }
 
 #slingshot-pager .button {
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     height: 23px;
     line-height: 16px;
@@ -513,7 +513,7 @@ input:focus + .focus-reveal {
 .slingshot-category {
     color: #717171;
     display: block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
     padding: 7px 12px 6px 16px;
@@ -577,7 +577,7 @@ img.result-img {
     color: #333;
     display: block;
     float: left;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
     margin: 6px 0;
@@ -590,7 +590,7 @@ span.search-term,
 span.cursor {
     color: #333;
     display: inline-block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     height: 16px;
     position: relative;
@@ -627,7 +627,7 @@ span.cursor {
 span.results-title {
     color: #707070;
     display: block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     font-weight: bold;
     line-height: 9pt;
