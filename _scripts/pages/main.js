@@ -14,5 +14,4 @@ import '~/twitter-links'
 analytics.then((ga) => {
     ga('send', 'pageview')
     ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
-    ga('send', 'event', 'Protocol', 'Pageload', document.location.protocol)
 })
