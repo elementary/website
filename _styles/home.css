@@ -7,32 +7,6 @@
 * Responsive Hero *
 ******************/
 
-.page-index .hero {
-    background: url("../images/responsive-images/notebook-small.png") 50% / contain no-repeat;
-    height: 176px;
-    padding-top: 0;
-}
-
-@media all and (min-width: 530px) {
-    .page-index .hero {
-        background-image: url("../images/responsive-images/notebook-medium.png");
-        height: auto;
-        padding-top: 40%;
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .page-index .hero {
-        background-image: url("../images/responsive-images/notebook-large.png");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .page-index .hero {
-        background-image: url("../images/notebook.png");
-    }
-}
-
 .payment-button::before {
     content: "$";
     float: left;
