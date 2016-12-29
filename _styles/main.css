@@ -426,6 +426,7 @@ footer ul li a:focus {
 
 .section--hero .section__showcase {
     flex: 1 1 auto;
+    margin-bottom: -32px;
 }
 
 .section--hero .section__showcase > img {
