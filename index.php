@@ -43,7 +43,7 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="amounts">
-                        <h4 id="pay-what-you-want">Pay What You Want</h4>
+                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <?php
                             $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
                             $disallowed = [' ', '.'];
