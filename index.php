@@ -54,9 +54,11 @@
                         <?php
                             } else {
                         ?>
-                        <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
-                        <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
-                        <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                        <div class="column">
+                            <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
+                            <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
+                            <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                        </div>
                         <div class="column">
                             <span class="pre-amount">$</span>
                             <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
