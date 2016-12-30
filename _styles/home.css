@@ -9,12 +9,19 @@
 
 #amounts h4 {
     display: inline-block;
-    margin: 11px 3px;
-    padding: 8px 16px;
 }
 
-#amounts .small-button {
-    margin: 11px 3px 14px;
+#choice-buttons {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 575px) {
+    #choice-buttons {
+        margin: 0 24px;
+    }
 }
 
 .payment-button::before {
@@ -30,17 +37,16 @@
     font-size: 14px;
     margin-left: 14px;
     margin-right: -21px;
-    margin-top: 19px;
+    margin-top: 0.8em;
     pointer-events: none;
     position: absolute;
 }
 
 #amount-custom {
-    max-width: 170px;
     padding-left: 24px;
     padding-right: 24px;
     text-align: center;
-    width: 100%;
+    width: calc(100% - 6px); /* Work around payent-button::before */
 }
 
 .focus-reveal {
