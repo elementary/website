@@ -422,6 +422,7 @@ footer ul li a:focus {
 .section--hero .section__detail {
     flex: 0 0 auto;
     max-width: 100%;
+    padding: 0 0 16px;
 }
 
 .section--hero .section__showcase {
