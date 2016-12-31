@@ -91,7 +91,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         }
         $('#choice-buttons').on('click', updateDownloadButton)
         $('#choice-buttons input').on('input', updateDownloadButton)
-        $(document).on('ready', updateDownloadButton)
+        updateDownloadButton()
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
         $('#download').click(function () {
