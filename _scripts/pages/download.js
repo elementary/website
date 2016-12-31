@@ -76,7 +76,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             var translateDownload = $('#translate-download').text()
             var translatePurchase = $('#translate-purchase').text()
             // Catch case where no buttons are available because the user has already paid.
-            if ($('#amounts').children().length <= 1) {
+            if ($('#choice-buttons').children().length <= 1) {
                 $('#download').text(translateDownload)
             // Catch case where a button is checked or the custom input is above the minimum.
             } else if (
@@ -89,8 +89,8 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 $('#download').text(translateDownload)
             }
         }
-        $('#amounts').on('click', updateDownloadButton)
-        $('#amounts input').on('input', updateDownloadButton)
+        $('#choice-buttons').on('click', updateDownloadButton)
+        $('#choice-buttons input').on('input', updateDownloadButton)
         $(document).on('ready', updateDownloadButton)
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
@@ -171,7 +171,8 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             $amountTen = $('#amount-ten')
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
-                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
+                $('#pay-what-you-want').remove()
+                $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)
                 updateDownloadButton()
             }
