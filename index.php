@@ -43,7 +43,6 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="amounts">
-                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <?php
                             $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
                             $disallowed = [' ', '.'];
@@ -54,6 +53,7 @@
                         <?php
                             } else {
                         ?>
+                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
                             <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
                             <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
