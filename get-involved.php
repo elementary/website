@@ -68,7 +68,7 @@
     </section>
     <div class="grid">
         <div class="two-thirds">
-            <h2>Bug Bounties</h2>
+            <img src="../images/open-source/bountysource.svg">
             <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
             <div class="actions">
