@@ -40,41 +40,32 @@
 <section id="funding" class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Funding</h1>
+            <h2>Funding</h2>
             <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
         </div>
     </div>
-    <div class="grid">
+    <section class="grid">
         <div class="third">
-            <h2>Patreon</h2>
+            <img src="../images/get-involved/patreon.svg">
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
-
-            <div class="actions">
-                <a class="button flat" href="https://www.patreon.com/elementary" target="_blank">Become a Patron</a>
-            </div>
+            <a class="button flat" href="https://www.patreon.com/elementary" target="_blank">Become a Patron</a>
         </div>
         <div class="third">
-            <h2>PayPal</h2>
+            <i class="fa fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
-
-            <div class="actions">
-                <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
-                <input type="submit" value="Use PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
-            </div>
+            <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
+            <input type="submit" value="Use PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
         </div>
         <div class="third">
-            <h2>Merch</h2>
+            <i class="fa fa-shopping-cart"></i>
             <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
-
-            <div class="actions">
-                <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank">Visit Store</a>
-            </div>
+            <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank">Visit Store</a>
         </div>
-    </div>
+    </section>
     <div class="grid">
         <div class="two-thirds">
             <h2>Bug Bounties</h2>

@@ -56,6 +56,10 @@ section {
     border-color: #ffc357;
 }
 
+#funding .third > img {
+    margin: -4px; /* Fix some issue to match i.fa */
+}
+
 #paypalform {
     margin-left: 4px;
 }
