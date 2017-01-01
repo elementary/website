@@ -82,7 +82,7 @@
 <section id="translations">
     <div class="grid">
         <div class="whole">
-            <h1>Translations</h1>
+            <h2>Translations</h2>
         </div>
         <div class="half">
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
@@ -103,11 +103,11 @@
 <section id="support" class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Support</h1>
+            <h2>Support</h2>
             <p></p>
         </div>
         <div class="half">
-            <h2>Question & Answer</h2>
+            <h3>Question & Answer</h3>
             <p>StackExchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
 
             <div class="actions">
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="half">
-            <h2>Documentation</h2>
+            <h3>Documentation</h3>
             <p>elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
 
             <div class="actions">
@@ -134,7 +134,7 @@
             <div id="search-bar"></div>
             <img src="images/icons/actions/symbolic/window-maximize-symbolic.svg">
         </div>
-        <h1>Web Development</h1>
+        <h2>Web Development</h2>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
         <div class="actions">
             <a class="button flat suggested-action" href="https://github.com/elementary/website" target="_blank">Fork Our Website on GitHub</a>
@@ -146,7 +146,7 @@
 <section id="desktop-development" class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Desktop Development</h1>
+            <h2>Desktop Development</h2>
             <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
             <?php
                 if ($config['chart_enable']) {
@@ -205,11 +205,11 @@
 <section id="design">
     <div class="grid">
         <div class="two-thirds">
-            <h1>Design</h1>
+            <h2>Design</h2>
             <p class="text-center">Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:</p>
         </div>
         <div class="half">
-            <h2>Visual Design</h2>
+            <h3>Visual Design</h3>
             <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
             <div class="actions">
@@ -218,7 +218,7 @@
             </div>
         </div>
         <div class="half">
-            <h2>Interaction Design</h2>
+            <h3>Interaction Design</h3>
             <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.</p>
 
             <div class="actions">
