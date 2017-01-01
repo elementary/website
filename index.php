@@ -36,9 +36,7 @@
                 </div>
             </div>
 
-            <div class="section__showcase">
-                <img src="images/notebook.png" alt="elementary OS desktop"/>
-            </div>
+            <div class="section__showcase"></div>
 
             <div class="section__detail grid">
                 <div class="whole">
