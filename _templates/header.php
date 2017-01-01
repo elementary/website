@@ -134,16 +134,21 @@ $l10n->begin_html_translation();
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                    <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
+                    <li><a href="https://developer.elementary.io">Developer</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
                     <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://developer.elementary.io">Developer</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
+                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/+elementary" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://medium.com/elementaryos" target="_blank" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
+                    <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
         </nav>
