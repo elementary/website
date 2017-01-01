@@ -17,6 +17,18 @@ section {
     }
 }
 
+@media only screen and (min-width: 641px) and (max-width: 900px) {
+    .grid .third {
+        width: 66%;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .third p {
+        text-align: left;
+    }
+}
+
 /*********
 * Button *
 *********/

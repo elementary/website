@@ -43,7 +43,9 @@
             <h1>Funding</h1>
             <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
         </div>
-        <div class="half">
+    </div>
+    <div class="grid">
+        <div class="two-thirds">
             <h2>Bug Bounties</h2>
             <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="blank">Learn More</a></p>
 
@@ -52,19 +54,35 @@
                 <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bounty&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
             </div>
         </div>
-        <div class="half">
-            <h2>General Funding</h2>
+    </div>
+    <div class="grid">
+        <div class="third">
+            <h2>Patreon</h2>
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="blank">Learn More</a></p>
-            <p>PayPal is a quick and easy solution. Choose a one-time amount or set up a subscription.</p>
 
             <div class="actions">
-                <a class="button flat suggested-action" href="https://www.patreon.com/elementary" target="_blank">Patreon</a>
+                <a class="button flat" href="https://www.patreon.com/elementary" target="_blank">Become a Patron</a>
+            </div>
+        </div>
+        <div class="third">
+            <h2>PayPal</h2>
+            <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
+
+            <div class="actions">
                 <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
                 <input type="submit" value="PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
+            </div>
+        </div>
+        <div class="third">
+            <h2>Merch</h2>
+            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
+
+            <div class="actions">
+                <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank">Visit Store</a>
             </div>
         </div>
     </div>
