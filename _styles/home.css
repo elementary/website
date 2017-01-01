@@ -86,7 +86,7 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url('/images/notebook.png');
+    background-image: url('../images/notebook.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
