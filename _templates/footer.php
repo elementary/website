@@ -33,6 +33,7 @@
                 <li><a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a></li>
                 <li><a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a></li>
                 <li><a href="<?php echo $sitewide['root'].'team'; ?>">Team</a></li>
+                <li><a href="<?php echo $sitewide['root'].'open-source'; ?>">Open Source</a></li>
             </ul>
         </footer>
         <?php
