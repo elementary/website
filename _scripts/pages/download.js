@@ -113,7 +113,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
 
         // UTILITY: detectStripeLanguage: Detect the language and use the Stripe translation if possible.
         function detectStripeLanguage () {
-            var stripeLanguages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
             var languageCode = $('html').prop('lang')
             // Stripe supports simplified chinese
             if (/^zh_CN/.test(languageCode)) {
