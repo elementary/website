@@ -25,7 +25,7 @@
     "the disk icon": "na ikonu disku",
     "to choose the ISO that you downloaded previously.": "a vyberte ISO soubor, který jste dříve stáhli.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to \"SHA256\" matches the following hash:",
-    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "If the hashes match, click \"Start\" and wait for the process to finish.",
+    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "Pokud hashe souhlasí, klknětě na \"Start\" a počkejte až proces zkončí.",
     "Booting from the Install Drive": "Bootování z instalačního disku",
     "In order to start the installation process, you must boot your computer from the install drive.": "Pro zahájení instalace je potřeba nabootovat počítač z instalačního disku. Tento proces se může lišit v závislosti na typu Vašeho počítače. V tomto návodu se dočtete o nejběžnějších typech.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Pokud je Váš počítač zapnut, vložte nejdříve instalační disk a poté počítač restartujte.",

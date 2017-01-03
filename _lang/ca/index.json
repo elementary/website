@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Un reemplaç del Windows i macOS ràpid i obert",
-    "Pay What You Want": "Pagueu el que vulgueu",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Una altra",
     "Enter any dollar amount.": "Introduïu una quantia en dòlars",
     "Purchase elementary OS": "Compreu l'elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Ens basem en Linux: el mateix programari usat pel Departament de Defensa dels EUA, el Banc de la Xina, i més.",
     "Security Notices": "Avisos de seguretat",
     "Download elementary OS": "Baixeu l'elementary OS",
+    "Pay What You Want": "Pagueu el que vulgueu",
     "Download elementary OS icon": "Icona de la baixada de l'elementary OS",
     "Choose a Download": "Trieu una baixada",
     "Download from a localized server or by magnet link. For help and more info, see the": "Baixeu-lo des d'un servidor dedicat o mitjançant un enllaç magnètic. Per trobar ajuda i més informació, mireu la",
     "installation guide": "guia d'instal·lació",
     "Cancel": "Cancel·la",
-    "Download Loki": "Baixa el Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Enllaç torrent magnètic",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un reemplaç del Windows i macOS ràpid i obert ⋅ elementary OS"
 }

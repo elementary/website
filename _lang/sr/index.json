@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Лични износ",
     "Enter any dollar amount.": "Унесите било кој износ долара.",
     "Purchase elementary OS": "Купите elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Ми смо направљени на Linux-у: исти софтвер који покреће Министарство Одбране САД-а, Банку Кине и још. ",
     "Security Notices": "Security Notices",
     "Download elementary OS": "Преузмите elementary OS",
+    "Pay What You Want": "Pay What You Want",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Изаберите верзију",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "упутство за инсталацију",
     "Cancel": "Cancel",
-    "Download Loki": "Download Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Магнетна Адреса Торента",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

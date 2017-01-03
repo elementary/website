@@ -483,7 +483,7 @@
     "<strong>Better</strong>:": "<strong>Better</strong>:",
     "No files are open.": "No files are open.",
     "Open a file to begin editing.": "Open a file to begin editing.",
-    "Language": "Language",
+    "Language": "Limba",
     "While much of elementary is developed in English, there are many users who do not know English or prefer their native language. While putting text into your app, keep the following in mind:": "While much of elementary is developed in English, there are many users who do not know English or prefer their native language. While putting text into your app, keep the following in mind:",
     "<strong>Make it translatable.</strong> Always, always make your text translatable using the built-in methods. It can't be translated if you don't make it translatable. Include punctuation in translatable strings.": "<strong>Make it translatable.</strong> Always, always make your text translatable using the built-in methods. It can't be translated if you don't make it translatable. Include punctuation in translatable strings.",
     "<strong>Avoid culture-specific references.</strong> Remember that users of another language are going to be using your app. Specific metaphors or references will likely be lost on or downright confusing to other those users. Instead, use universal text.": "<strong>Avoid culture-specific references.</strong> Remember that users of another language are going to be using your app. Specific metaphors or references will likely be lost on or downright confusing to other those users. Instead, use universal text.",

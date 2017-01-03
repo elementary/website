@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Rychlý a otevřený systém, který může nahradit Windows a macOS.",
-    "Pay What You Want": "Zaplať kolik chceš",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Vlastní",
     "Enter any dollar amount.": "Vložte částku v dolarech",
     "Purchase elementary OS": "Kupte si elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Stavíme na Linuxu. Stejném softwaru který pohání Americké ministerstvo obrany, Čínskou národní banku, Mezinárodní vesmírnou stanici a mnohé další.",
     "Security Notices": "Bezpečnostní upozornění",
     "Download elementary OS": "Stáhnout elementary OS",
+    "Pay What You Want": "Zaplať kolik chceš",
     "Download elementary OS icon": "ikona Stáhnout elementary OS",
     "Choose a Download": "Zvolte verzi pro stažení",
     "Download from a localized server or by magnet link. For help and more info, see the": "Stahujte z lokalizovaného serveru nebo pomocí magnet linku. Nápovědu a více informací naleznete v",
     "installation guide": "průvodci instalací",
     "Cancel": "Zrušit",
-    "Download Loki": "Stáhni Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Rychlá a otevřená náhrada za Windows a macOS - elementary OS"
 }

@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Greita ir atvira Windows ir macOS pakaita",
-    "Pay What You Want": "Mokėkite tiek, kiek norite",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Pasirinkti",
     "Enter any dollar amount.": "Įrašykite bet kokią sumą doleriais.",
     "Purchase elementary OS": "Įsigyti elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Mes sukurti Linux pagrindu: tos pačios programinės įrangos, kurią naudoja JAV Gynybos Departamentas, Kinijos Bankas ir kiti.",
     "Security Notices": "Saugumo pastebėjimai",
     "Download elementary OS": "Atsisiųskite elementary OS",
+    "Pay What You Want": "Mokėkite tiek, kiek norite",
     "Download elementary OS icon": "Atsisiųsti elementary OS piktogramą",
     "Choose a Download": "Pasirinkite atsiuntimą",
     "Download from a localized server or by magnet link. For help and more info, see the": "Atsisiųskite iš lokalizuoto serverio arba per magnet nuorodą. Išsamesnei informacijai, žiūrėkite",
     "installation guide": "diegimo vadovą",
     "Cancel": "Atsisakyti",
-    "Download Loki": "Atsisiųsti Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet nuoroda",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Greita ir atvira Windows ir macOS pakaita ⋅ elementary OS"
 }
