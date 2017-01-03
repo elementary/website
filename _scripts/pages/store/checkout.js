@@ -78,7 +78,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
         var $form = $('form[action$="order"]')
 
         function stripeLanguage () {
-            var stripeLanguages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
             var languageCode = $('html').prop('lang')
 
             // Stripe supports simplified chinese
