@@ -110,7 +110,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
-                .then((token) => doStripePayment(paymentAmount, token))
+                .then(([token]) => doStripePayment(paymentAmount, token))
                 .then(() => openDownloadOverlay())
                 .catch((err) => {
                     console.error('Error while making payment')
