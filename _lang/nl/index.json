@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Een snel en open alternatief voor Windows en macOS",
-    "Pay What You Want": "Betaal wat je zelf wil.",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Aangepast",
     "Enter any dollar amount.": "Voer een bedrag in",
     "Purchase elementary OS": "Koop elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Onze basis is gebouwd op Linux: dezelfde software die gebruikt wordt door onder andere het Amerikaanse Ministerie van Defensie, de Chinese Centrale Bank en meer. ",
     "Security Notices": "Veiligheidsnotities",
     "Download elementary OS": "Download elementary OS",
+    "Pay What You Want": "Betaal wat je zelf wil.",
     "Download elementary OS icon": "Download elementary OS icoon",
     "Choose a Download": "Kies een download",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download van een lokale server of met een magnet link. Voor hulp en meer, zie de",
     "installation guide": "installatiehandleiding",
     "Cancel": "Annuleren",
-    "Download Loki": "Download Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Een snel en open alternatief voor Windows en OS X ⋅ elementary OS"
 }

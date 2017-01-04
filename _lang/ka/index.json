@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "მითითება",
     "Enter any dollar amount.": "შეიყვანეთ ნებისმიერი ოდენობა.",
     "Purchase elementary OS": "elementary OS-ის შეძენა",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "ჩვენ ვეფუძნებით ლინუქსს: იმ პროგრამულ უზრუნველყოფას, რომელიც ამუშავებს აშშ-ს თავდაცვის სამინისტროს, ჩინეთის ბანკს და სხვა მრავალს.",
     "Security Notices": "Security Notices",
     "Download elementary OS": "ჩამოტვირთეთ elementary OS",
+    "Pay What You Want": "Pay What You Want",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "აირჩიეთ ჩამოტვირთვა",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "ინსტალაციის მეგზური",
     "Cancel": "Cancel",
-    "Download Loki": "Download Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "ტორენტ მაგნიტური ბმული",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

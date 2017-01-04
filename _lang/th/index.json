@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "ระบบปฏิบัติการแบบเปิด และเปี่ยมด้วยความเร็ว สำหรับทดแทน Windows และ macOS",
-    "Pay What You Want": "จ่ายเท่าที่คุณอยากจ่าย",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "ระบุจำนวนเงินเอง",
     "Enter any dollar amount.": "ป้อนจำนวนเงิน",
     "Purchase elementary OS": "ซื้อ/บริจาคให้ elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "เราพัฒนาระบบนี้บนพื้นฐานของลินุกซ์  แน่นอนมันเป็นหนึ่งในระบบที่น่าเชื่อถือที่ถูกใช้ในกะทรวงกะลาโหมของสหรัฐ  ธนาคารแห่งชาติของประเทศจีน  และอื่น ๆ  อีกมากมาย",
     "Security Notices": "ดูอัพเดทความปลอดภัย",
     "Download elementary OS": "ดาวน์โหลด elementary OS",
+    "Pay What You Want": "จ่ายเท่าที่คุณอยากจ่าย",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "เลือกดาวน์โหลด",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "คู่มือการติดตั้ง",
     "Cancel": "ยกเลิก",
-    "Download Loki": "Download Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "ลิงก์แบบ Torrent",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "ระบบปฏิบัติการแบบเปิด และเปี่ยมด้วยความเร็ว สำหรับทดแทน Windows และ macOS"
 }

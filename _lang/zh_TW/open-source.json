@@ -1,5 +1,5 @@
 {
-    "Open Source": "開源軟體",
+    "We're Built on Open Source": "We're Built on Open Source",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS 平台是建立在自由與開放原始碼軟體的強大基石上。沒有這些專案，elementary OS 將不會存在。",
     "Get Involved": "參與",
     "Applications": "應用程式",
@@ -68,6 +68,15 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "檔案系統，硬體，網路及驅動程式",
     "Kernel": "核心",
+    "We Support Open Source Projects": "We Support Open Source Projects",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "本處提及之 logo 均為各專案的註冊商標。",
     "Open Source &sdot; elementary": "開源軟體 ⋅ elementary"
 }
