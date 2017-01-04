@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Avoin ja nopea vaihtoehto Windowsille ja macOS:lle",
-    "Pay What You Want": "Maksa mitä haluat",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Muu",
     "Enter any dollar amount.": "Syötä haluamasi summa.",
     "Purchase elementary OS": "Osta elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Käyttöjärjestelmä pohjautuu Linuxiin; samaan ohjelmistoon, jota käyttävät muun muassa Yhdysvaltain puolustusministeriö, Bank of China ja monet muut tahot.",
     "Security Notices": "Tietoturvailmoitukset",
     "Download elementary OS": "Lataa elementary OS",
+    "Pay What You Want": "Maksa mitä haluat",
     "Download elementary OS icon": "Lataa elementary OS -kuvake",
     "Choose a Download": "Valitse versio",
     "Download from a localized server or by magnet link. For help and more info, see the": "Lataa paikalliselta palvelimelta tai magneettilinkin kautta. Lisätietoja tarjoaa",
     "installation guide": "asennusohje.",
     "Cancel": "Peru",
-    "Download Loki": "Lataa Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet -linkki",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Avoin ja nopea vaihtoehto Windowsille ja macOS:lle ⋅ elementary OS"
 }

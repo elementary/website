@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Windows ve macOS'den daha hızlı ve açık kaynak",
-    "Pay What You Want": "İstediğin kadar öde",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Tercihen",
     "Enter any dollar amount.": "Miktarı dolar cinsinden yazın.",
     "Purchase elementary OS": "elementary OS, satın al",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Tabanımızda; ABD Savunma Bakanlığı, Çin Ulusal Bankası çok ve daha fazla kuruma güç veren Linux platformu var.",
     "Security Notices": "Güvenlik Duyuruları",
     "Download elementary OS": "elementary OS'u İndir",
+    "Pay What You Want": "İstediğin kadar öde",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Bit'inizi seçin ve İndirin !",
     "Download from a localized server or by magnet link. For help and more info, see the": "Yerelleştirilmiş bir sunucudan yada farklı bir sunucudan indir. Yardım ve daha fazla bilgi için bkz",
     "installation guide": "Kurulum kılavuzu",
     "Cancel": "İptal",
-    "Download Loki": "Loki'yi İndir",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Bağlantısı",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Windows ve macOS'den daha hızlı ve açık kaynak ⋅ elementary OS"
 }

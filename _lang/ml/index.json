@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want": "Pay What You Want",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "വൈവിദ്ധ്യമാര്‍ന്നത്",
     "Enter any dollar amount.": "സംഖ്യ ഡോളറില്‍ നല്‍കുക",
     "Purchase elementary OS": "Purchase elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.",
     "Security Notices": "Security Notices",
     "Download elementary OS": "എലെമെന്ററി ഒ.എസ് ‍ഡൊണ്‍ലോ‍ഡ് ചെയ്യുക",
+    "Pay What You Want": "Pay What You Want",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "ഒരു ‍ഡൌണ്‍ലോ‍ഡ് തെരെഞ്ഞെടുക്കുക",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "ഇന്‍സ്റ്റോളേഷന്‍ മാര്‍ഗരേഖ",
     "Cancel": "Cancel",
-    "Download Loki": "Download Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

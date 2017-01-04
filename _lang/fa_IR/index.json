@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "یک جایگزین سریع و متن باز برای ویندوز و مک او اس!",
-    "Pay What You Want": "مقداری که می خواهید پرداخت کنید",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "سفارشی",
     "Enter any dollar amount.": "مبلغ مورد نظر را به دلار وارد کنید.",
     "Purchase elementary OS": "خرید elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "سیستم عامل ما بر پایه‌ی لینوکس ساخته شده است: برنامه‌ای که به سازمان دفاع ایالات متحده آمریکا، سیستم بانکی چین و ... قدرت می‌بخشد.",
     "Security Notices": "نکات امنیتی",
     "Download elementary OS": "دانلود elementary OS",
+    "Pay What You Want": "مقداری که می خواهید پرداخت کنید",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "نوع دانلود را انتخاب کنید",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "دستورالعمل نصب را مشاهده کنید",
     "Cancel": "صرفنظر",
-    "Download Loki": "دانلود Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "لینک Torrent",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "軽量、そしてオープンソース。 Windows や macOS の代わりに。",
-    "Pay What You Want": "自分で支払額を決める",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "カスタム",
     "Enter any dollar amount.": "何ドルか入力",
     "Purchase elementary OS": "elementary OS を購入する",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Linux 上に構築しています: これらのソフトウェアはアメリカ国防総省、中国銀行など様々なところで力を発揮しています。",
     "Security Notices": "セキュリティに関するお知らせ",
     "Download elementary OS": "elementary OS のダウンロード",
+    "Pay What You Want": "自分で支払額を決める",
     "Download elementary OS icon": "elementary OS をダウンロード アイコン",
     "Choose a Download": "ダウンロードの選択",
     "Download from a localized server or by magnet link. For help and more info, see the": "お近くのミラーサーバーか、マグネットリンクのどちらかからダウンロードしてください。ヘルプおよび詳細は、こちらをご覧ください：",
     "installation guide": "インストールガイド",
     "Cancel": "キャンセル",
-    "Download Loki": "Loki をダウンロード",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "軽量、そしてオープンソース。 Windows や macOS の代わりに。 - elementary OS"
 }

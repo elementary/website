@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Hệ điều hành mở và rất nhanh, có thể thay thế cho Windows và macOS",
-    "Pay What You Want": "Trả giá bạn muốn.",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Khác",
     "Enter any dollar amount.": "Bạn hãy viết giá tiền dollar",
     "Purchase elementary OS": "Đặt mua elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Được xây dựng trên nền tảng Linux: nền tảng phần mềm được sử dụng bở Bộ Quốc Phòng Mỹ, Ngân hàng Trung Hoa và nhiều hơn thế nữa.",
     "Security Notices": "Xem các thông báo bảo mật",
     "Download elementary OS": "Tải về elementary OS",
+    "Pay What You Want": "Trả giá bạn muốn.",
     "Download elementary OS icon": "biểu tượng Tải elementary OS",
     "Choose a Download": "Hãy chọn phần mềm để tải về",
     "Download from a localized server or by magnet link. For help and more info, see the": "Tải về từ một máy chủ ở khu vực lân cận hoặc dùng link magnet. Để được giúp đỡ và có thêm thông tin, xem",
     "installation guide": "hướng dẫn cài đặt",
     "Cancel": "Bỏ qua",
-    "Download Loki": "Tải Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Link Torrent Magnet",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Hệ điều hành mở và rất nhanh, có thể thay thế cho Windows và macOS ⋅ elementary OS"
 }
