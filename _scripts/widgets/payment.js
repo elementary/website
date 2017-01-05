@@ -11,10 +11,6 @@ import { language } from '~/page'
 import config from '~/config'
 import Stripe from '~/lib/stripe'
 
-// Run the promises right on load
-const configPromise = config.then((c) => c)
-const stripePromise = Stripe.then((s) => s)
-
 // All two letter langauge codes that Stripe currently supports
 const supportedLanguages = [
     'da',
@@ -45,6 +41,10 @@ export default class Payment {
         // This is used to store user details passed to Stripe, like an email
         // address or phone number.
         this.user = {}
+
+        // Start downloading the needed items when we construct the Payment class
+        config.then()
+        Stripe.then()
     }
 
     /**
@@ -77,7 +77,7 @@ export default class Payment {
      * @returns {Promise} - a promise of token information
      */
     checkout (amount, currency) {
-        return Promise.all([configPromise, stripePromise])
+        return Promise.all([config, Stripe])
         .then(([config, stripe]) => {
             return new Promise((resolve) => {
                 stripe.open(Object.assign(this.user, {

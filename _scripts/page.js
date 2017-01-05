@@ -50,9 +50,8 @@ export function branch () {
  * @return {String} - full url base path for website
  */
 export function url () {
-    if (window.location.host === 'beta.elementary.io') {
-        const branch = branch()
-        return `${window.location.origin}/${branch}`
+    if (window.location.host === 'beta.elementary.io' && branch() != null) {
+        return `${window.location.origin}/${branch()}`
     }
 
     return window.location.origin
