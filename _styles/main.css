@@ -586,7 +586,7 @@ a.third:hover {
 
 .column.alert {
     max-width: calc(100% - 70px);
-    margin: 5px;  
+    margin: 5px;
     padding: 5px;
 }
 
