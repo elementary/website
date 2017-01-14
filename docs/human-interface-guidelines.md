@@ -1,6 +1,6 @@
 # Human Interface Guidelines {#human-interface-guidelines}
 
-These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
+These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
 
 * Users will learn to use your application faster because it shares common elements that they are already familiar with.
 * Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.
@@ -16,13 +16,13 @@ For sections that have not yet been written, please refer to [The GNOME HIG](htt
 
 # Design Philosophy {#design-philosophy}
 
-The elementary HIG isn't just about a set of concrete rules; it's meant to be flexible and extensible. As such, this very first portion of the guideline is all about the guiding philosophy we employ. For a quick crash course, we like "The User is Drunk":
+The elementary OS HIG isn't just about a set of concrete rules; it's meant to be flexible and extensible. As such, this very first portion of the guideline is all about the guiding philosophy we employ. For a quick crash course, we like "The User is Drunk":
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r2CbbBLVaPk" frameborder="0" allowfullscreen></iframe>
 
 ## What Design Is Not {#what-design-is-not}
 
-Before we get into all the things that make up elementary apps, there is a clarification that needs to be made. We need to understand what exactly design is about, but more importantly we want to smash two major myths:
+Before we get into all the things that make up elementary OS apps, there is a clarification that needs to be made. We need to understand what exactly design is about, but more importantly we want to smash two major myths:
 
 1. **Design is not something you add on after you've completed a product.** Whether you realize it or not, you are constantly designing anything you build. It is an intrinsic part of creating something. Design is not just what something looks like. It's not just the colors and fonts. Design is how it works. When you decide to add a button that does a thing, that is design. You made a decision to add a button with an icon or a label and where that button went and the size and color of that button. Decisions are designs.
 
@@ -48,7 +48,7 @@ It's often very tempting to continue adding more and more features into your app
 
 ### Think in Modules {#think-in-modules}
 
-Build small, modular apps that communicate well. elementary apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
+Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
 ## Avoid Configuration {#avoid-configuration}
 
@@ -56,7 +56,7 @@ If possible, completely avoid presenting any settings or configuration in your a
 
 ### Build for the "Out of The Box" Experience {#build-for-the-out-of-the-box-experience}
 
-Design with sane defaults in mind. elementary apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
+Design with sane defaults in mind. elementary OS apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM" frameborder="0" allowfullscreen></iframe>
 
@@ -196,15 +196,15 @@ See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/)
 
 # Desktop Integration {#desktop-integration}
 
-An important advantage that developers have when choosing the elementary platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary. This section will cover things like:
+An important advantage that developers have when choosing the elementary OS platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary. This section will cover things like:
 
 * **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. This section details how to create these launchers.
 
 * **MIME handling**. If your application can open and save files, place entries for those file types in the application database and the document type (MIME) database. This lets the file manager and other applications automatically launch your application when they encounter files your application can handle.
 
-* **Contractor**. elementary provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
+* **Contractor**. elementary OS provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
 
-* **Using System Indicators**. elementary uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
+* **Using System Indicators**. elementary OS uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
 
 * **Integrating with the Dock**. elementary ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
 
@@ -428,7 +428,7 @@ Toolbar items should be organized with the most significant objects on the left 
 
 # UI Toolkit Elements {#ui-toolkit-elements}
 
-elementary uses consistent user interface (UI) elements to bring a unified and predictable experience to users, no matter what app they're using. When used properly, this ensures a small (or nonexistent) learning curve for your app.
+elementary OS uses consistent user interface (UI) elements to bring a unified and predictable experience to users, no matter what app they're using. When used properly, this ensures a small (or nonexistent) learning curve for your app.
 
 ## Widget Concepts {#widget-concepts}
 
@@ -758,7 +758,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
+Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
@@ -798,14 +798,14 @@ Symbolic icons are best used:
 
 ## Composition {#composition}
 
-There are three aspects to note when designing an elementary icon:
+There are three aspects to note when designing an elementary OS icon:
 
 * Its baseline (highlighted in <span style="color:blue;">blue</span>) to ensure that all icons of one size line up along the bottom when in a row (much like text).
 * Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
 * The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
 
-<img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary Videos icon">
-<img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary Terminal icon">
+<img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Videos icon">
+<img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Terminal icon">
 
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
 
@@ -827,30 +827,30 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 
 However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
-<img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary Video icon">
-<img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary Terminal icon">
+<img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Video icon">
+<img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Terminal icon">
 
 Rounder components will generally require some overshoot, to compensate for the optical illusion that makes them look smaller than their rectangular counterparts.
 
 ## Outlines &amp; Contrast {#contrast}
 
-All elementary icons have a thin outline (stroke) to improve their contrast. The width of this stroke is **one** pixel for all icons, at every size.
+All elementary OS icons have a thin outline (stroke) to improve their contrast. The width of this stroke is **one** pixel for all icons, at every size.
 The color of the outline is a darker variant (30% darker) of the primary color of the icon. For instance, in the calendar icon below, the green header has a stroke of a darker green.
 
-<img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Example of contrast in elementary Calendar icon">
+<img title="First icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Example of contrast in elementary OS Calendar icon">
 <img title="Second icon contrast example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/contrast-example2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Example of contrast in elementary Settings icon">
 
 To further improve contrast, strokes are also semi-transparent. This ensures that icons appear sharp against a variety of backgrounds. Also, if the element is near-white, this stroke acts as a border and contains, rather than overlaps, its corresponding element. See the above icon for an example of this.
 
 ## Shadows &amp; Highlights {#shadows}
 
-If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary icons emulate in their design to lend them a degree of realism.
+If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary OS icons emulate in their design to lend them a degree of realism.
 
 ### Edge Highlight
 
 To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
-<img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary Music icon">
+<img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary OS Music icon">
 
 ### Drop Shadow
 
@@ -887,7 +887,7 @@ Below are some "do and don't" examples to consider when creating icons for your 
 
 # Text {#text}
 
-Although elementary primarily uses graphics as a means of interaction, text is also widely used for things like button labels, tooltips, menu items, dialog messages, and more. Using text consistently and clearly both in terminology and format is an extremely important part of designing your app and helps add to the overall cohesiveness of the elementary platform.
+Although elementary OS primarily uses graphics as a means of interaction, text is also widely used for things like button labels, tooltips, menu items, dialog messages, and more. Using text consistently and clearly both in terminology and format is an extremely important part of designing your app and helps add to the overall cohesiveness of the elementary OS platform.
 
 * **Writing Style**. Keep your text understandable and consistent with the rest of elementary.
 * **Language**. Keep other languages in mind.
@@ -941,7 +941,7 @@ Open a file to begin editing.
 
 ## Language {#language}
 
-While much of elementary is developed in English, there are many users who do not know English or prefer their native language. While putting text into your app, keep the following in mind:
+While much of elementary OS is developed in English, there are many users who do not know English or prefer their native language. While putting text into your app, keep the following in mind:
 
 * **Make it translatable.** Always, always make your text translatable using the built-in methods. It can't be translated if you don't make it translatable. Include punctuation in translatable strings.
 * **Avoid culture-specific references.** Remember that users of another language are going to be using your app. Specific metaphors or references will likely be lost on or downright confusing to other those users. Instead, use universal text.
