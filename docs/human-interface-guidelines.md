@@ -114,7 +114,7 @@ Visible design is a large part of the user experience, but so is the user's work
 
 ### Required Configuration {#required-configuration}
 
-When a user first launches an app, they should be able to get down to business as quickly as possible. If configuration is not absolutely required for the first use, they should not be required to configure anything. If configuration is required (like in Postler), they should be presented with a clean and simple [welcome screen](#welcome-screen) within the app (again, like Postler). Avoid separate configuration dialogs when launching.
+When a user first launches an app, they should be able to get down to business as quickly as possible. If configuration is not absolutely required for the first use, they should not be required to configure anything. If configuration is required, they should be presented with a clean and simple [welcome screen](#welcome-screen) within the app. Avoid separate configuration dialogs when launching.
 
 ### Speed of Launch {#speed-of-launch}
 
