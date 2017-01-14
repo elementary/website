@@ -1,6 +1,9 @@
 <?php
+
 $l10n->set_domain('layout');
-if ( getenv('PHPENV') !== 'production' ):
+
+if ( getenv('PHPENV') !== 'production' ) {
+
 ?>
         <div class="row alert warning">
             <div class="column alert">
@@ -13,6 +16,6 @@ if ( getenv('PHPENV') !== 'production' ):
                 </div>
             </div>
         </div>
-<?php
-endif;
+<?php }
+
 $l10n->set_domain($page['name']);

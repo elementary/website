@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'Support &sdot; elementary';
 
@@ -12,7 +12,11 @@
 ?>
 
 <div class="row">
-    <h1>Get support for <?php include("./images/logotype-os.svg"); ?></h1>
+    <h1>Get support for <?php
+                            // Embed the SVG to fix scaling in WebKit 1.x,
+                            // while preserving CSS options for the image.
+                            include __DIR__.'/images/logotype-os.svg';
+                        ?></h1>
 </div>
 
 <div class="row apps">

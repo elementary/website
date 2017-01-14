@@ -1,0 +1,8 @@
+{
+    "You're connected!": "Esti conectat!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Conexiunea ta la internet pare sa functioneze. Poti inchide in siguranta aceasta fereastra si continua sa folosesti dispozitivul.",
+    "Why is this window appearing?": "De ce apare aceasta fereastra?",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS verifica automat conexiunea ta la Internet atunci cand te conectezi la o retea WIFI noua. Daca detecteaza ca nu exista o conexiune la Internet (ex. daca esti conectat la un punct de acces public, cafenea), aceasta fereastra va aparea si va afisa o pagina de autentificare.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Anumite retele pot aparea la inceput ca un portal captiv, declansand aceasta fereastra, ca in final sa se conecteze. In aceste situatii, vei vedea acest mesaj si poti inchide fereastra in siguranta.",
+    "You're connected! &sdot; elementary": "Esti conectat! - elementary"
+}

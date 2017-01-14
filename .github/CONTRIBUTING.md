@@ -102,9 +102,9 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
 ```php
 <?php
-    include '_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
     $page['title'] = 'HTML Safe Title';
-    include '_templates/header.php';
+    include $template['header'];
 
     $foo        = bar($para, $param);
     $second_foo = 42;

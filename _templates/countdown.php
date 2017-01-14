@@ -30,10 +30,6 @@ if (
     })
 </script>
 
-<?php
-
-}
+<?php }
 
 $l10n->set_domain($page['name']);
-
-?>

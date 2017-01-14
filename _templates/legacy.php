@@ -10,7 +10,7 @@ $l10n->set_domain('layout');
 $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
 $is_HTTP = (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off');
-$is_old_IE = preg_match('/MSIE [2-10]/i', $user_agent);
+$is_old_IE = preg_match('/MSIE [2\-10]/i', $user_agent);
 
 if (getenv('PHPENV') === 'production' && $is_HTTP) {
 ?>
@@ -38,6 +38,3 @@ if (getenv('PHPENV') === 'production' && $is_HTTP) {
 
 <?php
 }
-
-$l10n->end_html_translation();
-?>

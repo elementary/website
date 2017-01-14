@@ -26,7 +26,7 @@ body {
     box-sizing: border-box;
     color: #333;
     fill: #333;
-    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
     min-height: 100vh;
@@ -156,9 +156,14 @@ img.h1 {
     opacity: 0.8;
 }
 
+div.inline,
 img.inline {
     display: inline-block !important;
     vertical-align: middle;
+}
+
+img.inline + div.inline {
+    margin-left: 12px;
 }
 
 .inline-tweet {
@@ -271,7 +276,7 @@ nav a:visited {
     display: inline-block;
     fill: inherit;
     margin: 0;
-    padding: 0 16px;
+    padding: 0 12px;
 }
 
 nav a:focus {
@@ -431,7 +436,7 @@ footer ul li a:focus {
         width: calc(33% - 88px);
     }
 
-    .column + .column {
+    .column + .column + .column {
         margin-left: 16px !important;
     }
 }
@@ -580,7 +585,9 @@ a.third:hover {
 }
 
 .column.alert {
+    margin: 5px;
     max-width: calc(100% - 70px);
+    padding: 5px;
 }
 
 .row.alert > .column.alert {
@@ -676,8 +683,8 @@ button.active,
 button.suggested-action,
 .button.suggested-action {
     background-color: #64b9f1;
-    background-image: linear-gradient(to bottom, #75c6fd, #53abe5);
-    border-color: #4d9cd1;
+    background-image: linear-gradient(to bottom, #4ca7e4, #328ecc);
+    border-color: #337cac;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
@@ -695,7 +702,7 @@ button.loading,
     background: none;
     border-width: 2px;
     box-shadow: none;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-left: 0;
     margin-top: 10px;

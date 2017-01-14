@@ -21,7 +21,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
         } else if (stripeKey == null) {
             console.error('Unable to find stripe key on page')
 
-            $.getJSON(baseUrl + 'backend/payment.php', function (data) {
+            $.getJSON(baseUrl + 'api/payment.php', function (data) {
                 console.log('Was able to fetch stripe key manually')
 
                 stripeKey = data
@@ -78,7 +78,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
         var $form = $('form[action$="order"]')
 
         function stripeLanguage () {
-            var stripeLanguages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
             var languageCode = $('html').prop('lang')
 
             // Stripe supports simplified chinese
@@ -102,7 +102,7 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
                 name: 'elementary LLC.',
                 description: 'Store',
                 bitcoin: true,
-                alipay: 'auto',
+                alipay: false,
                 locale: stripeLanguage() || 'auto',
                 amount: amount,
                 email: email
