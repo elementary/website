@@ -12,7 +12,7 @@ import Stripe from '~/lib/stripe'
 
 import config from '~/config'
 
-// TODO Import these too: https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5,webtorrent@0.96.4,streamsaver.js@1,web-streams-polyfill@1.1.0
+// TODO Import these too: https://cdn.jsdelivr.net/g/webtorrent@0.98.1,streamsaver.js@1,web-streams-polyfill@1.1.0
 
 Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, StripeCheckout]) => {
     $(document).ready(() => {
