@@ -102,13 +102,13 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
          *
          * @return {void}
          */
-        const updateAddressForm = () => {
+        const updateAddressForm = (notify = true) => {
             const form = $('form[action$="checkout"]')
             const value = $('select[name="country"]', form).val()
             const $state = $('select[name="state"]', form)
             const $statelabel = $('label[for="state"]', form)
 
-            ga('send', 'event', 'Cart', 'Country Change', value)
+            if (notify) ga('send', 'event', 'Cart', 'Country Change', value)
 
             if (country[value] != null && typeof country[value]['states'] === 'object') {
                 $state.empty()
@@ -129,7 +129,7 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
         }
 
         // Hide the inputs we don't need depending on the country
-        $('form[action$="checkout"] ').on('change', updateAddressForm)
-        updateAddressForm()
+        $('form[action$="checkout"]').on('change', updateAddressForm(true))
+        updateAddressForm(false)
     })
 })
