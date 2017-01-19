@@ -585,7 +585,9 @@ a.third:hover {
 }
 
 .column.alert {
+    margin: 5px;
     max-width: calc(100% - 70px);
+    padding: 5px;
 }
 
 .row.alert > .column.alert {

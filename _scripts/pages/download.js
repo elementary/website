@@ -141,7 +141,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
             if (ua.indexOf('Linux') >= 0) {
                 return 'Linux'
             }
-            return 'Other'
+            return 'Unknown'
         }
         var detectedOS = detectOS()
 
