@@ -3,12 +3,12 @@
 *****************************************************************************************/
 
 .hljs {
-    -webkit-text-size-adjust: none;
     background: #fdf6e3;
     color: #657b83;
     display: block;
     overflow-x: auto;
     padding: 0.5em;
+    text-size-adjust: none;
 }
 
 .hljs-comment,
