@@ -184,9 +184,6 @@ pre.highlighted .pre-numbering {
     min-width: 2.5em;
     padding: 0.5em;
     text-align: right;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
