@@ -267,9 +267,11 @@ nav {
     }
 }
 
-@media (min-width: 990px) and (max-width: 1400px) {
-    .row.docs {
-        margin: 0 auto 0 300px;
+@media (min-width: 990px) {
+    .has-sidebar .row.docs {
+        margin: 0 auto;
+        max-width: 1100px;
+        padding-left: 324px;
     }
 }
 
