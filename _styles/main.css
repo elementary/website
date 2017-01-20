@@ -166,6 +166,14 @@ img.inline + div.inline {
     margin-left: 12px;
 }
 
+.img--cutoff-bottom::after {
+    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
 .inline-tweet {
     color: inherit;
 }
