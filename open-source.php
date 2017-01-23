@@ -175,6 +175,9 @@
         <a href="https://inkscape.org/support-us/donate/">
             <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape">
         </a>
+        <a href="https://letsencrypt.org/donate/">
+            <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let's Encrypt">
+        </a>
         <a href="http://wiki.osmfoundation.org/wiki/Donate">
             <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map">
         </a>
