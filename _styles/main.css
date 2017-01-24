@@ -166,6 +166,14 @@ img.inline + div.inline {
     margin-left: 12px;
 }
 
+.img--cutoff-bottom::after {
+    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
 .inline-tweet {
     color: inherit;
 }
@@ -626,8 +634,7 @@ a.third:hover {
 button,
 select,
 .button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    appearance: none;
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -774,12 +781,12 @@ option {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
@@ -804,17 +811,11 @@ select:focus:invalid {
     color: #c0392b !important;
 }
 
-.button::-webkit-input-placeholder,
-.button:-moz-placeholder,
-.button::-moz-placeholder,
-.button:-ms-input-placeholder {
+.button::placeholder {
     color: #333;
 }
 
-input:focus::-webkit-input-placeholder,
-input:focus:-moz-placeholder,
-input:focus::-moz-placeholder,
-input:focus:-ms-input-placeholder {
+input:focus::placeholder {
     color: transparent;
 }
 
@@ -974,7 +975,7 @@ input:focus:-ms-input-placeholder {
 .dialog img {
     display: inline-block;
     margin-right: 12px;
-    -webkit-user-select: none;
+    user-select: none;
     vertical-align: top;
 }
 
@@ -1006,11 +1007,10 @@ input:focus:-ms-input-placeholder {
 .dialog .button {
     display: inline-block;
     font-size: 14px;
-    -ms-flex: 0 35%;
     flex: 0 35%; /* FIXME: These values are bullshit */
     margin: 0;
     padding: 9px 12px;
-    -webkit-user-select: none;
+    user-select: none;
     white-space: nowrap;
 }
 
