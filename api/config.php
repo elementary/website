@@ -14,8 +14,7 @@ $output = array(
         'title' => $config['release_title'],
         'version' => $config['release_version'],
         'filename' => $config['release_filename'],
-        'magnet' => $config['release_magnet'],
-        'cdn' => $config['release_cdn']
+        'magnet' => $config['release_magnet']
     ),
 
     'keys' => array(
