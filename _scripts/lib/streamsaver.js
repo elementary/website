@@ -8,8 +8,6 @@
 import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
-import streams from '~/lib/web-streams-polyfill'
-
 export default new Promise((resolve, reject) => {
     Script('https://cdn.jsdelivr.net/g/streamsaver.js@1', () => {
         console.log('streamSaver loaded')

@@ -9,7 +9,6 @@ import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 import Stripe from '~/lib/stripe'
-import streams from '~/lib/web-streams-polyfill'
 import streamSaver from '~/lib/streamsaver'
 import WebTorrent from '~/lib/webtorrent'
 
@@ -226,10 +225,12 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         var useStreamSaver = streamSaver.supported && isHttps
         var useWebTorrent = WebTorrent.WEBRTC_SUPPORT && (useStreamSaver || isFirefox)
         var runningWebTorrent = false
+        var downloadLink = '//' + config.user.region + '.dl.elementary.io/download/' + btoa(Date.now()) + '/'
         console.log('isFirefox is ' + isFirefox)
         console.log('isHttps is ' + isHttps)
         console.log('streamSaver.supported is ' + streamSaver.supported)
         console.log('WebTorrent.WEBRTC_SUPPORT is ' + WebTorrent.WEBRTC_SUPPORT)
+        console.log('downloadLink is ' + downloadLink)
 
         // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
         // TODO Track Webtorrent downloads
@@ -243,11 +244,11 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                     console.error('WTERROR: ' + err.message)
                 })
                 // Add Torrent
-                console.log('Starting Download from https:' + downloadLink + releaseFilename + '.torrent')
+                console.log('Starting Download from https:' + downloadLink + config.release.filename + '.torrent')
                 // TODO Wrap in a try
                 client.add(
                     // OPTION: Torrent file name to get instant metadata.
-                    'https:' + downloadLink + releaseFilename + '.torrent',
+                    'https:' + downloadLink + config.release.filename + '.torrent',
                     {
                         announce: [
                             'https://ashrise.com:443/phoenix/announce',
@@ -272,11 +273,11 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 console.error('TERROR: ' + err.message)
             })
             console.log('Download started.')
-            torrent.addWebSeed('https:' + downloadLink + releaseFilename)
+            torrent.addWebSeed('https:' + downloadLink + config.release.filename)
             if (window.ga) {
-                ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (OS)', 'Homepage', detectedOS)
-                ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Region)', 'Homepage', downloadRegion)
-                ga('send', 'event', releaseTitle + ' ' + releaseVersion + ' Download (Method)', 'Homepage', 'Webtorrent')
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
+                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Webtorrent')
             }
             // Print out progress every second
             var c = 0

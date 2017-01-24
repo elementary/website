@@ -12,7 +12,10 @@ require_once __DIR__.'/../_backend/here-miss.php';
 $output = array(
     'release' => array(
         'title' => $config['release_title'],
-        'version' => $config['release_version']
+        'version' => $config['release_version'],
+        'filename' => $config['release_filename'],
+        'magnet' => $config['release_magnet'],
+        'cdn' => $config['release_cdn']
     ),
 
     'keys' => array(

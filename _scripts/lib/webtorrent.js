@@ -8,9 +8,6 @@
 import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
-import streams from '~/lib/web-streams-polyfill'
-import streamSaver from '~/lib/streamsaver'
-
 export default new Promise((resolve, reject) => {
     Script('https://cdn.jsdelivr.net/g/webtorrent@0.98.1', () => {
         console.log('WebTorrent loaded')
