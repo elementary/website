@@ -1,19 +1,22 @@
 <?php
 
+/**
+ * _backend/store/cart.php
+ * Handles backend manipulation of cart cookie
+ *
+ * Items stored in cart cookie are in the JSON string form of:
+ * { <id>: <quantity> }
+ *
+ * All internal PHP handling is in the form of:
+ * { <id> => {
+ *     quantity: <quantity>
+ *     product: <product object>
+ * }}
+ */
+
 namespace Store\Cart;
 
 require_once __DIR__.'/product.php';
-
-/**
- * NOTE: items stored in cart cookie are in the JSON string form of:
- * { <product id>-<variant id>: <quantity> }
- * but any all PHP arrays of the cart object will be in the form of:
- * { <product id>-<variant id> => {
- *     quantity: <quantity>
- *     product: <product array>
- *     variant: <variant array>
- * }}
- */
 
 /**
  * get_cart
@@ -22,7 +25,7 @@ require_once __DIR__.'/product.php';
  * @return Array list of products
  */
 function get_cart () {
-    $products = \Store\Product\do_open();
+    $products = \Store\Product\get_products();
 
     if (!isset($_COOKIE['cart'])) {
         $cart = array();
@@ -32,20 +35,15 @@ function get_cart () {
 
     $f = [];
     foreach ($cart as $id => $quantity) {
-        list($i, $v) = explode('-', $id, 2);
-
-        $key = array_search($i, array_column($products, 'id'));
-        if ($key === null) continue;
-        $product = $products[$key];
-
-        $key = array_search($v, array_column($product['variants'], 'id'));
-        if ($key === null) continue;
-        $variant = $product['variants'][$key];
+        try {
+            $product = \Store\Product\get_product($id);
+        } catch (\Exception $e) {
+            continue;
+        }
 
         $f[$id] = array(
-            'product' => $product,
-            'variant' => $variant,
-            'quantity' => intval($quantity)
+            'quantity' => intval($quantity),
+            'product' => $product
         );
     }
 
@@ -63,7 +61,7 @@ function get_subtotal () {
     $price = 0;
 
     foreach ($cart as $item) {
-        $price = $price + ($item['quantity'] * $item['variant']['price']);
+        $price = $price + ($item['quantity'] * $item['product']['price']);
     }
 
     return number_format((float) $price, 2);
@@ -82,7 +80,7 @@ function get_shipping () {
     foreach ($cart as $pro) {
         $items[] = array(
             'quantity' => $pro['quantity'],
-            'variant_id' => $pro['variant']['id']
+            'variant_id' => $pro['product']['printful_variant']
         );
     }
 
@@ -100,9 +98,10 @@ function get_shipping () {
 function set_cart (array $c) {
     $f = [];
     foreach ($c as $item) {
-        if (isset($item['quantity']) && (int) $item['quantity'] > 0) {
-            $f[$item['product']['id'] . '-' . $item['variant']['id']] = $item['quantity'];
-        }
+        if (!isset($item['product']) || !isset($item['product']['id'])) continue;
+        if (!isset($item['quantity']) || (int) $item['quantity'] < 1) continue;
+
+        $f[$item['product']['id']] = $item['quantity'];
     }
 
     if (count($f) > 0) {
@@ -122,27 +121,25 @@ function set_cart (array $c) {
  * @return Array list of cart items
  */
 function do_parse (array $c) {
-    $products = \Store\Product\do_open();
+    $products = \Store\Product\get_products();
     $f = [];
 
     foreach ($c as $name => $value) {
-        preg_match('/product-([0-9]+\-[0-9]+)-id/', $name, $matches);
+        preg_match('/product-([0-9]+)-id/', $name, $matches);
 
         if ($matches && isset($c["product-$matches[1]-quantity"])) {
-            list($i, $v) = explode('-', $matches[1], 2);
+            $id = intval($matches[1]);
+            $quantity = intval($c["product-$id-quantity"]);
 
-            $key = array_search($i, array_column($products, 'id'));
-            if ($key === null) continue;
-            $product = $products[$key];
+            try {
+                $product = \Store\Product\get_product($id);
+            } catch (\Exception $e) {
+                continue;
+            }
 
-            $key = array_search($v, array_column($product['variants'], 'id'));
-            if ($key === null) continue;
-            $variant = $product['variants'][$key];
-
-            $f[$i . '-' . $v] = array(
+            $f[$id] = array(
                 'product' => $product,
-                'variant' => $variant,
-                'quantity' => intval($c["product-$matches[1]-quantity"])
+                'quantity' => $quantity
             );
         }
     }
@@ -156,38 +153,21 @@ function do_parse (array $c) {
  * sets the quantity on product in cart
  *
  * @param Int $i product id
- * @param Int $v product variant id
  * @param Int $q quantity of product to set
  *
  * @return Boolean true if cookie was set
  *
- * @throws Exception on bad product or variant param given
+ * @throws Exception on bad product param given
  */
-function set_quantity (int $i, int $v, int $q = 1) {
+function set_quantity (int $i, int $q = 1) {
     $cart = get_cart();
-    $products = \Store\Product\do_open();
 
-    $product_key = array_search($i, array_column($products, 'id'));
-    if ($product_key === null) {
-        throw new \Exception('Product id does not exist');
-    }
-    $product = $products[$product_key];
+    $product = \Store\Product\get_product($i);
 
-    $variant_key = array_search($v, array_column($product['variants'], 'id'));
-    if ($variant_key === null) {
-        throw new \Exception('Variant id does not exist');
-    };
-    $variant = $product['variants'][$variant_key];
-
-    $id = $product['id'] . '-' . $variant['id'];
-    if (!isset($cart[$id])) {
-        $cart[$id] = array(
-            'product' => $product,
-            'variant' => $variant,
-        );
-    }
-
-    $cart[$id]['quantity'] = $q;
+    $cart[$product['id']] = array(
+        'product' => $product,
+        'quantity' => $q
+    );
 
     return set_cart($cart);
 }
@@ -197,20 +177,18 @@ function set_quantity (int $i, int $v, int $q = 1) {
  * adds to quantity in cart
  *
  * @param Int $i product id
- * @param Int $v product variant id
  * @param Int $q quantity of product to add
  *
  * @return Boolean true if cookie was set
  *
- * @throws Exception on bad product or variant param given
+ * @throws Exception on bad product param given
  */
-function set_add (int $i, int $v, int $q = 1) {
+function set_add (int $i, int $q = 1) {
     $cart = get_cart();
-    $id = $i . '-' . $v;
 
-    if (isset($cart[$id])) {
-        $q += $cart[$id]['quantity'];
+    if (isset($cart[$i])) {
+        $q += $cart[$i]['quantity'];
     }
 
-    return set_quantity($i, $v, $q);
+    return set_quantity($i, $q);
 }

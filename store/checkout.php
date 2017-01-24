@@ -134,27 +134,27 @@
         <div class="list list--product">
 
             <?php
-                foreach ($cart as $index => $item) {
+                foreach ($cart as $id => $item) {
+                    $quantity = $item['quantity'];
                     $product = $item['product'];
-                    $variant = $item['variant'];
             ?>
 
-                <div class="list__item" id="product-<?php echo $index ?>">
+                <div class="list__item" id="product-<?php echo $id ?>">
                     <img src="<?php echo $product['image'] ?>"/>
                     <div class="list__info">
-                        <b><?php echo $variant['name'] ?></b>
+                        <b><?php echo $product['short_name'] ?></b>
                     </div>
                     <div class="list__detail">
-                        <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $variant['price'] ?>">
+                        <input type="hidden" name="product-<?php echo $id ?>-price" value="<?php echo $product['price'] ?>">
 
                         <span class="alert--error"></span>
 
                         <div class="subtotal">
-                            <span>$<?php echo number_format($variant['price'], 2) ?></span>
+                            <span>$<?php echo number_format($product['price'], 2) ?></span>
                             <span>×</span>
-                            <span><?php echo $item['quantity'] ?></span>
+                            <span><?php echo $quantity ?></span>
                             <span>=</span>
-                            <b>$<?php echo number_format($variant['price'] * $item['quantity'], 2) ?></b>
+                            <b>$<?php echo number_format($product['price'] * $quantity, 2) ?></b>
                         </div>
                     </div>
                 </div>

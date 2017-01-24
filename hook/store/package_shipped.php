@@ -38,31 +38,28 @@ try {
 }
 
 try {
-    $products = \Store\Product\do_open();
+    $products = \Store\Product\get_products();
 
     $cart = [];
     foreach ($res['data']['order']['items'] as $item) {
-        $key = array_search($item['product']['product_id'], array_column($products, 'id'));
-        if ($key === null || $key === false) continue;
-        $product = $products[$key];
-
-        $key = array_search($item['product']['variant_id'], array_column($product['variants'], 'id'));
-        if ($key === null || $key === false) continue;
-        $variant = $product['variants'][$key];
+        try {
+            $id = intval($item['external_id']);
+            $product = \Store\Product\get_product($item['external_id']);
+        } catch (Exception $e) {
+            error_log('Error while trying to get product from external_id');
+            error_log($e->getMessage());
+            continue;
+        }
 
         // add full url to any absolute image paths
         if (isset($product['image']) && strpos($product['image'][0], 'http') === false) {
             $product['image'] = 'https://elementary.io/' . $product['image'];
         }
 
-        if (isset($variant['image']) && strpos($variant['image'][0], 'http') === false) {
-            $variant['image'] = 'https://elementary.io/' . $variant['image'];
-        }
-
         $cart[] = array(
             'image' => $product['image'],
-            'name' => $variant['name'],
-            'price' => $variant['price'],
+            'name' => $product['short_name'],
+            'price' => $product['price'],
             'quantity' => intval($item['quantity'])
         );
     }

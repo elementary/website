@@ -35,7 +35,7 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
             if (e.target !== this) return
 
             var $item = $(this).closest('.grid__item')
-            if ($item.attr('id').indexOf('product') === -1) return
+            if ($item.attr('id').indexOf('group') === -1) return
 
             e.preventDefault()
 
@@ -52,31 +52,25 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
         })
 
         /**
-         * updateVariant
+         * updateModel
          * Updates a modal with new variant data
          *
          * @param {Object} $f - the jQuery form to update
          * @param {Object} p - the product object
-         * @param {Object} v - the variant object
          *
          * @return {Void}
          */
-        var updateVariant = function ($f, p, v) {
+        var updateModel = function ($f, p) {
             var $m = $f.closest('.modal')
 
             // Update price information
-            $f.find('input[name="variant"]').val(v['id'])
-            $m.find('.modal__price').text('$' + parseFloat(v['price']).toFixed(2))
-
-            if (v['image'] != null) {
-                $m.find('img').prop('src', v['image'])
-            } else {
-                $m.find('img').prop('src', p['image'])
-            }
+            $f.find('input[name="id"]').val(p['id'])
+            $m.find('.modal__price').text('$' + parseFloat(p['price']).toFixed(2))
+            $m.find('img').prop('src', p['image'])
 
             // Update modal information
-            setValue($f, 'size', v['size'])
-            setValue($f, 'color', v['color'])
+            setValue($f, 'size', p['size'])
+            setValue($f, 'color', p['color'])
         }
 
         /**
@@ -135,9 +129,9 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
          * @return {Void}
          */
         var updateInfo = function ($f, t, v) {
-            var $id = $f.find('input[name="id"]')
+            var $group = $f.find('input[name="group"]')
 
-            var id = Number($id.val())
+            var group = Number($group.val())
             var size = getValue($f, 'size')
             var color = getValue($f, 'color')
 
@@ -151,7 +145,11 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
 
             var p = null
             for (var pi in products) {
-                if (products[pi]['id'] !== id) continue
+                if (products[pi]['group'] !== group) continue
+
+                if (size != null && products[pi]['size'] !== size) continue
+                if (color != null && products[pi]['color'] !== color) continue
+
                 p = products[pi]
             }
 
@@ -161,28 +159,16 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
                 return
             }
 
-            for (var i in p['variants']) {
-                var variant = p['variants'][i]
+            updateModel($f, p)
 
-                if (size != null && variant['size'] !== size) continue
-                if (color != null && variant['color'] !== color) continue
-
-                updateVariant($f, p, variant)
-
-                $('.alert--error', $f).text('')
-                $('input[type="submit"]', $f).prop('disabled', false)
-
-                return
-            }
-
-            $('.alert--error', $f).text('Unable to find variant')
-            $('input[type="submit"]', $f).prop('disabled', true)
+            $('.alert--error', $f).text('')
+            $('input[type="submit"]', $f).prop('disabled', false)
         }
 
         /**
          * Handles button selection input and switching
          */
-        $('.modal--product form[action$="inventory"] button.target-amount').on('click', function (e) {
+        $('.modal--product form[action$="cart"] button.target-amount').on('click', function (e) {
             e.preventDefault()
 
             var $input = $(this).siblings('input')
@@ -197,7 +183,7 @@ Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
         /**
          * Updates product variance based on user input (size, color, etc)
          */
-        $('.modal--product form[action$="inventory"] select').on('change', function (e) {
+        $('.modal--product form[action$="cart"] select').on('change', function (e) {
             e.preventDefault()
 
             var $form = $(this).closest('form')

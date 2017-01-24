@@ -182,13 +182,14 @@
             )
         );
 
-        foreach ($cart as $index => $item) {
+        foreach ($cart as $id => $item) {
             $req['items'][] = array(
-                'variant_id' => $item['variant']['id'],
+                'external_id' => $id,
+                'variant_id' => $item['product']['printful_variant'],
                 'quantity' => $item['quantity'],
-                'name' => $item['variant']['name'],
+                'name' => $item['product']['short_name'],
                 'files' => $item['product']['files'],
-                'retail_price' => $item['variant']['price']
+                'retail_price' => $item['product']['price']
             );
         }
 
