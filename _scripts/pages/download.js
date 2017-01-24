@@ -5,19 +5,20 @@
 
 import Promise from 'core-js/fn/promise'
 
+import streams from 'web-streams-polyfill'
+
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 import Stripe from '~/lib/stripe'
-import ReadableStream from '~/lib/web-streams-polyfill'
 import streamSaver from '~/lib/streamsaver'
 import WebTorrent from '~/lib/webtorrent'
 
 import config from '~/config'
 
 Promise
-    .all([config, analytics, jQuery, Stripe, ReadableStream, streamSaver, WebTorrent, modal])
-    .then(([config, ga, $, StripeCheckout, ReadableStream, streamSaver, WebTorrent]) => {
+    .all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent, modal])
+    .then(([config, ga, $, StripeCheckout, streams, streamSaver, WebTorrent]) => {
     $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
