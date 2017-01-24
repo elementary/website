@@ -11,6 +11,6 @@ import Script from 'scriptjs'
 export default new Promise((resolve, reject) => {
     Script('https://cdn.jsdelivr.net/g/web-streams-polyfill@1.1.0', () => {
         console.log('web-streams-polyfill loaded')
-        return resolve(window.streams)
+        return resolve(window.ReadableStream)
     })
 })
