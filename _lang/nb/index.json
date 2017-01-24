@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "En rask og åpen avløser til Windows og macOS",
-    "Pay What You Want": "Betal hva du vil",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Eget valg",
     "Enter any dollar amount.": "Skriv inn et hvilket som helst beløp i amerikanske dollar (også 0).",
     "Purchase elementary OS": "Kjøp elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "Vi er bygget på Linux: samme programvaren som driver det amerikanske forsvarsdepartementet, Bank of China med mer.",
     "Security Notices": "Sikkerhetsvarsler",
     "Download elementary OS": "Last ned elementary OS",
+    "Pay What You Want": "Betal hva du vil",
     "Download elementary OS icon": "Ikon for nedlastning av elementary OS",
     "Choose a Download": "Velg en nedlasting",
     "Download from a localized server or by magnet link. For help and more info, see the": "Last ned fra en lokal tjener eller via en magnet-lenke. For hjelp og mer informasjon, se",
     "installation guide": "installasjonsveiledning",
     "Cancel": "Avbryt",
-    "Download Loki": "Last ned Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Magnet-lenke",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "En rask og åpen avløser til Windows og macOS ⋅ elementary OS"
 }

@@ -1,5 +1,5 @@
 {
-    "Open Source": "Ανοικτού Κώδικα",
+    "We're Built on Open Source": "We're Built on Open Source",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "Η πλατφόρμα του elementary OS βασίζεται στα ισχυρά θεμέλια Ελεύθερου & Ανοικτού Κώδικα λογισμικού. Χωρίς αυτά τα έργα, το elementary OS δεν θα υπήρχε.",
     "Get Involved": "Συμμετέχετε",
     "Applications": "Εφαρμογές",
@@ -68,6 +68,15 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Σύστημα αρχείων, Υλικό, Δικτύωση & Οδηγοί",
     "Kernel": "Πυρήνας",
+    "We Support Open Source Projects": "We Support Open Source Projects",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "Ολα τα λογοτυπα εδω ειναι εμπορικά σήματα των ανάλογων προγραμμάτων.",
     "Open Source &sdot; elementary": "Ελεύθερος Κώδικας ⋅ elementary"
 }

@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "快速、开源的 Windows / macOS 替代方案",
-    "Pay What You Want": "输入任意金额",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "其他",
     "Enter any dollar amount.": "输入任意金额。",
     "Purchase elementary OS": "购买 elementary OS",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "elementary OS 基于 Linux 内核。美国国防部、中国银行®以及其他诸多机构均采用基于 Linux 内核的操作系统。",
     "Security Notices": "安全细则",
     "Download elementary OS": "下载 elementary OS",
+    "Pay What You Want": "输入任意金额",
     "Download elementary OS icon": "下载 elementary OS 图标",
     "Choose a Download": "选择版本",
     "Download from a localized server or by magnet link. For help and more info, see the": "可选择从本地服务器下载或使用磁力链接下载。若您想获取帮助及更多讯息，请参阅",
     "installation guide": "安装指南",
     "Cancel": "取消",
-    "Download Loki": "下载 Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "磁力链接",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "elementary OS ⋅ 快速、开源的 Windows / macOS 替代方案"
 }
