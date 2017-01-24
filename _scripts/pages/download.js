@@ -228,8 +228,8 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
         var runningWebTorrent = false
         console.log('isFirefox is ' + isFirefox)
         console.log('isHttps is ' + isHttps)
-        console.log('useStreamSaver is ' + useStreamSaver)
-        console.log('useWebTorrent is ' + useWebTorrent)
+        console.log('streamSaver.supported is ' + streamSaver.supported)
+        console.log('WebTorrent.WEBRTC_SUPPORT is ' + WebTorrent.WEBRTC_SUPPORT)
 
         // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
         // TODO Track Webtorrent downloads
