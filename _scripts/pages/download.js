@@ -9,10 +9,11 @@ import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 import Stripe from '~/lib/stripe'
+import streams from '~/lib/web-streams-polyfill'
+import streamSaver from '~/lib/streamsaver'
+import WebTorrent from '~/lib/webtorrent'
 
 import config from '~/config'
-
-// TODO Import these too: https://cdn.jsdelivr.net/g/webtorrent@0.98.1,streamsaver.js@1,web-streams-polyfill@1.1.0
 
 Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, StripeCheckout]) => {
     $(document).ready(() => {
@@ -219,13 +220,19 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
 
         // WebTorrent will only work if (streamSaver is supported and HTTPS is
         // used) or if Firefox is used (Firefox allows large blobs).
+        // TODO
         var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') >= 0
         var isHttps = window.location.protocol === 'https:'
         var useStreamSaver = streamSaver.supported && isHttps
         var useWebTorrent = WebTorrent.WEBRTC_SUPPORT && (useStreamSaver || isFirefox)
         var runningWebTorrent = false
+        console.log('isFirefox is ' + isFirefox)
+        console.log('isHttps is ' + isHttps)
+        console.log('useStreamSaver is ' + useStreamSaver)
+        console.log('useWebTorrent is ' + useWebTorrent)
 
         // UTILITY: doWebtorrentDownload: Start the WebTorrent download.
+        // TODO Track Webtorrent downloads
         function doWebtorrentDownload () {
             if (useWebTorrent && !runningWebTorrent) {
                 $('#download-webtorrent').show()
