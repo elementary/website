@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want": "أدفع ما تريد",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "مخصص",
     "Enter any dollar amount.": "أدخل أي قيمة بالدولار.",
     "Purchase elementary OS": "شِراء إلمنتري او إس",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحني نبني على لينكس: نفس النظام المحرك لوزارة الدفاع الأمريكية وبنك الصين وأكثر من ذلك.",
     "Security Notices": "تنبيهات الحماية",
     "Download elementary OS": "تحميل نظام التشغيل المنتري",
+    "Pay What You Want": "أدفع ما تريد",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "إختر تحميلا",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "دليل التثبيت",
     "Cancel": "إلغاء",
-    "Download Loki": "تحميل Loki",
+    "Download": "Download",
     "Torrent Magnet Link": "رابط التورنت",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

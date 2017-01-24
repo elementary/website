@@ -17,6 +17,20 @@ section {
     }
 }
 
+.third p {
+    text-align: left;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+    .grid .third {
+        width: 66%;
+    }
+
+    .third p {
+        text-align: center;
+    }
+}
+
 /*********
 * Button *
 *********/
@@ -40,6 +54,15 @@ section {
 #funding .button.flat.suggested-action:focus {
     background-color: #ffc357;
     border-color: #ffc357;
+}
+
+#funding .third > img {
+    margin: -4px; /* Fix some issue to match i.fa */
+}
+
+#funding .two-thirds > img {
+    height: 48px;
+    margin: -12px;
 }
 
 #paypalform {
@@ -247,9 +270,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
+    user-select: none;
 }
 
 .web-browser #toolbar img {

@@ -26,7 +26,7 @@
     "Casting": "Selekcja",
     "Avoid using <code>as</code> keyword when casting as it might give <code>null</code> as result, which could be easily forgotten to check.": "Unikaj używania <code>as</code> kiedy kastujesz, ponieważ może to zwracać <code>null</code> i możesz zapomnieć, by to sprawdzić.",
     "Use of '=' in place of 'set'": "Używanie '=' zamiast 'set'",
-    "In places or operations where you would otherwise use <code>set</code> , you should make use of <code>=</code> instead.": "In places or operations where you would otherwise use <code>set</code> , you should make use of <code>=</code> instead.",
+    "In places or operations where you would otherwise use <code>set</code> , you should make use of <code>=</code> instead.": "W miejscach lub operacjach, gdzie w inny przypadku użył(a)byś <code>set</code>, powinieneś(aś) użyć <code>=</code> zamiast.",
     "For example, instead of using": "Na przykład, zamiast używać",
     "you should use": "powinieneś użyć",
     "Vala namespaces": "Pola nazw Vala",

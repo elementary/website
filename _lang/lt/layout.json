@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Greita ir atvira Windows ir macOS pakaita ⋅ elementary OS",
-    "Blog": "Tinklaraštis",
     "Support": "Palaikymas",
-    "Store": "Parduotuvė",
     "Developer": "Plėtojimas",
     "Get Involved": "Įsitraukti",
+    "Store": "Parduotuvė",
     "This is a development site.": "Tai yra projektuojama svetainė.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Jūs matote projektuojamą mūsų svetainės versiją. Kai kurie čia esantys puslapiai gali veikti ne taip kaip tikimasi. Jeigu čia patekote atsitiktinai, prašome pereiti į mūsų dabartinę svetainę, adresu <a href=\"http://elementary.io\">elementary.io</a>.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Autorių teisės © 2016 elementary LLC.\n                    <a href=\"/team\">Komanda</a>\n                    <a href=\"/brand\">Prekės ženklas</a>\n                    <a href=\"/privacy-policy\">Privatumo politika</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Kalba",
-    "Change Site Language": "Pakeisti sveitainės kalbą"
+    "Change Site Language": "Pakeisti sveitainės kalbą",
+    "Brand": "Prekės ženklas",
+    "Privacy Policy": "Privatumo politika",
+    "Team": "Team",
+    "Open Source": "Atviras kodas"
 }

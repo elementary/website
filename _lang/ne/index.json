@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want": "तपाईंलाई जती मन लाग्छ त्यती तिर्नुहोस् ।",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "चाहना अनुसार",
     "Enter any dollar amount.": "तपाईंलाई अनुकुल लाग्ने रकम डलरमा भर्नुहोस् ।",
     "Purchase elementary OS": "एलीमेन्टरी ओएस किन्नुहोस्",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "हामी लिनक्स् माथि निर्माण गरिएका हौं: जुन सफ्टवेयर अमेरिकी रक्षा विभाग, बैंक अफ चाइना र अरु धेरैले प्रयोग गर्दछन्।",
     "Security Notices": "सुरक्षा सूचनाहरू",
     "Download elementary OS": "एलीमेन्टरी ओएस डाउनलोड गर्नुहोस्",
+    "Pay What You Want": "तपाईंलाई जती मन लाग्छ त्यती तिर्नुहोस् ।",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "एउटा डाउनलोड छान्नुहोस्",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "स्थापना सहायक",
     "Cancel": "रद्द",
-    "Download Loki": "लोकी डाउनलोद गर्नुहोस् ।",
+    "Download": "Download",
     "Torrent Magnet Link": "टोरेन्ट म्याग्नेटको लिंक",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
 }

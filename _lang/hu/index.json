@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Egy gyors nyílt forráskódú megoldás Windows és macOS helyett",
-    "Pay What You Want": "Fizess annyit, amennyit szeretnél",
+    "Pay What You Want:": "Pay What You Want:",
     "Custom": "Egyéni",
     "Enter any dollar amount.": "Írjon be egy összeget dollárban.",
     "Purchase elementary OS": "Elementary OS megvásárlása",
@@ -85,12 +85,13 @@
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "A Linuxra építünk: ugyanarra a szoftverre, amelyet az USA Nemzetbiztonsági Hivatala, a Bank of China és sokan mások is használnak.",
     "Security Notices": "Biztonsági megjegyzések",
     "Download elementary OS": "elementary OS letöltése",
+    "Pay What You Want": "Fizess annyit, amennyit szeretnél",
     "Download elementary OS icon": "Download elementary OS icon",
     "Choose a Download": "Válassz egy letöltési formát",
     "Download from a localized server or by magnet link. For help and more info, see the": "Download from a localized server or by magnet link. For help and more info, see the",
     "installation guide": "Telepítési útmutatót",
     "Cancel": "Mégsem",
-    "Download Loki": "Loki letöltése",
+    "Download": "Download",
     "Torrent Magnet Link": "Torrent Mágnes link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Egy gyors nyílt forráskódú megoldás Windows és macOS helyett ⋅ elementary OS"
 }

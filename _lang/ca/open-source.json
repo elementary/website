@@ -1,5 +1,5 @@
 {
-    "Open Source": "Codi font obert",
+    "We're Built on Open Source": "We're Built on Open Source",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "La plataforma de l'elementary OS es construeix sobre una base forta de programari lliure i de codi obert. Sense aquest tipus de projectes, l'elementary OS no existiria.",
     "Get Involved": "Col·laboreu-hi",
     "Applications": "Aplicacions",
@@ -68,6 +68,15 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Sistema de fitxers, maquinari, xarxes i controladors",
     "Kernel": "Kernel",
+    "We Support Open Source Projects": "We Support Open Source Projects",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "Tots els logotips que apareixen aquí són propietat dels projectes respectius.",
     "Open Source &sdot; elementary": "Codi font obert ⋅ elementary"
 }

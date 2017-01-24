@@ -127,3 +127,10 @@ file_filter = _lang/<lang>/store/cart.json
 source_file = _lang/en/store/cart.json
 source_lang = en
 type = KEYVALUEJSON
+
+[elementary-mvp.developer]
+file_filter = _lang/<lang>/developer.json
+source_file = _lang/en/developer.json
+source_lang = en
+type = KEYVALUEJSON
+

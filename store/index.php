@@ -110,6 +110,14 @@ foreach (\Store\Product\get_groups() as $group) {
 
 <?php } ?>
 
+<section class="grid">
+    <div class="two-thirds">
+        <h2>Worldwide Shipping</h2>
+        <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
+        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.</small></p>
+    </div>
+</section>
+
 <script>window.products = <?php echo json_encode(\Store\Product\get_products()) ?></script>
 
 <?php
