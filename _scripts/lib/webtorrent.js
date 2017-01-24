@@ -9,7 +9,7 @@ import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
 export default new Promise((resolve, reject) => {
-    Script('https://cdn.jsdelivr.net/g/webtorrent@0.98.1', () => {
+    Script('https://cdn.jsdelivr.net/g/webtorrent@0.98.3', () => {
         console.log('WebTorrent loaded')
         return resolve(window.WebTorrent)
     })
