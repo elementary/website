@@ -45,15 +45,17 @@ Apps exist in their own windows which can be closed, maximized, or moved around.
 
 When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.
 
-### Window Buttons {#window-buttons}
-An app's window buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not. You can move an app's window around the desktop by dragging empty space between the window buttons.
+### HeaderBar {#headerbar}
+Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.
+
+You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.
 
 <div class="img--cutoff-bottom">
-    <img src="../images/docs/learning-the-basics/windows.png" alt="Window Buttons">
+    <img src="../images/docs/learning-the-basics/windows.png" alt="HeaderBar">
 </div>
 
-### Toolbar {#toolbar}
-Many apps have a toolbar at the top of the app. This area contains common actions or navigation items for the app. You can move an app's window around by dragging any blank area of a toolbar.
+#### Window Buttons {#window-buttons}
+An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.
 
 ## Multitasking {#multitasking}
 

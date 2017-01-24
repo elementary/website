@@ -163,26 +163,29 @@
         </div>
     </div>
     <div class="donation-grid">
-        <a href="https://salt.bountysource.com/teams/bountysource">
-            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource">
+        <a href="https://salt.bountysource.com/teams/bountysource" title="Bountysource">
+            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource" />
         </a>
-        <a href="https://www.debian.org/donations">
-            <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian">
+        <a href="https://www.debian.org/donations" title="Debian">
+            <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian" />
         </a>
-        <a href="http://fontawesome.io/community/">
-            <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome">
+        <a href="http://fontawesome.io/community/" title="Font Awesome">
+            <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome" />
         </a>
-        <a href="https://inkscape.org/support-us/donate/">
-            <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape">
+        <a href="https://inkscape.org/support-us/donate/" title="Inkscape">
+            <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape" />
         </a>
-        <a href="http://wiki.osmfoundation.org/wiki/Donate">
-            <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map">
+        <a href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
+            <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let’s Encrypt" />
         </a>
-        <a href="http://www.rodsbooks.com/refind/">
-            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd">
+        <a href="http://wiki.osmfoundation.org/wiki/Donate" title="Open Street Map">
+            <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map" />
         </a>
-        <a href="https://sfconservancy.org/donate/">
-            <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy">
+        <a href="http://www.rodsbooks.com/refind/" title="rEFInd">
+            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd" />
+        </a>
+        <a href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
+            <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy" />
         </a>
     </div>
 </div>
