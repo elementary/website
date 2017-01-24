@@ -9,6 +9,7 @@ import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 import Stripe from '~/lib/stripe'
+import ReadableStream from '~/lib/web-streams-polyfill'
 import streamSaver from '~/lib/streamsaver'
 import WebTorrent from '~/lib/webtorrent'
 
