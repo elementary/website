@@ -1,14 +1,9 @@
-<?php
-$l10n->set_domain('layout');
-?>
+<?php $l10n->set_domain('layout'); ?>
         </div>
         <footer>
             <div>
                 <p>
                     Copyright &copy; <?php echo date('Y'); ?> elementary LLC.
-                    <a href="<?php echo $sitewide['root'].'team'; ?>">Team</a>
-                    <a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a>
-                    <a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a>
                 </p>
                 <div class="popover">
                     <a href="#"><i class="fa fa-language"></i> Language</a>
@@ -35,17 +30,16 @@ $l10n->set_domain('layout');
                 </div>
             </div>
             <ul>
-                <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
-                <li><a href="https://plus.google.com/+elementary" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a></li>
+                <li><a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a></li>
+                <li><a href="<?php echo $sitewide['root'].'team'; ?>">Team</a></li>
+                <li><a href="<?php echo $sitewide['root'].'open-source'; ?>">Open Source</a></li>
             </ul>
         </footer>
-
-        <?php include __DIR__."/legacy.php" ?>
+        <?php
+            include $template['legacy'];
+            $l10n->set_domain('layout');
+        ?>
     </body>
 </html>
-<?php
-$l10n->end_html_translation();
-?>
+<?php $l10n->end_html_translation();

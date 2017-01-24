@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'Brand &sdot; elementary';
 
@@ -80,18 +80,26 @@
     <h2>Fonts</h2>
     <p>For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.</p>
 
-    <h2>Third Parties</h2>
-    <p>We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:</p>
-    <ul>
-        <li>Color</li>
-        <li>Fonts</li>
-        <li>Voice/tone</li>
-    </ul>
-    <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
-    <ul>
-        <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
-        <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
-    </ul>
+    <section id="community">
+        <h2>Third Parties &amp; Community</h2>
+        <p>We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:</p>
+        <ul>
+            <li>Color</li>
+            <li>Fonts</li>
+            <li>Voice/tone</li>
+        </ul>
+        <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
+        <ul>
+            <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
+            <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
+        </ul>
+
+        <h3>Community</h3>
+        <p>Community products (sites, fan clubs, etc.) are encouraged to use the elementary Community logo:</p>
+        <img src="<?=$sitewide['root'];?>images/brand/community-color.png" alt="elementary Community Logo with color"/>
+        <img src="<?=$sitewide['root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
+        <p>This helps establish the product as part of the overall elementary community while reducing confusion that can arise from using the main logomark.</p>
+    </section>
 
     <h2>Merchandise</h2>
     <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>

@@ -4,14 +4,12 @@
  * Sends an email when a package is shipped
  */
 
-require_once __DIR__ . '/index.php';
+require_once __DIR__.'/index.php';
 
-require_once __DIR__ . '/../../_templates/sitewide.php';
-
-require_once __DIR__ . '/../../backend/config.loader.php';
-require_once __DIR__ . '/../../backend/lib/autoload.php';
-require_once __DIR__ . '/../../backend/store/address.php';
-require_once __DIR__ . '/../../backend/store/product.php';
+require_once __DIR__.'/../../_backend/preload.php';
+require_once __DIR__.'/../../_backend/config.loader.php';
+require_once __DIR__.'/../../_backend/store/address.php';
+require_once __DIR__.'/../../_backend/store/product.php';
 
 $mandrill = new Mandrill($config['mandrill_key']);
 

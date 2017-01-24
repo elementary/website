@@ -76,7 +76,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             var translateDownload = $('#translate-download').text()
             var translatePurchase = $('#translate-purchase').text()
             // Catch case where no buttons are available because the user has already paid.
-            if ($('#amounts').children().length <= 1) {
+            if ($('#choice-buttons').children().length <= 1) {
                 $('#download').text(translateDownload)
             // Catch case where a button is checked or the custom input is above the minimum.
             } else if (
@@ -89,9 +89,9 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 $('#download').text(translateDownload)
             }
         }
-        $('#amounts').on('click', updateDownloadButton)
-        $('#amounts input').on('input', updateDownloadButton)
-        $(document).on('ready', updateDownloadButton)
+        $('#choice-buttons').on('click', updateDownloadButton)
+        $('#choice-buttons input').on('input', updateDownloadButton)
+        updateDownloadButton()
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
         $('#download').click(function () {
@@ -113,7 +113,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
 
         // UTILITY: detectStripeLanguage: Detect the language and use the Stripe translation if possible.
         function detectStripeLanguage () {
-            var stripeLanguages = ['de', 'en', 'es', 'fr', 'it', 'jp', 'nl', 'zh']
+            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
             var languageCode = $('html').prop('lang')
             // Stripe supports simplified chinese
             if (/^zh_CN/.test(languageCode)) {
@@ -136,7 +136,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
                 name: 'elementary LLC.',
                 description: config.release.title + ' ' + config.release.version,
                 bitcoin: true,
-                alipay: 'auto',
+                alipay: false,
                 locale: detectStripeLanguage() || 'auto',
                 amount: amount
             })
@@ -161,7 +161,7 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             if (ua.indexOf('Linux') >= 0) {
                 return 'Linux'
             }
-            return 'Other'
+            return 'Unknown'
         }
         var detectedOS = detectOS()
 
@@ -171,12 +171,13 @@ Promise.all([config, analytics, jQuery, Stripe, modal]).then(([config, ga, $, St
             $amountTen = $('#amount-ten')
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
-                $('#amounts').html('<input type="hidden" id="amount-ten" value="0">')
+                $('#pay-what-you-want').remove()
+                $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)
                 updateDownloadButton()
             }
             paymentHTTP = new XMLHttpRequest()
-            paymentHTTP.open('POST', './backend/payment.php', true)
+            paymentHTTP.open('POST', './api/payment.php', true)
             paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
             paymentHTTP.send(
                 'description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +

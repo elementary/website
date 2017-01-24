@@ -90,3 +90,10 @@
     opacity: 0.8;
     font-size: 14px;
 }
+
+.page-brand #community img {
+    display: block;
+    float: left;
+    margin: 1em 0 2em;
+    width: 50%;
+}

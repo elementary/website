@@ -81,7 +81,7 @@ Done! Now you can download source code hosted on Launchpad and upload your own c
 
 At the time of this writing, elementary doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
 
-### Scratch {#scrath}
+### Scratch {#scratch}
 
 ![](images/icons/apps/128/accessories-text-editor.svg)
 
