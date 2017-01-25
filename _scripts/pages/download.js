@@ -16,9 +16,7 @@ import WebTorrent from '~/lib/webtorrent'
 
 import config from '~/config'
 
-Promise
-    .all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent, modal])
-    .then(([config, ga, $, StripeCheckout, streams, streamSaver, WebTorrent]) => {
+Promise.all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent, modal]).then(([config, ga, $, StripeCheckout, streams, streamSaver, WebTorrent]) => {
     $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
@@ -326,7 +324,6 @@ Promise
                 }
             })
         }
-
         console.log('Loaded download.js')
     })
 })
