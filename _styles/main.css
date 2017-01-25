@@ -750,6 +750,27 @@ button.suggested-action,
     vertical-align: top;
 }
 
+/****************
+* Button Groups *
+****************/
+
+.actions {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actions--column {
+    flex-direction: column;
+}
+
+.actions > .button {
+    flex: 0 0 auto;
+    margin: 10px;
+}
+
 /********
 * Input *
 ********/
