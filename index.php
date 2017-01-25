@@ -286,7 +286,7 @@
         <section id="slingshot" class="grey">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
-                    <div id="slingshot-label">Applications</div>
+                    <div id="slingshot-label" data-l10n-off>Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
@@ -299,27 +299,27 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive">dat</span>
-                            <span class="cursor">|</span>
+                            <span class="search-term inactive" data-l10n-off>dat</span>
+                            <span class="cursor" data-l10n-off>|</span>
                             <span class="clear-icon inactive"><?php include('images/icons/actions/symbolic/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
+                                <div class="button active" data-l10n-off>1</div>
+                                <div class="button" data-l10n-off>2</div>
                             </div>
                         </div>
                         <div id="slingshot-categories" class="next view">
                             <div class="slingshot-categories-sidebar">
-                                <span class="slingshot-category active">Accessories</span>
-                                <span class="slingshot-category">Graphics</span>
-                                <span class="slingshot-category">Internet</span>
-                                <span class="slingshot-category">Office</span>
-                                <span class="slingshot-category">Other</span>
-                                <span class="slingshot-category">Sound &amp; Video</span>
-                                <span class="slingshot-category">System Tools</span>
+                                <span class="slingshot-category active" data-l10n-off>Accessories</span>
+                                <span class="slingshot-category" data-l10n-off>Graphics</span>
+                                <span class="slingshot-category" data-l10n-off>Internet</span>
+                                <span class="slingshot-category" data-l10n-off>Office</span>
+                                <span class="slingshot-category" data-l10n-off>Other</span>
+                                <span class="slingshot-category" data-l10n-off>Sound &amp; Video</span>
+                                <span class="slingshot-category" data-l10n-off>System Tools</span>
                             </div>
                             <div class="slingshot-categories">
                             </div>
