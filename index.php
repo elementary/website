@@ -377,14 +377,14 @@
                     <p class="primary">Downloading</p>
                     <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
                 </div>
+                <div class="bar-container" style="border:1px solid #08c;border-radius:3px">
+                    <div class="bar progress" style="height:1rem;background:#08c;width:0%"></div>
+                </div>
+                <div class="counter"><p>Starting your download&hellip;</p></div>
+                <div id="download-alternative" style="display:none;">
+                    <p>Problems downloading? <a class="webtorrent-stop download-link http-link" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
+                </div>
                 <div class="action-area">
-                    <div class="bar-container" style="border:1px solid #08c;border-radius:3px">
-                        <div class="bar progress" style="height:1rem;background:#08c;width:0%"></div>
-                    </div>
-                    <div class="counter"><p>Starting your download&hellip;</p></div>
-                    <div id="download-alternative" style="display:none;">
-                        <p>Problems downloading? <a class="webtorrent-stop download-link http-link" href="<?php echo $download_link.$config['release_filename']; ?>">Try direct</a>.</p>
-                    </div>
                     <a class="button clickable webtorrent-stop close-modal">Cancel</a>
                     <a class="button loading download-link magnet-link" id="js-save-webtorrent" title="Save the Download" href="#">Save the Download</a>
                 </div>
