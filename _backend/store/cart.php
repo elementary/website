@@ -82,7 +82,7 @@ function get_shipping () {
     foreach ($cart as $pro) {
         $items[] = array(
             'quantity' => $pro['quantity'],
-            'variant_id' => $pro['variant']['id']
+            'variant_id' => $pro['variant']['printful_id']
         );
     }
 
