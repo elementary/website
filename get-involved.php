@@ -110,7 +110,7 @@
             <h3>Question & Answer</h3>
             <p>StackExchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
 
-            <div class="actions">
+            <div class="actions actions--column">
                 <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
                 <a class="button flat" href="https://elementaryos.stackexchange.com/questions?sort=newest">New Questions</a>
             </div>
@@ -119,7 +119,7 @@
             <h3>Documentation</h3>
             <p>elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
 
-            <div class="actions">
+            <div class="actions actions--column">
                 <a class="button flat suggested-action" href="https://github.com/elementary/website/blob/master/docs/learning-the-basics.md" target="_blank">Learning The Basics Guide</a>
                 <a class="button flat" href="https://github.com/elementary/website/blob/master/docs/code/getting-started.md" target="_blank">Developer Docs</a>
             </div>
@@ -212,7 +212,7 @@
             <h3>Visual Design</h3>
             <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
 
-            <div class="actions">
+            <div class="actions actions--column">
                 <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank">Read the Interface Guidelines</a>
                 <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
             </div>
@@ -221,7 +221,7 @@
             <h3>Interaction Design</h3>
             <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.</p>
 
-            <div class="actions">
+            <div class="actions actions--column">
                 <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank">Read About Our Workflow</a>
                 <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank">Browse Our Blueprints</a>
             </div>
