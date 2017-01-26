@@ -149,7 +149,8 @@
             $country_code = getCurrentCountry($ip);
             $shipping_text = 'Worldwide Shipping';
 
-            if ($country_code && $country_code !== 'US') {
+            $blacklisted_countries = array('US', 'CU', 'IR', 'KP');
+            if ($country_code && !$in_array($country_code, $blacklisted_countries)) {
                 $country_name = getCurrentCountryName($ip, $page['lang']);
 
                 if ($country_name) {
