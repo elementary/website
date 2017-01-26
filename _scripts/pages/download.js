@@ -248,6 +248,7 @@ Promise.all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent
                 // Add Torrent
                 console.log('Starting Download from https:' + downloadLink + config.release.filename + '.torrent')
                 // TODO Wrap in a try
+                runningWebTorrent = true
                 client.add(
                     // OPTION: Torrent file name to get instant metadata.
                     'https:' + downloadLink + config.release.filename + '.torrent',
