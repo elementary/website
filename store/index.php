@@ -150,7 +150,7 @@
             $shipping_text = 'Worldwide Shipping';
 
             $blacklisted_countries = array('US', 'CU', 'IR', 'KP');
-            if ($country_code && !$in_array($country_code, $blacklisted_countries)) {
+            if ($country_code && !in_array($country_code, $blacklisted_countries)) {
                 $country_name = getCurrentCountryName($ip, $page['lang']);
 
                 if ($country_name) {
@@ -158,7 +158,7 @@
                 }
             }
         ?>
-        <h2><?php echo $shipping_text; ?></h2>
+        <h2><?php echo $shipping_text ?></h2>
         <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
         <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.</small></p>
     </div>
