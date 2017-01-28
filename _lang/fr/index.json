@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Un système d'exploitation rapide et compatible avec Windows et MacOS",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Prix libre:",
     "Custom": "Autre",
     "Enter any dollar amount.": "Entrez une somme.",
     "Purchase elementary OS": "Acheter elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "La boutique d'applications libre et indépendante",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "Le Centre d'Applications vous offre la possibilité de télécharger des applications et des extensions conçues par la communauté directement depuis votre bureau. Découvrez simplement de nouvelles applications et mettez à jour celles dont vous disposez déjà. Pas de période d'essai, pas besoin de licence ni d'abonnement.",
     "Become a Developer": "Devenir un développeur",
-    "Applications": "Les applications",
-    "dat": "dat",
-    "Accessories": "Accessoires",
-    "Graphics": "Graphismes",
-    "Internet": "Internet",
-    "Office": "Bureautique",
-    "Other": "Autres",
-    "Sound &amp; Video": "Son & Vidéo",
-    "System Tools": "Outils système",
     "3 Ways to Explore": "3 façons d'explorer",
     "Grid": "Grille",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Affichez vos applications dans une grille triée par ordre alphabétique. Feuilletez-la et trouvez celle que vous voulez.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Télécharger depuis un serveur ou via un lien magnétique. Pour obtenir de l'aide ou plus d'informations, voir le",
     "installation guide": "guide d'installation",
     "Cancel": "Retour",
-    "Download": "Download",
+    "Download": "Télécharger",
     "Torrent Magnet Link": "Lien Magnet",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un remplaçant rapide et ouvert à Windows et macOS ⋅ elementary OS"
 }

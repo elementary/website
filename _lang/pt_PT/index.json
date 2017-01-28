@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Um substituto do Windows e do OSX, rápido e aberto.",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Pague o Que Quiser:",
     "Custom": "Outro",
     "Enter any dollar amount.": "Introduz um valor em dólares.",
     "Purchase elementary OS": "Comprar o elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "A App Store Indie, e de Código Aberto",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter traz aplicações e extensões diretamente para o seu desktop. Descobre rapidamente novas apps e actualiza facilmente as aplicações que já tens. Sem chaves e licenças, subscrições ou períodos de teste. ",
     "Become a Developer": "Torne-se num Programador",
-    "Applications": "Aplicações",
-    "dat": "dat",
-    "Accessories": "Acessórios",
-    "Graphics": "Gráficos",
-    "Internet": "Internet",
-    "Office": "Escritório",
-    "Other": "Outro",
-    "Sound &amp; Video": "Som & Vídeo",
-    "System Tools": "Ferramentas de Sistema",
     "3 Ways to Explore": "3 Formas para Explorar",
     "Grid": "Grelha",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Mostra todas as aplicações numa grelha alfabetizada. Folheia e encontra aquela que queres.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Descarrega doe um servidor localizado ou por link Magnet. Para ajuda e mais informação, ver",
     "installation guide": "Guia de instalação",
     "Cancel": "Cancelar",
-    "Download": "Download",
+    "Download": "Descarregar",
     "Torrent Magnet Link": "Link para Download via Torrent",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Um substituto do Windows e do OSX, rápido e aberto ⋅ elementary OS"
 }

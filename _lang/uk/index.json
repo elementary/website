@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Швидка та відкрита заміна для Windows та macOS",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Сплачуйте стільки, скільки хочете:",
     "Custom": "Інше",
     "Enter any dollar amount.": "Введіть будь-яку суму в доларах",
     "Purchase elementary OS": "Отримати elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "Інді-магазин відкритого ПЗ.",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter дає можливість встановлювати різні додатки та розширення прямо на Ваш робочий стіл. Швидко знаходьте нові додатки та легко оновлюйте ті, що вже маєте. Жодних ліцензійних ключів, жодних підписок, жодних пробних періодів.",
     "Become a Developer": "Станьте розробником",
-    "Applications": "Додатки",
-    "dat": "dat",
-    "Accessories": "Аксесуари",
-    "Graphics": "Графіка",
-    "Internet": "Інтернет",
-    "Office": "Офісний пакет",
-    "Other": "Інше",
-    "Sound &amp; Video": "Звук і відео",
-    "System Tools": "Системні інструменти",
     "3 Ways to Explore": "Три способи пошуку",
     "Grid": "Сітка",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Відобразіть усі ваші додатки в алфавітному порядку у виді сітки. Перегорніть та знайдіть саме той, що шукаєте.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Завантажити з локалізованого сервера або за magnet-посиланням. Для допомоги і отримання додаткової інформації, дивіться",
     "installation guide": "довідки з встановлення",
     "Cancel": "Скасувати",
-    "Download": "Download",
+    "Download": "Завантажити",
     "Torrent Magnet Link": "Magnet-посилання для торрента.",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Швидка та відкрита заміна для Windows та macOS - elementary OS"
 }
