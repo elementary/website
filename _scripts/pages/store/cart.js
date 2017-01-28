@@ -97,15 +97,18 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
         })
 
         /**
-         * Hide the inputs we don't need depending on the country
-         * NOTE: JQuery in a loop does not work as intended :sad_face:
+         * updateAddressForm
+         * Updates state field based on current selected country
+         *
+         * @return {void}
          */
-        $('form[action$="checkout"] select[name="country"]').on('change', function (e) {
-            var value = $(this).val()
-            var $state = $(this).siblings('select[name="state"]')
-            var $statelabel = $(this).siblings('label[for="state"]')
+        const updateAddressForm = (notify = true) => {
+            const form = $('form[action$="checkout"]')
+            const value = $('select[name="country"]', form).val()
+            const $state = $('select[name="state"]', form)
+            const $statelabel = $('label[for="state"]', form)
 
-            ga('send', 'event', 'Cart', 'Country Change', value)
+            if (notify) ga('send', 'event', 'Cart', 'Country Change', value)
 
             if (country[value] != null && typeof country[value]['states'] === 'object') {
                 $state.empty()
@@ -123,6 +126,10 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
                 $state.hide().attr('required', false)
                 $statelabel.hide().attr('required', false)
             }
-        })
+        }
+
+        // Hide the inputs we don't need depending on the country
+        $('form[action$="checkout"]').on('change', () => updateAddressForm(true))
+        updateAddressForm(false)
     })
 })

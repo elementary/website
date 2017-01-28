@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Pengganti sumber terbuka yang pantas untuk Windows dan macOS ⋅ elementary OS",
-    "Blog": "Blog",
     "Support": "Sokongan",
-    "Store": "Kedai",
     "Developer": "Pembangun",
     "Get Involved": "Melibatkan Diri",
+    "Store": "Kedai",
     "This is a development site.": "Ini adalah sebuah laman pembangunan.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Anda sedang melihat laman kami versi pembangunan. Sesetengah laman di sini mungkin tidak berfungsi atau bertindak seperti yang anda jangka. Jika anda tiba di sini secara tidak sengaja sila pergi ke <a href=\"http://elementary.io\">elementary.io</a>, alamat laman sesawang kami yang betul.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Hak Cipta © 2016 elementary LLC.\n<a href=\"/team\">Pasukan</a>\n<a href=\"/brand\">Jenama</a>\n<a href=\"/privacy-policy\">Dasar Kerahsiaan</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Bahasa",
-    "Change Site Language": "Ubah Bahasa Laman"
+    "Change Site Language": "Ubah Bahasa Laman",
+    "Brand": "Jenama",
+    "Privacy Policy": "Dasar Kerahsiaan",
+    "Team": "Team",
+    "Open Source": "Sumber Terbuka"
 }

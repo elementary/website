@@ -1,5 +1,5 @@
 {
-    "Open Source": "Atviras kodas",
+    "We're Built on Open Source": "Mes esame sukurti atvirosios programinės įrangos pagrindu",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS platforma yra sukurta ant tvirto laisvos ir atviros programinės įrangos pagrindo. Be tokių, kaip šie, projektų, elementary OS nebūtų egzistavusi.",
     "Get Involved": "Įsitraukti",
     "Applications": "Programos",
@@ -68,6 +68,16 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Failų sistema, aparatinė įranga, darbas tinkle ir tvarkyklės",
     "Kernel": "Branduolys",
+    "We Support Open Source Projects": "Mes palaikome atvirosios programinės įrangos projektus",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary taip pat siunčia lėšas projektams, kuriais ji pasikliauja. Įsigydami elementary OS kopiją, jūs taip pat palaikote tokius didžius projektus kaip šie.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Let’s Encrypt": "Let’s Encrypt",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Programinės įrangos laisvės apsauga",
     "All logos featured here are trademarks of their respective projects.": "Visi čia pavaizduoti logotipai yra savo atitinkamų projektų prekių ženklai.",
     "Open Source &sdot; elementary": "Atviras kodas ⋅ elementary"
 }

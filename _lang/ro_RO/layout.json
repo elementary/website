@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
-    "Blog": "Blog",
     "Support": "Asistență",
-    "Store": "Magazin",
     "Developer": "Dezvoltator",
     "Get Involved": "Implică-te",
+    "Store": "Magazin",
     "This is a development site.": "Acest site este în curs de dezvoltare.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Ai accesat o versiune aflată în dezvoltare a site-ului nostru. Unele pagini nu merg conform așteptărilor. Dacă ai ajuns aici din întâmplare, te rugăm să te duci la <a href=\"http://elementary.io\">elementary.io</a>, pagina noastră de web oficială.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Limba",
-    "Change Site Language": "Schimbă Limba"
+    "Change Site Language": "Schimbă Limba",
+    "Brand": "Brand",
+    "Privacy Policy": "Politica de Confidențialitate",
+    "Team": "Team",
+    "Open Source": "Open Source"
 }

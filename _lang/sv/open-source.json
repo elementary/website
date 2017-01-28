@@ -1,5 +1,5 @@
 {
-    "Open Source": "Öppen källkod",
+    "We're Built on Open Source": "We're Built on Open Source",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS plattformen är bygg på en stark grund av Fria program med Öppen källkod. Utan projekt som dessa, skulle elementary OS inte existera.",
     "Get Involved": "Bli involverad",
     "Applications": "Applikationer",
@@ -68,6 +68,16 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Filsystem, Hårdvara, Nätverk & Drivrutiner",
     "Kernel": "Kärna",
+    "We Support Open Source Projects": "We Support Open Source Projects",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Let’s Encrypt": "Let’s Encrypt",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "Alla logotyper som visar här är varumärke för sina respektive projekt.",
     "Open Source &sdot; elementary": "Öppen Källkod ⋅ elementary"
 }

@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
-    "Blog": "Blogo",
     "Support": "Helpo",
-    "Store": "Vendejo",
     "Developer": "Por programistoj",
     "Get Involved": "Partopreni",
+    "Store": "Vendejo",
     "This is a development site.": "This is a development site.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Language",
-    "Change Site Language": "Change Site Language"
+    "Change Site Language": "Change Site Language",
+    "Brand": "Marko",
+    "Privacy Policy": "Privateca politiko",
+    "Team": "Team",
+    "Open Source": "Malfermitkoda"
 }

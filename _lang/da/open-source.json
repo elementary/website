@@ -1,5 +1,5 @@
 {
-    "Open Source": "Open Source",
+    "We're Built on Open Source": "We're Built on Open Source",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
     "Get Involved": "Bliv Involveret",
     "Applications": "Programmer",
@@ -68,6 +68,16 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Filesystem, Hardware, Networking & Drivers",
     "Kernel": "Kernel",
+    "We Support Open Source Projects": "We Support Open Source Projects",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Let’s Encrypt": "Let’s Encrypt",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "All logos featured here are trademarks of their respective projects.",
     "Open Source &sdot; elementary": "Open Source ⋅ elementary"
 }

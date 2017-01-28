@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "elementary OS ⋅ 快速、开源的 Windows / macOS 替代方案",
-    "Blog": "博客",
     "Support": "支持",
-    "Store": "商店",
     "Developer": "开发",
     "Get Involved": "参与",
+    "Store": "商店",
     "This is a development site.": "此站点还在开发中。",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "您看到的是本站的开发版本。某些页面可能会与您的预期有所偏差。您可以通过此链接前往我们的传统站点 <a href=\"http://elementary.io\">elementary.io</a>。",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "版权所有 © 2016 elementary LLC.\n                    <a href=\"/team\">团队</a>\n                    <a href=\"/brand\">品牌</a>\n                    <a href=\"/privacy-policy\">隐私政策</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "语言",
-    "Change Site Language": "切换网站语言"
+    "Change Site Language": "切换网站语言",
+    "Brand": "品牌",
+    "Privacy Policy": "隐私政策",
+    "Team": "Team",
+    "Open Source": "开源"
 }

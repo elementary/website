@@ -1,13 +1,16 @@
 {
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS",
-    "Blog": "Blogue",
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Unha alternativa de código aberto a Windows e macOS · elementary OS",
     "Support": "Soporte",
-    "Store": "Tenda",
     "Developer": "Desenvolvedor",
     "Get Involved": "Participar",
+    "Store": "Tenda",
     "This is a development site.": "Sitio para desenvolvemento.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Estás a ver a versión de desenvolvemento do noso sitio. Algunhas páxinas poden non funcionar como agardas. Se chegaches aquí por un erro por favor vai a <a href=\"http://elementary.io\">elementary.io</a>, o enderezo do noso sitio actual.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Idioma",
-    "Change Site Language": "Mudar o idioma do sitio"
+    "Change Site Language": "Mudar o idioma do sitio",
+    "Brand": "Marca",
+    "Privacy Policy": "Política de privacidade",
+    "Team": "Equipo",
+    "Open Source": "Código Aberto"
 }
