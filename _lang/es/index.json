@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Una alternativa rápida y abierta a Windows y macOS",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Pague lo que quiera:",
     "Custom": "Personalizado",
     "Enter any dollar amount.": "Escriba un monto en dólares.",
     "Purchase elementary OS": "Comprar elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "La tienda de aplicaciones independiente y de código abierto",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "AppCenter te trae aplicaciones hechas a mano y extensiones directamente a tu escritorio. Descubre rápidamente nuevas aplicaciones y actualiza fácilmente las que ya tienes. Sin licencias, sin suscripciones y sin periodos de prueba.",
     "Become a Developer": "Conviértase en desarrollador",
-    "Applications": "Aplicaciones",
-    "dat": "dat",
-    "Accessories": "Accesorios",
-    "Graphics": "Gráficas",
-    "Internet": "Internet",
-    "Office": "Oficina",
-    "Other": "Otras",
-    "Sound &amp; Video": "Sonido y vídeo",
-    "System Tools": "Herramientas del sistema",
     "3 Ways to Explore": "Tres modos de exploración",
     "Grid": "Cuadrícula",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Navegue por sus aplicaciones y encuentre la que busca en la cuadrícula alfabetizada.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Descargue a partir de un servidor regional o mediante un enlace «magnet». Para obtener ayuda y más información, consulte",
     "installation guide": "guía de instalación",
     "Cancel": "Cancelar",
-    "Download": "Download",
+    "Download": "Descarga",
     "Torrent Magnet Link": "Enlace «magnet»",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Una alternativa rápida y abierta a Windows y macOS ⋅ elementary OS"
 }
