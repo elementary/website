@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Greita ir atvira Windows ir macOS pakaita",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Mokėkite tiek, kiek norite:",
     "Custom": "Pasirinkti",
     "Enter any dollar amount.": "Įrašykite bet kokią sumą doleriais.",
     "Purchase elementary OS": "Įsigyti elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "\"Indie\", atvirosios programinės įrangos programų parduotuvė ",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "Programų centras pristato ištobulintas programas ir plėtinius tiesiai į jūsų darbalaukį. Greitai atraskite naujas programas ir lengvai atnaujinkite tas, kurias jus esate įdiegę. Jokių licencinių raktų, jokių prenumeratų, jokių bandomųjų laikotarpių.",
     "Become a Developer": "Tapti kūrėju",
-    "Applications": "Programos",
-    "dat": "dat",
-    "Accessories": "Reikmenys",
-    "Graphics": "Grafika",
-    "Internet": "Internetas",
-    "Office": "Raštinė",
-    "Other": "Kitos",
-    "Sound &amp; Video": "Garsas ir vaizdas",
-    "System Tools": "Sistemos įrankiai",
     "3 Ways to Explore": "3 atradimo būdai",
     "Grid": "Tinklelis",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Rodykite visas savo programas pagal abėcėlę išdėstytame tinklelyje. Peržvelkite ir raskite tą, kurią norite.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Atsisiųskite iš lokalizuoto serverio arba per magnet nuorodą. Išsamesnei informacijai, žiūrėkite",
     "installation guide": "diegimo vadovą",
     "Cancel": "Atsisakyti",
-    "Download": "Download",
+    "Download": "Atsisiųsti",
     "Torrent Magnet Link": "Torrent Magnet nuoroda",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Greita ir atvira Windows ir macOS pakaita ⋅ elementary OS"
 }
