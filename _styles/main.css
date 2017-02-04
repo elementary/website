@@ -547,7 +547,7 @@ footer ul li a:focus {
         width: calc(66% - 48px);
     }
 
-    .grid *:only-child > p {
+    .grid *:only-child p {
         text-align: center;
     }
 }
@@ -1253,5 +1253,9 @@ i.fa.fa-close.close-modal {
 
     .gutter-right {
         margin-right: 16px;
+    }
+
+    .flex-row .flex-column p {
+        text-align: left;
     }
 }
