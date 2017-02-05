@@ -467,3 +467,69 @@ div.icons-container.small-screen {
 #dialog-guide-action {
     margin-top: -16px;
 }
+
+/********
+* Panel *
+*********/
+
+#panel-key,
+#panel {
+    display: flex;
+    min-width: 500px;
+}
+
+#panel {
+    align-items: baseline;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 6px;
+    user-select: none;
+}
+
+#panel svg {
+    fill: #fff;
+}
+
+#panel-key span,
+#panel span,
+#panel ul {
+    flex: 1 1 33.3%;
+}
+
+#panel-key span {
+    margin-bottom: 1em;
+}
+
+#panel-key span::after {
+    content: '';
+    border: 1px solid black;
+    border-left-width: 0;
+    position: relative;
+    top: 1.75em;
+    left: -20%;
+    font-size: 0.5em;
+}
+
+#panel #applications-label {
+    text-align: left;
+}
+
+#panel ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+#panel li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#panel li:not(:last-child) {
+    margin: 0 3px;
+}
