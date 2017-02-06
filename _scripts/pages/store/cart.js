@@ -129,7 +129,7 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
         }
 
         // Hide the inputs we don't need depending on the country
-        $('form[action$="checkout"]').on('change', () => updateAddressForm(true))
+        $('form[action$="checkout"] select[name="country"]').on('change', () => updateAddressForm(true))
         updateAddressForm(false)
     })
 })
