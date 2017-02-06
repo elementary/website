@@ -1230,3 +1230,30 @@ i.fa.fa-close.close-modal {
         display: none;
     }
 }
+
+/*************************
+* Teaser group with icon *
+*************************/
+
+@media only screen and (min-width: 640px) {
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-column {
+        flex: 1 1 auto;
+    }
+
+    .no-shrink {
+        flex-shrink: 0;
+    }
+
+    .gutter-right {
+        margin-right: 16px;
+    }
+
+    .flex-row .flex-column p {
+        text-align: left;
+    }
+}
