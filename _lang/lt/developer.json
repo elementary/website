@@ -26,10 +26,10 @@
     "Reference for Soup": "Soup rodyklė",
     "Reference for JSON-GLib": "JSON-GLib rodyklė",
     "vala": "vala",
-    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Write Fast, Native, Object-Oriented Code.",
+    "Vala. Write Fast, Native, Object-Oriented Code.": "Vala. Rašykite greitą, savą, objektinį kodą.",
     "Familiar to anyone who's seen C#, but maintains API/ABI compatibility with C": "Pažįstama visiems, kas susidūrė su C#, tačiau palaiko API/ABI suderinamumą su C",
-    "Low memory requirements, native execution, and purpose-built for GObject": "Low memory requirements, native execution, and purpose-built for GObject",
-    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more",
+    "Low memory requirements, native execution, and purpose-built for GObject": "Maži atminties reikalavimai, savas vykdymas, specialiai suprojektuota ir pastatyta GObject",
+    "Signals, properties, generics, lambdas, assisted memory management, exception handling, type inference, async/yield & more": "Palaiko signalus, savybes, daugybines bei lambda funkcijas, pagalbinį atminties valdymą, išimčių apdorojimą, tipų išvadas, asinchroniškumą ir kitą",
     "Learn More about Vala": "Sužinoti daugiau apie Vala",
     "Library Documentation for Vala": "Vala bibliotekos dokumentacija",
     "Developer &sdot; elementary": "Plėtojimas ⋅ elementary"

@@ -224,7 +224,7 @@
     "Priority": "Priorytet",
     "Notifications also have priority. When a notification is set as <code>URGENT</code> it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the <code>this.send_notification ()</code> function": "Notifications also have priority. When a notification is set as <code>URGENT</code> it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the <code>this.send_notification ()</code> function",
     "<code>URGENT</code> notifications should really only be used on the most extreme cases. There are also <a href=\"http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority\">other notification priorities</a>.": "<code>URGENT</code> notifications should really only be used on the most extreme cases. There are also <a href=\"http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority\">other notification priorities</a>.",
-    "Let's review what all we've learned:": "Let's review what all we've learned:",
+    "Let's review what all we've learned:": "Spójrzmy na to czego się nauczyliśmy:",
     "We learned what <code>Gtk.Application</code> is and how to make a subclass of it.": "We learned what <code>Gtk.Application</code> is and how to make a subclass of it.",
     "We built an app that sends and updates notifications.": "Zbudowaliśmy aplikacje która wysyła i pobiera powiadomienia.",
     "We also learned about other notification features like setting an icon and a notification's priority.": "Nauczyliśmy się również innych opcji powiadomień, na przykład ustawianie ikon powiadomień oraz priorytetu powiadomień.",
