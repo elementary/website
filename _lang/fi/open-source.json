@@ -1,5 +1,5 @@
 {
-    "Open Source": "Avoin lähdekoodi",
+    "We're Built on Open Source": "Pohjaudumme avoimeen lähdekoodiin",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS -alusta on rakennettu vahvalle pohjalle avoimeen lähdekoodiin ja vapaisiin ohjelmistoihin perustuen. Ilman tällaisia projekteja elementary OS:ää ei olisi edes olemassa.",
     "Get Involved": "Osallistu",
     "Applications": "Sovellukset",
@@ -68,6 +68,16 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Tiedostojärjestelmä, laitteisto, verkko ja ajurit",
     "Kernel": "Kernel",
+    "We Support Open Source Projects": "Tuemme avoimen lähdekoodin projekteja",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary tukee taloudellisesti niitä projekteja, joihin turvaudumme. Kun ostat kopion elementary OS:stä, tuet muun muassa alla listattuja projekteja.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Let’s Encrypt": "Let’s Encrypt",
+    "Open Street Map": "Open Street Map",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "Kaikki yllä olevat logot ovat kyseisten projektien tavaramerkkejä.",
     "Open Source &sdot; elementary": "Avoin lähdekoodi ⋅ elementary"
 }

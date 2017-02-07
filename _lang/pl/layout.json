@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Szybki i otwarty zamiennik dla Windows i macOS ⋅ elementary OS",
-    "Blog": "Blog",
     "Support": "Wsparcie",
-    "Store": "Sklep",
     "Developer": "Dla twórców",
     "Get Involved": "Zaangażuj się",
+    "Store": "Sklep",
     "This is a development site.": "To jest strona programisty.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Oglądasz stronę w wersji devleoperskiej. Niektóre strony mogą nie działać poprawnie. Jeżeli znalazłeś się tutaj przypadkiem proszę przejdź do naszej strony domowej: <a href=\"http://elementary.io\">elementary.io</a> .",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Wszystkie prawa zastrzeżone © 2016 elementary LLC.\n<a href=\"/team\">Zespół</a>\n<a href=\"/brand\">Marka</a>\n<a href=\"/privacy-policy\">Polityka prywatności</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Język",
-    "Change Site Language": "Zmień język strony"
+    "Change Site Language": "Zmień język strony",
+    "Brand": "Marka",
+    "Privacy Policy": "Polityka prywatności",
+    "Team": "Zespół",
+    "Open Source": "Otwarte źródła"
 }

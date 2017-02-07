@@ -146,7 +146,7 @@ Avoid using `as` keyword when casting as it might give `null` as result, which c
     /* NOT OK as this approach requires a check for null */
     (widget as Gtk.Entry).max_width_chars
 
-## Use of '=' in place of 'set'
+## Use of '=' in place of 'set' {#equals-in-place-of-set}
 
 In places or operations where you would otherwise use `set` , you should make use of `=` instead.
 
@@ -191,8 +191,8 @@ limit is 120 characters.
     *
     * You should have received a copy of the GNU General Public
     * License along with this program; if not, write to the
-    * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-    * Boston, MA 02111-1307, USA.
+    * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+    * Boston, MA 02110-1301 USA
     *
     * Authored by: Author <author@example.com>
     */

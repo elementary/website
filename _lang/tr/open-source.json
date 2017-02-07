@@ -1,5 +1,5 @@
 {
-    "Open Source": "Açık Kaynak",
+    "We're Built on Open Source": "Açık Kaynak Üzerinde İnşa Ettik",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "The elementary OS platform is built upon a strong foundation of Free & Open Source software. Without projects such as these, elementary OS would not exist.",
     "Get Involved": "Katılın",
     "Applications": "Uygulamalar",
@@ -13,8 +13,8 @@
     "Scratch": "Scratch",
     "Terminal": "Uçbirim",
     "Videos": "Videolar",
-    "Desktop Shell": "Desktop Shell",
-    "Pantheon Desktop Shell": "Pantheon Desktop Shell",
+    "Desktop Shell": "Masaüstü teması",
+    "Pantheon Desktop Shell": "Pantheon Masaüstü Görünümü",
     "GTK+ Stylesheet": "GTK+ Stylesheet",
     "Icon Theme": "Simge Teması",
     "Gala": "Gala",
@@ -66,8 +66,18 @@
     "GNU C Library": "GNU C Library",
     "Coreutils": "Coreutils",
     "Linux": "Linux",
-    "Filesystem, Hardware, Networking &amp; Drivers": "Filesystem, Hardware, Networking & Drivers",
+    "Filesystem, Hardware, Networking &amp; Drivers": "Dosya Sistemi. Donanım. İnternet & Sürücüler",
     "Kernel": "Çekirdek",
+    "We Support Open Source Projects": "Açık Kaynak Projelerini Destekliyoruz",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "Bountysource": "Bountysource",
+    "Debian": "Debian",
+    "Font Awesome": "Font Awesome",
+    "Inkscape": "Inkscape",
+    "Let’s Encrypt": "Let’s Encrypt",
+    "Open Street Map": "Açık Sokak Haritası",
+    "rEFInd": "rEFInd",
+    "Software Freedom Conservancy": "Yazılım Özgürlüğü Koruması",
     "All logos featured here are trademarks of their respective projects.": "All logos featured here are trademarks of their respective projects.",
-    "Open Source &sdot; elementary": "Open Source ⋅ elementary"
+    "Open Source &sdot; elementary": "Açık Kaynak • elementary"
 }

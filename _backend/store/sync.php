@@ -23,6 +23,10 @@ foreach($products as $index => &$product) {
         throw new \Exception('Product does not have an id');
     }
 
+    if (!isset($product['printful_id'])) {
+        throw new \Exception('Product does not have a Printful id');
+    }
+
     if (!isset($product['variants']) || count($product['variants']) < 1) {
         throw new \Exception('Product does not contain any variants');
     }
@@ -32,7 +36,7 @@ foreach($products as $index => &$product) {
     }
 
     foreach($product['variants'] as &$variant) {
-        $res = \Store\Api\get_varients($variant['id']);
+        $res = \Store\Api\get_varients($variant['printful_id']);
         $pro = $res['product'];
         $var = $res['variant'];
 

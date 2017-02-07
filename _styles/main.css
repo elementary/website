@@ -26,7 +26,7 @@ body {
     box-sizing: border-box;
     color: #333;
     fill: #333;
-    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
     min-height: 100vh;
@@ -156,9 +156,22 @@ img.h1 {
     opacity: 0.8;
 }
 
+div.inline,
 img.inline {
     display: inline-block !important;
     vertical-align: middle;
+}
+
+img.inline + div.inline {
+    margin-left: 12px;
+}
+
+.img--cutoff-bottom::after {
+    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
 }
 
 .inline-tweet {
@@ -271,7 +284,7 @@ nav a:visited {
     display: inline-block;
     fill: inherit;
     margin: 0;
-    padding: 0 16px;
+    padding: 0 12px;
 }
 
 nav a:focus {
@@ -431,7 +444,7 @@ footer ul li a:focus {
         width: calc(33% - 88px);
     }
 
-    .column + .column {
+    .column + .column + .column {
         margin-left: 16px !important;
     }
 }
@@ -580,7 +593,9 @@ a.third:hover {
 }
 
 .column.alert {
+    margin: 5px;
     max-width: calc(100% - 70px);
+    padding: 5px;
 }
 
 .row.alert > .column.alert {
@@ -619,8 +634,7 @@ a.third:hover {
 button,
 select,
 .button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    appearance: none;
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -736,6 +750,27 @@ button.suggested-action,
     vertical-align: top;
 }
 
+/****************
+* Button Groups *
+****************/
+
+.actions {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actions--column {
+    flex-direction: column;
+}
+
+.actions > .button {
+    flex: 0 0 auto;
+    margin: 10px;
+}
+
 /********
 * Input *
 ********/
@@ -767,12 +802,12 @@ option {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
@@ -797,17 +832,11 @@ select:focus:invalid {
     color: #c0392b !important;
 }
 
-.button::-webkit-input-placeholder,
-.button:-moz-placeholder,
-.button::-moz-placeholder,
-.button:-ms-input-placeholder {
+.button::placeholder {
     color: #333;
 }
 
-input:focus::-webkit-input-placeholder,
-input:focus:-moz-placeholder,
-input:focus::-moz-placeholder,
-input:focus:-ms-input-placeholder {
+input:focus::placeholder {
     color: transparent;
 }
 
@@ -967,7 +996,7 @@ input:focus:-ms-input-placeholder {
 .dialog img {
     display: inline-block;
     margin-right: 12px;
-    -webkit-user-select: none;
+    user-select: none;
     vertical-align: top;
 }
 
@@ -999,11 +1028,10 @@ input:focus:-ms-input-placeholder {
 .dialog .button {
     display: inline-block;
     font-size: 14px;
-    -ms-flex: 0 35%;
     flex: 0 35%; /* FIXME: These values are bullshit */
     margin: 0;
     padding: 9px 12px;
-    -webkit-user-select: none;
+    user-select: none;
     white-space: nowrap;
 }
 
@@ -1200,5 +1228,32 @@ i.fa.fa-close.close-modal {
     footer,
     .dont-print {
         display: none;
+    }
+}
+
+/*************************
+* Teaser group with icon *
+*************************/
+
+@media only screen and (min-width: 640px) {
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-column {
+        flex: 1 1 auto;
+    }
+
+    .no-shrink {
+        flex-shrink: 0;
+    }
+
+    .gutter-right {
+        margin-right: 16px;
+    }
+
+    .flex-row .flex-column p {
+        text-align: left;
     }
 }

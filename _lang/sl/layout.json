@@ -1,13 +1,16 @@
 {
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Hitra in odprtokodna zamenjava za Windows in macOS - elementary OS",
-    "Blog": "Blog",
     "Support": "Podpora",
-    "Store": "Trgovina",
     "Developer": "Razvijalec",
     "Get Involved": "Pridružite se",
+    "Store": "Trgovina",
     "This is a development site.": "To je razvojna oblika stran.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Trenutno si ogledujete razvijalno različico našega spletne mesta. Nekatere strani lahko odpovedo ali se vedejo drugače kot je pričakovano. Če ste prišli sem pomotoma, pojdite na <a href=\"http://elementary.io\">elementary.io</a> našo pravo spletno mesto.",
-    "Copyright &copy; 2016 elementary LLC.\n                    <a href=\"/team\">Team</a>\n                    <a href=\"/brand\">Brand</a>\n                    <a href=\"/privacy-policy\">Privacy Policy</a>": "Copyright © 2016 elementary LLC.\n<a href=\"/team\">Ekipa</a>\n<a href=\"/brand\">Znamka</a>\n<a href=\"/privacy-policy\">Izjava o zasebnosti</a>",
+    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
     "Language": "Jezik",
-    "Change Site Language": "Spremeni jezik strani"
+    "Change Site Language": "Spremeni jezik strani",
+    "Brand": "Brand",
+    "Privacy Policy": "Izjava o zasebnosti",
+    "Team": "Team",
+    "Open Source": "Odprtokodno"
 }

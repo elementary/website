@@ -20,50 +20,60 @@
     require_once __DIR__.'/_backend/classify.current.php';
 ?>
 
-        <section class="grid">
-            <div class="whole">
-                <div id="logotype">
+        <section class="section--hero section--stretched">
+            <div class="section__detail grid">
+                <div class="whole">
+                    <div id="logotype">
 
-                    <?php
-                        // Embed the SVG to fix scaling in WebKit 1.x,
-                        // while preserving CSS options for the image.
-                        include __DIR__.'/images/logotype-os.svg';
-                    ?>
+                        <?php
+                            // Embed the SVG to fix scaling in WebKit 1.x,
+                            // while preserving CSS options for the image.
+                            include __DIR__.'/images/logotype-os.svg';
+                        ?>
 
-                </div>
-                <h4>A fast and open replacement for Windows and macOS</h4>
-            </div>
-        </section>
-        <div class="hero"></div>
-        <section class="grid">
-            <div class="whole">
-                <h4 id="pay-what-you-want">Pay What You Want</h4>
-                <div id="amounts">
-                    <?php
-                        $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
-                        $disallowed = [' ', '.'];
-                        $encoded = urlencode(str_replace($disallowed, '_', $paidString));
-                        if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
-                            ?>
-                    <input type="hidden" id="amount-ten" value="0">
-                            <?php
-                        } else {
-                            ?>
-                    <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
-                    <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
-                    <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
-                    <div class="column">
-                        <span class="pre-amount">$</span>
-                        <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
-                        <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                     </div>
-                    <div style="clear:both;"></div>
-                            <?php
-                        }
-                    ?>
+                    <h4>A fast and open replacement for Windows and macOS</h4>
                 </div>
-                <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
+            </div>
+
+            <div class="section__showcase"></div>
+
+            <div class="section__detail grid">
+                <div class="whole">
+                    <div id="amounts">
+                        <?php
+                            $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
+                            $disallowed = [' ', '.'];
+                            $encoded = urlencode(str_replace($disallowed, '_', $paidString));
+                            if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
+                        ?>
+                        <div id="choice-buttons">
+                            <input type="hidden" id="amount-ten" value="0">
+                        </div>
+                        <?php
+                            } else {
+                        ?>
+                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
+                        <div id="choice-buttons">
+                            <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
+                            <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
+                            <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                            <div>
+                                <span class="pre-amount">$</span>
+                                <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
+                                <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                            </div>
+                        </div>
+                        <?php
+                            }
+                        ?>
+                        <div class="column">
+                            <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
+                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="grid">
@@ -276,7 +286,7 @@
         <section id="slingshot" class="grey">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
-                    <div id="slingshot-label">Applications</div>
+                    <div id="slingshot-label" data-l10n-off>Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
@@ -289,27 +299,27 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive">dat</span>
-                            <span class="cursor">|</span>
+                            <span class="search-term inactive" data-l10n-off>dat</span>
+                            <span class="cursor" data-l10n-off>|</span>
                             <span class="clear-icon inactive"><?php include('images/icons/actions/symbolic/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
+                                <div class="button active" data-l10n-off>1</div>
+                                <div class="button" data-l10n-off>2</div>
                             </div>
                         </div>
                         <div id="slingshot-categories" class="next view">
                             <div class="slingshot-categories-sidebar">
-                                <span class="slingshot-category active">Accessories</span>
-                                <span class="slingshot-category">Graphics</span>
-                                <span class="slingshot-category">Internet</span>
-                                <span class="slingshot-category">Office</span>
-                                <span class="slingshot-category">Other</span>
-                                <span class="slingshot-category">Sound &amp; Video</span>
-                                <span class="slingshot-category">System Tools</span>
+                                <span class="slingshot-category active" data-l10n-off>Accessories</span>
+                                <span class="slingshot-category" data-l10n-off>Graphics</span>
+                                <span class="slingshot-category" data-l10n-off>Internet</span>
+                                <span class="slingshot-category" data-l10n-off>Office</span>
+                                <span class="slingshot-category" data-l10n-off>Other</span>
+                                <span class="slingshot-category" data-l10n-off>Sound &amp; Video</span>
+                                <span class="slingshot-category" data-l10n-off>System Tools</span>
                             </div>
                             <div class="slingshot-categories">
                             </div>
@@ -346,6 +356,18 @@
                 <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
             </div>
         </section>
+        <section class="grid">
+            <div class="two-thirds">
+                <img class="inline" src="https://elementary.io/images/icons/places/128/distributor-logo.svg">
+                <div class="inline">
+                    <h2 class="text-left">Download elementary OS</h2>
+                    <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+                </div>
+            </div>
+            <div class="third">
+                <a class="button suggested-action" href="#">Pay What You Want</a>
+            </div>
+        </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="dialog modal">
@@ -357,7 +379,7 @@
             <div class="action-area">
                 <a class="button clickable close-modal">Cancel</a>
                 <div class="linked">
-                    <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download <?php echo $config['release_title']; ?></a>
+                    <a class="button suggested-action close-modal download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
                     <a class="button suggested-action close-modal download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link.$config['release_filename']; ?>"><i class="fa fa-magnet"></i></a>
                 </div>
             </div>
