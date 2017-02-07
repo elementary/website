@@ -42,13 +42,25 @@ try {
 
     $cart = [];
     foreach ($res['data']['order']['items'] as $item) {
-        $key = array_search($item['product']['product_id'], array_column($products, 'id'));
-        if ($key === null || $key === false) continue;
-        $product = $products[$key];
+        // NOTE: if statement for backwards capatibility. 1/24/2017
+        if (!isset($item['external_id']) || $item['external_id'] === '') {
+            $key = array_search($item['product']['product_id'], array_column($products, 'printful_id'));
+            if ($key === null || $key === false) continue;
+            $product = $products[$key];
 
-        $key = array_search($item['product']['variant_id'], array_column($product['variants'], 'id'));
-        if ($key === null || $key === false) continue;
-        $variant = $product['variants'][$key];
+            $key = array_search($item['product']['variant_id'], array_column($product['variants'], 'printful_id'));
+            if ($key === null || $key === false) continue;
+            $variant = $product['variants'][$key];
+        } else {
+            $split = explode('-', $item['external_id']);
+            $key = array_search($split[0], array_column($products, 'id'));
+            if ($key === null || $key === false) continue;
+            $product = $products[$key];
+
+            $key = array_search($split[1], array_column($product['variants'], 'id'));
+            if ($key === null || $key === false) continue;
+            $variant = $product['variants'][$key];
+        }
 
         // add full url to any absolute image paths
         if (isset($product['image']) && strpos($product['image'][0], 'http') === false) {

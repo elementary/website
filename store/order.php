@@ -184,7 +184,8 @@
 
         foreach ($cart as $index => $item) {
             $req['items'][] = array(
-                'variant_id' => $item['variant']['id'],
+                'external_id' => $item['product']['id'] . '-' . $item['variant']['id'],
+                'variant_id' => $item['variant']['printful_id'],
                 'quantity' => $item['quantity'],
                 'name' => $item['variant']['name'],
                 'files' => $item['product']['files'],
