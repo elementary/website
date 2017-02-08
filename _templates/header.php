@@ -149,7 +149,9 @@ $l10n->begin_html_translation();
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
                     <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                </ul>
+                    <li><a href="https://github.com/elementary" target="_blank" data-l10n-off title="Github"><i class="fa fa-github"></i></a></li>
+                      
+            </ul>
             </div>
         </nav>
         <div id="content-container">
