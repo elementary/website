@@ -572,6 +572,58 @@ a.third:hover {
     display: block;
 }
 
+/********
+* Toast *
+********/
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.toast {
+    align-items: center;
+    background-color: #eb1478;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(258, 53, 139, 0.16), 0 3px 6px rgba(258, 53, 139, 0.23);
+    color: #fff;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: center;
+    padding: 3px;
+    text-align: center;
+}
+
+.toast__text {
+    margin: 6px;
+}
+
+.toast__close {
+    align-items: center;
+    background-color: #b50054;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    height: 24px;
+    justify-content: center;
+    margin: 6px;
+    text-align: center;
+    width: 24px;
+}
+
+.toast__button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    color: #b50054;
+    margin: 6px;
+    padding: 3px 6px;
+}
+
 /*********
 * Alerts *
 *********/

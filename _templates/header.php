@@ -152,6 +152,15 @@ $l10n->begin_html_translation();
                 </ul>
             </div>
         </nav>
+
+        <div class="overlay">
+            <div class="toast">
+                <div class="toast__close"><i class="fa fa-close"></i></div>
+                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
+                <a href="https://igg.me/at/appcenter" class="toast__button">Back Us</a>
+            </div>
+        </div>
+
         <div id="content-container">
 
 <?php
