@@ -44,6 +44,13 @@
             <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
         </div>
     </div>
+    <div class="grid">
+        <div class="two-thirds">
+            <h2>Indiegogo</h2>
+            <p class="text-center">We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
+            <a class="button flat" href="https://igg.me/at/appcenter" target="_blank">Back AppCenter</a>
+        </div>
+    </div>
     <section class="grid">
         <div class="third">
             <img alt="Patreon" src="images/get-involved/patreon.svg">
