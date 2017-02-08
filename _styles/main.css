@@ -588,6 +588,7 @@ a.third:hover {
 
 .overlay__content {
     pointer-events: auto;
+    z-index: 1;
 }
 
 .toast {
