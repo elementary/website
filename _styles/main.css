@@ -580,9 +580,14 @@ a.third:hover {
     display: flex;
     justify-content: center;
     left: 0;
+    pointer-events: none;
     position: absolute;
     right: 0;
     top: 10px;
+}
+
+.overlay__content {
+    pointer-events: auto;
 }
 
 .toast {
