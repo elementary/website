@@ -91,8 +91,21 @@
                 <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
+        <section id="appcenter" class="grey">
+            <div class="app-display app-display--overflow">
+                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
+                <div class="app-display__description">
+                    <img src="images/icons/apps/128/system-software-install.svg" />
+                    <h2>The Indie, Open Source App Store</h2>
+                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
+                    <a href="developer" class="read-more">Become a Developer</a>
+                    <br>
+                    <a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a>
+                </div>
+            </div>
+        </section>
         <section>
-            <div id="showcase" class="row grey">
+            <div id="showcase" class="row">
                 <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
@@ -269,17 +282,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="appcenter">
-            <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
-                <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
-                    <a href="developer" class="read-more">Become a Developer</a>
                 </div>
             </div>
         </section>
