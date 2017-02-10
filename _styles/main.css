@@ -633,7 +633,7 @@ a.third:hover {
 
 @media (max-width: 400px) {
    .overlay {
-       justify-content: flex-end; /*iOS is not happy about that right: 0*/
+       left: 0; /*iOS is not happy about that right: 0*/
        top: 0;
     }
     
