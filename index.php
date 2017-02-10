@@ -153,7 +153,7 @@
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
                                 <h2>Epiphany</h2>
-                                <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
-                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search and more, who says you can't teach an old app new tricks?</p>
                             </div>
                         </div>
                     </div>
