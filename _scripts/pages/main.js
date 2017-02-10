@@ -19,6 +19,11 @@ analytics.then((ga) => {
 
 jQuery.then(($) => {
     $('.toast__close').on('click', function (e) {
-        $(this).closest('.toast').hide()
+        const $overlay = $(this).closest('.overlay')
+
+        $overlay.animate({
+            top: '-10px',
+            opacity: 0
+        }, 120, 'linear', $overlay.hide)
     })
 })
