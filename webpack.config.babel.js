@@ -65,13 +65,22 @@ export const styles = {
         path: './styles'
     },
     module: {
-        loaders: [
-            { test: /\.css$/, loader: Extract.extract('raw!postcss') }
-        ]
+        rules: [{
+            test: /\.css$/,
+            use: Extract.extract({
+                use: [{
+                    loader: 'raw-loader'
+                }, {
+                    loader: 'postcss-loader',
+                    options: {
+                      plugins: () => [
+                        cssnext({ browsers })
+                      ]
+                    }
+                }]
+            })
+        }]
     },
-    postcss: [
-        cssnext({ browsers })
-    ],
     plugins: [
         new Extract('[name]')
     ],
@@ -87,13 +96,19 @@ export const scripts = {
         publicPath: '/scripts',
         sourceMapFilename: '[name].map.js'
     },
-    exclude: [
-        path.resolve(__dirname, 'node_modules')
-    ],
     module: {
-        loaders: [
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-            { test: /\.css$/, loader: 'style!css!postcss' }
+        rules: [{
+              test: /\.js$/,
+              loader: 'babel-loader',
+              exclude: /node_modules/,
+              query: {
+                  presets: [['env', {
+                    modules: false,
+                    targets: { browsers }
+                  }]]
+              }
+          },
+          ...styles.module.rules
         ]
     },
     resolve: {
@@ -102,14 +117,11 @@ export const scripts = {
             'styles': path.resolve(__dirname, '_styles')
         }
     },
-    postcss: styles.postcss,
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
-            minChunks: 4
+            minChunks: Infinity
         }),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             compressor: {
