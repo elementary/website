@@ -602,7 +602,6 @@ a.third:hover {
     font-size: 14px;
     justify-content: center;
     padding: 3px;
-    position: fixed;
     text-align: center;
 }
 
@@ -633,9 +632,6 @@ a.third:hover {
 
 @media (max-width: 400px) {
    .overlay {
-       /*iOS is not happy about that right: 0*/
-       left: 50%; 
-       right: 50%;
        top: 0;
     }
     
