@@ -602,6 +602,7 @@ a.third:hover {
     font-size: 14px;
     justify-content: center;
     padding: 3px;
+    position: fixed;
     text-align: center;
 }
 
@@ -628,6 +629,21 @@ a.third:hover {
     color: #b50054;
     margin: 6px;
     padding: 3px 6px;
+}
+
+@media (max-width: 400px) {
+   .overlay {
+       top: 0;
+    }
+    
+    .toast {
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    .toast__button {
+        flex-basis: calc(100% - 12px);
+    }
 }
 
 /*********
