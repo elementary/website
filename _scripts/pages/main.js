@@ -22,8 +22,8 @@ jQuery.then(($) => {
         const $overlay = $(this).closest('.overlay')
 
         $overlay.animate({
-          top: '-10px',
-          opacity: 0
+            top: '-10px',
+            opacity: 0
         }, 120, 'linear', $overlay.hide)
     })
 })
