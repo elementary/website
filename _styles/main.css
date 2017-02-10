@@ -630,6 +630,21 @@ a.third:hover {
     padding: 3px 6px;
 }
 
+@media (max-width: 400px) {
+    .overlay {
+        top: 0;
+    }
+
+    .toast {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .toast__button {
+        flex-basis: calc(100% - 12px);
+    }
+}
+
 /*********
 * Alerts *
 *********/
