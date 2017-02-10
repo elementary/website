@@ -24,6 +24,6 @@ jQuery.then(($) => {
         $overlay.animate({
             top: '-10px',
             opacity: 0
-        }, 120, 'linear', $overlay.hide)
+        }, 120, 'linear', () => $overlay.hide())
     })
 })
