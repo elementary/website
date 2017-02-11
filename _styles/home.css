@@ -92,7 +92,7 @@ input:focus + .focus-reveal {
     background-size: contain;
     flex: 1 1 auto;
     margin-bottom: -32px;
-    min-height: 50vh;
+    min-height: 40vh;
 }
 
 @media all and (min-width: 500px) {
