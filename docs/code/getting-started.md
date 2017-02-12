@@ -600,7 +600,7 @@ This time when we created our grid, we gave it another property: `row_spacing`. 
 Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `window.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
-        label.set_text (_("Hello World!"));
+        label.label = _("Hello World!");
         button.sensitive = false;
     });
 
