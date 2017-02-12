@@ -20,8 +20,8 @@
     require_once __DIR__.'/_backend/classify.current.php';
 ?>
 
-        <section class="section--hero section--stretched">
-            <div class="section__detail grid">
+        <section class="section--hero">
+            <div class="grid">
                 <div class="whole">
                     <div id="logotype">
 
@@ -36,43 +36,42 @@
                 </div>
             </div>
 
-            <div class="section__showcase"></div>
+            <div id="purchase" class="whole section__detail"></div>
+        </section>
+        <section class="grid">
+            <div class="whole">
+                <div id="amounts">
+                    <?php
+                        $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
+                        $disallowed = [' ', '.'];
+                        $encoded = urlencode(str_replace($disallowed, '_', $paidString));
+                        $alreadyPaid = (isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0);
+                    ?>
 
-            <div class="section__detail grid">
-                <div class="whole">
-                    <div id="amounts">
-                        <?php
-                            $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
-                            $disallowed = [' ', '.'];
-                            $encoded = urlencode(str_replace($disallowed, '_', $paidString));
-                            if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
-                        ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-ten" value="0">
-                        </div>
-                        <?php
-                            } else {
-                        ?>
-                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
-                        <div id="choice-buttons">
-                            <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
-                            <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
-                            <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
-                            <div>
-                                <span class="pre-amount">$</span>
-                                <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
-                                <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
-                            </div>
-                        </div>
-                        <?php
-                            }
-                        ?>
-                        <div class="column">
-                            <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
-                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
-                        </div>
-                        <div style="clear:both;"></div>
+                    <?php if ($alreadyPaid) { ?>
+                    <div id="choice-buttons">
+                        <input type="hidden" id="amount-ten" value="0">
                     </div>
+                    <?php } else { ?>
+                    <h4 id="pay-what-you-want">Pay What You Want:</h4>
+
+                    <div id="choice-buttons">
+                        <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
+                        <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
+                        <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                        <div>
+                            <span class="pre-amount">$</span>
+                            <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
+                            <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+                    <div class="column">
+                        <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
+                        <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
+                    </div>
+                    <div style="clear:both;"></div>
                 </div>
             </div>
         </section>
@@ -357,16 +356,16 @@
                 <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
             </div>
         </section>
-        <section class="grid">
-            <div class="two-thirds">
+        <section id="followup" class="grid">
+            <div>
                 <img class="inline" src="https://elementary.io/images/icons/places/128/distributor-logo.svg">
-                <div class="inline">
-                    <h2 class="text-left">Download elementary OS</h2>
-                    <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
-                </div>
             </div>
-            <div class="third">
-                <a class="button suggested-action" href="#">Pay What You Want</a>
+            <div>
+                <h2 class="text-left">Download elementary OS</h2>
+                <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+            </div>
+            <div>
+                <a class="button suggested-action" href="#purchase">Pay What You Want</a>
             </div>
         </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
