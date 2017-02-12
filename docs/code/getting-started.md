@@ -678,7 +678,7 @@ By now you've probably already seen the white notification bubbles that appear o
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
 
 ## Gtk.Application {#gtk-application}
-In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Button).
+In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
 
 Now that you know what a `Gtk.Application` is, let's create one:
 
