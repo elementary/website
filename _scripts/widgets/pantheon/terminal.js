@@ -392,6 +392,8 @@ export default class Terminal {
      * @returns {Number} exit code of the ran command
      */
     process (cmd = $('> span:last-child > span.input:last-of-type', this.$i).text()) {
+        cmd = cmd.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"|'/g, '&quot;')
+
         if (!this.$w.hasClass('active') || this.onHold) {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {

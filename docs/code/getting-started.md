@@ -593,14 +593,14 @@ Let’s create a Window with a vertical Grid that contains a Button and a Label:
     grid.add (button);
     grid.add (label);
 
-    this.add (grid);
+    window.add (grid);
 
 This time when we created our grid, we gave it another property: `row_spacing`. We can also add `column_spacing`, but since we’re stacking widgets vertically we’ll only see the effect of `row_spacing`. Notice how we can create new widgets outside the grid and then pack them into the grid by name. This is really helpful when you start using different methods to change the properties of your widgets.
 
-Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `this.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
+Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `window.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
-        button.label = _("Hello World!");
+        label.label = _("Hello World!");
         button.sensitive = false;
     });
 
