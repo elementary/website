@@ -640,7 +640,7 @@ Notice that the attach method takes 5 arguments:
 4. The number of columns the widget should span.
 5. The number of rows the widget should span.
 
-You can also use `attach_next_to` to place a widget next to another one on [all four sides](https://valadoc.org/gtk+-3.0/Gtk.PositionType.html). Don’t forget to add the functionality associated with our buttons:
+You can also use `attach_next_to` to place a widget next to another one on [all four sides](https://valadoc.org/gtk+-3.0/Gtk.PositionType). Don’t forget to add the functionality associated with our buttons:
 
     hello_button.clicked.connect (() => {
         hello_label.label = _("Hello World!");
