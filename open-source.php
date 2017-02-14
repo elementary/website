@@ -15,19 +15,16 @@
     <div class="two-thirds">
         <h1>We're Built on Open Source</h1>
         <h4>The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.</h4>
-        </div>
-        <div class="half">
+    </div>
+    <div class="half">
         <h3>Security &amp; Privacy</h3>
-          <h4>By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.</h4>
-        </div>
-        <div class="half">
-          <div>
-          <h3>Better for Developers</h3>
-          <h4>If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.</h4>
-        </div>
-        </div>
-        <a class="button suggested-action" href="get-involved#desktop-development">Get Involved</a>
-
+        <h4>By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.</h4>
+    </div>
+    <div class="half">
+        <h3>Better for Developers</h3>
+        <h4>If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.</h4>
+    </div>
+    <a class="button suggested-action" href="get-involved#desktop-development">Get Involved</a>
     <div class="whole">
         <div class="two-thirds">
             <h2>We Support Open Source Projects</h2>
