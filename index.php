@@ -47,9 +47,7 @@
                             $encoded = urlencode(str_replace($disallowed, '_', $paidString));
                             if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
                         ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-ten" value="0">
-                        </div>
+                        <input type="hidden" id="amount-ten" value="0">
                         <?php
                             } else {
                         ?>
