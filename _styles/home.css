@@ -274,7 +274,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.png");
+    background-image: url("../images/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
