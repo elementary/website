@@ -91,7 +91,7 @@
         </section>
         <section id="appcenter" class="grey">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary appcenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
@@ -134,9 +134,9 @@
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.png" alt="music screenshot" />
+                        <img class="app-display__image" src="images/screenshots/music.jpg" alt="music screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
+                            <img src="images/icons/apps/64/multimedia-audio-player.jpg" alt="music icon" />
                             <div>
                                 <h2>Music</h2>
                                 <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
+                        <img class="app-display__image" src="images/screenshots/epiphany.jpg" srcset="images/screenshots/epiphany@2x.jpg 2x" alt="epiphany screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
+                        <img class="app-display__image" src="images/screenshots/mail.jpg" alt="mail screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
@@ -170,7 +170,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.png" alt="photos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/photos.jpg" alt="photos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/videos.jpg" srcset="images/screenshots/videos@2x.jpg 2x" alt="videos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
+                        <img class="app-display__image" src="images/screenshots/calendar.jpg" alt="calendar screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-files">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
+                        <img class="app-display__image" src="images/screenshots/files.jpg" srcset="images/screenshots/files@2x.jpg 2x" alt="files screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
@@ -219,7 +219,7 @@
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
                         <div class="app-display__image">
-                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="terminal screenshot" />
+                            <img class="pantheon--fallback" src="images/screenshots/terminal.jpg" alt="terminal screenshot" />
                             <div class="pantheon" style="display:none;">
                                 <div class="window dark active" type="terminal">
                                     <div class="titlebar">
@@ -258,7 +258,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" />
+                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="scratch screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
                             <div>
@@ -270,7 +270,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
+                        <img class="app-display__image" src="images/screenshots/camera.jpg" srcset="images/screenshots/camera@2x.jpg 2x" alt="camera screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
