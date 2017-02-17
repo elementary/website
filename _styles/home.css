@@ -86,7 +86,7 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.png");
+    background-image: url("../images/responsive-images/notebook-small.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,19 +97,19 @@ input:focus + .focus-reveal {
 
 @media all and (min-width: 500px) {
     .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.png");
+        background-image: url("../images/responsive-images/notebook-medium.jpg");
     }
 }
 
 @media all and (min-width: 1000px) {
     .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.png");
+        background-image: url("../images/responsive-images/notebook-large.jpg");
     }
 }
 
 @media all and (min-width: 1300px) {
     .section--hero .section__showcase {
-        background-image: url("../images/notebook.png");
+        background-image: url("../images/responsive-images/notebook.jpg");
     }
 }
 
