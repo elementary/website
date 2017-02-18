@@ -14,7 +14,7 @@
                 <p class="text-center"><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
                 <p>This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.</p>
                 <h5 data-l10n-off>CloudFlare</h5>
-                <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" href="https://www.cloudflare.com/security-policy">CloudFlare Privacy & Security Policy</a></p>
+                <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" href="https://www.cloudflare.com/security-policy">CloudFlare Privacy &amp; Security Policy</a></p>
                 <h5 data-l10n-off>Google Analytics</h5>
                 <p>Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on <a class="read-more" target="_blank" href="https://support.google.com/analytics/answer/6004245">Safeguarding Your Data</a></p>
                 <h5 data-l10n-off>Stripe</h5>

@@ -114,8 +114,8 @@
             <p></p>
         </div>
         <div class="half">
-            <h3>Question & Answer</h3>
-            <p>StackExchange is a Q&A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
+            <h3>Question &amp; Answer</h3>
+            <p>StackExchange is a Q&amp;A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
 
             <div class="actions actions--column">
                 <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
