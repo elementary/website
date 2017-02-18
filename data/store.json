@@ -115,45 +115,45 @@
         "id": 3,
         "printful_id": 141,
         "name": "Men's Track Shirt",
-        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
         "image": "images\/store\/apparel\/track_logotype_mens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 1,
-                "printful_id": 5875,
+                "printful_id": 6505,
                 "name": "S Track Men's",
                 "size": "S",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 5874,
+                "printful_id": 6506,
                 "name": "M Track Men's",
                 "size": "M",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 5873,
+                "printful_id": 6507,
                 "name": "L Track Men's",
                 "size": "L",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 5872,
+                "printful_id": 6508,
                 "name": "XL Track Men's",
                 "size": "XL",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 5871,
+                "printful_id": 6509,
                 "name": "2XL Track Men's",
                 "size": "2XL",
                 "color": "Tri-Black",
@@ -171,41 +171,41 @@
         "id": 4,
         "printful_id": 150,
         "name": "Women's Track Shirt",
-        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
+        "description": "The elementary logotype screen printed on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=womens.shirts'>Size Chart</a>",
         "image": "images\/store\/apparel\/track_logotype_womens.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 1,
-                "printful_id": 5897,
+                "printful_id": 6892,
                 "name": "S Track Women's",
                 "size": "S",
                 "color": "Tri-Black",
-                "cost": 18.00,
+                "cost": 17.00,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 5898,
+                "printful_id": 6893,
                 "name": "M Track Women's",
                 "size": "M",
                 "color": "Tri-Black",
-                "cost": 18.00,
+                "cost": 17.00,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 5899,
+                "printful_id": 6894,
                 "name": "L Track Women's",
                 "size": "L",
                 "color": "Tri-Black",
-                "cost": 18.00,
+                "cost": 17.00,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 5900,
+                "printful_id": 6895,
                 "name": "XL Track Women's",
                 "size": "XL",
                 "color": "Tri-Black",
-                "cost": 18.00,
+                "cost": 17.00,
                 "price": 25.00
             }
         ],
@@ -219,45 +219,45 @@
         "id": 6,
         "printful_id": 141,
         "name": "Men's Black Hero Shirt",
-        "description": "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "description": "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
         "image": "images\/store\/apparel\/track_hero_mens_black.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 1,
-                "printful_id": 5875,
+                "printful_id": 6505,
                 "name": "S Track Men's",
                 "size": "S",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 5874,
+                "printful_id": 6506,
                 "name": "M Track Men's",
                 "size": "M",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 5873,
+                "printful_id": 6507,
                 "name": "L Track Men's",
                 "size": "L",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 5872,
+                "printful_id": 6508,
                 "name": "XL Track Men's",
                 "size": "XL",
                 "color": "Tri-Black",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 5871,
+                "printful_id": 6509,
                 "name": "2XL Track Men's",
                 "size": "2XL",
                 "color": "Tri-Black",
@@ -275,45 +275,45 @@
         "id": 7,
         "printful_id": 141,
         "name": "Men's Oatmeal Hero Shirt",
-        "description": "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
+        "description": "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
         "image": "images\/store\/apparel\/track_hero_mens_oatmeal.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 1,
-                "printful_id": 5370,
+                "printful_id": 6822,
                 "name": "S Track Men's",
                 "size": "S",
                 "color": "Tri-Oatmeal",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 5371,
+                "printful_id": 6823,
                 "name": "M Track Men's",
                 "size": "M",
                 "color": "Tri-Oatmeal",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 5372,
+                "printful_id": 6824,
                 "name": "L Track Men's",
                 "size": "L",
                 "color": "Tri-Oatmeal",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 5373,
+                "printful_id": 6825,
                 "name": "XL Track Men's",
                 "size": "XL",
                 "color": "Tri-Oatmeal",
-                "cost": 18.50,
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 5374,
+                "printful_id": 6826,
                 "name": "2XL Track Men's",
                 "size": "2XL",
                 "color": "Tri-Oatmeal",
