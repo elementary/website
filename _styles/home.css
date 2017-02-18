@@ -115,7 +115,7 @@ input:focus + .focus-reveal {
 
 @media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
     .section--stretched {
-        height: calc(100vh - 56px);
+        height: calc(90vh - 56px);
     }
 
     .section--stretched > .section__showcase {
