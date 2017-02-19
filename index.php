@@ -349,7 +349,7 @@
         </section>
         <section class="grid">
             <div class="two-thirds">
-                <img class="inline" src="https://elementary.io/images/icons/places/128/distributor-logo.svg">
+                <img class="inline" src="images/icons/places/128/distributor-logo.svg">
                 <div class="inline">
                     <h2 class="text-left">Download elementary OS</h2>
                     <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
