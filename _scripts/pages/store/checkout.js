@@ -7,10 +7,12 @@ import Promise from 'core-js/fn/promise'
 
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
-import Stripe from '~/lib/stripe'
+import Payment from '~/widgets/payment'
 
-Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
+Promise.all([jQuery, Payment, analytics]).then(([$, Payment, ga]) => {
     ga('send', 'event', 'Store', 'Checkout Visit')
+
+    const payment = new Payment('Store')
 
     $(document).ready(function () {
         var baseUrl = $('base').attr('href')
@@ -77,38 +79,6 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
          */
         var $form = $('form[action$="order"]')
 
-        function stripeLanguage () {
-            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
-            var languageCode = $('html').prop('lang')
-
-            // Stripe supports simplified chinese
-            if (/^zh_CN/.test(languageCode)) {
-                return 'zh'
-            }
-
-            if (stripeLanguages.indexOf(languageCode) !== -1) {
-                return languageCode
-            }
-        }
-
-        function doStripePayment (amount, email) {
-            StripeCheckout.open({
-                key: stripeKey,
-                token: function (token) {
-                    console.log(JSON.parse(JSON.stringify(token)))
-
-                    processPayment(amount, token)
-                },
-                name: 'elementary LLC.',
-                description: 'Store',
-                bitcoin: true,
-                alipay: false,
-                locale: stripeLanguage() || 'auto',
-                amount: amount,
-                email: email
-            })
-        }
-
         function processPayment (amount, token) {
             ga('send', 'event', 'elementary store' + 'payment process', 'store', amount)
 
@@ -122,7 +92,13 @@ Promise.all([jQuery, Stripe, analytics]).then(([$, StripeCheckout, ga]) => {
 
                 var value = parseInt($('input[name="cart-total"]', $form).val() * 100)
                 var email = $('input[name="email"]', $form).val()
-                doStripePayment(value, email)
+
+                payment.user = {
+                    email
+                }
+
+                payment.checkout(value, 'USD')
+                .then(([token]) => processPayment(value, token))
             }
         })
     })
