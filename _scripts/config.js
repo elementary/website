@@ -7,20 +7,12 @@
 
 import Promise from 'core-js/fn/promise'
 
+import { url } from '~/page'
 import jQuery from '~/lib/jquery'
 
 export default jQuery.then(($) => {
-    let configPath = '/api/config'
-
-    if (window.location.host === 'beta.elementary.io') {
-        const branch = window.location.pathname.split('/')[1]
-
-        if (branch == null || branch === '') {
-            console.error('Unable to determine branch name')
-        } else {
-            configPath = `/${branch}/api/config`
-        }
-    }
+    const basePath = url()
+    const configPath = `${basePath}/api/config`
 
     return new Promise((resolve, reject) => {
         $.getJSON(configPath)
