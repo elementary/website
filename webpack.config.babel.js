@@ -84,6 +84,7 @@ export default {
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             sourceMap: true,
+            mangle: true,
             compressor: {
                 warnings: false,
                 screw_ie8: true
