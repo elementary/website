@@ -8,6 +8,14 @@ import gulp from 'gulp'
 import imagemin from 'gulp-imagemin'
 import svgo from 'gulp-svgo'
 
+import postcss from 'gulp-postcss'
+import cssnext from 'postcss-cssnext'
+
+const browsers = [
+    'last 4 version',
+    'not ie <= 11'
+]
+
 /**
  * png
  * Optimizes png images
@@ -96,9 +104,27 @@ gulp.task('svg', () => {
 gulp.task('images', gulp.parallel('png', 'jpg', 'svg'))
 
 /**
+ * styles
+ * Builds all stylesheets
+ *
+ * @returns {Task} - a gulp task for building stylesheets
+ */
+gulp.task('styles', () => {
+    const base = '_styles'
+    const src = ['_styles/**/*.css']
+    const dest = 'styles'
+
+    return gulp.src(src, { base })
+    .pipe(postcss([
+        cssnext({ browsers })
+    ]))
+    .pipe(gulp.dest(dest))
+})
+
+/**
  * default
  * Builds all asset files
  *
  * @returns {Task} - a gulp task for building
  */
-gulp.task('default', gulp.parallel('images'))
+gulp.task('default', gulp.parallel('images', 'styles'))

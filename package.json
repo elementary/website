@@ -8,17 +8,13 @@
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
     "core-js": "^2.4.1",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "glob": "^7.1.1",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.3.0",
     "gulp-svgo": "^1.0.3",
     "postcss-cssnext": "^2.9.0",
-    "postcss-loader": "^1.2.2",
-    "raw-loader": "^0.5.1",
     "scriptjs": "^2.5.8",
-    "style-loader": "^0.13.1",
     "webpack": "^2.2.1"
   },
   "devDependencies": {

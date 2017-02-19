@@ -7,13 +7,10 @@
  * @exports {Array} default - configuration objects for webpack
  */
 
-import cssnext from 'postcss-cssnext'
-import Extract from 'extract-text-webpack-plugin'
-import glob from 'glob'
 import path from 'path'
-import webpack from 'webpack'
 
-const stylePattern = path.resolve('_styles', '**', '*.css')
+import glob from 'glob'
+import webpack from 'webpack'
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
 
@@ -43,13 +40,7 @@ const stats = {
  * know what you are doing.
  */
 
-const styleFiles = {}
 const scriptFiles = {}
-
-glob.sync(stylePattern).forEach((p) => {
-    const name = p.replace(path.resolve(__dirname, '_styles') + path.sep, '')
-    styleFiles[name] = p
-})
 
 glob.sync(scriptPattern).forEach((p) => {
     const name = p
@@ -58,36 +49,7 @@ glob.sync(scriptPattern).forEach((p) => {
     scriptFiles[name] = p
 })
 
-export const styles = {
-    entry: styleFiles,
-    output: {
-        filename: '[name]',
-        path: './styles'
-    },
-    module: {
-        rules: [{
-            test: /\.css$/,
-            use: Extract.extract({
-                use: [{
-                    loader: 'raw-loader'
-                }, {
-                    loader: 'postcss-loader',
-                    options: {
-                      plugins: () => [
-                        cssnext({ browsers })
-                      ]
-                    }
-                }]
-            })
-        }]
-    },
-    plugins: [
-        new Extract('[name]')
-    ],
-    stats
-}
-
-export const scripts = {
+export default {
     devtool: 'source-map',
     entry: scriptFiles,
     output: {
@@ -98,23 +60,20 @@ export const scripts = {
     },
     module: {
         rules: [{
-              test: /\.js$/,
-              loader: 'babel-loader',
-              exclude: /node_modules/,
-              query: {
-                  presets: [['env', {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            query: {
+                presets: [['env', {
                     modules: false,
                     targets: { browsers }
-                  }]]
-              }
-          },
-          ...styles.module.rules
-        ]
+                }]]
+            }
+        }]
     },
     resolve: {
         alias: {
-            '~': path.resolve(__dirname, '_scripts'),
-            'styles': path.resolve(__dirname, '_styles')
+            '~': path.resolve(__dirname, '_scripts')
         }
     },
     plugins: [
@@ -137,5 +96,3 @@ export const scripts = {
     ],
     stats
 }
-
-export default [styles, scripts]
