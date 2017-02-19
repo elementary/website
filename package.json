@@ -29,7 +29,7 @@
     "install:composer": "cd _backend && composer install",
     "postinstall": "npm run install:submodule && npm run install:composer",
     "lint": "sh _tests/css.sh && sh _tests/javascript.sh && sh _tests/php.sh",
-    "build": "gulp && webpack --config ./webpack.config.babel.js",
+    "build": "gulp && webpack --progress --env production --config ./webpack.config.babel.js",
     "start": "php -S 0.0.0.0:8000 router.php"
   },
   "repository": {

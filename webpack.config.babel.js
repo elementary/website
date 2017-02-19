@@ -22,13 +22,13 @@ const browsers = [
 const stats = {
     hash: false,
     version: false,
-    timings: true,
+    timings: false,
     assets: true,
     chunks: false,
     modules: false,
-    reasons: true,
+    reasons: false,
     children: false,
-    source: true,
+    source: false,
     errors: true,
     errorDetails: true,
     warnings: true,
@@ -83,6 +83,7 @@ export default {
         }),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
+            sourceMap: true,
             compressor: {
                 warnings: false,
                 screw_ie8: true
