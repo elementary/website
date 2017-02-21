@@ -26,7 +26,7 @@ try {
 }
 
 if (
-    (!isset($res['store'] ||
+    (!isset($res['store']) ||
      !isset($res['type']) ||
      !isset($res['data']['shipment']['service']) ||
      !isset($res['data']['order']['external_id'] ||
