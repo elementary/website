@@ -14,6 +14,14 @@ $mandrill = new Mandrill($config['mandrill_key']);
 
 $charge = $res['data']['object'];
 
+try {
+    $charge = \Stripe\Charge::retrieve($charge['id']);
+} catch (Exception $e) {
+    header('HTTP/1.0 400 Bad Request');
+    echo 'Unable to find charge';
+    die();
+}
+
 if (isset($charge['metadata']['receipt']) && $charge['metadata']['receipt'] === true) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Receipt already sent';
@@ -89,7 +97,7 @@ try {
         }
     }
 } catch (Mandrill_Error $e) {
-    error_log('Mandrill error trying to send hook/store/package_shipped email');
+    error_log('Mandrill error trying to send hook/stripe/charge_succeeded email');
     error_log(get_class($e) . ' - ' . $e->getMessage());
 
     header('HTTP/1.1 500 Internal Server Error');
@@ -97,7 +105,7 @@ try {
 
     die();
 } catch (Exception $e) {
-    error_log('Failed to send hook/store/package_shipped email');
+    error_log('Failed to send hook/stripe/charge_succeeded email');
     error_log($e->getMessage());
 
     header('HTTP/1.1 500 Internal Server Error');
