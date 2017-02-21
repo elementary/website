@@ -77,6 +77,9 @@ export default {
         }
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            'Promise': 'imports-loader?this=>global!exports-loader?global.Promise!core-js/library/es6/promise'
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
             minChunks: Infinity
