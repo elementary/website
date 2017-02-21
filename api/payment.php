@@ -20,6 +20,10 @@ if (isset($_POST['token'])) {
             'card' => $token,
             'description' => $description,
             'receipt_email' => $email,
+            'metadata' => array(
+                'receipt' => false,
+                'products' => json_encode(array('ISO-' . $config['release_version']))
+            )
         ));
         // Set an secure, HTTP only cookie for 10 years in the future.
         $encoded = urlencode(str_replace(' ', '_', 'has_paid_'.$description));
