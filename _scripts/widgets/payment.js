@@ -5,7 +5,7 @@
  * @exports {Class} default - A purchase class for Stripe transactions
  */
 
-import es6Object from 'core-js/modules/es6.object.assign'
+import es6Object from 'core-js/library/es6/object'
 
 import { language } from '~/page'
 import config from '~/config'
