@@ -22,7 +22,7 @@ try {
     die();
 }
 
-if (isset($charge['metadata']['receipt']) && $charge['metadata']['receipt'] === true) {
+if (isset($charge['metadata']['receipt']) && $charge['metadata']['receipt'] === 'true') {
     header('HTTP/1.0 400 Bad Request');
     echo 'Receipt already sent';
     die();
@@ -62,8 +62,6 @@ $req = array(
         'content' => 'https://elementary.io/api/download?charge=' . urlencode($charge['id'])
     )
 );
-
-var_dump($req);
 
 $message = array(
     'subject' => 'elementary Purchase',
@@ -111,6 +109,14 @@ try {
     echo 'Error while sending email';
 
     die();
+}
+
+try {
+    $charge['metadata']['receipt'] = 'true';
+    $charge->save();
+} catch (Exception $e) {
+    error_log('Unable to update stripe charge. Possible double os purchase email.');
+    error_log($e->getMessage());
 }
 
 header('HTTP/1.1 200 OK');

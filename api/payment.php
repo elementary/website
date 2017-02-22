@@ -28,7 +28,7 @@ if (isset($_POST['token'])) {
             'description' => $description,
             'receipt_email' => $email,
             'metadata' => array(
-                'receipt' => false,
+                'receipt' => 'false',
                 'products' => json_encode(array('ISO-' . $config['release_version']))
             )
         ));
