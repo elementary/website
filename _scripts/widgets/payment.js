@@ -5,7 +5,7 @@
  * @exports {Class} default - A purchase class for Stripe transactions
  */
 
-import Promise from 'core-js/fn/promise'
+import es6Object from 'core-js/library/es6/object'
 
 import { language } from '~/page'
 import config from '~/config'
@@ -80,7 +80,7 @@ export default class Payment {
         return Promise.all([config, Stripe])
         .then(([config, stripe]) => {
             return new Promise((resolve) => {
-                stripe.open(Object.assign(this.user, {
+                stripe.open(es6Object.assign(this.user, {
                     token: (token, opts) => resolve([token, opts]),
 
                     key: config.keys.stripe,
