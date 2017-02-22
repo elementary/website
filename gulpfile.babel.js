@@ -60,6 +60,7 @@ gulp.task('svg', () => {
         '_images/**/*.svg',
 
         '!_images/icons/**/*.svg',
+        '_images/icons/actions/48/document-export.svg',
         '_images/icons/actions/symbolic/edit-clear-symbolic.svg',
         '_images/icons/actions/symbolic/edit-find-symbolic.svg',
         '_images/icons/actions/symbolic/view-filter-symbolic.svg',
@@ -96,8 +97,10 @@ gulp.task('svg', () => {
         '_images/icons/apps/64/web-browser.svg',
         '_images/icons/categories/32/preferences-desktop-display.svg',
         '_images/icons/categories/32/preferences-system-time.svg',
+        '_images/icons/categories/48/preferences-system-network.svg',
         '_images/icons/categories/64/preferences-desktop-wallpaper.svg',
         '_images/icons/devices/64/scanner.svg',
+        '_images/icons/mimes/48/office-database.svg',
         '_images/icons/places/128/distributor-logo.svg',
         '_images/icons/places/64/distributor-logo.svg',
         '_images/icons/status/48/dialog-warning.svg',
