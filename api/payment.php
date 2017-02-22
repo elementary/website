@@ -1,13 +1,20 @@
 <?php
-require_once __DIR__.'/../_backend/lib/autoload.php';
-require_once __DIR__.'/../_backend/config.loader.php';
-require_once __DIR__.'/../_backend/log-echo.php';
+
+/**
+ * api/payment.php
+ * Accepts payment for current release
+ */
+
+require_once __DIR__ . '/../_backend/config.loader.php';
+require_once __DIR__ . '/../_backend/lib/autoload.php';
+require_once __DIR__ . '/../_backend/log-echo.php';
+require_once __DIR__ . '/../_backend/release_payment.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
 if (isset($_POST['token'])) {
     $token       = $_POST['token'];
-    $amount      = $_POST['amount'];
+    $amount      = intval($_POST['amount']);
     $description = $_POST['description'];
     $email       = $_POST['email'];
     $os          = $_POST['os'];
@@ -25,10 +32,11 @@ if (isset($_POST['token'])) {
                 'products' => json_encode(array('ISO-' . $config['release_version']))
             )
         ));
-        // Set an secure, HTTP only cookie for 10 years in the future.
-        $encoded = urlencode(str_replace(' ', '_', 'has_paid_'.$description));
-        setcookie($encoded, $amount, time() + 315360000, '/', '', true, true);
+
+        release_payment_setcookie($config['release_version'], $amount);
+
         require_once __DIR__.'/../_backend/average-payments.php';
+
         echo 'OK';
     } catch(\Stripe\Error\Card $e) {
         // Don't use log_echo because we don't want finance stuff echoing.

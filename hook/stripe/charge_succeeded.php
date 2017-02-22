@@ -85,9 +85,6 @@ $message = array(
     'merge_language' => 'handlebars'
 );
 
-var_dump($req, $message);
-die();
-
 try {
     $res = $mandrill->messages->sendTemplate('iso_purchased', $req, $message);
 
