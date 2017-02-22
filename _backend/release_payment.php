@@ -31,7 +31,7 @@ function release_payment_setcookie (string $version, int $amount) {
     $string = release_payment_encode('release_payment_' . $version);
     $expires = time() + 60 * 60 * 24 * 365; // One year in the future
 
-    setcookie($string, $amount, $expires, '/', '', false, true);
+    return setcookie($string, $amount, $expires, '/', '', false, true);
 }
 
 /**
