@@ -3,8 +3,6 @@
  * Does logic for picking product variants and adding to cart
  */
 
-import Promise from 'core-js/fn/promise'
-
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'

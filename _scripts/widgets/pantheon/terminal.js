@@ -5,8 +5,6 @@
  * @exports {Class} default - Creates a realistic terminal
  */
 
-import Promise from 'core-js/fn/promise'
-
 /**
  * Here lies some basic commands that are included by default
  *
