@@ -65,9 +65,16 @@ input:focus + .focus-reveal {
     margin: 3px auto 6px;
 }
 
-#the-press {
+#the-press h4 {
     font-size: 24px;
     opacity: 0.65;
+}
+
+#the-press svg {
+    display: block;
+    height: 27px;
+    margin: 19px auto;
+    opacity: 0.8;
 }
 
 /***********
@@ -86,7 +93,7 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.png");
+    background-image: url("../images/responsive-images/notebook-small.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,19 +104,19 @@ input:focus + .focus-reveal {
 
 @media all and (min-width: 500px) {
     .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.png");
+        background-image: url("../images/responsive-images/notebook-medium.jpg");
     }
 }
 
 @media all and (min-width: 1000px) {
     .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.png");
+        background-image: url("../images/responsive-images/notebook-large.jpg");
     }
 }
 
 @media all and (min-width: 1300px) {
     .section--hero .section__showcase {
-        background-image: url("../images/notebook.png");
+        background-image: url("../images/responsive-images/notebook.jpg");
     }
 }
 
@@ -267,7 +274,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.png");
+    background-image: url("../images/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
