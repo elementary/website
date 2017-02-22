@@ -54,14 +54,16 @@ if ($iso_version === false) {
 
 $req = array(
     array(
-        'name' => 'version',
-        'content' => $iso_version
+        'name' => 'amount',
+        'content' => '$' . number_format(floatval($charge['amount'] / 100), 2, '.', ',')
     ),
     array(
-        'name' => 'charge',
-        'content' => $charge['id']
+        'name' => 'link',
+        'content' => 'https://elementary.io/api/download?charge=' . urlencode($charge['id'])
     )
 );
+
+var_dump($req);
 
 $message = array(
     'subject' => 'elementary Purchase',
@@ -86,7 +88,7 @@ $message = array(
 );
 
 try {
-    $res = $mandrill->messages->sendTemplate('iso_purchased', $req, $message);
+    $res = $mandrill->messages->sendTemplate('os-purchase', $req, $message);
 
     foreach ($res as $mail) {
         if (isset($mail['reject_reason']) && $mail['reject_reason'] !== '') {
@@ -110,3 +112,8 @@ try {
 
     die();
 }
+
+header('HTTP/1.1 200 OK');
+echo 'Email sent';
+
+die();
