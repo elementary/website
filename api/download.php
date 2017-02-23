@@ -8,7 +8,7 @@
 require_once __DIR__.'/../_backend/config.loader.php';
 require_once __DIR__.'/../_backend/lib/autoload.php';
 require_once __DIR__.'/../_backend/preload.php';
-require_once __DIR__.'/../_backend/release_payment.php';
+require_once __DIR__.'/../_backend/os-payment.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -55,7 +55,7 @@ foreach ($products as $product) {
 }
 
 if ($iso_version !== false) {
-    release_payment_setcookie($iso_version, $charge['amount']);
+    os_payment_setcookie($iso_version, $charge['amount']);
 }
 
 go_home();

@@ -6,9 +6,10 @@
  */
 
 require_once __DIR__ . '/../_backend/config.loader.php';
+require_once __DIR__ . '/../_backend/email/os-payment.php';
 require_once __DIR__ . '/../_backend/lib/autoload.php';
 require_once __DIR__ . '/../_backend/log-echo.php';
-require_once __DIR__ . '/../_backend/release_payment.php';
+require_once __DIR__ . '/../_backend/os-payment.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -32,18 +33,24 @@ if (isset($_POST['token'])) {
                 'products' => json_encode(array('ISO-' . $config['release_version']))
             )
         ));
-
-        release_payment_setcookie($config['release_version'], $amount);
-
-        require_once __DIR__.'/../_backend/average-payments.php';
-
-        echo 'OK';
     } catch(\Stripe\Error\Card $e) {
         // Don't use log_echo because we don't want finance stuff echoing.
         error_log($e);
         $sentry->captureMessage($e);
         echo 'An error occurred.';
     }
+
+    os_payment_setcookie($config['release_version'], $amount);
+
+    try {
+        email_os_payment($charge);
+    } catch (Exception $e) {
+        error_log($e);
+        $sentry->captureMessage($e);
+        echo 'Unable to send receipt email';
+    }
+
+    require_once __DIR__.'/../_backend/average-payments.php';
 } else {
     echo $config['stripe_pk'];
 }

@@ -7,10 +7,7 @@
 
 require_once __DIR__.'/index.php';
 
-require_once __DIR__.'/../../_backend/preload.php';
-require_once __DIR__.'/../../_backend/config.loader.php';
-
-$mandrill = new Mandrill($config['mandrill_key']);
+require_once __DIR__.'/../../_backend/email/os-payment.php';
 
 $charge = $res['data']['object'];
 
@@ -22,101 +19,12 @@ try {
     die();
 }
 
-if (isset($charge['metadata']['receipt']) && $charge['metadata']['receipt'] === 'true') {
-    header('HTTP/1.0 400 Bad Request');
-    echo 'Receipt already sent';
-    die();
-}
-
-$products = array();
-if (isset($charge['metadata']['products'])) {
-    try {
-        $products = json_decode($charge['metadata']['products']);
-    } catch (Exception $e) {
-        header('HTTP/1.0 400 Bad Request');
-        echo 'Unable to parse products';
-        die();
-    }
-}
-
-$iso_version = false;
-foreach ($products as $product) {
-    if (substr($product, 0, 3) === 'ISO') {
-        $iso_version = substr($product, 4);
-    }
-}
-
-if ($iso_version === false) {
-    header('HTTP/1.0 400 Bad Request');
-    echo 'No ISO purchase listed';
-    die();
-}
-
-$req = array(
-    array(
-        'name' => 'amount',
-        'content' => '$' . number_format(floatval($charge['amount'] / 100), 2, '.', ',')
-    ),
-    array(
-        'name' => 'link',
-        'content' => 'https://elementary.io/api/download?charge=' . urlencode($charge['id'])
-    )
-);
-
-$message = array(
-    'subject' => 'elementary Purchase',
-    'from_email' => 'payment@elementary.io',
-    'from_name' => 'elementary',
-    'to' => array(
-        array(
-            'email' => $charge['receipt_email'],
-            'type' => 'to'
-        )
-    ),
-    'headers' => array(
-        'Reply-To' => 'payment@elementary.io'
-    ),
-    'important' => false,
-    'tags' => array(
-        'purchase',
-        'release'
-    ),
-    'global_merge_vars' => $req, // the regular template data is not working
-    'merge_language' => 'handlebars'
-);
-
 try {
-    $res = $mandrill->messages->sendTemplate('os-purchase', $req, $message);
-
-    foreach ($res as $mail) {
-        if (isset($mail['reject_reason']) && $mail['reject_reason'] !== '') {
-            throw new Exception($mail['reject_reason']);
-        }
-    }
-} catch (Mandrill_Error $e) {
-    error_log('Mandrill error trying to send hook/stripe/charge_succeeded email');
-    error_log(get_class($e) . ' - ' . $e->getMessage());
-
-    header('HTTP/1.1 500 Internal Server Error');
+    email_os_payment($charge);
+} catch (Exception $e) {
+    header('HTTP/1.0 500 Bad Request');
     echo 'Unable to send email';
-
     die();
-} catch (Exception $e) {
-    error_log('Failed to send hook/stripe/charge_succeeded email');
-    error_log($e->getMessage());
-
-    header('HTTP/1.1 500 Internal Server Error');
-    echo 'Error while sending email';
-
-    die();
-}
-
-try {
-    $charge['metadata']['receipt'] = 'true';
-    $charge->save();
-} catch (Exception $e) {
-    error_log('Unable to update stripe charge. Possible double os purchase email.');
-    error_log($e->getMessage());
 }
 
 header('HTTP/1.1 200 OK');

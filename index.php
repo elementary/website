@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__.'/_backend/classify.current.php';
     require_once __DIR__.'/_backend/preload.php';
-    require_once __DIR__.'/_backend/release_payment.php';
+    require_once __DIR__.'/_backend/os-payment.php';
 
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 
@@ -33,7 +33,7 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="amounts">
-                        <?php if (release_payment_getcookie($config['release_version']) > 0) { ?>
+                        <?php if (os_payment_getcookie($config['release_version']) > 0) { ?>
                         <div id="choice-buttons">
                             <input type="hidden" id="amount-ten" value="0">
                         </div>
