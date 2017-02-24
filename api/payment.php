@@ -38,6 +38,7 @@ if (isset($_POST['token'])) {
         error_log($e);
         $sentry->captureMessage($e);
         echo 'An error occurred.';
+        die();
     }
 
     os_payment_setcookie($config['release_version'], $amount);
