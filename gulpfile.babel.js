@@ -6,7 +6,9 @@
 import gulp from 'gulp'
 
 import imagemin from 'gulp-imagemin'
+import resize from 'gulp-responsive'
 import svgo from 'gulp-svgo'
+import webp from 'gulp-webp'
 
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
@@ -17,14 +19,14 @@ const browsers = [
 ]
 
 /**
- * png
- * Optimizes png images
+ * image
+ * Optimizes all normal image types
  *
- * @returns {Task} - a gulp task for png files
+ * @returns {Task} - a gulp task for image types
  */
-gulp.task('png', () => {
+gulp.task('image', () => {
     const base = '_images'
-    const src = ['_images/**/*.png']
+    const src = ['_images/**/*.png', '_images/**/*.jpg', '_images/**/*.jpeg', '_images/**/*.webp']
     const dest = 'images'
 
     return gulp.src(src, { base })
@@ -33,19 +35,69 @@ gulp.task('png', () => {
 })
 
 /**
- * jpg
- * Optimizes jpg images
+ * webp
+ * Optimizes all normal images with webp
  *
- * @returns {Task} - a gulp task for jpg images
+ * @returns {Task} - a gulp task for webp awesomesause
  */
-gulp.task('jpg', () => {
+gulp.task('webp', () => {
     const base = '_images'
-    const src = ['_images/**/*.jpg', '_images/**/*.jpeg']
     const dest = 'images'
 
-    return gulp.src(src, { base })
-    .pipe(imagemin())
+    const prefix = '_images/**/*'
+    const suffix = ['png', 'jpg', 'jpeg', 'webp']
+
+    const srcHi = [...suffix.map((e) => `${prefix}@2x.${e}`)]
+    const srcLo = [...suffix.map((e) => `${prefix}.${e}`), ...srcHi.map((p) => `!${p}`)]
+
+    const options = {
+        errorOnEnlargement: false,
+        errorOnUnusedImage: false,
+        lossless: true,
+        progressive: true,
+        quality: 100,
+        skipOnEnlargement: true,
+        withMetadata: false,
+        withoutEnlargement: true
+    }
+
+    const lodpi = gulp.src(srcLo, { base })
+    .pipe(webp({ lossless: true }))
+    .pipe(resize({
+        '**/*': [{
+            width: 200,
+            rename: { suffix: '-small' }
+        }, {
+            width: 600,
+            rename: { suffix: '-medium' }
+        }, {
+            width: 1000,
+            rename: { suffix: '-large' }
+        }, {
+            rename: { suffix: '-original' }
+        }]
+    }, options))
     .pipe(gulp.dest(dest))
+
+    const hidpi = gulp.src(srcHi, { base })
+    .pipe(webp({ lossless: true }))
+    .pipe(resize({
+        '**/*': [{
+            width: 400,
+            rename: { suffix: '-small' }
+        }, {
+            width: 1200,
+            rename: { suffix: '-medium' }
+        }, {
+            width: 2000,
+            rename: { suffix: '-large' }
+        }, {
+            rename: { suffix: '-original' }
+        }]
+    }, options))
+    .pipe(gulp.dest(dest))
+
+    return Promise.all([lodpi, hidpi])
 })
 
 /**
@@ -119,7 +171,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('png', 'jpg', 'svg'))
+gulp.task('images', gulp.parallel('image', 'webp', 'svg'))
 
 /**
  * styles
