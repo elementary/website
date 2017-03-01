@@ -4,9 +4,14 @@
  */
 
 import gulp from 'gulp'
+import cache from 'gulp-cached'
+import changed from 'gulp-changed'
+import merge from 'merge-stream'
+import rename from 'gulp-rename'
+import through from 'through2'
 
+import gm from 'gm'
 import imagemin from 'gulp-imagemin'
-import resize from 'gulp-responsive'
 import svgo from 'gulp-svgo'
 import webp from 'gulp-webp'
 
@@ -17,6 +22,35 @@ const browsers = [
     'last 4 version',
     'not ie <= 11'
 ]
+
+/**
+ * sizeDown
+ * Will only continue stream if the image is below given size
+ *
+ * @param {Number} size - Width of image
+ * @returns {Stream} - a gulp stream
+ */
+const sizeDown = (size) => through.obj(function (ogFile, enc, cb) {
+    const gmc = gm.subClass({ imageMagic: true })
+    const file = ogFile.clone({ contents: false })
+    const gmFile = gmc(file.contents, file.path)
+
+    gmFile.size((err, val) => {
+        if (err) return cb(err)
+
+        if (val.width < size) {
+            return cb()
+        }
+
+        gmFile.resize(size, null).toBuffer((err, buf) => {
+            if (err) return cb(err)
+
+            file.contents = buf
+            this.push(file)
+            return cb()
+        })
+    })
+})
 
 /**
  * image
@@ -30,74 +64,41 @@ gulp.task('image', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('image'))
     .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
 
 /**
  * webp
- * Optimizes all normal images with webp
+ * Optimizes all images with webp
  *
  * @returns {Task} - a gulp task for webp awesomesause
  */
 gulp.task('webp', () => {
     const base = '_images'
+    const src = ['_images/**/*.png', '_images/**/*.jpg', '_images/**/*.jpeg', '_images/**/*.webp']
     const dest = 'images'
 
-    const prefix = '_images/**/*'
-    const suffix = ['png', 'jpg', 'jpeg', 'webp']
+    const root = gulp.src(src, { base })
+    .pipe(changed(dest, { extension: '.webp' }))
+    .pipe(cache('webp'))
+    .pipe(webp())
 
-    const srcHi = [...suffix.map((e) => `${prefix}@2x.${e}`)]
-    const srcLo = [...suffix.map((e) => `${prefix}.${e}`), ...srcHi.map((p) => `!${p}`)]
-
-    const options = {
-        errorOnEnlargement: false,
-        errorOnUnusedImage: false,
-        lossless: true,
-        progressive: true,
-        quality: 100,
-        skipOnEnlargement: true,
-        withMetadata: false,
-        withoutEnlargement: true
-    }
-
-    const lodpi = gulp.src(srcLo, { base })
-    .pipe(webp({ lossless: true }))
-    .pipe(resize({
-        '**/*': [{
-            width: 200,
-            rename: { suffix: '-small' }
-        }, {
-            width: 600,
-            rename: { suffix: '-medium' }
-        }, {
-            width: 1000,
-            rename: { suffix: '-large' }
-        }, {
-            rename: { suffix: '-original' }
-        }]
-    }, options))
+    const original = root
     .pipe(gulp.dest(dest))
 
-    const hidpi = gulp.src(srcHi, { base })
-    .pipe(webp({ lossless: true }))
-    .pipe(resize({
-        '**/*': [{
-            width: 400,
-            rename: { suffix: '-small' }
-        }, {
-            width: 1200,
-            rename: { suffix: '-medium' }
-        }, {
-            width: 2000,
-            rename: { suffix: '-large' }
-        }, {
-            rename: { suffix: '-original' }
-        }]
-    }, options))
-    .pipe(gulp.dest(dest))
+    const sizes = [2000, 1500, 1000, 800, 600, 400, 200]
 
-    return Promise.all([lodpi, hidpi])
+    const streams = sizes.map((size) => {
+        return root
+        .pipe(sizeDown(size))
+        .pipe(rename({ suffix: `-${size}` }))
+        .pipe(gulp.dest(dest))
+    })
+
+    return merge(original, ...streams)
 })
 
 /**
@@ -161,6 +162,8 @@ gulp.task('svg', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('svg'))
     .pipe(svgo())
     .pipe(gulp.dest(dest))
 })
@@ -185,6 +188,7 @@ gulp.task('styles', () => {
     const dest = 'styles'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
     .pipe(postcss([
         cssnext({ browsers })
     ]))
