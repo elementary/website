@@ -28,12 +28,10 @@
                 </div>
             </div>
 
-            <div class="section__showcase">
-                <picture>
-                    <?php \HTML\source_webp ('images/screenshots/notebook', 1868, 1); ?>
-                    <img src='images/screenshots/notebook.png' alt='elementary desktop' />
-                </picture>
-            </div>
+            <picture class="section__showcase">
+                <?php \HTML\source_webp ('images/screenshots/notebook', 1868, 1); ?>
+                <img src='images/screenshots/notebook.png' alt='elementary desktop' />
+            </picture>
 
             <div class="section__detail grid">
                 <div class="whole">
