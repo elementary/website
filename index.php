@@ -108,7 +108,7 @@
                             <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/apps/48/utilities-terminal.svg'); ?></span></div>
                             <div>
                                 <h3>Task finished</h3>
-                                <p>git clone https://github.com/elementary/website</p>
+                                <p data-l10n-off>git clone https://github.com/elementary/website</p>
                             </div>
                         </div>
                     </div>
