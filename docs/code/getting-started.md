@@ -445,7 +445,7 @@ See the difference? We just added `_()` around the string! Well, that was easy!
 
     ```bash
     cmake -DCMAKE_INSTALL_PREFIX=/usr ../
-    make pot
+    make po
     ```
 
 5. Don't forget to add this new directory and it's contents to bzr
@@ -718,7 +718,7 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
     app_window.add (grid);
     app_window.show_all ();
 
-Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
+Since we're adding translatable strings, don't forget to update your translation template by running `make po`.
 
 
 ## Sending Notifications {#sending-notifications}
