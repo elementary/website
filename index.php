@@ -28,7 +28,12 @@
                 </div>
             </div>
 
-            <div class="section__showcase"></div>
+            <div class="section__showcase">
+                <picture>
+                    <?php \HTML\source_webp ('images/screenshots/notebook', 1868, 1); ?>
+                    <img src='images/screenshots/notebook.png' alt='elementary desktop' />
+                </picture>
+            </div>
 
             <div class="section__detail grid">
                 <div class="whole">
@@ -130,7 +135,10 @@
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.jpg" alt="music screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/music', 989, 1); ?>
+                            <img src='images/screenshots/music.png' alt='elementary music app' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
@@ -142,7 +150,11 @@
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/epiphany.jpg" srcset="images/screenshots/epiphany@2x.jpg 2x" alt="epiphany screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/epiphany', 2002, 2); ?>
+                            <?php \HTML\source_webp ('images/screenshots/epiphany', 997, 1); ?>
+                            <img src='images/screenshots/epiphany.png' alt='elementary epiphany web browser' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
@@ -154,7 +166,10 @@
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/mail.jpg" alt="mail screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/mail', 1023, 1); ?>
+                            <img src='images/screenshots/mail.png' alt='elementary mail app' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
@@ -166,7 +181,10 @@
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.jpg" alt="photos screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/photos', 964, 1); ?>
+                            <img src='images/screenshots/photos.png' alt='elementary photos app' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
@@ -178,7 +196,11 @@
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/videos.jpg" srcset="images/screenshots/videos@2x.jpg 2x" alt="videos screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/videos', 1926, 2); ?>
+                            <?php \HTML\source_webp ('images/screenshots/videos', 989, 1); ?>
+                            <img src='images/screenshots/videos.png' alt='elementary video player' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
@@ -190,7 +212,10 @@
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.jpg" alt="calendar screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/calendar', 952, 1); ?>
+                            <img src='images/screenshots/calendar.png' alt='elementary calendar app' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
@@ -202,7 +227,11 @@
                 </div>
                 <div class="showcase-tab" id="showcase-files">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/files.jpg" srcset="images/screenshots/files@2x.jpg 2x" alt="files screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/files', 1926, 2); ?>
+                            <?php \HTML\source_webp ('images/screenshots/files', 988, 1); ?>
+                            <img src='images/screenshots/files.png' alt='elementary files' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
@@ -215,7 +244,10 @@
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
                         <div class="app-display__image">
-                            <img class="pantheon--fallback" src="images/screenshots/terminal.jpg" alt="terminal screenshot" />
+                            <picture class="pantheon--fallback">
+                                <?php \HTML\source_webp ('images/screenshots/terminal', 772, 1); ?>
+                                <img src='images/screenshots/terminal.png' alt='elementary terminal' />
+                            </picture>
                             <div class="pantheon" style="display:none;">
                                 <div class="window dark active" type="terminal">
                                     <div class="titlebar">
@@ -254,7 +286,11 @@
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="scratch screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/scratch', 1902, 2); ?>
+                            <?php \HTML\source_webp ('images/screenshots/scratch', 988, 1); ?>
+                            <img src='images/screenshots/scratch.png' alt='elementary scratch text editor' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
                             <div>
@@ -266,7 +302,11 @@
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/camera.jpg" srcset="images/screenshots/camera@2x.jpg 2x" alt="camera screenshot" />
+                        <picture class="app-display__image">
+                            <?php \HTML\source_webp ('images/screenshots/camera', 1926, 2); ?>
+                            <?php \HTML\source_webp ('images/screenshots/camera', 1000, 1); ?>
+                            <img src='images/screenshots/camera.png' alt='elementary camera app' />
+                        </picture>
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>

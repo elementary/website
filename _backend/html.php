@@ -35,7 +35,7 @@ namespace HTML {
     $requested_sizes = array_reverse($requested_sizes);
 
     foreach ($requested_sizes as $index => $size) {
-      $src_path = $path;
+      $src_path = $path_parts['dirname'] . '/' . $path_parts['filename'];
       $media_scale = '';
 
       if ($index !== count($requested_sizes) - 1) {

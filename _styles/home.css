@@ -93,31 +93,8 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    align-items: center;
     flex: 1 1 auto;
-    margin-bottom: -32px;
-    min-height: 50vh;
-}
-
-@media all and (min-width: 500px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.jpg");
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.jpg");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook.jpg");
-    }
 }
 
 @media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
