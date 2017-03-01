@@ -21,7 +21,7 @@ namespace HTML {
    * @param {Number} $max - Max width of the image
    * @param {Number} $scale - Max density of the image
    */
-  function source_webp (string $path, int $max, int $scale = 1) {
+  function source_webp (string $path, int $max = 320, int $scale = 1) {
     global $picture_sizes;
 
     $path_parts = pathinfo($path);
