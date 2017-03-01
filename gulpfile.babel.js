@@ -89,7 +89,7 @@ gulp.task('webp', () => {
     const original = root
     .pipe(gulp.dest(dest))
 
-    const sizes = [2000, 1500, 1000, 800, 600, 400, 200]
+    const sizes = [320, 640, 1280, 2560]
 
     const streams = sizes.map((size) => {
         return root

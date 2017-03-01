@@ -3,6 +3,7 @@
 include_once __DIR__.'/lib/autoload.php';
 require_once __DIR__.'/log-echo.php';
 require_once __DIR__.'/config.loader.php';
+require_once __DIR__.'/html.php';
 
 // Honor the IE do-not-track-header,
 // even though it's set automatically.

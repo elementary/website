@@ -83,7 +83,11 @@
         </section>
         <section id="appcenter" class="grey">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary appcenter categories"/>
+                <picture class="app-display__image">
+                    <?php \HTML\source_webp ('images/screenshots/appcenter', 2554, 2); ?>
+                    <?php \HTML\source_webp ('images/screenshots/appcenter', 1225, 1); ?>
+                    <img src='images/screenshots/appcenter.png' alt='elementary appcenter categories' />
+                </picture>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
