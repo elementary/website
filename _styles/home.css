@@ -81,35 +81,16 @@ input:focus + .focus-reveal {
 * Sections *
 ***********/
 
-.section--hero {
-    display: flex;
-    flex-direction: column;
-}
-
-.section--hero .section__detail {
-    flex: 0 0 auto;
-    max-width: 100%;
-    padding: 0 0 16px;
-}
-
-.section--hero .section__showcase {
-    align-items: center;
-    flex: 1 1 auto;
-}
-
 .section--hero .section__showcase img {
+    display: block;
+    margin-bottom: -32px;
     margin-left: auto;
     margin-right: auto;
-    max-height: 100%;
 }
 
-@media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
-    .section--stretched {
-        height: calc(100vh - 56px);
-    }
-
-    .section--stretched > .section__showcase {
-        display: flex;
+@media screen and (min-width: 768px) and (min-height: 600px) {
+    .section--hero .section__showcase img {
+        max-height: calc(100vh - 56px - 280px);
     }
 }
 
@@ -123,6 +104,11 @@ input:focus + .focus-reveal {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.app-display__image,
+.app-display__image img {
+    max-height: 100vh;
 }
 
 .app-display__description {
