@@ -33,7 +33,10 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="amounts">
-                        <?php if (os_payment_getcookie($config['release_version']) > 0) { ?>
+                        <?php
+                            $already_paid = (os_payment_getcookie($config['release_version']) > 0);
+                            if ($already_paid) {
+                        ?>
                         <div id="choice-buttons">
                             <input type="hidden" id="amount-ten" value="0">
                         </div>
@@ -51,7 +54,7 @@
                         </div>
                         <?php } ?>
                         <div class="column">
-                            <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
+                            <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
                             <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
