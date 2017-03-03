@@ -5,7 +5,6 @@
  * @exports {Promise} default - a promise of the jQuery with jQuery.leanModal2 loaded
  */
 
-import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
 import jQuery from './jquery'

@@ -7,13 +7,10 @@
  * @exports {Array} default - configuration objects for webpack
  */
 
-import cssnext from 'postcss-cssnext'
-import Extract from 'extract-text-webpack-plugin'
-import glob from 'glob'
 import path from 'path'
-import webpack from 'webpack'
 
-const stylePattern = path.resolve('_styles', '**', '*.css')
+import glob from 'glob'
+import webpack from 'webpack'
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
 
@@ -25,13 +22,13 @@ const browsers = [
 const stats = {
     hash: false,
     version: false,
-    timings: true,
+    timings: false,
     assets: true,
     chunks: false,
     modules: false,
-    reasons: true,
+    reasons: false,
     children: false,
-    source: true,
+    source: false,
     errors: true,
     errorDetails: true,
     warnings: true,
@@ -43,13 +40,7 @@ const stats = {
  * know what you are doing.
  */
 
-const styleFiles = {}
 const scriptFiles = {}
-
-glob.sync(stylePattern).forEach((p) => {
-    const name = p.replace(path.resolve(__dirname, '_styles') + path.sep, '')
-    styleFiles[name] = p
-})
 
 glob.sync(scriptPattern).forEach((p) => {
     const name = p
@@ -58,27 +49,7 @@ glob.sync(scriptPattern).forEach((p) => {
     scriptFiles[name] = p
 })
 
-export const styles = {
-    entry: styleFiles,
-    output: {
-        filename: '[name]',
-        path: './styles'
-    },
-    module: {
-        loaders: [
-            { test: /\.css$/, loader: Extract.extract('raw!postcss') }
-        ]
-    },
-    postcss: [
-        cssnext({ browsers })
-    ],
-    plugins: [
-        new Extract('[name]')
-    ],
-    stats
-}
-
-export const scripts = {
+export default {
     devtool: 'source-map',
     entry: scriptFiles,
     output: {
@@ -87,31 +58,36 @@ export const scripts = {
         publicPath: '/scripts',
         sourceMapFilename: '[name].map.js'
     },
-    exclude: [
-        path.resolve(__dirname, 'node_modules')
-    ],
     module: {
-        loaders: [
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-            { test: /\.css$/, loader: 'style!css!postcss' }
-        ]
+        rules: [{
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            query: {
+                presets: [['env', {
+                    modules: false,
+                    targets: { browsers }
+                }]]
+            }
+        }]
     },
     resolve: {
         alias: {
-            '~': path.resolve(__dirname, '_scripts'),
-            'styles': path.resolve(__dirname, '_styles')
+            '~': path.resolve(__dirname, '_scripts')
         }
     },
-    postcss: styles.postcss,
     plugins: [
+        new webpack.ProvidePlugin({
+            'Promise': 'imports-loader?this=>global!exports-loader?global.Promise!core-js/library/es6/promise'
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
-            minChunks: 4
+            minChunks: Infinity
         }),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
+            sourceMap: true,
+            mangle: true,
             compressor: {
                 warnings: false,
                 screw_ie8: true
@@ -125,5 +101,3 @@ export const scripts = {
     ],
     stats
 }
-
-export default [styles, scripts]
