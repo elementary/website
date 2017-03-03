@@ -81,7 +81,7 @@ Done! Now you can download source code hosted on Launchpad and upload your own c
 
 At the time of this writing, elementary doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
 
-### Scratch {#scrath}
+### Scratch {#scratch}
 
 ![](images/icons/apps/128/accessories-text-editor.svg)
 
@@ -201,7 +201,7 @@ Feel free to play around with this example. Make the window a different size, se
 
 Remember how when we compiled our code, we used the `valac` command and the argument `--pkg gtk+-3.0`? What we did there was make use of a "library". If you're not familiar with the idea of libraries, a library is a collection of methods that your program can use. So this argument tells `valac` to include the GTK+ library (version 3.0) when compiling our app.
 
-In our code, we've used the `Gtk` "Namespace" to declare that we want to use methods from GTK+ (specifically, `Gtk.Window` and `Gtk.Button.with_label`). Notice that there is a hierarchy at play. If you want to explore that hierarchy in more detail, you can [check out Valadoc](http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Button).
+In our code, we've used the `Gtk` "Namespace" to declare that we want to use methods from GTK+ (specifically, `Gtk.Window` and `Gtk.Button.with_label`). Notice that there is a hierarchy at play. If you want to explore that hierarchy in more detail, you can [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Button).
 
 # Our First App {#our-first-app}
 
@@ -551,9 +551,9 @@ Now that you know how to code, build, and distribute an app using Vala, Gtk, CMa
 
 ## Widgets as Subclasses of Other Widgets {#widgets-as-subclasses-of-other-widgets}
 
-Before we get into `Gtk.Grid`, let’s stop for a second and take some time to understand Gtk a little better. At the lower level, Gtk has classes that define some pretty abstract traits of widgets such as [`Gtk.Container`](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Container) and [`Gtk.Orientable`](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Orientable). These aren’t widgets that we’re going to use directly in our code, but they’re used as building blocks to create the widgets that we do use. It’s important that we understand this, because it means that when we understand how to add children to a `Gtk.Container` like `Gtk.Grid`, we also understand how to add children to a `Gtk.Container` like `Gtk.Toolbar`. Both Grid and Toolbar are widgets that are subclasses of the more abstract class `Gtk.Container`.
+Before we get into `Gtk.Grid`, let’s stop for a second and take some time to understand Gtk a little better. At the lower level, Gtk has classes that define some pretty abstract traits of widgets such as [`Gtk.Container`](https://valadoc.org/gtk+-3.0/Gtk.Container) and [`Gtk.Orientable`](https://valadoc.org/gtk+-3.0/Gtk.Orientable). These aren’t widgets that we’re going to use directly in our code, but they’re used as building blocks to create the widgets that we do use. It’s important that we understand this, because it means that when we understand how to add children to a `Gtk.Container` like `Gtk.Grid`, we also understand how to add children to a `Gtk.Container` like `Gtk.Toolbar`. Both Grid and Toolbar are widgets that are subclasses of the more abstract class `Gtk.Container`.
 
-If you want to understand more about these widgets and the parts of Gtk that they subclass, jump over to [Valadoc](http://valadoc.elementary.io/) and search for a widget like `Gtk.Grid`. See that big tree at the top of the page? It shows you every component of Gtk that `Gtk.Grid` subclasses and even what those components subclass. Having a lower level knowledge of Gtk will help you to implement widgets you haven’t worked with before since you will understand how their parent classes work.
+If you want to understand more about these widgets and the parts of Gtk that they subclass, jump over to [Valadoc](https://valadoc.org/) and search for a widget like `Gtk.Grid`. See that big tree at the top of the page? It shows you every component of Gtk that `Gtk.Grid` subclasses and even what those components subclass. Having a lower level knowledge of Gtk will help you to implement widgets you haven’t worked with before since you will understand how their parent classes work.
 
 ## Gtk.Grid {#gtk-grid}
 
@@ -564,7 +564,7 @@ Just like when we add a Button or Label, we need to create our `Gtk.Grid`. As al
     var grid = new Gtk.Grid ();
     grid.orientation = Gtk.Orientation.VERTICAL;
 
-Remember that Button and Label accepted an argument (a String) in the creation method (that’s the stuff in parentheses and quotes). As shown above, `Gtk.Grid` doesn’t accept any arguments in the creation method. However, you can still change the grid’s properties (like [orientation](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Orientation)) as we did on the second line. Here, we’ve declared that when we add widgets to our grid, they should stack vertically.
+Remember that Button and Label accepted an argument (a String) in the creation method (that’s the stuff in parentheses and quotes). As shown above, `Gtk.Grid` doesn’t accept any arguments in the creation method. However, you can still change the grid’s properties (like [orientation](https://valadoc.org/gtk+-3.0/Gtk.Orientation)) as we did on the second line. Here, we’ve declared that when we add widgets to our grid, they should stack vertically.
 
 Let’s add some stuff to the Grid:
 
@@ -593,14 +593,14 @@ Let’s create a Window with a vertical Grid that contains a Button and a Label:
     grid.add (button);
     grid.add (label);
 
-    this.add (grid);
+    window.add (grid);
 
 This time when we created our grid, we gave it another property: `row_spacing`. We can also add `column_spacing`, but since we’re stacking widgets vertically we’ll only see the effect of `row_spacing`. Notice how we can create new widgets outside the grid and then pack them into the grid by name. This is really helpful when you start using different methods to change the properties of your widgets.
 
-Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `this.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
+Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `window.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
-        button.label = _("Hello World!");
+        label.label = _("Hello World!");
         button.sensitive = false;
     });
 
@@ -630,7 +630,7 @@ Make sure to give the Grid, Buttons, and Labels unique names that you’ll remem
     layout.attach (rotate_button, 0, 1, 1, 1);
     layout.attach_next_to (rotate_label, rotate_button, Gtk.PositionType.RIGHT, 1, 1);
 
-    this.add (layout);
+    window.add (layout);
 
 Notice that the attach method takes 5 arguments:
 
@@ -640,7 +640,7 @@ Notice that the attach method takes 5 arguments:
 4. The number of columns the widget should span.
 5. The number of rows the widget should span.
 
-You can also use `attach_next_to` to place a widget next to another one on [all four sides](http://references.valadoc.org/#!api=gtk+-3.0/Gtk.PositionType). Don’t forget to add the functionality associated with our buttons:
+You can also use `attach_next_to` to place a widget next to another one on [all four sides](https://valadoc.org/gtk+-3.0/Gtk.PositionType). Don’t forget to add the functionality associated with our buttons:
 
     hello_button.clicked.connect (() => {
         hello_label.label = _("Hello World!");
@@ -664,7 +664,7 @@ Let’s recap what we learned in this section:
 * We set the properties of `Gtk.Grid` including its orientation and spacing
 *  We added multiple widgets into a single Gtk.Grid using the attach method to create complex layouts containing Buttons and Labels that did cool stuff.
 
-Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
+Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](https://valadoc.org/gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
 # Notifications {#notifications}
 By now you've probably already seen the white notification bubbles that appear on the top right of the screen. Notifications are a simple way to notify a user about the state of your app. For example, they can inform the user that a long process has been completed or a new message has arrived. In this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
@@ -678,7 +678,7 @@ By now you've probably already seen the white notification bubbles that appear o
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
 
 ## Gtk.Application {#gtk-application}
-In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.Application).
+In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
 
 Now that you know what a `Gtk.Application` is, let's create one:
 
@@ -778,7 +778,7 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 
 	notification.set_priority (NotificationPriority.URGENT);
 
-`URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](http://valadoc.elementary.io/#!api=gio-2.0/GLib.NotificationPriority).
+`URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](https://valadoc.org/gio-2.0/GLib.NotificationPriority).
 
 ## Review {#notifications-review}
 Let's review what all we've learned:
@@ -787,6 +787,6 @@ Let's review what all we've learned:
 - We built an app that sends and updates notifications.
 - We also learned about other notification features like setting an icon and a notification's priority.
 
-As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](http://valadoc.elementary.io/#!api=gio-2.0/GLib.Notification).
+As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](https://valadoc.org/gio-2.0/GLib.Notification).
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}

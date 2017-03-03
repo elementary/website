@@ -1,7 +1,5 @@
 <?php
 
-include_once __DIR__.'/l10n.php';
-
 if (!isset($l10n)) {
    $l10n = new Translator();
 }
@@ -71,10 +69,10 @@ $l10n->begin_html_translation();
 
         <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Droid+Sans|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Droid+Sans|Roboto+Mono">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
@@ -84,13 +82,14 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
         <?php } ?>
 
+        <?php if (!isset($scriptless) || $scriptless === false) { ?>
         <?php if ($trackme === true && $config['sentry_pub']) {
             # Curiously enough, the only thing that went through the mind of the developer
             # as he wrote inline javascript was "Oh no, not again." Many people have speculated
             # that if we knew exactly why the developer had thought that, we would know a
             # lot more about the nature of the code than we do now. ~ Douglas Adams
         ?>
-        <script src="https://cdn.jsdelivr.net/raven/3.7.0/raven.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/raven/3.9.1/raven.min.js"></script>
         <script>
             console.log('Sentry loaded')
 
@@ -128,25 +127,40 @@ $l10n->begin_html_translation();
         ?>
         <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
         <?php } ?>
+        <?php } ?>
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                    <li><a href="http://blog.elementary.io">Blog</a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
+                    <li><a href="https://developer.elementary.io">Developer</a></li>
+                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
                     <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="<?php echo $page['lang-root'].'developer'; ?>">Developer</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
+                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
+                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="overlay">
+            <div class="overlay__content toast">
+                <div class="toast__close"><i class="fa fa-close"></i></div>
+                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
+                <a href="https://igg.me/at/appcenter" class="toast__button">Back Us</a>
+            </div>
+        </div>
+
         <div id="content-container">
 
 <?php

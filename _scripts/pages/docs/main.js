@@ -3,8 +3,6 @@
  * Does code highlighting, sidebar generation, and hash updating for doc pages
  */
 
-import Promise from 'core-js/fn/promise'
-
 import highlight from '~/lib/highlight'
 import jQuery from '~/lib/jquery'
 
@@ -48,6 +46,8 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         var $headings = $('h1')
         var $sidebar = $('<div class="sidebar"></div>')
         if ($headings.length > 1) {
+            $('#content-container').addClass('has-sidebar')
+
             var $index = $('<ul class="index"></ul>')
             $headings.each(function () {
                 $index.append('<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>')

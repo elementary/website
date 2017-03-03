@@ -1,8 +1,7 @@
 <?php
-    include __DIR__.'/../_templates/sitewide.php';
-
-    require_once __DIR__.'/../backend/config.loader.php';
-    require_once __DIR__.'/../backend/store/product.php';
+    require_once __DIR__.'/../_backend/preload.php';
+    require_once __DIR__.'/../_backend/config.loader.php';
+    require_once __DIR__.'/../_backend/store/product.php';
 
     $page['title'] = 'Store &sdot; elementary';
 
@@ -59,10 +58,17 @@
     }
 ?>
 
+<section class="grid">
+    <div class="two-thirds">
+        <h2>Support Development. Get Swag. Win Win.</h2>
+        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.</p>
+    </div>
+</section>
+
 <?php foreach ($categories as $category => $products) { ?>
 
     <div class="grid grid--product">
-        <h2 class="grid__title"><?php echo $category ?></h2>
+        <h3 class="grid__title"><?php echo $category ?></h3>
 
         <?php foreach ($products as $product) { ?>
 
@@ -135,6 +141,14 @@
     </div>
 
 <?php } ?>
+
+<section class="grid">
+    <div class="two-thirds">
+        <h2>Worldwide Shipping</h2>
+        <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
+        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.</small></p>
+    </div>
+</section>
 
 <script>window.products = <?php echo json_encode(\Store\Product\get_products()) ?></script>
 

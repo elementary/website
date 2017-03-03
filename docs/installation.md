@@ -164,7 +164,7 @@ should produce the output:
 
 You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.
 
-<a href="http://appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
+<a href="http://www.appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
 
 
 1. Open UNetbootin from the Dash. It will open a window like the one below:

@@ -2,9 +2,9 @@
 /**
  * Merge translations files. Useful when merging docs pages for instance.
  * Usage: php .tx/merge.php -o output_resource input_resources...
- * 
+ *
  * Example: php .tx/merge.php -o docs/code/index docs/code/getting-started docs/code/reference
- * This will create "lang/{lang}/docs/code/index.json", which contains translations from "getting-started" and "reference".
+ * This will create "_lang/{lang}/docs/code/index.json", which contains translations from "getting-started" and "reference".
  */
 
 // Do not allow to run this script over HTTP
@@ -36,7 +36,7 @@ if (count($input) == 0 or empty($output)) {
 
 $input[] = $output;
 
-$langRootDir = __DIR__.'/../lang';
+$langRootDir = __DIR__.'/../_lang';
 
 $source = array();
 foreach ($input as $resource) {

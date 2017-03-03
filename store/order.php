@@ -1,12 +1,8 @@
 <?php
-    include __DIR__ . '/../backend/lib/autoload.php';
-
-    require_once __DIR__ . '/../_templates/sitewide.php';
-
-    require_once __DIR__ . '/../backend/config.loader.php';
-    require_once __DIR__ . '/../backend/store/api.php';
-    require_once __DIR__ . '/../backend/store/cart.php';
-    require_once __DIR__ . '/../backend/validation.php';
+    require_once __DIR__.'/../_backend/preload.php';
+    require_once __DIR__.'/../_backend/store/api.php';
+    require_once __DIR__.'/../_backend/store/cart.php';
+    require_once __DIR__.'/../_backend/store/validation.php';
 
     \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -188,7 +184,8 @@
 
         foreach ($cart as $index => $item) {
             $req['items'][] = array(
-                'variant_id' => $item['variant']['id'],
+                'external_id' => $item['product']['id'] . '-' . $item['variant']['id'],
+                'variant_id' => $item['variant']['printful_id'],
                 'quantity' => $item['quantity'],
                 'name' => $item['variant']['name'],
                 'files' => $item['product']['files'],

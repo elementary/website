@@ -7,29 +7,20 @@
 * Responsive Hero *
 ******************/
 
-.page-index .hero {
-    background: url("../images/responsive-images/notebook-small.png") 50% / contain no-repeat;
-    height: 176px;
-    padding-top: 0;
+#amounts h4 {
+    display: inline-block;
 }
 
-@media all and (min-width: 530px) {
-    .page-index .hero {
-        background-image: url("../images/responsive-images/notebook-medium.png");
-        height: auto;
-        padding-top: 40%;
-    }
+#choice-buttons {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media all and (min-width: 1000px) {
-    .page-index .hero {
-        background-image: url("../images/responsive-images/notebook-large.png");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .page-index .hero {
-        background-image: url("../images/notebook.png");
+@media (min-width: 575px) {
+    #choice-buttons {
+        margin: 0 24px;
     }
 }
 
@@ -46,17 +37,16 @@
     font-size: 14px;
     margin-left: 14px;
     margin-right: -21px;
-    margin-top: 11px;
+    margin-top: 0.8em;
     pointer-events: none;
     position: absolute;
 }
 
 #amount-custom {
-    max-width: 170px;
     padding-left: 24px;
     padding-right: 24px;
     text-align: center;
-    width: 100%;
+    width: calc(100% - 6px); /* Work around payent-button::before */
 }
 
 .focus-reveal {
@@ -75,9 +65,69 @@ input:focus + .focus-reveal {
     margin: 3px auto 6px;
 }
 
-#the-press {
+#the-press h4 {
     font-size: 24px;
     opacity: 0.65;
+}
+
+#the-press svg {
+    display: block;
+    height: 27px;
+    margin: 19px auto;
+    opacity: 0.8;
+}
+
+/***********
+* Sections *
+***********/
+
+.section--hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.section--hero .section__detail {
+    flex: 0 0 auto;
+    max-width: 100%;
+    padding: 0 0 16px;
+}
+
+.section--hero .section__showcase {
+    background-image: url("../images/responsive-images/notebook-small.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1 1 auto;
+    margin-bottom: -32px;
+    min-height: 50vh;
+}
+
+@media all and (min-width: 500px) {
+    .section--hero .section__showcase {
+        background-image: url("../images/responsive-images/notebook-medium.jpg");
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .section--hero .section__showcase {
+        background-image: url("../images/responsive-images/notebook-large.jpg");
+    }
+}
+
+@media all and (min-width: 1300px) {
+    .section--hero .section__showcase {
+        background-image: url("../images/responsive-images/notebook.jpg");
+    }
+}
+
+@media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
+    .section--stretched {
+        height: calc(100vh - 56px);
+    }
+
+    .section--stretched > .section__showcase {
+        display: flex;
+    }
 }
 
 /***********************
@@ -224,7 +274,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.png");
+    background-image: url("../images/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -474,7 +524,7 @@ input:focus + .focus-reveal {
 }
 
 .app p {
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     margin-top: 6px;
     text-align: center;
@@ -489,7 +539,7 @@ input:focus + .focus-reveal {
 }
 
 #slingshot-pager .button {
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     height: 23px;
     line-height: 16px;
@@ -513,7 +563,7 @@ input:focus + .focus-reveal {
 .slingshot-category {
     color: #717171;
     display: block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
     padding: 7px 12px 6px 16px;
@@ -577,7 +627,7 @@ img.result-img {
     color: #333;
     display: block;
     float: left;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     line-height: 9pt;
     margin: 6px 0;
@@ -590,7 +640,7 @@ span.search-term,
 span.cursor {
     color: #333;
     display: inline-block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     height: 16px;
     position: relative;
@@ -627,7 +677,7 @@ span.cursor {
 span.results-title {
     color: #707070;
     display: block;
-    font-family: "Droid Sans", "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 9pt;
     font-weight: bold;
     line-height: 9pt;
@@ -645,7 +695,7 @@ span.results-title {
     background-color: #c4c4c4;
 }
 
-.search-result * {
+.search-result > * {
     display: inline-block;
     vertical-align: middle;
 }

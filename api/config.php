@@ -1,13 +1,13 @@
 <?php
 
 /**
- * api/config.php
- * Shows sitewide configuration for use in client side javascript
+ * api/config.json.php
+ * Live-generated JSON configuration for use in client side javascript
  */
 
-require_once __DIR__.'/../backend/classify.current.php';
-require_once __DIR__.'/../backend/config.loader.php';
-require_once __DIR__.'/../backend/here-miss.php';
+require_once __DIR__.'/../_backend/classify.current.php';
+require_once __DIR__.'/../_backend/config.loader.php';
+require_once __DIR__.'/../_backend/here-miss.php';
 
 $output = array(
     'release' => array(
@@ -26,4 +26,5 @@ $output = array(
     )
 );
 
+header('Content-type:application/json;charset=utf-8');
 echo json_encode($output, JSON_PRETTY_PRINT);

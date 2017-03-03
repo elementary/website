@@ -5,7 +5,6 @@
  * @exports {Promise} default - a promise of the highlight.js library
  */
 
-import Promise from 'core-js/fn/promise'
 import Script from 'scriptjs'
 
 export default new Promise((resolve, reject) => {

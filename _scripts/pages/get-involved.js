@@ -3,8 +3,6 @@
  * Creates the desktop bugs burn down chart
  */
 
-import Promise from 'core-js/fn/promise'
-
 import ChartPromise from '~/lib/chart'
 import jQuery from '~/lib/jquery'
 

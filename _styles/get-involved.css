@@ -3,17 +3,6 @@
 * This file is part of elementary.io *
 *************************************/
 
-html,
-body {
-    background-color: #3e4e54;
-    color: #c8d0d0;
-    fill: #c8d0d0;
-}
-
-a {
-    color: #53b2e1;
-}
-
 /***********
 * Sections *
 ***********/
@@ -22,13 +11,23 @@ section {
     padding: 32px 0;
 }
 
-section:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.04);
-}
-
 @media (min-width: 600px) {
     .hero .two-thirds {
         padding-bottom: 64px;
+    }
+}
+
+.third p {
+    text-align: left;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+    .grid .third {
+        width: 66%;
+    }
+
+    .third p {
+        text-align: center;
     }
 }
 
@@ -36,36 +35,34 @@ section:nth-child(even) {
 * Button *
 *********/
 
-.button.flat {
-    border-color: rgba(200, 208, 208, 0.5);
-    color: #c8d0d0;
-}
-
-.button.flat:focus {
-    background-color: rgba(200, 208, 208, 0.5);
-}
-
 .button.flat.suggested-action {
     background-color: #268bd2;
-    border-color: #268bd2;
+    border-color: transparent;
     color: #fff;
 }
 
 .button.flat.suggested-action:focus {
     background-color: #40a5ec;
-    border-color: #40a5ec;
 }
 
 /* Funding */
 
 #funding .button.flat.suggested-action {
     background-color: #edac35;
-    border-color: #edac35;
 }
 
 #funding .button.flat.suggested-action:focus {
     background-color: #ffc357;
     border-color: #ffc357;
+}
+
+#funding .third > img {
+    margin: -4px; /* Fix some issue to match i.fa */
+}
+
+#funding .two-thirds > img {
+    height: 48px;
+    margin: -12px;
 }
 
 #paypalform {
@@ -76,56 +73,40 @@ section:nth-child(even) {
 
 #translations .button.flat.suggested-action {
     background-color: #2aa198;
-    border-color: #2aa198;
 }
 
 #translations .button.flat.suggested-action:focus {
     background-color: #44bbb2;
-    border-color: #44bbb2;
 }
 
 /* Support */
 
 #support .button.flat.suggested-action {
     background-color: #d53c12;
-    border-color: #d53c12;
 }
 
 #support .button.flat.suggested-action:focus {
     background-color: #ef562c;
-    border-color: #ef562c;
 }
 
 /* Web */
 
 #web-development .button.flat.suggested-action {
     background-color: #d33682;
-    border-color: #d33682;
 }
 
 #web-development .button.flat.suggested-action:focus {
     background-color: #ed509c;
-    border-color: #ed509c;
 }
 
 /* Design */
 
 #design .button.flat.suggested-action {
-    color: #3e4e54;
-    background-color: rgba(200, 208, 208, 0.8);
-    border-color: transparent;
+    background-color: #68758e;
 }
 
 #design .button.flat.suggested-action:focus {
-    background-color: #fff;
-    border-color: #fff;
-}
-
-@media (max-width: 1080px) {
-    .button.flat {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    background-color: #919caf;
 }
 
 .actions {
@@ -211,36 +192,46 @@ section:nth-child(even) {
 }
 
 #sections-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
 }
 
 #sections-menu .button.flat {
-    border: 2px solid #c8d0d0;
-    border-radius: 4px;
-    color: #c8d0d0;
-    display: inline-block;
-    min-width: 167px;
-    vertical-align: middle;
+    flex: 1 1 15%;
+    margin: 6px;
+    min-width: initial;
+}
+
+@media (max-width: 768px) {
+    #sections-menu .button.flat {
+        flex-basis: 30%;
+    }
 }
 
 #sections-menu .button.flat:nth-child(1) {
-    border-color: #edac35;
+    background-color: #edac35;
 }
 
 #sections-menu .button.flat:nth-child(2) {
-    border-color: #2aa198;
+    background-color: #2aa198;
 }
 
 #sections-menu .button.flat:nth-child(3) {
-    border-color: #cb4b16;
+    background-color: #cb4b16;
 }
 
 #sections-menu .button.flat:nth-child(4) {
-    border-color: #d33682;
+    background-color: #d33682;
 }
 
 #sections-menu .button.flat:nth-child(5) {
-    border-color: #268bd2;
+    background-color: #268bd2;
+}
+
+#sections-menu .button.flat:nth-child(6) {
+    background-color: #68758e;
 }
 
 /******************
@@ -252,7 +243,7 @@ section:nth-child(even) {
 }
 
 .web-browser {
-    border: 2px solid rgba(200, 208, 208, 0.5);
+    border: 2px solid #abacae;
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
@@ -265,16 +256,14 @@ section:nth-child(even) {
 }
 
 .web-browser #toolbar {
-    border-bottom: 2px solid rgba(200, 208, 208, 0.5);
+    border-bottom: 2px solid #abacae;
     padding: 12px;
     padding-top: 9px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
+    user-select: none;
 }
 
 .web-browser #toolbar img {
@@ -283,21 +272,17 @@ section:nth-child(even) {
 }
 
 .web-browser #toolbar #search-bar {
-    background-color: rgba(200, 208, 208, 0.3);
+    background-color: #ddd;
     border-radius: 2px;
     display: inline-block;
     height: 20px;
     margin: 0 12px;
-    width: calc(100% - 124px);
+    width: calc(100% - 128px);
     vertical-align: middle;
 }
 
 .web-browser .actions {
     margin-bottom: 0;
-}
-
-.web-browser > .actions > a {
-    margin-left: 0;
 }
 
 @media (max-width: 888px) {

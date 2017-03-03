@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/_templates/sitewide.php';
+    require_once __DIR__.'/_backend/preload.php';
 
     $page['title'] = 'Code of Conduct &sdot; elementary';
 
@@ -27,7 +27,7 @@
                 <h2>Consequences</h2>
                 <p>If you choose not to follow this code of conduct or otherwise disrupt the community, we reserve the right to do the following: alter or remove any content you&rsquo;ve posted; deactivate your account on the website; kick you out of an IRC channel; ban you from the site, IRC channels, or related services; or otherwise prevent you from interacting with the community.</p>
                 <hr>
-                <p><em>The elementary Code of Conduct is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-Share Alike 3.0</a> license. Certain aspects have been inspired by the <a href="http://www.ubuntu.com/about/about-ubuntu/conduct" target="_blank">Ubuntu Code of Conduct</a>.</em></p>
+                <p><em>The elementary Code of Conduct is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">Creative Commons Attribution-Share Alike 3.0</a> license. Certain aspects have been inspired by the <a href="http://www.ubuntu.com/about/about-ubuntu/conduct" target="_blank" rel="noopener">Ubuntu Code of Conduct</a>.</em></p>
             </div>
 <?php
     include $template['footer'];
