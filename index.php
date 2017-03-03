@@ -23,15 +23,7 @@
         <section class="section--hero section--stretched">
             <div class="section__detail grid">
                 <div class="whole">
-                    <div id="logotype">
-
-                        <?php
-                            // Embed the SVG to fix scaling in WebKit 1.x,
-                            // while preserving CSS options for the image.
-                            include __DIR__.'/images/logotype-os.svg';
-                        ?>
-
-                    </div>
+                    <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
                     <h4>A fast and open replacement for Windows and macOS</h4>
                 </div>
             </div>
@@ -47,9 +39,7 @@
                             $encoded = urlencode(str_replace($disallowed, '_', $paidString));
                             if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
                         ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-ten" value="0">
-                        </div>
+                        <input type="hidden" id="amount-ten" value="0">
                         <?php
                             } else {
                         ?>
@@ -76,30 +66,42 @@
                 </div>
             </div>
         </section>
-        <section class="grid">
-            <h4 id="the-press">What the press is saying about elementary OS:</h4>
+        <section class="grid" id="the-press">
+            <h4>What the press is saying about elementary OS:</h4>
             <div class="third">
-                <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank"><img class="h1" src="images/thirdparty-logos/wired.svg" data-l10n-off alt="WIRED" /></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
+                <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
             </div>
             <div class="third">
-                <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank"><img class="h1" src="images/thirdparty-logos/maclife.svg" data-l10n-off alt="Mac|Life" /></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" data-tweet-suffix=" — @MacLife http://elementary.io" target="_blank">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
+                <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" data-tweet-suffix=" — @MacLife http://elementary.io" target="_blank" rel="noopener">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
             </div>
             <div class="third">
-                <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank"><img class="h1" src="images/thirdparty-logos/lifehacker.svg" data-l10n-off alt="Lifehacker" /></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+                <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+            </div>
+        </section>
+        <section id="appcenter" class="grey">
+            <div class="app-display app-display--overflow">
+                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary appcenter categories"/>
+                <div class="app-display__description">
+                    <img src="images/icons/apps/128/system-software-install.svg" />
+                    <h2>The Indie, Open Source App Store</h2>
+                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
+                    <p><a href="developer" class="read-more">Become a Developer</a></p>
+                    <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
+                </div>
             </div>
         </section>
         <section>
-            <div id="showcase" class="row grey">
+            <div id="showcase" class="row">
                 <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
                             <div><span class="icon" icon="apps/48/utilities-terminal"><?php include('images/icons/apps/48/utilities-terminal.svg'); ?></span></div>
                             <div>
                                 <h3>Task finished</h3>
-                                <p>git clone https://github.com/elementary/website</p>
+                                <p data-l10n-off>git clone https://github.com/elementary/website</p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +126,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.png" alt="music screenshot" />
+                        <img class="app-display__image" src="images/screenshots/music.jpg" alt="music screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
@@ -136,19 +138,19 @@
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
+                        <img class="app-display__image" src="images/screenshots/epiphany.jpg" srcset="images/screenshots/epiphany@2x.jpg 2x" alt="epiphany screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
                                 <h2>Epiphany</h2>
-                                <p>Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
+                        <img class="app-display__image" src="images/screenshots/mail.jpg" alt="mail screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
@@ -160,7 +162,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.png" alt="photos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/photos.jpg" alt="photos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
@@ -172,7 +174,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/videos.jpg" srcset="images/screenshots/videos@2x.jpg 2x" alt="videos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
@@ -184,7 +186,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
+                        <img class="app-display__image" src="images/screenshots/calendar.jpg" alt="calendar screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
@@ -196,7 +198,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-files">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
+                        <img class="app-display__image" src="images/screenshots/files.jpg" srcset="images/screenshots/files@2x.jpg 2x" alt="files screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
@@ -209,7 +211,7 @@
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
                         <div class="app-display__image">
-                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="terminal screenshot" />
+                            <img class="pantheon--fallback" src="images/screenshots/terminal.jpg" alt="terminal screenshot" />
                             <div class="pantheon" style="display:none;">
                                 <div class="window dark active" type="terminal">
                                     <div class="titlebar">
@@ -241,14 +243,14 @@
                             <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
-                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy & paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search and more, who says you can't teach an old app new tricks?</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-scratch">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="scratch screenshot" />
+                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="scratch screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
                             <div>
@@ -260,7 +262,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
+                        <img class="app-display__image" src="images/screenshots/camera.jpg" srcset="images/screenshots/camera@2x.jpg 2x" alt="camera screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
@@ -272,21 +274,10 @@
                 </div>
             </div>
         </section>
-        <section id="appcenter">
-            <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary appcenter categories"/>
-                <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.</p>
-                    <a href="developer" class="read-more">Become a Developer</a>
-                </div>
-            </div>
-        </section>
         <section id="slingshot" class="grey">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
-                    <div id="slingshot-label">Applications</div>
+                    <div id="slingshot-label" data-l10n-off>Applications</div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
@@ -299,27 +290,27 @@
                         </div>
                         <div class="entry">
                             <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive">dat</span>
-                            <span class="cursor">|</span>
+                            <span class="search-term inactive" data-l10n-off>dat</span>
+                            <span class="cursor" data-l10n-off>|</span>
                             <span class="clear-icon inactive"><?php include('images/icons/actions/symbolic/edit-clear-symbolic.svg'); ?></span>
                         </div>
                         <div id="slingshot-grid" class="active view">
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
-                                <div class="button active">1</div>
-                                <div class="button">2</div>
+                                <div class="button active" data-l10n-off>1</div>
+                                <div class="button" data-l10n-off>2</div>
                             </div>
                         </div>
                         <div id="slingshot-categories" class="next view">
                             <div class="slingshot-categories-sidebar">
-                                <span class="slingshot-category active">Accessories</span>
-                                <span class="slingshot-category">Graphics</span>
-                                <span class="slingshot-category">Internet</span>
-                                <span class="slingshot-category">Office</span>
-                                <span class="slingshot-category">Other</span>
-                                <span class="slingshot-category">Sound &amp; Video</span>
-                                <span class="slingshot-category">System Tools</span>
+                                <span class="slingshot-category active" data-l10n-off>Accessories</span>
+                                <span class="slingshot-category" data-l10n-off>Graphics</span>
+                                <span class="slingshot-category" data-l10n-off>Internet</span>
+                                <span class="slingshot-category" data-l10n-off>Office</span>
+                                <span class="slingshot-category" data-l10n-off>Other</span>
+                                <span class="slingshot-category" data-l10n-off>Sound &amp; Video</span>
+                                <span class="slingshot-category" data-l10n-off>System Tools</span>
                             </div>
                             <div class="slingshot-categories">
                             </div>
@@ -358,7 +349,7 @@
         </section>
         <section class="grid">
             <div class="two-thirds">
-                <img class="inline" src="https://elementary.io/images/icons/places/128/distributor-logo.svg">
+                <img class="inline" src="images/icons/places/128/distributor-logo.svg">
                 <div class="inline">
                     <h2 class="text-left">Download elementary OS</h2>
                     <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
@@ -374,7 +365,7 @@
             <img alt="Download elementary OS icon" src="images/icons/apps/48/ubiquity.svg">
             <div class="content-area">
                 <p class="primary">Choose a Download</p>
-                <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank">installation guide</a></p>
+                <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
             </div>
             <div class="action-area">
                 <a class="button clickable close-modal">Cancel</a>

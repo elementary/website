@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "軽量、そしてオープンソース。 Windows や macOS の代わりに。",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "価格はあなた次第:",
     "Custom": "カスタム",
     "Enter any dollar amount.": "何ドルか入力",
     "Purchase elementary OS": "elementary OS を購入する",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "インディーズで、オープンソースのアプリストア",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "アプリセンターでアプリや拡張機能をインストールしましょう。新しいアプリを素早く検索し、インストールされているアプリを一括更新できます。完全無料で、ライセンスキーも、登録も、試用期間もありません。",
     "Become a Developer": "開発者になる",
-    "Applications": "アプリケーション",
-    "dat": "dat",
-    "Accessories": "アクセサリー",
-    "Graphics": "グラフィック",
-    "Internet": "インターネット",
-    "Office": "オフィス",
-    "Other": "その他",
-    "Sound &amp; Video": "サウンドとビデオ",
-    "System Tools": "システムツール",
     "3 Ways to Explore": "3 つの検索方法",
     "Grid": "グリッド",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "全アプリをアルファベット順に表示します。フリックしてあなたが起動したいものを探してください",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "お近くのミラーサーバーか、マグネットリンクのどちらかからダウンロードしてください。ヘルプおよび詳細は、こちらをご覧ください：",
     "installation guide": "インストールガイド",
     "Cancel": "キャンセル",
-    "Download": "Download",
+    "Download": "ダウンロード",
     "Torrent Magnet Link": "Torrent Magnet Link",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "軽量、そしてオープンソース。 Windows や macOS の代わりに。 - elementary OS"
 }

@@ -3,8 +3,6 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-import Promise from 'core-js/fn/promise'
-
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 
@@ -129,7 +127,7 @@ Promise.all([jQuery, analytics]).then(([$, ga]) => {
         }
 
         // Hide the inputs we don't need depending on the country
-        $('form[action$="checkout"]').on('change', () => updateAddressForm(true))
+        $('form[action$="checkout"] select[name="country"]').on('change', () => updateAddressForm(true))
         updateAddressForm(false)
     })
 })

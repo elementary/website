@@ -1,6 +1,6 @@
 {
     "A fast and open replacement for Windows and macOS": "Szybki i otwarty zamiennik dla Windows i macOS",
-    "Pay What You Want:": "Pay What You Want:",
+    "Pay What You Want:": "Zapłać ile chcesz:",
     "Custom": "Inna kwota",
     "Enter any dollar amount.": "Wpisz kwotę w dolarach.",
     "Purchase elementary OS": "Kup elementary OS",
@@ -60,15 +60,6 @@
     "The Indie, Open Source App Store": "Niezależny, otwartoźródłowy sklep z programami",
     "AppCenter brings handcrafted apps and extensions directly to your desktop. Quickly discover new apps and easily update the ones you already have. No license keys, no subscriptions, no trial periods.": "Centrum oprogramowania dostarcza ręcznie wykonane programy i rozszerzenia bezpośrednio na Twój pulpit. Szybko odkrywaj nowe programy i łatwo aktualizuj te, które już masz. Bez kluczy licencyjnych, bez zapisów, bez okresów próbnych.",
     "Become a Developer": "Zostań programistą",
-    "Applications": "Programy",
-    "dat": "dat",
-    "Accessories": "Akcesoria",
-    "Graphics": "Grafika",
-    "Internet": "Internet",
-    "Office": "Biurowe",
-    "Other": "Inne",
-    "Sound &amp; Video": "Dźwięk i wideo",
-    "System Tools": "Narzędzia systemowe",
     "3 Ways to Explore": "3 sposoby przeglądania",
     "Grid": "Siatka",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "Wyświetl wszystkie swoje programy w alfabetycznej siatce. Przejrzyj i znajdź, którego szukasz.",
@@ -91,7 +82,7 @@
     "Download from a localized server or by magnet link. For help and more info, see the": "Pobierz z najbliższej położonego serwera lub poprzez odnośnik magnetyczny. W celu uzyskania pomocy lub więcej informacji, zobacz",
     "installation guide": "przewodnik instalacji",
     "Cancel": "Anuluj",
-    "Download": "Download",
+    "Download": "Pobierz",
     "Torrent Magnet Link": "Odnośnik magnetyczny torrenta",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Szybki i otwarty zamiennik dla Windows i macOS ⋅ elementary OS"
 }

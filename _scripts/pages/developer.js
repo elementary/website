@@ -3,8 +3,6 @@
  * Page handling for all JS things on the developer page
  */
 
-import Promise from 'core-js/fn/promise'
-
 import highlight from '~/lib/highlight'
 import jQuery from '~/lib/jquery'
 
