@@ -630,7 +630,7 @@ Make sure to give the Grid, Buttons, and Labels unique names that you’ll remem
     layout.attach (rotate_button, 0, 1, 1, 1);
     layout.attach_next_to (rotate_label, rotate_button, Gtk.PositionType.RIGHT, 1, 1);
 
-    this.add (layout);
+    window.add (layout);
 
 Notice that the attach method takes 5 arguments:
 

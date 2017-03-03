@@ -3,8 +3,6 @@
  * Handles homepage payment and OS image downloading
  */
 
-import Promise from 'core-js/fn/promise'
-
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'

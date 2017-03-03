@@ -3,8 +3,6 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-import Promise from 'core-js/fn/promise'
-
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 

@@ -3,8 +3,6 @@
  * Changes prices depending on shipping and gets stripe information
  */
 
-import Promise from 'core-js/fn/promise'
-
 import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import Payment from '~/widgets/payment'

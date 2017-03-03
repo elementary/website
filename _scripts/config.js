@@ -5,8 +5,6 @@
  * @exports {Promise} default - a promise of the site configuration
  */
 
-import Promise from 'core-js/fn/promise'
-
 import { url } from '~/page'
 import jQuery from '~/lib/jquery'
 
