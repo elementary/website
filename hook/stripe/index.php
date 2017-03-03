@@ -1,6 +1,7 @@
 <?php
+
 /**
- * /hook/store/index.php
+ * /hook/stripe/index.php
  * Verifies hook variables and passes data to individual hook files
  */
 
@@ -25,21 +26,9 @@ try {
     die();
 }
 
-if (
-    (!isset($res['store']) ||
-     !isset($res['type']) ||
-     !isset($res['data']['shipment']['service']) ||
-     !isset($res['data']['order']['external_id']) ||
-     $res['store'] !== 148324)
-) {
-    header('HTTP/1.0 400 Bad Request');
-    echo 'Incomplete data';
-    die();
-}
-
-// Check the stripe checkout to make sure we have a _real_ call
+// Check the stripe event ID to ensure it's real
 try {
-    $ch = \Stripe\Charge::retrieve($res['data']['order']['external_id']);
+    $evn = \Stripe\Event::retrieve($res['id']);
 } catch (Exception $e) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Inaccurate data';
@@ -47,8 +36,8 @@ try {
 }
 
 // And we finally fire off the hook file we need
-if ($res['type'] === 'package_shipped') {
-    require_once __DIR__.'/package_shipped.php';
+if ($res['type'] === 'charge.succeeded') {
+    require_once __DIR__.'/charge_succeeded.php';
 } else {
     header('HTTP/1.0 415 Unsupported Media Type');
     echo 'Hook type not supported';
