@@ -122,6 +122,7 @@ gulp.task('svg', () => {
         '_images/icons/apps/128/accessories-text-editor.svg',
         '_images/icons/apps/128/application-default-icon.svg',
         '_images/icons/apps/128/system-software-install.svg',
+        '_images/icons/apps/128/utilities-terminal.svg',
         '_images/icons/apps/32/accessories-camera.svg',
         '_images/icons/apps/32/archive-manager.svg',
         '_images/icons/apps/32/office-calendar.svg',
