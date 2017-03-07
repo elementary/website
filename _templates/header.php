@@ -31,6 +31,7 @@ if (!isset($page['scripts'])) $page['scripts'] = array();
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
+
 ?>
 
 <!doctype html>
@@ -153,13 +154,7 @@ $l10n->begin_html_translation();
             </div>
         </nav>
 
-        <div class="overlay">
-            <div class="overlay__content toast">
-                <div class="toast__close"><i class="fa fa-close"></i></div>
-                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
-                <a href="https://igg.me/at/appcenter" class="toast__button">Back Us</a>
-            </div>
-        </div>
+        <?php require __DIR__ . '/event.php'; ?>
 
         <div id="content-container">
 

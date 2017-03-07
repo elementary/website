@@ -170,3 +170,9 @@ try {
 
     die();
 }
+
+
+header('HTTP/1.1 200 OK');
+echo 'Email sent';
+
+die();
