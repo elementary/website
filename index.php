@@ -92,7 +92,10 @@
                     <h2>The Indie, Open Source App Store</h2>
                     <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
-                    <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
+
+                    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
+                        <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
+                    <?php } ?>
                 </div>
             </div>
         </section>
