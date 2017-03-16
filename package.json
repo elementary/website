@@ -8,7 +8,6 @@
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
     "core-js": "^2.4.1",
-    "exports-loader": "^0.6.3",
     "glob": "^7.1.1",
     "gm": "^1.23.0",
     "gulp": "gulpjs/gulp#4.0",

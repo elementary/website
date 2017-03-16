@@ -203,3 +203,17 @@ gulp.task('styles', () => {
  * @returns {Task} - a gulp task for building
  */
 gulp.task('default', gulp.parallel('images', 'styles'))
+
+/**
+ * watch
+ * Watches for asset changes and builds what it needs to
+ *
+ * @returns {Task} - a gulp task for building
+ */
+gulp.task('watch', gulp.series('default', function watch () {
+    gulp.watch('_images/**/*.png', gulp.series('png'))
+    gulp.watch('_images/**/*.jpg', gulp.series('jpg'))
+    gulp.watch('_images/**/*.svg', gulp.series('svg'))
+
+    gulp.watch('_styles/**/*.css', gulp.series('styles'))
+}))
