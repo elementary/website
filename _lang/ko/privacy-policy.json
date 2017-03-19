@@ -3,7 +3,7 @@
     "Do Not Track": "추적하지 마세요",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "이 사이트는 대부분의 최신 브라우저에서 볼 수 있는 do-not-track 설정을 존중하며 Google Analytics가 있으면 비활성화됩니다. 사이트 사용에 심각한 영향을 주지 않으면서 다른 추적 방법들을 자동으로 제거할 수는 없습니다. 이러한 추적 방법을 수동으로 관리하고자 하시면, 쿠키 비활성화 섹션을 참조하십시오.",
     "Cookies": "쿠키",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>브라우저 설정에서 쿠키 또는 써드 파티 쿠키를 사용하지 않거나 선택적으로 끌 수 있도록 고를 수 있습니다. <\/strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>브라우저 설정에서 쿠키 또는 써드 파티 쿠키를 사용하지 않거나 선택적으로 끌 수 있도록 고를 수 있습니다. </strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "이 사이트는 점진적인 개선을 위해서 쿠키를 사용합니다. 이런 기능이 없는 서비스를 찾으실 수 도 있습니다만 편의성이 낮을 겁니다. 예를 들면, 사이트는 elementary OS에 이전에 지불했던 정보를 기억하지 못할 겁니다; 기본적으로 지불 요청을 다시 받게 되실 겁니다.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "행동 요소를 기록하고 잠재적인 위협을 분석하기 위한 쿠키를 저장합니다. 자세한 내용은 다음을 참조하세요",
     "CloudFlare Privacy & Security Policy": "CloudFlare 개인 정보 및 보안 정책",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "이미 사이트를 방문하셨기 때문에, 브라우저에 이미 설정된 쿠키를 관리하고자 하실 수 있습니다. 관련 지침에 대한 링크는 아래에서 확인해보세요.",
     "Transparency": "투명성",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "우리는 백도어를 소프트웨어에 포함시키지 않았으며 그러기 위한 요청을 받지도 않았습니다. 우리는 또한 국가 안보 편지, FISA 명령 또는 사용자 정보에 대한 다른 비밀 요청을 받은 적이 없습니다.",
-    "Privacy Policy ⋅ elementary": ""
+    "Privacy Policy ⋅ elementary": "개인 정보 보호 정책 ⋅ elementary"
 }
