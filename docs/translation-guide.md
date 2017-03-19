@@ -29,11 +29,8 @@ Once you've finished, use the "Upload translation" option on the same page that 
 
 ## Translating our Website {#translating-our-website}
 
-Our website is translated through [Transifex](https://www.transifex.com/projects/p/elementary-mvp/). In order to submit translations, you should:
+Our website is translated through [Weblate](https://l10n.elementary.io/projects/website/). In order to submit translations, you should have a [Weblate account](https://l10n.elementary.io/accounts/register/)
 
-* Have a [Transifex account](https://www.transifex.com/signup/)
-* Join our [translation team](https://www.transifex.com/projects/p/elementary-mvp/)
-
-For more information about Transifex, you can refer to their [documentation](http://docs.transifex.com/tutorials/txeditor).
+For more information about Weblate, you can refer to their [documentation](https://docs.weblate.org/en/latest/).
 
 As with our apps, we follow Ubuntu’s [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators).
