@@ -1,0 +1,81 @@
+{
+    "applications": [
+        {"icon":"icons/apps/48/system-software-install.svg","title":"AppCenter","url":"https://github.com/elementary/appcenter"},
+        {"icon":"icons/apps/48/multimedia-video-player.svg","title":"Audience","url":"https://launchpad.net/audience"},
+        {"icon":"icons/apps/48/accessories-calculator.svg","title":"Calculator","url":"https://launchpad.net/pantheon-calculator"},
+        {"icon":"icons/apps/48/accessories-camera.svg","title":"Camera","url":"https://launchpad.net/pantheon-camera"},
+        {"icon":"icons/apps/48/system-file-manager.svg","title":"Files","url":"https://launchpad.net/pantheon-files"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Gala","url":"https://launchpad.net/gala"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Greeter","url":"https://launchpad.net/pantheon-greeter"},
+        {"icon":"icons/apps/48/internet-mail.svg","title":"Mail","url":"https://launchpad.net/pantheon-mail"},
+        {"icon":"icons/apps/48/office-calendar.svg","title":"Maya","url":"https://launchpad.net/maya"},
+        {"icon":"icons/apps/48/multimedia-audio-player.svg","title":"Noise","url":"https://launchpad.net/noise"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Plank","url":"https://launchpad.net/plank"},
+        {"icon":"icons/apps/48/multimedia-photo-manager.svg","title":"Photos","url":"https://launchpad.net/photos"},
+        {"icon":"icons/apps/48/accessories-text-editor.svg","title":"Scratch","url":"https://launchpad.net/scratch"},
+        {"icon":"icons/apps/48/accessories-screenshot.svg","title":"Screenshot","url":"https://launchpad.net/screenshot-tool"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Slingshot","url":"https://launchpad.net/slingshot"},
+        {"icon":"icons/apps/48/preferences-desktop.svg","title":"Switchboard","url":"https://launchpad.net/switchboard"},
+        {"icon":"icons/apps/48/utilities-terminal.svg","title":"Terminal","url":"https://launchpad.net/terminal"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Wingpanel","url":"https://launchpad.net/wingpanel"}
+    ]
+,
+    "libraries": [
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Contractor","url":"https://launchpad.net/contractor"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Granite","url":"https://launchpad.net/granite"}
+    ]
+,
+    "indicators": [
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Accessibility","url":"https://launchpad.net/wingpanel-indicator-a11y"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Ayatana","url":"https://launchpad.net/wingpanel-indicator-ayatana"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Bluetooth","url":"https://launchpad.net/wingpanel-indicator-bluetooth"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Date & Time","url":"https://github.com/elementary/wingpanel-indicator-datetime"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Keyboard","url":"https://launchpad.net/wingpanel-indicator-keyboard"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Network","url":"https://launchpad.net/wingpanel-indicator-network"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Notifications","url":"https://launchpad.net/wingpanel-indicator-notifications"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Power","url":"https://launchpad.net/wingpanel-indicator-power"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Session","url":"https://github.com/elementary/wingpanel-indicator-session"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Sound","url":"https://launchpad.net/wingpanel-indicator-sound"}
+    ]
+,
+    "plugs": [
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"About","url":"https://launchpad.net/switchboard-plug-about"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Accessibility","url":"https://github.com/elementary/switchboard-plug-a11y"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Applications","url":"https://github.com/elementary/switchboard-plug-applications"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Bluetooth","url":"https://launchpad.net/switchboard-plug-bluetooth"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Date & Time","url":"https://launchpad.net/switchboard-plug-datetime"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Desktop","url":"https://github.com/elementary/switchboard-plug-pantheon-shell"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Display","url":"https://launchpad.net/switchboard-plug-display"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Keyboard","url":"https://launchpad.net/switchboard-plug-keyboard"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Locale","url":"https://launchpad.net/switchboard-plug-locale"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Mouse & Touchpad","url":"https://launchpad.net/switchboard-plug-mouse-touchpad"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Network","url":"https://launchpad.net/switchboard-plug-networking"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Notifications","url":"https://launchpad.net/switchboard-plug-notifications"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Online Accounts","url":"https://launchpad.net/switchboard-plug-onlineaccounts"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Parental Controls","url":"https://launchpad.net/switchboard-plug-parental-controls"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Power","url":"https://launchpad.net/switchboard-plug-power"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Printers","url":"https://launchpad.net/switchboard-plug-printers"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Security & Privacy","url":"https://launchpad.net/switchboard-plug-security-privacy"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Sharing","url":"https://launchpad.net/switchboard-plug-sharing"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Sound","url":"https://launchpad.net/switchboard-plug-sound"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"User Accounts","url":"https://launchpad.net/switchboard-plug-useraccounts"}
+    ]
+,
+    "utilities": [
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Captive Portal Assistant","url":"https://github.com/elementary/capnet-assist"},
+        {"icon":"icons/actions/48/view-refresh.svg","title":"Cerbere","url":"https://launchpad.net/cerbere"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Geoclue2 Agent","url":"https://github.com/elementary/pantheon-agent-geoclue2"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Polkit Agent","url":"https://github.com/elementary/pantheon-agent-polkit"}
+    ]
+,
+    "web": [
+        {"icon":"icons/mimes/48/text-html.svg","title":"Website","url":"https://github.com/elementary/website"}
+    ]
+,
+    "design": [
+        {"icon":"icons/categories/48/applications-graphics.svg","title":"Icons","url":"https://github.com/elementary/icons"},
+        {"icon":"icons/categories/48/applications-interfacedesign.svg","title":"Stylesheet","url":"https://github.com/elementary/stylesheet"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Brand","url":"https://github.com/elementary/brand"},
+        {"icon":"icons/apps/48/application-default-icon.svg","title":"Wallpapers","url":"https://github.com/elementary/wallpapers"}
+    ]
+}
