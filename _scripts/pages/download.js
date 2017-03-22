@@ -113,7 +113,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
                 .catch((err) => {
                     console.error('Error while making payment')
                     console.error(err)
-
+                    ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Failed)', 'Homepage', paymentAmount)
                     openDownloadOverlay() // Just in case. Don't interupt the flow
                     throw err // rethrow so it can be picked up by error tracking
                 })
@@ -147,7 +147,6 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
         function doStripePayment (amount, token) {
             var paymentHTTP, $amountTen
             $amountTen = $('#amount-ten')
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
             if ($amountTen.val() !== 0) {
                 $('#pay-what-you-want').remove()
                 $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
@@ -164,6 +163,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
                 '&email=' + encodeURIComponent(token.email) +
                 '&os=' + detectedOS
             )
+            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
         }
 
         // ACTION: .download-http.click: Track download over HTTP
