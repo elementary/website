@@ -111,10 +111,11 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
                 payment.checkout(paymentAmount, 'USD')
                 .then(([token]) => doStripePayment(paymentAmount, token))
                 .then(() => openDownloadOverlay())
+                .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
                 .catch((err) => {
                     console.error('Error while making payment')
                     console.error(err)
-                    ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Failed)', 'Homepage', paymentAmount)
+                    ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
                     openDownloadOverlay() // Just in case. Don't interupt the flow
                     throw err // rethrow so it can be picked up by error tracking
                 })
