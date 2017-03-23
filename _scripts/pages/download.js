@@ -7,8 +7,9 @@ import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
-import Payment from '~/widgets/payment'
+import { url } from '~/page'
 import config from '~/config'
+import Payment from '~/widgets/payment'
 
 Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, Payment]) => {
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
@@ -145,25 +146,26 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
 
         // ACTION: doStripePayment: Actually process the payment via Stripe
         function doStripePayment (amount, token) {
-            var paymentHTTP, $amountTen
-            $amountTen = $('#amount-ten')
+            var $amountTen = $('#amount-ten')
             if ($amountTen.val() !== 0) {
                 $('#pay-what-you-want').remove()
                 $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
                 $amountTen.each(amountSelect)
                 updateDownloadButton()
             }
-            paymentHTTP = new XMLHttpRequest()
-            paymentHTTP.open('POST', './api/payment.php', true)
-            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-            paymentHTTP.send(
-                'description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
-                '&amount=' + amount +
-                '&token=' + token.id +
-                '&email=' + encodeURIComponent(token.email) +
-                '&os=' + detectedOS
-            )
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
+
+            // Because jQuery "promises" are not A+ standard
+            return new Promise((resolve, reject) => {
+                $.post(`${url()}/api/payment`, {
+                    description: `${config.release.title} ${config.release.version}`,
+                    amount: amount,
+                    token: token.id,
+                    email: token.email,
+                    os: detectedOS
+                })
+                .done((res) => resolve(res))
+                .fail((xhr, status) => reject(new Error(status)))
+            })
         }
 
         // ACTION: .download-http.click: Track download over HTTP
