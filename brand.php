@@ -100,6 +100,19 @@
         <img src="<?=$sitewide['root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
         <p>This helps establish the product as part of the overall elementary community while reducing confusion that can arise from using the main logomark.</p>
     </section>
+    
+    <section id="hardware">
+        <h2>Hardware Distributors</h2>
+        <p>When a user sees or experiences elementary OS, we want to be sure they are seeing it as we intended. We also want to ensure they will have a consistent experience no matter how they access it, be it by downloading it from our website or using it pre-installed on a hardware product.</p>
+        <p>A modified version of elementary OS may be re-distributed pre-installed on a hardware product so long as it meets one or more of the following conditions:</p>
+        <ol>
+            <li>It is completely rebranded, containing none of the elementary brand marks,</li>
+            <li>It is clearly labeled as “based on,” modified, or derived from elementary OS, and/or</li>
+            <li>The modifications are approved by elementary.</li>
+        </ol>
+
+        <p>We understand that including drivers or other hardware enablement is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a> for clarification or direction.</p>
+    </section>
 
     <h2>Merchandise</h2>
     <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>
