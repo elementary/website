@@ -104,7 +104,7 @@
     <section id="hardware">
         <h2>Hardware Distributors</h2>
         <p>We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded it from our website or pre-installed on a hardware product.</p>
-        <p>The software components of elementary OS may be modified and redistributed according to the terms of the software&rsquo;s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:</p>
+        <p>The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:</p>
         <ol>
             <li>The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or</li>
             <li>The modifications are approved in writing by elementary.</li>
