@@ -16,70 +16,55 @@ In this book, we're going to talk about building apps using GTK+, Granite, and o
 
 Before we even think about writing code, you'll need a certain basic setup. This chapter will walk you through the process of getting set up. We will cover the following topics:
 
-* Creating an account in launchpad.net and importing an SSH key in Launchpad
-* Setting up the Bazaar revision control system
+* Creating an account on GitHub and importing an SSH key
+* Setting up the Git revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Freya or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
-## Launchpad {#launchpad}
+## GitHub {#github}
 
-Launchpad is a free online service provided by Canonical, the same people who brought you Ubuntu. It is used as a platform for hosting code, tracking milestones, tracking bugs, proposing designs, making translations, and more. Launchpad is a powerful resource, especially if you are a developer working with others. We're going to be using it for its various features throughout this book, so it's a good idea for you to sign up for an account. If you already have an account, feel free to move on to the next section.
+GitHub is an online platform for hosting code, reporting issues, tracking milestones, making releases, and more. If you're planning to publish your app through AppCenter, you'll need a GitHub account. If you already have an account, feel free to move on to the next section. Otherwise, [sign up for a GitHub account](https://github.com/join) and return when you're finished.
 
-To set up a Launchpad account:
+## Git {#git}
 
-1. Go to [Launchpad.net](https://launchpad.net). Click on **Log in/Register** in the top right corner of the page.
+To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](http://en.wikipedia.org/wiki/Revision_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
 
-2. Select **I am a new Ubuntu One user** on the left side.
+If you're ready, let's get you set up to use Git:
 
-3. Enter your information and click **Create account**.
-
-After you have verified your email your Launchpad account is ready, so let's move on to the next section. Remember, we're not going to go over all the little details in this book. We'll come back to Launchpad a few times later on to use specific features, but if you really want to learn everything there is to know about the website you should read their user guide. Onward!
-
-## Bazaar {#bazaar}
-
-elementary projects are hosted on Launchpad. To interact with the code on Launchpad, we use a distributed [revision control system](http://en.wikipedia.org/wiki/Revision_control) called Bazaar. This allows multiple developers to collaboratively develop and maintain the code while keeping track of each revision along the way.
-
-If you're ready, let's get you set up to use Bazaar:
-
-1. Open the Terminal. You'll be interacting with Bazaar through a simple terminal-based program called bzr.
-
-2. You'll need to install bzr. Simply type the following into the Terminal:
+1. Open the Terminal and install `git`
 
     ```bash
-    sudo apt install bzr
+    sudo apt install git-core
     ```
 
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import the public key in Launchpad. Type the following in terminal (note that `C` stands for comment and that you can alter its value as you wish, but it's a requirement for Launchpad):
+2. We need to inform `git` who we are so that when we upload code it is attributed correctly. Inform `git` of your identity with the following commands
+
 
     ```bash
-    sudo apt install openssh-client
-    ssh-keygen -C rsa-key-bzr -t rsa
+    git config --global user.name "Your Name"
+    git config --global user.email "You@email.com"
     ```
-
-4. When prompted, press Enter to accept the default file name for your key.
-
-5. Next, enter a password to protect your SSH key. You’ll be asked to enter it again, just to make sure you didn’t make any typos. You'll need to enter this password any time you try to push code to launchpad so don't forget it! Optionally, you can just press enter and use no password, but this is obviously less secure.
-
-6. Now, we're going to tell Launchpad about your SSH key. Open your SSH key with the following command, then copy the text from the file that opens in Scratch:
+    
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
-    scratch-text-editor ~/.ssh/id_rsa.pub
+    ssh-keygen -t rsa
     ```
+4. When prompted, press <kbd>Enter</kbd> to accept the default file name for your key. You can choose to protect your key with a password or press <kbd>Enter</kbd> again to use no password when pushing code.
 
-7. Visit [your SSH keys page](https://launchpad.net/people/+me/+editsshkeys). Paste the text in the textbox and click **Import public key**.
-
-8. Now you can connect bzr to your Launchpad account. You'll need your launchpad id, which you can look up at [your launchpad page](https://launchpad.net/people/+me).
+5. Now we're going to import your public key to GitHub. View your public SSH key with the following command, then copy the text that appears
 
     ```bash
-    bzr launchpad-login your-launchpad-id
+    cat ~/.ssh/id_rsa.pub
     ```
+6. Visit [your SSH keys page](https://github.com/settings/keys) and click the green button in the upper right-hand corner that says "New SSH key". Paste your key in the "Key" box and give it a title.
 
-Done! Now you can download source code hosted on Launchpad and upload your own code. We'll revisit using bzr in a minute, but for now you're logged in. For a more in-depth introduction to bzr, you can also check the complete [Bazaar User Guide](http://doc.bazaar.canonical.com/latest/en/user-guide) provided by Canonical.
+We're all done! Now you can download source code hosted on GitHub and upload your own code. We'll revisit using `git` in a bit, but for now you're set up. For a more in-depth intro to Git, we recommend [Codecademy's course on Git].(https://www.codecademy.com/learn/learn-git)
 
 ## Developer "SDK" {#developer-sdk}
 
-At the time of this writing, elementary doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
+At the time of this writing, elementary OS doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
 
 ### Scratch {#scratch}
 
@@ -91,7 +76,7 @@ The first piece of our simple "SDK" is the code editor Scratch. This comes by de
 
 ![](images/icons/apps/128/utilities-terminal.svg)
 
-We’re going to use Terminal in order to compile our code, push revisions to Bazaar (bzr), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
+We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
 
 Open Terminal and issue the following command:
 
@@ -113,7 +98,7 @@ And with that, we're ready to dive into development! Let's move on!
 
 # Hello World {#hello-world}
 
-The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a bzr branch. Let’s begin.
+The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a Git branch. Let’s begin.
 
 ## Setting Up {#setting-up}
 Apps on elementary OS are organized into standardized directories contained in your project's "root" folder. Let's create a couple of these to get started:
@@ -171,20 +156,25 @@ valac --pkg gtk+-3.0 gtk-hello.vala
 
 Did it work? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
-## Pushing to Launchpad {#pushing-to-launchpad}
+## Pushing to GitHub {#pushing-to-github}
 
-After we do anything significant, we must remember to push our code. This is especially important in collaborative development where not pushing your code soon enough can lead to unintentional forks and pushing too much code at once can make it hard to track down any bugs introduced by your code. So let's take a minute to revisit our friend `bzr`:
+After we do anything significant, we must remember to push our code. This is especially important in collaborative development where not pushing your code soon enough can lead to unintentional forks and pushing too much code at once can make it hard to track down any bugs introduced by your code.
 
-Open Terminal and make sure you're in your project's root directory "~Projects/gtk-hello"
+1. First we need to create a new repository on GitHub. Visit [the new repository page](https://github.com/new) and create a new repository for your code.
+
+2. Open Terminal and make sure you're in your project's root directory "~Projects/gtk-hello", then issue the following commands
 
 ```bash
-bzr init
-bzr add src/gtk-hello.vala
-bzr commit -m "Create initial structure. Create window with button."
-bzr push lp:~/+junk/gtk-hello
+git init
+git add src/gtk-hello.vala
+git commit -m "Create initial structure. Create window with button."
+git remote add origin git@github.com:yourusername/yourrepositoryname.git
+git push -u origin master
 ```
 
-With these commands, we've told `bzr` to track this folder as a branch, that we'd like to track revisions on the file "gtk-hello.vala", we've committed our first revision and explained what we did in the revision, and then we've told `bzr` to push your code to Launchpad in your [junk folder](https://code.launchpad.net/people/+me/).
+Remember to replace `yourusername` with your GitHub username and `yourrepositoryname` with the name of the new repository you created.
+
+With these commands, we've told `git` to track revisions in this folder, that we'd like to track revisions on the file "gtk-hello.vala" specifically, we've committed our first revision and explained what we did in the revision, and then we've told `git` to push your code to GitHub.
 
 ## Victory! {#victory}
 
@@ -193,7 +183,7 @@ Let's recap what we've learned to do in this first section:
 * We created a new project containing a "src" folder
 * We created our main vala file and inside it we created a new `Gtk.Window` and `Gtk.Button`
 * We built and ran our app to make sure that everything worked properly
-* Finally, we commited our first revision and pushed code to Launchpad
+* Finally, we commited our first revision and pushed code to GitHub
 
 Feel free to play around with this example. Make the window a different size, set different margins, make the button say other things. When you're comfortable with what you've learned, go on to the next section.
 
@@ -217,7 +207,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
 
-        /* Copyright 2013 YourName
+        /* Copyright 2017 YourName
         *
         * This file is part of Hello Again.
         *
@@ -248,10 +238,11 @@ To create our first real app, we're going to need all the old stuff that we used
 
 6. Build "hello-again.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
-7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, push your first revision with `bzr`:
+7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
 
     ```bash
-    bzr push lp:~/+junk/hello-again
+    git remote add origin git@github.com:yourusername/yourrepositoryname.git
+    git push -u origin master
     ```
 
 Everything working as expected? Good. Now, let's get our app ready for other people to use.
@@ -280,12 +271,12 @@ Every app comes with a .desktop file. This file contains all the information nee
 
     The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
 
-4. Finally, let's add this file to bzr and commit a revision:
+4. Finally, let's add this file to `git` and commit a revision:
 
     ```bash
-    bzr add data/hello.desktop
-    bzr commit -m "Add a .desktop file"
-    bzr push
+    git add data/hello.desktop
+    git commit -am "Add a .desktop file"
+    git push
     ```
 
 ## Legal Stuff {#legal-stuff}
@@ -308,7 +299,7 @@ The COPYING file contains a copy of the license that your code is released under
 
 ## Mark Your Progress {#mark-your-progress}
 
-Did you remember to add these files to bzr and commit a revision? Each time we add a new file or make a significant change it's a good idea to commit a new revision and push to Launchpad. Keep in mind that this acts as a backup system as well; when we push our work to Launchpad, we know it's safe and we can always revert to a known good revision if we mess up later.
+Did you remember to add these files to `git` and commit a revision? Each time we add a new file or make a significant change it's a good idea to commit a new revision and push to GitHub. Keep in mind that this acts as a backup system as well; when we push our work to GitHub, we know it's safe and we can always revert to a known good revision if we mess up later.
 
 Now that we've got all these swanky files laying around, we need a way to tell the computer what to do with them. Ready for the next chapter? Let's do this!
 
@@ -375,7 +366,7 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
         # install our .desktop file so the Applications menu will see it
         install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/hello.desktop DESTINATION ${DATADIR}/applications/)
 
-And you're done! Your app now has a real build system. Don't forget to add these files to bzr and push to launchpad. This is a major milestone in your app's development!
+And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
 
 ## Building and Installing with CMake {#building-and-installing-with-cmake}
 
@@ -398,7 +389,7 @@ Now that we have a build system, let's try it out:
     sudo make install
     ```
 
-If all went well, you should now be able to open your app from the Applications menu and pin it to the Dock.  If you were about to add the "build" folder to your bzr branch and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
+If all went well, you should now be able to open your app from the Applications menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
@@ -411,7 +402,7 @@ Let's review all we've learned to do:
 * Create a .desktop file that tells the computer how to display our app in the Applications menu and the Dock
 * Set up a CMake build system that contains all the rules for building our app and installing it cleanly
 
-That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to branch your project from launchpad and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
+That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
 
 # Adding Translations {#Adding-Translations}
 Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
@@ -448,19 +439,19 @@ See the difference? We just added `_()` around the string! Well, that was easy!
     make pot
     ```
 
-5. Don't forget to add this new directory and it's contents to bzr
+5. Don't forget to add this new directory and it's contents to git
 
     ```bash
-    bzr add po/
-    bzr commit -m "Add translation files"
-    bzr push
+    git add po/
+    git commit -am "Add translation files"
+    git push
     ```
 
 That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
 
 # Packaging {#packaging}
 
-While having a build system is great, our app still isn't ready for regular users. We want to make sure our app can be built and installed without having to use Terminal. What we need to do is package our app. To do this, we use the Debian packaging format (.deb) on elementary OS. This section will teach you how to package your app as a .deb file, hosted in a Personal Package Archive (PPA) on Launchpad. This will allow normal people to install your app and even get updates for it in Update Manager.
+While having a build system is great, our app still isn't ready for regular users. We want to make sure our app can be built and installed without having to use Terminal. What we need to do is package our app. To do this, we use the Debian packaging format (.deb) on elementary OS. This section will teach you how to package your app as a .deb file, which is required to publish apps in AppCenter. This will allow normal people to install your app and even get updates for it when you publish them.
 
 ## Practice Makes Perfect {#practice-makes-perfect}
 
@@ -472,16 +463,16 @@ If you want to get really good really fast, you're going to want to practice. Re
 4. Now set up the CMake build system.
 5. Test everything!
 
-Did you commit and push to launchpad for each step? Keep up these good habits and let's get to packaging this app!
+Did you commit and push to GitHub for each step? Keep up these good habits and let's get to packaging this app!
 
 ## Debian Control {#debian-control}
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with bzr:
+1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
 
     ```bash
-    bzr branch lp:~elementary-apps/+junk/debian-template
+    git clone git@github.com:elementary/debian-template.git
     ```
 
 2. Copy the "debian" folder from that branch into your "hello-packaging" folder.
@@ -517,7 +508,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
         Format: http://dep.debian.net/deps/dep5
         Upstream-Name: hello-packaging
-        Source: https://code.launchpad.net/~your-launchpad-id/+junk/hello-packaging
+        Source: https://github.com/yourusername/yourrepositoryname
 
         Files: src/* data/* cmake/* debian/*
         Copyright: 2013 Your Name <you@emailaddress.com>
@@ -525,29 +516,9 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](http://www.debian.org/doc/debian-policy/).
 
-## Launchpad Recipes {#launchpad-recipes}
-
-Now that we have our "debian" folder in order, it's time to go to launchpad and create a recipe: instructions what code to build, how often to build it, and where to put the resulting packages.
-
-1. [Click this link](https://code.launchpad.net/people/+me/+junk/hello-packaging/+new-recipe) or go to Launchpad, find your hello-packaging branch, then select **Create packaging recipe**.
-
-2. Read through the options available to you. You can go ahead and keep the defaults for Name, Description (it's blank), Owner, Daily builds, and PPA but you can also customize a bit if you'd like.
-
-3. When you get down to a set of checkboxes with the header "Default distribution series", make sure you select "Trusty". elementary OS Freya shares it's core with Ubuntu Trusty, so packages built on Trusty will also work on Freya.
-
-4. For recipe text, we're going to change it ever so slightly to conform better with the official Debian rules. Change out the first line for this one:
-
-        # bzr-builder format 0.3 deb-version {debupstream}+r{revno}-0
-
-    Notice that this is ever so slightly different from the default line which includes `{debupstream}-0~{revno}` instead of `{debupstream}+r{revno}-0`.
-
-5. When you're happy with the options you've chosen, select **Create Recipe**.
-
-Now that you've created a recipe, you only have to wait until Launchpad finishes the build! If everything goes as planned, your new PPA will contain a packaged app which other people can install and run with ease. Additionally, anyone using your PPA will be able to get updates for your app if you upload a new version. We'll talk more about how to do that later.
-
 # Creating Layouts {#creating-layouts}
 
-Now that you know how to code, build, and distribute an app using Vala, Gtk, CMake, and Launchpad PPAs, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
+Now that you know how to code, build, and package an app using Vala, Gtk, CMake, and Debian packaging, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
 
 ## Widgets as Subclasses of Other Widgets {#widgets-as-subclasses-of-other-widgets}
 
@@ -557,7 +528,7 @@ If you want to understand more about these widgets and the parts of Gtk that the
 
 ## Gtk.Grid {#gtk-grid}
 
-Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with CMake, push it to Launchpad, and build a PPA in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
+Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with CMake, push it to GitHub, and set up Debian Packaging in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
 
 Just like when we add a Button or Label, we need to create our `Gtk.Grid`. As always, don’t copy and paste! Practice makes perfect. We create a new Gtk.Grid like this:
 
