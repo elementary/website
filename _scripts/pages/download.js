@@ -152,7 +152,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
             if ($amountTen.val() !== 0) {
                 $('#pay-what-you-want').remove()
                 $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
-                $amountTen.each(amountSelect)
+                currentButton = 'amount-ten'
                 updateDownloadButton()
             }
 
