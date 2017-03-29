@@ -100,6 +100,23 @@
         <img src="<?=$sitewide['root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
         <p>This helps establish the product as part of the overall elementary community while reducing confusion that can arise from using the main logomark.</p>
     </section>
+    
+    <section id="hardware">
+        <h2>Hardware Distributors</h2>
+        <p>We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.</p>
+        <p>The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:</p>
+        <ol>
+            <li>The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or</li>
+            <li>The modifications are approved in writing by elementary.</li>
+        </ol>
+        <p>We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a> for clarification or direction.</p>
+        <p>If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:</p>
+        <ol>
+            <li>Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.</li>
+            <li>Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.</li>
+            <li>Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.</li>
+        </ol>
+    </section>
 
     <h2>Merchandise</h2>
     <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>

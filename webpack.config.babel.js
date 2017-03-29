@@ -55,7 +55,7 @@ export default {
     entry: scriptFiles,
     output: {
         filename: '[name].js',
-        path: './scripts',
+        path: path.resolve(__dirname, 'scripts'),
         publicPath: '/scripts',
         sourceMapFilename: '[name].map.js'
     },
