@@ -1,7 +1,7 @@
 <?php
 
 /**
- * api/config.json.php
+ * api/config.php
  * Live-generated JSON configuration for use in client side javascript
  */
 

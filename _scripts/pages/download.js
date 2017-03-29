@@ -14,9 +14,13 @@ import Stripe from '~/lib/stripe'
 import streamSaver from '~/lib/streamsaver'
 import WebTorrent from '~/lib/webtorrent'
 
+import Payment from '~/widgets/payment'
 import config from '~/config'
 
-Promise.all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent, modal]).then(([config, ga, $, StripeCheckout, streams, streamSaver, WebTorrent]) => {
+
+Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorrent, modal]).then(([config, ga, $, Payment, streams, streamSaver, WebTorrent]) => {
+    const payment = new Payment(`${config.release.title} ${config.release.version}`)
+
     $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
@@ -111,40 +115,18 @@ Promise.all([config, analytics, jQuery, Stripe, streams, streamSaver, WebTorrent
             } else {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
-                doStripeCheckout(paymentAmount)
+                payment.checkout(paymentAmount, 'USD')
+                .then(([token]) => doStripePayment(paymentAmount, token))
+                .then(() => openDownloadOverlay())
+                .catch((err) => {
+                    console.error('Error while making payment')
+                    console.error(err)
+
+                    openDownloadOverlay() // Just in case. Don't interupt the flow
+                    throw err // rethrow so it can be picked up by error tracking
+                })
             }
         })
-
-        // UTILITY: detectStripeLanguage: Detect the language and use the Stripe translation if possible.
-        function detectStripeLanguage () {
-            var stripeLanguages = ['da', 'de', 'en', 'es', 'fi', 'fr', 'it', 'ja', 'nl', 'no', 'sv', 'zh']
-            var languageCode = $('html').prop('lang')
-            // Stripe supports simplified chinese
-            if (/^zh_CN/.test(languageCode)) {
-                return 'zh'
-            }
-            if (stripeLanguages.indexOf(languageCode) !== -1) {
-                return languageCode
-            }
-        }
-
-        // RETURN: doStripeCheckout: Open the Stripe modal to process payment.
-        function doStripeCheckout (amount) {
-            StripeCheckout.open({
-                key: config.keys.stripe,
-                token: function (token) {
-                    console.log(JSON.parse(JSON.stringify(token)))
-                    doStripePayment(amount, token)
-                    openDownloadOverlay()
-                },
-                name: 'elementary LLC.',
-                description: config.release.title + ' ' + config.release.version,
-                bitcoin: true,
-                alipay: false,
-                locale: detectStripeLanguage() || 'auto',
-                amount: amount
-            })
-        }
 
         // UTILITY: detectOS: Detect the OS
         function detectOS () {

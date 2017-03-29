@@ -26,10 +26,11 @@ try {
 }
 
 if (
-    ($res['store'] !== 148324) ||
-    !isset($res['type']) ||
-    !isset($res['data']['shipment']['service']) ||
-    !isset($res['data']['order']['external_id'])
+    (!isset($res['store']) ||
+     !isset($res['type']) ||
+     !isset($res['data']['shipment']['service']) ||
+     !isset($res['data']['order']['external_id']) ||
+     $res['store'] !== 148324)
 ) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Incomplete data';

@@ -31,6 +31,7 @@ if (!isset($page['scripts'])) $page['scripts'] = array();
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
+
 ?>
 
 <!doctype html>
@@ -143,23 +144,17 @@ $l10n->begin_html_translation();
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://plus.google.com/+elementary" target="_blank" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://medium.com/elementaryos" target="_blank" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></i></a></li>
-                    <li><a href="https://twitter.com/elementary" target="_blank" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
+                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="overlay">
-            <div class="overlay__content toast">
-                <div class="toast__close"><i class="fa fa-close"></i></div>
-                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
-                <a href="https://igg.me/at/appcenter" class="toast__button">Back Us</a>
-            </div>
-        </div>
+        <?php require __DIR__ . '/event.php'; ?>
 
         <div id="content-container">
 
