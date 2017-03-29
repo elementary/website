@@ -37,6 +37,8 @@ if (isset($_POST['token'])) {
         // Don't use log_echo because we don't want finance stuff echoing.
         error_log($e);
         $sentry->captureMessage($e);
+
+        http_response_code(500);
         echo 'An error occurred.';
         die();
     }
