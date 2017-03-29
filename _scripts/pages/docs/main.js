@@ -66,13 +66,6 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
             $('<li><a href="https://github.com/elementary/website/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions)
             $actions.appendTo($sidebar)
 
-            var secondUp = window.location.pathname.split('/')[1]
-            var transifexTitle = window.location.pathname.split('/docs/')[1].split('#')[0].replace('/', '_')
-            if (secondUp !== 'docs' && secondUp !== 'en') {
-                $('<li><a href="https://www.transifex.com/elementary/elementary-mvp/translate/#' + secondUp + '/docs_' + transifexTitle + '" id="translate"><i class="fa fa-globe"></i> Translate</a></li>').appendTo($actions)
-                $actions.appendTo($sidebar)
-            }
-
             $sidebar.prependTo('#content-container')
         }
 
