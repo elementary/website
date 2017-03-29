@@ -23,6 +23,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
         // ACTION: amountSelect: Track the current and previous amounts selected.
         var amountSelect = function (e) {
             var targetID = $(e.target).attr('id') // avoids null values vs native js
+            console.log('Setting payment target to #' + targetID)
             if (currentButton !== targetID) previousButton = currentButton
             currentButton = targetID
 
