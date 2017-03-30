@@ -205,25 +205,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 2. Now go into "hello-again" and create our directory structure including the "src" folder.
 
-3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now, just copy and paste this, changing out `YourName` for your actual name:
-
-        /* Copyright 2017 YourName
-        *
-        * This file is part of Hello Again.
-        *
-        * Hello Again is free software: you can redistribute it
-        * and/or modify it under the terms of the GNU General Public License as
-        * published by the Free Software Foundation, either version 3 of the
-        * License, or (at your option) any later version.
-        *
-        * Hello Again is distributed in the hope that it will be
-        * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
-        * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-        * Public License for more details.
-        *
-        * You should have received a copy of the GNU General Public License along
-        * with Hello Again. If not, see http://www.gnu.org/licenses/.
-        */
+3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
 4. Now, let's create our main function, a `Gtk.Window`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
