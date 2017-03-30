@@ -60,7 +60,7 @@ If you're ready, let's get you set up to use Git:
     ```
 6. Visit [your SSH keys page](https://github.com/settings/keys) and click the green button in the upper right-hand corner that says "New SSH key". Paste your key in the "Key" box and give it a title.
 
-We're all done! Now you can download source code hosted on GitHub and upload your own code. We'll revisit using `git` in a bit, but for now you're set up. For a more in-depth intro to Git, we recommend [Codecademy's course on Git].(https://www.codecademy.com/learn/learn-git)
+We're all done! Now you can download source code hosted on GitHub and upload your own code. We'll revisit using `git` in a bit, but for now you're set up. For a more in-depth intro to Git, we recommend [Codecademy's course on Git](https://www.codecademy.com/learn/learn-git).
 
 ## Developer "SDK" {#developer-sdk}
 
