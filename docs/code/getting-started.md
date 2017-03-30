@@ -32,13 +32,13 @@ To download and upload to GitHub, you'll need the Terminal program `git`. Git is
 
 If you're ready, let's get you set up to use Git:
 
-1. Open the Terminal and install `git`
+1. Open the Terminal and install Git
 
     ```bash
     sudo apt install git-core
     ```
 
-2. We need to inform `git` who we are so that when we upload code it is attributed correctly. Inform `git` of your identity with the following commands
+2. We need to inform Git who we are so that when we upload code it is attributed correctly. Inform Git of your identity with the following commands
 
 
     ```bash
