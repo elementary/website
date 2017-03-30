@@ -35,7 +35,7 @@ If you're ready, let's get you set up to use Git:
 1. Open the Terminal and install Git
 
     ```bash
-    sudo apt install git-core
+    sudo apt install git
     ```
 
 2. We need to inform Git who we are so that when we upload code it is attributed correctly. Inform Git of your identity with the following commands
