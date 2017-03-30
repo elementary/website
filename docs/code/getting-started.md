@@ -702,7 +702,7 @@ We now know how to send a notification, but what if you need to update it with n
 Let's make the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and add it to the grid:
 
 	var replace_button = new Gtk.Button.with_label (_("Replace"));
-	grid.add (update_button);
+	grid.add (replace_button);
 
 	replace_button.clicked.connect (() => {
 		var notification = new Notification (_("Hello Again"));
