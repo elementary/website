@@ -261,6 +261,37 @@ Every app comes with a .desktop file. This file contains all the information nee
     git push
     ```
 
+## AppData.xml
+
+Every app also comes with an .appdata.xml file. This file contains all the information needed to list your app in AppCenter.
+
+1. In your data folder, create a new file called "com.github.yourusername.yourrepositoryname.appdata.xml". Just like with the .desktop file, we use RDNN to avoid file naming collisions.
+
+2. Type the following into your .appdata.xml file
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!-- Copyright 2017 Your Name <you@email.com> -->
+        <component type="desktop">
+          <id>com.github.yourusername.yourrepositoryname.desktop</id>
+          <metadata_license>CC0</metadata_license>
+          <name>Your App's Name</name>
+          <summary>A Catchy Tagline</summary>
+          <description>
+            <p>A quick summary of your app's main selling points and features. Just a couple sentences is best.</p>
+          </description>
+        </component>
+        
+These are all the mandatory fields for displaying your app in AppCenter. There are plenty of other optional fields that you can read about [here](https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html).
+
+There are also some special custom fields for AppCenter to further brand your listing. Specifically, you can set a background color and a text color for your app's header and banner. You can do so by adding the following keys inside the `component` tag:
+
+      <custom>
+         <value key="x-appcenter-color-primary">#603461</value>
+         <value key="x-appcenter-color-primary-text">#fff</value>
+      </custom>
+
+You can specificy colors here in either Hexidecimal or RGB. The background color will automatically be given a slight gradient in your app's banner.
+
 ## Legal Stuff {#legal-stuff}
 
 Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need two new files in our project's root folder: AUTHORS and COPYING.
@@ -347,6 +378,9 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
 
         # install our .desktop file so the Applications menu will see it
         install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
+        
+        # install our .appdata.xml file so AppCenter will see it
+        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.appdata.xml DESTINATION ${DATADIR}/metainfo/)
 
 And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
 
