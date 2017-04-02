@@ -235,9 +235,9 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in scratch and save it in the "data" folder as "hello.desktop".
+2. Create a new file in scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
 
-3. Type the following into "hello.desktop". Like before, try to guess what each line does.
+3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
         [Desktop Entry]
         Name=Hello Again
@@ -256,7 +256,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 4. Finally, let's add this file to `git` and commit a revision:
 
     ```bash
-    git add data/hello.desktop
+    git add data/com.github.yourusername.yourrepositoryname.desktop
     git commit -am "Add a .desktop file"
     git push
     ```
@@ -346,7 +346,7 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
         install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
         # install our .desktop file so the Applications menu will see it
-        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/hello.desktop DESTINATION ${DATADIR}/applications/)
+        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
 
 And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
 
@@ -381,7 +381,7 @@ Let's review all we've learned to do:
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
 * License our app under the GPL and declare our app's authors in a standardized manner
-* Create a .desktop file that tells the computer how to display our app in the Applications menu and the Dock
+* Create a .desktop file using RDNN that tells the computer how to display our app in the Applications menu and the Dock
 * Set up a CMake build system that contains all the rules for building our app and installing it cleanly
 
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
@@ -626,9 +626,9 @@ By now you've probably already seen the white notification bubbles that appear o
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
 3. Re-create the `CMake` folder and `CMakeFiles.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
-4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, name it ```notify.app.desktop``` as ```notify.app ``` will be your app's ID. Since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
+4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
-When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed.
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Gtk.Application {#gtk-application}
 In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
@@ -638,7 +638,7 @@ Now that you know what a `Gtk.Application` is, let's create one:
 	public class MyApp : Gtk.Application {
 
 		public MyApp () {
-			Object (application_id: "notify.app",
+			Object (application_id: "com.github.yourusername.yourrepositoryname",
 			flags: ApplicationFlags.FLAGS_NONE);
 		}
 
@@ -711,7 +711,7 @@ Let's make the replace button. This button will replace the current notification
 		var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
 		notification.set_icon (image.gicon);
 
-		this.send_notification ("notify.app", notification);
+		this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
 	});
 <!--
 Now, let's do the withdraw button:
