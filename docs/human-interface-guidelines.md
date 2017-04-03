@@ -165,9 +165,9 @@ See also: [Never Use a Warning When you Mean Undo](http://www.alistapart.com/art
 
 ## Always Saved {#always-saved}
 
-Users should feel confident when using elementary; they should know that everything they see is saved and up to date.
+Users should feel confident when using elementary OS; they should know that everything they see is saved and up to date.
 
-Apps in elementary should operate around an always-saved state. This means that changes the user makes are instantly applied and visible and that making the user manually save things is a legacy or specialized behavior.
+Apps in elementary OS should operate around an always-saved state. This means that changes the user makes are instantly applied and visible and that making the user manually save things is a legacy or specialized behavior.
 
 For example, a Song Info dialog should update the track information instantly without a user having to press a save button, user preferences should be applied as soon as the user manipulates the relevant widget, and closing an app should mean that reopening it will return to where the user left off.
 
@@ -196,7 +196,7 @@ See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/)
 
 # Desktop Integration {#desktop-integration}
 
-An important advantage that developers have when choosing the elementary OS platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary. This section will cover things like:
+An important advantage that developers have when choosing the elementary OS platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary OS. This section will cover things like:
 
 * **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. This section details how to create these launchers.
 
@@ -206,7 +206,7 @@ An important advantage that developers have when choosing the elementary OS plat
 
 * **Using System Indicators**. elementary OS uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
 
-* **Integrating with the Dock**. elementary ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
+* **Integrating with the Dock**. elementary OS ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
 
 ## App Launchers {#app-launchers}
 
@@ -889,7 +889,7 @@ Below are some "do and don't" examples to consider when creating icons for your 
 
 Although elementary OS primarily uses graphics as a means of interaction, text is also widely used for things like button labels, tooltips, menu items, dialog messages, and more. Using text consistently and clearly both in terminology and format is an extremely important part of designing your app and helps add to the overall cohesiveness of the elementary OS platform.
 
-* **Writing Style**. Keep your text understandable and consistent with the rest of elementary.
+* **Writing Style**. Keep your text understandable and consistent with the rest of elementary OS.
 * **Language**. Keep other languages in mind.
 * **Capitalization**. What, when, and where to capitalize.
 * **Punctuation**. Avoid common mistakes and follow convention.
