@@ -287,7 +287,7 @@ There are also some special custom fields for AppCenter to further brand your li
 
       <custom>
          <value key="x-appcenter-color-primary">#603461</value>
-         <value key="x-appcenter-color-primary-text">#fff</value>
+         <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
       </custom>
 
 You can specificy colors here in either Hexidecimal or RGB. The background color will automatically be given a slight gradient in your app's banner.
