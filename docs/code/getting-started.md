@@ -277,7 +277,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
           <name>Your App's Name</name>
           <summary>A Catchy Tagline</summary>
           <description>
-            <p>A quick summary of your app's main selling points and features. Just a couple sentences is best.</p>
+            <p>A quick summary of your app's main selling points and features. Just a couple sentences per paragraph is best.</p>
           </description>
         </component>
         
