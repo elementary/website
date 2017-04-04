@@ -261,7 +261,7 @@ Every app comes with a .desktop file. This file contains all the information nee
     git push
     ```
 
-## AppData.xml
+## AppData.xml {#appdata}
 
 Every app also comes with an .appdata.xml file. This file contains all the information needed to list your app in AppCenter.
 
