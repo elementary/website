@@ -29,7 +29,7 @@ Before we get into all the things that make up elementary OS apps, there is a cl
 2. **Design is not just, like, your opinion, man.** Design is testable. One design will meet a specific goal better than another design. Consider different types of bicycles. A folding bicycle has a different set of design goals than a mountain bicycle. Things like weight, size, and tire tread are important factors in helping the intended user reach their goals. Because we understand that design is about solving specific problems, we must also understand that we can objectively compare the effectiveness of two designs at solving those problems.
 
 ------------------------------------------
-1. [Design Is Not Veneer, Aral Balkan](http://aralbalkan.com/notes/design-is-not-veneer/)
+1. [Design Is Not Veneer, Aral Balkan](https://ar.al/notes/design-is-not-veneer/)
 2. [Design is Not Subjective, Jeff Law](http://www.jefflaw.ca/design-is-not-subjective/)
 
 ## Concision {#concision}
