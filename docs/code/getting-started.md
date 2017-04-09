@@ -288,9 +288,12 @@ There are also some special custom fields for AppCenter to further brand your li
       <custom>
          <value key="x-appcenter-color-primary">#603461</value>
          <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+         <value key="x-appcenter-suggested-price">5</value>
       </custom>
 
 You can specificy colors here in either Hexidecimal or RGB. The background color will automatically be given a slight gradient in your app's banner.
+
+You can also specify a suggested price in whole USD. Remember though that AppCenter is a pay-what-you-want store. This is not a price floor. Users will still be able to choose any price they like, including 0.
 
 ## Legal Stuff {#legal-stuff}
 
