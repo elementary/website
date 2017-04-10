@@ -44,13 +44,17 @@
             <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
         </div>
     </div>
-    <div class="grid">
-        <div class="two-thirds">
-            <h2>Indiegogo</h2>
-            <p class="text-center">We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
-            <a class="button flat" href="https://igg.me/at/appcenter" target="_blank" rel="noopener">Back AppCenter</a>
+
+    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
+        <div class="grid">
+            <div class="two-thirds">
+                <h2>Indiegogo</h2>
+                <p class="text-center">We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
+                <a class="button flat" href="https://igg.me/at/appcenter" target="_blank" rel="noopener">Back AppCenter</a>
+            </div>
         </div>
-    </div>
+    <?php } ?>
+
     <section class="grid">
         <div class="third">
             <img alt="Patreon" src="images/get-involved/patreon.svg">
@@ -73,6 +77,7 @@
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
         </div>
     </section>
+
     <div class="grid">
         <div class="two-thirds">
             <img alt="Bountysource" src="images/open-source/bountysource.svg">
@@ -94,11 +99,11 @@
         <div class="half">
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
             <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="/docs/translation-guide#translating-applications" class="read-more">Learn More</a></p>
-            <p>Our website is also openly translated using an online platform called Transifex. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
+            <p>Our website is also openly translated using an online platform called Weblate. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank" rel="noopener">Translate elementary OS</a>
-                <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank" rel="noopener">Translate This Website</a>
+                <a class="button flat" href="https://l10n.elementary.io/projects/website/" target="_blank" rel="noopener">Translate This Website</a>
             </div>
         </div>
         <div class="half">
