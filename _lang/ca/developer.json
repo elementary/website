@@ -1,7 +1,7 @@
 {
     "Developer hero image": "Imatge de l'heroi desenvolupador",
     "Develop Your Ideas Into Code": "Desenvolupeu les vostres idees en codi",
-    "Learn to design, develop, and publish apps for elementary OS": "Apreneu a dissenyar, desenvolupar i publicar aplicacions per l'elementary OS ",
+    "Learn to design, develop, and publish apps for elementary OS": "Apreneu a dissenyar, desenvolupar i publicar aplicacions per a l'elementary OS",
     "Get Started": "Primers Passos",
     "Documentation": "Documentació",
     "Get a basic app running, built, and ready for distribution with our Getting Started guide.": "Aconseguiu una aplicació bàsica funcional, empaquetada i llesta per distribuir amb la nostra guia «Primers Passos».",
@@ -10,7 +10,7 @@
     "Reference": "Referències",
     "Get more info about code style, reporting issues, and proposing design changes.": "Obteniu més informació sobre l'estil del codi, notificació de problemes i proposta de canvis de disseny.",
     "Build for": "Construïu per l'",
-    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki porta una nova API per al Wingpanel, compatibilitat amb l'API del Launcher al Slingshot, ginys nous com l'AlertView, icones i classes d'estil CSS noves, i molt més. Construïu aplicacions amb característiques completes amb més facilitat que mai amb Gtk 3.18 i Vala 0.32, executats sobre Linux 4.4.",
+    "Loki brings a new API for Wingpanel, Launcher API support in Slingshot, new widgets like AlertView, new CSS style classes and icons, and tons more. Build feature-full apps easier than ever with Gtk 3.18 &amp; Vala 0.32, running atop Linux 4.4": "Loki porta una nova API per al Wingpanel, compatibilitat amb l'API del Launcher al Slingshot, ginys nous com l'AlertView, icones i classes d'estil CSS noves, i molt més. Construïu aplicacions amb característiques completes amb més facilitat que mai amb Gtk 3.18 i Vala 0.32, executats sobre Linux 4.4",
     "Contractor": "Contractor",
     "A desktop-wide extension service that allows apps to use functionality exposed by other apps — without prior coordination.": "Un servei d'extensions a nivell d'escriptori que permet a les aplicacions utilitzar la funcionalitat exposada per altres aplicacions, sense coordinació prèvia.",
     "HIG for Contractor": "DIH del Contractor",
