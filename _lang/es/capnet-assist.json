@@ -1,8 +1,0 @@
-{
-    "You're connected!": "¡Se ha establecido una conexión!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Parece que su conexión a Internet funciona. Puede cerrar esta ventana con seguridad y seguir utilizando su dispositivo.",
-    "Why is this window appearing?": "¿Por qué ha aparecido esta ventana?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS comprueba automáticamente su conexión a Internet cuando se conecta con una red Wi-Fi nueva. Si se detecta que no hay una conexión a Internet (p. ej., si se ha conectado con un portal cautivo en un café u otra ubicación pública), esta ventana aparecerá y mostrará la página de acceso.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Hay algunas redes que aparentan ser un portal cautivo al principio, provocando que se muestre esta ventana, pero luego establecen una conexión. En esos casos, verá este mensaje y podrá cerrarlo con seguridad.",
-    "You're connected! &sdot; elementary": "¡Se ha conectado! ⋅ elementary"
-}
