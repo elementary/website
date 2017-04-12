@@ -1,11 +1,23 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "name": "elementary/website",
+    "description": "The elementary.io website.",
     "type": "project",
+    "keywords": ["elementary", "os", "linux"],
+    "homepage": "https://elementary.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Connor S. Parks",
+            "email": "contact@connorvg.tv",
+            "homepage": "http://github.com/ConnorVG"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/elementary/website",
+        "issues": "https://github.com/elementary/website/issues"
+    },
     "require": {
-        "php": ">=5.6.4",
+        "php": ">=7.1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
     },
@@ -43,6 +55,8 @@
             "php artisan optimize"
         ]
     },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
         "sort-packages": true

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Contracts\Routing\Registrar;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// ...

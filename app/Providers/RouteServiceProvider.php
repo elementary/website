@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Route;
+use App\Services\Routing\Binder;
+use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Contracts\Routing\BindingRegistrar;
+use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -17,15 +20,21 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
-     * Define your route model bindings, pattern filters, etc.
+     * Register the service provider.
      *
      * @return void
      */
-    public function boot()
+    public function register()
     {
-        //
+        $this->app->singleton(Binder::class, function (Container $app) {
+            return new Binder();
+        });
 
-        parent::boot();
+        $this->app->resolving(BindingRegistrar::class, function (BindingRegistrar $registrar, Container $app) {
+            $binder = $app->make(Binder::class);
+
+            $registrar->apply($binder);
+        });
     }
 
     /**
@@ -35,39 +44,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiRoutes();
+        $router = Route::middleware('web')
+            ->namespace($this->namespace);
 
-        $this->mapWebRoutes();
+        $router->group(base_path('routes/web.php'));
 
-        //
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapWebRoutes()
-    {
-        Route::middleware('web')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/web.php'));
-    }
-
-    /**
-     * Define the "api" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapApiRoutes()
-    {
-        Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/api.php'));
+        $router->get('/{template}', [
+            'as' => 'get::template',
+            'uses' => 'TemplateController@show',
+        ]);
     }
 }
