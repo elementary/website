@@ -1,8 +1,0 @@
-{
-    "You're connected!": "Tens Ligação! ",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "A tua ligação à internet aparentemente está funcional. Podes fechar esta janela em segurança e continuar a usar o teu equipamento.",
-    "Why is this window appearing?": "Porque é que esta janela está a aparecer?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "O elementary OS verifica automaticamente a tua ligação à rede quando te ligas a uma rede WiFi. Se ele detectar que tens uma ligação limitada (e.g. estás ligado a um portal cativo empresarial num café ou outro  local público), esta janela aparece e apresenta-te a página de login.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Algumas redes aparentam ser um portal cativo, e despoletam esta janela, e posteriormente consegue-se ligação. Nestes casos verás esta mensagem que podes fechar com toda a segurança.",
-    "You're connected! &sdot; elementary": "Tens Ligação! ⋅ elementary"
-}

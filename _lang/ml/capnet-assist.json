@@ -1,8 +1,0 @@
-{
-    "You're connected!": "നിങ്ങൾ ബന്ധപ്പെട്ടിരിക്കുന്നു!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "നിങ്ങളുടെ ഇന്റർനെറ്റ് ബന്ധം പ്രവർത്തനക്ഷമമാണ്. നിങ്ങൾക്ക് സുരക്ഷിതമായി ഈ ജാലകം അടക്കാവുന്നതും നിങ്ങളുടെ ഉപകരണം തുടർന്നും ഉപയോഗിക്കാവുന്നതും ആണ്.",
-    "Why is this window appearing?": "എന്ത് കൊണ്ട് ഈ ജാലകം പ്രത്യക്ഷമാകുന്നു?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.",
-    "You're connected! &sdot; elementary": "നിങ്ങൾ ബന്ധപ്പെട്ടിരിക്കുന്നു! . എലിമെന്ററി"
-}

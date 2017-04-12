@@ -1,16 +1,6 @@
----
-
 language: php
 
 php:
-    - "7.0"
+  - "7.0"
 
-before_script:
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm install 6'"
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; npm install'"
-
-script:
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/css.sh'"
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/javascript.sh'"
-    - "sh ./_tests/php.sh"
-    - "php ./_tests/translations.php"
+script: vendor/bin/phpunit
