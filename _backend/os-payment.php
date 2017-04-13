@@ -48,7 +48,7 @@ function os_payment_getcookie (string $version) {
         $string = os_payment_encode('has_paid_' . $config['release_title'] . '_' . $config['release_version']);
 
         if (isset($_COOKIE[$string])) {
-            return intval($_COOKIE[$string]);
+            return floatval($_COOKIE[$string]);
         }
     }
 
