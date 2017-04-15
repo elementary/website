@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Hvorfor kommer dette vinduet opp?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS kontrollerer automatisk din internettilkobling når du kobler til et nytt trådløst nettverk. Hvis det oppdages at du mangler internettilgang, (f.eks. hvis du omdirigeres til en autentiseringsportal – også kalt «captive portal» – på en kaffebar eller annet offentlig sted) så vil  dette vinduet vise innloggingssiden.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Noen nettverk kan se ut til å bruke en landingspåloggingsside, noe som medfører visning av dette vinduet, for så å koble til. I sådant fall, vil du se denne meldingen og kan trygt lukke vinduet.",
-    "You're connected! &sdot; elementary": ""
+    "You're connected! &sdot; elementary": "Du er tilkoblet! &sdot; elementary"
 }
