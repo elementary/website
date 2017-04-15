@@ -4,8 +4,7 @@
  * Verifies hook variables and passes data to individual hook files
  */
 
-require_once __DIR__.'/../../_backend/lib/autoload.php';
-require_once __DIR__.'/../../_backend/config.loader.php';
+require_once __DIR__ . '/../../_backend/bootstrap.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 

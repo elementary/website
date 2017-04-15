@@ -2,7 +2,7 @@
 *~
 *.log
 /_backend/config.php
-/_backend/lib/
+/_backend/vendor/
 /_data/
 /_lang/en/
 /.vagrant/
