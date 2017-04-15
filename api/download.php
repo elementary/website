@@ -5,7 +5,7 @@
  * Sets payment cookie from stripe charge
  */
 
-require_once __DIR__ . '/../_backend/bootstrap.php'
+require_once __DIR__ . '/../_backend/bootstrap.php';
 
 require_once __DIR__.'/../_backend/preload.php';
 require_once __DIR__.'/../_backend/os-payment.php';
