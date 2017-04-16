@@ -7,5 +7,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+// TODO: why are these not in composer?
+require_once __DIR__ . '/../docs/_mdr/Parsedown.php';
+require_once __DIR__ . '/../docs/_mdr/ParsedownExtra.php';
+
 // TODO: move this to a static class
-require_once __DIR__ . '/config.loader.php';
+require __DIR__ . '/config.loader.php';

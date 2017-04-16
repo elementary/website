@@ -1,7 +1,102 @@
 <?php
 
-class Translator {
-    const LANG_DIR = '_lang';
+/**
+ * _backend/Lib/L10n.php
+ * All of the main translation logic
+ */
+
+namespace App\Lib;
+
+class L10n
+{
+
+    /**
+     * directory
+     * The directory that holds all translation files
+     *
+     * @var string
+     */
+    public static $directory = __DIR__ . '/../../_lang';
+
+    /**
+     * blacklistedPages
+     * A list of basic regex functions used for black listing translatble pages
+     *
+     * @var array
+     */
+    public static $blacklistedPages = array(
+        '/LICENSE.md/',
+        '/README.md/',
+        '/router.php/',
+        '/TRANSLATE.md/',
+        '/inventory.php/',
+    );
+
+    /**
+     * languages
+     * Returns a list of all langauges the website currently has.
+     * NOTE: this does not return a list of enabled languages.
+     *
+     * @return array A list of languages we currently have
+     */
+    public static function languages()
+    {
+        $languages = array();
+
+        foreach (glob(static::$directory . '/*/', GLOB_ONLYDIR) as $path) {
+            $languages[] = basename($path);
+        }
+
+        return $languages;
+    }
+
+    /**
+     * pages
+     * Returns a list of pages that we can translate.
+     *
+     * @return array A list of pages we can translate
+     */
+    public static function pages()
+    {
+        $rootDirectory = static::$directory . '/..';
+
+        $files = array_merge(
+            glob($rootDirectory . '/*.{php,md}', GLOB_BRACE),
+            glob($rootDirectory . '/docs/*.md'),
+            glob($rootDirectory . '/docs/code/*.md'),
+            glob($rootDirectory . '/store/*.php')
+        );
+
+        $pages = array();
+
+        foreach ($files as $file) {
+            $blacklisted = false;
+
+            foreach (static::$blacklistedPages as $reg) {
+                if (preg_match($reg, $file)) {
+                    $blacklisted = true;
+                }
+            }
+
+            if ($blacklisted === false) {
+                $pages[] = $file;
+            }
+        }
+
+        return $pages;
+    }
+
+    /**
+     * languageDirectory
+     * Returns the directory for a language
+     *
+     * @param  string $lang The language code
+     * @return string       Directory the language files are in
+     */
+    public static function languageDirectory($lang)
+    {
+        return realpath(static::$directory . '/' . $lang);
+    }
 
     protected $available_langs = array(
         'en' => 'English',
@@ -64,8 +159,9 @@ class Translator {
         return $this->available_langs;
     }
 
+    // DEPRECATED: use the static function instead
     public function lang_dir($lang) {
-        return __DIR__.'/../'.self::LANG_DIR.'/'.$lang;
+        return static::languageDirectory($lang);
     }
 
     public function is_lang($lang) {

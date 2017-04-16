@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($l10n)) {
-   $l10n = new Translator();
+   $l10n = new \App\Lib\L10n();
 }
 $page['lang'] = $l10n->lang();
 if (!isset($page['lang'])) $page['lang'] = 'en';

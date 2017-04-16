@@ -1,7 +1,15 @@
 {
+    "autoload": {
+        "psr-4": {
+            "App\\Lib\\": "Lib/"
+        }
+    },
     "require": {
         "stripe/stripe-php": "3.17.0",
         "mandrill/mandrill": "^1.0",
         "sentry/sentry": "^1.4"
+    },
+    "require-dev": {
+        "league/climate": "^3.2"
     }
 }

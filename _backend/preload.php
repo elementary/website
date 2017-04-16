@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/bootstrap.php';
+require __DIR__ . '/bootstrap.php';
 require_once __DIR__.'/log-echo.php';
 
 // Honor the IE do-not-track-header,
@@ -18,7 +18,7 @@ $sitewide['image'] = 'https://elementary.io/images/preview.png';
 $sitewide['theme-color'] = '#3892E0';
 
 // Autodetect website root path
-$serverRoot = $_SERVER['DOCUMENT_ROOT'];
+$serverRoot = ($_SERVER['DOCUMENT_ROOT'] || __DIR__);
 $websiteRoot = dirname(__DIR__);
 if (!empty($_SERVER['REQUEST_URI'])) {
     $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -55,7 +55,6 @@ if ($serverRoot == $websiteRoot) {
 	}
 }
 
-require_once __DIR__.'/l10n.php';
 $template['header'] = __DIR__.'/../_templates/header.php';
 $template['alert']  = __DIR__.'/../_templates/alert.php';
 $template['legacy'] = __DIR__.'/../_templates/legacy.php';
