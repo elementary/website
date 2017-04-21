@@ -1,8 +1,8 @@
 {
-    "You're connected!": "Vous êtes connectés!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Votre connection Internet semble fonctionnelle. Vous pouvez fermer cette fenêtre sans risque et continuer d'utiliser votre appareil. ",
+    "You're connected!": "Vous êtes connectés !",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Votre connexion Internet semble fonctionnelle. Vous pouvez fermer cette fenêtre sans risque et continuer à utiliser votre appareil.",
     "Why is this window appearing?": "Pourquoi cette fenêtre s'affiche-t-elle ?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS vérifie automatiquement votre connexion Internet quand vous vous connectez à un nouveau réseau WiFi. S'il détecte qu'il n'y as pas de connexion Internet (ex. si vous êtes connecté à un portail captif dans un café ou un autre lieu public), cette fenêtre apparaîtra et affichera la page de connexion.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Certains réseaux peuvent sembler être un portail captif en premier lieu, déclenchant cette fenêtre pour finalement se connecter. Dans ces cas, vous verrez ce message et pourrez fermer cette fenêtre sans risque. ",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Certains réseaux peuvent sembler être un portail captif en premier lieu, déclenchant cette fenêtre pour finalement se connecter. Dans ces cas, vous verrez ce message et pourrez fermer cette fenêtre sans risque.",
     "You're connected! &sdot; elementary": "Vous êtes connectés! ⋅ elementary"
 }
