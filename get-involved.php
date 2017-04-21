@@ -159,7 +159,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Desktop Development</h2>
-            <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on Launchpad.net, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
+            <p>Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide. <a href="/docs/code/getting-started" class="read-more">Learn More</a></p>
             <?php
                 if ($config['chart_enable']) {
                     echo'<p>This burndown chart shows our progress for the <a href="https://bugs.launchpad.net/'.$config['chart_link_project'].'/+milestone/'.$config['chart_link_milestone'].'">'.$config['chart_link_name'].'</a>, which is our current development focus. Soon after that milestone is reached, Loki will be publically released and work on the next version of elementary OS will begin. <a href="https://launchpad.net/elementaryos/+series" class="read-more">Learn More</a></p>';
@@ -205,10 +205,9 @@
         ?>
         <div class="whole">
             <div class="actions">
-                <a class="button flat suggested-action" href="https://code.launchpad.net/~elementary-pantheon" target="_blank" rel="noopener">Browse Our Desktop Code</a>
-                <a class="button flat" href="https://code.launchpad.net/~elementary-apps" target="_blank" rel="noopener">Browse Our Apps' Code</a>
-                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bitesize&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search" target="_blank" rel="noopener">Bitesized Bugs</a>
-                <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bounty&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
+                <a class="button flat suggested-action" href="https://github.com/elementary" target="_blank" rel="noopener">Browse Our Code</a>
+                <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bitesize%22&type=" target="_blank" rel="noopener">Bitesized Bugs</a>
+                <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=" target="_blank" rel="noopener">Bountied Bugs</a>
             </div>
         </div>
     </div>
