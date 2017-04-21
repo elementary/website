@@ -103,7 +103,7 @@
                     <img src='<?php echo $product['image'] ?>' alt='<?php echo $product['name'] ?>' />
                 </picture>
             </div>
-            <form action="<?php echo $sitewide['root'] ?>store/inventory" class="half">
+            <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
                 <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
                 <p><?php echo $product['description'] ?></p>

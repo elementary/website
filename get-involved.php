@@ -81,7 +81,7 @@
     <div class="grid">
         <div class="two-thirds">
             <img alt="Bountysource" src="images/open-source/bountysource.svg">
-            <p>BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
+            <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
 
             <div class="actions">
                 <a class="button flat" href="https://bugs.launchpad.net/elementary/+bugs?orderby=-importance&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.tag=bounty&field.omit_dupes=on&field.has_branches=on&field.has_no_branches=on&field.has_blueprints=on&field.has_no_blueprints=on&search=Search">Bountied Bugs</a>
@@ -99,11 +99,11 @@
         <div class="half">
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
             <p>elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta. <a href="/docs/translation-guide#translating-applications" class="read-more">Learn More</a></p>
-            <p>Our website is also openly translated using an online platform called Transifex. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
+            <p>Our website is also openly translated using an online platform called Weblate. <a href="/docs/translation-guide#translating-our-website" class="read-more">Learn More</a></p>
 
             <div class="actions">
                 <a class="button flat suggested-action" href="https://translations.launchpad.net/elementary" target="_blank" rel="noopener">Translate elementary OS</a>
-                <a class="button flat" href="https://www.transifex.com/projects/p/elementary-mvp/" target="_blank" rel="noopener">Translate This Website</a>
+                <a class="button flat" href="https://l10n.elementary.io/projects/website/" target="_blank" rel="noopener">Translate This Website</a>
             </div>
         </div>
         <div class="half">
