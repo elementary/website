@@ -1,7 +1,7 @@
 {
     "Translation Guide": "Oversettelsesanvisning",
     "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "Lokalisering av vår hjemmeside og programmer er en svært viktig del av å gjøre elementary OS tilgjengelig for så mange som mulig. I stedet for å stole utelukkende på et internt oversettelseslag, holder vi dugnad, slik at hvem som helst kan sende inn oversettelser, selv med liten eller ingen teknisk kunnskap. For å holde vår stemme forenlig over hele plattformen, og for å hjelpe nye oversettere komme i gang, har vi satt sammen denne oversettelsesanvisningen.",
-    "Translating Applications": "Oversette programmer.",
+    "Translating Applications": "Oversetting av programmer",
     "Apps are translated through Rosetta: the translation interface hosted on Launchpad. In order to submit translations, you should:": "Programmer oversettes gjennom Rosetta: grensesnittet for oversettelser driftet på Launchpad. For å sende oversettelser, bør du:",
     "Have a": "Ha en",
     "Launchpad account": "Launchpad-konto",
@@ -22,7 +22,7 @@
     "Translating our Website": "Oversettelse av vår hjemmeside",
     "Our website is translated through <a href=\"https://www.transifex.com/projects/p/elementary-mvp/\">Transifex</a>. In order to submit translations, you should:": "Vår hjemmeside er oversatt via <a href=\"https://www.transifex.com/projects/p/elementary-mvp/\">Transifex</a>. For å sende inn oversettelser, bør du:",
     "Transifex account": "Transifex-konto",
-    "Join our": "Bli med i vårt ",
+    "Join our": "Bli med i vårt",
     "translation team": "oversettelseslag",
     "For more information about Transifex, you can refer to their <a href=\"http://docs.transifex.com/tutorials/txeditor\">documentation</a>.": "For mer informasjon om Transifex, kan du henvende deg til deres <a href=\"http://docs.transifex.com/tutorials/txeditor\">dokumentasjon</a>.",
     "As with our apps, we follow Ubuntu’s <a href=\"https://help.launchpad.net/Translations/Guide\">general translator guide</a>, and for language specific issues we follow Ubuntu's <a href=\"https://translations.launchpad.net/+groups/ubuntu-translators\">team translation guidelines</a>.": "Som med våre programmer, følger vi Ubuntu <a href=\"https://help.launchpad.net/Translations/Guide\">generell guide for oversetting</a>, og for språkspesifikke problemstillinger følger vi Ubuntu-<a href=\"https://translations.launchpad.net/+groups/ubuntu-translators\">lagets retningslinjer for oversettelser</a>."

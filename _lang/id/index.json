@@ -1,6 +1,6 @@
 {
-    "A fast and open replacement for Windows and macOS": "A fast and open replacement for Windows and macOS",
-    "Pay What You Want:": "bayar apa yang kau mau",
+    "A fast and open replacement for Windows and macOS": "Cepat dan terbuka untuk menggantikan Windows dan macOS",
+    "Pay What You Want:": "Bayar sesukamu:",
     "Custom": "Khusus",
     "Enter any dollar amount.": "Masukkan nominal dalam dollar.",
     "Purchase elementary OS": "Beli elementary OS",
@@ -12,7 +12,7 @@
     "image/svg+xml": "image/svg+xml",
     "Task finished": "tugas selesai",
     "git clone https://github.com/elementary/website": "git clone https://github.com/elementary/website",
-    "Apps You Need, Without Ones You Don't.": "aplikasi yang kau butuhkan, tanpa masalah",
+    "Apps You Need, Without Ones You Don't.": "Aplikasi yang anda butuhkan, tanpa yang tidak Anda butuhkan.",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS smemilih dengan hati hati pada aplikasi yang akan membawa mu untuk menggunakan waktu di komputer tanpa masalah virus",
     "Music": "Musik",
     "Epiphany": "Epiphany",
@@ -29,7 +29,7 @@
     "Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.": "Kelola dan dengarkan musik Anda. Jelajahi berdasarkan album, gunakan pencarian ultra cepat, dan buat daftar putar favorit Anda.",
     "epiphany screenshot": "epiphany screenshot",
     "epiphany icon": "epiphany icon",
-    "Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.": "Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.",
+    "Surf the web with a fast & lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.": "Menjelajah dengan web browser yang cepat & ringan. Epiphany memungkinkan Anda menggunakan website HTML5 dan aplikasi web dengan lebih hemat baterai.",
     "mail screenshot": "mail screenshot",
     "mail icon": "mail icon",
     "Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.": "Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.",
@@ -84,5 +84,5 @@
     "Cancel": "Cancel",
     "Download": "Download",
     "Torrent Magnet Link": "Tautan Magnet Torrent",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "A fast and open replacement for Windows and macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Pengganti yang cepat dan terbuka untuk Windows dan macOS ⋅ elementary OS"
 }
