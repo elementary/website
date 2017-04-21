@@ -244,7 +244,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         GenericName=Hello World App
         Comment=Proves that we can use Vala and Gtk
         Categories=GTK;Utility;
-        Exec=hello-again
+        Exec=com.github.yourusername.yourrepositoryname
         Icon=application-default-icon
         Terminal=false
         Type=Application
@@ -326,7 +326,7 @@ The next thing we need is a build system. The build system that we're going to b
 Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
 
         # project name
-        project (hello-again)
+        project (com.github.yourusername.yourrepositoryname)
 
         # the oldest stable cmake version we support
         cmake_minimum_required (VERSION 2.6)
@@ -339,9 +339,9 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
         set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 
         # what to call that directory where we install data too
-        set (PKGDATADIR "${DATADIR}/hello-again")
+        set (PKGDATADIR "${DATADIR}/com.github.yourusername.yourrepositoryname")
 
-        set (EXEC_NAME "hello-again")
+        set (EXEC_NAME "com.github.yourusername.yourrepositoryname")
         set (RELEASE_NAME "A hello world.")
         set (VERSION "0.1")
         set (VERSION_INFO "whats up world")
