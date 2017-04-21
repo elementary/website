@@ -165,7 +165,8 @@ class Translator {
         }
 
         if (isset($this->translations[$domain][$id]) &&
-            is_string($this->translations[$domain][$id])) {
+            is_string($this->translations[$domain][$id]) &&
+            ($this->translations[$domain][$id] !== "")) {
             return $this->translations[$domain][$id];
         } else {
             return $string;
