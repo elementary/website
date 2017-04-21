@@ -64,13 +64,13 @@
     "Grid": "格狀",
     "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "將您所有程式按字母排列放入格中顯示。",
     "Categories": "類別",
-    "View your apps automatically organized into categories. Perfect for large collections.": "將程式自動歸類在各類別中顯示。適合用於爆多的程式",
+    "View your apps automatically organized into categories. Perfect for large collections.": "將程式自動歸類在各類別中顯示。適合用於大量的程式。",
     "Search": "搜尋",
-    "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "執行程式、開啟設定面板、執行指令、和更多快速搜尋顯示的應用",
+    "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "開啟程式、開啟設定面板、執行指令、和更多快速搜尋顯示的應用。",
     "Open Source": "開源軟體",
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "任何人都可以觀看、研究、編輯、再次散布我們的程式碼。",
     "Learn More": "了解更多",
-    "No Ads. No Spying.": "無廣告，無間諜軟體",
+    "No Ads. No Spying.": "沒有廣告。無間諜軟體。",
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "我們不置入商業廣告，也不蒐集敏感的個資。我們的收入直接來自於使用者。",
     "Safe &amp; Secure": "安全與防護",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "我們的系統建構於 Linux 之上：一款廣受美國國防部、中國銀行... 等機構採用的作業系統。",
@@ -84,5 +84,5 @@
     "Cancel": "取消",
     "Download": "Download",
     "Torrent Magnet Link": "Torrent 磁力鏈結",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "輕快、開放，足以替代 Windows 和 macOS 的作業系統 ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "輕快，開放，足以替代 Windows 和 macOS 的作業系統 ⋅ elementary OS"
 }

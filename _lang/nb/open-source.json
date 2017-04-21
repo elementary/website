@@ -1,5 +1,5 @@
 {
-    "We're Built on Open Source": "We're Built on Open Source",
+    "We're Built on Open Source": "Tuftet på fri programvare",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS-plattformen er bygd på et fundament av fri og åpen programvare. Uten prosjekter som disse, vil ikke elementary OS kunne ha eksistert.",
     "Get Involved": "Involver deg",
     "Applications": "Programmer",
@@ -19,7 +19,7 @@
     "Icon Theme": "Ikondrakt",
     "Gala": "Gala",
     "Plank": "Plank",
-    "Slingshot": "sprettert",
+    "Slingshot": "Slingshot",
     "Switchboard": "Switchboard",
     "Wingpanel": "Wingpanel",
     "Platform": "Plattform",
@@ -68,8 +68,8 @@
     "Linux": "Linux",
     "Filesystem, Hardware, Networking &amp; Drivers": "Filsystem, maskinvare, nettverk og drivere",
     "Kernel": "Kjerne",
-    "We Support Open Source Projects": "We Support Open Source Projects",
-    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.",
+    "We Support Open Source Projects": "Vi støtter friprog-prosjekter",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary gjør et poeng ut av å sende pengebidrag tilbake til prosjekter vi bygger på. Når du kjøper en kopi av elementary OS, støtter du også flotte prosjekter som disse.",
     "Bountysource": "Bountysource",
     "Debian": "Debian",
     "Font Awesome": "Font Awesome",
@@ -79,5 +79,5 @@
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "Software Freedom Conservancy",
     "All logos featured here are trademarks of their respective projects.": "Alle logoer som figurerer her tilhører deres respektive eiere.",
-    "Open Source &sdot; elementary": "Friprog⋅ elementary"
+    "Open Source &sdot; elementary": "Friprog ⋅ elementary"
 }
