@@ -11,7 +11,9 @@
      * @param String $m a message to show on cart
      */
     function err ($m = 'Error while checking out') {
-        header("Location: /" . $sitewide['root'] . "store/cart?error=" . urlencode($m));
+        global $sitewide;
+
+        header("Location: " . $sitewide['root'] . "store/cart?error=" . urlencode($m));
         return;
     }
 
@@ -82,7 +84,7 @@
 
 <script>window.stripeKey = '<?php include __DIR__.'/../api/payment.php'; ?>'</script>
 
-<form action="<?php echo $sitewide['root'] ?>store/order" method="post" class="grid grid--narrow">
+<form action="<?php echo $page['lang-root'] ?>store/order" method="post" class="grid grid--narrow">
 
     <div class="whole">
         <h2>Shipping Options</h2>

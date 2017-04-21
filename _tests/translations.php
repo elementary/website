@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * _tests/translations.php
+ * Checks translation files for common HTML problems that would break the site.
+ * Can be ran as `php translations.php` for checking all files or
+ * ran with `php translations.php ../_lang/en/index.js` for individual files.
+ */
+
 echo "#####################################\n";
 echo "Starting Translation Checking linting\n";
 echo "#####################################\n";
@@ -37,7 +44,18 @@ function globRecursive($Pattern, $Flags = 0) {
     return $Return;
 }
 
-$translation_files = globRecursive(__DIR__.'/../_lang/*/*.json');
+// Assume this script will be ran with php translations.php _lang/en/index.json
+if (count($argv) > 1) {
+    $translation_files = array();
+    $paths = array_slice($argv, 1);
+
+    foreach ($paths as $relPath) {
+        $translation_files[] = __DIR__.'/'.$relPath;
+    }
+} else {
+    $translation_files = globRecursive(__DIR__.'/../_lang/*/*.json');
+}
+
 $result['invalid_files'] = 0;
 $result['valid_files'] = 0;
 $result['errors'] = array();

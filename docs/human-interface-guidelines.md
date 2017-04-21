@@ -18,7 +18,7 @@ For sections that have not yet been written, please refer to [The GNOME HIG](htt
 
 The elementary OS HIG isn't just about a set of concrete rules; it's meant to be flexible and extensible. As such, this very first portion of the guideline is all about the guiding philosophy we employ. For a quick crash course, we like "The User is Drunk":
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r2CbbBLVaPk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r2CbbBLVaPk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## What Design Is Not {#what-design-is-not}
 
@@ -29,7 +29,7 @@ Before we get into all the things that make up elementary OS apps, there is a cl
 2. **Design is not just, like, your opinion, man.** Design is testable. One design will meet a specific goal better than another design. Consider different types of bicycles. A folding bicycle has a different set of design goals than a mountain bicycle. Things like weight, size, and tire tread are important factors in helping the intended user reach their goals. Because we understand that design is about solving specific problems, we must also understand that we can objectively compare the effectiveness of two designs at solving those problems.
 
 ------------------------------------------
-1. [Design Is Not Veneer, Aral Balkan](http://aralbalkan.com/notes/design-is-not-veneer/)
+1. [Design Is Not Veneer, Aral Balkan](https://ar.al/notes/design-is-not-veneer/)
 2. [Design is Not Subjective, Jeff Law](http://www.jefflaw.ca/design-is-not-subjective/)
 
 ## Concision {#concision}
@@ -58,7 +58,7 @@ If possible, completely avoid presenting any settings or configuration in your a
 
 Design with sane defaults in mind. elementary OS apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### Ask the Operating System {#ask-the-operating-system}
 
