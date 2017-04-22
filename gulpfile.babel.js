@@ -4,9 +4,16 @@
  */
 
 import gulp from 'gulp'
+import cache from 'gulp-cached'
+import changed from 'gulp-changed'
+import merge from 'merge-stream'
+import rename from 'gulp-rename'
+import through from 'through2'
 
+import gm from 'gm'
 import imagemin from 'gulp-imagemin'
 import svgo from 'gulp-svgo'
+import webp from 'gulp-webp'
 
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
@@ -17,35 +24,81 @@ const browsers = [
 ]
 
 /**
- * png
- * Optimizes png images
+ * sizeDown
+ * Will only continue stream if the image is below given size
  *
- * @returns {Task} - a gulp task for png files
+ * @param {Number} size - Width of image
+ * @returns {Stream} - a gulp stream
  */
-gulp.task('png', () => {
+const sizeDown = (size) => through.obj(function (ogFile, enc, cb) {
+    const gmc = gm.subClass({ imageMagic: true })
+    const file = ogFile.clone({ contents: false })
+    const gmFile = gmc(file.contents, file.path)
+
+    gmFile.size((err, val) => {
+        if (err) return cb(err)
+
+        if (val.width < size) {
+            return cb()
+        }
+
+        gmFile.resize(size, null).toBuffer((err, buf) => {
+            if (err) return cb(err)
+
+            file.contents = buf
+            this.push(file)
+            return cb()
+        })
+    })
+})
+
+/**
+ * image
+ * Optimizes all normal image types
+ *
+ * @returns {Task} - a gulp task for image types
+ */
+gulp.task('image', () => {
     const base = '_images'
-    const src = ['_images/**/*.png']
+    const src = ['_images/**/*.png', '_images/**/*.jpg', '_images/**/*.jpeg', '_images/**/*.webp']
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('image'))
     .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
 
 /**
- * jpg
- * Optimizes jpg images
+ * webp
+ * Optimizes all images with webp
  *
- * @returns {Task} - a gulp task for jpg images
+ * @returns {Task} - a gulp task for webp awesomesause
  */
-gulp.task('jpg', () => {
+gulp.task('webp', () => {
     const base = '_images'
-    const src = ['_images/**/*.jpg', '_images/**/*.jpeg']
+    const src = ['_images/**/*.png', '_images/**/*.jpg', '_images/**/*.jpeg', '_images/**/*.webp']
     const dest = 'images'
 
-    return gulp.src(src, { base })
-    .pipe(imagemin())
+    const root = gulp.src(src, { base })
+    .pipe(changed(dest, { extension: '.webp' }))
+    .pipe(cache('webp'))
+    .pipe(webp())
+
+    const original = root
     .pipe(gulp.dest(dest))
+
+    const sizes = [320, 640, 1280, 2560]
+
+    const streams = sizes.map((size) => {
+        return root
+        .pipe(sizeDown(size))
+        .pipe(rename({ suffix: `-${size}` }))
+        .pipe(gulp.dest(dest))
+    })
+
+    return merge(original, ...streams)
 })
 
 /**
@@ -110,6 +163,8 @@ gulp.task('svg', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('svg'))
     .pipe(svgo())
     .pipe(gulp.dest(dest))
 })
@@ -120,7 +175,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('png', 'jpg', 'svg'))
+gulp.task('images', gulp.parallel('image', 'webp', 'svg'))
 
 /**
  * styles
@@ -134,6 +189,7 @@ gulp.task('styles', () => {
     const dest = 'styles'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
     .pipe(postcss([
         cssnext({ browsers })
     ]))

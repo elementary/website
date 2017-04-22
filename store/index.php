@@ -73,7 +73,10 @@
         <?php foreach ($products as $product) { ?>
 
             <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
-                <img src="<?php echo $product['image'] ?>"/>
+                <picture>
+                    <?php \HTML\source_webp ($product['image'], 260, 1); ?>
+                    <img src='<?php echo $product['image'] ?>' alt='<?php echo $product['name'] ?>' />
+                </picture>
                 <h4><?php echo $product['name'] ?></h4>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
                     <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></p>
@@ -95,7 +98,10 @@
         <i class="fa fa-close close-modal"></i>
         <div class="grid">
             <div class="half">
-                <img src="<?php echo $product['image'] ?>"/>
+                <picture>
+                    <?php \HTML\source_webp ($product['image'], 520, 1); ?>
+                    <img src='<?php echo $product['image'] ?>' alt='<?php echo $product['name'] ?>' />
+                </picture>
             </div>
             <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>

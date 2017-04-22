@@ -41,7 +41,10 @@
         ?>
 
             <div class="list__item" id="product-<?php echo $index ?>">
-                <img src="<?php echo $product['image'] ?>"/>
+                <picture>
+                    <?php \HTML\source_webp ($product['image'], 320, 1); ?>
+                    <img src='<?php echo $product['image'] ?>' alt='<?php echo $product['name'] ?>' />
+                </picture>
                 <div class="list__info">
                     <b><?php echo $variant['name'] ?></b>
                     <span><a href="store/inventory?math=set&quantity=0&id=<?php echo $id[0] ?>&variant=<?php echo $id[1] ?>">Remove</a></span>
