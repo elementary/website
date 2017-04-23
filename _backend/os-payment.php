@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/lib/autoload.php';
-require_once __DIR__ . '/config.loader.php';
+require_once __DIR__ . '/bootstrap.php';
+
 require_once __DIR__ . '/log-echo.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
