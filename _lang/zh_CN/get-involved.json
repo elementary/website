@@ -8,7 +8,10 @@
     "Desktop": "桌面",
     "Design": "设计",
     "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "正因有了您的帮助，我们才能从有热情的志愿者小组成长为一家微型公司。每一笔小小的捐款都能帮助我们再雇佣一位全职开发者。",
-    "Patreon": "Patreon",
+    "Indiegogo": "",
+    "We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.": "",
+    "Back AppCenter": "",
+    "Patreon": "",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon 是一个众筹网站，您可以在网站页面选择捐助金额，直接对我们进行捐助，帮助我们实现目标。",
     "Learn More": "了解更多",
     "Become a Patron": "加入 Patron",
@@ -18,7 +21,7 @@
     "Bountysource": "BountySource",
     "BountySource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "BountySource 将捐赠以酬谢的形式支付给修复问题和开发新功能的开发者。您可以在 BountySource 上选择你最希望团队改进的问题或开发的应用。您还可以设置定期捐赠。",
     "Bountied Bugs": "悬赏 Bug",
-    "BountySource": "BountySource",
+    "BountySource": "",
     "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "elementary OS 的用户和开发者来自世界各地；帮助我们将其翻译成更多语言以提供更好的用户体验。",
     "elementary OS uses an open, collaborative translation tool on Launchpad called Rosetta.": "elementary OS 的翻译工作使用 Launchpad 提供的开源的协作翻译工具 Rosetta。",
     "Our website is also openly translated using an online platform called Transifex.": "我们的网站页面则是由 Transifex 在线翻译平台翻译的。",
@@ -52,5 +55,10 @@
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "我们使用 Launchpad 的蓝图系统为新功能和用户界面调整创建详细解释。",
     "Read About Our Workflow": "了解我们的工作流程",
     "Browse Our Blueprints": "浏览我们的蓝图",
-    "Get Involved with elementary OS": "加入 elementary OS"
+    "Get Involved with elementary OS": "加入 elementary OS",
+    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "",
+    "Both elementary OS and our website are openly translated using an online platform called Weblate.": "",
+    "Suggest Translations": "",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "",
+    "Browse Our Code": ""
 }

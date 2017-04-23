@@ -4,5 +4,5 @@
     "Why is this window appearing?": "為什麽這個窗口會出現？",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS會在當您連結至一個新的無綫網絡時自動檢查您的網絡連結情況。如果它檢測到新網絡仍不可用，也就是說當您連結至一個公共網絡登録端口時，這個窗口會彈出並顯示登録頁面。",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "有些網絡會先顯示登録介面，於是您需要完成窗口所需動作，最後將成功連上。連上後您會收到這條消息，然後您就可以關閉這個窗口了。",
-    "You're connected! &sdot; elementary": "你已經成功連結！-由elementary發出"
+    "You're connected! ⋅ elementary": ""
 }

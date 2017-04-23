@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Perché appare questa finestra?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS controlla automaticamente la tua connessione internet quando ti colleghi ad una nuova rete WiFi. Se non trova alcuna connessione ad internet (es. se ti stai collegando al portale di autenticazione di una caffetteria o di un altro luogo pubblico), questa finestra apparirà mostrando la pagina di login.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Alcune reti possono mostrare prima una pagina di autenticazione, facendo apparire questa finestra, e poi finire col farti connettere. In questi casi, vedrai comparire questo messaggio, e potrai chiudere in sicurezza la finestra.",
-    "You're connected! &sdot; elementary": "Sei connesso! ⋅ elementary"
+    "You're connected! ⋅ elementary": ""
 }

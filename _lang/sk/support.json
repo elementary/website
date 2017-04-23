@@ -3,8 +3,8 @@
     "Calendar": "Kalendár",
     "Camera": "Kamera",
     "Files": "Súbory",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Hudba",
     "Photos": "Fotky",
     "Text Editor": "Textový editor",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Získať pomoc pri inštalácií elementary OS prostredníctvom našej krok po kroku príručky.",
     "Learning the Basics": "Výuka základov",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Predstavenie plochy, multitaskingu, klávesových skratiek a iných vecí.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Pozri odpovede na otázky, ktoré najbežnejšie dostávame.",
-    "Support &sdot; elementary": "Podpora ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

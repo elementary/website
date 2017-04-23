@@ -3,8 +3,8 @@
     "Calendar": "Calendari",
     "Camera": "Càmera",
     "Files": "Fitxers",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Música",
     "Photos": "Fotografies",
     "Text Editor": "Editor de text",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Obteniu ajuda per instal·lar l'elementary OS amb la nostra guia pas a pas.",
     "Learning the Basics": "Aprenentatge bàsic",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Investigueu l'escriptori, la multitasca, les dreceres de teclat i més.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Mireu les respostes a algunes de les preguntes més freqüents que tenim.",
-    "Support &sdot; elementary": "Assistència · elementary"
+    "Support ⋅ elementary": ""
 }
