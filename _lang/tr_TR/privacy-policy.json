@@ -3,7 +3,7 @@
     "Do Not Track": "Takip Etme",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Bu site pek çok modern tarayıcıda bulunan ve etkin olduğunda Google Analytikleri devre dışı bırakan takip-etme ayarını saygı duyar. Bu sitenin kullanımını ciddi ölçüde etkilemeksizin diğer takip metodlarını otomatik olarak kaldıramıyoruz. Bu takip metodlarını manuel yönetmek istersen, çerezleri devre dışı bırakmakla ilgili bölümü incele. ",
     "Cookies": "Çerezler",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Web tarayıcı ayarlarınızda üçüncü taraf çerezleri veya herhangi bir çerezi devre dışı bırakmayı seçebilirsiniz.</strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Web tarayıcı ayarlarınızda üçüncü taraf çerezleri veya herhangi bir çerezi devre dışı bırakmayı seçebilirsiniz.<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Bu site kademeli gelişim için çerezleri kullanır. Hizmetlerin çerezler olmadan da çalıştığın ancak kullanılabilirliğinin azaldığını görebilirsin. Örneğin, bu site senin daha önce elementary OS için ödeme yaptığını hatırlamayacaktır; varsayılan olarak tekrar ödeme isteyecektir.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Davranışsal elementleri kaydetmek ve potansiyel tehditleri analiz etmek için çerezler kaydeder. Daha fazla bilgi için, şuna gözat",
     "CloudFlare Privacy & Security Policy": "CloudFlare Gizlilik & Güvenlik Politikası",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Sitemizi halihazırda ziyaret etmiş bulunduğun için, tarayıcında zaten kaydedilmiş olan çerezleri yönetmek isteyebilirsin. Aşağıda, ilgili yönergelerin bağlantılarını bulabilirsin.",
     "Transparency": "Şeffaflık",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Yazılımımıza arka kapı yerleştirmedik ve yerleştirilmesi için hiçbir istek almadık. Aynı zamanda hiçbir Ulusal Güvenlik Yazısı, FISA Emri veya kullanıcı bilgileri için başka bir gizli istek almadık.",
-    "Privacy Policy &sdot; elementary": "Gizlilik Politikası - elementary"
+    "Privacy Policy ⋅ elementary": ""
 }

@@ -1,8 +1,8 @@
 {
-    "You're connected!": "Jesteś podłączona/y!",
+    "You're connected!": "Jesteś podłączona\/y!",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Wygląda na to, że Twoje połączenie internetowa działa prawidłowo. Możesz spokojnie zamknąć to okienko oraz kontynuować pracę.",
     "Why is this window appearing?": "Dlaczego widzę ten komunikat?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatycznie sprawdza Twoje połączenie internetowe kiedy łączysz się do nowej sieci WiFi. Jeżeli wykryje problemy z dostępem do internetu (np. łączenie z sieciami wymagającymi logowania jak na lotnisku lub w innych publicznych lokalizacjach) to okno wyświetli stronę logowania.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Niektóre sieci mogą wyświetlać okno logowania a potem automatycznie się połączyć. W tym przypadku zobaczysz tę wiadomość, którą możesz bezpiecznie zamknąć.",
-    "You're connected! &sdot; elementary": "Jesteś podłączona/y! ⋅ elementary"
+    "You're connected! ⋅ elementary": ""
 }

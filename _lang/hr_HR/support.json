@@ -3,8 +3,8 @@
     "Calendar": "Kalendar",
     "Camera": "Kamera",
     "Files": "Datoteke",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Glazba",
     "Photos": "Slike",
     "Text Editor": "Uređivač teksta",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Pomoć za instalaciju elementary OS sustava, korak po korak.",
     "Learning the Basics": "Naučite osnove",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Prikaz radne površine, multitaskina, kratica tipkovnice i ostalo.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Pogledajte odgovore na neke od najčešće postavljenih pitanja",
-    "Support &sdot; elementary": "Podrška ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

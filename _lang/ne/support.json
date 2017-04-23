@@ -4,7 +4,7 @@
     "Camera": "क्यामेरा",
     "Files": "फाइलहरु",
     "Geary": "गिएरी",
-    "Epiphany": "Epiphany",
+    "Epiphany": "",
     "Music": "संगीत",
     "Photos": "तस्बिरहरु",
     "Text Editor": "लेख सम्पादक",
@@ -16,5 +16,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "डेस्कटप, मल्टीटास्किंग, किबोर्ड सर्टकटहरु र अरु धेरै कुराहरुका बारेमा बुझ्नुहोस्।",
     "StackExchange": "स्ट्याक एक्स्चेन्ज",
     "Check out answers to some of the most common questions we get.": "हामीलाई साधारणतया प्राप्त हुने प्रश्नहरुका जवाफहरु हेर्नुहोस्।",
-    "Support &sdot; elementary": "सहायता ⋅ एलीमेन्टरी"
+    "Support ⋅ elementary": ""
 }

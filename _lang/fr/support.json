@@ -4,17 +4,17 @@
     "Camera": "Caméra",
     "Files": "Fichiers",
     "Geary": "E-Mail",
-    "Epiphany": "Epiphany",
+    "Epiphany": "",
     "Music": "Musique",
-    "Photos": "Photos",
+    "Photos": "",
     "Text Editor": "Éditeur de texte",
     "System Settings": "Paramètres Système",
     "Videos": "Vidéos",
-    "Installation": "Installation",
+    "Installation": "",
     "Get help installing elementary OS with our step-by-step guide.": "Obtenez de l'aide pour installer elementary OS avec notre guide détaillé.",
     "Learning the Basics": "Apprendre les bases",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Utilisation du bureau, multi-tâche, raccourcis clavier et plus encore.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Jetez un œil aux réponses des questions les plus fréquemment posées.",
-    "Support &sdot; elementary": "Aide ⋅ elementary"
+    "Support ⋅ elementary": ""
 }
