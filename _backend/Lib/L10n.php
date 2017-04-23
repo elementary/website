@@ -99,12 +99,12 @@ class L10n
     }
 
     protected $available_langs = array(
+        'en' => 'English',
         'af' => 'Afrikaans',
         'ar' => 'العَرَبِيَّة‎‎',
         'ca' => 'català',
         'cs_CZ' => 'čeština',
         'de' => 'Deutsch',
-        'en' => 'English',
         'es' => 'Español',
         'fi' => 'Finnish',
         'fr' => 'Français',
