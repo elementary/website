@@ -110,7 +110,8 @@ class L10n
         'fr' => 'Français',
         'it' => 'Italiano',
         'ja' => '日本語',
-        'kr' => '한국어',
+        'ko' => '한국어',
+        'ko_KR' => '한국어 (대한민국)'
         'lt' => 'Lietuvių kalba',
         'ms' => 'bahasa Melayu',
         'nb' => 'Bokmål',
