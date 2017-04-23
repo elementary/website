@@ -4,5 +4,5 @@
     "Why is this window appearing?": "なぜこのウィンドウが表示されているのですか？",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS は、あなたが新しい Wi-Fi ネットワークに接続した際、自動的にあなたのインターネット接続をチェックします。もし elementary OS が、インターネット接続がないということを検知した場合（例えば、コーヒーショップや他の公共の施設での無料 Wi-Fi ポータル画面に接続している時）、このウィンドウが表示され、ログインページが表示されます。",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "ネットワークの中には、初めは Captive Portal (ログイン時に強制的に飛ばされるポータルサイト) のように見えるものもあり、その場合このウィンドウが表示されますが、最終的にはインターネットに接続されます。その場合、このメッセージが表示されますが、このウィンドウは閉じても安全です。",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! ⋅ elementary": "接続されました！ - elementary"
 }
