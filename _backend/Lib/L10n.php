@@ -111,7 +111,7 @@ class L10n
         'it' => 'Italiano',
         'ja' => '日本語',
         'ko' => '한국어',
-        'ko_KR' => '한국어 (대한민국)'
+        'ko_KR' => '한국어 (대한민국)',
         'lt' => 'Lietuvių kalba',
         'ms' => 'bahasa Melayu',
         'nb' => 'Bokmål',
