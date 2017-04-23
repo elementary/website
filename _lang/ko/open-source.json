@@ -68,7 +68,7 @@
     "Bash": "Bash",
     "GCC": "GCC",
     "GNU C Library": "GNU C 라이브러리",
-    "Coreutils": "핵심유틸",
+    "Coreutils": "코어유틸",
     "Linux": "리눅스",
     "Filesystem, Hardware, Networking & Drivers": "파일 시스템, 하드웨어, 네트워킹 & 드라이버",
     "Kernel": "커널",
