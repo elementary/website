@@ -51,10 +51,10 @@
     "We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.": "",
     "The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:": "Komponenty oprogramowania elementary OS mogą być modyfikowane i rozpowszechniane zgodnie z zasadami ich licencji. Jednakże nasze znaki firmowe mogą być rozpowszechniane wyłącznie pod jednym, bądź więcej z następujących warunków:",
     "The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or": "Oprogramowanie pozostaje niezmienione, włączając w to preinstalowane programy, arkusze stylów i ikonografię, pliki konfiguracyjne, itd., albo",
-    "The modifications are approved in writing by elementary.": "",
+    "The modifications are approved in writing by elementary.": "Modyfikacje są zatwierdzone na piśmie przez elementary.",
     "We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a> for clarification or direction.": "",
-    "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "",
-    "Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.": "",
+    "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "Jeśli nie możesz, bądź nie chcesz przestrzegać tych warunków rozpowszechniania znaków towarowych, usunięcie ich z systemu operacyjnego powinno być proste i bezproblemowe:",
+    "Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.": "Zmodyfikuj linię <code>DISTRIB_DESCRIPTION</code> w pliku <code>/etc/lsb-release</code>, aby wykluczyć nasze znaki towarowe.",
     "Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.": "",
     "Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.": ""
 }
