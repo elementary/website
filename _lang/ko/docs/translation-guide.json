@@ -24,7 +24,7 @@
     "Transifex account": "",
     "Join our": "",
     "translation team": "",
-    "For more information about Transifex, you can refer to their <a href=\"http://docs.transifex.com/tutorials/txeditor\">documentation</a>.": "",
+    "For more information about Transifex, you can refer to their <a href=\"http://docs.transifex.com/tutorials/txeditor\">documentation</a>.": "Transifex에 대한 더욱 자세한 내용은 <a href=\"http://docs.transifex.com/tutorials/txeditor\">공식 사용 지침서</a>를 참고하세요.",
     "As with our apps, we follow Ubuntu’s <a href=\"https://help.launchpad.net/Translations/Guide\">general translator guide</a>, and for language specific issues we follow Ubuntu's <a href=\"https://translations.launchpad.net/+groups/ubuntu-translators\">team translation guidelines</a>.": "",
     "Our website is translated through <a href=\"https://l10n.elementary.io/projects/website/\">Weblate</a>. In order to submit translations, you should have a <a href=\"https://l10n.elementary.io/accounts/register/\">Weblate account</a>": "",
     "For more information about Weblate, you can refer to their <a href=\"https://docs.weblate.org/en/latest/\">documentation</a>.": ""
