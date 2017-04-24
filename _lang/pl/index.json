@@ -24,8 +24,8 @@
     "Videos": "Filmy",
     "Calendar": "Kalendarz",
     "Files": "Pliki",
-    "Terminal": "",
-    "Scratch": "",
+    "Terminal": "Terminal",
+    "Scratch": "Scratch",
     "Camera": "Aparat",
     "music screenshot": "Zrzut ekranu z muzyki",
     "music icon": "Ikona muzyki",
@@ -83,5 +83,5 @@
     "Cancel": "Anuluj",
     "Download": "Pobierz",
     "Torrent Magnet Link": "Odnośnik magnetyczny torrenta",
-    "A fast and open replacement for Windows and macOS ⋅ elementary OS": ""
+    "A fast and open replacement for Windows and macOS ⋅ elementary OS": "Szybki i otwarty zastępnik dla Windows oraz macOS ⋅ elementary OS"
 }
