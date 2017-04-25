@@ -1,8 +1,8 @@
 {
-    "You're connected!": "את\\ה מחובר\\ת!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "נראה שחיבור האינטרנט שלכם עובד. אתם יכולים לסגור את החלון הזה ולהמשיך להשתמש במכשירכם בבטחה.",
+    "You're connected!": "התחברת!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "נראה שהחיבור שלך לאינטרנט עובד. ניתן לסגור את החלון הזה ולהמשיך להשתמש במכשיר שלך.",
     "Why is this window appearing?": "מדוע החלון הזה מופיע?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Elementary OS בודקת את חיבור האינטרנט שלכם ברגע שאתם מתחברים לרשת אלחוטית חדשה. במידה וחיבור אינטרנט לא נמצא (לדוגמה: אם אתם מתחברים לרשת בתשלום בבית קפה או במלון בלי לשלם), החלון הזה יופיע ויציג את דף ההתחברות.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "כמה רשתות עלולות תחילה להיראות כרשתות קפסטיביות ובכך לגרום לחלון זה להופיע, אבל בסופו של דבר הן מתחברות. במקרים האלו, החלון הזה יוצג אבל ניתן לסגור אותו בבטחה.",
-    "You're connected! ⋅ elementary": ""
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS בודקת את חיבור האינטרנט שלך ברגע ההתחברות לרשת אלחוטית חדשה. אם אין חיבור לאינטרנט (לדוגמה: התחברות לרשת בתשלום בבית קפה או במיקום ציבורי אחר), חלון זה יופיע ויציג את דף הכניסה.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "כמה רשתות עלולות תחילה להיראות כרשתות הדורשות כניסה ובכך לגרום לחלון זה להופיע, אך בסופו של דבר הן מתחברות. במקרים כאלו, החלון הזה יוצג אבל ניתן לסגור אותו בבטחה.",
+    "You're connected! ⋅ elementary": "התחברת! ⋅ elementary"
 }
