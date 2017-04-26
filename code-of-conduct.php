@@ -9,7 +9,7 @@
             <div class="row">
                 <h1>Code of Conduct</h1>
                 <h2>Community Guidelines</h2>
-                <p>Being involved in the elementary community is an incredible experience; you get to be a part of something big, collaborate with people from around the world, and help people make their computers awesome. However, with that comes a responsibility to follow a predefined set of rules that ensures the best environment for all involved. The following rules are expected to be adhered to anytime you&rsquo;re involved with the community, be it on the elementary website, in an official IRC room, in person, or elsewhere.</p>
+                <p>Being involved in the elementary community is an incredible experience; you get to be a part of something big, collaborate with people from around the world, and help people make their computers awesome. However, with that comes a responsibility to follow a predefined set of rules that ensures the best environment for all involved. The following rules are expected to be adhered to any time you&rsquo;re involved with the community, be it in Slack, on GitHub, on an elementary community site, in person, or anywhere else.</p>
                 <h2>I. Respect</h2>
                 <p>Respecting others is paramount. Be sure to respect people and their opinions, personal background, privacy, and ideas. The elementary community is not a place for disrespectful or hurtful remarks for any reason whatsoever. When giving criticism, approach it constructively and respectfully. Personal attacks are not tolerated. When receiving constructive criticism, take it into consideration and thank the critic for their input, no matter your stance.</p>
                 <h2>II. Content</h2>
