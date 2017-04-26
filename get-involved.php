@@ -219,7 +219,7 @@
         </div>
         <div class="half">
             <h3>Visual Design</h3>
-            <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://plus.google.com/communities/104613975513761463450/stream/856346d7-1c23-4912-9549-bcfc76b32937" class="read-more">our Google+ Community</a></p>
+            <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" class="read-more">our GitHub Community</a></p>
 
             <div class="actions actions--column">
                 <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank" rel="noopener">Read the Interface Guidelines</a>
