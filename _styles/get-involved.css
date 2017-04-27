@@ -45,6 +45,10 @@ section {
     margin: 8px 16px 48px;
 }
 
+.design-links .button.flat {
+    margin: 12px auto;
+}
+
 /*********
 * Button *
 *********/
