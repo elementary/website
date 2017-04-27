@@ -38,15 +38,11 @@ section {
     max-width: 1200px;
 }
 
-.design-links a {
+.design-links > div {
     color: inherit;
     flex: 1 1 200px;
     text-align: center;
     margin: 0 16px;
-}
-
-.design-links p {
-    text-align: center;
 }
 
 /*********

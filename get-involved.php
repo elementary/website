@@ -215,22 +215,25 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Every project begins with an idea. Our Design Team turns these ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read our design guidelines <a class="read-more" href="/docs/human-interface-guidelines" target="_blank" rel="noopener">Learn More</a></p>
+            <p class="text-center">Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
         </div>
     </div>
     <div class="design-links">
-        <a href="https://github.com/elementary/stylesheet" target="_blank" rel="noopener">
+        <div>
             <img src="images/get-involved/stylesheet.svg">
-            <p>The entire elementary OS UI is styled with CSS.</p>
-        </a>
-        <a href="https://github.com/elementary/icons" target="_blank" rel="noopener">
+            <p>elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.</p>
+            <a class="button flat" href="https://github.com/elementary/stylesheet" target="_blank" rel="noopener">Browse Our Stylesheet</a>
+        </div>
+        <div>
             <img src="images/get-involved/icons.svg">
-            <p>elementary OS comes with a set of vector icons that are used across the system.</p>
-        </a>
-        <a href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">
+            <p>elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.</p>
+            <a class="button flat" href="https://github.com/elementary/icons" target="_blank" rel="noopener">Browse Our Icons</a>
+        </div>
+        <div>
             <img src="images/get-involved/bugs.svg">
-            <p>We keep track of "Needs Design" issues in GitHub.</p>
-        </a>
+            <p>Our design team tracks "Needs Design" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.</p>
+            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse Needs Design Issues</a>
+        </div>
     </div>
 </section>
 
