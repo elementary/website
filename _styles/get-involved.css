@@ -31,6 +31,24 @@ section {
     }
 }
 
+.design-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.design-links a {
+    color: inherit;
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 0 16px;
+}
+
+.design-links p {
+    text-align: center;
+}
+
 /*********
 * Button *
 *********/
