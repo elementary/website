@@ -215,25 +215,24 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Every project begins with an idea. Our Design Team takes these and turns them into clear blueprints and bug reports. We break up design into two main components:</p>
+            <p class="text-center">Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
         </div>
-        <div class="half">
-            <h3>Visual Design</h3>
-            <p>We're always open to new ideas for elementary OS's visual design. Get started by sharing mockups with <a href="https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" class="read-more">our GitHub Community</a></p>
-
-            <div class="actions actions--column">
-                <a class="button flat suggested-action" href="/docs/human-interface-guidelines" target="_blank" rel="noopener">Read the Interface Guidelines</a>
-                <a class="button flat" href="https://github.com/elementary/mockups">See Our Mockups</a>
-            </div>
+    </div>
+    <div class="design-links">
+        <div>
+            <img src="images/get-involved/stylesheet.svg">
+            <p>elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.</p>
+            <a class="button flat" href="https://github.com/elementary/stylesheet" target="_blank" rel="noopener">Browse Our Stylesheet</a>
         </div>
-        <div class="half">
-            <h3>Interaction Design</h3>
-            <p>We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.</p>
-
-            <div class="actions actions--column">
-                <a class="button flat suggested-action" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Read About Our Workflow</a>
-                <a class="button flat" href="https://blueprints.launchpad.net/elementary" target="_blank" rel="noopener">Browse Our Blueprints</a>
-            </div>
+        <div>
+            <img src="images/get-involved/icons.svg">
+            <p>elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.</p>
+            <a class="button flat" href="https://github.com/elementary/icons" target="_blank" rel="noopener">Browse Our Icons</a>
+        </div>
+        <div>
+            <img src="images/get-involved/bugs.svg">
+            <p>Our design team tracks "Needs Design" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.</p>
+            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse Needs Design Issues</a>
         </div>
     </div>
 </section>
