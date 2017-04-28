@@ -1,9 +1,9 @@
 <?php
 
+require_once __DIR__ . '/bootstrap.php';
+
 // Setup sentry error logging
 if (isset($config['sentry_key']) && $config['sentry_key'] !== false) {
-    include_once __DIR__.'/lib/autoload.php';
-
     $sentry = new Raven_Client($config['sentry_key']);
     $sentry->install();
 }

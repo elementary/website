@@ -4,17 +4,17 @@
     "Camera": "Камера",
     "Files": "Датотеке",
     "Geary": "Гири",
-    "Epiphany": "Epiphany",
+    "Epiphany": "",
     "Music": "Музика",
     "Photos": "Слике",
-    "Text Editor": "Text Editor",
+    "Text Editor": "",
     "System Settings": "Системске поставке",
     "Videos": "Снимци",
     "Installation": "Инсталирање",
     "Get help installing elementary OS with our step-by-step guide.": "Нађите помоћ за инсталирање elementary OS-а на Ваш рачунар пратећи наше упутство корак по корак.",
     "Learning the Basics": "Основе",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Проучите десктоп, мултитаскинг, пречице на тастатури и више.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Проверите одговоре на нека од најчешћих питања која добијамо.",
-    "Support &sdot; elementary": "Подршка ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

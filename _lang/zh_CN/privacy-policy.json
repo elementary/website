@@ -2,8 +2,8 @@
     "Privacy Policy": "隐私政策",
     "Do Not Track": "请勿跟踪（DNT）",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "本网站遵循多数浏览器支持的请勿跟踪（DNT）设置，并会根据此设置禁用 Google Analytics。我们不会自动移除其他跟踪方法，因为这会严重影响网站的使用。如果您希望手动管理这些跟踪方法，请参考禁用 Cookies 这一节。",
-    "Cookies": "Cookies",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "在您的浏览器设置中可以选择禁用或选择性地关闭任何cookie和第三方cookie。",
+    "Cookies": "",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "在您的浏览器设置中可以选择禁用或选择性地关闭任何cookie和第三方cookie。",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "本网站使用 Cookies 来完成一些增量功能。没有 Cookies，您仍可使用各种服务及功能，但是可用性会下降。例如，本网站将不会记录您是否为 elementary OS 付过费，默认情况下您将再次被请求付费。",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "保存 Cookies 以记录行为元素和潜在威胁。更多信息请参考：",
     "CloudFlare Privacy & Security Policy": "CloudFlare 隐私和安全政策",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "由于您已经访问过本网站，您可能希望管理已经在您浏览器中存储的 Cookies。相关说明参见如下链接。",
     "Transparency": "透明度",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "我们没有在软件中安插任何后门，也没有收到过要求这么做的请求。我们也从来没有收到过试图取得用户信息的国家安全调查令，FISA命令或任何特定请求。",
-    "Privacy Policy &sdot; elementary": "隐私政策 ⋅ elementary"
+    "Privacy Policy ⋅ elementary": ""
 }

@@ -46,7 +46,8 @@ glob.sync(scriptPattern).forEach((p) => {
     const name = p
     .replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
     .replace('.js', '')
-    scriptFiles[name] = p
+
+    scriptFiles[name] = [path.resolve(__dirname, '_scripts', 'polyfill.js'), p]
 })
 
 export default {
@@ -54,7 +55,7 @@ export default {
     entry: scriptFiles,
     output: {
         filename: '[name].js',
-        path: './scripts',
+        path: path.resolve(__dirname, 'scripts'),
         publicPath: '/scripts',
         sourceMapFilename: '[name].map.js'
     },
@@ -77,12 +78,9 @@ export default {
         }
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            'Promise': 'imports-loader?this=>global!exports-loader?global.Promise!core-js/library/es6/promise'
-        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
-            minChunks: Infinity
+            minChunks: 2
         }),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,

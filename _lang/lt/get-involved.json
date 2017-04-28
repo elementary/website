@@ -8,6 +8,9 @@
     "Desktop": "Darbalaukis",
     "Design": "Dizainas",
     "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Jūsų dėka, mes galėjome iš mažos aistringų savanorių grupės užaugti į mažą kompaniją. Su kiekviena maža pagalba mes darome žingsnį link pilno etato kūrėjo įdarbinimo.",
+    "Indiegogo": "Indiegogo",
+    "We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.": "",
+    "Back AppCenter": "",
     "Patreon": "Patreon",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon veikia kaip pastoviai vykstanti didelės žmonių grupės rėmimo kampanija. Pasirinkite sumą, gaukite atlygius bei padėkite mums pasiekti savo tikslų.",
     "Learn More": "Sužinokite daugiau",
@@ -52,5 +55,10 @@
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "Išsamių paaiškinimų, apie naujas ypatybes ir pakeitimus naudotojo sąsajoje, kūrimui, mes naudojame Launchpad esančią sistemą, vadinamą \"Blueprints\".",
     "Read About Our Workflow": "Skaityti apie mūsų darbo eigą",
     "Browse Our Blueprints": "Naršyti mūsų projektus",
-    "Get Involved with elementary OS": "Įsitraukite į elementary OS"
+    "Get Involved with elementary OS": "Įsitraukite į elementary OS",
+    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "",
+    "Both elementary OS and our website are openly translated using an online platform called Weblate.": "Tiek elementary OS, tiek ir mūsų svetainė yra atvirai verčiama, naudojant internetinę platformą, pavadinimu \"Weblate\".",
+    "Suggest Translations": "Siūlyti vertimus",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "",
+    "Browse Our Code": "Naršyti mūsų kodą"
 }
