@@ -4,7 +4,7 @@
     "Camera": "Камера",
     "Files": "Файлове",
     "Geary": "Поща (Geary)",
-    "Epiphany": "Epiphany",
+    "Epiphany": "",
     "Music": "Музика",
     "Photos": "Снимки",
     "Text Editor": "Текстов Редактор",
@@ -13,8 +13,8 @@
     "Installation": "Инсталиране",
     "Get help installing elementary OS with our step-by-step guide.": "Получете помощ за инсталирането на elementary OS следвайки нашето ръководство за инсталиране.",
     "Learning the Basics": "Изучаване на Основите",
-    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Walk through the desktop, multi-tasking, keyboard shortcuts and more.",
-    "StackExchange": "StackExchange",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Вижте отговорите на някои от най-често задаваните въпроси.",
-    "Support &sdot; elementary": "Поддръжка ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

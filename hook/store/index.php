@@ -4,8 +4,7 @@
  * Verifies hook variables and passes data to individual hook files
  */
 
-require_once __DIR__.'/../../_backend/lib/autoload.php';
-require_once __DIR__.'/../../_backend/config.loader.php';
+require_once __DIR__ . '/../../_backend/bootstrap.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -26,10 +25,11 @@ try {
 }
 
 if (
-    ($res['store'] !== 148324) ||
-    !isset($res['type']) ||
-    !isset($res['data']['shipment']['service']) ||
-    !isset($res['data']['order']['external_id'])
+    (!isset($res['store']) ||
+     !isset($res['type']) ||
+     !isset($res['data']['shipment']['service']) ||
+     !isset($res['data']['order']['external_id']) ||
+     $res['store'] !== 148324)
 ) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Incomplete data';

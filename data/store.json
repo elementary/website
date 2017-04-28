@@ -1,51 +1,51 @@
 [
     {
         "id": 1,
-        "printful_id": 5,
-        "name": "Men's Cotton T-Shirt",
-        "description": "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel. <br/><a class='read-more' href='https://www.americanapparel.net/sizing/default.asp?chart=mu.shirts'>Size Chart</a>",
-        "image": "images\/store\/apparel\/cotton_logotype_mens.png",
+        "printful_id": 162,
+        "name": "Men's Logo T-Shirt",
+        "description": "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "image": "images\/store\/apparel\/track_logotype_mens_aqua.png",
         "type": "Apparel",
         "variants": [
             {
                 "id": 1,
-                "printful_id": 126,
-                "name": "S Cotton Men's",
+                "printful_id": 6465,
+                "name": "S Tri Men's",
                 "size": "S",
-                "color": "Teal",
-                "cost": 14.85,
+                "color": "Aqua Triblend",
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 188,
-                "name": "M Cotton Men's",
+                "printful_id": 6466,
+                "name": "M Tri Men's",
                 "size": "M",
-                "color": "Teal",
-                "cost": 14.85,
+                "color": "Aqua Triblend",
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 250,
-                "name": "L Cotton Men's",
+                "printful_id": 6467,
+                "name": "L Tri Men's",
                 "size": "L",
-                "color": "Teal",
-                "cost": 14.85,
+                "color": "Aqua Triblend",
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 312,
-                "name": "XL Cotton Men's",
+                "printful_id": 6468,
+                "name": "XL Tri Men's",
                 "size": "XL",
-                "color": "Teal",
-                "cost": 14.85,
+                "color": "Aqua Triblend",
+                "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 374,
-                "name": "2XL Cotton Men's",
+                "printful_id": 6469,
+                "name": "2XL Tri Men's",
                 "size": "2XL",
-                "color": "Teal",
-                "cost": 16.35,
+                "color": "Aqua Triblend",
+                "cost": 17.25,
                 "price": 26.00
             }
         ],

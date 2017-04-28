@@ -3,18 +3,18 @@
     "Calendar": "Kalender",
     "Camera": "Kaamera",
     "Files": "Failid",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Muusika",
     "Photos": "Fotod",
-    "Text Editor": "Text Editor",
+    "Text Editor": "",
     "System Settings": "Süsteemi seaded",
     "Videos": "Videod",
     "Installation": "Paigaldamine",
     "Get help installing elementary OS with our step-by-step guide.": "Täpsed juhised elementary OS samm-sammult paigaldamiseks.",
     "Learning the Basics": "Põhitõed",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Töölaua, multitegumitöö, klaviatuuri otseteede ja muu vajaliku tutvustus.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Vastused mõnedele enamlevinud küsimustele.",
-    "Support &sdot; elementary": "Tugi ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

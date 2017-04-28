@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Per què apareix aquesta finestra?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS comprova automàticament la vostra connexió a internet quan us connecteu a una xarxa WiFi nova. Si detecta que no hi ha connexió a internet (p.e. si us esteu connectant a un portal captiu a una cafeteria o altra ubicació pública), aquesta finestra apareixerà i mostrarà la pàgina d'inici de sessió.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Algunes xarxes poden parèixer un portal captiu al principi, mostrant aquesta finestra, i després acaben connectant-se. En aquells casos, veureu aquest missatge i podreu tancar la finestra tranquil·lament.",
-    "You're connected! &sdot; elementary": "Esteu connectat! ⋅ elementary"
+    "You're connected! ⋅ elementary": "Esteu connectat! ⋅ elementary"
 }

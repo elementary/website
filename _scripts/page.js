@@ -47,12 +47,25 @@ export function branch () {
  * url
  * Returns full base url of the website
  *
- * @return {String} - full url base path for website
+ * @return {String} - full url base path for website _WITHOUT_ trailing slash
  */
 export function url () {
-    if (window.location.host === 'beta.elementary.io' && branch() != null) {
-        return `${window.location.origin}/${branch()}`
+    let basePath = window.location.origin
+
+    // For the old browsers that probably shouldn't be on the web anymore
+    if (basePath == null) {
+        basePath = `${window.location.protocol}//${window.location.hostname}`
+        if (window.location.port) basePath = `${basePath}:${window.location.port}`
     }
 
-    return window.location.origin
+    // Trim all of the crap at the end of the url
+    basePath = basePath.split('#')[0]
+    if (basePath[basePath.length - 1] === '/') basePath = basePath.substring(0, basePath.length - 1)
+
+    // Ensure we fix this _one_ edge case
+    if (basePath === 'https://beta.elementary.io' && branch() != null) {
+        return `${basePath}/${branch()}`
+    }
+
+    return basePath
 }

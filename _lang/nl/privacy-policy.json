@@ -2,8 +2,8 @@
     "Privacy Policy": "Privacybeleid",
     "Do Not Track": "Volg mij niet",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Deze site eert de do-not-track instelling welke te vinden is in de meeste moderne browsers en schakelt Google Analytics uit als het ingeschakeld is. We kunnen niet automatisch andere opsporingsmethoden verwijderen zonder het gebruik van de site ernstig te beïnvloeden. Mocht je deze methoden handmatig willen beheren, raadpleeg dan de sectie over het uitschakelen van cookies.",
-    "Cookies": "Cookies",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "Je kunt ervoor kiezen om cookies of cookies van derden in de instellingen van de browser uit te schakelen of selectief uit te schakelen.",
+    "Cookies": "",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Je kunt ervoor kiezen om cookies of cookies van derden in de instellingen van de browser uit te schakelen of selectief uit te schakelen.<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Deze site maakt gebruik van cookies voor incrementele verbeteringen. Je kunt deze functie van de diensten gebruiken zonder cookies, maar met een beperkte bruikbaarheid. Bijvoorbeeld, zal de site het niet herinneren als je al eerder hebt betaald voor elementary OS; standaard zal je worden gevraagd opnieuw te betalen.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Slaat cookies op om gedragsmatige elementen te loggen en het analyseren van potentiële bedreigingen. Voor meer informatie, zie de",
     "CloudFlare Privacy & Security Policy": "CloudFlare privacy & security beleid",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Omdat je onze site al eens hebt bezocht, kan je desgewenst cookies welke reeds zijn ingesteld in uw browser beheren. Links naar de relevante instructies kan je hieronder vinden.",
     "Transparency": "Transparantie",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "We hebben geen achterdeurtjes in onze software geplaatst en hebben hiertoe ook geen verzoeken gekregen. Ook hebben we nooit een nationale veiligheids brief (National Security letter), een FISA verzoek, of een ander geheim verzoek voor gebruikersinformatie ontvangen.",
-    "Privacy Policy &sdot; elementary": "Privacybeleid ⋅ elementary"
+    "Privacy Policy ⋅ elementary": ""
 }
