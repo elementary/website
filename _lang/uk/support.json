@@ -3,8 +3,8 @@
     "Calendar": "Календар",
     "Camera": "Камера",
     "Files": "Файловий менеджер",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Музика",
     "Photos": "Фотографії",
     "Text Editor": "Текстовий редактор",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Отримайте допомогу з встановлення elementary OS на ваш комп'ютер звернушись до нашої покрокової інструкціїї.",
     "Learning the Basics": "Основи",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Огляд робочого столу, багатозадачності, гарячих клавіш та іншого.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Перегляньте наші відповіді на поширені запитання, які ми отримуємо.",
-    "Support &sdot; elementary": "Довідка ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

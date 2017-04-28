@@ -3,7 +3,7 @@
     "Do Not Track": "Không theo dõi",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Trang web này tôn trọng thiết lập \"không theo dõi\" ở các trình duyệt mới và tắt Google Analytics. Chúng tôi không thể tự động loại bỏ những phương thức theo dõi khác mà không gây tác động lớn đến việc sử dụng trang web. Nếu bạn muốn tự tay quản lý những phương thức theo dõi này, hãy tham khảo mục vô hiệu hóa cookie. ",
     "Cookies": "Cookie",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Bạn có thể chọn cách vô hiệu hóa hoặc tắt bất kì cookie nào ở mục tùy chỉnh hay thiết lập trong trình duyệt của bạn</strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Bạn có thể chọn cách vô hiệu hóa hoặc tắt bất kì cookie nào ở mục tùy chỉnh hay thiết lập trong trình duyệt của bạn<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Trang web này sử dụng cookie để nâng cao hiệu quả hoạt động. Bạn có thể thấy dịch vụ hoạt động không hiệu quả nếu như bạn tắt cookie. Ví dụ, trang web sẽ không ghi nhớ việc bạn đã đóng góp tiền giúp elementary OS; mặc định là bạn sẽ bị hỏi lại câu hỏi đấy.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Lưu trữ cookie để ghi lại hoạt động và phân tích cái hiểm họa tiềm ẩn. Để biết thêm thông tin chi tiết, hãy xem",
     "CloudFlare Privacy & Security Policy": "Chính sách bảo mật & Quyền riêng tư của CloudFlare",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Sau khi đã tham quan trang web của chúng tôi, bạn có thể muốn quản lý thông tin cookie đã được thiết lập ở trình duyệt. Liên kết đến các bài hướng dẫn có thể xem bên dưới.",
     "Transparency": "Sự trong suốt",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Chúng tôi không tạo ra backdoor naod trong phần mềm của chúng tối và không nhận được bất kỳ yêu cầu nào để làm như vậy. Chúng tôi sẽ không bao giờ chấp nhận các yêu cầu National Security Letter, FISA hoặc các yêu cầu mật để cung cấp thông tin người dùng.",
-    "Privacy Policy &sdot; elementary": "Chính sách bảo mật ⋅ elementary"
+    "Privacy Policy ⋅ elementary": ""
 }

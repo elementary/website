@@ -4,6 +4,8 @@
  */
 
 import gulp from 'gulp'
+import cache from 'gulp-cached'
+import changed from 'gulp-changed'
 
 import imagemin from 'gulp-imagemin'
 import svgo from 'gulp-svgo'
@@ -28,6 +30,8 @@ gulp.task('png', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('png'))
     .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
@@ -44,6 +48,8 @@ gulp.task('jpg', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('jpg'))
     .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
@@ -127,6 +133,8 @@ gulp.task('svg', () => {
     const dest = 'images'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('svg'))
     .pipe(svgo())
     .pipe(gulp.dest(dest))
 })
@@ -151,6 +159,7 @@ gulp.task('styles', () => {
     const dest = 'styles'
 
     return gulp.src(src, { base })
+    .pipe(changed(dest))
     .pipe(postcss([
         cssnext({ browsers })
     ]))
