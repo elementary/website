@@ -10,6 +10,8 @@
     "core-js": "^2.4.1",
     "glob": "^7.1.1",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
     "gulp-svgo": "^1.0.3",
