@@ -3,7 +3,7 @@
     "Do Not Track": "Žádné sledování",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Tato stránka respektuje nastavení \"Nesledovat\", které je dostupné ve většině moderních prohlížečů a vypíná Google Analytics, pokud je spuštěno. Ostatní metody sledování nemůžeme odstranit aniž bychom negativně ovlivnily funkcionalitu stránek. Pokud byste chtěli ručně spravovat tyto metody sledování, můžete se o jejich vypnutí dozvědět více v sekci o blokování souborů cookies.",
     "Cookies": "Soubory cookies",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Můžete si vybrat jestli chcete vypnout cokkies ve vašem prohlížeči, v nastavení.</strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Můžete si vybrat jestli chcete vypnout cokkies ve vašem prohlížeči, v nastavení.<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Tato stránka používá soubory cookies pro své zdokonalování. Stránky budou i bez nich dále fungovat ale můžete zaznamenat omezenou funkcionalitu. Například si stránka nebude pamatovat, že jste již dříve za elementary OS zaplatili a znovu Vás o platbu požádá.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Ukládá soubory cookies aby mohl sledovat chování a analyzovat potencionální hrozby. Pro více informací navštivte",
     "CloudFlare Privacy & Security Policy": "Zásady ochrany osobních údajů a bezpečnosti CloudFlare",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Jelikož už jste naši stránku navštívili, možná budete chtít spravovat soubory cookies, které se ve Vašem prohlížeči vytvořili. Odkazy s konkrétními instrukcemi najdete níže.",
     "Transparency": "Transparentnost",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Nevložili jsme žádná zadní vrátka do našeho softwaru a ani nás o to nikdo nežádal. Ani jsme nikdy nedostali dopis národní bezpečnosti, FISA rozkaz, nebo jakoukoliv jinou žádost pro informace uživatelů.",
-    "Privacy Policy &sdot; elementary": "Zásady ochrany osobních údajů - elementary"
+    "Privacy Policy ⋅ elementary": ""
 }

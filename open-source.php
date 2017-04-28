@@ -186,8 +186,8 @@
         <a href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
             <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let’s Encrypt" />
         </a>
-        <a href="http://wiki.osmfoundation.org/wiki/Donate" title="Open Street Map">
-            <img class="oss-logo" src="images/open-source/osm.svg" alt="Open Street Map" />
+        <a href="http://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
+            <img class="oss-logo" src="images/open-source/osm.svg" alt="OpenStreetMap" />
         </a>
         <a href="http://www.rodsbooks.com/refind/" title="rEFInd">
             <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd" />

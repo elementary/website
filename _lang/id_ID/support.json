@@ -3,8 +3,8 @@
     "Calendar": "Kalender",
     "Camera": "Kamera",
     "Files": "Berkas",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Musik",
     "Photos": "Foto",
     "Text Editor": "Editor Teks",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Dapatkan bantuan dalam memasang elementary OS dengan panduan kami.",
     "Learning the Basics": "Mempelajari Dasarnya",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Demo pada desktop, multi-tasking, pintasan keyboard dan lainnya.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Lihat jawaban dari pertanyaan-pertanyaan yang sering kami dapatkan.",
-    "Support &sdot; elementary": "Dukungan ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

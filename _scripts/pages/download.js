@@ -14,8 +14,9 @@ import Stripe from '~/lib/stripe'
 import streamSaver from '~/lib/streamsaver'
 import WebTorrent from '~/lib/webtorrent'
 
-import Payment from '~/widgets/payment'
+import { url } from '~/page'
 import config from '~/config'
+import Payment from '~/widgets/payment'
 
 
 Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorrent, modal]).then(([config, ga, $, Payment, streams, streamSaver, WebTorrent]) => {
@@ -30,6 +31,7 @@ Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorren
         // ACTION: amountSelect: Track the current and previous amounts selected.
         var amountSelect = function (e) {
             var targetID = $(e.target).attr('id') // avoids null values vs native js
+            console.log('Setting payment target to #' + targetID)
             if (currentButton !== targetID) previousButton = currentButton
             currentButton = targetID
 
@@ -118,10 +120,11 @@ Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorren
                 payment.checkout(paymentAmount, 'USD')
                 .then(([token]) => doStripePayment(paymentAmount, token))
                 .then(() => openDownloadOverlay())
+                .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
                 .catch((err) => {
                     console.error('Error while making payment')
                     console.error(err)
-
+                    ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
                     openDownloadOverlay() // Just in case. Don't interupt the flow
                     throw err // rethrow so it can be picked up by error tracking
                 })
@@ -153,25 +156,26 @@ Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorren
 
         // ACTION: doStripePayment: Actually process the payment via Stripe
         function doStripePayment (amount, token) {
-            var paymentHTTP, $amountTen
-            $amountTen = $('#amount-ten')
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Complete)', 'Homepage', amount)
+            var $amountTen = $('#amount-ten')
             if ($amountTen.val() !== 0) {
                 $('#pay-what-you-want').remove()
                 $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
-                $amountTen.each(amountSelect)
+                currentButton = 'amount-ten'
                 updateDownloadButton()
             }
-            paymentHTTP = new XMLHttpRequest()
-            paymentHTTP.open('POST', './api/payment.php', true)
-            paymentHTTP.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-            paymentHTTP.send(
-                'description=' + encodeURIComponent(config.release.title + ' ' + config.release.version) +
-                '&amount=' + amount +
-                '&token=' + token.id +
-                '&email=' + encodeURIComponent(token.email) +
-                '&os=' + detectedOS
-            )
+
+            // Because jQuery "promises" are not A+ standard
+            return new Promise((resolve, reject) => {
+                $.post(`${url()}/api/payment`, {
+                    description: `${config.release.title} ${config.release.version}`,
+                    amount: amount,
+                    token: token.id,
+                    email: token.email,
+                    os: detectedOS
+                })
+                .done((res) => resolve(res))
+                .fail((xhr, status) => reject(new Error(status)))
+            })
         }
 
         // ACTION: .download-http.click: Track download over HTTP

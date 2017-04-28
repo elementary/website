@@ -5,9 +5,9 @@
  * Accepts payment for current release
  */
 
-require_once __DIR__ . '/../_backend/config.loader.php';
+require_once __DIR__ . '/../_backend/bootstrap.php';
+
 require_once __DIR__ . '/../_backend/email/os-payment.php';
-require_once __DIR__ . '/../_backend/lib/autoload.php';
 require_once __DIR__ . '/../_backend/log-echo.php';
 require_once __DIR__ . '/../_backend/os-payment.php';
 
@@ -37,6 +37,8 @@ if (isset($_POST['token'])) {
         // Don't use log_echo because we don't want finance stuff echoing.
         error_log($e);
         $sentry->captureMessage($e);
+
+        http_response_code(500);
         echo 'An error occurred.';
         die();
     }
