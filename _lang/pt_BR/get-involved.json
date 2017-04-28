@@ -7,7 +7,10 @@
     "Web": "Web",
     "Desktop": "Sistema",
     "Design": "Design",
-    "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Com sua ajuda, fomos capazes de crescer de um pequeno grupo de voluntários aficionados para uma pequena empresa. Cada ajuda, por menor que seja, já é um passo à frente para contratarmos mais um desenvolvedor em tempo integral.",
+    "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Com sua ajuda, fomos capazes de crescer de um pequeno grupo de voluntários aficionados para uma pequena empresa. Cada pequena ajuda nos deixa mais próximos de poder contratar mais um desenvolvedor em tempo integral.",
+    "Indiegogo": "Indiegogo",
+    "We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.": "Atualmente estamos realizando uma campanha de financiamento coletivo para o AppCenter, a loja de apps pague-o-quanto-quiser, no Indiegogo. Nos apoiando lá, você estará nos ajudando a pagar para que o nosso time remoto se encontre pessoalmente com desenvolvedores da nossa comunidade, para um sprint de uma semana em Denver, no Colorado (US).",
+    "Back AppCenter": "Apoie o AppCenter",
     "Patreon": "Patreon",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "O Patreon trabalha como uma campanha de financiamento coletivo. Escolha uma quantia, ganhe recompensas e nos ajude a alcançar nossas metas.",
     "Learn More": "Saiba mais",
@@ -52,5 +55,10 @@
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "Nós usamos um sistema no Launchpad chamado Blueprints para criar explicações detalhadas de novas características e mudanças na interface do usuário.",
     "Read About Our Workflow": "Leia sobre o nosso Fluxo de Trabalho",
     "Browse Our Blueprints": "Explore nossos Blueprints",
-    "Get Involved with elementary OS": "Participe do elementary OS"
+    "Get Involved with elementary OS": "Participe do elementary OS",
+    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "Bountysource coloca fundos diretamente nas mãos de desenvolvedores através de recompensas por correções ou novos recursos. Ofereça uma recompensa nos itens que mais importam pra você ou apoie um app específico. Você também pode fazer uma doação recorrente (assinatura).",
+    "Both elementary OS and our website are openly translated using an online platform called Weblate.": "Tanto o elementary OS e nosso site são traduzidos abertamente, usando uma plataforma online chamada Weblate.",
+    "Suggest Translations": "Sugira Traduções",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "",
+    "Browse Our Code": ""
 }

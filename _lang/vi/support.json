@@ -1,10 +1,10 @@
 {
     "Get support for": "Nhận hỗ trợ cho",
     "Calendar": "Lịch",
-    "Camera": "Camera",
+    "Camera": "",
     "Files": "Tập tin",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Âm nhạc",
     "Photos": "Ảnh",
     "Text Editor": "Công cụ chỉnh sửa text",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Nhận sự trợ giúp cài đặt hệ điều hành elementary với hướng dẫn từng bước của chúng tôi.",
     "Learning the Basics": "Tìm hiểu về những điều Cơ bản",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Xem qua desktop, đa nhiệm, phím tắt và nhiều hơn nữa.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Xem qua những câu trả lời cho những câu hỏi thường gặp nhất mà chúng tôi nhận được.",
-    "Support &sdot; elementary": "Hỗ trợ ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

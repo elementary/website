@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "Hoppá! Ez a hivatkozás lejárt.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">file an issue on our GitHub<\/a>.": "Ha az elementary OS-t probálod meg letölteni, kérlek lépj vissza a főoldalra. Ha valami mást keresel, nyugodtan <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">nyiss egy issue-t a GitHub-on<\/a>.",
     "Go to Home Page": "Ugrás a kezdőlapra",
-    "Download Link Expired &sdot; elementary": "Lejárt a letöltő hivatkozás - elementary"
+    "Download Link Expired ⋅ elementary": ""
 }

@@ -8,6 +8,9 @@
     "Desktop": "Työpöytä",
     "Design": "Suunnittelu",
     "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Sinun avullasi olemme kyenneet kasvamaan pienestä vapaaehtoisryhmästä pieneksi yritykseksi. Toisen täysiaikaisen kehittäjän palkkaaminen on entistä lähempänä jokaisen avustuksen myötä.",
+    "Indiegogo": "Indiegogo",
+    "We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.": "",
+    "Back AppCenter": "Tue sovelluskeskusta",
     "Patreon": "Patreon",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon toimii kuten joukkorahoituskampanja. Valitse lahjoituksen summa, saa palkkioita ja auta meitä tavoitteissamme.",
     "Learn More": "Lisätietoja",
@@ -52,5 +55,10 @@
     "We use a system on Launchpad called Blueprints to create detailed explanations of new features and changes to the user interface.": "Käytämme Launchpadin Blueprints-ominaisuutta luodaksemme yksityiskohtaiset selvitykset uusista ominaisuuksia ja muutoksista käyttöliittymiin.",
     "Read About Our Workflow": "Lue lisää työnkulusta",
     "Browse Our Blueprints": "Selaa määrittelyjä",
-    "Get Involved with elementary OS": "Osallistu elementary OS:ään"
+    "Get Involved with elementary OS": "Osallistu elementary OS:ään",
+    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "",
+    "Both elementary OS and our website are openly translated using an online platform called Weblate.": "Sekä elementary OS että tämä verkkosivusto ovat avoimesti käännettävissä verkkokäännösalusta Weblatea käyttäen.",
+    "Suggest Translations": "Ehdota käännöksiä",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "",
+    "Browse Our Code": "Selaa koodia"
 }

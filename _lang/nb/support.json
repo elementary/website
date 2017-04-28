@@ -3,7 +3,7 @@
     "Calendar": "Kalender",
     "Camera": "Kamera",
     "Files": "Filer",
-    "Geary": "Geary",
+    "Geary": "",
     "Epiphany": "Epiphany",
     "Music": "Musikk",
     "Photos": "Bilder",
@@ -11,10 +11,10 @@
     "System Settings": "Systeminnstillinger",
     "Videos": "Videoer",
     "Installation": "Installasjon",
-    "Get help installing elementary OS with our step-by-step guide.": "Få hjelp til å installere elementary OS med vår steg-for-steg installasjonsveiledning.",
+    "Get help installing elementary OS with our step-by-step guide.": "Få hjelp til å installere elementary OS med stegvise installasjonsveiledning.",
     "Learning the Basics": "Lær det grunnleggende",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Gå gjennom skrivebordet, fleroppgavekjøring, hurtigtaster og mer.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Sjekk svarene på noen av de vanligste spørsmålene vi får.",
-    "Support &sdot; elementary": "Brukerstøtte ⋅ elementary"
+    "Support ⋅ elementary": ""
 }
