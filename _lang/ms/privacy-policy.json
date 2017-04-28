@@ -3,7 +3,7 @@
     "Do Not Track": "Jangan Jejak",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Laman ini menghormati tetapan jangan-jejak yang ada dalam kebanyakan pelayar modern dan lumpuhkan Google Analytics bila ia hadir. Kami tidak dapat membuang lain-lain kaedah penjejakan tanpa menjejaskan penggunaan pada laman ini. Sekiranya anda mahu mengurus kaedah penjejakan secara manual, rujuk ke seksyen melumpuhkan kuki.",
     "Cookies": "Kuki",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Anda boleh pilih untuk lumpuhkan atau matikan kuki atau kuki pihak ketiga secara terpilih di dalam tetapan pelayar anda.</strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Anda boleh pilih untuk lumpuhkan atau matikan kuki atau kuki pihak ketiga secara terpilih di dalam tetapan pelayar anda.<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Laman ini menggunakan kuki untuk penambahbaikan berterusan. Anda dapati perkhidmatan boleh berfungsi tanpanya tetapi dengan kebolehgunaan yang amat terhad. Sebagai contoh, laman sesawang tidak dapat mengingati jika anda sebelum ini telah membeli elementary OS; ia akan meminta anda membayarnya sekali lagi.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Simpan kuki untuk logkan elemen berkelakuan dan analisis ancaman yang mungkin hadir. Untuk maklumat lanjut sila rujuk",
     "CloudFlare Privacy & Security Policy": "Dasar Keselamatan & Kerahsiaan CloudFlare",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Anda anda telah melawati laman kami, anda mungkin mahu mengurus kuki yang telah ditetapkan dalam pelayar anda. Pautan ke arahan berkenaan boleh didapati di bawah.",
     "Transparency": "Ketelusan",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Kami tidak letak mana-mana pintu belakang di sebalik perisian kami dan tidak menerima mana-mana permintaan untuk melakukannya. Kami juga tidak sesekali menerima Surat daripada National Security, FISA atau lain-lain permintaan sulit untuk meminta maklumat pengguna.",
-    "Privacy Policy &sdot; elementary": "Dasar Kerahsiaan ⋅ elementary"
+    "Privacy Policy ⋅ elementary": ""
 }

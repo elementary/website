@@ -3,7 +3,7 @@
     "Do Not Track": "لا للتتبع",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "في هذا الموقع نفتخر بخاصية لا للتتبع الموجودة في أغلب المتصفحات المتطورة وتعطيل \"تحليلات جوجل\" إذا وجدت. نحن لا نستطيع حذف أساليب التتبع الأخرى تلقائيا بدون التأثير المضر على أداء الموقع. إن كنت ترغب في إدارة أساليب التتبع يدوياً، راجع مرجع تعطيل الكوكيز.",
     "Cookies": "الكوكيز",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "يمكنك اختيار توقيف او ايقاف أي الكوكيز أو أي كوكيز من طرف آخر في إعدادات متصفحك",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "يمكنك اختيار توقيف او ايقاف أي الكوكيز أو أي كوكيز من طرف آخر في إعدادات متصفحك",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "هذا الموقع يستعمل الكوكيز للتحسينات التدريجية. قد يعمل الموقع بدونها ولكن سيقلل من قابلية الاستخدام. مثلا، الموقع لن يتدكر إذا ما قمت بالدفع لشراء نظام التشغيل المنتري؛ وبشكل إفتراضي سيطلب منك الموقع الدفع مرة آخرى.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "سجل الكوكيز المحفوظة للعناصر السلوكية وتحليل التهديدات المحتملة. للمزيد من المعلومات راجع",
     "CloudFlare Privacy & Security Policy": "سياسة الخصوصية والأمان لكلاودفلير",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "بما أنك زرت موقعنا بالفعل، ربما ترغب بإدارة الكوكيز التى تم تحميلها على متصفحك. أسفله رابط للتعليمات.",
     "Transparency": "الشفافية",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "لم نقم بوضع أي أبواب خلفية في برنامجنا و لم نستلم أي طلب لوضعهم. كما أننا ام نستلم مطلقاً رسالة من الأمن القومي، أمر مراقبة من الإستخبارات الخارجية أو أي طلب سري آخر لأجل بيانات المستخدم.",
-    "Privacy Policy &sdot; elementary": "سياسة الخصوصية - إلمنتري"
+    "Privacy Policy ⋅ elementary": ""
 }

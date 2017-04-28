@@ -135,4 +135,4 @@ elementary OS comes with a handy app called "System Settings" that controls all 
 You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.
 
 ### App Settings {#app-settings}
-Keep in mind that System Settings only deals with the global preferences for elementary OS. Although, some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.
+Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.

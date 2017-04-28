@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($l10n)) {
-   $l10n = new Translator();
+   $l10n = new \App\Lib\L10n();
 }
 $page['lang'] = $l10n->lang();
 if (!isset($page['lang'])) $page['lang'] = 'en';
@@ -31,6 +31,7 @@ if (!isset($page['scripts'])) $page['scripts'] = array();
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
+
 ?>
 
 <!doctype html>
@@ -153,13 +154,7 @@ $l10n->begin_html_translation();
             </div>
         </nav>
 
-        <div class="overlay">
-            <div class="overlay__content toast">
-                <div class="toast__close"><i class="fa fa-close"></i></div>
-                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
-                <a href="https://igg.me/at/appcenter" class="toast__button">Back Us</a>
-            </div>
-        </div>
+        <?php require __DIR__ . '/event.php'; ?>
 
         <div id="content-container">
 

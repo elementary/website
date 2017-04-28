@@ -1,10 +1,10 @@
 {
     "Get support for": "Supporto per",
     "Calendar": "Calendario",
-    "Camera": "Camera",
+    "Camera": "",
     "Files": "File",
-    "Geary": "Geary",
-    "Epiphany": "Epiphany",
+    "Geary": "",
+    "Epiphany": "",
     "Music": "Musica",
     "Photos": "Foto",
     "Text Editor": "Editor di testo",
@@ -14,7 +14,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Ricevi aiuto per l'installazione di elementary OS con la nostra guida passo passo.",
     "Learning the Basics": "Imparare le basi",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Impara ad usare il desktop, il multi-tasking, le scorciatoie da tastiera ed altro ancora.",
-    "StackExchange": "StackExchange",
+    "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Controlla le risposte per alcune delle più comuni domande che riceviamo.",
-    "Support &sdot; elementary": "Assistenza ⋅ elementary"
+    "Support ⋅ elementary": ""
 }

@@ -1,5 +1,7 @@
 <?php
+    require_once __DIR__.'/_backend/classify.current.php';
     require_once __DIR__.'/_backend/preload.php';
+    require_once __DIR__.'/_backend/os-payment.php';
 
     $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
 
@@ -16,8 +18,6 @@
 
     include $template['header'];
     include $template['alert'];
-
-    require_once __DIR__.'/_backend/classify.current.php';
 ?>
 
         <section class="section--hero section--stretched">
@@ -34,15 +34,13 @@
                 <div class="whole">
                     <div id="amounts">
                         <?php
-                            $paidString = 'has_paid_'.$config['release_title'].'_'.$config['release_version'];
-                            $disallowed = [' ', '.'];
-                            $encoded = urlencode(str_replace($disallowed, '_', $paidString));
-                            if ( isset($_COOKIE[$encoded]) && $_COOKIE[$encoded] > 0 ) {
+                            $already_paid = (os_payment_getcookie($config['release_version']) > 0);
+                            if ($already_paid) {
                         ?>
-                        <input type="hidden" id="amount-ten" value="0">
-                        <?php
-                            } else {
-                        ?>
+                        <div id="choice-buttons">
+                            <input type="hidden" id="amount-ten" value="0">
+                        </div>
+                        <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
                             <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
@@ -54,11 +52,9 @@
                                 <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                             </div>
                         </div>
-                        <?php
-                            }
-                        ?>
+                        <?php } ?>
                         <div class="column">
-                            <button type="submit" id="download" class="suggested-action">Purchase elementary OS</button>
+                            <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
                             <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
@@ -89,7 +85,10 @@
                     <h2>The Indie, Open Source App Store</h2>
                     <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
-                    <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
+
+                    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
+                        <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
+                    <?php } ?>
                 </div>
             </div>
         </section>

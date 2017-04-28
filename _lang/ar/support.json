@@ -1,20 +1,20 @@
 {
     "Get support for": "الحصول على الدعم ل",
-    "Calendar": "التقويم",
-    "Camera": "الكاميرا",
-    "Files": "ملفات",
+    "Calendar": "الرزنامة",
+    "Camera": "كاميرا",
+    "Files": "مدير الملفات",
     "Geary": "جيري",
-    "Epiphany": "إيبيفاني",
-    "Music": "الموسيقى",
-    "Photos": "الصور",
+    "Epiphany": "المتصفح",
+    "Music": "موسيقى",
+    "Photos": "صور",
     "Text Editor": "محرر النص",
     "System Settings": "إعدادات النظام",
-    "Videos": "الفيديو",
+    "Videos": "فيديو",
     "Installation": "التثبيت",
     "Get help installing elementary OS with our step-by-step guide.": "احصل على المساعدة في تثبيت نظام التشغيل إلمنتري مع الدليل خطوة بخطوة.",
     "Learning the Basics": "تعلم المبادئ",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "المرور بسطح المكتب، تعدد المهام، لوحة المفاتيح، الإختصارات و أكثر من ذلك.",
     "StackExchange": "ستاك إكسجنج",
     "Check out answers to some of the most common questions we get.": "تفضل برؤية الأجوبة لبعض الأسئلة التي تصلنا و الأكثر شيوعاً.",
-    "Support &sdot; elementary": "الدعم - المنتري"
+    "Support ⋅ elementary": ""
 }

@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Zašto se ovaj prozor pojavljuje?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automatski provjerava vašu povezanost s internetom kada se spojite na novu WiFi mrežu. Ako sustav prepozna da ste se spojili na zatvorenu mrežu kojoj je potrebna prijava, ovaj prozor će vas odvesti na stranicu prijave.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Neke mreže zahtjevaju prijavu na njih prije samo spajanja. U takvim slučajevima vidjet ćete ovu poruku koju možete sigurno zatvoriti.",
-    "You're connected! &sdot; elementary": "Povezani ste!  ⋅ elementary"
+    "You're connected! ⋅ elementary": ""
 }

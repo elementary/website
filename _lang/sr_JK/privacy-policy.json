@@ -3,7 +3,7 @@
     "Do Not Track": "Не прати ме",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Овај сајт поштује поставку „не-прати-ме“, која постоји у већини савремених прегледача и искључује Гугл Аналитику ако је укључена. Други начини праћења не могу да се уклоне без утицаја на рад сајта. Уколико желите да ручно управљате начинима праћења, погледајте одјељак о искључивању колачића.",
     "Cookies": "Колачићи",
-    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>",
+    "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Овај сајт користи колачиће ради додатних побољшања. Неке услуге раде и без њих, али су мање употребљиве. На пример, сајт неће упамтити да ли сте већ раније платили за elementary OS, па ће Вас питати да поново платите.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Чува колачиће ради праћења образаца понашања и анализе могућих претњи. За више података, погледајте",
     "CloudFlare Privacy & Security Policy": "CloudFlare политику приватности и безбедности",
@@ -13,7 +13,7 @@
     "Stripe's Privacy Policy": "Stripe политику приватности",
     "Manage Cookies": "Управљање колачићима",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Пошто сте већ посјећивали наш сајт, можда желите да управљате колачићима који већ постоје у Вашем прегледачу. Линкове ка одговарајућим упутствима можете да нађете ниже.",
-    "Transparency": "Transparency",
-    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.",
-    "Privacy Policy &sdot; elementary": "Политика приватности ⋅ elementary"
+    "Transparency": "",
+    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "",
+    "Privacy Policy ⋅ elementary": ""
 }
