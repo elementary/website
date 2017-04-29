@@ -124,7 +124,8 @@ foreach ($pages as $page) {
             $newTranslations[$string] = "";
 
             if (isset($currentTranslations[$string]) !== false) {
-                // DEPRECATED: these two if statements check for untranslated strings from transifex
+                // DEPRECATED: these two if statements check for untranslated
+                // strings from transifex.
                 if ($currentTranslations[$string] === $string) {
                     continue;
                 }
@@ -135,11 +136,19 @@ foreach ($pages as $page) {
 
                 $newTranslations[$string] = $currentTranslations[$string];
             }
+
+            // DEPRECATED: checks if the translation source exists without being
+            // encoded correctly. If you are reading this, it can be removed.
+            $unencodedSourceString = html_entity_decode($string);
+            if (isset($currentTranslations[$unencodedSourceString])) {
+                $newTranslations[$string] = $currentTranslations[$unencodedSourceString];
+                continue;
+            }
         }
 
         if (count($newTranslations) > 0) {
             $newData = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-            file_put_contents($languagePath, $newData);
+            file_put_contents($languagePath, $newData . PHP_EOL);
         } elseif (file_exists($languagePath)) {
             unlink($languagePath);
         }
