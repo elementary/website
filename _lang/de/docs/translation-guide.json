@@ -14,18 +14,13 @@
     "If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:": "Falls Du Rosetta nicht nutzen oder viele Änderungen auf einen Schlag vornehmen möchtest, kannst Du auch offline übersetzen. Achte dabei auf folgendes:",
     "Go to a project you want to translate": "Wechsle zum Projekt das Du übersetzen möchtest",
     "Choose your language": "Wähle deine bevorzugte Sprache",
-    "Click on \"Download translation\"": "",
+    "Click on &quot;Download translation&quot;": "",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Anschließend kannst Du eine E-Mail anfordern, die den Link zum Herunterladen der Übersetzungen enthält. Und nun:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)": "Wähle Deinen bevorzugten Text- or PO-Editor (z.B. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)",
     "Start translating": "Fang an zu übersetzen",
-    "Once you've finished, use the \"Upload translation\" option on the same page that you downloaded them from.": "",
+    "Once you've finished, use the &quot;Upload translation&quot; option on the same page that you downloaded them from.": "",
     "Translating our Website": "Unsere Website übersetzen",
-    "Our website is translated through <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\">Transifex<\/a>. In order to submit translations, you should:": "Unsere Webseite übersetzen wir mit <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\">Transifex<\/a>. Um Übersetzungen zu übermitteln, solltest Du:",
-    "Transifex account": "Transifex-Konto haben",
-    "Join our": "Unserem ",
-    "translation team": "Übersetzungsteam beitreten",
-    "For more information about Transifex, you can refer to their <a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">documentation<\/a>.": "Weitere Informationen zu Transifex findest Du auf ihrer<a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">Dokumentations<\/a>seite.",
-    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "Wie auch bei unseren Anwendungen, folgen wir auch hier dem <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">allgemeinen Übersetzungsleitfaden<\/a> von Ubuntu, und bei sprachspezifischen Fragen halten wir uns an Ubuntus <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">Übersetzungsrichtlinien für Teams<\/a>.",
     "Our website is translated through <a href=\"https:\/\/l10n.elementary.io\/projects\/website\/\">Weblate<\/a>. In order to submit translations, you should have a <a href=\"https:\/\/l10n.elementary.io\/accounts\/register\/\">Weblate account<\/a>": "",
-    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": ""
+    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": "",
+    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "Wie auch bei unseren Anwendungen, folgen wir auch hier dem <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">allgemeinen Übersetzungsleitfaden<\/a> von Ubuntu, und bei sprachspezifischen Fragen halten wir uns an Ubuntus <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">Übersetzungsrichtlinien für Teams<\/a>."
 }

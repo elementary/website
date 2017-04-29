@@ -6,7 +6,7 @@
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>तपाईंको ब्राउजर सेटिङहरुमा तपाईंले कुनै पनि कुकीहरु अथवा तेस्रो-पक्षका कुकीहरु असमर्थ बनाउन वा छानेर बन्द गर्न चयन गर्न सक्नुहुन्छ।<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "यस वेबसाइटले चरणबद्ध सुधारका लागि कुकीहरुको उपयोग गर्दछ। यी कुकीहरु बिना तपाईंले सेवाहरु कम उपयोगिताका साथ काम गरेको पाउनु हुनेछ। उदाहरणका लागि, यदि तपाईंले एलीमेन्टरी ओएस को लागि पहिले नै भुक्तानी गरिसक्नु भएको छ भने पनि यस वेबसाइटमा त्यो याद रहने छैन; पुर्वनिर्धारित गरिए जस्तै तपाईंलाई भुक्तानीको लागि फेरी आग्रह गरिने छ।",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "व्यवहारिक तत्वहरु लग गर्न र संभावित खतराहरुको विश्लेषण गर्न कुकीहरु भण्डारण गरिन्छन्। थप जानकारीका लागि, हेर्नुहोस्",
-    "CloudFlare Privacy & Security Policy": "क्लाउडफ्लेर का गोपनीयता र सुरक्षा नीति",
+    "CloudFlare Privacy &amp; Security Policy": "क्लाउडफ्लेर का गोपनीयता र सुरक्षा नीति",
     "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "यस वेबसाइटका आगंतुकको संख्या, उनीहरु कहाँँबाट पठाइएका हुन् र उनीहरुले हेरेका पृष्‍ठहरुको बारेमा गोप्य रुपमा जानकारी सङ्कलन गर्न कुकीहरु भण्डारण गरिन्छन्। यो जानकारी वेबसाइटको सुधारमा मदत पुर्​याउन प्रयोग गरिन्छ। थप जानकारीका लागि, हेर्नुहोस् गुगल को",
     "Safeguarding Your Data": "तपाईंको डाटा सुरक्षित राख्ने बारे लेख",
     "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "भुक्तानीका लागि कार्डका प्रकारको प्रस्ताव राख्न कुकीहरु प्रयोग गरी तपाईंको अघिल्लो माग तथा तपाईंको देश याद राखिन्छ। थप जानकारीका लागि, हेर्नुहोस्",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "तपाईं हाम्रो वेबसाइटमा पहिले पनि आइसक्नु भएको हुँदा तपाईंको ब्राउजरमा बसिसकेका कुकीहरुको व्यवस्थापन गर्नुपर्ने हुनसक्छ। सान्दर्भिक निर्देशनका लागि लिंकहरु तल पाउन सकिन्छ।",
     "Transparency": "पारदर्शिता",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "हामीले हाम्रो सफ्टवेयरमा कुनै पनि गुप्तद्वार राखेका छैनौं र यसो गर्नका लागि कुनै पनि अनुरोध प्राप्त गरेका छैनौं। हामीले राष्ट्रीय सुरक्षा पत्र, विदेशी जासूसी निगरानी ऐन आदेश, वा प्रयोगकर्ता जानकारीको लागि अरु कुनै गोपनीय अनुरोध पनि कहिल्यै प्राप्त गरेका छैनौं।",
-    "Privacy Policy ⋅ elementary": ""
+    "Privacy Policy &sdot; elementary": ""
 }

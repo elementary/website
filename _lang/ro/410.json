@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "Ooops! Acest link a expirat.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "Daca incerci sa descarci elementary OS, te rugam sa te intorci la pagina principala. Daca cauti altceva, poti raporta o eroare in contul nostru GitHub <a href=\"https://github.com/elementary/website/issues/new\"> </a>.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">file an issue on our GitHub<\/a>.": "Daca incerci sa descarci elementary OS, te rugam sa te intorci la pagina principala. Daca cauti altceva, poti raporta o eroare in contul nostru GitHub <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\"> <\/a>.",
     "Go to Home Page": "Du-te pe pagina „Acasă”",
-    "Download Link Expired ⋅ elementary": "Legătură pentru descărcare expirată ⋅ elementary"
+    "Download Link Expired &sdot; elementary": "Legătură pentru descărcare expirată ⋅ elementary"
 }

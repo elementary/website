@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Γιατί εμφανίζεται αυτό το παράθυρο;",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Το elementary OS ελέγχει αυτόματα τη σύνδεση Internet όταν συνδέεστε σε νέο ασύρματο δίκτυο. Εάν εντοπίσει ότι δεν υπάρχει σύνδεση με το Internet (π.χ. εάν συνδέεστε σε δημόσιο κόμβο όπως σε μια καφετέρια ή ένα δημόσιο μέρος), αυτό το παράθυρο θα εμφανιστεί και θα απεικονίσει τη σελίδα σύνδεσης.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Κάποια δίκτυα μπορεί να εμφανίζονται πρώτα ως δεσμευμένα, ενεργοποιώντας αυτό το παράθυρο, καταλήγει να συνδέεται. Σε αυτές τις περιπτώσεις, θα δείτε ένα μήνυμα και θα έκτοτε θα μπορείτε να κλείσετε με ασφάλεια.",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! &sdot; elementary": ""
 }

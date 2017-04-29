@@ -6,7 +6,7 @@
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "Lehetősége van arra, hogy letiltson vagy külön kikapcsoljon bármely sütit vagy harmadik féltől származó sütit a böngészőjének beállításai között.",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Ez az oldal a folyamatos fejlesztés érdekében használ sütiket. Az egyes szolgáltatások korlátozottan működhetnek sütik nélkül. Például az oldal nem fog emlékezni, hogy korábban fizetett-e az elementary OS-ért, és alapértelmezett beállításként ismét azt fogja kérni Öntől, hogy fizessen.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Sütiket tárol, hogy naplózza a viselkedési elemeket és vizsgálja a potenciális veszélyeket. További információért kérjük kattintson: ",
-    "CloudFlare Privacy & Security Policy": "CloudFlare Adatkezelési és Biztonsági Tájékoztató",
+    "CloudFlare Privacy &amp; Security Policy": "CloudFlare Adatkezelési és Biztonsági Tájékoztató",
     "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "Sütiket tárol, hogy adatot gyűjtsön - ideértve az oldal látogatóinak számát, illetve, hogyan jutott a látogató az oldalra és milyen további oldalakat látogatott meg - anonimizált formában. Ez az információ az oldal javítására szolgál. További információért kérjük kattintson:",
     "Safeguarding Your Data": "Az adatok védelme",
     "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "Sütiket használ, hogy megjegyezze az utolsó rendelését és az országát azért, hogy tudja milyen kártya-típusokat ajánljon fizetéskor. További információért kérjük kattintson:",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Mivel már meglátogatta az oldalunkat, lehet, hogy kezelni akarja a már tárolt sütiket a böngészőjében. A megfelelő útmutatókhoz kapcsolódó linkeket alább találja.",
     "Transparency": "Átláthatóság",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Nem helyeztünk el semmiféle kiskaput a szoftverünkben és nem is kaptunk erre irányuló kérelmet. Továbbá soha nem kaptunk National Security Letter-t, FISA végzést vagy bármely más hivatalos kérelmet a felhasználók adataira vonatkozóan.",
-    "Privacy Policy ⋅ elementary": ""
+    "Privacy Policy &sdot; elementary": ""
 }

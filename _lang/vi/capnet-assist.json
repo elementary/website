@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Tại sao cửa sổ này lại hiện lên ?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Hệ điều hành elementary tự động kiểm tra kết nối mạng của bạn khi bạn kết nối tới một mạng WIFI. Nếu nó xác định là không có kết nối internet (ví dụ bạn đang kết nối tới cổng internet có kiểm soát của quán cafe hoặc tại các vị trí công cộng), cửa sổ này sẽ xuất hiện và hiển thị trang đăng nhập.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Một vài mạng có thể là mạng có kiểm soát và kích hoạt cửa sổ này, sau đó mới thực sự kết nối. Trong những trường hợp này, bạn sẽ thấy thông báo này và có thể đóng cửa sổ một cách an toàn.",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! &sdot; elementary": ""
 }

@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Почему появляется это окно?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS автоматически проверяет интернет-соединение при подключении к новой сети Wi-Fi. При отсутствии интернет-соединения (т.е. если вам поступает запрос на авторизацию в кафе или другом общественном месте), появится это окно и отобразит страницу входа.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Некоторые сети могут требовать авторизации через сайт, вызывая данное окно, при этом уже закончив присоединение. В этом случае вы увидите сообщение об этом и появившееся окно может быть закрыто.",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! &sdot; elementary": ""
 }

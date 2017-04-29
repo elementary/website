@@ -4,5 +4,5 @@
     "Why is this window appearing?": "لماذا هذه النافذه تظهر؟",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "نظام إلمنتري يقوم بالتحقق من إتصال الانترنت لديك عندما تتصل في شبكه واي فاي جديده. إذا تم إكتشاف انه لا يوجد اتصال بالانترنت ( إذا كنت متصل علي شبكه خاصه بمقهي او شبكات عامة أخري) ، هذه النافذه سوف تظهر و تعرض صفحة الدخول.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "بعض الشبكات يمكن أن تظهر علي انها شبكه خاصه في الأول ، و سوق تظهر هذه النافذه ، بعد ذلك تنتهي بإنشاء الإتصال .\nيمكنك رؤية هذه الرساله و تستطيع بأمان إغلاق النافذه.",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! &sdot; elementary": ""
 }

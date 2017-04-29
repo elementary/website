@@ -4,5 +4,5 @@
     "Why is this window appearing?": "Kenapa tetingkap ini muncul?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS secara automatik memeriksa sambungan Internet anda bila anda sambung dengan rangkaian Wi-Fi baharu. Jika ia mengesan sambungan bukan Internet (seperti portal sekatan kedai kopi atau domain awam), tetingkap ini akan muncul dan paparkan halaman daftar masuk.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Sesetengah rangkaian yang muncul kelihatan seperti portal sekatan pada awalnya, menyebabkan tetingkap ini timbul. Kemudian ia terus sahaja bersambung. Dalam situasi sebegini, anda akan melihat mesej ini dan bolehlah tutup tetingkap ini secara selamat.",
-    "You're connected! ⋅ elementary": ""
+    "You're connected! &sdot; elementary": ""
 }

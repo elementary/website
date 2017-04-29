@@ -14,18 +14,13 @@
     "If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:": "Nếu bạn không muốn sử dụng Rosetta, hoặc muốn tạo nhiều thay đổi cùng một lúc, bạn có thể dịch offline. Bạn làm như sau:",
     "Go to a project you want to translate": "Chuyển đến một dự án mà bạn muốn dịch",
     "Choose your language": "Chọn ngôn ngữ của bạn",
-    "Click on \"Download translation\"": "",
+    "Click on &quot;Download translation&quot;": "",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Bây giờ bạn có thể yêu cầu một e-mail, cho phép bạn liên kết bên phải để tải về các bản dịch. Bây giờ:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)": "",
     "Start translating": "Bắt đầu dịch",
-    "Once you've finished, use the \"Upload translation\" option on the same page that you downloaded them from.": "",
+    "Once you've finished, use the &quot;Upload translation&quot; option on the same page that you downloaded them from.": "",
     "Translating our Website": "Dịch website của chúng tôi",
-    "Our website is translated through <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\">Transifex<\/a>. In order to submit translations, you should:": "Trang điện tử của chúng tôi được dịch thông qua <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\"> Transifex<\/a>. Để nộp bản dịch, bạn nên:",
-    "Transifex account": "Tài khoản Transifex",
-    "Join our": "Tham gia cùng chúng tôi",
-    "translation team": "Đội dịch thuật",
-    "For more information about Transifex, you can refer to their <a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">documentation<\/a>.": "Để biết thêm về Transifex, bạn có thể tham khảo thêm <a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">về những tài liệu của chúng<\/a>.",
-    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "",
     "Our website is translated through <a href=\"https:\/\/l10n.elementary.io\/projects\/website\/\">Weblate<\/a>. In order to submit translations, you should have a <a href=\"https:\/\/l10n.elementary.io\/accounts\/register\/\">Weblate account<\/a>": "",
-    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": ""
+    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": "",
+    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": ""
 }
