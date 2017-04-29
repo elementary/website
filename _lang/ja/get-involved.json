@@ -59,6 +59,6 @@
     "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "",
     "Both elementary OS and our website are openly translated using an online platform called Weblate.": "elementary OS と私たちのウェブサイトは Weblate と呼ばれるオンラインプラットフォームを使用して共同で翻訳されています。",
     "Suggest Translations": "翻訳を提案する",
-    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "私達のデスクトップ環境と全てのアプリは Vala や GTK+、Granite、そしていくつものオープンソースのライブラリを用いて構築されています。デスクトップのコードはオープンソースのプロジェクト向けの無料のサービスである Github でホストされています。もしこれまでに elementary OS 向けに開発をしたことがない場合、次のページを参照することをおすすめします。",
     "Browse Our Code": "コードを見る"
 }
