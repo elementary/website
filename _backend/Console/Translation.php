@@ -124,16 +124,6 @@ foreach ($pages as $page) {
             $newTranslations[$string] = "";
 
             if (isset($currentTranslations[$string]) !== false) {
-                // DEPRECATED: these two if statements check for untranslated
-                // strings from transifex.
-                if ($currentTranslations[$string] === $string) {
-                    continue;
-                }
-
-                if (htmlentities($currentTranslations[$string]) === $string) {
-                    continue;
-                }
-
                 $newTranslations[$string] = $currentTranslations[$string];
             }
 
