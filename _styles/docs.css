@@ -204,7 +204,6 @@ nav {
 .sidebar ul ul,
 .sidebar ul ul ul {
     list-style-type: none;
-    padding: 0;
 }
 
 .sidebar li.active {
