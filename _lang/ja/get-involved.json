@@ -41,10 +41,10 @@
     "Bitesized Bugs": "ちょっとしたバグ",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "",
-    "Browse Our Stylesheet": "",
-    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
-    "Browse Our Icons": "",
-    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
-    "Browse Needs Design Issues": "",
+    "Browse Our Stylesheet": "スタイルシートを見る",
+    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "elementary OS にはすべてのプレインストールアプリにわたって使われ、サードパーティーの開発者にも利用可能なベクターアイコンのセットが付属しています。",
+    "Browse Our Icons": "アイコンを見る",
+    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "私達のデザインチームは GitHub で \"Needs Design\" のラベルのある問題を追跡しています。これはよりいっそうの議論やワイヤーフレーム、アセットの提出が必要かもしれません。",
+    "Browse Needs Design Issues": "Needs Design のラベルがついた問題を見る",
     "Get Involved with elementary OS": "elementary OS に参加する"
 }
