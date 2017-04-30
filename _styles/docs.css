@@ -200,6 +200,10 @@ nav {
     color: #403757;
 }
 
+.sidebar > ul {
+    padding: 0;
+}
+
 .sidebar > ul,
 .sidebar ul ul,
 .sidebar ul ul ul {
