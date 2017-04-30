@@ -14,7 +14,7 @@
     "If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:": "Hvis du ikke ønsker å bruke Rosetta, eller ønsker å gjøre en rekke endringer på en gang, kan du oversette i frakoblet modus. Slik gjør du:",
     "Go to a project you want to translate": "Gå til et prosjekt du ønsker å oversette",
     "Choose your language": "Velg ditt språk",
-    "Click on &quot;Download translation&quot;": "",
+    "Click on &quot;Download translation&quot;": "Klikk på &quot;Last ned oversettelse&quot;",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Du er nå i stand til å be om en e-post, som gir deg rette lenke for å laste ned oversettelser. Nå:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)": "Velg din favoritt tekst- eller PO-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)",
     "Start translating": "Start å oversette",
