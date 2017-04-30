@@ -83,7 +83,7 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         function sidebarHandle () {
             if ($(window).width() <= 990) return
 
-            var scrollTop = $('body').scrollTop()
+            var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0)
             var $header = $('nav:first-of-type')
             var $footer = $('footer')
             var $sidebar = $('.sidebar')
@@ -140,18 +140,18 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         }
 
         // Scroll timeout handling
-        var repositionedAt = new Date()
+        var repositionedAt = Date.now()
         var repositionTimer = null
 
         $(window).scroll(function () {
             if ($(window).width() <= 990) return
 
-            var diff = new Date().getTime() - repositionedAt
+            var diff = Date.now() - repositionedAt
 
             sidebarHandle()
 
             if (repositionedAt == null || diff >= 500) {
-                repositionedAt = new Date().getTime()
+                repositionedAt = Date.now()
                 scrollHandle()
             } else { // Wait until scroll spam stops
                 clearTimeout(repositionTimer)
