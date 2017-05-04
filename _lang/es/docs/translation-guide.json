@@ -14,13 +14,13 @@
     "If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:": "Si prefiere no utilizar Rosetta, o bien necesita realizar cambios en muchas cadenas a la vez, es posible traducir fuera del navegador web. Para hacerlo:",
     "Go to a project you want to translate": "Visite el proyecto que quiera traducir",
     "Choose your language": "Elija su idioma",
-    "Click on &quot;Download translation&quot;": "",
+    "Click on &quot;Download translation&quot;": "Hacé click en &quot; Descargar traducción &quot;",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Ahora podrá solicitar que se le envíe un mensaje de correo electrónico, el cual contendrá el enlace apropiado para descargar el archivo de traducción. Ahora:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)": "Abra su editor de archivos de texto o PO preferido (p. ej., <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)",
     "Start translating": "Comience a traducir",
     "Once you've finished, use the &quot;Upload translation&quot; option on the same page that you downloaded them from.": "",
-    "Translating our Website": "Traducción del sitio web",
+    "Translating our Website": "Traduciendo nuestro sitio web",
     "Our website is translated through <a href=\"https:\/\/l10n.elementary.io\/projects\/website\/\">Weblate<\/a>. In order to submit translations, you should have a <a href=\"https:\/\/l10n.elementary.io\/accounts\/register\/\">Weblate account<\/a>": "",
-    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": "",
+    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": "Para mas información sobre Weblate, podés ir a su <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\"> documentación <\/a>.",
     "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "Del mismo modo que con nuestras aplicaciones, seguimos la <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">guía general de traducción<\/a> de Ubuntu; y para cuestiones específicas de cada idioma, acataremos las <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">directrices de los equipos de idiomas<\/a> de Ubuntu."
 }
