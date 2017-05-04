@@ -129,8 +129,8 @@
     </div>
     <div class="platform-item third" id="xorg">
         <a href="http://x.org/" target="_blank" rel="noopener">
-            <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org">
-            <h3 class="oss-title">X.org</h3>
+            <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.Org">
+            <h3 class="oss-title">X.Org</h3>
             <p class="oss-subtitle">Display Server &amp; Windowing System</p>
         </a>
         <div>

@@ -6,7 +6,7 @@
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "在您的浏览器设置中可以选择禁用或选择性地关闭任何cookie和第三方cookie。",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "本网站使用 Cookies 来完成一些增量功能。没有 Cookies，您仍可使用各种服务及功能，但是可用性会下降。例如，本网站将不会记录您是否为 elementary OS 付过费，默认情况下您将再次被请求付费。",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "保存 Cookies 以记录行为元素和潜在威胁。更多信息请参考：",
-    "CloudFlare Privacy & Security Policy": "CloudFlare 隐私和安全政策",
+    "CloudFlare Privacy &amp; Security Policy": "CloudFlare 隐私和安全政策",
     "Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on": "保存 Cookies 以采集信息——包括本网站的访问者数量、来源、访问的页面——这些都是匿名的。这些信息将用来改善本网站。更多信息请参考 Google 的文章：",
     "Safeguarding Your Data": "保护您的数据",
     "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "使用 Cookies 来记录您上次的订单和您的国家，以便了解用于付费的卡片类型。更多信息请参考",
@@ -15,5 +15,5 @@
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "由于您已经访问过本网站，您可能希望管理已经在您浏览器中存储的 Cookies。相关说明参见如下链接。",
     "Transparency": "透明度",
     "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "我们没有在软件中安插任何后门，也没有收到过要求这么做的请求。我们也从来没有收到过试图取得用户信息的国家安全调查令，FISA命令或任何特定请求。",
-    "Privacy Policy ⋅ elementary": ""
+    "Privacy Policy &sdot; elementary": ""
 }
