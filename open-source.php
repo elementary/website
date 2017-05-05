@@ -106,7 +106,7 @@
             <p class="oss-subtitle">Desktop Libraries</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://wiki.gnome.org/Projects/dconf" target="_blank" rel="noopener"><span>D-Conf</span></a>
+            <a class="button sub-item" href="https://wiki.gnome.org/Projects/dconf" target="_blank" rel="noopener"><span>dconf</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/GLib" target="_blank" rel="noopener"><span>GLib</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/PolicyKit" target="_blank" rel="noopener"><span>PolicyKit</span></a>
             <a class="button sub-item" href="https://wiki.gnome.org/Projects/Vala" target="_blank" rel="noopener"><span>Vala</span></a>
@@ -129,8 +129,8 @@
     </div>
     <div class="platform-item third" id="xorg">
         <a href="http://x.org/" target="_blank" rel="noopener">
-            <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.org">
-            <h3 class="oss-title">X.org</h3>
+            <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.Org">
+            <h3 class="oss-title">X.Org</h3>
             <p class="oss-subtitle">Display Server &amp; Windowing System</p>
         </a>
         <div>

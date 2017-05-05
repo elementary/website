@@ -2,7 +2,7 @@
     "Support Development. Get Swag. Win Win.": "Palaikykite kūrimą. Gaukite drabužius. Abipusiškai naudinga.",
     "Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href=\"\/team\">team<\/a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.": "Kiekvienas apsipirkimas yra skiriamas elementary OS, jos programų ir paslaugų kūrimui. Mes esame maža <a href=\"\\\/team\">komanda<\\\/a>, kurią sudaro, daugiausiai, savanoriai, nuolat dirbantys, kad padarytų elementary geresnę. Kiekvienas trupinėlis yra žingsnis link kito pilno etato kūrėjo įdarbinimo.",
     "Apparel": "Drabužiai",
-    "Men's Cotton T-Shirt": "Vyriški medvilniniai marškinėliai",
+    "Men's Logo T-Shirt": "",
     "Women's Cotton T-Shirt": "Moteriški medvilniniai marškinėliai",
     "Men's Track Shirt": "Vyriški marškinėliai",
     "Women's Track Shirt": "Moteriški marškinėliai",
@@ -10,7 +10,7 @@
     "Men's Oatmeal Hero Shirt": "",
     "Accessories": "Reikmenys",
     "Coffee Mug": "Kavos puodukas",
-    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "elementary, logotipas, atspausdintas ant American Apparel patogių, mėlynų medvilninių marškinėlių.",
+    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": "",
     "Size Chart": "Dydžių lentelė",
     "Size": "Dydis",
     "S": "",
@@ -19,6 +19,7 @@
     "XL": "",
     "2XL": "",
     "Quantity": "Kiekis",
+    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "elementary, logotipas, atspausdintas ant American Apparel patogių, mėlynų medvilninių marškinėlių.",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by Bella + Canvas.": "",
@@ -26,7 +27,5 @@
     "Worldwide Shipping": "Pristatymas visame pasaulyje",
     "We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.": "Dabar, mes pristatome prekes visame pasaulyje. Padarykite užsakymą ir pasirinkite iš daugelio pristatymo būdų tą, kuris jums tinka. Užsakymai yra vykdomi tik gavus užsakymą, dažniausiai, per 2-7 dienas.",
     "Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.": "Kitos sąlygos taikomos Kubai, Iranui ir Šiaurės Korėjai. Pristatymo laikas, būdai ir kainos gali skirtis tarp šalių.",
-    "Store ⋅ elementary": "",
-    "Men's Logo T-Shirt": "",
-    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": ""
+    "Store &sdot; elementary": ""
 }
