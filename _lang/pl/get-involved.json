@@ -41,10 +41,10 @@
     "Bitesized Bugs": "Błędy jednego bajtu",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "",
-    "Browse Our Stylesheet": "",
+    "Browse Our Stylesheet": "Przeglądaj nasze style",
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
-    "Browse Our Icons": "",
-    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
-    "Browse Needs Design Issues": "",
+    "Browse Our Icons": "Przeglądaj nasze zestawy ikon",
+    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Nasz zespół projektowy śledzi w GitHub kwestie \"wymagające zaprojektowania\". Może to wymagać dalszej dyskusji nad projektem, używanymi w nim makietami lub dostarczanymi zasobami.",
+    "Browse Needs Design Issues": "Przeglądaj sprawy wymagające zaprojektowania",
     "Get Involved with elementary OS": "Zaangażuj się w pracę nad elementary OS"
 }
