@@ -13,7 +13,7 @@
     "The Indie, Open Source App Store": "インディーズで、オープンソースのアプリストア",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.": "AppCenter は elementary OS にネイティブでオープンソースのアプリを提供します。新しいアプリを素早く探しだし、インストールしてあるアプリを簡単にアップデートします。またまもなく、独立している開発者を売り手が価格を決めない価格設定方式 (pay-what-you-want) を通して直接サポートします。",
     "Become a Developer": "開発者になる",
-    "Task finished": "タスクが完了しました",
+    "Task finished": "タスクが終了しました",
     "Apps You Need, Without Ones You Don't.": "必要なアプリだけを厳選しました。不要なものはありません。",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS には厳選されたアプリがプリインストールされています。これまでの重くて遅いソフトを毎日の作業に使うイライラから解放されます。",
     "Music": "ミュージック",
@@ -66,7 +66,7 @@
     "Search": "検索",
     "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "稲妻のように高速なサーチビューから、アプリを起動したり、設定パネルを開いたり、コマンドを実行したり、いろいろなことをしたりできます。",
     "Open Source": "オープンソース",
-    "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "私達のコードは誰でも評価や検査、修正や再配布できます。",
+    "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "私たちのコードは誰でも評価や検査、修正や再頒布ができます。",
     "Learn More": "もっと知る",
     "No Ads. No Spying.": "広告も情報収集もありません。",
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "私たちは広告契約をしませんし、重要な個人情報も収集しません。私たちの唯一の収入は、ユーザーから直接寄付していただいたものだけです。",
@@ -77,10 +77,10 @@
     "Pay What You Want": "自分で支払額を決める",
     "Download elementary OS icon": "elementary OS をダウンロード アイコン",
     "Choose a Download": "ダウンロードの選択",
-    "Download from a localized server or by magnet link. For help and more info, see the": "お近くのミラーサーバーか、マグネットリンクのどちらかからダウンロードしてください。ヘルプおよび詳細は、こちらをご覧ください：",
+    "Download from a localized server or by magnet link. For help and more info, see the": "お近くのミラーサーバーか、マグネットリンクのどちらかからダウンロードしてください。ヘルプおよび詳細は、次のページをご覧ください。",
     "installation guide": "インストールガイド",
     "Cancel": "キャンセル",
     "Download": "ダウンロード",
     "Torrent Magnet Link": "トレントマグネットリンク",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "軽量、そしてオープンソース。 Windows や macOS の代わりに。 - elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "軽量、そしてオープンソース。 Windows や macOS の代わりに &sdot; elementary OS"
 }
