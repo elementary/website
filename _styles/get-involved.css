@@ -31,6 +31,24 @@ section {
     }
 }
 
+.design-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.design-links > div {
+    color: inherit;
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 8px 16px 48px;
+}
+
+.design-links .button.flat {
+    margin: 12px auto;
+}
+
 /*********
 * Button *
 *********/

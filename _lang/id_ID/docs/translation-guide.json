@@ -14,18 +14,13 @@
     "If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:": "Jika Anda tidak ingin menggunakan Rosetta, atau ingin membuat banyak perubahan sekaligus, Anda juga bisa menerjemahkannya secara luring. Caranya:",
     "Go to a project you want to translate": "Kunjungi proyek yang ingin Anda terjemahkan",
     "Choose your language": "Pilih bahasa Anda",
-    "Click on \"Download translation\"": "",
+    "Click on &quot;Download translation&quot;": "",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Anda sekarang bisa meminta kiriman surel, yang akan memberi Anda tautan yang valid untuk mengunduh berkas terjemahan. Sekarang:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)": "Pilih penyunting teks atau berkas po favorit Anda (mis. <a href=\"https:\/\/apps.ubuntu.com\/cat\/applications\/\/poedit\/\">Poedit<\/a>)",
     "Start translating": "Mulai menerjemahkan",
-    "Once you've finished, use the \"Upload translation\" option on the same page that you downloaded them from.": "",
+    "Once you've finished, use the &quot;Upload translation&quot; option on the same page that you downloaded them from.": "",
     "Translating our Website": "Menerjemahkan Situs kami",
-    "Our website is translated through <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\">Transifex<\/a>. In order to submit translations, you should:": "Situs web kami diterjemahkan melalui <a href=\"https:\/\/www.transifex.com\/projects\/p\/elementary-mvp\/\">Transifex<\/a>. Untuk mengirimkan terjemahkan, Anda harus:",
-    "Transifex account": "Akun Transifex",
-    "Join our": "Gabung",
-    "translation team": "tim penerjemah",
-    "For more information about Transifex, you can refer to their <a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">documentation<\/a>.": "Untuk informasi lebih lanjut tentang Transifex, silahkan kunjungi <a href=\"http:\/\/docs.transifex.com\/tutorials\/txeditor\">dokumentasi<\/a>.",
-    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "Untuk apl kami, kami mengikuti <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">panduan umum penerjemah<\/a> Ubuntu, dan untuk masalah yang spesifik tentang bahasa, kami mengikuti <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">pedoman penerjemahan tim<\/a> Ubuntu.",
     "Our website is translated through <a href=\"https:\/\/l10n.elementary.io\/projects\/website\/\">Weblate<\/a>. In order to submit translations, you should have a <a href=\"https:\/\/l10n.elementary.io\/accounts\/register\/\">Weblate account<\/a>": "",
-    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": ""
+    "For more information about Weblate, you can refer to their <a href=\"https:\/\/docs.weblate.org\/en\/latest\/\">documentation<\/a>.": "",
+    "As with our apps, we follow Ubuntu’s <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">general translator guide<\/a>, and for language specific issues we follow Ubuntu's <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">team translation guidelines<\/a>.": "Untuk apl kami, kami mengikuti <a href=\"https:\/\/help.launchpad.net\/Translations\/Guide\">panduan umum penerjemah<\/a> Ubuntu, dan untuk masalah yang spesifik tentang bahasa, kami mengikuti <a href=\"https:\/\/translations.launchpad.net\/+groups\/ubuntu-translators\">pedoman penerjemahan tim<\/a> Ubuntu."
 }

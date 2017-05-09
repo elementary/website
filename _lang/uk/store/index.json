@@ -2,7 +2,7 @@
     "Support Development. Get Swag. Win Win.": "Підтримайте розробку. Отримайте Swag. Усі виграють.",
     "Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href=\"\/team\">team<\/a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.": "Гроші з кожної покупки йдуть на розробку elementary OS, її аплікацій та сервісів. Ми є невеличкою <a href=\"\\\/team\">командою<\\\/a>, переважно з волонтерів,  що невпинно працюють аби покращити elementary. Дещиця допомоги наблизить нас до можливості найняти розробника на повний робочий день.",
     "Apparel": "Одяг",
-    "Men's Cotton T-Shirt": "Чоловіча футболка з бавовни",
+    "Men's Logo T-Shirt": "",
     "Women's Cotton T-Shirt": "Жіноча футболка з бавовни",
     "Men's Track Shirt": "Чоловіча бігова футболка",
     "Women's Track Shirt": "Жіноча бігова футболка",
@@ -10,7 +10,7 @@
     "Men's Oatmeal Hero Shirt": "",
     "Accessories": "Інше",
     "Coffee Mug": "Чашка для кави",
-    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "Лого elementary, надруковане на зручній синій трикотажній тенісці, компанією American Apparel.",
+    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": "",
     "Size Chart": "Таблиця розмірів",
     "Size": "Розмір",
     "S": "",
@@ -19,6 +19,7 @@
     "XL": "",
     "2XL": "",
     "Quantity": "Кількість",
+    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "Лого elementary, надруковане на зручній синій трикотажній тенісці, компанією American Apparel.",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by Bella + Canvas.": "",
@@ -26,7 +27,5 @@
     "Worldwide Shipping": "",
     "We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.": "",
     "Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.": "",
-    "Store ⋅ elementary": "",
-    "Men's Logo T-Shirt": "",
-    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": ""
+    "Store &sdot; elementary": ""
 }

@@ -75,7 +75,7 @@ foreach ( $translation_files as $filename ) {
     $values = array_values(json_decode(file_get_contents($filename), TRUE));
 
     foreach ( $values as $i => $value ) {
-        $line_number = $i + 1; // Translation number in transifex. Add 1 for JSON line number
+        $line_number = $i + 2; // Line number in the JSON file
 
         preg_match_all("/\<([a-z0-9]+)\s?[^\<]*?(?<!\/)\s*\>/i", $value, $open_tags);
         preg_match_all("/\<\/([a-z0-9]+)\s?[^\<]*?(?<!\/)\s*\>/i", $value, $close_tags);

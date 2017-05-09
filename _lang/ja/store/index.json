@@ -2,7 +2,7 @@
     "Support Development. Get Swag. Win Win.": "開発をサポートしてください。そして、お土産を受け取ってください。互いに利益を。",
     "Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href=\"\/team\">team<\/a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.": "すべての購入は、elementary OSやアプリ、およびサービスの開発に当てられます。私たちは小さな<a href=\"\\\/team\">チーム<\\\/a>で、いつも elementary をよりよくしようと努めているボランティアがほとんどです。どんなに些細な支援でも、新しいフルタイム開発者の雇用へ近づく一歩となります。",
     "Apparel": "アパレル",
-    "Men's Cotton T-Shirt": "メンズ コットンTシャツ",
+    "Men's Logo T-Shirt": "",
     "Women's Cotton T-Shirt": "レディース コットンTシャツ",
     "Men's Track Shirt": "メンズ トラックシャツ",
     "Women's Track Shirt": "レディース トラックシャツ",
@@ -10,7 +10,7 @@
     "Men's Oatmeal Hero Shirt": "",
     "Accessories": "アクセサリー",
     "Coffee Mug": "コーヒー マグ",
-    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "着心地のよい青いジャージコットンのTシャツに、elementary screen ロゴをプリントしました。American Apparel が製造します。",
+    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": "",
     "Size Chart": "サイズチャート",
     "Size": "サイズ",
     "S": "Ｓ",
@@ -19,6 +19,7 @@
     "XL": "",
     "2XL": "",
     "Quantity": "数量",
+    "The elementary logotype screen printed on a comfy blue jersey cotton tee by American Apparel.": "着心地のよい青いジャージコットンのTシャツに、elementary screen ロゴをプリントしました。American Apparel が製造します。",
     "The elementary logotype screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight black tri-blend tee by Bella + Canvas.": "",
     "The elementary 'e' logo screen printed on a lightweight oatmeal tri-blend tee by Bella + Canvas.": "",
@@ -26,7 +27,5 @@
     "Worldwide Shipping": "ワールドワイド シッピング",
     "We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.": "私たちはいま、世界中に出荷しています！ご注文の際には、お客様のニーズに合わせていくつかの配送方法から選択してください。ご注文の品は通常2〜7日以内にオンデマンドで製造されます。",
     "Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.": "キューバ、イラン、北朝鮮は除きます。配送方法、価格、時間は国によって異なります。",
-    "Store ⋅ elementary": "",
-    "Men's Logo T-Shirt": "",
-    "The elementary logotype screen printed on a lightweight blue tri-blend tee by Bella + Canvas.": ""
+    "Store &sdot; elementary": ""
 }
