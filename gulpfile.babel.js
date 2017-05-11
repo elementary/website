@@ -19,6 +19,21 @@ const browsers = [
 ]
 
 /**
+ * store
+ * Copies store files to production folder
+ *
+ * @returns {Task} - a gulp task for store designs
+ */
+gulp.task('store', () => {
+    const base = '_images'
+    const src = ['_images/_images/store/designs/**/*']
+    const dest = 'images/store/designs'
+
+    return gulp.src(src, { base })
+    .pipe(gulp.dest(dest))
+})
+
+/**
  * png
  * Optimizes png images
  *
@@ -128,7 +143,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('png', 'jpg', 'svg'))
+gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg'))
 
 /**
  * styles
