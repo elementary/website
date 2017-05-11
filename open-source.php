@@ -195,6 +195,9 @@
         <a href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
             <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy" />
         </a>
+        <a href="https://weblate.org/en/donate/" title="Weblate">
+            <img class="oss-logo" src="images/open-source/weblate.svg" alt="Weblate" />
+        </a>
     </div>
 </div>
 
