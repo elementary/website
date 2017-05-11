@@ -25,7 +25,7 @@ const browsers = [
  * @returns {Task} - a gulp task for store designs
  */
 gulp.task('store', () => {
-    const base = '_images'
+    const base = '_images/store/designs'
     const src = ['_images/store/designs/**/*']
     const dest = 'images/store/designs'
 
