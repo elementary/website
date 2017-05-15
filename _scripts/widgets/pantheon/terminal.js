@@ -211,29 +211,6 @@ export default class Terminal {
             this.$i.trigger('move')
         })
 
-        $(window).on('keydown', (e) => {
-            if (!this.$w.hasClass('active')) return
-
-            var key = e.which
-
-            // TODO: we need to detect if active better before
-            // preventing critical key defaults
-            if (key === 8 || key === 32) {
-                // e.preventDefault()
-                this.keyper(key)
-            } else if (key === 13) {
-                // e.preventDefault()
-                this.process()
-            }
-        })
-
-        $(window).on('keypress', (e) => {
-            if (!this.$w.hasClass('active')) return
-
-            this.keyper(e.which)
-            this.$i.trigger('move')
-        })
-
         this.$i.on('move', () => {
             this.$i.scrollTop(this.$i[0].scrollHeight)
         })
