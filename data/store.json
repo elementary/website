@@ -350,5 +350,61 @@
                 "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_11oz.psd"
             }
         ]
+    },
+    {
+        "id": 8,
+        "printful_id": 162,
+        "name": "Men's Black Terminal Shirt",
+        "description": "The elementary Terminal logo screen printed on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "image": "images\/store\/apparel\/terminal_hero_mens.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 6505,
+                "name": "S Terminal Men's",
+                "size": "S",
+                "color": "Tri-Black",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 2,
+                "printful_id": 6506,
+                "name": "M Terminal Men's",
+                "size": "M",
+                "color": "Tri-Black",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 3,
+                "printful_id": 6507,
+                "name": "L Terminal Men's",
+                "size": "L",
+                "color": "Tri-Black",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 4,
+                "printful_id": 6508,
+                "name": "XL Terminal Men's",
+                "size": "XL",
+                "color": "Tri-Black",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 5,
+                "printful_id": 6509,
+                "name": "2XL Terminal Men's",
+                "size": "2XL",
+                "color": "Tri-Black",
+                "cost": 20.25,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/hero_terminal_white.psd"
+            }
+        ]
     }
 ]
