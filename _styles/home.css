@@ -287,7 +287,6 @@ input:focus + .focus-reveal {
 
 #showcase.initialized {
     position: relative;
-    transition: height 0.25s ease-in-out;
 }
 
 #showcase.initialized > div {
