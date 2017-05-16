@@ -77,11 +77,11 @@ input:focus + .focus-reveal {
     opacity: 0.8;
 }
 
-#the-press svg:hover{
+#the-press svg:hover {
     opacity: 1;
 }
 
-#the-press svg:active{
+#the-press svg:active {
     position: relative;
     top: 1px;
 }
