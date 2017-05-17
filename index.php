@@ -83,7 +83,7 @@
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
+                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
 
                     <?php if (event_active('indiegogo appcenter 2/17')) { ?>
