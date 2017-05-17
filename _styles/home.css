@@ -75,6 +75,7 @@ input:focus + .focus-reveal {
     height: 27px;
     margin: 19px auto;
     opacity: 0.8;
+    transition: opacity 250ms ease-in-out;
 }
 
 #the-press svg:hover {
