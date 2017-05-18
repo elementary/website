@@ -26,6 +26,8 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "jpegtran-bin": "^3.2.0",
+    "optipng-bin": "^4.0.0",
     "stylelint": "^7.10.1"
   },
   "scripts": {
