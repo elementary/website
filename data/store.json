@@ -328,31 +328,6 @@
         ]
     },
     {
-        "id": 5,
-        "printful_id": 19,
-        "name": "Coffee Mug",
-        "description": "The elementary 'e' logo sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
-        "image": "images\/store\/accessories\/mug_11oz.png",
-        "type": "Accessories",
-        "variants": [
-            {
-                "id": 1,
-                "printful_id": 1320,
-                "name": "11oz Coffee Mug",
-                "size": "11oz",
-                "color": "Black",
-                "cost": 8.95,
-                "price": 15.00
-            }
-        ],
-        "files": [
-            {
-                "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_11oz.psd"
-            }
-        ]
-    },
-
-    {
         "id": 9,
         "printful_id": 162,
         "name": "Men's Blue Hero T-Shirt",
@@ -461,6 +436,54 @@
         "files": [
             {
                 "url": "https:\/\/elementary.io\/images\/store\/designs\/hero_terminal_white.psd"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "printful_id": 19,
+        "name": "Logo Mug",
+        "description": "The elementary 'e' logo sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
+        "image": "images\/store\/accessories\/mug_11oz.png",
+        "type": "Accessories",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 1320,
+                "name": "11oz Coffee Mug",
+                "size": "11oz",
+                "color": "Black",
+                "cost": 8.95,
+                "price": 15.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_11oz.psd"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "printful_id": 19,
+        "name": "Terminal Mug",
+        "description": "The Terminal logo sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
+        "image": "images\/store\/accessories\/mug_terminal_11oz.png",
+        "type": "Accessories",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 1320,
+                "name": "11oz Coffee Mug",
+                "size": "11oz",
+                "color": "Black",
+                "cost": 8.95,
+                "price": 15.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_terminal_11oz.psd"
             }
         ]
     }
