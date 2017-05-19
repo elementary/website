@@ -22,62 +22,6 @@ commands[/^clear/] = function (cmd, term) {
     })
 }
 
-commands[/^exit/] = function (cmd, term) {
-    return new Promise((resolve, reject) => {
-        window.history.back()
-        return resolve(0)
-    })
-}
-
-commands[/^whoami$/] = function (cmd, term) {
-    if (term.user === 'groot') {
-        return term.append('i am groot')
-        .then(() => 0)
-    } else {
-        return term.append(term.user)
-        .then(() => 0)
-    }
-}
-
-commands[/^USER=/] = function (cmd, term) {
-    return new Promise((resolve, reject) => {
-        const userCMD = cmd.split('=')[1]
-        if (userCMD == null || userCMD === '') return resolve(0)
-
-        const user = userCMD.split(' ')[0]
-        if (user == null || userCMD === '') return resolve(0)
-
-        term.user = user
-        return resolve(0)
-    })
-}
-
-commands[/^rm -rf \/$/] = function (cmd, term) {
-    return term.append('no.')
-    .then(() => 0)
-}
-
-commands[/^cd/] = function (cmd, term) {
-    return new Promise((resolve, reject) => {
-        const split = cmd.split(' ')
-
-        if (split[1] == null) return resolve(0)
-        if (split[1] === '.' || split[1] === '~' || split[1] === './') return resolve(0)
-
-        return resolve(term.append(`I'm sorry, ${term.user}. I'm afraid I can't do that.`))
-        .then(() => 1)
-    })
-}
-
-commands[/^echo/] = function (cmd, term) {
-    return new Promise((resolve, reject) => {
-        const text = cmd.match(/(["'])[^]*?\1/)[0]
-
-        return resolve(term.append(text.substring(1, text.length - 1)))
-        .then(() => 0)
-    })
-}
-
 commands[/^mkdir .\/website$/] = function (cmd, term) {
     return 0
 }
@@ -208,29 +152,6 @@ export default class Terminal {
 
         $(window).on('resize', (e) => {
             this.activeCheck()
-            this.$i.trigger('move')
-        })
-
-        $(window).on('keydown', (e) => {
-            if (!this.$w.hasClass('active')) return
-
-            var key = e.which
-
-            // TODO: we need to detect if active better before
-            // preventing critical key defaults
-            if (key === 8 || key === 32) {
-                // e.preventDefault()
-                this.keyper(key)
-            } else if (key === 13) {
-                // e.preventDefault()
-                this.process()
-            }
-        })
-
-        $(window).on('keypress', (e) => {
-            if (!this.$w.hasClass('active')) return
-
-            this.keyper(e.which)
             this.$i.trigger('move')
         })
 
