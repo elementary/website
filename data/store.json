@@ -351,6 +351,63 @@
             }
         ]
     },
+
+    {
+        "id": 9,
+        "printful_id": 162,
+        "name": "Men's Blue Hero T-Shirt",
+        "description": "The elementary 'e' logo screen printed on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "image": "images\/store\/apparel\/mens_hero_aqua.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 6465,
+                "name": "S Tri Men's",
+                "size": "S",
+                "color": "Aqua Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 2,
+                "printful_id": 6466,
+                "name": "M Tri Men's",
+                "size": "M",
+                "color": "Aqua Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 3,
+                "printful_id": 6467,
+                "name": "L Tri Men's",
+                "size": "L",
+                "color": "Aqua Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 4,
+                "printful_id": 6468,
+                "name": "XL Tri Men's",
+                "size": "XL",
+                "color": "Aqua Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 5,
+                "printful_id": 6469,
+                "name": "2XL Tri Men's",
+                "size": "2XL",
+                "color": "Aqua Triblend",
+                "cost": 17.25,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/hero_white.psd"
+            }
+        ]
+    },
     {
         "id": 8,
         "printful_id": 162,
