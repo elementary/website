@@ -227,7 +227,7 @@ If you're reporting a "Wishlist" issue, like a feature request, a developer may 
 If you're not sure about anything above, you are always welcome to our development IRC channel: #elementary-dev on irc.freenode.net. We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
-We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a 👍.
+We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a <i class="fa fa-thumbs-o-up" aria-hidden="true" title="thumbs up"></i>.
 
 # Proposing Design Changes {#proposing-design-changes}
 
