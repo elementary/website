@@ -6,6 +6,10 @@ You can propose new languages if they're not listed. Make sure to avoid requesti
 
 Please read the [branding guidelines](http://blog.elementary.io/post/107640994166/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
 
+## Reviewing		
+
+It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask him to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
+
 ## Updating
 
 Languages are updated automaticlly when code is changed. This may take time to update, so please be patient.
