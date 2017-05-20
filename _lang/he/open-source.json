@@ -46,7 +46,7 @@
     "Cairo": "Cairo",
     "GNOME": "GNOME",
     "Desktop Libraries": "ספריות שולחן עבודה",
-    "dconf": "",
+    "dconf": "dconf",
     "GLib": "GLib",
     "PolicyKit": "PolicyKit",
     "Vala": "Vala",
@@ -59,7 +59,7 @@
     "LightDM": "LightDM",
     "PulseAudio": "PulseAudio",
     "systemd": "systemd",
-    "X.Org": "",
+    "X.Org": "X.Org",
     "Display Server &amp; Windowing System": "שרת תצוגה ומערכת חלונאית",
     "X11": "X11",
     "XServer": "XServer",
@@ -82,7 +82,7 @@
     "OpenStreetMap": "OpenStreetMap",
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "מוסד חופש התכנה",
-    "Weblate": "",
+    "Weblate": "Weblate",
     "All logos featured here are trademarks of their respective projects.": "כל הלוגואים המופיעים בעמוד הנם סימני מסחר רשומים של המיזמים אליהם הם שייכים.",
     "Open Source &sdot; elementary": "קוד פתוח &sdot; elementary"
 }
