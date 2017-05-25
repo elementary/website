@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "",
-    "You don't have permission to view the requested resource.": "",
+    "Sorry, access is denied.": "Lo sentimos, acceso denegado.",
+    "You don't have permission to view the requested resource.": "No tiene permisos para  ver la página solicitada.",
     "Go to Home Page": "Ir al inicio",
-    "Access Denied &sdot; elementary": ""
+    "Access Denied &sdot; elementary": "Acceso denegado &sdot; elementary"
 }
