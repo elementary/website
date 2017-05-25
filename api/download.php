@@ -50,19 +50,27 @@ if (isset($charge['metadata']['products'])) {
 $isoVersion = false;
 foreach ($products as $product) {
     if (substr($product, 0, 3) === 'ISO') {
+        // Set $isoVersion to the ISO Version number like '0.4.1' from the purchased product string 'ISO_0.4.1'
         $isoVersion = substr($product, 4);
+        // Set $isoMajor as the first number from $isoVersion
         list($isoMajor) = explode('.', $isoVersion);
-
+        // If that worked
         if ($isoMajor != null) {
+            // Set $currentMajor as the first number from the current release version
             list($currentMajor) = explode('.', $config['release_version']);
-
+            // If the purchased major matches the current major
             if ($isoMajor == $currentMajor) {
+                // Override $isoVersion to match the current release,
+                // so long as it's only a minor upgrade.
                 $isoVersion = $config['release_version'];
             }
         }
     }
 }
 
+// $isoVersion is either:
+// 1. an outdated product that was purchased
+// 2. a minor upgrade version to a product that was purchased
 if ($isoVersion !== false) {
     os_payment_setcookie($isoVersion, $charge['amount']);
 }
