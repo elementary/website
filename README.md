@@ -3,6 +3,7 @@ The New elementary.io
 
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=10548672)](https://www.bountysource.com/trackers/10548672-elementary-website)
 [![Build Status](https://travis-ci.org/elementary/website.svg?branch=master)](https://travis-ci.org/elementary/website)
+[![Translation status](https://l10n.elementary.io/widgets/website/-/svg-badge.svg)](https://l10n.elementary.io/engage/website/?utm_source=widget)
 
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
