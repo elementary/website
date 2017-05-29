@@ -16,7 +16,7 @@
     "Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.": "Ayúdenos económicamente, y consiga alguna herramienta exclusiva de Elementary para mostrar su apoyo a sus amigos, familia y compañeros de trabajo.",
     "Visit Store": "Visite la tienda",
     "Bountysource": "Bountysource",
-    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "",
+    "Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription.": "Bountysource pone los fondos directamente en manos de los desarrolladores, recompensándolos por corregir o crear nuevas características. Establecer una recompensa en los temas que más le importan o financiar una aplicación específica. También puede configurar una suscripción periódica.",
     "Bountied Bugs": "Informes con recompensas",
     "BountySource": "Bountysource",
     "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "el SO elementary es creado y usado por personas de todo el mundo.  Ayúdanos a mejorar la experiencia con su traducción en más idiomas.",
@@ -36,15 +36,15 @@
     "Fork Our Website on GitHub": "Código fuente del sitio en GitHub",
     "Report a Website Issue": "Informe de un problema con el sitio",
     "Desktop Development": "Desarrollo de escritorio",
-    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Nuestro entorno de escritorio y todas sus aplicaciones están creados usando Vala, TK+, Granite, y otras librerías abiertas. Tenemos alojado el código de nuestro escritorio en GitHub, un servicio gratuito para los proyectos de fuente abierta. Si nunca has desarrollado para el SO elementary antes, te recomendamos que consultes nuestra guía de inicio.",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Nuestro entorno de escritorio y todas sus aplicaciones están creados usando Vala, GTK+, Granite, y otras librerías abiertas. Tenemos alojado el código de nuestro escritorio en GitHub, un servicio gratuito para los proyectos de Código Abierto. Si nunca has desarrollado para el elementary OS antes, te recomendamos que consultes nuestra guía de inicio.",
     "Browse Our Code": "Navega por nuestro código",
     "Bitesized Bugs": "Informes aptos para principiantes",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Nuestro equipo de diseño transforma ideas en claros informes y entregables . Antes de sumergiste, se recomienda leer sobre nuestro flujo de trabajo de diseño.",
-    "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "El SO elementary usa un sistema de estilos escritos en CSS. Define como está todo dibujado, desde los botones y las barras de herramientas a los paneles y los menús.",
+    "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "elementary OS usa un sistema de estilos escritos en CSS. Define como está todo dibujado, desde los botones y las barras de herramientas a los paneles y los menús.",
     "Browse Our Stylesheet": "Navega por nuestra tabla de estilos",
-    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "El SO elementary tiene un conjunto de iconos vectoriales que son usados por todas las aplicaciones pre-instaladas y que también están disponibles para desarrolladores de terceros.",
+    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "elementary OS tiene un conjunto de iconos vectoriales que son usados por todas las aplicaciones pre-instaladas y que también están disponibles para desarrolladores de terceros.",
     "Browse Our Icons": "Navega por nuestros iconos",
     "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
     "Browse Needs Design Issues": "",
-    "Get Involved with elementary OS": "Forme parte de el SO elementary"
+    "Get Involved with elementary OS": "Forme parte de elementary OS"
 }
