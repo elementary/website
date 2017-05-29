@@ -245,7 +245,7 @@ An app's comment should be in [sentence case](#sentence-case), not include termi
 
 ### Categories {#categories}
 
-The following categories may be used to aid with searching or browsing for your app:
+The following categories may be used to aid with searching or browsing for your app. Keep in mind that you can add more than one and you should add all that apply:
 
 * AudioVideo  
 * Audio

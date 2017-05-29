@@ -235,7 +235,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
+2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
 
 3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
@@ -243,7 +243,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         Name=Hello Again
         GenericName=Hello World App
         Comment=Proves that we can use Vala and Gtk
-        Categories=GTK;Utility;
+        Categories=Utility;Education;
         Exec=com.github.yourusername.yourrepositoryname
         Icon=application-default-icon
         Terminal=false
