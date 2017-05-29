@@ -109,6 +109,9 @@
             <?php } ?>
         </table>
     </div>
+    <div class="whole">
+        <small>Shipments outside of the USA may incur customs fees depending on the destination country, your order value, and other factors based on the product itself.</small>
+    </div>
 
     <div class="whole">
         <?php

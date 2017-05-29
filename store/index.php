@@ -146,7 +146,7 @@
     <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
         <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
-        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country.</small></p>
+        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
     </div>
 </section>
 
