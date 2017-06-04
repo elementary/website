@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__.'/../_backend/preload.php';
     require_once __DIR__.'/../_backend/config.loader.php';
+    require_once __DIR__.'/../_backend/classify.current.php';
     require_once __DIR__.'/../_backend/store/product.php';
 
     $page['title'] = 'Store &sdot; elementary';
@@ -144,7 +145,24 @@
 
 <section class="grid">
     <div class="two-thirds">
-        <h2>Worldwide Shipping</h2>
+        <?php
+            $country_code = getCurrentCountry($ip);
+            $shipping_text = 'Worldwide Shipping';
+
+            $blacklisted_countries = array('US', 'CU', 'IR', 'KP');
+            if ($country_code && !in_array($country_code, $blacklisted_countries)) {
+                $country_name = getCurrentCountryName($ip, $page['lang']);
+
+                if ($country_name === 'United Kingdom') {
+                    $country_name = 'The United Kingdom';
+                }
+
+                if ($country_name) {
+                    $shipping_text = 'Now shipping to ' . $country_name;
+                }
+            }
+        ?>
+        <h2><?php echo $shipping_text ?></h2>
         <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
         <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
     </div>

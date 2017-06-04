@@ -168,3 +168,34 @@ function getCurrentCountry($hostname, $debug = false) {
 
     return $country;
 }
+
+function getCurrentCountryName($hostname, $lang = 'en', $debug = false) {
+    try {
+        if ( $debug ) {
+            echo $hostname."\n";
+        }
+        if (!class_exists('GeoIp2\Database\Reader')) {
+            throw new \Exception('Class GeoIp2\Database\Reader not found');
+        }
+        $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
+        $record = $reader->city($hostname);
+        if ( $debug ) {
+            var_dump($record->country->names);
+        }
+
+        if ($record->country->names[$lang]) {
+            return $record->country->names[$lang];
+        } else {
+            return $record->country->names['en'];
+        }
+
+    } catch (\Exception $e) {
+        if ( $debug ) {
+            echo $e->getMessage();
+        } else {
+            error_log($e->getMessage());
+        }
+
+        return false;
+    }
+}
