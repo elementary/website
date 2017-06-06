@@ -7,15 +7,15 @@
 * Brand colors *
 ***************/
 
-:root{
-    --blueberry:   #3892e0;
-    --strawberry:  #da4d45;
-    --orange:      #f37329;
-    --banana:      #fbd25d;
-    --lime:        #93d844;
-    --grape:       #8a4ebf;
-    --white:       #ffffff;
-    --black:       #333333;
+:root {
+    --blueberry: #3892e0;
+    --strawberry: #da4d45;
+    --orange: #f37329;
+    --banana: #fbd25d;
+    --lime: #93d844;
+    --grape: #8a4ebf;
+    --white: #ffffff;
+    --black: #333333;
 }
 
 /***********
