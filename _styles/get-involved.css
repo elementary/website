@@ -7,16 +7,16 @@
 * Brand colors *
 ***************/
 
-/*
-Blueberry   #3892e0
-Strawberry  #da4d45
-Orange      #f37329
-Banana      #fbd25d
-Lime        #93d844
-Grape       #8a4ebf
-White       #ffffff
-Black       #333333
-*/
+:root{
+    --blueberry:   #3892e0;
+    --strawberry:  #da4d45;
+    --orange:      #f37329;
+    --banana:      #fbd25d;
+    --lime:        #93d844;
+    --grape:       #8a4ebf;
+    --white:       #ffffff;
+    --black:       #333333;
+}
 
 /***********
 * Sections *
@@ -69,7 +69,7 @@ section {
 *********/
 
 .button.flat.suggested-action {
-    background-color: #3892e0;
+    background-color: var(--blueberry);
     border-color: transparent;
     color: #fff;
 }
@@ -81,7 +81,7 @@ section {
 /* Funding */
 
 #funding .button.flat.suggested-action {
-    background-color: #fbd25d;
+    background-color: var(--banana);
 }
 
 #funding .button.flat.suggested-action:focus {
@@ -105,7 +105,7 @@ section {
 /* Translations */
 
 #translations .button.flat.suggested-action {
-    background-color: #93d844;
+    background-color: var(--lime);
 }
 
 #translations .button.flat.suggested-action:focus {
@@ -115,7 +115,7 @@ section {
 /* Support */
 
 #support .button.flat.suggested-action {
-    background-color: #f37329;
+    background-color: var(--orange);
 }
 
 #support .button.flat.suggested-action:focus {
@@ -125,7 +125,7 @@ section {
 /* Web */
 
 #web-development .button.flat.suggested-action {
-    background-color: #da4d45;
+    background-color: var(--strawberry);
 }
 
 #web-development .button.flat.suggested-action:focus {
@@ -135,7 +135,7 @@ section {
 /* Design */
 
 #design .button.flat.suggested-action {
-    background-color: #8a4ebf;
+    background-color: var(--grape);
 }
 
 #design .button.flat.suggested-action:focus {
@@ -217,7 +217,7 @@ section {
 }
 
 .doughnut.in-progress .doughnut-count {
-    color: #93d844;
+    color: var(--lime);
 }
 
 .doughnut.created .doughnut-count {
@@ -244,27 +244,27 @@ section {
 }
 
 #sections-menu .button.flat:nth-child(1) {
-    background-color: #fbd25d;
+    background-color: var(--banana);
 }
 
 #sections-menu .button.flat:nth-child(2) {
-    background-color: #93d844;
+    background-color: var(--lime);
 }
 
 #sections-menu .button.flat:nth-child(3) {
-    background-color: #f37329;
+    background-color: var(--orange);
 }
 
 #sections-menu .button.flat:nth-child(4) {
-    background-color: #da4d45;
+    background-color: var(--strawberry);
 }
 
 #sections-menu .button.flat:nth-child(5) {
-    background-color: #3892e0;
+    background-color: var(--blueberry);
 }
 
 #sections-menu .button.flat:nth-child(6) {
-    background-color: #8a4ebf;
+    background-color: var(--grape);
 }
 
 /******************
