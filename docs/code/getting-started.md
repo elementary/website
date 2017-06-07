@@ -273,7 +273,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
         <!-- Copyright 2017 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname.desktop</id>
-          <metadata_license>CC0</metadata_license>
+          <metadata_license>GPL</metadata_license>
           <name>Your App's Name</name>
           <summary>A Catchy Tagline</summary>
           <description>
