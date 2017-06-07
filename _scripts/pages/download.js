@@ -174,6 +174,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
         $('.download-link').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
+            redirectToThankYouPage()
         })
         $('.download-link.http').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
@@ -194,6 +195,13 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
             })
             // This is what actually opens the modal overlay.
             $openModal.click()
+        }
+
+        //ACTION: redirectToThankYouPage: redirect to the thank-you page after 0.5 seconds (necessary because magnet-link)
+        function redirectToThankYouPage() {
+           setTimeout(function () {
+               window.location.href = '/thank-you'
+            }, 500);
         }
 
         console.log('Loaded download.js')
