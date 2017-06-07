@@ -174,6 +174,7 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
         $('.download-link').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
+            redirectToThankYouPage()
         })
         $('.download-link.http').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
