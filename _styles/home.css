@@ -169,7 +169,7 @@ input:focus + .focus-reveal {
     }
 
     .app-display--overflow .app-display__image {
-        flex: 0 0 auto;
+        flex: 0 auto auto;
         order: 2;
         overflow: visible;
     }
