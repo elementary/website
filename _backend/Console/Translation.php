@@ -26,7 +26,7 @@ $cli->arguments->add([
     'page' => [
         'prefix'      => 'p',
         'longPrefix'  => 'page',
-        'description' => 'Page to extract',
+        'description' => 'Page to extract written like docs/getting-started',
     ],
     'verbose' => [
         'prefix'      => 'v',
@@ -126,14 +126,11 @@ foreach ($pages as $page) {
             if (isset($currentTranslations[$string]) !== false) {
                 $newTranslations[$string] = $currentTranslations[$string];
             }
+        }
 
-            // DEPRECATED: checks if the translation source exists without being
-            // encoded correctly. If you are reading this, it can be removed.
-            $unencodedSourceString = html_entity_decode($string);
-            if (isset($currentTranslations[$unencodedSourceString])) {
-                $newTranslations[$string] = $currentTranslations[$unencodedSourceString];
-                continue;
-            }
+        $directory = dirname($languagePath);
+        if (is_dir($directory) === false) {
+            mkdir($directory, 0766, true);
         }
 
         if (count($newTranslations) > 0) {
