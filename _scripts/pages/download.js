@@ -196,6 +196,13 @@ Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, P
             $openModal.click()
         }
 
+        //  ACTION: redirectToThankYouPage: redirect to the thank-you page after 0.5 seconds (necessary due magnet-link)
+        function redirectToThankYouPage () {
+           setTimeout(function () {
+                window.location.href = '/thank-you'
+           }, 500)
+        }
+
         console.log('Loaded download.js')
     })
 })
