@@ -31,7 +31,7 @@
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.": "Programos lango mygtukai yra programos lango viršutiniuose kampuose. Užvėrimo mygtukas yra kairėje, o išskleidimo mygtukas dešinėje. Spustelėjus užvėrimo mygtuką, programos langas bus užvertas. Spustelėjus išskleidimo mygtuką, bus perjungiamas lango rodymas visame ekrane arba ne visame ekrane.",
     "Multitasking": "Daugiaprogramis apdorojimas",
     "elementary OS supports two types of multitasking: windows and workspaces.": "elementary OS palaiko du daugiaprogramio apdorojimo tipus: langus ir darbo sritis.",
-    "Windows": "Langai",
+    "Windows": "Windows",
     "Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:": "Programos yra atveriamos programų languose. Jie jūsų darbalaukyje gali persikloti ir gali būti perkeliami. Jūs galite perjunginėti langus keliais būdais:",
     "click on the window you want to switch to": "spustelėti ant lango į kurį norite perjungti",
     "click on the app's icon in the dock": "spustelėti ant programos piktogramos apatiniame skydelyje",
