@@ -11,7 +11,7 @@
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "大切なデータをクラウドサービスや外部ハードディスクにバックアップしたか確認してください。新しくオペレーティングシステムをインストールすることで既存のデータを上書きする可能性があります。",
     "Choose your current Operating System": "現在お使いのオペレーティングシステムを選択してください",
     "Select the operating system you are currently using to view tailored installation instructions.": "適合したインストールの説明を見るには現在お使いのオペレーティングシステムを選択してください。",
-    "Windows": "ウィンドウ",
+    "Windows": "Windows",
     "macOS": "macOS",
     "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "インストールドライブの作成",
