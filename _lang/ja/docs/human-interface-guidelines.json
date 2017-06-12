@@ -179,7 +179,7 @@
     "<strong>The application is for IM, IRC, e-mail, news-reading, or music playback.</strong> Instead, integrate the application with the existing messaging or sound menus.": "",
     "See also: <a href=\"http://design.canonical.com/2010/04/notification-area/\">Farewell to the Notification Area</a> by Matthew Paul Thomas": "",
     "Container Widgets": "",
-    "Windows": "ウィンドウ",
+    "Windows": "Windows",
     "Windows form the foundation of your app. They provide a canvas with basic, built-in actions such as &quot;closing&quot; and &quot;resizing&quot;. Although users may see windows as being all the same, elementary OS has several distinct window types. It's important to understand the types of windows available to you, window behavior in general, and behavior that is specific to a certain window type. This section will cover the different types of windows available in elementary OS. Although each type of window is a bit different, think of them all as a subclass of a window. Unless otherwise stated, they all behave as an average window.": "",
     "<strong>View Windows</strong> are the most literal kind of &quot;Window&quot; available. They show content such as presentations, web pages, documents, etc., and act as a sort of frame around them. Accordingly, applications typically use multiple view windows to display different instances of content. A &quot;tabbed&quot; view can organize applications that produce many windows.": "",
     "<strong>App Windows</strong> are the main windows of apps that are not document-based. Applications rarely use more than a single instance of these windows.": "",
