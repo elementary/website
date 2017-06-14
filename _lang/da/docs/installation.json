@@ -1,8 +1,8 @@
 {
     "Installation": "",
     "Download elementary OS": "Hent elementary OS",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Hvis du ikke allerede har det, er du nød til at <a href=\"\/\" target=\"_blank\">hente elementary OS fra vores hjemmeside<\/a>. Derefter skal du kopier den nedhentede ISO fil til et USB stik ved at bruge instruktionerne nedenfor.",
-    "Recommended System Specifications": "Anbefalet systemspecifikatione",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Hvis du ikke allerede har, bliver du nød til <a href=\"/\" target=\"_blank\"> at hente elementary OS fra vores startside </a> . Du for brug for at kopier den hentede ISO fil til et USB drev, ved hjælp af de følgende instruktioner herunder.",
+    "Recommended System Specifications": "Anbefalede System Specifikationer",
     "Intel i3 or comparable dual-core 64-bit processor": "",
     "1 GB of system memory (RAM)": "1 GB hukommelse (RAM)",
     "15 GB of disk space": "15 GB plads på harddiske",
@@ -62,5 +62,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "",
     "Click &quot;OK&quot; and wait for the process to finish.": "",
     "After Installation": "",
-    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": ""
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
