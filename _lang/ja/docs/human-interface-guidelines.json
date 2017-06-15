@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "Human Interface Guidelines": "",
     "These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:": "",
@@ -558,3 +559,6 @@
     "Menu items should have names that are either actions or locations, never descriptions. Make sure menu items are concise, but also fully describe the action that will be performed when they are clicked.": "",
     "&quot;Find in Page...&quot; is acceptable as it clearly describes the action that will be performed when the item is clicked. &quot;Software Up to Date&quot; is not acceptable. What happens if I click this item? Where will it take me? What will it do? The outcome is uncertain.": ""
 }
+=======
+
+>>>>>>> origin/master

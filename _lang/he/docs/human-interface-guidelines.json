@@ -142,6 +142,7 @@
     "For more info, see the FreeDesktop.Org <a href=\"http://standards.freedesktop.org/menu-spec/latest/apa.html\">menu entry</a> spec.": "",
     "Keywords": "",
     "You may also include keywords in your launcher to help users find your app via search. These follow the convention of &quot;X-GNOME-Keywords&quot; (for in the app launcher) and &quot;X-AppInstall-Keywords&quot; (for in the app installer). For example, web browser might include &quot;Internet&quot; as a keyword even though it's not in the app's name, generic name, or description. As a result, a user searching for &quot;Internet&quot; will find the app. Here are some more examples:": "",
+<<<<<<< HEAD
     "Mail: <strong>Email;Gmail</strong>": "",
     "Midori: <strong>Internet;WWW;Explorer</strong>": "",
     "Files: <strong>Folders;Browser;Explorer;Finder;Manager</strong>": "",
@@ -153,6 +154,19 @@
     "See also: <a href=\"http://standards.freedesktop.org/desktop-entry-spec/latest/index.html\">Desktop Entry Specification</a> from FreeDesktop.org": "",
     "Contractor": "קבלן",
     "Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add <a href=\"https://launchpad.net/contractor\">Contractor</a> support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:": "",
+=======
+    "Mail: <strong>Email;Gmail<\/strong>": "",
+    "Midori: <strong>Internet;WWW;Explorer<\/strong>": "",
+    "Files: <strong>Folders;Browser;Explorer;Finder;Manager<\/strong>": "",
+    "Terminal: <strong>Command;Prompt;cmd;Emulator<\/strong>": "",
+    "Scratch: <strong>Notepad;IDE;Plain<\/strong>": "",
+    "System Settings: <strong>Control;Panel<\/strong>": "",
+    "Shotwell: <strong>Camera;Picture<\/strong>": "",
+    "Keywords should be single words (in <a href=\"#title-case\">title case<\/a>) separated by semicolons.": "",
+    "See also: <a href=\"http:\/\/standards.freedesktop.org\/desktop-entry-spec\/latest\/index.html\">Desktop Entry Specification<\/a> from FreeDesktop.org": "",
+    "Contractor": "קבלן",
+    "Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add <a href=\"https:\/\/launchpad.net\/contractor\">Contractor<\/a> support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:": "",
+>>>>>>> origin/master
     "Register one of its functions as a service that can be used from other apps": "",
     "Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages": "",
     "Displaying Results from Contractor": "",
