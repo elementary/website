@@ -988,7 +988,7 @@ Proper typography is important throughout elementary OS. Not just for consistenc
 * Only use **one space** after a period.
     * i.e. “This is a sentence. This is another sentence.”
 * Use a proper ellipsis character (…) rather than three dots.
-    * Use `\u0133` in your code.
+    * Use `\u2026` in your code.
     * See [Using Ellipses](#using-ellipses) for usage details.
 * For quotes, use proper **left and right double quotation characters** (“ and ”).
     *  Use `\u201C` and `\u201D` in your code.
