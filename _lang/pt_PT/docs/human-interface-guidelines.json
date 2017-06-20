@@ -511,7 +511,7 @@
     "Only use <strong>one space<\/strong> after a period.": "Usa apenas <strong>um espaço<\/strong>após um ponto final.",
     "i.e. “This is a sentence. This is another sentence.”": "e.g.\"Isto é uma frase. Isto é outra frase.\"",
     "Use a proper ellipsis character (…) rather than three dots.": "Usa o caracter próprio de reticencias (…) em vez de três pontos finais.",
-    "Use <code>\\u0133<\/code> in your code.": "Usa <code>\\u0133<\/code> no teu código.",
+    "Use <code>\\u2026<\/code> in your code.": "",
     "See <a href=\"#using-ellipses\">Using Ellipses<\/a> for usage details.": "Vê <a href=\"#using-ellipses\">Usar reticências<\/a> para mais informação e detalhe.",
     "For quotes, use proper <strong>left and right double quotation characters<\/strong> (“ and ”).": "Para citações, usa os caracteres corretos de <strong>abrir e fechar aspas<\/strong> (“ e ”).",
     "Use <code>\\u201C<\/code> and <code>\\u201D<\/code> in your code.": "Usa <code>\\u201C<\/code> e <code>\\u201D<\/code> no teu código.",

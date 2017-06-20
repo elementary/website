@@ -511,7 +511,7 @@
     "Only use <strong>one space<\/strong> after a period.": "Используйте только <strong>один пробел<\/strong> после точки.",
     "i.e. “This is a sentence. This is another sentence.”": "т.е. \"Это одно предложение. Это еще одно предложение.\"",
     "Use a proper ellipsis character (…) rather than three dots.": "",
-    "Use <code>\\u0133<\/code> in your code.": "Используйте <code>\\u0133<\/code> в своем коде.",
+    "Use <code>\\u2026<\/code> in your code.": "",
     "See <a href=\"#using-ellipses\">Using Ellipses<\/a> for usage details.": "Посмотрите <a href=\"#using-ellipses\">Использование эллипсов<\/a> за подробностями использования.",
     "For quotes, use proper <strong>left and right double quotation characters<\/strong> (“ and ”).": "",
     "Use <code>\\u201C<\/code> and <code>\\u201D<\/code> in your code.": "Используйте <code>\\u201C<\/code> и <code>\\u201D<\/code> в своем коде.",
