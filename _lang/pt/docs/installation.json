@@ -1,5 +1,5 @@
 {
-    "Installation": "",
+    "Installation": "Instalação",
     "Download elementary OS": "",
     "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
     "Recommended System Specifications": "",
@@ -11,7 +11,7 @@
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "",
     "Choose your current Operating System": "",
     "Select the operating system you are currently using to view tailored installation instructions.": "",
-    "Windows": "",
+    "Windows": "Janelas",
     "macOS": "",
     "Ubuntu": "",
     "Creating an Install Drive": "",

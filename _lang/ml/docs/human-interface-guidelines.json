@@ -1,5 +1,5 @@
 {
-    "Human Interface Guidelines": "",
+    "Human Interface Guidelines": "വിനിമയ മാർഗനിർദേശങ്ങൾ",
     "These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:": "",
     "Users will learn to use your application faster because it shares common elements that they are already familiar with.": "",
     "Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.": "",
@@ -511,7 +511,7 @@
     "Only use <strong>one space<\/strong> after a period.": "",
     "i.e. “This is a sentence. This is another sentence.”": "",
     "Use a proper ellipsis character (…) rather than three dots.": "",
-    "Use <code>\\u0133<\/code> in your code.": "",
+    "Use <code>\\u2026<\/code> in your code.": "",
     "See <a href=\"#using-ellipses\">Using Ellipses<\/a> for usage details.": "",
     "For quotes, use proper <strong>left and right double quotation characters<\/strong> (“ and ”).": "",
     "Use <code>\\u201C<\/code> and <code>\\u201D<\/code> in your code.": "",
