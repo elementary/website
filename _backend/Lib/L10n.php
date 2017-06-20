@@ -26,6 +26,7 @@ class L10n
      */
     public static $blacklistedPages = array(
         '/getting-started.md/',
+        '/human-interface-guidelines.md/',
         '/inventory.php/',
         '/LICENSE.md/',
         '/README.md/',
