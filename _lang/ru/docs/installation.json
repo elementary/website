@@ -1,6 +1,6 @@
 {
-    "Installation": "Руководство по установке",
-    "Download elementary OS": "Загрузка elementary OS",
+    "Installation": "Установка",
+    "Download elementary OS": "Загрузить elementary OS",
     "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Если вы еще этого не сделали, вам необходимо <a href=\"\/\" target=\"_blank\">загрузить elementary OS с нашей домашней страницы<\/a>. Вам нужно скопировать загруженный ISO-файл на USB-носитель, используя инструкции ниже.",
     "Recommended System Specifications": "Рекомендуемые системные требования",
     "Intel i3 or comparable dual-core 64-bit processor": "Intel i3 или аналогичный двухъядерный 64-битный процессор",
@@ -13,7 +13,7 @@
     "Select the operating system you are currently using to view tailored installation instructions.": "Выберите операционную систему, которую вы используете в данный момент, чтобы увидеть соответствующие инструкции по установке.",
     "Windows": "",
     "macOS": "",
-    "Ubuntu": "",
+    "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "Создание установочного диска",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Вам понадобится USB-носитель как минимум с 2 ГБ свободного места, а также программа Rufus.",
     "Download Rufus": "Загрузить Rufus",

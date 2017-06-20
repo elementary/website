@@ -38,7 +38,7 @@
     "Desktop Development": "Десктоп-разработка",
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Окружение нашего рабочего стола и все его приложения созданы с использованием Vala, GTK+, Granite и множества других свободных библиотек. Мы размещаем наш исходный код на GitHub — бесплатном сервисе для открытых проектов. Если вы никогда не писали код для elementary OS, мы рекомендуем ознакомиться с руководством по началу работы.",
     "Browse Our Code": "Просмотреть наш код",
-    "Bitesized Bugs": "Ошибки «на один байт»",
+    "Bitesized Bugs": "Ошибки «на один укус»",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Наша команда дизайнеров превращает идеи в четко сформулированные задачи. Перед погружением рекомендуется ознакомиться с нашим рабочим процессом.",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "elementary OS использует таблицу стилей, написанную на CSS, которая определяет весь внешний вид: от кнопок до панелей и меню.",
     "Browse Our Stylesheet": "Просмотреть наши стили",

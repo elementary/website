@@ -66,8 +66,8 @@
     "For more information related to security patches, read the <a href=\"http:\/\/www.ubuntu.com\/usn\/xenial\/\">Ubuntu security notices<\/a>.": "",
     "System Settings": "Configuración del sistema",
     "elementary OS comes with a handy app called &quot;System Settings&quot; that controls all of your system-wide (or &quot;global&quot;) preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "elementary OS incluye una útil aplicación, «Configuración del sistema», que controla las preferencias «globales» (que afectan al sistema en general). Mediante Configuración del sistema es posible hacer ajustes en el funcionamiento de las combinaciones de teclas, la resolución de la pantalla, el fondo del escritorio, y mucho más.",
-    "Search": "úsqueda",
+    "Search": "Búsqueda",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Para encontrar con rapidez lo que busca, escriba palabras clave en el cuadro de búsqueda del extremo superior de la ventana. El contenido se filtrará para mostrar únicamente los resultados relevantes.",
     "App Settings": "Configuración de aplicaciones",
-    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
+    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "Tenga en cuenta que la Configuración del Sistema maneja las preferencias globales para el sistema operativo elementary OS. Además, algunas aplicaciones pueden tener sus propias perefencias, usted no las encontrará aquí, En su lugar, busque dentro de la propia aplicación."
 }
