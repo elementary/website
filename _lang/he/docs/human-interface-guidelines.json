@@ -1,7 +1,7 @@
 {
-    "Human Interface Guidelines": "",
+    "Human Interface Guidelines": "הנחיות למנשק משתמש",
     "These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:": "",
-    "Users will learn to use your application faster because it shares common elements that they are already familiar with.": "",
+    "Users will learn to use your application faster because it shares common elements that they are already familiar with.": "המשתמשים ילמדו איך להשתמש ביישום שלך מהר יותר כיוון שהוא חולק רכיבים בסיסיים שכבר מוכרים להם.",
     "Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.": "",
     "Your application will appear native to the desktop and share the same elegant look as default applications.": "",
     "Your application will be easier to document because an expected behavior does not require explanation.": "",
