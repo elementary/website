@@ -20,7 +20,7 @@
     "Rufus - select ISO": "Rufus - vyberte ISO",
     "Open Rufus": "Otvorte Rufus",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "Vložte váš USB disk a vyberte ho v zozname &quot;Zariadenie&quot;",
-    "Select &quot;ISO Image&quot; next to &quot;Create a bootable disk using...&quot;": "",
+    "Select &quot;ISO Image&quot; next to &quot;Create a bootable disk using...&quot;": "Vyberte &quot;Obraz ISO&quot; vedľa &quot;Vytvoriť bootovateľný disk&quot;",
     "Click": "",
     "the disk icon": "a ikonu disku",
     "to choose the ISO that you downloaded previously.": "a vybrať ISO súbor, ktorý ste predtým stiahli.",
