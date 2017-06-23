@@ -124,6 +124,10 @@
             ?>
 
         </div>
+
+        <?php
+            }
+        ?>
     </div>
 </section>
 <section class="grid">
@@ -132,6 +136,11 @@
         <p>elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.</p>
     </div>
     <div class="whole">
+
+        <?php
+            if ($apiResponse['ok']) {
+        ?>
+
         <div class="team-directory">
 
             <?php
