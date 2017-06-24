@@ -513,6 +513,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
         Build-Depends: cmake (>= 2.8),
+                       cmake-elementary,
                        debhelper (>= 8.0.0),
                        valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
