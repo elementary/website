@@ -235,7 +235,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
+2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name. The file needs to be executable in order to be recognized by the system.
 
 3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
