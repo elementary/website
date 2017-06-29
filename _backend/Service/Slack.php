@@ -57,6 +57,7 @@ class Slack
      * Sanatizes member fields.
      *
      * @param array $member
+     *
      * @return array
      */
     protected static function sanatizeMember(array $member)
@@ -85,11 +86,12 @@ class Slack
      * Filters users based on having properties and being defined lists.
      *
      * @param array $members
+     *
      * @return array
      */
     protected static function filterUsers(array $members)
     {
-        return array_filter($members, function($member) {
+        return array_filter($members, function ($member) {
             if ($member['deleted'] === true) {
                 return false;
             }
@@ -114,22 +116,35 @@ class Slack
      * Sorts users based on activity and name.
      *
      * @param array $members
+     *
      * @return array
      */
     protected static function sortUsers(array $members)
     {
-        usort($members, function($a, $b) {
+        usort($members, function ($a, $b) {
             // "I'm #1!" ~ Dan
-            if ($a['id'] == 'U029601AF') return -1;
-            if ($b['id'] == 'U029601AF') return 1;
+            if ($a['id'] == 'U029601AF') {
+                return -1;
+            }
+            if ($b['id'] == 'U029601AF') {
+                return 1;
+            }
 
             // Admin's first
-            if ($a['is_admin'] && !$b['is_admin']) return -1;
-            if ($b['is_admin'] && !$a['is_admin']) return 1;
+            if ($a['is_admin'] && ! $b['is_admin']) {
+                return -1;
+            }
+            if ($b['is_admin'] && ! $a['is_admin']) {
+                return 1;
+            }
 
             // Online people first
-            if ($a['presence'] == 'active' && $b['presence'] != 'active') return -1;
-            if ($b['presence'] == 'active' && $a['presence'] != 'active') return 1;
+            if ($a['presence'] == 'active' && $b['presence'] != 'active') {
+                return -1;
+            }
+            if ($b['presence'] == 'active' && $a['presence'] != 'active') {
+                return 1;
+            }
 
             // Sort alphabetically
             return strcasecmp($a['name'], $b['name']);
@@ -183,7 +198,7 @@ class Slack
         }
 
         $members = $res['members'];
-        $members = array_map([static::class, 'sanatizeMember'], $members);
+        $members = array_map(array(static::class, 'sanatizeMember'), $members);
         $members = static::filterUsers($members);
         $members = static::sortUsers($members);
 
@@ -198,7 +213,7 @@ class Slack
     public function users()
     {
         return array_filter($this->members(), function ($member) {
-            return (in_array($member['id'], static::$filterCommunityUsers) === false);
+            return in_array($member['id'], static::$filterCommunityUsers) === false;
         });
     }
 
