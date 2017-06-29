@@ -2,6 +2,8 @@
 
 require_once __DIR__.'/_backend/preload.php';
 
+use App\Lib\Cache\Cache;
+use App\Lib\Cache\Store\FileStore;
 use App\Service\Slack;
 
 $page['description'] = 'Meet the people behind elementary.';
@@ -11,10 +13,17 @@ $page['styles'] = array(
     'styles/team.css'
 );
 
+$cacheStore = new FileStore();
+$cache = new Cache($cacheStore);
+
 $slack = new Slack($config['slack_token']);
 
-$memebers = $slack->users();
-$communities = $slack->community();
+$memebers = $cache->remember('team.php@users', 10, function () use ($slack) {
+    return $slack->users();
+});
+$communities = $cache->remember('team.php@users', 10, function () use ($slack) {
+    return $slack->community();
+});
 
 include $template['header'];
 include $template['alert'];
