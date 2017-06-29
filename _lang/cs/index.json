@@ -1,10 +1,10 @@
 {
     "A fast and open replacement for Windows and macOS": "Rychlá a otevřená náhrada pro Windows a macOS",
-    "Pay What You Want:": "Zaplaťte, kolik chcete",
+    "Pay What You Want:": "Zaplaťte kolik chcete:",
     "Custom": "Vlastní",
     "Enter any dollar amount.": "Zadejte libovolnou částku v dolarech.",
     "Purchase elementary OS": "Přispět a získat elementary OS",
-    "0.4.1 Loki | 1.36 GB (for PC or Mac)": "",
+    "0.4.1 Loki | 1.36 GB (for PC or Mac)": "0.4.1 Loki | 1,36 GB (pro PC nebo Mac)",
     "What the press is saying about elementary OS:": "Co tisk říká o elementary OS:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "",
@@ -14,12 +14,12 @@
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "",
     "Become a Developer": "Staňte se vývojářem",
     "Task finished": "Úkol dokončen",
-    "Apps You Need, Without Ones You Don't.": "Aplikace, které Potřebujete, Bez Těch, které Nechcete",
-    "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS je dodáváno s opatrným výběrem aplikací, které nejvíce potřebujete a které vám možní věnovat více času práci a méně času odinstalování zbytečného softwaru",
+    "Apps You Need, Without Ones You Don't.": "Aplikace, které potřebujete, bez těch, které nechcete.",
+    "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "elementary OS je dodáváno s opatrným výběrem aplikací, které nejvíce potřebujete a které vám možní věnovat více času práci a méně času odinstalování zbytečného softwaru.",
     "Music": "Hudba",
     "Epiphany": "",
-    "Mail": "",
-    "Photos": "Fotografie",
+    "Mail": "Mail",
+    "Photos": "Fotky",
     "Videos": "Videa",
     "Calendar": "Kalendář",
     "Files": "Soubory",
@@ -82,5 +82,5 @@
     "Cancel": "Zrušit",
     "Download": "",
     "Torrent Magnet Link": "",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Rychlá a otevřená alternativa k Windows a macOS ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Rychlá a otevřená alternativa k Windows a macOS &sdot; elementary OS"
 }
