@@ -21,7 +21,7 @@ $slack = new Slack($config['slack_token']);
 $memebers = $cache->remember('team.php@users', 10, function () use ($slack) {
     return $slack->users();
 });
-$communities = $cache->remember('team.php@users', 10, function () use ($slack) {
+$communities = $cache->remember('team.php@communities', 10, function () use ($slack) {
     return $slack->community();
 });
 
