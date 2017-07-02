@@ -31,7 +31,7 @@
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.": "",
     "Multitasking": "",
     "elementary OS supports two types of multitasking: windows and workspaces.": "",
-    "Windows": "",
+    "Windows": "Windows",
     "Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:": "",
     "click on the window you want to switch to": "",
     "click on the app's icon in the dock": "",
