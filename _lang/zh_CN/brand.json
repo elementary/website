@@ -44,7 +44,7 @@
     "Hardware Distributors": "硬件制造商",
     "We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.": "无论您使用的产品是从我们网站下载的，还是硬件预装的，我们都希望带有 elementary 品牌标识的软件能提供一致的体验。",
     "The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:": "elementary OS 的软件构架可能会根据软件许可协议的要求进行修改或重新发行。但是我们的商标只能在符合以下要求时才能被重新使用：",
-    "The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or": "",
+    "The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or": "软件本身，包括预装应用、样式表、图标以及配置文件等内容，保持无修改状态，或者是：",
     "The modifications are approved in writing by elementary.": "",
     "We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a> for clarification or direction.": "",
     "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "",
