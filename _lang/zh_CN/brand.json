@@ -49,7 +49,7 @@
     "We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a> for clarification or direction.": "",
     "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "",
     "Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.": "",
-    "Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.": "用不同尺寸的资源替换将不会出现在系统中的图标，例如目前在 <code>/usr/share/icons/elementary/places/</code> 路径下的 <code>distributor-logo</code> 图标资源。",
+    "Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.": "替换不出现在系统中的图标，如 <code>/usr/share/icons/elementary/places/</code> 路径下各尺寸的 <code>distributor-logo</code> 图标。",
     "Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.": "",
     "Merchandise": "商品",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "我们通常不允许自己的品牌（包括名称和品牌标志）被第三方商品使用。",
