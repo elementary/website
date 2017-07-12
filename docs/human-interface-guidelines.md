@@ -130,7 +130,7 @@ If a user explicitly "resets" the app (ex. by deleting all songs in a music libr
 
 ## Normal Launch {#normal-launch}
 
-When a user launches an app, they're performing an explicit action and expecting a fast, oftentimes immediate response. You should focus on three key areas for app launching: speed, obviousness of what to do next, and state.
+When a user launches an app, they're performing an explicit action and expecting a fast, oftentimes immediate response. You should focus on three key areas for app launching: Speed, obviousness of what to do next, and state.
 
 ### Speed {#speed}
 
@@ -391,7 +391,7 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 
 ### "OK" is not Okay {#ok-is-not-okay}
 
-When presenting a dialog to a user, always use explicit action names like "Save..." or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
+When presenting a dialog to a user, always use explicit action names like "Save…" or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
 
 ### Preference Dialogs {#preference-dialogs}
 
@@ -576,7 +576,7 @@ Linked Buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 ## AppMenu {#appmenu}
 
-The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
+The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View…" menu bar.
 
 ![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
 
@@ -690,7 +690,7 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 
 ### Metaphors
 
-If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
+If you're creating an icon for a hardware device or a file type (such as those for MIME-type or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Camera icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/camera-photo.svg" alt="Camera icon">
@@ -769,7 +769,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
+Colors do have their connotations, so be cognisant of this when picking them. For instance: Red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
 
 
 ## Symbolic Icons {#symbolic-icons}
@@ -786,7 +786,7 @@ The use of full-color and symbolic icons is not interchangeable, both have appro
 
 Full color icons are best used for:
 * application icons
-* files and mimetypes
+* files and MIME-types
 * device icons
 * places
 
@@ -825,7 +825,7 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 
 ### Exceptions
 
-However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+However there are exceptions. Many icons (especially MIME-type icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
 <img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Video icon">
 <img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Terminal icon">
@@ -936,7 +936,7 @@ Visual hierarchy aids users in reading and comprehending your text as well as kn
 <p>No files are open. Open a file to begin editing.</p>
 
 * **Better**:
-### No files are open.
+### No files open.
 Open a file to begin editing.
 
 ## Language {#language}
@@ -973,7 +973,7 @@ Used for titles, buttons, menus, and most other widgets.
 
 * ex. "Open File" title in a dialog.
 * ex. "Delete 13 Songs" on a button.
-* ex. "Search Contacts..." in a search bar.
+* ex. "Search Contacts…" in a search bar.
 
 ### Notes/Exceptions {#notes-exceptions}
 
@@ -1032,7 +1032,7 @@ These rules apply to the English language; other languages may have their own co
 
 ## Using Ellipses {#using-ellipses}
 
-The ellipsis character (…) is used in the interface for two primary reasons: informing the user of an additional required information and letting the user know text has been shortened.
+The ellipsis character (…) is used in the interface for two primary reasons: Informing the user of an additional required information and letting the user know text has been shortened.
 
 ### Additional Information {#additional-information}
 
@@ -1064,4 +1064,4 @@ Be sure to use the actual ellipsis character (…) rather than three consecutive
 
 Menu items should have names that are either actions or locations, never descriptions. Make sure menu items are concise, but also fully describe the action that will be performed when they are clicked.
 
-"Find in Page..." is acceptable as it clearly describes the action that will be performed when the item is clicked. "Software Up to Date" is not acceptable. What happens if I click this item? Where will it take me? What will it do? The outcome is uncertain.
+"Find in Page…" is acceptable as it clearly describes the action that will be performed when the item is clicked. "Software Up to Date" is not acceptable. What happens if I click this item? Where will it take me? What will it do? The outcome is uncertain.
