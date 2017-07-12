@@ -4,8 +4,8 @@
     "Custom": "自訂",
     "Enter any dollar amount.": "輸入任意金額。",
     "Purchase elementary OS": "購買 elementary OS",
-    "0.4.1 Loki | 1.36 GB (for PC or Mac)": "",
-    "What the press is saying about elementary OS:": "報導都是怎麼評論 elementary OS 的：",
+    "0.4.1 Loki | 1.36 GB (for PC or Mac)": "0.4.1 Loki | 1.36 GB（PC 或 Mac）",
+    "What the press is saying about elementary OS:": "媒體報導都怎麼評論 elementary OS：",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "「elementary OS 與眾不同… 美麗又強大的作業系統，就算舊電腦也跑得很好」",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "「快速、低維護性的平臺，幾乎可以四處裝」",
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "「輕量又快速… 完全以社群為基礎，對設計和視覺真正得心應手」",
@@ -82,5 +82,5 @@
     "Cancel": "取消",
     "Download": "下載",
     "Torrent Magnet Link": "Torrent 磁力鏈結",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": ""
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "輕快、開放，足以取代 Windows 和 macOS 的作業系統 &sdot; elementary OS"
 }
