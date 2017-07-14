@@ -9,11 +9,10 @@
 
 <section class="hero">
     <div class="grid">
-    <div>
-        <img src="<?=$sitewide['root'];?>images/brand/logomark.png" alt="logomark">
+        <img src="<?php echo $sitewide['lang-root'];?>images/brand/logomark.png" alt="logomark">
         <h1>Thank you for downloading!</sup></h1>
-        <h4>For help and more info please see the installation guide</h4>
-        <a class="button suggested-action" href="/docs/installation#installation">Read the installation guide</a>
+        <h4>For help and more info, please see the installation guide</h4>
+        <a class="button suggested-action" href="<?php echo $sitewide['lang-root'];?>/docs/installation#installation">Read the installation guide</a>
     </div>
 </section>
 
