@@ -50,7 +50,7 @@
     "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "Ticari marka dağıtım koşullarına uyma konusunda isteksizseniz veya uymanız mümkün değilse, işletim sisteminden elementary'nin ticari markasını silmek basit ve dolambaçsız olmalıdır:",
     "Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.": "Ticari markayı hariç tutmak için <code>/etc/lsb-release</code> dosyasındaki <code>DISTRIB_DESCRIPTION</code> satırını değiştirin.",
     "Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.": "İkonografiyi değiştirin, böylece <code>/usr/share/icons/elementary/places/</code> konumunda sağlanan her bir dosya boyutundaki <code>distributor-logo</code> ikonu OS'ta görünmez.",
-    "Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.": "",
+    "Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.": "<code>plymouth-theme-elementary</code> ve <code>plymouth-theme-elementary-text</code> paket programlarını siliniz.",
     "Merchandise": "Ürün/Mal",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "Genelde markamızın (adımız veya marka simgelerimiz) 3 parti ürünlerde yer amasına izin vermiyoruz.",
     "Assets &amp; More Info": "",
