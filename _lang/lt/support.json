@@ -1,6 +1,7 @@
 {
     "Get support for": "Gaukite palaikymą",
     "Calendar": "Kalendorius",
+    "AppCenter": "Programų centras",
     "Camera": "Kamera",
     "Files": "Failai",
     "Geary": "Geary",
@@ -10,11 +11,11 @@
     "Text Editor": "Tekstų redaktorius",
     "System Settings": "Sistemos nustatymai",
     "Videos": "Vaizdo įrašai",
-    "Installation": "Diegimas",
+    "Installation": "Įdiegimas",
     "Get help installing elementary OS with our step-by-step guide.": "Gaukite pagalbą, susijusią su elementary OS diegimu mūsų pažingsninėje instrukcijoje.",
     "Learning the Basics": "Susipažinimas su pagrindais",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Pereikite per darbalaukį, daugelio užduočių veikseną, sparčiuosius klaviatūros klavišus ir daugiau.",
     "StackExchange": "StackExchange",
     "Check out answers to some of the most common questions we get.": "Sužinokite atsakymus į dažniausiai mums užduodamus klausimus.",
-    "Support ⋅ elementary": "Palaikymas ⋅ elementary"
+    "Support &sdot; elementary": "Palaikymas ⋅ elementary"
 }

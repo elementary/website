@@ -1,10 +1,11 @@
 {
     "Get support for": "Destek alın",
     "Calendar": "Takvim",
+    "AppCenter": "",
     "Camera": "Kamera",
     "Files": "Dosyalar",
     "Geary": "",
-    "Epiphany": "",
+    "Epiphany": "Epiphany",
     "Music": "Müzik",
     "Photos": "Fotoğraflar",
     "Text Editor": "Metin Editörü",
@@ -16,5 +17,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Masaüstü, çoklu görev, klavye kısayolları ve daha fazlası için ilerle.",
     "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Aldığımız en sık sorulan sorulardan bazıları cevaplarına göz atın.",
-    "Support ⋅ elementary": ""
+    "Support &sdot; elementary": ""
 }

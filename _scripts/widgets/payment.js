@@ -28,7 +28,6 @@ const supportedLanguages = [
 ]
 
 export default class Payment {
-
     /**
      * Payment
      * Creates a new Payment class

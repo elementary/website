@@ -26,7 +26,7 @@ $cli->arguments->add([
     'page' => [
         'prefix'      => 'p',
         'longPrefix'  => 'page',
-        'description' => 'Page to extract',
+        'description' => 'Page to extract written like docs/getting-started',
     ],
     'verbose' => [
         'prefix'      => 'v',
@@ -124,22 +124,18 @@ foreach ($pages as $page) {
             $newTranslations[$string] = "";
 
             if (isset($currentTranslations[$string]) !== false) {
-                // DEPRECATED: these two if statements check for untranslated strings from transifex
-                if ($currentTranslations[$string] === $string) {
-                    continue;
-                }
-
-                if (htmlentities($currentTranslations[$string]) === $string) {
-                    continue;
-                }
-
                 $newTranslations[$string] = $currentTranslations[$string];
             }
         }
 
+        $directory = dirname($languagePath);
+        if (is_dir($directory) === false) {
+            mkdir($directory, 0766, true);
+        }
+
         if (count($newTranslations) > 0) {
             $newData = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-            file_put_contents($languagePath, $newData);
+            file_put_contents($languagePath, $newData . PHP_EOL);
         } elseif (file_exists($languagePath)) {
             unlink($languagePath);
         }

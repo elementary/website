@@ -1,10 +1,11 @@
 {
     "Get support for": "Obtenha suporte para",
     "Calendar": "Calendário",
+    "AppCenter": "",
     "Camera": "Câmera",
     "Files": "Arquivos",
     "Geary": "",
-    "Epiphany": "",
+    "Epiphany": "Epiphany",
     "Music": "Música",
     "Photos": "Fotos",
     "Text Editor": "",
@@ -16,5 +17,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "",
     "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "",
-    "Support ⋅ elementary": ""
+    "Support &sdot; elementary": ""
 }

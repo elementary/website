@@ -11,12 +11,12 @@ if ( empty($amount) ) {
 ////    Error Handling
 function LastError($db) {
     global $sentry;
-    $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorCode();
+    $Error = 'Error Code "'.$db->lastErrorCode().'" : '.$db->lastErrorMsg();
     if (getenv('PHPENV') !== 'production') {
         echo $Error;
     } else {
         error_log($Error);
-        $sentry->captureMessage($msg);
+        $sentry->captureMessage($Error);
     }
     exit;
 }

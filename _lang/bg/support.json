@@ -1,10 +1,11 @@
 {
     "Get support for": "Получете помощ за",
     "Calendar": "Календар",
+    "AppCenter": "",
     "Camera": "Камера",
     "Files": "Файлове",
     "Geary": "Поща (Geary)",
-    "Epiphany": "",
+    "Epiphany": "Epiphany",
     "Music": "Музика",
     "Photos": "Снимки",
     "Text Editor": "Текстов Редактор",
@@ -16,5 +17,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "",
     "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Вижте отговорите на някои от най-често задаваните въпроси.",
-    "Support ⋅ elementary": ""
+    "Support &sdot; elementary": ""
 }
