@@ -16,7 +16,6 @@
  * @param {Boolean} options.fixed - Update container height based on slide.
  */
 export default class Showcase {
-
     /**
      * constructor
      * Creates a new Showcase

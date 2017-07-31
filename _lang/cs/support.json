@@ -1,13 +1,14 @@
 {
     "Get support for": "Podpora",
     "Calendar": "Kalendář",
+    "AppCenter": "",
     "Camera": "Kamera",
     "Files": "Soubory",
     "Geary": "",
     "Epiphany": "",
     "Music": "Hudba",
-    "Photos": "Fotografie",
-    "Text Editor": "",
+    "Photos": "Fotky",
+    "Text Editor": "Textový editor",
     "System Settings": "Nastavení Systému",
     "Videos": "Videa",
     "Installation": "Instalace",
@@ -16,5 +17,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Seznamte se s plochou, rozhraním pro multi-tasking, klávesovými zkratkami a dalšími věcmi.",
     "StackExchange": "",
     "Check out answers to some of the most common questions we get.": "Projděte si odpovědi na nejčastěji pokládané otázky.",
-    "Support &sdot; elementary": ""
+    "Support &sdot; elementary": "Podpora &sdot; elementary"
 }

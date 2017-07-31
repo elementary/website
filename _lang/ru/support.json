@@ -1,9 +1,10 @@
 {
     "Get support for": "Получите помощь по",
     "Calendar": "Календарь",
+    "AppCenter": "AppCenter",
     "Camera": "Камера",
     "Files": "Файлы",
-    "Geary": "",
+    "Geary": "Geary",
     "Epiphany": "Epiphany",
     "Music": "Музыка",
     "Photos": "Фотографии",
@@ -14,7 +15,7 @@
     "Get help installing elementary OS with our step-by-step guide.": "Используйте пошаговое руководство, если вам нужна помощь с установкой elementary OS.",
     "Learning the Basics": "Изучение основ",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Познакомьтесь с рабочим столом, многозадачностью, сочетаниями клавиш и многим другим.",
-    "StackExchange": "",
+    "StackExchange": "StackExchange",
     "Check out answers to some of the most common questions we get.": "Проверьте ответы на вопросы, которые мы получаем чаще всего.",
-    "Support &sdot; elementary": ""
+    "Support &sdot; elementary": "Поддержка &sdot; elementary"
 }

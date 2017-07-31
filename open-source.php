@@ -33,15 +33,15 @@
             <p class="oss-title">elementary OS Applications</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/maya" target="_blank" rel="noopener"><span>Calendar</span></a>
-            <a class="button sub-item" href="https://launchpad.net/snap-elementary" target="_blank" rel="noopener"><span>Camera</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/calendar" target="_blank" rel="noopener"><span>Calendar</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/camera" target="_blank" rel="noopener"><span>Camera</span></a>
             <a class="button sub-item" href="https://launchpad.net/pantheon-files" target="_blank" rel="noopener"><span>Files</span></a>
-            <a class="button sub-item" href="https://launchpad.net/pantheon-mail" target="_blank" rel="noopener"><span>Mail</span></a>
-            <a class="button sub-item" href="https://launchpad.net/noise" target="_blank" rel="noopener"><span>Music</span></a>
-            <a class="button sub-item" href="https://launchpad.net/pantheon-photos" target="_blank" rel="noopener"><span>Photos</span></a>
-            <a class="button sub-item" href="https://launchpad.net/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
-            <a class="button sub-item" href="https://launchpad.net/pantheon-terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
-            <a class="button sub-item" href="https://launchpad.net/audience" target="_blank" rel="noopener"><span>Videos</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/mail" target="_blank" rel="noopener"><span>Mail</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/videos" target="_blank" rel="noopener"><span>Videos</span></a>
         </div>
     </div>
     <div class="platform-item half">
@@ -54,9 +54,9 @@
             <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank" rel="noopener"><span>Icon Theme</span></a>
             <a class="button sub-item" href="https://launchpad.net/gala" target="_blank" rel="noopener"><span>Gala</span></a>
             <a class="button sub-item" href="https://launchpad.net/plank" target="_blank" rel="noopener"><span>Plank</span></a>
-            <a class="button sub-item" href="https://launchpad.net/slingshot" target="_blank" rel="noopener"><span>Slingshot</span></a>
-            <a class="button sub-item" href="https://launchpad.net/switchboard" target="_blank" rel="noopener"><span>Switchboard</span></a>
-            <a class="button sub-item" href="https://launchpad.net/wingpanel" target="_blank" rel="noopener"><span>Wingpanel</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/applications-menu" target="_blank" rel="noopener"><span>Slingshot</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/switchboard" target="_blank" rel="noopener"><span>Switchboard</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/wingpanel" target="_blank" rel="noopener"><span>Wingpanel</span></a>
         </div>
     </div>
     <div class="platform-item half">
@@ -194,6 +194,9 @@
         </a>
         <a href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
             <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy" />
+        </a>
+        <a href="https://weblate.org/en/donate/" title="Weblate">
+            <img class="oss-logo" src="images/open-source/weblate.svg" alt="Weblate" />
         </a>
     </div>
 </div>

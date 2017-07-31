@@ -9,15 +9,31 @@ import Script from 'scriptjs'
 
 import config from '~/config'
 
+/**
+ * timeoutDelay
+ * A hard set time we wait for Google analytics before returning fallbackLogger
+ *
+ * @var {number}
+ */
+const timeoutDelay = 5000 // 5 Seconds
+
+/**
+ * fallbackLogger
+ * The function we use for analytics if we can't contact Google.
+ *
+ * @param {...*} args
+ * @return {void}
+ */
+const fallbackLogger = (...args) => {
+    console.log('Google analytics disabled. Logging to console instead')
+    console.log(args)
+}
+
 export default config.then((config) => {
     return new Promise((resolve, reject) => {
         if (!config.user.trackme) {
             console.log('Google analytics not loaded due to trackme config')
-
-            return resolve((...args) => {
-                console.log('Google analytics disabled. Logging to console instead')
-                console.log(args)
-            })
+            return resolve(fallbackLogger)
         }
 
         try {
@@ -36,15 +52,15 @@ export default config.then((config) => {
 
             Script('https://www.google-analytics.com/analytics.js', () => {
                 console.log('Google analytics loaded')
-                return resolve(window.ga)
             })
         } catch (e) {
             console.log('Unable to load Google analytics. It\'s probably being blocked.')
-
-            return resolve((...args) => {
-                console.log('Google analytics disabled. Logging to console instead')
-                console.log(args)
-            })
+            return resolve(fallbackLogger)
         }
+
+        setTimeout(() => {
+            console.log('Google analytics timeout. It\'s probably being blocked.')
+            return resolve(fallbackLogger)
+        }, timeoutDelay)
     })
 })

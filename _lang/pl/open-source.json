@@ -46,7 +46,7 @@
     "Cairo": "Cairo",
     "GNOME": "GNOME",
     "Desktop Libraries": "Biblioteki pulpitu",
-    "D-Conf": "D-Conf",
+    "dconf": "dconf",
     "GLib": "GLib",
     "PolicyKit": "PolicyKit",
     "Vala": "Vala",
@@ -59,7 +59,7 @@
     "LightDM": "LightDM",
     "PulseAudio": "PulseAudio",
     "systemd": "systemd",
-    "X.org": "X.org",
+    "X.Org": "X.Org",
     "Display Server &amp; Windowing System": "Serwer wyświetlania i system okien",
     "X11": "X11",
     "XServer": "XServer",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "OpenStreetMap",
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "Software Freedom Conservancy [Ochrona Wolności Oprogramowania]",
-    "All logos featured here are trademarks of their respective projects.": "Wszystkie tutaj przedstawione loga są znakami handlowymi odpowiednich projektów.",
+    "Weblate": "Weblate",
+    "All logos featured here are trademarks of their respective projects.": "Wszystkie przedstawione tutaj loga są znakami handlowymi odpowiednich projektów.",
     "Open Source &sdot; elementary": "Otwarte źródła ⋅ elementary"
 }
