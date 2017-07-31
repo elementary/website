@@ -51,7 +51,7 @@
     "Modify the <code>DISTRIB_DESCRIPTION<\/code> line in the file <code>\/etc\/lsb-release<\/code> to exclude our trademarks.": "",
     "Replace the iconography such that the icon <code>distributor-logo<\/code> present in <code>\/usr\/share\/icons\/elementary\/places\/<\/code> in each of the provided sizes does not appear in the OS.": "",
     "Remove the packages <code>plymouth-theme-elementary<\/code> and <code>plymouth-theme-elementary-text<\/code>.": "",
-    "Merchandise": "",
+    "Merchandise": "Zboží",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "Typicky nedovolujeme používání našich značek (či našeho jména) na merchandisingu třetích stran.",
     "Assets &amp; More Info": "",
     "Download on GitHub": "Stáhnout na Githubu",

@@ -245,7 +245,7 @@ An app's comment should be in [sentence case](#sentence-case), not include termi
 
 ### Categories {#categories}
 
-The following categories may be used to aid with searching or browsing for your app:
+The following categories may be used to aid with searching or browsing for your app. Keep in mind that you can add more than one and you should add all that apply:
 
 * AudioVideo  
 * Audio
@@ -546,7 +546,7 @@ Like text button labels, a tooltip should clearly describe what will happen when
 
 #### Labeling {#text-buttons-labeling}
 
-Text Button labels should be done in Title Case.
+Text Button labels should be done in [Title Case](#title-case).
 
 Like menu items, Text Button labels should consist of an Action or a Location but not a status. Make sure that a button's label clearly describes what will happen when it is pressed.
 
@@ -965,19 +965,25 @@ Used for labels and descriptive text.
 
 ### Title Case {#title-case}
 
-Title case means you capitalize like a book or article title.
+Title case means you capitalize like a book or article title. In elementary OS, we follow the [AP Style](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/).
 
-Capitalize the first and last words.
-All nouns, pronouns, adjectives, verbs, adverbs, and subordinate conjunctions (as, because, although) are capitalized.
+- Capitalize the first and last words.
+- Capitalize all nouns, pronouns, adjectives, verbs, adverbs, and subordinate conjunctions (as, because, although).
+- Capitalize all words that are more than three letters long.
+- Don’t capitalize articles, prepositions or conjunctions that are three or fewer letters long.
+
 Used for titles, buttons, menus, and most other widgets.
 
 * ex. "Open File" title in a dialog.
 * ex. "Delete 13 Songs" on a button.
-* ex. "Search Contacts..." in a search bar.
+* ex. "Search Contacts" in a search bar.
+* ex. "No Videos Open" on a welcome screen.
 
 ### Notes/Exceptions {#notes-exceptions}
 
 Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as "Google," elementary should always be shown as "elementary," and MPEG should always be shown as "MPEG." If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.
+
+Keep in mind these are the rules elementary OS follows for English; capitalization for other languages should follow the conventions of those languages.
 
 ## Punctuation {#punctuation}
 
@@ -988,7 +994,7 @@ Proper typography is important throughout elementary OS. Not just for consistenc
 * Only use **one space** after a period.
     * i.e. “This is a sentence. This is another sentence.”
 * Use a proper ellipsis character (…) rather than three dots.
-    * Use `\u0133` in your code.
+    * Use `\u2026` in your code.
     * See [Using Ellipses](#using-ellipses) for usage details.
 * For quotes, use proper **left and right double quotation characters** (“ and ”).
     *  Use `\u201C` and `\u201D` in your code.

@@ -153,11 +153,17 @@ hr.dotted {
 
 .donation-grid .oss-logo {
     height: 48px;
-    opacity: 0.5;
+    opacity: 0.8;
+    transition: opacity 250ms ease-in-out;
 }
 
 .donation-grid .oss-logo:hover {
     opacity: 1;
+}
+
+.donation-grid .oss-logo:active {
+    position: relative;
+    top: 1px;
 }
 
 .platform-item.full {

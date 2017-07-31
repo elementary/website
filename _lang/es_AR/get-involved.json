@@ -1,11 +1,11 @@
 {
-    "Be a Part of Something Bigger": "",
-    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "",
+    "Be a Part of Something Bigger": "Se parte de algo grandioso",
+    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Todo lo que hacemos es 100% código abierto y desarrollado colaborativamente por gente de todo el mundo. Incluso si no eres un programador, puedes involucrarte y hacer la diferencia.",
     "Funding": "Financiamiento",
     "Translations": "Traducciones",
     "Support": "Soporte",
     "Web": "",
-    "Desktop": "",
+    "Desktop": "Escritorio",
     "Design": "Diseño",
     "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "",
     "Patreon": "",
@@ -45,6 +45,6 @@
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
     "Browse Our Icons": "",
     "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
-    "Browse Needs Design Issues": "",
+    "Browse 'Needs Design' Issues": "",
     "Get Involved with elementary OS": "Involucrece con elementary OS"
 }

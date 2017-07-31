@@ -36,7 +36,7 @@
     "Fork Our Website on GitHub": "Forgren vår nettside på GitHub",
     "Report a Website Issue": "Rapporter en feil med nettsiden",
     "Desktop Development": "Skrivebordsutvikling",
-    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Vårt skrivebordsmiljø og alle dets programmer er bygd ved bruk av Vala, GTK+, Granite, og et antall andre åpne bibliotek. GitHub er vertskap for vår skrivebordskode, en gratis tjeneste for prosjekter med åpen kildekode. Hvis du aldri har utviklet for elementary OS før, anbefaler vi at du tar en titt på vår \"Kom igang\"-guide.",
+    "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Vårt skrivebordsmiljø og alle dets programmer er bygd ved bruk av Vala, GTK+, Granite, og et antall andre åpne bibliotek. GitHub er vertskap for vår skrivebordskode, en gratis tjeneste for prosjekter med åpen kildekode. Hvis du aldri har utviklet for elementary OS før, anbefaler vi at du tar en titt på vår \"Kom i gang\"-guide.",
     "Browse Our Code": "Se vår kildekode",
     "Bitesized Bugs": "Pallatialiserte feilrettinger",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Våre designere gjør idéer til klare saksrapporter og leverbare kreasjoner. Før du hiver deg med, anbefales det at du leser om vår design-arbeidsflyt.",
@@ -45,6 +45,6 @@
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "elementary OS kommer med et sett vektorielle ikoner som brukes i alle forhåndsinstallerte programmer, og som også er tilgjengelig for tredjepartsutviklere.",
     "Browse Our Icons": "Se våre ikoner",
     "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Våre designere holder øye med \"Trenger designarbeid\"-saker på GitHub. Det kan hende noe må diskuteres, detaljeres eller produseres for å komme dithen.",
-    "Browse Needs Design Issues": "Se saker som trenger designarbeid",
+    "Browse 'Needs Design' Issues": "Se 'Trenger design'-problemer",
     "Get Involved with elementary OS": "Involver deg i elementary OS"
 }

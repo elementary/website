@@ -1,13 +1,13 @@
 {
     "Be a Part of Something Bigger": "Participez à quelque chose d'énorme",
-    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Tout ce que nous faisons sont 100% open source et développé en collaboration par des gens de partout dans le monde. Même si vous n'êtes pas programmeur, vous pouvez participer et faire la différence.",
+    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Tout ce que nous faisons est 100% open source et développé en collaboration par des gens de partout dans le monde. Même si vous n'êtes pas programmeur, vous pouvez participer et faire la différence.",
     "Funding": "Financement",
     "Translations": "Traductions",
     "Support": "Support",
     "Web": "Web",
     "Desktop": "Développement",
     "Design": "Concevoir",
-    "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Avec votre aide, notre petit groupe passionné s’est transformé en petite entreprise. Chaque petite peu d’aide est un pas en avant pour engager un nouveau développeur à plein temps.",
+    "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "Avec votre aide, notre petit groupe de passionnés s’est transformé en petite entreprise. Chaque petite aide est un pas en avant pour engager un nouveau développeur à plein temps.",
     "Patreon": "Patreon",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon fonctionne comme une campagne de financement participatif en continu. Choisissez un montant, obtenez des récompenses et aidez-nous à atteindre nos objectifs.",
     "Learn More": "En savoir plus",
@@ -45,6 +45,6 @@
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "elementary OS est livré avec un jeu d'icônes vectorielles qui sont utilisées dans toutes les applications pré-installées ainsi que disponibles pour les développeurs tierce.",
     "Browse Our Icons": "Découvrir nos icônes",
     "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Nos designers traquent les problèmes sur GitHub marqués de l'étiquette « Needs Design ». Ceux-ci peuvent requérir de plus amples discussions, des maquettes ou des jeux graphiques.",
-    "Browse Needs Design Issues": "Découvrir les problèmes en attente de design",
+    "Browse 'Needs Design' Issues": "Découvrir les problèmes marqués « Needs Design »",
     "Get Involved with elementary OS": "Contribuer à elementary OS"
 }

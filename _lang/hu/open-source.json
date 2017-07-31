@@ -11,10 +11,10 @@
     "Calendar": "Naptár",
     "Camera": "Kamera",
     "Files": "Fájlok",
-    "Mail": "Levél",
+    "Mail": "Üzenetek",
     "Music": "Zene",
     "Photos": "Fényképek",
-    "Scratch": "",
+    "Scratch": "Scratch",
     "Terminal": "Terminál",
     "Videos": "Videók",
     "Desktop Shell": "",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "",
     "rEFInd": "",
     "Software Freedom Conservancy": "",
+    "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "",
     "Open Source &sdot; elementary": ""
 }

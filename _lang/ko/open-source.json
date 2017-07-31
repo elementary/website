@@ -28,7 +28,7 @@
     "Wingpanel": "윙패널",
     "Platform": "플랫폼",
     "Pantheon Platform": "판테온 플랫폼",
-    "Contractor": "콘트랙터",
+    "Contractor": "컨트랙터",
     "Granite": "그래니트",
     "Captive Portal Assistant": "캡티브 포털 어시스턴트",
     "Pantheon Online Accounts": "판테온 온라인 계정",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "오픈 스트리트 맵",
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "소프트웨어 자유 보전",
+    "Weblate": "Weblate",
     "All logos featured here are trademarks of their respective projects.": "여기에 소개된 모든 로고는 해당 프로젝트의 상표입니다.",
     "Open Source &sdot; elementary": "오픈 소스 ⋅ elementary"
 }

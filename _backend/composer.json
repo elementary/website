@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4": {
-            "App\\Lib\\": "Lib/"
+            "App\\Lib\\": "Lib/",
+            "App\\Service\\": "Service/"
         }
     },
     "require": {
