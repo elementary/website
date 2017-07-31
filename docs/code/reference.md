@@ -152,7 +152,7 @@ In places or operations where you would otherwise use `set` , you should make us
 
 For example, instead of using
 
-         set_can_focus(false);
+         set_can_focus (false);
 
 you should use
 

@@ -1,25 +1,34 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Support &sdot; elementary';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['styles'] = array(
-        'styles/support.css'
-    );
+$page['title'] = 'Support &sdot; elementary';
 
-    include $template['header'];
-    include $template['alert'];
+$page['styles'] = array(
+    'styles/support.css'
+);
+
+include $template['header'];
+include $template['alert'];
 ?>
 
 <div class="row">
-    <h1>Get support for <?php
-                            // Embed the SVG to fix scaling in WebKit 1.x,
-                            // while preserving CSS options for the image.
-                            include __DIR__.'/images/logotype-os.svg';
-                        ?></h1>
+    <h1>
+        Get support for
+        <?php
+            // Embed the SVG to fix scaling in WebKit 1.x,
+            // while preserving CSS options for the image.
+            include __DIR__.'/images/logotype-os.svg';
+        ?>
+    </h1>
 </div>
 
 <div class="row apps">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/appcenter" target="_blank" rel="noopener">
+        <img width="64" height="64" src="images/icons/apps/64/system-software-install.svg" alt="Calendar"/>
+        <span>AppCenter</span>
+    </a>
+
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/maya" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/office-calendar.svg" alt="Calendar"/>
         <span>Calendar</span>
@@ -92,5 +101,5 @@
 </div>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>
