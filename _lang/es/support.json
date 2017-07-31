@@ -1,9 +1,10 @@
 {
     "Get support for": "Obtener asistencia para",
     "Calendar": "Calendario",
+    "AppCenter": "Centro de Aplicaciones",
     "Camera": "Cámara",
     "Files": "Archivos",
-    "Geary": "",
+    "Geary": "Cliente de correo",
     "Epiphany": "Epiphany",
     "Music": "Música",
     "Photos": "Fotos",
@@ -11,10 +12,10 @@
     "System Settings": "Configuración del sistema",
     "Videos": "Vídeos",
     "Installation": "Instalación",
-    "Get help installing elementary OS with our step-by-step guide.": "Aprenda a instalar elementary OS con nuestra guía paso a paso.",
-    "Learning the Basics": "Conceptos básicos",
+    "Get help installing elementary OS with our step-by-step guide.": "Aprenda a instalar el SO elementary con nuestra guía paso a paso.",
+    "Learning the Basics": "Aprende los Conceptos básicos",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Dar un paseo por el escritorio, la multitarea, atajos de teclado y más.",
-    "StackExchange": "",
+    "StackExchange": "Intercambios",
     "Check out answers to some of the most common questions we get.": "Eche un vistazo a las preguntas que recibimos con frecuencia y sus respuestas.",
-    "Support &sdot; elementary": ""
+    "Support &sdot; elementary": "Asistencia &sdot; elementary"
 }

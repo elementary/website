@@ -232,7 +232,7 @@
         <div>
             <img src="images/get-involved/bugs.svg">
             <p>Our design team tracks "Needs Design" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.</p>
-            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse Needs Design Issues</a>
+            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse 'Needs Design' Issues</a>
         </div>
     </div>
 </section>

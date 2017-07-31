@@ -1,5 +1,6 @@
-*.custom.*
 *~
+*.custom.*
+*.DS_Store
 *.log
 /_backend/config.php
 /_backend/vendor/

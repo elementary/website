@@ -55,7 +55,7 @@
                         <?php } ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
+                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.36 GB (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
+                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
 
                     <?php if (event_active('indiegogo appcenter 2/17')) { ?>
