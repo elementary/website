@@ -3,10 +3,9 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 
-Promise.all([jQuery, analytics]).then(([$, ga]) => {
+Promise.all([jQuery]).then(([$]) => {
     ga('send', 'event', 'Store', 'Cart Visit')
 
     $(document).ready(function () {

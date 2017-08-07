@@ -3,7 +3,6 @@
  * Handles homepage payment and OS image downloading
  */
 
-import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
@@ -11,7 +10,7 @@ import { url } from '~/page'
 import config from '~/config'
 import Payment from '~/widgets/payment'
 
-Promise.all([config, analytics, jQuery, Payment, modal]).then(([config, ga, $, Payment]) => {
+Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {

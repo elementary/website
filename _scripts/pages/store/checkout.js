@@ -3,11 +3,10 @@
  * Changes prices depending on shipping and gets stripe information
  */
 
-import analytics from '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 import Payment from '~/widgets/payment'
 
-Promise.all([jQuery, Payment, analytics]).then(([$, Payment, ga]) => {
+Promise.all([jQuery, Payment]).then(([$, Payment]) => {
     ga('send', 'event', 'Store', 'Checkout Visit')
 
     const payment = new Payment('Store')
