@@ -3,6 +3,26 @@
 * This file is part of elementary.io *
 *************************************/
 
+/***********************************************************
+* Brand colors                                             *
+*                                                          *
+* Note: the real hex value of banana color is #fbd25d,     *
+* but here is used #d48e15  due low constrat ratio with     *
+* white. The same issue happens with lime color, #93d844   *
+* changed to #64932c.                                      *
+***********************************************************/
+
+:root {
+    --blueberry: #3892e0;
+    --strawberry: #da4d45;
+    --orange: #f37329;
+    --banana: #d48e15;
+    --lime: #64932c;
+    --grape: #8a4ebf;
+    --white: #fff;
+    --black: #333;
+}
+
 /***********
 * Sections *
 ***********/
@@ -54,7 +74,7 @@ section {
 *********/
 
 .button.flat.suggested-action {
-    background-color: #268bd2;
+    background-color: var(--blueberry);
     border-color: transparent;
     color: #fff;
 }
@@ -66,7 +86,7 @@ section {
 /* Funding */
 
 #funding .button.flat.suggested-action {
-    background-color: #edac35;
+    background-color: var(--banana);
 }
 
 #funding .button.flat.suggested-action:focus {
@@ -90,7 +110,7 @@ section {
 /* Translations */
 
 #translations .button.flat.suggested-action {
-    background-color: #2aa198;
+    background-color: var(--lime);
 }
 
 #translations .button.flat.suggested-action:focus {
@@ -100,7 +120,7 @@ section {
 /* Support */
 
 #support .button.flat.suggested-action {
-    background-color: #d53c12;
+    background-color: var(--orange);
 }
 
 #support .button.flat.suggested-action:focus {
@@ -110,7 +130,7 @@ section {
 /* Web */
 
 #web-development .button.flat.suggested-action {
-    background-color: #d33682;
+    background-color: var(--strawberry);
 }
 
 #web-development .button.flat.suggested-action:focus {
@@ -120,7 +140,7 @@ section {
 /* Design */
 
 #design .button.flat.suggested-action {
-    background-color: #68758e;
+    background-color: var(--grape);
 }
 
 #design .button.flat.suggested-action:focus {
@@ -202,7 +222,7 @@ section {
 }
 
 .doughnut.in-progress .doughnut-count {
-    color: #2aa198;
+    color: var(--lime);
 }
 
 .doughnut.created .doughnut-count {
@@ -229,27 +249,27 @@ section {
 }
 
 #sections-menu .button.flat:nth-child(1) {
-    background-color: #edac35;
+    background-color: var(--banana);
 }
 
 #sections-menu .button.flat:nth-child(2) {
-    background-color: #2aa198;
+    background-color: var(--lime);
 }
 
 #sections-menu .button.flat:nth-child(3) {
-    background-color: #cb4b16;
+    background-color: var(--orange);
 }
 
 #sections-menu .button.flat:nth-child(4) {
-    background-color: #d33682;
+    background-color: var(--strawberry);
 }
 
 #sections-menu .button.flat:nth-child(5) {
-    background-color: #268bd2;
+    background-color: var(--blueberry);
 }
 
 #sections-menu .button.flat:nth-child(6) {
-    background-color: #68758e;
+    background-color: var(--grape);
 }
 
 /******************
