@@ -3,6 +3,8 @@
  * Loads all of the site wide snippets
  */
 
+/* global ga */
+
 import { url } from '~/page'
 import jQuery from '~/lib/jquery'
 

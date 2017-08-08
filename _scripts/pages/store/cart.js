@@ -3,6 +3,8 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
+/* global ga */
+
 import jQuery from '~/lib/jquery'
 
 Promise.all([jQuery]).then(([$]) => {

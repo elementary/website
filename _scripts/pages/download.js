@@ -3,6 +3,8 @@
  * Handles homepage payment and OS image downloading
  */
 
+/* global ga */
+
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 

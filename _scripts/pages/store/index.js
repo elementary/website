@@ -3,6 +3,8 @@
  * Does logic for picking product variants and adding to cart
  */
 
+/* global ga */
+
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
