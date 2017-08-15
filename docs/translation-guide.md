@@ -4,17 +4,17 @@ Localizing our website and apps is a very important part of making elementary OS
 
 ## Translating Applications {#translating-applications}
 
-Apps are translated through Rosetta: the translation interface hosted on Launchpad. In order to submit translations, you should:
+Apps are translated through Weblate: a free web-based translation management system.. In order to submit translations, you should:
 
-* Have a [Launchpad account](https://launchpad.net/+login)
-* Set your [language preferences](https://launchpad.net/people/+me/+editlanguages)
-* Browse our [translatable projects](https://translations.launchpad.net/elementary)
+* Have a [Weblate account](https://l10n.elementary.io/accounts/register/)
+* Set your [language preferences](https://l10n.elementary.io/accounts/profile/)
+* Browse our [translatable projects](https://l10n.elementary.io/projects/)
 
-Once you’ve made a selection, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Rosetta, you can refer to their [documentation](https://help.launchpad.net/Translations/StartingToTranslate).
+Once you’ve selected a project, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Weblet, you can refer to their [documentation](https://docs.weblate.org/en/weblate-2.15/index.html).
 
 When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure uniform translations, while also allowing anyone to contribute.
 
-If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:
+If you don't want to use Weblate, or want to make a lot a changes at once, you can also translate offline. To do so:
 
 * Go to a project you want to translate
 * Choose your language
@@ -29,7 +29,7 @@ Once you've finished, use the "Upload translation" option on the same page that 
 
 ## Translating our Website {#translating-our-website}
 
-Our website is translated through [Weblate](https://l10n.elementary.io/projects/website/). In order to submit translations, you should have a [Weblate account](https://l10n.elementary.io/accounts/register/)
+Our website is also translated through [Weblate](https://l10n.elementary.io/projects/website/). In order to submit translations, you should have a [Weblate account](https://l10n.elementary.io/accounts/register/)
 
 For more information about Weblate, you can refer to their [documentation](https://docs.weblate.org/en/latest/).
 
