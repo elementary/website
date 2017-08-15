@@ -10,7 +10,7 @@ Apps are translated through Weblate: a free web-based translation management sys
 * Set your [language preferences](https://l10n.elementary.io/accounts/profile/)
 * Browse our [translatable projects](https://l10n.elementary.io/projects/)
 
-Once you’ve selected a project, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Weblet, you can refer to their [documentation](https://docs.weblate.org/en/weblate-2.15/index.html).
+Once you’ve selected a project, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Weblate, you can refer to their [documentation](https://docs.weblate.org/en/weblate-2.15/index.html).
 
 When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure uniform translations, while also allowing anyone to contribute.
 
