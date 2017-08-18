@@ -28,7 +28,7 @@
     </ul>
 
     <h3>Logotype</h3>
-    <img src="<?php$sitewide['root'];?>images/brand/logotype.png" alt="elementary Logotype"/>
+    <img src="<?php echo $sitewide['lang-root'];?>images/brand/logotype.png" alt="elementary Logotype"/>
     <p>The logotype is to be used when space allows to refer to elementary the company. It can be used before a product name to refer to a specific product of elementary.</p>
     <p>The logotype should always be used under the following guidelines:</p>
     <ul>
@@ -37,7 +37,7 @@
     </ul>
 
     <h3>Logomark</h3>
-    <img src="<?php$sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
+    <img src="<?php echo $sitewide['lang-root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
     <p>The "e" logomark is to be used to refer to elementary the company when space is constrained or a square ratio is required.</p>
 
     <h2>Color</h2>
@@ -96,11 +96,11 @@
 
         <h3>Community</h3>
         <p>Community products (sites, fan clubs, etc.) are encouraged to use the elementary Community logo:</p>
-        <img src="<?php$sitewide['root'];?>images/brand/community-color.png" alt="elementary Community Logo with color"/>
-        <img src="<?php$sitewide['root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
+        <img src="<?php echo $sitewide['lang-root'];?>images/brand/community-color.png" alt="elementary Community Logo with color"/>
+        <img src="<?php echo $sitewide['lang-root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
         <p>This helps establish the product as part of the overall elementary community while reducing confusion that can arise from using the main logomark.</p>
     </section>
-    
+
     <section id="hardware">
         <h2>Hardware Distributors</h2>
         <p>We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.</p>
