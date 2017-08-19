@@ -25,7 +25,7 @@
     "the disk icon": "o ícone do disco",
     "to choose the ISO that you downloaded previously.": "para escolher a ISO que você havia baixado anteriormente.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "Nós geramos um checksum (ou hash sum) para o elementary OS para que você possa verificar o seu arquivo baixado. Isso garante que você recebeu o arquivo inteiro, e que a imagem não está corrompida de alguma forma. clique no botão<code>#</code> na barra de status e verifique se o texto próximo a&quot;SHA256&quot; é igual ao seguinte hash:",
-    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "",
+    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "Se as hashes forem iguais, clique em &quot;Iniciar&quot; e aguarde até o processo terminar.",
     "Booting from the Install Drive": "",
     "In order to start the installation process, you must boot your computer from the install drive.": "",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "",
