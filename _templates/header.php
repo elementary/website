@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
@@ -90,7 +90,7 @@ $l10n->begin_html_translation();
             # that if we knew exactly why the developer had thought that, we would know a
             # lot more about the nature of the code than we do now. ~ Douglas Adams
         ?>
-        <script src="https://cdn.jsdelivr.net/raven/3.15.0/raven.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/getsentry/raven-js@3/dist/raven.min.js"></script>
         <script>
             console.log('Sentry loaded')
 

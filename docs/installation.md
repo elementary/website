@@ -193,5 +193,5 @@ In order to start the installation process, you must boot your computer from the
 
 Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
-<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <script type="text/javascript" src="scripts/docs/installation.js" async></script>
