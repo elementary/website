@@ -721,7 +721,7 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
         this.send_notification ("notify.app", notification);
     });
 
-Okay, now compile your new app. if everythink works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
+Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
 
 ## Additional Features {#Additional-features}
 Now that you know how to send basic notifications, lets talk about a couple ways to make your notifications better. Notifications are most useful when users can indentify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
