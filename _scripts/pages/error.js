@@ -3,12 +3,10 @@
  * Sends information to analytics on error page
  */
 
-import analytics from '~/lib/analytics'
+/* global ga */
 
-analytics.then((ga) => {
-    if (window.statusCode == null) {
-        window.statusCode = 'Err: Unknown Error'
-    }
+if (window.statusCode == null) {
+    window.statusCode = 'Err: Unknown Error'
+}
 
-    ga('send', 'event', window.statusCode, window.location.host)
-})
+ga('send', 'event', window.statusCode, window.location.host)

@@ -3,8 +3,6 @@
  * Sends a nalytics notification on store order
  */
 
-import analytics from '~/lib/analytics'
+/* global ga */
 
-analytics.then((ga) => {
-    ga('send', 'event', 'Store', 'Order Completion')
-})
+ga('send', 'event', 'Store', 'Order Completion')

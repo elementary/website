@@ -58,7 +58,7 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
 5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the `#` button in the status bar and verify that the text next to "SHA256" matches the following hash:
 ```bash nohighlight
-48fcf51244c77e18ff68a8456a2e92e2b49270b9b3a1c7a60a88a9d358272c1e
+1d85b675bbbfc868d2286718cdc62590e41e1b40bfffcef7ac4111b7ea7da905
 ```
 
 6. If the hashes match, click "Start" and wait for the process to finish.
@@ -85,20 +85,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.4.1-stable.20170517.iso
+shasum -a 256 ~/Downloads/elementaryos-0.4.1-stable.20170814.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-48fcf51244c77e18ff68a8456a2e92e2b49270b9b3a1c7a60a88a9d358272c1e
+1d85b675bbbfc868d2286718cdc62590e41e1b40bfffcef7ac4111b7ea7da905
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20170517.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20170814.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -136,7 +136,7 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4.1-stable.20170517.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4.1-stable.20170814.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
@@ -151,13 +151,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.4.1-stable.20170517.iso
+sha256sum elementaryos-0.4.1-stable.20170814.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-48fcf51244c77e18ff68a8456a2e92e2b49270b9b3a1c7a60a88a9d358272c1e
+1d85b675bbbfc868d2286718cdc62590e41e1b40bfffcef7ac4111b7ea7da905
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}

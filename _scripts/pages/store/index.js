@@ -3,11 +3,12 @@
  * Does logic for picking product variants and adding to cart
  */
 
-import analytics from '~/lib/analytics'
+/* global ga */
+
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
-Promise.all([analytics, jQuery, modal]).then(([ga, $]) => {
+Promise.all([jQuery, modal]).then(([$]) => {
     ga('send', 'event', 'Store', 'Store Visit')
 
     $('document').ready(function () {

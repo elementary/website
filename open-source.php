@@ -35,7 +35,7 @@
         <div>
             <a class="button sub-item" href="https://github.com/elementary/calendar" target="_blank" rel="noopener"><span>Calendar</span></a>
             <a class="button sub-item" href="https://github.com/elementary/camera" target="_blank" rel="noopener"><span>Camera</span></a>
-            <a class="button sub-item" href="https://launchpad.net/pantheon-files" target="_blank" rel="noopener"><span>Files</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/files" target="_blank" rel="noopener"><span>Files</span></a>
             <a class="button sub-item" href="https://github.com/elementary/mail" target="_blank" rel="noopener"><span>Mail</span></a>
             <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
             <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
@@ -52,7 +52,7 @@
         <div>
             <a class="button sub-item" href="https://github.com/elementary/stylesheet" target="_blank" rel="noopener"><span>GTK+ Stylesheet</span></a>
             <a class="button sub-item" href="https://github.com/elementary/icons" target="_blank" rel="noopener"><span>Icon Theme</span></a>
-            <a class="button sub-item" href="https://launchpad.net/gala" target="_blank" rel="noopener"><span>Gala</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/gala" target="_blank" rel="noopener"><span>Gala</span></a>
             <a class="button sub-item" href="https://launchpad.net/plank" target="_blank" rel="noopener"><span>Plank</span></a>
             <a class="button sub-item" href="https://github.com/elementary/applications-menu" target="_blank" rel="noopener"><span>Slingshot</span></a>
             <a class="button sub-item" href="https://github.com/elementary/switchboard" target="_blank" rel="noopener"><span>Switchboard</span></a>
@@ -65,11 +65,11 @@
             <p class="oss-title">Pantheon Platform</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/contractor" target="_blank" rel="noopener"><span>Contractor</span></a>
-            <a class="button sub-item" href="https://launchpad.net/granite" target="_blank" rel="noopener"><span>Granite</span></a>
-            <a class="button sub-item" href="https://launchpad.net/capnet-assist" target="_blank" rel="noopener"><span>Captive Portal Assistant</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/contractor" target="_blank" rel="noopener"><span>Contractor</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/granite" target="_blank" rel="noopener"><span>Granite</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/capnet-assist" target="_blank" rel="noopener"><span>Captive Portal Assistant</span></a>
             <a class="button sub-item" href="https://launchpad.net/pantheon-online-accounts" target="_blank" rel="noopener"><span>Pantheon Online Accounts</span></a>
-            <a class="button sub-item" href="https://launchpad.net/pantheon-agent-polkit" target="_blank" rel="noopener"><span>Polkit Agent</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/pantheon-agent-polkit" target="_blank" rel="noopener"><span>Polkit Agent</span></a>
         </div>
     </div>
     <hr class="dotted full">
