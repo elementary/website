@@ -3,7 +3,7 @@
         "id": 1,
         "printful_id": 162,
         "name": "Men's Blue Logo T-Shirt",
-        "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_logotype_aqua.png",
         "type": "Apparel",
         "variants": [
@@ -59,7 +59,7 @@
         "id": 2,
         "printful_id": 6,
         "name": "Women's Blue Logo Shirt",
-        "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/womens_logotype_aqua.png",
         "type": "Apparel",
         "variants": [
@@ -115,7 +115,7 @@
         "id": 3,
         "printful_id": 162,
         "name": "Men's Black Logo Shirt",
-        "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_logotype_black.png",
         "type": "Apparel",
         "variants": [
@@ -171,7 +171,7 @@
         "id": 4,
         "printful_id": 173,
         "name": "Women's Black Logo Shirt",
-        "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/womens_logotype_black.png",
         "type": "Apparel",
         "variants": [
@@ -219,7 +219,7 @@
         "id": 6,
         "printful_id": 162,
         "name": "Men's Black Hero Shirt",
-        "description": "The elementary 'e' logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary 'e' logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_black.png",
         "type": "Apparel",
         "variants": [
@@ -275,7 +275,7 @@
         "id": 7,
         "printful_id": 162,
         "name": "Men's White Hero Shirt",
-        "description": "The elementary 'e' logo in black on a lightweight white tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary 'e' logo in black on a lightweight white tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_white.png",
         "type": "Apparel",
         "variants": [
@@ -331,7 +331,7 @@
         "id": 9,
         "printful_id": 162,
         "name": "Men's Blue Hero T-Shirt",
-        "description": "The elementary 'e' logo in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary 'e' logo in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_aqua.png",
         "type": "Apparel",
         "variants": [
@@ -387,7 +387,7 @@
         "id": 8,
         "printful_id": 162,
         "name": "Men's Black Terminal Shirt",
-        "description": "The elementary Terminal logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/bella/images/BC_Size_Charts.pdf'>Size Chart</a>",
+        "description": "The elementary Terminal logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_terminal_black.png",
         "type": "Apparel",
         "variants": [
