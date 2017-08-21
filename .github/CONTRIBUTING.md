@@ -116,6 +116,7 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
  - Include `alt` attribute for all images
  - Include `title` attribute for all links
  - Close all your tags properly
+ - `a` elements with `target="_blank"` should include a `rel="noopener"`
 
 ### CSS
  - Try to use classes instead of IDs unless things are absolutely unique
