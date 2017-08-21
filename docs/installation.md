@@ -2,7 +2,7 @@
 
 ## Download elementary OS {#download-elementary-os}
 
-If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
+If you haven't already, you will need to <a href="/" target="_blank" rel="noopener">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
