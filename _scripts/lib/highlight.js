@@ -8,7 +8,7 @@
 import Script from 'scriptjs'
 
 export default new Promise((resolve, reject) => {
-    Script('https://cdn.jsdelivr.net/combine/gh/eustasy/highlight.js@latest/highlight.min.js,gh/eustasy/highlight.js@latest/languages/vala.min.js', () => {
+    Script('https://cdn.jsdelivr.net/combine/gh/highlightjs/cdn-release@9/build/highlight.min.js,gh/highlightjs/cdn-release@9/build/languages/vala.min.js', () => {
         console.log('highlight.js loaded')
         return resolve(window.hljs)
     })
