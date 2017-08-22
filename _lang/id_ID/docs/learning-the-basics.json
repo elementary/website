@@ -66,7 +66,7 @@
     "For more information related to security patches, read the <a href=\"http://www.ubuntu.com/usn/xenial/\">Ubuntu security notices</a>.": "",
     "System Settings": "Pengaturan Sistem",
     "elementary OS comes with a handy app called &quot;System Settings&quot; that controls all of your system-wide (or &quot;global&quot;) preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "OS elementary hadir dengan aplikasi yang bermanfaat bernama \"Pengaturan Sistem\" yang mengontrol semua preferensi sistem-luas (atau \"global\"). Pengaturan Sistem memberi Anda kemampuan untuk menyesuaikan banyak hal seperti pintasan papan ketik, resolusi tampilan, gambar latar Anda, dan masih banyak lagi.",
-    "Search": "Telusur",
+    "Search": "Cari",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Anda dapat dengan cepat menemukan pengaturan yang Anda cari dengan mengetik kata kunci di bilah pencarian di bagian atas jendela. Muatan dari Pengaturan Sistem akan tersaring sesuai dengan pencarian Anda.",
     "App Settings": "Pengaturan Aplikasi",
     "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
