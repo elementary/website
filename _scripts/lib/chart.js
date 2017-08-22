@@ -8,7 +8,7 @@
 import Script from 'scriptjs'
 
 export default new Promise((resolve, reject) => {
-    Script('https://cdn.jsdelivr.net/g/chart.js@2.2.1', () => {
+    Script('https://cdn.jsdelivr.net/gh/nnnick/Chart.js@2/dist/Chart.min.js', () => {
         console.log('Chart.js loaded')
         return resolve(window.Chart)
     })

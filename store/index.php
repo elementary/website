@@ -10,7 +10,7 @@
     );
 
     $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5'
+        'https://cdn.jsdelivr.net/gh/eustasy/jquery.leanmodal2@2.5/jQuery.leanModal2.min.js'
     );
 
     $page['scripts'] = array(

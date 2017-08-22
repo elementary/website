@@ -376,7 +376,7 @@
             </div>
         </div>
         <a style="display:none;" class="open-modal" href="#download-modal"></a>
-        <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+        <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
     include $template['footer'];
 ?>
