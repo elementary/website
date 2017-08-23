@@ -54,13 +54,13 @@
     "Running the following command in your terminal:": "",
     "should produce the output:": "",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "",
-    "Download UNetbootin": "",
+    "Download UNetbootin": "Pobierz UNetbootin",
     "Open UNetbootin from the Dash. It will open a window like the one below:": "",
-    "UNetbootin": "",
+    "UNetbootin": "UNetbootin",
     "Select &quot;Diskimage&quot;": "",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "",
     "Unplug all USB memory devices apart from the one you want to use.": "",
     "Click &quot;OK&quot; and wait for the process to finish.": "",
-    "After Installation": "Po Instalacji",
+    "After Installation": "Po instalacji",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
