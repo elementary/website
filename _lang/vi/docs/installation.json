@@ -1,7 +1,7 @@
 {
     "Installation": "Cài đặ",
     "Download elementary OS": "Tải xuống elementary OS",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Nếu bạn chưa tải về elementary OS, hãy nhanh chóng tải về <a href=\"\/\" target=\"_blank\">bản cài đặt ở trang chủ của chúng tôi<\/a>. Bạn sẽ cần sao chép tập tin ISO tải về vào USB theo hướng dẫn bên dưới.",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
     "Recommended System Specifications": "Cấu hình đề nghị",
     "Intel i3 or comparable dual-core 64-bit processor": "",
     "1 GB of system memory (RAM)": "1 GB dung lượng bộ nhớ (RAM)",
@@ -50,7 +50,7 @@
     "Not readable warning": "",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Sau khi bạn nghe một tiếng kêu vang, nhấn và giữ phím <kbd>Option<\/kbd>. Sau đó, lựa chọn thiết bị khởi động tương ứng. Lưu ý là nó có thể không giống như \"Windows\", nhưng đây là chuyện bình thường.",
     "Boot Errors": "",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170517.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Chạy câu lệnh sau bằng cửa sổ lệnh của bạn:",
     "should produce the output:": "ên có kết quả là:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "",

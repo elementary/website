@@ -1,7 +1,7 @@
 {
     "Installation": "تثبيت",
     "Download elementary OS": "تحميل نظام التشغيل المنتري",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "إذا لم تمتلكه بعد، ستحتاج ل <a href=\"\/\" target=\"_blank\"> تحميل نظام التشغيل المنتري من صفحتنا الرئيسية<\/a>. يجب عليك نسخ ملف الإيزو المحمل الى مفتاح يو إس بي USB بإتباع التعليمات أدناه.",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
     "Recommended System Specifications": "متطلبات النظام المنصوح بها:",
     "Intel i3 or comparable dual-core 64-bit processor": "إنتل i3 أو معالج 64-بت dual-core مشابه",
     "1 GB of system memory (RAM)": "الذاكرة العشوائية 1 جيجابايت",
@@ -50,7 +50,7 @@
     "Not readable warning": "تحذير لا يمكن قراءته",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "بعد سماع قرع الجرس، إبقى ضاغطا على <kbd>Option<\/kbd>. ثم، اختر مفتاح الإقلاع الملائم. مع ملاحظة أنه قد يعرف خطأ بـ \"Windows\"، لكن هذا أمر عادي.",
     "Boot Errors": "خطأ فى الاقلاع",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170517.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "قم بتشغيل الأمر التالي في الطرفية:",
     "should produce the output:": "يجب أن يولد الناتج:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "ستحتاج لمفتاح فلاش USB بمساحة حرة 2 جيجا على الأقل وبرنامج يدعى UNetbootin.",
