@@ -156,7 +156,7 @@ For example, instead of using
 
 you should use
 
-         can_focus = false;    
+         can_focus = false;
 
 ## Vala namespaces {#vala-namespaces}
 
@@ -256,3 +256,10 @@ Don’t forget to make your reports compelling. It’s up to you to sell the mer
 ## Be Prepared to Iterate {#be-prepared-to-iterate}
 
 Don’t be upset if a developer plainly states that they don’t want to implement your idea. Remember that they have plans too. You might have to go back to the drawing board a bit. Listen to their feedback. Your design might be a little over-engineered, it might conflict with other designs being worked on, or maybe it’s just in conflict with the goals and scope of the app. Remember that you’re in the position of requesting someone to devote their time to something. You’re asking for a favor. Don’t be afraid to argue a position within polite reason, but remember to stay humble.
+
+# Other Considerations {#other-considerations}
+
+Here's some other information to take into account before working on elementary applications.
+
+## GTK Recurrent "Clicked" Issue
+Elementary applications utilize [GTK](https://www.gtk.org/) (i.e. A GIMP toolkit for GUIs). GTK widgets are intended to respond to click events that can be described as "press + release" instead of "press". There's been a recurrent issue (see [here](https://github.com/elementary/granite/issues/39) and [here](https://github.com/elementary/granite/issues/82)) in which elementary projects would activate on "press" which has since been patched.
