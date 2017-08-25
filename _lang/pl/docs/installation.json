@@ -59,7 +59,7 @@
     "UNetbootin": "UNetbootin",
     "Select &quot;Diskimage&quot;": "Zaznacz &quot;Obraz dysku&quot;",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Kliknij &quot;...&quot;, aby zaznaczyć wcześniej pobrany obraz ISO.",
-    "Unplug all USB memory devices apart from the one you want to use.": "",
+    "Unplug all USB memory devices apart from the one you want to use.": "Odłącz wszystkie urządzenia pamięciowe USB z wyjątkiem tego którego chcesz użyć",
     "Click &quot;OK&quot; and wait for the process to finish.": "Kliknij &quot;OK&quot; i poczekaj na zakończenie procesu.",
     "After Installation": "Po instalacji",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
