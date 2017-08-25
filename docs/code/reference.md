@@ -156,7 +156,7 @@ For example, instead of using
 
 you should use
 
-         can_focus = false;
+         can_focus = false;    
 
 ## Vala namespaces {#vala-namespaces}
 
@@ -261,5 +261,5 @@ Don’t be upset if a developer plainly states that they don’t want to impleme
 
 Here's some other information to take into account before working on elementary applications.
 
-## GTK Recurrent "Clicked" Issue
-Elementary applications utilize [GTK](https://www.gtk.org/) (i.e. A GIMP toolkit for GUIs). GTK widgets are intended to respond to click events that can be described as "press + release" instead of "press". There's been a recurrent issue (see [here](https://github.com/elementary/granite/issues/39) and [here](https://github.com/elementary/granite/issues/82)) in which elementary projects would activate on "press" which has since been patched.
+## Gtk Recurrent "Clicked" Issue
+Elementary applications utilize [Gtk](https://www.gtk.org/) (i.e. A GIMP toolkit for GUIs). Gtk widgets are intended to respond to click events that can be described as "press + release" instead of "press". There's been a recurrent issue (see [here](https://github.com/elementary/granite/issues/39) and [here](https://github.com/elementary/granite/issues/82)) in which elementary projects would activate on "press" which has since been patched.
