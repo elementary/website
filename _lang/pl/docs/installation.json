@@ -53,7 +53,7 @@
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "",
     "should produce the output:": "",
-    "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "",
+    "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Będziesz potrzebował pamięci USB z co najmniej 2GB wolnego miejsca i program zwany UNetbootin  ",
     "Download UNetbootin": "Pobierz UNetbootin",
     "Open UNetbootin from the Dash. It will open a window like the one below:": "",
     "UNetbootin": "UNetbootin",
