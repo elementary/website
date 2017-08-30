@@ -291,6 +291,10 @@ nav a:focus {
     text-decoration: none;
 }
 
+nav a:visited{
+    opacity: 0.7;
+}
+
 /*color changes of .nav icon on focus*/ 
 
 nav .right li a[title="Facebook"]:focus{
@@ -324,10 +328,6 @@ nav .right li a[title="StackExchange"]:focus{
 }
 
 /*color changes of .nav icon on hover*/
-
-nav a:visited:hover {
-    opacity: 0.7;
-}
 
 nav .right li a[title="Facebook"]:hover{
     color:#01579b; 
