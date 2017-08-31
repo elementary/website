@@ -288,68 +288,49 @@ nav a:visited {
 }
 
 nav a:focus {
+    color: #08c;
+    fill: #08c;
     text-decoration: none;
 }
 
-nav a:visited{
+nav a:visited:hover {
     opacity: 0.7;
 }
 
-/*color changes of .nav icon on focus*/ 
-
-nav .right li a[title="Facebook"]:focus{
-    color:#01579b; 
-    fill:#01579b;
+nav a[title="Facebook"]:focus,
+nav a[title="Facebook"]:hover {
+    color: #19227E;
+    fill: #1a237e;
 }
 
-nav .right li a[title="Google+"]:focus{
-    color:#d50000;
-    fill:#d50000;
+nav a[title="Google+"]:focus,
+nav a[title="Google+"]:hover {
+    color: #d50000;
+    fill: #d50000;
 }
 
-nav .right li a[title="Twitter"]:focus{
-    color:#64b5f6;
-    fill:#64b5f6;
+nav a[title="Medium"]:focus,
+nav a[title="Medium"]:hover {
+    color: #00ab6b;
+    fill: #00ab6b;
 }
 
-nav .right li a[title="Medium"]:focus{
-    color:#00AB82;
-    fill:#00AB82;
+nav a[title="Reddit"]:focus,
+nav a[title="Reddit"]:hover {
+    color: #ff4500;
+    fill: #ff4500;
 }
 
-nav .right li a[title="Reddit"]:focus{
-    color:#FF4500;
-    fill:#FF4500;
+nav a[title="StackExchange"]:focus,
+nav a[title="StackExchange"]:hover {
+    color: #0d93ff;
+    fill: #0d93ff;
 }
 
-nav .right li a[title="StackExchange"]:focus{
-    color:#2196f3;
-    fill:#2196f3;
-}
-
-/*color changes of .nav icon on hover*/
-
-nav .right li a[title="Facebook"]:hover{
-    color:#01579b; 
-}
-
-nav .right li a[title="Google+"]:hover{
-    color:#d50000;
-}
-
-nav .right li a[title="Twitter"]:hover{
-    color:#64b5f6;
-}
-
-nav .right li a[title="Medium"]:hover{
-    color:#00AB82;
-}
-nav .right li a[title="Reddit"]:hover{
-    color:#FF4500;
-}
-
-nav .right li a[title="StackExchange"]:hover{
-    color:#2196f3;
+nav a[title="Twitter"]:focus,
+nav a[title="Twitter"]:hover {
+    color: #1da1f2;
+    fill: #1da1f2;
 }
 
 nav .logomark {
