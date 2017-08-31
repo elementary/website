@@ -299,8 +299,8 @@ nav a:visited:hover {
 
 nav a[title="Facebook"]:focus,
 nav a[title="Facebook"]:hover {
-    color: #19227E;
-    fill: #1a237e;
+    color: #19227e;
+    fill: #19227e;
 }
 
 nav a[title="Google+"]:focus,
