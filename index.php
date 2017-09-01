@@ -86,10 +86,6 @@
                     <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
                     <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
-
-                    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
-                        <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
-                    <?php } ?>
                 </div>
             </div>
         </section>
