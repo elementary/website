@@ -48,8 +48,8 @@
                             <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
                             <div>
                                 <span class="pre-amount">$</span>
-                                <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
-                                <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
+                                <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Pay As You Wish">
+                                <p class="small-label focus-reveal text-center">Enter amount in dollar ($).</p>
                             </div>
                         </div>
                         <?php } ?>
