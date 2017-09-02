@@ -1,16 +1,16 @@
 # Getting Started {#getting-started}
 
-Welcome to the elementary Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
+Welcome to the elementary OS Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
 
 However, we strongly recommend to at least skim through this preparation step. Having the right setup is going to help you reach your goals faster, and having a solid foundation is going to help you throughout the rest of this book.
 
 ## What We Will And Won't Cover {#what-we-will-and-wont-cover}
 
-We're going to assume that you have absolutely no experience in writing apps for elementary. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
+We're going to assume that you have absolutely no experience in writing apps for elementary OS. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
 
-We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
+We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary OS is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
 
-In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
+In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary OS, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
 # The Basic Setup {#the-basic-setup}
 
@@ -18,9 +18,9 @@ Before we even think about writing code, you'll need a certain basic setup. This
 
 * Creating an account on GitHub and importing an SSH key
 * Setting up the Git revision control system
-* Getting and using the elementary developer "SDK"
+* Getting and using the elementary OS developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## GitHub {#github}
 
@@ -76,7 +76,7 @@ The first piece of our simple "SDK" is the code editor Scratch. This comes by de
 
 ![](images/icons/apps/128/utilities-terminal.svg)
 
-We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
+We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary OS doesn’t come with that folder by default, you’ll need to create it.
 
 Open Terminal and issue the following command:
 
@@ -311,7 +311,7 @@ The AUTHORS file is pretty straightforward. This file contains your name and ema
 
 ### Copying {#copyright}
 
-The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
+The COPYING file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Mark Your Progress {#mark-your-progress}
 
@@ -488,7 +488,7 @@ Did you commit and push to GitHub for each step? Keep up these good habits and l
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
+1. Like CMake, elementary OS maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
 
     ```bash
     git clone git@github.com:elementary/debian-template.git
@@ -666,7 +666,7 @@ By now you've probably already seen the white notification bubbles that appear o
 3. Create a `CMakeLists.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
-When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Gtk.Application {#gtk-application}
 In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
