@@ -79,7 +79,7 @@
         </section>
         <section id="appcenter" class="grey">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary appcenter categories"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary OS AppCenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
@@ -127,7 +127,7 @@
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
                                 <h2>Music</h2>
-                                <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                                <p>Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.</p>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
                                 <h2>Mail</h2>
-                                <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
+                                <p>Manage multiple accounts quickly and effortlessly with conversation-based e-mail, fast-as-you-type search, new e-mail notifications, and more.</p>
                             </div>
                         </div>
                     </div>
