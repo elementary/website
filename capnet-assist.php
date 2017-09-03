@@ -14,10 +14,9 @@
 
 <div class="row">
 		<h1>You're connected!</h1>
-		<p>Your Internet connection appears to be working. You can safely close this window and continue using your device.</p>
-		<h2>Why is this window appearing?</h2>
-		<p>elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.</p>
-		<p>Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.</p>
+		<p>Your Internet connection appears to be working. No need to log in.</p>
+		<h2>Why does this window appear?</h2>
+		<p>When connecting to a Wi-Fi network with its own login page, (in places like coffee shops,) elementary OS automatically checks to see if a connection to the Internet can be established without logging in. If so, this window will appear, which is safe to close.</p>
 </div>
 
 <?php
