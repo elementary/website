@@ -1,39 +1,25 @@
 # Translation Guide {#translation-guide}
 
-Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.
+Localizing our website and apps is one of the places where the rubber meets the road. Adapting to different use-cases is a crowdsourced effort, all in the name of familiarity and getting communication accross to users.
+It goes both ways, because now there are platforms that make it easy to translate too.
 
-## Translating Applications {#translating-applications}
+elementary OS uses a self-hosted instance of the free(libre) software translation platform Weblate.
 
-Apps are translated through Rosetta: the translation interface hosted on Launchpad. In order to submit translations, you should:
+* Sign up for an [account](https://l10n.elementary.io/accounts/register/), or use a [GitHub account](https://l10n.elementary.io/accounts/login/github/) if you have that already.
+* [Select](https://l10n.elementary.io/accounts/profile/#languages) the language(s) you want to contribute to.
 
-* Have a [Launchpad account](https://launchpad.net/+login)
-* Set your [language preferences](https://launchpad.net/people/+me/+editlanguages)
-* Browse our [translatable projects](https://translations.launchpad.net/elementary)
+## Translating the Applications {#translating-applications}
 
-Once you’ve made a selection, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Rosetta, you can refer to their [documentation](https://help.launchpad.net/Translations/StartingToTranslate).
+Each app has its own resource [here](https://l10n.elementary.io/projects/)
 
-When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure uniform translations, while also allowing anyone to contribute.
-
-If you don't want to use Rosetta, or want to make a lot a changes at once, you can also translate offline. To do so:
-
-* Go to a project you want to translate
-* Choose your language
-* Click on "Download translation"
-
-You are now able to request an e-mail, which gives you the right link to download the translations. Now:
-
-* Choose your favorite text- or po-editor (e.g. [Poedit](https://apps.ubuntu.com/cat/applications//poedit/))
-* Start translating
-
-Once you've finished, use the "Upload translation" option on the same page that you downloaded them from.
+If you found something that looks odd in an app, find the corresponding strings in the respective resource to make a correction. Should your preferred language not be translated already, or missing translations, you can help out with heavier lifting too. Either make suggestions for changes to non-translated or translated strings, or issue translations. Make sure you look out for what suggestions have been made when doing so. There is also a discussion field for each string.
 
 ## Translating our Website {#translating-our-website}
 
-Our website is translated through [Transifex](https://www.transifex.com/projects/p/elementary-mvp/). In order to submit translations, you should:
+The website strings are [here](https://l10n.elementary.io/projects/website/).
 
-* Have a [Transifex account](https://www.transifex.com/signup/)
-* Join our [translation team](https://www.transifex.com/projects/p/elementary-mvp/)
+## Guidelines and documentation {#guidelines-and-documentation}
 
-For more information about Transifex, you can refer to their [documentation](http://docs.transifex.com/tutorials/txeditor).
+When translating you may encounter a situation where you have to decide between several ways of saying the same thing. Weblate has a built in check for this. Keep the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide) handy. For language specific issues, see the [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure consistency, while also allowing anyone to contribute.
 
-As with our apps, we follow Ubuntu’s [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators).
+More in-depth information about Weblate is available in the [documentation](https://docs.weblate.org/en/latest/).
