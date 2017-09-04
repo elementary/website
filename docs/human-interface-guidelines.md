@@ -981,7 +981,7 @@ Used for titles, buttons, menus, and most other widgets.
 
 ### Notes/Exceptions {#notes-exceptions}
 
-Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as "Google," elementary should always be shown as "elementary," and MPEG should always be shown as "MPEG." If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.
+Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as "Google," and MPEG should always be shown as "MPEG." One major exception is "elementary." It should follow the brand guidelines and always appear lowercase, even at the start of a sentence. If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.
 
 Keep in mind these are the rules elementary OS follows for English; capitalization for other languages should follow the conventions of those languages.
 
