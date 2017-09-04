@@ -14,7 +14,7 @@
 
 <div class="row">
 		<h1>Automatic connection to the Internet established.</h1>
-		<p>Gaining access on this network required filling in a form, but it was possible to do without.</p>
+		<p>Gaining access on this network required logging in, but it was possible to do without.</p>
 </div>
 
 <?php
