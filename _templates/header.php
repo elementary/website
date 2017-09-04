@@ -133,7 +133,7 @@ $l10n->begin_html_translation();
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
             <div class="nav-content">
-                <ul>
+                <ul class="nav-left">
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="https://developer.elementary.io">Developer</a></li>
