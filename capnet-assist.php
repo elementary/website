@@ -13,10 +13,8 @@
 ?>
 
 <div class="row">
-		<h1>You're connected!</h1>
-		<p>Your Internet connection appears to be working. No need to log in.</p>
-		<h2>Why does this window appear?</h2>
-		<p>Some places that share Internet access, (like coffee shops,) often present a login page first. When elementary OS is able to log in anyway, this window will appear, which is safe to close.</p>
+		<h1>Automatic connection to the Internet established.</h1>
+		<p>Gaining access on this network required filling in a form, but it was possible to do without.</p>
 </div>
 
 <?php
