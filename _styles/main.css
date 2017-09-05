@@ -293,6 +293,7 @@ nav a:focus {
     text-decoration: none;
 }
 
+nav a:hover,
 nav a:visited:hover {
     opacity: 0.7;
 }
