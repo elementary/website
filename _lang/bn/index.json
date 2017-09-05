@@ -38,13 +38,13 @@
     "Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.": "একাধিক অ্যাকাউন্ট দ্রুত এবং প্রচেষ্টাহীনভাবে পরিচালনা করুন কথোপকথন-ভিত্তিক ইমেইল, দ্রুত লেখার-সঙ্গে-সঙ্গে অনুসন্ধান, নতুন ইমেইল বার্তা, এবং আরও অনেক বৈশিষ্ট্যর সাথে।",
     "photos screenshot": "",
     "photos icon": "",
-    "Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.": "আমদানি , সংগঠিত , এবং ফটো সম্পাদনা করুন. একটি স্লাইডশো করুন . ফেসবুক বা ফ্লিকার সাথে শেয়ার করুন .",
+    "Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.": "ছবি আমদানি করুন, সংগঠন করুন, এবং সংস্কারণ করুন। স্লাইডশো তৈরি করুন। ফেসবুক অথবা ফ্লিক্‌র-এ শেয়ার করুন।",
     "videos screenshot": "",
     "videos icon": "",
-    "Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.": "",
+    "Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.": "স্মার্ট এবং সহজভাবে ভিডিও দেখুন সীকবারে থাম্বনেইল-এর সাহায্যে, প্লেলীস্ট, সাবটাইটেল সুবিধা, এমনকি পুনরারম্ভকরণ সুবিধার সাথে।",
     "calendar screenshot": "",
     "calendar icon": "",
-    "Easily view and create events. Sync with Online Accounts like Google.": "",
+    "Easily view and create events. Sync with Online Accounts like Google.": "সহজে ঘটনাবলী দেখুন এবং তৈরি করুন। গুগল-এর মত অনলাইন অ্যাকাউন্টসএর সাথে সীঙ্ক্রনাইজ করুন।",
     "files screenshot": "",
     "files icon": "",
     "The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.": "",
@@ -66,7 +66,7 @@
     "View your apps automatically organized into categories. Perfect for large collections.": "আপনার অ্যাপ স্বয়ংক্রিয়ভাবে আরও সংগঠিত দেখুন . বড় সংগ্রহের জন্য পারফেক্ট.",
     "Search": "অনুসন্ধান",
     "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "লঞ্চ অ্যাপ্লিকেশন, খোলা সেটিংস পেইন , চালানোর কমান্ড , এবং বাজ দ্রুত গতিতে অনুসন্ধান দৃশ্য থেকে আরো .",
-    "Open Source": "মুক্ত উৎস",
+    "Open Source": "ওপেন সোর্স",
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "আমাদের কোড পর্যালোচনা , যাচাই-বাছাই , পরিমার্জন , এবং পুনর্বণ্টন কারো দ্বারা জন্য উপলব্ধ.",
     "Learn More": "আরো জানতে",
     "No Ads. No Spying.": "বিজ্ঞপ্তি বিহীন | গুপ্তচরবৃত্তি বিহীন |",
@@ -83,5 +83,5 @@
     "Cancel": "",
     "Download": "",
     "Torrent Magnet Link": "টরেন্ট চুম্বক লিংক",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": ""
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "উইন্ডোজ এবং ম্যাকওএস-এর জন্য একটি দ্রুত এবং উন্মুক্ত বিকল্প &sdot; এলিমেন্টারী ওএস"
 }
