@@ -1,6 +1,6 @@
 # Getting Started {#getting-started}
 
-Welcome to the elementary OS Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
+Welcome to the elementary developer guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
 
 However, we strongly recommend to at least skim through this preparation step. Having the right setup is going to help you reach your goals faster, and having a solid foundation is going to help you throughout the rest of this book.
 
@@ -18,7 +18,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 
 * Creating an account on GitHub and importing an SSH key
 * Setting up the Git revision control system
-* Getting and using the elementary OS developer "SDK"
+* Getting and using the elementary developer "SDK"
 
 We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
@@ -488,7 +488,7 @@ Did you commit and push to GitHub for each step? Keep up these good habits and l
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary OS maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
+1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
 
     ```bash
     git clone git@github.com:elementary/debian-template.git
