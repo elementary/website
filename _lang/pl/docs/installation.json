@@ -42,7 +42,7 @@
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Włóż wolny napęd USB i wybierz plik ISO, który pobrałeś.",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "",
     "Select image in Etcher": "Wybierz obraz w programie Etcher",
-    "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher powinien automatycznie wykryć Twój napęd USB, ale sprawdź czy jest wybrany poprawny napęd.",
+    "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher powinien automatycznie wykryć Twój napęd USB, ale sprawdź czy został wybrany poprawny napęd.",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
     "Flash image in Etcher": "",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "",
