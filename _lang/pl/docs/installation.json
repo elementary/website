@@ -34,7 +34,7 @@
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "",
     "Verify your Download": "Zweryfikuj pobrany plik",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "",
-    "Running the following command in your Terminal:": "",
+    "Running the following command in your Terminal:": "Uruchomienie następującej komendy w Twoim Terminalu:",
     "Should produce the output:": "",
     "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "",
