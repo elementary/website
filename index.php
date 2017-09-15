@@ -24,7 +24,7 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4>A fast and open replacement for Windows and macOS</h4>
+                    <h4>A fast and open replacement for <b>Windows</b> and <b>macOS</b></h4>
                 </div>
             </div>
 
