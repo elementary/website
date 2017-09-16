@@ -2,7 +2,7 @@
     "Translation Guide": "Руководство для переводчиков",
     "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "Перевод нашего сайта и приложений необходим для того, чтобы сделать elementary OS доступной для наибольшего количества пользователей. Вместо того, чтобы полагаться исключительно на внутреннюю команду переводчиков, мы решили попросить помощи у сообщества. Кто угодно может предложить свой вариант перевода, не имея при этом никаких технических навыков. Для того, чтобы стиль текста оставался единым во всех наших продуктах, мы создали это руководство для переводчиков.",
     "Translating Applications": "Перевод приложений",
-    "Apps are translated through Weblate: a free web-based translation management system.. In order to submit translations, you should:": "Приложения переводятся через Weblate: бесплатная веб-ориентированная система управления переводом.. Для того, что бы предложить перевод, вы должны:",
+    "Apps are translated through Weblate: a free web-based translation management system.. In order to submit translations, you should:": "Приложения переводятся через Weblate: бесплатную веб-ориентированную систему управления переводом.. Для того, что бы предложить перевод, вы должны:",
     "Have a": "Иметь",
     "Weblate account": "",
     "Set your": "Настроить ваши",
