@@ -6,7 +6,7 @@
                     Copyright &copy; <?php echo date('Y'); ?> elementary LLC.
                 </p>
                 <div class="popover">
-                    <a href="#"><i class="fa fa-language"></i> Language</a>
+                    <a href="#"><i class="fa fa-language"></i> Language <i class="fa fa-arrow-circle-o-up"></i></a>
                     <div class="popover-content">
                         <strong>Change Site Language</strong>
                         <ul>
