@@ -1,0 +1,87 @@
+/*************************************
+* Copyright 2016 elementary LLC.     *
+* This file is part of elementary.io *
+*************************************/
+
+.project {
+    float: left;
+    height: 102px;
+    width: 33%;
+    margin: 8px auto;
+}
+
+.projects {
+    display: inline-block;
+    width: 100%;
+    margin: 4px auto;
+    padding: 24px 0;
+}
+
+/**************
+* Slack Users *
+***************/
+
+.project_icon {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    float: left;
+    display: inline-block;
+    transition: all 100ms ease-in;
+}
+
+h5.project_name {
+    margin-top: 4px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project {
+        height: 256px;
+    }
+
+    .project_icon {
+        margin: 0;
+        float: none;
+        width: 144px;
+        height: 144px;
+        background-size: 144px 144px;
+    }
+
+    h5.project_name {
+        margin-top: 8px;
+        font-size: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .project_icon {
+        float: none;
+        width: 120px;
+        height: 120px;
+        background-size: 120px 120px;
+    }
+
+    .project {
+        height: 200px;
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project_icon {
+        float: none;
+        width: 48px;
+        height: 48px;
+        background-size: 48px 48px;
+    }
+
+    .project {
+        height: 200px;
+        width: 50%;
+    }
+}
