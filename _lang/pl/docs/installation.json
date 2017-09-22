@@ -40,7 +40,7 @@
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "",
     "Download Etcher": "Pobierz Etcher",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Włóż wolny napęd USB i wybierz plik ISO, który pobrałeś.",
-    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Otwórz &quot;Etcher&quot; i wybierz ściągnięty obraz elementary OS używając przycisku &quot;Wybierz obraz&quot;.",
+    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Otwórz &quot;Etcher&quot; i wybierz pobrany obraz elementary OS używając przycisku &quot;Wybierz obraz&quot;.",
     "Select image in Etcher": "Wybierz obraz w programie Etcher",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher powinien automatycznie wykryć Twój napęd USB, ale sprawdź czy został wybrany poprawny napęd.",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
