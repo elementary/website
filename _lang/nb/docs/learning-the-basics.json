@@ -26,7 +26,7 @@
     "When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.": "Når du åpner et program, vil dets vindu fremtre på skrivebordet. Hvert program har typisk tre områder: Vindusknappene, et verktøyslinje, og innholdet av programmet.",
     "HeaderBar": "Topplinje",
     "Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "Mange programmer har en topplinje i toppen av programmet. Dette området inneholder funksjoner eller navigasjons-elementer for programmet, samt vindusknapper.",
-    "You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.": "Du kan flytte et programs vindu rundt på skrivebordet ved å dra hvor som helst på topplinjen, inkludert knappene.",
+    "You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.": "Du kan flytte vinduet tilhørende et program rundt på skrivebordet ved å dra hvor som helst på topplinjen, inkludert knappene.",
     "Window Buttons": "Vindusknapper",
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.": "",
     "Multitasking": "",
