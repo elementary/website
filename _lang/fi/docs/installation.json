@@ -11,7 +11,7 @@
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Varmista, että varmuuskopioit tärkeät tiedostosi ulkoiseen sijaintiin, esimerkiksi pilvipalveluun tai ulkoiselle kiintolevylle. Uutta käyttöjärjestelmää asentaessasi tiedostosi saattavat hävitä tietokoneen kiintolevyltä.",
     "Choose your current Operating System": "Valitse nykyinen käyttöjärjestelmäsi",
     "Select the operating system you are currently using to view tailored installation instructions.": "Valitse nykyisin käytössäsi oleva käyttöjärjestelmä, jotta näet yksityiskohtaiset asennusohjeet.",
-    "Windows": "Windows",
+    "Windows": "Ikkunat",
     "macOS": "macOS",
     "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "Asennusmedian luominen",
