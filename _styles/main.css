@@ -298,6 +298,42 @@ nav a:visited:hover {
     opacity: 0.7;
 }
 
+nav a[title="Facebook"]:focus,
+nav a[title="Facebook"]:hover {
+    color: #19227e;
+    fill: #19227e;
+}
+
+nav a[title="Google+"]:focus,
+nav a[title="Google+"]:hover {
+    color: #d50000;
+    fill: #d50000;
+}
+
+nav a[title="Medium"]:focus,
+nav a[title="Medium"]:hover {
+    color: #00ab6b;
+    fill: #00ab6b;
+}
+
+nav a[title="Reddit"]:focus,
+nav a[title="Reddit"]:hover {
+    color: #ff4500;
+    fill: #ff4500;
+}
+
+nav a[title="StackExchange"]:focus,
+nav a[title="StackExchange"]:hover {
+    color: #0d93ff;
+    fill: #0d93ff;
+}
+
+nav a[title="Twitter"]:focus,
+nav a[title="Twitter"]:hover {
+    color: #1da1f2;
+    fill: #1da1f2;
+}
+
 nav .logomark {
     line-height: 14px;
     vertical-align: middle;
@@ -444,7 +480,7 @@ footer ul li a:focus {
         width: calc(33% - 88px);
     }
 
-    .column + .column + .column {
+    .column + .column {
         margin-left: 16px !important;
     }
 }
