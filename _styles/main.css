@@ -906,8 +906,8 @@ select {
     padding: 8px;
 }
 
-option {
-    padding: 42px;
+select {
+    text-align: left;
 }
 
 input[type="number"] {
