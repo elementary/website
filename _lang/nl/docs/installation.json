@@ -37,7 +37,7 @@
     "Running the following command in your Terminal:": "Voer het volgende commando uit in je Terminal:",
     "Should produce the output:": "Zou de volgende uitvoer moeten genereren:",
     "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "Opmerking: Dit gaat ervan uit dat u het .iso-bestand heeft gedownload naar de Download map.\nIn het geval dat u het naar een andere map hebt gedownload, specificeer dan het correcte pad naar het bestand, zoals hier beneden getoond",
-    "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "Om een elementary OS installatie medium te maken op macOS heb je een USB stick nodig van tenminste 2 GB  en een app genaamd &quot; Etcher &quot;.",
+    "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "Om een elementary OS installatiemedium te maken op macOS heb je een USB-stick nodig van tenminste 2 GB groot en een toepassing genaamd &quot;Etcher&quot;.",
     "Download Etcher": "",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "",
