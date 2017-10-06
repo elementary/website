@@ -43,7 +43,7 @@
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Open &quot;Etcher&quot; en selecteer je gedownloade elementary OS image bestand met behulp van de &quot;Selecteer image&quot; knop.",
     "Select image in Etcher": "Selecteer image in Etcher",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher detecteert automatisch je USB-stick, maar controleer toch even of het juiste doel geselecteerd is.",
-    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "Start het proces door te klikken op de &quot; Flash! &quot; knop. Het duurt even voordat het start.",
+    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "Start het proces door te klikken op de &quot;Flash!&quot; knop. Het duurt even voordat het start.",
     "Flash image in Etcher": "",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
