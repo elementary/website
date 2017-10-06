@@ -22,7 +22,7 @@
     "Insert your USB drive and select it in the &quot;Device&quot; list": "Voer de USB-stick in en selecteer deze in de &quot;Device&quot; lijst",
     "Select &quot;ISO Image&quot; next to &quot;Create a bootable disk using...&quot;": "Selecteer &quot;ISO-bestand&quot; naast &quot;Maak een opstartbare schijf met...&quot;",
     "Click": "Klik",
-    "the disk icon": "het schijf icoo",
+    "the disk icon": "het schijf icoon",
     "to choose the ISO that you downloaded previously.": "om te kiezen voor het ISO bestand dat je eerder hebt gedownload.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "",
     "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "Als de hashes overeenkomen, klik &quot;Start&quot; en wacht totdat het proces voltooid is.",
