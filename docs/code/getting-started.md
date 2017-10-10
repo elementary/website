@@ -780,4 +780,4 @@ Let's review what all we've learned:
 
 As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](https://valadoc.org/gio-2.0/GLib.Notification).
 
-#### Next Page: [Reference](/docs/code/reference) {.text-right}
+#### Next Page: [Reference](reference.md) {.text-right}
