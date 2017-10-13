@@ -387,7 +387,7 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 * All dialogs should contain an affirmative button that performs the action suggested in the primary text. This button should be aligned to the very end of the dialog.
 * For dialogs that are displayed in response to user action (such as "Quit"), provide a "Cancel" button directly before the affirmative button.
 * If your dialog has alternative actions, list them before the "Cancel" button.
-* If your dialog has incidental actions (actions that do not close the dialog such as "Help"), this should be aligned to the start of the dialog.
+* If your dialog has incidental actions (actions that do not close the dialog such as "Help"), these should be aligned to the start of the dialog.
 
 ### "OK" is not Okay {#ok-is-not-okay}
 
