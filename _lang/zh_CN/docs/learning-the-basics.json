@@ -4,7 +4,7 @@
     "The Desktop": "桌面",
     "The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Wallpaper</strong>.": "elementary OS的桌面十分简单且易于使用。它包括两个部分：面板和 DOCK。你可以通过<strong><a href=\"/docs/learning-the-basics#system-settings\">系统设置</a></strong>→<strong>桌面</strong>→<strong>壁纸</strong>来定义桌面的壁纸。",
     "The Panel": "面板",
-    "At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.": "",
+    "At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.": "在屏幕顶端，您能够看到面板。其左侧是应用菜单，中间是日期和时间，右侧是指示器。",
     "Applications": "",
     "On the left side of the panel is the Applications item. Clicking <strong>Applications</strong> brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "",
     "Slingshot": "",
