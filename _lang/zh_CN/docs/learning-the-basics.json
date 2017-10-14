@@ -19,7 +19,7 @@
     "The Dock": "Dock",
     "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "屏幕底部是 Dock。 它包含您最喜欢的应用程序以及当前打开的任何应用程序。",
     "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from <strong>Applications</strong> on the panel or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "Dock 中的内容自定义起来非常容易。要添加应用，只需将应用从<strong>应用程序</strong>面板中拖放到 Dock 上，或者右键点击一个已打开应用的图标然后选择<strong>固定至 Dock</strong>即可。要移除应用，只需将其拖放到桌面的空白区域，或者右键点击应用程序图标，取消勾选<strong>固定至 Dock</strong>即可。左右拖放可对应用程序进行排序。",
-    "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "在默认情况下，Dock会在当应用程序最大化时从屏幕底部隐藏。仅需移动鼠标到屏幕的底部中间，即可重新显示Dock。",
+    "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "默认情况下，Dock 会在当应用程序最大化时从屏幕底部隐藏。仅需移动鼠标到屏幕的底部中间，即可重新显示 Dock。",
     "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "",
     "App Windows": "",
     "Apps exist in their own windows which can be closed, maximized, or moved around.": "",
