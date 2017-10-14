@@ -22,7 +22,7 @@
     "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "默认情况下，Dock 会在当应用程序最大化时从屏幕底部隐藏。仅需移动鼠标到屏幕的底部中间，即可重新显示 Dock。",
     "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "您可以通过<strong><a href=\"/docs/learning-the-basics#system-settings\">系统设置</a></strong> → <strong>桌面</strong> → <strong>Dock</strong>自定义 Dock 设置。",
     "App Windows": "",
-    "Apps exist in their own windows which can be closed, maximized, or moved around.": "",
+    "Apps exist in their own windows which can be closed, maximized, or moved around.": "应用程序存在于自己的窗口中，可以关闭，最大化或移动。",
     "When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.": "",
     "HeaderBar": "",
     "Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "",
