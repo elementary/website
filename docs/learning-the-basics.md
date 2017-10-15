@@ -8,7 +8,22 @@ The elementary OS desktop is very simple and easy to learn. It consists of two e
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.
 
-![The Panel](../images/docs/learning-the-basics/panel.png)
+<div id="panel-key">
+    <span>Applications Menu</span>
+    <span>Date & Time</span>
+    <span>Indicators</span>
+</div>
+<div id="panel">
+    <span id="applications-label">Applications</span>
+    <span>Sun, Feb 5 11:38 AM</span>
+    <ul>
+        <li><img src="images/icons/status/24/audio-volume-medium-symbolic.svg"/></li>
+        <li><img src="images/icons/status/24/network-wireless-signal-excellent-symbolic.svg"/></li>
+        <li><img src="images/icons/status/24/battery-full-symbolic.svg"/></li>
+        <li><img src="images/icons/status/24/notification-symbolic.svg"/></li>
+        <li><img src="images/icons/actions/24/system-shutdown-symbolic.svg"/></li>
+    </ul>
+</div>
 
 #### Applications {#applications}
 
