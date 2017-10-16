@@ -729,8 +729,8 @@ Now that you know how to send basic notifications, let's talk about a couple of 
 ### Icons {#icons}
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
-	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-	notification.set_icon (image.gicon);
+	var icon = new GLib.ThemedIcon ("dialog-warning");
+	notification.set_icon (icon);
 
 That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
 
@@ -746,8 +746,8 @@ Let's make the replace button. This button will replace the current notification
 		var notification = new Notification (_("Hello Again"));
 		notification.set_body (_("This is my second Notification!"));
 
-		var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-		notification.set_icon (image.gicon);
+		var icon = new GLib.ThemedIcon ("dialog-warning");
+		notification.set_icon (icon);
 
 		this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
 	});

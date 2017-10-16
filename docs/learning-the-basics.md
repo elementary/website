@@ -26,7 +26,15 @@ You can search for apps by name or by keyword and perform actions associated wit
 To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space</kbd>.
 
 #### Indicators {#indicators}
-On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, time, chat and email accounts, etc. Clicking an indicator exposes more information and related actions.
+On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Clicking an indicator exposes more information and related actions.
+
+A middle click or three finger tap on an indicator will present you with the following quick actions:
+
+* Sound: Toggle the mute state of the primary output device
+* Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device
+* Power: Hide/Show the percentage of battery remaining
+* Notifications: Toggle Do Not Disturb mode
+* Session: Show the shutdown dialog
 
 ### The Dock {#the-dock}
 At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.
