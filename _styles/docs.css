@@ -465,3 +465,46 @@ div.icons-container.small-screen {
 #dialog-guide-action {
     margin-top: -16px;
 }
+
+/****************
+* Color Palette *
+****************/
+
+.color-palette-section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    font-family: sans-serif;
+}
+
+.color-palette-box {
+    flex-grow: 1;
+    font-size: 14px;
+    margin: 5px;
+    min-width: 200px;
+    width: 32%;
+}
+
+.color-palette-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+
+.color-palette-header > span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.color-palette-header > span:nth-of-type(2) {
+    font-size: 12px;
+}
+
+.color-palette-item {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px 15px;
+}
