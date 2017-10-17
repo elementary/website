@@ -771,190 +771,242 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 
 Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
-<div style="display: flex; justify-content: space-between; flex-flow: wrap;">
-  <div style="font-size: 14px; width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#c6262e; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Strawberry</span> <span style="font-size: 12px;">#c6262e</span>
-		</div>
-    <div style="background-color:#ff8c82; color: #7a0000; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Strawberry 100 <span>#ff8c82</span>
-		</div>
-    <div style="background-color:#ed5353; color: #7a0000; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Strawberry 300 <span>#ed5353</span>
-		</div>
-		<div style="background-color:#c6262e; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Strawberry 500 <span>#c6262e</span>
-		</div>
-		<div style="background-color:#a10705; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Strawberry 700 <span>#a10705</span>
-		</div>
-		<div style="background-color:#7a0000; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Strawberry 900 <span>#7a0000</span>
-		</div>
+<div class="color-palette-section">
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background: #c6262e; color: #ffffff;">
+      <span>Strawberry</span>
+      <span>#c6262e</span>
+    </div>
+    <div class="color-palette-item" style="background: #ff8c82; color: #330000;">
+      <span>Strawberry 100</span>
+      <span>#ff8c82</span>
+    </div>
+    <div class="color-palette-item" style="background: #ed5353; color: #330000;">
+      <span>Strawberry 300</span>
+      <span>#ed5353</span>
+    </div>
+    <div class="color-palette-item" style="background: #c6262e;">
+      <span>Strawberry 500</span>
+      <span>#c6262e</span>
+    </div>
+    <div class="color-palette-item" style="background: #a10705;">
+      <span>Strawberry 700</span>
+      <span>#a10705</span>
+    </div>
+    <div class="color-palette-item" style="background: #7a0000;">
+      <span>Strawberry 900</span>
+      <span>#7a0000</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#f37329; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Orange</span> <span style="font-size: 12px;">#f37329</span>
-		</div>
-    <div style="background-color:#ffc27d; color: #a62100; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Orange 100 <span>#ffc27d</span>
-		</div>
-    <div style="background-color:#ffa154; color: #a62100; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Orange 300 <span>#ffa154</span>
-		</div>
-		<div style="background-color:#f37329; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Orange 500 <span>#f37329</span>
-		</div>
-		<div style="background-color:#cc3b02; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Orange 700 <span>#cc3b02</span>
-		</div>
-		<div style="background-color:#a62100; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Orange 900 <span>#a62100</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background: #f37329; color: #ffffff;">
+      <span>Orange</span>
+      <span>#f37329</span>
+    </div>
+    <div class="color-palette-item" style="background: #ffc27d; color: #4D0F00;">
+      <span>Orange 100</span>
+      <span>#ffc27d</span>
+    </div>
+    <div class="color-palette-item" style="background: #ffa154; color: #4D0F00;">
+      <span>Orange 300</span>
+      <span>#ffa154</span>
+    </div>
+    <div class="color-palette-item" style="background: #f37329; color: #4D0F00;">
+      <span>Orange 500</span>
+      <span>#f37329</span>
+    </div>
+    <div class="color-palette-item" style="background: #cc3b02;">
+      <span>Orange 700</span>
+      <span>#cc3b02</span>
+    </div>
+    <div class="color-palette-item" style="background: #a62100;">
+      <span> Orange 900</span>
+      <span>#a62100</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#f9c440; color: #ad5f00; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Banana</span> <span style="font-size: 12px;">#f9c440</span>
-		</div>
-    <div style="background-color:#fff394; color: #ad5f00; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Banana 100 <span>#fff394</span>
-		</div>
-    <div style="background-color:#ffe16b; color: #ad5f00; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Banana 300 <span>#ffe16b</span>
-		</div>
-		<div style="background-color:#f9c440; color: #ad5f00; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Banana 500 <span>#f9c440</span>
-		</div>
-		<div style="background-color:#d48e15; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Banana 700 <span>#d48e15</span>
-		</div>
-		<div style="background-color:#ad5f00; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Banana 900 <span>#ad5f00</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#f9c440; color: #381F00;">
+      <span>Banana</span>
+      <span>#f9c440</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fff394; color: #381F00;">
+      <span>Banana 100</span>
+      <span>#fff394</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ffe16b; color: #381F00;">
+      <span>Banana 300</span>
+      <span>#ffe16b</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#f9c440; color: #381F00;">
+      <span>Banana 500</span>
+      <span>#f9c440</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d48e15; color: #381F00;">
+      <span>Banana 700</span>
+      <span>#d48e15</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ad5f00;">
+      <span>Banana 900</span>
+      <span>#ad5f00</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#68b723; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Lime</span> <span style="font-size: 12px;">#68b723</span>
-		</div>
-    <div style="background-color:#d1ff82; color: #206b00; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Lime 100 <span>#d1ff82</span>
-		</div>
-    <div style="background-color:#9bdb4d; color: #206b00; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Lime 300 <span>#9bdb4d</span>
-		</div>
-		<div style="background-color:#68b723; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Lime 500 <span>#68b723</span>
-		</div>
-		<div style="background-color:#3a9104; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Lime 700 <span>#3a9104</span>
-		</div>
-		<div style="background-color:#206b00; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Lime 900 <span>#206b00</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#68b723;">
+      <span>Lime</span>
+      <span>#68b723</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d1ff82; color: #0B2400;">
+      <span>Lime 100</span>
+      <span>#d1ff82</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#9bdb4d; color: #0B2400;">
+      <span>Lime 300</span>
+      <span>#9bdb4d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#68b723; color: #0B2400;">
+      <span>Lime 500</span>
+      <span>#68b723</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3a9104;">
+      <span>Lime 700</span>
+      <span>#3a9104</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#206b00;">
+      <span>Lime 900</span>
+      <span>#206b00</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#3689e6; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Blueberry</span> <span style="font-size: 12px;">#3689e6</span>
-		</div>
-    <div style="background-color:#8cd5ff; color: #002e99; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Blueberry 100 <span>#8cd5ff</span>
-		</div>
-    <div style="background-color:#64baff; color: #002e99; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Blueberry 300 <span>#64baff</span>
-		</div>
-		<div style="background-color:#3689e6; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Blueberry 500 <span>#3689e6</span>
-		</div>
-		<div style="background-color:#0d52bf; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Blueberry 700 <span>#0d52bf</span>
-		</div>
-		<div style="background-color:#002e99; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Blueberry 900 <span>#002e99</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#3689e6;">
+      <span>Blueberry</span>
+      <span>#3689e6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#8cd5ff; color:#000F33;">
+      <span>Blueberry 100</span>
+      <span>#8cd5ff</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#64baff; color:#000F33;">
+      <span>Blueberry 300</span>
+      <span>#64baff</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3689e6; color: #000F33">
+      <span>Blueberry 500</span>
+      <span>#3689e6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0d52bf;">
+      <span>Blueberry 700</span>
+      <span>#0d52bf</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#002e99;">
+      <span>Blueberry 900</span>
+      <span>#002e99</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#7a36b1; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Grape</span> <span style="font-size: 12px;">#7a36b1</span>
-		</div>
-    <div style="background-color:#e29ffc; color: #260063; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Grape 100 <span>#e29ffc</span>
-		</div>
-    <div style="background-color:#ad65d6; color: #260063; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Grape 300 <span>#ad65d6</span>
-		</div>
-		<div style="background-color:#7a36b1; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Grape 500 <span>#7a36b1</span>
-		</div>
-		<div style="background-color:#4c158a; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Grape 700 <span>#4c158a</span>
-		</div>
-		<div style="background-color:#260063; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Grape 900 <span>#260063</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#7a36b1;">
+      <span>Grape</span>
+      <span>#7a36b1</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#e29ffc; color: #160038;">
+      <span>Grape 100</span>
+      <span>#e29ffc</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ad65d6; color: #160038;">
+      <span>Grape 300</span>
+      <span>#ad65d6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#7a36b1;">
+      <span>Grape 500</span>
+      <span>#7a36b1</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#4c158a;">
+      <span>Grape 700</span>
+      <span>#4c158a</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#260063;">
+      <span>Grape 900</span>
+      <span>#260063</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#abacae; color: #1a1a1a; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Silver</span> <span style="font-size: 12px;">#abacae</span>
-		</div>
-    <div style="background-color:#fafafa; color: #1a1a1a; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Silver 100 <span>#fafafa</span>
-		</div>
-    <div style="background-color:#d4d4d4; color: #1a1a1a; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Silver 300 <span>#d4d4d4</span>
-		</div>
-		<div style="background-color:#abacae; color: #1a1a1a; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Silver 500 <span>#abacae</span>
-		</div>
-		<div style="background-color:#7e8087; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Silver 700 <span>#7e8087</span>
-		</div>
-		<div style="background-color:#555761; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Silver 900 <span>#555761</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#abacae; color: #1a1a1a;">
+      <span>Silver</span>
+      <span>#abacae</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fafafa; color: #1a1a1a;">
+      <span>Silver 100</span>
+      <span>#fafafa</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d4d4d4; color: #1a1a1a;">
+      <span>Silver 300</span>
+      <span>#d4d4d4</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#abacae; color: #1a1a1a;">
+      <span>Silver 500</span>
+      <span>#abacae</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#7e8087;">
+      <span>Silver 700</span>
+      <span>#7e8087</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#555761;">
+      <span>Silver 900</span>
+      <span>#555761</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#485a6c; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Slate</span> <span style="font-size: 12px;">#485a6c</span>
-		</div>
-    <div style="background-color:#95a3ab; color: #0e141f; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Slate 100 <span>#95a3ab</span>
-		</div>
-    <div style="background-color:#667885; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Slate 300 <span>#667885</span>
-		</div>
-		<div style="background-color:#485a6c; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Slate 500 <span>#485a6c</span>
-		</div>
-		<div style="background-color:#273445; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Slate 700 <span>#273445</span>
-		</div>
-		<div style="background-color:#0e141f; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Slate 900 <span>#0e141f</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#485a6c;">
+      <span>Slate</span>
+      <span>#485a6c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#95a3ab; color: #0e141f;">
+      <span>Slate 100</span>
+      <span>#95a3ab</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#667885;">
+      <span>Slate 300</span>
+      <span>#667885</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#485a6c;">
+      <span>Slate 500</span>
+      <span>#485a6c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#273445;">
+      <span>Slate 700</span>
+      <span>#273445</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0e141f;">
+      <span>Slate 900</span>
+      <span>#0e141f</span>
+    </div>
   </div>
-	<div style="width: 32%; flex-grow: 1; min-width: 200px; margin: 5px;">
-    <div style="background-color:#333333; color: white; padding: 15px; display: flex; flex-direction: column; align-items: center;">
-			<span style="font-size: 18px;">Black</span> <span style="font-size: 12px;">#333333</span>
-		</div>
-    <div style="background-color:#666666; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-			Black 100 <span>#666666</span>
-		</div>
-    <div style="background-color:#4d4d4d; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Black 300 <span>#4d4d4d</span>
-		</div>
-		<div style="background-color:#333333; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Black 500 <span>#333333</span>
-		</div>
-		<div style="background-color:#1a1a1a; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Black 700 <span>#1a1a1a</span>
-		</div>
-		<div style="background-color:#000000; color: white; font-size: 12px; padding: 10px; padding-left: 15px; padding-right: 15px; display: flex; justify-content: space-between;">
-		 	Black 900 <span>#000000</span>
-		</div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#333333;">
+      <span>Black</span>
+      <span>#333333</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#666666;">
+      <span>Black 100</span>
+      <span>#666666</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#4d4d4d;">
+      <span>Black 300</span>
+      <span>#4d4d4d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#333333;">
+      <span>Black 500</span>
+      <span>#333333</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#1a1a1a;">
+      <span>Black 700</span>
+      <span>#1a1a1a</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#000000;">
+      <span>Black 900</span>
+      <span>#000000</span>
+    </div>
   </div>
-
-</div> 
-
+</div>
 
 ## Symbolic Icons {#symbolic-icons}
 
