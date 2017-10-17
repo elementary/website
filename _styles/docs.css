@@ -473,8 +473,8 @@ div.icons-container.small-screen {
 .color-palette-section {
     display: flex;
     justify-content: space-between;
-	flex-flow: wrap;
-	font-family: sans-serif;
+    flex-flow: wrap;
+    font-family: sans-serif;
 }
 
 .color-palette-box {
