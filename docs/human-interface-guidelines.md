@@ -384,10 +384,10 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 
 ![](/images/docs/human-interface-guidelines/dialogs/button-order.png)
 
-* All dialogs should contain an affirmative button that performs the action suggested in the primary text. This button goes on the far right side of the window.
-* For dialogs that are displayed in response to user action (such as "Quit"), provide a "Cancel" button directly to the left of the affirmative button.
-* If your dialog has alternative actions, list them to the left of the "Cancel" button.
-* If you wish your dialog to contain a "Help" button, this should be placed to the far left of the window.
+* All dialogs should contain an affirmative button that performs the action suggested in the primary text. This button should be aligned to the very end of the dialog.
+* For dialogs that are displayed in response to user action (such as "Quit"), provide a "Cancel" button directly before the affirmative button.
+* If your dialog has alternative actions, list them before the "Cancel" button.
+* If your dialog has incidental actions (actions that do not close the dialog such as "Help"), these should be aligned to the start of the dialog.
 
 ### "OK" is not Okay {#ok-is-not-okay}
 
@@ -769,8 +769,244 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go".
+Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
+<div class="color-palette-section">
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background: #c6262e; color: #ffffff;">
+      <span>Strawberry</span>
+      <span>#c6262e</span>
+    </div>
+    <div class="color-palette-item" style="background: #ff8c82; color: #330000;">
+      <span>Strawberry 100</span>
+      <span>#ff8c82</span>
+    </div>
+    <div class="color-palette-item" style="background: #ed5353; color: #330000;">
+      <span>Strawberry 300</span>
+      <span>#ed5353</span>
+    </div>
+    <div class="color-palette-item" style="background: #c6262e;">
+      <span>Strawberry 500</span>
+      <span>#c6262e</span>
+    </div>
+    <div class="color-palette-item" style="background: #a10705;">
+      <span>Strawberry 700</span>
+      <span>#a10705</span>
+    </div>
+    <div class="color-palette-item" style="background: #7a0000;">
+      <span>Strawberry 900</span>
+      <span>#7a0000</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background: #f37329; color: #ffffff;">
+      <span>Orange</span>
+      <span>#f37329</span>
+    </div>
+    <div class="color-palette-item" style="background: #ffc27d; color: #4D0F00;">
+      <span>Orange 100</span>
+      <span>#ffc27d</span>
+    </div>
+    <div class="color-palette-item" style="background: #ffa154; color: #4D0F00;">
+      <span>Orange 300</span>
+      <span>#ffa154</span>
+    </div>
+    <div class="color-palette-item" style="background: #f37329; color: #4D0F00;">
+      <span>Orange 500</span>
+      <span>#f37329</span>
+    </div>
+    <div class="color-palette-item" style="background: #cc3b02;">
+      <span>Orange 700</span>
+      <span>#cc3b02</span>
+    </div>
+    <div class="color-palette-item" style="background: #a62100;">
+      <span> Orange 900</span>
+      <span>#a62100</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#f9c440; color: #381F00;">
+      <span>Banana</span>
+      <span>#f9c440</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fff394; color: #381F00;">
+      <span>Banana 100</span>
+      <span>#fff394</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ffe16b; color: #381F00;">
+      <span>Banana 300</span>
+      <span>#ffe16b</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#f9c440; color: #381F00;">
+      <span>Banana 500</span>
+      <span>#f9c440</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d48e15; color: #381F00;">
+      <span>Banana 700</span>
+      <span>#d48e15</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ad5f00;">
+      <span>Banana 900</span>
+      <span>#ad5f00</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#68b723;">
+      <span>Lime</span>
+      <span>#68b723</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d1ff82; color: #0B2400;">
+      <span>Lime 100</span>
+      <span>#d1ff82</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#9bdb4d; color: #0B2400;">
+      <span>Lime 300</span>
+      <span>#9bdb4d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#68b723; color: #0B2400;">
+      <span>Lime 500</span>
+      <span>#68b723</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3a9104;">
+      <span>Lime 700</span>
+      <span>#3a9104</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#206b00;">
+      <span>Lime 900</span>
+      <span>#206b00</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#3689e6;">
+      <span>Blueberry</span>
+      <span>#3689e6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#8cd5ff; color:#000F33;">
+      <span>Blueberry 100</span>
+      <span>#8cd5ff</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#64baff; color:#000F33;">
+      <span>Blueberry 300</span>
+      <span>#64baff</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3689e6; color: #000F33">
+      <span>Blueberry 500</span>
+      <span>#3689e6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0d52bf;">
+      <span>Blueberry 700</span>
+      <span>#0d52bf</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#002e99;">
+      <span>Blueberry 900</span>
+      <span>#002e99</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#7a36b1;">
+      <span>Grape</span>
+      <span>#7a36b1</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#e29ffc; color: #160038;">
+      <span>Grape 100</span>
+      <span>#e29ffc</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#ad65d6; color: #160038;">
+      <span>Grape 300</span>
+      <span>#ad65d6</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#7a36b1;">
+      <span>Grape 500</span>
+      <span>#7a36b1</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#4c158a;">
+      <span>Grape 700</span>
+      <span>#4c158a</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#260063;">
+      <span>Grape 900</span>
+      <span>#260063</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#abacae; color: #1a1a1a;">
+      <span>Silver</span>
+      <span>#abacae</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fafafa; color: #1a1a1a;">
+      <span>Silver 100</span>
+      <span>#fafafa</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#d4d4d4; color: #1a1a1a;">
+      <span>Silver 300</span>
+      <span>#d4d4d4</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#abacae; color: #1a1a1a;">
+      <span>Silver 500</span>
+      <span>#abacae</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#7e8087;">
+      <span>Silver 700</span>
+      <span>#7e8087</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#555761;">
+      <span>Silver 900</span>
+      <span>#555761</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#485a6c;">
+      <span>Slate</span>
+      <span>#485a6c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#95a3ab; color: #0e141f;">
+      <span>Slate 100</span>
+      <span>#95a3ab</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#667885;">
+      <span>Slate 300</span>
+      <span>#667885</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#485a6c;">
+      <span>Slate 500</span>
+      <span>#485a6c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#273445;">
+      <span>Slate 700</span>
+      <span>#273445</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0e141f;">
+      <span>Slate 900</span>
+      <span>#0e141f</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#333333;">
+      <span>Black</span>
+      <span>#333333</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#666666;">
+      <span>Black 100</span>
+      <span>#666666</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#4d4d4d;">
+      <span>Black 300</span>
+      <span>#4d4d4d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#333333;">
+      <span>Black 500</span>
+      <span>#333333</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#1a1a1a;">
+      <span>Black 700</span>
+      <span>#1a1a1a</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#000000;">
+      <span>Black 900</span>
+      <span>#000000</span>
+    </div>
+  </div>
+</div>
 
 ## Symbolic Icons {#symbolic-icons}
 
@@ -981,7 +1217,7 @@ Used for titles, buttons, menus, and most other widgets.
 
 ### Notes/Exceptions {#notes-exceptions}
 
-Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as "Google," elementary should always be shown as "elementary," and MPEG should always be shown as "MPEG." If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.
+Proper nouns should always be capitalized properly; this means that, for example, Google should always be shown as "Google," and MPEG should always be shown as "MPEG." One major exception is "elementary." It should follow the brand guidelines and always appear lowercase, even at the start of a sentence. If you're unsure how a certain pronoun should be officially capitalized, refer to the documentation of the pronoun in question.
 
 Keep in mind these are the rules elementary OS follows for English; capitalization for other languages should follow the conventions of those languages.
 

@@ -13,7 +13,7 @@
     "Select the operating system you are currently using to view tailored installation instructions.": "Selectează sistemul de operare pe care îl utilizezi în prezent pentru a vedea instrucțiuni specifice.",
     "Windows": "",
     "macOS": "",
-    "Ubuntu": "",
+    "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "Creează un disc de instalare",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "",
     "Download Rufus": "",

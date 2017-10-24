@@ -31,7 +31,7 @@
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.": "アプリのウィンドウのボタンはアプリのウィンドウの上部の角にあります。閉じるボタンが左、最大化ボタンが右にあります。閉じるボタンを押すことでアプリのウィンドウを閉じます。最大化ボタンを押すことでアプリのウィンドウがスクリーンの全域を使用するかどうかを切り替えます。",
     "Multitasking": "マルチタスキング",
     "elementary OS supports two types of multitasking: windows and workspaces.": "elementary OS はウィンドウとワークスペースの2つのタイプのマルチタスキングをサポートしています。",
-    "Windows": "",
+    "Windows": "Windows",
     "Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:": "アプリはアプリのウィンドウ内で開きます。それらはデスクトップ上で重ね、あちこちに移動させることができます。ウィンドウ間はいくつかの方法で切り替えることができます。",
     "click on the window you want to switch to": "切り替えたいウィンドウの上でクリックする",
     "click on the app's icon in the dock": "ドックにあるアプリのアイコンをクリックする",
