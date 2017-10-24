@@ -113,7 +113,7 @@ Now what you've been waiting for! We're going to create a window that contains a
 
 1. Create a new file in Scratch and save it as "gtk-hello.vala" inside your "src" folder
 
-2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "gtk-hello.vala".
+2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "gtk-hello.vala".
 
         public class MyApp : Gtk.Application {
 
@@ -142,9 +142,9 @@ Now what you've been waiting for! We're going to create a window that contains a
         ./gtk-hello
         ```
 
-    Did it work? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
+    Do you see a new, empty window called "gtk-helo"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
-3. Now, that we've created a new `Gtk.Application` with a `Gtk.ApplicationWindow` called `main_window`, let's declare a couple properties of this window. You'll notice that most of these property names are pretty straightforward. Try to guess what each one does and we'll explain in a second. Add the following properties to your `main_window`:
+3. Now, that we've created a new `Gtk.Application` with a `Gtk.ApplicationWindow` called `main_window`, let's declare a couple properties of this window. You'll notice that most of these property names are pretty straightforward. Try to guess what each one does and we'll explain in a second. Add the following properties to the `main_window` you previously created inside the `activate ()` function:
 
         var main_window = new Gtk.ApplicationWindow (this);
         main_window.title = "Hello World!";
