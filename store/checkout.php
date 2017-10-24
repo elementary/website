@@ -214,7 +214,7 @@
 
     <div class="whole">
         <input type="hidden" name="stripe-token">
-        <button type="submit" id="order" class="suggested-action">Place order</button>
+        <button type="submit" id="order" class="suggested-action">Place Order</button>
     </div>
 </form>
 
