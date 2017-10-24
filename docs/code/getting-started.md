@@ -154,7 +154,7 @@ Now what you've been waiting for! We're going to create a window that contains a
 
     The first line creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Compile and run your application again and see how it's changed from the first time.
 
-4. Now that we've defined a nice window, let's put a button inside of it. Add the following to your application.:
+4. Now that we've defined a nice window, let's put a button inside of it. Add the following to your application at the beginning of the `activate ()` function:
 
         var button_hello = new Gtk.Button.with_label ("Click me!");
         button_hello.margin = 12;
@@ -162,11 +162,10 @@ Now what you've been waiting for! We're going to create a window that contains a
             button_hello.label = "Hello World!";
             button_hello.sensitive = false;
         });
+        
+    Then add this line right before `main_window.show_all ()`:
 
-        var main_window = new Gtk.ApplicationWindow (this);
-        [...]
         main_window.add (button_hello);
-        main_window.show_all ();
 
     Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we add a margin to the button so that it doesn't bump up against the sides of the window. We've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive after it's clicked; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.ApplicationWindow` and declare that we want to show all of the window's contents.
     
