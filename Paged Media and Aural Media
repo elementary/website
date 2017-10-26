@@ -1,0 +1,67 @@
+PAGED MEDIA
+
+The CSS2 standard introduces some basic pagination control features that let authors
+help the browser figure out how to best print their documents.
+
+page rule sets the page box size to 8 x 11 inches and
+creates '2.1cm' margin on all sides between the page box edge and the page area:
+<style type="text/css">
+<!--
+@page { size:8in 11in; margin: 2.1cm }
+-->
+</style>
+
+Setting Page Size
+The size property specifies the size and orientation of a page box. There are four values,
+which can be used for page size:
+1. auto: The page box will be set to the size and orientation of the target sheet.
+2. landscape: Overrides the target's orientation. The page box is of the same size
+as the target, and the longer sides are horizontal.
+3. portrait: Overrides the target's orientation. The page box is the same size as the
+target, and the shorter sides are horizontal.
+4. length: Length values for the 'size' property create an absolute page box. If only
+one length value is specified, it sets both the width and height of the page box.
+Percentage values are not allowed for the 'size' property.
+<style type="text/css">
+<!--
+@page {
+size: auto;
+/* auto is the initial value */
+margin: 10%;
+}
+-->
+</style>
+
+
+
+Left, right pages
+<style type="text/css">
+<!--
+@page :left {
+margin-left: 4cm;
+margin-right: 3cm;
+}
+@page :right {
+margin-left: 3cm;
+margin-right: 4cm;
+}
+-->
+</style>
+
+
+Define page breaks
+
+<style type="text/css">
+<!--
+h1 { page-break-before : right }
+h2 { page-break-after : avoid }
+-->
+</style>
+
+or
+
+<style type="text/css">
+<!--
+table { page-break-inside : avoid }
+-->
+</style>
