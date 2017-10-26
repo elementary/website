@@ -55,4 +55,4 @@ See guidelines for [coding](https://github.com/elementary/website/blob/master/.g
 License
 =======
 
-This project has a MIT license, check here the [license](https://github.com/elementary/website/blob/master/LICENSE.md)
+This project has a [MIT license](LICENSE.md).
