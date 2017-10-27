@@ -6,6 +6,7 @@
 import analytics from '~/lib/analytics'
 
 import '~/external-links'
+import '~/menu-responsive'
 import '~/popover'
 import '~/smooth-scrolling'
 import '~/twitter-links'
