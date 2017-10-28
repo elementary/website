@@ -34,7 +34,7 @@
     "Windows": "Fenêtres",
     "Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:": "Les applications s’exécutent dans les fenêtres d’application. Elles peuvent se chevaucher sur votre bureau et être déplacées. Vous pouvez basculer entre fenêtres de plusieurs façons :",
     "click on the window you want to switch to": "cliquez sur la fenêtre vers laquelle vous voulez basculer",
-    "click on the app's icon in the dock": "cliquez sur l'icône de l'application dans le Dock",
+    "click on the app's icon in the dock": "cliquez sur l’icône de l’application dans le Dock",
     "press <kbd>Alt</kbd> + <kbd>Tab</kbd>": "pressez <kbd>Alt</kbd>+<kbd>Tab</kbd>",
     "To see an overview of your open app windows, press <kbd>&#8984;</kbd> + <kbd>W</kbd>.": "Pour afficher une vue d'ensemble des applications en cours, pressez <kbd>&#8984;</kbd>+<kbd>W</kbd>.",
     "You can customize these shortcuts through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong> → <strong>Windows</strong>.": "Vous pouvez personnaliser ces raccourcis clavier en utilisant : <strong><a href=\"/docs/learning-the-basics#system-settings\"></a>Paramètres du système</strong>→<strong>Clavier</strong>→<strong>Raccourcis</strong>→<strong>Fenêtres</strong>.",
