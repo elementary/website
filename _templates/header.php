@@ -142,6 +142,7 @@ $l10n->begin_html_translation();
                     <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                     <?php } ?>
+                    <li class="menu-icon"><a href="javascript:void(0);" onclick="">&#9776;</a></li>
                 </ul>
                 <ul class="right">
                     <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>

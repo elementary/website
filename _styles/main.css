@@ -255,6 +255,10 @@ nav {
     justify-content: space-between;
 }
 
+.nav-content .menu-icon {
+    display: none;
+}
+
 html.ie-legacy .nav-content {
     min-width: 430px;
 }
@@ -344,6 +348,42 @@ nav .logomark:focus .logomark-svg {
     fill: inherit;
 }
 
+/* Menu responsive */
+@media only screen and (max-width: 600px) {
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-content.responsive {
+        position: relative;
+    }
+
+    .nav-content ul {
+        display: block;
+    }
+    
+    .nav-content li {
+        display: none;
+    }
+
+    .nav-content ul:first-child li:first-child {
+        display: inline-block;
+    }
+    
+    .nav-content .menu-icon{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-content.responsive li {
+        display: block;
+    }
+    
+}
+
 /* this media query is for ie-legacy support */
 @media only screen and (max-width: 430px) {
     html.ie-legacy nav {
@@ -360,6 +400,7 @@ nav .logomark:focus .logomark-svg {
     html.ie-legacy .nav-content > .right {
         float: left;
     }
+
 }
 
 /**************
