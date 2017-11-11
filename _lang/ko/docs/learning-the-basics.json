@@ -1,6 +1,6 @@
 {
     "Learning the Basics": "기초 배우기",
-    "As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.": "어떤 운영 체제든 익숙하지 않은 것들이 조금씩 있습니다. 이 섹션에서는 웹 탐색 및 음악 듣기와 같은 간단한 작업과 당신이 잘 알지 못하고 있는 유용한 정보를 처리하는 방법을 다룹니다.",
+    "As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.": "어떤 운영 체제든 익숙하지 않은 것들이 조금씩 있습니다. 이 섹션에서는, 웹 탐색 및 음악 듣기와 같은 간단한 작업과, 당신이 잘 모를 수 있는 유용한 정보를 처리하는 방법을 다룹니다.",
     "The Desktop": "데스크톱",
     "The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Wallpaper</strong>.": "",
     "The Panel": "",
@@ -8,7 +8,7 @@
     "Applications": "애플리케이션",
     "On the left side of the panel is the Applications item. Clicking <strong>Applications</strong> brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "패널의 왼쪽에는 응용 프로그램 항목이 있습니다. <strong>응용 프로그램</strong>을 클릭하면 런처가 실행되면서 설치된 모든 앱을 표시합니다. 하단의 페이지 번호를 사용하거나 스크롤하여 여러 페이지의 응용 프로그램을 볼 수 있습니다. 또한 상단의 보기 전환기를 사용하여 그리드 보기와 목록 보기간에 전환 할 수 있습니다.",
     "Slingshot": "슬링샷",
-    "You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:": "이름이나 키워드로 앱을 검색하고 해당 앱과 관련된 작업을 수행 할 수 있습니다. 시스템 설정 창을 검색 할 수도 있습니다. 검색에서 찾을 수 있는 몇 가지 작업은 다음과 같습니다.",
+    "You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:": "이름이나 키워드로 앱을 검색하고 해당 앱과 관련된 작업을 수행 할 수 있습니다. 시스템 설정 창을 검색 할 수도 있습니다. 검색에서 찾을 수 있는 몇 가지 작업은 다음과 같습니다:",
     "Shutdown and Restart": "종료 및 재시작",
     "Compose Message": "메시지 작성",
     "New Private Browsing Window": "새 비밀 모드 창",
