@@ -27,7 +27,7 @@
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "다운로드된 파일을 확인할 수 있도록 기본 OS 이미지에 대한 체크 섬 (또는 해시 섬)을 생성합니다. 이렇게 하면 전체, 전체 다운로드 및 설치 이미지가 손상되지 않았는지 확인할 수 있습니다. 상태 표시줄에서 <code>#</code> 버튼을 클릭하고 \"SHA256\" 옆의 텍스트가 다음 해시와 일치하는지 확인합니다.",
     "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "해시가 일치하면 \"시작\"을 누르고 작업이 끝나기를 기다립니다.",
     "Booting from the Install Drive": "설치 디스크에서 부팅하기",
-    "In order to start the installation process, you must boot your computer from the install drive.": "설치 과정을 시작하기 위해서는 설치 드라이브로 컴퓨터를 부팅해야 합니다.",
+    "In order to start the installation process, you must boot your computer from the install drive.": "설치 과정을 시작하기 위해서는, 설치 드라이브로 컴퓨터를 부팅해야 합니다.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
     "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
