@@ -28,7 +28,7 @@
     "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "해시가 일치하면 \"시작\"을 누르고 작업이 끝나기를 기다립니다.",
     "Booting from the Install Drive": "설치 디스크에서 부팅하기",
     "In order to start the installation process, you must boot your computer from the install drive.": "설치 과정을 시작하기 위해서는, 설치 드라이브로 컴퓨터를 부팅해야 합니다.",
-    "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "컴퓨터가 아직 켜져 있다고 가정하고 설치 드라이브를 삽입하고 컴퓨터를 다시 시작합니다.",
+    "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "컴퓨터가 아직 켜져 있다고 가정하고, 설치 드라이브를 넣고 컴퓨터를 다시 시작하는 것에서부터 시작해 봅니다.",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
     "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "",
