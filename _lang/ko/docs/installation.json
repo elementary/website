@@ -46,7 +46,7 @@
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "&quot;Flash!&quot; 버튼을 클릭해서 작업을 시작하세요. 시작하는데 시간이 좀 걸릴 겁니다.",
     "Flash image in Etcher": "Etcher에서 이미지 굽기",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "끝나게 되면 드라이브를 꺼내고 elementary OS 설치를 위한 부팅을 하는 것이 안전합니다.",
-    "The following dialog may appear during the flashing process, it is safe to ignore.": "이미지를 굽는 동안 이런 확인 창이 뜰 수 있는데, ignore(무시) 버튼을 누르시는 게 안전합니다.",
+    "The following dialog may appear during the flashing process, it is safe to ignore.": "이미지를 굽는 동안 이런 대화 창이 뜰 수 있는데, ignore(무시) 버튼을 누르시는 게 안전합니다.",
     "Not readable warning": "일을 수 없음 경고",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "벨소리를 들으신 후에는, <kbd>Option</kbd>키를 누르세요. 그런 다음, 사용하려는 부팅 디스크를 선택하시면 됩니다. 알아두실 것은 &quot;Windows&quot;로 잘못 확인되는 수가 있는데요, 이것은 정상입니다.",
     "Boot Errors": "부팅 오류",
