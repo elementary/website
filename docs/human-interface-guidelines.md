@@ -558,18 +558,6 @@ Like menu items, Text Button labels should consist of an Action or a Location bu
 
 Since Text buttons have a clear and explicit label, it's usually unnecessary to give them a tooltip.
 
-### Linked Buttons {#linked-buttons}
-
-![](/images/docs/human-interface-guidelines/buttons/radio.png)
-
-#### Usage {#linked-buttons-usage}
-
-Linked Buttons are used to group actions that are either similar in nature or mutually exclusive. For example, they could group text options like Bold, Italic, and Underline. Or they can be used to group mutually exclusive states like Grid, List, or Column view.
-
-#### Labeling {#linked-buttons-labeling}
-
-Linked Buttons should never contain colored icons. Only 16px symbolic icons OR text. Do not mix icons and text.
-
 ---
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
 2. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX StackExchange
@@ -623,7 +611,7 @@ If the search field interacts with a search service, the hint text should be the
 Selection controls present a way for users to select or enable options. There are several types of selection controls available in elementary OS:
 
 * **Checkboxes** present a way for users to select multiple items from a set.
-* **Comboboxes**, **Radio buttons**, and **Mode buttons** present a way for users to select a single option from a set.
+* **Comboboxes**, **Linked buttons** , and **Radio buttons** present a way for users to select a single option from a set.
 * **Switches** present a way for users to toggle certain features or behaviors "on" or "off".
 
 ### Checkboxes {#checkboxes} {#checkboxes-usage} {#checkboxes-labeling}
@@ -641,18 +629,24 @@ Use a combobox (also called a dropdown) when:
 * Users are selecting only a single item from a set and
 * The set is too long to show all available options at once
 
+### Linked Buttons {#linked-buttons} {#linked-buttons-usage} {#linked-buttons-labeling}
+
+![](/images/docs/human-interface-guidelines/buttons/radio.png)
+
+Use linked buttons (also called a mode button) when:
+* Users are selecting only a single item from a set and
+* all options can be described by an icon or with only one or two words
+
+For example, they could group text options like Bold, Italic, and Underline. Or they can be used to group mutually exclusive states like Grid, List, or Column view.
+
+Linked buttons should never contain colored icons. Only 16px symbolic icons OR text. Do not mix icons and text.
+
 ### Radio Buttons {#radio-buttons}
 
 Use radio buttons when:
 
 * Users are selecting only a single item from a set and
 * You think users should see all available options at once.
-
-### Mode Buttons {#mode-buttons}
-
-Use a mode button (also called linked buttons) when:
-* Users are selecting only a single item from a set and
-* all options can be described by an icon or with only one or two words
 
 ### Switches {#switches} {#switches-usage}
 
