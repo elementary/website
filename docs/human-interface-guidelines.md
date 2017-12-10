@@ -424,7 +424,7 @@ A Toolbar is useful for providing users with quick access to an app's most used 
 
 ![](/images/docs/human-interface-guidelines/toolbars/toolbar.png)
 
-Toolbar items should be organized with the most significant objects on the left and the least significant on the right, with the AppMenu always on the far right of the Toolbar. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
+Toolbar items should be organized with the most significant objects on the left and the least significant on the right. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
 
 # UI Toolkit Elements {#ui-toolkit-elements}
 
@@ -573,23 +573,6 @@ Linked Buttons should never contain colored icons. Only 16px symbolic icons OR t
 ---
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
 2. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX StackExchange
-
-## AppMenu {#appmenu}
-
-The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
-
-![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
-
-### Usage {#appmenu-usage}
-
-You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.
-
-When adding items to your AppMenu, consider the following:
-
-* Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.
-* If the app includes a "preferences" window, it should be available from the AppMenu.
-* There should be an item for the "About" dialog which contains links to the project's bug tracker, help, etc.
-* If an AppMenu is displayed, a menu bar should not be, and vice-versa.
 
 ## Search Fields {#search-fields}
 
