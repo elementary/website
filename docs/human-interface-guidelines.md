@@ -606,7 +606,8 @@ Most search fields should use the format "Search OBJECTS" where OBJECTS is somet
 
 If the search field interacts with a search service, the hint text should be the name of that service such as "Google" or "Yahoo!"
 
-## Selection Controls {#checkboxes-switches} {#selection-controls}
+<span id="checkboxes-switches">
+## Selection Controls {#selection-controls}
 
 Selection controls present a way for users to select or enable options. There are several types of selection controls available in elementary OS:
 
@@ -614,7 +615,8 @@ Selection controls present a way for users to select or enable options. There ar
 * **Comboboxes**, **Linked buttons** , and **Radio buttons** present a way for users to select a single option from a set.
 * **Switches** present a way for users to toggle certain features or behaviors "on" or "off".
 
-### Checkboxes {#checkboxes} {#checkboxes-usage} {#checkboxes-labeling}
+<span id="checkboxes-usage"><span id="checkboxes-labeling">
+### Checkboxes {#checkboxes}
 
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
@@ -629,7 +631,8 @@ Use a combobox (also called a dropdown) when:
 * Users are selecting only a single item from a set and
 * The set is too long to show all available options at once
 
-### Linked Buttons {#linked-buttons} {#linked-buttons-usage} {#linked-buttons-labeling}
+<span id="linked-buttons-usage"><span id="linked-buttons-labeling">
+### Linked Buttons {#linked-buttons}
 
 ![](/images/docs/human-interface-guidelines/buttons/radio.png)
 
@@ -648,7 +651,8 @@ Use radio buttons when:
 * Users are selecting only a single item from a set and
 * You think users should see all available options at once.
 
-### Switches {#switches} {#switches-usage}
+<span id="switches-usage">
+### Switches {#switches}
 
 ![](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
 
