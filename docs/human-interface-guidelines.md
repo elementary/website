@@ -612,7 +612,8 @@ If the search field interacts with a search service, the hint text should be the
 Selection controls present a way for users to select or enable options. There are several types of selection controls available in elementary OS:
 
 * **Checkboxes** present a way for users to select multiple items from a set.
-* **Comboboxes**, **Linked buttons** , and **Radio buttons** present a way for users to select a single option from a set.
+* **Comboboxes** and **Radio buttons** present a way for users to select a single option from a set.
+* **Linked buttons** present a compact way for users to select options that can be described by an icon or with only one or two words.
 * **Switches** present a way for users to toggle certain features or behaviors "on" or "off".
 
 <span id="checkboxes-usage"/><span id="checkboxes-labeling"/>
@@ -634,13 +635,13 @@ Use a combobox (also called a dropdown) when:
 <span id="linked-buttons-usage"/><span id="linked-buttons-labeling"/>
 ### Linked Buttons {#linked-buttons}
 
-![](/images/docs/human-interface-guidelines/buttons/radio.png)
+![Linked Buttons](/images/docs/human-interface-guidelines/buttons/radio.png)
 
 Use linked buttons (also called a mode button) when:
-* Users are selecting only a single item from a set and
-* all options can be described by an icon or with only one or two words
+* all options can be described by an icon or with only one or two words and
+* You think users should see all available options at once.
 
-For example, they could group text options like Bold, Italic, and Underline. Or they can be used to group mutually exclusive states like Grid, List, or Column view.
+Linked buttons can be used to select multiple related options like "Bold", "Italic", and "Underline", or they can be used to select a single mutually exclusive option like Grid, List, or Column view.
 
 Linked buttons should never contain colored icons. Only 16px symbolic icons OR text. Do not mix icons and text.
 
@@ -654,13 +655,11 @@ Use radio buttons when:
 <span id="switches-usage"/>
 ### Switches {#switches}
 
-![](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
+![Switches](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
 
 Use a switch when users are toggling certain features or behaviors "on" or "off". 
 
-Don't use switches to include related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
-
-Notice that the option "Record from microphone" is a great candidate for a switch. You are enabling and disabling this recording service. However, if there are two options "Record system sounds" and "Record from microphone" you are now dealing with a list of related items to include as part of a larger recording service (who's on and off state is independent of what services it includes). In this case, a checkbox is more appropriate to denote this inclusion.
+Don't use switches to select related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
 When possible, directly call out the service you are acting on. Do not use words that describe the state that the widget is describing like "Enable Multitouch", "Use Multitouch", or "Disable Multitouch". This can create a confusing situation logically. Instead, simply use the noun and write "Multitouch".
 
