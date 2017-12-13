@@ -11,7 +11,7 @@ import jQuery from './jquery'
 
 export default jQuery.then(($) => {
     return new Promise((resolve, reject) => {
-        Script('https://cdn.jsdelivr.net/g/jquery.leanmodal2@2.5', () => {
+        Script('https://cdn.jsdelivr.net/gh/eustasy/jquery.leanmodal2@2.5/jQuery.leanModal2.min.js', () => {
             console.log('jQuery.leanModal2 loaded')
             return resolve(window.jQuery)
         })

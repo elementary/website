@@ -1,7 +1,7 @@
 {
     "Installation": "Instalace",
     "Download elementary OS": "Stáhnout elementary OS",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Pokud jste tak už neudělali, <a href=\"\/\" target=\"_blank\">stáhněte si elementary OS z naší domovské stránky<\/a>. Stažený ISO soubor pak budete muset překopírovat na USB disk pomocí instrukcí níže.",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
     "Recommended System Specifications": "Doporučené systémové požadavky",
     "Intel i3 or comparable dual-core 64-bit processor": "Intel i3 nebo kompatibilní dvou-jádrový 64bitový proceso",
     "1 GB of system memory (RAM)": "1 GB paměti (RAM)",
@@ -50,7 +50,7 @@
     "Not readable warning": "Nečitelné varování",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Až uslyšíte zvonek, zmáčkněte a podržte tlačítko <kbd>Option<\/kbd>. Poté vyberte příslušnou bootovací jednotku. Dejte pozor, tato jednotka může být mylně označena jako \"Windows\" ale to je normální.",
     "Boot Errors": "Bootovací chyby",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170517.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Pokud váš Mac nepozná vaš USB instalační disk elementary OS ve startovací nabídce, bude pravděpodobně nutné vytvořit namísto toho elementary OS instalační DVD. Chcete-li jej vytvořit, vložte prázdné DVD, klepněte pravým tlačítkem myši na soubor ISO v aplikaci Finder a vyberte &quot;Burn elementaryos-0.4.1-stable.20170517.iso to Disc&quot;. Po dokončení se pokuste znovu nastartovat z instalačního DVD.",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Spusťte následující příkaz v terminálu:",
     "should produce the output:": "výsledek by měl vypadat:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Budete potřebovat USB flash disk s minimálně 2 GB volného místa a program s názvem UNetbootin.",

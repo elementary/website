@@ -1,7 +1,7 @@
 {
     "Installation": "स्थापना",
     "Download elementary OS": "एलीमेन्टरी ओएस डाउनलोड गर्नुहोस्",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "यदि गर्नुभएको छैन भने, तपाईंले <a href=\"\/\" target=\"_blank\">हाम्रो गृह पृष्‍ठबाट एलीमेन्टरी ओएस डाउनलोड<\/a> गर्नुपर्ने हुन्छ। तल दिइएका निर्देशनहरुको अनुसार, डाउनलोड गरिएको आइ एस ओ फाइललाई तपाईंले यु एस बि फ्लयाश ड्राइवमा प्रतिलिपिकरण गर्नुपर्ने हुन्छ।",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
     "Recommended System Specifications": "सिफारिस गरिएको प्रणाली विनिर्देशनहरु",
     "Intel i3 or comparable dual-core 64-bit processor": "इन्टेल i3 या तुलनीय डुअल-कोर ६४-बिट प्रोसेसर",
     "1 GB of system memory (RAM)": "१ जीबीको प्रणाली मेमोरी (RAM)",
@@ -50,7 +50,7 @@
     "Not readable warning": "",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "तपाईंले झंकार सुन्नु भएपछि, <kbd>Option<\/kbd> थिचिराख्नुहोस्। त्यसपछि, उपयुक्त बुट ड्राइव छान्नुहोस्। ध्यान दिनुहोस् कि यसको \"विन्डोज\" भनेर गलत पहिचान हुनसक्छ, तर यो सामान्य हो।",
     "Boot Errors": "",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170517.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "तपाईंको टर्मिनलामा निम्न कमान्ड चलाउँदा:",
     "should produce the output:": "यो परिणाम आउनुपर्ने हुन्छ:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "",

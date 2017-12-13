@@ -1,16 +1,16 @@
 # Getting Started {#getting-started}
 
-Welcome to the elementary Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
+Welcome to the elementary developer guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
 
 However, we strongly recommend to at least skim through this preparation step. Having the right setup is going to help you reach your goals faster, and having a solid foundation is going to help you throughout the rest of this book.
 
 ## What We Will And Won't Cover {#what-we-will-and-wont-cover}
 
-We're going to assume that you have absolutely no experience in writing apps for elementary. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
+We're going to assume that you have absolutely no experience in writing apps for elementary OS. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
 
-We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
+We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary OS is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
 
-In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
+In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary OS, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
 # The Basic Setup {#the-basic-setup}
 
@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Git revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## GitHub {#github}
 
@@ -76,7 +76,7 @@ The first piece of our simple "SDK" is the code editor Scratch. This comes by de
 
 ![](images/icons/apps/128/utilities-terminal.svg)
 
-We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
+We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary OS doesn’t come with that folder by default, you’ll need to create it.
 
 Open Terminal and issue the following command:
 
@@ -309,9 +309,11 @@ The AUTHORS file is pretty straightforward. This file contains your name and ema
 
 <!--/email_off-->
 
+For more information about the AUTHORS file and its importance, see the [GNU maintainer documentation](https://www.gnu.org/prep/maintain/html_node/Recording-Contributors.html).
+
 ### Copying {#copyright}
 
-The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
+The COPYING file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Mark Your Progress {#mark-your-progress}
 
@@ -666,7 +668,7 @@ By now you've probably already seen the white notification bubbles that appear o
 3. Create a `CMakeLists.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
-When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Gtk.Application {#gtk-application}
 In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
@@ -729,8 +731,8 @@ Now that you know how to send basic notifications, let's talk about a couple of 
 ### Icons {#icons}
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
-	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-	notification.set_icon (image.gicon);
+	var icon = new GLib.ThemedIcon ("dialog-warning");
+	notification.set_icon (icon);
 
 That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
 
@@ -746,8 +748,8 @@ Let's make the replace button. This button will replace the current notification
 		var notification = new Notification (_("Hello Again"));
 		notification.set_body (_("This is my second Notification!"));
 
-		var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-		notification.set_icon (image.gicon);
+		var icon = new GLib.ThemedIcon ("dialog-warning");
+		notification.set_icon (icon);
 
 		this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
 	});
@@ -779,5 +781,148 @@ Let's review what all we've learned:
 - We also learned about other notification features like setting an icon and a notification's priority.
 
 As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](https://valadoc.org/gio-2.0/GLib.Notification).
+
+# System Integration {#system-integration}
+
+Applications can show additional information in the dock as well as
+the application menu. This makes the application feel more integrated into the
+system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/pl/docs/human-interface-guidelines#dock-integration)
+for what you should do and what you shouldn't.
+
+For this integration you can use [Unity's Launcher API](https://valadoc.org/unity/Unity.LauncherEntry.html).
+This API is used accross many different distributions and is widely supported by third party applications.
+
+The [Launcher API documentation](https://wiki.ubuntu.com/Unity/LauncherAPI) also provides how the library works internally as well as implementation
+examples for Python and C if you wish to use any other language for your application than Vala.
+
+Current Launcher API support:
+
+| Service          | Badge Counter    | Progress Bar    | Static Quicklist    | Dynamic Quicklist |
+| ---------------- | :--------------: | :-------------: | :-----------------: | :---------------: |
+| Application menu | Yes              | No              | Yes                 | No                |
+| Dock             | Yes              | Yes             | Yes                 | Yes               |
+
+## Setting Up {#setting-up}
+Before writing the code, you must first install the `libunity` library, you can do it by executing
+the following command in your terminal:
+```
+sudo apt install libunity-dev
+```
+
+Now it is time to incorporate the Unity library into your project.
+To your build system add an additional `unity` package to your `vala_precompile` CMake call:
+
+  ```
+  vala_precompile (my_project
+        Application.vala
+        ...
+        PACKAGES
+        unity
+        ...
+  )
+  ```
+
+  and to the `pkg_check_modules` call as well:
+  ```
+  pkg_check_modules (DEPS REQUIRED ... unity)
+  ```
+
+  After that you can clear your build directory and build your project again, there
+  should be no errors when building.
+
+## Using the Launcher API {#using-launcher-api}
+Once you've set up `libunity` in your build system it's time to write some code.
+
+The first thing you'll need to use the API is your application desktop ID.
+This is usually the filename of your application entry that is installed in the `/usr/share/applications`
+directory like: `com.github.username.application.desktop`. Keep in mind that if you're generating the desktop file with a build system, the **desktop ID is the final
+basename of the file generated by your build system** and not a string ending with `.in` or any other type of extension.
+
+You can retrieve a new [Unity.LauncherEntry](https://valadoc.org/unity/Unity.LauncherEntry.html) instance by calling a static `Unity.LauncherEntry.get_for_desktop_id` function:
+```
+var entry = Unity.LauncherEntry.get_for_desktop_id ("my-desktop-id.desktop");
+```
+
+This entry instance allows you to modify your entry so that it shows additional information e.g: on the dock. It is up to you, where in the code you want to retrieve this entry, the function is static so there is no problem accessing it. Usually it's your application or main window class.
+
+Showing a `12` number in the badge is as easy as:
+```vala
+entry.count_visible = true;
+entry.count = 12;
+```
+
+Keep in mind you have to set the `count_visible` property to true, and use an int64 type for the `count` property.
+
+The same goes for showing a progress bar, here we show a progress bar showing 20% progress:
+```vala
+entry.progress_visible = true;
+entry.progress = 0.2f;
+```
+
+As you can see the type of `progress` property is `double` and is a range between `0` and `1`: from 0% to 100%.
+
+## Dynamic Quicklists {#dynamic-quicklists}
+Dynamic quicklists are a way to provide the user with dynamic quick menu entries to access some kind of
+feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the applications menu**, see [Static Quicklists](#static-quicklists).
+
+Here's a simple example of how to make use of dynamic quicklists in Vala:
+```
+// Create a root quicklist
+var quicklist = new Dbusmenu.MenuItem ();
+
+// Create root's children
+var item1 = new Dbusmenu.MenuItem ();
+item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 1");
+item1.item_activated.connect (() => {
+    message ("Item 1 activated");
+});
+
+var item2 = new Dbusmenu.MenuItem ();
+item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 2");
+item1.item_activated.connect (() => {
+    message ("Item 2 activated");
+});
+
+// Add children to the quicklist
+quicklist.child_append (item1);
+quicklist.child_append (item2);
+
+// Finally, tell libunity to show the desired quicklist
+entry.quicklist = quicklist;
+```
+Please see the [Dbusmenu.Menuitem API](https://valadoc.org/dbusmenu-glib-0.4/Dbusmenu.Menuitem.html) for more details and features.
+
+## Static Quicklists {#static-quicklists}
+The main difference between dynamic and static quicklists is that static ones cannot be changed at runtime. Static quicklists do not involve writing any code or using any external dependencies.
+
+Static quicklists are stored within your `.desktop` file. These are so called "actions".
+You can define many actions in your desktop file that will always show as an action in the
+application menu as well as in the dock.
+
+The format is as follows:
+```
+[Desktop Action ActionID]
+Name=The name of the action
+Icon=The icon of the action (optional)
+Exec=The path to application executable and it's command line arguments (optional)
+```
+
+Let's take a look at an example of an action that will open a new window of your application:
+
+```
+[Desktop Entry]
+Name=Application name
+Exec=application-executable
+...
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=application-executable -n
+```
+
+Note that adding `-n` or any other argument will not make your application magically open a new window. It is up to your application to handle and interpret command line arguments. The [GLib.Application API](https://valadoc.org/gio-2.0/GLib.Application.html) provides many examples and an extensive documentation on how to handle these arguments, particularly the [command_line signal](https://valadoc.org/gio-2.0/GLib.Application.command_line.html).
+
+Please take a look at a [freedesktop.org Additional applications actions section](https://standards.freedesktop.org/desktop-entry-spec/latest/ar01s10.html) for a
+detailed description of what keys are supported and what they do.
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
