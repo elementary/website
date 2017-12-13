@@ -167,6 +167,12 @@ Referring to GLib is not necessary. If you want to print something:
 
 Opt for the second one, it's much cleaner.
 
+## GTK events {#gtk-events}
+
+Gtk widgets are intended to respond to click events that can be described
+as "press + release" instead of "press". Use `toggle` and `release` events
+instead of `press`.
+
 ## Columns per line {#columns-per-line}
 
 Ideally, lines should have no more than 80 characters per line, because this

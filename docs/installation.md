@@ -2,7 +2,7 @@
 
 ## Download elementary OS {#download-elementary-os}
 
-If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
+If you haven't already, you will need to <a href="/" target="_blank" rel="noopener">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
@@ -193,5 +193,5 @@ In order to start the installation process, you must boot your computer from the
 
 Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
-<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <script type="text/javascript" src="scripts/docs/installation.js" async></script>

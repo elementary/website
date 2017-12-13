@@ -1,5 +1,5 @@
 {
-    "We're Built on Open Source": "Bazujemy na wolnym oprogramowaniu",
+    "We're Built on Open Source": "Bazujemy na oprogramowaniu o otwartym kodzie źródłowym",
     "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "Platforma elementary OS jest zbudowana na solidnych fundamentach wolnego i otwartoźródłowego oprogramowania.  Bez takich projektów elementary OS by nie istniał.",
     "Security &amp; Privacy": "Bezpieczeństwo i prywatność",
     "By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.": "Dzięki otwartym źródłom elementary OS może korzystać z doskonałego poziomu bezpieczeństwa i prywatności w porównaniu z oprogramowaniem o zamkniętych źródłach. Ponieważ kod źródłowy jest dostępny dla przeprowadzania audytu, każda osoba we wspólnocie - niezależnie od tego, czy jest to badacz bezpieczeństwa, zainteresowany użytkownik, czy też producent OEM udostępniający system operacyjny na swoim sprzęcie - może upewnić się, że oprogramowanie jest bezpieczne oraz nie gromadzi lub nie wycieka informacji osobistych.",
@@ -7,7 +7,7 @@
     "If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.": "Jeśli Twój program mógłby korzystać z systemowego API bądź funkcjonalności, które jeszcze nie są dostępne, możesz pomóc napisać taką funkcjonalność dla systemu. Podobnie, możesz być ciekawy, jak funkcjonalność, albo wzorzec projektowy, został zrealizowany w elementary OS. Zamiast zgadywać, albo implementować po swojemu, możesz po prostu zobaczyć kod źródłowy.",
     "Get Involved": "Zaangażuj się",
     "Applications": "Programy",
-    "elementary OS Applications": "Aplikacje elementary OS",
+    "elementary OS Applications": "Programy elementary OS",
     "Calendar": "Kalendarz",
     "Camera": "Aparat",
     "Files": "Pliki",

@@ -30,7 +30,7 @@
     "Black": "黑色",
     "Fonts": "字体",
     "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "对于网页和打印，我们在标题处使用 Raleway 字体，正文使用 Open Sans 字体。对于代码块，我们使用 Roboto Mono 字体。",
-    "Third Parties &amp; Community": "三方 &amp; 社区",
+    "Third Parties &amp; Community": "非官方社区",
     "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:": "我们鼓励第三方开发者在为 elementary OS 开发产品时使用 elementary 品牌的某些元素来实现产品的一致性：",
     "Voice\/tone": "语音\/音调",
     "However, to avoid user confusion, we do restrict the usage of the elementary name and marks:": "但是，为了避免用户混淆，我们对 elementary 名称和商标的使用做出了限制：",
@@ -53,7 +53,7 @@
     "Remove the packages <code>plymouth-theme-elementary<\/code> and <code>plymouth-theme-elementary-text<\/code>.": "删除 <code>plymouth-theme-elementary<\/code> 和 <code>plymouth-theme-elementary-text<\/code> 软件包。",
     "Merchandise": "商品",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "我们通常不允许自己的品牌（包括名称和品牌标志）被第三方商品使用。",
-    "Assets &amp; More Info": "资产 &amp; 更多信息",
+    "Assets &amp; More Info": "更多信息",
     "Download on GitHub": "在 GitHub 上下载",
     "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>.": "想进一步了解如何使用 elementary 名称、品牌和商标的信息，请发送邮件至 <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>。",
     "Brand &sdot; elementary": "品牌 &sdot; elementary"
