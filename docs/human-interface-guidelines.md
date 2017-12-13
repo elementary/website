@@ -602,6 +602,8 @@ Selection controls present a way for users to select or enable options. There ar
 <span id="checkboxes-usage"/><span id="checkboxes-labeling"/>
 ### Checkboxes {#checkboxes}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/checkboxes.png" alt="Checkboxes" style="max-width: 100px"/>
+
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
 Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox. 
@@ -609,6 +611,8 @@ Make sure that users can toggle the state of the checkbox by clicking on the lab
 Labels associated with checkboxes should usually be nouns or nounal phrases.
 
 ### Comboboxes {#comboboxes}
+
+<img src="/images/docs/human-interface-guidelines/selection-controls/comboboxes.png" alt="Comboboxes" style="max-width: 158px"/>
 
 Use a combobox (also called a dropdown) when:
 
@@ -618,7 +622,7 @@ Use a combobox (also called a dropdown) when:
 <span id="linked-buttons-usage"/><span id="linked-buttons-labeling"/>
 ### Linked Buttons {#linked-buttons}
 
-![Linked Buttons](/images/docs/human-interface-guidelines/buttons/radio.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
 Use linked buttons (also called a mode button) when:
 * all options can be described by an icon or with only one or two words and
@@ -630,6 +634,8 @@ Linked buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 ### Radio Buttons {#radio-buttons}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/radio_buttons.png" alt="Radio Buttons" style="max-width: 102px"/>
+
 Use radio buttons when:
 
 * Users are selecting only a single item from a set and
@@ -638,7 +644,7 @@ Use radio buttons when:
 <span id="switches-usage"/>
 ### Switches {#switches}
 
-![Switches](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
 
 Use a switch when users are toggling certain features or behaviors "on" or "off". 
 

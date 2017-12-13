@@ -98,6 +98,10 @@ ul {
     padding-top: 32px;
 }
 
+.docs img {
+    margin: 1.5em auto;
+}
+
 img.float-left {
     margin-right: 24px;
 }
