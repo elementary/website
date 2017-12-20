@@ -44,7 +44,7 @@
     "press <kbd>Alt</kbd> + <kbd>Tab</kbd>": "ללחוץ על <kbd>Alt</kbd> + <kbd>Tab</kbd>",
     "To see an overview of your open app windows, press <kbd>&#8984;</kbd> + <kbd>W</kbd>.": "",
     "You can customize these shortcuts through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong> → <strong>Windows</strong>.": "ניתן להתאים את קיצורי המקשים האלה דרך <strong><a href=\"/docs/learning-the-basics#system-settings\">הגדרות מערכת</a></strong> ← <strong>מקלדת</strong> ← <strong>קיצורי דרך</strong> ← <strong>חלונות</strong>.",
-    "Hot Corners": "",
+    "Hot Corners": "פינות חמות",
     "You can also configure &quot;hot corners&quot; (shortcuts activated by placing your cursor in the corner of the display) to activate multi-tasking functions like the window overview, workspace overview, and more.": "",
     "You can customize hot corners through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Hot Corners</strong>.": "",
     "Workspaces": "מרחבי עבודה",
