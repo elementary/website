@@ -37,7 +37,7 @@
     "Running the following command in your Terminal:": "Ejecute la orden siguiente en la consola:",
     "Should produce the output:": "La consola debe mostrar:",
     "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "Nota: se asume que ha descargado el archivo .iso en la carpeta «Descargas». De no ser así, especifique la ruta correcta del archivo descargado, como se muestra a continuación",
-    "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "Para crear una unidad de instalación de OS elemental en macOS, necesitará una unidad flash USB que tenga al menos 2 GB de capacidad y una aplicación denominada  &quot;Etcher&quot;.",
+    "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "Para crear una unidad de instalación de OS elemental en macOS, necesitará una unidad flash USB que tenga al menos 2 GB de capacidad y una aplicación llamada &quot;Etcher&quot;.",
     "Download Etcher": "Descargar Etche",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Inserte el soporte USB y seleccione el archivo ISO que recién ha descargado.",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Abra Etcher y seleccione la imagen de elementary OS mediante el botón «Select image» (‘Seleccionar imagen’).",
