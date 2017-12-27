@@ -424,7 +424,7 @@ A Toolbar is useful for providing users with quick access to an app's most used 
 
 ![](/images/docs/human-interface-guidelines/toolbars/toolbar.png)
 
-Toolbar items should be organized with the most significant objects on the left and the least significant on the right, with the AppMenu always on the far right of the Toolbar. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
+Toolbar items should be organized with the most significant objects on the left and the least significant on the right. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
 
 # UI Toolkit Elements {#ui-toolkit-elements}
 
@@ -562,23 +562,6 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
 2. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX StackExchange
 
-## AppMenu {#appmenu}
-
-The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
-
-![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
-
-### Usage {#appmenu-usage}
-
-You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.
-
-When adding items to your AppMenu, consider the following:
-
-* Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.
-* If the app includes a "preferences" window, it should be available from the AppMenu.
-* There should be an item for the "About" dialog which contains links to the project's bug tracker, help, etc.
-* If an AppMenu is displayed, a menu bar should not be, and vice-versa.
-
 ## Search Fields {#search-fields}
 
 Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
@@ -619,6 +602,8 @@ Selection controls present a way for users to select or enable options. There ar
 <span id="checkboxes-usage"/><span id="checkboxes-labeling"/>
 ### Checkboxes {#checkboxes}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/checkboxes.png" alt="Checkboxes" style="max-width: 100px"/>
+
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
 Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox. 
@@ -626,6 +611,8 @@ Make sure that users can toggle the state of the checkbox by clicking on the lab
 Labels associated with checkboxes should usually be nouns or nounal phrases.
 
 ### Comboboxes {#comboboxes}
+
+<img src="/images/docs/human-interface-guidelines/selection-controls/comboboxes.png" alt="Comboboxes" style="max-width: 158px"/>
 
 Use a combobox (also called a dropdown) when:
 
@@ -635,7 +622,7 @@ Use a combobox (also called a dropdown) when:
 <span id="linked-buttons-usage"/><span id="linked-buttons-labeling"/>
 ### Linked Buttons {#linked-buttons}
 
-![Linked Buttons](/images/docs/human-interface-guidelines/buttons/radio.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
 Use linked buttons (also called a mode button) when:
 * all options can be described by an icon or with only one or two words and
@@ -647,6 +634,8 @@ Linked buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 ### Radio Buttons {#radio-buttons}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/radio_buttons.png" alt="Radio Buttons" style="max-width: 102px"/>
+
 Use radio buttons when:
 
 * Users are selecting only a single item from a set and
@@ -655,7 +644,7 @@ Use radio buttons when:
 <span id="switches-usage"/>
 ### Switches {#switches}
 
-![Switches](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
 
 Use a switch when users are toggling certain features or behaviors "on" or "off". 
 
