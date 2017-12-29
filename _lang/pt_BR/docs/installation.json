@@ -17,7 +17,7 @@
     "Creating an Install Drive": "Criando um Drive de Instalação",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Você precisará de um pendrive USB com pelo menos 2 GB de espaço livre e de um programa chamado Rufus.",
     "Download Rufus": "Baixe Rufus",
-    "Rufus - select ISO": "Rufus - selecione ISO",
+    "Rufus - select ISO": "Rufus - selecione a ISO",
     "Open Rufus": "Abra Rufus",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "Insira o seu drive USB e selecione-o na lista de &quot;Dispositivos&quot;",
     "Select &quot;ISO Image&quot; next to &quot;Create a bootable disk using...&quot;": "Selecione a &quot;Imagem ISO&quot; em seguida para &quot;Criar um disco bootável usando...&quot;",
