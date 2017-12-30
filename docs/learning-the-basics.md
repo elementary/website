@@ -8,13 +8,13 @@ The elementary OS desktop is very simple and easy to learn. It consists of two e
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.
 
-![The Panel](../images/docs/learning-the-basics/panel.png)
+![The Panel](../_images/docs/learning-the-basics/panel.png)
 
 #### Applications {#applications}
 
 On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
 
-![Slingshot](../images/docs/learning-the-basics/slingshot.png)
+![Slingshot](../_images/docs/learning-the-basics/slingshot.png)
 
 You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:
 
@@ -39,7 +39,7 @@ A middle click or three finger tap on an indicator will present you with the fol
 ### The Dock {#the-dock}
 At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.
 
-![The Dock](../images/docs/learning-the-basics/dock.png)
+![The Dock](../_images/docs/learning-the-basics/dock.png)
 
 The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from **Applications** on the panel or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
 
