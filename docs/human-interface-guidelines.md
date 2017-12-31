@@ -568,7 +568,7 @@ Apps that support the searching or filtering of content should include a search 
 
 ![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
-### Distinguish Between Search and Find
+### Distinguish Between Search and Find {#distinguish-search-find}
 
 Search is for filtering the contents of a library, i.e. Music or Videos, to the matching items. Search is typically initiated when typing anywhere in a library view.
 
@@ -689,7 +689,7 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="Terminal icon">
 </div>
 
-### Metaphors
+### Metaphors {#metaphors}
 
 If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
@@ -702,7 +702,7 @@ If you're creating an icon for a hardware device or a file type (such as those f
 	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg" alt="Computer icon">
 </div>
 
-### Action Icons
+### Action Icons {#action-icons}
 
 Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
@@ -1017,7 +1017,7 @@ Each symbolic icon is a reduced form of its full-color counter part. This minima
 
 <img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.svg" alt="Symbolic vs. colored icon">
 
-### Colored vs. Symbolic Icons
+### Colored vs. Symbolic Icons {#colored-vs-symbolic}
 
 The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
 
@@ -1046,7 +1046,7 @@ There are three aspects to note when designing an elementary OS icon:
 
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
 
-### Common Measurements
+### Common Measurements {#measurements}
 
 If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
 
@@ -1060,7 +1060,7 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 | 64x64         | 4             | 56       | 32               |
 | 128x128       | 9             | 104      | 64               |
 
-### Exceptions
+### Exceptions {#icon-exceptions}
 
 However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
@@ -1083,13 +1083,13 @@ To further improve contrast, strokes are also semi-transparent. This ensures tha
 
 If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary OS icons emulate in their design to lend them a degree of realism.
 
-### Edge Highlight
+### Edge Highlight {#edge-highlight}
 
 To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
 <img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary OS Music icon">
 
-### Drop Shadow
+### Drop Shadow {#drop-shadow}
 
 To draw the shadow, you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpendicular to the bottom margin of the icon. The gradient has three stops, the first and last of which have zero opacity. Then this entire shape is set to **60% opacity**.
 
@@ -1099,7 +1099,7 @@ Next create two smaller rectangles to "bookend" the larger. Fill each with a gra
 
 ![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
 
-### Pictogram Shadow
+### Pictogram Shadow {#pictogram-shadow}
 
 If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
 
@@ -1107,7 +1107,7 @@ If your icon has a pictogram, such as the play triangle in the icon below, you c
 
 To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
 
-### Icon Materials
+### Icon Materials {#materials}
 
 You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
 
