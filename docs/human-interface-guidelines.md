@@ -761,7 +761,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
+Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and grays for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
@@ -772,7 +772,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
+Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
 <div class="color-palette-section">
   <div class="color-palette-box">
