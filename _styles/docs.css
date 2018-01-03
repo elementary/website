@@ -326,6 +326,7 @@ nav {
 table {
     background-color: transparent;
     border: 1px solid #ddd;
+    border-collapse: collapse;
     border-spacing: 0;
     clear: both;
     font-family: 'Roboto Mono', monospace;
@@ -335,7 +336,7 @@ table {
     width: 100%;
 }
 
-table th {
+th {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: left;
@@ -343,40 +344,14 @@ table th {
 
 th,
 td {
-    margin-left: 1em;
-    padding-right: 1em;
-}
-
-th:nth-child(1) th:nth-child(1) {
-    text-align: left;
-}
-
-table > tbody > tr > td:nth-child(1) {
-    width: 224px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: top;
 }
 
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
     background-color: rgba(0, 0, 0, 0.01);
-}
-
-table > thead > tr > th,
-table > tbody > tr > th,
-table > tfoot > tr > th,
-table > thead > tr > td,
-table > tbody > tr > td,
-table > tfoot > tr > td {
-    padding: 8px;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-}
-
-table > thead > tr > th {
-    border-top: none;
-}
-
-table > tr {
-    border-right: 1px solid #ddd;
 }
 
 /****************
