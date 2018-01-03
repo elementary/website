@@ -330,6 +330,7 @@ table {
     clear: both;
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
+    margin-bottom: 2em;
     text-align: left;
     width: 100%;
 }
