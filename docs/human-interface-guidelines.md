@@ -606,7 +606,7 @@ Selection controls present a way for users to select or enable options. There ar
 
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
-Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox. 
+Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox.
 
 Labels associated with checkboxes should usually be nouns or nounal phrases.
 
@@ -646,7 +646,7 @@ Use radio buttons when:
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
 
-Use a switch when users are toggling certain features or behaviors "on" or "off". 
+Use a switch when users are toggling certain features or behaviors "on" or "off".
 
 Don't use switches to select related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
@@ -1118,9 +1118,24 @@ You are free to add gloss (extra highlights) to your icon but this is only a goo
 Below are some "do and don't" examples to consider when creating icons for your app.
 
 * Your icon should not be overly complicated. Keep in mind that since there are smaller sizes, the elements that make up your icon should be distinguishable when at those sizes.
+
 * Your icon should make use of transparent elements, and should not simply be full-frame images. Where you can, distinguish your icon with subtle yet appealing visuals.
+
 * Don't make a thin icon. Your icon's weight should be comparable to that of other icons. An overly thin icon won't stand out well on many backgrounds.
+
 * If you would like to give your icon a tilted perspective, it should tilt backward (not forward).
+
+* Avoid simply slapping an element onto a base shape; use a unique outline to make your icon more distinct.
+
+| Bad (unnecessary base shape) | Better (unique shape) |
+| :--------------------------: | :-------------------: |
+| <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
+
+* Even if you do use a standard shape like a square, rectangle, or circle, take care to properly add light and shadow to inset or extrude foreground elements.
+
+| Bad (flat foreground) | Better (inset foreground) | Better (extruded foreground) |
+| :--------: | :------------: | :---------------: |
+| <img title="Flat foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/flat-foreground.svg" alt="Flat foreground"> | <img title="Inset foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/inset-foreground.svg" alt="Inset foreground"> | <img title="Extruded foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/extruded-foreground.svg" alt="Extruded foreground"> |
 
 # Text {#text}
 
