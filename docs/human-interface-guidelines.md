@@ -680,7 +680,7 @@ Iconography is a key part of elementary OS. Icons make up the majority of the UI
 
 Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
-<div style="width:100%;display:inline-block;text-align:center;">
+<div style="width:100%;display:inline-block;text-align:center;margin-bottom:2em;">
 	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg" alt="Warning dialog icon">
 	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg" alt="Chat icon">
 	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg" alt="Photos icon">
@@ -688,6 +688,12 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img title="Online Accounts icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/preferences-desktop-online-accounts.svg" alt="Online accounts icon">
 	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="Terminal icon">
 </div>
+
+For example, if your icon's metaphor lends itself well to a unique shape, use that shape for the overall icon shape instead of placing that shape onto a generic rectangle, square, or circle.
+
+| Bad (unnecessary base shape) | Better (unique shape) |
+| :--------------------------: | :-------------------: |
+| <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
 
 ### Metaphors {#metaphors}
 
@@ -770,7 +776,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
+Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
 <div class="color-palette-section">
   <div class="color-palette-box">
@@ -1101,11 +1107,17 @@ Next create two smaller rectangles to "bookend" the larger. Fill each with a gra
 
 ### Pictogram Shadow {#pictogram-shadow}
 
-If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
+If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make appear extruded from the background of the icon.
 
 ![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
 
 To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
+
+Alternatively, you can also use a highlight and shadow to make the pictogram appear inset into the background.
+
+| Bad (flat pictogram) | Better (extruded pictogram) | Better (inset pictogram) |
+| :--------: | :------------: | :---------------: |
+| <img title="Flat foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/flat-foreground.svg" alt="Flat foreground"> | <img title="Extruded foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/extruded-foreground.svg" alt="Extruded foreground"> | <img title="Inset foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/inset-foreground.svg" alt="Inset foreground"> |
 
 ### Icon Materials {#materials}
 
@@ -1127,15 +1139,7 @@ Below are some "do and don't" examples to consider when creating icons for your 
 
 * Avoid simply slapping an element onto a base shape; use a unique outline to make your icon more distinct.
 
-| Bad (unnecessary base shape) | Better (unique shape) |
-| :--------------------------: | :-------------------: |
-| <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
-
 * Take care to properly add light and shadow to inset or extrude foreground elements.
-
-| Bad (flat foreground) | Better (inset foreground) | Better (extruded foreground) |
-| :--------: | :------------: | :---------------: |
-| <img title="Flat foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/flat-foreground.svg" alt="Flat foreground"> | <img title="Inset foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/inset-foreground.svg" alt="Inset foreground"> | <img title="Extruded foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/extruded-foreground.svg" alt="Extruded foreground"> |
 
 # Text {#text}
 
