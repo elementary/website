@@ -1131,7 +1131,7 @@ Below are some "do and don't" examples to consider when creating icons for your 
 | :--------------------------: | :-------------------: |
 | <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
 
-* Even if you do use a standard shape like a square, rectangle, or circle, take care to properly add light and shadow to inset or extrude foreground elements.
+* Take care to properly add light and shadow to inset or extrude foreground elements.
 
 | Bad (flat foreground) | Better (inset foreground) | Better (extruded foreground) |
 | :--------: | :------------: | :---------------: |
