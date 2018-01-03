@@ -118,7 +118,7 @@ When a user first launches an app, they should be able to get down to business a
 
 ### Speed of Launch {#speed-of-launch}
 
-Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (ie. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
+Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (e.g. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
 
 ### Welcoming the User {#welcoming-the-user}
 
@@ -185,7 +185,7 @@ If it makes sense for an app to complete background tasks after the window is cl
 
 ### Closing the App Window {#closing-the-app-window}
 
-It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app backend should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
+It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app back-end should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
 
 ### Re-Opening the App Window {#re-opening-the-app-window}
 
@@ -220,7 +220,7 @@ _**Title** is a(n) **GenericName** that lets you **Comment**._
 
 ### Title {#title}
 
-You should not include descriptive words in your title. For example, Dexter is called "Dexter," not "Dexter Address Book." Midori is just "Midori," not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
+You should not include descriptive words in your title. For example, an address book app might be called "Dexter," not "Dexter Address Book." A web browser might be called "Midori," but not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
 
 ### GenericName {#genericname}
 
@@ -307,14 +307,14 @@ Integrate your app with Pantheon's dock communicate to communicate its status to
 Make progress bars unambiguous by referring to a single, specific task. For example, use progress bars to indicate the status of lengthy processes like file transfers and encoding. Do not use progress bars to compound the progress of different types of action.
 
 * **Good Example**: Installation progress in AppCenter
-* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise
+* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in a music app
 
 ### Badges {#badges}
 
 A badge shows a count of actionable items managed by your app. Its purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.
 
-* **Good Example**: Unread messages in Mail
-* **Bad Example**: Total number of Photos in Shotwell
+* **Good Example**: Unread messages in a mail app
+* **Bad Example**: Total number of photos in a photo library
 
 ## System Indicators {#system-indicators}
 
@@ -349,11 +349,13 @@ Windows form the foundation of your app. They provide a canvas with basic, built
 
 When dealing with window titles, consider that their main use is in distinguishing one window from another. A good window title will provide a description that helps a user make a selection. Keep that in mind as you consider the following:
 
-* A view window should display the name of the content being viewed. For example, Midori's window title reflects the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
+* A view window should display the name of the content being viewed. For example, a web browser's window title should reflect the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
 * A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
 * Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
 * Don’t display pathnames in window titles—only the current destination. For instance, it is hard to distinguish between two similar paths when they are displayed in full. If you only show the destination, the distinction is clear.
+
+Even if your app uses a headerbar, be sure to set the window's title; it can be shown in the window switcher and elsewhere in the OS.
 
 ## Dialogs {#dialogs}
 <div class="dialog">
@@ -670,7 +672,7 @@ A Static Notebook is a small set of unchanging tabs, commonly seen in preference
 
 ![](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
 
-A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
+A Dynamic Notebook is a way for an app to provide user-manageable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed, and a "new tab" button is at the start of the notebook widget.
 
 # Iconography {#iconography}
 
