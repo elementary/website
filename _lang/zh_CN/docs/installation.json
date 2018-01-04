@@ -11,7 +11,7 @@
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "请务必将重要数据备份到外部存储，比如云服务或者外接硬盘。安装新系统时，可能会覆盖掉现有的数据。",
     "Choose your current Operating System": "选择您当前的操作系统",
     "Select the operating system you are currently using to view tailored installation instructions.": "选择您目前用于浏览安装指南的操作系统。",
-    "Windows": "",
+    "Windows": "窗口",
     "macOS": "",
     "Ubuntu": "",
     "Creating an Install Drive": "创建安装介质",
