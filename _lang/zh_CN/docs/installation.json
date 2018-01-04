@@ -1,7 +1,7 @@
 {
     "Installation": "安装",
     "Download elementary OS": "下载 elementary OS",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "若还没有，您需要<a href=\"/\" target=\"_blank\" rel=\"noopener\">从我们的首页下载 elementary OS</a>。您需要按照下面所给的指示，将下载回来的 ISO 复制到 USB 闪存盘上。",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "若还没有，您需要<a href=\"/\" target=\"_blank\" rel=\"noopener\">从我们的首页下载 elementary OS</a>。您需要按照下方的指南，将下载好的 ISO 镜像写入到 USB 闪存盘上。",
     "Recommended System Specifications": "推荐系统配置：",
     "Intel i3 or comparable dual-core 64-bit processor": "英特尔i3或类似的双核64位处理器",
     "1 GB of system memory (RAM)": "1 GB 系统内存(RAM)",
@@ -24,7 +24,7 @@
     "Click": "点击",
     "the disk icon": "磁盘图标",
     "to choose the ISO that you downloaded previously.": "来选择您之前下载的 ISO 文件。",
-    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "我们已为 elementary OS 镜像生成校验码（或哈希校验值），以便您验证下载的文件。它能保证您下载的安装镜像是完整的，没有任何的损坏。请点击状态栏中的 <code>#</code> 按钮，并确认“SHA256”旁边的文本匹配下面的哈希值：",
+    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "我们已为 elementary OS 镜像生成校验码（或哈希校验值），以便您验证下载的文件。文件验证能保证您下载的安装镜像是完整的、没有任何损坏。请点击状态栏中的 <code>#</code> 按钮，并确认“SHA256”旁的文本匹配以下哈希值：",
     "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "",
     "Booting from the Install Drive": "从安装介质启动",
     "In order to start the installation process, you must boot your computer from the install drive.": "为了启动安装过程，您必须从安装介质重启您的电脑。",
