@@ -50,7 +50,7 @@
     "Not readable warning": "不可读警告",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "听到蜂鸣声后，请按住<kbd>Option</kbd>键。然后选择合适的安装介质。注意它可能会被显示成\"Windows\"，不过这是正常的，请不要担心。",
     "Boot Errors": "引导错误",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "如果您的 Mac 在启动菜单中没有显示你制作的 elementary OS USB 启动盘，您也许需要改为制作 elementary OS 安装 DVD。若要制作安装 DVD，请插入空白 DVD，接着在 Finder 中用右键点击 ISO 文件，并选取“将 elementaryos-0.4.1-stable.20170814.iso 烧录到光盘”。完成后，请尝试再从安装 DVD 开机。",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "如果您的 Mac 启动时无法识别您制作的 USB 安装盘，也许您需要改为从 DVD 光盘安装。若要制作安装 DVD 安装光盘，请在光驱中插入空白 DVD 光盘，然后在 Finder 中右键点击 ISO 文件，选择“将 elementaryos-0.4.1-stable.20170814.iso 烧录到光盘”。烧录完成后，请尝试从 DVD 光盘启动。",
     "Running the following command in your terminal:": "在您的终端中输入如下指令：",
     "should produce the output:": "输出结果应当如下：",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "你需要一个至少 2GB k空间的 U 盘和一个叫做 UNetbootin 的程序。",
