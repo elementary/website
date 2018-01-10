@@ -126,6 +126,9 @@ Now what you've been waiting for! We're going to create a window that contains a
 
             protected override void activate () {
                 var main_window = new Gtk.ApplicationWindow (this);
+                main_window.default_height = 300;
+                main_window.default_width = 300;
+                main_window.title = "Hello World";
                 main_window.show_all ();
             }
 
@@ -135,6 +138,8 @@ Now what you've been waiting for! We're going to create a window that contains a
             }
         }
         
+    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
+        
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
         ```bash
@@ -142,19 +147,9 @@ Now what you've been waiting for! We're going to create a window that contains a
         ./gtk-hello
         ```
 
-    Do you see a new, empty window called "gtk-helo"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
+    Do you see a new, empty window called "Hello World"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
-3. Now, that we've created a new `Gtk.Application` with a `Gtk.ApplicationWindow` called `main_window`, let's declare a couple properties of this window. You'll notice that most of these property names are pretty straightforward. Try to guess what each one does and we'll explain in a second. Add the following properties to the `main_window` you previously created inside the `activate ()` function:
-
-        var main_window = new Gtk.ApplicationWindow (this);
-        main_window.title = "Hello World!";
-        main_window.set_default_size (350, 70);
-
-        main_window.show_all ();
-
-    The first line creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Compile and run your application again and see how it's changed from the first time.
-
-4. Now that we've defined a nice window, let's put a button inside of it. Add the following to your application at the beginning of the `activate ()` function:
+3. Now that we've defined a nice window, let's put a button inside of it. Add the following to your application at the beginning of the `activate ()` function:
 
         var button_hello = new Gtk.Button.with_label ("Click me!");
         button_hello.margin = 12;
@@ -169,7 +164,7 @@ Now what you've been waiting for! We're going to create a window that contains a
 
     Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we add a margin to the button so that it doesn't bump up against the sides of the window. We've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive after it's clicked; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.ApplicationWindow` and declare that we want to show all of the window's contents.
     
-    Compile and run your application one last time and test it out. Nice job! You've just written your first Gtk+ app!
+    Compile and run your application one more time and test it out. Nice job! You've just written your first Gtk+ app!
 
 ## Pushing to GitHub {#pushing-to-github}
 
