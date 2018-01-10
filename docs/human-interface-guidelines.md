@@ -118,7 +118,7 @@ When a user first launches an app, they should be able to get down to business a
 
 ### Speed of Launch {#speed-of-launch}
 
-Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (ie. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
+Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (e.g. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
 
 ### Welcoming the User {#welcoming-the-user}
 
@@ -185,7 +185,7 @@ If it makes sense for an app to complete background tasks after the window is cl
 
 ### Closing the App Window {#closing-the-app-window}
 
-It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app backend should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
+It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app back-end should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
 
 ### Re-Opening the App Window {#re-opening-the-app-window}
 
@@ -220,7 +220,7 @@ _**Title** is a(n) **GenericName** that lets you **Comment**._
 
 ### Title {#title}
 
-You should not include descriptive words in your title. For example, Dexter is called "Dexter," not "Dexter Address Book." Midori is just "Midori," not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
+You should not include descriptive words in your title. For example, an address book app might be called "Dexter," not "Dexter Address Book." A web browser might be called "Midori," but not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
 
 ### GenericName {#genericname}
 
@@ -307,14 +307,14 @@ Integrate your app with Pantheon's dock communicate to communicate its status to
 Make progress bars unambiguous by referring to a single, specific task. For example, use progress bars to indicate the status of lengthy processes like file transfers and encoding. Do not use progress bars to compound the progress of different types of action.
 
 * **Good Example**: Installation progress in AppCenter
-* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise
+* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in a music app
 
 ### Badges {#badges}
 
 A badge shows a count of actionable items managed by your app. Its purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.
 
-* **Good Example**: Unread messages in Mail
-* **Bad Example**: Total number of Photos in Shotwell
+* **Good Example**: Unread messages in a mail app
+* **Bad Example**: Total number of photos in a photo library
 
 ## System Indicators {#system-indicators}
 
@@ -349,11 +349,13 @@ Windows form the foundation of your app. They provide a canvas with basic, built
 
 When dealing with window titles, consider that their main use is in distinguishing one window from another. A good window title will provide a description that helps a user make a selection. Keep that in mind as you consider the following:
 
-* A view window should display the name of the content being viewed. For example, Midori's window title reflects the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
+* A view window should display the name of the content being viewed. For example, a web browser's window title should reflect the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
 * A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
 * Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
 * Don’t display pathnames in window titles—only the current destination. For instance, it is hard to distinguish between two similar paths when they are displayed in full. If you only show the destination, the distinction is clear.
+
+Even if your app uses a headerbar, be sure to set the window's title; it can be shown in the window switcher and elsewhere in the OS.
 
 ## Dialogs {#dialogs}
 <div class="dialog">
@@ -568,7 +570,7 @@ Apps that support the searching or filtering of content should include a search 
 
 ![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
-### Distinguish Between Search and Find
+### Distinguish Between Search and Find {#distinguish-search-find}
 
 Search is for filtering the contents of a library, i.e. Music or Videos, to the matching items. Search is typically initiated when typing anywhere in a library view.
 
@@ -606,7 +608,7 @@ Selection controls present a way for users to select or enable options. There ar
 
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
-Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox. 
+Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox.
 
 Labels associated with checkboxes should usually be nouns or nounal phrases.
 
@@ -646,7 +648,7 @@ Use radio buttons when:
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
 
-Use a switch when users are toggling certain features or behaviors "on" or "off". 
+Use a switch when users are toggling certain features or behaviors "on" or "off".
 
 Don't use switches to select related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
@@ -670,7 +672,7 @@ A Static Notebook is a small set of unchanging tabs, commonly seen in preference
 
 ![](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
 
-A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
+A Dynamic Notebook is a way for an app to provide user-manageable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed, and a "new tab" button is at the start of the notebook widget.
 
 # Iconography {#iconography}
 
@@ -680,7 +682,7 @@ Iconography is a key part of elementary OS. Icons make up the majority of the UI
 
 Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
-<div style="width:100%;display:inline-block;text-align:center;">
+<div style="width:100%;display:inline-block;text-align:center;margin-bottom:2em;">
 	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg" alt="Warning dialog icon">
 	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg" alt="Chat icon">
 	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg" alt="Photos icon">
@@ -689,7 +691,13 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="Terminal icon">
 </div>
 
-### Metaphors
+For example, if your icon's metaphor lends itself well to a unique shape, use that shape for the overall icon shape instead of placing that shape onto a generic rectangle, square, or circle.
+
+| Bad (unnecessary base shape) | Better (unique shape) |
+| :--------------------------: | :-------------------: |
+| <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
+
+### Metaphors {#metaphors}
 
 If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
@@ -702,7 +710,7 @@ If you're creating an icon for a hardware device or a file type (such as those f
 	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg" alt="Computer icon">
 </div>
 
-### Action Icons
+### Action Icons {#action-icons}
 
 Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
@@ -759,7 +767,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
+Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and grays for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
@@ -770,7 +778,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
+Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
 <div class="color-palette-section">
   <div class="color-palette-box">
@@ -1017,7 +1025,7 @@ Each symbolic icon is a reduced form of its full-color counter part. This minima
 
 <img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.svg" alt="Symbolic vs. colored icon">
 
-### Colored vs. Symbolic Icons
+### Colored vs. Symbolic Icons {#colored-vs-symbolic}
 
 The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
 
@@ -1046,7 +1054,7 @@ There are three aspects to note when designing an elementary OS icon:
 
 Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
 
-### Common Measurements
+### Common Measurements {#measurements}
 
 If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
 
@@ -1060,7 +1068,7 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 | 64x64         | 4             | 56       | 32               |
 | 128x128       | 9             | 104      | 64               |
 
-### Exceptions
+### Exceptions {#icon-exceptions}
 
 However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
 
@@ -1083,44 +1091,57 @@ To further improve contrast, strokes are also semi-transparent. This ensures tha
 
 If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary OS icons emulate in their design to lend them a degree of realism.
 
-### Edge Highlight
+### Edge Highlight {#edge-highlight}
 
 To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
 <img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary OS Music icon">
 
-### Drop Shadow
+### Drop Shadow {#drop-shadow}
 
 To draw the shadow, you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpendicular to the bottom margin of the icon. The gradient has three stops, the first and last of which have zero opacity. Then this entire shape is set to **60% opacity**.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
+![Shadow example 1](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
 
 Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first, but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge—see below for an example. Both these rectangles are also set to **60% opacity**.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
+![Shadow example 2](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
 
-### Pictogram Shadow
+### Pictogram Shadow {#pictogram-shadow}
 
-If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
+If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make appear extruded from the background of the icon.
 
-![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
+![Video player icon](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
 
 To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
 
-### Icon Materials
+Alternatively, you can also use a highlight and shadow to make the pictogram appear inset into the background.
+
+| Bad (flat pictogram) | Better (extruded pictogram) | Better (inset pictogram) |
+| :--------: | :------------: | :---------------: |
+| <img title="Flat foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/flat-foreground.svg" alt="Flat foreground"> | <img title="Extruded foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/extruded-foreground.svg" alt="Extruded foreground"> | <img title="Inset foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/inset-foreground.svg" alt="Inset foreground"> |
+
+### Icon Materials {#materials}
 
 You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
 
-![](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
+![Glossy vs. non-glossy](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
 
 ## Dos and Don'ts {#dos-donts}
 
 Below are some "do and don't" examples to consider when creating icons for your app.
 
 * Your icon should not be overly complicated. Keep in mind that since there are smaller sizes, the elements that make up your icon should be distinguishable when at those sizes.
+
 * Your icon should make use of transparent elements, and should not simply be full-frame images. Where you can, distinguish your icon with subtle yet appealing visuals.
+
 * Don't make a thin icon. Your icon's weight should be comparable to that of other icons. An overly thin icon won't stand out well on many backgrounds.
+
 * If you would like to give your icon a tilted perspective, it should tilt backward (not forward).
+
+* Avoid simply slapping an element onto a base shape; use a unique outline to make your icon more distinct.
+
+* Take care to properly add light and shadow to inset or extrude foreground elements.
 
 # Text {#text}
 
