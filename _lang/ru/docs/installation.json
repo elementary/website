@@ -17,7 +17,7 @@
     "Creating an Install Drive": "Создание установочного носителя",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Вам понадобится USB-носитель минимум с 2 ГБ свободного места, а также программа под названием Rufus.",
     "Download Rufus": "Загрузить Rufus",
-    "Rufus - select ISO": "Rufus - выбор ISO",
+    "Rufus - select ISO": "Rufus - выберите ISO-файл",
     "Open Rufus": "Откройте Rufus",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "Вставьте USB-накопитель и выберите его в списке «Устройство»",
     "Select &quot;ISO Image&quot; next to &quot;Create a bootable disk using...&quot;": "Выберите «ISO-образ» рядом с пунктом «Создать загрузочный диск»",
