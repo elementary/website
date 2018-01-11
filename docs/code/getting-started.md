@@ -142,10 +142,10 @@ Now what you've been waiting for! We're going to create a window that contains a
         
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
-        ```bash
-        valac --pkg gtk+-3.0 gtk-hello.vala
-        ./gtk-hello
-        ```
+    ```bash
+    valac --pkg gtk+-3.0 gtk-hello.vala
+    ./gtk-hello
+    ```
 
     Do you see a new, empty window called "Hello World"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
