@@ -309,18 +309,6 @@ You can also specify a suggested price in whole USD. Remember though that AppCen
 
 Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need two new files in our project's root folder: AUTHORS and COPYING.
 
-### Authors {#authors}
-
-The AUTHORS file is pretty straightforward. This file contains your name and email address along with the name and email address of anyone who helped you make your app. It typically looks like this:
-<!--email_off-->
-
-        Your Name <you@emailaddress.com>
-        Your Friend <friend@emailaddress.com>
-
-<!--/email_off-->
-
-For more information about the AUTHORS file and its importance, see the [GNU maintainer documentation](https://www.gnu.org/prep/maintain/html_node/Recording-Contributors.html).
-
 ### Copying {#copyright}
 
 The COPYING file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
