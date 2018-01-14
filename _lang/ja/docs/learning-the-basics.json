@@ -63,7 +63,7 @@
     "Installing Apps": "アプリのインストール",
     "elementary OS comes bundled with <strong>AppCenter</strong>, an app store for free apps. Installing a new app from AppCenter is easy:": "elementary OS には <strong>AppCenter</strong> というフリーのアプリのためのアプリストアが付属しています。AppCenter から新たにアプリをインストールするのは簡単です。",
     "Open the <strong>AppCenter</strong> app.": "<strong>AppCenter</strong> アプリを開きます。",
-    "Search in the top-right, or browse.": "",
+    "Search in the top-right, or browse.": "右上から検索するか、アプリを表示します。",
     "Click <strong>Install</strong> next to the app you want to install.": "インストールしたいアプリの隣にある<strong>インストール</strong>をクリックします。",
     "You may be asked for your password prior to installing an app.": "アプリのインストールに先立って、パスワードを尋ねられることがあります。",
     "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki.</em>": "<em>注意：AppCenter で利用可能ではないソフトウェアもあります。一般的なインターネットからのソフトウェアのダウンロードは推奨しませんが、Ubuntu 16.04 LTS と互換性があるアプリは elementary OS Loki で動作するはずです。</em>",
