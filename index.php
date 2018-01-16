@@ -294,8 +294,8 @@
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
-                                <div class="button active" data-l10n-off>1</div>
-                                <div class="button" data-l10n-off>2</div>
+														<div class="switcher-checked" data-l10n-off><?php include('images/bullet.svg'); ?></div>
+                                <div class="switcher" data-l10n-off><?php include('images/bullet.svg'); ?></div>
                             </div>
                         </div>
                         <div id="slingshot-categories" class="next view">
