@@ -7,7 +7,7 @@
 
 // Here is an array of events, holding an array with start and end dates.
 $event_expires = array(
-    'indiegogo appcenter 2/17' => [new DateTime('2/8/17'), new DateTime('3/10/17')]
+    'juno 0.5.0 release' => [new DateTime('1/1/18'), new DateTime('1/1/21')]
 );
 
 /**
