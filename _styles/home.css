@@ -548,7 +548,8 @@ input:focus + .focus-reveal {
     width: 100%;
 }
 
-#slingshot-pager .switcher-checked, #slingshot-pager .switcher {
+#slingshot-pager .switcher-checked,
+#slingshot-pager .switcher {
     margin: 10px;
     opacity: 0.4;
 }
