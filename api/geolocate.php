@@ -1,6 +1,6 @@
 <?php
 
-require_once 'classify.functions.php';
+require_once __DIR__.'/../_backend/classify.functions.php';
 
 if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
     $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
@@ -22,3 +22,16 @@ if ( is_array($region) ) {
 
 date_default_timezone_set('UTC');
 $download_link = '//'.$region.'.dl.elementary.io/download/'.base64_encode(time()).'/';
+
+$shipping = getCurrentLocation($ip);
+
+$result = array(
+    'ip' => $ip,
+    'download' => array(
+        'region' => $region,
+        'download_link' => $download_link,
+    ),
+    'shipping' => $shipping,
+);
+
+echo json_encode($result, JSON_PRETTY_PRINT);
