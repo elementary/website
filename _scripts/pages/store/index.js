@@ -62,12 +62,15 @@ Promise.all([jQuery, modal]).then(([$]) => {
          */
         var updateShippingEstimate = function ($f, p, v) {
             var $m = $f.closest('.modal')
-			// GET /api/gelocate
-			// with the parameters "shipping" and "item" (printful variant id)
-            $.getJSON('/api/gelocate?shipping&item=' + v['id'], function( data ) {
-                console.log(data)
+            // GET /api/gelocate
+            // with the parameters "shipping" and "item" (printful variant id)
+            $.getJSON('/api/geolocate?shipping&item=' + v['printful_id'], function( data ) {
                 // Update price information
-                $m.find('.modal__shipping').text('Shipping from $' + parseFloat(data['shipping']['estimates']['cost']).toFixed(2))
+                if ( typeof data['shipping']['estimates'][0]['cost'] != 'undefined' && data['shipping']['estimates'][0]['cost']) {
+                    $m.find('.modal__shipping').text('Shipping from $' + data['shipping']['estimates'][0]['cost'])
+                } else {
+                    $m.find('.modal__shipping').text('')
+                }
             });
         }
 
@@ -187,7 +190,6 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 if (size != null && variant['size'] !== size) continue
                 if (color != null && variant['color'] !== color) continue
 
-				console.log(variant)
                 updateVariant($f, p, variant)
                 updateShippingEstimate($f, p, variant)
 
