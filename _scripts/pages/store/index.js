@@ -64,14 +64,14 @@ Promise.all([jQuery, modal]).then(([$]) => {
             var $m = $f.closest('.modal')
             // GET /api/gelocate
             // with the parameters "shipping" and "item" (printful variant id)
-            $.getJSON('/api/geolocate?shipping&item=' + v['printful_id'], function( data ) {
+            $.getJSON('/api/geolocate?shipping&item=' + v['printful_id'], function (data) {
                 // Update price information
-                if ( typeof data['shipping']['estimates'][0]['cost'] != 'undefined' && data['shipping']['estimates'][0]['cost']) {
+                if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
                     $m.find('.modal__shipping').text('Shipping from $' + data['shipping']['estimates'][0]['cost'])
                 } else {
                     $m.find('.modal__shipping').text('')
                 }
-            });
+            })
         }
 
         /**
