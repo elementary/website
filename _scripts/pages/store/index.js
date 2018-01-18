@@ -62,13 +62,12 @@ Promise.all([jQuery, modal]).then(([$]) => {
          */
         var updateShippingEstimate = function ($f, p, v) {
             var $m = $f.closest('.modal')
-			console.log(v)
-
+			// GET /api/gelocate
+			// with the parameters "shipping" and "item" (printful variant id)
             $.getJSON('/api/gelocate?shipping&item=' + v['id'], function( data ) {
                 console.log(data)
-
                 // Update price information
-                $m.find('.modal__shipping').text('$' + parseFloat(v['price']).toFixed(2))
+                $m.find('.modal__shipping').text('Shipping from $' + parseFloat(data['shipping']['estimates']['cost']).toFixed(2))
             });
         }
 
