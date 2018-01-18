@@ -100,6 +100,7 @@
             <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
                 <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
+                <p class="modal__shipping" data-l10n-off="1"></p>
                 <p><?php echo $product['description'] ?></p>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">

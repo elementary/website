@@ -51,6 +51,28 @@ Promise.all([jQuery, modal]).then(([$]) => {
         })
 
         /**
+         * updateShippingEstimate
+         * Fetches a psudeo shipping estimate
+         *
+         * @param {Object} $f - the jQuery form to update
+         * @param {Object} p - the product object
+         * @param {Object} v - the variant object
+         *
+         * @return {Void}
+         */
+        var updateShippingEstimate = function ($f, p, v) {
+            var $m = $f.closest('.modal')
+			console.log(v)
+
+            $.getJSON('/api/gelocate?shipping&item=' + v['id'], function( data ) {
+                console.log(data)
+
+                // Update price information
+                $m.find('.modal__shipping').text('$' + parseFloat(v['price']).toFixed(2))
+            });
+        }
+
+        /**
          * updateVariant
          * Updates a modal with new variant data
          *
@@ -166,7 +188,9 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 if (size != null && variant['size'] !== size) continue
                 if (color != null && variant['color'] !== color) continue
 
+				console.log(variant)
                 updateVariant($f, p, variant)
+                updateShippingEstimate($f, p, variant)
 
                 $('.alert--error', $f).text('')
                 $('input[type="submit"]', $f).prop('disabled', false)
