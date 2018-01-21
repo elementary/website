@@ -777,7 +777,7 @@ Current Launcher API support:
 | Application menu | Yes              | No              | Yes                 | No                |
 | Dock             | Yes              | Yes             | Yes                 | Yes               |
 
-## Setting Up {#setting-up}
+## Setting Up {#system-integration-setting-up}
 Before writing the code, you must first install the `libunity` library, you can do it by executing
 the following command in your terminal:
 ```
