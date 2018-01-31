@@ -506,7 +506,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 4. Open the file called "control" and make it look like below:
 
-        Source: hello-packaging
+        Source: com.github.yourusername.yourrepositoryname
         Section: x11
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
@@ -516,7 +516,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
                        valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
 
-        Package: hello-packaging
+        Package: com.github.yourusername.yourrepositoryname
         Architecture: any
         Depends: ${misc:Depends}, ${shlibs:Depends}
         Description: Hey young world
