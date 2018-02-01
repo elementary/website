@@ -506,7 +506,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 4. Open the file called "control" and make it look like below:
 
-        Source: hello-packaging
+        Source: com.github.yourusername.yourrepositoryname
         Section: x11
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
@@ -516,7 +516,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
                        valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
 
-        Package: hello-packaging
+        Package: com.github.yourusername.yourrepositoryname
         Architecture: any
         Depends: ${misc:Depends}, ${shlibs:Depends}
         Description: Hey young world
@@ -667,7 +667,7 @@ By now you've probably already seen the white notification bubbles that appear o
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Yet Another Application {#yet-another-application}
-In order to display notifications, you're going to need to another `Gtk.Application` with a `Gtk.ApplicationWindow`. Remember what we learned in the last few sections and set up a new `Gtk.Application`!
+In order to display notifications, you're going to need another `Gtk.Application` with a `Gtk.ApplicationWindow`. Remember what we learned in the last few sections and set up a new `Gtk.Application`!
 
 Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
 
