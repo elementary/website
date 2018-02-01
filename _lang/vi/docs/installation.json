@@ -50,7 +50,7 @@
     "Not readable warning": "",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Sau khi bạn nghe một tiếng kêu vang, nhấn và giữ phím <kbd>Option<\/kbd>. Sau đó, lựa chọn thiết bị khởi động tương ứng. Lưu ý là nó có thể không giống như \"Windows\", nhưng đây là chuyện bình thường.",
     "Boot Errors": "",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Chạy câu lệnh sau bằng cửa sổ lệnh của bạn:",
     "should produce the output:": "ên có kết quả là:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "",
