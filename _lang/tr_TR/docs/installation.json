@@ -50,7 +50,7 @@
     "Not readable warning": "Okunamaz uyarısı",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Başlangıç sesini duyduktan sonra, <kbd>Option<\/kbd> tuşuna bas ve bekle. Sonra, uygun önyükleme sürücüsünü seç. Sürücü bazen yanlışlıkla \"Windows\" olarak tanımlanmış olabilir ama bu durum olağandır.",
     "Boot Errors": "Başlatma Hataları",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Terminalinizde aşağıdaki komutu çalıştırın:",
     "should produce the output:": "Çıktı üretmelidir:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Bir USB flash sürücü ile en az 2 GB boş alan ve UNetbootin adlı program gerekli.",

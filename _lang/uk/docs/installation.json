@@ -50,7 +50,7 @@
     "Not readable warning": "Неприпустимого попередження",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Після того, як ви почуєте мелодію привітання, натисніть та утримуйте <kbd>Option<\/kbd>. Потім виберіть завантажувальний накопичувач. Майте на увазі, що іноді він може бути названий \"Windows\", але це нормально.",
     "Boot Errors": "Помилки завантаження",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Якщо ви виконаєте цю команду у вашому терміналі:",
     "should produce the output:": "То ви повинні отримати такий результат:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Вам знадобиться USB флешка як мінімум з 2 Гб вільного місця і програма UNetbootin.",
