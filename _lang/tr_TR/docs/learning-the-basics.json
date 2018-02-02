@@ -32,7 +32,7 @@
     "When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.": "ir uygulama açtığınızda, penceresi masaüstünde gözükür. Her uygulamanın tipik olarak üç alanı vardır: pencere düğmeleri, araç çubuğu ve uygulama içeriği.",
     "HeaderBar": "Üstbilgi çubuğu",
     "Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "Birçok uygulamanın üst kısmında bir başlık çubuğu bulunur. Bu alan, uygulama için ortak eylemler veya gezinme öğeleri ve ayrıca pencere düğmeleri içerir.",
-    "You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.": "",
+    "You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.": "Bir uygulamanın penceresini, butonlar da dahil Başlık Çubuğu(HeaderBar)nun herhangi bir yerinden sürükleyerek masaüstünün etrafında taşıyabilirsiniz.",
     "Window Buttons": "Pencere Butonları",
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.": "Bir uygulamanın pencere düğmeleri, uygulama penceresinin üst köşesinde bulunur. Kapat düğmesi solda ve büyüt düğmesi sağda. Kapat düğmesine basmak uygulama penceresini kapatır. Büyüt düğmesine basarak uygulama penceresinin boyutunu değiştirebilirsiniz.",
     "Multitasking": "Çoklu Görev",
