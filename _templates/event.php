@@ -53,7 +53,8 @@ if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release')
                 countdown: true
             })
 			console.log('Started FlipClock')
-            $('.read-more').click(function () {
+			$('.read-more').click(function (event) {
+				event.preventDefault()
                 $('.countdown-background').hide()
                 $('.countdown-background').html('')
                 var expireDate = new Date()
