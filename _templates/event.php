@@ -15,7 +15,7 @@ if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release')
         <div class="countdown-wrapper">
             <div class="countdown"></div>
             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ocCxNWgMz20?rel=0&showinfo=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ocCxNWgMz20?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <a class="read-more" href="#">Continue</a>
         </div>
