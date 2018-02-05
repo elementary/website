@@ -548,12 +548,14 @@ input:focus + .focus-reveal {
     width: 100%;
 }
 
-#slingshot-pager .button {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 9pt;
-    height: 23px;
-    line-height: 16px;
-    margin: 2px;
+#slingshot-pager .switcher-checked,
+#slingshot-pager .switcher {
+    margin: 10px;
+    opacity: 0.4;
+}
+
+#slingshot-pager .switcher-checked {
+    opacity: 1;
 }
 
 /*************
