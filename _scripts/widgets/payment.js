@@ -87,7 +87,7 @@ export default class Payment {
                     description: this.description,
                     locale: this.language,
 
-                    bitcoin: true,
+                    bitcoin: false,
                     alipay: false,
 
                     currency,
