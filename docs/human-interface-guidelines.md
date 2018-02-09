@@ -375,7 +375,7 @@ Notifications play a sound and are displayed as bubbles just below the system in
 
 ### Sounds {#notification-sounds}
 
-Notifications play a system sound by default, but app developers are able to set an appropriate app-specific sound for users to be able to more quickly recognize the source of the notification.
+Notifications play a system sound by default, but app developers are able to set an appropriate app-specific sound for users to be able to more quickly recognize the source of the notification. Be sure to use the notifications API via LibNotify to set the sound so that it respects user settings and does not play a duplicate sound.
 
 ### Icons {#notification-icons}
 
