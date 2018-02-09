@@ -383,7 +383,7 @@ By default, a notification will include the icon of the app that sent it. For ce
 
 ### User Control {#user-control}
 
-Keep in mind that users are in ultimate control over notifications and whether or not they appear. Being overy aggressive with your notificiations is a quick way to get the user to turn them off entirely or even uninstall your app.
+Keep in mind that users are in ultimate control over notifications and whether or not they appear. Being overly aggressive with your notificiations is a quick way to get the user to turn them off entirely or even uninstall your app.
 
 #### Do Not Disturb {#do-not-disturb}
 
