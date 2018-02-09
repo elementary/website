@@ -198,15 +198,17 @@ See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/)
 
 An important advantage that developers have when choosing the elementary OS platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary OS. This section will cover things like:
 
-* **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. This section details how to create these launchers.
+* **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in the Applications Menu or in the dock. This section details how to create these launchers.
 
 * **MIME handling**. If your application can open and save files, place entries for those file types in the application database and the document type (MIME) database. This lets the file manager and other applications automatically launch your application when they encounter files your application can handle.
 
-* **Contractor**. elementary OS provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
+* **Contractor**. elementary OS provides Contractor as an easy way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
 
-* **Using System Indicators**. elementary OS uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
+* **Using System Indicators**. elementary OS uses indicators in the panel to provide persistent system-wide information. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
 
-* **Integrating with the Dock**. elementary OS ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
+* **Integrating with the Dock**. elementary OS includes a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
+
+* **Using Notifications**. Apps in elementary OS can send notifications that play sound and display bubbles to alert the user to certain important events.
 
 ## App Launchers {#app-launchers}
 
@@ -322,9 +324,9 @@ Contractor results are typically presented to users in menu form. Keep the follo
 
 ## Dock Integration {#dock-integration}
 
-Integrate your app with Pantheon's dock communicate to communicate its status to the user at a glance.
+Integrate your app with the dock to communicate its status to the user at a glance.
 
-![](/images/docs/human-interface-guidelines/dock-integration/dock.png)
+![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.png)
 
 ### Progressbars {#progressbars}
 
@@ -342,22 +344,54 @@ A badge shows a count of actionable items managed by your app. Its purpose is to
 
 ## System Indicators {#system-indicators}
 
-Indicators are small icons that live on the top panel. They give users a place to glance for a quick indication of various settings or events. Clicking the icon shows a small menu with related actions available to the user.
+Indicators are small icons that live on the top panel. They give users a place to glance for quick information about the state of the system. Selecting an icon opens a small contextual menu with related actions available to the user, including a way to get the the full related system settings.
 
-![](/images/docs/human-interface-guidelines/system-indicators/systray.png)
+![Indicators](/images/docs/human-interface-guidelines/system-indicators/systray.png)
 
 ### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
-The indicator area is prone to clutter and inconsistent paradigms. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. Avoid adding an indicator if:
+Indicators are designed for the system; they display information that is relevant to or affects the general usage of the device. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. 
 
-* **The indicator will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
+**Avoid adding an indicator** if:
 
-* **You want a persistent/smaller launcher.** ​Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.
+* **It will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
 
-* **The application is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the existing messaging or sound menus.
+* **You want a persistent/smaller launcher.** Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.
+
+* **Your app is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the dock, notifications, or the existing sound menu.
+
+* **You want to show the user your app is running** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
+
+* **It does not show system-wide information.** App-specific information should be exposed using the dock and/or notifications.
 
 ---
-See also: [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+See also: 
+1. [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+2. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
+
+## Notifications {#notifications}
+
+Notifications play a sound and are displayed as bubbles just below the system indicators. They briefly appear on screen where they can be selected to open the relevant app or manually dismissed by hitting the X icon. After a short time, they automatically slide away. Missed notifications can be seen in and cleared from the Notification Center indicator.
+
+### Sounds {#notification-sounds}
+
+Notifications play a system sound by default, but app developers are able to set an appropriate app-specific sound for users to be able to more quickly recognize the source of the notification.
+
+### Icons {#notification-icons}
+
+By default, a notification will include the icon of the app that sent it. For certain apps, it might make sense to display a different relevant image along with a notification, like a user avatar if it's a communication app or album artwork if it's a music app.
+
+### User Control {#user-control}
+
+Keep in mind that users are in ultimate control over notifications and whether or not they appear. Being overy aggressive with your notificiations is a quick way to get the user to turn them off entirely or even uninstall your app.
+
+#### Do Not Disturb {#do-not-disturb}
+
+Users can enable Do Not Disturb mode from Notification Center or System Settings. Do Not Disturb blocks all notification bubbles and sounds until it is manually turned back off.
+
+#### Notification Settings {#notification-settings}
+
+Notification bubbles, sounds, and appearance in Notification Center can each be toggled on or off on a per-app basis from the system notifications settings.
 
 # Container Widgets {#container-widgets}
 
