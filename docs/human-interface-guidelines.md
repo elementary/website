@@ -962,6 +962,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#715344;">
+      <span>Leather</span>
+      <span>#715344</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#a3907c;">
+      <span>Leather 100</span>
+      <span>#a3907c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#8a715e;">
+      <span>Leather 300</span>
+      <span>#8a715e</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#715344;">
+      <span>Leather 500</span>
+      <span>#715344</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#57392d;">
+      <span>Leather 700</span>
+      <span>#57392d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3d211b;">
+      <span>Leather 900</span>
+      <span>#3d211b</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#abacae; color: #1a1a1a;">
       <span>Silver</span>
       <span>#abacae</span>
