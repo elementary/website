@@ -391,7 +391,7 @@ Users can enable Do Not Disturb mode from Notification Center or System Settings
 
 #### Notification Settings {#notification-settings}
 
-Notification bubbles, sounds, and appearance in Notification Center can each be toggled on or off on a per-app basis from the system notifications settings.
+Notification bubbles, sounds, and appearance in Notification Center can each be toggled on or off on a per-app basis from the system notifications settings. Instead of including a global toggle for all notifications in your app, direct the user to the System Settings using a settings URL to open the Notifications page directly.
 
 # Container Widgets {#container-widgets}
 
