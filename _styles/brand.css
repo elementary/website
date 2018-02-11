@@ -9,6 +9,7 @@
 
 .page-brand .hex {
     font-family: "Roboto Mono", monospace;
+    font-size: 12px;
 }
 
 .page-brand .hex::before {
@@ -23,7 +24,7 @@
 }
 
 .page-brand .color-palette-box {
-    border-radius: 6px;
+    border-radius: 3px;
     box-shadow:
         0 1px 3px 0 rgba(0, 0, 0, 0.12),
         0 1px 2px 0 rgba(0, 0, 0, 0.24);
@@ -47,10 +48,11 @@
 }
 
 .page-brand .color-palette-item {
+    align-items: center;
     display: flex;
     font-size: 14px;
     justify-content: space-between;
-    padding: 12px 16px;
+    padding: 8px 16px;
 }
 
 .page-brand #community img {
