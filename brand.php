@@ -42,39 +42,267 @@
 
     <h2>Color</h2>
     <p>elementary employs the use of color combined with our name and marks to establish our brand. We use the following palette:</p>
-    <div class="palette">
-        <dl class="blue">
-            <dt>Blueberry</dt>
-            <dd class="hex" data-l10n-off="1">3892e0</dd>
-        </dl>
-        <dl class="red">
-            <dt>Strawberry</dt>
-            <dd class="hex" data-l10n-off="1">da4d45</dd>
-        </dl>
-        <dl class="orange">
-            <dt >Orange</dt>
-            <dd class="hex" data-l10n-off="1">f37329</dd>
-        </dl>
-        <dl class="yellow">
-            <dt>Banana</dt>
-            <dd class="hex" data-l10n-off="1">fbd25d</dd>
-        </dl>
-        <dl class="green">
-            <dt>Lime</dt>
-            <dd class="hex" data-l10n-off="1">93d844</dd>
-        </dl>
-        <dl class="purple">
-            <dt>Grape</dt>
-            <dd class="hex" data-l10n-off="1">8a4ebf</dd>
-        </dl>
-        <dl class="white">
-            <dt>White</dt>
-            <dd class="hex" data-l10n-off="1">ffffff</dd>
-        </dl>
-        <dl class="black">
-            <dt>Black</dt>
-            <dd class="hex" data-l10n-off="1">333333</dd>
-        </dl>
+    <div class="color-palette-section">
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background: #c6262e; color: #ffffff;">
+                <span>Strawberry</span>
+                <span class="hex" data-l10n-off="1">c6262e</span>
+            </div>
+            <div class="color-palette-item" style="background: #ff8c82; color: #330000;">
+                <span>Strawberry 100</span>
+                <span class="hex" data-l10n-off="1">ff8c82</span>
+            </div>
+            <div class="color-palette-item" style="background: #ed5353; color: #330000;">
+                <span>Strawberry 300</span>
+                <span class="hex" data-l10n-off="1">ed5353</span>
+            </div>
+            <div class="color-palette-item" style="background: #c6262e;">
+                <span>Strawberry 500</span>
+                <span class="hex" data-l10n-off="1">c6262e</span>
+            </div>
+            <div class="color-palette-item" style="background: #a10705;">
+                <span>Strawberry 700</span>
+                <span class="hex" data-l10n-off="1">a10705</span>
+            </div>
+            <div class="color-palette-item" style="background: #7a0000;">
+                <span>Strawberry 900</span>
+                <span class="hex" data-l10n-off="1">7a0000</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background: #f37329; color: #ffffff;">
+                <span>Orange</span>
+                <span class="hex" data-l10n-off="1">f37329</span>
+            </div>
+            <div class="color-palette-item" style="background: #ffc27d; color: #4D0F00;">
+                <span>Orange 100</span>
+                <span class="hex" data-l10n-off="1">ffc27d</span>
+            </div>
+            <div class="color-palette-item" style="background: #ffa154; color: #4D0F00;">
+                <span>Orange 300</span>
+                <span class="hex" data-l10n-off="1">ffa154</span>
+            </div>
+            <div class="color-palette-item" style="background: #f37329; color: #4D0F00;">
+                <span>Orange 500</span>
+                <span class="hex" data-l10n-off="1">f37329</span>
+            </div>
+            <div class="color-palette-item" style="background: #cc3b02;">
+                <span>Orange 700</span>
+                <span class="hex" data-l10n-off="1">cc3b02</span>
+            </div>
+            <div class="color-palette-item" style="background: #a62100;">
+                <span> Orange 900</span>
+                <span class="hex" data-l10n-off="1">a62100</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#f9c440; color: #381F00;">
+                <span>Banana</span>
+                <span class="hex" data-l10n-off="1">f9c440</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#fff394; color: #381F00;">
+                <span>Banana 100</span>
+                <span class="hex" data-l10n-off="1">fff394</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#ffe16b; color: #381F00;">
+                <span>Banana 300</span>
+                <span class="hex" data-l10n-off="1">ffe16b</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#f9c440; color: #381F00;">
+                <span>Banana 500</span>
+                <span class="hex" data-l10n-off="1">f9c440</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#d48e15; color: #381F00;">
+                <span>Banana 700</span>
+                <span class="hex" data-l10n-off="1">d48e15</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#ad5f00;">
+                <span>Banana 900</span>
+                <span class="hex" data-l10n-off="1">ad5f00</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#68b723;">
+                <span>Lime</span>
+                <span class="hex" data-l10n-off="1">68b723</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#d1ff82; color: #0B2400;">
+                <span>Lime 100</span>
+                <span class="hex" data-l10n-off="1">d1ff82</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#9bdb4d; color: #0B2400;">
+                <span>Lime 300</span>
+                <span class="hex" data-l10n-off="1">9bdb4d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#68b723; color: #0B2400;">
+                <span>Lime 500</span>
+                <span class="hex" data-l10n-off="1">68b723</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#3a9104;">
+                <span>Lime 700</span>
+                <span class="hex" data-l10n-off="1">3a9104</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#206b00;">
+                <span>Lime 900</span>
+                <span class="hex" data-l10n-off="1">206b00</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#3689e6;">
+                <span>Blueberry</span>
+                <span class="hex" data-l10n-off="1">3689e6</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#8cd5ff; color:#000F33;">
+                <span>Blueberry 100</span>
+                <span class="hex" data-l10n-off="1">8cd5ff</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#64baff; color:#000F33;">
+                <span>Blueberry 300</span>
+                <span class="hex" data-l10n-off="1">64baff</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#3689e6; color: #000F33">
+                <span>Blueberry 500</span>
+                <span class="hex" data-l10n-off="1">3689e6</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#0d52bf;">
+                <span>Blueberry 700</span>
+                <span class="hex" data-l10n-off="1">0d52bf</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#002e99;">
+                <span>Blueberry 900</span>
+                <span class="hex" data-l10n-off="1">002e99</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#7a36b1;">
+                <span>Grape</span>
+                <span class="hex" data-l10n-off="1">7a36b1</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#e29ffc; color: #160038;">
+                <span>Grape 100</span>
+                <span class="hex" data-l10n-off="1">e29ffc</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#ad65d6; color: #160038;">
+                <span>Grape 300</span>
+                <span class="hex" data-l10n-off="1">ad65d6</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#7a36b1;">
+                <span>Grape 500</span>
+                <span class="hex" data-l10n-off="1">7a36b1</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#4c158a;">
+                <span>Grape 700</span>
+                <span class="hex" data-l10n-off="1">4c158a</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#260063;">
+                <span>Grape 900</span>
+                <span class="hex" data-l10n-off="1">260063</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#715344;">
+                <span>Cocoa</span>
+                <span class="hex" data-l10n-off="1">715344</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#a3907c;">
+                <span>Cocoa 100</span>
+                <span class="hex" data-l10n-off="1">a3907c</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#8a715e;">
+                <span>Cocoa 300</span>
+                <span class="hex" data-l10n-off="1">8a715e </span>
+            </div>
+            <div class="color-palette-item" style="background-color:#715344;">
+                <span>Cocoa 500</span>
+                <span class="hex" data-l10n-off="1">715344</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#57392d;">
+                <span>Cocoa 700</span>
+                <span class="hex" data-l10n-off="1">57392d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#3d211b;">
+                <span>Cocoa 900</span>
+                <span class="hex" data-l10n-off="1">3d211b</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#abacae; color: #1a1a1a;">
+                <span>Silver</span>
+                <span class="hex" data-l10n-off="1">abacae</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#fafafa; color: #1a1a1a;">
+                <span>Silver 100</span>
+                <span class="hex" data-l10n-off="1">fafafa</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#d4d4d4; color: #1a1a1a;">
+                <span>Silver 300</span>
+                <span class="hex" data-l10n-off="1">d4d4d4</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#abacae; color: #1a1a1a;">
+                <span>Silver 500</span>
+                <span class="hex" data-l10n-off="1">abacae</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#7e8087;">
+                <span>Silver 700</span>
+                <span class="hex" data-l10n-off="1">7e8087</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#555761;">
+                <span>Silver 900</span>
+                <span class="hex" data-l10n-off="1">555761</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#485a6c;">
+                <span>Slate</span>
+                <span class="hex" data-l10n-off="1">485a6c</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#95a3ab; color: #0e141f;">
+                <span>Slate 100</span>
+                <span class="hex" data-l10n-off="1">95a3ab</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#667885;">
+                <span>Slate 300</span>
+                <span class="hex" data-l10n-off="1">667885</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#485a6c;">
+                <span>Slate 500</span>
+                <span class="hex" data-l10n-off="1">485a6c</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#273445;">
+                <span>Slate 700</span>
+                <span class="hex" data-l10n-off="1">273445</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#0e141f;">
+                <span>Slate 900</span>
+                <span class="hex" data-l10n-off="1">0e141f</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#333333;">
+                <span>Black</span>
+                <span class="hex" data-l10n-off="1">333333</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#666666;">
+                <span>Black 100</span>
+                <span class="hex" data-l10n-off="1">666666</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#4d4d4d;">
+                <span>Black 300</span>
+                <span class="hex" data-l10n-off="1">4d4d4d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#333333;">
+                <span>Black 500</span>
+                <span class="hex" data-l10n-off="1">333333</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#1a1a1a;">
+                <span>Black 700</span>
+                <span class="hex" data-l10n-off="1">1a1a1a</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#000000;">
+                <span>Black 900</span>
+                <span class="hex" data-l10n-off="1">000000</span>
+            </div>
+        </div>
     </div>
 
     <h2>Fonts</h2>
