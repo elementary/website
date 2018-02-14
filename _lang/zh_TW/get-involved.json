@@ -40,7 +40,7 @@
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "我們的桌面環境和所有的 App 都採用 Vala、GTK+、Granite、和許多其他的開放函式庫建置而成。我們桌面的程式碼放在 GitHub 上由其代管，GitHub 有提供開源專案免費服務。如果你從未開發過 elementaryOS，我們建議你看看我們的「入門起步」指引。",
     "Browse Our Code": "瀏覽我們的程式碼",
     "Bitesized Bugs": "微不足道的臭蟲",
-    "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "",
+    "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "我們的設計團隊將想法轉化為清楚的議題回報以及可遞交的資產。在深入前，建議閱讀我們的設計流程。",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "",
     "Browse Our Stylesheet": "瀏覽我們的樣式表",
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",

@@ -1,7 +1,7 @@
 {
     "Installation": "Kurulum",
     "Download elementary OS": "elementary OS'u indir",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Henüz yapmadıysanız, <a href=\"\/\" target=\"_blank\" rel=\"noopener\">ana sayfamızdan işletim sistemini indirmeniz gerekecektir. <\/a>İndirilen ISO dosyasını dosyasını aşağıdaki talimatları uygulayarak bir USB flash sürücüye kopyalayın.",
     "Recommended System Specifications": "Önerilen Sistem Özellikleri",
     "Intel i3 or comparable dual-core 64-bit processor": "İ3 veya benzer çift çekirdekli Intel 64-bit işlemci",
     "1 GB of system memory (RAM)": "1 GB sistem hafızası (RAM)",
@@ -50,7 +50,7 @@
     "Not readable warning": "Okunamaz uyarısı",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Başlangıç sesini duyduktan sonra, <kbd>Option<\/kbd> tuşuna bas ve bekle. Sonra, uygun önyükleme sürücüsünü seç. Sürücü bazen yanlışlıkla \"Windows\" olarak tanımlanmış olabilir ama bu durum olağandır.",
     "Boot Errors": "Başlatma Hataları",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20170814.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Mac'iniz elementary OS USB Kurulum Sürücüsü'nü önyükleme menüsünde tanımazsa bunun yerine bir elementary OS Yükleme DVD'si oluşturmanız gerekebilir. Oluşturmak için boş bir DVD yerleştirin, Finder'daki ISO dosyasına sağ tıklayın ve &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc'i&quot; tıklayın. Bitirdiğinizde Yükleme DVD'sinden yeniden açmayı deneyin.",
     "Running the following command in your terminal:": "Terminalinizde aşağıdaki komutu çalıştırın:",
     "should produce the output:": "Çıktı üretmelidir:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Bir USB flash sürücü ile en az 2 GB boş alan ve UNetbootin adlı program gerekli.",
