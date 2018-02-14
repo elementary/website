@@ -25,7 +25,7 @@
     "the disk icon": "סמל הדיסק",
     "to choose the ISO that you downloaded previously.": "כדי לבחור את ה־ISO שהורדת קודם לכן.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "",
-    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "",
+    "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "אם הגובובים תואמים, לחץ &quot;התחל&quot; והמתן לסיומו של התהליך.",
     "Booting from the Install Drive": "הפעלה מכונן ההתקנה",
     "In order to start the installation process, you must boot your computer from the install drive.": "כדי להתחיל את תהליך ההתקנה, עליך להפעיל את המחשב שלך ולהגדיר אותו להפעיל את המערכת מכונן ההתקנה.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "בהנחה שהמחשב שלך עדיין פעיל, ראשית יש להכניס את כונן ההתקנה שלך ולהפעיל את המחשב מחדש.",
