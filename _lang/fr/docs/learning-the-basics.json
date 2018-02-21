@@ -17,7 +17,7 @@
     "Indicators": "Indicateurs",
     "On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Clicking an indicator exposes more information and related actions.": "Sur le coté droit du panneau se trouvent les icônes appelées indicateurs. Ils vous indiquent les statuts actuel de votre session, par exemple, vos connexions réseaux, l'état de votre batterie, les entrées et sorties de son, les notifications, etc. En cliquant sur un indicateur, vous obtiendrez plus d'information sur ce dernier.",
     "A middle click or three finger tap on an indicator will present you with the following quick actions:": "En cliquant sur le bouton du milieu de la souris ou en tapant avec trois doigts sur un indicateur, celui-ci vous présentera les actions suivantes :",
-    "Sound: Toggle the mute state of the primary output device": "",
+    "Sound: Toggle the mute state of the primary output device": "Son: Basculer l'état silencieux de l'appareil de sortie principal",
     "Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device": "",
     "Power: Hide/Show the percentage of battery remaining": "",
     "Notifications: Toggle Do Not Disturb mode": "",
