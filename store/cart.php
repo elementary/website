@@ -107,7 +107,7 @@
 
     <div class="whole">
         <?php if (isset($_GET['error'])) { ?>
-        <span class="alert--error"><?php echo urldecode($_GET['error']) ?></span>
+        <span class="alert--error"><?php echo htmlspecialchars(urldecode($_GET['error'])) ?></span>
         <?php } else { ?>
         <span class="alert--error"></span>
         <?php } ?>
