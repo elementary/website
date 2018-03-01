@@ -66,7 +66,7 @@
     "View your apps automatically organized into categories. Perfect for large collections.": "Vedi le tue app organizzate automaticamente in categorie. Perfetto per grandi collezioni.",
     "Search": "Cerca",
     "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "Lancia app, apri pannelli di impostazioni, lancia comandi, e molto altro nella velocissima vista cerca.",
-    "Open Source": "",
+    "Open Source": "Open Source",
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "Il nostro codice è disponibile per la revisione, il controllo, la modifica e la ridistribuzione da parte di chiunque.",
     "Learn More": "Scopri di più",
     "No Ads. No Spying.": "Niente pubblicità. Niente spionaggio.",
@@ -83,5 +83,5 @@
     "Cancel": "Annulla",
     "Download": "Download",
     "Torrent Magnet Link": "Link magnetico per i torrent",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un rimpiazzo veloce e open source per Windows e macOS &sdot; elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Un'alternativa veloce e aperta a Windows e macOS &sdot; elementary OS"
 }
