@@ -843,16 +843,16 @@ feature in your app. These are shown e.g: right-clicking an open instance of the
 Here's a simple example of how to make use of dynamic quicklists in Vala:
 ```
 // Create a root quicklist
-var quicklist = new Dbusmenu.MenuItem ();
+var quicklist = new Dbusmenu.Menuitem ();
 
 // Create root's children
-var item1 = new Dbusmenu.MenuItem ();
+var item1 = new Dbusmenu.Menuitem ();
 item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 1");
 item1.item_activated.connect (() => {
     message ("Item 1 activated");
 });
 
-var item2 = new Dbusmenu.MenuItem ();
+var item2 = new Dbusmenu.Menuitem ();
 item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 2");
 item1.item_activated.connect (() => {
     message ("Item 2 activated");
