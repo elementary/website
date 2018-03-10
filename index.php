@@ -340,7 +340,7 @@
             </div>
             <div class="third">
                 <h2>Safe &amp; Secure</h2>
-                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
+                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
             </div>
         </section>
         <section class="grid">
