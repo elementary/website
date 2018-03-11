@@ -59,7 +59,7 @@
     "Multiple Displays": "Wiele wyświetlaczy",
     "The panel, dock, and workspaces appear only on the primary display. Any other attached displays act as standalone workspaces. To manage and rearrange displays, head to <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Displays</strong>. Your primary display is marked with a filled-in star (": "Panel, dok oraz pulpity wyświetlają się tylko na głównym ekranie. Inne ekrany zachowują się jak osobne pulpity. Aby zarządzać i przearanżować ekrany, udaj się do <strong><a href=\"/docs/learning-the-basics#system-settings\">Ustawienia systemowe</a></strong> → <strong>Monitory</strong>. Twój głowny ekran oznaczony jest wypełnioną gwiazdką (",
     ") and each display's settings can be changed from its cog (": "",
-    ") menu.": "",
+    ") menu.": ") menu.",
     "Installing Apps": "Instalowanie aplikacji",
     "elementary OS comes bundled with <strong>AppCenter</strong>, an app store for free apps. Installing a new app from AppCenter is easy:": "",
     "Open the <strong>AppCenter</strong> app.": "",
