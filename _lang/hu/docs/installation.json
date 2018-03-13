@@ -50,7 +50,7 @@
     "Not readable warning": "Nem olvasható figyelmeztetés",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "A harangszó után tartsd lenyomva a <kbd>Option<\/kbd>-t. Ekkor válaszd ki a megfelelő boot-meghajtót. Jegyezd meg, hogy helytelenül \"Windowsként\" azonosíthatja, de ez normális.",
     "Boot Errors": "Indítási hibák",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "A következő parancs futtatása a terminálodban:",
     "should produce the output:": "a következő kimenet kellene adnia:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Szükséged lesz egy USB-flashmeghajtóra, legalább 2GB szabad hellyel és egy UNetbootin nevű programra.",

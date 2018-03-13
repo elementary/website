@@ -50,7 +50,7 @@
     "Not readable warning": "일을 수 없음 경고",
     "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "벨소리를 들으신 후에는, <kbd>Option<\/kbd>키를 누르세요. 그런 다음, 사용하려는 부팅 디스크를 선택하시면 됩니다. 알아두실 것은 &quot;Windows&quot;로 잘못 확인되는 수가 있는데요, 이것은 정상입니다.",
     "Boot Errors": "부팅 오류",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180130.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Mac의 부팅 메뉴에서 elementary OS 설치 USB를 인식하지 못하는 경우엔 대신 elementary OS 설치 DVD를 만들어 사용하는 방법이 있습니다. 만드실 땐 빈 DVD를 넣고 Finder에서 ISO 파일을 마우스 오른쪽 버튼으로 클릭해서 &quot;elementaryos-0.4.1-stable.20180130.iso 디스크에 굽기&quot;를 실행하시면 됩니다. 만드신 후에는 설치용 DVD로 다시 부팅하시면 됩니다.",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "터미널에서 아래 명령어를 실행하세요:",
     "should produce the output:": "이런 출력물이 나와야 합니다:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "최소 2GB 이상의 여유 공간이 있는 USB 드라이브와 UNetbootin이라는 프로그램이 있어야 합니다.",
