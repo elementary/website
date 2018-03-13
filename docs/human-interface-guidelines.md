@@ -2,10 +2,10 @@
 
 These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
 
-* Users will learn to use your application faster because it shares common elements that they are already familiar with.
-* Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.
-* Your application will appear native to the desktop and share the same elegant look as default applications.
-* Your application will be easier to document because an expected behavior does not require explanation.
+* Users will learn to use your application faster, because it shares common elements that they are already familiar with.
+* Users will accomplish tasks more quickly, because you will have a straight-forward interface design that isn't confusing or difficult.
+* Your application will appear native to the desktop, and share the same elegant look as default applications.
+* Your application will be easier to document, because an expected behavior does not require explanation.
 * The amount of support you will have to provide, including bugs filed, will be lessened (for the reasons above).
 
 To help you achieve these goals, these guidelines will cover basic interface elements, how to use them and put them together effectively, and how to make your application integrate well with the desktop. The most important thing to remember is that following these guidelines will make it easier to design a new application, not harder.
@@ -825,7 +825,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and grays for boring system icons.
+Color—don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and grays for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
@@ -836,7 +836,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
+Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger", and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
 <div class="color-palette-section">
   <div class="color-palette-box">
@@ -1103,7 +1103,7 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
 
 ## Symbolic Icons {#symbolic-icons}
 
-Symbolic icons are common system icons, that symbolize files, devices, or directories and are also used to represent common actions like cut, copy, and save.
+Symbolic icons are common system icons that symbolize files, devices, or directories, and are also used to represent common actions like cut, copy, and save.
 
 Each symbolic icon is a reduced form of its full-color counter part. This minimal design ensures readability and clarity even at small sizes.
 
@@ -1111,9 +1111,9 @@ Each symbolic icon is a reduced form of its full-color counter part. This minima
 
 ### Colored vs. Symbolic Icons {#colored-vs-symbolic}
 
-The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
+The use of full-color and symbolic icons is not interchangeable; both have appropriate uses.
 
-Full color icons are best used for:
+Full-color icons are best used for:
 * application icons
 * files and mimetypes
 * device icons
@@ -1129,19 +1129,18 @@ Symbolic icons are best used:
 
 There are three aspects to note when designing an elementary OS icon:
 
-* Its baseline (highlighted in <span style="color:blue;">blue</span>) to ensure that all icons of one size line up along the bottom when in a row (much like text).
-* Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
-* The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
+* Its baseline (highlighted in <span style="color:blue;">blue</span>), to ensure that all icons of one size line up along the bottom when in a row (much like text).
+* Its mean line height (<span style="color:green;">green</span>), also known as the center line of the canvas.
+* Its x-height (shown in <span style="color:red;">red</span>), or "how tall" the icon is.
 
 <img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Videos icon">
 <img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Terminal icon">
 
-Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
+Keeping these lines in mind while designing, means you can place elements along them to ensure that icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icons above relate to the mean line.
 
 ### Common Measurements {#measurements}
 
-If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
-
+If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon:
 
 | Canvas Size   | Base Line     | x-Height | Mean Line Height |
 | ------------- |:------------- | -------- | ---------------- |
@@ -1154,7 +1153,7 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 
 ### Exceptions {#icon-exceptions}
 
-However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+However, there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>).
 
 <img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Video icon">
 <img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Terminal icon">
@@ -1397,7 +1396,7 @@ Ellipses should be used when shortening text that cannot fit in any specific pla
 * End truncation. If the important or distinctive text is at the beginning of the string, truncate it at the end and append an ellipsis.
 * Middle truncation. When the end of the text is more important or distinctive, truncate the text in the middle and replace the truncated text with an ellipsis.
 
-If you're unsure, it's best to use middle truncation as it keeps both the beginning and end of the string in tact. It's also important that you do not ship your app with any truncated text; truncation should only be the result of a user action such as resizing a sidebar or entering custom text.
+If you're unsure, it's best to use middle truncation, as it keeps both the beginning and end of the string intact. It's also important that you do not ship your app with any truncated text; truncation should only be the result of a user action such as resizing a sidebar or entering custom text.
 
 ### When Not to Use Ellipsis {#when-not-to-use-ellipsis}
 
