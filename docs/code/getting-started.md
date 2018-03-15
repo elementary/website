@@ -241,7 +241,7 @@ Everything working as expected? Good. Now, let's get our app ready for other peo
 
 ## The .desktop File {#the-desktop-file}
 
-Every app comes with a .desktop file. This file contains all the information needed to display your app in the Applications menu and in the Dock. Let's go ahead and make one:
+Every app comes with a .desktop file. This file contains all the information needed to display your app in the Applications Menu and in the Dock. Let's go ahead and make one:
 
 1. In your project's root, create a new folder called "data".
 
@@ -377,7 +377,7 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
         # install the binaries we just made
         install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
-        # install our .desktop file so the Applications menu will see it
+        # install our .desktop file so the Applications Menu will see it
         install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
         
         # install our .appdata.xml file so AppCenter will see it
@@ -406,7 +406,7 @@ Now that we have a build system, let's try it out:
     sudo make install
     ```
 
-If all went well, you should now be able to open your app from the Applications menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
+If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
 We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
 
@@ -416,7 +416,7 @@ Let's review all we've learned to do:
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
 * License our app under the GPL and declare our app's authors in a standardized manner
-* Create a .desktop file using RDNN that tells the computer how to display our app in the Applications menu and the Dock
+* Create a .desktop file using RDNN that tells the computer how to display our app in the Applications Menu and the Dock
 * Set up a CMake build system that contains all the rules for building our app and installing it cleanly
 
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
@@ -838,7 +838,7 @@ As you can see the type of `progress` property is `double` and is a range betwee
 
 ## Dynamic Quicklists {#dynamic-quicklists}
 Dynamic quicklists are a way to provide the user with dynamic quick menu entries to access some kind of
-feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the applications menu**, see [Static Quicklists](#static-quicklists).
+feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the Applications Menu**, see [Static Quicklists](#static-quicklists).
 
 Here's a simple example of how to make use of dynamic quicklists in Vala:
 ```
