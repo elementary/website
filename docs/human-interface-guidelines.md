@@ -2,17 +2,17 @@
 
 These guidelines are designed to help developers and designers create a beautifully consistent experience on the elementary OS desktop. They were written for interface designers, graphic artists and software developers who will be working on elementary OS. They will not only define specific design elements and principles, but will also instill a philosophy that will help you decide when it is appropriate to deviate from the Guidelines. Adhering to the suggestions contained here will provide many benefits:
 
-* Users will learn to use your application faster because it shares common elements that they are already familiar with.
-* Users will accomplish tasks more quickly because you will have a straight-forward interface design that isn't confusing or difficult.
-* Your application will appear native to the desktop and share the same elegant look as default applications.
-* Your application will be easier to document because an expected behavior does not require explanation.
+* Users will learn to use your application faster, because it shares common elements that they are already familiar with.
+* Users will accomplish tasks more quickly, because you will have a straight-forward interface design that isn't confusing or difficult.
+* Your application will appear native to the desktop, and share the same elegant look as default applications.
+* Your application will be easier to document, because an expected behavior does not require explanation.
 * The amount of support you will have to provide, including bugs filed, will be lessened (for the reasons above).
 
 To help you achieve these goals, these guidelines will cover basic interface elements, how to use them and put them together effectively, and how to make your application integrate well with the desktop. The most important thing to remember is that following these guidelines will make it easier to design a new application, not harder.
 
 However, keep in mind that this is a guideline, not a rulebook. New, amazing interaction paradigms appear every day and more are waiting to be discovered. This is a living document that can and will be changed.
 
-For sections that have not yet been written, please refer to [The GNOME HIG](https://wiki.gnome.org/Design/HIG/)
+For sections that have not yet been written, please refer to [The GNOME HIG](https://developer.gnome.org/hig/stable/)
 
 # Design Philosophy {#design-philosophy}
 
@@ -118,7 +118,7 @@ When a user first launches an app, they should be able to get down to business a
 
 ### Speed of Launch {#speed-of-launch}
 
-Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (ie. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
+Your app's first launch is the user's first impression of your app; it's a chance to really show off its design and speed. If your app has to configure things in the background before visibly launching, it gives the user the impression that the app is slow or will take a long time to start up. Instead, focus on making the application window appear fast and ready to be used, then do any background tasks behind the scenes. If the background task is blocking (e.g. the user is unable to perform certain tasks until it's complete), show some type of indication that a background process is happening and make the blocked user interface items insensitive (see: [Widget Concepts](#widget-concepts)).
 
 ### Welcoming the User {#welcoming-the-user}
 
@@ -185,7 +185,7 @@ If it makes sense for an app to complete background tasks after the window is cl
 
 ### Closing the App Window {#closing-the-app-window}
 
-It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app backend should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
+It is not desirable for an app window to simply minimize rather than close when the user attempts to close it. Instead, the app window should be "hidden". If it makes sense to continue a process in the background (such as downloading/transferring, playing music, or executing a terminal command) the app back-end should continue with the task and close when the task is finished. If it's not immediately apparent that the process has completed (as with the file download/transfer or terminal command), the app may show a notification informing the user that the process has completed. If it is apparent, as with the music, no notification is necessary.
 
 ### Re-Opening the App Window {#re-opening-the-app-window}
 
@@ -198,50 +198,70 @@ See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/)
 
 An important advantage that developers have when choosing the elementary OS platform is the ability to seamlessly integrate their application with the default desktop. Outlined below are the several ways in which you can make your application feel beyond native in elementary OS. This section will cover things like:
 
-* **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. This section details how to create these launchers.
+* **Creating an App Launcher**. The primary method of discovering and using your app will be through an app launcher found in the Applications Menu or in the dock. This section details how to create these launchers.
 
 * **MIME handling**. If your application can open and save files, place entries for those file types in the application database and the document type (MIME) database. This lets the file manager and other applications automatically launch your application when they encounter files your application can handle.
 
-* **Contractor**. elementary OS provides an easy new way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
+* **Contractor**. elementary OS provides Contractor as an easy way for applications to share files with each other. This will make your application more useful and extend its functionality without adding hundreds of lines of code.
 
-* **Using System Indicators**. elementary OS uses indicator applets in the panel that let your application provide persistent notifications. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
+* **Using System Indicators**. elementary OS uses indicators in the panel to provide persistent system-wide information. This section discusses not only how to use that area, but when it is or isn't appropriate to use it.
 
-* **Integrating with the Dock**. elementary OS ships with a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
+* **Integrating with the Dock**. elementary OS includes a great dock that supports the Unity Launcher API. This lets your application provide notification badges, progress indicators, and more.
+
+* **Using Notifications**. Apps in elementary OS can send notifications that play sound and display bubbles to alert the user to certain important events.
 
 ## App Launchers {#app-launchers}
 
-The primary method of discovering and using your app will be through an app launcher found in Slingshot or in the dock. In order to provide these launchers you must install an appropriate .desktop file with your app. This includes giving your launcher an appropriate name, placing it in the correct category, assigning it an icon, etc.
+The primary method of discovering and using your app will be through an app launcher found in the Applications Menu or in the dock. In order to provide these launchers you must install an appropriate .desktop file with your app. This includes giving your launcher an appropriate name, placing it in the correct category, assigning it an icon, etc.
 
-.desktop files follow the freedesktop.org [Desktop Entry Specification](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html "View the spec on FreeDesktop.Org"). They should be installed in _/usr/share/applications_. Users may create their own launchers by putting .desktop files in _~/.local/share/applications_.
+.desktop files follow the freedesktop.org [Desktop Entry Specification](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html "View the spec on FreeDesktop.Org"). They should be installed in `/usr/share/applications`.
 
 The contents of .desktop files should follow this formula:
 
-_**Title** is a(n) **GenericName** that lets you **Comment**._
+_**Name** is a(n) **GenericName** that lets you **Comment**._
 
-### Title {#title}
+```
+Name=Eddy
+GenericName=Package Installer
+Comment=Install Debian packages
+Categories=System;PackageManager;
+Keywords=Package;Apt;Dpkg;Install;
+```
 
-You should not include descriptive words in your title. For example, Dexter is called "Dexter," not "Dexter Address Book." Midori is just "Midori," not "Midori Web Browser." Instead, use the GenericName attribute of your app's .desktop file for a generic name, and the Comment attribute for a longer descriptive phrase.
+<span id="title"/>
+### Name {#Name}
+
+You should not include descriptive words in your app's `Name`. For example, an address book app might be called "Dexter," not "Dexter Address Book." A web browser might be called "Midori," but not "Midori Web Browser." Instead, use the `GenericName` attribute of your app's .desktop file for a generic name, and the `Comment` attribute for a longer descriptive phrase.
+
+```
+Name=Dexter
+```
 
 ### GenericName {#genericname}
 
-If your app is easily categorized or described with a generic name, you should use that for the GenericName attribute in your app's .desktop file. If you can say, "My app is a(n) ________," then whatever fits in that blank could be the generic name. For example, Maya is a calendar, so its generic name is "Calendar."
+If your app is easily categorized or described with a generic name, you should use that for the GenericName attribute in your app's .desktop file. If you can say, "My app is a(n) ________," then whatever fits in that blank could be the generic name. For example, Quilter is a markdown editor, so its generic name is "Markdown Editor".
 
 You should not include articles (the, a, an) or the words "program," "app," or "application" in your app's generic name.
 
-The generic name should be in [title case](#title-case) and may be used around the system to better describe or categorize your app. 
+The generic name should be in [title case](#title-case) and may be used around the system to better describe or categorize your app:
+
+```
+GenericName=Markdown Editor
+```
 
 ### Comment {#comment}
 
 The system uses an app's Comment attribute (found in the .desktop file) to succinctly inform a user what can be done with the app. It should be a short sentence or phrase beginning with a verb and containing the primary nouns that your app deals with. For example, the following are appropriate comments:
 
-* Maya: **Browse and schedule events**
-* Noise: **Listen to music**
-* Lingo: **Look up definitions**
+* Calendar: **Browse and schedule events**
 * Mail: **Send and receive mail**
-* Scratch: **Edit text files**
 * Files: **Browse and manage your files**
 
-An app's comment should be in [sentence case](#sentence-case), not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the _primary_ use case of the app.
+An app's comment should be in [sentence case](#sentence-case), not include terminal punctuation (periods, exclamation points, or question marks), and should be as short as possible while describing the _primary_ use case of the app:
+
+```
+Comment=Listen to music
+```
 
 ### Categories {#categories}
 
@@ -261,21 +281,27 @@ The following categories may be used to aid with searching or browsing for your 
 * System
 * Utility
 
-For more info, see the FreeDesktop.Org [menu entry](http://standards.freedesktop.org/menu-spec/latest/apa.html) spec.
+For more info, see the FreeDesktop.Org [menu entry](http://standards.freedesktop.org/menu-spec/latest/apa.html) spec and the [list of additional categories](https://standards.freedesktop.org/menu-spec/latest/apas02.html)
+
+Categories should be separated by and terminated with a semicolon:
+
+```
+Categories=Graphics;Photography;Viewer;
+```
 
 ### Keywords {#keywords}
 
-You may also include keywords in your launcher to help users find your app via search. These follow the convention of "X-GNOME-Keywords" (for in the app launcher) and "X-AppInstall-Keywords" (for in the app installer). For example, web browser might include "Internet" as a keyword even though it's not in the app's name, generic name, or description. As a result, a user searching for "Internet" will find the app. Here are some more examples:
+You may also include keywords in your launcher to help users find your app via search. These follow [the "Keywords" key](https://standards.freedesktop.org/desktop-entry-spec/latest/ar01s05.html) in your .desktop file. For example, a web browser might include "Internet" as a keyword even though it's not in the app's name, generic name, or description. As a result, a user searching for "Internet" will find the app. Here are some more examples:
 
-* Mail: **Email;Gmail**
-* Midori: **Internet;WWW;Explorer**
-* Files: **Folders;Browser;Explorer;Finder;Manager**
-* Terminal: **Command;Prompt;cmd;Emulator**
-* Scratch: **Notepad;IDE;Plain**
-* System Settings: **Control;Panel**
-* Shotwell: **Camera;Picture**
+* Files: **Folders;Browser;Explorer;Finder;Manager;**
+* Terminal: **Command;Prompt;Cmd;Emulator;**
+* System Settings: **Control;Panel;**
 
-Keywords should be single words (in [title case](#title-case)) separated by semicolons.
+Keywords should be single words (in [title case](#title-case)) separated by and terminated with a semicolon:
+
+```
+Keywords=Foo;Bar;Baz;
+```
 
 --------------------------------------
 
@@ -298,42 +324,74 @@ Contractor results are typically presented to users in menu form. Keep the follo
 
 ## Dock Integration {#dock-integration}
 
-Integrate your app with Pantheon's dock communicate to communicate its status to the user at a glance.
+Integrate your app with the dock to communicate its status to the user at a glance.
 
-![](/images/docs/human-interface-guidelines/dock-integration/dock.png)
+![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.png)
 
 ### Progressbars {#progressbars}
 
 Make progress bars unambiguous by referring to a single, specific task. For example, use progress bars to indicate the status of lengthy processes like file transfers and encoding. Do not use progress bars to compound the progress of different types of action.
 
 * **Good Example**: Installation progress in AppCenter
-* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in Noise
+* **Bad Example**: Combined progress of downloading an album, burning a CD, and syncing a mobile device in a music app
 
 ### Badges {#badges}
 
 A badge shows a count of actionable items managed by your app. Its purpose is to inform the user that there are items that require user attention or action without being obtrusive. This is a passive notification. A badge should not show totals or rarely changing counters. If the badge is not easily dismissed when the user views your app, it is likely that this is not a good use of a badge.
 
-* **Good Example**: Unread messages in Mail
-* **Bad Example**: Total number of Photos in Shotwell
+* **Good Example**: Unread messages in a mail app
+* **Bad Example**: Total number of photos in a photo library
 
 ## System Indicators {#system-indicators}
 
-Indicators are small icons that live on the top panel. They give users a place to glance for a quick indication of various settings or events. Clicking the icon shows a small menu with related actions available to the user.
+Indicators are small icons that live on the top panel. They give users a place to glance for quick information about the state of the system. Selecting an icon opens a small contextual menu with related actions available to the user, including a way to get the the full related system settings.
 
-![](/images/docs/human-interface-guidelines/system-indicators/systray.png)
+![Indicators](/images/docs/human-interface-guidelines/system-indicators/systray.png)
 
 ### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
-The indicator area is prone to clutter and inconsistent paradigms. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. Avoid adding an indicator if:
+Indicators are designed for the system; they display information that is relevant to or affects the general usage of the device. Given that users will probably install many third-party apps, we must be careful about the number of indicators we show and how they behave. Keep in mind that only a very small set of applications need or benefit from an indicator. 
 
-* **The indicator will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
+**Avoid adding an indicator** if:
 
-* **You want a persistent/smaller launcher.** ​Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.
+* **It will only appear while your app's main window is open.** LibUnity already provides a great API for showing application statuses on your app's icon in the dock. Only use an indicator if it will show while your app's main window is closed.
 
-* **The application is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the existing messaging or sound menus.
+* **You want a persistent/smaller launcher.** Launchers are already stored in the dock in a way that gives the user control over persistence and size. The indicator area should never be used for an app launcher. If you want to add special actions to your launcher, Quicklists should be used, not an indicator.
+
+* **Your app is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the dock, notifications, or the existing sound menu.
+
+* **You want to show the user your app is running** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
+
+* **It does not show system-wide information.** App-specific information should be exposed using the dock and/or notifications.
 
 ---
-See also: [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+See also: 
+1. [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+2. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
+
+## Notifications {#notifications}
+
+Notifications play a sound and are displayed as bubbles just below the system indicators. They briefly appear on screen where they can be selected to open the relevant app or manually dismissed by hitting the X icon. After a short time, they automatically slide away. Missed notifications can be seen in and cleared from the Notification Center indicator.
+
+### Sounds {#notification-sounds}
+
+Notifications play a system sound by default, but app developers are able to set an appropriate app-specific sound for users to be able to more quickly recognize the source of the notification. Be sure to use the notifications API via LibNotify to set the sound so that it respects user settings and does not play a duplicate sound.
+
+### Icons {#notification-icons}
+
+By default, a notification will include the icon of the app that sent it. For certain apps, it might make sense to display a different relevant image along with a notification, like a user avatar if it's a communication app or album artwork if it's a music app.
+
+### User Control {#user-control}
+
+Keep in mind that users are in ultimate control over notifications and whether or not they appear. Being overly aggressive with your notificiations is a quick way to get the user to turn them off entirely or even uninstall your app.
+
+#### Do Not Disturb {#do-not-disturb}
+
+Users can enable Do Not Disturb mode from Notification Center or System Settings. Do Not Disturb blocks all notification bubbles and sounds until it is manually turned back off.
+
+#### Notification Settings {#notification-settings}
+
+Notification bubbles, sounds, and appearance in Notification Center can each be toggled on or off on a per-app basis from the system notifications settings. Instead of including a global toggle for all notifications in your app, direct the user to the System Settings using a settings URL to open the Notifications page directly.
 
 # Container Widgets {#container-widgets}
 
@@ -349,11 +407,13 @@ Windows form the foundation of your app. They provide a canvas with basic, built
 
 When dealing with window titles, consider that their main use is in distinguishing one window from another. A good window title will provide a description that helps a user make a selection. Keep that in mind as you consider the following:
 
-* A view window should display the name of the content being viewed. For example, Midori's window title reflects the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
+* A view window should display the name of the content being viewed. For example, a web browser's window title should reflect the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
 * A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
 * Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
 * Don’t display pathnames in window titles—only the current destination. For instance, it is hard to distinguish between two similar paths when they are displayed in full. If you only show the destination, the distinction is clear.
+
+Even if your app uses a headerbar, be sure to set the window's title; it can be shown in the window switcher and elsewhere in the OS.
 
 ## Dialogs {#dialogs}
 <div class="dialog">
@@ -424,7 +484,7 @@ A Toolbar is useful for providing users with quick access to an app's most used 
 
 ![](/images/docs/human-interface-guidelines/toolbars/toolbar.png)
 
-Toolbar items should be organized with the most significant objects on the left and the least significant on the right, with the AppMenu always on the far right of the Toolbar. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
+Toolbar items should be organized with the most significant objects on the left and the least significant on the right. If you have many toolbar items it may be appropriate to divide them into groups with space in between each group. Keep in mind that when viewed with RTL languages, your toolbar layout will be flipped.
 
 # UI Toolkit Elements {#ui-toolkit-elements}
 
@@ -562,30 +622,13 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
 2. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX StackExchange
 
-## AppMenu {#appmenu}
-
-The AppMenu is an optional menu which is opened using the gear-shaped icon on the far-right of an app's toolbar. It provides relevant menu items in place of the traditional "File, Edit, View..." menu bar.
-
-![](/images/docs/human-interface-guidelines/appmenu/appmenu.png)
-
-### Usage {#appmenu-usage}
-
-You should first consider if your app needs this widget. While most apps may have one, your app may not necessarily need an AppMenu.
-
-When adding items to your AppMenu, consider the following:
-
-* Items should be relevant and useful. It's not acceptable to duplicate items that are found in your main UI here.
-* If the app includes a "preferences" window, it should be available from the AppMenu.
-* There should be an item for the "About" dialog which contains links to the project's bug tracker, help, etc.
-* If an AppMenu is displayed, a menu bar should not be, and vice-versa.
-
 ## Search Fields {#search-fields}
 
 Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
 
 ![](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
-### Distinguish Between Search and Find
+### Distinguish Between Search and Find {#distinguish-search-find}
 
 Search is for filtering the contents of a library, i.e. Music or Videos, to the matching items. Search is typically initiated when typing anywhere in a library view.
 
@@ -619,13 +662,17 @@ Selection controls present a way for users to select or enable options. There ar
 <span id="checkboxes-usage"/><span id="checkboxes-labeling"/>
 ### Checkboxes {#checkboxes}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/checkboxes.png" alt="Checkboxes" style="max-width: 100px"/>
+
 Use checkboxes when users are making a selection of items. If you have a single option, avoid using a checkbox and use a switch instead.
 
-Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox. 
+Make sure that users can toggle the state of the checkbox by clicking on the label associated with the checkbox.
 
 Labels associated with checkboxes should usually be nouns or nounal phrases.
 
 ### Comboboxes {#comboboxes}
+
+<img src="/images/docs/human-interface-guidelines/selection-controls/comboboxes.png" alt="Comboboxes" style="max-width: 158px"/>
 
 Use a combobox (also called a dropdown) when:
 
@@ -635,7 +682,7 @@ Use a combobox (also called a dropdown) when:
 <span id="linked-buttons-usage"/><span id="linked-buttons-labeling"/>
 ### Linked Buttons {#linked-buttons}
 
-![Linked Buttons](/images/docs/human-interface-guidelines/buttons/radio.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
 Use linked buttons (also called a mode button) when:
 * all options can be described by an icon or with only one or two words and
@@ -647,6 +694,8 @@ Linked buttons should never contain colored icons. Only 16px symbolic icons OR t
 
 ### Radio Buttons {#radio-buttons}
 
+<img src="/images/docs/human-interface-guidelines/selection-controls/radio_buttons.png" alt="Radio Buttons" style="max-width: 102px"/>
+
 Use radio buttons when:
 
 * Users are selecting only a single item from a set and
@@ -655,9 +704,9 @@ Use radio buttons when:
 <span id="switches-usage"/>
 ### Switches {#switches}
 
-![Switches](/images/docs/human-interface-guidelines/checkboxes-switches/switches.png)
+<img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
 
-Use a switch when users are toggling certain features or behaviors "on" or "off". 
+Use a switch when users are toggling certain features or behaviors "on" or "off".
 
 Don't use switches to select related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
@@ -681,7 +730,7 @@ A Static Notebook is a small set of unchanging tabs, commonly seen in preference
 
 ![](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
 
-A Dynamic Notebook is a way for an app to provide user-managable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed and a "new tab" button is at the left ot the notebook widget.
+A Dynamic Notebook is a way for an app to provide user-manageable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed, and a "new tab" button is at the start of the notebook widget.
 
 # Iconography {#iconography}
 
@@ -691,7 +740,7 @@ Iconography is a key part of elementary OS. Icons make up the majority of the UI
 
 Your icon should have a distinctive shape/silhouette to improve its recognition. This shape should not be too complicated, but the icon should not always be a rounded rectangle.
 
-<div style="width:100%;display:inline-block;text-align:center;">
+<div style="width:100%;display:inline-block;text-align:center;margin-bottom:2em;">
 	<img title="Warning icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/dialog-warning.svg" alt="Warning dialog icon">
 	<img title="Chat icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-chat.svg" alt="Chat icon">
 	<img title="Photos icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/multimedia-photo-manager.svg" alt="Photos icon">
@@ -700,7 +749,13 @@ Your icon should have a distinctive shape/silhouette to improve its recognition.
 	<img title="Terminal icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/utilities-terminal.svg" alt="Terminal icon">
 </div>
 
-### Metaphors
+For example, if your icon's metaphor lends itself well to a unique shape, use that shape for the overall icon shape instead of placing that shape onto a generic rectangle, square, or circle.
+
+| Bad (unnecessary base shape) | Better (unique shape) |
+| :--------------------------: | :-------------------: |
+| <img title="Base shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/base-shape.svg" alt="Base shape"> | <img title="Unique shape" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/unique-shape.svg" alt="Unique shape"> |
+
+### Metaphors {#metaphors}
 
 If you're creating an icon for a hardware device or a file type (such as those for MimeType or Device icons), its shape is typically a visual representation of its real-world counterparts. For example, the icon for a camera is a stylized camera.
 
@@ -713,7 +768,7 @@ If you're creating an icon for a hardware device or a file type (such as those f
 	<img title="Computer icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/video-display.svg" alt="Computer icon">
 </div>
 
-### Action Icons
+### Action Icons {#action-icons}
 
 Action icons are used to represent common user actions, such as "delete", "play", or "save". These icons are mostly found in app toolbars, but can be found throughout the OS.
 
@@ -770,7 +825,7 @@ Design each icon for the size it's meant to be viewed at. In other words, do not
 
 ## Color Palette {#color}
 
-Color, don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and greys for boring system icons.
+Color—don't be afraid to use it! Many of the elementary OS icons use vibrant colors; it's best to reserve muted tones and grays for boring system icons.
 
 <div style="width:100%;display:inline-block;text-align:center;">
 	<img title="Mail icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/internet-mail.svg" alt="Mail icon">
@@ -781,7 +836,7 @@ Color, don't be afraid to use it! Many of the elementary OS icons use vibrant co
 	<img title="Calendar icon" class="hig-icon" src="/images/docs/human-interface-guidelines/icons/64/office-calendar.svg" alt="Calendar icon">
 </div>
 
-Colors do have their connotations, so be cognisant of this when picking them. For instance: red is usually associated with error or "danger" and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
+Colors do have their connotations, so be cognizant of this when picking them. For instance: red is usually associated with error or "danger", and orange with warnings. But you can use these color connotations to help convey your icon's meaning, such as green for "go". We use the following palette:
 
 <div class="color-palette-section">
   <div class="color-palette-box">
@@ -941,6 +996,32 @@ Colors do have their connotations, so be cognisant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#715344;">
+      <span>Cocoa</span>
+      <span>#715344</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#a3907c;">
+      <span>Cocoa 100</span>
+      <span>#a3907c</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#8a715e;">
+      <span>Cocoa 300</span>
+      <span>#8a715e </span>
+    </div>
+    <div class="color-palette-item" style="background-color:#715344;">
+      <span>Cocoa 500</span>
+      <span>#715344</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#57392d;">
+      <span>Cocoa 700</span>
+      <span>#57392d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#3d211b;">
+      <span>Cocoa 900</span>
+      <span>#3d211b</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#abacae; color: #1a1a1a;">
       <span>Silver</span>
       <span>#abacae</span>
@@ -1022,17 +1103,17 @@ Colors do have their connotations, so be cognisant of this when picking them. Fo
 
 ## Symbolic Icons {#symbolic-icons}
 
-Symbolic icons are common system icons, that symbolize files, devices, or directories and are also used to represent common actions like cut, copy, and save.
+Symbolic icons are common system icons that symbolize files, devices, or directories, and are also used to represent common actions like cut, copy, and save.
 
 Each symbolic icon is a reduced form of its full-color counter part. This minimal design ensures readability and clarity even at small sizes.
 
 <img title="Icon style comparison" src="/images/docs/human-interface-guidelines/icons/document-new.svg" alt="Symbolic vs. colored icon">
 
-### Colored vs. Symbolic Icons
+### Colored vs. Symbolic Icons {#colored-vs-symbolic}
 
-The use of full-color and symbolic icons is not interchangeable, both have appropriate uses.
+The use of full-color and symbolic icons is not interchangeable; both have appropriate uses.
 
-Full color icons are best used for:
+Full-color icons are best used for:
 * application icons
 * files and mimetypes
 * device icons
@@ -1048,19 +1129,18 @@ Symbolic icons are best used:
 
 There are three aspects to note when designing an elementary OS icon:
 
-* Its baseline (highlighted in <span style="color:blue;">blue</span>) to ensure that all icons of one size line up along the bottom when in a row (much like text).
-* Its mean line height (<span style="color:green;">green</span>), also known as the center line of your canvas.
-* The x-height (shown in <span style="color:red;">red</span>) or "how tall" your icon is.
+* Its baseline (highlighted in <span style="color:blue;">blue</span>), to ensure that all icons of one size line up along the bottom when in a row (much like text).
+* Its mean line height (<span style="color:green;">green</span>), also known as the center line of the canvas.
+* Its x-height (shown in <span style="color:red;">red</span>), or "how tall" the icon is.
 
 <img title="Videos icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Videos icon">
 <img title="Terminal icon composition" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/example-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition breakdown of elementary OS Terminal icon">
 
-Keeping these lines in mind while designing, means you can place elements along them so icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icon above relate to the mean line.
+Keeping these lines in mind while designing, means you can place elements along them to ensure that icons appear more consistent when put together. For example, notice how some elements in both the Terminal and Videos icons above relate to the mean line.
 
-### Common Measurements
+### Common Measurements {#measurements}
 
-If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon.
-
+If you're designing a square-shaped icon, like the one for Terminal seen above, then consider using these common measurements (in pixels) for each icon:
 
 | Canvas Size   | Base Line     | x-Height | Mean Line Height |
 | ------------- |:------------- | -------- | ---------------- |
@@ -1071,9 +1151,9 @@ If you're designing a square-shaped icon, like the one for Terminal seen above, 
 | 64x64         | 4             | 56       | 32               |
 | 128x128       | 9             | 104      | 64               |
 
-### Exceptions
+### Exceptions {#icon-exceptions}
 
-However there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>.)
+However, there are exceptions. Many icons (especially mimetype icons) have ascending and descending elements, which are those elements that extend beyond the base line and x-height line (shown here in <span style="color:orange;">orange</span>).
 
 <img title="First composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Video icon">
 <img title="Second composition exception example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/exception-icon2.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Composition exception example in elementary OS Terminal icon">
@@ -1094,44 +1174,57 @@ To further improve contrast, strokes are also semi-transparent. This ensures tha
 
 If you picture an icon sitting on a shelf, facing you, with a light source above it, you may see a small fuzzy shadow near the bottom. Also, since the edges of an object tends to reflect more light due to your position relative to it and to the light source, they will have a highlight. Both these effects are something elementary OS icons emulate in their design to lend them a degree of realism.
 
-### Edge Highlight
+### Edge Highlight {#edge-highlight}
 
 To apply the edge highlight effect to your icon, draw a subtle, **1 pixel**, inner stroke as a highlight. This outline is slightly brighter at the top and the bottom than it is at the edges.
 
 <img title="Highlight example" class="hig-icons-example" style="background-image:url(/images/docs/human-interface-guidelines/icons/highlight-example1.png);" src="/images/docs/human-interface-guidelines/icons/grid.svg" alt="Edge highlight example in elementary OS Music icon">
 
-### Drop Shadow
+### Drop Shadow {#drop-shadow}
 
 To draw the shadow, you'll start by drawing a rectangle. Then fill it with a linear gradient that is perpendicular to the bottom margin of the icon. The gradient has three stops, the first and last of which have zero opacity. Then this entire shape is set to **60% opacity**.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
+![Shadow example 1](/images/docs/human-interface-guidelines/icons/shadow-example1.png "Shadow example 1")
 
 Next create two smaller rectangles to "bookend" the larger. Fill each with a gradient identical to the first, but make it radial instead. Center the radial gradient in the middle of a short edge with each stop directly out to the nearest edge—see below for an example. Both these rectangles are also set to **60% opacity**.
 
-![](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
+![Shadow example 2](/images/docs/human-interface-guidelines/icons/shadow-example2.png "Shadow example 2")
 
-### Pictogram Shadow
+### Pictogram Shadow {#pictogram-shadow}
 
-If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make it stand out from the background of the icon.
+If your icon has a pictogram, such as the play triangle in the icon below, you can give it a drop shadow to make appear extruded from the background of the icon.
 
-![](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
+![Video player icon](/images/docs/human-interface-guidelines/icons/64/multimedia-video-player.svg "Video player icon")
 
 To do this, first duplicate the pictogram, fill it with solid black and set it to **15% opacity**. Next, shift it 1 pixel down and place it below the pictogram. Create a copy of this shadow and give it a 1 pixel stroke (also black) and adjust this element to **7% opacity**.
 
-### Icon Materials
+Alternatively, you can also use a highlight and shadow to make the pictogram appear inset into the background.
+
+| Bad (flat pictogram) | Better (extruded pictogram) | Better (inset pictogram) |
+| :--------: | :------------: | :---------------: |
+| <img title="Flat foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/flat-foreground.svg" alt="Flat foreground"> | <img title="Extruded foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/extruded-foreground.svg" alt="Extruded foreground"> | <img title="Inset foreground" class="hig-icon" src="/images/docs/human-interface-guidelines/iconography/inset-foreground.svg" alt="Inset foreground"> |
+
+### Icon Materials {#materials}
 
 You are free to add gloss (extra highlights) to your icon but this is only a good idea if you're emulating a surface that is more-reflective in real life (such as plastic, glass, etc.) For instance, a sheet of paper is not glossy therefore a icon emulating paper would not be either.
 
-![](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
+![Glossy vs. non-glossy](/images/docs/human-interface-guidelines/icons/highlight-example2.png "Glossy vs. non-glossy")
 
 ## Dos and Don'ts {#dos-donts}
 
 Below are some "do and don't" examples to consider when creating icons for your app.
 
 * Your icon should not be overly complicated. Keep in mind that since there are smaller sizes, the elements that make up your icon should be distinguishable when at those sizes.
+
 * Your icon should make use of transparent elements, and should not simply be full-frame images. Where you can, distinguish your icon with subtle yet appealing visuals.
+
 * Don't make a thin icon. Your icon's weight should be comparable to that of other icons. An overly thin icon won't stand out well on many backgrounds.
+
 * If you would like to give your icon a tilted perspective, it should tilt backward (not forward).
+
+* Avoid simply slapping an element onto a base shape; use a unique outline to make your icon more distinct.
+
+* Take care to properly add light and shadow to inset or extrude foreground elements.
 
 # Text {#text}
 
@@ -1303,7 +1396,7 @@ Ellipses should be used when shortening text that cannot fit in any specific pla
 * End truncation. If the important or distinctive text is at the beginning of the string, truncate it at the end and append an ellipsis.
 * Middle truncation. When the end of the text is more important or distinctive, truncate the text in the middle and replace the truncated text with an ellipsis.
 
-If you're unsure, it's best to use middle truncation as it keeps both the beginning and end of the string in tact. It's also important that you do not ship your app with any truncated text; truncation should only be the result of a user action such as resizing a sidebar or entering custom text.
+If you're unsure, it's best to use middle truncation, as it keeps both the beginning and end of the string intact. It's also important that you do not ship your app with any truncated text; truncation should only be the result of a user action such as resizing a sidebar or entering custom text.
 
 ### When Not to Use Ellipsis {#when-not-to-use-ellipsis}
 

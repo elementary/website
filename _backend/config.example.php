@@ -6,8 +6,8 @@ $config = array(
 
     'release_title'    => 'Loki',
     'release_version'  => '0.4.1',
-    'release_filename' => 'elementaryos-0.4.1-stable.20170517.iso',
-    'release_magnet'   => '1f40a018f69eaabf9b05429f6d52160af4affb91',
+    'release_filename' => 'elementaryos-0.4.1-stable.20180215.iso',
+    'release_magnet'   => '54dca0477d74d88ed051a9cd62fe5359151e7823',
 
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
