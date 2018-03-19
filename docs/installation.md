@@ -6,10 +6,13 @@ If you haven't already, you will need to <a href="/" target="_blank" rel="noopen
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
-* Intel i3 or comparable dual-core 64-bit processor
-* 1 GB of system memory (RAM)
-* 15 GB of disk space
+While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
+
+* Recent Intel i3 or comparable dual-core 64-bit processor
+* 4 GB of system memory (RAM)
+* Solid state drive (SSD) with 15 GB of free space
 * Internet access
+* 1024×768 display
 
 <div class="row alert warning" markdown="1">
 <div class="column alert">
