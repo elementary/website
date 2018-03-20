@@ -44,6 +44,8 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
 ## Indentation {#indentation}
 
+### Vala {#indentation-vala}
+
 Vala code is indented using 4 spaces for consistency and readability.
 
 In classes, functions, loops and general flow control, the first parentheses
@@ -93,6 +95,10 @@ If you are checking the same variable more than twice, use switch/case instead o
            message ("You don't have any recommendation.");
            break;
     }
+
+### Markup {#indentation-markup}
+
+Markup languages like HTML, XML, and YML should use two-space indentation since they are much more verbose and likely to hit line-length issues sooner.
 
 ## Classes and files {#classes-and-files}
 
@@ -202,6 +208,30 @@ limit is 120 characters.
     *
     * Authored by: Author <author@example.com>
     */
+
+## EditorConfig
+
+If your code editor supports [EditorConfig](http://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
+
+```ini
+# EditorConfig <http://EditorConfig.org>
+root = true
+
+# elementary defaults
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = tab
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+tab_width = 4
+
+# Markup files
+[{*.html,*.xml,*.xml.in,*.yml}]
+tab_width = 2
+
+```
 
 # Reporting Bugs {#reporting-bugs}
 
