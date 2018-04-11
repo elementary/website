@@ -20,7 +20,7 @@
     "Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device": "Bluetooth: Alterna o estado Ativado/Desativado do dispositivo bluetooth primário",
     "Power: Hide/Show the percentage of battery remaining": "Energia: Ocultar/Mostrar a porcentagem de bateria restante",
     "Notifications: Toggle Do Not Disturb mode": "Notificações: Alternar modo Não Perturbe",
-    "Session: Show the shutdown dialog": "",
+    "Session: Show the shutdown dialog": "Sessão: Mostrar o diálogo de encerramento",
     "The Dock": "A Dock",
     "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "Na parte inferior da tela está o Dock. Ele contém seus aplicativos favoritos bem como qualquer aplicativo que esteja aberto no momento.",
     "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "",
