@@ -71,8 +71,8 @@
     "For more information related to security patches, read the <a href=\"http://www.ubuntu.com/usn/xenial/\">Ubuntu security notices</a>.": "Para mais informações relacionadas a pacotes de segurança, leia <a href=\"http://www.ubuntu.com/usn/xenial/\">Avisos de segurança do Ubuntu</a>.",
     "System Settings": "",
     "elementary OS comes with a handy app called &quot;System Settings&quot; that controls all of your system-wide (or &quot;global&quot;) preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "O elementary OS vem com um aplicativo útil chamado &quot;Configurações do Sistema&quot; que controla as preferências de todo o seu sistema (ou &quot;globais&quot;). As Configurações do Sistema trazem a possibilidade de ajustar coisas como os atalhos do teclado, resolução do monitor, o seu papel de parede e outras opções.",
-    "Search": "",
-    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "",
-    "App Settings": "",
+    "Search": "Pesquisar",
+    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Você pode achar facilmente configurações que está procurando apenas digitando palavras chave na barra de pesquisa no topo da janela. O conteúdo da janela de Configurações do Sistema vai ser filtrado para corresponder à sua pesquisa.",
+    "App Settings": "Configurações do Aplicativo",
     "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
 }
