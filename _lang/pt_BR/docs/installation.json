@@ -45,7 +45,7 @@
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Abra &quot;Etcher&quot; e selecione seu arquivo de imagem elementary OS baixado usando o botão &quot;Selecionar Imagem&quot;.",
     "Select image in Etcher": "Selecione imagem no Etcher",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "O Etcher deverá detectar automaticamente o seu drive USB, mas verifique se ele escolheu a unidade correta.",
-    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
+    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "Comece o processo de gravação clicando no botão &quot;Flash!&quot;. Irá demorar um momento para começar.",
     "Flash image in Etcher": "",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "Quando terminar esta etapa, você poderá remover seu drive de instalação e tentar realizar boot para instalar o elementary OS.",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "A janela a seguir pode aparecer diversas vezes durante este processo, é seguro ignorar.",
