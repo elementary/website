@@ -74,5 +74,5 @@
     "Search": "Pesquisar",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Você pode achar facilmente configurações que está procurando apenas digitando palavras chave na barra de pesquisa no topo da janela. O conteúdo da janela de Configurações do Sistema vai ser filtrado para corresponder à sua pesquisa.",
     "App Settings": "Configurações do Aplicativo",
-    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
+    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "Tenha em mente que as Configurações do Sistema lida somente com as preferências globais do elementary OS. Todavia, algumas aplicações podem também ter suas próprias preferências que você poderá não aqui. Procure por essas configurações dentro da aplicação em questão."
 }
