@@ -44,7 +44,7 @@
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Insira a pendrive USB, e selecione o arquivo ISO que você acabou de baixar.",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Abra &quot;Etcher&quot; e selecione seu arquivo de imagem elementary OS baixado usando o botão &quot;Selecionar Imagem&quot;.",
     "Select image in Etcher": "Selecione imagem no Etcher",
-    "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "",
+    "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "O Etcher deverá detectar automaticamente o seu drive USB, mas verifique se ele escolheu a unidade correta.",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
     "Flash image in Etcher": "",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "Quando terminar esta etapa, você poderá remover seu drive de instalação e tentar realizar boot para instalar o elementary OS.",
