@@ -604,7 +604,7 @@ Tool Buttons are almost always icon-only and do not provide a button border. The
 
 #### Tooltips {#tool-buttons-tooltips}
 
-All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in Sentence Case.
+All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case).
 
 Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.
 
@@ -614,7 +614,7 @@ Like text button labels, a tooltip should clearly describe what will happen when
 
 #### Labeling {#text-buttons-labeling}
 
-Text Button labels should be done in [Title Case](#title-case).
+Text Button labels should be done in [title case](#title-case).
 
 Like menu items, Text Button labels should consist of an Action or a Location but not a status. Make sure that a button's label clearly describes what will happen when it is pressed.
 
