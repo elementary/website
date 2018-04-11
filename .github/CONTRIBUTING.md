@@ -2,15 +2,6 @@
 
 ## Web Server
 
-### Vagrant
-
-For simplicity a Vagrant file is included. To start you will need:
-
-* [Vagrant](http://www.vagrantup.com/downloads.html)
-* [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
-
-Then simply run `vagrant up`.
-
 ### Simple PHP Server
 
 Alternatively, for a simple local development environment running on PHP, you will need:
