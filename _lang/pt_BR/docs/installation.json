@@ -60,9 +60,9 @@
     "Open UNetbootin from the Dash. It will open a window like the one below:": "Abra UNetbootin pelo Dash. Irá abrir uma janela semelhante a esta:",
     "UNetbootin": "UNetbootin",
     "Select &quot;Diskimage&quot;": "Selecione &quot;Diskimagem&quot;",
-    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "",
+    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Clique em &quot;…&quot; para selecionar a ISO baixada anteriormente.",
     "Unplug all USB memory devices apart from the one you want to use.": "Desconecte todos os dispositivos de memória USB além do que você deseja usar.",
-    "Click &quot;OK&quot; and wait for the process to finish.": "",
+    "Click &quot;OK&quot; and wait for the process to finish.": "Clique em &quot;OK&quot; e aguarde o processo finalizar.",
     "After Installation": "Depois da instalação",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
