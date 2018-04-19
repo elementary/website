@@ -4,13 +4,13 @@
     "Developer": "Developer",
     "Get Involved": "Get Involved",
     "Store": "商店",
-    "This is a development site.": "This is a development site.",
+    "This is a development site.": "此网站还在制作当中。",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.",
     "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
-    "Language": "Language",
-    "Change Site Language": "Change Site Language",
+    "Language": "语言",
+    "Change Site Language": "切换网页语言",
     "Brand": "商标",
-    "Privacy Policy": "隐私条款",
-    "Team": "Team",
-    "Open Source": "Open Source"
+    "Privacy Policy": "隐私政策",
+    "Team": "团队",
+    "Open Source": "开源"
 }
