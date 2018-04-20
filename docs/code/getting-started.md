@@ -397,7 +397,7 @@ See the difference? We just added `_()` around the string! Well, that was easy! 
 
 Now we have to make some changes to our Meson build system and add a couple new files to describe which files we want to translate and which languages we want to translate into.
 
-1. Open up your "meson.build" build and add these lines below your project declaration.
+1. Open up your "meson.build" build and add these lines below your project declaration:
 
         # Include the translations module
         i18n = import('i18n')
@@ -428,7 +428,11 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
     The `merge_file` method combines translating and installing files, similarly to how the `executable` method combines building and installing your app.
 
-3. You might have noticed in the previous step that the `merge_file` method has an `input` and `output`. We're going to append the additional extension `.in` to our .desktop and .appdata.xml files so that this method can take the untranslated files and produce translated files with the correct names.
+3. Still in this file, add the following as the last line:
+
+        subdir('po')
+
+4. You might have noticed in step 2 that the `merge_file` method has an `input` and `output`. We're going to append the additional extension `.in` to our .desktop and .appdata.xml files so that this method can take the untranslated files and produce translated files with the correct names.
 
     ```bash
     git mv data/com.github.yourusername.yourrepositoryname.desktop data/com.github.yourusername.yourrepositoryname.desktop.in
@@ -437,7 +441,7 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
    We use the `git mv` command here instead of renaming in the file manager or with `mv` so that `git` can keep track of the file rename as part of our revision history.
 
-3. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another meson.build file. This time, it's contents will be:
+5. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another meson.build file. This time, it's contents will be:
 
         i18n.gettext(meson.project_name(),
           args: [
@@ -446,30 +450,30 @@ Now we have to make some changes to our Meson build system and add a couple new 
           ]
         )
 
-4. Inside of "po" create another file called "POTFILES" that will contain paths to all of the files you want to translate. For us, this looks like:
+6. Inside of "po" create another file called "POTFILES" that will contain paths to all of the files you want to translate. For us, this looks like:
 
         src/Application.vala
         data/com.github.yourusername.yourrepositoryname.desktop.in
         data/com.github.yourusername.yourrepositoryname.appdata.xml.in
 
-5. We have one more file to create in the "po" directory. This file will be named "LINGUAS" and it should contain the two-letter language codes for all languages you want to provide translations for. As an example, let's add German and Spanish
+7. We have one more file to create in the "po" directory. This file will be named "LINGUAS" and it should contain the two-letter language codes for all languages you want to provide translations for. As an example, let's add German and Spanish
 
         de
         es
 
-6. Now it's time to go back to your build directory and generate some new files! The first one is our translation template or `.pot` file:
+8. Now it's time to go back to your build directory and generate some new files! The first one is our translation template or `.pot` file:
 
         ninja com.github.yourusername.yourrepositoryname-pot
 
     After running this command you should notice a new file in the po directory containing all of the translatable strings for your app.
 
-7. Now we can use this template file to generate translation files for each of the languages we listed in the LINGUAS file with the following command:
+9. Now we can use this template file to generate translation files for each of the languages we listed in the LINGUAS file with the following command:
 
         ninja com.github.yourusername.yourrepositoryname-update-po
 
     You should notice two new files in your po directory called `de.po` and `es.po`. These files are now ready for translaters to localize your app!
 
-8. Last step. Don't forget to add all of the new files we created in the po directory to git:
+10. Last step. Don't forget to add all of the new files we created in the po directory to git:
 
     ```bash
     git add po/
