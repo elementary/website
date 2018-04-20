@@ -66,11 +66,11 @@ We're all done! Now you can download source code hosted on GitHub and upload you
 
 At the time of this writing, elementary OS doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
 
-### Scratch {#scratch}
+### Code {#code}
 
 ![](images/icons/apps/128/accessories-text-editor.svg)
 
-The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
+The first piece of our simple "SDK" is Code. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and a Folder Manager. There are other extensions for Code as well, like the Outline, Terminal, Word Completion, or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
@@ -215,7 +215,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 2. Now go into "hello-again" and create our directory structure including the "src" folder.
 
-3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
+3. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
 4. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
@@ -228,7 +228,7 @@ To create our first real app, we're going to need all the old stuff that we used
         main_window.add (label);
         main_window.show_all ();
 
-6. Build "hello-again.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
+6. Build "Application.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
 7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
 
@@ -245,7 +245,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
+2. Create a new file in Code and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
 
 3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
@@ -258,7 +258,6 @@ Every app comes with a .desktop file. This file contains all the information nee
         Icon=application-default-icon
         Terminal=false
         Type=Application
-        X-GNOME-Gettext-Domain=hello-again
         Keywords=Hello;World;Example;
 
     The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
@@ -319,96 +318,60 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 # The Build System {#the-build-system}
 
-The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
+The next thing we need is a build system. The build system that we're going to be using is called [Meson](http://mesonbuild.com/). We already installed the `meson` program at the beginning of this book when we installed `elementary-sdk`. What we're going to do in this step is create the files that tell Meson how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop and appdata files and the binary app that results from the build process.
 
-Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
+Create a new file in your project's root folder called "meson.build". We've included some comments along the way to explain what each section does. You don't have to copy those, but type the rest into that file:
 
-        # project name
-        project (com.github.yourusername.yourrepositoryname)
+        # project name and programming language
+        project('com.github.yourusername.yourrepositoryname', 'vala', 'c')
 
-        # the oldest stable cmake version we support
-        cmake_minimum_required (VERSION 2.6)
-
-        # tell cmake where its modules can be found in our project directory
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
-
-        # where we install data directory (if we have any)
-        set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-
-        # what to call that directory where we install data too
-        set (PKGDATADIR "${DATADIR}/com.github.yourusername.yourrepositoryname")
-
-        set (EXEC_NAME "com.github.yourusername.yourrepositoryname")
-        set (RELEASE_NAME "A hello world.")
-        set (VERSION "0.1")
-        set (VERSION_INFO "whats up world")
-
-        # we're about to use pkgconfig to make sure dependencies are installed so let's find pkgconfig first
-        find_package(PkgConfig)
-
-        # now let's actually check for the required dependencies
-        pkg_check_modules(DEPS REQUIRED gtk+-3.0)
-
-        add_definitions(${DEPS_CFLAGS})
-        link_libraries(${DEPS_LIBRARIES})
-        link_directories(${DEPS_LIBRARY_DIRS})
-
-        # make sure we have vala
-        find_package(Vala REQUIRED)
-        # make sure we use vala
-        include(ValaVersion)
-        # make sure it's the desired version of vala
-        ensure_vala_version("0.16" MINIMUM)
-
-        # files we want to compile
-        include(ValaPrecompile)
-        vala_precompile(VALA_C ${EXEC_NAME}
-            src/hello-again.vala
-
-        # tell what libraries to use when compiling
-        PACKAGES
-            gtk+-3.0
+        # Create a new executable, list the files we want to compile, list the dependencies we need, and install
+        executable(
+            meson.project_name(),
+            'src/Application.vala',
+            dependencies: [
+                dependency('gtk+-3.0')
+            ],
+            install: true
         )
 
-        # tell cmake what to call the executable we just made
-        add_executable(${EXEC_NAME} ${VALA_C})
+        #Install our .desktop file
+        install_data(
+            meson.project_name() + '.desktop',
+            install_dir : join_paths(get_option('datadir'), 'applications'
+        )
 
-        # install the binaries we just made
-        install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
-
-        # install our .desktop file so the Applications Menu will see it
-        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
-        
-        # install our .appdata.xml file so AppCenter will see it
-        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+        #Install our .appdata file
+        install_data(
+            meson.project_name() + '.appdata.xml',
+            join_paths(get_option('datadir'), 'metainfo'
+        )
 
 And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
 
-## Building and Installing with CMake {#building-and-installing-with-cmake}
+## Building and Installing with Meson {#building-and-installing-with-meson}
 
 Now that we have a build system, let's try it out:
 
-1. Create a new folder in your project's root folder called "build"
-
-2. Change into this directory in terminal and execute the following command:
+1. Configure the build directory using Meson:
 
     ```bash
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    meson build --prefix=/usr
     ```
 
-    This command tells cmake to get ready to build our app using the prefix "/usr". The `cmake` command defaults to installing our app locally, but we want to install our app for all users on the computer.
+    This command tells Meson to get ready to build our app using the prefix "/usr" and that we want to build our app in a clean directory called "build". The `meson` command defaults to installing our app locally, but we want to install our app for all users on the computer.
 
-3. Build your app with `make` and if successful install it with `sudo make install`:
+2. Change into the build directory and use `ninja` to build. Then, if the build is successful, install with `sudo ninja install`:
 
     ```bash
-    make
-    sudo make install
+    cd build
+    ninja
+    sudo ninja install
     ```
 
 If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
-We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
+We'll revisit Meson again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore Meson a little more on your own, you can always check out [Meson's documentation](http://mesonbuild.com/Manual.html).
 
 ## Review {#the-build-system-review}
 Let's review all we've learned to do:
@@ -417,12 +380,12 @@ Let's review all we've learned to do:
 * Keep our projects organized into branches
 * License our app under the GPL and declare our app's authors in a standardized manner
 * Create a .desktop file using RDNN that tells the computer how to display our app in the Applications Menu and the Dock
-* Set up a CMake build system that contains all the rules for building our app and installing it cleanly
+* Set up a Meson build system that contains all the rules for building our app and installing it cleanly
 
-That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
+That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Translations.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
+Now that you've learned about Meson, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
@@ -430,33 +393,83 @@ Now that you've learned about CMake, the next step is to make your app able to b
         string normal = "Another non-translatable string";
         string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy!
+See the difference? We just added `_()` around the string! Well, that was easy! Go back to your project and make all your strings translatable by adding `_()`.
 
-1. Go back to your project and make all your strings translatable by adding `_()`
+Now we have to make some changes to our Meson build system and add a couple new files to describe which files we want to translate and which languages we want to translate into.
 
-2. Add the following lines in the "CMakeLists.txt" file you created a moment ago:
+1. Open up your "meson.build" build and add these lines below your project declaration.
 
-        # Translation files
-        set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
-        add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
-        add_subdirectory (po)
+        # Include the translations module
+        i18n = import('i18n')
 
-3. Create a directory named "po" on the root folder of your project. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+        # Set our translation domain
+        add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
-        include (Translations)
-            add_translations_directory(${GETTEXT_PACKAGE})
-            add_translations_catalog(${GETTEXT_PACKAGE}
-            ../src/
+2. Remove the lines that install your .desktop and appdata files and replace them with the following:
+
+        #Translate and install our .desktop file
+        i18n.merge_file(
+            input: meson.project_name() + '.desktop.in',
+            output: meson.project_name() + '.desktop',
+            po_dir: join_paths(meson.source_root(), 'po'),
+            type: 'desktop',
+            install: true,
+            install_dir: join_paths(get_option('datadir'), 'applications')
         )
 
-4. On your build directory execute the following commands:
+        #Translate and install our .appdata file
+        i18n.merge_file(
+            input: meson.project_name() + '.appdata.xml.in',
+            output: meson.project_name() + '.appdata.xml',
+            po_dir: join_paths(meson.source_root(), 'po'),
+            install: true,
+            install_dir: join_paths(get_option('datadir'), 'metainfo')
+        )
+
+    The `merge_file` method combines translating and installing files, similarly to how the `executable` method combines building and installing your app.
+
+3. You might have noticed in the previous step that the `merge_file` method has an `input` and `output`. We're going to append the additional extension `.in` to our .desktop and .appdata.xml files so that this method can take the untranslated files and produce translated files with the correct names.
 
     ```bash
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
-    make pot
+    git mv data/com.github.yourusername.yourrepositoryname.desktop data/com.github.yourusername.yourrepositoryname.desktop.in
+    git mv data/com.github.yourusername.yourrepositoryname.appdata.xml data/com.github.yourusername.yourrepositoryname.appdata.xml.in
     ```
 
-5. Don't forget to add this new directory and it's contents to git
+   We use the `git mv` command here instead of renaming in the file manager or with `mv` so that `git` can keep track of the file rename as part of our revision history.
+
+3. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another meson.build file. This time, it's contents will be:
+
+        i18n.gettext(meson.project_name(),
+          args: [
+            '--directory=' + meson.source_root(),
+            '--from-code=UTF-8'
+          ]
+        )
+
+4. Inside of "po" create another file called "POTFILES" that will contain paths to all of the files you want to translate. For us, this looks like:
+
+        src/Application.vala
+        data/com.github.yourusername.yourrepositoryname.desktop.in
+        data/com.github.yourusername.yourrepositoryname.appdata.xml.in
+
+5. We have one more file to create in the "po" directory. This file will be named "LINGUAS" and it should contain the two-letter language codes for all languages you want to provide translations for. As an example, let's add German and Spanish
+
+        de
+        es
+
+6. Now it's time to go back to your build directory and generate some new files! The first one is our translation template or `.pot` file:
+
+        ninja com.github.yourusername.yourrepositoryname-pot
+
+    After running this command you should notice a new file in the po directory containing all of the translatable strings for your app.
+
+7. Now we can use this template file to generate translation files for each of the languages we listed in the LINGUAS file with the following command:
+
+        ninja com.github.yourusername.yourrepositoryname-update-po
+
+    You should notice two new files in your po directory called `de.po` and `es.po`. These files are now ready for translaters to localize your app!
+
+8. Last step. Don't forget to add all of the new files we created in the po directory to git:
 
     ```bash
     git add po/
@@ -464,7 +477,7 @@ See the difference? We just added `_()` around the string! Well, that was easy!
     git push
     ```
 
-That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
+That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones that you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from steps 6 and 7. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
 
 # Packaging {#packaging}
 
@@ -477,7 +490,7 @@ If you want to get really good really fast, you're going to want to practice. Re
 1. Create a new branch folder "hello-packaging"
 2. Set up our directory structure including the "src" and "data" folders.
 3. Add your Authors, Copying, .desktop, and source code.
-4. Now set up the CMake build system.
+4. Now set up the Meson build system and translations.
 5. Test everything!
 
 Did you commit and push to GitHub for each step? Keep up these good habits and let's get to packaging this app!
@@ -486,7 +499,7 @@ Did you commit and push to GitHub for each step? Keep up these good habits and l
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
+1. elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
 
     ```bash
     git clone git@github.com:elementary/debian-template.git
@@ -494,15 +507,15 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 2. Copy the "debian" folder from that branch into your "hello-packaging" folder.
 
-3. Open the file called "changelog" and make it look like below:
+3. Use the tool `dch -i` to update your changelog. It should automatically generate something like below:
 
-        hello-packaging (0.1) precise; urgency=low
+        com.github.yourusername.yourrepositoryname (0.1) bionic; urgency=medium
 
           * Initial Release.
 
-         -- Your Name <you@emailaddress.com>  Tue, 9 Apr 2013 04:53:39 -0500
+         -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2018 04:53:39 -0500
 
-     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. Remember that your app's binary name is lowercase and does not contain spaces. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](http://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog).
+     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](http://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog).
 
 4. Open the file called "control" and make it look like below:
 
@@ -510,17 +523,18 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Section: x11
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
-        Build-Depends: cmake (>= 2.8),
-                       cmake-elementary,
-                       debhelper (>= 8.0.0),
-                       valac-0.26 | valac (>= 0.26)
-        Standards-Version: 3.9.3
+        Build-Depends: debhelper (>= 10.5.1),
+                       gettext,
+                       libgtk-3-dev (>= 3.10)
+                       meson,
+                       valac (>= 0.28.0)
+        Standards-Version: 4.1.1
 
         Package: com.github.yourusername.yourrepositoryname
         Architecture: any
         Depends: ${misc:Depends}, ${shlibs:Depends}
         Description: Hey young world
-         This is a Hello World written in Vala using CMake build system.
+         This is a Hello World written in Vala using Meson build system.
 
 5. Open the file called "copyright". We only need to edit what's up top:
 
@@ -528,7 +542,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Upstream-Name: hello-packaging
         Source: https://github.com/yourusername/yourrepositoryname
 
-        Files: src/* data/* cmake/* debian/*
+        Files: src/* data/* debian/*
         Copyright: 2013 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
@@ -536,7 +550,7 @@ That wasn't too bad right? We'll set up more complicated packaging in the future
 
 # Creating Layouts {#creating-layouts}
 
-Now that you know how to code, build, and package an app using Vala, Gtk, CMake, and Debian packaging, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
+Now that you know how to code, build, and package an app using Vala, Gtk, Meson, and Debian packaging, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
 
 ## Widgets as Subclasses of Other Widgets {#widgets-as-subclasses-of-other-widgets}
 
@@ -546,7 +560,7 @@ If you want to understand more about these widgets and the parts of Gtk that the
 
 ## Gtk.Grid {#gtk-grid}
 
-Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with CMake, push it to GitHub, and set up Debian Packaging in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
+Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with Meson, push it to GitHub, and set up Debian Packaging in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
 
 Just like when we add a Button or Label, we need to create our `Gtk.Grid`. As always, don’t copy and paste! Practice makes perfect. We create a new Gtk.Grid like this:
 
@@ -661,7 +675,7 @@ By now you've probably already seen the white notification bubbles that appear o
 ## Making Preparations {#making-preparations}
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
-3. Create a `CMakeLists.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
+3. Create a `meson.build` file. If you don't remember how to set up Meson, go back to the [previous section](#building-and-installing-with-meson) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
@@ -778,32 +792,25 @@ Current Launcher API support:
 | Dock             | Yes              | Yes             | Yes                 | Yes               |
 
 ## Setting Up {#system-integration-setting-up}
-Before writing the code, you must first install the `libunity` library, you can do it by executing
-the following command in your terminal:
+Before writing the code, you must first install the `libunity` library, you can do it by executing the following command in Terminal:
+
 ```
 sudo apt install libunity-dev
 ```
 
-Now it is time to incorporate the Unity library into your project.
-To your build system add an additional `unity` package to your `vala_precompile` CMake call:
+Now let's add the Unity library to your build system. Open your meson.build file and add the new dependency to the `executable` method.
 
-  ```
-  vala_precompile (my_project
-        Application.vala
-        ...
-        PACKAGES
-        unity
-        ...
-  )
-  ```
+        executable(
+            meson.project_name(),
+            'src/Application.vala',
+            dependencies: [
+                dependency('gtk+-3.0'),
+                dependency('unity')
+            ],
+            install: true
+        )
 
-  and to the `pkg_check_modules` call as well:
-  ```
-  pkg_check_modules (DEPS REQUIRED ... unity)
-  ```
-
-  After that you can clear your build directory and build your project again, there
-  should be no errors when building.
+  Though we haven't made any changes to our source code yet, change into your build directory and run `ninja` to build your project. It should still build without any errors. If you do encounter errors, double check your changes and resolve them before continuing.
 
 ## Using the Launcher API {#using-launcher-api}
 Once you've set up `libunity` in your build system it's time to write some code.
