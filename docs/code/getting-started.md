@@ -335,13 +335,13 @@ Create a new file in your project's root folder called "meson.build". We've incl
             install: true
         )
 
-        #Install our .desktop file
+        #Install our .desktop file so the Applications Menu will see it
         install_data(
             meson.project_name() + '.desktop',
             install_dir : join_paths(get_option('datadir'), 'applications'
         )
 
-        #Install our .appdata file
+        #Install our .appdata.xml file so AppCenter will see it
         install_data(
             meson.project_name() + '.appdata.xml',
             join_paths(get_option('datadir'), 'metainfo'
