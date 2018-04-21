@@ -111,9 +111,9 @@ Later on, We'll talk about adding other directories like "po" and "data". For no
 ## Gtk.Application {#gtk-application}
 Now what you've been waiting for! We're going to create a window that contains a button. When pressed, the button will display the text "Hello World!" To do this, we're going to use a widget toolkit called GTK+ and the programming language Vala. Before we begin, we highly recommend that you do not copy and paste. Typing each section manually will help you to practice and remember. Let's get started:
 
-1. Create a new file in Scratch and save it as "gtk-hello.vala" inside your "src" folder
+1. Create a new file in Scratch and save it as "Application.vala" inside your "src" folder
 
-2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "gtk-hello.vala".
+2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "Application.vala".
 
         public class MyApp : Gtk.Application {
 
@@ -143,8 +143,8 @@ Now what you've been waiting for! We're going to create a window that contains a
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
     ```bash
-    valac --pkg gtk+-3.0 gtk-hello.vala
-    ./gtk-hello
+    valac --pkg gtk+-3.0 Application.vala
+    ./Application
     ```
 
     Do you see a new, empty window called "Hello World"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
@@ -176,7 +176,7 @@ After we do anything significant, we must remember to push our code. This is esp
 
 ```bash
 git init
-git add src/gtk-hello.vala
+git add src/Application.vala
 git commit -m "Create initial structure. Create window with button."
 git remote add origin git@github.com:yourusername/yourrepositoryname.git
 git push -u origin master
@@ -184,7 +184,7 @@ git push -u origin master
 
 Remember to replace `yourusername` with your GitHub username and `yourrepositoryname` with the name of the new repository you created.
 
-With these commands, we've told `git` to track revisions in this folder, that we'd like to track revisions on the file "gtk-hello.vala" specifically, we've committed our first revision and explained what we did in the revision, and then we've told `git` to push your code to GitHub.
+With these commands, we've told `git` to track revisions in this folder, that we'd like to track revisions on the file "Application.vala" specifically, we've committed our first revision and explained what we did in the revision, and then we've told `git` to push your code to GitHub.
 
 ## Victory! {#victory}
 
@@ -211,15 +211,13 @@ In the previous chapter, we created a simple "Hello World!" app to show off our 
 
 To create our first real app, we're going to need all the old stuff that we used in the last example. But don't just copy and paste! Let's take this time to practice our skills and see if we can recreate the last example from memory. Additionally, now that you have the basics, we're going to get a little more complex and a little more organized:
 
-1. Create a new folder in "~/Projects" called "hello-world" and put our last project in that folder. Now create a new folder inside "~/Projects/hello-world" called "hello-again". We're doing this because our first "gtk-hello" and "hello-again" are two branches of the same "hello-world" project. As you get more into collaborative development, you're going to have lots of branches. This method will help you stay organized.
+1. Create a new folder inside "~/Projects" called "hello-again".Then, go into "hello-again" and create our directory structure including the "src" folder.
 
-2. Now go into "hello-again" and create our directory structure including the "src" folder.
+2. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
-3. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
+3. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
-4. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
-
-5. For the sake of time let's just put a `Gtk.Label` instead of a `Gtk.Button`. We don't need to try to make the label do anything when you click it.
+4. For the sake of time let's just put a `Gtk.Label` instead of a `Gtk.Button`. We don't need to try to make the label do anything when you click it.
 
         var label = new Gtk.Label ("Hello Again World!");
 
@@ -228,9 +226,9 @@ To create our first real app, we're going to need all the old stuff that we used
         main_window.add (label);
         main_window.show_all ();
 
-6. Build "Application.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
+5. Build "Application.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
-7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
+6. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
 
     ```bash
     git remote add origin git@github.com:yourusername/yourrepositoryname.git
