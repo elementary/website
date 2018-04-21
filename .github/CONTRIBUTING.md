@@ -4,7 +4,7 @@
 
 ### Simple PHP Server
 
-Alternatively, for a simple local development environment running on PHP, you will need:
+For a simple local development environment running on PHP, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php) with:
   * `php7.0-cli`
