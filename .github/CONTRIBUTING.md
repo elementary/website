@@ -7,13 +7,13 @@
 For a simple local development environment running on PHP, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php) with:
-  * `php7.0-cli`
-  * `php7.0-curl`
-  * `php7.0-intl`
-  * `php7.0-json`
-  * `php7.0-mbstring`
-  * `php7.0-sqlite`
-  * `php7.0-xml`
+  * `php-cli`
+  * `php-curl`
+  * `php-intl`
+  * `php-json`
+  * `php-mbstring`
+  * `php-sqlite`
+  * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm install`
@@ -21,7 +21,7 @@ For a simple local development environment running on PHP, you will need:
 These can be most easily installed with this script:
 
 ```
-sudo apt install php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml composer &&
+sudo apt install php-cli php-curl php-intl php-json php-sqlite php-mbstring php-xml composer &&
 sudo apt install nodejs-legacy npm &&
 npm install
 ```
