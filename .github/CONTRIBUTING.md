@@ -29,6 +29,10 @@ npm install
 Then inside the project directory, run `npm run build && npm run start`. Next,
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
+If you are working on CSS and would like an easier time developing, you can run
+the `npx gulp watch` command. This will watch for any CSS and image changes,
+and rebuild on the fly.
+
 ### Nginx Web Server
 
 For a full web-server environment, which includes more redirect and permissions
