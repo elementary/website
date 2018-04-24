@@ -759,6 +759,16 @@ button,
     display: inline-block;
 }
 
+button:hover,
+.button:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 3px 6px rgba(12, 128, 200, 0.16),
+        0 3px 6px rgba(12, 128, 200, 0.23);
+}
+
 button:focus,
 .button:focus {
     border-color: rgba(77, 156, 209, 0.8);

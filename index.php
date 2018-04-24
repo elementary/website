@@ -17,14 +17,14 @@
     );
 
     include $template['header'];
-    include $template['alert'];
+    //include $template['alert'];
 ?>
 
         <section class="section--hero section--stretched">
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4>A fast and open replacement for Windows and macOS</h4>
+                    <h4 class="large">A fast and open replacement for Windows and macOS</h4>
                 </div>
             </div>
 
@@ -63,7 +63,6 @@
             </div>
         </section>
         <section class="grid" id="the-press">
-            <h4>What the press is saying about elementary OS:</h4>
             <div class="third">
                 <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
                 <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
@@ -87,6 +86,20 @@
                     <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more link-light">Read AppCenter Spotlight</a>
                     <p><a href="developer" class="read-more link-light">Become a Developer</a></p>
                 </div>
+            </div>
+        </section>
+        <section class="grid panel">
+            <div class="third">
+                <h2>Open Source</h2>
+                <p>We respect the rights of our users. Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
+            </div>
+            <div class="third">
+                <h2>No Ads. No Spying.</h2>
+                <p>Unlike Windows and Mac, we don't make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
+            </div>
+            <div class="third">
+                <h2>Safe &amp; Secure</h2>
+                <p>We're built on GNU/Linux, one of the most secure systems in the world. It's the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
             </div>
         </section>
         <section>
@@ -327,20 +340,6 @@
                     <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?><h4>Search</h4>
                     <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
                 </div>
-            </div>
-        </section>
-        <section class="grid">
-            <div class="third">
-                <h2>Open Source</h2>
-                <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
-            </div>
-            <div class="third">
-                <h2>No Ads. No Spying.</h2>
-                <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
-            </div>
-            <div class="third">
-                <h2>Safe &amp; Secure</h2>
-                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
             </div>
         </section>
         <section class="grid">
