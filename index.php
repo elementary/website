@@ -77,15 +77,15 @@
                 <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
-        <section id="appcenter" class="grey">
+        <section id="appcenter" class="purple">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary OS AppCenter categories"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.png" style="background-color:rgba(0,0,0,0)"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
-                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
-                    <p><a href="developer" class="read-more">Become a Developer</a></p>
+                    <h1>Introducing <span class="appcenter-title">AppCenter</span></h1>
+                    <p>AppCenter is a one-of-a-kind app store that lets you install curated, native and Open Source applications in elementaryOS. Plus, support indie developers using pay-what-you-want purchases.</p>
+                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more link-light">Read AppCenter Spotlight</a>
+                    <p><a href="developer" class="read-more link-light">Become a Developer</a></p>
                 </div>
             </div>
         </section>

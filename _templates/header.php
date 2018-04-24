@@ -70,10 +70,10 @@ $l10n->begin_html_translation();
 
         <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
