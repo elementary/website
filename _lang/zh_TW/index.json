@@ -1,5 +1,5 @@
 {
-    "A fast and open replacement for Windows and macOS": "輕快、開放，能取代 Windows 和 macOS 的作業系統",
+    "A fast and open replacement for Windows and macOS": "輕快，開放，能取代 Windows 和 macOS 的作業系統",
     "Pay What You Want:": "費用隨您心意：",
     "Custom": "自訂",
     "Enter any dollar amount.": "輸入任意金額。",
@@ -7,12 +7,12 @@
     "0.4.1 Loki | 1.50 GB (for PC or Mac)": "0.4.1 Loki | 1.50 GB (適用 PC 或 Mac)",
     "What the press is saying about elementary OS:": "媒體報導都怎麼評論 elementary OS：",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "「elementary OS 與眾不同… 美麗又強大的作業系統，就算舊電腦也跑得很好」",
-    "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "「快速、低維護性的平臺，幾乎可以四處裝」",
+    "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "「快速、容易維護的平臺，幾乎可以安裝在任何地方。」",
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "「輕量又快速… 完全以社群為基礎，對設計和視覺真正得心應手」",
     "elementary OS AppCenter categories": "elementary OS AppCenter 類別",
     "The Indie, Open Source App Store": "獨立、開源的 App 商店",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "AppCenter 將原生、開源的程式傳遞給 elementary OS。快速探索新程式，並輕鬆更新您已經有的程式。此外，更可以隨心付費購買，直接支援獨立開發者。",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">閱讀 AppCenter Spotlight<\/a>",
+    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">閱讀 AppCenter Spotlight</a>",
     "Become a Developer": "成為開發人員",
     "Task finished": "任務完成",
     "Apps You Need, Without Ones You Don't.": "只有必備 APP，絕無額外累贅",
@@ -69,7 +69,7 @@
     "Open Source": "開源軟體",
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "任何人都可以觀看、研究、編輯、再次散布我們的程式碼。",
     "Learn More": "了解更多",
-    "No Ads. No Spying.": "沒有廣告。無間諜軟體。",
+    "No Ads. No Spying.": "沒有廣告，沒有間諜軟體",
     "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "我們不置入商業廣告，也不蒐集敏感的個資。我們的收入直接來自於使用者。",
     "Safe &amp; Secure": "安全又安心",
     "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "我們的系統建基於 Linux：廣受美國國防部、中國銀行... 等機構採用的作業系統內核心。",
@@ -83,5 +83,5 @@
     "Cancel": "取消",
     "Download": "下載",
     "Torrent Magnet Link": "Torrent 磁力鏈結",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "輕快、開放，能取代 Windows 和 macOS 的作業系統 &sdot; elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "輕快，開放，能取代 Windows 和 macOS 的作業系統 &sdot; elementary OS"
 }
