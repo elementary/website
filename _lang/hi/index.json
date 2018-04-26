@@ -1,6 +1,6 @@
 {
-    "A fast and open replacement for Windows and macOS": "",
-    "Pay What You Want:": "",
+    "A fast and open replacement for Windows and macOS": "विंडोज़ और मैक ओएस का एक तेज़ और मुक्त प्रतिस्थापन",
+    "Pay What You Want:": "अपना मनचाहा भुगतान करें:",
     "Custom": "आपकी इच्छानुसार",
     "Enter any dollar amount.": "कोई भी डॉलर राशि डालें",
     "Purchase elementary OS": "एलीमेंट्री ओएस खरीदें",
@@ -12,7 +12,7 @@
     "elementary OS AppCenter categories": "",
     "The Indie, Open Source App Store": "",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "",
+    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "",
     "Become a Developer": "",
     "Task finished": "",
     "Apps You Need, Without Ones You Don't.": "",
@@ -80,7 +80,7 @@
     "Choose a Download": "एक डाउनलोड का चयन करें",
     "Download from a localized server or by magnet link. For help and more info, see the": "",
     "installation guide": "स्थापना गाइड",
-    "Cancel": "",
+    "Cancel": "रद्द करें",
     "Download": "",
     "Torrent Magnet Link": "टोरेंट मैग्नेट लिंक ",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": ""
