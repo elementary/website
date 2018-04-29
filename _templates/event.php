@@ -10,7 +10,9 @@ require_once __DIR__ . '/../_backend/event.php';
 $l10n->set_domain('layout');
 
 // Insert event based code here.
-if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release') !== '1') { ?>
+if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release') !== '1') {
+    $releaseDate = date('D M d Y H:i:s O', date_timestamp_get($event_expires['juno 0.5.0 release'][1]));
+    ?>
     <div class="countdown-background">
         <div class="countdown-wrapper">
             <div class="countdown"></div>
@@ -50,10 +52,7 @@ if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release')
                     this.base()
                 }
             })
-            var releaseDate = new Date('<?php echo date(
-                'D M d Y H:i:s O',
-                date_timestamp_get($event_expires['juno 0.5.0 release'][1])
-                                        ) ?>')
+            var releaseDate = new Date('<?php echo $releaseDate; ?>')
             var clock = $('.countdown').FlipClock(releaseDate, {
                 clockFace: 'MvpClock',
                 countdown: true
