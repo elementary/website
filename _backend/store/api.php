@@ -103,7 +103,7 @@ function get_varients(string $i)
 function get_shipping(\Store\Address\Address $s, array $i)
 {
     $res = do_request('POST', 'shipping/rates', array(
-        'recipient' => $s->get_shipping(),
+        'recipient' => $s->getShipping(),
         'items' => $i
     ));
 
@@ -135,7 +135,7 @@ function get_shipping(\Store\Address\Address $s, array $i)
 function get_tax_rate(\Store\Address\Address $s)
 {
     $res = do_request('POST', 'tax/rates', array(
-        'recipient' => $s->get_shipping()
+        'recipient' => $s->getShipping()
     ));
 
     return (float)$res['rate'];

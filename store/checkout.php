@@ -37,23 +37,23 @@ if (count($cart) < 1) {
 try {
     $address = new \Store\Address\Address();
 
-    $address->set_name($_POST['name']);
-    $address->set_line1($_POST['address1']);
-    $address->set_city($_POST['city']);
-    $address->set_country($_POST['country']);
-    $address->set_email($_POST['email']);
+    $address->setName($_POST['name']);
+    $address->setLine1($_POST['address1']);
+    $address->setCity($_POST['city']);
+    $address->setCountry($_POST['country']);
+    $address->setEmail($_POST['email']);
 
     if (isset($_POST['address2']) && $_POST['address2'] !== '') {
-        $address->set_line2($_POST['address2']);
+        $address->setLine2($_POST['address2']);
     }
     if (isset($_POST['state']) && $_POST['state'] !== '') {
-        $address->set_state($_POST['state']);
+        $address->setState($_POST['state']);
     }
     if (isset($_POST['postal']) && $_POST['postal'] !== '') {
-        $address->set_postal($_POST['postal']);
+        $address->setPostal($_POST['postal']);
     }
     if (isset($_POST['phone']) && $_POST['phone'] !== '') {
-        $address->set_phone($_POST['phone']);
+        $address->setPhone($_POST['phone']);
     }
 } catch (ValidationException $e) {
     return err($e->getMessage());
@@ -132,7 +132,7 @@ include $template['alert'];
 
     <div class="whole">
         <?php
-        $a = $address->get_string();
+        $a = $address->getString();
 
         $q = [];
         $q['key'] = $config['google_map_key'];
@@ -203,19 +203,19 @@ include $template['alert'];
     </div>
 
     <div class="half list--address">
-        <input type="hidden" name="address-name" value="<?php echo $address->get_name() ?>">
-        <input type="hidden" name="address-line1" value="<?php echo $address->get_line1() ?>">
-        <input type="hidden" name="address-line2" value="<?php echo $address->get_line2() ?>">
-        <input type="hidden" name="address-city" value="<?php echo $address->get_city() ?>">
-        <input type="hidden" name="address-state" value="<?php echo $address->get_state() ?>">
-        <input type="hidden" name="address-country" value="<?php echo $address->get_country() ?>">
-        <input type="hidden" name="address-postal" value="<?php echo $address->get_postal() ?>">
+        <input type="hidden" name="address-name" value="<?php echo $address->getName() ?>">
+        <input type="hidden" name="address-line1" value="<?php echo $address->getLine1() ?>">
+        <input type="hidden" name="address-line2" value="<?php echo $address->getLine2() ?>">
+        <input type="hidden" name="address-city" value="<?php echo $address->getCity() ?>">
+        <input type="hidden" name="address-state" value="<?php echo $address->getState() ?>">
+        <input type="hidden" name="address-country" value="<?php echo $address->getCountry() ?>">
+        <input type="hidden" name="address-postal" value="<?php echo $address->getPostal() ?>">
 
-        <input type="hidden" name="email" value="<?php echo $address->get_email() ?>">
-        <input type="hidden" name="phone" value="<?php echo $address->get_phone() ?>">
+        <input type="hidden" name="email" value="<?php echo $address->getEmail() ?>">
+        <input type="hidden" name="phone" value="<?php echo $address->getPhone() ?>">
 
         <h5>Ship to:</h5>
-        <?php foreach ($address->get_formatted() as $line) { ?>
+        <?php foreach ($address->getFormatted() as $line) { ?>
             <span><?php echo $line ?></span>
         <?php } ?>
     </div>

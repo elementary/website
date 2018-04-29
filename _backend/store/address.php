@@ -110,36 +110,36 @@ class Address
     public function __construct($data = array())
     {
         if (isset($data['name'])) {
-            $this->set_name($data['name']);
+            $this->setName($data['name']);
         }
         if (isset($data['line1'])) {
-            $this->set_line1($data['line1']);
+            $this->setLine1($data['line1']);
         }
         if (isset($data['line2'])) {
-            $this->set_line2($data['line2']);
+            $this->setLine2($data['line2']);
         }
         if (isset($data['city'])) {
-            $this->set_city($data['city']);
+            $this->setCity($data['city']);
         }
         if (isset($data['state'])) {
-            $this->set_state($data['state']);
+            $this->setState($data['state']);
         }
         if (isset($data['country'])) {
-            $this->set_country($data['country']);
+            $this->setCountry($data['country']);
         }
         if (isset($data['postal'])) {
-            $this->set_postal($data['postal']);
+            $this->setPostal($data['postal']);
         }
         if (isset($data['email'])) {
-            $this->set_email($data['email']);
+            $this->setEmail($data['email']);
         }
         if (isset($data['phone'])) {
-            $this->set_phone($data['phone']);
+            $this->setPhone($data['phone']);
         }
     }
 
     // Setter functions
-    public function set_name(string $in)
+    public function setName(string $in)
     {
         \validate_string($in);
 
@@ -150,7 +150,7 @@ class Address
         $this->name = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
-    public function set_line1($in)
+    public function setLine1($in)
     {
         if (!isset($in)) {
             throw new \ValidationException('Address line 1 is not set');
@@ -159,7 +159,7 @@ class Address
         $this->line1 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
-    public function set_line2($in)
+    public function setLine2($in)
     {
         if (!isset($in)) {
             throw new \ValidationException('Address line 2 is not set');
@@ -168,7 +168,7 @@ class Address
         $this->line2 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
-    public function set_city($in)
+    public function setCity($in)
     {
         \validate_string($in);
 
@@ -179,7 +179,7 @@ class Address
         $this->city = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
     }
 
-    public function set_state($in)
+    public function setState($in)
     {
         if (!isset($in)) {
             throw new \ValidationException('State code is not set');
@@ -203,7 +203,7 @@ class Address
         $this->state = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
-    public function set_country($in)
+    public function setCountry($in)
     {
         if (!isset($in) || !is_string($in)) {
             throw new \ValidationException('Country code is not valid');
@@ -219,7 +219,7 @@ class Address
         $this->country = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
-    public function set_postal($in)
+    public function setPostal($in)
     {
         if (!isset($in)) {
             throw new \ValidationException('Postal code is not set');
@@ -228,7 +228,7 @@ class Address
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
-    public function set_email($in)
+    public function setEmail($in)
     {
         \validate_string($in);
 
@@ -239,7 +239,7 @@ class Address
         $this->email = htmlspecialchars($in, ENT_XML1, 'UTF-8');
     }
 
-    public function set_phone($in)
+    public function setPhone($in)
     {
         if (!isset($in)) {
             throw new \ValidationException('Phone number is not set');
@@ -253,47 +253,47 @@ class Address
     }
 
     // Getter functions
-    public function get_name()
+    public function getName()
     {
         return $this->name;
     }
 
-    public function get_line1()
+    public function getLine1()
     {
         return ucwords(strtolower($this->line1));
     }
 
-    public function get_line2()
+    public function getLine2()
     {
         return ucwords(strtolower($this->line2));
     }
 
-    public function get_city()
+    public function getCity()
     {
         return ucwords(strtolower($this->city));
     }
 
-    public function get_state()
+    public function getState()
     {
         return strtoupper($this->state);
     }
 
-    public function get_country()
+    public function getCountry()
     {
         return strtoupper($this->country);
     }
 
-    public function get_postal()
+    public function getPostal()
     {
         return $this->postal;
     }
 
-    public function get_email()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function get_phone()
+    public function getPhone()
     {
         return $this->phone;
     }
@@ -304,27 +304,27 @@ class Address
      *
      * @return String single line of address
      */
-    public function get_string()
+    public function getString()
     {
         $a = [];
 
         if (isset($this->line1)) {
-            $a[] = $this->get_line1();
+            $a[] = $this->getLine1();
         }
         if (isset($this->line2)) {
-            $a[] = $this->get_line2();
+            $a[] = $this->getLine2();
         }
         if (isset($this->city)) {
-            $a[] = $this->get_city();
+            $a[] = $this->getCity();
         }
         if (isset($this->state)) {
-            $a[] = $this->get_state();
+            $a[] = $this->getState();
         }
         if (isset($this->country)) {
-            $a[] = $this->get_country();
+            $a[] = $this->getCountry();
         }
         if (isset($this->postal)) {
-            $a[] = $this->get_postal();
+            $a[] = $this->getPostal();
         }
 
         return implode(' ', $a);
@@ -337,34 +337,34 @@ class Address
      *
      * @return Array each value as a line in a human readable label
      */
-    public function get_formatted()
+    public function getFormatted()
     {
         $a = [];
 
         if (isset($this->name)) {
-            $a[] = $this->get_name();
+            $a[] = $this->getName();
         }
 
         if (isset($this->line1)) {
-            $a[] = $this->get_line1();
+            $a[] = $this->getLine1();
         }
         if (isset($this->line2)) {
-            $a[] = $this->get_line2();
+            $a[] = $this->getLine2();
         }
 
         $line4 = [];
 
         if (isset($this->city)) {
-            $line4[] = $this->get_city();
+            $line4[] = $this->getCity();
         }
         if (isset($this->state)) {
-            $line4[] = $this->get_state();
+            $line4[] = $this->getState();
         }
         if (isset($this->country)) {
-            $line4[] = $this->get_country();
+            $line4[] = $this->getCountry();
         }
         if (isset($this->postal)) {
-            $line4[] = $this->get_postal();
+            $line4[] = $this->getPostal();
         }
 
         $a[] = implode(' ', $line4);
@@ -378,27 +378,27 @@ class Address
      *
      * @return Array list of address information
      */
-    public function get_shipping()
+    public function getShipping()
     {
         $res = array(
-            'name' => $this->get_name(),
-            'address1' => $this->get_line1(),
-            'city' => $this->get_city(),
-            'country_code' => $this->get_country(),
-            'email' => $this->get_email()
+            'name' => $this->getName(),
+            'address1' => $this->getLine1(),
+            'city' => $this->getCity(),
+            'country_code' => $this->getCountry(),
+            'email' => $this->getEmail()
         );
 
         if (isset($this->line2)) {
-            $res['address2'] = $this->get_line2();
+            $res['address2'] = $this->getLine2();
         }
         if (isset($this->state)) {
-            $res['state'] = $this->get_state();
+            $res['state'] = $this->getState();
         }
         if (isset($this->postal)) {
-            $res['zip'] = $this->get_postal();
+            $res['zip'] = $this->getPostal();
         }
         if (isset($this->phone)) {
-            $res['phone'] = $this->get_phone();
+            $res['phone'] = $this->getPhone();
         }
 
         return $res;

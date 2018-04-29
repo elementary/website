@@ -62,23 +62,23 @@ if (count($cart) < 1) {
 try {
     $address = new \Store\Address\Address();
 
-    $address->set_name($_POST['address-name']);
-    $address->set_line1($_POST['address-line1']);
-    $address->set_city($_POST['address-city']);
-    $address->set_country($_POST['address-country']);
-    $address->set_email($_POST['email']);
+    $address->setName($_POST['address-name']);
+    $address->setLine1($_POST['address-line1']);
+    $address->setCity($_POST['address-city']);
+    $address->setCountry($_POST['address-country']);
+    $address->setEmail($_POST['email']);
 
     if (isset($_POST['address-line2']) && $_POST['address-line2'] !== '') {
-        $address->set_line2($_POST['address-line2']);
+        $address->setLine2($_POST['address-line2']);
     }
     if (isset($_POST['address-state']) && $_POST['address-state'] !== '') {
-        $address->set_state($_POST['address-state']);
+        $address->setState($_POST['address-state']);
     }
     if (isset($_POST['address-postal']) && $_POST['address-postal'] !== '') {
-        $address->set_postal($_POST['address-postal']);
+        $address->setPostal($_POST['address-postal']);
     }
     if (isset($_POST['phone']) && $_POST['phone'] !== '') {
-        $address->set_phone($_POST['phone']);
+        $address->setPhone($_POST['phone']);
     }
 } catch (ValidationException $e) {
     return res($e->getMessage());
@@ -141,24 +141,24 @@ try {
         'currency' => 'USD',
         'card' => $_POST['stripe-token'],
         'description' => 'elementary store',
-        'receipt_email' => $address->get_email(),
+        'receipt_email' => $address->getEmail(),
         'shipping' => array(
-            'name' => $address->get_name(),
+            'name' => $address->getName(),
             'address' => array(
-                'line1' => $address->get_line1(),
-                'line2' => $address->get_line2(),
-                'city' => $address->get_city(),
-                'state' => $address->get_state(),
-                'country' => $address->get_country(),
-                'postal_code' => $address->get_postal(),
+                'line1' => $address->getLine1(),
+                'line2' => $address->getLine2(),
+                'city' => $address->getCity(),
+                'state' => $address->getState(),
+                'country' => $address->getCountry(),
+                'postal_code' => $address->getPostal(),
             ),
-            'phone' => $address->get_phone(),
+            'phone' => $address->getPhone(),
             'carrier' => $shipping['name']
         ),
         'metadata' => array(
-            'name' => $address->get_name(),
-            'email' => $address->get_email(),
-            'phone' => $address->get_phone()
+            'name' => $address->getName(),
+            'email' => $address->getEmail(),
+            'phone' => $address->getPhone()
         )
     ));
 } catch (\Stripe\Error\Card $e) {
@@ -173,15 +173,15 @@ try {
         'external_id' => $charge->id,
         'shipping' => $shipping['id'],
         'recipient' => array(
-            'name' => $address->get_name(),
-            'address1' => $address->get_line1(),
-            'address2' => $address->get_line2(),
-            'city' => $address->get_city(),
-            'state_code' => $address->get_state(),
-            'country_code' => $address->get_country(),
-            'zip' => $address->get_postal(),
-            'phone' => $address->get_phone(),
-            'email' => $address->get_email()
+            'name' => $address->getName(),
+            'address1' => $address->getLine1(),
+            'address2' => $address->getLine2(),
+            'city' => $address->getCity(),
+            'state_code' => $address->getState(),
+            'country_code' => $address->getCountry(),
+            'zip' => $address->getPostal(),
+            'phone' => $address->getPhone(),
+            'email' => $address->getEmail()
         ),
         'items' => array(),
         'retail_costs' => array(
@@ -221,9 +221,9 @@ try {
 try {
     $ch = \Stripe\Charge::retrieve($charge->id);
     $ch->metadata = array(
-        'name' => $address->get_name(),
-        'email' => $address->get_email(),
-        'phone' => $address->get_phone(),
+        'name' => $address->getName(),
+        'email' => $address->getEmail(),
+        'phone' => $address->getPhone(),
         'order' => $order['id']
     );
     $ch->save();
