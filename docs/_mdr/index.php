@@ -1,39 +1,38 @@
 <?php
 
-require_once __DIR__.'/settings.php';
+require_once __DIR__ . '/settings.php';
 
-if (
-    is_readable($Request['Directory']) ||
+if (is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
 ) {
-    if ( is_dir($Request['Directory']) ) {
+    if (is_dir($Request['Directory'])) {
         // List pages
 
         // Header
-        require_once $MDR['Core'].'/function.url_to_title.php';
+        require_once $MDR['Core'] . '/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Directory']));
         include $Templates['Header'];
         echo '<div class="row docs-index">';
-        require_once $MDR['Core'].'/function.url_to_title.php';
+        require_once $MDR['Core'] . '/function.url_to_title.php';
         $Title = url_to_title($Request['Trimmed']);
-        if ( !empty($Title) ) {
-            echo '<h2>'.$Title.'</h2>';
+        if (!empty($Title)) {
+            echo '<h2>' . $Title . '</h2>';
         }
 
         // Find Suitable Files
-        require_once $MDR['Core'].'/function.find_files.php';
+        require_once $MDR['Core'] . '/function.find_files.php';
         $Files = Find_Files($Request['Directory']);
         ksort($Files);
 
-        require_once $MDR['Core'].'/function.title_files.php';
+        require_once $MDR['Core'] . '/function.title_files.php';
         $Files = Title_Files($Files);
 
         // List suitable files, or error accordingly.
-        if ( empty($Files) ) {
+        if (empty($Files)) {
             // Don't 404, because the directory does exist.
-            echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
+            echo '<h3>' . $Lang['en']['NO_FILES_IN_DIRECTORY'] . '</h3>';
         } else {
-            require_once $MDR['Core'].'/function.list_files.php';
+            require_once $MDR['Core'] . '/function.list_files.php';
             echo List_Files($Files);
         }
 
@@ -43,7 +42,7 @@ if (
     } else {
         // Render the file
 
-        if ( is_readable($Request['Directory']) ) {
+        if (is_readable($Request['Directory'])) {
             // Apparently this isn't a directory, just a poorly named file.
             $Content = file_get_contents($Request['Directory']);
             $Request['Source'] = $Request['Directory'];
@@ -53,7 +52,7 @@ if (
         }
         $Request['Source'] = str_replace($MDR['Root'], '', $Request['Source']);
 
-        require_once $MDR['Core'].'/function.url_to_title.php';
+        require_once $MDR['Core'] . '/function.url_to_title.php';
         $page['title'] = url_to_title(basename($Request['Source'], '.md'));
 
         // Syntax highlighting
@@ -86,6 +85,6 @@ if (
     }
 } else {
     // Page not found
-    header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
-    include $MDR['Root'].'/404.php';
+    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+    include $MDR['Root'] . '/404.php';
 }

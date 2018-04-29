@@ -14,11 +14,11 @@ require_once __DIR__ . '/../_backend/os-payment.php';
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
 if (isset($_POST['token'])) {
-    $token       = $_POST['token'];
-    $amount      = intval($_POST['amount']);
+    $token = $_POST['token'];
+    $amount = intval($_POST['amount']);
     $description = $_POST['description'];
-    $email       = $_POST['email'];
-    $os          = $_POST['os'];
+    $email = $_POST['email'];
+    $os = $_POST['os'];
 
     // Create the charge on Stripe's servers - this will charge the user's card
     try {
@@ -33,7 +33,7 @@ if (isset($_POST['token'])) {
                 'products' => json_encode(array('ISO-' . $config['release_version']))
             )
         ));
-    } catch(\Stripe\Error\Card $e) {
+    } catch (\Stripe\Error\Card $e) {
         // Don't use log_echo because we don't want finance stuff echoing.
         error_log($e);
         $sentry->captureMessage($e);
@@ -53,7 +53,7 @@ if (isset($_POST['token'])) {
         echo 'Unable to send receipt email';
     }
 
-    require_once __DIR__.'/../_backend/average-payments.php';
+    require_once __DIR__ . '/../_backend/average-payments.php';
 } else {
     echo $config['stripe_pk'];
 }

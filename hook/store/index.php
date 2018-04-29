@@ -15,21 +15,22 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST)) {
 }
 
 try {
-    $res = json_decode(file_get_contents('php://input'), TRUE);
+    $res = json_decode(file_get_contents('php://input'), true);
 
-    if ($res == null) throw new Exception('Unable to decode');
+    if ($res == null) {
+        throw new Exception('Unable to decode');
+    }
 } catch (Exception $e) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Unable to decode data';
     die();
 }
 
-if (
-    (!isset($res['store']) ||
-     !isset($res['type']) ||
-     !isset($res['data']['shipment']['service']) ||
-     !isset($res['data']['order']['external_id']) ||
-     $res['store'] !== 148324)
+if ((!isset($res['store']) ||
+    !isset($res['type']) ||
+    !isset($res['data']['shipment']['service']) ||
+    !isset($res['data']['order']['external_id']) ||
+    $res['store'] !== 148324)
 ) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Incomplete data';
@@ -47,7 +48,7 @@ try {
 
 // And we finally fire off the hook file we need
 if ($res['type'] === 'package_shipped') {
-    require_once __DIR__.'/package_shipped.php';
+    require_once __DIR__ . '/package_shipped.php';
 } else {
     header('HTTP/1.0 415 Unsupported Media Type');
     echo 'Hook type not supported';

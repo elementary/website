@@ -1,11 +1,11 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__ . '/_backend/preload.php';
 
-    $page['name'] = '404';
-    $page['title'] = 'Page Not Found &sdot; elementary';
+$page['name'] = '404';
+$page['title'] = 'Page Not Found &sdot; elementary';
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
 <script>window.statusCode = '404: Page Not Found'</script>
@@ -25,5 +25,5 @@
 </div>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>

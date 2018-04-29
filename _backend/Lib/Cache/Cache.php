@@ -27,7 +27,7 @@ class Cache
      * Gets a value from the cache.
      *
      * @param string $key
-     * @param mixed  $default
+     * @param mixed $default
      *
      * @return mixed
      */
@@ -45,8 +45,8 @@ class Cache
     /**
      * Remembers a value in the cache. Runs closure to generate new cache.
      *
-     * @param string  $key
-     * @param int     $minutes
+     * @param string $key
+     * @param int $minutes
      * @param closure $closure
      *
      * @return mixed
@@ -71,7 +71,7 @@ class Cache
      * NOTE: This is a PHP magic function. Try not to break it.
      *
      * @param string $method
-     * @param array  $parameters
+     * @param array $parameters
      *
      * @return mixed
      */

@@ -1,13 +1,13 @@
 <?php
 
 require __DIR__ . '/bootstrap.php';
-require_once __DIR__.'/log-echo.php';
+require_once __DIR__ . '/log-echo.php';
 
 // Honor the IE do-not-track-header,
 // even though it's set automatically.
 $respectIE = true;
 // Set the DNT variables.
-require_once __DIR__.'/here-miss.php';
+require_once __DIR__ . '/here-miss.php';
 
 date_default_timezone_set('UTC');
 
@@ -28,34 +28,34 @@ if (!empty($_SERVER['REQUEST_URI'])) {
 $sitewide['root'] = '';
 $sitewide['path'] = $requestUri;
 if ($serverRoot == $websiteRoot) {
-	$sitewide['root'] = '/';
+    $sitewide['root'] = '/';
 } elseif (strpos($websiteRoot, $serverRoot) === 0) {
-	$sitewide['root'] = substr($websiteRoot, strlen($serverRoot)).'/';
+    $sitewide['root'] = substr($websiteRoot, strlen($serverRoot)) . '/';
 } else {
-	$websiteArray = explode('/', $websiteRoot);
-	$reqArray = array_filter(explode('/', $requestUri));
-	foreach ($websiteArray as $websiteOffset => $websiteDir) {
-		foreach ($reqArray as $reqOffset => $reqDir) {
-			if ($websiteDir != $reqDir) {
-				continue;
-			}
+    $websiteArray = explode('/', $websiteRoot);
+    $reqArray = array_filter(explode('/', $requestUri));
+    foreach ($websiteArray as $websiteOffset => $websiteDir) {
+        foreach ($reqArray as $reqOffset => $reqDir) {
+            if ($websiteDir != $reqDir) {
+                continue;
+            }
 
-			$max = min(count($websiteArray) - $websiteOffset, count($reqArray) - $reqOffset);
-			for ($i = 0; $i < $max; $i++) {
-				if ($websiteArray[$websiteOffset + $i] != $reqArray[$reqOffset + $i]) {
-					break 2; // Doesn't match
-				}
-			}
+            $max = min(count($websiteArray) - $websiteOffset, count($reqArray) - $reqOffset);
+            for ($i = 0; $i < $max; $i++) {
+                if ($websiteArray[$websiteOffset + $i] != $reqArray[$reqOffset + $i]) {
+                    break 2; // Doesn't match
+                }
+            }
 
-			// Matches
-			$rootArray = array_slice($reqArray, 0, $reqOffset - $max + 1);
-			$sitewide['root'] = '/'.implode('/', $rootArray).'/';
-			break 2;
-		}
-	}
+            // Matches
+            $rootArray = array_slice($reqArray, 0, $reqOffset - $max + 1);
+            $sitewide['root'] = '/' . implode('/', $rootArray) . '/';
+            break 2;
+        }
+    }
 }
 
-$template['header'] = __DIR__.'/../_templates/header.php';
-$template['alert']  = __DIR__.'/../_templates/alert.php';
-$template['legacy'] = __DIR__.'/../_templates/legacy.php';
-$template['footer'] = __DIR__.'/../_templates/footer.php';
+$template['header'] = __DIR__ . '/../_templates/header.php';
+$template['alert'] = __DIR__ . '/../_templates/alert.php';
+$template['legacy'] = __DIR__ . '/../_templates/legacy.php';
+$template['footer'] = __DIR__ . '/../_templates/footer.php';

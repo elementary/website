@@ -2,7 +2,7 @@
 
 namespace Store\Cart;
 
-require_once __DIR__.'/product.php';
+require_once __DIR__ . '/product.php';
 
 /**
  * NOTE: items stored in cart cookie are in the JSON string form of:
@@ -21,7 +21,8 @@ require_once __DIR__.'/product.php';
  *
  * @return Array list of products
  */
-function get_cart () {
+function get_cart()
+{
     $products = \Store\Product\do_open();
 
     if (!isset($_COOKIE['cart'])) {
@@ -35,11 +36,15 @@ function get_cart () {
         list($i, $v) = explode('-', $id, 2);
 
         $key = array_search($i, array_column($products, 'id'));
-        if ($key === null) continue;
+        if ($key === null) {
+            continue;
+        }
         $product = $products[$key];
 
         $key = array_search($v, array_column($product['variants'], 'id'));
-        if ($key === null) continue;
+        if ($key === null) {
+            continue;
+        }
         $variant = $product['variants'][$key];
 
         $f[$id] = array(
@@ -59,7 +64,8 @@ function get_cart () {
  *
  * @return Float price of cart
  */
-function get_subtotal () {
+function get_subtotal()
+{
     $cart = get_cart();
     $price = 0;
 
@@ -67,7 +73,7 @@ function get_subtotal () {
         $price = $price + ($item['quantity'] * $item['variant']['price']);
     }
 
-    return number_format((float) $price, 2);
+    return number_format((float)$price, 2);
 }
 
 /**
@@ -76,7 +82,8 @@ function get_subtotal () {
  *
  * @return Array list of cart products
  */
-function get_shipping () {
+function get_shipping()
+{
     $cart = get_cart();
     $items = [];
 
@@ -98,10 +105,11 @@ function get_shipping () {
  *
  * @return Boolean true if cookie was set
  */
-function set_cart (array $c) {
+function set_cart(array $c)
+{
     $f = [];
     foreach ($c as $item) {
-        if (isset($item['quantity']) && (int) $item['quantity'] > 0) {
+        if (isset($item['quantity']) && (int)$item['quantity'] > 0) {
             $f[$item['product']['id'] . '-' . $item['variant']['id']] = $item['quantity'];
         }
     }
@@ -122,7 +130,8 @@ function set_cart (array $c) {
  *
  * @return Array list of cart items
  */
-function do_parse (array $c) {
+function do_parse(array $c)
+{
     $products = \Store\Product\do_open();
     $f = [];
 
@@ -133,11 +142,15 @@ function do_parse (array $c) {
             list($i, $v) = explode('-', $matches[1], 2);
 
             $key = array_search($i, array_column($products, 'id'));
-            if ($key === null) continue;
+            if ($key === null) {
+                continue;
+            }
             $product = $products[$key];
 
             $key = array_search($v, array_column($product['variants'], 'id'));
-            if ($key === null) continue;
+            if ($key === null) {
+                continue;
+            }
             $variant = $product['variants'][$key];
 
             $f[$i . '-' . $v] = array(
@@ -164,7 +177,8 @@ function do_parse (array $c) {
  *
  * @throws Exception on bad product or variant param given
  */
-function set_quantity (int $i, int $v, int $q = 1) {
+function set_quantity(int $i, int $v, int $q = 1)
+{
     $cart = get_cart();
     $products = \Store\Product\do_open();
 
@@ -205,7 +219,8 @@ function set_quantity (int $i, int $v, int $q = 1) {
  *
  * @throws Exception on bad product or variant param given
  */
-function set_add (int $i, int $v, int $q = 1) {
+function set_add(int $i, int $v, int $q = 1)
+{
     $cart = get_cart();
     $id = $i . '-' . $v;
 

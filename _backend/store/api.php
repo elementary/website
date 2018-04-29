@@ -2,8 +2,8 @@
 
 namespace Store\Api;
 
-require_once __DIR__.'/../config.loader.php';
-require_once __DIR__.'/address.php';
+require_once __DIR__ . '/../config.loader.php';
+require_once __DIR__ . '/address.php';
 
 /**
  * do_request
@@ -11,16 +11,17 @@ require_once __DIR__.'/address.php';
  *
  * @global Array $config site wide configuration
  *
- * @param String $r      RESTful method to use (GET POST etc)
- * @param String $u      url to make the request to
- * @param Array  $a      the request data
- * @param Array  $p      parameters to send on request
+ * @param String $r RESTful method to use (GET POST etc)
+ * @param String $u url to make the request to
+ * @param Array $a the request data
+ * @param Array $p parameters to send on request
  *
  * @return Array parsed request data
  *
  * @throws Exception on missing extension or request returning an error
  */
-function do_request ($r, $u, array $a = array(), array $p = array()) {
+function do_request($r, $u, array $a = array(), array $p = array())
+{
     global $config;
 
     if (!function_exists('json_decode') || !function_exists('json_encode')) {
@@ -68,7 +69,7 @@ function do_request ($r, $u, array $a = array(), array $p = array()) {
         throw new \Exception('do_request: Invalid API response');
     }
 
-    $status = (int) $res['code'];
+    $status = (int)$res['code'];
 
     if ($status < 200 || $status >= 300) {
         throw new \Exception($res['result'], $status);
@@ -85,7 +86,8 @@ function do_request ($r, $u, array $a = array(), array $p = array()) {
  *
  * @return Array list of variends
  */
-function get_varients (string $i) {
+function get_varients(string $i)
+{
     return do_request('GET', "products/variant/$i");
 }
 
@@ -94,11 +96,12 @@ function get_varients (string $i) {
  * Returns a list of shipping rates from Printful api
  *
  * @param \Store\Address\Address $s shipping address
- * @param Arrray                 $i list of items to buy
+ * @param Arrray $i list of items to buy
  *
  * @return Array list of shipping rates
  */
-function get_shipping (\Store\Address\Address $s, array $i) {
+function get_shipping(\Store\Address\Address $s, array $i)
+{
     $res = do_request('POST', 'shipping/rates', array(
         'recipient' => $s->get_shipping(),
         'items' => $i
@@ -114,7 +117,7 @@ function get_shipping (\Store\Address\Address $s, array $i) {
             'id' => $option['id'],
             'name' => $name,
             'expected' => $expected,
-            'cost' => number_format((float) $option['rate'], 2)
+            'cost' => number_format((float)$option['rate'], 2)
         );
     }
 
@@ -129,12 +132,13 @@ function get_shipping (\Store\Address\Address $s, array $i) {
  *
  * @return Number the tax rate
  */
-function get_tax_rate (\Store\Address\Address $s) {
+function get_tax_rate(\Store\Address\Address $s)
+{
     $res = do_request('POST', 'tax/rates', array(
         'recipient' => $s->get_shipping()
     ));
 
-    return (float) $res['rate'];
+    return (float)$res['rate'];
 }
 
 /**
@@ -142,11 +146,12 @@ function get_tax_rate (\Store\Address\Address $s) {
  * Returns the tax price for a given address and subtotal
  *
  * @param |Store\Address\Address $s shipping address
- * @param Number                 $t the cart sub total and shipping
+ * @param Number $t the cart sub total and shipping
  *
  * @return Number the amount of tax
  */
-function get_tax (\Store\Address\Address $s, float $i) {
+function get_tax(\Store\Address\Address $s, float $i)
+{
     $rate = get_tax_rate($s);
 
     return number_format($rate * $i, 2);

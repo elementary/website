@@ -1,47 +1,60 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__ . '/_backend/preload.php';
 
-    $page['title'] = 'Brand &sdot; elementary';
+$page['title'] = 'Brand &sdot; elementary';
 
-    $page['styles'] = array(
-        'styles/brand.css'
-    );
+$page['styles'] = array(
+    'styles/brand.css'
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
 <div class="row docs">
     <h1>Brand</h1>
-    <p>The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
+    <p>The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports
+        development of elementary products. However, we have a great community and don’t want to be too overbearing with
+        legal requirements and technicalities. As such, we have written up some guidelines to make it easier to
+        understand when and how the elementary brand should be used.</p>
 
     <h2>Name</h2>
-    <p>The word "elementary" refers to and is a trademark of elementary LLC. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. "elementary OS") to refer to a specific product of elementary.</p>
+    <p>The word "elementary" refers to and is a trademark of elementary LLC. elementary is always lower-case, even when
+        beginning sentences such as this. It is also used along with product names (i.e. "elementary OS") to refer to a
+        specific product of elementary.</p>
 
     <h2>Brand Marks</h2>
-    <p>elementary owns two marks: the "elementary" logotype and the "e" logomark. Both are considered trademarks and represent elementary—the company—and its products.</p>
+    <p>elementary owns two marks: the "elementary" logotype and the "e" logomark. Both are considered trademarks and
+        represent elementary—the company—and its products.</p>
     <p>Both should be used with the following in mind:</p>
     <ul>
         <li>Do not stretch, skew, rotate, flip, or otherwise alter the marks.</li>
         <li>Do not use the marks on an overly-busy background; solid colors work best.</li>
-        <li>The marks should always be monochromatic; typically white if on a dark background, or black if on a light background.</li>
+        <li>The marks should always be monochromatic; typically white if on a dark background, or black if on a light
+            background.
+        </li>
     </ul>
 
     <h3>Logotype</h3>
-    <img src="<?php echo $sitewide['root'];?>images/brand/logotype.png" alt="elementary Logotype"/>
-    <p>The logotype is to be used when space allows to refer to elementary the company. It can be used before a product name to refer to a specific product of elementary.</p>
+    <img src="<?php echo $sitewide['root']; ?>images/brand/logotype.png" alt="elementary Logotype"/>
+    <p>The logotype is to be used when space allows to refer to elementary the company. It can be used before a product
+        name to refer to a specific product of elementary.</p>
     <p>The logotype should always be used under the following guidelines:</p>
     <ul>
-        <li>Do not attempt to recreate the logotype. It is a meticulously-designed brand mark, not simply "elementary" written in a specific font.</li>
+        <li>Do not attempt to recreate the logotype. It is a meticulously-designed brand mark, not simply "elementary"
+            written in a specific font.
+        </li>
         <li>Do not use the logotype at small sizes; if it is not clear, use the logomark instead.</li>
     </ul>
 
     <h3>Logomark</h3>
-    <img src="<?php echo $sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
-    <p>The "e" logomark is to be used to refer to elementary the company when space is constrained or a square ratio is required.</p>
+    <img src="<?php echo $sitewide['root']; ?>images/brand/logomark.png" alt="elementary Logomark"/>
+    <p>The "e" logomark is to be used to refer to elementary the company when space is constrained or a square ratio is
+        required.</p>
 
     <h2>Color</h2>
-    <p>elementary employs the use of color combined with our name and marks to establish our brand. We use the following palette:</p>
+    <p>elementary employs the use of color combined with our name and marks to establish our brand. We use the following
+        palette:</p>
     <div class="color-palette-section">
         <div class="color-palette-box">
             <div class="color-palette-header" style="background: #c6262e; color: #ffffff;">
@@ -306,11 +319,13 @@
     </div>
 
     <h2>Fonts</h2>
-    <p>For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.</p>
+    <p>For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto
+        Mono.</p>
 
     <section id="community">
         <h2>Third Parties &amp; Community</h2>
-        <p>We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:</p>
+        <p>We encourage third party developers creating products for elementary OS to adopt certain elements of the
+            elementary brand to achieve consistency:</p>
         <ul>
             <li>Color</li>
             <li>Fonts</li>
@@ -318,42 +333,67 @@
         </ul>
         <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
         <ul>
-            <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
-            <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
+            <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use
+                the elementary name or marks as part of the name of your company, application, product, service, or in
+                any logo you create.
+            </li>
+            <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary
+                OS).
+            </li>
         </ul>
 
         <h3>Community</h3>
         <p>Community products (sites, fan clubs, etc.) are encouraged to use the elementary Community logo:</p>
-        <img src="<?php echo $sitewide['root'];?>images/brand/community-color.png" alt="elementary Community Logo with color"/>
-        <img src="<?php echo $sitewide['root'];?>images/brand/community-black.png" alt="elementary Community Logo in black"/>
-        <p>This helps establish the product as part of the overall elementary community while reducing confusion that can arise from using the main logomark.</p>
+        <img src="<?php echo $sitewide['root']; ?>images/brand/community-color.png"
+             alt="elementary Community Logo with color"/>
+        <img src="<?php echo $sitewide['root']; ?>images/brand/community-black.png"
+             alt="elementary Community Logo in black"/>
+        <p>This helps establish the product as part of the overall elementary community while reducing confusion that
+            can arise from using the main logomark.</p>
     </section>
 
     <section id="hardware">
         <h2>Hardware Distributors</h2>
-        <p>We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.</p>
-        <p>The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:</p>
+        <p>We want to ensure that as long as our software carries the elementary branding, the experience will be
+            consistent whether it was downloaded from our website or pre-installed on a hardware product.</p>
+        <p>The software components of elementary OS may be modified and redistributed according to the terms of the
+            software’s licensing. However, our brand marks may only be redistributed under one or more of the following
+            conditions:</p>
         <ol>
-            <li>The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or</li>
+            <li>The software remains unchanged, including pre-installed applications, stylesheets and iconography,
+                configuration files, etc., or
+            </li>
             <li>The modifications are approved in writing by elementary.</li>
         </ol>
-        <p>We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a> for clarification or direction.</p>
-        <p>If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:</p>
+        <p>We understand that including drivers, hardware enablement, and distributor branding is important for
+            distributors, so these modifications will almost always be approved by elementary. If in doubt, please email
+            <a href="mailto:brand@elementary.io">brand@elementary.io</a> for clarification or direction.</p>
+        <p>If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s
+            trademarks from the OS should be simple and straightforward:</p>
         <ol>
-            <li>Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.</li>
-            <li>Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.</li>
-            <li>Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.</li>
+            <li>Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude
+                our trademarks.
+            </li>
+            <li>Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code>
+                in each of the provided sizes does not appear in the OS.
+            </li>
+            <li>Remove the packages <code>plymouth-theme-elementary</code> and
+                <code>plymouth-theme-elementary-text</code>.
+            </li>
         </ol>
     </section>
 
     <h2>Merchandise</h2>
-    <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>
+    <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party
+        merchandise.</p>
 
     <h2>Assets &amp; More Info</h2>
-    <a class="button suggested-action" href="https://github.com/elementary/brand"><i class="fa fa-github"></i> Download on GitHub</a>
-    <p>For further information regarding the use of the elementary name, branding, and trademarks, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a>.</p>
+    <a class="button suggested-action" href="https://github.com/elementary/brand"><i class="fa fa-github"></i> Download
+        on GitHub</a>
+    <p>For further information regarding the use of the elementary name, branding, and trademarks, please email <a
+            href="mailto:brand@elementary.io">brand@elementary.io</a>.</p>
 </div>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>

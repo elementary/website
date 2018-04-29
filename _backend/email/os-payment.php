@@ -17,7 +17,8 @@ $mandrill = new Mandrill($config['mandrill_key']);
  * @param {\Stripe\Charge} $charge - Stripe charge used for payment
  * @return {Array} - Mandrill response
  */
-function email_os_payment (\Stripe\Charge $charge) {
+function email_os_payment(\Stripe\Charge $charge)
+{
     global $mandrill;
 
     if (!isset($charge) || !isset($charge['metadata'])) {

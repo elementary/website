@@ -9,9 +9,12 @@ if (isset($config['sentry_key']) && $config['sentry_key'] !== false) {
 }
 
 // Log an error and also echo it.
-function log_echo($msg) {
+function log_echo($msg)
+{
     global $sentry;
     error_log($msg);
-    if ( $sentry ) $sentry->captureMessage($msg);
-    echo $msg.PHP_EOL;
+    if ($sentry) {
+        $sentry->captureMessage($msg);
+    }
+    echo $msg . PHP_EOL;
 }

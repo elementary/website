@@ -20,25 +20,25 @@ $root = realpath(__DIR__ . '/../..');
 
 $cli->arguments->add([
     'page' => [
-        'prefix'      => 'p',
-        'longPrefix'  => 'page',
+        'prefix' => 'p',
+        'longPrefix' => 'page',
         'description' => 'Page to extract',
     ],
     'domain' => [
-        'prefix'      => 'd',
-        'longPrefix'  => 'domain',
+        'prefix' => 'd',
+        'longPrefix' => 'domain',
         'description' => 'Domain to extract'
     ],
     'verbose' => [
-        'prefix'      => 'v',
-        'longPrefix'  => 'verbose',
+        'prefix' => 'v',
+        'longPrefix' => 'verbose',
         'description' => 'Verbose output',
-        'noValue'     => true,
+        'noValue' => true,
     ],
     'help' => [
-        'longPrefix'  => 'help',
+        'longPrefix' => 'help',
         'description' => 'Prints a usage statement',
-        'noValue'     => true,
+        'noValue' => true,
     ]
 ]);
 $cli->arguments->parse();
@@ -88,7 +88,7 @@ if ($currentTranslations === false) {
  * captureTranslations
  * L10n translation callback
  *
- * @param  string $id     The source string
+ * @param  string $id The source string
  * @param  string $domain The translation domain
  * @param  string $string The translation string
  * @return Void
@@ -120,7 +120,7 @@ function captureTranslations($id, $domain, $string)
  * translateMarkdown
  * Translates a page of markdown
  *
- * @param  string $path   Path to markdown file
+ * @param  string $path Path to markdown file
  * @param  string $domain Page URL without extension
  * @return void           All translations kept in $currentTranslations array
  */
@@ -143,7 +143,7 @@ function translateMarkdown($path, $domain)
  * translatePHP
  * Translates a wall of PHP HTML code
  *
- * @param  string $path   Path to PHP file
+ * @param  string $path Path to PHP file
  * @param  string $domain Page URL without extension
  * @return void           All translations kept in $currentTranslations array
  */

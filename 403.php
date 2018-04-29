@@ -1,11 +1,11 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__ . '/_backend/preload.php';
 
-    $page['name'] = '403';
-    $page['title'] = 'Access Denied &sdot; elementary';
+$page['name'] = '403';
+$page['title'] = 'Access Denied &sdot; elementary';
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
 <script>window.statusCode = '403: Forbidden'</script>
@@ -25,5 +25,5 @@
 </div>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>

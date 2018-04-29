@@ -38,8 +38,8 @@ class BaseStore
     /**
      * Puts many values into the file.
      *
-     * @param array $items   $key
-     * @param int   $minutes
+     * @param array $items $key
+     * @param int $minutes
      */
     public function putMany(array $items, $minutes = 0)
     {

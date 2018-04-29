@@ -26,16 +26,16 @@ interface StoreInterface
      * Puts a value into the cache.
      *
      * @param string $key
-     * @param mixed  $value
-     * @param int    $minutes
+     * @param mixed $value
+     * @param int $minutes
      */
     public function put($key, $value, $minutes = 0);
 
     /**
      * Puts many values into the cache.
      *
-     * @param array $items   $key
-     * @param int   $minutes
+     * @param array $items $key
+     * @param int $minutes
      */
     public function putMany(array $items, $minutes = 0);
 
@@ -43,7 +43,7 @@ interface StoreInterface
      * Sets a value to be cached forever.
      *
      * @param string $key
-     * @param mixed  $value
+     * @param mixed $value
      */
     public function forever($key, $value);
 

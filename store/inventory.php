@@ -2,8 +2,8 @@
 
 namespace Store\Cart;
 
-require_once __DIR__.'/../_backend/preload.php';
-require_once __DIR__.'/../_backend/store/cart.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/store/cart.php';
 
 $cart = get_cart();
 
@@ -14,8 +14,8 @@ $q = $_GET['quantity'] ?? $_POST['quantity'] ?? 1;
 $s = $_GET['simple'] ?? $_POST['simple'] ?? false;
 
 if ($m === 'show') {
-   echo json_encode($cart);
-   return;
+    echo json_encode($cart);
+    return;
 }
 
 if ($i === false) {
@@ -35,19 +35,23 @@ if ($m === 'add') {
         echo 'Unable to add to cart';
         return;
     }
-} else if ($m === 'set') {
-    try {
-        $res = set_quantity($i, $v, $q);
-    } catch (Exception $e) {
-        echo 'Unable to set quantity';
-        return;
+} else {
+    if ($m === 'set') {
+        try {
+            $res = set_quantity($i, $v, $q);
+        } catch (Exception $e) {
+            echo 'Unable to set quantity';
+            return;
+        }
     }
 }
 
 if ($res === false) {
     echo 'Unable to set cookie';
-} else if ($s) {
-    echo 'OK';
 } else {
-    header("Location: " . $sitewide['root'] . "store/cart");
+    if ($s) {
+        echo 'OK';
+    } else {
+        header("Location: " . $sitewide['root'] . "store/cart");
+    }
 }

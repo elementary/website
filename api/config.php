@@ -5,9 +5,9 @@
  * Live-generated JSON configuration for use in client side javascript
  */
 
-require_once __DIR__.'/../_backend/classify.current.php';
-require_once __DIR__.'/../_backend/config.loader.php';
-require_once __DIR__.'/../_backend/here-miss.php';
+require_once __DIR__ . '/../_backend/classify.current.php';
+require_once __DIR__ . '/../_backend/config.loader.php';
+require_once __DIR__ . '/../_backend/here-miss.php';
 
 $output = array(
     'release' => array(

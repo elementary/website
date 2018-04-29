@@ -19,25 +19,25 @@ $root = realpath(__DIR__ . '/../..');
 
 $cli->arguments->add([
     'language' => [
-        'prefix'       => 'l',
-        'longPrefix'   => 'language',
-        'description'  => 'Language to extract',
+        'prefix' => 'l',
+        'longPrefix' => 'language',
+        'description' => 'Language to extract',
     ],
     'page' => [
-        'prefix'      => 'p',
-        'longPrefix'  => 'page',
+        'prefix' => 'p',
+        'longPrefix' => 'page',
         'description' => 'Page to extract written like docs/getting-started',
     ],
     'verbose' => [
-        'prefix'      => 'v',
-        'longPrefix'  => 'verbose',
+        'prefix' => 'v',
+        'longPrefix' => 'verbose',
         'description' => 'Verbose output',
-        'noValue'     => true,
+        'noValue' => true,
     ],
     'help' => [
-        'longPrefix'  => 'help',
+        'longPrefix' => 'help',
         'description' => 'Prints a usage statement',
-        'noValue'     => true,
+        'noValue' => true,
     ]
 ]);
 $cli->arguments->parse();

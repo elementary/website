@@ -7,8 +7,8 @@
 
 require_once __DIR__ . '/../_backend/bootstrap.php';
 
-require_once __DIR__.'/../_backend/preload.php';
-require_once __DIR__.'/../_backend/os-payment.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/os-payment.php';
 
 \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -18,7 +18,8 @@ require_once __DIR__.'/../_backend/os-payment.php';
  *
  * @return {Void}
  */
-function go_home() {
+function go_home()
+{
     global $sitewide;
 
     header("Location: " . $sitewide['root']);

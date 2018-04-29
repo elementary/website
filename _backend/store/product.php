@@ -2,7 +2,7 @@
 
 namespace Store\Product;
 
-const STORE_FILE = __DIR__.'/../../data/store.json';
+const STORE_FILE = __DIR__ . '/../../data/store.json';
 
 /**
  * do_save
@@ -10,7 +10,8 @@ const STORE_FILE = __DIR__.'/../../data/store.json';
  *
  * @param Array $i list of products
  */
-function do_save (array $i) {
+function do_save(array $i)
+{
     file_put_contents(STORE_FILE, json_encode($i, JSON_PRETTY_PRINT));
 }
 
@@ -20,7 +21,8 @@ function do_save (array $i) {
  *
  * @return Array list of products
  */
-function do_open () {
+function do_open()
+{
     return json_decode(file_get_contents(STORE_FILE), true);
 }
 
@@ -30,7 +32,8 @@ function do_open () {
  *
  * @return Array list of products
  */
-function get_products () {
+function get_products()
+{
     $products = do_open();
 
     foreach ($products as &$product) {
@@ -49,8 +52,12 @@ function get_products () {
                 $product['price_min'] = $variant['price'];
             }
 
-            if (!in_array($variant['size'], $product['size'])) $product['size'][] = $variant['size'];
-            if (!in_array($variant['color'], $product['color'])) $product['color'][] = $variant['color'];
+            if (!in_array($variant['size'], $product['size'])) {
+                $product['size'][] = $variant['size'];
+            }
+            if (!in_array($variant['color'], $product['color'])) {
+                $product['color'][] = $variant['color'];
+            }
         }
     }
 

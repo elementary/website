@@ -1,88 +1,99 @@
 <?php
-    require_once __DIR__.'/../_backend/preload.php';
-    require_once __DIR__.'/../_backend/store/api.php';
-    require_once __DIR__.'/../_backend/store/cart.php';
-    require_once __DIR__.'/../_backend/store/validation.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/store/api.php';
+require_once __DIR__ . '/../_backend/store/cart.php';
+require_once __DIR__ . '/../_backend/store/validation.php';
 
-    /**
-     * err
-     * A small little redirection helper for error checking
-     *
-     * @param String $m a message to show on cart
-     */
-    function err ($m = 'Error while checking out') {
-        global $sitewide;
+/**
+ * err
+ * A small little redirection helper for error checking
+ *
+ * @param String $m a message to show on cart
+ */
+function err($m = 'Error while checking out')
+{
+    global $sitewide;
 
-        header("Location: " . $sitewide['root'] . "store/cart?error=" . urlencode($m));
-        return;
+    header("Location: " . $sitewide['root'] . "store/cart?error=" . urlencode($m));
+    return;
+}
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    err();
+}
+
+try {
+    $cart = \Store\Cart\do_parse($_POST);
+
+    $subtotal = \Store\Cart\get_subtotal();
+} catch (Exception $e) {
+    return err('Unable to retrieve cart');
+}
+
+if (count($cart) < 1) {
+    return err('Cannot checkout with an empty cart');
+}
+
+try {
+    $address = new \Store\Address\Address();
+
+    $address->set_name($_POST['name']);
+    $address->set_line1($_POST['address1']);
+    $address->set_city($_POST['city']);
+    $address->set_country($_POST['country']);
+    $address->set_email($_POST['email']);
+
+    if (isset($_POST['address2']) && $_POST['address2'] !== '') {
+        $address->set_line2($_POST['address2']);
     }
-
-    if ($_SERVER['REQUEST_METHOD'] !== 'POST') err();
-
-    try {
-        $cart = \Store\Cart\do_parse($_POST);
-
-        $subtotal = \Store\Cart\get_subtotal();
-    } catch (Exception $e) {
-        return err('Unable to retrieve cart');
+    if (isset($_POST['state']) && $_POST['state'] !== '') {
+        $address->set_state($_POST['state']);
     }
-
-    if (count($cart) < 1) {
-        return err('Cannot checkout with an empty cart');
+    if (isset($_POST['postal']) && $_POST['postal'] !== '') {
+        $address->set_postal($_POST['postal']);
     }
-
-    try {
-        $address = new \Store\Address\Address();
-
-        $address->set_name($_POST['name']);
-        $address->set_line1($_POST['address1']);
-        $address->set_city($_POST['city']);
-        $address->set_country($_POST['country']);
-        $address->set_email($_POST['email']);
-
-        if (isset($_POST['address2']) && $_POST['address2'] !== '') $address->set_line2($_POST['address2']);
-        if (isset($_POST['state']) && $_POST['state'] !== '') $address->set_state($_POST['state']);
-        if (isset($_POST['postal']) && $_POST['postal'] !== '') $address->set_postal($_POST['postal']);
-        if (isset($_POST['phone']) && $_POST['phone'] !== '') $address->set_phone($_POST['phone']);
-    } catch (ValidationException $e) {
-        return err($e->getMessage());
-    } catch (Exception $e) {
-        error_log($e);
-        return err('Unable to validate shipping information');
+    if (isset($_POST['phone']) && $_POST['phone'] !== '') {
+        $address->set_phone($_POST['phone']);
     }
+} catch (ValidationException $e) {
+    return err($e->getMessage());
+} catch (Exception $e) {
+    error_log($e);
+    return err('Unable to validate shipping information');
+}
 
-    try {
-        $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
-        $shipping_default = $shipping[0];
-    } catch (Exception $e) {
-        error_log($e);
-        return err('Unable to get shipping rates');
-    }
+try {
+    $shipping = \Store\Api\get_shipping($address, \Store\Cart\get_shipping());
+    $shipping_default = $shipping[0];
+} catch (Exception $e) {
+    error_log($e);
+    return err('Unable to get shipping rates');
+}
 
-    try {
-        $tax_rate = \Store\Api\get_tax_rate($address);
-        $tax = \Store\Api\get_tax($address, $subtotal + $shipping_default['cost']);
-    } catch (Exception $e) {
-        return err('Unable to get tax rates');
-    }
+try {
+    $tax_rate = \Store\Api\get_tax_rate($address);
+    $tax = \Store\Api\get_tax($address, $subtotal + $shipping_default['cost']);
+} catch (Exception $e) {
+    return err('Unable to get tax rates');
+}
 
-    $total = number_format($subtotal + $tax + $shipping_default['cost'], 2);
+$total = number_format($subtotal + $tax + $shipping_default['cost'], 2);
 
-    $page['title'] = 'Checkout &sdot; elementary';
+$page['title'] = 'Checkout &sdot; elementary';
 
-    $page['styles'] = array(
-        'styles/store.css'
-    );
+$page['styles'] = array(
+    'styles/store.css'
+);
 
-    $page['scripts'] = array(
-        'scripts/store/checkout.js'
-    );
+$page['scripts'] = array(
+    'scripts/store/checkout.js'
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
-<script>window.stripeKey = '<?php include __DIR__.'/../api/payment.php'; ?>'</script>
+<script>window.stripeKey = '<?php include __DIR__ . '/../api/payment.php'; ?>'</script>
 
 <form action="<?php echo $page['lang-root'] ?>store/order" method="post" class="grid grid--narrow">
 
@@ -93,15 +104,19 @@
     <div class="whole">
         <table class="list--shipping">
             <?php
-                foreach ($shipping as $index => $option) {
-                    $sel = ($index === 0) ? 'checked' : '';
-            ?>
+            foreach ($shipping as $index => $option) {
+                $sel = ($index === 0) ? 'checked' : '';
+                ?>
                 <tr class="list__item">
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-name' value='<?php echo $option['name'] ?>'>
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-expected' value='<?php echo $option['expected'] ?>'>
-                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-cost' value='<?php echo $option['cost'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-name'
+                           value='<?php echo $option['name'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-expected'
+                           value='<?php echo $option['expected'] ?>'>
+                    <input type='hidden' name='shipping-<?php echo $option['id'] ?>-cost'
+                           value='<?php echo $option['cost'] ?>'>
 
-                    <td class="list__row"><input type='radio' name='shipping' value='<?php echo $option['id'] ?>' <?php echo $sel ?>></td>
+                    <td class="list__row"><input type='radio' name='shipping'
+                                                 value='<?php echo $option['id'] ?>' <?php echo $sel ?>></td>
                     <td class="list__row"><?php echo $option['name'] ?></td>
                     <td class="list__row"><?php echo $option['expected'] ?></td>
                     <td class="list__row">$<?php echo $option['cost'] ?></td>
@@ -110,28 +125,30 @@
         </table>
     </div>
     <div class="whole">
-        <small>Shipments outside of the USA may incur customs fees depending on the destination country, your order value, and other factors based on the product itself.</small>
+        <small>Shipments outside of the USA may incur customs fees depending on the destination country, your order
+            value, and other factors based on the product itself.
+        </small>
     </div>
 
     <div class="whole">
         <?php
-            $a = $address->get_string();
+        $a = $address->get_string();
 
-            $q = [];
-            $q['key'] = $config['google_map_key'];
-            $q['center'] = $a;
-            $q['markers'] = $a;
-            $q['size'] = '640x320';
-            $q['scale'] = 2;
-            $q['zoom'] = 17;
-            $q = http_build_query($q);
+        $q = [];
+        $q['key'] = $config['google_map_key'];
+        $q['center'] = $a;
+        $q['markers'] = $a;
+        $q['size'] = '640x320';
+        $q['scale'] = 2;
+        $q['zoom'] = 17;
+        $q = http_build_query($q);
 
-            $url = "https://maps.googleapis.com/maps/api/staticmap?$q";
+        $url = "https://maps.googleapis.com/maps/api/staticmap?$q";
 
-            $headers = @get_headers($url);
-            if ($headers[0] === 'HTTP/1.0 200 OK') {
-        ?>
-        <img id="shipping-photo" src="<?php echo $url ?>" alt="shipping address">
+        $headers = @get_headers($url);
+        if ($headers[0] === 'HTTP/1.0 200 OK') {
+            ?>
+            <img id="shipping-photo" src="<?php echo $url ?>" alt="shipping address">
         <?php } ?>
     </div>
 
@@ -139,10 +156,10 @@
         <div class="list list--product">
 
             <?php
-                foreach ($cart as $index => $item) {
-                    $product = $item['product'];
-                    $variant = $item['variant'];
-            ?>
+            foreach ($cart as $index => $item) {
+                $product = $item['product'];
+                $variant = $item['variant'];
+                ?>
 
                 <div class="list__item" id="product-<?php echo $index ?>">
                     <img src="<?php echo $product['image'] ?>"/>
@@ -150,7 +167,8 @@
                         <b><?php echo $variant['name'] ?></b>
                     </div>
                     <div class="list__detail">
-                        <input type="hidden" name="product-<?php echo $index ?>-price" value="<?php echo $variant['price'] ?>">
+                        <input type="hidden" name="product-<?php echo $index ?>-price"
+                               value="<?php echo $variant['price'] ?>">
 
                         <span class="alert--error"></span>
 
@@ -175,7 +193,7 @@
 
                 <h4 id='cart-subtotal'>Sub-Total: $<?php echo $subtotal ?></h4>
                 <?php if ($tax !== 0) { ?>
-                <h4 id='cart-tax'>Tax: $<?php echo $tax ?></h4>
+                    <h4 id='cart-tax'>Tax: $<?php echo $tax ?></h4>
                 <?php } ?>
                 <h4 id='cart-shipping'>Shipping: $<?php echo $shipping_default['cost'] ?></h4>
                 <hr>
@@ -198,7 +216,7 @@
 
         <h5>Ship to:</h5>
         <?php foreach ($address->get_formatted() as $line) { ?>
-        <span><?php echo $line ?></span>
+            <span><?php echo $line ?></span>
         <?php } ?>
     </div>
 
@@ -219,5 +237,5 @@
 </form>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>

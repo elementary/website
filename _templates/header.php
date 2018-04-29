@@ -1,18 +1,20 @@
 <?php
 
 if (!isset($l10n)) {
-   $l10n = new \App\Lib\L10n();
+    $l10n = new \App\Lib\L10n();
 }
 $page['lang'] = $l10n->lang();
-if (!isset($page['lang'])) $page['lang'] = 'en';
+if (!isset($page['lang'])) {
+    $page['lang'] = 'en';
+}
 
 $page['lang-root'] = $sitewide['root'];
 if ($page['lang'] != 'en') {
-    $page['lang-root'] .= $page['lang'].'/';
+    $page['lang-root'] .= $page['lang'] . '/';
 }
 if (!isset($page['path'])) {
     $page['path'] = str_replace($sitewide['root'], '/', $sitewide['path']);
-    $page['path'] = str_replace('/'.$page['lang'].'/', '/', $page['path']);
+    $page['path'] = str_replace('/' . $page['lang'] . '/', '/', $page['path']);
 }
 if (!isset($page['name'])) {
     $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
@@ -24,9 +26,15 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
-if (!isset($page['styles'])) $page['styles'] = array();
-if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
-if (!isset($page['scripts'])) $page['scripts'] = array();
+if (!isset($page['styles'])) {
+    $page['styles'] = array();
+}
+if (!isset($page['script-plugins'])) {
+    $page['script-plugins'] = array();
+}
+if (!isset($page['scripts'])) {
+    $page['scripts'] = array();
+}
 
 $l10n->init();
 $l10n->set_domain('layout');
@@ -34,28 +42,36 @@ $l10n->begin_html_translation();
 
 ?>
 
-<!doctype html>
-<!--[if IE]><html lang="<?php echo $page['lang']; ?>" class="ie-legacy"><![endif]-->
-<!--[if !IE]><!--><html lang="<?php echo $page['lang']; ?>"><!--<![endif]-->
+    <!doctype html>
+    <!--[if IE]>
+    <html lang="<?php echo $page['lang']; ?>" class="ie-legacy"><![endif]-->
+    <!--[if !IE]><!-->
+<html lang="<?php echo $page['lang']; ?>"><!--<![endif]-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-        <meta name="description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
-        <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
-        <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
+        <meta name="description"
+              content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
+        <meta name="author" content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
+        <meta name="theme-color"
+              content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
 
-        <meta name="twitter:card"        content="summary_large_image">
-        <meta name="twitter:site"        content="@elementary">
-        <meta name="twitter:creator"     content="@elementary">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@elementary">
+        <meta name="twitter:creator" content="@elementary">
 
-        <meta property="og:title"       content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
-        <meta property="og:description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
-        <meta property="og:image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
+        <meta property="og:title"
+              content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>"/>
+        <meta property="og:description"
+              content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>"/>
+        <meta property="og:image"
+              content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>"/>
 
-        <meta itemprop="name"        content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>" />
-        <meta itemprop="description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>" />
-        <meta itemprop="image"       content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>" />
+        <meta itemprop="name" content="<?php echo !empty($page['title']) ? $page['title'] : $sitewide['title']; ?>"/>
+        <meta itemprop="description"
+              content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>"/>
+        <meta itemprop="image" content="<?php echo !empty($page['image']) ? $page['image'] : $sitewide['image']; ?>"/>
 
         <meta name="apple-mobile-web-app-title" content="elementary">
         <link rel="manifest" href="/manifest.json">
@@ -69,95 +85,114 @@ $l10n->begin_html_translation();
         <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
 
         <?php if ($page['lang']) { ?>
-        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+            <link rel="alternate" type="text/html" hreflang="en"
+                  href="<?php echo $sitewide['root'] . (($page['name'] == 'index') ? '' : $page['name']); ?>">
+            <link rel="stylesheet" type="text/css" media="all"
+                  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
-        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
+            <link rel="alternate" type="text/html" hreflang="en"
+                  href="<?php echo $sitewide['root'] . (($page['name'] == 'index') ? '' : $page['name']); ?>">
+            <link rel="stylesheet" type="text/css" media="all"
+                  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all"
+              href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
+            <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <?php if ($trackme === true && $config['sentry_pub']) {
+            <?php if ($trackme === true && $config['sentry_pub']) {
             # Curiously enough, the only thing that went through the mind of the developer
             # as he wrote inline javascript was "Oh no, not again." Many people have speculated
             # that if we knew exactly why the developer had thought that, we would know a
             # lot more about the nature of the code than we do now. ~ Douglas Adams
-        ?>
-        <script src="https://cdn.jsdelivr.net/gh/getsentry/raven-js@3/dist/raven.min.js"></script>
-        <script>
-            console.log('Sentry loaded')
+            ?>
+            <script src="https://cdn.jsdelivr.net/gh/getsentry/raven-js@3/dist/raven.min.js"></script>
+            <script>
+                console.log('Sentry loaded')
 
-            window.Raven.setRelease('<?php echo $config['release_version'] ?>')
-            window.Raven.config('<?php echo $config['sentry_pub'] ?>').install()
+                window.Raven.setRelease('<?php echo $config['release_version'] ?>')
+                window.Raven.config('<?php echo $config['sentry_pub'] ?>').install()
 
-            window.onunhandledrejection = function (e) {
-                console.error('Unhandled promise rejection')
-                console.error(e.reason)
+                window.onunhandledrejection = function (e) {
+                    console.error('Unhandled promise rejection')
+                    console.error(e.reason)
 
-                window.Raven.captureException(e.reason)
-            }
-        </script>
-        <?php } ?>
+                    window.Raven.captureException(e.reason)
+                }
+            </script>
+            <?php } ?>
 
-        <script src="scripts/common.js"></script>
-        <script src="scripts/main.js" async></script>
+            <script src="scripts/common.js"></script>
+            <script src="scripts/main.js" async></script>
 
         <?php
-            // loads all async javascript tags here
-            foreach ($page['scripts'] as $one => $two) {
-                $src = (!is_string($one)) ? $two : $one;
-                $atr = (is_array($two)) ? $two : array();
+        // loads all async javascript tags here
+        foreach ($page['scripts'] as $one => $two) {
+            $src = (!is_string($one)) ? $two : $one;
+            $atr = (is_array($two)) ? $two : array();
 
-                if (!isset($atr['async'])) $atr['async'] = true;
+            if (!isset($atr['async'])) {
+                $atr['async'] = true;
+            }
 
-                $atr_string = "";
-                foreach ($atr as $name => $setting) {
-                    if (is_bool($setting) && $setting === true) {
-                        $atr_string .= ' ' . $name;
-                    } else if (!is_bool($setting)) {
+            $atr_string = "";
+            foreach ($atr as $name => $setting) {
+                if (is_bool($setting) && $setting === true) {
+                    $atr_string .= ' ' . $name;
+                } else {
+                    if (!is_bool($setting)) {
                         $atr_string .= ' ' . $name . '="' . $setting . '"';
                     }
                 }
+            }
         ?>
-        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+            <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
         <?php } ?>
         <?php } ?>
     </head>
-    <body class="page-<?php echo $page['name']; ?>">
-        <nav>
-            <div class="nav-content">
-                <ul>
-                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
-                    <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                    <li><a href="https://developer.elementary.io">Developer</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
-                    <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
-                    <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
-                    <?php } ?>
-                </ul>
-                <ul class="right">
-                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
-                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://elementarycommunity.slack.com/join/shared_invite/enQtMjg3NTExNDIwOTQ1LWExZjEzZGE4YjY4MjUwMTQ1MTVjZDJlNTFhNGRlN2FmZmUxNjhmZTI1YmNmZjQ0ODMxYzcwZTI1OTVlMTQyNWI" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+<body class="page-<?php echo $page['name']; ?>">
+    <nav>
+        <div class="nav-content">
+            <ul>
+                <li><a href="<?php echo $page['lang-root']; ?>"
+                       class="logomark"><?php include __DIR__ . '/../images/logomark.svg'; ?></a></li>
+                <li><a href="<?php echo $page['lang-root'] . 'support'; ?>">Support</a></li>
+                <li><a href="https://developer.elementary.io">Developer</a></li>
+                <li><a href="<?php echo $page['lang-root'] . 'get-involved'; ?>">Get Involved</a></li>
+                <li><a href="<?php echo $page['lang-root'] . 'store/'; ?>">Store</a></li>
+                <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
+                    <li><a href="<?php echo $page['lang-root'] . 'store/cart'; ?>"><i
+                                class="fa fa-shopping-cart"></i></a></li>
+                <?php } ?>
+            </ul>
+            <ul class="right">
+                <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off
+                       title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off
+                       title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off
+                       title="Medium"><i class="fa fa-medium"></i></a></li>
+                <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off
+                       title="Reddit"><i class="fa fa-reddit"></i></a></li>
+                <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off
+                       title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
+                <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off
+                       title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                    <a href="https://elementarycommunity.slack.com/join/shared_invite/enQtMjg3NTExNDIwOTQ1LWExZjEzZGE4YjY4MjUwMTQ1MTVjZDJlNTFhNGRlN2FmZmUxNjhmZTI1YmNmZjQ0ODMxYzcwZTI1OTVlMTQyNWI"
+                       target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <?php require __DIR__ . '/event.php'; ?>
+<?php require __DIR__ . '/event.php'; ?>
 
-        <div id="content-container">
+    <div id="content-container">
 
 <?php
 

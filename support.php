@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__ . '/_backend/preload.php';
 
 $page['title'] = 'Support &sdot; elementary';
 
@@ -16,15 +16,16 @@ include $template['alert'];
     <h1>
         Get support for
         <?php
-            // Embed the SVG to fix scaling in WebKit 1.x,
-            // while preserving CSS options for the image.
-            include __DIR__.'/images/logotype-os.svg';
+        // Embed the SVG to fix scaling in WebKit 1.x,
+        // while preserving CSS options for the image.
+        include __DIR__ . '/images/logotype-os.svg';
         ?>
     </h1>
 </div>
 
 <div class="row apps">
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/appcenter" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/appcenter" target="_blank"
+       rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/system-software-install.svg" alt="Calendar"/>
         <span>AppCenter</span>
     </a>
@@ -39,7 +40,8 @@ include $template['alert'];
         <span>Camera</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/pantheon-files" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/pantheon-files" target="_blank"
+       rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/system-file-manager.svg" alt="Files"/>
         <span>Files</span>
     </a>
@@ -49,7 +51,8 @@ include $template['alert'];
         <span data-l10n-off>Mail</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank"
+       rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/web-browser.svg" alt="Epiphany"/>
         <span data-l10n-off>Epiphany</span>
     </a>
@@ -64,12 +67,14 @@ include $template['alert'];
         <span>Photos</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank"
+       rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Text Editor"/>
         <span data-l10n-off>Scratch</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/settings" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/settings" target="_blank"
+       rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/preferences-desktop.svg" alt="System Settings"/>
         <span>System Settings</span>
     </a>

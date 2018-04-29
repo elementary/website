@@ -19,7 +19,7 @@ class FileStore extends BaseStore implements StoreInterface
             $path .= '/';
         }
 
-        return $path.'elementary/website';
+        return $path . 'elementary/website';
     }
 
     /**
@@ -31,7 +31,7 @@ class FileStore extends BaseStore implements StoreInterface
      */
     protected function cachePath($key)
     {
-        return $this->cacheDirectory().'/'.base64_encode($key);
+        return $this->cacheDirectory() . '/' . base64_encode($key);
     }
 
     /**
@@ -56,7 +56,7 @@ class FileStore extends BaseStore implements StoreInterface
      * Writes the cache to file.
      *
      * @param string $key
-     * @param mixed  $contents
+     * @param mixed $contents
      */
     protected function writeCache($key, $contents)
     {
@@ -102,8 +102,8 @@ class FileStore extends BaseStore implements StoreInterface
      * Puts a value into the file.
      *
      * @param string $key
-     * @param mixed  $value
-     * @param int    $minutes
+     * @param mixed $value
+     * @param int $minutes
      */
     public function put($key, $value, $minutes = 0)
     {
@@ -117,7 +117,7 @@ class FileStore extends BaseStore implements StoreInterface
      * Sets a cache value to be cached forever.
      *
      * @param string $key
-     * @param int    $value
+     * @param int $value
      */
     public function forever($key, $value)
     {
@@ -155,7 +155,7 @@ class FileStore extends BaseStore implements StoreInterface
 
         $files = array_diff(scandir($fileDirectory, array('..', '.')));
         foreach ($files as $file) {
-            unlink($fileDirectory.'/'.$file);
+            unlink($fileDirectory . '/' . $file);
         }
 
         rmdir($fileDirectory);

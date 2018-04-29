@@ -131,10 +131,10 @@ class Slack
             }
 
             // Admin's first
-            if ($a['is_admin'] && ! $b['is_admin']) {
+            if ($a['is_admin'] && !$b['is_admin']) {
                 return -1;
             }
-            if ($b['is_admin'] && ! $a['is_admin']) {
+            if ($b['is_admin'] && !$a['is_admin']) {
                 return 1;
             }
 
@@ -172,7 +172,7 @@ class Slack
      */
     public function response($url)
     {
-        $fullUrl = static::$url.$url.(strpos($url, '?') ? '&' : '?').'token='.$this->key;
+        $fullUrl = static::$url . $url . (strpos($url, '?') ? '&' : '?') . 'token=' . $this->key;
 
         $apiContent = file_get_contents($fullUrl);
         $apiResponse = json_decode($apiContent, true);

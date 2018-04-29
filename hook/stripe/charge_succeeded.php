@@ -5,9 +5,9 @@
  * Sends an email when a successful stripe payment is taken
  */
 
-require_once __DIR__.'/index.php';
+require_once __DIR__ . '/index.php';
 
-require_once __DIR__.'/../../_backend/email/os-payment.php';
+require_once __DIR__ . '/../../_backend/email/os-payment.php';
 
 $charge = $res['data']['object'];
 

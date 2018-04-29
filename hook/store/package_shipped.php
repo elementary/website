@@ -4,12 +4,12 @@
  * Sends an email when a package is shipped
  */
 
-require_once __DIR__.'/index.php';
+require_once __DIR__ . '/index.php';
 
-require_once __DIR__.'/../../_backend/preload.php';
-require_once __DIR__.'/../../_backend/config.loader.php';
-require_once __DIR__.'/../../_backend/store/address.php';
-require_once __DIR__.'/../../_backend/store/product.php';
+require_once __DIR__ . '/../../_backend/preload.php';
+require_once __DIR__ . '/../../_backend/config.loader.php';
+require_once __DIR__ . '/../../_backend/store/address.php';
+require_once __DIR__ . '/../../_backend/store/product.php';
 
 $mandrill = new Mandrill($config['mandrill_key']);
 
@@ -17,16 +17,34 @@ $recipient = $res['data']['order']['recipient'];
 $address = new \Store\Address\Address();
 
 try {
-    if (isset($recipient['name']) && $recipient['name'] !== '') $address->set_name($recipient['name']);
-    if (isset($recipient['email']) && $recipient['email'] !== '') $address->set_email($recipient['email']);
-    if (isset($recipient['phone']) && $recipient['phone'] !== '') $address->set_phone($recipient['phone']);
+    if (isset($recipient['name']) && $recipient['name'] !== '') {
+        $address->set_name($recipient['name']);
+    }
+    if (isset($recipient['email']) && $recipient['email'] !== '') {
+        $address->set_email($recipient['email']);
+    }
+    if (isset($recipient['phone']) && $recipient['phone'] !== '') {
+        $address->set_phone($recipient['phone']);
+    }
 
-    if (isset($recipient['country_code']) && $recipient['country_code'] !== '') $address->set_country($recipient['country_code']);
-    if (isset($recipient['zip']) && $recipient['zip'] !== '') $address->set_postal($recipient['zip']);
-    if (isset($recipient['state_code']) && $recipient['state_code'] !== '') $address->set_state($recipient['state_code']);
-    if (isset($recipient['city']) && $recipient['city'] !== '') $address->set_city($recipient['city']);
-    if (isset($recipient['address2']) && $recipient['address2'] !== '') $address->set_line2($recipient['address2']);
-    if (isset($recipient['address1']) && $recipient['address1'] !== '') $address->set_line1($recipient['address1']);
+    if (isset($recipient['country_code']) && $recipient['country_code'] !== '') {
+        $address->set_country($recipient['country_code']);
+    }
+    if (isset($recipient['zip']) && $recipient['zip'] !== '') {
+        $address->set_postal($recipient['zip']);
+    }
+    if (isset($recipient['state_code']) && $recipient['state_code'] !== '') {
+        $address->set_state($recipient['state_code']);
+    }
+    if (isset($recipient['city']) && $recipient['city'] !== '') {
+        $address->set_city($recipient['city']);
+    }
+    if (isset($recipient['address2']) && $recipient['address2'] !== '') {
+        $address->set_line2($recipient['address2']);
+    }
+    if (isset($recipient['address1']) && $recipient['address1'] !== '') {
+        $address->set_line1($recipient['address1']);
+    }
 } catch (Exception $e) {
     error_log('Tryed sending email to invalid address');
     error_log($e->getMessage());
@@ -45,20 +63,28 @@ try {
         // NOTE: if statement for backwards capatibility. 1/24/2017
         if (!isset($item['external_id']) || $item['external_id'] === '') {
             $key = array_search($item['product']['product_id'], array_column($products, 'printful_id'));
-            if ($key === null || $key === false) continue;
+            if ($key === null || $key === false) {
+                continue;
+            }
             $product = $products[$key];
 
             $key = array_search($item['product']['variant_id'], array_column($product['variants'], 'printful_id'));
-            if ($key === null || $key === false) continue;
+            if ($key === null || $key === false) {
+                continue;
+            }
             $variant = $product['variants'][$key];
         } else {
             $split = explode('-', $item['external_id']);
             $key = array_search($split[0], array_column($products, 'id'));
-            if ($key === null || $key === false) continue;
+            if ($key === null || $key === false) {
+                continue;
+            }
             $product = $products[$key];
 
             $key = array_search($split[1], array_column($product['variants'], 'id'));
-            if ($key === null || $key === false) continue;
+            if ($key === null || $key === false) {
+                continue;
+            }
             $variant = $product['variants'][$key];
         }
 

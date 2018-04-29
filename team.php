@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__ . '/_backend/preload.php';
 
 use App\Lib\Cache\Cache;
 use App\Lib\Cache\Store\FileStore;
@@ -32,7 +32,10 @@ include $template['alert'];
 <section class="grid">
     <div class="two-thirds">
         <h2>We believe in the unique combination of top-notch UX and the world-changing power of Open Source.</h2>
-        <p>elementary was founded in 2007 by a small group of passionate volunteers. Over the years, we&rsquo;ve been able to grow into a tiny company and fund the development of open source software. We&rsquo;re a dedicated team of developers, designers, writers, and everyday computer users crafting an incredible open computing experience. We are elementary.</p>
+        <p>elementary was founded in 2007 by a small group of passionate volunteers. Over the years, we&rsquo;ve been
+            able to grow into a tiny company and fund the development of open source software. We&rsquo;re a dedicated
+            team of developers, designers, writers, and everyday computer users crafting an incredible open computing
+            experience. We are elementary.</p>
     </div>
 </section>
 
@@ -41,9 +44,9 @@ include $template['alert'];
         <div class="team-directory">
 
             <?php foreach ($memebers as $member) { ?>
-
                 <div class="member">
-                    <div class="member_photo" style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
+                    <div class="member_photo"
+                         style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
 
                     <h5 class="member_name" data-l10n-off="1">
                         <?php echo $member['name'] ?>
@@ -66,15 +69,16 @@ include $template['alert'];
 <section class="grid">
     <div class="two-thirds">
         <h2>Community &amp; Collaborators</h2>
-        <p>elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.</p>
+        <p>elementary would not exist without the involvement of dedicated community members and collaborators from
+            other free and open source projects.</p>
     </div>
     <div class="whole">
         <div class="team-directory">
 
             <?php foreach ($communities as $member) { ?>
-
                 <div class="member">
-                    <div class="member_photo" style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
+                    <div class="member_photo"
+                         style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
 
                     <h5 class="member_name" data-l10n-off="1">
                         <?php echo $member['name'] ?>

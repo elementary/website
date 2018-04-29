@@ -1,47 +1,46 @@
 <?php
-    require_once __DIR__.'/../_backend/preload.php';
-    require_once __DIR__.'/../_backend/config.loader.php';
-    require_once __DIR__.'/../_backend/store/product.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/config.loader.php';
+require_once __DIR__ . '/../_backend/store/product.php';
 
-    $page['title'] = 'Store &sdot; elementary';
+$page['title'] = 'Store &sdot; elementary';
 
-    $page['styles'] = array(
-        'styles/store.css'
-    );
+$page['styles'] = array(
+    'styles/store.css'
+);
 
-    $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/gh/eustasy/jquery.leanmodal2@2.5/jQuery.leanModal2.min.js'
-    );
+$page['script-plugins'] = array(
+    'https://cdn.jsdelivr.net/gh/eustasy/jquery.leanmodal2@2.5/jQuery.leanModal2.min.js'
+);
 
-    $page['scripts'] = array(
-        'scripts/store/index.js' => array(
-            'async' => false
-        ),
-    );
+$page['scripts'] = array(
+    'scripts/store/index.js' => array(
+        'async' => false
+    ),
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 
-    $products = \Store\Product\get_products();
+$products = \Store\Product\get_products();
 
-    $categories = [];
-    foreach ($products as $product) {
-        if (!isset($categories[$product['type']])) {
-            $categories[$product['type']] = [$product];
-        } else {
-            $categories[$product['type']][] = $product;
-        }
+$categories = [];
+foreach ($products as $product) {
+    if (!isset($categories[$product['type']])) {
+        $categories[$product['type']] = [$product];
+    } else {
+        $categories[$product['type']][] = $product;
     }
+}
 
-    if (getenv('PHPENV') !== 'production' && (
+if (getenv('PHPENV') !== 'production' && (
         !isset($config['printful_key']) ||
         !isset($config['google_map_key']) ||
         $config['printful_key'] === 'printful_key' ||
         $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
     )) {
-
-        $l10n->set_domain('layout');
-?>
+    $l10n->set_domain('layout');
+    ?>
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
@@ -49,34 +48,37 @@
             </div>
             <div class="icon-text">
                 <h3>You are missing API keys</h3>
-                <p>You are viewing a developmental version of the store without configuring api keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
+                <p>You are viewing a developmental version of the store without configuring api keys. This will lead to
+                    false positives and incorrect errors. Please set your keys to testing configuration.</p>
             </div>
         </div>
     </div>
-<?php
-        $l10n->set_domain($page['name']);
-    }
+    <?php
+    $l10n->set_domain($page['name']);
+}
 ?>
 
 <section class="grid">
     <div class="two-thirds">
         <h2>Support Development. Get Swag. Win Win.</h2>
-        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.</p>
+        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a
+                href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit
+            of help is one step closer to hiring another full-time developer.</p>
     </div>
 </section>
 
 <?php foreach ($categories as $category => $products) { ?>
-
     <div class="grid grid--product">
         <h3 class="grid__title"><?php echo $category ?></h3>
 
         <?php foreach ($products as $product) { ?>
-
-            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
+            <div class="grid__item" id="product-<?php echo $product['id'] ?>"
+                 data-product-name="<?php echo $product['name']; ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <h4><?php echo $product['name'] ?></h4>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
-                    <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?> - $<?php echo number_format($product['price_max'], 2) ?></p>
+                    <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?> -
+                        $<?php echo number_format($product['price_max'], 2) ?></p>
                 <?php } else { ?>
                     <p data-l10n-off="1" class="text-center">$<?php echo number_format($product['price_min'], 2) ?></p>
                 <?php } ?>
@@ -90,8 +92,8 @@
 <?php } ?>
 
 <?php foreach (\Store\Product\get_products() as $product) { ?>
-
-    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"  data-product-name="<?php echo $product['name']; ?>">
+    <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"
+         data-product-name="<?php echo $product['name']; ?>">
         <i class="fa fa-close close-modal"></i>
         <div class="grid">
             <div class="half">
@@ -121,10 +123,11 @@
                         <div class="size-select">
                             <input type="hidden" name="size" value="<?php echo $product['size'][0] ?>">
                             <?php
-                                foreach ($product['size'] as $i => $value) {
-                                    $o = ($i === 0) ? 'checked' : '';
-                            ?>
-                                <button type="button" value="<?php echo $value ?>"  class="small-button target-amount <?php echo $o ?>"><?php echo $value ?></button>
+                            foreach ($product['size'] as $i => $value) {
+                                $o = ($i === 0) ? 'checked' : '';
+                                ?>
+                                <button type="button" value="<?php echo $value ?>"
+                                        class="small-button target-amount <?php echo $o ?>"><?php echo $value ?></button>
                             <?php } ?>
                         </div>
                     <?php } ?>
@@ -145,18 +148,25 @@
 <section class="grid">
     <div class="half">
         <h2>Worldwide Shipping</h2>
-        <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
-        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
+        <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your
+            needs. Orders are made on-demand typically within 2–7 days.</p>
+        <p>
+            <small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments
+                outside of the USA may incur customs fees depending on the destination country.
+            </small>
+        </p>
     </div>
     <div class="half">
-    <h2>Looking for Stickers?</h2>
-        <p>Unixstickers.com sells a number of elementary-branded stickers, and a portion of their purchase helps support elementary development.</p>
-        <p><a href="http://www.unixstickers.com/tag/elementaryos" target="_blank" rel="noopener" class="read-more">Shop Unixstickers</a></p>
+        <h2>Looking for Stickers?</h2>
+        <p>Unixstickers.com sells a number of elementary-branded stickers, and a portion of their purchase helps support
+            elementary development.</p>
+        <p><a href="http://www.unixstickers.com/tag/elementaryos" target="_blank" rel="noopener" class="read-more">Shop
+                Unixstickers</a></p>
     </div>
 </section>
 
 <script>window.products = <?php echo json_encode(\Store\Product\get_products()) ?></script>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>
