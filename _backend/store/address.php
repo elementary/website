@@ -4,6 +4,9 @@ namespace Store\Address;
 
 require_once __DIR__ . '/validation.php';
 
+use function Store\Validation\validate_string;
+use Store\Validation\ValidationException;
+
 const COUNTRY_FILE = __DIR__ . '/../../data/country.json';
 
 /**
@@ -141,10 +144,10 @@ class Address
     // Setter functions
     public function setName(string $in)
     {
-        \validate_string($in);
+        validate_string($in);
 
         if (strlen($in) < 4) {
-            throw new \ValidationException('Name needs to be greater than 3 charactors');
+            throw new ValidationException('Name needs to be greater than 3 charactors');
         }
 
         $this->name = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
@@ -153,7 +156,7 @@ class Address
     public function setLine1($in)
     {
         if (!isset($in)) {
-            throw new \ValidationException('Address line 1 is not set');
+            throw new ValidationException('Address line 1 is not set');
         }
 
         $this->line1 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
@@ -162,7 +165,7 @@ class Address
     public function setLine2($in)
     {
         if (!isset($in)) {
-            throw new \ValidationException('Address line 2 is not set');
+            throw new ValidationException('Address line 2 is not set');
         }
 
         $this->line2 = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
@@ -170,10 +173,10 @@ class Address
 
     public function setCity($in)
     {
-        \validate_string($in);
+        validate_string($in);
 
         if (strlen($in) < 3) {
-            throw new \ValidationException('City needs to be greater than 2 charactors');
+            throw new ValidationException('City needs to be greater than 2 charactors');
         }
 
         $this->city = htmlspecialchars(ucwords($in), ENT_XML1, 'UTF-8');
@@ -182,11 +185,11 @@ class Address
     public function setState($in)
     {
         if (!isset($in)) {
-            throw new \ValidationException('State code is not set');
+            throw new ValidationException('State code is not set');
         }
 
         if (!isset($this->country)) {
-            throw new \ValidationException('Country code is not yet set');
+            throw new ValidationException('Country code is not yet set');
         }
 
         $states = get_states($this->country);
@@ -197,7 +200,7 @@ class Address
         }
 
         if (!isset($states[$in])) {
-            throw new \ValidationException('State code does not exist');
+            throw new ValidationException('State code does not exist');
         }
 
         $this->state = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -206,14 +209,14 @@ class Address
     public function setCountry($in)
     {
         if (!isset($in) || !is_string($in)) {
-            throw new \ValidationException('Country code is not valid');
+            throw new ValidationException('Country code is not valid');
         }
 
         $countries = get_countries();
         $in = strtoupper($in);
 
         if (!isset($countries[$in])) {
-            throw new \ValidationException('Country code does not exist');
+            throw new ValidationException('Country code does not exist');
         }
 
         $this->country = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -222,7 +225,7 @@ class Address
     public function setPostal($in)
     {
         if (!isset($in)) {
-            throw new \ValidationException('Postal code is not set');
+            throw new ValidationException('Postal code is not set');
         }
 
         $this->postal = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -230,10 +233,10 @@ class Address
 
     public function setEmail($in)
     {
-        \validate_string($in);
+        validate_string($in);
 
         if (!filter_var($in, FILTER_VALIDATE_EMAIL)) {
-            throw new \ValidationException('Email is not valid');
+            throw new ValidationException('Email is not valid');
         }
 
         $this->email = htmlspecialchars($in, ENT_XML1, 'UTF-8');
@@ -242,11 +245,11 @@ class Address
     public function setPhone($in)
     {
         if (!isset($in)) {
-            throw new \ValidationException('Phone number is not set');
+            throw new ValidationException('Phone number is not set');
         }
 
         if (!preg_match("/^[\+0-9\-\#\(\) ]{7,}$/i", $in)) {
-            throw new \ValidationException('Phone number is not valid');
+            throw new ValidationException('Phone number is not valid');
         }
 
         $this->phone = preg_replace('!\D+!', '', $in);

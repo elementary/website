@@ -2,11 +2,13 @@
 
 require_once __DIR__ . '/address.php';
 
+namespace Store\Validation;
+
 /**
  * ValidationException
  * A special exception safe to print
  */
-class ValidationException extends Exception
+class ValidationException extends \Exception
 {
 }
 
