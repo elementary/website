@@ -189,7 +189,7 @@ limit is 120 characters.
 ## GPL Header {#gpl-header}
 
     /*
-    * Copyright (c) 2011-2017 Your Organization (https://yourwebsite.com)
+    * Copyright (c) 2011-2018 Your Organization (https://yourwebsite.com)
     *
     * This program is free software; you can redistribute it and/or
     * modify it under the terms of the GNU General Public
