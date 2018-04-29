@@ -1,8 +1,9 @@
 <?php
 
+namespace Store\Validation;
+
 require_once __DIR__ . '/address.php';
 
-namespace Store\Validation;
 
 /**
  * ValidationException
