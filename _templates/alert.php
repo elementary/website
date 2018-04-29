@@ -1,6 +1,6 @@
 <?php
 
-$l10n->set_domain('layout');
+$l10n->setDomain('layout');
 
 if (getenv('PHPENV') !== 'production') {
     ?>
@@ -19,4 +19,4 @@ if (getenv('PHPENV') !== 'production') {
     </div>
 <?php }
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

@@ -77,7 +77,7 @@ if (is_readable($Request['Directory']) ||
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
         $Content = str_replace('⌘', '&#8984;', $Content);
-        $Content = $l10n->translate_html($Content);
+        $Content = $l10n->translateHtml($Content);
         echo $Content;
 
         echo '</div>';

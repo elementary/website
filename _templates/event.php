@@ -7,7 +7,7 @@
 
 require_once __DIR__ . '/../_backend/event.php';
 
-$l10n->set_domain('layout');
+$l10n->setDomain('layout');
 
 // Insert event based code here.
 if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release') !== '1') {
@@ -71,4 +71,4 @@ if (event_active('juno 0.5.0 release') && event_cookie_get('juno 0.5.0 release')
     <?php
 }
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

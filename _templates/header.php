@@ -37,8 +37,8 @@ if (!isset($page['scripts'])) {
 }
 
 $l10n->init();
-$l10n->set_domain('layout');
-$l10n->begin_html_translation();
+$l10n->setDomain('layout');
+$l10n->beginHtmlTranslation();
 
 ?>
 
@@ -196,4 +196,4 @@ $l10n->begin_html_translation();
 
 <?php
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

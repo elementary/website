@@ -39,7 +39,7 @@ if (getenv('PHPENV') !== 'production' && (
         $config['printful_key'] === 'printful_key' ||
         $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
     )) {
-    $l10n->set_domain('layout');
+    $l10n->setDomain('layout');
     ?>
     <div class="row alert warning">
         <div class="column alert">
@@ -54,7 +54,7 @@ if (getenv('PHPENV') !== 'production' && (
         </div>
     </div>
     <?php
-    $l10n->set_domain($page['name']);
+    $l10n->setDomain($page['name']);
 }
 ?>
 

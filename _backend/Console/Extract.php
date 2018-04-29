@@ -79,7 +79,7 @@ if ($isMarkdown === false) {
     $currentUrl = substr($currentUrl, 0, -1);
 }
 
-$currentTranslations = $l10n->load_translations($currentUrl);
+$currentTranslations = $l10n->loadTranslations($currentUrl);
 if ($currentTranslations === false) {
     $currentTranslations = array();
 }
@@ -135,8 +135,8 @@ function translateMarkdown($path, $domain)
 
     $html = str_replace('⌘', '&#8984;', $html);
 
-    $l10n->set_domain($domain);
-    $l10n->translate_html($html, '\App\Console\captureTranslations');
+    $l10n->setDomain($domain);
+    $l10n->translateHtml($html, '\App\Console\captureTranslations');
 }
 
 /**
@@ -163,9 +163,9 @@ function translatePHP($path, $domain)
         return;
     }
 
-    $l10n->set_domain($domain);
+    $l10n->setDomain($domain);
     ob_start(function ($input) use ($l10n) {
-        $l10n->translate_html($input, '\App\Console\captureTranslations');
+        $l10n->translateHtml($input, '\App\Console\captureTranslations');
         return '';
     });
 

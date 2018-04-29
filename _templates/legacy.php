@@ -5,7 +5,7 @@
  * Holds all legacy browser messages warnings
  */
 
-$l10n->set_domain('layout');
+$l10n->setDomain('layout');
 
 $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
