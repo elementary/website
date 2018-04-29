@@ -38,9 +38,6 @@ $Request['Directory'] = rtrim($MDR['Root'] . '/docs/' . (explode('/docs/', $Requ
 $Request['Markdown'] = $Request['Directory'] . '.md';
 $Request['Source'] = false;
 
-$Libraries['Parsedown'] = $MDR['Core'] . '/Parsedown.php';
-$Libraries['ParsedownExtra'] = $MDR['Core'] . '/ParsedownExtra.php';
-
 $Templates['Header'] = $MDR['Templates'] . 'header.php';
 $Templates['Alert'] = $MDR['Templates'] . 'alert.php';
 $Templates['Footer'] = $MDR['Templates'] . 'footer.php';
