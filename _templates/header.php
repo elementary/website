@@ -184,7 +184,7 @@ $l10n->beginHtmlTranslation();
                 <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off
                        title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li>
-                    <a href="https://elementarycommunity.slack.com/join/shared_invite/enQtMjg3NTExNDIwOTQ1LWExZjEzZGE4YjY4MjUwMTQ1MTVjZDJlNTFhNGRlN2FmZmUxNjhmZTI1YmNmZjQ0ODMxYzcwZTI1OTVlMTQyNWI"
+                    <a href="https://join.slack.com/t/elementarycommunity/shared_invite/enQtMzU1NDU4OTE1MjY2LWUyOTBkZGNkZGM4MDgzZjE2ZjRiZDgwMDQ1ZTA0MzcxYjI0MDUyNGRlNDI5ZWViNDkwMzMwYzczMDY2ZjA0MTc"
                        target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
             </ul>
         </div>
