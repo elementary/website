@@ -150,7 +150,7 @@ $l10n->begin_html_translation();
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
                     <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://elementarycommunity.slack.com/join/shared_invite/enQtMjg3NTExNDIwOTQ1LWExZjEzZGE4YjY4MjUwMTQ1MTVjZDJlNTFhNGRlN2FmZmUxNjhmZTI1YmNmZjQ0ODMxYzcwZTI1OTVlMTQyNWI" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
+                    <li><a href="https://join.slack.com/t/elementarycommunity/shared_invite/enQtMzU1NDU4OTE1MjY2LWUyOTBkZGNkZGM4MDgzZjE2ZjRiZDgwMDQ1ZTA0MzcxYjI0MDUyNGRlNDI5ZWViNDkwMzMwYzczMDY2ZjA0MTc" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
                 </ul>
             </div>
         </nav>
