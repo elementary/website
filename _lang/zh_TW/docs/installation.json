@@ -1,7 +1,7 @@
 {
     "Installation": "安裝",
     "Download elementary OS": "下載 elementary OS",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "若你手邊還沒有 elementary OS 的安裝隨身碟，請<a href=\"/\" target=\"_blank\" rel=\"noopener\">到我們的首頁下載</a>。之後請按照下面的指示，將下載好的 ISO 檔案複製到 USB 隨身碟上。",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "若你手邊還沒有 elementary OS 的安裝隨身碟，請<a href=\"\/\" target=\"_blank\" rel=\"noopener\">到我們的首頁下載<\/a>。之後請按照下面的指示，將下載好的 ISO 檔案複製到 USB 隨身碟上。",
     "Recommended System Specifications": "推薦的系統規格",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "我們沒有嚴格的最低系統需求，但建議至少符合下列條件，如此才能有最佳的使用體驗：",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "最近推出的 Intel Core i3 或等級接近的雙核心 64 位元處理器",
@@ -26,13 +26,13 @@
     "Click": "按一下",
     "the disk icon": "磁碟圖示",
     "to choose the ISO that you downloaded previously.": "選擇您先前下載的 ISO 檔案。",
-    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#</code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "我們已為 elementary OS 映像檔製作一組核驗計算碼（或稱雜湊計算碼），您就可以用這組計算碼來檢查下載的檔案是否健全，以確保您的安裝映像檔完整沒有任何損壞。請點按狀態列中的 <code>#</code> 按鈕，並檢查「SHA256」旁的字碼是否符合下列雜湊碼：",
+    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the <code>#<\/code> button in the status bar and verify that the text next to &quot;SHA256&quot; matches the following hash:": "我們已為 elementary OS 映像檔製作一組核驗計算碼（或稱雜湊計算碼），您就可以用這組計算碼來檢查下載的檔案是否健全，以確保您的安裝映像檔完整沒有任何損壞。請點按狀態列中的 <code>#<\/code> 按鈕，並檢查「SHA256」旁的字碼是否符合下列雜湊碼：",
     "If the hashes match, click &quot;Start&quot; and wait for the process to finish.": "如果雜湊碼相符，請點按「開始」並等待程序完成。",
     "Booting from the Install Drive": "從安裝媒介開機",
     "In order to start the installation process, you must boot your computer from the install drive.": "您必須使用安裝媒介開機才能開始安裝程序。",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "如果您的電腦依然開著，請先插入安裝媒介，然後重新啓動電腦。",
-    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "多數的電腦會允許您按下特殊按鈕來改變這次開機順序 —— 通常是 <kbd>F12</kbd>，不過有時是 <kbd>Esc</kbd> 或其他功能鍵。詳細請參考螢幕上的資訊或是您電腦的文件。",
-    "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "按下 <kbd>F12</kbd> ( 或者適合的按鍵 ) 並選擇安裝裝置 —— 通常是 \"USB-HDD\" 或者其他跟 \"USB\" 有關的選項，但或許會有點不同。如果您選擇了錯誤的裝置，您的電腦將會像平常一樣載入，只要重新啟動您的電腦，並試試清單中其他的裝置。",
+    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12<\/kbd>, but sometimes <kbd>Esc<\/kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "多數的電腦會允許您按下特殊按鈕來改變這次開機順序 —— 通常是 <kbd>F12<\/kbd>，不過有時是 <kbd>Esc<\/kbd> 或其他功能鍵。詳細請參考螢幕上的資訊或是您電腦的文件。",
+    "Press <kbd>F12<\/kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "按下 <kbd>F12<\/kbd> ( 或者適合的按鍵 ) 並選擇安裝裝置 —— 通常是 \"USB-HDD\" 或者其他跟 \"USB\" 有關的選項，但或許會有點不同。如果您選擇了錯誤的裝置，您的電腦將會像平常一樣載入，只要重新啟動您的電腦，並試試清單中其他的裝置。",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "當您選取了正確的引導驅動器之後，您就會看到作業系統的背景圖。接下來，您只需按照螢幕上的指示來完成剩下的安裝程序。",
     "Verify your Download": "校驗您的下載",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "雖然不是硬性規定，但這是一個重要的步驟。我們為 elementary OS 影像檔產生了一組校對碼 (checksum 或 hash sum) 。在安裝之前，建議您先檢查您下載的檔案是否有相同的校對碼，這樣才能確保您下載的檔案沒有任何毀損。",
@@ -50,7 +50,7 @@
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "完成時它將會自動安全退出並嘗試重新啟動電腦以安裝elementary OS",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "在安裝過程中會出現些許訊息,請安心忽略",
     "Not readable warning": "無法讀取的警告",
-    "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "當您聽到啟動提示音後，按住<kbd>選項</kbd>，然後選擇相應的引導驅動器。要記住它有可能被錯誤地識別為 “Windows”，此屬正常現象。",
+    "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "當您聽到啟動提示音後，按住<kbd>選項<\/kbd>，然後選擇相應的引導驅動器。要記住它有可能被錯誤地識別為 “Windows”，此屬正常現象。",
     "Boot Errors": "開機錯誤",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "如果您的 Mac 無法在開機選單辨識您的 elementary OS USB 安裝碟，您可能需要建立一個 elementary OS 安裝 DVD 來作為替代方案。若要建立，請插入空白 DVD，並在 Finder 中對 ISO 檔案按右鍵，然後選擇 &quot;將磁碟映像檔「elementaryos-0.4.1-stable.20180214.iso」燒錄至光碟&quot;。燒錄完成後，請試著再從安裝 DVD 開機。",
     "Running the following command in your terminal:": "在您的終端機執行以下的指令：",
@@ -64,5 +64,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "拔掉其他 USB 儲存裝置，只留下您想用的那一個。",
     "Click &quot;OK&quot; and wait for the process to finish.": "按一下 \"OK\"，接著等候處理程序完成。",
     "After Installation": "安裝之後",
-    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "用這段時間閲讀<a href=\"/docs/learning-the-basics\">指導手冊</a>以學習你的新系統。"
+    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": "用這段時間閲讀<a href=\"\/docs\/learning-the-basics\">指導手冊<\/a>以學習你的新系統。"
 }
