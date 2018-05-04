@@ -25,7 +25,7 @@ include $template['alert'];
 
 <div class="row apps">
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/appcenter" target="_blank" rel="noopener">
-        <img width="64" height="64" src="images/icons/apps/64/system-software-install.svg" alt="Calendar"/>
+        <img width="64" height="64" src="images/icons/apps/64/system-software-install.svg" alt="AppCenter"/>
         <span>AppCenter</span>
     </a>
 
@@ -45,7 +45,7 @@ include $template['alert'];
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank" rel="noopener">
-        <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Geary"/>
+        <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Mail"/>
         <span data-l10n-off>Mail</span>
     </a>
 
