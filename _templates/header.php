@@ -146,7 +146,7 @@ $l10n->begin_html_translation();
                 <ul class="right">
                     <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://mastodon.cloud/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fa fa-mastodon"></i></a></li>
+                    <li><a href="https://mastodon.cloud/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
                     <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
