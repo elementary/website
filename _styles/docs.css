@@ -44,7 +44,7 @@ h6 a.heading-link:hover::before {
     left: -1.25em;
     position: absolute;
     top: 0.5em;
-    
+
     /* Change font-family and font-weight once pro */
     font-family: "Font Awesome\ 5 Free";
     font-weight: 900;
