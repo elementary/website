@@ -207,7 +207,9 @@ img.inline + div.inline {
     color: inherit;
     content: "\f105";
     display: inline-block;
+    /* Change font-family and font-weight once pro */
     font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;
