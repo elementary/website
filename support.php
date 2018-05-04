@@ -46,12 +46,12 @@ include $template['alert'];
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Mail"/>
-        <span data-l10n-off>Mail</span>
+        <span>Mail</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/web-browser.svg" alt="Epiphany"/>
-        <span data-l10n-off>Epiphany</span>
+        <span>Epiphany</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/noise" target="_blank" rel="noopener">
@@ -66,7 +66,7 @@ include $template['alert'];
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Text Editor"/>
-        <span data-l10n-off>Scratch</span>
+        <span>Scratch</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/settings" target="_blank" rel="noopener">
