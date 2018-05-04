@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5/web-fonts-with-css/css/fontawesome-all.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
