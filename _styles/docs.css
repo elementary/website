@@ -40,7 +40,9 @@ h4 a.heading-link:hover::before,
 h5 a.heading-link:hover::before,
 h6 a.heading-link:hover::before {
     content: "\f0c1";
+    /* Change font-family and font-weight once pro */
     font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
     font-size: 0.75em;
     left: -1.25em;
     position: absolute;
