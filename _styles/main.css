@@ -590,7 +590,9 @@ a.third:hover {
     fill: #08c;
 }
 
-.third .fa {
+.third .fa,
+.third .fab, 
+.third .far {
     font-size: 32px;
     text-align: center;
     display: block;
