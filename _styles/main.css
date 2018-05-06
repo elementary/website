@@ -187,8 +187,8 @@ img.inline + div.inline {
 .inline-tweet::after,
 .inline-tweet::after {
     color: inherit;
-    content: "";
-    font-family: "FontAwesome";
+    content: "\f099";
+    font-family: "Font Awesome\ 5 Brands";
     font-style: normal;
     font-weight: inherit;
     margin-top: 0.2em;
@@ -205,9 +205,9 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "";
+    content: "\f105";
     display: inline-block;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome\ 5 Pro";
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;
@@ -590,7 +590,9 @@ a.third:hover {
     fill: #08c;
 }
 
-.third .fa {
+.third .fa,
+.third .fab,
+.third .far {
     font-size: 32px;
     text-align: center;
     display: block;
