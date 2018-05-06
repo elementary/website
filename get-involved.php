@@ -52,7 +52,7 @@
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Become a Patron</a>
         </div>
         <div class="third">
-            <i class="fa fa-paypal"></i>
+            <i class="fab fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">

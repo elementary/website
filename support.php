@@ -94,7 +94,7 @@ include $template['alert'];
     </a>
 
     <a class="column third" href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener">
-        <i class="fa fa-stack-exchange"></i>
+        <i class="fab fa-stack-exchange"></i>
         <h3 class="read-more">StackExchange</h3>
         <p>Check out answers to some of the most common questions we get.</p>
     </a>
