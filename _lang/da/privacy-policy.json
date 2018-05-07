@@ -1,8 +1,8 @@
 {
     "Privacy Policy": "Privatlivspolitik",
-    "Do Not Track": "Må ikke spore",
+    "Do Not Track": "Spor ikke",
     "This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.": "Dette websted ærer må-ikke-spore indstillinger i de fleste moderne browsere og deaktivere Google Analytics, når det er til stede. Vi kan ikke automatisk fjerne andre sporingsmetoder, uden alvorligt at påvirke brugen af internetsiden. Hvis du ønsker at manuelt styre disse sporingsmetoder, henvises du til afsnittet om deaktivering af cookies.",
-    "Cookies": "",
+    "Cookies": "Cookies",
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.<\/strong>": "<strong>Du kan vælge at deaktivere eller selektivt deaktivere cookies eller tredjeparts cookies i din netlæsers indstillinger.<\/strong>",
     "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "Denne side bruger cookies til småforbedringer. Du vil formenlig opleve at den fungerer uden dem, men med nedsat anvendelighed. For eksempel vil webstedet ikke huske, hvis du tidligere har betalt for elementary OS; som standard bliver du bedt om at betale igen.",
     "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "Oplagrer cookies til at bogføre adfærdsmæssige elementer og analysere potentielle trusler. For yderligere oplysninger, se",
@@ -13,7 +13,7 @@
     "Stripe's Privacy Policy": "Stripes privatpolitik",
     "Manage Cookies": "Administrér cookies",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Eftersom du allerede har besøgt vores hjemmeside, ønsker du måske selv at håndtere de cookies, der allerede er i din browser. Links til relevante instruktioner kan findes nedenfor.",
-    "Transparency": "",
-    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "",
-    "Privacy Policy &sdot; elementary": ""
+    "Transparency": "Gennemsigtighed",
+    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Vi har ikke lagt nogen bagdøre ind i vores software og har ikke modtaget nogen anmodninger om at gøre det. Vi har heller aldrig modtaget et nationalt sikkerhedsbrev, FISA-ordre eller nogen anden klassificeret anmodning om brugeroplysninger.",
+    "Privacy Policy &sdot; elementary": "Privatlivspolitik &sdot; elementary"
 }
