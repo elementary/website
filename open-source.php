@@ -177,7 +177,7 @@
         <a href="https://www.debian.org/donations" title="Debian">
             <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian" />
         </a>
-        <a href="https://fontawesome.io/community/" title="Font Awesome">
+        <a href="https://fontawesome.com/" title="Font Awesome">
             <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome" />
         </a>
         <a href="https://inkscape.org/support-us/donate/" title="Inkscape">
