@@ -1,9 +1,9 @@
 {
-    "A fast and open replacement for Windows and macOS": "軽量、そしてオープンソース。Windows や macOS の代わりに",
+    "A fast and open replacement for Windows and macOS": "高速、そしてオープンソース。Windows や macOS の代わりに",
     "Pay What You Want:": "価格はあなた次第:",
     "Custom": "カスタム",
     "Enter any dollar amount.": "何ドルか入力してください。",
-    "Purchase elementary OS": "elementary OS を購入する",
+    "Purchase elementary OS": "elementary OS の購入",
     "0.4.1 Loki | 1.50 GB (for PC or Mac)": "0.4.1 Loki | 1.50 GB (PC または Mac 向け)",
     "What the press is saying about elementary OS:": "メディアが elementary OS を取り上げています:",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "&ldquo;elementary OS は違います…古い PC 上でさえも動作する、美しくパワフルなオペレーティングシステムです&rdquo;",
@@ -12,7 +12,7 @@
     "elementary OS AppCenter categories": "elementary OS の AppCenter のカテゴリー",
     "The Indie, Open Source App Store": "インディーズで、オープンソースのアプリストア",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "AppCenter は elementary OS にネイティブかつオープンソースのアプリをもたらします。新しいアプリを素早く探しだし、すでに持っているアプリを簡単にアップデートできます。加えて、売り手が価格を決めない販売方式 (pay-what-you-want) で独立している開発者をダイレクトにサポートします。",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">AppCenter のスポットライトを読む<\/a>",
+    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">AppCenter のスポットライトを読む</a>",
     "Become a Developer": "開発者になる",
     "Task finished": "タスクが終了しました",
     "Apps You Need, Without Ones You Don't.": "必要なアプリだけを厳選しました。不要なものはありません。",
@@ -76,12 +76,12 @@
     "Security Notices": "セキュリティに関するお知らせ",
     "Download elementary OS": "elementary OS のダウンロード",
     "Pay What You Want": "自分で支払額を決める",
-    "Download elementary OS icon": "elementary OS をダウンロード アイコン",
+    "Download elementary OS icon": "elementary OS のダウンロード アイコン",
     "Choose a Download": "ダウンロードの選択",
     "Download from a localized server or by magnet link. For help and more info, see the": "お近くのミラーサーバーか、マグネットリンクのどちらかからダウンロードしてください。ヘルプおよび詳細は、次のページをご覧ください",
     "installation guide": "インストールガイド",
     "Cancel": "キャンセル",
     "Download": "ダウンロード",
     "Torrent Magnet Link": "トレントマグネットリンク",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "軽量、そしてオープンソース。Windows や macOS の代わりに &sdot; elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "高速、そしてオープンソース。Windows や macOS の代わりに &sdot; elementary OS"
 }
