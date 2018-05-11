@@ -41,7 +41,6 @@ Promise.all([jQuery, modal]).then(([$]) => {
             var $trigger = $item.find('.open-modal')
 
             $trigger.leanModal({
-                top: '5vh',
                 overlayOpacity: 0.5,
                 closeButton: '.close-modal'
             })

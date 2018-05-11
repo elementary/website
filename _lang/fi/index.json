@@ -12,7 +12,7 @@
     "elementary OS AppCenter categories": "elementary OS:n sovelluskeskuksen luokat",
     "The Indie, Open Source App Store": "Indie-pohjainen avoimen lähdekoodin sovelluskauppa",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "Sovelluskeskus tarjoaa natiiveja avoimen lähdekoodin sovelluksia elementary OS:lle. Löydä nopeasti uusia sovelluksia ja päivitä jo aiemmin asennettuja. Voit myös tukea haluamallasi rahasummalla kehittäjiä.",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Lue AppCenter Spotlight -blogia<\/a>",
+    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Lue AppCenter Spotlight -blogia</a>",
     "Become a Developer": "Ryhdy kehittäjäksi",
     "Task finished": "Tehtävä valmistui",
     "Apps You Need, Without Ones You Don't.": "Tarvitsemasi sovellukset ilman turhia sovelluksia.",
@@ -83,5 +83,5 @@
     "Cancel": "Peru",
     "Download": "Lataa",
     "Torrent Magnet Link": "Torrent Magnet -linkki",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Nopea ja avoin vaihtoehto Windowsille ja macOS:lle ⋅ elementary OS"
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Avoin ja nopea vaihtoehto Windowsille ja macOS:lle &sdot; elementary OS"
 }

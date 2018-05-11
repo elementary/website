@@ -44,6 +44,8 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
 ## Indentation {#indentation}
 
+### Vala {#indentation-vala}
+
 Vala code is indented using 4 spaces for consistency and readability.
 
 In classes, functions, loops and general flow control, the first parentheses
@@ -93,6 +95,10 @@ If you are checking the same variable more than twice, use switch/case instead o
            message ("You don't have any recommendation.");
            break;
     }
+
+### Markup {#indentation-markup}
+
+Markup languages like HTML, XML, and YML should use two-space indentation since they are much more verbose and likely to hit line-length issues sooner.
 
 ## Classes and files {#classes-and-files}
 
@@ -183,7 +189,7 @@ limit is 120 characters.
 ## GPL Header {#gpl-header}
 
     /*
-    * Copyright (c) 2011-2017 Your Organization (https://yourwebsite.com)
+    * Copyright (c) 2011-2018 Your Organization (https://yourwebsite.com)
     *
     * This program is free software; you can redistribute it and/or
     * modify it under the terms of the GNU General Public
@@ -203,12 +209,36 @@ limit is 120 characters.
     * Authored by: Author <author@example.com>
     */
 
+## EditorConfig
+
+If your code editor supports [EditorConfig](http://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
+
+```ini
+# EditorConfig <http://EditorConfig.org>
+root = true
+
+# elementary defaults
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = tab
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+tab_width = 4
+
+# Markup files
+[{*.html,*.xml,*.xml.in,*.yml}]
+tab_width = 2
+
+```
+
 # Reporting Bugs {#reporting-bugs}
 
 One of the big advantages of being an openly developed project is being able to take part in public bug tracking. However, if you're new to working with public bug tracking, it can be difficult to understand how to report bugs The Right Way™. So let's find out how:
 
 1. Find the "Issues" page for the app in question on [GitHub](https://github.com/elementary). Often times you can right-click the app in the dock, select "About", and then select "Report a Problem". Otherwise, you can search for the app on GitHub, select the "Issues" tab, and then "New Issue" on the right side of the page.
-2. When filing a new report, it's a good idea to search the issue list to make sure your report hasn't been filed already. If your report has already been filed by someone else, you should add the <i class="fa fa-thumbs-o-up" title="thumbs up"></i> reaction to the report to indicate that you are also affected. Only comment on the report if you can provide additional useful information that may help track down the source of the issue. Do not comment things like, "I have this problem too" or "This is a really important issue".
+2. When filing a new report, it's a good idea to search the issue list to make sure your report hasn't been filed already. If your report has already been filed by someone else, you should add the <i class="far fa-thumbs-up" title="thumbs up"></i> reaction to the report to indicate that you are also affected. Only comment on the report if you can provide additional useful information that may help track down the source of the issue. Do not comment things like, "I have this problem too" or "This is a really important issue".
 3. If your report has not already been filed by someone else and you've reached the "New Issue" page, type in a summary and description of the issue and select "Submit new issue". Keep in mind the following information while filing your report:
 
 ## Be Specific In The Summary {#be-specific-in-the-summary}
@@ -233,7 +263,7 @@ If you're reporting a "Wishlist" issue, like a feature request, a developer may 
 If you're not sure about anything above, you are always welcome to our development IRC channel: #elementary-dev on irc.freenode.net. We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
-We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a <i class="fa fa-thumbs-o-up" title="thumbs up"></i>.
+We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a <i class="far fa-thumbs-up" title="thumbs up"></i>.
 
 # Proposing Design Changes {#proposing-design-changes}
 

@@ -92,7 +92,7 @@
 <?php foreach (\Store\Product\get_products() as $product) { ?>
 
     <div id="product-<?php echo $product['id'] ?>-overview" class="modal modal--product"  data-product-name="<?php echo $product['name']; ?>">
-        <i class="fa fa-close close-modal"></i>
+        <i class="fa fa-times close-modal"></i>
         <div class="grid">
             <div class="half">
                 <img src="<?php echo $product['image'] ?>"/>

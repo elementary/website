@@ -6,27 +6,27 @@ As with every operating system there are some things that you may not be familia
 The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Wallpaper**.
 
 ### The Panel {#the-panel}
-At the top of the screen you can see the Panel. On the left is the Applications menu, in the center are the time and date, and on the right are the Indicators.
+At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.
 
 ![The Panel](../images/docs/learning-the-basics/panel.png)
 
-#### Applications {#applications}
+#### Applications Menu {#applications}
 
-On the left side of the panel is the Applications item. Clicking **Applications** brings up a launcher with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
+On the left side of the panel is the Applications Menu. Selecting **Applications** opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
 
-![Slingshot](../images/docs/learning-the-basics/slingshot.png)
+![Applications Menu](../images/docs/learning-the-basics/slingshot.png)
 
-You can search for apps by name or by keyword and perform actions associated with them. You can also search for system settings panes. Some of the actions you can find in search include:
+You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:
 
 * Shutdown and Restart
 * Compose Message
 * New Private Browsing Window
 * Math operations (example: 23 * 5)
 
-To open the applications menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space</kbd>.
+To open the Applications Menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space</kbd>.
 
 #### Indicators {#indicators}
-On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Clicking an indicator exposes more information and related actions.
+On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.
 
 A middle click or three finger tap on an indicator will present you with the following quick actions:
 
@@ -41,7 +41,7 @@ At the bottom of the screen is the Dock. It contains your favorite apps well as 
 
 ![The Dock](../images/docs/learning-the-basics/dock.png)
 
-The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from **Applications** on the panel or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
+The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
 
 By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.
 

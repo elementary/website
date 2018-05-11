@@ -5,7 +5,7 @@
     "By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.": "अोपन सोर्स असल्याने एलिमेंटरी अोएस सर्वोत्तम सुरक्षा आणि गोपनीयतेच्या बाबतीत इतर क्लोज्ड सोर्स सोफ्टवेअरपेक्षा फायदेशीर ठरते. जेव्हा सोर्सकोड आॅडिटकरिता उपलब्ध असतो, कम्युनिटीमधील कुणीही — सुरक्षा संशोधक असो, संबंधीत वापरकर्ता असो किंवा मूळ उपकरण निर्माता असो जो त्यांच्या हार्डवेअर सोबत अोएस पुरवतो — खात्री करू शकतात की, सोफ्टवेअर सुरक्षित आहे आणि वैयक्तिक माहिती गोळा करून इतरत्र पाठवत नाहीये.",
     "Better for Developers": "विकसकांसाठी उत्तम",
     "If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.": "",
-    "Get Involved": "गुंतवून घ्या",
+    "Get Involved": "सहभाग घ्या",
     "Applications": "अनुप्रयोग",
     "elementary OS Applications": "एलिमेंटरी अोएस अनुप्रयोग",
     "Calendar": "दिनदर्शिका",
@@ -84,5 +84,5 @@
     "Software Freedom Conservancy": "",
     "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "",
-    "Open Source &sdot; elementary": ""
+    "Open Source &sdot; elementary": "ओपन सोर्स"
 }
