@@ -97,23 +97,23 @@ section {
     background-color: #44bbb2;
 }
 
-/* Support */
+/* User support */
 
-#support .button.flat.suggested-action {
+#user-support .button.flat.suggested-action {
     background-color: #d53c12;
 }
 
-#support .button.flat.suggested-action:focus {
+#user-support .button.flat.suggested-action:focus {
     background-color: #ef562c;
 }
 
-/* Web */
+/* Website */
 
-#web-development .button.flat.suggested-action {
+#website .button.flat.suggested-action {
     background-color: #d33682;
 }
 
-#web-development .button.flat.suggested-action:focus {
+#website .button.flat.suggested-action:focus {
     background-color: #ed509c;
 }
 
