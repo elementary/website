@@ -29,9 +29,9 @@
         <div class="whole" id="sections-menu">
             <a class="button flat suggested-action" href="#funding">Funding</a>
             <a class="button flat suggested-action" href="#translations">Translations</a>
-            <a class="button flat suggested-action" href="#support">Support</a>
-            <a class="button flat suggested-action" href="#web-development">Web</a>
-            <a class="button flat suggested-action" href="#desktop-development">Desktop</a>
+            <a class="button flat suggested-action" href="#user-support">User support</a>
+            <a class="button flat suggested-action" href="#website">Website</a>
+            <a class="button flat suggested-action" href="#development">Development</a>
             <a class="button flat suggested-action" href="#design">Design</a>
         </div>
     </div>
@@ -101,7 +101,7 @@
     </div>
 </section>
 
-<section id="support" class="grey">
+<section id="user-support" class="grey">
     <div class="grid">
         <div class="two-thirds">
             <h2>Support</h2>
@@ -128,7 +128,7 @@
     </div>
 </section>
 
-<section id="web-development">
+<section id="website">
     <div class="web-browser">
         <div id="toolbar">
             <img src="images/get-involved/browser-left.svg">
@@ -144,7 +144,7 @@
     </div>
 </section>
 
-<section id="desktop-development" class="grey">
+<section id="development" class="grey">
     <div class="grid">
         <div class="two-thirds">
             <h2>Desktop Development</h2>
