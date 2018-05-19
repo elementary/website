@@ -56,13 +56,13 @@
     "Running the following command in your terminal:": "Spusťte následující příkaz v terminálu:",
     "should produce the output:": "výsledek by měl vypadat:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Budete potřebovat USB flash disk s minimálně 2 GB volného místa a program s názvem UNetbootin.",
-    "Download UNetbootin": "Stáhnout UNetbooti",
+    "Download UNetbootin": "Stáhnout UNetbootin",
     "Open UNetbootin from the Dash. It will open a window like the one below:": "Otevřte UNetbootin z nabídky. Objeví se okno jako níže:",
     "UNetbootin": "UNetbootin",
-    "Select &quot;Diskimage&quot;": "Zvolte \"Obraz disku\"",
-    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Klikněte na &quot;...&quot; a vyberte ISO soubor, který jste si stáhli dříve.",
+    "Select &quot;Diskimage&quot;": "Zvolte &quot;Obraz disku&quot;",
+    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Klikněte na &quot;…&quot; a vyberte ISO soubor, který jste si stáhli dříve.",
     "Unplug all USB memory devices apart from the one you want to use.": "Odpojte všechna paměťová USB zařízení kromě toho, které chcete použít.",
-    "Click &quot;OK&quot; and wait for the process to finish.": "Klikněte na \"OK\" a vyčkejte na dokončení.",
+    "Click &quot;OK&quot; and wait for the process to finish.": "Klikněte na &quot;OK&quot; a vyčkejte na dokončení.",
     "After Installation": "Po instalaci",
-    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Přečtěte si příručku <a href=\"/docs/learning-the-basics\">začínáme</a>, abyste se naučili o vašem novém operačním systému."
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Přečtěte si příručku <a href=\"/docs/learning-the-basics\">začínáme</a>, abyste se něco dozvěděli o vašem novém operačním systému."
 }
