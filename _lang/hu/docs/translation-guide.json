@@ -14,7 +14,7 @@
     "If you don't want to use Weblate, or want to make a lot a changes at once, you can also translate offline. To do so:": "Ha nem akarod a Weblatet használni, vagy egyszerre nagyon sok fordítást akarsz beküldeni, akkor lehetőséged van az offline fordításra is. Ehhez a következőket kell tenned:",
     "Go to a project you want to translate": "Menj a projekthez, amit le akarsz fordítani",
     "Choose your language": "Válaszd ki a nyelvedet",
-    "Click on &quot;Download translation&quot;": "Kattintás a \"Fordítás letöltése\"-re",
+    "Click on &quot;Download translation&quot;": "Kattints a &quot;Fordítás letöltése&quot;gombra",
     "You are now able to request an e-mail, which gives you the right link to download the translations. Now:": "Képes vagy arra, hogy kérj egy e-mail, amely megadja neked a megfelelő linket a fordítások letöltéséhez. Most:",
     "Choose your favorite text- or po-editor (e.g. <a href=\"https://apps.ubuntu.com/cat/applications//poedit/\">Poedit</a>)": "Válaszd a kedvenc szöveg- vagy po-szerkesztődet (p.l. <a href=\"https://apps.ubuntu.com/cat/applications//poedit/\">Poedit</a>)",
     "Start translating": "Fordítás megkezdése",
