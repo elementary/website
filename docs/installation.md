@@ -2,14 +2,17 @@
 
 ## Download elementary OS {#download-elementary-os}
 
-If you haven't already, you will need to <a href="/" target="_blank">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
+If you haven't already, you will need to <a href="/" target="_blank" rel="noopener">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
 ## Recommended System Specifications {#recommended-system-specifications}
 
-* Intel i3 or comparable dual-core 64-bit processor
-* 1 GB of system memory (RAM)
-* 15 GB of disk space
+While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
+
+* Recent Intel i3 or comparable dual-core 64-bit processor
+* 4 GB of system memory (RAM)
+* Solid state drive (SSD) with 15 GB of free space
 * Internet access
+* 1024×768 display
 
 <div class="row alert warning" markdown="1">
 <div class="column alert">
@@ -32,9 +35,9 @@ Select the operating system you are currently using to view tailored installatio
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
-<a class="button install-on-windows" href="#install-on-windows"><i class="fa fa-windows"></i> Windows</a>
-<a class="button install-on-macos" href="#install-on-macos"><i class="fa fa-apple"></i> macOS</a>
-<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fa fa-linux"></i> Ubuntu</a>
+<a class="button install-on-windows" href="#install-on-windows"><i class="fab fa-windows"></i> Windows</a>
+<a class="button install-on-macos" href="#install-on-macos"><i class="fab fa-apple"></i> macOS</a>
+<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fab fa-linux"></i> Ubuntu</a>
 </div>
 </div>
 
@@ -58,7 +61,7 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
 5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the `#` button in the status bar and verify that the text next to "SHA256" matches the following hash:
 ```bash nohighlight
-8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
+5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
 ```
 
 6. If the hashes match, click "Start" and wait for the process to finish.
@@ -85,20 +88,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160921.iso
+shasum -a 256 ~/Downloads/elementaryos-0.4.1-stable.20180214.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
+5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4-stable-amd64.20160921.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20180214.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -136,7 +139,7 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4-stable-amd64.20160921.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-0.4.1-stable.20180214.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
@@ -151,13 +154,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.4-stable-amd64.20160921.iso
+sha256sum elementaryos-0.4.1-stable.20180214.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf
+5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -193,5 +196,5 @@ In order to start the installation process, you must boot your computer from the
 
 Take this time to read the <a href="/docs/learning-the-basics">getting started</a> guide to learn about your new operating system.
 
-<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+<!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <script type="text/javascript" src="scripts/docs/installation.js" async></script>

@@ -44,6 +44,8 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
 ## Indentation {#indentation}
 
+### Vala {#indentation-vala}
+
 Vala code is indented using 4 spaces for consistency and readability.
 
 In classes, functions, loops and general flow control, the first parentheses
@@ -93,6 +95,10 @@ If you are checking the same variable more than twice, use switch/case instead o
            message ("You don't have any recommendation.");
            break;
     }
+
+### Markup {#indentation-markup}
+
+Markup languages like HTML, XML, and YML should use two-space indentation since they are much more verbose and likely to hit line-length issues sooner.
 
 ## Classes and files {#classes-and-files}
 
@@ -152,7 +158,7 @@ In places or operations where you would otherwise use `set` , you should make us
 
 For example, instead of using
 
-         set_can_focus(false);
+         set_can_focus (false);
 
 you should use
 
@@ -167,6 +173,12 @@ Referring to GLib is not necessary. If you want to print something:
 
 Opt for the second one, it's much cleaner.
 
+## GTK events {#gtk-events}
+
+Gtk widgets are intended to respond to click events that can be described
+as "press + release" instead of "press". Use `toggle` and `release` events
+instead of `press`.
+
 ## Columns per line {#columns-per-line}
 
 Ideally, lines should have no more than 80 characters per line, because this
@@ -177,7 +189,7 @@ limit is 120 characters.
 ## GPL Header {#gpl-header}
 
     /*
-    * Copyright (c) 2011-2017 Your Organization (https://yourwebsite.com)
+    * Copyright (c) 2011-2018 Your Organization (https://yourwebsite.com)
     *
     * This program is free software; you can redistribute it and/or
     * modify it under the terms of the GNU General Public
@@ -197,14 +209,37 @@ limit is 120 characters.
     * Authored by: Author <author@example.com>
     */
 
+## EditorConfig
+
+If your code editor supports [EditorConfig](http://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
+
+```ini
+# EditorConfig <http://EditorConfig.org>
+root = true
+
+# elementary defaults
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = tab
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+tab_width = 4
+
+# Markup files
+[{*.html,*.xml,*.xml.in,*.yml}]
+tab_width = 2
+
+```
+
 # Reporting Bugs {#reporting-bugs}
 
 One of the big advantages of being an openly developed project is being able to take part in public bug tracking. However, if you're new to working with public bug tracking, it can be difficult to understand how to report bugs The Right Way™. So let's find out how:
 
-1. In order to file reports, you must be signed up as a member of Launchpad. If you've been through our [development guide](/docs/code/getting-started#the-basic-setup), you already have this covered.
-2. Find the "Report a Bug" page for the app in question. Often times you can right-click the app in the dock, select "About", and then select "Report a Problem". Otherwise, you can search for the app on Launchpad, select the "Bugs" tab, and then "Report a Bug" on the right side of the page.
-3. When filing a new report, launchpad will automatically check for duplicates. However, it's still a good idea to search the bug list to make sure your report hasn't been filed already. If your report has already been filed by someone else, you can mark the report as affecting you using the link on the top left of the report's page. Only comment on the report if you can provide additional useful information that may help track down the source of the issue. Do not comment things like, "I have this problem too" or "This is a really important issue".
-5. If your report has not already been filed by someone else and you've reached the "Report a Bug" page, type in a summary and description of the issue and select "Submit". Keep in mind the following information while filing your report:
+1. Find the "Issues" page for the app in question on [GitHub](https://github.com/elementary). Often times you can right-click the app in the dock, select "About", and then select "Report a Problem". Otherwise, you can search for the app on GitHub, select the "Issues" tab, and then "New Issue" on the right side of the page.
+2. When filing a new report, it's a good idea to search the issue list to make sure your report hasn't been filed already. If your report has already been filed by someone else, you should add the <i class="far fa-thumbs-up" title="thumbs up"></i> reaction to the report to indicate that you are also affected. Only comment on the report if you can provide additional useful information that may help track down the source of the issue. Do not comment things like, "I have this problem too" or "This is a really important issue".
+3. If your report has not already been filed by someone else and you've reached the "New Issue" page, type in a summary and description of the issue and select "Submit new issue". Keep in mind the following information while filing your report:
 
 ## Be Specific In The Summary {#be-specific-in-the-summary}
 This will be the title of the issue in the bug tracker. It's very important to be specific because it makes it much easier for a developer or bug manager to search the issue list and helps avoid duplicate reports. A summary such as "App Crashes" is not good and vague requests like "Increase Performance" are not helpful. A good summary is something like "Notification is not sent when process finishes".
@@ -218,20 +253,17 @@ First of all, it's important to mention that bug reports should be written in En
 The most important thing for a report is that the developer must be able to reproduce the issue. If necessary, include exact numbered steps to reproduce the issue. Include relevant information like your OS version, any modifications you've made to the system (like changing your window manager or kernel), or the version numbers of relevant libraries like Gtk or WebKit. If you're reporting a crash, make sure to [include a backtrace](https://wiki.debian.org/HowToGetABacktrace).
 
 ## Be Prepared To Provide More Information {#be-prepared-to-provide-more-information}
-If your report does not contain enough information for the developer to reproduce the issue, it may be marked as "Incomplete". Oftentimes, a developer will make a comment requesting additional specific information. If you do not provide that information, your report will eventually expire.
+If your report does not contain enough information for the developer to reproduce the issue, it may be marked as "Incomplete". Oftentimes, a developer will make a comment requesting additional specific information. If you do not provide that information, your report will eventually be closed.
 
-If you've reported your issue against the wrong app, a developer may mark it as "Invalid". If the developer knows which app you meant to report against, they may re-assign the issue. However, if they do not you must find the correct app and re-assign the report yourself.
+If you've reported your issue against the wrong app, a developer may mark it as "Invalid". If the developer knows which app you meant to report against, they may ask you to re-file against the correct app. However, if they do not you must find the correct app and re-file the report yourself.
 
 If you're reporting a "Wishlist" issue, like a feature request, a developer may mark your bug as "Opinion" or "Won't Fix". Developers are often open to discussion about these kinds of issues, but please do not harass a developer for marking your report this way.
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
 If you're not sure about anything above, you are always welcome to our development IRC channel: #elementary-dev on irc.freenode.net. We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
-## Don't Confirm Reports for Other People's Apps {#dont-confirm-reports-for-other-peoples-apps}
-If a report affects you, mark it using the link. Do not confrim your own reports. Even if you are 100% sure that you are right, just don't do it. It's not good bug tracker etiquette. A bug manager or developer for the app will confirm the report when they are able to review it.
-
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
-We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the green link that says, "Does this bug affect you?" under the report's title.
+We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a <i class="far fa-thumbs-up" title="thumbs up"></i>.
 
 # Proposing Design Changes {#proposing-design-changes}
 

@@ -3,11 +3,13 @@
  * Handles homepage payment and OS image downloading
  */
 
+
 import Promise from 'core-js/fn/promise'
 
 import streams from 'web-streams-polyfill'
 
 import analytics from '~/lib/analytics'
+
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 import Stripe from '~/lib/stripe'
@@ -18,8 +20,8 @@ import { url } from '~/page'
 import config from '~/config'
 import Payment from '~/widgets/payment'
 
-
 Promise.all([config, analytics, jQuery, Payment, streams, streamSaver, WebTorrent, modal]).then(([config, ga, $, Payment, streams, streamSaver, WebTorrent]) => {
+
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {

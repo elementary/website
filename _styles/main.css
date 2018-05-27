@@ -187,8 +187,8 @@ img.inline + div.inline {
 .inline-tweet::after,
 .inline-tweet::after {
     color: inherit;
-    content: "";
-    font-family: "FontAwesome";
+    content: "\f099";
+    font-family: "Font Awesome\ 5 Brands";
     font-style: normal;
     font-weight: inherit;
     margin-top: 0.2em;
@@ -205,9 +205,9 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "";
+    content: "\f105";
     display: inline-block;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome\ 5 Pro";
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;
@@ -296,6 +296,42 @@ nav a:focus {
 nav a:hover,
 nav a:visited:hover {
     opacity: 0.7;
+}
+
+nav a[title="Facebook"]:focus,
+nav a[title="Facebook"]:hover {
+    color: #19227e;
+    fill: #19227e;
+}
+
+nav a[title="Google+"]:focus,
+nav a[title="Google+"]:hover {
+    color: #d50000;
+    fill: #d50000;
+}
+
+nav a[title="Medium"]:focus,
+nav a[title="Medium"]:hover {
+    color: #00ab6b;
+    fill: #00ab6b;
+}
+
+nav a[title="Reddit"]:focus,
+nav a[title="Reddit"]:hover {
+    color: #ff4500;
+    fill: #ff4500;
+}
+
+nav a[title="StackExchange"]:focus,
+nav a[title="StackExchange"]:hover {
+    color: #0d93ff;
+    fill: #0d93ff;
+}
+
+nav a[title="Twitter"]:focus,
+nav a[title="Twitter"]:hover {
+    color: #1da1f2;
+    fill: #1da1f2;
 }
 
 nav .logomark {
@@ -444,7 +480,7 @@ footer ul li a:focus {
         width: calc(33% - 88px);
     }
 
-    .column + .column + .column {
+    .column + .column {
         margin-left: 16px !important;
     }
 }
@@ -480,18 +516,6 @@ footer ul li a:focus {
 .row.docs,
 .row.docs .slide {
     max-width: 800px;
-}
-
-.row.docs h2,
-.row.docs h3,
-.row.docs h4 {
-    margin-bottom: 16px;
-    margin-top: 32px;
-    text-align: left;
-}
-
-.row.docs h4 {
-    font-weight: 400;
 }
 
 /*******
@@ -566,7 +590,9 @@ a.third:hover {
     fill: #08c;
 }
 
-.third .fa {
+.third .fa,
+.third .fab,
+.third .far {
     font-size: 32px;
     text-align: center;
     display: block;
@@ -874,13 +900,14 @@ input:not([type="submit"]):not(.button) {
 }
 
 input[type="text"]:not(.button),
+input[type="password"]:not(.button),
 select {
     font-size: 13px;
     padding: 8px;
 }
 
-option {
-    padding: 42px;
+select {
+    text-align: left;
 }
 
 input[type="number"] {

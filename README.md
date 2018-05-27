@@ -3,6 +3,7 @@ The New elementary.io
 
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=10548672)](https://www.bountysource.com/trackers/10548672-elementary-website)
 [![Build Status](https://travis-ci.org/elementary/website.svg?branch=master)](https://travis-ci.org/elementary/website)
+[![Translation status](https://l10n.elementary.io/widgets/website/-/svg-badge.svg)](https://l10n.elementary.io/engage/website/?utm_source=widget)
 
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
@@ -50,3 +51,13 @@ Contributing
 ============
 
 See guidelines for [coding](https://github.com/elementary/website/blob/master/.github/CONTRIBUTING.md) and [translating](https://github.com/elementary/website/blob/master/TRANSLATE.md).
+
+Security
+========
+
+For any security related issues, please **do not open a public GitHub issue**. Instead, email them to [webmaster@elementary.io](mailto:webmaster@elementary.io). We will provide an initial assessment of security reports within 48 hours and should apply patches within 2 weeks (also, feel free to contribute a fix for the issue).
+
+License
+=======
+
+This project has a [MIT license](LICENSE.md).

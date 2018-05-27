@@ -33,7 +33,7 @@
     "Captive Portal Assistant": "",
     "Pantheon Online Accounts": "",
     "Polkit Agent": "",
-    "Ubuntu": "",
+    "Ubuntu": "Ubuntu",
     "Desktop Libraries &amp; Repositories": "",
     "Ayatana": "",
     "BAMF": "",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "",
     "rEFInd": "",
     "Software Freedom Conservancy": "",
+    "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "",
     "Open Source &sdot; elementary": ""
 }

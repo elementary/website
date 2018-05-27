@@ -11,7 +11,7 @@
     "Calendar": "Calendario",
     "Camera": "",
     "Files": "File",
-    "Mail": "Posta",
+    "Mail": "Mail",
     "Music": "Musica",
     "Photos": "Foto",
     "Scratch": "",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "",
     "rEFInd": "",
     "Software Freedom Conservancy": "",
+    "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "Tutti i loghi presentati qui sono marchi registrati dei rispettivi progetti.",
     "Open Source &sdot; elementary": ""
 }

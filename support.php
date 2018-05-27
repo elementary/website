@@ -1,25 +1,34 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Support &sdot; elementary';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['styles'] = array(
-        'styles/support.css'
-    );
+$page['title'] = 'Support &sdot; elementary';
 
-    include $template['header'];
-    include $template['alert'];
+$page['styles'] = array(
+    'styles/support.css'
+);
+
+include $template['header'];
+include $template['alert'];
 ?>
 
 <div class="row">
-    <h1>Get support for <?php
-                            // Embed the SVG to fix scaling in WebKit 1.x,
-                            // while preserving CSS options for the image.
-                            include __DIR__.'/images/logotype-os.svg';
-                        ?></h1>
+    <h1>
+        Get support for
+        <?php
+            // Embed the SVG to fix scaling in WebKit 1.x,
+            // while preserving CSS options for the image.
+            include __DIR__.'/images/logotype-os.svg';
+        ?>
+    </h1>
 </div>
 
 <div class="row apps">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/appcenter" target="_blank" rel="noopener">
+        <img width="64" height="64" src="images/icons/apps/64/system-software-install.svg" alt="AppCenter"/>
+        <span>AppCenter</span>
+    </a>
+
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/maya" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/office-calendar.svg" alt="Calendar"/>
         <span>Calendar</span>
@@ -36,13 +45,13 @@
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank" rel="noopener">
-        <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Geary"/>
-        <span data-l10n-off>Mail</span>
+        <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Mail"/>
+        <span>Mail</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/epiphany" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/web-browser.svg" alt="Epiphany"/>
-        <span data-l10n-off>Epiphany</span>
+        <span>Epiphany</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/noise" target="_blank" rel="noopener">
@@ -57,7 +66,7 @@
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Text Editor"/>
-        <span data-l10n-off>Scratch</span>
+        <span>Scratch</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/settings" target="_blank" rel="noopener">
@@ -85,12 +94,12 @@
     </a>
 
     <a class="column third" href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener">
-        <i class="fa fa-stack-exchange"></i>
+        <i class="fab fa-stack-exchange"></i>
         <h3 class="read-more">StackExchange</h3>
         <p>Check out answers to some of the most common questions we get.</p>
     </a>
 </div>
 
 <?php
-    include $template['footer'];
+include $template['footer'];
 ?>

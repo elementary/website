@@ -55,7 +55,7 @@
                         <?php } ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.32 GB (for PC or Mac)</p>
+                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.50 GB (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
                     </div>
@@ -65,30 +65,27 @@
         <section class="grid" id="the-press">
             <h4>What the press is saying about elementary OS:</h4>
             <div class="third">
-                <a href="http://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED http://elementary.io" data-tweet-suffix=" — @WIRED http://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
+                <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
             </div>
             <div class="third">
                 <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife http://elementary.io" data-tweet-suffix=" — @MacLife http://elementary.io" target="_blank" rel="noopener">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife https://elementary.io" data-tweet-suffix=" — @MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
             </div>
             <div class="third">
-                <a href="http://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker http://elementary.io" data-tweet-suffix=" — @lifehacker http://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
+                <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
         <section id="appcenter" class="grey">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary appcenter categories"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary OS AppCenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. And soon, support indie developers directly through pay-what-you-want purchases.</p>
+                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
+                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
                     <p><a href="developer" class="read-more">Become a Developer</a></p>
-
-                    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
-                        <p><a href="https://igg.me/at/appcenter" class="read-more">Back AppCenter on Indiegogo</a></p>
-                    <?php } ?>
                 </div>
             </div>
         </section>
@@ -130,7 +127,7 @@
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
                                 <h2>Music</h2>
-                                <p>Organize and listen to your music. Browse by albums, use lightning-fast search, and build playlists of your favorites.</p>
+                                <p>Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.</p>
                             </div>
                         </div>
                     </div>
@@ -154,7 +151,7 @@
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
                                 <h2>Mail</h2>
-                                <p>Manage multiple accounts quickly and effortlessly with conversation-based mail, fast-as-you-type search, new mail notifications, and more.</p>
+                                <p>Manage multiple accounts quickly and effortlessly with conversation-based e-mail, fast-as-you-type search, new e-mail notifications, and more.</p>
                             </div>
                         </div>
                     </div>
@@ -297,8 +294,8 @@
                             <div class="slingshot-grid">
                             </div>
                             <div id="slingshot-pager">
-                                <div class="button active" data-l10n-off>1</div>
-                                <div class="button" data-l10n-off>2</div>
+                                <div class="switcher-checked" data-l10n-off><?php include('images/bullet.svg'); ?></div>
+                                <div class="switcher" data-l10n-off><?php include('images/bullet.svg'); ?></div>
                             </div>
                         </div>
                         <div id="slingshot-categories" class="next view">
@@ -343,7 +340,7 @@
             </div>
             <div class="third">
                 <h2>Safe &amp; Secure</h2>
-                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="http://www.ubuntu.com/usn/xenial/">Security Notices</a></p>
+                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
             </div>
         </section>
         <section class="grid">
@@ -395,7 +392,7 @@
             </div>
         </div>
         <a style="display:none;" class="open-modal" href="#download-modal"></a>
-        <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/g/classlist"></script><![endif]-->
+        <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
     include $template['footer'];
 ?>

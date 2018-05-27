@@ -28,7 +28,6 @@ const supportedLanguages = [
 ]
 
 export default class Payment {
-
     /**
      * Payment
      * Creates a new Payment class
@@ -88,7 +87,7 @@ export default class Payment {
                     description: this.description,
                     locale: this.language,
 
-                    bitcoin: true,
+                    bitcoin: false,
                     alipay: false,
 
                     currency,

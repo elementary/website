@@ -8,10 +8,10 @@
     "Get Involved": "Participă",
     "Applications": "",
     "elementary OS Applications": "",
-    "Calendar": "",
+    "Calendar": "Calendar",
     "Camera": "Cameră (Foto)",
     "Files": "Fișiere",
-    "Mail": "",
+    "Mail": "E-Mail",
     "Music": "Muzică",
     "Photos": "Fotografii",
     "Scratch": "",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "",
     "rEFInd": "",
     "Software Freedom Conservancy": "",
+    "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "",
     "Open Source &sdot; elementary": ""
 }

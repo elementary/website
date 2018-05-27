@@ -1,16 +1,16 @@
 # Getting Started {#getting-started}
 
-Welcome to the elementary Developer Guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
+Welcome to the elementary developer guide! This book was created to teach you all about creating and distributing apps for elementary OS. The introduction will make sure that you have all the tools for the job and a solid understanding of what this book is about. Some of you may feel confident enough to jump straight into coding. If that's the case, you might want to skip ahead and start writing your first app.
 
 However, we strongly recommend to at least skim through this preparation step. Having the right setup is going to help you reach your goals faster, and having a solid foundation is going to help you throughout the rest of this book.
 
 ## What We Will And Won't Cover {#what-we-will-and-wont-cover}
 
-We're going to assume that you have absolutely no experience in writing apps for elementary. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
+We're going to assume that you have absolutely no experience in writing apps for elementary OS. But we will assume some basic programming knowledge, and hopefully a little experience in Vala or at least similarly syntaxed languages. If you're not familiar with Vala, we highly encourage you to brush up on it before coming here.
 
-We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
+We’re also not covering design too much in this guide; that’s what the [Human Interface Guidelines](/docs/human-interface-guidelines) (HIG) are for, and you’re highly encouraged to take a look there before beginning your app. We're going to assume you have a basic knowledge of (or at least a quick link to) the HIG and focus on coding. However, elementary OS is all about great design and stellar consistency. It’s important you grasp these concepts before moving on.
 
-In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
+In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary OS, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
 # The Basic Setup {#the-basic-setup}
 
@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Git revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## GitHub {#github}
 
@@ -28,7 +28,7 @@ GitHub is an online platform for hosting code, reporting issues, tracking milest
 
 ## Git {#git}
 
-To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](http://en.wikipedia.org/wiki/Revision_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
+To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](https://en.wikipedia.org/wiki/Version_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
 
 If you're ready, let's get you set up to use Git:
 
@@ -46,7 +46,7 @@ If you're ready, let's get you set up to use Git:
     git config --global user.email "You@email.com"
     ```
     
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
     ssh-keygen -t rsa
@@ -76,7 +76,7 @@ The first piece of our simple "SDK" is the code editor Scratch. This comes by de
 
 ![](images/icons/apps/128/utilities-terminal.svg)
 
-We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary doesn’t come with that folder by default, you’ll need to create it.
+We’re going to use Terminal in order to compile our code, push revisions to GitHub (using `git`), and other good stuff. Throughout this guide, we’ll be issuing Terminal commands. You should assume that any command is executed from the directory “Projects” in your home folder unless otherwise stated. Since elementary OS doesn’t come with that folder by default, you’ll need to create it.
 
 Open Terminal and issue the following command:
 
@@ -108,53 +108,63 @@ Apps on elementary OS are organized into standardized directories contained in y
 
 Later on, We'll talk about adding other directories like "po" and "data". For now, this is all we need.
 
-## Gtk.Window and Gtk.Button {#gtk-window-and-gtk-button}
+## Gtk.Application {#gtk-application}
 Now what you've been waiting for! We're going to create a window that contains a button. When pressed, the button will display the text "Hello World!" To do this, we're going to use a widget toolkit called GTK+ and the programming language Vala. Before we begin, we highly recommend that you do not copy and paste. Typing each section manually will help you to practice and remember. Let's get started:
 
 1. Create a new file in Scratch and save it as "gtk-hello.vala" inside your "src" folder
 
-2. First we must create the main function of our new GTK app. Type the following in your "gtk-hello.vala".
+2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "gtk-hello.vala".
 
-        int main (string[] args) {
-            Gtk.init (ref args);
+        public class MyApp : Gtk.Application {
+
+            public MyApp () {
+                Object (
+                    application_id: "com.github.yourusername.yourrepositoryname",
+                    flags: ApplicationFlags.FLAGS_NONE
+                );
+            }
+
+            protected override void activate () {
+                var main_window = new Gtk.ApplicationWindow (this);
+                main_window.default_height = 300;
+                main_window.default_width = 300;
+                main_window.title = "Hello World";
+                main_window.show_all ();
+            }
+
+            public static int main (string[] args) {
+                var app = new MyApp ();
+                return app.run (args);
+            }
         }
+        
+    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
+        
+    Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
-3. Now, that we've initialized Gtk, we'll create a new window and declare a few properties of this window. You'll notice that most of these property names are pretty straightforward. Try to guess what each one does and we'll explain in a second. Type the following after the `Gtk.init` line, but before the last bracket:
+    ```bash
+    valac --pkg gtk+-3.0 gtk-hello.vala
+    ./gtk-hello
+    ```
 
-        var window = new Gtk.Window ();
-        window.title = "Hello World!";
-        window.set_border_width (12);
-        window.set_position (Gtk.WindowPosition.CENTER);
-        window.set_default_size (350, 70);
-        window.destroy.connect (Gtk.main_quit);
+    Do you see a new, empty window called "Hello World"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
 
-        Gtk.main ();
-        return 0;
-
-    The first line creates a new `Gtk.Window` called "window". The second line sets the window title that you see at the top of the window. Next, we create a margin inside that window so that widgets don't bump up against the window's edge. Then we tell the window manager that we want to place this window in the center of the screen instead of in the default position (which is usually the top left). We also must give our window a default size so that is does not appear too small for the user to interact with it. Finally, we explain what to do with this process if the main window is closed; In our case, we want to quit.
-
-4. Now that we've defined a nice window, let's put a button inside of it. After our window stuff (but before `Gtk.main` line), leave a new line and then type the following:
+3. Now that we've defined a nice window, let's put a button inside of it. Add the following to your application at the beginning of the `activate ()` function:
 
         var button_hello = new Gtk.Button.with_label ("Click me!");
+        button_hello.margin = 12;
         button_hello.clicked.connect (() => {
             button_hello.label = "Hello World!";
-            button_hello.set_sensitive (false);
+            button_hello.sensitive = false;
         });
+        
+    Then add this line right before `main_window.show_all ()`:
 
-        window.add (button_hello);
-        window.show_all ();
+        main_window.add (button_hello);
 
-    Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.Window` and declare that we want to show all of the window's contents.
-
-## Compiling and Running your code {#compiling-and-running-your-code}
-Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk app:
-
-```bash
-valac --pkg gtk+-3.0 gtk-hello.vala
-./gtk-hello
-```
-
-Did it work? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
+    Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we add a margin to the button so that it doesn't bump up against the sides of the window. We've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive after it's clicked; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.ApplicationWindow` and declare that we want to show all of the window's contents.
+    
+    Compile and run your application one more time and test it out. Nice job! You've just written your first Gtk+ app!
 
 ## Pushing to GitHub {#pushing-to-github}
 
@@ -207,7 +217,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
-4. Now, let's create our main function, a `Gtk.Window`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
+4. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
 5. For the sake of time let's just put a `Gtk.Label` instead of a `Gtk.Button`. We don't need to try to make the label do anything when you click it.
 
@@ -215,8 +225,8 @@ To create our first real app, we're going to need all the old stuff that we used
 
     Don't forget to add it to your window and show the window's contents:
 
-        window.add (label);
-        window.show_all ();
+        main_window.add (label);
+        main_window.show_all ();
 
 6. Build "hello-again.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
@@ -231,11 +241,11 @@ Everything working as expected? Good. Now, let's get our app ready for other peo
 
 ## The .desktop File {#the-desktop-file}
 
-Every app comes with a .desktop file. This file contains all the information needed to display your app in the Applications menu and in the Dock. Let's go ahead and make one:
+Every app comes with a .desktop file. This file contains all the information needed to display your app in the Applications Menu and in the Dock. Let's go ahead and make one:
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
+2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
 
 3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
@@ -243,7 +253,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         Name=Hello Again
         GenericName=Hello World App
         Comment=Proves that we can use Vala and Gtk
-        Categories=GTK;Utility;
+        Categories=Utility;Education;
         Exec=com.github.yourusername.yourrepositoryname
         Icon=application-default-icon
         Terminal=false
@@ -251,7 +261,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         X-GNOME-Gettext-Domain=hello-again
         Keywords=Hello;World;Example;
 
-    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
+    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines#app-launchers).
 
 4. Finally, let's add this file to `git` and commit a revision:
 
@@ -270,7 +280,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2017 Your Name <you@email.com> -->
+        <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname.desktop</id>
           <metadata_license>CC0</metadata_license>
@@ -297,21 +307,9 @@ You can also specify a suggested price in whole USD. Remember though that AppCen
 
 ## Legal Stuff {#legal-stuff}
 
-Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need two new files in our project's root folder: AUTHORS and COPYING.
+Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need a new file in our project's root folder: COPYING.
 
-### Authors {#authors}
-
-The AUTHORS file is pretty straightforward. This file contains your name and email address along with the name and email address of anyone who helped you make your app. It typically looks like this:
-<!--email_off-->
-
-        Your Name <you@emailaddress.com>
-        Your Friend <friend@emailaddress.com>
-
-<!--/email_off-->
-
-### Copying {#copyright}
-
-The COPYING file contains a copy of the license that your code is released under. For elementary apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
+The COPYING file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Mark Your Progress {#mark-your-progress}
 
@@ -321,7 +319,7 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 # The Build System {#the-build-system}
 
-The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
+The next thing we need is a build system. The build system that we're going to be using is called [CMake](https://cmake.org/). We already installed the `cmake` program at the beginning of this book when we installed the Development Libraries. What we're going to do in this step is create the files that tell CMake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
 
 Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
 
@@ -379,7 +377,7 @@ Create a new file in your project's root folder called "CMakeLists.txt". Since t
         # install the binaries we just made
         install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
-        # install our .desktop file so the Applications menu will see it
+        # install our .desktop file so the Applications Menu will see it
         install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
         
         # install our .appdata.xml file so AppCenter will see it
@@ -408,9 +406,9 @@ Now that we have a build system, let's try it out:
     sudo make install
     ```
 
-If all went well, you should now be able to open your app from the Applications menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
+If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
-We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
+We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](https://cmake.org/documentation/).
 
 ## Review {#the-build-system-review}
 Let's review all we've learned to do:
@@ -418,7 +416,7 @@ Let's review all we've learned to do:
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
 * License our app under the GPL and declare our app's authors in a standardized manner
-* Create a .desktop file using RDNN that tells the computer how to display our app in the Applications menu and the Dock
+* Create a .desktop file using RDNN that tells the computer how to display our app in the Applications Menu and the Dock
 * Set up a CMake build system that contains all the rules for building our app and installing it cleanly
 
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
@@ -508,16 +506,17 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 4. Open the file called "control" and make it look like below:
 
-        Source: hello-packaging
+        Source: com.github.yourusername.yourrepositoryname
         Section: x11
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
         Build-Depends: cmake (>= 2.8),
+                       cmake-elementary,
                        debhelper (>= 8.0.0),
                        valac-0.26 | valac (>= 0.26)
         Standards-Version: 3.9.3
 
-        Package: hello-packaging
+        Package: com.github.yourusername.yourrepositoryname
         Architecture: any
         Depends: ${misc:Depends}, ${shlibs:Depends}
         Description: Hey young world
@@ -533,7 +532,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Copyright: 2013 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](http://www.debian.org/doc/debian-policy/).
+That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
 # Creating Layouts {#creating-layouts}
 
@@ -563,7 +562,7 @@ Let’s add some stuff to the Grid:
 
 Super easy stuff, right? We can add the grid to our window using the same method that we just used to add widgets to our grid:
 
-    window.add (grid);
+    main_window.add (grid);
 
 Now build your app and see what it looks like. Since we’ve given our grid a `Gtk.Orientation` of `VERTICAL` the labels stack up on top of each other. Try creating a `Gtk.Grid` without giving it an orientation. By default, `Gtk.Grid`’s orientation is horizontal. You really only ever have to give it an orientation if you need it to be vertical.
 
@@ -583,11 +582,11 @@ Let’s create a Window with a vertical Grid that contains a Button and a Label:
     grid.add (button);
     grid.add (label);
 
-    window.add (grid);
+    main_window.add (grid);
 
 This time when we created our grid, we gave it another property: `row_spacing`. We can also add `column_spacing`, but since we’re stacking widgets vertically we’ll only see the effect of `row_spacing`. Notice how we can create new widgets outside the grid and then pack them into the grid by name. This is really helpful when you start using different methods to change the properties of your widgets.
 
-Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `window.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
+Now, let’s hook up the button to change that label. To keep our code logically separated, we’re going to add it below `main_window.add (grid);`. In this way, the first portion of our code defines the UI and the next portion defines the functions that we associated with the UI:
 
     button.clicked.connect (() => {
         label.label = _("Hello World!");
@@ -620,7 +619,7 @@ Make sure to give the Grid, Buttons, and Labels unique names that you’ll remem
     layout.attach (rotate_button, 0, 1, 1, 1);
     layout.attach_next_to (rotate_label, rotate_button, Gtk.PositionType.RIGHT, 1, 1);
 
-    window.add (layout);
+    main_window.add (layout);
 
 Notice that the attach method takes 5 arguments:
 
@@ -662,38 +661,17 @@ By now you've probably already seen the white notification bubbles that appear o
 ## Making Preparations {#making-preparations}
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
-3. Re-create the `CMake` folder and `CMakeFiles.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
+3. Create a `CMakeLists.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
-When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
+When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
-## Gtk.Application {#gtk-application}
-In order to display notifications, you're going to need your app to subclass `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk app like app uniqueness and the application ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application).
+## Yet Another Application {#yet-another-application}
+In order to display notifications, you're going to need another `Gtk.Application` with a `Gtk.ApplicationWindow`. Remember what we learned in the last few sections and set up a new `Gtk.Application`!
 
-Now that you know what a `Gtk.Application` is, let's create one:
+Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
 
-	public class MyApp : Gtk.Application {
-
-		public MyApp () {
-			Object (application_id: "com.github.yourusername.yourrepositoryname",
-			flags: ApplicationFlags.FLAGS_NONE);
-		}
-
-		protected override void activate () {
-			var app_window = new Gtk.ApplicationWindow (this);
-
-			app_window.show ();
-		}
-
-		public static int main (string[] args) {
-			var app = new MyApp ();
-			return app.run (args);
-		}
-	}
-
-Initiating your app with Gtk.Application is a little different from what we did a few sections back. This time, in `main` you are starting your app with `app.run` and you have a new function called `activate` inside of your class; This `activate` function will be the one that executes when you invoke `app.run`. We are also creating a `Gtk.ApplicationWindow`, this is where you will place all the widgets your app needs. Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
-
-In between `var app_window...` and `app_window.show ();`, write the folowing lines of code:
+In between `var main_window...` and `main_window.show ();`, write the folowing lines of code:
 
     var grid = new Gtk.Grid ();
     grid.orientation = Gtk.Orientation.VERTICAL;
@@ -705,8 +683,8 @@ In between `var app_window...` and `app_window.show ();`, write the folowing lin
     grid.add (title_label);
     grid.add (show_button);
 
-    app_window.add (grid);
-    app_window.show_all ();
+    main_window.add (grid);
+    main_window.show_all ();
 
 Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
 
@@ -720,16 +698,16 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
         this.send_notification ("notify.app", notification);
     });
 
-Okay, now compile your new app. if everythink works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
+Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
 
 ## Additional Features {#Additional-features}
-Now that you know how to send basic notifications, lets talk about a couple ways to make your notifications better. Notifications are most useful when users can indentify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
+Now that you know how to send basic notifications, let's talk about a couple of ways to make your notifications better. Notifications are most useful when users can identify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
 
 ### Icons {#icons}
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
-	var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-	notification.set_icon (image.gicon);
+	var icon = new GLib.ThemedIcon ("dialog-warning");
+	notification.set_icon (icon);
 
 That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
 
@@ -745,8 +723,8 @@ Let's make the replace button. This button will replace the current notification
 		var notification = new Notification (_("Hello Again"));
 		notification.set_body (_("This is my second Notification!"));
 
-		var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-		notification.set_icon (image.gicon);
+		var icon = new GLib.ThemedIcon ("dialog-warning");
+		notification.set_icon (icon);
 
 		this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
 	});
@@ -778,5 +756,148 @@ Let's review what all we've learned:
 - We also learned about other notification features like setting an icon and a notification's priority.
 
 As you could see, sending notifications is very easy thanks to `Gtk.Application`. If you need some further reading on notifications, Check out the page about `Glib.Notification` in [Valadoc](https://valadoc.org/gio-2.0/GLib.Notification).
+
+# System Integration {#system-integration}
+
+Applications can show additional information in the dock as well as
+the application menu. This makes the application feel more integrated into the
+system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/pl/docs/human-interface-guidelines#dock-integration)
+for what you should do and what you shouldn't.
+
+For this integration you can use [Unity's Launcher API](https://valadoc.org/unity/Unity.LauncherEntry.html).
+This API is used accross many different distributions and is widely supported by third party applications.
+
+The [Launcher API documentation](https://wiki.ubuntu.com/Unity/LauncherAPI) also provides how the library works internally as well as implementation
+examples for Python and C if you wish to use any other language for your application than Vala.
+
+Current Launcher API support:
+
+| Service          | Badge Counter    | Progress Bar    | Static Quicklist    | Dynamic Quicklist |
+| ---------------- | :--------------: | :-------------: | :-----------------: | :---------------: |
+| Application menu | Yes              | No              | Yes                 | No                |
+| Dock             | Yes              | Yes             | Yes                 | Yes               |
+
+## Setting Up {#system-integration-setting-up}
+Before writing the code, you must first install the `libunity` library, you can do it by executing
+the following command in your terminal:
+```
+sudo apt install libunity-dev
+```
+
+Now it is time to incorporate the Unity library into your project.
+To your build system add an additional `unity` package to your `vala_precompile` CMake call:
+
+  ```
+  vala_precompile (my_project
+        Application.vala
+        ...
+        PACKAGES
+        unity
+        ...
+  )
+  ```
+
+  and to the `pkg_check_modules` call as well:
+  ```
+  pkg_check_modules (DEPS REQUIRED ... unity)
+  ```
+
+  After that you can clear your build directory and build your project again, there
+  should be no errors when building.
+
+## Using the Launcher API {#using-launcher-api}
+Once you've set up `libunity` in your build system it's time to write some code.
+
+The first thing you'll need to use the API is your application desktop ID.
+This is usually the filename of your application entry that is installed in the `/usr/share/applications`
+directory like: `com.github.username.application.desktop`. Keep in mind that if you're generating the desktop file with a build system, the **desktop ID is the final
+basename of the file generated by your build system** and not a string ending with `.in` or any other type of extension.
+
+You can retrieve a new [Unity.LauncherEntry](https://valadoc.org/unity/Unity.LauncherEntry.html) instance by calling a static `Unity.LauncherEntry.get_for_desktop_id` function:
+```
+var entry = Unity.LauncherEntry.get_for_desktop_id ("my-desktop-id.desktop");
+```
+
+This entry instance allows you to modify your entry so that it shows additional information e.g: on the dock. It is up to you, where in the code you want to retrieve this entry, the function is static so there is no problem accessing it. Usually it's your application or main window class.
+
+Showing a `12` number in the badge is as easy as:
+```vala
+entry.count_visible = true;
+entry.count = 12;
+```
+
+Keep in mind you have to set the `count_visible` property to true, and use an int64 type for the `count` property.
+
+The same goes for showing a progress bar, here we show a progress bar showing 20% progress:
+```vala
+entry.progress_visible = true;
+entry.progress = 0.2f;
+```
+
+As you can see the type of `progress` property is `double` and is a range between `0` and `1`: from 0% to 100%.
+
+## Dynamic Quicklists {#dynamic-quicklists}
+Dynamic quicklists are a way to provide the user with dynamic quick menu entries to access some kind of
+feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the Applications Menu**, see [Static Quicklists](#static-quicklists).
+
+Here's a simple example of how to make use of dynamic quicklists in Vala:
+```
+// Create a root quicklist
+var quicklist = new Dbusmenu.Menuitem ();
+
+// Create root's children
+var item1 = new Dbusmenu.Menuitem ();
+item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 1");
+item1.item_activated.connect (() => {
+    message ("Item 1 activated");
+});
+
+var item2 = new Dbusmenu.Menuitem ();
+item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 2");
+item1.item_activated.connect (() => {
+    message ("Item 2 activated");
+});
+
+// Add children to the quicklist
+quicklist.child_append (item1);
+quicklist.child_append (item2);
+
+// Finally, tell libunity to show the desired quicklist
+entry.quicklist = quicklist;
+```
+Please see the [Dbusmenu.Menuitem API](https://valadoc.org/dbusmenu-glib-0.4/Dbusmenu.Menuitem.html) for more details and features.
+
+## Static Quicklists {#static-quicklists}
+The main difference between dynamic and static quicklists is that static ones cannot be changed at runtime. Static quicklists do not involve writing any code or using any external dependencies.
+
+Static quicklists are stored within your `.desktop` file. These are so called "actions".
+You can define many actions in your desktop file that will always show as an action in the
+application menu as well as in the dock.
+
+The format is as follows:
+```
+[Desktop Action ActionID]
+Name=The name of the action
+Icon=The icon of the action (optional)
+Exec=The path to application executable and it's command line arguments (optional)
+```
+
+Let's take a look at an example of an action that will open a new window of your application:
+
+```
+[Desktop Entry]
+Name=Application name
+Exec=application-executable
+...
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=application-executable -n
+```
+
+Note that adding `-n` or any other argument will not make your application magically open a new window. It is up to your application to handle and interpret command line arguments. The [GLib.Application API](https://valadoc.org/gio-2.0/GLib.Application.html) provides many examples and an extensive documentation on how to handle these arguments, particularly the [command_line signal](https://valadoc.org/gio-2.0/GLib.Application.command_line.html).
+
+Please take a look at a [freedesktop.org Additional applications actions section](https://standards.freedesktop.org/desktop-entry-spec/latest/ar01s10.html) for a
+detailed description of what keys are supported and what they do.
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}

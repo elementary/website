@@ -1,13 +1,15 @@
 {
     "Get support for": "我想瞭解",
+    "AppCenter": "AppCenter",
     "Calendar": "行事曆",
     "Camera": "攝影機",
     "Files": "檔案",
-    "Geary": "Geary 郵件中心",
-    "Epiphany": "Epiphany 網頁瀏覽器",
+    "Mail": "",
+    "Epiphany": "Epiphany",
     "Music": "音樂",
     "Photos": "照片",
     "Text Editor": "文字編輯器",
+    "Scratch": "",
     "System Settings": "系統設定",
     "Videos": "影片",
     "Installation": "安裝",
@@ -16,5 +18,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "認識我們的桌面，多工作業和鍵盤熱鍵等基礎知識。",
     "StackExchange": "StackExchange",
     "Check out answers to some of the most common questions we get.": "來看看我們常見的問題和解答吧。",
-    "Support &sdot; elementary": ""
+    "Support &sdot; elementary": "支持 &sdot; elementary"
 }

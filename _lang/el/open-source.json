@@ -11,10 +11,10 @@
     "Calendar": "Ημερολόγιο",
     "Camera": "Κάμερα",
     "Files": "Αρχεία",
-    "Mail": "",
+    "Mail": "Ηλεκτρονικό Ταχυδρομείο",
     "Music": "Μουσική",
     "Photos": "Φωτογραφίες",
-    "Scratch": "",
+    "Scratch": "Scratch",
     "Terminal": "Τερματικό",
     "Videos": "Βίντεο",
     "Desktop Shell": "Επιφάνεια εργασίας",
@@ -82,6 +82,7 @@
     "OpenStreetMap": "",
     "rEFInd": "",
     "Software Freedom Conservancy": "",
+    "Weblate": "",
     "All logos featured here are trademarks of their respective projects.": "Ολα τα λογοτυπα εδω ειναι εμπορικά σήματα των ανάλογων προγραμμάτων.",
     "Open Source &sdot; elementary": ""
 }

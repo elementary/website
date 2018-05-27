@@ -25,6 +25,14 @@
                     <img src="images/privacy-policy/chrome_128x128.png" data-l10n-off alt="Google Chrome" class="browsers-list" />
                     <h4 data-l10n-off>Chrome</h4>
                 </a>
+                <a target="_blank" rel="noopener" href="https://answers.microsoft.com/en-us/insider/forum/insider_internet-insider_spartan/how-to-view-and-manage-cookies-in-microsoft-edge/67b3a495-554e-4f1d-995e-93d0ea6882a6" class="column">
+                    <img src="images/privacy-policy/edge_128x128.png" data-l10n-off alt="Edge" class="browsers-list" />
+                    <h4 data-l10n-off>Edge</h4>
+                </a>
+                <a target="_blank" rel="noopener" href="https://help.gnome.org/users/epiphany/stable/data-cookies.html" class="column">
+                    <img src="images/icons/apps/48/internet-web-browser.svg" data-l10n-off alt="Epiphany" class="browsers-list" />
+                    <h4 data-l10n-off>Epiphany</h4>
+                </a>
                 <a target="_blank" rel="noopener" href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored" class="column">
                     <img src="images/privacy-policy/firefox_128x128.png" data-l10n-off alt="Firefox" class="browsers-list" />
                     <h4 data-l10n-off>Firefox</h4>
@@ -33,6 +41,10 @@
                     <img src="images/privacy-policy/internet-explorer_128x128.png" data-l10n-off alt="Internet Explorer" class="browsers-list" />
                     <h4 data-l10n-off>IE</h4>
                 </a>
+                <a target="_blank" rel="noopener" href="http://midori-browser.org/faqs/#blacklist_cookies" class="column">
+                    <img src="images/privacy-policy/midori_256x256.png" data-l10n-off alt="Midori" class="browsers-list" />
+                    <h4 data-l10n-off>Midori</h4>
+                </a>
                 <a target="_blank" rel="noopener" href="https://www.opera.com/blogs/news/2015/08/how-to-manage-cookies-in-opera/" class="column">
                     <img src="images/privacy-policy/opera_128x128.png" data-l10n-off alt="Opera" class="browsers-list" />
                     <h4 data-l10n-off>Opera</h4>
@@ -40,15 +52,7 @@
                 <a target="_blank" rel="noopener" href="http://support.apple.com/kb/PH17191" class="column">
                     <img src="images/privacy-policy/safari_128x128.png" data-l10n-off alt="Safari" class="browsers-list" />
                     <h4 data-l10n-off>Safari</h4>
-                </a>
-                <a target="_blank" rel="noopener" href="http://midori-browser.org/faqs/#blacklist_cookies" class="column">
-                    <img src="images/privacy-policy/midori_256x256.png" data-l10n-off alt="Midori" class="browsers-list" />
-                    <h4 data-l10n-off>Midori</h4>
-                </a>
-                <a target="_blank" rel="noopener" href="https://help.gnome.org/users/epiphany/stable/data-cookies.html" class="column">
-                    <img src="images/icons/apps/48/internet-web-browser.svg" data-l10n-off alt="Epiphany" class="browsers-list" />
-                    <h4 data-l10n-off>Epiphany</h4>
-                </a>
+                </a>                               
                 <h3>Transparency</h3>
                 <p>We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.</p>
             </div>

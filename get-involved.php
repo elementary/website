@@ -45,16 +45,6 @@
         </div>
     </div>
 
-    <?php if (event_active('indiegogo appcenter 2/17')) { ?>
-        <div class="grid">
-            <div class="two-thirds">
-                <h2>Indiegogo</h2>
-                <p class="text-center">We’re currently crowdfunding AppCenter, the pay-what-you-want app store, on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
-                <a class="button flat" href="https://igg.me/at/appcenter" target="_blank" rel="noopener">Back AppCenter</a>
-            </div>
-        </div>
-    <?php } ?>
-
     <section class="grid">
         <div class="third">
             <img alt="Patreon" src="images/get-involved/patreon.svg">
@@ -62,7 +52,7 @@
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Become a Patron</a>
         </div>
         <div class="third">
-            <i class="fa fa-paypal"></i>
+            <i class="fab fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">
@@ -101,7 +91,8 @@
             <p>Both elementary OS and our website are openly translated using an online platform called Weblate. <a href="/docs/translation-guide" class="read-more">Learn More</a></p>
 
             <div class="actions">
-                <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/website/" target="_blank" rel="noopener">Suggest Translations</a>
+                <a class="button flat" href="https://ele-l10n.slack.com/join/shared_invite/enQtMjkwMjI2Mzk5ODQxLWM3NWZlMjMxMTUyNzg0MjdiNTdkYTM5ZDA3NzE5YTIwMzZmZjhmZjg0MzQwMGE5MjVhMGU2Yjk2MDU1MGZiYTU" target="_blank" rel="noopener">Join Chat</a>
+                <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/" target="_blank" rel="noopener">Suggest Translations</a>
             </div>
         </div>
         <div class="half">
@@ -232,7 +223,7 @@
         <div>
             <img src="images/get-involved/bugs.svg">
             <p>Our design team tracks "Needs Design" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.</p>
-            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse Needs Design Issues</a>
+            <a class="button flat suggested-action" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22Needs+Design%22" target="_blank" rel="noopener">Browse 'Needs Design' Issues</a>
         </div>
     </div>
 </section>

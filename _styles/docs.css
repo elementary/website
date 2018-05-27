@@ -40,16 +40,67 @@ h4 a.heading-link:hover::before,
 h5 a.heading-link:hover::before,
 h6 a.heading-link:hover::before {
     content: "\f0c1";
-    font-family: FontAwesome;
+    font-family: "Font Awesome\ 5 Pro";
     font-size: 0.75em;
+    font-weight: inherit;
     left: -1.25em;
     position: absolute;
     top: 0.5em;
 }
 
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+h3 {
+    border-bottom: 1px solid #d4d4d4;
+    font-weight: 400;
+    opacity: 1;
+    padding-bottom: 0.3em;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+p,
+li {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    padding-left: 2em;
+}
+
 .clear-float {
     clear: both;
     padding-top: 32px;
+}
+
+.docs img {
+    margin: 1.5em auto;
 }
 
 img.float-left {
@@ -144,10 +195,6 @@ pre.highlighted .pre-numbering {
     padding: 0.5em;
     text-align: right;
     user-select: none;
-}
-
-p + p {
-    margin-top: 2em;
 }
 
 p + h1,
@@ -280,15 +327,17 @@ nav {
 table {
     background-color: transparent;
     border: 1px solid #ddd;
+    border-collapse: collapse;
     border-spacing: 0;
     clear: both;
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
+    margin-bottom: 2em;
     text-align: left;
     width: 100%;
 }
 
-table th {
+th {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: left;
@@ -296,40 +345,14 @@ table th {
 
 th,
 td {
-    margin-left: 1em;
-    padding-right: 1em;
-}
-
-th:nth-child(1) th:nth-child(1) {
-    text-align: left;
-}
-
-table > tbody > tr > td:nth-child(1) {
-    width: 224px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: top;
 }
 
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
     background-color: rgba(0, 0, 0, 0.01);
-}
-
-table > thead > tr > th,
-table > tbody > tr > th,
-table > tfoot > tr > th,
-table > thead > tr > td,
-table > tbody > tr > td,
-table > tfoot > tr > td {
-    padding: 8px;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-}
-
-table > thead > tr > th {
-    border-top: none;
-}
-
-table > tr {
-    border-right: 1px solid #ddd;
 }
 
 /****************
@@ -464,4 +487,47 @@ div.icons-container.small-screen {
 
 #dialog-guide-action {
     margin-top: -16px;
+}
+
+/****************
+* Color Palette *
+****************/
+
+.color-palette-section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    font-family: sans-serif;
+}
+
+.color-palette-box {
+    flex-grow: 1;
+    font-size: 14px;
+    margin: 5px;
+    min-width: 200px;
+    width: 32%;
+}
+
+.color-palette-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+
+.color-palette-header > span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.color-palette-header > span:nth-of-type(2) {
+    font-size: 12px;
+}
+
+.color-palette-item {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px 15px;
 }

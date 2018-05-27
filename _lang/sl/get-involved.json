@@ -10,7 +10,7 @@
     "With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.": "",
     "Patreon": "",
     "Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals.": "Patreon deluje kot neprestana kampanja za zbiranje sredstev s pomočjo skupnosti. Izberite znesek, pridobite nagrade in nam pomagajte doseči naše cilje.",
-    "Learn More": "Izvej več",
+    "Learn More": "Izvejte več",
     "Become a Patron": "",
     "Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.": "",
     "Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.": "",
@@ -21,6 +21,7 @@
     "BountySource": "",
     "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "elementary OS ustvarjajo in uporabljajo ljudje z vseh koncev sveta; pomajate nam narediti še boljšo izkušnjo - pomagajte nam s prevodi v še več jezikov.",
     "Both elementary OS and our website are openly translated using an online platform called Weblate.": "",
+    "Join Chat": "",
     "Suggest Translations": "",
     "World map": "Svetovna karta",
     "Question &amp; Answer": "Vprašanja in odgovori",
@@ -45,6 +46,6 @@
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
     "Browse Our Icons": "",
     "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
-    "Browse Needs Design Issues": "",
+    "Browse 'Needs Design' Issues": "",
     "Get Involved with elementary OS": "Postani del elementary OS"
 }
