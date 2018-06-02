@@ -1,6 +1,6 @@
 {
-    "A fast and open replacement for Windows and macOS": "Egy gyors nyílt forráskódú megoldás Windows és macOS helyett",
-    "Pay What You Want:": "Fizessen amennyit szeretne:",
+    "A fast and open replacement for Windows and macOS": "Egy gyors és nyitott megoldás Windows és macOS helyett",
+    "Pay What You Want:": "Fizessen annyit, amennyit szerete:",
     "Custom": "Egyéni",
     "Enter any dollar amount.": "Írjon be egy összeget dollárban.",
     "Purchase elementary OS": "Elementary OS megvásárlása",
@@ -18,14 +18,14 @@
     "Apps You Need, Without Ones You Don't.": "Alkalmazások, amelyekre tényleg szüksége van.",
     "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "Az elementary OS gondosan válogatott alkalmazásokkal kerül forgalomba, amelyek megfelelnek a mindennapi igényeknek. Önnek nem kell a fölösleges dolgokkal foglalkoznia, így több ideje marad a számítógépe használatára.",
     "Music": "Zene",
-    "Epiphany": "Epiphany",
+    "Epiphany": "",
     "Mail": "Üzenetek",
     "Photos": "Fotók",
     "Videos": "Videók",
     "Calendar": "Naptár",
     "Files": "Fájlok",
     "Terminal": "Terminál",
-    "Scratch": "Scratch",
+    "Scratch": "",
     "Camera": "Kamera",
     "music screenshot": "",
     "music icon": "",
@@ -82,6 +82,6 @@
     "installation guide": "telepítési útmutatót",
     "Cancel": "Mégsem",
     "Download": "Letöltés",
-    "Torrent Magnet Link": "Torrent Mágnes link",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Egy gyors és nyílt forráskódú megoldás Windows és macOS helyett &sdot; elementary OS"
+    "Torrent Magnet Link": "Torrent mágneslink",
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Egy gyors és nyitott megoldás Windows és macOS helyett &sdot; elementary OS"
 }
