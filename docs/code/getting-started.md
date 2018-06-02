@@ -111,7 +111,7 @@ Later on, We'll talk about adding other directories like "po" and "data". For no
 ## Gtk.Application {#gtk-application}
 Now what you've been waiting for! We're going to create a window that contains a button. When pressed, the button will display the text "Hello World!" To do this, we're going to use a widget toolkit called GTK+ and the programming language Vala. Before we begin, we highly recommend that you do not copy and paste. Typing each section manually will help you to practice and remember. Let's get started:
 
-1. Create a new file in Scratch and save it as "Application.vala" inside your "src" folder
+1. Create a new file in Code and save it as "Application.vala" inside your "src" folder
 
 2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "Application.vala".
 
@@ -335,14 +335,14 @@ Create a new file in your project's root folder called "meson.build". We've incl
 
         #Install our .desktop file so the Applications Menu will see it
         install_data(
-            meson.project_name() + '.desktop',
-            install_dir : join_paths(get_option('datadir'), 'applications'
+            join_paths('data', meson.project_name() + '.desktop'),
+            install_dir : join_paths(get_option('datadir'), 'applications')
         )
 
         #Install our .appdata.xml file so AppCenter will see it
         install_data(
-            meson.project_name() + '.appdata.xml',
-            join_paths(get_option('datadir'), 'metainfo'
+            join_paths('data', meson.project_name() + '.appdata.xml'),
+            install_dir: join_paths(get_option('datadir'), 'metainfo')
         )
 
 And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
