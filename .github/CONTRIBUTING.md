@@ -4,16 +4,16 @@
 
 ### Simple PHP Server
 
-Alternatively, for a simple local development environment running on PHP, you will need:
+For a simple local development environment running on PHP, you will need:
 
 * [A supported version of PHP](http://php.net/supported-versions.php) with:
-  * `php7.0-cli`
-  * `php7.0-curl`
-  * `php7.0-intl`
-  * `php7.0-json`
-  * `php7.0-mbstring`
-  * `php7.0-sqlite`
-  * `php7.0-xml`
+  * `php-cli`
+  * `php-curl`
+  * `php-intl`
+  * `php-json`
+  * `php-mbstring`
+  * `php-sqlite`
+  * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm install`
@@ -21,13 +21,17 @@ Alternatively, for a simple local development environment running on PHP, you wi
 These can be most easily installed with this script:
 
 ```
-sudo apt install php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-sqlite php7.0-mbstring php7.0-xml composer &&
+sudo apt install php-cli php-curl php-intl php-json php-sqlite php-mbstring php-xml composer &&
 sudo apt install nodejs-legacy npm &&
 npm install
 ```
 
 Then inside the project directory, run `npm run build && npm run start`. Next,
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+If you are working on CSS and would like an easier time developing, you can run
+the `npx gulp watch` command. This will watch for any CSS and image changes,
+and rebuild on the fly.
 
 ### Nginx Web Server
 

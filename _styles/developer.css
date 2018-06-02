@@ -197,7 +197,8 @@ pre.highlighted .pre-numbering {
     }
 }
 
-.third .fa {
+.third .fa,
+.third .fab {
     color: #4d4267;
 }
 

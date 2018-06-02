@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@4/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
@@ -144,13 +144,14 @@ $l10n->begin_html_translation();
                     <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fa fa-medium"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fa fa-reddit"></i></a></li>
-                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fa fa-stack-exchange"></i></a></li>
-                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://elementarycommunity.slack.com/join/shared_invite/enQtMjg3NTExNDIwOTQ1LWExZjEzZGE4YjY4MjUwMTQ1MTVjZDJlNTFhNGRlN2FmZmUxNjhmZTI1YmNmZjQ0ODMxYzcwZTI1OTVlMTQyNWI" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fa fa-slack"></i></a></li>
+                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
+                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fab fa-medium-m"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
+                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="StackExchange"><i class="fab fa-stack-exchange"></i></a></li>
+                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://join.slack.com/t/elementarycommunity/shared_invite/enQtMzU1NDU4OTE1MjY2LWUyOTBkZGNkZGM4MDgzZjE2ZjRiZDgwMDQ1ZTA0MzcxYjI0MDUyNGRlNDI5ZWViNDkwMzMwYzczMDY2ZjA0MTc" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack-hash"></i></a></li>
                 </ul>
             </div>
         </nav>

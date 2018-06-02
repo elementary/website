@@ -28,7 +28,7 @@ GitHub is an online platform for hosting code, reporting issues, tracking milest
 
 ## Git {#git}
 
-To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](http://en.wikipedia.org/wiki/Revision_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
+To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](https://en.wikipedia.org/wiki/Version_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
 
 If you're ready, let's get you set up to use Git:
 
@@ -46,7 +46,7 @@ If you're ready, let's get you set up to use Git:
     git config --global user.email "You@email.com"
     ```
     
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
     ssh-keygen -t rsa
@@ -258,7 +258,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         Type=Application
         Keywords=Hello;World;Example;
 
-    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
+    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines#app-launchers).
 
 4. Finally, let's add this file to `git` and commit a revision:
 
@@ -277,7 +277,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2017 Your Name <you@email.com> -->
+        <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname.desktop</id>
           <metadata_license>CC0</metadata_license>
@@ -548,7 +548,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Copyright: 2013 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](http://www.debian.org/doc/debian-policy/).
+That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
 # Creating Layouts {#creating-layouts}
 

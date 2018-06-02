@@ -87,14 +87,14 @@
         </div>
     </div>
     <div class="platform-item third" id="gtk">
-        <a href="http://gtk.org/" target="_blank" rel="noopener">
+        <a href="https://gtk.org/" target="_blank" rel="noopener">
             <img class="oss-logo" src="images/open-source/gtk.svg" alt="GTK+">
             <h3 class="oss-title">GTK+</h3>
             <p class="oss-subtitle">User Interface Toolkit</p>
         </a>
         <div>
             <a class="button sub-item" href="https://wiki.gnome.org/Accessibility" target="_blank" rel="noopener"><span>ATK</span></a>
-            <a class="button sub-item" href="http://www.gtk.org/" target="_blank" rel="noopener"><span>GTK+</span></a>
+            <a class="button sub-item" href="https://www.gtk.org/" target="_blank" rel="noopener"><span>GTK+</span></a>
             <a class="button sub-item" href="http://www.pango.org/" target="_blank" rel="noopener"><span>Pango</span></a>
             <a class="button sub-item" href="https://cairographics.org/" target="_blank" rel="noopener"><span>Cairo</span></a>
         </div>
@@ -128,7 +128,7 @@
         </div>
     </div>
     <div class="platform-item third" id="xorg">
-        <a href="http://x.org/" target="_blank" rel="noopener">
+        <a href="https://x.org/" target="_blank" rel="noopener">
             <img class="oss-logo" src="images/open-source/xorg.svg" alt="X.Org">
             <h3 class="oss-title">X.Org</h3>
             <p class="oss-subtitle">Display Server &amp; Windowing System</p>
@@ -139,7 +139,7 @@
         </div>
     </div>
     <div class="platform-item half" id="gnu">
-        <a href="http://gnu.org/" target="_blank" rel="noopener">
+        <a href="https://gnu.org/" target="_blank" rel="noopener">
             <img class="oss-logo" src="images/open-source/gnu.svg" alt="GNU">
             <h3 class="oss-title">GNU</h3>
             <p class="oss-subtitle">Compiler &amp; Core Utilities</p>
@@ -177,7 +177,7 @@
         <a href="https://www.debian.org/donations" title="Debian">
             <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian" />
         </a>
-        <a href="http://fontawesome.io/community/" title="Font Awesome">
+        <a href="https://fontawesome.com/" title="Font Awesome">
             <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome" />
         </a>
         <a href="https://inkscape.org/support-us/donate/" title="Inkscape">
@@ -186,10 +186,10 @@
         <a href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
             <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let’s Encrypt" />
         </a>
-        <a href="http://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
+        <a href="https://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
             <img class="oss-logo" src="images/open-source/osm.svg" alt="OpenStreetMap" />
         </a>
-        <a href="http://www.rodsbooks.com/refind/" title="rEFInd">
+        <a href="https://www.rodsbooks.com/refind/" title="rEFInd">
             <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd" />
         </a>
         <a href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
