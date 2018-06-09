@@ -174,29 +174,29 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background-color:#7a36b1;">
+            <div class="color-palette-header" style="background-color:#a56de2;">
                 <span>Grape</span>
-                <span class="hex" data-l10n-off="1">7a36b1</span>
+                <span class="hex" data-l10n-off="1">a56de2</span>
             </div>
-            <div class="color-palette-item" style="background-color:#e29ffc; color: #160038;">
+            <div class="color-palette-item" style="background-color:#e4c6fa; color: #160038;">
                 <span>Grape 100</span>
-                <span class="hex" data-l10n-off="1">e29ffc</span>
+                <span class="hex" data-l10n-off="1">e4c6fa</span>
             </div>
-            <div class="color-palette-item" style="background-color:#ad65d6; color: #160038;">
+            <div class="color-palette-item" style="background-color:#cd9ef7; color: #160038;">
                 <span>Grape 300</span>
-                <span class="hex" data-l10n-off="1">ad65d6</span>
+                <span class="hex" data-l10n-off="1">cd9ef7</span>
             </div>
-            <div class="color-palette-item" style="background-color:#7a36b1;">
+            <div class="color-palette-item" style="background-color:#a56de2;">
                 <span>Grape 500</span>
-                <span class="hex" data-l10n-off="1">7a36b1</span>
+                <span class="hex" data-l10n-off="1">a56de2</span>
             </div>
-            <div class="color-palette-item" style="background-color:#4c158a;">
+            <div class="color-palette-item" style="background-color:#7239b3;">
                 <span>Grape 700</span>
-                <span class="hex" data-l10n-off="1">4c158a</span>
+                <span class="hex" data-l10n-off="1">7239b3</span>
             </div>
-            <div class="color-palette-item" style="background-color:#260063;">
+            <div class="color-palette-item" style="background-color:#452981;">
                 <span>Grape 900</span>
-                <span class="hex" data-l10n-off="1">260063</span>
+                <span class="hex" data-l10n-off="1">452981</span>
             </div>
         </div>
         <div class="color-palette-box">
@@ -350,7 +350,7 @@
     <p>We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.</p>
 
     <h2>Assets &amp; More Info</h2>
-    <a class="button suggested-action" href="https://github.com/elementary/brand"><i class="fa fa-github"></i> Download on GitHub</a>
+    <a class="button suggested-action" href="https://github.com/elementary/brand"><i class="fab fa-github"></i> Download on GitHub</a>
     <p>For further information regarding the use of the elementary name, branding, and trademarks, please email <a href="mailto:brand@elementary.io">brand@elementary.io</a>.</p>
 </div>
 

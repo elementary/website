@@ -28,7 +28,7 @@ GitHub is an online platform for hosting code, reporting issues, tracking milest
 
 ## Git {#git}
 
-To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](http://en.wikipedia.org/wiki/Revision_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
+To download and upload to GitHub, you'll need the Terminal program `git`. Git is a type of [revision control system](https://en.wikipedia.org/wiki/Version_control) that allows multiple developers to collaboratively develop and maintain code while keeping track of each revision along the way.
 
 If you're ready, let's get you set up to use Git:
 
@@ -46,7 +46,7 @@ If you're ready, let's get you set up to use Git:
     git config --global user.email "You@email.com"
     ```
     
-3. To authenticate and transfer code securely, you’ll need to generate an [SSH](http://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
+3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
     ssh-keygen -t rsa
@@ -261,7 +261,7 @@ Every app comes with a .desktop file. This file contains all the information nee
         X-GNOME-Gettext-Domain=hello-again
         Keywords=Hello;World;Example;
 
-    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines/app-launchers).
+    The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines#app-launchers).
 
 4. Finally, let's add this file to `git` and commit a revision:
 
@@ -280,7 +280,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2017 Your Name <you@email.com> -->
+        <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname.desktop</id>
           <metadata_license>CC0</metadata_license>
@@ -319,7 +319,7 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 # The Build System {#the-build-system}
 
-The next thing we need is a build system. The build system that we're going to be using is called [CMake](http://www.cmake.org). We already installed the `cmake` program at the beginning of this book when we got the build dependencies for Granite Demo. What we're going to do in this step is create the files that tell Cmake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
+The next thing we need is a build system. The build system that we're going to be using is called [CMake](https://cmake.org/). We already installed the `cmake` program at the beginning of this book when we installed the Development Libraries. What we're going to do in this step is create the files that tell CMake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
 
 Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
 
@@ -408,7 +408,7 @@ Now that we have a build system, let's try it out:
 
 If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
-We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](http://www.cmake.org/cmake/help/documentation.html).
+We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](https://cmake.org/documentation/).
 
 ## Review {#the-build-system-review}
 Let's review all we've learned to do:
@@ -532,7 +532,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Copyright: 2013 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](http://www.debian.org/doc/debian-policy/).
+That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
 # Creating Layouts {#creating-layouts}
 

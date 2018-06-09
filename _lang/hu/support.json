@@ -1,14 +1,15 @@
 {
     "Get support for": "Támogatás kérése a következőhöz:",
+    "AppCenter": "AppKözpont",
     "Calendar": "Naptár",
-    "AppCenter": "",
     "Camera": "Kamera",
     "Files": "Fájlok",
-    "Geary": "Üzenetek",
+    "Mail": "",
     "Epiphany": "Epiphany",
     "Music": "Zene",
-    "Photos": "Fényképek",
+    "Photos": "Fotók",
     "Text Editor": "Szövegszerkesztő",
+    "Scratch": "",
     "System Settings": "Rendszerbeállítások",
     "Videos": "Videók",
     "Installation": "Telepítés",
@@ -17,5 +18,5 @@
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Végigsétálni az asztalon, a multitaskingon, a gyorsgombokon és még többen.",
     "StackExchange": "Sugó",
     "Check out answers to some of the most common questions we get.": "Nézd meg a válaszokat néhány gyakori kérdésre, amelyre van nekünk.",
-    "Support &sdot; elementary": ""
+    "Support &sdot; elementary": "Támogasd az &sdot; elemtary-t"
 }
