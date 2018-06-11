@@ -42,10 +42,10 @@
     "Bitesized Bugs": "Ismert hibák",
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Tervezőcsapatunk ötleteket formál a beküldött hibajelentésekből és javaslatokból. Ám mielőtt hozzájárulna, ajánlatos utánaolvasni a tervezési munkafolyamatunknak.",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "Az elementary OS CSS-ben írt rendszer-stíluslapokat használ. Ez határozza meg, hogyan jelenik meg minden a képernyőn, gombok, panelek, menük, stb.",
-    "Browse Our Stylesheet": "Böngéssze stíluslapunkat",
+    "Browse Our Stylesheet": "Tekintse meg stíluslapunkat",
     "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "Az elementary OS vektorikonokat használ, amelyeket minden előre telepített alkalmazásban jelen vannak, és harmadik fél fejlesztőknek is elérhetőek.",
-    "Browse Our Icons": "Böngéssze ikonkészletünket",
-    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Tervezőcsapatunk nyomon követi a \"Tervezést igényel\" megjelölésű problémákat a GitHub-on. Ezek esetében további megbeszélésre, tervezésre és javaslatokra van szükség.",
-    "Browse 'Needs Design' Issues": "Tervezést igénylő problémák",
-    "Get Involved with elementary OS": "Légy részese az elementary OS-nek"
+    "Browse Our Icons": "Tekintse meg ikonkészletünket",
+    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Tervezőcsapatunk nyomon követi a \"Tervezést igényel\" megjelölésű problémákat a GitHubon. Ezek esetében további megbeszélésre, tervezésre és javaslatokra van szükség.",
+    "Browse 'Needs Design' Issues": "Tekintse meg a tervezést igénylő problémákat",
+    "Get Involved with elementary OS": "Vegyen részt az elementary OS készítésében"
 }
