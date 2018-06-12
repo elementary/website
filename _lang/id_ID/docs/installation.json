@@ -52,7 +52,7 @@
     "Not readable warning": "Peringatan 'tidak terbaca'",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "Setelah Anda mendengar suara, tekan dan tahan <kbd>Option</kbd>. Lalu, pilih perangkat boot yang sesuai. Perhatikan bahwa hal tersebut mungkin salah diidentifikasi sebagai \"Windows\", namun hal tersebut normal.",
     "Boot Errors": "Kesalahan Boot",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Jika Mac Anda tidak mengenali USB Install Drive elementary OS Anda pada menu boot, kemungkinan Anda perlu membuat elementary OS Install DVD. Untu membuatnya, masukkan DVD kosong, klik kanan pada berkas ISO di Finder, dan pilih &quot;Burn elementaryos-0.4.1-stable.20180214.iso ke Disc&quot;. Ketika selesai, coba boot kembali dari Install DVD.",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Jika Mac Anda tidak mengenali elementary OS USB Install Drive Anda pada menu boot, kemungkinan Anda perlu membuat elementary OS Install DVD. Untuk membuatnya, masukkan DVD kosong, klik kanan pada berkas ISO di Finder, dan pilih &quot;Burn elementaryos-0.4.1-stable.20180214.iso ke Disc&quot;. Ketika selesai, coba boot kembali dari Install DVD.",
     "Running the following command in your terminal:": "Jalankan perintah berikut di terminal Anda:",
     "should produce the output:": "akan menghasilkan keluaran:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "Anda akan membutuhkan USB flash drive dengan setidaknya 2 GB ruang bebas dan sebuah program yang disebut UNetbootin.",
@@ -62,7 +62,7 @@
     "Select &quot;Diskimage&quot;": "Pilih &quot;Diskimage&quot;",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Klik &quot;...&quot; untuk memilih file ISO yang sudah Anda unduh.",
     "Unplug all USB memory devices apart from the one you want to use.": "Lepaskan semua perangkat memori USB lain kecuali memori USB yang akan Anda gunakan.",
-    "Click &quot;OK&quot; and wait for the process to finish.": "Klik \"OK\" dan tunggu hingga proses selesai.",
+    "Click &quot;OK&quot; and wait for the process to finish.": "Klik &quot;OK&quot; dan tunggu hingga proses selesai.",
     "After Installation": "Setelah Pemasangan",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Luangkan waktu untuk membaca panduan <a href=\"/docs/learning-the-basics\">awal</a> untuk mempelajari tentang sistem operasi baru Anda."
 }
