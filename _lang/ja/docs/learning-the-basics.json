@@ -18,14 +18,14 @@
     "A middle click or three finger tap on an indicator will present you with the following quick actions:": "インジケーター上で中クリックするか3本指でタップすると以下のクイックアクションを提供します。",
     "Sound: Toggle the mute state of the primary output device": "サウンド: 現在の出力デバイスのミュート状態を切り替える",
     "Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device": "Bluetooth: 現在の Bluetooth デバイスの有効/無効を切り替える",
-    "Power: Hide/Show the percentage of battery remaining": "電源: バッテリー残量のパーセンテージを非表示/表示にする",
+    "Power: Hide/Show the percentage of battery remaining": "電源: バッテリー残量の割合の表示を切り替える",
     "Notifications: Toggle Do Not Disturb mode": "通知: 非通知モードに切り替える",
-    "Session: Show the shutdown dialog": "セッション: シャットダウンダイアログを表示する",
-    "The Dock": "Dock",
-    "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "画面下部にあるのは Dock です。現在開かれているアプリやあなたのお気に入りのアプリを含んでいます。",
-    "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "ドックの中身は容易にカスタマイズ可能です。ドックにアプリを追加するには、アプリケーションメニューからドラッグアンドドロップするか、起動しているアプリのアイコンを右クリックして <strong>Dock に追加</strong>を選択します。ドックからアプリを削除するには、ドラッグしてデスクトップの何もない空間にドロップするか、アイコンを右クリックして <strong>Dock に追加</strong>のチェックを外します。ドックのアプリを並べ替えるには、単純にそれらをドラッグアンドドロップしてください。",
+    "Session: Show the shutdown dialog": "セッション: シャットダウンダイアログを表示",
+    "The Dock": "ドック",
+    "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "画面下部にあるのはドックです。現在開かれているアプリやあなたのお気に入りのアプリを含んでいます。",
+    "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "ドックの中身は容易にカスタマイズ可能です。ドックにアプリを追加するには、アプリケーションメニューからドラッグアンドドロップするか、起動しているアプリのアイコンを右クリックして <strong>ドックに追加</strong>を選択します。ドックからアプリを削除するには、ドラッグしてデスクトップの何もない空間にドロップするか、アイコンを右クリックして <strong>ドックに追加</strong>のチェックを外します。ドックのアプリを並べ替えるには、単純にそれらをドラッグアンドドロップしてください。",
     "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "デフォルトでは、アプリが最大化されたときにドックは画面の下部に隠れます。ドックを表示するには画面の下部中央にマウスを動かしてください。",
-    "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "<strong><a href=\"/docs/learning-the-basics#system-settings\">システム設定</a></strong>→<strong>デスクトップ</strong>→<strong>Dock</strong> からドックの挙動をカスタマイズすることができます。",
+    "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "<strong><a href=\"/docs/learning-the-basics#system-settings\">システム設定</a></strong>→<strong>デスクトップ</strong>→<strong>ドック</strong> からドックの挙動をカスタマイズすることができます。",
     "App Windows": "アプリのウィンドウ",
     "Apps exist in their own windows which can be closed, maximized, or moved around.": "アプリは閉じたり最大化したり並べ替えしたりできる自身のウィンドウの中にあります。",
     "When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.": "アプリを開くと、デスクトップにそのウィンドウが表示されます。それぞれのアプリは一般的に三つのエリア、すなわちウィンドウのボタン、ツールバー、アプリのコンテンツを備えます。",
@@ -74,5 +74,5 @@
     "Search": "検索",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "ウィンドウの上部にあるサーチバーにキーワードを入力することでお探しの設定を素早く見つけることができます。システム設定のウィンドウのコンテンツが検索に一致するものをフィルターします。",
     "App Settings": "アプリの設定",
-    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "システム設定は elementary OS 全体の設定のみを扱うということを覚えておいてください。それ自身の設定も持ったアプリもありますが、ここではそれらを見つけることはできません。代わりに、該当するアプリ内でそれらを探してください。"
+    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "システム設定は elementary OS 全体の設定のみを扱うということを覚えておいてください。独自の設定項目を持つアプリもありますが、ここでは見つけることはできません。該当するアプリ内で探してください。"
 }
