@@ -42,6 +42,9 @@
             <a class="button sub-item" href="https://github.com/elementary/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
             <a class="button sub-item" href="https://github.com/elementary/terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
             <a class="button sub-item" href="https://github.com/elementary/videos" target="_blank" rel="noopener"><span>Videos</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/appcenter" target="_blank" rel="noopener"><span>AppCenter</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/calculator" target="_blank" rel="noopener"><span>Calculator</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/screenshot-tool" target="_blank" rel="noopener"><span>Screenshot Tool</span></a>
         </div>
     </div>
     <div class="platform-item half">
