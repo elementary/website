@@ -1,6 +1,6 @@
 {
     "Installation": "インストール",
-    "Download elementary OS": "elementary OS のダウンロード",
+    "Download elementary OS": "elementary OS をダウンロード",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "まだお済でない場合は、<a href=\"/\" target=\"_blank\" rel=\"noopener\">ホームページから elementary OS をダウンロード</a>する必要があります。ダウンロードした ISO ファイルを以下の説明に従って USB フラッシュドライブにコピーする必要があります。",
     "Recommended System Specifications": "推奨されるシステム要件",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "厳密な最小システム要件は設定していませんが、最高のエクスペリエンスを享受するには少なくとも以下のスペックをおすすめします。",
@@ -10,7 +10,7 @@
     "Internet access": "インターネット接続",
     "1024×768 display": "1024×768 ディスプレイ",
     "Back Up Your Data": "データをバックアップしてください",
-    "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "大切なデータをクラウドサービスや外部ハードディスクにバックアップしたか確認してください。新しくオペレーティングシステムをインストールすることで既存のデータを上書きする可能性があります。",
+    "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "大切なデータはクラウドサービスや外部ハードディスクに必ずバックアップするようにしてください。新しくオペレーティングシステムをインストールすることで既存のデータを上書きする可能性があります。",
     "Choose your current Operating System": "現在お使いのオペレーティングシステムを選択してください",
     "Select the operating system you are currently using to view tailored installation instructions.": "適合したインストールの説明を見るには現在お使いのオペレーティングシステムを選択してください。",
     "Windows": "Windows",
