@@ -45,7 +45,7 @@ If you're ready, let's get you set up to use Git:
     git config --global user.name "Your Name"
     git config --global user.email "You@email.com"
     ```
-    
+
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
@@ -137,9 +137,9 @@ Now what you've been waiting for! We're going to create a window that contains a
                 return app.run (args);
             }
         }
-        
+
     You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
-        
+
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
     ```bash
@@ -157,13 +157,13 @@ Now what you've been waiting for! We're going to create a window that contains a
             button_hello.label = "Hello World!";
             button_hello.sensitive = false;
         });
-        
+
     Then add this line right before `main_window.show_all ()`:
 
         main_window.add (button_hello);
 
     Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we add a margin to the button so that it doesn't bump up against the sides of the window. We've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive after it's clicked; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.ApplicationWindow` and declare that we want to show all of the window's contents.
-    
+
     Compile and run your application one more time and test it out. Nice job! You've just written your first Gtk+ app!
 
 ## Pushing to GitHub {#pushing-to-github}
@@ -287,7 +287,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
             <p>A quick summary of your app's main selling points and features. Just a couple sentences per paragraph is best.</p>
           </description>
         </component>
-        
+
 These are all the mandatory fields for displaying your app in AppCenter. There are plenty of other optional fields that you can read about [here](https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html).
 
 There are also some special custom fields for AppCenter to further brand your listing. Specifically, you can set a background color and a text color for your app's header and banner. You can do so by adding the following keys inside the `component` tag:
@@ -395,7 +395,7 @@ See the difference? We just added `_()` around the string! Well, that was easy! 
 
 Now we have to make some changes to our Meson build system and add a couple new files to describe which files we want to translate and which languages we want to translate into.
 
-1. Open up your "meson.build" build and add these lines below your project declaration:
+1. Open up your "meson.build" file and add these lines below your project declaration:
 
         # Include the translations module
         i18n = import('i18n')
@@ -407,7 +407,7 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
         #Translate and install our .desktop file
         i18n.merge_file(
-            input: meson.project_name() + '.desktop.in',
+            input: join_paths('data', meson.project_name() + '.desktop.in'),
             output: meson.project_name() + '.desktop',
             po_dir: join_paths(meson.source_root(), 'po'),
             type: 'desktop',
@@ -417,7 +417,7 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
         #Translate and install our .appdata file
         i18n.merge_file(
-            input: meson.project_name() + '.appdata.xml.in',
+            input: join_paths('data', meson.project_name() + '.appdata.xml.in'),
             output: meson.project_name() + '.appdata.xml',
             po_dir: join_paths(meson.source_root(), 'po'),
             install: true,
@@ -479,7 +479,7 @@ Now we have to make some changes to our Meson build system and add a couple new 
     git push
     ```
 
-That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones that you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from steps 6 and 7. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
+That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones, you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from the previous two steps. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
 
 # Packaging {#packaging}
 
@@ -491,7 +491,7 @@ If you want to get really good really fast, you're going to want to practice. Re
 
 1. Create a new branch folder "hello-packaging"
 2. Set up our directory structure including the "src" and "data" folders.
-3. Add your Authors, Copying, .desktop, and source code.
+3. Add your Copying, .desktop, .appdata.xml, and source code.
 4. Now set up the Meson build system and translations.
 5. Test everything!
 
@@ -517,7 +517,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
          -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2018 04:53:39 -0500
 
-     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](http://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog).
+     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](https://www.debian.org/doc/debian-policy/#document-ch-source).
 
 4. Open the file called "control" and make it look like below:
 
@@ -545,7 +545,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Source: https://github.com/yourusername/yourrepositoryname
 
         Files: src/* data/* debian/*
-        Copyright: 2013 Your Name <you@emailaddress.com>
+        Copyright: 2018 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
 That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
