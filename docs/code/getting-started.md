@@ -439,7 +439,7 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
    We use the `git mv` command here instead of renaming in the file manager or with `mv` so that `git` can keep track of the file rename as part of our revision history.
 
-5. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another meson.build file. This time, its contents will be:
+5. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another "meson.build" file. This time, its contents will be:
 
         i18n.gettext(meson.project_name(),
           args: [
@@ -474,8 +474,8 @@ Now we have to make some changes to our Meson build system and add a couple new 
 10. Last step. Don't forget to add all of the new files we created in the po directory to git:
 
     ```bash
-    git add po/
-    git commit -am "Add translation files"
+    git add src/Application.vala meson.build po/ data/
+    git commit -am "Add translations"
     git push
     ```
 
