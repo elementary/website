@@ -101,6 +101,7 @@ And with that, we're ready to dive into development! Let's move on!
 The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a Git branch. Let’s begin.
 
 ## Setting Up {#setting-up}
+
 Apps on elementary OS are organized into standardized directories contained in your project's "root" folder. Let's create a couple of these to get started:
 
 1. Create your root folder called "gtk-hello"
@@ -109,6 +110,7 @@ Apps on elementary OS are organized into standardized directories contained in y
 Later on, We'll talk about adding other directories like "po" and "data". For now, this is all we need.
 
 ## Gtk.Application {#gtk-application}
+
 Now what you've been waiting for! We're going to create a window that contains a button. When pressed, the button will display the text "Hello World!" To do this, we're going to use a widget toolkit called GTK+ and the programming language Vala. Before we begin, we highly recommend that you do not copy and paste. Typing each section manually will help you to practice and remember. Let's get started:
 
 1. Create a new file in Code and save it as "Application.vala" inside your "src" folder
@@ -372,6 +374,7 @@ If all went well, you should now be able to open your app from the Applications 
 We'll revisit Meson again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore Meson a little more on your own, you can always check out [Meson's documentation](http://mesonbuild.com/Manual.html).
 
 ## Review {#the-build-system-review}
+
 Let's review all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
@@ -383,6 +386,7 @@ Let's review all we've learned to do:
 That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Translations.
 
 # Adding Translations {#Adding-Translations}
+
 Now that you've learned about Meson, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
 
         stdout.printf ("Not Translatable string");
@@ -672,9 +676,11 @@ Let’s recap what we learned in this section:
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](https://valadoc.org/gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
 # Notifications {#notifications}
+
 By now you've probably already seen the white notification bubbles that appear on the top right of the screen. Notifications are a simple way to notify a user about the state of your app. For example, they can inform the user that a long process has been completed or a new message has arrived. In this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
 
 ## Making Preparations {#making-preparations}
+
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
 2. Create a file inside called ```notify-app.vala ```
 3. Create a `meson.build` file. If you don't remember how to set up Meson, go back to the [previous section](#building-and-installing-with-meson) and review.
@@ -683,6 +689,7 @@ By now you've probably already seen the white notification bubbles that appear o
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Yet Another Application {#yet-another-application}
+
 In order to display notifications, you're going to need another `Gtk.Application` with a `Gtk.ApplicationWindow`. Remember what we learned in the last few sections and set up a new `Gtk.Application`!
 
 Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
@@ -704,8 +711,8 @@ In between `var main_window...` and `main_window.show ();`, write the folowing l
 
 Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
 
-
 ## Sending Notifications {#sending-notifications}
+
 Now that we have a Gtk.Application we can send notifications. Let's connect a function to the button we created and use it to send a notification:
 
     show_button.clicked.connect (() => {
@@ -717,9 +724,11 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
 Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
 
 ## Additional Features {#Additional-features}
+
 Now that you know how to send basic notifications, let's talk about a couple of ways to make your notifications better. Notifications are most useful when users can identify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
 
 ### Icons {#icons}
+
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
 	var icon = new GLib.ThemedIcon ("dialog-warning");
@@ -728,6 +737,7 @@ In order to make sure users can easily recognize a notification, we should set a
 That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
 
 ### Replace {#replace}
+
 We now know how to send a notification, but what if you need to update it with new information? Thanks to the notification ID, we can easily replace a notification. The notification ID should be the same as the app ID that we set in `Gtk.Application`.
 
 Let's make the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and add it to the grid:
@@ -758,6 +768,7 @@ Now, let's do the withdraw button:
 Very easy right? Let's compile and run your app again. Click on the buttons, first on "Show", then "Replace". See how the text on your notification changes without making a new one appear?
 
 ### Priority  {#priority}
+
 Notifications also have priority. When a notification is set as `URGENT` it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the `this.send_notification ()` function
 
 	notification.set_priority (NotificationPriority.URGENT);
@@ -765,6 +776,7 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 `URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](https://valadoc.org/gio-2.0/GLib.NotificationPriority).
 
 ## Review {#notifications-review}
+
 Let's review what all we've learned:
 
 - We learned what `Gtk.Application` is and how to make a subclass of it.
@@ -794,6 +806,7 @@ Current Launcher API support:
 | Dock             | Yes              | Yes             | Yes                 | Yes               |
 
 ## Setting Up {#system-integration-setting-up}
+
 Before writing the code, you must first install the `libunity` library, you can do it by executing the following command in Terminal:
 
 ```
@@ -815,6 +828,7 @@ Now let's add the Unity library to your build system. Open your meson.build file
   Though we haven't made any changes to our source code yet, change into your build directory and run `ninja` to build your project. It should still build without any errors. If you do encounter errors, double check your changes and resolve them before continuing.
 
 ## Using the Launcher API {#using-launcher-api}
+
 Once you've set up `libunity` in your build system it's time to write some code.
 
 The first thing you'll need to use the API is your application desktop ID.
@@ -846,6 +860,7 @@ entry.progress = 0.2f;
 As you can see the type of `progress` property is `double` and is a range between `0` and `1`: from 0% to 100%.
 
 ## Dynamic Quicklists {#dynamic-quicklists}
+
 Dynamic quicklists are a way to provide the user with dynamic quick menu entries to access some kind of
 feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the Applications Menu**, see [Static Quicklists](#static-quicklists).
 
@@ -877,6 +892,7 @@ entry.quicklist = quicklist;
 Please see the [Dbusmenu.Menuitem API](https://valadoc.org/dbusmenu-glib-0.4/Dbusmenu.Menuitem.html) for more details and features.
 
 ## Static Quicklists {#static-quicklists}
+
 The main difference between dynamic and static quicklists is that static ones cannot be changed at runtime. Static quicklists do not involve writing any code or using any external dependencies.
 
 Static quicklists are stored within your `.desktop` file. These are so called "actions".
@@ -910,3 +926,4 @@ Please take a look at a [freedesktop.org Additional applications actions section
 detailed description of what keys are supported and what they do.
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
+
