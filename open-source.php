@@ -33,6 +33,8 @@
             <p class="oss-title">elementary OS Applications</p>
         </a>
         <div>
+            <a class="button sub-item" href="https://github.com/elementary/appcenter" target="_blank" rel="noopener"><span>AppCenter</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/calculator" target="_blank" rel="noopener"><span>Calculator</span></a>
             <a class="button sub-item" href="https://github.com/elementary/calendar" target="_blank" rel="noopener"><span>Calendar</span></a>
             <a class="button sub-item" href="https://github.com/elementary/camera" target="_blank" rel="noopener"><span>Camera</span></a>
             <a class="button sub-item" href="https://github.com/elementary/files" target="_blank" rel="noopener"><span>Files</span></a>
@@ -40,6 +42,7 @@
             <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
             <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
             <a class="button sub-item" href="https://github.com/elementary/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/screenshot-tool" target="_blank" rel="noopener"><span>Screenshot Tool</span></a>
             <a class="button sub-item" href="https://github.com/elementary/terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
             <a class="button sub-item" href="https://github.com/elementary/videos" target="_blank" rel="noopener"><span>Videos</span></a>
         </div>
