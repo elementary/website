@@ -201,7 +201,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
         //  ACTION: redirectToThankYouPage: redirect to the thank-you page after 0.5 seconds (necessary due magnet-link)
         function redirectToThankYouPage () {
             setTimeout(function () {
-                window.location.href = '/thank-you'
+                window.location.href = 'thank-you'
             }, 500)
         }
 
