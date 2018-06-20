@@ -552,9 +552,9 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Copyright: 2018 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/). 
+That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
-Note that Debian packaging is _very_ picky about whitespace, so if you're running into errors, make sure you're not adding, changing, or removing whitespace from the original template files. 
+Note that Debian packaging is _very_ picky about whitespace, so if you're running into errors, make sure you're not adding, changing, or removing whitespace from the original template files.
 
 If you're packaging your app for elementary OS 0.4 Loki, you will also need to update the "rules" file to work with Meson. You can see an example [here](https://github.com/cassidyjames/principles/blob/ef84ed129bdeaec613b0c457c766cb9aa9ac1bfb/debian/rules). If you are targeting elementary OS 5.0 Juno or newer, this is not necessary.
 
