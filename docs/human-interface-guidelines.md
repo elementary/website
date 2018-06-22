@@ -555,7 +555,7 @@ The Welcome Screen is a friendly way to help users get started with your app.
 
 ### Usage {#welcome-screen-usage}
 
-Typically a Welcome Screen is used for apps like Noise or Scratch where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
+Typically a Welcome Screen is used for apps like Noise or Code where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
 
 If your app lets users clear its library, make sure that it returns to the Welcome Screen instead of an empty list.
 
