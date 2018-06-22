@@ -600,7 +600,7 @@ Let’s create a Window with a vertical Grid that contains a Button and a Label:
     grid.orientation = Gtk.Orientation.VERTICAL;
     grid.row_spacing = 6;
 
-    var button = new Gtk.Button.with_label ("Click me!");
+    var button = new Gtk.Button.with_label (_("Click me!"));
     var label = new Gtk.Label (null);
 
     grid.add (button);
