@@ -531,7 +531,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Maintainer: Your Name <you@emailaddress.com>
         Build-Depends: debhelper (>= 10.5.1),
                        gettext,
-                       libgtk-3-dev (>= 3.10)
+                       libgtk-3-dev (>= 3.10),
                        meson,
                        valac (>= 0.28.0)
         Standards-Version: 4.1.1
