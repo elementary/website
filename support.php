@@ -64,7 +64,7 @@ include $template['alert'];
         <span>Photos</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/code" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Text Editor"/>
         <span>Code</span>
     </a>
