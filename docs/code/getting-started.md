@@ -793,7 +793,7 @@ As you could see, sending notifications is very easy thanks to `Gtk.Application`
 
 Applications can show additional information in the dock as well as
 the application menu. This makes the application feel more integrated into the
-system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/pl/docs/human-interface-guidelines#dock-integration)
+system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/docs/human-interface-guidelines#dock-integration)
 for what you should do and what you shouldn't.
 
 For this integration you can use [Unity's Launcher API](https://valadoc.org/unity/Unity.LauncherEntry.html).
