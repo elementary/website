@@ -686,7 +686,7 @@ By now you've probably already seen the white notification bubbles that appear o
 ## Making Preparations {#making-preparations}
 
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
-2. Create a file inside called ```notify-app.vala ```
+2. Create a file inside called ```Application.vala ```
 3. Create a `meson.build` file. If you don't remember how to set up Meson, go back to the [previous section](#building-and-installing-with-meson) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
