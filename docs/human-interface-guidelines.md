@@ -92,7 +92,7 @@ Most users don't want to read through help docs before they can use your app. In
 
 Avoid technical jargon and assume little-to-no technical knowledge. This lets your app be "self-documenting."
 
-Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented. 
+Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented.
 
 ------------------------------------------
 
@@ -156,7 +156,7 @@ Sometimes a user will perform an action which could possibly be destructive or t
 
 * **Editing a photo**. Instead of asking the user if they want to destructively apply an edit, let them undo the edit and always keep the original backed up.
 
-This behavior should only as a last resort be implemented by providing a buffer time between when the app shows the user what happened and actually performing the action. To keep the experience responsive, the app should always look as if it performed the action as soon as the user initiates it. 
+This behavior should only as a last resort be implemented by providing a buffer time between when the app shows the user what happened and actually performing the action. To keep the experience responsive, the app should always look as if it performed the action as soon as the user initiates it.
 
 This behavior strikes the best balance of keeping out of the user's way while making sure they don't do something unintended. It's important to keep the undo action unobtrusive yet simple and intuitive; a common way of doing so is by using an info bar, though other methods may also be appropriate.
 
@@ -179,7 +179,7 @@ When a user closes an app, it's typically because they're done using it for now 
 
 Apps should save their current state when closed so they can be reopened right to where the user left off. Typically, closing and reopening an app should be indistinguishable from the legacy concept of minimizing and unminimizing an app; that is, all elements should be saved including open documents, scroll position, undo history, etc.
 
-Because of the strong convention of saved state, elementary OS does not expose or optimize for legacy minimize behavior; e.g. there is no minimize button, and the Multitasking View does not distinguish minimized windows. 
+Because of the strong convention of saved state, elementary OS does not expose or optimize for legacy minimize behavior; e.g. there is no minimize button, and the Multitasking View does not distinguish minimized windows.
 
 ### Closing the App Window {#closing-the-app-window}
 
@@ -197,7 +197,7 @@ If the user re-opens an app while a background process is still executing, the a
 
 ---
 
-See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/) by Matthew Paul Thomas
+See also: [That's It, We're Quitting](https://blog.ubuntu.com/2011/03/07/quit) by Matthew Paul Thomas
 
 # Desktop Integration {#desktop-integration}
 
@@ -372,7 +372,7 @@ Indicators are designed for the system; they display information that is relevan
 ---
 
 See also:
-1. [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+1. [Farewell to the Notification Area](https://blog.ubuntu.com/2010/04/21/notification-area) by Matthew Paul Thomas
 2. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
 
 ## Notifications {#notifications}
@@ -505,7 +505,7 @@ Before we get into all the widgets available in elementary OS, we need to cover 
 
 A very common mistake for developers to make is creating controls that seemingly do nothing. Keep in mind that we want to present an environment where users feel comfortable exploring. A curious user will interact with a control expecting there to be some immediate reaction. When a control seemingly does nothing, this creates confusion and can be scary (Think,  "uh-oh I don't know what happened!"). In some cases, controls that do nothing are simply clutter and add unnecessary complexity to your UI.
 
-Consider the "clear" button present in [search fields](#search-fields). This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing. 
+Consider the "clear" button present in [search fields](#search-fields). This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing.
 
 ### Sensitivity {#sensitivity}
 
@@ -588,11 +588,11 @@ Hierarchy is important with source lists, both within the widget itself and with
 
 Sections in the source list should be sorted from most important at the top to least important at the bottom. If you're having a hard time deciding the relative importance of each section, think about which section a user is likely to use more often. Sorting the sections this way ensures that the most important items are always visible, even if the source list is too short to fit all of the items, though of course items at the bottom will still be accessible via scrolling.
 
-A source list goes at the left side of a window (or right side for right-to-left languages). Because the user reads in this direction, the sidebar is reinforced as being before (and therefore at a higher level than) the app's contents. 
+A source list goes at the left side of a window (or right side for right-to-left languages). Because the user reads in this direction, the sidebar is reinforced as being before (and therefore at a higher level than) the app's contents.
 
 ## Buttons {#buttons}
 
-Buttons are an incredibly important widget to understand since your app will undoubtedly contain them. 
+Buttons are an incredibly important widget to understand since your app will undoubtedly contain them.
 
 ### Tool Buttons {#tool-buttons}
 
