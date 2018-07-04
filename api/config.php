@@ -22,6 +22,7 @@ $output = array(
 
     'user' => array(
         'region' => $region,
+        'timecode' => $timecode,
         'trackme' => $trackme
     )
 );
