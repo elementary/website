@@ -57,14 +57,14 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 
 1. Open Rufus
 2. Insert your USB drive and select it in the "Device" list
-3. Select "ISO Image" next to "Create a bootable disk using..."
-4. Click ![the disk icon](images/docs/installation/rufus_disk_icon.png) {.inline} to choose the ISO that you downloaded previously.
-5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the `#` button in the status bar and verify that the text next to "SHA256" matches the following hash:
+3. Select "Disk or ISO image" in the "Boot selection" list
+4. Click "SELECT" to choose the ISO that you downloaded previously.
+5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click  ![the checksum icon](images/docs/installation/rufus_checksum_icon.png) {.inline}  next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
 ```bash nohighlight
 5c499579e6ba05eed5626abbbb68fc1e3660e23ccb6a27f1a5f7794fed98bd56
 ```
 
-6. If the hashes match, click "Start" and wait for the process to finish.
+6. If the hashes match, click "START" and wait for the process to finish.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
