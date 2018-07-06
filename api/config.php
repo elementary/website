@@ -27,5 +27,6 @@ $output = array(
     )
 );
 
-header('Content-type:application/json;charset=utf-8');
+header('Access-Control-Allow-Origin: *');
+header('Content-type: application/json; charset=utf-8');
 echo json_encode($output, JSON_PRETTY_PRINT);
