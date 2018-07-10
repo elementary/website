@@ -110,19 +110,15 @@ To create an elementary OS install drive on macOS you'll need a USB flash drive 
 
 <a href="http://www.etcher.io/" class="button suggested-action">Download Etcher</a>
 
+
+![etcher steps](images/docs/installation/etcher.gif)
+
+
 1. Insert the spare USB drive, and select the ISO file you've just downloaded.
 2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-
-    ![Select image in Etcher](images/docs/installation/etcher_osx_select.png)
-
 3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
 4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-
-    ![Flash image in Etcher](images/docs/installation/etcher_osx_flash.png)
-
 5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
-
-    ![Flash image in Etcher](images/docs/installation/etcher_osx_complete.png)
 
 The following dialog may appear during the flashing process, it is safe to ignore.
 
