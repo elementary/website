@@ -246,7 +246,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-code">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="code screenshot" />
+                        <img class="app-display__image" src="images/screenshots/code.jpg" srcset="images/screenshots/code@2x.jpg 2x" alt="code screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-text-editor.svg" alt="code icon" />
                             <div>
