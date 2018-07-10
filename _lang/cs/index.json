@@ -12,7 +12,7 @@
     "elementary OS AppCenter categories": "Kategorie v elementaryOS AppCentru",
     "The Indie, Open Source App Store": "Indie, Open Source App Store",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "AppCenter přináší nativní Open Source aplikace na elementary OS. Rychle objevte nové aplikace a jednoduše aktualizujte ty, které již máte. Navíc přímo podporujte indie vývojáře prostřednictvím zaplať-kolik-chceš plateb.",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Číst AppCenter Spotlight<\/a>",
+    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Číst AppCenter Spotlight</a>",
     "Become a Developer": "Staňte se vývojářem",
     "Task finished": "Úkol dokončen",
     "Apps You Need, Without Ones You Don't.": "Aplikace, které potřebujete, bez těch, které nechcete.",
@@ -82,6 +82,6 @@
     "installation guide": "instalační příručka",
     "Cancel": "Zrušit",
     "Download": "Stáhnout",
-    "Torrent Magnet Link": "Torrent Magnet Link",
+    "Torrent Magnet Link": "Torrent Magnet",
     "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Rychlá a otevřená alternativa k Windows a macOS &sdot; elementary OS"
 }
