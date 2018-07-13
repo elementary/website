@@ -555,7 +555,7 @@ The Welcome Screen is a friendly way to help users get started with your app.
 
 ### Usage {#welcome-screen-usage}
 
-Typically a Welcome Screen is used for apps like Noise or Scratch where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
+Typically a Welcome Screen is used for apps like Music or Code where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
 
 If your app lets users clear its library, make sure that it returns to the Welcome Screen instead of an empty list.
 
@@ -563,8 +563,8 @@ If your app lets users clear its library, make sure that it returns to the Welco
 
 The Welcome Screen consists of two sets of labels:
 
-* The first set explains the situation and what the Welcome Screen will help you accomplish. As an example, Noise's Welcome Screen explains that your music library is empty and that in order for the library view to become useful, we must add songs to it.
-* The second set of labels consists of the actions that will assist a user in getting started with your app. To use Noise as an example again, one possible action is setting your music folder to an alternate location. First we name the action, "Set Music Folder". Then, we describe what the action does, "Find your Music folder and import its contents."
+* The first set explains the situation and what the Welcome Screen will help you accomplish. As an example, Music's Welcome Screen explains that your music library is empty and that in order for the library view to become useful, we must import songs into our library.
+* The second set of labels consists of the actions that will assist a user in getting started with your app. To use Music as an example again, one possible action is setting your music folder to an alternate location. First we name the action, "Change Music Folder". Then, we describe what the action does, "Load music from a folder, a network or an external disk."
 
 ### Iconography {#welcome-screen-iconography}
 
@@ -1254,8 +1254,8 @@ Use the following rules to keep your text understandable and consistent:
 
 Don't give the user a bunch of text to read; a lengthy sentence can appear daunting and may discourage users from actually reading your messaging. Instead, provide the user with short and concise text.
 
-* **Bad**: It doesn't look like you have any music in your library. You can use Noise to organize your music, add more, and listen to the music you already have. To get started, click on the "Add" button, then follow the prompts. Once you're done, your Music will be displayed here.
-* **Better**: Get Some Tunes. Noise can't seem to find your contacts. \[Buttons to import or create contacts\]
+* **Bad**: It doesn't look like you have any music in your library. You can use Music to organize your music, add more, and listen to the music you already have. To get started, click on the "Add" button, then follow the prompts. Once you're done, your Music will be displayed here.
+* **Better**: Get Some Tunes. Music can't seem to find your contacts. \[Buttons to import or create contacts\]
 
 ### Think Simple {#think-simple}
 
