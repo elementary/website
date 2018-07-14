@@ -108,7 +108,7 @@ shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20180214
 
 To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
 
-<a href="http://www.etcher.io/" class="button suggested-action">Download Etcher</a>
+<a href="https://www.etcher.io/" class="button suggested-action">Download Etcher</a>
 
 
 ![etcher steps](images/docs/installation/etcher.gif)
@@ -163,7 +163,7 @@ should produce the output:
 
 You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.
 
-<a href="http://www.appnr.com/install/unetbootin" class="button suggested-action">Download UNetbootin</a>
+<a href="https://unetbootin.github.io/" class="button suggested-action">Download UNetbootin</a>
 
 
 1. Open UNetbootin from the Dash. It will open a window like the one below:
