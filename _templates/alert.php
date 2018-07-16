@@ -8,7 +8,7 @@ if ( getenv('PHPENV') !== 'production' ) {
         <div class="row alert warning">
             <div class="column alert">
                 <div class="icon">
-                    <i class="warning fa fa-warning"></i>
+                    <i class="warning far fa-exclamation-triangle"></i>
                 </div>
                 <div class="icon-text">
                     <h3>This is a development site.</h3>
