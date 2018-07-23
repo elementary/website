@@ -198,12 +198,12 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             $openModal.click()
         }
 
-        //  ACTION: redirectToThankYouPage: redirect to the thank-you page after 1.5 seconds (necessary due magnet-link)
+        //  ACTION: redirectToThankYouPage: redirect to the thank-you page after 3 seconds (necessary due magnet-link)
         // NOTE: This is a race condition with the download link headers
         function redirectToThankYouPage () {
             setTimeout(function () {
                 window.location.href = 'thank-you'
-            }, 1500)
+            }, 3000)
         }
 
         console.log('Loaded download.js')
