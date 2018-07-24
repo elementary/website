@@ -56,7 +56,7 @@ jQuery.then(($) => {
                 'showcase-calendar',
                 'showcase-files',
                 'showcase-terminal',
-                'showcase-code',
+                'showcase-scratch',
                 'showcase-camera'
             ],
             fixed: false
