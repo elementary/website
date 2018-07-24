@@ -45,7 +45,7 @@
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
-                <i class="warning fas fa-64 fa-exclamation-triangle"></i>
+                <i class="warning fas fa-4x fa-exclamation-triangle"></i>
             </div>
             <div class="icon-text">
                 <h3>You are missing API keys</h3>
