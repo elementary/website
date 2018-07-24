@@ -50,9 +50,10 @@ It's often very tempting to continue adding more and more features into your app
 
 Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
-## Avoid Configuration {#avoid-configuration}
+<span id="avoid-configuration"/>
+## Accessible Configuration {#accessible-configuration}
 
-If possible, completely avoid presenting any settings or configuration in your app. Providing settings is usually an easy way out of making design decisions about an app's behavior. But just like with problems of feature bloat, settings mean more code, more bugs, more testing, more documentation, and more complexity.
+Providing settings can be a way to make sure an app is accessible to a wider set of users with special needs, but it can also be an easy way out of making design decisions about an app's behavior. Just like with problems of feature bloat, settings mean more code, more bugs, more testing, more documentation, and more complexity. When considering adding options to your app, try to strike a balance of making your app more accessible without pushing design work onto your users.
 
 ### Build for the "Out of The Box" Experience {#build-for-the-out-of-the-box-experience}
 
@@ -64,9 +65,10 @@ Design with sane defaults in mind. elementary OS apps put strong emphasis on the
 
 Get as much information automatically as possible. Instead of asking a user for their name or their location, ask the system for this information. This cuts down on the amount of things a user has to do and makes your app look intelligent and integrated.
 
-### Do You Really Need It? {#do-you-really-need-it}
+<span id="do-you-really-need-it"/>
+### Is It Really About Accessibility? {#is-it-really-about-a11y}
 
-Ask yourself if the configuration option you are adding is really necessary or makes sense to a user. Don't ever ask users to make engineering or design decisions.
+Ask yourself if the configuration option you are adding is really necessary to make your app more accessible or if it makes sense to have a user make this decision. Don't ever ask users to make uninformed engineering or design decisions.
 
 ### When You Absolutely Have To {#when-you-absolutely-have-to}
 
