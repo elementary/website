@@ -17,7 +17,7 @@ While we don't have a strict set of minimum system requirements, we recommend at
 <div class="row alert warning" markdown="1">
 <div class="column alert">
 <div class="icon">
-<i class="warning far fa-exclamation-triangle"></i>
+<i class="warning far fa-64 fa-exclamation-triangle"></i>
 </div>
 <div class="icon-text" markdown="1">
 

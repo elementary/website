@@ -716,6 +716,10 @@ a.third:hover {
     text-align: center;
 }
 
+.fa-64.fa-exclamation-triangle {
+    font-size: 64px;
+}
+
 @media (min-width: 444px) {
     .icon {
         position: absolute;

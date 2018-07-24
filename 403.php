@@ -13,7 +13,7 @@
 
 <div class="row">
     <div class="column alert">
-        <i class="warning far fa-exclamation-triangle"></i>
+        <i class="warning far fa-64 fa-exclamation-triangle"></i>
     </div>
     <div class="column alert">
         <h3>Sorry, access is denied.</h3>
