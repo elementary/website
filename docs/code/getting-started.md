@@ -68,7 +68,7 @@ At the time of this writing, elementary OS doesn't have a full SDK like Android 
 
 ### Code {#code}
 
-![](images/icons/apps/128/accessories-text-editor.svg)
+![](images/thirdparty-icons/apps/128/io.elementary.code.svg)
 
 The first piece of our simple "SDK" is Code. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and a Folder Manager. There are other extensions for Code as well, like the Outline, Terminal, Word Completion, or Devhelp extensions. Play around with what works best for you.
 
