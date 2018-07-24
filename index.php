@@ -116,7 +116,7 @@
                         <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
                         <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
                         <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/apps/64/accessories-text-editor.svg" />Scratch</li></a>
+                        <a href="#showcase-code"><li class="read-more"><img src="images/icons/apps/64/accessories-text-editor.svg" />Code</li></a>
                         <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
                     </ul>
                 </div>
@@ -244,14 +244,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="showcase-tab" id="showcase-scratch">
+                <div class="showcase-tab" id="showcase-code">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="scratch screenshot" />
+                        <img class="app-display__image" src="images/screenshots/code.jpg" srcset="images/screenshots/code@2x.jpg 2x" alt="code screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
+                            <img src="images/icons/apps/64/accessories-text-editor.svg" alt="code icon" />
                             <div>
-                                <h2>Scratch</h2>
-                                <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                                <h2>Code</h2>
+                                <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Code will be the last code editor you'll ever need.</p>
                             </div>
                         </div>
                     </div>
