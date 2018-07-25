@@ -479,7 +479,7 @@ See also:
 
 Popovers are like a contextual dialog. They display transient content directly related to something that was clicked on and close when clicked out of, like menus.
 
-![](/images/docs/human-interface-guidelines/popovers/midori-favorites-popover.png)
+<img src="/images/docs/human-interface-guidelines/popovers/popover.png" alt="Popovers" style="max-width: 420px"/>
 
 A popover should be used when a user wants to perform a quick action without getting out of the main UI. Some examples of where a popover could be used are adding a contact from an email, adding a bookmark in a browser, or displaying downloads or file transfers.
 
