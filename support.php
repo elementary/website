@@ -65,7 +65,7 @@ include $template['alert'];
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/code" target="_blank" rel="noopener">
-        <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Code"/>
+        <img width="64" height="64" src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code"/>
         <span>Code</span>
     </a>
 

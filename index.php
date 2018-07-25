@@ -116,7 +116,7 @@
                         <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
                         <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
                         <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-code"><li class="read-more"><img src="images/icons/apps/64/accessories-text-editor.svg" />Code</li></a>
+                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" />Code</li></a>
                         <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
                     </ul>
                 </div>
@@ -248,7 +248,7 @@
                     <div class="app-display">
                         <img class="app-display__image" src="images/screenshots/code.jpg" srcset="images/screenshots/code@2x.jpg 2x" alt="code screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/accessories-text-editor.svg" alt="code icon" />
+                            <img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="code icon" />
                             <div>
                                 <h2>Code</h2>
                                 <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Code will be the last code editor you'll ever need.</p>
