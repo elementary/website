@@ -333,7 +333,7 @@ Contractor results are typically presented to users in menu form. Keep the follo
 
 Integrate your app with the dock to communicate its status to the user at a glance.
 
-![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.png)
+![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.svg)
 
 ### Progressbars {#progressbars}
 
@@ -353,7 +353,7 @@ A badge shows a count of actionable items managed by your app. Its purpose is to
 
 Indicators are small icons that live on the top panel. They give users a place to glance for quick information about the state of the system. Selecting an icon opens a small contextual menu with related actions available to the user, including a way to get the the full related system settings.
 
-![Indicators](/images/docs/human-interface-guidelines/system-indicators/systray.png)
+![Indicators](/images/docs/human-interface-guidelines/system-indicators/panel.svg)
 
 ### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
