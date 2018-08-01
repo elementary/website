@@ -211,10 +211,10 @@ limit is 120 characters.
 
 ## EditorConfig
 
-If your code editor supports [EditorConfig](http://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
+If your code editor supports [EditorConfig](https://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
 
 ```ini
-# EditorConfig <http://EditorConfig.org>
+# EditorConfig <https://EditorConfig.org>
 root = true
 
 # elementary defaults
