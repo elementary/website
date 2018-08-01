@@ -34,7 +34,7 @@ We won't support translations in the following pages:
 
 * <a href="https://developer.elementary.io" data-l10n-off="1">Developer</a>
 * <a href="https://elementary.io/docs/code/getting-started" data-l10n-off="1">Getting Started</a>
-* <a href="https://elementary.io/docs/code/reference" data-l10n-off="1">Reference</a>
 * <a href="https://elementary.io/docs/human-interface-guidelines" data-l10n-off="1">Human Interface Guidlines</a>
+* <a href="https://elementary.io/docs/code/reference" data-l10n-off="1">Reference</a>
 * <a href="https://elementary.io/store/" data-l10n-off="1">Store</a>
 * <a href="https://elementary.io/team" data-l10n-off="1">Team</a>
