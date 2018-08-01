@@ -19,7 +19,6 @@
 ,
     "categories": [
         {"icon":"icons/apps/64/accessories-calculator","title":"Calculator","position":"first-row"},
-        {"icon":"thirdparty-icons/apps/64/io.elementary.code","title":"Code","position":"first-row"},
         {"icon":"icons/apps/64/accessories-screenshot","title":"Screenshot","position":"last-row"}
     ]
 ,
