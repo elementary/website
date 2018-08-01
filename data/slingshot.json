@@ -10,7 +10,7 @@
         {"icon":"thirdparty-icons/apps/64/multitasking-view","title":"Multitasking View","position":"middle-row"},
         {"icon":"icons/apps/64/multimedia-audio-player","title":"Music","position":"middle-row"},
         {"icon":"icons/apps/64/multimedia-photo-manager","title":"Photos","position":"middle-row"},
-        {"icon":"icons/apps/64/accessories-text-editor","title":"Scratch","position":"last-row"},
+        {"icon":"thirdparty-icons/apps/64/io.elementary.code","title":"Code","position":"last-row"},
         {"icon":"icons/apps/64/accessories-screenshot","title":"Screenshot","position":"last-row"},
         {"icon":"icons/devices/64/scanner","title":"Simple Scan","position":"last-row"},
         {"icon":"icons/apps/64/preferences-desktop","title":"System Settings","position":"last-row"},
@@ -19,7 +19,7 @@
 ,
     "categories": [
         {"icon":"icons/apps/64/accessories-calculator","title":"Calculator","position":"first-row"},
-        {"icon":"icons/apps/64/accessories-text-editor","title":"Scratch","position":"first-row"},
+        {"icon":"thirdparty-icons/apps/64/io.elementary.code","title":"Code","position":"first-row"},
         {"icon":"icons/apps/64/accessories-screenshot","title":"Screenshot","position":"last-row"}
     ]
 ,
