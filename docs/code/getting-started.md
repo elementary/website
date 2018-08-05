@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Git revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Juno Beta or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## GitHub {#github}
 
