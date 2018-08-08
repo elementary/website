@@ -47,28 +47,30 @@ Promise.all([jQuery, modal]).then(([$]) => {
             $trigger.click()
 
             ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
+
+            updateShippingEstimate($item.attr('data-printful-id'))
         })
 
         /**
          * updateShippingEstimate
          * Fetches a psudeo shipping estimate
          *
-         * @param {Object} $f - the jQuery form to update
-         * @param {Object} p - the product object
-         * @param {Object} v - the variant object
+         * @param {String} printful_id - the variant printful_id
          *
          * @return {Void}
          */
-        var updateShippingEstimate = function ($f, p, v) {
-            var $m = $f.closest('.modal')
+        var updateShippingEstimate = function (printful_id) {
+			console.log(printful_id)
+            var $m = $('.js-leanmodal-active .modal__shipping')
+            console.log($m)
             // GET /api/gelocate
             // with the parameters "shipping" and "item" (printful variant id)
-            $.getJSON('/api/geolocate?shipping&item=' + v['printful_id'], function (data) {
+            $.getJSON('/api/geolocate?shipping&item=' + printful_id, function (data) {
                 // Update price information
                 if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
-                    $m.find('.modal__shipping').text('Shipping from $' + data['shipping']['estimates'][0]['cost'])
+                    $m.text('plus shipping from $' + data['shipping']['estimates'][0]['cost'])
                 } else {
-                    $m.find('.modal__shipping').text('')
+                    $m.text('')
                 }
             })
         }
@@ -190,7 +192,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 if (color != null && variant['color'] !== color) continue
 
                 updateVariant($f, p, variant)
-                updateShippingEstimate($f, p, variant)
+                updateShippingEstimate(variant['printful_id'])
 
                 $('.alert--error', $f).text('')
                 $('input[type="submit"]', $f).prop('disabled', false)
