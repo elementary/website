@@ -45,9 +45,6 @@
         {"title": "Settings", "items": [
             {"icon":"icons/categories/32/preferences-system-time","title":"<b>Da</b>te & Time"},
             {"icon":"icons/categories/32/preferences-desktop-display","title":"<b>D</b>ispl<b>a</b>ys"}
-        ]},
-        {"title": "Application Actions", "items": [
-            {"icon":"icons/apps/32/office-calendar","title":"About Calendar"}
         ]}
     ]
 ,
