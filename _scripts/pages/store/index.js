@@ -55,17 +55,15 @@ Promise.all([jQuery, modal]).then(([$]) => {
          * updateShippingEstimate
          * Fetches a psudeo shipping estimate
          *
-         * @param {String} printful_id - the variant printful_id
+         * @param {String} printfulId - the variant printful_id
          *
          * @return {Void}
          */
-        var updateShippingEstimate = function (printful_id) {
-			console.log(printful_id)
+        var updateShippingEstimate = function (printfulId) {
             var $m = $('.js-leanmodal-active .modal__shipping')
-            console.log($m)
             // GET /api/gelocate
             // with the parameters "shipping" and "item" (printful variant id)
-            $.getJSON('/api/geolocate?shipping&item=' + printful_id, function (data) {
+            $.getJSON('/api/geolocate?shipping&item=' + printfulId, function (data) {
                 // Update price information
                 if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
                     $m.text('plus shipping from $' + data['shipping']['estimates'][0]['cost'])
