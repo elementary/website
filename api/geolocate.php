@@ -41,7 +41,7 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 
 // DEVELOPER OVERRIDE
 // Override IP here
-$ip = '92.26.51.149';
+//$ip = '92.26.51.149';
 
 require_once __DIR__.'/../_backend/classify.functions.php';
 
