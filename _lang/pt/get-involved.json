@@ -21,7 +21,7 @@
     "BountySource": "BountySource",
     "elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.": "elementary OS é criado e usado por pessoas em todo o Mundo; Ajuda-nos a tornar a experiência ainda melhor traduzindo-o para mais idiomas.",
     "Both elementary OS and our website are openly translated using an online platform called Weblate.": "Tanto o elementary OS como o website foram traduzidos livermente usando a plataforma online chamada Weblate.",
-    "Join Chat": "",
+    "Join Chat": "Entrar no chat",
     "Suggest Translations": "Sugerir Traduções",
     "World map": "Mapa mundo",
     "Question &amp; Answer": "Perguntas &amp; Respostas",
@@ -43,9 +43,9 @@
     "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "A nossa equipa de design transforma idéias em relatórios claros e ativos. Antes de se envolver, é recomendável ler sobre o nosso fluxo de trabalho de design.",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "O elementary OS usa uma folha de estilos escrita em CSS. Ele define como tudo é desenhado, botões e barras de ferramentas para o painel e menus.",
     "Browse Our Stylesheet": "Navegue Pela Nossa Folha de Estilos",
-    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
-    "Browse Our Icons": "",
-    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
-    "Browse 'Needs Design' Issues": "",
-    "Get Involved with elementary OS": ""
+    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "Elementary OS vem com um conjunto de ícones vectoriais que são usados através de todas as aplicações pré-instaladas e estão disponíveis para desenvolvedores terceiros.",
+    "Browse Our Icons": "Pesquisar os nossos Ícones",
+    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "A nossa equipa de design acompanha problemas \"Precisa de Design\" no GitHub. Estes podem precisar de discussões mais profundas, wireframes ou assets entregáveis.",
+    "Browse 'Needs Design' Issues": "Navegar pelos problemas do tipo \"Precisa de Design\"",
+    "Get Involved with elementary OS": "Envolve-te no elementary OS"
 }

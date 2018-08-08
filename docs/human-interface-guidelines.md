@@ -50,9 +50,10 @@ It's often very tempting to continue adding more and more features into your app
 
 Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
-## Avoid Configuration {#avoid-configuration}
+<span id="avoid-configuration"/>
+## Accessible Configuration {#accessible-configuration}
 
-If possible, completely avoid presenting any settings or configuration in your app. Providing settings is usually an easy way out of making design decisions about an app's behavior. But just like with problems of feature bloat, settings mean more code, more bugs, more testing, more documentation, and more complexity.
+Providing settings can be a way to make sure an app is accessible to a wider set of users with special needs, but it can also be an easy way out of making design decisions about an app's behavior. Just like with problems of feature bloat, settings mean more code, more bugs, more testing, more documentation, and more complexity. When considering adding options to your app, try to strike a balance of making your app more accessible without pushing design work onto your users.
 
 ### Build for the "Out of The Box" Experience {#build-for-the-out-of-the-box-experience}
 
@@ -64,9 +65,10 @@ Design with sane defaults in mind. elementary OS apps put strong emphasis on the
 
 Get as much information automatically as possible. Instead of asking a user for their name or their location, ask the system for this information. This cuts down on the amount of things a user has to do and makes your app look intelligent and integrated.
 
-### Do You Really Need It? {#do-you-really-need-it}
+<span id="do-you-really-need-it"/>
+### Is It Really About Accessibility? {#is-it-really-about-a11y}
 
-Ask yourself if the configuration option you are adding is really necessary or makes sense to a user. Don't ever ask users to make engineering or design decisions.
+Ask yourself if the configuration option you are adding is really necessary to make your app more accessible or if it makes sense to have a user make this decision. Don't ever ask users to make uninformed engineering or design decisions.
 
 ### When You Absolutely Have To {#when-you-absolutely-have-to}
 
@@ -92,7 +94,7 @@ Most users don't want to read through help docs before they can use your app. In
 
 Avoid technical jargon and assume little-to-no technical knowledge. This lets your app be "self-documenting."
 
-Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented. 
+Provide non-technical explanations instead of cryptic error messages. If something goes wrong, a simplified explanation of what happened and how to fix it should be presented.
 
 ------------------------------------------
 
@@ -156,7 +158,7 @@ Sometimes a user will perform an action which could possibly be destructive or t
 
 * **Editing a photo**. Instead of asking the user if they want to destructively apply an edit, let them undo the edit and always keep the original backed up.
 
-This behavior should only as a last resort be implemented by providing a buffer time between when the app shows the user what happened and actually performing the action. To keep the experience responsive, the app should always look as if it performed the action as soon as the user initiates it. 
+This behavior should only as a last resort be implemented by providing a buffer time between when the app shows the user what happened and actually performing the action. To keep the experience responsive, the app should always look as if it performed the action as soon as the user initiates it.
 
 This behavior strikes the best balance of keeping out of the user's way while making sure they don't do something unintended. It's important to keep the undo action unobtrusive yet simple and intuitive; a common way of doing so is by using an info bar, though other methods may also be appropriate.
 
@@ -179,7 +181,7 @@ When a user closes an app, it's typically because they're done using it for now 
 
 Apps should save their current state when closed so they can be reopened right to where the user left off. Typically, closing and reopening an app should be indistinguishable from the legacy concept of minimizing and unminimizing an app; that is, all elements should be saved including open documents, scroll position, undo history, etc.
 
-Because of the strong convention of saved state, elementary OS does not expose or optimize for legacy minimize behavior; e.g. there is no minimize button, and the Multitasking View does not distinguish minimized windows. 
+Because of the strong convention of saved state, elementary OS does not expose or optimize for legacy minimize behavior; e.g. there is no minimize button, and the Multitasking View does not distinguish minimized windows.
 
 ### Closing the App Window {#closing-the-app-window}
 
@@ -197,7 +199,7 @@ If the user re-opens an app while a background process is still executing, the a
 
 ---
 
-See also: [That's It, We're Quitting](http://design.canonical.com/2011/03/quit/) by Matthew Paul Thomas
+See also: [That's It, We're Quitting](https://blog.ubuntu.com/2011/03/07/quit) by Matthew Paul Thomas
 
 # Desktop Integration {#desktop-integration}
 
@@ -331,7 +333,7 @@ Contractor results are typically presented to users in menu form. Keep the follo
 
 Integrate your app with the dock to communicate its status to the user at a glance.
 
-![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.png)
+![Dock](/images/docs/human-interface-guidelines/dock-integration/dock.svg)
 
 ### Progressbars {#progressbars}
 
@@ -351,7 +353,7 @@ A badge shows a count of actionable items managed by your app. Its purpose is to
 
 Indicators are small icons that live on the top panel. They give users a place to glance for quick information about the state of the system. Selecting an icon opens a small contextual menu with related actions available to the user, including a way to get the the full related system settings.
 
-![Indicators](/images/docs/human-interface-guidelines/system-indicators/systray.png)
+![Indicators](/images/docs/human-interface-guidelines/system-indicators/panel.svg)
 
 ### Does Your App Need an Indicator? {#does-your-app-need-an-indicator}
 
@@ -372,7 +374,7 @@ Indicators are designed for the system; they display information that is relevan
 ---
 
 See also:
-1. [Farewell to the Notification Area](http://design.canonical.com/2010/04/notification-area/) by Matthew Paul Thomas
+1. [Farewell to the Notification Area](https://blog.ubuntu.com/2010/04/21/notification-area) by Matthew Paul Thomas
 2. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
 
 ## Notifications {#notifications}
@@ -414,7 +416,7 @@ Windows form the foundation of your app. They provide a canvas with basic, built
 When dealing with window titles, consider that their main use is in distinguishing one window from another. A good window title will provide a description that helps a user make a selection. Keep that in mind as you consider the following:
 
 * A view window should display the name of the content being viewed. For example, a web browser's window title should reflect the title of the current web page. When looking for a specific window among multiple instances of an app, simply showing the application's name is not helpful.
-* A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available from your app's About window.
+* A window's title should not show the vendor name or version number of the app. Adding the version number or vendor name clutters the title and doesn't help to distinguish a window. Additionally, this information is already available on your app's page in AppCenter.
 * Dialogs and alerts should not display a window title. They are distinctive enough in their visual style and are often modal.
 * If you need to display more than one item in the title, separate the items with an em dash (—) with space on either side. The helps keep the title clean when you need to show more information.
 * Don’t display pathnames in window titles—only the current destination. For instance, it is hard to distinguish between two similar paths when they are displayed in full. If you only show the destination, the distinction is clear.
@@ -477,7 +479,7 @@ See also:
 
 Popovers are like a contextual dialog. They display transient content directly related to something that was clicked on and close when clicked out of, like menus.
 
-![](/images/docs/human-interface-guidelines/popovers/midori-favorites-popover.png)
+<img src="/images/docs/human-interface-guidelines/popovers/popover.png" alt="Popovers" style="max-width: 420px"/>
 
 A popover should be used when a user wants to perform a quick action without getting out of the main UI. Some examples of where a popover could be used are adding a contact from an email, adding a bookmark in a browser, or displaying downloads or file transfers.
 
@@ -505,7 +507,7 @@ Before we get into all the widgets available in elementary OS, we need to cover 
 
 A very common mistake for developers to make is creating controls that seemingly do nothing. Keep in mind that we want to present an environment where users feel comfortable exploring. A curious user will interact with a control expecting there to be some immediate reaction. When a control seemingly does nothing, this creates confusion and can be scary (Think,  "uh-oh I don't know what happened!"). In some cases, controls that do nothing are simply clutter and add unnecessary complexity to your UI.
 
-Consider the "clear" button present in [search fields](#search-fields). This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing. 
+Consider the "clear" button present in [search fields](#search-fields). This button only appears when it is relevant and needed. Clicking this button when the field is already clear essentially does nothing.
 
 ### Sensitivity {#sensitivity}
 
@@ -555,7 +557,7 @@ The Welcome Screen is a friendly way to help users get started with your app.
 
 ### Usage {#welcome-screen-usage}
 
-Typically a Welcome Screen is used for apps like Noise or Scratch where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
+Typically a Welcome Screen is used for apps like Music or Code where you have to import or create objects in a library before you can interact with them. This provides your users with a clear path to getting started and points out any immediate steps they must take before your app becomes useful.
 
 If your app lets users clear its library, make sure that it returns to the Welcome Screen instead of an empty list.
 
@@ -563,8 +565,8 @@ If your app lets users clear its library, make sure that it returns to the Welco
 
 The Welcome Screen consists of two sets of labels:
 
-* The first set explains the situation and what the Welcome Screen will help you accomplish. As an example, Noise's Welcome Screen explains that your music library is empty and that in order for the library view to become useful, we must add songs to it.
-* The second set of labels consists of the actions that will assist a user in getting started with your app. To use Noise as an example again, one possible action is setting your music folder to an alternate location. First we name the action, "Set Music Folder". Then, we describe what the action does, "Find your Music folder and import its contents."
+* The first set explains the situation and what the Welcome Screen will help you accomplish. As an example, Music's Welcome Screen explains that your music library is empty and that in order for the library view to become useful, we must import songs into our library.
+* The second set of labels consists of the actions that will assist a user in getting started with your app. To use Music as an example again, one possible action is setting your music folder to an alternate location. First we name the action, "Change Music Folder". Then, we describe what the action does, "Load music from a folder, a network or an external disk."
 
 ### Iconography {#welcome-screen-iconography}
 
@@ -588,11 +590,11 @@ Hierarchy is important with source lists, both within the widget itself and with
 
 Sections in the source list should be sorted from most important at the top to least important at the bottom. If you're having a hard time deciding the relative importance of each section, think about which section a user is likely to use more often. Sorting the sections this way ensures that the most important items are always visible, even if the source list is too short to fit all of the items, though of course items at the bottom will still be accessible via scrolling.
 
-A source list goes at the left side of a window (or right side for right-to-left languages). Because the user reads in this direction, the sidebar is reinforced as being before (and therefore at a higher level than) the app's contents. 
+A source list goes at the left side of a window (or right side for right-to-left languages). Because the user reads in this direction, the sidebar is reinforced as being before (and therefore at a higher level than) the app's contents.
 
 ## Buttons {#buttons}
 
-Buttons are an incredibly important widget to understand since your app will undoubtedly contain them. 
+Buttons are an incredibly important widget to understand since your app will undoubtedly contain them.
 
 ### Tool Buttons {#tool-buttons}
 
@@ -979,29 +981,29 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
-    <div class="color-palette-header" style="background-color:#7a36b1;">
+    <div class="color-palette-header" style="background-color:#a56de2;">
       <span>Grape</span>
-      <span>#7a36b1</span>
+      <span>#a56de2</span>
     </div>
-    <div class="color-palette-item" style="background-color:#e29ffc; color: #160038;">
+    <div class="color-palette-item" style="background-color:#e4c6fa; color: #160038;">
       <span>Grape 100</span>
-      <span>#e29ffc</span>
+      <span>#e4c6fa</span>
     </div>
-    <div class="color-palette-item" style="background-color:#ad65d6; color: #160038;">
+    <div class="color-palette-item" style="background-color:#cd9ef7; color: #160038;">
       <span>Grape 300</span>
-      <span>#ad65d6</span>
+      <span>#cd9ef7</span>
     </div>
-    <div class="color-palette-item" style="background-color:#7a36b1;">
+    <div class="color-palette-item" style="background-color:#a56de2;">
       <span>Grape 500</span>
-      <span>#7a36b1</span>
+      <span>#a56de2</span>
     </div>
-    <div class="color-palette-item" style="background-color:#4c158a;">
+    <div class="color-palette-item" style="background-color:#7239b3;">
       <span>Grape 700</span>
-      <span>#4c158a</span>
+      <span>#7239b3</span>
     </div>
-    <div class="color-palette-item" style="background-color:#260063;">
+    <div class="color-palette-item" style="background-color:#452981;">
       <span>Grape 900</span>
-      <span>#260063</span>
+      <span>#452981</span>
     </div>
   </div>
   <div class="color-palette-box">
@@ -1254,8 +1256,8 @@ Use the following rules to keep your text understandable and consistent:
 
 Don't give the user a bunch of text to read; a lengthy sentence can appear daunting and may discourage users from actually reading your messaging. Instead, provide the user with short and concise text.
 
-* **Bad**: It doesn't look like you have any music in your library. You can use Noise to organize your music, add more, and listen to the music you already have. To get started, click on the "Add" button, then follow the prompts. Once you're done, your Music will be displayed here.
-* **Better**: Get Some Tunes. Noise can't seem to find your contacts. \[Buttons to import or create contacts\]
+* **Bad**: It doesn't look like you have any music in your library. You can use Music to organize your music, add more, and listen to the music you already have. To get started, click on the "Add" button, then follow the prompts. Once you're done, your Music will be displayed here.
+* **Better**: Get Some Tunes. Music can't seem to find your contacts. \[Buttons to import or create contacts\]
 
 ### Think Simple {#think-simple}
 

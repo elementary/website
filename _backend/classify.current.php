@@ -21,4 +21,5 @@ if ( is_array($region) ) {
 }
 
 date_default_timezone_set('UTC');
-$download_link = '//'.$region.'.dl.elementary.io/download/'.base64_encode(time()).'/';
+$timecode = base64_encode(time());
+$download_link = '//'.$region.'.dl.elementary.io/download/'.$timecode.'/';

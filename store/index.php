@@ -45,7 +45,7 @@
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
-                <i class="warning fa fa-warning"></i>
+                <i class="warning fas fa-4x fa-exclamation-triangle"></i>
             </div>
             <div class="icon-text">
                 <h3>You are missing API keys</h3>
@@ -144,15 +144,10 @@
 <?php } ?>
 
 <section class="grid">
-    <div class="half">
+    <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
         <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
         <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
-    </div>
-    <div class="half">
-    <h2>Looking for Stickers?</h2>
-        <p>Unixstickers.com sells a number of elementary-branded stickers, and a portion of their purchase helps support elementary development.</p>
-        <p><a href="http://www.unixstickers.com/tag/elementaryos" target="_blank" rel="noopener" class="read-more">Shop Unixstickers</a></p>
     </div>
 </section>
 
