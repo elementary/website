@@ -209,7 +209,7 @@ limit is 120 characters.
     * Authored by: Author <author@example.com>
     */
 
-## EditorConfig
+## EditorConfig {#editorconfig}
 
 If your code editor supports [EditorConfig](https://editorconfig.org/), you can use this as a default `.editorconfig` file in your projects:
 
