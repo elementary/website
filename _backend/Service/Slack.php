@@ -45,6 +45,13 @@ class Slack
         'U9M4H3N9K', // shpurk
         'U9W6C2SJF', // Carl Richell
         'UBQ57D4LQ', // TingPing
+        'U9ECVDM9V', // mmstick
+        'U4N9FC7KN', // jeremys
+        'U7B902Y6S', // popey
+        'U7MM8V79U', // esodan
+        'U02BZA3JZ', // isantop
+        'U21C19CEN', // wimpress
+        'U2ASB5ABU', // ryansipes
     );
 
     /**
