@@ -63,13 +63,13 @@
 
     <div class="half">
         <h3>Press Kit</h3>
-        <p>Download the Loki press kit for resources around our current stable release, elementary OS 0.4.1 Loki. This includes the press release, detailed user- and developer-facing changes, high resolution screenshots, and logos.</p>
+        <p>Download the Loki press kit for resources for our current release. This includes a press release, detailed changes, and high resolution screenshots.</p>
         <a class="button" href="https://drive.google.com/drive/folders/0B_sDFLg1fuxGazY1OXFqczI3Qnc?usp=sharing" target="_blank" rel="noopener">Download Press Kit</a>
     </div>
 
     <div class="half">
         <h3>Get in Touch</h3>
-        <p>Talk directly with the team by emailing <a href="mailto:press@elementary.io">press@elementary.io</a>. We welcome requests for interviews, podcast appearances, or just general inquiries.</p>
+        <p>Talk directly with the team by emailing us at <a href="mailto:press@elementary.io">press@elementary.io</a>. We welcome requests for interviews, podcast appearances, or just general press inquiries.</p>
     <a class="button" href="mailto:press@elementary.io">Send an Email</a>
     </div>
 </div>
