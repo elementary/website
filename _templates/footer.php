@@ -30,6 +30,7 @@
                 </div>
             </div>
             <ul>
+                <li><a href="<?php echo $sitewide['root'].'press'; ?>">Press</a></li>
                 <li><a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a></li>
                 <li><a href="<?php echo $sitewide['root'].'privacy-policy'; ?>">Privacy Policy</a></li>
                 <li><a href="<?php echo $sitewide['root'].'team'; ?>">Team</a></li>
