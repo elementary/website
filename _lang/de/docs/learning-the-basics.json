@@ -5,7 +5,7 @@
     "The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through <strong><a href=\"\/docs\/learning-the-basics#system-settings\">System Settings<\/a><\/strong> → <strong>Desktop<\/strong> → <strong>Wallpaper<\/strong>.": "Der elementary OS Desktop ist sehr einfach und leicht zu erlernen. Er besteht aus zwei Elementen: das Panel und das Dock. Du kannst den Desktop-Hintergrund durch <strong><a href=\"\/docs\/learning-the-basics#system-settings\">Systemeinstellungen<\/a><\/strong> → <strong>Desktop<\/strong> → <strong>Hintergrund<\/strong> anpassen.",
     "The Panel": "Das Panel",
     "At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.": "",
-    "Applications Menu": "App Menü",
+    "Applications Menu": "App-Menü",
     "On the left side of the panel is the Applications Menu. Selecting <strong>Applications<\/strong> opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "",
     "You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:": "Du kannst Apps anhand des Namens oder mit Stichworten suchen und Befehle ausführen, die mit ihnen verknüpft sind. Du kannst auch nach Systemeinstellungen suchen. Zu den Befehlen, die Du mit der Suche finden kannst, gehören:",
     "Shutdown and Restart": "Herunterfahren und Neustarten",

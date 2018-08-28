@@ -20,10 +20,7 @@ class Slack
         'USLACKBOT', // slackbot
         'U0299PY5U', // David Gomes (Fix title!)
         'U0299C8QT', // teemperor (Fix title!)
-        'U02RCLE6C', // Gero (Remove "Elementary" from title)
         'U028XTDHM', // Kiran (inactive)
-        'U02AEMYH1', // Tom (inactive)
-        'U02AENUA1', // Mario (inactive)
     );
 
     /**
@@ -44,6 +41,17 @@ class Slack
         'U1DTKMUK1', // jancborchardt
         'U1E0QSPB2', // mhall119
         'U0886H1TM', // robert.ancell
+        'U9VND281F', // sarahpandabeara
+        'U9M4H3N9K', // shpurk
+        'U9W6C2SJF', // Carl Richell
+        'UBQ57D4LQ', // TingPing
+        'U9ECVDM9V', // mmstick
+        'U4N9FC7KN', // jeremys
+        'U7B902Y6S', // popey
+        'U7MM8V79U', // esodan
+        'U02BZA3JZ', // isantop
+        'U21C19CEN', // wimpress
+        'U2ASB5ABU', // ryansipes
     );
 
     /**

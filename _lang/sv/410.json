@@ -1,6 +1,6 @@
 {
     "Whoops! That link has expired.": "Hoppsan! Länkens giltighetstid har löpt ut.",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">file an issue on our GitHub<\/a>.": "",
-    "Go to Home Page": "Gå till Hemsidan",
-    "Download Link Expired &sdot; elementary": ""
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">file an issue on our GitHub<\/a>.": "Om du vill ladda ner elementary OS, vänligen gå till startsidan. Om du letade efter något annat kan du <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">rapportera eventuella problem på GitHub<\/a>.",
+    "Go to Home Page": "Gå till startsidan",
+    "Download Link Expired &sdot; elementary": "Nedladdningslänken har utgått &sdot; elementary"
 }

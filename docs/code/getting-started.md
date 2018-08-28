@@ -20,7 +20,7 @@ Before we even think about writing code, you'll need a certain basic setup. This
 * Setting up the Git revision control system
 * Getting and using the elementary developer "SDK"
 
-We’re going to assume that you’re working from a clean installation of elementary OS Loki or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
+We’re going to assume that you’re working from a clean installation of elementary OS Juno Beta or later. This is important as the instructions you’re given may reference apps that are not present (or even available) in other GNU/Linux based operating systems like Ubuntu. It is possible to apply the principles of this guide to Ubuntu development, but it may be more difficult to follow along.
 
 ## GitHub {#github}
 
@@ -45,7 +45,7 @@ If you're ready, let's get you set up to use Git:
     git config --global user.name "Your Name"
     git config --global user.email "You@email.com"
     ```
-    
+
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair (a kind of fingerprint for your computer) and import your public key to GitHub. Type the following in Terminal:
 
     ```bash
@@ -66,11 +66,11 @@ We're all done! Now you can download source code hosted on GitHub and upload you
 
 At the time of this writing, elementary OS doesn't have a full SDK like Android or iOS. But luckily, we only need a couple simple apps to get started writing code.
 
-### Scratch {#scratch}
+### Code {#code}
 
-![](images/icons/apps/128/accessories-text-editor.svg)
+![](images/thirdparty-icons/apps/128/io.elementary.code.svg)
 
-The first piece of our simple "SDK" is the code editor Scratch. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and the Folder Manager extension. There are other extensions for Scratch as well, like the Outline, Terminal or Devhelp extensions. Play around with what works best for you.
+The first piece of our simple "SDK" is Code. This comes by default with elementary OS. It comes with some helpful features like syntax highlighting, auto-save, and a Folder Manager. There are other extensions for Code as well, like the Outline, Terminal, Word Completion, or Devhelp extensions. Play around with what works best for you.
 
 ### Terminal {#terminal}
 
@@ -101,6 +101,7 @@ And with that, we're ready to dive into development! Let's move on!
 The first app we’ll create will be a basic and generic “Hello World”. We’ll walk through the steps of creating folders to store our source code, compiling our first app, and pushing the project to a Git branch. Let’s begin.
 
 ## Setting Up {#setting-up}
+
 Apps on elementary OS are organized into standardized directories contained in your project's "root" folder. Let's create a couple of these to get started:
 
 1. Create your root folder called "gtk-hello"
@@ -109,11 +110,12 @@ Apps on elementary OS are organized into standardized directories contained in y
 Later on, We'll talk about adding other directories like "po" and "data". For now, this is all we need.
 
 ## Gtk.Application {#gtk-application}
+
 Now what you've been waiting for! We're going to create a window that contains a button. When pressed, the button will display the text "Hello World!" To do this, we're going to use a widget toolkit called GTK+ and the programming language Vala. Before we begin, we highly recommend that you do not copy and paste. Typing each section manually will help you to practice and remember. Let's get started:
 
-1. Create a new file in Scratch and save it as "gtk-hello.vala" inside your "src" folder
+1. Create a new file in Code and save it as "Application.vala" inside your "src" folder
 
-2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "gtk-hello.vala".
+2. First we create a special class called a `Gtk.Application`. `Gtk.Application` is a class that handles many important aspects of a Gtk+ app like uniqueness and the ID you need to identify your app to the notifications server. If you want some more details about `Gtk.Application`, [check out Valadoc](https://valadoc.org/gtk+-3.0/Gtk.Application). For now, type the following in your "Application.vala".
 
         public class MyApp : Gtk.Application {
 
@@ -137,14 +139,14 @@ Now what you've been waiting for! We're going to create a window that contains a
                 return app.run (args);
             }
         }
-        
-    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
-        
+
+    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The fourth line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
+
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
     ```bash
-    valac --pkg gtk+-3.0 gtk-hello.vala
-    ./gtk-hello
+    valac --pkg gtk+-3.0 Application.vala
+    ./Application
     ```
 
     Do you see a new, empty window called "Hello World"? If so, congratulations! If not, read over your source code again and look for errors. Also check the output of your terminal. Usually there is helpful output that will help you track down your mistake.
@@ -157,13 +159,13 @@ Now what you've been waiting for! We're going to create a window that contains a
             button_hello.label = "Hello World!";
             button_hello.sensitive = false;
         });
-        
+
     Then add this line right before `main_window.show_all ()`:
 
         main_window.add (button_hello);
 
     Any ideas about what happened here? We've created a new `Gtk.Button` with the label "Click me!". Then we add a margin to the button so that it doesn't bump up against the sides of the window. We've said that if this button is clicked, we want to change the label to say "Hello World!" instead. We've also said that we want to make the button insensitive after it's clicked; We do this because clicking the button again has no visible effect. Finally, we add the button to our `Gtk.ApplicationWindow` and declare that we want to show all of the window's contents.
-    
+
     Compile and run your application one more time and test it out. Nice job! You've just written your first Gtk+ app!
 
 ## Pushing to GitHub {#pushing-to-github}
@@ -176,7 +178,7 @@ After we do anything significant, we must remember to push our code. This is esp
 
 ```bash
 git init
-git add src/gtk-hello.vala
+git add src/Application.vala
 git commit -m "Create initial structure. Create window with button."
 git remote add origin git@github.com:yourusername/yourrepositoryname.git
 git push -u origin master
@@ -184,7 +186,7 @@ git push -u origin master
 
 Remember to replace `yourusername` with your GitHub username and `yourrepositoryname` with the name of the new repository you created.
 
-With these commands, we've told `git` to track revisions in this folder, that we'd like to track revisions on the file "gtk-hello.vala" specifically, we've committed our first revision and explained what we did in the revision, and then we've told `git` to push your code to GitHub.
+With these commands, we've told `git` to track revisions in this folder, that we'd like to track revisions on the file "Application.vala" specifically, we've committed our first revision and explained what we did in the revision, and then we've told `git` to push your code to GitHub.
 
 ## Victory! {#victory}
 
@@ -211,15 +213,13 @@ In the previous chapter, we created a simple "Hello World!" app to show off our 
 
 To create our first real app, we're going to need all the old stuff that we used in the last example. But don't just copy and paste! Let's take this time to practice our skills and see if we can recreate the last example from memory. Additionally, now that you have the basics, we're going to get a little more complex and a little more organized:
 
-1. Create a new folder in "~/Projects" called "hello-world" and put our last project in that folder. Now create a new folder inside "~/Projects/hello-world" called "hello-again". We're doing this because our first "gtk-hello" and "hello-again" are two branches of the same "hello-world" project. As you get more into collaborative development, you're going to have lots of branches. This method will help you stay organized.
+1. Create a new folder inside "~/Projects" called "hello-again".Then, go into "hello-again" and create our directory structure including the "src" folder.
 
-2. Now go into "hello-again" and create our directory structure including the "src" folder.
+2. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
-3. Create "hello-again.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
+3. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
-4. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
-
-5. For the sake of time let's just put a `Gtk.Label` instead of a `Gtk.Button`. We don't need to try to make the label do anything when you click it.
+4. For the sake of time let's just put a `Gtk.Label` instead of a `Gtk.Button`. We don't need to try to make the label do anything when you click it.
 
         var label = new Gtk.Label ("Hello Again World!");
 
@@ -228,9 +228,9 @@ To create our first real app, we're going to need all the old stuff that we used
         main_window.add (label);
         main_window.show_all ();
 
-6. Build "hello-again.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
+5. Build "Application.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
-7. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
+6. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
 
     ```bash
     git remote add origin git@github.com:yourusername/yourrepositoryname.git
@@ -245,7 +245,7 @@ Every app comes with a .desktop file. This file contains all the information nee
 
 1. In your project's root, create a new folder called "data".
 
-2. Create a new file in Scratch and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
+2. Create a new file in Code and save it in the "data" folder as "com.github.yourusername.yourrepositoryname.desktop". This naming scheme is called [Reverse Domain Name Notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) and will ensure that your .desktop file has a unique file name.
 
 3. Type the following into your .desktop file. Like before, try to guess what each line does.
 
@@ -258,7 +258,6 @@ Every app comes with a .desktop file. This file contains all the information nee
         Icon=application-default-icon
         Terminal=false
         Type=Application
-        X-GNOME-Gettext-Domain=hello-again
         Keywords=Hello;World;Example;
 
     The first line declares that this file is a "Desktop Entry" file. The next three lines are descriptions of our app: The branded name of our app, a generic name for our app, and a comment that describes our app's function. Next, we categorize our app. Then, we say what command will execute it. Finally, we give our app an icon (a generic one included in elementary OS) and let the OS know that this isn't a command line app. For more info about crafting .desktop files, check out [this HIG entry](/docs/human-interface-guidelines#app-launchers).
@@ -282,7 +281,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
         <?xml version="1.0" encoding="UTF-8"?>
         <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
-          <id>com.github.yourusername.yourrepositoryname.desktop</id>
+          <id>com.github.yourusername.yourrepositoryname</id>
           <metadata_license>CC0</metadata_license>
           <name>Your App's Name</name>
           <summary>A Catchy Tagline</summary>
@@ -290,7 +289,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
             <p>A quick summary of your app's main selling points and features. Just a couple sentences per paragraph is best.</p>
           </description>
         </component>
-        
+
 These are all the mandatory fields for displaying your app in AppCenter. There are plenty of other optional fields that you can read about [here](https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html).
 
 There are also some special custom fields for AppCenter to further brand your listing. Specifically, you can set a background color and a text color for your app's header and banner. You can do so by adding the following keys inside the `component` tag:
@@ -319,110 +318,76 @@ Now that we've got all these swanky files laying around, we need a way to tell t
 
 # The Build System {#the-build-system}
 
-The next thing we need is a build system. The build system that we're going to be using is called [CMake](https://cmake.org/). We already installed the `cmake` program at the beginning of this book when we installed the Development Libraries. What we're going to do in this step is create the files that tell CMake how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop file and the binary app that results from the build process.
+The next thing we need is a build system. The build system that we're going to be using is called [Meson](http://mesonbuild.com/). We already installed the `meson` program at the beginning of this book when we installed `elementary-sdk`. What we're going to do in this step is create the files that tell Meson how to install your program. This includes all the rules for building your source code as well as correctly installing your .desktop and appdata files and the binary app that results from the build process.
 
-Create a new file in your project's root folder called "CMakeLists.txt". Since this file is a bit long, we've included some comments along the way to explain each section. You don't have to copy those, but type the rest into that file:
+Create a new file in your project's root folder called "meson.build". We've included some comments along the way to explain what each section does. You don't have to copy those, but type the rest into that file:
 
-        # project name
-        project (com.github.yourusername.yourrepositoryname)
+        # project name and programming language
+        project('com.github.yourusername.yourrepositoryname', 'vala', 'c')
 
-        # the oldest stable cmake version we support
-        cmake_minimum_required (VERSION 2.6)
-
-        # tell cmake where its modules can be found in our project directory
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
-        list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
-
-        # where we install data directory (if we have any)
-        set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-
-        # what to call that directory where we install data too
-        set (PKGDATADIR "${DATADIR}/com.github.yourusername.yourrepositoryname")
-
-        set (EXEC_NAME "com.github.yourusername.yourrepositoryname")
-        set (RELEASE_NAME "A hello world.")
-        set (VERSION "0.1")
-        set (VERSION_INFO "whats up world")
-
-        # we're about to use pkgconfig to make sure dependencies are installed so let's find pkgconfig first
-        find_package(PkgConfig)
-
-        # now let's actually check for the required dependencies
-        pkg_check_modules(DEPS REQUIRED gtk+-3.0)
-
-        add_definitions(${DEPS_CFLAGS})
-        link_libraries(${DEPS_LIBRARIES})
-        link_directories(${DEPS_LIBRARY_DIRS})
-
-        # make sure we have vala
-        find_package(Vala REQUIRED)
-        # make sure we use vala
-        include(ValaVersion)
-        # make sure it's the desired version of vala
-        ensure_vala_version("0.16" MINIMUM)
-
-        # files we want to compile
-        include(ValaPrecompile)
-        vala_precompile(VALA_C ${EXEC_NAME}
-            src/hello-again.vala
-
-        # tell what libraries to use when compiling
-        PACKAGES
-            gtk+-3.0
+        # Create a new executable, list the files we want to compile, list the dependencies we need, and install
+        executable(
+            meson.project_name(),
+            'src/Application.vala',
+            dependencies: [
+                dependency('gtk+-3.0')
+            ],
+            install: true
         )
 
-        # tell cmake what to call the executable we just made
-        add_executable(${EXEC_NAME} ${VALA_C})
+        #Install our .desktop file so the Applications Menu will see it
+        install_data(
+            join_paths('data', meson.project_name() + '.desktop'),
+            install_dir: join_paths(get_option('datadir'), 'applications')
+        )
 
-        # install the binaries we just made
-        install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
-
-        # install our .desktop file so the Applications Menu will see it
-        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.desktop DESTINATION ${DATADIR}/applications/)
-        
-        # install our .appdata.xml file so AppCenter will see it
-        install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.yourusername.yourrepositoryname.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+        #Install our .appdata.xml file so AppCenter will see it
+        install_data(
+            join_paths('data', meson.project_name() + '.appdata.xml'),
+            install_dir: join_paths(get_option('datadir'), 'metainfo')
+        )
 
 And you're done! Your app now has a real build system. Don't forget to add these files to `git` and push to GitHub. This is a major milestone in your app's development!
 
-## Building and Installing with CMake {#building-and-installing-with-cmake}
+## Building and Installing with Meson {#building-and-installing-with-meson}
 
 Now that we have a build system, let's try it out:
 
-1. Create a new folder in your project's root folder called "build"
-
-2. Change into this directory in terminal and execute the following command:
+1. Configure the build directory using Meson:
 
     ```bash
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+    meson build --prefix=/usr
     ```
 
-    This command tells cmake to get ready to build our app using the prefix "/usr". The `cmake` command defaults to installing our app locally, but we want to install our app for all users on the computer.
+    This command tells Meson to get ready to build our app using the prefix "/usr" and that we want to build our app in a clean directory called "build". The `meson` command defaults to installing our app locally, but we want to install our app for all users on the computer.
 
-3. Build your app with `make` and if successful install it with `sudo make install`:
+2. Change into the build directory and use `ninja` to build. Then, if the build is successful, install with `sudo ninja install`:
 
     ```bash
-    make
-    sudo make install
+    cd build
+    ninja
+    sudo ninja install
     ```
 
 If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
 
-We'll revisit CMake again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore CMake a little more on your own, you can always check out [CMake's documentation](https://cmake.org/documentation/).
+We'll revisit Meson again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore Meson a little more on your own, you can always check out [Meson's documentation](http://mesonbuild.com/Manual.html).
 
 ## Review {#the-build-system-review}
+
 Let's review all we've learned to do:
 
 * Create a new Gtk app using `Gtk.Window`, `Gtk.Button`, and `Gtk.Label`
 * Keep our projects organized into branches
 * License our app under the GPL and declare our app's authors in a standardized manner
 * Create a .desktop file using RDNN that tells the computer how to display our app in the Applications Menu and the Dock
-* Set up a CMake build system that contains all the rules for building our app and installing it cleanly
+* Set up a Meson build system that contains all the rules for building our app and installing it cleanly
 
-That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Packaging.
+That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Translations.
 
 # Adding Translations {#Adding-Translations}
-Now that you've learned about CMake, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
+
+Now that you've learned about Meson, the next step is to make your app able to be translated to different languages. The first thing you need to know is how to convert strings in your code into translatable strings. Here's an example:
 
         stdout.printf ("Not Translatable string");
         stdout.printf (_("Translatable string!"));
@@ -430,41 +395,95 @@ Now that you've learned about CMake, the next step is to make your app able to b
         string normal = "Another non-translatable string";
         string translated = _("Another translatable string");
 
-See the difference? We just added `_()` around the string! Well, that was easy!
+See the difference? We just added `_()` around the string! Well, that was easy! Go back to your project and make all your strings translatable by adding `_()`.
 
-1. Go back to your project and make all your strings translatable by adding `_()`
+Now we have to make some changes to our Meson build system and add a couple new files to describe which files we want to translate and which languages we want to translate into.
 
-2. Add the following lines in the "CMakeLists.txt" file you created a moment ago:
+1. Open up your "meson.build" file and add these lines below your project declaration:
 
-        # Translation files
-        set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
-        add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
-        add_subdirectory (po)
+        # Include the translations module
+        i18n = import('i18n')
 
-3. Create a directory named "po" on the root folder of your project. Inside of your po directory you will need to create another CMakeLists.txt file. This time, it's contents will be:
+        # Set our translation domain
+        add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
-        include (Translations)
-            add_translations_directory(${GETTEXT_PACKAGE})
-            add_translations_catalog(${GETTEXT_PACKAGE}
-            ../src/
+2. Remove the lines that install your .desktop and appdata files and replace them with the following:
+
+        #Translate and install our .desktop file
+        i18n.merge_file(
+            input: join_paths('data', meson.project_name() + '.desktop.in'),
+            output: meson.project_name() + '.desktop',
+            po_dir: join_paths(meson.source_root(), 'po'),
+            type: 'desktop',
+            install: true,
+            install_dir: join_paths(get_option('datadir'), 'applications')
         )
 
-4. On your build directory execute the following commands:
+        #Translate and install our .appdata file
+        i18n.merge_file(
+            input: join_paths('data', meson.project_name() + '.appdata.xml.in'),
+            output: meson.project_name() + '.appdata.xml',
+            po_dir: join_paths(meson.source_root(), 'po'),
+            install: true,
+            install_dir: join_paths(get_option('datadir'), 'metainfo')
+        )
+
+    The `merge_file` method combines translating and installing files, similarly to how the `executable` method combines building and installing your app.
+
+3. Still in this file, add the following as the last line:
+
+        subdir('po')
+
+4. You might have noticed in step 2 that the `merge_file` method has an `input` and `output`. We're going to append the additional extension `.in` to our .desktop and .appdata.xml files so that this method can take the untranslated files and produce translated files with the correct names.
 
     ```bash
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
-    make pot
+    git mv data/com.github.yourusername.yourrepositoryname.desktop data/com.github.yourusername.yourrepositoryname.desktop.in
+    git mv data/com.github.yourusername.yourrepositoryname.appdata.xml data/com.github.yourusername.yourrepositoryname.appdata.xml.in
     ```
 
-5. Don't forget to add this new directory and it's contents to git
+   We use the `git mv` command here instead of renaming in the file manager or with `mv` so that `git` can keep track of the file rename as part of our revision history.
+
+5. Now, Create a directory named "po" in the root folder of your project. Inside of your po directory you will need to create another "meson.build" file. This time, its contents will be:
+
+        i18n.gettext(meson.project_name(),
+          args: [
+            '--directory=' + meson.source_root(),
+            '--from-code=UTF-8'
+          ]
+        )
+
+6. Inside of "po" create another file called "POTFILES" that will contain paths to all of the files you want to translate. For us, this looks like:
+
+        src/Application.vala
+        data/com.github.yourusername.yourrepositoryname.desktop.in
+        data/com.github.yourusername.yourrepositoryname.appdata.xml.in
+
+7. We have one more file to create in the "po" directory. This file will be named "LINGUAS" and it should contain the two-letter language codes for all languages you want to provide translations for. As an example, let's add German and Spanish
+
+        de
+        es
+
+8. Now it's time to go back to your build directory and generate some new files! The first one is our translation template or `.pot` file:
+
+        ninja com.github.yourusername.yourrepositoryname-pot
+
+    After running this command you should notice a new file in the po directory containing all of the translatable strings for your app.
+
+9. Now we can use this template file to generate translation files for each of the languages we listed in the LINGUAS file with the following command:
+
+        ninja com.github.yourusername.yourrepositoryname-update-po
+
+    You should notice two new files in your po directory called `de.po` and `es.po`. These files are now ready for translaters to localize your app!
+
+10. Last step. Don't forget to add all of the new files we created in the po directory to git:
 
     ```bash
-    git add po/
-    git commit -am "Add translation files"
+    git add src/Application.vala meson.build po/ data/
+    git commit -am "Add translations"
     git push
     ```
 
-That's it! CMake will automatically add all the string marked with `_()` into a .pot template file, and a file for each available language where you'll place the translatable strings.
+That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones, you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from the previous two steps. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
 
 # Packaging {#packaging}
 
@@ -476,8 +495,8 @@ If you want to get really good really fast, you're going to want to practice. Re
 
 1. Create a new branch folder "hello-packaging"
 2. Set up our directory structure including the "src" and "data" folders.
-3. Add your Authors, Copying, .desktop, and source code.
-4. Now set up the CMake build system.
+3. Add your Copying, .desktop, .appdata.xml, and source code.
+4. Now set up the Meson build system and translations.
 5. Test everything!
 
 Did you commit and push to GitHub for each step? Keep up these good habits and let's get to packaging this app!
@@ -486,7 +505,7 @@ Did you commit and push to GitHub for each step? Keep up these good habits and l
 
 Now it's time to create the rules that will allow your app to be built as a .deb package. Let's dive right in:
 
-1. Like CMake, elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
+1. elementary maintains a simple version of the "debian" folder that contains all the files we need for packaging. Let's grab a copy of that with `git`:
 
     ```bash
     git clone git@github.com:elementary/debian-template.git
@@ -494,15 +513,15 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
 2. Copy the "debian" folder from that branch into your "hello-packaging" folder.
 
-3. Open the file called "changelog" and make it look like below:
+3. Use the tool `dch -i` to update your changelog. It should automatically generate something like below:
 
-        hello-packaging (0.1) precise; urgency=low
+        com.github.yourusername.yourrepositoryname (0.1) bionic; urgency=medium
 
           * Initial Release.
 
-         -- Your Name <you@emailaddress.com>  Tue, 9 Apr 2013 04:53:39 -0500
+         -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2018 04:53:39 -0500
 
-     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. Remember that your app's binary name is lowercase and does not contain spaces. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](http://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog).
+     The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](https://www.debian.org/doc/debian-policy/#document-ch-source).
 
 4. Open the file called "control" and make it look like below:
 
@@ -510,17 +529,18 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Section: x11
         Priority: extra
         Maintainer: Your Name <you@emailaddress.com>
-        Build-Depends: cmake (>= 2.8),
-                       cmake-elementary,
-                       debhelper (>= 8.0.0),
-                       valac-0.26 | valac (>= 0.26)
-        Standards-Version: 3.9.3
+        Build-Depends: debhelper (>= 10.5.1),
+                       gettext,
+                       libgtk-3-dev (>= 3.10),
+                       meson,
+                       valac (>= 0.28.0)
+        Standards-Version: 4.1.1
 
         Package: com.github.yourusername.yourrepositoryname
         Architecture: any
         Depends: ${misc:Depends}, ${shlibs:Depends}
         Description: Hey young world
-         This is a Hello World written in Vala using CMake build system.
+         This is a Hello World written in Vala using Meson build system.
 
 5. Open the file called "copyright". We only need to edit what's up top:
 
@@ -528,15 +548,19 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Upstream-Name: hello-packaging
         Source: https://github.com/yourusername/yourrepositoryname
 
-        Files: src/* data/* cmake/* debian/*
-        Copyright: 2013 Your Name <you@emailaddress.com>
+        Files: src/* data/* debian/*
+        Copyright: 2018 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
 That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
+Note that Debian packaging is _very_ picky about whitespace, so if you're running into errors, make sure you're not adding, changing, or removing whitespace from the original template files.
+
+If you're packaging your app for elementary OS 0.4 Loki, you will also need to update the "rules" file to work with Meson. You can see an example [here](https://github.com/cassidyjames/principles/blob/ef84ed129bdeaec613b0c457c766cb9aa9ac1bfb/debian/rules). If you are targeting elementary OS 5.0 Juno or newer, this is not necessary.
+
 # Creating Layouts {#creating-layouts}
 
-Now that you know how to code, build, and package an app using Vala, Gtk, CMake, and Debian packaging, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
+Now that you know how to code, build, and package an app using Vala, Gtk, Meson, and Debian packaging, it’s time to learn a little bit more about how to build out your app into something really useful. The first thing we need to learn is how to lay out widgets in our window. But we have a fundamental problem: We can only add one widget (one “child”) to `Gtk.Window`. So how do we get around that to create complex layouts in a Window? We have to add a widget that can contain multiple children. One of those widgets is `Gtk.Grid`.
 
 ## Widgets as Subclasses of Other Widgets {#widgets-as-subclasses-of-other-widgets}
 
@@ -546,7 +570,7 @@ If you want to understand more about these widgets and the parts of Gtk that the
 
 ## Gtk.Grid {#gtk-grid}
 
-Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with CMake, push it to GitHub, and set up Debian Packaging in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
+Now that we’ve gotten that out of the way, let’s get back to our Window and `Gtk.Grid`. Since you’re a master developer now, you can probably set up a new project complete with Meson, push it to GitHub, and set up Debian Packaging in your sleep. If you want the practice, go ahead and do all of that again. Otherwise, it’s probably convenient for our testing purposes to just play around locally and build from Terminal. So code up a nice `Gtk.Window` without anything in it and make sure that builds. Ready? Let’s add a Grid.
 
 Just like when we add a Button or Label, we need to create our `Gtk.Grid`. As always, don’t copy and paste! Practice makes perfect. We create a new Gtk.Grid like this:
 
@@ -576,7 +600,7 @@ Let’s create a Window with a vertical Grid that contains a Button and a Label:
     grid.orientation = Gtk.Orientation.VERTICAL;
     grid.row_spacing = 6;
 
-    var button = new Gtk.Button.with_label ("Click me!");
+    var button = new Gtk.Button.with_label (_("Click me!"));
     var label = new Gtk.Label (null);
 
     grid.add (button);
@@ -656,17 +680,20 @@ Let’s recap what we learned in this section:
 Now that you understand more about Gtk, Grids, and using Buttons to alter the properties of other widgets, try packing other kinds of widgets into a window like a Toolbar and changing other properties of [Labels](https://valadoc.org/gtk+-3.0/Gtk.Label) like `width_chars` and `ellipsize`. Don’t forget to play around with the attach method and widgets that span across multiple rows and columns. Remember that Valadoc is super helpful for learning more about the methods and properties associated with widgets.
 
 # Notifications {#notifications}
+
 By now you've probably already seen the white notification bubbles that appear on the top right of the screen. Notifications are a simple way to notify a user about the state of your app. For example, they can inform the user that a long process has been completed or a new message has arrived. In this section we are going to show you just how to get them to work in your app. Let's begin by making a new project!
 
 ## Making Preparations {#making-preparations}
+
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
-2. Create a file inside called ```notify-app.vala ```
-3. Create a `CMakeLists.txt` file. If you don't remember how to set up CMake, go back to the [previous section](#building-and-installing-with-cmake) and review.
+2. Create a new folder inside of that folder called "src" and add a file inside of it called ```Application.vala ```
+3. Create a `meson.build` file. If you don't remember how to set up Meson, go back to the [previous section](#building-and-installing-with-meson) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 
 When using notifications, it's important that your desktop file has the same name as your application's ID. This is because elementary OS uses desktop files to find extra information about the app who sends the notification such as a default icon, or the name of the app. If you don't have a desktop file whose name matches the application id, your notification might not be displayed. To keep things simple, we'll be using the same RDNN everywhere.
 
 ## Yet Another Application {#yet-another-application}
+
 In order to display notifications, you're going to need another `Gtk.Application` with a `Gtk.ApplicationWindow`. Remember what we learned in the last few sections and set up a new `Gtk.Application`!
 
 Now that we have a simple window, let's use what we learned in [creating layouts](#gtk-grid) and make a grid containing one button that will show a notification.
@@ -688,8 +715,8 @@ In between `var main_window...` and `main_window.show ();`, write the folowing l
 
 Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
 
-
 ## Sending Notifications {#sending-notifications}
+
 Now that we have a Gtk.Application we can send notifications. Let's connect a function to the button we created and use it to send a notification:
 
     show_button.clicked.connect (() => {
@@ -701,9 +728,11 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
 Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
 
 ## Additional Features {#Additional-features}
+
 Now that you know how to send basic notifications, let's talk about a couple of ways to make your notifications better. Notifications are most useful when users can identify where they came from and they contain relevant information. In order to make sure your notifications are useful, there are three important features you should know about: setting an icon, replacing a notification, and setting priority.
 
 ### Icons {#icons}
+
 In order to make sure users can easily recognize a notification, we should set a relevant icon. Right after the `var notification = New Notification` line, add:
 
 	var icon = new GLib.ThemedIcon ("dialog-warning");
@@ -712,6 +741,7 @@ In order to make sure users can easily recognize a notification, we should set a
 That's it. Compile your app again, and press the "Send" button. As you can see, the notification now has an icon. Using this method, you can set the icon to anything you'd like. You can use ```gtk3-icon-browser``` to see what system icons are available.
 
 ### Replace {#replace}
+
 We now know how to send a notification, but what if you need to update it with new information? Thanks to the notification ID, we can easily replace a notification. The notification ID should be the same as the app ID that we set in `Gtk.Application`.
 
 Let's make the replace button. This button will replace the current notification with one with different information. Let's create a new button for it, and add it to the grid:
@@ -742,6 +772,7 @@ Now, let's do the withdraw button:
 Very easy right? Let's compile and run your app again. Click on the buttons, first on "Show", then "Replace". See how the text on your notification changes without making a new one appear?
 
 ### Priority  {#priority}
+
 Notifications also have priority. When a notification is set as `URGENT` it will stay on the screen until either the user interacts with it, or you withdraw it. To make an urgent notification, add the following line before the `this.send_notification ()` function
 
 	notification.set_priority (NotificationPriority.URGENT);
@@ -749,6 +780,7 @@ Notifications also have priority. When a notification is set as `URGENT` it will
 `URGENT` notifications should really only be used on the most extreme cases. There are also [other notification priorities](https://valadoc.org/gio-2.0/GLib.NotificationPriority).
 
 ## Review {#notifications-review}
+
 Let's review what all we've learned:
 
 - We learned what `Gtk.Application` is and how to make a subclass of it.
@@ -761,7 +793,7 @@ As you could see, sending notifications is very easy thanks to `Gtk.Application`
 
 Applications can show additional information in the dock as well as
 the application menu. This makes the application feel more integrated into the
-system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/pl/docs/human-interface-guidelines#dock-integration)
+system and give user it's status at a glance. See [HIG for Dock integration](https://elementary.io/docs/human-interface-guidelines#dock-integration)
 for what you should do and what you shouldn't.
 
 For this integration you can use [Unity's Launcher API](https://valadoc.org/unity/Unity.LauncherEntry.html).
@@ -778,34 +810,29 @@ Current Launcher API support:
 | Dock             | Yes              | Yes             | Yes                 | Yes               |
 
 ## Setting Up {#system-integration-setting-up}
-Before writing the code, you must first install the `libunity` library, you can do it by executing
-the following command in your terminal:
+
+Before writing the code, you must first install the `libunity` library, you can do it by executing the following command in Terminal:
+
 ```
 sudo apt install libunity-dev
 ```
 
-Now it is time to incorporate the Unity library into your project.
-To your build system add an additional `unity` package to your `vala_precompile` CMake call:
+Now let's add the Unity library to your build system. Open your meson.build file and add the new dependency to the `executable` method.
 
-  ```
-  vala_precompile (my_project
-        Application.vala
-        ...
-        PACKAGES
-        unity
-        ...
-  )
-  ```
+        executable(
+            meson.project_name(),
+            'src/Application.vala',
+            dependencies: [
+                dependency('gtk+-3.0'),
+                dependency('unity')
+            ],
+            install: true
+        )
 
-  and to the `pkg_check_modules` call as well:
-  ```
-  pkg_check_modules (DEPS REQUIRED ... unity)
-  ```
-
-  After that you can clear your build directory and build your project again, there
-  should be no errors when building.
+  Though we haven't made any changes to our source code yet, change into your build directory and run `ninja` to build your project. It should still build without any errors. If you do encounter errors, double check your changes and resolve them before continuing.
 
 ## Using the Launcher API {#using-launcher-api}
+
 Once you've set up `libunity` in your build system it's time to write some code.
 
 The first thing you'll need to use the API is your application desktop ID.
@@ -837,6 +864,7 @@ entry.progress = 0.2f;
 As you can see the type of `progress` property is `double` and is a range between `0` and `1`: from 0% to 100%.
 
 ## Dynamic Quicklists {#dynamic-quicklists}
+
 Dynamic quicklists are a way to provide the user with dynamic quick menu entries to access some kind of
 feature in your app. These are shown e.g: right-clicking an open instance of the settings app in the dock. Note that dynamic menu entries can be only provided by a **running** application or processes. **If you always want to expose quick actions in e.g: the Applications Menu**, see [Static Quicklists](#static-quicklists).
 
@@ -868,6 +896,7 @@ entry.quicklist = quicklist;
 Please see the [Dbusmenu.Menuitem API](https://valadoc.org/dbusmenu-glib-0.4/Dbusmenu.Menuitem.html) for more details and features.
 
 ## Static Quicklists {#static-quicklists}
+
 The main difference between dynamic and static quicklists is that static ones cannot be changed at runtime. Static quicklists do not involve writing any code or using any external dependencies.
 
 Static quicklists are stored within your `.desktop` file. These are so called "actions".
@@ -901,3 +930,4 @@ Please take a look at a [freedesktop.org Additional applications actions section
 detailed description of what keys are supported and what they do.
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
+

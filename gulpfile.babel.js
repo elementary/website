@@ -70,6 +70,24 @@ gulp.task('jpg', () => {
 })
 
 /**
+ * gif
+ * Optimizes gif images
+ *
+ * @returns {Task} - a gulp task for gif images
+ */
+gulp.task('gif', () => {
+    const base = '_images'
+    const src = ['_images/**/*.gif', '_images/**/*.gif']
+    const dest = 'images'
+
+    return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('gif'))
+    .pipe(imagemin())
+    .pipe(gulp.dest(dest))
+})
+
+/**
  * svg
  * Optimizes svg image outputs with svgo
  *
@@ -143,7 +161,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg'))
+gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg', 'gif'))
 
 /**
  * styles
