@@ -316,7 +316,7 @@ See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop
 
 ## Contractor {#contractor}
 
-Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add [Contractor](https://launchpad.net/contractor) support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:
+Contractor is a service and a protocol for exposing services easily between apps. It lets apps interact with other apps and services without hardcoded support for them. You simply add [Contractor](https://github.com/elementary/contractor) support, and then any service registered with Contractor is now available for your app to use. Your app can integrate with Contractor in two different ways:
 
 * Register one of its functions as a service that can be used from other apps
 * Implement the contractor menu or otherwise access contractor to receive a list of services that can handle the data your app manages
