@@ -68,7 +68,7 @@
     <div class="third">
         <h3>News &amp; Announcements</h3>
         <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our Medium publication.</p>
-        <a class="button" href="https://drive.google.com/drive/folders/0B_sDFLg1fuxGazY1OXFqczI3Qnc?usp=sharing" target="_blank" rel="noopener">Visit Medium</a>
+        <a class="button" href="https://medium.com/elementaryos" target="_blank" rel="noopener">Visit Medium</a>
     </div>
 
     <div class="third">
