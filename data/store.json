@@ -449,42 +449,42 @@
         "variants": [
             {
                 "id": 1,
-                "printful_id": 6505,
-                "name": "S Terminal Men's",
+                "printful_id": 6569,
+                "name": "S Vala Men's",
                 "size": "S",
-                "color": "Tri-Black",
+                "color": "Purple Triblend",
                 "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 6506,
-                "name": "M Terminal Men's",
+                "printful_id": 6570,
+                "name": "M Vala Men's",
                 "size": "M",
-                "color": "Tri-Black",
+                "color": "Purple Triblend",
                 "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 6507,
-                "name": "L Terminal Men's",
+                "printful_id": 6571,
+                "name": "L Vala Men's",
                 "size": "L",
-                "color": "Tri-Black",
+                "color": "Purple Triblend",
                 "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 6508,
-                "name": "XL Terminal Men's",
+                "printful_id": 6572,
+                "name": "XL Vala Men's",
                 "size": "XL",
-                "color": "Tri-Black",
+                "color": "Purple Triblend",
                 "cost": 17.25,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 6509,
-                "name": "2XL Terminal Men's",
+                "printful_id": 6573,
+                "name": "2XL Vala Men's",
                 "size": "2XL",
-                "color": "Tri-Black",
+                "color": "Purple Triblend",
                 "cost": 20.25,
                 "price": 26.00
             }
@@ -505,44 +505,44 @@
         "variants": [
             {
                 "id": 1,
-                "printful_id": 6505,
-                "name": "S Terminal Men's",
+                "printful_id": 8583,
+                "name": "S Triblend Women's",
                 "size": "S",
-                "color": "Tri-Black",
-                "cost": 17.25,
+                "color": "Purple Triblend",
+                "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 2,
-                "printful_id": 6506,
-                "name": "M Terminal Men's",
+                "printful_id": 8584,
+                "name": "M Triblend Women's",
                 "size": "M",
-                "color": "Tri-Black",
-                "cost": 17.25,
+                "color": "Purple Triblend",
+                "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 3,
-                "printful_id": 6507,
-                "name": "L Terminal Men's",
+                "printful_id": 8585,
+                "name": "L Triblend Women's",
                 "size": "L",
-                "color": "Tri-Black",
-                "cost": 17.25,
+                "color": "Purple Triblend",
+                "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 4,
-                "printful_id": 6508,
-                "name": "XL Terminal Men's",
+                "printful_id": 8586,
+                "name": "XL Triblend Women's",
                 "size": "XL",
-                "color": "Tri-Black",
-                "cost": 17.25,
+                "color": "Purple Triblend",
+                "cost": 14.85,
                 "price": 25.00
             }, {
                 "id": 5,
-                "printful_id": 6509,
-                "name": "2XL Terminal Men's",
+                "printful_id": 8587,
+                "name": "2XL Triblend Women's",
                 "size": "2XL",
-                "color": "Tri-Black",
-                "cost": 20.25,
-                "price": 26.00
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
             }
         ],
         "files": [
@@ -562,7 +562,7 @@
             {
                 "id": 1,
                 "printful_id": 1320,
-                "name": "11oz Coffee Mug",
+                "name": "11oz Logo Mug",
                 "size": "11oz",
                 "color": "Black",
                 "cost": 8.95,
@@ -586,7 +586,7 @@
             {
                 "id": 1,
                 "printful_id": 1320,
-                "name": "11oz Coffee Mug",
+                "name": "11oz Terminal Mug",
                 "size": "11oz",
                 "color": "Black",
                 "cost": 8.95,
@@ -610,7 +610,7 @@
             {
                 "id": 1,
                 "printful_id": 1320,
-                "name": "11oz Coffee Mug",
+                "name": "11oz Vala Mug",
                 "size": "11oz",
                 "color": "Black",
                 "cost": 8.95,
