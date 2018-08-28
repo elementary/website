@@ -26,4 +26,7 @@ i.e. sizes for tees
 2. Set the Printful ID based on the correct ID from [Printful's catalog](https://www.printful.com/products).
 3. Set a sane name. This is displayed on customer receipts and the Printful dashboard.
 4. Set the size and color based on the values in the Printful catalog.
-5. Set the price 
+5. Set the cost as listed at Printful.
+6. Set the price. Tees are $25 (+1 for 2XL), mugs are $15.
+7. Set the print file PSD. Be sure to use a FQDN URL and escape slashes with `\`.
+
