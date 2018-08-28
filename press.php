@@ -16,6 +16,9 @@
         <h1>Press Resources</h1>
         <h4>We love working with press—both within the Linux world and the greater tech and culture beats—to share our story and what we are working on.</h4>
     </div>
+</div>
+
+<div class="grid">
     <div class="two-thirds">
         <h2>Join Our Press List</h2>
         <p>Be the first to know about new releases and significant developments. We send early access to press releases and press kits, including high resolution screenshots. This is a <strong>very low volume</strong> list; we send you the biggest news around once a year.</p>
@@ -57,20 +60,27 @@
                 </div>
             </form>
         </div>
-        <!--End mc_embed_signup-->
+        <!-- End MailChimp Signup Form -->
+    </div>
+</div>
 
+<div class="grid">
+    <div class="third">
+        <h3>News &amp; Announcements</h3>
+        <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our Medium publication.</p>
+        <a class="button" href="https://drive.google.com/drive/folders/0B_sDFLg1fuxGazY1OXFqczI3Qnc?usp=sharing" target="_blank" rel="noopener">Visit Medium</a>
     </div>
 
-    <div class="half">
+    <div class="third">
         <h3>Press Kit</h3>
         <p>Download the Loki press kit for resources for our current release. This includes a press release, detailed changes, and high resolution screenshots.</p>
         <a class="button" href="https://drive.google.com/drive/folders/0B_sDFLg1fuxGazY1OXFqczI3Qnc?usp=sharing" target="_blank" rel="noopener">Download Press Kit</a>
     </div>
 
-    <div class="half">
+    <div class="third">
         <h3>Get in Touch</h3>
         <p>Talk directly with the team by emailing us at <a href="mailto:press@elementary.io">press@elementary.io</a>. We welcome requests for interviews, podcast appearances, or just general press inquiries.</p>
-    <a class="button" href="mailto:press@elementary.io">Send an Email</a>
+        <a class="button" href="mailto:press@elementary.io">Send an Email</a>
     </div>
 </div>
 
