@@ -51,6 +51,7 @@ It's often very tempting to continue adding more and more features into your app
 Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
 <span id="avoid-configuration"/>
+
 ## Accessible Configuration {#accessible-configuration}
 
 Providing settings can be a way to make sure an app is accessible to a wider set of users with special needs, but it can also be an easy way out of making design decisions about an app's behavior. Just like with problems of feature bloat, settings mean more code, more bugs, more testing, more documentation, and more complexity. When considering adding options to your app, try to strike a balance of making your app more accessible without pushing design work onto your users.
@@ -66,6 +67,7 @@ Design with sane defaults in mind. elementary OS apps put strong emphasis on the
 Get as much information automatically as possible. Instead of asking a user for their name or their location, ask the system for this information. This cuts down on the amount of things a user has to do and makes your app look intelligent and integrated.
 
 <span id="do-you-really-need-it"/>
+
 ### Is It Really About Accessibility? {#is-it-really-about-a11y}
 
 Ask yourself if the configuration option you are adding is really necessary to make your app more accessible or if it makes sense to have a user make this decision. Don't ever ask users to make uninformed engineering or design decisions.
@@ -236,6 +238,7 @@ Keywords=Package;Apt;Dpkg;Install;
 ```
 
 <span id="title"/>
+
 ### Name {#Name}
 
 You should not include descriptive words in your app's `Name`. For example, an address book app might be called "Dexter," not "Dexter Address Book." A web browser might be called "Midori," but not "Midori Web Browser." Instead, use the `GenericName` attribute of your app's .desktop file for a generic name, and the `Comment` attribute for a longer descriptive phrase.
@@ -661,6 +664,7 @@ Most search fields should use the format "Search OBJECTS" where OBJECTS is somet
 If the search field interacts with a search service, the hint text should be the name of that service such as "Google" or "Yahoo!"
 
 <span id="checkboxes-switches"/>
+
 ## Selection Controls {#selection-controls}
 
 Selection controls present a way for users to select or enable options. There are several types of selection controls available in elementary OS:
@@ -671,6 +675,7 @@ Selection controls present a way for users to select or enable options. There ar
 * **Switches** present a way for users to toggle certain features or behaviors "on" or "off".
 
 <span id="checkboxes-usage"/><span id="checkboxes-labeling"/>
+
 ### Checkboxes {#checkboxes}
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/checkboxes.png" alt="Checkboxes" style="max-width: 100px"/>
@@ -691,6 +696,7 @@ Use a combobox (also called a dropdown) when:
 * The set is too long to show all available options at once
 
 <span id="linked-buttons-usage"/><span id="linked-buttons-labeling"/>
+
 ### Linked Buttons {#linked-buttons}
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
@@ -713,6 +719,7 @@ Use radio buttons when:
 * You think users should see all available options at once.
 
 <span id="switches-usage"/>
+
 ### Switches {#switches}
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/switches.png" alt="Switches" style="max-width: 69px"/>
