@@ -638,7 +638,7 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 
 ## Search Fields {#search-fields}
 
-Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
+Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](https://valadoc.org/gtk+-3.0/Gtk.SearchEntry.html).
 
 ![Search Field](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
@@ -657,7 +657,7 @@ If it is possible to include search functionality within your app, it is best to
 
 ### Labeling {#search-fields-labeling}
 
-Search fields should contain hint text that describes what will be search. You can set this using the entry property ["placeholder_text"](http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Entry.placeholder_text).
+Search fields should contain hint text that describes what will be search. You can set this using the entry property ["placeholder_text"](https://valadoc.org/gtk+-3.0/Gtk.Entry.placeholder_text.html).
 
 Most search fields should use the format "Search OBJECTS" where OBJECTS is something to be searched, like Contacts, Accounts, etc.
 
