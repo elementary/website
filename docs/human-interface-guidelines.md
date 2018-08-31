@@ -702,7 +702,7 @@ Use a combobox (also called a dropdown) when:
 <img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
 Use linked buttons (also called a mode button) when:
-* all options can be described by an icon or with only one or two words and
+* All options can be described by an icon or with only one or two words and
 * You think users should see all available options at once.
 
 Linked buttons can be used to select multiple related options like "Bold", "Italic", and "Underline", or they can be used to select a single mutually exclusive option like Grid, List, or Column view.
