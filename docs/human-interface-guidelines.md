@@ -370,7 +370,7 @@ Indicators are designed for the system; they display information that is relevan
 
 * **Your app is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the dock, notifications, or the existing sound menu.
 
-* **You want to show the user your app is running** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
+* **You want to show the user your app is running.** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
 
 * **It does not show system-wide information.** App-specific information should be exposed using the dock and/or notifications.
 
