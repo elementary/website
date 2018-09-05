@@ -15,7 +15,7 @@
     "Select the operating system you are currently using to view tailored installation instructions.": "Scegli il sistema operativo che stai usando per vedere le istruzioni di installazione specifiche.",
     "Windows": "Windows",
     "macOS": "macOS",
-    "Ubuntu": "",
+    "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "Creare un Dispositivo di Installazione",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "Avrete bisogno di un flash drive USB con almeno 2 GB di spazio libero e un programma chiamato Rufus.",
     "Download Rufus": "Scarica Rufus",
