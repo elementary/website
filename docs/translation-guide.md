@@ -14,7 +14,7 @@ Our apps and website are translated through Weblate: a free web-based translatio
 
 Once you’ve selected a project, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more information about Weblate, you can refer to their [documentation](https://docs.weblate.org/en/weblate-3.0.1/user/index.html).
 
-By default, you're only able to suggest translations. If you would like to get permissions to save translations, [join the translators Slack](https://ele-l10n.slack.com/join/shared_invite/enQtMjkwMjI2Mzk5ODQxLWM3NWZlMjMxMTUyNzg0MjdiNTdkYTM5ZDA3NzE5YTIwMzZmZjhmZjg0MzQwMGE5MjVhMGU2Yjk2MDU1MGZiYTU) and ask administrators there.
+By default, you're only able to suggest translations. If you would like to get permissions to save translations, [join the translators Slack](https://ele-l10n.slack.com/join/shared_invite/enQtMjkwMjI2Mzk5ODQxLWM3NWZlMjMxMTUyNzg0MjdiNTdkYTM5ZDA3NzE5YTIwMzZmZjhmZjg0MzQwMGE5MjVhMGU2Yjk2MDU1MGZiYTU) and message an admin your weblate username and what language you want to translate.
 
 When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guides ensure uniform translations, while also allowing anyone to contribute.
 

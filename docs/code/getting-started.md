@@ -140,7 +140,7 @@ Now what you've been waiting for! We're going to create a window that contains a
             }
         }
 
-    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The second line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
+    You'll notice that most of these property names are pretty straightforward. Inside `MyApp ()` we set a couple of properties for our `Gtk.Application` object, namely our app's ID and [flags](https://valadoc.org/gio-2.0/GLib.ApplicationFlags.html). The first line inside the `activate` method creates a new `Gtk.ApplicationWindow` called `main_window`. The fourth line sets the window title that you see at the top of the window. We also must give our window a default size so that is does not appear too small for the user to interact with it. Then in our `main ()` method we create a new instance of our `Gtk.Application` and run it.
 
     Ready to test it out? Fire up your terminal and make sure you're in "~/Projects/gtk-hello/src". Then execute the following commands to compile and run your first Gtk+ app:
 
@@ -281,7 +281,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
         <?xml version="1.0" encoding="UTF-8"?>
         <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
-          <id>com.github.yourusername.yourrepositoryname.desktop</id>
+          <id>com.github.yourusername.yourrepositoryname</id>
           <metadata_license>CC0</metadata_license>
           <name>Your App's Name</name>
           <summary>A Catchy Tagline</summary>
@@ -686,7 +686,7 @@ By now you've probably already seen the white notification bubbles that appear o
 ## Making Preparations {#making-preparations}
 
 1. Create a new folder inside of  "~/Projects" called "notifications-app"
-2. Create a file inside called ```Application.vala ```
+2. Create a new folder inside of that folder called "src" and add a file inside of it called ```Application.vala ```
 3. Create a `meson.build` file. If you don't remember how to set up Meson, go back to the [previous section](#building-and-installing-with-meson) and review.
 4. Remember how to [make a .desktop file](#the-desktop-file)? Excellent! Make one for this project, but this time, since your app will be displaying notifications, add `X-GNOME-UsesNotifications=true` to the end of the file. This is needed so that users will be able to set notification preferences for your app in the system's notification settings.
 

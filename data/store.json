@@ -2,7 +2,7 @@
     {
         "id": 1,
         "printful_id": 162,
-        "name": "Men's Blue Logo T-Shirt",
+        "name": "Men's Blue Logo Tee",
         "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_logotype_aqua.png",
         "type": "Apparel",
@@ -58,7 +58,7 @@
     {
         "id": 2,
         "printful_id": 6,
-        "name": "Women's Blue Logo Shirt",
+        "name": "Women's Blue Logo Tee",
         "description": "The elementary logotype in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/womens_logotype_aqua.png",
         "type": "Apparel",
@@ -114,7 +114,7 @@
     {
         "id": 3,
         "printful_id": 162,
-        "name": "Men's Black Logo Shirt",
+        "name": "Men's Black Logo Tee",
         "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_logotype_black.png",
         "type": "Apparel",
@@ -170,7 +170,7 @@
     {
         "id": 4,
         "printful_id": 173,
-        "name": "Women's Black Logo Shirt",
+        "name": "Women's Black Logo Tee",
         "description": "The elementary logotype in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/womens_logotype_black.png",
         "type": "Apparel",
@@ -218,7 +218,7 @@
     {
         "id": 6,
         "printful_id": 162,
-        "name": "Men's Black Hero Shirt",
+        "name": "Men's Black Hero Tee",
         "description": "The elementary 'e' logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_black.png",
         "type": "Apparel",
@@ -274,7 +274,7 @@
     {
         "id": 7,
         "printful_id": 162,
-        "name": "Men's White Hero Shirt",
+        "name": "Men's White Hero Tee",
         "description": "The elementary 'e' logo in black on a lightweight white tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_white.png",
         "type": "Apparel",
@@ -330,7 +330,7 @@
     {
         "id": 9,
         "printful_id": 162,
-        "name": "Men's Blue Hero T-Shirt",
+        "name": "Men's Blue Hero Tee",
         "description": "The elementary 'e' logo in white on a lightweight blue tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_hero_aqua.png",
         "type": "Apparel",
@@ -386,7 +386,7 @@
     {
         "id": 8,
         "printful_id": 162,
-        "name": "Men's Black Terminal Shirt",
+        "name": "Men's Black Terminal Tee",
         "description": "The elementary Terminal logo in white on a lightweight black tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
         "image": "images\/store\/apparel\/mens_terminal_black.png",
         "type": "Apparel",
@@ -440,6 +440,118 @@
         ]
     },
     {
+        "id": 11,
+        "printful_id": 162,
+        "name": "Men's Purple Vala Tee",
+        "description": "Hand-lettered Vala design in lavender and white on a lightweight purple tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
+        "image": "images\/store\/apparel\/mens_tee_vala_purple.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 6569,
+                "name": "S Vala Men's",
+                "size": "S",
+                "color": "Purple Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 2,
+                "printful_id": 6570,
+                "name": "M Vala Men's",
+                "size": "M",
+                "color": "Purple Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 3,
+                "printful_id": 6571,
+                "name": "L Vala Men's",
+                "size": "L",
+                "color": "Purple Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 4,
+                "printful_id": 6572,
+                "name": "XL Vala Men's",
+                "size": "XL",
+                "color": "Purple Triblend",
+                "cost": 17.25,
+                "price": 25.00
+            }, {
+                "id": 5,
+                "printful_id": 6573,
+                "name": "2XL Vala Men's",
+                "size": "2XL",
+                "color": "Purple Triblend",
+                "cost": 20.25,
+                "price": 26.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/vala_light.psd"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "printful_id": 173,
+        "name": "Women's Purple Vala Tee",
+        "description": "Hand-lettered Vala design in lavender and white on a lightweight purple tri-blend tee by Bella + Canvas. <br/><a class='read-more' href='https://www.bellacanvas.com/fit-guide'>Size Chart</a>",
+        "image": "images\/store\/apparel\/womens_tee_vala_purple.png",
+        "type": "Apparel",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 8583,
+                "name": "S Vala Women's",
+                "size": "S",
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 2,
+                "printful_id": 8584,
+                "name": "M Vala Women's",
+                "size": "M",
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 3,
+                "printful_id": 8585,
+                "name": "L Vala Women's",
+                "size": "L",
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 4,
+                "printful_id": 8586,
+                "name": "XL Vala Women's",
+                "size": "XL",
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
+            }, {
+                "id": 5,
+                "printful_id": 8587,
+                "name": "2XL Vala Women's",
+                "size": "2XL",
+                "color": "Purple Triblend",
+                "cost": 14.85,
+                "price": 25.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/vala_light.psd"
+            }
+        ]
+    },
+    {
         "id": 5,
         "printful_id": 19,
         "name": "Logo Mug",
@@ -450,7 +562,7 @@
             {
                 "id": 1,
                 "printful_id": 1320,
-                "name": "11oz Coffee Mug",
+                "name": "11oz Logo Mug",
                 "size": "11oz",
                 "color": "Black",
                 "cost": 8.95,
@@ -474,7 +586,7 @@
             {
                 "id": 1,
                 "printful_id": 1320,
-                "name": "11oz Coffee Mug",
+                "name": "11oz Terminal Mug",
                 "size": "11oz",
                 "color": "Black",
                 "cost": 8.95,
@@ -484,6 +596,30 @@
         "files": [
             {
                 "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_terminal_11oz.psd"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "printful_id": 19,
+        "name": "Vala Mug",
+        "description": "Hand-lettered Vala design sublimated onto an 11 oz (330 mL), dishwasher and microwave safe coffee mug.",
+        "image": "images\/store\/accessories\/mug_vala_11oz.png",
+        "type": "Accessories",
+        "variants": [
+            {
+                "id": 1,
+                "printful_id": 1320,
+                "name": "11oz Vala Mug",
+                "size": "11oz",
+                "color": "Purple",
+                "cost": 8.95,
+                "price": 15.00
+            }
+        ],
+        "files": [
+            {
+                "url": "https:\/\/elementary.io\/images\/store\/designs\/mug_vala_11oz.psd"
             }
         ]
     }
