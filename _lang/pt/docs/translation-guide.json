@@ -15,7 +15,7 @@
     "If you don't want to translate using Weblate, or want to make a lot a changes at once, you can also translate offline. To do so:": "Se não desejar utilizar o Weblate para traduzir, ou quer fazer muitas alterações ao mesmo tempo, pode também traduzir offline. Para isso:",
     "Go to a project you want to translate": "Vá para um projeto que quer traduzir",
     "Choose your language": "Escolha o seu idioma",
-    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "",
+    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Clique em &quot;Ficheiros&quot; e a seguir selecione &quot; Transferir tradução como gettext PO&quot;",
     "Choose your favorite text-, code- or po-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Escolha o seu editor favorito de texto, código ou po (ex. <a href=\"https://poedit.net/\">Poedit</a>)",
     "Start translating": "Começe a traduzir",
     "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page that you downloaded them from.": "Quando terminar, use a opção &quot;Upload translation&quot; no menu &quot;Files&quot; na mesma página de onde fez a transferência.",
