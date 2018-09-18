@@ -43,7 +43,7 @@
     "Download Etcher": "הורדת Etcher",
     "etcher steps": "שלבים ב־etcher",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "יש להכניס את כונן ה־USB הנוסף ולבחור את קובץ ה־ISO שזה עתה הורדת.",
-    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "יש לפתוח את „Etcher” ולבחור בקובץ הדמות של elementary OS שהורדת לאחר לחיצה על הכפתור „Select image”.",
+    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "לפתוח את „Etcher” ולבחור בקובץ הדמות של elementary OS שהורדת לאחר לחיצה על הכפתור „Select image”.",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "התכנית Etcher אמורה לזהות את כונן ה־USB שלך אוטומטית, אך כדאי לבדוק אם נבחר היעד הנכון.",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "ניתן להתחיל בתהליך הצריבה על ידי לחיצה על הכפתור „Flash!‎”. התהליך יחל תוך זמן קצר.",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "עם השלמת התהליך ניתן להסיר את הכונן בבטחה ולנסות להפעיל מחדש כדי להעלות את elementary OS.",
