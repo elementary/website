@@ -1,0 +1,19 @@
+input:not([type=submit]),
+select {
+    margin: 6px;
+    min-width: 100px;
+    padding: 8px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 6px 0 0;
+    opacity: 0.65;
+    padding: 0 6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
