@@ -48,7 +48,7 @@ It's often very tempting to continue adding more and more features into your app
 
 ### Think in Modules {#think-in-modules}
 
-Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](http://www.freedesktop.org/wiki/Software/dbus "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
+Build small, modular apps that communicate well. elementary OS apps avoid feature overlap and make their functions available to other apps either through [Contractor](#contractor) or over [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/ "View D-Bus docs from FreeDesktop.Org"). This both saves you time as a developer (by other apps making their functions available to you), and is a courteous gesture towards other developers (by making your app's functions available to them).
 
 <span id="avoid-configuration"/>
 
@@ -81,8 +81,8 @@ If your app needs to be configured before it can be used (like a mail client), p
 ---------------------------
 See Also:
 
-1. [Checkboxes That Kill Your Product](http://limi.net/checkboxes-that-kill) by Alex Limi
-2. [Don't Give Your Users Shit Work](http://zachholman.com/posts/shit-work/) by Zach Holman
+1. [Checkboxes That Kill Your Product](https://limi.net/checkboxes) by Alex Limi
+2. [Don't Give Your Users Shit Work](https://zachholman.com/posts/shit-work/) by Zach Holman
 3. [The Wizard Anti-Pattern](http://stef.thewalter.net/installer-anti-pattern.html) by Stef Walter
 
 ## Minimal Documentation {#minimal-documentation}
@@ -90,7 +90,7 @@ See Also:
 Most users don't want to read through help docs before they can use your app. Instead, they expect that your app will be intuitive and simple for them to understand without assistance.
 
 
-[![](https://imgs.xkcd.com/comics/manuals.png "The most ridiculous offender of all is the sudoers man page, which for 15 years has started with a 'quick guide' to EBNF, a system for defining the grammar of a language. 'Don't despair', it says, 'the definitions below are annotated.'")](http://xkcd.com/1343/)
+[![](https://imgs.xkcd.com/comics/manuals.png "The most ridiculous offender of all is the sudoers man page, which for 15 years has started with a 'quick guide' to EBNF, a system for defining the grammar of a language. 'Don't despair', it says, 'the definitions below are annotated.'")](https://xkcd.com/1343/)
 
 ### Use Understandable Copy {#use-understandable-copy}
 
@@ -165,7 +165,7 @@ This behavior should only as a last resort be implemented by providing a buffer 
 This behavior strikes the best balance of keeping out of the user's way while making sure they don't do something unintended. It's important to keep the undo action unobtrusive yet simple and intuitive; a common way of doing so is by using an info bar, though other methods may also be appropriate.
 
 -----
-See also: [Never Use a Warning When you Mean Undo](http://www.alistapart.com/articles/neveruseawarning/ "Read the article on A List Apart") by Aza Raskin
+See also: [Never Use a Warning When you Mean Undo](https://alistapart.com/article/neveruseawarning "Read the article on A List Apart") by Aza Raskin
 
 ## Always Saved {#always-saved}
 
@@ -223,7 +223,7 @@ An important advantage that developers have when choosing elementary OS as their
 
 The primary method of discovering and using your app will be through an app launcher found in the Applications Menu or in the dock. In order to provide these launchers you must install an appropriate .desktop file with your app. This includes giving your launcher an appropriate name, placing it in the correct category, assigning it an icon, etc.
 
-.desktop files follow the freedesktop.org [Desktop Entry Specification](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html "View the spec on FreeDesktop.Org"). They should be installed in `/usr/share/applications`.
+.desktop files follow the freedesktop.org [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/index.html "View the spec on FreeDesktop.Org"). They should be installed in `/usr/share/applications`.
 
 The contents of .desktop files should follow this formula:
 
@@ -291,7 +291,7 @@ The following categories may be used to aid with searching or browsing for your 
 * System
 * Utility
 
-For more info, see the FreeDesktop.Org [menu entry](http://standards.freedesktop.org/menu-spec/latest/apa.html) spec and the [list of additional categories](https://standards.freedesktop.org/menu-spec/latest/apas02.html)
+For more info, see the FreeDesktop.Org [menu entry](https://specifications.freedesktop.org/menu-spec/latest/apa.html) spec and the [list of additional categories](https://standards.freedesktop.org/menu-spec/latest/apas02.html)
 
 Categories should be separated by and terminated with a semicolon:
 
@@ -315,7 +315,7 @@ Keywords=Foo;Bar;Baz;
 
 ---
 
-See also: [Desktop Entry Specification](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html) from FreeDesktop.org
+See also: [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/index.html) from FreeDesktop.org
 
 ## Contractor {#contractor}
 
@@ -370,7 +370,7 @@ Indicators are designed for the system; they display information that is relevan
 
 * **Your app is for IM, IRC, e-mail, news-reading, or music playback.** Instead, integrate the application with the dock, notifications, or the existing sound menu.
 
-* **You want to show the user your app is running** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
+* **You want to show the user your app is running.** Users expect that apps will run in the background when it makes sense. To inform the user of events while your app is running in the background, use notifications.
 
 * **It does not show system-wide information.** App-specific information should be exposed using the dock and/or notifications.
 
@@ -475,7 +475,7 @@ See also:
 
 1. [Why 'Ok' Buttons In Dialog Boxes Work Best On The Right](http://uxmovement.com/buttons/why-ok-buttons-in-dialog-boxes-work-best-on-the-right/) by UX Movement
 2. [Why The Ok Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
-3. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX Stack Exchange
+3. [Should I use Yes/No or Ok/Cancel on my message box?](https://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX Stack Exchange
 4. [Where to Place Icons Next to Button Labels](http://uxmovement.com/buttons/where-to-place-icons-next-to-button-labels/) by UX Movement
 
 ## Popovers {#popovers}
@@ -634,11 +634,11 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 ---
 
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
-2. [Should I use Yes/No or Ok/Cancel on my message box?](http://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX Stack Exchange
+2. [Should I use Yes/No or Ok/Cancel on my message box?](https://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX Stack Exchange
 
 ## Search Fields {#search-fields}
 
-Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](http://valadoc.elementary.io/#!api=gtk+-3.0/Gtk.SearchEntry).
+Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](https://valadoc.org/gtk+-3.0/Gtk.SearchEntry.html).
 
 ![Search Field](/images/docs/human-interface-guidelines/search-fields/search-field.png)
 
@@ -657,7 +657,7 @@ If it is possible to include search functionality within your app, it is best to
 
 ### Labeling {#search-fields-labeling}
 
-Search fields should contain hint text that describes what will be search. You can set this using the entry property ["placeholder_text"](http://www.valadoc.org/#!api=gtk+-3.0/Gtk.Entry.placeholder_text).
+Search fields should contain hint text that describes what will be search. You can set this using the entry property ["placeholder_text"](https://valadoc.org/gtk+-3.0/Gtk.Entry.placeholder_text.html).
 
 Most search fields should use the format "Search OBJECTS" where OBJECTS is something to be searched, like Contacts, Accounts, etc.
 
@@ -702,7 +702,7 @@ Use a combobox (also called a dropdown) when:
 <img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
 Use linked buttons (also called a mode button) when:
-* all options can be described by an icon or with only one or two words and
+* All options can be described by an icon or with only one or two words and
 * You think users should see all available options at once.
 
 Linked buttons can be used to select multiple related options like "Bold", "Italic", and "Underline", or they can be used to select a single mutually exclusive option like Grid, List, or Column view.
@@ -839,7 +839,7 @@ elementary OS uses **six** main icon sizes throughout the OS and it's best to in
 	<span>128</span>
 </div>
 
-Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually. For more information about this practice (called "pixel-fitting") and its importance, we recommend reading [Dustin Curtis' article, Pixel-fitting](http://dcurt.is/pixel-fitting).
+Design each icon for the size it's meant to be viewed at. In other words, do not design one icon and resize it to fill the remaining sizes, the best result is when each icon is designed individually. For more information about this practice (called "pixel-fitting") and its importance, we recommend reading [Dustin Curtis' article, Pixel-fitting](https://dcurt.is/pixel-fitting).
 
 ## Color Palette {#color}
 
@@ -1391,7 +1391,7 @@ Use `\u2014` in code. Used for:
 
 ---
 
-If in doubt, refer to [Butterwick's Practical Typography](http://practicaltypography.com/).
+If in doubt, refer to [Butterwick's Practical Typography](https://practicaltypography.com/).
 
 These rules apply to the English language; other languages may have their own conventions which should be followed by translators.
 
