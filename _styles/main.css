@@ -464,8 +464,7 @@ footer ul li a:focus {
     vertical-align: top;
 }
 
-.column.third,
-.column.quarter {
+.column.third {
     margin-bottom: 16px;
     margin-top: 16px;
 }
@@ -479,11 +478,6 @@ footer ul li a:focus {
     .column.third {
         margin: 32px 32px 0;
         width: calc(33% - 88px);
-    }
-
-    .column.quarter {
-        margin: 32px 32px 0;
-        width: calc(25% - 88px);
     }
 
     .column + .column {
@@ -582,19 +576,8 @@ footer ul li a:focus {
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .grid .quarter {
-        width: calc(25% - 32px);
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 16px;
-    }
-}
-
 .third h3,
-.third p,
-.quarter h3,
-.quarter p {
+.third p {
     text-align: center;
 }
 
