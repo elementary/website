@@ -83,6 +83,7 @@
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h1>Introducing <span class="appcenter-title">AppCenter</span></h1>
                     <p>AppCenter is a one-of-a-kind app store that lets you install curated, native and Open Source applications in elementaryOS. Plus, support indie developers using pay-what-you-want purchases.</p>
+                    <p><a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="read-more">Discover AppCenter Apps</a>
                     <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more link-light">Read AppCenter Spotlight</a>
                     <p><a href="developer" class="read-more link-light">Become a Developer</a></p>
                 </div>

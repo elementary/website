@@ -686,6 +686,10 @@ a.third:hover {
     padding: 24px;
 }
 
+.row.alert + .row.alert {
+    margin-top: 20px;
+}
+
 .row.alert.warning {
     background-color: #fff9c4;
     border-color: #fbc02d;

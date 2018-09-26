@@ -1,2 +1,2 @@
 <?php
-header('Location: https://elementaryos.stackexchange.com/questions/tagged/geary', true, 302);
+header('Location: https://elementaryos.stackexchange.com/questions/tagged/pantheon-mail', true, 302);
