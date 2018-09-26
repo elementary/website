@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="grid panel">
+        <section class="grid">
             <div class="third">
                 <h2>Open Source</h2>
                 <p>We respect the rights of our users. Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
