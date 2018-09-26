@@ -81,7 +81,7 @@
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h1>Introducing <span>AppCenter</span></h1>
+                    <h1>Get it on <span>AppCenter</span></h1>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <p><a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="read-more">Discover AppCenter Apps</a>
                     <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
@@ -96,11 +96,11 @@
             </div>
             <div class="third">
                 <h2>No Ads. No Spying.</h2>
-                <p>Unlike other platforms, we don't make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
+                <p>Unlike other platforms, we don’t make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
             </div>
             <div class="third">
                 <h2>Safe &amp; Secure</h2>
-                <p>We're built on GNU/Linux, one of the most secure systems in the world. It's the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
+                <p>We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a></p>
             </div>
         </section>
         <section>
@@ -118,8 +118,8 @@
                 </div>
                 <div id="showcase-index">
                     <div>
-                        <h2>Apps You Need, Without Ones You Don't.</h2>
-                        <p>elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                        <h2>Apps You Need, Without Ones You Don’t.</h2>
+                        <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware. And when you need something more, just open AppCenter for tons of quality apps made just for elementary OS.</p>
                     </div>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>
@@ -153,7 +153,7 @@
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
                                 <h2>Epiphany</h2>
-                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use modern websites and web apps while being lighter on battery life.</p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
                                 <h2>Mail</h2>
-                                <p>Manage multiple accounts quickly and effortlessly with conversation-based e-mail, fast-as-you-type search, new e-mail notifications, and more.</p>
+                                <p>Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.</p>
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                             <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
                                 <h2>Videos</h2>
-                                <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
+                                <p>Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.</p>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
-                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
                             </div>
                         </div>
                     </div>
@@ -264,8 +264,8 @@
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
                             <div>
-                                <h2>Scratch</h2>
-                                <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                                <h2>Code</h2>
+                                <p>Tailor-made for editing code with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
                                 <h2>Camera</h2>
-                                <p>Easily snap pictures or video from a built-in webcam.</p>
+                                <p>Easily snap pictures or video from your webcam.</p>
                             </div>
                         </div>
                     </div>
