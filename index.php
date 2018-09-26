@@ -3,7 +3,7 @@
     require_once __DIR__.'/_backend/preload.php';
     require_once __DIR__.'/_backend/os-payment.php';
 
-    $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
+    $page['title'] = 'The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS';
 
     $page['scripts'] = array(
         'scripts/slingshot.js',
@@ -24,7 +24,7 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4 class="large">A fast and open replacement for Windows and macOS</h4>
+                    <h4>The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
                 </div>
             </div>
 
@@ -76,16 +76,16 @@
                 <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
-        <section id="appcenter" class="purple">
+        <section id="appcenter">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" style="background-color:rgba(0,0,0,0)"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter categories"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h1>Introducing <span class="appcenter-title">AppCenter</span></h1>
-                    <p>AppCenter is a one-of-a-kind app store that lets you install curated, native and Open Source applications in elementaryOS. Plus, support indie developers using pay-what-you-want purchases.</p>
+                    <h1>Introducing <span>AppCenter</span></h1>
+                    <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <p><a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="read-more">Discover AppCenter Apps</a>
-                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more link-light">Read AppCenter Spotlight</a>
-                    <p><a href="developer" class="read-more link-light">Become a Developer</a></p>
+                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
+                    <p><a href="developer" class="read-more">Become a Developer</a></p>
                 </div>
             </div>
         </section>
@@ -96,7 +96,7 @@
             </div>
             <div class="third">
                 <h2>No Ads. No Spying.</h2>
-                <p>Unlike Windows and Mac, we don't make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
+                <p>Unlike other platforms, we don't make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
             </div>
             <div class="third">
                 <h2>Safe &amp; Secure</h2>
@@ -104,7 +104,7 @@
             </div>
         </section>
         <section>
-            <div id="showcase" class="row">
+            <div id="showcase" class="row grey">
                 <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
@@ -284,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section id="slingshot" class="grey">
+        <section id="slingshot">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
                     <div id="slingshot-label" data-l10n-off>Applications</div>
@@ -343,18 +343,20 @@
                 </div>
             </div>
         </section>
-        <section class="grid">
-            <div class="two-thirds">
-                <img class="inline" src="images/icons/places/128/distributor-logo.svg">
-                <div class="inline">
-                    <h2 class="text-left">Download elementary OS</h2>
-                    <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+        <div class="grey">
+            <section class="grid">
+                <div class="two-thirds">
+                    <img class="inline" src="images/icons/places/128/distributor-logo.svg">
+                    <div class="inline">
+                        <h2 class="text-left">Download elementary OS</h2>
+                        <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="third">
-                <a class="button suggested-action" href="#">Pay What You Want</a>
-            </div>
-        </section>
+                <div class="third">
+                    <a class="button suggested-action" href="#">Pay What You Want</a>
+                </div>
+            </section>
+        </div>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="dialog modal">

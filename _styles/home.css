@@ -66,7 +66,7 @@ input:focus + .focus-reveal {
 }
 
 #the-press {
-    padding: 30px;
+    /*padding: 30px;*/
     padding-bottom: 100px;
 }
 
@@ -79,6 +79,14 @@ input:focus + .focus-reveal {
     display: block;
     height: 27px;
     margin: 19px auto;
+}
+
+#the-press svg * {
+    fill: #333;
+}
+
+#the-press svg:hover * {
+    fill: #3689e6;
 }
 
 #the-press svg:active {
@@ -346,9 +354,23 @@ input:focus + .focus-reveal {
 ************/
 
 #appcenter {
+    background-color: #7239b3;
+    background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
+    color: #fff;
     display: flex;
     justify-content: center;
+    max-width: 100%;
     padding: 48px 0;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#appcenter h1 span {
+    font-weight: 800;
+}
+
+#appcenter a {
+    color: #8cd5ff;
 }
 
 #appcenter .app-display {
@@ -376,10 +398,6 @@ input:focus + .focus-reveal {
         margin: 0 auto 32px;
         width: 128px;
     }
-}
-
-.appcenter-title {
-    font-weight: 800;
 }
 
 /************
@@ -756,6 +774,10 @@ span.results-title {
     transform: translateX(0%);
 }
 
+footer {
+    background-color: #fafafa;
+}
+
 @media (max-width: 1400px) {
     .slingshot {
         height: 369px;
@@ -812,33 +834,4 @@ span.results-title {
     #slingshot h2 {
         margin-top: 24px;
     }
-}
-
-.purple {
-    background-color: #7a36b1;
-    background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    padding: 128px 0;
-    max-width: 100%;
-    position: relative;
-}
-
-.link-light {
-    color: #9df;
-}
-
-.panel {
-    background-color: #fafafa;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 30px;
-}
-
-#logotype {
-    margin-top: 30px;
-}
-
-h4.large {
-    font-size: 25px;
 }
