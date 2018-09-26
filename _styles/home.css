@@ -479,6 +479,11 @@ input:focus + .focus-reveal {
     margin-left: 3px;
 }
 
+#slingshot-label svg {
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
 .slingshot .linked {
     display: inline-block;
     margin: 0;

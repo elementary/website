@@ -287,7 +287,10 @@
         <section id="slingshot">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
-                    <div id="slingshot-label" data-l10n-off>Applications</div>
+                    <div id="slingshot-label" data-l10n-off>
+                        <?php include('images/pantheon/actions/system-search.svg'); ?>
+                        Applications
+                    </div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
