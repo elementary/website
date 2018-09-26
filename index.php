@@ -172,7 +172,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.png" alt="photos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/photos.png" srcset="images/screenshots/photos@2x.png 2x" alt="photos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
