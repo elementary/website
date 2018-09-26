@@ -136,7 +136,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.png" alt="music screenshot" />
+                        <img class="app-display__image" src="images/screenshots/music.png" srcset="images/screenshots/music@2x.png 2x" alt="music screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
@@ -260,12 +260,12 @@
                 </div>
                 <div class="showcase-tab" id="showcase-code">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.png" srcset="images/screenshots/scratch@2x.png 2x" alt="Code screenshot" />
+                        <img class="app-display__image" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
                         <div class="app-display__description">
                             <img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code icon" />
                             <div>
                                 <h2>Code</h2>
-                                <p>Tailor-made for editing code with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.</p>
+                                <p>Tailor-made with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.</p>
                             </div>
                         </div>
                     </div>
