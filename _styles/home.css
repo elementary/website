@@ -66,8 +66,7 @@ input:focus + .focus-reveal {
 }
 
 #the-press {
-    /*padding: 30px;*/
-    padding-bottom: 100px;
+    padding-bottom: 64px;
 }
 
 #the-press h4 {
