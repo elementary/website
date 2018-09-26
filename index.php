@@ -349,7 +349,7 @@
                     <img class="inline" src="images/icons/places/128/distributor-logo.svg">
                     <div class="inline">
                         <h2 class="text-left">Download elementary OS</h2>
-                        <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+                        <h4 class="text-left">The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
                     </div>
                 </div>
                 <div class="third">
