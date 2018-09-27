@@ -93,6 +93,11 @@ input:focus + .focus-reveal {
     top: 1px;
 }
 
+.cta {
+    padding-top: 48px;
+    text-align: center;
+}
+
 /***********
 * Sections *
 ***********/

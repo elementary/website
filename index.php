@@ -346,20 +346,13 @@
                 </div>
             </div>
         </section>
-        <div class="grey">
-            <section class="grid">
-                <div class="two-thirds">
-                    <img class="inline" src="images/icons/places/128/distributor-logo.svg">
-                    <div class="inline">
-                        <h2 class="text-left">Download elementary OS</h2>
-                        <h4 class="text-left">The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
-                    </div>
-                </div>
-                <div class="third">
-                    <a class="button suggested-action" href="#">Pay What You Want</a>
-                </div>
-            </section>
-        </div>
+        <section class="cta grey">
+            <img src="images/icons/places/128/distributor-logo.svg">
+            <h2>Download elementary OS</h2>
+            <h4>The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
+
+            <a class="button suggested-action" href="#">Pay What You Want</a>
+        </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="dialog modal">
