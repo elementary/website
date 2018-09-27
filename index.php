@@ -3,7 +3,9 @@
     require_once __DIR__.'/_backend/preload.php';
     require_once __DIR__.'/_backend/os-payment.php';
 
-    $page['title'] = 'The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS';
+    $tagline = 'The fast, open, and privacy-respecting replacement for Windows and macOS';
+
+    $page['title'] = $tagline + ' &sdot; elementary OS';
 
     $page['scripts'] = array(
         'scripts/slingshot.js',
@@ -17,14 +19,14 @@
     );
 
     include $template['header'];
-    //include $template['alert'];
+    include $template['alert'];
 ?>
 
         <section class="section--hero section--stretched">
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4>The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
+                    <h4><?php echo $tagline; ?></h4>
                 </div>
             </div>
 
@@ -349,7 +351,7 @@
         <section class="cta grey">
             <img src="images/icons/places/128/distributor-logo.svg">
             <h2>Download elementary OS</h2>
-            <h4>The fast, open, and privacy-respecting replacement for Windows and macOS</h4>
+            <h4><?php echo $tagline; ?></h4>
 
             <a class="button suggested-action" href="#">Pay What You Want</a>
         </section>
