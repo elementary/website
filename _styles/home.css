@@ -309,30 +309,14 @@ input:focus + .focus-reveal {
 #showcase.initialized {
     background-color: rgb(44, 35, 52);
     /*background-image:*/
-    /*    linear-gradient(to bottom, rgba(44, 35, 52, 0.67), rgba(44, 35, 52, 0.125)),*/
-    /*    url("/images/wallpaper.jpg");*/
+    /*   linear-gradient(to bottom, rgba(44, 35, 52, 0.67), rgba(44, 35, 52, 0.125)),*/
+    /*   url("/images/wallpaper.jpg");*/
     /*background-position: top;*/
     /*background-size: cover;*/
     color: white;
     position: relative;
     text-shadow: 0 0 6px black;
     transition: height 0.25s ease-in-out;
-}
-
-#showcase.initialized::before {
-    background-image:
-        linear-gradient(to bottom, rgba(44, 35, 52, 0.67), rgba(44, 35, 52, 0.125)),
-        url("/images/wallpaper.jpg");
-    background-position: top;
-    background-size: cover;
-    content: "";
-    filter: blur(8px);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
 }
 
 #showcase.initialized > div {
@@ -348,9 +332,35 @@ input:focus + .focus-reveal {
     padding: 48px 0;
 }
 
+/*#showcase.initialized > div#showcase-index::before {*/
+#showcase.initialized::before {
+    background-image:
+        linear-gradient(to bottom, rgba(44, 35, 52, 0.67), rgba(44, 35, 52, 0.125)),
+        url("/images/wallpaper.jpg");
+    background-position: top;
+    background-size: cover;
+    content: "";
+    filter: blur(8px);
+    height: 100%;
+    left: 0;
+    /*opacity: 0;*/
+    position: absolute;
+    top: 0;
+    /*transition: opacity 200ms ease;*/
+    /*transition-delay: 300ms;*/
+    width: 100%;
+    /*z-index: -1;*/
+}
+
 #showcase.initialized > div#showcase-index.active {
     transform: translate3d(100%, 0, 0);
 }
+
+/*#showcase.initialized > div#showcase-index.active::before {*/
+/*   opacity: 1;*/
+/*    transition: opacity 200ms ease;*/
+/*    transition-delay: 300ms;*/
+/*}*/
 
 #showcase.initialized > div.showcase-tab {
     left: 100%;
