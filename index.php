@@ -121,7 +121,7 @@
                 <div id="showcase-index">
                     <div>
                         <h2>Apps You Need, Without Ones You Don’t.</h2>
-                        <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware. And when you need something more, just open AppCenter for tons of quality apps made just for elementary OS.</p>
+                        <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     </div>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>

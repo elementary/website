@@ -307,7 +307,12 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
+    background-image: url("/images/wallpaper.jpg");
+    background-position: top;
+    background-size: cover;
+    color: white;
     position: relative;
+    text-shadow: 0 0 6px black;
     transition: height 0.25s ease-in-out;
 }
 
