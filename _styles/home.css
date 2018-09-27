@@ -307,7 +307,9 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
-    background-image: url("/images/wallpaper.jpg");
+    background-image:
+        linear-gradient(to bottom, rgba(44, 35, 52, 0.75), rgba(44, 35, 52, 0.25)),
+        url("/images/wallpaper.jpg");
     background-position: top;
     background-size: cover;
     color: white;
