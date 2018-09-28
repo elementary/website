@@ -905,6 +905,31 @@ span.results-title {
     fill: #000 !important;
 }
 
+/************
+* Shortcuts *
+************/
+
+#shortcuts {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
+}
+
+#shortcuts p {
+    margin-bottom: 8vw; /* For better balance */
+}
+
+#shortcuts .app-display__image {
+    padding: 0 32px 32px;
+}
+
+@media (min-width: 1000px) {
+    #shortcuts .app-display__image {
+        order: 0;
+    }
+}
+
 /**********
 * Privacy *
 **********/
