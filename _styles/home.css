@@ -114,32 +114,28 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.jpg");
+    /*background-image: url("../images/responsive-images/notebook-small.jpg");*/
+    background-image: url("../images/home/notebook-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     flex: 1 1 auto;
     margin-bottom: -32px;
     min-height: 50vh;
+    position: relative;
 }
 
-@media all and (min-width: 500px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.jpg");
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.jpg");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook.jpg");
-    }
-}
+/*.section--hero .section__showcase::after {*/
+/*    background-image: url("../images/screenshots/desktop.jpg");*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    content: "";*/
+/*    height: 76%;*/
+/*    position: absolute;*/
+/*    top: 3%;*/
+/*    width: 100%;*/
+/*}*/
 
 @media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
     .section--stretched {
@@ -295,7 +291,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.svg");
+    background-image: url("../images/home/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -310,7 +306,7 @@ input:focus + .focus-reveal {
     background-color: rgb(44, 35, 52);
     background-image:
         linear-gradient(to bottom, rgba(44, 35, 52, 0.8), rgba(70, 31, 23, 0.5)),
-        url("/images/wallpaper.jpg");
+        url("../images/home/wallpaper.jpg");
     background-position: top;
     background-size: cover;
     color: white;

@@ -374,7 +374,7 @@
                 <img class="app-display__image" src="images/screenshots/shortcut-overlay.jpg" srcset="images/screenshots/shortcut-overlay@2x.jpg 2x" alt="elementary OS Keyboard Shortcuts"/>
                 <div class="app-display__description">
                     <h2>User Friendly. And Keyboard Friendly.</h2>
-                    <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
+                    <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
                 </div>
             </div>
         </section>
