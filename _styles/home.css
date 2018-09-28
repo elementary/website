@@ -852,3 +852,42 @@ footer {
         margin-top: 24px;
     }
 }
+
+/********************
+* Parental Controls *
+********************/
+
+#parental-controls {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 48px 0;
+    position: relative;
+}
+
+#parental-controls .app-display__description h2,
+#parental-controls .app-display__description p {
+    text-align: left;
+}
+
+#parental-controls .app-display__description p {
+    margin-left: 24px;
+}
+
+#parental-controls .app-display__description h2 img {
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#parental-controls .app-display__description svg {
+    display: inline-block;
+    float: left;
+    margin: 4px 6px 4px 0;
+}
+
+#parental-controls .app-display__description svg,
+#parental-controls .app-display__description svg * {
+    color: #000 !important;
+    fill: #000 !important;
+}
+

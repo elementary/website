@@ -80,7 +80,7 @@
         </section>
         <section id="appcenter">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter categories"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h1>Get it on <span>AppCenter</span></h1>
@@ -93,16 +93,18 @@
         </section>
         <section class="grid">
             <div class="third">
-                <h2>Open Source</h2>
-                <p>We respect the rights of our users. Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
+                <h2>Go Fast</h2>
+                <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn't slow down with updates.</p>
             </div>
             <div class="third">
-                <h2>No Ads. No Spying.</h2>
-                <p>Unlike other platforms, we don’t make advertising deals or collect sensitive personal data. Our only income is directly from our users. <a class="read-more" href="/privacy-policy">Privacy Policy</a></p>
+                <h2>Open Source</h2>
+                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.</p>
+                <a class="read-more" href="/open-source">Learn More</a>
             </div>
             <div class="third">
                 <h2>Safe &amp; Secure</h2>
-                <p>We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a></p>
+                <p>We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
+                <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
             </div>
         </section>
         <section>
@@ -346,6 +348,30 @@
                     <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?><h4>Search</h4>
                     <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
                 </div>
+            </div>
+        </section>
+        <section id="parental-controls" class="grey">
+            <div class="app-display app-display--overflow">
+                <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
+                <div class="app-display__description">
+                    <h2>
+                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" />
+                        Parental Controls
+                    </h2>
+                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Time Limits</h4>
+                    <p>Set per-user time limits for weekdays, weekends, or both.</p>
+                    <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
+                    <p>Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.</p>
+                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
+                    <p>Choose just which apps are safe for your child to access. Plus, optionally allow access with your password.</p>
+                </div>
+            </div>
+        </section>
+        <section class="grid privacy">
+            <div class="two-thirds">
+                <h2>Privacy-respecting. Through and through.</h2>
+                <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</h4>
+                <a class="read-more" href="/privacy-policy">Our Privacy Policy</a>
             </div>
         </section>
         <section class="cta grey">
