@@ -381,8 +381,18 @@ input:focus + .focus-reveal {
     font-weight: 800;
 }
 
-#appcenter a {
-    color: #8cd5ff;
+#appcenter .buttons {
+    text-align: center;
+}
+
+#appcenter .button {
+    border-color: white;
+    color: white;
+}
+
+#appcenter .button:first-child {
+    background-color: white;
+    color: #7239b3;
 }
 
 #appcenter .app-display {

@@ -810,6 +810,7 @@ button.suggested-action,
     min-width: 250px;
     padding: 7px;
     text-shadow: none;
+    transition: opacity 200ms ease;
 }
 
 .light .button.flat,
@@ -826,6 +827,10 @@ button.suggested-action,
     box-shadow: none;
     color: #333;
     fill: #333;
+}
+
+.button.flat:hover {
+    opacity: 0.8;
 }
 
 #logotype {

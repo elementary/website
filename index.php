@@ -85,9 +85,11 @@
                     <img src="images/icons/apps/128/system-software-install.svg" />
                     <h1>Get it on <span>AppCenter</span></h1>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
-                    <p><a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="read-more">Discover AppCenter Apps</a>
-                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
-                    <p><a href="developer" class="read-more">Become a Developer</a></p>
+                    <div class="buttons">
+                        <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
+                        <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
+                        <a href="developer" class="button flat">Become a Developer</a>
+                    </div>
                 </div>
             </div>
         </section>
