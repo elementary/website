@@ -1,7 +1,7 @@
 {
     "Installation": "Instalación",
     "Download elementary OS": "Descargar elementary OS",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si aún no lo has hecho, necesitarás <a href=\"\/\" target=\"_blank\" rel=\"noopener\">descargar elementary OS de nuestra página de inicio.<\/a>. Deberá copiar el archivo ISO descargado en una unidad flash USB siguiendo las instrucciones a continuación.",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si aún no lo has hecho, necesitarás <a href=\"/\" target=\"_blank\" rel=\"noopener\">descargar elementary OS de nuestra página de inicio.</a>. Deberá copiar el archivo ISO descargado en una unidad flash USB siguiendo las instrucciones a continuación.",
     "Recommended System Specifications": "Especificaciones de sistema recomendadas",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "",
@@ -21,7 +21,7 @@
     "Download Rufus": "Descargar Rufus",
     "Rufus - select ISO": "Rufus - selecciona ISO",
     "Open Rufus": "",
-    "Insert your USB drive and select it in the &quot;Device&quot; list": "Inserta tu unidad USB y selecciónala en la lista de &quot;Dispositivos&quot;:",
+    "Insert your USB drive and select it in the &quot;Device&quot; list": "Inserta tu unidad USB y selecciónala en la lista de &quot;Dispositivos&quot;",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "",
@@ -31,8 +31,8 @@
     "Booting from the Install Drive": "Arranque desde la Unidad de Instalación",
     "In order to start the installation process, you must boot your computer from the install drive.": "Para comenzar el proceso de instalación, debe iniciar su computadora desde la unidad de instalación.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Suponiendo que su computadora todavía está encendida, comience por insertar su unidad de instalación y reiniciar su computadora.",
-    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12<\/kbd>, but sometimes <kbd>Esc<\/kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "La mayoría de las computadoras le permitirán cambiar brevemente el orden de arranque para este arranque solo presionando una tecla especial — generalmente <kbd>F12<\/kbd>, pero a veces <kbd>Esc<\/kbd> u otra tecla de función. Consulte la pantalla o la documentación de su computadora para estar seguro.",
-    "Press <kbd>F12<\/kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "Presione <kbd>F12<\/kbd> (o la tecla correspondiente)  y seleccione la unidad de instalación—generalmente &quot;USB-HDD&quot; o algo que contenga la palabra &quot;USB&quot;,pero la redacción puede variar. Si elige la unidad incorrecta, es probable que su computadora continúe arrancando normalmente. Simplemente reinicie su computadora y elija una unidad diferente en ese menú.",
+    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "La mayoría de las computadoras le permitirán cambiar brevemente el orden de arranque para este arranque solo presionando una tecla especial — generalmente <kbd>F12</kbd>, pero a veces <kbd>Esc</kbd> u otra tecla de función. Consulte la pantalla o la documentación de su computadora para estar seguro.",
+    "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "Presione <kbd>F12</kbd> (o la tecla correspondiente)  y seleccione la unidad de instalación—generalmente &quot;USB-HDD&quot; o algo que contenga la palabra &quot;USB&quot;,pero la redacción puede variar. Si elige la unidad incorrecta, es probable que su computadora continúe arrancando normalmente. Simplemente reinicie su computadora y elija una unidad diferente en ese menú.",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "Poco después de seleccionar la unidad de inicio apropiada, se le debe presentar la pantalla de bienvenida de elementary OS. Ahora puede seguir las instrucciones en pantalla que lo guiarán durante el resto del proceso.",
     "Verify your Download": "Verifica tu Descarga",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "",
@@ -49,7 +49,7 @@
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "Cuando se complete, será seguro quitar la unidad e intentar iniciar para instalar elementary OS.",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
     "Not readable warning": "",
-    "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
+    "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
     "Boot Errors": "Errores de arranque",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Ejecutando el siguiente comando en su terminal:",
@@ -63,5 +63,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "Desconecte todos los dispositivos de memoria USB que no sea el que desea utilizar.",
     "Click &quot;OK&quot; and wait for the process to finish.": "Haga click &quot;OK&quot; y espere a que el proceso termine.",
     "After Installation": "Después de la instalación",
-    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": "Tómese este tiempo para leer la <a href=\"\/docs\/learning-the-basics\">guía de introducción<\/a> para conocer su nuevo sistema operativo."
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Tómese este tiempo para leer la <a href=\"/docs/learning-the-basics\">guía de introducción</a> para conocer su nuevo sistema operativo."
 }
