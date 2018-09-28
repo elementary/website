@@ -94,7 +94,7 @@
         <section class="grid">
             <div class="third">
                 <h2>Go Fast</h2>
-                <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn't slow down with updates.</p>
+                <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn’t slow down with updates.</p>
             </div>
             <div class="third">
                 <h2>Open Source</h2>
@@ -371,7 +371,7 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h2>Privacy-respecting. Through and through.</h2>
-                    <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</h4>
+                    <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</h4>
                     <a class="read-more" href="/privacy-policy">Our Privacy Policy</a>
                 </div>
             </div>
