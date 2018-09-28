@@ -114,37 +114,22 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    /*background-image: url("../images/responsive-images/notebook-small.jpg");*/
-    background-image: url("../images/home/notebook-desktop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 1 1 auto;
-    margin-bottom: -32px;
-    min-height: 50vh;
-    position: relative;
+   /*flex: 1 1 auto;*/
+   position: relative;
 }
 
-/*.section--hero .section__showcase::after {*/
-/*    background-image: url("../images/screenshots/desktop.jpg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: contain;*/
-/*    content: "";*/
-/*    height: 76%;*/
-/*    position: absolute;*/
-/*    top: 3%;*/
-/*    width: 100%;*/
-/*}*/
+.section--hero .section__showcase img.bg {
+   display: block;
+   margin: 0 auto;
+   max-height: 67vh;
+}
 
-@media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
-    .section--stretched {
-        height: calc(100vh - 56px);
-    }
-
-    .section--stretched > .section__showcase {
-        display: flex;
-    }
+.section--hero .section__showcase img:not(.bg) {
+    height: 77%;
+    left: 50%;
+    position: absolute;
+    top: 2%;
+    transform: translateX(-50%);
 }
 
 /***********************
