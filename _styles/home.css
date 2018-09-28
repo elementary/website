@@ -94,7 +94,7 @@ input:focus + .focus-reveal {
 }
 
 .cta {
-    padding-top: 48px;
+    padding: 64px 1em;
     text-align: center;
 }
 
