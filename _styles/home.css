@@ -891,3 +891,17 @@ footer {
     fill: #000 !important;
 }
 
+/**********
+* Privacy *
+**********/
+
+#privacy {
+    background-color: #273445;
+    color: white;
+    padding: 128px 1em;
+}
+
+#privacy a {
+    color: #8cd5ff;
+}
+

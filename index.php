@@ -367,11 +367,13 @@
                 </div>
             </div>
         </section>
-        <section class="grid privacy">
-            <div class="two-thirds">
-                <h2>Privacy-respecting. Through and through.</h2>
-                <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</h4>
-                <a class="read-more" href="/privacy-policy">Our Privacy Policy</a>
+        <section id="privacy">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>Privacy-respecting. Through and through.</h2>
+                    <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</h4>
+                    <a class="read-more" href="/privacy-policy">Our Privacy Policy</a>
+                </div>
             </div>
         </section>
         <section class="cta grey">
