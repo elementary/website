@@ -205,9 +205,8 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "\f105";
+    content: "»";
     display: inline-block;
-    font-family: "Font Awesome\ 5 Pro";
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;

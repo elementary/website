@@ -81,6 +81,15 @@
                 <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
+        <section id="whats-new" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>What’s New in Juno</h2>
+                    <p>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</p>
+                    <a href="https://medium.com/@DanielFore/db5258dfed7c" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                </div>
+            </div>
+        </section>
         <section id="appcenter">
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
