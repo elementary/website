@@ -905,3 +905,14 @@ footer {
     color: #8cd5ff;
 }
 
+#privacy h3 svg {
+    fill: white;
+    height: 1em;
+    margin-right: 0.25em;
+    transform: scale(1.5);
+    vertical-align: bottom;
+}
+
+#privacy h3 svg * {
+    fill: inherit;
+}

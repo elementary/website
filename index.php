@@ -375,6 +375,29 @@
                     <a class="read-more" href="/privacy-policy">Our Privacy Policy</a>
                 </div>
             </div>
+            <div class="grid">
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/devices/symbolic/audio-input-microphone-symbolic.svg'); ?>
+                        Tattle-Tale
+                    </h3>
+                    <p>elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.</p>
+                </div>
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/actions/symbolic/find-location-symbolic.svg'); ?>
+                        Location Services
+                    </h3>
+                    <p>When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.</p>
+                </div>
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
+                        Housekeeping
+                    </h3>
+                    <p>elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+                </div>
+            </div>
         </section>
         <section class="cta grey">
             <img src="images/icons/places/128/distributor-logo.svg">
