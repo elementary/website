@@ -84,7 +84,7 @@
         <section id="whats-new" class="grey">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>What’s New in Juno</h2>
+                    <h2>What’s New in elementary OS 5 Juno</h2>
                     <h4>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</h4>
                     <a href="https://medium.com/elementaryos" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
