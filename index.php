@@ -5,7 +5,7 @@
 
     $tagline = 'The fast, open, and privacy-respecting replacement for Windows and macOS';
 
-    $page['title'] = $tagline + ' &sdot; elementary OS';
+    $page['title'] = $tagline . ' &sdot; elementary OS';
 
     $page['scripts'] = array(
         'scripts/slingshot.js',
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </section>
-        <section class="grid">
+        <section id="callouts" class="grid">
             <div class="third">
                 <h2>Go Fast</h2>
                 <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn’t slow down with updates.</p>
@@ -401,7 +401,7 @@
                 </div>
             </div>
         </section>
-        <section class="cta grey">
+        <section class="cta">
             <img src="images/icons/places/128/distributor-logo.svg">
             <h2>Download elementary OS</h2>
             <h4><?php echo $tagline; ?></h4>

@@ -422,6 +422,14 @@ input:focus + .focus-reveal {
     }
 }
 
+/***********
+* Callouts *
+***********/
+
+#callouts {
+    padding: 64px 1em;
+}
+
 /************
 * Slingshot *
 ************/
@@ -799,10 +807,6 @@ span.results-title {
 
 #slingshot-categories.active {
     transform: translateX(0%);
-}
-
-footer {
-    background-color: #fafafa;
 }
 
 @media (max-width: 1400px) {
