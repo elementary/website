@@ -342,6 +342,14 @@ input:focus + .focus-reveal {
     margin: 32px 32px 64px;
 }
 
+/*************
+* What's New *
+*************/
+
+#whats-new {
+    padding: 64px 1em;
+}
+
 /************
 * AppCenter *
 ************/

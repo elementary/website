@@ -85,8 +85,8 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h2>What’s New in Juno</h2>
-                    <p>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</p>
-                    <a href="https://medium.com/@DanielFore/db5258dfed7c" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                    <h4>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</h4>
+                    <a href="https://medium.com/elementaryos" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
