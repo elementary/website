@@ -12,7 +12,8 @@
     "elementary OS AppCenter categories": "AppCenter ilovalari katalogi",
     "The Indie, Open Source App Store": "Ochiq kodli dasturiy ta'minotlarning mustaqil do'koni",
     "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "AppCenter - elementary  OS uchun ochiq va nativ ilovalarni taklif etadi. Yangi ilovalarni osongina topib o'rnating yoki yangi versiyasiga yangilab oling. Indi-dasturchilarni \"xoxlaganingizcha to'lang\" prinsipi asosida rag'batlantiring.",
-    "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight</a>": "<a href=\"https://medium.com/elementaryos/tagged/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">AppCenter Spotlight haqida batafsil</a>",
+    "<a href=\"https:\/\/appcenter.elementary.io\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Discover AppCenter Apps<\/a>": "",
+    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">AppCenter Spotlight haqida batafsil<\/a>",
     "Become a Developer": "Ishlab chiqaruvchilarga qo'shilish",
     "Task finished": "Vazifa bajarildi",
     "Apps You Need, Without Ones You Don't.": "Eng zaruriy bo'lgan ilovalar",
@@ -66,7 +67,7 @@
     "View your apps automatically organized into categories. Perfect for large collections.": "",
     "Search": "",
     "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "",
-    "Open Source": "",
+    "Open Source": "Ochiq kod",
     "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "",
     "Learn More": "",
     "No Ads. No Spying.": "",
@@ -83,5 +84,5 @@
     "Cancel": "",
     "Download": "",
     "Torrent Magnet Link": "",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": ""
+    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "Windows va macOS ning o'rnini bosadigan tezkor va ochiq kodli OS ⋅ elementary OS"
 }
