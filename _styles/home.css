@@ -377,6 +377,15 @@ input:focus + .focus-reveal {
 #appcenter .button {
     border-color: white;
     color: white;
+    display: block;
+    margin: 12px auto;
+}
+
+@media (min-width: 500px) {
+    #appcenter .button {
+        display: inline-block;
+        margin: 6px 12px;
+    }
 }
 
 #appcenter .button:first-child {
