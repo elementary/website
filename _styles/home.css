@@ -114,14 +114,13 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-   /*flex: 1 1 auto;*/
-   position: relative;
+    position: relative;
 }
 
 .section--hero .section__showcase img.bg {
-   display: block;
-   margin: 0 auto;
-   max-height: 67vh;
+    display: block;
+    margin: 0 auto;
+    max-height: 67vh;
 }
 
 .section--hero .section__showcase img:not(.bg) {
