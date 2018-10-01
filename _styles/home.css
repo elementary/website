@@ -923,6 +923,7 @@ span.results-title {
 
 @media (min-width: 1000px) {
     #shortcuts .app-display__image {
+        width: 67%;
         order: 0;
     }
 }
