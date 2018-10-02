@@ -732,7 +732,7 @@ When possible, directly call out the service you are acting on. Do not use words
 
 #### Mode Switches {#mode-switches}
 
-<img src="/images/docs/human-interface-guidelines/selection-controls/mode-switches.png" srcset="/images/docs/human-interface-guidelines/selection-controls/mode-switches@2x.png 2x" alt="Switches" style="max-width: 69px"/>
+<img src="/images/docs/human-interface-guidelines/selection-controls/mode-switches.png" srcset="/images/docs/human-interface-guidelines/selection-controls/mode-switches@2x.png 2x" alt="Mode Switches" />
 
 As of elementary OS 5 Juno, Mode Switches are a new switch-based widget that communicate switching between two distinct states. For example, switching between a photo or video mode in an app. The switch is drawn smaller and inline with the provided symbolic icons.
 
