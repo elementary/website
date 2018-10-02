@@ -83,7 +83,6 @@
             <p class="oss-subtitle">Desktop Libraries &amp; Repositories</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/ayatana" target="_blank" rel="noopener"><span>Ayatana</span></a>
             <a class="button sub-item" href="https://launchpad.net/bamf" target="_blank" rel="noopener"><span>BAMF</span></a>
             <a class="button sub-item" href="https://launchpad.net/libunity" target="_blank" rel="noopener"><span>libunity</span></a>
             <a class="button sub-item" href="https://launchpad.net/ubiquity" target="_blank" rel="noopener"><span>Ubiquity</span></a>
@@ -123,6 +122,7 @@
         </a>
         <div>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank" rel="noopener"><span>D-Bus</span></a>
+            <a class="button sub-item" href="https://gitlab.freedesktop.org/geoclue/geoclue/wikis/home" target="_blank" rel="noopener"><span>GeoClue</span></a>
             <a class="button sub-item" href="https://gstreamer.freedesktop.org/" target="_blank" rel="noopener"><span>GStreamer</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank" rel="noopener"><span>libinput</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/LightDM/" target="_blank" rel="noopener"><span>LightDM</span></a>
