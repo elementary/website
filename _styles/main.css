@@ -800,9 +800,8 @@ button.suggested-action,
 }
 
 .button.flat {
-    background: none;
-    border-width: 2px;
-    box-shadow: none;
+    background: rgba(0, 0, 0, 0.07);
+    border: none;
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 0;
@@ -810,6 +809,12 @@ button.suggested-action,
     min-width: 250px;
     padding: 7px;
     text-shadow: none;
+}
+
+.button.flat:focus,
+.button.flat:hover {
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.08),
+                0 5px 10px -2px rgba(0, 0, 0, 0.15);
 }
 
 .light .button.flat,
