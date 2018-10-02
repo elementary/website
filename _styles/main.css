@@ -802,6 +802,7 @@ button.suggested-action,
 .button.flat {
     background: rgba(0, 0, 0, 0.07);
     border: none;
+    box-shadow: none
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 0;
@@ -813,6 +814,7 @@ button.suggested-action,
 
 .button.flat:focus,
 .button.flat:hover {
+    background: rgba(0, 0, 0, 0.03);
     box-shadow:
         0 2px 3px -1px rgba(0, 0, 0, 0.08),
         0 5px 10px -2px rgba(0, 0, 0, 0.15);
