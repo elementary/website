@@ -83,7 +83,6 @@
             <p class="oss-subtitle">Desktop Libraries &amp; Repositories</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/ayatana" target="_blank" rel="noopener"><span>Ayatana</span></a>
             <a class="button sub-item" href="https://launchpad.net/bamf" target="_blank" rel="noopener"><span>BAMF</span></a>
             <a class="button sub-item" href="https://launchpad.net/libunity" target="_blank" rel="noopener"><span>libunity</span></a>
             <a class="button sub-item" href="https://launchpad.net/ubiquity" target="_blank" rel="noopener"><span>Ubiquity</span></a>
