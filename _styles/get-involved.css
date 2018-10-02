@@ -59,8 +59,12 @@ section {
     color: #fff;
 }
 
-.button.flat.suggested-action:focus {
+.button.flat.suggested-action:focus,
+.button.flat.suggested-action:hover {
     background-color: #64baff;
+    box-shadow:
+        0 2px 3px -1px rgba(30, 51, 134, 0.3),
+        0 5px 10px -2px rgba(89, 159, 239, 0.5);
 }
 
 /* Funding */
@@ -69,9 +73,12 @@ section {
     background-color: #d48e15;
 }
 
-#funding .button.flat.suggested-action:focus {
+#funding .button.flat.suggested-action:focus,
+#funding .button.flat.suggested-action:hover {
     background-color: #f9c440;
-    border-color: #f9c440;
+    box-shadow:
+        0 2px 3px -1px rgba(154, 97, 22, 0.3),
+        0 5px 10px -2px rgba(235, 178, 41, 0.5);
 }
 
 #funding .third > img {
@@ -93,8 +100,12 @@ section {
     background-color: #3a9104;
 }
 
-#translations .button.flat.suggested-action:focus {
+#translations .button.flat.suggested-action:focus,
+#translations .button.flat.suggested-action:hover {
     background-color: #68b723;
+    box-shadow:
+        0 2px 3px -1px rgba(73, 122, 31, 0.3),
+        0 5px 10px -2px rgba(97, 173, 31, 0.5);
 }
 
 /* Support */
@@ -103,8 +114,12 @@ section {
     background-color: #c6262e;
 }
 
-#support .button.flat.suggested-action:focus {
+#support .button.flat.suggested-action:focus,
+#support .button.flat.suggested-action:hover {
     background-color: #ed5353;
+    box-shadow:
+        0 2px 3px -1px rgba(144, 21, 20, 0.3),
+        0 5px 10px -2px rgba(213, 57, 65, 0.5);
 }
 
 /* Web */
@@ -113,8 +128,12 @@ section {
     background-color: #7239b3;
 }
 
-#web-development .button.flat.suggested-action:focus {
+#web-development .button.flat.suggested-action:focus,
+#web-development .button.flat.suggested-action:hover {
     background-color: #a56de2;
+    box-shadow:
+        0 2px 3px -1px rgba(73, 55, 147, 0.3),
+        0 5px 10px -2px rgba(156, 100, 218, 0.5);
 }
 
 /* Design */
@@ -123,8 +142,12 @@ section {
     background-color: #667885;
 }
 
-#design .button.flat.suggested-action:focus {
+#design .button.flat.suggested-action:focus,
+#design .button.flat.suggested-action:hover {
     background-color: #95a3ab;
+    box-shadow:
+        0 2px 3px -1px rgba(81, 94, 107, 0.3),
+        0 5px 10px -2px rgba(131, 147, 157, 0.5);
 }
 
 .actions {
@@ -232,48 +255,72 @@ section {
     background-color: #d48e15;
 }
 
-#sections-menu .button.flat:nth-child(1):focus {
+#sections-menu .button.flat:nth-child(1):focus,
+#sections-menu .button.flat:nth-child(1):hover {
     background-color: #f9c440;
+    box-shadow:
+        0 2px 3px -1px rgba(154, 97, 22, 0.3),
+        0 5px 10px -2px rgba(235, 178, 41, 0.5);
 }
 
 #sections-menu .button.flat:nth-child(2) {
     background-color: #3a9104;
 }
 
-#sections-menu .button.flat:nth-child(2):focus {
+#sections-menu .button.flat:nth-child(2):focus,
+#sections-menu .button.flat:nth-child(2):hover {
     background-color: #68b723;
+    box-shadow:
+        0 2px 3px -1px rgba(73, 122, 31, 0.3),
+        0 5px 10px -2px rgba(97, 173, 31, 0.5);
 }
 
 #sections-menu .button.flat:nth-child(3) {
     background-color: #c6262e;
 }
 
-#sections-menu .button.flat:nth-child(3):focus {
+#sections-menu .button.flat:nth-child(3):focus,
+#sections-menu .button.flat:nth-child(3):hover {
     background-color: #ed5353;
+    box-shadow:
+        0 2px 3px -1px rgba(144, 21, 20, 0.3),
+        0 5px 10px -2px rgba(213, 57, 65, 0.5);
 }
 
 #sections-menu .button.flat:nth-child(4) {
     background-color: #7239b3;
 }
 
-#sections-menu .button.flat:nth-child(4):focus {
+#sections-menu .button.flat:nth-child(4):focus,
+#sections-menu .button.flat:nth-child(4):hover {
     background-color: #a56de2;
+    box-shadow:
+        0 2px 3px -1px rgba(73, 55, 147, 0.3),
+        0 5px 10px -2px rgba(156, 100, 218, 0.5);
 }
 
 #sections-menu .button.flat:nth-child(5) {
     background-color: #3689e6;
 }
 
-#sections-menu .button.flat:nth-child(5):focus {
+#sections-menu .button.flat:nth-child(5):focus,
+#sections-menu .button.flat:nth-child(5):hover {
     background-color: #64baff;
+    box-shadow:
+        0 2px 3px -1px rgba(30, 51, 134, 0.3),
+        0 5px 10px -2px rgba(89, 159, 239, 0.5);
 }
 
 #sections-menu .button.flat:nth-child(6) {
     background-color: #667885;
 }
 
-#sections-menu .button.flat:nth-child(6):focus {
+#sections-menu .button.flat:nth-child(6):focus,
+#sections-menu .button.flat:nth-child(6):hover {
     background-color: #95a3ab;
+    box-shadow:
+        0 2px 3px -1px rgba(81, 94, 107, 0.3),
+        0 5px 10px -2px rgba(131, 147, 157, 0.5);
 }
 
 /******************
