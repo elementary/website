@@ -374,12 +374,6 @@ Indicators are designed for the system; they display information that is relevan
 
 * **It does not show system-wide information.** App-specific information should be exposed using the dock and/or notifications.
 
----
-
-See also:
-1. [Farewell to the Notification Area](https://blog.ubuntu.com/2010/04/21/notification-area) by Matthew Paul Thomas
-2. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
-
 ## Notifications {#notifications}
 
 Notifications play a sound and are displayed as bubbles just below the system indicators. They briefly appear on screen where they can be selected to open the relevant app or manually dismissed by hitting the X icon. After a short time, they automatically slide away. Missed notifications can be seen in and cleared from the Notification Center indicator.
@@ -403,6 +397,13 @@ Users can enable Do Not Disturb mode from Notification Center or System Settings
 #### Notification Settings {#notification-settings}
 
 Notification bubbles, sounds, and appearance in Notification Center can each be toggled on or off on a per-app basis from the system notifications settings. Instead of including a global toggle for all notifications in your app, direct the user to the System Settings using a settings URL to open the Notifications page directly.
+
+---
+
+See also:
+1. [Developer Tips: Backgrounding &amp; System Integration](https://medium.com/elementaryos/developer-tips-backgrounding-system-integration-31c1f7226606) by Cassidy James Blaede
+2. [Farewell to the Notification Area](https://blog.ubuntu.com/2010/04/21/notification-area) by Matthew Paul Thomas
+3. [Status Icons and GNOME](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day
 
 # Container Widgets {#container-widgets}
 
@@ -729,6 +730,14 @@ Use a switch when users are toggling certain features or behaviors "on" or "off"
 Don't use switches to select related items as part of a list, instead use a checkbox. Think of switches as acting on independent services and checkboxes as including objects in a list. This is an important distinction to make.
 
 When possible, directly call out the service you are acting on. Do not use words that describe the state that the widget is describing like "Enable Multitouch", "Use Multitouch", or "Disable Multitouch". This can create a confusing situation logically. Instead, simply use the noun and write "Multitouch".
+
+#### Mode Switches {#mode-switches}
+
+<img src="/images/docs/human-interface-guidelines/selection-controls/mode-switches.png" srcset="/images/docs/human-interface-guidelines/selection-controls/mode-switches@2x.png 2x" alt="Mode Switches" />
+
+As of elementary OS 5 Juno, mode switches are a new switch-based widget that communicate switching between two distinct states. For example, switching between a photo or video mode in a camera. The switch is drawn smaller and inline with the provided symbolic icons. Tooltip hints can also be provided when hovering the icons.
+
+Use a mode switch when you have two distinct and opposing states that you are switching between that can be effectively communicated via an icon. If you need text or more than two states, use a [Mode Button](#linked-buttons) instead.
 
 ---
 
