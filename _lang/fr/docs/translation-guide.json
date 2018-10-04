@@ -18,7 +18,7 @@
     "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Cliquez sur « Fichiers » puis sélectionnez « Télécharger la traduction en gettext PO »",
     "Choose your favorite text-, code- or po-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Choisissez votre éditeur de texte, de code ou PO préféré (par exemple <a href=\"https://poedit.net/\">Poedit</a>)",
     "Start translating": "Commencez à traduire",
-    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page that you downloaded them from.": "",
+    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page that you downloaded them from.": "Une fois que vous aurez terminé, utilise l'option &quot;Téléverser la traduction&quot; dans le menu &quot;Fichiers&quot; sur la page ou vous les avez téléchargés.",
     "Additional Information": "",
     "We won't support translations in the following pages:": ""
 }
