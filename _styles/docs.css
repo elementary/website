@@ -74,6 +74,9 @@ h3 {
     opacity: 1;
     padding-bottom: 0.3em;
 }
+.alert h3 {
+    border-bottom: none;
+}
 
 h4 {
     font-weight: 400;
