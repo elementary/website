@@ -637,6 +637,18 @@ Since Text buttons have a clear and explicit label, it's usually unnecessary to 
 1. [Why The OK Button Is No Longer Okay](http://uxmovement.com/buttons/why-the-ok-button-is-no-longer-okay/) by UX Movement
 2. [Should I use Yes/No or Ok/Cancel on my message box?](https://ux.stackexchange.com/questions/9946/should-i-use-yes-no-or-ok-cancel-on-my-message-box) on UX Stack Exchange
 
+### Back Buttons {#back-buttons}
+
+<img src="/images/docs/human-interface-guidelines/buttons/back-button.png" srcset="/images/docs/human-interface-guidelines/buttons/back-button@2x.png 2x" alt= "Back Button" />
+
+A back button is simply a text button with a special style class. It should be used to navigate back to a previous view, typically from a child view to the main view.
+
+The text of the button should be the title of the previous view. If the button will take the user “home,” then “Home” may be an appropriate label; however a more specific label is preferred, such as “All Settings” in System Settings. Avoid just using “Back,” as the back button is visually distinct and going back is already implied by its unique shape. The button should tell the user _where_ it will take them back to.
+
+When using a back button, it is recommneded to use a Gtk.Stack to switch between views. This way you get a sliding animation further representing the backwards progression when activating the back button.
+
+Back buttons are typically seen in headerbars, but can be used in other contexts as well.
+
 ## Search Fields {#search-fields}
 
 Apps that support the searching or filtering of content should include a search field on the right side of the app's toolbar. This gives users a predictable place to see whether or not an app supports searching, and a consistent location from which to search. Gtk+ provides a convenient complex widget for this purpose called [Gtk.SearchEntry](https://valadoc.org/gtk+-3.0/Gtk.SearchEntry.html).
