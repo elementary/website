@@ -1,7 +1,7 @@
 {
     "Installation": "स्थापना",
     "Download elementary OS": "एलिमेंटरी अोएस डाउनलोड करा",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "आधी केले नसेल तर तुम्हाला आमच्या मुखपृष्ठावरून<a href=\"/\" target=\"_blank\" rel=\"noopener\">एलिमेंटरी ओएस डाउनलोड</a>करावे लागेल. डाउनलोड केलेल्या आयएसओ फाइलची खाली दिलेल्या सूचनांप्रमाणे तुम्हाला एका यूएसबी ड्राइव्हवर प्रत बनवावी लागेल.",
     "Recommended System Specifications": "शिफारस केलेले प्रणाली वर्णन",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "",
@@ -31,8 +31,8 @@
     "Booting from the Install Drive": "",
     "In order to start the installation process, you must boot your computer from the install drive.": "",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "",
-    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12<\/kbd>, but sometimes <kbd>Esc<\/kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
-    "Press <kbd>F12<\/kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
+    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
+    "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "",
     "Verify your Download": "",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "",
@@ -49,7 +49,7 @@
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
     "Not readable warning": "",
-    "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
+    "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
     "Boot Errors": "",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "",
@@ -63,5 +63,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "",
     "Click &quot;OK&quot; and wait for the process to finish.": "",
     "After Installation": "",
-    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": ""
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
