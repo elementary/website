@@ -64,6 +64,17 @@
     </div>
 </div>
 
+<div class="grey">
+    <div class="grid">
+        <div class="two-thirds">
+            <h2>elementary OS 5 Juno</h2>
+            <p>Juno is more refined, more productive, and an even better platform for third-party developers. We've majorly updated apps, made the core desktop more productive with several new features, refined the overall look and feel, and greatly improved System Settings.</p>
+            <a class="button" href="https://medium.com/elementaryos" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+            <a class="button" href="https://github.com/elementary/press-kit/archive/5.0-juno.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+        </div>
+    </div>
+</div>
+
 <div class="grid">
     <div class="third">
         <h3>News &amp; Announcements</h3>
@@ -72,9 +83,9 @@
     </div>
 
     <div class="third">
-        <h3>Press Kit</h3>
-        <p>Download the Loki press kit for resources for our current release. This includes a press release, detailed changes, and high resolution screenshots.</p>
-        <a class="button" href="https://drive.google.com/drive/folders/0B_sDFLg1fuxGazY1OXFqczI3Qnc?usp=sharing" target="_blank" rel="noopener">Download Press Kit</a>
+        <h3>Brand Resources</h3>
+        <p>View the elementary logos, brand usage guidelines, color palette, and community logo. Plus download the official high-resolution and vector elementary logo assets.</p>
+        <a class="button" href="brand">View Brand Resources</a>
     </div>
 
     <div class="third">
