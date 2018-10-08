@@ -3,9 +3,7 @@
     require_once __DIR__.'/_backend/preload.php';
     require_once __DIR__.'/_backend/os-payment.php';
 
-    $tagline = 'The fast, open, and privacy-respecting replacement for Windows and macOS';
-
-    $page['title'] = $tagline . ' &sdot; elementary OS';
+    $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
     $page['scripts'] = array(
         'scripts/slingshot.js',
@@ -26,7 +24,7 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4><?php echo $tagline; ?></h4>
+                    <h4><?php echo $sitewide['description']; ?></h4>
                 </div>
             </div>
 
@@ -425,7 +423,7 @@
         <section class="cta">
             <img src="images/icons/places/128/distributor-logo.svg">
             <h2>Download elementary OS</h2>
-            <h4><?php echo $tagline; ?></h4>
+            <h4><?php echo $sitewide['description']; ?></h4>
 
             <a class="button suggested-action" href="#">Pay What You Want</a>
         </section>
