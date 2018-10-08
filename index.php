@@ -60,7 +60,7 @@
                         <?php } ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.50 GB (for PC or Mac)</p>
+                            <p class="small-label"> elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> |  <?php echo $config['release_size']; ?> (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
                     </div>

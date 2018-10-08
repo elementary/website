@@ -4,10 +4,11 @@
 
 $config = array(
 
-    'release_title'    => 'Loki',
-    'release_version'  => '0.4.1',
-    'release_filename' => 'elementaryos-0.4.1-stable.20180215.iso',
-    'release_magnet'   => '54dca0477d74d88ed051a9cd62fe5359151e7823',
+    'release_title'    => 'Juno',
+    'release_version'  => '5',
+    'release_filename' => 'elementaryos-5.0-stable.iso',
+    'release_size'     => '1.5 GB',
+    'release_magnet'   => 'aaabbbcccdddeeefff0123456789abcdefabcdef',
 
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
