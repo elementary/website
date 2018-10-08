@@ -11,7 +11,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h1>
-                Thank You for Downloading
+                Thank You for Downloading elementary OS
                 <?php
                     // Embed the SVG to fix scaling in WebKit 1.x,
                     // while preserving CSS options for the image.
