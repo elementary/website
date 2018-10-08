@@ -23,7 +23,7 @@
     "Open Rufus": "Rufus उघडा",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "तुमचे यूएसबी ड्राइव्ह लावा आणि &quot; Device &quot; लिस्ट मधून ते निवडा",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "&quot;बूट निवड यादी&quot; मधून &quot;डिस्क अथवा ISO प्रत&quot; निवडा",
-    "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "",
+    "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "आपण अगोदर डाउनलोड केलेली ISO निवडण्यासाठी &quot;निवडा(SELECT)&quot; वर क्लिक करा.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "",
     "the checksum icon": "",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "",
