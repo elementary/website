@@ -3,7 +3,7 @@
         <footer>
             <div>
                 <p>
-                    Copyright &copy; <?php echo date('Y'); ?> elementary LLC.
+                    Copyright &copy; <?php echo date('Y'); ?> <?php echo $sitewide['author']; ?>
                 </p>
                 <div class="popover">
                     <a href="#"><i class="far fa-language"></i> Language</a>
