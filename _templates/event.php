@@ -16,11 +16,6 @@ if (event_active(EVENT_NAME) && event_cookie_get(EVENT_NAME) !== '1') { ?>
     <div class="countdown-background">
         <div class="countdown-wrapper">
             <div class="countdown"></div>
-            <!--
-            <div>
-                iframe width="560" height="315" src="https://www.youtube.com/embed/ocCxNWgMz20?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe
-            </div>
-            -->
             <a class="read-more" href="#">Continue</a>
         </div>
     </div>
