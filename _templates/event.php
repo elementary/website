@@ -9,14 +9,18 @@ require_once __DIR__ . '/../_backend/event.php';
 
 $l10n->set_domain('layout');
 
+const EVENT_NAME = 'juno 5.0 release';
+
 // Insert event based code here.
-if (event_active('juno 5.0 release') && event_cookie_get('juno 5.0 release') !== '1') { ?>
+if (event_active(EVENT_NAME) && event_cookie_get(EVENT_NAME) !== '1') { ?>
     <div class="countdown-background">
         <div class="countdown-wrapper">
             <div class="countdown"></div>
+            <!--
             <div>
-                <!--iframe width="560" height="315" src="https://www.youtube.com/embed/ocCxNWgMz20?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe-->
+                iframe width="560" height="315" src="https://www.youtube.com/embed/ocCxNWgMz20?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe
             </div>
+            -->
             <a class="read-more" href="#">Continue</a>
         </div>
     </div>
@@ -27,7 +31,6 @@ if (event_active('juno 5.0 release') && event_cookie_get('juno 5.0 release') !==
     <link rel="stylesheet" type="text/css" media="all" href="styles/countdown.css">
     <script>
         $('document').ready(function () {
-			console.log('Starting FlipClock')
             FlipClock.MvpClockFace = FlipClock.DailyCounterFace.extend({
                 showSeconds: true,
                 build: function (time) {
@@ -47,19 +50,20 @@ if (event_active('juno 5.0 release') && event_cookie_get('juno 5.0 release') !==
                     this.base()
                 }
             })
-            var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($event_expires['juno 5.0 release'][1])) ?>')
+
+            var releaseDate = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($event_expires[EVENT_NAME][1])) ?>')
             var clock = $('.countdown').FlipClock(releaseDate, {
                 clockFace: 'MvpClock',
                 countdown: true
             })
-			console.log('Started FlipClock')
-			$('.read-more').click(function (event) {
-				event.preventDefault()
+
+			      $('.read-more').click(function (event) {
+				        event.preventDefault()
                 $('.countdown-background').hide()
                 $('.countdown-background').html('')
                 var expireDate = new Date()
                 expireDate.setDate(expireDate.getDate() + 1)
-                document.cookie = 'countdown_video=false; expires=' + expireDate.toUTCString()
+                document.cookie = '<?php echo event_cookie_encode(EVENT_NAME); ?>=1; expires=' + expireDate.toUTCString()
             })
         })
     </script>

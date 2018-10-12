@@ -28,8 +28,12 @@
 
 .flip-clock-wrapper {
     animation: show 2s ease-in forwards;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 10px 16px;
     opacity: 0;
+    width: calc(100% - 32px);
 }
 
 .flip-clock-wrapper * {
@@ -47,9 +51,19 @@
 }
 
 .flip-wrapper {
-    position: relative;
-    margin: 20px 0;
+    margin: 20px 25px;
     padding-top: 30px;
+    position: relative;
+}
+
+@media only screen and (min-width: 750px) {
+  .flip-wrapper {
+    margin: 20px 0;
+  }
+
+  .flip-clock-divider:first-child {
+    width: 20px;
+  }
 }
 
 .countdown-wrapper .read-more {
