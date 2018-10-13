@@ -7,7 +7,7 @@
 
 // Here is an array of events, holding an array with start and end dates.
 $event_expires = array(
-    'juno 5.0 release' => [new DateTime('2018-10-11T19:00:00Z'), new DateTime('2018-10-15T19:00:00Z')]
+    'juno 5.0 release' => [new DateTime('2018-10-11T19:00:00Z'), new DateTime('2018-10-16T19:00:00Z')]
 );
 
 /**
