@@ -72,7 +72,7 @@
     "System Settings": "システム設定",
     "elementary OS comes with a handy app called &quot;System Settings&quot; that controls all of your system-wide (or &quot;global&quot;) preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "elementary OS には、システム全体の (または &quot;全体的な&quot;) 設定をコントロールする &quot;システム設定&quot; という便利なアプリが搭載されています。システム設定では、キーボードショートカットやディスプレイ解像度、壁紙といったようなことを調節できます。",
     "Search": "検索",
-    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "ウィンドウの上部にあるサーチバーにキーワードを入力することでお探しの設定を素早く見つけることができます。システム設定のウィンドウのコンテンツが検索に一致するものをフィルターします。",
+    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "ウィンドウの上部にある検索バーにキーワードを入力することでお探しの設定を素早く見つけることができます。システム設定のウィンドウのコンテンツが検索に一致するものをフィルターします。",
     "App Settings": "アプリの設定",
     "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "システム設定は elementary OS 全体の設定のみを扱うということを覚えておいてください。独自の設定項目を持つアプリもありますが、ここでは見つけることはできません。該当するアプリ内で探してください。"
 }
