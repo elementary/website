@@ -111,7 +111,8 @@
     position: absolute;
 }
 
-.flap.front::before, .flap.under::before {
+.flap.front::before,
+.flap.under::before {
     top: 100%;
     transform: translate(-50%, -50%);
 }

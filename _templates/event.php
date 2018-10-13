@@ -108,6 +108,11 @@ if (event_active(EVENT_NAME) && event_cookie_get(EVENT_NAME) !== '1') { ?>
             var then = new Date('<?php echo date('D M d Y H:i:s O', date_timestamp_get($event_expires[EVENT_NAME][1])) ?>');
             var distance = new Date(then - now);
 
+            if (distance <= 0) {
+                window.location.reload(true);
+                return;
+            }
+
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
