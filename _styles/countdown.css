@@ -52,15 +52,24 @@
 
 .digit {
     background-color: #273445;
-    background-image: linear-gradient(#273445, #151b24 50%, #273445 50%, #151b24);
-    border-radius: 0.125em;
-    box-shadow: 0 6px 18px rgba(72, 90, 108, 0.5);
-    color: rgba(255, 255, 255, 0.67);
+    background-image:
+        linear-gradient(
+            #404040,
+            #272727 49%,
+            #000 50%,
+            #272727 51%,
+            #1a1a1a
+        );
+    border-radius: 0.075em;
+    box-shadow:
+        0 1px 3px rgba(0,0,0,0.12),
+        0 1px 2px rgba(0,0,0,0.24);
+    color: #fff;
     float: left;
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-feature-settings: "lnum";
     font-size: 8vw;
-    font-weight: 300;
+    font-weight: 600;
     height: 10vw;
     position: relative;
     text-align: center;
@@ -79,8 +88,12 @@
 .flap {
     backface-visibility: hidden;
     background-color: #273445;
-    background-image: linear-gradient(#273445, #151b24);
-    border-radius: 0.125em 0.125em 0 0;
+    background-image:
+        linear-gradient(
+            #404040,
+            #272727
+        );
+    border-radius: 0.075em 0.075em 0 0;
     color: rgba(255, 255, 255, 0.67);
     display: none;
     height: 50%;
@@ -123,13 +136,21 @@
 .flap.front {
     animation: flip-down-front 300ms ease-in both;
     background-color: #273445;
-    background-image: linear-gradient(#273445, #151b24);
+    background-image:
+        linear-gradient(
+            #404040,
+            #272727
+        );
 }
 
 .flap.back {
     animation: flip-down-back 300ms ease-in both;
     background-color: #273445;
-    background-image: linear-gradient(#151b24, #273445);
+    background-image:
+        linear-gradient(
+            #272727,
+            #1a1a1a
+        );
 }
 
 .countdown-wrapper .read-more {
