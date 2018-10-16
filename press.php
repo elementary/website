@@ -69,7 +69,7 @@
         <div class="two-thirds">
             <h2>elementary OS 5 Juno</h2>
             <p>Juno is more refined, more productive, and an even better platform for third-party developers. We've majorly updated apps, made the core desktop more productive with several new features, refined the overall look and feel, and greatly improved System Settings.</p>
-            <a class="button" href="https://medium.com/elementaryos" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+            <a class="button" href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
             <a class="button" href="https://github.com/elementary/press-kit/archive/5.0-juno.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
         </div>
     </div>
