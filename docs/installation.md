@@ -88,7 +88,7 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-0.4.1-stable.20180214.iso
+shasum -a 256 ~/Downloads/elementaryos-5.0-stable.20181016.iso
 ```
 
 Should produce the output:
@@ -101,7 +101,7 @@ Note: This is assuming that you have downloaded the .iso file to your Downloads 
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-0.4.1-stable.20180214.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-5.0-stable.20181016.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -150,7 +150,7 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-0.4.1-stable.20180214.iso
+sha256sum elementaryos-5.0-stable.20181016.iso
 ```
 
 should produce the output:
