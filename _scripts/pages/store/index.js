@@ -66,7 +66,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
             $.getJSON('/api/geolocate?shipping&item=' + printfulId, function (data) {
                 // Update price information
                 if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
-                    $m.text('plus shipping from $' + data['shipping']['estimates'][0]['cost'])
+                    $m.text('+ $' + data['shipping']['estimates'][0]['cost'] + ' estimated shipping')
                 } else {
                     $m.text('')
                 }

@@ -99,7 +99,7 @@
             </div>
             <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
-                <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?> <span class="modal__shipping" data-l10n-off="1"></span></h4>
+                <h4 class="modal__price" data-l10n-off="1"><strong>$<?php echo number_format($product['price_min'], 2) ?></strong> <span class="modal__shipping" data-l10n-off="1"></span></h4>
                 <p><?php echo $product['description'] ?></p>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
