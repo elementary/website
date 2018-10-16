@@ -46,9 +46,9 @@
                         <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
-                            <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
-                            <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
-                            <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                            <button id="amount-five"        value="10"  class="small-button payment-button target-amount">10</button>
+                            <button id="amount-ten"         value="20" class="small-button payment-button target-amount checked">20</button>
+                            <button id="amount-twenty-five" value="30" class="small-button payment-button target-amount">30</button>
                             <div>
                                 <span class="pre-amount">$</span>
                                 <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
