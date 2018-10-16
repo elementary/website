@@ -3,7 +3,7 @@
     require_once __DIR__.'/_backend/preload.php';
     require_once __DIR__.'/_backend/os-payment.php';
 
-    $page['title'] = 'A fast and open replacement for Windows and macOS &sdot; elementary OS';
+    $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
     $page['scripts'] = array(
         'scripts/slingshot.js',
@@ -24,11 +24,14 @@
             <div class="section__detail grid">
                 <div class="whole">
                     <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4>A fast and open replacement for Windows and macOS</h4>
+                    <h4><?php echo $sitewide['description']; ?></h4>
                 </div>
             </div>
 
-            <div class="section__showcase"></div>
+            <div class="section__showcase">
+                <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
+                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5 Juno desktop" />
+            </div>
 
             <div class="section__detail grid">
                 <div class="whole">
@@ -43,9 +46,9 @@
                         <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
-                            <button id="amount-five"        value="5"  class="small-button payment-button target-amount">5</button>
-                            <button id="amount-ten"         value="10" class="small-button payment-button target-amount checked">10</button>
-                            <button id="amount-twenty-five" value="25" class="small-button payment-button target-amount">25</button>
+                            <button id="amount-ten"    value="10" class="small-button payment-button target-amount">10</button>
+                            <button id="amount-twenty" value="20" class="small-button payment-button target-amount checked">20</button>
+                            <button id="amount-thirty" value="30" class="small-button payment-button target-amount">30</button>
                             <div>
                                 <span class="pre-amount">$</span>
                                 <input type="number" step="0.01" min="0" max="999999.99" id="amount-custom" class="button small-button target-amount" placeholder="Custom">
@@ -55,7 +58,7 @@
                         <?php } ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"><?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | 1.50 GB (for PC or Mac)</p>
+                            <p class="small-label"> elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> |  <?php echo $config['release_size']; ?> (for PC or Mac)</p>
                         </div>
                         <div style="clear:both;"></div>
                     </div>
@@ -63,7 +66,6 @@
             </div>
         </section>
         <section class="grid" id="the-press">
-            <h4>What the press is saying about elementary OS:</h4>
             <div class="third">
                 <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
                 <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
@@ -77,21 +79,48 @@
                 <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
-        <section id="appcenter" class="grey">
-            <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.jpg" srcset="images/screenshots/appcenter@2x.jpg 2x" alt="elementary OS AppCenter categories"/>
-                <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" />
-                    <h2>The Indie, Open Source App Store</h2>
-                    <p>AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.</p>
-                    <p><a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="read-more">Discover AppCenter Apps</a>
-                    <p><a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="read-more">Read AppCenter Spotlight</a>
-                    <p><a href="developer" class="read-more">Become a Developer</a></p>
+        <section id="whats-new" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>What’s New in elementary OS 5 Juno</h2>
+                    <h4>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</h4>
+                    <a href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
+        <section id="appcenter">
+            <div class="app-display app-display--overflow">
+                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
+                <div class="app-display__description">
+                    <img src="images/icons/apps/128/system-software-install.svg" />
+                    <h1>Get it on <span>AppCenter</span></h1>
+                    <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
+                    <div class="buttons">
+                        <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
+                        <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
+                        <a href="developer" class="button flat">Become a Developer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="callouts" class="grid">
+            <div class="third">
+                <h2>Go Fast</h2>
+                <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn’t slow down with updates.</p>
+            </div>
+            <div class="third">
+                <h2>Open Source</h2>
+                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.</p>
+                <a class="read-more" href="/open-source">Learn More</a>
+            </div>
+            <div class="third">
+                <h2>Safe &amp; Secure</h2>
+                <p>We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
+                <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
+            </div>
+        </section>
         <section>
-            <div id="showcase" class="row">
+            <div id="showcase" class="row grey">
                 <div class="pantheon" style="display:none;">
                     <div id="notification-container">
                         <div class="window" type="notification">
@@ -105,8 +134,8 @@
                 </div>
                 <div id="showcase-index">
                     <div>
-                        <h2>Apps You Need, Without Ones You Don't.</h2>
-                        <p>elementary OS ships with a carefully curated selection of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                        <h2>Apps You Need, Without Ones You Don’t.</h2>
+                        <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     </div>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>
@@ -117,13 +146,13 @@
                         <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
                         <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
                         <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-scratch"><li class="read-more"><img src="images/icons/apps/64/accessories-text-editor.svg" />Scratch</li></a>
+                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" />Code</li></a>
                         <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.jpg" alt="music screenshot" />
+                        <img class="app-display__image" src="images/screenshots/music.png" srcset="images/screenshots/music@2x.png 2x" alt="music screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
                             <div>
@@ -135,31 +164,31 @@
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/epiphany.jpg" srcset="images/screenshots/epiphany@2x.jpg 2x" alt="epiphany screenshot" />
+                        <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
                             <div>
                                 <h2>Epiphany</h2>
-                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.</p>
+                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use modern websites and web apps while being lighter on battery life.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/mail.jpg" alt="mail screenshot" />
+                        <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
                             <div>
                                 <h2>Mail</h2>
-                                <p>Manage multiple accounts quickly and effortlessly with conversation-based e-mail, fast-as-you-type search, new e-mail notifications, and more.</p>
+                                <p>Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.jpg" alt="photos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/photos.png" srcset="images/screenshots/photos@2x.png 2x" alt="photos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
                             <div>
@@ -171,19 +200,19 @@
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/videos.jpg" srcset="images/screenshots/videos@2x.jpg 2x" alt="videos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
                             <div>
                                 <h2>Videos</h2>
-                                <p>Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.</p>
+                                <p>Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.jpg" alt="calendar screenshot" />
+                        <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
@@ -195,7 +224,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-files">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/files.jpg" srcset="images/screenshots/files@2x.jpg 2x" alt="files screenshot" />
+                        <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
@@ -208,7 +237,7 @@
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
                         <div class="app-display__image">
-                            <img class="pantheon--fallback" src="images/screenshots/terminal.jpg" alt="terminal screenshot" />
+                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="terminal screenshot" />
                             <div class="pantheon" style="display:none;">
                                 <div class="window dark active" type="terminal">
                                     <div class="titlebar">
@@ -240,41 +269,44 @@
                             <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
-                                <p>With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search and more, who says you can't teach an old app new tricks?</p>
+                                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="showcase-tab" id="showcase-scratch">
+                <div class="showcase-tab" id="showcase-code">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/scratch.jpg" srcset="images/screenshots/scratch@2x.jpg 2x" alt="scratch screenshot" />
+                        <img class="app-display__image" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/accessories-text-editor.svg" alt="scratch icon" />
+                            <img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code icon" />
                             <div>
-                                <h2>Scratch</h2>
-                                <p>With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.</p>
+                                <h2>Code</h2>
+                                <p>Tailor-made with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/camera.jpg" srcset="images/screenshots/camera@2x.jpg 2x" alt="camera screenshot" />
+                        <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
                             <div>
                                 <h2>Camera</h2>
-                                <p>Easily snap pictures or video from a built-in webcam.</p>
+                                <p>Easily snap pictures or video from your webcam.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="slingshot" class="grey">
+        <section id="slingshot">
             <div class="app-display app-display--horizontal">
                 <div class="app-display__image">
-                    <div id="slingshot-label" data-l10n-off>Applications</div>
+                    <div id="slingshot-label" data-l10n-off>
+                        <?php include('images/pantheon/actions/system-search.svg'); ?>
+                        Applications
+                    </div>
                     <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
                     <div class="slingshot">
                         <div class="linked">
@@ -330,31 +362,70 @@
                 </div>
             </div>
         </section>
-        <section class="grid">
-            <div class="third">
-                <h2>Open Source</h2>
-                <p>Our code is available for review, scrutiny, modification, and redistribution by anyone. <a class="read-more" href="/open-source">Learn More</a></p>
-            </div>
-            <div class="third">
-                <h2>No Ads. No Spying.</h2>
-                <p>We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.</p>
-            </div>
-            <div class="third">
-                <h2>Safe &amp; Secure</h2>
-                <p>We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more. <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-16.04-lts/">Security Notices</a></p>
-            </div>
-        </section>
-        <section class="grid">
-            <div class="two-thirds">
-                <img class="inline" src="images/icons/places/128/distributor-logo.svg">
-                <div class="inline">
-                    <h2 class="text-left">Download elementary OS</h2>
-                    <h4 class="text-left">A fast and open replacement for Windows and macOS</h4>
+        <section id="parental-controls" class="grey">
+            <div class="app-display app-display--overflow">
+                <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
+                <div class="app-display__description">
+                    <h2>
+                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" />
+                        Parental Controls
+                    </h2>
+                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Time Limits</h4>
+                    <p>Set per-user time limits for weekdays, weekends, or both.</p>
+                    <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
+                    <p>Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.</p>
+                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
+                    <p>Choose just which apps are safe for your child to access. Plus, optionally allow access with your password.</p>
                 </div>
             </div>
-            <div class="third">
-                <a class="button suggested-action" href="#">Pay What You Want</a>
+        </section>
+        <section id="shortcuts">
+            <div class="app-display app-display--horizontal">
+                <img class="app-display__image" src="images/screenshots/shortcut-overlay.jpg" srcset="images/screenshots/shortcut-overlay@2x.jpg 2x" alt="elementary OS Keyboard Shortcuts"/>
+                <div class="app-display__description">
+                    <h2>User Friendly. And Keyboard Friendly.</h2>
+                    <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
+                </div>
             </div>
+        </section>
+        <section id="privacy">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>Privacy-respecting. Through and through.</h2>
+                    <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</h4>
+                    <a class="read-more" href="privacy">Our Privacy Policy</a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/devices/symbolic/audio-input-microphone-symbolic.svg'); ?>
+                        Tattle-Tale
+                    </h3>
+                    <p>elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.</p>
+                </div>
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/actions/symbolic/find-location-symbolic.svg'); ?>
+                        Location Services
+                    </h3>
+                    <p>When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.</p>
+                </div>
+                <div class="third">
+                    <h3>
+                        <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
+                        Housekeeping
+                    </h3>
+                    <p>elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <img src="images/icons/places/128/distributor-logo.svg">
+            <h2>Download elementary OS</h2>
+            <h4><?php echo $sitewide['description']; ?></h4>
+
+            <a class="button suggested-action" href="#">Pay What You Want</a>
         </section>
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>

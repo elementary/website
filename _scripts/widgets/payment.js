@@ -83,7 +83,7 @@ export default class Payment {
                     token: (token, opts) => resolve([token, opts]),
 
                     key: config.keys.stripe,
-                    name: 'elementary LLC.',
+                    name: 'elementary, Inc.',
                     description: this.description,
                     locale: this.language,
 
