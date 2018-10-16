@@ -63,7 +63,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
             var $m = $('.js-leanmodal-active .modal__shipping')
             // GET /api/gelocate
             // with the parameters "shipping" and "item" (printful variant id)
-            $.getJSON('/api/geolocate?shipping&item=' + printfulId, function (data) {
+            $.getJSON(baseUrl + 'api/geolocate?shipping&item=' + printfulId, function (data) {
                 // Update price information
                 if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
                     $m.text('+ $' + data['shipping']['estimates'][0]['cost'] + ' estimated shipping')
