@@ -7,7 +7,7 @@
 
 // Here is an array of events, holding an array with start and end dates.
 $event_expires = array(
-    //'juno 0.5.0 release' => [new DateTime('1/1/'), new DateTime('1/1/21')]
+    'juno 5.0 release' => [new DateTime('2018-10-11T19:00:00Z'), new DateTime('2018-10-16T19:00:00Z')]
 );
 
 /**
@@ -44,7 +44,7 @@ function event_active (string $event) {
  * @return {String} - Text to use in cookie
  */
 function event_cookie_encode (string $text) {
-    return urlencode(str_replace([' ', '.', '/'], '_', $text));
+    return urlencode('event_' . str_replace([' ', '.', '/'], '_', $text));
 }
 
 /**
@@ -57,7 +57,7 @@ function event_cookie_encode (string $text) {
  * @return {Boolean} - True if cookie was set
  */
 function event_cookie_set (string $event, $value) {
-    $string = event_cookie_encode('event_' . $event);
+    $string = event_cookie_encode($event);
     $expires = time() + 60 * 60 * 24 * 365; // One year in the future
 
     return setcookie($string, $value, $expires, '/', '', false, true);
@@ -72,7 +72,7 @@ function event_cookie_set (string $event, $value) {
  * @return {*} - Value of event cookie
  */
 function event_cookie_get (string $event) {
-    $string = event_cookie_encode('event_' . $event);
+    $string = event_cookie_encode($event);
 
     if (isset($_COOKIE[$string])) {
         return $_COOKIE[$string];

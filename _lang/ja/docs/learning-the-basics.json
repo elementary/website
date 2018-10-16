@@ -1,12 +1,12 @@
 {
     "Learning the Basics": "基本操作を身に付ける",
-    "As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.": "どのオペレーティングシステムであってもあなたが詳しくない箇所はいくつかあるでしょう。このセクションでは、あなたがまだお気づきではなさそうな有用な情報だけではなく、シンプルに、Web の閲覧やミュージックの再生といった日々のタスクをこなす方法を扱います。",
+    "As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.": "どのオペレーティングシステムであってもあなたが詳しくない箇所はいくつかあるでしょう。このセクションでは、あなたがまだお気づきではなさそうな有用な情報だけではなく、シンプルに、Web の閲覧や音楽の再生といった日々のタスクをこなす方法を扱います。",
     "The Desktop": "デスクトップ",
     "The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Wallpaper</strong>.": "elementary OS のデスクトップはシンプルで理解するのは簡単です。デスクトップはパネルとドックの二つの要素から成り立っています。<strong><a href=\"/docs/learning-the-basics#system-settings\">システム設定</a></strong>の<strong>デスクトップ</strong>内の<strong>壁紙</strong>から、デスクトップの壁紙をカスタマイズすることができます。",
     "The Panel": "パネル",
     "At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.": "画面上部にはパネルがあるのがお分かりいただけるでしょう。左にはアプリケーションメニュー、中央には時間と日付、そして右にはインジケーターがあります。",
     "Applications Menu": "アプリケーションメニュー",
-    "On the left side of the panel is the Applications Menu. Selecting <strong>Applications</strong> opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "パネルの左側にあるのはアプリケーションメニューです。<strong>アプリケーション</strong>を選択することでインストールしたすべてのアプリの一覧を表示したメニューを起動します。下部にあるページャーを使用するかスクロールすることで複数のアプリのページを見ることができます。また上部にあるビュースイッチャーを使用してグリッドビューとカテゴリービューを切り替えることもできます。",
+    "On the left side of the panel is the Applications Menu. Selecting <strong>Applications</strong> opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "パネルの左側にあるのはアプリケーションメニューです。<strong>アプリケーション</strong>を選択することで、インストールされたすべてのアプリの一覧を表示するメニューが開きます。下部にあるページャーを使用するかスクロールすることで複数のアプリのページを見ることができます。また上部にあるビュースイッチャーを使用してグリッドビューとカテゴリービューを切り替えることもできます。",
     "You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:": "アプリを名前かキーワードで検索して、関連したアクションをすることができます。またシステム設定パネルを検索することもできます。検索で見つけられるアクションは以下の通りです。",
     "Shutdown and Restart": "シャットダウンと再起動",
     "Compose Message": "メッセージの作成",
@@ -62,7 +62,7 @@
     "Installing Apps": "アプリのインストール",
     "elementary OS comes bundled with <strong>AppCenter</strong>, an app store for free apps. Installing a new app from AppCenter is easy:": "elementary OS には <strong>AppCenter</strong> というフリーのアプリのためのアプリストアが付属しています。AppCenter から新たにアプリをインストールするのは簡単です。",
     "Open the <strong>AppCenter</strong> app.": "<strong>AppCenter</strong> アプリを開きます。",
-    "Search in the top-right, or browse.": "右上から検索するか、ブラウズします。",
+    "Search in the top-right, or browse.": "右上からアプリを検索するか、閲覧します。",
     "Click <strong>Install</strong> next to the app you want to install.": "インストールしたいアプリの隣にある<strong>インストール</strong>をクリックします。",
     "You may be asked for your password prior to installing an app.": "アプリのインストールに先立って、パスワードを尋ねられることがあります。",
     "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki.</em>": "<em>注意: AppCenter で利用可能ではないソフトウェアもあります。一般的なインターネットからのソフトウェアのダウンロードは推奨しませんが、Ubuntu 16.04 LTS と互換性があるアプリは elementary OS Loki で動作するはずです。</em>",
@@ -72,7 +72,7 @@
     "System Settings": "システム設定",
     "elementary OS comes with a handy app called &quot;System Settings&quot; that controls all of your system-wide (or &quot;global&quot;) preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "elementary OS には、システム全体の (または &quot;全体的な&quot;) 設定をコントロールする &quot;システム設定&quot; という便利なアプリが搭載されています。システム設定では、キーボードショートカットやディスプレイ解像度、壁紙といったようなことを調節できます。",
     "Search": "検索",
-    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "ウィンドウの上部にあるサーチバーにキーワードを入力することでお探しの設定を素早く見つけることができます。システム設定のウィンドウのコンテンツが検索に一致するものをフィルターします。",
+    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "ウィンドウの上部にある検索バーにキーワードを入力することでお探しの設定を素早く見つけることができます。システム設定のウィンドウのコンテンツが検索に一致するものをフィルターします。",
     "App Settings": "アプリの設定",
     "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "システム設定は elementary OS 全体の設定のみを扱うということを覚えておいてください。独自の設定項目を持つアプリもありますが、ここでは見つけることはできません。該当するアプリ内で探してください。"
 }
