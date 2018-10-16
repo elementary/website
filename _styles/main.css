@@ -205,9 +205,8 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "\f105";
+    content: "»";
     display: inline-block;
-    font-family: "Font Awesome\ 5 Pro";
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;
@@ -810,6 +809,7 @@ button.suggested-action,
     min-width: 250px;
     padding: 7px;
     text-shadow: none;
+    transition: opacity 200ms ease;
 }
 
 .button.flat:focus,
@@ -834,6 +834,10 @@ button.suggested-action,
     box-shadow: none;
     color: #333;
     fill: #333;
+}
+
+.button.flat:hover {
+    opacity: 0.8;
 }
 
 #logotype {

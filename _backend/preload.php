@@ -12,10 +12,10 @@ require_once __DIR__.'/here-miss.php';
 date_default_timezone_set('UTC');
 
 $sitewide['title'] = 'elementary';
-$sitewide['author'] = 'elementary LLC';
-$sitewide['description'] = 'A fast and open replacement for Windows and macOS. Pay what you want or download for free.';
+$sitewide['author'] = 'elementary, Inc.';
+$sitewide['description'] = 'The fast, open, and privacy-respecting replacement for Windows and macOS';
 $sitewide['image'] = 'https://elementary.io/images/preview.png';
-$sitewide['theme-color'] = '#3892E0';
+$sitewide['theme-color'] = '#3689e6';
 
 // Autodetect website root path
 $serverRoot = $_SERVER['DOCUMENT_ROOT'];

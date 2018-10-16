@@ -41,7 +41,7 @@
             <a class="button sub-item" href="https://github.com/elementary/mail" target="_blank" rel="noopener"><span>Mail</span></a>
             <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
             <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
-            <a class="button sub-item" href="https://github.com/elementary/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/code" target="_blank" rel="noopener"><span>Code</span></a>
             <a class="button sub-item" href="https://github.com/elementary/screenshot" target="_blank" rel="noopener"><span>Screenshot</span></a>
             <a class="button sub-item" href="https://github.com/elementary/terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
             <a class="button sub-item" href="https://github.com/elementary/videos" target="_blank" rel="noopener"><span>Videos</span></a>
