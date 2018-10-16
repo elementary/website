@@ -1,20 +1,11 @@
 <?php
 
-////    API for Geolocating
+require_once __DIR__.'/../_backend/classify.functions.php';
+require_once __DIR__.'/../_backend/classify.get_ip.php';
+require_once __DIR__.'/../_backend/store/address.php';
+require_once __DIR__.'/../_backend/store/api.php';
 
-// Option 1. Download
-// Parameters:
-// - download [no value]
-// Outputs:
-// {
-//     "ip": "92.26.51.149",
-//     "download": {
-//         "region": "ams3",
-//         "timecode": "MTUzMzcyODk1MA=="
-//     }
-// }
-
-// Option 2. Shipping
+////    API for Geolocating Shipping
 // Parameters:
 // - shipping [no value]
 // - item (printful variant id of 1 product)
@@ -27,42 +18,7 @@
 //     }
 // }
 
-if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
-    $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
-} else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} else if (!empty($_SERVER['REMOTE_ADDR'])) {
-    $ip = $_SERVER['REMOTE_ADDR'];
-} else {
-    $ip = false;
-}
-
-// DEVELOPER OVERRIDE
-// Override IP here
-//$ip = '92.26.51.149';
-
-require_once __DIR__.'/../_backend/classify.functions.php';
-
-if ( isset($_GET['download']) ) {
-    $region = getDownloadRegion($ip);
-    if ( is_array($region) ) {
-        $hash = getIPHash($ip);
-        $region = $region[$hash];
-    }
-    date_default_timezone_set('UTC');
-    $timecode = base64_encode(time());
-    //$download_link = '//'.$region.'.dl.elementary.io/download/'.$timecode.'/';
-    $result = array(
-        'ip' => $ip,
-        'download' => array(
-            'region' => $region,
-            'timecode' => $timecode,
-        ),
-    );
-    echo json_encode($result);
-} else if ( isset($_GET['shipping']) ) {
+if ( isset($_GET['shipping']) ) {
     $estimatedAddress = getCurrentLocation($ip);
 
     $result = array(
@@ -73,8 +29,6 @@ if ( isset($_GET['download']) ) {
     );
 
     if ( !empty($_GET['item']) ) {
-        require_once __DIR__.'/../_backend/store/address.php';
-        require_once __DIR__.'/../_backend/store/api.php';
         $address = new \Store\Address\Address();
         $address->set_line1('');
         $address->set_country($estimatedAddress['countryCode']);
