@@ -73,11 +73,6 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 } catch (e) {
                     console.log(e)
                 }
-                if (typeof data['shipping']['estimates'][0]['cost'] !== 'undefined' && data['shipping']['estimates'][0]['cost']) {
-                    $m.text('+ $' + data['shipping']['estimates'][0]['cost'] + ' estimated shipping')
-                } else {
-                    $m.text('')
-                }
             })
         }
 
