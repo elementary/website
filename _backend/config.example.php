@@ -5,10 +5,10 @@
 $config = array(
 
     'release_title'    => 'Juno',
-    'release_version'  => '5',
-    'release_filename' => 'elementaryos-5.0-stable.iso',
-    'release_size'     => '1.5 GB',
-    'release_magnet'   => 'aaabbbcccdddeeefff0123456789abcdefabcdef',
+    'release_version'  => '5.0',
+    'release_filename' => 'elementaryos-5.0-stable.20181016.iso',
+    'release_size'     => '1.48 GB',
+    'release_magnet'   => 'f5b31b1bd67bf65fe97be298ec7c473cb2e3e201',
 
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
