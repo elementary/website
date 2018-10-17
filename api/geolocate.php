@@ -18,7 +18,7 @@ require_once __DIR__.'/../_backend/store/api.php';
 //     }
 // }
 
-if ( isset($_GET['shipping']) ) {
+if ( isset($_GET['shipping']) && !empty($_GET['item']) ) {
     $estimatedAddress = getCurrentLocation($ip);
 
     $result = array(
@@ -28,7 +28,12 @@ if ( isset($_GET['shipping']) ) {
         ),
     );
 
-    if ( !empty($_GET['item']) ) {
+    if (
+        !empty($estimatedAddress['countryCode']) &&
+        !empty($estimatedAddress['stateCode']) &&
+        !empty($estimatedAddress['city']) &&
+        !empty($estimatedAddress['postcode'])
+    ) {
         $address = new \Store\Address\Address();
         $address->set_line1('');
         $address->set_country($estimatedAddress['countryCode']);

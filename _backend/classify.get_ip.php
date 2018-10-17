@@ -14,4 +14,6 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 
 // DEVELOPER OVERRIDE
 // Override IP here
-//$ip = '92.26.51.149';
+if ( !$ip || $ip = '127.0.0.1' ) {
+    $ip = '78.148.208.61';
+}
