@@ -13,31 +13,25 @@ require_once __DIR__.'/log-echo.php';
 require_once __DIR__.'/geoip2.phar';
 use GeoIp2\Database\Reader;
 
-////    ipCheck
+////    getDownloadRegion
 // Lookup the IP, and classify it by:
 // - Continent
 // - Country
 // - Timezone
 // Returns either a string of the selected region,
 // or an array of two regions.
-function ipCheck($hostname, $debug = false) {
+function getDownloadRegion($hostname, $debug = false) {
 
     try {
-        if ( $debug ) {
-            echo $hostname."\n";
-        }
         if (!class_exists('GeoIp2\Database\Reader')) {
             throw new \Exception('Class GeoIp2\Database\Reader not found');
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug ) {
-            var_dump($record);
-            echo "\n";
-        }
+
         $continent = $record->continent->code;
         $country   = $record->country->isoCode;
-        $longitude  = $record->location->longitude;
+        $longitude = $record->location->longitude;
 
     } catch (\Exception $e) {
         if ( $debug ) {
@@ -48,12 +42,12 @@ function ipCheck($hostname, $debug = false) {
 
         $continent = false;
         $country   = false;
-        $longitude  = false;
+        $longitude = false;
     }
 
     if ( $debug ) {
         echo 'Continent: "'.$continent.'"'."\n";
-        echo 'Country: "'.$country.'"'."\n";
+        echo 'Country: "'  .$country  .'"'."\n";
         echo 'Longitude: "'.$longitude.'"'."\n";
     }
 
@@ -118,10 +112,10 @@ function ipCheck($hostname, $debug = false) {
 
 }
 
-////    ipHash
+////    getIPHash
 // Hashes the given IP to return either a 0 or a 1 consistently for the same IP.
-// Used when balancing between two regions returned by ipCheck.
-function ipHash($hostname, $debug = false) {
+// Used when balancing between two regions returned by getDownloadRegion.
+function getIPHash($hostname, $debug = false) {
     $hash = array_sum(str_split($hostname));
     if ( $debug ) {
         echo 'Hash: "'.$hash.'"'."\n";
@@ -140,18 +134,12 @@ function ipHash($hostname, $debug = false) {
 function getCurrentCountry($hostname, $debug = false) {
 
     try {
-        if ( $debug ) {
-            echo $hostname."\n";
-        }
         if (!class_exists('GeoIp2\Database\Reader')) {
             throw new \Exception('Class GeoIp2\Database\Reader not found');
         }
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
-        if ( $debug ) {
-            var_dump($record);
-        }
-        $country   = $record->country->isoCode;
+        $country = $record->country->isoCode;
 
     } catch (\Exception $e) {
         if ( $debug ) {
@@ -167,4 +155,52 @@ function getCurrentCountry($hostname, $debug = false) {
     }
 
     return $country;
+}
+
+
+function getCurrentLocation($hostname, $debug = false) {
+
+    try {
+        if ( $debug ) {
+            echo $hostname."\n";
+        }
+        if (!class_exists('GeoIp2\Database\Reader')) {
+            throw new \Exception('Class GeoIp2\Database\Reader not found');
+        }
+        $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
+        $record = $reader->city($hostname);
+
+        $city        = $record->city->name; // 'Minneapolis'
+        $state       = $record->mostSpecificSubdivision->name ; // 'Minnesota'
+        $stateCode   = $record->mostSpecificSubdivision->isoCode; // 'MN'
+        $country     = $record->country->name; // 'United States'
+        $countryCode = $record->country->isoCode; // 'US'
+        $postcode    = $record->postal->code; // '55455'
+        $continent   = $record->continent->code;
+
+    } catch (\Exception $e) {
+        if ( $debug ) {
+            echo $e->getMessage();
+        } else {
+            error_log($e->getMessage());
+        }
+
+        $city        = false;
+        $state       = false;
+        $stateCode   = false;
+        $country     = false;
+        $countryCode = false;
+        $postcode    = false;
+        $continent   = false;
+    }
+
+    return array(
+        'city' => $city,
+        'state' => $state,
+        'stateCode' => $stateCode,
+        'country' => $country,
+        'countryCode' => $countryCode,
+        'postcode' => $postcode,
+        'continent' => $continent,
+    );
 }
