@@ -15,7 +15,6 @@ if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 // DEVELOPER OVERRIDE
 // Override IP here
 if (
-    !$ip ||
     $ip == '127.0.0.1' ||
     isset($_GET['ip_override'])
 ) {
