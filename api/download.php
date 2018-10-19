@@ -58,21 +58,37 @@ foreach ($products as $product) {
         if ($isoMajor != null) {
             // Set $currentMajor as the first number from the current release version
             list($currentMajor) = explode('.', $config['release_version']);
+            // Set $previousMajor as the first number from the previous release version
+            list($previousMajor) = explode('.', $config['previous_version']);
+
             // If the purchased major matches the current major
             if ($isoMajor == $currentMajor) {
                 // Override $isoVersion to match the current release,
                 // so long as it's only a minor upgrade.
                 $isoVersion = $config['release_version'];
+                // $isoVersion is either:
+                // 1. an outdated product that was purchased
+                // 2. a minor upgrade version to a product that was purchased
+                os_payment_setcookie($isoVersion, $charge['amount']);
+                go_home();
+
+            // If the purchased major matches the previous major
+            } else if ($isoMajor == $previousMajor) {
+                // Override $isoVersion to match the previous release,
+                // so long as it's only a minor upgrade.
+                $isoVersion = $config['previous_version'];
+                // $isoVersion is either:
+                // 1. an outdated product that was purchased
+                // 2. a minor upgrade version to a product that was purchased
+                os_payment_setcookie($isoVersion, $charge['amount']);
+                header('Location: ' . $sitewide['root'] . '/previous');
+                exit;
+
+            // Was too old or not determinable
+            } else {
+                go_home();
             }
+
         }
     }
 }
-
-// $isoVersion is either:
-// 1. an outdated product that was purchased
-// 2. a minor upgrade version to a product that was purchased
-if ($isoVersion !== false) {
-    os_payment_setcookie($isoVersion, $charge['amount']);
-}
-
-return go_home();
