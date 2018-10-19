@@ -26,6 +26,7 @@ $output = array(
     ),
 
     'user' => array(
+        'ip' => $ip,
         'region' => $region,
         'timecode' => $timecode,
         'trackme' => $trackme
