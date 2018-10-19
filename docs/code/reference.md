@@ -125,6 +125,7 @@ than good.
 
 ## Variable names, class names, function names {#variable-names-class-names-function-names}
 
+Variable names should be lower case while Class names should be camel cased. Contants should be written in all capitals.
 
     my_variable = 5;     // Variable names
     MyClass              // Class names
@@ -177,7 +178,7 @@ Opt for the second one, it's much cleaner.
 
 Gtk widgets are intended to respond to click events that can be described
 as "press + release" instead of "press". Use `toggle` and `release` events
-instead of `press`.
+instead of `press`. The "press + release" model allows for more granular actions.
 
 ## Columns per line {#columns-per-line}
 
@@ -273,13 +274,13 @@ elementary has always been known for its strong focus on great design, but if yo
 
 Let’s say you spent the last few hours re-designing the Search Engine Manager dialog in Midori and you want to bring this work to the attention of Midori’s developers. You could file a bug report something like “Search engine popup sucks” and paste your mockup and be done. But that approach isn’t going to win you any friends and your report will probably be marked “opinion” or “invalid”. Instead, we should consider the amount of work it will take to implement the new design and try to present it in a way that gets developers excited about the overall vision without demanding 1,000 lines of code in one shot.
 
-## Use Blueprints {#use-blueprints}
+## Use GitHub {#use-blueprints}
 
-Firstly, we want to present the overall vision of our grand new design. So we should file a new blueprint (in this example, we’d file it [here](http://blueprints.launchpad.net/midori)). Name it something explicit and try to avoid titles that marginalize developer’s existing work. Something like “search-engine-manager-redesign” works just fine. In this blueprint we want to describe our motivations for the redesign. What are the problems with the current design and what does our new design aim to solve? Common reasons for a redesign can include minimizing window chrome, taking advantage of new toolkit elements, making the UI more consistent with other apps, etc. This is also a good place to link to that mockup we were talking about earlier. If your design is really involved, you can even link to an external specification (Google Docs work great for getting feedback) where you have a chance to really get into the nitty gritty of your idea.
+If you have an idea for a new design that you think would improve a project file an issue on GitHub with your proposal. This will get a response from a team member and will start the design process. Name your issue something explicit and try to avoid titles that marginalize developer’s existing work. Something like “search-engine-manager-redesign” works just fine. In this issue we want to describe our motivations for the redesign. What are the problems with the current design and what does our new design aim to solve? Common reasons for a redesign can include minimizing window chrome, taking advantage of new toolkit elements, making the UI more consistent with other apps, etc. This is also a good place to link to that mockup we were talking about earlier. If your design is really involved, you can even link to an external specification (Google Docs work great for getting feedback) where you have a chance to really get into the nitty gritty of your idea. If you make a good case for your proposal the team will tag your issue with `Needs Design` and `Confirmed` labels.
 
 ## Create Concise Work Items {#create-concise-work-items}
 
-Now that you’ve laid out the motivations for your design and explained the overall vision, you should break it up into small, actionable work items (also called bug reports). To continue our example, I would have reports like “Change Search Engine Manager Dialog to Popover”, “Re-order Search Engines with Drag and Drop”, “Open Search Engine Manager by clicking Search icon in URL Bar”, “Show edit and remove buttons next to engine in Search Engine Manager”, etc etc. Each bug report should describe just one small change. We do this for several reasons:
+Now that you’ve laid out the motivations for your design and explained the overall vision, you should break it up into small, actionable work items (these can be included as subtasks on your issue or as separate bug reports). To continue our example, I would have reports like “Change Search Engine Manager Dialog to Popover”, “Re-order Search Engines with Drag and Drop”, “Open Search Engine Manager by clicking Search icon in URL Bar”, “Show edit and remove buttons next to engine in Search Engine Manager”, etc etc. Each bug report should describe just one small change. We do this for several reasons:
 
 * It allows developers to deny one request without denying all of them. Face it: your design isn’t perfect and it’s very possible that a developer isn’t going to like part of it. By breaking up your design into little pieces, it allows a developer to incorporate the changes they like and ignore the ones they don’t.
 * It makes your design less intimidating. A big redesign means lots of lines of code. If your changes look like too much of a hassle, you’re going to have a hard time getting a developer to work on them. But if you present small changes that can be incorporated a bit at a time, there’s a bigger chance that your whole design will eventually be implemented.
