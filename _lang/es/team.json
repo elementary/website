@@ -1,9 +1,9 @@
 {
     "We believe in the unique combination of top-notch UX and the world-changing power of Open Source.": "Creemos en la combinación única de una experiencia de usuario de primer nivel y la fuerza del código abierto.",
     "elementary was founded in 2007 by a small group of passionate volunteers. Over the years, we&rsquo;ve been able to grow into a tiny company and fund the development of open source software. We&rsquo;re a dedicated team of developers, designers, writers, and everyday computer users crafting an incredible open computing experience. We are elementary.": "elementary fue creado en el año 2007 por un pequeño grupo de apasionados voluntarios. Con el paso de los años se ha convertido en una pequeña empresa que crea software de código abierto. Somos un equipo de desarrolladores, diseñadores y usuarios informáticos que genera una experiencia informática de código abierto de primer nivel. Somos elementary.",
-    "Mountain Daylight Time": "Horario de verano de la montaña",
-    "Pacific Daylight Time": "Horario de verano del Pacífico",
-    "Eastern Daylight Time": "Horario de verano del este",
+    "Mountain Daylight Time": "Horario de verano de la montaña de EEUU",
+    "Pacific Daylight Time": "Horario de verano del Pacífico de EEUU",
+    "Eastern Daylight Time": "Horario de verano del este de EEUU",
     "Central Daylight Time": "Horario de verano central de EEUU",
     "Central European Summer Time": "Horario de verano de centroeuropa",
     "British Summer Time": "Horario de verano británico",
@@ -15,9 +15,9 @@
     "Eastern European Summer Time": "Horario de verano de Europa del este",
     "Japan Standard Time": "Horario de Japón",
     "Community &amp; Collaborators": "Comunidad y colaboradores",
-    "elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.": "elementary no existiría sin la implicación de los miembros de la comunidad y los colaboradores de otros proyectos de código abierto.",
+    "elementary would not exist without the involvement of dedicated community members and collaborators from other free and open source projects.": "elementary no existiría sin la implicación de otros miembros de la comunidad y los colaboradores de otros proyectos de código abierto.",
     "opensourcedesign": "Diseño de código abierto",
-    "Get Involved": "Colaborar",
+    "Get Involved": "Contribución",
     "Powered by Slack": "Hecho con Slack",
     "Team &sdot; elementary": "Equipo de elementary"
 }
