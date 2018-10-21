@@ -12,16 +12,16 @@ For a simple local development environment running on PHP, you will need:
   * `php-intl`
   * `php-json`
   * `php-mbstring`
-  * `php-sqlite`
+  * `php-sqlite3`
   * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm install`
 
-These can be most easily installed with this script:
+These can be most easily installed on elementaryOS 5.0 (Ubuntu 18.04) with this script:
 
 ```
-sudo apt install php-cli php-curl php-intl php-json php-sqlite php-mbstring php-xml composer &&
+sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
 sudo apt install nodejs-legacy npm &&
 npm install
 ```
