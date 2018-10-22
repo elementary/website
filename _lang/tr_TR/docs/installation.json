@@ -23,7 +23,7 @@
     "Open Rufus": "Rufus'u Aç",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "USB sürücünüzü takın ve \"Aygıt\" listesinde seçi",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "",
-    "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "Daha önceden indirmiş olduğunuz bir ISO dosyasını seçmek için tıklayınız.",
+    "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "Daha önceden indirmiş olduğunuz bir ISO dosyasını seçmek için &quot;SEÇ&quot; düğmesine basın.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "",
     "the checksum icon": "",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "",
