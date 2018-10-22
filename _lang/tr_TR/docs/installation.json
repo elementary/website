@@ -26,7 +26,7 @@
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "Daha önceden indirmiş olduğunuz bir ISO dosyasını seçmek için &quot;SEÇ&quot; düğmesine basın.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "Elementary OS imajları için Checksum (ya da hash sum) oluşturduk, bu sayede indirdiğiniz dosyaları doğrulayabilirsiniz. Bu eksiksiz ve sorunsuz indirdiğinizden ve yükleme imajının herhangi bir şekilde bozulmadığından emin olmanızı sağlar.",
     "the checksum icon": "Checksum simgesi",
-    "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "SEÇ'e basın ve  yanındaki SHA256 ile bu hash'in eşleştiğini doğrulayın.",
+    "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "&quot;SEÇ&quot; basın ve yanındaki &quot;SHA256&quot; ile bu hash'in eşleştiğini doğrulayın.",
     "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "",
     "Booting from the Install Drive": "Kurulum diskinden önyükleme",
     "In order to start the installation process, you must boot your computer from the install drive.": "Kurulum aşamalarını başlatmak için, bilgisayarını kurulum diskinden başlatman gerekiyor. Bilgisayarının tipine göre bu süreç farklılık gösterebilir. Bu kılavuz, en sık görülen durumları anlatıyor.",
