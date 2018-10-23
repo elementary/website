@@ -162,7 +162,7 @@ For example, instead of using
 
 you should use
 
-         can_focus = false;    
+         can_focus = false;
 
 ## Vala namespaces {#vala-namespaces}
 
@@ -231,6 +231,95 @@ tab_width = 4
 [{*.html,*.xml,*.xml.in,*.yml}]
 tab_width = 2
 
+```
+
+## Saving Window State {#saving-window-state}
+
+Saving window state (i.e. size and position) should be done consistently across apps. Use the following GSchema keys:
+
+```xml
+<key name="window-maximized" type="b">
+  <default>false</default>
+  <summary>Maximized</summary>
+  <description>Whether the window is maximized</description>
+</key>
+<key name="window-position" type="(ii)">
+  <default>(1024, 750)</default>
+  <summary>Window position</summary>
+  <description>Most recent window position (x, y)</description>
+</key>
+<key name="window-size" type="(ii)">
+  <default>(-1, -1)</default>
+  <summary>Window size</summary>
+  <description>Most recent window size (width, height)</description>
+</key>
+```
+
+In your Application.vala, create an instance of `GLib.Settings` to use:
+
+```vala
+public static GLib.Settings settings;
+static construct {
+    settings = new GLib.Settings ("io.elementary.mail");
+}
+```
+
+Where you define your main window, load your settings:
+
+```vala
+main_window = new MainWindow ();
+
+int window_x, window_y;
+settings.get ("window-position", "(ii)", out window_x, out window_y);
+
+if (window_x != -1 ||  window_y != -1) {
+    main_window.move (window_x, window_y);
+}
+
+int window_width, window_height;
+settings.get ("window-size", "(ii)", out window_width, out window_height);
+var rect = Gtk.Allocation ();
+rect.width = window_width;
+rect.height = window_height;
+main_window.set_allocation (rect);
+
+if (settings.get_boolean ("window-maximized")) {
+    main_window.maximize ();
+}
+
+main_window.show_all ();
+```
+
+In your app's window, override its `configure_event` and be sure to throttle writing to GSettings to avoid thrashing the disk:
+
+```vala
+public override bool configure_event (Gdk.EventConfigure event) {
+    if (configure_id != 0) {
+        GLib.Source.remove (configure_id);
+    }
+
+    configure_id = Timeout.add (100, () => {
+        configure_id = 0;
+
+        if (is_maximized) {
+            App.settings.set_boolean ("window-maximized", true);
+        } else {
+            Mail.Application.settings.set_boolean ("window-maximized", false);
+
+            Gdk.Rectangle rect;
+            get_allocation (out rect);
+            App.settings.set ("window-size", "(ii)", rect.width, rect.height);
+
+            int root_x, root_y;
+            get_position (out root_x, out root_y);
+            App.settings.set ("window-position", "(ii)", root_x, root_y);
+        }
+
+        return false;
+    });
+
+    return base.configure_event (event);
+}
 ```
 
 # Reporting Bugs {#reporting-bugs}
