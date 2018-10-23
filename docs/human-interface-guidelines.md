@@ -614,6 +614,10 @@ All Tool Buttons should have tooltips, since they do not contain a label. This a
 
 Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.
 
+##### Keyboard Shortcuts {#tool-buttons-tooltips-keyboard-shortcuts}
+
+If a button has a related keyboard shortcut that will perform the same action, its tooltip should include the shortcut. See `Granite.Utils.markup_accel_tooltip ()` for specifics.
+
 ### Text Buttons {#text-buttons}
 
 ![Cancel button](/images/docs/human-interface-guidelines/buttons/cancel.png)
