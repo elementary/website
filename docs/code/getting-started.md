@@ -931,7 +931,7 @@ detailed description of what keys are supported and what they do.
 
 # Saving State {#saving-state}
 
-Apps should automatically save their state in elementary OS, allowing a user to re-open a closed app and pick up right where they left off. To do so, we utilize `GSettings` via `GLib.Settings`. GSettings allows your app to save certain stateful information in the form or booleans, strings, arrays, and more. It's a great solution for window size and position as well as whether certain modes are enabled or not. Note that GSettings is ideal for small amounts of configuration or stateful data, but user data (i.e. documents) should be stored on the disk.
+Apps should automatically save their state in elementary OS, allowing a user to re-open a closed app and pick up right where they left off. To do so, we utilize `GSettings` via `GLib.Settings`. GSettings allows your app to save certain stateful information in the form of booleans, strings, arrays, and more. It's a great solution for window size and position as well as whether certain modes are enabled or not. Note that GSettings is ideal for small amounts of configuration or stateful data, but user data (i.e. documents) should be stored on the disk.
 
 ## GSchema {#gschema}
 
@@ -984,10 +984,6 @@ For the simplest example, let's create a useless switch in your app, and save it
     This ensures your gschema.xml file is installed, and renames it with your app's ID to avoid filename conflicts.
 
 6. Compile and install your app to see it in action! Note that GSettings are installed at install time, not compile time. So you'll need to run `sudo ninja install` to avoid crashes from non-existent settings. To see the setting, you can open your app, toggle the swich, close it, then re-open it. The switch should retain its previous state. To see it under the hood, open dconf Editor, navigate to your apps settings at com.github.yourusername.yourrepositoryname, and watch the `useless-setting` when you toggle your switch.
-
-## Window State {#window-state}
-
-One of the most common states that apps should persist is the window state. For single-window apps, this can be very simple and include the size, position, and maximized state of the main window.
 
 #### Next Page: [Reference](/docs/code/reference) {.text-right}
 
