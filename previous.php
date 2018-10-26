@@ -1,4 +1,5 @@
 <?php
+    require_once __DIR__.'/_backend/classify.current.php';
     require_once __DIR__.'/_backend/preload.php';
     $page['title'] = 'Thank You for Downloading elementary OS';
     $page['theme-color'] = '#3E4E54';
@@ -24,7 +25,13 @@
                     include __DIR__.'/images/logotype-os.svg';
                 ?>
             </h1>
-            <!-- TODO Add link to download previous version -->
+            <!-- TODO Add tracking to download links -->
+            <div class="action-area">
+                <div class="linked">
+                    <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['previous_filename']; ?>">Download</a>
+                    <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['previous_magnet'].'&dn='.$config['previous_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link.$config['previous_filename']; ?>"><i class="fa fa-magnet"></i></a>
+                </div>
+            </div>
             <!-- TODO Add warning about outdated version -->
             <p>For help and more info, read the <a href="<?php echo $sitewide['lang-root'];?>/docs/installation#installation">installation guide</a>. If you purchased elementary OS, check your email for a receipt that includes your link to download elementary OS again for free.</p>
             <a class="button suggested-action" href="<?php echo $sitewide['lang-root'];?>/docs/installation#installation">Read Installation Guide</a>
