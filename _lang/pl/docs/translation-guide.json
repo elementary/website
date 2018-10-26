@@ -16,9 +16,9 @@
     "Go to a project you want to translate": "Przejdź do projektu, który chcesz przetłumaczyć",
     "Choose your language": "Wybierz swój język",
     "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Kliknij na &quot;Pliki&quot; i wybierz stamtąd &quot;Pobierz tłumaczenie jako plik PO&quot;",
-    "Choose your favorite text-, code- or po-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "",
+    "Choose your favorite text-, code- or po-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Wybierz swój ulubiony edytor tekstu, kodu lub plików .po (np. <a href=\"https://poedit.net/\">Poedit</a>)",
     "Start translating": "Rozpocznij tłumaczenie",
-    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page that you downloaded them from.": "",
+    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page that you downloaded them from.": "Gdy już skończysz, użyj opcji &quot;Prześlij tłumaczenie&quot; w menu &quot;Pliki&quot; na tej samej stronie,  z której pobrałeś pliki do tłumaczenia.",
     "Additional Information": "Informacje dodatkowe",
     "We won't support translations in the following pages:": "Nie obsługujemy tłumaczeń z następujących stron:"
 }
