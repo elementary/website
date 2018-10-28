@@ -307,6 +307,12 @@ input:focus + .focus-reveal {
     will-change: transform;
 }
 
+#showcase.initialized > div h2::selection, #showcase.initialized > div p::selection {
+    text-shadow: none;
+    color: black;
+    background-color: lightgrey;
+}
+
 #showcase.initialized > div#showcase-index {
     left: -100%;
     padding: 48px 0;
