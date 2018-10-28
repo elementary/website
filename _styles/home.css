@@ -455,7 +455,6 @@ input:focus + .focus-reveal {
 }
 
 #slingshot .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
@@ -577,7 +576,6 @@ input:focus + .focus-reveal {
 }
 
 .app {
-    display: inline-block;
     float: left;
     height: 116px;
     margin: 0;
@@ -897,7 +895,6 @@ span.results-title {
 }
 
 #parental-controls .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
