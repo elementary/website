@@ -307,7 +307,7 @@ input:focus + .focus-reveal {
     will-change: transform;
 }
 
-#showcase.initialized > div h2::selection, 
+#showcase.initialized > div h2::selection,
 #showcase.initialized > div p::selection {
     text-shadow: none;
     color: black;
