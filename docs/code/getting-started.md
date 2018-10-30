@@ -933,7 +933,7 @@ detailed description of what keys are supported and what they do.
 
 Apps should automatically save their state in elementary OS, allowing a user to re-open a closed app and pick up right where they left off. To do so, we utilize `GSettings` via [`GLib.Settings`](https://valadoc.org/gio-2.0/GLib.Settings.html). GSettings allows your app to save certain stateful information in the form of booleans, strings, arrays, and more. It's a great solution for window size and position as well as whether certain modes are enabled or not. Note that GSettings is ideal for small amounts of configuration or stateful data, but user data (i.e. documents) should be stored on the disk.
 
-## GSchema {#gschema}
+## Using GSettings {#using-gsettings}
 
 For the simplest example, let's create a useless switch in your app, and save its state.
 
