@@ -307,7 +307,7 @@
                         <?php include('images/pantheon/actions/system-search.svg'); ?>
                         Applications
                     </div>
-                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg' alt="An arrow that points to Applications name"></div>
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg' alt=""></div>
                     <div class="slingshot">
                         <div class="linked">
                             <div id="slingshot-grid-button" class="button active">
