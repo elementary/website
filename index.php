@@ -421,7 +421,7 @@
             </div>
         </section>
         <section class="cta">
-            <img src="images/icons/places/128/distributor-logo.svg" alt="Elementary OS logo">
+            <img src="images/icons/places/128/distributor-logo.svg" alt="elementary OS logo">
             <h2>Download elementary OS</h2>
             <h4><?php echo $sitewide['description']; ?></h4>
 
