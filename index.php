@@ -92,7 +92,7 @@
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" alt="elementary OS AppCenter icon"/>
+                    <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
                     <h1>Get it on <span>AppCenter</span></h1>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <div class="buttons">
