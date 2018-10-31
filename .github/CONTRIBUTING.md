@@ -22,7 +22,7 @@ These can be most easily installed on elementaryOS 5.0 (Ubuntu 18.04) with this 
 
 ```
 sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
-sudo apt install nodejs-legacy npm &&
+sudo apt install nodejs npm &&
 npm install
 ```
 
