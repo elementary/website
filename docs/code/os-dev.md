@@ -46,11 +46,11 @@ To restore normal behavior simply enable "Use default value" again. *Cerbere* wi
 
 ## Gala
 *Gala* is the window manager of elementary OS. When it crashes or freezes it can be difficult to get going again. Here's how to do it:
-1. Go to one of the virtual consoles by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F1</kbd>.
+1. Go to one of the virtual consoles by pressing: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F1</kbd>.
 2. Login.
 3. If *Gala* didn't crash but froze, you can kill it by running `killall gala`.
 4. You unfortunatly can't start *Gala* from here, so we start a *Terminal* by running: `DISPLAY=:0 io.elementary.terminal`.
-5. Switch back to the graphical session by running: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F7</kbd>.
+5. Switch back to the graphical session by pressing: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F7</kbd>.
 6. In the newly opened *Terminal* restart *Gala* by running: `(gala -r &) &`.
 
 *Gala* should start and you can close the *Terminal*. If *Gala* can't start, you can reinstall the latest stable version by running: `sudo apt install --reinstall gala`.
