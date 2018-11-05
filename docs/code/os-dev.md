@@ -52,4 +52,4 @@ To restore normal behavior simply enable "Use default value" again. *Cerbere* wi
 4. Restart *Gala* by running: `DISPLAY=:0 gala --replace &`.
 5. Switch back to the graphical session by pressing: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F7</kbd>.
 
-*Gala* should start and you can close the *Terminal*. If *Gala* can't start, you can reinstall the latest stable version by running: `sudo apt install --reinstall gala`.
+If *Gala* doesn't start, you can reinstall the latest stable version by running: `sudo apt install --reinstall gala`.
