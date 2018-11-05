@@ -1,6 +1,9 @@
 # elementary OS Development
 Want to contribute code to elementary OS itself? Here are some tips.
 
+## Vala linting
+To make it easier to follow the [elementary Code-Style guidelines](https://elementary.io/docs/code/reference#code-style) you can use [Vala-lint](https://github.com/elementary/vala-lint).
+
 ## GtkInspector
 Use the [GtkInspector](https://wiki.gnome.org/Projects/GTK+/Inspector) to make development easier.
 
