@@ -881,8 +881,8 @@ item1.item_activated.connect (() => {
 });
 
 var item2 = new Dbusmenu.Menuitem ();
-item1.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 2");
-item1.item_activated.connect (() => {
+item2.property_set (Dbusmenu.MENUITEM_PROP_LABEL, "Item 2");
+item2.item_activated.connect (() => {
     message ("Item 2 activated");
 });
 
