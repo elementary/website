@@ -5,7 +5,17 @@ Want to contribute code to elementary OS itself? Here are some tips.
 To make it easier to follow the [elementary Code-Style guidelines](https://elementary.io/docs/code/reference#code-style) you can use [Vala-lint](https://github.com/elementary/vala-lint).
 
 ## GtkInspector
-Use the [GtkInspector](https://wiki.gnome.org/Projects/GTK+/Inspector) to make development easier.
+Use the [GtkInspector](https://wiki.gnome.org/Projects/GTK+/Inspector) to make development easier.  
+Make sure you've got the `elementary-sdk` installed. It's disabled by default. To enable it run:
+```
+gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
+```
+Launch it by pressing: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>.
+
+You can also run it temporarily together with your app by running:
+```
+GTK_DEBUG=interactive your-app
+```
 
 ## Build dependencies
 Instead of manually installing all dependencies mentioned in a package's readme you can install them by running:
