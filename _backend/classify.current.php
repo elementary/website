@@ -1,22 +1,11 @@
 <?php
 
 require_once 'classify.functions.php';
+require_once 'classify.get_ip.php';
 
-if (!empty($_SERVER['HTTP_CF_CONNECTING_IP'])) {
-    $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
-} else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} else if (!empty($_SERVER['REMOTE_ADDR'])) {
-    $ip = $_SERVER['REMOTE_ADDR'];
-} else {
-    $ip = false;
-}
-
-$region = ipCheck($ip);
+$region = getDownloadRegion($ip);
 if ( is_array($region) ) {
-    $hash = ipHash($ip);
+    $hash = getIPHash($ip);
     $region = $region[$hash];
 }
 

@@ -70,10 +70,10 @@ $l10n->begin_html_translation();
 
         <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
+        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" media="all" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
@@ -145,7 +145,6 @@ $l10n->begin_html_translation();
                 </ul>
                 <ul class="right">
                     <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://plus.google.com/+elementary" target="_blank" rel="noopener" data-l10n-off title="Google+"><i class="fab fa-google-plus-g"></i></a></li>
                     <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
                     <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fab fa-medium-m"></i></a></li>
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
