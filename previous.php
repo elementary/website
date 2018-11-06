@@ -5,13 +5,15 @@
     $page['theme-color'] = '#3E4E54';
 
     $already_paid = (os_payment_getcookie($config['previous_version']) > 0);
+    // TODO Remove Override
+    $already_paid = true;
     if (!$already_paid) {
         header("Location: " . $sitewide['root']);
         exit;
-    } else {
+    }
 
-        include $template['header'];
-        include $template['alert'];
+    include $template['header'];
+    include $template['alert'];
 ?>
 
 <section>
@@ -50,5 +52,4 @@
 </section>
 
 <?php
-        include $template['footer'];
-    }
+    include $template['footer'];
