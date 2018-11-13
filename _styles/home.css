@@ -307,6 +307,13 @@ input:focus + .focus-reveal {
     will-change: transform;
 }
 
+#showcase.initialized > div h2::selection,
+#showcase.initialized > div p::selection {
+    text-shadow: none;
+    color: black;
+    background-color: lightgrey;
+}
+
 #showcase.initialized > div#showcase-index {
     left: -100%;
     padding: 48px 0;
@@ -449,7 +456,6 @@ input:focus + .focus-reveal {
 }
 
 #slingshot .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
@@ -571,7 +577,6 @@ input:focus + .focus-reveal {
 }
 
 .app {
-    display: inline-block;
     float: left;
     height: 116px;
     margin: 0;
@@ -891,7 +896,6 @@ span.results-title {
 }
 
 #parental-controls .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }

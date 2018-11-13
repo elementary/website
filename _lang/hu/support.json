@@ -8,15 +8,14 @@
     "Epiphany": "Epiphany",
     "Music": "Zene",
     "Photos": "Fotók",
-    "Text Editor": "Szövegszerkesztő",
-    "Scratch": "",
+    "Code": "",
     "System Settings": "Rendszerbeállítások",
     "Videos": "Videók",
     "Installation": "Telepítés",
     "Get help installing elementary OS with our step-by-step guide.": "Segítség az elementary OS telepítéséhez lépésről lépésre.",
     "Learning the Basics": "Az alapok elsajátítása",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Barangolás az asztalon, többfeladatos munkafolyamatok, billentyűparancsok és sok más.",
-    "StackExchange": "StackExchange",
+    "Stack Exchange": "",
     "Check out answers to some of the most common questions we get.": "Nézze meg a leggyakoribb kérdésekre adott válaszokat.",
     "Support &sdot; elementary": "Segítség &sdot; elementary"
 }

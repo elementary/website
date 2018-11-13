@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "Izvinjavamo se, pristup vam je odbijen.",
-    "You don't have permission to view the requested resource.": "Nemate ovlaštenje da pogledate izabrani resurs.",
+    "Sorry, access is denied.": "Pristup je, nažalost, odbijen.",
+    "You don't have permission to view the requested resource.": "Nemate dozvolu za pregled željenog resursa.",
     "Go to Home Page": "Povratak na početnu stranicu",
-    "Access Denied &sdot; elementary": ""
+    "Access Denied &sdot; elementary": "Pristup odbijen &sdot; elementary"
 }

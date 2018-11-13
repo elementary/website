@@ -18,8 +18,8 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
     $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
-        var currentButton = 'amount-ten' // Default to $10 when the page loads.
-        var previousButton = 'amount-ten' // Defaulting to $10 means it will be the first previous.
+        var currentButton = 'amount-twenty' // Default to $20 when the page loads.
+        var previousButton = 'amount-twenty' // Defaulting to $20 means it will be the first previous.
 
         // ACTION: amountSelect: Track the current and previous amounts selected.
         var amountSelect = function (e) {
@@ -149,11 +149,11 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: doStripePayment: Actually process the payment via Stripe
         function doStripePayment (amount, token) {
-            var $amountTen = $('#amount-ten')
-            if ($amountTen.val() !== 0) {
+            var $amountTwenty = $('#amount-twenty')
+            if ($amountTwenty.val() !== 0) {
                 $('#pay-what-you-want').remove()
-                $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
-                currentButton = 'amount-ten'
+                $('#choice-buttons').html('<input type="hidden" id="amount-twenty" value="0">')
+                currentButton = 'amount-twenty'
                 updateDownloadButton()
             }
 
