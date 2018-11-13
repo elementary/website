@@ -3,20 +3,13 @@
 
     $page['title'] = 'OEM Resources &sdot; elementary';
 
+    $page['styles'] = array(
+        'styles/oem.css'
+    );
+
     include $template['header'];
     include $template['alert'];
 ?>
-
-<style>
-    .copy * {
-        text-align: left !important;
-    }
-
-    .copy h2:not(:first-child),
-    .copy h3 {
-        margin-top: 2em;
-    }
-</style>
 
 <div class="grid">
     <div class="two-thirds">
