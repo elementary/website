@@ -48,9 +48,6 @@
         <p>By providing an <code>oem.conf</code> file, OEMs can fill in the manufacturer name, product name, model number, and manufacturer URL. An image can also be provided which replaces the generic hardware icon.</p>
         <a href="https://github.com/elementary/switchboard-plug-about/#oem-configuration" target="_blank" rel="noopener" class="read-more">Learn More</a>
 
-        <h2 id="hardware-enablement">Hardware Enablement</h2>
-        <p>Any hardware enablement that needs to be shipped for a functioning product may be implemented. This includes shipping required drivers, i.e. for input methods, graphics, or wireless connectivity.</p>
-
         <h2 id="third-party-repos">Third-Party Repositories</h2>
         <p>It is highly discouraged to ship elementary OS with software repositories other than the defaults in elementary OS plus a single repository provided and controlled by the OEM. Third-party repos effectively give root access and the ability to overwrite any system packages to potentially untrusted third parties. Even if the party is trustworthy, an OEM’s customer’s security and privacy are now at stake if third parties are compromised, reuse their password on multiple services, etc.</p>
         <p>Further, if a third-party repository ever becomes unmaintained or unpublished, it may prevent normal system upgrades. This could hold back potentially serious security and stability updates from reaching the OEM’s users.</p>
