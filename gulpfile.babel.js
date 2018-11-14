@@ -6,12 +6,16 @@
 import gulp from 'gulp'
 import cache from 'gulp-cached'
 import changed from 'gulp-changed'
+import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
 import svgo from 'gulp-svgo'
 
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
+
+import webpack from 'webpack'
+import webpackConfig from './webpack.config.babel.js'
 
 const browsers = [
     'last 4 version',
@@ -189,12 +193,33 @@ gulp.task('styles', () => {
 })
 
 /**
+ * scripts
+ * Runs webpack to build JavaScript
+ */
+
+gulp.task('scripts', () => {
+    return new Promise((resolve, reject) => {
+        webpack(webpackConfig, (err, stats) => {
+            if (err) {
+                console.log(err)
+                reject(err)
+            }
+            console.log(stats.toString({
+                chunks: false,
+                colors: true
+            }))
+            resolve()
+        })
+    })
+})
+
+/**
  * default
  * Builds all asset files
  *
  * @returns {Task} - a gulp task for building
  */
-gulp.task('default', gulp.parallel('images', 'styles'))
+gulp.task('default', gulp.parallel('images', 'styles', 'scripts'))
 
 /**
  * watch
@@ -208,4 +233,9 @@ gulp.task('watch', gulp.series('default', function watch () {
     gulp.watch('_images/**/*.svg', gulp.series('svg'))
 
     gulp.watch('_styles/**/*.css', gulp.series('styles'))
+    gulp.watch('_scripts/**/*.js', gulp.series('scripts'))
+
+    spawn('php', ['-S', '0.0.0.0:8000', 'router.php'], {
+        stdio: 'inherit'
+    })
 }))
