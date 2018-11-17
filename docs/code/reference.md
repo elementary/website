@@ -295,3 +295,7 @@ Don’t forget to make your reports compelling. It’s up to you to sell the mer
 ## Be Prepared to Iterate {#be-prepared-to-iterate}
 
 Don’t be upset if a developer plainly states that they don’t want to implement your idea. Remember that they have plans too. You might have to go back to the drawing board a bit. Listen to their feedback. Your design might be a little over-engineered, it might conflict with other designs being worked on, or maybe it’s just in conflict with the goals and scope of the app. Remember that you’re in the position of requesting someone to devote their time to something. You’re asking for a favor. Don’t be afraid to argue a position within polite reason, but remember to stay humble.
+
+## Tracking Proposals {#tracking-proposals}
+
+Lets say you've convinced the developers of the merits of your new design, how do you keep track of the progress? GitHub has a projects feature for tracking isssues and their progress as apart of larger initiaves. Projects are managed on a per program basis at each individual GitHub repository (check out the projects board for this website [here](https://github.com/elementary/website/projects)). Projects are maintained by the owner of the GitHub repo and link back to the issues you've created.
