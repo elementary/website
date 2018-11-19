@@ -1,6 +1,6 @@
 {
     "Get support for": "Tuen saaminen ⋅",
-    "AppCenter": "Sovelluskeskus",
+    "AppCenter": "Sovelluskeskuksesta",
     "Calendar": "Kalenteri",
     "Camera": "Kamera",
     "Files": "Tiedostot",
@@ -8,14 +8,14 @@
     "Epiphany": "Epiphany",
     "Music": "Musiikki",
     "Photos": "Valokuvat",
-    "Code": "",
+    "Code": "Koodi",
     "System Settings": "Järjestelmän asetukset",
     "Videos": "Videot",
     "Installation": "Asennus",
     "Get help installing elementary OS with our step-by-step guide.": "Apua elementary OS:n asennukseen vaiheittaisesta ohjeesta.",
     "Learning the Basics": "Perusasioiden opettelu",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Käy läpi työpöytä, moniajo, pikanäppäimet ja paljon muuta.",
-    "Stack Exchange": "",
+    "Stack Exchange": "Stack Exchange",
     "Check out answers to some of the most common questions we get.": "Katso vastaukset useimmin kysyttyihin kysymyksiin.",
     "Support &sdot; elementary": "Tuki ⋅ elementary"
 }
