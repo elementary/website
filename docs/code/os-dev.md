@@ -8,8 +8,9 @@ To make it easier to follow the [elementary Code-Style guidelines](https://eleme
 
 ## GtkInspector
 
-Use the [GtkInspector](https://wiki.gnome.org/Projects/GTK+/Inspector) to make development easier.  
-Make sure you've got the `elementary-sdk` installed. It's disabled by default. To enable it run:
+The GTK [Inspector](https://wiki.gnome.org/Projects/GTK+/Inspector) is similar to a web browser's inspector, but for GTK apps. Using the Inspector can greatly speed up development, and allows you view and to test out changing properties without recompiling your app. You can also test out temporary in-app CSS.
+
+First, make sure you have the `elementary-sdk` installed. Then enable the Inspector keybinding:
 
 ```bash
 gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
@@ -60,9 +61,9 @@ Assuming that you've used `--prefix=/usr` when installing custom version you can
 sudo apt install appname --reinstall
 ```
 
-## Wingpanel
+## WingPanel
 
-When developing *Wingpanel* or *Wingpanel* related packages like the *Applications menu* and indicators you want to start the *Wingpanel* from the command line to view logs. *Wingpanel* is automatically started and restarted by *Cerbere*. To remove *Wingpanel* from it's monitored applications follow these steps:
+When developing *WingPanel* or *WingPanel* related packages like the *Applications Menu* and indicators you want to start the *WingPanel* from the command line to view logs. *WingPanel* is automatically started and restarted by *Cerbere*. To remove *WingPanel* from it's monitored applications follow these steps:
 
 1. Install the *Dconf Editor* using the *AppCenter*.
 2. Go to: `/io/elementary/desktop/cerbere/monitored-processes`
@@ -71,7 +72,7 @@ When developing *Wingpanel* or *Wingpanel* related packages like the *Applicatio
 5. In Terminal run: `killall wingpanel` to stop the current Wingpanel
 6. Start wingpanel by running: `wingpanel`
 
-To restore normal behavior simply enable "Use default value" again. *Cerbere* will notice this and start to monitor *Wingpanel* again.
+To restore normal behavior simply enable "Use default value" again. *Cerbere* will notice this and start to monitor *WingPanel* again.
 
 ## Gala
 
