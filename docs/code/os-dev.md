@@ -30,7 +30,7 @@ First, make sure you have the `elementary-sdk` installed. Then enable the Inspec
 gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
 ```
 
-Focus your app, then launch the Inspector by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> to inspect the widget beaneath your cursoe, or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> to open the inspector without a widget selected.
+Focus your app, then launch the Inspector by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> to inspect the widget beneath your cursor, or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> to open the inspector without a widget selected.
 
 You can also run it temporarily together with your app by running:
 
