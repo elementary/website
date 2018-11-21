@@ -41,7 +41,7 @@
                             if ($already_paid) {
                         ?>
                         <div id="choice-buttons">
-                            <input type="hidden" id="amount-ten" value="0">
+                            <input type="hidden" id="amount-twenty" value="0">
                         </div>
                         <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
