@@ -38,7 +38,7 @@
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "ダウンロードの確認は重要ですが、任意のステップです。ダウンロードしたファイルを検証できるように、elementary OS のディスクイメージ用のチェックサム (ハッシュサム) を用意しました。インストールの前に、ダウンロードしたファイルがチェックサムに一致するのを確認することを推奨します。この作業は、ダウンロードが完全に完了しており、そのイメージファイルが一切破損していないことを確実にします。",
     "Running the following command in your Terminal:": "\"ターミナル\" で以下のコマンドを実行します。",
     "Should produce the output:": "次のように出力されるはずです。",
-    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "注意: ここでは \"ダウンロード\" フォルダーに .iso ファイルをダウンロードしたと仮定しています。\n別の場所にダウンロードした場合は、以下のようにダウンロードファイルへの正確なパス明記してください。",
+    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "注意: ここでは \"ダウンロード\" フォルダーに .iso ファイルをダウンロードしたと仮定しています。\n別の場所にダウンロードした場合は、以下のようにダウンロードファイルへの正確なパスを指定してください",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "macOS 上で elementary OS のインストールディスクを作成するには、2 GB 以上の空き容量がある USB フラッシュドライブと、&quot;Etcher&quot; というアプリが必要です。",
     "Download Etcher": "Etcher をダウンロード",
     "etcher steps": "etcher でのステップ",
