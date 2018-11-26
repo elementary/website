@@ -1,6 +1,6 @@
 {
     "You're connected!": "接続されました！",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "インターネットに接続されています。このウィンドウを閉じても安全です。引き続きこのデバイスを使用することができます。",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "インターネットに接続されています。このウィンドウを閉じても安全です。引き続きこのデバイスを使用できます。",
     "Why is this window appearing?": "このウィンドウが表示されている理由",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS は、新しい Wi-Fi ネットワークに接続された際に、自動的にインターネット接続を確認します。もしインターネットに接続されていないことを検知した場合 (例えば、喫茶店や他の公共の施設のキャプティブポータルに接続されているとき)、このウィンドウが表示され、ログインページが表示されます。",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "ネットワークの中には、初めはキャプティブポータルのように見えるものもあり、このウィンドウが表示されますが、最終的にはインターネットに接続されます。その場合、このメッセージが表示されますが、このウィンドウを安全に閉じることができます。",
