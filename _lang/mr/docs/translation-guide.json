@@ -3,8 +3,8 @@
     "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "आमच्या वेबसाईट आणि अनुप्रयोगांना स्थानिक भाषांमध्ये अनुवादित करणे हा एलिमेंटरी ओएस जास्तीत जास्त लोकांपर्यंत पोहोचविण्याच्या प्रकियेतला एक भाग आहे. केवळ अंतर्गत अनुवाद कार्यसंघावर विश्वास ठेवण्याऐवजी आम्ही crowdsourcing वापरतो जेणेकरून कोणीही थोड्या तांत्रिक ज्ञानासह भाषांतरे सबमिट करू शकेल.संपूर्ण व्यासपीठावर आपला आवाज सुसंगत ठेवण्यासाठी आणि नवीन अनुवादकांना प्रारंभ करण्यास मदत करण्यासाठी आम्ही हे भाषांतर मार्गदर्शक बनविले आहे.",
     "Steps to Begin Translation": "अनुवाद सुरू करण्यासाठी पायऱ्या",
     "Our apps and website are translated through Weblate: A libre web-based translation management system. In order to submit translations, you should:": "मची अॅप्स आणि वेबसाइट वेबलेटद्वारे( एक मुक्त वेब-आधारित अनुवाद व्यवस्थापन प्रणाली) भाषांतरित केले जाते. अनुवाद सबमिट करण्यासाठी, आपण हे केले पाहिजे:",
-    "Have a": "बनवा एक ",
-    "Weblate account": "वेबलेट खाते ",
+    "Have a": "बनवा एक",
+    "Weblate account": "वेबलेट खाते",
     "Set your": "सेट करा",
     "language preferences": "भाषा प्राधान्ये",
     "Browse our": "बघा",
@@ -20,5 +20,5 @@
     "Start translating": "भाषांतर करणे प्रारंभ करा",
     "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page you downloaded them from.": "एकदा आपण भाषांतर पूर्ण केले की आपण त्याच पृष्ठावरुन &quot;File&quot; मेनूमधील &quot;Upload translation&quot; पर्याय वापरा.",
     "Additional Info": "अतिरिक्त माहिती",
-    "We won't support translation of the following pages:": "आम्ही खालील पृष्ठांचे भाषांतर समर्थित करणार नाहीः"
+    "We won't support translation of the following pages:": "आम्ही खालील पृष्ठांचे भाषांतर समर्थित करणार नाही :"
 }
