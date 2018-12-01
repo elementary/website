@@ -27,7 +27,7 @@
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "نحن نقوم بإنتاج شيفرة (هاش) لنسخة إليمنتري أو إس لكي تتأكد انك قمت بتحميل الملف الاصلي. هذا يضمن انك تملك الملف الكامل، وأن نسختك معطوبة بأي حالة. إضغط",
     "the checksum icon": "أيقونة الشيفرة",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "بالقرب من \"SELECT\" وتأكيد ان النص المجاور لـ \"SHA256\" هو نفسه الشيفرة التالية:",
-    "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "اذا تساوة الشيفرتان، إضغط \"START\" وإنتظر حتى إنتهاء العملية.",
+    "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "اذا تساوى الشيفرتان، إضغط \"START\" وإنتظر حتى إنتهاء العملية.",
     "Booting from the Install Drive": "الاقلاع من قرص التثبيت",
     "In order to start the installation process, you must boot your computer from the install drive.": "للبدء في عملية التثبيت، يتعين إقلاع الكمبيوتر من قرص التثبيت.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "بإفتراض أن جهازك يعمل الأن، إبدأ التثبيت بإدخال القرص وأعد تشغيل حاسوبك.",
