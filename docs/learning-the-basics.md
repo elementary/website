@@ -1,12 +1,12 @@
 # Learning the Basics {#learning-the-basics}
 
-As with every operating system there are some things that you may not be familiar with. This section will deal with how to complete simple, every day tasks such as browsing the web and listening to music, as well as other useful information that you may be unaware of.
+As with every operating system there are some things you may not be familiar with. This section will deal with how to complete simple, everyday tasks such as browsing the web and listening to music, as well as other useful info you may be unaware of.
 
 ## The Desktop {#the-desktop}
-The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Wallpaper**.
+The elementary OS desktop is very simple and easy to learn. It consists of two elements: The panel and the dock. You can customize the desktop's wallpaper through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Wallpaper**.
 
 ### The Panel {#the-panel}
-At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.
+At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right you will find the Indicators.
 
 ![The Panel](../images/docs/learning-the-basics/panel.png)
 
@@ -23,21 +23,21 @@ You can search for apps by name or by keyword and perform actions associated wit
 * New Private Browsing Window
 * Math operations (example: 23 * 5)
 
-To open the Applications Menu with the keyboard, press <kbd>⌘</kbd> + <kbd>space</kbd>.
+To open the Applications Menu with the keyboard, press <kbd>Ctrl</kbd> + <kbd>Space</kbd>.
 
 #### Indicators {#indicators}
-On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.
+On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Selecting an indicator exposes more info and related actions.
 
 A middle click or three finger tap on an indicator will present you with the following quick actions:
 
 * Sound: Toggle the mute state of the primary output device
-* Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device
-* Power: Hide/Show the percentage of battery remaining
+* Bluetooth: Toggle the primary Bluetooth device on/off
+* Power: Hide/show the remaining battery percentage 
 * Notifications: Toggle Do Not Disturb mode
 * Session: Show the shutdown dialog
 
 ### The Dock {#the-dock}
-At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.
+At the bottom of the screen is the Dock. It contains your favorite apps well, as currently open ones.
 
 ![The Dock](../images/docs/learning-the-basics/dock.png)
 
@@ -51,7 +51,7 @@ You can customize the dock's behavior through **[System Settings](/docs/learning
 
 Apps exist in their own windows which can be closed, maximized, or moved around.
 
-When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.
+When you open an app, its window appears on the desktop. Each app typically has three areas: The window buttons, a toolbar, and the contents of the app.
 
 ### HeaderBar {#headerbar}
 Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.
@@ -63,19 +63,19 @@ You can move an app's window around the desktop by dragging anywhere on the Head
 </div>
 
 #### Window Buttons {#window-buttons}
-An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.
+An app's Window Buttons are found at the top corners of its window. The button to close a window "⤫" is on the left, and the button to toggle maximization of a window "⤢" is on the right.
 
 ## Multitasking {#multitasking}
 
-elementary OS supports two types of multitasking: windows and workspaces.
+elementary OS supports two types of multitasking: Windows and workspaces.
 
 ### Windows {#windows}
-Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:
+Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows in several ways:
 
-* click on the window you want to switch to
-* click on the app's icon in the dock
-* press <kbd>Alt</kbd> + <kbd>Tab</kbd>
-* To see an overview of your open app windows, press <kbd>⌘</kbd> + <kbd>W</kbd>.
+* Click on the window you want to switch to
+* Click on the app's icon in the Dock
+* Press <kbd>Alt</kbd> + <kbd>Tab</kbd>
+* To see an overview of your open app windows, press <kbd>Ctrl</kbd> + <kbd>W</kbd>.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Windows**.
 
@@ -87,15 +87,15 @@ You can customize hot corners through **[System Settings](/docs/learning-the-bas
 ### Workspaces {#workspaces}
 By default, all app windows open on one workspace. However, you can use multiple workspaces to organize your workflow:
 
-* To see an overview of your workspaces, press <kbd>⌘</kbd> + <kbd>S</kbd>
-* To quickly move left or right through your workspaces, press <kbd>⌘</kbd> + <kbd>←</kbd> or <kbd>⌘</kbd> + <kbd>→</kbd>
-* To cycle through your workspaces, press <kbd>⌘</kbd> + <kbd>Tab</kbd>
-* You can jump straight to a specific workspace by pressing <kbd>⌘</kbd> + <kbd>1</kbd> through <kbd>⌘</kbd> + <kbd>9</kbd>. You can always jump to a new workspace with <kbd>⌘</kbd> + <kbd>0</kbd>.
-* You can also drag app windows between workspaces by dragging their icons in the workspace overview, or move them left and right between workspaces using <kbd>⌘</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>→</kbd> respectively. To see an overview of app windows across all workspaces, press <kbd>⌘</kbd> + <kbd>A</kbd>.
+* To see an overview of your workspaces, press <kbd>Ctrl</kbd> + <kbd>S</kbd>
+* To quickly move left or right through your workspaces, press <kbd>Ctrl</kbd> + <kbd>←</kbd> or <kbd>Ctrl</kbd> + <kbd>→</kbd>
+* To cycle through your workspaces, press <kbd>Ctrl</kbd> + <kbd>Tab</kbd>
+* You can jump straight to a specific workspace by pressing <kbd>Ctrl</kbd> + <kbd>1</kbd> through <kbd>Ctrl</kbd> + <kbd>9</kbd>. You can always jump to a new workspace with <kbd>Ctrl</kbd> + <kbd>0</kbd>.
+* You can also drag app windows between workspaces by dragging their icons in the workspace overview, or move them left and right between workspaces using <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>→</kbd> respectively. To see an overview of app windows across all workspaces, press <kbd>Ctrl</kbd> + <kbd>A</kbd>.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
 
-_Note: <kbd>⌘</kbd> refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
+_Note: <kbd>Ctrl</kbd> refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
 
 ### Multiple Displays {#multiple-displays}
 The panel, dock, and workspaces appear only on the primary display. Any other attached displays act as standalone workspaces. To manage and rearrange displays, head to **[System Settings](/docs/learning-the-basics#system-settings)** → **Displays**. Your primary display is marked with a filled-in star (<i class="fa fa-star"></i>) and each display's settings can be changed from its cog (<i class="fa fa-cog"></i>) menu.
@@ -110,17 +110,17 @@ elementary OS comes bundled with **AppCenter**, an app store for free apps. Inst
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki._
+_Note: Some software may not be available from AppCenter. While downloading software from the general Internet is not recommended, apps compatible with Ubuntu 18.04 LTS should work on elementary OS Juno._
 
 ## Updating {#updating}
 
 elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
 
-For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/xenial/">Ubuntu security notices</a>.
+For more on security patches, read the <a href="https://usn.ubuntu.com/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 
-elementary OS comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
+elementary OS comes with a handy app called "System Settings" controlling all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
 ![](../images/docs/learning-the-basics/switchboard.png)
 
