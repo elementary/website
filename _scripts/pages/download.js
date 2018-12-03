@@ -102,7 +102,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             var paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
             // Free download
-            if (paymentAmount < paymentMinimum) {
+            if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
