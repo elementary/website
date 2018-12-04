@@ -9,7 +9,7 @@ import jQuery from '~/lib/jquery'
 
 import config from '~/config'
 
-Promise.all([config]).then(([config]) => {
+Promise.all([config, jQuery]).then(([config, $]) => {
     $(document).ready(() => {
     
         // ACTION: .download-http.click: Track download over HTTP
