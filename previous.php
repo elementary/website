@@ -42,7 +42,6 @@
                     include __DIR__.'/images/logotype-os.svg';
                 ?>
             </h1>
-            <!-- TODO Add tracking to download links -->
             <div class="action-area">
                 <div class="linked">
                     <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['previous_filename']; ?>">Download</a>
