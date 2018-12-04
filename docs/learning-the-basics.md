@@ -37,7 +37,7 @@ A middle click or three finger tap on an indicator will present you with the fol
 * Session: Show the shutdown dialog
 
 ### The Dock {#the-dock}
-At the bottom of the screen is the Dock. It contains your favorite apps well, as currently open ones.
+At the bottom of the screen is the Dock. It contains your favorite apps as well as the currently open ones.
 
 ![The Dock](../images/docs/learning-the-basics/dock.png)
 
