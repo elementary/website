@@ -12,6 +12,10 @@ We’re also not covering design too much in this guide; that’s what the [Huma
 
 In this book, we're going to talk about building apps using GTK+, Granite, and other tech available in elementary OS, setting up a build system, hosting your code for collaborative development, working with translations, a few other bits and pieces, and finally packaging and distributing your new app.
 
+## AppCenter Publishing Requirements
+
+There are also a number of technical, metadata, legal, and other requirements for publishing your app to users via AppCenter. You can read about those on the [AppCenter Dashboard (codenamed Houston) wiki](https://github.com/elementary/houston/wiki/Before-You-Publish).
+
 # The Basic Setup {#the-basic-setup}
 
 Before we even think about writing code, you'll need a certain basic setup. This chapter will walk you through the process of getting set up. We will cover the following topics:
