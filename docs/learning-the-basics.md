@@ -120,7 +120,7 @@ For more on security patches, read the <a href="https://usn.ubuntu.com/">Ubuntu 
 
 ## System Settings {#system-settings}
 
-elementary OS comes with a handy app called "System Settings" controlling all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
+elementary OS comes with a handy app called "System Settings" which lets you control your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
 ![](../images/docs/learning-the-basics/switchboard.png)
 
