@@ -4,6 +4,10 @@
     $page['title'] = 'Thank You for Downloading elementary OS';
     $page['theme-color'] = '#3E4E54';
 
+    $page['scripts'] = array(
+        'scripts/download.js',
+    );
+
     $already_paid = (os_payment_getcookie($config['previous_version']) > 0);
     // TODO Remove Override
     $already_paid = true;
