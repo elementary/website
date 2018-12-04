@@ -31,7 +31,7 @@ On the right side of the panel are icons called Indicators. These tell you of th
 A middle click or three finger tap on an indicator will present you with the following quick actions:
 
 * Sound: Toggle the mute state of the primary output device
-* Bluetooth: Toggle the primary Bluetooth device on/off
+* Bluetooth: Toggle on/off
 * Power: Hide/show the remaining battery percentage 
 * Notifications: Toggle Do Not Disturb mode
 * Session: Show the shutdown dialog
