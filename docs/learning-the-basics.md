@@ -23,7 +23,7 @@ You can search for apps by name or by keyword and perform actions associated wit
 * New Private Browsing Window
 * Math operations (example: 23 * 5)
 
-To open the Applications Menu with the keyboard, press <kbd>Ctrl</kbd> + <kbd>Space</kbd>.
+To open the Applications Menu with the keyboard, press <kbd>⌘</kbd> + <kbd>Space</kbd>.
 
 #### Indicators {#indicators}
 On the right side of the panel are icons called Indicators. These tell you of the current status of your session, i.e. your network connections, battery power, sound input and output, notifications, etc. Selecting an indicator exposes more info and related actions.
@@ -32,12 +32,12 @@ A middle click or three finger tap on an indicator will present you with the fol
 
 * Sound: Toggle the mute state of the primary output device
 * Bluetooth: Toggle on/off
-* Power: Hide/show the remaining battery percentage 
+* Power: Hide/show remaining battery percentage 
 * Notifications: Toggle Do Not Disturb mode
 * Session: Show the shutdown dialog
 
 ### The Dock {#the-dock}
-At the bottom of the screen is the Dock. It contains your favorite apps as well as the currently open ones.
+At the bottom of the screen is the Dock. It contains your favorite apps, as well as currently open ones.
 
 ![The Dock](../images/docs/learning-the-basics/dock.png)
 
@@ -51,7 +51,7 @@ You can customize the dock's behavior through **[System Settings](/docs/learning
 
 Apps exist in their own windows which can be closed, maximized, or moved around.
 
-When you open an app, its window appears on the desktop. Each app typically has three areas: The window buttons, a toolbar, and the contents of the app.
+When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.
 
 ### HeaderBar {#headerbar}
 Many apps have a HeaderBar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.
@@ -75,7 +75,7 @@ Apps open in app windows. They can overlap on your desktop and be moved around. 
 * Click on the window you want to switch to
 * Click on the app's icon in the Dock
 * Press <kbd>Alt</kbd> + <kbd>Tab</kbd>
-* To see an overview of your open app windows, press <kbd>Ctrl</kbd> + <kbd>W</kbd>.
+* To see an overview of your open app windows, press <kbd>⌘</kbd> + <kbd>W</kbd>.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Windows**.
 
@@ -87,15 +87,15 @@ You can customize hot corners through **[System Settings](/docs/learning-the-bas
 ### Workspaces {#workspaces}
 By default, all app windows open on one workspace. However, you can use multiple workspaces to organize your workflow:
 
-* To see an overview of your workspaces, press <kbd>Ctrl</kbd> + <kbd>S</kbd>
-* To quickly move left or right through your workspaces, press <kbd>Ctrl</kbd> + <kbd>←</kbd> or <kbd>Ctrl</kbd> + <kbd>→</kbd>
-* To cycle through your workspaces, press <kbd>Ctrl</kbd> + <kbd>Tab</kbd>
-* You can jump straight to a specific workspace by pressing <kbd>Ctrl</kbd> + <kbd>1</kbd> through <kbd>Ctrl</kbd> + <kbd>9</kbd>. You can always jump to a new workspace with <kbd>Ctrl</kbd> + <kbd>0</kbd>.
-* You can also drag app windows between workspaces by dragging their icons in the workspace overview, or move them left and right between workspaces using <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>→</kbd> respectively. To see an overview of app windows across all workspaces, press <kbd>Ctrl</kbd> + <kbd>A</kbd>.
+* To see an overview of your workspaces, press <kbd>⌘</kbd> + <kbd>S</kbd>
+* To quickly move left or right through your workspaces, press <kbd>⌘</kbd> + <kbd>←</kbd> or <kbd>⌘</kbd> + <kbd>→</kbd>
+* To cycle through your workspaces, press <kbd>⌘</kbd> + <kbd>Tab</kbd>
+* You can jump straight to a specific workspace by pressing <kbd>⌘</kbd> + <kbd>1</kbd> through <kbd>⌘</kbd> + <kbd>9</kbd>. You can always jump to a new workspace with <kbd>⌘</kbd> + <kbd>0</kbd>.
+* You can also drag app windows between workspaces by dragging their icons in the workspace overview, or move them left and right between workspaces using <kbd>⌘</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> or <kbd>→</kbd> respectively. To see an overview of app windows across all workspaces, press <kbd>⌘</kbd> + <kbd>A</kbd>.
 
 You can customize these shortcuts through **[System Settings](/docs/learning-the-basics#system-settings)** → **Keyboard** → **Shortcuts** → **Workspaces**.
 
-_Note: <kbd>Ctrl</kbd> refers to the "super" key. It is also known as the "Windows" key on most PCs or the "Command" key on Macs._
+_Note: <kbd>⌘</kbd> refers to the "Super" key. It is also known as the "Windows" key on most PCs, a magnifying glass on Chromebooks, or the "Command" key on Macs._
 
 ### Multiple Displays {#multiple-displays}
 The panel, dock, and workspaces appear only on the primary display. Any other attached displays act as standalone workspaces. To manage and rearrange displays, head to **[System Settings](/docs/learning-the-basics#system-settings)** → **Displays**. Your primary display is marked with a filled-in star (<i class="fa fa-star"></i>) and each display's settings can be changed from its cog (<i class="fa fa-cog"></i>) menu.
