@@ -110,11 +110,11 @@ elementary OS comes bundled with **AppCenter**, an app store for free apps. Inst
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from AppCenter. While downloading software from the general Internet is not recommended, apps compatible with Ubuntu 18.04 LTS should work on elementary OS Juno._
+_Note: Downloading software not found in the AppCenter from the general Internet is not recommended, however apps compatible with Ubuntu 18.04 LTS should work on elementary OS Juno._
 
 ## Updating {#updating}
 
-elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
+elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. Check for new updates at least _once a week_ to make sure your computer has the latest features and protection.
 
 For more on security patches, read the <a href="https://usn.ubuntu.com/">Ubuntu security notices</a>.
 
