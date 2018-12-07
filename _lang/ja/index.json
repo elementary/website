@@ -1,5 +1,5 @@
 {
-    "The fast, open, and privacy-respecting replacement for Windows and macOS": "高速、オープンソース、そしてプライバシーを尊重。Windows や macOS の代わりに",
+    "The fast, open, and privacy-respecting replacement for Windows and macOS": "高速でオープン、かつプライバシーを尊重する、Windows や macOS の代わりになる OS",
     "Generic laptop computer": "一般的なノートパソコン",
     "elementary OS 5 Juno desktop": "elementary OS 5 Juno デスクトップ",
     "Pay What You Want:": "価格はあなた次第:",
@@ -11,12 +11,12 @@
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "&ldquo;どこでもインストールできると言ってもいいくらい、速く、手間のかからないプラットフォームです&rdquo;",
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "&ldquo;軽くて速く…しっかりしたユーザーコミュニティに支えられており、デザインと外観が非常に優れています。&rdquo;",
     "What’s New in elementary OS 5 Juno": "elementary OS 5 Juno の最新機能",
-    "Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.": "数多くのアップデートされたアプリ。刷新された \"コード\" アプリ。Night Light。ピクチャーインピクチャー。より生産的なウィンドウ管理と整列。ショートカットオーバーレイ。カラー絵文字 🎉。さらにたくさんの新機能が、elementary OS 5 Juno にやってきました。",
+    "Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.": "数多くのアップデートされたアプリ。刷新された \"コード\" アプリ。夜間モード。ピクチャーインピクチャー。より生産的なウィンドウ管理と整列。ショートカットオーバーレイ。カラー絵文字 🎉。さらにたくさんの新機能が、elementary OS 5 Juno にやってきました。",
     "Read the Announcement": "アナウンスメントを読む",
     "elementary OS AppCenter home page": "elementary OS AppCenter ホームページ",
     "Get it on": "アプリの入手場所は、",
     "AppCenter": "AppCenter",
-    "Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.": "無料アプリや有料アプリを AppCenter で入手しましょう。AppCenter は独立した開発者のための、オープンで売り手が価格を決めない販売方式 (pay-what-you-want) を採用したアプリストアです。各アプリは elementary によって評価・厳選されているため、ネイティブで、プライバシーが尊重されており、かつ安全なエクスペリエンスを保証することができます。",
+    "Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.": "無料アプリや有料アプリを AppCenter で入手しましょう。AppCenter は独立した開発者のための、オープンで売り手が価格を決めない販売方式 (pay-what-you-want) を採用したアプリストアです。各アプリは elementary によって評価・厳選されているため、ネイティブで、プライバシーが尊重されており、かつ安全なエクスペリエンスを保証できます。",
     "Discover AppCenter Apps": "AppCenter のアプリを見つける",
     "Read AppCenter Spotlight": "AppCenter のスポットライトを読む",
     "Become a Developer": "開発者になる",
@@ -100,7 +100,7 @@
     "Location Services": "位置情報サービス",
     "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "アプリが現在の位置情報にアクセスしたい場合、アプリはユーザーに許可を要求する必要があります。elementary OS は、どのアプリがどれくらいの正確さでの位置情報の使用を要求しているかをお知らせします。そしてシステム設定→セキュリティとプライバシーの設定で、後からいつでもアクセスを取り消すことができます。",
     "Housekeeping": "自動削除",
-    "elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS は、一時ファイルとゴミ箱のファイルが整理された状態を自動的に維持することができます。これはお使いのデバイスのストレージが開放された状態を維持するだけではなく、ご自身の個人情報が復元されてあなたを悩ませないことを保証するのにも役立ちます。",
+    "elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS は、一時ファイルとゴミ箱のファイルが整理された状態を自動的に維持できます。これはお使いのデバイスのストレージが開放された状態を維持するだけではなく、ご自身の個人情報が復元されてあなたを悩ませないことを保証するのにも役立ちます。",
     "Download elementary OS": "elementary OS をダウンロード",
     "Pay What You Want": "自分で支払額を決める",
     "Download elementary OS icon": "elementary OS のダウンロード アイコン",
@@ -110,5 +110,5 @@
     "Cancel": "キャンセル",
     "Download": "ダウンロード",
     "Torrent Magnet Link": "トレントマグネットリンク",
-    "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "高速、オープンソース、そしてプライバシーを尊重。Windows や macOS の代わりに &sdot; elementary OS"
+    "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "高速でオープン、かつプライバシーを尊重する、Windows や macOS の代わりになる OS &sdot; elementary OS"
 }
