@@ -22,9 +22,9 @@
     "Notifications: Toggle Do Not Disturb mode": "Notifikationer: Skift mellem Forstyr Ikke tilstand",
     "Session: Show the shutdown dialog": "Session: Vis nedlukningsdialogen",
     "The Dock": "Docken",
-    "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "I bunden af skærmen er docken. Den indeholder dine favoritprogrammer og de programmer som er åbne.",
-    "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "Dockens indhold kan let tilpasses. For at tilføje en app til docken kan du træk og slip dem fra Applikationsmenuen eller højreklikke på en åben app's ikon og vælge <strong>Behold i Docken</strong>. Hvis du vil fjerne en app fra docken, kan du trække den ud af docken og slippe den i et tomt rum på skrivebordet eller højreklikke på ikonet og fjerne markeringen <strong>Behold i Docken</strong>. Hvis du vil omarrangere apps på docken, skal du blot træk og slip dem.",
-    "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "Som standard skjuler docken sig i bunden af skærmen når et program er maksimeret. Ved at flytte musen ned i bunden af skærmen vises docken igen.",
+    "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "I bunden af skærmen er docken. Den indeholder dine favorit apps og de apps som er åbne.",
+    "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "Dockens indhold kan let tilpasses. For at tilføje en app til docken kan du træk og slip dem fra Applikationsmenuen eller højreklikke på en åben app's ikon og vælge <strong>Behold i Docken</strong>. Hvis du vil fjerne en app fra docken, kan du trække den ud af docken og slippe den i et tomt rum på skrivebordet eller højreklikke på ikonet og fjerne markeringen <strong>Behold i Docken</strong>. Hvis du vil omarrangere apps på docken, skal du blot trække og slippe dem.",
+    "By default, the dock hides off the bottom of the screen when an app is maximized. Simply move your mouse to the bottom center of the screen to reveal the dock.": "Som standard skjuler docken sig i bunden af skærmen når en app er maksimeret. Ved at flytte musen ned i bunden af skærmen vises docken igen.",
     "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "Du kan tilpasse dockens adfærd gennem <strong><a href=\"/docs/learning-the-basics#system-settings\">Systemindstillinger</a></strong> → <strong>Skrivebord</strong> → <strong>Dock</strong>.",
     "App Windows": "App Vinduer",
     "Apps exist in their own windows which can be closed, maximized, or moved around.": "Apps er i deres egne vinduer, som kan lukkes, maksimeres eller flyttes.",
@@ -39,7 +39,7 @@
     "Windows": "Vinduer",
     "Apps open in app windows. They can overlap on your desktop and be moved around. You can switch between windows several ways:": "Apps åbner i app vinduer. De kan overlappe andre vinduer på dit skrivebord og flyttes rundt. Du kan skifte mellem vinduer på flere måder:",
     "click on the window you want to switch to": "klik på det vindue du vil skifte til",
-    "click on the app's icon in the dock": "Klik på appens ikon i docken",
+    "click on the app's icon in the dock": "Klik appikonet i docken",
     "press <kbd>Alt</kbd> + <kbd>Tab</kbd>": "tryk på <kbd>Alt</kbd> + <kbd>Tab</kbd>",
     "To see an overview of your open app windows, press <kbd>&#8984;</kbd> + <kbd>W</kbd>.": "For at se en oversigt over dine åbne app-vinduer, tryk på <kbd>&#8984;</kbd> + <kbd>W</kbd>.",
     "You can customize these shortcuts through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong> → <strong>Windows</strong>.": "Du kan tilpasse disse genveje gennem  <strong><a href=\"/docs/learning-the-basics#system-settings\">Systemindstillinger</a></strong> → <strong>Keyboard</strong> → <strong>Genveje</strong> → <strong>Vinduer</strong>.",
@@ -60,7 +60,7 @@
     ") and each display's settings can be changed from its cog (": ") og hver skærms indstillinger kan ændres fra dets tandhjul (",
     ") menu.": ") menu.",
     "Installing Apps": "Installation af Apps",
-    "elementary OS comes bundled with <strong>AppCenter</strong>, an app store for free apps. Installing a new app from AppCenter is easy:": "elementary OS kommer bundled med <strong>AppCenter</strong>, en app butik til \"free apps\". Det er nemt at installere en ny app fra AppCenter:",
+    "elementary OS comes bundled with <strong>AppCenter</strong>, an app store for free apps. Installing a new app from AppCenter is easy:": "elementary OS kommer bundled med <strong>AppCenter</strong>, en app butik for \"free apps\". Det er nemt at installere en ny app fra AppCenter:",
     "Open the <strong>AppCenter</strong> app.": "Åbn <strong>AppCenter</strong> applikationen.",
     "Search in the top-right, or browse.": "Søg i øverste højre hjørne eller udforsk selv.",
     "Click <strong>Install</strong> next to the app you want to install.": "Klik <strong>Installer</strong> ved siden af den app, du vil installere.",
@@ -74,5 +74,5 @@
     "Search": "Søg",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Du kan hurtigt finde de indstillinger, du leder efter ved at skrive søgeord i feltet øverst i vinduet. Indholdet i Systemindstillings vinduet filtreres for at matche det du søger efter.",
     "App Settings": "Appindstillinger",
-    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "Husk, at Systemindstillinger kun omhandler de globale præferencer for elementary OS. Selvom nogle apps måske også har deres egne præferencer, kan du ikke finde dem her. I stedet skal du kigge efter dem i den pågældende app."
+    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "Husk, at Systemindstillinger kun omhandler de globale indstillinger for elementary OS. Selvom nogle apps måske også har deres egne indstillinger, kan du ikke finde dem her. I stedet skal du kigge efter dem i den pågældende app."
 }
