@@ -25,7 +25,7 @@
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "Nous générons une somme de contrôle (ou checksum) pour l'image d'elementary OS pour que vous puissiez vérifier le fichier que vous avez téléchargé. Ce procédé permet de s'assurer que votre téléchargement est complet et que votre image d'installation n'est en aucune façon corrompu. Cliquer",
-    "the checksum icon": "L'icône de checksum",
+    "the checksum icon": "L'icône de somme de contrôle",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "",
     "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "",
     "Booting from the Install Drive": "Démarrer sur le disque d'installation",
