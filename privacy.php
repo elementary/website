@@ -15,6 +15,8 @@
             <div class="row docs">
                 <h2>elementary OS</h2>
                 <p>We do not collect any data from elementary OS. Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.</p>
+                <h3>Online Accounts</h3>
+                <p>elementary OS optionally integrates with online account providers such as Google, Last.fm, and Fastmail via System Settings. Data from these providers may be retrieved and stored locally on your device to be used in apps such as Mail and Calendar. This data is not sent to elementary or any third party.</p>
             </div>
             <div class="row docs">
                 <h2>Website</h2>
