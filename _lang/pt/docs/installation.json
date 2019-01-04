@@ -58,10 +58,10 @@
     "Download UNetbootin": "Transferir o UNetbootin",
     "Open UNetbootin from the Dash. It will open a window like the one below:": "Abra o Unetbootin a partir do Dash. Irá abrir uma janela idêntica à seguinte:",
     "UNetbootin": "UNetbootin",
-    "Select &quot;Diskimage&quot;": "Seleciona &quot;Diskimage&quot;",
-    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Clica &quot;…&quot; para seleccionar o ISO que transferiste anteriormente.",
-    "Unplug all USB memory devices apart from the one you want to use.": "Desconecta todos os dispositivos USB excepto o que queres utilizar.",
-    "Click &quot;OK&quot; and wait for the process to finish.": "Clica &quot;OK&quot; e espera que o processo termine.",
+    "Select &quot;Diskimage&quot;": "Selecionar &quot;Diskimage&quot;",
+    "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Clicar em &quot;…&quot; para selecionar a ISO que transferiu anteriormente.",
+    "Unplug all USB memory devices apart from the one you want to use.": "Desconectar todos os dispositivos USB excepto o que quer utilizar.",
+    "Click &quot;OK&quot; and wait for the process to finish.": "Clicar em &quot;OK&quot; e espere que o processo termine.",
     "After Installation": "Após instalar",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Use o tempo para ler o <a href=\"/docs/learning-the-basics\">guia de utilizador</a> para aprender um pouco sobre o seu novo sistema operativo."
 }
