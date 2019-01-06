@@ -120,7 +120,7 @@ class L10n
         'nl' => 'Nederlands',
         'pl' => 'Polski',
         'pt_BR' => 'Português (Brasil)',
-        'pt_PT' => 'Português (Portugal)',
+        'pt' => 'Português (Portugal)',
         'ru' => 'Русский',
         'th' => 'Thai',
         'sk' => 'Slovak',
