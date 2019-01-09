@@ -81,7 +81,7 @@ foreach ($products as $product) {
                 // 1. an outdated product that was purchased
                 // 2. a minor upgrade version to a product that was purchased
                 os_payment_setcookie($isoVersion, $charge['amount']);
-                header('Location: ' . $sitewide['root'] . '/previous');
+                header('Location: ' . $sitewide['root'] . 'previous');
                 exit;
 
             // Was too old or not determinable

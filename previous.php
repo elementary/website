@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__.'/_backend/classify.current.php';
     require_once __DIR__.'/_backend/preload.php';
+    require_once __DIR__.'/_backend/os-payment.php';
     $page['title'] = 'Thank You for Downloading elementary OS';
     $page['theme-color'] = '#3E4E54';
 
@@ -9,8 +10,6 @@
     );
 
     $already_paid = (os_payment_getcookie($config['previous_version']) > 0);
-    // TODO Remove Override
-    $already_paid = true;
     if (!$already_paid) {
         header("Location: " . $sitewide['root']);
         exit;
@@ -21,18 +20,18 @@
 ?>
 
 <section>
-    <div class="grid">
-        <div class="row alert warning">
-            <div class="column alert">
-                <div class="icon">
-                    <i class="warning fas fa-4x fa-exclamation-triangle"></i>
-                </div>
-                <div class="icon-text">
-                    <h3>The release you are downloading is outdated.</h3>
-                    <p>You are attempting to download an outdated release of elementary OS that you have purchased. For the latest updates and extended support please go to <a href="https://elementary.io">elementary.io</a></p>
-                </div>
+    <div class="row alert warning">
+        <div class="column alert">
+            <div class="icon">
+                <i class="warning fas fa-4x fa-exclamation-triangle"></i>
+            </div>
+            <div class="icon-text">
+                <h3>The release you are downloading is outdated.</h3>
+                <p>You are attempting to download an outdated release of elementary OS that you have purchased. For the latest updates and extended support please go to <a href="https://elementary.io">elementary.io</a></p>
             </div>
         </div>
+    </div>
+    <div class="grid">
         <div class="two-thirds">
             <h1>
                 Thank You for Downloading
