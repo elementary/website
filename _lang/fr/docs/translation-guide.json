@@ -16,7 +16,7 @@
     "Go to a project you want to translate": "Rendez-vous au projet que vous souhaitez traduire",
     "Choose your language": "Choisissez votre langue",
     "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Cliquez sur « Fichiers » puis sélectionnez « Télécharger la traduction en gettext PO »",
-    "Choose your favorite text-, code- or PO-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Choisissez votre éditeur favori de texte, code ou PO (e.g. <a href=\"https://poedit.net/\">Poedit</a>)",
+    "Choose your favorite text-, code- or PO-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Choisissez votre éditeur favori de texte, code ou PO (ex : <a href=\"https://poedit.net/\">Poedit</a>)",
     "Start translating": "Commencez à traduire",
     "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page you downloaded them from.": "",
     "Additional Info": "",
