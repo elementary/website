@@ -116,6 +116,7 @@ class L10n
         'ko' => '한국어',
         'lt' => 'Lietuvių kalba',
         'ms' => 'bahasa Melayu',
+        'mr' => 'मराठी'
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
         'pl' => 'Polski',
