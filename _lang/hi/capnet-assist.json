@@ -1,8 +1,8 @@
 {
-    "You're connected!": "",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "",
-    "Why is this window appearing?": "",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "",
-    "You're connected! &sdot; elementary": ""
+    "You're connected!": "आप जुड़े हैं!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "आपका इंटरनेट कनेक्शन काम कर रहा है। आप इस विंडो को सुरक्षित बंद कर सकते है और अपने यंत्र का उपयोग कर सकते हैं।",
+    "Why is this window appearing?": "यह विंडो क्यों आ रहा है?",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "एलीमेंट्री ओएस अपनेआप आपके इंटरनेट कनेक्शन को चैक करता है जब आप नए वाइ-फाई नेटवर्क से कनेक्ट होते है। यदि वाईफाई से इंटरनेट नहीं मिल रहा है (यानी कि आप बंद कॉफी शॉप या दूसरे पब्लिक द्वार से जुड़ रहे है), तो यह विंडो आता है और लॉगिन पेज दिखाता है।",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "कुछ नेटवर्क पहली बार एक कैप्टिव पोर्टल के रूप में दिखाई दे सकते हैं, इस विंडो को ट्रिगर करते हैं, फिर वास्तव में कनेक्टिंग समाप्त हो जाते हैं। उन मामलों में, आप इस संदेश को देखेंगे और सुरक्षित रूप से विंडो बंद कर सकते हैं।",
+    "You're connected! &sdot; elementary": "आप जुड़े हैं! &sdot; एलीमेंट्री"
 }

@@ -1,88 +1,114 @@
 {
-    "A fast and open replacement for Windows and macOS": "نظام تشغيل سريع ومفتوح المصدر يجمع بين جمال الواجهة والبساطة",
+    "The fast, open, and privacy-respecting replacement for Windows and macOS": "البديل السريع، مفتوح المصدر، والمحافظ على الخصوصية للويندوز والماك او اس",
+    "Generic laptop computer": "الحاسبات المحمولة",
+    "elementary OS 5 Juno desktop": "إليمنتري أو إس 5 جونو",
     "Pay What You Want:": "ادفع ماشئت:",
     "Custom": "تخصيص",
     "Enter any dollar amount.": "أدخل أي قيمة بالدولار.",
-    "Purchase elementary OS": "شِراء إلمنتري او إس",
-    "0.4.1 Loki | 1.50 GB (for PC or Mac)": "0.4.1 لوكي | 1.50 GB ( على PC او Mac)",
-    "What the press is saying about elementary OS:": "ماذا تقول الصحافة عن نظام Elementary OS:",
-    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "&ldquo;\"المينتري او اس مختلف...نظام جميل وقوي يعمل حتى على الحواسيب القديمة\"&rdquo;",
-    "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "&ldquo;\"منصة سريعة يمكن تثبيتها على أي جهاز\"&rdquo;",
-    "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "&ldquo;\"خفيف وسريع. .نظام يتملك مجتمع متكامل يقف خلفه..مع تصميم ممتاز\"&rdquo;",
-    "elementary OS AppCenter categories": "فئات AppCenter المنتري او اس",
-    "The Indie, Open Source App Store": "متجر التطبيقات المستقل، مفتوح المصدر",
-    "AppCenter delivers native, Open Source apps to elementary OS. Quickly discover new apps and easily update the ones you already have. Plus, support indie developers directly through pay-what-you-want purchases.": "يقدم AppCenter تطبيقات محلية و مفتوحة المصدر لالمنتري او اس. اكتشف بسرعة تطبيقات جديدة و قم بتحديث الموجودة عندك. ايضا, ادعم المطورين مباشرة من خلال مشتريات ادفع-ما-تريد.",
-    "<a href=\"https:\/\/appcenter.elementary.io\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Discover AppCenter Apps<\/a>": "",
-    "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\">Read AppCenter Spotlight<\/a>": "<a href=\"https:\/\/medium.com\/elementaryos\/tagged\/appcenter-spotlight\" target=\"_blank\" rel=\"noopener\" class=\"read-more\"> اقرأ AppCenter Spotlight <\/a>",
+    "Purchase elementary OS": "تبرع لـ إلمنتري أو إس",
+    "elementary OS 5.0 Juno |  1.48 GB (for PC or Mac)": "إليمنتري أو إس 5.0 جونو |  1.48 جيجابايت (للحاسب والماك)",
+    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "&ldquo;المينتري أو إس مختلف... نظام جميل وقوي يعمل حتى على الحواسيب القديمة&rdquo;",
+    "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "&ldquo;منصة سريعة وسهلة يمكن تثبيتها على أي جهاز&rdquo;",
+    "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "&ldquo;خفيف وسريع. . نظام يعتمد بالكامل على مجتمع حر يقف خلفه مع تصميم ممتاز&rdquo;",
+    "What’s New in elementary OS 5 Juno": "ما الجديد في إليمنتري أو إس 5 جونو",
+    "Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.": "تطبيقات محدثة كليًا. كود جديد. وضع ليلي. صورة في صورة. نظام واجهات اكثر فعالية وانتاجية. لوحة الاختصارات. ايموجيز ملونة 🎉. والعديد من الاشياء.",
+    "Read the Announcement": "إقرأ الاعلان",
+    "elementary OS AppCenter home page": "الصفحة الرئيسية لمركز تطبيقات إليمنتري أو إس",
+    "Get it on": "افعلها",
+    "AppCenter": "مركز التطبيقات",
+    "Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.": "احصل على برامج مجانية ومدفوعة من مركز التطبيقات، مركز التطبيقات المفتوح، ادفع ما تريد لدعم المطوريين الحرين، كل منهم تم مراجعته منا لنضمن الملائمة، واحترام الخصوصية، والتجربة الآمنة.",
+    "Discover AppCenter Apps": "إكتشف تطبيقات مركز التطبيقات",
+    "Read AppCenter Spotlight": "إقرأ مقترحات مركز التطبيقات",
     "Become a Developer": "كن مطوراً",
-    "Task finished": "تم",
-    "Apps You Need, Without Ones You Don't.": "التطبيقات التي تريد، دون التي لا تريد.",
-    "elementary OS ships with a carefully curated selection of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "نظام تشغيل Elementary Os يأتي مع مجموعة من التطبيقات المختارة بعناية لتلبي الإحتياجات اليومية حتى تتمكن من إمضاء وقت أكثر في استخدام حاسوبك ووقت أقل في حذف التطبيقات عديمة الجدوى.",
-    "Music": "موسيقى",
-    "Epiphany": "المتصفح",
+    "Go Fast": "إنطلق",
+    "Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn’t slow down with updates.": "لا تنتظر طويلًا على حاسوبك، إليمنتري أو إس يبدأ بسرعة ويبقى سريع. التطبيقات تفتح بومضة وتتذكر أين كنت. وأكثر من ذلك، إليمنتري أو إس لا يبطئ مع التحديثات.",
+    "Open Source": "مفتوح المصدر",
+    "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "نحن نحترم حقوق مستخدمينا. إليمينتري أو إس مفتوح المصدر ويمكن تقيمه شيفرته البرمجية، وتدارسها، ويوزع من قبل اي شخص. وهذا ما يعزز الخصوصية والامان لنا جميعًا.",
+    "Learn More": "أقرأ المزيد",
+    "Safe &amp; Secure": "آمن ومضمون",
+    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحن مبنيين بإستخدام جنو/لينكس، واحد من أأمن الانظمة حول العالم. نفس البرامج التي تعتمد عليها وزارة الدفاع الامريكية، بنك الصين، وآخريين.",
+    "Security Notices": "تنبيهات الحماية",
+    "Task finished": "تمت المهمة",
+    "Apps You Need, Without Ones You Don’t.": "تطبيقات تحتاجها، بدون تطبيقات مزعجة معها.",
+    "elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.": "إليمنتري أو إس يأتي مع مجموعة من البرامج التي تحتاجها كل يوم، وهذا يعني انك تملك وقت اكثر لتستمع في حاسوبك بدلًا من تنظيف برمجيات خبيثة.",
+    "Music": "الموسيقى",
+    "Epiphany": "إبيثيني",
     "Mail": "البريد",
     "Photos": "صور",
-    "Videos": "فيديو",
-    "Calendar": "الرزنامة",
+    "Videos": "الفيديو",
+    "Calendar": "التقويم",
     "Files": "مدير الملفات",
     "Terminal": "الطرفية",
-    "Scratch": "Scratch",
+    "Code": "كود",
     "Camera": "كاميرا",
-    "music screenshot": "لقطة شاشة تطبيق الموسيقى",
-    "music icon": "أيقونة موسيقى",
-    "Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.": "نظم واستمع الى اغانيك.ابحث من خلال الالبوم واستعمل البحث السريع جدا , وابن مجموعاتك المفضلة.",
-    "epiphany screenshot": "لقطة شاشة المتصفح",
-    "epiphany icon": "أيقونة المتصفح",
-    "Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use HTML5 websites and web apps while being lighter on battery life.": "أبحر على الويب مع متصفح سريع وخفيف. يمكنك من استخدام مواقع HTML5 وتطبيقات الويب مع خفة على عمر البطارية.",
-    "mail screenshot": "لقطة شاشة تطبيق البريد",
+    "music screenshot": "لقطة من تطبيق الموسيقى",
+    "music icon": "أيقونة الموسيقى",
+    "Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.": "نظم وإستمع الى اغانيك. إبحث من خلال الالبوم وإستعمل البحث السريع جدا , وإبن قوائم التشغيل المفضلة.",
+    "epiphany screenshot": "لقطة من المتصفح إبيثيني",
+    "epiphany icon": "أيقونة المتصفح إيبيثني",
+    "Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use modern websites and web apps while being lighter on battery life.": "تصفح الإنترنت على متصفح سريع وخفيف. إيبيثيني يسمح لك بتصفح المواقع الجديدة وتطبيقات الانترنت وبنفس الوقت لا يسنتزف بطاريتك.",
+    "mail screenshot": "لقطة من تطبيق البريد",
     "mail icon": "أيقونة البريد",
-    "Manage multiple accounts quickly and effortlessly with conversation-based e-mail, fast-as-you-type search, new e-mail notifications, and more.": "عالج حسابات متعددة بسرعة وسهولة عبر اي_ميل مبني على المحادثات وتفتيش بسرعة كتابتك و اشعارات الاي-ميل الجديدة, والمزيد.",
-    "photos screenshot": "لقطة شاشة الصور",
-    "photos icon": "أيقونة صور",
+    "Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.": "تحكم بالعديد من الحسابات بسرعة وبدون جهد مع برنامج البريد، بسرعة طباعتك يبحث، ويصدر اشعارات مع كل بريد جديد، والكثير.",
+    "photos screenshot": "لقطة من تطبيق الصور",
+    "photos icon": "أيقونة الصور",
     "Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.": "إستورد ونظم وعدل الصور. إصنع معرض صور. شارك على فيسبوك أو فليكر.",
-    "videos screenshot": "لقطة شاشة الفيديو",
-    "videos icon": "أيقونة فيديو",
-    "Smart and simple video viewing with thumbnail previews on the seekbar, playlists, subtitle support, and even the ability to resume what was last playing.": "مستعرض فيديو ذكي وبسيط مع  مصغرات للمعاينة في شريط العرض، قائمات تشغيل، دعم الترجمة، إضافة إلى متابعة المشاهدة من التشغيل الأخير.",
-    "calendar screenshot": "لقطة شاشة التقويم",
+    "videos screenshot": "لقطة من تطبيق الفيديو",
+    "videos icon": "أيقونة الفيديو",
+    "Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.": "مشغل فيديو ذكي وبسيط، مع وجود مكتبة ومصغرات للفيديو وقوائم التشغيل ودعم الترجمة وخاصة الشاشة الكاملة الذكية والقدرة على الاستكمال من حيث انتهيت.",
+    "calendar screenshot": "لقطة من تطبيق التقويم",
     "calendar icon": "أيقونة التقويم",
     "Easily view and create events. Sync with Online Accounts like Google.": "عرض وإنشاء الأحداث بسهولة. مزامنة مع الحسابات المتصلة مثل جوجل.",
-    "files screenshot": "لقطة شاشة الملفات",
+    "files screenshot": "لقطة من مدير الملفات",
     "files icon": "أيقونة الملفات",
-    "The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.": "شريط المسار الذكي يجعل العرض سهلا من خلال التوصيلات، البحث، أو إكمال المسار. تصفح بسرعة من خلال نظام عرض العامود واستمتع بتوبويبات بجودة المتصفح مع خصائص ذكية مثل تاريخ التبويب.",
-    "terminal screenshot": "لقطة شاشة الطرفية",
-    "elementary Symbolic Icon Theme": "واجهة المنتري Symbolic Icon",
+    "The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.": "شريط المسار الذكي يجعل العرض سهلًا من خلال التوصيلات، البحث، أو إكمال المسار. تصفح بسرعة من خلال نظام عرض العامود واستمتع بتوبويبات بجودة المتصفح مع خصائص ذكية مثل تاريخ التبويبات.",
+    "terminal screenshot": "لقطة من تطبيق الطرفية",
+    "elementary Symbolic Icon Theme": "رمز للعرض من إليمنتري",
     "Home": "الرئيسية",
     "terminal icon": "أيقونة الطرفية",
-    "With a color scheme designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search and more, who says you can't teach an old app new tricks?": "مع نظام الألوان المصمم لتجنب إجهاد العين. تبويبات بجودة المتصفح مع التاريخ والتسمية الذكية، إشعارات إنهاء المهمة، نسخ ولصق طبيعي، البحث المتراكم والمزيد، من قال أنه لا يمكنك تعليم تطبيق قديم حيل جديدة؟",
-    "scratch screenshot": "لقطة شاشة سكراش",
-    "scratch icon": "أيقونة سكراش",
-    "With a folder sidebar, multiple panes, and extensions like Terminal, Web Preview, Indentation Detection, and Vim Emulation, Scratch will be the last text editor you'll ever need.": "مع ملفات الشريط الجانبي، الألواح المتعددة، والملحقات مثل الطرفية، معاينة الويب، كشف التسنين، و محاكي Vim، سكراش سيكون محرر الملفات الذي لا غنى عنه.",
-    "camera screenshot": "لقطة شاشة الكامير",
+    "Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?": "تصميم يدعم تغير الألوان ليحفظ عينيك, تصفح التبويبات العديدة مع التأريخ والتسيمة الذكية، إشعارات إنتهاء المهام، نسخ ولصق سهلة، بحث بالأوامر السابقة، حماية من اللصق، والكثير. من قال أنك لا تقدر على تعليم تطبيق قديم خدع جديدة؟",
+    "Code screenshot": "لقطة من تطبيق كود",
+    "Code icon": "أيقونة كود",
+    "Tailor-made with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.": "أنيق مع حفظ تلقائي, إدارة المشاريع، متكامل مع الجيت, أكثر من شاشة, ووضع مسافات ذكي, دعم تعديل الإعدادات، خريطة صغيرة، رموز لغة ڤالا, ويدعم الإضافات مثل الطرفية، متصف إنترنت, ومحاكي ڤيم. كود سيكون إخر محرر تحتاجه.",
+    "camera screenshot": "لقطة من تطبيق الكامير",
     "camera icon": "أيقونة كاميرا",
-    "Easily snap pictures or video from a built-in webcam.": "إلتقط الصور والفيديوهات بسهولة مع الويب كام المدمجة.",
+    "Easily snap pictures or video from your webcam.": "إلتقطت الصورة والفيديوهات بسهولة من كاميرتك.",
+    "Applications": "التطبيقات",
     "3 Ways to Explore": "3 طرق للإستكشاف",
     "Grid": "شبكة",
-    "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "عرض جميع تطبيقاتك على شبكة مرتبة أبجديا ..تفحص خلالها واعثر على المراد.",
+    "Display all your apps in an alphabetized grid. Flick through and find the one you want.": "عرض جميع تطبيقاتك على شبكة مرتبة أبجديا. تفحص خلالها واعثر على المراد.",
     "Categories": "فئات",
-    "View your apps automatically organized into categories. Perfect for large collections.": "اعرض تطبيقاتك تلقائيا حسب فئات. مثالية للمجموعات الكبيرة.",
+    "View your apps automatically organized into categories. Perfect for large collections.": "إعرض تطبيقاتك تلقائيًا حسب الفئات. رائعة للمجموعات الكبيرة.",
     "Search": "بحث",
-    "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "شغل تطبيقات، افتح لوحات الإعدادات، شغيل أوامر، وأكثر من مضيئ البحث السريع.",
-    "Open Source": "مصدر مفتوح",
-    "Our code is available for review, scrutiny, modification, and redistribution by anyone.": "الكود البرمجي متوفر للمراجعة والتدقيق والتعديل والمشاركة مع أي شخص.",
-    "Learn More": "اعرف المزيد",
-    "No Ads. No Spying.": "لا دعايات. لا تجسس.",
-    "We don't make advertising deals and we don't collect sensitive personal data. Our only income is directly from our users.": "نحن لا نعقد الصفقات الدعائية ولا نجمع البيانات الشخصية الحساسة. مدخولنا الوحيد يأتينا مباشرة من المستخدمين.",
-    "Safe &amp; Secure": "آمن ومضمون",
-    "We're built on Linux: the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحني نبني على لينكس: نفس النظام المحرك لوزارة الدفاع الأمريكية وبنك الصين وأكثر من ذلك.",
-    "Security Notices": "تنبيهات الحماية",
-    "Download elementary OS": "تحميل نظام التشغيل المنتري",
+    "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "شغل تطبيقات، إفتح لوحات الإعدادات، شغل أوامر، وأكثر بسرعة الضوء من البحث السريع.",
+    "elementary OS Parental Controls": "لوحة التحكم الاسري لـ إليمنتري أو إس",
+    "Parental Controls": "التحكم الاسري",
+    "Time Limits": "تحديد الوقت",
+    "Set per-user time limits for weekdays, weekends, or both.": "ضع محددات على إستخدام الحاسب في أيام الاسبوع، والعطلة، أو كلاهما.",
+    "Internet Use": "إستخدام الإنترنت",
+    "Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.": "تحكم بمواقع الإنترنت المسموحة. القوانين تأثر على كل التطبيقات للمستخدم، حتى لو حاول إستخدام متصفح آخر.",
+    "Manage Apps": "تحكم بالتطبيقات",
+    "Choose just which apps are safe for your child to access. Plus, optionally allow access with your password.": "اختر التطبيقات الآمنة لطفلك. ويكمنك ايضًا ان تضع لبعضها إماكنية التشغيل بكلمة سر.",
+    "elementary OS Keyboard Shortcuts": "اختصارات لوحة المفاتيح لـ إليمنتري أو إس",
+    "User Friendly. And Keyboard Friendly.": "صديق للمستخدم. وصديق للوحة المفاتيح.",
+    "elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.": "إليمنتري أو إس صمم ليكون سهل للإستخدام لأي مستخدم جديد. ولكن هذا لا يعني أنه غير قوي؛ مع إمكانية تخصيص إختصارات لوحة المفاتيح لتضمن أن تبقى إنتاجيتك عالية لو كان يومك الاول او الألف.",
+    "Privacy-respecting. Through and through.": "يحترم خصوصيتك. بكل معنى الكلمة.",
+    "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "بياناتك دائمًا ملك لك، ولك أنت فقط. نحن لا نقوم بصفقات إعلانية أو نجمع بياناتك الحساسة. نحن ممولين بشكل مباشر من مستخدمينا الذين يتبرعون لـ إليمنتري أو إس والتطبيقات الموجودة على مركز التطبيقات. وهكذا يجب أن يكون الأمر.",
+    "Our Privacy Policy": "سياسة الخصوصية الخاصة بنا",
+    "Tattle-Tale": "الثرثرة",
+    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "إليمنتري أو إس يساعدك على معرفة ماذا تفعل التطبيقات. عندما يستخدم تطبيق ميكروفونك، نعرض لك علامة لتعرف ذلك. وعندما يستخدم تطبيق الكثير من الطاقة، نخبرك بذلك.",
+    "Location Services": "تحديد الموقع",
+    "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "عندما يحاول تطبيق أن يعرف مكانك، يجب عليه أن يسألك. نعرض لك شاشة تخبرك ما التطبيق الذي يحاول الوصول، وماذا يسأل بالتفصيل. ويمكنك دائمًا تعطيل الوصول للموقع من خلال لوحة الإعدادات ←الحماية والخصوصية.",
+    "Housekeeping": "التنظيف",
+    "elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "يقوم إليمنتري أو إس بتنظيف وترتيب الملفات المؤقتة والمحدوفات. لا يوفر هذا مساحة بالتخزين فقط, ولك يضمن لك أن بياناتك الخاصة لن تعود لتضرك.",
+    "Download elementary OS": "تحميل إليمنتري أو إس",
     "Pay What You Want": "أدفع ما تريد",
-    "Download elementary OS icon": "حمل أيقونة المنتري او اس",
-    "Choose a Download": "إختر تحميلا",
-    "Download from a localized server or by magnet link. For help and more info, see the": "حمل من سيرفر محلي او من رابط مغنطيس. للمساعدة والمعلومات الاضافية انظر الى",
+    "Download elementary OS icon": "حمل أيقونة إليمنتري أو إس",
+    "Choose a Download": "إختر تحميلًا",
+    "Download from a localized server or by magnet link. For help and more info, see the": "حمل من سيرفر محلي أو من التورينت. للمساعدة والمعلومات الاضافية انظر الى",
     "installation guide": "دليل التثبيت",
     "Cancel": "إلغاء",
     "Download": "حمل",
     "Torrent Magnet Link": "رابط التورنت",
-    "A fast and open replacement for Windows and macOS &sdot; elementary OS": "نظام تشغيل سريع وبديل للويندوز وماك.&sdot; المنتري او اس"
+    "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "البديل السريع، المفتوح المصدر، والمحافظ على الخصوصية للويندوز والماك او اس &sdot; إليمنتري أو إس"
 }

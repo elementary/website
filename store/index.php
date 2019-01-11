@@ -72,7 +72,7 @@
 
         <?php foreach ($products as $product) { ?>
 
-            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
+            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>" data-printful-id="<?php echo $product['printful_id'][0] ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <h4><?php echo $product['name'] ?></h4>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
@@ -99,7 +99,7 @@
             </div>
             <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
-                <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
+                <h4 data-l10n-off="1"><strong class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></strong> <span class="modal__shipping" data-l10n-off="1"></span></h4>
                 <p><?php echo $product['description'] ?></p>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">

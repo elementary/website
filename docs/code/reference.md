@@ -162,7 +162,7 @@ For example, instead of using
 
 you should use
 
-         can_focus = false;    
+         can_focus = false;
 
 ## Vala namespaces {#vala-namespaces}
 
@@ -233,6 +233,93 @@ tab_width = 2
 
 ```
 
+## Saving Window State {#saving-window-state}
+
+Saving window state (i.e. size and position) should be done consistently across apps. Use the following GSchema keys:
+
+```xml
+<key name="window-maximized" type="b">
+  <default>false</default>
+  <summary>Maximized</summary>
+  <description>Whether the window is maximized</description>
+</key>
+<key name="window-position" type="(ii)">
+  <default>(1024, 750)</default>
+  <summary>Window position</summary>
+  <description>Most recent window position (x, y)</description>
+</key>
+<key name="window-size" type="(ii)">
+  <default>(-1, -1)</default>
+  <summary>Window size</summary>
+  <description>Most recent window size (width, height)</description>
+</key>
+```
+
+In your Application.vala, create an instance of `GLib.Settings` to use:
+
+```vala
+public static GLib.Settings settings;
+static construct {
+    settings = new GLib.Settings ("io.elementary.mail");
+}
+```
+
+Where you define your main window, load your settings:
+
+```vala
+main_window = new MainWindow ();
+
+int window_x, window_y;
+var rect = Gtk.Allocation ();
+
+settings.get ("window-position", "(ii)", out window_x, out window_y);
+settings.get ("window-size", "(ii)", out rect.width, out rect.height);
+
+if (window_x != -1 ||  window_y != -1) {
+    main_window.move (window_x, window_y);
+}
+
+main_window.set_allocation (rect);
+
+if (settings.get_boolean ("window-maximized")) {
+    main_window.maximize ();
+}
+
+main_window.show_all ();
+```
+
+In your app's window, override its `configure_event` and be sure to throttle writing to GSettings to avoid thrashing the disk:
+
+```vala
+public override bool configure_event (Gdk.EventConfigure event) {
+    if (configure_id != 0) {
+        GLib.Source.remove (configure_id);
+    }
+
+    configure_id = Timeout.add (100, () => {
+        configure_id = 0;
+
+        if (is_maximized) {
+            App.settings.set_boolean ("window-maximized", true);
+        } else {
+            Mail.Application.settings.set_boolean ("window-maximized", false);
+
+            Gdk.Rectangle rect;
+            get_allocation (out rect);
+            App.settings.set ("window-size", "(ii)", rect.width, rect.height);
+
+            int root_x, root_y;
+            get_position (out root_x, out root_y);
+            App.settings.set ("window-position", "(ii)", root_x, root_y);
+        }
+
+        return false;
+    });
+
+    return base.configure_event (event);
+}
+```
+
 # Reporting Bugs {#reporting-bugs}
 
 One of the big advantages of being an openly developed project is being able to take part in public bug tracking. However, if you're new to working with public bug tracking, it can be difficult to understand how to report bugs The Right Way™. So let's find out how:
@@ -260,7 +347,7 @@ If you've reported your issue against the wrong app, a developer may mark it as 
 If you're reporting a "Wishlist" issue, like a feature request, a developer may mark your bug as "Opinion" or "Won't Fix". Developers are often open to discussion about these kinds of issues, but please do not harass a developer for marking your report this way.
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
-If you're not sure about anything above, you are always welcome to our development IRC channel: #elementary-dev on irc.freenode.net. We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
+If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://join.slack.com/t/elementarycommunity/shared_invite/enQtMzU1NDU4OTE1MjY2LWUyOTBkZGNkZGM4MDgzZjE2ZjRiZDgwMDQ1ZTA0MzcxYjI0MDUyNGRlNDI5ZWViNDkwMzMwYzczMDY2ZjA0MTc). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 We mentioned this earlier, but it's worth mentioning again. Do not make comments that simply say "This issue affects me as well". This clutters up the tracker and can make it difficult to find important information that may solve the issue. Only comment if you are providing additional information that helps find the source of the issue. If you only want to let a developer know that you are affected, use the reactions system to add a <i class="far fa-thumbs-up" title="thumbs up"></i>.

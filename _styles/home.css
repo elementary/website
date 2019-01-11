@@ -65,6 +65,10 @@ input:focus + .focus-reveal {
     margin: 3px auto 6px;
 }
 
+#the-press {
+    padding-bottom: 64px;
+}
+
 #the-press h4 {
     font-size: 24px;
     opacity: 0.65;
@@ -74,17 +78,24 @@ input:focus + .focus-reveal {
     display: block;
     height: 27px;
     margin: 19px auto;
-    opacity: 0.8;
-    transition: opacity 250ms ease-in-out;
 }
 
-#the-press svg:hover {
-    opacity: 1;
+#the-press svg * {
+    fill: #333;
+}
+
+#the-press svg:hover * {
+    fill: #3689e6;
 }
 
 #the-press svg:active {
     position: relative;
     top: 1px;
+}
+
+.cta {
+    padding: 64px 1em;
+    text-align: center;
 }
 
 /***********
@@ -103,41 +114,21 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 1 1 auto;
-    margin-bottom: -32px;
-    min-height: 50vh;
+    position: relative;
 }
 
-@media all and (min-width: 500px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.jpg");
-    }
+.section--hero .section__showcase img.bg {
+    display: block;
+    margin: 0 auto;
+    max-height: 67vh;
 }
 
-@media all and (min-width: 1000px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.jpg");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook.jpg");
-    }
-}
-
-@media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
-    .section--stretched {
-        height: calc(100vh - 56px);
-    }
-
-    .section--stretched > .section__showcase {
-        display: flex;
-    }
+.section--hero .section__showcase img:not(.bg) {
+    height: 77%;
+    left: 50%;
+    position: absolute;
+    top: 2%;
+    transform: translateX(-50%);
 }
 
 /***********************
@@ -284,7 +275,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.svg");
+    background-image: url("../images/home/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -296,7 +287,15 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
+    background-color: rgb(44, 35, 52);
+    background-image:
+        linear-gradient(to bottom, rgba(44, 35, 52, 0.8), rgba(70, 31, 23, 0.5)),
+        url("../images/home/wallpaper.jpg");
+    background-position: top;
+    background-size: cover;
+    color: white;
     position: relative;
+    text-shadow: 0 0 6px black;
     transition: height 0.25s ease-in-out;
 }
 
@@ -306,6 +305,13 @@ input:focus + .focus-reveal {
     transition: transform 0.25s ease-in-out;
     width: 100%;
     will-change: transform;
+}
+
+#showcase.initialized > div h2::selection,
+#showcase.initialized > div p::selection {
+    text-shadow: none;
+    color: black;
+    background-color: lightgrey;
 }
 
 #showcase.initialized > div#showcase-index {
@@ -342,14 +348,55 @@ input:focus + .focus-reveal {
     margin: 32px 32px 64px;
 }
 
+/*************
+* What's New *
+*************/
+
+#whats-new {
+    padding: 64px 1em;
+}
+
 /************
 * AppCenter *
 ************/
 
 #appcenter {
+    background-color: #7239b3;
+    background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
+    color: #fff;
     display: flex;
     justify-content: center;
+    max-width: 100%;
     padding: 48px 0;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#appcenter h1 span {
+    font-weight: 800;
+}
+
+#appcenter .buttons {
+    text-align: center;
+}
+
+#appcenter .button {
+    border-color: white;
+    color: white;
+    display: block;
+    margin: 12px auto;
+}
+
+@media (min-width: 500px) {
+    #appcenter .button {
+        display: inline-block;
+        margin: 6px 12px;
+    }
+}
+
+#appcenter .button:first-child {
+    background-color: white;
+    color: #7239b3;
 }
 
 #appcenter .app-display {
@@ -379,6 +426,14 @@ input:focus + .focus-reveal {
     }
 }
 
+/***********
+* Callouts *
+***********/
+
+#callouts {
+    padding: 64px 1em;
+}
+
 /************
 * Slingshot *
 ************/
@@ -401,7 +456,6 @@ input:focus + .focus-reveal {
 }
 
 #slingshot .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
@@ -457,6 +511,11 @@ input:focus + .focus-reveal {
     opacity: 0.8;
     text-align: left;
     margin-left: 3px;
+}
+
+#slingshot-label svg {
+    margin-right: 3px;
+    vertical-align: bottom;
 }
 
 .slingshot .linked {
@@ -518,7 +577,6 @@ input:focus + .focus-reveal {
 }
 
 .app {
-    display: inline-block;
     float: left;
     height: 116px;
     margin: 0;
@@ -809,4 +867,93 @@ span.results-title {
     #slingshot h2 {
         margin-top: 24px;
     }
+}
+
+/********************
+* Parental Controls *
+********************/
+
+#parental-controls {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 48px 0;
+    position: relative;
+}
+
+#parental-controls .app-display__description h2,
+#parental-controls .app-display__description p {
+    text-align: left;
+}
+
+#parental-controls .app-display__description p {
+    margin-left: 24px;
+}
+
+#parental-controls .app-display__description h2 img {
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#parental-controls .app-display__description svg {
+    float: left;
+    margin: 4px 6px 4px 0;
+}
+
+#parental-controls .app-display__description svg,
+#parental-controls .app-display__description svg * {
+    color: #000 !important;
+    fill: #000 !important;
+}
+
+/************
+* Shortcuts *
+************/
+
+#shortcuts {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
+}
+
+#shortcuts p {
+    margin-bottom: 8vw; /* For better balance */
+}
+
+#shortcuts .app-display__image {
+    padding: 0 32px 32px;
+}
+
+@media (min-width: 1000px) {
+    #shortcuts .app-display__image {
+        width: 67%;
+        order: 0;
+    }
+}
+
+/**********
+* Privacy *
+**********/
+
+#privacy {
+    background-color: #273445;
+    color: white;
+    padding: 128px 1em;
+}
+
+#privacy a {
+    color: #8cd5ff;
+}
+
+#privacy h3 svg {
+    fill: white;
+    height: 1em;
+    margin-right: 0.25em;
+    transform: scale(1.5);
+    vertical-align: bottom;
+}
+
+#privacy h3 svg * {
+    fill: inherit;
 }

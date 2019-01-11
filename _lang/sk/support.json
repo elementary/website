@@ -8,15 +8,14 @@
     "Epiphany": "Epiphany",
     "Music": "Hudba",
     "Photos": "Fotografie",
-    "Text Editor": "Textový editor",
-    "Scratch": "",
+    "Code": "",
     "System Settings": "Nastavenia Systému",
     "Videos": "Videá",
     "Installation": "Inštalácia",
     "Get help installing elementary OS with our step-by-step guide.": "Vyhľadajte pomoc s inštaláciou elementary OS v našom návode krok-za-krokom.",
     "Learning the Basics": "Výuka základov",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Predstavenie plochy, multitaskingu, klávesových skratiek a iných vecí.",
-    "StackExchange": "StackExchange",
+    "Stack Exchange": "",
     "Check out answers to some of the most common questions we get.": "Pozrite si odpovede na otázky, ktoré najbežnejšie dostávame.",
     "Support &sdot; elementary": "Podporte &sdot; elementary"
 }

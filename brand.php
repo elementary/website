@@ -13,10 +13,10 @@
 
 <div class="row docs">
     <h1>Brand</h1>
-    <p>The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
+    <p>The elementary brand is unique: technically it belongs to elementary, Inc., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
 
     <h2>Name</h2>
-    <p>The word "elementary" refers to and is a trademark of elementary LLC. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. "elementary OS") to refer to a specific product of elementary.</p>
+    <p>The word "elementary" refers to and is a trademark of elementary, Inc. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. "elementary OS") to refer to a specific product of elementary.</p>
 
     <h2>Brand Marks</h2>
     <p>elementary owns two marks: the "elementary" logotype and the "e" logomark. Both are considered trademarks and represent elementary—the company—and its products.</p>
@@ -319,7 +319,7 @@
         <p>However, to avoid user confusion, we do restrict the usage of the elementary name and marks:</p>
         <ul>
             <li>You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.</li>
-            <li>Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).</li>
+            <li>Only use the elementary name or marks to refer to elementary, Inc. or its products (i.e. elementary OS).</li>
         </ul>
 
         <h3>Community</h3>

@@ -94,7 +94,7 @@ function get_varients (string $i) {
  * Returns a list of shipping rates from Printful api
  *
  * @param \Store\Address\Address $s shipping address
- * @param Arrray                 $i list of items to buy
+ * @param Array                  $i list of items to buy
  *
  * @return Array list of shipping rates
  */
