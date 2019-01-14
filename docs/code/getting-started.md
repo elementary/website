@@ -946,7 +946,7 @@ For the simplest example, let's create a useless switch in your app, and save it
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <schemalist>
-      <schema path="/com/github/yourusername/yourrepositoryname" id="com.github.yourusername.yourrepositoryname">
+      <schema path="/com/github/yourusername/yourrepositoryname/" id="com.github.yourusername.yourrepositoryname">
         <key name="useless-setting" type="b">
           <default>false</default>
           <summary>Useless Setting</summary>
