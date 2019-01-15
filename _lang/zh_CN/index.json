@@ -96,7 +96,7 @@
     "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "你的数据永远只属于你自己，我们不会做所谓的“广告个性化”或收集你的隐私数据。我们的经费直接来源于用户购买，包括自愿付费的 elementary OS 和应用中心内的应用程序。这才是开源应有的样子。",
     "Our Privacy Policy": "我们的隐私政策",
     "Tattle-Tale": "",
-    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS 帮助你了解应用想干什么。当应用使用你的麦克风，我们将显示提示以让你知道情况。当应用在大量耗费你的电池的时候，我们会在电量提示里提醒你。",
+    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS 帮助你时刻了解应用程序的小动作。当应用使用你的麦克风、当应用大量消耗电池电量的时候，我们会在指示器中做出提醒。",
     "Location Services": "",
     "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "",
     "Housekeeping": "",
