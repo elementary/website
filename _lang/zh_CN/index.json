@@ -86,7 +86,7 @@
     "Time Limits": "时间限制",
     "Set per-user time limits for weekdays, weekends, or both.": "为每个用户设置访问时间限制。",
     "Internet Use": "网络使用",
-    "Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.": "",
+    "Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.": "管理网站白名单。规则影响每个应用，即使他们使用不同的浏览器。",
     "Manage Apps": "",
     "Choose just which apps are safe for your child to access. Plus, optionally allow access with your password.": "",
     "elementary OS Keyboard Shortcuts": "",
