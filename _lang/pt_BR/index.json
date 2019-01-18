@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Nós respeitamos os direitos de nossos usuários. Todo o elementary OS está disponível para revisão, exame minucioso, modificação e redistribuição por qualquer pessoa. O que melhora a segurança e privacidade de todos.",
     "Learn More": "Saiba mais",
     "Safe &amp; Secure": "Seguro &amp; salvo",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Construído em GNU/Linux, um dos sistemas mais seguros do mundo. É o mesmo software que liga o Departamento de Defesa dos EUA, o Banco da China e muito mais.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Construído em GNU\/Linux, um dos sistemas mais seguros do mundo. É o mesmo software que liga o Departamento de Defesa dos EUA, o Banco da China e muito mais.",
     "Security Notices": "Notas de segurança",
     "Task finished": "Tarefa finalizada",
     "Apps You Need, Without Ones You Don’t.": "Aplicativos que você precisa, sem os que você não precisa.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Escolha uma opção de download",
     "Download from a localized server or by magnet link. For help and more info, see the": "Baixe a partir de um servidor ou por torrent (link magnético). Para saber mais, veja o",
     "installation guide": "Guia de Instalação",
-    "Cancel": "Cancelar",
+    "Close": "",
     "Download": "Baixar",
     "Torrent Magnet Link": "Link Magnético de Torrent",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "O substituto para Windows e macOS rápido, aberto, que respeita a privacidade &sdot; elementary OS"

@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "",
     "Learn More": "और अधिक जानें",
     "Safe &amp; Secure": "",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
     "Security Notices": "",
     "Task finished": "",
     "Apps You Need, Without Ones You Don’t.": "",
@@ -107,7 +107,7 @@
     "Choose a Download": "एक डाउनलोड का चयन करें",
     "Download from a localized server or by magnet link. For help and more info, see the": "",
     "installation guide": "स्थापना गाइड",
-    "Cancel": "रद्द करें",
+    "Close": "",
     "Download": "",
     "Torrent Magnet Link": "टोरेंट मैग्नेट लिंक ",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""
