@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "आम्ही आमच्या वापरकर्त्यांच्या अधिकारांचा आदर करतो. सर्व एलिमेंटरी ओएस पुनरावलोकनासाठी, तपासणीसाठी, संशोधन आणि पुनर्वितरण करण्यासाठी उपलब्ध आहे. जी प्रत्येकासाठी सुरक्षा आणि गोपनीयता सुधारते.",
     "Learn More": "अधिक माहिती",
     "Safe &amp; Secure": "सुरक्षित आणि गोपनीय",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "आम्ही जीएनयू / लिनक्सवर बनले आहोत, जगातील सर्वात सुरक्षित प्रणालींपैकी एक. जे सॉफ्टवेअर यू.एस. डिफेन्स ऑफ डिफेन्स, बँक ऑफ चाइना आणि बरेच काही यांना सामर्थ्यवान करते.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "आम्ही जीएनयू \/ लिनक्सवर बनले आहोत, जगातील सर्वात सुरक्षित प्रणालींपैकी एक. जे सॉफ्टवेअर यू.एस. डिफेन्स ऑफ डिफेन्स, बँक ऑफ चाइना आणि बरेच काही यांना सामर्थ्यवान करते.",
     "Security Notices": "गोपनीयता सूचना",
     "Task finished": "कार्य समाप्त",
     "Apps You Need, Without Ones You Don’t.": "आपल्याला आवश्यक नसलेल्या अॅप्सशिवाय आपल्याला आवश्यक अॅप्स.",
@@ -107,7 +107,7 @@
     "Choose a Download": "डाऊनलोड निवडा",
     "Download from a localized server or by magnet link. For help and more info, see the": "स्थानिकीकृत सर्वरवरुन किंवा चुंबक दुव्याद्वारे डाऊनलोड करा. मदत आणि अधिक महितीसाठी, पहा",
     "installation guide": "इन्स्टाॅलेशन मार्गदर्शक",
-    "Cancel": "रद्द करा",
+    "Close": "",
     "Download": "डाऊनलोड",
     "Torrent Magnet Link": "टोरेंट चुंबक दुवा",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "विंडोज आणि मॅकओएसला जलद, खुला आणि गोपनीयता सन्मान करणारा पर्याय; एलिमेंटरी ओएस"

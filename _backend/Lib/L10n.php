@@ -374,6 +374,9 @@ class L10n
                                 if ($name == 'data-l10n-off') { // Disable translation for this tag
                                     $l10nDisabled = true;
                                 }
+                                if ($name == 'type' && $value == 'hidden') {
+                                    $l10nDisabled = true;
+                                }
                                 if (in_array($name, $allowedAttrs) && !$l10nDisabled) { // Translate attribute
                                     $tag .= ' '.$name.'="'.$translate($value, $this->domain, $value).'"';
                                 } else {
