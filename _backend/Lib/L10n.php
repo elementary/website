@@ -25,10 +25,12 @@ class L10n
      * @var array
      */
     public static $blacklistedPages = array(
+        '/CODE_OF_CONDUCT.md/',
         '/getting-started.md/',
         '/human-interface-guidelines.md/',
         '/inventory.php/',
         '/LICENSE.md/',
+        '/os-dev.md/',
         '/README.md/',
         '/reference.md/',
         '/router.php/',
