@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "",
     "Learn More": "Más Información",
     "Safe &amp; Secure": "Seguro y Estable",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
     "Security Notices": "Avisos de seguridad",
     "Task finished": "Tarea finalizada",
     "Apps You Need, Without Ones You Don’t.": "",
@@ -107,7 +107,7 @@
     "Choose a Download": "Elija una Descarga",
     "Download from a localized server or by magnet link. For help and more info, see the": "Descargar desde un servidor local o mediante un enlace «Magnet». Para obtener ayuda y más información, consulte",
     "installation guide": "Guía de Instalación",
-    "Cancel": "Cancelar",
+    "Close": "",
     "Download": "Descargar",
     "Torrent Magnet Link": "Enlace «Magnet»",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""

@@ -116,6 +116,7 @@ class L10n
         'ko' => '한국어',
         'lt' => 'Lietuvių kalba',
         'ms' => 'bahasa Melayu',
+        'mr' => 'मराठी',
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
         'pl' => 'Polski',
@@ -297,7 +298,7 @@ class L10n
 
         // Attributes that can be translated
         $attrsWhitelist = array(
-            'input' => array('placeholder'),
+            'input' => array('placeholder', 'value'),
             'a' => array('title'),
             'img' => array('alt')
         );
@@ -371,6 +372,9 @@ class L10n
                                     $l10nId = $value;
                                 }
                                 if ($name == 'data-l10n-off') { // Disable translation for this tag
+                                    $l10nDisabled = true;
+                                }
+                                if ($name == 'type' && $value == 'hidden') {
                                     $l10nDisabled = true;
                                 }
                                 if (in_array($name, $allowedAttrs) && !$l10nDisabled) { // Translate attribute

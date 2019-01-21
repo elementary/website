@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Kunnioitamme käyttäjiemme oikeuksia. elementary OS on kokonaisuudessaan kaikkien saatavilla tarkasteltavaksi, muunnettavaksi ja uudelleenjaettavaksi. Se puolestaan parantaa kaikkien turvallisuutta ja yksityisyyttä.",
     "Learn More": "Lisätietoja",
     "Safe &amp; Secure": "Turvallinen ja suojattu",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "elementary OS:n pohjana on GNU/Linux, yksi maailman turvallisimmista järjestelmistä. Samaa ohjelmistoa käyttävät muun muassa Yhdysvaltain puolustusministeriö sekä Bank of China.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "elementary OS:n pohjana on GNU\/Linux, yksi maailman turvallisimmista järjestelmistä. Samaa ohjelmistoa käyttävät muun muassa Yhdysvaltain puolustusministeriö sekä Bank of China.",
     "Security Notices": "Tietoturvailmoitukset",
     "Task finished": "Tehtävä valmistui",
     "Apps You Need, Without Ones You Don’t.": "Vain tarpeelliset sovellukset.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Valitse ladattava tiedosto",
     "Download from a localized server or by magnet link. For help and more info, see the": "Lataa paikalliselta palvelimelta tai magneettilinkin kautta. Lisätietoja tarjoaa",
     "installation guide": "asennusohje",
-    "Cancel": "Peru",
+    "Close": "",
     "Download": "Lataa",
     "Torrent Magnet Link": "Torrent Magnet -linkki",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "Nopea, avoin ja yksityisyyttä kunnioittava vaihtoehto Windowsille ja macOS:lle &sdot; elementary OS"
