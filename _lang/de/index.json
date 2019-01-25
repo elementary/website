@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Wir respektieren die Rechte unserer Nutzer. Jeder kann sich den Code von elementary OS anschauen, ihn überprüfen, modifizieren und weiterverteilen, was die Sicherheit und Privatsphäre aller verbessert.",
     "Learn More": "Erfahre mehr",
     "Safe &amp; Secure": "Zuverlässig &amp; Sicher",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Wir bauen auf GNU/Linux auf, eines der sichersten System der Welt. Es ist die gleiche Software, die auch vom US Department of Defense, der Bank of China und vielen weiteren Organisationen eingesetzt wird.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Wir bauen auf GNU\/Linux auf, eines der sichersten System der Welt. Es ist die gleiche Software, die auch vom US Department of Defense, der Bank of China und vielen weiteren Organisationen eingesetzt wird.",
     "Security Notices": "Sicherheitshinweise",
     "Task finished": "Aufgabe erledigt",
     "Apps You Need, Without Ones You Don’t.": "Apps, die du brauchst. Ohne die, die du nicht brauchst.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Wähle eine Version",
     "Download from a localized server or by magnet link. For help and more info, see the": "Von einem in der Nähe befindlichen Server herunterladen oder per Magnet-Link. Für Hilfe und mehr Informationen, schau hier",
     "installation guide": "Installationsanleitung beachten",
-    "Cancel": "Abbrechen",
+    "Close": "",
     "Download": "Herunterladen",
     "Torrent Magnet Link": "Torrent Magnet-Link",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "Die schnelle, freie und datenschutzfreundliche Alternative zu Windows und macOS &sdot; elementary OS"

@@ -1,5 +1,5 @@
 {
-    "The fast, open, and privacy-respecting replacement for Windows and macOS": "O substituto para Windows e macOS que é rápido, aberto e que respeita a privacidade",
+    "The fast, open, and privacy-respecting replacement for Windows and macOS": "O substituto do Windows e macOS que é rápido, aberto e que respeita a privacidade",
     "Generic laptop computer": "Computador portátil genérico",
     "elementary OS 5 Juno desktop": "O ambiente de trabalho elementary OS 5 Juno",
     "Pay What You Want:": "Pague o que quiser:",
@@ -83,7 +83,7 @@
     "Launch apps, open settings panes, run commands, and more from the lightning fast search view.": "Inicie aplicações, abra painéis de definições, execute comandos, e muito mais na visualização de pesquisa rápida.",
     "elementary OS Parental Controls": "Controlo Parental do elementary OS",
     "Parental Controls": "Controlo Parental",
-    "Time Limits": "Limite de Tempo",
+    "Time Limits": "Prazos",
     "Set per-user time limits for weekdays, weekends, or both.": "Definir limite de tempo por utilizador para dias da semana, fins-de-semana ou ambos.",
     "Internet Use": "Uso da Internet",
     "Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.": "Fazer a gestão de websites autorizados. As regras afetam todas as aplicações do utilizador, mesmo que ele utilize um navegador diferente.",
@@ -93,7 +93,7 @@
     "User Friendly. And Keyboard Friendly.": "Bom para o utilizador. Bom para o teclado.",
     "elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.": "O elementary OS é concebido para ser fácil de entender e começar a usar para um novo utilizador. Simplificado de modo a ser intelectualmente pouco exigente e acessível; atalhos de teclado poderosos e personalizáveis garantem que seja produtivo, quer seja o seu primeiro dia ou o milésimo.",
     "Privacy-respecting. Through and through.": "Respeita a privacidade. Absolutamente.",
-    "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "Os seus dados pertencem a si e apenas a si. Não queremos fazer negócios de publicidade nem recolhemos dados pessoais sensíveis. Somos fundados diretamente pelos nossos utilizadores que pagam o que querem pelo elementary OS e pelas aplicações no Centro de Aplicações. E é assim que deve ser.",
+    "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "Os seus dados pertencem a si e apenas a si. Não queremos fazer negócios de publicidade nem recolhemos dados pessoais sensíveis. Somos financiados diretamente pelos nossos utilizadores que pagam o que querem pelo elementary OS e pelas aplicações no Centro de Aplicações. E é assim que deve ser.",
     "Our Privacy Policy": "A Nossa Política de Privacidade",
     "Tattle-Tale": "Informador",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "O elementary OS ajuda-o a saber sempre o que as aplicações estão a fazer. Quando uma aplicação usa o seu microfone, mostramos um indicador para o informar. Quando uma aplicação está a usar muita energia, informamo-lo no seu indicador de bateria.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Escolhe a Transferência",
     "Download from a localized server or by magnet link. For help and more info, see the": "Transferir de um servidor local ou por ligação Magnet. Para ajuda e mais informação, ver",
     "installation guide": "guia de instalação",
-    "Cancel": "Cancelar",
+    "Close": "Fechar",
     "Download": "Transferir",
     "Torrent Magnet Link": "Ligação via Torrent Magnet",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "O rápido, aberto e respeitador de privacidade substituto do Windows e macOS &sdot; elementary OS"

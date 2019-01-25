@@ -22,7 +22,7 @@
     "Rufus - select ISO": "Rufus - sélectionner l’image ISO",
     "Open Rufus": "Ouvrez Rufus",
     "Insert your USB drive and select it in the &quot;Device&quot; list": "Insérez votre clé USB et sélectionnez-la dans la liste « Device »",
-    "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "Sélectionnez « Disque ou image ISO » dans la liste de «sélection de démarrage »",
+    "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "Sélectionnez « Disque ou image ISO » dans la liste de « sélection de démarrage »",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "Cliquez sur « SELECT » pour choisir l'ISO que vous avez téléchargé précédemment.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "Nous générons une somme de contrôle (ou checksum) pour l'image d'elementary OS pour que vous puissiez vérifier le fichier que vous avez téléchargé. Ce procédé permet de s'assurer que votre téléchargement est complet et que votre image d'installation n'est en aucune façon corrompue. Cliquez",
     "the checksum icon": "l'icône de somme de contrôle",

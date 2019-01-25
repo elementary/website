@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Poštujemo prava naših korisnika. elementary OS je u cijelosti i svima dostupan za pregled, reviziju, modifikacije i redistribuciju. Time se unapređuje sigurnost i privatnost svih.",
     "Learn More": "Saznajte više",
     "Safe &amp; Secure": "Pouzdan i siguran",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Izgrađeni smo na GNU/Linuxu, jednom od najsigurnih sistema na svijetu. Radi se o istom softveru koji koriste Ministarstvo odbrane SAD-a, Banka Kine i mnogi drugi.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Izgrađeni smo na GNU\/Linuxu, jednom od najsigurnih sistema na svijetu. Radi se o istom softveru koji koriste Ministarstvo odbrane SAD-a, Banka Kine i mnogi drugi.",
     "Security Notices": "Sigurnosne obavijesti",
     "Task finished": "Zadatak završen",
     "Apps You Need, Without Ones You Don’t.": "Aplikacije koje su Vam potrebne, bez onih koje Vam ne trebaju.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Odaberite preuzimanje",
     "Download from a localized server or by magnet link. For help and more info, see the": "Preuzmite s lokaliziranog servera ili pomoću magnetnog linka. Za pomoći i više informacija pogledajte",
     "installation guide": "vodič za instalaciju",
-    "Cancel": "Otkaži",
+    "Close": "",
     "Download": "Preuzmi",
     "Torrent Magnet Link": "Magnetni link za torrent",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "Brza i otvorena zamjena za Windows i macOS koja poštuje Vašu privatnost &sdot; elementary OS"
