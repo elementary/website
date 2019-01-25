@@ -16,7 +16,7 @@
     "Mail": "Mail",
     "Music": "Musik",
     "Photos": "Fotos",
-    "Code": "",
+    "Code": "Kode",
     "Screenshot": "Skærmbillede",
     "Terminal": "Terminal",
     "Videos": "Videoer",
@@ -56,7 +56,7 @@
     "FreeDesktop.org": "FreeDesktop.org",
     "Base Technology": "Grund Teknologi",
     "D-Bus": "D-Bus",
-    "GeoClue": "",
+    "GeoClue": "GeoClue",
     "GStreamer": "GStreamer",
     "libinput": "libinput",
     "LightDM": "LightDM",
@@ -86,6 +86,6 @@
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "Software Freedom Conservancy",
     "Weblate": "Weblate",
-    "All logos featured here are trademarks of their respective projects.": "Alle fremhævede logoer er varemærker der tilhøre deres respektive projekter.",
+    "All logos featured here are trademarks of their respective projects.": "Alle viste logoer er varemærker der tilhøre deres respektive projekter.",
     "Open Source &sdot; elementary": "Open Source &sdot; elementary"
 }

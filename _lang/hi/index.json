@@ -7,7 +7,7 @@
     "Enter any dollar amount.": "कोई भी डॉलर राशि डालें",
     "Purchase elementary OS": "एलीमेंट्री ओएस खरीदें",
     "elementary OS 5.0 Juno |  1.48 GB (for PC or Mac)": "",
-    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "",
+    "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "एलीमेंट्री ओएस अलग है.... एक सुंदर और शक्तिशाली ऑपरेटिंग सिस्टम जो पुराने पीसी पर भी अच्छा प्रदर्शन करेगा",
     "&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;": "",
     "&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;": "",
     "What’s New in elementary OS 5 Juno": "",
@@ -107,7 +107,7 @@
     "Choose a Download": "एक डाउनलोड का चयन करें",
     "Download from a localized server or by magnet link. For help and more info, see the": "",
     "installation guide": "स्थापना गाइड",
-    "Cancel": "रद्द करें",
+    "Close": "",
     "Download": "",
     "Torrent Magnet Link": "टोरेंट मैग्नेट लिंक ",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""
