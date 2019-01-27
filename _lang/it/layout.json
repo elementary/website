@@ -6,11 +6,13 @@
     "Store": "Negozio",
     "This is a development site.": "Questo è un sito di sviluppo.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Stai visualizzando la versione in fase di sviluppo del nostro sito. Alcune pagine potrebbero non funzionare correttamente. Se sei capitato qui per errore, visita  <a href=\"http://elementary.io\">elementary.io</a>, il nostro sito web ufficiale.",
-    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "",
     "Language": "Lingua",
     "Change Site Language": "Cambia la lingua del sito",
+    "Press": "",
     "Brand": "Marchio",
-    "Privacy Policy": "Politica sulla privacy",
-    "Team": "Team",
-    "Open Source": "Open Source"
+    "OEMs": "",
+    "Privacy": "",
+    "Team": "",
+    "Open Source": ""
 }

@@ -6,11 +6,13 @@
     "Store": "ගබඩාව",
     "This is a development site.": "මෙය සංවර්දන පිටුවකි.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "ඔබ අපගේ වෙබ් අඩවියේ සංවර්ධන සංස්කරණයක් නරඹමින් සිටී. මෙහි සමහර පිටු ඔබ අපේක්ෂා කරන අයුරින් නැත. ඔබ වැරදීමකින් පැමිණියෙනම් කරුණාකර අපගේ සැබෑ <a href=\"http://elementary.io\">වෙබ් ලිපිනය</a> වෙත යන්න.",
-    "Copyright &copy; 2017 elementary LLC.": "ප්‍රකාශන අයිතිය © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "ප්‍රකාශන අයිතිය &copy; 2019 elementary Inc.",
     "Language": "භාෂාව",
     "Change Site Language": "වෙබ් අඩවියේ භාෂාව වෙනස් කිරීමට",
+    "Press": "",
     "Brand": "වෙළඳ නාමය",
-    "Privacy Policy": "පෞද්ගලිකත්ව ප්‍රතිපත්ති",
+    "OEMs": "",
+    "Privacy": "",
     "Team": "කණ්ඩායම",
     "Open Source": "විවෘත මෘදුකාංගයකි"
 }

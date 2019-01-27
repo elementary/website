@@ -6,11 +6,13 @@
     "Store": "Obchod",
     "This is a development site.": "Táto stránka je vo vývoji.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Prezeráte si vývojovú verziu nášho webu. Niektoré stránky nemusia fungovať alebo správať sa tak, ako očakávate. Ak ste sa sem dostali náhodou, prosím, prejdite na <a href=\"http://elementary.io\">elementary.io</a>, aktuálnu adresu webstránky.",
-    "Copyright &copy; 2017 elementary LLC.": "&copy; 2017 elementary LLC, Všetky práva vyhradené.",
+    "Copyright &copy; 2019 elementary Inc.": "&copy; 2019 elementary Inc, Všetky práva vyhradené.",
     "Language": "Jazyk",
     "Change Site Language": "Zmeniť Jazyk Stránky",
+    "Press": "",
     "Brand": "Značka",
-    "Privacy Policy": "Zásady ochrany osobných údajov",
+    "OEMs": "",
+    "Privacy": "",
     "Team": "Tím",
-    "Open Source": "Open Source"
+    "Open Source": ""
 }

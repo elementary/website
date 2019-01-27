@@ -6,11 +6,13 @@
     "Store": "商店",
     "This is a development site.": "此網站是不穩定的開發版本。",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "您正在瀏覽我們的開發者版本網站。有些頁面可能不會完全如你想像般地運作。如果您是意外進入此頁面請移至 <a href=\"http://elementary.io\">elementary.io</a>，那才是我們真正的網址。",
-    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "",
     "Language": "語言",
     "Change Site Language": "切換網站語言",
+    "Press": "",
     "Brand": "品牌",
-    "Privacy Policy": "隱私政策",
-    "Team": "Team",
+    "OEMs": "",
+    "Privacy": "",
+    "Team": "",
     "Open Source": "開源軟體"
 }

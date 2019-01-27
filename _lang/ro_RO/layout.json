@@ -6,11 +6,13 @@
     "Store": "Magazin",
     "This is a development site.": "Acest site este în curs de dezvoltare.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Ai accesat o versiune aflată în dezvoltare a site-ului nostru. Unele pagini nu merg conform așteptărilor. Dacă ai ajuns aici din întâmplare, te rugăm să te duci la <a href=\"http://elementary.io\">elementary.io</a>, pagina noastră de web oficială.",
-    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "",
     "Language": "Limba",
     "Change Site Language": "Schimbă Limba",
+    "Press": "",
     "Brand": "Marcă",
-    "Privacy Policy": "Politica de Confidențialitate",
-    "Team": "Team",
+    "OEMs": "",
+    "Privacy": "",
+    "Team": "",
     "Open Source": "Sursă Deschisă"
 }

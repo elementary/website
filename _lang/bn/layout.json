@@ -6,11 +6,13 @@
     "Store": "স্টোর",
     "This is a development site.": "এটি একটি ডেভেলপমেন্ট সাইট।",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "আপনি আমাদের সাইটের একটি উন্নয়নকৃত সংস্করণ দেখছেন। কিছু পৃষ্ঠা আপানার প্রত্যাশাকৃত ভাবে নাও কাজ করতে পারে। আপনি এখানে দুর্ঘটনাবশত এসে পড়লে দয়া করে আমাদের আসল ওয়েবসাইটের ঠিকানা <a href=\"http://elementary.io\">elementary.io</a>তে যান।",
-    "Copyright &copy; 2017 elementary LLC.": "কপিরাইট © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "কপিরাইট © 2019 elementary Inc.",
     "Language": "ভাষা",
     "Change Site Language": "সাইটএর ভাষা পরিবর্তন করুন",
+    "Press": "",
     "Brand": "ব্র্যান্ড",
-    "Privacy Policy": "গোপনীয়তা রক্ষা নীতি",
+    "OEMs": "",
+    "Privacy": "",
     "Team": "টিম",
     "Open Source": "ওপেন সোর্স"
 }
