@@ -1412,7 +1412,7 @@ Use `\u2014` in code. Used for:
 
 ---
 
-If in doubt, refer to [Butterwick's Practical Typography](https://practicaltypography.com/).
+If in doubt, refer to [Butterick's Practical Typography](https://practicaltypography.com/).
 
 These rules apply to the English language; other languages may have their own conventions which should be followed by translators.
 
