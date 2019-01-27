@@ -6,11 +6,13 @@
     "Store": "Trgovina",
     "This is a development site.": "Ovo je stranica u razvoju.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "Trenutno se nalazite na verziji naše web-stranice koja je u procesu izrade. Neke stranice ovdje možda neće raditi kako očekujete. Ako ste ovdje došli slučajno, molimo posjetite <a href=\"http://elementary.io\">elementary.io</a>, našu službenu adresu web-stranice.",
-    "Copyright &copy; 2017 elementary LLC.": "Autorska prava &copy; 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "Autorska prava &copy; 2019 elementary Inc.",
     "Language": "Jezik",
     "Change Site Language": "Izmijeni jezik stranice",
+    "Press": "",
     "Brand": "Brend",
-    "Privacy Policy": "Politika privatnosti",
+    "OEMs": "",
+    "Privacy": "",
     "Team": "Tim",
     "Open Source": "Otvoreni kod"
 }

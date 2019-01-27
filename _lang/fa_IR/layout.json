@@ -6,11 +6,13 @@
     "Store": "فروشگاه",
     "This is a development site.": "این یک وب‌سایت در حال توسعه می‌باشد.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "شما هم‌اکنون در حال مشاهدۀ نسخۀ درحال توسعۀ وب‌سایت ما می‌باشید، ممکن است بعضی از صفحات آن‌گونه شما انتظار دارید کار نکنند، اگر به مشکلی برخردید می‌توانید به وب‌سایت  <a href=\"http://elementary.io\">اصلی</a> بروید.",
-    "Copyright &copy; 2017 elementary LLC.": "Copyright © 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "",
     "Language": "زبان",
     "Change Site Language": "تغییر زبان سایت",
+    "Press": "",
     "Brand": "برند",
-    "Privacy Policy": "سیاست حفظ حریم شخصی",
-    "Team": "Team",
+    "OEMs": "",
+    "Privacy": "",
+    "Team": "",
     "Open Source": "منبع باز"
 }

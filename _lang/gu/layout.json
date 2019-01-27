@@ -6,11 +6,13 @@
     "Store": "દુકાન",
     "This is a development site.": "આ એક ડેવલોપમેન્ટ સાઈટ છે.",
     "You are viewing a development version of our site. Some pages here may not work or act as you expect. If you got here by accident please go to <a href=\"http://elementary.io\">elementary.io</a>, our actual website address.": "તમે અમારી સાઇટનું ડેવલપમેન્ટ વર્ઝન જોઈ રહ્યાં છો. અહીંના કેટલાક પેજ કાર્યરત નહી હોય અથવા તમારી અપેક્શા મુજબ કાર્ય કરી શકતા નથી. જો તમે અકસ્માતથી અહીં આવ્યા છો, તો કૃપા કરીને અહીં જાઓ <a href=\"http://elementary.io\">elementary.io</a>, અમારું  એકચુઅલ વેબસાઈટ એડ્રેસ.",
-    "Copyright &copy; 2017 elementary LLC.": "બધા જ હક્કો સુરક્ષિત &copy; 2017 elementary LLC.",
+    "Copyright &copy; 2019 elementary Inc.": "બધા જ હક્કો સુરક્ષિત &copy; 2019 elementary Inc.",
     "Language": "ભાષા",
     "Change Site Language": "સાઈટની ભાષા બદલો",
+    "Press": "",
     "Brand": "બ્રાન્ડ",
-    "Privacy Policy": "પ્રાઇવસી પોલિસી",
+    "OEMs": "",
+    "Privacy": "",
     "Team": "ટીમ",
     "Open Source": "ઓપન સોર્સ"
 }
