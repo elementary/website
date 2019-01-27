@@ -300,7 +300,7 @@ class L10n
 
         // Attributes that can be translated
         $attrsWhitelist = array(
-            'input' => array('placeholder', 'value'),
+            'input' => array('placeholder', 'value', 'title'),
             'a' => array('title'),
             'img' => array('alt')
         );
