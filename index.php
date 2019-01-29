@@ -119,6 +119,41 @@
                 <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
             </div>
         </section>
+        <section id="workflow" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>Get work done. Or play.</h2>
+                    <h4>elementary OS is designed to keep you productive and focused by getting out of your way with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. And by staying out of your way, elementary OS is great when you're watching videos or playing games, too.</h4>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="third">
+                    <figure class="multitasking">
+                        <div class="workspace"></div>
+                    </figure>
+                    <h3>Multitasking View</h3>
+                    <p>Powerful workspaces help you organize your work by task. Keep work and play separate, but just one tap away.</p>
+                </div>
+                <div class="third">
+                    <figure class="pip">
+                        <div class="workspace">
+                            <div class="window"></div>
+                        </div>
+                    </figure>
+                    <h3>Picture-in-Picture</h3>
+                    <p>Keep tabs on one thing while working on another. Whether you’re watching a movie, game, or terminal process, Picture-in-Picture keeps it within view.</p>
+                </div>
+                <div class="third">
+                    <figure class="dnd">
+                        <div class="workspace">
+                            <div class="notification"></div>
+                        </div>
+                    </figure>
+                    <h3>Do Not Disturb</h3>
+                    <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Distrurb stops notifications in their tracks.</p>
+                </div>
+            </div>
+        </section>
         <section>
             <div id="showcase" class="row grey">
                 <div class="pantheon" style="display:none;">
