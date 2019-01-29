@@ -1,7 +1,7 @@
 {
     "Installation": "설치",
     "Download elementary OS": "elementary OS 다운로드",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "아직 elementary OS가 없으시면, <a href=\"/\" target=\"_blank\" rel=\"noopener\">우리 홈페이지에서 다운로드</a>하세요. 그리고 아래의 안내문을 따라 ISO 파일을 USB에 복사하시면 됩니다.",
+    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "아직 elementary OS가 없으시면, <a href=\"\/\" target=\"_blank\" rel=\"noopener\">우리 홈페이지에서 다운로드<\/a>하세요. 그리고 아래의 안내문을 따라 ISO 파일을 USB에 복사하시면 됩니다.",
     "Recommended System Specifications": "권장 시스템 사양",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "특별한 최소 시스템 사양은 없지만, 가장 좋은 사용자 경험을 위해서 다음 사양을 권장합니다:",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "최신 Intel i3 또는 듀얼-코어 64-bit 프로세서 호환",
@@ -31,8 +31,8 @@
     "Booting from the Install Drive": "설치 디스크에서 부팅하기",
     "In order to start the installation process, you must boot your computer from the install drive.": "설치 과정을 시작하기 위해서는, 설치 드라이브로 컴퓨터를 부팅해야 합니다.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "컴퓨터가 아직 켜져 있다고 가정하고, 설치 드라이브를 넣고 컴퓨터를 다시 시작하는 것에서부터 시작합니다.",
-    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "대부분의 컴퓨터에서는 짧은 시간 동안 특별한 키를 눌러서 부팅 순서를 바꿀 수 있습니다  — 보통은<kbd>F2</kbd>를 쓰지만, 가끔은 <kbd>Esc</kbd>나 다른 기능키를 사용합니다. 자세한 내용은 화면에 나오는 설명이나 또는 컴퓨터 설명서를 참조하세요.",
-    "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "<kbd>F12</kbd> (또는 알맞는 키)를 누르고 설치 드라이브를 선택합니다—일반적으로 &quot;USB-HDD&quot; 또는 &quot;USB&quot;라는 단어가 포함된 항목을 선택하십시오. 잘못된 드라이브를 선택하면, 컴퓨터가 정상적으로 부팅될 가능성이 높습니다. 컴퓨터를 다시 시작하고 해당 메뉴에서 다른 드라이브를 선택하기 만하면 됩니다.",
+    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12<\/kbd>, but sometimes <kbd>Esc<\/kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "대부분의 컴퓨터에서는 짧은 시간 동안 특별한 키를 눌러서 부팅 순서를 바꿀 수 있습니다  — 보통은<kbd>F2<\/kbd>를 쓰지만, 가끔은 <kbd>Esc<\/kbd>나 다른 기능키를 사용합니다. 자세한 내용은 화면에 나오는 설명이나 또는 컴퓨터 설명서를 참조하세요.",
+    "Press <kbd>F12<\/kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "<kbd>F12<\/kbd> (또는 알맞는 키)를 누르고 설치 드라이브를 선택합니다—일반적으로 &quot;USB-HDD&quot; 또는 &quot;USB&quot;라는 단어가 포함된 항목을 선택하십시오. 잘못된 드라이브를 선택하면, 컴퓨터가 정상적으로 부팅될 가능성이 높습니다. 컴퓨터를 다시 시작하고 해당 메뉴에서 다른 드라이브를 선택하기 만하면 됩니다.",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "맞는 부팅 드라이브를 선택하면 잠시 후 elementary OS 스플래시 화면이 나타납니다. 이제 나머지 과정을 안내하는 안내 화면을 따르시면 됩니다.",
     "Verify your Download": "다운로드한 ISO 이미지 검증하기",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "다운로드한 이미지를 검증하는 것은 매우 중요하지만, 사용자의 선택을 따르는 작업입니다. 우리는 elementary OS 이미지의 체크 섬 (또는 해시 섬)을 만들고 있으며 여러분이 다운로드하신 이미지가 체크섬과 일치하는지를 설치하시기 전에 미리 확인해보시길 권해드립니다. 이 작업을 통해서 여러분이 온전한 이미지를 받았고 다운로드 중 이상이 생기지는 않았는지를 확인할 수 있습니다.",
@@ -49,7 +49,7 @@
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "끝나게 되면 드라이브를 꺼내고 elementary OS 설치를 위한 부팅을 하는 것이 안전합니다.",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "이미지를 굽는 동안 이런 대화 창이 뜰 수 있는데, ignore(무시) 버튼을 누르시는 게 안전합니다.",
     "Not readable warning": "일을 수 없음 경고",
-    "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "벨소리를 들으신 후에는, <kbd>Option</kbd>키를 누르세요. 그런 다음, 사용하려는 부팅 디스크를 선택하시면 됩니다. 알아두실 것은 &quot;Windows&quot;로 잘못 확인되는 수가 있는데요, 이것은 정상입니다.",
+    "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "벨소리를 들으신 후에는, <kbd>Option<\/kbd>키를 누르세요. 그런 다음, 사용하려는 부팅 디스크를 선택하시면 됩니다. 알아두실 것은 &quot;Windows&quot;로 잘못 확인되는 수가 있는데요, 이것은 정상입니다.",
     "Boot Errors": "부팅 오류",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-0.4.1-stable.20180214.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "Mac의 부트 메뉴에서 elementary OS 설치 USB를 인식하지 못하면, 대신에 elementary OS 설치 DVD를 만드셔야 합니다. 만드시려면, 빈 DVD를 넣고, Finder에서 ISO 파일을 오른쪽 클릭해서, \"Burn elementaryos-0.4.1-stable.20180214.iso to Disc\"를 선택하세요. 작업을 마치면, DVD로 다시 부팅해보세요.",
     "Running the following command in your terminal:": "터미널에서 아래 명령어를 실행하세요:",
@@ -63,5 +63,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "사용하시려는 USB를 제외한 모든 USB를 꺼냅니다.",
     "Click &quot;OK&quot; and wait for the process to finish.": "&quot;OK&quot;를 누르고 끝날 때까지 기다립니다.",
     "After Installation": "설치 후 하면 좋은 일",
-    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "시간을 내어 <a href=\"/docs/learning-the-basics\">기초 배우기</a>를 읽어 보시면서 새 운영체제에 대해 알아가 보세요."
+    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": "시간을 내어 <a href=\"\/docs\/learning-the-basics\">기초 배우기<\/a>를 읽어 보시면서 새 운영체제에 대해 알아가 보세요."
 }

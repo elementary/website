@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Respectem els drets dels nostres usuaris. Tot el sistema operatiu elementary està disponible per a la revisió, escrutini, modificació i redistribució. Això millora la seguretat i la privacitat per a tothom.",
     "Learn More": "Més informació",
     "Safe &amp; Secure": "Segur i protegit",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Estem construïts en GNU / Linux, un dels sistemes més segurs del món. És el mateix programari que alimenta el Departament de Defensa dels Estats Units, el Banc de la Xina i molt més.",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "Estem construïts en GNU \/ Linux, un dels sistemes més segurs del món. És el mateix programari que alimenta el Departament de Defensa dels Estats Units, el Banc de la Xina i molt més.",
     "Security Notices": "Avisos de seguretat",
     "Task finished": "S'ha completat la tasca",
     "Apps You Need, Without Ones You Don’t.": "Les aplicacions que us calen, sense les que no.",
@@ -107,7 +107,7 @@
     "Choose a Download": "Trieu una baixada",
     "Download from a localized server or by magnet link. For help and more info, see the": "Baixeu-lo des d'un servidor localitzat o mitjançant un enllaç magnètic. Per trobar ajuda i més informació, mireu-ne la",
     "installation guide": "guia d'instal·lació",
-    "Cancel": "Cancel·la",
+    "Close": "Tanca",
     "Download": "Baixa",
     "Torrent Magnet Link": "Enllaç de torrent magnètic",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "El substitut de Windows i macOS ràpid, obert i amb respecte per la privadesa: l'elementary OS"

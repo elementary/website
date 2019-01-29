@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "Szanujemy prawa naszych użytkowników. Każdy może przeglądać, studiować, modyfikować i rozpowszechniać nasze oprogramowanie, co wpływa na poprawę bezpieczeństwa i prywatności.",
     "Learn More": "Dowiedz się więcej",
     "Safe &amp; Secure": "Bezpieczeństwo i ochrona",
-    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
+    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "",
     "Security Notices": "Uwagi na temat zabezpieczeń",
     "Task finished": "Zadanie ukończone",
     "Apps You Need, Without Ones You Don’t.": "",
@@ -107,7 +107,7 @@
     "Choose a Download": "Wybierz wersję do pobrania",
     "Download from a localized server or by magnet link. For help and more info, see the": "Pobierz z najbliższej położonego serwera lub poprzez link „magnet”. W celu uzyskania pomocy lub więcej informacji, zobacz",
     "installation guide": "przewodnik instalacji",
-    "Cancel": "Anuluj",
+    "Close": "",
     "Download": "Pobierz",
     "Torrent Magnet Link": "Odnośnik „magnet” sieci torrent",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""

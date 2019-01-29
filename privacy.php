@@ -15,6 +15,14 @@
             <div class="row docs">
                 <h2>elementary OS</h2>
                 <p>We do not collect any data from elementary OS. Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.</p>
+                <h3>Online Accounts</h3>
+                <p>elementary OS optionally integrates with online account providers such as Google, Last.fm, and FastMail via System Settings. Data from these providers may be retrieved and stored locally on your device to be used in apps such as Mail and Calendar. This data is not sent to elementary or shared with any third party.</p>
+                <h4>What Data is Collected</h4>
+                <p>After adding an online account, elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device.</p>
+                <h4>How Data is Used</h4>
+                <p>Your data is stored locally on your device and never sent to elementary servers or any third parties. It is used to populate your local apps such as Mail, Calendar, Files, and Photos with your data.</p>
+                <h4>Sharing Data</h4>
+                <p>elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.</p>
             </div>
             <div class="row docs">
                 <h2>Website</h2>
@@ -23,8 +31,8 @@
                 <h3>Cookies</h3>
                 <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
                 <p>This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.</p>
-                <h5 data-l10n-off>CloudFlare</h5>
-                <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://www.cloudflare.com/security-policy">CloudFlare Privacy &amp; Security Policy</a></p>
+                <h5 data-l10n-off>Cloudflare</h5>
+                <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://www.cloudflare.com/security-policy">Cloudflare Privacy &amp; Security Policy</a></p>
                 <h5 data-l10n-off>Google Analytics</h5>
                 <p>Stores cookies to collect information—including the number of visitors to this site, from where they were referred, and the pages they visit—in an anonymous form. This information is used to help improve the site. For more information, see Google's article on <a class="read-more" target="_blank" rel="noopener" href="https://support.google.com/analytics/answer/6004245">Safeguarding Your Data</a></p>
                 <h5 data-l10n-off>Stripe</h5>

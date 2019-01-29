@@ -1,5 +1,5 @@
 {
-    "You're connected!": "Vous êtes connectés !",
+    "You're connected!": "Vous êtes connecté !",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Votre connexion Internet semble fonctionnelle. Vous pouvez fermer cette fenêtre sans risque et continuer à utiliser votre appareil.",
     "Why is this window appearing?": "Pourquoi cette fenêtre s'affiche-t-elle ?",
     "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS vérifie automatiquement votre connexion Internet quand vous vous connectez à un nouveau réseau WiFi. S'il détecte qu'il n'y as pas de connexion Internet (ex. si vous êtes connecté à un portail captif dans un café ou un autre lieu public), cette fenêtre apparaîtra et affichera la page de connexion.",
