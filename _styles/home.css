@@ -482,7 +482,8 @@ input:focus + .focus-reveal {
 }
 
 #workflow figure.multitasking .workspace {
-    animation: 5s switch-workspace ease infinite;
+    animation: 3s switch-workspace ease infinite;
+    background-position: right;
 }
 
 #workflow figure.multitasking::before,
@@ -499,7 +500,7 @@ input:focus + .focus-reveal {
 /*}*/
 
 #workflow figure.multitasking::after {
-    /*animation: 5s new-workspace ease infinite;*/
+    animation: 3s new-workspace ease infinite;
     left: 96%;
     right: 0;
 }
@@ -508,70 +509,67 @@ input:focus + .focus-reveal {
     0% {
         bottom: 0;
         left: 0;
-        top: 0;
         right: 0;
-        opacity: 1;
+        top: 0;
     }
 
     25% {
         bottom: 12%;
+        left: 8%;
         right: 8%;
         top: 4%;
-        left: 8%;
-        opacity: 1;
+    }
+
+    29% {
+        left: 0;
     }
 
     50% {
         bottom: 12%;
-        right: 100%;
+        left: 0%;
+        right: 96%;
         top: 4%;
-        left: -100%;
-        opacity: 0;
     }
 
     100% {
         bottom: 0;
         left: 0;
+        right: 100%;
         top: 0;
-        right: 0;
-        opacity: 0;
     }
 }
 
 @keyframes new-workspace {
     0% {
         bottom: 0;
-        top: 0;
         left: 100%;
         right: 0;
+        top: 0;
     }
 
     25% {
-        bottom: 16%;
-        top: 4%;
+        bottom: 12%;
         left: 96%;
         right: 0;
+        top: 4%;
     }
 
-    25% {
-        bottom: 16%;
-        top: 4%;
-        left: 8%;
-        right: 8%;
+    40% {
+        right: 0;
     }
 
     50% {
-        bottom: 16%;
-        top: 4%;
+        bottom: 12%;
         left: 8%;
         right: 8%;
+        top: 4%;
     }
 
     100% {
         bottom: 0;
         left: 0;
-        top: 0;
         right: 0;
+        top: 0;
     }
 }
 
