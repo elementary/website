@@ -432,13 +432,14 @@ input:focus + .focus-reveal {
 
 #workflow figure {
     background-image: url('/images/screenshots/desktop.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 2px;
     display: block;
     margin: 0 auto;
     padding-top: 56.25%; /* 16:9 ratio */
     position: relative;
-    width: calc(100% - 1em);
+    width: 100%;
 }
 
 #workflow figure * {
@@ -464,39 +465,114 @@ input:focus + .focus-reveal {
     background: #333;
 }
 
-#workflow figure.multitasking::before,
+#workflow figure.multitasking .workspace,
+/*#workflow figure.multitasking::before,*/
 #workflow figure.multitasking::after {
+    border-radius: 2px;
     background-image: url('/images/screenshots/desktop.jpg');
     background-size: cover;
-    border-radius: 2px;
-    bottom: 16%;
+    background-repeat: no-repeat;
+    bottom: 12%;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.1),
         0 2px 8px rgba(0, 0, 0, 0.5);
+    right: 8%;
+    top: 4%;
+    left: 8%;
+}
+
+#workflow figure.multitasking .workspace {
+    animation: 5s switch-workspace ease infinite;
+}
+
+#workflow figure.multitasking::before,
+#workflow figure.multitasking::after {
     content: "";
     display: block;
     position: absolute;
-    top: 4%;
 }
 
-#workflow figure.multitasking::before {
-    background-position: right;
-    left: 0;
-    right: 96%;
-}
+/*#workflow figure.multitasking::before {*/
+/*    background-position: right;*/
+/*    left: 0;*/
+/*    right: 96%;*/
+/*}*/
 
 #workflow figure.multitasking::after {
+    /*animation: 5s new-workspace ease infinite;*/
     left: 96%;
     right: 0;
 }
 
-#workflow figure.multitasking .workspace {
-    background-image: url('/images/screenshots/desktop.jpg');
-    background-size: cover;
-    bottom: 16%;
-    right: 8%;
-    top: 4%;
-    left: 8%;
+@keyframes switch-workspace {
+    0% {
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+
+    25% {
+        bottom: 12%;
+        right: 8%;
+        top: 4%;
+        left: 8%;
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 12%;
+        right: 100%;
+        top: 4%;
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes new-workspace {
+    0% {
+        bottom: 0;
+        top: 0;
+        left: 100%;
+        right: 0;
+    }
+
+    25% {
+        bottom: 16%;
+        top: 4%;
+        left: 96%;
+        right: 0;
+    }
+
+    25% {
+        bottom: 16%;
+        top: 4%;
+        left: 8%;
+        right: 8%;
+    }
+
+    50% {
+        bottom: 16%;
+        top: 4%;
+        left: 8%;
+        right: 8%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
 }
 
 #workflow figure.pip .window {
