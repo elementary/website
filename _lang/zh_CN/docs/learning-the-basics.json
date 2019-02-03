@@ -5,7 +5,7 @@
     "The elementary OS desktop is very simple and easy to learn. It consists of two elements: the panel and the dock. You can customize the desktop's wallpaper through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Wallpaper</strong>.": "elementary OS的桌面十分简单且易于使用。它包括两个部分：面板和 DOCK。你可以通过<strong><a href=\"/docs/learning-the-basics#system-settings\">系统设置</a></strong>→<strong>桌面</strong>→<strong>壁纸</strong>来定义桌面的壁纸。",
     "The Panel": "面板",
     "At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.": "阁下可以在屏幕顶部看到面板。其左侧是应用程序菜单，中间是时间与日期，右侧则是一些指示按钮。",
-    "Applications Menu": "",
+    "Applications Menu": "应用程序菜单",
     "On the left side of the panel is the Applications Menu. Selecting <strong>Applications</strong> opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.": "在面板左侧是应用程序菜单。点击选中<strong>“应用程序”</strong>来打开一个菜单，其中有系统所安装的全部应用。阁下可以滑动鼠标滚轮翻页或点击页面底部的圆点（即翻页器）来浏览它们，另外可以使用页面左上角的视图切换器来在网格视图（不分类大图标视图）与分类视图之间切换。",
     "You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:": "阁下可以结合应用的名称或一些关键字来检索应用并运行它们，也可以对系统设置项进行检索。还有一些动作可以在搜索中直接使用，其中包括：",
     "Shutdown and Restart": "关机和重启",
