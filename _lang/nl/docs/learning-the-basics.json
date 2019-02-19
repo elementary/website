@@ -65,7 +65,7 @@
     "Search in the top-right, or browse.": "Zoek met het zoekveld rechtsbovenin, of blader door de applicaties.",
     "Click <strong>Install<\/strong> next to the app you want to install.": "Klik op <strong>Installeren<\/strong> naast de applicatie die je wilt installeren.",
     "You may be asked for your password prior to installing an app.": "Het kan voorkomen dat om je wachtwoord gevraagd wordt voor het installatieproces begint.",
-    "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki.<\/em>": "",
+    "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 18.04 LTS should work on elementary OS Juno.<\/em>": "",
     "Updating": "",
     "elementary OS includes updates as part of AppCenter. Notice the tab &quot;Updates&quot; at the top of the window. We recommend you check for updates at least <em>once a week<\/em> to make sure your computer has the latest features and protection.": "",
     "For more information related to security patches, read the <a href=\"http:\/\/www.ubuntu.com\/usn\/xenial\/\">Ubuntu security notices<\/a>.": "",
