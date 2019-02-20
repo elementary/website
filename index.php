@@ -147,17 +147,19 @@
                     <figure class="dnd">
                         <div class="workspace">
                             <img class="window" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
-                            <div class="pantheon">
-                                <div id="notification-container">
-                                    <div class="window" type="notification">
-                                        <img src="images/icons/apps/64/internet-mail.svg" />
-                                    </div>
-                                </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
                             </div>
                         </div>
                     </figure>
                     <h3>Do Not Disturb</h3>
-                    <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Distrurb stops notifications in their tracks.</p>
+                    <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
                 </div>
             </div>
         </section>

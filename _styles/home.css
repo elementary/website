@@ -588,18 +588,47 @@ input:focus + .focus-reveal {
     }
 }
 
-#workflow figure.dnd .window[type="notification"] {
-    animation: 3.5s notification ease infinite;
-    /*background-color: white;*/
+#workflow figure.dnd .notification {
+    animation: 12s dnd ease infinite;
+    backface-visibility: hidden;
+    background-image:
+        linear-gradient(to bottom, #7e8087, #7e8087),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+    background-size:
+        50% 10%,
+        60% 10%,
+        40% 10%,
+        cover;
+    background-repeat: no-repeat;
+    background-position:
+        60% 20%,
+        75% 45%,
+        50% 70%,
+        0;
     bottom: auto;
     height: 10%;
     left: auto;
-    right: 2%;
+    perspective: 1000;
+    right: 1%;
+    text-shadow: none;
     top: 5%;
+    transform-style: preserve-3d;
     width: 18%;
 }
 
-#workflow figure.dnd .window[type="notification"] img {
+#workflow figure.dnd .notification:first-of-type {
+    animation-delay: 250ms;
+    top: 18%;
+}
+
+#workflow figure.dnd .notification:last-of-type {
+    animation-delay: 500ms;
+    top: 31%;
+}
+
+#workflow figure.dnd .notification img {
     height: 70%;
     margin-left: 4%;
     margin-top: 3%;
@@ -609,6 +638,32 @@ input:focus + .focus-reveal {
     left: 12%;
     top: 1%;
     width: 75%;
+}
+
+@keyframes dnd {
+    0% {
+        filter: saturate(1);
+        opacity: 0;
+        transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
+    }
+
+    3%,
+    15% {
+        filter: saturate(1);
+        opacity: 1;
+        transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
+    }
+
+    18% {
+        filter: saturate(0);
+        opacity: 0.5;
+    }
+
+    50%,
+    100% {
+        filter: saturate(0);
+        opacity: 0;
+    }
 }
 
 /***********
