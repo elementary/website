@@ -432,8 +432,8 @@ input:focus + .focus-reveal {
 
 #workflow figure {
     background-image: url('/images/screenshots/desktop.jpg');
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 2px;
     display: block;
     margin: 0 auto;
@@ -452,7 +452,6 @@ input:focus + .focus-reveal {
 }
 
 #workflow figure.multitasking,
-#workflow figure .window,
 #workflow figure .workspace,
 #workflow figure .notification {
     border-radius: 2px;
@@ -466,19 +465,18 @@ input:focus + .focus-reveal {
 }
 
 #workflow figure.multitasking .workspace,
-/*#workflow figure.multitasking::before,*/
 #workflow figure.multitasking::after {
     border-radius: 2px;
     background-image: url('/images/screenshots/desktop.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     bottom: 12%;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.1),
         0 2px 8px rgba(0, 0, 0, 0.5);
+    left: 8%;
     right: 8%;
     top: 4%;
-    left: 8%;
 }
 
 #workflow figure.multitasking .workspace {
@@ -492,12 +490,6 @@ input:focus + .focus-reveal {
     display: block;
     position: absolute;
 }
-
-/*#workflow figure.multitasking::before {*/
-/*    background-position: right;*/
-/*    left: 0;*/
-/*    right: 96%;*/
-/*}*/
 
 #workflow figure.multitasking::after {
     animation: 3s new-workspace ease infinite;
@@ -574,23 +566,49 @@ input:focus + .focus-reveal {
 }
 
 #workflow figure.pip .window {
-    background-color: #95a3ab;
+    animation: 6s pip ease infinite;
     left: auto;
     top: auto;
-    right: 2.5%;
-    bottom: 4%;
-    width: 28%;
-    height: 28%;
 }
 
-#workflow figure.dnd .notification {
-    background-image: linear-gradient(45deg, white 45%, transparent 46%, transparent 54%, white 55%);
-    left: auto;
-    top: 5%;
-    right: 2%;
+@keyframes pip {
+    0%,
+    62.5%,
+    100% {
+        bottom: 15%;
+        right: 20%;
+        width: 60%;
+    }
+
+    12.5%,
+    50% {
+        bottom: 3%;
+        right: 3%;
+        width: 30%;
+    }
+}
+
+#workflow figure.dnd .window[type="notification"] {
+    animation: 3.5s notification ease infinite;
+    /*background-color: white;*/
     bottom: auto;
-    width: 18%;
     height: 10%;
+    left: auto;
+    right: 2%;
+    top: 5%;
+    width: 18%;
+}
+
+#workflow figure.dnd .window[type="notification"] img {
+    height: 70%;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+#workflow figure.dnd .window {
+    left: 12%;
+    top: 1%;
+    width: 75%;
 }
 
 /***********
