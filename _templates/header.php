@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="all" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
