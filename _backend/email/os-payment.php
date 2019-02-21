@@ -60,7 +60,7 @@ function email_os_payment (\Stripe\Charge $charge) {
     );
 
     $message = array(
-        'subject' => 'elementary Purchase',
+        'subject' => 'elementary Purchase (Charge ' . $charge['id'] . ')',
         'from_email' => 'payment@elementary.io',
         'from_name' => 'elementary',
         'to' => array(

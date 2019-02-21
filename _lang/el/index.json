@@ -44,7 +44,7 @@
     "music screenshot": "Στιγμιότυπο Οθόνης Μουσικής",
     "music icon": "Εικόνα μουσικής",
     "Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.": "Οργανώστε και ακούστε τη μουσική σας. Περιηγηθείτε ανά άλμπουμ, χρησιμοποιήστε την πολύ γρήγορη αναζήτηση και δημιουργήστε λίστες αναπαραγωγής των αγαπημένων σας τραγουδιών.",
-    "epiphany screenshot": "epiphany screenshot\n",
+    "epiphany screenshot": "epiphany screenshot",
     "epiphany icon": "Εικόνα epiphany ",
     "Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use modern websites and web apps while being lighter on battery life.": "",
     "mail screenshot": "Στιγμιότυπο Οθόνης Ταχυδρομείου",
@@ -107,7 +107,7 @@
     "Choose a Download": "Επιλέξτε ένα στοιχείο λήψης",
     "Download from a localized server or by magnet link. For help and more info, see the": "Λήψη από έναν τοπικό διακομιστή ή από σύνδεσμο torrent (magnet). Για βοήθεια και περισσότερες πληροφορίες, ανατρέξτε στο",
     "installation guide": "οδηγό εγκατάστασης",
-    "Cancel": "Ακύρωση",
+    "Close": "",
     "Download": "Λήψη",
     "Torrent Magnet Link": "Σύνδεσμος Torrent Magnet",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""

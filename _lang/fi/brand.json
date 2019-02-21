@@ -1,8 +1,8 @@
 {
     "Brand": "Tuotemerkki",
-    "The elementary brand is unique: technically it belongs to elementary LLC., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.": "elementary-tuotemerkki on ainutlaatuinen: tarkkaan ottaen se kuuluu elementary LLC:lle; yritykselle, joka ohjaa ja tukee elementary-tuotteiden kehitystä. Meillä on kuitenkin hyvä yhteisö, emmekä halua olla liian määräileviä laillisilla vaatimuksilla. Olemme kirjoittaneet muutamia suosituksia helpottaaksemme ihmisiä ymmärtämään, milloin ja miten elementary-merkkiä pitää käyttää.",
+    "The elementary brand is unique: technically it belongs to elementary, Inc., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.": "",
     "Name": "Nimi",
-    "The word \"elementary\" refers to and is a trademark of elementary LLC. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. \"elementary OS\") to refer to a specific product of elementary.": "Sana \"elementary\" viittaa itse yritykseen ja on elementary LLC:n tuotemerkki. elementary kirjoitetaan aina pienaakkosilla, jopa lauseen alussa. Sitä käytetään myös osana tuotteiden nimiä (kuten \"elementary OS\"), jolloin viitataan tiettyyn elementaryn tuotteeseen.",
+    "The word \"elementary\" refers to and is a trademark of elementary, Inc. elementary is always lower-case, even when beginning sentences such as this. It is also used along with product names (i.e. \"elementary OS\") to refer to a specific product of elementary.": "",
     "Brand Marks": "Tuotemerkit",
     "elementary owns two marks: the \"elementary\" logotype and the \"e\" logomark. Both are considered trademarks and represent elementary—the company—and its products.": "elementary omistaa kaksi merkkiä: \"elementary\"-logotyypin ja \"e\"-logomerkin. Molemmat katsotaan tuotemerkeiksi, ja ne edustavat elementary-yritystä sekä sen tuotteita.",
     "Both should be used with the following in mind:": "Kumpaakin tulee käyttää seuraavat asiat huomioiden:",
@@ -87,7 +87,7 @@
     "Voice\/tone": "Ääni\/sävy",
     "However, to avoid user confusion, we do restrict the usage of the elementary name and marks:": "Kuitenkin, välttääksemme käyttäjien sekaannusta me rajoitamme elementary nimen ja merkkien käyttöä:",
     "You are encouraged to say that your app or service is designed for elementary OS, but please don't use the elementary name or marks as part of the name of your company, application, product, service, or in any logo you create.": "Kannustamme sinua sanomaan, että sinun sovelluksesi tai palvelusi on kehitetty elementary OS:ille, mutta älä käytä elementary nimeä tai sen merkkejä sinun yrityksen-, sovelluksen-, tuotteen-, palvelun nimessä tai missä tahansa logossa minkä luot.",
-    "Only use the elementary name or marks to refer to elementary LLC. or its products (i.e. elementary OS).": "Käytä elementary nimeä tai merkkejä vain viitatakseen elementary LLC:hen tai sen tuotteisiin (esim. elementary OS).",
+    "Only use the elementary name or marks to refer to elementary, Inc. or its products (i.e. elementary OS).": "",
     "Community": "Yhteisö",
     "Community products (sites, fan clubs, etc.) are encouraged to use the elementary Community logo:": "Suosittelemme yhteisötuotteita (sivut, faniklubit, jne.) käyttämään elementary Yhteisö logoa:",
     "elementary Community Logo with color": "elementary Yhteisö -logo väreillä",
@@ -105,8 +105,8 @@
     "Remove the packages <code>plymouth-theme-elementary<\/code> and <code>plymouth-theme-elementary-text<\/code>.": "Poista paketit <code>plymouth-theme-elementary<\/code> ja <code>plymouth-theme-elementary-text<\/code>.",
     "Merchandise": "Myytävät tavarat",
     "We do not typically allow our branding (including our name or brand marks) to be used on third-party merchandise.": "Emme yleensä salli meidän brändäystä (mukaan lukien meidän nimeä tai brändin merkintöjä) kolmannen osapuolen fanituotteissa.",
-    "Assets &amp; More Info": "Tiedostot &amp; Lisätietoa",
+    "Assets &amp; More Info": "Tiedostot &amp; lisätietoa",
     "Download on GitHub": "Lataa GitHubista",
-    "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>.": "Saadaksesi lisätietoa elementary nimestä, brändäyksestä ja tavaramerkistä, ota yhteyttä sähköpostiin <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>.",
+    "For further information regarding the use of the elementary name, branding, and trademarks, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>.": "Saadaksesi lisätietoa elementary-nimen käyttöön liittyen, brändäyksestä ja tavaramerkistä, ota yhteys sähköpostiin <a href=\"mailto:brand@elementary.io\">brand@elementary.io<\/a>.",
     "Brand &sdot; elementary": "Brändi &sdot; elementary"
 }
