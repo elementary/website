@@ -98,3 +98,27 @@ Gala is the window manager of elementary OS. If it crashes or freezes during dev
 5. Switch back to the graphical session by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F7</kbd>
 
 If Gala doesn't start, you can reinstall the latest stable version by running `sudo apt install --reinstall gala`.
+
+## Debug logs
+
+One way to debug applications is logging information in the code. This enables seeing what code was run and what the value of variables where.
+
+Example:
+```
+string name = "Bob";
+int age = 30;
+debug("Person: %s %i", name, age);
+```
+
+Beside debug, you can also use: `message`, `info`, `warning`, `critical`.
+
+The message format (`Person: %s %i` for example) is parsed like `printf`. [more info](http://www.cplusplus.com/reference/cstdio/printf/).
+
+By default these messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to for example `all` when running the application. [More info](https://developer.gnome.org/glib/stable/glib-running.html).
+
+Example:
+```
+G_MESSAGES_DEBUG=all ./Application
+```
+
+To view logs from all your applications you can use `journalctl`. [More info](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs).
