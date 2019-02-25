@@ -110,7 +110,7 @@ elementary OS comes bundled with **AppCenter**, an app store for free apps. Inst
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki._
+_Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 18.04 LTS should work on elementary OS Juno._
 
 ## Updating {#updating}
 
