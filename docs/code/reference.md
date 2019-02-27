@@ -45,6 +45,19 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
     c = n * 2 + 4;
 
+Lines consisting of closing brackets (`}` or `)`) should be followed by an empty 
+line, except when followed by another closing bracket or an `else` statement.
+
+
+    if (condition) {
+        // ...
+    } else {
+        // ...
+    }
+
+    // other code
+
+
 ## Indentation {#indentation}
 
 ### Vala {#indentation-vala}
