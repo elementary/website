@@ -42,7 +42,7 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
     c = n * 2 + 4;
 
-Lines with a `}` need to be followed by an empty line. Except when it's another `}` or an `else` /`else if` statement.
+Lines with a `}` need to be followed by an empty line. Except when it's followed by another `}`, a `)` or an `else` /`else if` statement.
 
 
     if (condition) {
