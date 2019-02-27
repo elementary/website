@@ -32,7 +32,10 @@ White space comes before opening parentheses:
 
 
     public string get_text () {}
-    if (a == 5) return 4;
+    if (a == 5) {
+        return 4;
+    }
+
     for (i = 0; i < maximum; i++) {}
     my_function_name ();
     Object my_instance = new Object ();
