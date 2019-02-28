@@ -1,6 +1,7 @@
 # elementary OS Development
 
 Want to contribute code to elementary OS itself? Here are some tips.
+Looking for documentation on creating your own apps please see our [Getting Started](/docs/code/getting-started).
 
 ## Install `elementary-sdk`
 
