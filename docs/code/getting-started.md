@@ -717,7 +717,7 @@ In between `var main_window...` and `main_window.show ();`, write the folowing l
     main_window.add (grid);
     main_window.show_all ();
 
-Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
+Since we're adding translatable strings, don't forget to update your translation template by running `ninja com.github.yourusername.yourrepositoryname-pot`.
 
 ## Sending Notifications {#sending-notifications}
 
