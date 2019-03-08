@@ -15,6 +15,11 @@ $output = array(
         'version' => $config['release_version']
     ),
 
+    'previous' => array(
+        'title' => $config['previous_title'],
+        'version' => $config['previous_version']
+    ),
+
     'keys' => array(
         'sentry' => $config['sentry_pub'],
         'stripe' => $config['stripe_pk']
