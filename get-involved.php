@@ -199,7 +199,7 @@
         </div>
         <div class="third">
             <h3>Report issues</h3>
-            <p>Help out by tracking down issues and reporting those or by clarifying or cleaning up existing issues. <a class="read-more" href="/docs/code/reference#reporting-bugs" target="_blank" rel="noopener">Learn More</a></p>
+            <p>Help out by tracking down issues and reporting them, or by clarifying and cleaning up existing issues. <a class="read-more" href="/docs/code/reference#reporting-bugs" target="_blank" rel="noopener">Learn More</a></p>
         </div>
         <div class="third">
             <h3>Fix issues</h3>
