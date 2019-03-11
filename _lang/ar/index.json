@@ -26,7 +26,7 @@
     "We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.": "نحن نحترم حقوق مستخدمينا. إليمينتري أو إس مفتوح المصدر ويمكن تقيمه شيفرته البرمجية، وتدارسها، ويوزع من قبل اي شخص. وهذا ما يعزز الخصوصية والامان لنا جميعًا.",
     "Learn More": "أقرأ المزيد",
     "Safe &amp; Secure": "آمن ومضمون",
-    "We’re built on GNU\/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحن مبنيين بإستخدام جنو\/لينكس، واحد من أأمن الانظمة حول العالم. نفس البرامج التي تعتمد عليها وزارة الدفاع الامريكية، بنك الصين، وآخريين.",
+    "We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.": "نحن مبنيين بإستخدام جنو/لينكس، واحد من أأمن الانظمة حول العالم. نفس البرامج التي تعتمد عليها وزارة الدفاع الامريكية، بنك الصين، وآخريين.",
     "Security Notices": "تنبيهات الحماية",
     "Task finished": "تمت المهمة",
     "Apps You Need, Without Ones You Don’t.": "تطبيقات تحتاجها، بدون تطبيقات مزعجة معها.",
@@ -107,7 +107,7 @@
     "Choose a Download": "إختر تحميلًا",
     "Download from a localized server or by magnet link. For help and more info, see the": "حمل من سيرفر محلي أو من التورينت. للمساعدة والمعلومات الاضافية انظر الى",
     "installation guide": "دليل التثبيت",
-    "Close": "",
+    "Close": "إغلاق",
     "Download": "حمل",
     "Torrent Magnet Link": "رابط التورنت",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "البديل السريع، المفتوح المصدر، والمحافظ على الخصوصية للويندوز والماك او اس &sdot; إليمنتري أو إس"
