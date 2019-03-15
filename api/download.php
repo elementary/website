@@ -45,7 +45,7 @@ if (!isset($charge['metadata']['products'])) {
     try {
         $charge = \Stripe\Charge::retrieve(
             $charge_id,
-          ['api_key' => $config['previous_stripe_sk']],
+            ['api_key' => $config['previous_stripe_sk']]
         ); 
     } catch (Exception $e) {
         return go_home();
