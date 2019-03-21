@@ -32,14 +32,14 @@ if (substr($charge_id, 0, 3) !== 'ch_') {
     return go_home();
 }
 
-// Try to getch the charge id under the current Stripe account
+// Try to fetch the charge id under the current Stripe account
 try {
     $charge = \Stripe\Charge::retrieve($charge_id);
 } catch (Exception $e) {
     return go_home();
 }
 
-// Try to getch the charge id under the _previous_ Stripe account
+// Try to fetch the charge id under the _previous_ Stripe account
 // IF the metadata we need isn't set yet
 if (!isset($charge['metadata']['products'])) {
     try {
