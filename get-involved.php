@@ -195,8 +195,25 @@
         <div class="whole">
             <div class="actions">
                 <a class="button flat suggested-action" href="https://github.com/elementary" target="_blank" rel="noopener">Browse Our Code</a>
+            </div>
+        </div>
+        <div class="third">
+            <h3>Report issues</h3>
+            <p>Help out by tracking down issues and reporting them, or by clarifying and cleaning up existing issues. <a class="read-more" href="/docs/code/reference#reporting-bugs" target="_blank" rel="noopener">Learn More</a></p>
+        </div>
+        <div class="third">
+            <h3>Fix issues</h3>
+            <p>Contribute to elementary OS by fixing issues, improving functionality or by implementing new features. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
+            <div class="actions">
                 <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bitesize%22&type=" target="_blank" rel="noopener">Bitesized Bugs</a>
                 <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=" target="_blank" rel="noopener">Bountied Bugs</a>
+            </div>
+        </div>
+        <div class="third">
+            <h3>Create apps</h3>
+            <p>Improve the overall elementary OS ecosystem by creating great apps. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://developer.elementary.io/" target="_blank" rel="noopener">Publish on AppCenter</a>
             </div>
         </div>
     </div>
