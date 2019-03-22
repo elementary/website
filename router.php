@@ -6,7 +6,7 @@
  * your local PHP development server. NOT intended for production whatsoever.
  */
 
-if (php_sapi_name() !== 'cli-server') {
+if (getenv('PHPENV') === 'production') {
     header('HTTP/1.1 403 Forbidden');
     echo 'Script only accessible in development environment.';
     exit;
