@@ -6,6 +6,12 @@
  * your local PHP development server. NOT intended for production whatsoever.
  */
 
+if (getenv('PHPENV') === 'production') {
+    header('HTTP/1.1 403 Forbidden');
+    echo 'Script only accessible in development environment.';
+    exit;
+}
+
 // Allow query parameters to be appended to the request
 $requestUri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
