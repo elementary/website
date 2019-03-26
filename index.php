@@ -130,7 +130,7 @@
         <section id="workflow" class="grey">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>Get work done. Or play.</h2>
+                    <h2>Get Work Done. Or Play.</h2>
                     <h4>elementary OS is designed to keep you productive and focused by getting out of your way with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. And by staying out of your way, elementary OS is great when you're watching videos or playing games, too.</h4>
                 </div>
             </div>
