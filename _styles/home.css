@@ -76,12 +76,12 @@ input:focus + .focus-reveal {
 
 #the-press svg {
     display: block;
-    height: 27px;
-    margin: 19px auto;
+    height: 4em;
+    margin: 12px auto;
 }
 
 #the-press svg * {
-    fill: #333;
+    fill: #555761;
 }
 
 #the-press svg:hover * {

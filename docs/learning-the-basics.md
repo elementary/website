@@ -116,7 +116,7 @@ _Note: Some software may not be available from AppCenter. While we don't recomme
 
 elementary OS includes updates as part of AppCenter. Notice the tab "Updates" at the top of the window. We recommend you check for updates at least _once a week_ to make sure your computer has the latest features and protection.
 
-For more information related to security patches, read the <a href="http://www.ubuntu.com/usn/xenial/">Ubuntu security notices</a>.
+For more information related to security patches, read the <a href="https://usn.ubuntu.com/">Ubuntu security notices</a>.
 
 ## System Settings {#system-settings}
 
