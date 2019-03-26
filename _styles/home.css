@@ -431,10 +431,9 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-    background-image: url('/images/screenshots/desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 2px;
+    background: #d4d5d7;
+    border: 3px solid #555761;
+    border-radius: 6px;
     display: block;
     margin: 0 auto;
     padding-top: 56.25%; /* 16:9 ratio */
@@ -451,29 +450,22 @@ input:focus + .focus-reveal {
     top: 0;
 }
 
-#workflow figure.multitasking,
-#workflow figure .workspace,
+#workflow figure .window,
 #workflow figure .notification {
-    border-radius: 2px;
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 2px 8px rgba(0, 0, 0, 0.5);
+    background: #f5f5f5;
+    border-radius: 3px;
+    border: 1px solid rgba(85, 87, 97, 0.5);
 }
 
 #workflow figure.multitasking {
-    background: #333;
+    background: #555761;
 }
 
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
-    border-radius: 2px;
-    background-image: url('/images/screenshots/desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 3px;
+    background: #d4d5d7;
     bottom: 12%;
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 2px 8px rgba(0, 0, 0, 0.5);
     left: 8%;
     right: 8%;
     top: 4%;
@@ -567,6 +559,7 @@ input:focus + .focus-reveal {
 
 #workflow figure.pip .window {
     animation: 6s pip ease infinite;
+    height: 80%;
     left: auto;
     top: auto;
 }
@@ -577,6 +570,7 @@ input:focus + .focus-reveal {
     100% {
         bottom: 15%;
         right: 20%;
+        height: 60%;
         width: 60%;
     }
 
@@ -584,6 +578,7 @@ input:focus + .focus-reveal {
     50% {
         bottom: 3%;
         right: 3%;
+        height: 30%;
         width: 30%;
     }
 }
@@ -595,7 +590,7 @@ input:focus + .focus-reveal {
         linear-gradient(to bottom, #7e8087, #7e8087),
         linear-gradient(to bottom, #d4d4d4, #d4d4d4),
         linear-gradient(to bottom, #d4d4d4, #d4d4d4),
-        linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+        linear-gradient(to bottom, #f5f5f5, #f5f5f5);
     background-size:
         50% 10%,
         60% 10%,
@@ -628,40 +623,31 @@ input:focus + .focus-reveal {
     top: 31%;
 }
 
-#workflow figure.dnd .notification img {
-    height: 70%;
-    margin-left: 4%;
-    margin-top: 3%;
-}
-
 #workflow figure.dnd .window {
     left: 12%;
-    top: 1%;
+    top: 13%;
+    height: 75%;
     width: 75%;
 }
 
 @keyframes dnd {
     0% {
-        filter: saturate(1);
         opacity: 0;
         transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
     }
 
     3%,
     15% {
-        filter: saturate(1);
         opacity: 1;
         transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
     }
 
     18% {
-        filter: saturate(0);
         opacity: 0.5;
     }
 
     50%,
     100% {
-        filter: saturate(0);
         opacity: 0;
     }
 }
