@@ -127,6 +127,50 @@
                 <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
             </div>
         </section>
+        <section id="workflow" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>Get Work Done. Or Play.</h2>
+                    <h4>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</h4>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="third">
+                    <figure class="multitasking">
+                        <div class="workspace"></div>
+                    </figure>
+                    <h3>Multitasking View</h3>
+                    <p>Workspaces help organize your work by task. Keep work and play separate, but just one tap away.</p>
+                </div>
+                <div class="third">
+                    <figure class="pip">
+                        <div class="workspace">
+                            <img class="window" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="Videos screenshot" />
+                        </div>
+                    </figure>
+                    <h3>Picture-in-Picture</h3>
+                    <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
+                </div>
+                <div class="third">
+                    <figure class="dnd">
+                        <div class="workspace">
+                            <img class="window" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                        </div>
+                    </figure>
+                    <h3>Do Not Disturb</h3>
+                    <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
+                </div>
+            </div>
+        </section>
         <section>
             <div id="showcase" class="row grey">
                 <div class="pantheon" style="display:none;">
