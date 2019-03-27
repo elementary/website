@@ -131,7 +131,7 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h2>Get Work Done. Or Play.</h2>
-                    <h4>elementary OS is designed to keep you productive and focused by getting out of your way with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. And by staying out of your way, elementary OS is great when you're watching videos or playing games, too.</h4>
+                    <h4>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</h4>
                 </div>
             </div>
             <div class="grid">
@@ -140,7 +140,7 @@
                         <div class="workspace"></div>
                     </figure>
                     <h3>Multitasking View</h3>
-                    <p>Powerful workspaces help you organize your work by task. Keep work and play separate, but just one tap away.</p>
+                    <p>Workspaces help organize your work by task. Keep work and play separate, but just one tap away.</p>
                 </div>
                 <div class="third">
                     <figure class="pip">
@@ -149,7 +149,7 @@
                         </div>
                     </figure>
                     <h3>Picture-in-Picture</h3>
-                    <p>Keep tabs on one thing while working on another. Whether you’re watching a movie, game, or terminal process, Picture-in-Picture keeps it within view.</p>
+                    <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
                 </div>
                 <div class="third">
                     <figure class="dnd">
