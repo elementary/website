@@ -32,7 +32,10 @@ White space comes before opening parentheses:
 
 
     public string get_text () {}
-    if (a == 5) return 4;
+    if (a == 5) {
+        return 4;
+    }
+
     for (i = 0; i < maximum; i++) {}
     my_function_name ();
     Object my_instance = new Object ();
@@ -41,6 +44,19 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
 
     c = n * 2 + 4;
+
+Lines consisting of closing brackets (`}` or `)`) should be followed by an empty 
+line, except when followed by another closing bracket or an `else` statement.
+
+
+    if (condition) {
+        // ...
+    } else {
+        // ...
+    }
+
+    // other code
+
 
 ## Indentation {#indentation}
 

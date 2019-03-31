@@ -76,12 +76,12 @@ input:focus + .focus-reveal {
 
 #the-press svg {
     display: block;
-    height: 27px;
-    margin: 19px auto;
+    height: 4em;
+    margin: 12px auto;
 }
 
 #the-press svg * {
-    fill: #333;
+    fill: #555761;
 }
 
 #the-press svg:hover * {
@@ -423,6 +423,246 @@ input:focus + .focus-reveal {
         height: 128px;
         margin: 0 auto 32px;
         width: 128px;
+    }
+}
+
+/***********
+* Workflow *
+***********/
+
+#workflow figure {
+    background-image: url('/images/screenshots/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 ratio */
+    position: relative;
+    width: 100%;
+}
+
+#workflow figure * {
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#workflow figure.multitasking,
+#workflow figure .workspace,
+#workflow figure .notification {
+    border-radius: 2px;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#workflow figure.multitasking {
+    background: #333;
+}
+
+#workflow figure.multitasking .workspace,
+#workflow figure.multitasking::after {
+    border-radius: 2px;
+    background-image: url('/images/screenshots/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 12%;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.5);
+    left: 8%;
+    right: 8%;
+    top: 4%;
+}
+
+#workflow figure.multitasking .workspace {
+    animation: 3s switch-workspace ease infinite;
+    background-position: right;
+}
+
+#workflow figure.multitasking::before,
+#workflow figure.multitasking::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#workflow figure.multitasking::after {
+    animation: 3s new-workspace ease infinite;
+    left: 96%;
+    right: 0;
+}
+
+@keyframes switch-workspace {
+    0% {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    25% {
+        bottom: 12%;
+        left: 8%;
+        right: 8%;
+        top: 4%;
+    }
+
+    29% {
+        left: 0;
+    }
+
+    50% {
+        bottom: 12%;
+        left: 0%;
+        right: 96%;
+        top: 4%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        top: 0;
+    }
+}
+
+@keyframes new-workspace {
+    0% {
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        top: 0;
+    }
+
+    25% {
+        bottom: 12%;
+        left: 96%;
+        right: 0;
+        top: 4%;
+    }
+
+    40% {
+        right: 0;
+    }
+
+    50% {
+        bottom: 12%;
+        left: 8%;
+        right: 8%;
+        top: 4%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+}
+
+#workflow figure.pip .window {
+    animation: 6s pip ease infinite;
+    left: auto;
+    top: auto;
+}
+
+@keyframes pip {
+    0%,
+    62.5%,
+    100% {
+        bottom: 15%;
+        right: 20%;
+        width: 60%;
+    }
+
+    12.5%,
+    50% {
+        bottom: 3%;
+        right: 3%;
+        width: 30%;
+    }
+}
+
+#workflow figure.dnd .notification {
+    animation: 12s dnd ease infinite;
+    backface-visibility: hidden;
+    background-image:
+        linear-gradient(to bottom, #7e8087, #7e8087),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+    background-size:
+        50% 10%,
+        60% 10%,
+        40% 10%,
+        cover;
+    background-repeat: no-repeat;
+    background-position:
+        60% 20%,
+        75% 45%,
+        50% 70%,
+        0;
+    bottom: auto;
+    height: 10%;
+    left: auto;
+    perspective: 1000;
+    right: 1%;
+    text-shadow: none;
+    top: 5%;
+    transform-style: preserve-3d;
+    width: 18%;
+}
+
+#workflow figure.dnd .notification:first-of-type {
+    animation-delay: 250ms;
+    top: 18%;
+}
+
+#workflow figure.dnd .notification:last-of-type {
+    animation-delay: 500ms;
+    top: 31%;
+}
+
+#workflow figure.dnd .notification img {
+    height: 70%;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+#workflow figure.dnd .window {
+    left: 12%;
+    top: 1%;
+    width: 75%;
+}
+
+@keyframes dnd {
+    0% {
+        filter: saturate(1);
+        opacity: 0;
+        transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
+    }
+
+    3%,
+    15% {
+        filter: saturate(1);
+        opacity: 1;
+        transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
+    }
+
+    18% {
+        filter: saturate(0);
+        opacity: 0.5;
+    }
+
+    50%,
+    100% {
+        filter: saturate(0);
+        opacity: 0;
     }
 }
 
