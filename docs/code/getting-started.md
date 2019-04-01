@@ -556,7 +556,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Copyright: 2018 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
+That wasn't too bad, right? We'll set up more complicated packaging in the future, but this is all that is required to submit your app to AppCenter Dashboard for it to be built, packaged, and distributed—you don't need to actually create a .deb file yourself. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
 Note that Debian packaging is _very_ picky about whitespace, so if you're running into errors, make sure you're not adding, changing, or removing whitespace from the original template files.
 
