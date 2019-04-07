@@ -19,7 +19,7 @@
     "Sound: Toggle the mute state of the primary output device": "声音指示器：设置主音频输出是否静音",
     "Bluetooth: Toggle the Enabled/Disabled the primary bluetooth device": "蓝牙指示器：开启/关闭主蓝牙设备",
     "Power: Hide/Show the percentage of battery remaining": "电源指示器：显示或隐藏电量剩余百分比",
-    "Notifications: Toggle Do Not Disturb mode": "",
+    "Notifications: Toggle Do Not Disturb mode": "于通知指示器上单击：切换勿扰之开启/关闭状态",
     "Session: Show the shutdown dialog": "",
     "The Dock": "Dock",
     "At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.": "屏幕底部是 Dock。 它包含您最喜欢的应用程序以及当前打开的任何应用程序。",
