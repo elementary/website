@@ -523,7 +523,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
           * Initial Release.
 
-         -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2019 04:53:39 -0500
+         -- Your Name <you@emailaddress.com>  Monday, 8 Apr 2019 04:53:39 -0500
 
      The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](https://www.debian.org/doc/debian-policy/#document-ch-source).
 
