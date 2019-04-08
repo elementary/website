@@ -283,7 +283,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2019 Your Name <you@email.com> -->
+        <!-- Copyright 2018 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname</id>
           <metadata_license>CC0</metadata_license>
