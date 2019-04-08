@@ -726,7 +726,7 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
     show_button.clicked.connect (() => {
         var notification = new Notification (_("Hello World"));
         notification.set_body (_("This is my first notification!"));
-        this.send_notification ("notify.app", notification);
+        this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
     });
 
 Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
