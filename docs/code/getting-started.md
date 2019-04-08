@@ -283,7 +283,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2018 Your Name <you@email.com> -->
+        <!-- Copyright 2019 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname</id>
           <metadata_license>CC0</metadata_license>
@@ -523,7 +523,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
           * Initial Release.
 
-         -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2018 04:53:39 -0500
+         -- Your Name <you@emailaddress.com>  Monday, 8 Apr 2019 04:53:39 -0500
 
      The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](https://www.debian.org/doc/debian-policy/#document-ch-source).
 
@@ -553,7 +553,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Source: https://github.com/yourusername/yourrepositoryname
 
         Files: src/* data/* debian/*
-        Copyright: 2018 Your Name <you@emailaddress.com>
+        Copyright: 2019 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
 That wasn't too bad, right? We'll set up more complicated packaging in the future, but this is all that is required to submit your app to AppCenter Dashboard for it to be built, packaged, and distributed—you don't need to actually create a .deb file yourself. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
