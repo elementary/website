@@ -41,7 +41,7 @@
     "click on the window you want to switch to": "geçiş yapmak istediğiniz pencereyi tıklayın",
     "click on the app's icon in the dock": "Rıhtımdaki uygulama simgesine tıklayınız",
     "press <kbd>Alt</kbd> + <kbd>Tab</kbd>": "<kbd>Alt</kbd>+<kbd>Tab</kbd> 'ye bas",
-    "To see an overview of your open app windows, press <kbd>&#8984;</kbd> + <kbd>W</kbd>.": "Açık pencerelerin ön izlemesini görmek için <kbd>⌘</kbd> + <kbd>W</kbd>'e basın.",
+    "To see an overview of your open app windows, press <kbd>&#8984;</kbd> + <kbd>W</kbd>.": "Açık pencerelerin ön izlemesini görmek için <kbd>⌘</kbd> + <kbd>W</kbd> tuşlarına basın.",
     "You can customize these shortcuts through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong> → <strong>Windows</strong>.": "u kısayolları<strong><a href=\"/docs/learning-the-basics#system-settings\">Sistem Ayarları</a></strong> → <strong>Klavye</strong> → <strong>Kısayollar</strong> → <strong>Pencereler</strong> yolunu takip ederek özelleştirebilirsiniz.",
     "Hot Corners": "Etkin Köşele",
     "You can also configure &quot;hot corners&quot; (shortcuts activated by placing your cursor in the corner of the display) to activate multi-tasking functions like the window overview, workspace overview, and more.": "\"Etkin köşeler\"i de yapılandırabilirsiniz. (Ekranın köşelerine fare imlecini götürerek) Pencerelere genel bakış, çalışma alanlarına genel bakış ve daha fazlası gibi çoklu görev işlevleri etkinleştirmek için kullanılır.",
