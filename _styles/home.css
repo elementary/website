@@ -1151,6 +1151,10 @@ span.results-title {
     text-align: left;
 }
 
+#parental-controls .app-display__description h3 {
+    margin-bottom: 0;
+}
+
 #parental-controls .app-display__description p {
     margin-left: 24px;
 }
@@ -1162,7 +1166,7 @@ span.results-title {
 
 #parental-controls .app-display__description svg {
     float: left;
-    margin: 4px 6px 4px 0;
+    margin: 1em 0.5em 1em 0;
 }
 
 #parental-controls .app-display__description svg,
