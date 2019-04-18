@@ -112,6 +112,7 @@ gulp.task('svg', () => {
         '_images/icons/actions/symbolic/view-filter-symbolic.svg',
         '_images/icons/actions/symbolic/view-grid-symbolic.svg',
         '_images/icons/actions/symbolic/window-maximize-symbolic.svg',
+        '_images/icons/actions/symbolic/window-pop-out-symbolic.svg',
         '_images/icons/apps/symbolic/web-browser-symbolic.svg',
         '_images/icons/apps/128/accessories-text-editor.svg',
         '_images/icons/apps/128/application-default-icon.svg',
@@ -150,10 +151,12 @@ gulp.task('svg', () => {
         '_images/icons/categories/64/preferences-system-parental-controls.svg',
         '_images/icons/devices/64/scanner.svg',
         '_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg',
+        '_images/icons/devices/symbolic/computer-symbolic.svg',
         '_images/icons/mimes/48/office-database.svg',
         '_images/icons/places/128/distributor-logo.svg',
         '_images/icons/places/64/distributor-logo.svg',
         '_images/icons/status/48/dialog-warning.svg',
+        '_images/icons/status/symbolic/notification-disabled-symbolic.svg',
         '_images/thirdparty-icons/apps/32/multitasking-view.svg'
     ]
     const dest = 'images'
