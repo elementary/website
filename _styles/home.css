@@ -359,9 +359,9 @@ input:focus + .focus-reveal {
 #whats-new::before {
     background-color: #667885;
     background-image:
-        url("/images/brand/logomark-white.svg"),
+        url("../images/brand/logomark-white.svg"),
         linear-gradient(to bottom, rgba(72, 90, 108, 0.25), rgba(39, 52, 69, 0.75)),
-        url("/images/home/wallpaper.jpg");
+        url("../images/home/wallpaper.jpg");
     background-size:
         contain,
         cover,
@@ -456,7 +456,7 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 2px;
@@ -492,7 +492,7 @@ input:focus + .focus-reveal {
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
     border-radius: 2px;
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 12%;
