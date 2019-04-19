@@ -24,6 +24,8 @@ $config = array(
     'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
     'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
+    'previous_stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
+
     'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
     'printful_key' => 'aaaaaaaa-bbbb-cccc:dddd-eeeeeeeeeeee',
