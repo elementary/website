@@ -356,6 +356,31 @@ input:focus + .focus-reveal {
     padding: 64px 1em;
 }
 
+#whats-new::before {
+    background-color: #667885;
+    background-image:
+        url("../images/brand/logomark-white.svg"),
+        linear-gradient(to bottom, rgba(72, 90, 108, 0.25), rgba(39, 52, 69, 0.75)),
+        url("../images/home/wallpaper.jpg");
+    background-size:
+        contain,
+        cover,
+        cover;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    content: "";
+    display: block;
+    height: 128px;
+    margin: 0 auto;
+    width: 128px;
+}
+
 /************
 * AppCenter *
 ************/
@@ -431,7 +456,7 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 2px;
@@ -467,7 +492,7 @@ input:focus + .focus-reveal {
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
     border-radius: 2px;
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 12%;
