@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'OEM Resources &sdot; elementary';
+    $page['title'] = 'OEMs &sdot; elementary';
 
     $page['styles'] = array(
         'styles/oem.css'
@@ -10,6 +10,34 @@
     include $template['header'];
     include $template['alert'];
 ?>
+
+<div class="grid">
+    <div class="two-thirds">
+        <h1>
+            Companies Shipping
+            <?php
+                // Embed the SVG to fix scaling in WebKit 1.x,
+                // while preserving CSS options for the image.
+                include __DIR__.'/images/logotype-os.svg';
+            ?>
+        </h1>
+        <h4>The following OEMs offer elementary OS on their hardware. Hardware and software support for these systems are provided by the hardware company.</h4>
+    </div>
+</div>
+<div class="grid">
+    <div class="third">
+        <a href="https://slimbook.es" target="_blank">
+            <img src="https://slimbook.es/templates/slimbook/img/logo1.jpg" height="90" alt="Slimbook logo" />
+            <p>Slimbook<p>
+        </a>
+    </div>
+    <div class="third">
+        <a href="https://junocomputers.com/" target="_blank">
+            <img src="https://content.web-repository.com/s/70841958560225677/uploads/Images/juno2_360x_1-8868591.png" height="90" alt="Juno Computers logo" />
+            <p>Juno Computers<p>
+        </a>
+    </div>
+</div>
 
 <div class="grid">
     <div class="two-thirds">
