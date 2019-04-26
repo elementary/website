@@ -8,13 +8,20 @@ The elementary OS desktop is very simple and easy to learn. It consists of two e
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.
 
-![The Panel](../images/docs/learning-the-basics/panel.png)
+<div class="annotated">
+    <ol>
+        <li><span>Applications menu</span></li>
+        <li><span>Time and date</span></li>
+        <li><span>Indicators</span></li>
+    </ol>
+    <img src="../images/docs/learning-the-basics/panel@2x.png" alt="The Panel"/>
+</div>
 
 #### Applications Menu {#applications}
 
 On the left side of the panel is the Applications Menu. Selecting **Applications** opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
 
-![Applications Menu](../images/docs/learning-the-basics/slingshot.png)
+![Applications Menu](../images/docs/learning-the-basics/applications-menu@2x.png)
 
 You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:
 
@@ -39,7 +46,7 @@ A middle click or three finger tap on an indicator will present you with the fol
 ### The Dock {#the-dock}
 At the bottom of the screen is the Dock. It contains your favorite apps well as any apps that are currently open.
 
-![The Dock](../images/docs/learning-the-basics/dock.png)
+![The Dock](../images/docs/learning-the-basics/dock@2x.png)
 
 The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
 
@@ -58,9 +65,7 @@ Many apps have a HeaderBar at the top of the app. This area contains common acti
 
 You can move an app's window around the desktop by dragging anywhere on the HeaderBar, including on buttons.
 
-<div class="img--cutoff-bottom">
-    <img src="../images/docs/learning-the-basics/windows.png" alt="HeaderBar">
-</div>
+![HeaderBar](../images/docs/learning-the-basics/headerbar@2x.png)
 
 #### Window Buttons {#window-buttons}
 An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full screen or not.
@@ -122,7 +127,7 @@ For more information related to security patches, read the <a href="https://usn.
 
 elementary OS comes with a handy app called "System Settings" that controls all of your system-wide (or "global") preferences. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
-![](../images/docs/learning-the-basics/switchboard.png)
+![](../images/docs/learning-the-basics/system_settings@2x.png)
 
 ### Search {#search}
 You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.
