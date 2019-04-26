@@ -1376,30 +1376,37 @@ i.fa.fa-close.close-modal {
 .annotated {
     margin: 1.5em auto;
 }
+
 .annotated ol {
     padding: 0;
     display: flex;
 }
+
 .annotated li {
     list-style: none;
     width: 100%;
     text-align: center;
 }
+
 .annotated li:first-child {
     text-align: left;
 }
+
 .annotated li:last-child {
     text-align: right;
 }
+
 .annotated li span {
     position: relative;
 }
-.annotated li span:before {
+
+.annotated li span::before {
     content: "|";
     position: absolute;
     left: 50%;
     top: 0.9em;
 }
+
 .docs .annotated img {
     margin: 0;
 }
