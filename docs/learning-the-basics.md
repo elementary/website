@@ -8,7 +8,7 @@ The elementary OS desktop is very simple and easy to learn. It consists of two e
 ### The Panel {#the-panel}
 At the top of the screen you can see the Panel. On the left is the Applications Menu, in the center are the time and date, and on the right are the Indicators.
 
-![The Panel](../images/docs/learning-the-basics/panel.png)
+![The Panel](https://elementary.io/images/docs/learning-the-basics/panel.png)
 
 #### Applications Menu {#applications}
 
