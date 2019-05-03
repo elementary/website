@@ -3,7 +3,7 @@
 Want to contribute code to elementary OS itself? Here are some tips.
 Looking for documentation on creating your own apps? Please see [Getting Started](/docs/code/getting-started) instead.
 
-## Install `elementary-sdk`
+## Install `elementary-sdk` {#elementary-sdk}
 
 First, install `elementary-sdk` from the Terminal:
 
@@ -13,15 +13,15 @@ sudo apt install elementary-sdk
 
 This is a metapackage that depends on several tools we use for development.
 
-## dconf Editor
+## dconf Editor {#dconf-editor}
 
 dconf Editor is an invaluable tool for seeing and modifying settings. It's installed along with `elementary-sdk`.
 
-## Vala linting
+## Vala linting {#vala-linting}
 
 To make it easier to follow the [elementary Code-Style guidelines](https://elementary.io/docs/code/reference#code-style) you can use [vala-lint](https://github.com/elementary/vala-lint).
 
-## GtkInspector
+## Gtk Inspector {#gtk-inspector}
 
 The GTK [Inspector](https://wiki.gnome.org/Projects/GTK+/Inspector) is similar to a web browser's inspector, but for GTK apps. Using the Inspector can greatly speed up development, and allows you view and to test out changing properties without recompiling your app. You can also test out temporary in-app CSS.
 
@@ -39,7 +39,7 @@ You can also run it temporarily together with your app by running:
 GTK_DEBUG=interactive your-app
 ```
 
-## Build dependencies
+## Build dependencies {#build-dependencies}
 
 You can quickly install all known dependencies for a project with `build-dep`:
 
@@ -49,7 +49,7 @@ sudo apt build-dep <packagename>
 
 This installs the dependencies for the currently-released version, so it may miss dependencies for unreleased updates. In those cases, refer to the project's README.
 
-## Restoring original packages
+## Restoring original packages {#restoring-original-packages}
 
 You can audit your system for files that have been changed from their originally installed packages:
 
@@ -76,7 +76,7 @@ Assuming that you've used `--prefix=/usr` when installing custom version you can
 sudo apt install appname --reinstall
 ```
 
-## WingPanel
+## WingPanel {#wingpanel}
 
 When developing the Panel (codenamed WingPanel) or panel-related packages like the Applications Menu and indicators, you want to start WingPanel from the command line to view logs. WingPanel is automatically started and restarted by Cerbere. To remove WingPanel from its monitored applications:
 
@@ -88,7 +88,7 @@ When developing the Panel (codenamed WingPanel) or panel-related packages like t
 
 To restore normal behavior simply enable "Use default value" in dconf Editor. Cerbere will notice this and start to monitor WingPanel again.
 
-## Gala
+## Gala {#gala}
 
 Gala is the window manager of elementary OS. If it crashes or freezes during development, it can be nonobvious how to recover. Here's how to do it:
 
@@ -100,7 +100,7 @@ Gala is the window manager of elementary OS. If it crashes or freezes during dev
 
 If Gala doesn't start, you can reinstall the latest stable version by running `sudo apt install --reinstall gala`.
 
-## Debug logs
+## Debug logs {#debug-logs}
 
 One way to debug applications is logging information in the code. This enables seeing what code was run and what the value of variables where.
 
