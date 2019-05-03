@@ -36,7 +36,9 @@ if (substr($charge_id, 0, 3) !== 'ch_') {
 try {
     $charge = \Stripe\Charge::retrieve($charge_id);
 } catch (Exception $e) {
-    return go_home();
+    if (isset($e->httpStatus) && $e->httpStatus !== 404) {
+      return go_home();
+    }
 }
 
 // Try to fetch the charge id under the _previous_ Stripe account
@@ -46,7 +48,7 @@ if (!isset($charge['metadata']['products'])) {
         $charge = \Stripe\Charge::retrieve(
             $charge_id,
             ['api_key' => $config['previous_stripe_sk']]
-        ); 
+        );
     } catch (Exception $e) {
         return go_home();
     }
