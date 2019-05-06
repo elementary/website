@@ -489,6 +489,13 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
 That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones, you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from the previous two steps. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
 
+## Translators Comments {#translators-comments}
+
+Sometimes detailed descriptions in the context of translatable strings are necessary for disambiguation or to help in the creation of accurate translations. For these situations use `/// TRANSLATORS:` comments.
+
+    /// TRANSLATORS: The first %s is search term, the second is the name of default browser
+    title = _("Search for %s in %s").printf (query, get_default_browser_name ());
+
 # Packaging {#packaging}
 
 While having a build system is great, our app still isn't ready for regular users. We want to make sure our app can be built and installed without having to use Terminal. What we need to do is package our app. To do this, we use the Debian packaging format (.deb) on elementary OS. This section will teach you how to package your app as a .deb file, which is required to publish apps in AppCenter. This will allow normal people to install your app and even get updates for it when you publish them.
