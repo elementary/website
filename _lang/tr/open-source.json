@@ -1,6 +1,6 @@
 {
     "We're Built on Open Source": "Açık kaynak üzerine kurulduk",
-    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "Elementary OS platformu ücresiz &güçlü bir temel üzerine inşa edilmiştir &amp; Açık Kaynak yazılımı. Bu gibi projeler olmadan, temel işletim sistemi olmazdı.",
+    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "Elementary OS platformu ücretsiz ve açık kaynak yazılımların güçlü temelleri üzerine kurulmuştur. Bu gibi projeler olmadan, elementary OS işletim sistemi mevcut olamazdı.",
     "Security &amp; Privacy": "Gizlilik ve Güvenlik",
     "By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.": "Açık Kaynak olarak, temel işletim sistemi, kapalı kaynaklı yazılımlar üzerinden üstün güvenlik ve gizlilikten yararlanabilir. Denetim için kaynak kodu geldiğinde, topluluktaki herkes - güvenlik araştırmacısı, ilgili bir kullanıcı veya işletim sistemini kendi donanımıyla sevkıyat yapan bir OEM olsun - yazılımın güvenliğini garanti altına alıp kişisel bilgileri sızdırmaz hale getirebilir.",
     "Better for Developers": "Geliştiriciler için daha iyi",
@@ -63,7 +63,7 @@
     "PulseAudio": "PulseAudio",
     "systemd": "systemd",
     "X.Org": "X.Org",
-    "Display Server &amp; Windowing System": "Pencere sistemi görüntü sunucusu",
+    "Display Server &amp; Windowing System": "Görüntü Sunucusu ve Pencere Sistemi",
     "X11": "X11",
     "XServer": "XServer",
     "GNU": "GNU",
