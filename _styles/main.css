@@ -10,6 +10,8 @@
 
     --silver-100: #fafafa;
     --silver-300: #d4d4d4;
+    --silver-500: #abacae;
+    --silver-900: #555761;
 
     --black-500: #333;
     --black-700: #1a1a1a;
@@ -777,7 +779,7 @@ select,
         inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
         0 1px 0 0 rgba(255, 255, 255, 0.15);
-    color: var(--black-500);
+    color: inherit;
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
@@ -888,6 +890,11 @@ button.suggested-action,
     right: 0;
     top: 0;
     width: 100%;
+}
+
+#logotype svg * {
+    color: inherit;
+    fill: inherit;
 }
 
 .small-button {
