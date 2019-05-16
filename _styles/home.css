@@ -103,7 +103,7 @@ input:focus + .focus-reveal {
 }
 
 #the-press svg:hover * {
-    fill: var(--bluebrry-500);
+    fill: var(--blueberry-500);
 }
 
 #the-press svg:active {
