@@ -1167,8 +1167,8 @@ span.results-title {
 
 #parental-controls .app-display__description svg,
 #parental-controls .app-display__description svg * {
-    color: #000 !important;
-    fill: #000 !important;
+    color: inherit;
+    fill: inherit;
 }
 
 /************
