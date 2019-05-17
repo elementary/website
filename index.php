@@ -19,7 +19,87 @@
     include $template['header'];
     include $template['alert'];
 ?>
+<div class="col-md-8">
+          <div class="pushright">
+           <div class="top">
 
+             <?php 
+
+             if (!isset($_SESSION['userkullanici_mail'])) {?>
+
+             <a href="#" id="reg" class="btn btn-default btn-dark">Giriş Yap<span>-- yada --</span>Kayıt Ol</a>
+
+             <?php } else { ?>
+
+             <a href="#"  class="btn btn-default btn-dark">Hoşgeldin<span>--</span><?php echo $kullanicicek['kullanici_adsoyad'] ?></a>
+
+             <?php } ?>
+
+
+             <div class="regwrap">
+               <div class="row">
+                <div class="col-md-6 regform">
+                 <div class="title-widget-bg">
+                  <div class="title-widget">Kullanıcı Giriş</div>
+                </div>
+
+
+
+
+                <form action="nedmin/netting/islem.php" method="POST" role="form">
+
+
+                  <div class="form-group">
+                   <input type="text" class="form-control" name="kullanici_mail" id="username" placeholder="Kullanıcı Adınız (Mail Adresiniz)">
+                 </div>
+
+
+                 <div class="form-group">
+                   <input type="password" class="form-control" name="kullanici_password" id="password" placeholder="Şifreniz">
+                 </div>
+
+
+                 <div class="form-group">
+                   <button type="submit" name="kullanicigiris" class="btn btn-default btn-red btn-sm">Giriş Yap</button>
+                 </div>
+
+               </form>
+
+
+             </div>
+             <div class="col-md-6">
+               <div class="title-widget-bg">
+                <div class="title-widget">Kayıt Ol</div>
+
+              </div>
+              <p>
+                Yeni Kullanıcımısın? Alışverişe başlamak için hemen kayıt olmalısın!
+              </p>
+              <a href="register"><button class="btn btn-default btn-yellow">Kayıt Ol</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="srch-wrap">
+         <a href="#" id="srch" class="btn btn-default btn-search"><i class="fa fa-search"></i></a>
+       </div>
+       <div class="srchwrap">
+         <div class="row">
+          <div class="col-md-12">
+           <form action="arama" method="POST" class="form-horizontal" role="form">
+            <div class="form-group">
+             <!--<label for="search" class="col-sm-2 control-label">Search</label>-->
+             <button name="arama" class="btn btn-default   ">Ara</button>    
+             <div class="col-sm-10">
+              <input type="text" name="aranan" minlength="3" class="form-control" id="search">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
         <section class="section--hero section--stretched">
             <div class="section__detail grid">
                 <div class="whole">
@@ -498,5 +578,26 @@
         <a style="display:none;" class="open-modal" href="#download-modal"></a>
         <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
+<!--Başlangıç whatsapp api-->
+ <a href="https://api.whatsapp.com/send?phone=<?php echo $ayarcek['ayar_gsm']; ?>&amp;text=Merhaba" title="WhatsApp ile Sor" class="whatsapp_sor"><i class="ion-social-whatsapp-outline"></i>  WhatsApp ile Sor</a>
+
+
+<style>
+.whatsapp_sor {
+    color: #fff;
+    bottom: 0px;
+    position: fixed;
+    background: #34AF23;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    z-index: 99;
+    display: block;
+    font-size:17px;
+  text-decoration:none;
+}
+</style>
+<!--Son-->
     include $template['footer'];
 ?>
