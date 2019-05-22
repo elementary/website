@@ -133,7 +133,7 @@ To view logs from all your applications you can use `journalctl`. [More info](ht
 
 ## Inspecting crashes {#inspecting-crashes}
 
-The [Gnome Debugger (gdb)](https://www.gnu.org/software/gdb/) can do a lot, but we're mostly going to focus on getting useful information when an application crashes.
+The [GNU Project Debugger (gdb)](https://www.gnu.org/software/gdb/) can do a lot, but we're mostly going to focus on getting useful information when an application crashes.
 1. Open an application in gdb, for example AppCenter by running:
     ```
     gdb io.elementary.appcenter
