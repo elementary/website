@@ -102,6 +102,8 @@ If Gala doesn't start, you can reinstall the latest stable version by running `s
 
 ## Debug logs {#debug-logs}
 
+### Adding logs {#adding-logs}
+
 One way to debug applications is logging information in the code. This enables seeing what code was run and what the value of variables where.
 
 Example:
@@ -119,6 +121,8 @@ debug("Person: %s %i", name, age);
 `debug` is a convenience function that calls [log](https://valadoc.org/glib-2.0/GLib.log.html) with the "debug" log level, there are other less used convenience functions like: `info`, `message`, `warning`, `critical`.
 
 The first argument is the message which is formatted like `printf`. This means that it can include "format specifiers" which can be replaced by the remaining arguments you pass to the function. The `%s` for example can be replaced by a string, the `%i` by an integer. [More info](http://www.cplusplus.com/reference/cstdio/printf/).
+
+### Retrieving logs {#retrieving-logs}
 
 By default these messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to the log domain you're interested in. Usually you'll set it to `all` to log everything. [More info](https://developer.gnome.org/glib/stable/glib-running.html).
 
