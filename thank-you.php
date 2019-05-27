@@ -18,8 +18,8 @@
                     include __DIR__.'/images/logotype-os.svg';
                 ?>
             </h1>
-            <p>For help and more info, read the <a href="<?php echo $sitewide['lang-root'];?>/docs/installation#installation">installation guide</a>. If you purchased elementary OS, check your email for a receipt that includes your link to download elementary OS again for free.</p>
-            <a class="button suggested-action" href="<?php echo $sitewide['lang-root'];?>/docs/installation#installation">Read Installation Guide</a>
+            <p>For help and more info, read the <a href="<?php echo $page['lang-root'];?>/docs/installation#installation">installation guide</a>. If you purchased elementary OS, check your email for a receipt that includes your link to download elementary OS again for free.</p>
+            <a class="button suggested-action" href="<?php echo $page['lang-root'];?>/docs/installation#installation">Read Installation Guide</a>
         </div>
     </div>
 </section>
