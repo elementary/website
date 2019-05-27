@@ -152,7 +152,9 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             var $amountTwenty = $('#amount-twenty')
             if ($amountTwenty.val() !== 0) {
                 $('#pay-what-you-want').remove()
-                $('#choice-buttons').html('<input type="hidden" id="amount-twenty" value="0">')
+                $('#choice-buttons').remove()
+                var $newChoices = $( "<div id='object1'></div>" ),
+                $('#amounts').append('<div id="choice-buttons"><input type="hidden" id="amount-twenty" value="0"></div>')
                 currentButton = 'amount-twenty'
                 updateDownloadButton()
             }
