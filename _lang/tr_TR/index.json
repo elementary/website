@@ -97,7 +97,7 @@
     "Our Privacy Policy": "Gizlilik Politikamız",
     "Tattle-Tale": "İspiyoncu",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS uygulamaların ne yaptığını denetler. Bir uygulama mikrofonunuzu kullanırken, bir mikrofon simgesi göstererek size haber veriyoruz. Bir uygulama çok fazla güç tüketirken, güç göstergenizin içinde sizi bunu söylüyoruz.",
-    "Location Services": "Konum Servisleri",
+    "Location Services": "Konum Hizmetleri",
     "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "Bir uygulama konumunuza erişmek istediğinde, bunu sormak zorundadır. Bunun için size hangi uygulamalarının bunu istediğini ve ne kadar detaylı istediğini soruyoruz. Ve istediğiniz her vakit bu izinleri Sistem Ayarları→Güvenlik &amp; Gizlilik içinde değiştirebilirsiniz.",
     "Housekeeping": "Bakım",
     "elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS geçici ve çöpe atılmış dosyalarınızı temizleyebilir. Bu sadece bilgisayarınızın hafızasını temizlemekle kalmıyor, ayrıca özel verilerinizin geri gelip başınıza dert açmasını da engelleyebiliyor.",
