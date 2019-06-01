@@ -16,6 +16,10 @@ export default jQuery.then(($) => {
         $.getJSON(configPath)
         .done((config) => {
             console.log('Sitewide configuration loaded')
+            // DEBUG
+            console.log('Config at loading:')
+            console.log(config)
+            // END DEBUG
             return resolve(config)
         })
         .fail((jqxhr, status, err) => {
