@@ -13,6 +13,10 @@ import config from '~/config'
 import Payment from '~/widgets/payment'
 
 Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
+    // DEBUG
+    console.log('Config at download.js:')
+    console.log(config)
+    // END DEBUG
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {
