@@ -139,6 +139,13 @@ than good.
         l = n * 2 + 4;   // Clear l variable
     }
 
+
+Sometimes detailed descriptions in the context of translatable strings are necessary for disambiguation or to help in the creation of accurate translations. For these situations use `/// TRANSLATORS:` comments.
+
+
+    /// TRANSLATORS: The first %s is search term, the second is the name of default browser
+    title = _("Search for %s in %s").printf (query, get_default_browser_name ());
+
 ## Variable names, class names, function names {#variable-names-class-names-function-names}
 
 

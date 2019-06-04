@@ -58,10 +58,22 @@
                         <?php } ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"> elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> |  <?php echo $config['release_size']; ?> (for PC or Mac)</p>
+                            <p class="small-label">
+                                elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?><br>
+                                <?php echo $config['release_size']; ?> | 64-bit
+                            </p>
                         </div>
                         <div style="clear:both;"></div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="whats-new" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>What’s New in elementary OS 5 Juno</h2>
+                    <h4>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</h4>
+                    <a href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
@@ -85,15 +97,6 @@
             <div class="third">
                 <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
                 <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
-            </div>
-        </section>
-        <section id="whats-new" class="grey">
-            <div class="grid">
-                <div class="two-thirds">
-                    <h2>What’s New in elementary OS 5 Juno</h2>
-                    <h4>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</h4>
-                    <a href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
-                </div>
             </div>
         </section>
         <section id="appcenter">
