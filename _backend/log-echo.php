@@ -13,7 +13,7 @@ if (
 }
 
 // Log an error and also echo it.
-function log_echo($msg, $echo = true) {
+function log_echo($msg, $echo = false) {
     global $sentry;
     error_log($msg);
     if ( $sentry ) $sentry->captureMessage($msg);
