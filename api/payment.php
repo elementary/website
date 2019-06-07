@@ -34,9 +34,8 @@ if (isset($_POST['token'])) {
             )
         ));
     } catch(\Stripe\Error\Card $e) {
-        // Don't use log_echo because we don't want finance stuff echoing.
-        error_log($e);
-        $sentry->captureMessage($e);
+        // Don't use echo finance stuff.
+        log_echo($e, false);
 
         http_response_code(500);
         echo 'An error occurred.';
@@ -48,8 +47,7 @@ if (isset($_POST['token'])) {
     try {
         email_os_payment($charge);
     } catch (Exception $e) {
-        error_log($e);
-        $sentry->captureMessage($e);
+        log_echo($e, false);
         echo 'Unable to send receipt email';
     }
 
