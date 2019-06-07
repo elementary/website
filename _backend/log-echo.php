@@ -13,9 +13,9 @@ if (
 }
 
 // Log an error and also echo it.
-function log_echo($msg) {
+function log_echo($msg, $echo = true) {
     global $sentry;
     error_log($msg);
     if ( $sentry ) $sentry->captureMessage($msg);
-    echo $msg.PHP_EOL;
+    if ( $echo ) echo $msg.PHP_EOL;
 }
