@@ -18,6 +18,8 @@
 
     include $template['header'];
     include $template['alert'];
+
+    $already_paid = (os_payment_getcookie($config['release_version']) > 0);
 ?>
 
         <section class="section--hero section--stretched">
@@ -37,13 +39,8 @@
                 <div class="whole">
                     <div id="amounts">
                         <?php
-                            $already_paid = (os_payment_getcookie($config['release_version']) > 0);
-                            if ($already_paid) {
+                            if (!$already_paid) {
                         ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-twenty" value="0">
-                        </div>
-                        <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
                             <button id="amount-ten"    value="10" class="small-button payment-button target-amount">10</button>
@@ -55,7 +52,9 @@
                                 <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                             </div>
                         </div>
-                        <?php } ?>
+                        <?php
+                            }
+                        ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
                             <p class="small-label">
@@ -64,6 +63,15 @@
                             </p>
                         </div>
                         <div style="clear:both;"></div>
+                        <?php
+                            if ($already_paid) {
+                        ?>
+                        <div id="choice-buttons">
+                            <input type="hidden" id="amount-twenty" value="0">
+                        </div>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
