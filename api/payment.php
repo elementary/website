@@ -34,12 +34,54 @@ if (isset($_POST['token'])) {
             )
         ));
     } catch(\Stripe\Error\Card $e) {
-        // Don't use echo finance stuff.
-        log_echo($e, false);
-
         http_response_code(500);
         echo 'An error occurred.';
         die();
+        
+    } catch (\Stripe\Error\RateLimit $e) {
+        // Too many requests made to the API too quickly
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'A "RateLimit" error occurred.';
+        die();
+        
+    } catch (\Stripe\Error\InvalidRequest $e) {
+        // Invalid parameters were supplied to Stripe's API
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'An "InvalidRequest" error occurred.';
+        die();
+        
+    } catch (\Stripe\Error\Authentication $e) {
+        // Authentication with Stripe's API failed
+        // (maybe you changed API keys recently)
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'An "Authentication" error occurred.';
+        die();
+        
+    } catch (\Stripe\Error\ApiConnection $e) {
+        // Network communication with Stripe failed
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'An "ApiConnection" error occurred.';
+        die();
+        
+    } catch (\Stripe\Error\Base $e) {
+        // Display a very generic error to the user, and maybe send
+        // yourself an email
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'A "Base" error occurred.';
+        die();
+        
+    } catch (Exception $e) {
+        // Something else happened, completely unrelated to Stripe
+        log_echo($e, false);
+        http_response_code(500);
+        echo 'An error occurred.';
+        die();
+        
     }
 
     os_payment_setcookie($config['release_version'], $amount);
