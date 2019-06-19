@@ -1,5 +1,4 @@
 <?php
-    require_once __DIR__.'/_backend/classify.current.php';
     require_once __DIR__.'/_backend/preload.php';
     require_once __DIR__.'/_backend/os-payment.php';
 
