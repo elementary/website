@@ -68,12 +68,14 @@
                             if (!$already_paid) {
                         ?>
                         <div id="payment-trust">
-                            <i class="fab fa-cc-visa" title="Visa cards accepted"></i>
-                            <i class="fab fa-cc-mastercard" title="MasterCard cards accepted"></i>
-                            <i class="fab fa-cc-discover" title="Discover cards accepted"></i>
-                            <i class="fab fa-cc-amex" title="American Express cards accepted"></i>
-                            <i class="fab fa-cc-diners-club" title="Diner's Club cards accepted"></i>
-                            <p class="small-label text-center">Payments secured & processed by <a href="https://stripe.com"><i class="fab fa-stripe"></span></i></a></p>
+                            <img src="images/icons/mimes/24/payment-card-visa.svg" alt="Visa" title="Visa cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-mastercard.svg" alt="Mastercard" title="Mastercard cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-discover.svg" alt="Discover" title="Discover cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-amex.svg" alt="American Express" title="American Express cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-diners-club.svg" alt="Diner's Club" title="Diner's Club cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-jcb.svg" alt="JCB" title="JCB cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-unionpay.svg" alt="UnionPay" title="UnionPay cards accepted" />
+                            <p class="small-label text-center">Payments processed & secured by <a href="https://stripe.com"><i class="fab fa-stripe"><span>Stripe</span></i></a></p>
                         </div>
                         <?php
                             }

@@ -62,9 +62,13 @@ input:focus + .focus-reveal {
 }
 
 #payment-trust i {
-    font-size: 2rem;
-    padding: 0.125em;
+    font-size: 2.5em;
+    padding: 0 0.05em;
     vertical-align: middle;
+}
+
+#payment-trust i span {
+    font-size: 0;
 }
 
 #download {
