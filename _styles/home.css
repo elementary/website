@@ -61,7 +61,7 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 
-#payment-reassurance i {
+#payment-trust i {
     font-size: 2rem;
     padding: 0.125em;
     vertical-align: middle;

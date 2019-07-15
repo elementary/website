@@ -67,7 +67,7 @@
                         <?php
                             if (!$already_paid) {
                         ?>
-                        <div id="payment-reassurance">
+                        <div id="payment-trust">
                             <i class="fab fa-cc-visa" title="Visa cards accepted"></i>
                             <i class="fab fa-cc-mastercard" title="MasterCard cards accepted"></i>
                             <i class="fab fa-cc-discover" title="Discover cards accepted"></i>
