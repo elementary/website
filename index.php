@@ -63,6 +63,22 @@
                             </p>
                         </div>
                         <div style="clear:both;"></div>
+
+                        <?php
+                            if (!$already_paid) {
+                        ?>
+                        <div id="payment-reassurance">
+                            <i class="fab fa-cc-visa" title="Visa cards accepted"></i>
+                            <i class="fab fa-cc-mastercard" title="MasterCard cards accepted"></i>
+                            <i class="fab fa-cc-discover" title="Discover cards accepted"></i>
+                            <i class="fab fa-cc-amex" title="American Express cards accepted"></i>
+                            <i class="fab fa-cc-diners-club" title="Diner's Club cards accepted"></i>
+                            <p class="small-label text-center">Payments secured & processed by <a href="https://stripe.com"><i class="fab fa-stripe"></span></i></a></p>
+                        </div>
+                        <?php
+                            }
+                        ?>
+
                         <?php
                             if ($already_paid) {
                         ?>
