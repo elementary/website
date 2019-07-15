@@ -124,11 +124,12 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase img:not(.bg) {
-    height: 77%;
+    height: 78%;
     left: 50%;
     position: absolute;
     top: 2%;
     transform: translateX(-50%);
+    border-radius: 4px;
 }
 
 /***********************
