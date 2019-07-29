@@ -1,6 +1,6 @@
 {
     "Installation": "Instalado",
-    "Download elementary OS": "Elŝuti elementary OS",
+    "Download elementary OS": "Elŝuti je elementary OS",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Se vi ankoraŭ ne faris, necesas <a href=\"/\" target=\"_blank\" rel=\"noopener\">elŝuti je elementary OS el nia hejmpaĝo</a>. Vi bezonos kopii la elŝutitan ISO-dosieron al USB-memorilo sekvante ĉi instrukciojn.",
     "Recommended System Specifications": "Rekomenditaj Sistemaj Specifoj",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Kvankam ni ne havas striktan minimuman sisteman postulon, ni rekomendas almenaŭ plenumi la sekvajn specifojn por plej bona sperto:",
@@ -8,7 +8,7 @@
     "4 GB of system memory (RAM)": "4 GB ĉefmemoro (RAM)",
     "Solid state drive (SSD) with 15 GB of free space": "Solidstata disko (SSD) kun 15 GB da libera spaco",
     "Internet access": "Interreta konekto",
-    "1024×768 display": "1024×768 ekrano",
+    "1024×768 display": "1 024 × 768 ekrano",
     "Back Up Your Data": "Savkopiu viajn datenojn",
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Certiĝu pri savkopio de gravaj datenoj en eksternan memorlokon, kiel en nuban servon aŭ eksteran fiksitan memoron. Instalo de novas operaciumo povas surskribi viajn ekzistantajn datenojn.",
     "Choose your current Operating System": "Elektu vian nunan Operaciumon",
