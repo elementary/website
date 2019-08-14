@@ -25,7 +25,11 @@
                 <p>elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.</p>
             </div>
             <div class="row docs">
-                <h2>Website</h2>
+                <h2>Blog</h2>
+                <p>Our <a href="https://blog.elementary.io" target="_blank">blog</a> does not use any external scripts, cookies, or other tracking methods.</p>
+            </div>
+            <div class="row docs">
+                <h2>elementary.io</h2>
                 <h3>Do Not Track</h3>
                 <p>This site honors the do-not-track setting found in most modern browsers and disables Google Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.</p>
                 <h3>Cookies</h3>
