@@ -96,14 +96,14 @@ foreach ($pages as $page) {
     $path = $root . '/' . $page;
 
     if ($isVerbose) {
-        $cli->whisper("Extacting text for '$page'");
+        $cli->whisper("Extracting text for '$page'");
     }
 
     try {
         $extractScript = __DIR__ . '/Extract.php';
         $translations = `php $extractScript --page $page`;
         $strings = json_decode($translations);
-    } catch (\Expcetion $e) {
+    } catch (\Exception $e) {
         $cli->error("Unable to extract text for '$page'");
         continue;
     }
