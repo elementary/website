@@ -103,7 +103,7 @@ foreach ($pages as $page) {
         $extractScript = __DIR__ . '/Extract.php';
         $translations = `php $extractScript --page $page`;
         $strings = json_decode($translations);
-    } catch (\Expcetion $e) {
+    } catch (\Exception $e) {
         $cli->error("Unable to extract text for '$page'");
         continue;
     }
