@@ -96,7 +96,7 @@ foreach ($pages as $page) {
     $path = $root . '/' . $page;
 
     if ($isVerbose) {
-        $cli->whisper("Extacting text for '$page'");
+        $cli->whisper("Extracting text for '$page'");
     }
 
     try {
