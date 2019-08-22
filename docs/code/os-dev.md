@@ -130,7 +130,7 @@ Usually you'll set it to `all` to log everything. [More info on Running and debu
 
 Run your application with debugging enabled:
 ```
-G_MESSAGES_DEBUG=all ./Application
+G_MESSAGES_DEBUG=all <app>
 ```
 Run the elementary OS calendar app with debugging enabled:
 ```
