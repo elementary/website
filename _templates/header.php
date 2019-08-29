@@ -117,8 +117,8 @@ $l10n->begin_html_translation();
                     <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
-                    <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
+                    <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                     <?php } ?>
                 </ul>
