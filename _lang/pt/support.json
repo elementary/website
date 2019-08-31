@@ -1,6 +1,6 @@
 {
-    "Get support for": "Obtenha suporte para",
-    "AppCenter": "Centro de Aplicações",
+    "Get support for": "Obtenha suporte para o",
+    "AppCenter": "AppCenter",
     "Calendar": "Calendário",
     "Camera": "Câmera",
     "Files": "Ficheiros",
@@ -12,10 +12,10 @@
     "System Settings": "Definições do Sistema",
     "Videos": "Vídeos",
     "Installation": "Instalação",
-    "Get help installing elementary OS with our step-by-step guide.": "Obtém ajuda para instalar o elementary OS seguindo o nosso guia passo-a-passo.",
-    "Learning the Basics": "Aprendendo o Básico",
-    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Vê o nosso ambiente de trabalho, multi-tarefas, atalhos de teclado e mais.",
+    "Get help installing elementary OS with our step-by-step guide.": "Obtenha ajuda para instalar o elementary OS com o nosso guia passo-a-passo.",
+    "Learning the Basics": "Aprender o Básico",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Percorra o nosso ambiente de trabalho, multi-tarefas, atalhos de teclado e muito mais.",
     "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Verifica as respostas a algumas das perguntas mais comuns que nos colocam.",
+    "Check out answers to some of the most common questions we get.": "Confira as respostas a algumas das perguntas mais comuns que nos colocam.",
     "Support &sdot; elementary": "Suporte &sdot; elementary"
 }
