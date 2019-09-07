@@ -35,7 +35,7 @@ jQuery.then(($) => {
                 post_contents += '</a>'
                 blog_contents += post_contents
             })
-            $('#whats-new').content(blog_contents);
+            $('#whats-new').html(blog_contents)
         })
 
         console.log('Loaded blog.js')
