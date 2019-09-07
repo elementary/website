@@ -8,6 +8,7 @@
     $page['scripts'] = array(
         'scripts/slingshot.js',
         'scripts/download.js',
+        'scripts/blog.js',
         'scripts/showcase.run.js'
     );
 
