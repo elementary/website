@@ -14,6 +14,7 @@
 
     $page['styles'] = array(
         'styles/home.css',
+        'styles/blog.css',
         'styles/pantheon.css'
     );
 
