@@ -1,4 +1,4 @@
-// Featured Blocks
+/* Featured Blocks */
 @media (min-width: 800px) {
     #whats-new .featured {
         display: inline-block;
@@ -18,7 +18,7 @@
     transition: background-color 250ms ease, color 250ms ease;
 }
 
-// Featured Blocks with Images
+/* Featured Blocks with Images */
 @media (min-width: 800px) {
     #whats-new .featured .featured-image {
         height: 200px;
@@ -55,7 +55,7 @@
     width: 100%;
 }
 
-// Featured Headers
+/* Featured Headers */
 @media (min-width: 800px) {
     #whats-new .featured header {
         font-size: 0.8rem;
@@ -93,7 +93,7 @@
     margin-bottom: 1em;
     opacity: 0.5;
 }
-// Bylines
+/* Bylines */
 #whats-new .featured header .byline {
     max-width: 100%;
 }
