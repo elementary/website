@@ -472,7 +472,7 @@ If the primary action is not destructive, its button should be given the `.sugge
 
 If the primary action is destructive—i.e. it cannot be easily reversed or undone—it should be given the `.destructive-action` style class, rendering it in a red style by default. Destructive actions should not be focused by default to prevent accidental activation.
 
-Multiple suggested or destructive actions should not co-exist in the same context; there should only be one of either type in a dialog.
+Multiple suggested and/or destructive actions should not co-exist in the same context; there should only be one of either type in a dialog.
 
 ### Preference Dialogs {#preference-dialogs}
 
