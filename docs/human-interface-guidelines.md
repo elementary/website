@@ -618,7 +618,7 @@ Tool Buttons are almost always icon-only and do not provide a button border. The
 
 #### Tooltips {#tool-buttons-tooltips}
 
-All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case).
+All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case) without terminating punctuation.
 
 Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.
 
@@ -1376,6 +1376,12 @@ Keep in mind these are the rules elementary OS follows for English; capitalizati
 ## Punctuation {#punctuation}
 
 Proper typography is important throughout elementary OS. Not just for consistency within the OS, but for following proper convention and presenting ourselves as a serious, professional platform.
+
+### Terminating Punctuation {#terminating-punctuation}
+
+Whether or not to use terminating punctuation (like a period `.` in English) depends on context. For secondary labels in [dialogs](#dialogs), use terminating punctuation. For single-sentence copy in tooltips and other clarifying contexts, avoid terminating punctuation.
+
+For multi-sentence copy in clarifying contexts, use standard terminating punctuation. If there are single-sentence labels in the same context (alongside multi-sentence labels), terminating punctuation may be used for consistency.
 
 ### Prevent Common Mistakes {#prevent-common-mistakes}
 
