@@ -618,7 +618,7 @@ Tool Buttons are almost always icon-only and do not provide a button border. The
 
 #### Tooltips {#tool-buttons-tooltips}
 
-All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case) without terminating punctuation.
+All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case) without [terminating punctuation](#terminating-punctuation).
 
 Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.
 
