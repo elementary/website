@@ -447,9 +447,9 @@ Even if your app uses a headerbar, be sure to set the window's title; it can be 
 
 An alert contains both primary and secondary text.
 
-The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`.
+The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`. Primary text should not include [terminating punctuation](#terminating-punctuation), except in the case of questions.
 
-The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight.
+The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight. Secondary text should be in [sentence case](#sentence-case) with [terminating punctuation](#terminating-punctuation).
 
 Make both the primary and secondary text selectable. This makes it easy for the user to copy and paste the text to another window, such as an email message.
 
@@ -1382,6 +1382,8 @@ Proper typography is important throughout elementary OS. Not just for consistenc
 Whether or not to use terminating punctuation (like a period `.` in English) depends on context. For secondary labels in [dialogs](#dialogs), use terminating punctuation. For single-sentence copy in tooltips and other clarifying contexts, avoid terminating punctuation.
 
 For multi-sentence copy in clarifying contexts, use standard terminating punctuation. If there are single-sentence labels in the same context (alongside multi-sentence labels), terminating punctuation may be used for consistency.
+
+For questions, always include terminating punctuation (i.e. a `?` in English).
 
 ### Prevent Common Mistakes {#prevent-common-mistakes}
 
