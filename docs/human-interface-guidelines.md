@@ -447,7 +447,7 @@ Even if your app uses a headerbar, be sure to set the window's title; it can be 
 
 An alert contains both primary and secondary text.
 
-The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`. Primary text should not include [terminating punctuation](#terminating-punctuation), except in the case of questions.
+The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`. Primary text should be in [sentence case](#sentence-case) and not include [terminating punctuation](#terminating-punctuation), except in the case of questions.
 
 The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight. Secondary text should be in [sentence case](#sentence-case) with [terminating punctuation](#terminating-punctuation).
 
