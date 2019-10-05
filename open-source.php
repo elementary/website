@@ -29,7 +29,7 @@
 <div class="grid">
     <div class="platform-item full">
         <a href="get-involved#desktop-development">
-            <img class="oss-logo" src="images/icons/places/64/distributor-logo.svg" alt="Applications">
+            <img class="oss-logo" src="/_images/logotype-os.svg"alt="Applications">
             <p class="oss-title">elementary OS Applications</p>
         </a>
         <div>
