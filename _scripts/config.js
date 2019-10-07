@@ -14,18 +14,18 @@ export default jQuery.then(($) => {
 
     return new Promise((resolve, reject) => {
         $.getJSON(configPath)
-        .done((config) => {
-            console.log('Sitewide configuration loaded')
-            // DEBUG
-            console.log('Config at loading:')
-            console.log(config)
-            // END DEBUG
-            return resolve(config)
-        })
-        .fail((jqxhr, status, err) => {
-            console.error(`Failed to grab sitewide configuration with ${status}`)
-            console.error(err)
-            return reject(err)
-        })
+            .done((config) => {
+                console.log('Sitewide configuration loaded')
+                // DEBUG
+                console.log('Config at loading:')
+                console.log(config)
+                // END DEBUG
+                return resolve(config)
+            })
+            .fail((jqxhr, status, err) => {
+                console.error(`Failed to grab sitewide configuration with ${status}`)
+                console.error(err)
+                return reject(err)
+            })
     })
 })
