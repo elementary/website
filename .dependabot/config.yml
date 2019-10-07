@@ -7,7 +7,7 @@ update_configs:
       - "dependencies"
     default_reviewers:
       - "lewisgoddard"
-      - "danrabbit"
+      - "btkostner"
   - package_manager: "php:composer"
     directory: "_backend/"
     update_schedule: "weekly"
@@ -15,4 +15,4 @@ update_configs:
       - "dependencies"
     default_reviewers:
       - "lewisgoddard"
-      - "danrabbit"
+      - "btkostner"
