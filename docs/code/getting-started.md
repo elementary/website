@@ -217,9 +217,10 @@ In the previous chapter, we created a simple "Hello World!" app to show off our 
 
 To create our first real app, we're going to need all the old stuff that we used in the last example. But don't just copy and paste! Let's take this time to practice our skills and see if we can recreate the last example from memory. Additionally, now that you have the basics, we're going to get a little more complex and a little more organized:
 
-1. Create a new folder inside "~/Projects" called "hello-again".Then, go into "hello-again" and create our directory structure including the "src" folder.
+1. Create a new repository on Github, and choose directly to add a built-in-licence, let's choose the GNU General Public Licence v3.0. Github create a LICENCE File with all the legal stuff needed, you won't have to upload it manually later.  Click on "Clone or Download"- "Clone with HTTPS" and copy the remote link.Add your new files (LICENCE, Readme...) to your "~Project" folder in a Terminal with this command :
+    git clone [paste here the HTTPS remote link from Github]
 
-2. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
+2. Then, go into "hello-again" and create our directory structure including the "src" folder. Create "Application.vala" in the "src" folder.  This time we're going to prefix our file with a small legal header. More about legal stuff later. For now you can copy [the GPL header from our reference documentation](https://elementary.io/docs/code/reference#gpl-header). Be sure to assign the copyright to yourself at the top of the header and change the author to you at the bottom of the header.
 
 3. Now, let's create a `Gtk.Application`, a `Gtk.ApplicationWindow`, and set the window's default properties. Refer back to the last chapter if you need a refresher.
 
@@ -234,7 +235,7 @@ To create our first real app, we're going to need all the old stuff that we used
 
 5. Build "Application.vala" just to make sure it all works. If something goes wrong here, feel free to refer back to the last chapter and remember to check your terminal output for any hints.
 
-6. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Lastly, make sure you've created a new repository for your project on GitHub push your first revision with `git`:
+6. Initialize the branch, add your files to the project, and write a commit message using what you learned in the last chapter. Push your first revision with `git`:
 
     ```bash
     git remote add origin git@github.com:yourusername/yourrepositoryname.git
@@ -310,9 +311,9 @@ You can also specify a suggested price in whole USD. Remember though that AppCen
 
 ## Legal Stuff {#legal-stuff}
 
-Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we need a new file in our project's root folder: COPYING.
+Since we're going to be putting our app out into the wild, we should include some information about who wrote it and the legal usage of its source code. For this we use the file LICENCE in our project's root folder.
 
-The COPYING file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
+The LICENCE file contains a copy of the license that your code is released under. For elementary OS apps this is typically the [GNU General Public License](http://www.gnu.org/licenses/quick-guide-gplv3.html) (GPL). Remember the header we added to our source code? That header reminds people that your app is licensed and it belongs to you. You can choose other licenses like the MIT license as well, but for this example let's stick to the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Mark Your Progress {#mark-your-progress}
 
