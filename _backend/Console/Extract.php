@@ -22,7 +22,7 @@ $cli->arguments->add([
     'page' => [
         'prefix'      => 'p',
         'longPrefix'  => 'page',
-        'description' => 'Page to extract',
+        'description' => 'Page to extract'
     ],
     'domain' => [
         'prefix'      => 'd',
@@ -32,13 +32,13 @@ $cli->arguments->add([
     'verbose' => [
         'prefix'      => 'v',
         'longPrefix'  => 'verbose',
-        'description' => 'Verbose output',
+        'description' => 'Verbose output'
         'noValue'     => true,
     ],
     'help' => [
         'longPrefix'  => 'help',
         'description' => 'Prints a usage statement',
-        'noValue'     => true,
+        'noValue'     => true
     ]
 ]);
 $cli->arguments->parse();
