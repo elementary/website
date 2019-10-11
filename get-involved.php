@@ -69,6 +69,13 @@
     </section>
 
     <div class="grid">
+        <div class="third">
+            <div class="two-thirds">
+                <img alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
+            </div>
+            <p>Liberapay is a way to donate money recurrently to people whose work you appreciate. It is an open project structured around a non-profit organization, which sets it apart from commercial platforms like Patreon and Tipeee.</p>
+            <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Donate</a>
+        </div>
         <div class="two-thirds">
             <img alt="Bountysource" src="images/open-source/bountysource.svg">
             <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
