@@ -45,12 +45,26 @@
         </div>
     </div>
 
-    <section class="grid">
-        <div class="third">
+    <div class="grid">
+        <div class="half">
             <img alt="Patreon" src="images/get-involved/patreon.svg">
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="_blank" rel="noopener">Learn More</a></p>
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Become a Patron</a>
         </div>
+        <div class="half">
+            <div class="two-thirds">
+                <img alt="Bountysource" src="images/open-source/bountysource.svg">
+            </div>
+            <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
+
+            <div class="actions">
+                <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=">Bountied Bugs</a>
+                <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
         <div class="third">
             <i class="fab fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
@@ -62,21 +76,16 @@
             </form>
         </div>
         <div class="third">
+            <div class="two-thirds">
+                <img alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
+            </div>
+            <p>Liberapay is a way to donate money recurrently to people whose work you appreciate. It is an open project structured around a non-profit organization, which sets it apart from commercial platforms like Patreon and Tipeee.</p>
+            <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Donate</a>
+        </div>
+        <div class="third">
             <i class="fa fa-shopping-cart"></i>
             <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
-        </div>
-    </section>
-
-    <div class="grid">
-        <div class="two-thirds">
-            <img alt="Bountysource" src="images/open-source/bountysource.svg">
-            <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
-
-            <div class="actions">
-                <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=">Bountied Bugs</a>
-                <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
-            </div>
         </div>
     </div>
 </section>
