@@ -45,14 +45,16 @@
         </div>
     </div>
 
-    <section class="grid">
+    <div class="grid">
         <div class="half">
             <img alt="Patreon" src="images/get-involved/patreon.svg">
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="_blank" rel="noopener">Learn More</a></p>
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Become a Patron</a>
         </div>
         <div class="half">
-            <img alt="Bountysource" src="images/open-source/bountysource.svg">
+            <div class="two-thirds">
+                <img alt="Bountysource" src="images/open-source/bountysource.svg">
+            </div>
             <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
 
             <div class="actions">
@@ -60,7 +62,7 @@
                 <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="grid">
         <div class="third">
