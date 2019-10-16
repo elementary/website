@@ -124,11 +124,17 @@ The first argument is the message which is formatted like `printf`. This means t
 
 ### Retrieving logs {#retrieving-logs}
 
-By default these messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to the log domain you're interested in. Usually you'll set it to `all` to log everything. [More info](https://developer.gnome.org/glib/stable/glib-running.html).
+By default debug messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to the log domain you're interested in.
+[More info on environmental variables](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps)
+Usually you'll set it to `all` to log everything. [More info on Running and debugging GLib Applications](https://developer.gnome.org/glib/stable/glib-running.html).
 
-Example:
+Run your application with debugging enabled:
 ```
-G_MESSAGES_DEBUG=all ./Application
+G_MESSAGES_DEBUG=all <app>
+```
+Run the elementary OS calendar app with debugging enabled:
+```
+G_MESSAGES_DEBUG=all io.elementary.calendar
 ```
 
 [More information on message logging](https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-log).
