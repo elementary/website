@@ -7,12 +7,12 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
-    "core-js": "^2.4.1",
-    "glob": "^7.1.1",
-    "gulp": "^4.0.0",
+    "core-js": "^2.6.9",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.1.0",
-    "gulp-imagemin": "^3.2.0",
+    "gulp-imagemin": "^6.1.1",
     "gulp-postcss": "^7.0.0",
     "gulp-svgo": "^1.0.3",
     "postcss-cssnext": "^2.11.0",
@@ -20,15 +20,15 @@
     "webpack": "^2.5.1"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jpegtran-bin": "^3.2.0",
-    "optipng-bin": "^4.0.0",
-    "stylelint": "^7.10.1"
+    "jpegtran-bin": "^4.0.0",
+    "optipng-bin": "^6.0.0",
+    "stylelint": "^11.0.0"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
