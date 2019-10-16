@@ -13,7 +13,7 @@
 
 <div class="row">
     <div class="column alert">
-        <i class="warning fa fa-warning"></i>
+        <i class="warning fas fa-4x fa-exclamation-triangle"></i>
     </div>
     <div class="column alert">
         <h3>The page you’re looking for can’t be found</h3>

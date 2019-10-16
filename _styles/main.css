@@ -31,6 +31,9 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -205,9 +208,8 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "\f105";
+    content: "»";
     display: inline-block;
-    font-family: "Font Awesome\ 5 Pro";
     font-style: normal;
     font-weight: inherit;
     padding-left: 6px;
@@ -686,6 +688,10 @@ a.third:hover {
     padding: 24px;
 }
 
+.row.alert + .row.alert {
+    margin-top: 20px;
+}
+
 .row.alert.warning {
     background-color: #fff9c4;
     border-color: #fbc02d;
@@ -796,8 +802,8 @@ button.suggested-action,
 }
 
 .button.flat {
-    background: none;
-    border-width: 2px;
+    background: rgba(0, 0, 0, 0.07);
+    border: none;
     box-shadow: none;
     font-weight: 600;
     margin-bottom: 10px;
@@ -806,6 +812,15 @@ button.suggested-action,
     min-width: 250px;
     padding: 7px;
     text-shadow: none;
+    transition: opacity 200ms ease;
+}
+
+.button.flat:focus,
+.button.flat:hover {
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow:
+        0 2px 3px -1px rgba(0, 0, 0, 0.08),
+        0 5px 10px -2px rgba(0, 0, 0, 0.15);
 }
 
 .light .button.flat,
@@ -822,6 +837,10 @@ button.suggested-action,
     box-shadow: none;
     color: #333;
     fill: #333;
+}
+
+.button.flat:hover {
+    opacity: 0.8;
 }
 
 #logotype {

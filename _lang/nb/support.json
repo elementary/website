@@ -1,22 +1,21 @@
 {
     "Get support for": "Få hjelp med",
-    "AppCenter": "AppCenter",
+    "AppCenter": "AppSenter",
     "Calendar": "Kalender",
     "Camera": "Kamera",
     "Files": "Filer",
-    "Mail": "",
+    "Mail": "E-post",
     "Epiphany": "Epiphany",
     "Music": "Musikk",
     "Photos": "Bilder",
-    "Text Editor": "Tekstbehandler",
-    "Scratch": "",
+    "Code": "Code",
     "System Settings": "Systeminnstillinger",
     "Videos": "Videoer",
     "Installation": "Installasjon",
     "Get help installing elementary OS with our step-by-step guide.": "Få hjelp til å installere elementary OS med vår stegvise installasjonsveiledning.",
     "Learning the Basics": "Lær det grunnleggende",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Gå gjennom skrivebordet, fleroppgavekjøring, hurtigtaster og mer.",
-    "StackExchange": "StackExchange",
+    "Stack Exchange": "Stack Exchange",
     "Check out answers to some of the most common questions we get.": "Sjekk svarene på noen av de vanligste spørsmålene vi får.",
-    "Support &sdot; elementary": "Støtte &sdot; elementary"
+    "Support &sdot; elementary": "Støtt &sdot; elementary"
 }

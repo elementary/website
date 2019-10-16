@@ -1,2 +1,2 @@
 <?php
-header('Location: https://elementaryos.stackexchange.com/questions/tagged/scratch', true, 302);
+header('Location: https://elementaryos.stackexchange.com/questions/tagged/code', true, 302);

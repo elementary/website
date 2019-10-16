@@ -77,9 +77,9 @@
         <label>Name</label>
         <input type="text" name="name" placeholder="Ellie Mendez" autocomplete="name" required>
         <label>Address</label>
-        <input type="text" name="address1" placeholder="Street Address, P.O. Box, Company Name" autocomplete="shipping address-line1" required>
+        <input type="text" name="address1" maxlength="35" placeholder="Street Address, P.O. Box, Company Name" autocomplete="shipping address-line1" required>
         <label>Address 2</label>
-        <input type="text" name="address2" placeholder="Apartment, Suite, Unit, Building, Floor" autocomplete="shipping address-line2">
+        <input type="text" name="address2" maxlength="35" placeholder="Apartment, Suite, Unit, Building, Floor" autocomplete="shipping address-line2">
         <label>City</label>
         <input type="text" name="city" placeholder="Anytown" autocomplete="address-level2" required>
         <label>Country</label>

@@ -1,2 +1,2 @@
 <?php
-header('Location: https://elementaryos.stackexchange.com/questions/tagged/maya', true, 302);
+header('Location: https://elementaryos.stackexchange.com/questions/tagged/calendar', true, 302);

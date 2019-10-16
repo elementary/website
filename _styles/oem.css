@@ -1,0 +1,13 @@
+/*************************************
+* Copyright 2018 elementary, Inc.    *
+* This file is part of elementary.io *
+*************************************/
+
+.copy * {
+    text-align: left !important;
+}
+
+.copy h2:not(:first-child),
+.copy h3 {
+    margin-top: 2em;
+}

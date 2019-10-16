@@ -4,13 +4,13 @@
         {"icon":"icons/apps/64/accessories-calculator","title":"Calculator","position":"first-row"},
         {"icon":"icons/apps/64/office-calendar","title":"Calendar","position":"first-row"},
         {"icon":"icons/apps/64/accessories-camera","title":"Camera","position":"first-row"},
-        {"icon":"icons/apps/64/internet-web-browser","title":"Epiphany","position":"first-row"},
-        {"icon":"icons/apps/64/system-file-manager","title":"Files","position":"first-row"},
+        {"icon":"thirdparty-icons/apps/64/io.elementary.code","title":"Code","position":"first-row"},
+        {"icon":"icons/apps/64/internet-web-browser","title":"Epiphany","position":"middle-row"},
+        {"icon":"icons/apps/64/system-file-manager","title":"Files","position":"middle-row"},
         {"icon":"icons/apps/64/internet-mail","title":"Mail","position":"middle-row"},
         {"icon":"thirdparty-icons/apps/64/multitasking-view","title":"Multitasking View","position":"middle-row"},
         {"icon":"icons/apps/64/multimedia-audio-player","title":"Music","position":"middle-row"},
-        {"icon":"icons/apps/64/multimedia-photo-manager","title":"Photos","position":"middle-row"},
-        {"icon":"icons/apps/64/accessories-text-editor","title":"Scratch","position":"last-row"},
+        {"icon":"icons/apps/64/multimedia-photo-manager","title":"Photos","position":"last-row"},
         {"icon":"icons/apps/64/accessories-screenshot","title":"Screenshot","position":"last-row"},
         {"icon":"icons/devices/64/scanner","title":"Simple Scan","position":"last-row"},
         {"icon":"icons/apps/64/preferences-desktop","title":"System Settings","position":"last-row"},
@@ -19,7 +19,6 @@
 ,
     "categories": [
         {"icon":"icons/apps/64/accessories-calculator","title":"Calculator","position":"first-row"},
-        {"icon":"icons/apps/64/accessories-text-editor","title":"Scratch","position":"first-row"},
         {"icon":"icons/apps/64/accessories-screenshot","title":"Screenshot","position":"last-row"}
     ]
 ,
@@ -46,9 +45,6 @@
         {"title": "Settings", "items": [
             {"icon":"icons/categories/32/preferences-system-time","title":"<b>Da</b>te & Time"},
             {"icon":"icons/categories/32/preferences-desktop-display","title":"<b>D</b>ispl<b>a</b>ys"}
-        ]},
-        {"title": "Application Actions", "items": [
-            {"icon":"icons/apps/32/office-calendar","title":"About Calendar"}
         ]}
     ]
 ,

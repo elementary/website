@@ -75,6 +75,10 @@ h3 {
     padding-bottom: 0.3em;
 }
 
+.alert h3 {
+    border-bottom: none;
+}
+
 h4 {
     font-weight: 400;
 }
@@ -101,6 +105,10 @@ ul {
 
 .docs img {
     margin: 1.5em auto;
+}
+
+img.inline {
+    margin: 0;
 }
 
 img.float-left {

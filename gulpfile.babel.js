@@ -6,12 +6,16 @@
 import gulp from 'gulp'
 import cache from 'gulp-cached'
 import changed from 'gulp-changed'
+import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
 import svgo from 'gulp-svgo'
 
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
+
+import webpack from 'webpack'
+import webpackConfig from './webpack.config.babel.js'
 
 const browsers = [
     'last 4 version',
@@ -70,6 +74,24 @@ gulp.task('jpg', () => {
 })
 
 /**
+ * gif
+ * Optimizes gif images
+ *
+ * @returns {Task} - a gulp task for gif images
+ */
+gulp.task('gif', () => {
+    const base = '_images'
+    const src = ['_images/**/*.gif', '_images/**/*.gif']
+    const dest = 'images'
+
+    return gulp.src(src, { base })
+    .pipe(changed(dest))
+    .pipe(cache('gif'))
+    .pipe(imagemin())
+    .pipe(gulp.dest(dest))
+})
+
+/**
  * svg
  * Optimizes svg image outputs with svgo
  *
@@ -82,11 +104,16 @@ gulp.task('svg', () => {
 
         '!_images/icons/**/*.svg',
         '_images/icons/actions/48/document-export.svg',
+        '_images/icons/actions/symbolic/appointment-symbolic.svg',
         '_images/icons/actions/symbolic/edit-clear-symbolic.svg',
+        '_images/icons/actions/symbolic/edit-clear-all-symbolic.svg',
         '_images/icons/actions/symbolic/edit-find-symbolic.svg',
+        '_images/icons/actions/symbolic/find-location-symbolic.svg',
         '_images/icons/actions/symbolic/view-filter-symbolic.svg',
         '_images/icons/actions/symbolic/view-grid-symbolic.svg',
         '_images/icons/actions/symbolic/window-maximize-symbolic.svg',
+        '_images/icons/actions/symbolic/window-pop-out-symbolic.svg',
+        '_images/icons/apps/symbolic/web-browser-symbolic.svg',
         '_images/icons/apps/128/accessories-text-editor.svg',
         '_images/icons/apps/128/application-default-icon.svg',
         '_images/icons/apps/128/system-software-install.svg',
@@ -105,7 +132,7 @@ gulp.task('svg', () => {
         '_images/icons/apps/64/accessories-calculator.svg',
         '_images/icons/apps/64/accessories-camera.svg',
         '_images/icons/apps/64/accessories-screenshot.svg',
-        '_images/icons/apps/64/accessories-text-editor.svg',
+        '_images/thirdparty-icons/apps/64/io.elementary.code.svg',
         '_images/icons/apps/64/internet-mail.svg',
         '_images/icons/apps/64/internet-web-browser.svg',
         '_images/icons/apps/64/multimedia-audio-player.svg',
@@ -121,11 +148,23 @@ gulp.task('svg', () => {
         '_images/icons/categories/32/preferences-system-time.svg',
         '_images/icons/categories/48/preferences-system-network.svg',
         '_images/icons/categories/64/preferences-desktop-wallpaper.svg',
+        '_images/icons/categories/64/preferences-system-parental-controls.svg',
         '_images/icons/devices/64/scanner.svg',
+        '_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg',
+        '_images/icons/devices/symbolic/computer-symbolic.svg',
+        '_images/icons/mimes/24/payment-card.svg',
+        '_images/icons/mimes/24/payment-card-amex.svg',
+        '_images/icons/mimes/24/payment-card-diners-club.svg',
+        '_images/icons/mimes/24/payment-card-discover.svg',
+        '_images/icons/mimes/24/payment-card-jcb.svg',
+        '_images/icons/mimes/24/payment-card-mastercard.svg',
+        '_images/icons/mimes/24/payment-card-unionpay.svg',
+        '_images/icons/mimes/24/payment-card-visa.svg',
         '_images/icons/mimes/48/office-database.svg',
         '_images/icons/places/128/distributor-logo.svg',
         '_images/icons/places/64/distributor-logo.svg',
         '_images/icons/status/48/dialog-warning.svg',
+        '_images/icons/status/symbolic/notification-disabled-symbolic.svg',
         '_images/thirdparty-icons/apps/32/multitasking-view.svg'
     ]
     const dest = 'images'
@@ -143,7 +182,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg'))
+gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg', 'gif'))
 
 /**
  * styles
@@ -165,12 +204,33 @@ gulp.task('styles', () => {
 })
 
 /**
+ * scripts
+ * Runs webpack to build JavaScript
+ */
+
+gulp.task('scripts', () => {
+    return new Promise((resolve, reject) => {
+        webpack(webpackConfig, (err, stats) => {
+            if (err) {
+                console.log(err)
+                reject(err)
+            }
+            console.log(stats.toString({
+                chunks: false,
+                colors: true
+            }))
+            resolve()
+        })
+    })
+})
+
+/**
  * default
  * Builds all asset files
  *
  * @returns {Task} - a gulp task for building
  */
-gulp.task('default', gulp.parallel('images', 'styles'))
+gulp.task('default', gulp.parallel('images', 'styles', 'scripts'))
 
 /**
  * watch
@@ -184,4 +244,9 @@ gulp.task('watch', gulp.series('default', function watch () {
     gulp.watch('_images/**/*.svg', gulp.series('svg'))
 
     gulp.watch('_styles/**/*.css', gulp.series('styles'))
+    gulp.watch('_scripts/**/*.js', gulp.series('scripts'))
+
+    spawn('php', ['-S', '0.0.0.0:8000', 'router.php'], {
+        stdio: 'inherit'
+    })
 }))

@@ -13,13 +13,17 @@ import config from '~/config'
 import Payment from '~/widgets/payment'
 
 Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
+    // DEBUG
+    console.log('Config at download.js:')
+    console.log(config)
+    // END DEBUG
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {
         // Set defaults
         var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
-        var currentButton = 'amount-ten' // Default to $10 when the page loads.
-        var previousButton = 'amount-ten' // Defaulting to $10 means it will be the first previous.
+        var currentButton = 'amount-twenty' // Default to $20 when the page loads.
+        var previousButton = 'amount-twenty' // Defaulting to $20 means it will be the first previous.
 
         // ACTION: amountSelect: Track the current and previous amounts selected.
         var amountSelect = function (e) {
@@ -102,7 +106,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             var paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
             // Free download
-            if (paymentAmount < paymentMinimum) {
+            if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 // Open the Download modal immediately.
                 openDownloadOverlay()
@@ -111,16 +115,16 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
-                .then(([token]) => doStripePayment(paymentAmount, token))
-                .then(() => openDownloadOverlay())
-                .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
-                .catch((err) => {
-                    console.error('Error while making payment')
-                    console.error(err)
-                    ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
-                    openDownloadOverlay() // Just in case. Don't interupt the flow
-                    throw err // rethrow so it can be picked up by error tracking
-                })
+                    .then(([token]) => doStripePayment(paymentAmount, token))
+                    .then(() => openDownloadOverlay())
+                    .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
+                    .catch((err) => {
+                        console.error('Error while making payment')
+                        console.error(err)
+                        ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
+                        openDownloadOverlay() // Just in case. Don't interupt the flow
+                        throw err // rethrow so it can be picked up by error tracking
+                    })
             }
         })
 
@@ -149,11 +153,12 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: doStripePayment: Actually process the payment via Stripe
         function doStripePayment (amount, token) {
-            var $amountTen = $('#amount-ten')
-            if ($amountTen.val() !== 0) {
+            var $amountTwenty = $('#amount-twenty')
+            if ($amountTwenty.val() !== 0) {
                 $('#pay-what-you-want').remove()
-                $('#choice-buttons').html('<input type="hidden" id="amount-ten" value="0">')
-                currentButton = 'amount-ten'
+                $('#choice-buttons').remove()
+                $('#amounts').append('<div id="choice-buttons"><input type="hidden" id="amount-twenty" value="0"></div>')
+                currentButton = 'amount-twenty'
                 updateDownloadButton()
             }
 
@@ -166,8 +171,8 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                     email: token.email,
                     os: detectedOS
                 })
-                .done((res) => resolve(res))
-                .fail((xhr, status) => reject(new Error(status)))
+                    .done((res) => resolve(res))
+                    .fail((xhr, status) => reject(new Error(status)))
             })
         }
 

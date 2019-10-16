@@ -1,6 +1,6 @@
 {
-    "Whoops! That link has expired.": " عذرا, لقد انتهت صلاحية ذاك الرابط",
-    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https:\/\/github.com\/elementary\/website\/issues\/new\">file an issue on our GitHub<\/a>.": "",
+    "Whoops! That link has expired.": "عذرًا, لقد إنتهت صلاحية ذلك الرابط.",
+    "If you're trying to download elementary OS, please head back to the home page. If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "إذا كنت تحاول تحميل إليمنتري أو إس، من فضلك ارجع للصفحة الرئيسية. إذا كنت تبحث عن شيء آخر، أشعر بالحرية بـ <a href=\"https://github.com/elementary/website/issues/new\">إضافة مشكلة على GitHub الخاص بنا</a>.",
     "Go to Home Page": "إذهب إلى الصفحة الرئيسية",
-    "Download Link Expired &sdot; elementary": ""
+    "Download Link Expired &sdot; elementary": "رابط التحميل منتهي الصلاحية &sdot; إليمنتري"
 }

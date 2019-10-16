@@ -45,7 +45,7 @@
     <div class="row alert warning">
         <div class="column alert">
             <div class="icon">
-                <i class="warning fa fa-warning"></i>
+                <i class="warning fas fa-4x fa-exclamation-triangle"></i>
             </div>
             <div class="icon-text">
                 <h3>You are missing API keys</h3>
@@ -72,7 +72,7 @@
 
         <?php foreach ($products as $product) { ?>
 
-            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>">
+            <div class="grid__item" id="product-<?php echo $product['id'] ?>" data-product-name="<?php echo $product['name']; ?>" data-printful-id="<?php echo $product['printful_id'][0] ?>">
                 <img src="<?php echo $product['image'] ?>"/>
                 <h4><?php echo $product['name'] ?></h4>
                 <?php if ($product['price_min'] !== $product['price_max']) { ?>
@@ -99,7 +99,7 @@
             </div>
             <form action="<?php echo $page['lang-root'] ?>store/inventory" class="half">
                 <h2><?php echo $product['name'] ?></h2>
-                <h4 class="modal__price" data-l10n-off="1">$<?php echo number_format($product['price_min'], 2) ?></h4>
+                <h4 data-l10n-off="1"><strong class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></strong> <span class="modal__shipping" data-l10n-off="1"></span></h4>
                 <p><?php echo $product['description'] ?></p>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
@@ -143,15 +143,10 @@
 <?php } ?>
 
 <section class="grid">
-    <div class="half">
+    <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
         <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
-        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
-    </div>
-    <div class="half">
-    <h2>Looking for Stickers?</h2>
-        <p>Unixstickers.com sells a number of elementary-branded stickers, and a portion of their purchase helps support elementary development.</p>
-        <p><a href="http://www.unixstickers.com/tag/elementaryos" target="_blank" rel="noopener" class="read-more">Shop Unixstickers</a></p>
+        <p><small>Crimea, Cuba, Iran, Syria, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
     </div>
 </section>
 

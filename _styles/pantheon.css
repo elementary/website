@@ -272,6 +272,7 @@
     perspective: 1000;
     position: relative;
     right: 0;
+    text-shadow: none;
     transform: rotateX(-180deg) skew(40deg, 0deg);
     transform-style: preserve-3d;
     width: 300px;

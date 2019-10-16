@@ -33,13 +33,16 @@
             <p class="oss-title">elementary OS Applications</p>
         </a>
         <div>
+            <a class="button sub-item" href="https://github.com/elementary/appcenter" target="_blank" rel="noopener"><span>AppCenter</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/calculator" target="_blank" rel="noopener"><span>Calculator</span></a>
             <a class="button sub-item" href="https://github.com/elementary/calendar" target="_blank" rel="noopener"><span>Calendar</span></a>
             <a class="button sub-item" href="https://github.com/elementary/camera" target="_blank" rel="noopener"><span>Camera</span></a>
             <a class="button sub-item" href="https://github.com/elementary/files" target="_blank" rel="noopener"><span>Files</span></a>
             <a class="button sub-item" href="https://github.com/elementary/mail" target="_blank" rel="noopener"><span>Mail</span></a>
             <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
             <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
-            <a class="button sub-item" href="https://github.com/elementary/scratch" target="_blank" rel="noopener"><span>Scratch</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/code" target="_blank" rel="noopener"><span>Code</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/screenshot" target="_blank" rel="noopener"><span>Screenshot</span></a>
             <a class="button sub-item" href="https://github.com/elementary/terminal" target="_blank" rel="noopener"><span>Terminal</span></a>
             <a class="button sub-item" href="https://github.com/elementary/videos" target="_blank" rel="noopener"><span>Videos</span></a>
         </div>
@@ -80,7 +83,6 @@
             <p class="oss-subtitle">Desktop Libraries &amp; Repositories</p>
         </a>
         <div>
-            <a class="button sub-item" href="https://launchpad.net/ayatana" target="_blank" rel="noopener"><span>Ayatana</span></a>
             <a class="button sub-item" href="https://launchpad.net/bamf" target="_blank" rel="noopener"><span>BAMF</span></a>
             <a class="button sub-item" href="https://launchpad.net/libunity" target="_blank" rel="noopener"><span>libunity</span></a>
             <a class="button sub-item" href="https://launchpad.net/ubiquity" target="_blank" rel="noopener"><span>Ubiquity</span></a>
@@ -120,6 +122,7 @@
         </a>
         <div>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/dbus/" target="_blank" rel="noopener"><span>D-Bus</span></a>
+            <a class="button sub-item" href="https://gitlab.freedesktop.org/geoclue/geoclue/wikis/home" target="_blank" rel="noopener"><span>GeoClue</span></a>
             <a class="button sub-item" href="https://gstreamer.freedesktop.org/" target="_blank" rel="noopener"><span>GStreamer</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/libinput/" target="_blank" rel="noopener"><span>libinput</span></a>
             <a class="button sub-item" href="https://www.freedesktop.org/wiki/Software/LightDM/" target="_blank" rel="noopener"><span>LightDM</span></a>

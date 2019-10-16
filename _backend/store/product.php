@@ -39,6 +39,7 @@ function get_products () {
 
         $product['size'] = [];
         $product['color'] = [];
+        $product['printful_id'] = [];
 
         foreach ($product['variants'] as $variant) {
             if ($product['price_max'] == null || $variant['price'] > $product['price_max']) {
@@ -51,6 +52,7 @@ function get_products () {
 
             if (!in_array($variant['size'], $product['size'])) $product['size'][] = $variant['size'];
             if (!in_array($variant['color'], $product['color'])) $product['color'][] = $variant['color'];
+            if (!in_array($variant['printful_id'], $product['printful_id'])) $product['printful_id'][] = $variant['printful_id'];
         }
     }
 

@@ -1,8 +1,8 @@
 {
-    "You're connected!": "Sie sind verbunden!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Ihre Internet-Verbindung scheint zu funktionieren. Sie können dieses Fenster schließen und mit Ihrem Gerät arbeiten.",
+    "You're connected!": "Du bist verbunden!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Deine Internet-Verbindung scheint zu funktionieren. Du kannst dieses Fenster nun schließen und mit Deinem Gerät arbeiten.",
     "Why is this window appearing?": "Warum erscheint dieses Fenster?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS überprüft automatisch die Internetverbindung, sobald Sie sich mit einem neuen Drahtlosnetzwerk verbinden. Wenn es keine Internetverbindung erkennt (wenn Sie sich beispielsweise über ein Captive-Portal in einem Café oder einem anderen öffentlichen Ort verbinden), erscheint dieses Fenster und zeigt die Anmeldeseite an.",
+    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS überprüft automatisch die Internetverbindung, sobald Du Dich mit einem neuen Drahtlosnetzwerk verbindest. Wenn es keine Internetverbindung erkennt (wenn Du dich beispielsweise über ein Captive-Portal in einem Café oder einem anderen öffentlichen Ort verbindest), erscheint dieses Fenster und zeigt die Anmeldeseite an.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Einige Netzwerke erscheinen möglicherweise zunächst als Captive-Portal, sodass dieses Fenster angezeigt wird. Danach wird jedoch eine normale Internet-Verbindung hergestellt. Auch in solchen Fällen erscheint diese Nachricht; das Fenster kann dann einfach geschlossen werden.",
-    "You're connected! &sdot; elementary": "Sie sind verbunden! &sdot; elementary"
+    "You're connected! &sdot; elementary": "Du bist verbunden! &sdot; elementary"
 }

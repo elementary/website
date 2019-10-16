@@ -61,8 +61,22 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 
+#payment-trust i {
+    font-size: 2.5em;
+    padding: 0 0.05em;
+    vertical-align: middle;
+}
+
+#payment-trust i span {
+    font-size: 0;
+}
+
 #download {
     margin: 3px auto 6px;
+}
+
+#the-press {
+    padding-bottom: 64px;
 }
 
 #the-press h4 {
@@ -72,19 +86,26 @@ input:focus + .focus-reveal {
 
 #the-press svg {
     display: block;
-    height: 27px;
-    margin: 19px auto;
-    opacity: 0.8;
-    transition: opacity 250ms ease-in-out;
+    height: 4em;
+    margin: 12px auto;
 }
 
-#the-press svg:hover {
-    opacity: 1;
+#the-press svg * {
+    fill: #555761;
+}
+
+#the-press svg:hover * {
+    fill: #3689e6;
 }
 
 #the-press svg:active {
     position: relative;
     top: 1px;
+}
+
+.cta {
+    padding: 64px 1em;
+    text-align: center;
 }
 
 /***********
@@ -103,41 +124,22 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase {
-    background-image: url("../images/responsive-images/notebook-small.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 1 1 auto;
-    margin-bottom: -32px;
-    min-height: 50vh;
+    position: relative;
 }
 
-@media all and (min-width: 500px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-medium.jpg");
-    }
+.section--hero .section__showcase img.bg {
+    display: block;
+    margin: 0 auto;
+    max-height: 67vh;
 }
 
-@media all and (min-width: 1000px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook-large.jpg");
-    }
-}
-
-@media all and (min-width: 1300px) {
-    .section--hero .section__showcase {
-        background-image: url("../images/responsive-images/notebook.jpg");
-    }
-}
-
-@media (min-aspect-ratio: 1/2) and (min-height: 800px) and (max-height: 2000px) {
-    .section--stretched {
-        height: calc(100vh - 56px);
-    }
-
-    .section--stretched > .section__showcase {
-        display: flex;
-    }
+.section--hero .section__showcase img:not(.bg) {
+    height: 78%;
+    left: 50%;
+    position: absolute;
+    top: 2%;
+    transform: translateX(-50%);
+    border-radius: 4px;
 }
 
 /***********************
@@ -284,7 +286,7 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/back-arrow.svg");
+    background-image: url("../images/home/back-arrow.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -296,7 +298,15 @@ input:focus + .focus-reveal {
 }
 
 #showcase.initialized {
+    background-color: rgb(44, 35, 52);
+    background-image:
+        linear-gradient(to bottom, rgba(44, 35, 52, 0.8), rgba(70, 31, 23, 0.5)),
+        url("../images/home/wallpaper.jpg");
+    background-position: top;
+    background-size: cover;
+    color: white;
     position: relative;
+    text-shadow: 0 0 6px black;
     transition: height 0.25s ease-in-out;
 }
 
@@ -306,6 +316,13 @@ input:focus + .focus-reveal {
     transition: transform 0.25s ease-in-out;
     width: 100%;
     will-change: transform;
+}
+
+#showcase.initialized > div h2::selection,
+#showcase.initialized > div p::selection {
+    text-shadow: none;
+    color: black;
+    background-color: lightgrey;
 }
 
 #showcase.initialized > div#showcase-index {
@@ -342,14 +359,80 @@ input:focus + .focus-reveal {
     margin: 32px 32px 64px;
 }
 
+/*************
+* What's New *
+*************/
+
+#whats-new {
+    padding: 64px 1em;
+}
+
+#whats-new::before {
+    background-color: #667885;
+    background-image:
+        url("../images/brand/logomark-white.svg"),
+        linear-gradient(to bottom, rgba(72, 90, 108, 0.25), rgba(39, 52, 69, 0.75)),
+        url("../images/home/wallpaper.jpg");
+    background-size:
+        contain,
+        cover,
+        cover;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    content: "";
+    display: block;
+    height: 128px;
+    margin: 0 auto;
+    width: 128px;
+}
+
 /************
 * AppCenter *
 ************/
 
 #appcenter {
+    background-color: #7239b3;
+    background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
+    color: #fff;
     display: flex;
     justify-content: center;
+    max-width: 100%;
     padding: 48px 0;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#appcenter h1 span {
+    font-weight: 800;
+}
+
+#appcenter .buttons {
+    text-align: center;
+}
+
+#appcenter .button {
+    border-color: white;
+    color: white;
+    display: block;
+    margin: 12px auto;
+}
+
+@media (min-width: 500px) {
+    #appcenter .button {
+        display: inline-block;
+        margin: 6px 12px;
+    }
+}
+
+#appcenter .button:first-child {
+    background-color: white;
+    color: #7239b3;
 }
 
 #appcenter .app-display {
@@ -379,6 +462,254 @@ input:focus + .focus-reveal {
     }
 }
 
+/***********
+* Workflow *
+***********/
+
+#workflow figure {
+    background-image: url('../images/screenshots/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 ratio */
+    position: relative;
+    width: 100%;
+}
+
+#workflow figure * {
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#workflow figure.multitasking,
+#workflow figure .workspace,
+#workflow figure .notification {
+    border-radius: 2px;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#workflow figure.multitasking {
+    background: #333;
+}
+
+#workflow figure.multitasking .workspace,
+#workflow figure.multitasking::after {
+    border-radius: 2px;
+    background-image: url('../images/screenshots/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 12%;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.5);
+    left: 8%;
+    right: 8%;
+    top: 4%;
+}
+
+#workflow figure.multitasking .workspace {
+    animation: 3s switch-workspace ease infinite;
+    background-position: right;
+}
+
+#workflow figure.multitasking::before,
+#workflow figure.multitasking::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#workflow figure.multitasking::after {
+    animation: 3s new-workspace ease infinite;
+    left: 96%;
+    right: 0;
+}
+
+@keyframes switch-workspace {
+    0% {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    25% {
+        bottom: 12%;
+        left: 8%;
+        right: 8%;
+        top: 4%;
+    }
+
+    29% {
+        left: 0;
+    }
+
+    50% {
+        bottom: 12%;
+        left: 0%;
+        right: 96%;
+        top: 4%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        top: 0;
+    }
+}
+
+@keyframes new-workspace {
+    0% {
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        top: 0;
+    }
+
+    25% {
+        bottom: 12%;
+        left: 96%;
+        right: 0;
+        top: 4%;
+    }
+
+    40% {
+        right: 0;
+    }
+
+    50% {
+        bottom: 12%;
+        left: 8%;
+        right: 8%;
+        top: 4%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+}
+
+#workflow figure.pip .window {
+    animation: 6s pip ease infinite;
+    left: auto;
+    top: auto;
+}
+
+@keyframes pip {
+    0%,
+    62.5%,
+    100% {
+        bottom: 15%;
+        right: 20%;
+        width: 60%;
+    }
+
+    12.5%,
+    50% {
+        bottom: 3%;
+        right: 3%;
+        width: 30%;
+    }
+}
+
+#workflow figure.dnd .notification {
+    animation: 12s dnd ease infinite;
+    backface-visibility: hidden;
+    background-image:
+        linear-gradient(to bottom, #7e8087, #7e8087),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+        linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+    background-size:
+        50% 10%,
+        60% 10%,
+        40% 10%,
+        cover;
+    background-repeat: no-repeat;
+    background-position:
+        60% 20%,
+        75% 45%,
+        50% 70%,
+        0;
+    bottom: auto;
+    height: 10%;
+    left: auto;
+    perspective: 1000;
+    right: 1%;
+    text-shadow: none;
+    top: 5%;
+    transform-style: preserve-3d;
+    width: 18%;
+}
+
+#workflow figure.dnd .notification:first-of-type {
+    animation-delay: 250ms;
+    top: 18%;
+}
+
+#workflow figure.dnd .notification:last-of-type {
+    animation-delay: 500ms;
+    top: 31%;
+}
+
+#workflow figure.dnd .notification img {
+    height: 70%;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+#workflow figure.dnd .window {
+    left: 12%;
+    top: 1%;
+    width: 75%;
+}
+
+@keyframes dnd {
+    0% {
+        filter: saturate(1);
+        opacity: 0;
+        transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
+    }
+
+    3%,
+    15% {
+        filter: saturate(1);
+        opacity: 1;
+        transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
+    }
+
+    18% {
+        filter: saturate(0);
+        opacity: 0.5;
+    }
+
+    50%,
+    100% {
+        filter: saturate(0);
+        opacity: 0;
+    }
+}
+
+/***********
+* Callouts *
+***********/
+
+#callouts {
+    padding: 64px 1em;
+}
+
 /************
 * Slingshot *
 ************/
@@ -401,7 +732,6 @@ input:focus + .focus-reveal {
 }
 
 #slingshot .app-display__description svg {
-    display: inline-block;
     float: left;
     margin: 4px 6px 4px 0;
 }
@@ -457,6 +787,11 @@ input:focus + .focus-reveal {
     opacity: 0.8;
     text-align: left;
     margin-left: 3px;
+}
+
+#slingshot-label svg {
+    margin-right: 3px;
+    vertical-align: bottom;
 }
 
 .slingshot .linked {
@@ -518,7 +853,6 @@ input:focus + .focus-reveal {
 }
 
 .app {
-    display: inline-block;
     float: left;
     height: 116px;
     margin: 0;
@@ -809,4 +1143,93 @@ span.results-title {
     #slingshot h2 {
         margin-top: 24px;
     }
+}
+
+/********************
+* Parental Controls *
+********************/
+
+#parental-controls {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 48px 0;
+    position: relative;
+}
+
+#parental-controls .app-display__description h2,
+#parental-controls .app-display__description p {
+    text-align: left;
+}
+
+#parental-controls .app-display__description p {
+    margin-left: 24px;
+}
+
+#parental-controls .app-display__description h2 img {
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#parental-controls .app-display__description svg {
+    float: left;
+    margin: 4px 6px 4px 0;
+}
+
+#parental-controls .app-display__description svg,
+#parental-controls .app-display__description svg * {
+    color: #000 !important;
+    fill: #000 !important;
+}
+
+/************
+* Shortcuts *
+************/
+
+#shortcuts {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
+}
+
+#shortcuts p {
+    margin-bottom: 8vw; /* For better balance */
+}
+
+#shortcuts .app-display__image {
+    padding: 0 32px 32px;
+}
+
+@media (min-width: 1000px) {
+    #shortcuts .app-display__image {
+        width: 67%;
+        order: 0;
+    }
+}
+
+/**********
+* Privacy *
+**********/
+
+#privacy {
+    background-color: #273445;
+    color: white;
+    padding: 128px 1em;
+}
+
+#privacy a {
+    color: #8cd5ff;
+}
+
+#privacy h3 svg {
+    fill: white;
+    height: 1em;
+    margin-right: 0.25em;
+    transform: scale(1.5);
+    vertical-align: bottom;
+}
+
+#privacy h3 svg * {
+    fill: inherit;
 }

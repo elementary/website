@@ -6,10 +6,34 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg3901"
    height="48"
    width="48"
-   version="1.1">
+   version="1.1"
+   sodipodi:docname="icons.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview39"
+     showgrid="false"
+     inkscape:zoom="6.9532167"
+     inkscape:cx="12.979749"
+     inkscape:cy="23.863497"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3901" />
   <defs
      id="defs3903">
     <linearGradient
@@ -148,7 +172,7 @@
        id="linearGradient4102">
       <stop
          offset="0"
-         style="stop-color:#68758e;stop-opacity:0.3"
+         style="stop-color:#667885;stop-opacity:0.3019608"
          id="stop4104" />
       <stop
          offset="1"
@@ -164,32 +188,32 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.2;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#919caf;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.2;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#95a3ab;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
      id="path4160-3"
      d="m 7,0.99999976 c 7.791126,0 33.999958,0.00274 33.999958,0.00274 L 40.999999,44 7,44 Z" />
   <path
-     style="display:inline;fill:none;stroke:#68758e;stroke-width:0.99992192;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="display:inline;fill:none;stroke:#667885;stroke-width:0.99992192;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="path4160-6-1-6"
      d="m 6.4999605,0.49996196 c 8.0202885,0 35.0000405,0.00298 35.0000405,0.00298 l 3.7e-5,43.99709604 -35.0000775,0 0,-43.99989264 z" />
   <path
      d="m 15.493102,34.578022 c 4.386207,2.813793 13.962591,-0.950658 6.001067,-11.02474 C 13.604717,13.570396 29.332759,7.022814 34,18.567721"
      id="path2783"
-     style="fill:url(#linearGradient3058);fill-opacity:1;fill-rule:evenodd;stroke:#68758e;stroke-width:0.99999982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:url(#linearGradient3058);fill-opacity:1;fill-rule:evenodd;stroke:#667885;stroke-width:0.99999982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
      d="M 14.438316,14.480986 29.568109,33.402047"
      id="path3571"
-     style="fill:#f37329;fill-opacity:1;stroke:#68758e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;fill-opacity:1;stroke:#667885;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
      d="m 30.5,33.500001 c 3.72e-4,0.552547 -0.447453,1.000673 -1,1.000673 -0.552547,0 -1.000372,-0.448126 -1,-1.000673 -3.72e-4,-0.552548 0.447453,-1.000674 1,-1.000674 0.552547,0 1.000372,0.448126 1,1.000674 l 0,0 z M 15.5,14.5 c 3.72e-4,0.552548 -0.447453,1.000673 -1,1.000673 -0.552547,0 -1.000372,-0.448125 -1,-1.000673 -3.72e-4,-0.552548 0.447453,-1.000673 1,-1.000673 0.552547,0 1.000372,0.448125 1,1.000673 l 0,0 z"
      id="path3575"
-     style="fill:#e6e6e6;fill-opacity:1;stroke:#68758e;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:#e6e6e6;fill-opacity:1;stroke:#667885;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 20,22 3,0 0,3 -3,0 z m 12,-5 3,0 0,3 -3,0 z m -19,16 3,0 0,3 -3,0 z"
      id="rect3569"
-     style="fill:#68758e;fill-opacity:1;stroke:none;color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill-rule:nonzero;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;filter-blend-mode:normal;filter-gaussianBlur-deviation:0;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+     style="fill:#667885;fill-opacity:1;stroke:none;color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill-rule:nonzero;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;filter-blend-mode:normal;filter-gaussianBlur-deviation:0;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
 </svg>

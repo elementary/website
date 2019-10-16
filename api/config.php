@@ -15,16 +15,24 @@ $output = array(
         'version' => $config['release_version']
     ),
 
+    'previous' => array(
+        'title' => $config['previous_title'],
+        'version' => $config['previous_version']
+    ),
+
     'keys' => array(
         'sentry' => $config['sentry_pub'],
         'stripe' => $config['stripe_pk']
     ),
 
     'user' => array(
+        'ip' => $ip,
         'region' => $region,
+        'timecode' => $timecode,
         'trackme' => $trackme
     )
 );
 
-header('Content-type:application/json;charset=utf-8');
+header('Access-Control-Allow-Origin: *');
+header('Content-type: application/json; charset=utf-8');
 echo json_encode($output, JSON_PRETTY_PRINT);

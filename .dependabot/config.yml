@@ -1,0 +1,18 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    default_labels:
+      - "dependencies"
+    default_reviewers:
+      - "lewisgoddard"
+      - "btkostner"
+  - package_manager: "php:composer"
+    directory: "_backend/"
+    update_schedule: "weekly"
+    default_labels:
+      - "dependencies"
+    default_reviewers:
+      - "lewisgoddard"
+      - "btkostner"

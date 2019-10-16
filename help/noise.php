@@ -1,2 +1,2 @@
 <?php
-header('Location: https://elementaryos.stackexchange.com/questions/tagged/noise', true, 302);
+header('Location: https://elementaryos.stackexchange.com/questions/tagged/music', true, 302);

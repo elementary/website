@@ -29,12 +29,12 @@ include $template['alert'];
         <span>AppCenter</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/maya" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/calendar" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/office-calendar.svg" alt="Calendar"/>
         <span>Calendar</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/snap" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/camera" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/accessories-camera.svg" alt="Camera"/>
         <span>Camera</span>
     </a>
@@ -44,7 +44,7 @@ include $template['alert'];
         <span>Files</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/geary" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/pantheon-mail" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/internet-mail.svg" alt="Mail"/>
         <span>Mail</span>
     </a>
@@ -54,7 +54,7 @@ include $template['alert'];
         <span>Epiphany</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/noise" target="_blank" rel="noopener">
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/music" target="_blank" rel="noopener">
         <img width="64" height="64" src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music"/>
         <span>Music</span>
     </a>
@@ -64,9 +64,9 @@ include $template['alert'];
         <span>Photos</span>
     </a>
 
-    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/scratch" target="_blank" rel="noopener">
-        <img width="64" height="64" src="images/icons/apps/64/accessories-text-editor.svg" alt="Text Editor"/>
-        <span>Scratch</span>
+    <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/code" target="_blank" rel="noopener">
+        <img width="64" height="64" src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code"/>
+        <span>Code</span>
     </a>
 
     <a class="app" href="https://elementaryos.stackexchange.com/questions/tagged/settings" target="_blank" rel="noopener">
@@ -95,7 +95,7 @@ include $template['alert'];
 
     <a class="column third" href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener">
         <i class="fab fa-stack-exchange"></i>
-        <h3 class="read-more">StackExchange</h3>
+        <h3 class="read-more">Stack Exchange</h3>
         <p>Check out answers to some of the most common questions we get.</p>
     </a>
 </div>

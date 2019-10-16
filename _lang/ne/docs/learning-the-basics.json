@@ -65,7 +65,7 @@
     "Search in the top-right, or browse.": "माथिल्लो भागको दाँयापट्टि खोजी गर्नुहोस्, वा ब्राउज गर्नुहोस्।",
     "Click <strong>Install<\/strong> next to the app you want to install.": "तपाईंले हाल्न चाहनु भएको अनुप्रयोगको छेउको <strong>Install<\/strong> थिच्नुहोस्।",
     "You may be asked for your password prior to installing an app.": "कुनै अनुप्रयोग स्थापना गर्नु अघि तपाईंलाई तपाईंको पासवर्ड सोधिन सकिन्छ।",
-    "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 16.04 LTS should work on elementary OS Loki.<\/em>": "",
+    "<em>Note: Some software may not be available from AppCenter. While we don't recommend downloading software from the general Internet, apps that are compatible with Ubuntu 18.04 LTS should work on elementary OS Juno.<\/em>": "",
     "Updating": "",
     "elementary OS includes updates as part of AppCenter. Notice the tab &quot;Updates&quot; at the top of the window. We recommend you check for updates at least <em>once a week<\/em> to make sure your computer has the latest features and protection.": "",
     "For more information related to security patches, read the <a href=\"http:\/\/www.ubuntu.com\/usn\/xenial\/\">Ubuntu security notices<\/a>.": "",
