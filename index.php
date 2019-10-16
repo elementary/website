@@ -18,6 +18,8 @@
 
     include $template['header'];
     include $template['alert'];
+
+    $already_paid = (os_payment_getcookie($config['release_version']) > 0);
 ?>
 
         <section class="section--hero section--stretched">
@@ -37,13 +39,8 @@
                 <div class="whole">
                     <div id="amounts">
                         <?php
-                            $already_paid = (os_payment_getcookie($config['release_version']) > 0);
-                            if ($already_paid) {
+                            if (!$already_paid) {
                         ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-twenty" value="0">
-                        </div>
-                        <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
                             <button id="amount-ten"    value="10" class="small-button payment-button target-amount">10</button>
@@ -55,28 +52,46 @@
                                 <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                             </div>
                         </div>
-                        <?php } ?>
+                        <?php
+                            }
+                        ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"> elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> |  <?php echo $config['release_size']; ?> (for PC or Mac)</p>
+                            <p class="small-label">
+                                elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?><br>
+                                <?php echo $config['release_size']; ?> | 64-bit
+                            </p>
                         </div>
                         <div style="clear:both;"></div>
+
+                        <?php
+                            if (!$already_paid) {
+                        ?>
+                        <div id="payment-trust">
+                            <img src="images/icons/mimes/24/payment-card-visa.svg" alt="Visa" title="Visa cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-mastercard.svg" alt="Mastercard" title="Mastercard cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-discover.svg" alt="Discover" title="Discover cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-amex.svg" alt="American Express" title="American Express cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-diners-club.svg" alt="Diner's Club" title="Diner's Club cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-jcb.svg" alt="JCB" title="JCB cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-unionpay.svg" alt="UnionPay" title="UnionPay cards accepted" />
+                            <p class="small-label text-center">Payments processed & secured by <a href="https://stripe.com"><i class="fab fa-stripe"><span>Stripe</span></i></a></p>
+                        </div>
+                        <?php
+                            }
+                        ?>
+
+                        <?php
+                            if ($already_paid) {
+                        ?>
+                        <div id="choice-buttons">
+                            <input type="hidden" id="amount-twenty" value="0">
+                        </div>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="grid" id="the-press">
-            <div class="third">
-                <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;</a>
-            </div>
-            <div class="third">
-                <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo; —@MacLife https://elementary.io" data-tweet-suffix=" — @MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;a fast, low-maintenance platform that can be installed virtually anywhere&rdquo;</a>
-            </div>
-            <div class="third">
-                <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… Completely community-based, and has a real flair for design and appearances.&rdquo;</a>
             </div>
         </section>
         <section id="whats-new" class="grey">
@@ -88,11 +103,33 @@
                 </div>
             </div>
         </section>
+        <section class="grid" id="the-press">
+            <div class="third">
+                <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+            </div>
+            <div class="third">
+                <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; —@arstechnica https://elementary.io" data-tweet-suffix=" — @arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+            </div>
+            <div class="third">
+                <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; —@forbes https://elementary.io" data-tweet-suffix=" — @forbes https://elementary.io" target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+            </div>
+            <div class="third">
+                <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
+                <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; —@MacLife https://elementary.io" data-tweet-suffix=" — @MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+            </div>
+            <div class="third">
+                <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
+                <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+            </div>
+        </section>
         <section id="appcenter">
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" />
+                    <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
                     <h1>Get it on <span>AppCenter</span></h1>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <div class="buttons">
@@ -119,6 +156,50 @@
                 <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
             </div>
         </section>
+        <section id="workflow" class="grey">
+            <div class="grid">
+                <div class="two-thirds">
+                    <h2>Get Work Done. Or Play.</h2>
+                    <h4>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</h4>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="third">
+                    <figure class="multitasking">
+                        <div class="workspace"></div>
+                    </figure>
+                    <h3>Multitasking View</h3>
+                    <p>Workspaces help organize your work by task. Keep work and play separate, but just one tap away.</p>
+                </div>
+                <div class="third">
+                    <figure class="pip">
+                        <div class="workspace">
+                            <img class="window" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="Videos screenshot" />
+                        </div>
+                    </figure>
+                    <h3>Picture-in-Picture</h3>
+                    <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
+                </div>
+                <div class="third">
+                    <figure class="dnd">
+                        <div class="workspace">
+                            <img class="window" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                            <div class="notification" type="notification">
+                                <img src="images/icons/apps/64/internet-mail.svg" />
+                            </div>
+                        </div>
+                    </figure>
+                    <h3>Do Not Disturb</h3>
+                    <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
+                </div>
+            </div>
+        </section>
         <section>
             <div id="showcase" class="row grey">
                 <div class="pantheon" style="display:none;">
@@ -138,16 +219,16 @@
                         <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     </div>
                     <ul id="showcase-grid">
-                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>
-                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" />Epiphany</li></a>
-                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" />Mail</li></a>
-                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" />Photos</li></a>
-                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" />Videos</li></a>
-                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
-                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
-                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" />Code</li></a>
-                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
+                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music app icon"/>Music</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" alt="Browser app icon"/>Epiphany</li></a>
+                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" alt="Email app icon"/>Mail</li></a>
+                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photo app icon"/>Photos</li></a>
+                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" alt="Video app icon"/>Videos</li></a>
+                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" alt="Calendar app icon"/>Calendar</li></a>
+                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" alt="File manager app icon"/>Files</li></a>
+                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" alt="Terminal app icon"/>Terminal</li></a>
+                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code editor app icon"/>Code</li></a>
+                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" alt="Camera app icon"/>Camera</li></a>
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
@@ -307,7 +388,7 @@
                         <?php include('images/pantheon/actions/system-search.svg'); ?>
                         Applications
                     </div>
-                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg' alt=""></div>
                     <div class="slingshot">
                         <div class="linked">
                             <div id="slingshot-grid-button" class="button active">
@@ -367,7 +448,7 @@
                 <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
                 <div class="app-display__description">
                     <h2>
-                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" />
+                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding hand the hand of a child"/>
                         Parental Controls
                     </h2>
                     <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Time Limits</h4>
@@ -421,7 +502,7 @@
             </div>
         </section>
         <section class="cta">
-            <img src="images/icons/places/128/distributor-logo.svg">
+            <img src="images/icons/places/128/distributor-logo.svg" alt="elementary OS logo">
             <h2>Download elementary OS</h2>
             <h4><?php echo $sitewide['description']; ?></h4>
 

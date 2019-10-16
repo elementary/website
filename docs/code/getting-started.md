@@ -283,7 +283,7 @@ Every app also comes with an .appdata.xml file. This file contains all the infor
 2. Type the following into your .appdata.xml file
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Copyright 2018 Your Name <you@email.com> -->
+        <!-- Copyright 2019 Your Name <you@email.com> -->
         <component type="desktop">
           <id>com.github.yourusername.yourrepositoryname</id>
           <metadata_license>CC0</metadata_license>
@@ -489,6 +489,13 @@ Now we have to make some changes to our Meson build system and add a couple new 
 
 That's it! Your app is now fully ready to be translated. Remember that each time you add new translatable strings or change old ones, you should regenerate your .pot and po files using the `-pot` and `-update-po` build targets from the previous two steps. If you want to support more languages, just list them in the LINGUAS file and generate the new po file with the `-update-po` target. Don't forget to add any new po files to git!
 
+## Translators Comments {#translators-comments}
+
+Sometimes detailed descriptions in the context of translatable strings are necessary for disambiguation or to help in the creation of accurate translations. For these situations use `/// TRANSLATORS:` comments.
+
+    /// TRANSLATORS: The first %s is search term, the second is the name of default browser
+    title = _("Search for %s in %s").printf (query, get_default_browser_name ());
+
 # Packaging {#packaging}
 
 While having a build system is great, our app still isn't ready for regular users. We want to make sure our app can be built and installed without having to use Terminal. What we need to do is package our app. To do this, we use the Debian packaging format (.deb) on elementary OS. This section will teach you how to package your app as a .deb file, which is required to publish apps in AppCenter. This will allow normal people to install your app and even get updates for it when you publish them.
@@ -523,7 +530,7 @@ Now it's time to create the rules that will allow your app to be built as a .deb
 
           * Initial Release.
 
-         -- Your Name <you@emailaddress.com>  Friday, 20 Apr 2018 04:53:39 -0500
+         -- Your Name <you@emailaddress.com>  Monday, 8 Apr 2019 04:53:39 -0500
 
      The first line contains your app's binary name, version, OS codename, and how urgently your package should be built. After the `*` is a list of your changes. Finally, you include your name, email address, and the date. For more information about the debian changelog, make sure to read the [documentation](https://www.debian.org/doc/debian-policy/#document-ch-source).
 
@@ -553,10 +560,10 @@ Now it's time to create the rules that will allow your app to be built as a .deb
         Source: https://github.com/yourusername/yourrepositoryname
 
         Files: src/* data/* debian/*
-        Copyright: 2018 Your Name <you@emailaddress.com>
+        Copyright: 2019 Your Name <you@emailaddress.com>
         License: GPL-3.0+
 
-That wasn't too bad right? We'll set up more complicated packaging in the future, but for now this is all you need. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
+That wasn't too bad, right? We'll set up more complicated packaging in the future, but this is all that is required to submit your app to AppCenter Dashboard for it to be built, packaged, and distributed—you don't need to actually create a .deb file yourself. If you'd like you can always read [more about Debian packaging](https://www.debian.org/doc/debian-policy/).
 
 Note that Debian packaging is _very_ picky about whitespace, so if you're running into errors, make sure you're not adding, changing, or removing whitespace from the original template files.
 
@@ -717,7 +724,7 @@ In between `var main_window...` and `main_window.show ();`, write the folowing l
     main_window.add (grid);
     main_window.show_all ();
 
-Since we're adding translatable strings, don't forget to update your translation template by running `make pot`.
+Since we're adding translatable strings, don't forget to update your translation template by running `ninja com.github.yourusername.yourrepositoryname-pot`.
 
 ## Sending Notifications {#sending-notifications}
 
@@ -726,7 +733,7 @@ Now that we have a Gtk.Application we can send notifications. Let's connect a fu
     show_button.clicked.connect (() => {
         var notification = new Notification (_("Hello World"));
         notification.set_body (_("This is my first notification!"));
-        this.send_notification ("notify.app", notification);
+        this.send_notification ("com.github.yourusername.yourrepositoryname", notification);
     });
 
 Okay, now compile your new app. if everything works, you should see your new app. Click the "Send" button. Did you see the notification? Great! Don't forget to commit and push your project in order to save your branch for later.
@@ -946,7 +953,7 @@ For the simplest example, let's create a useless switch in your app, and save it
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <schemalist>
-      <schema path="/com/github/yourusername/yourrepositoryname" id="com.github.yourusername.yourrepositoryname">
+      <schema path="/com/github/yourusername/yourrepositoryname/" id="com.github.yourusername.yourrepositoryname">
         <key name="useless-setting" type="b">
           <default>false</default>
           <summary>Useless Setting</summary>

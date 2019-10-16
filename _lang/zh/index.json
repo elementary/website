@@ -4,7 +4,7 @@
     "elementary OS 5 Juno desktop": "",
     "Pay What You Want:": "",
     "Custom": "自定义",
-    "Enter any dollar amount.": "输入任意金额$",
+    "Enter any dollar amount.": "输入任意金额。",
     "Purchase elementary OS": "购买 elementary OS",
     "elementary OS 5.0 Juno |  1.48 GB (for PC or Mac)": "",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system that will run well even on old PCs&rdquo;": "",
@@ -107,7 +107,7 @@
     "Choose a Download": "",
     "Download from a localized server or by magnet link. For help and more info, see the": "",
     "installation guide": "",
-    "Cancel": "",
+    "Close": "",
     "Download": "",
     "Torrent Magnet Link": "",
     "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""

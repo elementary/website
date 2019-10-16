@@ -41,16 +41,26 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Funding</h2>
-            <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time developer.</p>
+            <p class="text-center">With your help, we've been able to grow from a small group of passionate volunteers into a tiny company. Every little bit of help is one step closer to hiring another full-time contributor and tackling even more ambitious problems.</p>
         </div>
     </div>
 
-    <section class="grid">
-        <div class="third">
-            <img alt="Patreon" src="images/get-involved/patreon.svg">
-            <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount, get rewards, and help us reach our goals. <a class="read-more" href="https://www.patreon.com/" target="_blank" rel="noopener">Learn More</a></p>
+    <div class="grid">
+        <div class="half">
+            <img class="logo" alt="Patreon" src="images/get-involved/patreon.svg">
+            <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount to contribute each month to help us reach our goals. Plus, earn exclusive rewards and read exclusive content early. <a class="read-more" href="https://www.patreon.com/" target="_blank" rel="noopener">Learn More</a></p>
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Become a Patron</a>
         </div>
+        <div class="half">
+            <img class="logo" alt="Bountysource" src="images/open-source/bountysource.svg">
+            <p>Directly fund the developers committing fixes or creating new features. Set a bounty on the issues that matter to you most, fund a specific app, or set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
+
+            <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=">Bountied Bugs</a>
+            <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
+        </div>
+    </div>
+
+    <div class="grid">
         <div class="third">
             <i class="fab fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
@@ -62,21 +72,14 @@
             </form>
         </div>
         <div class="third">
+            <img class="logo" alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
+            <p>Set up a recurring contribution through Liberapay, the open source and non-profit funding platform.</p>
+            <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Donate</a>
+        </div>
+        <div class="third">
             <i class="fa fa-shopping-cart"></i>
             <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
-        </div>
-    </section>
-
-    <div class="grid">
-        <div class="two-thirds">
-            <img alt="Bountysource" src="images/open-source/bountysource.svg">
-            <p>Bountysource puts funds directly in the hands of developers by rewarding them for committing fixes or creating new features. Set a bounty on the issues that matter to you most or fund a specific app. You can also set up a recurring subscription. <a class="read-more" href="https://github.com/bountysource/frontend/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener">Learn More</a></p>
-
-            <div class="actions">
-                <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=">Bountied Bugs</a>
-                <a class="button flat suggested-action" href="https://www.bountysource.com/teams/elementary">BountySource</a>
-            </div>
         </div>
     </div>
 </section>
@@ -195,8 +198,25 @@
         <div class="whole">
             <div class="actions">
                 <a class="button flat suggested-action" href="https://github.com/elementary" target="_blank" rel="noopener">Browse Our Code</a>
+            </div>
+        </div>
+        <div class="third">
+            <h3>Report issues</h3>
+            <p>Help out by tracking down issues and reporting them, or by clarifying and cleaning up existing issues. <a class="read-more" href="/docs/code/reference#reporting-bugs" target="_blank" rel="noopener">Learn More</a></p>
+        </div>
+        <div class="third">
+            <h3>Fix issues</h3>
+            <p>Contribute to elementary OS by fixing issues, improving functionality or by implementing new features. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
+            <div class="actions">
                 <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bitesize%22&type=" target="_blank" rel="noopener">Bitesized Bugs</a>
                 <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=" target="_blank" rel="noopener">Bountied Bugs</a>
+            </div>
+        </div>
+        <div class="third">
+            <h3>Create apps</h3>
+            <p>Improve the overall elementary OS ecosystem by creating great apps. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
+            <div class="actions">
+                <a class="button flat suggested-action" href="https://developer.elementary.io/" target="_blank" rel="noopener">Publish on AppCenter</a>
             </div>
         </div>
     </div>
