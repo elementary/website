@@ -169,14 +169,6 @@ img.inline + div.inline {
     margin-left: 12px;
 }
 
-.img--cutoff-bottom::after {
-    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-}
-
 .inline-tweet {
     color: inherit;
 }
@@ -1375,4 +1367,46 @@ i.fa.fa-close.close-modal {
     .flex-row .flex-column p {
         text-align: left;
     }
+}
+
+/**********************
+* Learning the basics *
+***********************/
+
+.annotated {
+    margin: 1.5em auto;
+}
+
+.annotated ol {
+    padding: 0;
+    display: flex;
+}
+
+.annotated li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.annotated li:first-child {
+    text-align: left;
+}
+
+.annotated li:last-child {
+    text-align: right;
+}
+
+.annotated li span {
+    position: relative;
+}
+
+.annotated li span::before {
+    content: "|";
+    position: absolute;
+    left: 50%;
+    top: 0.9em;
+}
+
+.docs .annotated img {
+    margin: 0;
 }
