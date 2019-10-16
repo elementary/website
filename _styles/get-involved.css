@@ -81,13 +81,18 @@ section {
         0 5px 10px -2px rgba(235, 178, 41, 0.5);
 }
 
-#funding .third > img {
-    margin: -4px; /* Fix some issue to match i.fa */
+#funding i,
+#funding img.logo {
+    display: block;
+    font-size: 48px;
+    height: 48px;
+    margin: 0 auto;
 }
 
-#funding .two-thirds > img {
-    height: 48px;
-    margin: -12px;
+#funding .third i,
+#funding .third img.logo {
+    font-size: 32px;
+    height: 32px;
 }
 
 #paypalform {
