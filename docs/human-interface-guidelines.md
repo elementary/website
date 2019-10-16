@@ -616,7 +616,7 @@ Like text button labels, a tooltip should clearly describe what will happen when
 
 ##### Keyboard Shortcuts {#tool-buttons-tooltips-keyboard-shortcuts}
 
-If a button has a related keyboard shortcut that will perform the same action, its tooltip should include the shortcut. See `Granite.markup_accel_tooltip ()` for specifics.
+If a button has a related keyboard shortcut that will perform the same action, its tooltip should include the shortcut. See [`Granite.markup_accel_tooltip ()`](https://valadoc.org/granite/Granite.markup_accel_tooltip.html) for specifics.
 
 ### Text Buttons {#text-buttons}
 
