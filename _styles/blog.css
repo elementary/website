@@ -7,9 +7,6 @@
         width: 33.33%;
     }
 }
-#whats-new {
-    display: flex;
-}
 #whats-new .featured {
     border-radius: 0.5rem;
     color: inherit;
