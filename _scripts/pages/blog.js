@@ -27,7 +27,10 @@ jQuery.then(($) => {
                 postContents += '<div class="author">'
                 postContents += '<span class="name">' + post.author.name + '</span>'
                 postContents += '</div>'
-                postContents += '<time class="post-date" datetime="' + post.pubDate + '">' + post.pubDate + '</time>'
+                var date_js = new Date(post.pubDate)
+                var date_options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }
+                var date_nice = date_js.toLocaleDateString('en-US', date_options)
+                postContents += '<time class="post-date" datetime="' + post.pubDate + '">' + date_nice + '</time>'
                 postContents += '<span class="read-time" title="Estimated read time">'
                 postContents += post.read_time
                 postContents += '</span>'
