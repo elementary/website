@@ -11,14 +11,14 @@ Project Organization
 ====================
 
 * **Issues** for individual actionable items, or bugs i.e.:
-  * Design home page
-  * Implement home page
-  * Add payment form
-  * Fix link to Wired article
+  * Design home page.
+  * Implement home page.
+  * Add payment form.
+  * Fix link to Wired article.
 * **Milestones** for "releases" or overall steps, i.e.:
-  * Single-page site
-  * User Documentation
-  * Journal
+  * Single-page site.
+  * User Documentation.
+  * Journal.
 * **Reviews** Do all work in branches, then submit pull requests for review when ready
   * No dummy content in master, ever.
   * Small diff is best diff.
