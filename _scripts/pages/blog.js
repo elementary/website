@@ -9,9 +9,9 @@ jQuery.then(($) => {
     $(function () {
         $.getJSON('https://blog.elementary.io/feed.json', function (data) {
             var blogContents = ''
+            blogContents += '<div class="blog-container" style="display:flex">'
             $.each(data.posts, function (n, post) {
                 var postContents = ''
-                postContents += '<div class="blog-container" style="display:flex">'
                 postContents += '<a class="featured with-image" href="' + post.url + '">'
                 postContents += '<div class="featured-image" alt="Featured image" style="background-image: url(' + post.image + ');"></div>'
                 postContents += '<header>'
@@ -34,9 +34,9 @@ jQuery.then(($) => {
                 postContents += '</div>'
                 postContents += '</header>'
                 postContents += '</a>'
-                postContents += '</div>'
                 blogContents += postContents
             })
+            blogContents += '</div>'
             $('#whats-new').append(blogContents)
         })
 
