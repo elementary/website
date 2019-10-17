@@ -11,6 +11,7 @@ jQuery.then(($) => {
             var blogContents = ''
             $.each(data.posts, function (n, post) {
                 var postContents = ''
+                postContents += '<div class="blog-container" style="display:flex">'
                 postContents += '<a class="featured with-image" href="' + post.url + '">'
                 postContents += '<div class="featured-image" alt="Featured image" style="background-image: url(' + post.image + ');"></div>'
                 postContents += '<header>'
@@ -33,9 +34,10 @@ jQuery.then(($) => {
                 postContents += '</div>'
                 postContents += '</header>'
                 postContents += '</a>'
+                postContents += '</div>'
                 blogContents += postContents
             })
-            $('#whats-new').html(blogContents)
+            $('#whats-new').append(blogContents)
         })
 
         console.log('Loaded blog.js')
