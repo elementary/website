@@ -43,14 +43,14 @@
     background-origin: border-box;
     background-position: 50%;
     background-size: cover;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,0.05),
-        inset 0 1px 0 0 rgba(255,255,255,0.2),
-        inset 0 -1px 0 0 rgba(255,255,255,0.1),
-        0 1px 3px rgba(0,0,0,0.05),
-        0 1px 2px rgba(0,0,0,0.1);
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.05),
+        0 1px 2px rgba(0, 0, 0, 0.1);
     display: inline-block;
     height: 320px;
     margin-bottom: 1rem;
@@ -97,7 +97,7 @@
     margin-bottom: 1em;
 }
 
-#whats-new .featured header h2+h3 {
+#whats-new .featured header h2 + h3 {
     font-family: "Open Sans", "Noto Sans", "Roboto", "Droid Sans", sans-serif;
     font-size: 0.9rem;
     font-weight: normal;
@@ -138,12 +138,12 @@
     content: "";
     border-radius: 50%;
     box-shadow:
-        inset 0 0 0 1px rgba(0,0,0,0.35),
-        inset 0 0 0 2px rgba(255,255,255,0.1),
-        inset 0 2px 0 0 rgba(255,255,255,0.45),
-        inset 0 -2px 0 0 rgba(255,255,255,0.15),
-        0 1px 3px 0 rgba(0,0,0,0.12),
-        0 1px 2px 0 rgba(0,0,0,0.24);
+        inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+        inset 0 2px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -2px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.24);
     height: 100%;
     position: absolute;
     width: 100%;
