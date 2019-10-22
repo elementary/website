@@ -1,4 +1,4 @@
-![The New Elementary!](_images/brand/logotype.png)
+![The New elementary.io](_images/brand/logotype.png)
 ================
 
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=10548672)](https://www.bountysource.com/trackers/10548672-elementary-website)
