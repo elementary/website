@@ -470,7 +470,7 @@ div.icons-container.small-screen {
 }
 
 .dialog .content-area {
-    width: calc(100% - 48px - 12px); /* Subtract icon width and right margin */
+    width: calc(100% - 48px - 18px); /* Subtract icon width and right margin */
 }
 
 .guide {
