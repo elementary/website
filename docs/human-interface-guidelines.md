@@ -453,6 +453,8 @@ The secondary text provides a more detailed description of the situation and des
 
 Make both the primary and secondary text selectable. This makes it easy for the user to copy and paste the text to another window, such as an email message.
 
+Please refer to [`Granite.MessageDialog`](https://valadoc.org/granite/Granite.MessageDialog.html). It is preferred as an elementary OS styled dialog that follows elementary OS design conventions.
+
 ### Button Order {#button-order}
 
 ![Button Order](/images/docs/human-interface-guidelines/dialogs/button-order.png)
