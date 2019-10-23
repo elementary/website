@@ -792,6 +792,36 @@ select,
     transition: all 100ms ease-in;
 }
 
+
+button,
+select,
+.button {
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+}
+
+@media (prefers-color-scheme: dark) {
+     button.target-amount,  select,  input.button {
+        background-color: #505559;
+        color: #d4d4d4;  
+        box-shadow:0px 0px 6px 0 #101010;
+    }
+     div {
+        vertical-align:center;
+        color: #d4d4d4;
+    }
+     button.checked, input.target-amount:focus{
+        background-color: rgba(0,0,0,.05);
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .05), 0 1px 0 0 rgba(255, 255, 255, .3);
+    }
+
+    button, select, .button {
+        box-shadow: none;
+    }
+}
+
+
 button,
 .button {
     display: inline-block;
@@ -829,6 +859,17 @@ button.suggested-action,
     border-color: #337cac;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  button.suggested-action,
+  .button.suggested-action {
+      background-image: linear-gradient(to bottom, #4ca7e4, #328ecc);
+      border-color: #337cac;
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  }
+
 }
 
 .button.flat {
