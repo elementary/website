@@ -97,7 +97,7 @@ Promise.all([jQuery, Payment]).then(([$, Payment]) => {
                 }
 
                 payment.checkout(value, 'USD')
-                .then(([token]) => processPayment(value, token))
+                    .then(([token]) => processPayment(value, token))
             }
         })
     })

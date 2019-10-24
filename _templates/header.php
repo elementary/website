@@ -76,7 +76,7 @@ $l10n->begin_html_translation();
         <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
 
         <?php foreach ($page['styles'] as $style) { ?>
@@ -84,28 +84,6 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <?php if ($trackme === true && $config['sentry_pub']) {
-            # Curiously enough, the only thing that went through the mind of the developer
-            # as he wrote inline javascript was "Oh no, not again." Many people have speculated
-            # that if we knew exactly why the developer had thought that, we would know a
-            # lot more about the nature of the code than we do now. ~ Douglas Adams
-        ?>
-        <script src="https://cdn.jsdelivr.net/gh/getsentry/raven-js@3/dist/raven.min.js"></script>
-        <script>
-            console.log('Sentry loaded')
-
-            window.Raven.setRelease('<?php echo $config['release_version'] ?>')
-            window.Raven.config('<?php echo $config['sentry_pub'] ?>').install()
-
-            window.onunhandledrejection = function (e) {
-                console.error('Unhandled promise rejection')
-                console.error(e.reason)
-
-                window.Raven.captureException(e.reason)
-            }
-        </script>
-        <?php } ?>
-
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
 
@@ -136,9 +114,10 @@ $l10n->begin_html_translation();
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
-                    <li><a href="https://developer.elementary.io">Developer</a></li>
+                    <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
                     <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
+                    <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
                     <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
                     <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                     <?php } ?>
@@ -146,7 +125,6 @@ $l10n->begin_html_translation();
                 <ul class="right">
                     <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://medium.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Medium"><i class="fab fa-medium-m"></i></a></li>
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="Stack Exchange"><i class="fab fa-stack-exchange"></i></a></li>
                     <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fab fa-twitter"></i></a></li>

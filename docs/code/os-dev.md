@@ -102,6 +102,8 @@ If Gala doesn't start, you can reinstall the latest stable version by running `s
 
 ## Debug logs {#debug-logs}
 
+### Adding logs {#adding-logs}
+
 One way to debug applications is logging information in the code. This enables seeing what code was run and what the value of variables where.
 
 Example:
@@ -120,13 +122,36 @@ debug("Person: %s %i", name, age);
 
 The first argument is the message which is formatted like `printf`. This means that it can include "format specifiers" which can be replaced by the remaining arguments you pass to the function. The `%s` for example can be replaced by a string, the `%i` by an integer. [More info](http://www.cplusplus.com/reference/cstdio/printf/).
 
-By default these messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to the log domain you're interested in. Usually you'll set it to `all` to log everything. [More info](https://developer.gnome.org/glib/stable/glib-running.html).
+### Retrieving logs {#retrieving-logs}
 
-Example:
+By default debug messages are not shown. To see them you need to set the `G_MESSAGES_DEBUG` environment variable to the log domain you're interested in.
+[More info on environmental variables](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps)
+Usually you'll set it to `all` to log everything. [More info on Running and debugging GLib Applications](https://developer.gnome.org/glib/stable/glib-running.html).
+
+Run your application with debugging enabled:
 ```
-G_MESSAGES_DEBUG=all ./Application
+G_MESSAGES_DEBUG=all <app>
+```
+Run the elementary OS calendar app with debugging enabled:
+```
+G_MESSAGES_DEBUG=all io.elementary.calendar
 ```
 
 [More information on message logging](https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-log).
 
 To view logs from all your applications you can use `journalctl`. [More info](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs).
+
+## Inspecting crashes {#inspecting-crashes}
+
+The [GNU Project Debugger (gdb)](https://www.gnu.org/software/gdb/) is a general purpose debugger, but we're mostly going to focus on getting useful information when an application crashes.
+1. Open an application in gdb, for example AppCenter by running:
+    ```
+    gdb io.elementary.appcenter
+    ```
+2. Now run this application by typing `run` and pressing enter.
+3. If the application doesn't crash right away try reproducing the crash.
+4. Get more information by typing `backtrace` and pressing enter.
+5. Please share the lines after `(gdb) backtrace`, those should provide useful information.
+
+For more information see the manpages by running: `man gdb`.
+Another tutorial: [Debugging with GDB](https://betterexplained.com/articles/debugging-with-gdb/)

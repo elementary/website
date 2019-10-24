@@ -21,7 +21,7 @@ Project Organization
   * Journal
 * **Reviews** Do all work in branches, then submit pull requests for review when ready
   * No dummy content in master, ever.
-  * small diff is best diff
+  * Small diff is best diff.
   * The reviewer is the gatekeeper. Be kind of a dick.
 
 

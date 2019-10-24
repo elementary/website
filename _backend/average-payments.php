@@ -15,8 +15,7 @@ function LastError($db) {
     if (getenv('PHPENV') !== 'production') {
         echo $Error;
     } else {
-        error_log($Error);
-        $sentry->captureMessage($Error);
+        log_echo($Error);
     }
     exit;
 }
