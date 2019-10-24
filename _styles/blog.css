@@ -1,14 +1,5 @@
 /* Featured Blocks */
 
-@media (min-width: 800px) {
-    #whats-new .featured {
-        display: inline-block;
-        padding: 1rem;
-        vertical-align: top;
-        width: 33.33%;
-    }
-}
-
 #whats-new .featured {
     border-radius: 0.5rem;
     color: inherit;
@@ -20,23 +11,16 @@
     transition: background-color 250ms ease, color 250ms ease;
 }
 
-/* Featured Blocks with Images */
-
 @media (min-width: 800px) {
-    #whats-new .featured .featured-image {
-        height: 200px;
-        margin-bottom: 0.5rem;
-        width: 100%;
-        width: calc(66.66% - 0.66rem);
+    #whats-new .featured {
+        display: inline-block;
+        padding: 1rem;
+        vertical-align: top;
+        width: 33.33%;
     }
 }
 
-@media (min-width: 600px) {
-    #whats-new .featured .featured-image {
-        margin-bottom: 0;
-        width: 50%;
-    }
-}
+/* Featured Blocks with Images */
 
 #whats-new .featured .featured-image {
     background-color: #fafafa;
@@ -60,25 +44,23 @@
     width: 100%;
 }
 
-/* Featured Headers */
-
 @media (min-width: 800px) {
-    #whats-new .featured header {
-        font-size: 0.8rem;
-        padding: 0;
+    #whats-new .featured .featured-image {
+        height: 200px;
+        margin-bottom: 0.5rem;
         width: 100%;
-    }
-
-    #whats-new .featured header h3 {
-        margin-top: -1em;
+        width: calc(66.66% - 0.66rem);
     }
 }
 
 @media (min-width: 600px) {
-    #whats-new .featured header {
+    #whats-new .featured .featured-image {
+        margin-bottom: 0;
         width: 50%;
     }
 }
+
+/* Featured Headers */
 
 #whats-new .featured header {
     display: inline-block;
@@ -104,6 +86,24 @@
     margin-top: -1.5em;
     margin-bottom: 1em;
     opacity: 0.5;
+}
+
+@media (min-width: 800px) {
+    #whats-new .featured header {
+        font-size: 0.8rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    #whats-new .featured header h3 {
+        margin-top: -1em;
+    }
+}
+
+@media (min-width: 600px) {
+    #whats-new .featured header {
+        width: 50%;
+    }
 }
 
 /* Bylines */
