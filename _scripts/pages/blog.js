@@ -7,7 +7,7 @@ import jQuery from '~/lib/jquery'
 
 jQuery.then(($) => {
     $(function () {
-        $.getJSON('https://blog.elementary.io/feed.json', function (data) {
+        $.getJSON('https://blog.elementary.io/feed/updates.json', function (data) {
             var blogContents = ''
             blogContents += '<div class="blog-container" style="display:flex">'
             $.each(data.posts, function (n, post) {
