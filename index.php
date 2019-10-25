@@ -8,11 +8,13 @@
     $page['scripts'] = array(
         'scripts/slingshot.js',
         'scripts/download.js',
+        'scripts/blog.js',
         'scripts/showcase.run.js'
     );
 
     $page['styles'] = array(
         'styles/home.css',
+        'styles/blog.css',
         'styles/pantheon.css'
     );
 
