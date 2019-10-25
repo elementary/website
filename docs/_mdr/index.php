@@ -2,6 +2,8 @@
 
 require_once __DIR__.'/settings.php';
 
+use ParsedownExtra;
+
 if (
     is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
