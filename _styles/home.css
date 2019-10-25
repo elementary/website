@@ -114,11 +114,8 @@ input:focus + .focus-reveal {
         color: #d4d4d4;
         margin-top: 0.9em;
     }
-    .target-amount::placeholder {
+    #amount-custom::placeholder {
         color: #d4d4d4;
-    }
-    .target-amount::placeholder:focus {
-        color: #939393;
     }
 }
 
