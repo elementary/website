@@ -9,7 +9,7 @@ jQuery.then(($) => {
     $(function () {
         $.getJSON('https://blog.elementary.io/feed/updates.json', function (data) {
             var blogContents = ''
-            blogContents += '<div class="blog-container" style="display:flex">'
+            blogContents += '<div class="blog-container">'
             $.each(data.posts, function (n, post) {
                 var postContents = ''
                 postContents += '<a class="featured with-image" href="' + post.url + '">'
