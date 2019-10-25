@@ -64,7 +64,6 @@
         height: 200px;
         margin-bottom: 0.5rem;
         width: 100%;
-        width: calc(66.66% - 0.66rem);
     }
 }
 
