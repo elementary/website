@@ -349,7 +349,7 @@ There are various logging methods to use and here are some sample references for
 
 ## Critical {#critical}
 
-Critical log level is used when there is a severe application failure that causes premature termination and should be investigated immediately.
+Critical log level is used when there is a severe application failure that should be investigated immediately.
 
 ```vala
 public static int main (string[] args) {
@@ -381,7 +381,7 @@ public static int main (string[] args) {
 
 ## Error {#error}
 
-Error log level includes logs for runtime errors or unexpected conditions. These errors are immediately visible on a status console.
+Error log level includes logs for runtime errors or unexpected conditions. These errors are immediately visible on a status console and causes premature termination. 
 
 ```vala
 public static int main (string[] args) {
