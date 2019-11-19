@@ -130,7 +130,7 @@ AppCenter includes updates for apps and the operating system itself under the **
 
 ## System Settings {#system-settings}
 
-elementary OS comes with the "System Settings" app that lets you manage settings and preferences for your device. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
+elementary OS comes with the "System Settings" app that helps you manage settings and preferences for your device. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
 ![System Settings](../images/docs/learning-the-basics/switchboard.png)
 
