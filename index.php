@@ -34,7 +34,7 @@
 
             <div class="section__showcase">
                 <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5 Juno desktop" />
+                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5.1 Hera desktop" />
             </div>
 
             <div class="section__detail grid">
