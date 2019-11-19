@@ -77,23 +77,23 @@ export default class Payment {
      */
     checkout (amount, currency) {
         return Promise.all([config, Stripe])
-        .then(([config, stripe]) => {
-            return new Promise((resolve) => {
-                stripe.open(es6Object.assign(this.user, {
-                    token: (token, opts) => resolve([token, opts]),
+            .then(([config, stripe]) => {
+                return new Promise((resolve) => {
+                    stripe.open(es6Object.assign(this.user, {
+                        token: (token, opts) => resolve([token, opts]),
 
-                    key: config.keys.stripe,
-                    name: 'elementary, Inc.',
-                    description: this.description,
-                    locale: this.language,
+                        key: config.keys.stripe,
+                        name: 'elementary, Inc.',
+                        description: this.description,
+                        locale: this.language,
 
-                    bitcoin: false,
-                    alipay: false,
+                        bitcoin: false,
+                        alipay: false,
 
-                    currency,
-                    amount
-                }))
+                        currency,
+                        amount
+                    }))
+                })
             })
-        })
     }
 }

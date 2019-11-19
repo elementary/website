@@ -8,16 +8,20 @@
     $page['scripts'] = array(
         'scripts/slingshot.js',
         'scripts/download.js',
+        'scripts/blog.js',
         'scripts/showcase.run.js'
     );
 
     $page['styles'] = array(
         'styles/home.css',
+        'styles/blog.css',
         'styles/pantheon.css'
     );
 
     include $template['header'];
     include $template['alert'];
+
+    $already_paid = (os_payment_getcookie($config['release_version']) > 0);
 ?>
 
         <section class="section--hero section--stretched">
@@ -37,13 +41,8 @@
                 <div class="whole">
                     <div id="amounts">
                         <?php
-                            $already_paid = (os_payment_getcookie($config['release_version']) > 0);
-                            if ($already_paid) {
+                            if (!$already_paid) {
                         ?>
-                        <div id="choice-buttons">
-                            <input type="hidden" id="amount-twenty" value="0">
-                        </div>
-                        <?php } else { ?>
                         <h4 id="pay-what-you-want">Pay What You Want:</h4>
                         <div id="choice-buttons">
                             <button id="amount-ten"    value="10" class="small-button payment-button target-amount">10</button>
@@ -55,12 +54,44 @@
                                 <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
                             </div>
                         </div>
-                        <?php } ?>
+                        <?php
+                            }
+                        ?>
                         <div class="column">
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
-                            <p class="small-label"> elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> |  <?php echo $config['release_size']; ?> (for PC or Mac)</p>
+                            <p class="small-label">
+                                elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?><br>
+                                <?php echo $config['release_size']; ?> | 64-bit
+                            </p>
                         </div>
                         <div style="clear:both;"></div>
+
+                        <?php
+                            if (!$already_paid) {
+                        ?>
+                        <div id="payment-trust">
+                            <img src="images/icons/mimes/24/payment-card-visa.svg" alt="Visa" title="Visa cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-mastercard.svg" alt="Mastercard" title="Mastercard cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-discover.svg" alt="Discover" title="Discover cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-amex.svg" alt="American Express" title="American Express cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-diners-club.svg" alt="Diner's Club" title="Diner's Club cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-jcb.svg" alt="JCB" title="JCB cards accepted" />
+                            <img src="images/icons/mimes/24/payment-card-unionpay.svg" alt="UnionPay" title="UnionPay cards accepted" />
+                            <p class="small-label text-center">Payments processed & secured by <a href="https://stripe.com"><i class="fab fa-stripe"><span>Stripe</span></i></a></p>
+                        </div>
+                        <?php
+                            }
+                        ?>
+
+                        <?php
+                            if ($already_paid) {
+                        ?>
+                        <div id="choice-buttons">
+                            <input type="hidden" id="amount-twenty" value="0">
+                        </div>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -69,8 +100,8 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h2>What’s New in elementary OS 5.1 Hera</h2>
-                    <h4>A major update on a solid foundation. Featuring a brand new installer, a completely redesigned login and lockscreen greeter, a new onboarding experience, major System Settings updates, improved apps, and desktop refinements.</h4>
-                    <a href="https://medium.com/elementaryos" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                    <h4>A major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</h4>
+                    <a href="https://blog.elementary.io" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
@@ -100,7 +131,7 @@
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
-                    <img src="images/icons/apps/128/system-software-install.svg" />
+                    <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
                     <h1>Get it on <span>AppCenter</span></h1>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <div class="buttons">
@@ -187,19 +218,19 @@
                 <div id="showcase-index">
                     <div>
                         <h2>Apps You Need, Without Ones You Don’t.</h2>
-                        <p>elementary OS comes with a carefully considered set of apps that cater to every day needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+                        <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
                     </div>
                     <ul id="showcase-grid">
-                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" />Music</li></a>
-                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" />Epiphany</li></a>
-                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" />Mail</li></a>
-                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" />Photos</li></a>
-                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" />Videos</li></a>
-                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" />Calendar</li></a>
-                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" />Files</li></a>
-                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" />Terminal</li></a>
-                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" />Code</li></a>
-                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" />Camera</li></a>
+                        <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music app icon"/>Music</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" alt="Browser app icon"/>Epiphany</li></a>
+                        <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" alt="Email app icon"/>Mail</li></a>
+                        <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photo app icon"/>Photos</li></a>
+                        <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" alt="Video app icon"/>Videos</li></a>
+                        <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" alt="Calendar app icon"/>Calendar</li></a>
+                        <a href="#showcase-files"><li class="read-more"><img src="images/icons/apps/64/system-file-manager.svg" alt="File manager app icon"/>Files</li></a>
+                        <a href="#showcase-terminal"><li class="read-more"><img src="images/icons/apps/64/utilities-terminal.svg" alt="Terminal app icon"/>Terminal</li></a>
+                        <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code editor app icon"/>Code</li></a>
+                        <a href="#showcase-camera"><li class="read-more"><img src="images/icons/apps/64/accessories-camera.svg" alt="Camera app icon"/>Camera</li></a>
                     </ul>
                 </div>
                 <div class="showcase-tab" id="showcase-music">
@@ -359,7 +390,7 @@
                         <?php include('images/pantheon/actions/system-search.svg'); ?>
                         Applications
                     </div>
-                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg'></div>
+                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg' alt=""></div>
                     <div class="slingshot">
                         <div class="linked">
                             <div id="slingshot-grid-button" class="button active">
@@ -419,8 +450,8 @@
                 <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
                 <div class="app-display__description">
                     <h2>
-                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" />
-                        Screen Time &amp; Limits
+                        <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding hand the hand of a child"/>
+                        Parental Controls
                     </h2>
                     <h4>Implement parental controls or manage your own digital wellbeing.</h4>
                     <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h3>Screen Time</h3>
@@ -474,7 +505,7 @@
             </div>
         </section>
         <section class="cta">
-            <img src="images/icons/places/128/distributor-logo.svg">
+            <img src="images/icons/places/128/distributor-logo.svg" alt="elementary OS logo">
             <h2>Download elementary OS</h2>
             <h4><?php echo $sitewide['description']; ?></h4>
 

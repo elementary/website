@@ -3,14 +3,16 @@
 language: php
 
 php:
-    - "7.0"
+    - "7.2"
+    - "7.3"
 
 before_script:
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm install 6'"
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; npm install'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm install 12'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; npm install'"
 
 script:
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/css.sh'"
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 6; sh ./_tests/javascript.sh'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; sh ./_tests/css.sh'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; sh ./_tests/javascript.sh'"
     - "sh ./_tests/php.sh"
     - "php ./_tests/translations.php"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; npm run build'"

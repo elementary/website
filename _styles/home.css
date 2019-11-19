@@ -61,6 +61,16 @@ input:focus + .focus-reveal {
     transition: 250ms all;
 }
 
+#payment-trust i {
+    font-size: 2.5em;
+    padding: 0 0.05em;
+    vertical-align: middle;
+}
+
+#payment-trust i span {
+    font-size: 0;
+}
+
 #download {
     margin: 3px auto 6px;
 }
@@ -124,11 +134,12 @@ input:focus + .focus-reveal {
 }
 
 .section--hero .section__showcase img:not(.bg) {
-    height: 77%;
+    height: 78%;
     left: 50%;
     position: absolute;
     top: 2%;
     transform: translateX(-50%);
+    border-radius: 4px;
 }
 
 /***********************
@@ -359,9 +370,9 @@ input:focus + .focus-reveal {
 #whats-new::before {
     background-color: #667885;
     background-image:
-        url("/images/brand/logomark-white.svg"),
+        url("../images/brand/logomark-white.svg"),
         linear-gradient(to bottom, rgba(72, 90, 108, 0.25), rgba(39, 52, 69, 0.75)),
-        url("/images/home/wallpaper.jpg");
+        url("../images/home/wallpaper.jpg");
     background-size:
         contain,
         cover,
@@ -456,7 +467,7 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 2px;
@@ -492,7 +503,7 @@ input:focus + .focus-reveal {
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
     border-radius: 2px;
-    background-image: url('/images/screenshots/desktop.jpg');
+    background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 12%;

@@ -14,7 +14,7 @@
     "Choose your current Operating System": "选择您当前的操作系统",
     "Select the operating system you are currently using to view tailored installation instructions.": "选择您目前用于浏览安装指南的操作系统。",
     "Windows": "Windows",
-    "macOS": "macOS",
+    "macOS": "macOS 系统",
     "Ubuntu": "Ubuntu",
     "Creating an Install Drive": "创建安装介质",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.": "你将需要一个至少 2 GB 大的 U 盘和一个 U 盘启动制作软件 Rufus。",
