@@ -101,7 +101,7 @@
                 <div class="two-thirds">
                     <h2>What’s New in elementary OS 5.1 Hera</h2>
                     <h4>A major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</h4>
-                    <a href="https://blog.elementary.io" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                    <a href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
