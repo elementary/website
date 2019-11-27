@@ -295,7 +295,7 @@
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.png" alt="calendar screenshot" />
+                        <img class="app-display__image" src="images/screenshots/calendar.png" srcset="images/screenshots/calendar@2x.png 2x" alt="calendar screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
