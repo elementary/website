@@ -79,11 +79,6 @@ input:focus + .focus-reveal {
     padding-bottom: 64px;
 }
 
-#the-press h4 {
-    font-size: 24px;
-    opacity: 0.65;
-}
-
 #the-press svg {
     display: block;
     height: 4em;
@@ -1222,14 +1217,14 @@ span.results-title {
     color: #8cd5ff;
 }
 
-#privacy h3 svg {
+#privacy h4 svg {
     fill: white;
     height: 1em;
     margin-right: 0.25em;
-    transform: scale(1.5);
-    vertical-align: bottom;
+    transform: scale(1.25);
+    vertical-align: middle;
 }
 
-#privacy h3 svg * {
+#privacy h4 svg * {
     fill: inherit;
 }
