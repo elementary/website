@@ -79,7 +79,7 @@
     <div class="third">
         <h3>News &amp; Announcements</h3>
         <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our official blog.</p>
-        <a class="button" href="https://blog.elementary.io/" target="_blank" rel="noopener">Visit Blog</a>
+        <a class="button" href="https://blog.elementary.io/" target="_blank" rel="noopener">Visit Our Blog</a>
     </div>
 
     <div class="third">
