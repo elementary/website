@@ -77,22 +77,18 @@
     width: 100%;
 }
 
-#whats-new .featured header h2 {
+#whats-new .featured header h4 {
     margin-top: 0;
 }
 
-#whats-new .featured header h2 {
-    font-size: 1.5em;
+#whats-new .featured header h4 {
     margin-bottom: 1em;
 }
 
-#whats-new .featured header h2 + h3 {
-    font-family: "Open Sans", "Noto Sans", "Roboto", "Droid Sans", sans-serif;
-    font-size: 0.9rem;
-    font-weight: normal;
-    margin-top: -1.5em;
+#whats-new .featured header h4 + p {
+    margin-top: -1.25em;
     margin-bottom: 1em;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 @media (min-width: 600px) {
@@ -103,7 +99,6 @@
 
 @media (min-width: 800px) {
     #whats-new .featured header {
-        font-size: 0.8rem;
         padding: 0;
         width: 100%;
     }
