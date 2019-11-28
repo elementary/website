@@ -44,15 +44,7 @@ include $template['alert'];
 
                 <div class="member">
                     <div class="member_photo" style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
-
-                    <h5 class="member_name" data-l10n-off="1">
-                        <?php echo $member['name'] ?>
-
-                        <?php if ($member['presence'] == 'active') { ?>
-                            <img class="member_status" title="Online" src="images/team/user-available.svg">
-                        <?php } ?>
-                    </h5>
-
+                    <h5 class="member_name" data-l10n-off="1"><?php echo $member['name'] ?></h5>
                     <span class="member_title" data-l10n-off="1"><?php echo $member['profile']['title'] ?></span>
                     <span class="member_time"><?php echo $member['tz_label'] ?></span>
                 </div>
@@ -75,15 +67,7 @@ include $template['alert'];
 
                 <div class="member">
                     <div class="member_photo" style="background-image:url(<?php echo $member['profile']['image_192'] ?>)"></div>
-
-                    <h5 class="member_name" data-l10n-off="1">
-                        <?php echo $member['name'] ?>
-
-                        <?php if ($member['presence'] == 'active') { ?>
-                            <img class="member_status" title="Online" src="images/team/user-available.svg">
-                        <?php } ?>
-                    </h5>
-
+                    <h5 class="member_name" data-l10n-off="1"><?php echo $member['name'] ?></h5>
                     <span class="member_title" data-l10n-off="1"><?php echo $member['profile']['title'] ?></span>
                     <span class="member_time"><?php echo $member['tz_label'] ?></span>
                 </div>
