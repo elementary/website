@@ -84,27 +84,27 @@ h1 .logotype-svg {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 300;
     margin: 0 0 16px;
     padding: 0;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 600;
     opacity: 0.8;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 1.25em;
+    font-weight: 400;
     margin-bottom: 16px;
     margin-top: 16px;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     margin-bottom: 3px;
     margin-top: 0;
