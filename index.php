@@ -453,12 +453,11 @@
                         <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding hand the hand of a child"/>
                         Parental Controls
                     </h2>
-                    <h4>Implement parental controls or manage your own digital wellbeing.</h4>
-                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h3>Screen Time</h3>
+                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
                     <p>Set per-user time limits for weekdays, weekends, or both.</p>
-                    <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h3>Internet Use</h3>
+                    <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
                     <p>Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.</p>
-                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h3>Manage Apps</h3>
+                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
                     <p>Choose just which apps are safe for your child to access. Plus, optionally allow access with your password.</p>
                 </div>
             </div>
