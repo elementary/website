@@ -34,7 +34,7 @@
 
             <div class="section__showcase">
                 <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5 Juno desktop" />
+                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5.1 Hera desktop" />
             </div>
 
             <div class="section__detail grid">
@@ -99,9 +99,9 @@
         <section id="whats-new" class="grey">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>What’s New in elementary OS 5 Juno</h2>
-                    <p>Majorly updated apps. All-new Code. Night Light. Picture-in-Picture. More productive window management and tiling. Shortcut Overlay. Color emoji 🎉. And a ton more.</p>
-                    <a href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                    <h2>What’s New in elementary OS 5.1 Hera</h2>
+                    <p>A major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</p>
+                    <a href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
@@ -453,7 +453,7 @@
                         <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding hand the hand of a child"/>
                         Parental Controls
                     </h2>
-                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Time Limits</h4>
+                    <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
                     <p>Set per-user time limits for weekdays, weekends, or both.</p>
                     <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
                     <p>Manage allowed websites. Rules affect all apps for the user, even if they use a different web browser.</p>

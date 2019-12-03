@@ -295,7 +295,7 @@ input:focus + .focus-reveal {
 #showcase.initialized {
     background-color: rgb(44, 35, 52);
     background-image:
-        linear-gradient(to bottom, rgba(44, 35, 52, 0.8), rgba(70, 31, 23, 0.5)),
+        linear-gradient(to bottom, rgba(46, 38, 49, 0.8), rgba(11, 18, 21, 0.5)),
         url("../images/home/wallpaper.jpg");
     background-position: top;
     background-size: cover;
@@ -1157,6 +1157,10 @@ span.results-title {
     text-align: left;
 }
 
+#parental-controls .app-display__description h3 {
+    margin-bottom: 0;
+}
+
 #parental-controls .app-display__description p {
     margin-left: 24px;
 }
@@ -1168,7 +1172,7 @@ span.results-title {
 
 #parental-controls .app-display__description svg {
     float: left;
-    margin: 4px 6px 4px 0;
+    margin: 1em 0.5em 1em 0;
 }
 
 #parental-controls .app-display__description svg,

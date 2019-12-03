@@ -208,16 +208,16 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "»";
+    content: "→";
     display: inline-block;
     font-style: normal;
     font-weight: inherit;
-    padding-left: 6px;
+    padding-left: 3px;
     transition: transform 0.15s ease-in-out;
 }
 
 .read-more:hover::after {
-    transform: translateX(10px);
+    transform: translateX(3px);
 }
 
 .text-left {
