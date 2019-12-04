@@ -42,11 +42,13 @@ body {
     box-sizing: inherit;
 }
 
-::-moz-selection { /* Code for Firefox */
+/* Code for old Firefox and KaiOS */
+::-moz-selection { 
   color: #fff;
   background: #3995d3;
 }
 
+/* Code for modern browsers */
 ::selection {
   color: #fff;
   background: #3995d3;
