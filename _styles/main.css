@@ -42,6 +42,16 @@ body {
     box-sizing: inherit;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #3995d3;
+}
+
+::selection {
+  color: #fff;
+  background: #3995d3;
+}
+
 /**************
 * Text Styles *
 **************/
