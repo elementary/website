@@ -43,7 +43,7 @@ body {
 }
 
 /* Code for old Firefox and KaiOS */
-::-moz-selection { 
+::-moz-selection {
     color: #fff;
     background: #3995d3;
 }
