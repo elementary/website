@@ -51,7 +51,7 @@ body {
 /* Code for modern browsers */
 ::selection {
     color: #fff;
-    background: #3995d3;
+    background-color: #3995d3;
 }
 
 /**************
