@@ -364,8 +364,14 @@ Now that we have a build system, let's try it out:
     ```
 
     This command tells Meson to get ready to build our app using the prefix "/usr" and that we want to build our app in a clean directory called "build". The `meson` command defaults to installing our app locally, but we want to install our app for all users on the computer.
+    
+2. The content of the "build" directory is specific to your computer and you shouldn't redistribute it by adding it to your `git` repository. You can let `git` know that it should ignore this directory by creating a file called ".gitignore" in the project directory with the following content:
 
-2. Change into the build directory and use `ninja` to build. Then, if the build is successful, install with `sudo ninja install`:
+    ```bash
+    build/
+    ```
+
+3. Change into the build directory and use `ninja` to build. Then, if the build is successful, install with `sudo ninja install`:
 
     ```bash
     cd build
@@ -373,7 +379,7 @@ Now that we have a build system, let's try it out:
     sudo ninja install
     ```
 
-If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.  If you were about to add the "build" folder to your `git` repository and push it, stop! This binary was built for your computer and we don't want to redistribute it. In fact, we built your app in a separate folder like this so that we can easily delete or ignore the "build" folder and it won't mess up our app's source code.
+If all went well, you should now be able to open your app from the Applications Menu and pin it to the Dock.
 
 We'll revisit Meson again later to add some more complicated behavior, but for now this is all you need to know to give your app a proper build system. If you want to explore Meson a little more on your own, you can always check out [Meson's documentation](http://mesonbuild.com/Manual.html).
 
