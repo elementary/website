@@ -40,23 +40,22 @@ jQuery.then(($) => {
                 searchItems += '</div>'
                 $(searchItems).appendTo('.searchthree')
             })
-        });
+        })
 
-
-        const $slingshotGrid = $('#slingshot-grid');
-        const $slingshotCategories = $('#slingshot-categories');
-        const $slingshotCategoriesBtn = $('#slingshot-categories-button');
-        const $slingshotGridButton = $('#slingshot-grid-button');
-        const $slingshotSearch = $('#slingshot-search');
-        const $slingshotClearIcon = $('.slingshot .clear-icon');
-        const $slingshotSearchTerm = $('.slingshot .search-term');
-        const $searchOne = $('.searchone');
-        const $searchTwo = $('.searchtwo');
-        const $searchThree = $('.searchthree');
-        const $slingshotLinked = $('.slingshot .linked');
-        const $slingshotEntry = $('.slingshot .entry');
-        const $slingshotAreas1 = $('.slingshot .clear-icon, .slingshot .search-term, .slingshot-search-results');
-        (function animation() {
+        const $slingshotGrid = $('#slingshot-grid')
+        const $slingshotCategories = $('#slingshot-categories')
+        const $slingshotCategoriesBtn = $('#slingshot-categories-button')
+        const $slingshotGridButton = $('#slingshot-grid-button')
+        const $slingshotSearch = $('#slingshot-search')
+        const $slingshotClearIcon = $('.slingshot .clear-icon')
+        const $slingshotSearchTerm = $('.slingshot .search-term')
+        const $searchOne = $('.searchone')
+        const $searchTwo = $('.searchtwo')
+        const $searchThree = $('.searchthree')
+        const $slingshotLinked = $('.slingshot .linked')
+        const $slingshotEntry = $('.slingshot .entry')
+        const $slingshotAreas1 = $('.slingshot .clear-icon, .slingshot .search-term, .slingshot-search-results')
+        ;(function animation () {
             setTimeout(() => {
                 if ($slingshotGrid.hasClass('active')) {
                     $slingshotGrid.addClass('previous')
@@ -98,8 +97,8 @@ jQuery.then(($) => {
                     $slingshotCategoriesBtn.removeClass('active')
                 }
                 requestAnimationFrame(animation)
-            }, 3000);
-        })();
+            }, 3000)
+        })()
         console.log('Loaded slingshot.js')
     })
 })
