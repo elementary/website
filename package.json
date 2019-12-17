@@ -17,8 +17,9 @@
     "gulp-svgo": "^1.0.3",
     "postcss-cssnext": "^2.11.0",
     "scriptjs": "^2.5.8",
+    "terser-webpack-plugin": "^2.3.0",
     "through2": "^3.0.1",
-    "webpack": "^2.5.1"
+    "webpack": "^4.40.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

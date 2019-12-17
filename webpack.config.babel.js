@@ -11,6 +11,7 @@ import path from 'path'
 
 import glob from 'glob'
 import webpack from 'webpack'
+import TerserPlugin from 'terser-webpack-plugin'
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
 
@@ -59,6 +60,7 @@ export default {
         publicPath: '/scripts',
         sourceMapFilename: '[name].map.js'
     },
+    mode: 'none',
     module: {
         rules: [{
             test: /\.js$/,
@@ -72,28 +74,30 @@ export default {
             }
         }]
     },
+    optimization: {
+        splitChunks: {
+            minChunks: 2,
+            name: 'common', 
+        },
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    compress: true,
+                    mangle: false,
+                    output: {
+                        comments: false
+                    },
+                    sourceMap: true
+                }
+            })
+        ]
+    },
     resolve: {
         alias: {
             '~': path.resolve(__dirname, '_scripts')
         }
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            minChunks: 2
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap: true,
-            mangle: false,
-            compressor: {
-                warnings: false,
-                screw_ie8: true
-            },
-            output: {
-                comments: false
-            }
-        }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')

@@ -198,7 +198,7 @@ gulp.task('styles', () => {
     const dest = 'styles/'
 
     return gulp.src(src, { base })
-    // .pipe(changed(dest))
+    .pipe(changed(dest))
     .pipe(postcss([
         cssnext({ browsers })
     ]))
