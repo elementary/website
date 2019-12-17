@@ -14,6 +14,8 @@ import svgo from 'gulp-svgo'
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
 
+import path from 'path'
+import through from 'through2'
 import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
 
@@ -193,13 +195,19 @@ gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg', 'gif'))
 gulp.task('styles', () => {
     const base = '_styles'
     const src = ['_styles/**/*.css']
-    const dest = 'styles'
+    const dest = 'styles/'
 
     return gulp.src(src, { base })
-    .pipe(changed(dest))
+    // .pipe(changed(dest))
     .pipe(postcss([
         cssnext({ browsers })
     ]))
+    .pipe(through.obj((file, enc, next) => {
+        const {dir, name, ext} = path.parse(file.relative)
+        // Simple cache busting! Adds the date time to the CSS to ensure unique versions of CSS files
+        file.path = path.join(dest, dir, `${name}.${new Date().getTime().toString()}${ext}`)
+        next(null, file)
+    }))
     .pipe(gulp.dest(dest))
 })
 
