@@ -464,7 +464,7 @@ If you're reporting a "Wishlist" issue, like a feature request, a developer may 
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
 
-If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://join.slack.com/t/elementarycommunity/shared_invite/enQtNzk4MTA5Mzc1Mzc5LTUxN2FmNDY3NDE4ZTBiNDAxMzk2Mzg4MTY5OWFkMmEwMDMzNzllZDc1NjE0ZTA1ZTY5OWU4MzE1MGM2NzczYzY). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
+If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://join.slack.com/t/elementarycommunity/shared_invite/enQtODgwNjM4NjgzMjM2LWMwYzc2YWUzODAyMmE4ZjU3NzNlODYwYWJhOGU5ZDA0Zjg5YTU0N2Q1NjM0NGZmZTE3MTg3NGI4YWQ4YTFjMmU). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 
