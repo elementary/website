@@ -11,6 +11,7 @@ import path from 'path'
 
 import glob from 'glob'
 import webpack from 'webpack'
+import ManifestPlugin from 'webpack-manifest-plugin'
 import TerserPlugin from 'terser-webpack-plugin'
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
@@ -57,8 +58,8 @@ export default {
     output: {
         filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'scripts'),
-        publicPath: '/scripts',
-        sourceMapFilename: '[name].map.js'
+        publicPath: 'scripts/',
+        sourceMapFilename: '[name].[chunkhash].map.js'
     },
     mode: 'none',
     module: {
@@ -76,8 +77,13 @@ export default {
     },
     optimization: {
         splitChunks: {
-            minChunks: 2,
-            name: 'common', 
+            cacheGroups: {
+                common: {
+                    minChunks: 2,
+                    chunks: 'initial',
+                    name: 'common'
+                }
+            }
         },
         minimizer: [
             new TerserPlugin({
@@ -102,6 +108,11 @@ export default {
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
+        }),
+
+        new ManifestPlugin({
+            publicPath: 'scripts/',
+            basePath: 'scripts/'
         })
     ],
     stats

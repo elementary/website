@@ -28,6 +28,8 @@ if (!isset($page['styles'])) $page['styles'] = array();
 if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
 if (!isset($page['scripts'])) $page['scripts'] = array();
 
+$scriptsManifest = json_decode(file_get_contents('scripts/manifest.json'), true);
+
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
@@ -84,8 +86,8 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <script src="scripts/common.js"></script>
-        <script src="scripts/main.js" async></script>
+        <script src=<?php echo $scriptsManifest["scripts/common.js"]?>></script>
+        <script src=<?php echo $scriptsManifest["scripts/main.js"]?> async></script>
 
         <?php
             // loads all async javascript tags here
@@ -104,7 +106,7 @@ $l10n->begin_html_translation();
                     }
                 }
         ?>
-        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+        <script src="<?php echo $scriptsManifest[$src] ?>"<?php echo $atr_string ?>></script>
         <?php } ?>
         <?php } ?>
     </head>
