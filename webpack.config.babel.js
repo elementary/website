@@ -58,8 +58,7 @@ export default {
     output: {
         filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'scripts'),
-        publicPath: 'scripts/',
-        sourceMapFilename: '[name].[chunkhash].map.js'
+        publicPath: 'scripts/'
     },
     mode: 'none',
     module: {
@@ -111,7 +110,6 @@ export default {
         }),
 
         new ManifestPlugin({
-            publicPath: 'scripts/',
             basePath: 'scripts/'
         })
     ],
