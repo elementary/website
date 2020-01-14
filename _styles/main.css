@@ -44,14 +44,16 @@ body {
 
 /* Code for old Firefox and KaiOS */
 ::-moz-selection {
-    color: #fff;
-    background-color: #3995d3;
+	background-color: rgba(140, 213, 255, 0.3);
+	color: rgb(0, 46, 153);
+	text-shadow: none;
 }
 
 /* Code for modern browsers */
 ::selection {
-    color: #fff;
-    background-color: #3995d3;
+	background-color: rgba(140, 213, 255, 0.3);
+	color: rgb(0, 46, 153);
+	text-shadow: none;
 }
 
 /**************
