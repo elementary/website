@@ -42,6 +42,20 @@ body {
     box-sizing: inherit;
 }
 
+/* Code for old Firefox and KaiOS */
+::-moz-selection {
+    background-color: rgba(140, 213, 255, 0.3);
+    color: rgb(0, 46, 153);
+    text-shadow: none;
+}
+
+/* Code for modern browsers */
+::selection {
+    background-color: rgba(140, 213, 255, 0.3);
+    color: rgb(0, 46, 153);
+    text-shadow: none;
+}
+
 /**************
 * Text Styles *
 **************/
