@@ -42,12 +42,12 @@
     "Our desktop environment and all its apps are built using Vala, GTK+, Granite, and a number of other open libraries. We host our desktop code on GitHub, a free service for open source projects. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Onze desktopomgeving en diens apps zijn gebouwd met Vala, GTK+, Granite en een aantal andere vrije software bibliotheken. Wij hosten onze desktop code op GitHub, een gratis service voor open source projecten. Als je nog nooit hebt ontwikkeld voor elementary OS raden we aan onze <em>Getting Started</em> gids te bekijken.",
     "Browse Our Code": "Bekijk onze code",
     "Bitesized Bugs": "Bugs van bitgrootte",
-    "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Ons Design Team",
+    "Our Design Team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Ons Design Team verandert ideeën in duidelijke probleemrapporten en bruikbare bezittingen. Voordat u start wordt het aangeraden om over onze ontwerp werkstromen te lezen.",
     "elementary OS uses a system stylesheet written in CSS. It defines how everything is drawn, from buttons and toolbars to the panel and menus.": "elementary OS gebruikt een systeembrede stylesheet geschreven in CSS. Het definieert hoe alles wordt getekend: van knoppen en toolbars tot het paneel en menu's.",
     "Browse Our Stylesheet": "Bekijk onze stylesheet",
-    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "",
+    "elementary OS comes with a set of vector icons that are used across all pre-installed apps and are available to third party developers too.": "elementary OS heeft een set met vector iconen die worden gebruikt door voorgeïnstalleerde toepassingen. Deze iconen zijn ook beschikbaar voor andere ontwikkelaars.",
     "Browse Our Icons": "Bekijk onze iconen",
-    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "",
+    "Our design team tracks \"Needs Design\" issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Ons design team houdt “Needs Design” issues op Github in de gaten. Om deze issues op te lossen is mogelijk meer design discussie, schetsen of kant en klare producten nodig.",
     "Browse 'Needs Design' Issues": "Verken 'Needs Design'-issues",
     "Get Involved with elementary OS": "Help mee met elementary OS"
 }
