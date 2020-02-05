@@ -4,17 +4,17 @@
 
 $config = array(
     'release_title'    => 'Hera',
-    'release_version'  => '5.1',
-    'release_filename' => 'elementaryos-5.1-stable.20191202.iso',
-    'release_size'     => '1.47 GB',
-    'release_magnet'   => '5b1599770c9f8c796ec8bbe096b8be545510e2c9',
+    'release_version'  => '5.1.2',
+    'release_filename' => 'elementaryos-5.1-stable.20200204.iso',
+    'release_size'     => '1.49 GB',
+    'release_magnet'   => '50aa76ebbe8396e4afe93c2d8aede35faf5b1a51',
 
     'previous_title'    => 'Juno',
-    'previous_version'  => '5.0',
-    'previous_filename' => 'elementaryos-5.0-stable.20181016.iso',
-    'previous_size'     => '1.48 GB',
-    'previous_magnet'   => 'f5b31b1bd67bf65fe97be298ec7c473cb2e3e201',
-
+    'previous_version'  => '0.4.1',
+    'previous_filename' => 'elementaryos-0.4.1-stable.20180130.iso',
+    'previous_size'     => '1.50 GB',
+    'previous_magnet'   => 'baab8ca13fd7c83524c3fcba99b4b286b77ae547',
+   
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
     'chart_link_milestone' => 'loki-rc1',
