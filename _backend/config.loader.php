@@ -1,17 +1,18 @@
 <?php
 
-// Defaults from repository, contains actual non-secure values only. 
-require __DIR__.'/config.example.php';
-$defaultConfig = $config;
-    
+// Defaults from repository, contains actual non-secure values only.
+$defaultConfig = (require __DIR__.'/config.example.php');
+
+$secretConfig = array();
+
 // Secure config set through ansible
-if ( is_readable(__DIR__.'/config.php') ) {
-    require __DIR__.'/config.php';
+if (is_readable(__DIR__.'/config.php')) {
+  $secretConfig = (require __DIR__.'/config.php');
 
 // Fallback to master if on testing branch
-} else if ( is_readable(__DIR__.'/../../master/_backend/config.php') ) {
-    require __DIR__.'/../../master/_backend/config.php';
+} else if (is_readable(__DIR__.'/../../master/_backend/config.php')) {
+  $secretConfig = (require __DIR__.'/../../master/_backend/config.php');
 }
 
 // Merge configuration
-$config = array_merge($defaultConfig, $config);
+$config = array_merge($defaultConfig, $secretConfig);

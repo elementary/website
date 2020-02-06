@@ -2,7 +2,7 @@
 
 // Example of config file, add your own values here, all are imaginary
 
-$config = array(
+return array(
     'release_title'    => 'Hera',
     'release_version'  => '5.1.2',
     'release_filename' => 'elementaryos-5.1-stable.20200204.iso',
@@ -14,7 +14,7 @@ $config = array(
     'previous_filename' => 'elementaryos-0.4.1-stable.20180130.iso',
     'previous_size'     => '1.50 GB',
     'previous_magnet'   => 'baab8ca13fd7c83524c3fcba99b4b286b77ae547',
-   
+
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
     'chart_link_milestone' => 'loki-rc1',
