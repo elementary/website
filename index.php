@@ -138,6 +138,10 @@
                         <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
                         <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
                         <a href="developer" class="button flat">Become a Developer</a>
+
+                    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
+                         <a href="https://igg.me/at/appcenter-for-everyone" class="button flat">Back AppCenter for everyone on Indiegogo</a>
+                     <?php } ?>
                     </div>
                 </div>
             </div>
