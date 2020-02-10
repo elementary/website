@@ -157,7 +157,7 @@ sha256sum elementaryos-5.1-stable.20200204.iso
 should produce the output:
 
 ```bash nohighlight
-cd66c32d53eab6f789b8e69e499305b7af0c9b3083ed54d50b111136d2795ea1
+190bbf738db0f15daa9ee4095bb64c307950082819081a969f8edd51f1faab07
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
