@@ -1,5 +1,5 @@
 /*************************************
-* Copyright 2016 elementary LLC.     *
+* Copyright 2016-2020 elementary, Inc.     *
 * This file is part of elementary.io *
 *************************************/
 
@@ -43,16 +43,11 @@ body {
 }
 
 /* Code for old Firefox and KaiOS */
-::-moz-selection {
-    background-color: rgba(140, 213, 255, 0.3);
-    color: rgb(0, 46, 153);
-    text-shadow: none;
-}
-
+::-moz-selection,
 /* Code for modern browsers */
 ::selection {
     background-color: rgba(140, 213, 255, 0.3);
-    color: rgb(0, 46, 153);
+    color: #002e99;
     text-shadow: none;
 }
 
