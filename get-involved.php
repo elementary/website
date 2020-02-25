@@ -45,6 +45,16 @@
         </div>
     </div>
 
+<?php if (event_active('indiegogo appcenter 2/7')) { ?>
+     <div class="grid">
+         <div class="two-thirds">
+             <h2>Indiegogo</h2>
+             <p class="text-center">We’re currently crowdfunding AppCenter for everyone on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
+             <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
+         </div>
+     </div>
+ <?php } ?>
+
     <div class="grid">
         <div class="half">
             <img class="logo" alt="Patreon" src="images/get-involved/patreon.svg">

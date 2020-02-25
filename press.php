@@ -67,10 +67,10 @@
 <div class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <h2>elementary OS 5 Juno</h2>
-            <p>Juno is more refined, more productive, and an even better platform for third-party developers. We've majorly updated apps, made the core desktop more productive with several new features, refined the overall look and feel, and greatly improved System Settings.</p>
-            <a class="button" href="https://medium.com/@cassidyjames/471dfdedc7b3" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
-            <a class="button" href="https://github.com/elementary/press-kit/archive/5.0-juno.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+            <h2>elementary OS 5.1 Hera</h2>
+            <p>Hera is a major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</p>
+            <a class="button" href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+            <a class="button" href="https://github.com/elementary/press-kit/archive/5.1-hera.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
         </div>
     </div>
 </div>
@@ -78,8 +78,8 @@
 <div class="grid">
     <div class="third">
         <h3>News &amp; Announcements</h3>
-        <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our Medium publication.</p>
-        <a class="button" href="https://medium.com/elementaryos" target="_blank" rel="noopener">Visit Medium</a>
+        <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our official blog.</p>
+        <a class="button" href="https://blog.elementary.io/" target="_blank" rel="noopener">Visit Our Blog</a>
     </div>
 
     <div class="third">

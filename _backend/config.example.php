@@ -3,19 +3,18 @@
 // Example of config file, add your own values here, all are imaginary
 
 $config = array(
+    'release_title'    => 'Hera',
+    'release_version'  => '5.1.2',
+    'release_filename' => 'elementaryos-5.1-stable.20200204.iso',
+    'release_size'     => '1.49 GB',
+    'release_magnet'   => '50aa76ebbe8396e4afe93c2d8aede35faf5b1a51',
 
-    'release_title'    => 'Juno',
-    'release_version'  => '5.0',
-    'release_filename' => 'elementaryos-5.0-stable.20181016.iso',
-    'release_size'     => '1.48 GB',
-    'release_magnet'   => 'f5b31b1bd67bf65fe97be298ec7c473cb2e3e201',
-
-    'previous_title'    => 'Loki',
+    'previous_title'    => 'Juno',
     'previous_version'  => '0.4.1',
-    'previous_filename' => 'elementaryos-0.4.1-stable.20180214.iso',
+    'previous_filename' => 'elementaryos-0.4.1-stable.20180130.iso',
     'previous_size'     => '1.50 GB',
-    'previous_magnet'   => '54dca0477d74d88ed051a9cd62fe5359151e7823',
-
+    'previous_magnet'   => 'baab8ca13fd7c83524c3fcba99b4b286b77ae547',
+   
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
     'chart_link_milestone' => 'loki-rc1',
