@@ -11,12 +11,6 @@ section {
     padding: 32px 0;
 }
 
-@media (min-width: 600px) {
-    .hero .two-thirds {
-        padding-bottom: 64px;
-    }
-}
-
 .third p {
     text-align: left;
 }
