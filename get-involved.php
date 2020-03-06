@@ -160,7 +160,7 @@
         <div class="two-thirds">
             <h2>Desktop Development</h2>
             <p>Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.</p>
-            <a class="button flat" href="https://github.com/elementary" target="_blank" rel="noopener">Getting Started Guide</a>
+            <a class="button flat" href="https://docs.elementary.io/develop/" target="_blank" rel="noopener">Getting Started Guide</a>
             <a class="button flat suggested-action" href="https://github.com/elementary" target="_blank" rel="noopener">Browse Code</a>
         </div>
     </div>
