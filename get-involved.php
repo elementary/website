@@ -45,7 +45,7 @@
         </div>
     </div>
 
-<?php /*if (event_active('indiegogo appcenter 2/7')) { ?>
+<?php if (event_active('indiegogo appcenter 2/7')) { ?>
      <div class="grid">
          <div class="two-thirds">
              <h2>Indiegogo</h2>
@@ -53,7 +53,7 @@
              <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
          </div>
      </div>
- <?php } */?>
+ <?php } ?>
 
     <div class="grid">
         <div class="half">
