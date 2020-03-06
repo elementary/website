@@ -58,7 +58,7 @@
     <div class="grid">
         <div class="half">
             <i class="fab fa-github" title="GitHub Sponsors"></i>
-            <p>Directly fund elementary, and get a badge on your GitHub profile to show your support. GitHub Sponsors doesn't charge any fees, so it's a great way to make your contribution go farther.</p>
+            <p>Directly fund elementary and get a badge on your GitHub profile to show your support. GitHub Sponsors doesn't charge any fees, so it's a great way to make your contribution go farther.</p>
             <a class="button flat suggested-action" href="https://github.com/sponsors/elementary" target="_blank" rel="noopener">Sponsor on GitHub</a>
         </div>
         <div class="half">
@@ -94,7 +94,7 @@
     <div class="grid">
         <div class="two-thirds">
             <i class="fa fa-shopping-cart"></i>
-            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
+            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers. Every purchase goes towards developing elementary OS, its apps, and its services.</p>
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
         </div>
     </div>
@@ -150,8 +150,8 @@
         </div>
         <h2>Web Development</h2>
         <p>Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.</p>
-        <a class="button flat suggested-action" href="https://github.com/elementary/website" target="_blank" rel="noopener">Fork Our Website on GitHub</a>
         <a class="button flat" href="https://github.com/elementary/website/issues" target="_blank" rel="noopener">Report a Website Issue</a>
+        <a class="button flat suggested-action" href="https://github.com/elementary/website" target="_blank" rel="noopener">Fork Our Website on GitHub</a>
     </div>
 </section>
 
