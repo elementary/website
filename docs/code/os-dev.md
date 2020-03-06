@@ -78,15 +78,17 @@ sudo apt install appname --reinstall
 
 ## WingPanel {#wingpanel}
 
-When developing the Panel (codenamed WingPanel) or panel-related packages like the Applications Menu and indicators, you want to start WingPanel from the command line to view logs. WingPanel is automatically started and restarted by Cerbere. To remove WingPanel from its monitored applications:
+When developing the Panel (codenamed WingPanel) or panel-related packages like the Applications Menu and indicators, you want to start WingPanel from the command line to view logs. WingPanel is automatically started and restarted by the GNOME session manager "gnome-session". To prevent WingPanel from automatically restarting kill it twice in a row:
 
-1. In dconf Editor, browse to `/io/elementary/desktop/cerbere/monitored-processes`
-2. Disable "Use default value"
-3. Change the "Custom value" to `['plank']`
-4. In Terminal run `killall wingpanel` to stop the current WingPanel
-5. Start wingpanel by running `wingpanel`
+```bash
+killall wingpanel && killall wingpanel
+```
 
-To restore normal behavior simply enable "Use default value" in dconf Editor. Cerbere will notice this and start to monitor WingPanel again.
+Or, stop Wingpanel and immediately restart it with:
+
+```bash
+killall wingpanel && wingpanel
+```
 
 ## Gala {#gala}
 
