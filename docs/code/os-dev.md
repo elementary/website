@@ -81,7 +81,7 @@ sudo apt install appname --reinstall
 When developing the Panel (codenamed WingPanel) or panel-related packages like the Applications Menu and indicators, you want to start WingPanel from the command line to view logs. WingPanel is automatically started and restarted by the GNOME session manager "gnome-session". To prevent WingPanel from automatically restarting kill it twice in a row:
 
 ```bash
-killall wingpanel && killall wingpanel
+killall wingpanel && sleep 1 && killall wingpanel
 ```
 
 Or, stop Wingpanel and immediately restart it with:
