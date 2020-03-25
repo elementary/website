@@ -153,7 +153,7 @@
             </div>
             <div class="third">
                 <h2>Open Source</h2>
-                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.</p>
+                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone—which improves security and privacy for everyone.</p>
                 <a class="read-more" href="/open-source">Learn More</a>
             </div>
             <div class="third">
