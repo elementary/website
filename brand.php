@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background: #f37329; color: #ffffff;">
+            <div class="color-palette-header" style="background: #f37329; color: #4D0F00;">
                 <span>Orange</span>
                 <span class="hex" data-l10n-off="1">f37329</span>
             </div>
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background-color:#68b723;">
+            <div class="color-palette-header" style="background-color:#68b723; color: #0B2400;">
                 <span>Lime</span>
                 <span class="hex" data-l10n-off="1">68b723</span>
             </div>
@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background-color:#3689e6;">
+            <div class="color-palette-header" style="background-color:#3689e6; color: #000F33">
                 <span>Blueberry</span>
                 <span class="hex" data-l10n-off="1">3689e6</span>
             </div>
