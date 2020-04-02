@@ -128,7 +128,7 @@ $l10n->begin_html_translation();
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="Stack Exchange"><i class="fab fa-stack-exchange"></i></a></li>
                     <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://join.slack.com/t/elementarycommunity/shared_invite/enQtODgwNjM4NjgzMjM2LWMwYzc2YWUzODAyMmE4ZjU3NzNlODYwYWJhOGU5ZDA0Zjg5YTU0N2Q1NjM0NGZmZTE3MTg3NGI4YWQ4YTFjMmU" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
+                    <li><a href="https://join.slack.com/t/elementarycommunity/shared_invite/zt-d8cswzw1-03M9gXN~e9cOWTpymnNKcw" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
                 </ul>
             </div>
         </nav>
