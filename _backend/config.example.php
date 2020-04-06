@@ -4,10 +4,10 @@
 
 return array(
     'release_title'    => 'Hera',
-    'release_version'  => '5.1.2',
-    'release_filename' => 'elementaryos-5.1-stable.20200204.iso',
-    'release_size'     => '1.49 GB',
-    'release_magnet'   => '50aa76ebbe8396e4afe93c2d8aede35faf5b1a51',
+    'release_version'  => '5.1.3',
+    'release_filename' => 'elementaryos-5.1-stable.20200405.iso',
+    'release_size'     => '1.50 GB',
+    'release_magnet'   => '79f160695f35e57110523761b092b56238aa10e8',
 
     'previous_title'    => 'Juno',
     'previous_version'  => '0.4.1',
