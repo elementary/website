@@ -50,6 +50,7 @@ class Slack
         'U7MM8V79U', // esodan
         'U02BZA3JZ', // isantop
         'U21C19CEN', // wimpress
+        'U79R457NK', // worldofpeace
     );
 
     /**
