@@ -393,7 +393,7 @@ Let's review all we've learned to do:
 * Create a .desktop file using RDNN that tells the computer how to display our app in the Applications Menu and the Dock
 * Set up a Meson build system that contains all the rules for building our app and installing it cleanly
 
-That's a lot! You're well on your way to becoming a bonified app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Translations.
+That's a lot! You're well on your way to becoming a bona fide app developer for elementary OS. Give yourself a pat on the back, then take some time to play around with this example. Change the names of files and see if you can still build and install them properly. Ask another developer to clone your repo from GitHub and see if it builds and installs cleanly on their computer. If so, you've just distributed your first app! When you're ready, we'll move onto the next section: Translations.
 
 # Adding Translations {#Adding-Translations}
 
