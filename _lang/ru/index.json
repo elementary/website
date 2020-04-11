@@ -1,5 +1,5 @@
 {
-    "The fast, open, and privacy-respecting replacement for Windows and macOS": "",
+    "The fast, open, and privacy-respecting replacement for Windows and macOS": "Быстрая, открытая и конфиденциально-ориентированная замена для Windows и macOS",
     "Generic laptop computer": "",
     "elementary OS 5 Juno desktop": "",
     "Pay What You Want:": "Платите, сколько хотите:",
@@ -92,11 +92,11 @@
     "elementary OS Keyboard Shortcuts": "",
     "User Friendly. And Keyboard Friendly.": "",
     "elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.": "",
-    "Privacy-respecting. Through and through.": "",
+    "Privacy-respecting. Through and through.": "Уважение приватности. Во всех отношениях",
     "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "",
     "Our Privacy Policy": "",
     "Tattle-Tale": "",
-    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "",
+    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elemetary OS помогает вам контролировать свои приложения. Когда приложение использует микрофон, системный индикатор уведомит вас об этом. Когда приложение потребляет много энергии, система предупредит через индикатор питания.",
     "Location Services": "",
     "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "",
     "Housekeeping": "",
@@ -110,5 +110,5 @@
     "Close": "",
     "Download": "Загрузить",
     "Torrent Magnet Link": "magnet-ссылка",
-    "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": ""
+    "The fast, open, and privacy-respecting replacement for Windows and macOS &sdot; elementary OS": "Быстрая, открытая и конфиденциально-ориентированная замена для Windows и macOS"
 }
