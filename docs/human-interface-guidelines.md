@@ -60,7 +60,7 @@ Providing settings can be a way to make sure an app is accessible to a wider set
 
 Design with sane defaults in mind. elementary OS apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WD-G6ns8oDU" frameborder="0" allowfullscreen></iframe>
 
 ### Ask the Operating System {#ask-the-operating-system}
 
