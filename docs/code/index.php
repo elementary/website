@@ -1,2 +1,2 @@
 <?php
-header('Location: /docs/code/getting-started', true, 302);
+header('Location: https://docs.elementary.io/develop', true, 302);
