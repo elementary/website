@@ -200,6 +200,32 @@
             </div>
         </div>
         <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#de3e80;">
+                <span>Bubblegum</span>
+                <span class="hex" data-l10n-off="1">de3e80</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#fe9ab8; color: #5b0823;">
+                <span>Bubblegum 100</span>
+                <span class="hex" data-l10n-off="1">fe9ab8</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#f4679d; color: #5b0823;">
+                <span>Bubblegum 300</span>
+                <span class="hex" data-l10n-off="1">f4679d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#de3e80;">
+                <span>Bubblegum 500</span>
+                <span class="hex" data-l10n-off="1">de3e80</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#bc245d;">
+                <span>Bubblegum 700</span>
+                <span class="hex" data-l10n-off="1">bc245d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#910e38;">
+                <span>Bubblegum 900</span>
+                <span class="hex" data-l10n-off="1">910e38</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
             <div class="color-palette-header" style="background-color:#715344;">
                 <span>Cocoa</span>
                 <span class="hex" data-l10n-off="1">715344</span>
