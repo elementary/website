@@ -62,6 +62,7 @@
     <div class="two-thirds">
         <h2>Support Development. Get Swag. Win Win.</h2>
         <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.</p>
+        <p>Due to COVID-19 some orders may experience delays. Please visit Printful's <a href="https://www.printful.com/covid-19">fullfillment estimate page</a> for more details.</p>
     </div>
 </section>
 
