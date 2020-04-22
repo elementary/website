@@ -136,7 +136,7 @@
             <h3>Documentation</h3>
             <p>elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.</p>
             <a class="button flat" href="https://github.com/elementary/website/blob/master/docs/learning-the-basics.md" target="_blank" rel="noopener">Learning the Basics Guide</a>
-            <a class="button flat" href="https://github.com/elementary/website/blob/master/docs/code/getting-started.md" target="_blank" rel="noopener">Developer Docs</a>
+            <a class="button flat" href="https://github.com/elementary/docs" target="_blank" rel="noopener">Developer Docs</a>
         </div>
     </div>
 </section>
