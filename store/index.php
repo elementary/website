@@ -20,7 +20,7 @@
     );
 
     include $template['header'];
-    // include $template['alert'];
+    include $template['alert'];
 
     $products = \Store\Product\get_products();
 
