@@ -26,6 +26,16 @@
     if (count($cart) > 0) {
 ?>
 
+<?php if (event_active('covid-19')) { ?>
+    <div class="row alert info">
+        <div class="column alert">
+            <h3><i class="info fas fa-info-circle"></i> Shipping Delays Due to COVID-19</h3>
+            <p>Orders may experience significant delays. Our fulfillment partner is ensuring the safety of their workers while meeting customer demand.</p>
+            <p><small><?php echo $config['covid_estimate'] ?></small></p>
+        </div>
+    </div>
+<?php } ?>
+
 <form action="<?php echo $page['lang-root'] ?>store/checkout" method="post" class="grid grid--narrow">
     <div class="whole">
         <h1>Cart</h1>

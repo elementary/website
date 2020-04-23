@@ -687,6 +687,10 @@ a.third:hover {
     color: #fbc02d;
 }
 
+.info {
+    color: #3689e6;
+}
+
 .row.alert {
     border: 2px solid #333;
     border-radius: 6px;
@@ -703,6 +707,11 @@ a.third:hover {
     border-color: #fbc02d;
 }
 
+.row.alert.info {
+    background-color: rgba(140, 213, 255, 0.125);
+    border-color: #8cd5ff;
+}
+
 .column.alert {
     margin: 5px;
     max-width: calc(100% - 70px);
@@ -711,6 +720,10 @@ a.third:hover {
 
 .row.alert > .column.alert {
     color: rgba(0, 0, 0, 0.8);
+}
+
+.row.alert.info > .column.alert {
+    color: #002e99;
 }
 
 .column.alert h3 {
