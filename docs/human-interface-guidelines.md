@@ -997,6 +997,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#28bca3; color: #003933;">
+      <span>Mint</span>
+      <span>#68b723</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#89ffdd; color: #003933;">
+      <span>Mint 100</span>
+      <span>#89ffdd</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#43d6b5; color: #003933;">
+      <span>Mint 300</span>
+      <span>#43d6b5</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#28bca3; color: #003933;">
+      <span>Mint 500</span>
+      <span>#28bca3</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0e9a83;">
+      <span>Mint 700</span>
+      <span>#0e9a83</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#007367;">
+      <span>Mint 900</span>
+      <span>#007367</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#3689e6;">
       <span>Blueberry</span>
       <span>#3689e6</span>
