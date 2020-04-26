@@ -999,7 +999,7 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
   <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#28bca3; color: #003933;">
       <span>Mint</span>
-      <span>#68b723</span>
+      <span>#28bca3</span>
     </div>
     <div class="color-palette-item" style="background-color:#89ffdd; color: #003933;">
       <span>Mint 100</span>
