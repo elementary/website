@@ -62,7 +62,7 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click  ![the checksum icon](images/docs/installation/rufus_checksum_icon.png) {.inline}  next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
 
 ```bash nohighlight
-79f160695f35e57110523761b092b56238aa10e8
+e57d04f0fcc1737c97be2fb22fbe16bfee9806db64c6ccefdbf98a17157fdd8b
 ```
 
 6. If the hashes match, click "START" and wait for the process to finish.
@@ -95,7 +95,7 @@ shasum -a 256 ~/Downloads/elementaryos-5.1-stable.20200501.iso
 Should produce the output:
 
 ```bash nohighlight
-79f160695f35e57110523761b092b56238aa10e8
+e57d04f0fcc1737c97be2fb22fbe16bfee9806db64c6ccefdbf98a17157fdd8b
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
@@ -157,7 +157,7 @@ sha256sum elementaryos-5.1-stable.20200501.iso
 should produce the output:
 
 ```bash nohighlight
-79f160695f35e57110523761b092b56238aa10e8
+e57d04f0fcc1737c97be2fb22fbe16bfee9806db64c6ccefdbf98a17157fdd8b
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
