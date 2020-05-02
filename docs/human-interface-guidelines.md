@@ -30,7 +30,7 @@ Before we get into all the things that make up elementary OS apps, there is a cl
 
 ------------------------------------------
 1. [Design Is Not Veneer, Aral Balkan](https://ar.al/notes/design-is-not-veneer/)
-2. [Design is Not Subjective, Jeff Law](http://www.jefflaw.ca/design-is-not-subjective/)
+2. [Design is Not Subjective, Jeff Law](https://web.archive.org/web/20181208131017/http://www.jefflaw.ca/design-is-not-subjective/)
 
 ## Concision {#concision}
 
