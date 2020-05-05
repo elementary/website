@@ -41,4 +41,4 @@ jobs:
         git add .
         git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
