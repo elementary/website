@@ -25,7 +25,9 @@ jobs:
     - name: Install Composer Dependencies
       run: cd _backend && composer install
     - name: Build website
-      run: gulp
+      run: |
+        npm install
+        gulp
     - name: Update Translations from Source
       run: php _backend/Console/Translation.php
     - name: Push Changes to Repository
