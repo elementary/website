@@ -27,11 +27,11 @@ jobs:
     - name: Build website
       run: |
         npm install
-        gulp
-    - name: Update Translations from Source & Push Changes to Repository
+        gulp      
+    - name: Update Translations from Source
+      run: php _backend/Console/Translation.php
+    - name: Push Changes to Repository
       run: |
-        php _backend/Console/Translation.php
-        
         echo "Setting up git credentials..."
         git remote set-url origin https://x-access-token:"$GITHUB_TOKEN"@github.com/"$GITHUB_REPOSITORY".git
         git config --global user.email "actions@github.com"
