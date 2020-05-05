@@ -28,16 +28,18 @@ jobs:
       run: |
         npm install
         gulp
-    - name: Update Translations from Source
-      run: php _backend/Console/Translation.php
-    - name: Push Changes to Repository
+    - name: Update Translations from Source & Push Changes to Repository
       run: |
+        php _backend/Console/Translation.php
+        
         echo "Setting up git credentials..."
         git remote set-url origin https://x-access-token:"$GITHUB_TOKEN"@github.com/"$GITHUB_REPOSITORY".git
         git config --global user.email "actions@github.com"
         git config --global user.name "actions"
         echo "Git credentials configured."
+        
+        git checkout auto-update-translations
         git add .
-        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
+        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin auto-update-translations || true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
