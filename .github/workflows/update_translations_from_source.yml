@@ -1,0 +1,33 @@
+name: Update Translations from Source
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup GitHub Checkout
+      uses: actions/checkout@v2
+    - name: Setup PHP Action
+      uses: shivammathur/setup-php@1.8.7
+      with:
+        php-version: '7.4'
+    - name:  Update Translations from Source
+      run: |
+        php _backend/Console/Translations.php
+        echo "Setting up git credentials..."
+        git remote set-url origin https://x-access-token:"$GITHUB_TOKEN"@github.com/"$GITHUB_REPOSITORY".git
+        git config --global user.email "actions@github.com"
+        git config --global user.name "actions"
+        echo "Git credentials configured."
+        git checkout master
+        git add .
+        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
