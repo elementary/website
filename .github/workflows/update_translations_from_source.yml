@@ -28,11 +28,9 @@ jobs:
       run: |
         npm install
         gulp      
-    - name: Change to master
+    - name: Change to auto-update-translations branch
       run: |
-        git fetch --all
-        git checkout master
-        git branch
+        git switch -c auto-update-translations --track origin/auto-update-translations
     - name: Update Translations from Source
       run: php _backend/Console/Translation.php
     - name: Push Changes to Repository
@@ -44,6 +42,6 @@ jobs:
         echo "Git credentials configured."
         
         git add .
-        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
+        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin auto-update-translations || true
       env:
         GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
