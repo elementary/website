@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - auto-update-translations
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
@@ -38,8 +37,8 @@ jobs:
         git config --global user.name "actions"
         echo "Git credentials configured."
         
-        git checkout auto-update-translations
+        git checkout master
         git add .
-        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin auto-update-translations || true
+        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
