@@ -38,7 +38,7 @@ jobs:
         git config --global user.name "actions"
         echo "Git credentials configured."
         
-        git branch
+        git checkout --track origin/master
         git add .
         git commit -m "Automatic update of translations files from source" && git push --set-upstream origin master || true
       env:
