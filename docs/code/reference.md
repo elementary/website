@@ -381,7 +381,7 @@ public static int main (string[] args) {
 
 ## Error {#error}
 
-Error log level includes logs for runtime errors or unexpected conditions. These errors are immediately visible on a status console and causes premature termination. 
+Error log level includes logs for runtime errors or unexpected conditions. These errors are immediately visible on a status console and causes premature termination.
 
 ```vala
 public static int main (string[] args) {
@@ -464,7 +464,7 @@ If you're reporting a "Wishlist" issue, like a feature request, a developer may 
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
 
-If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://join.slack.com/t/elementarycommunity/shared_invite/enQtODgwNjM4NjgzMjM2LWMwYzc2YWUzODAyMmE4ZjU3NzNlODYwYWJhOGU5ZDA0Zjg5YTU0N2Q1NjM0NGZmZTE3MTg3NGI4YWQ4YTFjMmU). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
+If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://community-slack.elementary.io/). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 
@@ -507,4 +507,3 @@ Don’t be upset if a developer plainly states that they don’t want to impleme
 ## Tracking Proposals {#tracking-proposals}
 
 Lets say you've convinced the developers of the merits of your new design, how do you keep track of the progress? GitHub has a projects feature for tracking isssues and their progress as apart of larger initiaves. Projects are managed on a per-repository basis at each individual GitHub repository (check out the projects board for this website [here](https://github.com/elementary/website/projects)) and by the elementary organization (check out elementary's projects [here](https://github.com/orgs/elementary/projects)) to track initiaves across projects. Projects are maintained by the owner of the GitHub repo or by elementary and link back to the issues you've created.
-
