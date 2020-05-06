@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - auto-update-translations
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
@@ -38,7 +37,7 @@ jobs:
       with:
         commit-message: "Automatic update of translations files from source"
         title: "Automatic update of translations files from source"
-        branch: "auto-update-translation"
+        branch: "update-translations-from-source"
       env:
         GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
     - name: Check outputs
