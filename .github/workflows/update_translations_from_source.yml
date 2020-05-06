@@ -20,6 +20,9 @@ jobs:
       with:
         php-version: '7.4'
         tools: composer
+    - name: Change to master
+      run: |
+        git switch -c master --track origin/master
     - name: Initialize and update submodules
       run: git submodule init && git submodule update --force --rebase
     - name: Install Composer Dependencies
@@ -28,9 +31,6 @@ jobs:
       run: |
         npm install
         gulp      
-    - name: Change to auto-update-translations branch
-      run: |
-        git switch -c auto-update-translations --track origin/auto-update-translations
     - name: Update Translations from Source
       run: php _backend/Console/Translation.php
     - name: Create Pull Request
