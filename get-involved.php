@@ -70,11 +70,6 @@
 
     <div class="grid">
         <div class="third">
-            <img class="logo" alt="Bountysource" title="Bountysource" src="images/open-source/bountysource.svg">
-            <p>Fund the developers committing fixes or new features. Set a bounty on specific issues or set up a recurring subscription.</p>
-            <a class="button flat" href="https://www.bountysource.com/teams/elementary">Support on Bountysource</a>
-        </div>
-        <div class="third">
             <i class="fab fa-paypal"></i>
             <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
@@ -89,10 +84,7 @@
             <p>Set up a recurring contribution through Liberapay, the open source and non-profit funding platform.</p>
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
-    </div>
-
-    <div class="grid">
-        <div class="two-thirds">
+        <div class="third">
             <i class="fa fa-shopping-cart"></i>
             <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers. Every purchase goes towards developing elementary OS, its apps, and its services.</p>
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
@@ -174,7 +166,6 @@
             <h3>Fix issues</h3>
             <p>Contribute to elementary OS by fixing issues, improving functionality or implementing new features. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
             <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bitesize%22&type=" target="_blank" rel="noopener">Bitesize Issues</a>
-            <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bounty%22&type=" target="_blank" rel="noopener">Bountied Issues</a>
         </div>
         <div class="third">
             <h3>Create apps</h3>
