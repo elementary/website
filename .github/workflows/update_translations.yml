@@ -1,0 +1,53 @@
+---
+
+name: Update Translations
+
+on:
+  schedule:
+    - cron:  "0 0 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: 'master'
+          submodules: true
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@1.8.7
+        with:
+          php-version: '7.4'
+          tools: composer
+
+      - name: Setup submodules
+        run: git submodule init && git submodule update --force --rebase
+
+      - name: Install Composer
+        run: cd _backend && composer install
+
+      - name: Build
+        run: |
+          npm install
+          gulp
+
+      - name: Update
+        run: php _backend/Console/Translation.php
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          commit-message: "Automatic update of translations files from source"
+          title: "Automatic update of translations files from source"
+          branch: "update-translations-from-source"
+          path: _lang
+        env:
+          GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
+
+      - name: Check outputs
+        run: |
+          echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pr_number }}"
