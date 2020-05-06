@@ -2,6 +2,8 @@
 
 require_once __DIR__.'/settings.php';
 
+use ParsedownExtra;
+
 if (
     is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
@@ -73,8 +75,6 @@ if (
         echo '<div class="row docs">';
         include $Templates['Alert'];
 
-        require_once $Libraries['Parsedown'];
-        require_once $Libraries['ParsedownExtra'];
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
         $Content = str_replace('⌘', '&#8984;', $Content);
