@@ -78,22 +78,6 @@ export default {
         }
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            minChunks: 2
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap: true,
-            mangle: false,
-            compressor: {
-                warnings: false,
-                screw_ie8: true
-            },
-            output: {
-                comments: false
-            }
-        }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
