@@ -109,12 +109,12 @@ Promise.all([jQuery]).then(([$]) => {
 
             if (notify) ga('send', 'event', 'Cart', 'Country Change', value)
 
-            if (country[value] != null && typeof country[value]['states'] === 'object') {
+            if (country[value] != null && typeof country[value].states === 'object') {
                 $state.empty()
                 var options = []
 
-                Object.keys(country[value]['states']).forEach(function (code) {
-                    var state = country[value]['states'][code]
+                Object.keys(country[value].states).forEach(function (code) {
+                    var state = country[value].states[code]
                     options.push('<option value="' + code + '">' + state + '</option>')
                 })
 
