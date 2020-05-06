@@ -15,14 +15,14 @@ jobs:
     steps:
     - name: Setup GitHub Checkout
       uses: actions/checkout@v2
+      with:
+        ref: 'master'
+        submodules: true
     - name: Setup PHP Action
       uses: shivammathur/setup-php@1.8.7
       with:
         php-version: '7.4'
         tools: composer
-    - name: Change to master
-      run: |
-        git switch -c master --track origin/master
     - name: Initialize and update submodules
       run: git submodule init && git submodule update --force --rebase
     - name: Install Composer Dependencies
