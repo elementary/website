@@ -7,12 +7,10 @@
     color-scheme: light dark;
 
     --blueberry-500: #3689e6;
-
     --silver-100: #fafafa;
     --silver-300: #d4d4d4;
     --silver-500: #abacae;
     --silver-900: #555761;
-
     --black-500: #333;
     --black-700: #1a1a1a;
 }
@@ -51,12 +49,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: var(--black-700);
-    color: var(--silver-300);
-    fill: var(--silver-300);
-  }
+    html,
+    body {
+        background-color: var(--black-700);
+        color: var(--silver-300);
+        fill: var(--silver-300);
+    }
 }
 
 *,
@@ -76,10 +74,10 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  a {
-    color: #64baff;
-    fill: #64baff;
-  }
+    a {
+        color: #64baff;
+        fill: #64baff;
+    }
 }
 
 a:focus {
@@ -1360,11 +1358,11 @@ i.fa.fa-close.close-modal {
 }
 
 @media (prefers-color-scheme: dark) {
-  .grey {
-    background-color: var(--black-500);
-    color: var(--silver-100);
-    fill: var(--silver-100);
-  }
+    .grey {
+        background-color: var(--black-500);
+        color: var(--silver-100);
+        fill: var(--silver-100);
+    }
 }
 
 /*****************
