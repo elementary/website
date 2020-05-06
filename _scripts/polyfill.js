@@ -4,6 +4,6 @@
  * I'm sorry world :'(
  */
 
-var _Promise = require('core-js/library/es6/promise')
+var _Promise = require('core-js/es/promise')
 
 global.Promise = _Promise
