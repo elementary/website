@@ -33,15 +33,15 @@ jobs:
         git switch -c auto-update-translations --track origin/auto-update-translations
     - name: Update Translations from Source
       run: php _backend/Console/Translation.php
-    - name: Push Changes to Repository
-      run: |
-        echo "Setting up git credentials..."
-        git remote set-url origin https://x-access-token:"$GITHUB_TOKEN"@github.com/"$GITHUB_REPOSITORY".git
-        git config --global user.email "actions@github.com"
-        git config --global user.name "actions"
-        echo "Git credentials configured."
-        
-        git add .
-        git commit -m "Automatic update of translations files from source" && git push --set-upstream origin auto-update-translations || true
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v2
+      with:
+        commit-message: "Automatic update of translations files from source"
+        title: "Automatic update of translations files from source"
+        branch: "auto-update-translation"
       env:
         GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
+    - name: Check outputs
+      run: |
+        echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
+        echo "Pull Request Number - ${{ steps.cpr.outputs.pr_number }}"
