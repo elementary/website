@@ -11,12 +11,6 @@ section {
     padding: 32px 0;
 }
 
-@media (min-width: 600px) {
-    .hero .two-thirds {
-        padding-bottom: 64px;
-    }
-}
-
 .third p {
     text-align: left;
 }
@@ -153,88 +147,6 @@ section {
     box-shadow:
         0 2px 3px -1px rgba(81, 94, 107, 0.3),
         0 5px 10px -2px rgba(131, 147, 157, 0.5);
-}
-
-.actions {
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.charts .barchart-ctn {
-    max-width: 100%;
-    width: 780px;
-}
-
-.charts .barchart-ctn,
-.charts .doughnuts-ctn {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.charts .doughnuts-ctn {
-    margin: 16px 8px;
-    min-width: 150px;
-}
-
-.charts .doughnuts-ctn .doughnut {
-    height: 120px;
-    margin: 15px auto;
-    position: relative;
-    width: 120px;
-}
-
-.charts .doughnuts-ctn .doughnut canvas {
-    position: relative;
-    z-index: 1;
-}
-
-.doughnut .doughnut-label {
-    font-size: 12px;
-    left: 0;
-    padding: 11px 0;
-    position: absolute;
-    text-align: center;
-    top: 22px;
-    width: 100%;
-}
-
-.doughnut .doughnut-count {
-    color: #93a1a1;
-    font-size: 28px;
-}
-
-@media (max-width: 985px) {
-    .charts .doughnuts-ctn {
-        margin-left: 0;
-    }
-
-    .charts .doughnuts-ctn .doughnut {
-        display: inline-block;
-        margin: 4px;
-    }
-}
-
-@media (max-width: 360px) {
-    .charts .doughnuts-ctn .doughnut {
-        height: 70px;
-        width: 70px;
-    }
-
-    .charts .doughnuts-ctn .doughnut .doughnut-label {
-        padding: 4px 0;
-    }
-}
-
-.doughnut.fixed .doughnut-count {
-    color: #95a5ac;
-}
-
-.doughnut.in-progress .doughnut-count {
-    color: #3a9104;
-}
-
-.doughnut.created .doughnut-count {
-    color: #c6262e;
 }
 
 #sections-menu {

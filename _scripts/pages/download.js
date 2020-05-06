@@ -105,6 +105,14 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             console.log('Payment initiated with selection ' + currentButton)
             var paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
+
+            // Disables button for 3 seconds after clicking it
+            var download = $(this)
+            download.prop('disabled', true)
+            setTimeout(function () {
+                download.prop('disabled', false)
+            }, 3000)
+
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)

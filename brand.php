@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background: #f37329; color: #ffffff;">
+            <div class="color-palette-header" style="background: #f37329; color: #4D0F00;">
                 <span>Orange</span>
                 <span class="hex" data-l10n-off="1">f37329</span>
             </div>
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background-color:#68b723;">
+            <div class="color-palette-header" style="background-color:#68b723; color: #0B2400;">
                 <span>Lime</span>
                 <span class="hex" data-l10n-off="1">68b723</span>
             </div>
@@ -148,7 +148,33 @@
             </div>
         </div>
         <div class="color-palette-box">
-            <div class="color-palette-header" style="background-color:#3689e6;">
+            <div class="color-palette-header" style="background-color:#28bca3; color: #003933;">
+                <span>Mint</span>
+                <span class="hex" data-l10n-off="1">28bca3</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#89ffdd; color: #003933;">
+                <span>Mint 100</span>
+                <span class="hex" data-l10n-off="1">89ffdd</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#43d6b5; color: #003933;">
+                <span>Mint 300</span>
+                <span class="hex" data-l10n-off="1">43d6b5</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#28bca3; color: #003933;">
+                <span>Mint 500</span>
+                <span class="hex" data-l10n-off="1">28bca3</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#0e9a83;">
+                <span>Mint 700</span>
+                <span class="hex" data-l10n-off="1">0e9a83</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#007367;">
+                <span>Mint 900</span>
+                <span class="hex" data-l10n-off="1">007367</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#3689e6; color: #000F33">
                 <span>Blueberry</span>
                 <span class="hex" data-l10n-off="1">3689e6</span>
             </div>
@@ -197,6 +223,32 @@
             <div class="color-palette-item" style="background-color:#452981;">
                 <span>Grape 900</span>
                 <span class="hex" data-l10n-off="1">452981</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color:#de3e80;">
+                <span>Bubblegum</span>
+                <span class="hex" data-l10n-off="1">de3e80</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#fe9ab8; color: #5b0823;">
+                <span>Bubblegum 100</span>
+                <span class="hex" data-l10n-off="1">fe9ab8</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#f4679d; color: #5b0823;">
+                <span>Bubblegum 300</span>
+                <span class="hex" data-l10n-off="1">f4679d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#de3e80;">
+                <span>Bubblegum 500</span>
+                <span class="hex" data-l10n-off="1">de3e80</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#bc245d;">
+                <span>Bubblegum 700</span>
+                <span class="hex" data-l10n-off="1">bc245d</span>
+            </div>
+            <div class="color-palette-item" style="background-color:#910e38;">
+                <span>Bubblegum 900</span>
+                <span class="hex" data-l10n-off="1">910e38</span>
             </div>
         </div>
         <div class="color-palette-box">
