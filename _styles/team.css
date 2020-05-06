@@ -47,12 +47,6 @@ h5.member_name {
     text-align: left;
 }
 
-.member_status {
-    width: 16px;
-    height: 16px;
-    margin-left: 4px;
-}
-
 .member_title {
     font-size: 90%;
     margin: 4px 0;

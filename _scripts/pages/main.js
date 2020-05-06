@@ -6,6 +6,7 @@
 /* global ga */
 
 import '~/lib/analytics'
+import jQuery from '~/lib/jquery'
 
 import '~/external-links'
 import '~/popover'
@@ -15,3 +16,9 @@ import '~/twitter-links'
 // Send some analytic information on every page load
 ga('send', 'pageview')
 ga('send', 'event', 'Language', 'Pageload', document.documentElement.lang)
+
+jQuery.then(($) => {
+    $('.toast__close').on('click', function (e) {
+        $(this).closest('.toast').hide()
+    })
+})
