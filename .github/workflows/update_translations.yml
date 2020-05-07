@@ -43,7 +43,6 @@ jobs:
           commit-message: "Automatic update of translations files from source"
           title: "Automatic update of translations files from source"
           branch: "update-translations-from-source"
-          path: _lang
         env:
           GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
 
