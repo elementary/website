@@ -15,7 +15,7 @@
     "gulp-imagemin": "^6.1.1",
     "gulp-postcss": "^7.0.0",
     "gulp-svgo": "^1.0.3",
-    "postcss-cssnext": "^2.11.0",
+    "postcss-cssnext": "^3.1.0",
     "scriptjs": "^2.5.8",
     "webpack": "^2.5.1"
   },
