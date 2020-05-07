@@ -35,7 +35,7 @@
     "Granite": "Granite",
     "Captive Portal Assistant": "Asistente para portales cautivos",
     "Pantheon Online Accounts": "Cuentas en línea de Pantheon",
-    "Polkit Agent": "Agente Polkit",
+    "Polkit Agent": "Agente de Polkit",
     "Ubuntu": "Ubuntu",
     "Desktop Libraries &amp; Repositories": "Bibliotecas de escritorio y repositorios",
     "BAMF": "BAMF",
@@ -47,10 +47,10 @@
     "Pango": "Pango",
     "Cairo": "Cairo",
     "GNOME": "GNOME",
-    "Desktop Libraries": "Librerías de escritorio",
+    "Desktop Libraries": "Bibliotecas de escritorio",
     "dconf": "dconf",
     "GLib": "GLib",
-    "PolicyKit": "Conjunto de políticas",
+    "PolicyKit": "PolicyKit",
     "Vala": "Vala",
     "FreeDesktop": "FreeDesktop",
     "FreeDesktop.org": "FreeDesktop.org",
@@ -87,5 +87,5 @@
     "Software Freedom Conservancy": "Software Freedom Conservancy",
     "Weblate": "Weblate",
     "All logos featured here are trademarks of their respective projects.": "Todos los logotipos mostrados aquí son marcas comerciales de sus respectivos proyectos.",
-    "Open Source &sdot; elementary": "Open Source &sdot; elementary"
+    "Open Source &sdot; elementary": "Código abierto &sdot; elementary"
 }
