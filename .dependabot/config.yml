@@ -12,3 +12,9 @@ update_configs:
     default_reviewers:
       - "lewisgoddard"
       - "btkostner"
+  - package_manager: "submodules"
+    directory: "/"
+    update_schedule: "weekly"
+    default_reviewers:
+      - "lewisgoddard"
+      - "btkostner"
