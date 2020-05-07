@@ -2,18 +2,18 @@
 
 // Example of config file, add your own values here, all are imaginary
 
-$config = array(
+return array(
     'release_title'    => 'Hera',
-    'release_version'  => '5.1',
-    'release_filename' => 'elementaryos-5.1-stable.20191202.iso',
-    'release_size'     => '1.47 GB',
-    'release_magnet'   => '5b1599770c9f8c796ec8bbe096b8be545510e2c9',
+    'release_version'  => '5.1.4',
+    'release_filename' => 'elementaryos-5.1-stable.20200501.iso',
+    'release_size'     => '1.48 GB',
+    'release_magnet'   => '444f6d8b8c3a5363a80216c4e97c7460ad0325bf',
 
     'previous_title'    => 'Juno',
-    'previous_version'  => '5.0',
-    'previous_filename' => 'elementaryos-5.0-stable.20181016.iso',
-    'previous_size'     => '1.48 GB',
-    'previous_magnet'   => 'f5b31b1bd67bf65fe97be298ec7c473cb2e3e201',
+    'previous_version'  => '0.4.1',
+    'previous_filename' => 'elementaryos-0.4.1-stable.20180130.iso',
+    'previous_size'     => '1.50 GB',
+    'previous_magnet'   => 'baab8ca13fd7c83524c3fcba99b4b286b77ae547',
 
     'chart_enable'         => false,
     'chart_link_project'   => 'elementary',
@@ -41,4 +41,5 @@ $config = array(
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
 
+    'covid_estimate' => 'Current estimates are 13–16 business days for apparel shipping from the US, 4–7 business days for apparel shipping from the EU, 6–9 business days for mugs shipping from the US, and 2–4 business days for mugs shipping from the EU.',
 );

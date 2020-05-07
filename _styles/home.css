@@ -493,6 +493,7 @@ input:focus + .focus-reveal {
 
 #workflow figure.multitasking {
     background: #333;
+    overflow: hidden;
 }
 
 #workflow figure.multitasking .workspace,
@@ -501,16 +502,13 @@ input:focus + .focus-reveal {
     background-image: url('../images/screenshots/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 12%;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.1),
         0 2px 8px rgba(0, 0, 0, 0.5);
-    left: 8%;
-    right: 8%;
-    top: 4%;
 }
 
 #workflow figure.multitasking .workspace {
+    transform: translate(0, 0) scale(1);
     animation: 3s switch-workspace ease infinite;
     background-position: right;
 }
@@ -523,99 +521,73 @@ input:focus + .focus-reveal {
 }
 
 #workflow figure.multitasking::after {
+    transform: translate(100%, 0) scale(1);
     animation: 3s new-workspace ease infinite;
-    left: 96%;
-    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes switch-workspace {
     0% {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
+        transform: translate(0, 0) scale(1);
     }
 
     25% {
-        bottom: 12%;
-        left: 8%;
-        right: 8%;
-        top: 4%;
+        transform: translate(0, -2.5%) scale(0.825);
     }
 
-    29% {
-        left: 0;
+    40% {
+        transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
     }
 
     50% {
-        bottom: 12%;
-        left: 0%;
-        right: 96%;
-        top: 4%;
+        transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
     }
 
     100% {
-        bottom: 0;
-        left: 0;
-        right: 100%;
-        top: 0;
+        transform: translate(-100%, 0) scale(1);
     }
 }
 
 @keyframes new-workspace {
     0% {
-        bottom: 0;
-        left: 100%;
-        right: 0;
-        top: 0;
+        transform: translate(100%, 0) scale(1);
     }
 
     25% {
-        bottom: 12%;
-        left: 96%;
-        right: 0;
-        top: 4%;
+        transform: translate(calc(82.5% + 10%), -2.5%) scale(0.825);
     }
 
     40% {
-        right: 0;
+        transform: translate(0, -2.5%) scale(0.825);
     }
 
     50% {
-        bottom: 12%;
-        left: 8%;
-        right: 8%;
-        top: 4%;
+        transform: translate(0, -2.5%) scale(0.825);
     }
 
     100% {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
+        transform: translate(0, 0) scale(1);
     }
 }
 
 #workflow figure.pip .window {
+    transform: translate(0, -10%) scale(0.65);
     animation: 6s pip ease infinite;
-    left: auto;
-    top: auto;
 }
 
 @keyframes pip {
     0%,
     62.5%,
     100% {
-        bottom: 15%;
-        right: 20%;
-        width: 60%;
+        transform: translate(0, -10%) scale(0.55);
     }
 
     12.5%,
     50% {
-        bottom: 3%;
-        right: 3%;
-        width: 30%;
+        transform: translate(35%, 20%) scale(0.25);
     }
 }
 
@@ -792,7 +764,11 @@ input:focus + .focus-reveal {
 .slingshot .linked {
     display: inline-block;
     margin: 0;
+    position: absolute;
+    top: 12px;
+    left: 12px;
     transition: all 200ms ease-out;
+    transform: translateX(0) scale(1, 1);
 }
 
 .slingshot .linked,
@@ -802,7 +778,11 @@ input:focus + .focus-reveal {
 }
 
 .slingshot .linked.inactive {
-    margin-left: -73px;
+    /*
+    animation is quick enough that difference between negative margin and this is not noticable,
+    alternative is some other trick or plainly handling transitionend in js
+    */
+    transform: translateX(-73px) scale(0, 1);
 }
 
 .slingshot .button {
@@ -812,6 +792,7 @@ input:focus + .focus-reveal {
 }
 
 .slingshot .entry {
+    margin-left: auto;
     background-image: linear-gradient(to bottom, #f0f0f0, #f5f5f5);
     border: 1px solid rgba(61, 155, 218, 0.8);
     border-radius: 2.5px;
@@ -819,9 +800,8 @@ input:focus + .focus-reveal {
         inset 0 0 0 1px rgba(61, 155, 218, 0.23),
         0 1px 0 0 rgba(255, 255, 255, 0.3);
     color: #333;
-    display: inline-block;
+    display: block;
     fill: #a6a6a6;
-    margin-left: 8px;
     text-align: left;
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
     transition: all 200ms ease-out;
@@ -840,7 +820,7 @@ input:focus + .focus-reveal {
 .slingshot .button,
 .slingshot .entry {
     height: 25px;
-    padding: 3px 6px;
+    padding: 2px 6px;
 }
 
 #slingshot-grid .slingshot-grid {

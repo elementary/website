@@ -138,6 +138,10 @@
                         <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
                         <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
                         <a href="developer" class="button flat">Become a Developer</a>
+
+                    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
+                         <a href="https://igg.me/at/appcenter-for-everyone" class="button flat">Back AppCenter for everyone on Indiegogo</a>
+                     <?php } ?>
                     </div>
                 </div>
             </div>
@@ -149,7 +153,7 @@
             </div>
             <div class="third">
                 <h2>Open Source</h2>
-                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone. Which improves security and privacy for everyone.</p>
+                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone—which improves security and privacy for everyone.</p>
                 <a class="read-more" href="/open-source">Learn More</a>
             </div>
             <div class="third">

@@ -131,12 +131,22 @@ $l10n->begin_html_translation();
                     <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
                     <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="Stack Exchange"><i class="fab fa-stack-exchange"></i></a></li>
                     <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://join.slack.com/t/elementarycommunity/shared_invite/enQtNzk4MTA5Mzc1Mzc5LTUxN2FmNDY3NDE4ZTBiNDAxMzk2Mzg4MTY5OWFkMmEwMDMzNzllZDc1NjE0ZTA1ZTY5OWU4MzE1MGM2NzczYzY" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
+                    <li><a href="https://community-slack.elementary.io/" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
                 </ul>
             </div>
         </nav>
 
         <?php require __DIR__ . '/event.php'; ?>
+
+    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
+        <div class="overlay">
+            <div class="overlay__content toast">
+                <div class="toast__close"><i class="fas fa-times"></i></div>
+                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
+                <a href="https://igg.me/at/appcenter-for-everyone" class="toast__button">Back Us</a>
+            </div>
+        </div>
+    <?php } ?>
 
         <div id="content-container">
 

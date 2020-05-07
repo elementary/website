@@ -30,7 +30,7 @@ Before we get into all the things that make up elementary OS apps, there is a cl
 
 ------------------------------------------
 1. [Design Is Not Veneer, Aral Balkan](https://ar.al/notes/design-is-not-veneer/)
-2. [Design is Not Subjective, Jeff Law](http://www.jefflaw.ca/design-is-not-subjective/)
+2. [Design is Not Subjective, Jeff Law](https://web.archive.org/web/20181208131017/http://www.jefflaw.ca/design-is-not-subjective/)
 
 ## Concision {#concision}
 
@@ -60,7 +60,7 @@ Providing settings can be a way to make sure an app is accessible to a wider set
 
 Design with sane defaults in mind. elementary OS apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WD-G6ns8oDU" frameborder="0" allowfullscreen></iframe>
 
 ### Ask the Operating System {#ask-the-operating-system}
 
@@ -452,6 +452,8 @@ The primary text contains a brief summary of the situation and offer a suggested
 The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight. Secondary text should be in [sentence case](#sentence-case) with [terminating punctuation](#terminating-punctuation).
 
 Make both the primary and secondary text selectable. This makes it easy for the user to copy and paste the text to another window, such as an email message.
+
+Please refer to [`Granite.MessageDialog`](https://valadoc.org/granite/Granite.MessageDialog.html). It is preferred as an elementary OS styled dialog that follows elementary OS design conventions.
 
 ### Button Order {#button-order}
 
@@ -995,6 +997,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#28bca3; color: #003933;">
+      <span>Mint</span>
+      <span>#28bca3</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#89ffdd; color: #003933;">
+      <span>Mint 100</span>
+      <span>#89ffdd</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#43d6b5; color: #003933;">
+      <span>Mint 300</span>
+      <span>#43d6b5</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#28bca3; color: #003933;">
+      <span>Mint 500</span>
+      <span>#28bca3</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0e9a83;">
+      <span>Mint 700</span>
+      <span>#0e9a83</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#007367;">
+      <span>Mint 900</span>
+      <span>#007367</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#3689e6;">
       <span>Blueberry</span>
       <span>#3689e6</span>
@@ -1044,6 +1072,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     <div class="color-palette-item" style="background-color:#452981;">
       <span>Grape 900</span>
       <span>#452981</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#de3e80;">
+      <span>Bubblegum</span>
+      <span>#de3e80</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fe9ab8; color: #5b0823;">
+      <span>Bubblegum 100</span>
+      <span>#fe9ab8</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#f4679d; color: #5b0823;">
+      <span>Bubblegum 300</span>
+      <span>#f4679d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#de3e80;">
+      <span>Bubblegum 500</span>
+      <span>#de3e80</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#bc245d;">
+      <span>Bubblegum 700</span>
+      <span>#bc245d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#910e38;">
+      <span>Bubblegum 900</span>
+      <span>#910e38</span>
     </div>
   </div>
   <div class="color-palette-box">

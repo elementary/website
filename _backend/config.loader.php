@@ -1,12 +1,18 @@
 <?php
 
-if ( is_readable(__DIR__.'/config.php') ) {
-    // for configured local
-    require __DIR__.'/config.php';
-} else if ( is_readable(__DIR__.'/../../master/_backend/config.php') ) {
-    // for configured hosted
-    require __DIR__.'/../../master/_backend/config.php';
-} else {
-    // for un-configured local
-    require __DIR__.'/config.example.php';
+// Defaults from repository, contains actual non-secure values only.
+$defaultConfig = (require __DIR__.'/config.example.php');
+
+$secretConfig = array();
+
+// Secure config set through ansible
+if (is_readable(__DIR__.'/config.php')) {
+  $secretConfig = (require __DIR__.'/config.php');
+
+// Fallback to master if on testing branch
+} else if (is_readable(__DIR__.'/../../master/_backend/config.php')) {
+  $secretConfig = (require __DIR__.'/../../master/_backend/config.php');
 }
+
+// Merge configuration
+$config = array_merge($defaultConfig, $secretConfig);

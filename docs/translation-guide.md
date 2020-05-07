@@ -14,7 +14,7 @@ Our apps and website are translated through Weblate: A libre web-based translati
 
 Once you’ve selected a project, you can provide suggestions for strings that have not yet been translated, or suggest changes to strings that have already been translated. These suggestions will be evaluated by a translation team member and they will choose the most appropriate one. For a more info on Weblate, you can refer to its [documentation](https://docs.weblate.org/en/weblate-3.0.1/user/index.html).
 
-By default, you're only able to suggest translations. If you would like to get permissions to save translations, [join the translators Slack](https://join.slack.com/t/ele-l10n/shared_invite/enQtNDkyOTA1MTEzMTQxLWQ1N2YyNDkwYTQwMjA4NWI1MTA5Mzk3MTQyNmMzNmMwODgyYWRjOWQwZDFkZjY5MzVjMTlmMDBlZGJlYmNiNWE) and message an admin your Weblate username and what language you want to translate.
+By default, you're only able to suggest translations. If you would like to get permissions to save translations, [join the translators Slack](https://translators-slack.elementary.io/) and message an admin your Weblate username and what language you want to translate.
 
 When translating you may encounter a situation where you have to decide between several ways of saying the same thing. In these situations we refer to the Ubuntu [general translator guide](https://help.launchpad.net/Translations/Guide), and for language specific issues, we follow Ubuntu's [team translation guidelines](https://translations.launchpad.net/+groups/ubuntu-translators). Following these guidelines ensures uniform translations, while also allowing anyone to contribute.
 
@@ -33,7 +33,7 @@ Once you've finished, use the "Upload translation" option in the "Files" menu on
 We won't support translation of the following pages:
 
 * <a href="https://developer.elementary.io" data-l10n-off="1">Developer</a>
-* <a href="https://elementary.io/docs/code/getting-started" data-l10n-off="1">Getting Started</a>
+* <a href="https://docs.elementary.io/develop/" data-l10n-off="1">Developer Documentation</a>
 * <a href="https://elementary.io/docs/human-interface-guidelines" data-l10n-off="1">Human Interface Guidlines</a>
 * <a href="https://elementary.io/docs/code/reference" data-l10n-off="1">Reference</a>
 * <a href="https://elementary.io/store/" data-l10n-off="1">Store</a>
