@@ -12,7 +12,7 @@
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^4.0.2",
-    "gulp-imagemin": "^6.1.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-svgo": "^1.0.3",
     "postcss-cssnext": "^3.1.0",
