@@ -66,7 +66,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
             $.getJSON(baseUrl + 'api/geolocate?shipping&item=' + printfulId, function (data) {
                 // Update price information
                 try {
-                    const cost = data['shipping']['estimates'][0]['cost']
+                    const cost = data.shipping.estimates[0].cost
                     if (cost != null) {
                         $m.text('+ $' + cost + ' estimated shipping')
                     }
@@ -90,18 +90,18 @@ Promise.all([jQuery, modal]).then(([$]) => {
             var $m = $f.closest('.modal')
 
             // Update price information
-            $f.find('input[name="variant"]').val(v['id'])
-            $m.find('.modal__price').text('$' + parseFloat(v['price']).toFixed(2))
+            $f.find('input[name="variant"]').val(v.id)
+            $m.find('.modal__price').text('$' + parseFloat(v.price).toFixed(2))
 
-            if (v['image'] != null) {
-                $m.find('img').prop('src', v['image'])
+            if (v.image != null) {
+                $m.find('img').prop('src', v.image)
             } else {
-                $m.find('img').prop('src', p['image'])
+                $m.find('img').prop('src', p.image)
             }
 
             // Update modal information
-            setValue($f, 'size', v['size'])
-            setValue($f, 'color', v['color'])
+            setValue($f, 'size', v.size)
+            setValue($f, 'color', v.color)
         }
 
         /**
@@ -176,7 +176,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
 
             var p = null
             for (var pi in products) {
-                if (products[pi]['id'] !== id) continue
+                if (products[pi].id !== id) continue
                 p = products[pi]
             }
 
@@ -186,14 +186,14 @@ Promise.all([jQuery, modal]).then(([$]) => {
                 return
             }
 
-            for (var i in p['variants']) {
-                var variant = p['variants'][i]
+            for (var i in p.variants) {
+                var variant = p.variants[i]
 
-                if (size != null && variant['size'] !== size) continue
-                if (color != null && variant['color'] !== color) continue
+                if (size != null && variant.size !== size) continue
+                if (color != null && variant.color !== color) continue
 
                 updateVariant($f, p, variant)
-                updateShippingEstimate(variant['printful_id'])
+                updateShippingEstimate(variant.printful_id)
 
                 $('.alert--error', $f).text('')
                 $('input[type="submit"]', $f).prop('disabled', false)

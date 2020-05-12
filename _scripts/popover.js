@@ -19,7 +19,7 @@ jQuery.then(($) => {
             var $popover = $link.parent()
             var $content = $popover.find('.popover-content')
 
-            $body.css({ 'overflow': 'hidden' })
+            $body.css({ overflow: 'hidden' })
 
             $popover.addClass('active')
 
@@ -36,7 +36,7 @@ jQuery.then(($) => {
                     event.preventDefault()
                 }
 
-                $body.css({ 'overflow': 'visible' })
+                $body.css({ overflow: 'visible' })
 
                 $popover.removeClass('active')
                 $body.click()
