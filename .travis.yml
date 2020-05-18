@@ -9,7 +9,7 @@ php:
 
 before_script:
     - "bash -c 'source ~/.nvm/nvm.sh; nvm install 12'"
-    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; npm install'"
+    - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; npm ci'"
 
 script:
     - "bash -c 'source ~/.nvm/nvm.sh; nvm use 12; sh ./_tests/css.sh'"
