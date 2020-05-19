@@ -16,14 +16,14 @@ For a simple local development environment running on PHP, you will need:
   * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
-  * packages installed with `npm install`
+  * packages installed with `npm ci`
 
 These can be most easily installed on elementaryOS 5.0 (Ubuntu 18.04) with this script:
 
 ```
 sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
 sudo apt install nodejs npm &&
-npm install
+npm ci
 ```
 
 Then inside the project directory, run `npm run build && npm run start`. Next,
@@ -77,7 +77,7 @@ sudo service nginx restart
 Then we need to build the static assets.
 
 ```bash
-npm install && npm run build
+npm ci && npm run build
 ```
 
 Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
