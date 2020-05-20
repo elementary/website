@@ -19,7 +19,7 @@
 <div class="row docs">
     <h2>Company and Product Names</h2>
     <p>The word <strong>elementary</strong> is a trademark of elementary, Inc. to refer to the company itself. It is always lower-case, even when beginning sentences. It may also be used along with product names (i.e. “elementary OS”) to refer to a specific product of elementary, Inc.</p>
-    <p>The primary product of elementary, Inc. is <strong>elementary OS</strong>. For clarity, elementary OS should never be shortened to “elementary” or any abbreviation.
+    <p>The primary product of elementary, Inc. is <strong>elementary OS</strong>. For clarity, elementary OS should never be shortened to “elementary” or any abbreviation.</p>
 </div>
 
 <div class="row docs">
