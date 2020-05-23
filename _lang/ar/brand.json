@@ -96,13 +96,8 @@
     "Fonts": "خطوط",
     "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "للشبكة و الطباعة، نستخدم خط رايلواي للترييس و خط أوبن سانس  لنسخ الجسم. للكتل البرمجية نستخدم خط روبوتو مونو.",
     "Third Parties &amp; Community": "",
-<<<<<<< HEAD
     "We invite third-party developers creating products for elementary OS to adopt certain elements of the elementary brand for consistency:": "",
     "Voice\/tone": "صوت\/نغمة",
-=======
-    "We encourage third party developers creating products for elementary OS to adopt certain elements of the elementary brand to achieve consistency:": "نشجع مطورين الأطراف الثالثة لإنشاء منتجات لنظام التشغيل إلمنتري و تبني بعض العناصر من علامة إلمنتري للحصول على الثبات:",
-    "Voice/tone": "صوت/نغمة",
->>>>>>> weblate/master
     "However, to avoid user confusion, we do restrict the usage of the elementary name and marks:": "مع ذلك، لتجنب ارتباك المستخدم، نقيد استخدام اسم و علامة إلمنتري:",
     "You are encouraged to say that your app or service is “designed for elementary OS,” but do not use the elementary name or marks as part of the name of your company, application, product, or service—or in any logo you create.": "",
     "Only use the elementary name or marks to refer to elementary, Inc. or its products (i.e. elementary OS).": "",
@@ -112,7 +107,6 @@
     "elementary Community Logo in black": "",
     "This helps establish the product as part of the overall community while reducing confusion that can arise from using the elementary, Inc. logomark.": "",
     "Hardware Distributors": "موزعي العتاد",
-<<<<<<< HEAD
     "As long as our software carries the elementary branding, the experience must be consistent—whether the OS was downloaded from our website or pre-installed on a hardware product.": "",
     "The software components of elementary OS may be modified and redistributed according to the open source terms of the software’s licensing; however, the above branding and trademarks may only be redistributed under one or more of the following conditions:": "",
     "The software remains substantially unchanged; including default apps, stylesheet and iconography, etc., or": "",
@@ -123,17 +117,6 @@
     "Replace the iconography such that the icon <code>distributor-logo<\/code> present in <code>\/usr\/share\/icons\/elementary\/places\/<\/code> in each of the provided sizes does not appear in the OS.": "",
     "Remove or replace the packages <code>plymouth-theme-elementary<\/code> and <code>plymouth-theme-elementary-text<\/code>.": "",
     "For more information about OEMs and hardware distributors, see our <a href=\"oem\">information for OEMs<\/a>.": "",
-=======
-    "We want to ensure that as long as our software carries the elementary branding, the experience will be consistent whether it was downloaded from our website or pre-installed on a hardware product.": "",
-    "The software components of elementary OS may be modified and redistributed according to the terms of the software’s licensing. However, our brand marks may only be redistributed under one or more of the following conditions:": "",
-    "The software remains unchanged, including pre-installed applications, stylesheets and iconography, configuration files, etc., or": "",
-    "The modifications are approved in writing by elementary.": "",
-    "We understand that including drivers, hardware enablement, and distributor branding is important for distributors, so these modifications will almost always be approved by elementary. If in doubt, please email <a href=\"mailto:brand@elementary.io\">brand@elementary.io</a> for clarification or direction.": "",
-    "If you’re unable or unwilling to follow these trademark redistribution terms, removing elementary’s trademarks from the OS should be simple and straightforward:": "إذا كنت غير قادر أو لا ترغب في اتباع شروط إعادة توزيع العلامات التجارية هذه ، فيجب أن تكون إزالة العلامات التجارية لالمنتري من نظام التشغيل بسيطة ومباشرة:",
-    "Modify the <code>DISTRIB_DESCRIPTION</code> line in the file <code>/etc/lsb-release</code> to exclude our trademarks.": "",
-    "Replace the iconography such that the icon <code>distributor-logo</code> present in <code>/usr/share/icons/elementary/places/</code> in each of the provided sizes does not appear in the OS.": "",
-    "Remove the packages <code>plymouth-theme-elementary</code> and <code>plymouth-theme-elementary-text</code>.": "",
->>>>>>> weblate/master
     "Merchandise": "السوق",
     "We do not authorize our branding (including our name or brand marks) to be used on third-party merchandise without explicit written approval.": "",
     "Assets &amp; More Info": "الأصول &amp; مزيد من المعلومات",
