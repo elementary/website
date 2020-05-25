@@ -30,7 +30,7 @@ Before we get into all the things that make up elementary OS apps, there is a cl
 
 ------------------------------------------
 1. [Design Is Not Veneer, Aral Balkan](https://ar.al/notes/design-is-not-veneer/)
-2. [Design is Not Subjective, Jeff Law](http://www.jefflaw.ca/design-is-not-subjective/)
+2. [Design is Not Subjective, Jeff Law](https://web.archive.org/web/20181208131017/http://www.jefflaw.ca/design-is-not-subjective/)
 
 ## Concision {#concision}
 
@@ -60,7 +60,7 @@ Providing settings can be a way to make sure an app is accessible to a wider set
 
 Design with sane defaults in mind. elementary OS apps put strong emphasis on the out of the box experience. If your app has to be configured before a user is comfortable using it, they may not take the time to configure it at all and simply use another app instead.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/G2YNqr-V-xM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WD-G6ns8oDU" frameborder="0" allowfullscreen></iframe>
 
 ### Ask the Operating System {#ask-the-operating-system}
 
@@ -447,11 +447,13 @@ Even if your app uses a headerbar, be sure to set the window's title; it can be 
 
 An alert contains both primary and secondary text.
 
-The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`.
+The primary text contains a brief summary of the situation and offer a suggested action. This text should use the CSS class `primary`. Primary text should be in [sentence case](#sentence-case) and not include [terminating punctuation](#terminating-punctuation), except in the case of questions.
 
-The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight.
+The secondary text provides a more detailed description of the situation and describes any possible side effects of the available actions. It's important to note that a user should only need the primary text to make a decision and should only need to refer to the secondary text for clarification. This text should be placed one text line height beneath the primary text using the default font size and weight. Secondary text should be in [sentence case](#sentence-case) with [terminating punctuation](#terminating-punctuation).
 
 Make both the primary and secondary text selectable. This makes it easy for the user to copy and paste the text to another window, such as an email message.
+
+Please refer to [`Granite.MessageDialog`](https://valadoc.org/granite/Granite.MessageDialog.html). It is preferred as an elementary OS styled dialog that follows elementary OS design conventions.
 
 ### Button Order {#button-order}
 
@@ -465,6 +467,14 @@ Make both the primary and secondary text selectable. This makes it easy for the 
 ### "OK" is not Okay {#ok-is-not-okay}
 
 When presenting a dialog to a user, always use explicit action names like "Save..." or "Shut Down". Consider how "OK" lets users proceed without understanding the action they are authorizing. Not all users will read the question or information presented to them in a dialog. Using specific action names will make it harder for a user to select an unintended action and may even encourage them to read the presented information before making a selection.
+
+### Suggested and Destructive Actions {#suggested-destructive-actions}
+
+If the primary action is not destructive, its button should be given the `.suggested-action` style class, rendering it in a highlighted style by default. It should usually be focused by default so it's quicker for the user to perform the action using the keyboard.
+
+If the primary action is destructive—i.e. it cannot be easily reversed or undone—it should be given the `.destructive-action` style class, rendering it in a red style by default. Destructive actions should not be focused by default to prevent accidental activation.
+
+Multiple suggested and/or destructive actions should not co-exist in the same context; there should only be one of either type in a dialog.
 
 ### Preference Dialogs {#preference-dialogs}
 
@@ -610,9 +620,13 @@ Tool Buttons are almost always icon-only and do not provide a button border. The
 
 #### Tooltips {#tool-buttons-tooltips}
 
-All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case).
+All Tool Buttons should have tooltips, since they do not contain a label. This assists users with disabilities as well as giving a translation for an unrecognized icon. Tooltips should be done in [sentence case](#sentence-case) without [terminating punctuation](#terminating-punctuation).
 
 Like text button labels, a tooltip should clearly describe what will happen when the button is pressed.
+
+##### Keyboard Shortcuts {#tool-buttons-tooltips-keyboard-shortcuts}
+
+If a button has a related keyboard shortcut that will perform the same action, its tooltip should include the shortcut. See [`Granite.markup_accel_tooltip ()`](https://valadoc.org/granite/Granite.markup_accel_tooltip.html) for specifics.
 
 ### Text Buttons {#text-buttons}
 
@@ -714,11 +728,11 @@ Use a combobox (also called a dropdown) when:
 
 <img src="/images/docs/human-interface-guidelines/selection-controls/linked_buttons.png" alt="Linked Buttons" style="max-width: 119px"/>
 
-Use linked buttons (also called a mode button) when:
+Use linked buttons when:
 * All options can be described by an icon or with only one or two words and
 * You think users should see all available options at once.
 
-Linked buttons can be used to select multiple related options like "Bold", "Italic", and "Underline", or they can be used to select a single mutually exclusive option like Grid, List, or Column view.
+Linked buttons can be used to select multiple related options like "Bold", "Italic", and "Underline", or they can be used to select a single mutually exclusive option (also called a mode button) like Grid, List, or Column view.
 
 Linked buttons should never contain colored icons. Only 16px symbolic icons OR text. Do not mix icons and text.
 
@@ -983,6 +997,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#28bca3; color: #003933;">
+      <span>Mint</span>
+      <span>#28bca3</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#89ffdd; color: #003933;">
+      <span>Mint 100</span>
+      <span>#89ffdd</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#43d6b5; color: #003933;">
+      <span>Mint 300</span>
+      <span>#43d6b5</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#28bca3; color: #003933;">
+      <span>Mint 500</span>
+      <span>#28bca3</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#0e9a83;">
+      <span>Mint 700</span>
+      <span>#0e9a83</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#007367;">
+      <span>Mint 900</span>
+      <span>#007367</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#3689e6;">
       <span>Blueberry</span>
       <span>#3689e6</span>
@@ -1032,6 +1072,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     <div class="color-palette-item" style="background-color:#452981;">
       <span>Grape 900</span>
       <span>#452981</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color:#de3e80;">
+      <span>Bubblegum</span>
+      <span>#de3e80</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#fe9ab8; color: #5b0823;">
+      <span>Bubblegum 100</span>
+      <span>#fe9ab8</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#f4679d; color: #5b0823;">
+      <span>Bubblegum 300</span>
+      <span>#f4679d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#de3e80;">
+      <span>Bubblegum 500</span>
+      <span>#de3e80</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#bc245d;">
+      <span>Bubblegum 700</span>
+      <span>#bc245d</span>
+    </div>
+    <div class="color-palette-item" style="background-color:#910e38;">
+      <span>Bubblegum 900</span>
+      <span>#910e38</span>
     </div>
   </div>
   <div class="color-palette-box">
@@ -1368,6 +1434,14 @@ Keep in mind these are the rules elementary OS follows for English; capitalizati
 ## Punctuation {#punctuation}
 
 Proper typography is important throughout elementary OS. Not just for consistency within the OS, but for following proper convention and presenting ourselves as a serious, professional platform.
+
+### Terminating Punctuation {#terminating-punctuation}
+
+Whether or not to use terminating punctuation (like a period `.` in English) depends on context. For secondary labels in [dialogs](#dialogs), use terminating punctuation. For single-sentence copy in tooltips and other clarifying contexts, avoid terminating punctuation.
+
+For multi-sentence copy in clarifying contexts, use standard terminating punctuation. If there are single-sentence labels in the same context (alongside multi-sentence labels), terminating punctuation may be used for consistency.
+
+For questions, always include terminating punctuation (i.e. a `?` in English).
 
 ### Prevent Common Mistakes {#prevent-common-mistakes}
 

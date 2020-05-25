@@ -49,7 +49,7 @@
             </div>
             <div class="icon-text">
                 <h3>You are missing API keys</h3>
-                <p>You are viewing a developmental version of the store without configuring api keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
+                <p>You are viewing a development version of the store without configuring API keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
             </div>
         </div>
     </div>
@@ -61,9 +61,19 @@
 <section class="grid">
     <div class="two-thirds">
         <h2>Support Development. Get Swag. Win Win.</h2>
-        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better. Every little bit of help is one step closer to hiring another full-time developer.</p>
+        <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better—your support helps make elementary OS more sustainable.</p>
     </div>
 </section>
+
+<?php if (event_active('covid-19')) { ?>
+    <div class="row alert info">
+        <div class="column alert">
+            <h3><i class="info fas fa-info-circle"></i> Shipping Delays Due to COVID-19</h3>
+            <p>Orders may experience significant delays. Our fulfillment partners are ensuring the safety of their workers while meeting customer demand.</p>
+            <p><small><?php echo $config['covid_estimate'] ?></small></p>
+        </div>
+    </div>
+<?php } ?>
 
 <?php foreach ($categories as $category => $products) { ?>
 
@@ -101,6 +111,10 @@
                 <h2><?php echo $product['name'] ?></h2>
                 <h4 data-l10n-off="1"><strong class="modal__price">$<?php echo number_format($product['price_min'], 2) ?></strong> <span class="modal__shipping" data-l10n-off="1"></span></h4>
                 <p><?php echo $product['description'] ?></p>
+
+                <?php if (event_active('covid-19')) { ?>
+                  <p><strong>Due to COVID-19, fulfillment may be delayed.</strong> <?php echo $config['covid_estimate'] ?></p>
+                <?php } ?>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
                 <input type="hidden" name="variant" value="<?php echo $product['variants'][0]['id'] ?>">
@@ -142,11 +156,46 @@
 
 <?php } ?>
 
+<section class="grid" id="devices">
+    <div class="two-thirds">
+        <h3>Devices</h3>
+        <p>Hardware devices with elementary OS can be purchased from the following retailers. Purchasing from these companies helps support elementary OS.</p>
+    </div>
+
+    <div class="grid">
+        <div class="third">
+            <h4><a href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank">Laptop With Linux</a></h4>
+            <ul>
+                <li>Laptops and mini desktops</li>
+                <li>Based in the Netherlands</li>
+                <li>International shipping (free within Europe)</li>
+            </ul>
+        </div>
+        <div class="third">
+            <h4><a href="https://slimbook.es/" target="_blank">Slimbook</a></h4>
+            <ul>
+                <li>Laptops, desktops, mini desktops, and all-in-ones</li>
+                <li>Based in Spain</li>
+                <li>International shipping</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two-thirds">
+        <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
+    </div>
+</section>
+
 <section class="grid">
     <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
-        <p>We now ship all around the world! Place your order and choose from a number of shipping methods to fit your needs. Orders are made on-demand typically within 2–7 days.</p>
-        <p><small>Cuba, Iran, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the destination country.</small></p>
+        <p>We ship apparel and accessories all around the world! Orders are made on-demand typically within 2–7 days and will be shipped with the method you choose at checkout.</p>
+
+        <?php if (event_active('covid-19')) { ?>
+          <p><strong>Due to COVID-19, fulfillment may be delayed.</strong> <?php echo $config['covid_estimate'] ?></p>
+        <?php } ?>
+
+        <p><small>Crimea, Cuba, Iran, Syria, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the origin and destination countries.</small></p>
     </div>
 </section>
 

@@ -29,7 +29,6 @@ class Slack
      * @var string[]
      */
     protected static $filterCommunityUsers = array(
-        'U02CH39T2', // nathandyer
         'U0J4L6LLB', // bflo
         'U02DCH8AF', // ikey
         'U043P7SCH', // debarshi.ray
@@ -51,7 +50,7 @@ class Slack
         'U7MM8V79U', // esodan
         'U02BZA3JZ', // isantop
         'U21C19CEN', // wimpress
-        'U2ASB5ABU', // ryansipes
+        'U79R457NK', // worldofpeace
     );
 
     /**
@@ -146,14 +145,6 @@ class Slack
                 return 1;
             }
 
-            // Online people first
-            if ($a['presence'] == 'active' && $b['presence'] != 'active') {
-                return -1;
-            }
-            if ($b['presence'] == 'active' && $a['presence'] != 'active') {
-                return 1;
-            }
-
             // Sort alphabetically
             return strcasecmp($a['name'], $b['name']);
         });
@@ -199,7 +190,7 @@ class Slack
      */
     public function members()
     {
-        $res = $this->response('/users.list?presence=1');
+        $res = $this->response('/users.list');
 
         if (isset($res['members']) === false) {
             return array();

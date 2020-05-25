@@ -42,6 +42,20 @@ body {
     box-sizing: inherit;
 }
 
+/* Code for old Firefox and KaiOS */
+::-moz-selection {
+    background-color: rgba(140, 213, 255, 0.3);
+    color: rgb(0, 46, 153);
+    text-shadow: none;
+}
+
+/* Code for modern browsers */
+::selection {
+    background-color: rgba(140, 213, 255, 0.3);
+    color: rgb(0, 46, 153);
+    text-shadow: none;
+}
+
 /**************
 * Text Styles *
 **************/
@@ -84,27 +98,27 @@ h1 .logotype-svg {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 300;
     margin: 0 0 16px;
     padding: 0;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 600;
     opacity: 0.8;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 1.25em;
+    font-weight: 400;
     margin-bottom: 16px;
     margin-top: 16px;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     margin-bottom: 3px;
     margin-top: 0;
@@ -169,14 +183,6 @@ img.inline + div.inline {
     margin-left: 12px;
 }
 
-.img--cutoff-bottom::after {
-    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-}
-
 .inline-tweet {
     color: inherit;
 }
@@ -208,16 +214,16 @@ img.inline + div.inline {
 
 .read-more::after {
     color: inherit;
-    content: "»";
+    content: "→";
     display: inline-block;
     font-style: normal;
     font-weight: inherit;
-    padding-left: 6px;
+    padding-left: 3px;
     transition: transform 0.15s ease-in-out;
 }
 
 .read-more:hover::after {
-    transform: translateX(10px);
+    transform: translateX(3px);
 }
 
 .text-left {
@@ -681,6 +687,10 @@ a.third:hover {
     color: #fbc02d;
 }
 
+.info {
+    color: #3689e6;
+}
+
 .row.alert {
     border: 2px solid #333;
     border-radius: 6px;
@@ -697,6 +707,11 @@ a.third:hover {
     border-color: #fbc02d;
 }
 
+.row.alert.info {
+    background-color: rgba(140, 213, 255, 0.125);
+    border-color: #8cd5ff;
+}
+
 .column.alert {
     margin: 5px;
     max-width: calc(100% - 70px);
@@ -705,6 +720,10 @@ a.third:hover {
 
 .row.alert > .column.alert {
     color: rgba(0, 0, 0, 0.8);
+}
+
+.row.alert.info > .column.alert {
+    color: #002e99;
 }
 
 .column.alert h3 {
@@ -1375,4 +1394,46 @@ i.fa.fa-close.close-modal {
     .flex-row .flex-column p {
         text-align: left;
     }
+}
+
+/**********************
+* Learning the basics *
+***********************/
+
+.annotated {
+    margin: 1.5em auto;
+}
+
+.annotated ol {
+    padding: 0;
+    display: flex;
+}
+
+.annotated li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.annotated li:first-child {
+    text-align: left;
+}
+
+.annotated li:last-child {
+    text-align: right;
+}
+
+.annotated li span {
+    position: relative;
+}
+
+.annotated li span::before {
+    content: "|";
+    position: absolute;
+    left: 50%;
+    top: 0.9em;
+}
+
+.docs .annotated img {
+    margin: 0;
 }

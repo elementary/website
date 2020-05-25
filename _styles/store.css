@@ -9,6 +9,18 @@
     margin: 24px;
 }
 
+/**********************************
+* Hardware partners and retailers *
+**********************************/
+
+#devices * {
+    text-align: center;
+}
+
+#devices li {
+    text-align: left;
+}
+
 /***************************
 * Category view of product *
 ***************************/
@@ -57,7 +69,7 @@
 
 .modal--product p {
     font-size: 14px;
-    margin: 0;
+    margin: 1em 0;
     text-align: left;
 }
 

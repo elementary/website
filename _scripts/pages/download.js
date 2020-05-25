@@ -13,6 +13,10 @@ import config from '~/config'
 import Payment from '~/widgets/payment'
 
 Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
+    // DEBUG
+    console.log('Config at download.js:')
+    console.log(config)
+    // END DEBUG
     const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {
@@ -101,6 +105,14 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             console.log('Payment initiated with selection ' + currentButton)
             var paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
+
+            // Disables button for 3 seconds after clicking it
+            var download = $(this)
+            download.prop('disabled', true)
+            setTimeout(function () {
+                download.prop('disabled', false)
+            }, 3000)
+
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
@@ -111,16 +123,16 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
-                .then(([token]) => doStripePayment(paymentAmount, token))
-                .then(() => openDownloadOverlay())
-                .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
-                .catch((err) => {
-                    console.error('Error while making payment')
-                    console.error(err)
-                    ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
-                    openDownloadOverlay() // Just in case. Don't interupt the flow
-                    throw err // rethrow so it can be picked up by error tracking
-                })
+                    .then(([token]) => doStripePayment(paymentAmount, token))
+                    .then(() => openDownloadOverlay())
+                    .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
+                    .catch((err) => {
+                        console.error('Error while making payment')
+                        console.error(err)
+                        ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
+                        openDownloadOverlay() // Just in case. Don't interupt the flow
+                        throw err // rethrow so it can be picked up by error tracking
+                    })
             }
         })
 
@@ -152,7 +164,8 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             var $amountTwenty = $('#amount-twenty')
             if ($amountTwenty.val() !== 0) {
                 $('#pay-what-you-want').remove()
-                $('#choice-buttons').html('<input type="hidden" id="amount-twenty" value="0">')
+                $('#choice-buttons').remove()
+                $('#amounts').append('<div id="choice-buttons"><input type="hidden" id="amount-twenty" value="0"></div>')
                 currentButton = 'amount-twenty'
                 updateDownloadButton()
             }
@@ -166,8 +179,8 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                     email: token.email,
                     os: detectedOS
                 })
-                .done((res) => resolve(res))
-                .fail((xhr, status) => reject(new Error(status)))
+                    .done((res) => resolve(res))
+                    .fail((xhr, status) => reject(new Error(status)))
             })
         }
 

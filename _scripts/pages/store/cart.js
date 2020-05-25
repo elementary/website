@@ -80,19 +80,19 @@ Promise.all([jQuery]).then(([$]) => {
                 math: 'set',
                 simple: true
             })
-            .done(function (data) {
-                if (data === 'OK') {
-                    $error.text('')
+                .done(function (data) {
+                    if (data === 'OK') {
+                        $error.text('')
 
-                    if (quantity <= 0) $item.remove()
+                        if (quantity <= 0) $item.remove()
 
-                    updateTotal()
-                } else {
-                    console.error('Unable to update cart quantity')
-                    console.error(data)
-                    $error.text('Unable to update quantity')
-                }
-            })
+                        updateTotal()
+                    } else {
+                        console.error('Unable to update cart quantity')
+                        console.error(data)
+                        $error.text('Unable to update quantity')
+                    }
+                })
         })
 
         /**
@@ -109,12 +109,12 @@ Promise.all([jQuery]).then(([$]) => {
 
             if (notify) ga('send', 'event', 'Cart', 'Country Change', value)
 
-            if (country[value] != null && typeof country[value]['states'] === 'object') {
+            if (country[value] != null && typeof country[value].states === 'object') {
                 $state.empty()
                 var options = []
 
-                Object.keys(country[value]['states']).forEach(function (code) {
-                    var state = country[value]['states'][code]
+                Object.keys(country[value].states).forEach(function (code) {
+                    var state = country[value].states[code]
                     options.push('<option value="' + code + '">' + state + '</option>')
                 })
 

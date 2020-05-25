@@ -45,7 +45,7 @@ Whitespace goes in all maths-related code, between numbers and operators.
 
     c = n * 2 + 4;
 
-Lines consisting of closing brackets (`}` or `)`) should be followed by an empty 
+Lines consisting of closing brackets (`}` or `)`) should be followed by an empty
 line, except when followed by another closing bracket or an `else` statement.
 
 
@@ -138,6 +138,13 @@ than good.
         c = 0;           // No need for c to be positive
         l = n * 2 + 4;   // Clear l variable
     }
+
+
+Sometimes detailed descriptions in the context of translatable strings are necessary for disambiguation or to help in the creation of accurate translations. For these situations use `/// TRANSLATORS:` comments.
+
+
+    /// TRANSLATORS: The first %s is search term, the second is the name of default browser
+    title = _("Search for %s in %s").printf (query, get_default_browser_name ());
 
 ## Variable names, class names, function names {#variable-names-class-names-function-names}
 
@@ -336,6 +343,95 @@ public override bool configure_event (Gdk.EventConfigure event) {
 }
 ```
 
+# Logging {#logging}
+
+There are various logging methods to use and here are some sample references for you.
+
+## Critical {#critical}
+
+Critical log level is used when there is a severe application failure that should be investigated immediately.
+
+```vala
+public static int main (string[] args) {
+    // Use "G_DEBUG=fatal-warnings ./test" to abort the program
+    // at the first call to GLib.warning() or GLib.critical().
+
+    // Use "G_DEBUG=fatal-criticals ./test" to abort the program
+    // at the first call to GLib.critical().
+
+    // Output: `** (process:<PID>): CRITICAL **: <FILENAME>:<LINE>: my 10. critical`
+    critical ("my %d. %s", 10, "critical");
+    return 0;
+}
+```
+
+## Debug {#debug}
+
+Debug logs usually give detailed information on the flow through the system.
+
+```vala
+public static int main (string[] args) {
+    // Use "G_MESSAGES_DEBUG=all ./test" to print debug messages.
+
+    // Output: `** (process:<PID>): DEBUG: <FILENAME>:<LINE>: my 10. debug message`
+    debug ("my %d. %s", 10, "debug message");
+    return 0;
+}
+```
+
+## Error {#error}
+
+Error log level includes logs for runtime errors or unexpected conditions. These errors are immediately visible on a status console and causes premature termination.
+
+```vala
+public static int main (string[] args) {
+    // Output:
+    //   `** (process:<PID>): ERROR **: <FILENAME>:<LINE>: my 10. error`
+    //   `Trace/breakpoint trap`
+
+    // Terminate calling process & log an error:
+    error ("my %d. %s", 10, "error");
+}
+```
+
+## Info {#info}
+
+Use info log level to log informational messages as well as interesting runtime events. These logs are also immediately visible on a status console, and should be kept to a minimum.
+
+```vala
+public static int main (string[] args) {
+    // Output: `** (process:<PID>): INFO: <FILENAME>:<LINE>: my 10. info message`
+    info ("my %d. %s", 10, "info message");
+}
+```
+
+## Message {#message}
+
+Use the message log level to output a message.
+
+```vala
+public static int main (string[] args) {
+    // Output: `** Message: <FILENAME>:<LINE>: my 10. message`
+    message ("my %d. %s", 10, "message");
+    return 0;
+}
+```
+
+## Warning {#warning}
+
+The warn log level outputs messages that warns of, for example, use of deprecated APIs, 'almost' errors, or runtime situations that are undesirable or unexpected, but not necessarily "wrong". These logs are immediately visible on a status console.
+
+```vala
+public static int main (string[] args) {
+    // Use "G_DEBUG=fatal-warnings ./test" to abort the program at the first
+    // call to GLib.warning() or GLib.critical().
+
+    // Output: `** (process:<PID>): WARNING **: <FILENAME>:<LINE>: my 10. warning`
+    warning ("my %d. %s", 10, "warning");
+    return 0;
+}
+```
+
 # Reporting Bugs {#reporting-bugs}
 
 One of the big advantages of being an openly developed project is being able to take part in public bug tracking. However, if you're new to working with public bug tracking, it can be difficult to understand how to report bugs The Right Way™. So let's find out how:
@@ -368,7 +464,7 @@ If you're reporting a "Wishlist" issue, like a feature request, a developer may 
 
 ## You Can Get a Bit of Help {#you-can-get-a-bit-of-help}
 
-If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://join.slack.com/t/elementarycommunity/shared_invite/enQtMzU1NDU4OTE1MjY2LWUyOTBkZGNkZGM4MDgzZjE2ZjRiZDgwMDQ1ZTA0MzcxYjI0MDUyNGRlNDI5ZWViNDkwMzMwYzczMDY2ZjA0MTc). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
+If you're not sure about anything above, you are always welcome to chat with community members and developers in the [Community Slack](https://community-slack.elementary.io/). We might be able to help you track down the actual project where you should report the issue, or perhaps even aid you with any English language issue you might come across. Most developers want to help you make good bug reports.
 
 ## Don't Make "Me Too" Comments {#dont-make-me-too-comments}
 
@@ -411,4 +507,3 @@ Don’t be upset if a developer plainly states that they don’t want to impleme
 ## Tracking Proposals {#tracking-proposals}
 
 Lets say you've convinced the developers of the merits of your new design, how do you keep track of the progress? GitHub has a projects feature for tracking isssues and their progress as apart of larger initiaves. Projects are managed on a per-repository basis at each individual GitHub repository (check out the projects board for this website [here](https://github.com/elementary/website/projects)) and by the elementary organization (check out elementary's projects [here](https://github.com/orgs/elementary/projects)) to track initiaves across projects. Projects are maintained by the owner of the GitHub repo or by elementary and link back to the issues you've created.
-
