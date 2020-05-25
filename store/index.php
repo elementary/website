@@ -164,17 +164,17 @@
 
     <div class="grid">
         <div class="third">
-            <h4><a href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank">Laptop With Linux</a></h4>
+            <h4 class="logo"><a class="read-more" href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Laptop With Linux">Laptop With Linux</a></h4>
             <ul>
-                <li>Laptops and mini desktops</li>
+                <li>Laptops, mini desktops</li>
                 <li>Based in the Netherlands</li>
-                <li>International shipping (free within Europe)</li>
+                <li>International shipping (free within EU)</li>
             </ul>
         </div>
         <div class="third">
-            <h4><a href="https://slimbook.es/" target="_blank">Slimbook</a></h4>
+            <h4 class="logo"><a class="read-more" href="https://slimbook.es/" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
             <ul>
-                <li>Laptops, desktops, mini desktops, and all-in-ones</li>
+                <li>Laptops, desktops, all-in-ones</li>
                 <li>Based in Spain</li>
                 <li>International shipping</li>
             </ul>

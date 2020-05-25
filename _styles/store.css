@@ -17,6 +17,23 @@
     text-align: center;
 }
 
+/*#devices h4 a {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*}*/
+
+#devices h4 a::after {
+    content: "→";
+    /*position: absolute;*/
+    /*right: -1em;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+
+/*#devices img {*/
+/*    max-height: 32px;*/
+/*}*/
+
 #devices li {
     text-align: left;
 }
