@@ -17,6 +17,7 @@
         <h4>Give your customers the best experience with elementary OS.</h4>
     </div>
 </div>
+
 <div class="grid">
     <div class="two-thirds">
         <h2>Partners &amp; Retailers</h2>
@@ -44,6 +45,7 @@
         </ul>
     </div>
 </div>
+
 <div class="grid">
     <div class="two-thirds">
         <h2>Resources</h2>
