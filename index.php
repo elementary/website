@@ -61,7 +61,7 @@
                             <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
                             <p class="small-label">
                                 elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?><br>
-                                <?php echo $config['release_size']; ?> | 64-bit
+                                <?php echo $config['release_size']; ?> | 64-bit | <a href="docs/recommended-system-specifications" target="_blank" rel="noopener">recommended system specifications</a>
                             </p>
                         </div>
                         <div style="clear:both;"></div>
