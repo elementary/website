@@ -171,6 +171,14 @@
                 <li>International shipping (free within EU)</li>
             </ul>
         </div>
+        <div class="third">
+            <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
+            <ul>
+                <li>Laptops</li>
+                <li>Based in the United Kingdom</li>
+                <li>International shipping</li>
+            </ul>
+        </div>
     </div>
 
     <div class="two-thirds">
