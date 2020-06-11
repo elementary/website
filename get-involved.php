@@ -86,7 +86,7 @@
         </div>
         <div class="third">
             <i class="fa fa-shopping-cart"></i>
-            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers. Every purchase goes towards developing elementary OS, its apps, and its services.</p>
+            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
             <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
         </div>
     </div>
