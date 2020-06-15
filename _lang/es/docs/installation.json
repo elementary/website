@@ -1,7 +1,7 @@
 {
     "Installation": "Instalación",
     "Download elementary OS": "Descargar elementary OS",
-    "If you haven't already, you will need to <a href=\"\/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page<\/a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si no lo ha hecho aún, <a href=\"\/\" target=\"_blank\" rel=\"noopener\">descargue elementary OS desde nuestro sitio web<\/a>. Habrá de copiar el archivo ISO descargado en un soporte de memoria USB; para ello, siga estas instrucciones.",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si no lo ha hecho aún, <a href=\"/\" target=\"_blank\" rel=\"noopener\">descargue elementary OS desde nuestro sitio web</a>. Habrá de copiar el archivo ISO descargado en un soporte de memoria USB; para ello, siga estas instrucciones.",
     "Recommended System Specifications": "Especificaciones recomendadas para el sistema",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Aunque no tengamos un conjunto estricto de requisitos mínimos del sistema, recomendamos como poco las especificaciones siguientes para la mejor experiencia:",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "Procesador reciente, Intel i3 o equiparable, de dos núcleos y de 64 bits",
@@ -31,8 +31,8 @@
     "Booting from the Install Drive": "Arrancar desde la unidad de instalación",
     "In order to start the installation process, you must boot your computer from the install drive.": "Debe arrancar el equipo desde la unidad de instalación para comenzar a instalar el sistema.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Suponiendo que el equipo sigue encendido, comience por insertar la unidad de instalación y reiniciar el equipo.",
-    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12<\/kbd>, but sometimes <kbd>Esc<\/kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
-    "Press <kbd>F12<\/kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
+    "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
+    "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "",
     "Verify your Download": "Verifique su descarga",
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "",
@@ -49,7 +49,7 @@
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "Cuando termine será seguro quitar el disco e intentar arrancar para instalar elementary OS.",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
     "Not readable warning": "",
-    "After you hear the chime, press and hold <kbd>Option<\/kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
+    "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
     "Boot Errors": "Errores de arranque",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-5.1-stable.20200603.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
     "Running the following command in your terminal:": "Ejecutar la orden siguiente en el terminal:",
@@ -63,5 +63,5 @@
     "Unplug all USB memory devices apart from the one you want to use.": "Desconecte todos los dispositivos de memoria USB salvo el que va a utilizar.",
     "Click &quot;OK&quot; and wait for the process to finish.": "Pulse en «Aceptar» y espere a que finalice el proceso.",
     "After Installation": "Después de la instalación",
-    "Take this time to read the <a href=\"\/docs\/learning-the-basics\">getting started<\/a> guide to learn about your new operating system.": "Dedique un momento a leer la <a href=\"\/docs\/learning-the-basics\">guía de primeros pasos<\/a> para aprender a utilizar su nuevo sistema operativo."
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Dedique un momento a leer la <a href=\"/docs/learning-the-basics\">guía de primeros pasos</a> para aprender a utilizar su nuevo sistema operativo."
 }
