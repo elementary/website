@@ -86,7 +86,7 @@ $l10n->begin_html_translation();
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
-        <script async defer data-domain="elementary.io" src="https://plausible.io/js/plausible.js"></script>
+        <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
 
         <?php
             // loads all async javascript tags here
