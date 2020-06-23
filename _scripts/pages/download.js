@@ -3,7 +3,7 @@
  * Handles homepage payment and OS image downloading
  */
 
-/* global */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
