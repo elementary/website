@@ -125,7 +125,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
-                    .then(() => plausible(config.release.title + ' ' + config.release.version + ' Payment: Complete') // for paymentAmount
+                    .then(() => plausible(config.release.title + ' ' + config.release.version + ' Payment: Complete')) // for paymentAmount
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
