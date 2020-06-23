@@ -9,7 +9,6 @@
 ?>
 
 <script>window.statusCode = '404: Page Not Found'</script>
-<script src="scripts/error.js" async></script>
 
 <div class="row">
     <div class="column alert">
