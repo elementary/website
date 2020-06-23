@@ -120,16 +120,16 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 openDownloadOverlay()
             // Paid download
             } else {
-                plausible(config.release.title + ' ' + config.release.version + ' Payment: Initiated for ' + paymentAmount)
+                plausible(config.release.title + ' ' + config.release.version + ' Payment: Initiated') // for paymentAmount
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
-                    .then(() => plausible(config.release.title + ' ' + config.release.version + ' Payment: Complete for ' + paymentAmount)
+                    .then(() => plausible(config.release.title + ' ' + config.release.version + ' Payment: Complete') // for paymentAmount
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
-                        plausible(config.release.title + ' ' + config.release.version + ' Payment: Failed for ' + paymentAmount)
+                        plausible(config.release.title + ' ' + config.release.version + ' Payment: Failed') // for paymentAmount
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
