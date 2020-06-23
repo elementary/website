@@ -3,7 +3,7 @@
  * Tracking for download links
  */
 
-/* global ga */
+/* global */
 
 import jQuery from '~/lib/jquery'
 
@@ -36,14 +36,14 @@ Promise.all([config, jQuery]).then(([config, $]) => {
 
         // ACTION: .download-http.click: Track download over HTTP
         $('.download-link').click(function () {
-            ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (OS)', 'Homepage', detectedOS)
-            ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (Region)', 'Homepage', config.user.region)
+            plausible(config.previous.title + ' ' + config.previous.version + ' Download from OS: ' + detectedOS)
+            plausible(config.previous.title + ' ' + config.previous.version + ' Download from Region: ' + config.user.region)
         })
         $('.download-link.http').click(function () {
-            ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (Method)', 'Homepage', 'HTTP')
+            plausible(config.previous.title + ' ' + config.previous.version + ' Download Method: HTTP')
         })
         $('.download-link.magnet').click(function () {
-            ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (Method)', 'Homepage', 'Magnet')
+            plausible(config.previous.title + ' ' + config.previous.version + ' Download Method: Magnet')
         })
 
         console.log('Loaded previous.js')
