@@ -3,7 +3,7 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-/* global ga */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 
