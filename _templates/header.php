@@ -87,6 +87,7 @@ $l10n->begin_html_translation();
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
         <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
+        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
 
         <?php
             // loads all async javascript tags here
