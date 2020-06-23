@@ -3,7 +3,7 @@
  * Changes prices depending on shipping and gets stripe information
  */
 
-/* global ga */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 import Payment from '~/widgets/payment'
