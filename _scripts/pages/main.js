@@ -3,7 +3,7 @@
  * Loads all of the site wide snippets
  */
 
-/* global plausible */
+/* global */
 
 import jQuery from '~/lib/jquery'
 
