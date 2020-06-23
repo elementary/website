@@ -3,7 +3,7 @@
  * Tracking for download links
  */
 
-/* global */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 
