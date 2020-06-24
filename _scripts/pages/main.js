@@ -3,7 +3,6 @@
  * Loads all of the site wide snippets
  */
 
-
 import jQuery from '~/lib/jquery'
 
 import '~/external-links'
