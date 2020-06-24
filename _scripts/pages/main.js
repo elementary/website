@@ -5,6 +5,7 @@
 
 /* global ga */
 
+import '~/lib/analytics'
 import jQuery from '~/lib/jquery'
 
 import '~/external-links'
