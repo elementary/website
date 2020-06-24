@@ -3,11 +3,12 @@
  * Does update logic for cart quantities and some basic address validation
  */
 
-/* global plausible */
+/* global ga plausible */
 
 import jQuery from '~/lib/jquery'
 
 Promise.all([jQuery]).then(([$]) => {
+    ga('send', 'event', 'Store', 'Cart Visit')
     plausible('Store: Cart Visit')
 
     $(document).ready(function () {
@@ -107,6 +108,7 @@ Promise.all([jQuery]).then(([$]) => {
             const $state = $('select[name="state"]', form)
             const $statelabel = $('label[for="state"]', form)
 
+            if (notify) ga('send', 'event', 'Cart', 'Country Change', value)
             if (notify) plausible('Store: Country Change') // value
 
             if (country[value] != null && typeof country[value].states === 'object') {

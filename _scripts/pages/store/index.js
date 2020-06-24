@@ -3,12 +3,13 @@
  * Does logic for picking product variants and adding to cart
  */
 
-/* global plausible */
+/* global ga plausible */
 
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
 Promise.all([jQuery, modal]).then(([$]) => {
+    ga('send', 'event', 'Store', 'Store Visit')
     plausible('Store: Visit')
 
     $('document').ready(function () {
@@ -46,6 +47,7 @@ Promise.all([jQuery, modal]).then(([$]) => {
             })
             $trigger.click()
 
+            ga('send', 'event', 'Store', 'View Product', $item.data('product-name'))
             plausible('Store: View Product') // $item.data('product-name')
 
             updateShippingEstimate($item.attr('data-printful-id'))
