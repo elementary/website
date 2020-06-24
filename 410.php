@@ -9,6 +9,7 @@
 
 <script>window.statusCode = '410: Download Link Expired'</script>
 <script src="scripts/error.js" async></script>
+<script>plausible('Error 410: Download Link Expired')</script>
 
 <div class="row">
     <div class="column alert">
