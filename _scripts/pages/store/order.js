@@ -1,6 +1,6 @@
 /**
  * scripts/pages/store/order.js
- * Sends a nalytics notification on store order
+ * Sends analytics notification on store order
  */
 
 /* global plausible */
