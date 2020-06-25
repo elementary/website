@@ -86,9 +86,8 @@
         </div>
         <div class="third">
             <i class="fab fa-btc"></i>
-            <p>Show your support through coinbase. You will be able to support us via cryptocurrencies easily and securely.</p>
-            <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Donate with Crypto</a>
-            <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+            <p>Contribute via cryptocurrency with Coinbase. We can securely accept Bitcoin, Etherium, and other cryptocurrencies instantly.</p>
+            <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Pay with Crypto</a>
         </div>
     </div>
 </section>
