@@ -85,9 +85,9 @@
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
         <div class="third">
-            <i class="fa fa-shopping-cart"></i>
-            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
-            <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
+            <i class="fab fa-btc"></i>
+            <p>Contribute via cryptocurrency with Coinbase. We can securely accept Bitcoin, Etherium, and other cryptocurrencies instantly.</p>
+            <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Pay with Crypto</a>
         </div>
     </div>
 </section>
