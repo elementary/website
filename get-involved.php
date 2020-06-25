@@ -85,14 +85,6 @@
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
         <div class="third">
-            <i class="fa fa-shopping-cart"></i>
-            <p>Help us financially, plus get some exclusive elementary gear to show your support to friends, family, and coworkers.</p>
-            <a class="button flat" href="<?php echo $page['lang-root'].'store/'; ?>" target="_blank" rel="noopener">Visit Store</a>
-        </div>
-    </div>
-
-    <div class="grid">
-        <div class="third">
             <i class="fab fa-btc"></i>
             <p>Show your support through coinbase. You will be able to support us via cryptocurrencies easily and securely.</p>
             <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Donate with Crypto</a>
