@@ -14,6 +14,8 @@ While we don't have a strict set of minimum system requirements, we recommend at
 * Internet access
 * 1024×768 display
 
+You will also need a USB flash drive with at least 2 GB of free space for installation.
+
 <div class="row alert warning" markdown="1">
 <div class="column alert">
 <div class="icon">
