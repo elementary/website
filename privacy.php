@@ -25,13 +25,7 @@
                 <p>elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.</p>
             </div>
             <div class="row docs">
-                <h2>Blog</h2>
-                <p>Our <a href="https://blog.elementary.io" target="_blank">blog</a> does not use any external scripts, cookies, or other tracking methods.</p>
-            </div>
-            <div class="row docs">
                 <h2>elementary.io</h2>
-                <h3>Do Not Track</h3>
-                <p>This site honors the do-not-track setting found in most modern browsers and disables Plausible Analytics when it is present. We cannot automatically remove other tracking methods without severely impacting the use of the site. Should you wish to manually manage these tracking methods, reference the section on disabling cookies.</p>
                 <h3>Cookies</h3>
                 <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
                 <p>This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.</p>
