@@ -64,7 +64,7 @@ You'll need a USB flash drive with at least 2 GB of free space and a program cal
 5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click  ![the checksum icon](images/docs/installation/rufus_checksum_icon.png) {.inline}  next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
 
 ```bash nohighlight
-3dc04a92be64a183554ef2f0a29accf5d35b49bb661ac6fa3dc3ffb09ccb837f
+c6d33fd1db260d4e10e5ccbf38b09ba6287904c3388afa7db2de43736be7245d
 ```
 
 6. If the hashes match, click "START" and wait for the process to finish.
@@ -91,20 +91,20 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your Terminal:
 
 ```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-5.1-stable.20200603.iso
+shasum -a 256 ~/Downloads/elementaryos-5.1-stable.20200706.iso
 ```
 
 Should produce the output:
 
 ```bash nohighlight
-3dc04a92be64a183554ef2f0a29accf5d35b49bb661ac6fa3dc3ffb09ccb837f
+c6d33fd1db260d4e10e5ccbf38b09ba6287904c3388afa7db2de43736be7245d
 ```
 
 Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
 In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-5.1-stable.20200603.iso
+shasum -a 256 <Path to the Downloaded Folder>/elementaryos-5.1-stable.20200706.iso
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -138,7 +138,7 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-5.1-stable.20200603.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-5.1-stable.20200706.iso to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
@@ -153,13 +153,13 @@ Verifying your download is an important, but optional step. We generate a checks
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-5.1-stable.20200603.iso
+sha256sum elementaryos-5.1-stable.20200706.iso
 ```
 
 should produce the output:
 
 ```bash nohighlight
-3dc04a92be64a183554ef2f0a29accf5d35b49bb661ac6fa3dc3ffb09ccb837f
+c6d33fd1db260d4e10e5ccbf38b09ba6287904c3388afa7db2de43736be7245d
 ```
 
 ## Creating an Install Drive {#creating-an-installation-medium .clear-float}
