@@ -6,7 +6,7 @@ return array(
     'release_title'    => 'Hera',
     'release_version'  => '5.1.6',
     'release_filename' => 'elementaryos-5.1-stable.20200706.iso',
-    'release_size'     => '1.38 GB',
+    'release_size'     => '1.48 GB',
     'release_magnet'   => '2d27ecbc35c83953aa72778f361355469416a85d',
 
     'previous_title'    => 'Juno',
