@@ -36,7 +36,8 @@ Promise.all([config, jQuery]).then(([config, $]) => {
 
         // ACTION: .download-http.click: Track download over HTTP
         $('.download-link').click(function () {
-            plausible(config.previous.title + ' ' + config.previous.version + ' Download of Previous Version')
+            plausible('Download of Previous Version')
+            plausible('Download of ' + config.previous.title + ' ' + config.previous.version)
             ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', config.previous.title + ' ' + config.previous.version + ' Download (Region)', 'Homepage', config.user.region)
         })
