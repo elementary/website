@@ -52,7 +52,7 @@
     "Not readable warning": "読み込みできないという警告",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "起動音がなったら、<kbd>Option</kbd> キーを押しつづけてください。そして、適切なブートドライブを選択してください。間違って &quot;Windows&quot; として認識されることがありますが、これは正常です。",
     "Boot Errors": "ブートエラー",
-    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-5.1-stable.20200706.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
+    "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn elementaryos-5.1-stable.20200706.iso to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "ブートメニューで elementary OS の USB インストールドライブが認識されない場合は、代わりに elementary OS のインストール DVD を作成する必要があります。空の DVD を挿入して、Finder で ISO ファイルを右クリックし、&quot;ディスクイメージ“elementaryos-5.1-stable.20200706.iso”をディスクに書き込む…&quot; を選択します。完了したら、インストール DVD からもう一度起動してみてください。",
     "Running the following command in your terminal:": "ターミナルで以下のコマンドを実行します。",
     "should produce the output:": "次のように出力されるはずです。",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "2 GB 以上の空き容量がある USB フラッシュドライブと、UNetbootin というプログラムが必要になります。",
