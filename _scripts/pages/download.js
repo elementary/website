@@ -116,24 +116,24 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
-                plausible(config.release.title + ' ' + config.release.version + ' Payment: Skipped')
+                plausible('Payment: Skipped')
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
             } else {
                 ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
-                plausible(config.release.title + ' ' + config.release.version + ' Payment: Initiated') // for paymentAmount
+                plausible('Payment: Initiated') // for paymentAmount
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
                     .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
-                    .then(() => plausible(config.release.title + ' ' + config.release.version + ' Payment: Complete')) // for paymentAmount
+                    .then(() => plausible('Payment: Complete')) // for paymentAmount
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
                         ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
-                        plausible(config.release.title + ' ' + config.release.version + ' Payment: Failed') // for paymentAmount
+                        plausible('Payment: Failed') // for paymentAmount
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
@@ -192,16 +192,17 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
         $('.download-link').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
-            plausible(config.release.title + ' ' + config.release.version + ' Download from OS: ' + detectedOS)
-            plausible(config.release.title + ' ' + config.release.version + ' Download from Region: ' + config.user.region)
+            plausible('Download of ' + config.release.title + ' ' + config.release.version)
+            plausible('Download from OS: ' + detectedOS)
+            plausible('Download from Region: ' + config.user.region)
         })
         $('.download-link.http').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
-            plausible(config.release.title + ' ' + config.release.version + ' Download Method: HTTP')
+            plausible('Download Method: HTTP')
         })
         $('.download-link.magnet').click(function () {
             ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
-            plausible(config.release.title + ' ' + config.release.version + ' Download Method: Magnet')
+            plausible('Download Method: Magnet')
         })
 
         // RETURN: openDownloadOverlay: Open the Download modal.
