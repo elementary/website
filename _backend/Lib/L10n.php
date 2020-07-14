@@ -69,7 +69,8 @@ class L10n
             glob($rootDirectory . '/*.{php,md}', GLOB_BRACE),
             glob($rootDirectory . '/docs/*.md'),
             glob($rootDirectory . '/docs/code/*.md'),
-            glob($rootDirectory . '/store/*.php')
+            glob($rootDirectory . '/store/*.php'),
+            glob($rootDirectory . '/_templates/*.php')
         );
 
         $pages = array();

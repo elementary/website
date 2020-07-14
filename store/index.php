@@ -168,7 +168,7 @@
             <ul>
                 <li>Laptops, mini desktops</li>
                 <li>Based in the Netherlands</li>
-                <li>International shipping (free within EU)</li>
+                <li>Free shipping within EU</li>
             </ul>
         </div>
         <div class="third">
