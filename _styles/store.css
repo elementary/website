@@ -9,6 +9,18 @@
     margin: 24px;
 }
 
+/**********************************
+* Hardware partners and retailers *
+**********************************/
+
+#devices * {
+    text-align: center;
+}
+
+#devices li {
+    text-align: left;
+}
+
 /***************************
 * Category view of product *
 ***************************/

@@ -1,8 +1,9 @@
 /**
  * scripts/pages/store/order.js
- * Sends a nalytics notification on store order
+ * Sends analytics notification on store order
  */
 
-/* global ga */
+/* global ga plausible */
 
 ga('send', 'event', 'Store', 'Order Completion')
+plausible('Store: Order Completion')

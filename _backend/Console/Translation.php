@@ -134,7 +134,7 @@ foreach ($pages as $page) {
         }
 
         if (count($newTranslations) > 0) {
-            $newData = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+            $newData = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES );
             file_put_contents($languagePath, $newData . PHP_EOL);
         } elseif (file_exists($languagePath)) {
             unlink($languagePath);

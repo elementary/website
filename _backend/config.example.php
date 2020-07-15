@@ -4,10 +4,10 @@
 
 return array(
     'release_title'    => 'Hera',
-    'release_version'  => '5.1.4',
-    'release_filename' => 'elementaryos-5.1-stable.20200501.iso',
+    'release_version'  => '5.1.6',
+    'release_filename' => 'elementaryos-5.1-stable.20200706.iso',
     'release_size'     => '1.48 GB',
-    'release_magnet'   => '444f6d8b8c3a5363a80216c4e97c7460ad0325bf',
+    'release_magnet'   => '2d27ecbc35c83953aa72778f361355469416a85d',
 
     'previous_title'    => 'Juno',
     'previous_version'  => '0.4.1',
@@ -41,5 +41,5 @@ return array(
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
 
-    'covid_estimate' => 'Current estimates are 13–16 business days for apparel shipping from the US, 4–7 business days for apparel shipping from the EU, 6–9 business days for mugs shipping from the US, and 2–4 business days for mugs shipping from the EU.',
+    'covid_estimate' => 'Current estimates are 20–25 business days for apparel shipping from the US, 9–12 business days for apparel shipping from the EU, 9–12 business days for mugs shipping from the US, and 1–3 business days for mugs shipping from the EU.',
 );
