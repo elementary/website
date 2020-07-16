@@ -9,7 +9,6 @@
 ?>
 
 <script>window.statusCode = '403: Forbidden'</script>
-<script src="scripts/error.js" async></script>
 
 <div class="row">
     <div class="column alert">

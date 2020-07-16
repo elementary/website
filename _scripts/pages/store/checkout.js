@@ -3,13 +3,12 @@
  * Changes prices depending on shipping and gets stripe information
  */
 
-/* global ga plausible */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 import Payment from '~/widgets/payment'
 
 Promise.all([jQuery, Payment]).then(([$, Payment]) => {
-    ga('send', 'event', 'Store', 'Checkout Visit')
     plausible('Store: Checkout Visit')
 
     const payment = new Payment('Store')
@@ -80,7 +79,6 @@ Promise.all([jQuery, Payment]).then(([$, Payment]) => {
         var $form = $('form[action$="order"]')
 
         function processPayment (amount, token) {
-            ga('send', 'event', 'elementary store' + 'payment process', 'store', amount)
             plausible('Store: Payment Processed') // amount
 
             $('input[name="stripe-token"]', $form).val(token.id)

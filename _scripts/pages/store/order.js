@@ -3,7 +3,6 @@
  * Sends analytics notification on store order
  */
 
-/* global ga plausible */
+/* global plausible */
 
-ga('send', 'event', 'Store', 'Order Completion')
 plausible('Store: Order Completion')

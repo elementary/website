@@ -3,7 +3,7 @@
  * Handles homepage payment and OS image downloading
  */
 
-/* global ga plausible */
+/* global plausible */
 
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
@@ -115,24 +115,20 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Skip)', 'Homepage', paymentAmount)
                 plausible('Payment: Skipped')
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
             } else {
-                ga('send', 'event', config.release.title + ' ' + config.release.version + ' Payment (Initiated)', 'Homepage', paymentAmount)
                 plausible('Payment: Initiated') // for paymentAmount
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
-                    .then(() => ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Complete)`, 'Homepage', paymentAmount))
                     .then(() => plausible('Payment: Complete')) // for paymentAmount
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
-                        ga('send', 'event', `${config.release.title} ${config.release.version} Payment (Failed)`, 'Homepage', paymentAmount)
                         plausible('Payment: Failed') // for paymentAmount
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
@@ -190,18 +186,14 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: .download-http.click: Track download over HTTP
         $('.download-link').click(function () {
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (OS)', 'Homepage', detectedOS)
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Region)', 'Homepage', config.user.region)
             plausible('Download of ' + config.release.title + ' ' + config.release.version)
             plausible('Download from OS: ' + detectedOS)
             plausible('Download from Region: ' + config.user.region)
         })
         $('.download-link.http').click(function () {
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'HTTP')
             plausible('Download Method: HTTP')
         })
         $('.download-link.magnet').click(function () {
-            ga('send', 'event', config.release.title + ' ' + config.release.version + ' Download (Method)', 'Homepage', 'Magnet')
             plausible('Download Method: Magnet')
         })
 
