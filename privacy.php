@@ -26,13 +26,13 @@
             </div>
             <div class="row docs">
                 <h2>elementary.io</h2>
+                <h3 data-l10n-off>Plausible Analytics</h3>
+                <p>We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
                 <h3>Cookies</h3>
                 <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
                 <p>This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.</p>
                 <h5 data-l10n-off>Cloudflare</h5>
                 <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://www.cloudflare.com/security-policy">Cloudflare Privacy &amp; Security Policy</a></p>
-                <h5 data-l10n-off>Plausible</h5>
-                <p>We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
                 <h5 data-l10n-off>Stripe</h5>
                 <p>Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see <a class="read-more" target="_blank" rel="noopener" href="https://stripe.com/privacy">Stripe's Privacy Policy</a></p>
                 <h5>Manage Cookies</h5>
