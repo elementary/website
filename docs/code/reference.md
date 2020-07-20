@@ -267,12 +267,12 @@ Saving window state (i.e. size and position) should be done consistently across 
   <description>Whether the window is maximized</description>
 </key>
 <key name="window-position" type="(ii)">
-  <default>(1024, 750)</default>
+  <default>(-1, -1)</default>
   <summary>Window position</summary>
   <description>Most recent window position (x, y)</description>
 </key>
 <key name="window-size" type="(ii)">
-  <default>(-1, -1)</default>
+  <default>(1024, 750)</default>
   <summary>Window size</summary>
   <description>Most recent window size (width, height)</description>
 </key>
