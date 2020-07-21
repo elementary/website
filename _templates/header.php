@@ -86,7 +86,10 @@ $l10n->begin_html_translation();
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
+        
+        <?php if ( !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io' ) { ?>
         <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
+        <?php } ?>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
 
         <?php
