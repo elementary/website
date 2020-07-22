@@ -1,0 +1,90 @@
+---
+
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  Lint_Css:
+    name: Lint (CSS)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+
+      - name: Lint
+        run: ./_tests/css.sh
+
+  Lint_Javascript:
+    name: Lint (JS)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+
+      - name: Lint
+        run: ./_tests/javascript.sh
+
+  Lint_Php:
+    name: Lint (PHP)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
+      - name: Lint
+        run: ./_tests/php.sh
+
+  Lint_Translations:
+    name: Lint (Translations)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
+      - name: Lint
+        run: ./_tests/translations.sh
+
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+
+      - name: Build
+        run: npm run build
