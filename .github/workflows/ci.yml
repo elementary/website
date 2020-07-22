@@ -108,7 +108,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: ./_tests/translations.sh
+        run: ./_tests/translations.php
 
   Build:
     runs-on: ubuntu-latest
