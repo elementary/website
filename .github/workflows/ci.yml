@@ -18,10 +18,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          tools: composer
+
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.0
         with:
           node-version: 12.x
+
+      - name: Install
+        run: npm ci
 
       - name: Lint
         run: ./_tests/css.sh
@@ -34,10 +43,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          tools: composer
+
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.0
         with:
           node-version: 12.x
+
+      - name: Install
+        run: npm ci
 
       - name: Lint
         run: ./_tests/javascript.sh
@@ -54,6 +72,15 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
+          tools: composer
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+
+      - name: Install
+        run: npm ci
 
       - name: Lint
         run: ./_tests/php.sh
@@ -70,6 +97,15 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
+          tools: composer
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.x
+
+      - name: Install
+        run: npm ci
 
       - name: Lint
         run: ./_tests/translations.sh
@@ -81,10 +117,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          tools: composer
+
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.0
         with:
           node-version: 12.x
+
+      - name: Install
+        run: npm ci
 
       - name: Build
         run: npm run build
