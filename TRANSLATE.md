@@ -12,7 +12,7 @@ It's not a good practice to review strings translated by ourselves. Instead, fin
 
 ## Updating
 
-Languages are updated automaticlly when code is changed. This may take time to update, so please be patient.
+Languages are updated automatically when code is changed. This may take time to update, so please be patient.
 
 # Web developers
 
