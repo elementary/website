@@ -131,7 +131,7 @@
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS 帮助你时刻了解应用程序的小动作。当应用使用你的麦克风、当应用大量消耗电池电量的时候，我们会在指示器中做出提醒。",
     "Location Services": "位置服务",
     "When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.": "应用需要使用你的位置信息时，必须发出请求，只有得到你的授权，应用才能访问这些数据。你可以随时在设置 → 安全和隐私面板中配置这些权限。",
-    "Housekeeping": "打扫一下",
+    "Housekeeping": "自动清理",
     "elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS 可以自动清理临时文件和垃圾。保持设备存储空间充足的同时保证你的隐私数据不受损害。",
     "elementary OS logo": "",
     "Download elementary OS": "下载 elementary OS",
