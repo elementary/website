@@ -15,14 +15,14 @@
     "We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/elementary.io\">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class=\"read-more\" target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/data-policy\">Plausible Data Policy</a>": "",
     "Cookies": "",
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>您可以在浏览器设置里禁用所有 Cookies 或者第三方 Cookies。</strong>",
-    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "",
-    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "",
-    "Cloudflare Privacy &amp; Security Policy": "",
+    "This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.": "此站点使用 Cookies 进行增量改进。您会发现没有它们的话，网站各项服务仍能使用，但可用性降低了。例如，elementary 网站不会记得您以前是否为 elementary OS 操作系统付过费。默认情况下，您将被要求再次付费。",
+    "Stores cookies to log behavioral elements and analyze potential threats. For more information, see the": "存储 Cookies 以记录行为元素并分析潜在威胁。更多信息，请参见",
+    "Cloudflare Privacy &amp; Security Policy": "CloudFlare 隐私和安全政策",
     "Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see": "",
-    "Stripe's Privacy Policy": "",
+    "Stripe's Privacy Policy": "Stripe 的隐私政策",
     "Manage Cookies": "管理 Cookies",
-    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "",
-    "Transparency": "",
-    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "",
-    "Privacy &sdot; elementary": ""
+    "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "由于您已经访问过我们的网站，您可能想要管理已保存在浏览器中的 Cookies。您可以在下列链接中找到相关说明。",
+    "Transparency": "透明度",
+    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "我们没有在软件中放置任何后门，也没有收到任何这样做的请求。我们也从未收到国家安全密函、FISA 命令或任何其他涉及用户信息的机密请求。",
+    "Privacy &sdot; elementary": "隐私 &sdot; elementary"
 }
