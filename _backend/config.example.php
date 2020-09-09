@@ -41,5 +41,5 @@ return array(
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
 
-    'covid_estimate' => 'Current estimates are 20–25 business days for apparel shipping from the US, 9–12 business days for apparel shipping from the EU, 9–12 business days for mugs shipping from the US, and 1–3 business days for mugs shipping from the EU.',
+    'covid_estimate' => 'Current estimated delays are 2–7 business days for apparel and 2–5 business days for mugs.',
 );
