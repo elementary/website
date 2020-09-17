@@ -70,10 +70,8 @@ $l10n->begin_html_translation();
 
         <?php if ($page['lang']) { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono&subset=latin,greek,vietnamese,greek-ext,latin-ext,cyrillic,cyrillic-ext">
         <?php } else { ?>
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:300,400,600,700,300italic,400italic|Roboto+Mono">
         <?php } ?>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
@@ -86,11 +84,11 @@ $l10n->begin_html_translation();
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
         <script src="scripts/common.js"></script>
         <script src="scripts/main.js" async></script>
-        
+
         <?php if ( !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io' ) { ?>
         <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
         <?php } ?>
-        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
+        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
         <?php
             // loads all async javascript tags here

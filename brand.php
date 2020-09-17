@@ -367,7 +367,7 @@
 
 <div class="row docs">
     <h2>Fonts</h2>
-    <p>For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.</p>
+    <p>For web and print, we use Inter for headings and body copy. For code blocks, we use Roboto Mono.</p>
 </div>
 
 <div class="row docs">

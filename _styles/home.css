@@ -403,8 +403,13 @@ input:focus + .focus-reveal {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-#appcenter h1 span {
-    font-weight: 800;
+#appcenter h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+#appcenter h2 strong {
+    font-weight: 900;
 }
 
 #appcenter .buttons {
@@ -1152,7 +1157,7 @@ span.results-title {
 
 #parental-controls .app-display__description svg {
     float: left;
-    margin: 1em 0.5em 1em 0;
+    margin: 0.25em 0.5em 1em 0;
 }
 
 #parental-controls .app-display__description svg,

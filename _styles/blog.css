@@ -86,7 +86,8 @@
 }
 
 #whats-new .featured header h4 + p {
-    margin-top: -1.25em;
+    line-height: 1.25;
+    margin-top: -1em;
     margin-bottom: 1em;
     opacity: 0.75;
 }
@@ -115,7 +116,6 @@
 }
 
 #whats-new .byline {
-    font-family: "Open Sans", "Noto Sans", "Roboto", "Droid Sans", sans-serif;
     font-size: 0.8em;
     line-height: 1.5em;
     margin: 1.5em auto;

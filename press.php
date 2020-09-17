@@ -14,7 +14,7 @@
 <div class="grid">
     <div class="two-thirds">
         <h1>Press Resources</h1>
-        <h4>We love working with press—both within the Linux world and the greater tech and culture beats—to share our story and what we are working on.</h4>
+        <p>We love working with press—both within the Linux world and the greater tech and culture beats—to share our story and what we are working on.</p>
     </div>
 </div>
 

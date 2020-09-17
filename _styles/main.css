@@ -3,21 +3,10 @@
 * This file is part of elementary.io *
 *************************************/
 
-@font-face {
-    font-family: 'Raleway';
-    src:
-        url('../fonts/Raleway-thin.woff2') format('woff2'),
-        url('../fonts/Raleway-thin.woff')  format('woff'),
-        url('../fonts/Raleway-thin.ttf')   format('truetype');
-}
+@import url('/fonts/inter.css');
 
-@font-face {
-    font-family: 'Raleway';
-    font-style: italic;
-    src:
-        url('../fonts/Raleway-thin-italic.woff2') format('woff2'),
-        url('../fonts/Raleway-thin-italic.woff')  format('woff'),
-        url('../fonts/Raleway-thin-italic.ttf')   format('truetype');
+:root {
+    --ui-font: Inter, Helvetica, Roboto, sans-serif;
 }
 
 html,
@@ -26,14 +15,11 @@ body {
     box-sizing: border-box;
     color: #333;
     fill: #333;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: var(--ui-font);
     font-weight: 400;
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -72,9 +58,8 @@ a:focus {
 }
 
 h1 {
-    font-family: "Raleway";
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 700;
     margin-bottom: 16px;
     margin-top: 0;
 }
@@ -95,6 +80,12 @@ h1 .logotype-svg {
     h1 {
         font-size: 48px;
     }
+}
+
+h1 + p {
+    font-size: 1.25em;
+    line-height: 1.33;
+    text-align: center;
 }
 
 h2 {

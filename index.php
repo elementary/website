@@ -27,8 +27,8 @@
         <section class="section--hero section--stretched">
             <div class="section__detail grid">
                 <div class="whole">
-                    <div id="logotype"><?php include __DIR__.'/images/logotype-os.svg'; ?></div>
-                    <h4><?php echo $sitewide['description']; ?></h4>
+                    <h1 id="logotype" alt="elementary OS"><?php include __DIR__.'/images/logotype-os.svg'; ?></h1>
+                    <p><?php echo $sitewide['description']; ?></p>
                 </div>
             </div>
 
@@ -132,7 +132,7 @@
                 <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
-                    <h1>Get it on <span>AppCenter</span></h1>
+                    <h2>Get it on <strong>AppCenter</strong></h2>
                     <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
                     <div class="buttons">
                         <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
@@ -478,7 +478,7 @@
         <section id="privacy">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>Privacy-respecting. Through and through.</h2>
+                    <h1>Privacy-respecting. Through and through.</h1>
                     <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
                     <a class="read-more" href="privacy">Our Privacy Policy</a>
                 </div>

@@ -60,7 +60,10 @@
 
 <section class="grid">
     <div class="two-thirds">
-        <h2>Support Development. Get Swag. Win Win.</h2>
+        <h1>
+            Support Development.<br />
+            Get Gear. Win/Win.
+        </h1>
         <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better—your support helps make elementary OS more sustainable.</p>
     </div>
 </section>
@@ -169,6 +172,14 @@
                 <li>Laptops, mini desktops</li>
                 <li>Based in the Netherlands</li>
                 <li>Free shipping within EU</li>
+            </ul>
+        </div>
+        <div class="third">
+            <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
+            <ul>
+                <li>Laptops, desktops, mini desktops, all-in-ones</li>
+                <li>Based in Spain</li>
+                <li>International shipping</li>
             </ul>
         </div>
         <div class="third">
