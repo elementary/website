@@ -79,13 +79,15 @@ include $template['alert'];
 <div class="row">
     <h2>Guides</h2>
 
-    <a class="column half" href="/docs/installation">
-        <h3><i class="fa fa-download"></i> Installation</h3>
+    <a class="column third" href="/docs/installation">
+        <i class="fa fa-download"></i>
+        <h3>Installation</h3>
         <p>Get help installing elementary OS with our step-by-step guide.</p>
     </a>
 
-    <a class="column half" href="/docs/learning-the-basics">
-        <h3><i class="fa fa-book"></i> Learning the Basics</h3>
+    <a class="column third" href="/docs/learning-the-basics">
+        <i class="fa fa-book"></i>
+        <h3>Learning the Basics</h3>
         <p>Walk through the desktop, multi-tasking, keyboard shortcuts and more.</p>
     </a>
 </div>
