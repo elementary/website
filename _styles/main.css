@@ -564,6 +564,11 @@ footer ul li a:focus {
         vertical-align: top;
         width: calc(66% - 48px);
     }
+
+    .grid *:only-child p,
+    .grid .two-thirds h1 + p {
+        text-align: center;
+    }
 }
 
 a.third {
