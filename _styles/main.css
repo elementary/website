@@ -20,20 +20,21 @@
         url('../fonts/Raleway-thin-italic.ttf')   format('truetype');
 }
 
+:root {
+    --ui-font: Inter, Helvetica, Roboto, sans-serif;
+}
+
 html,
 body {
     background-color: #fff;
     box-sizing: border-box;
     color: #333;
     fill: #333;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: var(--ui-font);
     font-weight: 400;
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -72,7 +73,7 @@ a:focus {
 }
 
 h1 {
-    font-family: "Raleway";
+    font-family: "Raleway", var(--ui-font);
     font-size: 32px;
     font-weight: 100;
     margin-bottom: 16px;
