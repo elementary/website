@@ -33,14 +33,7 @@
     </div>
     <div class="grid">
         <div class="two-thirds">
-            <h1>
-                Thank You for Downloading
-                <?php
-                    // Embed the SVG to fix scaling in WebKit 1.x,
-                    // while preserving CSS options for the image.
-                    include __DIR__.'/images/logotype-os.svg';
-                ?>
-            </h1>
+            <h1>Thank You for Downloading elementary OS</h1>
             <div class="action-area">
                 <div class="linked">
                     <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['previous_filename']; ?>">Download</a>

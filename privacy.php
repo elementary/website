@@ -9,7 +9,7 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h1>Privacy</h1>
-                    <h4>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</h4>
+                    <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
                 </div>
             </div>
             <div class="row docs">

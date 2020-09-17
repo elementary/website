@@ -97,6 +97,10 @@ h1 .logotype-svg {
     }
 }
 
+h1 + p {
+    font-size: 1.25em;
+}
+
 h2 {
     font-size: 2em;
     font-weight: 300;
