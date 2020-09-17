@@ -3,22 +3,7 @@
 * This file is part of elementary.io *
 *************************************/
 
-@font-face {
-    font-family: 'Raleway';
-    src:
-        url('../fonts/Raleway-thin.woff2') format('woff2'),
-        url('../fonts/Raleway-thin.woff')  format('woff'),
-        url('../fonts/Raleway-thin.ttf')   format('truetype');
-}
-
-@font-face {
-    font-family: 'Raleway';
-    font-style: italic;
-    src:
-        url('../fonts/Raleway-thin-italic.woff2') format('woff2'),
-        url('../fonts/Raleway-thin-italic.woff')  format('woff'),
-        url('../fonts/Raleway-thin-italic.ttf')   format('truetype');
-}
+@import url('/fonts/inter.css');
 
 :root {
     --ui-font: Inter, Helvetica, Roboto, sans-serif;
