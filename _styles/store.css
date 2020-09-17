@@ -14,13 +14,15 @@
 **********************************/
 
 #devices * {
-    font-family: Inter, "Open Sans", sans-serif;
     text-align: center;
 }
 
 #devices h4 {
+    border-bottom: 3px solid #08c;
     font-size: 1.25em;
-    font-weight: 800;
+    font-weight: 900;
+    margin: 0 0 0.25em;
+    padding: 0 0 0.5em;
     text-align: left;
 }
 
@@ -30,10 +32,9 @@
 }
 
 #devices li {
-    font-weight: bold;
-    line-height: 1;
+    line-height: 1.25;
     list-style: none;
-    padding: 0.5em 0;
+    margin: 0.75em 0;
     text-align: left;
 }
 
