@@ -73,7 +73,6 @@ a:focus {
 }
 
 h1 {
-    /*font-family: "Raleway", var(--ui-font);*/
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 16px;
