@@ -13,8 +13,8 @@
 
 <div class="grid">
     <div class="two-thirds">
-        <h1>We’re Built on Open Source</h1>
-        <p>The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.</p>
+        <h1>Everything We Do is Open&nbsp;Source</h1>
+        <p>The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
     </div>
     <div class="half">
         <h3>Security &amp; Privacy</h3>
