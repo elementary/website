@@ -41,5 +41,5 @@ return array(
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
 
-    'covid_estimate' => 'Current estimated delays are 2–7 business days for apparel and 2–5 business days for mugs.',
+    'covid_estimate' => '<strong>Due to COVID-19, orders may be delayed.</strong> Production is on schedule, but delays may still occur with fulfillment and shipping depending on the order, shipping method, and destination.',
 );
