@@ -165,7 +165,7 @@
         <section id="workflow" class="grey">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>Get Work Done. Or Play.</h2>
+                    <h1>Get Work Done. Or Play.</h1>
                     <p>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</p>
                 </div>
             </div>
@@ -470,7 +470,7 @@
             <div class="app-display app-display--horizontal">
                 <img class="app-display__image" src="images/screenshots/shortcut-overlay.jpg" srcset="images/screenshots/shortcut-overlay@2x.jpg 2x" alt="elementary OS Keyboard Shortcuts"/>
                 <div class="app-display__description">
-                    <h2>User Friendly. And Keyboard Friendly.</h2>
+                    <h1>User Friendly. And Keyboard Friendly.</h1>
                     <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
                 </div>
             </div>
@@ -509,8 +509,8 @@
         </section>
         <section class="cta">
             <img src="images/icons/places/128/distributor-logo.svg" alt="elementary OS logo">
-            <h2>Download elementary OS</h2>
-            <h4><?php echo $sitewide['description']; ?></h4>
+            <h1>Download elementary OS</h1>
+            <p><?php echo $sitewide['description']; ?></p>
 
             <a class="button suggested-action" href="#">Pay What You Want</a>
         </section>
