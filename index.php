@@ -146,22 +146,6 @@
                 </div>
             </div>
         </section>
-        <section id="callouts" class="grid">
-            <div class="third">
-                <h2>Go Fast</h2>
-                <p>Stop waiting around for your computer to load. elementary OS starts fast and stays fast. Apps are lightning quick to open and remember where you left off. Even better, elementary OS doesn’t slow down with updates.</p>
-            </div>
-            <div class="third">
-                <h2>Open Source</h2>
-                <p>We respect the rights of our users. All of elementary OS is available for review, scrutiny, modification, and redistribution by anyone—which improves security and privacy for everyone.</p>
-                <a class="read-more" href="/open-source">Learn More</a>
-            </div>
-            <div class="third">
-                <h2>Safe &amp; Secure</h2>
-                <p>We’re built on GNU/Linux, one of the most secure systems in the world. It’s the same software powering the U.S Department of Defense, the Bank of China, and more.</p>
-                <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
-            </div>
-        </section>
         <section id="workflow" class="grey">
             <div class="grid">
                 <div class="two-thirds">
@@ -466,9 +450,30 @@
                 </div>
             </div>
         </section>
-        <section id="shortcuts">
+        <section>
+            <div class="grid">
+                <div class="two-thirds">
+                    <h1>Everything We Do is Open&nbsp;Source</h1>
+                    <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+                    <a class="read-more" href="/open-source">Explore Our Stack</a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="half">
+                    <h2>Secure &amp; Privacy-respecting</h2>
+                    <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.</p>
+                    <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
+                </div>
+                <div class="half">
+                    <h2>Built for Developers</h2>
+                    <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+                    <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
+                </div>
+            </div>
+        </section>
+        <section id="shortcuts" class="grey">
             <div class="app-display app-display--horizontal">
-                <img class="app-display__image" src="images/screenshots/shortcut-overlay.jpg" srcset="images/screenshots/shortcut-overlay@2x.jpg 2x" alt="elementary OS Keyboard Shortcuts"/>
+                <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" srcset="images/screenshots/shortcut-overlay@2x.png 2x" alt="elementary OS Keyboard Shortcuts"/>
                 <div class="app-display__description">
                     <h1>User Friendly. And Keyboard Friendly.</h1>
                     <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>

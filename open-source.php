@@ -15,16 +15,8 @@
     <div class="two-thirds">
         <h1>Everything We Do is Open&nbsp;Source</h1>
         <p>The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+        <a class="button suggested-action" href="get-involved#desktop-development">Get Involved</a>
     </div>
-    <div class="half">
-        <h2>Security &amp; Privacy</h2>
-        <p>By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.</p>
-    </div>
-    <div class="half">
-        <h2>Better for Developers</h2>
-        <p>If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.</p>
-    </div>
-    <a class="button suggested-action" href="get-involved#desktop-development">Get Involved</a>
 </div>
 <div class="grid">
     <div class="platform-item full">
