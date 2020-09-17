@@ -172,6 +172,14 @@
             </ul>
         </div>
         <div class="third">
+            <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
+            <ul>
+                <li>Laptops, desktops, mini desktops, all-in-ones</li>
+                <li>Based in Spain</li>
+                <li>International shipping</li>
+            </ul>
+        </div>
+        <div class="third">
             <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
             <ul>
                 <li>Laptops</li>

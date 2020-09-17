@@ -14,10 +14,26 @@
 **********************************/
 
 #devices * {
+    font-family: Inter, "Open Sans", sans-serif;
     text-align: center;
 }
 
+#devices h4 {
+    font-size: 1.25em;
+    font-weight: 800;
+    text-align: left;
+}
+
+#devices ul {
+    margin: 0;
+    padding: 0;
+}
+
 #devices li {
+    font-weight: bold;
+    line-height: 1;
+    list-style: none;
+    padding: 0.5em 0;
     text-align: left;
 }
 
