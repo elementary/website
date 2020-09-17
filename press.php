@@ -11,7 +11,7 @@
     include $template['alert'];
 ?>
 
-<div class="grid">
+<div class="grid flex">
     <div class="two-thirds">
         <h1>Press Resources</h1>
         <p>We love working with press—both within the Linux world and the greater tech and culture beats—to share our story and what we are working on.</p>
