@@ -12,7 +12,7 @@ include $template['header'];
 include $template['alert'];
 ?>
 
-<section class="grid flex">
+<section class="grid">
     <div class="two-thirds">
         <h1>Get Support</h1>
         <p>We rely on our <a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.</p>
