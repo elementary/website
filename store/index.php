@@ -144,7 +144,7 @@
                 <p><?php echo $product['description'] ?></p>
 
                 <?php if (event_active('covid-19')) { ?>
-                  <p><strong>Due to COVID-19, orders may be delayed.</strong> <?php echo $config['covid_estimate'] ?></p>
+                  <p><?php echo $config['covid_estimate'] ?></p>
                 <?php } ?>
 
                 <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
@@ -190,7 +190,7 @@
 <section class="grid">
     <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
-        <p>We ship apparel and accessories all around the world! Orders are made on-demand typically within 2–7 days and will be shipped with the method you choose at checkout. <?php if (event_active('covid-19')) { ?><strong>Due to COVID-19, orders may be delayed.</strong> <?php echo $config['covid_estimate'] ?><?php } ?></p>
+        <p>We ship apparel and accessories all around the world! Orders are made on-demand typically within 2–7 days and will be shipped with the method you choose at checkout. <?php if (event_active('covid-19')) { ?><?php echo $config['covid_estimate'] ?><?php } ?></p>
 
         <p><small>Crimea, Cuba, Iran, Syria, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the origin and destination countries.</small></p>
     </div>
