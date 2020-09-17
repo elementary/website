@@ -454,7 +454,7 @@
             <div class="grid">
                 <div class="two-thirds">
                     <h1>Everything We Do is Open&nbsp;Source</h1>
-                    <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+                    <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
                     <a class="read-more" href="/open-source">Explore Our Stack</a>
                 </div>
             </div>
