@@ -21,7 +21,20 @@ a.column:active {
 }
 
 a.column h3 {
-    margin-bottom: 0.5em;
+    margin: 0.25em 0;
+}
+
+a.column p {
+    margin: 0;
+}
+
+/*a.column i {*/
+/*    font-size: 1.75em;*/
+/*}*/
+
+a.column i {
+   font-size: 1.25rem;
+   margin-right: 0.25em;
 }
 
 /***********

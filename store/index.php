@@ -60,7 +60,10 @@
 
 <section class="grid">
     <div class="two-thirds">
-        <h2>Support Development. Get Gear. Win Win.</h2>
+        <h1>
+            Support Development.<br />
+            Get Gear. Win/Win.
+        </h1>
         <p>Every purchase goes towards developing elementary OS, its apps, and its services. We're a small <a href="/team">team</a>, mostly volunteer, working constantly to make elementary better—your support helps make elementary OS more sustainable.</p>
     </div>
 </section>
