@@ -450,21 +450,25 @@
                 </div>
             </div>
         </section>
-        <section class="grid">
-            <div class="two-thirds">
-                <h1>Everything We Do is Open&nbsp;Source</h1>
-                <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
-                <a class="read-more" href="/open-source">Explore Our Stack</a>
+        <section>
+            <div class="grid">
+                <div class="two-thirds">
+                    <h1>Everything We Do is Open&nbsp;Source</h1>
+                    <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+                    <a class="read-more" href="/open-source">Explore Our Stack</a>
+                </div>
             </div>
-            <div class="half">
-                <h2>Secure &amp; Privacy-respecting</h2>
-                <p>When source code is available to audit, anyone — a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can verify that the software is secure and not collecting or leaking personal information.</p>
-                <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
-            </div>
-            <div class="half">
-                <h2>Built for Developers</h2>
-                <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
-                <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
+            <div class="grid">
+                <div class="half">
+                    <h2>Secure &amp; Privacy-respecting</h2>
+                    <p>When source code is available to audit, anyone — a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can verify that the software is secure and not collecting or leaking personal information.</p>
+                    <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
+                </div>
+                <div class="half">
+                    <h2>Built for Developers</h2>
+                    <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+                    <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
+                </div>
             </div>
         </section>
         <section id="shortcuts" class="grey">
