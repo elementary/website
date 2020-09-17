@@ -103,6 +103,10 @@ input:focus + .focus-reveal {
     text-align: center;
 }
 
+.cta p {
+    text-align: center;
+}
+
 /***********
 * Sections *
 ***********/
