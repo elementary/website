@@ -84,6 +84,7 @@ h1 .logotype-svg {
 
 h1 + p {
     font-size: 1.25em;
+    line-height: 1.33;
     text-align: center;
 }
 
