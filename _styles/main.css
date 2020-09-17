@@ -85,7 +85,6 @@ h1 .logotype-svg {
 h1 + p {
     font-size: 1.25em;
     line-height: 1.33;
-    text-align: center;
 }
 
 h2 {
@@ -548,10 +547,6 @@ footer ul li a:focus {
         width: calc(50% - 48px);
     }
 
-    .grid .half h2 {
-        text-align: left;
-    }
-
     .grid .third {
         width: calc(33.33% - 32px);
         display: inline-block;
@@ -570,13 +565,13 @@ footer ul li a:focus {
         width: calc(66% - 48px);
     }
 
-    .grid *:only-child p {
+    .grid *:only-child p,
+    .grid .two-thirds h1 + p {
         text-align: center;
     }
 }
 
-.third h3,
-.third p {
+.third h3 {
     text-align: center;
 }
 
