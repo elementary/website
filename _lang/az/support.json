@@ -1,5 +1,6 @@
 {
-    "Get support for": "Dəstək əldə et",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "",
     "Calendar": "Təqvim",
     "Camera": "Kamera",
@@ -11,11 +12,10 @@
     "Code": "",
     "System Settings": "Sistem parametrləri",
     "Videos": "Videolar",
+    "Guides": "",
     "Installation": "Quraşdırma",
     "Get help installing elementary OS with our step-by-step guide.": "Bizim bələdçi ilə addım-addım kömək alın",
     "Learning the Basics": "Əsasları Öyrən",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "İş masası, çoxlu-iş, klaviatura kəsdirmələri və daha çoxu haqda.",
-    "Stack Exchange": "",
-    "Check out answers to some of the most common questions we get.": "Ən çox soruşulan suallara olan cavablara nəzər salın.",
     "Support &sdot; elementary": ""
 }

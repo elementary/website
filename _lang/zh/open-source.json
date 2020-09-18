@@ -1,10 +1,6 @@
 {
-    "We're Built on Open Source": "我们构建自开放源码项目之上",
-    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "Elementary OS 平台构建自强大的自由及开放源码软件的基础之上，没有这些软件项目，Elementary OS 将不复存在。",
-    "Security &amp; Privacy": "",
-    "By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.": "作为开放源码软件，Elementary OS 能利益于在安全及隐私方面相对于封闭软件的强大优势，当源码对社区的任何人可用于审计时，不论你是安全研究人员、关注于此的用户亦或在他们硬件上搭载該操作系统的OEM销售的公司，都能确保此软件是安全的且不会收集或揭示个人信息。",
-    "Better for Developers": "",
-    "If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.": "如果你的应用可能利益于尚未提供的系统 API 或特性，你可协助为該操作系统写这个特性，你可能会好奇一个特性或设计范式在 Elementary OS 中是如何实现的，你只需要查看源码以获取最终答案而不是猜测或尝试重新实现你自己的版本。",
+    "Everything We Do is Open&nbsp;Source": "",
+    "The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.": "",
     "Get Involved": "",
     "Applications": "",
     "elementary OS Applications": "",

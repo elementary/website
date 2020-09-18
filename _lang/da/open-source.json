@@ -1,10 +1,6 @@
 {
-    "We're Built on Open Source": "Vi er bygget på Open Source",
-    "The elementary OS platform is built upon a strong foundation of Free &amp; Open Source software. Without projects such as these, elementary OS would not exist.": "elementary OS-platformen er bygget på et stærkt fundament af Fri &amp; Open Source-software. Uden projekter som disse ville elementary OS ikke eksistere.",
-    "Security &amp; Privacy": "Sikkerhed &amp; Privathed",
-    "By being Open Source, elementary OS can benefit from superior security and privacy over closed source software. When the source code is available to audit, anyone in the community — whether a security researcher, a concerned user, or an OEM shipping the OS on their hardware — can ensure the software is secure and not collecting or leaking personal information.": "Ved at være Open Source kan elementary OS drage fordel af en øget sikkerhed og beskyttelse af personlig data over lukket kildekode. Når kildekoden er tilgængelig for revision, kan alle - hvad enten det er en sikkerhedsforsker, en bekymret bruger eller en OEM der bruger OS'et på deres hardware - garantere, at softwaren er sikker og ikke indsamler eller lækker personlige data.",
-    "Better for Developers": "Bedre for Udviklere",
-    "If your app could benefit from a system API or feature that’s not yet available, you can help write that feature into the OS. Similarly, you might be curious as to how a feature or design pattern in elementary OS was made. Instead of guessing or trying to reimplement it on your own, you can just look at the underlying source code for a definitive answer.": "Hvis din app kunne have gavn af et system API eller en funktion, der endnu ikke er tilgængelig, kan du hjælpe med at skrive den pågældende funktion til operativsystemet. På samme måde kan du være nysgerrig om, hvordan en funktion eller et designmønster i elementary OS blev lavet. I stedet for at gætte eller forsøge at genimplementere det på egen hånd, kan du bare se på den underliggende kildekode og få et definitivt svar.",
+    "Everything We Do is Open&nbsp;Source": "",
+    "The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.": "",
     "Get Involved": "Bliv Involveret",
     "Applications": "Applikationer",
     "elementary OS Applications": "elementary OS Applikationer",

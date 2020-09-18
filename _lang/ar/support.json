@@ -1,5 +1,6 @@
 {
-    "Get support for": "الحصول على الدعم لـ",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "مركز التطبيقات",
     "Calendar": "التقويم",
     "Camera": "كاميرا",
@@ -11,11 +12,10 @@
     "Code": "الشيفرة البرمجية",
     "System Settings": "إعدادات النظام",
     "Videos": "الفيديو",
+    "Guides": "",
     "Installation": "التثبيت",
     "Get help installing elementary OS with our step-by-step guide.": "احصل على المساعدة في تثبيت نظام التشغيل إلمنتري مع الدليل خطوة بخطوة.",
     "Learning the Basics": "تعلم المبادئ",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "المرور بسطح المكتب، تعدد المهام، لوحة المفاتيح، الإختصارات و أكثر من ذلك.",
-    "Stack Exchange": "ستاك إكستشينج",
-    "Check out answers to some of the most common questions we get.": "تفضل برؤية الأجوبة لبعض الأسئلة التي تصلنا و الأكثر شيوعاً.",
     "Support &sdot; elementary": "إدعم &sdot; إليمنتري"
 }

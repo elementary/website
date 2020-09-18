@@ -1,5 +1,6 @@
 {
-    "Get support for": "सहायता प्राप्त करें",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "",
     "Calendar": "केलेंडर",
     "Camera": "कैमरा",
@@ -11,11 +12,10 @@
     "Code": "",
     "System Settings": "सिस्टम सेटिंग",
     "Videos": "वीडियो",
+    "Guides": "",
     "Installation": "स्थापना",
     "Get help installing elementary OS with our step-by-step guide.": "एलीमेंट्री ओएस के इंस्टॉलिंग को लेकर मदद के लिए हमारे स्टेप-बाई-स्टेप गाइड की सहायता लें. ",
     "Learning the Basics": "बुनियादी बातें सीखें",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "",
-    "Stack Exchange": "",
-    "Check out answers to some of the most common questions we get.": "",
     "Support &sdot; elementary": ""
 }

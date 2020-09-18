@@ -94,7 +94,7 @@
     "Black 700": "பிளாக் 700",
     "Black 900": "பிளாக் 900",
     "Fonts": "எழுத்துரு",
-    "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "வலைதளம் மற்றும் அச்சகத்தில், தலைப்புக்காக ரேல்வெயும் (Raleway), உடற்ப்பகுதிக்காக ஒபன் சான்ஸும் (Open Sans) மற்றும் நிரல் பகுதிக்காக ரொபோட்டொ மோனோ (Roboto Mono) எழுத்துருப்புகளை பயன்படுத்துகிறோம்.",
+    "For web and print, we use Inter for headings and body copy. For code blocks, we use Roboto Mono.": "",
     "Third Parties &amp; Community": "மூன்றாம் தரப்பு மற்றும் சமூக",
     "We invite third-party developers creating products for elementary OS to adopt certain elements of the elementary brand for consistency:": "",
     "Voice/tone": "",
