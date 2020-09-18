@@ -1,5 +1,6 @@
 {
-    "Get support for": "Tuen saaminen ⋅",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "Sovelluskeskuksesta",
     "Calendar": "Kalenteri",
     "Camera": "Kamera",
@@ -11,11 +12,10 @@
     "Code": "Koodi",
     "System Settings": "Järjestelmän asetukset",
     "Videos": "Videot",
+    "Guides": "",
     "Installation": "Asennus",
     "Get help installing elementary OS with our step-by-step guide.": "Apua elementary OS:n asennukseen vaiheittaisesta ohjeesta.",
     "Learning the Basics": "Perusasioiden opettelu",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Käy läpi työpöytä, moniajo, pikanäppäimet ja paljon muuta.",
-    "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Katso vastaukset useimmin kysyttyihin kysymyksiin.",
     "Support &sdot; elementary": "Tuki ⋅ elementary"
 }

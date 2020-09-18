@@ -1,5 +1,6 @@
 {
-    "Get support for": "Ricevi helpon pri",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "Aplikaĵa Centro",
     "Calendar": "Kalendaro",
     "Camera": "Kamerao",
@@ -11,11 +12,10 @@
     "Code": "Kodo",
     "System Settings": "Sistemaj Agordoj",
     "Videos": "Videoj",
+    "Guides": "",
     "Installation": "Instalado",
     "Get help installing elementary OS with our step-by-step guide.": "Ricevi helpon pri instalo de elementary OS, forme de detalita gvidilo.",
     "Learning the Basics": "Lerni la bazon",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Paŝon-post-paŝa prezento de la labortablo, multotasko, fulmoklavoj kaj pli.",
-    "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Rigardetu la respondojn pri la plej komune ricevitaj demandoj.",
     "Support &sdot; elementary": "Subteni &sdot; elementary"
 }

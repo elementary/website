@@ -1,5 +1,6 @@
 {
-    "Get support for": "Obtenha suporte para o",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "Centro de Aplicações",
     "Calendar": "Calendário",
     "Camera": "Câmara",
@@ -11,11 +12,10 @@
     "Code": "Code",
     "System Settings": "Definições do Sistema",
     "Videos": "Vídeos",
+    "Guides": "",
     "Installation": "Instalação",
     "Get help installing elementary OS with our step-by-step guide.": "Obtenha ajuda para instalar o elementary OS com o nosso manual de passo a passo.",
     "Learning the Basics": "Aprender o básico",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Percorra o nosso ambiente de trabalho, multi tarefas, teclas de atalho e muito mais.",
-    "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Confira as respostas a algumas das perguntas mais comuns que nos colocam.",
     "Support &sdot; elementary": "Suporte &sdot; elementary"
 }

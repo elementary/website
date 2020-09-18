@@ -94,7 +94,7 @@
     "Black 700": "黑色 700",
     "Black 900": "黑色 900",
     "Fonts": "字体",
-    "For web and print, we use Raleway for headings and Open Sans for body copy. For code blocks, we use Roboto Mono.": "对于网页和打印，我们在标题处使用 Raleway 字体，正文使用 Open Sans 字体。对于代码块，我们使用 Roboto Mono 字体。",
+    "For web and print, we use Inter for headings and body copy. For code blocks, we use Roboto Mono.": "",
     "Third Parties &amp; Community": "非官方社区",
     "We invite third-party developers creating products for elementary OS to adopt certain elements of the elementary brand for consistency:": "",
     "Voice/tone": "语音/音调",

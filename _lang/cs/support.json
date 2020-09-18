@@ -1,5 +1,6 @@
 {
-    "Get support for": "Získejte podporu pro",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "Centru aplikací",
     "Calendar": "Kalendář",
     "Camera": "Kamera",
@@ -11,11 +12,10 @@
     "Code": "Code",
     "System Settings": "Nastavení systému",
     "Videos": "Videa",
+    "Guides": "",
     "Installation": "Instalace",
     "Get help installing elementary OS with our step-by-step guide.": "Naše příručka vás provede instalací, krok po kroku.",
     "Learning the Basics": "Naučení se základům",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Seznamte se s plochou, rozhraním pro multi-tasking, klávesovými zkratkami a dalšími věcmi.",
-    "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Projděte si odpovědi na nejčastěji pokládané otázky.",
     "Support &sdot; elementary": "Podpora &sdot; elementary"
 }

@@ -1,5 +1,6 @@
 {
-    "Get support for": "Gaukite palaikymą",
+    "Get Support": "",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
     "AppCenter": "Programų centre",
     "Calendar": "Kalendorius",
     "Camera": "Kamera",
@@ -11,11 +12,10 @@
     "Code": "Kodas",
     "System Settings": "Sistemos nustatymai",
     "Videos": "Vaizdo įrašai",
+    "Guides": "",
     "Installation": "Įdiegimas",
     "Get help installing elementary OS with our step-by-step guide.": "Gaukite pagalbą, susijusią su elementary OS diegimu mūsų pažingsninėje instrukcijoje.",
     "Learning the Basics": "Susipažinimas su pagrindais",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Pereikite per darbalaukį, daugelio užduočių veikseną, sparčiuosius klaviatūros klavišus ir daugiau.",
-    "Stack Exchange": "Stack Exchange",
-    "Check out answers to some of the most common questions we get.": "Sužinokite atsakymus į dažniausiai mums užduodamus klausimus.",
     "Support &sdot; elementary": "Palaikymas ⋅ elementary"
 }
