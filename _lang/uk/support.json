@@ -1,21 +1,21 @@
 {
-    "Get Support": "",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
+    "Get Support": "Отримати допомогу",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "Ми покладаємось на нашу <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">підтримку спільноти на Stack Exchange</a>. Шукайте найпоширеніші питання, ставте власні або допомагайте, відповідаючи на деякі. Виберіть застосунок серед запропонованих, щоб перейти до питань щодо саме нього.",
     "AppCenter": "Центр застосунків",
     "Calendar": "Календар",
     "Camera": "Камера",
     "Files": "Файли",
     "Mail": "Пошта",
-    "Epiphany": "",
+    "Epiphany": "Інтернет",
     "Music": "Музика",
     "Photos": "Світлини",
     "Code": "Код",
     "System Settings": "Системні налаштування",
     "Videos": "Відео",
-    "Guides": "",
+    "Guides": "Посібники",
     "Installation": "Встановлення",
-    "Get help installing elementary OS with our step-by-step guide.": "Отримайте допомогу з встановлення elementary OS на ваш комп'ютер звернушись до нашої покрокової інструкціїї.",
+    "Get help installing elementary OS with our step-by-step guide.": "Отримайте допомогу зі встановленням elementary OS звернувшись до наших покрокових настанов.",
     "Learning the Basics": "Основи",
-    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Огляд робочого столу, багатозадачності, гарячих клавіш та іншого.",
-    "Support &sdot; elementary": ""
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Огляд робочого столу, багатозадачності, комбінацій клавіш тощо.",
+    "Support &sdot; elementary": "Підтримка &sdot; elementary"
 }
