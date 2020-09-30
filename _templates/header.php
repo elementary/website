@@ -1,4 +1,4 @@
-<?php
+<?php // wow awesome
 
 if (!isset($l10n)) {
    $l10n = new \App\Lib\L10n();
