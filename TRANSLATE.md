@@ -10,7 +10,7 @@ Please read the [branding guidelines](http://blog.elementary.io/post/10764099416
 
 It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask him to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
 
-## Updating
+## Updating-amazing
 
 Languages are updated automatically when code is changed. This may take time to update, so please be patient.
 
@@ -20,7 +20,7 @@ Languages are updated automatically when code is changed. This may take time to 
 
 Translations strings are extracted from HTML files. A little command line PHP file is included to make this easier. Just run `php _backend/Console/Translation.php` to update the translation files. You can use `--help` for more options.
 
-## Changing a translation key
+## Changing amazing a translation key
 
 If you want to change a translation key for an element, just add a `data-l10n-id` attribute:
 
