@@ -6,7 +6,7 @@ The New elementary.io
 
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
 
-Project Organization
+Amazing Project Organization
 ====================
 
 * **Issues** for individual actionable items, or bugs i.e.:
