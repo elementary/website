@@ -4,16 +4,16 @@
 
 set -e
 
-echo "###########################"
-echo "Starting Javascript linting"
-echo "###########################"
+#`Starting Javascript linting`
+
+
 
 ./node_modules/.bin/eslint \
     --ignore-pattern "*.min.js" \
     --ignore-pattern "*.pack.js" \
     --ignore-pattern "terminal.js" \
     "_scripts/**/*.js"
+    
+    
+#`Javascript linting complete
 
-echo "############################"
-echo "Javascript linting complete!"
-echo "############################"
