@@ -35,7 +35,7 @@
     background-origin: border-box;
     background-position: 50%;
     background-size: cover;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.05),
@@ -44,7 +44,7 @@
         0 1px 3px rgba(0, 0, 0, 0.05),
         0 1px 2px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    height: 320px;
+    height: 321px;
     margin-bottom: 1rem;
     overflow: hidden;
     position: relative;
