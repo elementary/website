@@ -14,7 +14,7 @@
     display: inline-block;
     width: 100%;
     margin: 4px auto;
-    padding: 24px 0;
+    padding: 25px 0;
 }
 
 /**************
@@ -43,7 +43,7 @@
 }
 
 h5.member_name {
-    margin-top: 4px;
+    margin-top: 5px;
     text-align: left;
 }
 
