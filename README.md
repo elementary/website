@@ -1,4 +1,4 @@
-The New elementary.io
+The New elementary.io - An Interesting Project
 ================
 
 [![Build Status](https://travis-ci.org/elementary/website.svg?branch=master)](https://travis-ci.org/elementary/website)
