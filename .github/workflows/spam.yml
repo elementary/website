@@ -16,4 +16,5 @@ jobs:
       - name: Rummelsnuff
         uses: andrewslotin/rummelsnuff@master
         with:
+          spam_label: "Status: Invalid"
           access_token: ${{ secrets.GIT_USER_TOKEN }}
