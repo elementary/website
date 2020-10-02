@@ -1,0 +1,19 @@
+---
+
+name: Spam
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Rummelsnuff
+        uses: andrewslotin/rummelsnuff@master
+        with:
+          access_token: ${{ secrets.GIT_USER_TOKEN }}
