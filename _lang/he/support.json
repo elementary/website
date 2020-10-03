@@ -1,6 +1,6 @@
 {
-    "Get Support": "",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
+    "Get Support": "קבלת תמיכה",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "אנו סומכים על ה־<a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\"> שלנו בהובלת הקהילהStack Exchange</a> לתמיכה. ניתן לחפש שאלות נפוצות, לשאול שאלות משלך או לסייע על ידי מענה לשאלות. ניתן לבחור יישום להלן כדי לעבור לשאלות עליו נקודתית.",
     "AppCenter": "מרכז היישומים",
     "Calendar": "יומן",
     "Camera": "מצלמה",
@@ -12,7 +12,7 @@
     "Code": "קוד",
     "System Settings": "הגדרות המערכת",
     "Videos": "וידאו",
-    "Guides": "",
+    "Guides": "מדריכים",
     "Installation": "התקנה",
     "Get help installing elementary OS with our step-by-step guide.": "קבלת עזרה בהתקנת elementary OS עם המדריך שלנו שילווה אותך שלב אחר שלב.",
     "Learning the Basics": "לימוד היסודות",
