@@ -51,7 +51,7 @@ Contributing
 
 See guidelines for [coding](https://github.com/elementary/website/blob/master/.github/CONTRIBUTING.md) and [translating](https://github.com/elementary/website/blob/master/TRANSLATE.md).
 
-Security
+Our Security
 ========
 
 Please see [SECURITY.md](./SECURITY.md) for information about disclosure policy and contact.
