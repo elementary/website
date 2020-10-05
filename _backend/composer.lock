@@ -267,20 +267,20 @@
     "packages-dev": [
         {
             "name": "league/climate",
-            "version": "3.5.2",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/climate.git",
-                "reference": "6b53a28a58ad9f5f63042e291eb870cf0d02a9c9"
+                "reference": "61eecbde7645528a855a3afef65c5354093b27b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/climate/zipball/6b53a28a58ad9f5f63042e291eb870cf0d02a9c9",
-                "reference": "6b53a28a58ad9f5f63042e291eb870cf0d02a9c9",
+                "url": "https://api.github.com/repos/thephpleague/climate/zipball/61eecbde7645528a855a3afef65c5354093b27b2",
+                "reference": "61eecbde7645528a855a3afef65c5354093b27b2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": "^7.2",
                 "psr/log": "^1.0",
                 "seld/cli-prompt": "^1.0"
             },
@@ -324,7 +324,7 @@
                 "php",
                 "terminal"
             ],
-            "time": "2019-12-01T15:25:43+00:00"
+            "time": "2020-10-04T16:02:59+00:00"
         },
         {
             "name": "psr/log",
