@@ -190,7 +190,7 @@ class L10n
             return true;
         }
 
-        return is_dir($this->lang_dir($lang));
+        return array_key_exists($lang, static::$available_langs);
     }
 
     public function user_lang() {
