@@ -522,7 +522,7 @@
         <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
         <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
         <div id="download-modal" class="dialog modal">
-            <img alt="Download elementary OS icon" src="images/icons/apps/48/ubiquity.svg">
+            <img alt="Download elementary OS icon" src="images/icons/apps/48/system-os-installer.svg">
             <div class="content-area">
                 <p class="primary">Choose a Download</p>
                 <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
