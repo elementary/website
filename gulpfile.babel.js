@@ -127,7 +127,7 @@ gulp.task('svg', () => {
         '_images/icons/apps/32/system-file-manager.svg',
         '_images/icons/apps/32/system-software-install.svg',
         '_images/icons/apps/48/internet-web-browser.svg',
-        '_images/icons/apps/48/ubiquity.svg',
+        '_images/icons/apps/48/system-os-installer.svg',
         '_images/icons/apps/48/utilities-terminal.svg',
         '_images/icons/apps/64/accessories-calculator.svg',
         '_images/icons/apps/64/accessories-camera.svg',
