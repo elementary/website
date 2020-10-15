@@ -24,7 +24,7 @@ Project Organization
   * The reviewer is the gatekeeper. Be kind of a dick.
 
 
-Architecture/Philosophies
+Architecture / Philosophies
 =========================
 
 * HTML, CSS, and JS
