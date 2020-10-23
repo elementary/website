@@ -9,22 +9,22 @@ A focused, minimum viable product (hence MVP) for a website that accompanied the
 Project Organization
 ====================
 
-* **Issues** for individual actionable items, or bugs i.e.:
+# **Issues** for individual actionable items, or bugs i.e.:
   * Design home page
   * Implement home page
   * Add payment form
   * Fix link to Wired article
-* **Milestones** for "releases" or overall steps, i.e.:
+# **Milestones** for "releases" or overall steps, i.e.:
   * Single-page site
   * User Documentation
   * Journal
-* **Reviews** Do all work in branches, then submit pull requests for review when ready
+# **Reviews** Do all work in branches, then submit pull requests for review when ready
   * No dummy content in master, ever.
   * Small diff is best diff.
   * The reviewer is the gatekeeper. Be kind of a dick.
 
 
-Architecture/Philosophies
+#Architecture/Philosophies
 =========================
 
 * HTML, CSS, and JS
@@ -34,7 +34,7 @@ Architecture/Philosophies
 * Mobile-first
 
 
-Templating System
+#Templating System
 =================
 
 * PHP-based
@@ -46,17 +46,17 @@ Templating System
   * `$page['description']`
   * `$page['author']`
 
-Contributing
+#Contributing
 ============
-
+Your Valid Contribution is valuable for us. Please read all guidelines before starting.
 See guidelines for [coding](https://github.com/elementary/website/blob/master/.github/CONTRIBUTING.md) and [translating](https://github.com/elementary/website/blob/master/TRANSLATE.md).
 
-Security
+#Security
 ========
 
 Please see [SECURITY.md](./SECURITY.md) for information about disclosure policy and contact.
 
-License
+#License
 =======
 
 This project has a [MIT license](LICENSE.md).
