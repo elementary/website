@@ -8,6 +8,7 @@ return array(
     'release_filename' => 'elementaryos-5.1-stable.20200814.iso',
     'release_size'     => '1.49 GB',
     'release_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
+    'release_sha256'   => '439110ceadadd13683632ddd273095f72ee9b8d22a7569ac84c2fd1c4d920610',
 
     'previous_title'    => 'Juno',
     'previous_version'  => '0.4.1',
