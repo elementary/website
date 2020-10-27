@@ -78,6 +78,8 @@ if (
         $Parsedown = new ParsedownExtra();
         $Content = $Parsedown->text($Content);
         $Content = str_replace('⌘', '&#8984;', $Content);
+        $Content = str_replace('{#release_filename}', $config['release_filename'], $Content);
+        $Content = str_replace('{#release_sha256}', $config['release_sha256'], $Content);
         $Content = $l10n->translate_html($Content);
         echo $Content;
 
