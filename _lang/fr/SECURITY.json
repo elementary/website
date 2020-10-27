@@ -1,4 +1,4 @@
 {
-    "Security Policy": "",
-    "For any security related issues, please <strong>do not open a public GitHub issue</strong>. Instead, email them to <a href=\"mailto:webmaster@elementary.io\">webmaster@elementary.io</a>. We will provide an initial assessment of security reports within 48 hours and should apply patches within 2 weeks (also, feel free to contribute a fix for the issue).": ""
+    "Security Policy": "Politique de sécurité",
+    "For any security related issues, please <strong>do not open a public GitHub issue</strong>. Instead, email them to <a href=\"mailto:webmaster@elementary.io\">webmaster@elementary.io</a>. We will provide an initial assessment of security reports within 48 hours and should apply patches within 2 weeks (also, feel free to contribute a fix for the issue).": "Pour toute question liée à la sécurité, veuillez <strong> ne pas ouvrir un ticket publique sur Github</strong>. Envoyez le plutôt par e-mail <a href=\"mailto:webmaster@elementary.io\">webmaster@elementary.io</a>. Nous fournirons une évaluation initiale des rapports de sécurité dans les 48 heures et devrions appliquer les correctifs dans les 2 semaines (également, n'hésitez pas à apporter une solution au problème) "
 }
