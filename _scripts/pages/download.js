@@ -116,11 +116,13 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
-                plausible('Payment', {meta: {
-                    Input: paymentAmount,
-                    Amount: 0,
-                    Action: 'Skipped'
-                }})
+                plausible('Payment', {
+                    meta: {
+                        Input: paymentAmount,
+                        Amount: 0,
+                        Action: 'Skipped'
+                    }
+                })
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
@@ -129,19 +131,23 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
-                    .then(() => plausible('Payment', {meta: {
-                        Input: paymentAmount,
-                        Amount: paymentAmount,
-                        Action: 'Complete'
-                    }}))
+                    .then(() => plausible('Payment', {
+                        meta: {
+                            Input: paymentAmount,
+                            Amount: paymentAmount,
+                            Action: 'Complete'
+                        }
+                    }))
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
-                        plausible('Payment', {meta: {
-                            Input: paymentAmount,
-                            Amount: 0,
-                            Action: 'Failed'
-                        }})
+                        plausible('Payment', {
+                            meta: {
+                                Input: paymentAmount,
+                                Amount: 0,
+                                Action: 'Failed'
+                            }
+                        })
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
