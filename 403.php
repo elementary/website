@@ -8,7 +8,7 @@
     include $template['alert'];
 ?>
 
-<script>window.statusCode = '403: Forbidden'</script>
+<script>plausible('Error', {meta: { Code: '403', Description: 'Access Denied'}})</script>
 
 <div class="row">
     <div class="column alert">

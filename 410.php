@@ -7,7 +7,7 @@
     include $template['alert'];
 ?>
 
-<script>plausible('Error 410: Download Link Expired')</script>
+<script>plausible('Error', {meta: { Code: '410', Description: 'Download Link Expired'}})</script>
 
 <div class="row">
     <div class="column alert">

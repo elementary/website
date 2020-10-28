@@ -8,7 +8,7 @@
     include $template['alert'];
 ?>
 
-<script>window.statusCode = '404: Page Not Found'</script>
+<script>plausible('Error', {meta: { Code: '404', Description: 'Page Not Found'}})</script>
 
 <div class="row">
     <div class="column alert">
