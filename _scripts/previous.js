@@ -21,7 +21,7 @@ Promise.all([config, jQuery]).then(([config, $]) => {
             if ($(this).hasClass('http')) {
                 downloadMethod = 'HTTP'
             }
-            plausible('Downloads', {
+            plausible('Download', {
                 meta: {
                     Region: config.user.region,
                     Method: downloadMethod,

@@ -188,7 +188,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             if ($(this).hasClass('http')) {
                 downloadMethod = 'HTTP'
             }
-            plausible('Downloads', {
+            plausible('Download', {
                 meta: {
                     Region: config.user.region,
                     Method: downloadMethod,
