@@ -133,7 +133,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                         Input: paymentAmount,
                         Amount: paymentAmount,
                         Action: 'Complete'
-                    }})
+                    }}))
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
@@ -145,6 +145,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
+
             }
         })
 
@@ -166,7 +167,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                     amount: amount,
                     token: token.id,
                     email: token.email,
-                    os: detectedOS
+                    os: detectedOS()
                 })
                     .done((res) => resolve(res))
                     .fail((xhr, status) => reject(new Error(status)))
@@ -175,16 +176,15 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: .download-http.click: Track downloads
         $('.download-link').click(function () {
-            if ($(this).hasClass('http')) {
-                var downloadMethod = 'HTTP'
-            }
             if ($(this).hasClass('magnet')) {
                 var downloadMethod = 'Magnet'
+            } else {
+                var downloadMethod = 'HTTP'
             }
             plausible('Downloads', {meta: {
                 Region: config.user.region,
                 Method: downloadMethod,
-                OS: detectedOS,
+                OS: detectedOS(),
                 Version: config.release.version
             }})
         })

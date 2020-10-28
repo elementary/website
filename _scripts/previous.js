@@ -14,17 +14,16 @@ Promise.all([config, jQuery]).then(([config, $]) => {
     $(document).ready(() => {
         // ACTION: .download-http.click: Track download over HTTP
         $('.download-link').click(function () {
-            if ($(this).hasClass('http')) {
-                var downloadMethod = 'HTTP'
-            }
             if ($(this).hasClass('magnet')) {
                 var downloadMethod = 'Magnet'
+            } else {
+                var downloadMethod = 'HTTP'
             }
             plausible('Downloads', {
                 meta: {
                     Region: config.user.region,
                     Method: downloadMethod,
-                    OS: detectedOS,
+                    OS: detectedOS(),
                     Version: config.previous.version
                 }
             })
