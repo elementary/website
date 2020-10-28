@@ -8,10 +8,9 @@
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
-import { url } from '~/page'
+import { url, detectedOS } from '~/page'
 import config from '~/config'
 
-import detectedOS from '~/widgets/detectedos'
 import Payment from '~/widgets/payment'
 
 Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
@@ -176,15 +175,15 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: .download-http.click: Track downloads
         $('.download-link').click(function () {
-            if ( $(this).hasClass('http') ) {
-                var method = 'HTTP'
+            if ($(this).hasClass('http')) {
+                var downloadMethod = 'HTTP'
             }
-            if ( $(this).hasClass('magnet') ) {
-                var method = 'Magnet'
+            if ($(this).hasClass('magnet')) {
+                var downloadMethod = 'Magnet'
             }
             plausible('Downloads', {meta: {
                 Region: config.user.region,
-                Method: method,
+                Method: downloadMethod,
                 OS: detectedOS,
                 Version: config.release.version
             }})
