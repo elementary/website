@@ -176,10 +176,12 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
         // ACTION: .download-http.click: Track downloads
         $('.download-link').click(function () {
+            let downloadMethod = 'Unknown'
             if ($(this).hasClass('magnet')) {
-                var downloadMethod = 'Magnet'
-            } else {
-                var downloadMethod = 'HTTP'
+                downloadMethod = 'Magnet'
+            }
+            if ($(this).hasClass('http')) {
+                downloadMethod = 'HTTP'
             }
             plausible('Downloads', {meta: {
                 Region: config.user.region,
