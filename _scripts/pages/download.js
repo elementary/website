@@ -151,7 +151,6 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
-
             }
         })
 
@@ -189,12 +188,14 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             if ($(this).hasClass('http')) {
                 downloadMethod = 'HTTP'
             }
-            plausible('Downloads', {meta: {
-                Region: config.user.region,
-                Method: downloadMethod,
-                OS: detectedOS(),
-                Version: config.release.version
-            }})
+            plausible('Downloads', {
+                meta: {
+                    Region: config.user.region,
+                    Method: downloadMethod,
+                    OS: detectedOS(),
+                    Version: config.release.version
+                }
+            })
         })
 
         // RETURN: openDownloadOverlay: Open the Download modal.
