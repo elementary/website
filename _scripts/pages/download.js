@@ -8,8 +8,9 @@
 import jQuery from '~/lib/jquery'
 import modal from '~/lib/modal'
 
-import { url } from '~/page'
+import { url, detectedOS } from '~/page'
 import config from '~/config'
+
 import Payment from '~/widgets/payment'
 
 Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
@@ -115,49 +116,43 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
 
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
-                plausible('Payment: Skipped')
+                plausible('Payment', {
+                    meta: {
+                        Input: paymentAmount,
+                        Amount: 0,
+                        Action: 'Skipped'
+                    }
+                })
                 // Open the Download modal immediately.
                 openDownloadOverlay()
             // Paid download
             } else {
-                plausible('Payment: Initiated') // for paymentAmount
                 // Open the Stripe modal first.
                 payment.checkout(paymentAmount, 'USD')
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
-                    .then(() => plausible('Payment: Complete')) // for paymentAmount
+                    .then(() => plausible('Payment', {
+                        meta: {
+                            Input: paymentAmount,
+                            Amount: paymentAmount,
+                            Action: 'Complete'
+                        }
+                    }))
                     .catch((err) => {
                         console.error('Error while making payment')
                         console.error(err)
-                        plausible('Payment: Failed') // for paymentAmount
+                        plausible('Payment', {
+                            meta: {
+                                Input: paymentAmount,
+                                Amount: 0,
+                                Action: 'Failed'
+                            }
+                        })
                         openDownloadOverlay() // Just in case. Don't interupt the flow
                         throw err // rethrow so it can be picked up by error tracking
                     })
             }
         })
-
-        // UTILITY: detectOS: Detect the OS
-        function detectOS () {
-            var ua = window.navigator.userAgent
-            if (ua == null || ua === false) return 'Other'
-            if (ua.indexOf('Android') >= 0) {
-                return 'Android'
-            }
-            if (ua.indexOf('Mac OS X') >= 0 && ua.indexOf('Mobile') >= 0) {
-                return 'iOS'
-            }
-            if (ua.indexOf('Windows') >= 0) {
-                return 'Windows'
-            }
-            if (ua.indexOf('Mac_PowerPC') >= 0 || ua.indexOf('Macintosh') >= 0) {
-                return 'macOS'
-            }
-            if (ua.indexOf('Linux') >= 0) {
-                return 'Linux'
-            }
-            return 'Unknown'
-        }
-        var detectedOS = detectOS()
 
         // ACTION: doStripePayment: Actually process the payment via Stripe
         function doStripePayment (amount, token) {
@@ -177,24 +172,30 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                     amount: amount,
                     token: token.id,
                     email: token.email,
-                    os: detectedOS
+                    os: detectedOS()
                 })
                     .done((res) => resolve(res))
                     .fail((xhr, status) => reject(new Error(status)))
             })
         }
 
-        // ACTION: .download-http.click: Track download over HTTP
+        // ACTION: .download-http.click: Track downloads
         $('.download-link').click(function () {
-            plausible('Download of ' + config.release.title + ' ' + config.release.version)
-            plausible('Download from OS: ' + detectedOS)
-            plausible('Download from Region: ' + config.user.region)
-        })
-        $('.download-link.http').click(function () {
-            plausible('Download Method: HTTP')
-        })
-        $('.download-link.magnet').click(function () {
-            plausible('Download Method: Magnet')
+            let downloadMethod = 'Unknown'
+            if ($(this).hasClass('magnet')) {
+                downloadMethod = 'Magnet'
+            }
+            if ($(this).hasClass('http')) {
+                downloadMethod = 'HTTP'
+            }
+            plausible('Downloads', {
+                meta: {
+                    Region: config.user.region,
+                    Method: downloadMethod,
+                    OS: detectedOS(),
+                    Version: config.release.version
+                }
+            })
         })
 
         // RETURN: openDownloadOverlay: Open the Download modal.
