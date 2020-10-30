@@ -22,7 +22,7 @@ Promise.all([config, jQuery]).then(([config, $]) => {
                 downloadMethod = 'HTTP'
             }
             plausible('Download', {
-                meta: {
+                props: {
                     Region: config.user.region,
                     Method: downloadMethod,
                     OS: detectedOS(),

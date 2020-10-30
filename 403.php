@@ -8,7 +8,7 @@
     include $template['alert'];
 ?>
 
-<script>plausible('Error', {meta: { Code: '403', Description: 'Access Denied'}})</script>
+<script>plausible('Error', {props: { Code: '403', Description: 'Access Denied'}})</script>
 
 <div class="row">
     <div class="column alert">
