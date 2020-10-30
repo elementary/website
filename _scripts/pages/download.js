@@ -117,9 +117,9 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
             // Free download
             if (Number.isNaN(paymentAmount) || paymentAmount < paymentMinimum) {
                 plausible('Payment', {
-                    meta: {
-                        Input: paymentAmount,
-                        Amount: 0,
+                    props: {
+                        Input: paymentAmount.toString(),
+                        Amount: '0',
                         Action: 'Skipped'
                     }
                 })
@@ -132,9 +132,9 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                     .then(([token]) => doStripePayment(paymentAmount, token))
                     .then(() => openDownloadOverlay())
                     .then(() => plausible('Payment', {
-                        meta: {
-                            Input: paymentAmount,
-                            Amount: paymentAmount,
+                        props: {
+                            Input: paymentAmount.toString(),
+                            Amount: paymentAmount.toString(),
                             Action: 'Complete'
                         }
                     }))
@@ -142,9 +142,9 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                         console.error('Error while making payment')
                         console.error(err)
                         plausible('Payment', {
-                            meta: {
-                                Input: paymentAmount,
-                                Amount: 0,
+                            props: {
+                                Input: paymentAmount.toString(),
+                                Amount: '0',
                                 Action: 'Failed'
                             }
                         })
@@ -189,7 +189,7 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 downloadMethod = 'HTTP'
             }
             plausible('Download', {
-                meta: {
+                props: {
                     Region: config.user.region,
                     Method: downloadMethod,
                     OS: detectedOS(),
