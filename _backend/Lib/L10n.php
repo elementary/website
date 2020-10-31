@@ -114,6 +114,7 @@ class L10n
         'es' => 'Español',
         'fi' => 'Finnish',
         'fr' => 'Français',
+        'he' => 'עִברִית',
         'it' => 'Italiano',
         'ja' => '日本語',
         'ko' => '한국어',
