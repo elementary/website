@@ -107,7 +107,13 @@ Promise.all([jQuery]).then(([$]) => {
             const $state = $('select[name="state"]', form)
             const $statelabel = $('label[for="state"]', form)
 
-            if (notify) plausible('Store: Country Change') // value
+            if (notify) {
+                plausible('Store: Country Change', {
+                    props: {
+                        Country: value.toString()
+                    }
+                })
+            }
 
             if (country[value] != null && typeof country[value].states === 'object') {
                 $state.empty()

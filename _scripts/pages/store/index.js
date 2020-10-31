@@ -46,7 +46,11 @@ Promise.all([jQuery, modal]).then(([$]) => {
             })
             $trigger.click()
 
-            plausible('Store: View Product') // $item.data('product-name')
+            plausible('Store: View Product', {
+                props: {
+                    Product: $item.data('product-name').toString()
+                }
+            })
 
             updateShippingEstimate($item.attr('data-printful-id'))
         })

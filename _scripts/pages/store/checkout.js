@@ -79,7 +79,11 @@ Promise.all([jQuery, Payment]).then(([$, Payment]) => {
         var $form = $('form[action$="order"]')
 
         function processPayment (amount, token) {
-            plausible('Store: Payment Processed') // amount
+            plausible('Store: Payment Processed', {
+                props: {
+                    Amount: amount.toString()
+                }
+            })
 
             $('input[name="stripe-token"]', $form).val(token.id)
             $form.submit()
