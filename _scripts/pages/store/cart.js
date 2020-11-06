@@ -101,19 +101,11 @@ Promise.all([jQuery]).then(([$]) => {
          *
          * @return {void}
          */
-        const updateAddressForm = (notify = true) => {
+        const updateAddressForm => {
             const form = $('form[action$="checkout"]')
             const value = $('select[name="country"]', form).val()
             const $state = $('select[name="state"]', form)
             const $statelabel = $('label[for="state"]', form)
-
-            if (notify) {
-                plausible('Store: Country Change', {
-                    props: {
-                        Country: value.toString()
-                    }
-                })
-            }
 
             if (country[value] != null && typeof country[value].states === 'object') {
                 $state.empty()
@@ -134,7 +126,7 @@ Promise.all([jQuery]).then(([$]) => {
         }
 
         // Hide the inputs we don't need depending on the country
-        $('form[action$="checkout"] select[name="country"]').on('change', () => updateAddressForm(true))
+        $('form[action$="checkout"] select[name="country"]').on('change', () => updateAddressForm())
         updateAddressForm(false)
     })
 })
