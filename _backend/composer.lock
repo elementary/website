@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dda018669c9f13e560cc7d06501295c",
+    "content-hash": "c6a0d428610afbbd1d73938a7b5abb39",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -208,16 +208,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.61.0",
+            "version": "v7.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "51c6cd18cb51740101c940a3fefc876ef7cd8cae"
+                "reference": "9c2fc846d5b2719945e825228474f15314c0fed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/51c6cd18cb51740101c940a3fefc876ef7cd8cae",
-                "reference": "51c6cd18cb51740101c940a3fefc876ef7cd8cae",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/9c2fc846d5b2719945e825228474f15314c0fed6",
+                "reference": "9c2fc846d5b2719945e825228474f15314c0fed6",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +227,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.16.1",
+                "friendsofphp/php-cs-fixer": "2.16.5",
                 "php-coveralls/php-coveralls": "^2.1",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^3.3",
@@ -261,7 +261,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-10-20T20:01:45+00:00"
+            "time": "2020-11-09T16:57:44+00:00"
         }
     ],
     "packages-dev": [
