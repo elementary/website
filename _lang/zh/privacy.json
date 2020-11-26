@@ -1,9 +1,9 @@
 {
     "Privacy": "",
     "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "",
-    "elementary OS": "",
-    "We do not collect any data from elementary OS. Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "",
-    "Online Accounts": "",
+    "elementary OS": "elementary OS",
+    "We do not collect any data from elementary OS. Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "我们不从 elementary OS 收集任何数据。您的文件、设置和所有其他个人数据将保留在设备上，除非您明确将其与第三方应用程序或服务共享。",
+    "Online Accounts": "在线帐户",
     "elementary OS optionally integrates with online account providers such as Google, Last.fm, and Fastmail via System Settings. Data from these providers may be retrieved and stored locally on your device to be used in apps such as Mail and Calendar. This data is not sent to elementary or shared with any third party.": "",
     "What Data is Collected": "",
     "After adding an online account, elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device.": "",
