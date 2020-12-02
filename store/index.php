@@ -76,43 +76,43 @@
         <p>Thin, light, and powerful. Incredible multi-touch glass trackpad. 13.3&Prime; ARC display for vivid color without glare. <a href="https://starlabs.systems/pages/labtop-mk-iv?rfsn=4227837.e8f025" class="read-more">Learn More</a></p>
         <a href="https://starlabs.systems/products/labtop-mk-iv?rfsn=4227837.e8f025" class="button suggested-action">Buy Now</a>
     </div>
-</section>
 
-<section class="grid" id="retailers">
-    <div class="two-thirds">
-        <h3>Retailers</h3>
-        <p>Hardware that comes with elementary OS can also be purchased from the following retailers.</p>
-    </div>
+    <div class="grid" id="retailers">
+        <div class="two-thirds">
+            <h3>Retailers</h3>
+            <p>Hardware that comes with elementary OS can also be purchased from the following retailers.</p>
+        </div>
 
-    <div class="grid">
-        <div class="third">
-            <h4><a class="read-more" href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Laptop With Linux">Laptop With Linux</a></h4>
-            <ul>
-                <li>Laptops, mini desktops</li>
-                <li>Based in the Netherlands</li>
-                <li>Free shipping within EU</li>
-            </ul>
+        <div class="grid">
+            <div class="third">
+                <h4><a class="read-more" href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Laptop With Linux">Laptop With Linux</a></h4>
+                <ul>
+                    <li>Laptops, mini desktops</li>
+                    <li>Based in the Netherlands</li>
+                    <li>Free shipping within EU</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
+                <ul>
+                    <li>Laptops, desktops, mini desktops, all-in-ones</li>
+                    <li>Based in Spain</li>
+                    <li>International shipping</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
+                <ul>
+                    <li>Laptops</li>
+                    <li>Based in the United Kingdom</li>
+                    <li>International shipping</li>
+                </ul>
+            </div>
         </div>
-        <div class="third">
-            <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
-            <ul>
-                <li>Laptops, desktops, mini desktops, all-in-ones</li>
-                <li>Based in Spain</li>
-                <li>International shipping</li>
-            </ul>
-        </div>
-        <div class="third">
-            <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
-            <ul>
-                <li>Laptops</li>
-                <li>Based in the United Kingdom</li>
-                <li>International shipping</li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="two-thirds">
-        <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
+        <div class="two-thirds">
+            <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
+        </div>
     </div>
 </section>
 
