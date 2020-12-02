@@ -70,7 +70,7 @@
 
 <section class="grid" id="devices">
     <div class="third device">
-        <img src="https://cdn.shopify.com/s/files/1/2059/5897/files/IV-US-16x1000.webp" />
+        <img src="/images/store/devices/star-labtop-mk-iv.png" />
         <h4><strong>Star LabTop Mk IV</strong> by Star Labs</h4>
         <span class="price">From $791</span>
         <p>Thin, light, and powerful. Incredible multi-touch glass trackpad. 13.3&Prime; ARC display for vivid color without glare. <a href="https://starlabs.systems/pages/labtop-mk-iv?rfsn=4227837.e8f025" class="read-more">Learn More</a></p>
