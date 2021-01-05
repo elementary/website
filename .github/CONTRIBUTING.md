@@ -18,11 +18,12 @@ For a simple local development environment running on PHP, you will need:
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm ci`
 
-These can be most easily installed on elementaryOS 5.0 (Ubuntu 18.04) with this script:
+First, install Node.js (12.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). elementary OS 6 is [not yet supported by Nodesource](https://github.com/nodesource/distributions/pull/1159), so you may need to download the provided installation script, modify it first to map `elementaryOS` `odin` to `Ubuntu` `focal`, then `chmod +x` the script and run it as root.
+
+The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
 
 ```
 sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
-sudo apt install nodejs npm &&
 npm ci
 ```
 
