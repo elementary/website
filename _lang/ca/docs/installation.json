@@ -42,7 +42,7 @@
     "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "Nota: això suposa que heu descarregat el fitxer .iso a la vostra carpeta de Baixades.\nEn cas que el baixeu en un altre lloc, especifiqueu-ne el camí correcte, tal com es mostra a continuació.",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "Per crear una unitat d’instal·lació d'elementary OS en macOS, necessitareu una unitat USB que tingui almenys 2 GB de capacitat i una aplicació anomenada &quot;Etcher&quot;.",
     "Download Etcher": "Baixeu l'Etcher",
-    "etcher steps": "Passos de  l'Etcher",
+    "etcher steps": "Passos de l'Etcher",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Inseriu la unitat USB disponible i seleccioneu el fitxer ISO que acabeu de baixar.",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Obriu l'&quot;Etcher&quot; i seleccioneu la imatge baixada de l'elementary OS usant el botó &quot;Seleccioneu la imatge&quot;.",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "L'Etcher hauria de detectar automàticament la unitat USB, però comproveu si ha seleccionat la destinació correcta.",
