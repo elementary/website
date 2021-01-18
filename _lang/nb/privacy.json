@@ -11,7 +11,7 @@
     "Your data is stored locally on your device and never sent to elementary servers or any third parties. It is used to populate your local apps such as Mail, Calendar, Files, and Photos with your data.": "Din data lagres lokalt på din enhet, og sendes aldri til elementary-tjenerne eller noen tredjeparter. Den brukes til visning i lokale programmer som Mail, Kalender, Filer, og Bilder, med din data.",
     "Sharing Data": "Deling av data",
     "elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.": "elementary OS deler ikke noen data smlet inn fra dine nettbaserte kontoer. Dataen blir aldri sendt til elementary eller tredjepartstjenere.",
-    "elementary.io": "",
+    "elementary.io": "elementary.io/nb/",
     "We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/elementary.io\">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class=\"read-more\" target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/data-policy\">Plausible Data Policy</a>": "",
     "Cookies": "Kaker",
     "<strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong>": "<strong>Du kan velge å skru av, eller selektivt skru av enhver kake eller tredjepartskake i dine nettleserinnstillinger.</strong>",
