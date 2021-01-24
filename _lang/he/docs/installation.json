@@ -25,7 +25,7 @@
     "Insert your USB drive and select it in the &quot;Device&quot; list": "להכניס את כונן ה־USB שלך ולבחור בו ברשימה שתחת „התקן”",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "לבחור ב־„כונן או תמונת ISO” ברשימה שתחת „בחירת אמצעי הפעלה”",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "ללחוץ על„בחירה” כדי לבחור את ה־ISO שהורדת קודם לכן.",
-    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "אנו מייצרים גיבוב (או סכום ביקורת) עבור קובצי דמות של elementary OS כדי לאפשר לך לאמת את את הקובץ שהורדת. כך ניתן לוודא שקיבלת את ההורדה השלמה והמלאה ושדמות ההתקנה שלך אינה פגומה בשום דרך. נא ללחוץ על",
+    "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "אנו מייצרים גיבוב (או סכום ביקורת) עבור קובצי דמות של elementary OS כדי לאפשר לך לאמת את הקובץ שהורדת. כך ניתן לוודא שקיבלת את ההורדה השלמה והמלאה ושדמות ההתקנה שלך אינה פגומה בשום דרך. נא ללחוץ על",
     "the checksum icon": "סמל הגיבוב",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "שליד ה־„בחירה” ולוודא שהטקסט שליד „SHA256” תואם לגיבוב הבא:",
     "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "אם הגיבובים תואמים, ניתן ללחוץ על „התחלה” ולהמתין לסיום התהליך.",
