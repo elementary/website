@@ -49,7 +49,7 @@
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "点击 &quot;Flash!&quot; 按钮，启动写入过程。这可能需要一些时间。",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "完成后，删除驱动器并尝试引导安装elementary OS。",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "在写入镜像过程中，电脑可能会弹出下面的窗口，但您可以安全忽略。",
-    "Not readable warning": "",
+    "Not readable warning": "不可读的警告",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "听到开机音后，按住 <kbd>Option</kbd> 键，然后选中启动设备。设备可能会被标记为 &quot;Windows&quot;，这是正常现象。",
     "Boot Errors": "启动错误",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn {#release_filename} to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
