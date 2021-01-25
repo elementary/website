@@ -44,7 +44,7 @@
     "Download Etcher": "下载 Etcher",
     "etcher steps": "etcher 步骤",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "插入 USB 设备，选择你刚刚下好的 ISO 镜像。",
-    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "",
+    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "打开 &quot;Etcher&quot; 并使用 &quot; 选择镜像 &quot; 按钮,选择已下载的elementary OS镜像文件。",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher 应该已经自动选中了你的设备，但请务必检查，确认已经选中了正确的设备。",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "",
