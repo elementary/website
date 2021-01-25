@@ -46,7 +46,7 @@
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "插入 USB 设备，选择你刚刚下好的 ISO 镜像。",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "打开 &quot;Etcher&quot; 后点击 &quot; Select image &quot; 按钮来选择已下载的 elementary OS 镜像文件。",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher 应该已经自动选中了你的设备，但请务必检查，确认已经选中了正确的设备。",
-    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "",
+    "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "点击 &quot;Flash!&quot; 按钮,启动刻录过程。这可能需要一些时间。",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "在写入镜像过程中，电脑可能会弹出下面的窗口，但您可以安全忽略。",
     "Not readable warning": "",
