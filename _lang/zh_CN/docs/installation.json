@@ -47,7 +47,7 @@
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "打开 &quot;Etcher&quot; 后点击 &quot; Select image &quot; 按钮来选择已下载的 elementary OS 镜像文件。",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher 应该已经自动选中了你的设备，但请务必检查，确认已经选中了正确的设备。",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "点击 &quot;Flash!&quot; 按钮，启动写入过程。这可能需要一些时间。",
-    "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "完成后，删除驱动器并尝试引导安装elementary OS。",
+    "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "完成后，安全弹出驱动器并尝试启动安装 elementary OS。",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "在写入镜像过程中，电脑可能会弹出下面的窗口，但您可以安全忽略。",
     "Not readable warning": "不可读的警告",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "听到开机音后，按住 <kbd>Option</kbd> 键，然后选中启动设备。设备可能会被标记为 &quot;Windows&quot;，这是正常现象。",
