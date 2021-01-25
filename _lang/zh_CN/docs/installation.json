@@ -39,7 +39,7 @@
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "验证下载是一个重要但可选的步骤。我们为 elementary OS系统映像生成一个校验文件(哈希校验)，我们建议您在尝试安装之前验证您的下载是否与该校验和匹配。这可以确保您已经收到了完整的文件，并且您的安装映像没有任何形式的损坏。",
     "Running the following command in your Terminal:": "在终端运行以下命令：",
     "Should produce the output:": "它应该会输出以下内容：",
-    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "注意:这是假设您已经将.iso文件下载到Downloads文件夹。\n如果您在其他地方下载了它，请指定下载文件的正确路径，如下所示",
+    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "注意：这是假设您已经将 .iso 文件下载到 Downloads 文件夹。\n如果您在其他地方下载了它，请指定下载文件的正确路径，如下所示",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "要在macOS上创建一个elementary OS安装驱动器，你需要一个至少2 GB的USB闪存驱动器和一个名为 &quot;Etcher&quot; 的应用程序",
     "Download Etcher": "下载 Etcher",
     "etcher steps": "",
