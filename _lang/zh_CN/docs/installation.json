@@ -62,7 +62,7 @@
     "Select &quot;Diskimage&quot;": "选择&quot;磁盘镜像&quot;",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "点击&quot;…&quot;选择之前下载的 ISO 文件。",
     "Unplug all USB memory devices apart from the one you want to use.": "拔掉所有USB存储设备，除了你想使用的。",
-    "Click &quot;OK&quot; and wait for the process to finish.": "",
+    "Click &quot;OK&quot; and wait for the process to finish.": "点击&quot;OK&quot;等待过程结束。",
     "After Installation": "",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
