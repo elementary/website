@@ -42,7 +42,7 @@
     "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "注意：这是假设您已经将 .iso 文件下载到 Downloads 文件夹。\n如果您在其他地方下载了它，请指定下载文件的正确路径，如下所示",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "要在 macOS 上创建 elementary OS 安装驱动器，你需要一个至少 2GB 的 USB 闪存驱动器和名为 &quot;Etcher&quot; 的应用程序。",
     "Download Etcher": "下载 Etcher",
-    "etcher steps": "etcher 步骤",
+    "etcher steps": "Etcher 步骤",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "插入 USB 设备，选择你刚刚下好的 ISO 镜像。",
     "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "打开 &quot;Etcher&quot; 并使用 &quot; 选择镜像 &quot; 按钮,选择已下载的elementary OS镜像文件。",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher 应该已经自动选中了你的设备，但请务必检查，确认已经选中了正确的设备。",
