@@ -57,7 +57,7 @@
     "should produce the output:": "显示输出结果:",
     "You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.": "你需要一个至少有2 GB可用空间的USB闪存驱动器和一个名为UNetbootin的程序。",
     "Download UNetbootin": "下载 UNetbootin",
-    "Open UNetbootin from the Dash. It will open a window like the one below:": "",
+    "Open UNetbootin from the Dash. It will open a window like the one below:": "打开UNetbootin 它会打开一个像下面这样的窗口:",
     "UNetbootin": "",
     "Select &quot;Diskimage&quot;": "",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "",
