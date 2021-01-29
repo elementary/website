@@ -2,7 +2,7 @@
     "You're connected!": "Estableceuse unha conexión!",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Parece que a súa conexión a Internet funciona. Pode pechar esta xanela con seguridade e seguir usando o seu dispositivo.",
     "Why is this window appearing?": "Por que apareceu esta xanela?",
-    "elementary OS automatically checks your Internet connection when you connect to a new WiFi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS comproba automaticamente a conexión a Internet cando se conecta a unha rede WiFi nova. Se se detecta que non hai unha conexión a Internet (por exemplo ao conectarse mediante un portal cativo nun café ou calquera outra localización pública), esta xanela aparecerá e mostrará a páxina de acceso.",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Algunhas redes poden aparentar ser portais cativos ao principio e provocan que se mostre esta xanela, pero finalmente establecen unha conexión. Neses casos, verá esta mensaxe e poderá pechar a ventá.",
     "You're connected! &sdot; elementary": "Conexión establecida &sdot; elementary"
 }
