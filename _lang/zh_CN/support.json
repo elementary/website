@@ -1,6 +1,6 @@
 {
-    "Get Support": "",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
+    "Get Support": "获取支持",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "我们依靠<a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">由社区驱动的 Stack Exchange</a> 提供支持。搜索常见问题，提出自己的问题，或者回答其他人的问题。从下方选择一个应用程序以获得特定类型的问题。",
     "AppCenter": "应用中心",
     "Calendar": "日历",
     "Camera": "相机",
@@ -12,7 +12,7 @@
     "Code": "代码（文本编辑器）",
     "System Settings": "系统设置",
     "Videos": "视频",
-    "Guides": "",
+    "Guides": "指南",
     "Installation": "安装指南",
     "Get help installing elementary OS with our step-by-step guide.": "通过我们的逐步教学来掌握如何安装 elementary OS。",
     "Learning the Basics": "基础指南",
