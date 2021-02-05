@@ -22,7 +22,7 @@
     "Download Rufus": "Descarcă Rufus",
     "Rufus - select ISO": "Rufus - selectare ISO",
     "Open Rufus": "Deschide Rufus",
-    "Insert your USB drive and select it in the &quot;Device&quot; list": "",
+    "Insert your USB drive and select it in the &quot;Device&quot; list": "Conectează stickul USB și selectează-l din lista &quot;Device&quot; (dispozitive)",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "",
