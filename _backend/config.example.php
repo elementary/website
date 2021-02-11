@@ -28,10 +28,6 @@ return array(
 
     'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
-    'printful_key' => 'aaaaaaaa-bbbb-cccc:dddd-eeeeeeeeeeee',
-
-    'google_map_key' => 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-
     'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
     'sentry_key' => false,
@@ -41,6 +37,4 @@ return array(
     'twitter_consumer_secret' => 'test_csecret',
     'twitter_access_token'    => 'test_atoken',
     'twitter_access_secret'   => 'test_asecret',
-
-    'covid_estimate' => '<strong>Due to COVID-19, orders may be delayed.</strong> Production is on schedule, but delays may still occur with fulfillment and shipping depending on the order, shipping method, and destination.',
 );
