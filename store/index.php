@@ -1,7 +1,6 @@
 <?php
     require_once __DIR__.'/../_backend/preload.php';
     require_once __DIR__.'/../_backend/config.loader.php';
-    require_once __DIR__.'/../_backend/store/product.php';
 
     $page['title'] = 'Store &sdot; elementary';
 
@@ -9,53 +8,8 @@
         'styles/store.css'
     );
 
-    $page['script-plugins'] = array(
-        'https://cdn.jsdelivr.net/gh/eustasy/jquery.leanmodal2@2.5/jQuery.leanModal2.min.js'
-    );
-
-    $page['scripts'] = array(
-        'scripts/store/index.js' => array(
-            'async' => false
-        ),
-    );
-
     include $template['header'];
     include $template['alert'];
-
-    $products = \Store\Product\get_products();
-
-    $categories = [];
-    foreach ($products as $product) {
-        if (!isset($categories[$product['type']])) {
-            $categories[$product['type']] = [$product];
-        } else {
-            $categories[$product['type']][] = $product;
-        }
-    }
-
-    if (getenv('PHPENV') !== 'production' && (
-        !isset($config['printful_key']) ||
-        !isset($config['google_map_key']) ||
-        $config['printful_key'] === 'printful_key' ||
-        $config['google_map_key'] === 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
-    )) {
-
-        $l10n->set_domain('layout');
-?>
-    <div class="row alert warning">
-        <div class="column alert">
-            <div class="icon">
-                <i class="warning fas fa-4x fa-exclamation-triangle"></i>
-            </div>
-            <div class="icon-text">
-                <h3>You are missing API keys</h3>
-                <p>You are viewing a development version of the store without configuring API keys. This will lead to false positives and incorrect errors. Please set your keys to testing configuration.</p>
-            </div>
-        </div>
-    </div>
-<?php
-        $l10n->set_domain($page['name']);
-    }
 ?>
 
 <section class="grid">
@@ -68,7 +22,7 @@
     </div>
 </section>
 
-<section class="grid" id="devices">
+<section class="grid grey" id="devices">
     <div class="two-thirds">
         <h2>Devices</h2>
         <p>Hardware devices with elementary OS can be purchased from the following retailers. Purchasing from these companies helps support elementary OS.</p>
@@ -104,7 +58,7 @@
     <div class="two-thirds">
         <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
     </div>
-</section>
+</section>]
 
 <section class="grid">
     <div class="two-thirds">
@@ -112,8 +66,6 @@
         <p>New tees, mugs, and more will be launching with our new store soon. Keep an eye on <a href="https://blog.elementary.io" target="_self">our blog</a> for the latest updates and announcements.</p>
     </div>
 </section>
-
-<script>window.products = <?php echo json_encode(\Store\Product\get_products()) ?></script>
 
 <?php
     include $template['footer'];
