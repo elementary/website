@@ -10,6 +10,8 @@
 
     include $template['header'];
     include $template['alert'];
+
+    $l10n->set_domain($page['name']);
 ?>
 
 <section class="grid">
