@@ -17,7 +17,7 @@
     "Math operations (example: 23 * 5)": "Opérations mathématiques (par ex : 23*5)",
     "To open the Applications Menu with the keyboard, press <kbd>&#8984;</kbd> + <kbd>Space</kbd>.": "Pour ouvrir le menu des applications à l'aide du clavier, appuyez sur <kbd>&#8984;</kbd> + <kbd>Espace</kbd>.",
     "On the right side of the panel are icons called Indicators. These tell you of the current status of your session and device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "Sur le côté droit du panneau se trouvent des icônes appelées Indicateurs. Ils vous indiquent l'état actuel de votre session et de votre appareil, c'est-à-dire les connexions réseau, la batterie, l'entrée et la sortie du son, les notifications, etc. La sélection d'un indicateur permet d'obtenir plus d'informations et d'actions associées.",
-    "A middle click or three finger tap on an indicator will present you with the following quick actions:": "Un clic molette ou un appui à trois doigts sur un indicateur effectuera les actions rapides suivantes :",
+    "A middle click or three finger tap on an indicator will present you with the following quick actions:": "Un clic central ou un appui à trois doigts sur un indicateur effectuera les actions rapides suivantes :",
     "Sound: Toggle mute for the current output": "Son : Activer/Désactiver le son de sortie courant",
     "Bluetooth: Toggle Bluetooth on or off": "Bluetooth : Activer/Désactiver le Bluetooth",
     "Power: Hide/show the percentage of battery remaining": "Alimentation : Afficher/Masquer le pourcentage de batterie restante",
