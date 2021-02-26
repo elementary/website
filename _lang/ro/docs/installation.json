@@ -30,7 +30,7 @@
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "lângă &quot;SELECTARE&quot; și asigură-te că textul de lângă &quot;SHA256&quot; este la fel ca următorul cod hash:",
     "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "Dacă codurile hash sunt la fel, apasă &quot;START&quot; și așteaptă ca procesul să se încheie.",
     "Booting from the Install Drive": "Pornire de pe mediul de instalare",
-    "In order to start the installation process, you must boot your computer from the install drive.": "",
+    "In order to start the installation process, you must boot your computer from the install drive.": "Pentru a începe procesul de instalare, trebuie să pornești calculatorul (computerul) din mediul de instalare.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "",
     "Press <kbd>F12</kbd> (or the appropriate key) and select the install drive—usually &quot;USB-HDD&quot; or something containing the word &quot;USB&quot;, but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.": "",
