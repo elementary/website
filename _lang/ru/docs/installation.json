@@ -44,7 +44,7 @@
     "Download Etcher": "Скачать Etcher",
     "etcher steps": "шаги etcher",
     "Insert the spare USB drive, and select the ISO file you've just downloaded.": "Вставьте свободный USB-накопитель и выберите ISO-файл, который вы только что загрузили.",
-    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Откройте &quot;Etcher&quot; и выберите загруженный файл образа elementary OS с помощью кнопки &quot;Select image&quot;.",
+    "Open &quot;Etcher&quot; and select your downloaded elementary OS image file using the &quot;Select image&quot; button.": "Откройте &quot;Etcher&quot; и выберите загруженный образ elementary OS с помощью кнопки &quot;Select image&quot;.",
     "Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.": "Etcher должен автоматически обнаружить ваш USB-накопитель, но на всякий случай проверьте, сделал ли он правильный выбор.",
     "Start the flashing process by clicking the &quot;Flash!&quot; button. It will take a moment to get started.": "Начните процесс, нажав на кнопку &quot;Flash!&quot;. Ему понадобится некоторое время, чтобы начать.",
     "When complete it will be safe to remove the drive and attempt to boot to install elementary OS.": "После завершения работы вы сможете безопасно изъять привод и попытаться загрузиться, чтобы установить elementary OS.",
