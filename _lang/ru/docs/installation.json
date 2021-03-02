@@ -61,8 +61,8 @@
     "UNetbootin": "UNetbootin",
     "Select &quot;Diskimage&quot;": "Выберите &quot;Образ диска&quot;",
     "Click &quot;…&quot; to select the ISO that you downloaded previously.": "Нажмите на &quot;...&quot; чтобы выбрать ранее скачанный образ ISO.",
-    "Unplug all USB memory devices apart from the one you want to use.": "",
-    "Click &quot;OK&quot; and wait for the process to finish.": "",
-    "After Installation": "",
-    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
+    "Unplug all USB memory devices apart from the one you want to use.": "Отключите все USB-устройства, кроме того, которое вы хотите использовать.",
+    "Click &quot;OK&quot; and wait for the process to finish.": "Нажмите кнопку &quot;ОК&quot; и дождитесь завершения процесса.",
+    "After Installation": "После установки",
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Потратьте это время, чтобы прочитать руководство <a href=\"/docs/learning-the-basics\">начала работы</a>, чтобы узнать больше о вашей новой операционной системе."
 }
