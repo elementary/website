@@ -22,7 +22,7 @@
     "Download Rufus": "Загрузить Rufus",
     "Rufus - select ISO": "Rufus - выбор ISO",
     "Open Rufus": "Откройте Rufus",
-    "Insert your USB drive and select it in the &quot;Device&quot; list": "Вставьте ваше USB устройство и выберите его в списке &quot;Устройство&quot;",
+    "Insert your USB drive and select it in the &quot;Device&quot; list": "Вставьте ваш USB-накопитель и выберите его в списке &quot;Устройств&quot;",
     "Select &quot;Disk or ISO image&quot; in the &quot;Boot selection&quot; list": "Выберите &quot;Диск или ISO-образ&quot; в списке &quot;Метод загрузки&quot;",
     "Click &quot;SELECT&quot; to choose the ISO that you downloaded previously.": "Нажмите на кнопку &quot;ВЫБРАТЬ&quot; чтобы выбрать ISO-образ который вы ранее загрузили.",
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "Мы генерируем контрольную сумму (или хеш-код) для образов elementary OS чтобы вы смогли проверить свой скачанный файл. Это гарантирует полную загрузку и то, что ваш установочный образ никоим образом не поврежден. Щелкните на значок",
