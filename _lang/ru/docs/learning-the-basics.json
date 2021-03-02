@@ -24,7 +24,7 @@
     "Notifications: Toggle Do Not Disturb mode": "Уведомления: Переключить режим Не Беспокоить",
     "Session: Show the Shut Down dialog": "Сеанс: Показать диалог Выключения",
     "The Dock": "Док",
-    "At the bottom of the desktop is the Dock. It contains your favorite apps well as any apps that are currently open.": "Внизу рабочего стола находится док-панель. Она содержит ваши избранные приложения и приложения, открытые в данный момент.",
+    "At the bottom of the desktop is the Dock. It contains your favorite apps well as any apps that are currently open.": "Внизу рабочего стола находится док. Он содержит ваши избранные приложения и приложения, открытые в данный момент.",
     "The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose <strong>Keep in Dock</strong>. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck <strong>Keep in Dock</strong>. To rearrange apps on the dock, simply drag and drop them.": "Содержимое док-панели легко настроить. Чтобы добавить в док-панель приложение, перетащите его из меню приложений или нажмите правой кнопкой мыши на иконке открытого приложения и выберите <strong>Держать в Доке</strong>. Для изменения порядка приложений в док-панели,  просто перетащите их.",
     "By default, the dock hides off the bottom of the desktop when an app is maximized. Simply move your mouse to the bottom center of the desktop to reveal the dock.": "",
     "You can customize the dock's behavior through <strong><a href=\"/docs/learning-the-basics#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Dock</strong>.": "",
