@@ -1,6 +1,6 @@
 {
-    "Get Support": "",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
+    "Get Support": "Получить поддержку",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "Мы полагаемся на нашу <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">поддержку сообществом на Stack Exchange</a>. Ищите общие вопросы, задавайте свои собственные или помогайте, отвечая на некоторые из них. Выберите приложение ниже, чтобы перейти к конкретным вопросам о нем.",
     "AppCenter": "Центр приложений",
     "Calendar": "Календарь",
     "Camera": "Камера",
@@ -12,7 +12,7 @@
     "Code": "Code",
     "System Settings": "Параметры системы",
     "Videos": "Видео",
-    "Guides": "",
+    "Guides": "Руководства",
     "Installation": "Установка",
     "Get help installing elementary OS with our step-by-step guide.": "Используйте пошаговое руководство, если вам нужна помощь с установкой elementary OS.",
     "Learning the Basics": "Изучение основ",
