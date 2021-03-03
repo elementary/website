@@ -55,9 +55,9 @@
     "Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "Наша команда дизайнеров превращает идеи в четкие отчеты о проблемах и готовые материалы. Перед погружением, советуем прочитать о нашем рабочем процессе.",
     "Our design team tracks “Needs Design” issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "Наша команда дизайнеров отслеживает проблемы помеченные меткой «Needs Design» в GitHub. Возможно, им понадобится больше обсуждений относительно дизайна, моделей или результатов.",
     "See ‘Needs Design’ Issues": "Посмотреть отчеты «Needs Design»",
-    "elementary OS uses a system stylesheet written in CSS. It defines how the interface—like buttons, toolbars, and menus—is displayed.": "elementary OS использует системную таблицу стилей, написанную на CSS. Он определяет, как отображается интерфейс—например, кнопки, панели инструментов и меню.",
+    "elementary OS uses a system stylesheet written in CSS. It defines how the interface—like buttons, toolbars, and menus—is displayed.": "elementary OS использует системную таблицу стилей, написанную на CSS. Она определяет способ отображается интерфейса, например кнопок, панелей инструментов и меню.",
     "View Stylesheet": "Посмотреть таблицу стилей",
-    "elementary OS comes with a set of vector icons that are used across all default apps and are made available to third-party apps.": "",
+    "elementary OS comes with a set of vector icons that are used across all default apps and are made available to third-party apps.": "elementary OS поставляется с набором векторных иконок, которые используются во всех стандартных приложениях и доступны сторонним приложеням.",
     "Browse Icons": "Просмотреть иконки",
     "Get Involved with elementary OS": "Принять участие в разработке elementary OS"
 }
