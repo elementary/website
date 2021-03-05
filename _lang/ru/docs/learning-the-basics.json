@@ -74,8 +74,8 @@
     "AppCenter includes updates for apps and the operating system itself under the <strong>Installed</strong> tab. Remember to install updates frequently to get the latest features, fixes, and security improvements. For more information related to security patches, read the <a href=\"https://usn.ubuntu.com/\">Ubuntu security notices</a>.": "Центр приложений включает в себя обновления для приложений и операционной системы во вкладке <strong>Установленные</strong>. Не забывайте чаще устанавливать обновления, чтобы получать последние функции, исправления и улучшения безопасности. Для получения дополнительной информации об исправлениях безопасности, прочтите <a href=\"https://usn.ubuntu.com/\">Примечания о безопасности Ubuntu </a>.",
     "System Settings": "Параметры системы",
     "elementary OS comes with the &quot;System Settings&quot; app that helps you manage settings and preferences for your device. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.": "",
-    "Search": "",
-    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "",
+    "Search": "Поиск",
+    "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Печатая ключевые слова в строке поиска вверху окна, вы сможете быстро найти нужные вам настройки. Содержание окна Системных Настроек будет отфильтровано в соответствии с вашим запросом.",
     "App Settings": "",
     "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
 }
