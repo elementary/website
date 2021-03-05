@@ -77,5 +77,5 @@
     "Search": "Поиск",
     "You can quickly find settings you are looking for by typing keywords in the search bar at the top of the window. The contents of the System Settings window will filter down to match your search.": "Печатая ключевые слова в строке поиска вверху окна, вы сможете быстро найти нужные вам настройки. Содержание окна Системных Настроек будет отфильтровано в соответствии с вашим запросом.",
     "App Settings": "",
-    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": ""
+    "Keep in mind that System Settings only deals with the global preferences for elementary OS. Although some apps may also have their own preferences, you will not find them here. Instead, look for them inside the app in question.": "Учтите, что Системные Настройки затрагивают только общие параметры elementary OS. Хотя некоторые приложения также могут иметь собственные настройки, вы не найдете их здесь. Если вы ищете их, попробуйте выполнить поиск внутри самого приложения."
 }
