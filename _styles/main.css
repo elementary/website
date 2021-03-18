@@ -1,7 +1,7 @@
-/*************************************
-* Copyright 2016 elementary LLC.     *
-* This file is part of elementary.io *
-*************************************/
+/***************************************
+* Copyright 2016–2021 elementary, Inc. *
+* This file is part of elementary.io   *
+***************************************/
 
 @import url('/fonts/inter.css');
 
@@ -669,6 +669,15 @@ a.third:hover {
 * Alerts *
 *********/
 
+#js-alert {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    font-size: 0.8;
+    margin-bottom: 1em;
+    order: -1;
+    padding: 0 1em;
+}
+
 .warning {
     color: #fbc02d;
 }
@@ -688,7 +697,8 @@ a.third:hover {
     margin-top: 20px;
 }
 
-.row.alert.warning {
+.row.alert.warning,
+#js-alert {
     background-color: #fff9c4;
     border-color: #fbc02d;
 }
@@ -704,7 +714,8 @@ a.third:hover {
     padding: 5px;
 }
 
-.row.alert > .column.alert {
+.row.alert > .column.alert,
+#js-alert {
     color: rgba(0, 0, 0, 0.8);
 }
 
