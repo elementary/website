@@ -671,7 +671,9 @@ a.third:hover {
 
 #js-alert {
     border-bottom: 1px solid;
+    border-top: 1px solid;
     font-size: 0.8;
+    margin-bottom: 1em;
     order: -1;
     padding: 0 1em;
 }

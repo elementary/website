@@ -134,6 +134,12 @@ $l10n->begin_html_translation();
             </div>
         </nav>
 
+        <noscript>
+            <div id="js-alert">
+                <p><strong>JavaScript is required</strong> for parts of this site, like downloading elementary OS and some interactive components.</p>
+            </div>
+        </noscript>
+
         <?php require __DIR__ . '/event.php'; ?>
 
     <?php if (event_active('indiegogo appcenter 2/7')) { ?>

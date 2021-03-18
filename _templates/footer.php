@@ -38,10 +38,6 @@
                 <li><a href="<?php echo $sitewide['root'].'open-source'; ?>">Open Source</a></li>
             </ul>
         </footer>
-        <div id="js-alert">
-            <p><strong>JavaScript is required</strong> for parts of this site, like downloading elementary OS and some interactive components.</p>
-        </div>
-        <script>document.getElementById("js-alert").remove ();</script>
         <?php
             include $template['legacy'];
             $l10n->set_domain('layout');
