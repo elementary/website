@@ -89,7 +89,6 @@ See Also:
 
 Most users don't want to read through help docs before they can use your app. Instead, they expect that your app will be intuitive and simple for them to understand without assistance.
 
-
 [![](https://imgs.xkcd.com/comics/manuals.png "The most ridiculous offender of all is the sudoers man page, which for 15 years has started with a 'quick guide' to EBNF, a system for defining the grammar of a language. 'Don't despair', it says, 'the definitions below are annotated.'")](https://xkcd.com/1343/)
 
 ### Use Understandable Copy {#use-understandable-copy}
@@ -784,6 +783,14 @@ A Static Notebook is a small set of unchanging tabs, commonly seen in preference
 ![Dynamic Notebook](/images/docs/human-interface-guidelines/notebooks/dynamic-notebook.png)
 
 A Dynamic Notebook is a way for an app to provide user-manageable tabbing functionality, commonly seen in web browsers. The tabs appear attached to the toolbar on their own tab bar above the relevant content. Tabs are able to be rearranged and closed, and a "new tab" button is at the start of the notebook widget.
+
+## Toasts {#toasts}
+
+A Toast is an ephemeral in-app notification overlaid on top of other content used to affirm user action and/or provide a time-sensitive contextual action. After a short timeout, a Toast is automatically dismissed. Because they are ephemeral, Toasts should follow recent user action when the user is expected to engaging with the app. A Toast can offer a contextual action that can be triggered as long as the Toast is visible. A Toast includes a manual dismiss button, e.g. if it is likely to be covering content the user may be more interested in.
+
+A Toast's title should be phrased to affirm user action, even when providing an [Undo](#always-provide-an-undo) action. For example, "Foo was deleted", while offering an action to "Undo".
+
+Use a Toast to affirm user action and provide a contextual action, like confirming content was deleted while offering an undo, or informing the user that an in-app process completed while offering a button to navigate to the result of the process. If you provide a Toast in your app to notify of the result of a background process, consider only using a Toast if your app window is focused wihle throwing a system notification if the window is not focused.
 
 # Iconography {#iconography}
 
