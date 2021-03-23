@@ -786,7 +786,7 @@ A Dynamic Notebook is a way for an app to provide user-manageable tabbing functi
 
 ## Toasts {#toasts}
 
-A Toast is an ephmeral in-app notification overlaid on top of other content used to affirm user action and/or provide a time-sensitive contextual action. After a short timeout, a Toast is automatically dismissed. Because they are ephemeral, Toasts should follow recent user action when the user is expected to engaging with the app. A Toast can offer a contextual action that can be triggered as long as the Toast is visible. A Toast includes a manual dismiss button, e.g. if it is likely to be covering content the user may be more interested in.
+A Toast is an ephemeral in-app notification overlaid on top of other content used to affirm user action and/or provide a time-sensitive contextual action. After a short timeout, a Toast is automatically dismissed. Because they are ephemeral, Toasts should follow recent user action when the user is expected to engaging with the app. A Toast can offer a contextual action that can be triggered as long as the Toast is visible. A Toast includes a manual dismiss button, e.g. if it is likely to be covering content the user may be more interested in.
 
 A Toast's title should be phrased to affirm user action, even when providing an [Undo](#always-provide-an-undo) action. For example, "Foo was deleted", while offering an action to "Undo".
 
