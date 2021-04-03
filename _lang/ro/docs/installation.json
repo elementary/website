@@ -39,7 +39,7 @@
     "Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.": "Verificarea fișierului descărcat este un pas important, dar opțional. Generăm o sumă de verificare (checksum, hashsum) pentru imaginile de instalare elementary OS și recomandăm să verifici că ce ai descărcat corespunde sumei de verificare înainte să instalezi. Asta asigură că ai o descărcare completă, corespunzătoare și că imaginea de instalare nu s-a deteriorat în vreun fel.",
     "Running the following command in your Terminal:": "Rulând (executând) următoarea comandă în terminalul tău:",
     "Should produce the output:": "Ar trebui să dea următorul rezultat:",
-    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "",
+    "Note: This is assuming that you have downloaded the .iso file to your Downloads folder.\nIn case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below": "Notă: acestea presupun că ai descărcat fișierul .iso în directorul Descărcări (Downloads).\nDacă l-ai descărcat altundeva, arată calea de acces către fișierul descărcat, precum în exemplul de jos",
     "To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called &quot;Etcher&quot;.": "",
     "Download Etcher": "",
     "etcher steps": "",
