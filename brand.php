@@ -13,7 +13,7 @@
 
 <div class="row docs">
     <h1>Brand</h1>
-    <p>The elementary brand is unique: technically it belongs to elementary, Inc., the company that guides and supports development of elementary products. However, we have a great community and don’t want to be too overbearing with legal requirements and technicalities. As such, we have written up some guidelines to make it easier to understand when and how the elementary brand should be used.</p>
+    <p>The elementary brand belongs to elementary, Inc., the company that guides and supports development of elementary products. These guidelines describe when and how the elementary brand should be used.</p>
 </div>
 
 <div class="row docs">
@@ -24,30 +24,41 @@
 
 <div class="row docs">
     <h2>Brand Marks</h2>
-    <p>elementary, Inc. claims two marks: the <strong>“elementary” logotype</strong> and the <strong>“e” logomark</strong>. Both are considered trademarks and represent elementary, Inc.</p>
+    <p>elementary, Inc. claims two marks: the <strong>“e” logomark</strong> and the <strong>“elementary” logotype</strong>. Both are considered trademarks and represent elementary, Inc.</p>
     <p>Both should be used with the following in mind:</p>
     <ul>
         <li><p>Do not stretch, skew, rotate, flip, or otherwise alter the marks.</p></li>
         <li><p>Do not use the marks on an overly-busy background; solid colors work best.</p></li>
-        <li><p>The marks should always be monochromatic; typically white if on a dark background, or black if on a light background.</p></li>
+        <li><p>The marks should be monochromatic; e.g. white on a dark background or black on a light background.</p></li>
     </ul>
 
-    <h3>Logotype</h3>
-    <img src="<?php echo $sitewide['root'];?>images/brand/logotype.png" alt="elementary Logotype"/>
-    <p>The logotype is to be used when space allows to refer to elementary, Inc., or it can be used before a product name to refer to a specific product of elementary, Inc.</p>
+    <div class="logomarks">
+        <figure>
+            <img src="https://raw.githubusercontent.com/elementary/brand/master/logomark.svg" alt="elementary Logomark" />
+            <figcaption>Default logomark</figcaption>
+        </figure>
+        <figure>
+            <img src="https://raw.githubusercontent.com/elementary/brand/master/logomark-alt.svg" alt="Alternate elementary Logomark" />
+            <figcaption>Alternate logomark</figcaption>
+        </figure>
+    </div>
+    <p>The “e” logomark is to be used to refer to elementary, Inc., especially when a square ratio is required. It should be used at larger sizes and when alongside similarly-weighted logos. The thinner, alternate logomark may be used in smaller contexts or when the default logomark feels too heavy.</p>
+
+    <figure>
+        <img src="https://raw.githubusercontent.com/elementary/brand/master/logotype.svg" alt="elementary Logotype" />
+        <figcaption>Logotype</figcaption>
+    </figure>
+
+    <p>The “elementary” logotype is to be used when space allows to refer to elementary, Inc. It may also be used before a product name to refer to a specific product of elementary, Inc.</p>
     <p>The logotype should always be used under the following guidelines:</p>
     <ul>
-        <li><p>Do not attempt to recreate the logotype. It is a meticulously-designed brand mark, not simply “elementary” written in a specific font.</p></li>
+        <li><p>Do not attempt to recreate the logotype by writing “elementary” in a specific font; always use the provided graphic.</p></li>
         <li><p>Do not use the logotype at small sizes; if it is not clear, use the logomark instead.</p></li>
     </ul>
-
-    <h3>Logomark</h3>
-    <img src="<?php echo $sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
-    <p>The “e” logomark is to be used to refer to elementary, Inc. when space is constrained or a square ratio is required.</p>
 </div>
 
 <div class="row docs">
-    <h2>Color</h2>
+    <h2 id="color">Color</h2>
     <p>We employ the use of color combined with our name and marks to establish our brand. We use the following palette:</p>
     <div class="color-palette-section">
         <div class="color-palette-box">

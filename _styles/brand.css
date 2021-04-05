@@ -1,11 +1,7 @@
-/*************************************
-* Copyright 2016 elementary LLC.     *
-* This file is part of elementary.io *
-*************************************/
-
-.page-brand svg {
-    max-width: 100%;
-}
+/***************************************
+* Copyright 2016–2021 elementary, Inc. *
+* This file is part of elementary.io   *
+***************************************/
 
 .page-brand .hex {
     font-family: "Roboto Mono", monospace;
@@ -59,5 +55,22 @@
     display: block;
     float: left;
     margin: 1em 0 2em;
+    width: 50%;
+}
+
+.page-brand figure {
+    display: inline-block;
+    margin: 0 0 3rem;
+}
+
+.page-brand figcaption {
+    font-size: 0.8rem;
+}
+
+.page-brand .logomarks {
+    font-size: 0;
+}
+
+.page-brand .logomarks figure {
     width: 50%;
 }
