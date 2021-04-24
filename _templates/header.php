@@ -119,7 +119,7 @@ $l10n->begin_html_translation();
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
+                    <li><a href="https://store.elementary.io" target="_self">Store</a></li>
                     <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
                 </ul>
                 <ul class="right">
