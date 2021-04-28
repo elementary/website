@@ -41,7 +41,7 @@
                     <img src="images/privacy-policy/chrome_128x128.png" data-l10n-off alt="Google Chrome" class="browsers-list" />
                     <h4 data-l10n-off>Chrome</h4>
                 </a>
-                <a target="_blank" rel="noopener" href="https://answers.microsoft.com/en-us/insider/forum/insider_internet-insider_spartan/how-to-view-and-manage-cookies-in-microsoft-edge/67b3a495-554e-4f1d-995e-93d0ea6882a6" class="column">
+                <a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" class="column">
                     <img src="images/privacy-policy/edge_128x128.png" data-l10n-off alt="Edge" class="browsers-list" />
                     <h4 data-l10n-off>Edge</h4>
                 </a>
