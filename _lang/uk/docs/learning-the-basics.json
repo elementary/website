@@ -32,7 +32,7 @@
     "Apps exist in their own windows which can be closed, maximized, or moved around.": "Застосунки з'являються у власних вікнах, які можна закрити, розгорнути або перемістити.",
     "When you open an app, its window appears on the desktop. Each app typically has three areas: the window buttons, a toolbar, and the contents of the app.": "Коли ви відкриваєте застосунок, на стільниці з’являється його вікно. Кожен застосунок зазвичай має три області: кнопки вікна, панель інструментів та вміст застосунку.",
     "Header Bar": "Панель заголовка",
-    "Many apps have a Header Bar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "У верхній частині багатьох застосунків є панель заголовка. Ця область містить загальні дії або елементи навігації застосунку та кнопки вікна.",
+    "Many apps have a Header Bar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "У верхній частині багатьох застосунків є панель заголовка. Тут розміщено загальні дії або елементи навігації застосунку та кнопки вікна.",
     "You can move an app's window around the desktop by dragging anywhere on the Header Bar, including on buttons.": "Ви можете переміщувати вікно застосунку стільницею, перетягуючи будь-куди за панель заголовка, включно з кнопками.",
     "HeaderBar": "Панель заголовка",
     "Window Buttons": "Кнопки вікна",
