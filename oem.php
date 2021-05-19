@@ -21,11 +21,11 @@
 <div class="grid">
     <div class="two-thirds">
         <h2>Partners &amp; Retailers</h2>
-        <p>We offer two ways to be listed as an OEM of elementary OS in <a href="<?php echo $page['lang-root'].'store/'; ?>">our store</a>, with differing requirements and benefits.</p>
+        <p>We offer two ways to be listed as an OEM of elementary OS in <a href="https://store.elementary.io">our store</a>, with differing requirements and benefits.</p>
     </div>
     <div class="half copy">
         <h3>Partner</h3>
-        <p>Model-by-model approval with those specific models featured in <a href="<?php echo $page['lang-root'].'store/'; ?>">our store</a>.</p>
+        <p>Model-by-model approval with those specific models featured in <a href="https://store.elementary.io">our store</a>.</p>
         <p>Requirements:</p>
         <ul>
             <li>Official involvement from elementary, Inc.</li>
@@ -36,7 +36,7 @@
     </div>
     <div class="half copy">
         <h3>Retailer</h3>
-        <p>A link to your website or landing page listed in <a href="<?php echo $page['lang-root'].'store/'; ?>">our store</a>.</p>
+        <p>A link to your website or landing page listed in <a href="https://store.elementary.io">our store</a>.</p>
         <p>Requirements:</p>
         <ul>
             <li>Selling devices with elementary OS</li>
