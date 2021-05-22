@@ -35,7 +35,7 @@
     "Many apps have a Header Bar at the top of the app. This area contains common actions or navigation items for the app, plus the Window Buttons.": "很多应用程序在其顶部都会有个标题栏。此区域包含应用程序的常用操作或导航项，以及窗口按钮。",
     "You can move an app's window around the desktop by dragging anywhere on the Header Bar, including on buttons.": "你可以拖拽标题栏的任何地方包括按钮来在桌面上移动应用程序窗口。",
     "HeaderBar": "",
-    "Window Buttons": "",
+    "Window Buttons": "窗口按钮",
     "An app's Window Buttons are at the top corners of the app window. The close button is on the left and the maximize button is on the right. Pressing the close button will close the app's window. Pressing the maximize button will toggle whether the app window takes up the full desktop or not. You can also drag a window to the top of the desktop or double-click its header bar to maximize, and drag from the top or double-click the header bar to unmaximize.": "",
     "Multitasking": "",
     "elementary OS supports two types of multitasking: windows and workspaces.": "",
