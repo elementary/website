@@ -84,11 +84,6 @@
             <p>Set up a recurring contribution through Liberapay, the open source and non-profit funding platform.</p>
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
-        <div class="third">
-            <i class="fab fa-btc"></i>
-            <p>Contribute via cryptocurrency with Coinbase. We can securely accept Bitcoin, Ethereum, and other cryptocurrencies instantly.</p>
-            <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Pay with Crypto</a>
-        </div>
     </div>
 </section>
 
