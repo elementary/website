@@ -142,12 +142,12 @@ $l10n->begin_html_translation();
 
         <?php require __DIR__ . '/event.php'; ?>
 
-    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
+    <?php if (event_active('edw')) { ?>
         <div class="overlay">
             <div class="overlay__content toast">
                 <div class="toast__close"><i class="fas fa-times"></i></div>
-                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
-                <a href="https://igg.me/at/appcenter-for-everyone" class="toast__button">Back Us</a>
+                <span class="toast__text">elementary Developer Weekend is coming</span>
+                <a href="https://edw.elementary.io" target="_self" class="toast__button">Learn More</a>
             </div>
         </div>
     <?php } ?>
