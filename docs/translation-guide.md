@@ -36,4 +36,4 @@ We won't support translation of the following pages:
 * <a href="https://docs.elementary.io/develop/" data-l10n-off="1">Developer Documentation</a>
 * <a href="https://elementary.io/docs/human-interface-guidelines" data-l10n-off="1">Human Interface Guidlines</a>
 * <a href="https://elementary.io/docs/code/reference" data-l10n-off="1">Reference</a>
-* <a href="https://elementary.io/store/" data-l10n-off="1">Store</a>
+* <a href="https://store.elementary.io/" data-l10n-off="1">Store</a>
