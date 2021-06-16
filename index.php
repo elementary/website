@@ -6,7 +6,6 @@
     $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
     $page['scripts'] = array(
-        'scripts/slingshot.js',
         'scripts/download.js',
         'scripts/blog.js',
         'scripts/showcase.run.js'
@@ -349,68 +348,7 @@
                 </div>
             </div>
         </section>
-        <section id="slingshot">
-            <div class="app-display app-display--horizontal">
-                <div class="app-display__image">
-                    <div id="slingshot-label" data-l10n-off>
-                        <?php include('images/pantheon/actions/system-search.svg'); ?>
-                        Applications
-                    </div>
-                    <div id="slingshot-arrow"><img src='images/slingshot/arrow.svg' alt=""></div>
-                    <div class="slingshot">
-                        <div class="linked">
-                            <div id="slingshot-grid-button" class="button active">
-                                <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?>
-                            </div>
-                            <div id="slingshot-categories-button" class="button">
-                                <?php include('images/icons/actions/symbolic/view-filter-symbolic.svg'); ?>
-                            </div>
-                        </div>
-                        <div class="entry">
-                            <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?>
-                            <span class="search-term inactive" data-l10n-off>dat</span>
-                            <span class="cursor" data-l10n-off>|</span>
-                            <span class="clear-icon inactive"><?php include('images/icons/actions/symbolic/edit-clear-symbolic.svg'); ?></span>
-                        </div>
-                        <div id="slingshot-grid" class="active view">
-                            <div class="slingshot-grid">
-                            </div>
-                            <div id="slingshot-pager">
-                                <div class="switcher-checked" data-l10n-off><?php include('images/bullet.svg'); ?></div>
-                                <div class="switcher" data-l10n-off><?php include('images/bullet.svg'); ?></div>
-                            </div>
-                        </div>
-                        <div id="slingshot-categories" class="next view">
-                            <div class="slingshot-categories-sidebar">
-                                <span class="slingshot-category active" data-l10n-off>Accessories</span>
-                                <span class="slingshot-category" data-l10n-off>Graphics</span>
-                                <span class="slingshot-category" data-l10n-off>Internet</span>
-                                <span class="slingshot-category" data-l10n-off>Office</span>
-                                <span class="slingshot-category" data-l10n-off>Other</span>
-                                <span class="slingshot-category" data-l10n-off>Sound &amp; Video</span>
-                                <span class="slingshot-category" data-l10n-off>System Tools</span>
-                            </div>
-                            <div class="slingshot-categories">
-                            </div>
-                        </div>
-                        <div id="slingshot-search" class="next view">
-                            <div class="searchone inactive"></div>
-                            <div class="searchtwo inactive"></div>
-                            <div class="searchthree inactive"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="app-display__description">
-                    <h2>3 Ways to Explore</h2>
-                    <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Grid</h4>
-                    <p>Display all your apps in an alphabetized grid. Flick through and find the one you want.</p>
-                    <?php include('images/icons/actions/symbolic/view-filter-symbolic.svg'); ?><h4>Categories</h4>
-                    <p>View your apps automatically organized into categories. Perfect for large collections.</p>
-                    <?php include('images/icons/actions/symbolic/edit-find-symbolic.svg'); ?><h4>Search</h4>
-                    <p>Launch apps, open settings panes, run commands, and more from the lightning fast search view.</p>
-                </div>
-            </div>
-        </section>
+
         <section id="parental-controls" class="grey">
             <div class="app-display app-display--overflow">
                 <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
