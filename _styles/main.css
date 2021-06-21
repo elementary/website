@@ -613,9 +613,9 @@ a.third:hover {
 
 .toast {
     align-items: center;
-    background-color: #eb1478;
-    border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(258, 53, 139, 0.16), 0 3px 6px rgba(258, 53, 139, 0.23);
+    background-image: linear-gradient(75deg, #a56de2 15%, #64baff, #d1ff82 110%);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
     display: inline-flex;
     flex-wrap: wrap;
@@ -631,8 +631,9 @@ a.third:hover {
 
 .toast__close {
     align-items: center;
-    background-color: #b50054;
+    background-color: rgba(255,255, 255, 0.8);
     border-radius: 50%;
+    color: rgba(0, 0, 0, 0.75);
     cursor: pointer;
     display: inline-flex;
     height: 24px;
@@ -644,8 +645,8 @@ a.third:hover {
 
 .toast__button {
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 3px;
-    color: #b50054;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.75);
     margin: 6px;
     padding: 3px 6px;
 }
