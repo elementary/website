@@ -80,8 +80,8 @@ sudo apt install appname --reinstall
 
 When developing the Panel (codenamed WingPanel) or panel-related packages like the Applications Menu and indicators, you want to start WingPanel from the command line to view logs. WingPanel is automatically started and restarted by `gnome-session`. If wingpanel is stopped/killed twice within a minute, it will stop automatically restarting, and you can gather logs:
 
-1. In Terminal run `killall wingpanel` twice to stop the current WingPanel
-2. Start wingpanel with debug logging by running `G_MESSAGES_DEBUG=all wingpanel`
+1. In Terminal run `killall io.elementary.wingpanel` twice to stop the current WingPanel
+2. Start wingpanel with debug logging by running `G_MESSAGES_DEBUG=all io.elementary.wingpanel`
 
 To restore normal behavior simply logout and back in again to restart your session.
 
