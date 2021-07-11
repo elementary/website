@@ -29,7 +29,7 @@
     "the checksum icon": "o ícone de checksum",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "próximo ao &quot;SELECIONAR&quot; e verifique se o texto próximo ao &quot;SHA256&quot; corresponde ao seguinte hash:",
     "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "Se as hashes corresponderem, clique em &quot;INICIAR&quot; e aguarde o processo terminar.",
-    "Booting from the Install Drive": "Iniciando do drive de instalação",
+    "Booting from the Install Drive": "Iniciando pelo Disco de Instalação",
     "In order to start the installation process, you must boot your computer from the install drive.": "Para começar o processo de instalação, você precisa iniciar o seu computador pelo disco de instalação.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Considerando que o seu computador ainda está ligado, comece inserindo seu drive de instalação e reinicie o seu computador.",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "A maioria dos computadores permitirá que você brevemente altere a ordem de inicialização pressionando uma tecla — geralmente <kbd>F12</kbd>, mas às vezes <kbd>Esc</kbd> ou alguma outra tecla de função. Confira na sua tela ou na documentação do seu computador para confirmar.",
