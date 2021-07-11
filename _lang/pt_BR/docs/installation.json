@@ -28,7 +28,7 @@
     "We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click": "Nós geramos um checksum (ou hash sum) para as imagens do Elementary Os para que você possa verificar o seu arquivo baixado. Isso assegura que você recebeu o download completo e que a sua imagem não foi de algum modo corrompida.",
     "the checksum icon": "o ícone de checksum",
     "next to &quot;SELECT&quot; and verify that the text next to &quot;SHA256&quot; matches the following hash:": "próximo ao &quot;SELECIONAR&quot; e verifique se o texto próximo ao &quot;SHA256&quot; corresponde ao seguinte hash:",
-    "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "",
+    "If the hashes match, click &quot;START&quot; and wait for the process to finish.": "Se as hashes corresponderem, clique em &quot;INICIAR&quot; e aguarde o processo terminar.",
     "Booting from the Install Drive": "Iniciando do drive de instalação",
     "In order to start the installation process, you must boot your computer from the install drive.": "Para começar o processo de instalação, você precisa iniciar o seu computador pelo disco de instalação.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Considerando que o seu computador ainda está ligado, comece inserindo seu drive de instalação e reinicie o seu computador.",
