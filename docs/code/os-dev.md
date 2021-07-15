@@ -104,11 +104,13 @@ If Gala doesn't start, you can reinstall the latest stable version by running `s
 One way to debug applications is logging information in the code. This enables seeing what code was run and what the value of variables where.
 
 Example:
+
 ```
 debug("Something happened");
 ```
 
 Example with arguments:
+
 ```
 string name = "Bob";
 int age = 30;
@@ -126,11 +128,14 @@ By default debug messages are not shown. To see them you need to set the `G_MESS
 Usually you'll set it to `all` to log everything. [More info on Running and debugging GLib Applications](https://developer.gnome.org/glib/stable/glib-running.html).
 
 Run your application with debugging enabled:
-```
+
+```bash
 G_MESSAGES_DEBUG=all <app>
 ```
+
 Run the elementary OS calendar app with debugging enabled:
-```
+
+```bash
 G_MESSAGES_DEBUG=all io.elementary.calendar
 ```
 
@@ -142,9 +147,9 @@ To view logs from all your applications you can use `journalctl`. [More info](ht
 
 The [GNU Project Debugger (gdb)](https://www.gnu.org/software/gdb/) is a general purpose debugger, but we're mostly going to focus on getting useful information when an application crashes.
 1. Open an application in gdb, for example AppCenter by running:
-    ```
-    gdb io.elementary.appcenter
-    ```
+   ```bash
+   gdb io.elementary.appcenter
+   ```
 2. Now run this application by typing `run` and pressing enter.
 3. If the application doesn't crash right away try reproducing the crash.
 4. Get more information by typing `backtrace` and pressing enter.
