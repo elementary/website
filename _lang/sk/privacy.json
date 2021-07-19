@@ -10,7 +10,7 @@
     "How Data is Used": "Ako sú dáta používané",
     "Your data is stored locally on your device and never sent to elementary servers or any third parties. It is used to populate your local apps such as Mail, Calendar, Files, and Photos with your data.": "Vaše dáta sú uložené lokálne na vašom zariadení a nikdy nie sú odosielané na servery elementary alebo tretích strán. Sú používané na prevádzku vašich lokálnych aplikácií ako Email, Kalendár, Súbory a Fotky.",
     "Sharing Data": "Zdieľanie dát",
-    "elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.": "elementary OS nezdieľa žiadne dáta zhromaždené z vašich online účtov. Dáta nie sú nikdy odosielané elementary, ani žiadnej inej tretej strane.",
+    "elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.": "elementary OS nezdieľa žiadne dáta zhromaždené z vašich online účtov. Dáta nie sú nikdy odosielané elementary, ani žiadnej tretej strane.",
     "elementary.io": "elementary.io",
     "We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/elementary.io\">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class=\"read-more\" target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/data-policy\">Plausible Data Policy</a>": "",
     "Cookies": "",
