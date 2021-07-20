@@ -1,7 +1,7 @@
 {
-    "Whoops! That link has expired.": "Uuups! Tento link vypršal.",
-    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "",
-    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "",
+    "Whoops! That link has expired.": "Uups! Tento link už neplatí.",
+    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "Ak sa pokúšate stiahnuť elementary OS, vráťte sa prosím na <a href=\"/\">domovskú stránku</a> pre najnovšiu verziu. Ak ste sa sem dostali zo stránky tretej strany, je možné, že sa pokúšala obísť požiadavku na platbu alebo pokyny k inštalácii. Informujte ju prosím, že odkazy na stiahnutie sú dočasné, špecifické pre užívateľa a rozkladajú záťaž na naše servery. Správny spôsob odkazovania na stiahnutie je cez adresu <a href=\"https://elementary.io\">elementary.io</a>.",
+    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "Ak hľadáte niečo iné, neváhajte <a href=\"https://github.com/elementary/website/issues/new\">vytvoriť hlásenie o probléme cez náš GitHub (v angličtine)</a>.",
     "Go to Home Page": "Prejsť na domovskú stránku",
-    "Download Link Expired &sdot; elementary": ""
+    "Download Link Expired &sdot; elementary": "Platnosť odkazu na stiahnutie skončila &sdot; elemetary"
 }
