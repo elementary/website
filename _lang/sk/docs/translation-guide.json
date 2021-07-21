@@ -15,10 +15,10 @@
     "If you don't want to translate using Weblate, or want to make a lot a changes at once, you can also translate offline. To do so:": "Ak nechcete prekladať pomocou Weblate, alebo chcete urobiť veľa zmien súčasne, môžete prekladať aj offline. Na to potrebujete:",
     "Go to a project you want to translate": "Nájsť projekt, ktorý chcete prekladať",
     "Choose your language": "Vybrať váš jazyk",
-    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "",
-    "Choose your favorite text-, code- or PO-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "",
-    "Start translating": "",
-    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page you downloaded them from.": "",
-    "Additional Info": "",
-    "We won't support translation of the following pages:": ""
+    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Kliknúť na &quot;Súbory&quot; a vybrať &quot;Download translation as gettext PO&quot;",
+    "Choose your favorite text-, code- or PO-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "Vybrať si svoj textový, programátorský alebo PO editor (napr. <a href=\"https://poedit.net/\">Poedit</a>)",
+    "Start translating": "Začať prekladať",
+    "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page you downloaded them from.": "Akonáhle skončíte, použite možnosť &quot;Nahrať preklad&quot; v menu &quot;Súbory&quot; na rovnakej stránke, kde ste preklad stiahli.",
+    "Additional Info": "Ďalšie informácie",
+    "We won't support translation of the following pages:": "Prekladať nie je možné nasledujúce stránky:"
 }
