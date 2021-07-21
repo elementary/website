@@ -1,6 +1,6 @@
 {
-    "Get Support": "",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "",
+    "Get Support": "Získať podporu",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "Podporu zabezpečuje náš <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">komunitou riadený Stack Exchange (v angličtine)</a>. Môžete tu nájsť odpovede na časté otázky, spýtať sa vlastné, alebo pomôcť pri zodpovedaní iných. Vyberte niektorú z aplikácií nižšie pre zobrazenie konkrétnych otázok.",
     "AppCenter": "AppCenter",
     "Calendar": "Kalendár",
     "Camera": "Kamera",
@@ -10,12 +10,12 @@
     "Music": "Hudba",
     "Photos": "Fotky",
     "Code": "Kód",
-    "System Settings": "Nastavenia Systému",
+    "System Settings": "Nastavenia systému",
     "Videos": "Videá",
-    "Guides": "",
+    "Guides": "Príručky",
     "Installation": "Inštalácia",
-    "Get help installing elementary OS with our step-by-step guide.": "Vyhľadajte pomoc s inštaláciou elementary OS v našom návode krok-za-krokom.",
-    "Learning the Basics": "Výuka základov",
-    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Predstavenie plochy, multitaskingu, klávesových skratiek a iných vecí.",
-    "Support &sdot; elementary": "Podporte &sdot; elementary"
+    "Get help installing elementary OS with our step-by-step guide.": "Nájdite pomoc s inštaláciou elementary OS v našom návode postupujúcom krok za krokom.",
+    "Learning the Basics": "Príručka zo základmi",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Predstavenie pracovnej plochy, multitaskingu, klávesových skratiek a iného.",
+    "Support &sdot; elementary": "Podpora &sdot; elementary"
 }
