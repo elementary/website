@@ -1,6 +1,6 @@
 {
     "Privacy": "Privatsphäre",
-    "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "Deine Daten gehören dir. Und nur dir. Wir schließen keine Werbedeals ab oder sammeln sensible persönliche Daten. Wir werden von unseren Nutzern direkt finanziert, indem jeder für elementary OS und Apps im AppCenter bezahlt, was er möchte. Und so sollte es sein.",
+    "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "Deine Daten gehören dir. Und nur dir. Wir schließen keine Werbedeals ab oder sammeln sensible persönliche Daten. Wir werden von unseren Nutzern direkt finanziert, indem jeder für elementary OS und Anwendungen im AppCenter bezahlt, was er möchte. Und so sollte es sein.",
     "elementary OS": "elementary OS",
     "We do not collect any data from elementary OS. Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "Wir sammeln keine Daten in elementary OS. Deine Dateien, Einstellungen und alle anderen persönlichen Daten bleiben ausschließlich auf deinem Gerät, außer du teilst sie mit Apps oder Diensten von Dritten.",
     "Online Accounts": "Internet-Accounts",
@@ -8,7 +8,7 @@
     "What Data is Collected": "Welche Daten werden gesammelt",
     "After adding an online account, elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device.": "Nachdem Du ein Konto hinzugefügt hast, werden eventuell Daten dieser Konten auf Deinem Gerät gespeichert. Dazu zählen Dein Name, Deine E-Mail Adresse, Profilbilder, Nachrichten, Termine, Kontakte, Fotos und Dateien.",
     "How Data is Used": "Wie die Daten genutzt werden",
-    "Your data is stored locally on your device and never sent to elementary servers or any third parties. It is used to populate your local apps such as Mail, Calendar, Files, and Photos with your data.": "Deine Daten sind lokal auf Deinem Gerät gespeichert und werden niemals an elementary oder Drittanbieter gesendet. Programme wie Mail, Kalender, Dateien und Fotos greifen auf Deine Dateien zu.",
+    "Your data is stored locally on your device and never sent to elementary servers or any third parties. It is used to populate your local apps such as Mail, Calendar, Files, and Photos with your data.": "Deine Daten sind lokal auf Deinem Gerät gespeichert und werden niemals an elementary oder Drittanbieter gesendet. Anwendungen wie Mail, Kalender, Dateien und Fotos greifen auf Deine Dateien zu.",
     "Sharing Data": "Geteilte Daten",
     "elementary OS does not share any data collected from your online accounts. The data is never sent to elementary or third-party servers.": "elementary OS teilt niemals Daten deiner Internetkonten mit anderen. Sie werden weder zu elementary noch zu Servern von dritten gesendet.",
     "elementary.io": "elementary.io",
