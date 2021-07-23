@@ -1,11 +1,11 @@
 {
     "Be a Part of Something Bigger": "Будьте частью чего-то большего",
-    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Всё, что мы делаем, на 100% состоит из открытого и свободного кода, совместно разрабатываемого людьми со всего мира. Даже если вы не программист, вы можете принять участие и помочь нам.",
+    "Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.": "Всё, что мы делаем, на 100% состоит из открытого и свободного кода, совместно разрабатываемого людьми со всего мира. Даже если вы не программист, вы можете присоединиться и помочь нам.",
     "Funding": "Финансирование",
     "Translations": "Переводы",
     "Support": "Поддержка",
     "Web": "Веб",
-    "Desktop": "Десктоп",
+    "Desktop": "Рабочий стол",
     "Design": "Дизайн",
     "With the help of our users and fans, we've been able to grow from a small group of passionate volunteers into a tiny but sustainable company. Every little bit of support helps us improve elementary OS and tackle even more ambitious problems.": "С помощью наших пользователей и поклонников мы смогли вырасти из небольшой группы увлеченных добровольцев в небольшую, но устойчивую компанию. Каждая небольшая помощь помогает нам улучшить elementary OS и решать еще более амбициозные задачи.",
     "Directly fund elementary and get a badge on your GitHub profile to show your support. GitHub Sponsors doesn't charge any fees, so it's a great way to make your contribution go farther.": "Напрямую финансируйте elementary и получите значок в своем профиле GitHub, чтобы показать свою поддержку. GitHub Sponsors не взимает никаких комиссий, так что это отличный способ сделать ваш вклад ещё шире.",
@@ -37,7 +37,7 @@
     "Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.": "Наш веб-сайт использует HTML, CSS, PHP и JavaScript. Мы всегда ищем людей, разбирающихся в этих областях, которые хотели бы внести свой вклад и сделать его еще лучше.",
     "Report a Website Issue": "Сообщить о проблеме сайта",
     "Fork the Website on GitHub": "Ответвить вебсайт на GitHub",
-    "Desktop Development": "Десктоп-разработка",
+    "Desktop Development": "Разработка рабочего стола",
     "Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Наша среда рабочего стола и все ее приложения созданы с использованием Vala, GTK, Granite и ряда других открытых библиотек. Мы размещаем весь наш код и делаем всю разработку на GitHub. Если вы никогда раньше не работали с elementary OS, мы рекомендуем вам ознакомиться с нашим руководством по началу работы.",
     "Getting Started Guide": "Руководство по началу работы",
     "Browse Code": "Посмотреть код",
@@ -57,5 +57,5 @@
     "View Stylesheet": "Посмотреть таблицу стилей",
     "elementary OS comes with a set of vector icons that are used across all default apps and are made available to third-party apps.": "elementary OS поставляется с набором векторных иконок, которые используются во всех стандартных приложениях и доступны сторонним приложеням.",
     "Browse Icons": "Просмотреть иконки",
-    "Get Involved with elementary OS": "Принять участие в разработке elementary OS"
+    "Get Involved with elementary OS": "Приобщиться к разработке elementary OS"
 }
