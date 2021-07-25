@@ -56,7 +56,7 @@ The contents of the dock are easily customizable. To add an app to the dock, dra
 
 By default, the dock hides off the bottom of the desktop when an app is maximized. Simply move your mouse to the bottom center of the desktop to reveal the dock.
 
-You can customize the dock's behavior through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Dock**.
+You can customize the dock's behavior through **[System Settings](/docs/learning-the-basics#system-settings)** → **Desktop** → **Dock & Panel**.
 
 ## App Windows {#app-windows}
 
