@@ -17,11 +17,24 @@
   <div class="two-thirds">
     <h1>Privacy</h1>
     <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
+    <p>We actively protect your data from ourselves and others by not collecting it. We believe respecting and protecting your privacy is the ethical thing to do; <strong>people have a fundamental right to the utmost privacy, even from companies and products they trust.</strong>
   </div>
 </div>
 <div class="row docs">
   <h2>elementary OS</h2>
   <p><strong>We do not collect any data from elementary OS.</strong> Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.</p>
+
+  <h3>Protections</h3>
+  <p>elementary OS comes with built-in privacy protections to help protect your data from others.</p>
+
+  <h4>Tattle-tale</h4>
+  <p>elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.</p>
+
+  <h4>Permissions</h4>
+  <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.</p>
+
+  <h4>Housekeeping</h4>
+  <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
 
   <h3>Online Accounts</h3>
   <p>elementary OS optionally integrates with online accounts such as email and calendar providers via System Settings. Data from these providers may be retrieved by your copy of elementary OS and stored locally on your device to be displayed in locally-installed apps such as Mail, Calendar, and Tasks. <strong>This data is not sent to elementary or shared with any third party.</strong></p>
@@ -38,9 +51,9 @@
 
 <div class="row docs">
   <h2>elementary.io</h2>
-  
+
   <h3 data-l10n-off>Plausible Analytics</h3>
-  <p>We use the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to count website visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
+  <p>This website uses the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to anonymously count visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
 
   <h3>Cookies</h3>
   <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
