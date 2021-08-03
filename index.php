@@ -336,7 +336,7 @@
         <div class="half">
           <h2>Secure &amp; Privacy-respecting</h2>
           <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.</p>
-          <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-20.04-lts/">Security Notices</a>
+          <a class="read-more" href="https://ubuntu.com/security/notices?release=focal">Security Notices</a>
         </div>
         <div class="half">
           <h2>Built for Developers</h2>
