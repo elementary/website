@@ -10,7 +10,7 @@
 
   include $template['header'];
   include $template['alert'];
-  
+
 ?>
 
 <div class="grid">
@@ -59,13 +59,13 @@
   <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>
   <p>This site uses cookies for incremental improvements. You may find the services function without them but at a reduced usability. For example, the site will not remember if you have previously paid for elementary OS; by default you will be asked to pay again.</p>
 
-  <h5 data-l10n-off>Cloudflare</h5>
+  <h4 data-l10n-off>Cloudflare</h4>
   <p>Stores cookies to log behavioral elements and analyze potential threats. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://www.cloudflare.com/security-policy">Cloudflare Privacy &amp; Security Policy</a></p>
 
-  <h5 data-l10n-off>Stripe</h5>
+  <h4 data-l10n-off>Stripe</h4>
   <p>Uses cookies to remember your last order and your country so it knows what card types to offer for payments. For more information, see <a class="read-more" target="_blank" rel="noopener" href="https://stripe.com/privacy">Stripe's Privacy Policy</a></p>
 
-  <h5>Manage Cookies</h5>
+  <h4>Manage Cookies</h4>
   <p>As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.</p>
 
   <div class="browsers">
