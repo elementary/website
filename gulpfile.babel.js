@@ -164,6 +164,7 @@ gulp.task('svg', () => {
         '_images/icons/places/128/distributor-logo.svg',
         '_images/icons/places/64/distributor-logo.svg',
         '_images/icons/status/48/dialog-warning.svg',
+        '_images/icons/status/symbolic/changes-prevent-symbolic.svg',
         '_images/icons/status/symbolic/notification-disabled-symbolic.svg',
         '_images/thirdparty-icons/apps/32/multitasking-view.svg'
     ]

@@ -109,7 +109,7 @@
         <div class="app-display__description">
           <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
-          <p>Get free and paid apps on AppCenter, the open, pay-what-you-want app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
+          <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
           <div class="buttons">
             <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
             <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
@@ -372,17 +372,17 @@
         </div>
         <div class="third">
           <h4>
-            <?php include('images/icons/actions/symbolic/find-location-symbolic.svg'); ?>
-            Location Services
+            <?php include('images/icons/status/symbolic/changes-prevent-symbolic.svg'); ?>
+            Permissions
           </h4>
-          <p>When an app wants access to your location, it has to ask. We show you a prompt telling you which app, and how precise it’s asking. And you can always revoke access later in System Settings → Security &amp; Privacy.</p>
+          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.</p>
         </div>
         <div class="third">
           <h4>
             <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
             Housekeeping
           </h4>
-          <p>elementary OS can automatically keep your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
         </div>
       </div>
     </section>
@@ -391,7 +391,7 @@
       <h1>Download elementary OS</h1>
       <p><?php echo $sitewide['description']; ?></p>
 
-      <a class="button suggested-action" href="#">Pay What You Want</a>
+      <a class="button suggested-action" href="#">Pay What You Can</a>
     </section>
     <section class="grid" id="the-press">
       <div class="third">
