@@ -105,7 +105,7 @@
     </section>
     <section id="appcenter">
       <div class="app-display app-display--overflow">
-        <img class="app-display__image" src="images/screenshots/appcenter.png" alt="elementary OS AppCenter home page"/>
+        <img class="app-display__image" src="images/screenshots/appcenter.png" width="1081" height="669" alt="elementary OS AppCenter home page"/>
         <div class="app-display__description">
           <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
@@ -309,7 +309,7 @@
 
     <section id="parental-controls" class="grey">
       <div class="app-display app-display--overflow">
-        <img class="app-display__image" src="images/screenshots/parental-controls.png" alt="elementary OS Parental Controls"/>
+        <img class="app-display__image" src="images/screenshots/screen-time-limits.png" width="892" height="659" alt="elementary OS Screen Time &amp; Limits"/>
         <div class="app-display__description">
           <h2>
             <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding the hand of a child"/>
@@ -347,7 +347,7 @@
     </section>
     <section id="shortcuts" class="grey">
       <div class="app-display app-display--horizontal">
-        <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" alt="elementary OS Keyboard Shortcuts"/>
+        <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
           <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
