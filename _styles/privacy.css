@@ -1,0 +1,16 @@
+/*************************************
+* Copyright 2021 elementary, Inc.    *
+* This file is part of elementary.io *
+*************************************/
+
+html,
+body {
+  background-color: #273445;
+  color: white;
+  fill: white;
+}
+
+a {
+  color: #8cd5ff;
+  fill: #8cd5ff;
+}

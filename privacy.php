@@ -4,7 +4,8 @@
   $page['title'] = 'Privacy &sdot; elementary';
 
   $page['styles'] = array(
-    'styles/docs.css'
+    'styles/docs.css',
+    'styles/privacy.css'
   );
 
   include $template['header'];
