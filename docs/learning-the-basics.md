@@ -127,7 +127,7 @@ elementary OS comes with **AppCenter**, an app store for open source pay-what-yo
 
 You may be asked for your password prior to installing an app.
 
-_Note: Some software may not be available from AppCenter. As of elementary OS 5.1 Hera, you can also sideload Flatpak apps from third-party .flatpakref files._
+_Note: Some third-party software may not be available from AppCenter. As of elementary OS 5.1 Hera, you can also sideload Flatpak apps from third-party .flatpakref files._
 
 ## Updating {#updating}
 

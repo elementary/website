@@ -33,7 +33,7 @@
 
             <div class="section__showcase">
                 <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5.1 Hera desktop" />
+                <img src="images/screenshots/desktop.jpg" alt="elementary OS 6 Odin desktop" />
             </div>
 
             <div class="section__detail grid">
@@ -42,7 +42,7 @@
                         <?php
                             if (!$already_paid) {
                         ?>
-                        <h4 id="pay-what-you-want">Pay What You Want:</h4>
+                        <h4 id="pay-what-you-want">Pay What You Can:</h4>
                         <div id="choice-buttons">
                             <button id="amount-ten"    value="10" class="small-button payment-button target-amount">10</button>
                             <button id="amount-twenty" value="20" class="small-button payment-button target-amount checked">20</button>
@@ -98,15 +98,15 @@
         <section id="whats-new" class="grey">
             <div class="grid">
                 <div class="two-thirds">
-                    <h2>What’s New in elementary OS 5.1 Hera</h2>
-                    <p>A major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</p>
-                    <a href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+                    <h2>What’s New in elementary OS 6 Odin</h2>
+                    <p>The biggest update to the platform yet. elementary OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and is both easier to get and more inclusive than ever before.</p>
+                    <a href="https://blog.elementary.io/elementary-os-6-odin-released/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
                 </div>
             </div>
         </section>
         <section id="appcenter">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/appcenter.png" srcset="images/screenshots/appcenter@2x.png 2x" alt="elementary OS AppCenter home page"/>
+                <img class="app-display__image" src="images/screenshots/appcenter.png" alt="elementary OS AppCenter home page"/>
                 <div class="app-display__description">
                     <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
                     <h2>Get it on <strong>AppCenter</strong></h2>
@@ -115,10 +115,6 @@
                         <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
                         <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
                         <a href="developer" class="button flat">Become a Developer</a>
-
-                    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
-                         <a href="https://igg.me/at/appcenter-for-everyone" class="button flat">Back AppCenter for everyone on Indiegogo</a>
-                     <?php } ?>
                     </div>
                 </div>
             </div>
@@ -136,7 +132,7 @@
                         <div class="workspace"></div>
                     </figure>
                     <h4>Multitasking View</h4>
-                    <p>Workspaces help organize your work by task. Keep work and play separate, but just one tap away.</p>
+                    <p>Workspaces help organize your work by task. Keep work and play separate, but just one swipe or tap away.</p>
                 </div>
                 <div class="third">
                     <figure class="pip">
@@ -187,7 +183,7 @@
                     </div>
                     <ul id="showcase-grid">
                         <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music app icon"/>Music</li></a>
-                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" alt="Browser app icon"/>Epiphany</li></a>
+                        <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" alt="Browser app icon"/>Web</li></a>
                         <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" alt="Email app icon"/>Mail</li></a>
                         <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photo app icon"/>Photos</li></a>
                         <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" alt="Video app icon"/>Videos</li></a>
@@ -200,9 +196,9 @@
                 </div>
                 <div class="showcase-tab" id="showcase-music">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/music.png" srcset="images/screenshots/music@2x.png 2x" alt="music screenshot" />
+                        <img class="app-display__image" src="images/screenshots/music.png" width="1164" height="664" alt="Music screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="music icon" />
+                            <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music icon" />
                             <div>
                                 <h2>Music</h2>
                                 <p>Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.</p>
@@ -212,21 +208,21 @@
                 </div>
                 <div class="showcase-tab" id="showcase-epiphany">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/epiphany.png" srcset="images/screenshots/epiphany@2x.png 2x" alt="epiphany screenshot" />
+                        <img class="app-display__image" src="images/screenshots/web.png" alt="Web screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/internet-web-browser.svg" alt="epiphany icon" />
+                            <img src="images/icons/apps/64/internet-web-browser.svg" alt="Web icon" />
                             <div>
-                                <h2>Epiphany</h2>
-                                <p>Surf the web with a fast &amp; lightweight web browser. Epiphany lets you use modern websites and web apps while being lighter on battery life.</p>
+                                <h2>Web</h2>
+                                <p>Surf the web with a fast &amp; lightweight web browser. Web lets you use modern sites and web apps while protecting your privacy and being lighter on battery life.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-mail">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/mail.png" alt="mail screenshot" />
+                        <img class="app-display__image" src="images/screenshots/mail.png" width="1352" height="777" alt="Mail screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/internet-mail.svg" alt="mail icon" />
+                            <img src="images/icons/apps/64/internet-mail.svg" alt="Mail icon" />
                             <div>
                                 <h2>Mail</h2>
                                 <p>Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.</p>
@@ -236,21 +232,21 @@
                 </div>
                 <div class="showcase-tab" id="showcase-photos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/photos.png" srcset="images/screenshots/photos@2x.png 2x" alt="photos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/photos.png" width="1174" height="730" alt="Photos screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="photos icon" />
+                            <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photos icon" />
                             <div>
                                 <h2>Photos</h2>
-                                <p>Import, organize, and edit photos. Make a slideshow. Share with Facebook or Flickr.</p>
+                                <p>Import, organize, and edit photos. Make a slideshow. Share with online services.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-videos">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="videos screenshot" />
+                        <img class="app-display__image" src="images/screenshots/videos.png" width="1124" height="555" alt="Videos screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/multimedia-video-player.svg" alt="videos icon" />
+                            <img src="images/icons/apps/64/multimedia-video-player.svg" alt="Videos icon" />
                             <div>
                                 <h2>Videos</h2>
                                 <p>Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.</p>
@@ -260,19 +256,19 @@
                 </div>
                 <div class="showcase-tab" id="showcase-calendar">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/calendar.png" srcset="images/screenshots/calendar@2x.png 2x" alt="calendar screenshot" />
+                        <img class="app-display__image" src="images/screenshots/calendar.png" width="1039" height="765" alt="Calendar screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
                             <div>
                                 <h2>Calendar</h2>
-                                <p>Easily view and create events. Sync with Online Accounts like Google.</p>
+                                <p>Easily view and create events. Sync with online accounts.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-files">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/files.png" srcset="images/screenshots/files@2x.png 2x" alt="files screenshot" />
+                        <img class="app-display__image" src="images/screenshots/files.png" width="924" height="608" alt="Files screenshot" />
                         <div class="app-display__description">
                             <img src="images/icons/apps/64/system-file-manager.svg" alt="files icon" />
                             <div>
@@ -285,7 +281,7 @@
                 <div class="showcase-tab" id="showcase-terminal">
                     <div class="app-display">
                         <div class="app-display__image">
-                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="terminal screenshot" />
+                            <img class="pantheon--fallback" src="images/screenshots/terminal.png" alt="Terminal screenshot" />
                             <div class="pantheon" style="display:none;">
                                 <div class="window dark active" type="terminal">
                                     <div class="titlebar">
@@ -314,7 +310,7 @@
                             </div>
                         </div>
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/utilities-terminal.svg" alt="terminal icon" />
+                            <img src="images/icons/apps/64/utilities-terminal.svg" alt="Terminal icon" />
                             <div>
                                 <h2>Terminal</h2>
                                 <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
@@ -324,24 +320,24 @@
                 </div>
                 <div class="showcase-tab" id="showcase-code">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
+                        <img class="app-display__image" src="images/screenshots/code.png" width="1174" height="703" alt="Code screenshot" />
                         <div class="app-display__description">
                             <img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code icon" />
                             <div>
                                 <h2>Code</h2>
-                                <p>Tailor-made with autosaving, project folders, Git integration, multiple panes, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Terminal, Web Preview, and Vim Emulation. Code will be the last editor you’ll ever need.</p>
+                                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="showcase-tab" id="showcase-camera">
                     <div class="app-display">
-                        <img class="app-display__image" src="images/screenshots/camera.png" srcset="images/screenshots/camera@2x.png 2x" alt="camera screenshot" />
+                        <img class="app-display__image" src="images/screenshots/camera.png" width="704" height="544" alt="Camera screenshot" />
                         <div class="app-display__description">
-                            <img src="images/icons/apps/64/accessories-camera.svg" alt="camera icon" />
+                            <img src="images/icons/apps/64/accessories-camera.svg" alt="Camera icon" />
                             <div>
                                 <h2>Camera</h2>
-                                <p>Easily snap pictures or video from your webcam.</p>
+                                <p>Easily snap pictures or video from your built-in or USB webcam.</p>
                             </div>
                         </div>
                     </div>
@@ -351,7 +347,7 @@
 
         <section id="parental-controls" class="grey">
             <div class="app-display app-display--overflow">
-                <img class="app-display__image" src="images/screenshots/parental-controls.png" srcset="images/screenshots/parental-controls@2x.png 2x" alt="elementary OS Parental Controls"/>
+                <img class="app-display__image" src="images/screenshots/parental-controls.png" alt="elementary OS Parental Controls"/>
                 <div class="app-display__description">
                     <h2>
                         <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding the hand of a child"/>
@@ -378,7 +374,7 @@
                 <div class="half">
                     <h2>Secure &amp; Privacy-respecting</h2>
                     <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.</p>
-                    <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-18.04-lts/">Security Notices</a>
+                    <a class="read-more" href="https://usn.ubuntu.com/releases/ubuntu-20.04-lts/">Security Notices</a>
                 </div>
                 <div class="half">
                     <h2>Built for Developers</h2>
@@ -389,7 +385,7 @@
         </section>
         <section id="shortcuts" class="grey">
             <div class="app-display app-display--horizontal">
-                <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" srcset="images/screenshots/shortcut-overlay@2x.png 2x" alt="elementary OS Keyboard Shortcuts"/>
+                <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" alt="elementary OS Keyboard Shortcuts"/>
                 <div class="app-display__description">
                     <h1>User Friendly. And Keyboard Friendly.</h1>
                     <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>

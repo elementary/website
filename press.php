@@ -67,10 +67,10 @@
 <div class="grey">
     <div class="grid">
         <div class="two-thirds">
-            <h2>elementary OS 5.1 Hera</h2>
-            <p>Hera is a major update on a solid foundation. Featuring a completely redesigned login and lockscreen greeter, a new onboarding experience, new ways to sideload and install apps, major System Settings updates, improved core apps, and desktop refinements.</p>
-            <a class="button" href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
-            <a class="button" href="https://github.com/elementary/press-kit/archive/5.1-hera.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+            <h2>elementary OS 6 Odin</h2>
+            <p>The biggest update to the platform yet. OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and helps make elementary OS easier to get and more inclusive than ever.</p>
+            <a class="button" href="https://blog.elementary.io/elementary-os-6-odin-released/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+            <a class="button" href="https://github.com/elementary/press-kit/archive/6.0-odin.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
         </div>
     </div>
 </div>
