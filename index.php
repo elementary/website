@@ -109,10 +109,10 @@
         <div class="app-display__description">
           <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
-          <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
+          <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
           <div class="buttons">
             <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
-            <a href="https://medium.com/elementaryos/tagged/appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
+            <a href="https://blog.elementary.io/tags#appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
             <a href="developer" class="button flat">Become a Developer</a>
           </div>
         </div>
