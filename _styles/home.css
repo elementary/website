@@ -343,22 +343,6 @@ input:focus + .focus-reveal {
   transform: translate3d(-100%, 0, 0);
 }
 
-/*******************
-* Pantheon windows *
-*******************/
-
-#showcase > .pantheon:first-of-type {
-  z-index: 99;
-}
-
-#showcase .pantheon .window[type="terminal"] {
-  height: 36vw;
-  max-height: 600px;
-  max-width: 800px;
-  width: 58vw;
-  margin: 32px 32px 64px;
-}
-
 /*************
 * What's New *
 *************/
