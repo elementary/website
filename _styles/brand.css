@@ -4,73 +4,73 @@
 ***************************************/
 
 .page-brand .hex {
-    font-family: "Roboto Mono", monospace;
-    font-size: 12px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
 }
 
 .page-brand .hex::before {
-    content: "#";
+  content: "#";
 }
 
 .page-brand .color-palette-section {
-    color: white;
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  color: white;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
 }
 
 .page-brand .color-palette-box {
-    border-radius: 3px;
-    box-shadow:
-        0 1px 3px 0 rgba(0, 0, 0, 0.12),
-        0 1px 2px 0 rgba(0, 0, 0, 0.24);
-    font-size: 14px;
-    overflow: hidden;
+  border-radius: 3px;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  font-size: 14px;
+  overflow: hidden;
 }
 
 .page-brand .color-palette-header {
-    align-items: center;
-    display: grid;
-    padding: 16px;
+  align-items: center;
+  display: grid;
+  padding: 16px;
 }
 
 .page-brand .color-palette-header > span:nth-of-type(1) {
-    font-size: 22px;
-    margin-bottom: 6px;
+  font-size: 22px;
+  margin-bottom: 6px;
 }
 
 .page-brand .color-palette-header > span:nth-of-type(2) {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .page-brand .color-palette-item {
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    justify-content: space-between;
-    padding: 8px 16px;
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 8px 16px;
 }
 
 .page-brand #community img {
-    display: block;
-    float: left;
-    margin: 1em 0 2em;
-    width: 50%;
+  display: block;
+  float: left;
+  margin: 1em 0 2em;
+  width: 50%;
 }
 
 .page-brand figure {
-    display: inline-block;
-    margin: 0 0 3rem;
+  display: inline-block;
+  margin: 0 0 3rem;
 }
 
 .page-brand figcaption {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .page-brand .logomarks {
-    font-size: 0;
+  font-size: 0;
 }
 
 .page-brand .logomarks figure {
-    width: 50%;
+  width: 50%;
 }
