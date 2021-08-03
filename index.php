@@ -340,7 +340,7 @@
         </div>
         <div class="half">
           <h2>Built for Developers</h2>
-          <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+          <p>Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
           <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
         </div>
       </div>
