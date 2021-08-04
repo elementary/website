@@ -76,11 +76,14 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 ![etcher steps](images/docs/installation/etcher.gif)
 
-1. Insert the spare USB drive, and select the ISO file you've just downloaded.
-2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
-4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
+Open Etcher, then:
+
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
+
+Once complete, continue to boot from the install drive.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -121,11 +124,14 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 ![etcher steps](images/docs/installation/etcher.gif)
 
-1. Insert the spare USB drive, and select the ISO file you've just downloaded.
-2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
-4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
+Open Etcher, then:
+
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
+
+Once complete, continue to boot from the install drive.
 
 The following dialog may appear during the flashing process, it is safe to ignore.
 
@@ -171,11 +177,14 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 ![etcher steps](images/docs/installation/etcher.gif)
 
-1. Insert the spare USB drive, and select the ISO file you've just downloaded.
-2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
-4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
+Open Etcher, then:
+
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
+
+Once complete, continue to boot from the install drive.
 
 ## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
 
