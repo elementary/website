@@ -123,6 +123,7 @@ class L10n
         'mr' => 'मराठी',
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
+        'pa' => 'ਪੰਜਾਬੀ',
         'pl' => 'Polski',
         'pt_BR' => 'Português (Brasil)',
         'pt' => 'Português (Portugal)',
