@@ -32,9 +32,13 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 
-## Choose Your Current Operating System {#choose-operating-system}
+## Step-by-step Guide {#choose-operating-system}
 
-Select the operating system you are currently using to view tailored installation instructions.
+<div class="embed">
+<iframe src="https://www.youtube-nocookie.com/embed/JZJahY1Km2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
@@ -44,13 +48,11 @@ Select the operating system you are currently using to view tailored installatio
 </div>
 </div>
 
----
-
 <div class="slide-container" id="installation-instructions-slide-container" markdown="1">
 
 <div id="install-on-windows" class="slide" markdown="1">
 
-## Verify Your Download {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -69,7 +71,7 @@ SHA256 hash of Downloads\{#release_filename}:
 
 If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
 
@@ -86,7 +88,7 @@ Open Etcher, then:
 
 Once complete, continue to boot from the install drive.
 
-## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -99,7 +101,7 @@ In order to start the installation process, you must boot your computer from the
 
 <div id="install-on-macos" class="slide" markdown="1">
 
-## Verify Your Download {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -117,7 +119,7 @@ It should produce the output:
 
 If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
 
@@ -138,7 +140,7 @@ The following dialog may appear during the flashing process, it is safe to ignor
 
 ![Not readable warning](images/docs/installation/osx_warning.png)
 
-## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -154,7 +156,7 @@ If your Mac doesn't recognize your elementary OS USB Install Drive in the boot m
 
 <div id="install-on-ubuntu" class="slide" markdown="1">
 
-## Verify Your Download {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -170,7 +172,7 @@ It should produce the output:
 {#release_sha256}
 ```
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
 To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
 
@@ -187,7 +189,7 @@ Open Etcher, then:
 
 Once complete, continue to boot from the install drive.
 
-## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
