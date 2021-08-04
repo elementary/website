@@ -615,8 +615,7 @@ a.third:hover {
     align-items: center;
     animation: toast-gradient 10s linear infinite;
     background-color: #0d52bf;
-    background-image:
-        linear-gradient(to right, #0d52bf, #3689e6, #0d52bf);
+    background-image: linear-gradient(to right, #0d52bf, #3689e6, #0d52bf);
     background-repeat: no-repeat;
     background-size: 800px 100%;
     border-radius: 6px;
