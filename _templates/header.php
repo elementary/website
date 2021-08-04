@@ -142,12 +142,11 @@ $l10n->begin_html_translation();
 
         <?php require __DIR__ . '/event.php'; ?>
 
-    <?php if (event_active('edw')) { ?>
+    <?php if (event_active('odin 6.0 release')) { ?>
         <div class="overlay">
             <div class="overlay__content toast">
                 <div class="toast__close"><i class="fas fa-times"></i></div>
-                <span class="toast__text">elementary Developer Weekend is coming</span>
-                <a href="https://edw.elementary.io" target="_self" class="toast__button">Learn More</a>
+                <span class="toast__text"><strong>Something new is coming.</strong> Check back Tuesday after 1600 UTC.</span>
             </div>
         </div>
     <?php } ?>

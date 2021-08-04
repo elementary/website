@@ -613,7 +613,11 @@ a.third:hover {
 
 .toast {
     align-items: center;
-    background-image: linear-gradient(75deg, #a56de2 15%, #64baff, #d1ff82 110%);
+    animation: toast-gradient 10s linear infinite;
+    background-color: #0d52bf;
+    background-image: linear-gradient(to right, #0d52bf, #3689e6, #0d52bf);
+    background-repeat: no-repeat;
+    background-size: 800px 100%;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
@@ -623,6 +627,16 @@ a.third:hover {
     justify-content: center;
     padding: 3px;
     text-align: center;
+}
+
+@keyframes toast-gradient {
+    from {
+        background-position: calc(0% - 800px);
+    }
+
+    to {
+        background-position: calc(100% + 800px);
+    }
 }
 
 .toast__text {
