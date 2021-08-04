@@ -9,7 +9,7 @@ require_once __DIR__ . '/../_backend/event.php';
 
 $l10n->set_domain('layout');
 
-const EVENT_NAME = 'juno 5.0 release';
+const EVENT_NAME = 'odin 6.0 release';
 
 // Insert event based code here.
 if (event_active(EVENT_NAME) && event_cookie_get(EVENT_NAME) !== '1') { ?>
