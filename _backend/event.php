@@ -10,6 +10,7 @@ $event_expires = array(
     'juno 5.0 release' => [new DateTime('2018-10-11T19:00:00Z'), new DateTime('2018-10-16T19:00:00Z')],
     'indiegogo appcenter 2/7' => [new DateTime('2020-2-7T18:00:00Z'), new DateTime('2020-3-7T19:00:00Z')],
     'edw' => [new DateTime('2021-06-01T00:00:00Z'), new DateTime('2021-06-28T00:00:00Z')],
+    'odin 6.0 release' => [new DateTime('2021-08-04T16:00:00Z'), new DateTime('2021-08-10T16:00:00Z')],
 );
 
 /**
