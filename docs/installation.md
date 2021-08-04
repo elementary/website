@@ -12,7 +12,8 @@ While we don't have a strict set of minimum system requirements, we recommend at
 * 4 GB of system memory (RAM)
 * Solid state drive (SSD) with 15 GB of free space
 * Internet access
-* 1024×768 minimum display
+* Built-in or wired mouse/touchpad and keyboard
+* 1024×768 minimum resolution display
 
 You will also need a spare USB flash drive with at least 4 GB of storage for installation.
 
@@ -31,7 +32,7 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 
-## Choose your current Operating System {#choose-operating-system}
+## Choose Your Current Operating System {#choose-operating-system}
 
 Select the operating system you are currently using to view tailored installation instructions.
 
@@ -49,7 +50,7 @@ Select the operating system you are currently using to view tailored installatio
 
 <div id="install-on-windows" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
+## Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -85,7 +86,7 @@ Open Etcher, then:
 
 Once complete, continue to boot from the install drive.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -98,7 +99,7 @@ In order to start the installation process, you must boot your computer from the
 
 <div id="install-on-macos" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
+## Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -137,7 +138,7 @@ The following dialog may appear during the flashing process, it is safe to ignor
 
 ![Not readable warning](images/docs/installation/osx_warning.png)
 
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -153,7 +154,7 @@ If your Mac doesn't recognize your elementary OS USB Install Drive in the boot m
 
 <div id="install-on-ubuntu" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
+## Verify Your Download {#verify-your-download}
 
 Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
@@ -186,7 +187,7 @@ Open Etcher, then:
 
 Once complete, continue to boot from the install drive.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+## Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
