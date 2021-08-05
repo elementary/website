@@ -166,9 +166,6 @@
         </div>
     </div>
     <div class="donation-grid">
-        <a href="https://salt.bountysource.com/teams/bountysource" title="Bountysource">
-            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource" />
-        </a>
         <a href="https://www.debian.org/donations" title="Debian">
             <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian" />
         </a>
@@ -180,6 +177,9 @@
         </a>
         <a href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
             <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let’s Encrypt" />
+        </a>
+        <a href="https://2020.linuxappsummit.org" title="Linux App Summit">
+            <img class="oss-logo" src="images/open-source/las.svg" alt="Linux App Summit" />
         </a>
         <a href="https://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
             <img class="oss-logo" src="images/open-source/osm.svg" alt="OpenStreetMap" />

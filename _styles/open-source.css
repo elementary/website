@@ -152,6 +152,16 @@ hr.dotted {
   opacity: 0.8;
 }
 
+.donation-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.donation-grid a {
+  padding: 0.5em;
+}
+
 .donation-grid .oss-logo {
   height: 48px;
   opacity: 0.8;
