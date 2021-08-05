@@ -757,7 +757,6 @@ input:focus + .focus-reveal {
   fill: white;
   height: 1em;
   margin-right: 0.25em;
-  transform: scale(1.25);
   vertical-align: middle;
 }
 
