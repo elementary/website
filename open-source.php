@@ -83,7 +83,7 @@
     <div class="platform-item third" id="gtk">
         <a href="https://gtk.org/" target="_blank" rel="noopener">
             <img class="oss-logo" src="images/open-source/gtk.svg" alt="GTK+">
-            <h3 class="oss-title">GTK+</h3>
+            <h3 class="oss-title">GTK</h3>
             <p class="oss-subtitle">User Interface Toolkit</p>
         </a>
         <div>
