@@ -154,6 +154,7 @@ hr {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 img.h1 {
