@@ -16,14 +16,14 @@ At the top of the desktop is the Panel. On the left is the Applications Menu, in
         <li><span>Time and date</span></li>
         <li><span>Indicators</span></li>
     </ol>
-    <img src="../images/docs/learning-the-basics/panel@2x.png" alt="The Panel"/>
+    <img src="../images/docs/learning-the-basics/panel.png" alt="The Panel"/>
 </div>
 
 #### Applications Menu {#applications}
 
 On the left side of the panel is the Applications Menu. Selecting **Applications** opens the menu with all of your installed apps. You can view multiple pages of apps using the pagers at the bottom or by scrolling. You can also use the view switcher at the top to switch between a grid view and a category view.
 
-![Applications Menu](../images/docs/learning-the-basics/applications-menu@2x.png)
+![Applications Menu](../images/docs/learning-the-basics/applications-menu.png)
 
 You can search for apps by name or by keyword and perform actions associated with them. You can also search for System Settings panes. Some of the actions you can find in search include:
 
@@ -50,7 +50,7 @@ A middle click or three finger tap on an indicator will present you with the fol
 
 At the bottom of the desktop is the Dock. It contains your favorite apps well as any apps that are currently open.
 
-![The Dock](../images/docs/learning-the-basics/dock@2x.png)
+![The Dock](../images/docs/learning-the-basics/dock.png)
 
 The contents of the dock are easily customizable. To add an app to the dock, drag and drop it from the Applications Menu or right-click an open app's icon and choose **Keep in Dock**. To remove an app from the dock, drag it off and drop it in an empty space on your desktop or right-click the icon and uncheck **Keep in Dock**. To rearrange apps on the dock, simply drag and drop them.
 
@@ -70,7 +70,7 @@ Many apps have a Header Bar at the top of the app. This area contains common act
 
 You can move an app's window around the desktop by dragging anywhere on the Header Bar, including on buttons.
 
-![HeaderBar](../images/docs/learning-the-basics/headerbar@2x.png)
+![HeaderBar](../images/docs/learning-the-basics/headerbar.png)
 
 #### Window Buttons {#window-buttons}
 
@@ -137,7 +137,7 @@ AppCenter includes updates for apps and the operating system itself under the **
 
 elementary OS comes with the "System Settings" app that helps you manage settings and preferences for your device. System Settings gives you the ability to adjust things like keyboard shortcuts, display resolution, your wallpaper, and more.
 
-![System Settings](../images/docs/learning-the-basics/system_settings@2x.png)
+![System Settings](../images/docs/learning-the-basics/switchboard.png)
 
 ### Search {#search}
 
