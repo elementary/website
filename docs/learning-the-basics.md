@@ -11,12 +11,12 @@ The elementary OS desktop consists of two elements: the Panel and the Dock. You 
 At the top of the desktop is the Panel. On the left is the Applications Menu, in the center are the date and time, and on the right are the System Indicators.
 
 <div class="annotated">
-    <ol>
-        <li><span>Applications Menu</span></li>
-        <li><span>Date &amp; Time</span></li>
-        <li><span>System Indicators</span></li>
-    </ol>
-    <img src="../images/docs/learning-the-basics/panel.png" alt="The Panel"/>
+  <ol>
+    <li><span>Applications Menu</span></li>
+    <li><span>Date &amp; Time</span></li>
+    <li><span>System Indicators</span></li>
+  </ol>
+  <img src="../images/docs/learning-the-basics/panel.png" alt="The Panel"/>
 </div>
 
 #### Applications Menu {#applications-menu}
@@ -60,7 +60,7 @@ At the bottom of the desktop is the Dock for quick access to your favorite and c
 
 To add an app to the Dock, drag and drop it from the Applications Menu or secondary-click an open app's icon and choose **Keep in Dock**. To remove an app from the Dock, drag it off and drop it in an empty space on your desktop or secondary-click the icon and uncheck **Keep in Dock**. Drag and drop apps on the Dock to rearrange them.
 
-By default, the Dock hides off the bottom of the desktop when an app is maximized or overlaps it. Push your mouse cursor against the bottom-center of the desktop to reveal and use the Dock when its hidden.
+By default, the Dock hides off the bottom of the desktop when an app is maximized or overlaps it. Push your mouse cursor against the bottom-center of the desktop to reveal and use the Dock when it's hidden.
 
 You can customize the dock's size and behavior in **[System Settings](#system-settings)** → **Desktop** → **Dock & Panel**.
 
