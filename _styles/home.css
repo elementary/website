@@ -735,7 +735,7 @@ input:focus + .focus-reveal {
 @media (min-width: 1000px) {
   #shortcuts .app-display__image {
     order: 0;
-    width: 67%;
+    max-width: 67%;
   }
 }
 
