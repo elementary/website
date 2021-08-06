@@ -20,10 +20,10 @@ if (event_active(EVENT_NAME)) { ?>
   </div>
   <script>
     const utcDate = new Date("<?php echo date(DATE_ISO8601, date_timestamp_get($event_expires[EVENT_NAME][1])) ?>");
-    let localDay = new Intl.DateTimeFormat('<?php echo $page['lang']; ?>', {weekday: 'long'}).format(utcDate);
-    let localTime = new Intl.DateTimeFormat('<?php echo $page['lang']; ?>', {hour: 'numeric', minute: 'numeric'}).format(utcDate);
-    document.getElementById("odin-day").innerHTML = localDay;
-    document.getElementById("odin-time").innerHTML = localTime;
+    const lang = "<?php echo $page['lang']; ?>";
+
+    document.getElementById("odin-day").innerHTML = new Intl.DateTimeFormat(lang, {weekday: "long"}).format(utcDate);
+    document.getElementById("odin-time").innerHTML = new Intl.DateTimeFormat(lang, {hour: "numeric", minute: "numeric"}).format(utcDate);
   </script>
 
 <?php }
