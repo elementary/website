@@ -15,13 +15,15 @@ if (event_active(EVENT_NAME)) { ?>
   <div class="overlay">
     <div class="overlay__content toast">
       <div class="toast__close"><i class="fas fa-times"></i></div>
-      <span class="toast__text"><strong>Something new is coming.</strong> Check back Tuesday after <time id="odin">1600 UTC</time>.</span>
+      <span class="toast__text"><strong>Something new is coming.</strong> Check back <time id="odin-day">Tues</time> after <time id="odin-time">1600 UTC</time>.</span>
     </div>
   </div>
   <script>
     const utcDate = new Date("<?php echo date(DATE_ISO8601, date_timestamp_get($event_expires[EVENT_NAME][1])) ?>");
+    let localDay = new Intl.DateTimeFormat('<?php echo $page['lang']; ?>', {weekday: 'long'}).format(utcDate);
     let localTime = new Intl.DateTimeFormat('<?php echo $page['lang']; ?>', {hour: 'numeric', minute: 'numeric'}).format(utcDate);
-    document.getElementById("odin").innerHTML = localTime;
+    document.getElementById("odin-day").innerHTML = localDay;
+    document.getElementById("odin-time").innerHTML = localTime;
   </script>
 
 <?php }
