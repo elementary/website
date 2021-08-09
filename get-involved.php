@@ -97,7 +97,7 @@
             <p>Both elementary OS and our website are openly translated using an online platform called Weblate. <a href="/docs/translation-guide" class="read-more">Learn More</a></p>
 
             <div class="actions">
-                <a class="button flat" href="https://translators-slack.elementary.io/" target="_blank" rel="noopener">Join Chat</a>
+                <a class="button flat" href="https://join.slack.com/t/ele-l10n/shared_invite/zt-6afqz7ed-yyj4fsGHwwRX3XZq8Pdl~A" target="_blank" rel="noopener">Join Chat</a>
                 <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/" target="_blank" rel="noopener">Suggest Translations</a>
             </div>
         </div>
