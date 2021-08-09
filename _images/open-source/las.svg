@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="150"
+   viewBox="0 0 79.375 39.687501"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="LASlogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="54.642857"
+     inkscape:cy="57.321429"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:window-width="1128"
+     inkscape:window-height="691"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257.31249)">
+    <g
+       aria-label="LAS"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.44455719px;line-height:1.25;font-family:'B612 Mono';-inkscape-font-specification:'B612 Mono Bold';letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1.06111395"
+       id="text817">
+      <path
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Kanit;-inkscape-font-specification:'Kanit Heavy';fill:#333333;fill-opacity:1;stroke-width:4.01050949"
+         d="M 253.69922 23.46875 C 238.51276 23.46875 227.12253 26.142883 219.5293 31.490234 C 212.04301 36.730625 208.29883 44.804292 208.29883 55.712891 C 208.29883 61.701905 209.10088 66.622552 210.70508 70.472656 C 212.41623 74.322735 215.14358 77.637345 218.88672 80.417969 C 222.62986 83.198592 227.92493 85.872726 234.76953 88.439453 C 235.41121 88.653349 238.0834 89.561833 242.78906 91.166016 C 246.85305 92.556327 249.6336 93.679572 251.13086 94.535156 C 252.62812 95.28378 253.37695 96.300608 253.37695 97.583984 C 253.37695 99.081232 252.46849 100.2577 250.65039 101.11328 C 248.83229 101.8619 246.31973 102.23633 243.11133 102.23633 C 238.19177 102.23633 232.57549 101.43429 226.26562 99.830078 C 220.0627 98.22587 214.39517 96.192189 209.26172 93.732422 L 209.26172 122.76953 C 213.75349 125.01543 219.36781 126.77915 226.10547 128.0625 C 232.84312 129.34588 239.90191 129.98828 247.28125 129.98828 C 262.25382 129.98828 273.64405 127.10132 281.45117 121.32617 C 289.36524 115.44409 293.32227 107.47684 293.32227 97.423828 C 293.32227 91.113957 292.52022 85.872082 290.91602 81.701172 C 289.41876 77.423276 286.47662 73.681047 282.0918 70.472656 C 277.81392 67.157305 271.55913 64.376755 263.32422 62.130859 L 259.15234 61.007812 C 254.66057 59.724436 251.66718 58.760804 250.16992 58.119141 C 248.67266 57.370492 247.92383 56.462033 247.92383 55.392578 C 247.92383 52.71889 252.04048 51.382812 260.27539 51.382812 C 268.40336 51.382812 277.54708 53.467736 287.70703 57.638672 L 287.70703 28.441406 C 283.32221 27.158055 277.8143 26.036738 271.18359 25.074219 C 264.55289 24.004738 258.72573 23.46875 253.69922 23.46875 z M 7.8574219 25.074219 L 7.8574219 128.38477 L 88.869141 128.38477 L 88.869141 98.867188 L 46.679688 98.867188 L 46.679688 25.074219 L 7.8574219 25.074219 z M 129.80273 25.074219 L 90.019531 128.38477 L 130.44531 128.38477 L 137.82422 109.13281 L 162.04688 109.13281 L 169.42773 128.38477 L 209.85352 128.38477 L 170.06836 25.074219 L 129.80273 25.074219 z M 149.85547 62.931641 L 157.7168 82.664062 L 141.99414 82.664062 L 149.85547 62.931641 z "
+         transform="matrix(0.26458334,0,0,0.26458334,0,257.31249)"
+         id="path4541" />
+    </g>
+  </g>
+</svg>

@@ -8,103 +8,103 @@
 ******************/
 
 #amounts h4 {
-    display: inline-block;
+  display: inline-block;
 }
 
 #choice-buttons {
-    display: inline-flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: inline-flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 575px) {
-    #choice-buttons {
-        margin: 0 24px;
-    }
+  #choice-buttons {
+    margin: 0 24px;
+  }
 }
 
 .payment-button::before {
-    content: "$";
-    float: left;
-    font-size: 14px;
-    margin-left: -3px;
-    margin-right: 3px;
+  content: "$";
+  float: left;
+  font-size: 14px;
+  margin-left: -3px;
+  margin-right: 3px;
 }
 
 .pre-amount {
-    color: #333;
-    font-size: 14px;
-    margin-left: 14px;
-    margin-right: -21px;
-    margin-top: 0.8em;
-    pointer-events: none;
-    position: absolute;
+  color: #333;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -21px;
+  margin-top: 0.8em;
+  pointer-events: none;
+  position: absolute;
 }
 
 #amount-custom {
-    padding-left: 24px;
-    padding-right: 24px;
-    text-align: center;
-    width: calc(100% - 6px); /* Work around payent-button::before */
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  width: calc(100% - 6px); /* Work around payent-button::before */
 }
 
 .focus-reveal {
-    margin: 0 3px;
-    opacity: 0 !important;
-    transition: 250ms all;
-    width: 190px;
+  margin: 0 3px;
+  opacity: 0 !important;
+  transition: 250ms all;
+  width: 190px;
 }
 
 input:focus + .focus-reveal {
-    opacity: 0.8 !important;
-    transition: 250ms all;
+  opacity: 0.8 !important;
+  transition: 250ms all;
 }
 
 #payment-trust i {
-    font-size: 2.5em;
-    padding: 0 0.05em;
-    vertical-align: middle;
+  font-size: 2.5em;
+  padding: 0 0.05em;
+  vertical-align: middle;
 }
 
 #payment-trust i span {
-    font-size: 0;
+  font-size: 0;
 }
 
 #download {
-    margin: 3px auto 6px;
+  margin: 3px auto 6px;
 }
 
 #the-press {
-    padding-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 #the-press svg {
-    display: block;
-    height: 4em;
-    margin: 12px auto;
+  display: block;
+  height: 4em;
+  margin: 12px auto;
 }
 
 #the-press svg * {
-    fill: #555761;
+  fill: #555761;
 }
 
 #the-press svg:hover * {
-    fill: #3689e6;
+  fill: #3689e6;
 }
 
 #the-press svg:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 .cta {
-    padding: 64px 1em;
-    text-align: center;
+  padding: 64px 1em;
+  text-align: center;
 }
 
 .cta p {
-    text-align: center;
+  text-align: center;
 }
 
 /***********
@@ -112,33 +112,33 @@ input:focus + .focus-reveal {
 ***********/
 
 .section--hero {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .section--hero .section__detail {
-    flex: 0 0 auto;
-    max-width: 100%;
-    padding: 0 0 16px;
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding: 0 0 16px;
 }
 
 .section--hero .section__showcase {
-    position: relative;
+  position: relative;
 }
 
 .section--hero .section__showcase img.bg {
-    display: block;
-    margin: 0 auto;
-    max-height: 67vh;
+  display: block;
+  margin: 0 auto;
+  max-height: 67vh;
 }
 
 .section--hero .section__showcase img:not(.bg) {
-    height: 78%;
-    left: 50%;
-    position: absolute;
-    top: 2%;
-    transform: translateX(-50%);
-    border-radius: 4px;
+  height: 78%;
+  left: 50%;
+  position: absolute;
+  top: 2%;
+  transform: translateX(-50%);
+  border-radius: 4px;
 }
 
 /***********************
@@ -146,39 +146,39 @@ input:focus + .focus-reveal {
 ***********************/
 
 .app-display {
-    align-content: center;
-    align-items: center;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .app-display__description {
-    max-width: 600px;
-    padding: 0 32px;
+  max-width: 600px;
+  padding: 0 32px;
 }
 
 @media (min-width: 1000px) {
-    .app-display__image {
-        order: 2;
-    }
+  .app-display__image {
+    order: 2;
+  }
 
-    .app-display.app-display--horizontal,
-    .app-display.app-display--overflow {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
+  .app-display.app-display--horizontal,
+  .app-display.app-display--overflow {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 
-    .app-display--overflow .app-display__image {
-        flex: 0 0 auto;
-        order: 2;
-        overflow: visible;
-    }
+  .app-display--overflow .app-display__image {
+    flex: 0 0 auto;
+    order: 2;
+    overflow: visible;
+  }
 
-    .app-display--overflow .app-display__description {
-        flex: 1 0 auto;
-        padding: 0 0 0 64px;
-    }
+  .app-display--overflow .app-display__description {
+    flex: 1 0 auto;
+    padding: 0 0 0 64px;
+  }
 }
 
 /*********************************
@@ -186,66 +186,66 @@ input:focus + .focus-reveal {
 *********************************/
 
 #showcase {
-    display: block;
-    max-width: none;
-    overflow: hidden;
-    padding: 0;
+  display: block;
+  max-width: none;
+  overflow: hidden;
+  padding: 0;
 }
 
 #showcase > div {
-    display: block;
-    margin: auto;
-    width: 100%;
-    padding: 0 24px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 0 24px;
 }
 
 #showcase p {
-    margin: auto;
-    max-width: 600px;
+  margin: auto;
+  max-width: 600px;
 }
 
 #showcase #showcase-index {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
 #showcase #showcase-index > div {
-    padding: 0 28px;
+  padding: 0 28px;
 }
 
 #showcase #showcase-grid {
-    list-style: none;
-    margin: auto;
-    max-width: 800px;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  text-align: center;
 }
 
 #showcase #showcase-grid li {
-    display: inline-block;
-    margin: 16px;
-    padding: 0;
+  display: inline-block;
+  margin: 16px;
+  padding: 0;
 }
 
 @media (min-width: 320px) {
-    #showcase #showcase-grid li {
-        margin: 26px;
-    }
+  #showcase #showcase-grid li {
+    margin: 26px;
+  }
 }
 
 @media (min-width: 425px) {
-    #showcase #showcase-grid li {
-        margin: 32px;
-    }
+  #showcase #showcase-grid li {
+    margin: 32px;
+  }
 }
 
 #showcase #showcase-grid img {
-    display: block;
-    width: 64px;
-    margin: 12px;
+  display: block;
+  width: 64px;
+  margin: 12px;
 }
 
 #showcase #showcase-grid a {
-    color: inherit;
+  color: inherit;
 }
 
 /********************
@@ -253,31 +253,31 @@ input:focus + .focus-reveal {
 ********************/
 
 #showcase .showcase-tab .app-display {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #showcase .showcase-tab .app-display__description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0 16px;
 }
 
 #showcase .showcase-tab .app-display__description > * {
-    padding: 8px;
-    text-align: left;
+  padding: 8px;
+  text-align: left;
 }
 
 #showcase .showcase-tab .app-display__description > img {
-    height: 80px;
-    width: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 @media (min-width: 1000px) {
-    #showcase .showcase-tab .app-display__description {
-        flex-wrap: nowrap;
-        padding-bottom: 0;
-    }
+  #showcase .showcase-tab .app-display__description {
+    flex-wrap: nowrap;
+    padding-bottom: 0;
+  }
 }
 
 /***********************
@@ -285,77 +285,62 @@ input:focus + .focus-reveal {
 ***********************/
 
 #showcase.initialized > div.showcase-tab > .showcase-back {
-    background-image: url("../images/home/back-arrow.svg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 64px;
+  background-image: url("../images/home/back-arrow.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
 }
 
 #showcase.initialized {
-    background-color: rgb(44, 35, 52);
-    background-image:
-        linear-gradient(to bottom, rgba(46, 38, 49, 0.8), rgba(11, 18, 21, 0.5)),
-        url("../images/home/wallpaper.jpg");
-    background-position: top;
-    background-size: cover;
-    color: white;
-    position: relative;
-    text-shadow: 0 0 6px black;
-    transition: height 0.25s ease-in-out;
+  background-color: #3689e6;
+  background-image:
+    linear-gradient(to bottom, rgba(13, 82, 191, 0.25), rgba(0, 115, 103, 0.33)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../images/home/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  text-shadow: 0 0 6px black;
+  transition: height 0.25s ease-in-out;
 }
 
 #showcase.initialized > div {
-    position: absolute;
-    top: 0;
-    transition: transform 0.25s ease-in-out;
-    width: 100%;
-    will-change: transform;
+  position: absolute;
+  top: 0;
+  transition: transform 0.25s ease-in-out;
+  width: 100%;
+  will-change: transform;
 }
 
 #showcase.initialized > div h2::selection,
 #showcase.initialized > div p::selection {
-    text-shadow: none;
-    color: black;
-    background-color: lightgrey;
+  text-shadow: none;
+  color: black;
+  background-color: lightgrey;
 }
 
 #showcase.initialized > div#showcase-index {
-    left: -100%;
-    padding: 48px 0;
+  left: -100%;
+  padding: 48px 0;
 }
 
 #showcase.initialized > div#showcase-index.active {
-    transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
 
 #showcase.initialized > div.showcase-tab {
-    left: 100%;
-    padding: 32px 24px 32px 64px;
+  left: 100%;
+  padding: 32px 24px 32px 64px;
 }
 
 #showcase.initialized > div.showcase-tab.active {
-    transform: translate3d(-100%, 0, 0);
-}
-
-/*******************
-* Pantheon windows *
-*******************/
-
-#showcase > .pantheon:first-of-type {
-    z-index: 99;
-}
-
-#showcase .pantheon .window[type="terminal"] {
-    height: 36vw;
-    max-height: 600px;
-    max-width: 800px;
-    width: 58vw;
-    margin: 32px 32px 64px;
+  transform: translate3d(-100%, 0, 0);
 }
 
 /*************
@@ -363,32 +348,33 @@ input:focus + .focus-reveal {
 *************/
 
 #whats-new {
-    padding: 64px 1em;
+  padding: 64px 1em;
 }
 
 #whats-new::before {
-    background-color: #667885;
-    background-image:
-        url("../images/brand/logomark-white.svg"),
-        linear-gradient(to bottom, rgba(72, 90, 108, 0.25), rgba(39, 52, 69, 0.75)),
-        url("../images/home/wallpaper.jpg");
-    background-size:
-        contain,
-        cover,
-        cover;
-    border: 1px solid rgba(0, 0, 0, 0.35);
-    border-radius: 50%;
-    box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    content: "";
-    display: block;
-    height: 128px;
-    margin: 0 auto;
-    width: 128px;
+  background-color: #667885;
+  background-image:
+    url("../images/brand/logomark-white.svg"),
+    linear-gradient(to bottom, rgba(54, 137, 230, 0.25), rgba(13, 82, 191, 0.75)),
+    url("../images/home/wallpaper.jpg");
+  background-size:
+    contain,
+    cover,
+    cover;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  content: "";
+  display: block;
+  height: 128px;
+  margin: 0 auto;
+  width: 128px;
 }
 
 /************
@@ -396,74 +382,74 @@ input:focus + .focus-reveal {
 ************/
 
 #appcenter {
-    background-color: #7239b3;
-    background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    padding: 48px 0;
-    position: relative;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: #7239b3;
+  background-image: linear-gradient(to right bottom, #4c158a, #ad65d6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 48px 0;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 #appcenter h2 {
-    font-size: 2.5em;
-    font-weight: 400;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 #appcenter h2 strong {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 #appcenter .buttons {
-    text-align: center;
+  text-align: center;
 }
 
 #appcenter .button {
-    border-color: white;
-    color: white;
-    display: block;
-    margin: 12px auto;
+  border-color: white;
+  color: white;
+  display: block;
+  margin: 12px auto;
 }
 
 @media (min-width: 500px) {
-    #appcenter .button {
-        display: inline-block;
-        margin: 6px 12px;
-    }
+  #appcenter .button {
+    display: inline-block;
+    margin: 6px 12px;
+  }
 }
 
 #appcenter .button:first-child {
-    background-color: white;
-    color: #7239b3;
+  background-color: white;
+  color: #7239b3;
 }
 
 #appcenter .app-display {
-    max-width: 1300px;
-    overflow: visible;
-    transition: all 0.2s ease-in-out;
+  max-width: 1300px;
+  overflow: visible;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 2000px) {
-    #appcenter .app-display {
-        max-width: 100%;
-    }
+  #appcenter .app-display {
+    max-width: 100%;
+  }
 }
 
 #appcenter .app-display__description img {
-    display: block;
-    height: 64px;
-    margin: 0 auto 16px;
-    width: 64px;
+  display: block;
+  height: 64px;
+  margin: 0 auto 16px;
+  width: 64px;
 }
 
 @media (min-width: 400px) {
-    #appcenter .app-display__description img {
-        height: 128px;
-        margin: 0 auto 32px;
-        width: 128px;
-    }
+  #appcenter .app-display__description img {
+    height: 128px;
+    margin: 0 auto 32px;
+    width: 128px;
+  }
 }
 
 /***********
@@ -471,211 +457,211 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-    background-image: url('../images/screenshots/desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 2px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 56.25%; /* 16:9 ratio */
-    position: relative;
-    width: 100%;
+  background-image: url('../images/screenshots/desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 56.25%; /* 16:9 ratio */
+  position: relative;
+  width: 100%;
 }
 
 #workflow figure * {
-    bottom: 0;
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #workflow figure.multitasking,
 #workflow figure .workspace,
 #workflow figure .notification {
-    border-radius: 2px;
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #workflow figure.multitasking {
-    background: #333;
-    overflow: hidden;
+  background: #333;
+  overflow: hidden;
 }
 
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
-    border-radius: 2px;
-    background-image: url('../images/screenshots/desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  background-image: url('../images/screenshots/desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #workflow figure.multitasking .workspace {
-    transform: translate(0, 0) scale(1);
-    animation: 3s switch-workspace ease infinite;
-    background-position: right;
+  transform: translate(0, 0) scale(1);
+  animation: 3s switch-workspace ease infinite;
+  background-position: right;
 }
 
 #workflow figure.multitasking::before,
 #workflow figure.multitasking::after {
-    content: "";
-    display: block;
-    position: absolute;
+  content: "";
+  display: block;
+  position: absolute;
 }
 
 #workflow figure.multitasking::after {
-    transform: translate(100%, 0) scale(1);
-    animation: 3s new-workspace ease infinite;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  transform: translate(100%, 0) scale(1);
+  animation: 3s new-workspace ease infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes switch-workspace {
-    0% {
-        transform: translate(0, 0) scale(1);
-    }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
 
-    25% {
-        transform: translate(0, -2.5%) scale(0.825);
-    }
+  25% {
+    transform: translate(0, -2.5%) scale(0.825);
+  }
 
-    40% {
-        transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
-    }
+  40% {
+    transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
+  }
 
-    50% {
-        transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
-    }
+  50% {
+    transform: translate(calc(-82.5% - 10px), -2.5%) scale(0.825);
+  }
 
-    100% {
-        transform: translate(-100%, 0) scale(1);
-    }
+  100% {
+    transform: translate(-100%, 0) scale(1);
+  }
 }
 
 @keyframes new-workspace {
-    0% {
-        transform: translate(100%, 0) scale(1);
-    }
+  0% {
+    transform: translate(100%, 0) scale(1);
+  }
 
-    25% {
-        transform: translate(calc(82.5% + 10%), -2.5%) scale(0.825);
-    }
+  25% {
+    transform: translate(calc(82.5% + 10%), -2.5%) scale(0.825);
+  }
 
-    40% {
-        transform: translate(0, -2.5%) scale(0.825);
-    }
+  40% {
+    transform: translate(0, -2.5%) scale(0.825);
+  }
 
-    50% {
-        transform: translate(0, -2.5%) scale(0.825);
-    }
+  50% {
+    transform: translate(0, -2.5%) scale(0.825);
+  }
 
-    100% {
-        transform: translate(0, 0) scale(1);
-    }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 #workflow figure.pip .window {
-    transform: translate(0, -10%) scale(0.65);
-    animation: 6s pip ease infinite;
+  transform: translate(0, 0) scale(0.75);
+  animation: 6s pip ease infinite;
 }
 
 @keyframes pip {
-    0%,
-    62.5%,
-    100% {
-        transform: translate(0, -10%) scale(0.55);
-    }
+  0%,
+  62.5%,
+  100% {
+    transform: translate(0, 0) scale(0.75);
+  }
 
-    12.5%,
-    50% {
-        transform: translate(35%, 20%) scale(0.25);
-    }
+  12.5%,
+  50% {
+    transform: translate(35%, 47%) scale(0.25);
+  }
 }
 
 #workflow figure.dnd .notification {
-    animation: 12s dnd ease infinite;
-    backface-visibility: hidden;
-    background-image:
-        linear-gradient(to bottom, #7e8087, #7e8087),
-        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
-        linear-gradient(to bottom, #d4d4d4, #d4d4d4),
-        linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
-    background-size:
-        50% 10%,
-        60% 10%,
-        40% 10%,
-        cover;
-    background-repeat: no-repeat;
-    background-position:
-        60% 20%,
-        75% 45%,
-        50% 70%,
-        0;
-    bottom: auto;
-    height: 10%;
-    left: auto;
-    perspective: 1000;
-    right: 1%;
-    text-shadow: none;
-    top: 5%;
-    transform-style: preserve-3d;
-    width: 18%;
+  animation: 12s dnd ease infinite;
+  backface-visibility: hidden;
+  background-image:
+    linear-gradient(to bottom, #7e8087, #7e8087),
+    linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+    linear-gradient(to bottom, #d4d4d4, #d4d4d4),
+    linear-gradient(to bottom, #f5f5f5, #f5f5f5 80%, #ebebeb);
+  background-size:
+    50% 10%,
+    60% 10%,
+    40% 10%,
+    cover;
+  background-repeat: no-repeat;
+  background-position:
+    60% 20%,
+    75% 45%,
+    50% 70%,
+    0;
+  bottom: auto;
+  height: 10%;
+  left: auto;
+  perspective: 1000;
+  right: 1%;
+  text-shadow: none;
+  top: 5%;
+  transform-style: preserve-3d;
+  width: 18%;
 }
 
 #workflow figure.dnd .notification:first-of-type {
-    animation-delay: 250ms;
-    top: 18%;
+  animation-delay: 250ms;
+  top: 18%;
 }
 
 #workflow figure.dnd .notification:last-of-type {
-    animation-delay: 500ms;
-    top: 31%;
+  animation-delay: 500ms;
+  top: 31%;
 }
 
 #workflow figure.dnd .notification img {
-    height: 70%;
-    margin-left: 4%;
-    margin-top: 3%;
+  height: 70%;
+  margin-left: 4%;
+  margin-top: 3%;
 }
 
 #workflow figure.dnd .window {
-    left: 12%;
-    top: 1%;
-    width: 75%;
+  left: 12%;
+  top: 7%;
+  width: 75%;
 }
 
 @keyframes dnd {
-    0% {
-        filter: saturate(1);
-        opacity: 0;
-        transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
-    }
+  0% {
+    filter: saturate(1);
+    opacity: 0;
+    transform: rotateX(-180deg) translate(0) skew(40deg, 0deg);
+  }
 
-    3%,
-    15% {
-        filter: saturate(1);
-        opacity: 1;
-        transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
-    }
+  3%,
+  15% {
+    filter: saturate(1);
+    opacity: 1;
+    transform: rotateX(0deg) translate(0) skew(0deg, 0deg);
+  }
 
-    18% {
-        filter: saturate(0);
-        opacity: 0.5;
-    }
+  18% {
+    filter: saturate(0);
+    opacity: 0.5;
+  }
 
-    50%,
-    100% {
-        filter: saturate(0);
-        opacity: 0;
-    }
+  50%,
+  100% {
+    filter: saturate(0);
+    opacity: 0;
+  }
 }
 
 /***********
@@ -683,7 +669,7 @@ input:focus + .focus-reveal {
 ***********/
 
 #callouts {
-    padding: 64px 1em;
+  padding: 64px 1em;
 }
 
 /********************
@@ -691,40 +677,40 @@ input:focus + .focus-reveal {
 ********************/
 
 #parental-controls {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    padding: 48px 0;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 48px 0;
+  position: relative;
 }
 
 #parental-controls .app-display__description h2,
 #parental-controls .app-display__description p {
-    text-align: left;
+  text-align: left;
 }
 
 #parental-controls .app-display__description h3 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #parental-controls .app-display__description p {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 #parental-controls .app-display__description h2 img {
-    vertical-align: middle;
-    padding-bottom: 8px;
+  vertical-align: middle;
+  padding-bottom: 8px;
 }
 
 #parental-controls .app-display__description svg {
-    float: left;
-    margin: 0.25em 0.5em 1em 0;
+  float: left;
+  margin: 0.25em 0.5em 1em 0;
 }
 
 #parental-controls .app-display__description svg,
 #parental-controls .app-display__description svg * {
-    color: #000 !important;
-    fill: #000 !important;
+  color: #000 !important;
+  fill: #000 !important;
 }
 
 /************
@@ -732,25 +718,25 @@ input:focus + .focus-reveal {
 ************/
 
 #shortcuts {
-    display: flex;
-    justify-content: center;
-    padding: 64px 0;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+  width: 100%;
 }
 
 #shortcuts p {
-    margin-bottom: 8vw; /* For better balance */
+  margin-bottom: 8vw; /* For better balance */
 }
 
 #shortcuts .app-display__image {
-    padding: 0 32px 32px;
+  padding: 0 32px 32px;
 }
 
 @media (min-width: 1000px) {
-    #shortcuts .app-display__image {
-        width: 67%;
-        order: 0;
-    }
+  #shortcuts .app-display__image {
+    order: 0;
+    max-width: 67%;
+  }
 }
 
 /**********
@@ -758,23 +744,22 @@ input:focus + .focus-reveal {
 **********/
 
 #privacy {
-    background-color: #273445;
-    color: white;
-    padding: 128px 1em;
+  background-color: #273445;
+  color: white;
+  padding: 128px 1em;
 }
 
 #privacy a {
-    color: #8cd5ff;
+  color: #8cd5ff;
 }
 
 #privacy h4 svg {
-    fill: white;
-    height: 1em;
-    margin-right: 0.25em;
-    transform: scale(1.25);
-    vertical-align: middle;
+  fill: white;
+  height: 1em;
+  margin-right: 0.25em;
+  vertical-align: middle;
 }
 
 #privacy h4 svg * {
-    fill: inherit;
+  fill: inherit;
 }

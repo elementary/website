@@ -52,10 +52,9 @@
     </div>
     <div class="two-thirds copy">
         <h3 id="installation">Installation</h3>
-        <p>We recommend using the built-in OEM installation procedure provided by the Ubuntu installer. OEMs can install the OS, configure anything necessary, and then prepare the device for shipping to end users.</p>
-        <p><a href="https://help.ubuntu.com/community/Ubuntu_OEM_Installer_Overview" target="_blank" rel="noopener" class="read-more">Ubuntu Instructions</a>
-        <p><strong>Note:</strong> a new installer is being developed that will simplify the installation process.</p>
-        <p><a href="https://github.com/elementary/installer" target="_blank" rel="noopener" class="read-more">New Installer</a>
+        <p>The elementary OS Installer treats every installation as an OEM installation; step through it to install the OS, then shut down and the device is ready to be shipped to a customer. To create a custom image, install the OS, configure the system with an administrator account, delete that account, then create an image of the disk. In both cases, Initial Setup will run on the customer's first boot and create their user account.</p>
+        <p><a href="https://github.com/elementary/installer" target="_blank" rel="noopener" class="read-more">Installer</a>
+        <p><a href="https://github.com/elementary/initial-setup" target="_blank" rel="noopener" class="read-more">Initial Setup</a>
 
         <h3 id="system-settings">System Settings</h3>
         <p>System Settings offers several advantages to OEMs shipping elementary OS. From its pluggable architecture to easily-provided branding, System Settings was designed with OEMs in mind.</p>
