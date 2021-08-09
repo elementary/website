@@ -35,7 +35,7 @@ Make sure to back your important data up to an external location such as a cloud
 ## Step-by-step Guide {#choose-operating-system}
 
 <div class="embed">
-<iframe src="https://www.youtube-nocookie.com/embed/JZJahY1Km2g?modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/3KoCDt4fxcM?modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.
