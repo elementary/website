@@ -37,7 +37,7 @@
             <div class="action-area">
                 <div class="linked">
                     <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['previous_filename']; ?>">Download</a>
-                    <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['previous_magnet'].'&dn='.$config['previous_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&ws=http:<?php echo $download_link.$config['previous_filename']; ?>"><i class="fa fa-magnet"></i></a>
+                    <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['previous_magnet'].'&dn='.$config['previous_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http:<?php echo $download_link.$config['previous_filename']; ?>"><i class="fa fa-magnet"></i></a>
                 </div>
             </div>
             <p>For help and more info, read the <a href="<?php echo $page['lang-root'];?>/docs/installation#installation">installation guide</a>. If you purchased elementary OS, check your email for a receipt that includes your link to download elementary OS again for free.</p>
