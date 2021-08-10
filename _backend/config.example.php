@@ -4,9 +4,9 @@
 
 return array(
   'release_title'    => 'Odin',
-  'release_version'  => '6.0',
+  'release_version'  => '6',
   'release_filename' => 'elementaryos-6.0-stable.20210810.iso',
-  'release_size'     => '2.19 GB',
+  'release_size'     => '2.36 GB',
   'release_magnet'   => '6def4d028d76c6f02590bb062be4ad5cbf4e76fb',
   'release_sha256'   => '3e978b9c5dfbf8aaa9cd2fa6fc3780d5bdf0eacc1a147572357960b36267bee1',
 
