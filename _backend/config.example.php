@@ -5,16 +5,16 @@
 return array(
   'release_title'    => 'Odin',
   'release_version'  => '6',
-  'release_filename' => 'elementaryos-6.0-stable.20210901.iso',
-  'release_size'     => '2.49 GB',
-  'release_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
-  'release_sha256'   => '439110ceadadd13683632ddd273095f72ee9b8d22a7569ac84c2fd1c4d920610',
+  'release_filename' => 'elementaryos-6.0-stable.20210810.iso',
+  'release_size'     => '2.36 GB',
+  'release_magnet'   => '6def4d028d76c6f02590bb062be4ad5cbf4e76fb',
+  'release_sha256'   => '3e978b9c5dfbf8aaa9cd2fa6fc3780d5bdf0eacc1a147572357960b36267bee1',
 
   'previous_title'    => 'Hera',
   'previous_version'  => '5.1.7',
-  'previous_filename' => 'elementaryos-0.5.1-stable.20180130.iso',
-  'previous_size'     => '1.50 GB',
-  'previous_magnet'   => 'baab8ca13fd7c83524c3fcba99b4b286b77ae547',
+  'previous_filename' => 'elementaryos-5.1-stable.20200814.iso',
+  'previous_size'     => '1.49 GB',
+  'previous_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
 
   'chart_enable'         => false,
   'chart_link_project'   => 'elementary',
