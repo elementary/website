@@ -113,7 +113,7 @@
     "Our Privacy Policy": "Наша політика приватності",
     "Tattle-Tale": "Підслуховування",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS допомагає стежити за тим, які застосунки працюють. Коли застосунок використовує ваш мікрофон, ми показуємо індикатор, щоб повідомити вас. Коли застосунок використовує багато енергії, ми повідомляємо вас у вашому індикаторі живлення.",
-    "Permissions": "",
+    "Permissions": "Дозволи",
     "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "",
     "Housekeeping": "Домоведення",
     "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "",
