@@ -98,7 +98,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 6 Odin</h2>
-          <p>The biggest update to the platform yet with multi-touch, dark style, app sandboxing, and an all-new installer. OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and is both easier to get and more inclusive than ever.</p>
+          <p>The biggest update to date brings multi-touch, a perceptually dark style, app sandboxing, and an all-new installer. Odin grants visionary insight in the persuit of knowledge, with innovative features making the answers to riddles available to more people.</p>
           <a href="https://blog.elementary.io/elementary-os-6-odin-released/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
@@ -109,7 +109,7 @@
         <div class="app-display__description">
           <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
-          <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
+          <p>Get and buy apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app is reviewed and curated by elementary to ensure an experience of ease, security, and privacy.</p>
           <div class="buttons">
             <a href="https://appcenter.elementary.io" target="_blank" rel="noopener" class="button flat">Discover AppCenter Apps</a>
             <a href="https://blog.elementary.io/tags#appcenter-spotlight" target="_blank" rel="noopener" class="button flat">Read AppCenter Spotlight</a>
@@ -122,7 +122,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h1>Get Work Done. Or Play.</h1>
-          <p>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</p>
+          <p>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of mind when watching videos or playing games.</p>
         </div>
       </div>
       <div class="grid">
@@ -131,7 +131,7 @@
             <div class="workspace"></div>
           </figure>
           <h4>Multitasking View</h4>
-          <p>Workspaces help organize your work by task. Keep work and play separate, but just one swipe or tap away.</p>
+          <p>Workspaces take your work to task. Work separated from play, one swipe or tap away.</p>
         </div>
         <div class="third">
           <figure class="pip">
@@ -140,7 +140,7 @@
             </div>
           </figure>
           <h4>Picture-in-Picture</h4>
-          <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
+          <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture that one thing while working on another.</p>
         </div>
         <div class="third">
           <figure class="dnd">
@@ -158,7 +158,7 @@
             </div>
           </figure>
           <h4>Do Not Disturb</h4>
-          <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
+          <p>Tune everything out to focus on your work, and keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
         </div>
       </div>
     </section>
@@ -167,7 +167,7 @@
         <div id="showcase-index">
           <div>
             <h2>Apps You Need, Without Ones You Don’t.</h2>
-            <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
+            <p>elementary OS comes with a carefully considered set of apps catering to everyday needs. Spend more time using your computer and less time cleaning it.</p>
           </div>
           <ul id="showcase-grid">
             <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music app icon"/>Music</li></a>
@@ -189,7 +189,7 @@
               <img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music icon" />
               <div>
                 <h2>Music</h2>
-                <p>Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.</p>
+                <p>Browse and listen to your music by album, use lightning-fast search, and build playlists of your favorites.</p>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@
               <img src="images/icons/apps/64/internet-web-browser.svg" alt="Web icon" />
               <div>
                 <h2>Web</h2>
-                <p>Surf the web with a fast &amp; lightweight web browser. Web lets you use modern sites and web apps while protecting your privacy and being lighter on battery life.</p>
+                <p>Open Web to surf in style and use web apps in the privacy of your rules, while being lighter on battery.</p>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@
               <img src="images/icons/apps/64/internet-mail.svg" alt="Mail icon" />
               <div>
                 <h2>Mail</h2>
-                <p>Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.</p>
+                <p>Manage accounts effortlessly with conversation-based Mail, with fast-as-you-type search, new notifications, and more.</p>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@
               <img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photos icon" />
               <div>
                 <h2>Photos</h2>
-                <p>Import, organize, and edit photos. Make a slideshow. Share with online services.</p>
+                <p>Import, organize, and edit photos. Make a slideshow of a memory. Share to online services.</p>
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@
               <img src="images/icons/apps/64/multimedia-video-player.svg" alt="Videos icon" />
               <div>
                 <h2>Videos</h2>
-                <p>Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.</p>
+                <p>Resume video viewing where you left off, with a library, previews on the seekbar, playlists, subtitles, and smart fullscreen.</p>
               </div>
             </div>
           </div>
@@ -249,7 +249,7 @@
               <img src="images/icons/apps/64/office-calendar.svg" alt="calendar icon" />
               <div>
                 <h2>Calendar</h2>
-                <p>Easily view and create events. Sync with online accounts.</p>
+                <p>Overview of past and future events. Create structure and sync with online accounts.</p>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@
               <img src="images/icons/apps/64/system-file-manager.svg" alt="Files icon" />
               <div>
                 <h2>Files</h2>
-                <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
+                <p>Browse with breadcrumbs from the smart pathbar, or search with path completion. Navigate with the column view, all with smart features like tab history.</p>
               </div>
             </div>
           </div>
@@ -275,7 +275,7 @@
               <img src="images/icons/apps/64/utilities-terminal.svg" alt="Terminal icon" />
               <div>
                 <h2>Terminal</h2>
-                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
+                <p>Switchable color schemes designed to prevent eye strain, tabs with history and smart naming, task-completion notifications, natural copy and paste, backlog search, paste protection, and more. Old app new tricks.</p>
               </div>
             </div>
           </div>
@@ -287,7 +287,7 @@
               <img src="images/thirdparty-icons/apps/64/io.elementary.code.svg" alt="Code icon" />
               <div>
                 <h2>Code</h2>
-                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.</p>
+                <p>Tailor-made editor with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. All made from Code.</p>
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@
               <img src="images/icons/apps/64/accessories-camera.svg" alt="Camera icon" />
               <div>
                 <h2>Camera</h2>
-                <p>Easily snap pictures or video from your built-in or USB webcam.</p>
+                <p>Snap pleasant pictures and results in video sooner from your built-in or USB webcam.</p>
               </div>
             </div>
           </div>
@@ -316,9 +316,9 @@
             Screen Time &amp; Limits
           </h2>
           <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
-          <p>Set per-user time limits for weekdays, weekends, or both.</p>
+          <p>Set per-user time limits for weekdays, weekends—or both.</p>
           <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
-          <p>Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.</p>
+          <p>Manage allowed websites. Rules affect all apps for the chosen user, even when using a different web browser.</p>
           <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
           <p>Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.</p>
         </div>
@@ -328,19 +328,19 @@
       <div class="grid">
         <div class="two-thirds">
           <h1>Everything We Do is Open&nbsp;Source</h1>
-          <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+          <p>Our platform itself is entirely libre software, built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). We don't just play nice with the ecosystem, but collaborate to improve it for everyone.</p>
           <a class="read-more" href="/open-source">Explore Our Stack</a>
         </div>
       </div>
       <div class="grid">
         <div class="half">
           <h2>Secure &amp; Privacy-respecting</h2>
-          <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.</p>
+          <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking info.</p>
           <a class="read-more" href="https://ubuntu.com/security/notices?release=focal">Security Notices</a>
         </div>
         <div class="half">
           <h2>Built for Developers</h2>
-          <p>Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+          <p>Whether your app could benefit from a new system feature or API or you’re curious about how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, modify it, and share with all.</p>
           <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
         </div>
       </div>
@@ -350,7 +350,7 @@
         <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
-          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
+          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you stay productive on your first or thousandth day.</p>
         </div>
       </div>
     </section>
@@ -358,7 +358,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h1>Privacy-respecting. Through and through.</h1>
-          <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
+          <p>Your data, always belongs to you—only you. We don’t make advertising deals or collect any personal data. When you fund elementary OS and apps on AppCenter directly by paying what you want you are behind the scenes—where nothing is hidden.</p>
           <a class="read-more" href="privacy">Our Privacy Policy</a>
         </div>
       </div>
@@ -368,21 +368,21 @@
             <?php include('images/icons/devices/symbolic/audio-input-microphone-symbolic.svg'); ?>
             Tattle-Tale
           </h4>
-          <p>elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.</p>
+          <p>elementary OS helps you keep tabs on what apps are up to. Your microphone is on when an indicator lets you know. If an app is using a lot of energy, the power indicator will tell you.</p>
         </div>
         <div class="third">
           <h4>
             <?php include('images/icons/status/symbolic/changes-prevent-symbolic.svg'); ?>
             Permissions
           </h4>
-          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.</p>
+          <p>Like people, apps have to ask up front for access to your data or devices. We review all AppCenter apps to ensure they leave it all up to permissions you can revoke at any time in System Settings.</p>
         </div>
         <div class="third">
           <h4>
             <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
             Housekeeping
           </h4>
-          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+          <p>elementary OS keeps your temporary and trashed files tidied up. More storage made available, and a safeguard from private data coming back to haunt you.</p>
         </div>
       </div>
     </section>
@@ -421,7 +421,7 @@
       <img alt="Download elementary OS icon" src="images/icons/apps/48/system-os-installer.svg">
       <div class="content-area">
         <p class="primary">Choose a Download</p>
-        <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
+        <p>Download from a localized server or by magnet link. Help and more info in the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
       </div>
       <div class="action-area">
         <a class="button clickable close-modal">Close</a>
