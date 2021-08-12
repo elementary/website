@@ -1,7 +1,7 @@
 {
     "Everything We Do is Open&nbsp;Source": "Tout ce que nous faisons est Open-Source",
     "The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.": "La plate-forme elementary OS est entièrement open source et repose sur une base solide de logiciels Gratuits &amp; Open Source. De plus, nous collaborons activement au sein de l'écosystème afin de l'améliorer pour tous.",
-    "Get Involved": "Participer",
+    "Get Involved": "Contribuer",
     "Applications": "Applications",
     "elementary OS Apps": "Applications d'elementary OS",
     "AppCenter": "Centre d'Applications",
@@ -10,7 +10,7 @@
     "Camera": "Caméra",
     "Code": "Code",
     "Files": "Fichiers",
-    "Mail": "Courriel",
+    "Mail": "Messagerie",
     "Music": "Musique",
     "Photos": "Photos",
     "Screenshot": "Capture d'écran",
@@ -19,7 +19,7 @@
     "Videos": "Vidéos",
     "Desktop Shell": "Environnement de bureau",
     "Pantheon Desktop Shell": "Environnement de bureau Pantheon",
-    "Applications Menu": "Menu des Applications",
+    "Applications Menu": "Menu des applications",
     "Dock": "Dock",
     "Gala": "Gala",
     "Icons": "Icônes",
@@ -75,7 +75,7 @@
     "Filesystem, Hardware, Networking &amp; Drivers": "Système de fichiers, matériel, réseau et pilotes",
     "Kernel": "Kernel",
     "We Support Open Source Projects": "Nous aidons les projets libres",
-    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary met un point d’honneur à reverser des fonds aux projets sur lesquels il s’appuie. Lorsque vous achetez une copie de elementary OS, vous apportez également un soutien financier à de beaux projets comme ceux-ci.",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary met un point d’honneur à reverser des fonds aux projets sur lesquels il s’appuie. Lorsque vous achetez une copie d'elementary OS, vous apportez également un soutien financier à de beaux projets comme ceux-ci.",
     "Debian": "Debian",
     "Font Awesome": "Font Awesome",
     "Inkscape": "Inkscape",
@@ -86,5 +86,5 @@
     "Software Freedom Conservancy": "Software Freedom Conservancy",
     "Weblate": "Weblate",
     "All logos featured here are trademarks of their respective projects.": "Tous les logos présentés ici sont des marques déposées de leurs projets respectifs.",
-    "Open Source &sdot; elementary": "Libre &sdot; elementary"
+    "Open Source &sdot; elementary": "Open Source &sdot; elementary"
 }
