@@ -83,7 +83,7 @@
     "Terminal icon": "Пиктограмма приложения Терминал",
     "Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?": "Переключаемые цветовые схемы, направленные для предотвращения напряжения глаз, вкладки как в браузере с историей и умным именованием, уведомления о завершении задач, привычное копирование и вставка, поиск задержек, защита от вставки и многое другое. Кто сказал, что вы не можете научить старое приложение новым трюкам?",
     "Code icon": "Значок редактора Code",
-    "Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.": "",
+    "Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.": "Индивидуальный, с автоматическим сохранением, папками проектов, интеграцией Git, интеллектуальными отступами, поддержкой EditorConfig, мини-картой, символами Vala, и расширениями такими как действия Markdown и Эмуляция Vim. Код станет последним редактором который вам только понадобится.",
     "Camera screenshot": "Снимок экрана приложения Камера",
     "Camera icon": "Пиктограмма приложения Камера",
     "Easily snap pictures or video from your built-in or USB webcam.": "Легко снимайте фотографии и видео с вашей встроенной или USB веб-камеры.",
@@ -132,5 +132,5 @@
     "Close": "Закрыть",
     "Download": "Загрузить",
     "Torrent Magnet Link": "magnet-ссылка",
-    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": ""
+    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": "Продуманная, способная и этичная замена Windows и macOS &sdot; elementary OS"
 }
