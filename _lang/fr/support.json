@@ -1,11 +1,11 @@
 {
     "Get Support": "Obtenir de l'aide",
-    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "Vous nous appuyons sur notre <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">Stack Exchange communautaire</a> pour l'assistance ? Recherchez les questions fréquentes, posez les vôtres, et participez en répondant à certaines d'entre elles. Cliquez sur une application ci-dessous pour accéder aux questions qui lui sont spécifiques.",
+    "We rely on our <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">community-powered Stack Exchange</a> for support. Search for common questions, ask your own, or help out by answering some. Pick an app below to jump to questions about it specifically.": "Nous nous appuyons sur notre <a href=\"https://elementaryos.stackexchange.com\" target=\"_blank\" rel=\"noopener\">Stack Exchange communautaire</a> pour l'assistance. Recherchez les questions fréquentes, posez les vôtres, et participez en répondant à certaines d'entre elles. Cliquez sur une application ci-dessous pour accéder aux questions qui lui sont spécifiques.",
     "AppCenter": "Centre d'Applications",
     "Calendar": "Calendrier",
     "Camera": "Caméra",
     "Files": "Fichiers",
-    "Mail": "Courriel",
+    "Mail": "Messagerie",
     "Epiphany": "Epiphany",
     "Music": "Musique",
     "Photos": "Photos",
@@ -16,6 +16,6 @@
     "Installation": "Installation",
     "Get help installing elementary OS with our step-by-step guide.": "Obtenez de l'aide pour installer elementary OS avec notre guide détaillé.",
     "Learning the Basics": "Apprendre les bases",
-    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Utilisation du bureau, multi-tâche, raccourcis clavier et plus encore.",
+    "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Utilisation du bureau, multitâche, raccourcis clavier et plus encore.",
     "Support &sdot; elementary": "Support &sdot; elementary"
 }
