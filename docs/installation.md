@@ -4,6 +4,10 @@
 
 If you haven't already, you will need to <a href="/" target="_blank" rel="noopener">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
+## Frequently-Asked Questions
+
+See the [frequently-asked questions for this release]({#release_faq}).
+
 ## Recommended System Specifications {#recommended-system-specifications}
 
 While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
@@ -17,7 +21,7 @@ While we don't have a strict set of minimum system requirements, we recommend at
 
 You will also need a spare USB flash drive with at least 4 GB of storage for installation.
 
-**We do not recommend virtual machines as they don't perform as well as a full install.** If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encouter issues.
+**We do not recommend virtual machines as they don't perform as well as a full install.** If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.
 
 <div class="row alert warning" markdown="1">
 <div class="column alert">

@@ -9,6 +9,7 @@ return array(
   'release_size'     => '2.36 GB',
   'release_magnet'   => '6def4d028d76c6f02590bb062be4ad5cbf4e76fb',
   'release_sha256'   => '3e978b9c5dfbf8aaa9cd2fa6fc3780d5bdf0eacc1a147572357960b36267bee1',
+  'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
 
   'previous_title'    => 'Hera',
   'previous_version'  => '5.1.7',

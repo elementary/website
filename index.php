@@ -58,8 +58,9 @@
             <div class="column">
               <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
               <p class="small-label">
-                elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> | <?php echo $config['release_size']; ?><br>
-                <a href="docs/installation#recommended-system-specifications" target="_blank" rel="noopener">Recommended System Specifications</a>
+                elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> (<?php echo $config['release_size']; ?>)<br>
+                <a href="docs/installation#recommended-system-specifications" target="_blank" rel="noopener">Recommended System Specs</a> |
+                <a href="<?php echo $config['release_faq'] ?>" target="_blank" rel="noopener">FAQ</a>
               </p>
             </div>
             <div style="clear:both;"></div>
