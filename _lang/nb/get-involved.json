@@ -40,7 +40,7 @@
     "Desktop Development": "Skrivebordsutvikling",
     "Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.": "Vårt skrivebordsmiljø og alle programmene er bygd med Vala, GTK, Granite, og et antall andre åpne bibliotek. Vi vertstjener all vår kode og har all utvikling på GitHub. Hvis du aldri har utviklet for elementary OS før, anbefaler vi at du sjekker vår «Lær det grunnleggende»-veiledning.",
     "Getting Started Guide": "Oppstarts-guide",
-    "Browse Code": "Utforsk koden",
+    "Browse Code": "Utforsk kildekoden",
     "Report issues": "Innrapporter feil",
     "Help out by tracking down issues and reporting them. Or help by confirming, clarifying, and cleaning up existing issues.": "Hjelp til å spore opp feil og innrapportere dem. Eller hjelp til ved å bekrefte, greie ut og rydde opp eksisterende feil.",
     "Read the Guide": "Les veiledningen",
