@@ -102,7 +102,7 @@
     "Secure &amp; Privacy-respecting": "Seguro &amp; respeitando a Privacidade",
     "When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.": "Quando o código-fonte está disponível para checagem, qualquer um— um pesquisador de segurança, um usuário preocupado ou uma fabricante que envia o sistema operacional em seu hardware — pode verificar se o software é seguro e se não coleta ou vaza informações pessoais.",
     "Security Notices": "Notas de segurança",
-    "Built for Developers": "Feito para Desenvolvedores",
+    "Built for Developers": "Criado para Desenvolvedores",
     "Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.": "Se seu aplicativo pode se beneficiar de um novo recurso do sistema ou API ou se você está curioso para saber como um recurso existente ou padrão de design foi construído, você tem acesso completo ao nosso código-fonte. Copie, aprenda com ele, remixe, modifique e redistribua.",
     "Get Involved": "Se Envolva",
     "elementary OS Keyboard Shortcuts": "Atalhos do Teclado do elementary OS",
@@ -114,12 +114,12 @@
     "Tattle-Tale": "Dedo-Duro",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "O elementary OS ajuda você a manter o controle sobre o que os aplicativos estão fazendo. Quando um aplicativo usa seu microfone, exibimos um indicador para informá-lo. Quando um aplicativo está usando muita energia, informamos no seu indicador de energia.",
     "Permissions": "Permissões",
-    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "",
+    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "Quando um aplicativo deseja acessar seus dados ou dispositivos, ele deve solicitar permissão antecipadamente. Nós revisamos todos os aplicativos do AppCenter para garantir que estejam usando as permissões de maneira adequada - e você pode revogá-las a qualquer momento nas Configurações do Sistema.",
     "Housekeeping": "Serviço de Limpeza",
-    "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "",
+    "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "O elementary OS mantém automaticamente seus arquivos temporários e deletados organizados. Isso não apenas mantém o armazenamento do seu dispositivo livre, mas pode ajudar a garantir que seus dados privados não voltem para assombrá-lo.",
     "elementary OS logo": "logo elementary OS",
     "Download elementary OS": "Fazer download do elementary OS",
-    "Pay What You Can": "",
+    "Pay What You Can": "Pague O Que Puder",
     "&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;": "&ldquo;O elementary OS é diferente… um sistema operacional bonito e poderoso.&rdquo;",
     "&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;": "&ldquo;Não lhe atrapalha e permite que você se concentre no que precisa ser feito.&rdquo;",
     "&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;": "&ldquo;Eu me encontrei mais produtivo nas últimas duas semanas [usando elementary OS] do que nos últimos dois meses juntos.&rdquo;",
@@ -132,5 +132,5 @@
     "Close": "Fechar",
     "Download": "Baixar",
     "Torrent Magnet Link": "Link Magnético de Torrent",
-    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": ""
+    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": "O substituto inteligente, capaz e ético para Windows e macOS &sdot; elementary OS"
 }
