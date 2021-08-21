@@ -1,7 +1,7 @@
 {
     "Whoops! That link has expired.": "Đường link này đã hết hạn.",
-    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "",
-    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "",
+    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "Nếu bạn đang định tải elementary OS, vui lòng quay về <a href=\"/\">trang chủ</a> để tìm phiên bản mới nhất. Nếu bạn được dẫn đến đây bởi một trang bên thứ 3, có thể bên đó đang muốn bỏ qua hộp chọn thanh toán hay hướng dẫn cài đặt. Hãy thông báo cho họ biết rằng các đường link tải elementary OS chỉ mang tính tạm thời, cho riêng mỗi người dùng và theo cân bằng tải. Chỗ để tìm link tải đúng nằm tại trang <a href=\"https://elementary.io\">elementary.io</a>.",
+    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "Nếu bạn đang tìm một thứ gì khác hay phát hiện vấn đề, bạn luôn có thể <a href=\"https://github.com/elementary/website/issues/new\">tạo một issue trên GitHub của chúng tôi</a>.",
     "Go to Home Page": "Đi tới Trang Chủ",
-    "Download Link Expired &sdot; elementary": ""
+    "Download Link Expired &sdot; elementary": "Link Tải Đã Hết Hạn &sdot; elementary"
 }
