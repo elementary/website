@@ -137,7 +137,7 @@
         <div class="third">
           <figure class="pip">
             <div class="workspace">
-              <img class="window" src="images/screenshots/videos.png" srcset="images/screenshots/videos@2x.png 2x" alt="Videos screenshot" />
+              <img class="window" src="images/screenshots/videos.png" width="1124" height="555" alt="Videos screenshot" />
             </div>
           </figure>
           <h4>Picture-in-Picture</h4>
@@ -146,7 +146,7 @@
         <div class="third">
           <figure class="dnd">
             <div class="workspace">
-              <img class="window" src="images/screenshots/code.png" srcset="images/screenshots/code@2x.png 2x" alt="Code screenshot" />
+              <img class="window" src="images/screenshots/code.png" width="1174" height="703" alt="Code screenshot" />
               <div class="notification" type="notification">
                 <img src="images/icons/apps/64/internet-mail.svg" />
               </div>
