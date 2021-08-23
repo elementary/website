@@ -3,6 +3,6 @@
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "اتصال الإنترنت الخاص بك يبدو أنه يعمل. تستطيع الآن إغلاق هذه النافذة والاستمرار في استخدام جهازك.",
     "Why is this window appearing?": "لماذا تظهر هذه النافذة؟",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "يقوم elementary OS بالتحقق تلقائياً من اتصالك بالإنترنت عندما تتصل بشبكة Wi-Fi جديدة. إذا اكتشف أنه لا يوجد اتصال بالإنترنت (على سبيل المثال، إذا قمت بالاتصال ببوابة دخول إلكترونية داخل مقهى أو مكان عام آخر)، ستظهر لك هذه النافذة وستعرض لك شاشة الدخول.",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "بعض الشبكات يمكن أن تظهر علي انها شبكه خاصه في الأول ، و سوق تظهر هذه النافذه ، بعد ذلك تنتهي بإنشاء الإتصال .\nيمكنك رؤية هذه الرساله و تستطيع بأمان إغلاق النافذه.",
-    "You're connected! &sdot; elementary": "أنت متصل! &sdot; إليمنتري"
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "بعض الشبكات يمكن أن تظهر على أنها بوابة دخول إلكترونية في البداية، مظهرة هذه النافذة، ثم تقوم فعلياً بالاتصال في نهاية المطاف. في تلك الحالات، سترى هذه الرسالة، وتستطيع إغلاق النافذة بدون مشاكل.",
+    "You're connected! &sdot; elementary": "أنت متصل! &sdot; elementary"
 }
