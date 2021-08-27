@@ -1,8 +1,0 @@
-{
-    "You're connected!": "Konektado ka na!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Mukhang gumagana na ang iyong Internet connection. Maaari mo nang isara ang window na ito at magpatuloy sa paggamit ng iyong device.",
-    "Why is this window appearing?": "Bakit lumalabas ang window na ito?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Ang ibang mga network ay mukhang captive portal sa umpisa, papalitawin ang window na ito, at pagkatapos ay tuluyan palang makakakonekta. Sa mga kaso na iyon, makikita mo ang mensahe na ito at maaari mo nang isara ang window na ito.",
-    "You're connected! &sdot; elementary": "Konetkado ka na! &sdot; elementary"
-}
