@@ -1,8 +1,0 @@
-{
-    "You're connected!": "Vi estas konektita!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Via reta konekto ŝajnas funkcia. Vi povas sekure fermi ĉi fenestron kaj daŭrigi uzadon de la aparato.",
-    "Why is this window appearing?": "Kial aperas ĉi tiu fenestro?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Iuj retoj lanĉigos unue Konektan Portalon, kio aperigos tiun fenestron, sed poste efektive ja konektos. En tiaj kazoj, vi ricevos tiun mesaĝon kaj povos sekure fermi la fenestron.",
-    "You're connected! &sdot; elementary": "Vi estas konektita! &sdot; elementary"
-}
