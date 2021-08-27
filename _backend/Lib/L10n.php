@@ -126,6 +126,7 @@ class L10n
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
         'nn' => 'Nynorsk',
+        'pa' => 'ਪੰਜਾਬੀ',
         'pl' => 'Polski',
         'pt_BR' => 'Português (Brasil)',
         'pt' => 'Português (Portugal)',
