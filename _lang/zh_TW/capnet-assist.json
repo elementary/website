@@ -1,8 +1,0 @@
-{
-    "You're connected!": "您已經成功連結！",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "您的網絡鏈接作業正常，因此您可以放心地關閉本窗口並繼續使用您的裝置。",
-    "Why is this window appearing?": "為什麽這個窗口會出現？",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "有些網絡會先顯示登録介面，於是您需要完成窗口所需動作，最後將成功連上。連上後您會收到這條消息，然後您就可以關閉這個窗口了。",
-    "You're connected! &sdot; elementary": "您已相連！&sdot; elementary"
-}
