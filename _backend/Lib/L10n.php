@@ -38,13 +38,13 @@ class L10n
     );
 
     /**
-     * languages
+     * language_folders
      * Returns a list of all langauges the website currently has.
      * NOTE: this does not return a list of enabled languages.
      *
      * @return array A list of languages we currently have
      */
-    public static function languages()
+    public static function language_folders()
     {
         $languages = array();
 
@@ -106,15 +106,17 @@ class L10n
 
     protected $available_langs = array(
         'en' => 'English',
-        'af' => 'Afrikaans',
         'ar' => 'العَرَبِيَّة‎‎',
         'ca' => 'català',
-        'cs_CZ' => 'čeština',
+        'cs' => 'čeština',
+        'da' => 'Dansk',
         'de' => 'Deutsch',
         'es' => 'Español',
         'fi' => 'Finnish',
         'fr' => 'Français',
+        'gl' => 'Galego',
         'he' => 'עִברִית',
+        'id' => 'Bahasa Indonesia',
         'it' => 'Italiano',
         'ja' => '日本語',
         'ko' => '한국어',
@@ -123,18 +125,17 @@ class L10n
         'mr' => 'मराठी',
         'nb' => 'Bokmål',
         'nl' => 'Nederlands',
+        'nn' => 'Nynorsk',
         'pa' => 'ਪੰਜਾਬੀ',
         'pl' => 'Polski',
         'pt_BR' => 'Português (Brasil)',
         'pt' => 'Português (Portugal)',
         'ru' => 'Русский',
-        'th' => 'Thai',
         'sk' => 'Slovak',
         'sv' => 'Swedish',
-        'tr_TR' => 'Türkçe',
+        'tr' => 'Türkçe',
         'uk' => 'українська',
         'zh_CN' => '简体中文',
-        'zh_TW' => '繁體中文',
     );
 
     protected $lang = 'en';
