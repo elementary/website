@@ -1,8 +1,0 @@
-{
-    "You're connected!": "Csatlakozott!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Úgy tűnik, hogy működik az internetkapcsolata. Nyugodtan bezárhatja ezt az ablakot és folytathatja az eszköz használatát.",
-    "Why is this window appearing?": "Miért jelenik meg ez az ablak?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Előfordulhat, hogy egyes hálózatok hitelesítő portálnak tűnnek és megjelenik ez az ablak, de a csatlakozás rendben végbemegy. Ezekben az esetekben is megjelenik az üzenet, de biztonságosan bezárhatja az ablakot.",
-    "You're connected! &sdot; elementary": "Csatlakozott! &sdot; elementary"
-}
