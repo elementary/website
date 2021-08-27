@@ -49,7 +49,7 @@ if ($cli->arguments->defined('help')) {
 
 $isVerbose = $cli->arguments->defined('verbose');
 
-$languages = L10n::languages();
+$languages = L10n::list_langs();
 if ($cli->arguments->defined('language') !== false) {
     $cliLanguage = $cli->arguments->get('language');
 

@@ -38,13 +38,13 @@ class L10n
     );
 
     /**
-     * languages
+     * language_folders
      * Returns a list of all langauges the website currently has.
      * NOTE: this does not return a list of enabled languages.
      *
      * @return array A list of languages we currently have
      */
-    public static function languages()
+    public static function language_folders()
     {
         $languages = array();
 
@@ -106,7 +106,6 @@ class L10n
 
     protected $available_langs = array(
         'en' => 'English',
-        'af' => 'Afrikaans',
         'ar' => 'العَرَبِيَّة‎‎',
         'ca' => 'català',
         'cs' => 'čeština',
@@ -127,7 +126,6 @@ class L10n
         'pt_BR' => 'Português (Brasil)',
         'pt' => 'Português (Portugal)',
         'ru' => 'Русский',
-        'th' => 'Thai',
         'sk' => 'Slovak',
         'sv' => 'Swedish',
         'tr_TR' => 'Türkçe',
