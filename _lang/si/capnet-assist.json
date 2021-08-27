@@ -1,8 +1,0 @@
-{
-    "You're connected!": "ඔබ සම්බන්ධයි!",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "ඔබේ අන්තර්ජාල සම්බන්ධතාවය වැඩ කරන බව පෙනේ. ඔබට මෙම කවුළුව වසා ඔබගේ උපාංගය භාවිතා කළ හැකිය.",
-    "Why is this window appearing?": "මෙම කවුළුවේ පෙනෙන්නේ ඇයි?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "මෙම කවුළුව සක්රිය කර, සැබවින්ම සම්බන්ධ වී අවසන්වනතෙක් සමහර ජාලයන් මුලින් වහල් ජාලයක් ලෙස පෙන්වයි. එම අවස්ථාවන්හීදී මෙම පණිවිඩය ඔබට පෙනෙනු ඇත සහ ඔබට ආරක්ෂිතව මෙම කවුළුව වසා දැමිය හැකිය.",
-    "You're connected! &sdot; elementary": "ඔබ සම්බන්ධයි! &sdot; elementary"
-}
