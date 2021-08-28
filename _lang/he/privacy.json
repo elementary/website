@@ -15,7 +15,7 @@
     "Online Accounts": "חשבונות מקוונים",
     "elementary OS optionally integrates with online accounts such as email and calendar providers via System Settings. Data from these providers may be retrieved by your copy of elementary OS and stored locally on your device to be displayed in locally-installed apps such as Mail, Calendar, and Tasks. <strong>This data is not sent to elementary or shared with any third party.</strong>": "",
     "What Data is Collected": "אילו נתונים נאספים",
-    "If you choose to add an online account, your copy of elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device. <strong>elementary does not collect any of this data.</strong>": "",
+    "If you choose to add an online account, your copy of elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device. <strong>elementary does not collect any of this data.</strong>": "אם בחירתך תהיה להוסיף חשבון מקוון, העותק של elementary OS שברשותך עשוי לאסוף ולאחסן את השם, כתובת הדוא״ל, התמונה הייצוגית, הודעות דוא״ל, אירועים בלוח השנה, אנשי קשר, תמונות וקבצים מהחשבונות המקושרים שלך מקומית אצלך במכשיר. <strong>elementary לא אוספים את הנתונים האלה כלל.</strong>",
     "How Data is Used": "איך נעשה שימוש בנתונים",
     "<strong>Your data is stored locally on your device and never sent to elementary servers or any third parties.</strong> It is used to populate your locally-installed apps such as Mail, Calendar, Tasks, Files, and Photos with your data so you can access it.": "",
     "Sharing Data": "שיתוף נתונים",
