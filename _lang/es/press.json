@@ -8,7 +8,7 @@
     "Last Name": "Apellidos",
     "Publication": "Publicación",
     "Subscribe": "Suscribirse",
-    "elementary OS 6 Odin": "",
+    "elementary OS 6 Odin": "elementary OS 6 «Odin»",
     "The biggest update to the platform yet with multi-touch, dark style, app sandboxing, and an all-new installer. OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and is both easier to get and more inclusive than ever.": "Se trata de la mayor actualización a la plataforma a la fecha, e incluye gestos multitoque, un estilo oscuro, aislamiento de aplicaciones y un instalador totalmente nuevo. OS 6 le da el control y le permite expresarse, continúa innovando con prestaciones nuevas, y es más fácil de obtener y más inclusivo que nunca.",
     "Read Announcement": "Leer el anuncio",
     "Download Press Kit": "Descargar kit de prensa",
@@ -18,8 +18,8 @@
     "Brand Resources": "Recursos de marca",
     "View the elementary logos, brand usage guidelines, color palette, and community logo. Plus download the official high-resolution and vector elementary logo assets.": "Vea los logotipos de elementary, las pautas de uso de la marca, la paleta de colores y el logotipo de la comunidad. Además, puedes descargar los archivos oficiales de logotipo de alta resolución y de vectores.",
     "View Brand Resources": "Ver recursos de marca",
-    "Get in Touch": "Contáctanos",
-    "Talk directly with the team by emailing us at <a href=\"mailto:press@elementary.io\">press@elementary.io</a>. We welcome requests for interviews, podcast appearances, or just general press inquiries.": "Hable directamente con el equipo enviándonos un correo electrónico a <a href=\"mailto:press@elementary.io\">press@elementary.io</a>. Las solicitudes de entrevistas, presentaciones en podcast o consultas de prensa en general siempre son bienvenidas.",
+    "Get in Touch": "Póngase en contacto con nosotros",
+    "Talk directly with the team by emailing us at <a href=\"mailto:press@elementary.io\">press@elementary.io</a>. We welcome requests for interviews, podcast appearances, or just general press inquiries.": "Hable directamente con el equipo enviándonos un correo electrónico a <a href=\"mailto:press@elementary.io\">press@elementary.io</a> (en inglés). Las solicitudes de entrevistas, presentaciones en pódcast o consultas de prensa en general siempre son bienvenidas.",
     "Send an Email": "Enviar un mensaje",
     "Press &sdot; elementary": "Prensa &sdot; elementary"
 }
