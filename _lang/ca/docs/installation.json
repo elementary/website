@@ -13,7 +13,7 @@
     "Built-in or wired mouse/touchpad and keyboard": "Ratolí / ratolí tàctil i teclat integrats o amb cable",
     "1024×768 minimum resolution display": "1024×768 pantalla de resolució mínima",
     "You will also need a spare USB flash drive with at least 4 GB of storage for installation.": "També necessitareu una unitat USB lliure amb almenys 4 GB d’emmagatzematge per a la instal·lació.",
-    "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "",
+    "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "<strong>No recomanem que feu servir màquines virtuals ja que no tenen el mateix rendiment que una instal·lació plena.</strong> Si intenteu fer una instal·lació en una màquina virtual, habiliten l'EFI si és possible, però tingueu en compte que podeu trobar-vos altres problemes.",
     "Back Up Your Data": "Feu una còpia de seguretat de les vostres dades",
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Assegureu-vos de fer una còpia de seguretat de les dades importants en una ubicació externa, com ara un servei de núvol o un disc dur extern. La instal·lació d’un sistema operatiu nou podria sobreescriure les dades existents.",
     "Step-by-step Guide": "Guia pas a pas",
