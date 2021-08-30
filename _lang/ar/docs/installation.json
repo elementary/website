@@ -13,7 +13,7 @@
     "Built-in or wired mouse/touchpad and keyboard": "فأرة أو لوحة لمس مدمجة أو موصولة بواسطة USB، ولوحة مفاتيح",
     "1024×768 minimum resolution display": "شاشة عرض بدقة 1024×768 كحد أدنى",
     "You will also need a spare USB flash drive with at least 4 GB of storage for installation.": "ستحتاج أيضاً إلى ذاكرة USB احتياطية بسعة تخزين 4 جيجابايت على الأقل لتثبيت النظام.",
-    "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "",
+    "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "<strong>نحن لا ننصح بالتثبيت على الآلات الافتراضية (Virtual machines) بسبب أنها لا تعمل بنفس كفاءة التثبيت الافتراضي الكامل.</strong> إذا كنت تحاول التثبيت على آلة افتراضية، قم بتفعيل EFI إذا أمكن ولكن أدرك أنه من المحتمل أن تواجه مشاكل أخرى.",
     "Back Up Your Data": "قم بعمل نسخة احتياطية لبياناتك",
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "تأكد من حفظ النسخة الاحتياطية لبياناتك في مكان خارجي مثل خدمة سحابية أو قرص صلب. قد يزيل تثبيت نظام تشغيل جديد جميع بياناتك السابقة.",
     "Step-by-step Guide": "دليل التنزيل والتثبيت، خطوة بخطوة",
