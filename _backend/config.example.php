@@ -5,10 +5,10 @@
 return array(
   'release_title'    => 'Odin',
   'release_version'  => '6',
-  'release_filename' => 'elementaryos-6.0-stable.20210823.iso',
-  'release_size'     => '2.38 GB',
-  'release_magnet'   => '303673e100258846334f8edcc4cc1a5826e69042',
-  'release_sha256'   => '24e7ac95526d24ebab6e725078448143ae30106d96ab51c44f475c654a3e5d56',
+  'release_filename' => 'elementaryos-6.0-stable.20210831.iso',
+  'release_size'     => '2.37 GB',
+  'release_magnet'   => '7b4bce53195f7db8c0ba9b9db04b20228b84b60b',
+  'release_sha256'   => '60bbaca60d8dbf9f5f112ade2ee5924af976ba01ce19e53e871c8deced7ae884',
   'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
 
   'previous_title'    => 'Hera',
