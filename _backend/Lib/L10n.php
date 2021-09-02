@@ -135,6 +135,7 @@ class L10n
         'sv' => 'Swedish',
         'tr' => 'Türkçe',
         'uk' => 'українська',
+        'vi' => 'Tiếng Việt',
         'zh_CN' => '简体中文',
     );
 
