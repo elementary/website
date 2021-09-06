@@ -140,7 +140,7 @@ The Panel, Dock, and workspaces appear on the primary display. Any other attache
 
 ## Installing Apps {#installing-apps}
 
-elementary OS comes with **AppCenter**,the open, pay-what-you-can app store for indie developers. To install a new app:
+elementary OS comes with **AppCenter**, the open, pay-what-you-can app store for indie developers. To install a new app:
 
 1. Open **AppCenter**
 2. Search in the top-right, or browse by category
