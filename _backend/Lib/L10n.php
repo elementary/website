@@ -34,6 +34,7 @@ class L10n
         '/README.md/',
         '/reference.md/',
         '/router.php/',
+        '/SECURITY.md/',
         '/TRANSLATE.md/',
     );
 
