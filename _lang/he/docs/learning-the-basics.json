@@ -87,7 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "",
     "Keyboard Shortcuts": "",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "",
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "כדי לצפות בחלונית צפה של קיצורי המקלדת של שולחן העבודה, יש ללחוץ על המקש <kbd title=\"מקש סופר, Windows או Command\">&#8984;</kbd>.",
     "Desktop keyboard shorcuts can be customized from the": "את קיצורי המקלדת של שולחן העבודה ניתן לכוון דרך תפריט",
     "menu in the shortcuts overlay or in": "בחלונית הצפה של קיצורי המקלדת או באמצעות",
     "→": "←",
