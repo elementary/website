@@ -64,7 +64,7 @@
         <div>
             <a class="button sub-item" href="https://github.com/elementary/contractor" target="_blank" rel="noopener"><span>Contractor</span></a>
             <a class="button sub-item" href="https://github.com/elementary/granite" target="_blank" rel="noopener"><span>Granite</span></a>
-            <a class="button sub-item" href="https://github.com/elementary/capnet-assist" target="_blank" rel="noopener"><span>Captive Portal Assistant</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/capnet-assist" target="_blank" rel="noopener"><span>Captive Network Assistant</span></a>
             <a class="button sub-item" href="https://github.com/elementary/pantheon-agent-polkit" target="_blank" rel="noopener"><span>Polkit Agent</span></a>
             <a class="button sub-item" href="https://github.com/elementary/flatpak-platform" target="_blank" rel="noopener"><span>Flatpak Platform</span></a>
         </div>
