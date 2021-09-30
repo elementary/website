@@ -155,7 +155,7 @@
         <div class="third">
             <h3>Report issues</h3>
             <p>Help out by tracking down issues and reporting them. Or help by confirming, clarifying, and cleaning up existing issues.</p>
-            <a class="button flat" href="/docs/code/reference#reporting-bugs">Read the Guide</a>
+            <a class="button flat" href="https://docs.elementary.io/contributor-guide/feedback/reporting-issues">Read the Guide</a>
         </div>
         <div class="third">
             <h3>Fix issues</h3>
