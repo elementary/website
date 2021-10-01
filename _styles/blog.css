@@ -85,6 +85,10 @@
   margin-bottom: 1em;
 }
 
+#whats-new .featured:focus header h4 {
+  text-decoration: underline;
+}
+
 #whats-new .featured header h4 + p {
   line-height: 1.25;
   margin-top: -1em;
