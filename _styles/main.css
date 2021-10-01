@@ -203,9 +203,13 @@ img.inline + div.inline {
   opacity: 1;
 }
 
+.read-more {
+  white-space: nowrap;
+}
+
 .read-more::after {
   color: inherit;
-  content: "→";
+  content: "\2192";
   display: inline-block;
   font-style: normal;
   font-weight: inherit;
