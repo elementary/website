@@ -14,7 +14,7 @@
   display: block;
   font-size: 0;
   opacity: 1;
-  padding: 1rem;
+  padding: 1.2rem;
   text-decoration: none;
   transition: background-color 250ms ease, color 250ms ease;
 }
