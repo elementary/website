@@ -15,11 +15,11 @@
         <i class="warning fas fa-4x fa-exclamation-triangle"></i>
     </div>
     <div class="column alert">
-        <h3>Sorry, access is denied.</h3>
-        <p>You don't have permission to view the requested resource.</p>
+        <h2>Sorry, not getting you.</h2>
+        <p>You don't have permission to see the resource your requested.</p>
     </div>
     <div class="row">
-        <a class="button suggested-action" href="/">Go to Home Page</a>
+        <a class="button suggested-action" href="/">Home Page</a>
     </div>
 </div>
 
