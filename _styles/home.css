@@ -15,19 +15,19 @@
   display: inline-flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: justify;
 }
 
 @media (min-width: 575px) {
   #choice-buttons {
-    margin: 0 24px;
+    margin: 0 22px;
   }
 }
 
 .payment-button::before {
   content: "$";
-  float: left;
-  font-size: 14px;
+  float: right;
+  font-size: 16px;
   margin-left: -3px;
   margin-right: 3px;
 }
@@ -39,7 +39,7 @@
   margin-right: -21px;
   margin-top: 0.8em;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
 }
 
 #amount-custom {
@@ -72,7 +72,7 @@ input:focus + .focus-reveal {
 }
 
 #download {
-  margin: 3px auto 6px;
+  margin: 4px auto 5px;
 }
 
 #the-press {
