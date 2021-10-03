@@ -31,7 +31,7 @@
       </div>
 
       <div class="section__showcase">
-        <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
+        <img class="bg" src="images/home/notebook.jpg" alt="Generic laptops and computer" />
         <img src="images/screenshots/desktop.jpg" alt="elementary OS 6 Odin desktop" />
       </div>
 
@@ -98,7 +98,7 @@
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 6 Odin</h2>
+          <h1>What’s New in elementary OS 6 Odin</h1>
           <p>The biggest update to the platform yet with multi-touch, dark style, app sandboxing, and an all-new installer. OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and is both easier to get and more inclusive than ever.</p>
           <a href="https://blog.elementary.io/elementary-os-6-odin-released/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
@@ -122,7 +122,7 @@
     <section id="workflow" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h1>Get Work Done. Or Play.</h1>
+          <h2>Get Work Done. Or Play.</h2>
           <p>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</p>
         </div>
       </div>
@@ -131,7 +131,7 @@
           <figure class="multitasking">
             <div class="workspace"></div>
           </figure>
-          <h4>Multitasking View</h4>
+          <h3>Multitasking View</h3>
           <p>Workspaces help organize your work by task. Keep work and play separate, but just one swipe or tap away.</p>
         </div>
         <div class="third">
@@ -158,7 +158,7 @@
               </div>
             </div>
           </figure>
-          <h4>Do Not Disturb</h4>
+          <h1>Do Not Disturb</h1>
           <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
         </div>
       </div>
@@ -173,7 +173,7 @@
           <ul id="showcase-grid">
             <a href="#showcase-music"><li class="read-more"><img src="images/icons/apps/64/multimedia-audio-player.svg" alt="Music app icon"/>Music</li></a>
             <a href="#showcase-epiphany"><li class="read-more"><img src="images/icons/apps/64/internet-web-browser.svg" alt="Browser app icon"/>Web</li></a>
-            <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" alt="Email app icon"/>Mail</li></a>
+            <a href="#showcase-mail"><li class="read-more"><img src="images/icons/apps/64/internet-mail.svg" alt="Email app icon"/>Mails</li></a>
             <a href="#showcase-photos"><li class="read-more"><img src="images/icons/apps/64/multimedia-photo-manager.svg" alt="Photo app icon"/>Photos</li></a>
             <a href="#showcase-videos"><li class="read-more"><img src="images/icons/apps/64/multimedia-video-player.svg" alt="Video app icon"/>Videos</li></a>
             <a href="#showcase-calendar"><li class="read-more"><img src="images/icons/apps/64/office-calendar.svg" alt="Calendar app icon"/>Calendar</li></a>
