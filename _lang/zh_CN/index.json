@@ -114,7 +114,7 @@
     "Tattle-Tale": "隐私保护",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS 帮助你时刻了解应用程序的小动作。当应用使用你的麦克风、当应用大量消耗电池电量的时候，我们会在指示器中做出提醒。",
     "Permissions": "权限",
-    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "当应用程序想要访问您的数据或设备时，它必须事先询问。 我们会审查所有 AppCenter 应用程序，以确保它们正确使用权限——您始终可以在“系统设置”中自行撤销它们。",
+    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "当应用程序想要访问您的数据或设备时，它必须事先请求。我们会审查所有应用中心的应用程序，以确保它们正确使用权限——您始终可以在系统设置中自行撤销授权。",
     "Housekeeping": "自动清理",
     "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS 自动清理临时文件和回收站文件。这不仅仅能腾出设备的存储空间，也可以确保隐私数据不会回来困扰您。",
     "elementary OS logo": "elementary OS 标志",
