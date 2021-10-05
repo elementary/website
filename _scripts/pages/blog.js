@@ -13,7 +13,7 @@ jQuery.then(($) => {
             $.each(data.posts, function (n, post) {
                 var postContents = ''
                 postContents += '<a class="featured with-image" href="' + post.url + '">'
-                postContents += '<div class="featured-image" alt="Featured image" style="background-image: url(' + post.image + ');"></div>'
+                postContents += '<div class="featured-image" alt="" style="background-image: url(' + post.image + ');"></div>'
                 postContents += '<header>'
                 postContents += '<h4>' + post.title + '</h4>'
                 postContents += '<p>' + post.description + '</p>'
