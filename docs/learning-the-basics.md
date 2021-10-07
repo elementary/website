@@ -16,14 +16,14 @@ At the top of the desktop is the Panel. On the left is the Applications Menu, in
     <li><span>Date &amp; Time</span></li>
     <li><span>System Indicators</span></li>
   </ol>
-  <img src="../images/docs/learning-the-basics/panel.png" alt="The Panel"/>
+  <img src="../_images/docs/learning-the-basics/panel.png" alt="The Panel"/>
 </div>
 
 #### Applications Menu {#applications-menu}
 
 To open or search for installed apps, select **Applications** on the Panel. You can page through your apps by scrolling on a mouse, swiping with two fingers on a touchpad, or by using the pager dots at the bottom. You can also use the view switcher at the top to switch between showing your apps in a grid or a categorized list.
 
-![Applications Menu](../images/docs/learning-the-basics/applications-menu.png)
+![Applications Menu](../_images/docs/learning-the-basics/applications-menu.png)
 
 Start typing in the Applications Menu to search your apps by name or by keyword. Searching will also display app actions and System Settings. For example, by searching you can:
 
@@ -56,7 +56,7 @@ Hovering an indicator with the mouse cursor also displays quick information and 
 
 At the bottom of the desktop is the Dock for quick access to your favorite and currently-opened apps.
 
-![Dock](../images/docs/learning-the-basics/dock.png)
+![Dock](../_images/docs/learning-the-basics/dock.png)
 
 To add an app to the Dock, drag and drop it from the Applications Menu or secondary-click an open app's icon and choose **Keep in Dock**. To remove an app from the Dock, drag it off and drop it in an empty space on your desktop or secondary-click the icon and uncheck **Keep in Dock**. Drag and drop apps on the Dock to rearrange them.
 
@@ -74,7 +74,7 @@ Most apps have a Header Bar at the top of their window with the Window Buttons a
 
 Move a window by dragging anywhere on the Header Bar or by pressing <kbd>Alt</kbd><kbd>F7</kbd> and moving your mouse cursor.
 
-![HeaderBar](../images/docs/learning-the-basics/headerbar.png)
+![HeaderBar](../_images/docs/learning-the-basics/headerbar.png)
 
 Secondary-click the Header Bar for quick access to window and workspace actions.
 
@@ -104,7 +104,7 @@ App windows can overlap on your desktop and be moved around. You can switch betw
 
 By default, app windows open on your current workspace. However, you can use multiple workspaces to organize your workflow:
 
-![Workspaces](../images/docs/learning-the-basics/workspaces.gif)
+![Workspaces](../_images/docs/learning-the-basics/workspaces.gif)
 
 To move left or right through your workspaces, press <kbd title="Super, or the Windows or Command key">⌘</kbd><kbd>←</kbd> or <kbd title="Super, or the Windows or Command key">⌘</kbd><kbd>→</kbd> or swipe with three fingers on a touchpad or touch screen.
 
@@ -118,7 +118,7 @@ Some windows may also fullscreen onto a new workspace. You can move between work
 
 ### Multitasking View {#multitasking-view}
 
-![Multitasking View](../images/docs/learning-the-basics/multitasking-view.png)
+![Multitasking View](../_images/docs/learning-the-basics/multitasking-view.png)
 
 The Multitasking View shows all open windows and workspaces so you can switch between them. To open it, select the **Multitasking View** icon in the dock, press <kbd title="Super, or the Windows or Command key">⌘</kbd><kbd>↓</kbd>, or swipe up with three fingers on a touchpad or touch screen.
 
@@ -160,7 +160,7 @@ AppCenter includes updates for apps and the operating system itself under the **
 
 elementary OS comes with the **System Settings** app that helps you manage device settings and user preferences. System Settings enables you to adjust keyboard shortcuts, display resolution, your wallpaper, and more.
 
-![System Settings](../images/docs/learning-the-basics/switchboard.png)
+![System Settings](../_images/docs/learning-the-basics/switchboard.png)
 
 ### Search {#search}
 
@@ -176,6 +176,6 @@ Keyboard shortcuts in elementary OS are generally exposed contextually in toolti
 
 To view an overlay of desktop keyboard shortcuts, press the <kbd title="Super, or the Windows or Command key">⌘</kbd> key.
 
-![Keyboard Shortcuts](../images/docs/learning-the-basics/shortcut-overlay.png)
+![Keyboard Shortcuts](../_images/docs/learning-the-basics/shortcut-overlay.png)
 
 Desktop keyboard shorcuts can be customized from the <i class="fa fa-cog"></i> menu in the shortcuts overlay or in **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts**.
