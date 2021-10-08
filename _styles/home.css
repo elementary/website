@@ -248,6 +248,10 @@ input:focus + .focus-reveal {
   color: inherit;
 }
 
+#showcase #showcase-grid a:focus {
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
 /********************
 * showcase programs *
 ********************/
@@ -294,6 +298,10 @@ input:focus + .focus-reveal {
   position: absolute;
   top: 0;
   width: 64px;
+}
+
+#showcase.initialized > div.showcase-tab > .showcase-back:focus {
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 #showcase.initialized {

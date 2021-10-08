@@ -108,11 +108,14 @@ export default class Showcase {
         for (var i = 0; i < this.slides.length; i++) {
             var n = this.slides[i]
             var $n = $('#' + n, this.container) // current iterated slide
+            var $back = $n.find('.showcase-back')
 
             if (n === rSlide) { // if correct slide
                 $n.addClass('active')
+                if ($back.length) $back.attr('tabindex', 0)
             } else {
                 $n.removeClass('active')
+                if ($back.length) $back.removeAttr('tabindex')
             }
         }
 

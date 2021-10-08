@@ -32,6 +32,13 @@ jQuery.then(($) => {
             showcase.slideTo('index')
         })
 
+        $('#showcase .showcase-tab .showcase-back').on('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault()
+                showcase.slideTo('index')
+            }
+        })
+
         console.log('Loaded showcase.run.js')
     })
 })
