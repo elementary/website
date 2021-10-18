@@ -1,9 +1,9 @@
 {
     "Learning the Basics": "Temel Bilgileri Öğrenin",
     "Learn about the elementary OS desktop and how to navigate windows, workspaces, and more.": "",
-    "Desktop": "",
+    "Desktop": "Masaüstü",
     "The elementary OS desktop consists of two elements: the Panel and the Dock. You can customize the desktop wallpaper by secondary-clicking the desktop—right click on a mouse, or two-finger tap on a touchpad. You can also change the desktop's look and behavior from <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Desktop</strong>.": "",
-    "Panel": "",
+    "Panel": "Panel",
     "At the top of the desktop is the Panel. On the left is the Applications Menu, in the center are the date and time, and on the right are the System Indicators.": "",
     "Applications Menu": "Uygulamalar Menüsü",
     "Date &amp; Time": "",
