@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright &copy; 2016-2017 elementary LLC.
+Copyright &copy; 2016–2021 elementary, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
