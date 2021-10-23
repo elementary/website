@@ -87,10 +87,10 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "Pamiętaj, że ustawienia systemu zarządzają tylko ustawieniami i preferencjami na poziomie systemowym elementary OS. Jeśli aplikacja oferuje swoje ustawienia lub preferencje możesz je znaleźć wewnątrz tej aplikacji.",
     "Keyboard Shortcuts": "Skróty klawiszowe",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "Skróty klawiszowe w elementary OS są zwykle eksponowane kontekstowo w tooltipach podczas najechania lub w menu kontekstowych po kliknięciu drugim przyciskiem myszy.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "",
-    "Desktop keyboard shorcuts can be customized from the": "",
-    "menu in the shortcuts overlay or in": "",
-    "→": "",
-    "Keyboard": "",
-    "Shortcuts": ""
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "Aby zobaczyć podgląd skrótów klawiszowych pulpitu naciśnij <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.",
+    "Desktop keyboard shorcuts can be customized from the": "Skróty klawiszowe pulpitu można dostosować w",
+    "menu in the shortcuts overlay or in": "menu lub w podglądzie skrótów w",
+    "→": "→",
+    "Keyboard": "Klawiatura",
+    "Shortcuts": "Skróty klawiszowe"
 }
