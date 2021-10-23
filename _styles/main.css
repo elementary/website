@@ -209,6 +209,8 @@ img.inline + div.inline {
 
 .read-more::after {
   color: inherit;
+
+  /* Encoded `→`, see: https://github.com/elementary/website/issues/2851 */
   content: "\2192";
   display: inline-block;
   font-style: normal;
