@@ -14,7 +14,7 @@
     "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS automaticky upratuje dočasné súbory a kôš. Nielen tak udržuje úložisko vášho zariadenia čisté, ale aj zaistí, že vám zabudnuté osobné údaje nebudú v budúcnosti spôsobovať problémy.",
     "Online Accounts": "Online účty",
     "elementary OS optionally integrates with online accounts such as email and calendar providers via System Settings. Data from these providers may be retrieved by your copy of elementary OS and stored locally on your device to be displayed in locally-installed apps such as Mail, Calendar, and Tasks. <strong>This data is not sent to elementary or shared with any third party.</strong>": "",
-    "What Data is Collected": "Aké dáta sú zbierané",
+    "What Data is Collected": "Aké dáta sú zhromažďované",
     "If you choose to add an online account, your copy of elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device. <strong>elementary does not collect any of this data.</strong>": "",
     "How Data is Used": "Ako sú dáta používané",
     "<strong>Your data is stored locally on your device and never sent to elementary servers or any third parties.</strong> It is used to populate your locally-installed apps such as Mail, Calendar, Tasks, Files, and Photos with your data so you can access it.": "",
