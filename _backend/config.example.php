@@ -1,14 +1,15 @@
 <?php
 
-// Example of config file, add your own values here, all are imaginary
+// Example of config file, add your own values.
+// Config will fall back to what is present here.
 
 return array(
   'release_title'    => 'Odin',
   'release_version'  => '6',
-  'release_filename' => 'elementaryos-6.0-stable.20211005.iso',
-  'release_size'     => '2.37 GB',
-  'release_magnet'   => '8de6cffcf38e9f3ee643c33c7db180b5c5b89eb4',
-  'release_sha256'   => '2447bbf98d406788a2b1a75db2062c7548954759e3e032e5c468f2bec172bbb0',
+  'release_filename' => 'elementaryos-6.0-stable.20211103.iso',
+  'release_size'     => '2.39 GB',
+  'release_magnet'   => '0539d48ed49200d6cf50f2b5f397a3a8f0d779b1',
+  'release_sha256'   => 'cf9c3ad03277ce93d8c089454c32316b0de464efda911833572cff62b4e7105a',
   'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
 
   'previous_title'    => 'Hera',
