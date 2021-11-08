@@ -8,7 +8,7 @@ return array(
   'release_version'  => '6',
   'release_filename' => 'elementaryos-6.0-stable.20211103.iso',
   'release_size'     => '2.39 GB',
-  'release_magnet'   => '8de6cffcf38e9f3ee643c33c7db180b5c5b89eb4',
+  'release_magnet'   => '0539d48ed49200d6cf50f2b5f397a3a8f0d779b1',
   'release_sha256'   => 'cf9c3ad03277ce93d8c089454c32316b0de464efda911833572cff62b4e7105a',
   'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
 
