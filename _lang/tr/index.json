@@ -6,8 +6,8 @@
     "Custom": "Miktarı belirleyin",
     "Enter any dollar amount.": "Miktarı dolar cinsinden yazın.",
     "Purchase elementary OS": "elementary OS'u satın al",
-    "Recommended System Specs": "",
-    "FAQ": "",
+    "Recommended System Specs": "Önerilen Sistem Özellikleri",
+    "FAQ": "SSS",
     "Visa": "Visa",
     "Mastercard": "Mastercard",
     "Discover": "Discover",
@@ -132,5 +132,5 @@
     "Close": "Kapat",
     "Download": "İndir",
     "Torrent Magnet Link": "Torrent Magnet Bağlantısı",
-    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": ""
+    "The thoughtful, capable, and ethical replacement for Windows and macOS &sdot; elementary OS": "İncelikli, yetenekli ve etik olarak tasarlanmış Windows ve macOS alternatifi &sdot; elementary OS"
 }
