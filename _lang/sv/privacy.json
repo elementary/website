@@ -1,9 +1,9 @@
 {
-    "Privacy": "",
+    "Privacy": "Integritet",
     "Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.": "",
     "We actively protect your data from ourselves and others by not collecting it. We believe respecting and protecting your privacy is the ethical thing to do; <strong>people have a fundamental right to the utmost privacy, even from companies and products they trust.</strong>": "",
     "elementary OS": "elementary OS",
-    "<strong>We do not collect any data from elementary OS.</strong> Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "",
+    "<strong>We do not collect any data from elementary OS.</strong> Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "<strong>Vi samlar inte in någon data i elementary OS.</strong> Dina filer, inställningar, och all annan personlig information stannar på enheten så länge du inte medvetet delar dom med ett tredjeparts-program eller -tjänst.",
     "Protections": "",
     "elementary OS comes with built-in privacy protections to help protect your data from others.": "",
     "Tattle-tale": "",
