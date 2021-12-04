@@ -31,8 +31,7 @@
       </div>
 
       <div class="section__showcase">
-        <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-        <img src="images/screenshots/desktop.jpg" alt="elementary OS 6 Odin desktop" />
+        <img class="bg" src="images/home/hero.png" alt="Star Labs StarBook Mk V with elementary OS" />
       </div>
 
       <div class="section__detail grid">
