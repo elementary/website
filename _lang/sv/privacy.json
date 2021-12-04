@@ -12,7 +12,7 @@
     "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "",
     "Housekeeping": "",
     "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "",
-    "Online Accounts": "Onlinekonton",
+    "Online Accounts": "Online-konton",
     "elementary OS optionally integrates with online accounts such as email and calendar providers via System Settings. Data from these providers may be retrieved by your copy of elementary OS and stored locally on your device to be displayed in locally-installed apps such as Mail, Calendar, and Tasks. <strong>This data is not sent to elementary or shared with any third party.</strong>": "",
     "What Data is Collected": "Vilken data samlas in",
     "If you choose to add an online account, your copy of elementary OS may collect and store your name, email address, avatar, email messages, calendar events, contacts, photos, and files from your connected accounts locally on your device. <strong>elementary does not collect any of this data.</strong>": "",
