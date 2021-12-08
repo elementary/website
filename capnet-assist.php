@@ -2,7 +2,7 @@
     require_once __DIR__.'/_backend/preload.php';
 
     $page['name'] = 'capnet-assist';
-    $page['title'] = 'You\'re connected! &sdot; elementary';
+    $page['title'] = 'You’re connected! &sdot; elementary';
 
     $page['styles'] = array(
         'styles/capnet-assist.css'
