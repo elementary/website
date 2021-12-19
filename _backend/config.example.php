@@ -12,11 +12,11 @@ return array(
   'release_sha256'   => '35c8086bc0af8ccc5ef8629225b215b1742b3a90b475f9f47723b18a315d86a7',
   'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
 
-  'previous_title'    => 'Odin',
-  'previous_version'  => '6',
-  'previous_filename' => 'elementaryos-6.0-stable.20211130.iso',
-  'previous_size'     => '2.43 GB',
-  'previous_magnet'   => '8b4465598bf74545e5470ac61d1c03594278e894',
+  'previous_title'    => 'Hera',
+  'previous_version'  => '5.1.7',
+  'previous_filename' => 'elementaryos-5.1-stable.20200814.iso',
+  'previous_size'     => '1.49 GB',
+  'previous_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
 
   'chart_enable'         => false,
   'chart_link_project'   => 'elementary',
