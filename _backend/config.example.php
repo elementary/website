@@ -7,7 +7,7 @@ return array(
   'release_title'    => 'Jólnir',
   'release_version'  => '6.1',
   'release_filename' => 'elementaryos-6.1-stable.20211218-rc.iso',
-  'release_size'     => '2.7 GB',
+  'release_size'     => '2.47 GB',
   'release_magnet'   => '79c043454fc643b05aea16de848e5dce6eb8c9d9',
   'release_sha256'   => '35c8086bc0af8ccc5ef8629225b215b1742b3a90b475f9f47723b18a315d86a7',
   'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
