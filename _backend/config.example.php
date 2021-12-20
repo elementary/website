@@ -4,13 +4,13 @@
 // Config will fall back to what is present here.
 
 return array(
-  'release_title'    => 'Odin',
-  'release_version'  => '6',
-  'release_filename' => 'elementaryos-6.0-stable.20211130.iso',
-  'release_size'     => '2.43 GB',
-  'release_magnet'   => '8b4465598bf74545e5470ac61d1c03594278e894',
-  'release_sha256'   => '40d79fce584f388cd08ed2c006324cd44e7a16649b994a3d9f5c18f696084678',
-  'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6-Odin-FAQ',
+  'release_title'    => 'Jólnir',
+  'release_version'  => '6.1',
+  'release_filename' => 'elementaryos-6.1-stable.20211218-rc.iso',
+  'release_size'     => '2.47 GB',
+  'release_magnet'   => '79c043454fc643b05aea16de848e5dce6eb8c9d9',
+  'release_sha256'   => '35c8086bc0af8ccc5ef8629225b215b1742b3a90b475f9f47723b18a315d86a7',
+  'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6.1-Jólnir-FAQ',
 
   'previous_title'    => 'Hera',
   'previous_version'  => '5.1.7',
