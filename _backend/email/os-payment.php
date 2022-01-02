@@ -8,17 +8,18 @@
 require_once __DIR__ . '/../../_backend/preload.php';
 require_once __DIR__ . '/../../_backend/config.loader.php';
 
-$mandrill = new Mandrill($config['mandrill_key']);
+$mailchimp = new MailchimpTransactional\ApiClient();
+$mailchimp->setApiKey($config['mailchimp_key']);
 
 /**
  * email_os_payment
  * Emails an OS receipt from given stripe charge
  *
  * @param {\Stripe\Charge} $charge - Stripe charge used for payment
- * @return {Array} - Mandrill response
+ * @return {Array} - Mailchimp response
  */
 function email_os_payment (\Stripe\Charge $charge) {
-    global $mandrill;
+    global $mailchimp;
 
     if (!isset($charge) || !isset($charge['metadata'])) {
         throw new Exception('Unable to read charge metadata');
@@ -81,7 +82,11 @@ function email_os_payment (\Stripe\Charge $charge) {
         'merge_language' => 'handlebars'
     );
 
-    $res = $mandrill->messages->sendTemplate('os-purchase', $req, $message);
+    $res = $mailchimp->messages->sendTemplate([
+	"template_name" => "os-purchase",
+        "template_content" => $req,
+        "message" => $message
+    ]);
 
     foreach ($res as $mail) {
         if (isset($mail['reject_reason']) && $mail['reject_reason'] !== '') {
