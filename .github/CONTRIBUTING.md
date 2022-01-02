@@ -22,7 +22,7 @@ For a simple local development environment running on PHP, you will need:
 
 First, install Node.js (12.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). 
 
-_If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codenamr to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
+_If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
 The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
 
