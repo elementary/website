@@ -6,7 +6,7 @@
     "<strong>We do not collect any data from elementary OS.</strong> Your files, settings, and all other personal data remain on-device unless you explicitly share them with a third-party app or service.": "<strong>Kami tidak mengumpulkan data apa pun dari elementary OS.</strong> Berkas Anda, pengaturan, dan semua data pribadi lainnya tetap ada di perangkat kecuali Anda secara eksplisit membagikannya dengan aplikasi atau layanan pihak ketiga.",
     "Protections": "Perlindungan",
     "elementary OS comes with built-in privacy protections to help protect your data from others.": "elementary OS dilengkapi dengan perlindungan privasi bawaan untuk membantu melindungi data Anda dari orang lain.",
-    "Tattle-tale": "",
+    "Tattle-tale": "Pengadu",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS membantu Anda mengawasi aplikasi apa yang sedang dikerjakan. Saat aplikasi menggunakan mikrofon Anda, kami menampilkan indikator untuk memberi tahu Anda. Saat sebuah aplikasi menggunakan banyak baterai, kami memberi tahu Anda di indikator daya Anda.",
     "Permissions": "Izin",
     "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "Ketika sebuah aplikasi menginginkan akses ke data atau perangkat Anda, aplikasi harus bertanya di depan. Kami meninjau semua aplikasi AppCenter untuk memastikan mereka menggunakan izin dengan benar—dan Anda selalu dapat mencabutnya sendiri di Pengaturan Sistem.",
@@ -32,6 +32,6 @@
     "Manage Cookies": "Kelola Cookie",
     "As you have already visited our site, you may wish to manage cookies already set in your browser. Links to the relevant instructions can be found below.": "Karena Anda telah mengunjungi situs kami, Anda mungkin ingin mengelola kuki yang sudah disetel di peramban Anda. Tautan ke instruksi yang relevan dapat ditemukan di bawah.",
     "Transparency": "Keterbukaan",
-    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Kami tidak menempatkan pintu belakang apa pun ke dalam perangkat lunak kami dan tidak menerima permintaan apa pun untuk melakukannya. Kami juga tidak pernah menerima Surat Keamanan Nasional, perintah FISA, atau permintaan rahasia lainnya untuk informasi pengguna.",
-    "Privacy &sdot; elementary": ""
+    "We have not placed any backdoors into our software and have not received any requests for doing so. We have also never received a National Security Letter, FISA order, or any other classified request for user information.": "Kami tidak menempatkan backdoors apa pun ke dalam perangkat lunak kami dan tidak menerima permintaan apa pun untuk melakukannya. Kami juga tidak pernah menerima Surat Keamanan Nasional, perintah FISA, atau permintaan rahasia lainnya untuk informasi pengguna.",
+    "Privacy &sdot; elementary": "Privasi &sdot; elementary"
 }
