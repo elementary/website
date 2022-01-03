@@ -2,7 +2,7 @@
     "You're connected!": "Anda terhubung!",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Koneksi internet Anda nampaknya bekerja. Anda dapat menutup jendela ini dan lanjut menggunakan perangkat Anda.",
     "Why is this window appearing?": "Kenapa jendela ini muncul?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Elementary OS secara otomatis memeriksa koneksi Internet Anda ketika Anda terhubung ke jaringan Wi-Fi baru. Jika mendeteksi tidak ada koneksi Internet (yaitu jika Anda terhubung ke portal tawanan di kedai kopi atau lokasi publik lainnya), jendela ini akan muncul dan menampilkan halaman login.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Beberapa jaringan dapat muncul seperti captive portal, memunculkan jendela ini, kemudian mengakhiri sambungan. Dalam kasus tersebut, Anda akan melihat pesan ini dan dapat menutup jendela dengan aman.",
     "You're connected! &sdot; elementary": "Anda terhubung! &sdot; elementary"
 }
