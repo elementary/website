@@ -99,7 +99,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 6.1 Jólnir</h2>
-          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses your feedback, gets stuff done around the office, and expands compatibility with a wide range of hadware</p>
+          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses your feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware</p>
           <a href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
