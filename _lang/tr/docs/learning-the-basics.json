@@ -74,7 +74,7 @@
     "Open <strong>AppCenter</strong>": "",
     "Search in the top-right, or browse by category": "",
     "Select <strong>Free</strong> or the suggested price next to the app you want to install. To choose a different price, select the <strong>▾</strong> button and select or enter your own price.": "",
-    "Sideload": "",
+    "Sideload": "Dışarıdan Yükleme",
     "Some third-party software may not be available from AppCenter, especially if it is cross-platform and not designed for elementary OS. You can sideload Flatpak apps from third-party sources like <a href=\"https://flathub.org\">Flathub</a>: download and open a <code>.flatpakref</code> or <code>.flatpak</code> file, and the Sideload utility will install it for you. Updates to that app and other apps from the same source may then show up as non-curated in AppCenter.": "",
     "Keep in mind that sideloaded and non-curated apps have not been reviewed by elementary for security or privacy.": "",
     "Updating": "Güncelleme",

@@ -93,7 +93,6 @@ if (isset($_POST['token'])) {
         echo 'Unable to send receipt email';
     }
 
-    require_once __DIR__.'/../_backend/average-payments.php';
 } else {
     echo $config['stripe_pk'];
 }

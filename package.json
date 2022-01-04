@@ -7,7 +7,7 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
-    "core-js": "^3.19.1",
+    "core-js": "^3.20.1",
     "glob": "^7.2.0",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
@@ -28,7 +28,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "jpegtran-bin": "^6.0.1",
     "optipng-bin": "^8.1.0",
-    "stylelint": "^14.1.0"
+    "stylelint": "^14.2.0"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
