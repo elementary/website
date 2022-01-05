@@ -1,8 +1,8 @@
 {
-    "You’re connected!": "",
+    "You’re connected!": "Вы подключены!",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Интернет-соединение установлено. Вы можете без опасений закрыть окно и продолжить пользоваться устройством.",
     "Why is this window appearing?": "Почему появляется это окно?",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS автоматически проверяет ваше соединение с Интернетом при подключении к новой сети Wi-Fi. Если будет обнаружено, что соединение с Интернетом отсутствует (то есть, если вы при подключении к порталу, который находится в кафе, или в другом общественном месте), появится это окно и покажет страницу входа.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Некоторые сети могут требовать авторизации через сайт, вызывая данное окно, при этом уже закончив присоединение. В этом случае вы увидите сообщение об этом и появившееся окно может быть закрыто.",
-    "You’re connected! &sdot; elementary": ""
+    "You’re connected! &sdot; elementary": "Вы подключены! &sdot; elementary"
 }
