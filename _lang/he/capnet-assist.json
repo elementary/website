@@ -1,8 +1,8 @@
 {
-    "You’re connected!": "",
+    "You’re connected!": "התחברת!",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "נראה שהחיבור שלך לאינטרנט עובד. ניתן לסגור את החלון הזה ולהמשיך להשתמש במכשיר שלך.",
     "Why is this window appearing?": "מדוע החלון הזה מופיע?",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "מערכת elementary OS בודקת את החיבור שלך לאינטרנט אוטומטית בעת התחברות לרשת אלחוטית חדשה. אם היא מזהה שאין חיבור לאינטרנט (למשל: התחברת לרשת עם מסך הגבלת כניסה בבית קפה או במיקום ציבורי אחר), החלון הזה יופיע ויציג את דף הכניסה.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "כמה רשתות עלולות תחילה להיראות כרשתות הדורשות כניסה ובכך לגרום לחלון זה להופיע, אך בסופו של דבר הן מתחברות. במקרים כאלו, החלון הזה יוצג אבל ניתן לסגור אותו בבטחה.",
-    "You’re connected! &sdot; elementary": ""
+    "You’re connected! &sdot; elementary": "התחברת! ‏&sdot;‏ elementary"
 }
