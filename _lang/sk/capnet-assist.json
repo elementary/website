@@ -1,8 +1,8 @@
 {
-    "You're connected!": "Ste pripojený!",
+    "You’re connected!": "",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Vaše internetové pripojenie vyzerá byť v poriadku. Môžete bezpečne zavrieť toto okno a pokračovať v používaní vášho zariadenia.",
     "Why is this window appearing?": "Prečo sa objavuje toto okno?",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS automaticky kontroluje vaše internetové pripojenie, keď sa pripájate k novej Wi-Fi sieti. Ak detekuje chýbajúce internetové pripojenie (napr. ak sa pripájate k záchytnému portálu v kaviarni alebo na inom verejnom mieste), objaví sa toto okno a zobrazí prihlasovaciu obrazovku.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Niektoré siete môžu na prvý pohľad vyžadovať príhlasenie cez vstupnú stránku, spúštajúc toto okno, ale časom umožnia pripojenie. V týchto prípadoch uvidíte túto správu a môžete bezpečne zavrieť okno.",
-    "You're connected! &sdot; elementary": "Ste pripojený! &sdot; elementary"
+    "You’re connected! &sdot; elementary": ""
 }
