@@ -15,7 +15,7 @@
     "If you don't want to translate using Weblate, or want to make a lot a changes at once, you can also translate offline. To do so:": "Jika Anda tidak ingin menerjemahkan menggunakan Weblate, atau ingin membuat banyak perubahan sekaligus, Anda juga dapat menerjemahkan secara offline. Untuk melakukannya:",
     "Go to a project you want to translate": "Buka proyek yang ingin Anda terjemahkan",
     "Choose your language": "Pilih bahasa Anda",
-    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "",
+    "Click on &quot;Files&quot; and then select &quot;Download translation as gettext PO&quot;": "Klik &quot;File &quot; dan kemudian pilih &quot;Unduh terjemahan sebagai gettext PO &quot;",
     "Choose your favorite text-, code- or PO-editor (e.g. <a href=\"https://poedit.net/\">Poedit</a>)": "",
     "Start translating": "Mulai menerjemahkan",
     "Once you've finished, use the &quot;Upload translation&quot; option in the &quot;Files&quot; menu on the same page you downloaded them from.": "",
