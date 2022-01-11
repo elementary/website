@@ -2,7 +2,7 @@
     "Translation Guide": "Návod jak překládat",
     "Localizing our website and apps is a very important part of making elementary OS available to as many people as possible. Instead of relying solely on an internal translation team, we use crowdsourcing so that anyone can submit translations with little to no technical knowledge. In order to keep our voice consistent across the entire platform, and to help new translators get started, we’ve put together this translation guide.": "Lokalizace našeho webu a aplikací je velmi důležitá součást toho, aby elementary OS bylo dostupné co možná nejvíce lidem. Místo toho abychom se spoléhali jen na náš interní tým překladatelů, používáme crowdsourcing, takže kdokoliv může překládat i bez velkých technických znalostí. Aby náš hlas byl konzistentní napříč celou platformou a pomohli jsme novým překladatelům začít, vznikla tato příručka.",
     "Steps to Begin Translation": "Jak začít překládat",
-    "Our apps and website are translated through Weblate: A libre web-based translation management system. In order to submit translations, you should:": "Naše aplikace a webové stránky jsou překládány prostřednictvím Weblate: svobodného, webového systému pro správu překladů. Pro přispění překlady byste měli:",
+    "Our apps and website are translated through Weblate: A libre web-based translation management system. In order to submit translations, you should:": "Naše aplikace a webové stránky jsou překládány prostřednictvím Weblate: svobodného, webového systému pro správu překladů. Pokud chcete posílat překlady, měli byste:",
     "Have a": "Mít",
     "Weblate account": "účet na naší instanci Weblate",
     "Set your": "Nastavit si",
