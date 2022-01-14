@@ -38,7 +38,7 @@
     "Report a Website Issue": "Ilmoita verkkosivustoa koskevasta ongelmasta",
     "Fork the Website on GitHub": "Haarauta sivusto GitHubissa",
     "Desktop Development": "Työpöydän kehitys",
-    "Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Developer guide.": "",
+    "Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Developer guide.": "Työpöytäympäristömme ja kaikki sen sovellukset on toteutettu käyttäen Valaa, GTK:ta, Granitea ja lukuisia muita avoimia kirjastoja. Kaikki koodimme on GitHubissa, missä myös kehitys tapahtuu. Jos et ole koskaan aiemmin kehittänyt elementary OS:lle, suosittelemme tutustumaan kehittäjän oppaaseen.",
     "Developer Guide": "Kehittäjän opas",
     "Browse Code": "Selaa koodia",
     "Report issues": "Ilmoita ongelmista",
