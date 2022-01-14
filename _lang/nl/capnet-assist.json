@@ -2,7 +2,7 @@
     "You’re connected!": "",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Je internetverbinding lijkt te werken. Je kunt dit venster nu sluiten en je apparaat blijven gebruiken.",
     "Why is this window appearing?": "Waarom verschijnt dit venster?",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS controleert automatisch uw internetverbinding wanneer u verbinding maakt met een nieuw Wi-Fi-netwerk. Als het detecteert dat er geen internetverbinding is (d.w.z. als u verbinding maakt met een captive portal in een coffeeshop of een andere openbare locatie), wordt dit venster weergegeven en wordt de inlogpagina weergegeven.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Sommige netwerken lijken een portaalscherm te hebben, waardoor dit venster getoond wordt, maar verbinden dan toch automatisch. In deze gevallen ziet u dit bericht en kunt u dit venster sluiten.",
     "You’re connected! &sdot; elementary": ""
 }
