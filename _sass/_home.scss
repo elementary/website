@@ -1,0 +1,83 @@
+body.home {
+  %swiss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-width);
+  }
+
+  %learn-more {
+    text-decoration: none;
+
+    &::after {
+      content: "→";
+      display: inline-block;
+      padding-left: 0.125em;
+      transition: padding-left 200ms ease;
+    }
+
+    &:hover {
+      text-decoration: underline;
+
+      &::after {
+        padding-left: 0.25em;
+      }
+    }
+  }
+
+  p,
+  a,
+  li {
+    line-height: 1.4em;
+  }
+
+  h1,
+  h2 {
+    @extend %swiss;
+    font-size: 2rem;
+    font-weight: 900;
+
+    + p {
+      @extend %swiss;
+
+      + a {
+        @extend %swiss;
+        @extend %learn-more;
+      }
+    }
+  }
+
+  ul.callouts {
+    @extend %swiss;
+
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+
+      &:not(:last-child)::after {
+        content: "|";
+        display: inline-block;
+        padding: 0 0.5em;
+      }
+    }
+  }
+
+  section.detail {
+    @extend %swiss;
+
+    display: inline-block;
+    max-width: 33%;
+    padding: 0 0.5em;
+
+    p + a {
+      @extend %learn-more;
+    }
+  }
+}
