@@ -1,0 +1,97 @@
+body > header {
+  background-color: var(--header-bg-color);
+  color: var(--header-fg-color);
+  fill: var(--header-fg-color);
+
+  nav {
+    display: flex;
+    font-size: 0;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 0 1rem;
+
+    ul {
+      display: inline-block;
+      flex: 0 0 auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      vertical-align: middle;
+    }
+
+    a {
+      color: var(--header-fg-color);
+      display: inline-block;
+      font-family: var(--ui-font);
+      font-size: 0.85rem;
+      line-height: 2.9em;
+      opacity: 1;
+      padding: 0 0.65rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    svg {
+      height: 1em;
+
+      * {
+        fill: inherit !important;
+      }
+    }
+
+    .logomark {
+      line-height: 0;
+
+      svg {
+        height: auto;
+      }
+    }
+
+    .button {
+      border: 2px solid var(--header-fg-color);
+      box-shadow: none;
+      font-weight: bold;
+      line-height: calc(2em - 4px);
+      margin: 0.45em;
+      padding: 0 0.67em;
+
+      &.suggested {
+        background: var(--header-fg-color);
+        box-shadow: none;
+        color: var(--header-bg-color);
+      }
+    }
+  }
+
+  .secondary {
+    background-color: var(--secondary-bg-color);
+    flex-wrap: wrap;
+    padding: 0.25rem 1rem;
+
+    a {
+      color: var(--secondary-fg-color);
+      font-size: 0.7rem;
+    }
+
+    #search-container {
+      align-self: center;
+      margin: 0.25em 0;
+    }
+
+    svg {
+      height: 16px;
+      fill: var(--secondary-fg-color);
+      margin: 0.4rem 0.3rem;
+      position: absolute;
+    }
+  }
+}
+

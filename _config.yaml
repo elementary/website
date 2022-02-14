@@ -1,0 +1,24 @@
+title: "elementary OS"
+description: "The thoughtful, capable, and ethical replacement for Windows and macOS"
+permalink: /:title/
+theme-color: "#64baff"
+gravatar: eaa3cc978770998ea2bd4382935bf0f4
+
+facebook: elementaryos
+mastodon: elementary
+reddit: elementaryos
+twitter: elementary
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+future: false # Allows us to stage posts
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]

@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: gitsubmodule
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - lewisgoddard
+  - btkostner
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - lewisgoddard
+  - btkostner
+- package-ecosystem: composer
+  directory: "/_backend"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - lewisgoddard
+  - btkostner

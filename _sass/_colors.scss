@@ -1,0 +1,94 @@
+:root {
+  --strawberry-100: #ff8c82;
+  --strawberry-300: #ed5353;
+  --strawberry-500: #c6262e;
+  --strawberry-700: #a10705;
+  --strawberry-900: #7a0000;
+
+  --orange-100: #ffc27d;
+  --orange-300: #ffa154;
+  --orange-500: #f37329;
+  --orange-700: #cc3b02;
+  --orange-900: #a62100;
+
+  --banana-100: #fff394;
+  --banana-300: #ffe16b;
+  --banana-500: #f9c440;
+  --banana-700: #d48e15;
+  --banana-900: #ad5f00;
+
+  --lime-100: #d1ff82;
+  --lime-300: #9bdb4d;
+  --lime-500: #68b723;
+  --lime-700: #3a9104;
+  --lime-900: #206b00;
+
+  --blueberry-100: #8cd5ff;
+  --blueberry-300: #64baff;
+  --blueberry-500: #3689e6;
+  --blueberry-700: #0d52bf;
+  --blueberry-900: #002e99;
+
+  --grape-100: #e4c6fa;
+  --grape-300: #cd9ef7;
+  --grape-500: #a56de2;
+  --grape-700: #7239b3;
+  --grape-900: #452981;
+
+  --cocoa-100: #a3907c;
+  --cocoa-300: #8a715e;
+  --cocoa-500: #715344;
+  --cocoa-700: #57392d;
+  --cocoa-900: #3d211b;
+
+  --silver-100: #fafafa;
+  --silver-300: #d4d4d4;
+  --silver-500: #abacae;
+  --silver-700: #7e8087;
+  --silver-900: #555761;
+
+  --slate-100: #95a3ab;
+  --slate-300: #667885;
+  --slate-500: #485a6c;
+  --slate-700: #273445;
+  --slate-900: #0e141f;
+
+  --black-100: #666666;
+  --black-300: #4d4d4d;
+  --black-500: #333333;
+  --black-700: #1a1a1a;
+  --black-900: #000000;
+
+  --solarized-base01: #586e75;
+  --solarized-base02: #073642;
+  --solarized-base03: #002b36;
+  --solarized-base1: #93a1a1;
+  --solarized-base2: #eee8d5;
+  --solarized-base3: #fdf6e3;
+  --solarized-blue: #268bd2;
+  --solarized-cyan: #2aa198;
+  --solarized-green: #859900;
+  --solarized-orange: #cb4b16;
+  --solarized-red: #dc322f;
+  --solarized-yellow: #b58900;
+
+  --bg-color: white;
+  --fg-color: var(--black-500);
+  --accent-color: var(--blueberry-700);
+  --header-bg-color: var(--blueberry-300);
+  --header-fg-color: var(--silver-100);
+  --secondary-bg-color: #f5f5f5; // Instead of making up a Silver 200
+  --secondary-fg-color: var(--black-300);
+  --warning-bg-color: var(--banana-300);
+  --warning-fg-color: var(--black-900);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--black-700);
+    --fg-color: var(--silver-300);
+    --accent-color: var(--blueberry-300);
+    --secondary-bg-color: var(--black-500);
+    --secondary-fg-color: var(--silver-300);
+  }
+}

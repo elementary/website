@@ -1,0 +1,113 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import url('/fonts/inter.css');
+
+// Global
+@import "colors";
+@import "layout";
+@import "typography";
+
+// Components
+@import "buttons";
+@import "cards";
+@import "nav";
+
+:root {
+    color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  fill: var(--fg-color);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  // To blend with the footer on short pages
+  background-color: var(--secondary-bg-color);
+}
+
+svg {
+  fill: inherit;
+}
+
+.error {
+  max-width: 22rem;
+  margin: 8em auto;
+  text-align: center;
+
+  p {
+    font-family: var(--ui-font);
+  }
+}
+
+nav.pagination {
+  font-size: 0; // Fix percentage issues with whitespace
+  margin: 2rem auto;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: var(--ui-font);
+    padding: 1em;
+
+    &.next::after {
+      content: " →";
+    }
+
+    &.previous::before {
+      content: "← ";
+    }
+  }
+}
+
+.social {
+  font-size: 0; // Fix percentage issue with whitespace
+  margin: 4rem auto;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  div {
+    display: inline-block;
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0.75rem;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+pre {
+  -webkit-text-size-adjust: none;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,162 @@
+:root {
+  --ui-font: Inter, Helvetica, "Open Sans", "Noto Sans", "Roboto", sans-serif;
+  --copy-font: var(--ui-font);
+  --heading-font: var(--ui-font);
+}
+
+html {
+  font-family: var(--copy-font);
+  font-size: 5.625vw;
+  font-weight: 400;
+  word-spacing: -0.05em;
+
+  @media (min-width: 320px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media print {
+    font-size: 14px;
+  }
+}
+
+a {
+  color: var(--accent-color);
+  opacity: 0.8;
+  text-decoration-skip: ink;
+  transition: opacity 250ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+article {
+  line-height: 1.75em;
+
+  p,
+  ul,
+  ol {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  li {
+    padding-left: 0.25em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+h1 {
+  line-height: 1em;
+}
+
+h3,
+h4,
+h5 {
+  opacity: 0.8;
+}
+
+h6 {
+  opacity: 0.67;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+header h1 + h2 {
+  font-family: var(--ui-font);
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 0.25em;
+  opacity: 0.5;
+}
+
+header h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+header h2 + h3 {
+  font-family: var(--ui-font);
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+  opacity: 0.5;
+}
+
+blockquote {
+  max-width: var(--content-width);
+  margin-left: auto;
+  padding-left: 1em;
+  margin-right: auto;
+  font-style: italic;
+  border-left: 0.125em solid var(--accent-color);
+
+  em,
+  i {
+    font-style: normal;
+  }
+
+  aside & {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    border: none;
+    margin: 2em auto;
+    opacity: 0.8;
+    padding: 0 1em;
+  }
+
+  .attribution {
+    display: block;
+    font-size: 0.8em;
+    font-style: normal;
+    margin-top: -1.5em;
+
+    &:before {
+      content: "–";
+    }
+  }
+}
+
+aside {
+  margin-bottom: 2em;
+}
+
+kbd {
+  background-color: rgba(200, 200, 200, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  border-radius: 0.2em;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
+    inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  font-family: var(--ui-font);
+  font-size: 67%;
+  line-height: 1.5;
+  margin: 0 0.15em;
+  min-width: 1em;
+  padding: 0.125em 0.5em;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+}
+

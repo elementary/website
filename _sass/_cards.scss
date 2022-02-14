@@ -1,0 +1,30 @@
+%card-outer {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+%card-inner {
+  background-color: var(--silver-100);
+  border-radius: 0.25rem;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    0 3px 3px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--silver-900);
+  }
+}
+
+.card {
+  @extend %card-outer;
+
+  img,
+  video {
+    @extend %card-inner;
+  }
+}
+
+img.card {
+  @extend %card-inner;
+}
