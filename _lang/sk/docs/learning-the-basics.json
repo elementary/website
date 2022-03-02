@@ -1,9 +1,9 @@
 {
     "Learning the Basics": "Sprievodca základmi",
-    "Learn about the elementary OS desktop and how to navigate windows, workspaces, and more.": "",
-    "Desktop": "",
-    "The elementary OS desktop consists of two elements: the Panel and the Dock. You can customize the desktop wallpaper by secondary-clicking the desktop—right click on a mouse, or two-finger tap on a touchpad. You can also change the desktop's look and behavior from <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Desktop</strong>.": "",
-    "Panel": "",
+    "Learn about the elementary OS desktop and how to navigate windows, workspaces, and more.": "Zistite niečo o pracovnom prostredí elementary OS a naučte sa pohybovať medzi oknami, pracovnými plochami a ďalšie.",
+    "Desktop": "Pracovná plocha",
+    "The elementary OS desktop consists of two elements: the Panel and the Dock. You can customize the desktop wallpaper by secondary-clicking the desktop—right click on a mouse, or two-finger tap on a touchpad. You can also change the desktop's look and behavior from <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Desktop</strong>.": "Pracovné prostredie elementary OS sa skladá z dvoch prvkov: z Panelu a Doku. Tapetu plochy si môžete prispôsobiť sekundárnym kliknutím na ploche – pravým tlačidlom myši alebo klepnutím dvomi prstami na touchpade. Vzhľad a správanie prostredia môžete zmeniť tu: <strong><a href=\"#system-settings\">Nastavenia systému</a></strong> → <strong>Pracovná plocha</strong>.",
+    "Panel": "Panel",
     "At the top of the desktop is the Panel. On the left is the Applications Menu, in the center are the date and time, and on the right are the System Indicators.": "",
     "Applications Menu": "Menu s aplikáciami",
     "Date &amp; Time": "",
