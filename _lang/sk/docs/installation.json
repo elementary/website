@@ -15,7 +15,7 @@
     "You will also need a spare USB flash drive with at least 4 GB of storage for installation.": "",
     "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "",
     "Back Up Your Data": "Zálohujte si svoje dáta",
-    "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Uistite sa, že vaše dôležité dáta sú zálohované na oddelenom mieste, ako napr. cloudové úložisko alebo externý disk. Inštalovanie nového operačného systému môže prepísať vaše existujúce dáta.",
+    "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Zálohujte si dáta na bezpečné miesto ako cloud alebo externý disk. Inštalácia nového operačného systému môže vymazať vaše dáta.",
     "Step-by-step Guide": "",
     "Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.": "",
     "Windows": "Windows",
