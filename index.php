@@ -99,7 +99,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 6.1 Jólnir</h2>
-          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses your feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware</p>
+          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware.</p>
           <a href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
@@ -394,28 +394,30 @@
 
       <a class="button suggested-action" href="#">Pay What You Can</a>
     </section>
+
     <section class="grid" id="the-press">
       <div class="third">
         <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; –@WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; —@arstechnica https://elementary.io" data-tweet-suffix=" — @arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; –@arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; —@forbes https://elementary.io" data-tweet-suffix=" — @forbes https://elementary.io" target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; –@forbes https://elementary.io"  target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-        <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; —@MacLife https://elementary.io" data-tweet-suffix=" — @MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+        <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; –@MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; –@lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
       </div>
     </section>
+
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <div id="download-modal" class="dialog modal">
