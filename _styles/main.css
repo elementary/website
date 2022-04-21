@@ -1397,3 +1397,30 @@ i.fa.fa-close.close-modal {
     text-align: left;
   }
 }
+
+/***************************************
+* Press section on home and press page *
+***************************************/
+
+#the-press {
+  padding-bottom: 64px;
+}
+
+#the-press svg {
+  display: block;
+  height: 4em;
+  margin: 12px auto;
+}
+
+#the-press svg * {
+  fill: #555761;
+}
+
+#the-press svg:hover * {
+  fill: #3689e6;
+}
+
+#the-press svg:active {
+  position: relative;
+  top: 1px;
+}

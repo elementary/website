@@ -1,8 +1,8 @@
 {
-    "You're connected!": "Повезани сте!",
+    "You’re connected!": "",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Ваша интернет веза изгледа да ради. Можете без проблема да затворите овај прозор и да наставите да користите ваш уређај.",
     "Why is this window appearing?": "Зашто се појавио овај прозор?",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "елементари ОС аутоматски проверава вашу Интернет везу када се повезујете на нову бежичну мрежу. Ако открије да не постоји Интернет веза (тј. ако се повезујете са порталом у кафићу или на другом јавном месту), овај прозор ће се појавити и приказаће страницу за пријаву.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Може се испоставити да су неке мреже портали за потврђивање идентитета, које ће приказати овај прозор, а затим вас повезати. У тим случајевима, видећете ову поруку и након тога можете без проблема затворити прозор.",
-    "You're connected! &sdot; elementary": "Повезани сте! &sdot; елементари"
+    "You’re connected! &sdot; elementary": ""
 }
