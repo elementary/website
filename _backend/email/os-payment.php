@@ -83,7 +83,7 @@ function email_os_payment (\Stripe\Charge $charge) {
     );
 
     $res = $mailchimp->messages->sendTemplate([
-	"template_name" => "os-purchase",
+	      "template_name" => "os-purchase",
         "template_content" => $req,
         "message" => $message
     ]);
