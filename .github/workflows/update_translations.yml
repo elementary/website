@@ -6,8 +6,14 @@ on:
   schedule:
     - cron:  "0 0 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   update:
+    permissions:
+      contents: write  # for peter-evans/create-pull-request to create branch
+      pull-requests: write  # for peter-evans/create-pull-request to create a PR
     runs-on: ubuntu-latest
 
     steps:
