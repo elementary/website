@@ -1,9 +1,9 @@
 {
     "Installation": "Kurulum",
     "Download elementary OS": "elementary OS'i indir",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Eğer hala elementary OS'i indirmediyseniz, <a href=\"/\" target=\"_blank\" rel=\"noopener\">ana sayfamızdan indirebilirsiniz</a>. İndirdiğiniz ISO dosyasını bir USB sürücüye aşağıdaki açıklamalara göre kopyalamanız gerekir.",
     "Frequently-Asked Questions": "Sıkça Sorulan Sorular",
-    "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "",
+    "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Bu sürüm ile ilgili sıkça sorulan sorulara <a href=\"{#release_faq}\">buradan</a> ulaşabilirsiniz.",
     "Recommended System Specifications": "Önerilen Sistem Özellikleri",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "Güncel Intel i3 veya benzer özelliklerde çift çekirdekli 64 bit işlemci",
