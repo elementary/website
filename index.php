@@ -262,7 +262,7 @@
               <img src="images/icons/apps/64/system-file-manager.svg" alt="Files icon" />
               <div>
                 <h2>Files</h2>
-                <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
+                <p>With the smart path-bar, You can search for that important file in a matter of seconds, whether a proffesional, or a rookie. And no need to worry about clutter, with tabs!</p>
               </div>
             </div>
           </div>
