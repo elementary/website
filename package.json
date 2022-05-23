@@ -28,7 +28,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "jpegtran-bin": "^7.0.0",
     "optipng-bin": "^8.1.0",
-    "stylelint": "^14.8.2"
+    "stylelint": "^14.8.3"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
