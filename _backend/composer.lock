@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75a07fbc1defe34dcd5b60e75c033b41",
+    "content-hash": "7653bb9040b275539f13c2d43492f7a5",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -209,16 +209,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v8.2.0",
+            "version": "v8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "47cfc4046e2b4b8d861e18dfcf6e74eea8f99374"
+                "reference": "79f1114adf342644695b52460bbb5009bbd545ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/47cfc4046e2b4b8d861e18dfcf6e74eea8f99374",
-                "reference": "47cfc4046e2b4b8d861e18dfcf6e74eea8f99374",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/79f1114adf342644695b52460bbb5009bbd545ef",
+                "reference": "79f1114adf342644695b52460bbb5009bbd545ef",
                 "shasum": ""
             },
             "require": {
@@ -261,7 +261,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2022-05-20T00:00:52+00:00"
+            "time": "2022-05-26T20:34:44+00:00"
         }
     ],
     "packages-dev": [
