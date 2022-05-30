@@ -7,7 +7,7 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
-    "core-js": "^3.22.6",
+    "core-js": "^3.22.7",
     "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
