@@ -1,9 +1,9 @@
 {
-    "Community-Powered Support": "",
-    "Reach out to and participate in our global community. Search for questions, ask your own, or help out by sharing your knowledge. Pick an app or component below to view its specific discussions.": "",
+    "Community-Powered Support": "Поддержка от сообщества",
+    "Reach out to and participate in our global community. Search for questions, ask your own, or help out by sharing your knowledge. Pick an app or component below to view its specific discussions.": "Общайтесь и участвуйте в нашем глобальном сообществе. Ищите вопросы, задавайте свои или помогайте другим, делясь своими знаниями. Выберите приложение или компонент ниже, чтобы просмотреть связанные обсуждения.",
     "AppCenter": "Центр приложений",
     "Calendar": "Календарь",
-    "Calculator": "",
+    "Calculator": "Калькулятор",
     "Camera": "Камера",
     "Code": "Код",
     "Files": "Файлы",
@@ -13,12 +13,12 @@
     "Terminal": "Терминал",
     "Videos": "Видео",
     "Web": "Сеть",
-    "User Guides &amp; Documentation": "",
+    "User Guides &amp; Documentation": "Руководства и документация",
     "Installation": "Установка",
     "Get help installing elementary OS with our step-by-step guide.": "Используйте пошаговое руководство, если вам нужна помощь с установкой elementary OS.",
     "Learning the Basics": "Изучение основ",
     "Walk through the desktop, multi-tasking, keyboard shortcuts and more.": "Познакомьтесь с рабочим столом, многозадачностью, сочетаниями клавиш и многим другим.",
-    "Payment &amp; Download Support": "",
-    "If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please reply to your email receipt and a team member will contact you as soon as possible.": "",
+    "Payment &amp; Download Support": "Оплата и поддержка загрузки",
+    "If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please reply to your email receipt and a team member will contact you as soon as possible.": "Если вам требуется помощь с покупкой elementary OS — например, скачивание копии или возврат средств — пожалуйста, ответьте на квитанцию по электронной почте, и наша команда свяжется с вами в ближайшее время.",
     "Support &sdot; elementary": "Поддержка &sdot; elementary"
 }
