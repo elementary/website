@@ -45,7 +45,7 @@
     "Pango": "",
     "Cairo": "",
     "GNOME": "GNOME 桌面环境",
-    "Desktop Libraries": "",
+    "Desktop Libraries": "桌面库",
     "dconf": "",
     "GLib": "",
     "PolicyKit": "",
