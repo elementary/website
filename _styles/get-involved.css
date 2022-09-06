@@ -15,6 +15,10 @@ section {
   text-align: left;
 }
 
+.grid .third p{
+  text-align: center;
+}
+
 @media only screen and (min-width: 640px) and (max-width: 900px) {
   .grid .third {
     width: 66%;
@@ -37,6 +41,10 @@ section {
   flex: 1 1 200px;
   text-align: center;
   margin: 8px 16px 48px;
+}
+
+.design-links > div > p {
+  text-align: center;
 }
 
 .design-links .button.flat {
@@ -89,6 +97,10 @@ section {
   height: 32px;
 }
 
+#funding .half p{
+  text-align: center;
+}
+
 #paypalform {
   margin-left: 4px;
 }
@@ -107,6 +119,10 @@ section {
     0 5px 10px -2px rgba(97, 173, 31, 0.5);
 }
 
+#translations .half p{
+  text-align: center;
+}
+
 /* Support */
 
 #support .button.flat.suggested-action {
@@ -119,6 +135,10 @@ section {
   box-shadow:
     0 2px 3px -1px rgba(144, 21, 20, 0.3),
     0 5px 10px -2px rgba(213, 57, 65, 0.5);
+}
+
+#support .half p{
+  text-align: center;
 }
 
 /* Web */
@@ -272,6 +292,8 @@ section {
   user-select: none;
 }
 
+
+
 .web-browser #toolbar img {
   display: inline-block;
   vertical-align: middle;
@@ -287,6 +309,10 @@ section {
   vertical-align: middle;
 }
 
+.web-browser p {
+  text-align: center;
+}
+
 .web-browser .actions {
   margin-bottom: 0;
 }
@@ -299,8 +325,13 @@ section {
     width: 96%;
   }
 
+  .web-browser .button.flat{
+    margin-right: 0;
+  }
+
   .web-browser > .actions {
     margin-bottom: 30px;
+    margin-right: 0;
     margin-top: 30px;
   }
 }
