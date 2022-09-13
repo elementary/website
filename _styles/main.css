@@ -306,6 +306,7 @@ nav .menu-button svg {
   fill: #333333;
 }
 
+nav .menu-button,
 nav .menu-button:hover,
 nav .menu-button:focus,
 nav .menu-button:active {
@@ -337,7 +338,8 @@ nav a:visited {
   padding: 0 12px;
 }
 
-nav a:focus {
+nav a:focus,
+.menu-button:focus svg {
   color: #08c;
   fill: #08c;
   text-decoration: none;
@@ -419,8 +421,16 @@ nav .logomark:focus .logomark-svg {
     padding: 0;
   }
 
-  nav .menu-button {
+  nav .menu-button.enabled {
     display: none;
+  }
+
+  nav .menu-button.enabled + .nav-content {
+    display: flex;
+  }
+
+  .nav-content {
+    display: flex;
   }
 
   nav ul {
