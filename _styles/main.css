@@ -276,7 +276,7 @@ nav ul {
 }
 
 nav .menu-button {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex: none;
@@ -285,6 +285,18 @@ nav .menu-button {
   padding: 0;
   margin: 12px 24px;
   border: none;
+}
+
+nav .menu-button.enabled {
+  display: inline-block;
+}
+
+nav .menu-button.enabled + .nav-content {
+  display: none;
+}
+
+nav .menu-button.enabled[aria-expanded="true"] + .nav-content {
+  display: flex;
 }
 
 nav .menu-button svg {

@@ -113,8 +113,8 @@ $l10n->begin_html_translation();
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
+            <button class="menu-button" aria-expanded="false"><?php include __DIR__.'/../images/menu.svg'; ?></button>
             <div class="nav-content">
-                <button class="menu-button"><?php include __DIR__.'/../images/menu.svg'; ?></button>
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
