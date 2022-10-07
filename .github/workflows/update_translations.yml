@@ -51,6 +51,7 @@ jobs:
           branch: "update-translations-from-source"
         env:
           GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       - name: Check outputs
         run: |
