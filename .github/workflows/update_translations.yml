@@ -35,10 +35,11 @@ jobs:
       - name: Install Composer
         run: cd _backend && composer install
 
+      - name: Install
+        run: npm ci
+
       - name: Build
-        run: |
-          npm install
-          gulp
+        run: npm run build
 
       - name: Update
         run: php _backend/Console/Translation.php
