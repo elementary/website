@@ -36,7 +36,7 @@ jobs:
         run: cd _backend && composer install
 
       - name: Install
-        run: npm ci
+        run: npm ci --production
 
       - name: Build
         run: npm run build
