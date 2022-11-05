@@ -13,7 +13,8 @@
     "require": {
         "stripe/stripe-php": "8.12.0",
         "mandrill/mandrill": "^1.0",
-        "sentry/sdk": "^3.3.0",
+        "sentry/sentry": "^3.11",
+        "php-http/guzzle6-adapter": "^v2.0.2",
         "erusev/parsedown-extra": "^0.8"
     },
     "require-dev": {
