@@ -7,7 +7,6 @@
 
 require_once __DIR__ . '/../../_backend/preload.php';
 require_once __DIR__ . '/../../_backend/config.loader.php';
-require_once __DIR__ . '/../../_backend/preload.php';
 
 $mandrill = new Mandrill($config['mandrill_key']);
 
@@ -56,7 +55,7 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
         ),
         array(
             'name' => 'link',
-            'content' => "https://$_SERVER[HTTP_HOST]$sitewide[root]api/download?intent=" . urlencode($intent['id'])
+            'content' => 'https://elementary.io/api/download?intent=' . urlencode($intent['id'])
         )
     );
 
