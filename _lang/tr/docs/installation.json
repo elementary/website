@@ -46,9 +46,9 @@
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
     "Not readable warning": "Okunamıyor uyarısı",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
-    "Boot Errors": "",
+    "Boot Errors": "Önyükleme Hataları",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn {#release_filename} to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
-    "Running the following command in your terminal:": "",
-    "After Installation": "",
+    "Running the following command in your terminal:": "Terminalinizde aşağıdaki komutu çalıştırın:",
+    "After Installation": "Kurulumdan Sonra",
     "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": ""
 }
