@@ -117,7 +117,7 @@
               }
             ?>
             <div class="column">
-              <form id="payment-form" action="/api/create-checkout-session" method="POST">
+              <form id="payment-form" action="<?php echo $sitewide['root']?>api/create-checkout-session" method="POST">
                 <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
                 <input type="hidden" name="amount" id="hidden-amount" value="2000"/>
                 <input type="hidden" name="description" value="<?php echo ($config['release_title'] . ' ' . $config['release_version']); ?>"/>
