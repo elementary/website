@@ -44,7 +44,7 @@
     "Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.": "Uygun önyükleme sürücüsünü seçtikten kısa bir süre sonra, size elementary OS açılış ekranı sunulmalıdır. Artık sürecin geri kalanında size rehberlik edecek ekrandaki talimatları takip edebilirsiniz.",
     "Assuming you downloaded elementary OS to your macOS Downloads folder, open the Terminal app in macOS and run the following command:": "elementary OS imajını macOS İndirilenler klasörünüze indirdiğinizi varsayarsak, macOS'ta Terminal uygulamasını açın ve aşağıdaki komutu çalıştırın:",
     "The following dialog may appear during the flashing process, it is safe to ignore.": "",
-    "Not readable warning": "Okunamıyor uyarısı",
+    "Not readable warning": "Okunabilir değil uyarısı",
     "After you hear the chime, press and hold <kbd>Option</kbd>. Then, select the appropriate boot drive. Note that it may be incorrectly identified as &quot;Windows&quot;, but this is normal.": "",
     "Boot Errors": "Önyükleme Hataları",
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select &quot;Burn {#release_filename} to Disc&quot;. When complete, attempt to boot again from the Install DVD.": "",
