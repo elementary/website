@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../_backend/bootstrap.php';
+require_once __DIR__.'/_backend/preload.php';
 
 $stripe = new \Stripe\StripeClient($config['stripe_sk']);
 
