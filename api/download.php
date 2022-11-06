@@ -26,29 +26,39 @@ function go_home() {
 }
 
 // everything else falls into a great pyrimid of php ifs
-$charge_id = $_GET['charge'];
+if(isset($_GET['charge'])) {
+    $charge_id = $_GET['charge'];
 
-if (substr($charge_id, 0, 3) !== 'ch_') {
-    return go_home();
-}
-
-// Try to fetch the charge id under the current Stripe account
-try {
-    $charge = \Stripe\Charge::retrieve($charge_id);
-} catch (Exception $e) {
-    if (isset($e->httpStatus) && $e->httpStatus !== 404) {
-      return go_home();
+    if (substr($charge_id, 0, 3) !== 'ch_') {
+        return go_home();
     }
-}
 
-// Try to fetch the charge id under the _previous_ Stripe account
-// IF the metadata we need isn't set yet
-if (!isset($charge['metadata']['products'])) {
+    // Try to fetch the charge id under the current Stripe account
     try {
-        $charge = \Stripe\Charge::retrieve(
-            $charge_id,
-            ['api_key' => $config['previous_stripe_sk']]
-        );
+        $charge = \Stripe\Charge::retrieve($charge_id);
+    } catch (Exception $e) {
+        if (isset($e->httpStatus) && $e->httpStatus !== 404) {
+        return go_home();
+        }
+    }
+
+    // Try to fetch the charge id under the _previous_ Stripe account
+    // IF the metadata we need isn't set yet
+    if (!isset($charge['metadata']['products'])) {
+        try {
+            $charge = \Stripe\Charge::retrieve(
+                $charge_id,
+                ['api_key' => $config['previous_stripe_sk']]
+            );
+        } catch (Exception $e) {
+            return go_home();
+        }
+    }
+} else {
+    $intent_id = $_GET['intent'];
+
+    try {
+        $charge = \Stripe\PaymentIntent::retrieve($intent_id);
     } catch (Exception $e) {
         return go_home();
     }
