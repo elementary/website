@@ -34,7 +34,7 @@
     "Plug in your spare USB flash drive": "Yedek USB sürücünüzü takın",
     "Select your downloaded .iso file using the &quot;Select image&quot; button": "&quot;Görüntü seç&quot; düğmesini kullanarak indirdiğiniz .iso dosyanızı seçin",
     "Etcher should automatically detect your USB drive; if not, select the correct drive": "Etcher USB sürücünüzü otomatik olarak algılamalıdır; değilse, doğru sürücüyü seçin",
-    "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "",
+    "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "&quot;Flaş!&quot; düğmesini tıklayın. Başlamak biraz zaman alabilir.",
     "Once complete, continue to boot from the install drive.": "Tamamlandığında, yükleme sürücüsünden önyüklemeye devam edin.",
     "Booting From the Install Drive": "Yükleme Sürücüsünden Önyükleme",
     "In order to start the installation process, you must boot your computer from the install drive.": "Yükleme işlemini başlatmak için bilgisayarınızı yükleme sürücüsünden başlatmanız gerekir.",
