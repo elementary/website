@@ -12,28 +12,28 @@ $mandrill = new Mandrill($config['mandrill_key']);
 
 /**
  * email_os_payment
- * Emails an OS receipt from given stripe charge
+ * Emails an OS receipt from given stripe payment intent
  *
- * @param {\Stripe\Charge} $charge - Stripe charge used for payment
+ * @param {\Stripe\PaymentIntent} $intent - Stripe intent used for payment
  * @return {Array} - Mandrill response
  */
-function email_os_payment (\Stripe\Charge $charge) {
+function email_os_payment (\Stripe\PaymentIntent $intent) {
     global $mandrill;
 
-    if (!isset($charge) || !isset($charge['metadata'])) {
-        throw new Exception('Unable to read charge metadata');
+    if (!isset($intent) || !isset($intent['metadata'])) {
+        throw new Exception('Unable to read intent metadata');
     }
 
-    if (isset($charge['metadata']['receipt']) && $charge['metadata']['receipt'] === 'true') {
+    if (isset($intent['metadata']['receipt']) && $intent['metadata']['receipt'] === 'true') {
         throw new Exception('Receipt alraedy sent');
     }
 
     $products = array();
-    if (isset($charge['metadata']['products'])) {
+    if (isset($intent['metadata']['products'])) {
         try {
-            $products = json_decode($charge['metadata']['products']);
+            $products = json_decode($intent['metadata']['products']);
         } catch (Exception $e) {
-            throw new Exception('Unable to read charge product list');
+            throw new Exception('Unable to read intent product list');
         }
     }
 
@@ -51,21 +51,21 @@ function email_os_payment (\Stripe\Charge $charge) {
     $req = array(
         array(
             'name' => 'amount',
-            'content' => '$' . number_format(floatval($charge['amount'] / 100), 2, '.', ',')
+            'content' => '$' . number_format(floatval($intent['amount'] / 100), 2, '.', ',')
         ),
         array(
             'name' => 'link',
-            'content' => 'https://elementary.io/api/download?charge=' . urlencode($charge['id'])
+            'content' => 'https://elementary.io/api/download?intent=' . urlencode($intent['id'])
         )
     );
 
     $message = array(
-        'subject' => 'elementary Purchase (Charge ' . $charge['id'] . ')',
+        'subject' => 'elementary Purchase (Charge ' . $intent['id'] . ')',
         'from_email' => 'payment@elementary.io',
         'from_name' => 'elementary',
         'to' => array(
             array(
-                'email' => $charge['receipt_email'],
+                'email' => $intent['charges']['data'][0]['billing_details']['email'],
                 'type' => 'to'
             )
         ),
@@ -90,8 +90,8 @@ function email_os_payment (\Stripe\Charge $charge) {
     }
 
     try {
-        $charge['metadata']['receipt'] = 'true';
-        $charge->save();
+        $intent['metadata']['receipt'] = 'true';
+        $intent->save();
     } catch (Exception $e) {
         throw new Exception('Unable to save receipt state to Stripe');
     }

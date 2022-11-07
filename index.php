@@ -2,6 +2,7 @@
   require_once __DIR__.'/_backend/classify.current.php';
   require_once __DIR__.'/_backend/preload.php';
   require_once __DIR__.'/_backend/os-payment.php';
+  require_once __DIR__.'/_backend/email/os-payment.php';
 
   $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -16,11 +17,71 @@
     'styles/blog.css'
   );
 
+  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
+
+  \Stripe\Stripe::setApiKey($config['stripe_sk']);
+
+  if (isset($_GET['checkout_session_id'])) {
+      if ($already_paid) {
+        header("Location: " . $sitewide['root']);
+        die();
+      }
+
+      try {
+          $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
+      } catch (\Stripe\Exception $e) {
+          header("Location: " . $sitewide['root']);
+          die();
+      }
+
+      if ($session->status === "expired") {
+          header("Location: " . $sitewide['root']);
+          die();
+      }
+
+      $paymentAmount = $session->amount_total;
+      $paid = false;
+      $sendPaymentAnalytics = false;
+
+      if(!$already_paid) {
+        $sendPaymentAnalytics = true;
+      }
+
+      if ($session->payment_status === "paid") {
+          $paid = true;
+          $already_paid = true;
+          os_payment_setcookie($config['release_version'], $session->amount_total);
+
+          $intent = \Stripe\PaymentIntent::retrieve($session['payment_intent']);
+          email_os_payment ($intent);
+      }
+
+      $page['scripts'][] = 'scripts/payment-complete.js';
+  }
+
   include $template['header'];
   include $template['alert'];
-
-  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
 ?>
+
+    <script>
+        <?php if($sendPaymentAnalytics && $paid) {?>
+            plausible('Payment', {
+                props: {
+                    Input: <?php echo($paymentAmount)?>,
+                    Amount: <?php echo($paymentAmount)?>,
+                    Action: 'Complete'
+                }
+            });
+        <?php } else if ($sendPaymentAnalytics) { ?>
+            plausible('Payment', {
+                props: {
+                    Input: <?php echo($paymentAmount)?>,
+                    Amount: 0,
+                    Action: 'Failed'
+                }
+            });
+        <?php }?>
+    </script>
 
     <section class="section--hero section--stretched">
       <div class="section__detail grid">
@@ -56,7 +117,11 @@
               }
             ?>
             <div class="column">
-              <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
+              <form id="payment-form" action="<?php echo $sitewide['root']?>api/create-checkout-session" method="POST">
+                <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
+                <input type="hidden" name="amount" id="hidden-amount" value="2000"/>
+                <input type="hidden" name="description" value="<?php echo ($config['release_title'] . ' ' . $config['release_version']); ?>"/>
+              </form>
               <p class="small-label">
                 <span data-l10n-off="1">elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> (<?php echo $config['release_size']; ?>)</span><br>
                 <a href="docs/installation#recommended-system-specifications" target="_blank" rel="noopener">Recommended System Specs</a> |
