@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Info for OEMs &sdot; elementary';
+    $page['title'] = 'Information for OEMs &sdot; elementary';
 
     $page['styles'] = array(
         'styles/oem.css'
@@ -13,19 +13,19 @@
 
 <div class="grid">
     <div class="two-thirds">
-        <h1>Info for OEMs</h1>
+        <h1>Information for OEMs</h1>
         <h4>Give your customers the best experience with elementary OS.</h4>
     </div>
 </div>
 
 <div class="grid">
     <div class="two-thirds">
-        <h2>Partners and Retailers</h2>
+        <h2>Partners &amp; Retailers</h2>
         <p>We offer two ways to be listed as an OEM of elementary OS in <a href="https://store.elementary.io">our store</a>, with differing requirements and benefits.</p>
     </div>
     <div class="half copy">
         <h3>Partner</h3>
-        <p>Model-by-model approval, with each of them featured in <a href="https://store.elementary.io">our store</a>.</p>
+        <p>Per-model approval, with each model featured in <a href="https://store.elementary.io">our store</a>.</p>
         <p>Requirements:</p>
         <ul>
             <li>Official involvement from elementary, Inc.</li>
@@ -52,7 +52,7 @@
     </div>
     <div class="two-thirds copy">
         <h3 id="installation">Installation</h3>
-        <p>The elementary OS Installer treats every installation as OEM; step through it to install the OS, shut down the device and it is ready to be shipped to a customer. Create your own custom image by installing the OS, setting it up using an administrator account, deleting the account, and then creating an image of the disk. In both cases, Initial Setup is run upon the custoner's first boot, from which a user account is created.</p>
+        <p>The elementary OS Installer treats every installation as an OEM installation; step through it to install the OS, then shut down the device and it is ready to be shipped to a customer. Or, to create your own custom image: install the OS, configure any necessary packages or settings using a temporary administrator account, delete the account, and then create an image of the disk. In both cases, Initial Setup will create an end user account upon the customer's first boot.</p>
         <p><a href="https://github.com/elementary/installer" target="_blank" rel="noopener" class="read-more">Installer</a>
         <p><a href="https://github.com/elementary/initial-setup" target="_blank" rel="noopener" class="read-more">Initial Setup</a>
 
@@ -66,21 +66,21 @@
         <a href="https://valadoc.org/switchboard-2.0/Switchboard.Plug.html" target="_blank" rel="noopener" class="read-more">Documentation</a>
 
         <h4 id="oem-info">OEM Info in About</h4>
-        <p>The <a href="https://github.com/elementary/switchboard-plug-about/" target="_blank" rel="noopener">About</a> plug displays system info to the user and provides several system-wide actions, such as restoring settings, reporting issues, and getting help. In addition to software info (like the OS version), it also provides a space for hardware info. By default, this is filled in with a generic image and the system’s hostname. However, OEMs can provide custom branded data for this section.</p>
+        <p>The <a href="https://github.com/elementary/switchboard-plug-about/" target="_blank" rel="noopener">About</a> plug displays system information to the user and provides several system-wide actions, such as restoring settings, reporting issues, and getting help. In addition to software information (like the OS version), it also provides a space for hardware information. By default, this is filled in with a generic image and the system’s hostname. However, OEMs can provide custom branded data for this section.</p>
         <img src="images/oem/switchboard-about.png" alt="Switchboard About" />
         <p>By providing an <code>oem.conf</code> file, OEMs can fill in the manufacturer name, product name, model number, and manufacturer URL. An image can also be provided which replaces the generic hardware icon.</p>
         <a href="https://github.com/elementary/switchboard-plug-about/#oem-configuration" target="_blank" rel="noopener" class="read-more">Learn More</a>
 
         <h3 id="third-party-repos">Third-Party Repositories</h3>
         <p>It is highly discouraged to ship elementary OS with software repositories other than the defaults in elementary OS plus a single repository provided and controlled by the OEM. <strong>Third-party repos effectively give root access and the ability to overwrite any system packages to potentially untrusted third parties.</strong> Even if the party is trustworthy, an OEM’s customer’s security and privacy are now at stake if third parties are compromised, or they reuse their password on multiple services, etc.</p>
-        <p>Further, if a third-party repository ever goes missing, becomes unmaintained or unpublished, <strong>it may prevent normal upgrades of the system.</strong> This could hold back potentially serious security and stability fixes from reaching the OEM’s customers.</p>
+        <p>Further, if a third-party repository ever becomes unmaintained or unpublished, <strong>it may prevent regular OS updates.</strong> This could hold back potentially serious security and stability fixes from reaching the OEM’s customers.</p>
     </div>
 </div>
 
 <div class="grid">
     <div class="third">
-        <h3>News and Announcements</h3>
-        <p>Updates on development, major announcements, tips for developers, featured apps, and other new content is available on our blog.</p>
+        <h3>News &amp; Announcements</h3>
+        <p>We publish frequent updates on development, major announcements, tips for developers, featured apps, and more on our blog.</p>
         <a class="button" href="https://blog.elementary.io/" target="_blank" rel="noopener">Visit our Blog</a>
     </div>
 
@@ -92,8 +92,8 @@
 
     <div class="third">
         <h3>Get in Touch</h3>
-        <p>Talk directly with the team by e-mailing us at <a href="mailto:oem@elementary.io">oem@elementary.io</a>. Whether you’re an existing partner or want to explore offering elementary OS, we look forward to chatting.</p>
-        <a class="button" href="mailto:oem@elementary.io">Send an E-mail</a>
+        <p>Talk directly with the team by sending an email to <a href="mailto:oem@elementary.io">oem@elementary.io</a>. Whether you’re an existing partner or want to explore offering elementary OS, we look forward to chatting.</p>
+        <a class="button" href="mailto:oem@elementary.io">Send an Email</a>
     </div>
 </div>
 
