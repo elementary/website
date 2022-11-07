@@ -7,7 +7,7 @@
     },
     "require": {
         "stripe/stripe-php": "8.12.0",
-        "mandrill/mandrill": "^1.0",
+        "mailchimp/transactional": "^1.0.49",
         "sentry/sentry": "^1.4",
         "erusev/parsedown-extra": "^0.8"
     },
