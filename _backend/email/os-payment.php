@@ -15,7 +15,7 @@ $mailchimp->setApiKey($config['mandrill_key']);
  * email_os_payment
  * Emails an OS receipt from given stripe payment intent
  *
- * @param {\Stripe\Charge} $charge - Stripe charge used for payment
+ * @param {\Stripe\PaymentIntent} $intent - Stripe intent used for payment
  * @return {Array} - Mailchimp response
  */
 function email_os_payment (\Stripe\PaymentIntent $intent) {
