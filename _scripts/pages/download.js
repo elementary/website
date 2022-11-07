@@ -6,19 +6,17 @@
 /* global plausible */
 
 import jQuery from '~/lib/jquery'
-import modal from '~/lib/modal'
 
-import { url, detectedOS } from '~/page'
+import { detectedOS } from '~/page'
 import config from '~/config'
 
-import Payment from '~/widgets/payment'
+import { openDownloadOverlay } from '~/widgets/download-modal'
 
-Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
+Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloadOverlay]) => {
     // DEBUG
     console.log('Config at download.js:')
     console.log(config)
     // END DEBUG
-    const payment = new Payment(`${config.release.title} ${config.release.version}`)
 
     $(document).ready(() => {
         // Set defaults
@@ -102,10 +100,12 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
         updateDownloadButton()
 
         // ACTION: #download.click: Either initiate a payment or open the download modal.
-        $('#download').click(function () {
+        $('#download').click(function (event) {
+            event.preventDefault()
             console.log('Payment initiated with selection ' + currentButton)
             var paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
+            $('#hidden-amount').val(paymentAmount)
 
             // Disables button for 3 seconds after clicking it
             var download = $(this)
@@ -127,57 +127,9 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 openDownloadOverlay()
             // Paid download
             } else {
-                // Open the Stripe modal first.
-                payment.checkout(paymentAmount, 'USD')
-                    .then(([token]) => doStripePayment(paymentAmount, token))
-                    .then(() => openDownloadOverlay())
-                    .then(() => plausible('Payment', {
-                        props: {
-                            Input: paymentAmount.toString(),
-                            Amount: paymentAmount.toString(),
-                            Action: 'Complete'
-                        }
-                    }))
-                    .catch((err) => {
-                        console.error('Error while making payment')
-                        console.error(err)
-                        plausible('Payment', {
-                            props: {
-                                Input: paymentAmount.toString(),
-                                Amount: '0',
-                                Action: 'Failed'
-                            }
-                        })
-                        openDownloadOverlay() // Just in case. Don't interupt the flow
-                        throw err // rethrow so it can be picked up by error tracking
-                    })
+                $('#payment-form').submit()
             }
         })
-
-        // ACTION: doStripePayment: Actually process the payment via Stripe
-        function doStripePayment (amount, token) {
-            var $amountTwenty = $('#amount-twenty')
-            if ($amountTwenty.val() !== 0) {
-                $('#pay-what-you-want').remove()
-                $('#choice-buttons').remove()
-                $('#amounts').append('<div id="choice-buttons"><input type="hidden" id="amount-twenty" value="0"></div>')
-                currentButton = 'amount-twenty'
-                updateDownloadButton()
-            }
-
-            // Because jQuery "promises" are not A+ standard
-            return new Promise((resolve, reject) => {
-                $.post(`${url()}/api/payment`, {
-                    description: `${config.release.title} ${config.release.version}`,
-                    amount: amount,
-                    token: token.id,
-                    email: token.email,
-                    os: detectedOS()
-                })
-                    .done((res) => resolve(res))
-                    .fail((xhr, status) => reject(new Error(status)))
-            })
-        }
 
         // ACTION: .download-http.click: Track downloads
         $('.download-link').click(function () {
@@ -197,20 +149,6 @@ Promise.all([config, jQuery, Payment, modal]).then(([config, $, Payment]) => {
                 }
             })
         })
-
-        // RETURN: openDownloadOverlay: Open the Download modal.
-        function openDownloadOverlay () {
-            var $openModal
-            $openModal = $('.open-modal')
-            console.log('Open the download overlay!')
-            $openModal.leanModal({
-                // Add this class to download buttons to make them close it.
-                closeButton: '.close-modal',
-                disableCloseOnOverlayClick: true
-            })
-            // This is what actually opens the modal overlay.
-            $openModal.click()
-        }
 
         console.log('Loaded download.js')
     })
