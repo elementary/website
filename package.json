@@ -21,8 +21,9 @@
   },
   "devDependencies": {
     "eslint": "^8.27.0",
-    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "jpegtran-bin": "^7.0.0",
