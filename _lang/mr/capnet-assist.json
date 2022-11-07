@@ -1,8 +1,8 @@
 {
-    "You're connected!": "तुम्ही कनेक्ट आहात!",
+    "You’re connected!": "",
     "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "तुमचं इंटरनेट कनेक्शन काम करतंय असं दिसतं. हि विंडो तुम्ही सुरक्षितपणे बंद करू शकता आणि तुमचं उपकरण वापरू शकता.",
     "Why is this window appearing?": "हि विंडो का दिसतेय?",
     "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "काही नेटवर्क्स सुरुवातीला बंदिस्त असलेले दिसतात, ज्यामुळे ही विंडो येते, नंतर खरं तर कनेक्ट होतात.  तत्सम परिस्थितीत तुम्ही हा मेसेज बघाल आणि सुरक्षितपणे विंडो बंद करू शकाल.",
-    "You're connected! &sdot; elementary": "तुम्ही कनेक्ट आहात! &sdot; एलिमेंटरी"
+    "You’re connected! &sdot; elementary": ""
 }

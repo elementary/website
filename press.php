@@ -18,6 +18,44 @@
   </div>
 </div>
 
+<section class="grid" id="the-press">
+  <h2>In the Press</h2>
+  <div>
+    <div class="third">
+      <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; –@WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+    </div>
+    <div class="third">
+      <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; –@arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+    </div>
+  </div>
+  <div>
+    <div class="third">
+      <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; –@forbes https://elementary.io"  target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+    </div>
+    <div class="third">
+      <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
+      <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; –@MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+    </div>
+    <div class="third">
+      <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; –@lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+    </div>
+  </div>
+  <div>
+    <div class="third">
+      <a href="https://www.omgubuntu.co.uk/2021/08/elementary-os-6-odin-release" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/omgubuntu.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;The best way to try elementary [OS] is to install it, and since the install wizard is beautifully simple… that’s fairly easy to do.&rdquo; –@omgubuntu https://elementary.io" target="_blank" rel="noopener">&ldquo;The best way to try elementary [OS] is to install it, and since the install wizard is beautifully simple… that’s fairly easy to do.&rdquo;</a>
+    </div>
+    <div class="third">
+      <a href="https://www.hostingadvice.com/blog/ethical-operating-systems-from-elementary/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/hostingadvice.svg'; ?></a>
+      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Ethical and capable replacement for traditional systems… easy to use and customizable to accommodate various workflows.&rdquo; –@Hosting_Advice https://elementary.io" target="_blank" rel="noopener">&ldquo;Ethical and capable replacement for traditional systems such as Windows and macOS… easy to use and customizable to accommodate various workflows.&rdquo;</a>
+    </div>
+  </div>
+</section>
+
 <div class="grid">
   <div class="two-thirds">
     <h2>Join Our Press List</h2>
@@ -67,10 +105,10 @@
 <div class="grey">
   <div class="grid">
     <div class="two-thirds">
-      <h2>elementary OS 6 Odin</h2>
-      <p>The biggest update to the platform yet with multi-touch, dark style, app sandboxing, and an all-new installer. OS 6 empowers you to be in control and express yourself, continues to innovate with new features, and is both easier to get and more inclusive than ever.</p>
-      <a class="button" href="https://blog.elementary.io/elementary-os-6-odin-released/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
-      <a class="button" href="https://github.com/elementary/press-kit/archive/6.0-odin.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+      <h2>elementary OS 6.1 Jólnir</h2>
+      <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware.</p>
+      <a class="button" href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+      <a class="button" href="https://github.com/elementary/press-kit/archive/6.1-jolnir.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
     </div>
   </div>
 </div>

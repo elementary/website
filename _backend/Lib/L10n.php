@@ -34,6 +34,7 @@ class L10n
         '/README.md/',
         '/reference.md/',
         '/router.php/',
+        '/SECURITY.md/',
         '/TRANSLATE.md/',
     );
 
@@ -135,6 +136,7 @@ class L10n
         'sv' => 'Swedish',
         'tr' => 'Türkçe',
         'uk' => 'українська',
+        'vi' => 'Tiếng Việt',
         'zh_CN' => '简体中文',
     );
 

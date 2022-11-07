@@ -8,7 +8,6 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
-  - btkostner
 - package-ecosystem: npm
   directory: "/"
   schedule:
@@ -17,7 +16,6 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
-  - btkostner
 - package-ecosystem: composer
   directory: "/_backend"
   schedule:
@@ -26,4 +24,3 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
-  - btkostner

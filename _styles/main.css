@@ -203,9 +203,15 @@ img.inline + div.inline {
   opacity: 1;
 }
 
+.read-more {
+  white-space: nowrap;
+}
+
 .read-more::after {
   color: inherit;
-  content: "→";
+
+  /* Encoded `→`, see: https://github.com/elementary/website/issues/2851 */
+  content: "\2192";
   display: inline-block;
   font-style: normal;
   font-weight: inherit;
@@ -307,6 +313,18 @@ nav a[title="Google+"]:focus,
 nav a[title="Google+"]:hover {
   color: #d50000;
   fill: #d50000;
+}
+
+nav a[title="Youtube"]:focus,
+nav a[title="Youtube"]:hover {
+  color: #d50000;
+  fill: #d50000;
+}
+
+nav a[title="Mastodon"]:focus,
+nav a[title="Mastodon"]:hover {
+  color: #0d93ff;
+  fill: #0d93ff;
 }
 
 nav a[title="Medium"]:focus,
@@ -1390,4 +1408,31 @@ i.fa.fa-close.close-modal {
   .flex-row .flex-column p {
     text-align: left;
   }
+}
+
+/***************************************
+* Press section on home and press page *
+***************************************/
+
+#the-press {
+  padding-bottom: 64px;
+}
+
+#the-press svg {
+  display: block;
+  height: 4em;
+  margin: 12px auto;
+}
+
+#the-press svg * {
+  fill: #555761;
+}
+
+#the-press svg:hover * {
+  fill: #3689e6;
+}
+
+#the-press svg:active {
+  position: relative;
+  top: 1px;
 }

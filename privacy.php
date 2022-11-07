@@ -89,10 +89,6 @@
       <img src="images/privacy-policy/internet-explorer_128x128.png" data-l10n-off alt="Internet Explorer" />
       <span data-l10n-off>IE</span>
     </a>
-    <a target="_blank" rel="noopener" href="http://midori-browser.org/faqs/#blacklist_cookies">
-      <img src="images/privacy-policy/midori_256x256.png" data-l10n-off alt="Midori" />
-      <span data-l10n-off>Midori</span>
-    </a>
     <a target="_blank" rel="noopener" href="https://www.opera.com/blogs/news/2015/08/how-to-manage-cookies-in-opera/">
       <img src="images/privacy-policy/opera_128x128.png" data-l10n-off alt="Opera" />
       <span data-l10n-off>Opera</span>

@@ -1,7 +1,16 @@
-/*************************************
-* Copyright 2016 elementary LLC.     *
-* This file is part of elementary OS *
-*************************************/
+/***************************************
+* Copyright 2016–2021 elementary, Inc. *
+* This file is part of elementary OS   *
+***************************************/
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #333;
+    color: white;
+    fill: white;
+  }
+}
 
 nav,
 footer {

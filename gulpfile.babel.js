@@ -118,7 +118,6 @@ gulp.task('svg', () => {
         '_images/icons/apps/128/application-default-icon.svg',
         '_images/icons/apps/128/system-software-install.svg',
         '_images/icons/apps/128/utilities-terminal.svg',
-        '_images/icons/apps/32/accessories-camera.svg',
         '_images/icons/apps/32/archive-manager.svg',
         '_images/icons/apps/32/office-calendar.svg',
         '_images/icons/apps/32/onboard.svg',
@@ -170,7 +169,7 @@ gulp.task('svg', () => {
     ]
     const dest = 'images'
 
-    return gulp.src(src, { base })
+    return gulp.src(src, { "allowEmpty": true,  base })
     .pipe(changed(dest))
     .pipe(cache('svg'))
     .pipe(svgo())

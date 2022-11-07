@@ -6,8 +6,14 @@ on:
   schedule:
     - cron:  "0 0 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   update:
+    permissions:
+      contents: write  # for peter-evans/create-pull-request to create branch
+      pull-requests: write  # for peter-evans/create-pull-request to create a PR
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +24,7 @@ jobs:
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@1.8.7
+        uses: shivammathur/setup-php@2.18.1
         with:
           php-version: '7.4'
           tools: composer
@@ -29,10 +35,11 @@ jobs:
       - name: Install Composer
         run: cd _backend && composer install
 
+      - name: Install
+        run: npm ci
+
       - name: Build
-        run: |
-          npm install
-          gulp
+        run: npm run build
 
       - name: Update
         run: php _backend/Console/Translation.php
@@ -45,6 +52,7 @@ jobs:
           branch: "update-translations-from-source"
         env:
           GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       - name: Check outputs
         run: |
