@@ -315,6 +315,18 @@ nav a[title="Google+"]:hover {
   fill: #d50000;
 }
 
+nav a[title="Youtube"]:focus,
+nav a[title="Youtube"]:hover {
+  color: #d50000;
+  fill: #d50000;
+}
+
+nav a[title="Mastodon"]:focus,
+nav a[title="Mastodon"]:hover {
+  color: #0d93ff;
+  fill: #0d93ff;
+}
+
 nav a[title="Medium"]:focus,
 nav a[title="Medium"]:hover {
   color: #00ab6b;
