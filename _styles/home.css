@@ -75,29 +75,6 @@ input:focus + .focus-reveal {
   margin: 3px auto 6px;
 }
 
-#the-press {
-  padding-bottom: 64px;
-}
-
-#the-press svg {
-  display: block;
-  height: 4em;
-  margin: 12px auto;
-}
-
-#the-press svg * {
-  fill: #555761;
-}
-
-#the-press svg:hover * {
-  fill: #3689e6;
-}
-
-#the-press svg:active {
-  position: relative;
-  top: 1px;
-}
-
 .cta {
   padding: 64px 1em;
   text-align: center;

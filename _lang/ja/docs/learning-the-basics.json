@@ -23,7 +23,7 @@
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "マウスカーソルでインジケーターをホバーすると、簡易情報とショートカットアクションを表示します。ショートカットアクションとは、中クリックや3本指タップ実行できる、以下のような操作のことです。",
     "Sound: Mute": "サウンドインジケーターの場合: ミュート",
     "Bluetooth: Turn Bluetooth on or off": "Bluetooth インジケーターの場合: Bluetooth の有効化／無効化",
-    "Power: Toggle percentage of battery remaining in the Panel": "電源インジケーターの場合: バッテリー残量の割合表示の有効化／無効化",
+    "Power: Toggle percentage of battery remaining in the Panel": "電源インジケーターの場合: バッテリー残量の割合の表示／非表示",
     "Notifications: Toggle Do Not Disturb mode": "通知インジケーターの場合: 非通知モードの有効化／無効化",
     "Session: Prompt to shut down": "セッションインジケーターの場合: シャットダウンダイアログの表示",
     "Dock": "ドック",

@@ -169,7 +169,7 @@ gulp.task('svg', () => {
     ]
     const dest = 'images'
 
-    return gulp.src(src, { base })
+    return gulp.src(src, { "allowEmpty": true,  base })
     .pipe(changed(dest))
     .pipe(cache('svg'))
     .pipe(svgo())

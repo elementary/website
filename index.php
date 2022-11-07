@@ -2,6 +2,7 @@
   require_once __DIR__.'/_backend/classify.current.php';
   require_once __DIR__.'/_backend/preload.php';
   require_once __DIR__.'/_backend/os-payment.php';
+  require_once __DIR__.'/_backend/email/os-payment.php';
 
   $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -16,11 +17,71 @@
     'styles/blog.css'
   );
 
+  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
+
+  \Stripe\Stripe::setApiKey($config['stripe_sk']);
+
+  if (isset($_GET['checkout_session_id'])) {
+      if ($already_paid) {
+        header("Location: " . $sitewide['root']);
+        die();
+      }
+
+      try {
+          $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
+      } catch (\Stripe\Exception $e) {
+          header("Location: " . $sitewide['root']);
+          die();
+      }
+
+      if ($session->status === "expired") {
+          header("Location: " . $sitewide['root']);
+          die();
+      }
+
+      $paymentAmount = $session->amount_total;
+      $paid = false;
+      $sendPaymentAnalytics = false;
+
+      if(!$already_paid) {
+        $sendPaymentAnalytics = true;
+      }
+
+      if ($session->payment_status === "paid") {
+          $paid = true;
+          $already_paid = true;
+          os_payment_setcookie($config['release_version'], $session->amount_total);
+
+          $intent = \Stripe\PaymentIntent::retrieve($session['payment_intent']);
+          email_os_payment ($intent);
+      }
+
+      $page['scripts'][] = 'scripts/payment-complete.js';
+  }
+
   include $template['header'];
   include $template['alert'];
-
-  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
 ?>
+
+    <script>
+        <?php if($sendPaymentAnalytics && $paid) {?>
+            plausible('Payment', {
+                props: {
+                    Input: <?php echo($paymentAmount)?>,
+                    Amount: <?php echo($paymentAmount)?>,
+                    Action: 'Complete'
+                }
+            });
+        <?php } else if ($sendPaymentAnalytics) { ?>
+            plausible('Payment', {
+                props: {
+                    Input: <?php echo($paymentAmount)?>,
+                    Amount: 0,
+                    Action: 'Failed'
+                }
+            });
+        <?php }?>
+    </script>
 
     <section class="section--hero section--stretched">
       <div class="section__detail grid">
@@ -55,7 +116,11 @@
               }
             ?>
             <div class="column">
-              <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
+              <form id="payment-form" action="<?php echo $sitewide['root']?>api/create-checkout-session" method="POST">
+                <button type="submit" id="download" class="suggested-action"><?php echo ($already_paid) ? "Download elementary OS" : "Purchase elementary OS"; ?></button>
+                <input type="hidden" name="amount" id="hidden-amount" value="2000"/>
+                <input type="hidden" name="description" value="<?php echo ($config['release_title'] . ' ' . $config['release_version']); ?>"/>
+              </form>
               <p class="small-label">
                 <span data-l10n-off="1">elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> (<?php echo $config['release_size']; ?>)</span><br>
                 <a href="docs/installation#recommended-system-specifications" target="_blank" rel="noopener">Recommended System Specs</a> |
@@ -98,7 +163,7 @@
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 6.1 Jólnir</h2>
-          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses your feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware</p>
+          <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware.</p>
           <a href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
@@ -393,28 +458,30 @@
 
       <a class="button suggested-action" href="#">Pay What You Can</a>
     </section>
+
     <section class="grid" id="the-press">
       <div class="third">
         <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; — @WIRED https://elementary.io" data-tweet-suffix=" — @WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; –@WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; —@arstechnica https://elementary.io" data-tweet-suffix=" — @arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; –@arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; —@forbes https://elementary.io" data-tweet-suffix=" — @forbes https://elementary.io" target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; –@forbes https://elementary.io"  target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-        <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; —@MacLife https://elementary.io" data-tweet-suffix=" — @MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+        <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; –@MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
       </div>
       <div class="third">
         <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/home/?status=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; —@lifehacker https://elementary.io" data-tweet-suffix=" — @lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; –@lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
       </div>
     </section>
+
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <div id="download-modal" class="dialog modal">
