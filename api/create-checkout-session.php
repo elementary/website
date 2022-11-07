@@ -37,11 +37,13 @@ if (isset($_POST['amount'])) {
     ]);
 
     $stripe->paymentIntents->update(
-        $checkout_session['payment_intent'],
-        ['metadata' => array(
-            'receipt' => 'false',
-            'products' => json_encode(array('ISO-' . $config['release_version']))
-        )]
+        $checkout_session['payment_intent'], [
+            'description' => "$config[release_title] $config[release_version]",
+            'metadata' => array(
+                'receipt' => 'false',
+                'products' => json_encode(array('ISO-' . $config['release_version']))
+            )
+        ]
     );
 
     header("HTTP/1.1 303 See Other");
