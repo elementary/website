@@ -93,7 +93,7 @@
 
       <div class="section__showcase">
         <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-        <img src="images/screenshots/desktop.jpg" alt="elementary OS 6.1 Jólnir desktop" />
+        <img src="images/screenshots/desktop.jpg" alt="elementary OS 7 Horus desktop" />
       </div>
 
       <div class="section__detail grid">
@@ -146,9 +146,9 @@
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 6.1 Jólnir</h2>
+          <h2>What’s New in elementary OS 7 Horus</h2>
           <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware.</p>
-          <a href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+          <a href="https://blog.elementary.io/elementary-os-7-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
     </section>
