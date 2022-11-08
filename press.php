@@ -105,10 +105,10 @@
 <div class="grey">
   <div class="grid">
     <div class="two-thirds">
-      <h2>elementary OS 6.1 Jólnir</h2>
+      <h2>elementary OS 7 Horus</h2>
       <p>Larger strides in less time than ever before with a redesigned window switcher, much improved apps, better portals, and refinements in every corner. OS 6.1 addresses feedback, gets stuff done around the office, and expands compatibility with a wide range of hardware.</p>
       <a class="button" href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
-      <a class="button" href="https://github.com/elementary/press-kit/archive/6.1-jolnir.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+      <a class="button" href="https://github.com/elementary/press-kit/archive/7-horus.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
     </div>
   </div>
 </div>
