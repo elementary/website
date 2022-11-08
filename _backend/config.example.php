@@ -32,8 +32,7 @@ return array(
 
   'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
-  'sentry_key' => false,
-  'sentry_pub' => false,
+  'sentry_dsn' => false,
 
   'twitter_consumer_key'    => 'test_ckey',
   'twitter_consumer_secret' => 'test_csecret',

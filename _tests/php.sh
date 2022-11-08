@@ -7,7 +7,7 @@ echo "####################"
 echo "Starting PHP linting"
 echo "####################"
 
-find . -name "*.php" -print0 | xargs -0 -n1 -P8 php -l
+find . -path './_backend/vendor' -prune -o -name "*.php" -print0 | xargs -0 -n1 -P8 php -l
 
 echo "#####################"
 echo "PHP linting complete!"
