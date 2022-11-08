@@ -17,7 +17,8 @@
     'styles/blog.css'
   );
 
-  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
+  $already_paid = (os_payment_getcookie($config['release_version']) > 0);      
+  $sendPaymentAnalytics = false;
 
   \Stripe\Stripe::setApiKey($config['stripe_sk']);
 
@@ -41,7 +42,6 @@
 
       $paymentAmount = $session->amount_total;
       $paid = false;
-      $sendPaymentAnalytics = false;
 
       if(!$already_paid) {
         $sendPaymentAnalytics = true;
