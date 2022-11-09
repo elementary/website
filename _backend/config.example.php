@@ -30,7 +30,7 @@ return array(
 
   'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
-  'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
+  'mailchimp_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
   'sentry_dsn' => false,
 
