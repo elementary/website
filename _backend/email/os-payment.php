@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../_backend/preload.php';
 require_once __DIR__ . '/../../_backend/config.loader.php';
 
 $mailchimp = new MailchimpTransactional\ApiClient();
-$mailchimp->setApiKey($config['mandrill_key']);
+$mailchimp->setApiKey($config['mailchimp_key']);
 
 /**
  * email_os_payment
