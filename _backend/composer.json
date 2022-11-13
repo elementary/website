@@ -14,7 +14,8 @@
         "stripe/stripe-php": "8.12.0",
         "mailchimp/transactional": "^1.0.49",
         "sentry/sdk": "^3.3.0",
-        "erusev/parsedown-extra": "^0.8"
+        "erusev/parsedown-extra": "^0.8",
+        "geoip2/geoip2": "^2.0"
     },
     "require-dev": {
         "league/climate": "^3.2"
