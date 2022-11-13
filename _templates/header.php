@@ -82,7 +82,7 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <script src="scripts/common.js"></script>
+        <script src="scripts/runtime.js"></script>
         <script src="scripts/main.js" async></script>
 
         <?php if ( !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io' ) { ?>

@@ -1,33 +1,32 @@
 {
   "name": "mvp",
+  "type": "module",
   "version": "0.4.0",
+  "engines": {
+    "node": ">=14.16"
+  },
   "description": "The elementary.io Website http://elementary.io",
-  "main": "webpack.config.babel.js",
   "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "core-js": "^3.26.0",
     "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^4.0.3",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-postcss": "^9.0.1",
-    "gulp-svgo": "^2.2.1",
-    "postcss-cssnext": "^3.1.1",
-    "scriptjs": "^2.5.8",
-    "webpack": "^2.5.1"
+    "postcss-preset-env": "^7.8.2",
+    "scriptjs": "^2.5.9",
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "eslint": "^8.27.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.0",
+    "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "jpegtran-bin": "^7.0.0",
-    "optipng-bin": "^8.1.0",
     "stylelint": "^14.14.1"
   },
   "scripts": {
