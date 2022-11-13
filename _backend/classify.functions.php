@@ -9,8 +9,8 @@
 // OC   Oceania          SGP1
 // AN   Antarctica       SGP1
 
+require_once __DIR__ . '/bootstrap.php';
 require_once __DIR__.'/log-echo.php';
-require_once __DIR__.'/geoip2.phar';
 use GeoIp2\Database\Reader;
 
 ////    getDownloadRegion
