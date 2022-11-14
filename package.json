@@ -27,7 +27,7 @@
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "stylelint": "^14.14.1"
+    "stylelint": "^14.15.0"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
