@@ -7,7 +7,6 @@ import gulp from 'gulp'
 import cache from 'gulp-cached'
 import changed from 'gulp-changed'
 import rev from 'gulp-rev'
-import rename from 'gulp-rename'
 import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
@@ -192,10 +191,7 @@ gulp.task('styles', () => {
     ]))
     .pipe(rev())
     .pipe(gulp.dest(dest))
-    .pipe(rename({
-        dirname: "styles" // rename dir in manifest
-    }))
-    .pipe(rev.manifest('manifest.json'))
+    .pipe(rev.manifest('manifest.json'), { base: dest })
     .pipe(gulp.dest(dest))
 })
 
