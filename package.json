@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0",
-    "core-js": "^3.26.0",
+    "core-js": "^3.26.1",
     "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
