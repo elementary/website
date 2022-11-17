@@ -16,7 +16,7 @@
     "gulp-changed": "^4.0.3",
     "gulp-imagemin": "^8.0.0",
     "gulp-postcss": "^9.0.1",
-    "postcss-preset-env": "^7.8.2",
+    "postcss-preset-env": "^7.8.3",
     "scriptjs": "^2.5.9",
     "webpack": "^5.75.0"
   },
