@@ -1,5 +1,5 @@
 /**
- * gulpfile.babel.js
+ * gulpfile.mjs
  * Does things with things for other built things
  */
 
@@ -9,18 +9,12 @@ import changed from 'gulp-changed'
 import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
-import svgo from 'gulp-svgo'
 
 import postcss from 'gulp-postcss'
-import cssnext from 'postcss-cssnext'
+import postcssPresetEnv from 'postcss-preset-env'
 
 import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
-
-const browsers = [
-    'last 4 version',
-    'not ie <= 11'
-]
 
 /**
  * store
@@ -151,14 +145,6 @@ gulp.task('svg', () => {
         '_images/icons/devices/64/scanner.svg',
         '_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg',
         '_images/icons/devices/symbolic/computer-symbolic.svg',
-        '_images/icons/mimes/24/payment-card.svg',
-        '_images/icons/mimes/24/payment-card-amex.svg',
-        '_images/icons/mimes/24/payment-card-diners-club.svg',
-        '_images/icons/mimes/24/payment-card-discover.svg',
-        '_images/icons/mimes/24/payment-card-jcb.svg',
-        '_images/icons/mimes/24/payment-card-mastercard.svg',
-        '_images/icons/mimes/24/payment-card-unionpay.svg',
-        '_images/icons/mimes/24/payment-card-visa.svg',
         '_images/icons/mimes/48/office-database.svg',
         '_images/icons/places/128/distributor-logo.svg',
         '_images/icons/places/64/distributor-logo.svg',
@@ -172,7 +158,7 @@ gulp.task('svg', () => {
     return gulp.src(src, { "allowEmpty": true,  base })
     .pipe(changed(dest))
     .pipe(cache('svg'))
-    .pipe(svgo())
+    .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
 
@@ -198,7 +184,7 @@ gulp.task('styles', () => {
     return gulp.src(src, { base })
     .pipe(changed(dest))
     .pipe(postcss([
-        cssnext({ browsers })
+        postcssPresetEnv()
     ]))
     .pipe(gulp.dest(dest))
 })

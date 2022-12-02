@@ -10,30 +10,13 @@
 import path from 'path'
 
 import glob from 'glob'
-import webpack from 'webpack'
+
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
-
-const browsers = [
-    'last 4 version',
-    'not ie <= 11'
-]
-
-const stats = {
-    hash: false,
-    version: false,
-    timings: false,
-    assets: true,
-    chunks: false,
-    modules: false,
-    reasons: false,
-    children: false,
-    source: false,
-    errors: true,
-    errorDetails: true,
-    warnings: true,
-    publicPath: false
-}
 
 /*
  * Everthing past this point is plugin configuration. Do not edit unless you
@@ -44,31 +27,27 @@ const scriptFiles = {}
 
 glob.sync(scriptPattern).forEach((p) => {
     const name = p
-    .replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
-    .replace('.js', '')
+        .replace(path.resolve(__dirname, '_scripts', 'pages') + path.sep, '')
+        .replace('.js', '')
 
-    scriptFiles[name] = [path.resolve(__dirname, '_scripts', 'polyfill.js'), p]
+    scriptFiles[name] = p
 })
 
 export default {
+    mode: 'production',
     devtool: 'source-map',
     entry: scriptFiles,
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'scripts'),
         publicPath: '/scripts',
-        sourceMapFilename: '[name].map.js'
     },
     module: {
         rules: [{
-            test: /\.js$/,
-            loader: 'babel-loader',
+            test: /\.m?js$/,
             exclude: /node_modules/,
-            query: {
-                presets: [['env', {
-                    modules: false,
-                    targets: { browsers }
-                }]]
+            use: {
+                loader: 'babel-loader',
             }
         }]
     },
@@ -77,28 +56,7 @@ export default {
             '~': path.resolve(__dirname, '_scripts')
         }
     },
-    plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            minChunks: 2
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap: true,
-            mangle: false,
-            compressor: {
-                warnings: false,
-                screw_ie8: true
-            },
-            output: {
-                comments: false
-            }
-        }),
-        new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify('production')
-            }
-        })
-    ],
-    stats
+    optimization: {
+        runtimeChunk: 'single',
+    }
 }

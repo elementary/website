@@ -61,16 +61,6 @@ input:focus + .focus-reveal {
   transition: 250ms all;
 }
 
-#payment-trust i {
-  font-size: 2.5em;
-  padding: 0 0.05em;
-  vertical-align: middle;
-}
-
-#payment-trust i span {
-  font-size: 0;
-}
-
 #download {
   margin: 3px auto 6px;
 }
