@@ -6,12 +6,15 @@
 import gulp from 'gulp'
 import cache from 'gulp-cached'
 import changed from 'gulp-changed'
+import rev from 'gulp-rev'
+import rename from 'gulp-rename'
 import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
 
 import postcss from 'gulp-postcss'
 import postcssPresetEnv from 'postcss-preset-env'
+import cssnano from 'cssnano'
 
 import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
@@ -184,8 +187,15 @@ gulp.task('styles', () => {
     return gulp.src(src, { base })
     .pipe(changed(dest))
     .pipe(postcss([
-        postcssPresetEnv()
+        postcssPresetEnv(),
+        cssnano()
     ]))
+    .pipe(rev())
+    .pipe(gulp.dest(dest))
+    .pipe(rename({
+        dirname: "styles" // rename dir in manifest
+    }))
+    .pipe(rev.manifest('manifest.json'))
     .pipe(gulp.dest(dest))
 })
 

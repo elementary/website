@@ -12,6 +12,7 @@ import path from 'path'
 import glob from 'glob'
 
 import { fileURLToPath } from "url"
+import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -38,7 +39,7 @@ export default {
     devtool: 'source-map',
     entry: scriptFiles,
     output: {
-        filename: '[name].js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'scripts'),
         publicPath: '/scripts',
     },
@@ -58,5 +59,10 @@ export default {
     },
     optimization: {
         runtimeChunk: 'single',
-    }
+    },
+    plugins: [
+        new WebpackManifestPlugin({
+            'basePath': 'scripts/'
+        })
+    ]
 }
