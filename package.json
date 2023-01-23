@@ -11,7 +11,7 @@
     "babel-loader": "^9.1.2",
     "core-js": "^3.27.1",
     "cssnano": "^5.1.14",
-    "glob": "^8.0.3",
+    "glob": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^4.0.3",
