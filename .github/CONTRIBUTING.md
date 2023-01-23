@@ -2,6 +2,14 @@
 
 ## Web Server
 
+### Docker Simple PHP Server
+
+For a simple local development environment running on PHP, you will need:
+```
+cd ./dev && docker-compose up -d
+```
+just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
 ### Simple PHP Server
 
 For a simple local development environment running on PHP, you will need:
