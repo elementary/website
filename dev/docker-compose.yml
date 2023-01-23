@@ -7,6 +7,6 @@ services:
       dockerfile: ./dev/Dockerfile
     container_name: elementary-os-website
     ports:
-      - "8000:8000"
+      - "8000:80"
     volumes:
-      - ../:/var/www
+      - ../:/var/www/website
