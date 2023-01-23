@@ -61,7 +61,7 @@
           );
           try {
             email_os_payment ($intent);
-          } catch (e) {
+          } catch (Exception $e) {
             header("Location: " . $sitewide['root']);
             die();
           }
