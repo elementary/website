@@ -2,120 +2,13 @@
 
 ## Web Server
 
-### Docker Simple PHP Server
+### Docker Web Server with Nginx and PHP
 
 For a simple local development environment running on PHP, you will need:
 ```
 cd ./dev && docker-compose up -d
 ```
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
-
-### Simple PHP Server
-
-For a simple local development environment running on PHP, you will need:
-
-* [A supported version of PHP](http://php.net/supported-versions.php) with:
-  * `php-cli`
-  * `php-curl`
-  * `php-intl`
-  * `php-json`
-  * `php-mbstring`
-  * `php-sqlite3`
-  * `php-xml`
-  * `composer`
-* [Node.js](https://nodejs.org/) and `npm`
-  * packages installed with `npm ci`
-
-#### GNU/Linux Based Operating Systems
-
-First, install Node.js (12.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). 
-
-_If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
-
-The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
-
-```
-sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
-npm ci
-```
-
-Then inside the project directory, run `npm run build && npm run start`. Next,
-just navigate to [localhost:8000](http://localhost:8000/) to view the site.
-
-If you are working on CSS and would like an easier time developing, you can run
-the `npx gulp watch` command. This will watch for any CSS and image changes,
-and rebuild on the fly.
-
-#### macOS 
-
-First, make sure you have your system updated.
-
-Second, install the latest version of Node.js from [Nodejs.org](https://nodejs.org). 
-
-Then follow these directions from your favorite shell:
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install php composer
-npm ci
-cd _backend
-composer up
-cd ../
-npm run build && npm run start
-```
-
-Once finished, open a browser and navigate to http://localhost:8000. Enjoy!
-
-**NOTE**: The version of PHP shipped via brew has all modules enabled by default.
-
-### Nginx Web Server
-
-For a full web-server environment, which includes more redirect and permissions
-you may find useful, you will need:
-
-* Everything required for "Simple PHP Server" (above)
-* The latest stable version of [Nginx](http://nginx.org)
-* `php7.0-fpm`
-
-Then, we need to configure Nginx. To start, open up a configuration file in
-Nano.
-
-```bash
-sudo nano /etc/nginx/sites-enabled/mvp.conf
-```
-
-Then, paste in required configuration in, modifying the root, include and
-error_log paths.
-
-```
-server {
-    listen 80;
-    server_name mvp.localtest.me;
-    root /path/to/mvp;
-    include /path/to/mvp/nginx.conf;
-    error_log /path/to/error.log;
-}
-```
-
-You can test the configuration with Nginx.
-
-```bash
-sudo nginx -t
-```
-
-Now we just need to restart the service.
-
-```bash
-sudo service nginx restart
-```
-
-Then we need to build the static assets.
-
-```bash
-npm ci && npm run build
-```
-
-Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
 
 ## Code Style
 
