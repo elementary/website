@@ -17,10 +17,13 @@
     'styles/blog.css'
   );
 
-  $already_paid = (os_payment_getcookie($config['release_version']) > 0);      
+  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
   $sendPaymentAnalytics = false;
 
-  \Stripe\Stripe::setApiKey($config['stripe_sk']);
+  $stripe = new \Stripe\StripeClient([
+    "api_key" => $config['stripe_sk'],
+    "stripe_version" => "2022-11-15"
+  ]);
 
   if (isset($_GET['checkout_session_id'])) {
       if ($already_paid) {
@@ -52,8 +55,16 @@
           $already_paid = true;
           os_payment_setcookie($config['release_version'], $session->amount_total);
 
-          $intent = \Stripe\PaymentIntent::retrieve($session['payment_intent']);
-          email_os_payment ($intent);
+          $intent = $stripe->paymentIntents->retrieve(
+            $session['payment_intent'],
+            ['expand' => ['latest_charge']]
+          );
+          try {
+            email_os_payment ($intent);
+          } catch (e) {
+            header("Location: " . $sitewide['root']);
+            die();
+          }
       }
 
       $page['scripts'][] = 'scripts/payment-complete.js';
