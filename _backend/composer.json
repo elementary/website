@@ -11,7 +11,7 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "9.9.0",
+        "stripe/stripe-php": "10.4.0",
         "mailchimp/transactional": "^1.0.49",
         "sentry/sdk": "^3.3.0",
         "erusev/parsedown-extra": "^0.8",
