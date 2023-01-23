@@ -1,6 +1,6 @@
 # Contributing
 
-## Web Server
+## Recommended setup
 
 ### Docker Web Server with Nginx and PHP
 
@@ -9,6 +9,12 @@ For a simple local development environment running on PHP, you will need:
 cd ./dev && docker-compose up -d
 ```
 just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+<br>
+<hr>
+<br>
+
+## Manual setup
 
 ### Simple PHP Server
 
@@ -28,7 +34,7 @@ For a simple local development environment running on PHP, you will need:
 
 #### GNU/Linux Based Operating Systems
 
-First, install Node.js (12.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). 
+First, install Node.js (18.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). 
 
 _If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
@@ -75,7 +81,7 @@ you may find useful, you will need:
 
 * Everything required for "Simple PHP Server" (above)
 * The latest stable version of [Nginx](http://nginx.org)
-* `php7.0-fpm`
+* `php8.1-fpm`
 
 Then, we need to configure Nginx. To start, open up a configuration file in
 Nano.
