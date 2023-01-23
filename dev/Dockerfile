@@ -2,10 +2,16 @@ FROM php:8.1-fpm
 
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git libicu-dev nodejs nginx
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git libicu-dev nodejs \
+    nginx libpng-dev libzip-dev libwebp-dev unzip zip libxml2-dev libjpeg62-turbo-dev zlib1g-dev \
+    libfreetype6 libfreetype6-dev
 
-RUN docker-php-ext-configure intl && docker-php-ext-install intl \
-    && docker-php-ext-install opcache
+RUN docker-php-ext-install opcache \
+    && docker-php-ext-configure gd --with-webp=/usr/include/webp --with-jpeg=/usr/include --with-freetype=/usr/include/freetype2/ \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install -j$(nproc) zip \
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
