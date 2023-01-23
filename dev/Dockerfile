@@ -1,6 +1,6 @@
-FROM php:7.4-fpm
+FROM php:8.1-fpm
 
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git libicu-dev nodejs nginx
 
