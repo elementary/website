@@ -27,7 +27,7 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
     }
 
     if (isset($intent['metadata']['receipt']) && $intent['metadata']['receipt'] === 'true') {
-        throw new Exception('Receipt alraedy sent');
+        throw new Exception('Receipt already sent');
     }
 
     $products = array();
@@ -61,13 +61,22 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
         )
     );
 
+    $email = "";
+    if (isset($intent['charges'])) {
+        $email = $intent['charges']['data'][0]['billing_details']['email'];
+    } else if (isset($intent['latest_charge'])) {
+        $email = $intent['latest_charge']['billing_details']['email'];
+    } else {
+        throw new Exception('Unable to find email address');
+    }
+
     $message = array(
         'subject' => 'elementary Purchase (Charge ' . $intent['id'] . ')',
         'from_email' => 'payment@elementary.io',
         'from_name' => 'elementary',
         'to' => array(
             array(
-                'email' => $intent['charges']['data'][0]['billing_details']['email'],
+                'email' => $email,
                 'type' => 'to'
             )
         ),
