@@ -9,12 +9,6 @@
         'styles/get-involved.css'
     );
 
-    if ($config['chart_enable']) {
-        $page['scripts'] = array(
-            'scripts/get-involved.js'
-        );
-    }
-
     include $template['header'];
     include $template['alert'];
 ?>

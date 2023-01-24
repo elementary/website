@@ -12,22 +12,20 @@ For a simple local development environment running on PHP, you will need:
   * `php-intl`
   * `php-json`
   * `php-mbstring`
-  * `php-sqlite3`
-  * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm ci`
 
 #### GNU/Linux Based Operating Systems
 
-First, install Node.js (12.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions). 
+First, install Node.js (18.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions).
 
 _If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
 The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
 
 ```
-sudo apt install php-cli php-curl php-intl php-json php-sqlite3 php-mbstring php-xml composer &&
+sudo apt install php-cli php-curl php-intl php-json php-mbstring composer &&
 npm ci
 ```
 
@@ -38,11 +36,11 @@ If you are working on CSS and would like an easier time developing, you can run
 the `npx gulp watch` command. This will watch for any CSS and image changes,
 and rebuild on the fly.
 
-#### macOS 
+#### macOS
 
 First, make sure you have your system updated.
 
-Second, install the latest version of Node.js from [Nodejs.org](https://nodejs.org). 
+Second, install Node.js (18.x recommended) from [Nodejs.org](https://nodejs.org).
 
 Then follow these directions from your favorite shell:
 
@@ -67,7 +65,7 @@ you may find useful, you will need:
 
 * Everything required for "Simple PHP Server" (above)
 * The latest stable version of [Nginx](http://nginx.org)
-* `php7.0-fpm`
+* `php8.1-fpm`
 
 Then, we need to configure Nginx. To start, open up a configuration file in
 Nano.
