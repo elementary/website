@@ -18,11 +18,6 @@ return array(
   'previous_size'     => '1.49 GB',
   'previous_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
 
-  'chart_enable'         => false,
-  'chart_link_project'   => 'elementary',
-  'chart_link_milestone' => 'loki-rc1',
-  'chart_link_name'      => 'Loki RC1 Milestone',
-
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
