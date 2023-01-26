@@ -18,11 +18,6 @@ return array(
   'previous_size'     => '2.47 GB',
   'previous_magnet'   => '79c043454fc643b05aea16de848e5dce6eb8c9d9',
 
-  'chart_enable'         => false,
-  'chart_link_project'   => 'elementary',
-  'chart_link_milestone' => 'loki-rc1',
-  'chart_link_name'      => 'Loki RC1 Milestone',
-
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
@@ -30,10 +25,9 @@ return array(
 
   'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
-  'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
+  'mailchimp_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
-  'sentry_key' => false,
-  'sentry_pub' => false,
+  'sentry_dsn' => false,
 
   'twitter_consumer_key'    => 'test_ckey',
   'twitter_consumer_secret' => 'test_csecret',

@@ -1,26 +1,23 @@
 /**
- * gulpfile.babel.js
+ * gulpfile.mjs
  * Does things with things for other built things
  */
 
 import gulp from 'gulp'
 import cache from 'gulp-cached'
 import changed from 'gulp-changed'
+import rev from 'gulp-rev'
+import rename from 'gulp-rename'
 import { spawn } from 'child_process'
 
 import imagemin from 'gulp-imagemin'
-import svgo from 'gulp-svgo'
 
 import postcss from 'gulp-postcss'
-import cssnext from 'postcss-cssnext'
+import postcssPresetEnv from 'postcss-preset-env'
+import cssnano from 'cssnano'
 
 import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
-
-const browsers = [
-    'last 4 version',
-    'not ie <= 11'
-]
 
 /**
  * store
@@ -164,7 +161,7 @@ gulp.task('svg', () => {
     return gulp.src(src, { "allowEmpty": true,  base })
     .pipe(changed(dest))
     .pipe(cache('svg'))
-    .pipe(svgo())
+    .pipe(imagemin())
     .pipe(gulp.dest(dest))
 })
 
@@ -190,8 +187,15 @@ gulp.task('styles', () => {
     return gulp.src(src, { base })
     .pipe(changed(dest))
     .pipe(postcss([
-        cssnext({ browsers })
+        postcssPresetEnv(),
+        cssnano()
     ]))
+    .pipe(rev())
+    .pipe(gulp.dest(dest))
+    .pipe(rename({
+        dirname: "styles" // rename dir in manifest
+    }))
+    .pipe(rev.manifest('manifest.json'))
     .pipe(gulp.dest(dest))
 })
 

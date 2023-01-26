@@ -28,8 +28,13 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@2.22.0
         with:
-          php-version: '7.4'
+          php-version: '8.1'
           tools: composer
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 18
 
       - name: Setup submodules
         run: git submodule init && git submodule update --force --rebase

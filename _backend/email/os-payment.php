@@ -8,24 +8,26 @@
 require_once __DIR__ . '/../../_backend/preload.php';
 require_once __DIR__ . '/../../_backend/config.loader.php';
 
-$mandrill = new Mandrill($config['mandrill_key']);
+$mailchimp = new MailchimpTransactional\ApiClient();
+$mailchimp->setApiKey($config['mailchimp_key']);
 
 /**
  * email_os_payment
  * Emails an OS receipt from given stripe payment intent
  *
  * @param {\Stripe\PaymentIntent} $intent - Stripe intent used for payment
- * @return {Array} - Mandrill response
+ * @return {Array} - Mailchimp response
  */
 function email_os_payment (\Stripe\PaymentIntent $intent) {
-    global $mandrill;
+    global $mailchimp;
+
 
     if (!isset($intent) || !isset($intent['metadata'])) {
         throw new Exception('Unable to read intent metadata');
     }
 
     if (isset($intent['metadata']['receipt']) && $intent['metadata']['receipt'] === 'true') {
-        throw new Exception('Receipt alraedy sent');
+        throw new Exception('Receipt already sent');
     }
 
     $products = array();
@@ -59,13 +61,22 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
         )
     );
 
+    $email = "";
+    if (isset($intent['charges'])) {
+        $email = $intent['charges']['data'][0]['billing_details']['email'];
+    } else if (isset($intent['latest_charge'])) {
+        $email = $intent['latest_charge']['billing_details']['email'];
+    } else {
+        throw new Exception('Unable to find email address');
+    }
+
     $message = array(
         'subject' => 'elementary Purchase (Charge ' . $intent['id'] . ')',
         'from_email' => 'payment@elementary.io',
         'from_name' => 'elementary',
         'to' => array(
             array(
-                'email' => $intent['charges']['data'][0]['billing_details']['email'],
+                'email' => $email,
                 'type' => 'to'
             )
         ),
@@ -81,11 +92,15 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
         'merge_language' => 'handlebars'
     );
 
-    $res = $mandrill->messages->sendTemplate('os-purchase', $req, $message);
+    $res = $mailchimp->messages->sendTemplate([
+        "template_name" => "os-purchase",
+        "template_content" => $req,
+        "message" => $message
+    ]);
 
     foreach ($res as $mail) {
-        if (isset($mail['reject_reason']) && $mail['reject_reason'] !== '') {
-            throw new Exception($mail['reject_reason']);
+        if (isset($mail->reject_reason) && $mail->reject_reason !== '') {
+            throw new Exception($mail->reject_reason);
         }
     }
 
