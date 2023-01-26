@@ -2,7 +2,7 @@
 
 ## Recommended setup
 
-### Docker Web Server with Nginx and PHP
+### Docker Web Server with Nginx, PHP, and Node
 
 For a simple local development environment running on PHP, you will need:
 ```
