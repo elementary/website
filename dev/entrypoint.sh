@@ -3,7 +3,6 @@
 cd _backend
 composer up
 cd ../
-npm i -g npm
 npm ci
 npm run build
 service nginx start
