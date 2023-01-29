@@ -1,6 +1,20 @@
 # Contributing
 
-## Web Server
+## Recommended setup
+
+### Docker Web Server with Nginx, PHP, and Node
+
+For a simple local development environment running on PHP, you will need:
+```
+cd ./dev && docker-compose up -d
+```
+just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+<br>
+<hr>
+<br>
+
+## Manual setup
 
 ### Simple PHP Server
 
