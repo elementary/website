@@ -8,7 +8,7 @@ return array(
   'release_version'  => '7',
   'release_filename' => 'elementaryos-7.0-stable.20230129rc.iso',
   'release_size'     => '2.8 GB',
-  'release_magnet'   => '',
+  'release_magnet'   => '42b3c0e68ddf3e4be4b9cac2044c3ef472a32f92',
   'release_sha256'   => '2bdffe0b0944405e87d6612fe7879b7af770ced20346453b9ef4b6057f4dd0af',
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-7-Horus-FAQ',
 
