@@ -107,7 +107,7 @@
     <div class="two-thirds">
       <h2>elementary OS 7 Horus</h2>
       <p>Forward thinking and designed for real life with an improved sideloading and alt store experience, power profiles management, and using a next generation UI toolkit. OS 7 Helps you get the apps you need, Empowers you with new features and settings, and evolves our developer platform.</p>
-      <a class="button" href="https://blog.elementary.io/elementary-os-6-1-available-now/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
+      <a class="button" href="https://blog.elementary.io/os-7-available-now/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
       <a class="button" href="https://github.com/elementary/press-kit/archive/7-horus.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
     </div>
   </div>
