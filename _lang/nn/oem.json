@@ -25,7 +25,7 @@
     "System Settings (codenamed <a href=\"https://github.com/elementary/switchboard\" target=\"_blank\" rel=\"noopener\">Switchboard</a>) uses a concept of “Plugs” to provide pluggable settings for various hardware and software concerns. For example, <a href=\"https://github.com/elementary/switchboard-plug-mouse-touchpad/\" target=\"_blank\" rel=\"noopener\">Mouse & Touchpad settings</a> are provided by a plug.": "",
     "Switchboard": "",
     "OEMs can develop and ship custom plugs if special or unique hardware in the machine requires configuration in addition to what is available by default in elementary OS; for example, special sensors or input methods not present in most hardware. If relevant to a broader set of users, contributing it upstream to the <a href=\"https://github.com/elementary?q=switchboard-plug\" target=\"_blank\" rel=\"noopener\">existing plugs</a> is highly encouraged.": "",
-    "Documentation": "",
+    "Documentation": "Dokumentasjon",
     "OEM Info in About": "",
     "The <a href=\"https://github.com/elementary/switchboard-plug-about/\" target=\"_blank\" rel=\"noopener\">About</a> plug displays system information to the user and provides several system-wide actions, such as restoring settings, reporting issues, and getting help. In addition to software information (like the OS version), it also provides a space for hardware information. By default, this is filled in with a generic image and the system’s hostname. However, OEMs can provide custom branded data for this section.": "",
     "Switchboard About": "",
