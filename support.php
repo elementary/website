@@ -83,7 +83,7 @@ include $template['alert'];
 
 <section class="grid">
   <div class="two-thirds">
-    <a href="https://github.com/orgs/elementary/discussions/categories/q-a" target="_blank" rel="noopener" class="read-more">Other Questions & Help</a>
+    <a href="https://github.com/orgs/elementary/discussions/categories/q-a" target="_blank" rel="noopener" class="read-more">Other Questions &amp; Help</a>
   </div>
 </section>
 
