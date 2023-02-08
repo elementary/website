@@ -110,8 +110,8 @@
         <div class="half">
             <h3>Question &amp; Answer</h3>
             <p>We use GitHub Discussions for community Q&A. Anyone can create an account to start asking and answering.</p>
-            <a class="button flat" href="https://github.com/orgs/elementary/discussions/categories/q-a?discussions_q=category:Q&A+sort:date_created">New Questions</a>
-            <a class="button flat suggested-action" href="https://github.com/orgs/elementary/discussions/categories/q-a?discussions_q=category:Q&A+is:unanswered">Unanswered Questions</a>
+            <a class="button flat" href="https://github.com/orgs/elementary/discussions?discussions_q=category:Q%26A+sort:date_created">New Questions</a>
+            <a class="button flat suggested-action" href="https://github.com/orgs/elementary/discussions?discussions_q=category:Q%26A++is:unanswered">Unanswered Questions</a>
         </div>
         <div class="half">
             <h3>Documentation</h3>
