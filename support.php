@@ -20,64 +20,94 @@ include $template['alert'];
 </section>
 
 <div class="row apps">
-  <a class="app" href="https://github.com/elementary/appcenter/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/appcenter/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/appcenter.svg" alt="AppCenter"/>
     <span>AppCenter</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/calendar/discussions" target="_blank" rel="noopener">
-    <img width="64" height="64" src="images/thirdparty-icons/apps/64/calculator.svg" alt="Calendar"/>
+  <a class="app" href="https://github.com/elementary/calculator/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/calculator.svg" alt="Calculator"/>
     <span>Calculator</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/calendar/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/calendar/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/calendar.svg" alt="Calendar"/>
     <span>Calendar</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/camera/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/camera/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera"/>
     <span>Camera</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/code/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/code/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/code.svg" alt="Code"/>
     <span>Code</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/files/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/files/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/files.svg" alt="Files"/>
     <span>Files</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/mail/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/mail/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/mail.svg" alt="Mail"/>
     <span>Mail</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/music/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/music/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/music.svg" alt="Music"/>
     <span>Music</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/photos/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/photos/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/photos.svg" alt="Photos"/>
     <span>Photos</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/terminal/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/screenshot/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/screenshot.svg" alt="Screenshot"/>
+    <span>Screenshot</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/shortcut-overlay/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/shortcuts.svg" alt="Shortcuts"/>
+    <span>Shortcuts</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/tasks/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/tasks.svg" alt="Tasks"/>
+    <span>Tasks</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/terminal/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal"/>
     <span>Terminal</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/videos/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/videos/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/videos.svg" alt="Videos"/>
     <span>Videos</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/browser/discussions" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/browser/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/web.svg" alt="Web"/>
     <span>Web</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/installer/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/installer.svg" alt="Installer"/>
+    <span>Installer</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/gala/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/multitasking-view.svg" alt="Multitasking"/>
+    <span>Multitasking</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/switchboard/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/system-settings.svg" alt="System Settings"/>
+    <span>System Settings</span>
   </a>
 </div>
 
