@@ -62,7 +62,7 @@
     "Gestures": "",
     "elementary OS supports multi-touch gestures on supported hardware like touchpads and touch screens. By default, a three-finger swipe left or right switches workspaces while a three-finger swipe up enters the Multitasking View.": "",
     "Modify gestures from <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Mouse &amp; Touchpad</strong> → <strong>Gestures</strong>.": "",
-    "Hot Corners": "Dynamische hoeken",
+    "Hot Corners": "Interactieve hoeken",
     "Hot Corners are shortcuts activated by placing your cursor in the corner of the primary display. You can configure Hot Corners to activate multitasking actions like the window overview, workspace overview, and more.": "",
     "You can customize hot corners through <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Multitasking</strong>.": "",
     "Multiple Displays": "Meerdere Schermen",
