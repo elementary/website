@@ -401,10 +401,6 @@ div.icons-container > span:nth-child(6) { width: 128px; }
   }
 }
 
-div.icons-container.small-screen {
-  display: none;
-}
-
 @media only screen and (max-width: 450px) {
   #s128 {
     display: none;
