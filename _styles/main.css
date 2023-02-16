@@ -187,6 +187,7 @@ img.inline + div.inline {
 .inline-tweet::after {
   color: inherit;
   content: "\f099";
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome\ 5 Brands";
   font-style: normal;
   font-weight: inherit;
