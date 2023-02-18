@@ -33,7 +33,7 @@
     "Learn More": "מידע נוסף",
     "Third-Party Repositories": "מאגרי צד־שלישי",
     "It is highly discouraged to ship elementary OS with software repositories other than the defaults in elementary OS plus a single repository provided and controlled by the OEM. <strong>Third-party repos effectively give root access and the ability to overwrite any system packages to potentially untrusted third parties.</strong> Even if the party is trustworthy, an OEM’s customer’s security and privacy are now at stake if third parties are compromised, or they reuse their password on multiple services, etc.": "",
-    "Further, if a third-party repository ever becomes unmaintained or unpublished, <strong>it may prevent regular OS updates.</strong> This could hold back potentially serious security and stability fixes from reaching the OEM’s customers.": "",
+    "Further, if a third-party repository ever becomes unmaintained or unpublished, <strong>it may prevent regular OS updates.</strong> This could hold back potentially serious security and stability fixes from reaching the OEM’s customers.": "יתרה מכך, אם תחזוקה של מאגר צד־שלישי תיפסק או שהמאגר לא יהיה זמין עוד, <strong>זה עלול לפגוע בעדכוני מערכת ההפעלה השוטפים.</strong> מצב כזה יכול לעכב הגעה של תיקוני אבטחה ויציבות ללקוחות של אותו הספק.",
     "News &amp; Announcements": "חדשות והכרזות",
     "We publish frequent updates on development, major announcements, tips for developers, featured apps, and more on our blog.": "אנו מפרסמים עדכונים תכופים על פיתוח, הכרזות משמעותיות, עצות למפתחים, יישומים מומלצים ועוד בבלוג שלנו.",
     "Visit our Blog": "ביקור בבלוג שלנו",
