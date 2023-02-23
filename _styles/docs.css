@@ -40,6 +40,7 @@ h4 a.heading-link:hover::before,
 h5 a.heading-link:hover::before,
 h6 a.heading-link:hover::before {
   content: "\f0c1";
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome\ 5 Pro";
   font-size: 0.75em;
   font-weight: inherit;
@@ -399,10 +400,6 @@ div.icons-container > span:nth-child(6) { width: 128px; }
   div.icons-container > img {
     margin: 0.5em;
   }
-}
-
-div.icons-container.small-screen {
-  display: none;
 }
 
 @media only screen and (max-width: 450px) {
