@@ -81,6 +81,14 @@ if (
         $Content = str_replace('{#release_filename}', $config['release_filename'], $Content);
         $Content = str_replace('{#release_sha256}', $config['release_sha256'], $Content);
         $Content = str_replace('{#release_faq}', $config['release_faq'], $Content);
+
+        // Replace any of the scripts specified in the markdown with our cache-busted versions
+        // from the manifest
+        $scriptPattern = '/src\s*=\s*"(scripts.*.js)"/';
+        $Content = preg_replace_callback($scriptPattern, function($match) use ($scriptsManifest) {
+            return str_replace($match[1], $scriptsManifest[$match[1]], $match[0]);
+        }, $Content);
+
         $Content = $l10n->translate_html($Content);
         echo $Content;
 
