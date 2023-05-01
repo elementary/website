@@ -7,10 +7,10 @@
   },
   "description": "The elementary.io Website http://elementary.io",
   "dependencies": {
-    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
     "core-js": "^3.30.1",
-    "cssnano": "^6.0.0",
+    "cssnano": "^6.0.1",
     "glob": "^9.3.5",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
@@ -21,7 +21,7 @@
     "gulp-rev": "^10.0.0",
     "postcss-preset-env": "^8.3.2",
     "scriptjs": "^2.5.9",
-    "webpack": "^5.80.0",
+    "webpack": "^5.81.0",
     "webpack-manifest-plugin": "^5.0.0"
   },
   "devDependencies": {
