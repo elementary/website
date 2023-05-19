@@ -43,7 +43,7 @@
     "You can also drag a window to the top of the desktop or double-click its header bar to maximize, and drag from the top or double-click the header bar to unmaximize.": "Môžete tiež potiahnuť okno k hornému okraju obrazovky alebo dvojitým kliknutím na hornú lištu maximalizovať aplikáciu. Toto je možné aj v opačnom poradí – potiahnutím nahor alebo dvojitým kliknutím zrušíte maximalizáciu aplikácie.",
     "Resizing": "Zmena veľkosti",
     "Most app windows can be resized by draging from any edge of the window. You can also secondary-click a window's header bar and choose <strong>Resize</strong> or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.": "Veľkosť väčšiny okien aplikácií je možné zmeniť podržaním tlačidla myši a posúvaním od ktoréhokoľvek okraju okna. Tiež je možné kliknúť sekundárnym tlačidlom myši na hornú lištu a vybrať <strong>Zmeniť veľkosť</strong> alebo stlačiť <kbd>Alt</kbd><kbd>F8</kbd> a tým vstúpiť do režimu zmeny veľkosti: následne posúvajte kurzor tým smerom, v ktorom chcete zmeniť veľkosť okna.",
-    "Multitasking": "Viac úloh súčasne",
+    "Multitasking": "Zobrazenie úloh",
     "elementary OS uses both windows and workspaces for multitasking.": "elementary OS používa pre prácu na viacerých úlohách súčasne okná aj pracovné plochy.",
     "Windows": "Okná",
     "App windows can overlap on your desktop and be moved around. You can switch between open windows several ways:": "Okná aplikácií sa môžu prekrývať a dajú sa presúvať. Medzi otvorenými oknami je možné sa prepínať viacerými spôsobmi:",
