@@ -19,7 +19,7 @@
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-rev": "^10.0.0",
-    "postcss-preset-env": "^8.3.2",
+    "postcss-preset-env": "^8.4.1",
     "scriptjs": "^2.5.9",
     "webpack": "^5.81.0",
     "webpack-manifest-plugin": "^5.0.0"
