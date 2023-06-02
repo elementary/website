@@ -158,18 +158,13 @@ class L10n
             return;
         }
 
-        $url = $sitewide['root'];
-        $url .= $this->lang.$page['path'];
-
-        if (str_contains($url, 'team')) {
-            header("Location: https://github.com/orgs/elementary/people");
-        }
-
         // Redirect the user if we are translating the page
         if ((isset($_GET['lang']) || isset($_COOKIE['language']))
             && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
             && $this->lang != 'en') {
 
+            $url = $sitewide['root'];
+            $url .= $this->lang.$page['path'];
             $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
             header('Location: '.$url);
             exit();
