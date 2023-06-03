@@ -20,6 +20,7 @@
         "ext-json": ">=7"
     },
     "require-dev": {
-        "league/climate": "^3.2"
+        "league/climate": "^3.2",
+        "squizlabs/php_codesniffer": "3.*"
     }
 }
