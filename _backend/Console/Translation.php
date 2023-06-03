@@ -49,7 +49,7 @@ if ($cli->arguments->defined('help')) {
 
 $isVerbose = $cli->arguments->defined('verbose');
 
-$languages = L10n::language_folders();
+$languages = L10n::languageFolders();
 if ($cli->arguments->defined('language') !== false) {
     $cliLanguage = $cli->arguments->get('language');
 
@@ -134,7 +134,10 @@ foreach ($pages as $page) {
         }
 
         if (count($newTranslations) > 0) {
-            $newData = json_encode($newTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES );
+            $newData = json_encode(
+                $newTranslations,
+                JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+            );
             file_put_contents($languagePath, $newData . PHP_EOL);
         } elseif (file_exists($languagePath)) {
             unlink($languagePath);

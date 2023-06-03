@@ -1,81 +1,81 @@
 <?php
-  require_once __DIR__.'/_backend/classify.current.php';
-  require_once __DIR__.'/_backend/preload.php';
-  require_once __DIR__.'/_backend/os-payment.php';
-  require_once __DIR__.'/_backend/email/os-payment.php';
+require_once __DIR__.'/_backend/classify.current.php';
+require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/os-payment.php';
+require_once __DIR__.'/_backend/email/os-payment.php';
 
-  $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
+$page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
-  $page['scripts'] = array(
-    'scripts/download.js',
-    'scripts/blog.js',
-    'scripts/showcase.run.js'
-  );
+$page['scripts'] = array(
+  'scripts/download.js',
+  'scripts/blog.js',
+  'scripts/showcase.run.js'
+);
 
-  $page['styles'] = array(
-    'styles/home.css',
-    'styles/blog.css'
-  );
+$page['styles'] = array(
+  'styles/home.css',
+  'styles/blog.css'
+);
 
-  $already_paid = (os_payment_getcookie($config['release_version']) > 0);
-  $sendPaymentAnalytics = false;
+$already_paid = (os_payment_getcookie($config['release_version']) > 0);
+$sendPaymentAnalytics = false;
 
-  $stripe = new \Stripe\StripeClient([
-    "api_key" => $config['stripe_sk'],
-    "stripe_version" => "2022-11-15"
-  ]);
+$stripe = new \Stripe\StripeClient([
+  "api_key" => $config['stripe_sk'],
+  "stripe_version" => "2022-11-15"
+]);
 
-  if (isset($_GET['checkout_session_id'])) {
-      if ($already_paid) {
+if (isset($_GET['checkout_session_id'])) {
+    if ($already_paid) {
         header("Location: " . $sitewide['root']);
         die();
-      }
+    }
 
-      try {
-          $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
-      } catch (\Stripe\Exception $e) {
-          header("Location: " . $sitewide['root']);
-          die();
-      }
+    try {
+        $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
+    } catch (\Stripe\Exception $e) {
+        header("Location: " . $sitewide['root']);
+        die();
+    }
 
-      if ($session->status === "expired") {
-          header("Location: " . $sitewide['root']);
-          die();
-      }
+    if ($session->status === "expired") {
+        header("Location: " . $sitewide['root']);
+        die();
+    }
 
-      $paymentAmount = $session->amount_total;
-      $paid = false;
+    $paymentAmount = $session->amount_total;
+    $paid = false;
 
-      if(!$already_paid) {
+    if (!$already_paid) {
         $sendPaymentAnalytics = true;
-      }
+    }
 
-      if ($session->payment_status === "paid") {
-          $paid = true;
-          $already_paid = true;
-          os_payment_setcookie($config['release_version'], $session->amount_total);
+    if ($session->payment_status === "paid") {
+        $paid = true;
+        $already_paid = true;
+        os_payment_setcookie($config['release_version'], $session->amount_total);
 
-          $intent = $stripe->paymentIntents->retrieve(
+        $intent = $stripe->paymentIntents->retrieve(
             $session['payment_intent'],
             ['expand' => ['latest_charge']]
-          );
-          try {
-            email_os_payment ($intent);
-          } catch (Exception $e) {
+        );
+        try {
+            email_os_payment($intent);
+        } catch (Exception $e) {
             header("Location: " . $sitewide['root']);
             die();
-          }
-      }
+        }
+    }
 
-      $page['scripts'][] = 'scripts/payment-complete.js';
-  }
+    $page['scripts'][] = 'scripts/payment-complete.js';
+}
 
-  include $template['header'];
-  include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
     <script>
-        <?php if($sendPaymentAnalytics && $paid) {?>
+        <?php if ($sendPaymentAnalytics && $paid) {?>
             plausible('Payment', {
                 props: {
                     Input: <?php echo($paymentAmount)?>,
@@ -83,7 +83,7 @@
                     Action: 'Complete'
                 }
             });
-        <?php } else if ($sendPaymentAnalytics) { ?>
+        <?php } elseif ($sendPaymentAnalytics) { ?>
             plausible('Payment', {
                 props: {
                     Input: <?php echo($paymentAmount)?>,
@@ -111,8 +111,8 @@
         <div class="whole">
           <div id="amounts">
             <?php
-              if (!$already_paid) {
-            ?>
+            if (!$already_paid) {
+                ?>
             <h4 id="pay-what-you-want">Pay What You Can:</h4>
             <div id="choice-buttons">
               <button id="amount-ten"  value="10" class="small-button payment-button target-amount">10</button>
@@ -124,8 +124,8 @@
                 <p class="small-label focus-reveal text-center">Enter any dollar amount.</p>
               </div>
             </div>
-            <?php
-              }
+                <?php
+            }
             ?>
             <div class="column">
               <form id="payment-form" action="<?php echo $sitewide['root']?>api/create-checkout-session" method="POST">
@@ -142,13 +142,13 @@
             <div style="clear:both;"></div>
 
             <?php
-              if ($already_paid) {
-            ?>
+            if ($already_paid) {
+                ?>
             <div id="choice-buttons">
               <input type="hidden" id="amount-twenty" value="0">
             </div>
-            <?php
-              }
+                <?php
+            }
             ?>
           </div>
         </div>

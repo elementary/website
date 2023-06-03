@@ -4,7 +4,7 @@ require_once 'classify.functions.php';
 require_once 'classify.get_ip.php';
 
 $region = getDownloadRegion($ip);
-if ( is_array($region) ) {
+if (is_array($region)) {
     $hash = getIPHash($ip);
     $region = $region[$hash];
 }

@@ -1,22 +1,23 @@
 <?php
-    require_once __DIR__.'/_backend/classify.current.php';
-    require_once __DIR__.'/_backend/preload.php';
-    require_once __DIR__.'/_backend/os-payment.php';
-    $page['title'] = 'Thank You for Downloading elementary OS';
-    $page['theme-color'] = '#3E4E54';
+require_once __DIR__.'/_backend/classify.current.php';
+require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/os-payment.php';
 
-    $page['scripts'] = array(
-        'scripts/download.js',
-    );
+$page['title'] = 'Thank You for Downloading elementary OS';
+$page['theme-color'] = '#3E4E54';
 
-    $already_paid = (os_payment_getcookie($config['previous_version']) > 0);
-    if (!$already_paid) {
-        header("Location: " . $sitewide['root']);
-        exit;
-    }
+$page['scripts'] = array(
+    'scripts/download.js',
+);
 
-    include $template['header'];
-    include $template['alert'];
+$already_paid = (os_payment_getcookie($config['previous_version']) > 0);
+if (!$already_paid) {
+    header("Location: " . $sitewide['root']);
+    exit;
+}
+
+include $template['header'];
+include $template['alert'];
 ?>
 
 <section>

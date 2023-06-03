@@ -1,10 +1,12 @@
 <?php
 
 if (!isset($l10n)) {
-   $l10n = new \App\Lib\L10n();
+    $l10n = new \App\Lib\L10n();
 }
 $page['lang'] = $l10n->lang();
-if (!isset($page['lang'])) $page['lang'] = 'en';
+if (!isset($page['lang'])) {
+    $page['lang'] = 'en';
+}
 
 $page['lang-root'] = $sitewide['root'];
 if ($page['lang'] != 'en') {
@@ -24,16 +26,22 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
-if (!isset($page['styles'])) $page['styles'] = array();
-if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
-if (!isset($page['scripts'])) $page['scripts'] = array();
+if (!isset($page['styles'])) {
+    $page['styles'] = array();
+}
+if (!isset($page['script-plugins'])) {
+    $page['script-plugins'] = array();
+}
+if (!isset($page['scripts'])) {
+    $page['scripts'] = array();
+}
 
 $scriptsManifest = json_decode(file_get_contents(__DIR__.'/../scripts/manifest.json', true), true);
 $stylesManifest = json_decode(file_get_contents(__DIR__.'/../styles/manifest.json', true), true);
 
 $l10n->init();
-$l10n->set_domain('layout');
-$l10n->begin_html_translation();
+$l10n->setDomain('layout');
+$l10n->beginHtmlTranslation();
 
 ?>
 
@@ -88,30 +96,32 @@ $l10n->begin_html_translation();
         <script src="<?php echo $scriptsManifest["scripts/runtime.js"]?>"></script>
         <script src="<?php echo $scriptsManifest["scripts/main.js"]?>" async></script>
 
-        <?php if ( !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io' ) { ?>
+            <?php if (!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io') { ?>
         <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
-        <?php } ?>
+            <?php } ?>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
-        <?php
+            <?php
             // loads all async javascript tags here
             foreach ($page['scripts'] as $one => $two) {
                 $src = (!is_string($one)) ? $two : $one;
                 $atr = (is_array($two)) ? $two : array();
 
-                if (!isset($atr['async'])) $atr['async'] = true;
+                if (!isset($atr['async'])) {
+                    $atr['async'] = true;
+                }
 
                 $atr_string = "";
                 foreach ($atr as $name => $setting) {
                     if (is_bool($setting) && $setting === true) {
                         $atr_string .= ' ' . $name;
-                    } else if (!is_bool($setting)) {
+                    } elseif (!is_bool($setting)) {
                         $atr_string .= ' ' . $name . '="' . $setting . '"';
                     }
                 }
-        ?>
+                ?>
         <script src="<?php echo $scriptsManifest[$src] ?>"<?php echo $atr_string ?>></script>
-        <?php } ?>
+            <?php } ?>
         <?php } ?>
     </head>
     <body class="page-<?php echo $page['name']; ?>">
@@ -146,4 +156,4 @@ $l10n->begin_html_translation();
 
 <?php
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

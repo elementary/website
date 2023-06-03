@@ -1,17 +1,18 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Get Involved with elementary OS';
-    $page['theme-color'] = '#3E4E54';
+$page['title'] = 'Get Involved with elementary OS';
+$page['theme-color'] = '#3E4E54';
 
-    $page['styles'] = array(
-        'https://fonts.googleapis.com/css?family=Marck+Script',
-        'styles/get-involved.css'
-    );
+$page['styles'] = array(
+    'https://fonts.googleapis.com/css?family=Marck+Script',
+    'styles/get-involved.css'
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
+
 <section class="hero">
     <div class="grid">
         <div class="two-thirds">
@@ -47,7 +48,7 @@
              <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
          </div>
      </div>
- <?php } ?>
+<?php } ?>
 
     <div class="grid">
         <div class="half">

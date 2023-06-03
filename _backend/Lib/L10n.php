@@ -45,7 +45,7 @@ class L10n
      *
      * @return array A list of languages we currently have
      */
-    public static function language_folders()
+    public static function languageFolders()
     {
         $languages = array();
 
@@ -144,14 +144,16 @@ class L10n
 
     protected $domain = null;
 
-    public function __construct($lang = null) {
+    public function __construct($lang = null)
+    {
         if (empty($lang)) {
-            $lang = $this->get_page_lang();
+            $lang = $this->getPageLang();
         }
         $this->lang = $lang;
     }
 
-    public function init() {
+    public function init()
+    {
         global $sitewide, $page; // Global site variables
 
         if (defined('HTML_I18N')) {
@@ -162,7 +164,6 @@ class L10n
         if ((isset($_GET['lang']) || isset($_COOKIE['language']))
             && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
             && $this->lang != 'en') {
-
             $url = $sitewide['root'];
             $url .= $this->lang.$page['path'];
             $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
@@ -172,20 +173,23 @@ class L10n
 
         // Set cookie if the user has chosen the current language
         if (isset($_GET['lang'])) {
-            setcookie('language', $this->lang,  time() + 60*60*24*30, '/'); // 30 days
+            setcookie('language', $this->lang, time() + 60*60*24*30, '/'); // 30 days
         }
     }
 
-    public function list_langs() {
+    public function listLangs()
+    {
         return $this->available_langs;
     }
 
     // DEPRECATED: use the static function instead
-    public function lang_dir($lang) {
+    public function langDir($lang)
+    {
         return static::languageDirectory($lang);
     }
 
-    public function is_lang($lang) {
+    public function isLang($lang)
+    {
         if (!is_string($lang)) {
             return false;
         }
@@ -199,8 +203,9 @@ class L10n
         return array_key_exists($lang, $this->available_langs);
     }
 
-    public function user_lang() {
-        if (isset($_COOKIE['language']) && $this->is_lang($_COOKIE['language'])) {
+    public function userLang()
+    {
+        if (isset($_COOKIE['language']) && $this->isLang($_COOKIE['language'])) {
             return $_COOKIE['language'];
         }
 
@@ -222,12 +227,12 @@ class L10n
 
             if (!empty($locale['region'])) {
                 $lang = $locale['language'].'_'.$locale['region'];
-                if ($this->is_lang($lang)) {
+                if ($this->isLang($lang)) {
                     return $lang;
                 }
             }
 
-            if (!empty($locale['language']) && $this->is_lang($locale['language'])) {
+            if (!empty($locale['language']) && $this->isLang($locale['language'])) {
                 return $locale['language'];
             }
         }
@@ -235,14 +240,15 @@ class L10n
         return null;
     }
 
-    public function load_translations($index) {
+    public function loadTranslations($index)
+    {
         $lang = $this->lang;
 
-        if (!$this->is_lang($lang)) {
+        if (!$this->isLang($lang)) {
             return false;
         }
 
-        $langFile = $this->lang_dir($lang).'/'.$index.'.json';
+        $langFile = $this->langDir($lang).'/'.$index.'.json';
         if (!file_exists($langFile)) {
             return false;
         }
@@ -251,11 +257,13 @@ class L10n
         return json_decode($json, true);
     }
 
-    protected function load_domain($domain) {
-        $this->translations[$domain] = $this->load_translations($domain);
+    protected function loadDomain($domain)
+    {
+        $this->translations[$domain] = $this->loadTranslations($domain);
     }
 
-    public function set_domain($domain) {
+    public function setDomain($domain)
+    {
         if (ob_get_level()) {
             ob_flush(); // Flush output buffer
         }
@@ -263,14 +271,15 @@ class L10n
         $this->domain = $domain;
 
         if (!isset($this->translations[$domain])) {
-            $this->load_domain($domain);
+            $this->loadDomain($domain);
         }
     }
 
     /**
      * Translate a string. Returns the original string if no translation was found.
      */
-    public function translate($id, $domain = null, $string = null) {
+    public function translate($id, $domain = null, $string = null)
+    {
         if (empty($domain)) {
             $domain = $this->domain;
         }
@@ -278,7 +287,7 @@ class L10n
             $string = $id;
         }
         if (!isset($this->translations[$domain])) {
-            $this->load_domain($domain);
+            $this->loadDomain($domain);
         }
 
         if (isset($this->translations[$domain][$id]) &&
@@ -295,7 +304,8 @@ class L10n
      * Can be provided a $translate callback to override default behaviour.
      * (Useful to extract strings from a file for instance.)
      */
-    public function translate_html($input, $translate = null) {
+    public function translateHtml($input, $translate = null)
+    {
         if (empty($translate)) {
             $translate = array($this, 'translate');
         }
@@ -475,21 +485,23 @@ class L10n
     /**
      * Begin to translate outputted HTML.
      */
-    public function begin_html_translation() {
+    public function beginHtmlTranslation()
+    {
         if (defined('HTML_I18N')) { // Do not allow nested output buffering
             return;
         }
         define('HTML_I18N', 1);
 
         ob_start(function ($input) {
-            return $this->translate_html($input);
+            return $this->translateHtml($input);
         });
     }
 
     /**
      * End outputted HTML translation.
      */
-    public function end_html_translation() {
+    public function endHtmlTranslation()
+    {
         if (!ob_get_level()) {
             return;
         }
@@ -497,19 +509,21 @@ class L10n
         ob_end_flush();
     }
 
-    public function get_page_lang() {
+    public function getPageLang()
+    {
         if (isset($_GET['lang'])) {
             $lang = $_GET['lang'];
         } else {
-            $lang = $this->user_lang();
+            $lang = $this->userLang();
         }
-        if (!$this->is_lang($lang)) {
+        if (!$this->isLang($lang)) {
             $lang = 'en';
         }
         return $lang;
     }
 
-    public function lang() {
+    public function lang()
+    {
         return $this->lang;
     }
 }

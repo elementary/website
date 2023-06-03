@@ -14,8 +14,7 @@ if (isset($_POST['amount'])) {
         isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
         $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
         $protocol = 'https://';
-    }
-    else {
+    } else {
         $protocol = 'http://';
     }
 
@@ -37,7 +36,8 @@ if (isset($_POST['amount'])) {
     ]);
 
     $stripe->paymentIntents->update(
-        $checkout_session['payment_intent'], [
+        $checkout_session['payment_intent'],
+        [
             'description' => "$config[release_title] $config[release_version]",
             'metadata' => array(
                 'receipt' => 'false',
@@ -51,4 +51,3 @@ if (isset($_POST['amount'])) {
 } else {
     echo $config['stripe_pk'];
 }
-?>

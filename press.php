@@ -1,14 +1,14 @@
 <?php
-  require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-  $page['title'] = 'Press &sdot; elementary';
+$page['title'] = 'Press &sdot; elementary';
+$page['styles'] = array(
+  'styles/press.css'
+);
 
-  $page['styles'] = array(
-    'styles/press.css'
-  );
+include $template['header'];
+include $template['alert'];
 
-  include $template['header'];
-  include $template['alert'];
 ?>
 
 <div class="grid">
