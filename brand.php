@@ -1,14 +1,14 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Brand &sdot; elementary';
+$page['title'] = 'Brand &sdot; elementary';
 
-    $page['styles'] = array(
-        'styles/brand.css'
-    );
+$page['styles'] = array(
+    'styles/brand.css'
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
 <div class="row docs">

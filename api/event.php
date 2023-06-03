@@ -7,12 +7,13 @@
 
 require_once __DIR__.'/../_backend/event.php';
 
-function send_response(int $status, $body) {
+function send_response(int $status, $body)
+{
     if ($status === 200) {
         header('HTTP/1.0 200 OK');
-    } else if ($status === 400) {
+    } elseif ($status === 400) {
         header('HTTP/1.0 400 Bad Request');
-    } else if ($status = 404) {
+    } elseif ($status = 404) {
         header('HTTP/1.0 404 Not Found');
     }
 
@@ -30,7 +31,7 @@ function send_response(int $status, $body) {
  */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
-        $req = json_decode(file_get_contents('php://input'), TRUE);
+        $req = json_decode(file_get_contents('php://input'), true);
     } catch (Exception $e) {
         $res = array('errors' => [array(
             'status' => 400,

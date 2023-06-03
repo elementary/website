@@ -4,11 +4,10 @@ require_once __DIR__.'/settings.php';
 
 use ParsedownExtra;
 
-if (
-    is_readable($Request['Directory']) ||
+if (is_readable($Request['Directory']) ||
     is_readable($Request['Markdown'])
 ) {
-    if ( is_dir($Request['Directory']) ) {
+    if (is_dir($Request['Directory'])) {
         // List pages
 
         // Header
@@ -18,7 +17,7 @@ if (
         echo '<div class="row docs-index">';
         require_once $MDR['Core'].'/function.url_to_title.php';
         $Title = url_to_title($Request['Trimmed']);
-        if ( !empty($Title) ) {
+        if (!empty($Title)) {
             echo '<h2>'.$Title.'</h2>';
         }
 
@@ -31,7 +30,7 @@ if (
         $Files = Title_Files($Files);
 
         // List suitable files, or error accordingly.
-        if ( empty($Files) ) {
+        if (empty($Files)) {
             // Don't 404, because the directory does exist.
             echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
         } else {
@@ -45,7 +44,7 @@ if (
     } else {
         // Render the file
 
-        if ( is_readable($Request['Directory']) ) {
+        if (is_readable($Request['Directory'])) {
             // Apparently this isn't a directory, just a poorly named file.
             $Content = file_get_contents($Request['Directory']);
             $Request['Source'] = $Request['Directory'];
@@ -85,11 +84,11 @@ if (
         // Replace any of the scripts specified in the markdown with our cache-busted versions
         // from the manifest
         $scriptPattern = '/src\s*=\s*"(scripts.*.js)"/';
-        $Content = preg_replace_callback($scriptPattern, function($match) use ($scriptsManifest) {
+        $Content = preg_replace_callback($scriptPattern, function ($match) use ($scriptsManifest) {
             return str_replace($match[1], $scriptsManifest[$match[1]], $match[0]);
         }, $Content);
 
-        $Content = $l10n->translate_html($Content);
+        $Content = $l10n->translateHtml($Content);
         echo $Content;
 
         echo '</div>';

@@ -18,7 +18,8 @@ $mailchimp->setApiKey($config['mailchimp_key']);
  * @param {\Stripe\PaymentIntent} $intent - Stripe intent used for payment
  * @return {Array} - Mailchimp response
  */
-function email_os_payment (\Stripe\PaymentIntent $intent) {
+function email_os_payment(\Stripe\PaymentIntent $intent)
+{
     global $mailchimp;
 
 
@@ -64,7 +65,7 @@ function email_os_payment (\Stripe\PaymentIntent $intent) {
     $email = "";
     if (isset($intent['charges'])) {
         $email = $intent['charges']['data'][0]['billing_details']['email'];
-    } else if (isset($intent['latest_charge'])) {
+    } elseif (isset($intent['latest_charge'])) {
         $email = $intent['latest_charge']['billing_details']['email'];
     } else {
         throw new Exception('Unable to find email address');

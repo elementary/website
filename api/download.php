@@ -18,7 +18,8 @@ require_once __DIR__.'/../_backend/os-payment.php';
  *
  * @return {Void}
  */
-function go_home() {
+function go_home()
+{
     global $sitewide;
 
     header("Location: " . $sitewide['root']);
@@ -26,7 +27,7 @@ function go_home() {
 }
 
 // everything else falls into a great pyrimid of php ifs
-if(isset($_GET['charge'])) {
+if (isset($_GET['charge'])) {
     $charge_id = $_GET['charge'];
 
     if (substr($charge_id, 0, 3) !== 'ch_') {
@@ -38,7 +39,7 @@ if(isset($_GET['charge'])) {
         $charge = \Stripe\Charge::retrieve($charge_id);
     } catch (Exception $e) {
         if (isset($e->httpStatus) && $e->httpStatus !== 404) {
-        return go_home();
+            return go_home();
         }
     }
 
@@ -99,7 +100,7 @@ foreach ($products as $product) {
                 go_home();
 
             // If the purchased major matches the previous major
-            } else if ($isoMajor == $previousMajor) {
+            } elseif ($isoMajor == $previousMajor) {
                 // Override $isoVersion to match the previous release,
                 // so long as it's only a minor upgrade.
                 $isoVersion = $config['previous_version'];
@@ -114,7 +115,6 @@ foreach ($products as $product) {
             } else {
                 go_home();
             }
-
         }
     }
 }

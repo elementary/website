@@ -1,15 +1,15 @@
 <?php
-  require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-  $page['title'] = 'Privacy &sdot; elementary';
+$page['title'] = 'Privacy &sdot; elementary';
 
-  $page['styles'] = array(
-    'styles/docs.css',
-    'styles/privacy.css'
-  );
+$page['styles'] = array(
+  'styles/docs.css',
+  'styles/privacy.css'
+);
 
-  include $template['header'];
-  include $template['alert'];
+include $template['header'];
+include $template['alert'];
 
 ?>
 

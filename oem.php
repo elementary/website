@@ -1,14 +1,14 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Information for OEMs &sdot; elementary';
+$page['title'] = 'Information for OEMs &sdot; elementary';
 
-    $page['styles'] = array(
-        'styles/oem.css'
-    );
+$page['styles'] = array(
+    'styles/oem.css'
+);
 
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
 
 <div class="grid">

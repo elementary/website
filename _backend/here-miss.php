@@ -27,22 +27,22 @@
 $iev = false;
 $isie = false;
 $dnt = false;
-if ( isset($_SERVER['HTTP_USER_AGENT']) ) {
+if (isset($_SERVER['HTTP_USER_AGENT'])) {
     $ua = htmlentities($_SERVER['HTTP_USER_AGENT']);
 } else {
     $ua = false;
 }
-if ( !isset($respectIE) ) {
+if (!isset($respectIE)) {
     $respectIE = false;
 }
 
 // 5 - 10
 $msie = strrpos($ua, 'MSIE ');
-if ( $msie !== false ) {
+if ($msie !== false) {
     $iev = intval(substr($ua, ($msie + 5), strrpos($ua, '.', $msie)));
 
 // >= 11 (Majority)
-} else if ( strrpos($ua, 'Trident/') !== false ) {
+} elseif (strrpos($ua, 'Trident/') !== false) {
     $rv = strrpos($ua, 'rv:');
     $iev = intval(substr($ua, ($rv + 3), strrpos($ua, '.', $rv)));
 }
@@ -51,7 +51,7 @@ if ( $msie !== false ) {
 // Rarely used.
 
 // If is IE, mark it as so.
-if ( $iev ) {
+if ($iev) {
     $isie = true;
 }
 
