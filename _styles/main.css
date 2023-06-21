@@ -3,7 +3,7 @@
 * This file is part of elementary.io   *
 ***************************************/
 
-@import url("/fonts/inter.css");
+@import url('/fonts/inter.css');
 
 :root {
   --ui-font: Inter, Helvetica, Roboto, sans-serif;
@@ -129,7 +129,7 @@ p.small-label {
 }
 
 q {
-  font-family: "Marck Script", cursive;
+  font-family: 'Marck Script', cursive;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -255,7 +255,7 @@ nav {
 
 .nav-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
@@ -272,57 +272,11 @@ nav ul {
   display: inline-block;
   list-style: none;
   margin: 0;
-  padding: 0 12px;
-}
-
-nav .menu-button {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex: none;
-  width: 24px;
-  height: 24px;
   padding: 0;
-  margin: 12px 24px;
-  border: none;
 }
 
-nav .menu-button.enabled {
-  display: inline-block;
-}
-
-nav .menu-button.enabled + .nav-content {
-  display: none;
-}
-
-nav .menu-button.enabled[aria-expanded="true"] + .nav-content {
-  display: flex;
-}
-
-nav .menu-button svg {
-  width: 24px;
-  height: 24px;
-  box-shadow: nonw;
-  fill: #333;
-}
-
-nav .menu-button,
-nav .menu-button:hover,
-nav .menu-button:focus,
-nav .menu-button:active {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-nav ul:first-of-type {
-  display: flex;
-  flex-direction: column;
+nav ul:first-child {
   flex: 0 0 auto;
-}
-
-nav ul:first-of-type li {
-  border-bottom: 1px solid #333;
 }
 
 nav li {
@@ -338,16 +292,14 @@ nav a:visited {
   padding: 0 12px;
 }
 
-nav a:focus,
-.menu-button:focus svg {
+nav a:focus {
   color: #08c;
   fill: #08c;
   text-decoration: none;
 }
 
 nav a:hover,
-nav a:visited:hover,
-nav .menu-button:hover svg {
+nav a:visited:hover {
   opacity: 0.7;
 }
 
@@ -412,37 +364,6 @@ nav .logomark:focus .logomark-svg {
 
   html.ie-legacy .nav-content > .right {
     float: left;
-  }
-}
-
-@media (min-width: 800px) {
-  .nav-content {
-    flex-direction: row;
-    padding: 0;
-  }
-
-  nav .menu-button.enabled {
-    display: none;
-  }
-
-  nav .menu-button.enabled + .nav-content {
-    display: flex;
-  }
-
-  .nav-content {
-    display: flex;
-  }
-
-  nav ul {
-    padding: 0;
-  }
-
-  nav ul:first-of-type {
-    flex-direction: row;
-  }
-
-  nav ul:first-of-type li {
-    border: none;
   }
 }
 
@@ -858,13 +779,7 @@ select,
 .button {
   appearance: none;
   background-color: transparent;
-  background-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      transparent 50%,
-      rgba(0, 0, 0, 0.04)
-    );
+  background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   box-shadow:
