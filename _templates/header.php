@@ -113,6 +113,7 @@ $l10n->begin_html_translation();
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
+            <button class="menu-button" title="Toggle navigation menu" aria-label="Toggle navigation menu" aria-expanded="false"><?php include __DIR__.'/../images/menu.svg'; ?></button>
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
