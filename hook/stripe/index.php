@@ -16,9 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST)) {
 }
 
 try {
-    $res = json_decode(file_get_contents('php://input'), TRUE);
+    $res = json_decode(file_get_contents('php://input'), true);
 
-    if ($res == null) throw new Exception('Unable to decode');
+    if ($res == null) {
+        throw new Exception('Unable to decode');
+    }
 } catch (Exception $e) {
     header('HTTP/1.0 400 Bad Request');
     echo 'Unable to decode data';

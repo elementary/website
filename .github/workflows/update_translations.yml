@@ -5,9 +5,11 @@ name: Update Translations
 on:
   schedule:
     - cron:  "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   update:
@@ -18,16 +20,21 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: 'master'
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@1.8.7
+        uses: shivammathur/setup-php@2.22.0
         with:
-          php-version: '7.4'
+          php-version: '8.1'
           tools: composer
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 18
 
       - name: Setup submodules
         run: git submodule init && git submodule update --force --rebase
@@ -35,24 +42,23 @@ jobs:
       - name: Install Composer
         run: cd _backend && composer install
 
+      - name: Install
+        run: npm ci
+
       - name: Build
-        run: |
-          npm install
-          gulp
+        run: npm run build
 
       - name: Update
         run: php _backend/Console/Translation.php
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v2
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
         with:
           commit-message: "Automatic update of translations files from source"
           title: "Automatic update of translations files from source"
           branch: "update-translations-from-source"
-        env:
-          GITHUB_TOKEN: ${{ secrets.RABBITBOT_TOKEN }}
 
       - name: Check outputs
         run: |
-          echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pr_number }}"
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"

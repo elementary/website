@@ -1,4 +1,9 @@
 {
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\Lib\\": "Lib/",
@@ -6,12 +11,16 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "8.12.0",
-        "mandrill/mandrill": "^1.0",
-        "sentry/sentry": "^1.4",
-        "erusev/parsedown-extra": "^0.8"
+        "stripe/stripe-php": "10.13.0",
+        "mailchimp/transactional": "^1.0.49",
+        "sentry/sdk": "^3.3.0",
+        "erusev/parsedown-extra": "^0.8",
+        "geoip2/geoip2": "^2.0",
+        "ext-intl": ">=7",
+        "ext-json": ">=7"
     },
     "require-dev": {
-        "league/climate": "^3.2"
+        "league/climate": "^3.2",
+        "squizlabs/php_codesniffer": "3.*"
     }
 }

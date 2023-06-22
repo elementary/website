@@ -184,10 +184,10 @@ img.inline + div.inline {
   text-decoration: none;
 }
 
-.inline-tweet::after,
 .inline-tweet::after {
   color: inherit;
   content: "\f099";
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome\ 5 Brands";
   font-style: normal;
   font-weight: inherit;
@@ -350,6 +350,18 @@ nav a[title="Google+"]:focus,
 nav a[title="Google+"]:hover {
   color: #d50000;
   fill: #d50000;
+}
+
+nav a[title="Youtube"]:focus,
+nav a[title="Youtube"]:hover {
+  color: #d50000;
+  fill: #d50000;
+}
+
+nav a[title="Mastodon"]:focus,
+nav a[title="Mastodon"]:hover {
+  color: #0d93ff;
+  fill: #0d93ff;
 }
 
 nav a[title="Medium"]:focus,
@@ -1175,9 +1187,6 @@ input:focus::placeholder {
   padding: 12px;
   z-index: 11000;
   display: none;
-}
-
-.modal {
   text-align: center;
 }
 
@@ -1296,19 +1305,19 @@ i.fa.fa-close.close-modal {
 }
 
 .slide.active {
-  filter: alpha(opacity=100);
+  filter: opacity(1);
   opacity: 1;
   transform: translateX(0%);
 }
 
 .slide.next {
-  filter: alpha(opacity=0);
+  filter: opacity(0);
   opacity: 0;
   transform: translateX(200%);
 }
 
 .slide.previous {
-  filter: alpha(opacity=0);
+  filter: opacity(0);
   opacity: 0;
   transform: translateX(-200%);
 }

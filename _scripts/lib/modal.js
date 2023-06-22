@@ -7,7 +7,7 @@
 
 import Script from 'scriptjs'
 
-import jQuery from './jquery'
+import jQuery from '~/lib/jquery'
 
 export default jQuery.then(($) => {
     return new Promise((resolve, reject) => {
