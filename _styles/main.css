@@ -440,10 +440,6 @@ nav .logomark:focus .logomark-svg {
   nav ul:first-of-type {
     flex-direction: row;
   }
-
-  nav ul:first-of-type li {
-    border: none;
-  }
 }
 
 /**************
