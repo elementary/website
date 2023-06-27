@@ -296,7 +296,7 @@ nav .menu-button,
 nav .menu-button:hover,
 nav .menu-button:focus,
 nav .menu-button:active {
-  background-color: none;
+  background: none;
   border: none;
   box-shadow: none;
 }
@@ -416,8 +416,9 @@ nav .logomark:focus .logomark-svg {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .nav-content {
+    display: flex;
     flex-direction: row;
     padding: 0;
   }
@@ -427,10 +428,6 @@ nav .logomark:focus .logomark-svg {
   }
 
   nav .menu-button.enabled + .nav-content {
-    display: flex;
-  }
-
-  .nav-content {
     display: flex;
   }
 
