@@ -8,7 +8,7 @@
   "description": "The elementary.io Website http://elementary.io",
   "dependencies": {
     "@babel/preset-env": "^7.22.7",
-    "babel-loader": "^9.1.2",
+    "babel-loader": "^9.1.3",
     "core-js": "^3.31.0",
     "cssnano": "^6.0.1",
     "glob": "^9.3.5",
