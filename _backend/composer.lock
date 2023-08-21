@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbbe36a46f9c4c499675d08f952b52ad",
+    "content-hash": "b6205bf6edbf797ed2a6d119a54b182d",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1771,16 +1771,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v10.21.0",
+            "version": "v12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "b4ab319731958077227fad1874a3671458c5d593"
+                "reference": "732996be0714154716f19f73f956d77bafc99334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/b4ab319731958077227fad1874a3671458c5d593",
-                "reference": "b4ab319731958077227fad1874a3671458c5d593",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/732996be0714154716f19f73f956d77bafc99334",
+                "reference": "732996be0714154716f19f73f956d77bafc99334",
                 "shasum": ""
             },
             "require": {
@@ -1826,9 +1826,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v10.21.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v12.0.0"
             },
-            "time": "2023-08-11T00:23:24+00:00"
+            "time": "2023-08-18T18:55:28+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
