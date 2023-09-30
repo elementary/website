@@ -3,14 +3,22 @@
 /**
  * api/download.php
  * Sets payment cookie from stripe charge
+ *
+ * This code is left in place to honor old re-download links that user's may already have.
+ * But new links are no longer generated after Stripe API changes made it difficult to add
+ * redownload links to the receipt emails.
+ *
  */
 
 require_once __DIR__ . '/../_backend/bootstrap.php';
 
-require_once __DIR__.'/../_backend/preload.php';
-require_once __DIR__.'/../_backend/os-payment.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/os-payment.php';
 
-\Stripe\Stripe::setApiKey($config['stripe_sk']);
+$stripe = new \Stripe\StripeClient([
+    "api_key" => $config['stripe_sk'],
+    "stripe_version" => "2023-08-16"
+]);
 
 /**
  * go_home
@@ -36,9 +44,10 @@ if (isset($_GET['charge'])) {
 
     // Try to fetch the charge id under the current Stripe account
     try {
-        $charge = \Stripe\Charge::retrieve($charge_id);
-    } catch (Exception $e) {
-        if (isset($e->httpStatus) && $e->httpStatus !== 404) {
+        $charge = $stripe->charges->retrieve($charge_id);
+    } catch (\Stripe\Exception\ApiConnectionException $e) {
+        $status = $e->getHttpStatus();
+        if (isset($status) && $status !== 404) {
             return go_home();
         }
     }
@@ -47,8 +56,9 @@ if (isset($_GET['charge'])) {
     // IF the metadata we need isn't set yet
     if (!isset($charge['metadata']['products'])) {
         try {
-            $charge = \Stripe\Charge::retrieve(
+            $charge = $stripe->charges->retrieve(
                 $charge_id,
+                [],
                 ['api_key' => $config['previous_stripe_sk']]
             );
         } catch (Exception $e) {
@@ -59,7 +69,7 @@ if (isset($_GET['charge'])) {
     $intent_id = $_GET['intent'];
 
     try {
-        $charge = \Stripe\PaymentIntent::retrieve($intent_id);
+        $charge = $stripe->paymentIntents->retrieve($intent_id);
     } catch (Exception $e) {
         return go_home();
     }

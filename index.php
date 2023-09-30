@@ -21,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2022-11-15"
+  "stripe_version" => "2023-08-16"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -31,8 +31,8 @@ if (isset($_GET['checkout_session_id'])) {
     }
 
     try {
-        $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
-    } catch (\Stripe\Exception $e) {
+        $session = $stripe->checkout->sessions->retrieve($_GET['checkout_session_id']);
+    } catch (Exception $e) {
         header("Location: " . $sitewide['root']);
         die();
     }
