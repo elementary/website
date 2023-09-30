@@ -2,7 +2,6 @@
 require_once __DIR__.'/_backend/classify.current.php';
 require_once __DIR__.'/_backend/preload.php';
 require_once __DIR__.'/_backend/os-payment.php';
-require_once __DIR__.'/_backend/email/os-payment.php';
 
 $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -22,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2022-11-15"
+  "stripe_version" => "2023-08-16"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -32,8 +31,8 @@ if (isset($_GET['checkout_session_id'])) {
     }
 
     try {
-        $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
-    } catch (\Stripe\Exception $e) {
+        $session = $stripe->checkout->sessions->retrieve($_GET['checkout_session_id']);
+    } catch (Exception $e) {
         header("Location: " . $sitewide['root']);
         die();
     }
@@ -54,17 +53,6 @@ if (isset($_GET['checkout_session_id'])) {
         $paid = true;
         $already_paid = true;
         os_payment_setcookie($config['release_version'], $session->amount_total);
-
-        $intent = $stripe->paymentIntents->retrieve(
-            $session['payment_intent'],
-            ['expand' => ['latest_charge']]
-        );
-        try {
-            email_os_payment($intent);
-        } catch (Exception $e) {
-            header("Location: " . $sitewide['root']);
-            die();
-        }
     }
 
     $page['scripts'][] = 'scripts/payment-complete.js';
