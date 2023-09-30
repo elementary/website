@@ -35,12 +35,13 @@ if (isset($_POST['amount'])) {
         'cancel_url' => "$protocol$_SERVER[HTTP_HOST]$sitewide[root]?checkout_session_id={CHECKOUT_SESSION_ID}",
     ]);
 
+    $redownload_url = 'https://elementary.io/api/download?intent=' . urlencode($checkout_session['payment_intent']);
+
     $stripe->paymentIntents->update(
         $checkout_session['payment_intent'],
         [
-            'description' => "$config[release_title] $config[release_version]",
+            'description' => "Thank you for your purchase of elementary OS $config[release_version]. If you need to re-download in the future, you can use the following URL: $redownload_url",
             'metadata' => array(
-                'receipt' => 'false',
                 'products' => json_encode(array('ISO-' . $config['release_version']))
             )
         ]

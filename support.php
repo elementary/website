@@ -136,7 +136,7 @@ include $template['alert'];
 <section class="grid">
   <div class="two-thirds">
     <h2>Payment &amp; Download Support</h2>
-    <p>If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please reply to your email receipt and a team member will contact you as soon as possible.</p>
+    <p>If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please contact us using the details in your email receipt and a team member will contact you as soon as possible.</p>
   </div>
 </div>
 

@@ -2,7 +2,6 @@
 require_once __DIR__.'/_backend/classify.current.php';
 require_once __DIR__.'/_backend/preload.php';
 require_once __DIR__.'/_backend/os-payment.php';
-require_once __DIR__.'/_backend/email/os-payment.php';
 
 $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -54,17 +53,6 @@ if (isset($_GET['checkout_session_id'])) {
         $paid = true;
         $already_paid = true;
         os_payment_setcookie($config['release_version'], $session->amount_total);
-
-        $intent = $stripe->paymentIntents->retrieve(
-            $session['payment_intent'],
-            ['expand' => ['latest_charge']]
-        );
-        try {
-            email_os_payment($intent);
-        } catch (Exception $e) {
-            header("Location: " . $sitewide['root']);
-            die();
-        }
     }
 
     $page['scripts'][] = 'scripts/payment-complete.js';
