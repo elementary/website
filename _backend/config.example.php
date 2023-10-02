@@ -6,10 +6,10 @@
 return array(
   'release_title'    => 'Horus',
   'release_version'  => '7.1',
-  'release_filename' => '',
+  'release_filename' => 'elementaryos-7.1-stable.20230926rc.iso',
   'release_size'     => '3.0 GB',
-  'release_magnet'   => '',
-  'release_sha256'   => '',
+  'release_magnet'   => '80c702510aa2e68640389be9414df9e8f2cef618',
+  'release_sha256'   => '5c7f6b388e5787c366587985301ea05ab16e4cc0de3be2b3d6a559ce81a2f102',
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-7.1-FAQ',
 
   'previous_title'    => 'Horus',
