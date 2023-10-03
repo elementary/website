@@ -146,7 +146,7 @@ include $template['alert'];
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 7.1</h2>
-          <p>Made with care with you in mind. OS 7.1 provides new personalization options that make it more inclusive and accessible, protects your privacy and ensures apps always operate with your explicit consent, and  addresses your feedback with over 200 bug fixes, design changes, and new features</p>
+          <p>Made with care with you in mind. OS 7.1 provides new personalization options that make it more inclusive and accessible, protects your privacy and ensures apps always operate with your explicit consent, and addresses your feedback with over 200 bug fixes, design changes, and new features</p>
           <a href="https://blog.elementary.io/os-7-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
