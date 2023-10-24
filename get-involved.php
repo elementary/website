@@ -169,7 +169,7 @@ include $template['alert'];
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
+            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="https://docs.elementary.io/hig/design-philosophy" target="_blank" rel="noopener">Learn More</a></p>
         </div>
     </div>
     <div class="design-links">
