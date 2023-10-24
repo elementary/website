@@ -376,6 +376,12 @@ nav a[title="Reddit"]:hover {
   fill: #ff4500;
 }
 
+nav a[title="Slack"]:focus,
+nav a[title="Slack"]:hover {
+  color: #4a154b;
+  fill: #4a154b;
+}
+
 nav a[title="StackExchange"]:focus,
 nav a[title="StackExchange"]:hover {
   color: #0d93ff;
