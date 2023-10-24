@@ -2,7 +2,6 @@
 require_once __DIR__.'/_backend/classify.current.php';
 require_once __DIR__.'/_backend/preload.php';
 require_once __DIR__.'/_backend/os-payment.php';
-require_once __DIR__.'/_backend/email/os-payment.php';
 
 $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -22,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2022-11-15"
+  "stripe_version" => "2023-08-16"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -32,8 +31,8 @@ if (isset($_GET['checkout_session_id'])) {
     }
 
     try {
-        $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
-    } catch (\Stripe\Exception $e) {
+        $session = $stripe->checkout->sessions->retrieve($_GET['checkout_session_id']);
+    } catch (Exception $e) {
         header("Location: " . $sitewide['root']);
         die();
     }
@@ -54,17 +53,6 @@ if (isset($_GET['checkout_session_id'])) {
         $paid = true;
         $already_paid = true;
         os_payment_setcookie($config['release_version'], $session->amount_total);
-
-        $intent = $stripe->paymentIntents->retrieve(
-            $session['payment_intent'],
-            ['expand' => ['latest_charge']]
-        );
-        try {
-            email_os_payment($intent);
-        } catch (Exception $e) {
-            header("Location: " . $sitewide['root']);
-            die();
-        }
     }
 
     $page['scripts'][] = 'scripts/payment-complete.js';
@@ -104,7 +92,7 @@ include $template['alert'];
 
       <div class="section__showcase">
         <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-        <img src="images/screenshots/desktop.jpg" alt="elementary OS 7 Horus desktop" />
+        <img src="images/screenshots/desktop.jpg" alt="elementary OS 7.1 desktop" />
       </div>
 
       <div class="section__detail grid">
@@ -157,9 +145,9 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 7</h2>
-          <p>Forward thinking and designed for real life with an improved sideloading and alt store experience, power profiles management, and using a next generation UI toolkit. OS 7 Helps you get the apps you need, Empowers you with new features and settings, and evolves our developer platform.</p>
-          <a href="https://blog.elementary.io/os-7-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+          <h2>What’s New in elementary OS 7.1</h2>
+          <p>Made with care with you in mind. OS 7.1 provides new personalization options that make it more inclusive and accessible, protects your privacy and ensures apps always operate with your explicit consent, and addresses your feedback with over 200 bug fixes, design changes, and new features</p>
+          <a href="https://blog.elementary.io/os-7-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
     </section>

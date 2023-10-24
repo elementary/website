@@ -97,7 +97,7 @@ $l10n->beginHtmlTranslation();
         <script src="<?php echo $scriptsManifest["scripts/main.js"]?>" async></script>
 
             <?php if (!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io') { ?>
-        <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
+        <script async defer data-domain="elementary.io" src="https://plausible.io/js/script.js"></script>
             <?php } ?>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
