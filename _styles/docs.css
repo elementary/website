@@ -79,7 +79,7 @@ p {
 }
 
 p,
-li {
+.docs li {
   line-height: 1.5;
 }
 
