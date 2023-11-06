@@ -8,10 +8,10 @@ import jQuery from '~/lib/jquery'
 jQuery.then(($) => {
     $(function () {
         $.getJSON('https://blog.elementary.io/feed/updates.json', function (data) {
-            var blogContents = ''
+            let blogContents = ''
             blogContents += '<div class="blog-container">'
             $.each(data.posts, function (n, post) {
-                var postContents = ''
+                let postContents = ''
                 postContents += '<a class="featured with-image" href="' + post.url + '">'
                 postContents += '<div class="featured-image" alt="Featured image" style="background-image: url(' + post.image + ');"></div>'
                 postContents += '<header>'
@@ -27,9 +27,9 @@ jQuery.then(($) => {
                 postContents += '<div class="author">'
                 postContents += '<span class="name">' + post.author.name + '</span>'
                 postContents += '</div>'
-                var dateJs = new Date(post.pubDate)
-                var dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timezone: 'UTC' }
-                var dateNice = dateJs.toLocaleDateString('en-US', dateOptions)
+                const dateJs = new Date(post.pubDate)
+                const dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timezone: 'UTC' }
+                const dateNice = dateJs.toLocaleDateString('en-US', dateOptions)
                 postContents += '<time class="post-date" datetime="' + post.pubDate + '">' + dateNice + '</time>'
                 postContents += '<span class="read-time" title="Estimated read time">'
                 postContents += post.read_time
