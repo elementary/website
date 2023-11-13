@@ -17,11 +17,11 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
 
             // Add line numbers, unless it's bash or doesn't want to be highlighted
             if (!$(this).is('.language-bash') && !$(this).hasClass('nohighlight')) {
-                var lines = $(this).text().trim().split('\n').length
-                var $numbering = $('<ul/>').addClass('pre-numbering')
+                const lines = $(this).text().trim().split('\n').length
+                let $numbering = $('<ul/>').addClass('pre-numbering')
                 $(this).parent().addClass('has-numbering').prepend($numbering)
 
-                for (var l = 1; l <= lines; l++) {
+                for (let l = 1; l <= lines; l++) {
                     $numbering.append($('<li/>').text(l))
                 }
             }
@@ -43,17 +43,17 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         })
 
         // Sidebar
-        var $headings = $('h1')
-        var $sidebar = $('<div class="sidebar"></div>')
+        let $headings = $('h1')
+        let $sidebar = $('<div class="sidebar"></div>')
         if ($headings.length > 1) {
             $('#content-container').addClass('has-sidebar')
 
-            var $index = $('<ul class="index"></ul>')
+            let $index = $('<ul class="index"></ul>')
             $headings.each(function () {
                 $index.append('<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>')
-                var $subHeadings = $(this).nextUntil('h1', 'h2')
+                let $subHeadings = $(this).nextUntil('h1', 'h2')
                 if ($subHeadings.length > 0) {
-                    var $subMenu = $('<ul></ul>')
+                    let $subMenu = $('<ul></ul>')
                     $subHeadings.each(function () {
                         $subMenu.append('<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>')
                     })
@@ -62,7 +62,7 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
             })
             $index.prependTo($sidebar)
 
-            var $actions = $('<ul class="actions"></ul>')
+            let $actions = $('<ul class="actions"></ul>')
             $('<li><a href="https://github.com/elementary/website/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions)
             $actions.appendTo($sidebar)
 
@@ -70,9 +70,9 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         }
 
         // Update javascript variable currentSection
-        var docElements = $('h1[id], h2[id]', '.docs')
+        let docElements = $('h1[id], h2[id]', '.docs')
 
-        var currentSection = null
+        let currentSection = null
         if (window.location.hash && docElements.is('#' + window.location.hash.substr(1).split('#')[0])) {
             currentSection = $('#' + window.location.hash.substr(1).split('#')[0], docElements)
         } else {
