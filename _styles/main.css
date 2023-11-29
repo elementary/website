@@ -184,10 +184,10 @@ img.inline + div.inline {
   text-decoration: none;
 }
 
-.inline-tweet::after,
 .inline-tweet::after {
   color: inherit;
   content: "\f099";
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome\ 5 Brands";
   font-style: normal;
   font-weight: inherit;
@@ -255,7 +255,7 @@ nav {
 
 .nav-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
@@ -268,14 +268,49 @@ html.ie-legacy .nav-content > ul.right {
   float: right;
 }
 
+nav .menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 12px 24px;
+  border: none;
+}
+
+nav .menu-button.enabled {
+  display: inline-block;
+}
+
+nav .menu-button.enabled + .nav-content {
+  display: none;
+}
+
+nav .menu-button.enabled[aria-expanded='true'] +  .nav-content {
+  display: flex;
+}
+
+nav .menu-button,
+nav .menu-button:hover,
+nav .menu-button:focus,
+nav .menu-button:active {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
 nav ul {
   display: inline-block;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 12px;
 }
 
-nav ul:first-child {
+nav ul:first-of-type {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 auto;
 }
 
@@ -292,14 +327,16 @@ nav a:visited {
   padding: 0 12px;
 }
 
-nav a:focus {
+nav a:focus,
+.menu-button:focus svg {
   color: #08c;
   fill: #08c;
   text-decoration: none;
 }
 
 nav a:hover,
-nav a:visited:hover {
+nav a:visited:hover,
+nav .menu-button:hover svg {
   opacity: 0.7;
 }
 
@@ -339,6 +376,12 @@ nav a[title="Reddit"]:hover {
   fill: #ff4500;
 }
 
+nav a[title="Slack"]:focus,
+nav a[title="Slack"]:hover {
+  color: #4a154b;
+  fill: #4a154b;
+}
+
 nav a[title="StackExchange"]:focus,
 nav a[title="StackExchange"]:hover {
   color: #0d93ff;
@@ -354,6 +397,8 @@ nav a[title="Twitter"]:hover {
 nav .logomark {
   line-height: 14px;
   vertical-align: middle;
+  height: 48px;
+  padding: 12px;
 }
 
 nav .logomark .logomark-svg,
@@ -376,6 +421,30 @@ nav .logomark:focus .logomark-svg {
 
   html.ie-legacy .nav-content > .right {
     float: left;
+  }
+}
+
+@media (min-width: 680px) {
+  .nav-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  nav .menu-button.enabled {
+    display: none;
+  }
+
+  nav .menu-button.enabled + .nav-content {
+    display: flex;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul:first-of-type {
+    flex-direction: row;
   }
 }
 
@@ -1119,9 +1188,6 @@ input:focus::placeholder {
   padding: 12px;
   z-index: 11000;
   display: none;
-}
-
-.modal {
   text-align: center;
 }
 
@@ -1240,19 +1306,19 @@ i.fa.fa-close.close-modal {
 }
 
 .slide.active {
-  filter: alpha(opacity=100);
+  filter: opacity(1);
   opacity: 1;
   transform: translateX(0%);
 }
 
 .slide.next {
-  filter: alpha(opacity=0);
+  filter: opacity(0);
   opacity: 0;
   transform: translateX(200%);
 }
 
 .slide.previous {
-  filter: alpha(opacity=0);
+  filter: opacity(0);
   opacity: 0;
   transform: translateX(-200%);
 }

@@ -39,7 +39,7 @@
     "HeaderBar": "标题栏",
     "Secondary-click the Header Bar for quick access to window and workspace actions.": "右键标题栏来快捷打开窗口和工作区动作。",
     "Window Buttons": "窗口按钮",
-    "An app's window buttons are at the top corners of the app window: close at the left and maximize (if supported by the app) at the right. Closing a window will close that app; it can be re-opened from the Applications Menu or Dock. Maximizing a window resizes it to take up most of the desktop while retaining your access to the Panel and Dock.": "",
+    "An app's window buttons are at the top corners of the app window: close at the left and maximize (if supported by the app) at the right. Closing a window will close that app; it can be re-opened from the Applications Menu or Dock. Maximizing a window resizes it to take up most of the desktop while retaining your access to the Panel and Dock.": "应用的窗口按钮在应用窗口顶部：左侧是关闭按钮，右侧是最大化按钮（如果应用支持）。关闭窗口将关闭相应应用；您可以在“应用程序”菜单或 Dock 重新打开应用。最大化窗口会让窗口使用屏幕的绝大部分区域，但仍旧允许你访问面板（顶栏）和 Dock。",
     "You can also drag a window to the top of the desktop or double-click its header bar to maximize, and drag from the top or double-click the header bar to unmaximize.": "",
     "Resizing": "",
     "Most app windows can be resized by draging from any edge of the window. You can also secondary-click a window's header bar and choose <strong>Resize</strong> or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.": "",

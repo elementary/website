@@ -77,7 +77,7 @@ export function url () {
  * @return {String} - OS of the user
  */
 export function detectedOS () {
-    var ua = window.navigator.userAgent
+    const ua = window.navigator.userAgent
     if (ua == null || ua === false) return 'Other'
     if (ua.indexOf('Android') >= 0) {
         return 'Android'

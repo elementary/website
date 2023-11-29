@@ -20,7 +20,8 @@ use GeoIp2\Database\Reader;
 // - Timezone
 // Returns either a string of the selected region,
 // or an array of two regions.
-function getDownloadRegion($hostname, $debug = false) {
+function getDownloadRegion($hostname, $debug = false)
+{
 
     try {
         if (!class_exists('GeoIp2\Database\Reader')) {
@@ -32,9 +33,8 @@ function getDownloadRegion($hostname, $debug = false) {
         $continent = $record->continent->code;
         $country   = $record->country->isoCode;
         $longitude = $record->location->longitude;
-
     } catch (\Exception $e) {
-        if ( $debug ) {
+        if ($debug) {
             echo $e->getMessage();
         } else {
             error_log($e->getMessage());
@@ -45,24 +45,23 @@ function getDownloadRegion($hostname, $debug = false) {
         $longitude = false;
     }
 
-    if ( $debug ) {
+    if ($debug) {
         echo 'Continent: "'.$continent.'"'."\n";
         echo 'Country: "'  .$country  .'"'."\n";
         echo 'Longitude: "'.$longitude.'"'."\n";
     }
 
     // North America
-    if ( $continent == 'NA' ) {
+    if ($continent == 'NA') {
         // These lists are based on who is on what side of the USA.
         $northEast = array('BZ', 'CR', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA');
+        /** @var string $northWest */
         $northWest = array('AG', 'BS', 'BB', 'BM', 'VG', 'KY', 'CU', 'DM', 'DO', 'GL', 'GD', 'GP', 'HT', 'JM', 'MQ', 'MS', 'CW', 'AW', 'SX', 'BQ', 'PR', 'BL', 'KN', 'AI', 'LC', 'MF', 'PM', 'VC', 'TT', 'TC', 'VI');
-        if (
-            in_array($country, $northEast) ||
+        if (in_array($country, $northEast) ||
             $longitude < -100
         ) {
             return 'sfo1';
-        } else if (
-            in_array($country, $northWest) ||
+        } elseif (in_array($country, $northWest) ||
             $longitude >= -100
         ) {
             return 'nyc3';
@@ -71,16 +70,16 @@ function getDownloadRegion($hostname, $debug = false) {
         }
 
     // Europe
-    } else if ( $continent == 'EU' ) {
+    } elseif ($continent == 'EU') {
         // These lists are based on who is connected to which international exchange directly.
         // They are by no means exclusive.
         $isles = array('GB', 'IM', 'IE', 'FO', 'IS', 'GG', 'JE', 'GI');
         $vikings = array('NL', 'SX', 'DK', 'NO', 'SE', 'FI', 'SJ');
         // Great Britain
-        if ( in_array($country, $isles) ) {
+        if (in_array($country, $isles)) {
             return 'ams3';
         // Vikings
-        } else if ( in_array($country, $vikings) ) {
+        } elseif (in_array($country, $vikings)) {
             return 'ams3';
         // Everywhere else
         } else {
@@ -88,14 +87,13 @@ function getDownloadRegion($hostname, $debug = false) {
         }
 
     // South America
-    } else if ( $continent == 'SA' ) {
+    } elseif ($continent == 'SA') {
         return array('nyc3', 'sfo1');
 
     // Africa
-    } else if ( $continent == 'AF' ) {
+    } elseif ($continent == 'AF') {
         return array('fra1', 'ams3');
-
-    } else if (
+    } elseif (
         // Asia
         $continent == 'AS' ||
         // Oceania
@@ -109,29 +107,30 @@ function getDownloadRegion($hostname, $debug = false) {
     } else {
         return array('nyc3', 'ams3');
     }
-
 }
 
 ////    getIPHash
 // Hashes the given IP to return either a 0 or a 1 consistently for the same IP.
 // Used when balancing between two regions returned by getDownloadRegion.
-function getIPHash($hostname, $debug = false) {
+function getIPHash($hostname, $debug = false)
+{
     $hash = array_sum(str_split($hostname));
-    if ( $debug ) {
+    if ($debug) {
         echo 'Hash: "'.$hash.'"'."\n";
     }
     $hash = $hash % 10;
-    if ( $debug ) {
+    if ($debug) {
         echo 'Remainder: "'.$hash.'"'."\n";
     }
-    if ( $hash > 5 ) {
+    if ($hash > 5) {
         return 0;
     } else {
         return 1;
     }
 }
 
-function getCurrentCountry($hostname, $debug = false) {
+function getCurrentCountry($hostname, $debug = false)
+{
 
     try {
         if (!class_exists('GeoIp2\Database\Reader')) {
@@ -140,9 +139,8 @@ function getCurrentCountry($hostname, $debug = false) {
         $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
         $record = $reader->city($hostname);
         $country = $record->country->isoCode;
-
     } catch (\Exception $e) {
-        if ( $debug ) {
+        if ($debug) {
             echo $e->getMessage();
         } else {
             error_log($e->getMessage());
@@ -150,7 +148,7 @@ function getCurrentCountry($hostname, $debug = false) {
         $country = false;
     }
 
-    if ( $debug ) {
+    if ($debug) {
         echo 'Country: "'.$country.'"'."\n";
     }
 
@@ -158,10 +156,11 @@ function getCurrentCountry($hostname, $debug = false) {
 }
 
 
-function getCurrentLocation($hostname, $debug = false) {
+function getCurrentLocation($hostname, $debug = false)
+{
 
     try {
-        if ( $debug ) {
+        if ($debug) {
             echo $hostname."\n";
         }
         if (!class_exists('GeoIp2\Database\Reader')) {
@@ -177,9 +176,8 @@ function getCurrentLocation($hostname, $debug = false) {
         $countryCode = $record->country->isoCode; // 'US'
         $postcode    = $record->postal->code; // '55455'
         $continent   = $record->continent->code;
-
     } catch (\Exception $e) {
-        if ( $debug ) {
+        if ($debug) {
             echo $e->getMessage();
         } else {
             error_log($e->getMessage());

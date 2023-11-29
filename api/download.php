@@ -3,14 +3,22 @@
 /**
  * api/download.php
  * Sets payment cookie from stripe charge
+ *
+ * This code is left in place to honor old re-download links that user's may already have.
+ * But new links are no longer generated after Stripe API changes made it difficult to add
+ * redownload links to the receipt emails.
+ *
  */
 
 require_once __DIR__ . '/../_backend/bootstrap.php';
 
-require_once __DIR__.'/../_backend/preload.php';
-require_once __DIR__.'/../_backend/os-payment.php';
+require_once __DIR__ . '/../_backend/preload.php';
+require_once __DIR__ . '/../_backend/os-payment.php';
 
-\Stripe\Stripe::setApiKey($config['stripe_sk']);
+$stripe = new \Stripe\StripeClient([
+    "api_key" => $config['stripe_sk'],
+    "stripe_version" => "2023-08-16"
+]);
 
 /**
  * go_home
@@ -18,7 +26,8 @@ require_once __DIR__.'/../_backend/os-payment.php';
  *
  * @return {Void}
  */
-function go_home() {
+function go_home()
+{
     global $sitewide;
 
     header("Location: " . $sitewide['root']);
@@ -26,7 +35,7 @@ function go_home() {
 }
 
 // everything else falls into a great pyrimid of php ifs
-if(isset($_GET['charge'])) {
+if (isset($_GET['charge'])) {
     $charge_id = $_GET['charge'];
 
     if (substr($charge_id, 0, 3) !== 'ch_') {
@@ -35,10 +44,11 @@ if(isset($_GET['charge'])) {
 
     // Try to fetch the charge id under the current Stripe account
     try {
-        $charge = \Stripe\Charge::retrieve($charge_id);
-    } catch (Exception $e) {
-        if (isset($e->httpStatus) && $e->httpStatus !== 404) {
-        return go_home();
+        $charge = $stripe->charges->retrieve($charge_id);
+    } catch (\Stripe\Exception\ApiConnectionException $e) {
+        $status = $e->getHttpStatus();
+        if (isset($status) && $status !== 404) {
+            return go_home();
         }
     }
 
@@ -46,8 +56,9 @@ if(isset($_GET['charge'])) {
     // IF the metadata we need isn't set yet
     if (!isset($charge['metadata']['products'])) {
         try {
-            $charge = \Stripe\Charge::retrieve(
+            $charge = $stripe->charges->retrieve(
                 $charge_id,
+                [],
                 ['api_key' => $config['previous_stripe_sk']]
             );
         } catch (Exception $e) {
@@ -58,7 +69,7 @@ if(isset($_GET['charge'])) {
     $intent_id = $_GET['intent'];
 
     try {
-        $charge = \Stripe\PaymentIntent::retrieve($intent_id);
+        $charge = $stripe->paymentIntents->retrieve($intent_id);
     } catch (Exception $e) {
         return go_home();
     }
@@ -99,7 +110,7 @@ foreach ($products as $product) {
                 go_home();
 
             // If the purchased major matches the previous major
-            } else if ($isoMajor == $previousMajor) {
+            } elseif ($isoMajor == $previousMajor) {
                 // Override $isoVersion to match the previous release,
                 // so long as it's only a minor upgrade.
                 $isoVersion = $config['previous_version'];
@@ -114,7 +125,6 @@ foreach ($products as $product) {
             } else {
                 go_home();
             }
-
         }
     }
 }

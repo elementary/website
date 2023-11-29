@@ -7,7 +7,7 @@
 
 require_once __DIR__ . '/../_backend/event.php';
 
-$l10n->set_domain('layout');
+$l10n->setDomain('layout');
 
 const EVENT_NAME = 'odin 6.0 release';
 
@@ -28,4 +28,4 @@ if (event_active(EVENT_NAME)) { ?>
 
 <?php }
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

@@ -4,24 +4,19 @@
 // Config will fall back to what is present here.
 
 return array(
-  'release_title'    => 'Jólnir',
-  'release_version'  => '6.1',
-  'release_filename' => 'elementaryos-6.1-stable.20211218-rc.iso',
-  'release_size'     => '2.47 GB',
-  'release_magnet'   => '79c043454fc643b05aea16de848e5dce6eb8c9d9',
-  'release_sha256'   => '35c8086bc0af8ccc5ef8629225b215b1742b3a90b475f9f47723b18a315d86a7',
-  'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6.1-Jólnir-FAQ',
+  'release_title'    => 'Horus',
+  'release_version'  => '7.1',
+  'release_filename' => 'elementaryos-7.1-stable.20230926rc.iso',
+  'release_size'     => '3.0 GB',
+  'release_magnet'   => '80c702510aa2e68640389be9414df9e8f2cef618',
+  'release_sha256'   => '5c7f6b388e5787c366587985301ea05ab16e4cc0de3be2b3d6a559ce81a2f102',
+  'release_faq'      => 'https://github.com/elementary/os/wiki/OS-7.1-FAQ',
 
-  'previous_title'    => 'Hera',
-  'previous_version'  => '5.1.7',
-  'previous_filename' => 'elementaryos-5.1-stable.20200814.iso',
-  'previous_size'     => '1.49 GB',
-  'previous_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
-
-  'chart_enable'         => false,
-  'chart_link_project'   => 'elementary',
-  'chart_link_milestone' => 'loki-rc1',
-  'chart_link_name'      => 'Loki RC1 Milestone',
+  'previous_title'    => 'Horus',
+  'previous_version'  => '7',
+  'previous_filename' => 'elementaryos-7.0-stable.20230129rc.iso',
+  'previous_size'     => '2.8 GB',
+  'previous_magnet'   => '42b3c0e68ddf3e4be4b9cac2044c3ef472a32f92',
 
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
@@ -29,8 +24,6 @@ return array(
   'previous_stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
 
   'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
-
-  'mailchimp_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
 
   'sentry_dsn' => false,
 

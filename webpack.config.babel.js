@@ -9,9 +9,9 @@
 
 import path from 'path'
 
-import glob from 'glob'
+import { glob } from 'glob'
 
-import { fileURLToPath } from "url"
+import { fileURLToPath } from 'url'
 import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -41,16 +41,18 @@ export default {
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'scripts'),
-        publicPath: '/scripts',
+        publicPath: '/scripts'
     },
     module: {
-        rules: [{
-            test: /\.m?js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
             }
-        }]
+        ]
     },
     resolve: {
         alias: {
@@ -58,11 +60,11 @@ export default {
         }
     },
     optimization: {
-        runtimeChunk: 'single',
+        runtimeChunk: 'single'
     },
     plugins: [
         new WebpackManifestPlugin({
-            'basePath': 'scripts/'
+            basePath: 'scripts/'
         })
     ]
 }
