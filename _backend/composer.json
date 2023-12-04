@@ -12,7 +12,7 @@
     },
     "require": {
         "stripe/stripe-php": "13.5.0",
-        "sentry/sdk": "^3.3.0",
+        "sentry/sdk": "^4.0.0",
         "erusev/parsedown-extra": "^0.8",
         "geoip2/geoip2": "^2.0",
         "ext-intl": ">=7",
