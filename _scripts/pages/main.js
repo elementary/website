@@ -14,7 +14,7 @@ jQuery.then(($) => {
         $(this).closest('.toast').hide()
     })
 
-    var menuButton = $('nav .menu-button')
+    const menuButton = $('nav .menu-button')
     menuButton.addClass('enabled')
     menuButton.on('click', function (e) {
         if (menuButton.attr('aria-expanded') === 'true') {

@@ -17,11 +17,11 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
 
             // Add line numbers, unless it's bash or doesn't want to be highlighted
             if (!$(this).is('.language-bash') && !$(this).hasClass('nohighlight')) {
-                var lines = $(this).text().trim().split('\n').length
-                var $numbering = $('<ul/>').addClass('pre-numbering')
+                const lines = $(this).text().trim().split('\n').length
+                const $numbering = $('<ul/>').addClass('pre-numbering')
                 $(this).parent().addClass('has-numbering').prepend($numbering)
 
-                for (var l = 1; l <= lines; l++) {
+                for (let l = 1; l <= lines; l++) {
                     $numbering.append($('<li/>').text(l))
                 }
             }
@@ -43,17 +43,17 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         })
 
         // Sidebar
-        var $headings = $('h1')
-        var $sidebar = $('<div class="sidebar"></div>')
+        const $headings = $('h1')
+        const $sidebar = $('<div class="sidebar"></div>')
         if ($headings.length > 1) {
             $('#content-container').addClass('has-sidebar')
 
-            var $index = $('<ul class="index"></ul>')
+            const $index = $('<ul class="index"></ul>')
             $headings.each(function () {
                 $index.append('<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>')
-                var $subHeadings = $(this).nextUntil('h1', 'h2')
+                const $subHeadings = $(this).nextUntil('h1', 'h2')
                 if ($subHeadings.length > 0) {
-                    var $subMenu = $('<ul></ul>')
+                    const $subMenu = $('<ul></ul>')
                     $subHeadings.each(function () {
                         $subMenu.append('<li><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>')
                     })
@@ -62,7 +62,7 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
             })
             $index.prependTo($sidebar)
 
-            var $actions = $('<ul class="actions"></ul>')
+            const $actions = $('<ul class="actions"></ul>')
             $('<li><a href="https://github.com/elementary/website/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions)
             $actions.appendTo($sidebar)
 
@@ -70,9 +70,9 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         }
 
         // Update javascript variable currentSection
-        var docElements = $('h1[id], h2[id]', '.docs')
+        const docElements = $('h1[id], h2[id]', '.docs')
 
-        var currentSection = null
+        let currentSection = null
         if (window.location.hash && docElements.is('#' + window.location.hash.substr(1).split('#')[0])) {
             currentSection = $('#' + window.location.hash.substr(1).split('#')[0], docElements)
         } else {
@@ -83,13 +83,13 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         function sidebarHandle () {
             if ($(window).width() <= 990) return
 
-            var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0)
-            var $header = $('nav:first-of-type')
-            var $footer = $('footer')
-            var $sidebar = $('.sidebar')
+            const scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0)
+            const $header = $('nav:first-of-type')
+            const $footer = $('footer')
+            const $sidebar = $('.sidebar')
 
-            var headerFromTop = $header.height() - scrollTop
-            var headerSquish = (headerFromTop > 0) ? headerFromTop : 0
+            const headerFromTop = $header.height() - scrollTop
+            const headerSquish = (headerFromTop > 0) ? headerFromTop : 0
 
             if (headerSquish === 0) {
                 $sidebar.addClass('sticky')
@@ -97,8 +97,8 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
                 $sidebar.removeClass('sticky')
             }
 
-            var footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
-            var footerSquish = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
+            const footerFromBottom = $(document).height() - $(window).height() - $footer.height() - scrollTop
+            const footerSquish = (footerFromBottom < 0) ? Math.abs(footerFromBottom) : 0
 
             $sidebar.css('height', 'calc(100% - ' + footerSquish + 'px - ' + headerSquish + 'px)')
         }
@@ -106,9 +106,9 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         // Scrolling function to run
         function scrollHandle () {
             // Check to see what is on screen right now
-            for (var i = 0; i < docElements.length; i++) {
-                var docViewTop = $(window).scrollTop()
-                var elemTop = $(docElements[i]).offset().top
+            for (let i = 0; i < docElements.length; i++) {
+                const docViewTop = $(window).scrollTop()
+                const elemTop = $(docElements[i]).offset().top
 
                 // Sets currentSection if element is top most visible element
                 if ((elemTop <= docViewTop)) {
@@ -131,7 +131,7 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
 
             // Changes sidebar link classes based on what's currently active
             $('.sidebar .index .active').removeClass('active')
-            var $currentLink = $('.sidebar .index a[href$="#' + currentSection.id + '"]')
+            const $currentLink = $('.sidebar .index a[href$="#' + currentSection.id + '"]')
             if ($currentLink.parent().parent().is('.index')) {
                 $currentLink.parent().addClass('active')
             } else {
@@ -140,13 +140,13 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
         }
 
         // Scroll timeout handling
-        var repositionedAt = Date.now()
-        var repositionTimer = null
+        let repositionedAt = Date.now()
+        let repositionTimer = null
 
         $(window).scroll(function () {
             if ($(window).width() <= 990) return
 
-            var diff = Date.now() - repositionedAt
+            const diff = Date.now() - repositionedAt
 
             sidebarHandle()
 

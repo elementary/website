@@ -13,7 +13,7 @@
  * @param {String[]} options.slides The slider choices selectors.
  * @param {Boolean} options.fixed Update slideContainer height based on slide.
  */
-var Slider = function (options) {
+const Slider = function (options) {
     // slider variables
     this.slideContainer = options.slideContainer
     this.choiceContainer = options.choiceContainer
@@ -23,11 +23,11 @@ var Slider = function (options) {
     this.currentIndex = null
 
     // initial setup
-    var that = this
+    const that = this
 
-    for (var i = 0; i < this.slides.length; i++) {
-        var n = this.slides[i]
-        var $iChoice = $("[href$='" + n + "']", this.choiceContainer)
+    for (let i = 0; i < this.slides.length; i++) {
+        const n = this.slides[i]
+        const $iChoice = $("[href$='" + n + "']", this.choiceContainer)
 
         // each choice button
         $iChoice.on('click', function (e) {
@@ -54,9 +54,9 @@ Slider.prototype.slideTo = function (rSlide) {
     }
 
     // iterates through slides based on this.slides
-    for (var i = 0; i < this.slides.length; i++) {
-        var n = this.slides[i]
-        var $n = $('#' + n, this.slideContainer) // current iterated slide
+    for (let i = 0; i < this.slides.length; i++) {
+        const n = this.slides[i]
+        const $n = $('#' + n, this.slideContainer) // current iterated slide
 
         if (n === rSlide) { // if correct slide
             $n.removeClass('previous next').addClass('active')
@@ -69,10 +69,10 @@ Slider.prototype.slideTo = function (rSlide) {
     };
 
     // iterate over choices
-    for (var l = 0; l < this.slides.length; l++) {
-        var s = this.slides[l]
-        var $choice = $("[href$='" + s + "']", this.choiceContainer)
-        var href = $choice.attr('href').split('#').pop()
+    for (let l = 0; l < this.slides.length; l++) {
+        const s = this.slides[l]
+        const $choice = $("[href$='" + s + "']", this.choiceContainer)
+        const href = $choice.attr('href').split('#').pop()
 
         if (href === this.slides[this.currentIndex]) { // current choice
             $choice.addClass('active')
@@ -88,12 +88,12 @@ Slider.prototype.slideTo = function (rSlide) {
  * Reset height of container
  */
 Slider.prototype.resize = function () {
-    var height = 0
+    let height = 0
 
     if (this.fixed) { // if the container should be a fixed height
         // iterates through slides
         $.each(this.slides, function (i, n) {
-            var $iSlide = $('#' + n, this.sliderContainer) // current iterated slide
+            const $iSlide = $('#' + n, this.sliderContainer) // current iterated slide
 
             if ($iSlide.outerHeight(true) > height) { // new tallest slide
                 height = $iSlide.outerHeight(true)
