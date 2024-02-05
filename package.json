@@ -21,7 +21,7 @@
     "gulp-rev": "^10.0.0",
     "postcss-preset-env": "^9.3.0",
     "scriptjs": "^2.5.9",
-    "webpack": "^5.90.0",
+    "webpack": "^5.90.1",
     "webpack-manifest-plugin": "^5.0.0"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "stylelint": "^16.2.0",
+    "stylelint": "^16.2.1",
     "stylelint-config-recommended": "^14.0.0"
   },
   "scripts": {
