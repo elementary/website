@@ -1,5 +1,5 @@
 {
-    "Installation": "Установлення",
+    "Installation": "Встановлення",
     "Download elementary OS": "Завантажити elementary OS",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Якщо ви цього ще не зробили, вам потрібно буде <a href=\"/\" target=\"_blank\" rel=\"noopener\">завантажити elementary OS з нашої домашньої сторінки</a>. Вам потрібно буде копіювати завантажений файл ISO на носій USB, дотримуючись подальших настанов.",
     "Frequently-Asked Questions": "Часті запитання",
@@ -17,7 +17,7 @@
     "Back Up Your Data": "Створіть резервну копію даних",
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Не забудьте створити резервну копію важливих даних у зовнішньому розташуванні, наприклад у хмарній службі або на зовнішньому жорсткому диску. Встановлення нової операційної системи може перезаписати ваші наявні дані.",
     "Step-by-step Guide": "Покрокові настанови",
-    "Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.": "Дотримуйтесь наведених у відео вказівок або виберіть операційну систему, яку ви зараз використовуєте, щоб переглянути спеціальні інструкції з установлення.",
+    "Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.": "Дотримуйтесь наведених у відео вказівок або виберіть операційну систему, яку ви зараз використовуєте, щоб переглянути спеціальні інструкції зі встановлення.",
     "Windows": "Windows",
     "macOS": "macOS",
     "Linux": "Linux",
