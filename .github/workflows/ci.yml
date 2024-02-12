@@ -28,7 +28,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: 18
 
@@ -53,7 +53,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: 18
 
@@ -78,7 +78,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: 18
 
@@ -103,7 +103,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: 18
 
@@ -127,7 +127,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: 18
 
