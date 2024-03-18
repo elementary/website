@@ -11,7 +11,7 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "13.13.0",
+        "stripe/stripe-php": "13.14.0",
         "sentry/sdk": "^3.3.0",
         "erusev/parsedown-extra": "^0.8",
         "geoip2/geoip2": "^2.0",
