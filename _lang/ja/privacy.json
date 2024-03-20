@@ -9,7 +9,7 @@
     "Tattle-tale": "アプリの状態をお知らせ",
     "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS は、どのアプリが何をしているのかを監視するのに役立ちます。アプリがマイクを使用している場合、インジケーターを表示してお知らせします。アプリが電力を激しく消費している場合、パワーインジケーター内でお知らせします。",
     "Permissions": "パーミッション",
-    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "アプリがユーザーデータやデバイスにアクセスするなら、ちゃんと許可を取ってからでないといけませんよね。私たちは AppCenter にリリースされたすべてのアプリが適切にパーミッションを取得するよう、レビューしています。ユーザーの皆さんは“システム設定”からいつでもパーミッションを無効にできます。",
+    "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "アプリがユーザーデータやデバイスにアクセスするなら、ちゃんと許可を取ってからでないといけませんよね。私たちは AppCenter にリリースされたすべてのアプリが適切にパーミッションを取得するよう、審査しています。ユーザーの皆さんは“システム設定”からいつでもパーミッションを無効にできます。",
     "Housekeeping": "自動削除",
     "elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.": "elementary OS は、一時ファイルとゴミ箱のファイルが整理された状態を自動的に維持します。これは、お使いのデバイスのストレージが開放された状態を維持するだけではなく、ご自身の個人情報が復元されて悩みの種とならないことを保証するのにも役立ちます。",
     "Online Accounts": "オンラインアカウント",
