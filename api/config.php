@@ -5,9 +5,8 @@
  * Live-generated JSON configuration for use in client side javascript
  */
 
-require_once __DIR__.'/../_backend/classify.current.php';
+require_once __DIR__.'/../_backend/geolocate.download.php'; // provides $region, $timecode
 require_once __DIR__.'/../_backend/config.loader.php';
-require_once __DIR__.'/../_backend/here-miss.php';
 
 $output = array(
     'release' => array(
@@ -27,8 +26,7 @@ $output = array(
     'user' => array(
         'ip' => $ip,
         'region' => $region,
-        'timecode' => $timecode,
-        'trackme' => $trackme
+        'timecode' => $timecode
     )
 );
 

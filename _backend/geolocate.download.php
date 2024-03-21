@@ -1,7 +1,9 @@
 <?php
 
-require_once 'classify.functions.php';
-require_once 'classify.get_ip.php';
+require_once 'geolocate.functions.php';
+require_once 'geolocate.guess_ip.php';
+
+// provides $region, $timecode, $download_link
 
 $region = getDownloadRegion($ip);
 if (is_array($region)) {
