@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__.'/../_backend/classify.functions.php';
-require_once __DIR__.'/../_backend/classify.get_ip.php';
+require_once __DIR__.'/../_backend/geolocate.functions.php'; // provides getCurrentLocation()
+require_once __DIR__.'/../_backend/geolocate.guess_ip.php'; // provides $ip
 require_once __DIR__.'/../_backend/store/address.php';
 require_once __DIR__.'/../_backend/store/api.php';
 
