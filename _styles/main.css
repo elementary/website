@@ -174,35 +174,6 @@ img.inline + div.inline {
   margin-left: 12px;
 }
 
-.inline-tweet {
-  color: inherit;
-}
-
-.inline-tweet:focus,
-.inline-tweet:hover {
-  color: #08c;
-  text-decoration: none;
-}
-
-.inline-tweet::after {
-  color: inherit;
-  content: "\f099";
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome\ 5 Brands";
-  font-style: normal;
-  font-weight: inherit;
-  margin-top: 0.2em;
-  opacity: 0;
-  padding-left: 6px;
-  position: absolute;
-  transition: all 0.15s ease-in-out;
-}
-
-.inline-tweet:focus::after,
-.inline-tweet:hover::after {
-  opacity: 1;
-}
-
 .read-more {
   white-space: nowrap;
 }
@@ -386,12 +357,6 @@ nav a[title="StackExchange"]:focus,
 nav a[title="StackExchange"]:hover {
   color: #0d93ff;
   fill: #0d93ff;
-}
-
-nav a[title="Twitter"]:focus,
-nav a[title="Twitter"]:hover {
-  color: #1da1f2;
-  fill: #1da1f2;
 }
 
 nav .logomark {
