@@ -129,33 +129,6 @@ function getIPHash($hostname, $debug = false)
     }
 }
 
-function getCurrentCountry($hostname, $debug = false)
-{
-
-    try {
-        if (!class_exists('GeoIp2\Database\Reader')) {
-            throw new \Exception('Class GeoIp2\Database\Reader not found');
-        }
-        $reader = new Reader(__DIR__.'/GeoLite2-City.mmdb');
-        $record = $reader->city($hostname);
-        $country = $record->country->isoCode;
-    } catch (\Exception $e) {
-        if ($debug) {
-            echo $e->getMessage();
-        } else {
-            error_log($e->getMessage());
-        }
-        $country = false;
-    }
-
-    if ($debug) {
-        echo 'Country: "'.$country.'"'."\n";
-    }
-
-    return $country;
-}
-
-
 function getCurrentLocation($hostname, $debug = false)
 {
 
