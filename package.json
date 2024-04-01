@@ -12,7 +12,7 @@
     "core-js": "^3.36.1",
     "cssnano": "^6.1.2",
     "glob": "^10.3.10",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^5.0.2",
     "gulp-imagemin": "^9.0.0",
