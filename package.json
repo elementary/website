@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.24.4",
     "babel-loader": "^9.1.3",
     "core-js": "^3.37.0",
-    "cssnano": "^6.1.2",
+    "cssnano": "^7.0.1",
     "glob": "^10.3.10",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
