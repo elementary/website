@@ -1,7 +1,7 @@
 {
     "Installation": "インストール",
     "Download elementary OS": "elementary OS をダウンロード",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "まだお済でない場合は、<a href=\"/\" target=\"_blank\" rel=\"noopener\">ホームページから elementary OS をダウンロード</a>する必要があります。ダウンロードした ISO ファイルを、以下の説明に従って USB フラッシュドライブにコピーする必要があります。",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "まだお済みでない場合は、<a href=\"/\" target=\"_blank\" rel=\"noopener\">ホームページから elementary OS をダウンロード</a>する必要があります。ダウンロードした ISO ファイルを、以下の説明に従って USB フラッシュドライブにコピーする必要があります。",
     "Frequently-Asked Questions": "よくある質問",
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "<a href=\"{#release_faq}\">今回のリリースに関して尋ねられることが多い質問</a>をまとめましたので、そちらをご覧ください。",
     "Recommended System Specifications": "推奨システム要件",
