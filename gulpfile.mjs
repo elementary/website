@@ -20,21 +20,6 @@ import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
 
 /**
- * store
- * Copies store files to production folder
- *
- * @returns {Task} - a gulp task for store designs
- */
-gulp.task('store', () => {
-    const base = '_images/store/designs'
-    const src = ['_images/store/designs/**/*']
-    const dest = 'images/store/designs'
-
-    return gulp.src(src, { base })
-    .pipe(gulp.dest(dest))
-})
-
-/**
  * png
  * Optimizes png images
  *
@@ -171,7 +156,7 @@ gulp.task('svg', () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg', 'gif'))
+gulp.task('images', gulp.parallel('png', 'jpg', 'svg', 'gif'))
 
 /**
  * styles
