@@ -21,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2023-08-16"
+  "stripe_version" => "2024-04-10"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
