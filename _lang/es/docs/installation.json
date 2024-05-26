@@ -10,7 +10,7 @@
     "4 GB of system memory (RAM)": "4 GB de memoria del sistema (RAM)",
     "Solid state drive (SSD) with at least 32 GB of free space": "Una unidad de estado sólido (SSD) con al menos 32 GB de espacio libre",
     "Internet access": "Acceso a Internet",
-    "Built-in or wired mouse/touchpad and keyboard": "",
+    "Built-in or wired mouse/touchpad and keyboard": "Mouse o panel táctil(touchpad) y teclado",
     "1024×768 minimum resolution display": "",
     "You will also need a spare USB flash drive with at least 4 GB of storage for installation.": "",
     "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "",
