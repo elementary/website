@@ -20,7 +20,7 @@
     "Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.": "Siga el video que se encuentra arriba, o seleccione el sistema operativo que está utilizando actualmente para ver instrucciones de instalación personalizadas a continuación.",
     "Windows": "Windows",
     "macOS": "macOS",
-    "Linux": "GNU/Linux",
+    "Linux": "Linux",
     "Verify Your Download": "",
     "Verifying your download is an important step: we generate a &quot;checksum&quot; for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.": "",
     "Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:": "",
