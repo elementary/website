@@ -35,7 +35,7 @@
     "Select your downloaded .iso file using the &quot;Select image&quot; button": "Seleccione su archivo .iso descargado usando el botón &laquo;Seleccionar imagen&raquo;",
     "Etcher should automatically detect your USB drive; if not, select the correct drive": "Etcher debería detectar automáticamente su unidad USB; si no, seleccione la unidad correcta",
     "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "Haga clic en el botón &laquo;Flash!&raquo;. Puede que sea necesario esperar un momento para que comience.",
-    "Once complete, continue to boot from the install drive.": "",
+    "Once complete, continue to boot from the install drive.": "Una vez completado, arranque la computadora con la unidad de instalación.",
     "Booting From the Install Drive": "",
     "In order to start the installation process, you must boot your computer from the install drive.": "Debe arrancar el equipo desde la unidad de instalación para comenzar a instalar el sistema.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Suponiendo que el equipo sigue encendido, comience por insertar la unidad de instalación y reiniciar el equipo.",
