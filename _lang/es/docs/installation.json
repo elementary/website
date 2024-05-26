@@ -16,7 +16,7 @@
     "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "<strong>No recomendamos las máquinas virtuales, ya que no funcionan tan bien como una instalación completa.</strong> Si está intentando instalar en una máquina virtual, habilite EFI si es posible. Pero es probable que encuentre otros problemas.",
     "Back Up Your Data": "Haga una copia de seguridad de sus datos",
     "Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.": "Asegúrese de copiar sus datos importantes en una ubicación externa, como un servicio en línea o una unidad de disco duro externa. La instalación de un sistema operativo nuevo puede sobrescribir los datos existentes.",
-    "Step-by-step Guide": "",
+    "Step-by-step Guide": "Guía paso por paso",
     "Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.": "",
     "Windows": "Windows",
     "macOS": "macOS",
