@@ -44,7 +44,7 @@
     "Resizing": "Redimensionar",
     "Most app windows can be resized by draging from any edge of the window. You can also secondary-click a window's header bar and choose <strong>Resize</strong> or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.": "La mayoría de las ventanas de aplicaciones se pueden cambiar de tamaño arrastrándolas desde cualquier borde de la misma. También puede hacer clic con el botón secundario en la barra de encabezado de una ventana y elegir <strong>Redimensionar</strong> o presionar <kbd>Alt</kbd><kbd>F8</kbd> para ingresar a modo de redimensionar. Mueva el cursor del ratón en la dirección a la que desea redimensionar la ventana.",
     "Multitasking": "Multitarea",
-    "elementary OS uses both windows and workspaces for multitasking.": "",
+    "elementary OS uses both windows and workspaces for multitasking.": "elementary OS utiliza tanto ventanas como espacios de trabajo para la multitarea",
     "Windows": "Ventanas",
     "App windows can overlap on your desktop and be moved around. You can switch between open windows several ways:": "",
     "Click or tap on the window you want to switch to": "",
