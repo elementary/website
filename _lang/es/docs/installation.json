@@ -3,7 +3,7 @@
     "Download elementary OS": "Descargar elementary OS",
     "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si aún no lo ha hecho, necesitará <a href=\"/\" target=\"_blank\" rel=\"noopener\">descargar elementary OS desde nuestro sitio web</a>. Necesitará copiar el archivo ISO descargado a una unidad USB siguiendo las instrucciones de abajo.",
     "Frequently-Asked Questions": "Preguntas frecuentes",
-    "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "",
+    "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Mira las <a href=\"{#release_faq}\">preguntas frecuentes sobre esta versión</a>.",
     "Recommended System Specifications": "Especificaciones recomendadas para el sistema",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Aunque no tengamos un conjunto estricto de requisitos mínimos del sistema, recomendamos como poco las especificaciones siguientes para la mejor experiencia:",
     "Recent Intel i3 or comparable dual-core 64-bit processor": "Procesador reciente, Intel i3 o equiparable, de dos núcleos y de 64 bits",
