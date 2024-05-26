@@ -22,7 +22,7 @@
     "macOS": "macOS",
     "Linux": "Linux",
     "Verify Your Download": "Verifique su descarga",
-    "Verifying your download is an important step: we generate a &quot;checksum&quot; for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.": "",
+    "Verifying your download is an important step: we generate a &quot;checksum&quot; for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.": "Verificar tu descarga es un paso importante: nosotros generamos una comprobación, para las imágenes de elementary OS  y recomendamos que tu descarga sea igual a la comprobación, antes de instalar. Esto asegura que tu la has recibido completa, descarga completa y no esta dañada.",
     "Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:": "",
     "It should produce the output:": "",
     "If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.": "",
