@@ -1,7 +1,7 @@
 {
     "Installation": "Instalación",
     "Download elementary OS": "Descargar elementary OS",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si no lo ha hecho aún, <a href=\"/\" target=\"_blank\" rel=\"noopener\">descargue elementary OS desde nuestro sitio web</a>. Habrá de copiar el archivo ISO descargado en un soporte de memoria USB; para ello, siga estas instrucciones.",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Si aún no lo has hecho, necesitarás <a href=\"/\" target=\"_blank\" rel=\"noopener\">descargar el sistema operativo elementary OS de nuestra página web</a>. Necesitarás copiar el archivo ISO descargado a una unidad flash USB siguiendo las instrucciones de abajo.",
     "Frequently-Asked Questions": "",
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "",
     "Recommended System Specifications": "Especificaciones recomendadas para el sistema",
