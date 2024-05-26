@@ -19,7 +19,7 @@
     "How Data is Used": "Cómo se utilizan sus datos",
     "<strong>Your data is stored locally on your device and never sent to elementary servers or any third parties.</strong> It is used to populate your locally-installed apps such as Mail, Calendar, Tasks, Files, and Photos with your data so you can access it.": "<strong>Sus datos se almacenan localmente en tu dispositivo y nunca se envían a los servidores de elementary ni a terceros.</strong> Se utilizan para visualizarlos en tus aplicaciones instaladas localmente, como Correo, Calendario, Tareas, Archivos y Fotos, para que pueda acceder a ellos.",
     "Sharing Data": "Compartir datos",
-    "<strong>elementary OS does not share any data collected from your online accounts.</strong> The data is never sent to elementary or third-party servers.": "",
+    "<strong>elementary OS does not share any data collected from your online accounts.</strong> The data is never sent to elementary or third-party servers.": "<strong>elementary OS no comparte ningún dato recogido de tus cuentas online.</strong> Los datos nunca se envían a elementary ni a terceros.",
     "elementary.io": "elementary.io",
     "This website uses the open source Plausible Analytics to anonymously count visits, downloads, etc. You can see the same data we can see on <a target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/elementary.io\">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class=\"read-more\" target=\"_blank\" rel=\"noopener\" href=\"https://plausible.io/data-policy\">Plausible Data Policy</a>": "",
     "Cookies": "<em>Cookies</em>",
