@@ -33,7 +33,7 @@
     "Open Etcher, then:": "Abra Etcher:",
     "Plug in your spare USB flash drive": "Conecte su unidad de memoria USB",
     "Select your downloaded .iso file using the &quot;Select image&quot; button": "Seleccione su archivo .iso descargado usando el botón &laquo;Seleccionar imagen&raquo;",
-    "Etcher should automatically detect your USB drive; if not, select the correct drive": "",
+    "Etcher should automatically detect your USB drive; if not, select the correct drive": "Etcher debería detectar automáticamente su unidad USB; si no, seleccione la unidad correcta",
     "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "",
     "Once complete, continue to boot from the install drive.": "",
     "Booting From the Install Drive": "",
