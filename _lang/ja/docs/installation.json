@@ -10,7 +10,7 @@
     "4 GB of system memory (RAM)": "4 GB のシステムメモリー (RAM)",
     "Solid state drive (SSD) with at least 32 GB of free space": "少なくとも 32 GB の空き領域がある SSD",
     "Internet access": "インターネットアクセス",
-    "Built-in or wired mouse/touchpad and keyboard": "内部または有線接続のマウス/タッチパッドとキーボード",
+    "Built-in or wired mouse/touchpad and keyboard": "組み込みまたは有線のマウス/タッチパッドとキーボード",
     "1024×768 minimum resolution display": "最小解像度 1024×768 のディスプレイ",
     "You will also need a spare USB flash drive with at least 4 GB of storage for installation.": "4 GB 以上の容量がある空の USB フラッシュドライブも必要になります。",
     "<strong>We do not recommend virtual machines as they don't perform as well as a full install.</strong> If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.": "<strong>仮想環境へのインストールは推奨しません。実機インストールと同等の動作が期待できない可能性があります。</strong>仮想環境にインストールする場合、なるべく EFI を有効化することをおすすめしますが、これが原因で何らかの不具合に遭遇する恐れもあります。",
