@@ -30,7 +30,7 @@
     "To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called &quot;Etcher&quot;.": "Para crear una unidad de instalación de elementary OS, necesitará una unidad de memoria USB que tenga al menos 4 GB de capacidad y una aplicación llamada &laquo;Etcher&raquo;.",
     "Download Etcher": "Descargar Etcher",
     "etcher steps": "pasos de etcher",
-    "Open Etcher, then:": "",
+    "Open Etcher, then:": "Abra Etcher:",
     "Plug in your spare USB flash drive": "",
     "Select your downloaded .iso file using the &quot;Select image&quot; button": "",
     "Etcher should automatically detect your USB drive; if not, select the correct drive": "",
