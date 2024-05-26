@@ -24,7 +24,7 @@
     "Verify Your Download": "Verifique su descarga",
     "Verifying your download is an important step: we generate a &quot;checksum&quot; for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.": "Verificar su descarga es un paso importante: Nosotros generamos una &laquo;suma de comprobación&raquo;, para las imágenes ISO de elementary OS. Recomendamos que antes de instalar verifique que su imagen descargada sea igual a nuestra comprobación, esto asegura que ha descargado la imagen correctamente.",
     "Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:": "Asumiendo que descargó elementary OS en la carpeta de Descargas de Windows, abra el símbolo del sistema en Windows y ejecute el siguiente comando:",
-    "It should produce the output:": "Debería generar:",
+    "It should produce the output:": "Debería generar este resultado:",
     "If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.": "",
     "Creating an Install Drive": "Crear una unidad de instalación",
     "To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called &quot;Etcher&quot;.": "",
