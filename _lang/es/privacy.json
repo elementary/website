@@ -7,7 +7,7 @@
     "Protections": "Protecciones",
     "elementary OS comes with built-in privacy protections to help protect your data from others.": "elementary OS incluye protecciones de privacidad para ayudar a mantener sus datos seguros de los demás.",
     "Tattle-tale": "Soplón",
-    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "",
+    "elementary OS helps you keep tabs on what apps are up to. When an app is using your microphone, we display an indicator to let you know. When an app is using a lot of energy, we tell you in your power indicator.": "elementary OS le a ayuda a controlar el comportamiento de las aplicaciones. Cuando una aplicación use el micrófono, se muestra un indicador para informar acerca de ello. Cuando una aplicación utilice demasiada energía, el indicador de energía lo marcará.",
     "Permissions": "Permisos",
     "When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.": "Cuando una aplicación quiera acceder a los datos o dispositivos, deberá pedir permiso por adelantado. Revisamos todos los programas del Centro de aplicaciones para garantizar que utilicen adecuadamente los permisos, y siempre podrá revocarlos en la Configuración del sistema.",
     "Housekeeping": "Mantenimiento",
