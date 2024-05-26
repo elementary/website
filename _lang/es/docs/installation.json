@@ -36,7 +36,7 @@
     "Etcher should automatically detect your USB drive; if not, select the correct drive": "Etcher debería detectar automáticamente su unidad USB; si no, seleccione la unidad correcta",
     "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "Haga clic en el botón &laquo;Flash!&raquo;. Puede que sea necesario esperar un momento para que comience.",
     "Once complete, continue to boot from the install drive.": "Una vez terminado, inicie la computadora desde la unidad de instalación.",
-    "Booting From the Install Drive": "",
+    "Booting From the Install Drive": "Arrancando Desde la Unidad de Instalación",
     "In order to start the installation process, you must boot your computer from the install drive.": "Debe arrancar el equipo desde la unidad de instalación para comenzar a instalar el sistema.",
     "Assuming that your computer is still on, start by inserting your install drive and restarting your computer.": "Suponiendo que el equipo sigue encendido, comience por insertar la unidad de instalación y reiniciar el equipo.",
     "Most computers will briefly allow you to change the boot order for this boot only by pressing a special key — usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another function key. Refer to the screen or your computer's documentation to be sure.": "La mayoría de los ordenadores le permitirán cambiar brevemente el orden de inicio presionando una tecla especial, generalmente <kbd>F12</kbd>, pero a veces <kbd>Esc</kbd> u otra tecla de función. Consulte la pantalla o la documentación de su computadora para estar seguro.",
