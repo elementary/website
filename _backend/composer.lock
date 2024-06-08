@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64101c79cf7113c5ff9271ab681de0e7",
+    "content-hash": "9c7535672aa3648163da254d4405de8c",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -825,16 +825,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v14.6.0",
+            "version": "v14.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "cc4108812a0b6db06041e520fe340f6d8ecfeff1"
+                "reference": "7165f64ec1b19cb0ce288d553909cd68d8e6a3b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/cc4108812a0b6db06041e520fe340f6d8ecfeff1",
-                "reference": "cc4108812a0b6db06041e520fe340f6d8ecfeff1",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/7165f64ec1b19cb0ce288d553909cd68d8e6a3b1",
+                "reference": "7165f64ec1b19cb0ce288d553909cd68d8e6a3b1",
                 "shasum": ""
             },
             "require": {
@@ -878,9 +878,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v14.6.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v14.9.0"
             },
-            "time": "2024-05-09T19:39:17+00:00"
+            "time": "2024-05-30T20:12:41+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
