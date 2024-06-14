@@ -20,13 +20,13 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
 
     $(document).ready(() => {
         // Set defaults
-        var paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
-        var currentButton = 'amount-twenty' // Default to $20 when the page loads.
-        var previousButton = 'amount-twenty' // Defaulting to $20 means it will be the first previous.
+        const paymentMinimum = 100 // Let's make the minimum $1 because of processing fees.
+        let currentButton = 'amount-twenty' // Default to $20 when the page loads.
+        let previousButton = 'amount-twenty' // Defaulting to $20 means it will be the first previous.
 
         // ACTION: amountSelect: Track the current and previous amounts selected.
-        var amountSelect = function (e) {
-            var targetID = $(e.target).attr('id') // avoids null values vs native js
+        const amountSelect = function (e) {
+            const targetID = $(e.target).attr('id') // avoids null values vs native js
             console.log('Setting payment target to #' + targetID)
             if (currentButton !== targetID) previousButton = currentButton
             currentButton = targetID
@@ -40,9 +40,9 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         $('.target-amount').on('click focusin', amountSelect)
 
         // ACTION: amountValidate: Check the validity of custom amount inputs.
-        var amountValidate = function (event) {
-            var currentVal = $('#amount-custom').val()
-            var code = event.which || event.keyCode || event.charCode
+        const amountValidate = function (event) {
+            const currentVal = $('#amount-custom').val()
+            const code = event.which || event.keyCode || event.charCode
             if (
                 // IS NOT a period or no period already.
                 (code !== 46 || currentVal.indexOf('.') !== -1) &&
@@ -58,9 +58,9 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         $('#amount-custom').keypress(amountValidate)
 
         // ACTION: amountBlur: Check the validity of custom amount inputs.
-        var amountBlur = function () {
+        const amountBlur = function () {
             // If NOT valid OR empty.
-            var i = document.getElementById('amount-custom')
+            const i = document.getElementById('amount-custom')
             if (
                 !i.validity.valid ||
                 i.value === ''
@@ -79,8 +79,8 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
 
         // ONLOAD & ACTION: updateDownloadButton: Change Button text based on resulting action
         function updateDownloadButton () {
-            var translateDownload = $('#translate-download').text()
-            var translatePurchase = $('#translate-purchase').text()
+            const translateDownload = $('#translate-download').text()
+            const translatePurchase = $('#translate-purchase').text()
             // Catch case where no buttons are available because the user has already paid.
             if ($('#choice-buttons').children().length <= 1) {
                 $('#download').text(translateDownload)
@@ -103,12 +103,12 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         $('#download').click(function (event) {
             event.preventDefault()
             console.log('Payment initiated with selection ' + currentButton)
-            var paymentAmount = $('#' + currentButton).val() * 100
+            const paymentAmount = $('#' + currentButton).val() * 100
             console.log('Starting payment for ' + paymentAmount)
             $('#hidden-amount').val(paymentAmount)
 
             // Disables button for 3 seconds after clicking it
-            var download = $(this)
+            const download = $(this)
             download.prop('disabled', true)
             setTimeout(function () {
                 download.prop('disabled', false)

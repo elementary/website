@@ -12,8 +12,8 @@ jQuery.then(($) => {
             if (event.isDefaultPrevented()) return
 
             // Get link href
-            var $anchor = $(this)
-            var href = $anchor.attr('href')
+            const $anchor = $(this)
+            let href = $anchor.attr('href')
             if (href == null || href === false || href.indexOf('#') === -1) return
 
             // This handles /path/current-page#element
@@ -21,11 +21,11 @@ jQuery.then(($) => {
             if (href[0] === '!') return
 
             // Get offset
-            var scrollTop
+            let scrollTop
             if (href === '') {
                 scrollTop = 0
             } else {
-                var $target = $('#' + href)
+                const $target = $('#' + href)
                 if (!$target.length) { // Anchor target not in this page
                     return
                 }
@@ -35,7 +35,7 @@ jQuery.then(($) => {
 
             // Smooth scrolling
             $('html, body').stop().animate({
-                scrollTop: scrollTop
+                scrollTop
             }, 'normal', function () {
                 window.location.hash = href
             })
@@ -48,7 +48,7 @@ jQuery.then(($) => {
         setTimeout(function () {
             $('a[href^="#"]').each(function () {
                 if (!$(this).hasClass('open-modal')) {
-                    var href = $(this).attr('href')
+                    const href = $(this).attr('href')
                     $(this).attr('href', window.location.pathname + href)
                 }
             })
