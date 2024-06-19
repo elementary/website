@@ -51,7 +51,7 @@
     "Improve the overall elementary OS ecosystem and earn money by creating great new apps for AppCenter.": "AppCenter 向けに便利なアプリを開発することで、elementary OS を中心としたシステムを改善し、収入を得ましょう。",
     "Publish on AppCenter": "AppCenter でリリースする",
     "Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow.": "私たちのデザインチームは、アイデアをイシューレポートに明確化し、サンプルを作成します。作業にとりかかる前に、私たちのデザインのワークフローについて読むことを推奨します。",
-    "Our design team tracks “Needs Design” issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "私たちのデザインチームは、GitHub で “Needs Design” とラベル付けされた不具合を追跡しています。これらには、さらなる議論やワイヤーフレーム、サンプルが必要なことがあります。",
+    "Our design team tracks “Needs Design” issues in GitHub. These might need further design discussion, wireframes, or deliverable assets.": "私たちのデザインチームは、GitHub で“Needs Design”とラベル付けされた不具合を追跡しています。これらには、さらなる議論やワイヤーフレーム、サンプルが必要なことがあります。",
     "See ‘Needs Design’ Issues": "‘Needs Design’ タグの付いた Issue を参照",
     "elementary OS uses a system stylesheet written in CSS. It defines how the interface—like buttons, toolbars, and menus—is displayed.": "elementary OS では、CSS で記述されたシステムスタイルシートを使用しています。これは、ボタンやツールバー、メニューなどの UI の見た目を定義しています。",
     "View Stylesheet": "スタイルシートを参照",
