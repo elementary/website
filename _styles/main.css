@@ -311,18 +311,6 @@ nav .menu-button:hover svg {
   opacity: 0.7;
 }
 
-nav a[title="Facebook"]:focus,
-nav a[title="Facebook"]:hover {
-  color: #19227e;
-  fill: #19227e;
-}
-
-nav a[title="Google+"]:focus,
-nav a[title="Google+"]:hover {
-  color: #d50000;
-  fill: #d50000;
-}
-
 nav a[title="Youtube"]:focus,
 nav a[title="Youtube"]:hover {
   color: #d50000;
@@ -335,28 +323,16 @@ nav a[title="Mastodon"]:hover {
   fill: #0d93ff;
 }
 
-nav a[title="Medium"]:focus,
-nav a[title="Medium"]:hover {
-  color: #00ab6b;
-  fill: #00ab6b;
-}
-
 nav a[title="Reddit"]:focus,
 nav a[title="Reddit"]:hover {
   color: #ff4500;
   fill: #ff4500;
 }
 
-nav a[title="Slack"]:focus,
-nav a[title="Slack"]:hover {
-  color: #4a154b;
-  fill: #4a154b;
-}
-
-nav a[title="StackExchange"]:focus,
-nav a[title="StackExchange"]:hover {
-  color: #0d93ff;
-  fill: #0d93ff;
+nav a[title="Discord"]:focus,
+nav a[title="Discord"]:hover {
+  color: #5865f2;
+  fill: #5865f2;
 }
 
 nav .logomark {

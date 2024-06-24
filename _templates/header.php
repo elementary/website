@@ -137,10 +137,10 @@ $l10n->beginHtmlTranslation();
                     <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off title="Youtube"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
-                    <li><a href="https://community-slack.elementary.io/" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
+                    <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off aria-label="YouTube" title="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off aria-label="Mastodon" title="Mastodon"><i aria-hidden="true" class="fab fa-mastodon"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off aria-label="Reddit" title="Reddit"><i aria-hidden="true" class="fab fa-reddit"></i></a></li>
+                    <li><a href="https://discord.gg/dGdDfGNa" target="_blank" rel="noopener" data-l10n-off aria-label="Discord" title="Discord"><i aria-hidden="true" class="fab fa-discord"></i></a></li>
                 </ul>
             </div>
         </nav>
