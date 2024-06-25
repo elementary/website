@@ -32,7 +32,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.2.0",
     "stylelint": "^16.6.1",
-    "stylelint-config-recommended": "^14.0.0"
+    "stylelint-config-recommended": "^14.0.1"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
