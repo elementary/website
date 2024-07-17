@@ -12,7 +12,7 @@ See the [frequently-asked questions for this release]({#release_faq}).
 
 While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
 
-* Recent Intel i3 or comparable dual-core 64-bit processor
+* Recent Intel Core i3 or comparable dual-core 64-bit processor
 * 4 GB of system memory (RAM)
 * Solid state drive (SSD) with at least 32 GB of free space
 * Internet access
