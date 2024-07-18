@@ -6,7 +6,7 @@
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Få <a href=\"{#release_faq}\">svaret på alle gåter for denne utgaven</a>.",
     "Recommended System Specifications": "Anbefalte systemspesifikasjoner",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Selv om det ikke er noe absolutt minimumskrav, anbefales det å minst å ha følgende maskinvare for den beste opplevelsen:",
-    "Recent Intel i3 or comparable dual-core 64-bit processor": "Nylig Intel i3 eller sammenlignbar tokjerners 64-biters prosessor",
+    "Recent Intel Core i3 or comparable dual-core 64-bit processor": "",
     "4 GB of system memory (RAM)": "4GB systemminne (RAM)",
     "Solid state drive (SSD) with at least 32 GB of free space": "SSD med minst 32 GB ledig plass",
     "Internet access": "Internett-tilgang",
