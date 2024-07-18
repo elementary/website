@@ -6,7 +6,7 @@
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Lesen Sie <a href=\"{#release_faq}\">häufig gestellte Fragen für dieses Release</a>.",
     "Recommended System Specifications": "Empfohlene Systemanforderungen",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Obwohl es keine strikten Systemanforderungen gibt, empfehlen wir für die beste Nutzererfahrung dennoch mindestens die folgenden Systemspezifikationen:",
-    "Recent Intel i3 or comparable dual-core 64-bit processor": "Aktueller Intel i3 oder vergleichbarer 64-Bit Dual-Core Prozessor",
+    "Recent Intel Core i3 or comparable dual-core 64-bit processor": "",
     "4 GB of system memory (RAM)": "4 GB Arbeitsspeicher (RAM)",
     "Solid state drive (SSD) with at least 32 GB of free space": "",
     "Internet access": "Internetzugriff",
