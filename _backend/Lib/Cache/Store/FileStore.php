@@ -66,7 +66,7 @@ class FileStore extends BaseStore implements StoreInterface
             $fileDirectory = $this->cacheDirectory();
 
             if (file_exists($fileDirectory) === false) {
-                mkdir($fileDirectory, 0644, true);
+                mkdir($fileDirectory, 0744, true);
             }
         }
 

@@ -1,6 +1,6 @@
 {
-    "Sorry, access is denied.": "",
-    "You don't have permission to view the requested resource.": "",
+    "Sorry, access is denied.": "Beklagar, men tilgang til denne sida er begrensa.",
+    "You don't have permission to view the requested resource.": "Du har ikkje tilgang til å sjå denne ressursen.",
     "Go to Home Page": "Gå til heimesida",
-    "Access Denied &sdot; elementary": ""
+    "Access Denied &sdot; elementary": "Ingen tilgang &sdot; elementary"
 }

@@ -9,7 +9,7 @@
 $event_expires = array(
     'juno 5.0 release' => [new DateTime('2018-10-11T19:00:00Z'), new DateTime('2018-10-16T19:00:00Z')],
     'indiegogo appcenter 2/7' => [new DateTime('2020-2-7T18:00:00Z'), new DateTime('2020-3-7T19:00:00Z')],
-    'covid-19' => [new DateTime('2020-03-01'), new DateTime('2022-12-31')],
+    'edw' => [new DateTime('2021-06-01T00:00:00Z'), new DateTime('2021-06-28T00:00:00Z')],
 );
 
 /**
@@ -20,7 +20,8 @@ $event_expires = array(
  *
  * @return {Boolean} - True if event is currently active
  */
-function event_active (string $event) {
+function event_active(string $event)
+{
     global $event_expires;
 
     if (!isset($event_expires[$event])) {
@@ -45,7 +46,8 @@ function event_active (string $event) {
  *
  * @return {String} - Text to use in cookie
  */
-function event_cookie_encode (string $text) {
+function event_cookie_encode(string $text)
+{
     return urlencode('event_' . str_replace([' ', '.', '/'], '_', $text));
 }
 
@@ -58,7 +60,8 @@ function event_cookie_encode (string $text) {
  *
  * @return {Boolean} - True if cookie was set
  */
-function event_cookie_set (string $event, $value) {
+function event_cookie_set(string $event, $value)
+{
     $string = event_cookie_encode($event);
     $expires = time() + 60 * 60 * 24 * 365; // One year in the future
 
@@ -73,7 +76,8 @@ function event_cookie_set (string $event, $value) {
  *
  * @return {*} - Value of event cookie
  */
-function event_cookie_get (string $event) {
+function event_cookie_get(string $event)
+{
     $string = event_cookie_encode($event);
 
     if (isset($_COOKIE[$string])) {

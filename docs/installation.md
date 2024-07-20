@@ -4,17 +4,24 @@
 
 If you haven't already, you will need to <a href="/" target="_blank" rel="noopener">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
 
+## Frequently-Asked Questions
+
+See the [frequently-asked questions for this release]({#release_faq}).
+
 ## Recommended System Specifications {#recommended-system-specifications}
 
 While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
 
-* Recent Intel i3 or comparable dual-core 64-bit processor
+* Recent Intel Core i3 or comparable dual-core 64-bit processor
 * 4 GB of system memory (RAM)
-* Solid state drive (SSD) with 15 GB of free space
+* Solid state drive (SSD) with at least 32 GB of free space
 * Internet access
-* 1024×768 display
+* Built-in or wired mouse/touchpad and keyboard
+* 1024×768 minimum resolution display
 
-You will also need a USB flash drive with at least 2 GB of free space for installation.
+You will also need a spare USB flash drive with at least 4 GB of storage for installation.
+
+**We do not recommend virtual machines as they don't perform as well as a full install.** If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.
 
 <div class="row alert warning" markdown="1">
 <div class="column alert">
@@ -31,45 +38,63 @@ Make sure to back your important data up to an external location such as a cloud
 </div>
 </div>
 
-## Choose your current Operating System {#choose-operating-system}
+## Step-by-step Guide {#choose-operating-system}
 
-Select the operating system you are currently using to view tailored installation instructions.
+<div class="embed">
+<iframe src="https://www.youtube-nocookie.com/embed/3KoCDt4fxcM?modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
 <a class="button install-on-windows" href="#install-on-windows"><i class="fab fa-windows"></i> Windows</a>
 <a class="button install-on-macos" href="#install-on-macos"><i class="fab fa-apple"></i> macOS</a>
-<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fab fa-linux"></i> Ubuntu</a>
+<a class="button install-on-ubuntu" href="#install-on-ubuntu"><i class="fab fa-linux"></i> Linux</a>
 </div>
 </div>
-
-***
 
 <div class="slide-container" id="installation-instructions-slide-container" markdown="1">
 
 <div id="install-on-windows" class="slide" markdown="1">
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+### Verify Your Download {#verify-your-download}
 
-You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.
+Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
-<a href="https://rufus.akeo.ie/" class="button suggested-action">Download Rufus</a>
-
-![Rufus - select ISO](images/docs/installation/rufus_select_iso.png) {.float-left}
-
-1. Open Rufus
-2. Insert your USB drive and select it in the "Device" list
-3. Select "Disk or ISO image" in the "Boot selection" list
-4. Click "SELECT" to choose the ISO that you downloaded previously.
-5. We generate a checksum (or hash sum) for elementary OS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click  ![the checksum icon](images/docs/installation/rufus_checksum_icon.png) {.inline}  next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
+Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:
 
 ```bash nohighlight
-439110ceadadd13683632ddd273095f72ee9b8d22a7569ac84c2fd1c4d920610
+CertUtil -hashfile Downloads\{#release_filename} sha256
 ```
 
-6. If the hashes match, click "START" and wait for the process to finish.
+It should produce the output:
 
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+```bash nohighlight
+SHA256 hash of Downloads\{#release_filename}:
+{#release_sha256}
+```
+
+If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
+
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
+
+To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
+
+<a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
+
+![etcher steps](images/docs/installation/etcher.gif)
+
+Open Etcher, then:
+
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
+
+Once complete, continue to boot from the install drive.
+
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -80,55 +105,48 @@ In order to start the installation process, you must boot your computer from the
 
 </div>
 
-
 <div id="install-on-macos" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
-Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
+Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
-
-Running the following command in your Terminal:
-
-```bash nohighlight
-shasum -a 256 ~/Downloads/elementaryos-5.1-stable.20200814.iso
-```
-
-Should produce the output:
+Assuming you downloaded elementary OS to your macOS Downloads folder, open the Terminal app in macOS and run the following command:
 
 ```bash nohighlight
-439110ceadadd13683632ddd273095f72ee9b8d22a7569ac84c2fd1c4d920610
+shasum -a 256 ~/Downloads/{#release_filename}
 ```
 
-Note: This is assuming that you have downloaded the .iso file to your Downloads folder.
-In case you have downloaded it elsewhere, please specify the correct path to the downloaded file, as shown below
+It should produce the output:
 
 ```bash nohighlight
-shasum -a 256 <Path to the Downloaded Folder>/elementaryos-5.1-stable.20200814.iso
+{#release_sha256}
 ```
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
 
-To create an elementary OS install drive on macOS you'll need a USB flash drive that is at least 2 GB in capacity and an app called "Etcher".
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-<a href="https://www.etcher.io/" class="button suggested-action">Download Etcher</a>
+To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
 
+<a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
 
 ![etcher steps](images/docs/installation/etcher.gif)
 
+Open Etcher, then:
 
-1. Insert the spare USB drive, and select the ISO file you've just downloaded.
-2. Open "Etcher" and select your downloaded elementary OS image file using the "Select image" button.
-3. Etcher should automatically detect your USB drive, but check to see if it has selected the correct target.
-4. Start the flashing process by clicking the "Flash!" button. It will take a moment to get started.
-5. When complete it will be safe to remove the drive and attempt to boot to install elementary OS.
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
+
+Once complete, continue to boot from the install drive.
 
 The following dialog may appear during the flashing process, it is safe to ignore.
 
 ![Not readable warning](images/docs/installation/osx_warning.png)
 
-
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 
@@ -138,47 +156,46 @@ In order to start the installation process, you must boot your computer from the
 
 #### Boot Errors
 
-If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn elementaryos-5.1-stable.20200814.iso to Disc". When complete, attempt to boot again from the Install DVD.
+If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select "Burn {#release_filename} to Disc". When complete, attempt to boot again from the Install DVD.
 
 </div>
 
-
 <div id="install-on-ubuntu" class="slide" markdown="1">
 
-## Verify your Download {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
-Verifying your download is an important, but optional step. We generate a checksum (or hash sum) for elementary OS images and we recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that your install image is not corrupted in any way.
-
+Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Running the following command in your terminal:
 
 ```bash nohighlight
-sha256sum elementaryos-5.1-stable.20200814.iso
+sha256sum {#release_filename}
 ```
 
-should produce the output:
+It should produce the output:
 
 ```bash nohighlight
-439110ceadadd13683632ddd273095f72ee9b8d22a7569ac84c2fd1c4d920610
+{#release_sha256}
 ```
 
-## Creating an Install Drive {#creating-an-installation-medium .clear-float}
+### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-You'll need a USB flash drive with at least 2 GB of free space and a program called UNetbootin.
+To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
 
-<a href="https://unetbootin.github.io/" class="button suggested-action">Download UNetbootin</a>
+<a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
 
+![etcher steps](images/docs/installation/etcher.gif)
 
-1. Open UNetbootin from the Dash. It will open a window like the one below:
+Open Etcher, then:
 
-    ![UNetbootin](images/docs/installation/unetbootin.png)
+1. Plug in your spare USB flash drive
+2. Select your downloaded .iso file using the "Select image" button
+3. Etcher should automatically detect your USB drive; if not, select the correct drive
+4. Click the "Flash!" button. It may take a moment to get started.
 
-2. Select "Diskimage"
-2. Click "&#8230;" to select the ISO that you downloaded previously.
-3. Unplug all USB memory devices apart from the one you want to use.
-4. Click "OK" and wait for the process to finish.
+Once complete, continue to boot from the install drive.
 
-## Booting from the Install Drive {#booting-from-the-installation-medium .clear-float}
+### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
 In order to start the installation process, you must boot your computer from the install drive.
 

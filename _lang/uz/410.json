@@ -1,7 +1,0 @@
-{
-    "Whoops! That link has expired.": "Kechirasiz! Ushbu manzil foydalanish uchun eskirgan.",
-    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "Agar siz elementary OS ni yuklab olmoqchi bo'lsangiz iltimos <a href=\"/\">bosh sahifa</a>ga o'tib eng oxirgi talqinini yuklab oling. Agar siz ushbu sahifaga boshqa saytda berilgan manzil orqali kelib qolgan bo'lsangiz iltimos u sayt egasini ham ushbu manzil vaqtinchalik ekanligini na har bir tashrifchi uchun alohida yaratilishini aytib qo'ying. Yuklab olish uchun yagona va eng to'g'ri yo'l <a href=\"https://elementary.io\">elementary.io</a> manziliga yo'naltirish.",
-    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "Agar siz bundan boshqa narsani xoxlagan bo'lsangiz va natijaga erish olmayotgan bo'lsangiz iltimos tortinmasdan <a href=\"https://github.com/elementary/website/issues/new\">bu yerda GitHub repozitoriyamizda</a> yozib qoldiring.",
-    "Go to Home Page": "Bosh sahifaga o‘tish",
-    "Download Link Expired &sdot; elementary": "Link eskirib, muxlati o'tgan &sdot; elementary"
-}

@@ -1,10 +1,12 @@
 <?php
 
 if (!isset($l10n)) {
-   $l10n = new \App\Lib\L10n();
+    $l10n = new \App\Lib\L10n();
 }
 $page['lang'] = $l10n->lang();
-if (!isset($page['lang'])) $page['lang'] = 'en';
+if (!isset($page['lang'])) {
+    $page['lang'] = 'en';
+}
 
 $page['lang-root'] = $sitewide['root'];
 if ($page['lang'] != 'en') {
@@ -24,13 +26,22 @@ if (isset($page['title'])) {
     $page['title'] = $l10n->translate($page['title'], $page['name']);
 }
 
-if (!isset($page['styles'])) $page['styles'] = array();
-if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
-if (!isset($page['scripts'])) $page['scripts'] = array();
+if (!isset($page['styles'])) {
+    $page['styles'] = array();
+}
+if (!isset($page['script-plugins'])) {
+    $page['script-plugins'] = array();
+}
+if (!isset($page['scripts'])) {
+    $page['scripts'] = array();
+}
+
+$scriptsManifest = json_decode(file_get_contents(__DIR__.'/../scripts/manifest.json', true), true);
+$stylesManifest = json_decode(file_get_contents(__DIR__.'/../styles/manifest.json', true), true);
 
 $l10n->init();
-$l10n->set_domain('layout');
-$l10n->begin_html_translation();
+$l10n->setDomain('layout');
+$l10n->beginHtmlTranslation();
 
 ?>
 
@@ -75,81 +86,75 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $stylesManifest["styles/main.css"]?>">
 
         <?php foreach ($page['styles'] as $style) { ?>
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $stylesManifest[$style]?>">
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <script src="scripts/common.js"></script>
-        <script src="scripts/main.js" async></script>
+        <script src="<?php echo $scriptsManifest["scripts/runtime.js"]?>"></script>
+        <script src="<?php echo $scriptsManifest["scripts/main.js"]?>" async></script>
 
-        <?php if ( !empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io' ) { ?>
-        <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
-        <?php } ?>
+            <?php if (!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io') { ?>
+        <script async defer data-domain="elementary.io" src="https://plausible.io/js/script.js"></script>
+            <?php } ?>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
-        <?php
+            <?php
             // loads all async javascript tags here
             foreach ($page['scripts'] as $one => $two) {
                 $src = (!is_string($one)) ? $two : $one;
                 $atr = (is_array($two)) ? $two : array();
 
-                if (!isset($atr['async'])) $atr['async'] = true;
+                if (!isset($atr['async'])) {
+                    $atr['async'] = true;
+                }
 
                 $atr_string = "";
                 foreach ($atr as $name => $setting) {
                     if (is_bool($setting) && $setting === true) {
                         $atr_string .= ' ' . $name;
-                    } else if (!is_bool($setting)) {
+                    } elseif (!is_bool($setting)) {
                         $atr_string .= ' ' . $name . '="' . $setting . '"';
                     }
                 }
-        ?>
-        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
-        <?php } ?>
+                ?>
+        <script src="<?php echo $scriptsManifest[$src] ?>"<?php echo $atr_string ?>></script>
+            <?php } ?>
         <?php } ?>
     </head>
     <body class="page-<?php echo $page['name']; ?>">
         <nav>
+            <button class="menu-button" title="Toggle navigation menu" aria-label="Toggle navigation menu" aria-expanded="false"><?php include __DIR__.'/../images/menu.svg'; ?></button>
             <div class="nav-content">
                 <ul>
                     <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
-                    <li><a href="<?php echo $page['lang-root'].'store/'; ?>">Store</a></li>
+                    <li><a href="https://store.elementary.io" target="_self">Store</a></li>
                     <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
-                    <?php if (isset($_COOKIE['cart']) || substr($page['name'], 0, 5) === 'store') { ?>
-                    <li><a href="<?php echo $page['lang-root'].'store/cart'; ?>"><i class="fa fa-shopping-cart"></i></a></li>
-                    <?php } ?>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://www.facebook.com/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
-                    <li><a href="https://elementaryos.stackexchange.com" target="_blank" rel="noopener" data-l10n-off title="Stack Exchange"><i class="fab fa-stack-exchange"></i></a></li>
-                    <li><a href="https://twitter.com/elementary" target="_blank" rel="noopener" data-l10n-off title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://community-slack.elementary.io/" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
+                    <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off aria-label="YouTube" title="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off aria-label="Mastodon" title="Mastodon"><i aria-hidden="true" class="fab fa-mastodon"></i></a></li>
+                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off aria-label="Reddit" title="Reddit"><i aria-hidden="true" class="fab fa-reddit"></i></a></li>
+                    <li><a href="https://discord.com/invite/kwRyqGCzm5" target="_blank" rel="noopener" data-l10n-off aria-label="Discord" title="Discord"><i aria-hidden="true" class="fab fa-discord"></i></a></li>
                 </ul>
             </div>
         </nav>
 
-        <?php require __DIR__ . '/event.php'; ?>
-
-    <?php if (event_active('indiegogo appcenter 2/7')) { ?>
-        <div class="overlay">
-            <div class="overlay__content toast">
-                <div class="toast__close"><i class="fas fa-times"></i></div>
-                <span class="toast__text">We're Crowdfunding on IndieGoGo</span>
-                <a href="https://igg.me/at/appcenter-for-everyone" class="toast__button">Back Us</a>
+        <noscript>
+            <div id="js-alert">
+                <p><strong>JavaScript is required</strong> for parts of this site, like downloading elementary OS and some interactive components.</p>
             </div>
-        </div>
-    <?php } ?>
+        </noscript>
+
+        <?php require __DIR__ . '/event.php'; ?>
 
         <div id="content-container">
 
 <?php
 
-$l10n->set_domain($page['name']);
+$l10n->setDomain($page['name']);

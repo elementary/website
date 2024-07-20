@@ -1,4 +1,12 @@
 {
+    "config": {
+        "platform": {
+            "php": "8.1"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\Lib\\": "Lib/",
@@ -6,12 +14,15 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "7.57.0",
-        "mandrill/mandrill": "^1.0",
-        "sentry/sentry": "^1.4",
-        "erusev/parsedown-extra": "^0.8"
+        "stripe/stripe-php": "15.2.0",
+        "erusev/parsedown-extra": "^0.8",
+        "geoip2/geoip2": "^3.0",
+        "ext-intl": ">=7",
+        "ext-json": ">=7",
+        "sentry/sentry": "^4.7"
     },
     "require-dev": {
-        "league/climate": "^3.2"
+        "league/climate": "^3.2",
+        "squizlabs/php_codesniffer": "3.*"
     }
 }

@@ -1,23 +1,18 @@
 <?php
-    require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-    $page['title'] = 'Get Involved with elementary OS';
-    $page['theme-color'] = '#3E4E54';
+$page['title'] = 'Get Involved with elementary OS';
+$page['theme-color'] = '#3E4E54';
 
-    $page['styles'] = array(
-        'https://fonts.googleapis.com/css?family=Marck+Script',
-        'styles/get-involved.css'
-    );
+$page['styles'] = array(
+    'https://fonts.googleapis.com/css?family=Marck+Script',
+    'styles/get-involved.css'
+);
 
-    if ($config['chart_enable']) {
-        $page['scripts'] = array(
-            'scripts/get-involved.js'
-        );
-    }
-
-    include $template['header'];
-    include $template['alert'];
+include $template['header'];
+include $template['alert'];
 ?>
+
 <section class="hero">
     <div class="grid">
         <div class="two-thirds">
@@ -53,7 +48,7 @@
              <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
          </div>
      </div>
- <?php } ?>
+<?php } ?>
 
     <div class="grid">
         <div class="half">
@@ -84,11 +79,6 @@
             <p>Set up a recurring contribution through Liberapay, the open source and non-profit funding platform.</p>
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
-        <div class="third">
-            <i class="fab fa-btc"></i>
-            <p>Contribute via cryptocurrency with Coinbase. We can securely accept Bitcoin, Ethereum, and other cryptocurrencies instantly.</p>
-            <a class="button flat" href="https://commerce.coinbase.com/checkout/d4dbaa95-5a48-42ec-8731-af867e90e4b4">Pay with Crypto</a>
-        </div>
     </div>
 </section>
 
@@ -99,10 +89,10 @@
         </div>
         <div class="half">
             <p>elementary OS is created and used by people from all around the World; help us make the experience even better by translating it into more languages.</p>
-            <p>Both elementary OS and our website are openly translated using an online platform called Weblate. <a href="/docs/translation-guide" class="read-more">Learn More</a></p>
+            <p>Both elementary OS and our website are openly translated using an online platform called Weblate. <a href="https://docs.elementary.io/contributor-guide/localization/translations" class="read-more">Learn More</a></p>
 
             <div class="actions">
-                <a class="button flat" href="https://translators-slack.elementary.io/" target="_blank" rel="noopener">Join Chat</a>
+                <a class="button flat" href="https://matrix.to/#/%23elementary-l10n%3Amatrix.org" target="_blank" rel="noopener">Join Chat</a>
                 <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/" target="_blank" rel="noopener">Suggest Translations</a>
             </div>
         </div>
@@ -120,9 +110,9 @@
         </div>
         <div class="half">
             <h3>Question &amp; Answer</h3>
-            <p>Stack Exchange is a Q&amp;A website built around finding the best answers to common questions. Anyone can create an account to start asking and answering.</p>
-            <a class="button flat" href="https://elementaryos.stackexchange.com/questions?sort=newest">New Questions</a>
-            <a class="button flat suggested-action" href="https://elementaryos.stackexchange.com/unanswered">Unanswered Questions</a>
+            <p>We use GitHub Discussions for community Q&A. Anyone can create an account to start asking and answering.</p>
+            <a class="button flat" href="https://github.com/orgs/elementary/discussions?discussions_q=category:Q%26A+sort:date_created">New Questions</a>
+            <a class="button flat suggested-action" href="https://github.com/orgs/elementary/discussions?discussions_q=category:Q%26A++is:unanswered">Unanswered Questions</a>
         </div>
         <div class="half">
             <h3>Documentation</h3>
@@ -151,8 +141,8 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Desktop Development</h2>
-            <p>Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Getting Started guide.</p>
-            <a class="button flat" href="https://docs.elementary.io/develop/" target="_blank" rel="noopener">Getting Started Guide</a>
+            <p>Our desktop environment and all its apps are built using Vala, GTK, Granite, and a number of other open libraries. We host all of our code and do all development on GitHub. If you've never developed for elementary OS before, we recommend you check out our Developer guide.</p>
+            <a class="button flat" href="https://docs.elementary.io/develop/" target="_blank" rel="noopener">Developer Guide</a>
             <a class="button flat suggested-action" href="https://github.com/elementary" target="_blank" rel="noopener">Browse Code</a>
         </div>
     </div>
@@ -160,11 +150,11 @@
         <div class="third">
             <h3>Report issues</h3>
             <p>Help out by tracking down issues and reporting them. Or help by confirming, clarifying, and cleaning up existing issues.</p>
-            <a class="button flat" href="/docs/code/reference#reporting-bugs">Read the Guide</a>
+            <a class="button flat" href="https://docs.elementary.io/contributor-guide/feedback/reporting-issues">Read the Guide</a>
         </div>
         <div class="third">
             <h3>Fix issues</h3>
-            <p>Contribute to elementary OS by fixing issues, improving functionality or implementing new features. <a class="read-more" href="/docs/code/os-dev" target="_blank" rel="noopener">Learn More</a></p>
+            <p>Contribute to elementary OS by fixing issues, improving functionality or implementing new features. <a class="read-more" href="https://docs.elementary.io/contributor-guide" target="_blank" rel="noopener">Learn More</a></p>
             <a class="button flat" href="https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aelementary+label%3A%22bitesize%22&type=" target="_blank" rel="noopener">Bitesize Issues</a>
         </div>
         <div class="third">
@@ -179,7 +169,7 @@
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
+            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="https://docs.elementary.io/hig/design-philosophy" target="_blank" rel="noopener">Learn More</a></p>
         </div>
     </div>
     <div class="design-links">

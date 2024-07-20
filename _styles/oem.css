@@ -4,10 +4,10 @@
 *************************************/
 
 .copy * {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 .copy h2:not(:first-child),
 .copy h3 {
-    margin-top: 2em;
+  margin-top: 2em;
 }
