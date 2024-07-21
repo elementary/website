@@ -3,18 +3,37 @@
  * Code for opening the download overlay widget on the homepage
  */
 
-import modal from '~/lib/modal'
+function detectDialogSupport () {
+    return typeof document.createElement('dialog').showModal === 'function'
+}
+
+// Some browsers have styling for the native dialog element but they dont actually support it.
+function swapDialogToDiv ($dialog) {
+    $dialog.outerHTML = $dialog.outerHTML.replace('<dialog', '<div').replace('</dialog>', '</div>')
+}
+
+function moveToAnchor (id) {
+    const originalURL = location.href
+    window.location.href = window.location.href.split('#')[0] + '#' + id
+    // Remove hash from URL after jumping
+    window.history.replaceState(null, null, originalURL)
+}
 
 export function openDownloadOverlay () {
-    modal.then(($) => {
-        const $openModal = $('.open-modal')
-        console.log('Open the download overlay!')
-        $openModal.leanModal({
-            // Add this class to download buttons to make them close it.
-            closeButton: '.close-modal',
-            disableCloseOnOverlayClick: true
-        })
-        // This is what actually opens the modal overlay.
-        $openModal.click()
-    })
+    const modalId = 'download-modal'
+    const $downloadModal = document.getElementById(modalId)
+    if (!$downloadModal) {
+        return
+    }
+    const supportsDialog = detectDialogSupport()
+    if (!supportsDialog) {
+        swapDialogToDiv($downloadModal)
+        moveToAnchor(modalId)
+        return
+    }
+    $downloadModal.showModal()
+    const $closeButton = $downloadModal.querySelector('.js-close-button')
+    $closeButton.addEventListener('click', () => {
+        $downloadModal.close()
+    }, { once: true })
 }
