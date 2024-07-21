@@ -22,7 +22,7 @@
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "מחווני המערכת בפינה השמאלית של הלוח מציגים את מצב המכשיר, למשל את חיבורי הרשת, הסוללה, קלט ופלט השמע, התראות וכו׳. בחירה במחוון חושפת מידע נוסף ופעולות תואמות.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "ריחוף מעל מחוון עם סמן העכבר מציג מידע מיידי ומקש אמצעי או נגיעה בשלוש אצבעות כקיצור דרך למחוון. לדוגמה:",
     "Sound: Mute": "שמע: השתקה",
-    "Bluetooth: Turn Bluetooth on or off": "Bluetooth: הפעלה או כיבוי של ה־Bluetooth",
+    "Bluetooth: Turn Bluetooth on or off": "בלוטות׳: הפעלה או כיבוי של הבלוטות׳",
     "Power: Toggle percentage of battery remaining in the Panel": "חשמל: החלפת תצוגה של אחוזי סוללה שנותרו בלוח",
     "Notifications: Toggle Do Not Disturb mode": "התראות: הפעלה/כיבוי מצב „לא להפריע”",
     "Session: Prompt to shut down": "הפעלה: שאלה האם לכבות",
