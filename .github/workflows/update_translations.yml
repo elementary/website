@@ -4,7 +4,7 @@ name: Update Translations
 
 on:
   schedule:
-    - cron:  "0 0 * * *"
+    - cron:  "0 1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,13 +26,13 @@ jobs:
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.30.0
+        uses: shivammathur/setup-php@2.31.1
         with:
           php-version: '8.1'
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.0.3
         with:
           node-version: 18
 

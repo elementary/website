@@ -23,35 +23,35 @@ include $template['alert'];
   <div>
     <div class="third">
       <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; –@WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+      &ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;
     </div>
     <div class="third">
       <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; –@arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+      &ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;
     </div>
   </div>
   <div>
     <div class="third">
       <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; –@forbes https://elementary.io"  target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+      &ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;
     </div>
     <div class="third">
       <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-      <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; –@MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+      &ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;
     </div>
     <div class="third">
       <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; –@lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+      &ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;
     </div>
   </div>
   <div>
     <div class="third">
       <a href="https://www.omgubuntu.co.uk/2021/08/elementary-os-6-odin-release" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/omgubuntu.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;The best way to try elementary [OS] is to install it, and since the install wizard is beautifully simple… that’s fairly easy to do.&rdquo; –@omgubuntu https://elementary.io" target="_blank" rel="noopener">&ldquo;The best way to try elementary [OS] is to install it, and since the install wizard is beautifully simple… that’s fairly easy to do.&rdquo;</a>
+      &ldquo;The best way to try elementary [OS] is to install it, and since the install wizard is beautifully simple… that’s fairly easy to do.&rdquo;
     </div>
     <div class="third">
       <a href="https://www.hostingadvice.com/blog/ethical-operating-systems-from-elementary/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/hostingadvice.svg'; ?></a>
-      <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Ethical and capable replacement for traditional systems… easy to use and customizable to accommodate various workflows.&rdquo; –@Hosting_Advice https://elementary.io" target="_blank" rel="noopener">&ldquo;Ethical and capable replacement for traditional systems such as Windows and macOS… easy to use and customizable to accommodate various workflows.&rdquo;</a>
+      &ldquo;Ethical and capable replacement for traditional systems such as Windows and macOS… easy to use and customizable to accommodate various workflows.&rdquo;
     </div>
   </div>
 </section>

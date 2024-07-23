@@ -6,7 +6,7 @@
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Lue <a href=\"{#release_faq}\">uusimman julkaisun usein kysytyt kysymykset</a>.",
     "Recommended System Specifications": "Suositellut järjestelmämääritykset",
     "While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:": "Vaikka tiukkoja vähimmäisvaatimuksia ei ole, suosittelemme vähintään seuraavanlaista kokoonpanoa hyvän käyttökokemuksen takaamiseksi:",
-    "Recent Intel i3 or comparable dual-core 64-bit processor": "Intel i3 tai vastaavanlainen kahdella ytimellä varustettu 64-bittinen suoritin",
+    "Recent Intel Core i3 or comparable dual-core 64-bit processor": "",
     "4 GB of system memory (RAM)": "4 gigatavua keskusmuistia (RAM)",
     "Solid state drive (SSD) with at least 32 GB of free space": "SSD-levy, jossa on vapaata tilaa vähintään 32 gigatavua",
     "Internet access": "Internet-yhteys",

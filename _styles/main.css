@@ -174,35 +174,6 @@ img.inline + div.inline {
   margin-left: 12px;
 }
 
-.inline-tweet {
-  color: inherit;
-}
-
-.inline-tweet:focus,
-.inline-tweet:hover {
-  color: #08c;
-  text-decoration: none;
-}
-
-.inline-tweet::after {
-  color: inherit;
-  content: "\f099";
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome\ 5 Brands";
-  font-style: normal;
-  font-weight: inherit;
-  margin-top: 0.2em;
-  opacity: 0;
-  padding-left: 6px;
-  position: absolute;
-  transition: all 0.15s ease-in-out;
-}
-
-.inline-tweet:focus::after,
-.inline-tweet:hover::after {
-  opacity: 1;
-}
-
 .read-more {
   white-space: nowrap;
 }
@@ -340,18 +311,6 @@ nav .menu-button:hover svg {
   opacity: 0.7;
 }
 
-nav a[title="Facebook"]:focus,
-nav a[title="Facebook"]:hover {
-  color: #19227e;
-  fill: #19227e;
-}
-
-nav a[title="Google+"]:focus,
-nav a[title="Google+"]:hover {
-  color: #d50000;
-  fill: #d50000;
-}
-
 nav a[title="Youtube"]:focus,
 nav a[title="Youtube"]:hover {
   color: #d50000;
@@ -364,34 +323,16 @@ nav a[title="Mastodon"]:hover {
   fill: #0d93ff;
 }
 
-nav a[title="Medium"]:focus,
-nav a[title="Medium"]:hover {
-  color: #00ab6b;
-  fill: #00ab6b;
-}
-
 nav a[title="Reddit"]:focus,
 nav a[title="Reddit"]:hover {
   color: #ff4500;
   fill: #ff4500;
 }
 
-nav a[title="Slack"]:focus,
-nav a[title="Slack"]:hover {
-  color: #4a154b;
-  fill: #4a154b;
-}
-
-nav a[title="StackExchange"]:focus,
-nav a[title="StackExchange"]:hover {
-  color: #0d93ff;
-  fill: #0d93ff;
-}
-
-nav a[title="Twitter"]:focus,
-nav a[title="Twitter"]:hover {
-  color: #1da1f2;
-  fill: #1da1f2;
+nav a[title="Discord"]:focus,
+nav a[title="Discord"]:hover {
+  color: #5865f2;
+  fill: #5865f2;
 }
 
 nav .logomark {
