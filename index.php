@@ -467,21 +467,21 @@ include $template['alert'];
 
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-    <div id="download-modal" class="dialog modal">
-      <img alt="Download elementary OS icon" src="images/icons/apps/48/system-os-installer.svg">
+    <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
+      <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
       <div class="content-area">
-        <p class="primary">Choose a Download</p>
+        <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
         <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
       </div>
       <div class="action-area">
-        <a class="button clickable close-modal">Close</a>
+        <button class="js-close-button button clickable close-modal">Close</button>
         <div class="linked">
           <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
           <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
         </div>
       </div>
-    </div>
-    <a style="display:none;" class="open-modal" href="#download-modal"></a>
+    </dialog>
+
     <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
   include $template['footer'];
