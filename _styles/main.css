@@ -53,7 +53,6 @@ a {
 }
 
 a:focus {
-  outline: none;
   text-decoration: underline;
 }
 
@@ -477,10 +476,6 @@ footer a:focus i.fa {
   text-shadow: 0 1px 6px #08c;
 }
 
-footer ul li a:focus {
-  outline: none;
-}
-
 /*********
 * Layout *
 *********/
@@ -814,7 +809,6 @@ select,
   font-family: inherit;
   font-size: 16px;
   margin: 24px;
-  outline: none;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -964,7 +958,6 @@ input:not([type="submit"]):not(.button) {
     inset 0 0 0 1px rgba(0, 0, 0, 0.02),
     0 1px 0 1px rgba(255, 255, 255, 0.3);
   color: #323232;
-  outline: 0;
   text-shadow: 0 1px rgba(255, 255, 255, 0.4);
   transition: all 200ms ease-out;
 }
@@ -995,7 +988,6 @@ input:focus:not([type="submit"]):not(.button) {
   box-shadow:
     inset 0 0 0 1px rgba(61, 155, 218, 0.23),
     0 1px 0 1px rgba(255, 255, 255, 0.3);
-  outline: none;
   transition: all 200ms ease-in;
 }
 
