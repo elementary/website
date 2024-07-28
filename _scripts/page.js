@@ -18,32 +18,6 @@ export function language () {
 }
 
 /**
- * branch
- * Returns the current branch of the website being viewed
- *
- * @return {String} - current branch name, or undefined if unable to find
- */
-export function branch () {
-    if (window.location.host === 'elementary.io') {
-        return 'master'
-    }
-
-    if (window.location.host === 'staging.elementary.io') {
-        return 'master'
-    }
-
-    if (window.location.host === 'beta.elementary.io') {
-        const branch = window.location.pathname.split('/')[1]
-
-        if (branch != null && branch !== '') {
-            return branch
-        }
-    }
-
-    return undefined
-}
-
-/**
  * url
  * Returns full base url of the website
  *
@@ -61,11 +35,6 @@ export function url () {
     // Trim all of the crap at the end of the url
     basePath = basePath.split('#')[0]
     if (basePath[basePath.length - 1] === '/') basePath = basePath.substring(0, basePath.length - 1)
-
-    // Ensure we fix this _one_ edge case
-    if (basePath === 'https://beta.elementary.io' && branch() != null) {
-        return `${basePath}/${branch()}`
-    }
 
     return basePath
 }
