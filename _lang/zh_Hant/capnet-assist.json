@@ -1,8 +1,8 @@
 {
-    "You’re connected!": "",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "",
-    "Why is this window appearing?": "",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "",
-    "You’re connected! &sdot; elementary": ""
+    "You’re connected!": "您已連接到網際網路！",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "您的網際網路連線正常運作。您可以關閉此視窗並繼續使用您的裝置。",
+    "Why is this window appearing?": "為什麼會出現這個視窗？",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS 會在您連線到新的 Wi-Fi 時自動檢查是否連線到網際網路。如果偵測到您沒有網際網路連線，亦即您正在連線到像是咖啡廳的網路或其他公共網路等等需要透過強制入口登入的網路時，這個視窗就會出現並顯示登入畫面，以便您順利完成連線。",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "某些網路雖然不是需要透過強制入口來登入的網路，但在連線最初時可能會被誤判而實際上能正確連線到網際網路。在這種情況下您就會看到這個訊息，而可以直接關閉這個視窗也不會有問題。",
+    "You’re connected! &sdot; elementary": "您已連線！&sdot; elementary"
 }
