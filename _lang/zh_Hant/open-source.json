@@ -29,9 +29,9 @@
     "Panel": "面板",
     "Platform": "平台",
     "Pantheon Platform": "Pantheon 平台",
-    "Contractor": "",
+    "Contractor": "Contractor",
     "Granite": "Granite",
-    "Captive Network Assistant": "",
+    "Captive Network Assistant": "強制入口助理",
     "Polkit Agent": "Polkit 代理",
     "Flatpak Platform": "Flatpak 平台",
     "Ubuntu": "Ubuntu",
@@ -75,7 +75,7 @@
     "Filesystem, Hardware, Networking &amp; Drivers": "檔案系統、硬體、網路與驅動程式",
     "Kernel": "核心",
     "We Support Open Source Projects": "我們支持開源專案",
-    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "",
+    "elementary makes a point to send funds back to the projects we rely on. When you purchase a copy of elementary OS, you're also supporting great projects like these.": "elementary 會將資金遞給我們所依賴的專案。當您購買 elementary OS 時，您同時也能夠支持這些偉大的專案。",
     "Debian": "Debian",
     "Font Awesome": "Font Awesome",
     "Inkscape": "Inkscape",
@@ -85,6 +85,6 @@
     "rEFInd": "rEFInd",
     "Software Freedom Conservancy": "Software Freedom Conservancy 軟體自由保護組織",
     "Weblate": "Weblate",
-    "All logos featured here are trademarks of their respective projects.": "",
+    "All logos featured here are trademarks of their respective projects.": "此處顯示的所有 logo 都是屬於各個專案的商標。",
     "Open Source &sdot; elementary": "開源 &sdot; elementary"
 }
