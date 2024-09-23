@@ -28,7 +28,7 @@
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-n": "^17.10.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.6.0",
     "stylelint": "^16.9.0",
