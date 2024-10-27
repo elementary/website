@@ -62,7 +62,7 @@
     "Gestures": "Gestos",
     "elementary OS supports multi-touch gestures on supported hardware like touchpads and touch screens. By default, a three-finger swipe left or right switches workspaces while a three-finger swipe up enters the Multitasking View.": "elementary OS suporta gestos multitoque em hardware suportado, como touchpads e telas sensíveis ao toque. Por padrão, um deslizar com três dedos para a esquerda ou direita alterna entre áreas de trabalho, enquanto um deslizar com três dedos para cima entra na Visão Multitarefa.",
     "Modify gestures from <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Mouse &amp; Touchpad</strong> → <strong>Gestures</strong>.": "Modifique os gestos em <strong><a href=\"#system-settings\">Configurações do Sistema</a></strong> → <strong>Mouse e Touchpad</strong> → <strong>Gestos</strong>.",
-    "Hot Corners": "",
+    "Hot Corners": "Cantos Ativos",
     "Hot Corners are shortcuts activated by placing your cursor in the corner of the primary display. You can configure Hot Corners to activate multitasking actions like the window overview, workspace overview, and more.": "",
     "You can customize hot corners through <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Desktop</strong> → <strong>Multitasking</strong>.": "",
     "Multiple Displays": "",
