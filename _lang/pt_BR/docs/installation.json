@@ -32,7 +32,7 @@
     "etcher steps": "etapas do etcher",
     "Open Etcher, then:": "",
     "Plug in your spare USB flash drive": "",
-    "Select your downloaded .iso file using the &quot;Select image&quot; button": "Selecione o arquivo .iso baixado usando o botão &quot;Select Image&quot;",
+    "Select your downloaded .iso file using the &quot;Select image&quot; button": "Selecione o arquivo .iso baixado usando o botão &quot;Selecionar Image&quot;",
     "Etcher should automatically detect your USB drive; if not, select the correct drive": "O Etcher deve detectar automaticamente sua unidade USB; caso contrário, selecione a unidade correta",
     "Click the &quot;Flash!&quot; button. It may take a moment to get started.": "Clique no botão &quot;Flash!&quot;. Pode demorar um pouco para começar.",
     "Once complete, continue to boot from the install drive.": "Depois de concluído, continue para a inicialização a partir da unidade de instalação.",
