@@ -146,7 +146,7 @@ include $template['alert'];
       <div class="grid">
         <div class="two-thirds">
           <h2>What’s New in elementary OS 8</h2>
-          <p>Made with care with you in mind. OS 8 provides new personalization options that make it more inclusive and accessible, protects your privacy and ensures apps always operate with your explicit consent, and addresses your feedback with over 200 bug fixes, design changes, and new features</p>
+          <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
           <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
