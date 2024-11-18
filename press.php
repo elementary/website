@@ -108,7 +108,7 @@ include $template['alert'];
       <h2>elementary OS 8</h2>
       <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
       <a class="button" href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read Announcement</a>
-      <a class="button" href="https://github.com/elementary/press-kit/archive/8.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
+      <a class="button" href="https://github.com/elementary/press-kit/archive/8.0.0.zip" target="_blank" rel="noopener" class="read-more">Download Press Kit</a>
     </div>
   </div>
 </div>
