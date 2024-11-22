@@ -6,10 +6,10 @@
 return array(
   'release_title'    => 'Circe',
   'release_version'  => '8',
-  'release_filename' => '',
-  'release_size'     => '3.0 GB',
+  'release_filename' => 'elementaryos-8.0-stable.20241121rc.iso',
+  'release_size'     => '3.2 GB',
   'release_magnet'   => '',
-  'release_sha256'   => '',
+  'release_sha256'   => '9c563fce7f2be4629ea985d29a8ce2639d0626f550d680c749e35f3748081878',
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-8-FAQ',
 
   'previous_title'    => 'Horus',
