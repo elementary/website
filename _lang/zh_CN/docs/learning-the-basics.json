@@ -47,7 +47,7 @@
     "elementary OS uses both windows and workspaces for multitasking.": "elementary OS 使用窗口和工作区进行多任务处理。",
     "Windows": "窗口",
     "App windows can overlap on your desktop and be moved around. You can switch between open windows several ways:": "应用窗口可以在桌面上重叠并移动。您可以通过几种方式切换打开的窗口：",
-    "Click or tap on the window you want to switch to": "点击或轻触您想切换到的窗口。",
+    "Click or tap on the window you want to switch to": "点击或轻触您想切换到的窗口",
     "Click or tap the app's icon in the dock": "",
     "Press <kbd>Alt</kbd><kbd>Tab</kbd> to cycle through windows": "",
     "Workspaces": "",
