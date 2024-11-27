@@ -49,7 +49,7 @@
     "App windows can overlap on your desktop and be moved around. You can switch between open windows several ways:": "应用窗口可以在桌面上重叠并移动。您可以通过几种方式切换打开的窗口：",
     "Click or tap on the window you want to switch to": "点击或轻触您想切换到的窗口",
     "Click or tap the app's icon in the dock": "点击或轻触 Dock 中的应用图标",
-    "Press <kbd>Alt</kbd><kbd>Tab</kbd> to cycle through windows": "",
+    "Press <kbd>Alt</kbd><kbd>Tab</kbd> to cycle through windows": "按 <kbd>Alt</kbd><kbd>Tab</kbd> 循环切换窗口。",
     "Workspaces": "",
     "By default, app windows open on your current workspace. However, you can use multiple workspaces to organize your workflow:": "",
     "To move left or right through your workspaces, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>←</kbd> or <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>→</kbd> or swipe with three fingers on a touchpad or touch screen.": "",
