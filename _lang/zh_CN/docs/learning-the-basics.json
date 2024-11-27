@@ -45,7 +45,7 @@
     "Most app windows can be resized by draging from any edge of the window. You can also secondary-click a window's header bar and choose <strong>Resize</strong> or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.": "大多数应用程序窗口可以通过拖动窗口的任何边缘来调整大小。您也可以在窗口的标题栏上使用右键点击，并选择<strong>调整大小</strong>，或按<kbd>Alt</kbd><kbd>F8</kbd>进入调整大小模式：移动鼠标光标到您想要调整窗口的方向。",
     "Multitasking": "多任务处理",
     "elementary OS uses both windows and workspaces for multitasking.": "elementary OS 使用窗口和工作区进行多任务处理。",
-    "Windows": "",
+    "Windows": "窗口",
     "App windows can overlap on your desktop and be moved around. You can switch between open windows several ways:": "应用窗口可以在桌面上重叠并移动。您可以通过几种方式切换打开的窗口：",
     "Click or tap on the window you want to switch to": "点击或轻触您想切换到的窗口。",
     "Click or tap the app's icon in the dock": "",
