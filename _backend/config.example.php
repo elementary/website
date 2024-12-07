@@ -21,6 +21,9 @@ return array(
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
+  // Only needs read-only access to public repos
+  'gh_sponsors_token' => 'ghp_1234567890abcdefghij',
+
   'previous_stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
 
   'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
