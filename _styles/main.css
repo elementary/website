@@ -310,8 +310,8 @@ nav .menu-button:hover svg {
   opacity: 0.7;
 }
 
-nav a[title="Youtube"]:focus,
-nav a[title="Youtube"]:hover {
+nav a[title="YouTube"]:focus,
+nav a[title="YouTube"]:hover {
   color: #d50000;
   fill: #d50000;
 }
