@@ -21,7 +21,7 @@ return array(
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
-  // Only needs read-only access to public repos
+  // Classic token that requires 'read:org', 'read:user', 'public_repo' scopes for `/api/sponsors_goals` endpoint
   'gh_sponsors_token' => 'ghp_1234567890abcdefghij',
 
   'previous_stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
