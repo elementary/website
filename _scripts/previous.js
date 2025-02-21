@@ -23,7 +23,6 @@ Promise.all([config, jQuery]).then(([config, $]) => {
             }
             plausible('Download', {
                 props: {
-                    Region: config.user.region,
                     Method: downloadMethod,
                     OS: detectedOS(),
                     Version: config.previous.version
