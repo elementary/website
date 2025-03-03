@@ -3,6 +3,12 @@
 /**
  * _templates/event.php
  * Holds markdown for special event items like a release countdown or campain toast.
+ *
+ * API Notes
+ *
+ * Dismissable toasts
+ * To make a toast dismissable when a user clicks on the .toast__close button,
+ * give each .toast element a unique HTML id.
  */
 
 require_once __DIR__ . '/../_backend/event.php';
