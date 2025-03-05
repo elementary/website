@@ -97,7 +97,7 @@ include $template['alert'];
             </div>
         </div>
         <div class="half">
-            <img src="images/get-involved/translations.svg" alt="World map">
+            <img src="images/get-involved/translations.png" alt="World map">
         </div>
     </div>
 </section>
