@@ -10,8 +10,18 @@ import '~/popover'
 import '~/smooth-scrolling'
 
 jQuery.then(($) => {
+    // Show toasts that haven't been dismissed.
+    $('.toast').each((i, toast) => {
+        const hasBeenDismissed = window.localStorage.getItem('toast-dismissed-' + $(toast).attr('id'))
+        if (!hasBeenDismissed) {
+            $(toast).css('display', 'inline-flex')
+        }
+    })
+
     $('.toast__close').on('click', function (e) {
-        $(this).closest('.toast').hide()
+        const toast = $(this).closest('.toast')
+        $(toast).hide()
+        window.localStorage.setItem('toast-dismissed-' + $(toast).attr('id'), '1')
     })
 
     const menuButton = $('nav .menu-button')
