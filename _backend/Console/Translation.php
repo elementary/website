@@ -134,8 +134,17 @@ foreach ($pages as $page) {
         }
 
         if (count($newTranslations) > 0) {
+            // Preprocess strings to remove newlines in the source strings
+            $processedTranslations = [];
+            foreach ($newTranslations as $key => $value) {
+                // Remove newlines from the key completely and reduce multiple spaces to a single space
+                $processedKey = str_replace(["\r\n", "\n"], " ", $key);
+                $processedKey = preg_replace('/\s+/', ' ', $processedKey);
+                $processedTranslations[$processedKey] = $value;
+            }
+            
             $newData = json_encode(
-                $newTranslations,
+                $processedTranslations,
                 JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
             );
             file_put_contents($languagePath, $newData . PHP_EOL);
