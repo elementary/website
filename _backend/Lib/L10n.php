@@ -144,6 +144,8 @@ class L10n
 
     protected $domain = null;
 
+    protected $translations = array();
+
     public function __construct($lang = null)
     {
         if (empty($lang)) {
@@ -254,7 +256,9 @@ class L10n
         }
 
         $json = file_get_contents($langFile);
-        return json_decode($json, true);
+        $translations = json_decode($json, true);
+        
+        return $translations;
     }
 
     protected function loadDomain($domain)
@@ -290,10 +294,14 @@ class L10n
             $this->loadDomain($domain);
         }
 
-        if (isset($this->translations[$domain][$id]) &&
-            is_string($this->translations[$domain][$id]) &&
-            ($this->translations[$domain][$id] !== "")) {
-            return $this->translations[$domain][$id];
+        // Remove newlines and normalize spaces for matching
+        $processedId = str_replace(["\r\n", "\n"], " ", $id);
+        $processedId = preg_replace('/\s+/', ' ', $processedId);
+
+        if (isset($this->translations[$domain][$processedId]) &&
+            is_string($this->translations[$domain][$processedId]) &&
+            ($this->translations[$domain][$processedId] !== "")) {
+            return $this->translations[$domain][$processedId];
         } else {
             return $string;
         }
