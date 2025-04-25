@@ -145,7 +145,7 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What's New in elementary OS 8</h2>
+          <h2>What’s New in elementary OS 8</h2>
           <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
           <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
@@ -188,7 +188,7 @@ include $template['alert'];
             </div>
           </figure>
           <h4>Picture-in-Picture</h4>
-          <p>Whether you're watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
+          <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
         </div>
         <div class="third">
           <figure class="dnd">
@@ -323,7 +323,7 @@ include $template['alert'];
               <img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal icon" />
               <div>
                 <h2>Terminal</h2>
-                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can't teach an old app new tricks?</p>
+                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
               </div>
             </div>
           </div>
@@ -376,7 +376,7 @@ include $template['alert'];
       <div class="grid">
         <div class="two-thirds">
           <h1>Everything We Do is Open Source</h1>
-          <p>Our platform itself is entirely open source, and it's built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+          <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
           <a class="read-more" href="/open-source">Explore Our Stack</a>
         </div>
       </div>
@@ -398,7 +398,7 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
-          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn't mean it's dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
+          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it's dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
         </div>
       </div>
     </section>
@@ -423,14 +423,14 @@ include $template['alert'];
             <?php include('images/icons/status/symbolic/changes-prevent-symbolic.svg'); ?>
             Permissions
           </h4>
-          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they're properly using permissions—and you can always revoke them yourself in System Settings.</p>
+          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.</p>
         </div>
         <div class="third">
           <h4>
             <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
             Housekeeping
           </h4>
-          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device's storage free, it can help ensure your private data doesn't come back to haunt you.</p>
+          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device's storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
         </div>
       </div>
     </section>
