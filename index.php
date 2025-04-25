@@ -214,7 +214,7 @@ include $template['alert'];
       <div id="showcase" class="row grey">
         <div id="showcase-index">
           <div>
-            <h2>Apps You Need, Without Ones You Don't.</h2>
+            <h2>Apps You Need, Without Ones You Don’t.</h2>
             <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
           </div>
           <ul id="showcase-grid">
@@ -335,7 +335,7 @@ include $template['alert'];
               <img src="images/thirdparty-icons/apps/64/code.svg" alt="Code icon" />
               <div>
                 <h2>Code</h2>
-                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you'll ever need.</p>
+                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.</p>
               </div>
             </div>
           </div>
@@ -398,7 +398,7 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
-          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
+          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
         </div>
       </div>
     </section>
