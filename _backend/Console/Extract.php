@@ -11,6 +11,7 @@ require_once __DIR__ . '/../bootstrap.php';
 
 use \App\Lib\L10n;
 use \League\CLImate\CLImate;
+use \Parsedown;
 use \ParsedownExtra;
 
 $cli = new CLImate();
@@ -192,4 +193,13 @@ if ($isMarkdown) {
     translatePHP($path, $currentUrl);
 }
 
-echo json_encode($currentTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+// Preprocess translations to remove newlines in the keys
+$processedTranslations = [];
+foreach ($currentTranslations as $key => $value) {
+    // Remove newlines from the key completely and reduce multiple spaces to a single space
+    $processedKey = str_replace(["\r\n", "\n"], " ", $key);
+    $processedKey = preg_replace('/\s+/', ' ', $processedKey);
+    $processedTranslations[$processedKey] = $value;
+}
+
+echo json_encode($processedTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);

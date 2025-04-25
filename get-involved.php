@@ -93,7 +93,7 @@ include $template['alert'];
 
             <div class="actions">
                 <a class="button flat" href="https://matrix.to/#/%23elementary-l10n%3Amatrix.org" target="_blank" rel="noopener">Join Chat</a>
-                <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/" target="_blank" rel="noopener">Suggest Translations</a>
+                <a class="button flat suggested-action" href="https://l10n.elementaryos.org/projects/" target="_blank" rel="noopener">Suggest Translations</a>
             </div>
         </div>
         <div class="half">
