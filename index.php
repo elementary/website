@@ -21,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2024-04-10"
+  "stripe_version" => "2025-03-31.basil"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -145,7 +145,7 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 8</h2>
+          <h2>What's New in elementary OS 8</h2>
           <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
           <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
@@ -188,7 +188,7 @@ include $template['alert'];
             </div>
           </figure>
           <h4>Picture-in-Picture</h4>
-          <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
+          <p>Whether you're watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
         </div>
         <div class="third">
           <figure class="dnd">
@@ -214,7 +214,7 @@ include $template['alert'];
       <div id="showcase" class="row grey">
         <div id="showcase-index">
           <div>
-            <h2>Apps You Need, Without Ones You Don’t.</h2>
+            <h2>Apps You Need, Without Ones You Don't.</h2>
             <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
           </div>
           <ul id="showcase-grid">
@@ -323,7 +323,7 @@ include $template['alert'];
               <img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal icon" />
               <div>
                 <h2>Terminal</h2>
-                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
+                <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can't teach an old app new tricks?</p>
               </div>
             </div>
           </div>
@@ -335,7 +335,7 @@ include $template['alert'];
               <img src="images/thirdparty-icons/apps/64/code.svg" alt="Code icon" />
               <div>
                 <h2>Code</h2>
-                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.</p>
+                <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you'll ever need.</p>
               </div>
             </div>
           </div>
@@ -375,8 +375,8 @@ include $template['alert'];
     <section>
       <div class="grid">
         <div class="two-thirds">
-          <h1>Everything We Do is Open&nbsp;Source</h1>
-          <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
+          <h1>Everything We Do is Open Source</h1>
+          <p>Our platform itself is entirely open source, and it's built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
           <a class="read-more" href="/open-source">Explore Our Stack</a>
         </div>
       </div>
@@ -388,7 +388,7 @@ include $template['alert'];
         </div>
         <div class="half">
           <h2>Built for Developers</h2>
-          <p>Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+          <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
           <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
         </div>
       </div>
@@ -398,7 +398,7 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
-          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>
+          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn't mean it's dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
         </div>
       </div>
     </section>
@@ -406,7 +406,7 @@ include $template['alert'];
       <div class="grid">
         <div class="two-thirds">
           <h1>Privacy-respecting. Through and through.</h1>
-          <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
+          <p>Your data always belongs to you, and only you. We don't make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</p>
           <a class="read-more" href="privacy">Our Privacy Policy</a>
         </div>
       </div>
@@ -423,14 +423,14 @@ include $template['alert'];
             <?php include('images/icons/status/symbolic/changes-prevent-symbolic.svg'); ?>
             Permissions
           </h4>
-          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they’re properly using permissions—and you can always revoke them yourself in System Settings.</p>
+          <p>When an app wants access to your data or devices, it has to ask up front. We review all AppCenter apps to ensure they're properly using permissions—and you can always revoke them yourself in System Settings.</p>
         </div>
         <div class="third">
           <h4>
             <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
             Housekeeping
           </h4>
-          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device's storage free, it can help ensure your private data doesn't come back to haunt you.</p>
         </div>
       </div>
     </section>
