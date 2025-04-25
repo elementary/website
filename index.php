@@ -388,7 +388,7 @@ include $template['alert'];
         </div>
         <div class="half">
           <h2>Built for Developers</h2>
-          <p>Whether your app could benefit from a new system feature or API or you're curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
+          <p>Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.</p>
           <a class="read-more" href="get-involved#desktop-development">Get Involved</a>
         </div>
       </div>
@@ -398,7 +398,7 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" width="885" height="656" alt="elementary OS Keyboard Shortcuts"/>
         <div class="app-display__description">
           <h1>User Friendly. And Keyboard Friendly.</h1>
-          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it's dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
+          <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you'll stay productive whether it's your first day or your thousandth.</p>
         </div>
       </div>
     </section>
@@ -406,7 +406,7 @@ include $template['alert'];
       <div class="grid">
         <div class="two-thirds">
           <h1>Privacy-respecting. Through and through.</h1>
-          <p>Your data always belongs to you, and only you. We don't make advertising deals or collect sensitive personal data. We're funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that's how it should be.</p>
+          <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
           <a class="read-more" href="privacy">Our Privacy Policy</a>
         </div>
       </div>
@@ -430,7 +430,7 @@ include $template['alert'];
             <?php include('images/icons/actions/symbolic/edit-clear-all-symbolic.svg'); ?>
             Housekeeping
           </h4>
-          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device's storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
+          <p>elementary OS automatically keeps your temporary and trashed files tidied up. Not only does this keep your device’s storage free, it can help ensure your private data doesn’t come back to haunt you.</p>
         </div>
       </div>
     </section>
