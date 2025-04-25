@@ -21,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2024-04-10"
+  "stripe_version" => "2025-03-31.basil"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -375,7 +375,7 @@ include $template['alert'];
     <section>
       <div class="grid">
         <div class="two-thirds">
-          <h1>Everything We Do is Open&nbsp;Source</h1>
+          <h1>Everything We Do is Open Source</h1>
           <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
           <a class="read-more" href="/open-source">Explore Our Stack</a>
         </div>
