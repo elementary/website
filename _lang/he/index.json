@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "ניהול אתרים מורשים. הכללים משפיעים על כלל היישומים עבור המשתמש הנבחר, אפילו בשימוש בדפדפן אחר.",
     "Manage Apps": "ניהול יישומים",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "נא לבחור אילו יישומים בטוחים לגישה עבורך ועבור ילדיך. בנוסף, אפשר להתנות גישה בססמה שלך.",
-    "Everything We Do is Open&nbsp;Source": "כל מה שאנחנו עושים הוא בקוד פתוח",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "הפלטפורמה שלנו היא עצמה לחלוטין בקוד פתוח והיא בנויה על יסודות תכנה חופשית ובקוד פתוח. בנוסף על כך, אנו משתתפים באופן פעיל במערכת העוטפת כדי לשפר אותה לטובת כולם.",
     "Explore Our Stack": "התעמקות ביסודות הטכנולוגיה שלנו",
     "Secure &amp; Privacy-respecting": "מאובטחת ומכבדת פרטיות",

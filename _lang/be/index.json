@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "Кіруйце дазволеннымі вэб-сайтамі. Правіла распаўсюджваюцца на ўсе праграмы абранага карыстальніка, нават калі яны зменяць браўзер.",
     "Manage Apps": "Кіруйце праграмамі",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "Абярыце, якія праграмы бяспечны для вас і вашага дзіця. Вы таксама можаце, па жаданню, дазволіць доступ да іх з вашым паролем.",
-    "Everything We Do is Open&nbsp;Source": "Усё, што мы робім — з адкрытым зыходным кодам",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "Сама наша платформа мае адкрыты код, а яшчэ яна пабудавана на моцнай аснове вольнага забяспечэння з адкрытым зыходным кодам (як GNU/Linux). Мы таксама актыўна распрацоўваем экасістэму, каб палепшыць яе для ўсіх.",
     "Explore Our Stack": "Праглядзець нашы кампаненты",
     "Secure &amp; Privacy-respecting": "Бяспечна, з клопатам аб прыватнасці",

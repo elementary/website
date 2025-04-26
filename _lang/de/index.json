@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "Verwalten Sie erlaubte Websites. Die Regeln wirken sich auf alle Anwendungen des ausgewählten Benutzers aus, auch wenn dieser einen anderen Webbrowser verwendet.",
     "Manage Apps": "Anwendungen verwalten",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "Wählen Sie nur die Apps aus, auf die Sie oder Ihr Kind sicher zugreifen dürfen. Außerdem können Sie optional den Zugriff mit Ihrem Passwort erlauben.",
-    "Everything We Do is Open&nbsp;Source": "Alles was wir machen ist Open&nbsp;Source",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "Unsere Plattform ist vollständig quelloffen und basiert auf dem stabilen Fundament freier und Open Source Software (wie GNU/Linux). Außerdem arbeiten wir aktiv in dieser Community mit, um sie für alle zu verbessern.",
     "Explore Our Stack": "Erkunde unseren Stack",
     "Secure &amp; Privacy-respecting": "Sicher &amp; Datenschutzfreundlich",

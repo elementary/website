@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "Håndter tillatte nettsider. Regler har innvirkning på alle programmer for valgt bruker, selv om en annen nettleser brukes.",
     "Manage Apps": "Behandle programmer",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "Velg hvilke programmer som er trygge for deg eller ditt barn. Du kan også innvilge tilgang med ditt passord.",
-    "Everything We Do is Open&nbsp;Source": "Alt vi gjør er fri programvare",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "Vår plattform er i sin helhet fri programvare, og er bygd på en solid grunnmur av annen fri programvare (som Linux|GNU). Vi samarbeider aktivt i økosytstemet, til alles beste.",
     "Explore Our Stack": "Utforsk stabelen vår",
     "Secure &amp; Privacy-respecting": "Sikker og personvernsrespekterende",

@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "Handsam tillate nettsider. Reglane du veljer vil gjelda for alle appar sjølv om du bruker ein annan nettlesar.",
     "Manage Apps": "Handsam appar",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "Vel dei appane som er trygge for deg eller barnet ditt å bruka. Du kan óg leggja til passordbeskyttelse.",
-    "Everything We Do is Open&nbsp;Source": "Alt me gjer er open kjeldekode",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "Platformen vår er bygd kun på open kjeldekode og på prosjekt som det opne kjeldekodeprosjektet GNU/Linux. I tillegg arbeidar me aktivt med andre prosjekt i økosystemtet for å forbetra det for alle brukarar.",
     "Explore Our Stack": "Sjå prosjekta våre",
     "Secure &amp; Privacy-respecting": "Trygg og sikker for personvernet",
