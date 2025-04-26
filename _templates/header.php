@@ -151,8 +151,6 @@ $l10n->beginHtmlTranslation();
             </div>
         </noscript>
 
-        <?php require __DIR__ . '/event.php'; ?>
-
         <div id="content-container">
 
 <?php
