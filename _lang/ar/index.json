@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "قم بإدارة المواقع المسموحة. القيود المفروضة سيتم تطبيقها على جميع التطبيقات للمستخدم المختار، حتى لو استخدم متصفح ويب آخر.",
     "Manage Apps": "تحكم بالتطبيقات",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "اختر فقط التطبيقات الآمنة لك أو لطفلك التي ستسمح بالوصول إليها. وأيضاً، قم اختيارياً بالسماح للوصول بكلمة السر الخاصة بك.",
-    "Everything We Do is Open&nbsp;Source": "جميع ما نفعله مفتوح المصدر",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "منصتنا بحد ذاتها هي مفتوحة المصدر بالكامل، وهي مبنية على أسس متينة من البرمجيات الحرة ومفتوحة المصدر (مثل GNU/Linux). وأيضاً، نحن نقوم بشكل نشط بالتعاون داخل هذه المنظومة لتطويرها للجميع.",
     "Explore Our Stack": "استكشف بنيتنا التقنية",
     "Secure &amp; Privacy-respecting": "آمن ومحترم للخصوصية",

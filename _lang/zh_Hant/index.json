@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "管理允許使用的網站。規則會套用在所選使用者的所有應用程式上，不分網頁瀏覽器。",
     "Manage Apps": "管理應用程式",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "選擇哪些應用程式對於您或您的小孩是沒有問題的。另外也可以允許利用密碼來啟用存取。",
-    "Everything We Do is Open&nbsp;Source": "我們做的一切都是開源的",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "我們的平台本身完全開源，奠基於強而有力的自由開源軟體之上（像是 GNU/Linux 等等）。此外，我們也主動在自由軟體生態系當中合作讓它變得更好。",
     "Explore Our Stack": "探索我們所使用的部件",
     "Secure &amp; Privacy-respecting": "安全且尊重隱私",

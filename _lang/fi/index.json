@@ -87,7 +87,7 @@
     "Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.": "Hallitse sallittuja verkkosivustoja. Säännöt vaikuttavat kaikkiin valitun käyttäjän sovelluksiin, myös eri verkkoselaimiin.",
     "Manage Apps": "Hallitse sovelluksia",
     "Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.": "Valitse lapsellesi tai itsellesi sopivat sovellukset. Rajoita pääsyä valinnaisesti salasanalla.",
-    "Everything We Do is Open&nbsp;Source": "Kaikki mitä teemme on avointa&nbsp;lähdekoodia",
+    "Everything We Do is Open Source": "",
     "Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.": "Alustamme on täysin avointa lähdekoodia, se on rakennettu vapaan ja avoimen lähdekoodin ohjelmistojen vakaalle perustalle (kuten GNU/Linux). Lisäksi työskentelemme aktiivisesti ekosysteemin parissa.",
     "Explore Our Stack": "Tutki varantoamme",
     "Secure &amp; Privacy-respecting": "Turvallinen &amp; yksityisyyttä kunnioittava",
