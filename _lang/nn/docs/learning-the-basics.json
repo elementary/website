@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "Rekn ut enkle reknestykker som <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "Ta eit <strong>skjermbilete av vindauget du er inne i</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "Finn ein konkret innstilling som til dømes <strong>Tastatur → Oppsett → Komponeringsnøkkel</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "For å opna Applikasjonar-menyen med tastaturet ditt kan du trykka på <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Mellomrom</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "Indikatoren for dato og klokkeslett på midten av panelet viser sjølvsagt datoen og klokkeslettet. Når du trykkjer på indikatoren kan du sjå kalenderen og kommande hendingar. Dobbeltrykk på ein dag eller ein hending for å opna Kalender-appen.",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "Systemindikatorane til høgre på panelet visar deg status på eininga som nettverkstilkopling, batteristatus, lydvalg og varslingar. Når du trykkjer på ein indikator får du opp meir relevant informasjon og valg.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "Når du held peikaren på ein indikator, eller bruker midttrykk og trefinger-trykk, kan du sjå rask informasjon og gjera enkle valg. Til dømes:",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "Hugs at Systeminnstillingar kun tar hand om systeminnstillingar og brukarinnstillingar for elementary OS. Dersom ein app har egne innstillingar eller valg vil det visast inne i appen.",
     "Keyboard Shortcuts": "Tastatursnarvegar",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "Ulike tastatursnarvegar blir vist i elementary OS når du held peikaren over verktøysknappar, eller i menyar dersom du sekundærtrykker.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "For å sjå ein fullstendig oversikt over tastatursnarvegar kan du trykka på <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>-knappen.",
-    "Desktop keyboard shorcuts can be customized from the": "Du kan tilpassa tastatursnarvegar for skrivebordet i",
-    "menu in the shortcuts overlay or in": "-menyen i visningen, eller i",
-    "→": "→",
-    "Keyboard": "Tastatur",
-    "Shortcuts": "Tastatursnarvegar"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }

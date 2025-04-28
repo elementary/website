@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "快速進行數學計算像是 <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "擷取<strong>目前視窗的畫面快照</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "尋找個別設定項目像是<strong>鍵盤 → 鍵盤配置 → Compose 鍵</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "要用鍵盤開啟應用程式選單，請按 <kbd title=\"Super 或 Windows 或 Command 鍵\">&#8984;</kbd><kbd>Space</kbd>。",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "面板中間的「日期與時間指示器」顯示目前的日期與時間。在日期或時間任何地方點擊或輕點會秀出行事曆與即將到來的活動。在這個行事曆裡雙擊日期或選擇活動來在《行事曆》應用程式中開啟該日期或活動。",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "面板右邊是各個系統指示器，它們提供裝置的狀態資訊，像是網路連接、電池狀態、音效輸入與輸出、通知等等。選取指示器會秀出更多資訊及一些有關的動作。",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "滑鼠游標停駐在指示器上的時候也會顯示一些簡短資訊，以及中鍵點擊或三指輕點所會觸發的捷徑。舉例來說：",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "請記得，《系統設定值》只包含系統全域的設定值和 elementary OS 的使用者偏好設定。各個應用程式自己提供的設定值或偏好設定會由該應用程式在自己裡面提供。",
     "Keyboard Shortcuts": "鍵盤快捷鍵",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "elementary OS 的鍵盤快捷鍵通常會顯示在滑鼠停駐的工具提示或是次要點擊開啟的內文選單當中。",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "要查看鍵盤快捷鍵一覽，請按 <kbd title=\"Super 或 Windows 或 Command 鍵\">&#8984;</kbd>。",
-    "Desktop keyboard shorcuts can be customized from the": "桌面上的鍵盤快捷鍵可以從「快捷鍵覆蓋視窗」當中的選單，",
-    "menu in the shortcuts overlay or in": "或者是在",
-    "→": "→",
-    "Keyboard": "鍵盤",
-    "Shortcuts": "快捷鍵 當中進行變更"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }
