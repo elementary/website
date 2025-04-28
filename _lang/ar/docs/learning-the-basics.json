@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "حساب العمليات الرياضية السريعة مثل <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "أخذ <strong>لقطة شاشة للنافذة المفتوحة حالياً</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "إيجاد إعدادات معينة مثل <strong>لوحة المفاتيح ← التنسيق ← مفتاح التشكيل</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "لفتح قائمة التطبيقات من لوحة المفاتيح، اضغط على <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>مسافة</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "مؤشر التاريخ والوقت الموجود في الأعلى على اللوحة يظهر التاريخ والوقت الحاليين. اضغط أينما تريد عليه لإظهار التقويم والأحداث والفعاليات القادمة. اضغط مرتين على أحد الأيام أو اختر فعالية لفتحها في تطبيق \"التقويم\".",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "مؤشرات النظام على يسار اللوحة تظهر حالة جهازك، مثل شبكات الإنترنت، والبطارية، ومدخلات ومخرجات الصوت، والإشعارات، إلخ. عند اختيار أحد المؤشرات ستظهر لك معلومات أكثر له مع إجراءات مرتبطة به.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "التمرير فوق أحد المؤشرات بمؤشر الفأرة سيظهر أيضاً معلومات سريعة، والضغطة على الزر الأوسط بالفأرة أو الضغطة بثلاثة أصابع على لوحة اللمس يظهر اختصاراً للمؤشر. مثلاً:",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "تذكر أن تطبيق \"إعدادات النظام\" يتعامل فقط مع الإعدادات وتفضيلات المستخدم على صعيد النظام بأكمله ل elementary OS. إذا كان هناك تطبيق يوفر بعض الإعدادت والتفضيلات، فسيتم إظهارها داخل التطبيق بنفسه.",
     "Keyboard Shortcuts": "اختصارات لوحة المفاتيح",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "اختصارات لوحة المفاتيح في elementary OS تكون بشكل عام مكشوفة حسب سياقها في التلميحات عند التمرير عليها أو في القائمة المنبثقة عند ضغط الضغطة الثانوية.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "لإظهار خريطة اختصارات لوحة المفاتيح لسطح المكتب، اضغط على المفتاح <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.",
-    "Desktop keyboard shorcuts can be customized from the": "يمكن تخصيص اختصارات لوحة المفاتيح من القائمة هذه",
-    "menu in the shortcuts overlay or in": "الموجودة في خريطة الاختصارات أو في",
-    "→": "←",
-    "Keyboard": "لوحة المفاتيح",
-    "Shortcuts": "الاختصارات"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }

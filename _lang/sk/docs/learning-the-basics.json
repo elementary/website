@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "Rýchlo vypočítať matematické operácie, ako napríklad <strong>23 × 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "Vytvoriť <strong>Snímku obrazovky zvoleného okna</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "Nájsť konkrétne nastavenie, ako <strong>Klávesnica → Rozloženie → Kláves Compose</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "Pre otvorenie Menu s aplikáciami s klávesnicou, stlačte <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Medzerník</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "Indikátor Dátumu a času v strede Panelu zobrazuje aktuálny dátum a čas. Kliknutím (či klepnutím) kdekoľvek na dátum alebo čas sa zobrazí kalendár a nasledujúce udalosti. Dvojitým kliknutím na deň alebo výberom udalosti sa zodpovedajúca položka otvorí v aplikácii Kalendár.",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "Systémové indikátory vpravo na Paneli zobrazujú stav zariadenia, t. j. sieťové pripojenia, batéria, zvukový vstup a výstup, oznámenia, atď. Výberom indikátora sa zobrazí viac informácií a súvisiace akcie.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "Presunutím kurzora na indikátor sa zobrazia stručné informácie a skratka dostupná stlačením stredného tlačidla myši (či klepnutím tromi prstami na touchpade). Napríklad:",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "Nezabudnite, že Nastavenia systému sa týkajú iba nastavení pre celý systém a predvolieb používateľov v rámci elementary OS. Pokiaľ aplikácia poskytuje nastavenia alebo predvoľby, budú dostupné vnútri samotnej aplikácie.",
     "Keyboard Shortcuts": "Klávesové skratky",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "Klávesové skratky v elementary OS sú všeobecne zobrazované podľa kontextu v textových nápovedách, keď kurzorom nadídete na kontextové menu, alebo keď kliknete sekundárnym tlačidlom myši.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "Pre zobrazenie zoznamu najdôležitejších klávesových skratiek systému stlačte kláves <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.",
-    "Desktop keyboard shorcuts can be customized from the": "Klávesové skratky v pracovnom prostredí si môžete prispôsobiť z",
-    "menu in the shortcuts overlay or in": "menu v okne zoznamu skratiek alebo v",
-    "→": "→",
-    "Keyboard": "Klávesnica",
-    "Shortcuts": "Skratky"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }

@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "Menghitung operasi matematika cepat seperti <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "Mengambil <strong>Cuplikan Layar dari Jendela Saat Ini</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "Temukan pengaturan spesifik seperti <strong>Papan Ketik → Tata Letak → Kunci Tulis</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "Untuk membuka Menu Aplikasi dengan papan ketik, tekan <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Spasi</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "Indikator Tanggal &amp; Waktu di tengah Panel menampilkan tanggal dan waktu saat ini. Klik atau ketuk di mana saja pada tanggal atau waktu untuk menampilkan kalender dan acara mendatang. Klik dua kali hari atau pilih acara untuk membukanya di aplikasi Kalender lengkap.",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "Indikator Sistem di sebelah kanan Panel menampilkan status perangkat, yaitu koneksi jaringan, baterai, masuka dan keluaran suara, notifikasi, dll. Memilih indikator akan menampilkan lebih banyak informasi dan tindakan terkait.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "Mengarahkan indikator dengan kursor tetikus juga menampilkan informasi cepat dan pintasan klik tengah atau ketuk tiga jari untuk indikator. Sebagai contoh:",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "Perlu diingat bahwa Pengaturan Sistem hanya berurusan dengan pengaturan cakupan-sistem dan preferensi pengguna untuk elementary OS. Jika sebuah aplikasi menawarkan pengaturan atau preferensi, mereka akan ditampilkan di dalam aplikasi itu sendiri.",
     "Keyboard Shortcuts": "Pintasan Papan Ketik",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "Pintasan papan ketik di elementary OS umumnya diekspos secara kontekstual di tooltip saat mengarahkan kursor atau menu konteks saat mengklik sekunder.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "Untuk melihat hamparan pintasan papan ketik desktop, tekan tombol <kbd title=\"Super, atau tombol Windows atau Command\">&#8984;</kbd>.",
-    "Desktop keyboard shorcuts can be customized from the": "Pintasan papan ketik desktop dapat disesuaikan dari",
-    "menu in the shortcuts overlay or in": "menu di hamparan pintasan atau di",
-    "→": "→",
-    "Keyboard": "Papan Ketik",
-    "Shortcuts": "Pintasan"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }
