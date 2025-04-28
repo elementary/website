@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "计算简单的数学算式，比如 <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "为当前窗口 <strong>截屏</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "寻找设置项，例如 <strong>键盘 → 布局 → 快捷键</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "要通过键盘打开应用菜单，按下 <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd> 空格 </kbd>。",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "位于菜单栏中间的日期与时间指示器会显示当前的日期与时间。点击它来显示日历和稍后的事件。双击任一天或选中事件来在日历应用中打开。",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "菜单栏右侧的系统状态指示图标显示设备当前的状态，例如：网络连接、电池、声音输入与输出、通知，等等。选中图标后可以展开更多信息与相关动作。",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "把鼠标指针悬停在指示标上时会显示快捷信息和鼠标中键或三指轻点快捷键的快捷键。例如：",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "",
     "Keyboard Shortcuts": "",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "",
-    "Desktop keyboard shorcuts can be customized from the": "",
-    "menu in the shortcuts overlay or in": "",
-    "→": "",
-    "Keyboard": "",
-    "Shortcuts": ""
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }

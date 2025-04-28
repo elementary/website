@@ -17,7 +17,7 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "Realizar operações matemáticas como <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "Realizar uma <strong>Captura de tela da Janela Atual</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "Encontrar configurações específicas como <strong>Teclado → Layout → Tecla de Composição</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "Para abrir o Menu de Aplicativos utilizando o teclado, pressione <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Espaço</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "O indicador de Data &amp; Hora ao centro do Painel exibe a data e a hora atual. Clique ou toque em qualquer área da data ou hora para exibir um calendário e os eventos futuros. Dê um clique duplo em um dia ou selecione um evento para abrir o aplicativo Calendário.",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "Os Indicadores do Sistema à direita do Painel exibem o status do dispositivo, ou seja, conexões de rede, bateria, entrada e saída de som, notificações e etc. Selecionar um indicador expões mais informações e ações relacionadas.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "Sobrepassar um indicador com o cursor do mouse também exibe uma breve informação e o atalho de clique do meio ou toque com três dedos para o indicador. Por exemplo:",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "Lembre-se que as Configurações do Sistema lidam apenas com as configurações de todo o sistema e as preferências do usuário para o elementary OS. Se um aplicativo oferece configurações ou preferências, elas serão expostas dentro do próprio aplicativo.",
     "Keyboard Shortcuts": "Atalhos de Teclado",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "Os atalhos de teclado no elementary OS geralmente são expostos contextualmente em dicas de ferramentas ao passar o mouse ou em menus de contexto ao clicar com o botão direito do mouse.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "Para ver a disposição de atalhos de teclado da área de trabalho, pressione a tecla <kbd title=\"Super, ou a tecla Windows ou Command\">&#8984;</kbd>.",
-    "Desktop keyboard shorcuts can be customized from the": "Os teclas de atalho da área de trabalho podem ser personalizados a partir do",
-    "menu in the shortcuts overlay or in": "menu na disposição de atalhos ou em",
-    "→": "→",
-    "Keyboard": "Teclado",
-    "Shortcuts": "Atalhos"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": ""
 }
