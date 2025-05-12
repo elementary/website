@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.5.3",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "3b1fc3f0be055baa7c6258b1467849c3e8204eb2"
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/3b1fc3f0be055baa7c6258b1467849c3e8204eb2",
-                "reference": "3b1fc3f0be055baa7c6258b1467849c3e8204eb2",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f65c239c970e7f072f067ab78646e9f0b2935175",
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.5.3"
+                "source": "https://github.com/composer/ca-bundle/tree/1.5.6"
             },
             "funding": [
                 {
@@ -80,7 +80,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-04T10:15:26+00:00"
+            "time": "2025-03-06T14:30:56+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -185,21 +185,21 @@
         },
         {
             "name": "geoip2/geoip2",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/GeoIP2-php.git",
-                "reference": "c86fbeaa7e42279dd9e7af0b015384e721832b88"
+                "reference": "b7aa58760a6bf89a608dd92ee2d9436b52557ce2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/c86fbeaa7e42279dd9e7af0b015384e721832b88",
-                "reference": "c86fbeaa7e42279dd9e7af0b015384e721832b88",
+                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/b7aa58760a6bf89a608dd92ee2d9436b52557ce2",
+                "reference": "b7aa58760a6bf89a608dd92ee2d9436b52557ce2",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "maxmind-db/reader": "^1.12.0",
+                "maxmind-db/reader": "^1.12.1",
                 "maxmind/web-service-common": "~0.10",
                 "php": ">=8.1"
             },
@@ -237,9 +237,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maxmind/GeoIP2-php/issues",
-                "source": "https://github.com/maxmind/GeoIP2-php/tree/v3.1.0"
+                "source": "https://github.com/maxmind/GeoIP2-php/tree/v3.2.0"
             },
-            "time": "2024-11-15T16:33:31+00:00"
+            "time": "2025-05-05T21:18:27+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -419,16 +419,16 @@
         },
         {
             "name": "maxmind-db/reader",
-            "version": "v1.12.0",
+            "version": "v1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90"
+                "reference": "815939e006b7e68062b540ec9e86aaa8be2b6ce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90",
-                "reference": "5b2d7a721dedfaef9dc20822c5fe7d26f9f8eb90",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/815939e006b7e68062b540ec9e86aaa8be2b6ce4",
+                "reference": "815939e006b7e68062b540ec9e86aaa8be2b6ce4",
                 "shasum": ""
             },
             "require": {
@@ -476,9 +476,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maxmind/MaxMind-DB-Reader-php/issues",
-                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.12.0"
+                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.12.1"
             },
-            "time": "2024-11-14T22:43:47+00:00"
+            "time": "2025-05-05T20:56:32+00:00"
         },
         {
             "name": "maxmind/web-service-common",
