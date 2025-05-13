@@ -120,11 +120,24 @@ foreach ($pages as $page) {
             $currentTranslations = array();
         }
 
-        foreach ($strings as $string) {
-            $newTranslations[$string] = "";
+        if (is_object($strings)) { // Ensure $strings is an object
+            foreach ($strings as $processedSourceKey => $originalSourceValue) {
+                // $processedSourceKey is the key from Extract.php's output (already processed)
+                // $originalSourceValue is the original English text for that key
 
-            if (isset($currentTranslations[$string]) !== false) {
-                $newTranslations[$string] = $currentTranslations[$string];
+                if (isset($currentTranslations[$processedSourceKey])) {
+                    // Preserve existing translation
+                    $newTranslations[$processedSourceKey] = $currentTranslations[$processedSourceKey];
+                } else {
+                    // New string for this language file
+                    if ($language === 'en') {
+                        // For English, the "translation" is the original source value
+                        $newTranslations[$processedSourceKey] = $originalSourceValue;
+                    } else {
+                        // For other languages, initialize as an empty string (needs translation)
+                        $newTranslations[$processedSourceKey] = "";
+                    }
+                }
             }
         }
 
