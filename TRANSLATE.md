@@ -34,7 +34,7 @@ The translation tool supports the following command line options:
 * `--help` - Display help information about the command
 
 You can combine multiple options:
-```
+```sh
 php _backend/Console/Translation.php --language ar --page code-of-conduct --verbose
 ```
 
