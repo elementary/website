@@ -25,22 +25,13 @@ class L10n
      * @var array
      */
     public static $blacklistedPages = array(
-        '/CODE_OF_CONDUCT.md/',
-        '/getting-started.md/',
-        '/human-interface-guidelines.md/',
-        '/inventory.php/',
-        '/LICENSE.md/',
-        '/os-dev.md/',
-        '/README.md/',
-        '/reference.md/',
         '/router.php/',
-        '/SECURITY.md/',
-        '/TRANSLATE.md/',
+        '/^\/[^\/]+\.md$/i', // Matches any .md file in the root project directory
     );
 
     /**
      * language_folders
-     * Returns a list of all langauges the website currently has.
+     * Returns a list of all languages the website currently has.
      * NOTE: this does not return a list of enabled languages.
      *
      * @return array A list of languages we currently have
