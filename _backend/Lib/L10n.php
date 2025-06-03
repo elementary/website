@@ -103,6 +103,7 @@ class L10n
     protected $available_langs = array(
         'en' => 'English',
         'ar' => 'العَرَبِيَّة‎‎',
+        'be' => 'Беларуская',
         'ca' => 'català',
         'cs' => 'čeština',
         'da' => 'Dansk',
