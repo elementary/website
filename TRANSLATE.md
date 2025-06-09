@@ -6,7 +6,7 @@ You can propose new languages if they're not listed. Make sure to avoid requesti
 
 ## Reviewing
 
-It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask him to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
+It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask them to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
 
 ## Updating
 
