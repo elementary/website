@@ -109,6 +109,7 @@ class L10n
         'da' => 'Dansk',
         'de' => 'Deutsch',
         'es' => 'Español',
+        'fa' => 'فارسی',
         'fi' => 'Finnish',
         'fr' => 'Français',
         'gl' => 'Galego',
