@@ -32,6 +32,7 @@ include $template['alert'];
             <a class="button sub-item" href="https://github.com/elementary/code" target="_blank" rel="noopener"><span>Code</span></a>
             <a class="button sub-item" href="https://github.com/elementary/files" target="_blank" rel="noopener"><span>Files</span></a>
             <a class="button sub-item" href="https://github.com/elementary/mail" target="_blank" rel="noopener"><span>Mail</span></a>
+            <a class="button sub-item" href="https://github.com/elementary/monitor" target="_blank" rel="noopener"><span>Monitor</span></a>
             <a class="button sub-item" href="https://github.com/elementary/music" target="_blank" rel="noopener"><span>Music</span></a>
             <a class="button sub-item" href="https://github.com/elementary/photos" target="_blank" rel="noopener"><span>Photos</span></a>
             <a class="button sub-item" href="https://github.com/elementary/screenshot" target="_blank" rel="noopener"><span>Screenshot</span></a>
