@@ -15,7 +15,7 @@
 .page-brand .color-palette-section {
   color: white;
   display: grid;
-  grid-gap: 24px;
+  gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
 }
 
