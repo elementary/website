@@ -55,6 +55,11 @@ include $template['alert'];
     <span>Mail</span>
   </a>
 
+  <a class="app" href="https://github.com/elementary/monitor/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/monitor.svg" alt="Monitor"/>
+    <span>Monitor</span>
+  </a>
+
   <a class="app" href="https://github.com/elementary/music/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/music.svg" alt="Music"/>
     <span>Music</span>
