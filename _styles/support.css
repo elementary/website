@@ -64,7 +64,7 @@ a.column h3 {
     border-color 150ms ease-in-out;
   vertical-align: top;
   width: 100%;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .row.apps .app:hover,
