@@ -19,10 +19,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.34.1
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: '8.1'
           tools: composer
@@ -44,10 +44,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.34.1
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: 8.1
           tools: composer
@@ -69,10 +69,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.34.1
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: 8.1
           tools: composer
@@ -94,10 +94,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.34.1
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: 8.1
           tools: composer
@@ -118,10 +118,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.34.1
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: 8.1
           tools: composer
