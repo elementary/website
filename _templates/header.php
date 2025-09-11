@@ -139,7 +139,6 @@ $l10n->beginHtmlTranslation();
                 <ul class="right">
                     <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off aria-label="YouTube" title="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
                     <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off aria-label="Mastodon" title="Mastodon"><i aria-hidden="true" class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off aria-label="Reddit" title="Reddit"><i aria-hidden="true" class="fab fa-reddit"></i></a></li>
                     <li><a href="https://discord.gg/pCenUBu" target="_blank" rel="noopener" data-l10n-off aria-label="Discord" title="Discord"><i aria-hidden="true" class="fab fa-discord"></i></a></li>
                 </ul>
             </div>
