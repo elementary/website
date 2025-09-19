@@ -26,13 +26,13 @@ jobs:
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.35.3
+        uses: shivammathur/setup-php@2.35.4
         with:
           php-version: '8.1'
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.4.0
+        uses: actions/setup-node@v5.0.0
         with:
           node-version: 18
 
