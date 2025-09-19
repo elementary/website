@@ -8,7 +8,7 @@ return array(
   'release_version'  => '8.0.2',
   'release_filename' => 'elementaryos-8.0-stable-amd64.20250902rc.iso',
   'release_size'     => '3.3 GB',
-  'release_magnet'   => '1cf38b09ad0b81997cff779033a21e7f66e24745',
+  'release_magnet'   => '36d2dec9234ae7196062b60eca32b08f01c77143',
   'release_sha256'   => 'c0ee5f9c1fa27a42fe864a6360ca17b3b40504f258ade3e4cfe7b17d94f8acc6',
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-8-FAQ',
 
