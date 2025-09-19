@@ -55,7 +55,7 @@ include $template['alert'];
     <span>Mail</span>
   </a>
 
-  <a class="app" href="https://github.com/elementary/mail/discussions/categories/q-a" target="_blank" rel="noopener">
+  <a class="app" href="https://github.com/elementary/maps/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/maps.svg" alt="Maps"/>
     <span>Maps</span>
   </a>
