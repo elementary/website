@@ -7,10 +7,10 @@
   },
   "description": "The elementary.io Website http://elementary.io",
   "dependencies": {
-    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
     "babel-loader": "^10.0.0",
     "core-js": "^3.45.0",
-    "cssnano": "^7.1.0",
+    "cssnano": "^7.1.1",
     "glob": "^11.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
