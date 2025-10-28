@@ -9,19 +9,19 @@
   "dependencies": {
     "@babel/preset-env": "^7.28.5",
     "babel-loader": "^10.0.0",
-    "core-js": "^3.45.1",
+    "core-js": "^3.46.0",
     "cssnano": "^7.1.1",
     "glob": "^11.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
-    "gulp-changed": "^5.0.3",
+    "gulp-changed": "^5.0.4",
     "gulp-imagemin": "^9.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.1.0",
     "gulp-rev": "^11.0.0",
     "postcss-preset-env": "^10.4.0",
     "scriptjs": "^2.5.9",
-    "webpack": "^5.102.0",
+    "webpack": "^5.102.1",
     "webpack-manifest-plugin": "^5.0.1"
   },
   "devDependencies": {
