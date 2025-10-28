@@ -5,7 +5,7 @@ require_once __DIR__ . '/../_backend/preload.php';
 
 $stripe = new \Stripe\StripeClient([
     "api_key" => $config['stripe_sk'],
-    "stripe_version" => "2025-03-31.basil"
+    "stripe_version" => "2025-09-30.clover"
 ]);
 
 if (isset($_POST['amount'])) {
