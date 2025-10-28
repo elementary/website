@@ -14,7 +14,7 @@
     "glob": "^11.0.3",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
-    "gulp-changed": "^5.0.3",
+    "gulp-changed": "^5.0.4",
     "gulp-imagemin": "^9.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.1.0",
