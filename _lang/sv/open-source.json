@@ -33,7 +33,7 @@
     "Pantheon Platform": "Pantheon-plattformen",
     "Contractor": "Contractor",
     "Granite": "Granite",
-    "Captive Network Assistant": "Assistent för fångstnätverk",
+    "Captive Network Assistant": "Assistent för inloggningsportaler",
     "Polkit Agent": "Polkit Agent",
     "Flatpak Platform": "Flatpak-plattform",
     "Ubuntu": "Ubuntu",
@@ -68,7 +68,7 @@
     "X11": "X11",
     "XServer": "XServer",
     "GNU": "GNU",
-    "Compiler &amp; Core Utilities": "Kompilator och verktyg",
+    "Compiler &amp; Core Utilities": "Kompilator och kärnverktyg",
     "Bash": "Bash",
     "GCC": "GCC",
     "GNU C Library": "GNU C-bibliotek",
@@ -88,5 +88,5 @@
     "Software Freedom Conservancy": "Software Freedom Conservancy",
     "Weblate": "Weblate",
     "All logos featured here are trademarks of their respective projects.": "Alla logotyper som visar här är varumärke för sina respektive projekt.",
-    "Open Source &sdot; elementary": "Öppen Källkod &sdot; elementary"
+    "Open Source &sdot; elementary": "Öppen källkod &sdot; elementary"
 }
