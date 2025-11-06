@@ -18,7 +18,7 @@
     "gulp-imagemin": "^9.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.1.0",
-    "gulp-rev": "^11.0.0",
+    "gulp-rev": "^12.0.0",
     "postcss-preset-env": "^10.4.0",
     "scriptjs": "^2.5.9",
     "webpack": "^5.102.1",
