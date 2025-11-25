@@ -21,7 +21,7 @@
     "gulp-rev": "^12.0.0",
     "postcss-preset-env": "^10.4.0",
     "scriptjs": "^2.5.9",
-    "webpack": "^5.102.1",
+    "webpack": "^5.103.0",
     "webpack-manifest-plugin": "^6.0.1"
   },
   "devDependencies": {
