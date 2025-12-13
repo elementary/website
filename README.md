@@ -33,6 +33,29 @@ Architecture/Philosophies
 * Graceful degradation (don't be held back by crappy browsers)
 * Mobile-first
 
+Building and Running
+====================
+
+You'll need the following dependencies:
+
+* node v18
+* php
+* php8.3-xml
+* composer
+
+Run `npm install`, and then `npm run build` to install required dependencies and build the assets:
+
+````
+npm install
+npm run build
+````
+
+Start PHP’s development web-server:
+````
+php -S localhost:8000 router.php
+````
+
+The website should be up and running at `http://localhost:8000/`
 
 Templating System
 =================

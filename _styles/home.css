@@ -61,9 +61,65 @@ input:focus + .focus-reveal {
   transition: 250ms all;
 }
 
+/********************
+* OS Download Modal *
+********************/
+
 #download {
   margin: 3px auto 6px;
 }
+
+.download-modal {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 18px;
+  align-items: start;
+  padding: 2em;
+}
+
+.download-modal .dialog-icon {
+  margin-bottom: 1em;
+}
+
+.download-modal .dialog-body {
+  grid-column: 2;
+}
+
+.download-modal .content-area {
+  width: auto;
+  display: block;
+}
+
+.download-modal .download-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.download-modal .download-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.download-modal .linked {
+  display: inline-flex;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.download-modal hr.modal-separator {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 12px 0;
+}
+
+.sub {
+  font-size: 12px;
+}
+
 
 .cta {
   padding: 64px 1em;
