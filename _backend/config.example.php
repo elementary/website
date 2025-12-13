@@ -6,10 +6,10 @@
 return array(
   'release_title'    => 'Circe',
   'release_version'  => '8.1',
-  'release_filename' => 'elementaryos-8.1-stable-amd64.20251205.iso',
+  'release_filename' => 'elementaryos-8.1-stable-amd64.20251211.iso',
   'release_size'     => '3.3 GB',
-  'release_magnet'   => '',
-  'release_sha256'   => '809634a8ca527656c331e613f84d3cd528bb84cce71f0d238f3d0128db752e66',
+  'release_magnet'   => 'addc43b83201d733d7558e431b692c10e2f53f84',
+  'release_sha256'   => 'eee6cad081664717681bec767fbfe1aa1fd920938fedad6c83b41fd341e8f306',
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-8-FAQ',
 
   'previous_title'    => 'Circe',
