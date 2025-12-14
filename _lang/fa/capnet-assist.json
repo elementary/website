@@ -1,0 +1,8 @@
+{
+    "You’re connected!": "شما متصل هستید!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "به نظر می رسد اتصال اینترنت شما کار می کند. می توانید با خیال راحت این پنجره را ببندید و به استفاده از دستگاه خود ادامه دهید.",
+    "Why is this window appearing?": "چرا این پنجره ظاهر می شود؟",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "سیستم عامل المنتری به طور خودکار اتصال اینترنت شما را هنگام اتصال به یک شبکه Wi-Fi جدید بررسی می کند. اگر تشخیص دهد که اتصال اینترنتی وجود ندارد (یعنی اگر به یک پورتال محبوس در یک کافی شاپ یا مکان عمومی دیگر متصل می شوید)، این پنجره ظاهر می شود و صفحه ورود را نشان می دهد.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "برخی از شبکه ها در ابتدا ممکن است به نظر یک پورتال محصور به نظر برسند، این پنجره را فعال می کنند، سپس در نهایت به اتصال می رسند. در این موارد، این پیام را می‌بینید و می‌توانید با خیال راحت پنجره را ببندید.",
+    "You’re connected! &sdot; elementary": "شما متصل هستید! &sdot; المنتری"
+}

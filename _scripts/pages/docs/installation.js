@@ -11,7 +11,7 @@ jQuery.then(($) => {
     $(function () {
         // Parse user-agent to detect current platform
         function detectOS () {
-            var ua = window.navigator.userAgent
+            const ua = window.navigator.userAgent
             if (ua.indexOf('Windows') >= 0) {
                 return 'windows'
             }
@@ -25,7 +25,7 @@ jQuery.then(($) => {
         }
 
         // Setup sliders
-        var operatingSystemSlider = new Slider({
+        const operatingSystemSlider = new Slider({
             slideContainer: '#installation-instructions-slide-container',
             choiceContainer: '#operating-system-choices',
             slides: ['install-on-windows', 'install-on-macos', 'install-on-ubuntu'],
@@ -33,7 +33,7 @@ jQuery.then(($) => {
         })
 
         // Show instructions for the current platform
-        var currentOs = detectOS()
+        const currentOs = detectOS()
 
         if (currentOs === 'windows' || !currentOs) {
             operatingSystemSlider.slideTo('install-on-windows')

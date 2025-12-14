@@ -4,39 +4,29 @@
 // Config will fall back to what is present here.
 
 return array(
-  'release_title'    => 'Jólnir',
-  'release_version'  => '6.1',
-  'release_filename' => 'elementaryos-6.1-stable.20211218-rc.iso',
-  'release_size'     => '2.47 GB',
-  'release_magnet'   => '79c043454fc643b05aea16de848e5dce6eb8c9d9',
-  'release_sha256'   => '35c8086bc0af8ccc5ef8629225b215b1742b3a90b475f9f47723b18a315d86a7',
-  'release_faq'      => 'https://github.com/elementary/os/wiki/elementary-OS-6.1-Jólnir-FAQ',
+  'release_title'    => 'Circe',
+  'release_version'  => '8.0.2',
+  'release_filename' => 'elementaryos-8.0-stable-amd64.20250902rc.iso',
+  'release_size'     => '3.3 GB',
+  'release_magnet'   => '36d2dec9234ae7196062b60eca32b08f01c77143',
+  'release_sha256'   => 'c0ee5f9c1fa27a42fe864a6360ca17b3b40504f258ade3e4cfe7b17d94f8acc6',
+  'release_faq'      => 'https://github.com/elementary/os/wiki/OS-8-FAQ',
 
-  'previous_title'    => 'Hera',
-  'previous_version'  => '5.1.7',
-  'previous_filename' => 'elementaryos-5.1-stable.20200814.iso',
-  'previous_size'     => '1.49 GB',
-  'previous_magnet'   => '73e9c0288c0b62c2646b695219b550fd231fede4',
-
-  'chart_enable'         => false,
-  'chart_link_project'   => 'elementary',
-  'chart_link_milestone' => 'loki-rc1',
-  'chart_link_name'      => 'Loki RC1 Milestone',
+  'previous_title'    => 'Circe',
+  'previous_version'  => '8.0.1',
+  'previous_filename' => 'elementaryos-8.0-stable.20250314rc.iso',
+  'previous_size'     => '3.3 GB',
+  'previous_magnet'   => 'ca69606c5767ec131cc6d6618885b8920ca3f8e8',
 
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
+
+  // Classic token that requires 'read:org', 'read:user', 'public_repo' scopes for `/api/sponsors_goals` endpoint
+  'gh_sponsors_token' => 'ghp_1234567890abcdefghij',
 
   'previous_stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
 
   'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
 
-  'mandrill_key' => 'aaaaaaaaaaaaaaaaaaaaaa',
-
-  'sentry_key' => false,
-  'sentry_pub' => false,
-
-  'twitter_consumer_key'    => 'test_ckey',
-  'twitter_consumer_secret' => 'test_csecret',
-  'twitter_access_token'    => 'test_atoken',
-  'twitter_access_secret'   => 'test_asecret',
+  'sentry_dsn' => false,
 );

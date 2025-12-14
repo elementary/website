@@ -1,15 +1,15 @@
 <?php
-  require_once __DIR__.'/_backend/preload.php';
+require_once __DIR__.'/_backend/preload.php';
 
-  $page['title'] = 'Privacy &sdot; elementary';
+$page['title'] = 'Privacy &sdot; elementary';
 
-  $page['styles'] = array(
-    'styles/docs.css',
-    'styles/privacy.css'
-  );
+$page['styles'] = array(
+  'styles/docs.css',
+  'styles/privacy.css'
+);
 
-  include $template['header'];
-  include $template['alert'];
+include $template['header'];
+include $template['alert'];
 
 ?>
 
@@ -53,7 +53,7 @@
   <h2>elementary.io</h2>
 
   <h3 data-l10n-off>Plausible Analytics</h3>
-  <p>This website uses the open source Plausible Analytics routed through our <code>stats.elementary.io</code> domain to anonymously count visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
+  <p>This website uses the open source Plausible Analytics to anonymously count visits, downloads, etc. You can see the same data we can see on <a target="_blank" rel="noopener" href="https://plausible.io/elementary.io">the public dashboard</a>. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information, see the <a class="read-more" target="_blank" rel="noopener" href="https://plausible.io/data-policy">Plausible Data Policy</a></p>
 
   <h3>Cookies</h3>
   <p><strong>You can choose to disable or selectively turn off any cookies or third-party cookies in your browser settings.</strong></p>

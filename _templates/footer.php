@@ -1,4 +1,4 @@
-<?php $l10n->set_domain('layout'); ?>
+<?php $l10n->setDomain('layout'); ?>
         </div>
         <footer>
             <div>
@@ -11,7 +11,7 @@
                         <strong>Change Site Language</strong>
                         <ul>
                         <?php
-                        foreach ($l10n->list_langs() as $langCode => $langName) {
+                        foreach ($l10n->listLangs() as $langCode => $langName) {
                             $path = $sitewide['root'].$langCode.$page['path'];
                             ?>
                             <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
@@ -34,14 +34,14 @@
                 <li><a href="<?php echo $sitewide['root'].'brand'; ?>">Brand</a></li>
                 <li><a href="<?php echo $sitewide['root'].'oem'; ?>">OEMs</a></li>
                 <li><a href="<?php echo $sitewide['root'].'privacy'; ?>">Privacy</a></li>
-                <li><a href="<?php echo $sitewide['root'].'team'; ?>">Team</a></li>
+                <li><a href="https://github.com/orgs/elementary/people">Team</a></li>
                 <li><a href="<?php echo $sitewide['root'].'open-source'; ?>">Open Source</a></li>
             </ul>
         </footer>
         <?php
             include $template['legacy'];
-            $l10n->set_domain('layout');
+            $l10n->setDomain('layout');
         ?>
     </body>
 </html>
-<?php $l10n->end_html_translation();
+<?php $l10n->endHtmlTranslation();

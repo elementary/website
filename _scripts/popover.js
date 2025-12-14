@@ -7,17 +7,15 @@ import jQuery from '~/lib/jquery'
 
 jQuery.then(($) => {
     $(function () {
-        var $document
-
-        $document = $(document)
+        const $document = $(document)
 
         $document.on('click', '.popover > a', function (event) {
             event.preventDefault()
 
-            var $body = $('body')
-            var $link = $(event.target)
-            var $popover = $link.parent()
-            var $content = $popover.find('.popover-content')
+            const $body = $('body')
+            const $link = $(event.target)
+            const $popover = $link.parent()
+            const $content = $popover.find('.popover-content')
 
             $body.css({ overflow: 'hidden' })
 
@@ -27,7 +25,7 @@ jQuery.then(($) => {
                 e.stopPropagation()
             })
 
-            var popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
+            const popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
             $content.css({ left: popoverPos })
 
             $document.one('click scroll touchmove mousewheel wheel', function (event) {

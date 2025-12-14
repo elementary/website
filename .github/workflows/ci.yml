@@ -9,6 +9,9 @@ on:
       - reopened
       - synchronize
 
+permissions:
+  contents: read
+
 jobs:
   Lint_Css:
     name: Lint (CSS)
@@ -16,24 +19,24 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.36.0
         with:
-          php-version: 7.4
+          php-version: '8.1'
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v6.1.0
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install
         run: npm ci
 
       - name: Lint
-        run: ./_tests/css.sh
+        run: npx stylelint "_styles/**/*.css" -f github
 
   Lint_Javascript:
     name: Lint (JS)
@@ -41,18 +44,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.36.0
         with:
-          php-version: 7.4
+          php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v6.1.0
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install
         run: npm ci
@@ -66,18 +69,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.36.0
         with:
-          php-version: 7.4
+          php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v6.1.0
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install
         run: npm ci
@@ -91,18 +94,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.36.0
         with:
-          php-version: 7.4
+          php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v6.1.0
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install
         run: npm ci
@@ -115,18 +118,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@2.36.0
         with:
-          php-version: 7.4
+          php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v6.1.0
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install
         run: npm ci

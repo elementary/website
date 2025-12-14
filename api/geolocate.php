@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__.'/../_backend/classify.functions.php';
-require_once __DIR__.'/../_backend/classify.get_ip.php';
+require_once __DIR__.'/../_backend/geolocate.functions.php'; // provides getCurrentLocation()
+require_once __DIR__.'/../_backend/geolocate.guess_ip.php'; // provides $ip
 require_once __DIR__.'/../_backend/store/address.php';
 require_once __DIR__.'/../_backend/store/api.php';
 
@@ -18,7 +18,7 @@ require_once __DIR__.'/../_backend/store/api.php';
 //     }
 // }
 
-if ( isset($_GET['shipping']) && !empty($_GET['item']) ) {
+if (isset($_GET['shipping']) && !empty($_GET['item'])) {
     $estimatedAddress = getCurrentLocation($ip);
 
     $result = array(
@@ -28,8 +28,7 @@ if ( isset($_GET['shipping']) && !empty($_GET['item']) ) {
         ),
     );
 
-    if (
-        !empty($estimatedAddress['countryCode']) &&
+    if (!empty($estimatedAddress['countryCode']) &&
         !empty($estimatedAddress['stateCode']) &&
         !empty($estimatedAddress['city']) &&
         !empty($estimatedAddress['postcode'])
@@ -50,7 +49,6 @@ if ( isset($_GET['shipping']) && !empty($_GET['item']) ) {
     }
 
     echo json_encode($result, JSON_PRETTY_PRINT);
-
 } else {
     $result = array ('error' => 'No parameters were supplied, but some were expected.');
     echo json_encode($result, JSON_PRETTY_PRINT);

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  elementary-os-website:
+    build:
+      context: ../
+      dockerfile: ./dev/Dockerfile
+    container_name: elementary-os-website
+    ports:
+      - "8000:80"
+    volumes:
+      - ../:/var/www/website

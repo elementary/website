@@ -4,8 +4,6 @@ require_once __DIR__ . '/bootstrap.php';
 
 require_once __DIR__ . '/log-echo.php';
 
-\Stripe\Stripe::setApiKey($config['stripe_sk']);
-
 /**
  * os_payment_encode
  * Encodes text to be used in cookie storage
@@ -14,7 +12,8 @@ require_once __DIR__ . '/log-echo.php';
  *
  * @return {String} - Text to use in cookie
  */
-function os_payment_encode (string $text) {
+function os_payment_encode(string $text)
+{
     return urlencode(str_replace([' ', '.'], '_', $text));
 }
 
@@ -27,7 +26,8 @@ function os_payment_encode (string $text) {
  *
  * @return {Boolean} - True if cookie was set
  */
-function os_payment_setcookie (string $version, int $amount) {
+function os_payment_setcookie(string $version, int $amount)
+{
     $string = os_payment_encode('os_payment_' . $version);
     $expires = time() + 60 * 60 * 24 * 365; // One year in the future
 
@@ -42,7 +42,8 @@ function os_payment_setcookie (string $version, int $amount) {
  *
  * @return {Number} - Amount paid for release, 0 for not paid
  */
-function os_payment_getcookie (string $version) {
+function os_payment_getcookie(string $version)
+{
     // DEPRECATED: this is the old version of cookie naming
     if (!isset($version) || $version === '') {
         $string = os_payment_encode('has_paid_' . $config['release_title'] . '_' . $config['release_version']);
