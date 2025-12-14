@@ -1086,11 +1086,23 @@ So that for browsers that dont we can have a sensible inline style that can be a
   margin: 6px 0 0;
 }
 
-.dialog .action-area {
+.dialog .dialog-option {
   margin-top: 12px;
 }
 
-.dialog[open] .action-area {
+.dialog-option-title {
+    opacity: 0.8;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.dialog-option-subtitle {
+    opacity: 0.7;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.dialog[open] .dialog-option {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -1107,10 +1119,18 @@ So that for browsers that dont we can have a sensible inline style that can be a
   white-space: nowrap;
 }
 
-.dialog .action-area > .button + .button,
-.dialog .action-area > .button + .linked {
+.dialog .dialog-option > .button + .button,
+.dialog .dialog-option > .button + .linked {
   margin: 0;
   margin-left: 6px;
+}
+
+.dialog .dialog-option > .download-link.http {
+    margin-left: auto;
+}
+
+.dialog .dialog-option > .download-link.magnet {
+    flex: 0 auto;
 }
 
 /* If the dialog is inline hide the close button */
