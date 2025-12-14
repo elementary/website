@@ -1087,19 +1087,19 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 
 .dialog .dialog-option {
-  margin-top: 12px;
+  margin: 24px 0 12px;
 }
 
 .dialog .dialog-option-title {
-    opacity: 0.8;
-    font-size: 0.8em;
-    margin: 0;
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 .dialog p.dialog-option-subtitle {
-    opacity: 0.7;
-    font-size: 0.7em;
-    margin: 0;
+  opacity: 0.7;
+  font-size: 0.7em;
+  margin: 0;
 }
 
 .dialog[open] .dialog-option {
@@ -1126,11 +1126,11 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 
 .dialog .dialog-option > .download-link.http {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .dialog .dialog-option > .download-link.magnet {
-    flex: 0 auto;
+  flex: 0 auto;
 }
 
 /* If the dialog is inline hide the close button */
