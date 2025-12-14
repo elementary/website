@@ -471,7 +471,8 @@ include $template['alert'];
       <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
-        <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
+        <p>Choose the variant of elementary OS for your computer's processor architecture.</p>
+        <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
         <hr>
         <div class="dialog-option">
           <div class="dialog-option-description">
