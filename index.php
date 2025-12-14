@@ -467,70 +467,87 @@ include $template['alert'];
 
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-    <div id="download-modal" class="dialog modal download-modal">
+    <dialog id="download-modal"
+            class="dialog download-modal"
+            aria-labelledby="download-modal-title">
+
       <img class="dialog-icon"
-           alt="Download elementary OS icon"
-           src="images/icons/apps/48/system-os-installer.svg">
-       <div class="dialog-body">
+           src="images/icons/apps/48/system-os-installer.svg"
+           alt=""/>
+
+      <div class="dialog-body">
         <div class="content-area">
-          <p>
-            <span style="font-weight: bold;">Download </span>
-            <span>elementary OS 8</span>
-          </p>
+          <h2 id="download-modal-title" class="dialog-title">
+            Download elementary OS 8
+          </h2>
           <p>
             Choose the variant of elementary OS based on your computer's processor architecture.
-            <br /><br />For help and more info, see the
+            For help and more info, see the
             <a class="read-more" href="docs/installation" target="_blank" rel="noopener">
               installation guide
-            </a>
+            </a>.
           </p>
         </div>
-          <hr class="modal-separator">
-          <div class="download-options">
-            <div class="download-row">
-              <div class="download-meta">
-                <div class="arch">Intel or AMD 64-bit</div>
-                <div class="sub">OS <?php echo $config['release_version']; ?> • <?php echo $config['release_size']; ?></div>
-                <div class="sub">(Most PCs and older Macs)</div>
+
+        <hr class="modal-separator">
+
+        <div class="download-options">
+          <div class="download-row">
+            <div class="download-meta">
+              <div class="arch">Intel or AMD 64-bit</div>
+              <div class="sub">
+                OS <?php echo $config['release_version']; ?> •
+                <?php echo $config['release_size']; ?>
               </div>
+              <div class="sub">(Most PCs and older Macs)</div>
+            </div>
+
             <div class="linked">
               <a class="button suggested-action download-link http"
-                href="<?php echo $download_link.$config['release_filename']; ?>">
+                 href="<?php echo $download_link.$config['release_filename']; ?>">
                 Download
-             </a>
+              </a>
               <a class="button suggested-action download-link magnet"
-                title="Torrent Magnet Link"
-                href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>">
-                  <i class="fa fa-magnet"></i>
+                 title="Torrent Magnet Link"
+                 href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>">
+                <i class="fa fa-magnet" aria-hidden="true"></i>
+                <span class="sr-only">Download via torrent magnet link</span>
               </a>
             </div>
           </div>
+
           <div class="download-row">
             <div class="download-meta">
               <div class="arch">ARM 64-bit</div>
-              <div class="sub">OS <?php echo $config['release_version']; ?> • <?php echo $config['release_size']; ?></div>
-              <div class="sub">(Apple Silicon, Raspberry Pi, etc)</div>
+              <div class="sub">
+                OS <?php echo $config['release_version']; ?> •
+                <?php echo $config['release_size']; ?>
+              </div>
+              <div class="sub">(Apple Silicon, Raspberry Pi, etc.)</div>
             </div>
+
             <div class="linked">
               <a class="button suggested-action download-link http"
-                href="<?php echo $download_link.$config['release_filename']; ?>">
+                 href="<?php echo $download_link.$config['release_filename']; ?>">
                 Download
               </a>
               <a class="button suggested-action download-link magnet"
-                title="Torrent Magnet Link"
-                href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>">
-                 <i class="fa fa-magnet"></i>
+                 title="Torrent Magnet Link"
+                 href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>">
+                <i class="fa fa-magnet" aria-hidden="true"></i>
+                <span class="sr-only">Download via torrent magnet link</span>
               </a>
             </div>
           </div>
         </div>
+
         <div class="action-area">
-          <a class="button clickable close-modal">Close</a>
+          <button class="js-close-button button clickable close-modal">
+            Close
+          </button>
         </div>
-       </div>
-     </div>
-    </div>
-    <a style="display:none;" class="open-modal" href="#download-modal"></a>
+      </div>
+    </dialog>
     <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
   include $template['footer'];
