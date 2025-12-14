@@ -318,8 +318,8 @@ nav li {
   display: inline-block;
 }
 
-.right li a {
-  scale: 1.4;
+nav .right i {
+  font-size: 1.2rem;
 }
 
 nav a,
