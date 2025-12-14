@@ -1079,7 +1079,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
   margin: 0 auto;
   text-align: left;
   line-height: 24px;
-  max-width: 380px;
+  max-width: 420px;
 }
 
 .dialog[open] p {
