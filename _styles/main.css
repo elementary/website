@@ -318,10 +318,10 @@ nav li {
   display: inline-block;
 }
 
-.right li a{
+.right li a {
   scale: 1.4;
-
 }
+
 nav a,
 nav a:visited {
   color: inherit;
