@@ -19,7 +19,6 @@ body {
   font-weight: 400;
   margin: 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 *,
@@ -210,11 +209,16 @@ img.inline + div.inline {
 *********/
 
 nav {
+  background-color: #fff;
   line-height: 48px;
   min-height: 48px;
   min-width: 100%;
   overflow-x: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   white-space: nowrap;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
@@ -399,6 +403,7 @@ body {
 
 #content-container {
   flex-grow: 1;
+  overflow-x: hidden;
 }
 
 footer {
