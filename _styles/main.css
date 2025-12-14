@@ -1090,13 +1090,13 @@ So that for browsers that dont we can have a sensible inline style that can be a
   margin-top: 12px;
 }
 
-.dialog-option-title {
+.dialog .dialog-option-title {
     opacity: 0.8;
     font-size: 0.8em;
     margin: 0;
 }
 
-.dialog-option-subtitle {
+.dialog p.dialog-option-subtitle {
     opacity: 0.7;
     font-size: 0.7em;
     margin: 0;
