@@ -239,16 +239,16 @@ img.inline + div.inline {
 *********/
 
 nav {
+  background-color: #fff;
   line-height: 48px;
   min-height: 48px;
   min-width: 100%;
   overflow-x: auto;
-  white-space: nowrap;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0;
+  white-space: nowrap;
   z-index: 10;
-  background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -784,7 +784,7 @@ select,
 .button {
   appearance: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, transparent, transparent 50%,rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.04));
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   box-shadow:
