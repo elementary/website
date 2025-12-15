@@ -1041,7 +1041,6 @@ So that for browsers that dont we can have a sensible inline style that can be a
     0 3px 28px 2px rgba(0, 0, 0, 0.12),
     0 5px 10px -3px rgba(0, 0, 0, 0.4);
   padding: 12px;
-  padding-top: 24px;
   text-align: initial;
 }
 
