@@ -468,6 +468,7 @@ include $template['alert'];
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
+      <a class="js-close-button clickable close-modal"><img src="images/pantheon/actions/window-close.svg"></a>
       <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Download elementary OS</h2>
