@@ -26,6 +26,7 @@ For a simple local development environment running on PHP, you will need:
   * `php-intl`
   * `php-json`
   * `php-mbstring`
+  * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm ci`
@@ -36,15 +37,23 @@ First, install Node.js (18.x recommended) from [Nodesource](https://github.com/n
 
 _If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
-The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
+The rest can be most easily installed from Terminal on elementary OS 7.x (Ubuntu 22.04) or 8.x (Ubuntu 24.04):
 
-```
-sudo apt install php-cli php-curl php-intl php-json php-mbstring composer &&
-npm ci
+```bash
+sudo apt install php-cli php-curl php-intl php-json php-mbstring php-xml composer
 ```
 
-Then inside the project directory, run `npm run build && npm run start`. Next,
-just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+Then inside the project directory, use `npm` to build
+
+```bash
+npm ci && npm run build
+```
+
+and npm to run the server. Navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+```bash
+npm run start
+```
 
 If you are working on CSS and would like an easier time developing, you can run
 the `npx gulp watch` command. This will watch for any CSS and image changes,
