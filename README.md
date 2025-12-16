@@ -1,7 +1,7 @@
 The New elementary.io
 ================
 
-[![Build Status](https://travis-ci.org/elementary/website.svg?branch=main)](https://travis-ci.org/elementary/website)
+[![CI](https://github.com/elementary/website/actions/workflows/ci.yml/badge.svg)](https://github.com/elementary/website/actions/workflows/ci.yml)
 [![Translation status](https://l10n.elementaryos.org/widgets/website/-/svg-badge.svg)](https://l10n.elementaryos.org/engage/website/?utm_source=widget)
 
 A focused, minimum viable product (hence MVP) for a website that accompanied the release of elementary OS Freya.
