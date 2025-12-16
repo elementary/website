@@ -1046,7 +1046,6 @@ So that for browsers that dont we can have a sensible inline style that can be a
     0 3px 28px 2px rgba(0, 0, 0, 0.12),
     0 5px 10px -3px rgba(0, 0, 0, 0.4);
   padding: 12px;
-  padding-top: 24px;
   text-align: initial;
 }
 
@@ -1084,18 +1083,30 @@ So that for browsers that dont we can have a sensible inline style that can be a
   margin: 0 auto;
   text-align: left;
   line-height: 24px;
-  max-width: 380px;
+  max-width: 420px;
 }
 
 .dialog[open] p {
   margin: 6px 0 0;
 }
 
-.dialog .action-area {
-  margin-top: 12px;
+.dialog .dialog-option {
+  margin: 24px 0 12px;
 }
 
-.dialog[open] .action-area {
+.dialog .dialog-option-title {
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.dialog p.dialog-option-subtitle {
+  opacity: 0.7;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.dialog[open] .dialog-option {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -1112,10 +1123,18 @@ So that for browsers that dont we can have a sensible inline style that can be a
   white-space: nowrap;
 }
 
-.dialog .action-area > .button + .button,
-.dialog .action-area > .button + .linked {
+.dialog .dialog-option > .button + .button,
+.dialog .dialog-option > .button + .linked {
   margin: 0;
   margin-left: 6px;
+}
+
+.dialog .dialog-option > .download-link.http {
+  margin-left: auto;
+}
+
+.dialog .dialog-option > .download-link.magnet {
+  flex: 0 auto;
 }
 
 /* If the dialog is inline hide the close button */

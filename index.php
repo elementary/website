@@ -468,16 +468,28 @@ include $template['alert'];
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
+      <a class="js-close-button clickable close-modal"><img src="images/pantheon/actions/window-close.svg"></a>
       <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
       <div class="content-area">
-        <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
-        <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
-      </div>
-      <div class="action-area">
-        <button class="js-close-button button clickable close-modal">Close</button>
-        <div class="linked">
-          <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
-          <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
+        <h2 id="download-modal-title" class="dialog-title">Download elementary OS</h2>
+        <p>Choose the variant of elementary OS for your computer's processor architecture.</p>
+        <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
+        <hr>
+        <div class="dialog-option">
+          <div class="dialog-option-description">
+            <h3 class="dialog-option-title">Intel or AMD 64-bit</h3>
+            <p class="dialog-option-subtitle">Most PCs and older Macs</p>
+          </div>
+          <a class="button download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
+          <a class="button download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
+        </div>
+        <div class="dialog-option">
+          <div class="dialog-option-description">
+            <h3 class="dialog-option-title">ARM 64-bit</h3>
+            <p class="dialog-option-subtitle">Apple Silicon, Raspberry Pi, etc</p>
+          </div>
+          <a class="button download-link http" href="<?php echo $download_link.$config['release_arm_filename']; ?>">Download</a>
+          <a class="button download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_arm_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
         </div>
       </div>
     </dialog>
