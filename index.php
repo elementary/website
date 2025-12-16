@@ -468,7 +468,9 @@ include $template['alert'];
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
-      <a alt="Close" class="js-close-button clickable close-modal"><img src="images/pantheon/actions/window-close.svg"></a>
+      <form method="dialog">
+        <button class="close-modal"><img src="images/pantheon/actions/window-close.svg" alt="Close" ></button>
+      </form>
       <img src="images/thirdparty-icons/apps/48/installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>

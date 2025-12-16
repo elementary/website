@@ -1149,15 +1149,20 @@ So that for browsers that dont we can have a sensible inline style that can be a
 
 .dialog[open] .close-modal {
   background: rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 1em;
+  box-shadow: none;
   display: block;
   justify-self: start;
+  margin: 0;
   margin-bottom: 0.5em;
-  width: 28px; /*justify-self not working in Web*/
+  padding: 6px;
+  height: 28px;
+  width: 28px;
 }
 
 .dialog[open] .close-modal img {
-  margin: 6px;
+  margin: 0;
 }
 
 /*********
