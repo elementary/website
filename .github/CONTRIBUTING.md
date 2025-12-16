@@ -26,6 +26,7 @@ For a simple local development environment running on PHP, you will need:
   * `php-intl`
   * `php-json`
   * `php-mbstring`
+  * `php-xml`
   * `composer`
 * [Node.js](https://nodejs.org/) and `npm`
   * packages installed with `npm ci`
@@ -39,7 +40,7 @@ _If you are on an unsupported version of elementary OS—i.e. during development
 The rest can be most easily installed from Terminal on elementary OS 5.x (Ubuntu 18.04) or 6.x (Ubuntu 20.04):
 
 ```
-sudo apt install php-cli php-curl php-intl php-json php-mbstring composer &&
+sudo apt install php-cli php-curl php-intl php-json php-mbstring php-xml composer &&
 npm ci
 ```
 
