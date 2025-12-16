@@ -1036,7 +1036,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 .dialog[open] {
   border: none;
-  border-radius: 6px;
+  border-radius: 9px;
   box-shadow:
     inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
@@ -1062,7 +1062,8 @@ So that for browsers that dont we can have a sensible inline style that can be a
 
 .dialog[open] img {
   display: inline-block;
-  margin-right: 12px;
+  /*Account for padding inside image*/
+  margin: -2px 5px 0 -2px;
   user-select: none;
   vertical-align: top;
 }
@@ -1145,9 +1146,18 @@ So that for browsers that dont we can have a sensible inline style that can be a
 .dialog .close-modal {
   display: none;
 }
+
 .dialog[open] .close-modal {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
   display: block;
-  line-height: 2em;
+  justify-self: start;
+  margin-bottom: 0.5em;
+  width: 28px; /*justify-self not working in Web*/
+}
+
+.dialog[open] .close-modal img {
+  margin: 6px;
 }
 
 /*********
