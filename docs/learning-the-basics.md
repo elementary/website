@@ -34,7 +34,7 @@ Start typing in the Applications Menu to search your apps by name or by keyword.
 - Take a **Screenshot of the Current Window**
 - Find specific settings like **Keyboard → Layout → Compose Key**
 
-To open the Applications Menu with the keyboard, press <kbd title="Super, or the Windows or Command key">⌘</kbd><kbd>Space</kbd>.
+To open the Applications Menu with the keyboard, simply press <kbd title="Super, or the Windows or Command key">⌘</kbd>.
 
 #### Date &amp; Time {#date-time}
 
@@ -174,8 +174,10 @@ Keep in mind that System Settings only deals with system-wide settings and user 
 
 Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.
 
-To view an overlay of desktop keyboard shortcuts, press the <kbd title="Super, or the Windows or Command key">⌘</kbd> key.
+To view an overlay of desktop keyboard shortcuts, press the <kbd title="Super, or the Windows or Command key">⌘</kbd> key to open the [Applications Menu](#applications-menu), start typing "Shortcuts", and select the first entry in the **Applications** category.
+
+Additionally, you bind the shortcuts overlay to open on <kbd title="Super, or the Windows or Command key">⌘</kbd> key in **[System Settings](#system-settings)** → **Keyboard** → **Layout** (⌘ key behavior: Shortcut Overlay).
 
 ![Keyboard Shortcuts](../images/docs/learning-the-basics/shortcut-overlay.png)
 
-Desktop keyboard shorcuts can be customized from the <i class="fa fa-cog"></i> menu in the shortcuts overlay or in **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts**.
+Desktop keyboard shorcuts can be customized from the **Keyboard Settings…** option in the shortcuts overlay or in **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts**.

@@ -17,12 +17,12 @@
     "Calculate quick math operations like <strong>23 * 5</strong>": "חישוב פעולות מתמטיות מהירות כגון <strong>23 * 5</strong>",
     "Take a <strong>Screenshot of the Current Window</strong>": "<strong>צילום החלון הנוכחי</strong>",
     "Find specific settings like <strong>Keyboard → Layout → Compose Key</strong>": "איתור הגדרות מסוימות כגון <strong>מקלדת ← פריסה ← מקש Compose</strong>",
-    "To open the Applications Menu with the keyboard, press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd><kbd>Space</kbd>.": "כדי לפתוח את תפריט היישומים באמצעות המקלדת, עליך ללחוץ על <kbd title=\"כפתור על, לחלופין כפתור Windows או Command\">&#8984;</kbd><kbd>רווח</kbd>.",
+    "To open the Applications Menu with the keyboard, simply press <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.": "כדי לפתוח את תפריט היישומים בעזרת המקלדת, יש פשוט ללחוץ על <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd>.",
     "The Date &amp; Time indicator at the center of the Panel displays the current date and time. Click or tap anywhere on the date or time to display a calendar and upcoming events. Double-click a day or select an event to open it in the full Calendar app.": "מחוון התאריך והשעה במרכז הלוח מציג את התאריך והשעה הנוכחיים. לחיצה או נגיעה בכל מקום על התאריך או על השעה תציג לוח שנה ואת האירועים הקרובים. לחיצה כפולה על יום או בחירה באירוע תפתח אותם ביישום לוח השנה המלא.",
     "The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.": "מחווני המערכת בפינה השמאלית של הלוח מציגים את מצב המכשיר, למשל את חיבורי הרשת, הסוללה, קלט ופלט השמע, התראות וכו׳. בחירה במחוון חושפת מידע נוסף ופעולות תואמות.",
     "Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:": "ריחוף מעל מחוון עם סמן העכבר מציג מידע מיידי ומקש אמצעי או נגיעה בשלוש אצבעות כקיצור דרך למחוון. לדוגמה:",
     "Sound: Mute": "שמע: השתקה",
-    "Bluetooth: Turn Bluetooth on or off": "Bluetooth: הפעלה או כיבוי של ה־Bluetooth",
+    "Bluetooth: Turn Bluetooth on or off": "בלוטות׳: הפעלה או כיבוי של הבלוטות׳",
     "Power: Toggle percentage of battery remaining in the Panel": "חשמל: החלפת תצוגה של אחוזי סוללה שנותרו בלוח",
     "Notifications: Toggle Do Not Disturb mode": "התראות: הפעלה/כיבוי מצב „לא להפריע”",
     "Session: Prompt to shut down": "הפעלה: שאלה האם לכבות",
@@ -87,10 +87,7 @@
     "Keep in mind that System Settings only deals with system-wide settings and user preferences for elementary OS. If an app offers settings or preferences, they will be exposed within the app itself.": "כדאי לשים לב שהגדרות המערכת עוסקות רק בהגדרות כלל מערכתיות והעדפות משתמש ל־elementary OS. אם יישום מציע הגדרות או העדפות הן תיחשפנה מתוך היישום עצמו.",
     "Keyboard Shortcuts": "קיצורי מקלדת",
     "Keyboard shortcuts in elementary OS are generally exposed contextually in tooltips when hovering or context menus when secondary-clicking.": "קיצורי מקלדת ב־elementary OS בדרך כלל חשופים מבחינת הקשר בחלוניות עצה בעת מעבר על גבי תוכן או תפריטי הקשר בלחיצה משנית.",
-    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key.": "כדי לצפות בחלונית צפה של קיצורי המקלדת של שולחן העבודה, יש ללחוץ על המקש <kbd title=\"מקש סופר, Windows או Command\">&#8984;</kbd>.",
-    "Desktop keyboard shorcuts can be customized from the": "את קיצורי המקלדת של שולחן העבודה ניתן לכוון דרך תפריט",
-    "menu in the shortcuts overlay or in": "בחלונית הצפה של קיצורי המקלדת או באמצעות",
-    "→": "←",
-    "Keyboard": "מקלדת",
-    "Shortcuts": "קיצורי דרך"
+    "To view an overlay of desktop keyboard shortcuts, press the <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key to open the <a href=\"#applications-menu\">Applications Menu</a>, start typing &quot;Shortcuts&quot;, and select the first entry in the <strong>Applications</strong> category.": "כדי לצפות בחלונית מסתירה של מקשי קיצור, יש ללחוץ על המקש <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> כדי לפתוח את <a href=\"#applications-menu\">תפריט היישומים</a>, להתחיל להקליד „קיצור”, וללחוץ על הרשומה הראשונה בקטגוריית ה<strong>יישומים</strong>.",
+    "Additionally, you bind the shortcuts overlay to open on <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> key in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Layout</strong> (&#8984; key behavior: Shortcut Overlay).": "בנוסף, האיגוד לפתיחת החלונית המסתירה בלחיצה על המקש <kbd title=\"Super, or the Windows or Command key\">&#8984;</kbd> היא דרך <strong><a href=\"#system-settings\">הגדרות המערכת</a></strong> ← <strong>מקלדת</strong> ← <strong>פריסה</strong> (&#8984; התנהגות מקשים: שכבת על של קיצורים).",
+    "Desktop keyboard shorcuts can be customized from the <strong>Keyboard Settings…</strong> option in the shortcuts overlay or in <strong><a href=\"#system-settings\">System Settings</a></strong> → <strong>Keyboard</strong> → <strong>Shortcuts</strong>.": "אפשר להתאים את מקשי הקיצור דרך האפשרות <strong>הגדרות מקלדת…</strong> בחלונית המסתירה של מקשי הקיצור או דרך <strong><a href=\"#system-settings\">הגדרות מערכת</a></strong> ← <strong>מקלדת</strong> ← <strong>מקשי קיצור</strong>."
 }

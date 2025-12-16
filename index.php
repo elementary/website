@@ -1,8 +1,7 @@
 <?php
-require_once __DIR__.'/_backend/classify.current.php';
+require_once __DIR__.'/_backend/geolocate.download.php'; // provides $download_link
 require_once __DIR__.'/_backend/preload.php';
 require_once __DIR__.'/_backend/os-payment.php';
-require_once __DIR__.'/_backend/email/os-payment.php';
 
 $page['title'] = $sitewide['description'] . ' &sdot; elementary OS';
 
@@ -22,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2022-11-15"
+  "stripe_version" => "2025-09-30.clover"
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
@@ -32,8 +31,8 @@ if (isset($_GET['checkout_session_id'])) {
     }
 
     try {
-        $session = \Stripe\Checkout\Session::retrieve($_GET['checkout_session_id']);
-    } catch (\Stripe\Exception $e) {
+        $session = $stripe->checkout->sessions->retrieve($_GET['checkout_session_id']);
+    } catch (Exception $e) {
         header("Location: " . $sitewide['root']);
         die();
     }
@@ -54,17 +53,6 @@ if (isset($_GET['checkout_session_id'])) {
         $paid = true;
         $already_paid = true;
         os_payment_setcookie($config['release_version'], $session->amount_total);
-
-        $intent = $stripe->paymentIntents->retrieve(
-            $session['payment_intent'],
-            ['expand' => ['latest_charge']]
-        );
-        try {
-            email_os_payment($intent);
-        } catch (Exception $e) {
-            header("Location: " . $sitewide['root']);
-            die();
-        }
     }
 
     $page['scripts'][] = 'scripts/payment-complete.js';
@@ -104,7 +92,7 @@ include $template['alert'];
 
       <div class="section__showcase">
         <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-        <img src="images/screenshots/desktop.jpg" alt="elementary OS 7 Horus desktop" />
+        <img src="images/screenshots/desktop.jpg" alt="elementary OS 8 desktop" />
       </div>
 
       <div class="section__detail grid">
@@ -157,9 +145,9 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 7</h2>
-          <p>Forward thinking and designed for real life with an improved sideloading and alt store experience, power profiles management, and using a next generation UI toolkit. OS 7 Helps you get the apps you need, Empowers you with new features and settings, and evolves our developer platform.</p>
-          <a href="https://blog.elementary.io/os-7-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+          <h2>What’s New in elementary OS 8</h2>
+          <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
+          <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
     </section>
@@ -387,7 +375,7 @@ include $template['alert'];
     <section>
       <div class="grid">
         <div class="two-thirds">
-          <h1>Everything We Do is Open&nbsp;Source</h1>
+          <h1>Everything We Do is Open Source</h1>
           <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
           <a class="read-more" href="/open-source">Explore Our Stack</a>
         </div>
@@ -457,43 +445,43 @@ include $template['alert'];
     <section class="grid" id="the-press">
       <div class="third">
         <a href="https://www.wired.com/2013/11/elementaryos/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/wired.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo; –@WIRED https://elementary.io" target="_blank" rel="noopener">&ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;</a>
+        &ldquo;elementary OS is different… a beautiful and powerful operating system.&rdquo;
       </div>
       <div class="third">
         <a href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/ars.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo; –@arstechnica https://elementary.io" target="_blank" rel="noopener">&ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;</a>
+        &ldquo;Gets out of the way and lets you focus on what you need to get done.&rdquo;
       </div>
       <div class="third">
         <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/29/linux-distro-spotlight-what-i-love-about-elementary-os/" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/forbes.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo; –@forbes https://elementary.io"  target="_blank" rel="noopener">&ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;</a>
+        &ldquo;I've found myself more productive these past two weeks [using elementary OS] than in the last two months combined.&rdquo;
       </div>
       <div class="third">
         <a href="https://web.archive.org/web/20150312112222/http://www.maclife.com/article/columns/future_os_x_may_be_more_elementary_ios_7" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/maclife.svg'; ?></a>
-        <a class="inline-tweet" href="http://twitter.com/home/?status=&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo; –@MacLife https://elementary.io" target="_blank" rel="noopener">&ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;</a>
+        &ldquo;A fast, low-maintenance platform that can be installed virtually anywhere.&rdquo;
       </div>
       <div class="third">
         <a href="https://lifehacker.com/how-to-move-on-after-windows-xp-without-giving-up-your-1556573928" target="_blank" rel="noopener"><?php include __DIR__.'/images/thirdparty-logos/lifehacker.svg'; ?></a>
-        <a class="inline-tweet" href="https://twitter.com/intent/tweet?original_referer=https://elementary.io&text=&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo; –@lifehacker https://elementary.io" target="_blank" rel="noopener">&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;</a>
+        &ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;
       </div>
     </section>
 
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
-    <div id="download-modal" class="dialog modal">
-      <img alt="Download elementary OS icon" src="images/icons/apps/48/system-os-installer.svg">
+    <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
+      <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
       <div class="content-area">
-        <p class="primary">Choose a Download</p>
+        <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
         <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
       </div>
       <div class="action-area">
-        <a class="button clickable close-modal">Close</a>
+        <button class="js-close-button button clickable close-modal">Close</button>
         <div class="linked">
           <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
           <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
         </div>
       </div>
-    </div>
-    <a style="display:none;" class="open-modal" href="#download-modal"></a>
+    </dialog>
+
     <!--[if lt IE 10]><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eligrey/classList.js@1.1.20170427/classList.min.js"></script><![endif]-->
 <?php
   include $template['footer'];

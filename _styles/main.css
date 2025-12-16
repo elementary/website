@@ -19,7 +19,6 @@ body {
   font-weight: 400;
   margin: 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 *,
@@ -53,7 +52,6 @@ a {
 }
 
 a:focus {
-  outline: none;
   text-decoration: underline;
 }
 
@@ -174,35 +172,6 @@ img.inline + div.inline {
   margin-left: 12px;
 }
 
-.inline-tweet {
-  color: inherit;
-}
-
-.inline-tweet:focus,
-.inline-tweet:hover {
-  color: #08c;
-  text-decoration: none;
-}
-
-.inline-tweet::after {
-  color: inherit;
-  content: "\f099";
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome\ 5 Brands";
-  font-style: normal;
-  font-weight: inherit;
-  margin-top: 0.2em;
-  opacity: 0;
-  padding-left: 6px;
-  position: absolute;
-  transition: all 0.15s ease-in-out;
-}
-
-.inline-tweet:focus::after,
-.inline-tweet:hover::after {
-  opacity: 1;
-}
-
 .read-more {
   white-space: nowrap;
 }
@@ -240,11 +209,16 @@ img.inline + div.inline {
 *********/
 
 nav {
+  background-color: #fff;
   line-height: 48px;
   min-height: 48px;
   min-width: 100%;
   overflow-x: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   white-space: nowrap;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
@@ -344,20 +318,8 @@ nav .menu-button:hover svg {
   opacity: 0.7;
 }
 
-nav a[title="Facebook"]:focus,
-nav a[title="Facebook"]:hover {
-  color: #19227e;
-  fill: #19227e;
-}
-
-nav a[title="Google+"]:focus,
-nav a[title="Google+"]:hover {
-  color: #d50000;
-  fill: #d50000;
-}
-
-nav a[title="Youtube"]:focus,
-nav a[title="Youtube"]:hover {
+nav a[title="YouTube"]:focus,
+nav a[title="YouTube"]:hover {
   color: #d50000;
   fill: #d50000;
 }
@@ -368,28 +330,16 @@ nav a[title="Mastodon"]:hover {
   fill: #0d93ff;
 }
 
-nav a[title="Medium"]:focus,
-nav a[title="Medium"]:hover {
-  color: #00ab6b;
-  fill: #00ab6b;
-}
-
 nav a[title="Reddit"]:focus,
 nav a[title="Reddit"]:hover {
   color: #ff4500;
   fill: #ff4500;
 }
 
-nav a[title="StackExchange"]:focus,
-nav a[title="StackExchange"]:hover {
-  color: #0d93ff;
-  fill: #0d93ff;
-}
-
-nav a[title="Twitter"]:focus,
-nav a[title="Twitter"]:hover {
-  color: #1da1f2;
-  fill: #1da1f2;
+nav a[title="Discord"]:focus,
+nav a[title="Discord"]:hover {
+  color: #5865f2;
+  fill: #5865f2;
 }
 
 nav .logomark {
@@ -457,6 +407,7 @@ body {
 
 #content-container {
   flex-grow: 1;
+  overflow-x: hidden;
 }
 
 footer {
@@ -532,10 +483,6 @@ footer i.fa {
 footer a:focus i.fa {
   color: #08c;
   text-shadow: 0 1px 6px #08c;
-}
-
-footer ul li a:focus {
-  outline: none;
 }
 
 /*********
@@ -678,94 +625,6 @@ a.third:hover {
   display: block;
 }
 
-/********
-* Toast *
-********/
-
-.overlay {
-  display: flex;
-  justify-content: center;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-
-.overlay__content {
-  pointer-events: auto;
-  z-index: 9999;
-}
-
-.toast {
-  align-items: center;
-  animation: toast-gradient 10s linear infinite;
-  background-color: #0d52bf;
-  background-image: linear-gradient(to right, #0d52bf, #3689e6, #0d52bf);
-  background-repeat: no-repeat;
-  background-size: 800px 100%;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  display: inline-flex;
-  flex-wrap: wrap;
-  font-size: 14px;
-  justify-content: center;
-  padding: 3px;
-  text-align: center;
-}
-
-@keyframes toast-gradient {
-  from {
-    background-position: calc(0% - 800px);
-  }
-
-  to {
-    background-position: calc(100% + 800px);
-  }
-}
-
-.toast__text {
-  margin: 6px;
-}
-
-.toast__close {
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  display: inline-flex;
-  height: 24px;
-  justify-content: center;
-  margin: 6px;
-  text-align: center;
-  width: 24px;
-}
-
-.toast__button {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.75);
-  margin: 6px;
-  padding: 3px 6px;
-}
-
-@media (max-width: 400px) {
-  .overlay {
-    top: 0;
-  }
-
-  .toast {
-    border-radius: 0;
-    width: 100%;
-  }
-
-  .toast__button {
-    flex-basis: calc(100% - 12px);
-  }
-}
-
 /*********
 * Alerts *
 *********/
@@ -773,7 +632,7 @@ a.third:hover {
 #js-alert {
   border-bottom: 1px solid;
   border-top: 1px solid;
-  font-size: 0.8;
+  font-size: 0.8em;
   margin-bottom: 1em;
   order: -1;
   padding: 0 1em;
@@ -871,7 +730,6 @@ select,
   font-family: inherit;
   font-size: 16px;
   margin: 24px;
-  outline: none;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -1021,7 +879,6 @@ input:not([type="submit"]):not(.button) {
     inset 0 0 0 1px rgba(0, 0, 0, 0.02),
     0 1px 0 1px rgba(255, 255, 255, 0.3);
   color: #323232;
-  outline: 0;
   text-shadow: 0 1px rgba(255, 255, 255, 0.4);
   transition: all 200ms ease-out;
 }
@@ -1052,7 +909,6 @@ input:focus:not([type="submit"]):not(.button) {
   box-shadow:
     inset 0 0 0 1px rgba(61, 155, 218, 0.23),
     0 1px 0 1px rgba(255, 255, 255, 0.3);
-  outline: none;
   transition: all 200ms ease-in;
 }
 
@@ -1171,47 +1027,19 @@ input:focus::placeholder {
 * Modal Dialogs *
 ****************/
 
-.modal {
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  box-shadow:
-    inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
-    inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
-    inset 0 1px 0 0 #fff,
-    0 0 0 1px rgba(0, 0, 0, 0.2),
-    0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  max-height: 100vh;
-  max-width: 100vw;
-  padding: 12px;
-  z-index: 11000;
-  display: none;
-  text-align: center;
-}
-
-.modal p {
-  text-align: center;
-  margin: 0 6px;
-  max-width: 388px;
-}
-
-.modal .row.actions {
-  margin-top: 24px;
-  padding: 0;
-}
-
-.modal .row.actions .column {
-  margin: 6px !important;
-}
-
-@media only screen and (max-width: 425px) {
-  .dialog {
-    width: calc(100vw - 32px);
-  }
-}
+/*
+The use of the [open] selector is to distinguish between
+browsers that support the <dialog> element and therefore <dialog open>
+So that for browsers that dont we can have a sensible inline style that can be anchored to.
+*/
 
 .dialog {
+  padding: 24px;
+  text-align: center;
   background-color: #f5f5f5;
+}
+.dialog[open] {
+  border: none;
   border-radius: 3px;
   box-shadow:
     inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
@@ -1221,41 +1049,61 @@ input:focus::placeholder {
     0 8px 20px 1px rgba(0, 0, 0, 0.14),
     0 3px 28px 2px rgba(0, 0, 0, 0.12),
     0 5px 10px -3px rgba(0, 0, 0, 0.4);
-  margin: 0 auto;
   padding: 12px;
   padding-top: 24px;
+  text-align: initial;
 }
 
-.dialog img {
+@media only screen and (max-width: 425px) {
+  .dialog[open] {
+    width: calc(100vw - 32px);
+  }
+}
+
+.dialog[open]::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dialog[open] .dialog-title {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: left;
+  line-height: 24px;
+  margin: 0;
+}
+
+.dialog[open] img {
   display: inline-block;
   margin-right: 12px;
   user-select: none;
   vertical-align: top;
 }
 
-.dialog .content-area {
+.dialog[open] .content-area {
   display: inline-block;
   width: calc(100% - 48px - 18px); /* Subtract icon width and right margin */
 }
 
 .dialog p {
-  line-height: 24px;
-  margin: 6px 0 0;
-  max-width: 380px;
+  margin: 0 auto;
   text-align: left;
+  line-height: 24px;
+  max-width: 380px;
 }
 
-.dialog p.primary {
-  font-weight: 700;
-  margin-top: 0;
+.dialog[open] p {
+  margin: 6px 0 0;
 }
 
 .dialog .action-area {
+  margin-top: 12px;
+}
+
+.dialog[open] .action-area {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 12px;
 }
 
 .dialog .button {
@@ -1274,9 +1122,12 @@ input:focus::placeholder {
   margin-left: 6px;
 }
 
-i.fa.fa-close.close-modal {
-  cursor: pointer;
-  float: left;
+/* If the dialog is inline hide the close button */
+.dialog .close-modal {
+  display: none;
+}
+.dialog[open] .close-modal {
+  display: block;
 }
 
 /*********

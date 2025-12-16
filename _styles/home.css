@@ -575,7 +575,7 @@ input:focus + .focus-reveal {
   bottom: auto;
   height: 10%;
   left: auto;
-  perspective: 1000;
+  perspective: 1000px;
   right: 1%;
   text-shadow: none;
   top: 5%;
@@ -711,7 +711,7 @@ input:focus + .focus-reveal {
 **********/
 
 #privacy {
-  background-color: #273445;
+  background-image: radial-gradient(ellipse at center, #273445 4%, #161c24);
   color: white;
   padding: 128px 1em;
 }

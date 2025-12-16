@@ -41,10 +41,10 @@ export default class Showcase {
      * NOTE: must be ran before any other functions so jQuery is loaded!
      */
     start () {
-        for (var i = 0; i < this.slides.length; i++) {
-            var n = this.slides[i]
-            var $iChoice = $("[href$='" + n + "']", this.container)
-            var $iContainer = $('#' + n, this.container)
+        for (let i = 0; i < this.slides.length; i++) {
+            const n = this.slides[i]
+            const $iChoice = $("[href$='" + n + "']", this.container)
+            const $iContainer = $('#' + n, this.container)
 
             $iContainer.prepend('<div class="showcase-back"></div>')
 
@@ -63,8 +63,8 @@ export default class Showcase {
         $(this.container).scrollLeft(0)
 
         // Listen for some cool mobile touch gestures
-        var touchStartX = null
-        var touchStartY = null
+        let touchStartX = null
+        let touchStartY = null
 
         $(document).on('touchstart', this.container, (e) => {
             touchStartX = e.touches[0].pageX
@@ -72,11 +72,11 @@ export default class Showcase {
         })
 
         $(document).on('touchend', (e) => {
-            var touchEndX = e.changedTouches[e.changedTouches.length - 1].pageX
-            var touchEndY = e.changedTouches[e.changedTouches.length - 1].pageY
+            const touchEndX = e.changedTouches[e.changedTouches.length - 1].pageX
+            const touchEndY = e.changedTouches[e.changedTouches.length - 1].pageY
 
-            var movementX = touchEndX - touchStartX
-            var movementY = touchEndY - touchStartY
+            const movementX = touchEndX - touchStartX
+            const movementY = touchEndY - touchStartY
 
             if (Math.abs(movementY) < (movementX / 3) && movementX > 100) {
                 this.slideTo('index')
@@ -105,9 +105,9 @@ export default class Showcase {
         }
 
         // iterates through slides based on this.slides
-        for (var i = 0; i < this.slides.length; i++) {
-            var n = this.slides[i]
-            var $n = $('#' + n, this.container) // current iterated slide
+        for (let i = 0; i < this.slides.length; i++) {
+            const n = this.slides[i]
+            const $n = $('#' + n, this.container) // current iterated slide
 
             if (n === rSlide) { // if correct slide
                 $n.addClass('active')
@@ -135,14 +135,14 @@ export default class Showcase {
      * Reset height of container
      */
     resize () {
-        var height = 0
+        let height = 0
 
         if (this.fixed) { // if the container should be a fixed height
             height = $(this.index, this.container).outerHeight(true)
 
             // iterates through slides
             $.each(this.slides, function (i, n) {
-                var $iSlide = $('#' + n, this.container) // current iterated slide
+                const $iSlide = $('#' + n, this.container) // current iterated slide
 
                 if ($iSlide.outerHeight(true) > height) { // new tallest slide
                     height = $iSlide.outerHeight(true)

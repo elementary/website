@@ -55,6 +55,16 @@ include $template['alert'];
     <span>Mail</span>
   </a>
 
+  <a class="app" href="https://github.com/elementary/maps/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/maps.svg" alt="Maps"/>
+    <span>Maps</span>
+  </a>
+
+  <a class="app" href="https://github.com/elementary/monitor/discussions/categories/q-a" target="_blank" rel="noopener">
+    <img width="64" height="64" src="images/thirdparty-icons/apps/64/monitor.svg" alt="Monitor"/>
+    <span>Monitor</span>
+  </a>
+
   <a class="app" href="https://github.com/elementary/music/discussions/categories/q-a" target="_blank" rel="noopener">
     <img width="64" height="64" src="images/thirdparty-icons/apps/64/music.svg" alt="Music"/>
     <span>Music</span>
@@ -136,7 +146,7 @@ include $template['alert'];
 <section class="grid">
   <div class="two-thirds">
     <h2>Payment &amp; Download Support</h2>
-    <p>If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please reply to your email receipt and a team member will contact you as soon as possible.</p>
+    <p>If you need help with your purchase of elementary OS—for example, downloading your copy or requesting a refund—please contact us using the details in your email receipt and a team member will contact you as soon as possible.</p>
   </div>
 </div>
 

@@ -1,14 +1,12 @@
 # Translators
 
-You can translate the website online on the elementary Weblate instance: https://l10n.elementary.io/projects/website/. Please don't update directly files in `_lang/` on Github as they'll be overridden when pulling new translations.
+You can translate the website online on the elementary Weblate instance: https://l10n.elementaryos.org/projects/website/. Please don't update directly files in `_lang/` on Github as they'll be overridden when pulling new translations.
 
 You can propose new languages if they're not listed. Make sure to avoid requesting languages that already exist, for instance adding _Russian (Russia)_ when _Russian_ is available.
 
-Please read the [branding guidelines](http://blog.elementary.io/post/107640994166/the-importance-of-our-brand) before translating and pay attention to spelling mistakes.
+## Reviewing
 
-## Reviewing		
-
-It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask him to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
+It's not a good practice to review strings translated by ourselves. Instead, find someone else speaking your language and ask them to join the reviewers team (you can send a message to [the i18n team](mailto:i18n@elementary.io?subject=Review%20Team%20Request) to ask this).
 
 ## Updating
 
@@ -19,6 +17,26 @@ Languages are updated automatically when code is changed. This may take time to 
 ## Extracting translations from HTML files
 
 Translations strings are extracted from HTML files. A little command line PHP file is included to make this easier. Just run `php _backend/Console/Translation.php` to update the translation files. You can use `--help` for more options.
+
+### Command Line Options
+
+The translation tool supports the following command line options:
+
+* `--language`, `-l` - Extract translations for a specific language only
+   * Example: `php _backend/Console/Translation.php --language fr`
+
+* `--page`, `-p` - Extract translations for a specific page only 
+   * Example: `php _backend/Console/Translation.php --page code-of-conduct`
+
+* `--verbose`, `-v` - Show more detailed output during the extraction process
+   * Example: `php _backend/Console/Translation.php --verbose`
+
+* `--help` - Display help information about the command
+
+You can combine multiple options:
+```sh
+php _backend/Console/Translation.php --language ar --page code-of-conduct --verbose
+```
 
 ## Changing a translation key
 

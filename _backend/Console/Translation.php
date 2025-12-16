@@ -120,11 +120,24 @@ foreach ($pages as $page) {
             $currentTranslations = array();
         }
 
-        foreach ($strings as $string) {
-            $newTranslations[$string] = "";
+        if (is_object($strings)) { // Ensure $strings is an object
+            foreach ($strings as $processedSourceKey => $originalSourceValue) {
+                // $processedSourceKey is the key from Extract.php's output (already processed)
+                // $originalSourceValue is the original English text for that key
 
-            if (isset($currentTranslations[$string]) !== false) {
-                $newTranslations[$string] = $currentTranslations[$string];
+                if (isset($currentTranslations[$processedSourceKey])) {
+                    // Preserve existing translation
+                    $newTranslations[$processedSourceKey] = $currentTranslations[$processedSourceKey];
+                } else {
+                    // New string for this language file
+                    if ($language === 'en') {
+                        // For English, the "translation" is the original source value
+                        $newTranslations[$processedSourceKey] = $originalSourceValue;
+                    } else {
+                        // For other languages, initialize as an empty string (needs translation)
+                        $newTranslations[$processedSourceKey] = "";
+                    }
+                }
             }
         }
 
@@ -134,8 +147,17 @@ foreach ($pages as $page) {
         }
 
         if (count($newTranslations) > 0) {
+            // Preprocess strings to remove newlines in the source strings
+            $processedTranslations = [];
+            foreach ($newTranslations as $key => $value) {
+                // Remove newlines from the key completely and reduce multiple spaces to a single space
+                $processedKey = str_replace(["\r\n", "\n"], " ", $key);
+                $processedKey = preg_replace('/\s+/', ' ', $processedKey);
+                $processedTranslations[$processedKey] = $value;
+            }
+            
             $newData = json_encode(
-                $newTranslations,
+                $processedTranslations,
                 JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
             );
             file_put_contents($languagePath, $newData . PHP_EOL);

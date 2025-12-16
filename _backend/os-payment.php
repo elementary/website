@@ -4,8 +4,6 @@ require_once __DIR__ . '/bootstrap.php';
 
 require_once __DIR__ . '/log-echo.php';
 
-\Stripe\Stripe::setApiKey($config['stripe_sk']);
-
 /**
  * os_payment_encode
  * Encodes text to be used in cookie storage

@@ -97,7 +97,7 @@ $l10n->beginHtmlTranslation();
         <script src="<?php echo $scriptsManifest["scripts/main.js"]?>" async></script>
 
             <?php if (!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'elementary.io') { ?>
-        <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
+        <script async defer data-domain="elementary.io" src="https://plausible.io/js/script.js"></script>
             <?php } ?>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
@@ -137,10 +137,9 @@ $l10n->beginHtmlTranslation();
                     <li><a href="https://blog.elementary.io" target="_self">Blog</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off title="Youtube"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off title="Mastodon"><i class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off title="Reddit"><i class="fab fa-reddit"></i></a></li>
-                    <li><a href="https://community-slack.elementary.io/" target="_blank" rel="noopener" data-l10n-off title="Slack"><i class="fab fa-slack"></i></a></li>
+                    <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off aria-label="YouTube" title="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off aria-label="Mastodon" title="Mastodon"><i aria-hidden="true" class="fab fa-mastodon"></i></a></li>
+                    <li><a href="https://discord.gg/pCenUBu" target="_blank" rel="noopener" data-l10n-off aria-label="Discord" title="Discord"><i aria-hidden="true" class="fab fa-discord"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -150,8 +149,6 @@ $l10n->beginHtmlTranslation();
                 <p><strong>JavaScript is required</strong> for parts of this site, like downloading elementary OS and some interactive components.</p>
             </div>
         </noscript>
-
-        <?php require __DIR__ . '/event.php'; ?>
 
         <div id="content-container">
 

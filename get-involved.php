@@ -40,16 +40,6 @@ include $template['alert'];
         </div>
     </div>
 
-<?php if (event_active('indiegogo appcenter 2/7')) { ?>
-     <div class="grid">
-         <div class="two-thirds">
-             <h2>Indiegogo</h2>
-             <p class="text-center">We’re currently crowdfunding AppCenter for everyone on Indiegogo. By backing us there, you'll be helping us pay for our remote team to get together in person with developers from our community for a week long sprint in Denver, Colorado.</p>
-             <a class="button flat" href="https://igg.me/at/appcenter-for-everyone" target="_blank" rel="noopener">Back AppCenter for everyone</a>
-         </div>
-     </div>
-<?php } ?>
-
     <div class="grid">
         <div class="half">
             <i class="fab fa-github" title="GitHub Sponsors"></i>
@@ -93,7 +83,7 @@ include $template['alert'];
 
             <div class="actions">
                 <a class="button flat" href="https://matrix.to/#/%23elementary-l10n%3Amatrix.org" target="_blank" rel="noopener">Join Chat</a>
-                <a class="button flat suggested-action" href="https://l10n.elementary.io/projects/" target="_blank" rel="noopener">Suggest Translations</a>
+                <a class="button flat suggested-action" href="https://l10n.elementaryos.org/projects/" target="_blank" rel="noopener">Suggest Translations</a>
             </div>
         </div>
         <div class="half">
@@ -169,7 +159,7 @@ include $template['alert'];
     <div class="grid">
         <div class="two-thirds">
             <h2>Design</h2>
-            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="/docs/code/reference#proposing-design-changes" target="_blank" rel="noopener">Learn More</a></p>
+            <p class="text-center">Our design team turns ideas into clear issue reports and deliverable assets. Before diving in, it's recommended to read about our design workflow. <a class="read-more" href="https://docs.elementary.io/hig/design-philosophy" target="_blank" rel="noopener">Learn More</a></p>
         </div>
     </div>
     <div class="design-links">

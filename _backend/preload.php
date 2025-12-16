@@ -3,12 +3,6 @@
 require __DIR__ . '/bootstrap.php';
 require_once __DIR__.'/log-echo.php';
 
-// Honor the IE do-not-track-header,
-// even though it's set automatically.
-$respectIE = true;
-// Set the DNT variables.
-require_once __DIR__.'/here-miss.php';
-
 date_default_timezone_set('UTC');
 
 $sitewide['title'] = 'elementary';

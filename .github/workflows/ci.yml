@@ -19,16 +19,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.22.0
+        uses: shivammathur/setup-php@2.36.0
         with:
           php-version: '8.1'
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 18
 
@@ -44,16 +44,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.22.0
+        uses: shivammathur/setup-php@2.36.0
         with:
           php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 18
 
@@ -69,16 +69,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.22.0
+        uses: shivammathur/setup-php@2.36.0
         with:
           php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 18
 
@@ -94,16 +94,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.22.0
+        uses: shivammathur/setup-php@2.36.0
         with:
           php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 18
 
@@ -118,16 +118,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.22.0
+        uses: shivammathur/setup-php@2.36.0
         with:
           php-version: 8.1
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 18
 
