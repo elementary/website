@@ -155,7 +155,7 @@ include $template['alert'];
       <div class="app-display app-display--overflow">
         <img class="app-display__image" src="images/screenshots/appcenter.png" width="1165" height="912" alt="elementary OS AppCenter home page"/>
         <div class="app-display__description">
-          <img src="images/icons/apps/128/io.elementary.appcenter.svg" alt="elementary AppCenter icon"/>
+          <img src="images/thirdparty-icons/apps/128/io.elementary.appcenter.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
           <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
           <div class="buttons">
@@ -469,7 +469,7 @@ include $template['alert'];
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
       <a class="js-close-button clickable close-modal"><img src="images/pantheon/actions/window-close.svg"></a>
-      <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
+      <img src="images/thirdparty-icons/apps/48/installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Download elementary OS</h2>
         <p>Choose the variant of elementary OS for your computer's processor architecture.</p>
