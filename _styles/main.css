@@ -1036,7 +1036,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 .dialog[open] {
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   box-shadow:
     inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
@@ -1057,14 +1057,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
 
 .dialog[open]::backdrop {
   background: rgba(0, 0, 0, 0.7);
-}
-
-.dialog[open] .dialog-title {
-  font-weight: 700;
-  font-size: 1em;
-  text-align: left;
-  line-height: 24px;
-  margin: 0;
+  backdrop-filter: blur(4px);
 }
 
 .dialog[open] img {
@@ -1076,22 +1069,34 @@ So that for browsers that dont we can have a sensible inline style that can be a
 
 .dialog[open] .content-area {
   display: inline-block;
-  width: calc(100% - 48px - 18px); /* Subtract icon width and right margin */
+}
+
+.dialog[open] .dialog-title {
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: left;
+  line-height: 1em;
+  margin: 0;
 }
 
 .dialog p {
   margin: 0 auto;
   text-align: left;
-  line-height: 24px;
+  line-height: 1.25em;
   max-width: 420px;
 }
 
+.dialog[open] .dialog-title + p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
 .dialog[open] p {
-  margin: 6px 0 0;
+  margin-bottom: 2em;
 }
 
 .dialog .dialog-option {
-  margin: 24px 0 12px;
+  margin-top: 1em;
 }
 
 .dialog .dialog-option-title {
@@ -1118,13 +1123,12 @@ So that for browsers that dont we can have a sensible inline style that can be a
   font-size: 14px;
   flex: 0 35%; /* FIXME: These values are bullshit */
   margin: 0;
-  padding: 9px 12px;
+  padding: 9px;
   user-select: none;
   white-space: nowrap;
 }
 
-.dialog .dialog-option > .button + .button,
-.dialog .dialog-option > .button + .linked {
+.dialog .dialog-option > .button + .button {
   margin: 0;
   margin-left: 6px;
 }
@@ -1143,6 +1147,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 .dialog[open] .close-modal {
   display: block;
+  line-height: 2em;
 }
 
 /*********
