@@ -1121,7 +1121,6 @@ So that for browsers that dont we can have a sensible inline style that can be a
 .dialog .button {
   display: inline-block;
   font-size: 14px;
-  flex: 0 35%; /* FIXME: These values are bullshit */
   margin: 0;
   padding: 9px;
   user-select: none;
@@ -1133,12 +1132,13 @@ So that for browsers that dont we can have a sensible inline style that can be a
   margin-left: 6px;
 }
 
-.dialog .dialog-option > .download-link.http {
+.dialog .dialog-option > .download-link.magnet {
+  flex: 0 auto;
   margin-left: auto;
 }
 
-.dialog .dialog-option > .download-link.magnet {
-  flex: 0 auto;
+.dialog .dialog-option > .download-link.http {
+  flex: 0 35%; /* FIXME: These values are bullshit */
 }
 
 /* If the dialog is inline hide the close button */
