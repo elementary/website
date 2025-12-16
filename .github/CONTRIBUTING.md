@@ -33,7 +33,7 @@ For a simple local development environment running on PHP, you will need:
 
 #### GNU/Linux Based Operating Systems
 
-First, install Node.js (18.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions).
+First, install Node.js (18.x recommended) from [Nodesource](https://github.com/nodesource/distributions/blob/main/README.md#debian-and-ubuntu-based-distributions).
 
 _If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
@@ -187,13 +187,13 @@ git checkout -b feature_branch_name
 git push -u origin feature_branch_name
 ```
 
-### Updating from Master
+### Updating from Main
 ```bash
-git pull origin master
+git pull origin main
 ```
 
-### Merge from master
+### Merge from main
 ```bash
 git checkout feature_branch_name
-git merge master
+git merge main
 ```
