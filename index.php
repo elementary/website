@@ -145,8 +145,8 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 8</h2>
-          <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
+          <h2>What’s New in elementary OS 8.1</h2>
+          <p>Everything you love, made even better. OS 8.1 improves the Secure Session and Dock, enhances accessibility, improves support for your devices, and addresses your feedback with over 1,100 issue reports fixed.</p>
           <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
@@ -155,7 +155,7 @@ include $template['alert'];
       <div class="app-display app-display--overflow">
         <img class="app-display__image" src="images/screenshots/appcenter.png" width="1165" height="912" alt="elementary OS AppCenter home page"/>
         <div class="app-display__description">
-          <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
+          <img src="images/icons/apps/128/io.elementary.appcenter.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
           <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
           <div class="buttons">
