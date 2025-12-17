@@ -125,7 +125,6 @@ gulp.task('svg', () => {
         '_images/icons/categories/32/preferences-system-time.svg',
         '_images/icons/categories/48/preferences-system-network.svg',
         '_images/icons/categories/64/preferences-desktop-wallpaper.svg',
-        '_images/icons/categories/64/preferences-system-parental-controls.svg',
         '_images/icons/devices/64/scanner.svg',
         '_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg',
         '_images/icons/devices/symbolic/computer-symbolic.svg',

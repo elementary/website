@@ -360,7 +360,7 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/screen-time-limits.png" width="892" height="659" alt="elementary OS Screen Time &amp; Limits"/>
         <div class="app-display__description">
           <h2>
-            <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding the hand of a child"/>
+            <img src="images/thirdparty-icons/apps/64/io.elementary.settings.screentime-limits.svg" alt="Icon of an adult holding the hand of a child"/>
             Screen Time &amp; Limits
           </h2>
           <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
