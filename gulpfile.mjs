@@ -88,7 +88,6 @@ gulp.task('svg', () => {
         '_images/icons/actions/symbolic/appointment-symbolic.svg',
         '_images/icons/actions/symbolic/edit-clear-all-symbolic.svg',
         '_images/icons/actions/symbolic/window-maximize-symbolic.svg',
-        '_images/icons/apps/48/system-os-installer.svg',
         '_images/thirdparty-icons/apps/64/io.elementary.code.svg',
         '_images/icons/categories/64/preferences-desktop-wallpaper.svg',
         '_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg',
