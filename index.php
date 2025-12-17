@@ -195,13 +195,13 @@ include $template['alert'];
             <div class="workspace">
               <img class="window" src="images/screenshots/code.png" width="1174" height="703" alt="Code screenshot" />
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
             </div>
           </figure>

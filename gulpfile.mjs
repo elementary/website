@@ -112,7 +112,6 @@ gulp.task('svg', () => {
         '_images/icons/apps/64/accessories-camera.svg',
         '_images/icons/apps/64/accessories-screenshot.svg',
         '_images/thirdparty-icons/apps/64/io.elementary.code.svg',
-        '_images/icons/apps/64/internet-mail.svg',
         '_images/icons/apps/64/internet-web-browser.svg',
         '_images/icons/apps/64/multimedia-audio-player.svg',
         '_images/icons/apps/64/multimedia-photo-manager.svg',
