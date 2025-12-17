@@ -292,6 +292,10 @@ nav li {
   display: inline-block;
 }
 
+nav .right i {
+  font-size: 1.2rem;
+}
+
 nav a,
 nav a:visited {
   color: inherit;
