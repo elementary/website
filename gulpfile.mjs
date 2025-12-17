@@ -92,7 +92,6 @@ gulp.task('svg', () => {
         '_images/icons/actions/symbolic/edit-find-symbolic.svg',
         '_images/icons/actions/symbolic/find-location-symbolic.svg',
         '_images/icons/actions/symbolic/view-filter-symbolic.svg',
-        '_images/icons/actions/symbolic/view-grid-symbolic.svg',
         '_images/icons/actions/symbolic/window-maximize-symbolic.svg',
         '_images/icons/actions/symbolic/window-pop-out-symbolic.svg',
         '_images/icons/apps/symbolic/web-browser-symbolic.svg',

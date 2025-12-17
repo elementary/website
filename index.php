@@ -365,9 +365,9 @@ include $template['alert'];
           </h2>
           <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
           <p>Set per-user time limits for weekdays, weekends, or both.</p>
-          <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
+          <?php include('images/thirdparty-icons/apps/symbolic/internet-web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
           <p>Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.</p>
-          <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
+          <?php include('images/thirdparty-icons/apps/symbolic/flatpak.svg'); ?><h4>Manage Apps</h4>
           <p>Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.</p>
         </div>
       </div>
