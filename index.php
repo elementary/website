@@ -155,7 +155,7 @@ include $template['alert'];
       <div class="app-display app-display--overflow">
         <img class="app-display__image" src="images/screenshots/appcenter.png" width="1165" height="912" alt="elementary OS AppCenter home page"/>
         <div class="app-display__description">
-          <img src="images/icons/apps/128/system-software-install.svg" alt="elementary AppCenter icon"/>
+          <img src="images/thirdparty-icons/apps/128/io.elementary.appcenter.svg" alt="elementary AppCenter icon"/>
           <h2>Get it on <strong>AppCenter</strong></h2>
           <p>Get free and paid apps on AppCenter, the open, pay-what-you-can app store for indie developers. Each app has been reviewed and curated by elementary to ensure a native, privacy-respecting, and secure experience.</p>
           <div class="buttons">
@@ -195,13 +195,13 @@ include $template['alert'];
             <div class="workspace">
               <img class="window" src="images/screenshots/code.png" width="1174" height="703" alt="Code screenshot" />
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/icons/apps/64/internet-mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
               </div>
             </div>
           </figure>
@@ -360,14 +360,14 @@ include $template['alert'];
         <img class="app-display__image" src="images/screenshots/screen-time-limits.png" width="892" height="659" alt="elementary OS Screen Time &amp; Limits"/>
         <div class="app-display__description">
           <h2>
-            <img src="images/icons/categories/64/preferences-system-parental-controls.svg" alt="Icon of an adult holding the hand of a child"/>
+            <img src="images/thirdparty-icons/apps/64/io.elementary.settings.screentime-limits.svg" alt="Icon of an adult holding the hand of a child"/>
             Screen Time &amp; Limits
           </h2>
           <?php include('images/icons/actions/symbolic/appointment-symbolic.svg'); ?><h4>Screen Time</h4>
           <p>Set per-user time limits for weekdays, weekends, or both.</p>
-          <?php include('images/icons/apps/symbolic/web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
+          <?php include('images/thirdparty-icons/apps/symbolic/internet-web-browser-symbolic.svg'); ?><h4>Internet Use</h4>
           <p>Manage allowed websites. Rules affect all apps for the chosen user, even if they use a different web browser.</p>
-          <?php include('images/icons/actions/symbolic/view-grid-symbolic.svg'); ?><h4>Manage Apps</h4>
+          <?php include('images/thirdparty-icons/apps/symbolic/flatpak.svg'); ?><h4>Manage Apps</h4>
           <p>Choose just which apps are safe for you or your child to access. Plus, optionally allow access with your password.</p>
         </div>
       </div>
@@ -468,7 +468,7 @@ include $template['alert'];
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
-      <img src="images/icons/apps/48/system-os-installer.svg" alt=""/>
+      <img src="images/thirdparty-icons/apps/48/io.elementary.installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
         <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
