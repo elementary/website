@@ -32,8 +32,4 @@ export function openDownloadOverlay () {
         return
     }
     $downloadModal.showModal()
-    const $closeButton = $downloadModal.querySelector('.js-close-button')
-    $closeButton.addEventListener('click', () => {
-        $downloadModal.close()
-    }, { once: true })
 }

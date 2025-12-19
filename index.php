@@ -145,8 +145,8 @@ include $template['alert'];
     <section id="whats-new" class="grey">
       <div class="grid">
         <div class="two-thirds">
-          <h2>What’s New in elementary OS 8</h2>
-          <p>Carefree because you're cared for. OS 8 brings a Secure Session that ensures apps respect your privacy and require your consent, a brand new Dock with productive multitasking and window management features, and empowers our diverse community through Inclusive Design.</p>
+          <h2>What’s New in elementary OS 8.1</h2>
+          <p>Everything you love, made even better. OS 8.1 improves the Secure Session and Dock, enhances accessibility, improves support for your devices, and addresses your feedback with over 1,100 issue reports fixed.</p>
           <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
@@ -468,16 +468,29 @@ include $template['alert'];
     <span id="translate-download" style="display:none;" hidden>Download elementary OS</span>
     <span id="translate-purchase" style="display:none;" hidden>Purchase elementary OS</span>
     <dialog id="download-modal" class="dialog" aria-labelledby="download-modal-title">
+      <form method="dialog">
+        <button class="close-modal"><img src="images/pantheon/actions/window-close.svg" alt="Close" ></button>
+      </form>
       <img src="images/thirdparty-icons/apps/48/io.elementary.installer.svg" alt=""/>
       <div class="content-area">
         <h2 id="download-modal-title" class="dialog-title">Choose a Download</h2>
-        <p>Download from a localized server or by magnet link. For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
-      </div>
-      <div class="action-area">
-        <button class="js-close-button button clickable close-modal">Close</button>
-        <div class="linked">
-          <a class="button suggested-action download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
-          <a class="button suggested-action download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
+        <p>Download the install media for your computer's processor from a localized server or by magnet link</p>
+        <p>For help and more info, see the <a class="read-more" href="docs/installation" target="_blank" rel="noopener">installation guide</a></p>
+        <div class="dialog-option">
+          <div class="dialog-option-description">
+            <h3 class="dialog-option-title">ARM® 64-bit</h3>
+            <p class="dialog-option-subtitle">Apple Silicon, Raspberry Pi, etc</p>
+          </div>
+          <a class="button download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_arm_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
+          <a class="button download-link http" href="<?php echo $download_link.$config['release_arm_filename']; ?>">Download</a>
+        </div>
+        <div class="dialog-option">
+          <div class="dialog-option-description">
+            <h3 class="dialog-option-title">Intel or AMD 64-bit</h3>
+            <p class="dialog-option-subtitle">Most PCs and older Macs</p>
+          </div>
+          <a class="button download-link magnet" title="Torrent Magnet Link" href="<?php echo 'magnet:?xt=urn:btih:'.$config['release_magnet'].'&dn='.$config['release_filename']; ?>&tr=https%3A%2F%2Fashrise.com%3A443%2Fphoenix%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&ws=http%3A<?php echo urlencode($download_link.$config['release_filename']); ?>"><i class="fa fa-magnet"></i></a>
+          <a autofocus class="button download-link http" href="<?php echo $download_link.$config['release_filename']; ?>">Download</a>
         </div>
       </div>
     </dialog>
