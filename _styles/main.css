@@ -1042,7 +1042,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
 }
 .dialog[open] {
   border: none;
-  border-radius: 3px;
+  border-radius: 9px;
   box-shadow:
     inset 1px 0 0 0 rgba(255, 255, 255, 0.2),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.2),
@@ -1052,7 +1052,6 @@ So that for browsers that dont we can have a sensible inline style that can be a
     0 3px 28px 2px rgba(0, 0, 0, 0.12),
     0 5px 10px -3px rgba(0, 0, 0, 0.4);
   padding: 12px;
-  padding-top: 24px;
   text-align: initial;
 }
 
@@ -1064,44 +1063,62 @@ So that for browsers that dont we can have a sensible inline style that can be a
 
 .dialog[open]::backdrop {
   background: rgba(0, 0, 0, 0.7);
-}
-
-.dialog[open] .dialog-title {
-  font-weight: 700;
-  font-size: 1em;
-  text-align: left;
-  line-height: 24px;
-  margin: 0;
+  backdrop-filter: blur(4px);
 }
 
 .dialog[open] img {
   display: inline-block;
-  margin-right: 12px;
+  /*Account for padding inside image*/
+  margin: -2px 5px 0 -2px;
   user-select: none;
   vertical-align: top;
 }
 
 .dialog[open] .content-area {
   display: inline-block;
-  width: calc(100% - 48px - 18px); /* Subtract icon width and right margin */
+}
+
+.dialog[open] .dialog-title {
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: left;
+  line-height: 1em;
+  margin: 0;
 }
 
 .dialog p {
   margin: 0 auto;
   text-align: left;
-  line-height: 24px;
-  max-width: 380px;
+  line-height: 1.25em;
+  max-width: 420px;
+}
+
+.dialog[open] .dialog-title + p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 .dialog[open] p {
-  margin: 6px 0 0;
+  margin-bottom: 2em;
 }
 
-.dialog .action-area {
-  margin-top: 12px;
+.dialog .dialog-option {
+  margin-top: 1em;
 }
 
-.dialog[open] .action-area {
+.dialog .dialog-option-title {
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.dialog p.dialog-option-subtitle {
+  opacity: 0.7;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.dialog[open] .dialog-option {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -1111,25 +1128,47 @@ So that for browsers that dont we can have a sensible inline style that can be a
 .dialog .button {
   display: inline-block;
   font-size: 14px;
-  flex: 0 35%; /* FIXME: These values are bullshit */
   margin: 0;
-  padding: 9px 12px;
+  padding: 9px;
   user-select: none;
   white-space: nowrap;
 }
 
-.dialog .action-area > .button + .button,
-.dialog .action-area > .button + .linked {
+.dialog .dialog-option > .button + .button {
   margin: 0;
   margin-left: 6px;
+}
+
+.dialog .dialog-option > .download-link.magnet {
+  flex: 0 auto;
+  margin-left: auto;
+}
+
+.dialog .dialog-option > .download-link.http {
+  flex: 0 35%; /* FIXME: These values are bullshit */
 }
 
 /* If the dialog is inline hide the close button */
 .dialog .close-modal {
   display: none;
 }
+
 .dialog[open] .close-modal {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 1em;
+  box-shadow: none;
   display: block;
+  justify-self: start;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 6px;
+  height: 28px;
+  width: 28px;
+}
+
+.dialog[open] .close-modal img {
+  margin: 0;
 }
 
 /*********
