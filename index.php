@@ -147,7 +147,7 @@ include $template['alert'];
         <div class="two-thirds">
           <h2>What’s New in elementary OS 8.1</h2>
           <p>Everything you love, made even better. OS 8.1 improves the Secure Session and Dock, enhances accessibility, improves support for your devices, and addresses your feedback with over 1,100 issue reports fixed.</p>
-          <a href="https://blog.elementary.io/os-8-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
+          <a href="https://blog.elementary.io/os-8-1-available-now/" target="_blank" rel="noopener" class="read-more">Read the Announcement</a>
         </div>
       </div>
     </section>
