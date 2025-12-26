@@ -5,10 +5,23 @@
 ### Docker Web Server with Nginx, PHP, and Node
 
 For a simple local development environment running on PHP, you will need:
+
+* docker
+* docker-compose
+  * NOTE: In order to run docker-compose without root permissions [refer to the docker documentation](https://docs.docker.com/engine/install/linux-postinstall/) for post-installation steps. 
+    
+Clone, inside the project directory, use 'docker-compose' with the '-d' flag to run the website in a container.
+
 ```
-cd ./dev && docker compose up -d
+cd ./dev && docker-compose up -d
 ```
-just navigate to [localhost:8000](http://localhost:8000/) to view the site.
+Then navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+Lastly, to bring down the container/local site, run this command:
+
+```
+docker-compose down
+```
 
 <br>
 <hr>
