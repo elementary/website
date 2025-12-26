@@ -4,7 +4,7 @@
 
 ### Docker Web Server with Nginx, PHP, and Node
 
-For a simple local development environment running on PHP, you will need:
+For a simple local development environment running in a docker container, you will need:
 
 * docker
 * docker-compose
