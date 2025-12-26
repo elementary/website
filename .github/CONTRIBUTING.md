@@ -10,7 +10,8 @@ For a simple local development environment running in a docker container, you wi
 * docker-compose
   * NOTE: In order to run docker-compose without root permissions [refer to the docker documentation](https://docs.docker.com/engine/install/linux-postinstall/) for post-installation steps. 
     
-Clone, inside the project directory, use 'docker-compose' with the '-d' flag to run the website in a container.
+Clone the repository and navigate to the project directory in terminal.
+Inside the project directory, use 'docker-compose' with the '-d' flag to run the website in a container.
 
 ```
 cd ./dev && docker-compose up -d
