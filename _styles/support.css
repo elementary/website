@@ -10,6 +10,11 @@
     color: #d4d4d4;
     fill: #d4d4d4;
   }
+  nav a,
+  nav a:visited {
+    color: #333;
+    fill: #333;
+  }
 }
 
 h1 {
