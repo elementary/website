@@ -98,6 +98,9 @@ include $template['alert'];
       <span data-l10n-off>Safari</span>
     </a>
   </div>
+
+  <h4>Open License</h4>
+  <p>All of the tooling and content that makes up this this website, including this page, are released under the terms of the <a href="https://github.com/elementary/website/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT License</a>. This licensing model allows us to publicly demonstrate our commitment to transparency so that anyone with access to our source code can verify our claims.</p>
 </div>
 
 <div class="row docs">
