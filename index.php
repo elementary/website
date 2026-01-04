@@ -123,6 +123,7 @@ include $template['alert'];
               </form>
               <p class="small-label">
                 <span data-l10n-off="1">elementary OS <?php echo $config['release_version'] . ' ' . $config['release_title']; ?> (<?php echo $config['release_size']; ?>)</span><br>
+                <a href="docs/installation" target="_blank" rel="noopener">Installation Instructions</a> |
                 <a href="docs/installation#recommended-system-specifications" target="_blank" rel="noopener">Recommended System Specs</a> |
                 <a href="<?php echo $config['release_faq'] ?>" target="_blank" rel="noopener">FAQ</a>
               </p>
