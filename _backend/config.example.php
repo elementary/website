@@ -15,7 +15,7 @@ return array(
   
   'release_arm_filename' => 'elementaryos-8.1-stable-arm64.20260107.iso',
   'release_arm_magnet'   => '',
-  'release_arm_sha256'   => '',
+  'release_arm_sha256'   => '05b3996604e8b80424a20ab9f2aec97695aecef2099b68cf9e7236cfc0d4f818',
 
   'previous_title'    => 'Circe',
   'previous_version'  => '8.0.2',
