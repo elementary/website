@@ -10,11 +10,11 @@ return array(
   'release_faq'      => 'https://github.com/elementary/os/wiki/OS-8-FAQ',
 
   'release_filename' => 'elementaryos-8.1-stable-amd64.20260107.iso',
-  'release_magnet'   => '',
+  'release_magnet'   => '9268ffc00ee78831a2b3fdf74ff243a207e27b69',
   'release_sha256'   => '24cc821cefa2600ce54686f406e6782eafe658ce56e190dea331a60c6cd13c99',
   
   'release_arm_filename' => 'elementaryos-8.1-stable-arm64.20260107.iso',
-  'release_arm_magnet'   => '',
+  'release_arm_magnet'   => 'e73b799d78b2c92817db84ac9c115304bd783604',
   'release_arm_sha256'   => '05b3996604e8b80424a20ab9f2aec97695aecef2099b68cf9e7236cfc0d4f818',
 
   'previous_title'    => 'Circe',
