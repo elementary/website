@@ -50,7 +50,7 @@ export async function detectedArchitecture () {
     if (navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
         try {
             const values = await navigator.userAgentData.getHighEntropyValues(['architecture', 'bitness', 'platform'])
-            
+
             if (values.architecture) {
                 const arch = values.architecture.toLowerCase()
                 if (arch.indexOf('arm') >= 0) {
@@ -64,21 +64,21 @@ export async function detectedArchitecture () {
             // Fall through to legacy detection
         }
     }
-    
+
     // Fallback to legacy user agent parsing
     const ua = window.navigator.userAgent
     if (ua == null || ua === false) return 'Unknown'
-    
+
     // Check for ARM indicators in user agent
     if (ua.indexOf('ARM') >= 0 || ua.indexOf('aarch64') >= 0 || ua.indexOf('arm64') >= 0) {
         return 'ARM'
     }
-    
+
     // Check for x86/x64 indicators
     if (ua.indexOf('x86') >= 0 || ua.indexOf('x64') >= 0 || ua.indexOf('WOW64') >= 0 || ua.indexOf('Win64') >= 0 || ua.indexOf('Intel Mac') >= 0) {
         return 'x86'
     }
-    
+
     // Additional platform checks
     if (navigator.platform) {
         const platform = navigator.platform.toLowerCase()
@@ -89,6 +89,6 @@ export async function detectedArchitecture () {
             return 'x86'
         }
     }
-    
+
     return 'Unknown'
 }
