@@ -76,7 +76,7 @@ export async function detectedArchitecture () {
     // Try to use the modern User-Agent Client Hints API first
     if (navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
         try {
-            const values = await navigator.userAgentData.getHighEntropyValues(['architecture', 'bitness', 'platform'])
+            const values = await navigator.userAgentData.getHighEntropyValues(['architecture'])
 
             if (values.architecture) {
                 const arch = values.architecture.toLowerCase()
