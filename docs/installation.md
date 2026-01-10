@@ -231,7 +231,7 @@ Picture 1: "Open File..." button
 <img
   src="images/docs/installation/impression1.png"
   alt="File selection button"
-  style="max-width: 400px; width: 100%; height: auto;"
+  width="400"
 >
 
 Picture 2: Select USB drive
