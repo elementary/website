@@ -1,5 +1,5 @@
 {
-    "Thoughtful, capable, and ethical computing": "",
+    "Thoughtful, capable, and ethical computing": "Informatique réfléchie, performante et éthique",
     "Generic laptop computer": "Ordinateur portable générique",
     "elementary OS 8 desktop": "elementary OS 8 pour ordinateur",
     "Pay What You Can:": "Payez ce que vous pouvez :",
@@ -9,7 +9,7 @@
     "Recommended System Specs": "Spécifications système recommandées",
     "FAQ": "FAQ",
     "What’s New in elementary OS 8.1": "Quoi de neuf dans elementary OS 8.1",
-    "Everything you love, made even better. OS 8.1 improves the Secure Session and Dock, enhances accessibility, improves support for your devices, and addresses your feedback with over 1,100 issue reports fixed.": "",
+    "Everything you love, made even better. OS 8.1 improves the Secure Session and Dock, enhances accessibility, improves support for your devices, and addresses your feedback with over 1,100 issue reports fixed.": "Tout ce que vous aimez, mais en mieux. OS 8.1 améliore la session sécurisée et le dock, renforce l'accessibilité, améliore la prise en charge de vos appareils et répond à vos commentaires avec plus de 1 100 rapports d'erreurs corrigés.",
     "Read the Announcement": "Lire l'annonce",
     "elementary OS AppCenter home page": "Page d'accueil du Centre d'Applications d'elementary OS",
     "elementary AppCenter icon": "Icône du Centre d'Applications d'elementary",
@@ -118,14 +118,14 @@
     "&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;": "&ldquo;Léger, rapide et doté de véritables qualités de design et d'esthétique.&rdquo;",
     "Close": "Fermer",
     "Choose a Download": "Choisissez un téléchargement",
-    "Download the install media for your computer's processor from a localized server or by magnet link": "",
-    "For help and more info, see the": "",
+    "Download the install media for your computer's processor from a localized server or by magnet link": "Téléchargez le support d'installation pour le processeur de votre ordinateur à partir d'un serveur localisé ou via un lien magnétique",
+    "For help and more info, see the": "Pour obtenir de l'aide et plus d'informations, consultez",
     "installation guide": "guide d'installation",
-    "ARM® 64-bit": "",
-    "Apple Silicon, Raspberry Pi, etc": "",
+    "ARM® 64-bit": "ARM® 64-bit",
+    "Apple Silicon, Raspberry Pi, etc": "Apple Silicon, Raspberry Pi, etc",
     "Torrent Magnet Link": "Lien Magnet",
     "Download": "Télécharger",
-    "Intel or AMD 64-bit": "",
-    "Most PCs and older Macs": "",
-    "Thoughtful, capable, and ethical computing &sdot; elementary OS": ""
+    "Intel or AMD 64-bit": "Intel ou AMD 64-bit",
+    "Most PCs and older Macs": "La plupart des PC et anciens Mac",
+    "Thoughtful, capable, and ethical computing &sdot; elementary OS": "Informatique réfléchie, performante et éthique &sdot; elementary OS"
 }
