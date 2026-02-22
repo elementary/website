@@ -11,11 +11,11 @@ return array(
 
   'release_filename' => 'elementaryos-8.1-stable-amd64.20260219.iso',
   'release_magnet'   => '',
-  'release_sha256'   => '',
+  'release_sha256'   => 'bda93040d08c05911fb159f8150bf8f4ef2db6567ef6e2acd197cb6f395d3446',
   
   'release_arm_filename' => 'elementaryos-8.1-stable-arm64.20260219.iso',
   'release_arm_magnet'   => '',
-  'release_arm_sha256'   => '',
+  'release_arm_sha256'   => '85116d48c406ae7cd60c936050a099d4b8610321273f6f0a694796db4d4e86ba',
 
   'previous_title'    => 'Circe',
   'previous_version'  => '8.0.2',
