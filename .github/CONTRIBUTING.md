@@ -4,11 +4,25 @@
 
 ### Docker Web Server with Nginx, PHP, and Node
 
-For a simple local development environment running on PHP, you will need:
+For a simple local development environment running in a docker container, you will need:
+
+* docker
+* docker-compose
+  * NOTE: In order to run docker-compose without root permissions [refer to the docker documentation](https://docs.docker.com/engine/install/linux-postinstall/) for post-installation steps. 
+    
+Clone the repository and navigate to the project directory in terminal.
+Inside the project directory, use 'docker-compose' with the '-d' flag to run the website in a container.
+
+```bash
+cd ./dev && docker-compose up -d
 ```
-cd ./dev && docker compose up -d
+Then navigate to [localhost:8000](http://localhost:8000/) to view the site.
+
+Lastly, to bring down the container/local site, run this command:
+
+```bash
+docker-compose down
 ```
-just navigate to [localhost:8000](http://localhost:8000/) to view the site.
 
 <br>
 <hr>
@@ -67,7 +81,7 @@ Second, install Node.js (18.x recommended) from [Nodejs.org](https://nodejs.org)
 
 Then follow these directions from your favorite shell:
 
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install php composer
 npm ci
@@ -100,7 +114,7 @@ sudo nano /etc/nginx/sites-enabled/mvp.conf
 Then, paste in required configuration in, modifying the root, include and
 error_log paths.
 
-```
+```nginx
 server {
     listen 80;
     server_name mvp.localtest.me;

@@ -8,12 +8,12 @@
 import jQuery from '~/lib/jquery'
 
 import config from '~/config'
-import { detectedOS } from '~/page'
+import { detectedArchitecture } from '~/page'
 
 Promise.all([config, jQuery]).then(([config, $]) => {
     $(document).ready(() => {
         // ACTION: .download-http.click: Track download over HTTP
-        $('.download-link').click(function () {
+        $('.download-link').click(async function () {
             let downloadMethod = 'Unknown'
             if ($(this).hasClass('magnet')) {
                 downloadMethod = 'Magnet'
@@ -25,7 +25,7 @@ Promise.all([config, jQuery]).then(([config, $]) => {
                 props: {
                     Region: config.user.region,
                     Method: downloadMethod,
-                    OS: detectedOS(),
+                    Architecture: await detectedArchitecture(),
                     Version: config.previous.version
                 }
             })
