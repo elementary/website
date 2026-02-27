@@ -161,6 +161,9 @@ Finally, navigate to [mvp.localtest.me](http://mvp.localtest.me)
  - Close all your tags properly
  - `a` elements with `target="_blank"` should include a `rel="noopener"`
 
+### Images
+You can rebuild all images by running `npm run build:images`
+
 ### CSS
  - Try to use classes instead of IDs unless things are absolutely unique
  - One selector per line
