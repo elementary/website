@@ -112,11 +112,88 @@ gulp.task("svg", () => {
 
 /**
  * images
- * Optimizes all images
+ * Optimizes all images, skipping any that already exist in /images/
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
 gulp.task("images", gulp.parallel("png", "jpg", "svg", "gif"));
+
+/**
+ * png:rebuild
+ * Re-optimizes all png images, overwriting existing outputs
+ *
+ * @returns {Task} - a gulp task for png files
+ */
+gulp.task("png:rebuild", () => {
+  return gulp
+    .src(["_images/**/*.png"], { base: "_images" })
+    .pipe(imagemin())
+    .pipe(gulp.dest("images"));
+});
+
+/**
+ * jpg:rebuild
+ * Re-optimizes all jpg images, overwriting existing outputs
+ *
+ * @returns {Task} - a gulp task for jpg images
+ */
+gulp.task("jpg:rebuild", () => {
+  return gulp
+    .src(["_images/**/*.jpg", "_images/**/*.jpeg"], { base: "_images" })
+    .pipe(imagemin())
+    .pipe(gulp.dest("images"));
+});
+
+/**
+ * gif:rebuild
+ * Re-optimizes all gif images, overwriting existing outputs
+ *
+ * @returns {Task} - a gulp task for gif images
+ */
+gulp.task("gif:rebuild", () => {
+  return gulp
+    .src(["_images/**/*.gif"], { base: "_images" })
+    .pipe(imagemin())
+    .pipe(gulp.dest("images"));
+});
+
+/**
+ * svg:rebuild
+ * Re-optimizes all svg images, overwriting existing outputs
+ *
+ * @returns {Task} - a gulp task for svg images
+ */
+gulp.task("svg:rebuild", () => {
+  const src = [
+    "_images/**/*.svg",
+
+    "!_images/icons/**/*.svg",
+    "_images/icons/actions/symbolic/appointment-symbolic.svg",
+    "_images/icons/actions/symbolic/edit-clear-all-symbolic.svg",
+    "_images/icons/actions/symbolic/window-maximize-symbolic.svg",
+    "_images/thirdparty-icons/apps/64/io.elementary.code.svg",
+    "_images/icons/categories/64/preferences-desktop-wallpaper.svg",
+    "_images/icons/devices/symbolic/audio-input-microphone-symbolic.svg",
+    "_images/icons/places/128/distributor-logo.svg",
+    "_images/icons/places/64/distributor-logo.svg",
+    "_images/icons/status/symbolic/changes-prevent-symbolic.svg",
+    "_images/icons/status/symbolic/notification-disabled-symbolic.svg",
+    "_images/thirdparty-icons/apps/32/multitasking-view.svg",
+  ];
+
+  return gulp
+    .src(src, { allowEmpty: true, base: "_images" })
+    .pipe(imagemin())
+    .pipe(gulp.dest("images"));
+});
+
+/**
+ * images:rebuild
+ * Re-optimizes all images, overwriting existing outputs
+ *
+ * @returns {Task} - a gulp task for rebuilding all image optimizations
+ */
+gulp.task("images:rebuild", gulp.parallel("png:rebuild", "jpg:rebuild", "svg:rebuild", "gif:rebuild"));
 
 /**
  * styles
@@ -173,7 +250,7 @@ gulp.task("scripts", () => {
  *
  * @returns {Task} - a gulp task for building
  */
-gulp.task("default", gulp.parallel("styles", "scripts"));
+gulp.task("default", gulp.parallel("images", "styles", "scripts"));
 
 /**
  * watch
