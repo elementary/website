@@ -14,8 +14,8 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "19.0.0",
-        "erusev/parsedown-extra": "^0.8",
+        "stripe/stripe-php": "19.3.0",
+        "erusev/parsedown-extra": "^0.9",
         "geoip2/geoip2": "^3.0",
         "ext-intl": ">=7",
         "ext-json": ">=7",
