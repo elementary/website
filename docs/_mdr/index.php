@@ -79,6 +79,8 @@ if (is_readable($Request['Directory']) ||
         $Content = str_replace('⌘', '&#8984;', $Content);
         $Content = str_replace('{#release_filename}', $config['release_filename'], $Content);
         $Content = str_replace('{#release_sha256}', $config['release_sha256'], $Content);
+        $Content = str_replace('{#release_arm_filename}', $config['release_arm_filename'], $Content);
+        $Content = str_replace('{#release_arm_sha256}', $config['release_arm_sha256'], $Content);
         $Content = str_replace('{#release_faq}', $config['release_faq'], $Content);
 
         // Replace any of the scripts specified in the markdown with our cache-busted versions
