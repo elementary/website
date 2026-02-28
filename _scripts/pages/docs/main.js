@@ -63,7 +63,7 @@ Promise.all([highlight, jQuery]).then(([hljs, $]) => {
             $index.prependTo($sidebar)
 
             const $actions = $('<ul class="actions"></ul>')
-            $('<li><a href="https://github.com/elementary/website/blob/master/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions)
+            $('<li><a href="https://github.com/elementary/website/blob/main/docs' + window.location.pathname.split('/docs')[1] + '.md" id="edit"><i class="fa fa-pencil"></i> Edit</a></li>').appendTo($actions)
             $actions.appendTo($sidebar)
 
             $sidebar.prependTo('#content-container')

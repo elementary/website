@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: 'master'
+          ref: 'main'
           submodules: true
 
       - name: Setup PHP

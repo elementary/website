@@ -9,9 +9,9 @@ $secretConfig = array();
 if (is_readable(__DIR__.'/config.php')) {
     $secretConfig = (require __DIR__.'/config.php');
 
-// Fallback to master if on testing branch
-} elseif (is_readable(__DIR__.'/../../master/_backend/config.php')) {
-    $secretConfig = (require __DIR__.'/../../master/_backend/config.php');
+// Fallback to main if on testing branch
+} elseif (is_readable(__DIR__.'/../../main/_backend/config.php')) {
+    $secretConfig = (require __DIR__.'/../../main/_backend/config.php');
 }
 
 // Merge configuration
