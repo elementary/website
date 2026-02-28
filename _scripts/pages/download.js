@@ -12,6 +12,9 @@ import config from '~/config'
 
 import { openDownloadOverlay } from '~/widgets/download-modal'
 
+// Pre-fetch architecture detection so it's ready before any click event fires
+const architecturePromise = detectedArchitecture()
+
 Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloadOverlay]) => {
     // DEBUG
     console.log('Config at download.js:')
@@ -132,21 +135,24 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         })
 
         // ACTION: .download-http.click: Track downloads
-        $('.download-link').click(async function () {
+        $('.download-link').click(function () {
+            const $this = $(this)
             let downloadMethod = 'Unknown'
-            if ($(this).hasClass('magnet')) {
+            if ($this.hasClass('magnet')) {
                 downloadMethod = 'Magnet'
             }
-            if ($(this).hasClass('http')) {
+            if ($this.hasClass('http')) {
                 downloadMethod = 'HTTP'
             }
-            plausible('Download', {
-                props: {
-                    Region: config.user.region,
-                    Method: downloadMethod,
-                    Architecture: await detectedArchitecture(),
-                    Version: config.release.version
-                }
+            architecturePromise.then(function (architecture) {
+                plausible('Download', {
+                    props: {
+                        Region: config.user.region,
+                        Method: downloadMethod,
+                        Architecture: architecture,
+                        Version: config.release.version
+                    }
+                })
             })
         })
 
