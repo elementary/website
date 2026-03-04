@@ -31,7 +31,7 @@
     "Unanswered Questions": "Vastaamattomat kysymykset",
     "Documentation": "Dokumentaatio",
     "elementary provides basic documentation for both users and developers. All of our documentation is written in Markdown and hosted on GitHub, so submitting a change or a new section is a piece of cake.": "elementary tarjoaa oppaat niin käyttäjille kuin kehittäjillekin. Kaikki oppaat on kirjoitettu käyttäen Markdown-merkintäkieltä, ja ohjeet löytyvät GitHubista. Muutosten tekeminen tai uusien osioiden lisääminen on siis todella helppoa.",
-    "Learning the Basics Guide": "Perusasioiden opettelu",
+    "Learning the Basics Guide": "Ohje perusasioiden opetteluun",
     "Developer Docs": "Kehittäjädokumentaatio",
     "Web Development": "Web-kehitys",
     "Our website is built using HTML, CSS, PHP, and JavaScript. We're always looking for people experienced in those areas who would like to contribute and make it even better.": "Tämä sivusto on rakennettu käyttäen HTML:ää, CSS:ää, PHP:tä ja JavaScriptiä. Jos tunnet kyseisiä teknologioita hyvin, olet tervetullut osallistumaan verkkosivuston kehitykseen.",

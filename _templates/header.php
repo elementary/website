@@ -85,7 +85,7 @@ $l10n->beginHtmlTranslation();
         <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
         <?php } ?>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo $stylesManifest["styles/main.css"]?>">
 
         <?php foreach ($page['styles'] as $style) { ?>
@@ -129,7 +129,7 @@ $l10n->beginHtmlTranslation();
             <button class="menu-button" title="Toggle navigation menu" aria-label="Toggle navigation menu" aria-expanded="false"><?php include __DIR__.'/../images/menu.svg'; ?></button>
             <div class="nav-content">
                 <ul>
-                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
+                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark" aria-label="Home"><span aria-hidden="true"><?php include __DIR__.'/../images/logomark.svg'; ?></span></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>
@@ -139,7 +139,6 @@ $l10n->beginHtmlTranslation();
                 <ul class="right">
                     <li><a href="https://youtube.com/user/elementaryproject" target="_blank" rel="noopener" data-l10n-off aria-label="YouTube" title="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
                     <li><a href="https://mastodon.social/@elementary" target="_blank" rel="noopener me" data-l10n-off aria-label="Mastodon" title="Mastodon"><i aria-hidden="true" class="fab fa-mastodon"></i></a></li>
-                    <li><a href="https://www.reddit.com/r/elementaryos" target="_blank" rel="noopener" data-l10n-off aria-label="Reddit" title="Reddit"><i aria-hidden="true" class="fab fa-reddit"></i></a></li>
                     <li><a href="https://discord.gg/pCenUBu" target="_blank" rel="noopener" data-l10n-off aria-label="Discord" title="Discord"><i aria-hidden="true" class="fab fa-discord"></i></a></li>
                 </ul>
             </div>

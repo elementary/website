@@ -7,7 +7,7 @@
 
 import jQuery from '~/lib/jquery'
 
-import { detectedOS } from '~/page'
+import { detectedArchitecture } from '~/page'
 import config from '~/config'
 
 import { openDownloadOverlay } from '~/widgets/download-modal'
@@ -132,7 +132,7 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         })
 
         // ACTION: .download-http.click: Track downloads
-        $('.download-link').click(function () {
+        $('.download-link').click(async function () {
             let downloadMethod = 'Unknown'
             if ($(this).hasClass('magnet')) {
                 downloadMethod = 'Magnet'
@@ -144,7 +144,7 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
                 props: {
                     Region: config.user.region,
                     Method: downloadMethod,
-                    OS: detectedOS(),
+                    Architecture: await detectedArchitecture(),
                     Version: config.release.version
                 }
             })

@@ -78,7 +78,7 @@ include $template['alert'];
       <span data-l10n-off>Edge</span>
     </a>
     <a target="_blank" rel="noopener" href="https://help.gnome.org/users/epiphany/stable/data-cookies.html">
-      <img src="images/icons/apps/48/internet-web-browser.svg" data-l10n-off alt="Epiphany" />
+      <img src="images/thirdparty-icons/apps/48/web.svg" data-l10n-off alt="Epiphany" />
       <span data-l10n-off>Web</span>
     </a>
     <a target="_blank" rel="noopener" href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored">

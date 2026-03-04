@@ -210,7 +210,7 @@ hr.dotted {
 
   .oss-title {
     font-size: 18px;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .oss-subtitle {

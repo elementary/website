@@ -7,7 +7,7 @@ date_default_timezone_set('UTC');
 
 $sitewide['title'] = 'elementary';
 $sitewide['author'] = 'elementary, Inc.';
-$sitewide['description'] = 'The thoughtful, capable, and ethical replacement for Windows and macOS';
+$sitewide['description'] = 'Thoughtful, capable, and ethical computing';
 $sitewide['image'] = 'https://elementary.io/images/preview.png';
 $sitewide['theme-color'] = '#3689e6';
 
