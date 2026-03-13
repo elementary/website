@@ -17,7 +17,7 @@ import postcssPresetEnv from "postcss-preset-env";
 import cssnano from "cssnano";
 
 import webpack from "webpack";
-import webpackConfig from "./webpack.config.babel.js";
+import webpackConfig from "./webpack.config.js";
 
 /**
  * png
