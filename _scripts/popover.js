@@ -11,13 +11,15 @@ jQuery.then(($) => {
 
         $document.on('click', '.popover > a', function (event) {
             event.preventDefault()
+            event.stopPropagation()
 
-            const $body = $('body')
-            const $link = $(event.target)
-            const $popover = $link.parent()
+            const $popover = $(event.target).closest('.popover')
             const $content = $popover.find('.popover-content')
 
-            $body.css({ overflow: 'hidden' })
+            if ($popover.hasClass('active')) {
+                $popover.removeClass('active')
+                return
+            }
 
             $popover.addClass('active')
 
@@ -46,16 +48,13 @@ jQuery.then(($) => {
             $content[0].style.setProperty('--popover-left', popoverPos + 'px')
             $content[0].style.setProperty('--arrow-left', arrowLeft + 'px')
 
-            $document.one('click scroll touchmove mousewheel wheel', function (event) {
-                if (!$(event.target).is('.popover-content *')) {
-                    event.stopImmediatePropagation()
-                    event.preventDefault()
+            $document.on('click.popover scroll.popover touchmove.popover', function (e) {
+                if ($(e.target).closest('.popover-content').length) {
+                    return
                 }
 
-                $body.css({ overflow: 'visible' })
-
                 $popover.removeClass('active')
-                $body.click()
+                $document.off('.popover')
             })
         })
     })
