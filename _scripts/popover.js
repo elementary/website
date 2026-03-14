@@ -11,6 +11,9 @@ jQuery.then(($) => {
 
         $document.on('click', '.popover > a', function (event) {
             event.preventDefault()
+
+            // Stop propagation so this click doesn't immediately trigger
+            // the document-level close handler registered below
             event.stopPropagation()
 
             const $popover = $(event.target).closest('.popover')
@@ -23,10 +26,14 @@ jQuery.then(($) => {
 
             $popover.addClass('active')
 
+            // Prevent scroll events inside the popover content from
+            // bubbling up to the document close handler
             $content.on('scroll touchmove mousewheel wheel', function (e) {
                 e.stopPropagation()
             })
 
+            // Position the popover centered on its trigger, then clamp it
+            // within the viewport so it doesn't cause horizontal overflow
             const popoverWidth = $popover.outerWidth()
             const contentWidth = $content.outerWidth()
             let popoverPos = (popoverWidth / 2) - (contentWidth / 2)
@@ -44,10 +51,14 @@ jQuery.then(($) => {
                 popoverPos -= contentLeft
             }
 
+            // Move the arrow to stay aligned with the trigger button,
+            // compensating for how far the content was shifted
             const arrowLeft = (popoverWidth / 2) - popoverPos
             $content[0].style.setProperty('--popover-left', popoverPos + 'px')
             $content[0].style.setProperty('--arrow-left', arrowLeft + 'px')
 
+            // Close when the user interacts outside the popover content.
+            // Uses namespaced events so we can cleanly unbind them all at once
             $document.on('click.popover scroll.popover touchmove.popover', function (e) {
                 if ($(e.target).closest('.popover-content').length) {
                     return
