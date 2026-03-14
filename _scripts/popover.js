@@ -25,8 +25,26 @@ jQuery.then(($) => {
                 e.stopPropagation()
             })
 
-            const popoverPos = ($popover.outerWidth() / 2) - ($content.outerWidth() / 2)
-            $content.css({ left: popoverPos })
+            const popoverWidth = $popover.outerWidth()
+            const contentWidth = $content.outerWidth()
+            let popoverPos = (popoverWidth / 2) - (contentWidth / 2)
+
+            const popoverRect = $popover[0].getBoundingClientRect()
+            const contentRight = popoverRect.left + popoverPos + contentWidth
+            const viewportWidth = document.documentElement.clientWidth
+
+            if (contentRight > viewportWidth) {
+                popoverPos -= (contentRight - viewportWidth)
+            }
+
+            const contentLeft = popoverRect.left + popoverPos
+            if (contentLeft < 0) {
+                popoverPos -= contentLeft
+            }
+
+            const arrowLeft = (popoverWidth / 2) - popoverPos
+            $content[0].style.setProperty('--popover-left', popoverPos + 'px')
+            $content[0].style.setProperty('--arrow-left', arrowLeft + 'px')
 
             $document.one('click scroll touchmove mousewheel wheel', function (event) {
                 if (!$(event.target).is('.popover-content *')) {
