@@ -7,7 +7,7 @@
   },
   "description": "The elementary.io Website http://elementary.io",
   "dependencies": {
-    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "babel-loader": "^10.1.1",
     "core-js": "^3.49.0",
     "cssnano": "^7.1.3",
