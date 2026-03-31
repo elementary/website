@@ -24,7 +24,7 @@ return array(
   'previous_magnet'   => '36d2dec9234ae7196062b60eca32b08f01c77143',
 
   // Stripe API version + Keys
-  'stripe_version' => '2025-09-30.clover',
+  'stripe_version' => '2026-03-25.dahlia',
   'stripe_sk' => 'sk_test_hoigesrjgoisrhgilgjrsfjs',
   'stripe_pk' => 'pk_test_hoigesrjgoisrhgilgjrsfjs',
 
