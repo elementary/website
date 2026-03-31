@@ -21,7 +21,7 @@ $sendPaymentAnalytics = false;
 
 $stripe = new \Stripe\StripeClient([
   "api_key" => $config['stripe_sk'],
-  "stripe_version" => "2025-09-30.clover"
+  "stripe_version" => $config['stripe_version']
 ]);
 
 if (isset($_GET['checkout_session_id'])) {
