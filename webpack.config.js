@@ -1,10 +1,8 @@
 /**
- * webpack.config.babel.js
+ * webpack.config.js
  * Builds mvp assets for use in a browser
  *
- * @exports {Object} styles - configuration object for style assets
- * @exports {Object} scripts - configuration object for script assets
- * @exports {Array} default - configuration objects for webpack
+ * @exports {Object} default - configuration object for webpack
  */
 
 import path from 'path'
@@ -42,17 +40,6 @@ export default {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'scripts'),
         publicPath: '/scripts'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            }
-        ]
     },
     resolve: {
         alias: {
