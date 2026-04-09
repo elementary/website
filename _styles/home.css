@@ -49,7 +49,7 @@
   width: calc(100% - 6px); /* Work around payent-button::before */
 }
 
-#amount-custom:is(:active, :focus, :focus-active)::placeholder {
+#amount-custom:is(:active, :focus, :focus-visible)::placeholder {
   opacity: 0.6;
   color: #333;
 }
