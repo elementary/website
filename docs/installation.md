@@ -218,7 +218,7 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 1. Plug in your spare USB flash drive
 2. Open the Impression app on your computer
-3. Select your downloaded .iso file using the "Open File..." button (Refer to Picture 1)
+3. Select your downloaded .iso file using the "Open File…" button (Refer to Picture 1)
 4. Impression should automatically detect your USB drive; if not, select the correct drive (Refer to Picture 2)
 5. Click the "Write" button. It may take a moment to get started. (Refer to Picture 3)
 
@@ -228,7 +228,7 @@ Once complete, continue to boot from the install drive.
 
 **Step by Step Pictures:**
 
-Picture 1: "Open File..." button
+Picture 1: "Open File…" button
 <img
   src="images/docs/installation/impression1.png"
   alt="File selection button"
