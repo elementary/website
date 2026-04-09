@@ -81,41 +81,38 @@ It can be downloaded from Microsoft directly, using the Windows App Store
 
 <a href="https://apps.microsoft.com/detail/9pc3h3v7q9ch?hl=en-us&gl=US&ocid=pdpshare" class="button suggested-action">Download Rufus</a>
 
-#### Step by Step Written Instructions {#step-by-step}
+#### Step by Step Instructions {#step-by-step}
 
 1. Plug in your USB flash drive
 2. Open Rufus
 3. Select your USB drive (it should be detected automatically)
-4. Click "SELECT" and choose your downloaded .iso file (Refer to Picture 1)
+4. Click "SELECT" and choose your downloaded .iso file
 5. If your computer is from 2012 or newer, select "GPT" under "Partition scheme" (recommended)
 6. Click "Start"
-7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two (Refer to Picture 2)
-8. When complete, the status will show "READY" (Refer to Picture 3)
 
-Now you're ready to boot from the install drive.
-
-#### Step by Step Pictures
-
-Picture 1: SELECT button and Partition scheme
 <img
   src="images/docs/installation/rufus1.png"
   alt="Buttons to select in the user interface"
   width="400"
 >
 
-Picture 2: Select ISO image mode
+7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two.
+
 <img
   src="images/docs/installation/rufus2.png"
   alt="Selecting ISO writing method"
   width="400"
 >
 
-Picture 3: Finished
+8. When complete, the status will show "READY"
+
 <img
   src="images/docs/installation/rufus3.png"
   alt="Finished writing the image"
   width="400"
 >
+
+Now you're ready to boot from the install drive.
 
 ### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -209,42 +206,35 @@ If you do not have flathub set up on your computer, refer to the <a href="https:
 
 <a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="button suggested-action">Download Impression</a>
 
-#### Step by Step Written Instructions {#step-by-step}
+#### Step by Step Instructions {#step-by-step}
 
 1. Plug in your USB flash drive
 2. Open Impression
-3. Click "Open File…" and select your downloaded .iso file (Refer to Picture 1)
-4. Select your USB drive (it should be detected automatically) (Refer to Picture 2)
-5. Click "Write" to begin. The process may take a moment to start. (Refer to Picture 3)
+3. Click "Open File…" and select your downloaded .iso file
 
-Once complete, continue to boot from the install drive.
-
-
-#### Step by Step Pictures
-
-Picture 1: "Open File…" button
 <img
   src="images/docs/installation/impression1.png"
   alt="File selection button"
   width="400"
 >
 
-Picture 2: Select USB drive
+4. Select your USB drive (it should be detected automatically)
+
 <img
   src="images/docs/installation/impression2.png"
   alt="Drive selection button"
   width="400"
 >
 
+5. Click "Write" to begin. The process may take a moment to start.
 
-Picture 3: Writing the image
 <img
   src="images/docs/installation/impression3.png"
   alt="Progress bar showing the iso being written"
   width="400"
 >
 
-
+Once complete, continue to boot from the install drive.
 
 ### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
