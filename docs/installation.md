@@ -83,14 +83,14 @@ It can be downloaded from Microsoft directly, using the Windows App Store
 
 #### Step by Step Written Instructions {#step-by-step}
 
-1. Open Rufus 
-2. Plug in your spare USB flash drive
-3. Rufus should automatically detect your USB drive; if not, select the correct drive.
-4. Select your downloaded .iso file using the "SELECT" button. (Refer to Picture 1)
-5. (Recommended) If your computer is from 2012 or newer, select "GPT" under "Partition scheme"
-6. Click the "Start" button.
-7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two. (Refer to Picture 2)
-8. Once complete, Rufus will say "READY". (Refer to Picture 3)
+1. Plug in your USB flash drive
+2. Open Rufus
+3. Select your USB drive (it should be detected automatically)
+4. Click "SELECT" and choose your downloaded .iso file (Refer to Picture 1)
+5. If your computer is from 2012 or newer, select "GPT" under "Partition scheme" (recommended)
+6. Click "Start"
+7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two (Refer to Picture 2)
+8. When complete, the status will show "READY" (Refer to Picture 3)
 
 Now you're ready to boot from the install drive.
 
@@ -211,11 +211,11 @@ If you do not have flathub set up on your computer, refer to the <a href="https:
 
 #### Step by Step Written Instructions {#step-by-step}
 
-1. Plug in your spare USB flash drive
-2. Open the Impression app on your computer
-3. Select your downloaded .iso file using the "Open File…" button (Refer to Picture 1)
-4. Impression should automatically detect your USB drive; if not, select the correct drive (Refer to Picture 2)
-5. Click the "Write" button. It may take a moment to get started. (Refer to Picture 3)
+1. Plug in your USB flash drive
+2. Open Impression
+3. Click "Open File…" and select your downloaded .iso file (Refer to Picture 1)
+4. Select your USB drive (it should be detected automatically) (Refer to Picture 2)
+5. Click "Write" to begin. The process may take a moment to start. (Refer to Picture 3)
 
 Once complete, continue to boot from the install drive.
 
