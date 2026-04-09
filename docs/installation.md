@@ -54,9 +54,9 @@ Follow the guide below, by selecting the operating system you are currently usin
 
 <div id="install-on-windows" class="slide" markdown="1">
 
-### Verify Your Download (Optional) {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
-Verifying your download is an optional step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:
 
@@ -135,9 +135,9 @@ In order to start the installation process, you must boot your computer from the
 
 <div id="install-on-macos" class="slide" markdown="1">
 
-### Verify Your Download (Optional) {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
-Verifying your download is an optional step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Assuming you downloaded elementary OS to your macOS Downloads folder, open the Terminal app in macOS and run the following command:
 
@@ -189,9 +189,9 @@ If your Mac doesn't recognize your elementary OS USB Install Drive in the boot m
 
 <div id="install-on-ubuntu" class="slide" markdown="1">
 
-### Verify Your Download (Optional) {#verify-your-download}
+### Verify Your Download {#verify-your-download}
 
-Verifying your download is an optional step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Running the following command in your terminal:
 
