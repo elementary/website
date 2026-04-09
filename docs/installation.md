@@ -205,7 +205,7 @@ It should produce the output:
 
 To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Impression".
 
-If you do not have flathub enabled on your computer, refer to the <a href="https://flathub.org/en/setup">flathub setup instructions</a>
+If you do not have flathub set up on your computer, refer to the <a href="https://flathub.org/en/setup">flathub setup instructions</a>
 
 <a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="button suggested-action">Download Impression</a>
 
