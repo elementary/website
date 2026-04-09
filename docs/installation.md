@@ -89,9 +89,8 @@ It can be downloaded from Microsoft directly, using the Windows App Store
 4. Select your downloaded .iso file using the "SELECT" button. (Refer to Picture 1)
 5. (Recommended) If your computer is from 2012 or newer, select "GPT" under "Partition scheme"
 6. Click the "Start" button.
-7. A dialog will appear, keep the default selection to write in "ISO image mode" (Refer to Picture 2)
-8. Sit back and wait a minute or two
-9. Once complete, Rufus will say "READY". (Refer to Picture 3)
+7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two. (Refer to Picture 2)
+8. Once complete, Rufus will say "READY". (Refer to Picture 3)
 
 Now you're ready to boot from the install drive.
 
@@ -219,7 +218,6 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 5. Click the "Write" button. It may take a moment to get started. (Refer to Picture 3)
 
 Once complete, continue to boot from the install drive.
-
 
 
 #### Step by Step Pictures
