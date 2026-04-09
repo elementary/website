@@ -81,7 +81,7 @@ It can be downloaded from Microsoft directly, using the Windows App Store
 
 <a href="https://apps.microsoft.com/detail/9pc3h3v7q9ch?hl=en-us&gl=US&ocid=pdpshare" class="button suggested-action">Download Rufus</a>
 
-**Step by Step Written Instructions:**
+#### Step by Step Written Instructions {#step-by-step}
 
 1. Open Rufus 
 2. Plug in your spare USB flash drive
@@ -95,7 +95,7 @@ It can be downloaded from Microsoft directly, using the Windows App Store
 
 Now you're ready to boot from the install drive.
 
-**Step by Step Pictures:**
+#### Step by Step Pictures
 
 Picture 1: SELECT button and Partition scheme
 <img
@@ -104,7 +104,6 @@ Picture 1: SELECT button and Partition scheme
   width="400"
 >
 
-
 Picture 2: Select ISO image mode
 <img
   src="images/docs/installation/rufus2.png"
@@ -112,15 +111,12 @@ Picture 2: Select ISO image mode
   width="400"
 >
 
-
 Picture 3: Finished
 <img
   src="images/docs/installation/rufus3.png"
   alt="Finished writing the image"
   width="400"
 >
-
-
 
 ### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -214,7 +210,7 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 **NOTE:** If you do not have flathub enabled on your computer, refer to the <a href="https://flathub.org/en/setup">flathub setup instructions</a>
 
-**Step by Step Written Instructions:**
+#### Step by Step Written Instructions {#step-by-step}
 
 1. Plug in your spare USB flash drive
 2. Open the Impression app on your computer
@@ -226,7 +222,7 @@ Once complete, continue to boot from the install drive.
 
 
 
-**Step by Step Pictures:**
+#### Step by Step Pictures
 
 Picture 1: "Open File…" button
 <img
