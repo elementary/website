@@ -159,6 +159,7 @@ To create an elementary OS install drive you'll need a USB flash drive that is a
 
 <a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
 
+![etcher steps](images/docs/installation/etcher.gif)
 
 Open Etcher, then:
 
