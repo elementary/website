@@ -49,6 +49,11 @@
   width: calc(100% - 6px); /* Work around payent-button::before */
 }
 
+#amount-custom:is(:active, :focus, :focus-visible)::placeholder {
+  opacity: 0.6;
+  color: #333;
+}
+
 .focus-reveal {
   margin: 0 3px;
   opacity: 0 !important;
@@ -266,7 +271,11 @@ input:focus + .focus-reveal {
 #showcase.initialized {
   background-color: #3689e6;
   background-image:
-    linear-gradient(to bottom, rgba(13, 82, 191, 0.25), rgba(0, 115, 103, 0.33)),
+    linear-gradient(
+      to bottom,
+      rgba(13, 82, 191, 0.25),
+      rgba(0, 115, 103, 0.33)
+    ),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
     url("../images/home/wallpaper.jpg");
   background-position: center;
@@ -322,12 +331,13 @@ input:focus + .focus-reveal {
   background-color: #667885;
   background-image:
     url("../images/brand/logomark-white.svg"),
-    linear-gradient(to bottom, rgba(54, 137, 230, 0.25), rgba(13, 82, 191, 0.75)),
+    linear-gradient(
+      to bottom,
+      rgba(54, 137, 230, 0.25),
+      rgba(13, 82, 191, 0.75)
+    ),
     url("../images/home/wallpaper.jpg");
-  background-size:
-    contain,
-    cover,
-    cover;
+  background-size: contain, cover, cover;
   background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 50%;
@@ -424,7 +434,7 @@ input:focus + .focus-reveal {
 ***********/
 
 #workflow figure {
-  background-image: url('../images/screenshots/desktop.jpg');
+  background-image: url("../images/screenshots/desktop.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 2px;
@@ -461,7 +471,7 @@ input:focus + .focus-reveal {
 #workflow figure.multitasking .workspace,
 #workflow figure.multitasking::after {
   border-radius: 2px;
-  background-image: url('../images/screenshots/desktop.jpg');
+  background-image: url("../images/screenshots/desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow:
