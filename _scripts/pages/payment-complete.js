@@ -6,6 +6,7 @@
 import jQuery from '~/lib/jquery'
 import { openDownloadOverlay } from '~/widgets/download-modal'
 
+/* eslint-disable promise/catch-or-return */
 Promise.all([jQuery, openDownloadOverlay]).then(([$, openDownloadOverlay]) => {
     $(document).ready(() => {
         openDownloadOverlay()

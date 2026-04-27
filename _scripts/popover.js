@@ -5,6 +5,7 @@
 
 import jQuery from '~/lib/jquery'
 
+/* eslint-disable promise/catch-or-return */
 jQuery.then(($) => {
     $(function () {
         const $document = $(document)

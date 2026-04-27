@@ -4,9 +4,9 @@
  */
 
 import jQuery from '~/lib/jquery'
-
 import Slider from '~/slider'
 
+/* eslint-disable promise/catch-or-return */
 jQuery.then(($) => {
     $(function () {
         // Parse user-agent to detect current platform
