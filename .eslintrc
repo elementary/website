@@ -1,10 +1,37 @@
+// Migrated from eslint-config-standard (deprecated)
+// Now uses maintained packages with equivalent rules
 {
-    "extends": "standard",
+    "extends": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 2024,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "n",
+        "promise"
+    ],
     "rules": {
-        "indent": ["error", 4]
+        // Import rules (standard's style)
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+                "alphabetize": {"order": "asc"}
+            }
+        ],
+
+        // Node rules
+        "n/no-extraneous-require": "error",
+        "n/shebang": "off",
+
+        // Promise rules  
+        "promise/catch-or-return": "error",
+        "promise/no-nesting": "warn"
     },
     "env": {
         "browser": true,
-        "jquery": true
+        "jquery": true,
+        "node": true
     }
 }
