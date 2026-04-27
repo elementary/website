@@ -40,11 +40,7 @@ Make sure to back your important data up to an external location such as a cloud
 
 ## Step-by-step Guide {#choose-operating-system}
 
-<div class="embed">
-<iframe src="https://www.youtube-nocookie.com/embed/3KoCDt4fxcM?modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-Follow the video above, or select the operating system you are currently using to view tailored installation instructions below.
+Follow the guide below, by selecting the operating system you are currently using to view tailored installation instructions below.
 
 <div class="operating-system-choices-container text-center">
 <div id="operating-system-choices" class="column linked">
@@ -60,7 +56,7 @@ Follow the video above, or select the operating system you are currently using t
 
 ### Verify Your Download {#verify-your-download}
 
-Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Assuming you downloaded elementary OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:
 
@@ -87,20 +83,44 @@ If the checksum does not match, you may need to re-download your copy of element
 
 ### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
+To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Rufus". This app is used to create USB stick that your computer can boot from, using .iso file. It works for all kinds of .iso files, not just elementary OS.
 
-<a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
+It can be downloaded from Microsoft directly, using the Windows App Store
 
-![etcher steps](images/docs/installation/etcher.gif)
+<a href="https://apps.microsoft.com/detail/9pc3h3v7q9ch?hl=en-us&gl=US&ocid=pdpshare" class="button suggested-action">Download Rufus</a>
 
-Open Etcher, then:
+#### Step by Step Instructions {#step-by-step}
 
-1. Plug in your spare USB flash drive
-2. Select your downloaded .iso file using the "Select image" button
-3. Etcher should automatically detect your USB drive; if not, select the correct drive
-4. Click the "Flash!" button. It may take a moment to get started.
+1. Plug in your USB flash drive
+2. Open Rufus
+3. Select your USB drive (it should be detected automatically)
+4. Click "SELECT" and choose your downloaded .iso file
+5. If your computer is from 2012 or newer, select "GPT" under "Partition scheme" (recommended)
+6. Click "Start"
 
-Once complete, continue to boot from the install drive.
+<img
+  src="images/docs/installation/rufus1.png"
+  alt="Buttons to select in the user interface"
+  width="400"
+>
+
+7. When prompted, keep the default selection ("ISO image mode") and click "OK". The process will begin and may take a minute or two.
+
+<img
+  src="images/docs/installation/rufus2.png"
+  alt="Selecting ISO writing method"
+  width="400"
+>
+
+8. When complete, the status will show "READY"
+
+<img
+  src="images/docs/installation/rufus3.png"
+  alt="Finished writing the image"
+  width="400"
+>
+
+Now you're ready to boot from the install drive.
 
 ### Booting From the Install Drive {#booting-from-the-installation-medium .clear-float}
 
@@ -117,7 +137,7 @@ In order to start the installation process, you must boot your computer from the
 
 ### Verify Your Download {#verify-your-download}
 
-Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Assuming you downloaded elementary OS to your macOS Downloads folder, open the Terminal app in macOS and run the following command:
 
@@ -179,7 +199,7 @@ If your Mac doesn't recognize your elementary OS USB Install Drive in the boot m
 
 ### Verify Your Download {#verify-your-download}
 
-Verifying your download is an important step: we generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: We generate a "checksum" for elementary OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
 Running the following command in your terminal:
 
@@ -202,18 +222,39 @@ sha256sum {#release_filename}
 
 ### Creating an Install Drive {#creating-an-installation-medium .clear-float}
 
-To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Etcher".
+To create an elementary OS install drive you'll need a USB flash drive that is at least 4 GB in capacity and an app called "Impression".
 
-<a href="https://balena.io/etcher" class="button suggested-action">Download Etcher</a>
+If you do not have flathub set up on your computer, refer to the <a href="https://flathub.org/en/setup">flathub setup instructions</a>
 
-![etcher steps](images/docs/installation/etcher.gif)
+<a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="button suggested-action">Download Impression</a>
 
-Open Etcher, then:
+#### Step by Step Instructions {#step-by-step}
 
-1. Plug in your spare USB flash drive
-2. Select your downloaded .iso file using the "Select image" button
-3. Etcher should automatically detect your USB drive; if not, select the correct drive
-4. Click the "Flash!" button. It may take a moment to get started.
+1. Plug in your USB flash drive
+2. Open Impression
+3. Click "Open File…" and select your downloaded .iso file
+
+<img
+  src="images/docs/installation/impression1.png"
+  alt="File selection button"
+  width="400"
+>
+
+4. Select your USB drive (it should be detected automatically)
+
+<img
+  src="images/docs/installation/impression2.png"
+  alt="Drive selection button"
+  width="400"
+>
+
+5. Click "Write" to begin. The process may take a moment to start.
+
+<img
+  src="images/docs/installation/impression3.png"
+  alt="Progress bar showing the iso being written"
+  width="400"
+>
 
 Once complete, continue to boot from the install drive.
 
