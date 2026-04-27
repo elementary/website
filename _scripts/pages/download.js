@@ -5,9 +5,8 @@
 
 /* global plausible */
 
-import jQuery from '~/lib/jquery'
-
 import config from '~/config'
+import jQuery from '~/lib/jquery'
 
 import { openDownloadOverlay } from '~/widgets/download-modal'
 
