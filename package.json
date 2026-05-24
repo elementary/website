@@ -9,7 +9,7 @@
   "dependencies": {
     "cssnano": "^8.0.1",
     "glob": "^13.0.6",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^5.0.4",
     "gulp-imagemin": "^9.2.0",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "eslint": "^8.57.1",
+    "gulp-cli": "^3.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^16.6.2",
