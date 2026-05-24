@@ -65,7 +65,7 @@ gulp.task("jpg", () => {
  */
 gulp.task("gif", () => {
   const base = "_images";
-  const src = ["_images/**/*.gif", "_images/**/*.gif"];
+  const src = ["_images/**/*.gif"];
   const dest = "images";
 
   return gulp
