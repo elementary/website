@@ -1,6 +1,6 @@
 ---
 
-name: CI
+name: Lint
 
 on:
   pull_request:
@@ -17,8 +17,22 @@ permissions:
   contents: read
 
 jobs:
-  Build:
+  Lint:
+    name: Lint (${{ matrix.label }})
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: CSS
+            command: npx stylelint "_styles/**/*.css" -f github
+          - label: JS
+            command: ./_tests/javascript.sh
+          - label: PHP
+            command: ./_tests/php.sh
+          - label: Translations
+            command: php ./_tests/translations.php
 
     steps:
       - name: Checkout
@@ -27,16 +41,16 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # v2.37.1
         with:
-          php-version: 8.1 # This PHP version matches the server.
+          php-version: '8.5'
           tools: composer
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 18 # This Node version matches the server.
+          node-version: 'lts/*'
 
       - name: Install
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Lint
+        run: ${{ matrix.command }}
