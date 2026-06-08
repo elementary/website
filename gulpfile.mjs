@@ -31,7 +31,7 @@ gulp.task("png", () => {
   const dest = "images";
 
   return gulp
-    .src(src, { base })
+    .src(src, { base, encoding: false })
     .pipe(changed(dest))
     .pipe(cache("png"))
     .pipe(imagemin())
@@ -50,7 +50,7 @@ gulp.task("jpg", () => {
   const dest = "images";
 
   return gulp
-    .src(src, { base })
+    .src(src, { base, encoding: false })
     .pipe(changed(dest))
     .pipe(cache("jpg"))
     .pipe(imagemin())
@@ -65,11 +65,11 @@ gulp.task("jpg", () => {
  */
 gulp.task("gif", () => {
   const base = "_images";
-  const src = ["_images/**/*.gif", "_images/**/*.gif"];
+  const src = ["_images/**/*.gif"];
   const dest = "images";
 
   return gulp
-    .src(src, { base })
+    .src(src, { base, encoding: false })
     .pipe(changed(dest))
     .pipe(cache("gif"))
     .pipe(imagemin())
@@ -103,7 +103,7 @@ gulp.task("svg", () => {
   const dest = "images";
 
   return gulp
-    .src(src, { allowEmpty: true, base })
+    .src(src, { allowEmpty: true, base, encoding: false })
     .pipe(changed(dest))
     .pipe(cache("svg"))
     .pipe(imagemin())
@@ -126,7 +126,7 @@ gulp.task("images", gulp.parallel("png", "jpg", "svg", "gif"));
  */
 gulp.task("png:rebuild", () => {
   return gulp
-    .src(["_images/**/*.png"], { base: "_images" })
+    .src(["_images/**/*.png"], { base: "_images", encoding: false })
     .pipe(imagemin())
     .pipe(gulp.dest("images"));
 });
@@ -139,7 +139,7 @@ gulp.task("png:rebuild", () => {
  */
 gulp.task("jpg:rebuild", () => {
   return gulp
-    .src(["_images/**/*.jpg", "_images/**/*.jpeg"], { base: "_images" })
+    .src(["_images/**/*.jpg", "_images/**/*.jpeg"], { base: "_images", encoding: false })
     .pipe(imagemin())
     .pipe(gulp.dest("images"));
 });
@@ -152,7 +152,7 @@ gulp.task("jpg:rebuild", () => {
  */
 gulp.task("gif:rebuild", () => {
   return gulp
-    .src(["_images/**/*.gif"], { base: "_images" })
+    .src(["_images/**/*.gif"], { base: "_images", encoding: false })
     .pipe(imagemin())
     .pipe(gulp.dest("images"));
 });
@@ -182,7 +182,7 @@ gulp.task("svg:rebuild", () => {
   ];
 
   return gulp
-    .src(src, { allowEmpty: true, base: "_images" })
+    .src(src, { allowEmpty: true, base: "_images", encoding: false })
     .pipe(imagemin())
     .pipe(gulp.dest("images"));
 });
