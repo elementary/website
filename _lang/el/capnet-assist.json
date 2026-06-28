@@ -1,8 +1,8 @@
 {
-    "You’re connected!": "",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "",
-    "Why is this window appearing?": "",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
-    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "",
-    "You’re connected! &sdot; elementary": ""
+    "You’re connected!": "Έχετε συνδεθεί!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Η σύνδεσή σας στο διαδίκτυο φαίνεται να λειτουργεί. Μπορείτε να κλείσετε με ασφάλεια αυτό το παράθυρο και να συνεχίσετε να χρησιμοποιείτε τη συσκευή σας.",
+    "Why is this window appearing?": "Γιατί εμφανίζεται αυτό το παράθυρο;",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "Το elementary OS ελέγχει αυτόματα τη σύνδεσή σας στο διαδίκτυο όταν συνδέεστε σε ένα νέο δίκτυο Wi-Fi. Εάν εντοπίσει ότι δεν υπάρχει σύνδεση στο διαδίκτυο (δηλαδή αν συνδέεστε σε πύλη υποδοχής σε μια καφετέρια ή κάποια άλλη δημόσια τοποθεσία), θα εμφανιστεί αυτό το παράθυρο με τη σελίδα σύνδεσης.",
+    "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "Κάποια δίκτυα μπορεί αρχικά να φαίνεται ότι είναι πύλες υποδοχής, ενεργοποιώντας αυτό το παράθυρο, αλλά τελικά συνδέονται. Σε αυτές τις περιπτώσεις, θα δείτε το συγκεκριμένο μήνυμα και μπορείτε να κλείσετε με ασφάλεια το παράθυρο.",
+    "You’re connected! &sdot; elementary": "Έχετε συνδεθεί! &sdot; elementary"
 }
