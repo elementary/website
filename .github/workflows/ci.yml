@@ -31,7 +31,7 @@ jobs:
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 18 # This Node version matches the server.
 
