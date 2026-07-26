@@ -34,18 +34,18 @@ include $template['alert'];
 
     <div class="logomarks">
         <figure>
-            <img src="https://raw.githubusercontent.com/elementary/brand/master/logomark.svg" alt="elementary Logomark" />
+            <img src="https://raw.githubusercontent.com/elementary/brand/main/logomark.svg" alt="elementary Logomark" />
             <figcaption>Default logomark</figcaption>
         </figure>
         <figure>
-            <img src="https://raw.githubusercontent.com/elementary/brand/master/logomark-alt.svg" alt="Alternate elementary Logomark" />
+            <img src="https://raw.githubusercontent.com/elementary/brand/main/logomark-alt.svg" alt="Alternate elementary Logomark" />
             <figcaption>Alternate logomark</figcaption>
         </figure>
     </div>
     <p>The “e” logomark is to be used to refer to elementary, Inc., especially when a square ratio is required. It should be used at larger sizes and when alongside similarly-weighted logos. The thinner, alternate logomark may be used in smaller contexts or when the default logomark feels too heavy.</p>
 
     <figure>
-        <img src="https://raw.githubusercontent.com/elementary/brand/master/logotype.svg" alt="elementary Logotype" />
+        <img src="https://raw.githubusercontent.com/elementary/brand/main/logotype.svg" alt="elementary Logotype" />
         <figcaption>Logotype</figcaption>
     </figure>
 
