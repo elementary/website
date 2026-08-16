@@ -1,7 +1,7 @@
 {
-    "Whoops! That link has expired.": "",
-    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "",
-    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "",
-    "Go to Home Page": "",
-    "Download Link Expired &sdot; elementary": ""
+    "Whoops! That link has expired.": "Ax! Dema ew girêdan qediya.",
+    "If you’re trying to download elementary OS, please head back to <a href=\"/\">the home page</a> for the most up-to-date version. If you were brought here from a third-party website, it is possible they were attempting to bypass the payment prompt or installation directions. Please inform them that download links are temporary, per-user, and load-balanced. The correct way to link to the download is to link to <a href=\"https://elementary.io\">elementary.io</a>.": "Ku tu hewl didî ku elementary OS daxînî, ji bo guhertoya herî nû tika ye vegere <a href=\"/\">rûpela sereke</a>. Ku tu ji malpereke sêyemîn hatibî vir, pêkan e ku wan hewl daba paşguhkirina daxwaza daxuyaniya diravdayînê yan rêwerzên sazkirinê bikin. Tika ye ji wan re agahdar bikin ku girêdanên daxistinê demekî ne, ji bo her bikarhênerekî taybet in û li ser rajekaran têne belavkirin. Riya rast a girêdanê bo daxistinê ew e ku tu girêdanê bidî ser <a href=\"https://elementary.io\">elementary.io</a>.",
+    "If you were looking for something else, feel free to <a href=\"https://github.com/elementary/website/issues/new\">file an issue on our GitHub</a>.": "Ku tu li tiştekî din digeriya, tu dikarî <a href=\"https://github.com/elementary/website/issues/new\">pirsgirêkekê li ser GitHub a me ragihînî</a>.",
+    "Go to Home Page": "Biçe rûpela sereke",
+    "Download Link Expired &sdot; elementary": "Dema girêdana daxistinê qediya &sdot; elementary"
 }
