@@ -1,8 +1,8 @@
 {
-    "You’re connected!": "",
-    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "",
-    "Why is this window appearing?": "",
-    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "",
+    "You’re connected!": "Tu girêdayî yî!",
+    "Your Internet connection appears to be working. You can safely close this window and continue using your device.": "Xuya dike ku girêdana te ya înternetê dixebite. Tu dikarî bi ewlehî vê çarçoveyê bigirî û amûra xwe bi kar bînî.",
+    "Why is this window appearing?": "Çima ev çarçove xuya dibe?",
+    "elementary OS automatically checks your Internet connection when you connect to a new Wi-Fi network. If it detects there is not an Internet connection (i.e. if you are connecting to a captive portal at a coffee shop or other public location), this window will appear and display the login page.": "elementary OS dema ku tu bi toreke Wi-Fi ya nû be girê didî, girêdana te ya înternetê xweber kontrol dike. Ku ew bibîne ku girêdana înternetê tune ye (b.m. ku tu li kafeyekê an cîhek din a giştî bi portalek girtî ve girê didî), ev çarçove wê xuya bibe û rûpela têketinê nîşan bide.",
     "Some networks can appear to be a captive portal at first, triggering this window, then actually end up connecting. In those cases, you'll see this message and can safely close the window.": "",
     "You’re connected! &sdot; elementary": ""
 }
