@@ -54,19 +54,9 @@ include $template['alert'];
     </div>
 
     <div class="grid">
-        <div class="third">
-            <i class="fab fa-paypal"></i>
-            <p>Easily use a debit card, credit card, or PayPal account. You can choose a one-time payment or set up recurring payments.</p>
-            <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="LG382EHQVTDYN">
-            <input type="submit" value="Use PayPal" name="submit" title="PayPal - The safer, easier way to pay online!" class="button flat">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-        <div class="third">
+        <div class="half">
             <img class="logo" alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
-            <p>Set up a recurring contribution through Liberapay, the open source and non-profit funding platform.</p>
+            <p>Set up sponsorships with debit, credit, or SEPA through Liberapay: the open source and non-profit funding platform.</p>
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
     </div>
