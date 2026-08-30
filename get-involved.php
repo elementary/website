@@ -56,7 +56,7 @@ include $template['alert'];
     <div class="grid">
         <div class="half">
             <img class="logo" alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
-            <p>Set up sponsorships with debit, credit, SEPA, or PayPal through Liberapay: the open source and non-profit funding platform.</p>
+            <p>Set up sponsorships with debit, credit, or SEPA through Liberapay: the open source and non-profit funding platform.</p>
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
     </div>
