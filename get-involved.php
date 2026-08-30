@@ -39,7 +39,7 @@ include $template['alert'];
             <p class="text-center">With the help of our users and fans, we've been able to grow from a small group of passionate volunteers into a tiny but sustainable company. Every little bit of support helps us improve elementary OS and tackle even more ambitious problems.</p>
         </div>
     </div>
-  
+
     <div class="grid">
         <div class="half">
             <i class="fab fa-github" title="GitHub Sponsors"></i>
