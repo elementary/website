@@ -52,7 +52,6 @@ include $template['alert'];
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Back on Patreon</a>
         </div>
     </div>
-
   
     <div class="grid">
         <div class="half">
@@ -61,7 +60,6 @@ include $template['alert'];
             <a class="button flat" title="Liberapay" href="https://liberapay.com/elementary/" target="_blank" rel="noopener">Contribute with Liberapay</a>
         </div>
     </div>
-
 </section>
 
 <section id="translations">
