@@ -52,7 +52,7 @@ include $template['alert'];
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Back on Patreon</a>
         </div>
     </div>
-  
+
     <div class="grid">
         <div class="half">
             <img class="logo" alt="Liberapay" src="images/get-involved/liberapay_logo_black.svg">
