@@ -5,7 +5,6 @@
  * Live-generated JSON configuration for use in client side javascript
  */
 
-require_once __DIR__.'/../_backend/geolocate.download.php'; // provides $region, $timecode
 require_once __DIR__.'/../_backend/config.loader.php';
 
 $output = array(
@@ -21,12 +20,6 @@ $output = array(
 
     'keys' => array(
         'stripe' => $config['stripe_pk']
-    ),
-
-    'user' => array(
-        'ip' => $ip,
-        'region' => $region,
-        'timecode' => $timecode
     )
 );
 
