@@ -13,11 +13,6 @@ $output = array(
         'version' => $config['release_version']
     ),
 
-    'previous' => array(
-        'title' => $config['previous_title'],
-        'version' => $config['previous_version']
-    ),
-
     'keys' => array(
         'stripe' => $config['stripe_pk']
     )
