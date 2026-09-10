@@ -42,7 +42,7 @@ The Date & Time indicator at the center of the Panel displays the current date a
 
 #### System Indicators {#indicators}
 
-The System Indicators at the right of the Panel display the status of device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.
+The System Indicators at the right of the Panel display the status of the device, i.e. network connections, battery, sound input and output, notifications, etc. Selecting an indicator exposes more information and related actions.
 
 Hovering an indicator with the mouse cursor also displays quick information and the middle-click or three finger tap shortcut for the indicator. For example:
 
@@ -86,7 +86,7 @@ You can also drag a window to the top of the desktop or double-click its header 
 
 ### Resizing {#resizing}
 
-Most app windows can be resized by draging from any edge of the window. You can also secondary-click a window's header bar and choose **Resize** or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.
+Most app windows can be resized by dragging from any edge of the window. You can also secondary-click a window's header bar and choose **Resize** or press <kbd>Alt</kbd><kbd>F8</kbd> to enter a resize mode: move the mouse cursor in the direction you want to resize the window.
 
 ## Multitasking {#multitasking}
 
@@ -176,8 +176,8 @@ Keyboard shortcuts in elementary OS are generally exposed contextually in toolti
 
 To view an overlay of desktop keyboard shortcuts, press the <kbd title="Super, or the Windows or Command key">⌘</kbd> key to open the [Applications Menu](#applications-menu), start typing "Shortcuts", and select the first entry in the **Applications** category.
 
-Additionally, you bind the shortcuts overlay to open on <kbd title="Super, or the Windows or Command key">⌘</kbd> key in **[System Settings](#system-settings)** → **Keyboard** → **Layout** (⌘ key behavior: Shortcut Overlay).
+Additionally, you can bind the shortcuts overlay to open on <kbd title="Super, or the Windows or Command key">⌘</kbd> key in **[System Settings](#system-settings)** → **Keyboard** → **Layout** (⌘ key behavior: Shortcut Overlay).
 
 ![Keyboard Shortcuts](../images/docs/learning-the-basics/shortcut-overlay.png)
 
-Desktop keyboard shorcuts can be customized from the **Keyboard Settings…** option in the shortcuts overlay or in **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts**.
+Desktop keyboard shortcuts can be customized from the **Keyboard Settings…** option in the shortcuts overlay or in **[System Settings](#system-settings)** → **Keyboard** → **Shortcuts**.
