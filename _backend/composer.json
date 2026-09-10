@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "stripe/stripe-php": "21.3.0",
+        "stripe/stripe-php": "21.3.1",
         "erusev/parsedown-extra": "^0.9",
         "ext-intl": ">=7",
         "ext-json": ">=7",
