@@ -2,7 +2,7 @@
 require_once __DIR__.'/_backend/preload.php';
 
 $page['title'] = 'Thank You for Downloading elementary OS';
-$page['theme-color'] = '#3E4E54';
+
 
 include $template['header'];
 include $template['alert'];

@@ -54,7 +54,10 @@ $l10n->beginHtmlTranslation();
 
         <meta name="description" content="<?php echo !empty($page['description']) ? $page['description'] : $sitewide['description']; ?>">
         <meta name="author"      content="<?php echo !empty($page['author']) ? $page['author'] : $sitewide['author']; ?>">
-        <meta name="theme-color" content="<?php echo !empty($page['theme-color']) ? $page['theme-color'] : $sitewide['theme-color']; ?>">
+
+        <?php if (!empty($page['theme-color'])) { ?>
+        <meta name="theme-color" content="<?php echo $page['theme-color']; ?>">
+        <?php } ?>
 
         <meta name="twitter:card"        content="summary_large_image">
         <meta name="twitter:site"        content="@elementary">
