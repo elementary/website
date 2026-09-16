@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d365825137d8ec920a698e51b9c6db46",
+    "content-hash": "d4f94aede73be5b5ab591967bf825e7a",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -434,29 +434,30 @@
         },
         {
             "name": "maxmind-db/reader",
-            "version": "v1.13.1",
+            "version": "v1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "2194f58d0f024ce923e685cdf92af3daf9951908"
+                "reference": "f3c92f68b3bec42a9aa780368399e03dc6b91e89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/2194f58d0f024ce923e685cdf92af3daf9951908",
-                "reference": "2194f58d0f024ce923e685cdf92af3daf9951908",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/f3c92f68b3bec42a9aa780368399e03dc6b91e89",
+                "reference": "f3c92f68b3bec42a9aa780368399e03dc6b91e89",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
             },
             "conflict": {
-                "ext-maxminddb": "<1.11.1 || >=2.0.0"
+                "ext-maxminddb": "<1.14.0 || >=2.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "3.*",
                 "phpstan/phpstan": "*",
                 "phpunit/phpunit": ">=8.0.0,<10.0.0",
-                "squizlabs/php_codesniffer": "4.*"
+                "squizlabs/php_codesniffer": "4.*",
+                "symfony/polyfill-php80": "^1.33"
             },
             "suggest": {
                 "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
@@ -478,7 +479,7 @@
                 {
                     "name": "Gregory J. Oschwald",
                     "email": "goschwald@maxmind.com",
-                    "homepage": "https://www.maxmind.com/"
+                    "homepage": "https://www.maxmind.com/en/home"
                 }
             ],
             "description": "MaxMind DB Reader API",
@@ -492,9 +493,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maxmind/MaxMind-DB-Reader-php/issues",
-                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.13.1"
+                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.14.0"
             },
-            "time": "2025-11-21T22:24:26+00:00"
+            "time": "2026-09-10T22:02:38+00:00"
         },
         {
             "name": "maxmind/web-service-common",
@@ -803,16 +804,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v21.3.1",
+            "version": "v21.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "12986995cd5e229cc094d4b57de056f8e2e6e5a9"
+                "reference": "0d8b075e1a97d15c5324353a5277d0ea686ea525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/12986995cd5e229cc094d4b57de056f8e2e6e5a9",
-                "reference": "12986995cd5e229cc094d4b57de056f8e2e6e5a9",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/0d8b075e1a97d15c5324353a5277d0ea686ea525",
+                "reference": "0d8b075e1a97d15c5324353a5277d0ea686ea525",
                 "shasum": ""
             },
             "require": {
@@ -859,9 +860,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v21.3.1"
+                "source": "https://github.com/stripe/stripe-php/tree/v21.3.2"
             },
-            "time": "2026-09-01T18:42:58+00:00"
+            "time": "2026-09-09T20:40:43+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
