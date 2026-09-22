@@ -4,7 +4,7 @@ require_once __DIR__.'/_backend/preload.php';
 require_once __DIR__.'/_backend/os-payment.php';
 
 $page['title'] = 'Thank You for Downloading elementary OS';
-$page['theme-color'] = '#3E4E54';
+
 
 $page['scripts'] = array(
     'scripts/download.js',

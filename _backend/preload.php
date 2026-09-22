@@ -9,7 +9,7 @@ $sitewide['title'] = 'elementary';
 $sitewide['author'] = 'elementary, Inc.';
 $sitewide['description'] = 'Thoughtful, capable, and ethical computing';
 $sitewide['image'] = 'https://elementary.io/images/preview.png';
-$sitewide['theme-color'] = '#3689e6';
+
 
 // Autodetect website root path
 $serverRoot = $_SERVER['DOCUMENT_ROOT'];
