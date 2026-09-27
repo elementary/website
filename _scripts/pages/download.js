@@ -148,7 +148,6 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
             }
             plausible('Download', {
                 props: {
-                    Region: config.user.region,
                     Method: downloadMethod,
                     Architecture: downloadArchitecture,
                     Version: config.release.version

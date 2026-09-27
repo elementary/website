@@ -118,7 +118,7 @@
     "&ldquo;Lightweight and fast… and has a real flair for design and appearances.&rdquo;": "&ldquo;Kevyt ja nopea… erityisesti designiin ja ulkoasuun on kiinnitetty huomiota.&rdquo;",
     "Close": "Sulje",
     "Choose a Download": "Valitse ladattava tiedosto",
-    "Download the install media for your computer's processor from a localized server or by magnet link": "Lataa tietokoneesi suorittimelle soveltuva asennusmedia lähellä olevalta palvelimelta tai magneettilinkin kautta",
+    "Download the install media for your computer's processor by direct download or by magnet link": "",
     "For help and more info, see the": "Lisätietoja:",
     "installation guide": "asennusohje",
     "ARM® 64-bit": "ARM® 64-bittinen",
