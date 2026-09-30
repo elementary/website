@@ -16,7 +16,7 @@
     "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.1.0",
     "gulp-rev": "^12.0.0",
-    "postcss-preset-env": "^11.5.3",
+    "postcss-preset-env": "^11.5.4",
     "scriptjs": "^2.5.9",
     "webpack": "^5.111.1",
     "webpack-manifest-plugin": "^6.0.1"
@@ -25,7 +25,7 @@
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-n": "^18.3.0",
+    "eslint-plugin-n": "^18.4.0",
     "eslint-plugin-promise": "^7.3.0",
     "globals": "^17.12.0",
     "gulp-cli": "^3.0.0",
