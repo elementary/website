@@ -31,6 +31,7 @@ export default class Showcase {
         this.index = options.index || '#showcase-index'
         this.slides = options.slides || []
         this.fixed = options.fixed || false
+        this.timeout = false
 
         this.current = null
     }
@@ -46,7 +47,7 @@ export default class Showcase {
             const $iChoice = $("[aria-controls='" + n + "']", this.container)
             const $iContainer = $('#' + n, this.container)
 
-            $iContainer.prepend('<button type="button" class="showcase-back" aria-controls="showcase-index" aria-expanded="false" aria-label="Back"></button>')
+            $iContainer.prepend('<button type="button" class="showcase-back" aria-controls="showcase-index" aria-expanded="false" aria-label="Back" tabindex="-1"></button>')
 
             // each choice button
             const that = this
@@ -109,10 +110,22 @@ export default class Showcase {
             }
         })
 
+        // we want to only mark them as hidden after some time has elapsed
+        // this allows us to keep the slide height animation
+        let $targetsToHide = [];
+        let $targetToFocus = false;
+
         if (rSlide === 'index') {
             $(this.index, this.container).addClass('active').attr('hidden', false)
+            if (this.current) {
+                $targetToFocus = $('button[aria-controls="' + this.current + '"]')
+            }
+            else {
+                $targetToFocus = $(this.index)
+            }
         } else {
-            $(this.index, this.container).removeClass('active').attr('hidden', true)
+            $(this.index, this.container).removeClass('active')
+            $targetsToHide.push($(this.index, this.container))
         }
 
         // iterates through slides based on this.slides
@@ -122,8 +135,12 @@ export default class Showcase {
 
             if (n === rSlide) { // if correct slide
                 $n.addClass('active').attr('hidden', false)
+                $n.find('.showcase-back').attr('tabindex', 0)
+                $targetToFocus = $n
             } else {
-                $n.removeClass('active').attr('hidden', true)
+                $n.removeClass('active')
+                $n.find('.showcase-back').attr('tabindex', -1)
+                $targetsToHide.push($n)
             }
         }
 
@@ -139,6 +156,15 @@ export default class Showcase {
         }
 
         this.resize() // resize the container
+
+        // hide and focus roughly after animations are complete
+        clearTimeout(this.timeout)
+        this.timeout = setTimeout(function() {
+            for (const $target of $targetsToHide) {
+                $target.attr('hidden', true)
+            }
+            $targetToFocus.focus()
+        }, 500)
     }
 
     /**

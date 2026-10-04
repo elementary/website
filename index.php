@@ -230,7 +230,7 @@ include $template['alert'];
             <button type="button" aria-controls="showcase-camera" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera app icon"/>Camera</li></button>
           </ul>
         </div>
-        <div class="showcase-tab" id="showcase-music" hidden>
+        <div class="showcase-tab" id="showcase-music" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/music.png" width="704" height="531" alt="Music screenshot" />
             <div class="app-display__description">
@@ -242,7 +242,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-epiphany" hidden>
+        <div class="showcase-tab" id="showcase-epiphany" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/web.png" alt="Web screenshot" />
             <div class="app-display__description">
@@ -254,7 +254,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-mail" hidden>
+        <div class="showcase-tab" id="showcase-mail" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/mail.png" width="1127" height="716" alt="Mail screenshot" />
             <div class="app-display__description">
@@ -266,7 +266,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-photos" hidden>
+        <div class="showcase-tab" id="showcase-photos" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/photos.png" width="1174" height="730" alt="Photos screenshot" />
             <div class="app-display__description">
@@ -278,7 +278,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-videos" hidden>
+        <div class="showcase-tab" id="showcase-videos" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/videos.png" width="1124" height="555" alt="Videos screenshot" />
             <div class="app-display__description">
@@ -290,7 +290,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-calendar" hidden>
+        <div class="showcase-tab" id="showcase-calendar" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/calendar.png" width="1039" height="765" alt="Calendar screenshot" />
             <div class="app-display__description">
@@ -302,7 +302,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-files" hidden>
+        <div class="showcase-tab" id="showcase-files" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/files.png" width="924" height="608" alt="Files screenshot" />
             <div class="app-display__description">
@@ -314,7 +314,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-terminal" hidden>
+        <div class="showcase-tab" id="showcase-terminal" hidden tabindex="-1">
           <div class="app-display">
             <div class="app-display__image">
               <img src="images/screenshots/terminal.png" width="789" height="557" alt="Terminal screenshot" />
@@ -328,7 +328,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-code" hidden>
+        <div class="showcase-tab" id="showcase-code" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/code.png" width="1182" height="703" alt="Code screenshot" />
             <div class="app-display__description">
@@ -340,7 +340,7 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-camera" hidden>
+        <div class="showcase-tab" id="showcase-camera" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/camera.png" width="704" height="544" alt="Camera screenshot" />
             <div class="app-display__description">
