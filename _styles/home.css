@@ -165,7 +165,6 @@ input:focus + .focus-reveal {
 }
 
 #showcase > div {
-  display: block;
   margin: auto;
   width: 100%;
   padding: 0 24px;

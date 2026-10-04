@@ -31,7 +31,6 @@ export default class Showcase {
         this.index = options.index || '#showcase-index'
         this.slides = options.slides || []
         this.fixed = options.fixed || false
-        this.timeout = false
 
         this.current = null
     }
@@ -99,8 +98,10 @@ export default class Showcase {
             return console.error("could not find requested slide '" + rSlide + "'") // log an error
         }
 
+        const $container = $(this.container)
+
         // update aria-expanded to alert which slide is active
-        $(this.container).find('button[aria-controls]').each(function() {
+        $container.find('button[aria-controls]').each(function() {
             const $button = $(this)
             if ($button.attr('aria-controls') === rSlide) {
                 $button.attr('aria-expanded', true)
@@ -115,17 +116,50 @@ export default class Showcase {
         let $targetsToHide = [];
         let $targetToFocus = false;
 
+        /**
+         * unhide a specific jQuery element
+         * 
+         * we first set the hidden attribute to false, so that the DOM tree
+         * can update. we then set the active class on the next frame to allow
+         * the animation to play nicely
+         * 
+         * @param {*} $target 
+         */
+        const unhide = function($target) {
+            $target.attr('hidden', false)
+            requestAnimationFrame(function() {
+                $target.addClass('active')
+            })
+            $target.find('.showcase-back').attr('tabindex', 0)
+        }
+
+        /**
+         * hide a specific jQuery element
+         * 
+         * we don't need to worry about any animation frames here!
+         * 
+         * @param {*} $target 
+         */
+        const hide = function($target) {
+            $target.removeClass('active')
+            $target.find('.showcase-back').attr('tabindex', -1)
+            $targetsToHide.push($target)
+        }
+
+        const $indexSlide = $(this.index, this.container)
+
         if (rSlide === 'index') {
-            $(this.index, this.container).addClass('active').attr('hidden', false)
+            unhide($indexSlide)
+
             if (this.current) {
+                // focus the previous button when returning to the index
                 $targetToFocus = $('button[aria-controls="' + this.current + '"]')
             }
             else {
                 $targetToFocus = $(this.index)
             }
         } else {
-            $(this.index, this.container).removeClass('active')
-            $targetsToHide.push($(this.index, this.container))
+            hide($indexSlide)
         }
 
         // iterates through slides based on this.slides
@@ -134,37 +168,33 @@ export default class Showcase {
             const $n = $('#' + n, this.container) // current iterated slide
 
             if (n === rSlide) { // if correct slide
-                $n.addClass('active').attr('hidden', false)
-                $n.find('.showcase-back').attr('tabindex', 0)
+                unhide($n)
                 $targetToFocus = $n
             } else {
-                $n.removeClass('active')
-                $n.find('.showcase-back').attr('tabindex', -1)
-                $targetsToHide.push($n)
+                hide($n)
             }
         }
 
         this.current = rSlide
-        $(this.container).trigger('change', {
+        $container.trigger('change', {
             active: rSlide
         })
 
         if (this.current !== 'index') {
             $('body').animate({
-                scrollTop: $(this.container).offset().top
+                scrollTop: $container.offset().top
             }, 100)
         }
 
         this.resize() // resize the container
 
         // hide and focus roughly after animations are complete
-        clearTimeout(this.timeout)
-        this.timeout = setTimeout(function() {
+        $container.one('transitionend', function() {
             for (const $target of $targetsToHide) {
                 $target.attr('hidden', true)
             }
             $targetToFocus.focus()
-        }, 500)
+        })
     }
 
     /**
