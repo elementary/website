@@ -47,9 +47,14 @@ body {
 **************/
 
 a {
-  color: #08c;
-  fill: #08c;
+  color: #007dbc;
+  fill: #007dbc;
   text-decoration: none;
+}
+
+section.grey a {
+  color: #0079b6;
+  fill: #0079b6;
 }
 
 a:focus {

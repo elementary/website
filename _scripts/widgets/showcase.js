@@ -43,16 +43,16 @@ export default class Showcase {
     start () {
         for (let i = 0; i < this.slides.length; i++) {
             const n = this.slides[i]
-            const $iChoice = $("[href$='" + n + "']", this.container)
+            const $iChoice = $("[aria-controls='" + n + "']", this.container)
             const $iContainer = $('#' + n, this.container)
 
-            $iContainer.prepend('<div class="showcase-back"></div>')
+            $iContainer.prepend('<button type="button" class="showcase-back" aria-controls="showcase-index" aria-expanded="false" aria-label="Back"></button>')
 
             // each choice button
             const that = this
             $iChoice.on('click', function (e) {
                 e.preventDefault()
-                that.slideTo($(this).attr('href').split('#').pop()) // slide on click of button
+                that.slideTo($(this).attr('aria-controls')) // slide on click of button
             })
         }
 
@@ -98,10 +98,21 @@ export default class Showcase {
             return console.error("could not find requested slide '" + rSlide + "'") // log an error
         }
 
+        // update aria-expanded to alert which slide is active
+        $(this.container).find('button[aria-controls]').each(function() {
+            const $button = $(this)
+            if ($button.attr('aria-controls') === rSlide) {
+                $button.attr('aria-expanded', true)
+            }
+            else {
+                $button.attr('aria-expanded', false)
+            }
+        })
+
         if (rSlide === 'index') {
-            $(this.index, this.container).addClass('active')
+            $(this.index, this.container).addClass('active').attr('hidden', false)
         } else {
-            $(this.index, this.container).removeClass('active')
+            $(this.index, this.container).removeClass('active').attr('hidden', true)
         }
 
         // iterates through slides based on this.slides
@@ -110,9 +121,9 @@ export default class Showcase {
             const $n = $('#' + n, this.container) // current iterated slide
 
             if (n === rSlide) { // if correct slide
-                $n.addClass('active')
+                $n.addClass('active').attr('hidden', false)
             } else {
-                $n.removeClass('active')
+                $n.removeClass('active').attr('hidden', true)
             }
         }
 
