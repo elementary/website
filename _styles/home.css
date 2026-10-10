@@ -165,7 +165,6 @@ input:focus + .focus-reveal {
 }
 
 #showcase > div {
-  display: block;
   margin: auto;
   width: 100%;
   padding: 0 24px;
@@ -218,6 +217,17 @@ input:focus + .focus-reveal {
 
 #showcase #showcase-grid a {
   color: inherit;
+}
+
+#showcase button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  background-image: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  text-shadow: inherit;
 }
 
 /********************

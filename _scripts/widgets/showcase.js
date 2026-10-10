@@ -43,16 +43,16 @@ export default class Showcase {
     start () {
         for (let i = 0; i < this.slides.length; i++) {
             const n = this.slides[i]
-            const $iChoice = $("[href$='" + n + "']", this.container)
+            const $iChoice = $("[aria-controls='" + n + "']", this.container)
             const $iContainer = $('#' + n, this.container)
 
-            $iContainer.prepend('<div class="showcase-back"></div>')
+            $iContainer.prepend('<button type="button" class="showcase-back" aria-controls="showcase-index" aria-expanded="false" aria-label="Back" tabindex="-1"></button>')
 
             // each choice button
             const that = this
             $iChoice.on('click', function (e) {
                 e.preventDefault()
-                that.slideTo($(this).attr('href').split('#').pop()) // slide on click of button
+                that.slideTo($(this).attr('aria-controls')) // slide on click of button
             })
         }
 
@@ -98,10 +98,68 @@ export default class Showcase {
             return console.error("could not find requested slide '" + rSlide + "'") // log an error
         }
 
+        const $container = $(this.container)
+
+        // update aria-expanded to alert which slide is active
+        $container.find('button[aria-controls]').each(function() {
+            const $button = $(this)
+            if ($button.attr('aria-controls') === rSlide) {
+                $button.attr('aria-expanded', true)
+            }
+            else {
+                $button.attr('aria-expanded', false)
+            }
+        })
+
+        // we want to only mark them as hidden after some time has elapsed
+        // this allows us to keep the slide height animation
+        let $targetsToHide = [];
+        let $targetToFocus = false;
+
+        /**
+         * unhide a specific jQuery element
+         * 
+         * we first set the hidden attribute to false, so that the DOM tree
+         * can update. we then set the active class on the next frame to allow
+         * the animation to play nicely
+         * 
+         * @param {*} $target 
+         */
+        const unhide = function($target) {
+            $target.attr('hidden', false)
+            requestAnimationFrame(function() {
+                $target.addClass('active')
+            })
+            $target.find('.showcase-back').attr('tabindex', 0)
+        }
+
+        /**
+         * hide a specific jQuery element
+         * 
+         * we don't need to worry about any animation frames here!
+         * 
+         * @param {*} $target 
+         */
+        const hide = function($target) {
+            $target.removeClass('active')
+            $target.find('.showcase-back').attr('tabindex', -1)
+            $targetsToHide.push($target)
+        }
+
+        const $indexSlide = $(this.index, this.container)
+
         if (rSlide === 'index') {
-            $(this.index, this.container).addClass('active')
+            unhide($indexSlide)
+
+            if (this.current) {
+                // focus the previous button when returning to the index
+                $targetToFocus = $('button[aria-controls="' + this.current + '"]')
+            }
+            else {
+                $targetToFocus = $(this.index)
+            }
         } else {
-            $(this.index, this.container).removeClass('active')
+            hide($indexSlide)
         }
 
         // iterates through slides based on this.slides
@@ -110,24 +168,33 @@ export default class Showcase {
             const $n = $('#' + n, this.container) // current iterated slide
 
             if (n === rSlide) { // if correct slide
-                $n.addClass('active')
+                unhide($n)
+                $targetToFocus = $n
             } else {
-                $n.removeClass('active')
+                hide($n)
             }
         }
 
         this.current = rSlide
-        $(this.container).trigger('change', {
+        $container.trigger('change', {
             active: rSlide
         })
 
         if (this.current !== 'index') {
             $('body').animate({
-                scrollTop: $(this.container).offset().top
+                scrollTop: $container.offset().top
             }, 100)
         }
 
         this.resize() // resize the container
+
+        // hide and focus roughly after animations are complete
+        $container.one('transitionend', function() {
+            for (const $target of $targetsToHide) {
+                $target.attr('hidden', true)
+            }
+            $targetToFocus.focus()
+        })
     }
 
     /**

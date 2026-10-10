@@ -175,37 +175,37 @@ include $template['alert'];
       </div>
       <div class="grid">
         <div class="third">
-          <figure class="multitasking">
+          <figure class="multitasking" aria-labelledby="feature__multitasking">
             <div class="workspace"></div>
           </figure>
-          <h4>Multitasking View</h4>
+          <h4 id="feature__multitasking">Multitasking View</h4>
           <p>Workspaces help organize your work by task. Keep work and play separate, but just one swipe or tap away.</p>
         </div>
         <div class="third">
-          <figure class="pip">
+          <figure class="pip" aria-labelledby="feature__pictureInPicture">
             <div class="workspace">
               <img class="window" src="images/screenshots/videos.png" width="1124" height="555" alt="Videos screenshot" />
             </div>
           </figure>
-          <h4>Picture-in-Picture</h4>
+          <h4 id="feature__pictureInPicture">Picture-in-Picture</h4>
           <p>Whether you’re watching a movie, game, or terminal process, Picture-in-Picture helps keep tabs on one thing while working on another. </p>
         </div>
         <div class="third">
-          <figure class="dnd">
+          <figure class="dnd" aria-labelledby="feature__doNotDisturb">
             <div class="workspace">
               <img class="window" src="images/screenshots/code.png" width="1174" height="703" alt="Code screenshot" />
               <div class="notification" type="notification">
-                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" aria-hidden="true" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" aria-hidden="true" />
               </div>
               <div class="notification" type="notification">
-                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" />
+                <img src="images/thirdparty-icons/apps/16/io.elementary.mail.svg" aria-hidden="true" />
               </div>
             </div>
           </figure>
-          <h4>Do Not Disturb</h4>
+          <h4 id="feature__doNotDisturb">Do Not Disturb</h4>
           <p>Tune everything else out to stay focused on your work, or keep notifications at bay while watching a movie. Do Not Disturb stops notifications in their tracks.</p>
         </div>
       </div>
@@ -218,23 +218,23 @@ include $template['alert'];
             <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
           </div>
           <ul id="showcase-grid">
-            <a href="#showcase-music"><li class="read-more"><img src="images/thirdparty-icons/apps/64/music.svg" alt="Music app icon"/>Music</li></a>
-            <a href="#showcase-epiphany"><li class="read-more"><img src="images/thirdparty-icons/apps/64/web.svg" alt="Browser app icon"/>Web</li></a>
-            <a href="#showcase-mail"><li class="read-more"><img src="images/thirdparty-icons/apps/64/mail.svg" alt="Email app icon"/>Mail</li></a>
-            <a href="#showcase-photos"><li class="read-more"><img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photo app icon"/>Photos</li></a>
-            <a href="#showcase-videos"><li class="read-more"><img src="images/thirdparty-icons/apps/64/videos.svg" alt="Video app icon"/>Videos</li></a>
-            <a href="#showcase-calendar"><li class="read-more"><img src="images/thirdparty-icons/apps/64/calendar.svg" alt="Calendar app icon"/>Calendar</li></a>
-            <a href="#showcase-files"><li class="read-more"><img src="images/thirdparty-icons/apps/64/files.svg" alt="File manager app icon"/>Files</li></a>
-            <a href="#showcase-terminal"><li class="read-more"><img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal app icon"/>Terminal</li></a>
-            <a href="#showcase-code"><li class="read-more"><img src="images/thirdparty-icons/apps/64/code.svg" alt="Code editor app icon"/>Code</li></a>
-            <a href="#showcase-camera"><li class="read-more"><img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera app icon"/>Camera</li></a>
+            <button type="button" aria-controls="showcase-music" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/music.svg" alt="Music app icon"/>Music</li></button>
+            <button type="button" aria-controls="showcase-epiphany" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/web.svg" alt="Browser app icon"/>Web</li></button>
+            <button type="button" aria-controls="showcase-mail" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/mail.svg" alt="Email app icon"/>Mail</li></button>
+            <button type="button" aria-controls="showcase-photos" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photo app icon"/>Photos</li></button>
+            <button type="button" aria-controls="showcase-videos" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/videos.svg" alt="Video app icon"/>Videos</li></button>
+            <button type="button" aria-controls="showcase-calendar" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/calendar.svg" alt="Calendar app icon"/>Calendar</li></button>
+            <button type="button" aria-controls="showcase-files" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/files.svg" alt="File manager app icon"/>Files</li></button>
+            <button type="button" aria-controls="showcase-terminal" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal app icon"/>Terminal</li></button>
+            <button type="button" aria-controls="showcase-code" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/code.svg" alt="Code editor app icon"/>Code</li></button>
+            <button type="button" aria-controls="showcase-camera" aria-expanded="false"><li class="read-more"><img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera app icon"/>Camera</li></button>
           </ul>
         </div>
-        <div class="showcase-tab" id="showcase-music">
+        <div class="showcase-tab" id="showcase-music" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/music.png" width="704" height="531" alt="Music screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/music.svg" alt="Music icon" />
+              <img src="images/thirdparty-icons/apps/64/music.svg" alt="Music icon" aria-hidden="true" />
               <div>
                 <h2>Music</h2>
                 <p>Organize and listen to your music. Browse by album, use lightning-fast search, and build playlists of your favorites.</p>
@@ -242,9 +242,9 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-epiphany">
+        <div class="showcase-tab" id="showcase-epiphany" hidden tabindex="-1">
           <div class="app-display">
-            <img class="app-display__image" src="images/screenshots/web.png" alt="Web screenshot" />
+            <img class="app-display__image" src="images/screenshots/web.png" alt="Web screenshot" aria-hidden="true" />
             <div class="app-display__description">
               <img src="images/thirdparty-icons/apps/64/web.svg" alt="Web icon" />
               <div>
@@ -254,11 +254,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-mail">
+        <div class="showcase-tab" id="showcase-mail" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/mail.png" width="1127" height="716" alt="Mail screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/mail.svg" alt="Mail icon" />
+              <img src="images/thirdparty-icons/apps/64/mail.svg" alt="Mail icon" aria-hidden="true" />
               <div>
                 <h2>Mail</h2>
                 <p>Manage multiple accounts quickly and effortlessly with conversation-based email, fast-as-you-type search, new email notifications, and more.</p>
@@ -266,11 +266,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-photos">
+        <div class="showcase-tab" id="showcase-photos" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/photos.png" width="1174" height="730" alt="Photos screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photos icon" />
+              <img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photos icon" aria-hidden="true" />
               <div>
                 <h2>Photos</h2>
                 <p>Import, organize, and edit photos. Make a slideshow. Share with online services.</p>
@@ -278,11 +278,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-videos">
+        <div class="showcase-tab" id="showcase-videos" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/videos.png" width="1124" height="555" alt="Videos screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/videos.svg" alt="Videos icon" />
+              <img src="images/thirdparty-icons/apps/64/videos.svg" alt="Videos icon" aria-hidden="true" />
               <div>
                 <h2>Videos</h2>
                 <p>Smart and simple video viewing with a library, thumbnail previews on the seekbar, playlists, subtitle support, smart fullscreen, and the ability to resume what was last playing.</p>
@@ -290,11 +290,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-calendar">
+        <div class="showcase-tab" id="showcase-calendar" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/calendar.png" width="1039" height="765" alt="Calendar screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/calendar.svg" alt="calendar icon" />
+              <img src="images/thirdparty-icons/apps/64/calendar.svg" alt="calendar icon" aria-hidden="true" />
               <div>
                 <h2>Calendar</h2>
                 <p>Easily view and create events. Sync with online accounts.</p>
@@ -302,11 +302,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-files">
+        <div class="showcase-tab" id="showcase-files" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/files.png" width="924" height="608" alt="Files screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/files.svg" alt="Files icon" />
+              <img src="images/thirdparty-icons/apps/64/files.svg" alt="Files icon" aria-hidden="true" />
               <div>
                 <h2>Files</h2>
                 <p>The smart pathbar makes it easy to browse with breadcrumbs, search, or path completion. Quickly navigate with the column view and enjoy browser-class tabs with smart features like tab history.</p>
@@ -314,13 +314,13 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-terminal">
+        <div class="showcase-tab" id="showcase-terminal" hidden tabindex="-1">
           <div class="app-display">
             <div class="app-display__image">
               <img src="images/screenshots/terminal.png" width="789" height="557" alt="Terminal screenshot" />
             </div>
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal icon" />
+              <img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal icon" aria-hidden="true" />
               <div>
                 <h2>Terminal</h2>
                 <p>Switchable color schemes designed to prevent eye strain, browser-class tabs with history and smart naming, task-completion notifications, natural copy &amp; paste, backlog search, paste protection, and more. Who says you can’t teach an old app new tricks?</p>
@@ -328,11 +328,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-code">
+        <div class="showcase-tab" id="showcase-code" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/code.png" width="1182" height="703" alt="Code screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/code.svg" alt="Code icon" />
+              <img src="images/thirdparty-icons/apps/64/code.svg" alt="Code icon" aria-hidden="true" />
               <div>
                 <h2>Code</h2>
                 <p>Tailor-made with autosaving, project folders, Git integration, smart whitespace, EditorConfig support, Mini Map, Vala symbols, and extensions like Markdown shortcuts and Vim Emulation. Code will be the last editor you’ll ever need.</p>
@@ -340,11 +340,11 @@ include $template['alert'];
             </div>
           </div>
         </div>
-        <div class="showcase-tab" id="showcase-camera">
+        <div class="showcase-tab" id="showcase-camera" hidden tabindex="-1">
           <div class="app-display">
             <img class="app-display__image" src="images/screenshots/camera.png" width="704" height="544" alt="Camera screenshot" />
             <div class="app-display__description">
-              <img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera icon" />
+              <img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera icon" aria-hidden="true" />
               <div>
                 <h2>Camera</h2>
                 <p>Easily snap pictures or video from your built-in or USB webcam.</p>
