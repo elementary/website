@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 18 # This Node version matches the server.
+          node-version: 22 # This Node version matches the server.
 
       - name: Install
         run: npm ci
