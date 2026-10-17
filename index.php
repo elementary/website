@@ -218,16 +218,16 @@ include $template['alert'];
             <p>elementary OS comes with a carefully considered set of apps that cater to everyday needs so you can spend more time using your computer and less time cleaning up bloatware.</p>
           </div>
           <ul id="showcase-grid">
-            <li class="read-more"><button type="button" aria-controls="showcase-music" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/music.svg" alt="Music app icon"/>Music</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-epiphany" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/web.svg" alt="Browser app icon"/>Web</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-mail" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/mail.svg" alt="Email app icon"/>Mail</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-photos" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photo app icon"/>Photos</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-videos" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/videos.svg" alt="Video app icon"/>Videos</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-calendar" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/calendar.svg" alt="Calendar app icon"/>Calendar</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-files" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/files.svg" alt="File manager app icon"/>Files</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-terminal" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal app icon"/>Terminal</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-code" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/code.svg" alt="Code editor app icon"/>Code</button></li>
-            <li class="read-more"><button type="button" aria-controls="showcase-camera" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera app icon"/>Camera</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-music" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/music.svg" alt="Music app icon" aria-hidden="true"/>Music</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-epiphany" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/web.svg" alt="Browser app icon" aria-hidden="true"/>Web</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-mail" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/mail.svg" alt="Email app icon" aria-hidden="true"/>Mail</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-photos" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/photos.svg" alt="Photo app icon" aria-hidden="true"/>Photos</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-videos" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/videos.svg" alt="Video app icon" aria-hidden="true"/>Videos</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-calendar" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/calendar.svg" alt="Calendar app icon" aria-hidden="true"/>Calendar</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-files" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/files.svg" alt="File manager app icon" aria-hidden="true"/>Files</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-terminal" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/terminal.svg" alt="Terminal app icon" aria-hidden="true"/>Terminal</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-code" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/code.svg" alt="Code editor app icon" aria-hidden="true"/>Code</button></li>
+            <li class="read-more"><button type="button" aria-controls="showcase-camera" aria-expanded="false"><img src="images/thirdparty-icons/apps/64/camera.svg" alt="Camera app icon" aria-hidden="true"/>Camera</button></li>
           </ul>
         </div>
         <div class="showcase-tab" id="showcase-music" hidden tabindex="-1">
