@@ -34,7 +34,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Setup submodules
         run: git submodule init && git submodule update --force --rebase
