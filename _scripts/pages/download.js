@@ -93,7 +93,7 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
                 $('#download').text(translateDownload)
             }
         }
-        $('#choice-buttons').on('click', updateDownloadButton)
+        $('#choice-buttons button').on('click', updateDownloadButton)
         $('#choice-buttons input').on('input', updateDownloadButton)
         updateDownloadButton()
 
