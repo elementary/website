@@ -8,7 +8,7 @@
   "description": "The elementary.io Website http://elementary.io",
   "dependencies": {
     "cssnano": "^8.0.2",
-    "glob": "^13.0.6",
+    "glob": "^14.0.3",
     "gulp": "^5.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^5.0.4",
