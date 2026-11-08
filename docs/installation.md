@@ -8,18 +8,22 @@ If you haven't already, you will need to <a href="/" target="_blank" rel="noopen
 
 See the [frequently-asked questions for this release]({#release_faq}).
 
-## Recommended System Specifications {#recommended-system-specifications}
+## System Specifications {#recommended-system-specifications}
 
-While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
+For sysupdate installation, your computer must meet the following minimum requirements:
+
+* 4 GB of system memory (RAM)
+* Destination disk of at least 55 GB
+* UEFI firmware with Secure Boot disabled
+
+For the best experience, we recommend at least the following:
 
 * Recent Intel Core i3 or comparable dual-core 64-bit processor
-* 4 GB of system memory (RAM)
-* Solid state drive (SSD) with at least 32 GB of free space
 * Internet access
 * Built-in or wired mouse/touchpad and keyboard
 * 1024×768 minimum resolution display
 
-You will also need a spare USB flash drive with at least 4 GB of storage for installation.
+You will also need a spare USB flash drive with at least 8 GB of storage for installation.
 
 **We do not recommend virtual machines as they don't perform as well as a full install.** If you are attempting to install in a virtual machine, enable EFI if possible but understand you may encounter other issues.
 
