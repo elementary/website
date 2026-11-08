@@ -52,19 +52,47 @@ if ($cli->arguments->defined('help')) {
 $isVerbose = $cli->arguments->defined('verbose');
 
 $page = 'index.php';
+$isLayout = false;
 if ($cli->arguments->defined('page') !== false) {
     $cliPage = $cli->arguments->get('page');
+    $cliPage = preg_replace('/\.(php|md)$/', '', $cliPage);
 
-    $pages = array_map(function ($path) use ($root) {
-        return substr(realpath($path), strlen(realpath($root)) + 1);
-    }, L10n::pages());
-
-    if (in_array($cliPage . '.php', $pages)) {
-        $page = $cliPage . '.php';
-    } elseif (in_array($cliPage . '.md', $pages)) {
-        $page = $cliPage . '.md';
+    if ($cliPage === 'layout' || strpos($cliPage, '_templates/') === 0) {
+        $isLayout = true;
+        $page = 'layout';
     } else {
-        throw new \Exception("Page '$cliPage' is not part of the website");
+        $pages = array_map(function ($path) use ($root) {
+            $rootPath = str_replace(
+                '\\',
+                '/',
+                substr(realpath($path), strlen($root) + 1)
+            );
+
+            if (strpos($rootPath, '_templates/') === 0) {
+                return 'layout';
+            }
+
+            $isMarkdown = substr($path, -3) === '.md';
+            $url = substr($rootPath, 0, -3);
+
+            if ($isMarkdown === false) {
+                $url = substr($url, 0, -1);
+            }
+
+            return $url;
+        }, L10n::pages());
+
+        if (in_array($cliPage, $pages, true) === false) {
+            throw new \Exception("Page '$cliPage' is not part of the website");
+        }
+
+        if (is_file($root . '/' . $cliPage . '.php')) {
+            $page = $cliPage . '.php';
+        } elseif (is_file($root . '/' . $cliPage . '.md')) {
+            $page = $cliPage . '.md';
+        } else {
+            throw new \Exception("Page '$cliPage' is not part of the website");
+        }
     }
 }
 
@@ -72,15 +100,26 @@ if ($isVerbose) {
     $cli->whisper("Extracting text from '$page'");
 }
 
-$path = $root . '/' . $page;
-$isMarkdown = (substr($path, -3) === '.md');
+if ($isLayout) {
+    $path = null;
+    $isMarkdown = false;
+    $currentUrl = 'layout';
+} else {
+    $path = $root . '/' . $page;
+    $isMarkdown = (substr($path, -3) === '.md');
 
-$currentUrl = substr($page, 0, -3);
-if ($isMarkdown === false) {
-    $currentUrl = substr($currentUrl, 0, -1);
+    $currentUrl = substr($page, 0, -3);
+    if ($isMarkdown === false) {
+        $currentUrl = substr($currentUrl, 0, -1);
+    }
 }
 
-$currentTranslations = $l10n->loadTranslations($currentUrl);
+$domain = $currentUrl;
+if ($cli->arguments->defined('domain') !== false) {
+    $domain = $cli->arguments->get('domain');
+}
+
+$currentTranslations = $l10n->loadTranslations($domain);
 if ($currentTranslations === false) {
     $currentTranslations = array();
 }
@@ -153,9 +192,13 @@ function translatePHP($path, $domain)
     global $l10n, $root;
 
     chdir($root);
-    $_SERVER['DOCUMENT_ROOT'] = dirname(__DIR__);
+    $_SERVER['DOCUMENT_ROOT'] = $root;
+    $_SERVER['REQUEST_URI'] = '/';
+    $_SERVER['HTTP_HOST'] = 'localhost';
     $_GET['page'] = $domain;
     $page['name'] = $domain;
+
+    require_once $root . '/_backend/preload.php';
 
     // Do not start output buffering twice
     if (defined('HTML_I18N') === false) {
@@ -165,6 +208,7 @@ function translatePHP($path, $domain)
     }
 
     $l10n->setDomain($domain);
+
     ob_start(function ($input) use ($l10n) {
         $l10n->translateHtml($input, '\App\Console\captureTranslations');
         return '';
@@ -177,29 +221,82 @@ function translatePHP($path, $domain)
     }
 
     // Add page title to translations
-    if (isset($page['title']) !== false) {
+    if (isset($page['title'])) {
         captureTranslations($page['title'], $domain, $page['title']);
     }
 }
+/**
+ * translateLayout
+ * Extracts translations from shared templates in their expected context.
+ *
+ * @return void
+ */
+function translateLayout()
+{
+    global $root, $l10n, $page, $template, $sitewide;
 
-$domain = $currentUrl;
-if ($cli->arguments->defined('domain') !== false) {
-    $domain = $cli->arguments->get('domain');
+    chdir($root);
+
+    $_SERVER['DOCUMENT_ROOT'] = $root;
+    $_SERVER['REQUEST_URI'] = '/';
+    $_SERVER['HTTP_HOST'] = 'localhost';
+    $_SERVER['HTTP_USER_AGENT'] = 'MSIE 10.0';
+
+    $_GET['page'] = 'layout';
+
+    require_once $root . '/_backend/preload.php';
+
+    $page = array(
+        'name' => 'layout',
+        'path' => '/',
+        'styles' => array(),
+        'scripts' => array(),
+        'script-plugins' => array(),
+    );
+
+    // Avoid requiring JavaScript manifest entries during extraction.
+    $scriptless = true;
+
+    $l10n->setDomain('layout');
+
+    if (defined('HTML_I18N') === false) {
+        define('HTML_I18N', 1);
+    }
+
+    $initialBufferLevel = ob_get_level();
+
+    ob_start(function ($input) use ($l10n) {
+        $l10n->translateHtml($input, '\App\Console\captureTranslations');
+        return '';
+    });
+
+    include $template['header'];
+    include $template['alert'];
+    include $template['footer'];
+
+    while (ob_get_level() > $initialBufferLevel) {
+        ob_end_flush();
+    }
 }
 
-if ($isMarkdown) {
-    translateMarkdown($path, $currentUrl);
+if ($isLayout) {
+    translateLayout();
+} elseif ($isMarkdown) {
+    translateMarkdown($path, $domain);
 } else {
-    translatePHP($path, $currentUrl);
+    translatePHP($path, $domain);
 }
 
 // Preprocess translations to remove newlines in the keys
 $processedTranslations = [];
 foreach ($currentTranslations as $key => $value) {
     // Remove newlines from the key completely and reduce multiple spaces to a single space
-    $processedKey = str_replace(["\r\n", "\n"], " ", $key);
+    $processedKey = str_replace(["\r\n", "\n"], ' ', $key);
     $processedKey = preg_replace('/\s+/', ' ', $processedKey);
     $processedTranslations[$processedKey] = $value;
 }
 
-echo json_encode($processedTranslations, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+echo json_encode(
+    $processedTranslations,
+    JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+) . "\n";
