@@ -30,7 +30,7 @@
     "globals": "^17.14.0",
     "gulp-cli": "^3.0.0",
     "@csstools/stylelint-formatter-github": "^2.0.0",
-    "stylelint": "^17.12.0",
+    "stylelint": "^18.0.0",
     "stylelint-config-recommended": "^18.0.0"
   },
   "scripts": {
