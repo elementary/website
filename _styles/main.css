@@ -47,9 +47,14 @@ body {
 **************/
 
 a {
-  color: #08c;
-  fill: #08c;
+  color: #007dbc;
+  fill: #007dbc;
   text-decoration: none;
+}
+
+section.grey a {
+  color: #0079b6;
+  fill: #0079b6;
 }
 
 a:focus {
@@ -175,11 +180,11 @@ img.inline + div.inline {
   margin-left: 12px;
 }
 
-.read-more {
+.read-more button {
   white-space: nowrap;
 }
 
-.read-more::after {
+.read-more button::after {
   color: inherit;
 
   /* Encoded `→`, see: https://github.com/elementary/website/issues/2851 */
@@ -191,7 +196,8 @@ img.inline + div.inline {
   transition: transform 0.15s ease-in-out;
 }
 
-.read-more:hover::after {
+.read-more button:hover::after,
+.read-more button:focus::after {
   transform: translateX(3px);
 }
 
