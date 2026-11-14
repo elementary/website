@@ -22,6 +22,7 @@
     "webpack-manifest-plugin": "^6.0.1"
   },
   "devDependencies": {
+    "@csstools/stylelint-formatter-github": "^2.0.0",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import-x": "^4.17.1",
@@ -29,9 +30,8 @@
     "eslint-plugin-promise": "^7.3.0",
     "globals": "^17.14.0",
     "gulp-cli": "^3.0.0",
-    "@csstools/stylelint-formatter-github": "^2.0.0",
     "stylelint": "^18.0.0",
-    "stylelint-config-recommended": "^18.0.0"
+    "stylelint-config-recommended": "^19.0.0"
   },
   "scripts": {
     "install:submodule": "git submodule init && git submodule update --force --rebase",
