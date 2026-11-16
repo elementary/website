@@ -68,6 +68,8 @@ if (is_readable($Request['Directory']) ||
             'styles/docs.css'
         );
 
+        $page['theme-color'] = '#403757';
+
         include $Templates['Header'];
         echo '<div class="row docs">';
         include $Templates['Alert'];
