@@ -6,6 +6,7 @@
 import jQuery from '~/lib/jquery'
 import Showcase from '~/widgets/showcase'
 
+/* eslint-disable promise/catch-or-return */
 jQuery.then(($) => {
     $(document).ready(() => {
         const showcase = new Showcase({

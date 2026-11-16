@@ -4,27 +4,42 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
-    time: "11:00"
-  open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
 - package-ecosystem: npm
   directory: "/"
   schedule:
     interval: weekly
-    time: "11:00"
-  open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
+  allow:
+    - dependency-type: "all"
+  groups:
+    npm-patching:
+      update-types:
+        - "minor"
+        - "patch"
 - package-ecosystem: composer
   directory: "/_backend"
   schedule:
     interval: weekly
-    time: "11:00"
-  open-pull-requests-limit: 10
   reviewers:
   - lewisgoddard
+  allow:
+    - dependency-type: "all"
+  groups:
+    composer-patching:
+      update-types:
+        - "minor"
+        - "patch"
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule:
     interval: "weekly"
+  reviewers:
+  - lewisgoddard
+  groups:
+    gha-patching:
+      update-types:
+        - "minor"
+        - "patch"

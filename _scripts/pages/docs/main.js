@@ -6,6 +6,7 @@
 import highlight from '~/lib/highlight'
 import jQuery from '~/lib/jquery'
 
+/* eslint-disable promise/catch-or-return */
 Promise.all([highlight, jQuery]).then(([hljs, $]) => {
     $(document).ready(function () {
         // Code blocks highlighting

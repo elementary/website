@@ -129,7 +129,7 @@ $l10n->beginHtmlTranslation();
             <button class="menu-button" title="Toggle navigation menu" aria-label="Toggle navigation menu" aria-expanded="false"><?php include __DIR__.'/../images/menu.svg'; ?></button>
             <div class="nav-content">
                 <ul>
-                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark"><?php include __DIR__.'/../images/logomark.svg'; ?></a></li>
+                    <li><a href="<?php echo $page['lang-root']; ?>" class="logomark" aria-label="Home"><span aria-hidden="true"><?php include __DIR__.'/../images/logomark.svg'; ?></span></a></li>
                     <li><a href="<?php echo $page['lang-root'].'support'; ?>">Support</a></li>
                     <li><a href="https://developer.elementary.io" target="_self">Developer</a></li>
                     <li><a href="<?php echo $page['lang-root'].'get-involved'; ?>">Get Involved</a></li>

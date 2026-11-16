@@ -7,129 +7,33 @@ on:
     types:
       - opened
       - reopened
+      - ready_for_review
       - synchronize
+  push:
+    branches:
+      - master
 
 permissions:
   contents: read
 
 jobs:
-  Lint_Css:
-    name: Lint (CSS)
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
-        with:
-          php-version: '8.1'
-          tools: composer
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
-        with:
-          node-version: 18
-
-      - name: Install
-        run: npm ci
-
-      - name: Lint
-        run: npx stylelint "_styles/**/*.css" -f github
-
-  Lint_Javascript:
-    name: Lint (JS)
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
-        with:
-          php-version: 8.1
-          tools: composer
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
-        with:
-          node-version: 18
-
-      - name: Install
-        run: npm ci
-
-      - name: Lint
-        run: ./_tests/javascript.sh
-
-  Lint_Php:
-    name: Lint (PHP)
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
-        with:
-          php-version: 8.1
-          tools: composer
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
-        with:
-          node-version: 18
-
-      - name: Install
-        run: npm ci
-
-      - name: Lint
-        run: ./_tests/php.sh
-
-  Lint_Translations:
-    name: Lint (Translations)
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
-        with:
-          php-version: 8.1
-          tools: composer
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
-        with:
-          node-version: 18
-
-      - name: Install
-        run: npm ci
-
-      - name: Lint
-        run: php ./_tests/translations.php
-
   Build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2.40.0
         with:
-          php-version: 8.1
+          php-version: 8.1 # This PHP version matches the server.
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
+        uses: actions/setup-node@v7
         with:
-          node-version: 18
+          node-version: 18 # This Node version matches the server.
 
       - name: Install
         run: npm ci

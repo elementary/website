@@ -75,6 +75,14 @@ SHA256 hash of Downloads\{#release_filename}:
 {#release_sha256}
 ```
 
+If you are using the image for ARM systems, then the following command and result are expected:
+
+```bash nohighlight
+CertUtil -hashfile Downloads\{#release_arm_filename} sha256
+SHA256 hash of Downloads\{#release_arm_filename}:
+{#release_arm_sha256}
+```
+
 If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
 
 ### Creating an Install Drive {#creating-an-installation-medium .clear-float}
@@ -121,6 +129,13 @@ It should produce the output:
 
 ```bash nohighlight
 {#release_sha256}
+```
+
+If you are using the image for ARM systems, then the following command and result are expected:
+
+```bash nohighlight
+shasum -a 256 ~/Downloads/{#release_arm_filename}
+{#release_arm_sha256}
 ```
 
 If the checksum does not match, you may need to re-download your copy of elementary OS and ensure it completes downloading before re-verifying it.
@@ -176,6 +191,13 @@ It should produce the output:
 
 ```bash nohighlight
 {#release_sha256}
+```
+
+If you are using the image for ARM systems, then the following command and result are expected:
+
+```bash nohighlight
+sha256sum {#release_arm_filename}
+{#release_arm_sha256}
 ```
 
 ### Creating an Install Drive {#creating-an-installation-medium .clear-float}

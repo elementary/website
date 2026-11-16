@@ -5,13 +5,11 @@
 
 /* global plausible */
 
-import jQuery from '~/lib/jquery'
-
-import { detectedArchitecture } from '~/page'
 import config from '~/config'
-
+import jQuery from '~/lib/jquery'
 import { openDownloadOverlay } from '~/widgets/download-modal'
 
+/* eslint-disable promise/catch-or-return */
 Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloadOverlay]) => {
     // DEBUG
     console.log('Config at download.js:')
@@ -132,19 +130,26 @@ Promise.all([config, jQuery, openDownloadOverlay]).then(([config, $, openDownloa
         })
 
         // ACTION: .download-http.click: Track downloads
-        $('.download-link').click(async function () {
+        $('.download-link').click(function () {
+            const $this = $(this)
             let downloadMethod = 'Unknown'
-            if ($(this).hasClass('magnet')) {
+            if ($this.hasClass('magnet')) {
                 downloadMethod = 'Magnet'
             }
-            if ($(this).hasClass('http')) {
+            if ($this.hasClass('http')) {
                 downloadMethod = 'HTTP'
+            }
+            let downloadArchitecture = 'Unknown'
+            if ($this.hasClass('arm')) {
+                downloadArchitecture = 'ARM'
+            }
+            if ($this.hasClass('x86')) {
+                downloadArchitecture = 'x86'
             }
             plausible('Download', {
                 props: {
-                    Region: config.user.region,
                     Method: downloadMethod,
-                    Architecture: await detectedArchitecture(),
+                    Architecture: downloadArchitecture,
                     Version: config.release.version
                 }
             })

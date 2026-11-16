@@ -44,25 +44,10 @@ function os_payment_setcookie(string $version, int $amount)
  */
 function os_payment_getcookie(string $version)
 {
-    // DEPRECATED: this is the old version of cookie naming
-    if (!isset($version) || $version === '') {
-        $string = os_payment_encode('has_paid_' . $config['release_title'] . '_' . $config['release_version']);
-
-        if (isset($_COOKIE[$string])) {
-            return intval($_COOKIE[$string]);
-        }
-    }
-
-    // DEPRECATED: all deprecated variables can be removed next version release
     $string = os_payment_encode('os_payment_' . $version);
-    $deprecated_string = os_payment_encode('has_paid_Loki_' . $version);
 
     if (isset($_COOKIE[$string])) {
         return intval($_COOKIE[$string]);
-    }
-
-    if (isset($_COOKIE[$deprecated_string])) {
-        return intval($_COOKIE[$deprecated_string]);
     }
 
     return 0;

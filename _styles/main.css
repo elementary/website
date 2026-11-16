@@ -19,6 +19,7 @@ body {
   font-weight: 400;
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 *,
@@ -1238,7 +1239,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
   bottom: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #333;
-  left: -70px;
+  left: var(--popover-left, -70px);
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -1254,7 +1255,7 @@ So that for browsers that dont we can have a sensible inline style that can be a
   content: "";
   display: block;
   height: 0;
-  left: 50%;
+  left: var(--arrow-left, 50%);
   margin-left: -5px;
   position: absolute;
   width: 0;

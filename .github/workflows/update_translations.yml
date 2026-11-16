@@ -20,19 +20,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: 'main'
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.36.0
+        uses: shivammathur/setup-php@2.40.0
         with:
           php-version: '8.1'
           tools: composer
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6.1.0
+        uses: actions/setup-node@v7
         with:
           node-version: 18
 
@@ -46,7 +46,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx gulp styles scripts
 
       - name: Update
         run: php _backend/Console/Translation.php

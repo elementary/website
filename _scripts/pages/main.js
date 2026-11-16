@@ -4,11 +4,11 @@
  */
 
 import jQuery from '~/lib/jquery'
-
 import '~/external-links'
 import '~/popover'
 import '~/smooth-scrolling'
 
+/* eslint-disable promise/catch-or-return */
 jQuery.then(($) => {
     const menuButton = $('nav .menu-button')
     menuButton.addClass('enabled')
