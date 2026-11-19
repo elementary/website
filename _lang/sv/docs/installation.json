@@ -1,7 +1,7 @@
 {
     "Installation": "Installation",
     "Download elementary OS": "Ladda ner elementary OS",
-    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Om du inte redan har gjort det måste du <a href=\"/\" target=\"_blank\" rel=\"noopener\">ladda ner elementary OS från vår webbplats.</a> Du behöver kopiera den nedladdade ISO-filen till ett USB-minne med hjälp av instruktionerna nedan.",
+    "If you haven't already, you will need to <a href=\"/\" target=\"_blank\" rel=\"noopener\">download elementary OS from our home page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.": "Om du inte redan har gjort det måste du <a href=\"/\" target=\"_blank\" rel=\"noopener\">ladda ner elementary OS från vår webbplats</a>. Du behöver kopiera den nedladdade ISO-filen till ett USB-minne med hjälp av instruktionerna nedan.",
     "Frequently-Asked Questions": "Ofta ställda frågor",
     "See the <a href=\"{#release_faq}\">frequently-asked questions for this release</a>.": "Se <a href=\"{#release_faq}\">vanliga frågor och svar för denna utgåva</a>.",
     "Recommended System Specifications": "Rekommenderade systemspecifikationer",
@@ -51,5 +51,5 @@
     "If your Mac doesn't recognize your elementary OS USB Install Drive in the boot menu, you may need to create an elementary OS Install DVD instead. To create one, insert a blank DVD, right click on the ISO file in Finder, and select \"Burn {#release_filename} to Disc\". When complete, attempt to boot again from the Install DVD.": "Om din Mac inte känner igen din elementary OS USB-installationsenhet i startmenyn kan du behöva skapa en elementary OS-installations-DVD istället. För att skapa en sådan, sätt in en tom DVD, högerklicka på ISO-filen i Finder och välj ”Bränn {#release_filename} till skiva”. När det är klart, försök att starta om från installations-DVD:n.",
     "Running the following command in your terminal:": "Kör följande kommando i din terminal:",
     "After Installation": "Efter installationen",
-    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Ta tillfället i akt och läs \" <a href=\"/docs/learning-the-basics\">Kom igång\"</a>-guiden för att lära dig mer om ditt nya operativsystem."
+    "Take this time to read the <a href=\"/docs/learning-the-basics\">getting started</a> guide to learn about your new operating system.": "Ta tillfället i akt och läs guiden <a href=\"/docs/learning-the-basics\">Kom igång</a> för att lära dig mer om ditt nya operativsystem."
 }

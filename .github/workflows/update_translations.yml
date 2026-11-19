@@ -22,11 +22,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          ref: 'master'
+          ref: 'main'
           submodules: true
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.37.2
+        uses: shivammathur/setup-php@2.40.0
         with:
           php-version: '8.1'
           tools: composer
