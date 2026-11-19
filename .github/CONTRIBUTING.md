@@ -47,7 +47,7 @@ For a simple local development environment running on PHP, you will need:
 
 #### GNU/Linux Based Operating Systems
 
-First, install Node.js (18.x recommended) from [Nodesource](https://nodesource.com/products/distributions).
+First, install Node.js (26.x recommended) from [Nodesource](https://nodesource.com/products/distributions).
 
 _If you are on an unsupported version of elementary OS—i.e. during development of a new version—you may need to download the provided installation script, modify it first to map `elementaryOS` and the version codename to `Ubuntu` and its equivalent codename, then `chmod +x` the script and run it as root._
 
@@ -77,7 +77,7 @@ and rebuild on the fly.
 
 First, make sure you have your system updated.
 
-Second, install Node.js (18.x recommended) from [Nodejs.org](https://nodejs.org).
+Second, install Node.js (26.x recommended) from [Nodejs.org](https://nodejs.org).
 
 Then follow these directions from your favorite shell:
 
@@ -102,7 +102,7 @@ you may find useful, you will need:
 
 * Everything required for "Simple PHP Server" (above)
 * The latest stable version of [Nginx](http://nginx.org)
-* `php8.1-fpm`
+* `php8.5-fpm`
 
 Then, we need to configure Nginx. To start, open up a configuration file in
 Nano.

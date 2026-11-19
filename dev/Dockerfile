@@ -1,12 +1,12 @@
-# Current server versions (2026-02-28):
-# - PHP: 8.1.2
-# - Nginx: 1.18
-# - Node: 18.17.1
-# - NPM: 9.6.7
-# - Composer: 2.2.6
-FROM composer:2.5 AS composer
-FROM node:18 AS node
-FROM php:8.1-fpm
+# Target server versions (Ubuntu 26.04):
+# - PHP: 8.5
+# - Nginx: 1.28
+# - Node: 26.x (target: NodeSource)
+# - NPM: 11.x (target: NodeSource)
+# - Composer: 2.9
+FROM composer:2 AS composer
+FROM node:26 AS node
+FROM php:8.5-fpm
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 COPY --from=node /usr/local/bin/node /usr/local/bin/node
