@@ -25,7 +25,5 @@ return array(
   // Classic token that requires 'read:org', 'read:user', 'public_repo' scopes for `/api/sponsors_goals` endpoint
   'gh_sponsors_token' => 'ghp_1234567890abcdefghij',
 
-  'slack_token' => 'asdf-1234567890-7418529630-a7854123692-8412487519',
-
   'sentry_dsn' => false,
 );
