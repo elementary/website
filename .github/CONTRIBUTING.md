@@ -102,7 +102,7 @@ you may find useful, you will need:
 
 * Everything required for "Simple PHP Server" (above)
 * The latest stable version of [Nginx](http://nginx.org)
-* `php8.1-fpm`
+* `php8.5-fpm`
 
 Then, we need to configure Nginx. To start, open up a configuration file in
 Nano.
