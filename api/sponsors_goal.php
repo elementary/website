@@ -21,11 +21,8 @@ curl_setopt_array($curl, [
 if (!$response = curl_exec($curl)) {
     // Return error code if the request fails
     http_response_code(500);
-    curl_close($curl);
     die();
 }
-
-curl_close($curl);
 
 $response = json_decode($response, true);
 
