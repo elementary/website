@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__.'/_backend/preload.php';
 
+    $page['name'] = '410';
     $page['title'] = 'Download Link Expired &sdot; elementary';
 
     include $template['header'];

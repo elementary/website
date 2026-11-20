@@ -139,6 +139,8 @@ class L10n
 
     protected $lang = 'en';
 
+    protected $route = null;
+
     protected $domain = null;
 
     protected $translations = array();
@@ -153,27 +155,51 @@ class L10n
 
     public function init()
     {
-        global $sitewide, $page; // Global site variables
+        global $page; // Global site variables
 
         if (defined('HTML_I18N')) {
             return;
         }
 
-        // Redirect the user if we are translating the page
-        if ((isset($_GET['lang']) || isset($_COOKIE['language']))
-            && (isset($_GET['lang']) ? $_GET['lang'] : 'en') != $this->lang
-            && $this->lang != 'en') {
-            $url = $sitewide['root'];
-            $url .= $this->lang.$page['path'];
-            $url = '/'.ltrim($url, '/'); // Make sure there is a / at the begining
-            header('Location: '.$url);
-            exit();
+        // Error pages keep their status: no redirects and no cookie
+        if (isset($page['name']) && in_array($page['name'], ['403', '404', '410'], true)) {
+            return;
         }
 
-        // Set cookie if the user has chosen the current language
-        if (isset($_GET['lang'])) {
-            setcookie('language', $this->lang, time() + 60*60*24*30, '/'); // 30 days
+        $route = $this->routeDecision();
+
+        if ($route['vary']) {
+            header('Vary: Accept-Language, Cookie');
         }
+
+        if ($route['cookie'] !== null) {
+            setcookie('language', $route['cookie'], time() + 60*60*24*30, '/'); // 30 days
+        }
+
+        if ($route['status'] !== null) {
+            header('Location: '.$route['location'], true, $route['status']);
+            exit();
+        }
+    }
+
+    /**
+     * Decides the language, redirect and cookie for this request
+     *
+     * @return array See LanguageRoute::decide()
+     */
+    public function routeDecision()
+    {
+        if ($this->route !== null) {
+            return $this->route;
+        }
+
+        if (empty($_SERVER['REQUEST_URI'])) {
+            $this->route = ['lang' => 'en', 'status' => null, 'location' => null, 'cookie' => null, 'vary' => false];
+        } else {
+            $this->route = LanguageRoute::decide($_SERVER['REQUEST_URI'], [$this, 'isLang'], $this->userLang());
+        }
+
+        return $this->route;
     }
 
     public function listLangs()
@@ -516,11 +542,7 @@ class L10n
 
     public function getPageLang()
     {
-        if (isset($_GET['lang'])) {
-            $lang = $_GET['lang'];
-        } else {
-            $lang = $this->userLang();
-        }
+        $lang = $this->routeDecision()['lang'];
         if (!$this->isLang($lang)) {
             $lang = 'en';
         }
