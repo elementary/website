@@ -33,6 +33,8 @@ jobs:
             command: ./_tests/php.sh
           - label: Translations
             command: php ./_tests/translations.php
+          - label: Language routing
+            command: php ./_tests/language-routing.php
 
     steps:
       - name: Checkout
