@@ -9,6 +9,8 @@ import changed from "gulp-changed";
 import rev from "gulp-rev";
 import rename from "gulp-rename";
 import { spawn } from "child_process";
+import { readdir, stat, unlink } from "fs/promises";
+import path from "path";
 
 import imagemin from "gulp-imagemin";
 
@@ -18,6 +20,40 @@ import cssnano from "cssnano";
 
 import webpack from "webpack";
 import webpackConfig from "./webpack.config.js";
+
+/**
+ * symlinks
+ * Removes broken symlinks from _images. gulp.src stops with ENOENT on any broken
+ * symlink under a glob's base, even one excluded by a negative glob, and the
+ * icons submodule sometimes ships them.
+ *
+ * @returns {Promise} - resolves once all broken symlinks are removed
+ */
+gulp.task("symlinks", async () => {
+  const entries = await readdir("_images", {
+    recursive: true,
+    withFileTypes: true,
+  });
+
+  for (const entry of entries) {
+    if (!entry.isSymbolicLink()) {
+      continue;
+    }
+
+    const file = path.join(entry.parentPath, entry.name);
+
+    try {
+      await stat(file);
+    } catch (err) {
+      if (err.code !== "ENOENT" && err.code !== "ELOOP") {
+        throw err;
+      }
+
+      console.warn(`Removing broken symlink ${file}`);
+      await unlink(file);
+    }
+  }
+});
 
 /**
  * png
@@ -116,7 +152,10 @@ gulp.task("svg", () => {
  *
  * @returns {Task} - a gulp task for all image optimizations
  */
-gulp.task("images", gulp.parallel("png", "jpg", "svg", "gif"));
+gulp.task(
+  "images",
+  gulp.series("symlinks", gulp.parallel("png", "jpg", "svg", "gif")),
+);
 
 /**
  * png:rebuild
@@ -193,7 +232,13 @@ gulp.task("svg:rebuild", () => {
  *
  * @returns {Task} - a gulp task for rebuilding all image optimizations
  */
-gulp.task("images:rebuild", gulp.parallel("png:rebuild", "jpg:rebuild", "svg:rebuild", "gif:rebuild"));
+gulp.task(
+  "images:rebuild",
+  gulp.series(
+    "symlinks",
+    gulp.parallel("png:rebuild", "jpg:rebuild", "svg:rebuild", "gif:rebuild"),
+  ),
+);
 
 /**
  * styles
