@@ -15,9 +15,12 @@ if (getenv('PHPENV') === 'production') {
 // Allow query parameters to be appended to the request
 $requestUri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
-if (preg_match('#^/([a-z]{2}(?:_(?:[A-Z]{2}|[A-Z][a-z]+))?)(/.*)?$#', $requestUri, $matches)) {
-    $_GET['lang'] = $matches[1];
-    $requestUri = (!empty($matches[2])) ? $matches[2] : '/';
+// Strip every leading language code in one pass, as nginx does. L10n reads
+// the language from REQUEST_URI and redirects bad or nested codes.
+require_once __DIR__.'/_backend/vendor/autoload.php';
+$parsed = \App\Lib\LanguageRoute::parse($requestUri);
+if (!empty($parsed['codes'])) {
+    $requestUri = $parsed['rest'];
 }
 
 if ($requestUri == '/') {

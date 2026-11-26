@@ -13,8 +13,7 @@ if ($page['lang'] != 'en') {
     $page['lang-root'] .= $page['lang'].'/';
 }
 if (!isset($page['path'])) {
-    $page['path'] = str_replace($sitewide['root'], '/', $sitewide['path']);
-    $page['path'] = str_replace('/'.$page['lang'].'/', '/', $page['path']);
+    $page['path'] = \App\Lib\LanguageRoute::parse(str_replace($sitewide['root'], '/', $sitewide['path']))['rest'];
 }
 if (!isset($page['name'])) {
     $page['name'] = trim(preg_replace('#\.php$#', '', $page['path']), '/');
@@ -79,10 +78,12 @@ $l10n->beginHtmlTranslation();
         <link rel="apple-touch-icon" href="images/launcher-icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
 
-        <?php if ($page['lang']) { ?>
-        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
-        <?php } else { ?>
-        <link rel="alternate" type="text/html" hreflang="en" href="<?php echo $sitewide['root'].(($page['name'] == 'index') ? '' : $page['name']); ?>">
+        <?php if (!in_array($page['name'], ['403', '404', '410', 'capnet-assist'], true)) { ?>
+        <link rel="canonical" href="<?php echo \App\Lib\LanguageRoute::url($page['lang'], $page['path']); ?>">
+            <?php foreach ($l10n->listLangs() as $langCode => $langName) { ?>
+        <link rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" href="<?php echo \App\Lib\LanguageRoute::url($langCode, $page['path']); ?>">
+            <?php } ?>
+        <link rel="alternate" hreflang="x-default" href="<?php echo \App\Lib\LanguageRoute::url('en', $page['path']); ?>">
         <?php } ?>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">

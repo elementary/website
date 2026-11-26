@@ -14,7 +14,7 @@
                         foreach ($l10n->listLangs() as $langCode => $langName) {
                             $path = $sitewide['root'].$langCode.$page['path'];
                             ?>
-                            <li><a href="<?php echo $path; ?>" rel="alternate" hreflang="<?php echo str_replace('_', '-', $langCode); ?>" data-l10n-off>
+                            <li><a href="<?php echo $path; ?>" data-l10n-off>
                                 <?php echo $langName; ?>
                             </a></li>
                             <?php
